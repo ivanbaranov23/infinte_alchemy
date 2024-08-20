@@ -1,0 +1,7 @@
+{
+	title: "ch 3: Immersive Engineering",
+	icon: "contenttweaker:duraluminum_ingot",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,23 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	text: [
+		"Right click to restore a bit health. Mainly used in Altar."
+	],
+	dependencies: [
+		"e39fa748"
+	],
+	tasks: [{
+		uid: "e791e0b0",
+		type: "item",
+		items: [{
+			item: "aether_legacy:ambrosium_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "7caab17d",
+		type: "item",
+		item: "aether_legacy:ambrosium_shard",
+		count: 9
+	}]
+}

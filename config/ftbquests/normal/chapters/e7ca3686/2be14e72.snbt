@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: 1.0d,
+	dependencies: [
+		"2e1be161"
+	],
+	tasks: [{
+		uid: "c4454f03",
+		type: "item",
+		items: [{
+			item: "dimensionaledibles:end_cake"
+		}]
+	}]
+}

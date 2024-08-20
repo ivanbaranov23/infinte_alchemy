@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: 0.0d,
+	dependencies: [
+		"8f8c00ed"
+	],
+	tasks: [{
+		uid: "9e7a6336",
+		type: "item",
+		items: [{
+			item: "modularcontroller:druid_circle_controller"
+		}]
+	}]
+}

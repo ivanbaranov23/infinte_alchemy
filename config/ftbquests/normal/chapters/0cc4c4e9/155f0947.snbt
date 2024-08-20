@@ -1,0 +1,15 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"82319513"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c651a365",
+		type: "item",
+		items: [{
+			item: "contenttweaker:draco_lizard_egg"
+		}]
+	}]
+}

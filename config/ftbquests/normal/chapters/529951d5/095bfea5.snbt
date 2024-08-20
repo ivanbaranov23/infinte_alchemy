@@ -1,0 +1,29 @@
+{
+	x: 2.0d,
+	y: 5.0d,
+	text: [
+		"Farmable.",
+		"",
+		"Place on a side of netherrack. Needs a block to the left and to the right of the block it on. Can be bone mealed.",
+		"Break with an axe to get more lucis spores.",
+		"",
+		"One way to automate this is:",
+		"1) place spore with Phantom Placer",
+		"2) bonemeal it from above",
+		"3) use Block Reader to detect when the mushrooms grows",
+		"4) use Redstone Writer to activate users with axes placed below",
+		"5) collect more spores and glowstone",
+		"6) route some spores back into Phantom Placer"
+	],
+	dependencies: [
+		"f6d34a4f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "88adae71",
+		type: "item",
+		items: [{
+			item: "betternether:lucis_spore"
+		}]
+	}]
+}

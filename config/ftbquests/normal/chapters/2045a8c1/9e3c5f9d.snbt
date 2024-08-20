@@ -1,0 +1,24 @@
+{
+	x: -2.0d,
+	y: -4.0d,
+	text: [
+		"To help explain mechs, i'm going to introduce a terminology. All the things will be explained in quests around this one.",
+		"",
+		"Main concepts are:",
+		"-[Mech] is an item that is a bit expensive.",
+		"-[Expedition] is the recipe you see in JEI."
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "45c4b64f",
+		type: "checkmark",
+		title: "Mech Basics",
+		icon: {
+			id: "botania:cosmetic",
+			Damage: 31s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

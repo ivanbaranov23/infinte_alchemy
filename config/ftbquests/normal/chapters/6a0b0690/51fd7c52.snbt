@@ -1,0 +1,17 @@
+{
+	title: "Welcome to Twilight Forest",
+	icon: "twilightforest:miniature_structure",
+	x: -2.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"f8d00f2a"
+	],
+	tasks: [{
+		uid: "bebce071",
+		type: "dimension",
+		dim: 7
+	}]
+}

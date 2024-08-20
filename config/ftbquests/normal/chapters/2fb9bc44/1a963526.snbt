@@ -1,0 +1,14 @@
+{
+	x: 14.5d,
+	y: 3.0d,
+	dependencies: [
+		"51942acb"
+	],
+	tasks: [{
+		uid: "34a74cbd",
+		type: "item",
+		items: [{
+			item: "modularcontroller:heat_engine_controller"
+		}]
+	}]
+}

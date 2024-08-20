@@ -1,0 +1,27 @@
+{
+	x: 10.5d,
+	y: 4.0d,
+	text: [
+		"Put a Satellite Chip into the controller and select the search target for your Satellite Swarm. ",
+		"",
+		"After some time searching, zero in on the desired asteroid and save its data onto the chip. ",
+		"Link a space navigator and use the launch pad to send a drone to it. ",
+		"",
+		"The drone will bring that material from the asteroid back to the pad.",
+		"",
+		"Materials that can be found in space:",
+		"all metals, gems and crystals; comet ice"
+	],
+	dependencies: [
+		"9fe73973"
+	],
+	tasks: [{
+		uid: "f361102e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:drone"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

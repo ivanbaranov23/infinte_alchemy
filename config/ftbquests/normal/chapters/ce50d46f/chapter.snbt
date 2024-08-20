@@ -1,0 +1,7 @@
+{
+	title: "ch 12: Astral",
+	icon: "astralsorcery:itemcraftingcomponent 1 1",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

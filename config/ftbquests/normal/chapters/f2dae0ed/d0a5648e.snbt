@@ -1,0 +1,17 @@
+{
+	x: 5.0d,
+	y: 3.0d,
+	text: [
+		"Main way of making protein"
+	],
+	dependencies: [
+		"f4e29f96"
+	],
+	tasks: [{
+		uid: "2207b2ae",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:protein_reactor"
+		}]
+	}]
+}

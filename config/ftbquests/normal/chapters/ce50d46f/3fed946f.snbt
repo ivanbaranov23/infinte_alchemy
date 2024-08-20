@@ -1,0 +1,19 @@
+{
+	x: 3.5d,
+	y: 7.0d,
+	dependencies: [
+		"a983261c"
+	],
+	tasks: [{
+		uid: "540ad48a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:satellite_chip"
+		}]
+	}],
+	rewards: [{
+		uid: "32f7c5fb",
+		type: "item",
+		item: "contenttweaker:satellite_chip"
+	}]
+}

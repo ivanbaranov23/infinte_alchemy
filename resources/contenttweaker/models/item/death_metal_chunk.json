@@ -1,0 +1,15 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "contenttweaker:items/parts/death_hand_back",
+    "layer1": "contenttweaker:items/death_metal_chunk",
+    "layer2": "contenttweaker:items/parts/death_hand_front"
+  },
+  "display": {
+    "gui": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 0, 0],
+      "scale":[ 2.0, 2.0, 2.0 ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"51c18b24"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a2dd2c86",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quartz_growth_accelerator"
+		}]
+	}]
+}

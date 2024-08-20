@@ -1,0 +1,40 @@
+{
+	title: "Crazy Holding",
+	icon: {
+		id: "thermalexpansion:satchel",
+		Damage: 4s,
+		tag: {
+			Accessible: 1b
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		}
+	},
+	x: -0.5d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "7e9bd0b6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "317ef26d",
+		type: "item",
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 14s,
+					id: 42
+				}]
+			}
+		}
+	}]
+}

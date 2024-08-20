@@ -1,0 +1,31 @@
+{
+	icon: "contenttweaker:relic_ingot",
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"Use silk touch to get relic ore and smelt it for relic ingots. Or you can break the ore and crush the dirty relics dropped by it."
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "b49d3298",
+		type: "item",
+		items: [{
+			item: "atum:relic_ore"
+		}]
+	},
+	{
+		uid: "7c63cafa",
+		type: "item",
+		items: [{
+			item: "contenttweaker:relic_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "d9f74424",
+		type: "item",
+		item: "contenttweaker:relic_ingot",
+		count: 9
+	}]
+}

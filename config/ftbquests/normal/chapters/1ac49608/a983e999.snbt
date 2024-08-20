@@ -1,0 +1,25 @@
+{
+	title: "Machine Frame 10b",
+	x: 2.0d,
+	y: 7.0d,
+	shape: "rsquare",
+	text: [
+		"Chapter 14: End 1 contains info on some of the ways to get advanced materials like Singularity Dust or Life Essence."
+	],
+	dependencies: [
+		"dfcf969f",
+		"2b6e15c3"
+	],
+	tasks: [{
+		uid: "832768c3",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:frame"
+		}]
+	}],
+	rewards: [{
+		uid: "68691a14",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

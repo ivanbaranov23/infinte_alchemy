@@ -1,0 +1,40 @@
+{
+	title: "Hive",
+	icon: "biomesoplenty:honeycomb",
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"Find a big hive and raid it. There'll be wasps inside."
+	],
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "407756b1",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:hive"
+		}]
+	},
+	{
+		uid: "fc4b8433",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:honeycomb"
+		}]
+	},
+	{
+		uid: "6cbb1303",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:filled_honeycomb"
+		}]
+	},
+	{
+		uid: "b83648c4",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:honey_block"
+		}]
+	}]
+}

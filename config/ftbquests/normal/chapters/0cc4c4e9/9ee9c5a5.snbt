@@ -1,0 +1,24 @@
+{
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"Hope you didn't forgot bottles"
+	],
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "faa3ec89",
+		type: "item",
+		items: [{
+			item: "minecraft:dragon_breath"
+		}]
+	},
+	{
+		uid: "7633ec07",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 15"
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	optional: true,
+	tasks: [{
+		uid: "e4d247c4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:lv_sandworm"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8abf0aed",
+		type: "item",
+		item: "contenttweaker:worm_feed",
+		count: 10
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: -2.5d,
+	y: -4.0d,
+	text: [
+		"You can make soul sand and skeletons turns into wither skeletons when touching witch water.",
+		"Just do it when you're ready."
+	],
+	dependencies: [
+		"f7305be9"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1da45353",
+		type: "kill",
+		icon: "minecraft:nether_star",
+		entity: "minecraft:wither",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "e7b5720b",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

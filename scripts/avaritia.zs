@@ -1,0 +1,322 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
+
+mods.avaritia.Compressor.removeAll();
+recipes.removeByMod("avaritiaddons");
+
+//recipes.remove(<avaritiaddons:avaritiaddons_chest>);
+recipes.addShaped("ia_avaritiaddons_chest", <avaritiaddons:avaritiaddons_chest>, [
+	[<ore:plateIronwood>, <actuallyadditions:block_giant_chest_large>, <ore:plateIronwood>], 
+	[<mekanism:machineblock:13>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:13>], 
+	[<ore:plateIronwood>, <actuallyadditions:block_giant_chest_large>, <ore:plateIronwood>]
+]);
+
+
+var dirt_chest_tag as IData = {
+	Contents: [
+		{Slot: 0 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 1 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 2 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 3 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 4 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 5 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 6 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 7 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 8 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 9 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 10 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 11 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 12 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 13 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 14 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 15 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 16 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 17 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 18 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 19 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 20 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 21 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 22 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 23 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 24 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 25 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 26 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 27 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 28 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 29 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 30 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 31 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 32 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 33 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 34 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 35 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 36 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 37 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 38 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 39 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 40 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 41 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 42 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 43 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 44 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 45 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 46 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 47 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 48 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 49 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 50 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 51 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 52 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 53 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 54 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 55 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 56 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 57 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 58 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 59 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 60 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 61 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 62 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 63 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 64 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 65 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 66 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 67 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 68 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 69 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 70 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 71 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 72 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 73 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 74 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 75 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 76 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 77 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 78 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 79 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 80 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 81 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 82 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 83 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 84 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 85 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 86 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 87 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 88 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 89 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 90 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 91 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 92 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 93 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 94 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 95 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 96 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 97 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 98 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 99 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 100 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 101 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 102 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 103 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 104 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 105 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 106 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 107 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 108 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 109 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 110 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 111 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 112 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 113 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 114 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 115 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 116 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 117 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 118 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 119 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 120 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 121 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 122 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 123 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 124 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 125 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 126 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 127 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 128 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 129 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 130 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 131 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 132 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 133 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 134 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 135 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 136 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 137 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 138 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 139 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 140 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 141 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 142 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 143 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 144 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 145 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 146 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 147 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 148 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 149 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 150 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 151 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 152 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 153 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 154 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 155 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 156 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 157 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 158 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 159 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 160 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 161 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 162 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 163 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 164 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 165 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 166 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 167 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 168 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 169 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 170 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 171 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 172 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 173 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 174 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 175 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 176 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 177 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 178 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 179 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 180 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 181 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 182 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 183 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 184 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 185 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 186 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 187 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 188 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 189 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 190 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 191 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 192 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 193 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 194 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 195 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 196 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 197 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 198 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 199 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 200 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 201 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 202 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 203 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 204 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 205 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 206 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 207 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 208 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 209 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 210 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 211 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 212 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 213 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 214 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 215 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 216 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 217 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 218 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 219 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 220 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 221 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 222 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 223 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 224 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 225 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 226 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 227 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 228 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 229 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 230 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 231 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 232 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 233 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 234 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 235 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 236 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 237 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 238 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 239 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+
+		{Slot: 240 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 241 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+		{Slot: 242 as short, id: "minecraft:dirt", Count: 64 as byte, Damage: 0 as short},
+	]
+};
+
+recipes.addShaped("ia_best_chest", <ironchest:iron_chest:7>, [
+	[<tconstruct:deco_ground>, <tconstruct:materials:1>, <tconstruct:deco_ground>], 
+	[<tconstruct:materials:1>, <avaritiaddons:avaritiaddons_chest>.withTag(dirt_chest_tag), <tconstruct:materials:1>], 
+	[<tconstruct:deco_ground>, <tconstruct:materials:1>, <tconstruct:deco_ground>]
+]);
+<ironchest:iron_chest:7>.addTooltip("Made with a compressed chest filled with dirt");
+
+//recipes.remove(<avaritiaddons:avaritiaddons_chest:1>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <avaritiaddons:avaritiaddons_chest:1>, [
+	[<ore:gearInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:gearInfinity>], 
+	[<ore:plateInfinity>, <draconicevolution:draconium_chest>, <ore:plateChaoticMetal>, <ore:plateChaoticMetal>, <appliedenergistics2:chest>, <ore:plateChaoticMetal>, <ore:plateChaoticMetal>, <draconicevolution:draconium_chest>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <ore:plateChaoticMetal>, <extendedcrafting:singularity_custom:8>, <extendedcrafting:singularity_custom:8>, <projecte:condenser_mk2>, <extendedcrafting:singularity_custom:8>, <extendedcrafting:singularity_custom:8>, <ore:plateChaoticMetal>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <ore:plateChaoticMetal>, <extendedcrafting:singularity_custom:8>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <extendedcrafting:singularity_custom:8>, <ore:plateChaoticMetal>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <appliedenergistics2:chest>, <projecte:condenser_mk2>, <aeadditions:storage.component:3>, <ironchest:iron_chest:7>, <aeadditions:storage.component:3>, <projecte:condenser_mk2>, <appliedenergistics2:chest>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <ore:plateChaoticMetal>, <extendedcrafting:singularity_custom:8>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <aeadditions:storage.component:3>, <extendedcrafting:singularity_custom:8>, <ore:plateChaoticMetal>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <ore:plateChaoticMetal>, <extendedcrafting:singularity_custom:8>, <extendedcrafting:singularity_custom:8>, <projecte:condenser_mk2>, <extendedcrafting:singularity_custom:8>, <extendedcrafting:singularity_custom:8>, <ore:plateChaoticMetal>, <ore:plateInfinity>], 
+	[<ore:plateInfinity>, <draconicevolution:draconium_chest>, <ore:plateChaoticMetal>, <ore:plateChaoticMetal>, <appliedenergistics2:chest>, <ore:plateChaoticMetal>, <ore:plateChaoticMetal>, <draconicevolution:draconium_chest>, <ore:plateInfinity>], 
+	[<ore:gearInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:plateInfinity>, <ore:gearInfinity>]
+]);
+
+
+
+
+
+
+
+
+
+
+mods.extendedcrafting.TableCrafting.addShaped(2, <contenttweaker:quest_coin>, [
+	[<ore:coinIron>, <ore:coinGold>, <ore:coinCopper>, <ore:coinTin>, <ore:coinSilver>], 
+	[<ore:coinLead>, <ore:coinAluminum>, <ore:coinNickel>, <ore:coinPlatinum>, <ore:coinIridium>], 
+	[<ore:coinMithril>, <ore:coinSteel>, <ore:ingotInfinity>, <ore:coinElectrum>, <ore:coinInvar>], 
+	[<ore:coinBronze>, <ore:coinConstantan>, <ore:coinSignalum>, <ore:coinLumium>, <ore:coinEnderium>], 
+	[<atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>]
+]);

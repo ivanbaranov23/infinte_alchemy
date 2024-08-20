@@ -1,0 +1,26 @@
+{
+	title: "Orb 4",
+	x: 10.0d,
+	y: 1.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"647de8d9",
+		"2a094c8e"
+	],
+	tasks: [{
+		uid: "0acb898e",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:master"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

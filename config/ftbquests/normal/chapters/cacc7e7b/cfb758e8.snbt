@@ -1,0 +1,41 @@
+{
+	title: "Slime saplings",
+	icon: "tconstruct:slime_sapling",
+	x: 3.5d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "0a11663a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "600221c4",
+		type: "item",
+		item: "tconstruct:slime_sapling",
+		count: 4
+	},
+	{
+		uid: "d4443eb0",
+		type: "item",
+		item: "tconstruct:slime_sapling 1 1",
+		count: 4
+	},
+	{
+		uid: "45e38922",
+		type: "item",
+		item: "tconstruct:slime_sapling 1 2",
+		count: 4
+	},
+	{
+		uid: "20a27146",
+		type: "item",
+		item: "tconstruct:slime_dirt 1 2",
+		count: 16
+	}]
+}

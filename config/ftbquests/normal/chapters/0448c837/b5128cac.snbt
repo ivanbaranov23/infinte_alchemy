@@ -1,0 +1,17 @@
+{
+	x: -6.0d,
+	y: 1.0d,
+	shape: "square",
+	tasks: [{
+		uid: "067a2ef3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:black_bronze_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8e33f560",
+		type: "item",
+		item: "contenttweaker:black_bronze_block"
+	}]
+}

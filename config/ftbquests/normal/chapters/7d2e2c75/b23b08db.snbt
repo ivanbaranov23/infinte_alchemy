@@ -1,0 +1,25 @@
+{
+	x: 9.0d,
+	y: 3.0d,
+	dependencies: [
+		"f445a069",
+		"919c59a3"
+	],
+	tasks: [{
+		uid: "559ac9f0",
+		type: "checkmark",
+		title: "Sulfuric Acid",
+		icon: {
+			id: "aeadditions:pattern.fluid",
+			tag: {
+				Fluid: {
+					FluidName: "sulfuricacid",
+					Amount: 1000
+				}
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

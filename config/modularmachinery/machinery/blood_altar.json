@@ -1,0 +1,1653 @@
+{
+    "registryname": "blood_altar",
+    "localizedname": "Blood Altar Subprocessor",
+    "color": "570f1d",
+    "modifiers": [
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@9"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.8
+            }
+        },{
+            "x": -2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@9"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.8
+            }
+        },{
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@9"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.8
+            }
+        },{
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@9"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.8
+            }
+        },{
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@9"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "duration",
+                "operation": 1,
+                "multiplier": 0.8
+            }
+        },
+
+
+
+        {
+            "x": 3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@2"
+            ],
+            "modifier": {
+                "io": "output",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 1.5
+            }
+        },
+
+
+
+        {
+            "x": 3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ],
+            "modifier": [ 
+                {
+                    "io": "input",
+                    "target": "will",
+                    "operation": 0,
+                    "multiplier": -1
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+
+
+
+        {
+            "x": 3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bloody_sheetmetal@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "fluid",
+                "operation": 1,
+                "multiplier": 0.9
+            }
+        },
+
+
+
+        {
+            "x": 3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.75
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        }
+
+        
+    ],
+    
+
+    "parts": [
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bloody_gearbox@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bloody_gearbox@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "minecraft:sea_lantern@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "minecraft:sea_lantern@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "bloodmagic:decorative_brick@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "blood_magic_rune_noaccel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "blood_magic_rune_noaccel"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "blood_magic_rune_noaccel"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "blood_magic_rune_noaccel"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "blood_magic_rune_noaccel"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bloody_gearbox@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bloody_gearbox@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "bloodmagic:decorative_brick@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bloody_gearbox@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modularmagic:blockwillproviderinput@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": -3,
+            "elements": [
+                "bloodmagic:altar@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bloody_gearbox@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bloody_gearbox@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bloody_gearbox@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "bloodmagic:blood_rune@0"
+            ]
+        }
+    ]}

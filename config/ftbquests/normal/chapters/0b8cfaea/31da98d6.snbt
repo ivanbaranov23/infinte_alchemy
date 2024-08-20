@@ -1,0 +1,14 @@
+{
+	x: -0.5d,
+	y: 1.0d,
+	dependencies: [
+		"15a113bb"
+	],
+	tasks: [{
+		uid: "e2212b60",
+		type: "item",
+		items: [{
+			item: "harvestcraft:paperbark_sapling"
+		}]
+	}]
+}

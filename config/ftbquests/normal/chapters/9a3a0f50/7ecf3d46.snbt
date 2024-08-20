@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 7.0d,
+	dependencies: [
+		"c9ee14d9"
+	],
+	tasks: [{
+		uid: "bc7d30ba",
+		type: "item",
+		items: [{
+			item: "contenttweaker:enderium_processor"
+		}]
+	}]
+}

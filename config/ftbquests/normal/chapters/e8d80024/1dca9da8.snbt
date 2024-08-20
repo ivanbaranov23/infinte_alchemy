@@ -1,0 +1,31 @@
+{
+	title: "The Ultimate Alloyer",
+	icon: "extendedcrafting:crafting_core",
+	x: 8.0d,
+	y: -6.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"c0421da3"
+	],
+	tasks: [{
+		uid: "4c57fa64",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:crafting_core"
+		}]
+	},
+	{
+		uid: "d2897d2e",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:pedestal"
+		}]
+	}],
+	rewards: [{
+		uid: "28ed551b",
+		type: "item",
+		item: "extendedcrafting:pedestal"
+	}]
+}

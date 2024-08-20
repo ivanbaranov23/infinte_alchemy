@@ -1,0 +1,67 @@
+{
+	icon: "modularcontroller:regen_chamber_controller",
+	x: 10.0d,
+	y: -0.5d,
+	text: [
+		"This machine creates bouncy matter - matter that will be jumping stronger with every bounce. Obviously, this needs a very strong containment chamber.",
+		"This one uses literal bedrock as bounce pads and living metal for regenerating damage.",
+		"",
+		"You'll need to telepose some bedrock blocks to form this multiblock (which is a bit expensive).",
+		"You can turn bedrockium blocks into bedrock using roots transmutation. ",
+		"",
+		"If you somehow lost your starting bedrock then:",
+		"1) bozo",
+		"2) you'd have to make this in another dimension with bedrock like Erebus, Atum or Nether. "
+	],
+	dependencies: [
+		"9f55a05c",
+		"1dfe9fef",
+		"29d11233"
+	],
+	tasks: [{
+		uid: "f04bc87b",
+		type: "item",
+		items: [{
+			item: "modularcontroller:regen_chamber_controller"
+		}]
+	},
+	{
+		uid: "d8cb5dce",
+		type: "item",
+		items: [{
+			item: "contenttweaker:living_steel_sheetmetal"
+		}],
+		count: 8L
+	},
+	{
+		uid: "64bf619e",
+		type: "item",
+		items: [{
+			item: "engineersdecor:rebar_concrete_wall"
+		}],
+		count: 12L
+	},
+	{
+		uid: "0d849498",
+		type: "item",
+		items: [{
+			item: "engineersdecor:panzerglass_block"
+		}],
+		count: 20L
+	},
+	{
+		uid: "7fc0f337",
+		type: "checkmark",
+		title: "2 bedrocks 3 blocks apart"
+	},
+	{
+		uid: "b281dd70",
+		type: "checkmark",
+		title: "17 casings/hatches"
+	}],
+	rewards: [{
+		uid: "4d474eab",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

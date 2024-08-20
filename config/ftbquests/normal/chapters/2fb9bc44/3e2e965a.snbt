@@ -1,0 +1,23 @@
+{
+	x: 10.5d,
+	y: -3.0d,
+	shape: "diamond",
+	dependencies: [
+		"e062efd0"
+	],
+	optional: true,
+	tasks: [{
+		uid: "62480230",
+		type: "item",
+		items: [{
+			item: "prodigytech:primordium"
+		}],
+		count: 256L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "c265c22d",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

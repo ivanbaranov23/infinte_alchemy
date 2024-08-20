@@ -1,0 +1,15 @@
+{
+	x: 12.0d,
+	y: -7.0d,
+	dependencies: [
+		"be4f7c79"
+	],
+	optional: true,
+	tasks: [{
+		uid: "5c1999ff",
+		type: "item",
+		items: [{
+			item: "contenttweaker:uv_lamp"
+		}]
+	}]
+}

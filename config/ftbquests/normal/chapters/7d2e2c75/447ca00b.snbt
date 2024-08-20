@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: 1.0d,
+	text: [
+		"In case you really really really hate high oven and TC smeltery.",
+		"",
+		"WARNING! Never put this machine in a place where it has direct line of sight to the void! Trust me you don't want to know what it will do."
+	],
+	dependencies: [
+		"50760ff4"
+	],
+	tasks: [{
+		uid: "eeee0608",
+		type: "item",
+		items: [{
+			item: "enderio:block_simple_alloy_smelter"
+		}]
+	}]
+}

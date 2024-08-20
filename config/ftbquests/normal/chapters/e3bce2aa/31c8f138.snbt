@@ -1,0 +1,23 @@
+{
+	title: "Machine Frame 3",
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"f705a577"
+	],
+	tasks: [{
+		uid: "b096829e",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame"
+		}]
+	}],
+	rewards: [{
+		uid: "f7f920fb",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

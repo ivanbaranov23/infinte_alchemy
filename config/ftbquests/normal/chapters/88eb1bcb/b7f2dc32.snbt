@@ -1,0 +1,22 @@
+{
+	x: 7.0d,
+	y: 2.0d,
+	text: [
+		"Can be used as TiC material. When you hit an entity with a tool with flying trait it will get levitation effect for a second."
+	],
+	dependencies: [
+		"414c2be4"
+	],
+	tasks: [{
+		uid: "75a3c34c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:angel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8aee740f",
+		type: "item",
+		item: "contenttweaker:angel_block"
+	}]
+}

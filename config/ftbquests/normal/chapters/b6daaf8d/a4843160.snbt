@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	dependencies: [
+		"e39fa748"
+	],
+	tasks: [{
+		uid: "23d4b413",
+		type: "item",
+		items: [{
+			item: "aether_legacy:gravitite_ore"
+		}]
+	}]
+}

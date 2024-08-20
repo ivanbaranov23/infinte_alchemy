@@ -1,0 +1,24 @@
+{
+	x: 4.0d,
+	y: -2.5d,
+	text: [
+		"Denorm can be used to change ores version"
+	],
+	dependencies: [
+		"85f878db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2416d745",
+		type: "item",
+		items: [{
+			item: "contenttweaker:denorm_dust"
+		}]
+	}],
+	rewards: [{
+		uid: "d9f35a23",
+		type: "item",
+		item: "contenttweaker:denorm_dust",
+		count: 9
+	}]
+}

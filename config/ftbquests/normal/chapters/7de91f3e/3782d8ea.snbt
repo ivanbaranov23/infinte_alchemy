@@ -1,0 +1,17 @@
+{
+	x: 10.0d,
+	y: -11.5d,
+	text: [
+		"You'll need a lot of activated neutron gas for endgame so don't void it."
+	],
+	dependencies: [
+		"f66c876f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ff0b577f",
+		type: "checkmark",
+		title: "Neutrons",
+		icon: "avaritia:resource 1 2"
+	}]
+}

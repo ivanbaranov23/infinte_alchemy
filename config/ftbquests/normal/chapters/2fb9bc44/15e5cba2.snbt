@@ -1,0 +1,23 @@
+{
+	x: 8.5d,
+	y: 1.0d,
+	text: [
+		"Going past energion in prodigy is gated by research. More on this in IE chapter."
+	],
+	dependencies: [
+		"abb872f0",
+		"5cbff905"
+	],
+	tasks: [{
+		uid: "08773142",
+		type: "item",
+		items: [{
+			item: "prodigytech:energion_aeroheater"
+		}]
+	}],
+	rewards: [{
+		uid: "b75a8167",
+		type: "item",
+		item: "prodigytech:energion_aeroheater"
+	}]
+}

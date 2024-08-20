@@ -1,0 +1,17 @@
+{
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		"Used for reactors"
+	],
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "8681a7d4",
+		type: "item",
+		items: [{
+			item: "bigreactors:mineralbenitoite"
+		}]
+	}]
+}

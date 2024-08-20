@@ -1,0 +1,15 @@
+{
+	x: 16.0d,
+	y: 8.0d,
+	dependencies: [
+		"c0408051"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f64bb941",
+		type: "item",
+		items: [{
+			item: "contenttweaker:power_tap"
+		}]
+	}]
+}

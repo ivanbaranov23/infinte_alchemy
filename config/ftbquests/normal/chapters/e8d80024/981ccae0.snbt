@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: -7.0d,
+	dependencies: [
+		"ae51436d",
+		"1dca9da8"
+	],
+	tasks: [{
+		uid: "4f95dbb9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:vibralcum_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "fb4b77c3",
+		type: "item",
+		item: "contenttweaker:vibralcum_block"
+	}]
+}

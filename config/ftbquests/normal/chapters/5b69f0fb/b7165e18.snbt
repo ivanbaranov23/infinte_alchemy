@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"Put input block on top, fire or blue fire below and see as the block transforms!"
+	],
+	tasks: [{
+		uid: "51ba46e4",
+		type: "item",
+		items: [{
+			item: "requious:wood_infuser"
+		}]
+	}]
+}

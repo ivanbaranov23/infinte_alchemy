@@ -1,0 +1,24 @@
+{
+	title: "Real chemistry is for losers",
+	x: 2.0d,
+	y: -3.0d,
+	text: [
+		"Fantasy chemistry is much more fun."
+	],
+	dependencies: [
+		"eeb2d9ff"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f654f1e5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:formic_acid_dust"
+		}]
+	}],
+	rewards: [{
+		uid: "606b36bb",
+		type: "item",
+		item: "contenttweaker:formic_acid_form"
+	}]
+}

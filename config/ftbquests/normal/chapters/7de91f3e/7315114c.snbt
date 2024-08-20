@@ -1,0 +1,20 @@
+{
+	x: 7.0d,
+	y: -10.5d,
+	dependencies: [
+		"ad443486",
+		"fb79e1ee"
+	],
+	tasks: [{
+		uid: "64d19177",
+		type: "item",
+		items: [{
+			item: "bloodmagic:alchemy_table"
+		}]
+	}],
+	rewards: [{
+		uid: "5e45ee06",
+		type: "item",
+		item: "bloodmagic:alchemy_table"
+	}]
+}

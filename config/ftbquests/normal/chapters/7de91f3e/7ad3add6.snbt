@@ -1,0 +1,23 @@
+{
+	x: 19.5d,
+	y: 2.0d,
+	text: [
+		"The most powerful of Blood Magic runes. ",
+		"What does it do? ",
+		"You know how when you crafting in altar and you run out of LE and craft starts going backwards?",
+		"This rune makes it go backwards slower.",
+		"",
+		"It's simply too powerful, too op."
+	],
+	dependencies: [
+		"bd605b2f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "66e8f3cc",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune 1 2"
+		}]
+	}]
+}

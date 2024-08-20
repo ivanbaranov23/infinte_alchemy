@@ -1,0 +1,48 @@
+{
+	title: "Born with diamond spoon",
+	icon: "minecraft:diamond",
+	x: 0.5d,
+	y: -0.5d,
+	text: [
+		"Quick start option"
+	],
+	tasks: [{
+		uid: "d78bdc1c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "6b818d7e",
+		type: "item",
+		item: "minecraft:diamond_pickaxe"
+	},
+	{
+		uid: "a3f2a6be",
+		type: "item",
+		item: "minecraft:diamond_axe"
+	},
+	{
+		uid: "da2c334a",
+		type: "item",
+		item: "minecraft:diamond_shovel"
+	},
+	{
+		uid: "17c36185",
+		type: "item",
+		item: "betterbuilderswands:wanddiamond"
+	},
+	{
+		uid: "d8657add",
+		type: "item",
+		item: {
+			id: "chisel:chisel_hitech",
+			tag: {
+				chiseldata: {}
+			}
+		}
+	}]
+}

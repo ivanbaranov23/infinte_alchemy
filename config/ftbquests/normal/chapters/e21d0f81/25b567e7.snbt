@@ -1,0 +1,57 @@
+{
+	title: "Plant Station",
+	icon: "modularcontroller:plant_station_controller",
+	x: 2.0d,
+	y: 2.0d,
+	text: [
+		"Make a plant station. It can be used to make fertile soil, plants and tree saplings."
+	],
+	dependencies: [
+		"e7072cde",
+		"09791627"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7cc9a042",
+		type: "item",
+		items: [{
+			item: "modularcontroller:plant_station_controller"
+		}]
+	},
+	{
+		uid: "b3ee7b89",
+		type: "item",
+		items: [{
+			item: "betternether:quartz_glass"
+		}],
+		count: 32L
+	},
+	{
+		uid: "c957307e",
+		type: "item",
+		items: [{
+			item: "betternether:cincinnasite_forged"
+		}],
+		count: 4L
+	},
+	{
+		uid: "9fde6610",
+		type: "item",
+		items: [{
+			item: "atum:fertile_soil"
+		}],
+		count: 8L
+	},
+	{
+		uid: "5a071ec9",
+		type: "item",
+		items: [{
+			item: "chisel:glowstone2"
+		}]
+	},
+	{
+		uid: "28713d3b",
+		type: "checkmark",
+		title: "20 casings/hatches"
+	}]
+}

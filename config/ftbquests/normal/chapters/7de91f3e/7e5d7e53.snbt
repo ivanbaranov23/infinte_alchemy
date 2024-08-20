@@ -1,0 +1,23 @@
+{
+	x: -3.0d,
+	y: 1.5d,
+	text: [
+		"Greatly redices usage of Vapor of Levity"
+	],
+	dependencies: [
+		"1dee57dd"
+	],
+	optional: true,
+	tasks: [{
+		uid: "40a14a3b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:melodic_reagent"
+		}]
+	}],
+	rewards: [{
+		uid: "8c1b294e",
+		type: "item",
+		item: "contenttweaker:melodic_reagent"
+	}]
+}

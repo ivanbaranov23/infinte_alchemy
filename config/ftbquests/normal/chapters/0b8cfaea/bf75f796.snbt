@@ -1,0 +1,18 @@
+{
+	x: -0.5d,
+	y: -5.0d,
+	text: [
+		"Use pyre to cook you're crucible. Place it above a heat source (look it in jei) and put some cobble inside. It will make you lava. Use bambucket to get it out."
+	],
+	dependencies: [
+		"7b51280b",
+		"f7f27a64"
+	],
+	tasks: [{
+		uid: "df7038a0",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_crucible 1 1"
+		}]
+	}]
+}

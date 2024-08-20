@@ -1,0 +1,47 @@
+{
+	title: "ME Presses",
+	icon: "appliedenergistics2:material 1 13",
+	x: -0.5d,
+	y: 3.0d,
+	text: [
+		"Can also be found in Atum"
+	],
+	tasks: [{
+		uid: "54772a9e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "13d3c4af",
+		type: "item",
+		item: "appliedenergistics2:material 1 13"
+	},
+	{
+		uid: "940eadba",
+		type: "item",
+		item: "appliedenergistics2:material 1 14"
+	},
+	{
+		uid: "e91fe8bd",
+		type: "item",
+		item: "appliedenergistics2:material 1 15"
+	},
+	{
+		uid: "6ab33f98",
+		type: "item",
+		item: "appliedenergistics2:material 1 19"
+	},
+	{
+		uid: "f5bafee0",
+		type: "item",
+		item: "contenttweaker:press_fluid"
+	},
+	{
+		uid: "de75bfd9",
+		type: "item",
+		item: "contenttweaker:press_gas"
+	}]
+}

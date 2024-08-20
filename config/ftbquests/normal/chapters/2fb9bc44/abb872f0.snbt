@@ -1,0 +1,36 @@
+{
+	icon: "prodigytech:energion_crystal_seed",
+	x: 7.5d,
+	y: 0.0d,
+	dependencies: [
+		"33a0ca28"
+	],
+	tasks: [{
+		uid: "59808430",
+		type: "item",
+		items: [{
+			item: "prodigytech:inferno_fuel"
+		}]
+	},
+	{
+		uid: "03434e29",
+		type: "item",
+		items: [{
+			item: "prodigytech:inferno_crystal"
+		}]
+	},
+	{
+		uid: "f28c67fb",
+		type: "item",
+		items: [{
+			item: "prodigytech:energion_dust"
+		}]
+	},
+	{
+		uid: "37fb1ee4",
+		type: "item",
+		items: [{
+			item: "prodigytech:energion_crystal_seed"
+		}]
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	x: 8.0d,
+	y: 6.0d,
+	text: [
+		"Eats eezo and gives bedrockium chunks."
+	],
+	dependencies: [
+		"2e398384"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f80f1965",
+		type: "item",
+		items: [{
+			id: "contenttweaker:lv_bedrock_golem",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

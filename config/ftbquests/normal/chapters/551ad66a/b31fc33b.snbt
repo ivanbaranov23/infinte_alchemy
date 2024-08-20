@@ -1,0 +1,32 @@
+{
+	icon: "immersiveengineering:ore 1 1",
+	x: 2.0d,
+	y: -1.0d,
+	text: [
+		"Pour molten glass on quartz to make bauxite ore. "
+	],
+	dependencies: [
+		"42386b50"
+	],
+	tasks: [{
+		uid: "6f345a80",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:ore 1 1"
+		}]
+	},
+	{
+		uid: "3943dffc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bauxite_dust"
+		}]
+	},
+	{
+		uid: "bb5272e7",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 68"
+		}]
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Machine Frame 1",
+	x: 15.0d,
+	y: 1.0d,
+	shape: "rsquare",
+	text: [
+		"Make your first machine frame. There's going to be like ten more tiers."
+	],
+	dependencies: [
+		"073b08ce",
+		"07158492"
+	],
+	tasks: [{
+		uid: "addff7c0",
+		type: "item",
+		items: [{
+			item: "extrautils2:machine"
+		}]
+	}],
+	rewards: [{
+		uid: "2c4628db",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

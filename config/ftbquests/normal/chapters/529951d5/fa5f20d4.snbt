@@ -1,0 +1,44 @@
+{
+	title: "Nether fauna",
+	x: 0.0d,
+	y: 2.0d,
+	text: [
+		"Meet (and slay) some nether fauna."
+	],
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "5442035f",
+		type: "item",
+		items: [{
+			item: "natura:materials 1 6"
+		}]
+	},
+	{
+		uid: "b0a239f8",
+		type: "item",
+		items: [{
+			item: "quark:soul_bead"
+		}]
+	},
+	{
+		uid: "c820d817",
+		type: "item",
+		items: [{
+			item: "minecraft:ghast_tear"
+		}]
+	},
+	{
+		uid: "2f1c41c9",
+		type: "item",
+		items: [{
+			item: "minecraft:blaze_rod"
+		}]
+	},
+	{
+		uid: "c8a2c062",
+		type: "checkmark",
+		title: "One of the 50 billion wither skeleton drops"
+	}]
+}

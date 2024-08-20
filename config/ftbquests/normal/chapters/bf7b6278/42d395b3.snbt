@@ -1,0 +1,16 @@
+{
+	x: 1.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	tasks: [{
+		uid: "c626879d",
+		type: "checkmark",
+		title: "Immersive Engineering",
+		icon: {
+			id: "immersiveengineering:tool",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

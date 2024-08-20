@@ -1,0 +1,23 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	text: [
+		"Life Essence can initially be obtained from living things. This mainly includes fish, eggs, silkworms and high quality yeast. ",
+		"",
+		"Early game, the best way to get this would be pam's fish trap, grubs, eggs or dodo eggs.",
+		"You can right click a baby slime with a bucket and turn it into Life Essence.",
+		"Dragon eggs can be used for better singularity dusts costs.",
+		"",
+		"Late game, you can either butcher creatures or mass produce dragon eggs."
+	],
+	dependencies: [
+		"447ca00b"
+	],
+	tasks: [{
+		uid: "4d4ea1aa",
+		type: "item",
+		items: [{
+			item: "contenttweaker:life"
+		}]
+	}]
+}

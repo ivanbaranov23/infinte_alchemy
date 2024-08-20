@@ -1,0 +1,25 @@
+{
+	x: 20.5d,
+	y: 3.0d,
+	dependencies: [
+		"bd605b2f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "04547091",
+		type: "item",
+		items: [{
+			item: "contenttweaker:slate_9"
+		}]
+	}],
+	rewards: [{
+		uid: "ae960562",
+		type: "item",
+		item: "contenttweaker:slate_9"
+	},
+	{
+		uid: "fdd4444a",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

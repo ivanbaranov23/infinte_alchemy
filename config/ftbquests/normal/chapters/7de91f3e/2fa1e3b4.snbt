@@ -1,0 +1,42 @@
+{
+	icon: {
+		id: "bloodmagic:sentient_sword",
+		tag: {}
+	},
+	x: -2.0d,
+	y: -9.5d,
+	text: [
+		"You can make an early will automation by putting mending on sentient sword (or Sentient metal TiC weapon) and giving it to killer joe."
+	],
+	dependencies: [
+		"298fbc4e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1aa6756d",
+		type: "item",
+		items: [{
+			id: "bloodmagic:sentient_sword",
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "370d25f4",
+		type: "item",
+		items: [{
+			id: "bloodmagic:monster_soul",
+			tag: {
+				souls: 1.0d
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

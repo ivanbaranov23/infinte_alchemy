@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: 5.0d,
+	dependencies: [
+		"740daded"
+	],
+	optional: true,
+	tasks: [{
+		uid: "777011b5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:plant_sample"
+		}]
+	}]
+}

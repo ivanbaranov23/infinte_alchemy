@@ -1,0 +1,7 @@
+{
+	title: "ch 7: Actually Additions",
+	icon: "contenttweaker:black_bronze_ingot",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

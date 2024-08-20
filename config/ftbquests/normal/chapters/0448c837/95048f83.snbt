@@ -1,0 +1,24 @@
+{
+	icon: "actuallyadditions:block_empowerer",
+	x: 3.0d,
+	y: 1.0d,
+	dependencies: [
+		"439dce53",
+		"15b54b46"
+	],
+	tasks: [{
+		uid: "6a919375",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_empowerer"
+		}]
+	},
+	{
+		uid: "04eb3205",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_display_stand"
+		}],
+		count: 4L
+	}]
+}

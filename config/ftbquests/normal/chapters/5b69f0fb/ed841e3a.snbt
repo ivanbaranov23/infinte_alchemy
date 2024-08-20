@@ -1,0 +1,15 @@
+{
+	x: -4.0d,
+	y: 0.0d,
+	text: [
+		"This chapter is optional for early game but you can still find here some interesting things. ",
+		"",
+		"Many roots rituals/spells are gated behind erebus or nether plants."
+	],
+	tasks: [{
+		uid: "11b527ab",
+		type: "checkmark",
+		title: "Roots",
+		icon: "botania:fertilizer"
+	}]
+}

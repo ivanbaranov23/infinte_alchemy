@@ -1,0 +1,23 @@
+{
+	icon: "contenttweaker:tincan_mech",
+	x: 10.0d,
+	y: -2.0d,
+	text: [
+		"Mech missions are explained in chapter 7++. For now you'll need to do this mission to get amethysts."
+	],
+	dependencies: [
+		"5aa601fa"
+	],
+	tasks: [{
+		uid: "387a9e84",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tincan_target_gem"
+		}]
+	}],
+	rewards: [{
+		uid: "db3b3921",
+		type: "item",
+		item: "contenttweaker:stone_idol"
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	x: 7.5d,
+	y: -3.0d,
+	shape: "diamond",
+	dependencies: [
+		"cd3c2f5d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d91b6f0b",
+		type: "item",
+		items: [{
+			item: "prodigytech:energion_dust"
+		}],
+		count: 256L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "fff0128f",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

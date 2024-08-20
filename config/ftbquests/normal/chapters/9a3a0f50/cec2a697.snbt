@@ -1,0 +1,25 @@
+{
+	icon: "appliedenergistics2:condenser",
+	x: 8.0d,
+	y: 5.0d,
+	text: [
+		"Put 1k storage component into the top slot and select matter ball mode. Insert 256 of any item/fluid into the condenser to make matter ball."
+	],
+	dependencies: [
+		"e2351147"
+	],
+	tasks: [{
+		uid: "91f6e589",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:condenser"
+		}]
+	},
+	{
+		uid: "d4396d71",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 6"
+		}]
+	}]
+}

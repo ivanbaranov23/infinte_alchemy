@@ -1,0 +1,20 @@
+{
+	title: "Research Quests",
+	x: 18.0d,
+	y: 3.0d,
+	shape: "gear",
+	text: [
+		"Quest will have gear shape and will list all the items for the research.",
+		"",
+		"Research books are usually not consumed in crafts, tho ae2 molecular assemblers WILL CONSUME it, so keep it in mind."
+	],
+	dependencies: [
+		"0614573b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "97f8f1df",
+		type: "checkmark",
+		icon: "minecraft:book"
+	}]
+}

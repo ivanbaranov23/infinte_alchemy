@@ -1,0 +1,23 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	text: [
+		"Can be used to make diamonds from charcoal.",
+		"",
+		"Can be duped with Thermal"
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	tasks: [{
+		uid: "b2f9b75f",
+		type: "checkmark",
+		title: "Formic Acid",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "formic_acid"
+			}
+		}
+	}]
+}

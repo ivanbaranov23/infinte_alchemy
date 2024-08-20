@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "side": "contenttweaker:blocks/soul_frame_side",
+      "end": "contenttweaker:blocks/soul_frame_top"
+    },
+    "model": "cube_column"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

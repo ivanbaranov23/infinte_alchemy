@@ -1,0 +1,25 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	text: [
+		"Repellent drops from Cicadas (poisonous potato).",
+		"Camouflage Powder drops from Praying Mantises (grandma's shoe mushroom)."
+	],
+	dependencies: [
+		"75a90d11"
+	],
+	tasks: [{
+		uid: "04262cf3",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 28"
+		}]
+	},
+	{
+		uid: "48bc21a7",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 18"
+		}]
+	}]
+}

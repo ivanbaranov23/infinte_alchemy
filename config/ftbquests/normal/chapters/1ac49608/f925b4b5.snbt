@@ -1,0 +1,63 @@
+{
+	icon: "modularcontroller:tignalum_oven_controller",
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"Throw signs on it haphazardly"
+	],
+	dependencies: [
+		"dfcf969f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fa5db77a",
+		type: "item",
+		icon: "modularcontroller:tignalum_oven_controller",
+		items: [{
+			item: "modularcontroller:tignalum_oven_controller"
+		}]
+	},
+	{
+		uid: "90ca0d05",
+		type: "item",
+		items: [{
+			item: "contenttweaker:firebrick_block"
+		}],
+		count: 9L
+	},
+	{
+		uid: "398c2e20",
+		type: "item",
+		items: [{
+			item: "contenttweaker:high_heat_glass"
+		}],
+		count: 17L
+	},
+	{
+		uid: "f5672953",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 24L
+	},
+	{
+		uid: "1235a179",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tignalum_blast_brick"
+		}],
+		count: 81L
+	},
+	{
+		uid: "9bd3270d",
+		type: "checkmark",
+		title: "24 casings/hatches"
+	}],
+	rewards: [{
+		uid: "902234e2",
+		type: "item",
+		item: "engineersdecor:sign_firehazard",
+		count: 20
+	}]
+}

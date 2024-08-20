@@ -1,0 +1,22 @@
+{
+	title: "IT'S A BAMBUCKET!!!",
+	x: -1.5d,
+	y: 2.0d,
+	text: [
+		"Make youself a few bambuckets. You can get bamboo with witch water and sugarcane. ",
+		"",
+		"Unlike some clay weaklings, bambucket is a chad bucket that does not fear lava."
+	],
+	dependencies: [
+		"15a113bb"
+	],
+	tasks: [{
+		uid: "7922c49c",
+		type: "item",
+		items: [{
+			id: "erebus:bambucket",
+			tag: {}
+		}],
+		count: 2L
+	}]
+}

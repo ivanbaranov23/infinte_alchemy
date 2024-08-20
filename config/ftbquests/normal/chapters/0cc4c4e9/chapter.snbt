@@ -1,0 +1,7 @@
+{
+	title: "ch 8+: End (dimension)",
+	icon: "quark:biotite",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

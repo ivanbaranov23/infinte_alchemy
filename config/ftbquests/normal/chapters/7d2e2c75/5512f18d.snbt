@@ -1,0 +1,24 @@
+{
+	x: 14.0d,
+	y: 2.0d,
+	dependencies: [
+		"fb108fc4"
+	],
+	tasks: [{
+		uid: "630ca03a",
+		type: "checkmark",
+		title: "Lithium",
+		icon: {
+			id: "aeadditions:pattern.fluid",
+			tag: {
+				Fluid: {
+					FluidName: "liquidlithium",
+					Amount: 1000
+				}
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

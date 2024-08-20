@@ -1,0 +1,16 @@
+{
+	x: 3.0d,
+	y: 9.0d,
+	dependencies: [
+		"87d3a923",
+		"61602a12",
+		"30fd1eba"
+	],
+	tasks: [{
+		uid: "3eaaa2f3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gambrosium_processor"
+		}]
+	}]
+}

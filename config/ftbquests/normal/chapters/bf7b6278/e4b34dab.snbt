@@ -1,0 +1,30 @@
+{
+	x: 10.0d,
+	y: 6.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"a973cd16"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2d815bda",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "faac5436",
+		type: "item",
+		item: "enderio:item_material 1 4",
+		count: 16
+	},
+	{
+		uid: "12778bdc",
+		type: "choice",
+		icon: "enderio:item_item_conduit",
+		table: 0
+	}]
+}

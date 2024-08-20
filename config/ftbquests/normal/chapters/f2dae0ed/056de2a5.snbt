@@ -1,0 +1,13 @@
+{
+	x: 5.0d,
+	y: -1.0d,
+	text: [
+		"Can be summoned with roots."
+	],
+	tasks: [{
+		uid: "da7f0b96",
+		type: "kill",
+		entity: "mod_lavacow:sludgelord",
+		value: 1L
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	text: [
+		"Start on these before you'll need opinium cores."
+	],
+	dependencies: [
+		"2d526bc8"
+	],
+	optional: true,
+	tasks: [{
+		uid: "47151ca7",
+		type: "item",
+		items: [{
+			item: "extrautils2:ingredients 1 4"
+		}]
+	}]
+}

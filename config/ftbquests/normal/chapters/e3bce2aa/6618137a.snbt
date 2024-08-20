@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: 7.0d,
+	text: [
+		""
+	],
+	optional: true,
+	tasks: [{
+		uid: "56ed175c",
+		type: "item",
+		items: [{
+			item: "harvestcraft:soybeanitem"
+		}]
+	}]
+}

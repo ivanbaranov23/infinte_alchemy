@@ -1,0 +1,7 @@
+{
+	"parent": "item/generated",
+	 "textures": {
+		"layer0": "alchemistry:items/elements/transendium",
+		"layer1": "alchemistry:items/elements/element_transendium"
+	}
+}

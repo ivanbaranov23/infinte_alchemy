@@ -1,0 +1,14 @@
+{
+	x: 24.0d,
+	y: 2.0d,
+	dependencies: [
+		"9106c427"
+	],
+	tasks: [{
+		uid: "cacff04f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bloody_gearbox"
+		}]
+	}]
+}

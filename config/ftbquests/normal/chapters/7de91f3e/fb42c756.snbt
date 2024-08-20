@@ -1,0 +1,63 @@
+{
+	title: "Subprocessor columns",
+	x: 26.0d,
+	y: 2.0d,
+	text: [
+		"Replacing altar runes for acceleration runes will give x0.8 multiplier for recipe time per rune.",
+		"Do note that even when recipe time is shorter, recipe RF per tick will be increased to keep total energy the same.",
+		"All 5 runes will give x0.32 to recipes time with x3.05 for rf per tick.",
+		"",
+		"",
+		"Column options: ",
+		"1) Blank Slate - cheap, no effect.  All 16 blocks will give no effect 16 times.",
+		"",
+		"2) Efficiency Rune - each block gives x1.5 for life essence output. All 16 blocks will give x656.",
+		"",
+		"3) Soul-... Frame - each block gives -1 to will and x0.85 to RF per tick needed for recipes. All 16 blocks will give -16 will and x0.075 to RF per tick.",
+		"",
+		"4) Bloody Sheetmetal - each block gives x0.9 for LP needed for recipe. All 16 blocks will give x0.185",
+		"",
+		"5) Space Stabilization Frame - each block gives x0.75 to recipe time and x1.1 to recipe RF per tick. All 16 blocks will give x0.01 time at x458 RF per tick. ",
+		"",
+		"Blocks in columns can be mixed and matched."
+	],
+	dependencies: [
+		"4827eaf9"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0a80696a",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune 1 9"
+		}]
+	},
+	{
+		uid: "11172f79",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune 1 2"
+		}]
+	},
+	{
+		uid: "774ce3b2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:soul_frame"
+		}]
+	},
+	{
+		uid: "c54bf39c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bloody_sheetmetal"
+		}]
+	},
+	{
+		uid: "88f10419",
+		type: "item",
+		items: [{
+			item: "contenttweaker:space_stabilization_frame"
+		}]
+	}]
+}

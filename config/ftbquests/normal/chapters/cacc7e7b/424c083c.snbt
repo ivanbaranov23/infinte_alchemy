@@ -1,0 +1,53 @@
+{
+	title: "16384 Will",
+	icon: {
+		id: "bloodmagic:soul_gem",
+		Damage: 4s,
+		tag: {
+			souls: 16274.923790751145d
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		}
+	},
+	x: 1.5d,
+	y: 5.0d,
+	dependencies: [
+		"298fbc4e"
+	],
+	tasks: [{
+		uid: "e0bf7fb4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 7L
+	},
+	{
+		uid: "b9ec14ed",
+		type: "item",
+		items: [{
+			id: "bloodmagic:soul_gem",
+			Damage: 4s,
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "beaaa36b",
+		type: "item",
+		item: {
+			id: "bloodmagic:soul_gem",
+			Damage: 4s,
+			tag: {
+				souls: 16384.0d
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

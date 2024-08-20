@@ -1,0 +1,20 @@
+{
+	x: -2.0d,
+	y: -6.0d,
+	text: [
+		"[Mission] is a sub-recipe in [Expedition].",
+		"",
+		"[Mission] consists of a [Mech], its [Fuel] and its [Target] and will add corresponding [Loot] to the [Expedetion] output.",
+		"",
+		"Multiple [Mech]s in one [Expedition] can't have different [Mission]s, but they will share [Fuel] and [Target]."
+	],
+	dependencies: [
+		"9e3c5f9d"
+	],
+	tasks: [{
+		uid: "b7cfe104",
+		type: "checkmark",
+		title: "Missions",
+		icon: "contenttweaker:tincan_target_ore1"
+	}]
+}

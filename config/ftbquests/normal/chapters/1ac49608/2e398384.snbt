@@ -1,0 +1,23 @@
+{
+	title: "Expensiver Table",
+	x: 9.0d,
+	y: 5.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"e817dd96"
+	],
+	tasks: [{
+		uid: "a8ca377b",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:table_advanced"
+		}]
+	}],
+	rewards: [{
+		uid: "6452168c",
+		type: "item",
+		item: "extendedcrafting:table_advanced"
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -1.0d,
+	dependencies: [
+		"51fd7c52"
+	],
+	tasks: [{
+		uid: "97f6fa0b",
+		type: "item",
+		items: [{
+			item: "twilightforest:carminite"
+		}]
+	}],
+	rewards: [{
+		uid: "4fa1caed",
+		type: "item",
+		item: "twilightforest:block_storage 1 4"
+	}]
+}

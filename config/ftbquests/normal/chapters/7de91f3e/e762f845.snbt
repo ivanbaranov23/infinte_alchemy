@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: -8.5d,
+	dependencies: [
+		"fb79e1ee"
+	],
+	optional: true,
+	tasks: [{
+		uid: "bc66171f",
+		type: "item",
+		items: [{
+			item: "modularcontroller:blood_meat_infuser_controller"
+		}]
+	}]
+}

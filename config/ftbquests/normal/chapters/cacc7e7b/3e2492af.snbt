@@ -1,0 +1,117 @@
+{
+	title: "Trial Keys",
+	icon: {
+		id: "deepmoblearning:trial_key",
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		}
+	},
+	x: 1.5d,
+	y: 3.0d,
+	text: [
+		"A challange for you: clear ultimate fun trial (creeper trial). If even one of them explodes it won't be counted as dying and the trial will be softlocked. Better hit 'em fast."
+	],
+	dependencies: [
+		"7355ab30"
+	],
+	tasks: [{
+		uid: "f0f92c92",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "cc38a32f",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "witch"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "cbdf51a0",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "slime"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "eada8f6d",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "stone"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "024b9d86",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "assasin"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "0299db15",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "wither_skeleton"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "2c0215d5",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				RepairCost: 1,
+				tier: 3,
+				attunement: "creeper",
+				display: {
+					Name: "§bUltimate Fun"
+				}
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}
+	}]
+}

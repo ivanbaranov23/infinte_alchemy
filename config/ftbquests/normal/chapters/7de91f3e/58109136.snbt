@@ -1,0 +1,25 @@
+{
+	x: 6.0d,
+	y: -9.5d,
+	shape: "square",
+	text: [
+		"Deep Dark is the last dimension for you to visit. It is has pretty much all the ores, including Erebus, Atum, Nether, Aether, End and dense ones.",
+		"The highlight of them are: AS Rock Crystals and Aquamarine, neodimium"
+	],
+	dependencies: [
+		"fb79e1ee"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8b4e04b4",
+		type: "item",
+		items: [{
+			item: "extrautils2:teleporter 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "e75dbb8f",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

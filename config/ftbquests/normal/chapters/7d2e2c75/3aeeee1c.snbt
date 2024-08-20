@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: 1.0d,
+	dependencies: [
+		"7190a5b2"
+	],
+	tasks: [{
+		uid: "ab7612fb",
+		type: "item",
+		items: [{
+			item: "requious:fluid_alloyer"
+		}]
+	}]
+}

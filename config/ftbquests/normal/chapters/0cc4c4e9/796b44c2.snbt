@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	dependencies: [
+		"a758a11f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "03631c0f",
+		type: "item",
+		items: [{
+			item: "bigreactors:mineralanglesite"
+		}]
+	}]
+}

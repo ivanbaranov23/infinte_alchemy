@@ -1,0 +1,34 @@
+{
+	icon: "exnihilocreatio:item_material 1 3",
+	x: -2.5d,
+	y: -3.0d,
+	text: [
+		"Sieve dirt for ancinet spores. Right click the dirt with the spores to turn it into mycelium. ",
+		"",
+		"Put a barrel with water on top to get witch water. While water is transforming, mushrooms will generate around the barrel."
+	],
+	dependencies: [
+		"2ecdc636"
+	],
+	tasks: [{
+		uid: "b72f3248",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_material 1 3"
+		}]
+	},
+	{
+		uid: "1787a1e9",
+		type: "item",
+		items: [{
+			item: "minecraft:brown_mushroom"
+		}]
+	},
+	{
+		uid: "3914dc81",
+		type: "item",
+		items: [{
+			item: "minecraft:red_mushroom"
+		}]
+	}]
+}

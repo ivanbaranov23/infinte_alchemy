@@ -1,0 +1,20 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	dependencies: [
+		"dfcf969f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "52486443",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_coffee_machine"
+		}]
+	}],
+	rewards: [{
+		uid: "1dd7a356",
+		type: "item",
+		item: "actuallyadditions:item_misc 1 14"
+	}]
+}

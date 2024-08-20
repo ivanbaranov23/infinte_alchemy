@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: -3.0d,
+	text: [
+		"sap -> syrup -> caramel"
+	],
+	dependencies: [
+		"7d6a11c2"
+	],
+	tasks: [{
+		uid: "548d8106",
+		type: "item",
+		items: [{
+			item: "harvestcraft:caramelitem"
+		}]
+	}]
+}

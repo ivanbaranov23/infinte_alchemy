@@ -1,0 +1,18 @@
+{
+	x: 11.0d,
+	y: 0.0d,
+	shape: "square",
+	text: [
+		"Gate for Twilight Forest"
+	],
+	dependencies: [
+		"30e63d05"
+	],
+	tasks: [{
+		uid: "75c3d959",
+		type: "item",
+		items: [{
+			item: "twilightforest:magic_map_focus"
+		}]
+	}]
+}

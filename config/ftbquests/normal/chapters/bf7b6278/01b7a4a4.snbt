@@ -1,0 +1,18 @@
+{
+	x: 5.0d,
+	y: 2.0d,
+	text: [
+		"It's fluid drawers. Just attach them to drawer controller and pump fluid into it. Drawer storage and void upgardes work with it. "
+	],
+	dependencies: [
+		"ddccb601"
+	],
+	optional: true,
+	tasks: [{
+		uid: "409c06a1",
+		type: "item",
+		items: [{
+			item: "fluiddrawers:tank"
+		}]
+	}]
+}

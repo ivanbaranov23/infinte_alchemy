@@ -1,0 +1,9 @@
+{
+	x: 5.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "7ed9f05a",
+		type: "checkmark",
+		icon: "immersiveengineering:metal_multiblock 1 5"
+	}]
+}

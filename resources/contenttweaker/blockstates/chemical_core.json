@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "side": "contenttweaker:blocks/chemical_core_side",
+      "top": "contenttweaker:blocks/chemical_core_top",
+      "bottom": "contenttweaker:blocks/chemical_core_bottom"
+    },
+    "model": "immersiveengineering:ie_scaffolding",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

@@ -1,0 +1,1180 @@
+{
+    "rules":[
+        {
+            "match": {
+                "blocks": {"blocks": ["minecraft:clay:0"]},
+                "harvester": {
+                    "heldItemMainHand": {"items" :["roots:living_shovel"]}
+                }
+            },
+            "drops": [
+                {
+                    
+                    "replaceBlock": {
+                        "block": "contenttweaker:forest_clay_block"
+                    }
+                }
+            ]
+        },
+        {
+            "match": {
+                "blocks": {"blocks": [
+                    "biomesoplenty:leaves_3:9",
+                    "biomesoplenty:leaves_3:5",
+                    "biomesoplenty:leaves_3:1"
+                ]},
+                "harvester": {
+                    "heldItemMainHand": {"items" :["contenttweaker:staffwood"]}
+                }
+            },
+            "drops": [
+                {
+                    "item": {
+                        "items": [
+                            "contenttweaker:staffwood_flower"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "match": {
+                "blocks": {"blocks": [
+                    "minecraft:leaves:*"
+                ]},
+                "harvester": {
+                    "heldItemMainHand": {"items" :["contenttweaker:staffwood_flower"]}
+                }
+            },
+            "drops": [
+                {
+                    "item": {
+                        "items": [
+                            "harvestcraft:snailrawitem"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:leaves"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "roots:petals"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:leaves"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "biomesoplenty:plant_0:12"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:leaves"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "twilightforest:steeleaf_ingot"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "match": {
+                "blocks": {"blocks": [
+                    "contenttweaker:leaves_vanilla"
+                ]}
+            },
+            "drops": [
+                {
+                    "item": {
+                        "items": [
+                            "harvestcraft:snailrawitem"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:leaves_vanilla"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "roots:petals"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:leaves_vanilla"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "biomesoplenty:plant_0:12"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:leaves_vanilla"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "twilightforest:steeleaf_ingot"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+
+        
+        {
+            "match": {
+                "blocks": {"blocks": [
+                    "erebus:leaves_marshwood:*"
+                ]},
+                "harvester": {
+                    "heldItemMainHand": {"items" :["contenttweaker:staffwood_flower"]}
+                }
+            },
+            "drops": [
+                {
+                    "item": {
+                        "items": [
+                            "erebus:materials:28"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:leaves_marshwood"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "erebus:materials:30"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:leaves_marshwood"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "erebus:materials:31"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:leaves_marshwood"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "erebus:materials:40"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:leaves_marshwood"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "biomesoplenty:plant_0:12"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:leaves_marshwood"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "twilightforest:steeleaf_ingot"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "match": {
+                "blocks": {"blocks": [
+                    "contenttweaker:leaves_erebus"
+                ]}
+            },
+            "drops": [
+                {
+                    "item": {
+                        "items": [
+                            "erebus:materials:28"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:leaves_erebus"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "erebus:materials:30"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:leaves_erebus"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "erebus:materials:31"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:leaves_erebus"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "erebus:materials:40"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:leaves_erebus"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "biomesoplenty:plant_0:12"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:leaves_erebus"
+                    }
+                },
+                {
+                    "item": {
+                        "items": [
+                            "twilightforest:steeleaf_ingot"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+
+
+        {
+            "match": {
+                "blocks": {"blocks": [
+                    "contenttweaker:mushroomite_mud:0"
+                ]},
+                "harvester": {
+                    "heldItemMainHand": {"items" :["contenttweaker:staffwood"]}
+                }
+            },
+            "drops": [
+                {
+                    "item": {
+                        "items": [
+                            "contenttweaker:staffwood_mushroom"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+
+        {"match": {"blocks": {"blocks": ["erebus:kaizers_fingers_mushroom_block:14"]}, 
+                "harvester": {
+                    "heldItemMainHand": {
+                        "harvestLevel": "staffwood_mushroom;0;2"
+                    }
+                }
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 6
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:netherrack"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 4
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:flesh"
+                    }
+                },
+
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:redstone_ore"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "thermalfoundation:ore_fluid",
+                        "properties": {
+                            "type": "redstone"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "ruby"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "taiga:valyrium_ore"
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["contenttweaker:oreshroom_red"]}
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 6
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:netherrack"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 4
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:flesh"
+                    }
+                },
+
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:redstone_ore"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "thermalfoundation:ore_fluid",
+                        "properties": {
+                            "type": "redstone"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "ruby"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "taiga:valyrium_ore"
+                    }
+                }
+            ]
+        },
+
+        {"match": {"blocks": {"blocks": ["erebus:dutch_cap_mushroom_block:14"]}, 
+                "harvester": {
+                    "heldItemMainHand": {
+                        "harvestLevel": "staffwood_mushroom;0;2"
+                    }
+                }
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 6
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:amber"
+                    }
+                },
+
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 0,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "bigreactors:oreanglesite"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "thermalfoundation:ore",
+                        "properties": {
+                            "type": "nickel"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "amber"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "thermalfoundation:ore",
+                        "properties": {
+                            "type": "copper"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:gold_ore"
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["contenttweaker:oreshroom_yellow"]}
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 6
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:amber"
+                    }
+                },
+
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 0,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "bigreactors:oreanglesite"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "thermalfoundation:ore",
+                        "properties": {
+                            "type": "nickel"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "amber"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "thermalfoundation:ore",
+                        "properties": {
+                            "type": "copper"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:gold_ore"
+                    }
+                }
+            ]
+        },
+
+        {"match": {"blocks": {"blocks": ["erebus:grandmas_shoes_mushroom_block:14"]}, 
+                "harvester": {
+                    "heldItemMainHand": {
+                        "harvestLevel": "staffwood_mushroom;0;2"
+                    }
+                }
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 5
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "mysticalagriculture:inferium_ore"
+                    }
+                },
+
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:emerald_ore"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "immersiveengineering:ore",
+                        "properties": {
+                            "type": "uranium"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "peridot"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:ore_jade"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "taiga:tiberium_ore"
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["contenttweaker:oreshroom_green"]}
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 5
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "mysticalagriculture:inferium_ore"
+                    }
+                },
+
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:emerald_ore"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "immersiveengineering:ore",
+                        "properties": {
+                            "type": "uranium"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "peridot"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "erebus:ore_jade"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "taiga:tiberium_ore"
+                    }
+                }
+            ]
+        },
+
+        {"match": {"blocks": {"blocks": ["erebus:dark_capped_mushroom_block:14"]}, 
+                "harvester": {
+                    "heldItemMainHand": {
+                        "harvestLevel": "staffwood_mushroom;0;2"
+                    }
+                }
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:electrotine_ore"
+                    }
+                },
+
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:lapis_ore"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 3
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "netherendingores:ore_other_1",
+                        "properties": {
+                            "blocks": "overworld_cobalt_ore"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "sapphire"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "netherendingores:ore_other_1",
+                        "properties": {
+                            "blocks": "overworld_icestone_ore"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "thermalfoundation:ore",
+                        "properties": {
+                            "type": "platinum"
+                        }
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["contenttweaker:oreshroom_blue"]}
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:electrotine_ore"
+                    }
+                },
+
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "minecraft:lapis_ore"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 3
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "netherendingores:ore_other_1",
+                        "properties": {
+                            "blocks": "overworld_cobalt_ore"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "sapphire"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "netherendingores:ore_other_1",
+                        "properties": {
+                            "blocks": "overworld_icestone_ore"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "thermalfoundation:ore",
+                        "properties": {
+                            "type": "platinum"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {"match": {"blocks": {"blocks": ["erebus:sarcastic_czech_mushroom_block:14"]}, 
+                "harvester": {
+                    "heldItemMainHand": {
+                        "harvestLevel": "staffwood_mushroom;0;2"
+                    }
+                }
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 8
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "stygian:endobsidian"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "immersiveengineering:ore",
+                        "properties": {
+                            "type": "lead"
+                        }
+                    }
+                },
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "draconicevolution:draconium_ore"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "netherendingores:ore_other_1",
+                        "properties": {
+                            "blocks": "overworld_zanite_ore"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "tanzanite"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 0,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:geode_ore"
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["contenttweaker:oreshroom_purple"]}
+            },
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 8
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "stygian:endobsidian"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 2,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "immersiveengineering:ore",
+                        "properties": {
+                            "type": "lead"
+                        }
+                    }
+                },
+
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "draconicevolution:draconium_ore"
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "netherendingores:ore_other_1",
+                        "properties": {
+                            "blocks": "overworld_zanite_ore"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 1,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "biomesoplenty:gem_ore",
+                        "properties": {
+                            "variant": "tanzanite"
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 0,
+                            "fortuneModifier": 1
+                        }
+                    },
+                    "replaceBlock": {
+                        "block": "contenttweaker:geode_ore"
+                    }
+                }
+            ]
+        }
+    ]
+}

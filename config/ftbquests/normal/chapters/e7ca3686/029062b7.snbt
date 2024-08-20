@@ -1,0 +1,16 @@
+{
+	x: 0.0d,
+	y: -5.0d,
+	tasks: [{
+		uid: "01627dff",
+		type: "item",
+		items: [{
+			item: "contenttweaker:chrome_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "1942287a",
+		type: "item",
+		item: "contenttweaker:chrome_block"
+	}]
+}

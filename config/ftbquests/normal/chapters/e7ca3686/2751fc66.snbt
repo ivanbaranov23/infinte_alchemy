@@ -1,0 +1,19 @@
+{
+	x: 11.0d,
+	y: -5.0d,
+	dependencies: [
+		"fccf7956"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6117d41e",
+		type: "checkmark",
+		title: "Methane",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "methane"
+			}
+		}
+	}]
+}

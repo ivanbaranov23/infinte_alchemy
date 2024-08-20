@@ -1,0 +1,19 @@
+{
+	title: "Steel Making",
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"42d395b3"
+	],
+	tasks: [{
+		uid: "9057d565",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 1"
+		}],
+		count: 27L
+	}]
+}

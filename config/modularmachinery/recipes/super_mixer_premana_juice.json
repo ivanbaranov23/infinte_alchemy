@@ -1,0 +1,76 @@
+{
+    "machine": "super_mixer",
+    "registryName": "super_mixer_premana_juice",
+    "recipeTime": 200,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 100000
+        },
+        {
+            "type": "will",
+            "io-type": "input",
+            "willtype": "vengeful",
+            "willamount": 10
+        },
+        
+        
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:reagent_potion@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:bouncy_matter_small@0",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "tconevo:metal@26",
+            "amount": 1
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "ultrapure_water",
+            "amount": 1000
+        },
+        
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "vapor_of_levity",
+            "amount": 500
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "premana_juice",
+            "amount": 10000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "mana",
+            "amount": 10000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "circuit",
+            "amount": 800
+        },
+        
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "mana_juice",
+            "amount": 2000
+        }
+    ]
+}

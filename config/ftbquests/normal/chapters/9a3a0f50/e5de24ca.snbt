@@ -1,0 +1,15 @@
+{
+	x: -6.0d,
+	y: 8.0d,
+	dependencies: [
+		"8670b99a",
+		"30fd1eba"
+	],
+	tasks: [{
+		uid: "0828be9f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:palladium_processor"
+		}]
+	}]
+}

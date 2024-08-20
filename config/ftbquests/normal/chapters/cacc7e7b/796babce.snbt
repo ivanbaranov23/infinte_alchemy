@@ -1,0 +1,38 @@
+{
+	title: "I hate those recipes",
+	icon: "storagedrawers:controller",
+	x: 5.5d,
+	y: 1.0d,
+	tasks: [{
+		uid: "866afbcd",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "8a20169c",
+		type: "item",
+		item: "storagedrawers:controller",
+		count: 4
+	},
+	{
+		uid: "3e85d964",
+		type: "item",
+		item: "storagedrawers:compdrawers",
+		count: 16
+	},
+	{
+		uid: "ccb999cf",
+		type: "item",
+		item: "storagedrawers:upgrade_void",
+		count: 16
+	},
+	{
+		uid: "ac6672d9",
+		type: "item",
+		item: "storagedrawers:upgrade_storage 1 4",
+		count: 16
+	}]
+}

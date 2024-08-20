@@ -1,0 +1,19 @@
+{
+	x: 3.0d,
+	y: 0.0d,
+	dependencies: [
+		"123beeb9"
+	],
+	tasks: [{
+		uid: "c1dbd5b9",
+		type: "item",
+		items: [{
+			item: "botania:pool"
+		}]
+	}],
+	rewards: [{
+		uid: "255fa6bd",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

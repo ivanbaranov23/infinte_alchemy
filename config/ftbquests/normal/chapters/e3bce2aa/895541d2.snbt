@@ -1,0 +1,22 @@
+{
+	x: -1.0d,
+	y: 2.0d,
+	text: [
+		"can be obtained as byproduct from nickel"
+	],
+	dependencies: [
+		"3230908d"
+	],
+	tasks: [{
+		uid: "16c2967a",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 134"
+		}]
+	}],
+	rewards: [{
+		uid: "ccd093fd",
+		type: "item",
+		item: "thermalfoundation:storage 1 6"
+	}]
+}

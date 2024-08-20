@@ -1,0 +1,33 @@
+{
+	title: "Have you ever played GTNH?",
+	icon: "contenttweaker:fireclay",
+	x: 5.5d,
+	y: -1.0d,
+	text: [
+		"Make some fire clay."
+	],
+	dependencies: [
+		"f7f27a64"
+	],
+	tasks: [{
+		uid: "aaf0557e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fireclay"
+		}]
+	},
+	{
+		uid: "b5a26396",
+		type: "item",
+		items: [{
+			item: "contenttweaker:firebrick"
+		}]
+	},
+	{
+		uid: "ccdf27bd",
+		type: "item",
+		items: [{
+			item: "contenttweaker:firebrick_block"
+		}]
+	}]
+}

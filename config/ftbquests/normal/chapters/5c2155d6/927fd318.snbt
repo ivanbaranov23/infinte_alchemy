@@ -1,0 +1,23 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	text: [
+		"Find or make a jadeberry bush. It will grow jadeberries which can be made into jade."
+	],
+	dependencies: [
+		"b3441e9b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "599903b5",
+		type: "item",
+		items: [{
+			item: "erebus:jade_berry_bush"
+		}]
+	}],
+	rewards: [{
+		uid: "64394998",
+		type: "item",
+		item: "erebus:jade_berry_bush"
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: 7.0d,
+	y: 1.0d,
+	dependencies: [
+		"5bdc6337"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ebedaa2b",
+		type: "item",
+		items: [{
+			item: "enderio:item_gas_conduit 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "6d8d0dc5",
+		type: "item",
+		item: "enderio:item_gas_conduit 1 2",
+		count: 8
+	}]
+}

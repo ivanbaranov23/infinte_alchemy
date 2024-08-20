@@ -1,0 +1,24 @@
+{
+	title: "Tier V",
+	x: 13.5d,
+	y: 1.0d,
+	text: [
+		"52 runes"
+	],
+	dependencies: [
+		"647de8d9"
+	],
+	tasks: [{
+		uid: "9ffab3a0",
+		type: "item",
+		items: [{
+			item: "minecraft:beacon"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "e0ed131d",
+		type: "item",
+		item: "contenttweaker:blood_shard3"
+	}]
+}

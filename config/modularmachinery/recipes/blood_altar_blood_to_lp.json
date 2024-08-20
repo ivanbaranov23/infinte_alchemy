@@ -1,0 +1,51 @@
+{
+    "machine": "blood_altar",
+    "registryName": "blood_altar_blood_to_lp",
+    "recipeTime": 40,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 10000
+        },
+
+        {
+            "type": "will",
+            "io-type": "input",
+            "willtype": "corrosive",
+            "willamount": 20
+        },
+        {
+            "type": "will",
+            "io-type": "input",
+            "willtype": "steadfast",
+            "willamount": 20
+        },
+        
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "lifeessence",
+            "amount": 320
+        },
+        
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "openblocks:tank@0",
+            "amount": 1,
+            "nbt": {
+                "tank": {
+                    "FluidName": "blood",
+                    "Amount": "16000"
+                }
+            }
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "openblocks:tank@0",
+            "amount": 1
+        }
+    ]
+}

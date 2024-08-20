@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: 4.0d,
+	dependencies: [
+		"b93b2031"
+	],
+	tasks: [{
+		uid: "bedf4796",
+		type: "item",
+		items: [{
+			item: "erebus:liquifier"
+		}]
+	}]
+}

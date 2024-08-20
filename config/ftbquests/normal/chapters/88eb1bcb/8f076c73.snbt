@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: 0.0d,
+	dependencies: [
+		"e08ae208"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a1faeb23",
+		type: "item",
+		items: [{
+			item: "excompressum:auto_sieve"
+		}]
+	}],
+	rewards: [{
+		uid: "9f8c7dba",
+		type: "item",
+		item: "exnihilocreatio:item_mesh 1 3"
+	}]
+}

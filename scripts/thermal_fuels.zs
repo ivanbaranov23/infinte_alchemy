@@ -1,0 +1,176 @@
+import mods.immersiveengineering.DieselHandler;
+
+import mods.thermalexpansion.NumisticDynamo;
+
+import mods.enderio.CombustionGen;
+
+
+import mods.modularmachinery.RecipeBuilder;
+
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.WeightedItemStack;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.liquid.ILiquidStack;
+
+
+
+{//diesel engine fuels
+	// 20 mb/t = 50
+	// 10 mb/t = 100
+	//biodiesel 8 mb/t = 125 
+	//diesel 5 mb/t = 200
+	// 4 mb/t = 250
+	// 3 mb/t = 333.3
+	// 2 mb/t = 500
+	// 1 mb/t = 1000
+	//DieselHandler.addFuel(ILiquidStack fuel, int time);
+
+	//thermal
+	DieselHandler.addFuel(<liquid:refined_fuel>, 125);
+	DieselHandler.addFuel(<liquid:refined_biofuel>, 100);
+	//canola
+	DieselHandler.addFuel(<liquid:refinedcanolaoil>, 100);
+	DieselHandler.addFuel(<liquid:crystaloil>, 200);
+	DieselHandler.addFuel(<liquid:empoweredoil>, 500);
+
+	DieselHandler.addFuel(<liquid:biofuel>, 100);
+
+    //contenttweaker
+    DieselHandler.addFuel(<liquid:enriched_diesel1>, 250);
+    DieselHandler.addFuel(<liquid:enriched_diesel2>, 1000);
+    DieselHandler.addFuel(<liquid:nuit_fuel>, 500);
+
+	DieselHandler.addFuel(<liquid:infinity_metal>, 10000);
+}
+
+{//NumisticDynamo
+    NumisticDynamo.addGemFuel(<erebus:materials:11>, 250*1000);
+
+    NumisticDynamo.addGemFuel(<contenttweaker:malachite_vase>, 2000000);
+    NumisticDynamo.addGemFuel(<contenttweaker:gem_steel_ingot>, 100*1000*1000);
+
+    NumisticDynamo.addGemFuel(<aether_legacy:ambrosium_shard>, 350*1000);
+    NumisticDynamo.addGemFuel(<aether_legacy:zanite_gemstone>, 400*1000);
+
+    NumisticDynamo.addGemFuel(<taiga:dilithium_crystal>, 250*1000);
+    NumisticDynamo.addGemFuel(<integrateddynamics:crystalized_chorus_chunk>, 250*1000);
+    NumisticDynamo.addGemFuel(<biomesoplenty:crystal_shard>, 500*1000);
+}
+
+{//enderio combustion gen
+    CombustionGen.removeFuel(<liquid:hootch>);
+    CombustionGen.removeFuel(<liquid:oil>);
+    CombustionGen.removeFuel(<liquid:tree_oil>);
+    CombustionGen.removeFuel(<liquid:seed_oil>);
+    CombustionGen.removeFuel(<liquid:refined_oil>);
+    CombustionGen.removeFuel(<liquid:crude_oil>);
+    CombustionGen.removeFuel(<liquid:coal>);
+    CombustionGen.removeFuel(<liquid:creosote>);
+    CombustionGen.removeFuel(<liquid:if.protein>);
+    CombustionGen.removeFuel(<liquid:biofuel>);
+    CombustionGen.removeFuel(<liquid:fire_water>);
+
+
+    CombustionGen.removeFuel(<liquid:canolaoil>);
+    CombustionGen.removeFuel(<liquid:refinedcanolaoil>);
+    CombustionGen.removeFuel(<liquid:crystaloil>);
+
+    
+
+    CombustionGen.removeCoolant(<liquid:water>);
+
+    //conclusion
+    //addFual(fuel, rft, tick per mb at 1 capacitor * 1000)
+
+
+    //addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
+    CombustionGen.addFuel(<liquid:enriched_diesel1>, 25 * 1000, 120 * 1000);
+    CombustionGen.addFuel(<liquid:sunnarium_base>, 20 * 1000, 60 * 1000);
+    //expected rf
+    //basic, 3 cap -> 4 -> 4*10+10 = 50    ---> 15
+    //adv, 3 cap -> 110
+    //1 cap -> 2 -> 2*10+10 = 30  ---> 10
+    //adv 1 cap -> 70
+
+    //alt rf = (cap+3)*power
+
+    CombustionGen.addCoolant(<liquid:cold_nitrogen>, 1.0 / 6.0);
+    
+    //100.0/6
+    //expect  ~730
+    //got 2 342 391
+
+    //1.0/6
+    //expect 23 423 
+    //got 23 424
+
+    //CombustionGen.addCoolant(<liquid:pure_water>, 100.0 / 6.0 / 2342391.0 * 73.0);
+    //100.0 / 6.0 / 2342391.0 * 73.0
+    //expect 73 = water
+    //got 17?
+
+    /*
+    public class CombustionMath {
+
+  public static final double HEAT_PER_RF = 0.00023F / 2f;
+
+  private final int ticksPerCoolant;
+  private final int ticksPerFuel;
+  private final int energyPerTick;
+
+  machineQuality = 1, 2
+    
+    energyPerTick = Math.round(fuel.getPowerPerCycle() * capQuality * machineQuality);
+
+    cooling = coolant.getDegreesCoolingPerMB(); // heat absorbed per mB
+    toCool = HEAT_PER_RF * energyPerTick * machineQuality; // heat per tick
+    ticksPerCoolant = Math.max((int) Math.round(cooling / toCool), 1);
+    = 2 * coolant.getDegreesCoolingPerMB / (0.00023F * energyPerTick * machineQuality)
+    = 2 * coolant.getDegreesCoolingPerMB / (0.00023F * energyPerTick)
+
+    ticksPerFuel = Math.max((int) (fuel.getTotalBurningTime() / capQuality / 1000), 1);
+    =fuel.getTotalBurningTime() / capQuality / 1000
+  
+    canola
+    1 cap, basic -> 20rf/t, f 6 t/mb, c 73 t/mb,    50, , 15
+    2 cap, basic -> 25rf/t, 4, 59                   60, , 12
+    3 cap, basic -> 30rf/t, 4, 49                   70, , 10
+    4 cap, basic -> 35rf/t,                         80, , 9
+    5 cap, basic -> 40rf/t                          90, , 8
+
+    rft
+    basic->advanced = x -> 2x+10
+
+    3 cap -> 4 -> 4*5+10
+    3 cap adv -> 4 -> 2*(4*5+10)+10
+
+    cooling
+
+
+    fuel
+
+
+
+    */
+}
+
+function addHeatEngineRecipe(energy as int, cat as IItemStack){
+    var rec = RecipeBuilder.newBuilder("temp" ~ energy, "heat_engine", 60 * 20);
+    rec.addEnergyPerTickOutput(energy * 10);
+
+    
+    rec.addItemInput(cat);
+    //rec.setChance(0.1);
+    
+
+    rec.addHotAirInput(energy, energy - 1, energy + 10000);
+
+    rec.build();
+}
+addHeatEngineRecipe(500, <minecraft:cobblestone>);
+addHeatEngineRecipe(1000, <prodigytech:charred_cobblestone>);
+addHeatEngineRecipe(1500, <minecraft:netherrack>);
+addHeatEngineRecipe(2000, <minecraft:nether_brick>);
+addHeatEngineRecipe(2500, <minecraft:magma>);
+addHeatEngineRecipe(3000, <contenttweaker:firebrick_block>);
+addHeatEngineRecipe(3500, <contenttweaker:hot_block>);

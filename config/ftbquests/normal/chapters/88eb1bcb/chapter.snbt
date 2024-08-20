@@ -1,0 +1,7 @@
+{
+	title: "ch 4: Extra Utilities",
+	icon: "extrautils2:ingredients 1 11",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

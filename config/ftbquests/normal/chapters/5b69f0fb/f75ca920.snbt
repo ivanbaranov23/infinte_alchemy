@@ -1,0 +1,9 @@
+{
+	x: 0.0d,
+	y: 3.0d,
+	tasks: [{
+		uid: "ea2fec28",
+		type: "checkmark",
+		icon: "roots:ritual_summon_creatures"
+	}]
+}

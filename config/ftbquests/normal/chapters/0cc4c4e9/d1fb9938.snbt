@@ -1,0 +1,15 @@
+{
+	x: 1.0d,
+	y: -5.0d,
+	dependencies: [
+		"9aeb4c54"
+	],
+	optional: true,
+	tasks: [{
+		uid: "63431836",
+		type: "item",
+		items: [{
+			item: "taiga:fractum_ingot"
+		}]
+	}]
+}

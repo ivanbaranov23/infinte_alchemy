@@ -1,0 +1,81 @@
+{
+	icon: "modularcontroller:research_station_controller",
+	x: 17.0d,
+	y: 3.0d,
+	text: [
+		"Research Station (RS) is a bit special compared to other multiblocks. It is mainly used to do research, but can also be used to get info on mech and livings.",
+		"",
+		"Research book will give you access to new recipes with better yields. The book itself is not consumed in recipes, tho ME system will eat it, so keep it in mind. You don't have to do all research.  ",
+		"",
+		"Reseach is a small puzzle. You have a list of 5-8 items for research and your goal is to find 3 correct among them. ",
+		"To perform research load research medium and 3 items into RS and after some time you will get either research book or a piece of paper ",
+		"which will tell you how many correct items were among those 3."
+	],
+	dependencies: [
+		"da8c7508"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3459f7f1",
+		type: "item",
+		items: [{
+			item: "modularcontroller:research_station_controller"
+		}]
+	},
+	{
+		uid: "ec84b313",
+		type: "item",
+		items: [{
+			item: "quark:iron_plate"
+		}],
+		count: 37L
+	},
+	{
+		uid: "f2e3e4a5",
+		type: "item",
+		items: [{
+			item: "chisel:glass 1 9"
+		}],
+		count: 13L
+	},
+	{
+		uid: "ea61eadb",
+		type: "item",
+		items: [{
+			item: "chisel:factory 1 6"
+		}],
+		count: 18L
+	},
+	{
+		uid: "b5b497d7",
+		type: "item",
+		items: [{
+			item: "chisel:futura 1 4"
+		}]
+	},
+	{
+		uid: "3fcf534a",
+		type: "item",
+		items: [{
+			item: "chisel:technical 1 4"
+		}],
+		count: 3L
+	},
+	{
+		uid: "41e01121",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus 1 1"
+		}]
+	},
+	{
+		uid: "cbcdb5a2",
+		type: "checkmark",
+		title: "Output Hatch, Energy Input Hatch"
+	}],
+	rewards: [{
+		uid: "efaeccb0",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

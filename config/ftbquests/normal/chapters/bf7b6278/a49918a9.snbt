@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	text: [
+		"Duraluminum can also be used for TiC tools."
+	],
+	dependencies: [
+		"837cf6f5"
+	],
+	tasks: [{
+		uid: "bb6363da",
+		type: "item",
+		items: [{
+			item: "contenttweaker:duraluminum_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "ae46ee08",
+		type: "item",
+		item: "contenttweaker:duraluminum_block"
+	}]
+}

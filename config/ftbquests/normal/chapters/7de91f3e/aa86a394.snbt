@@ -1,0 +1,23 @@
+{
+	x: 10.0d,
+	y: 2.5d,
+	text: [
+		"Give x1.1 to blood altar capacity. You need at least 15 for them to be better than Runes of Capacity."
+	],
+	dependencies: [
+		"12dd017e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8ef62daa",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune 1 7"
+		}]
+	}],
+	rewards: [{
+		uid: "b20a6127",
+		type: "item",
+		item: "bloodmagic:blood_rune 1 7"
+	}]
+}

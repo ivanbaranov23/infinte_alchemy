@@ -1,0 +1,11 @@
+{
+	x: -1.5d,
+	y: 4.5d,
+	tasks: [{
+		uid: "1c3de41a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:chemical_core"
+		}]
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: 7.5d,
+	y: -3.0d,
+	shape: "square",
+	text: [
+		"Finally a furnace. You can now sieve for metals chunks and smelt them for ingots. "
+	],
+	dependencies: [
+		"bbd8a710",
+		"1bc9c471",
+		"d118c7aa"
+	],
+	tasks: [{
+		uid: "4edb75a3",
+		type: "item",
+		items: [{
+			item: "minecraft:furnace"
+		}]
+	}],
+	rewards: [{
+		uid: "48016517",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

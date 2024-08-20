@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "chisel:cube_2_layer_topshaded",
+    "textures": {
+      "particle": "contenttweaker:blocks/parts/lucky_gearbox",
+      "top"     : "contenttweaker:blocks/parts/lucky_frame",
+      "bot"     : "contenttweaker:blocks/parts/lucky_gearbox"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

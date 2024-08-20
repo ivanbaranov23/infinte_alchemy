@@ -1,0 +1,33 @@
+{
+	title: "DWC step 0",
+	x: 8.0d,
+	y: 11.0d,
+	text: [
+		"Make aura gauge. It will tell you how many will there is in a chunk. All will manipulations are chunk based."
+	],
+	dependencies: [
+		"ca31182e"
+	],
+	tasks: [{
+		uid: "9896d489",
+		type: "item",
+		items: [{
+			id: "bloodmagic:demon_will_gauge",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "018c634c",
+		type: "item",
+		item: {
+			id: "bloodmagic:demon_will_gauge",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

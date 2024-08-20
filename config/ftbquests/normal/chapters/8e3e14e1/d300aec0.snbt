@@ -1,0 +1,11 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "28373a28",
+		type: "item",
+		items: [{
+			item: "contenttweaker:very_bouncy_matter"
+		}]
+	}]
+}

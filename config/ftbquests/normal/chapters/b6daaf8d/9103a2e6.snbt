@@ -1,0 +1,17 @@
+{
+	title: "Aether portal",
+	x: -6.0d,
+	y: 0.0d,
+	shape: "square",
+	text: [
+		"Make a portal frame out of glowstone and click it with skyroot water bucket."
+	],
+	tasks: [{
+		uid: "ebb25a9d",
+		type: "item",
+		items: [{
+			item: "minecraft:glowstone"
+		}],
+		count: 14L
+	}]
+}

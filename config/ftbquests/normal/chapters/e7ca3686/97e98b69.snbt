@@ -1,0 +1,16 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "e72bc146",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "7936d454",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

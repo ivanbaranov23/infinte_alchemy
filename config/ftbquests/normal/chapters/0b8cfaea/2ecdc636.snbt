@@ -1,0 +1,39 @@
+{
+	title: "Ex nihilo",
+	x: -2.5d,
+	y: -1.0d,
+	text: [
+		"You know how it's done. ",
+		"",
+		"Make a barrel for water and dirt, sieve for sieving and crook for string."
+	],
+	dependencies: [
+		"911ba93a"
+	],
+	tasks: [{
+		uid: "4d999b69",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_barrel0"
+		}]
+	},
+	{
+		uid: "e28d6527",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_sieve"
+		}]
+	},
+	{
+		uid: "9d829728",
+		type: "item",
+		items: [{
+			id: "exnihilocreatio:crook_wood",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

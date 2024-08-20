@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	text: [
+		"To get info on [Primary] and [Secondary] outputs of a [Mission] put a [Mech], a [Target] and a piece of paper into research station.",
+		"The paper will be consumed and you will get results in the form: ",
+		"",
+		"loot item: [Primary loot] amount + [Secondary loot] amount"
+	],
+	dependencies: [
+		"9e3c5f9d"
+	],
+	tasks: [{
+		uid: "68024c9d",
+		type: "checkmark",
+		title: "Mech loot info",
+		icon: "minecraft:paper"
+	}]
+}

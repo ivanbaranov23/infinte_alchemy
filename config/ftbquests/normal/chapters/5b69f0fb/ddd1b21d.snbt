@@ -1,0 +1,19 @@
+{
+	x: 5.0d,
+	y: -2.0d,
+	dependencies: [
+		"4cef6347"
+	],
+	tasks: [{
+		uid: "5e19d970",
+		type: "item",
+		items: [{
+			id: "contenttweaker:staffwood_mushroom",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

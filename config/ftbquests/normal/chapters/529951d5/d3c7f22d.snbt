@@ -1,0 +1,20 @@
+{
+	x: 1.0d,
+	y: 4.0d,
+	text: [
+		"Farmable.",
+		"",
+		"Eye seed need at least 5 block of space but more is preferred. It can also sometimes break the floor. Use bonemeal if you need a lot of them."
+	],
+	dependencies: [
+		"f6d34a4f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d2133e73",
+		type: "item",
+		items: [{
+			item: "betternether:eye_seed"
+		}]
+	}]
+}

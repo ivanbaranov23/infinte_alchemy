@@ -1,0 +1,35 @@
+{
+	x: 7.0d,
+	y: 5.0d,
+	text: [
+		"Composter will make compost (bruh) from plant matter and mould. Mould can be found in Erebus and it will grow on rotten wood, collect it with shears.",
+		"",
+		"Mould will make 4 composts, ",
+		"Cultivated Mould grows much faster but only makes 2 composts.",
+		"",
+		"Since mould can also be turned into compost, you'll need to use a limited item filter. Or commit to making compost from mould."
+	],
+	dependencies: [
+		"b93b2031"
+	],
+	optional: true,
+	tasks: [{
+		uid: "63859d3b",
+		type: "item",
+		items: [{
+			item: "erebus:composter"
+		}]
+	}],
+	rewards: [{
+		uid: "dc1dc562",
+		type: "item",
+		item: "erebus:wall_plants 1 7",
+		count: 8
+	},
+	{
+		uid: "acc4eea8",
+		type: "item",
+		item: "erebus:log_rotten",
+		count: 8
+	}]
+}

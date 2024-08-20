@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	text: [
+		"Spawns in lava. Consider using motor boat and a pickaxe with 'direct' modifier."
+	],
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "504589e9",
+		type: "item",
+		items: [{
+			item: "taiga:osram_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "5158b18c",
+		type: "item",
+		item: "taiga:osram_block"
+	}]
+}

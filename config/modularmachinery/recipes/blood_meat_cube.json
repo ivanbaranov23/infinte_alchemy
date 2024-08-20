@@ -1,0 +1,38 @@
+{
+    "machine": "blood_meat_infuser",
+    "registryName": "blood_meat_cube",
+    "recipeTime": 50,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1000
+        },
+        {
+            "type": "grid",
+            "io-type": "input",
+            "power": 100
+        },
+        
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "ore_make",
+            "amount": 3000
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:ore_cube_spent@0",
+            "amount": 1
+        },
+
+        
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:ore_cube1@0",
+            "amount": 1
+        }
+    ]
+}

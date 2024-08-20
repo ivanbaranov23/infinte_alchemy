@@ -1,0 +1,20 @@
+{
+	x: -3.0d,
+	y: 2.5d,
+	dependencies: [
+		"2826a220"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b51050fe",
+		type: "item",
+		items: [{
+			item: "contenttweaker:reagent_wood"
+		}]
+	}],
+	rewards: [{
+		uid: "8a20f617",
+		type: "item",
+		item: "contenttweaker:reagent_wood"
+	}]
+}

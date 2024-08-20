@@ -1,0 +1,20 @@
+{
+	x: 18.5d,
+	y: 3.0d,
+	dependencies: [
+		"2bb2150c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "920ebcaf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:slate_8"
+		}]
+	}],
+	rewards: [{
+		uid: "8d7027ec",
+		type: "item",
+		item: "contenttweaker:slate_8"
+	}]
+}

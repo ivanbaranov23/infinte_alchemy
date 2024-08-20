@@ -1,0 +1,25 @@
+{
+	x: -2.5d,
+	y: 1.0d,
+	text: [
+		"Sieve dirt for sugar cane seeds and plant them next to water. "
+	],
+	dependencies: [
+		"2ecdc636"
+	],
+	tasks: [{
+		uid: "e796a472",
+		type: "item",
+		items: [{
+			item: "minecraft:reeds"
+		}]
+	}],
+	rewards: [{
+		uid: "5ae7617c",
+		type: "item",
+		item: {
+			id: "erebus:bambucket",
+			tag: {}
+		}
+	}]
+}

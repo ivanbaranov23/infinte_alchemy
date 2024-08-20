@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: 0.0d,
+	dependencies: [
+		"e39fa748"
+	],
+	tasks: [{
+		uid: "56ae8b81",
+		type: "item",
+		items: [{
+			item: "aether_legacy:freezer"
+		}]
+	}]
+}

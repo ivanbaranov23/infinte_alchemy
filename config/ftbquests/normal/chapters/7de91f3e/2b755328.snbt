@@ -1,0 +1,20 @@
+{
+	x: 24.0d,
+	y: 0.0d,
+	dependencies: [
+		"9106c427"
+	],
+	tasks: [{
+		uid: "ba6ee5f9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:chitin"
+		}]
+	}],
+	rewards: [{
+		uid: "0867ca46",
+		type: "item",
+		item: "contenttweaker:chitin",
+		count: 9
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	x: 13.0d,
+	y: 3.0d,
+	dependencies: [
+		"51cb0d40",
+		"54f9606e"
+	],
+	tasks: [{
+		uid: "23ece291",
+		type: "item",
+		items: [{
+			item: "contenttweaker:power_core_active"
+		}]
+	}]
+}

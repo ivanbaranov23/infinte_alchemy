@@ -1,0 +1,23 @@
+{
+	x: 5.0d,
+	y: 3.0d,
+	shape: "diamond",
+	dependencies: [
+		"6a411f76"
+	],
+	tasks: [{
+		uid: "b1dabd35",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_custom 1 100"
+		}],
+		count: 10L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "4ffc9346",
+		type: "item",
+		item: "contenttweaker:quest_coin",
+		count: 2
+	}]
+}

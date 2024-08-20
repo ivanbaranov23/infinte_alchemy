@@ -1,0 +1,31 @@
+{
+	title: "The True Owner of This World",
+	x: 8.0d,
+	y: -3.0d,
+	text: [
+		"The Creator and The Destroyer, the One and only. ",
+		"",
+		"The One to exist before this world, and the world before, and the one before that.",
+		"",
+		"The One to exist before the First World and before the Zeroth World and -1th World.",
+		"",
+		"The Creator of the Universe and Multiverse and MultiMultiverse and MultiMultiMultiverse.",
+		"",
+		"The One who separated primordial energies into elements.",
+		"",
+		"The One who ate all your steel.",
+		"",
+		"The Folder and Unfolder of space and time and spacetime and magic and spacemagic and timemagic and spacetimemagic."
+	],
+	dependencies: [
+		"37fd8c28"
+	],
+	optional: true,
+	tasks: [{
+		uid: "39ec65bc",
+		type: "item",
+		items: [{
+			item: "quark:glowshroom"
+		}]
+	}]
+}

@@ -1,0 +1,35 @@
+{
+	title: "TE alloys",
+	x: -3.0d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"f705a577"
+	],
+	tasks: [{
+		uid: "f5f3f22d",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 165"
+		}]
+	},
+	{
+		uid: "95ca2ac3",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 166"
+		}]
+	}],
+	rewards: [{
+		uid: "03590e5e",
+		type: "item",
+		item: "thermalfoundation:storage_alloy 1 5"
+	},
+	{
+		uid: "c65fac4a",
+		type: "item",
+		item: "thermalfoundation:storage_alloy 1 6"
+	}]
+}

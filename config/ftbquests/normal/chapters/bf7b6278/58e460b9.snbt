@@ -1,0 +1,23 @@
+{
+	x: 9.0d,
+	y: -5.0d,
+	text: [
+		"You can buy some EnderIO impulse hoppers in the shop."
+	],
+	dependencies: [
+		"0731544a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9498c782",
+		type: "item",
+		items: [{
+			item: "enderio:item_capacitor_grainy"
+		}]
+	}],
+	rewards: [{
+		uid: "e40c300b",
+		type: "item",
+		item: "enderio:block_painter"
+	}]
+}

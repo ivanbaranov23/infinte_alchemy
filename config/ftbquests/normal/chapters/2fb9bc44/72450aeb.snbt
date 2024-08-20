@@ -1,0 +1,15 @@
+{
+	x: 14.5d,
+	y: -1.0d,
+	dependencies: [
+		"c945bde9"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ac09723c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:zorra_steel_gem"
+		}]
+	}]
+}

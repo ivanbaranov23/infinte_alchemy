@@ -1,0 +1,23 @@
+{
+	x: 1.0d,
+	y: -1.0d,
+	text: [
+		"Big chest is big. Very big. Also keeps inventory when broken."
+	],
+	dependencies: [
+		"95048f83"
+	],
+	optional: true,
+	tasks: [{
+		uid: "cbaad83b",
+		type: "item",
+		items: [{
+			item: "avaritiaddons:avaritiaddons_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "15b5319b",
+		type: "item",
+		item: "avaritiaddons:avaritiaddons_chest"
+	}]
+}

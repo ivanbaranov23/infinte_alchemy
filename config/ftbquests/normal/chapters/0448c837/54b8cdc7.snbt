@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: 3.0d,
+	text: [
+		"Can be used to make Grains of Infinity"
+	],
+	dependencies: [
+		"b5128cac"
+	],
+	tasks: [{
+		uid: "800b99c8",
+		type: "item",
+		items: [{
+			item: "taiga:eezo_ore"
+		}]
+	}]
+}

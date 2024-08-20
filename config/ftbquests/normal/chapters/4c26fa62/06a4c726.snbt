@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 6.5d,
+	dependencies: [
+		"c8681319"
+	],
+	tasks: [{
+		uid: "f98297ed",
+		type: "item",
+		items: [{
+			item: "alchemistry:element 1 250"
+		}]
+	}]
+}

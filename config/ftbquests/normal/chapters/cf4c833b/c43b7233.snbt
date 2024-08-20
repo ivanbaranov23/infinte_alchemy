@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	text: [
+		"",
+		"",
+		"Air -> 19k",
+		"Diamond Blocks -> 44k",
+		"Resonant ender -> 48k",
+		"Cryo -> 50k"
+	],
+	tasks: [{
+		uid: "5156f723",
+		type: "checkmark",
+		icon: "thermalfoundation:storage_alloy 1 7"
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	x: 13.0d,
+	y: 7.0d,
+	text: [
+		"You're gonna need a lot of these"
+	],
+	dependencies: [
+		"99440847"
+	],
+	tasks: [{
+		uid: "4807e913",
+		type: "item",
+		items: [{
+			item: "contenttweaker:basic_neuron"
+		}]
+	}],
+	rewards: [{
+		uid: "e95a5106",
+		type: "item",
+		item: "contenttweaker:basic_neuron",
+		count: 4
+	}]
+}

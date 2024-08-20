@@ -1,0 +1,16 @@
+{
+	x: 7.0d,
+	y: -7.0d,
+	tasks: [{
+		uid: "42cd7267",
+		type: "item",
+		items: [{
+			item: "contenttweaker:orichalcum_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "deaa3c20",
+		type: "item",
+		item: "contenttweaker:orichalcum_block"
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	title: "Mixer",
+	icon: "immersiveengineering:metal_multiblock 1 15",
+	x: 12.0d,
+	y: 0.0d,
+	text: [
+		"Mix together some engineering blocks to make mixer to mix napalm and concrete."
+	],
+	dependencies: [
+		"706f727e"
+	],
+	tasks: [{
+		uid: "ae487e06",
+		type: "checkmark",
+		icon: "immersiveengineering:metal_multiblock 1 15"
+	}]
+}

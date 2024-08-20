@@ -1,0 +1,11 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "47e1d170",
+		type: "item",
+		items: [{
+			item: "alchemistry:element 1 54"
+		}]
+	}]
+}

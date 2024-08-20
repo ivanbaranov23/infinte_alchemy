@@ -1,0 +1,15 @@
+{
+	x: -0.5d,
+	y: 2.0d,
+	dependencies: [
+		"3e071216"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3fa136b9",
+		type: "item",
+		items: [{
+			item: "prodigytech:rotary_grinder"
+		}]
+	}]
+}

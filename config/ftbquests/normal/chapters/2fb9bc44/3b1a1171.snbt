@@ -1,0 +1,22 @@
+{
+	x: 8.5d,
+	y: 3.0d,
+	text: [
+		"2-3 energion should be enough to charge it."
+	],
+	dependencies: [
+		"15e5cba2"
+	],
+	tasks: [{
+		uid: "5c42d59a",
+		type: "item",
+		items: [{
+			id: "prodigytech:heat_capacitor_1",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	title: "Conduits 1",
+	icon: "enderio:item_item_conduit",
+	loot_size: 1,
+	rewards: [{
+		item: "enderio:item_item_conduit",
+		count: 16
+	},
+	{
+		item: "enderio:item_liquid_conduit 1 2",
+		count: 12
+	},
+	{
+		item: "enderio:item_gas_conduit 1 2",
+		count: 12
+	},
+	{
+		item: "enderio:item_endergy_conduit 1 6",
+		count: 12
+	},
+	{
+		item: "enderio:item_redstone_conduit",
+		count: 16
+	}]
+}

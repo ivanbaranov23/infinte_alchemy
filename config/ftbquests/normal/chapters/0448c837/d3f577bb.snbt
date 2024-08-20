@@ -1,0 +1,16 @@
+{
+	x: 10.0d,
+	y: 5.0d,
+	tasks: [{
+		uid: "5849eb83",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "95f55441",
+		type: "item",
+		item: "immersiveengineering:storage 1 5"
+	}]
+}

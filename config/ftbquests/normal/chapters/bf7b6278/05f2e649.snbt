@@ -1,0 +1,31 @@
+{
+	x: 7.0d,
+	y: -1.0d,
+	dependencies: [
+		"36ee4713"
+	],
+	tasks: [{
+		uid: "0855bcb0",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 161"
+		}]
+	},
+	{
+		uid: "b00e8b1b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:lesmium_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "ef21a218",
+		type: "item",
+		item: "thermalfoundation:storage_alloy 1 1"
+	},
+	{
+		uid: "327b5d5b",
+		type: "item",
+		item: "contenttweaker:lesmium_block"
+	}]
+}

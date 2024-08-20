@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 8.0d,
+	dependencies: [
+		"d512ca83"
+	],
+	tasks: [{
+		uid: "4afdbee3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:neuron_inlay"
+		}]
+	}]
+}

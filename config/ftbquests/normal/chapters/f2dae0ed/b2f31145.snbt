@@ -1,0 +1,19 @@
+{
+	x: 11.0d,
+	y: 1.0d,
+	dependencies: [
+		"ae30972d"
+	],
+	tasks: [{
+		uid: "b5478b0a",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_endergy_ingot 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "36ae1ddf",
+		type: "item",
+		item: "enderio:block_alloy_endergy 1 4"
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: 0.5d,
+	y: -1.0d,
+	text: [
+		"This machine can be used to make rods at 4.5 ingots per rod.",
+		"",
+		"What a bargain."
+	],
+	dependencies: [
+		"3e071216"
+	],
+	optional: true,
+	tasks: [{
+		uid: "49874795",
+		type: "item",
+		items: [{
+			item: "prodigytech:heat_sawmill"
+		}]
+	}],
+	rewards: [{
+		uid: "8f848d38",
+		type: "item",
+		item: "immersiveengineering:material 1 1"
+	}]
+}

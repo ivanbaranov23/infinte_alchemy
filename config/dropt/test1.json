@@ -1,0 +1,174 @@
+{
+    "rules":[
+        {"match": {"drops": {"drops": ["contenttweaker:treasure_block"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "item": {
+                        "items": [
+                            "atum:eyes_of_atum",
+                            "atum:body_of_atum",
+                            "atum:legs_of_atum",
+                            "atum:feet_of_atum",
+                            "atum:atums_will",
+                            "atum:atums_protection",
+                            "atum:atums_bounty",
+                            "atum:atums_homecoming",
+                            "atum:halo_of_ra",
+                            "atum:body_of_ra",
+                            "atum:legs_of_ra",
+                            "atum:feet_of_ra",
+                            "atum:ras_fury",
+                            "atum:ptahs_decadence",
+                            "atum:ptahs_undoing",
+                            "atum:gebs_toil",
+                            "atum:gebs_grounding",
+                            "atum:gebs_might",
+                            "atum:tefnuts_rain",
+                            "atum:tefnuts_call",
+                            "atum:tefnuts_blessing",
+                            "atum:shus_breath",
+                            "atum:shus_exile",
+                            "atum:shus_swiftness",
+                            "atum:horuss_soaring",
+                            "atum:horuss_ascension",
+                            "atum:seths_sting",
+                            "atum:seths_venom",
+                            "atum:isis_healing",
+                            "atum:montus_blast",
+                            "atum:montus_strike",
+                            "atum:anubiss_mercy",
+                            "atum:anubiss_wrath",
+                            "atum:nuits_vanishing",
+                            "atum:nuits_duality",
+                            "atum:nuits_ire",
+                            "atum:nuits_quarter",
+                            "atum:anputs_hunger"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
+        {"match": {"drops": {"drops": ["contenttweaker:kaolin_clay_block"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "REQUIRED"
+                    },
+                    "item": {
+                        "items": [
+                            "contenttweaker:kaolin_clay_block"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "silktouch": "EXCLUDED"
+                    },
+                    "item": {
+                        "items": [
+                            "contenttweaker:kaolin_clay"
+                        ],
+                        "quantity": {
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 3,
+                            "fortuneModifier": 1
+                        },
+                        "silktouch": "EXCLUDED",
+                        "fortuneLevelRequired": 3
+                    },
+                    "item": {
+                        "items": [
+                            "contenttweaker:kaolin_clay"
+                        ],
+                        "quantity": {
+                            "fixed": 4
+                        }
+                    }
+                }
+            ]
+        },
+        {"match": {"drops": {"drops": ["contenttweaker:forest_clay_block"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "REQUIRED"
+                    },
+                    "item": {
+                        "items": [
+                            "contenttweaker:forest_clay_block"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "silktouch": "EXCLUDED"
+                    },
+                    "item": {
+                        "items": [
+                            "contenttweaker:forest_clay"
+                        ],
+                        "quantity": {
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {
+                            "value": 3,
+                            "fortuneModifier": 1
+                        },
+                        "silktouch": "EXCLUDED",
+                        "fortuneLevelRequired": 3
+                    },
+                    "item": {
+                        "items": [
+                            "contenttweaker:forest_clay"
+                        ],
+                        "quantity": {
+                            "fixed": 4
+                        }
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["twilightforest:moonworm:*"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "REQUIRED"
+                    },
+                    "item": {
+                        "items": [
+                            "twilightforest:moonworm"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

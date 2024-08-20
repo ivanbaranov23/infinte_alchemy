@@ -1,0 +1,1483 @@
+{
+    "registryname": "druid_circle",
+    "localizedname": "Druidic Circle",
+    "color": "43424a",
+    "modifiers": [
+        {"description": "x0.7 recipe time",
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "contenttweaker:ev_coil@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.887904001
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "contenttweaker:ev_coil@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.887904001
+                }
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "contenttweaker:ev_coil@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.887904001
+                }
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "contenttweaker:ev_coil@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.887904001
+                }
+            ]
+        },
+        {
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "contenttweaker:ev_coil@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.887904001
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "contenttweaker:ev_coil@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.887904001
+                }
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "contenttweaker:ev_coil@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.887904001
+                }
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "contenttweaker:ev_coil@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.887904001
+                }
+            ]
+        },
+
+        {"description": "+36 mb output fluid",
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "prodigytech:zorra_log@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 12
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "prodigytech:zorra_log@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 12
+                }
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "prodigytech:zorra_log@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 12
+                }
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "prodigytech:zorra_log@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 12
+                }
+            ]
+        },
+        {
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "prodigytech:zorra_log@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 12
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "prodigytech:zorra_log@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 12
+                }
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "prodigytech:zorra_log@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 12
+                }
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "prodigytech:zorra_log@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 12
+                }
+            ]
+        },
+
+        {"description": "x0.6 input energy",
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "integrateddynamics:menril_log@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.84343266
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "integrateddynamics:menril_log@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.84343266
+                }
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "integrateddynamics:menril_log@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.84343266
+                }
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "integrateddynamics:menril_log@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.84343266
+                }
+            ]
+        },
+        {
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "integrateddynamics:menril_log@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.84343266
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "integrateddynamics:menril_log@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.84343266
+                }
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "integrateddynamics:menril_log@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.84343266
+                }
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "integrateddynamics:menril_log@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.84343266
+                }
+            ]
+        },
+
+        {"description": "+1 output item, x2 input energy",
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ],
+            "modifier": [{
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.259921
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ],
+            "modifier": [{
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.259921
+                }
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ],
+            "modifier": [{
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.259921
+                }
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ],
+            "modifier": [{
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.259921
+                }
+            ]
+        },
+        {
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ],
+            "modifier": [{
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.259921
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ],
+            "modifier": [{
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.259921
+                }
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ],
+            "modifier": [{
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.259921
+                }
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ],
+            "modifier": [{
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.259921
+                }
+            ]
+        },
+
+        {"description": "chance to not consume input items +8%",
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "roots:wildwood_log@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "item",
+                "operation": 0,
+                "multiplier": -0.0266667,
+                "affectChance": true
+            }
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "roots:wildwood_log@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "item",
+                "operation": 0,
+                "multiplier": -0.0266667,
+                "affectChance": true
+            }
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "roots:wildwood_log@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "item",
+                "operation": 0,
+                "multiplier": -0.0266667,
+                "affectChance": true
+            }
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "roots:wildwood_log@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "item",
+                "operation": 0,
+                "multiplier": -0.0266667,
+                "affectChance": true
+            }
+        },
+        {
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "roots:wildwood_log@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "item",
+                "operation": 0,
+                "multiplier": -0.0266667,
+                "affectChance": true
+            }
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "roots:wildwood_log@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "item",
+                "operation": 0,
+                "multiplier": -0.0266667,
+                "affectChance": true
+            }
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "roots:wildwood_log@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "item",
+                "operation": 0,
+                "multiplier": -0.0266667,
+                "affectChance": true
+            }
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "roots:wildwood_log@0"
+            ],
+            "modifier": {
+                "io": "input",
+                "target": "item",
+                "operation": 0,
+                "multiplier": -0.0266667,
+                "affectChance": true
+            }
+        }
+    ],
+    
+
+    "parts": [
+        {
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "minecraft:log@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 0,
+            "elements": [
+                "minecraft:log@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "minecraft:log@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "minecraft:log@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "minecraft:log@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": [1, 2, 3],
+            "z": 8,
+            "elements": [
+                "minecraft:log@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": [1, 2, 3],
+            "z": 6,
+            "elements": [
+                "minecraft:log@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": [1, 2, 3],
+            "z": 2,
+            "elements": [
+                "minecraft:log@0"
+            ]
+        },
+
+        {
+            "x": -2,
+            "y": 2,
+            "z": 6,
+            "nbt": {"id":"minecraft:skull","SkullType":"1b"},
+            "elements": [
+                "minecraft:skull@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 2,
+            "nbt": {"id":"minecraft:skull","SkullType":"1b"},
+            "elements": [
+                "minecraft:skull@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 6,
+            "nbt": {"id":"minecraft:skull","SkullType":"1b"},
+            "elements": [
+                "minecraft:skull@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 2,
+            "nbt": {"id":"minecraft:skull","SkullType":"1b"},
+            "elements": [
+                "minecraft:skull@1"
+            ]
+        },
+
+        {
+            "x": -4,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "biomesoplenty:ash_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 4,
+            "z": 6,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 8,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "roots:runestone_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "biomesoplenty:blue_fire@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "roots:runestone_slab@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 7,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "roots:runestone_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 6,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "roots:runestone_wall@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "roots:runestone_wall@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "roots:runestone_wall@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "roots:runestone_wall@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": 0,
+            "z": 5,
+            "elements": [
+                "casings_all",
+                "roots:runestone@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "roots:runestone_slab@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": 4,
+            "z": 6,
+            "elements": [
+                "roots:chiseled_runestone@0"
+            ]
+        }
+    ]}

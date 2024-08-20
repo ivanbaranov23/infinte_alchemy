@@ -1,0 +1,15 @@
+{
+	x: 10.5d,
+	y: -1.0d,
+	dependencies: [
+		"365f2850"
+	],
+	optional: true,
+	tasks: [{
+		uid: "37fe0b08",
+		type: "item",
+		items: [{
+			item: "prodigytech:primordium"
+		}]
+	}]
+}

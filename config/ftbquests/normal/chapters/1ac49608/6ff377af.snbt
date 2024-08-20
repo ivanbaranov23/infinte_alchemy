@@ -1,0 +1,31 @@
+{
+	x: 5.0d,
+	y: 3.0d,
+	text: [
+		"Here's a book enchanted with sharpness 1"
+	],
+	dependencies: [
+		"77ebaf1e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b341b731",
+		type: "item",
+		items: [{
+			item: "modularcontroller:large_enchanter_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "6b9f0f50",
+		type: "item",
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				ench: [{
+					lvl: 1s,
+					id: 16s
+				}]
+			}
+		}
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 14.0d,
+	y: 0.0d,
+	dependencies: [
+		"fb108fc4"
+	],
+	tasks: [{
+		uid: "58cf973e",
+		type: "checkmark",
+		title: "Hydrogen Chloride",
+		icon: {
+			id: "aeadditions:pattern.fluid",
+			tag: {
+				Fluid: {
+					FluidName: "liquidhydrogenchloride",
+					Amount: 1000
+				}
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

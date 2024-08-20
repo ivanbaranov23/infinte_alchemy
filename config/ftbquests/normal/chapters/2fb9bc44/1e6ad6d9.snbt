@@ -1,0 +1,21 @@
+{
+	x: 12.5d,
+	y: 1.0d,
+	dependencies: [
+		"c945bde9",
+		"15e5cba2"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a355652f",
+		type: "item",
+		items: [{
+			item: "prodigytech:tartaric_aeroheater"
+		}]
+	}],
+	rewards: [{
+		uid: "1c95c5d7",
+		type: "item",
+		item: "prodigytech:tartaric_aeroheater"
+	}]
+}

@@ -1,0 +1,12 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	shape: "square",
+	tasks: [{
+		uid: "d146a5c6",
+		type: "item",
+		items: [{
+			item: "botania:livingrock"
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: 4.0d,
+	y: -3.0d,
+	text: [
+		"You can find inferior glowshrooms in the nether or make them via Flower Growth Ritual. Use them to make Glowshroom stew"
+	],
+	tasks: [{
+		uid: "b0c9a4e0",
+		type: "checkmark",
+		title: "Glowshroom Stew",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "glowshroom_stew"
+			}
+		}
+	}]
+}

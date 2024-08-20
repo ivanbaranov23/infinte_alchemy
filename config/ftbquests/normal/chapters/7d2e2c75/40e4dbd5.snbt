@@ -1,0 +1,31 @@
+{
+	x: 11.0d,
+	y: -2.0d,
+	text: [
+		"Make a scanner from scannable for scanning."
+	],
+	dependencies: [
+		"73387547"
+	],
+	optional: true,
+	tasks: [{
+		uid: "86827469",
+		type: "item",
+		items: [{
+			id: "scannable:scanner",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "59fe133a",
+		type: "item",
+		item: "scannable:module_blank"
+	}]
+}

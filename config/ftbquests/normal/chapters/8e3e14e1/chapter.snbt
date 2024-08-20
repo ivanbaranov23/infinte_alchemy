@@ -1,0 +1,7 @@
+{
+	title: "ch 13.3: EMC",
+	icon: "projecte:item.pe_matter",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

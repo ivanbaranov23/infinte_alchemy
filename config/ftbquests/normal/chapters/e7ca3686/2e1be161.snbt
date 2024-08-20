@@ -1,0 +1,61 @@
+{
+	title: "Delicate Gems",
+	x: 3.0d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"205d6e3e"
+	],
+	or_tasks: true,
+	tasks: [{
+		uid: "0f741b71",
+		type: "item",
+		items: [{
+			item: "projectred-core:resource_item 1 200"
+		}]
+	},
+	{
+		uid: "6cf2f6d5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:delicate_topaz"
+		}]
+	},
+	{
+		uid: "4d45a066",
+		type: "item",
+		items: [{
+			item: "contenttweaker:delicate_amber"
+		}]
+	},
+	{
+		uid: "69d07808",
+		type: "item",
+		items: [{
+			item: "projectred-core:resource_item 1 202"
+		}]
+	},
+	{
+		uid: "bb844904",
+		type: "item",
+		items: [{
+			item: "contenttweaker:delicate_malachite"
+		}]
+	},
+	{
+		uid: "43267074",
+		type: "item",
+		items: [{
+			item: "projectred-core:resource_item 1 201"
+		}]
+	},
+	{
+		uid: "25aa57b6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:delicate_tanzanite"
+		}]
+	}]
+}

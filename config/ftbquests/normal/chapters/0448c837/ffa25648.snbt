@@ -1,0 +1,64 @@
+{
+	icon: "modularcontroller:biolab_controller",
+	x: 3.0d,
+	y: 5.0d,
+	dependencies: [
+		"95048f83"
+	],
+	tasks: [{
+		uid: "2faac3e2",
+		type: "item",
+		items: [{
+			item: "modularcontroller:biolab_controller"
+		}]
+	},
+	{
+		uid: "d5073517",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_crystal_empowered 1 4"
+		}],
+		count: 3L
+	},
+	{
+		uid: "bf82f1f1",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quartz_vibrant_glass"
+		}],
+		count: 12L
+	},
+	{
+		uid: "223ae3f2",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_testifi_bucks_white_fence"
+		}],
+		count: 12L
+	},
+	{
+		uid: "d448c8b7",
+		type: "item",
+		items: [{
+			item: "mekanism:slickplasticblock 1 15"
+		}],
+		count: 9L
+	},
+	{
+		uid: "aeda977a",
+		type: "checkmark",
+		title: "8 casings/hatches"
+	}],
+	rewards: [{
+		uid: "469f8e5e",
+		type: "item",
+		item: "prodigytech:meat_ground",
+		count: 16
+	},
+	{
+		uid: "790dd09c",
+		type: "item",
+		item: "contenttweaker:plant_sample",
+		count: 16
+	}]
+}

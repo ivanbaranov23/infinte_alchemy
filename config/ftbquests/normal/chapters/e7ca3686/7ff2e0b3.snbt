@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	text: [
+		"Hope you had your cobblegen running for all this time"
+	],
+	dependencies: [
+		"76300e8f"
+	],
+	tasks: [{
+		uid: "260d28e7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bedrockium_alloy_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "2cff673e",
+		type: "item",
+		item: "contenttweaker:bedrockium_alloy_block"
+	}]
+}

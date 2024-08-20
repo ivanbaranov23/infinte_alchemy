@@ -1,0 +1,11 @@
+{
+	x: 12.5d,
+	y: -10.0d,
+	tasks: [{
+		uid: "a93f6eab",
+		type: "item",
+		items: [{
+			item: "modularcontroller:super_mixer_controller"
+		}]
+	}]
+}

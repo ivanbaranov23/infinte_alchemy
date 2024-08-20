@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	text: [
+		"Surround it with bookshelves"
+	],
+	dependencies: [
+		"8116e8f3",
+		"be945a5b"
+	],
+	tasks: [{
+		uid: "28191853",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:enchanter"
+			}
+		}]
+	}]
+}

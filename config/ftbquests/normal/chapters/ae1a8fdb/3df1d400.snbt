@@ -1,0 +1,11 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "98d857c4",
+		type: "item",
+		items: [{
+			item: "draconicevolution:chaos_shard"
+		}]
+	}]
+}

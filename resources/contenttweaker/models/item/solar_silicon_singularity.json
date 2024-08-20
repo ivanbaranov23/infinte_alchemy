@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "contenttweaker:items/solar_silicon_singularity",
+    "layer1": "contenttweaker:items/solar_halo"
+  }
+}

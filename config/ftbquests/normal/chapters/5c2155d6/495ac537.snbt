@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	text: [
+		"Kill some bees or use nectar collector on them.",
+		"",
+		"If you can't find any bees you can buy bee horn in the shop."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	tasks: [{
+		uid: "2ad33604",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 19"
+		}]
+	}]
+}

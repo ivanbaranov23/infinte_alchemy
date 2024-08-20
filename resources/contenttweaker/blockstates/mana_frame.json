@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "side": "contenttweaker:blocks/mana_frame_side",
+      "up": "contenttweaker:blocks/mana_frame_top",
+      "down": "contenttweaker:blocks/mana_frame_bottom"
+    },
+    "model": "cube_column"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	dependencies: [
+		"fbc73e23"
+	],
+	tasks: [{
+		uid: "0c2dd0f2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:transmut_gel"
+		}]
+	}]
+}

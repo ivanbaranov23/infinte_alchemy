@@ -1,0 +1,16 @@
+{
+	x: 12.5d,
+	y: 4.0d,
+	tasks: [{
+		uid: "386fdd4c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:zirconium_gem"
+		}]
+	}],
+	rewards: [{
+		uid: "87bf2ab0",
+		type: "item",
+		item: "contenttweaker:zirconium_block"
+	}]
+}

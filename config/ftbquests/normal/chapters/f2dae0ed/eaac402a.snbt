@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: 1.0d,
+	dependencies: [
+		"f4e29f96"
+	],
+	tasks: [{
+		uid: "87c848ce",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:ore_sieve"
+		}]
+	}]
+}

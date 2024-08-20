@@ -1,0 +1,196 @@
+{
+	title: "All the generators",
+	x: -4.0d,
+	y: 2.0d,
+	text: [
+		"Make all the generators. You'll need 2 sets of them: one for rainbow generator and another to run rainbow generator.",
+		"",
+		"Make one set to claim 3 generator for second set for free."
+	],
+	dependencies: [
+		"c1ca8eec"
+	],
+	tasks: [{
+		uid: "a11d4353",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_survival"
+			}
+		}]
+	},
+	{
+		uid: "cbab0f38",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator"
+			}
+		}]
+	},
+	{
+		uid: "ebb44998",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_culinary"
+			}
+		}]
+	},
+	{
+		uid: "583297fb",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_lava"
+			}
+		}]
+	},
+	{
+		uid: "0e049283",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_redstone"
+			}
+		}]
+	},
+	{
+		uid: "e1216203",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_ender"
+			}
+		}]
+	},
+	{
+		uid: "3d12aeb8",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_potion"
+			}
+		}]
+	},
+	{
+		uid: "d1f83d6b",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_pink"
+			}
+		}]
+	},
+	{
+		uid: "c37ad0e7",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_overclock"
+			}
+		}]
+	},
+	{
+		uid: "c2db2b60",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_tnt"
+			}
+		}]
+	},
+	{
+		uid: "ccdc91ba",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_netherstar"
+			}
+		}]
+	},
+	{
+		uid: "9637ae83",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_dragonsbreath"
+			}
+		}]
+	},
+	{
+		uid: "4cb19ef3",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_ice"
+			}
+		}]
+	},
+	{
+		uid: "a16b451b",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_death"
+			}
+		}]
+	},
+	{
+		uid: "f78ecba8",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_enchant"
+			}
+		}]
+	},
+	{
+		uid: "70fdb0f1",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "extrautils2:generator_slime"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "d8e152d5",
+		type: "choice",
+		icon: "extrautils2:machine",
+		table: 0
+	},
+	{
+		uid: "da251a81",
+		type: "choice",
+		icon: "extrautils2:machine",
+		table: 0
+	},
+	{
+		uid: "37cc3eb5",
+		type: "choice",
+		icon: "extrautils2:machine",
+		table: 0
+	},
+	{
+		uid: "8a8545b4",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

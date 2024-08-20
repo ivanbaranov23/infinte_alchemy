@@ -1,0 +1,22 @@
+{
+	x: -1.0d,
+	y: 2.0d,
+	text: [
+		"Laser resistant alloy"
+	],
+	dependencies: [
+		"439dce53"
+	],
+	tasks: [{
+		uid: "5702f0bd",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tunril_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "dfffa819",
+		type: "item",
+		item: "contenttweaker:tunril_block"
+	}]
+}

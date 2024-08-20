@@ -1,0 +1,14 @@
+{
+	x: 11.0d,
+	y: 0.0d,
+	dependencies: [
+		"b2f31145"
+	],
+	tasks: [{
+		uid: "94b2d7a0",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:crop_recolector"
+		}]
+	}]
+}

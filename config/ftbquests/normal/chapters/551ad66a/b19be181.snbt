@@ -1,0 +1,109 @@
+{
+	title: "Tree powered compressor",
+	icon: "minecraft:sapling",
+	x: 5.0d,
+	y: 0.0d,
+	text: [
+		"Make a tree powered compressor. This multiblock will use pressure from growing saplings to compress soft materials into a singularity.",
+		"It's recipes takes quite a long time so consider crafting singularities before you'll need them."
+	],
+	dependencies: [
+		"17c93154"
+	],
+	tasks: [{
+		uid: "a2f66fbd",
+		type: "item",
+		items: [{
+			item: "modularcontroller:tree_powered_compressor_controller"
+		}]
+	},
+	{
+		uid: "6e2d08dd",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidinputhatch 1 1"
+		}]
+	},
+	{
+		uid: "0c9d1f55",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockinputbus 1 1"
+		}],
+		count: 2L
+	},
+	{
+		uid: "972a937e",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockoutputbus 1 1"
+		}]
+	},
+	{
+		uid: "ba19da2d",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing"
+		}]
+	},
+	{
+		uid: "c0784815",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:storage_alloy 1 3"
+		}],
+		count: 2L
+	},
+	{
+		uid: "bdc059f0",
+		type: "item",
+		items: [{
+			item: "chisel:glass 1 9"
+		}],
+		count: 6L
+	},
+	{
+		uid: "4497e6f4",
+		type: "item",
+		items: [{
+			item: "roots:runestone"
+		}],
+		count: 16L
+	},
+	{
+		uid: "4de32bc3",
+		type: "item",
+		items: [{
+			item: "roots:runestone_slab"
+		}],
+		count: 4L
+	},
+	{
+		uid: "328565b8",
+		type: "item",
+		items: [{
+			item: "roots:runestone_wall"
+		}],
+		count: 4L
+	},
+	{
+		uid: "79186d45",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_material 1 4"
+		}]
+	},
+	{
+		uid: "264e1093",
+		type: "item",
+		items: [{
+			item: "minecraft:sapling"
+		}]
+	}],
+	rewards: [{
+		uid: "1f41c00e",
+		type: "item",
+		item: "minecraft:dye 1 15",
+		count: 12
+	}]
+}

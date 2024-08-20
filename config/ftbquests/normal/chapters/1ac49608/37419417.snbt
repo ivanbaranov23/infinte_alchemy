@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: -4.0d,
+	dependencies: [
+		"518dd5e5"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3917c333",
+		type: "item",
+		items: [{
+			item: "contenttweaker:indium_dust"
+		}]
+	}]
+}

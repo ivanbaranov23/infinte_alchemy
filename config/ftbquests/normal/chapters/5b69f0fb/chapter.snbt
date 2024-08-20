@@ -1,0 +1,7 @@
+{
+	title: "ch 2+: Druids path",
+	icon: "contenttweaker:entwood",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: 5.0d,
+	dependencies: [
+		"6680db0a"
+	],
+	tasks: [{
+		uid: "386242f7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:biomaterial1"
+		}]
+	}]
+}

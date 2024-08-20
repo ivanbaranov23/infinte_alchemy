@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	text: [
+		"Overgear yourself with lv15+ enchanted draconic armor or smt and kill second pushover lizard.",
+		"",
+		"Only needs to be done a couple of times in DE chapter. "
+	],
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "9c4124a3",
+		type: "item",
+		items: [{
+			item: "draconicevolution:chaos_shard"
+		}]
+	}]
+}

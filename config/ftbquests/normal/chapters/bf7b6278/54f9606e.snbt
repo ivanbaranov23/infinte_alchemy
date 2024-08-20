@@ -1,0 +1,26 @@
+{
+	x: 12.0d,
+	y: 3.0d,
+	text: [
+		"Has interaction with fire when placed in-world."
+	],
+	dependencies: [
+		"94a536fd",
+		"04a7ac91"
+	],
+	tasks: [{
+		uid: "e44e9cc8",
+		type: "checkmark",
+		title: "Napalm",
+		icon: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "napalm",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

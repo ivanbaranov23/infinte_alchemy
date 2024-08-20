@@ -1,0 +1,47 @@
+{
+	x: 21.0d,
+	y: 8.0d,
+	dependencies: [
+		"2294099d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9bab6102",
+		type: "item",
+		items: [{
+			id: "mekanism:basicblock2",
+			Damage: 3s,
+			tag: {
+				tier: 3
+			}
+		}]
+	},
+	{
+		uid: "016275a1",
+		type: "item",
+		items: [{
+			id: "mekanism:basicblock2",
+			Damage: 4s,
+			tag: {
+				tier: 3
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "8a1c3290",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "b7699893",
+		type: "choice",
+		icon: {
+			id: "mekanism:basicblock2",
+			Damage: 3s,
+			tag: {
+				tier: 3
+			}
+		},
+		table: 1
+	}]
+}

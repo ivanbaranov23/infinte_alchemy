@@ -1,0 +1,21 @@
+{
+	x: 7.0d,
+	y: -3.0d,
+	dependencies: [
+		"4d87efef"
+	],
+	optional: true,
+	tasks: [{
+		uid: "05f6a438",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_compost"
+		}]
+	}],
+	rewards: [{
+		uid: "262b5f60",
+		type: "item",
+		item: "actuallyadditions:item_fertilizer",
+		count: 16
+	}]
+}

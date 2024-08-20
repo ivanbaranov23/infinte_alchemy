@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 8.0d,
+	dependencies: [
+		"7ecf3d46",
+		"30fd1eba"
+	],
+	tasks: [{
+		uid: "5e1626cb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:potion_processor"
+		}]
+	}]
+}

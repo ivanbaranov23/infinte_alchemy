@@ -1,0 +1,15 @@
+{
+	x: -6.0d,
+	y: 4.0d,
+	dependencies: [
+		"d512ca83",
+		"7190a5b2"
+	],
+	tasks: [{
+		uid: "ba141283",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gas_processor"
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: 4.5d,
+	y: 3.0d,
+	text: [
+		"From my testing 1 hopping bonsai going into blower furnace on magmatic heater will be producing charcoal at a rate a bit faster than solid fuel heater consumes. In other words, it's free air."
+	],
+	dependencies: [
+		"d9d9aafb",
+		"5cbff905"
+	],
+	optional: true,
+	tasks: [{
+		uid: "09444409",
+		type: "checkmark",
+		title: "Passive hot air",
+		icon: "minecraft:coal 1 1"
+	}]
+}

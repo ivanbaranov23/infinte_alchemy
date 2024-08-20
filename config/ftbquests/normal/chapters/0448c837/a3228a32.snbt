@@ -1,0 +1,15 @@
+{
+	x: 0.0d,
+	y: 3.0d,
+	dependencies: [
+		"8b5c8216",
+		"0e901063"
+	],
+	tasks: [{
+		uid: "a05846fc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:coil_core2"
+		}]
+	}]
+}

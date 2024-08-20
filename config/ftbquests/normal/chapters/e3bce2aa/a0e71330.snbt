@@ -1,0 +1,12 @@
+{
+	x: 5.0d,
+	y: 0.0d,
+	shape: "gear",
+	tasks: [{
+		uid: "10e17d65",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_fluids"
+		}]
+	}]
+}

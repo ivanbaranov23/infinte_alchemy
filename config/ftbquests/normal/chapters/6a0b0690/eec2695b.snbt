@@ -1,0 +1,11 @@
+{
+	x: 3.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "f2967fd0",
+		type: "item",
+		items: [{
+			item: "twilightforest:borer_essence"
+		}]
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	title: "DWC start",
+	x: 8.0d,
+	y: 10.0d,
+	text: [
+		"Following quest will tell you how to make demon will crystals"
+	],
+	dependencies: [
+		"1dee57dd"
+	],
+	tasks: [{
+		uid: "0dd9c214",
+		type: "checkmark",
+		title: "Demon Will Crystal",
+		icon: "bloodmagic:item_demon_crystal"
+	}]
+}

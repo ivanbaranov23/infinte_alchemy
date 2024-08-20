@@ -1,0 +1,105 @@
+{
+	title: "5x ores",
+	x: 15.0d,
+	y: -1.0d,
+	text: [
+		"Some 5x steps are used outside ore processing. Mainly crystals and shards.",
+		"",
+		"Clumps can be SAG milled and dirty dusts can be centrifuged for some sweet byproducts"
+	],
+	dependencies: [
+		"73387547",
+		"d8ab105c"
+	],
+	tasks: [{
+		uid: "49b86553",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock2",
+			Damage: 6s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c3d94f00",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock2",
+			Damage: 7s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9726f38b",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock2",
+			Damage: 8s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "85b34dd7",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock2",
+			Damage: 3s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8bc382fc",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock",
+			Damage: 9s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b5ef5154",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock",
+			Damage: 3s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ac61c8cd",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a921f88f",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

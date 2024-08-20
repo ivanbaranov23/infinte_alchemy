@@ -1,0 +1,22 @@
+{
+	x: 6.0d,
+	y: -11.5d,
+	text: [
+		"Can be made in hellfire forge or in alchemy table. There is a second recipe in alchemistry table that uses 3 times less brass but 3 times more life essence."
+	],
+	dependencies: [
+		"27394182"
+	],
+	tasks: [{
+		uid: "5dcc69a2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:alchemical_brass_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "e42c2af5",
+		type: "item",
+		item: "contenttweaker:alchemical_brass_block"
+	}]
+}

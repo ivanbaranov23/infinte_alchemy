@@ -1,0 +1,12 @@
+{
+	x: 6.0d,
+	y: 7.0d,
+	optional: true,
+	tasks: [{
+		uid: "d4f56575",
+		type: "item",
+		items: [{
+			item: "harvestcraft:sweetpotatoitem"
+		}]
+	}]
+}

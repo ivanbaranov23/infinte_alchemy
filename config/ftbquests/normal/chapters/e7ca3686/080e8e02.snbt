@@ -1,0 +1,33 @@
+{
+	title: "Funny Crafting Components",
+	x: 7.0d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"1139b868",
+		"04395e3a"
+	],
+	tasks: [{
+		uid: "f11127a0",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 41"
+		}]
+	},
+	{
+		uid: "25cb5e4b",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 45"
+		}]
+	},
+	{
+		uid: "00d209c5",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 43"
+		}]
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: -4.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	tasks: [{
+		uid: "65145ab3",
+		type: "item",
+		items: [{
+			item: "twilightforest:magic_map_empty"
+		}]
+	}],
+	rewards: [{
+		uid: "dfb187b7",
+		type: "item",
+		item: "twilightforest:magic_map_empty"
+	},
+	{
+		uid: "b44e7c00",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

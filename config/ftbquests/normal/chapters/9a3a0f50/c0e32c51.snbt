@@ -1,0 +1,19 @@
+{
+	x: 17.5d,
+	y: 0.0d,
+	dependencies: [
+		"de0a8b94"
+	],
+	tasks: [{
+		uid: "c9b513fb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:menril_steel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "78a189d9",
+		type: "item",
+		item: "contenttweaker:menril_steel_block"
+	}]
+}

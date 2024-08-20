@@ -1,0 +1,26 @@
+{
+	title: "Machine Frame 10",
+	x: 2.0d,
+	y: 2.0d,
+	shape: "square",
+	text: [
+		""
+	],
+	dependencies: [
+		"efeb5dc0",
+		"44475ad0",
+		"395610a5"
+	],
+	tasks: [{
+		uid: "4cdb0422",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_misc 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "d8df083d",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

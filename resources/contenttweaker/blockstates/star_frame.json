@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "side": "contenttweaker:blocks/parts/star_frame_side", 
+      "up": "contenttweaker:blocks/parts/star_frame_top", 
+      "down": "contenttweaker:blocks/parts/star_frame_bottom"
+    },
+    "model": "cube_column",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

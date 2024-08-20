@@ -1,0 +1,47 @@
+{
+	title: "LCG upgrades",
+	x: 0.0d,
+	y: 6.0d,
+	text: [
+		"water runes instead of waterstone - halves input fluids for each",
+		"fire runes instead of lavastone - halves recpe time for each",
+		"",
+		"bedrock instead of bedrockium - +1 output item",
+		"neutronium sheetmetal instead of leaded concrete - +1 output item for each"
+	],
+	dependencies: [
+		"6bb94131"
+	],
+	optional: true,
+	or_tasks: true,
+	tasks: [{
+		uid: "2806d9f3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rune_water_block"
+		}],
+		count: 2L
+	},
+	{
+		uid: "aa4e46d3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rune_fire_block"
+		}],
+		count: 2L
+	},
+	{
+		uid: "a7335af2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:neutronium_sheetmetal"
+		}],
+		count: 4L
+	},
+	{
+		uid: "9523a80e",
+		type: "checkmark",
+		title: "bedrock",
+		icon: "minecraft:bedrock"
+	}]
+}

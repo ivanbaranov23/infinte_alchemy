@@ -1,0 +1,19 @@
+{
+	x: 1.5d,
+	y: 3.0d,
+	text: [
+		"Can be found in Deep Dark or obtained from Nether Stars."
+	],
+	tasks: [{
+		uid: "bf27a8ba",
+		type: "item",
+		items: [{
+			item: "astralsorcery:itemcraftingcomponent 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "fadecc3f",
+		type: "item",
+		item: "contenttweaker:starmetal_block"
+	}]
+}

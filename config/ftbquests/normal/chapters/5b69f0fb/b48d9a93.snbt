@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: -4.0d,
+	dependencies: [
+		"f9275816"
+	],
+	optional: true,
+	tasks: [{
+		uid: "39fcf8fd",
+		type: "item",
+		items: [{
+			item: "roots:runic_crafter"
+		}]
+	}]
+}

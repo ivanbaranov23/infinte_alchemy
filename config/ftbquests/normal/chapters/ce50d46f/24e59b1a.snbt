@@ -1,0 +1,44 @@
+{
+	title: "Satellite Launch Pad Modifiers",
+	x: 6.5d,
+	y: 8.0d,
+	text: [
+		"Satellite Lauch Pad can be upgraded:",
+		"	Blue coils -> orange coils",
+		"	Alfglass -> inert glass",
+		"	ERA sheetmetal -> neutronium sheetmetal",
+		"",
+		"Each block upgraded makes recipe time less by 2%. Total recipe time will be: ",
+		"newTime = originalTime * 0.98 ^ (amountOfBlocksReplaced)",
+		"",
+		"Recipe times:",
+		"all coils: ~38%",
+		"all coils + all glass: ~15.5%",
+		"all coils + all glass + all sheetmetal: ~4.2%"
+	],
+	dependencies: [
+		"9a5a71e6"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4e3a722a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:iv_coil"
+		}]
+	},
+	{
+		uid: "d9ef8ef9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:inert_glass"
+		}]
+	},
+	{
+		uid: "deecfba7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:neutronium_sheetmetal"
+		}]
+	}]
+}

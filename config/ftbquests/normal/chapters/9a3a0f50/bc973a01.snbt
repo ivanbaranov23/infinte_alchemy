@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: 7.0d,
+	dependencies: [
+		"0721f21c"
+	],
+	tasks: [{
+		uid: "e47e761d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fiery_processor"
+		}]
+	}]
+}

@@ -1,0 +1,7 @@
+{
+	title: "ch 6+: Twilight Forest",
+	icon: "twilightforest:knightmetal_ingot",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

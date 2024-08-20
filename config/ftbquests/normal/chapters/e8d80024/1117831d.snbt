@@ -1,0 +1,28 @@
+{
+	title: "Manasteel Ingot",
+	icon: "botania:manaresource",
+	x: 5.0d,
+	y: -2.0d,
+	dependencies: [
+		"7bd6ebcf"
+	],
+	tasks: [{
+		uid: "4fa0f1d8",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_absorbing_ingot"
+		}]
+	},
+	{
+		uid: "2398b66e",
+		type: "item",
+		items: [{
+			item: "botania:manaresource"
+		}]
+	}],
+	rewards: [{
+		uid: "dde9b7ff",
+		type: "item",
+		item: "botania:storage"
+	}]
+}

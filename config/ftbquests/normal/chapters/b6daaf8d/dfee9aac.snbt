@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: 1.0d,
+	dependencies: [
+		"e39fa748"
+	],
+	tasks: [{
+		uid: "f64a4d3e",
+		type: "item",
+		items: [{
+			item: "aether_legacy:icestone"
+		}]
+	}]
+}

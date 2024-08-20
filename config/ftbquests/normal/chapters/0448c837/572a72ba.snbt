@@ -1,0 +1,22 @@
+{
+	x: -2.0d,
+	y: 4.0d,
+	text: [
+		"Low density alloy, perfect for flying things."
+	],
+	dependencies: [
+		"0e901063"
+	],
+	tasks: [{
+		uid: "504d9d3c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tinezo_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "baecb985",
+		type: "item",
+		item: "contenttweaker:tinezo_block"
+	}]
+}

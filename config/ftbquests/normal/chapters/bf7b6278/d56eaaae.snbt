@@ -1,0 +1,66 @@
+{
+	title: "Research Glass",
+	icon: "contenttweaker:research_glass_making",
+	x: 19.0d,
+	y: 3.0d,
+	shape: "gear",
+	text: [
+		"This will probably be your first research. There are only 10 combinations of 3 items from 5. ",
+		"",
+		"Strategy suggestion:",
+		"If you have 5 items ABCDE, you can try ABC and CDE. If these two attempts give 4 in sum then item C is definently correct, and if 3 - then C is definetly not correct."
+	],
+	dependencies: [
+		"0614573b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0721bb78",
+		type: "item",
+		items: [{
+			item: "contenttweaker:glass_cutter_research_token"
+		}]
+	},
+	{
+		uid: "7b5bcf5c",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 8"
+		}]
+	},
+	{
+		uid: "3199ee70",
+		type: "item",
+		items: [{
+			item: "natura:nether_glass 1 1"
+		}],
+		count: 4L
+	},
+	{
+		uid: "2e521984",
+		type: "item",
+		items: [{
+			item: "roots:glass_eye"
+		}]
+	},
+	{
+		uid: "fed438ee",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "glass",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "d3fd432a",
+		type: "item",
+		item: "minecraft:paper"
+	}]
+}

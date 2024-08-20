@@ -1,0 +1,16 @@
+{
+	x: -4.0d,
+	y: 4.0d,
+	tasks: [{
+		uid: "109c24f6",
+		type: "item",
+		items: [{
+			item: "taiga:yrdeen_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "53de97db",
+		type: "item",
+		item: "taiga:yrdeen_block"
+	}]
+}

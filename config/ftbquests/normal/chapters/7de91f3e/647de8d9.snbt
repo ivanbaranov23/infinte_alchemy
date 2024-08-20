@@ -1,0 +1,25 @@
+{
+	title: "Tier IV",
+	x: 10.0d,
+	y: -2.5d,
+	text: [
+		"28 runes"
+	],
+	dependencies: [
+		"dad454c9",
+		"c3da4dc9"
+	],
+	tasks: [{
+		uid: "00531315",
+		type: "item",
+		items: [{
+			item: "bloodmagic:decorative_brick"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "e5963fe8",
+		type: "item",
+		item: "contenttweaker:blood_shard3"
+	}]
+}

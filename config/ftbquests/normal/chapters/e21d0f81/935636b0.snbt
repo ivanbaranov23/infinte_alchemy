@@ -1,0 +1,18 @@
+{
+	title: "Limestone",
+	x: 0.0d,
+	y: -2.0d,
+	text: [
+		"Limestone can be made with ingeous extruder and induction smelter. It can be crushed into limestone gravel, which can be turned into limestone sand or marl and sifted."
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "1c6d363f",
+		type: "item",
+		items: [{
+			item: "atum:limestone_gravel"
+		}]
+	}]
+}

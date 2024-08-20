@@ -1,0 +1,25 @@
+{
+	title: "No channels no problems",
+	x: 0.0d,
+	y: -2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"de0a8b94"
+	],
+	tasks: [{
+		uid: "c4e0106f",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:part 1 16"
+		}]
+	},
+	{
+		uid: "b22b3630",
+		type: "item",
+		items: [{
+			item: "enderio:item_me_conduit"
+		}]
+	}]
+}

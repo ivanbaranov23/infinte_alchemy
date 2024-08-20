@@ -1,0 +1,21 @@
+{
+	title: "Tier III",
+	x: 7.0d,
+	y: -5.5d,
+	text: [
+		"20 runes",
+		"",
+		"also can use Sea Lanterns instead of Glowstone"
+	],
+	dependencies: [
+		"0ec04df7"
+	],
+	tasks: [{
+		uid: "12d12db9",
+		type: "item",
+		items: [{
+			item: "minecraft:glowstone"
+		}],
+		count: 4L
+	}]
+}

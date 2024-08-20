@@ -1,0 +1,42 @@
+{
+    "machine": "satellite_launch_pad",
+    "registryName": "satellite_launch_pad_sat1",
+    "recipeTime": 2000,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 10000
+        },
+        
+        
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:satellite_chip@0",
+            "amount": 1,
+            "nbt": {
+                "data": "linked"
+            }
+        },
+
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "rocket_fuel",
+            "amount": 3200
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:satellite_chip@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:satellite1@0",
+            "amount": 1
+        }
+    ]
+}

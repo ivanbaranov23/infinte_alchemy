@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "forge:fluid",
+    "custom": {
+      "fluid": "chitin_grade2"
+    }
+  },
+  "variants": {
+    "normal": [{}]
+  }
+}

@@ -1,0 +1,35 @@
+{
+	title: "Glass",
+	icon: "minecraft:glass",
+	x: 5.5d,
+	y: -5.0d,
+	text: [
+		"Have you ever thought about how unrealistic minecraft glass recipe is? Don't worry, I've got your back. Now it is requires more steps and more ingriedents.",
+		"",
+		"Now go back to infusing water with the power of a witch using mushrooms."
+	],
+	dependencies: [
+		"bf75f796"
+	],
+	tasks: [{
+		uid: "2d2130de",
+		type: "item",
+		items: [{
+			item: "quark:glass_shards"
+		}]
+	},
+	{
+		uid: "5f4d4309",
+		type: "item",
+		items: [{
+			item: "extrautils2:decorativesolid 1 4"
+		}]
+	},
+	{
+		uid: "5b29c7ac",
+		type: "item",
+		items: [{
+			item: "minecraft:glass"
+		}]
+	}]
+}

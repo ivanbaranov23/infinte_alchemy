@@ -1,0 +1,103 @@
+{
+	icon: "modularcontroller:essence_extractor_controller",
+	x: 9.0d,
+	y: -1.0d,
+	text: [
+		"This multiblock is a bit expensive.",
+		"",
+		"Upgrading pumps speeds up recipes and gives more slurp. ",
+		"Prudentium pumps - 1/2x recipe time, 2x slurp output",
+		"...",
+		"Insanium pmps - 1/6x recipe time, 6x slurp output"
+	],
+	dependencies: [
+		"d4480694",
+		"420e216c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d8a97d10",
+		type: "item",
+		items: [{
+			item: "modularcontroller:essence_extractor_controller"
+		}],
+		count: 4L
+	},
+	{
+		uid: "669fc281",
+		type: "item",
+		items: [{
+			item: "contenttweaker:egoold_block"
+		}],
+		count: 8L
+	},
+	{
+		uid: "186a1dfd",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 1 5"
+		}],
+		count: 5L
+	},
+	{
+		uid: "d035f810",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 117L
+	},
+	{
+		uid: "3e3c13a8",
+		type: "item",
+		items: [{
+			item: "enderio:block_reinforced_obsidian"
+		}],
+		count: 68L
+	},
+	{
+		uid: "700f8afb",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 8"
+		}],
+		count: 19L
+	},
+	{
+		uid: "1880a14e",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:glass_alloy 1 7"
+		}],
+		count: 44L
+	},
+	{
+		uid: "9ec7070b",
+		type: "item",
+		items: [{
+			item: "engineersdecor:panzerglass_block"
+		}],
+		count: 60L
+	},
+	{
+		uid: "b666dd5b",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1"
+		}],
+		count: 37L
+	},
+	{
+		uid: "98cc08b3",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 16L
+	},
+	{
+		uid: "10cce973",
+		type: "checkmark",
+		title: "64 pumps"
+	}]
+}

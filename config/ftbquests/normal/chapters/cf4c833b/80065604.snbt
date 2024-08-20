@@ -1,0 +1,11 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "9e3e8e71",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 1 720"
+		}]
+	}]
+}

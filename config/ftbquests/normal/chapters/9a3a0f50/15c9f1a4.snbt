@@ -1,0 +1,25 @@
+{
+	x: 3.0d,
+	y: -1.0d,
+	text: [
+		"Can be used to make Inscriber Name Press, which can be used to auto rename items, which can be used in like Blood Magic Alchemy Table automation. "
+	],
+	dependencies: [
+		"51c18b24"
+	],
+	tasks: [{
+		uid: "fcbd56b5",
+		type: "item",
+		items: [{
+			id: "appliedenergistics2:certus_quartz_cutting_knife",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

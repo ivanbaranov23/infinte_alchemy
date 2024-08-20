@@ -1,0 +1,20 @@
+{
+	x: 3.0d,
+	y: -8.5d,
+	shape: "square",
+	dependencies: [
+		"c1a676cf"
+	],
+	tasks: [{
+		uid: "d200a8be",
+		type: "item",
+		items: [{
+			item: "bloodmagic:altar"
+		}]
+	}],
+	rewards: [{
+		uid: "aca1501f",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

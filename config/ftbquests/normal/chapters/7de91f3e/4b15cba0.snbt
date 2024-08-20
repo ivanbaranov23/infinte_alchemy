@@ -1,0 +1,17 @@
+{
+	x: 9.0d,
+	y: -7.5d,
+	text: [
+		"It's called assembler but it's also biochemical reactor, fluid siever, incubator, chemical injector and battle arena."
+	],
+	dependencies: [
+		"fb79e1ee"
+	],
+	tasks: [{
+		uid: "175d3e2a",
+		type: "item",
+		items: [{
+			item: "requious:bioassembler"
+		}]
+	}]
+}

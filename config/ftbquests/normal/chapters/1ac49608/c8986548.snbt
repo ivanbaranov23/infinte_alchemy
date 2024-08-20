@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: -2.0d,
+	dependencies: [
+		"41925402"
+	],
+	tasks: [{
+		uid: "2076f409",
+		type: "item",
+		items: [{
+			item: "contenttweaker:reinforced_cell"
+		}]
+	}]
+}

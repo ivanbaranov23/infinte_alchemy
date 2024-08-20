@@ -1,0 +1,895 @@
+{
+    "populate": {
+		"dd_as_thing1": {
+			"enabled": "true",
+			"distribution": "uniform",
+			
+            "generator": {
+                "type": "structure",
+                "structure": "structure/dd_as_thing1.nbt",
+				
+				"cluster-size": 1
+			},
+
+			"cluster-count": 1,
+            "chunk-chance": 25,
+			"min-height": 64,
+			"max-height": 175,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+
+        "dd_ceiling_light": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "biomesoplenty:crystal", "weight": 12},
+                    {"name": "erebus:red_gem", "weight": 10}
+                ],
+				"material": [
+                    "cobblestone"
+                ],
+				"cluster-size": 1
+			},
+			"cluster-count": 22,
+            "chunk-chance": 2,
+			"min-height": 100,
+			"max-height": 115,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+        "dd_quark_stal_t0": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 0},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_quark_stal_t1": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 1},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_quark_stal_t2": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 2},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_quark_stal_t3": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 3},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_quark_stal_t4": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 4},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_quark_stal_t5": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 5},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_quark_stal_t6": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 6},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_quark_stal_t7": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 7},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_quark_stal_t8": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalactite",
+				"block": {"name": "quark:crystal", "metadata": 8},
+                "min-height": 15,
+                "gen-body": ["air", "cobblestone"],
+                "material": "cobblestone"
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 95,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+		"dd_petro_lake": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "lake",
+				"block": {"name": "thermalfoundation:fluid_petrotheum"},
+                "material": [
+                    "minecraft:stone",
+					"cobblestone",
+                    {"name": "minecraft:stone", "metadata": 1},
+                    {"name": "minecraft:stone", "metadata": 3},
+                    {"name": "minecraft:stone", "metadata": 5},
+                    "dirt",
+                    "gravel",
+                    "clay",
+                    {"name": "chisel:limestone2", "metadata": 7},
+                    {"name": "chisel:marble2", "metadata": 7}
+                ],
+				"use-material": true
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 60,
+			"max-height": 65,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+		"dd_cryo_lake": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "lake",
+				"block": {"name": "thermalfoundation:fluid_cryotheum"},
+                "material": [
+                    "minecraft:stone",
+					"cobblestone",
+                    {"name": "minecraft:stone", "metadata": 1},
+                    {"name": "minecraft:stone", "metadata": 3},
+                    {"name": "minecraft:stone", "metadata": 5},
+                    "dirt",
+                    "gravel",
+                    "clay",
+                    {"name": "chisel:limestone2", "metadata": 7},
+                    {"name": "chisel:marble2", "metadata": 7}
+                ],
+				"use-material": true
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 60,
+			"max-height": 65,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+		"dd_pyro_lake": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "lake",
+				"block": {"name": "thermalfoundation:fluid_pyrotheum"},
+                "material": [
+                    "minecraft:stone",
+					"cobblestone",
+                    {"name": "minecraft:stone", "metadata": 1},
+                    {"name": "minecraft:stone", "metadata": 3},
+                    {"name": "minecraft:stone", "metadata": 5},
+                    "dirt",
+                    "gravel",
+                    "clay",
+                    {"name": "chisel:limestone2", "metadata": 7},
+                    {"name": "chisel:marble2", "metadata": 7}
+                ],
+				"use-material": true
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 60,
+			"max-height": 65,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        
+
+		"dd_erebus_chunk": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "erebus:umberstone", "weight": 80},
+
+                    {"name": "erebus:ore_jade", "weight": 25},
+                    {"name": "erebus:ore_copper", "weight": 20},
+                    {"name": "erebus:ore_emerald", "weight": 5},
+                    {"name": "erebus:ore_diamond", "weight": 5},
+                    {"name": "erebus:ore_coal", "weight": 15},
+
+                    {"name": "erebus:ore_fossil", "weight": 5},
+                    {"name": "erebus:ore_petrified_wood", "weight": 10}
+                ],
+				"material": [
+                    "minecraft:stone",
+                    {"name": "minecraft:stone", "metadata": 1},
+                    {"name": "minecraft:stone", "metadata": 3},
+                    {"name": "minecraft:stone", "metadata": 5},
+                    "dirt",
+                    "gravel",
+                    "clay",
+                    {"name": "chisel:limestone2", "metadata": 7},
+                    {"name": "chisel:marble2", "metadata": 7}
+                ],
+				"cluster-size": 256
+			},
+			"cluster-count": 1,
+            "chunk-chance": 2,
+			"min-height": 20,
+			"max-height": 63,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_atum_chunk": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "atum:limestone", "weight": 80},
+
+                    {"name": "atum:relic_ore", "weight": 25},
+                    {"name": "atum:iron_ore", "weight": 20},
+                    {"name": "atum:gold_ore", "weight": 10},
+                    {"name": "atum:redstone_ore", "weight": 10},
+                    {"name": "atum:khnumite_raw", "weight": 5},
+                    {"name": "astralsorcery:blockcustomsandore", "weight": 5},
+
+                    {"name": "atum:bone_ore", "weight": 5}
+                ],
+				"material": [
+                    "minecraft:stone",
+                    {"name": "minecraft:stone", "metadata": 1},
+                    {"name": "minecraft:stone", "metadata": 3},
+                    {"name": "minecraft:stone", "metadata": 5},
+                    "dirt",
+                    "gravel",
+                    "clay",
+                    {"name": "chisel:limestone2", "metadata": 7},
+                    {"name": "chisel:marble2", "metadata": 7}
+                ],
+				"cluster-size": 192
+			},
+			"cluster-count": 1,
+            "chunk-chance": 1,
+			"min-height": 20,
+			"max-height": 64,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+		"dd_nether_chunk": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "minecraft:netherrack", "weight": 60},
+                    {"name": "biomesoplenty:flesh", "weight": 25},
+
+                    {"name": "betternether:cincinnasite_ore", "weight": 20},
+                    {"name": "bigreactors:orebenitoite", "weight": 10},
+                    {"name": "netherendingores:ore_nether_modded_1", "weight": 5, "metadata": 14},
+                    {"name": "thermalfoundation:ore_fluid", "weight": 5, "metadata": 3},
+
+                    {"name": "taiga:prometheum_ore", "weight": 10},
+					{"name": "taiga:tiberium_ore", "weight": 10},
+					{"name": "taiga:valyrium_ore", "weight": 10},
+
+                    {"name": "netherendingores:block_nether_netherfish", "weight": 5}
+                ],
+				"material": [
+                    "minecraft:stone",
+                    {"name": "minecraft:stone", "metadata": 1},
+                    {"name": "minecraft:stone", "metadata": 3},
+                    {"name": "minecraft:stone", "metadata": 5},
+                    "dirt",
+                    "gravel",
+                    "clay",
+                    {"name": "chisel:limestone2", "metadata": 7},
+                    {"name": "chisel:marble2", "metadata": 7}
+                ],
+				"cluster-size": 256
+			},
+			"cluster-count": 1,
+            "chunk-chance": 2,
+			"min-height": 20,
+			"max-height": 63,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_eezo_chunk": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "taiga:eezo_ore", "weight": 80},
+
+                    {"name": "extrautils2:compressedcobblestone", "weight": 25, "metadata": 2},
+                    {"name": "extrautils2:compressedcobblestone", "weight": 15, "metadata": 3},
+
+                    {"name": "netherendingores:ore_other_1", "weight": 10, "metadata": 9}
+                ],
+				"material": [
+                    "minecraft:stone",
+                    {"name": "minecraft:stone", "metadata": 1},
+                    {"name": "minecraft:stone", "metadata": 3},
+                    {"name": "minecraft:stone", "metadata": 5},
+                    "dirt",
+                    "gravel",
+                    "clay",
+                    {"name": "chisel:limestone2", "metadata": 7},
+                    {"name": "chisel:marble2", "metadata": 7}
+                ],
+				"cluster-size": 7
+			},
+			"cluster-count": 5,
+			"min-height": 10,
+			"max-height": 44,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+        "dd_uru_pillar": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "taiga:meteorite_block", "weight": 40},
+                    {"name": "taiga:obsidiorite_block", "weight": 30},
+                    {"name": "taiga:duranite_ore", "weight": 10},
+                    {"name": "taiga:uru_ore", "weight": 10}
+                ],
+				"material": [
+                    "cobblestone"
+                ],
+				"cluster-size": 150
+			},
+			"cluster-count": 1,
+            "chunk-chance": 4,
+			"min-height": 70,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_uru_midair": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "taiga:meteorite_block", "weight": 40},
+                    {"name": "taiga:obsidiorite_block", "weight": 30},
+                    {"name": "obsidian", "weight": 20},
+                    {"name": "taiga:duranite_ore", "weight": 10},
+                    {"name": "taiga:uru_ore", "weight": 10}
+                ],
+				"material": [
+                    "cobblestone",
+                    "air"
+                ],
+				"cluster-size": 15
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 75,
+			"max-height": 85,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+        "dd_ice_cloud": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "aether_legacy:aercloud", "weight": 40, "metadata": 1},
+                    {"name": "aether_legacy:aercloud", "weight": 30},
+                    {"name": "aether_legacy:icestone", "weight": 10}
+                ],
+				"material": [
+                    "air"
+                ],
+				"cluster-size": 25
+			},
+			"cluster-count": 1,
+            "chunk-chance": 12,
+			"min-height": 75,
+			"max-height": 85,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+        "dd_iron_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "iron_ore", "weight": 15},
+                    {"name": "densemetals:dense_iron_ore", "weight": 5},
+                    {"name": "thermalfoundation:ore", "weight": 10, "metadata": 5}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_copper_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "thermalfoundation:ore", "weight": 15},
+                    {"name": "densemetals:dense_copper_ore", "weight": 5},
+                    {"name": "immersiveengineering:ore", "weight": 10}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_tin_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "thermalfoundation:ore", "weight": 15, "metadata": 1},
+                    {"name": "densemetals:dense_tin_ore", "weight": 5},
+                    {"name": "iron_ore", "weight": 5},
+                    {"name": "thermalfoundation:ore", "weight": 5, "metadata": 4}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+
+        "dd_nickel_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "thermalfoundation:ore", "weight": 15, "metadata": 5},
+                    {"name": "densemetals:dense_nickel_ore", "weight": 5},
+                    {"name": "iron_ore", "weight": 10}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_aluminum_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "thermalfoundation:ore", "weight": 15, "metadata": 4},
+                    {"name": "densemetals:dense_aluminum_ore", "weight": 5},
+                    {"name": "immersiveengineering:ore", "weight": 10, "metadata": 1}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+
+        "dd_gold_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "gold_ore", "weight": 15},
+                    {"name": "densemetals:dense_gold_ore", "weight": 5},
+                    {"name": "iron_ore", "weight": 5},
+                    {"name": "thermalfoundation:ore", "weight": 5},
+                    {"name": "biomesoplenty:gem_ore", "weight": 5, "metadata": 7},
+                    {"name": "netherendingores:ore_other_1", "weight": 10, "metadata": 6}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_silver_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "thermalfoundation:ore", "weight": 15, "metadata": 2},
+                    {"name": "densemetals:dense_silver_ore", "weight": 5},
+                    {"name": "thermalfoundation:ore", "weight": 15, "metadata": 3},
+                    {"name": "immersiveengineering:ore", "weight": 5, "metadata": 3},
+                    {"name": "biomesoplenty:gem_ore", "weight": 5, "metadata": 6},
+                    {"name": "netherendingores:ore_other_1", "weight": 10, "metadata": 10}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_osmium_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "mekanism:oreblock", "weight": 15},
+                    {"name": "densemetals:dense_osmium_ore", "weight": 5},
+                    {"name": "biomesoplenty:gem_ore", "weight": 5, "metadata": 5}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+        "dd_lead_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "thermalfoundation:ore", "weight": 15, "metadata": 3},
+                    {"name": "densemetals:dense_lead_ore", "weight": 5},
+                    {"name": "thermalfoundation:ore", "weight": 5, "metadata": 2},
+                    {"name": "immersiveengineering:ore", "weight": 5, "metadata": 2},
+                    {"name": "biomesoplenty:gem_ore", "weight": 5, "metadata": 4},
+                    {"name": "netherendingores:ore_other_1", "weight": 10, "metadata": 8}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		},
+
+        "dd_nether_ores_stal_m": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "netherendingores:ore_other_1", "weight": 15, "metadata": 4},
+                    {"name": "netherendingores:ore_other_1", "weight": 10, "metadata": 2},
+                    {"name": "netherendingores:ore_other_1", "weight": 10}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 2,
+			"max-height": 90,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-11325
+				]
+			}
+		}
+    }
+}

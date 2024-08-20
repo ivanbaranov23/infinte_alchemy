@@ -1,0 +1,23 @@
+{
+	title: "Expensivest Table",
+	x: 14.0d,
+	y: 5.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"2e398384"
+	],
+	tasks: [{
+		uid: "523164fa",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:table_elite"
+		}]
+	}],
+	rewards: [{
+		uid: "eb0cb0a0",
+		type: "item",
+		item: "extendedcrafting:table_elite"
+	}]
+}

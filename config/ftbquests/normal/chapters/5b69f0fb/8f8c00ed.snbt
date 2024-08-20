@@ -1,0 +1,11 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "fb775e13",
+		type: "item",
+		items: [{
+			item: "contenttweaker:druidic_dust"
+		}]
+	}]
+}

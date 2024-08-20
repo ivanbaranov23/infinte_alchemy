@@ -1,0 +1,20 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	dependencies: [
+		"7ee7dc77"
+	],
+	tasks: [{
+		uid: "b47026b2",
+		type: "item",
+		items: [{
+			item: "openblocks:xp_bottler"
+		}]
+	}],
+	rewards: [{
+		uid: "82b2b225",
+		type: "item",
+		item: "minecraft:glass_bottle",
+		count: 16
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 5.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "a8e23bdd",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mitanium_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "6b9fa522",
+		type: "item",
+		item: "contenttweaker:mitanium_block"
+	}]
+}

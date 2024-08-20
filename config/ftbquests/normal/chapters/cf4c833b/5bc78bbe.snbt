@@ -1,0 +1,17 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "a8e45d32",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "diesel",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

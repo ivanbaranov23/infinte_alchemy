@@ -1,0 +1,25 @@
+{
+	x: 0.0d,
+	y: 5.0d,
+	shape: "rsquare",
+	dependencies: [
+		"ad27f361"
+	],
+	tasks: [{
+		uid: "1727f10b",
+		type: "item",
+		items: [{
+			id: "atum:scarab",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8c544aa3",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"Singularity Dust can be obtained from any singularity. ",
+		"",
+		"Tree Powered Compressor will give mostly 0,5 dust per singularity.",
+		"",
+		"Explosion Compressor will give much better yields from metal singularities. Alloy singularities are even better. ",
+		"For example 3 copper and 1 tin singularities will give 4 dusts, but they can be turned into bronze ones for 8 dusts total."
+	],
+	dependencies: [
+		"b19be181"
+	],
+	tasks: [{
+		uid: "282c8c99",
+		type: "item",
+		items: [{
+			item: "contenttweaker:singularity_dust"
+		}]
+	}]
+}

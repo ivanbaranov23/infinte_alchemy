@@ -1,0 +1,52 @@
+{
+	icon: "mekanism:basicblock2 1 1",
+	x: 20.0d,
+	y: 8.0d,
+	dependencies: [
+		"db272431",
+		"3c118093"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b1fd91dc",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 1 1"
+		}]
+	},
+	{
+		uid: "e5521d26",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2 1 2"
+		}]
+	},
+	{
+		uid: "772d57c6",
+		type: "item",
+		items: [{
+			id: "mekanism:basicblock2",
+			Damage: 3s,
+			tag: {
+				tier: 0
+			}
+		}]
+	},
+	{
+		uid: "1e9a9d56",
+		type: "item",
+		items: [{
+			id: "mekanism:basicblock2",
+			Damage: 4s,
+			tag: {
+				tier: 0
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "36de18ac",
+		type: "item",
+		item: "mekanism:basicblock2 1 1",
+		count: 16
+	}]
+}

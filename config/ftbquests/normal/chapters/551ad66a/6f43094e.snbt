@@ -1,0 +1,18 @@
+{
+	title: "Baby's first singularity",
+	x: 8.0d,
+	y: 0.0d,
+	text: [
+		"You'll need many of these and, since they take 5 minutes to make, precraft them. "
+	],
+	dependencies: [
+		"b19be181"
+	],
+	tasks: [{
+		uid: "fdd6bf1a",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_custom 1 100"
+		}]
+	}]
+}

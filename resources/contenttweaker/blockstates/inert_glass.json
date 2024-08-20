@@ -1,0 +1,23 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "north": "contenttweaker:blocks/inert_glass_side",
+      "east": "contenttweaker:blocks/inert_glass_side",
+      "south": "contenttweaker:blocks/inert_glass_side",
+      "west": "contenttweaker:blocks/inert_glass_side",
+
+      "up": "contenttweaker:blocks/inert_glass_top",
+      "down": "contenttweaker:blocks/inert_glass_bottom",
+
+      "particle": "contenttweaker:blocks/inert_glass_side"
+    },
+    "model": "cube_all",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

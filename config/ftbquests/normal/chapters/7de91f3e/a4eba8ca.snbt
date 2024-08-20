@@ -1,0 +1,28 @@
+{
+	title: "Orb 3",
+	x: 7.0d,
+	y: -1.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"dad454c9"
+	],
+	tasks: [{
+		uid: "75dba721",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:magician"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

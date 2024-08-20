@@ -1,0 +1,19 @@
+{
+	x: 8.0d,
+	y: 7.0d,
+	or_tasks: true,
+	tasks: [{
+		uid: "48c77e0b",
+		type: "item",
+		items: [{
+			item: "harvestcraft:amaranthitem"
+		}]
+	},
+	{
+		uid: "0004aca3",
+		type: "item",
+		items: [{
+			item: "natura:overworld_sapling 1 2"
+		}]
+	}]
+}

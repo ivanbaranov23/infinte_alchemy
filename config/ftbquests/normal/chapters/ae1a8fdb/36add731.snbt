@@ -1,0 +1,16 @@
+{
+	x: 1.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "52e07d25",
+		type: "item",
+		items: [{
+			item: "draconicevolution:draconic_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8651c152",
+		type: "item",
+		item: "draconicevolution:draconic_block"
+	}]
+}

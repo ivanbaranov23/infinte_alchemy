@@ -1,0 +1,16 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "b1b29cd4",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_matter 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "2ebe3551",
+		type: "item",
+		item: "projecte:matter_block 1 1"
+	}]
+}

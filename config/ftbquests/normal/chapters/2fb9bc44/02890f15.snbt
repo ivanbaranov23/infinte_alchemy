@@ -1,0 +1,14 @@
+{
+	x: 1.5d,
+	y: 2.0d,
+	dependencies: [
+		"3e071216"
+	],
+	tasks: [{
+		uid: "4cfcb203",
+		type: "item",
+		items: [{
+			item: "prodigytech:fuel_processor"
+		}]
+	}]
+}

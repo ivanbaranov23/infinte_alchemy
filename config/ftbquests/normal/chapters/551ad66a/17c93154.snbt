@@ -1,0 +1,28 @@
+{
+	icon: "contenttweaker:basic_modularium",
+	x: 3.0d,
+	y: 0.0d,
+	dependencies: [
+		"42386b50"
+	],
+	tasks: [{
+		uid: "b67e6db9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:modularium_paste"
+		}]
+	},
+	{
+		uid: "04e8df6e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:basic_modularium"
+		}]
+	}],
+	rewards: [{
+		uid: "c64ad7ec",
+		type: "item",
+		item: "contenttweaker:basic_modularium",
+		count: 9
+	}]
+}

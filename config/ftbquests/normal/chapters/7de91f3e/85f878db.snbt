@@ -1,0 +1,26 @@
+{
+	title: "Orb 2",
+	x: 5.0d,
+	y: -3.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"0ec04df7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e42a53c3",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:apprentice"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

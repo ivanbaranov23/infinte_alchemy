@@ -1,0 +1,7 @@
+{
+	title: "ch 13.1: Alchemistry",
+	icon: "alchemistry:element 1 54",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

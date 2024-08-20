@@ -1,0 +1,2820 @@
+{
+    "registryname": "bonsai",
+    "localizedname": "Industrial Bonsai Pot",
+    "color": "744631",
+    "modifiers": [
+        {"description": "x1.5 output items, +20% output item chance, -5% chance to not consume input items, x2.5 input fluid",
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@7"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.2,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2.5
+                }
+            ]
+        },
+
+        {"description": "x1.25 output item chance, x1.15 input items",
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@8"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.25,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+
+        {"description": "x0.85 recipe time, x0.85 energy",
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@6"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+
+        {"description": "+4% chance to not consume input items, x1.15 energy",
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+
+        {"description": "x1.2 output items, x1.25 input fluid",
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@3"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 1.2
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+
+        {"description": "x0.9 energy, x0.9 input fluid",
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@2"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+
+        {"description": "+5% chance output, x1.15 recipe time",
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.05,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 1.15
+                }
+            ]
+        },
+
+        {"description": "x0.8 input energy",
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.8
+                }
+            ]
+        }
+    ],
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "natura:redwood_logs@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "extrautils2:ironwood_log@2"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:grass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "minecraft:hardened_clay@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "enderio:block_fused_glass@0", 
+                "mekanism:basicblock@10"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quark:crystal@4"
+            ]
+        }
+    ]}

@@ -1,0 +1,23 @@
+{
+	x: 5.0d,
+	y: 1.0d,
+	text: [
+		"A rare ore that generates in porphyry and can be used to catalyse specific godshard creation."
+	],
+	dependencies: [
+		"8cc62bd6"
+	],
+	optional: true,
+	tasks: [{
+		uid: "dd1b207b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:atum_godshardium_ore"
+		}]
+	}],
+	rewards: [{
+		uid: "cf448094",
+		type: "item",
+		item: "contenttweaker:atum_godshardium_ore"
+	}]
+}

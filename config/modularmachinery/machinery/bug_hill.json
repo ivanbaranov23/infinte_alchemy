@@ -1,0 +1,1361 @@
+{
+    "registryname": "bug_hill",
+    "localizedname": "Bug Hill",
+    "color": "735c45",
+    "modifiers": [
+        {"description": "energy x0.5, output items +1/3, input items +1/2, input fluid x1.5",
+            "x": 0,
+            "y": [2, 3],
+            "z": 2,
+            "elements": [
+                "contenttweaker:divine_mud@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.5
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier" : 0.5
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.3333334
+                }
+            ]
+        },
+        {
+            "x": [-1, 0, 1],
+            "y": [0, 1],
+            "z": [1, 2, 3],
+            "elements": [
+                "contenttweaker:divine_mud@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.5
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier" : 0.5
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.3333334
+                }
+            ]
+        },
+
+        {"description": "chance to not consume input items +4%, input fluid x0.8, energy x1.1",
+            "x": 0,
+            "y": [2, 3],
+            "z": 2,
+            "elements": [
+                "contenttweaker:glowshroomite_mud@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.8
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+        {
+            "x": [-1, 0, 1],
+            "y": [0, 1],
+            "z": [1, 2, 3],
+            "elements": [
+                "contenttweaker:glowshroomite_mud@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.8
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                },
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.1
+                }
+            ]
+        },
+
+        {"description": "chance to not consume input items +6%, input fluid x0.7, output item chance -2%",
+            "x": 0,
+            "y": [2, 3],
+            "z": 2,
+            "elements": [
+                "twilightforest:root@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.7
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.06,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.02,
+                    "affectChance": true
+                }
+            ]
+        },
+        {
+            "x": [-1, 0, 1],
+            "y": [0, 1],
+            "z": [1, 2, 3],
+            "elements": [
+                "twilightforest:root@1"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.7
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.06,
+                    "affectChance": true
+                },
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.02,
+                    "affectChance": true
+                }
+            ]
+        },
+
+        {"description": "chance to not consume input items +4%, energy x0.9",
+            "x": 0,
+            "y": [2, 3],
+            "z": 2,
+            "elements": [
+                "contenttweaker:mushroomite_mud@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                }
+            ]
+        },
+        {
+            "x": [-1, 0, 1],
+            "y": [0, 1],
+            "z": [1, 2, 3],
+            "elements": [
+                "contenttweaker:mushroomite_mud@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 0.9
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": -0.04,
+                    "affectChance": true
+                }
+            ]
+        },
+
+        {"description": "input fluid x0.8, output fluid x0.9, energy x1.5",
+            "x": 0,
+            "y": [2, 3],
+            "z": 2,
+            "elements": [
+                "tconevo:earth_material_block@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.8
+                },
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+        {
+            "x": [-1, 0, 1],
+            "y": [0, 1],
+            "z": [1, 2, 3],
+            "elements": [
+                "tconevo:earth_material_block@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.8
+                },
+                {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 0.9
+                }
+            ]
+        },
+
+        {"description": "recipe time x0.85, input energy x1.25",
+            "x": 0,
+            "y": [2, 3],
+            "z": 2,
+            "elements": [
+                "tconstruct:soil@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+        {
+            "x": [-1, 0, 1],
+            "y": [0, 1],
+            "z": [1, 2, 3],
+            "elements": [
+                "tconstruct:soil@5"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                },
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.85
+                }
+            ]
+        },
+
+        {"description": "input fluid x1.5, output item +1",
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bug_hill_exit2@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bug_hill_exit2@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit2@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:bug_hill_exit2@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "contenttweaker:bug_hill_exit2@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit2@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit2@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit2@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+
+
+        {"description": "input fluid x2, output item +3",
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bug_hill_exit3@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bug_hill_exit3@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2
+                }
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit3@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:bug_hill_exit3@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "contenttweaker:bug_hill_exit3@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2
+                }
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit3@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit3@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit3@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 2
+                }
+            ]
+        }
+    ],
+    "parts": [
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:bug_hill_exit1@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:bug_hill_exit1@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit1@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:bug_hill_exit1@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "contenttweaker:bug_hill_exit1@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit1@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit1@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:bug_hill_exit1@0"
+            ]
+        },
+
+
+
+
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modulardiversity:blockhotairinputhatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "tconstruct:mudbrick_stairs@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modulardiversity:blockhotairinputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "tconstruct:mudbrick_stairs@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all",
+                "modulardiversity:blockhotairinputhatch"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all",
+                "modulardiversity:blockhotairinputhatch"
+            ]
+        },
+        
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        
+        {
+            "x": -1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        
+        {
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "tconstruct:mudbrick_stairs@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:mudbrick_stairs@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "tconstruct:mudbrick_stairs@2"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "tconstruct:mudbrick_stairs@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "tconstruct:mudbrick_stairs@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modulardiversity:blockhotairinputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "tconstruct:mudbrick_stairs@3"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:mudbrick_stairs@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "tconstruct:mudbrick_stairs@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all",
+                "modulardiversity:blockhotairinputhatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "tconstruct:mudbrick_stairs@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modulardiversity:blockhotairinputhatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "tconstruct:mudbrick_stairs@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all",
+                "modulardiversity:blockhotairinputhatch"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "erebus:mud@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "tconstruct:mudbrick_stairs@2"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "tconstruct:mudbrick_stairs@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "tconstruct:mudbrick_stairs@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "tconstruct:deco_ground@0"
+            ]
+        },
+        
+        {
+            "x": -2,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "tconstruct:mudbrick_stairs@3"
+            ]
+        }
+    ]}

@@ -1,0 +1,30 @@
+{
+	x: -1.0d,
+	y: 0.0d,
+	text: [
+		"Plates and rods and stuff is more expensive. You can use this hammer to make them in the early game. ",
+		"",
+		"Cost of components with hammer -> in machines",
+		"Plate: 6 -> 4",
+		"Rod: 6 -> 4.5 -> 3",
+		"Gear: 13 -> 8",
+		"",
+		"Wire: 3 -> 1"
+	],
+	dependencies: [
+		"941b6c91"
+	],
+	tasks: [{
+		uid: "f8e574d3",
+		type: "item",
+		items: [{
+			id: "moreplates:hammer",
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,40 @@
+{
+	x: 10.0d,
+	y: 4.0d,
+	text: [
+		"Retains inventory when broken and can be accessed even without placing it down. Kinda cool"
+	],
+	dependencies: [
+		"6c33422c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "dee1f58c",
+		type: "item",
+		items: [{
+			id: "mekanism:machineblock",
+			Damage: 13s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4fdf8245",
+		type: "item",
+		item: {
+			id: "mekanism:machineblock",
+			Damage: 13s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}
+	}]
+}

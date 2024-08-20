@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: -1.0d,
+	text: [
+		"Can be first obtained from sandworm gut or from sludge."
+	],
+	optional: true,
+	tasks: [{
+		uid: "a4e4179b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bacteria"
+		}]
+	}]
+}

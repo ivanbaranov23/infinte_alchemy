@@ -1,0 +1,26 @@
+{
+	x: 17.0d,
+	y: -5.0d,
+	text: [
+		"Build a reactor from [insert word for big] Reactors. ",
+		"",
+		"Even small reactors can easily generate hungreds of thousands of rf a tick, ",
+		"big reactors can generate millions."
+	],
+	dependencies: [
+		"1424f64d"
+	],
+	tasks: [{
+		uid: "c8c2673f",
+		type: "item",
+		items: [{
+			item: "bigreactors:reactorcasing"
+		}]
+	}],
+	rewards: [{
+		uid: "aa0474aa",
+		type: "item",
+		item: "bigreactors:reactorcasing",
+		count: 32
+	}]
+}

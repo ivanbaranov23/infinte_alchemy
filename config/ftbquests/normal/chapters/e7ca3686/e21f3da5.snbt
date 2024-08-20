@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	text: [
+		"Can produce a respectable amount of energy from a fuel and a coolant, tho you can hold on to rainbow gen."
+	],
+	dependencies: [
+		"97e98b69",
+		"029062b7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "532b3dfb",
+		type: "item",
+		items: [{
+			item: "enderio:block_combustion_generator"
+		}]
+	}]
+}

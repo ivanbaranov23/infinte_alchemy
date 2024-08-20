@@ -1,0 +1,27 @@
+{
+	x: 3.0d,
+	y: -1.0d,
+	text: [
+		"Find a beetle and milk it. ",
+		"",
+		"Also take that beetle home with you."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	tasks: [{
+		uid: "1bff4a9f",
+		type: "checkmark",
+		title: "Milk that bug",
+		icon: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "beetle_juice",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

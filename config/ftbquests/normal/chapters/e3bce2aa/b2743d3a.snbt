@@ -1,0 +1,15 @@
+{
+	x: 5.0d,
+	y: 5.0d,
+	text: [
+		"Gives Salt and Seaweed Rich Water."
+	],
+	optional: true,
+	tasks: [{
+		uid: "e21670de",
+		type: "item",
+		items: [{
+			item: "harvestcraft:seaweeditem"
+		}]
+	}]
+}

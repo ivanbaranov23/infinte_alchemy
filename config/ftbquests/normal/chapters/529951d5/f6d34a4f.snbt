@@ -1,0 +1,156 @@
+{
+	title: "Nether flora",
+	x: 0.0d,
+	y: 5.0d,
+	text: [
+		"Gather pretty much all types of nether flora. Some of them may come up in random recipes down the line."
+	],
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "a6b1d7cf",
+		type: "item",
+		items: [{
+			item: "betternether:lucis_spore"
+		}]
+	},
+	{
+		uid: "69ac0099",
+		type: "item",
+		items: [{
+			item: "betternether:orange_mushroom"
+		}]
+	},
+	{
+		uid: "91bf9415",
+		type: "item",
+		items: [{
+			item: "betternether:black_apple"
+		}]
+	},
+	{
+		uid: "edd35a31",
+		type: "item",
+		items: [{
+			item: "betternether:ink_bush_seed"
+		}]
+	},
+	{
+		uid: "4b152e8e",
+		type: "item",
+		items: [{
+			item: "betternether:magma_flower"
+		}]
+	},
+	{
+		uid: "dd9ff8f9",
+		type: "item",
+		items: [{
+			item: "betternether:nether_cactus"
+		}]
+	},
+	{
+		uid: "28dbb452",
+		type: "item",
+		items: [{
+			item: "betternether:agave"
+		}]
+	},
+	{
+		uid: "0afd8d67",
+		type: "item",
+		items: [{
+			item: "betternether:barrel_cactus"
+		}]
+	},
+	{
+		uid: "e20c231a",
+		type: "item",
+		items: [{
+			item: "betternether:stalagnate_stem"
+		}]
+	},
+	{
+		uid: "a19a1154",
+		type: "item",
+		items: [{
+			item: "betternether:egg_plant"
+		}]
+	},
+	{
+		uid: "880efd48",
+		type: "item",
+		items: [{
+			item: "betternether:nether_reed"
+		}]
+	},
+	{
+		uid: "343acf50",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:bramble_plant"
+		}]
+	},
+	{
+		uid: "44f7f1bc",
+		type: "item",
+		items: [{
+			item: "betternether:red_mold"
+		}]
+	},
+	{
+		uid: "a4aeb0fe",
+		type: "item",
+		items: [{
+			item: "betternether:bone_mushroom"
+		}]
+	},
+	{
+		uid: "1ac8528a",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:flower_0 1 15"
+		}]
+	},
+	{
+		uid: "a31e7f80",
+		type: "item",
+		items: [{
+			item: "betternether:eye_seed"
+		}]
+	},
+	{
+		uid: "c3a2c37b",
+		type: "item",
+		items: [{
+			item: "natura:nether_thorn_vines"
+		}]
+	},
+	{
+		uid: "dff6dc8d",
+		type: "item",
+		items: [{
+			item: "natura:nether_glowshroom 1 1"
+		}]
+	},
+	{
+		uid: "c3d6d826",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:mushroom 1 3"
+		}]
+	},
+	{
+		uid: "00d251a1",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:mushroom"
+		}]
+	}],
+	rewards: [{
+		uid: "be9070ed",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

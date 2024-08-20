@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"0869a515",
+		"cf457b1f",
+		"5d64dbb3"
+	],
+	tasks: [{
+		uid: "856f64d2",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:crafting 1 18"
+		}]
+	}],
+	rewards: [{
+		uid: "0a770e19",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	title: "Machine Frame 4b",
+	x: -4.0d,
+	y: 1.0d,
+	shape: "rsquare",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "72da4ce9",
+		type: "item",
+		items: [{
+			item: "teslacorelib:machine_case"
+		}]
+	}]
+}

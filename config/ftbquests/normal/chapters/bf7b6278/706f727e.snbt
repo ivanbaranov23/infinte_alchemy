@@ -1,0 +1,54 @@
+{
+	title: "Finally, cheap plates",
+	icon: "immersiveengineering:metal_multiblock",
+	x: 9.0d,
+	y: 0.0d,
+	text: [
+		"JEI will try to show you that you can use a fake mold to get plates at one to one ratio.",
+		"Do not believe THEM. There's no way a plate can be that cheap, THEY are out to get you."
+	],
+	dependencies: [
+		"c9615aeb"
+	],
+	tasks: [{
+		uid: "4bcceb2f",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		}]
+	},
+	{
+		uid: "71f18b29",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "cd6262cd",
+		type: "item",
+		items: [{
+			id: "immersiveengineering:conveyor",
+			tag: {
+				conveyorType: "immersiveengineering:conveyor"
+			}
+		}],
+		count: 2L
+	},
+	{
+		uid: "785164da",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 2L
+	},
+	{
+		uid: "2f0f659f",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 2L
+	}]
+}

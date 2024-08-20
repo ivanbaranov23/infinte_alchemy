@@ -1,0 +1,36 @@
+{
+  "minecraft:cobblestone:0": {
+    "fluid": "lava",
+    "amount": 250
+  },
+  
+  "minecraft:leaves:0":	{
+	"fluid": "water",
+	"amount": 250
+  },
+  
+  "minecraft:leaves:1":	{
+	"fluid": "water",
+	"amount": 250
+  },
+  
+  "minecraft:leaves:2":	{
+	"fluid": "water",
+	"amount": 250
+  },
+  
+  "minecraft:leaves:3":	{
+	"fluid": "water",
+	"amount": 250
+  },
+  
+  "minecraft:leaves2:0":	{
+	"fluid": "water",
+	"amount": 250
+  },
+  
+  "minecraft:leaves2:1":	{
+	"fluid": "water",
+	"amount": 250
+  }
+}

@@ -1,0 +1,16 @@
+{
+	x: 10.0d,
+	y: 2.0d,
+	shape: "square",
+	dependencies: [
+		"73ddb129",
+		"904f496c"
+	],
+	tasks: [{
+		uid: "8dde38cc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:thermal_paste"
+		}]
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: -1.0d,
+	y: -1.0d,
+	tasks: [{
+		uid: "0923eab2",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:mystical_machine_frame"
+		}]
+	}],
+	rewards: [{
+		uid: "9c48e16b",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "e2f2c6e1",
+		type: "item",
+		item: "mysticalagriculture:mystical_machine_frame",
+		count: 4
+	}]
+}

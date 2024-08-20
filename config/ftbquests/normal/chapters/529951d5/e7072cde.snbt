@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: -1.0d,
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "a3f2f730",
+		type: "item",
+		items: [{
+			item: "betternether:cincinnasite"
+		}]
+	}],
+	rewards: [{
+		uid: "e7de4507",
+		type: "item",
+		item: "betternether:cincinnasite_block"
+	}]
+}

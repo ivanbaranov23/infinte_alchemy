@@ -1,0 +1,55 @@
+{
+	icon: "immersiveengineering:metal_multiblock 1 9",
+	x: 11.0d,
+	y: -1.0d,
+	dependencies: [
+		"706f727e"
+	],
+	tasks: [{
+		uid: "9bab21ca",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 16L
+	},
+	{
+		uid: "5d3c2c77",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 9"
+		}],
+		count: 16L
+	},
+	{
+		uid: "967ea964",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 5L
+	},
+	{
+		uid: "66210980",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 2L
+	},
+	{
+		uid: "8464e2a9",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 2L
+	},
+	{
+		uid: "04c428db",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	title: "Machine Frame 0.5",
+	x: 8.0d,
+	y: -2.0d,
+	text: [
+		"All machine frames quests will give a quest coin."
+	],
+	dependencies: [
+		"6f43094e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c347f1a5",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_misc 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "e877a6e1",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

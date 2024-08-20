@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	shape: "square",
+	text: [
+		"Find a pyramid, go to the bottom of it (right click traps to disable them) and fight a pharaoh boss there. You will get a random artifact.",
+		"",
+		"You can turn it into 5 godshards. 4 godshards can be turned into treasure block, which can be broken for a random artifact. The process yields a 1 godshard profit. ",
+		"",
+		"All artifacts have equial chance of dropping from treasure block so the chance of getting specific god godshard is proportional to amount of that god's artifacts."
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "3d6752fc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:atum_godshard"
+		}]
+	}]
+}

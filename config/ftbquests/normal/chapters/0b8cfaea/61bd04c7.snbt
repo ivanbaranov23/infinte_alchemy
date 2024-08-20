@@ -1,0 +1,17 @@
+{
+	x: 3.5d,
+	y: -1.0d,
+	text: [
+		"Make wooden shears to get leaves and cook some stone on a pyre to make juicer. "
+	],
+	dependencies: [
+		"7d70c566"
+	],
+	tasks: [{
+		uid: "88e566b2",
+		type: "item",
+		items: [{
+			item: "roots:fey_crafter"
+		}]
+	}]
+}

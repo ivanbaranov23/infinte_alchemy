@@ -1,0 +1,22 @@
+{
+	x: 8.0d,
+	y: 2.0d,
+	text: [
+		"Put Honey Drip into Honey Liquifer"
+	],
+	dependencies: [
+		"6df37153",
+		"495ac537"
+	],
+	tasks: [{
+		uid: "2029df8a",
+		type: "checkmark",
+		title: "Honey",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "honey"
+			}
+		}
+	}]
+}

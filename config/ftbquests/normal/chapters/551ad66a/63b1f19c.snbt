@@ -1,0 +1,20 @@
+{
+	x: 11.0d,
+	y: 2.0d,
+	dependencies: [
+		"cb68303e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "240a14a4",
+		type: "item",
+		items: [{
+			item: "bhc:red_heart_canister"
+		}]
+	}],
+	rewards: [{
+		uid: "cf70cd15",
+		type: "item",
+		item: "bhc:red_heart_canister"
+	}]
+}

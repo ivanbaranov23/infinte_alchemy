@@ -1,0 +1,19 @@
+{
+	x: 17.5d,
+	y: 4.0d,
+	dependencies: [
+		"3f338c31"
+	],
+	tasks: [{
+		uid: "c8a89c90",
+		type: "item",
+		items: [{
+			item: "contenttweaker:crystal_metal_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "27f159cc",
+		type: "item",
+		item: "contenttweaker:crystal_metal_block"
+	}]
+}

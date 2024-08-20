@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: -2.0d,
+	dependencies: [
+		"4d87efef"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1697b23b",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_giant_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "5516a8c6",
+		type: "item",
+		item: "actuallyadditions:block_giant_chest"
+	}]
+}

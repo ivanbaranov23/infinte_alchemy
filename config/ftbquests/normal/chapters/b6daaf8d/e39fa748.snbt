@@ -1,0 +1,26 @@
+{
+	title: "Welcome to Aether",
+	icon: {
+		id: "aether_legacy:aether_portal_frame",
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {
+				AS_Amulet_HolderLeast: -5658007986434875901L,
+				AS_Amulet_HolderMost: -7773060121311102705L
+			}
+		}
+	},
+	x: -2.0d,
+	y: 0.0d,
+	text: [
+		"I hope you have jetpack or some other way to fly between islands."
+	],
+	dependencies: [
+		"9103a2e6"
+	],
+	tasks: [{
+		uid: "57de31af",
+		type: "dimension",
+		icon: "aether_legacy:aether_grass",
+		dim: 4
+	}]
+}

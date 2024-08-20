@@ -1,0 +1,18 @@
+{
+	x: -1.0d,
+	y: 1.0d,
+	text: [
+		"TiC material. Gives 2x damage to non stone enemies and deals no damage to stone ones. "
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	optional: true,
+	tasks: [{
+		uid: "10f62e17",
+		type: "item",
+		items: [{
+			item: "atum:khnumite"
+		}]
+	}]
+}

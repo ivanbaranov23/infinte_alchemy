@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 4.0d,
+	dependencies: [
+		"7ff2e0b3"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a026eb05",
+		type: "item",
+		items: [{
+			item: "contenttweaker:explosion_resistant_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "454f4fc0",
+		type: "item",
+		item: "contenttweaker:explosion_resistant_block"
+	}]
+}

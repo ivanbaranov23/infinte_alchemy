@@ -1,0 +1,26 @@
+{
+	title: "Life Essence",
+	icon: "contenttweaker:life",
+	x: -2.5d,
+	y: 3.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"756f90cd"
+	],
+	tasks: [{
+		uid: "4cb3d50b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "e52c8ecc",
+		type: "item",
+		item: "contenttweaker:life",
+		count: 4
+	}]
+}

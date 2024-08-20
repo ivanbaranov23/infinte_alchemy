@@ -1,0 +1,19 @@
+{
+	x: 8.0d,
+	y: -0.5d,
+	dependencies: [
+		"a4eba8ca"
+	],
+	tasks: [{
+		uid: "67357bc0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:living_steel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "46131f7b",
+		type: "item",
+		item: "contenttweaker:living_steel_block"
+	}]
+}

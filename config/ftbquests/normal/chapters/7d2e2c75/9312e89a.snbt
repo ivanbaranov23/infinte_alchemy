@@ -1,0 +1,20 @@
+{
+	x: 18.0d,
+	y: 1.0d,
+	dependencies: [
+		"03cc85bf"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d9e5ac5a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tignalum_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "ee9d01ae",
+		type: "item",
+		item: "contenttweaker:tignalum_block"
+	}]
+}

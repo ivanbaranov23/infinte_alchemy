@@ -1,0 +1,26 @@
+{
+	x: 7.5d,
+	y: 3.0d,
+	text: [
+		"Diesel can be burned at diesel generated for 4096 rf/tick. Lubricant can be used to speed up excavators and pumpjacks and for a large sifter."
+	],
+	dependencies: [
+		"0120a191"
+	],
+	optional: true,
+	tasks: [{
+		uid: "83745893",
+		type: "checkmark",
+		title: "Diesel, lubricant",
+		icon: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "oil",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

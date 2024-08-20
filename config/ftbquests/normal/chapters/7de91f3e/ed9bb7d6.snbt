@@ -1,0 +1,23 @@
+{
+	x: 29.5d,
+	y: 8.0d,
+	shape: "square",
+	dependencies: [
+		"a8322626"
+	],
+	tasks: [{
+		uid: "2755d6fb",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "puredaisy"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "b1f09a03",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

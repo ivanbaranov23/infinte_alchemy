@@ -1,0 +1,25 @@
+{
+	x: -4.0d,
+	y: -4.0d,
+	text: [
+		"[Expedition] is the recipe you see in JEI. ",
+		"For each [Expedition] you need following items:",
+		"",
+		"1) Teleportation Core",
+		"",
+		"2) N-seated [Transporter]",
+		"",
+		"3) N [Mission]s",
+		"",
+		"4) 25MJ of Mekanism Laser"
+	],
+	dependencies: [
+		"9e3c5f9d"
+	],
+	tasks: [{
+		uid: "bde792b0",
+		type: "checkmark",
+		title: "Expedition",
+		icon: "mekanism:teleportationcore"
+	}]
+}

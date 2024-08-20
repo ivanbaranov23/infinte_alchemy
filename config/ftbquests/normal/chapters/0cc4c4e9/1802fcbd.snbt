@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"d268dd91"
+	],
+	tasks: [{
+		uid: "b87ba863",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ender_bacteria"
+		}]
+	}]
+}

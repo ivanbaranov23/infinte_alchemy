@@ -1,0 +1,14 @@
+{
+	x: 3.5d,
+	y: 1.0d,
+	dependencies: [
+		"34300815"
+	],
+	tasks: [{
+		uid: "a56d7fb2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:star_alloy_ingot"
+		}]
+	}]
+}

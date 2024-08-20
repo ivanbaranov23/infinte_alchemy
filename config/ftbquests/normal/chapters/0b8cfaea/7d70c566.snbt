@@ -1,0 +1,30 @@
+{
+	icon: "roots:mortar",
+	x: 1.5d,
+	y: -1.0d,
+	text: [
+		"Make some charcoal in the pyre and craft a mortar"
+	],
+	dependencies: [
+		"f7f27a64"
+	],
+	tasks: [{
+		uid: "f2f5511b",
+		type: "item",
+		items: [{
+			item: "roots:mortar"
+		}]
+	},
+	{
+		uid: "a70459e5",
+		type: "item",
+		items: [{
+			id: "roots:pestle",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

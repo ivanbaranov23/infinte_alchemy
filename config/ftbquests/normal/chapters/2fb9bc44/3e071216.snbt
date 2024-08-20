@@ -1,0 +1,22 @@
+{
+	x: 0.5d,
+	y: 1.0d,
+	text: [
+		"Put on top of lava source."
+	],
+	dependencies: [
+		"d9309953"
+	],
+	tasks: [{
+		uid: "dde4b9d3",
+		type: "item",
+		items: [{
+			item: "prodigytech:magmatic_aeroheater"
+		}]
+	}],
+	rewards: [{
+		uid: "b7fbb42b",
+		type: "item",
+		item: "prodigytech:magmatic_aeroheater"
+	}]
+}

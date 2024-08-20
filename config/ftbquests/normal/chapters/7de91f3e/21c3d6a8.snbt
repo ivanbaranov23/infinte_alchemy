@@ -1,0 +1,14 @@
+{
+	x: 7.0d,
+	y: -0.5d,
+	dependencies: [
+		"a4eba8ca"
+	],
+	tasks: [{
+		uid: "a32004e2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electricium"
+		}]
+	}]
+}

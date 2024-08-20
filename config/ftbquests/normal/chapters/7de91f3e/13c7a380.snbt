@@ -1,0 +1,29 @@
+{
+	icon: "contenttweaker:flesh_bits",
+	x: 10.0d,
+	y: -6.5d,
+	text: [
+		"\"Carnexan\" - A combination of \"carneo\" and \"exos\" (Greek for \"outer\"), to create a name that means \"exterior of meat\" or \"external flesh\"",
+		"(c) Character.AI chatbot ",
+		"",
+		"Carnexan requires a lot of evil ingots so consider making them via Evil Nitrate."
+	],
+	dependencies: [
+		"4b15cba0"
+	],
+	tasks: [{
+		uid: "99bcef30",
+		type: "item",
+		icon: "contenttweaker:flesh_bits",
+		items: [{
+			item: "contenttweaker:flesh_bits"
+		}]
+	},
+	{
+		uid: "505ec0a2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:flesh_piece"
+		}]
+	}]
+}

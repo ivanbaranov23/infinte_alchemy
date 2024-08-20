@@ -1,0 +1,22 @@
+{
+	title: "DWC step 2",
+	x: 8.0d,
+	y: 13.0d,
+	text: [
+		"Put a Master Ritual Stone under the Demon Crystallizer and assemble ritual \"Resonance of the Faceted Crystal\".",
+		"Activate the ritual and when the cluster grow 5+crystals it will split into the other 4 types of crystal clusters.",
+		"",
+		"Non raw will crystal clusters will grow by absorbing 50 of the corresponding will type or 100 of raw will."
+	],
+	tasks: [{
+		uid: "a37324cd",
+		type: "checkmark",
+		title: "Ritual",
+		icon: {
+			id: "bloodmagic:ritual_diviner",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

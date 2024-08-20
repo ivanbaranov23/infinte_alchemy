@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "67ffcd94",
+		type: "item",
+		items: [{
+			item: "taiga:palladium_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "53cd37f0",
+		type: "item",
+		item: "taiga:palladium_block"
+	}]
+}

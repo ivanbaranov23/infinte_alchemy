@@ -1,0 +1,27 @@
+{
+	x: 13.0d,
+	y: 1.0d,
+	text: [
+		"and the gas also"
+	],
+	dependencies: [
+		"3e7764bb"
+	],
+	tasks: [{
+		uid: "ec9a792b",
+		type: "checkmark",
+		title: "Brine (the fluid)",
+		icon: {
+			id: "aeadditions:pattern.fluid",
+			tag: {
+				Fluid: {
+					FluidName: "brine",
+					Amount: 1000
+				}
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

@@ -1,0 +1,48 @@
+{
+	title: "Erebus portal",
+	icon: "erebus:gaean_keystone",
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"Build a portal out of stone bricks, fill it with leaves and put a keystone nearby. Insert staff of gaea in it and the portal will open.",
+		"",
+		"Make your preporation and enter the portal. You'll need another staff to open portal from the other side."
+	],
+	dependencies: [
+		"ad2605f5"
+	],
+	tasks: [{
+		uid: "58d9abf5",
+		type: "item",
+		items: [{
+			item: "erebus:gaean_keystone"
+		}]
+	},
+	{
+		uid: "2b16cda2",
+		type: "item",
+		items: [{
+			id: "erebus:portal_activator",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "22e344f5",
+		type: "item",
+		item: {
+			id: "erebus:portal_activator",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "e4a89ad3",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

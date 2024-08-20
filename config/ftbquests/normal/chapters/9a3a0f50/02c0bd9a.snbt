@@ -1,0 +1,15 @@
+{
+	x: 5.0d,
+	y: 10.0d,
+	dependencies: [
+		"0407b16d",
+		"716461df"
+	],
+	tasks: [{
+		uid: "d1352107",
+		type: "item",
+		items: [{
+			item: "contenttweaker:living_processor"
+		}]
+	}]
+}

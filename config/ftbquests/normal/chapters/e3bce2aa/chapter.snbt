@@ -1,0 +1,7 @@
+{
+	title: "ch 5: Cooking with Thermal Expansion",
+	icon: "contenttweaker:thermal_ingot",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

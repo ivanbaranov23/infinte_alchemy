@@ -1,0 +1,77 @@
+{
+	icon: "modularcontroller:large_sifter_controller",
+	x: 13.0d,
+	y: 3.0d,
+	text: [
+		"This multiblock will sieve 16 items at a time using a bit of lubricant. It gives a 1.2 times modifier for drops and can use meshes above diamond."
+	],
+	dependencies: [
+		"3e4610f4"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1d29fb08",
+		type: "item",
+		items: [{
+			item: "modularcontroller:large_sifter_controller"
+		}]
+	},
+	{
+		uid: "5752555d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:storage_slab 1 2"
+		}],
+		count: 12L
+	},
+	{
+		uid: "4aa150b5",
+		type: "item",
+		items: [{
+			item: "chisel:ironpane 1 12"
+		}],
+		count: 18L
+	},
+	{
+		uid: "18ae2cc8",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 1 3"
+		}],
+		count: 6L
+	},
+	{
+		uid: "479010a2",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:glass_alloy 1 7"
+		}],
+		count: 18L
+	},
+	{
+		uid: "d976ea8e",
+		type: "item",
+		items: [{
+			item: "chisel:technical 1 13"
+		}],
+		count: 18L
+	},
+	{
+		uid: "3ffabb8b",
+		type: "checkmark",
+		title: "11 casings/hatches"
+	}],
+	rewards: [{
+		uid: "8a4788c1",
+		type: "item",
+		item: {
+			id: "openblocks:tank",
+			tag: {
+				tank: {
+					FluidName: "lubricant",
+					Amount: 16000
+				}
+			}
+		}
+	}]
+}

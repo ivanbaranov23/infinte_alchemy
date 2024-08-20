@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 2.0d,
+	text: [
+		"Hopping bonsai is a 1 block, 0 rf, no input, free tree farm with an auto void overflow function. Quite powerful. ",
+		"",
+		"Make one, put it on a locked drawer and it'll solve all your wood problems."
+	],
+	dependencies: [
+		"6f43094e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "84e3982d",
+		type: "item",
+		items: [{
+			item: "bonsaitrees:bonsaipot 1 1"
+		}]
+	}]
+}

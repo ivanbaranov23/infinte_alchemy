@@ -1,0 +1,55 @@
+{
+	title: "ME Presses",
+	x: 1.0d,
+	y: -1.0d,
+	text: [
+		"Generates in pharaoh tombs and girafi tombs.",
+		"",
+		"Can also be bought from shop."
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "01d386bd",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 14"
+		}]
+	},
+	{
+		uid: "205849f7",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 13"
+		}]
+	},
+	{
+		uid: "bbbf9371",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 15"
+		}]
+	},
+	{
+		uid: "d9a66031",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 19"
+		}]
+	},
+	{
+		uid: "cd78fb00",
+		type: "item",
+		items: [{
+			item: "contenttweaker:press_fluid"
+		}]
+	},
+	{
+		uid: "1121cb00",
+		type: "item",
+		items: [{
+			item: "contenttweaker:press_gas"
+		}]
+	}]
+}

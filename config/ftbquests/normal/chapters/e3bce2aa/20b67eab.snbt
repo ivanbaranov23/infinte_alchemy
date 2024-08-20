@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: -4.0d,
+	text: [
+		"cocoa powder -> liquid chocolate -> meh chocolate -> chocolate"
+	],
+	dependencies: [
+		"7d6a11c2"
+	],
+	tasks: [{
+		uid: "c0999daa",
+		type: "item",
+		items: [{
+			item: "harvestcraft:chocolatebaritem"
+		}]
+	}]
+}

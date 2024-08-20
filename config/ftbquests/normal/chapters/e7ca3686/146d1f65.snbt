@@ -1,0 +1,19 @@
+{
+	title: "B A L L S",
+	x: -2.0d,
+	y: 3.0d,
+	text: [
+		"Many crushing recipes (especially the ones in SAG mill only) benefit greatly from grinding balls."
+	],
+	dependencies: [
+		"76300e8f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d9d9a3c3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:porous_dust"
+		}]
+	}]
+}

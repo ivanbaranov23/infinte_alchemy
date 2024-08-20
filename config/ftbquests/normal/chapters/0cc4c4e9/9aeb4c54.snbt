@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -5.0d,
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "872aa4ee",
+		type: "item",
+		items: [{
+			item: "taiga:abyssum_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "68fdf1fa",
+		type: "item",
+		item: "taiga:abyssum_block"
+	}]
+}

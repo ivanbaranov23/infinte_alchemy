@@ -1,0 +1,51 @@
+{
+    "machine": "will_machine",
+    "registryName": "will_machine_destructive_demon_alloy",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1000
+        },
+        {
+            "type": "will",
+            "io-type": "input",
+            "willtype": "destructive",
+            "willamount": 50
+        },
+        
+        
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bloodmagic:slate@3",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:glass_fiber@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "enderio:item_material@14",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "taiga:violium_block@0",
+            "amount": 1
+        },
+
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "bloodmagic:demon_extras@12",
+            "amount": 1
+        }
+    ]
+}

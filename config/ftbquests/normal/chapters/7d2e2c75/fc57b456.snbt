@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: 2.0d,
+	dependencies: [
+		"b23b08db"
+	],
+	tasks: [{
+		uid: "aa50205c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:advanced_circuit_plate"
+		}]
+	}]
+}

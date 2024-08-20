@@ -1,0 +1,19 @@
+{
+	icon: {
+		id: "roots:spell_icon",
+		tag: {
+			spell_storage: {
+				s: "roots:spell_chrysopoeia"
+			}
+		}
+	},
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"b2974413"
+	],
+	tasks: [{
+		uid: "73504a0d",
+		type: "checkmark"
+	}]
+}

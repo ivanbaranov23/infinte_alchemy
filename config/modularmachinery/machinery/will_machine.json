@@ -1,0 +1,239 @@
+{
+    "registryname": "will_machine",
+    "localizedname": "Advanced Will Manupulator",
+    "color": "c2f4e9",
+    "parts": [
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0",
+                "modularmagic:blocklifeessenceprovideroutput@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0",
+                "modularmagic:blocklifeessenceprovideroutput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "integratedterminals:menril_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "integratedterminals:menril_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0",
+                "modularmagic:blocklifeessenceprovideroutput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0",
+                "modularmagic:blocklifeessenceprovideroutput@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0",
+                "modularmagic:blocklifeessenceprovideroutput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0",
+                "modularmagic:blocklifeessenceprovideroutput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0",
+                "modularmagic:blocklifeessenceprovideroutput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0",
+                "modularmagic:blocklifeessenceprovideroutput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "aether_legacy:aerogel_wall@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "aether_legacy:aerogel_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "modularmagic:blockwillproviderinput@0",
+                "modularmagic:blockwillprovideroutput@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "bloodmagic:demon_extras@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "aether_legacy:aerogel_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "aether_legacy:aerogel_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "integratedterminals:menril_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "integratedterminals:menril_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "aether_legacy:aerogel_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "bloodmagic:demon_extras@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@10"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "integratedterminals:menril_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "integratedterminals:menril_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@10"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "integratedterminals:menril_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "integratedterminals:menril_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "aether_legacy:aerogel_wall@0"
+            ]
+        }
+    ]}

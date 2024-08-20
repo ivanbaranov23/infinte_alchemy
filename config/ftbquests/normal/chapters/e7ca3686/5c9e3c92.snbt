@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: -6.0d,
+	dependencies: [
+		"e9c0fd86"
+	],
+	optional: true,
+	tasks: [{
+		uid: "17472001",
+		type: "item",
+		items: [{
+			item: "enderio:block_impulse_hopper"
+		}]
+	}]
+}

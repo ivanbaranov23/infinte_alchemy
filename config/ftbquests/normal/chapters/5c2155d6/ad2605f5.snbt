@@ -1,0 +1,16 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	shape: "square",
+	tasks: [{
+		uid: "383e8aae",
+		type: "checkmark",
+		title: "Erebus chapter",
+		icon: {
+			id: "erebus:portal_activator",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	text: [
+		"Drops from glowworm. ",
+		"Glowworms can be summoned via roots."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8a8d0a05",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 12"
+		}]
+	}]
+}

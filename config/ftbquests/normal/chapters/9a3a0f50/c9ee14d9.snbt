@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 4.0d,
+	dependencies: [
+		"d512ca83"
+	],
+	tasks: [{
+		uid: "d3618f4c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fluid_processor"
+		}]
+	}]
+}

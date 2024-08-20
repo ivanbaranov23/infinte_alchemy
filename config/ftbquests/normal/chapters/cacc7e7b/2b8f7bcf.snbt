@@ -1,0 +1,24 @@
+{
+	title: "Spooky Action at a Distance",
+	icon: "enderstorage:ender_storage",
+	x: 5.5d,
+	y: 4.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "662787e1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "dfef755b",
+		type: "item",
+		item: "enderstorage:ender_storage",
+		count: 4
+	}]
+}

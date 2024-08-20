@@ -1,0 +1,33 @@
+{
+	x: 5.0d,
+	y: 1.0d,
+	text: [
+		"Erebus provides a wide range of highly detailed insects for you to play with."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fb1b9238",
+		type: "checkmark",
+		title: "Erebus Fauna",
+		icon: "erebus:materials 1 9"
+	}],
+	rewards: [{
+		uid: "ce4ac147",
+		type: "item",
+		item: {
+			id: "minecraft:spawn_egg",
+			tag: {
+				RepairCost: 1,
+				display: {
+					Name: "Friend"
+				},
+				EntityTag: {
+					id: "erebus:erebus.locust"
+				}
+			}
+		}
+	}]
+}

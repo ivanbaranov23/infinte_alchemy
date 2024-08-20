@@ -1,0 +1,55 @@
+{
+    "populate": {
+        "aether_ship_test": {
+			"enabled": "true",
+			"distribution": "uniform",
+			
+            "generator": {
+                "type": "structure",
+                "structure": "structure/ship_test.nbt",
+				
+				"cluster-size": 1
+			},
+
+			"cluster-count": 1,
+            "chunk-chance": 25,
+			"min-height": 10,
+			"max-height": 175,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					4
+				]
+			}
+		},
+
+        "aether_treated_ship_test": {
+			"enabled": "true",
+			"distribution": "uniform",
+			
+            "generator": {
+                "type": "structure",
+                "structure": "structure/aether_treated_ship.nbt",
+				
+				"cluster-size": 1
+			},
+
+			"cluster-count": 1,
+            "chunk-chance": 125,
+			"min-height": 10,
+			"max-height": 175,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					4
+				]
+			}
+		}
+
+        
+    }
+}

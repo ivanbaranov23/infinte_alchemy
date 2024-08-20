@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	text: [
+		"Find or craft some Ophidian Tongue vines. They will grow like normal vines but will also produce poisonous flowers. The flowers can be used in some recipes."
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9310270d",
+		type: "item",
+		items: [{
+			item: "atum:ophidian_tongue"
+		}]
+	}]
+}

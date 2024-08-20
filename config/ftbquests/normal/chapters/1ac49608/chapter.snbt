@@ -1,0 +1,7 @@
+{
+	title: "ch 9: Extended Crafting",
+	icon: "extendedcrafting:material 1 36",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

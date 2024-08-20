@@ -1,0 +1,17 @@
+{
+  "ctm": {
+    "ctm_version": 1,
+    "type": "ctm",
+    "layer": "CUTOUT",
+    "textures": [
+        "contenttweaker:blocks/parts/eye_side-ctm"
+    ],
+    "extra": {
+      "connect_to": [
+        { "block": "contenttweaker:eye_corner" },
+        { "block": "contenttweaker:eye_side" },
+        { "block": "contenttweaker:eye_center" }
+      ]
+    }
+  }
+}

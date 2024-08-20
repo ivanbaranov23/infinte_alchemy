@@ -1,0 +1,42 @@
+{
+	x: -4.0d,
+	y: -2.0d,
+	dependencies: [
+		"ed841e3a"
+	],
+	tasks: [{
+		uid: "9cb2c640",
+		type: "item",
+		items: [{
+			item: "roots:moonglow_leaf"
+		}]
+	},
+	{
+		uid: "884eca97",
+		type: "item",
+		items: [{
+			item: "roots:pereskia"
+		}]
+	},
+	{
+		uid: "bb3d175b",
+		type: "item",
+		items: [{
+			item: "roots:spirit_herb"
+		}]
+	},
+	{
+		uid: "937d0fa2",
+		type: "item",
+		items: [{
+			item: "roots:wildewheet"
+		}]
+	},
+	{
+		uid: "b80707c5",
+		type: "item",
+		items: [{
+			item: "roots:wildroot"
+		}]
+	}]
+}

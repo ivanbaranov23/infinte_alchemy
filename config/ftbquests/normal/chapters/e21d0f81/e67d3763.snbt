@@ -1,0 +1,22 @@
+{
+	title: "Welcome to Atum",
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"It's a big desert."
+	],
+	dependencies: [
+		"ed57385f"
+	],
+	tasks: [{
+		uid: "531203b7",
+		type: "dimension",
+		icon: "atum:limestone",
+		dim: 17
+	}],
+	rewards: [{
+		uid: "a660b811",
+		type: "custom",
+		auto: "no_toast"
+	}]
+}

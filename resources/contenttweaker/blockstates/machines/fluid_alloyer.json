@@ -1,0 +1,32 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+      "model": "contenttweaker:machine",
+      "textures": {
+        "0": "plustic:blocks/osgloglasblock",
+        "north": "contenttweaker:blocks/fluid_alloyer_active",
+        "east": "contenttweaker:blocks/machines/machine_vent",
+        "south": "contenttweaker:blocks/machines/machine_vent",
+        "west": "contenttweaker:blocks/machines/machine_vent",
+
+        "up": "contenttweaker:blocks/machines/machine_hatch_blue",
+        "down": "contenttweaker:blocks/machines/machine_hatch_blue",
+
+        "particle": "contenttweaker:blocks/coppra_block"
+      }
+    },
+    "variants":{
+      "normal":[{}],
+      "inventory":[{}],
+      "facing": {
+            "north": { },
+            "south": {  "y": 180 },
+            "west":  {  "y": 270 },
+            "east":  {  "y": 90 }
+        },
+      "active": {
+        "true": {},
+        "false": {}
+      }
+    }
+  }

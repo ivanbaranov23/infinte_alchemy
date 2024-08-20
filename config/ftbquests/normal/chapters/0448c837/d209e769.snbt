@@ -1,0 +1,19 @@
+{
+	x: 8.0d,
+	y: 1.0d,
+	dependencies: [
+		"8fdc53bd"
+	],
+	tasks: [{
+		uid: "7b8515c8",
+		type: "item",
+		items: [{
+			item: "quantumflux:craftingpiece"
+		}]
+	}],
+	rewards: [{
+		uid: "810ebcd4",
+		type: "item",
+		item: "quantumflux:craftingpiece"
+	}]
+}

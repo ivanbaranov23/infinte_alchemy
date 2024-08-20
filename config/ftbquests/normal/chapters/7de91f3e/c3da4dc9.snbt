@@ -1,0 +1,17 @@
+{
+	x: 9.0d,
+	y: -2.5d,
+	text: [
+		"Mobs will drop this when killed with Bound Blade. Can be automated with Killer Joe and a spawner or mob duplicator."
+	],
+	dependencies: [
+		"784880bd"
+	],
+	tasks: [{
+		uid: "8b5ab49f",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_shard"
+		}]
+	}]
+}

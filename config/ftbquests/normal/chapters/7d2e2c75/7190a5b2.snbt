@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: 1.0d,
+	dependencies: [
+		"0d70f504",
+		"f643621d"
+	],
+	tasks: [{
+		uid: "1da4a7a7",
+		type: "item",
+		items: [{
+			item: "plustic:osgloglasingot"
+		}]
+	}],
+	rewards: [{
+		uid: "932e4ad6",
+		type: "item",
+		item: "plustic:osgloglasblock"
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	text: [
+		"Consider getting the following equipment before entering:",
+		"",
+		"1) new armor, tools and weapons.",
+		"2) silk touch pickaxe. (use silky jewel)",
+		"3) nature's compass.",
+		"4) satchel or other backpack.",
+		"5) golden lasso or soul vials from shop. (you'll need to take some bugs home)",
+		"6) a bucket with some tanks. (there are some fluids to collect)"
+	],
+	dependencies: [
+		"ad2605f5"
+	],
+	tasks: [{
+		uid: "2cefcc81",
+		type: "checkmark",
+		title: "Erebus prep",
+		icon: {
+			id: "thermalexpansion:satchel",
+			Damage: 4s,
+			tag: {
+				Accessible: 1b
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

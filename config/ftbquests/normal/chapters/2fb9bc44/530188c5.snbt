@@ -1,0 +1,14 @@
+{
+	x: 5.5d,
+	y: 5.0d,
+	dependencies: [
+		"f8152e75"
+	],
+	tasks: [{
+		uid: "06a262fe",
+		type: "item",
+		items: [{
+			item: "prodigytech:circuit_plate"
+		}]
+	}]
+}

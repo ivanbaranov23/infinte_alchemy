@@ -1,0 +1,14 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "contenttweaker:items/parts/star_glow32",
+    "layer1": "contenttweaker:items/star_alloy_gear"
+  },
+  "display": {
+    "gui": {
+      "rotation": [ 0, 0, 0 ],
+      "translation": [ 0, 0, 0],
+      "scale":[ 2.0, 2.0, 2.0 ]
+    }
+  }
+}

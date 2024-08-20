@@ -1,0 +1,34 @@
+{
+	title: "64 Will",
+	x: -2.0d,
+	y: -5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"298fbc4e"
+	],
+	tasks: [{
+		uid: "8038f42e",
+		type: "item",
+		items: [{
+			id: "bloodmagic:soul_gem",
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0a6c078a",
+		type: "item",
+		item: {
+			id: "bloodmagic:soul_gem",
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: -1.0d,
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "62a1cb2e",
+		type: "item",
+		items: [{
+			item: "quark:biotite"
+		}]
+	}],
+	rewards: [{
+		uid: "29ec588f",
+		type: "item",
+		item: "quark:biotite_block"
+	}]
+}

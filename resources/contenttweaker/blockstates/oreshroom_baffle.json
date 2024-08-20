@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "bot": "roots:blocks/baffle_cap_huge_top",
+      "top": "contenttweaker:blocks/parts/stone_overlay",
+      "particle": "roots:blocks/baffle_cap_huge_top"
+    },
+    "model": "chisel:cube_2_layer_topshaded",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

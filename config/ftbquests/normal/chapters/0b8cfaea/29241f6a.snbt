@@ -1,0 +1,18 @@
+{
+	x: -0.5d,
+	y: -7.0d,
+	text: [
+		"Heat sand is a great heat source for the crucible. "
+	],
+	dependencies: [
+		"bf75f796"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3f5127d5",
+		type: "item",
+		items: [{
+			item: "natura:nether_heat_sand"
+		}]
+	}]
+}

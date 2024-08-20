@@ -1,0 +1,18 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	text: [
+		"A good material for TiC bows"
+	],
+	dependencies: [
+		"6fb999ac"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ce9fa941",
+		type: "item",
+		items: [{
+			item: "contenttweaker:wormweave"
+		}]
+	}]
+}

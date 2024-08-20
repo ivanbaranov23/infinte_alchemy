@@ -1,0 +1,28 @@
+{
+	x: -3.0d,
+	y: 1.0d,
+	text: [
+		"Scholars debate what the name \"Gambrosium\" mean. ",
+		"Some say it means \"Great ambrosium\" or \"Good ambrosium\". ",
+		"Others say it means \"Galvanized ambrosium\". ",
+		"I even heard some lunatic say it just means \"Green ambrosium\". ",
+		"",
+		"We might truly never know what G really stands for."
+	],
+	dependencies: [
+		"44c3b499"
+	],
+	tasks: [{
+		uid: "2d704f48",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gambrosium_dust"
+		}]
+	}],
+	rewards: [{
+		uid: "0638f395",
+		type: "item",
+		item: "contenttweaker:gambrosium_dust",
+		count: 9
+	}]
+}

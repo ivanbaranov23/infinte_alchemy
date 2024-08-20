@@ -1,0 +1,18 @@
+{
+	x: 9.0d,
+	y: -8.0d,
+	dependencies: [
+		"872ad3ae"
+	],
+	tasks: [{
+		uid: "ee46b526",
+		type: "checkmark",
+		title: "Cold Nitrogen",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "cold_nitrogen"
+			}
+		}
+	}]
+}

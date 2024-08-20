@@ -1,0 +1,48 @@
+{
+	title: "Basic metals",
+	icon: "minecraft:iron_ingot",
+	x: -5.0d,
+	y: 0.0d,
+	shape: "square",
+	text: [
+		"Smelt some metal ingots.",
+		"",
+		"Also all metal/gem/metal-like materials quest will give a block of that material as a reward"
+	],
+	tasks: [{
+		uid: "215c45bf",
+		type: "item",
+		items: [{
+			item: "minecraft:iron_ingot"
+		}]
+	},
+	{
+		uid: "6cd4540b",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 128"
+		}]
+	},
+	{
+		uid: "4ab90de7",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 129"
+		}]
+	}],
+	rewards: [{
+		uid: "cba00b8b",
+		type: "item",
+		item: "minecraft:iron_block"
+	},
+	{
+		uid: "ffe165a8",
+		type: "item",
+		item: "thermalfoundation:storage"
+	},
+	{
+		uid: "73265384",
+		type: "item",
+		item: "thermalfoundation:storage 1 1"
+	}]
+}

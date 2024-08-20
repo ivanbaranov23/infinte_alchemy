@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"ddccb601"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f30b7a8f",
+		type: "item",
+		items: [{
+			item: "alchemistry:evaporator"
+		}]
+	}]
+}

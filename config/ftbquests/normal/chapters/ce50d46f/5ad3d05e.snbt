@@ -1,0 +1,23 @@
+{
+	x: 10.5d,
+	y: 8.0d,
+	text: [
+		"Put a Satellite and a Satellite Chip into Launch Pad. Satellite will be launched and chip will be linked to that satellite. ",
+		"Put linked chip into controller and select \"Add Satellite\" option to add that Satellite to the computer."
+	],
+	dependencies: [
+		"9fe73973"
+	],
+	tasks: [{
+		uid: "c848ec9f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:satellite1"
+		}]
+	}],
+	rewards: [{
+		uid: "13ef24f0",
+		type: "item",
+		item: "contenttweaker:satellite1"
+	}]
+}

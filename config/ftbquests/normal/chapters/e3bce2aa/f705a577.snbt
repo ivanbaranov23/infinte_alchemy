@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	tasks: [{
+		uid: "78d0ae86",
+		type: "item",
+		items: [{
+			item: "contenttweaker:thermal_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "b2ecee66",
+		type: "item",
+		item: "contenttweaker:thermal_block"
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -1.0d,
+	y: 1.0d,
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "ba4fb137",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:crystal_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "c41192d8",
+		type: "item",
+		item: "biomesoplenty:crystal"
+	}]
+}

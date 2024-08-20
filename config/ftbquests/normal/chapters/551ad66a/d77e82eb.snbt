@@ -1,0 +1,23 @@
+{
+	x: -3.0d,
+	y: 2.0d,
+	shape: "diamond",
+	dependencies: [
+		"941b6c91"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6063bc74",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 163"
+		}],
+		count: 64L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "fd58a8bd",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

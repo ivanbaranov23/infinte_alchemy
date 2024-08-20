@@ -1,0 +1,29 @@
+{
+	x: -1.5d,
+	y: 1.0d,
+	shape: "square",
+	text: [
+		"Short version:",
+		"Shift click 16+ aluminum, 4+ fireclay, 5 gunpowder, 4 sand. Apply redstone signal to activate.",
+		"",
+		"Long version: ",
+		"To craft you need dumpned EP. JEI will tell you how much EP is needed, generated or dumpened by what item/recipe. ",
+		"You generally want required, generated and dumpened EP to be the same. You can put more aluminum and fireclay then needed but keep explosive and dumpener exact.",
+		"You can multiply the ratio above and for example put 64+ aluminum, 16+ fireclay, 20 gunpowder and 16 sand.",
+		"You can use any explosives and dumpeners. 16+ alumnum, 4+ fireclay, 1 energion and 48 ash will also work.",
+		"",
+		"Consult prodigy book for more info."
+	],
+	tasks: [{
+		uid: "50ce37c4",
+		type: "item",
+		items: [{
+			item: "prodigytech:ferramic_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "9c78dbda",
+		type: "item",
+		item: "prodigytech:ferramic_block"
+	}]
+}

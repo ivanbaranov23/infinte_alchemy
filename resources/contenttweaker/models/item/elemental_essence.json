@@ -1,0 +1,16 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "contenttweaker:items/parts/ee_bg",
+    "layer1": "contenttweaker:items/parts/ee_mg",
+    "layer2": "contenttweaker:items/parts/ee_fg",
+    "layer3": "contenttweaker:items/parts/ee"
+  },
+  "display": {
+    "gui": {
+      "rotation": [ 0, 0, 45 ],
+      "translation": [ 0.5, 0.5, 0],
+      "scale":[ 1.75, 1.75, 1.75 ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+	title: "Tier VI",
+	x: 16.5d,
+	y: 4.0d,
+	shape: "square",
+	text: [
+		"76 runes"
+	],
+	dependencies: [
+		"e997e1c0",
+		"6856e129"
+	],
+	tasks: [{
+		uid: "7b83ac38",
+		type: "item",
+		items: [{
+			item: "bloodmagic:decorative_brick 1 2"
+		}],
+		count: 4L
+	}],
+	rewards: [{
+		uid: "1422ae7b",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "292956e1",
+		type: "item",
+		item: "contenttweaker:blood_shard4"
+	}]
+}

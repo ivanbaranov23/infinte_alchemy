@@ -1,0 +1,34 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	text: [
+		"Lemon sapling can be bought from the Market or made from Plant Sample.",
+		"",
+		"Lemon Juice is used in some recipes like cheese."
+	],
+	dependencies: [
+		"aef31a57"
+	],
+	optional: true,
+	tasks: [{
+		uid: "09d99741",
+		type: "item",
+		items: [{
+			item: "harvestcraft:lemonaideitem"
+		}]
+	}],
+	rewards: [{
+		uid: "aab7ccd3",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "cheese",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 4.0d,
+	y: -3.0d,
+	text: [
+		"Used in some recipes.",
+		"",
+		"Better have some before you'll need some"
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "cc5b599c",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 7"
+		}]
+	}]
+}

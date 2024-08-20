@@ -1,0 +1,7 @@
+{
+	title: "power options",
+	icon: "contenttweaker:electric_manyullyn_ingot",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

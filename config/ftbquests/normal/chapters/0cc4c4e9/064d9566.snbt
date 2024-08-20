@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -6.0d,
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "e5a83b5c",
+		type: "item",
+		items: [{
+			item: "taiga:uru_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "d17716a5",
+		type: "item",
+		item: "taiga:uru_block"
+	}]
+}

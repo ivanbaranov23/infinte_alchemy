@@ -1,0 +1,20 @@
+{
+	x: 10.0d,
+	y: 1.0d,
+	dependencies: [
+		"eaac402a"
+	],
+	tasks: [{
+		uid: "918b0a52",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:pink_slime_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "b21f584a",
+		type: "item",
+		item: "industrialforegoing:pink_slime_ingot",
+		count: 9
+	}]
+}

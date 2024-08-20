@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: -3.0d,
+	tasks: [{
+		uid: "c6eb5f16",
+		type: "item",
+		items: [{
+			item: "enderio:item_basic_capacitor"
+		}]
+	}],
+	rewards: [{
+		uid: "f43198c2",
+		type: "item",
+		item: "enderio:item_basic_capacitor"
+	}]
+}

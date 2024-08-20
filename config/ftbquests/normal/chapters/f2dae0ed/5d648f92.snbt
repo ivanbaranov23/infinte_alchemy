@@ -1,0 +1,24 @@
+{
+	x: 3.0d,
+	y: 0.0d,
+	dependencies: [
+		"1c0f1edd"
+	],
+	optional: true,
+	tasks: [{
+		uid: "74bf9f96",
+		type: "item",
+		items: [{
+			id: "industrialforegoing:meat_feeder",
+			ForgeCaps: {
+				"industrialforegoing:meat_feeder": {},
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

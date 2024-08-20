@@ -1,0 +1,21 @@
+{
+	x: 10.0d,
+	y: -1.5d,
+	text: [
+		"You can move bedrock by using 2 teleposers and teleposition focus. ",
+		"",
+		"1) Place first teleposer under the bedrock and the second one under the block where you want it to go.",
+		"2) Shift right click teleposition focus on the second teleposer and put it in the first one.",
+		"3) Apply redstone signal to first teleposer."
+	],
+	dependencies: [
+		"647de8d9"
+	],
+	tasks: [{
+		uid: "8ea76f5a",
+		type: "item",
+		items: [{
+			item: "bloodmagic:teleposer"
+		}]
+	}]
+}

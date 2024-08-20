@@ -1,0 +1,22 @@
+{
+	x: 11.0d,
+	y: -1.5d,
+	text: [
+		"TiC material. When used as the head will work like the bound blade. "
+	],
+	dependencies: [
+		"647de8d9"
+	],
+	tasks: [{
+		uid: "4a142863",
+		type: "item",
+		items: [{
+			item: "tconevo:metal 1 25"
+		}]
+	}],
+	rewards: [{
+		uid: "be2c2cca",
+		type: "item",
+		item: "tconevo:metal_block 1 5"
+	}]
+}

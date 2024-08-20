@@ -1,0 +1,58 @@
+{
+	title: "1024 Will",
+	icon: {
+		id: "bloodmagic:soul_gem",
+		Damage: 2s,
+		tag: {
+			souls: 1024.0d
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		}
+	},
+	x: 1.5d,
+	y: 4.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"298fbc4e"
+	],
+	tasks: [{
+		uid: "cc22dddf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	},
+	{
+		uid: "38f0f745",
+		type: "item",
+		items: [{
+			id: "bloodmagic:soul_gem",
+			Damage: 2s,
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		consume_items: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9ed50835",
+		type: "item",
+		item: {
+			id: "bloodmagic:soul_gem",
+			Damage: 2s,
+			tag: {
+				souls: 1024.0d
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

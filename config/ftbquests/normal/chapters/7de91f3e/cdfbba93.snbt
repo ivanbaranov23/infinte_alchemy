@@ -1,0 +1,16 @@
+{
+	x: -4.0d,
+	y: -3.5d,
+	tasks: [{
+		uid: "7919f7d4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:neodymium_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "27310cfa",
+		type: "item",
+		item: "contenttweaker:neodymium_block"
+	}]
+}

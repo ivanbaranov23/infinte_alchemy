@@ -1,0 +1,15 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "edges",
+        "textures": [
+            "contenttweaker:blocks/inert_glass_top-ctm",
+            "contenttweaker:blocks/empty"
+        ],
+        
+        "layer": "TRANSLUCENT",
+        "extra": {
+            "connect_inside": false
+        }
+    }
+}

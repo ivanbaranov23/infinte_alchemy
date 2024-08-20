@@ -1,0 +1,16 @@
+{
+	x: 4.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "6ff063cd",
+		type: "item",
+		items: [{
+			item: "contenttweaker:flower_steel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "cfc6d373",
+		type: "item",
+		item: "contenttweaker:flower_steel_block"
+	}]
+}

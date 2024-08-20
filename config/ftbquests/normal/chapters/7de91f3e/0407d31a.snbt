@@ -1,0 +1,30 @@
+{
+	x: 22.5d,
+	y: 3.0d,
+	text: [
+		"Use \"Deal with the Dark Gods\" mission to get this one. ",
+		"If you want to make it in alter you'd need to fill 2 outer rings + 1 block with augmented runes to reach the needed capacity. ",
+		"To fill it you'll probably need the creative dagger. I don't see any other method to fill it without it taking 50 years."
+	],
+	dependencies: [
+		"0eba030c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "818c9e8d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:slate_10"
+		}]
+	}],
+	rewards: [{
+		uid: "0d1c17d6",
+		type: "item",
+		item: "contenttweaker:slate_10"
+	},
+	{
+		uid: "da4bdb09",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

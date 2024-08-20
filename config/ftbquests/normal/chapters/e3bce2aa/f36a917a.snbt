@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	dependencies: [
+		"03bf4827"
+	],
+	tasks: [{
+		uid: "14f0b3de",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electric_manyullyn_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "bc3d443d",
+		type: "item",
+		item: "contenttweaker:electric_manyullyn_block"
+	}]
+}

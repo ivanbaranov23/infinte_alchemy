@@ -1,0 +1,38 @@
+{
+	title: "Welcome to Infinite Alchemy",
+	x: -4.5d,
+	y: -1.0d,
+	shape: "square",
+	text: [
+		"This is an expert pack focused on long and expensive crafting chains. ",
+		"",
+		"You'll progress through tech mods like Prodigy Tech (PT), Immersive Engineering (IE), Extra Utilities (EU or XU), Thermal Expansion (TE), Mekanism, Ender IO (EIO), ",
+		"as well as such tech mods like Blood Magic, Botania and Astral Sorcery.",
+		"Tech line finishes with Draconic Evolution, Alchemistry and Project E.",
+		"",
+		"In between tech mods you'll also visit other dimensions like Erebus, Atum, Nether, Aether and End. ",
+		"",
+		"Now go and punch a tree."
+	],
+	tasks: [{
+		uid: "169b0a29",
+		type: "checkmark",
+		title: "Welcome to Infinite Alchemy"
+	}],
+	rewards: [{
+		uid: "1487f7c1",
+		type: "item",
+		item: "minecraft:sapling",
+		count: 4
+	},
+	{
+		uid: "d7bca50e",
+		type: "item",
+		item: {
+			id: "akashictome:tome",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

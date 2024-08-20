@@ -1,0 +1,22 @@
+{
+	x: 10.0d,
+	y: 0.5d,
+	text: [
+		"SAG milling for small matters benefit from SAG balls"
+	],
+	dependencies: [
+		"94bb80ce"
+	],
+	tasks: [{
+		uid: "0d09768c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bouncy_matter"
+		}]
+	}],
+	rewards: [{
+		uid: "d173166b",
+		type: "item",
+		item: "contenttweaker:bouncy_matter"
+	}]
+}

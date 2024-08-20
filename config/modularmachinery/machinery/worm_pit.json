@@ -1,0 +1,925 @@
+{
+    "registryname": "worm_pit",
+    "localizedname": "Worm Pit",
+    "color": "74725c",
+    "parts": [
+        {
+            "x": -1,"y": 1, "z": 5,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": -1,"y": 1, "z": 4,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": -1,"y": 1, "z": 3,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 1,"y": 1, "z": 5,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 0,"y": 1, "z": 3,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 1,"y": 1, "z": 4,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 1,"y": 1, "z": 3,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 0,"y": 1, "z": 5,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": -3,"y": 0, "z": 2,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -3,"y": 0, "z": 3,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -3,"y": 0, "z": 4,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -3,"y": 0, "z": 5,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -3,"y": 0, "z": 6,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -4,"y": 2, "z": 4,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": -3,"y": 0, "z": 7,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 3,"y": 1, "z": 1,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 4,"y": 2, "z": 4,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": -1,"y": -1, "z": 1,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -1,"y": -1, "z": 2,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -1,"y": -1, "z": 3,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -1,"y": -1, "z": 4,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -1,"y": -1, "z": 5,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -1,"y": -1, "z": 6,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -1,"y": -1, "z": 7,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -2,"y": 1, "z": 0,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 0,"y": 0, "z": 8,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 0,"y": 0, "z": 7,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -2,"y": 1, "z": 8,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": -3,"y": 0, "z": 1,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 0,"y": 0, "z": 4,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 0,"y": 0, "z": 3,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 0,"y": 0, "z": 6,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 0,"y": 0, "z": 5,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 0,"y": 0, "z": 2,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 1,"y": 2, "z": 5,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": 1,"y": 2, "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": 0,"y": 0, "z": 1,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 1,"y": 2, "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": 1,"y": -1, "z": 2,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 1,"y": -1, "z": 1,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 3,"y": 1, "z": 7,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 1,"y": -1, "z": 6,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 1,"y": -1, "z": 5,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 1,"y": -1, "z": 4,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 1,"y": -1, "z": 3,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 1,"y": -1, "z": 7,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 3,"y": 2, "z": 1,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 4,"y": 0, "z": 2,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 3,"y": 2, "z": 7,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 6,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 5,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 8,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 7,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -2,"y": -1, "z": 6,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -2,"y": -1, "z": 7,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -2,"y": -1, "z": 4,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -2,"y": -1, "z": 5,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -2,"y": -1, "z": 2,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -2,"y": -1, "z": 3,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -2,"y": -1, "z": 1,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 0,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 2,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 1,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 4,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 2,"y": 0, "z": 3,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 5,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 4,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 3,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 2,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 1,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 0,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 0,"y": 2, "z": 5,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": 0,"y": 2, "z": 8,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 8,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 7,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 3,"y": -1, "z": 5,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 3,"y": -1, "z": 6,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 1,"y": 0, "z": 6,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 2,"y": 1, "z": 8,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 3,"y": -1, "z": 3,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 3,"y": -1, "z": 4,
+            "elements": [
+                "atum:sand@0"
+            ]
+
+        },
+        {
+            "x": 3,"y": -1, "z": 2,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 2,"y": 1, "z": 0,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 0,"y": 2, "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": 0,"y": 2, "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 3,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 4,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 1,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 2,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 4,"y": 0, "z": 3,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 7,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 8,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 4,"y": 0, "z": 4,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 5,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 4,"y": 0, "z": 5,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 6,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 4,"y": 0, "z": 6,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 4,"y": 1, "z": 2,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 4,"y": 1, "z": 4,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 4,"y": 1, "z": 6,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": -2,"y": 0, "z": 0,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 0,"y": -1, "z": 1,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -4,"y": 1, "z": 4,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": -4,"y": 1, "z": 2,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 0,"y": -1, "z": 3,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -3,"y": 1, "z": 7,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 0,"y": -1, "z": 2,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 0,"y": -1, "z": 5,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -3,"y": 1, "z": 1,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 0,"y": -1, "z": 4,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 0,"y": -1, "z": 7,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -4,"y": 1, "z": 6,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": 0,"y": -1, "z": 6,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 3,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": 3,"y": 0, "z": 6,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 3,"y": 0, "z": 7,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 2,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 1,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 3,"y": 0, "z": 4,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 0,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 3,"y": 0, "z": 5,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 7,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 6,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 5,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 4,
+            "elements": [
+                "contenttweaker:stomper@0"
+            ]
+        },
+        {
+            "x": -1,"y": 0, "z": 8,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 3,"y": 0, "z": 2,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 3,"y": 0, "z": 3,
+            "elements": [
+                "quark:sandy_bricks@0"
+            ]
+        },
+        {
+            "x": 3,"y": 0, "z": 1,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 2,"y": -1, "z": 3,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 2,"y": -1, "z": 2,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 2,"y": -1, "z": 5,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 2,"y": -1, "z": 4,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 2,"y": -1, "z": 1,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 2,"y": -1, "z": 7,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 2,"y": -1, "z": 6,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -4,"y": 0, "z": 2,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -3,"y": 2, "z": 1,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": -4,"y": 0, "z": 5,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,"y": 2, "z": 5,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -1,"y": 2, "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -4,"y": 0, "z": 6,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -4,"y": 0, "z": 3,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,"y": 2, "z": 3,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        },
+        {
+            "x": -3,"y": 2, "z": 7,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": -4,"y": 0, "z": 4,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 0,"y": 1, "z": 8,
+            "elements": [
+                "atum:large_wall@0"
+            ]
+        },
+        {
+            "x": -3,"y": -1, "z": 2,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -3,"y": -1, "z": 3,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -3,"y": -1, "z": 4,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -3,"y": -1, "z": 5,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": -3,"y": -1, "z": 6,
+            "elements": [
+                "atum:sand@0"
+            ]
+        },
+        {
+            "x": 0,"y": 1, "z": 4,
+            "elements": [
+                "modularmachinery:blockcasing@3"
+            ]
+        }
+    ]}

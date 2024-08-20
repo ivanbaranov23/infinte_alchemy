@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "57d0c174",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:flesh"
+		}]
+	}]
+}

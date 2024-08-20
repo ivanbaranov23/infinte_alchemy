@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: -2.0d,
+	dependencies: [
+		"2eda5af4"
+	],
+	optional: true,
+	tasks: [{
+		uid: "86bc6221",
+		type: "item",
+		items: [{
+			item: "modularcontroller:worm_pit_controller"
+		}]
+	}]
+}

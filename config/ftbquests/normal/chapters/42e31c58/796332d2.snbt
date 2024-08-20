@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"a1cd1b75"
+	],
+	tasks: [{
+		uid: "36e0678b",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:simulation_chamber"
+		}]
+	}],
+	rewards: [{
+		uid: "759285bb",
+		type: "item",
+		item: "deepmoblearning:polymer_clay",
+		count: 16
+	}]
+}

@@ -1,0 +1,7 @@
+{
+	title: "chapter 14: End 1",
+	icon: "contenttweaker:singularity_dust",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

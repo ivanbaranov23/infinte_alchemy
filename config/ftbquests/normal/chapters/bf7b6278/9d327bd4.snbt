@@ -1,0 +1,56 @@
+{
+	title: "Industrial Squeezer",
+	icon: "immersiveengineering:metal_multiblock 1 7",
+	x: 9.0d,
+	y: -2.0d,
+	dependencies: [
+		"706f727e"
+	],
+	tasks: [{
+		uid: "43dc16d2",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "847574ad",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 6L
+	},
+	{
+		uid: "55dfcaac",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 2L
+	},
+	{
+		uid: "1392b9c5",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1"
+		}],
+		count: 3L
+	},
+	{
+		uid: "9b34f8c8",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_device0 1 1"
+		}],
+		count: 4L
+	},
+	{
+		uid: "b2420bda",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 4"
+		}],
+		count: 2L
+	}]
+}

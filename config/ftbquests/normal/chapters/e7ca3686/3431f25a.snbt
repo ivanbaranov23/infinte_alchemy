@@ -1,0 +1,18 @@
+{
+	x: 1.0d,
+	y: 3.0d,
+	text: [
+		"Used for DML"
+	],
+	dependencies: [
+		"7ff2e0b3"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c6413cb8",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:soot_covered_plate"
+		}]
+	}]
+}

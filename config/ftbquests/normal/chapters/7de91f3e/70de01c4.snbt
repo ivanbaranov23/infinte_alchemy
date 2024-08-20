@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: 1.5d,
+	dependencies: [
+		"f9881db2"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7be6d430",
+		type: "item",
+		items: [{
+			item: "contenttweaker:light_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8ec43d40",
+		type: "item",
+		item: "contenttweaker:light_block"
+	}]
+}

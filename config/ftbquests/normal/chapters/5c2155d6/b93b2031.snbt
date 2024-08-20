@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"df5cb82e",
+		"d38efc35"
+	],
+	tasks: [{
+		uid: "42e38ff1",
+		type: "item",
+		items: [{
+			item: "erebus:planks 1 12"
+		}]
+	}]
+}

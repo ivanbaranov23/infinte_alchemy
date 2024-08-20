@@ -1,0 +1,16 @@
+{
+	x: 5.5d,
+	y: 2.0d,
+	dependencies: [
+		"530188c5",
+		"5cbff905"
+	],
+	optional: true,
+	tasks: [{
+		uid: "37df678b",
+		type: "item",
+		items: [{
+			item: "prodigytech:solderer"
+		}]
+	}]
+}

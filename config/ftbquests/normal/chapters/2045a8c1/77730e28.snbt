@@ -1,0 +1,18 @@
+{
+	x: -3.5d,
+	y: -5.5d,
+	text: [
+		"[Transporter] will transport [Mech]. It has a certain number of seats that must be filled for the [Expedition].",
+		"",
+		"You can put a Stone Idol to fill the seats if you don't want to make multiple [Mech]s"
+	],
+	dependencies: [
+		"9e3c5f9d"
+	],
+	tasks: [{
+		uid: "47f56cf2",
+		type: "checkmark",
+		title: "Transporter",
+		icon: "contenttweaker:mech_taxi"
+	}]
+}

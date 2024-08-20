@@ -1,0 +1,20 @@
+{
+	x: 7.0d,
+	y: 5.0d,
+	dependencies: [
+		"f67be60f",
+		"ffa25648"
+	],
+	tasks: [{
+		uid: "cabb1ebd",
+		type: "item",
+		items: [{
+			item: "contenttweaker:grown_biomass_cell"
+		}]
+	}],
+	rewards: [{
+		uid: "76a5c422",
+		type: "item",
+		item: "contenttweaker:grown_biomass_cell"
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	x: 10.0d,
+	y: 3.0d,
+	dependencies: [
+		"cb68303e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "cb1b8145",
+		type: "item",
+		items: [{
+			id: "danknull:dank_null_0",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

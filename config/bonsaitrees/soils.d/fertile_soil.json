@@ -1,0 +1,16 @@
+{
+    "name": "atum:fertile_soil",
+    "mod": "atum",
+    "soil": {
+      "name": "atum:fertile_soil",
+      "data": 0,
+      "ignoreMeta": false
+    },
+  
+    "modifiers": {
+      "growTime": 0.75,
+      "dropChance": 1.25
+    },
+  
+    "providedTags": [ "dirt", "grass" ]
+  }

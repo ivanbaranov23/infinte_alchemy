@@ -1,0 +1,32 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	text: [
+		"Speeds up TE machines at the cost of coolant"
+	],
+	dependencies: [
+		"071cc68e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0fcf77bb",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:device",
+			Damage: 2s,
+			tag: {
+				Facing: 3b,
+				SideCache: [B;
+					0b,
+					1b,
+					1b,
+					1b,
+					1b,
+					1b
+				],
+				RSControl: 0b,
+				Energy: 0
+			}
+		}]
+	}]
+}

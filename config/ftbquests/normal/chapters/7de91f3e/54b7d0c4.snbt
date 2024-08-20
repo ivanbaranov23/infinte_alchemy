@@ -1,0 +1,16 @@
+{
+	x: -6.5d,
+	y: -9.5d,
+	tasks: [{
+		uid: "31f627d3",
+		type: "item",
+		items: [{
+			item: "taiga:ignitz_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "cfac2624",
+		type: "item",
+		item: "taiga:ignitz_block"
+	}]
+}

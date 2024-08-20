@@ -1,0 +1,22 @@
+{
+	title: "Haste Catalyst",
+	x: 8.0d,
+	y: -4.0d,
+	text: [
+		"Use chocolate to make haste catalyst"
+	],
+	dependencies: [
+		"20b67eab",
+		"b869e43e"
+	],
+	tasks: [{
+		uid: "a8798da1",
+		type: "checkmark",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "haste_potion"
+			}
+		}
+	}]
+}

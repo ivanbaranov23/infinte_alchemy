@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: -5.0d,
+	text: [
+		"Faster lava generation and used in some recipes later"
+	],
+	dependencies: [
+		"c67bb654"
+	],
+	tasks: [{
+		uid: "3dea41a6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:hot_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "627e6117",
+		type: "item",
+		item: "contenttweaker:hot_block"
+	}]
+}

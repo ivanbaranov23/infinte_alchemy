@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "side": "contenttweaker:blocks/alchemical_brass_block_side",
+      "up": "contenttweaker:blocks/alchemical_brass_block_top",
+      "down": "contenttweaker:blocks/alchemical_brass_block_bottom"
+    },
+    "model": "cube_column"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

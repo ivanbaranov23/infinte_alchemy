@@ -1,0 +1,45 @@
+{
+	icon: "modularcontroller:luck_extractor_controller",
+	x: 11.5d,
+	y: 4.0d,
+	dependencies: [
+		"1d7516be"
+	],
+	optional: true,
+	tasks: [{
+		uid: "db88d0a6",
+		type: "item",
+		items: [{
+			item: "modularcontroller:luck_extractor_controller"
+		}]
+	},
+	{
+		uid: "a616e900",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 1 3"
+		}],
+		count: 3L
+	},
+	{
+		uid: "662abd61",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_testifi_bucks_green_fence"
+		}],
+		count: 12L
+	},
+	{
+		uid: "f8399dfc",
+		type: "item",
+		items: [{
+			item: "engineersdecor:panzerglass_block"
+		}],
+		count: 12L
+	},
+	{
+		uid: "a6c4403e",
+		type: "checkmark",
+		title: "17 casings/hatches"
+	}]
+}

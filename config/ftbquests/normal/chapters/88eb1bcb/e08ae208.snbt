@@ -1,0 +1,26 @@
+{
+	title: "Machine Frame 2",
+	x: 8.0d,
+	y: 1.0d,
+	shape: "rsquare",
+	text: [
+		""
+	],
+	dependencies: [
+		"b7f2dc32",
+		"414abca0",
+		"be945a5b"
+	],
+	tasks: [{
+		uid: "3a2b7550",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:frame 1 64"
+		}]
+	}],
+	rewards: [{
+		uid: "af8be0f6",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

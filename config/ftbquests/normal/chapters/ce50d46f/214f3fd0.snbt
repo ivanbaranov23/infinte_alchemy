@@ -1,0 +1,11 @@
+{
+	x: 16.5d,
+	y: 4.0d,
+	tasks: [{
+		uid: "fbbbb8b3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:layered_boule"
+		}]
+	}]
+}

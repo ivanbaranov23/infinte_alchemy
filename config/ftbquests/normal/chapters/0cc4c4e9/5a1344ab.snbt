@@ -1,0 +1,20 @@
+{
+	x: 1.0d,
+	y: -4.0d,
+	dependencies: [
+		"93b4982f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "dbcec1e9",
+		type: "item",
+		items: [{
+			item: "taiga:proxii_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "e75a3402",
+		type: "item",
+		item: "taiga:proxii_block"
+	}]
+}

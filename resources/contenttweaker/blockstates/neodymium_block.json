@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "side": "contenttweaker:blocks/neodymium_block_side",
+      "up": "contenttweaker:blocks/neodymium_block_top",
+      "down": "contenttweaker:blocks/neodymium_block_bottom"
+    },
+    "model": "cube_column"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

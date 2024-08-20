@@ -1,0 +1,14 @@
+{
+	x: 11.0d,
+	y: 0.0d,
+	dependencies: [
+		"4e2e928c"
+	],
+	tasks: [{
+		uid: "f5fae1f1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rainbow_crystal_cluster"
+		}]
+	}]
+}

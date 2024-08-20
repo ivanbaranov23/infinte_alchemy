@@ -1,0 +1,28 @@
+{
+	icon: "roots:cloud_berry",
+	x: -0.5d,
+	y: -3.0d,
+	text: [
+		"Make some roots crops. ",
+		"",
+		"You won't be able to grow them just yet so you'll need to use crafting recipe multiple times."
+	],
+	dependencies: [
+		"f7305be9",
+		"f7f27a64"
+	],
+	tasks: [{
+		uid: "596e589f",
+		type: "item",
+		items: [{
+			item: "roots:cloud_berry"
+		}]
+	},
+	{
+		uid: "ba683ecd",
+		type: "item",
+		items: [{
+			item: "roots:pereskia"
+		}]
+	}]
+}

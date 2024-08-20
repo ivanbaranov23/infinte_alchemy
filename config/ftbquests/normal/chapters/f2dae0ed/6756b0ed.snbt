@@ -1,0 +1,88 @@
+{
+	title: "How to Grow Bacteria",
+	icon: "contenttweaker:research_bacteria1",
+	x: 8.0d,
+	y: -2.0d,
+	shape: "gear",
+	text: [
+		"Not very useful without Bioassembler (chapter 10).",
+		"",
+		"Gives better recipes for bacteria cycle and alien bacteria cycle."
+	],
+	dependencies: [
+		"e0c42694"
+	],
+	optional: true,
+	tasks: [{
+		uid: "bc8b931d",
+		type: "item",
+		items: [{
+			item: "minecraft:fermented_spider_eye"
+		}],
+		count: 64L
+	},
+	{
+		uid: "616856d4",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_fermenting_barrel"
+		}],
+		count: 4L
+	},
+	{
+		uid: "452317e6",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "fermented_bacteria_broth",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9e7c6072",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "bacteria_waste",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9c044147",
+		type: "item",
+		items: [{
+			item: "contenttweaker:soap"
+		}],
+		count: 64L
+	},
+	{
+		uid: "cc8f741e",
+		type: "item",
+		items: [{
+			item: "harvestcraft:vinegaritem"
+		}],
+		count: 48L
+	},
+	{
+		uid: "aeba9bb5",
+		type: "item",
+		items: [{
+			item: "xreliquary:mob_ingredient 1 6"
+		}],
+		count: 48L
+	}]
+}

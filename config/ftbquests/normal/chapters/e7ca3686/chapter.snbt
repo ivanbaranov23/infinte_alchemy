@@ -1,0 +1,7 @@
+{
+	title: "ch 8: EnderIO",
+	icon: "enderio:item_alloy_ingot 1 6",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

@@ -1,0 +1,22 @@
+{
+	x: 13.0d,
+	y: -2.0d,
+	shape: "square",
+	dependencies: [
+		"5b409601",
+		"e8bd8323",
+		"d9ed9c46"
+	],
+	tasks: [{
+		uid: "93a17921",
+		type: "item",
+		items: [{
+			item: "mysticalworld:amethyst_gem"
+		}]
+	}],
+	rewards: [{
+		uid: "8bc89438",
+		type: "item",
+		item: "mysticalworld:amethyst_block"
+	}]
+}

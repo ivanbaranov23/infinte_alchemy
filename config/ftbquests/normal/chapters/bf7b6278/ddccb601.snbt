@@ -1,0 +1,22 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	text: [
+		"Can be made with lapis, rosin or tree resin."
+	],
+	dependencies: [
+		"837cf6f5"
+	],
+	tasks: [{
+		uid: "dc1dc875",
+		type: "item",
+		items: [{
+			item: "contenttweaker:watertight_steel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8091d1c7",
+		type: "item",
+		item: "contenttweaker:watertight_steel_block"
+	}]
+}

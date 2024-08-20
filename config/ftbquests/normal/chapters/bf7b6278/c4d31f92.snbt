@@ -1,0 +1,25 @@
+{
+	x: 7.0d,
+	y: 5.0d,
+	text: [
+		"Can be obtained from Sea Water"
+	],
+	dependencies: [
+		"331aeb66",
+		"0120a191"
+	],
+	optional: true,
+	tasks: [{
+		uid: "abd1dcbd",
+		type: "item",
+		items: [{
+			item: "projectred-core:resource_item 1 105"
+		}]
+	}],
+	rewards: [{
+		uid: "1ed249ec",
+		type: "item",
+		item: "projectred-core:resource_item 1 105",
+		count: 9
+	}]
+}

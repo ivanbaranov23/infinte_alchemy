@@ -1,0 +1,14 @@
+{
+	x: 25.5d,
+	y: 6.0d,
+	dependencies: [
+		"24aae6a5"
+	],
+	tasks: [{
+		uid: "9fc36233",
+		type: "item",
+		items: [{
+			item: "contenttweaker:manaclay"
+		}]
+	}]
+}

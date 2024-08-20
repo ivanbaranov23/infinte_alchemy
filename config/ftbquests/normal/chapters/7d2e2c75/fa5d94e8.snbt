@@ -1,0 +1,15 @@
+{
+	x: 9.0d,
+	y: -1.0d,
+	shape: "square",
+	dependencies: [
+		"30e63d05"
+	],
+	optional: true,
+	tasks: [{
+		uid: "79858457",
+		type: "checkmark",
+		title: "To the IF chapter.",
+		icon: "industrialforegoing:pink_slime"
+	}]
+}

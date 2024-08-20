@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: -2.0d,
+	dependencies: [
+		"409bc28b"
+	],
+	tasks: [{
+		uid: "95ad1872",
+		type: "item",
+		items: [{
+			item: "tinkersaether:valkyrie_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "0e06e4f0",
+		type: "item",
+		item: "tinkersaether:valkyrie_block"
+	}]
+}

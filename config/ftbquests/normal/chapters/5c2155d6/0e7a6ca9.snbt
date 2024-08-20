@@ -1,0 +1,45 @@
+{
+	x: 3.0d,
+	y: 1.0d,
+	text: [
+		"Find some mushrooms. You can dup them with ancient spores."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	tasks: [{
+		uid: "bca5bf24",
+		type: "item",
+		items: [{
+			item: "erebus:dark_capped_mushroom"
+		}]
+	},
+	{
+		uid: "f6a167c3",
+		type: "item",
+		items: [{
+			item: "erebus:sarcastic_czech_mushroom"
+		}]
+	},
+	{
+		uid: "3241a7ac",
+		type: "item",
+		items: [{
+			item: "erebus:grandmas_shoes_mushroom"
+		}]
+	},
+	{
+		uid: "255df7f1",
+		type: "item",
+		items: [{
+			item: "erebus:dutch_cap_mushroom"
+		}]
+	},
+	{
+		uid: "0f4357ba",
+		type: "item",
+		items: [{
+			item: "erebus:kaizers_fingers_mushroom"
+		}]
+	}]
+}

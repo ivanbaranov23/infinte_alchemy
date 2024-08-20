@@ -1,0 +1,22 @@
+{
+	x: 14.0d,
+	y: -2.0d,
+	shape: "rsquare",
+	dependencies: [
+		"8cc62bd6",
+		"96d9df75",
+		"32bf1311"
+	],
+	tasks: [{
+		uid: "adaa6364",
+		type: "item",
+		items: [{
+			item: "dimensionaledibles:nether_cake"
+		}]
+	}],
+	rewards: [{
+		uid: "db0ced26",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

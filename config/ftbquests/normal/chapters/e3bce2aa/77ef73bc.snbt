@@ -1,0 +1,22 @@
+{
+	title: "Mekanization Catalyst",
+	x: 9.0d,
+	y: -4.0d,
+	text: [
+		"Make some mekanization catalyst in fluid mixer."
+	],
+	dependencies: [
+		"7484ae45",
+		"d72ebf07"
+	],
+	tasks: [{
+		uid: "d2e73ee8",
+		type: "checkmark",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "mekanization_catalyst"
+			}
+		}
+	}]
+}

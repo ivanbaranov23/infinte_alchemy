@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	text: [
+		"Gives 1.5 to 4 times cheaper recipes for a lot of items."
+	],
+	dependencies: [
+		"44475ad0"
+	],
+	tasks: [{
+		uid: "4218c503",
+		type: "item",
+		items: [{
+			item: "requious:assembler"
+		}]
+	}]
+}

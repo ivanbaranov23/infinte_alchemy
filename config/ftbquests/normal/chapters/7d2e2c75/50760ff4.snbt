@@ -1,0 +1,19 @@
+{
+	title: "Machine Frame 4",
+	x: 1.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"b9c313d3",
+		"95214734"
+	],
+	tasks: [{
+		uid: "72459614",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 8"
+		}]
+	}]
+}

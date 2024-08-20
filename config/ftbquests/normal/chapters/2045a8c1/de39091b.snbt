@@ -1,0 +1,11 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "bdb87a6f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:goldscarab_mech"
+		}]
+	}]
+}

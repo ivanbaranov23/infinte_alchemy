@@ -1,0 +1,11 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "569c4526",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tincan_mech"
+		}]
+	}]
+}

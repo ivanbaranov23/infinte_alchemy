@@ -1,0 +1,28 @@
+{
+	x: 5.0d,
+	y: 2.0d,
+	text: [
+		"Like inscriber but accepts stacks and has smart inputs (tho it can be confused if inlay inserted first)."
+	],
+	dependencies: [
+		"0721f21c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "112c718e",
+		type: "item",
+		items: [{
+			id: "ae2stuff:inscriber",
+			tag: {
+				data: {
+					topLocked: 1b,
+					progress: 0.0f,
+					Items: [],
+					power: 0.0d,
+					bottomLocked: 1b,
+					upgrades: []
+				}
+			}
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: -2.0d,
+	dependencies: [
+		"8e108481"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fb0fffd2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:wormium_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "70d1cf47",
+		type: "item",
+		item: "contenttweaker:wormium_block"
+	}]
+}

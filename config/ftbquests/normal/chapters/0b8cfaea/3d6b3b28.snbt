@@ -1,0 +1,17 @@
+{
+	title: "Shop",
+	x: -5.5d,
+	y: -1.0d,
+	text: [
+		"Check out the shop. It uses quest coins.",
+		"",
+		"Quest coins can be obtained from milestone quests like machine frames. You can also sell things in diamond shaped quests for coins. There is also an endgame recipe for quest coins."
+	],
+	tasks: [{
+		uid: "5d65b052",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}]
+	}]
+}

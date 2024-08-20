@@ -1,0 +1,11 @@
+{
+	x: 3.5d,
+	y: 3.0d,
+	tasks: [{
+		uid: "a21470ae",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_star"
+		}]
+	}]
+}

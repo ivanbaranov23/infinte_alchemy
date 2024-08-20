@@ -1,0 +1,22 @@
+{
+	title: "Speed Catalyst",
+	x: 8.0d,
+	y: -3.0d,
+	text: [
+		"Use caramel to make potion of swiftness and turn it into speed catalyst."
+	],
+	dependencies: [
+		"7a293784",
+		"b869e43e"
+	],
+	tasks: [{
+		uid: "3b1f258f",
+		type: "checkmark",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "speed_potion"
+			}
+		}
+	}]
+}

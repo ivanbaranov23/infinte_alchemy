@@ -1,0 +1,73 @@
+{
+	title: "Farm some crops 1",
+	icon: "minecraft:wheat",
+	x: -2.5d,
+	y: 5.0d,
+	shape: "diamond",
+	text: [
+		"Farm some crops and sell them for money."
+	],
+	dependencies: [
+		"778e9042"
+	],
+	optional: true,
+	tasks: [{
+		uid: "129b703e",
+		type: "item",
+		items: [{
+			item: "minecraft:wheat"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "35388c17",
+		type: "item",
+		items: [{
+			item: "minecraft:carrot"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "69d07e40",
+		type: "item",
+		items: [{
+			item: "minecraft:potato"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "7a618d28",
+		type: "item",
+		items: [{
+			item: "mysticalworld:aubergine"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "88763d6b",
+		type: "item",
+		items: [{
+			item: "minecraft:beetroot"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "5d90e0fd",
+		type: "item",
+		items: [{
+			item: "minecraft:wheat_seeds"
+		}],
+		count: 256L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "ba2fd30f",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

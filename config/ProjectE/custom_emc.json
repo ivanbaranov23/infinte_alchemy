@@ -1,0 +1,104 @@
+{
+  "entries": [
+    {
+      "item": "minecraft:cobblestone|0",
+      "emc": 1
+    },
+    {
+      "item": "extrautils2:compressedcobblestone|0",
+      "emc": 9
+    },
+    {
+      "item": "extrautils2:compressedcobblestone|1",
+      "emc": 81
+    },
+    {
+      "item": "extrautils2:compressedcobblestone|2",
+      "emc": 729
+    },
+    {
+      "item": "extrautils2:compressedcobblestone|3",
+      "emc": 6561
+    },
+    {
+      "item": "extrautils2:compressedcobblestone|4",
+      "emc": 59049
+    },
+    {
+      "item": "extrautils2:compressedcobblestone|5",
+      "emc": 531441
+    },
+    {
+      "item": "extrautils2:compressedcobblestone|6",
+      "emc": 4782969
+    },
+    {
+      "item": "extrautils2:compressedcobblestone|7",
+      "emc": 43046721
+    },
+    {
+      "item": "minecraft:netherrack|0",
+      "emc": 4
+    },
+    {
+      "item": "extrautils2:compressednetherrack|0",
+      "emc": 36
+    },
+    {
+      "item": "extrautils2:compressednetherrack|1",
+      "emc": 324
+    },
+    {
+      "item": "extrautils2:compressednetherrack|2",
+      "emc": 2916
+    },
+    {
+      "item": "extrautils2:compressednetherrack|3",
+      "emc": 26244
+    },
+    {
+      "item": "extrautils2:compressednetherrack|4",
+      "emc": 236196
+    },
+    {
+      "item": "extrautils2:compressednetherrack|5",
+      "emc": 2125764
+    },
+    {
+      "item": "minecraft:iron_ore|0",
+      "emc": 3000
+    },
+    {
+      "item": "minecraft:coal_ore|0",
+      "emc": 2500
+    },
+    {
+      "item": "thermalfoundation:ore|0",
+      "emc": 3000
+    },
+    {
+      "item": "thermalfoundation:ore|1",
+      "emc": 2500
+    },
+    {
+      "item": "thermalfoundation:ore|4",
+      "emc": 3000
+    },
+    {
+      "item": "contenttweaker:zinc_ore|0",
+      "emc": 3000
+    },
+    {
+      "item": "projecte:item.pe_matter|0",
+      "emc": 100000
+    },
+    {
+      "item": "projecte:item.pe_matter|1",
+      "emc": 1000000
+    },
+    {
+      "item": "contenttweaker:emc_ore|0",
+      "emc": 10000
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: -5.0d,
+	dependencies: [
+		"e9c0fd86"
+	],
+	tasks: [{
+		uid: "647e21e1",
+		type: "item",
+		items: [{
+			item: "modularcontroller:bonsai_controller"
+		}]
+	}]
+}

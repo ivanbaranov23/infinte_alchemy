@@ -1,0 +1,18 @@
+{
+	x: -5.0d,
+	y: 3.0d,
+	text: [
+		"You can't pull gas via jei so this is kinda annoying to use."
+	],
+	dependencies: [
+		"2e65852d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ce9c8671",
+		type: "item",
+		items: [{
+			item: "aeadditions:gas_interface"
+		}]
+	}]
+}

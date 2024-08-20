@@ -1,0 +1,45 @@
+{
+	icon: "modularcontroller:gas_column_controller",
+	x: 19.0d,
+	y: -3.0d,
+	dependencies: [
+		"51ae6496"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8cd17388",
+		type: "item",
+		items: [{
+			item: "modularcontroller:gas_column_controller"
+		}]
+	},
+	{
+		uid: "62ee54f7",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 9L
+	},
+	{
+		uid: "3d90924a",
+		type: "item",
+		items: [{
+			item: "engineersdecor:panzerglass_block"
+		}],
+		count: 8L
+	},
+	{
+		uid: "013a52ef",
+		type: "item",
+		items: [{
+			item: "atum:thin_crystal_glass"
+		}],
+		count: 16L
+	},
+	{
+		uid: "73679cf3",
+		type: "checkmark",
+		title: "16 casings"
+	}]
+}

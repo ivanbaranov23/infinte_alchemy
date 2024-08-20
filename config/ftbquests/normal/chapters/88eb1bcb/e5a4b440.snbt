@@ -1,0 +1,43 @@
+{
+	title: "Sieve Fortune",
+	icon: {
+		id: "minecraft:enchanted_book",
+		tag: {
+			StoredEnchantments: [{
+				lvl: 3s,
+				id: 40
+			}]
+		}
+	},
+	x: 9.0d,
+	y: -1.0d,
+	shape: "diamond",
+	text: [
+		"High level Sieve Fortune can be used to get more resources"
+	],
+	dependencies: [
+		"8f076c73"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8533b609",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "88429d32",
+		type: "item",
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 3s,
+					id: 40
+				}]
+			}
+		}
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 17.0d,
+	y: 1.0d,
+	dependencies: [
+		"02409eb4"
+	],
+	tasks: [{
+		uid: "a4e849cf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:titanium_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "d16fd6d8",
+		type: "item",
+		item: "contenttweaker:titanium_block"
+	}]
+}

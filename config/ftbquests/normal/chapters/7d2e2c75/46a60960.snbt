@@ -1,0 +1,15 @@
+{
+	x: 13.0d,
+	y: 4.0d,
+	dependencies: [
+		"0293aea6"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8720e4a3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:naoh"
+		}]
+	}]
+}

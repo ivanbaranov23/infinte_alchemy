@@ -1,0 +1,30 @@
+{
+	icon: "contenttweaker:malachite_polycrystal",
+	x: 4.0d,
+	y: -2.0d,
+	text: [
+		"Basically copper. Can be found in stalagmites along with jade and diamonds."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	tasks: [{
+		uid: "3ce5b7c1",
+		type: "item",
+		items: [{
+			item: "erebus:ore_copper"
+		}]
+	},
+	{
+		uid: "0ad7ab54",
+		type: "item",
+		items: [{
+			item: "contenttweaker:malachite_polycrystal"
+		}]
+	}],
+	rewards: [{
+		uid: "cd06bfd0",
+		type: "item",
+		item: "contenttweaker:malachite_block"
+	}]
+}

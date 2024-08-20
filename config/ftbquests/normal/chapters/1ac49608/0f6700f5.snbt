@@ -1,0 +1,22 @@
+{
+	x: 1.0d,
+	y: -1.0d,
+	dependencies: [
+		"41925402"
+	],
+	tasks: [{
+		uid: "b1f8bcd0",
+		type: "item",
+		items: [{
+			id: "industrialforegoing:laser_lens",
+			Damage: 14s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

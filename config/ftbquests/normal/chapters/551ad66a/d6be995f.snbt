@@ -1,0 +1,36 @@
+{
+	x: 11.0d,
+	y: 0.0d,
+	shape: "square",
+	dependencies: [
+		"6f43094e"
+	],
+	tasks: [{
+		uid: "d4feb5c7",
+		type: "item",
+		items: [{
+			item: "prodigytech:explosion_furnace"
+		}]
+	}],
+	rewards: [{
+		uid: "8f4c3fd8",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "202089d5",
+		type: "item",
+		item: {
+			id: "patchouli:guide_book",
+			tag: {
+				"patchouli:book": "prodigytech:guide"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}
+	}]
+}

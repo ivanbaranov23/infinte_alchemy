@@ -1,0 +1,14 @@
+{
+	title: "Machine Frame 1",
+	x: -3.0d,
+	y: 1.0d,
+	shape: "rsquare",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "a7dc7689",
+		type: "checkmark",
+		icon: "extrautils2:machine"
+	}]
+}

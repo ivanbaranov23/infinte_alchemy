@@ -1,0 +1,36 @@
+{
+	title: "256 Will",
+	x: -2.0d,
+	y: -2.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"1c5a4faf"
+	],
+	tasks: [{
+		uid: "2dc9a79c",
+		type: "item",
+		items: [{
+			id: "bloodmagic:soul_gem",
+			Damage: 1s,
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4f5962f6",
+		type: "item",
+		item: {
+			id: "bloodmagic:soul_gem",
+			Damage: 1s,
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

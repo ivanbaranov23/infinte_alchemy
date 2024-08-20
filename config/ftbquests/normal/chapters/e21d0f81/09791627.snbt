@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	text: [
+		"You'll need 8 fertile soil to make plant station. You can either find it in an oasis or make it from piles. ",
+		"",
+		"Piles can be found in various chests or made from geb godshard or idol of labor."
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "dd907fda",
+		type: "item",
+		items: [{
+			item: "atum:fertile_soil_pile"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: 8.0d,
+	y: 1.0d,
+	tasks: [{
+		uid: "cc6248dd",
+		type: "item",
+		items: [{
+			item: "botania:brewery"
+		}]
+	}]
+}

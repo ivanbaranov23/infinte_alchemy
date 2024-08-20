@@ -1,0 +1,27 @@
+{
+	title: "Spooky air at a distance",
+	x: 6.5d,
+	y: 3.0d,
+	text: [
+		"Teleports hot air from one wormhole funnel to another."
+	],
+	dependencies: [
+		"e6b9706a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "29b0aab4",
+		type: "item",
+		items: [{
+			id: "prodigytech:wormhole_linker",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	title: "Tinker is here",
+	x: -4.5d,
+	y: -3.0d,
+	text: [
+		"Make youself a tinker tool. This pack has quite a few tool materials including custom ones so consult Materials and You book."
+	],
+	dependencies: [
+		"911ba93a"
+	],
+	dependency_requirement: "all_started",
+	optional: true,
+	tasks: [{
+		uid: "e05fb514",
+		type: "item",
+		items: [{
+			item: "tconstruct:pattern"
+		}]
+	}]
+}

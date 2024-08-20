@@ -1,0 +1,11 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "8f07824b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:radiotoad_mech"
+		}]
+	}]
+}

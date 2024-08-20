@@ -1,0 +1,15 @@
+{
+	x: 3.0d,
+	y: 11.0d,
+	dependencies: [
+		"2b557138",
+		"0407b16d"
+	],
+	tasks: [{
+		uid: "6ca1df4b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:layered_processor"
+		}]
+	}]
+}

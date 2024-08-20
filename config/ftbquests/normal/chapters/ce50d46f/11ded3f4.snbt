@@ -1,0 +1,16 @@
+{
+	x: 1.5d,
+	y: 5.0d,
+	tasks: [{
+		uid: "f817d183",
+		type: "item",
+		items: [{
+			item: "contenttweaker:nitinol_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8e888583",
+		type: "item",
+		item: "contenttweaker:nitinol_block"
+	}]
+}

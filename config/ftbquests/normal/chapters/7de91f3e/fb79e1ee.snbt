@@ -1,0 +1,24 @@
+{
+	title: "Machine Frame 12",
+	x: 6.0d,
+	y: -10.5d,
+	shape: "square",
+	text: [
+		""
+	],
+	dependencies: [
+		"27394182"
+	],
+	tasks: [{
+		uid: "40a2b35a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:blood_frame"
+		}]
+	}],
+	rewards: [{
+		uid: "b14929b9",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

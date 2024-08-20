@@ -1,0 +1,19 @@
+{
+	title: "CONTROL THE SPICE - CONTROL THE UNIVERSE",
+	x: 8.0d,
+	y: -1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"6fb999ac"
+	],
+	optional: true,
+	tasks: [{
+		uid: "521283b2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sandy_spice"
+		}]
+	}]
+}

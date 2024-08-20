@@ -1,0 +1,19 @@
+{
+	x: 2.0d,
+	y: 3.0d,
+	dependencies: [
+		"24223ebf"
+	],
+	tasks: [{
+		uid: "f3ca9350",
+		type: "item",
+		items: [{
+			item: "projectred-core:resource_item 1 300"
+		}]
+	}],
+	rewards: [{
+		uid: "d6a03942",
+		type: "item",
+		item: "projectred-core:resource_item 1 300"
+	}]
+}

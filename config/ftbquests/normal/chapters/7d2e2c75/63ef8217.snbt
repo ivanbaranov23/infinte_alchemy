@@ -1,0 +1,21 @@
+{
+	x: 17.0d,
+	y: 4.0d,
+	dependencies: [
+		"46a60960",
+		"03cc85bf"
+	],
+	optional: true,
+	tasks: [{
+		uid: "02c1a71c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:medical_alloy_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "b462b592",
+		type: "item",
+		item: "contenttweaker:medical_alloy_block"
+	}]
+}

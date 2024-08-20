@@ -1,0 +1,26 @@
+{
+	title: "Make a farm ASAP",
+	x: -1.5d,
+	y: 4.0d,
+	text: [
+		"Just make it now. You'll need a variety of crops so just plant everything you're getting from dirt. "
+	],
+	dependencies: [
+		"6cb0e4ca"
+	],
+	tasks: [{
+		uid: "8c1f6bf3",
+		type: "checkmark",
+		icon: "minecraft:dirt"
+	}],
+	rewards: [{
+		uid: "ae733550",
+		type: "item",
+		item: {
+			id: "actuallyadditions:item_hoe_obsidian",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

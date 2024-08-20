@@ -1,0 +1,20 @@
+{
+	x: 3.5d,
+	y: 2.0d,
+	text: [
+		"You can scrape some gold from netherack or smelt some armor and tools from mob farm or, if you really don't want, you can get a lot of flint.",
+		"",
+		"This block will give you some juicy byproducts."
+	],
+	dependencies: [
+		"5cbff905"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4c7fcf33",
+		type: "item",
+		items: [{
+			item: "prodigytech:ore_refinery"
+		}]
+	}]
+}

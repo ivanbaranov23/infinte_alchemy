@@ -1,0 +1,10 @@
+{
+	x: 12.5d,
+	y: -3.0d,
+	optional: true,
+	tasks: [{
+		uid: "ddfa40fc",
+		type: "checkmark",
+		icon: "minecraft:iron_ore"
+	}]
+}

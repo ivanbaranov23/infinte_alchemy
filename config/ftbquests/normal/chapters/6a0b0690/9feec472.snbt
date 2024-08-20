@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: -3.0d,
+	text: [
+		"Surrond it with 6 redstone blocks to see diamond and gold blocks! Make sure to do it right next to your expensive machines."
+	],
+	dependencies: [
+		"d32c17bc"
+	],
+	tasks: [{
+		uid: "5f6d3292",
+		type: "item",
+		items: [{
+			item: "twilightforest:tower_device 1 12"
+		}]
+	}]
+}

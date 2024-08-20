@@ -1,0 +1,19 @@
+{
+	title: "Master Automater",
+	x: 4.0d,
+	y: -4.0d,
+	text: [
+		"Can also be bought in the shop"
+	],
+	dependencies: [
+		"c8e5afb0"
+	],
+	optional: true,
+	tasks: [{
+		uid: "dd36f849",
+		type: "item",
+		items: [{
+			item: "extrautils2:user"
+		}]
+	}]
+}

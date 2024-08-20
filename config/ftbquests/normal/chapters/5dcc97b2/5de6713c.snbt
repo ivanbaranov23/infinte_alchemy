@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: 1.0d,
+	tasks: [{
+		uid: "df055806",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:crafting 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "7558b334",
+		type: "item",
+		item: "mysticalagriculture:storage 1 5"
+	}]
+}

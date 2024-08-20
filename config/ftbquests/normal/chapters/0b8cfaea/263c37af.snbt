@@ -1,0 +1,73 @@
+{
+	title: "Farm some crops 2",
+	icon: "actuallyadditions:item_food 1 16",
+	x: -1.5d,
+	y: 6.0d,
+	shape: "diamond",
+	text: [
+		""
+	],
+	dependencies: [
+		"778e9042"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2bcd58ec",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_food 1 16"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "1cef49f7",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_rice_seed"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "fde49c91",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_misc 1 13"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "3a205da4",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_canola_seed"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "39da188d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:material 1 4"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "9d9c82c7",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:seed"
+		}],
+		count: 256L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "7fa1ef30",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

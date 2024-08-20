@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: -1.0d,
+	dependencies: [
+		"b3441e9b"
+	],
+	tasks: [{
+		uid: "ac6762f6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:thermal_paste_base"
+		}]
+	}]
+}

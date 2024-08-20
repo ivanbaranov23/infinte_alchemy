@@ -1,0 +1,16 @@
+{
+    "name": "botania:altgrass:2",
+    "mod": "botania",
+    "soil": {
+      "name": "botania:altgrass",
+      "data": 2,
+      "ignoreMeta": false
+    },
+  
+    "modifiers": {
+      "growTime": 0.5,
+      "dropChance": 2.0
+    },
+  
+    "providedTags": [ "dirt", "grass" ]
+  }

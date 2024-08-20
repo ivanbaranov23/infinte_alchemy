@@ -1,0 +1,23 @@
+{
+	title: "Machine Frame 9",
+	x: -2.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"c1ca8eec"
+	],
+	tasks: [{
+		uid: "81ca7bfe",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 54"
+		}]
+	}],
+	rewards: [{
+		uid: "7d6ddd93",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

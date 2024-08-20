@@ -1,0 +1,40 @@
+{
+	title: "Deuterium",
+	icon: {
+		id: "aeadditions:pattern.fluid",
+		tag: {
+			Fluid: {
+				FluidName: "liquiddeuterium",
+				Amount: 1000
+			}
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		}
+	},
+	x: 7.0d,
+	y: 7.0d,
+	text: [
+		"Put filter upgrade in pump and put heavy water in electrolyzer to get deuterium."
+	],
+	dependencies: [
+		"c4675c5b",
+		"6c33422c",
+		"28fec655"
+	],
+	tasks: [{
+		uid: "e74d56c8",
+		type: "item",
+		items: [{
+			id: "mekanism:filterupgrade",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

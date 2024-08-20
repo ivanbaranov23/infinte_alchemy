@@ -1,0 +1,33 @@
+{
+	title: "Mob farm",
+	icon: "minecraft:rotten_flesh",
+	x: -4.5d,
+	y: -5.0d,
+	text: [
+		"Make a mob farm and kill some monsters."
+	],
+	dependencies: [
+		"911ba93a"
+	],
+	tasks: [{
+		uid: "13855945",
+		type: "item",
+		items: [{
+			item: "minecraft:rotten_flesh"
+		}]
+	},
+	{
+		uid: "ce4632b8",
+		type: "item",
+		items: [{
+			item: "minecraft:bone"
+		}]
+	},
+	{
+		uid: "7694394f",
+		type: "item",
+		items: [{
+			item: "minecraft:gunpowder"
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 11.0d,
+	y: -8.0d,
+	dependencies: [
+		"be4f7c79"
+	],
+	tasks: [{
+		uid: "a642552c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:imperomite_catalyst"
+		}]
+	}],
+	rewards: [{
+		uid: "2b8d9597",
+		type: "item",
+		item: "contenttweaker:imperomite_catalyst_dust",
+		count: 9
+	}]
+}

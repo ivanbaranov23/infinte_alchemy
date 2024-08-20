@@ -1,0 +1,34 @@
+{
+	x: 10.0d,
+	y: 1.0d,
+	text: [
+		"Put this machine to a tree, give it some sawdust or fertilizer and it will start genearating a fluid like sap or resin from that tree.",
+		"You can also make lava and menril from it.",
+		"",
+		"But, what is a tree? Basically a column of logs with some naturally generated leaves on top"
+	],
+	dependencies: [
+		"e08ae208"
+	],
+	tasks: [{
+		uid: "f1d4d9d9",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:device",
+			Damage: 3s,
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				SideCache: [B;
+					1b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				]
+			}
+		}]
+	}]
+}

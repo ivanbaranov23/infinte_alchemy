@@ -1,0 +1,15 @@
+{
+	x: 9.0d,
+	y: 2.0d,
+	dependencies: [
+		"e08ae208"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2d608ce0",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:fluiddictionary_converter"
+		}]
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: 5.0d,
+	y: -5.0d,
+	tasks: [{
+		uid: "9e5daf5b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rare_earth_dust"
+		}]
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 25.0d,
+	y: 2.0d,
+	text: [
+		"Hook these multiblocks onto a tier 4+ altar to outsource some of the recipe to it. ",
+		"",
+		"Subprocessor can do Blood Altar recipes up to tier 4, taking 3 times longer and 2 times more LP per recipe than an altar (no speed runes).",
+		"",
+		"Can be upgraded with acceleration runes and better altar columns.",
+		"",
+		"Can also transform liquid blood into life essence"
+	],
+	dependencies: [
+		"cbc11166"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a4876d39",
+		type: "item",
+		items: [{
+			item: "modularcontroller:blood_altar_controller"
+		}]
+	}]
+}

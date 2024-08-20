@@ -1,0 +1,25 @@
+{
+	icon: "aether_legacy:skyroot_sapling",
+	x: 4.0d,
+	y: 2.0d,
+	text: [
+		"Can also be obtained from sludge."
+	],
+	dependencies: [
+		"95048f83"
+	],
+	tasks: [{
+		uid: "6fcab48f",
+		type: "item",
+		items: [{
+			item: "aether_legacy:skyroot_sapling"
+		}]
+	},
+	{
+		uid: "d06dedc3",
+		type: "item",
+		items: [{
+			item: "aether_legacy:aether_dirt"
+		}]
+	}]
+}

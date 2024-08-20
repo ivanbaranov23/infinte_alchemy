@@ -1,0 +1,40 @@
+{
+	x: 3.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "e104239f",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_blaze",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eaf82ae2",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_ghast",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5875edac",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_wither_skeleton",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

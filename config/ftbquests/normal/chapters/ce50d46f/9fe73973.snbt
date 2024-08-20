@@ -1,0 +1,23 @@
+{
+	x: 10.5d,
+	y: 6.0d,
+	text: [
+		"Satellite Controller is more or less a manual crafting station. To operate it, yu'll need to insert a Satellite Computer into it. Only one computer can be in a controller at a time."
+	],
+	dependencies: [
+		"9a5a71e6",
+		"eab94a66"
+	],
+	tasks: [{
+		uid: "13e66e16",
+		type: "item",
+		items: [{
+			item: "requious:satellite_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "ab69cf45",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

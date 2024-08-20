@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: 1.0d,
+	dependencies: [
+		"7ee7dc77"
+	],
+	tasks: [{
+		uid: "a6f71851",
+		type: "item",
+		items: [{
+			item: "extrautils2:resonator"
+		}]
+	}]
+}

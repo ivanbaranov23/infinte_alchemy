@@ -1,0 +1,18 @@
+{
+	x: 3.0d,
+	y: 2.0d,
+	text: [
+		"For lustrious pearls you can stack a few clams in water next a user with runic shears.",
+		"",
+		"There is also another secret recipe for those who read quests."
+	],
+	tasks: [{
+		uid: "ddf08045",
+		type: "item",
+		items: [{
+			item: "projectred-expansion:infused_ender_pearl"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

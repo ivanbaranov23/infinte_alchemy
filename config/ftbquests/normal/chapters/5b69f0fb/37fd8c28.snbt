@@ -1,0 +1,17 @@
+{
+	x: 6.0d,
+	y: -3.0d,
+	text: [
+		"Like mycelium but for THE glowshroom"
+	],
+	dependencies: [
+		"4cef6347"
+	],
+	tasks: [{
+		uid: "64800567",
+		type: "item",
+		items: [{
+			item: "quark:glowcelium"
+		}]
+	}]
+}

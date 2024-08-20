@@ -1,0 +1,333 @@
+{
+    "registryname": "garden_cloche",
+    "localizedname": "Garden Cloche",
+    "color": "3d2217",
+    "modifiers": [
+        {"description": "output items x4",
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 4
+                }
+            ]
+        },
+        {"description": "output items x16",
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "extendedcrafting:lamp@1"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 16
+                }
+            ]
+        }
+    ],
+    "parts": [
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:greenhouse_lamps@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:treated_wood@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "immersiveengineering:treated_wood@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "nbt": {"id":"immersiveengineering:ieslab","slabType":"0"},
+            "elements": [
+                "immersiveengineering:treated_wood_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 0,
+            "nbt": {"id":"immersiveengineering:ieslab","slabType":"0"},
+            "elements": [
+                "immersiveengineering:treated_wood_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "immersiveengineering:treated_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "nbt": {"id":"immersiveengineering:ieslab","slabType":"0"},
+            "elements": [
+                "immersiveengineering:treated_wood_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "immersiveengineering:treated_wood@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 0,
+            "nbt": {"id":"immersiveengineering:ieslab","slabType":"0"},
+            "elements": [
+                "immersiveengineering:treated_wood_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "tconstruct:clear_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "tconstruct:clear_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "immersiveengineering:treated_wood"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "immersiveengineering:treated_wood"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "immersiveengineering:treated_wood"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "immersiveengineering:treated_wood"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "immersiveengineering:treated_wood"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "immersiveengineering:treated_wood"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "immersiveengineering:treated_wood"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "immersiveengineering:treated_wood"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "tconstruct:clear_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "roots:elemental_soil_earth@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "tconstruct:clear_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "tconstruct:clear_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "tconstruct:clear_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "tconstruct:clear_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "minecraft:wheat@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_quartz_wall@0"
+            ]
+        }
+    ]}

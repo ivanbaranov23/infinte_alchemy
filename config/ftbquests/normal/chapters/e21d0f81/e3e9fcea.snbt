@@ -1,0 +1,25 @@
+{
+	title: "Cool Ores",
+	x: 2.0d,
+	y: -2.0d,
+	text: [
+		"You'll need galena and sphelarite for indium later. "
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "5e1bdd82",
+		type: "item",
+		items: [{
+			item: "contenttweaker:atum_lead_ore"
+		}]
+	},
+	{
+		uid: "1d5c9af9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:atum_sphalerite_ore"
+		}]
+	}]
+}

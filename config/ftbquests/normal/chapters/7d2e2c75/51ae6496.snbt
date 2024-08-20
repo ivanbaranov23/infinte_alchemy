@@ -1,0 +1,16 @@
+{
+	x: 19.0d,
+	y: -1.0d,
+	shape: "square",
+	dependencies: [
+		"1424f64d",
+		"03cc85bf",
+		"6052902d"
+	],
+	tasks: [{
+		uid: "c0fa3f5e",
+		type: "checkmark",
+		title: "Actually Additions",
+		icon: "actuallyadditions:block_misc 1 9"
+	}]
+}

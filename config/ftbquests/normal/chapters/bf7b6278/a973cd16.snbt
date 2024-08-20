@@ -1,0 +1,15 @@
+{
+	x: 9.0d,
+	y: 5.0d,
+	dependencies: [
+		"0120a191"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9e5d6973",
+		type: "item",
+		items: [{
+			item: "immersivepetroleum:material"
+		}]
+	}]
+}

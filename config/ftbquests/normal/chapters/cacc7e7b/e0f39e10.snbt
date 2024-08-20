@@ -1,0 +1,21 @@
+{
+	title: "Mechanical User",
+	icon: "extrautils2:user",
+	x: 5.5d,
+	y: 2.0d,
+	tasks: [{
+		uid: "07496b89",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "a8f26da1",
+		type: "item",
+		item: "extrautils2:user",
+		count: 4
+	}]
+}

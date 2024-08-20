@@ -1,0 +1,24 @@
+{
+	x: 9.0d,
+	y: -10.5d,
+	text: [
+		"Consider dabbling into advanced Nether Star processing. ",
+		"",
+		"You'll need Liquid NS for NS Polymer, ",
+		"Spent NS Catalyst can be turned into star metal and some goodies,",
+		"Inert Liquid NS can recycled or used to make a lot of inert neutrons.",
+		"",
+		"Evil can be made into Evil Nitrate for 20 evil ingots per NS."
+	],
+	dependencies: [
+		"7315114c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3483f837",
+		type: "item",
+		items: [{
+			item: "contenttweaker:nether_star_dust"
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: -3.0d,
+	y: 1.0d,
+	dependencies: [
+		"e39fa748"
+	],
+	tasks: [{
+		uid: "9925c8ad",
+		type: "item",
+		items: [{
+			item: "aether_legacy:aether_log 1 1"
+		}]
+	},
+	{
+		uid: "022f6011",
+		type: "item",
+		items: [{
+			item: "aether_legacy:golden_amber"
+		}]
+	}]
+}

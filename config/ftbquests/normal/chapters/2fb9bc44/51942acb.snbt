@@ -1,0 +1,68 @@
+{
+	icon: "modularcontroller:heat_exchanger_controller",
+	x: 14.5d,
+	y: 1.0d,
+	text: [
+		"For the duration of the recipe hot air input will be giving hot air at recipe temprature, after recipe end it will slowly cool down.",
+		"",
+		"You can replace lava for:",
+		"High Heat Lava for +100% recipe time, -20% input fluid",
+		"Super Heat Lava for +200% recipe time, -40% input fluid ",
+		"Pyrotheum for -90% recipe time, +150% output temprature, +50% output fluid"
+	],
+	dependencies: [
+		"72450aeb",
+		"25e5cf9f",
+		"1e6ad6d9"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "f3e9e967",
+		type: "item",
+		items: [{
+			item: "modularcontroller:heat_exchanger_controller"
+		}]
+	},
+	{
+		uid: "b3651f31",
+		type: "item",
+		items: [{
+			item: "betternether:cincinnasite_bars"
+		}]
+	},
+	{
+		uid: "59719289",
+		type: "item",
+		items: [{
+			item: "betternether:cincinnasite_wall"
+		}],
+		count: 3L
+	},
+	{
+		uid: "33826fc8",
+		type: "item",
+		items: [{
+			item: "modulardiversity:blockhotairoutputhatch"
+		}]
+	},
+	{
+		uid: "7baac4c0",
+		type: "item",
+		items: [{
+			item: "modulardiversity:blockmekheatinput"
+		}]
+	},
+	{
+		uid: "791692b5",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockcasing 1 2"
+		}],
+		count: 4L
+	},
+	{
+		uid: "b9d10011",
+		type: "checkmark",
+		title: "7 casings/hatches"
+	}]
+}

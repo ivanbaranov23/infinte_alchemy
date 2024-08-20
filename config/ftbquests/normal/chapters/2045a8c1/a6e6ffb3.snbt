@@ -1,0 +1,24 @@
+{
+	x: -0.5d,
+	y: -5.5d,
+	text: [
+		"Each [Mission] will add [Loot] to the output.",
+		"[Loot] is split into two parts: [Primary loot] (P) and [Secondary loot] (S)",
+		"",
+		"If in [Expedition] there is only one [Mech] of a type, then you will get P+S [Loot].",
+		"Example: 1 TinCan mech and 1 RadioToad mech will bring P+S TinCan loot and P+S RadioToad loot.",
+		"",
+		"If there multiple of the same [Mech]s then each of them will add [Primary loot], but [Secondary loot] will only be added once.",
+		"Example: 2 TinCans will bring P+P+S of TinCan loot.",
+		"3 TinCans will bring P+P+P+S of TinCan loot."
+	],
+	dependencies: [
+		"9e3c5f9d"
+	],
+	tasks: [{
+		uid: "61167416",
+		type: "checkmark",
+		title: "Loot",
+		icon: "densemetals:dense_diamond_ore"
+	}]
+}

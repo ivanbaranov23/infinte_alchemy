@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	dependencies: [
+		"30efc77d"
+	],
+	tasks: [{
+		uid: "00ca80c0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:soul_codex8"
+		}]
+	}]
+}

@@ -1,0 +1,78 @@
+{
+	title: "Trade Offer: Staff",
+	icon: {
+		id: "contenttweaker:staffwood_mushroom",
+		tag: {
+			ench: [{
+				lvl: 3s,
+				id: 35
+			}]
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		}
+	},
+	x: 7.0d,
+	y: -2.0d,
+	text: [
+		"You'll need an Enchantment Applicator to put a Fortune on a staff. Or I can do it for you.",
+		"For a price."
+	],
+	dependencies: [
+		"ddd1b21d"
+	],
+	tasks: [{
+		uid: "83f6d944",
+		type: "item",
+		items: [{
+			id: "contenttweaker:staffwood_mushroom",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9287d572",
+		type: "item",
+		items: [{
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 3s,
+					id: 35
+				}]
+			}
+		}],
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8c3fab19",
+		type: "item",
+		items: [{
+			item: "contenttweaker:pereskia_soup"
+		}],
+		count: 12L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "ebb83709",
+		type: "item",
+		item: {
+			id: "contenttweaker:staffwood_mushroom",
+			tag: {
+				ench: [{
+					lvl: 3s,
+					id: 35
+				}]
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

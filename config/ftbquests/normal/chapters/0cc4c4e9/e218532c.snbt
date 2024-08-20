@@ -1,0 +1,20 @@
+{
+	x: -1.0d,
+	y: -4.0d,
+	dependencies: [
+		"93b4982f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a2c80715",
+		type: "item",
+		items: [{
+			item: "taiga:niob_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "01b8b636",
+		type: "item",
+		item: "taiga:niob_block"
+	}]
+}

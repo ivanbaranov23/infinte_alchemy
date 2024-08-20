@@ -1,0 +1,22 @@
+{
+	x: 11.0d,
+	y: 3.0d,
+	dependencies: [
+		"0120a191"
+	],
+	tasks: [{
+		uid: "264a6a4e",
+		type: "checkmark",
+		title: "Gasoline",
+		icon: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "gasoline",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

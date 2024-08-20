@@ -1,0 +1,24 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "8663c0f7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:lapis_cobblestone"
+		}]
+	},
+	{
+		uid: "acc8ba0e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:lapis_stone"
+		}]
+	}],
+	rewards: [{
+		uid: "1cb171c5",
+		type: "item",
+		item: "contenttweaker:lapis_stone",
+		count: 4
+	}]
+}

@@ -1,0 +1,71 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"b1759689",
+		"95048f83"
+	],
+	tasks: [{
+		uid: "82d6e45f",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal_empowered"
+		}]
+	},
+	{
+		uid: "453eb8fe",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal_empowered 1 1"
+		}]
+	},
+	{
+		uid: "2e245e58",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal_empowered 1 2"
+		}]
+	},
+	{
+		uid: "5af2bee2",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal_empowered 1 3"
+		}]
+	},
+	{
+		uid: "129793d7",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal_empowered 1 4"
+		}]
+	},
+	{
+		uid: "ab7bb8ba",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_crystal_empowered 1 5"
+		}]
+	},
+	{
+		uid: "6b9860be",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ecoppra"
+		}]
+	},
+	{
+		uid: "9c0df440",
+		type: "item",
+		items: [{
+			item: "contenttweaker:enittin"
+		}]
+	},
+	{
+		uid: "c8760aa9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:egoold"
+		}]
+	}]
+}

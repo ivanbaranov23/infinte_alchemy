@@ -1,0 +1,7 @@
+{
+	title: "shop",
+	icon: "contenttweaker:quest_coin",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

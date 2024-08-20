@@ -1,0 +1,79 @@
+infuse.gold=Gold
+infuse.mana=Mana Powder
+
+item.contenttweaker.naoh.name=Sodium Hydroxide Dust
+gas.naoh=Sodium Hydroxide Gas
+fluid.naoh=Liquid Sodium Hydroxide
+
+gas.nitrogen=Nitrogen Gas
+fluid.nitrogen=Liquid Nitrogen
+
+gas.ammonia=Ammonia Gas
+fluid.ammonia=Liquid Ammonia
+
+gas.nitric_oxide=Nitric Oxide
+gas.nitric_dioxide=Nitric Dioxide
+
+gas.nitric_acid=Nitric Acid Gas
+fluid.nitric_acid=Liquid Nitric Acid
+
+gas.ammonium_nitrate=Ammonium Nitrate Gas
+fluid.ammonium_nitrate=Liquid Ammonium Nitrate
+
+fluid.cold_nitrogen=Cold Liquid Nitrogen
+
+gas.rfna=Red Fuming Nitric Acid
+
+
+gas.polyethylene=Polyethylene Gas
+fluid.polyethylene=Liquid Polyethylene
+
+gas.butene=Butene Gas
+fluid.butene=Liquid Butene
+
+gas.hexane=Hexane Gas
+fluid.hexane=Liquid Hexane
+gas.ethylbenzene=Ethylbenzene Gas
+fluid.ethylbenzene=Liquid Ethylbenzene
+
+
+gas.fluorine=Fluorine Gas
+fluid.fluorine=Liquid Fluorine
+gas.hf=Hydrogen Fluoride Gas
+fluid.hf=Liquid Hydrogen Fluoride
+
+
+
+gas.osgloridium=Gaseous Osgloridium
+
+gas.light1=Light Reactive Gas
+gas.light2=Gasefied Light
+fluid.light2=Liquefied Light
+
+
+
+gas.evil=Evil
+gas.evil_nitrate=Evil Nitrate
+gas.neutron_inert=Inert Neutron Gas
+gas.neutron_active=Activated Neutron Gas
+
+
+gas.methane=Methane Gas
+fluid.methane=Liquid Methane
+
+gas.acetic_acid=Acetic Acid Gas
+fluid.acetic_acid=Liquid Acetic Acid
+gas.formaldehyde=Formaldehyde Gas
+fluid.formaldehyde=Liquid Formaldehyde
+
+gas.ethyl_cyanoacrylate=Ethyl Cyanoacrylate Gas
+fluid.ethyl_cyanoacrylate=Liquid Ethyl Cyanoacrylate
+gas.cyanoacrylate=Cyanoacrylate Gas
+fluid.cyanoacrylate=Liquid Cyanoacrylate
+
+gas.ethylene_oxide=Ethylene Oxide
+gas.ethanolamine=Ethanolamine
+gas.taurine=Taurine Gas
+fluid.taurine=Liquid Taurine
+
+gas.explosion_stone_glue=Glued-Explosion Stone Gas

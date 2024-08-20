@@ -1,0 +1,20 @@
+{
+	x: 16.5d,
+	y: 2.0d,
+	dependencies: [
+		"3f338c31"
+	],
+	optional: true,
+	tasks: [{
+		uid: "18f034bc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:slate_7"
+		}]
+	}],
+	rewards: [{
+		uid: "3ceeda7b",
+		type: "item",
+		item: "contenttweaker:slate_7"
+	}]
+}

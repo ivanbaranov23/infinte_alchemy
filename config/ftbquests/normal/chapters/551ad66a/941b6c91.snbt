@@ -1,0 +1,24 @@
+{
+	x: -3.0d,
+	y: 0.0d,
+	text: [
+		"Do you like alloys? I like alloys.",
+		"",
+		"You can make bronze in TiC smeltery or grind copper and tin into dust and mix them."
+	],
+	dependencies: [
+		"32464c8e"
+	],
+	tasks: [{
+		uid: "c8a8b9e6",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 163"
+		}]
+	}],
+	rewards: [{
+		uid: "3f045f2b",
+		type: "item",
+		item: "thermalfoundation:storage_alloy 1 3"
+	}]
+}

@@ -1,0 +1,55 @@
+{
+	x: 6.0d,
+	y: -1.0d,
+	dependencies: [
+		"24a16aff"
+	],
+	tasks: [{
+		uid: "cabba9a7",
+		type: "item",
+		items: [{
+			item: "minecraft:gold_ingot"
+		}]
+	},
+	{
+		uid: "a2b9f145",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 130"
+		}]
+	},
+	{
+		uid: "414c2be4",
+		type: "item",
+		items: [{
+			item: "mekanism:ingot 1 1"
+		}]
+	},
+	{
+		uid: "9d85ff90",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 131"
+		}]
+	}],
+	rewards: [{
+		uid: "65354501",
+		type: "item",
+		item: "minecraft:gold_block"
+	},
+	{
+		uid: "84ba9a6d",
+		type: "item",
+		item: "thermalfoundation:storage 1 2"
+	},
+	{
+		uid: "8e73d99e",
+		type: "item",
+		item: "mekanism:basicblock"
+	},
+	{
+		uid: "34f17b9a",
+		type: "item",
+		item: "thermalfoundation:storage 1 3"
+	}]
+}

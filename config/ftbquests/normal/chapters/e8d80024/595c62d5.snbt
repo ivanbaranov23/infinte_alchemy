@@ -1,0 +1,30 @@
+{
+	x: 15.5d,
+	y: -2.5d,
+	dependencies: [
+		"dfd9e26b"
+	],
+	tasks: [{
+		uid: "ca237f4a",
+		type: "item",
+		items: [{
+			item: "botania:alfheimportal"
+		}]
+	},
+	{
+		uid: "5a0ace2a",
+		type: "item",
+		items: [{
+			item: "botania:pylon 1 1"
+		}],
+		count: 2L
+	},
+	{
+		uid: "4abb0f4d",
+		type: "item",
+		items: [{
+			item: "botania:livingwood 1 5"
+		}],
+		count: 3L
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: 5.0d,
+	y: -5.0d,
+	dependencies: [
+		"e2e2dc24"
+	],
+	tasks: [{
+		uid: "23bcbb7c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:neuro_crystal"
+		}]
+	}],
+	rewards: [{
+		uid: "57c8534a",
+		type: "item",
+		item: "contenttweaker:neuro_crystal"
+	}]
+}

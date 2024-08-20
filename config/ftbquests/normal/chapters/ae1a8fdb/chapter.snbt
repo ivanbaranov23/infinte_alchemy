@@ -1,0 +1,7 @@
+{
+	title: "ch 13.2: Draconic",
+	icon: "draconicevolution:draconic_ingot",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

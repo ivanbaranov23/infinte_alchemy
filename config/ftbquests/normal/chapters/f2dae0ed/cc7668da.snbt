@@ -1,0 +1,17 @@
+{
+	x: 2.0d,
+	y: 5.0d,
+	text: [
+		"used for fertilizers and in industrial bonsai pot."
+	],
+	dependencies: [
+		"e42d62da"
+	],
+	tasks: [{
+		uid: "2d629374",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:fertilizer"
+		}]
+	}]
+}

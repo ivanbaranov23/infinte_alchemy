@@ -1,0 +1,22 @@
+{
+	x: 17.0d,
+	y: 0.0d,
+	text: [
+		"This ingot is a bit dark."
+	],
+	dependencies: [
+		"02409eb4"
+	],
+	tasks: [{
+		uid: "7b1414a5",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_ore_tungsten 1 3"
+		}]
+	}],
+	rewards: [{
+		uid: "d82e39eb",
+		type: "item",
+		item: "contenttweaker:tungsten_block"
+	}]
+}

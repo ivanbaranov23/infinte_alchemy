@@ -1,0 +1,15 @@
+{
+	title: "Welcome to End (dimension)",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	text: [
+		"Get to the End and kill the pushover lizard."
+	],
+	tasks: [{
+		uid: "c12ac53e",
+		type: "dimension",
+		icon: "minecraft:end_stone",
+		dim: 1
+	}]
+}

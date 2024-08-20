@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: 0.0d,
+	dependencies: [
+		"44475ad0"
+	],
+	tasks: [{
+		uid: "77c724a9",
+		type: "item",
+		items: [{
+			item: "modularcontroller:energy_infuser_controller"
+		}]
+	}]
+}

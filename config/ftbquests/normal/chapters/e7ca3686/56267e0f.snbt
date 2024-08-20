@@ -1,0 +1,15 @@
+{
+	x: -3.0d,
+	y: -5.0d,
+	dependencies: [
+		"e9c0fd86"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0c7a3ba2",
+		type: "item",
+		items: [{
+			item: "enderio:block_painter"
+		}]
+	}]
+}

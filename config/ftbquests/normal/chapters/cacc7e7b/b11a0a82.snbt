@@ -1,0 +1,96 @@
+{
+	title: "Pay to Win",
+	icon: {
+		id: "contenttweaker:luck_crystal",
+		tag: {
+			luck: 100
+		},
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {
+				AS_Amulet_HolderLeast: -5658007986434875901L,
+				AS_Amulet_HolderMost: -7773060121311102705L
+			}
+		}
+	},
+	x: -2.5d,
+	y: 4.0d,
+	text: [
+		"Can be used to kick start the loop. Do note that luck 100 crystals have other uses."
+	],
+	dependencies: [
+		"1d7516be"
+	],
+	tasks: [{
+		uid: "e914e3fa",
+		type: "item",
+		items: [{
+			item: "contenttweaker:luck_crystal_base"
+		}],
+		count: 4L,
+		consume_items: true
+	},
+	{
+		uid: "442139c3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "4911cba2",
+		type: "item",
+		item: {
+			id: "contenttweaker:luck_crystal",
+			tag: {
+				luck: 99
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "9cc56e16",
+		type: "item",
+		item: {
+			id: "contenttweaker:luck_crystal",
+			tag: {
+				luck: 99
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "34a04ba1",
+		type: "item",
+		item: {
+			id: "contenttweaker:luck_crystal",
+			tag: {
+				luck: 99
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "722ae7fa",
+		type: "item",
+		item: {
+			id: "contenttweaker:luck_crystal",
+			tag: {
+				luck: 100
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}
+	}]
+}

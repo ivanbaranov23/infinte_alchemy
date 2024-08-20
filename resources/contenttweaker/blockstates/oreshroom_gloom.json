@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "bot": "twilightforest:blocks/huge_gloom_cap",
+      "top": "contenttweaker:blocks/parts/stone_overlay",
+      "particle": "twilightforest:blocks/huge_gloom_cap"
+    },
+    "model": "chisel:cube_2_layer_topshaded",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

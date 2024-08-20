@@ -1,0 +1,32 @@
+{
+	x: 0.0d,
+	y: 3.0d,
+	text: [
+		"Cheaper rods and wires! Some unique crafts like biomass and noodles! and planks i guess."
+	],
+	dependencies: [
+		"31c8f138"
+	],
+	tasks: [{
+		uid: "400b7c1a",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:machine",
+			Damage: 2s,
+			tag: {
+				RSControl: 0b,
+				Facing: 3b,
+				Energy: 0,
+				SideCache: [B;
+					3b,
+					1b,
+					2b,
+					2b,
+					2b,
+					2b
+				],
+				Level: 0b
+			}
+		}]
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	title: "Machine Frame 7b",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "6ccac282",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:machine_casing"
+		}]
+	}],
+	rewards: [{
+		uid: "ed2415de",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

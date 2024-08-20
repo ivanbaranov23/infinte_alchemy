@@ -1,0 +1,18 @@
+{
+	x: -2.0d,
+	y: -4.0d,
+	text: [
+		"Will spread like vanilla mushrooms. Can also be grown into big mushroom"
+	],
+	dependencies: [
+		"7dc92e03",
+		"f6d2ba39"
+	],
+	tasks: [{
+		uid: "f19a54f0",
+		type: "item",
+		items: [{
+			item: "roots:baffle_cap_mushroom"
+		}]
+	}]
+}

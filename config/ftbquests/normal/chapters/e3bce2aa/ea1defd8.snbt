@@ -1,0 +1,15 @@
+{
+	x: 5.0d,
+	y: 6.0d,
+	text: [
+		"Corn can be mixed and distilled to get Zinc, Nickel and Yellorium. You can also get Iridium if you mix it twice."
+	],
+	optional: true,
+	tasks: [{
+		uid: "1e2c5f64",
+		type: "item",
+		items: [{
+			item: "harvestcraft:cornitem"
+		}]
+	}]
+}

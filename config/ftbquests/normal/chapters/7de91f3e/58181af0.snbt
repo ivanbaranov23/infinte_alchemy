@@ -1,0 +1,14 @@
+{
+	x: 7.0d,
+	y: 0.5d,
+	dependencies: [
+		"21c3d6a8"
+	],
+	tasks: [{
+		uid: "a2f486e6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ion_beads"
+		}]
+	}]
+}

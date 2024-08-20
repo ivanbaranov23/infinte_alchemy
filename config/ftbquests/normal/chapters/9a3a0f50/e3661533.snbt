@@ -1,0 +1,15 @@
+{
+	x: 2.0d,
+	y: -3.0d,
+	dependencies: [
+		"bad04a7d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9a7fa53c",
+		type: "item",
+		items: [{
+			item: "ae2stuff:grower"
+		}]
+	}]
+}

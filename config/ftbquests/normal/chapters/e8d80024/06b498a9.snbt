@@ -1,0 +1,19 @@
+{
+	x: 14.0d,
+	y: -3.0d,
+	dependencies: [
+		"dfd9e26b"
+	],
+	tasks: [{
+		uid: "92f47857",
+		type: "item",
+		items: [{
+			item: "plustic:mirioningot"
+		}]
+	}],
+	rewards: [{
+		uid: "7d0d1154",
+		type: "item",
+		item: "plustic:mirionblock"
+	}]
+}

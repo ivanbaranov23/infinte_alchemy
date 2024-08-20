@@ -1,0 +1,15 @@
+{
+	x: 4.5d,
+	y: -3.0d,
+	dependencies: [
+		"81299814"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c06e4cff",
+		type: "item",
+		items: [{
+			item: "prodigytech:capacitor_aeroheater"
+		}]
+	}]
+}

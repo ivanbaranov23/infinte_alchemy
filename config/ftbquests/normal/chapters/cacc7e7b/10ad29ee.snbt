@@ -1,0 +1,24 @@
+{
+	title: "Impulse Hopper",
+	icon: "enderio:block_impulse_hopper",
+	x: 5.5d,
+	y: 3.0d,
+	text: [
+		"You can use grainy capacitor in early game"
+	],
+	tasks: [{
+		uid: "bd75fc78",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "a54bcac0",
+		type: "item",
+		item: "enderio:block_impulse_hopper",
+		count: 8
+	}]
+}

@@ -1,0 +1,24 @@
+{
+	x: 8.5d,
+	y: 5.0d,
+	shape: "square",
+	dependencies: [
+		"3b1a1171"
+	],
+	tasks: [{
+		uid: "246cd782",
+		type: "item",
+		items: [{
+			id: "immersiveengineering:tool",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "acb78af7",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

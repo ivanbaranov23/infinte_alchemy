@@ -1,0 +1,20 @@
+{
+	x: 1.0d,
+	y: 4.0d,
+	text: [
+		"Used to make bread, dough and vinegar. Once obtained, can be duped with organic fluids. ",
+		"",
+		"There is also a large loop for making yeast and high quality yeast. "
+	],
+	dependencies: [
+		"aef31a57"
+	],
+	optional: true,
+	tasks: [{
+		uid: "bf2a58c1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:yeast"
+		}]
+	}]
+}

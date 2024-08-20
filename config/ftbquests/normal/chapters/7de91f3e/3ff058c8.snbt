@@ -1,0 +1,13 @@
+{
+	x: 14.5d,
+	y: 2.0d,
+	dependencies: [
+		"e997e1c0"
+	],
+	tasks: [{
+		uid: "97b36a33",
+		type: "checkmark",
+		title: "BloodHunter Mech",
+		icon: "contenttweaker:bloodhunter_mech"
+	}]
+}

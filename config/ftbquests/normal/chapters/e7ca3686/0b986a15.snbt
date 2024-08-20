@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: 0.0d,
+	dependencies: [
+		"f085eed4",
+		"30efc77d"
+	],
+	tasks: [{
+		uid: "5b23016f",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 66"
+		}]
+	}],
+	rewards: [{
+		uid: "e6b21eb2",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

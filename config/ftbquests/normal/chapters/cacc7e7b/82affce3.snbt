@@ -1,0 +1,32 @@
+{
+	title: "I ain't gro'ing no tree",
+	icon: "natura:redwood_logs 1 1",
+	x: 3.5d,
+	y: 3.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"4d6765f2"
+	],
+	tasks: [{
+		uid: "53d082b6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "b7a99ba5",
+		type: "item",
+		item: "natura:redwood_logs",
+		count: 64
+	},
+	{
+		uid: "bc973161",
+		type: "item",
+		item: "natura:redwood_logs 1 1",
+		count: 64
+	}]
+}

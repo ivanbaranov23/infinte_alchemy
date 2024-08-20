@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "abfdd1c0",
+		type: "item",
+		items: [{
+			item: "tconstruct:materials"
+		}]
+	}],
+	rewards: [{
+		uid: "96ec4c74",
+		type: "item",
+		item: "tconstruct:seared 1 3"
+	}]
+}

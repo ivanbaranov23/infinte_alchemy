@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "ea6c1ae1",
+		type: "item",
+		items: [{
+			id: "roots:staff",
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

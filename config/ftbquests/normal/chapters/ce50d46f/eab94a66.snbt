@@ -1,0 +1,16 @@
+{
+	x: 5.5d,
+	y: 5.0d,
+	dependencies: [
+		"37c7bfaa",
+		"3fed946f",
+		"aaa37218"
+	],
+	tasks: [{
+		uid: "eaf268f7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:satellite_computer"
+		}]
+	}]
+}

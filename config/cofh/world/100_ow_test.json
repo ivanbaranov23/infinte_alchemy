@@ -1,0 +1,60 @@
+{
+    "populate":{
+        "meatball_realm": {
+            "enabled": "false",
+			"distribution": "uniform",
+            "generator": {
+                "type": "sequential",
+                "generators": [
+                    {
+                        "type": "geode",
+
+                        "block": [
+                            "minecraft:stone"
+                        ],
+                        "crust": [
+                            "minecraft:dirt",
+                            "grass"
+                        ]
+                    },
+                    {
+                        "type": "stalactite",
+
+                        "block": [
+                            "minecraft:stone"
+                        ],
+                        "material": [
+                            "dirt",
+                            "grass",
+                            "air",
+                            "stone"
+                        ],
+                        "gen-body": [
+                            "air",
+                            "stone",
+                            "dirt"
+                        ],
+                        "height-mod": 3,
+                        
+                        "smooth": true
+                    }
+                ],
+                "material": [
+                    "air"
+                ]
+            },
+			"cluster-count": 1,
+            "chunk-chance": 10,
+			"min-height": 60,
+			"max-height": 180,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					0
+				]
+			}
+        }
+    }
+}

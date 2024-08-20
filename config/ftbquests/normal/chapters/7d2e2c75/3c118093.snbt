@@ -1,0 +1,24 @@
+{
+	x: 20.0d,
+	y: 0.0d,
+	text: [
+		"Can be made more efficiently with dilithium."
+	],
+	dependencies: [
+		"b1fd723f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e4da6e84",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 74"
+		}]
+	}],
+	rewards: [{
+		uid: "a5596649",
+		type: "item",
+		item: "alchemistry:ingot 1 74",
+		count: 9
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	title: "Welcome to Erebus!",
+	x: 4.0d,
+	y: 0.0d,
+	shape: "square",
+	text: [
+		"Welcome to bug land. Erebus mod provides you a wide range of insects and mechanics to play with. ",
+		"",
+		"Like for example did you know that unlike nether, in erebus bed will just disapear when you place it. Here try it."
+	],
+	dependencies: [
+		"958bdc75"
+	],
+	tasks: [{
+		uid: "02441012",
+		type: "item",
+		items: [{
+			item: "erebus:umberstone"
+		}]
+	}],
+	rewards: [{
+		uid: "9e4b1d98",
+		type: "item",
+		item: {
+			id: "minecraft:bed",
+			Damage: 14s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

@@ -1,0 +1,15 @@
+{
+	title: "Welcome to Hell",
+	x: 0.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	text: [
+		"You might notice that the nether is a bit less empty than normal."
+	],
+	tasks: [{
+		uid: "2b031296",
+		type: "dimension",
+		icon: "minecraft:netherrack",
+		dim: -1
+	}]
+}

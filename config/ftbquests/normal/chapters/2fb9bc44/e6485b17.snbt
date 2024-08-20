@@ -1,0 +1,14 @@
+{
+	x: -0.5d,
+	y: 4.0d,
+	dependencies: [
+		"ba9fb1c6"
+	],
+	tasks: [{
+		uid: "8b204790",
+		type: "item",
+		items: [{
+			item: "prodigytech:meat_ground"
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 10.0d,
+	y: 2.0d,
+	text: [
+		"Singularity Dust can be made from any singularity, tho some give more than others.",
+		"",
+		"Early game, it is used for cool trinkets "
+	],
+	dependencies: [
+		"6f43094e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1513842d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:singularity_dust"
+		}]
+	}]
+}

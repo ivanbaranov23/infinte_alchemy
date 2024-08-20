@@ -1,0 +1,40 @@
+[
+  {"id": "overworldian",
+    "displayName": "Overworldian",
+    "displayColor": "green",
+    "xpValue": 10
+  },
+  {"id": "hellish",
+    "displayName": "Hellish",
+    "displayColor": "red",
+    "xpValue": 14
+  },
+  {"id": "extraterrestrial",
+    "displayName": "Extraterrestrial",
+    "displayColor": "light_purple",
+    "xpValue": 20
+  },
+  {"id": "twilight",
+    "mod": "twilightforest",
+    "displayName": "Twilight",
+    "displayColor": "blue",
+    "xpValue": 30
+  },
+  {
+    "id": "aether",
+    "displayName": "Aether",
+    "displayColor": "aqua",
+    "xpValue": 16
+  },
+  {"id": "atum",
+    "displayName": "Atum",
+    "displayColor": "gold",
+    "xpValue": 16
+  },
+  {
+    "id": "erebus",
+    "displayName": "Erebus",
+    "displayColor": "green",
+    "xpValue": 16
+  }
+]

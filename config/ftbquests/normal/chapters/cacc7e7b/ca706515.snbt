@@ -1,0 +1,27 @@
+{
+	title: "A ton of Iron",
+	icon: "minecraft:iron_ingot",
+	x: -2.5d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"32464c8e"
+	],
+	tasks: [{
+		uid: "154b3594",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "1eeca6b1",
+		type: "item",
+		auto: "disabled",
+		item: "minecraft:iron_block",
+		count: 64
+	}]
+}

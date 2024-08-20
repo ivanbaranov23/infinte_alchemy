@@ -1,0 +1,16 @@
+{
+	x: 6.0d,
+	y: -3.0d,
+	tasks: [{
+		uid: "9643c578",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_dragon",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

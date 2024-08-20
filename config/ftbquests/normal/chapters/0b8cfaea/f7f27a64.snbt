@@ -1,0 +1,27 @@
+{
+	x: -0.5d,
+	y: -1.0d,
+	text: [
+		"Make a pyre. To craft an item put all items on the pyre and light it on fire."
+	],
+	dependencies: [
+		"911ba93a"
+	],
+	tasks: [{
+		uid: "b08f3317",
+		type: "item",
+		items: [{
+			item: "roots:pyre"
+		}]
+	}],
+	rewards: [{
+		uid: "3465e448",
+		type: "item",
+		item: "roots:fire_starter"
+	},
+	{
+		uid: "09a19f14",
+		type: "item",
+		item: "roots:roots_guide"
+	}]
+}

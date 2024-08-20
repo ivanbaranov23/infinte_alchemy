@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"You'll need a lot of this very soon."
+	],
+	dependencies: [
+		"51fd7c52"
+	],
+	tasks: [{
+		uid: "a94d0636",
+		type: "item",
+		items: [{
+			item: "twilightforest:fiery_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "0e66ec42",
+		type: "item",
+		item: "twilightforest:block_storage 1 1"
+	}]
+}

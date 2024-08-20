@@ -1,0 +1,55 @@
+{
+	title: "Bee keeping",
+	icon: {
+		id: "erebus:horn_of_summoning",
+		ForgeCaps: {
+			"astralsorcery:cap_item_amulet_holder": {}
+		}
+	},
+	x: 8.0d,
+	y: 0.0d,
+	text: [
+		"Bee keeping can BEE very useful and you'll need a lot of honey for TE chapter.",
+		"",
+		"To do bee keeping:",
+		"1) take some bees with you home. ",
+		"2) make/collect item listed in this quest. ",
+		"3) make an enclosure for your bee.",
+		"4) right click bee talisman on comb block and then right click on the bee.",
+		"5) place a stigma nearby. ",
+		"",
+		"The bee will fly between stigma and comb, depositing nectar in the comb.",
+		"One bee should BEE enough for quite a while.",
+		"",
+		"The bee can sometimes miss it's destination and BEEcome confused. It works best when both stigma and comb are flush with the floor."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9c3d6fab",
+		type: "item",
+		items: [{
+			id: "erebus:bee_taming_amulet",
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "c436ab81",
+		type: "item",
+		items: [{
+			item: "erebus:honey_comb"
+		}]
+	},
+	{
+		uid: "5ca83aff",
+		type: "checkmark",
+		title: "Large flower stigma"
+	}]
+}

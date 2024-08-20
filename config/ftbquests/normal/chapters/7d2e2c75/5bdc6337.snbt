@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	dependencies: [
+		"3aeeee1c"
+	],
+	tasks: [{
+		uid: "3465ed4d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gastight_steel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "33b8c817",
+		type: "item",
+		item: "contenttweaker:gastight_steel_block"
+	}]
+}

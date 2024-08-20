@@ -1,0 +1,14 @@
+{
+	x: 11.0d,
+	y: -7.0d,
+	dependencies: [
+		"1da77330"
+	],
+	tasks: [{
+		uid: "805716d4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:noble_gases_ingot"
+		}]
+	}]
+}

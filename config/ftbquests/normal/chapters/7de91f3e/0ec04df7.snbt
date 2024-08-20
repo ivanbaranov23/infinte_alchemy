@@ -1,0 +1,18 @@
+{
+	title: "Tier II",
+	x: 5.0d,
+	y: -7.5d,
+	text: [
+		"8 runes for tier 2"
+	],
+	dependencies: [
+		"d0d72860"
+	],
+	tasks: [{
+		uid: "84133961",
+		type: "item",
+		items: [{
+			item: "bloodmagic:blood_rune"
+		}]
+	}]
+}

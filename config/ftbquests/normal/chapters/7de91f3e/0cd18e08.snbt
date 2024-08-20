@@ -1,0 +1,25 @@
+{
+	title: "Machine Frame 11",
+	x: -3.5d,
+	y: -8.5d,
+	shape: "square",
+	text: [
+		""
+	],
+	dependencies: [
+		"69bfb741",
+		"e485ecd7"
+	],
+	tasks: [{
+		uid: "b36e139d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:soul_frame"
+		}]
+	}],
+	rewards: [{
+		uid: "6fad455e",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "Machine Frame 5",
+	x: -4.0d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"b5128cac"
+	],
+	tasks: [{
+		uid: "a180af4e",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_misc 1 9"
+		}]
+	}],
+	rewards: [{
+		uid: "9ca1f656",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

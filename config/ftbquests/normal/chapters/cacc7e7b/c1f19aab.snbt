@@ -1,0 +1,14 @@
+{
+	title: "Welcome to shop",
+	x: 0.5d,
+	y: -1.5d,
+	text: [
+		"Here you can spend your quest coins for items that are useful but gated or very expensive."
+	],
+	tasks: [{
+		uid: "1fad6046",
+		type: "checkmark",
+		title: "Welcome to shop",
+		icon: "contenttweaker:quest_coin"
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: -1.0d,
+	y: -1.0d,
+	tasks: [{
+		uid: "8be75fd9",
+		type: "item",
+		items: [{
+			item: "minecraft:nether_wart"
+		}]
+	}]
+}

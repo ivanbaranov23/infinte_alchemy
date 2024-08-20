@@ -1,0 +1,15 @@
+{
+	x: 15.5d,
+	y: 3.0d,
+	dependencies: [
+		"3ff058c8"
+	],
+	optional: true,
+	tasks: [{
+		uid: "22a1d924",
+		type: "item",
+		items: [{
+			item: "contenttweaker:slate_6"
+		}]
+	}]
+}

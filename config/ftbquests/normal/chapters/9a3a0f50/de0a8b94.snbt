@@ -1,0 +1,17 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	shape: "rsquare",
+	tasks: [{
+		uid: "e8448c99",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fluix_steel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "c0e3ecd2",
+		type: "item",
+		item: "contenttweaker:fluix_steel_block"
+	}]
+}

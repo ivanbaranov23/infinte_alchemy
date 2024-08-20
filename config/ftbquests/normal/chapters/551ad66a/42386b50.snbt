@@ -1,0 +1,21 @@
+{
+	x: 1.0d,
+	y: 0.0d,
+	dependencies: [
+		"418b4fc5",
+		"67b53646"
+	],
+	tasks: [{
+		uid: "aa4ca754",
+		type: "item",
+		items: [{
+			item: "tconstruct:smeltery_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "fc0094c9",
+		type: "item",
+		item: "tconstruct:seared 1 3",
+		count: 12
+	}]
+}

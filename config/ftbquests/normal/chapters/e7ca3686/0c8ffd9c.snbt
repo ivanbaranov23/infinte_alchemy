@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: -7.0d,
+	tasks: [{
+		uid: "31aa1f9a",
+		type: "item",
+		items: [{
+			item: "enderio:item_capacitor_silver"
+		}]
+	}],
+	rewards: [{
+		uid: "22d6948c",
+		type: "item",
+		item: "enderio:item_capacitor_silver"
+	}]
+}

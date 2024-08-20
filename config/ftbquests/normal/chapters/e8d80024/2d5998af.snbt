@@ -1,0 +1,12 @@
+{
+	x: -2.0d,
+	y: -4.0d,
+	shape: "square",
+	tasks: [{
+		uid: "8c1b719d",
+		type: "item",
+		items: [{
+			item: "botania:livingwood"
+		}]
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -1.0d,
+	y: -6.5d,
+	dependencies: [
+		"1c5a4faf"
+	],
+	tasks: [{
+		uid: "e6c94af9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:reagent_glass"
+		}]
+	}],
+	rewards: [{
+		uid: "e3ce2ad1",
+		type: "item",
+		item: "contenttweaker:reagent_glass"
+	}]
+}

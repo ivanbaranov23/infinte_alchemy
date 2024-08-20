@@ -1,0 +1,25 @@
+{
+	x: 11.0d,
+	y: 1.0d,
+	text: [
+		"Can be used for a better Empowered Steam recipes and skipping some empowering recipes"
+	],
+	dependencies: [
+		"5b409601",
+		"6b17bf34"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ae4ae79d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:empowered_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "935d2609",
+		type: "item",
+		item: "contenttweaker:empowered_shard",
+		count: 9
+	}]
+}

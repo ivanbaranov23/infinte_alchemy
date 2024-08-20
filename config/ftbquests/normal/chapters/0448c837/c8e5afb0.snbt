@@ -1,0 +1,23 @@
+{
+	x: 3.0d,
+	y: -3.0d,
+	text: [
+		"Can be found in Aether"
+	],
+	dependencies: [
+		"95048f83"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c02eb608",
+		type: "item",
+		items: [{
+			item: "contenttweaker:awaken_uru_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "69f77862",
+		type: "item",
+		item: "contenttweaker:awaken_uru_block"
+	}]
+}

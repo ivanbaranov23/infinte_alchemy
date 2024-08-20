@@ -1,0 +1,14 @@
+{
+	x: -6.0d,
+	y: 7.0d,
+	dependencies: [
+		"2e65852d"
+	],
+	tasks: [{
+		uid: "70861b75",
+		type: "item",
+		items: [{
+			item: "contenttweaker:osgloridium_processor"
+		}]
+	}]
+}

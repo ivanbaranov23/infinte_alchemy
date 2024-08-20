@@ -1,0 +1,22 @@
+{
+	x: 13.5d,
+	y: 4.0d,
+	text: [
+		"Pour 4 buckets of second chance potion on a dead bush to revive it."
+	],
+	dependencies: [
+		"1d7516be"
+	],
+	tasks: [{
+		uid: "1e70e902",
+		type: "item",
+		items: [{
+			item: "contenttweaker:revived_bush"
+		}]
+	}],
+	rewards: [{
+		uid: "32fe2c1a",
+		type: "item",
+		item: "contenttweaker:revived_bush"
+	}]
+}

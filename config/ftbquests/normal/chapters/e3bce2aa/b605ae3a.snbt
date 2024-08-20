@@ -1,0 +1,66 @@
+{
+	title: "Research Sieving",
+	icon: "contenttweaker:research_sieving",
+	x: 11.0d,
+	y: 3.0d,
+	shape: "gear",
+	text: [
+		"Gate for heavy sifter, large sifter, meshes above diamond and primordium reactor."
+	],
+	dependencies: [
+		"32bf1311",
+		"0614573b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "12919fff",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 2"
+		}],
+		count: 12L
+	},
+	{
+		uid: "68df2b2c",
+		type: "item",
+		items: [{
+			item: "moreplates:pig_iron_gear"
+		}],
+		count: 8L
+	},
+	{
+		uid: "5a0275e2",
+		type: "item",
+		items: [{
+			item: "harvestcraft:doughitem"
+		}],
+		count: 16L
+	},
+	{
+		uid: "aadda924",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 1 497"
+		}]
+	},
+	{
+		uid: "5e20d249",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "refined_biofuel",
+				Amount: 1000
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true
+	}],
+	rewards: [{
+		uid: "64ef02c2",
+		type: "item",
+		item: "exnihilocreatio:item_mesh 1 3"
+	}]
+}

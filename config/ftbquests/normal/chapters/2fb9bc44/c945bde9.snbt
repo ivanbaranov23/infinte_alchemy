@@ -1,0 +1,20 @@
+{
+	x: 12.5d,
+	y: -1.0d,
+	dependencies: [
+		"4be5dc01"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c9b78602",
+		type: "item",
+		items: [{
+			item: "prodigytech:zorrasteel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8518fda1",
+		type: "item",
+		item: "prodigytech:zorrasteel_block"
+	}]
+}

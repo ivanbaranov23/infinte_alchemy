@@ -1,0 +1,15 @@
+{
+	x: 5.0d,
+	y: 8.0d,
+	dependencies: [
+		"bc973a01",
+		"30fd1eba"
+	],
+	tasks: [{
+		uid: "b141d9e4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:cursed_processor"
+		}]
+	}]
+}

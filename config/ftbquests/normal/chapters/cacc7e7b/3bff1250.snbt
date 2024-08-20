@@ -1,0 +1,26 @@
+{
+	title: "Singularity Dust",
+	icon: "contenttweaker:singularity_dust",
+	x: -2.5d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"11259bfd"
+	],
+	tasks: [{
+		uid: "ad117e5a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "42574c3f",
+		type: "item",
+		item: "contenttweaker:singularity_dust",
+		count: 4
+	}]
+}

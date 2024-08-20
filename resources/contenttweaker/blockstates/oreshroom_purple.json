@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "bot": "erebus:blocks/mushroom_block_skin_sarcastic_czech",
+      "top": "contenttweaker:blocks/parts/stone_overlay",
+      "particle": "erebus:blocks/mushroom_block_skin_sarcastic_czech"
+    },
+    "model": "chisel:cube_2_layer_topshaded",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

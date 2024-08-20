@@ -1,0 +1,11 @@
+{
+	x: 8.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "75de7c1a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:robodruid_mech"
+		}]
+	}]
+}

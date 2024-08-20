@@ -1,0 +1,16 @@
+{
+	x: 6.0d,
+	y: -4.0d,
+	dependencies: [
+		"37419417",
+		"10c3a768"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "b7d2acfe",
+		type: "item",
+		items: [{
+			item: "contenttweaker:soul_poison"
+		}]
+	}]
+}

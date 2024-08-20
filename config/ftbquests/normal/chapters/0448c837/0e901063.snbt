@@ -1,0 +1,19 @@
+{
+	x: -3.0d,
+	y: 3.0d,
+	dependencies: [
+		"54b8cdc7"
+	],
+	tasks: [{
+		uid: "fee34bea",
+		type: "item",
+		items: [{
+			item: "taiga:eezo_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "5f87d07e",
+		type: "item",
+		item: "taiga:eezo_block"
+	}]
+}

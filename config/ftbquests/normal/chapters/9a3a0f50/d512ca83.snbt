@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"51c18b24"
+	],
+	tasks: [{
+		uid: "137c0adb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:redstone_inlay"
+		}]
+	}]
+}

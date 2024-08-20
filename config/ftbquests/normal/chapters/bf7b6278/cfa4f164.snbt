@@ -1,0 +1,39 @@
+{
+	x: 10.0d,
+	y: -3.0d,
+	text: [
+		"This mb will output 4096 rf/tick by burning flammable fluid. It needs to be controlled via redstone so that it won't waste fuel when output is full.",
+		"",
+		"Output will always be 4096 rf/tick, but fuel consumption can be different. ",
+		"1 bucket of biodiesel will be turned into 512000 rf in 125 ticks (6.25 seconds).",
+		"1 bucket of diesel will be turned into 819200 rf in 200 tickes (10 seconds).",
+		"Some fluids are easier to produce than other.",
+		"",
+		"some of the fuels and consumptions:",
+		"biodiesel - 8 mb/t",
+		"diesel - 5 mb/t",
+		"",
+		"grassoline - 10 mb/t",
+		"refined fuel - 8 mb/t",
+		"",
+		"IF biofuel - 10 mb/t",
+		"",
+		"refined canola oil - 10 mb/t",
+		"crystallized oil - 5 mb/t",
+		"empowered oil - 2 mb/t",
+		"",
+		"Nuit blessed fuel - 2 mb/t",
+		"",
+		"flow of infinity - 0 mb/t (free power) (make a creative energy source at this point)"
+	],
+	dependencies: [
+		"05e9c099",
+		"0731544a",
+		"5c0c0007"
+	],
+	tasks: [{
+		uid: "684aa199",
+		type: "checkmark",
+		icon: "immersiveengineering:metal_multiblock 1 10"
+	}]
+}

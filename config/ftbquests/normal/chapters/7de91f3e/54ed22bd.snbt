@@ -1,0 +1,36 @@
+{
+	title: "DWC step 1",
+	x: 8.0d,
+	y: 12.0d,
+	text: [
+		"Make Demon Crucible and Demon Crystallizer. ",
+		"",
+		"Demon Crucible will release demon will into the chunk. ",
+		"",
+		"Demon Crystallizer will turn 100 will from the chunk into a demon will crystal cluster. That cluster will then grow at 50 will per crystal up to 7 crystals total.",
+		"",
+		"Also I would recommend putting Demon Crystalizer a 2-4 blocks in the air."
+	],
+	dependencies: [
+		"f5e6d636"
+	],
+	tasks: [{
+		uid: "d384ddd3",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crucible"
+		}]
+	},
+	{
+		uid: "73c622a4",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crystallizer"
+		}]
+	}],
+	rewards: [{
+		uid: "a608ae09",
+		type: "item",
+		item: "bloodmagic:soul_forge"
+	}]
+}

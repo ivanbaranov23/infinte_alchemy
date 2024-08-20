@@ -1,0 +1,23 @@
+{
+	title: "They said it couldn't be done",
+	x: 10.0d,
+	y: -7.0d,
+	text: [
+		"They were wrong"
+	],
+	dependencies: [
+		"981ccae0"
+	],
+	tasks: [{
+		uid: "5ac44377",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fluxed_invar_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "91efa8b9",
+		type: "item",
+		item: "contenttweaker:fluxed_invar_block"
+	}]
+}

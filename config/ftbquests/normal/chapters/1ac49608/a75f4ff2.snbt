@@ -1,0 +1,22 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	shape: "square",
+	text: [
+		"In your search for technological journey to transendence you stumbled onto a block; how do you manipulate a soul of a creature?",
+		"",
+		"Answer: radiation, exotic materials and a lot of energy. "
+	],
+	dependencies: [
+		"c8986548",
+		"e7da0d5c",
+		"f3fa8f30"
+	],
+	tasks: [{
+		uid: "97cb287e",
+		type: "item",
+		items: [{
+			item: "bloodmagic:soul_snare"
+		}]
+	}]
+}

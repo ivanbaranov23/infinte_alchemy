@@ -1,0 +1,26 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"Freezing Icestone dust or Celestial Crystal to Icestone Crystal takes 10 sec.",
+		"",
+		"Freezing block of lapis to Icestone Crystal takes 20 sec.",
+		"",
+		"Freezing lapis ore to Icestone Ore takes 20 sec."
+	],
+	dependencies: [
+		"afbf7d12"
+	],
+	tasks: [{
+		uid: "d65c7d95",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ice_shard"
+		}]
+	}],
+	rewards: [{
+		uid: "a38c1408",
+		type: "item",
+		item: "contenttweaker:ice_shard_block"
+	}]
+}

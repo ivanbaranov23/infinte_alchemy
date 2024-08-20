@@ -1,0 +1,37 @@
+{
+    "parent": "minecraft:block/block",
+    "ambientocclusion": false,
+    "textures": {
+        "particle": "blocks/glass",
+        "side": "contenttweaker:blocks/power_core",
+        "glass": "blocks/glass"
+    },
+    "elements": [
+        
+        
+        {   "__comment": "Glass shell",
+            "from": [ 4, 4, 4 ],
+            "to": [ 12, 12, 12 ],
+            "faces": {
+                "down":  { "uv": [ 3, 3, 12, 12 ], "texture": "#side" },
+                "up":    { "uv": [ 3, 3, 12, 12 ], "texture": "#side" },
+                "north": { "uv": [ 3, 3, 12, 12 ], "texture": "#side" },
+                "south": { "uv": [ 3, 3, 12, 12 ], "texture": "#side" },
+                "west":  { "uv": [ 3, 3, 12, 12 ], "texture": "#side" },
+                "east":  { "uv": [ 3, 3, 12, 12 ], "texture": "#side" }
+            }
+        },
+        {   "__comment": "Glass shell",
+            "from": [ 2, 2, 2 ],
+            "to": [ 14, 14, 14 ],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" },
+                "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#glass" }
+            }
+        }
+    ]
+}

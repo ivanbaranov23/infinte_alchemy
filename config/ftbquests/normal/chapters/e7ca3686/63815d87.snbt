@@ -1,0 +1,21 @@
+{
+	x: 7.0d,
+	y: 1.0d,
+	dependencies: [
+		"c5eba396",
+		"b9e791e1"
+	],
+	optional: true,
+	tasks: [{
+		uid: "56a61ccf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:explosion_device"
+		}]
+	}],
+	rewards: [{
+		uid: "0545d99a",
+		type: "item",
+		item: "contenttweaker:explosion_device_full"
+	}]
+}

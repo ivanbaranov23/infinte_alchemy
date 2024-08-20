@@ -1,0 +1,18 @@
+{
+	x: 9.0d,
+	y: -7.0d,
+	dependencies: [
+		"fccf7956"
+	],
+	tasks: [{
+		uid: "7aaf3a1b",
+		type: "checkmark",
+		title: "Nitrogen",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "nitrogen"
+			}
+		}
+	}]
+}

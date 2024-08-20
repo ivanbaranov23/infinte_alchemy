@@ -1,0 +1,24 @@
+{
+	title: "Soul vials",
+	icon: "enderio:item_soul_vial",
+	x: 1.5d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "8190bba2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "f57b82f1",
+		type: "item",
+		auto: "disabled",
+		item: "enderio:item_soul_vial",
+		count: 3
+	}]
+}

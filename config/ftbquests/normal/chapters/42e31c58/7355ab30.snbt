@@ -1,0 +1,110 @@
+{
+	icon: "deepmoblearning:trial_keystone",
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"Put a data model in deep learner and kill mobs to increase tier. Kill a mob while holding deep learner and trial key to attune it. Key will have the same tier as your data model.",
+		"",
+		"Place keystone in a middle of flat arena and insert trial key. After defeating all waves of mobs you'll get a reward.",
+		"During a trial a glitch will sometimes spawn. It will drop a glitch heart. You'll need them for simulation chambers. ",
+		"",
+		"You can buy keys at shop."
+	],
+	dependencies: [
+		"61ca22fc"
+	],
+	tasks: [{
+		uid: "308dbfca",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:trial_keystone"
+		}]
+	},
+	{
+		uid: "c0f2c241",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:trial_key",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b48af949",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_blank"
+		}]
+	},
+	{
+		uid: "79a7119b",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:deep_learner",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0b085ea1",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "zombie"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "16383b61",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "skeleton"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "36a8b2d6",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "enderman"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "1e05721e",
+		type: "item",
+		item: {
+			id: "deepmoblearning:trial_key",
+			tag: {
+				tier: 3,
+				attunement: "spider"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

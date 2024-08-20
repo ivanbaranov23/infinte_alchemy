@@ -1,0 +1,14 @@
+{
+	title: "Welcome to Mekanism Chapter",
+	x: -2.0d,
+	y: 0.0d,
+	shape: "square",
+	text: [
+		"Get ready to handling gas, machines with weird sides and 5x ore processing!"
+	],
+	tasks: [{
+		uid: "99208443",
+		type: "checkmark",
+		icon: "contenttweaker:mekanized_steel_ingot"
+	}]
+}

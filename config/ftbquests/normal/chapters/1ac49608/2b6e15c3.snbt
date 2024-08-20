@@ -1,0 +1,19 @@
+{
+	x: 0.0d,
+	y: 5.0d,
+	dependencies: [
+		"395610a5"
+	],
+	tasks: [{
+		uid: "fe1d106c",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material"
+		}]
+	}],
+	rewards: [{
+		uid: "2a4d33c2",
+		type: "item",
+		item: "extendedcrafting:storage"
+	}]
+}

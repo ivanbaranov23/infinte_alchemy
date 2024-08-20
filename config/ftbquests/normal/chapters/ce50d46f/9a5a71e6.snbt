@@ -1,0 +1,61 @@
+{
+	icon: "modularcontroller:satellite_launch_pad_controller",
+	x: 5.5d,
+	y: 7.0d,
+	text: [
+		"Used to launch Satellites and Drones. ",
+		"",
+		"Satellites will be linked to chip to be used in Satellite Controller"
+	],
+	dependencies: [
+		"3fed946f",
+		"aaa37218"
+	],
+	tasks: [{
+		uid: "a5c55e98",
+		type: "item",
+		items: [{
+			item: "modularcontroller:satellite_launch_pad_controller"
+		}]
+	},
+	{
+		uid: "cc15c171",
+		type: "item",
+		items: [{
+			item: "contenttweaker:starmetal_sheetmetal"
+		}],
+		count: 16L
+	},
+	{
+		uid: "899953be",
+		type: "item",
+		items: [{
+			item: "engineersdecor:rebar_concrete_tile"
+		}],
+		count: 54L
+	},
+	{
+		uid: "6c2a0aa6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:explosion_resistant_sheetmetal"
+		}],
+		count: 65L
+	},
+	{
+		uid: "6a722b0d",
+		type: "item",
+		items: [{
+			item: "botania:elfglass"
+		}],
+		count: 44L
+	},
+	{
+		uid: "1c07fc8a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ev_coil"
+		}],
+		count: 48L
+	}]
+}

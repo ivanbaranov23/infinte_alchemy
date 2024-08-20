@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: 0.5d,
+	dependencies: [
+		"1dee57dd"
+	],
+	tasks: [{
+		uid: "8bb51c40",
+		type: "item",
+		items: [{
+			item: "contenttweaker:reagent_bug"
+		}]
+	}]
+}

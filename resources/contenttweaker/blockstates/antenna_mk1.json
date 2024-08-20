@@ -1,0 +1,16 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "top": "contenttweaker:blocks/parts/antenna_top1",
+      "particle": "contenttweaker:blocks/antenna_mk1"
+    },
+    "model": "contenttweaker:antenna_mk1",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

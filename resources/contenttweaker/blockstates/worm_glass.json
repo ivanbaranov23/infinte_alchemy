@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "chisel:cube_2_layer_topshaded",
+    "textures": {
+      "particle": "contenttweaker:fluids/wormy_sand",
+      "top"     : "contenttweaker:blocks/parts/glass_frame",
+      "bot"     : "contenttweaker:fluids/wormy_sand"
+    }
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

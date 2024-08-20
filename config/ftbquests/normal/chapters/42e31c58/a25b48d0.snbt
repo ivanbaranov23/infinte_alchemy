@@ -1,0 +1,100 @@
+{
+	title: "Otherworld Mobs",
+	x: 0.0d,
+	y: -2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"b48af949"
+	],
+	tasks: [{
+		uid: "efdf271c",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_zombie",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "93f52b6f",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_skeleton",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "a6f51786",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_creeper",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "1451d9d4",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_spider",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "38a7a5c9",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_slime",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4f4f0d6d",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_witch",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "b734d8c5",
+		type: "item",
+		items: [{
+			id: "deepmoblearning:data_model_guardian",
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7866337f",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

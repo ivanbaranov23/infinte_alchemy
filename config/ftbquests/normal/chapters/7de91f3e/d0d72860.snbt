@@ -1,0 +1,26 @@
+{
+	title: "Orb 1",
+	x: 3.0d,
+	y: -5.5d,
+	text: [
+		"Can be made cheaper via elemental clay"
+	],
+	dependencies: [
+		"7b2724a0",
+		"aeb83bb3"
+	],
+	tasks: [{
+		uid: "482dd1f2",
+		type: "item",
+		items: [{
+			id: "bloodmagic:blood_orb",
+			tag: {
+				orb: "bloodmagic:weak"
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

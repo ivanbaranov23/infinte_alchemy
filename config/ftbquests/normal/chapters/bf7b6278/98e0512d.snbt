@@ -1,0 +1,13 @@
+{
+	title: "Ores",
+	x: 11.0d,
+	y: -3.0d,
+	text: [
+		"Drill for ores"
+	],
+	tasks: [{
+		uid: "935c0478",
+		type: "checkmark",
+		icon: "immersiveengineering:metal_multiblock 1 11"
+	}]
+}

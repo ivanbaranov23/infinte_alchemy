@@ -1,0 +1,32 @@
+{
+	x: -2.0d,
+	y: -8.5d,
+	dependencies: [
+		"0cd18e08"
+	],
+	tasks: [{
+		uid: "a30b9b46",
+		type: "item",
+		items: [{
+			item: "bloodmagic:soul_forge"
+		}]
+	}],
+	rewards: [{
+		uid: "b6ec347d",
+		type: "item",
+		item: {
+			id: "bloodmagic:monster_soul",
+			tag: {
+				souls: 16.0d
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	},
+	{
+		uid: "e1040774",
+		type: "item",
+		item: "bloodmagic:soul_forge"
+	}]
+}

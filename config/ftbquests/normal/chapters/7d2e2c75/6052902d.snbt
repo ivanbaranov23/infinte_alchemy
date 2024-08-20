@@ -1,0 +1,20 @@
+{
+	x: 19.0d,
+	y: 3.0d,
+	dependencies: [
+		"c0408051",
+		"b9474d8d"
+	],
+	tasks: [{
+		uid: "8e85a66b",
+		type: "item",
+		items: [{
+			item: "redstonearsenal:material 1 32"
+		}]
+	}],
+	rewards: [{
+		uid: "653d0f5c",
+		type: "item",
+		item: "redstonearsenal:storage"
+	}]
+}

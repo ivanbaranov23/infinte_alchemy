@@ -1,0 +1,11 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	tasks: [{
+		uid: "a0d0efe2",
+		type: "item",
+		items: [{
+			item: "modularcontroller:pworld_oregen_controller"
+		}]
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 4.0d,
+	dependencies: [
+		"f784b48c",
+		"51d09847"
+	],
+	tasks: [{
+		uid: "289162c4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:biocell"
+		}]
+	}],
+	rewards: [{
+		uid: "0823e6da",
+		type: "item",
+		item: "contenttweaker:biocell"
+	}]
+}

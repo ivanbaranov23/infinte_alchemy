@@ -1,0 +1,25 @@
+{
+	x: 15.0d,
+	y: 7.0d,
+	dependencies: [
+		"4d5a9ab0",
+		"341514e2"
+	],
+	tasks: [{
+		uid: "0f564eaf",
+		type: "checkmark",
+		title: "D-T fuel",
+		icon: {
+			id: "aeadditions:pattern.fluid",
+			tag: {
+				Fluid: {
+					FluidName: "liquidfusionfuel",
+					Amount: 1000
+				}
+			},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}
+	}]
+}

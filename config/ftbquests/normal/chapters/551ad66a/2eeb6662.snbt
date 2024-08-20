@@ -1,0 +1,23 @@
+{
+	x: 6.0d,
+	y: 3.0d,
+	shape: "diamond",
+	dependencies: [
+		"6a411f76"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ecf04f0c",
+		type: "item",
+		items: [{
+			item: "minecraft:apple"
+		}],
+		count: 192L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "4e650eb5",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

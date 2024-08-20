@@ -1,0 +1,11 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "1f204350",
+		type: "item",
+		items: [{
+			item: "contenttweaker:pereskia_soup"
+		}]
+	}]
+}

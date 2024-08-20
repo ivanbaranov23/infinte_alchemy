@@ -1,0 +1,25 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	text: [
+		"Steal the fire from its natural habitat. Separate it from its family and put it in a tiny bottle."
+	],
+	dependencies: [
+		"5435f1a3"
+	],
+	tasks: [{
+		uid: "9ed321fe",
+		type: "item",
+		items: [{
+			id: "biomesoplenty:jar_filled",
+			Damage: 1s,
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {
+					AS_Amulet_HolderLeast: -5658007986434875901L,
+					AS_Amulet_HolderMost: -7773060121311102705L
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

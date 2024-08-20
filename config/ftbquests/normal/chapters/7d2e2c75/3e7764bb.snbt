@@ -1,0 +1,41 @@
+{
+	x: 12.0d,
+	y: 0.0d,
+	text: [
+		"You'll need at least two."
+	],
+	dependencies: [
+		"9feec472",
+		"f69fe46e",
+		"a6179815"
+	],
+	tasks: [{
+		uid: "f8453354",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 14"
+		}]
+	},
+	{
+		uid: "aa24e29d",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 15"
+		}],
+		count: 3L
+	},
+	{
+		uid: "34027073",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock2"
+		}],
+		count: 36L
+	}],
+	rewards: [{
+		uid: "9d2313d2",
+		type: "item",
+		item: "mekanism:basicblock2",
+		count: 16
+	}]
+}

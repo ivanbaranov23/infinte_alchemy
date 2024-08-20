@@ -1,0 +1,33 @@
+{
+	x: 7.5d,
+	y: -2.0d,
+	text: [
+		"This machine will wait until crystal cluster in front of it will grow to max size and then harverst it. It mostly idles so stack them on top of each other.",
+		"Kinda like this:",
+		"[c][<][ ]",
+		"[ ][>][c]",
+		"[c][<][ ]",
+		"[ ][>][c]",
+		"[ ][h][ ]",
+		"",
+		"[c] - crystal cluster",
+		"[<] - crystal cutter",
+		"[h] - aeroheater"
+	],
+	dependencies: [
+		"abb872f0"
+	],
+	optional: true,
+	tasks: [{
+		uid: "28fd6f48",
+		type: "item",
+		items: [{
+			item: "prodigytech:automatic_crystal_cutter"
+		}]
+	}],
+	rewards: [{
+		uid: "0b563d2c",
+		type: "item",
+		item: "prodigytech:automatic_crystal_cutter"
+	}]
+}

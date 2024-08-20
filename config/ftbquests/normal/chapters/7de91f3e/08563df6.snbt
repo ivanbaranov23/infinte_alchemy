@@ -1,0 +1,24 @@
+{
+	title: "16384 Will",
+	x: -2.0d,
+	y: 4.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"2826a220"
+	],
+	tasks: [{
+		uid: "7c6d1f56",
+		type: "item",
+		items: [{
+			id: "bloodmagic:soul_gem",
+			Damage: 4s,
+			tag: {},
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

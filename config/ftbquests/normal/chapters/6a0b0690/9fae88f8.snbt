@@ -1,0 +1,17 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"Grab some"
+	],
+	dependencies: [
+		"51fd7c52"
+	],
+	tasks: [{
+		uid: "efaff890",
+		type: "item",
+		items: [{
+			item: "twilightforest:giant_cobblestone"
+		}]
+	}]
+}

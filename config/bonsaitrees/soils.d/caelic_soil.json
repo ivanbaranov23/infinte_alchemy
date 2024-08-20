@@ -1,0 +1,16 @@
+{
+    "name": "roots:elemental_soil_air",
+    "mod": "roots",
+    "soil": {
+      "name": "roots:elemental_soil_air",
+      "data": 0,
+      "ignoreMeta": false
+    },
+  
+    "modifiers": {
+      "growTime": 0.8,
+      "dropChance": 0.95
+    },
+  
+    "providedTags": [ "dirt", "grass" ]
+  }
