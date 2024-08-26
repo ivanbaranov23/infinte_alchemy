@@ -132,12 +132,140 @@ Sieve.addIronMeshRecipe(<atum:marl>, <atum:loot_dirty_idol>, 0.01);
 
 //mesh, sand type, item, chance
 static sievables as WeightedItemStack[][IItemStack][string] = {
+	stringMesh: {
+		<minecraft:dirt>: [
+			<exnihilocreatio:item_material:4> % 25,
+			<exnihilocreatio:item_material:3> % 20,
+			<exnihilocreatio:item_seed_sugarcane> % 20,
+			<exnihilocreatio:item_seed_cactus> % 20,
+			<natura:overworld_seeds> % 15,
+			<natura:overworld_seeds:1> % 15,
+			<actuallyadditions:item_canola_seed> % 10,
+			<actuallyadditions:item_flax_seed> % 10
+		],
+		<minecraft:dirt:1>: [
+			<exnihilocreatio:item_pebble> % 50,
+			<exnihilocreatio:item_pebble> % 50,
+			<exnihilocreatio:item_pebble:1> % 40,
+			<exnihilocreatio:item_pebble:1> % 40,
+			<exnihilocreatio:item_pebble:2> % 40,
+			<exnihilocreatio:item_pebble:2> % 40,
+			<exnihilocreatio:item_pebble:3> % 40,
+			<exnihilocreatio:item_pebble:3> % 40,
+		],
+		<minecraft:leaves>: [
+			<minecraft:sapling> % 20,
+			<minecraft:sapling:1> % 20,
+			<minecraft:sapling:2> % 20,
+			<minecraft:sapling:3> % 20,
+			<minecraft:sapling:4> % 20,
+			<minecraft:sapling:5> % 20,
+			
+			<biomesoplenty:sapling_0> % 5,
+			<biomesoplenty:sapling_0:1> % 5,
+			<biomesoplenty:sapling_0:3> % 5,
+			<biomesoplenty:sapling_0:4> % 5,
+			<biomesoplenty:sapling_0:5> % 5,
+			<biomesoplenty:sapling_0:6> % 5,
+			<biomesoplenty:sapling_0:7> % 5,
+			<biomesoplenty:sapling_1:1> % 5,
+			<biomesoplenty:sapling_1:2> % 5,
+			<biomesoplenty:sapling_1:3> % 5,
+			<biomesoplenty:sapling_1:4> % 5,
+			<biomesoplenty:sapling_1:6> % 5,
+			<biomesoplenty:sapling_2> % 5,
+			<biomesoplenty:sapling_2:1> % 5,
+			<biomesoplenty:sapling_2:2> % 5,
+			<biomesoplenty:sapling_2:3> % 5,
+			<biomesoplenty:sapling_2:4> % 5,
+			<biomesoplenty:sapling_2:5> % 5,
+			<biomesoplenty:sapling_2:6> % 5,
+			<biomesoplenty:sapling_2:7> % 5,
+			<quark:variant_sapling> % 5,
+			<quark:variant_sapling:1> % 5,
+			
+		],
+
+		<minecraft:gravel>: [
+			<minecraft:flint> % 60
+		],
+
+		<minecraft:sand>: [
+			<appliedenergistics2:material:3> % 20
+		],
+		<natura:nether_heat_sand>: [
+			<minecraft:blaze_powder> % 30
+		],
+
+		<exnihilocreatio:block_granite_crushed>: [
+			<exnihilocreatio:item_pebble:1>,
+			<exnihilocreatio:item_pebble:1> % 80,
+			<exnihilocreatio:item_pebble:1> % 75,
+			<exnihilocreatio:item_pebble:1> % 70,
+			<exnihilocreatio:item_pebble:1> % 65,
+			<exnihilocreatio:item_pebble:1> % 60
+		],
+		<exnihilocreatio:block_diorite_crushed>: [
+			<exnihilocreatio:item_pebble:2>,
+			<exnihilocreatio:item_pebble:2> % 80,
+			<exnihilocreatio:item_pebble:2> % 75,
+			<exnihilocreatio:item_pebble:2> % 70,
+			<exnihilocreatio:item_pebble:2> % 65,
+			<exnihilocreatio:item_pebble:2> % 60
+		],
+		<exnihilocreatio:block_andesite_crushed>: [
+			<exnihilocreatio:item_pebble:3>,
+			<exnihilocreatio:item_pebble:3> % 80,
+			<exnihilocreatio:item_pebble:3> % 75,
+			<exnihilocreatio:item_pebble:3> % 70,
+			<exnihilocreatio:item_pebble:3> % 65,
+			<exnihilocreatio:item_pebble:3> % 60
+		],
+
+	},
 	flintMesh: {
 		<exnihilocreatio:block_skystone_crushed>: [
 			<appliedenergistics2:material:45> % 50,
 			<appliedenergistics2:material:45> % 50,
 			<appliedenergistics2:material:45> % 50,
 			<appliedenergistics2:material:45> % 50,
+		],
+
+		<minecraft:sand>: [
+			<appliedenergistics2:material:3> % 30,
+			<minecraft:dye:3> % 10
+		],
+		<minecraft:soul_sand>: [
+			<minecraft:quartz> % 40
+		],
+		<natura:nether_heat_sand>: [
+			<minecraft:blaze_powder> % 60,
+			<erebus:small_plant:4> % 30,
+			<tconstruct:edible:4> % 10
+		],
+
+		<minecraft:gravel>: [
+			<exnihilocreatio:item_ore_iron> % 60,
+			<exnihilocreatio:item_ore_copper> % 40,
+			<exnihilocreatio:item_ore_tin> % 20
+		],
+		
+		<exnihilocreatio:block_granite_crushed>: [
+			<exnihilocreatio:item_ore_copper> % 75
+		],
+		<exnihilocreatio:block_diorite_crushed>: [
+			<exnihilocreatio:item_ore_tin> % 75
+		],
+		<exnihilocreatio:block_andesite_crushed>: [
+			<exnihilocreatio:item_ore_iron> % 75
+		],
+
+		<exnihilocreatio:block_dust>: [
+			<minecraft:dye:15> % 20
+		],
+
+		<exnihilocreatio:block_netherrack_crushed>: [
+			<exnihilocreatio:item_ore_gold> % 20
 		]
 	},
 	ironMesh: {
@@ -164,6 +292,30 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<contenttweaker:dolomite> % 25,
 			<appliedenergistics2:material:2> % 30,
 			<exnihilocreatio:item_ore_cobalt> % 20
+		],
+
+		<minecraft:sand>: [
+			<exnihilocreatio:item_ore_zinc> % 40
+		],
+		<minecraft:soul_sand>: [
+			<exnihilocreatio:item_ore_lead> % 50
+		],
+		<natura:nether_heat_sand>: [
+			<minecraft:blaze_powder> % 80,
+			<erebus:small_plant:4> % 40,
+			<tconstruct:edible:4> % 20,
+			<tconstruct:slime_sapling:2> % 1
+		],
+
+		<exnihilocreatio:block_dust>: [
+			<minecraft:dye:15> % 40,
+			<appliedenergistics2:material:45> % 20
+		],
+
+		<exnihilocreatio:block_netherrack_crushed>: [
+			<exnihilocreatio:item_ore_gold> % 35,
+			<exnihilocreatio:item_ore_cobalt> % 20,
+			<exnihilocreatio:item_ore_ardite> % 20
 		]
 	},
 	diamondMesh: {
@@ -239,6 +391,7 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 	}
 };
 static meshes as IItemStack[string] = {
+	stringMesh: <exnihilocreatio:item_mesh:1>,
 	flintMesh: <exnihilocreatio:item_mesh:2>,
 	ironMesh: <exnihilocreatio:item_mesh:3>,
 	diamondMesh: <exnihilocreatio:item_mesh:4>,
@@ -270,6 +423,9 @@ for mesh in sievables{
 			rec.setChance(item.chance * 1.2);
 
 			//check if ex nihilo mesh
+			if (mesh == "stringMesh"){
+				Sieve.addStringMeshRecipe(sand, item.stack, item.chance);
+			}
 			if (mesh == "flintMesh"){
 				Sieve.addFlintMeshRecipe(sand, item.stack, item.chance);
 			}
