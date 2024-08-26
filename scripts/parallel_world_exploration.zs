@@ -126,6 +126,32 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
             ]
         ]
     },
+    <contenttweaker:nether_boat> * 16: {
+        <contenttweaker:nether_boat_osram>: [
+            [<betternether:cincinnasite_ore> * 128, <tconstruct:ore> * 96, <tconstruct:ore:1> * 96, <taiga:osram_ore> * 64, <taiga:tiberium_ore> * 128, <taiga:prometheum_ore> * 48, <taiga:valyrium_ore> * 48, <taiga:basalt_block> * 128],
+            [<betternether:cincinnasite_ore> * 128, <tconstruct:ore> * 96, <tconstruct:ore:1> * 96, <taiga:osram_ore> * 64, <taiga:tiberium_ore> * 128, <taiga:prometheum_ore> * 48, <taiga:valyrium_ore> * 48, <taiga:basalt_block> * 160]
+        ],
+        <contenttweaker:nether_boat_ores>: [
+            [
+                <netherendingores:ore_nether_vanilla> * 128,
+                <netherendingores:ore_nether_vanilla:6> * 128,
+                <netherendingores:ore_nether_vanilla:1> * 48,
+                <netherendingores:ore_nether_vanilla:3> * 48,
+                <netherendingores:ore_nether_modded_2:8> * 16
+            ],
+            [
+                <netherendingores:ore_nether_vanilla> * 128,
+                <netherendingores:ore_nether_vanilla:6> * 128,
+                <netherendingores:ore_nether_vanilla:1> * 48,
+                <netherendingores:ore_nether_vanilla:3> * 48,
+                <netherendingores:ore_nether_modded_2:8> * 16
+            ]
+        ],
+        <contenttweaker:nether_boat_quartz>: [
+            [<minecraft:quartz_ore> * 128, <netherendingores:ore_nether_modded_1:9> * 64],
+            [<minecraft:quartz_ore> * 128, <netherendingores:ore_nether_modded_1:9> * 64]
+        ]
+    },
     <contenttweaker:robodruid_mech>: {
         <contenttweaker:robodruid_target_gems>: [
             [

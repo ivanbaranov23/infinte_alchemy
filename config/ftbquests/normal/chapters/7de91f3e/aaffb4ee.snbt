@@ -1,0 +1,55 @@
+{
+	x: 5.0d,
+	y: 3.5d,
+	dependencies: [
+		"023ee5f7"
+	],
+	tasks: [{
+		uid: "90a80e61",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crystal 1 1"
+		}]
+	},
+	{
+		uid: "d41b6744",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crystal 1 2"
+		}]
+	},
+	{
+		uid: "8b731396",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crystal 1 3"
+		}]
+	},
+	{
+		uid: "a74458d4",
+		type: "item",
+		items: [{
+			item: "bloodmagic:demon_crystal 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "8ce6a050",
+		type: "item",
+		item: "bloodmagic:demon_crystal 1 1"
+	},
+	{
+		uid: "db8699a5",
+		type: "item",
+		item: "bloodmagic:demon_crystal 1 2"
+	},
+	{
+		uid: "fc0fc337",
+		type: "item",
+		item: "bloodmagic:demon_crystal 1 3"
+	},
+	{
+		uid: "0efd3b12",
+		type: "item",
+		item: "bloodmagic:demon_crystal 1 4"
+	}]
+}

@@ -98,7 +98,7 @@ recipes.addShaped("ia_carminite_engine", <twilightforest:tower_device:12>, [
 {
 	var rec = RecipeBuilder.newBuilder("2", "carmine_reactor", 30 * 20);
 
-    rec.addEnergyPerTickOutput(4000);
+    rec.addEnergyPerTickOutput(10000);
 
     rec.addItemInput(<twilightforest:carminite>);
 	rec.addFluidInput(<liquid:glowstone> * 50);

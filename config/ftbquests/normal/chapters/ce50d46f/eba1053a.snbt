@@ -1,0 +1,14 @@
+{
+	x: 14.5d,
+	y: 2.0d,
+	dependencies: [
+		"501a09f7"
+	],
+	tasks: [{
+		uid: "55a0e072",
+		type: "item",
+		items: [{
+			item: "contenttweaker:vortexed_ingot"
+		}]
+	}]
+}

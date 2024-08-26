@@ -38,14 +38,7 @@ recipes.remove(<extrautils2:decorativesolidwood:1>);
 recipes.remove(<extrautils2:magicapple>);
 
 //demon and angel alt
-mods.inworldcrafting.FluidToItem.transform(
-    <contenttweaker:angel_ingot>,
-    <liquid:cloud_seed>, [<mekanism:ingot:1>]
-);
-mods.inworldcrafting.FluidToItem.transform(
-    <contenttweaker:angel_block>,
-    <liquid:cloud_seed>, [<mekanism:basicblock>]
-);
+
 mods.inworldcrafting.FluidToItem.transform(
     <extrautils2:ingredients:11>,
     <liquid:fire_water>, [<minecraft:gold_ingot>]

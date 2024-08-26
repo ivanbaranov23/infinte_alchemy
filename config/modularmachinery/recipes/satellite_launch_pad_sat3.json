@@ -1,0 +1,53 @@
+{
+    "machine": "satellite_launch_pad",
+    "registryName": "satellite_launch_pad_sat3",
+    "recipeTime": 2000,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 10000
+        },
+        
+        
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:satellite_chip@0",
+            "amount": 1,
+            "nbt": {
+                "data": "linked100000"
+            }
+        },
+
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "openblocks:tank",
+            "amount": 16,
+            "nbt": {"tank": {
+                "FluidName": "rocket_fuel",
+                "Amount": ">=10000"
+            }},
+            "nbt-display": {"tank": {
+                "FluidName": "rocket_fuel",
+                "Amount": "10000"
+                
+            }, "display": {
+                "Name": "10000 mb or more"
+            }}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:satellite_chip@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:satellite3@0",
+            "amount": 1
+        }
+    ]
+}

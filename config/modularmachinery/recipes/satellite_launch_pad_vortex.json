@@ -1,0 +1,70 @@
+{
+    "machine": "satellite_launch_pad",
+    "registryName": "satellite_launch_pad_vortexed",
+    "recipeTime": 2000,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 100000
+        },
+        
+        
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:vortexed_ingot@0",
+            "amount": 1
+        },
+
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "openblocks:tank",
+            "amount": 1,
+            "nbt": {"tank": {
+                "FluidName": "rocket_fuel",
+                "Amount": ">=10000"
+            }},
+            "nbt-display": {"tank": {
+                "FluidName": "rocket_fuel",
+                "Amount": "10000",
+                "display": {
+                    "Name": "10k mb or more"
+                }
+            }}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:space_navigator@0",
+            "amount": 1,
+            "nbt": {"target": "energy_vortex"},
+            "nbt-display": {"target": "energy_vortex"}
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:vortexed_base@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:drone@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:space_navigator@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:drone@0",
+            "amount": 1
+        }
+    ]
+}

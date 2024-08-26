@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack;
 
-//import mods.inworldcrafting.FluidToItem;
+
 
 import mods.thermalexpansion.Imbuer as TEImbuer; 
 import mods.thermalexpansion.Transposer;
@@ -178,6 +178,9 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:death_metal_ingot>, <contenttweaker:death_metal_block>);
 
     add3x3Recipe(<contenttweaker:space_ice_crystal>, <contenttweaker:space_ice_crystal_block>);
+    add3x3Recipe(<alchemistry:ingot:4>, <contenttweaker:beryllium_block>);
+    add3x3Recipe(<alchemistry:ingot:84>, <contenttweaker:polonium_block>);
+
     add3x3Recipe(<contenttweaker:lucky_alloy_ingot>, <contenttweaker:lucky_alloy_block>);
 
     add3x3Recipe(<contenttweaker:ssa_ingot>, <contenttweaker:ssa_block>);
@@ -539,18 +542,7 @@ recipes.addShapeless(
 
 
 
-//mold
-<immersiveengineering:mold>.displayName = "Fake mold";
-<immersiveengineering:mold>.addTooltip("Do not believe the Engineer's propaganda,");
-<immersiveengineering:mold>.addTooltip("there is no way a plate could be this cheap.");
 
-<immersiveengineering:mold:1>.displayName = "Fake mold";
-<immersiveengineering:mold:1>.addTooltip("Do not believe the Engineer's propaganda,");
-<immersiveengineering:mold:1>.addTooltip("there is no way a gear could be this cheap.");
-
-<immersiveengineering:mold:2>.displayName = "Fake mold";
-<immersiveengineering:mold:2>.addTooltip("Do not believe the Engineer's propaganda,");
-<immersiveengineering:mold:2>.addTooltip("there is no way a rod could be this cheap.");
 
 <contenttweaker:dummy>.addTooltip("Pay this no mind");
 furnace.remove(<contenttweaker:dummy>);

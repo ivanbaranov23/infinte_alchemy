@@ -330,7 +330,7 @@ function addSatelliteChip(chip_data_in as string, sel_item as IItemStack, chip_d
 
     satelliteController.addRecipe(recipe);
 }
-function addDroneMiningRecipe(chip_data_in as string, out as IItemStack, time_t as int, rft as int){
+function addDroneMiningRecipe(chip_data_in as string, out as IItemStack, time_t as int, rft as int, cat as IItemStack = <contenttweaker:pressure_cutter>, notconsume as bool = true){
     recipes.addShapeless("ia_program_space_navigator_" ~ chip_data_in, <contenttweaker:space_navigator>.withTag({target: chip_data_in}),
         [
             <contenttweaker:space_navigator>,
@@ -346,10 +346,10 @@ function addDroneMiningRecipe(chip_data_in as string, out as IItemStack, time_t 
     rec.addItemOutput(<contenttweaker:space_navigator>.withTag({target: chip_data_in}));
 
     rec.addItemInput(<contenttweaker:drone>);
-    rec.addItemInput(<contenttweaker:laser>);
+    rec.addItemInput(cat);
     rec.addItemOutput(<contenttweaker:drone>);
-    rec.addItemOutput(<contenttweaker:laser>);
-	rec.addFluidInput(<liquid:rocket_fuel> * 1000);
+    if (notconsume) rec.addItemOutput(cat);
+	rec.addFluidInput(<liquid:rocket_fuel> * 2000);
 	
 
 	rec.addItemOutput(out);
@@ -359,7 +359,7 @@ function addDroneMiningRecipe(chip_data_in as string, out as IItemStack, time_t 
 function addDroneVortexRecipe(it_in as IItemStack, it_out as IItemStack, time_t as int, rft as int){
     
 
-    var rec = RecipeBuilder.newBuilder(it_in.name ~ "_drone", "satellite_launch_pad", time_t);
+    var rec = RecipeBuilder.newBuilder(it_in.name ~ "_drone_v", "satellite_launch_pad", time_t);
 	rec.addEnergyPerTickInput(rft);
 
 	rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));
@@ -369,7 +369,7 @@ function addDroneVortexRecipe(it_in as IItemStack, it_out as IItemStack, time_t 
     rec.addItemInput(it_in);
     rec.addItemOutput(<contenttweaker:drone>);
     rec.addItemOutput(it_out);
-	rec.addFluidInput(<liquid:rocket_fuel> * 1000);
+	rec.addFluidInput(<liquid:rocket_fuel> * 2000);
 	
 
 	rec.build();
@@ -415,36 +415,38 @@ function addDroneVortexRecipe(it_in as IItemStack, it_out as IItemStack, time_t 
 }
 {//adding satellite
     print("[REQ] adding satellite");
-    var recipe = AssemblyRecipe.create(function(container) {
-        //container.addItemOutput("output", out);
+    for i in [10, 1000, 100000] as int[]{
+        var recipe = AssemblyRecipe.create(function(container) {
+            //container.addItemOutput("output", out);
 
-        var comp as IItemStack = container.getItem("computer");
+            var comp as IItemStack = container.getItem("computer");
+            
+            if (comp){
+                var newTag as IData;
+
+                if (comp.tag.memberGet("satellite_power")){
+                    newTag = {
+                        satellite_power: comp.tag.satellite_power.asInt() + i
+                    } as IData;
+                }
+                else{
+                    newTag = {
+                        satellite_power: 10
+                    } as IData;
+                }
+                container.addItemOutput("computer2", comp.withTag(newTag));
+            }
+        });
+        recipe = recipe.requireSelection("selection", <minecraft:chest>.withDisplayName("Add Satellite"), false);
+        recipe = recipe.requireItem("computer", sat_comp);
+        recipe = recipe.requireItem("input", <contenttweaker:satellite_chip>.withTag({data: ("linked"~i)}));
         
-        if (comp){
-            var newTag as IData;
+        recipe = recipe.requireEnergy("power", 1000);
+        recipe = recipe.requireDuration("duration", 20);
+        
 
-            if (comp.tag.memberGet("satellite_power")){
-                newTag = {
-                    satellite_power: comp.tag.satellite_power.asInt() + 10
-                } as IData;
-            }
-            else{
-                newTag = {
-                    satellite_power: 10
-                } as IData;
-            }
-            container.addItemOutput("computer2", comp.withTag(newTag));
-        }
-    });
-    recipe = recipe.requireSelection("selection", <minecraft:chest>.withDisplayName("Add Satellite"), false);
-    recipe = recipe.requireItem("computer", sat_comp);
-    recipe = recipe.requireItem("input", <contenttweaker:satellite_chip>.withTag({data: "linked"}));
-    
-    recipe = recipe.requireEnergy("power", 1000);
-    recipe = recipe.requireDuration("duration", 20);
-    
-
-    satelliteController.addRecipe(recipe);
+        satelliteController.addRecipe(recipe);
+    }
     //satelliteController.addJEIRecipe(recipe);	
     
 }
@@ -497,6 +499,16 @@ static chip_data as float[string][string] = {
     
 
     */
+    beryllium_asteroid: {
+        minimum: 500,
+        weight: 400,
+        min_tier: 1
+    },
+    moissanite_asteroid: {
+        minimum: 500,
+        weight: 400,
+        min_tier: 0
+    },
     zirconium_asteroid: {
         minimum: 100, 
         weight: 1000, 
@@ -504,15 +516,10 @@ static chip_data as float[string][string] = {
     },
     dense_zirconium_asteroid: {
         minimum: 1000, 
-        weight: 1000, 
+        weight: 200, 
         min_tier: 2
     },
 
-    ice_comet: {
-        minimum: 25, 
-        weight: 400, 
-        min_tier: 1
-    },
     ice_comet: {
         minimum: 25, 
         weight: 400, 
@@ -528,7 +535,26 @@ static chip_data as float[string][string] = {
         weight: 350, 
         min_tier: 1
     },
-    
+    rock_crystal: {
+        minimum: 100, 
+        weight: 200, 
+        min_tier: 0
+    },
+    alien_wreck: {
+        minimum: 100, 
+        weight: 200, 
+        min_tier: 0
+    },
+    alien_small_outpost: {
+        minimum: 100, 
+        weight: 200, 
+        min_tier: 0
+    },
+    alien_large_outpost: {
+        minimum: 100, 
+        weight: 200, 
+        min_tier: 0
+    }
 };
 
 
@@ -691,6 +717,7 @@ static chip_data as float[string][string] = {
     "output_chip");
     "output_info*/
     for chip_data_out in chip_data{
+        mods.jei.JEI.addItem(<contenttweaker:space_data>.withTag({data: chip_data_out}));
         var recipe = AssemblyRecipe.create(function(container) {
             container.addItemOutput("output_chip", <contenttweaker:space_data>.withTag({data: chip_data_out}));
             container.addItemOutput("output_info", <minecraft:paper>.withLore(
@@ -735,9 +762,23 @@ addSatelliteChip("none", <extendedcrafting:singularity_ultimate>.withDisplayName
 
 addSatelliteChip("explore_space1", <minecraft:iron_ingot>.withDisplayName("Search for Iron"), "iron_asteroid", 10, 0.01);
 */
-addDroneMiningRecipe("iron_asteroid", <densemetals:dense_iron_ore> * 8, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("copper_asteroid", <densemetals:dense_copper_ore> * 8, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("zirconium_asteroid", <contenttweaker:zirconium_ore> * 8, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("iron_asteroid", <densemetals:dense_iron_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("copper_asteroid", <densemetals:dense_copper_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("tin_asteroid", <densemetals:dense_tin_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("nickel_asteroid", <densemetals:dense_nickel_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("aluminum_asteroid", <densemetals:dense_aluminum_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("zinc_asteroid", <densemetals:dense_zinc_ore> * 16, 20 * 60, 500 * 1000);
+
+addDroneMiningRecipe("beryllium_asteroid", <contenttweaker:beryllium_ore> * 8, 20 * 60, 5000 * 1000);
+addDroneMiningRecipe("moissanite_asteroid", <contenttweaker:moissanite_ore> * 8, 20 * 60, 5000 * 1000);
+addDroneMiningRecipe("zirconium_asteroid", <contenttweaker:zirconium_ore> * 8, 20 * 60, 5000 * 1000);
+
+addDroneMiningRecipe("ice_comet", <contenttweaker:space_ice_raw> * 16, 20 * 60, 500 * 1000, <contenttweaker:laser>);
+addDroneMiningRecipe("moon", <contenttweaker:moon_dust> * 24, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("rock_crystal", <astralsorcery:blockcustomore>, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("alien_wreck", <contenttweaker:alien_wreck>, 20 * 60, 500 * 1000, <contenttweaker:webbing_unit>);
+addDroneMiningRecipe("alien_small_outpost", <contenttweaker:alien_wreck> * 4, 20 * 60, 500 * 1000, <contenttweaker:laser>);
+addDroneMiningRecipe("alien_large_outpost", <contenttweaker:alien_wreck> * 64, 20 * 60, 500 * 1000, <contenttweaker:nuke>, false);
 
 recipes.addShapeless("ia_program_space_navigator_energy_vortex", <contenttweaker:space_navigator>.withTag({target: "energy_vortex"}),
     [
@@ -747,3 +788,21 @@ recipes.addShapeless("ia_program_space_navigator_energy_vortex", <contenttweaker
     ]
 );
 addDroneVortexRecipe(<contenttweaker:worm_glass> * 4, <contenttweaker:sick_worm>, 20 * 60, 10 * 1000 * 1000);
+addDroneVortexRecipe(<openblocks:tank>.withTag({tank: {FluidName: "data", Amount: 16000}}), <contenttweaker:information_crystal>, 20 * 60, 10 * 1000 * 1000);
+addDroneVortexRecipe(<botania:quartz:6>, <contenttweaker:sunnarium_chunk>, 20 * 60, 10 * 1000 * 1000);
+addDroneVortexRecipe(<astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}}), <contenttweaker:prism>, 20 * 60, 10 * 1000 * 1000);
+
+
+//vortex
+mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:vortexed_base> * 2, 1000000 * 20, 1000000, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>,
+            <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>,
+            <extendedcrafting:singularity:48>,
+            <extendedcrafting:singularity_custom:58>,
+            <extendedcrafting:singularity_custom:31>,
+            <extendedcrafting:singularity_custom:61>,
+            <extendedcrafting:singularity_custom:36>
+        ]
+);

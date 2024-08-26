@@ -46,6 +46,7 @@
                     "minecraft:leaves:*"
                 ]},
                 "harvester": {
+                    "type": "REAL_PLAYER",
                     "heldItemMainHand": {"items" :["contenttweaker:staffwood_flower"]}
                 }
             },

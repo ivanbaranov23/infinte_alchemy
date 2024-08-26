@@ -325,6 +325,7 @@ function addAtomicResource(name as string){
     registerMetal("black_bronze");
     registerMoltenMetal("black_bronze", Color.fromHex("423468"));
     VanillaFactory.createItem("carminium_ingot").register();
+    VanillaFactory.createItem("carminium_sheet").register();
 
     //tinezo
     VanillaFactory.createItem("tinezo_ingot").register();
@@ -673,6 +674,10 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("mana_absorbing_ingot").register();
     VanillaFactory.createItem("mana_steel_ball").register();
 
+    VanillaFactory.createBlock("pure_metal", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("pure_sheetmetal", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("pure_cincinnasite", <blockmaterial:rock>).register();
+
     VanillaFactory.createItem("chlorasteel_ingot").register();
     VanillaFactory.createItem("chlorasteel_plate").register();
     VanillaFactory.createItem("chlorasteel_gear").register();
@@ -813,6 +818,9 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("space_ice_crystal").register();
     VanillaFactory.createBlock("space_ice_crystal_block", <blockmaterial:rock>).register();
     VanillaFactory.createFluid("radioactive_water", Color.fromHex("28ea8d")).register();
+
+    VanillaFactory.createItem("vortexed_base").register();
+    VanillaFactory.createItem("vortexed_ingot").register();
 
     VanillaFactory.createItem("polonium_dust").register();
     VanillaFactory.createBlock("polonium_block", <blockmaterial:rock>).register();
@@ -1065,6 +1073,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     VanillaFactory.createItem("laser").register();
 
     VanillaFactory.createItem("rtg").register();
+    VanillaFactory.createItem("rtg2").register();
     VanillaFactory.createItem("nuke").register();
     VanillaFactory.createItem("rocket_engine").register();
 
@@ -1110,6 +1119,14 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     VanillaFactory.createItem("entangled_particles").register();
     VanillaFactory.createItem("entangled_matter_a").register();
     VanillaFactory.createItem("entangled_matter_b").register();
+
+    
+    VanillaFactory.createItem("prism").register();
+    VanillaFactory.createItem("information_crystal").register();
+
+    VanillaFactory.createItem("circuit1").register();
+    VanillaFactory.createItem("circuit2").register();
+    VanillaFactory.createItem("circuit3").register();
 }
 
 
@@ -1174,6 +1191,12 @@ function add_mech_part(name as string){
         VanillaFactory.createItem("advanced_plating2_2").register();
         VanillaFactory.createItem("advanced_plating2_3").register();
         VanillaFactory.createItem("advanced_plating2_4").register();
+
+        VanillaFactory.createItem("nether_boat_plating").register();
+
+        VanillaFactory.createItem("nether_boat_osram").register();
+        VanillaFactory.createItem("nether_boat_ores").register();
+        VanillaFactory.createItem("nether_boat_quartz").register();
 
         
         VanillaFactory.createItem("robodruid_plating1").register();
@@ -1240,6 +1263,8 @@ function add_mech_part(name as string){
         add_mech_part("radiotoad_body");
         add_mech_part("radiotoad_head");
         add_mech_part("radiotoad_mech");
+
+        add_mech_part("nether_boat");
 
         add_mech_part("robodruid_arm");
         add_mech_part("robodruid_leg");
@@ -1574,6 +1599,7 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
 
     VanillaFactory.createItem("activated_green_fish").register();
 
+    VanillaFactory.createItem("coral_dust").register();
     VanillaFactory.createItem("terra_coral").register();
 }
 {//vitamins
@@ -2320,6 +2346,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     addGlass("night_glass");
 
     addGlass("starry_glass");
+    
+    addWater("starlight_lubricant");
 
     VanillaFactory.createItem("conveyor").register();
     VanillaFactory.createBlock("conveyor_block", <blockmaterial:rock>).register();
@@ -2367,6 +2395,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     antenna_mk3.setFullBlock(false);
     antenna_mk3.register();
 
+    VanillaFactory.createItem("fuel_coral").register();
+
+    VanillaFactory.createItem("alien_wreck").register();
     VanillaFactory.createItem("alien_electrode").register();
     VanillaFactory.createItem("alien_motor").register();
 

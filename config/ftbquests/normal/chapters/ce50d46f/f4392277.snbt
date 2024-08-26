@@ -1,0 +1,14 @@
+{
+	x: 17.5d,
+	y: 8.0d,
+	dependencies: [
+		"5766c872"
+	],
+	tasks: [{
+		uid: "de94e58d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:c14_gem"
+		}]
+	}]
+}

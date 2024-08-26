@@ -94,11 +94,45 @@ recipes.addShaped("ia_fey_crafter", <roots:fey_crafter>, [
     );
 
     Pyre.removeRecipe(<roots:baffle_cap_mushroom>);
-    Pyre.addRecipe("ia_cloud_berry",
+    Pyre.addRecipe("ia_baffle_cap_mushroom",
         <roots:baffle_cap_mushroom> * 4,
         [<contenttweaker:mushroomite_ingot>, <roots:moonglow_leaf>, <roots:dewgonia>, <roots:stalicripe>, <roots:infernal_bulb>]
     );
 }
+{//crops 2 electric boogaloo
+    scripts.jei.addJEIhint(
+        [<minecraft:tallgrass:1>], [], 
+        [
+            <minecraft:tallgrass:1>.withDisplayName("Punch to get the following items:")
+        ], 
+        [
+            <minecraft:wheat_seeds>,
+            <minecraft:melon_seeds>,
+            <minecraft:pumpkin_seeds>,
+            <immersiveengineering:seed>
+        ]
+    );
+    scripts.jei.addJEIhint(
+        [<minecraft:tallgrass:1>], [], 
+        [
+            <minecraft:tallgrass:1>.withDisplayName("Punch to get the following items:"),
+            <minecraft:tallgrass:1>.withDisplayName("this are only some")
+        ], 
+        [
+            <roots:wildroot>,
+            <minecraft:beetroot_seeds>,
+            <mysticalworld:aubergine_seed>,
+            <exnihilocreatio:item_seed_potato>,
+            <exnihilocreatio:item_seed_carrot>,
+            <extrautils2:redorchid>.withLore(["very rare"])
+        ]
+    );
+}
+Mortar.addRecipe("coral", 
+    <contenttweaker:coral_dust>,
+    [<biomesoplenty:coral>, <biomesoplenty:coral:1>, <biomesoplenty:coral:2>, <biomesoplenty:coral:3>, <ore:coralFeed>]
+);
+<contenttweaker:coral_dust>.addTooltip("You are the second worst thing to happen to the corals");
 
 Pyre.addRecipe("modularium_paste_pyre",
     <contenttweaker:modularium_paste> * 4,

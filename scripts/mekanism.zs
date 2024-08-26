@@ -279,7 +279,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 
 	recipes.remove(<mekanism:machineblock3:1>);
 	recipes.addShaped("ia_mek_solar", <mekanism:machineblock3:1>, [
-		[null, <solarflux:solar_panel_5>, null], 
+		[null, <solarflux:solar_panel_5> | <contenttweaker:neutronium_mirror>, null], 
 		[<contenttweaker:mekanized_steel_plate>, <contenttweaker:gastight_steel_rod>, <contenttweaker:mekanized_steel_plate>], 
 		[<mekanism:gastank>.withTag({tier: 3}), <mekanism:basicblock:8>, <mekanism:gastank>.withTag({tier: 3})]
 	]);

@@ -1,0 +1,19 @@
+{
+	x: 14.5d,
+	y: 8.0d,
+	dependencies: [
+		"c7965077"
+	],
+	tasks: [{
+		uid: "0f00ca59",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "05a02c8b",
+		type: "item",
+		item: "contenttweaker:beryllium_block"
+	}]
+}

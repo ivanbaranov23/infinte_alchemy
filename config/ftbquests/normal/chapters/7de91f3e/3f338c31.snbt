@@ -1,13 +1,12 @@
 {
 	title: "Tier VI",
-	x: 16.5d,
-	y: 4.0d,
+	x: 17.0d,
+	y: 2.5d,
 	shape: "square",
 	text: [
 		"76 runes"
 	],
 	dependencies: [
-		"e997e1c0",
 		"6856e129"
 	],
 	tasks: [{

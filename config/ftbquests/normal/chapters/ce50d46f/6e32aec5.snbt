@@ -1,0 +1,14 @@
+{
+	x: 10.5d,
+	y: 9.0d,
+	dependencies: [
+		"5ad3d05e"
+	],
+	tasks: [{
+		uid: "80e1ebe1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:satellite2"
+		}]
+	}]
+}

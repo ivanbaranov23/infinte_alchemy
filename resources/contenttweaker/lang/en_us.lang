@@ -331,6 +331,9 @@ item.contenttweaker.amethyst_ingot.name=Amethyst Ingot
 item.contenttweaker.amethyst_nugget.name=Amethyst Nugget
 item.contenttweaker.amethyst_dust.name=Amethyst Dust
 item.contenttweaker.amethyst_dirty_dust.name=Amethyst Dirty Dust
+fluid.amethesting=Liqiud Amethysting Solution
+gas.amethesting=Amethysting Solution Gas
+
 item.contenttweaker.ender_amethyst_dust.name=Enethyst Dust
 item.contenttweaker.ender_amethyst_dirty_dust.name=Enethyst Dirty Dust
 fluid.ender_amethyst_dirty=Enethyst Slurry
@@ -482,7 +485,10 @@ item.contenttweaker.gem_tanzanite_seed.name=Tanzanite Gem Seed
 item.contenttweaker.gem_topaz_seed.name=Topaz Gem Seed
 
 item.contenttweaker.cincinnasite_dirty_dust.name=Dirty Cincinnasite Dust
+fluid.cincinnasite_slurry=Cincinnasite Slurry
 item.contenttweaker.rare_earth_dust.name=Rare Earth Elements Mix
+tile.contenttweaker.rare_earth_sand.name=Rare Earth Sand
+gas.rare_earth_slurry=Rare Earth Slurry
 
 item.contenttweaker.ambrosium_dust.name=Ambrosium Dust
 tile.contenttweaker.ambrosium_gravel.name=Ambrosium Gravel
@@ -675,6 +681,14 @@ tile.contenttweaker.moissanite_ore.name=Moissanite Ore
 item.contenttweaker.moissanite.name=Moissanite
 item.contenttweaker.moissanite_plate.name=Moissanite Lens
 
+item.contenttweaker.beryllium_dust.name=Beryllium Dust
+item.contenttweaker.beryllium_sheet.name=Beryllium Sheet
+tile.contenttweaker.beryllium_block.name=Block of Beryllium
+
+item.contenttweaker.polonium_dust.name=Polonium Dust
+tile.contenttweaker.polonium_block.name=Block of Polonium
+
+
 item.contenttweaker.star_alloy_ingot.name=Enhanced Star Alloy Ingot
 item.contenttweaker.star_alloy_plate.name=Enhanced Star Alloy Plate
 item.contenttweaker.star_alloy_gear.name=Enhanced Star Alloy Gear
@@ -747,7 +761,7 @@ item.contenttweaker.electric_wool2.name=Advanced Electrostatic Wool
 item.contenttweaker.sky_grain.name=Sky Grains
 
 item.contenttweaker.crystal_coal.name=Crystal Coal
-
+item.contenttweaker.coral_dust.name=Coral Dust
 
 item.contenttweaker.reinforced_cell.name=Reinforced Cell
 item.contenttweaker.lightning_cell.name=Elemental Lightning Cell
@@ -787,6 +801,8 @@ fluid.nuit_fuel=Nuit Blessed Fuel
 
 fluid.fire=Liquid Elemental Fire
 fluid.luminessence=Liquid Luminessence
+
+fluid.data=Liquid Data
 
 item.contenttweaker.lazy_soup.name=Sleep Inducing Soup
 
@@ -901,6 +917,12 @@ item.contenttweaker.advanced_plating2_2.name=Reactor Plating
 item.contenttweaker.advanced_plating2_3.name=RadioToad Plating Base
 item.contenttweaker.advanced_plating2_4.name=RadioToad Plating
 
+item.contenttweaker.nether_boat_plating.name=Magma Proof Plating
+
+item.contenttweaker.nether_boat_osram.name=Underlava Exploration Pod Goal: Unique Nether Ores
+item.contenttweaker.nether_boat_ores.name=Underlava Exploration Pod Goal: Nether Ores
+item.contenttweaker.nether_boat_quartz.name=Underlava Exploration Pod Goal: Quartz
+
 item.contenttweaker.robodruid_plating1.name=Wildwood Plating Assembly
 item.contenttweaker.robodruid_plating2.name=Wildwood Plating
 item.contenttweaker.robodruid_plating3.name=Enchanted Wildwood Plating
@@ -941,6 +963,8 @@ item.contenttweaker.radiotoad_legs.name=RadioToad Legs
 item.contenttweaker.radiotoad_body.name=RadioToad Body
 item.contenttweaker.radiotoad_head.name=RadioToad Head
 item.contenttweaker.radiotoad_mech.name=RadioToad Mech
+
+item.contenttweaker.nether_boat.name=Underlava Exploration Pod
 
 item.contenttweaker.robodruid_arm.name=RoboDruid Arm
 item.contenttweaker.robodruid_leg.name=RoboDruid Leg
@@ -1344,6 +1368,7 @@ item.contenttweaker.alchemical_clay_fr.name=Smeared Alchemical Clay (Fire Resist
 item.contenttweaker.alchemical_clay_wb.name=Smeared Alchemical Clay (Water Breathing)
 item.contenttweaker.alchemical_clay_h.name=Smeared Alchemical Clay (Haste)
 item.contenttweaker.alchemical_clay_jb.name=Smeared Alchemical Clay (Jump Boost)
+item.contenttweaker.alchemical_clay_st.name=Smeared Alchemical Clay (Stability)
 item.contenttweaker.reagent_acid.name=Acid Reagent
 item.contenttweaker.reagent_wood.name=Wood Reagent
 item.contenttweaker.reagent_oil.name=Oil Reagent

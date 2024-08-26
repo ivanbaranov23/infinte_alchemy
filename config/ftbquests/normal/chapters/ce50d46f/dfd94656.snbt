@@ -1,0 +1,14 @@
+{
+	x: 15.5d,
+	y: 3.0d,
+	dependencies: [
+		"501a09f7"
+	],
+	tasks: [{
+		uid: "84bef054",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sunnarium_chunk"
+		}]
+	}]
+}

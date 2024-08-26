@@ -103,10 +103,7 @@ function addTingalumOvenRecipe(out as IItemStack[], inp as IItemStack[], energy 
 
 //recipes.removeByInput(bauxite_ore);
 //addSimpleCrushingRecipe(bauxite_ore, <contenttweaker:bauxite_dust> * 2);
-FluidToItem.transform(
-    <thermalfoundation:material:68> * 3, 
-    <liquid:witchwater>, [<minecraft:clay_ball>, <appliedenergistics2:material:3>, <contenttweaker:bauxite_dust> * 2]
-);
+
 
 /*
 dense ore -> ore -> pieces -> chunk -> crystal -> shard -> clump -> dirty dust -> dust -> ingot
@@ -747,8 +744,48 @@ val ores as IItemStack[string][string][string] = {
             separating4: <contenttweaker:soot>
         }
     },
+    dilitheum: {
+        overworld: {
+            item: <taiga:dilithium_ore>,
+            crushing: <taiga:dilithium_crystal> * 2,
+            crushingByprod1: <taiga:dilithium_dust>,
+            crushingByprod2: <taiga:vibranium_dust>,
 
-    //todo plat, irid, mana inf, tungs
+            drilling: <taiga:dilithium_crystal> * 4
+        },
+        nether: {
+            item: <netherendingores:ore_nether_modded_1:14>,
+            crushing: <taiga:dilithium_crystal> * 4,
+            crushingByprod1: <taiga:dilithium_dust>,
+            crushingByprod2: <taiga:vibranium_dust>,
+
+            drilling: <taiga:dilithium_crystal> * 5
+        },
+        end: {
+            item: <netherendingores:ore_end_modded_1:14>,
+            crushing: <taiga:dilithium_crystal> * 5,
+            crushingByprod1: <taiga:vibranium_dust>,
+            crushingByprod2: <taiga:vibranium_dust>,
+
+            drilling: <taiga:dilithium_crystal> * 6
+        },
+
+        clump: {
+            item: <mekores:mekanismore:127>,
+            balling: <mekores:mekanismore:128>,
+            crushingByprod1: <mekores:mekanismore:128>,
+            crushingByprod2: <taiga:dilithium_dust>
+        },
+        dirtydust: {
+            item: <mekores:mekanismore:128>,
+            separating1: <taiga:dilithium_dust>,
+            separating2: <taiga:dilithium_crystal>,
+            separating3: <taiga:vibranium_dust>,
+            separating4: <contenttweaker:soot>
+        }
+    },
+
+    //todo 
     platinum: {
         overworld: {
             item: <thermalfoundation:ore:6>,
@@ -1269,6 +1306,14 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod2: <contenttweaker:nether_star_dust>,
 
             drilling: <mekores:mekanismore:48> * 3
+        }
+    },
+    beryllium: {
+        overworld: {
+            item: <contenttweaker:beryllium_ore>,
+            crushing: <contenttweaker:beryllium_dust> * 2,
+            crushingByprod1: <contenttweaker:zirconium_dirty_dust>,
+            crushingByprod2: <contenttweaker:beryllium_dust>
         }
     },
     zirconium: {
@@ -2647,6 +2692,7 @@ val drilling_fluid_amount as int[string] = {
     osmium: 45,
 
     cincinnasite: 50,
+    dilitheum: 100,
 
     platinum: 180,
     iridium: 220,

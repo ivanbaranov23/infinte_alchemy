@@ -1,0 +1,21 @@
+{
+	title: "Energy Vortex",
+	x: 14.5d,
+	y: 4.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"c7965077"
+	],
+	tasks: [{
+		uid: "5602a82e",
+		type: "item",
+		items: [{
+			id: "contenttweaker:space_data",
+			tag: {
+				data: "energy_vortex"
+			}
+		}]
+	}]
+}

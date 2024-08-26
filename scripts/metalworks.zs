@@ -1242,6 +1242,11 @@ static all_metals as IItemStack[string][string] = {
         gear: <contenttweaker:moon_gear>,
         block: <contenttweaker:moon_block>
     },
+    beryllium: {
+        ingot: <alchemistry:ingot:4>,
+        plate: <contenttweaker:beryllium_sheet>,
+        block: <contenttweaker:beryllium_block>
+    },
 
     //endgame
     lucky_alloy: {
@@ -3026,7 +3031,20 @@ scripts.helper.addFluidAlloyerRecipe(
         );
     }
 
-    recipes.addShapeless("ia_energized_compound", <contenttweaker:energized_compound> * 8, [<contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>]);
+    recipes.addShapeless("ia_energized_compound1", <contenttweaker:energized_compound> * 6, [
+        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>
+    ]);
+    recipes.addShapeless("ia_energized_compound2", <contenttweaker:energized_compound> * 8, [
+        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>,
+        <biomesoplenty:shroompowder>
+    ]);
+    recipes.addShapeless("ia_energized_compound3", <contenttweaker:energized_compound> * 12, [
+        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>,
+        <biomesoplenty:shroompowder>, <biomesoplenty:gem>
+    ]);
+    
+    
+    
     {//energetic gold
         mods.tconstruct.Alloy.removeRecipe(<liquid:energetic_alloy>);
         mods.immersiveengineering.ArcFurnace.removeRecipe(all_metals.energetic_gold1.ingot);

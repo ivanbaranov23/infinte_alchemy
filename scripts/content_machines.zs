@@ -79,7 +79,7 @@ function addFluidMixerRecipe(outf as ILiquidStack, inpf1 as ILiquidStack, inpf2 
     var recipe = AssemblyRecipe.create(function(container) {
         container.addFluidOutput("output", outf);
     });
-    recipe = recipe.requireItem("input", inpi);
+    if (inpi) recipe = recipe.requireItem("input", inpi);
     recipe = recipe.requireFluid("input", inpf1);
     recipe = recipe.requireFluid("input", inpf2);
     recipe = recipe.requireDuration("duration", time_t);

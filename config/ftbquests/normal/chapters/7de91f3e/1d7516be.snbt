@@ -1,6 +1,6 @@
 {
-	x: 12.5d,
-	y: 3.0d,
+	x: 13.0d,
+	y: 3.5d,
 	text: [
 		"You'll need some luck to finish this modpack. ",
 		"When crafted, Luck Crystal will get a random luck value, this value dictates how many Luck Particles.",

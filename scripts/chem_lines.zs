@@ -699,7 +699,12 @@ scripts.helper.addFluidMixerRecipe(
         20, 1000
     );
 }
+{//rare earth
+    mods.mekanism.chemical.dissolution.addRecipe(<contenttweaker:rare_earth_dust>, <gas:rare_earth_slurry> * 250);
+    mods.mekanism.chemical.crystallizer.addRecipe(<gas:rare_earth_slurry> * 250, <contenttweaker:rare_earth_dust>);
 
+    //in gas_column
+}
 
 {//glass fiber
     recipes.addShaped("ia_glass_fiber_materials", <contenttweaker:glass_fiber_materials>, [

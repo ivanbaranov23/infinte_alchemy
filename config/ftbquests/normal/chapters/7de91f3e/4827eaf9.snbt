@@ -1,6 +1,6 @@
 {
-	x: 25.0d,
-	y: 2.0d,
+	x: 21.0d,
+	y: -0.5d,
 	text: [
 		"Hook these multiblocks onto a tier 4+ altar to outsource some of the recipe to it. ",
 		"",

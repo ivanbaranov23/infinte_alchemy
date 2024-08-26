@@ -915,7 +915,7 @@ mods.mekanism.reaction.addRecipe(
 }
 
 
-{//mirror
+{//mirrors
     mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:moissanite_plate>, <contenttweaker:moissanite> * 4, 15000);
 
 	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:layered_glass>, 
@@ -953,6 +953,23 @@ mods.mekanism.reaction.addRecipe(
 		], null,
 		20, 4000
 	);
+
+	{
+        var rec = RecipeBuilder.newBuilder("neutronium_mirror2", "explosion_compressor", 30);
+
+        rec.addEnergyPerTickInput(1000000);
+
+        rec.addItemOutput(<contenttweaker:neutronium_mirror2>);
+        rec.addItemOutput(<contenttweaker:explosion_device> * 4);
+
+        rec.addItemInput(<contenttweaker:carminium_sheet> * 8);
+        rec.addItemInput(<contenttweaker:perfect_mirror_array>);
+        rec.addItemInput(<extendedcrafting:singularity:35> * 2);
+		rec.addItemInput(<contenttweaker:satellite_plating_base2> * 3);
+        rec.addItemInput(<contenttweaker:explosion_device_full> * 4);
+
+        rec.build();
+    }
 }
 {//uv lamp
 	scripts.content_machines.addFluidAlloyerRecipe(
@@ -1244,6 +1261,16 @@ scripts.content_machines.addAssemblerRecipe(
 	null, 80, 1024
 );
 
+{
+	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:carminium_sheet>, 
+		[
+			<botania:rune:13>,
+			<contenttweaker:beryllium_sheet> * 8,
+			<contenttweaker:carminium_ingot> * 48
+		], 1000000
+	);
+}
+
 {//elven circuit
 	recipes.addShaped("ia_conductive_alloy_coil", <contenttweaker:conductive_alloy_coil>, [
 		[<contenttweaker:conductive_alloy_wire>, <contenttweaker:tungsten_coil>, <contenttweaker:conductive_alloy_wire>], 
@@ -1315,6 +1342,14 @@ scripts.content_machines.addAssemblerRecipe(
 		],
 		null, 40, 1024
 	);
+
+	mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rtg2>, [
+		[<contenttweaker:polonium_block>, <contenttweaker:carminium_sheet>, <contenttweaker:c14_gem>, <contenttweaker:carminium_sheet>, <contenttweaker:polonium_block>], 
+		[<contenttweaker:carminium_sheet>, <contenttweaker:rtg>, <contenttweaker:rtg>, <contenttweaker:rtg>, <contenttweaker:carminium_sheet>], 
+		[<contenttweaker:c14_gem>, <contenttweaker:rtg>, <contenttweaker:vortexed_ingot>, <contenttweaker:rtg>, <contenttweaker:c14_gem>], 
+		[<contenttweaker:carminium_sheet>, <contenttweaker:rtg>, <contenttweaker:rtg>, <contenttweaker:rtg>, <contenttweaker:carminium_sheet>], 
+		[<contenttweaker:polonium_block>, <contenttweaker:carminium_sheet>, <contenttweaker:c14_gem>, <contenttweaker:carminium_sheet>, <contenttweaker:polonium_block>]
+	]);
 }
 
 {//rocket
@@ -1333,6 +1368,18 @@ scripts.content_machines.addAssemblerRecipe(
 		<liquid:thermal> * (144 * 8), 20, 1024 
 	);
 	
+}
+{//alien
+	scripts.content_machines.addFluidSieveRecipeRandom(
+		[
+			<contenttweaker:alien_wreck> % 20,
+			<contenttweaker:alien_electrode> % 25,
+			<contenttweaker:alien_motor> % 10
+		], <liquid:radioactive_waste> * 400, 
+        <liquid:mekanized_lubricant> * 1000, <contenttweaker:alien_wreck>,
+        <contenttweaker:pressure_cutter>,
+        100, 10000
+	);
 }
 
 scripts.content_machines.addAssemblerRecipe(

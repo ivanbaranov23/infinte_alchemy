@@ -3,7 +3,7 @@
 	x: 3.0d,
 	y: 2.0d,
 	text: [
-		""
+		"Basic chance for making a delicate gem is 5% (actually 4.999..., it's a float thing), but you can increase it with an augment "
 	],
 	dependencies: [
 		"205d6e3e"

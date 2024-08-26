@@ -123,6 +123,36 @@
     ]);
 }
 
+{//lavaboat
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:nether_boat_plating>, 
+        [<immersivepetroleum:upgrades>, <contenttweaker:hot_plate> * 2, <contenttweaker:watertight_steel_plate> * 5], 
+        50000
+    );
+
+
+    recipes.addShaped("ia_nether_boat", <contenttweaker:nether_boat>, [
+        [null, <contenttweaker:robot_arm>, null], 
+        [<contenttweaker:high_heat_glass>, <enderio:item_capacitor_crystalline>, <contenttweaker:mechanical_eye>], 
+        [<contenttweaker:nether_boat_plating>, <contenttweaker:nether_boat_plating>, <contenttweaker:nether_boat_plating>]
+    ]);
+
+    recipes.addShaped("ia_nether_boat_ores", <contenttweaker:nether_boat_ores>, [
+        [<enderio:item_material:72>, <enderio:item_material:72>, <enderio:item_material:72>], 
+        [<enderio:item_material:72>, <contenttweaker:nether_boat_plating>, <enderio:item_material:72>], 
+        [<enderio:item_material:72>, <enderio:item_material:72>, <enderio:item_material:72>]
+    ]);
+    recipes.addShaped("ia_nether_boat_osram", <contenttweaker:nether_boat_osram>, [
+        [<taiga:osram_ingot>, <enderio:item_material:72>, <taiga:osram_ingot>], 
+        [<enderio:item_material:72>, <contenttweaker:nether_boat_plating>, <enderio:item_material:72>], 
+        [<taiga:osram_ingot>, <enderio:item_material:72>, <taiga:osram_ingot>]
+    ]);
+    recipes.addShaped("ia_nether_boat_osram", <contenttweaker:nether_boat_osram>, [
+        [<contenttweaker:nether_boat_plating>, <enderio:item_material:72>, <contenttweaker:nether_boat_plating>], 
+        [<enderio:item_material:72>, <botania:quartz:2>, <enderio:item_material:72>], 
+        [<contenttweaker:nether_boat_plating>, <enderio:item_material:72>, <contenttweaker:nether_boat_plating>]
+    ]);
+}
+
 {//skyfinder
     
     recipes.addShaped("ia_skyfinder_mech", <contenttweaker:skyfinder_mech>, [

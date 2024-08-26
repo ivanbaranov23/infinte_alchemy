@@ -1,11 +1,12 @@
 {
 	title: "DWC step 1",
-	x: 8.0d,
-	y: 12.0d,
+	x: 3.0d,
+	y: 2.5d,
 	text: [
 		"Make Demon Crucible and Demon Crystallizer. ",
 		"",
-		"Demon Crucible will release demon will into the chunk. ",
+		"Demon Crucible will release demon will into the chunk from tartaric gems or will crystals. ",
+		"1 crystal = 50 will",
 		"",
 		"Demon Crystallizer will turn 100 will from the chunk into a demon will crystal cluster. That cluster will then grow at 50 will per crystal up to 7 crystals total.",
 		"",

@@ -1,4 +1,6 @@
 
+import mods.requious.Assembly;
+import mods.requious.AssemblyRecipe;
 
 
 mods.botania.RuneAltar.addRecipe(<contenttweaker:night_glass> * 2, [
@@ -35,9 +37,39 @@ recipes.addShaped("ia_star_frame", <contenttweaker:star_frame>, [
 
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:sunnarium_core>, [
-    [<taiga:nihilite_block>, <taiga:nihilite_block>, <contenttweaker:compact_empowerer>, <taiga:nihilite_block>, <taiga:nihilite_block>], 
-    [<taiga:nihilite_block>, <contenttweaker:starmetal_plate>, <contenttweaker:sunnarium_chunk>, <contenttweaker:starmetal_plate>, <taiga:nihilite_block>], 
+    [<taiga:nihilite_block>, <contenttweaker:compact_empowerer>, <contenttweaker:compact_empowerer>, <contenttweaker:compact_empowerer>, <taiga:nihilite_block>], 
+    [<contenttweaker:compact_empowerer>, <contenttweaker:starmetal_plate>, <contenttweaker:sunnarium_chunk>, <contenttweaker:starmetal_plate>, <contenttweaker:compact_empowerer>], 
     [<contenttweaker:compact_empowerer>, <contenttweaker:sunnarium_chunk>, <contenttweaker:light_gear>, <contenttweaker:sunnarium_chunk>, <contenttweaker:compact_empowerer>], 
-    [<taiga:nihilite_block>, <contenttweaker:starmetal_plate>, <contenttweaker:sunnarium_chunk>, <contenttweaker:starmetal_plate>, <taiga:nihilite_block>], 
-    [<taiga:nihilite_block>, <taiga:nihilite_block>, <contenttweaker:compact_empowerer>, <taiga:nihilite_block>, <taiga:nihilite_block>]
+    [<contenttweaker:compact_empowerer>, <contenttweaker:starmetal_plate>, <contenttweaker:sunnarium_chunk>, <contenttweaker:starmetal_plate>, <contenttweaker:compact_empowerer>], 
+    [<taiga:nihilite_block>, <contenttweaker:compact_empowerer>, <contenttweaker:compact_empowerer>, <contenttweaker:compact_empowerer>, <taiga:nihilite_block>]
 ]);
+
+{
+    var recipe = AssemblyRecipe.create(function(container) {
+		for o in 0 to 2 {
+			if(container.jei)
+				container.addItemOutput("output" ~ o, <astralsorcery:itemrockcrystalsimple>.withLore(["200 size", "other stats are the same", "§d§lchance 80%"]));
+			else if(container.random.nextDouble() < 0.8) //>
+				container.addItemOutput("output" ~ o, <astralsorcery:itemrockcrystalsimple>.withTag(container.getItem("mark").tag + {
+                    astralsorcery:{
+                        crystalProperties:{
+                            size: 200
+                        }
+                    }
+                }));
+		}
+        
+	});
+	recipe = recipe.requireItem("input", <astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {size: 400}}}).marked("mark"));
+    
+    recipe = recipe.requireFluid("input", <liquid:mekanized_lubricant> * 1000);
+    
+
+    recipe = recipe.requireItem("catalyst", <contenttweaker:pressure_cutter>, 0, 0);
+    
+    recipe = recipe.requireDuration("duration", 100);
+    recipe = recipe.requireEnergy("power", 100 * 1000);
+
+    <assembly:bioassembler>.addRecipe(recipe);
+    <assembly:bioassembler>.addJEIRecipe(recipe);
+}

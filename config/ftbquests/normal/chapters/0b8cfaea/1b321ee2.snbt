@@ -1,0 +1,27 @@
+{
+	x: -5.5d,
+	y: 1.5d,
+	can_repeat: true,
+	tasks: [{
+		uid: "de4b3829",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "7717e62a",
+		type: "item",
+		item: {
+			id: "astralsorcery:itemrockcrystalsimple",
+			tag: {
+				astralsorcery: {
+					crystalProperties: {
+						size: 400,
+						purity: 100,
+						collectiveCapability: 33,
+						fract: 0,
+						sizeOverride: -1
+					}
+				}
+			}
+		}
+	}]
+}

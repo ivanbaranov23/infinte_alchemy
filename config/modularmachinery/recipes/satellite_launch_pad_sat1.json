@@ -16,15 +16,26 @@
             "item": "contenttweaker:satellite_chip@0",
             "amount": 1,
             "nbt": {
-                "data": "linked"
+                "data": "linked10"
             }
         },
 
         {
-            "type": "fluid",
+            "type": "item",
             "io-type": "input",
-            "fluid": "rocket_fuel",
-            "amount": 3200
+            "item": "openblocks:tank",
+            "amount": 1,
+            "nbt": {"tank": {
+                "FluidName": "rocket_fuel",
+                "Amount": ">=3200"
+            }},
+            "nbt-display": {"tank": {
+                "FluidName": "rocket_fuel",
+                "Amount": "3200"
+                
+            }, "display": {
+                "Name": "3200 mb or more"
+            }}
         },
         {
             "type": "item",

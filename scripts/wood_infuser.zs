@@ -212,6 +212,22 @@ addWoodInfuseFireJEI(<mekanism:saltblock>, <alchemistry:wet_sand>, [
 ]);
 
 
+addWoodInfuseFire(
+    <blockstate:erebus:ore_emerald>, <blockstate:erebus:grandmas_shoes_mushroom_block:variant=all_outside>, [
+        <contenttweaker:bamboo_cookie>, <contenttweaker:burn_powder>, <thermalfoundation:material:770>
+], 20);
+addWoodInfuseFireJEI(<erebus:ore_emerald>, <erebus:grandmas_shoes_mushroom_block>, [
+        <contenttweaker:bamboo_cookie>, <contenttweaker:burn_powder>, <thermalfoundation:material:770>
+]);
+addWoodInfuseFire(
+    <blockstate:immersiveengineering:ore:type=uranium>, <blockstate:erebus:grandmas_shoes_mushroom_block:variant=all_outside>, [
+        <prodigytech:emerald_dust>, <contenttweaker:burn_powder>, <thermalfoundation:material:770>
+], 20);
+addWoodInfuseFireJEI(<immersiveengineering:ore:5>, <erebus:grandmas_shoes_mushroom_block>, [
+        <prodigytech:emerald_dust>, <contenttweaker:burn_powder>, <thermalfoundation:material:770>
+]);
+
+
 
 addWoodInfuseBlueFire(
     <blockstate:contenttweaker:divine_mud>, <blockstate:contenttweaker:glowshroomite_mud>, [

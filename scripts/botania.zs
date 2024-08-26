@@ -147,7 +147,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
 recipes.addShaped("ia_frame13", <contenttweaker:mana_frame>, [
 	[<moreplates:manasteel_plate>, <contenttweaker:rune_base>, <moreplates:manasteel_plate>], 
-	[<botania:managlass>, <contenttweaker:blood_frame>, <botania:managlass>], 
+	[<contenttweaker:pure_cincinnasite>, <contenttweaker:blood_frame>, <contenttweaker:pure_cincinnasite>], 
 	[<moreplates:crystalline_alloy_plate>, <contenttweaker:bloody_circuit>, <moreplates:crystalline_alloy_plate>]
 ]);
 recipes.remove(<botania:runealtar>);
@@ -210,6 +210,34 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
     PureDaisy.addRecipe(<erebus:ore_copper>, <erebus:ore_jade>);
     PureDaisy.addRecipe(<quark:biome_brick:1>, <netherendingores:ore_other_1:10>);
     PureDaisy.addRecipe(<quark:biome_cobblestone:1>, <aether_legacy:icestone>);
+
+    PureDaisy.addRecipe(<contenttweaker:living_steel_sheetmetal>, <contenttweaker:pure_sheetmetal>);
+    PureDaisy.addRecipe(<contenttweaker:crystal_metal_block>, <contenttweaker:pure_metal>);
+    PureDaisy.addRecipe(<betternether:cincinnasite_forged>, <contenttweaker:pure_cincinnasite>);
+
+    
+}
+{//quartz
+    ManaInfusion.removeRecipe(<botania:quartz:1>);
+    ManaInfusion.addInfusion(<botania:quartz:1> * 2, <extendedcrafting:singularity_custom:26>, 5000);
+    ManaInfusion.addInfusion(<botania:quartz:1> * 2, <extendedcrafting:singularity_custom:25>, 5000);
+
+    recipes.remove(<botania:quartz>);
+    ManaInfusion.addInfusion(<botania:quartz> * 2, <extendedcrafting:singularity_custom:27>, 5000);
+
+    recipes.remove(<botania:quartz:6>);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <botania:quartz:6> * 2,
+        <extendedcrafting:singularity_custom:25>, <liquid:sunnarium> * 11000,
+        5000
+    );
+
+    recipes.remove(<botania:quartz:2>);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <botania:quartz:2> * 2,
+        <extendedcrafting:singularity_custom:25>, <liquid:super_heat_lava> * 500,
+        5000
+    );
 }
 
 recipes.addShaped("ia_opencrate", <botania:opencrate>, [
@@ -618,7 +646,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:terraplate>, [
 ]);
 recipes.addShaped("ia_terra_coral", <contenttweaker:terra_coral>, [
     [<botania:manaresource:4>, <contenttweaker:life>, <botania:manaresource:4>], 
-    [<botania:manaresource:4>, <biomesoplenty:coral:*>, <botania:manaresource:4>], 
+    [<botania:manaresource:4>, <contenttweaker:coral_dust>, <botania:manaresource:4>], 
     [<botania:manaresource:4>, <contenttweaker:life>, <botania:manaresource:4>]
 ]);
 //gaia

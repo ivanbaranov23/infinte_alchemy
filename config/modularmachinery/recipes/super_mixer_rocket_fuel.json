@@ -1,0 +1,70 @@
+{
+    "machine": "super_mixer",
+    "registryName": "super_mixer_rocket_fuel",
+    "recipeTime": 200,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 1000000
+        },
+        {
+            "type": "will",
+            "io-type": "input",
+            "willtype": "steadfast",
+            "willamount": 30
+        },
+        
+        
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "ore:rocketFuelA",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "ore:rocketFuelB",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:manaresource@1",
+            "amount": 1
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "nitronite_fluid",
+            "amount": 10000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "ammonium_nitrate",
+            "amount": 25000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "napalm",
+            "amount": 10000
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "vapor_of_levity",
+            "amount": 3000
+        },
+        
+        
+        {
+            "type": "fluid",
+            "io-type": "output",
+            "fluid": "rocket_fuel",
+            "amount": 1000
+        }
+    ]
+}

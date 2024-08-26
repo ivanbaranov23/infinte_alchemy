@@ -130,6 +130,13 @@ Distillation.addRecipe(
 		[0.07, 0.05]
 	);
 
+	//nitronite
+	scripts.content_machines.addFluidMixerRecipe(
+		<liquid:nitronite_fluid> * 600, 
+		<liquid:osram_fluid> * 100, <liquid:magma_fluid> * 600, null, 
+		20, 500
+	);
+
 	//heat lava
 	scripts.content_machines.addAdvancedMixerRecipe(
 		[<prodigytech:heat_capacitor_1:1200>], 
@@ -150,7 +157,7 @@ Distillation.addRecipe(
 		[<prodigytech:heat_capacitor_3:1200>], 
 		[<liquid:super_heat_lava> * 1000, <liquid:lava_residue> * 1000], 
 		[<extendedcrafting:singularity_custom:13>, <botania:rune:1>, <prodigytech:heat_capacitor_3>], 
-		[<liquid:high_heat_lava> * 1000, <liquid:fire> * 1000, <liquid:rocket_fuel> * 300], 
+		[<liquid:high_heat_lava> * 1000, <liquid:fire> * 1000, <liquid:nitronite_fluid> * 1000], 
 		40, 1024
 	);
 
@@ -434,23 +441,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
         40, 1000
     );
 }
-{//rocket fuel
-	mods.enderio.Vat.removeRecipe(<liquid:rocket_fuel>);
-	scripts.content_machines.addAdvancedMixerRecipe(
-		[],
-		[<liquid:rocket_fuel> * 500],
-		[
-			<contenttweaker:thermal_dust> * 2,
-			<minecraft:gunpowder> * 12,
-			<immersiveengineering:material:18>
-		], [
-			<liquid:napalm> * 2000,
-			<liquid:ammonium_nitrate> * 500,
-			<liquid:enriched_diesel1> * 200,
-			<liquid:vapor_of_levity> * 20
-		], 20, 1000
-	);
-}
+
 
 {//emp steam
 	TEImbuer.addRecipe(<liquid:empowered_steam> * 500, <contenttweaker:rainbow_crystal_cluster>, <liquid:steam> * 4000, 20000);

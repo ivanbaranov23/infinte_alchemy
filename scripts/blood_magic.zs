@@ -595,19 +595,21 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		<contenttweaker:bucket_obsidian_void>
 	], 320, 128);
 	{//claw and crabolion
+		recipes.addShapeless("ia_bm_clay_st", <contenttweaker:alchemical_clay_st>, [<contenttweaker:alchemical_clay>, <minecraft:lingering_potion>.withTag({Potion: "quark:long_resilience"})]);
+	
 		TartaricForge.removeRecipe([<minecraft:flint>, <minecraft:flint>, <bloodmagic:cutting_fluid>]);
 		TartaricForge.addRecipe(<bloodmagic:component:30>, [
 			<mod_lavacow:mimic_claw_cooked>,
 			<thermalfoundation:material:264>,
 			<enderio:block_holy_fog>,
-			<tconstruct:edible>
+			<contenttweaker:alchemical_clay_st>
 		], 320, 128);
 
 		TartaricForge.addRecipe(<bloodmagic:component:30>, [
 			<mod_lavacow:mimic_claw_cooked>,
 			<thermalfoundation:material:264>,
 			<contenttweaker:crabolion>,
-			<tconstruct:edible>
+			<contenttweaker:alchemical_clay_st>
 		], 320, 32);
 
 		TartaricForge.addRecipe(<contenttweaker:crabolion> * 3, [

@@ -1,0 +1,14 @@
+{
+	x: 13.5d,
+	y: 3.0d,
+	dependencies: [
+		"501a09f7"
+	],
+	tasks: [{
+		uid: "f20389c8",
+		type: "item",
+		items: [{
+			item: "contenttweaker:information_crystal"
+		}]
+	}]
+}

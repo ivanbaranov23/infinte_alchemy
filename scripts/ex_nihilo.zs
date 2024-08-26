@@ -83,6 +83,8 @@ Compost.addRecipe(<ore:listAllseed>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<immersiveengineering:seed>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<actuallyadditions:item_canola_seed>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<contenttweaker:chewed_meat>, 0.5, "269023", <minecraft:dirt>);
+Compost.addRecipe(<biomesoplenty:plant_0:11>, 0.1, "269023", <minecraft:dirt>);
+Compost.addRecipe(<biomesoplenty:plant_0:12>, 0.1, "269023", <minecraft:dirt>);
 
 Compost.addRecipe(<roots:wildroot>, 0.1, "735827", <minecraft:dirt>);
 

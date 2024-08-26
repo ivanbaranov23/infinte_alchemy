@@ -68,6 +68,13 @@ function addMekOreNew(
     addMekOreFix([<contenttweaker:osram_chunk>], <gas:osram>, <mekores:mekanismore:291>, <mekores:mekanismore:292>);
     //eezo
     addMekOreFix([<contenttweaker:eezo_chunk>], <gas:eezo>, <mekores:mekanismore:296>, <mekores:mekanismore:297>);
+    //dilitheum
+    addMekOreNew(<gas:dilithium>, <gas:cleandilithium>, 
+        <taiga:dilithium_crystal>, <mekores:mekanismore:126>, <mekores:mekanismore:127>, <mekores:mekanismore:128>,
+        <taiga:dilithium_dust>
+    );
+    addMekOreFix([<taiga:dilithium_ore>, <netherendingores:ore_nether_modded_1:14>], <gas:dilithium>, <taiga:dilithium_crystal>, <mekores:mekanismore:126>);
+    
 }
 {//t3
     //platinum

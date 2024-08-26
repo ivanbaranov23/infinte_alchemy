@@ -1,0 +1,14 @@
+{
+	x: 16.5d,
+	y: 8.0d,
+	dependencies: [
+		"c7965077"
+	],
+	tasks: [{
+		uid: "596fd3f9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:space_ice_raw"
+		}]
+	}]
+}

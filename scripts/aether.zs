@@ -218,6 +218,6 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 //zanite
 recipes.addShaped("ia_zanite_coral", <contenttweaker:zanite_coral>, [
     [<aether_legacy:zanite_gemstone>, <contenttweaker:life>, <aether_legacy:zanite_gemstone>], 
-    [<aether_legacy:zanite_gemstone>, <biomesoplenty:coral:*>, <aether_legacy:zanite_gemstone>], 
+    [<aether_legacy:zanite_gemstone>, <contenttweaker:coral_dust>, <aether_legacy:zanite_gemstone>], 
     [<aether_legacy:zanite_gemstone>, <contenttweaker:life>, <aether_legacy:zanite_gemstone>]
 ]);

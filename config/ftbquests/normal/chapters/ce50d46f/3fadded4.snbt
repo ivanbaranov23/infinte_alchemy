@@ -1,6 +1,6 @@
 {
-	x: 10.5d,
-	y: 4.0d,
+	x: 11.5d,
+	y: 5.0d,
 	text: [
 		"Put a Satellite Chip into the controller and select the search target for your Satellite Swarm. ",
 		"",
