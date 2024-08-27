@@ -1,8 +1,8 @@
 {
 	title: "Farm some crops 3",
 	icon: "minecraft:reeds",
-	x: -0.5d,
-	y: 5.0d,
+	x: 0.5d,
+	y: 4.0d,
 	shape: "diamond",
 	text: [
 		""

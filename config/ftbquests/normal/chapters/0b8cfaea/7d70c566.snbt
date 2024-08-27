@@ -1,7 +1,7 @@
 {
 	icon: "roots:mortar",
-	x: 1.5d,
-	y: -1.0d,
+	x: 0.5d,
+	y: -2.0d,
 	text: [
 		"Make some charcoal in the pyre and craft a mortar"
 	],

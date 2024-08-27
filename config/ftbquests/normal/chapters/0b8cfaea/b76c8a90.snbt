@@ -1,0 +1,17 @@
+{
+	x: 2.5d,
+	y: -4.0d,
+	dependencies: [
+		"61bd04c7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "81b4050f",
+		type: "item",
+		items: [{
+			item: "roots:runic_shears"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

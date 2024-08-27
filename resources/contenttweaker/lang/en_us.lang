@@ -1407,6 +1407,14 @@ item.contenttweaker.very_very_bouncy_matter.name=Bounced Matter
 
 item.contenttweaker.poisotheum.name=Poisotheum
 
+item.contenttweaker.pectin.name=Pectin
+fluid.tamarind_juice=Tamarind Juice
+fluid.tartaric_acid=Tartaric Acid
+item.contenttweaker.wine_diamond.name=Wine Diamond
+item.contenttweaker.wine_diamond_cluster.name=Wine Diamond Cluster
+item.contenttweaker.carminium_sheet.name=Beryllium-Carminium Reflector
+
+
 item.contenttweaker.tablet_empty.name=Empty Tablet
 item.contenttweaker.tablet_evil.name=Evil Tablet
 item.contenttweaker.tablet_engraved.name=Engraved Tablet

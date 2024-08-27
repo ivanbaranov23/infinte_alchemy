@@ -5,6 +5,7 @@ import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Imbuer;
 
+import mods.modularmachinery.RecipeBuilder;
 
 {//polyethylene
     mods.mekanism.reaction.addRecipe(
@@ -844,6 +845,45 @@ scripts.helper.addFluidMixerRecipe(
         <contenttweaker:space_paper_base>, <liquid:vapor_of_levity> * 200, <gas:polyethylene> * 4000, 
         <contenttweaker:space_paper>, <gas:waste_gas> * 500, 900, 60
     );
+}
+{//tartaric acid
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:tamarind_juice> * 250,
+        <harvestcraft:tamarinditem>, 2000
+    );
+
+    mods.thermalexpansion.Refinery.addRecipe(<liquid:tartaric_acid> * 100, null, <liquid:tamarind_juice> * 250, 2000);
+
+    mods.mekanism.reaction.addRecipe(
+        <biomesoplenty:gem:2>, <liquid:tartaric_acid> * 1000, <gas:carmin> * 750, 
+        <contenttweaker:wine_diamond> * 2, <gas:carmin> * 500, 900, 60
+    );
+    mods.mekanism.reaction.addRecipe(
+        <minecraft:diamond>, <liquid:tartaric_acid> * 1000, <gas:carmin> * 750, 
+        <contenttweaker:wine_diamond> * 2, <gas:carmin> * 500, 900, 60
+    );
+
+    recipes.addShaped("wine_diamond_cluster", <contenttweaker:wine_diamond_cluster>, [
+        [null, <contenttweaker:wine_diamond>, null],
+        [<contenttweaker:wine_diamond>, <twilightforest:carminite>, <contenttweaker:wine_diamond>],
+        [null, <contenttweaker:wine_diamond>, null]
+    ]);
+
+    mods.actuallyadditions.AtomicReconstructor.addRecipe(<twilightforest:block_storage:4>, <contenttweaker:wine_diamond_cluster>, 10000);
+
+    {
+        var rec = RecipeBuilder.newBuilder("wine_diamond", "carmine_reactor", 10 * 20);
+
+        rec.addEnergyPerTickInput(1000);
+
+        rec.addItemInput(<biomesoplenty:gem:2>);
+        rec.addFluidInput(<liquid:strawberry_wine> * 500);
+        rec.addFluidInput(<liquid:tartaric_acid> * 500);
+
+        rec.addItemOutput(<contenttweaker:wine_diamond> * 4);
+        
+        rec.build();
+    }
 }
 
 {//carnexan

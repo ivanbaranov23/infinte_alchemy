@@ -1,0 +1,27 @@
+{
+	title: "Slimeball",
+	x: 2.5d,
+	y: 3.0d,
+	text: [
+		"You can make a cow bait, get a cow, milk it with a bambucket and use mushrooms to make a slime block.",
+		"",
+		"You can make glass and use water bottles to make rice slimeballs.",
+		"",
+		"Or you can sieve heat sand for orange slimeball.",
+		"",
+		"Possibilities are endless"
+	],
+	tasks: [{
+		uid: "82e1463f",
+		type: "item",
+		items: [{
+			item: "minecraft:slime_ball"
+		},
+		{
+			item: "actuallyadditions:item_misc 1 12"
+		},
+		{
+			item: "tconstruct:edible 1 4"
+		}]
+	}]
+}

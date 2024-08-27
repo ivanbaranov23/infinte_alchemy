@@ -1,0 +1,15 @@
+{
+	x: 3.5d,
+	y: -4.0d,
+	dependencies: [
+		"b76c8a90"
+	],
+	optional: true,
+	tasks: [{
+		uid: "48c7f80d",
+		type: "item",
+		items: [{
+			item: "roots:wildewheet"
+		}]
+	}]
+}

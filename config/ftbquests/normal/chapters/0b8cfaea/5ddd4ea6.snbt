@@ -3,6 +3,8 @@
 	x: -0.5d,
 	y: -3.0d,
 	text: [
+		"Beetroot and eggplant seeds drop from grass.",
+		"",
 		"Make some roots crops. ",
 		"",
 		"You won't be able to grow them just yet so you'll need to use crafting recipe multiple times."

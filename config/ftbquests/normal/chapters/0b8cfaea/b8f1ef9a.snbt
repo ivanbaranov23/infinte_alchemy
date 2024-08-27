@@ -2,7 +2,7 @@
 	x: -4.5d,
 	y: 0.0d,
 	text: [
-		"right click dirt for pebbles, twerk to grow trees, veinmine logs, jump into the void. All the usual skyblock things are here."
+		"shift right click dirt for pebbles, twerk to grow trees, veinmine logs, jump into the void. All the usual skyblock things are here."
 	],
 	dependencies: [
 		"911ba93a"

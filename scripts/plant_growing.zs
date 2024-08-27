@@ -16,37 +16,49 @@ import mods.modularmachinery.RecipeBuilder;
 //<ore:advancedFertilizer>.add(<xreliquary:fertile_potion>);
 <ore:advancedFertilizer>.add(<bloodmagic:component:5>);
 
-
-recipes.addShapeless("ia_fertilizer1", <contenttweaker:fertilizer1> * 4, [<minecraft:dye:15>, <prodigytech:ash>, <minecraft:rotten_flesh>]);
-recipes.addShapeless("ia_fertilizer2", <contenttweaker:fertilizer2> * 4, [<contenttweaker:fertilizer1>, <botania:fertilizer>, <actuallyadditions:item_fertilizer>, <immersiveengineering:seed>]);
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:fertilizer2_5> * 2, <contenttweaker:fertilizer2>, <liquid:fertilizer> * 1000, 2000);
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:fertilizer3> * 2, <contenttweaker:fertilizer2_5>, <liquid:honey> * 1000, 1000);
-//recipes.addShapeless("ia_fertilizer3", <contenttweaker:fertilizer3> * 4, [<contenttweaker:fertilizer2>, <erebus:compost>, <erebus:materials:19>, <thermalfoundation:fertilizer:2>]);
-recipes.addShapeless("ia_fertilizer4", <contenttweaker:fertilizer4> * 4, [<contenttweaker:fertilizer3>, <industrialforegoing:fertilizer>, <contenttweaker:steeleaf_mush>, <mekanism:biofuel>, <erebus:compost>]);
-mods.actuallyadditions.Empowerer.addRecipe(
-		<contenttweaker:fertilizer4_5>, <contenttweaker:fertilizer4>, 
-		<contenttweaker:enspiced_spicy_bioblend>, <atum:fertile_soil_pile>, <actuallyadditions:item_crystal:4>, <actuallyadditions:item_worm>,
-		3000, 10
-);
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:fertilizer5> * 4, <contenttweaker:fertilizer4_5>, <liquid:empoweredoil> * 500, 3000);
-mods.mekanism.reaction.addRecipe(
-    <contenttweaker:fertilizer5>, <liquid:ender_distillation> * 100, <gas:ammonia> * 50, 
-    <contenttweaker:fertilizer6> * 4, <gas:water> * 50, 50000, 60
-);
-mods.mekanism.reaction.addRecipe(
-    <contenttweaker:fertilizer5>, <liquid:worm_blood> * 300, <gas:ammonia> * 50, 
-    <contenttweaker:fertilizer6> * 4, <gas:water> * 50, 50000, 60
-);
-mods.bloodmagic.AlchemyTable.addRecipe(
-    <contenttweaker:fertilizer7> * 8, 
-    [<contenttweaker:fertilizer6>, <botania:manaresource:18>, <bloodmagic:component:5>, <bloodmagic:component:5>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
-    1000, 20, 4
-);
-mods.bloodmagic.AlchemyTable.addRecipe(
-    <contenttweaker:fertilizer7> * 4, 
-    [<contenttweaker:fertilizer6>, <contenttweaker:entwood_dust>, <bloodmagic:component:5>, <bloodmagic:component:5>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
-    1000, 20, 4
-);
+{//fertilizers
+    recipes.addShapeless("ia_fertilizer1", <contenttweaker:fertilizer1> * 4, [<minecraft:dye:15>, <prodigytech:ash>, <minecraft:rotten_flesh>]);
+    
+    recipes.addShapeless("ia_fertilizer2", <contenttweaker:fertilizer2> * 4, [<contenttweaker:fertilizer1>, <botania:fertilizer>, <actuallyadditions:item_fertilizer>, <immersiveengineering:seed>]);
+    
+    mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:fertilizer2_5> * 2, <contenttweaker:fertilizer2>, <liquid:fertilizer> * 1000, 2000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:fertilizer3> * 2, <contenttweaker:fertilizer2_5>, <liquid:honey> * 1000, 1000);
+    
+    recipes.addShapeless("ia_fertilizer4", <contenttweaker:fertilizer4> * 4, [
+        <contenttweaker:fertilizer3>, <industrialforegoing:fertilizer>, <contenttweaker:steeleaf_mush>, <mekanism:biofuel>, <erebus:compost>
+    ]);
+    recipes.addShapeless("ia_fertilizer4_2", <contenttweaker:fertilizer4> * 6, [
+        <contenttweaker:fertilizer3>, <industrialforegoing:fertilizer>, <contenttweaker:steeleaf_mush>, <mekanism:biofuel>, <erebus:compost>,
+        <liquid:tartaric_acid> * 1000
+    ]);
+    
+    mods.actuallyadditions.Empowerer.addRecipe(
+        <contenttweaker:fertilizer4_5>, <contenttweaker:fertilizer4>, 
+        <contenttweaker:enspiced_spicy_bioblend>, <atum:fertile_soil_pile>, <actuallyadditions:item_crystal:4>, <actuallyadditions:item_worm>,
+        3000, 10
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:fertilizer5> * 4, <contenttweaker:fertilizer4_5>, <liquid:empoweredoil> * 500, 3000);
+    
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:fertilizer5>, <liquid:ender_distillation> * 100, <gas:ammonia> * 50, 
+        <contenttweaker:fertilizer6> * 4, <gas:water> * 50, 50000, 60
+    );
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:fertilizer5>, <liquid:worm_blood> * 300, <gas:ammonia> * 50, 
+        <contenttweaker:fertilizer6> * 4, <gas:water> * 50, 50000, 60
+    );
+    
+    mods.bloodmagic.AlchemyTable.addRecipe(
+        <contenttweaker:fertilizer7> * 8, 
+        [<contenttweaker:fertilizer6>, <botania:manaresource:18>, <bloodmagic:component:5>, <bloodmagic:component:5>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
+        1000, 20, 4
+    );
+    mods.bloodmagic.AlchemyTable.addRecipe(
+        <contenttweaker:fertilizer7> * 4, 
+        [<contenttweaker:fertilizer6>, <contenttweaker:entwood_dust>, <bloodmagic:component:5>, <bloodmagic:component:5>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
+        1000, 20, 4
+    );
+}
 
 //todo super fertilizer
 static GCsoils as IItemStack[] = [

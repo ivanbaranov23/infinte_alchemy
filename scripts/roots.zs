@@ -49,7 +49,7 @@ recipes.addShaped("ia_fey_crafter", <roots:fey_crafter>, [
 
 
 
-{//early game pyre
+{//early game
     Pyre.addRecipe("charcoal_pyre",
         <minecraft:coal:1> * 3,
         [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]
@@ -78,6 +78,17 @@ recipes.addShaped("ia_fey_crafter", <roots:fey_crafter>, [
         <prodigytech:charred_stone> * 3,
         [<ore:stone>, <ore:stone>, <ore:stone>, <ore:rootsBark>, <minecraft:coal:1>]
     );
+
+    Mortar.addRecipe("ia_skystone", <appliedenergistics2:material:45> * 2,[
+        <minecraft:flint>, <minecraft:fire_charge>, <contenttweaker:fireclay>,
+        <minecraft:tallgrass:1>, <ore:dustWood>
+    ]);
+
+    recipes.addShaped("flint", <minecraft:flint>, [
+        [null, <botania:manaresource:21>, null],
+        [<botania:manaresource:21>, <exnihilocreatio:item_pebble>, <botania:manaresource:21>],
+        [null, <botania:manaresource:21>, null]
+    ]);
 }
 
 {//crops

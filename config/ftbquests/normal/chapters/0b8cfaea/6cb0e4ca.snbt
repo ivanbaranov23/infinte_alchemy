@@ -1,11 +1,11 @@
 {
 	title: "IT'S A BAMBUCKET!!!",
-	x: -1.5d,
-	y: 2.0d,
+	x: -2.5d,
+	y: 3.0d,
 	text: [
 		"Make youself a few bambuckets. You can get bamboo with witch water and sugarcane. ",
 		"",
-		"Unlike some clay weaklings, bambucket is a chad bucket that does not fear lava."
+		"Unlike some clay weaklings, bambucket is a chad bucket that does not fear lava. It even stacks"
 	],
 	dependencies: [
 		"15a113bb"

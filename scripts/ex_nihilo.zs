@@ -196,6 +196,12 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		<natura:nether_heat_sand>: [
 			<minecraft:blaze_powder> % 30
 		],
+		<minecraft:soul_sand>: [
+			<agricraft:agri_nugget:2> % 90,
+			<agricraft:agri_nugget:2> % 30,
+			<agricraft:agri_nugget:2> % 10
+		],
+		
 
 		<exnihilocreatio:block_granite_crushed>: [
 			<exnihilocreatio:item_pebble:1>,

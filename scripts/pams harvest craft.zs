@@ -325,6 +325,9 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
     );
 
     mods.thermalexpansion.Imbuer.addRecipe(<liquid:strawberry_wine> * 1000, <contenttweaker:yeast>, <liquid:strawberry_juice> * 1000, 5000);
+
+    
+    
 }
 
 {//yeast
@@ -469,6 +472,13 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:colagen_solution> * 1500, <mod_lavacow:foul_hide>, <liquid:vinegar> * 200, 2500);
     }
 
+    {//pectin
+        Centrifuge.addRecipe(
+            [<contenttweaker:pectin> % 50], <harvestcraft:lemonaideitem>, null, 
+            1000
+        );
+    }
+
     mods.thermalexpansion.Refinery.addRecipe(
         <liquid:impure_colagen> * 400, <minecraft:dye:15> % 3, 
         <liquid:colagen_solution> * 500, 3000
@@ -482,11 +492,16 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         <liquid:salty_colagen> * 500, 3000
     );
     
-    mods.alchemistry.Evaporator.addRecipe(<contenttweaker:gelatin_noodle>, <liquid:colagen> * 500);
+    mods.alchemistry.Evaporator.addRecipe(<contenttweaker:gelatin_noodle>, <liquid:colagen> * 1000);
     Transposer.addFillRecipe(
         <contenttweaker:gelatin_noodle>,
         <contenttweaker:glucose>, <liquid:colagen> * 350,
-        1000
+        3000
+    );
+    Transposer.addFillRecipe(
+        <contenttweaker:gelatin_noodle> * 2,
+        <contenttweaker:pectin>, <liquid:colagen> * 250,
+        2000
     );
 
     scripts.helper.addSimpleCrushingRecipeWByproduct(<contenttweaker:gelatin_noodle>, <contenttweaker:gelatin>, <contenttweaker:gelatin>, 50);

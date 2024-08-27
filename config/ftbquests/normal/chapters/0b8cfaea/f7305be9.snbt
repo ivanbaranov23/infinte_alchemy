@@ -5,7 +5,8 @@
 	text: [
 		"Sieve dirt for ancinet spores. Right click the dirt with the spores to turn it into mycelium. ",
 		"",
-		"Put a barrel with water on top to get witch water. While water is transforming, mushrooms will generate around the barrel."
+		"Put a barrel with water on top to get witch water. While water is transforming, mushrooms will generate around the barrel.",
+		"More mycelium speeds up the transformation."
 	],
 	dependencies: [
 		"2ecdc636"

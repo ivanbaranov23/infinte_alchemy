@@ -146,7 +146,7 @@
         [<enderio:item_material:72>, <contenttweaker:nether_boat_plating>, <enderio:item_material:72>], 
         [<taiga:osram_ingot>, <enderio:item_material:72>, <taiga:osram_ingot>]
     ]);
-    recipes.addShaped("ia_nether_boat_osram", <contenttweaker:nether_boat_osram>, [
+    recipes.addShaped("ia_nether_boat_quartz", <contenttweaker:nether_boat_quartz>, [
         [<contenttweaker:nether_boat_plating>, <enderio:item_material:72>, <contenttweaker:nether_boat_plating>], 
         [<enderio:item_material:72>, <botania:quartz:2>, <enderio:item_material:72>], 
         [<contenttweaker:nether_boat_plating>, <enderio:item_material:72>, <contenttweaker:nether_boat_plating>]

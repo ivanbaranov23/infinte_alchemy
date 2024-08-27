@@ -98,7 +98,6 @@ draconicevolution:lootcore
 draconicevolution:enderenergymanipulator
 thermalexpansion:florb
 thermalexpansion:morb
-quark:chest_passenger
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -108,7 +107,6 @@ quark:frog
 quark:pirate
 quark:crab
 quark:wraith
-quark:gravisand
 quark:pickarang
 quark:arrow_ender
 quark:arrow_explosive
@@ -120,6 +118,8 @@ quark:flat_item_frame
 quark:leash_knot
 quark:colored_item_frame
 quark:glass_item_frame
+quark:gravisand
+quark:chest_passenger
 quark:seat
 astralsorcery:entityhighlighted
 astralsorcery:entitystardust
@@ -345,8 +345,8 @@ appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
 enderio:primed_charge
-enderio:falling_machine
 enderio:owl_egg
+enderio:falling_machine
 projecte:water_projectile
 projecte:lava_projectile
 projecte:mob_randomizer

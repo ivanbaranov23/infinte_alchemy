@@ -2,7 +2,7 @@
 	title: "Welcome to End (dimension)",
 	x: 0.0d,
 	y: 0.0d,
-	shape: "rsquare",
+	shape: "square",
 	text: [
 		"Get to the End and kill the pushover lizard."
 	],

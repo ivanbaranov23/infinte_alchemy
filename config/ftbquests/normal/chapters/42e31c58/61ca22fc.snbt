@@ -2,7 +2,7 @@
 	title: "Machine Frame 7b",
 	x: 0.0d,
 	y: 0.0d,
-	shape: "rsquare",
+	shape: "square",
 	text: [
 		""
 	],

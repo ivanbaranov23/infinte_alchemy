@@ -1601,6 +1601,13 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
 
     VanillaFactory.createItem("coral_dust").register();
     VanillaFactory.createItem("terra_coral").register();
+
+    VanillaFactory.createItem("pectin").register();
+    VanillaFactory.createFluid("tamarind_juice", Color.fromHex("c7b08a")).register();
+    VanillaFactory.createFluid("tartaric_acid", Color.fromHex("c1b298")).register();
+    
+    VanillaFactory.createItem("wine_diamond").register();
+    VanillaFactory.createItem("wine_diamond_cluster").register();
 }
 {//vitamins
     //hexane

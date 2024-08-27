@@ -148,8 +148,8 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
             ]
         ],
         <contenttweaker:nether_boat_quartz>: [
-            [<minecraft:quartz_ore> * 128, <netherendingores:ore_nether_modded_1:9> * 64],
-            [<minecraft:quartz_ore> * 128, <netherendingores:ore_nether_modded_1:9> * 64]
+            [<minecraft:quartz_ore> * 160, <netherendingores:ore_nether_modded_1:9> * 96],
+            [<minecraft:quartz_ore> * 160, <netherendingores:ore_nether_modded_1:9> * 96]
         ]
     },
     <contenttweaker:robodruid_mech>: {

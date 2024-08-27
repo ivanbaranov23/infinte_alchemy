@@ -228,7 +228,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
     recipes.remove(<botania:quartz:6>);
     mods.thermalexpansion.Transposer.addFillRecipe(
         <botania:quartz:6> * 2,
-        <extendedcrafting:singularity_custom:25>, <liquid:sunnarium> * 11000,
+        <extendedcrafting:singularity_custom:25>, <liquid:sunnarium> * 10000,
         5000
     );
 

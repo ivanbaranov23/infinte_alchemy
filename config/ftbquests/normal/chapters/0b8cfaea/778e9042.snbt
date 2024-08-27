@@ -1,9 +1,9 @@
 {
 	title: "Make a farm ASAP",
-	x: -1.5d,
-	y: 4.0d,
+	x: -0.5d,
+	y: 3.0d,
 	text: [
-		"Just make it now. You'll need a variety of crops so just plant everything you're getting from dirt. "
+		"Just make it now. You'll need a variety of crops so just plant everything you're getting from sieving dirt and punching grass. "
 	],
 	dependencies: [
 		"6cb0e4ca"

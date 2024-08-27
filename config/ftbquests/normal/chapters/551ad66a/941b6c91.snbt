@@ -3,8 +3,7 @@
 	y: 0.0d,
 	text: [
 		"Do you like alloys? I like alloys.",
-		"",
-		"You can make bronze in TiC smeltery or grind copper and tin into dust and mix them."
+		"You'll need to grind copper and tin to make your first bronze. After that you can make it in TiC smeltery."
 	],
 	dependencies: [
 		"32464c8e"

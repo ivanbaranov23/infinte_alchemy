@@ -79,6 +79,10 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 	explosionfurnace_recipes.addRecipe(
 		<quantumflux:craftingpiece:6> * 12, <contenttweaker:zorra_steel_gem> * 8, 6000, <extendedcrafting:singularity_custom:62>, 1
 	);
+	explosionfurnace_recipes.addRecipe(
+		<contenttweaker:wine_diamond> * 16, <contenttweaker:zorra_steel_gem> * 8, 6000, <extendedcrafting:singularity_custom:62>, 1
+	);
+	
 
 	recipes.remove(<prodigytech:zorra_altar>);
 	recipes.addShaped("ia_zorra_altar", <prodigytech:zorra_altar>, [

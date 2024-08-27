@@ -2,7 +2,7 @@
 	title: "Atum portal",
 	x: -2.0d,
 	y: 0.0d,
-	shape: "rsquare",
+	shape: "square",
 	text: [
 		"Atum portal is build from 25+16+4+4 sandstone blocks.",
 		"Build 5x5 platform of sandstone, then an empty sandstone ring on it, then 2 block pillars on the corners. Fill the ring with water and throw scarab in it."

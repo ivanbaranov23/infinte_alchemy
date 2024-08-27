@@ -1,10 +1,11 @@
 {
-	x: 3.5d,
-	y: -1.0d,
+	x: 2.5d,
+	y: -2.0d,
 	text: [
 		"Make wooden shears to get leaves and cook some stone on a pyre to make juicer. "
 	],
 	dependencies: [
+		"d7a928bd",
 		"7d70c566"
 	],
 	tasks: [{
