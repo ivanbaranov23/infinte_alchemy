@@ -169,6 +169,55 @@
                     }
                 }
             ]
+        },
+
+        {
+            "match": {
+                "blocks": {"blocks": ["minecraft:cobblestone:0"]},
+                "harvester": {
+                    "heldItemMainHand": {"items" :["roots:living_pickaxe"]}
+                }
+            },
+            "drops": [
+                {
+                    
+                    "replaceBlock": {
+                        "block": "minecraft:gravel"
+                    }
+                }
+            ]
+        },
+        {
+            "match": {
+                "blocks": {"blocks": ["minecraft:gravel:0"]},
+                "harvester": {
+                    "heldItemMainHand": {"items" :["roots:living_pickaxe"]}
+                }
+            },
+            "drops": [
+                {
+                    
+                    "replaceBlock": {
+                        "block": "minecraft:sand"
+                    }
+                }
+            ]
+        },
+        {
+            "match": {
+                "blocks": {"blocks": ["minecraft:sand:0"]},
+                "harvester": {
+                    "heldItemMainHand": {"items" :["roots:living_pickaxe"]}
+                }
+            },
+            "drops": [
+                {
+                    
+                    "replaceBlock": {
+                        "block": "exnihilocreatio:block_dust"
+                    }
+                }
+            ]
         }
     ]
 }

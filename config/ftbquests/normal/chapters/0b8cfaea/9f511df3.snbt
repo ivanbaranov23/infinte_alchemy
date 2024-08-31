@@ -1,0 +1,19 @@
+{
+	x: -1.5d,
+	y: -2.0d,
+	text: [
+		"Mixing witch water and water makes dirt, flowing witch water and water also work."
+	],
+	dependencies: [
+		"f7305be9"
+	],
+	optional: true,
+	tasks: [{
+		uid: "45a1bf9a",
+		type: "item",
+		items: [{
+			item: "minecraft:dirt"
+		}],
+		count: 64L
+	}]
+}

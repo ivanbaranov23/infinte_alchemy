@@ -4,7 +4,6 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .output(item('erebus:materials', 11))
         .register()
 
-
 inWorldCrafting.fluidToItem.recipeBuilder()
         .fluidInput(fluid('witchwater'), 0.1f)
         .input(item('contenttweaker:bauxite_dust') * 2)
@@ -12,6 +11,19 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .input(item('minecraft:clay_ball'))
         .output(item('thermalfoundation:material', 68) * 3)
         .register()
+
+
+
+
+inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('blueslime'))
+        .input(item('exnihilocreatio:item_material', 3))
+        .input(item('minecraft:sapling'))
+        .output(item('tconstruct:slime_sapling'))
+        .register()
+
+
+
 
 inWorldCrafting.fluidToItem.recipeBuilder()
         .fluidInput(fluid('napalm'))

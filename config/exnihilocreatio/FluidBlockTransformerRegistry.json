@@ -139,5 +139,10 @@
     "fluidName": "lava",
     "input": "prodigytech:inferno_crystal",
     "output": "extrautils2:compressednetherrack"
+  },
+  {
+    "fluidName": "lava",
+    "input": "excompressum:compressed_block:8",
+    "output": "minecraft:quartz_block"
   }
 ]

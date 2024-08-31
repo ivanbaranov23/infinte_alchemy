@@ -1,0 +1,67 @@
+{
+	title: "AE2 set up",
+	icon: "appliedenergistics2:molecular_assembler",
+	x: -0.5d,
+	y: 4.0d,
+	text: [
+		"Barebones autocrafting set up. Power not included"
+	],
+	tasks: [{
+		uid: "eb623c21",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 4L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "4e9a438c",
+		type: "item",
+		item: "appliedenergistics2:energy_acceptor"
+	},
+	{
+		uid: "b4b0d498",
+		type: "item",
+		item: "appliedenergistics2:part 1 16",
+		count: 2
+	},
+	{
+		uid: "b562ad42",
+		type: "item",
+		item: "appliedenergistics2:part 1 340"
+	},
+	{
+		uid: "d284ff81",
+		type: "item",
+		item: "appliedenergistics2:material 1 52",
+		count: 36
+	},
+	{
+		uid: "127df65c",
+		type: "item",
+		item: "appliedenergistics2:part 1 220",
+		count: 4
+	},
+	{
+		uid: "aad1a55c",
+		type: "item",
+		item: "appliedenergistics2:crafting_storage_4k"
+	},
+	{
+		uid: "517b9333",
+		type: "item",
+		item: "appliedenergistics2:molecular_assembler"
+	},
+	{
+		uid: "2d3d0d3a",
+		type: "item",
+		item: "appliedenergistics2:interface"
+	},
+	{
+		uid: "6f86c8b0",
+		type: "item",
+		item: "appliedenergistics2:material 1 58",
+		count: 3
+	}]
+}

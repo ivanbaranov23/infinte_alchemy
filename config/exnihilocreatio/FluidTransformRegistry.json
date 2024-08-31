@@ -19,5 +19,22 @@
       }
     ],
     "duration": 12000
+  },
+  {
+    "inputFluid": "water",
+    "outputFluid": "sticky_water",
+    "transformingBlocks": [
+      {
+        "name": "tconstruct:slime_dirt",
+        "meta": 1
+      }
+    ],
+    "blocksToSpawn": [
+      {
+        "name": "tconstruct:slime_grass_tall",
+        "meta": 1
+      }
+    ],
+    "duration": 6000
   }
 ]

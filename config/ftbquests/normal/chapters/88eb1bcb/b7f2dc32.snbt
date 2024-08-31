@@ -4,9 +4,6 @@
 	text: [
 		"Can be used as TiC material. When you hit an entity with a tool with flying trait it will get levitation effect for a second."
 	],
-	dependencies: [
-		"414c2be4"
-	],
 	tasks: [{
 		uid: "75a3c34c",
 		type: "item",

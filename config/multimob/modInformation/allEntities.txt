@@ -98,6 +98,8 @@ draconicevolution:lootcore
 draconicevolution:enderenergymanipulator
 thermalexpansion:florb
 thermalexpansion:morb
+quark:chest_passenger
+quark:gravisand
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -114,13 +116,11 @@ quark:arrow_torch
 quark:dragon_breath_bottle
 quark:soul_powder
 quark:parrot_egg
+quark:seat
 quark:flat_item_frame
 quark:leash_knot
 quark:colored_item_frame
 quark:glass_item_frame
-quark:gravisand
-quark:chest_passenger
-quark:seat
 astralsorcery:entityhighlighted
 astralsorcery:entitystardust
 astralsorcery:entitycrystal

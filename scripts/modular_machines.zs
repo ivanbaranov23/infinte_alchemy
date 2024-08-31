@@ -283,15 +283,3 @@ addEarlySingularuty(<extendedcrafting:singularity_custom:100>, <minecraft:log>, 
 addEarlySingularuty(<extendedcrafting:singularity_custom:1>, <minecraft:flint>, 20*60*5);
 addEarlySingularuty(<extendedcrafting:singularity_custom:2>, <minecraft:stone>, 20*60*4);
 addEarlySingularuty(<extendedcrafting:singularity_custom:3>, <minecraft:glass>, 20*60*3);
-
-var tpc_circuit_plate = RecipeBuilder.newBuilder("tpc_circuit_plate", "tree_powered_compressor", 120);
-tpc_circuit_plate.addItemInput(<enderio:item_material:48>);
-tpc_circuit_plate.addItemInput(<minecraft:paper> * 4);
-tpc_circuit_plate.addItemInput(<immersiveengineering:wirecoil>);
-
-tpc_circuit_plate.addItemInput(<ore:treeSapling>, 1);
-tpc_circuit_plate.addItemInput(<minecraft:dye:15>);
-tpc_circuit_plate.addFluidInput(<fluid:water> * 250);
-
-tpc_circuit_plate.addItemOutput(<prodigytech:circuit_plate> * 2);
-tpc_circuit_plate.build();

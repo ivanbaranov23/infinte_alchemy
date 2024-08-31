@@ -3,12 +3,13 @@
 	x: -2.5d,
 	y: -3.0d,
 	text: [
-		"Sieve dirt for ancinet spores. Right click the dirt with the spores to turn it into mycelium. ",
+		"Sieve dirt for ancient spores. Right click the dirt with the spores to turn it into mycelium. ",
 		"",
 		"Put a barrel with water on top to get witch water. While water is transforming, mushrooms will generate around the barrel.",
 		"More mycelium speeds up the transformation."
 	],
 	dependencies: [
+		"6cb0e4ca",
 		"2ecdc636"
 	],
 	tasks: [{
@@ -30,6 +31,19 @@
 		type: "item",
 		items: [{
 			item: "minecraft:red_mushroom"
+		}]
+	},
+	{
+		uid: "6e1e170d",
+		type: "item",
+		items: [{
+			id: "erebus:bambucket",
+			tag: {
+				Fluid: {
+					FluidName: "witchwater",
+					Amount: 1000
+				}
+			}
 		}]
 	}]
 }

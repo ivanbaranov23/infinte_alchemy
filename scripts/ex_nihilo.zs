@@ -7,6 +7,8 @@ import mods.modularmachinery.RecipeBuilder;
 import mods.exnihilocreatio.Compost;
 //Compost.addRecipe(IIngredient, Float chance, String color, IItemStack);
 
+import mods.exnihilocreatio.Hammer;
+
 //recipes.remove(<exnihilocreatio:item_material:1>);
 recipes.addShapeless("ia_porcelain_clay", <exnihilocreatio:item_material:1> * 8, [<ore:clayBall>, <ore:clayBall>, <ore:clayBall>, <ore:dustNetherQuartz>, <ore:dyeWhite>, <ore:dustAsh>]);
 //mesh
@@ -102,6 +104,55 @@ Compost.addRecipe(<mod_lavacow:intestine>, 0.125, "aa4342", <minecraft:dirt>);
 Compost.addRecipe(<ore:itemSkull>, 0.5, "269023", <minecraft:dirt>);
 
 
+//dust fix
+Hammer.addRecipe(
+	<ore:compressed1xSand>, <excompressum:compressed_block>,
+	0, 1.0, 1.0
+);
+
+//sawdust fix
+Hammer.addRecipe(
+	<ore:logWood>, <mekanism:sawdust> * 4,
+	0, 1.0, 1.0
+);
+
+//ores
+Hammer.addRecipe(
+	<minecraft:iron_ore>, <exnihilocreatio:item_ore_iron> * 5,
+	0, 1.0, 1.0
+);
+Hammer.addRecipe(
+	<thermalfoundation:ore>, <exnihilocreatio:item_ore_copper> * 5,
+	0, 1.0, 1.0
+);
+Hammer.addRecipe(
+	<thermalfoundation:ore:1>, <exnihilocreatio:item_ore_tin> * 5,
+	0, 1.0, 1.0
+);
+
+//witch water mixin
+scripts.jei.addJEIhint(
+    [], [<liquid:lava>, <liquid:witchwater>],
+    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+    [<contenttweaker:burned_slimedirt>]
+);
+scripts.jei.addJEIhint(
+    [], [<liquid:water>, <liquid:witchwater>],
+    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+    [<contenttweaker:burned_slimedirt>]
+);
+scripts.jei.addJEIhint(
+    [], [<liquid:blood>, <liquid:witchwater>],
+    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+    [<minecraft:soul_sand>]
+);
+scripts.jei.addJEIhint(
+    [], [<liquid:witchwater>, <liquid:blueslime>],
+    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+    [<contenttweaker:burned_slimedirt>]
+);
+
+
 
 //mycelium
 Sieve.addFlintMeshRecipe(<minecraft:mycelium>, <exnihilocreatio:item_material:3>, 0.25);
@@ -194,12 +245,15 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<appliedenergistics2:material:3> % 20
 		],
 		<natura:nether_heat_sand>: [
-			<minecraft:blaze_powder> % 30
+			<minecraft:blaze_powder> % 40,
+			<erebus:small_plant:4> % 10,
+			<tconstruct:edible:4> % 10
 		],
 		<minecraft:soul_sand>: [
 			<agricraft:agri_nugget:2> % 90,
 			<agricraft:agri_nugget:2> % 30,
-			<agricraft:agri_nugget:2> % 10
+			<agricraft:agri_nugget:2> % 10,
+			<appliedenergistics2:crystal_seed>.withTag({progress: 0}) % 30
 		],
 		
 
@@ -242,12 +296,13 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<minecraft:dye:3> % 10
 		],
 		<minecraft:soul_sand>: [
-			<minecraft:quartz> % 40
+			<minecraft:quartz> % 40,
+			<appliedenergistics2:crystal_seed>.withTag({progress: 300}) % 30
 		],
 		<natura:nether_heat_sand>: [
 			<minecraft:blaze_powder> % 60,
 			<erebus:small_plant:4> % 30,
-			<tconstruct:edible:4> % 10
+			<tconstruct:edible:4> % 20
 		],
 
 		<minecraft:gravel>: [
@@ -257,13 +312,20 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		],
 		
 		<exnihilocreatio:block_granite_crushed>: [
-			<exnihilocreatio:item_ore_copper> % 75
+			<exnihilocreatio:item_ore_copper> % 75,
+			<exnihilocreatio:item_ore_copper> % 50,
+			<exnihilocreatio:item_ore_copper> % 10
 		],
 		<exnihilocreatio:block_diorite_crushed>: [
-			<exnihilocreatio:item_ore_tin> % 75
+			<exnihilocreatio:item_ore_tin> % 75,
+			<exnihilocreatio:item_ore_tin> % 50,
+			<exnihilocreatio:item_ore_tin> % 10
+			
 		],
 		<exnihilocreatio:block_andesite_crushed>: [
-			<exnihilocreatio:item_ore_iron> % 75
+			<exnihilocreatio:item_ore_iron> % 75,
+			<exnihilocreatio:item_ore_iron> % 50,
+			<exnihilocreatio:item_ore_iron> % 10
 		],
 
 		<exnihilocreatio:block_dust>: [

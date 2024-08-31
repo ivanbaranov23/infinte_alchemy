@@ -1,6 +1,6 @@
 {
-	x: 7.5d,
-	y: -3.0d,
+	x: 5.5d,
+	y: -1.0d,
 	shape: "square",
 	text: [
 		"Finally a furnace. You can now sieve for metals chunks and smelt them for ingots. "

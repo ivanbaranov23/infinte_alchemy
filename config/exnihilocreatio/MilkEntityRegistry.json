@@ -4,5 +4,11 @@
     "result": "milk",
     "amount": 10,
     "coolDown": 20
+  },
+  {
+    "entityOnTop": "erebus:erebus.beetle",
+    "result": "beetle_juice",
+    "amount": 10,
+    "coolDown": 20
   }
 ]

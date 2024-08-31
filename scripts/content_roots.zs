@@ -154,6 +154,10 @@ var staffwood_bug = VanillaFactory.createItem("staffwood_bug");
         if (item) item.damage(1, player);
         return true;
     };
+    staffwood_bug.itemRightClick = function(stack, world, player, hand){
+        stack.damage(1, player);
+        return "Pass";
+    };
     staffwood_bug.register();
 
 function addOreshroom(name as string){

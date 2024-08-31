@@ -6,8 +6,11 @@
 		"You'll need to grind copper and tin to make your first bronze. After that you can make it in TiC smeltery."
 	],
 	dependencies: [
-		"32464c8e"
+		"32464c8e",
+		"2fa8cefd",
+		"6c291114"
 	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "c8a8b9e6",
 		type: "item",

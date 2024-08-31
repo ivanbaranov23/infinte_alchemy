@@ -1,0 +1,19 @@
+{
+	x: 1.5d,
+	y: 8.5d,
+	text: [
+		"Breaks cobble->gravel->sand->dust in world, so you don't have to place it"
+	],
+	dependencies: [
+		"e15947a8"
+	],
+	tasks: [{
+		uid: "95e8beb6",
+		type: "item",
+		items: [{
+			item: "roots:living_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

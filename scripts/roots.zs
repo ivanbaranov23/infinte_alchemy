@@ -48,48 +48,13 @@ recipes.addShaped("ia_fey_crafter", <roots:fey_crafter>, [
 ]);
 
 
+Mortar.removeRecipe(<mysticalworld:iron_dust>);
+Mortar.removeRecipe(<mysticalworld:copper_dust>);
+Mortar.removeRecipe(<mysticalworld:gold_dust>);
+Mortar.removeRecipe(<mysticalworld:silver_dust>);
 
-{//early game
-    Pyre.addRecipe("charcoal_pyre",
-        <minecraft:coal:1> * 3,
-        [<ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>, <ore:logWood>]
-    );
-    Pyre.addRecipe("stone_pyre", 
-        <minecraft:stone> * 3, 
-        [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>, <ore:rootsBark>, <minecraft:coal:1>]
-    );
-    Pyre.addRecipe("brick_pyre", 
-        <minecraft:brick> * 3, 
-        [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>, <ore:rootsBark>, <minecraft:coal:1>]
-    );
-    Pyre.addRecipe("firebrick_pyre", 
-        <contenttweaker:firebrick> * 3, 
-        [<contenttweaker:fireclay>, <contenttweaker:fireclay>, <contenttweaker:fireclay>, <ore:rootsBark>, <minecraft:coal:1>]
-    );
-    Pyre.addRecipe("glassshard_pyre", 
-        <quark:glass_shards> * 3, 
-        [<ore:sand>, <ore:sand>, <ore:sand>, <ore:rootsBark>, <minecraft:coal:1>]
-    );
-    Pyre.addRecipe("ia_crucible",
-        <exnihilocreatio:block_crucible:1>,
-        [<exnihilocreatio:block_crucible>, <ore:rootsBark>, <ore:rootsBark>, <ore:rootsBark>, <minecraft:coal:1>]
-    );
-    Pyre.addRecipe("ia_charred_stone",
-        <prodigytech:charred_stone> * 3,
-        [<ore:stone>, <ore:stone>, <ore:stone>, <ore:rootsBark>, <minecraft:coal:1>]
-    );
 
-    Mortar.addRecipe("ia_skystone", <appliedenergistics2:material:45> * 2,[
-        <minecraft:flint>, <minecraft:fire_charge>, <contenttweaker:fireclay>,
-        <minecraft:tallgrass:1>, <ore:dustWood>
-    ]);
 
-    recipes.addShaped("flint", <minecraft:flint>, [
-        [null, <botania:manaresource:21>, null],
-        [<botania:manaresource:21>, <exnihilocreatio:item_pebble>, <botania:manaresource:21>],
-        [null, <botania:manaresource:21>, null]
-    ]);
-}
 
 {//crops
     Pyre.removeRecipe(<roots:pereskia>);
@@ -194,6 +159,18 @@ Fey.addRecipe("ia_runic_crafter", <roots:runic_crafter>,
     [<roots:fey_crafter>, <roots:chiseled_runed_obsidian>, <roots:chiseled_runed_obsidian>, <contenttweaker:flower_steel_gear>, <thermalfoundation:fertilizer:2>]
 );
 
+
+
+{
+    Fey.removeRecipe(<roots:living_pickaxe>);
+    Fey.addRecipe("living_pick", <roots:living_pickaxe>, [
+        <exnihilocreatio:hammer_iron>,
+        <roots:terra_moss>,
+        <minecraft:wooden_pickaxe>,
+        <roots:bark_wildwood>,
+        <roots:bark_wildwood>
+    ]);
+}
 
 
 

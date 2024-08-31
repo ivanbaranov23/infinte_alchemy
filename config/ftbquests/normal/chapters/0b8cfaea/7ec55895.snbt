@@ -1,0 +1,17 @@
+{
+	x: 0.5d,
+	y: 6.5d,
+	text: [
+		"Mix blue slime and witch water"
+	],
+	dependencies: [
+		"8f8309bb"
+	],
+	tasks: [{
+		uid: "b69e5aa6",
+		type: "item",
+		items: [{
+			item: "tconstruct:slime_dirt 1 1"
+		}]
+	}]
+}

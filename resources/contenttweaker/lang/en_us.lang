@@ -853,6 +853,10 @@ item.contenttweaker.gambrosium_processor.name=Gambrosium Calculation Processor
 fluid.sunnarium_base=Sunnaronite
 
 
+item.contenttweaker.sticky_bucket.name=Stinky Sticky Water Bambuket
+fluid.sticky_water=Sticky Water
+
+
 item.contenttweaker.forest_clay.name=Forest Clay
 tile.contenttweaker.forest_clay_block.name=Forest Clay
 

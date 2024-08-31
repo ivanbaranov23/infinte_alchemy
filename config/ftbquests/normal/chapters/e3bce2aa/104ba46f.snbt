@@ -4,6 +4,7 @@
 	shape: "square",
 	text: [
 		"Build a cool base. It's mandatory. You have access to AE and a lot of cool blocks are now obtainable.",
+		"",
 		"You have chisel, chisel works, quark, engineer's decor, xtones and more mods that add a lot of cool blocks, you must build a beautiful base."
 	],
 	dependencies: [

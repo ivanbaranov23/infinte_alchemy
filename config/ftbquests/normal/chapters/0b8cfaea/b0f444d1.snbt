@@ -1,0 +1,11 @@
+{
+	x: 1.5d,
+	y: 6.5d,
+	tasks: [{
+		uid: "f01b8e06",
+		type: "item",
+		items: [{
+			item: "tconstruct:slime_sapling"
+		}]
+	}]
+}

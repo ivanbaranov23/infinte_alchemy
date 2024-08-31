@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: -5.0d,
 	text: [
-		"Use pyre to cook you're crucible. Place it above a heat source (look it in jei) and put some cobble inside. It will make you lava. Use bambucket to get it out."
+		"Use pyre to cook your crucible. Place it above a heat source (look it in jei) and put some cobble inside. It will make you lava. Use bambucket to get it out."
 	],
 	dependencies: [
 		"7b51280b",

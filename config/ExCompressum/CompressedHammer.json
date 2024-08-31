@@ -8,7 +8,7 @@
     "excompressum:compressed_end_stone": true,
     "ExtraUtils2:CompressedCobblestone": true,
     "ExtraUtils2:CompressedGravel": true,
-    "ExtraUtils2:CompressedSand": true,
+    "ExtraUtils2:CompressedSand": false,
     "ExtraUtils2:CompressedNetherrack": true
   },
   "custom": {

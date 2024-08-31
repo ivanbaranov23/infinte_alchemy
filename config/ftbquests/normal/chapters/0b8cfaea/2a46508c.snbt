@@ -1,0 +1,23 @@
+{
+	x: -2.5d,
+	y: -7.0d,
+	dependencies: [
+		"f7305be9"
+	],
+	optional: true,
+	or_tasks: true,
+	tasks: [{
+		uid: "53c4c510",
+		type: "item",
+		items: [{
+			item: "minecraft:soul_sand"
+		}]
+	},
+	{
+		uid: "ca6780f7",
+		type: "item",
+		items: [{
+			item: "natura:nether_tainted_soil"
+		}]
+	}]
+}

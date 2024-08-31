@@ -1,0 +1,21 @@
+{
+	x: -1.5d,
+	y: -8.0d,
+	dependencies: [
+		"2a46508c"
+	],
+	tasks: [{
+		uid: "3719c4d6",
+		type: "item",
+		items: [{
+			item: "agricraft:agri_nugget 1 2"
+		}]
+	},
+	{
+		uid: "8432a03a",
+		type: "item",
+		items: [{
+			item: "minecraft:quartz"
+		}]
+	}]
+}

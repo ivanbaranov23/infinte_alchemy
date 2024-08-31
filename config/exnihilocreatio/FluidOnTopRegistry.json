@@ -14,5 +14,37 @@
       "name": "minecraft:cobblestone",
       "meta": 0
     }
+  },
+  {
+    "fluidInBarrel": "blueslime",
+    "fluidOnTop": "water",
+    "result": {
+      "name": "tconstruct:slime_dirt",
+      "meta": 1
+    }
+  },
+  {
+    "fluidInBarrel": "blueslime",
+    "fluidOnTop": "lava",
+    "result": {
+      "name": "contenttweaker:burned_slimedirt",
+      "meta": 0
+    }
+  },
+  {
+    "fluidInBarrel": "ash_solution",
+    "fluidOnTop": "lava",
+    "result": {
+      "name": "quark:marble",
+      "meta": 0
+    }
+  },
+  {
+    "fluidInBarrel": "creosote",
+    "fluidOnTop": "blueslime",
+    "result": {
+      "name": "quark:jasper",
+      "meta": 0
+    }
   }
 ]

@@ -1,0 +1,19 @@
+{
+	x: 0.5d,
+	y: 8.5d,
+	text: [
+		"dust to cobble recipes are fast but more manual",
+		"",
+		"burnt slimy dirt is less manual but is slower"
+	],
+	dependencies: [
+		"acffbdbd"
+	],
+	tasks: [{
+		uid: "9bab8001",
+		type: "item",
+		items: [{
+			item: "requious:altar"
+		}]
+	}]
+}

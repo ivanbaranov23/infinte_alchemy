@@ -2,7 +2,7 @@
 	title: "Farm some crops 2",
 	icon: "actuallyadditions:item_food 1 16",
 	x: -0.5d,
-	y: 5.0d,
+	y: 4.0d,
 	shape: "diamond",
 	text: [
 		""

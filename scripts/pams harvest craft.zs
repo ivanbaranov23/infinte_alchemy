@@ -213,10 +213,15 @@ Centrifuge.addRecipe(
 
 {//rice
     recipes.remove(<actuallyadditions:item_misc:9>);
-    recipes.addShapeless("ia_rice_dough1", <actuallyadditions:item_misc:9>, [
+    recipes.addShapeless("ia_rice_dough1", <actuallyadditions:item_misc:9> * 2, [
         <harvestcraft:mixingbowlitem>.reuse(), 
         <ore:cropRice>, <ore:cropRice>, 
         <ore:listAllwater>, <mekanism:salt>]
+    );
+    recipes.addShapeless("ia_rice_dough2", <actuallyadditions:item_misc:9>, [
+        <harvestcraft:mixingbowlitem>.reuse(), 
+        <ore:cropRice>, <ore:cropRice>, <ore:cropRice>, 
+        <ore:listAllwater>]
     );
 
     //recipes.remove(<harvestcraft:ricecakeitem>);

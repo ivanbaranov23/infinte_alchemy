@@ -2,7 +2,8 @@
 	x: 2.5d,
 	y: -4.0d,
 	dependencies: [
-		"61bd04c7"
+		"61bd04c7",
+		"c8e62381"
 	],
 	optional: true,
 	tasks: [{

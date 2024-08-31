@@ -1,0 +1,30 @@
+{
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"Did you know that TiC table and faucet works just fine without smeltery?"
+	],
+	dependencies: [
+		"42386b50",
+		"6c291114"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "9dc6dff6",
+		type: "item",
+		items: [{
+			item: "tconstruct:edible 1 3"
+		}]
+	},
+	{
+		uid: "1249e904",
+		type: "checkmark",
+		title: "bucket of blood",
+		icon: "tconstruct:edible 1 3"
+	}],
+	rewards: [{
+		uid: "7da6e37e",
+		type: "item",
+		item: "tconstruct:slime 1 3"
+	}]
+}

@@ -5,6 +5,7 @@
 		"Heat sand is a great heat source for the crucible. "
 	],
 	dependencies: [
+		"2a46508c",
 		"bf75f796"
 	],
 	optional: true,

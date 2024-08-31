@@ -6,5 +6,13 @@
       "meta": 3
     },
     "output": "witchwater"
+  },
+  {
+    "inputFluid": "sticky_water",
+    "reactant": {
+      "name": "agricraft:agri_nugget",
+      "meta": 2
+    },
+    "output": "blueslime"
   }
 ]

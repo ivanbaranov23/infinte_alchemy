@@ -1,0 +1,18 @@
+{
+	x: -4.5d,
+	y: 5.5d,
+	text: [
+		"Are you tired of all skyblock starting the same? Tired of twerking, composting, hammering and sieving again and again?  ",
+		"",
+		"If yes then you can try Alchemist Path (tm)! It has (almost) no sieving!"
+	],
+	dependencies: [
+		"2ecdc636"
+	],
+	tasks: [{
+		uid: "a916d998",
+		type: "checkmark",
+		title: "alchemistry path",
+		icon: "alchemistry:compound 1 17"
+	}]
+}

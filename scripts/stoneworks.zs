@@ -5,6 +5,9 @@ import crafttweaker.item.WeightedItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
+
+
+
 {//umber
     <ore:stone>.remove(<erebus:umberstone>);
     <ore:cobblestone>.remove(<erebus:umberstone:1>);
@@ -243,6 +246,8 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<tconstruct:seared:1>, <mod_lavacow:shattered_ice>], 
         [<mod_lavacow:shattered_ice>, <tconstruct:seared:1>,]
     ]);
+
+    
 }
 
 function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedItemStack[], fin as ILiquidStack[], time_sec as int, energy as int){

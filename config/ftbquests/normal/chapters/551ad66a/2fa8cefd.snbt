@@ -1,0 +1,14 @@
+{
+	x: -4.0d,
+	y: -1.0d,
+	dependencies: [
+		"32464c8e"
+	],
+	tasks: [{
+		uid: "79ad4bce",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:grindstone"
+		}]
+	}]
+}

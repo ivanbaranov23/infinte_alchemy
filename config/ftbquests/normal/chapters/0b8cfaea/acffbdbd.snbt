@@ -1,0 +1,17 @@
+{
+	x: -0.5d,
+	y: 7.5d,
+	text: [
+		"You can also make lava and blue slime meet in world to make this, tho this process is finicky."
+	],
+	dependencies: [
+		"8f8309bb"
+	],
+	tasks: [{
+		uid: "09768e7a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:burned_slimedirt"
+		}]
+	}]
+}

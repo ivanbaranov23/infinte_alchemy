@@ -1,4 +1,14 @@
 
+
+recipes.remove(<integrateddynamics:squeezer>);
+recipes.addShaped("ia_squeezer", <integrateddynamics:squeezer>, [
+	[<thermalfoundation:material:128>, <minecraft:iron_block>, <thermalfoundation:material:128>],
+	[<ore:slimeball>, null, <ore:slimeball>],
+	[<ore:logWood>, <minecraft:iron_ingot>, <ore:logWood>]
+]);
+
+
+
 recipes.remove(<integrateddynamics:variable>);
 recipes.addShaped("ia_id_variable", <integrateddynamics:variable> * 16, [
 	[<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>], 

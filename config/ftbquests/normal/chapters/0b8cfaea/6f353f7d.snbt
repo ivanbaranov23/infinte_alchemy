@@ -1,0 +1,15 @@
+{
+	x: -2.5d,
+	y: 5.5d,
+	dependencies: [
+		"468cf998",
+		"6cb0e4ca"
+	],
+	tasks: [{
+		uid: "06f6db8a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sticky_bucket"
+		}]
+	}]
+}

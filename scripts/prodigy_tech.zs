@@ -591,3 +591,29 @@ mods.bloodmagic.TartaricForge.addRecipe(<prodigytech:tartaric_stoker> * 12, [
         rec.build();
 	}
 }
+
+{//circuit_plate
+	var tpc_circuit_plate = RecipeBuilder.newBuilder("tpc_circuit_plate", "tree_powered_compressor", 120);
+	tpc_circuit_plate.addItemInput(<enderio:item_material:48>);
+	tpc_circuit_plate.addItemInput(<minecraft:paper> * 4);
+	tpc_circuit_plate.addItemInput(<immersiveengineering:wirecoil>);
+
+	tpc_circuit_plate.addItemInput(<ore:treeSapling>, 1);
+	tpc_circuit_plate.addItemInput(<minecraft:dye:15>);
+	tpc_circuit_plate.addFluidInput(<fluid:water> * 250);
+
+	tpc_circuit_plate.addItemOutput(<prodigytech:circuit_plate> * 2);
+	tpc_circuit_plate.build();
+
+	var tpc_circuit_plate2 = RecipeBuilder.newBuilder("tpc_circuit_plate2", "tree_powered_compressor", 120);
+	tpc_circuit_plate2.addItemInput(<enderio:item_material:48>);
+	tpc_circuit_plate2.addItemInput(<minecraft:paper> * 4);
+	tpc_circuit_plate2.addItemInput(<thermalfoundation:material:320>);
+
+	tpc_circuit_plate2.addItemInput(<ore:treeSapling>, 1);
+	tpc_circuit_plate2.addItemInput(<minecraft:dye:15>);
+	tpc_circuit_plate2.addFluidInput(<fluid:water> * 250);
+
+	tpc_circuit_plate2.addItemOutput(<prodigytech:circuit_plate> * 1);
+	tpc_circuit_plate2.build();
+}

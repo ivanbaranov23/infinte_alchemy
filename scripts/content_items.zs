@@ -1771,7 +1771,14 @@ VanillaFactory.createItemFood("food_pellet", 40).register();
 
 VanillaFactory.createItem("honeyspice_ingot").register();
 
+{//early game
+    VanillaFactory.createItem("sticky_bucket").register();
+    VanillaFactory.createFluid("sticky_water", Color.fromHex("3dcf8c")).register();
 
+    VanillaFactory.createBlock("burned_slimedirt", <blockmaterial:rock>).register();
+
+    
+}
 {//roots
     VanillaFactory.createItem("burn_powder").register();
 
@@ -2359,6 +2366,12 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("conveyor").register();
     VanillaFactory.createBlock("conveyor_block", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("arm_block", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("computer", <blockmaterial:rock>).register();
+
+    VanillaFactory.createBlock("particle1", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("particle2", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("particle3", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("particle4", <blockmaterial:rock>).register();
 
     VanillaFactory.createFluid("sunnarium_base", Color.fromHex("f5ad33")).register();
     VanillaFactory.createItem("sunnarium_chunk").register();

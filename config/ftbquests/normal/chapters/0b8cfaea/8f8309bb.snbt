@@ -1,0 +1,23 @@
+{
+	x: -0.5d,
+	y: 6.5d,
+	text: [
+		"Put quartz nugget into sticky water in barrel"
+	],
+	dependencies: [
+		"22d5e021"
+	],
+	tasks: [{
+		uid: "1db7c3f2",
+		type: "item",
+		items: [{
+			id: "erebus:bambucket",
+			tag: {
+				Fluid: {
+					FluidName: "blueslime",
+					Amount: 1000
+				}
+			}
+		}]
+	}]
+}
