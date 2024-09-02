@@ -105,9 +105,23 @@ scripts.jei.addJEIhint(
     [<contenttweaker:burned_slimedirt>]
 );
 
+scripts.jei.addJEIhint(
+    [], [<liquid:witchwater>, <liquid:blueslime>],
+    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+    [<tconstruct:slime_dirt:1>]
+);
+
 
 
 Pyre.addRecipe("ia_redstone_slime", <minecraft:redstone> * 3, [
     <contenttweaker:burned_slimedirt>, <contenttweaker:burned_slimedirt>, <contenttweaker:burned_slimedirt>,
     <minecraft:dye:15>, <minecraft:gunpowder>
+]);
+
+Mortar.addRecipe("ferramic_al", <exnihilocreatio:item_ore_aluminum> * 10, [
+    <contenttweaker:ferramic_gravel>,
+    <contenttweaker:ferramic_gravel>,
+    <contenttweaker:ferramic_gravel>,
+    <contenttweaker:ferramic_gravel>,
+    <contenttweaker:zinc_dust>
 ]);

@@ -855,7 +855,7 @@ fluid.sunnarium_base=Sunnaronite
 
 item.contenttweaker.sticky_bucket.name=Stinky Sticky Water Bambuket
 fluid.sticky_water=Sticky Water
-
+tile.contenttweaker.burned_slimedirt.name=Burned Slimy Dirt
 
 item.contenttweaker.forest_clay.name=Forest Clay
 tile.contenttweaker.forest_clay_block.name=Forest Clay
@@ -902,6 +902,7 @@ tile.contenttweaker.oreshroom_baffle.name=Oreshroom
 tile.contenttweaker.oreshroom_gloom.name=Oreshroom
 tile.contenttweaker.oreshroom_glow.name=Oreshroom
 
+tile.contenttweaker.ferramic_gravel.name=Ferramic Gravel
 
 item.contenttweaker.compact_empowerer.name=Compact Empowerer
 

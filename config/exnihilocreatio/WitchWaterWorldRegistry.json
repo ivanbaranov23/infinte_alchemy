@@ -18,5 +18,8 @@
   },
   "creosote": {
     "quark:jasper": 1
+  },
+  "ash_solution": {
+    "quark:marble": 1
   }
 }

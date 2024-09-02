@@ -1,6 +1,5 @@
 #priority 100
 
-import mods.inworldcrafting.FluidToItem;
 
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.WeightedItemStack;

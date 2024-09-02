@@ -1869,6 +1869,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     }
 }
 {//prodigy tech
+    VanillaFactory.createBlock("ferramic_gravel", <blockmaterial:rock>).register();
+
     VanillaFactory.createItem("uu_base1").register();
     VanillaFactory.createItem("uu_base2").register();
     VanillaFactory.createItem("uu_base3").register();
@@ -2372,6 +2374,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createBlock("particle2", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("particle3", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("particle4", <blockmaterial:rock>).register();
+    addGlass("magnetic_glass");
 
     VanillaFactory.createFluid("sunnarium_base", Color.fromHex("f5ad33")).register();
     VanillaFactory.createItem("sunnarium_chunk").register();

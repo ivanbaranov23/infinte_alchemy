@@ -1,6 +1,9 @@
 {
 	x: -1.5d,
 	y: 6.5d,
+	text: [
+		"Much better. "
+	],
 	dependencies: [
 		"6f353f7d"
 	],

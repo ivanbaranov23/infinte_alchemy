@@ -39,14 +39,7 @@ recipes.remove(<extrautils2:magicapple>);
 
 //demon and angel alt
 
-mods.inworldcrafting.FluidToItem.transform(
-    <extrautils2:ingredients:11>,
-    <liquid:fire_water>, [<minecraft:gold_ingot>]
-);
-mods.inworldcrafting.FluidToItem.transform(
-    <extrautils2:simpledecorative:1>,
-    <liquid:fire_water>, [<minecraft:gold_block>]
-);
+
 
 //sun crystal
 recipes.remove(<extrautils2:suncrystal:250>);

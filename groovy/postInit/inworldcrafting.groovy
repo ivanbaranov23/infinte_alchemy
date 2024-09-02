@@ -84,3 +84,24 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .input(item('betternether:bone_mushroom'))
         .output(item('contenttweaker:staffwood_mushroom'))
         .register()
+
+
+inWorldCrafting.fluidToFluid.recipeBuilder()
+        .fluidInput(fluid('water'))
+        .input(item('minecraft:dye', 15))
+        .input(item('prodigytech:ash') * 3)
+        .fluidOutput(fluid('ash_solution'))
+        .register()
+
+
+
+inWorldCrafting.explosion.recipeBuilder()
+    .input(item('thermalfoundation:rockwool', 7))
+    .output(item('contenttweaker:gravel_wool'))
+    .chance(0.3f)
+    .register()
+inWorldCrafting.explosion.recipeBuilder()
+    .input(item('mod_lavacow:holy_sludge'))
+    .output(item('contenttweaker:holy_thing'))
+    .chance(0.9f)
+    .register()

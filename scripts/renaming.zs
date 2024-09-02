@@ -5,6 +5,8 @@
 <mekanism:basicblock:4>.displayName = "Refined Glowstone Block";
 
 
+<contenttweaker:holy_thing>.addTooltip("So just holy");
+
 //mold
 <immersiveengineering:mold>.displayName = "Fake mold";
 <immersiveengineering:mold>.addTooltip("Do not believe the Engineer's propaganda,");

@@ -30,13 +30,7 @@ recipes.addShaped(
 
 //explosionfurnace_recipes.removeRecipeByOutput(<prodigytech:ferramic_ingot>);
 explosionfurnace_recipes.removeAll();
-explosionfurnace_recipes.addRecipe(<thermalfoundation:material:132> * 4, <prodigytech:ferramic_ingot> * 4, 360, <contenttweaker:fireclay>, 1);
-explosionfurnace_recipes.addRecipe(
-	<contenttweaker:ferramic_base> * 8, <prodigytech:ferramic_ingot> * 8, 360, <contenttweaker:fireclay>, 1
-);
-explosionfurnace_recipes.addRecipe(
-	<extendedcrafting:singularity:16>, <extendedcrafting:singularity_custom:4>, 36000, <contenttweaker:fireclay> * 64, 1
-);
+
 
 recipes.remove(<prodigytech:zorrasteel_raw>);
 recipes.addShaped("ia_zorrasteel_raw", <prodigytech:zorrasteel_raw>, [
@@ -50,6 +44,19 @@ recipes.addShaped("ia_zorrasteel_raw2", <prodigytech:zorrasteel_raw> * 2, [
 	[null, <contenttweaker:zorra_dust>, null]
 ]);
 explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytech:zorrasteel_ingot> * 4, 360, <prodigytech:aeternus_crystal>, 1);
+
+{//ferramic
+	explosionfurnace_recipes.addRecipe(<thermalfoundation:material:132> * 4, <prodigytech:ferramic_ingot> * 4, 360, <contenttweaker:fireclay>, 1);
+	explosionfurnace_recipes.addRecipe(<contenttweaker:zinc_ingot> * 3, <prodigytech:ferramic_ingot> * 3, 360, <contenttweaker:fireclay>, 1);
+	explosionfurnace_recipes.addRecipe(
+		<contenttweaker:ferramic_base> * 8, <prodigytech:ferramic_ingot> * 8, 360, <contenttweaker:fireclay>, 1
+	);
+	explosionfurnace_recipes.addRecipe(
+		<extendedcrafting:singularity:16>, <extendedcrafting:singularity_custom:4>, 36000, <contenttweaker:fireclay> * 64, 1
+	);
+
+	mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:ferramic_gravel>, <minecraft:gravel>, <liquid:ferramic>, 16);
+}
 
 {//zorra
 	recipes.addShaped("ia_zorra_dust", <contenttweaker:zorra_dust>, [

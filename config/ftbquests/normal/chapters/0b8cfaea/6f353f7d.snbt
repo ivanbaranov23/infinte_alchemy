@@ -1,6 +1,9 @@
 {
 	x: -2.5d,
 	y: 5.5d,
+	text: [
+		"Ew. Maybe if you wait a bit the smell will disappear"
+	],
 	dependencies: [
 		"468cf998",
 		"6cb0e4ca"

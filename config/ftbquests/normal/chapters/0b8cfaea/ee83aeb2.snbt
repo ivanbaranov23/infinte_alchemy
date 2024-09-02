@@ -3,7 +3,9 @@
 	y: -1.0d,
 	shape: "square",
 	text: [
-		"Finally a furnace. You can now sieve for metals chunks and smelt them for ingots. "
+		"Finally a furnace. You can now sieve for metals chunks and smelt them for ingots. ",
+		"",
+		"Also this pack ships with 2 texture packs, one for taiga ingots and another for everytthing else like making furnace more runestoney."
 	],
 	dependencies: [
 		"bbd8a710",

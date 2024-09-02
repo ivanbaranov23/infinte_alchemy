@@ -5,7 +5,9 @@
 	text: [
 		"Check out the shop. It uses quest coins.",
 		"",
-		"Quest coins can be obtained from milestone quests like machine frames. You can also sell things in diamond shaped quests for coins. There is also an endgame recipe for quest coins."
+		"Quest coins can be obtained from milestone quests like machine frames. You can also sell things in diamond shaped quests for coins. There is also an endgame recipe for quest coins.",
+		"",
+		"For example you can buy an early ae2 set up or enc book of holding to make a giant satchel"
 	],
 	tasks: [{
 		uid: "5d65b052",

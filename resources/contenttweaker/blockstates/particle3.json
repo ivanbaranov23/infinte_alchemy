@@ -1,13 +1,12 @@
 {
   "forge_marker": 1,
   "defaults": {
+    "model": "chisel:cube_2_layer_topshaded",
     "textures": {
-      "texture": "contenttweaker:blocks/particle3",
-      "particle": "contenttweaker:blocks/particle3"
-    },
-    "model": "base:storage",
-    "uvlock": true,
-    "transform": "forge:default-block"
+      "particle": "contenttweaker:blocks/parts/particle3",
+      "top"     : "contenttweaker:blocks/parts/particle_frame",
+      "bot"     : "contenttweaker:blocks/parts/particle3"
+    }
   },
   "variants": {
     "normal": [{}],

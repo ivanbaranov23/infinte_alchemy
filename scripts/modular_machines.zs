@@ -279,7 +279,19 @@ addMMRecipe("high_oven_glass2", "high_oven", 15*20, 32,
 
 
 
-addEarlySingularuty(<extendedcrafting:singularity_custom:100>, <minecraft:log>, 20*60*5);
+//addEarlySingularuty(<extendedcrafting:singularity_custom:100>, <minecraft:log>, );
+{//wood
+    var recipe = RecipeBuilder.newBuilder("tcp_wood", "tree_powered_compressor", 20*60*5);
+    recipe.addItemInput(<ore:logWood>, 64);
+    recipe.addItemInput(<ore:logWood>, 64);
+    recipe.addItemInput(<ore:logWood>, 64);
+    recipe.addItemInput(<ore:logWood>, 64);
+    recipe.addItemInput(<ore:treeSapling>, 4);
+    recipe.addItemInput(<minecraft:dye:15> * 16);
+    recipe.addFluidInput(<fluid:water> * 1000);
+    recipe.addItemOutput(<extendedcrafting:singularity_custom:100>);
+    recipe.build();
+}
 addEarlySingularuty(<extendedcrafting:singularity_custom:1>, <minecraft:flint>, 20*60*5);
 addEarlySingularuty(<extendedcrafting:singularity_custom:2>, <minecraft:stone>, 20*60*4);
 addEarlySingularuty(<extendedcrafting:singularity_custom:3>, <minecraft:glass>, 20*60*3);

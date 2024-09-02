@@ -87,7 +87,10 @@ Compost.addRecipe(<actuallyadditions:item_canola_seed>, 0.08, "269023", <minecra
 Compost.addRecipe(<contenttweaker:chewed_meat>, 0.5, "269023", <minecraft:dirt>);
 Compost.addRecipe(<biomesoplenty:plant_0:11>, 0.1, "269023", <minecraft:dirt>);
 Compost.addRecipe(<biomesoplenty:plant_0:12>, 0.1, "269023", <minecraft:dirt>);
-
+Compost.addRecipe(<mysticalworld:aubergine>, 0.08, "269023", <minecraft:dirt>);
+Compost.addRecipe(<actuallyadditions:item_flax_seed>, 0.08, "269023", <minecraft:dirt>);
+Compost.addRecipe(<actuallyadditions:item_flax_seed>, 0.08, "e00d0d", <bhc:red_heart>);
+Compost.addRecipe(<ore:slimeball>, 0.2, "269023", <minecraft:dirt>);
 Compost.addRecipe(<roots:wildroot>, 0.1, "735827", <minecraft:dirt>);
 
 Compost.addRecipe(<xreliquary:mob_ingredient:2>, 0.25, "269023", <minecraft:dirt>);
@@ -134,23 +137,19 @@ Hammer.addRecipe(
 scripts.jei.addJEIhint(
     [], [<liquid:lava>, <liquid:witchwater>],
     [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-    [<contenttweaker:burned_slimedirt>]
+    [<minecraft:stone:1>, <minecraft:stone:3>, <minecraft:stone:5>]
 );
 scripts.jei.addJEIhint(
     [], [<liquid:water>, <liquid:witchwater>],
     [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-    [<contenttweaker:burned_slimedirt>]
+    [<minecraft:dirt>, <minecraft:dirt:1>, <minecraft:dirt:2>]
 );
 scripts.jei.addJEIhint(
     [], [<liquid:blood>, <liquid:witchwater>],
     [<minecraft:cobblestone>.withDisplayName("In world mixing")],
     [<minecraft:soul_sand>]
 );
-scripts.jei.addJEIhint(
-    [], [<liquid:witchwater>, <liquid:blueslime>],
-    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-    [<contenttweaker:burned_slimedirt>]
-);
+
 
 
 
@@ -309,6 +308,11 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_ore_iron> % 60,
 			<exnihilocreatio:item_ore_copper> % 40,
 			<exnihilocreatio:item_ore_tin> % 20
+		],
+		<contenttweaker:ferramic_gravel>: [
+			<exnihilocreatio:item_ore_aluminum> % 75,
+			<exnihilocreatio:item_ore_aluminum> % 25,
+			<exnihilocreatio:item_ore_zinc> % 25
 		],
 		
 		<exnihilocreatio:block_granite_crushed>: [

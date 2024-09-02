@@ -137,11 +137,6 @@ recipes.remove(<minecraft:experience_bottle>);
 <minecraft:paper>.addTooltip("can be obtained from bone mealing paperbark log");
 recipes.remove(<minecraft:paper>);
 
-//poisonous potato
-mods.inworldcrafting.FluidToItem.transform(
-    <minecraft:poisonous_potato>, <liquid:witchwater>, 
-    [<ore:cropPotato>]
-);
 
 {//piston
 	recipes.remove(<minecraft:piston>);

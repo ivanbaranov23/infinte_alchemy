@@ -75,7 +75,7 @@ recipes.addShaped("ia_eg_altar", <requious:altar>, [
 {//cobble
     addAltar(<blockstate:minecraft:iron_ore>, <blockstate:minecraft:stone:variant=andesite>, 
         <blockstate:minecraft:cobblestone>, 
-        <blockstate:exnihilocreatio:block_dust>, 20, <minecraft:iron_ore>
+        <blockstate:exnihilocreatio:block_dust>, 400, <minecraft:iron_ore>
     );
     addAltarJEI(<minecraft:iron_ore>, <minecraft:stone:5>, 
         <minecraft:cobblestone>, 
@@ -84,7 +84,7 @@ recipes.addShaped("ia_eg_altar", <requious:altar>, [
 
     addAltar(<blockstate:thermalfoundation:ore:type=copper>, <blockstate:minecraft:stone:variant=granite>, 
         <blockstate:minecraft:cobblestone>, 
-        <blockstate:exnihilocreatio:block_dust>, 20, <thermalfoundation:ore>
+        <blockstate:exnihilocreatio:block_dust>, 400, <thermalfoundation:ore>
     );
     addAltarJEI(<thermalfoundation:ore>, <minecraft:stone:1>, 
         <minecraft:cobblestone>, 
@@ -93,9 +93,18 @@ recipes.addShaped("ia_eg_altar", <requious:altar>, [
 
     addAltar(<blockstate:thermalfoundation:ore:type=tin>, <blockstate:minecraft:stone:variant=diorite>, 
         <blockstate:minecraft:cobblestone>, 
-        <blockstate:exnihilocreatio:block_dust>, 20, <thermalfoundation:ore:1>
+        <blockstate:exnihilocreatio:block_dust>, 400, <thermalfoundation:ore:1>
     );
     addAltarJEI(<thermalfoundation:ore:1>, <minecraft:stone:3>, 
+        <minecraft:cobblestone>, 
+        <exnihilocreatio:block_dust>
+    );
+
+    addAltar(<blockstate:thermalfoundation:ore:type=aluminum>, <blockstate:quark:marble:variant=stone_marble>, 
+        <blockstate:minecraft:cobblestone>, 
+        <blockstate:exnihilocreatio:block_dust>, 400, <thermalfoundation:ore:4>
+    );
+    addAltarJEI(<thermalfoundation:ore:4>, <minecraft:stone:3>, 
         <minecraft:cobblestone>, 
         <exnihilocreatio:block_dust>
     );

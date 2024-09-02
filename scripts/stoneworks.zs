@@ -222,12 +222,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     <minecraft:dirt>, <liquid:sand> * 100, 
     1500
 );
-//jasper
-mods.thermalexpansion.Transposer.addFillRecipe(
-    <quark:jasper> * 6, 
-    <quark:hardened_clay_tiles> * 4, 
-    <liquid:clay> * 144, 500
-);
+
 
 {//quark stone
     <ore:blockSeared>.remove(<tconstruct:seared:1>);
@@ -248,6 +243,25 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     ]);
 
     
+
+    //jasper
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <quark:jasper> * 8, 
+        <quark:hardened_clay_tiles> * 2, 
+        <liquid:clay> * 144, 500
+    );
+    scripts.jei.addJEIhint(
+        [], [<liquid:creosote>, <liquid:witchwater>],
+        [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+        [<quark:jasper>]
+    );
+
+    //marble
+    scripts.jei.addJEIhint(
+        [], [<liquid:ash_solution>, <liquid:witchwater>],
+        [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+        [<quark:marble>]
+    );
 }
 
 function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedItemStack[], fin as ILiquidStack[], time_sec as int, energy as int){
@@ -469,7 +483,11 @@ mods.enderio.SagMill.addRecipe(
     [1.0, 0.5, 0.25, 0.25], 
     <biomesoplenty:fleshchunk>, "MULTIPLY_OUTPUT"
 );
-
+scripts.jei.addJEIhint(
+    [], [<liquid:water>, <liquid:blood>],
+    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+    [<biomesoplenty:flesh>]
+);
 
 //basalt
 mods.thermalexpansion.Transposer.addFillRecipe(

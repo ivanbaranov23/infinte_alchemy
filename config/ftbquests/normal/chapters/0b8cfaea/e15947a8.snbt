@@ -2,9 +2,7 @@
 	x: 0.5d,
 	y: 8.5d,
 	text: [
-		"dust to cobble recipes are fast but more manual",
-		"",
-		"burnt slimy dirt is less manual but is slower"
+		"Select recipe in altar, put corresponding block and dust on top of altar and watch the magic"
 	],
 	dependencies: [
 		"acffbdbd"
