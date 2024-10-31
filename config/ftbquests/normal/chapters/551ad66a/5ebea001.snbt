@@ -1,0 +1,16 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	dependencies: [
+		"b6bb720f",
+		"9c741525"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e1003ea5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:weak_enhancer"
+		}]
+	}]
+}

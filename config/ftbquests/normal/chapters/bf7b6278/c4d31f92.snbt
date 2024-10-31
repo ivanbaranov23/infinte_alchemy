@@ -1,12 +1,8 @@
 {
-	x: 7.0d,
-	y: 5.0d,
+	x: 6.0d,
+	y: -3.0d,
 	text: [
-		"Can be obtained from Sea Water"
-	],
-	dependencies: [
-		"331aeb66",
-		"0120a191"
+		"Can be distilled from Sea Water"
 	],
 	optional: true,
 	tasks: [{

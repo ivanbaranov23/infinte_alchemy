@@ -1,0 +1,19 @@
+{
+	x: 2.5d,
+	y: 5.5d,
+	text: [
+		"This will give you access to beast keeper's path. Right click the arrow on a mob to get some goodies. Arrow will be consumed."
+	],
+	dependencies: [
+		"468cf998",
+		"61bd04c7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "5ac25544",
+		type: "item",
+		items: [{
+			item: "roots:living_arrow"
+		}]
+	}]
+}

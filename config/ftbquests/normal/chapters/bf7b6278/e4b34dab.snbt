@@ -25,6 +25,6 @@
 		uid: "12778bdc",
 		type: "choice",
 		icon: "enderio:item_item_conduit",
-		table: 0
+		table: 1
 	}]
 }

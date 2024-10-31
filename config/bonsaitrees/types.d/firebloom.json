@@ -1,0 +1,27 @@
+{
+    "name": "firebloom",
+    "mod": "erebus",
+    "sapling": {
+      "name": "erebus:small_plant",
+      "data": 4
+    },
+    "growTimeMultiplier": 1.0,
+    "drops": [
+      {
+        "name": "erebus:small_plant",
+        "data": 4,
+        "type": "CUSTOM",
+        "count": 3,
+        "chance": 0.6
+      },
+      
+      
+      {
+        "name": "minecraft:blaze_powder",
+        "data": 0,
+        "type": "CUSTOM",
+        "count": 1,
+        "chance": 0.1
+      }
+    ]
+  }

@@ -1,0 +1,23 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"Melts things faster. Can also melt magma and pilkeum."
+	],
+	dependencies: [
+		"42386b50"
+	],
+	optional: true,
+	tasks: [{
+		uid: "dbcc86d2",
+		type: "checkmark",
+		title: "Andesite Magma",
+		icon: {
+			id: "thermalexpansion:florb",
+			Damage: 1s,
+			tag: {
+				Fluid: "andesite_magma"
+			}
+		}
+	}]
+}

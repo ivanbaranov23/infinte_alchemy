@@ -1,0 +1,20 @@
+{
+	x: 12.5d,
+	y: 3.0d,
+	dependencies: [
+		"3d2a6dfd"
+	],
+	optional: true,
+	tasks: [{
+		uid: "dbc885b1",
+		type: "item",
+		items: [{
+			item: "prodigytech:circuit_perfected"
+		}]
+	}],
+	rewards: [{
+		uid: "56d647ba",
+		type: "item",
+		item: "prodigytech:circuit_perfected"
+	}]
+}

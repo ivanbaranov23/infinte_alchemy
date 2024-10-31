@@ -1,12 +1,12 @@
 {
 	title: "Spooky air at a distance",
 	x: 6.5d,
-	y: 3.0d,
+	y: 4.0d,
 	text: [
 		"Teleports hot air from one wormhole funnel to another."
 	],
 	dependencies: [
-		"e6b9706a"
+		"6d2fd8c8"
 	],
 	optional: true,
 	tasks: [{

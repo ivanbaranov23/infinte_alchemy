@@ -1,0 +1,18 @@
+{
+	x: 5.0d,
+	y: 5.0d,
+	text: [
+		"For living arrows"
+	],
+	dependencies: [
+		"c10133fc"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4215a3ea",
+		type: "item",
+		items: [{
+			item: "harvestcraft:arrowrootitem"
+		}]
+	}]
+}

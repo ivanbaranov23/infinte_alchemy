@@ -152,9 +152,9 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
     ]);
 
     recipes.addShaped("ia_mm_grid_input", <modularmagic:blockgridproviderinput>, [
-        [<extrautils2:decorativesolid:8>, <ore:plateEvilMetal>, <extrautils2:decorativesolid:8>], 
-        [<extrautils2:suncrystal>, <modularmachinery:blockcasing:4>, <ore:gemMoon>], 
-        [<extrautils2:decorativesolid:8>, <ore:plateEvilMetal>, <extrautils2:decorativesolid:8>]
+        [<extrautils2:decorativesolid:3>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:3>], 
+        [<moreplates:enchanted_plate>, <modularmachinery:blockcasing:4>, <moreplates:enchanted_plate>], 
+        [<extrautils2:decorativesolid:3>, <ore:gemMoon>, <extrautils2:decorativesolid:3>]
     ]);
     recipes.addShaped("ia_mm_grid_output", <modularmagic:blockgridprovideroutput>, [
         [<extrautils2:decorativesolid:8>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:8>], 
@@ -239,10 +239,7 @@ function addMMRecipe(
 
 function addEarlySingularuty(sing as IItemStack, iten as IItemStack, time as int){
     var recipe = RecipeBuilder.newBuilder("tcp_" + sing.name, "tree_powered_compressor", time);
-    recipe.addItemInput(iten * 64);
-    recipe.addItemInput(iten * 64);
-    recipe.addItemInput(iten * 64);
-    recipe.addItemInput(iten * 64);
+    recipe.addItemInput(iten * 256);
     recipe.addItemInput(<ore:treeSapling>, 4);
     recipe.addItemInput(<minecraft:dye:15> * 16);
     recipe.addFluidInput(<fluid:water> * 1000);
@@ -282,10 +279,7 @@ addMMRecipe("high_oven_glass2", "high_oven", 15*20, 32,
 //addEarlySingularuty(<extendedcrafting:singularity_custom:100>, <minecraft:log>, );
 {//wood
     var recipe = RecipeBuilder.newBuilder("tcp_wood", "tree_powered_compressor", 20*60*5);
-    recipe.addItemInput(<ore:logWood>, 64);
-    recipe.addItemInput(<ore:logWood>, 64);
-    recipe.addItemInput(<ore:logWood>, 64);
-    recipe.addItemInput(<ore:logWood>, 64);
+    recipe.addItemInput(<ore:logWood>, 256);
     recipe.addItemInput(<ore:treeSapling>, 4);
     recipe.addItemInput(<minecraft:dye:15> * 16);
     recipe.addFluidInput(<fluid:water> * 1000);

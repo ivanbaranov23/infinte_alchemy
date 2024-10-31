@@ -19,5 +19,25 @@
 		uid: "9ca1f656",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "6015aa1d",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "actuallyadditions:block_misc",
+					Count: 1,
+					Damage: 9s
+				},
+				TrophyName: "Frame 5",
+				TrophyColorRed: 171,
+				TrophyColorGreen: 171,
+				TrophyColorBlue: 171,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

@@ -1,0 +1,20 @@
+{
+	x: 6.5d,
+	y: -6.0d,
+	text: [
+		"Early fluid storage",
+		"",
+		"Glass panes can be casted via smeltery from melting sand."
+	],
+	dependencies: [
+		"bbd8a710"
+	],
+	optional: true,
+	tasks: [{
+		uid: "714617c0",
+		type: "item",
+		items: [{
+			item: "openblocks:tank"
+		}]
+	}]
+}

@@ -173,7 +173,7 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
         [<extrautils2:ironwood_log> * 24, (<exnihilocreatio:item_ore_iron:1>.withDisplayName("Iron Apple") * 4) % 25, (<extrautils2:ironwood_sapling> * 8) % 0], [<extrautils2:ironwood_sapling>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 24], 
-        [<aether_legacy:aether_log:1> * 24, (<aether_legacy:ambrosium_shard> * 2) % 30, <contenttweaker:ambrosium_seed> % 0, (<aether_legacy:golden_oak_sapling> * 8) % 0], [<aether_legacy:golden_oak_sapling> * 49], 30, 512
+        [<aether_legacy:aether_log:1> * 24, (<aether_legacy:ambrosium_shard> * 2) % 30, <contenttweaker:ambrosium_seed> % 0, (<aether_legacy:golden_oak_sapling> * 8) % 0], [<aether_legacy:golden_oak_sapling>], 30, 512
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 32], 
         [<natura:redwood_logs> * 32, <natura:redwood_logs:1> * 32, (<natura:redwood_sapling> * 8) % 0], [<natura:redwood_sapling> * 49], 30, 128

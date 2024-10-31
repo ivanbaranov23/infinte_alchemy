@@ -188,14 +188,25 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 		Inscriber.addRecipe(<contenttweaker:layered_processor>, <contenttweaker:neuron2_inlay>, false, <contenttweaker:layered_circuit>, <contenttweaker:gambrosium_processor>);
 	}
 
-	//diamond
-	Inscriber.removeRecipe(<appliedenergistics2:material:17>);
-	Inscriber.removeRecipe(<appliedenergistics2:material:24>);
+	{//engineer
+		//diamond
+		Inscriber.removeRecipe(<appliedenergistics2:material:17>);
+		Inscriber.removeRecipe(<appliedenergistics2:material:24>);
 
-	Inscriber.addRecipe(<appliedenergistics2:material:17>, <moreplates:diamond_plate>, true, <appliedenergistics2:material:14>);
-	Inscriber.addRecipe(<appliedenergistics2:material:17>, <actuallyadditions:item_crystal:2>, true, <appliedenergistics2:material:14>);
+		Inscriber.addRecipe(<appliedenergistics2:material:17>, <moreplates:diamond_plate>, true, <appliedenergistics2:material:14>);
+		Inscriber.addRecipe(<appliedenergistics2:material:17>, <actuallyadditions:item_crystal:2>, true, <appliedenergistics2:material:14>);
 
-	Inscriber.addRecipe(<appliedenergistics2:material:24>, <contenttweaker:redstone_inlay>, false, <appliedenergistics2:material:17>, <appliedenergistics2:material:20>);
+		Inscriber.addRecipe(<appliedenergistics2:material:24>, <contenttweaker:redstone_inlay>, false, <appliedenergistics2:material:17>, <appliedenergistics2:material:20>);
+
+		//fluxed
+		Inscriber.addRecipe(<contenttweaker:fluxed_circuit>, <redstonearsenal:material:128>, true, <appliedenergistics2:material:14>);		
+		Inscriber.addRecipe(<contenttweaker:fluxed_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:fluxed_circuit>, <appliedenergistics2:material:24>);
+
+		//peridotite
+		Inscriber.addRecipe(<contenttweaker:peridotite_circuit>, <contenttweaker:peridotite_sheet>, true, <appliedenergistics2:material:14>);		
+		Inscriber.addRecipe(<contenttweaker:peridotite_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:peridotite_circuit>, <contenttweaker:fluxed_processor>);
+
+	}
 	
 	{//item
 		//gold
@@ -370,6 +381,36 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 		[<appliedenergistics2:material:24>, <thermalexpansion:frame>, <appliedenergistics2:material:24>], 
 		[<moreplates:electrical_steel_plate>, <appliedenergistics2:material:24>, <moreplates:electrical_steel_plate>]
 	]);
+
+	recipes.remove(<appliedenergistics2:crafting_unit>);
+	recipes.addShaped("ia_ae2_crafting_unit", <appliedenergistics2:crafting_unit>, [
+		[<moreplates:electrical_steel_plate>, <appliedenergistics2:material:23>, <moreplates:electrical_steel_plate>], 
+		[<appliedenergistics2:material:24>, <mekanism:basicblock:8>, <appliedenergistics2:material:24>], 
+		[<moreplates:electrical_steel_plate>, <appliedenergistics2:material:23>, <moreplates:electrical_steel_plate>]
+	]);
+
+	{//coprocs
+		recipes.remove(<appliedenergistics2:crafting_accelerator>);
+		recipes.addShaped("ia_coprocessor_1x", <appliedenergistics2:crafting_accelerator>, [
+			[<appliedenergistics2:material:6>, <appliedenergistics2:material:24>, <appliedenergistics2:material:6>], 
+			[<appliedenergistics2:material:24>, <appliedenergistics2:crafting_unit>, <appliedenergistics2:material:24>], 
+			[<appliedenergistics2:material:6>, <appliedenergistics2:material:24>, <appliedenergistics2:material:6>]
+		]);
+
+		recipes.remove(<nae2:coprocessor_4x>);
+		recipes.addShaped("ia_coprocessor_4x", <nae2:coprocessor_4x>, [
+			[<appliedenergistics2:material:6>, <contenttweaker:fluxed_processor>, <appliedenergistics2:material:6>], 
+			[<appliedenergistics2:crafting_accelerator>, <appliedenergistics2:material:36>, <appliedenergistics2:crafting_accelerator>], 
+			[<appliedenergistics2:material:6>, <appliedenergistics2:crafting_accelerator>, <appliedenergistics2:material:6>]
+		]);
+
+		recipes.remove(<nae2:coprocessor_16x>);
+		recipes.addShaped("ia_coprocessor_16x", <nae2:coprocessor_16x>, [
+			[<appliedenergistics2:material:6>, <contenttweaker:peridotite_processor>, <appliedenergistics2:material:6>], 
+			[<nae2:coprocessor_4x>, <aeadditions:storage.component>, <nae2:coprocessor_4x>], 
+			[<appliedenergistics2:material:6>, <nae2:coprocessor_4x>, <appliedenergistics2:material:6>]
+		]);
+	}
 }
 
 
@@ -477,6 +518,22 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 
 		}
 
+	}
+}
+{//nae fix
+	var procs as IItemStack[IItemStack] = {
+		<nae2:material:1>: <aeadditions:storage.component>,
+		<nae2:material:2>: <aeadditions:storage.component:1>,
+		<nae2:material:3>: <aeadditions:storage.component:2>,
+		<nae2:material:4>: <aeadditions:storage.component:3>,
+		<nae2:material:5>: <aeadditions:storage.component:4>,
+		<nae2:material:6>: <aeadditions:storage.component:5>,
+		<nae2:material:7>: <aeadditions:storage.component:6>
+	};
+	for proc in procs {
+		recipes.remove(proc);
+		recipes.addShapeless("ia_nae_to_aea" ~ proc.name, procs[proc], [proc]);
+		recipes.addShapeless("ia_aea_to_nae" ~ proc.name, proc, [procs[proc]]);
 	}
 }
 

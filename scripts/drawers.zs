@@ -29,7 +29,7 @@ recipes.addShapeless("ia_controllerslave", <storagedrawers:controllerslave> * 4,
 );
 
 recipes.remove(<storagedrawers:upgrade_template>);
-recipes.addShaped("ia_drawer_upgrade_template", <storagedrawers:upgrade_template>, [
+recipes.addShaped("ia_drawer_upgrade_template", <storagedrawers:upgrade_template> * 2, [
 	[<ore:stickWood>, <ore:stickInvar>, <ore:stickWood>], 
 	[<ore:dustElectrotine>, <ore:drawerBasic>, <ore:dustElectrotine>], 
 	[<ore:stickWood>, <ore:stickInvar>, <ore:stickWood>]
@@ -56,3 +56,10 @@ scripts.content_machines.addAssemblerRecipe(
 	<liquid:watertight_steel> * 576,
 	10, 64
 );
+
+
+recipes.addShaped("drawer_key", <storagedrawers:drawer_key>, [
+	[<thermalfoundation:material:163>, <thermalfoundation:material:355>], 
+	[null, <thermalfoundation:material:355>], 
+	[null, <storagedrawers:upgrade_template>]
+]);

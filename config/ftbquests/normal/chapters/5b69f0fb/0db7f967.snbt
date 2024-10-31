@@ -1,0 +1,13 @@
+{
+	x: -6.0d,
+	y: -2.0d,
+	text: [
+		"If you put a chest with items under a pyre you can bulk craft/continiously cast rituals."
+	],
+	tasks: [{
+		uid: "3c8cc3ab",
+		type: "checkmark",
+		title: "Pyre",
+		icon: "roots:pyre"
+	}]
+}

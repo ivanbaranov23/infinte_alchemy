@@ -1,0 +1,25 @@
+{
+	title: "Biomess",
+	x: -1.0d,
+	y: 4.0d,
+	shape: "square",
+	text: [
+		"Bioyou would have to bioget into the biomess and biodo bioit."
+	],
+	dependencies: [
+		"ad27f361"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4a475b35",
+		type: "item",
+		items: [{
+			item: "contenttweaker:activated_biopower"
+		}]
+	}],
+	rewards: [{
+		uid: "d34a10df",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

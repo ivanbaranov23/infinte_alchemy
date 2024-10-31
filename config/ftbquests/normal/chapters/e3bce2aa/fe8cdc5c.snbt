@@ -1,6 +1,9 @@
 {
 	x: 8.0d,
 	y: 7.0d,
+	dependencies: [
+		"0e347247"
+	],
 	or_tasks: true,
 	tasks: [{
 		uid: "48c77e0b",

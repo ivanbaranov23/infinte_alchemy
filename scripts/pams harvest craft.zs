@@ -273,6 +273,15 @@ Centrifuge.addRecipe(
 
 recipes.remove(<harvestcraft:coconutmilkitem>);
 
+{//cactus
+    recipes.remove(<harvestcraft:bakedcactusitem>);
+    mods.immersiveengineering.BlastFurnace.addRecipe(
+        <harvestcraft:bakedcactusitem>, <minecraft:cactus>, 
+        20 * 10, 
+        <thermalfoundation:material:864>
+    );
+}
+
 {//mushroom stew
     recipes.remove(<minecraft:mushroom_stew>);
     recipes.addShapeless("ia_mushroom_stew1",

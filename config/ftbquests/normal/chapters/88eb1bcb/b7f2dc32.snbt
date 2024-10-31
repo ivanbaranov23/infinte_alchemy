@@ -1,5 +1,5 @@
 {
-	x: 7.0d,
+	x: 6.0d,
 	y: 2.0d,
 	text: [
 		"Can be used as TiC material. When you hit an entity with a tool with flying trait it will get levitation effect for a second."

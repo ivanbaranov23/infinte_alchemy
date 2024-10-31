@@ -1,0 +1,6 @@
+mods.botania.mana_infusion.recipeBuilder()
+    .input(item('contenttweaker:orichalcum_block'))
+    .output(item('contenttweaker:death_metal_pieces'))
+    .mana(500000)
+    .catalyst(blockstate('contenttweaker:death_metal_block'))
+    .register()

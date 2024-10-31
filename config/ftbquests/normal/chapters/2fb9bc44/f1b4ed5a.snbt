@@ -1,0 +1,27 @@
+{
+	x: -0.5d,
+	y: 6.0d,
+	text: [
+		"Pilkon is one of living creatures that live in your inventory. Living can eat, produce material and die. Some can also breed or work.",
+		"",
+		"Pilkon has food and lifespan stats. ",
+		"Feeding it nial will raise food stat by a random value from 10 to 20. ",
+		"Putting in crafting grid will make you a pilkeum at the cost of 25 food and 1 lifespan stat. ",
+		"2 of them can reproduce at the cost of 50 food and 1 lifespan to make a new pilkon. ",
+		"",
+		"If food or lifespan reaches 0, pilkon will die. This is irreversible.",
+		"",
+		"Livings will be explained in a later chapter."
+	],
+	dependencies: [
+		"5506f2c0"
+	],
+	optional: true,
+	tasks: [{
+		uid: "996df44b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:pilkon"
+		}]
+	}]
+}

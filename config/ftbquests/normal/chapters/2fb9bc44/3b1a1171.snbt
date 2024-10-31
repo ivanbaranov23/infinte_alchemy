@@ -1,11 +1,12 @@
 {
 	x: 8.5d,
-	y: 3.0d,
+	y: 5.0d,
 	text: [
 		"2-3 energion should be enough to charge it."
 	],
 	dependencies: [
-		"15e5cba2"
+		"15e5cba2",
+		"6d2fd8c8"
 	],
 	tasks: [{
 		uid: "5c42d59a",

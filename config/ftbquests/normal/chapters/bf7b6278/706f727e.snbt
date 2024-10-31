@@ -40,8 +40,7 @@
 		type: "item",
 		items: [{
 			item: "immersiveengineering:metal_decoration0 1 5"
-		}],
-		count: 2L
+		}]
 	},
 	{
 		uid: "2f0f659f",

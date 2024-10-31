@@ -25,21 +25,37 @@ static tools as IItemStack[string][string] = {
         pick: <minecraft:iron_pickaxe>,
         axe: <minecraft:iron_axe>,
         shovel: <minecraft:iron_shovel>,
-        hoe: <minecraft:iron_hoe>
+        hoe: <minecraft:iron_hoe>,
+
+        hammer: <thermalfoundation:tool.hammer_iron>
     },
+    copper: {
+        sword: <thermalfoundation:tool.sword_copper>,
+        pick: <thermalfoundation:tool.pickaxe_copper>,
+        shovel: <thermalfoundation:tool.shovel_copper>,
+        axe: <thermalfoundation:tool.axe_copper>,
+        hoe: <thermalfoundation:tool.hoe_copper>,
+
+        hammer: <thermalfoundation:tool.hammer_copper>
+    },
+
     gold: {
         sword: <minecraft:golden_sword>,
         pick: <minecraft:golden_pickaxe>,
         axe: <minecraft:golden_axe>,
         shovel: <minecraft:golden_shovel>,
-        hoe: <minecraft:golden_hoe>
+        hoe: <minecraft:golden_hoe>,
+
+        hammer: <thermalfoundation:tool.hammer_gold>
     },
     diamond: {
         sword: <minecraft:diamond_sword>,
         pick: <minecraft:diamond_pickaxe>,
         axe: <minecraft:diamond_axe>,
         shovel: <minecraft:diamond_shovel>,
-        hoe: <minecraft:diamond_hoe>
+        hoe: <minecraft:diamond_hoe>,
+
+        hammer: <thermalfoundation:tool.hammer_diamond>
     },
     limestone: {
         sword: <atum:limestone_sword>,
@@ -68,6 +84,9 @@ static tools as IItemStack[string][string] = {
 static materials as IIngredient[string][string] = {
     iron: {
         mat: <thermalfoundation:material:32>
+    },
+    copper: {
+        mat: <thermalfoundation:material:320>
     },
     gold: {
         mat: <thermalfoundation:material:33>
@@ -146,6 +165,13 @@ for tool_mat in tools{
                 [mat, gem], 
                 [null, stick], 
                 [null, stick]
+            ]);
+        
+        if (tool_name == "hammer")
+            recipes.addShaped(tool_mat ~ "_" ~ tool_name, tool, [
+                [tools[tool_mat].pick, gem, tools[tool_mat].pick], 
+                [mat, stick, mat], 
+                [null, stick, null]
             ]);
     }
 }

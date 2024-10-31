@@ -1,6 +1,6 @@
 import mods.immersiveengineering.Blueprint;
 import mods.immersivepetroleum.Distillation;
-
+import mods.modularmachinery.RecipeBuilder;
 
 
 //molds
@@ -33,8 +33,13 @@ Blueprint.addRecipe("molds", <contenttweaker:gear_mold>, [<contenttweaker:duralu
 	Blueprint.removeRecipe(<immersiveengineering:material:26>);
 	Blueprint.addRecipe("components", 
 		<immersiveengineering:material:26> * 2, 
-		[<contenttweaker:glass_hull>, <contenttweaker:glass_hull>, <ore:wireCopper>, <contenttweaker:zinc_wire>, <ore:wireAluminum>, <ore:stickCopper>]
+		[
+			<contenttweaker:glass_hull>, <contenttweaker:glass_hull>, 
+			<ore:wireCopper>, <contenttweaker:zinc_wire>, <ore:wireAluminum>, 
+			<ore:stickCopper>
+		]
 	);
+	
 	scripts.content_machines.addAssemblerRecipe(
 		[<immersiveengineering:material:26> * 4],
 		[<contenttweaker:glass_hull> * 4, <ore:wireCopper>, <contenttweaker:zinc_wire>, <ore:wireAluminum>],
@@ -55,22 +60,69 @@ scripts.content_machines.addAssemblerRecipe(
 	[<immersiveengineering:metal_device1:6> * 2],
 	[<thermalfoundation:material:32>],
 	<liquid:watertight_steel> * 144,
-	5, 16
+	5, 120
 );
 
-//glass
-recipes.remove(<immersiveengineering:stone_decoration:8>);
-recipes.addShaped("ia_insulated_glass", <immersiveengineering:stone_decoration:8> * 2, [
-	[null, <ore:blockGlassColorless>, null], 
-	[<ore:dustIron>, <prodigytech:circuit_plate>, <ore:dustIron>], 
-	[null, <ore:blockGlassColorless>, null]
+//conveyor
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}));
+recipes.addShaped("ia_conveyor", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, [
+	[<minecraft:leather>, <minecraft:leather>, <minecraft:leather>], 
+	[<immersiveengineering:material:9>, <contenttweaker:simple_motor>, <immersiveengineering:material:9>]
 ]);
-recipes.addShaped("ia_insulated_glass2", <immersiveengineering:stone_decoration:8> * 4, [
-	[<contenttweaker:research_glass_making>.reuse(), <ore:blockGlassColorless>, null], 
-	[<ore:dustIron>, <prodigytech:circuit_plate>, <ore:dustIron>], 
-	[null, <ore:blockGlassColorless>, null]
+recipes.addShaped("ia_conveyor", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 16, [
+	[<roots:fey_leather>, <roots:fey_leather>, <roots:fey_leather>], 
+	[<immersiveengineering:material:9>, <contenttweaker:simple_motor>, <immersiveengineering:material:9>]
+]);
+scripts.content_machines.addAssemblerRecipe(
+	[<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 12],
+	[
+		<minecraft:leather> * 2,
+		<immersiveengineering:material:9>, 
+		<contenttweaker:simple_motor>
+	], null, 20, 120
+);
+
+//water wheel
+recipes.remove(<immersiveengineering:wooden_device1>);
+recipes.addShapeless("ia_ie_water_wheel", <immersiveengineering:wooden_device1>, [
+	<exnihilocreatio:block_waterwheel>, <immersiveengineering:material:8>,
+	<immersiveengineering:material:10>, <immersiveengineering:material:10>, <immersiveengineering:material:10>, <immersiveengineering:material:10>
+]);
+recipes.remove(<immersiveengineering:wooden_device1:1>);
+recipes.addShaped("ia_ie_windmill", <immersiveengineering:wooden_device1:1>, [
+	[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
+	[<immersiveengineering:material:11>, <immersiveengineering:material:8>, <immersiveengineering:material:11>],
+	[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]
 ]);
 
+{//glass
+	recipes.remove(<immersiveengineering:stone_decoration:8>);
+	{    
+        var rec = RecipeBuilder.newBuilder("insulated_glass", "high_oven", 100);
+        rec.addEnergyPerTickInput(256);
+
+        rec.addItemInput(<contenttweaker:research_glass_making>);
+		rec.setChance(0.0);
+        
+		rec.addItemInput(<prodigytech:circuit_plate>);
+		rec.addItemInput(<contenttweaker:slimy_glass>);
+		rec.addItemInput(<contenttweaker:nial_dust>);
+        rec.addFluidInput(<liquid:lava> * 2000);
+        
+        rec.addItemOutput(<immersiveengineering:stone_decoration:8> * 4);
+        rec.build();
+    }
+	recipes.addShaped("ia_insulated_glass", <immersiveengineering:stone_decoration:8> * 2, [
+		[null, <contenttweaker:slimy_glass>, null], 
+		[<contenttweaker:nial_dust>, <prodigytech:circuit_plate>, <contenttweaker:nial_dust>], 
+		[null, <contenttweaker:slimy_glass>, null]
+	]);
+	/*recipes.addShaped("ia_insulated_glass2", <immersiveengineering:stone_decoration:8> * 4, [
+		[<contenttweaker:research_glass_making>.reuse(), <ore:blockGlassColorless>, null], 
+		[<ore:dustIron>, <prodigytech:circuit_plate>, <ore:dustIron>], 
+		[null, <ore:blockGlassColorless>, null]
+	]);*/
+}
 
 recipes.remove(<engineersdecor:panzerglass_block>);
 recipes.addShaped("ia_panzerglass_block", <engineersdecor:panzerglass_block> * 2, [
@@ -121,18 +173,18 @@ recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decorat
 	]);
 	recipes.remove(<immersiveengineering:metal_decoration0:3>);
 	recipes.addShaped("ia_ie_redstone_block", <immersiveengineering:metal_decoration0:3>, [
-		[<ore:plateIron>, <immersiveengineering:connector:12>, <ore:plateIron>], 
+		[<ore:plateIron> | <contenttweaker:zinc_plate>, <immersiveengineering:connector:12>, <ore:plateIron> | <contenttweaker:zinc_plate>], 
 		[<immersiveengineering:connector:12>, <ore:blockRedstone>, <immersiveengineering:connector:12>], 
-		[<ore:plateIron>, <immersiveengineering:connector:12>, <ore:plateIron>]
+		[<ore:plateIron> | <contenttweaker:zinc_plate>, <immersiveengineering:connector:12>, <ore:plateIron> | <contenttweaker:zinc_plate>]
 	]);
 	recipes.remove(<immersiveengineering:metal_decoration0:4>);
-	recipes.addShaped("ia_light_engineering_block", <immersiveengineering:metal_decoration0:4>, [
+	recipes.addShaped("ia_light_engineering_block", <immersiveengineering:metal_decoration0:4> * 2, [
 		[<ore:plateSteel>, <immersiveengineering:material:8>, <ore:plateSteel>], 
 		[<ore:gearSilver>, <contenttweaker:duraluminum_gear>, <ore:gearOsmium>], 
 		[<ore:plateSteel>, <immersiveengineering:material:8>, <ore:plateSteel>]
 	]);
 	recipes.remove(<immersiveengineering:metal_decoration0:5>);
-	recipes.addShaped("ia_heavy_engineering_block", <immersiveengineering:metal_decoration0:5>, [
+	recipes.addShaped("ia_heavy_engineering_block", <immersiveengineering:metal_decoration0:5> * 2, [
 		[<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>], 
 		[<ore:gearElectrum>, <contenttweaker:duraluminum_gear>, <contenttweaker:lesmium_gear>], 
 		[<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>]
@@ -149,6 +201,33 @@ recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decorat
 		[<ore:gearElectrum>, <immersiveengineering:metal_device1:2>, <ore:gearElectrum>], 
 		[<contenttweaker:duraluminum_plate>, <ore:gearBronze>, <contenttweaker:duraluminum_plate>]
 	]);
+	{//research
+		recipes.addShapeless("ia_structure_bp", <immersiveengineering:blueprint>.withTag({blueprint: "structure"}), [<contenttweaker:research_structure>]);
+		
+		Blueprint.addRecipe("structure", 
+			<immersiveengineering:metal_decoration0:3>, 
+			[
+				<moreplates:red_alloy_plate>, <immersiveengineering:connector:12>, <immersiveengineering:connector:12>,
+				<contenttweaker:zinc_plate>, <contenttweaker:zinc_plate>
+			]
+		);
+		Blueprint.addRecipe("structure", 
+			<immersiveengineering:metal_decoration0:4> * 2, 
+			[
+				<immersiveengineering:metal_decoration1:1>, <immersiveengineering:material:8>,
+				<ore:gearSilver>, <contenttweaker:duraluminum_gear>, <ore:gearOsmium>,
+				<ore:plateSteel>
+			]
+		);
+		Blueprint.addRecipe("structure", 
+			<immersiveengineering:metal_decoration0:5> * 2, 
+			[
+				<immersiveengineering:metal_decoration1:1>, <immersiveengineering:material:9>,
+				<ore:gearElectrum>, <contenttweaker:duraluminum_gear>, <contenttweaker:lesmium_gear>,
+				<ore:plateSteel>
+			]
+		);
+	}
 }
 
 {//wires and coils
@@ -167,26 +246,32 @@ recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decorat
 
 	recipes.remove(<immersiveengineering:wirecoil>);
 	recipes.addShaped("ia_ie_lv_coil", <immersiveengineering:wirecoil>, [
-		[null, <ore:wireCopper>, null], 
+		[null, <ore:wireCopper>, <immersiveengineering:treated_wood>], 
 		[<ore:wireCopper>, <ore:stickTreatedWood>, <ore:wireCopper>], 
-		[null, <ore:wireCopper>, null]
+		[<immersiveengineering:treated_wood>, <ore:wireCopper>, null]
 	]);
 	recipes.remove(<immersiveengineering:wirecoil:1>);
 	recipes.addShaped("ia_ie_mv_coil", <immersiveengineering:wirecoil:1>, [
-		[null, <ore:wireElectrum>, null], 
+		[null, <ore:wireElectrum>, <immersiveengineering:treated_wood>], 
 		[<ore:wireElectrum>, <ore:stickTreatedWood>, <ore:wireElectrum>], 
-		[null, <ore:wireElectrum>, null]
+		[<immersiveengineering:treated_wood>, <ore:wireElectrum>, null]
 	]);
 	recipes.remove(<immersiveengineering:wirecoil:2>);
 	recipes.addShaped("ia_ie_hv_coil", <immersiveengineering:wirecoil:2>, [
-		[null, <ore:wireSteel>, null], 
+		[null, <ore:wireSteel>, <immersiveengineering:treated_wood>], 
 		[<ore:wireSteel>, <ore:stickTreatedWood>, <ore:wireSteel>], 
-		[null, <ore:wireSteel>, null]
+		[<immersiveengineering:treated_wood>, <ore:wireSteel>, null]
 	]);
 	recipes.addShaped("ia_ie_ev_coil", <contenttweaker:tungsten_coil>, [
-		[null, <contenttweaker:tungsten_wire>, null], 
+		[null, <contenttweaker:tungsten_wire>, <immersiveengineering:treated_wood>], 
 		[<contenttweaker:tungsten_wire>, <ore:stickTreatedWood>, <contenttweaker:tungsten_wire>], 
-		[null, <contenttweaker:tungsten_wire>, null]
+		[<immersiveengineering:treated_wood>, <contenttweaker:tungsten_wire>, null]
+	]);
+
+	recipes.addShaped("ia_gold_coil", <contenttweaker:gold_coil>, [
+		[null, <contenttweaker:gold_wire>, <immersiveengineering:treated_wood>], 
+		[<contenttweaker:gold_wire>, <ore:stickTreatedWood>, <contenttweaker:gold_wire>], 
+		[<immersiveengineering:treated_wood>, <contenttweaker:gold_wire>, null]
 	]);
 
 	recipes.remove(<immersiveengineering:metal_decoration0>);
@@ -207,6 +292,9 @@ recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decorat
 		[<immersiveengineering:wirecoil:2>, <contenttweaker:duraluminum_rod>, <immersiveengineering:wirecoil:2>], 
 		[<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>]
 	]);
+
+	recipes.remove(<immersiveengineering:wirecoil:4>);
+	recipes.addShapeless("ia_steel_cable", <immersiveengineering:wirecoil:4>, [<immersiveengineering:material:23>, <ore:stickWood>]);
 }
 {//connectors and relays
 	recipes.remove(<immersiveengineering:connector>);
@@ -302,7 +390,7 @@ recipes.remove(<immersiveengineering:metal_device1:2>);
 recipes.addShaped("ia_kinetic_dynamo", <immersiveengineering:metal_device1:2>, [
 	[<ore:stickCopper>, <immersiveengineering:wirecoil:2>, <contenttweaker:zinc_rod>], 
 	[<ore:stickCopper>, <immersiveengineering:wirecoil:2>, <contenttweaker:zinc_rod>], 
-	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]
+	[<ore:plateSteel>, <prodigytech:circuit_refined>, <ore:plateSteel>]
 ]);
 
 
@@ -322,3 +410,8 @@ recipes.addShaped("ia_external_heater", <immersiveengineering:metal_device1:1>, 
 
 
 recipes.remove(<immersiveengineering:metal_device1:13>);
+
+
+mods.immersivepetroleum.Lubricant.registerLubricant(<liquid:grease>, 1);
+mods.immersivepetroleum.Lubricant.registerLubricant(<liquid:mekanized_lubricant>, 1);
+mods.immersivepetroleum.Lubricant.registerLubricant(<liquid:starlight_lubricant>, 1);

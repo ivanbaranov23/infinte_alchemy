@@ -1,0 +1,21 @@
+{
+	x: -2.0d,
+	y: 4.0d,
+	dependencies: [
+		"7aa8e742"
+	],
+	tasks: [{
+		uid: "523d7dd6",
+		type: "item",
+		items: [{
+			item: "natura:nether_sapling"
+		}]
+	},
+	{
+		uid: "d674011c",
+		type: "item",
+		items: [{
+			item: "natura:overworld_sapling 1 2"
+		}]
+	}]
+}

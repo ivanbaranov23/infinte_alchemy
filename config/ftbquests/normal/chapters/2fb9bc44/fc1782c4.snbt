@@ -1,6 +1,6 @@
 {
 	x: 0.5d,
-	y: -1.0d,
+	y: 0.0d,
 	text: [
 		"This machine can be used to make rods at 4.5 ingots per rod.",
 		"",

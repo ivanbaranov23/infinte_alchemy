@@ -1,7 +1,10 @@
 {
 	x: -3.0d,
-	y: 2.0d,
+	y: -2.0d,
 	shape: "diamond",
+	text: [
+		"Too gated tbh"
+	],
 	dependencies: [
 		"941b6c91"
 	],
@@ -16,8 +19,8 @@
 		consume_items: true
 	}],
 	rewards: [{
-		uid: "fd58a8bd",
+		uid: "a22357bb",
 		type: "item",
-		item: "contenttweaker:quest_coin"
+		item: "storagedrawers:drawer_key"
 	}]
 }

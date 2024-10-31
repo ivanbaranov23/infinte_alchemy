@@ -2,7 +2,9 @@
 	x: -0.5d,
 	y: 7.5d,
 	text: [
-		"You can also make lava and blue slime meet in world to make this, tho this process is finicky."
+		"You can also make lava and blue slime meet in world to make this, tho this process is finicky.",
+		"",
+		"To automate this i would recommend just paying the quartz tax."
 	],
 	dependencies: [
 		"8f8309bb"

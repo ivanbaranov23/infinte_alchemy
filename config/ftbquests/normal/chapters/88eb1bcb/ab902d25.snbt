@@ -1,0 +1,54 @@
+{
+	icon: "modularcontroller:gp_gen_controller",
+	x: 5.0d,
+	y: 0.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"81952ff5"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fddaef18",
+		type: "item",
+		items: [{
+			item: "modularcontroller:gp_gen_controller"
+		}]
+	},
+	{
+		uid: "119ee7b3",
+		type: "item",
+		items: [{
+			item: "modularmagic:blockgridproviderinput"
+		}]
+	},
+	{
+		uid: "9f658d57",
+		type: "item",
+		items: [{
+			item: "minecraft:sea_lantern"
+		}]
+	},
+	{
+		uid: "b9d8c80f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:lapis_tile"
+		}],
+		count: 21L
+	},
+	{
+		uid: "90556a10",
+		type: "item",
+		items: [{
+			item: "erebus:amber_glass"
+		}],
+		count: 45L
+	},
+	{
+		uid: "74f79104",
+		type: "checkmark",
+		title: "10 casings/hatches"
+	}]
+}

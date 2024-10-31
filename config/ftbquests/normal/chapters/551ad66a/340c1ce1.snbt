@@ -1,0 +1,18 @@
+{
+	x: 11.0d,
+	y: 2.0d,
+	text: [
+		"Speeds up tick rate around it. Kinda op so it was made unspammable"
+	],
+	dependencies: [
+		"cb68303e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7c274516",
+		type: "item",
+		items: [{
+			item: "torcherino:blocktorcherino"
+		}]
+	}]
+}

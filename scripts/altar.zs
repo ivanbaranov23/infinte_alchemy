@@ -104,7 +104,25 @@ recipes.addShaped("ia_eg_altar", <requious:altar>, [
         <blockstate:minecraft:cobblestone>, 
         <blockstate:exnihilocreatio:block_dust>, 400, <thermalfoundation:ore:4>
     );
-    addAltarJEI(<thermalfoundation:ore:4>, <minecraft:stone:3>, 
+    addAltarJEI(<thermalfoundation:ore:4>, <quark:marble>, 
+        <minecraft:cobblestone>, 
+        <exnihilocreatio:block_dust>
+    );
+
+    addAltar(<blockstate:thermalfoundation:ore:type=nickel>, <blockstate:quark:limestone:variant=stone_limestone>, 
+        <blockstate:minecraft:cobblestone>, 
+        <blockstate:exnihilocreatio:block_dust>, 400, <thermalfoundation:ore:5>
+    );
+    addAltarJEI(<thermalfoundation:ore:5>, <quark:limestone>, 
+        <minecraft:cobblestone>, 
+        <exnihilocreatio:block_dust>
+    );
+
+    addAltar(<blockstate:contenttweaker:zinc_ore>, <blockstate:quark:jasper:variant=stone_jasper>, 
+        <blockstate:minecraft:cobblestone>, 
+        <blockstate:exnihilocreatio:block_dust>, 400, <contenttweaker:zinc_ore>
+    );
+    addAltarJEI(<contenttweaker:zinc_ore>, <quark:jasper>, 
         <minecraft:cobblestone>, 
         <exnihilocreatio:block_dust>
     );

@@ -1,0 +1,15 @@
+{
+	x: -5.5d,
+	y: 7.5d,
+	dependencies: [
+		"ab07b45e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b84cb5da",
+		type: "item",
+		items: [{
+			item: "contenttweaker:iron_sand"
+		}]
+	}]
+}

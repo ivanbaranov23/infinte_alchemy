@@ -218,6 +218,45 @@
                     }
                 }
             ]
+        },
+
+        {"match": {"drops": {"drops": ["contenttweaker:electrotine_ore"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "EXCLUDED"
+                    },
+                    "item": {
+                        "items": [
+                            "projectred-core:resource_item:105"
+                        ],
+                        "quantity": {
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                }
+            ]
+        },
+        {"match": {"drops": {"drops": ["contenttweaker:flolit_ore"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "EXCLUDED"
+                    },
+                    "item": {
+                        "items": [
+                            "contenttweaker:flolit:0"
+                        ],
+                        "quantity": {
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                }
+            ]
         }
     ]
 }

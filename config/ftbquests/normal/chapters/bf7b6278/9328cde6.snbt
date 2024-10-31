@@ -1,0 +1,30 @@
+{
+	x: 6.0d,
+	y: 3.0d,
+	text: [
+		"Water wheel can be your first power source"
+	],
+	dependencies: [
+		"3a66f8bf"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9ff683ac",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wooden_device1"
+		}]
+	},
+	{
+		uid: "a7462c5c",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "6469b0e0",
+		type: "item",
+		item: "immersiveengineering:wooden_device1"
+	}]
+}

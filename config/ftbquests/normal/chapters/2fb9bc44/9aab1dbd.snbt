@@ -1,14 +1,15 @@
 {
-	x: 4.5d,
+	x: 0.5d,
 	y: 3.0d,
 	text: [
+		"Next aeroheater will use furnace fuels to make hotter air.",
+		"",
 		"From my testing 1 hopping bonsai going into blower furnace on magmatic heater will be producing charcoal at a rate a bit faster than solid fuel heater consumes. In other words, it's free air.",
 		"",
-		"For moving items you can use hoppers and linear extractor from prodigy tech"
+		"For moving items you can use hoppers and linear extractor from prodigy tech or nodes from XU"
 	],
 	dependencies: [
-		"d9d9aafb",
-		"5cbff905"
+		"d9d9aafb"
 	],
 	optional: true,
 	tasks: [{
@@ -16,5 +17,10 @@
 		type: "checkmark",
 		title: "Passive hot air",
 		icon: "minecraft:coal 1 1"
+	}],
+	rewards: [{
+		uid: "82dcf274",
+		type: "item",
+		item: "prodigytech:linear_extractor"
 	}]
 }

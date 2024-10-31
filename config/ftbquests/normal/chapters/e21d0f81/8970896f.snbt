@@ -1,0 +1,60 @@
+{
+	title: "Research trees",
+	icon: "contenttweaker:research_plants2",
+	x: 3.0d,
+	y: 2.0d,
+	shape: "gear",
+	text: [
+		""
+	],
+	optional: true,
+	tasks: [{
+		uid: "cd2db0da",
+		type: "item",
+		items: [{
+			item: "minecraft:apple"
+		}],
+		count: 32L
+	},
+	{
+		uid: "9520ac24",
+		type: "item",
+		items: [{
+			item: "bonsaitrees:bonsaipot 1 1"
+		}]
+	},
+	{
+		uid: "07291278",
+		type: "item",
+		items: [{
+			item: "natura:redwood_logs 1 1"
+		}],
+		count: 8L
+	},
+	{
+		uid: "c0751988",
+		type: "item",
+		items: [{
+			item: "prodigytech:zorrasteel_ingot"
+		}],
+		count: 3L
+	},
+	{
+		uid: "ece0b909",
+		type: "item",
+		items: [{
+			item: "tconstruct:slime_sapling 1 2"
+		}],
+		count: 12L
+	},
+	{
+		uid: "c41aef5b",
+		type: "item",
+		items: [{
+			id: "tconstruct:broad_axe_head",
+			tag: {
+				Material: "firewood"
+			}
+		}]
+	}]
+}

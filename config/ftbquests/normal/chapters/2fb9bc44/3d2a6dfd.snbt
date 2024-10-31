@@ -1,0 +1,23 @@
+{
+	x: 10.5d,
+	y: 3.0d,
+	text: [
+		"You'll need a crude chip for this. To make the chip you'll need a hammer because it is a perfect tool for making circuitry"
+	],
+	dependencies: [
+		"6d2fd8c8"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6a4db39c",
+		type: "item",
+		items: [{
+			item: "prodigytech:circuit_refined"
+		}]
+	}],
+	rewards: [{
+		uid: "48091018",
+		type: "item",
+		item: "prodigytech:circuit_refined"
+	}]
+}

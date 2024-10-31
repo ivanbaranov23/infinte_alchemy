@@ -11,5 +11,25 @@
 		items: [{
 			item: "prodigytech:primordium"
 		}]
+	}],
+	rewards: [{
+		uid: "367c1f42",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "prodigytech:primordium",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "Primordium",
+				TrophyColorRed: 123,
+				TrophyColorGreen: 47,
+				TrophyColorBlue: 190,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

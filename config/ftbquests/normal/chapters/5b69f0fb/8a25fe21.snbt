@@ -1,0 +1,19 @@
+{
+	x: -7.0d,
+	y: 4.0d,
+	shape: "circle",
+	dependencies: [
+		"9738dd1e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "5dac398f",
+		type: "item",
+		items: [{
+			item: "minecraft:glowstone"
+		},
+		{
+			item: "minecraft:glowstone_dust"
+		}]
+	}]
+}

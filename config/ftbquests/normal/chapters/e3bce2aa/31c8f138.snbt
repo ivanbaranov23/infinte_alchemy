@@ -2,6 +2,7 @@
 	title: "Machine Frame 3",
 	x: 0.0d,
 	y: 0.0d,
+	shape: "square",
 	text: [
 		""
 	],
@@ -19,5 +20,25 @@
 		uid: "f7f920fb",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "5988a6dd",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "thermalexpansion:frame",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "Frame 3",
+				TrophyColorRed: 67,
+				TrophyColorGreen: 67,
+				TrophyColorBlue: 67,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: 4.0d,
+	dependencies: [
+		"5ebea001"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b5844a23",
+		type: "item",
+		items: [{
+			item: "mysticalcreations:bilim_seeds"
+		}]
+	}]
+}

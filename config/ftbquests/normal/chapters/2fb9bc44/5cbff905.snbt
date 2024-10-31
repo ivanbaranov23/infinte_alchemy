@@ -1,8 +1,10 @@
 {
 	x: 4.5d,
 	y: 1.0d,
+	text: [
+		"Will just eat fuel without stopping"
+	],
 	dependencies: [
-		"02890f15",
 		"3e071216"
 	],
 	tasks: [{

@@ -1,6 +1,9 @@
 {
 	x: 17.0d,
 	y: 1.0d,
+	text: [
+		"5x is mandatory for titanium"
+	],
 	dependencies: [
 		"02409eb4"
 	],

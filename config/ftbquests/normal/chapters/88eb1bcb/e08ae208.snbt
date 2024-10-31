@@ -7,8 +7,8 @@
 		""
 	],
 	dependencies: [
-		"b7f2dc32",
-		"414abca0",
+		"1bee886a",
+		"354b66f5",
 		"be945a5b"
 	],
 	tasks: [{
@@ -22,5 +22,25 @@
 		uid: "af8be0f6",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "0d12a2b0",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "thermalexpansion:frame",
+					Count: 1,
+					Damage: 64s
+				},
+				TrophyName: "Frame 1",
+				TrophyColorRed: 40,
+				TrophyColorGreen: 118,
+				TrophyColorBlue: 151,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

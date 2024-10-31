@@ -135,14 +135,25 @@
     "input": "quark:reed_block",
     "output": "erebus:planks:8"
   },
-  {
-    "fluidName": "lava",
-    "input": "prodigytech:inferno_crystal",
-    "output": "extrautils2:compressednetherrack"
-  },
+  
   {
     "fluidName": "lava",
     "input": "excompressum:compressed_block:8",
     "output": "minecraft:quartz_block"
+  },
+  {
+    "fluidName": "rot",
+    "input": "ore:sand",
+    "output": "contenttweaker:iron_sand"
+  },
+  {
+    "fluidName": "andesite",
+    "input": "contenttweaker:dried_gravel",
+    "output": "contenttweaker:gold_sand"
+  },
+  {
+    "fluidName": "andesite_magma",
+    "input": "contenttweaker:slimy_sand",
+    "output": "contenttweaker:slimy_glass"
   }
 ]

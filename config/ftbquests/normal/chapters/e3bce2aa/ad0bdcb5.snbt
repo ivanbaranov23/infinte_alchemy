@@ -1,6 +1,9 @@
 {
 	x: 5.0d,
 	y: 4.0d,
+	dependencies: [
+		"0e347247"
+	],
 	optional: true,
 	or_tasks: true,
 	tasks: [{

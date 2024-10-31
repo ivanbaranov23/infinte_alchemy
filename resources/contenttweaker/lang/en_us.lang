@@ -1,3 +1,5 @@
+ia.tooltip.research=Research material
+
 item.contenttweaker.fireclay.name=Fire Clay
 item.contenttweaker.brick_dust.name=Brick Dust
 item.contenttweaker.firebrick.name=Fire Brick
@@ -22,8 +24,13 @@ item.contenttweaker.zanite_coral.name=Zanite Coral
 item.contenttweaker.honeyspice_ingot.name=Honeyspice Ingot
 
 
+tile.contenttweaker.iron_sand.name=Iron Sand
+tile.contenttweaker.gold_sand.name=Golden Sand
 
 item.contenttweaker.bauxite_dust.name=Bauxite Dust
+fluid.bauxite_slurry=Bauxite Slurry
+fluid.bauxite_waste=Bauxite Waste
+fluid.bauxite_waste_treated=Refined Bauxite Waste
 
 item.contenttweaker.modularium_paste.name=Modularium Paste
 item.contenttweaker.basic_modularium.name=Basic Modularium
@@ -65,6 +72,7 @@ fluid.nial=Molten NiAl
 item.contenttweaker.nickel_oxide.name=Nickel Oxide Dust
 
 item.contenttweaker.gold_wire.name=Gold Wire
+item.contenttweaker.gold_coil.name=Gold Coil
 
 item.contenttweaker.wear_resistant_alloy_ingot.name=Erosion Resistant Alloy Ingot
 item.contenttweaker.wear_resistant_alloy_plate.name=Erosion Resistant Alloy Plate
@@ -172,6 +180,12 @@ item.contenttweaker.menril_steel_plate.name=Menril Steel Plate
 item.contenttweaker.menril_steel_wire.name=Menril Steel Wire
 item.contenttweaker.menril_steel_dust.name=Menril Steel Dust
 tile.contenttweaker.menril_steel_block.name=Block of Menril Steel
+
+item.contenttweaker.xnet_ingot.name=Xnet Ingot
+item.contenttweaker.xnet_plate.name=Xnet Plate
+item.contenttweaker.xnet_wire.name=Xnet Wire
+tile.contenttweaker.xnet_block.name=Block of Xnet Alloy
+
 
 item.contenttweaker.soy_ingot.name=Soy Steel Ingot
 item.contenttweaker.soy_plate.name=Soy Steel Plate
@@ -386,6 +400,10 @@ fluid.chloroauric_acid=Chloroauric Acid
 item.contenttweaker.unannealed_purple_gold_ingot.name=Unannealed Purple Gold Ingot
 item.contenttweaker.purple_gold_ingot.name=Purple Gold Ingot
 tile.contenttweaker.purple_gold_block.name=Block of Purple Gold
+
+item.contenttweaker.peridotite_ingot.name=Peridotite Ingot
+item.contenttweaker.peridotite_sheet.name=FFG-Peridotite sheet
+tile.contenttweaker.peridotite_block.name=Block of Peridotite
 
 item.contenttweaker.imperomite_catalyst.name=Imperomite Catalyst
 item.contenttweaker.imperomite_catalyst_dust.name=Used Imperomite Catalyst
@@ -678,6 +696,7 @@ item.contenttweaker.zirconium_clump.name=Zirconium Clump
 item.contenttweaker.zirconium_dirty_dust.name=Dirty Zirconium Dust
 
 tile.contenttweaker.moissanite_ore.name=Moissanite Ore
+item.contenttweaker.moissanite_dirty.name=Dirty Moissanite
 item.contenttweaker.moissanite.name=Moissanite
 item.contenttweaker.moissanite_plate.name=Moissanite Lens
 
@@ -836,6 +855,8 @@ item.contenttweaker.enderium_circuit.name=Enderium Fluid Circuit
 item.contenttweaker.enderium_processor.name=Enderium Fluid Processor
 item.contenttweaker.osgloridium_circuit.name=Osgloridium Gas Circuit
 item.contenttweaker.osgloridium_processor.name=Osgloridium Gas Processor
+item.contenttweaker.fluxed_circuit.name=Fluxed Engineering Circuit
+item.contenttweaker.fluxed_processor.name=Fluxed Engineering Processor
 
 item.contenttweaker.cursed_circuit.name=Cursed Logic Circuit
 item.contenttweaker.cursed_processor.name=Cursed Logic Processor
@@ -843,6 +864,8 @@ item.contenttweaker.potion_circuit.name=Advanced Fluid Circuit
 item.contenttweaker.potion_processor.name=Advanced Fluid Processor
 item.contenttweaker.palladium_circuit.name=Palladium Gas Circuit
 item.contenttweaker.palladium_processor.name=Palladium Gas Processor
+item.contenttweaker.peridotite_circuit.name=FFG-Peridotite Engineering Circuit
+item.contenttweaker.peridotite_processor.name=FFG-Peridotite Engineering Processor
 
 item.contenttweaker.living_circuit.name=Living Circuit
 item.contenttweaker.living_processor.name=Living Logic Processor
@@ -856,6 +879,8 @@ fluid.sunnarium_base=Sunnaronite
 item.contenttweaker.sticky_bucket.name=Stinky Sticky Water Bambuket
 fluid.sticky_water=Sticky Water
 tile.contenttweaker.burned_slimedirt.name=Burned Slimy Dirt
+item.contenttweaker.simple_motor.name=Simple Motor
+
 
 item.contenttweaker.forest_clay.name=Forest Clay
 tile.contenttweaker.forest_clay_block.name=Forest Clay
@@ -1018,11 +1043,11 @@ item.contenttweaker.cursed_star.name=Cursed Star
 
 
 
-
-
-
-
-
+tile.contenttweaker.potato_block1.name=Compressed Potato Block
+tile.contenttweaker.potato_block2.name=Double Compressed Potato Block
+tile.contenttweaker.potato_block3.name=Triple Compressed Potato Block
+tile.contenttweaker.potato_block4.name=Quadruple Compressed Potato Block
+tile.contenttweaker.potato_block5.name=Quintuple Compressed Potato Block
 
 
 
@@ -1105,6 +1130,59 @@ item.contenttweaker.press_gas.name=Inscriber Gas Press
 
 item.contenttweaker.empty_ingot.name=Empty Ingot Form
 
+fluid.andesite=Molten Andesite
+item.contenttweaker.fire_shard.name=Fire Shard
+item.contenttweaker.slime_shard.name=Slime Shard
+item.contenttweaker.weak_enhancer.name=Weak Enhancer
+tile.contenttweaker.slimy_sand.name=Slimy Sand
+tile.contenttweaker.slimy_glass.name=Slimy Glass
+tile.contenttweaker.dried_gravel.name=Dried Clay Gravel
+
+item.contenttweaker.witherite.name=Witherite
+item.contenttweaker.awaken_witherite.name=Awakened Witherite
+
+item.contenttweaker.bonsai_sapling.name=Bonsai Chonky Oak Sapling
+item.contenttweaker.bonsai_mushroom_brown.name=Bonsai Brown Mushroom
+item.contenttweaker.bonsai_mushroom_red.name=Bonsai Red Mushroom
+
+item.contenttweaker.hot_energion.name=Hot Energion
+item.contenttweaker.pilkeum.name=Pilkeum
+fluid.andesite_magma=Andesite Magma
+
+item.contenttweaker.pilkon.name=Pilkon
+item.contenttweaker.pilkon_corpse.name=Pilkon Corpse
+item.contenttweaker.pt_crude_chip.name=Crude Circuit Chip
+item.contenttweaker.pt_refined_chip.name=Refined Circuit Chip
+item.contenttweaker.bocuit.name=Bocuit String
+
+fluid.organic_green=Organic Green
+
+item.contenttweaker.creosolon.name=Creosolon
+item.contenttweaker.creosolon_frame.name=Creosolon Frame
+item.contenttweaker.machine_frame_frame.name=Machine Frame Frame
+fluid.grease=Elbow Grease
+item.contenttweaker.cactus_charcoal.name=Cactus Charcoal
+item.contenttweaker.cacti_foci.name=Cacti Foci
+item.contenttweaker.fishy_capacitor.name=Fishy Capacitor
+item.contenttweaker.glowcrystal.name=Glow Crystal
+item.contenttweaker.diode1.name=Simple Diode
+
+item.contenttweaker.watertight_lead_plate.name=Watertight Lead Plate
+
+fluid.malachite_glue=Malachite Adhesive
+item.contenttweaker.compound_metal_stack.name=Compound Metal Stack
+item.contenttweaker.compound_metal.name=Impure Compound Metal
+item.contenttweaker.compound_metal2.name=Compound Metal
+
+
+
+tile.contenttweaker.flolit_ore.name=Flolit Ore
+item.contenttweaker.flolit.name=Flolit
+item.contenttweaker.flolit_plant.name=Flolit Plant
+item.contenttweaker.flolit_dust.name=Ferro-Flolit Dust
+item.contenttweaker.flolit_sheet.name=Ferro-Flolit Sheet
+fluid.flolit_water=Sweet Flolit Solution
+
 item.contenttweaker.fine_wooden_board.name=Fine Wooden Board
 item.contenttweaker.soggy_wooden_board.name=Soggy Wooden Board
 item.contenttweaker.wired_wooden_board.name=Wired Wooden Board
@@ -1141,6 +1219,11 @@ item.contenttweaker.tank_nitrogen_dense.name=Tank with Compressed Nitrogen
 
 item.contenttweaker.crucible.name=High Temprature Crucible
 
+item.contenttweaker.dark_shard.name=Tungsteny Dark Shard
+fluid.blackish_slurp=Dark Grey Slurp
+fluid.black_slurp=Liquid Black Slurp
+gas.black_slurp=Black Slurp Gas
+
 item.contenttweaker.pump.name=Fluid Pump
 item.contenttweaker.cooling_system.name=Cooling System
 item.contenttweaker.pressure_cutter.name=Fluid Pressure Cutter
@@ -1174,9 +1257,19 @@ item.contenttweaker.entangled_particles.name=Entangled Particles
 
 
 item.contenttweaker.glass_cutter_research_token.name=Glass Cutter Research Token
+item.contenttweaker.concrete_token.name=Concrete Research Token
 item.contenttweaker.steel_hoe_research_token.name=Steel Hoe Research Token
+item.contenttweaker.blueslime_bucket.name=Blue Slime Research Token
+item.contenttweaker.purpleslime_bucket.name=Purple Slime Research Token
+
+item.contenttweaker.grass_bucket.name=Grassoline Research Token
+
+item.contenttweaker.glow_bucket.name=Glowstone Research Token
+
+item.contenttweaker.demon_bucket.name=Demon Metal Research Token
 
 item.contenttweaker.research_glass_making.name=How To Make Glass
+item.contenttweaker.research_structure.name=How To Structure Heavy Machinery
 item.contenttweaker.research_sieving.name=Advanced Sieving Options
 item.contenttweaker.research_fluids.name=Advanced Fluid Handling
 item.contenttweaker.research_flight1.name=How To Fly
@@ -1186,6 +1279,8 @@ item.contenttweaker.research_plants3.name=How To Grow Exotic Vines
 item.contenttweaker.research_chemistry1.name=How To Refine Waste
 item.contenttweaker.research_chemistry2.name=How To Polymerize
 item.contenttweaker.research_chemistry3.name=How To Synthesize Alien Materials
+
+item.contenttweaker.research_circuit1.name=How To Make Circuitry From Strange Materials
 
 item.contenttweaker.research_magic2.name=How To Bleed Efficiently
 

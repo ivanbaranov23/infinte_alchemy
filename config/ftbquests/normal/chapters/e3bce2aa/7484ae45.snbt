@@ -1,7 +1,7 @@
 {
 	title: "Haste Catalyst",
 	x: 8.0d,
-	y: -4.0d,
+	y: -5.0d,
 	text: [
 		"Use chocolate to make haste catalyst"
 	],

@@ -1,0 +1,15 @@
+{
+	x: 20.5d,
+	y: 5.0d,
+	dependencies: [
+		"29ec6c24",
+		"1a1672d3"
+	],
+	tasks: [{
+		uid: "a39fc352",
+		type: "item",
+		items: [{
+			item: "contenttweaker:satellite_plating2"
+		}]
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	x: -6.0d,
+	y: -4.0d,
+	text: [
+		"Early autocrafting"
+	],
+	dependencies: [
+		"a2041799"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8b494e83",
+		type: "item",
+		items: [{
+			item: "projectred-expansion:machine2 1 10"
+		}]
+	},
+	{
+		uid: "888f2f19",
+		type: "item",
+		items: [{
+			item: "projectred-expansion:machine2 1 11"
+		}]
+	},
+	{
+		uid: "d123fb7c",
+		type: "item",
+		items: [{
+			item: "projectred-expansion:plan"
+		}]
+	}]
+}

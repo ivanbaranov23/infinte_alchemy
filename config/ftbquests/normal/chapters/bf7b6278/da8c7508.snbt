@@ -21,5 +21,25 @@
 		uid: "2c4628db",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "9069c6c5",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "extrautils2:machine",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "Frame 1",
+				TrophyColorRed: 171,
+				TrophyColorGreen: 171,
+				TrophyColorBlue: 171,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

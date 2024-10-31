@@ -1,0 +1,48 @@
+{
+    "type": "amongus",
+    "version": 2,
+    "ref": {
+      "a": {
+        "name": "minecraft:leaves",
+        "meta": 0
+      },
+      "b": {
+        "name": "minecraft:log",
+        "meta": 0
+      }
+    },
+    "shape": [
+      [
+        "aaa",
+        "aaa",
+        "aaa",
+        "   ",
+        "   ",
+        "   "
+      ],
+      [
+        "bbb",
+        "bbb",
+        "bbb",
+        "bbb",
+        "bbb",
+        "b b"
+      ],
+      [
+        "bbb",
+        "bbb",
+        "bbb",
+        "bbb",
+        "bbb",
+        "b b"
+      ],
+      [
+        "   ",
+        "bbb",
+        "bbb",
+        "bbb",
+        "   ",
+        "   "
+      ]
+    ]
+  }

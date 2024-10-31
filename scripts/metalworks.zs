@@ -36,7 +36,7 @@ import mods.thermalexpansion.Infuser;
 //Infuser.addRecipe(IItemStack output, IItemStack input, int energy);
 
 
-
+print("[IA] starting metalworks");
 
 
 static all_metals as IItemStack[string][string] = {
@@ -388,6 +388,11 @@ static all_metals as IItemStack[string][string] = {
         block: <moreplates:electrotine_alloy_plate>
     },
 
+    compound_metal: {
+        ingot: <contenttweaker:compound_metal2>,
+        block: <contenttweaker:compound_metal2> * 9
+    },
+
     // thermal metals
     thermal_paste: {
         ingot: <contenttweaker:thermal_paste>
@@ -622,6 +627,13 @@ static all_metals as IItemStack[string][string] = {
         nugget: <contenttweaker:fluix_steel_nugget>,
         block: <contenttweaker:fluix_steel_block>,
         dust: <contenttweaker:fluix_steel_dust>
+    },
+    xnet: {
+        ingot: <contenttweaker:xnet_ingot>,
+        plate: <contenttweaker:xnet_plate>,
+        wire: <contenttweaker:xnet_wire>,
+
+        block: <contenttweaker:xnet_block>
     },
     menril_steel_base: {
         ingot: <contenttweaker:menril_steel_base_ingot>,
@@ -1178,6 +1190,12 @@ static all_metals as IItemStack[string][string] = {
         plate: <contenttweaker:orichalcum_plate>,
         gear: <contenttweaker:orichalcum_gear>,
         block: <contenttweaker:orichalcum_block>
+    },
+    orichalconite: {
+        ingot: <contenttweaker:orichalconite_ingot>,
+        plate: <contenttweaker:orichalconite_plate>,
+        gear: <contenttweaker:orichalconite_gear>,
+        block: <contenttweaker:orichalconite_block>
     },
     vibralcum: {
         ingot: <contenttweaker:vibralcum_ingot>,
@@ -2024,13 +2042,13 @@ function add2alloy(
             all_metals[alloy].ingot * alloyn, 
             all_metals[metal1].ingot * n1,
             all_metals[metal2].ingot * n2,
-            750 * (alloy_level + 1)
+            2000 * (alloy_level + 1)
         );
         mods.enderio.AlloySmelter.addRecipe(all_metals[alloy].ingot * alloyn, 
             [
                 all_metals[metal1].ingot * n1,
                 all_metals[metal2].ingot * n2
-            ]
+            ], 4000 * (alloy_level + 1)
         );
     }
 
@@ -2087,9 +2105,12 @@ function add3alloy(
     }
 
     mods.enderio.AlloySmelter.addRecipe(all_metals[alloy].ingot * alloyn, 
-        [all_metals[metal1].ingot * n1,
-        all_metals[metal2].ingot * n2,
-        all_metals[metal3].ingot * n3]);
+        [
+            all_metals[metal1].ingot * n1,
+            all_metals[metal2].ingot * n2,
+            all_metals[metal3].ingot * n3
+        ], 5000 * (alloy_level + 1)
+    );
 
     scripts.helper.addHighOvenAlloy(
         "ho_" + alloy + metal1 + metal2 + metal3, alloy_level,
@@ -2166,9 +2187,9 @@ function addCasting(metal as IItemStack[string], molten as ILiquidStack){
     Casting.addTableRecipe(metal.ingot, <tconstruct:cast_custom>, molten, 144, false);
     Casting.addBasinRecipe(metal.block, null, molten, 1296);
 
-    Melting.addRecipe(molten * 144, metal.ingot);
-    if (metal.keys has "dust") {Melting.addRecipe(molten * 144, metal.dust);}
-    Melting.addRecipe(molten * 1296, metal.block);
+    Melting.addRecipe(molten * 144, metal.ingot, 700);
+    if (metal.keys has "dust") {Melting.addRecipe(molten * 144, metal.dust, 500);}
+    Melting.addRecipe(molten * 1296, metal.block, 1000);
 
     mods.thermalexpansion.Crucible.addRecipe(molten * 144, metal.ingot, 4000);
     if (metal.keys has "dust") {mods.thermalexpansion.Crucible.addRecipe(molten * 144, metal.dust, 4000);}
@@ -2303,6 +2324,12 @@ function finalizeMetal(metal as string){
         Melting.removeRecipe(all_metals_molten[ball], all_metals[ball].ball);
         Casting.removeTableRecipe(all_metals[ball].ball);
     }
+
+    //deleting useless
+    Melting.removeRecipe(<liquid:construction_alloy>);
+    Melting.removeRecipe(<liquid:crude_steel>);
+    recipes.remove(<enderio:item_alloy_ball:9>);
+    recipes.remove(<enderio:item_alloy_endergy_ball>);
     
 
     print("[IA] starting adding metalworks");
@@ -2405,6 +2432,38 @@ add3alloy(1, "flower_steel", 4,
     "petals", 8
 );
 
+{//extra ut
+    recipes.addShapeless("compound_metal_stack_main", <contenttweaker:compound_metal_stack> * 2, [
+        <liquid:malachite_glue> * 1000,
+        <tconstruct:ingots:5>, 
+        <extrautils2:ingredients:12>,
+        <contenttweaker:watertight_steel_ingot>
+    ]);
+    recipes.addShapeless("compound_metal_stack_2", <contenttweaker:compound_metal_stack> * 4, [
+        <liquid:malachite_glue> * 1000,
+        <tconstruct:ingots:5>, 
+        <extrautils2:ingredients:12>,
+        <contenttweaker:watertight_steel_ingot>,
+        <contenttweaker:creosolon> | <contenttweaker:mushroomite_ingot> | <exnihilocreatio:item_ore_tungsten:3> | <industrialforegoing:pink_slime_ingot>
+    ]);
+
+
+    scripts.content_machines.addFluidMixerRecipe(<liquid:malachite_glue> * 1000, 
+        <liquid:canolaoil> * 500, <liquid:witchwater> * 1000, 
+        <contenttweaker:malachite_polycrystal>, 
+        120, 80
+    );
+
+    mods.tconstruct.Casting.addTableRecipe(<contenttweaker:compound_metal>, <contenttweaker:compound_metal_stack>, <liquid:electrical_steel>, 288, true);
+    TEAlloyer.addRecipe(
+        <contenttweaker:compound_metal>, 
+        <contenttweaker:compound_metal_stack>,
+        <enderio:item_alloy_ingot>,
+        3000
+    );
+}
+
+
 
 {//thermal
     recipes.addShapeless("ia_manyullyn_dust", <contenttweaker:manyullyn_dust> * 2, [<ore:dustCobalt>, <ore:dustArdite>]);
@@ -2412,22 +2471,27 @@ add3alloy(1, "flower_steel", 4,
     {//thermal_steel
         recipes.addShapeless("ia_thermal_paste", <contenttweaker:thermal_paste_base> * 8, 
             [<contenttweaker:manyullyn_dust>, <contenttweaker:jade_dust>, <ore:dustZinc>, 
-            <contenttweaker:industrial_clay>, <erebus:materials:40>, <erebus:materials:40>]
+            <contenttweaker:industrial_clay>, <erebus:materials:40>, <erebus:materials:40>, <contenttweaker:hot_energion>]
         );
         mods.tconstruct.Casting.addTableRecipe(
             <contenttweaker:thermal_paste>, <contenttweaker:thermal_paste_base>, 
-            <liquid:honey>, 200, 
+            <liquid:honey>, 250, 
             true
         );
         mods.thermalexpansion.Transposer.addFillRecipe(
             <contenttweaker:thermal_paste>, 
             <contenttweaker:thermal_paste_base>, 
-            <liquid:honey> * 200, 1000
+            <liquid:honey> * 250, 1000
+        );
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <contenttweaker:compound_metal2>, 
+            <contenttweaker:compound_metal>, 
+            <liquid:formic_acid> * 400, 1000
         );
         add3alloy(1, "thermal_steel", 8,
             "thermal_paste", 12,
             "duraluminum", 3,
-            "electric_steel", 4
+            "compound_metal", 2
         );
     }
 
@@ -2515,6 +2579,12 @@ add3alloy(1, "flower_steel", 4,
             all_metals.menril_steel_base.ingot, 
             <liquid:menrilresin> * 3000, 2000
         );
+
+        scripts.helper.addFluidAlloyerRecipe(
+            <contenttweaker:xnet_ingot> * 2, 
+            <contenttweaker:fluix_steel_ingot>, <contenttweaker:lesmium_ingot> * 3, <liquid:emerald> * 222, 
+            512, 100
+        );
     }
 
     {//mushroomite
@@ -2553,9 +2623,10 @@ add3alloy(1, "flower_steel", 4,
     }
 
     {//mekanized_steel
-        add2alloy(1, "mekanized_steel_base", 3,
+        add3alloy(1, "mekanized_steel_base", 3,
             "electric_manyullyn", 1,
-            "enderium", 2
+            "enderium", 2,
+            "thermal_steel", 1
         );
 
         mods.thermalexpansion.Transposer.addFillRecipe(
@@ -3114,7 +3185,7 @@ scripts.helper.addFluidAlloyerRecipe(
             <taiga:yrdeen_ingot> * 2,
             <biomesoplenty:crystal_shard> * 64
         ], 20000);
-        mods.enderio.AlloySmelter.addRecipe(all_metals.crystalline_alloy.ingot * 8, [
+        mods.enderio.AlloySmelter.addRecipe(all_metals.crystalline_alloy.ingot * 12, [
             <enderio:item_material:36> * 4,
             <taiga:yrdeen_ingot> * 8,
             <contenttweaker:crystal_metal_nugget>
@@ -3232,6 +3303,32 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:cursed_gold_ingot> * 4,
 
 //purple gold
 //in chem lines
+
+{//peridotite
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:peridotite_ingot> * 2, 
+        [
+            <enderio:item_material:15>,
+            <taiga:niob_ingot> * 4,
+            <twilightforest:steeleaf_ingot> * 8
+        ], 25000
+    );
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:peridotite_ingot> * 4, 
+        [
+            <enderio:item_material:15>,
+            <taiga:niob_ingot> * 4,
+            <contenttweaker:stoneleaf> * 6
+        ], 25000
+    );
+
+
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:peridotite_sheet>, 
+        [
+            <contenttweaker:peridotite_ingot> * 3,
+            <contenttweaker:flolit_sheet> * 8,
+            <contenttweaker:gallium_sheet> * 8
+        ], 50000
+    );
+}
 
 {//noble & imperomite
     mods.thermalexpansion.Transposer.addFillRecipe(
@@ -3530,6 +3627,23 @@ add3alloy(3, "ender_ingot", 1,
         ]
     );
 
+    //orichalconite
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:orichalconite_ingot>, 1024 * 20, 1024, <contenttweaker:glass_ingot>,
+        [
+            <contenttweaker:orichalcum_ingot>,
+            <twilightforest:knightmetal_block>,
+            <contenttweaker:imperial_steel_ingot>,
+            <contenttweaker:imperial_steel_ingot>,
+            <contenttweaker:imperial_steel_ingot>,
+            <contenttweaker:arkenium_ingot>,
+            <enderio:item_alloy_endergy_ingot:2>,
+            <enderio:item_alloy_endergy_ingot:2>,
+            <taiga:yrdeen_ingot>,
+            <taiga:yrdeen_ingot>
+        ]
+    );
+
     //vibralcum
     mods.extendedcrafting.CombinationCrafting.addRecipe(
         <contenttweaker:vibralcum_ingot> * 3, 1024 * 20, 1024, <contenttweaker:glass_ingot>,
@@ -3714,6 +3828,24 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <extendedcrafting:singularity_custom:55>
         ]
     );
+
+
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:true_titanium>, 1024000 * 100, 1024000 * 5, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <extendedcrafting:singularity:31>,
+            <extendedcrafting:singularity:31>,
+            <contenttweaker:tablet_good>,
+            <contenttweaker:star_alloy_ingot>,
+            <botania:specialflower>.withTag({type: "puredaisy"}),
+            <contenttweaker:pure_sheetmetal>,
+            <contenttweaker:crystal_metal_ingot>,
+            <aether_legacy:enchanted_gravitite>,
+            <aether_legacy:enchanted_gravitite>,
+            <aether_legacy:enchanted_gravitite>,
+            <bloodmagic:demon_extras:10>
+        ]
+    );
 }
 {//draconic
     //draconium
@@ -3727,15 +3859,12 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <extendedcrafting:singularity_custom:41>, 
             <extendedcrafting:singularity_custom:41>,
             <contenttweaker:fiery_singularity>,
-            <contenttweaker:crystal_metal_ingot>,
-            <contenttweaker:crystal_metal_ingot>,
-            <enderio:item_alloy_endergy_ingot:1>,
-            <enderio:item_alloy_endergy_ingot:1>,
-            <enderio:item_alloy_endergy_ingot:1>,
-            <contenttweaker:living_steel_ingot>,
-            <contenttweaker:living_steel_ingot>,
-            <contenttweaker:living_steel_ingot>,
-            <contenttweaker:living_steel_ingot>,
+            <contenttweaker:crystal_metal_block>,
+            <enderio:block_alloy_endergy:1>,
+            <enderio:block_alloy_endergy:1>,
+            <contenttweaker:living_steel_block>,
+            <contenttweaker:living_steel_block>,
+            <contenttweaker:death_metal_block>,
             <bloodmagic:demon_extras:13>,
             <bloodmagic:demon_extras:13>,
             <projecte:matter_block:1>

@@ -97,6 +97,23 @@ import crafttweaker.entity.IEntityItem;
     mat.register();
 }
 
+{//bocuit
+    val testMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("bocuit");
+    testMat.color = 0x6a893b;
+    testMat.craftable = true;
+    
+    testMat.addItem(<item:contenttweaker:bocuit>);
+    testMat.representativeItem = <item:contenttweaker:bocuit>;
+    
+    testMat.addBowStringMaterialStats(1.75f);
+    
+    testMat.addMaterialTrait("shocking", null);
+
+    testMat.itemLocalizer = function(thisMaterial, itemName){return "Bocuit " + itemName;};
+    testMat.localizedName = "Bocuit";
+    testMat.register();
+}
+
 {//watertight_steel
     val testMat = mods.contenttweaker.tconstruct.MaterialBuilder.create("watertight_steel");
     testMat.color = 0x2a5693;

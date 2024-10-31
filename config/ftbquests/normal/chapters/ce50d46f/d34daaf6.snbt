@@ -1,0 +1,17 @@
+{
+	x: 18.5d,
+	y: 9.0d,
+	dependencies: [
+		"eba1053a",
+		"4661c7bd",
+		"f11cea02",
+		"f4392277"
+	],
+	tasks: [{
+		uid: "1d2b0a87",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rtg2"
+		}]
+	}]
+}

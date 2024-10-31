@@ -181,8 +181,8 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 		]);
 		recipes.remove(<mekanism:machineblock>);
 		recipes.addShaped("ia_enrichment_chamber", <mekanism:machineblock>, [
-			[<contenttweaker:spicy_enriched_bioblend>, <thermalfoundation:material:656>, <contenttweaker:spicy_enriched_bioblend>], 
-			[<contenttweaker:relic_ingot>, <mekanism:basicblock:8>, <contenttweaker:relic_ingot>], 
+			[<contenttweaker:spicy_enriched_bioblend>, <prodigytech:magnetic_reassembler>, <contenttweaker:spicy_enriched_bioblend>], 
+			[<thermalfoundation:material:656>, <mekanism:basicblock:8>, <thermalfoundation:material:656>], 
 			[<ore:circuitAdvanced>, <appliedenergistics2:quartz_growth_accelerator>, <ore:circuitAdvanced>]
 		]);
 	

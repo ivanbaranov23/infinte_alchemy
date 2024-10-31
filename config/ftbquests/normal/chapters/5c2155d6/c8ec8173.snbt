@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: 1.0d,
+	text: [
+		"Grab some"
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	tasks: [{
+		uid: "fc30232b",
+		type: "item",
+		items: [{
+			item: "erebus:amber"
+		}]
+	}]
+}

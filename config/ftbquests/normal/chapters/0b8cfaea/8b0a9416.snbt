@@ -1,0 +1,33 @@
+{
+	title: "Bamboo",
+	icon: "erebus:materials 1 3",
+	x: -2.5d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"15a113bb"
+	],
+	tasks: [{
+		uid: "5b415193",
+		type: "item",
+		items: [{
+			item: "quark:reed_block"
+		}]
+	},
+	{
+		uid: "0414b513",
+		type: "item",
+		items: [{
+			item: "erebus:planks 1 8"
+		}]
+	},
+	{
+		uid: "34e39fe1",
+		type: "item",
+		items: [{
+			item: "erebus:materials 1 3"
+		}]
+	}]
+}

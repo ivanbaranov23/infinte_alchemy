@@ -1,0 +1,22 @@
+{
+	title: "Tinker Mod",
+	icon: "excompressum:double_compressed_diamond_hammer",
+	x: 1.5d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "ba0a6395",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "8443af75",
+		type: "item",
+		item: "excompressum:double_compressed_diamond_hammer"
+	}]
+}

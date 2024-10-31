@@ -1,0 +1,72 @@
+{
+    "type": "mushroom_brown",
+    "version": 2,
+    "ref": {
+      "a": {
+        "name": "minecraft:brown_mushroom_block",
+        "meta": 5
+      },
+      "b": {
+        "name": "minecraft:brown_mushroom_block",
+        "meta": 10
+      }
+    },
+    "shape": [
+      [
+        " aaaaa ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "aaaaaaa",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "aaaaaaa",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "aaaaaaa",
+        "   b   ",
+        "   b   ",
+        "   b   ",
+        "   b   ",
+        "   b   "
+      ],
+      [
+        "aaaaaaa",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        "aaaaaaa",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ],
+      [
+        " aaaaa ",
+        "       ",
+        "       ",
+        "       ",
+        "       ",
+        "       "
+      ]
+    ]
+  }

@@ -235,17 +235,44 @@ function addFluidReservoir(
     <ore:oreOverworldIron>.add(<minecraft:iron_ore>);
     <ore:oreOverworldCopper>.add(<thermalfoundation:ore>);
     <ore:oreOverworldTin>.add(<thermalfoundation:ore:1>);
-
     <ore:oreOverworldAluminum>.add(<thermalfoundation:ore:4>);
-    <ore:oreBauxite>.add(<immersiveengineering:ore:1>);
-
     <ore:oreOverworldNickel>.add(<thermalfoundation:ore:5>);
-
     <ore:oreOverworldZinc>.add(<contenttweaker:zinc_ore>);
 
+    <ore:oreOverworldBauxite>.add(<immersiveengineering:ore:1>);
 
+    <ore:oreOverworldCobalt>.add(<netherendingores:ore_other_1:4>);
+    <ore:oreOverworldArdite>.add(<netherendingores:ore_other_1:2>);
 
+    <ore:oreOverworldGold>.add(<minecraft:gold_ore>);
+    <ore:oreOverworldSilver>.add(<thermalfoundation:ore:2>);
+    <ore:oreOverworldLead>.add(<thermalfoundation:ore:3>);
+    <ore:oreOverworldOsmium>.add(<mekanism:oreblock>);
+
+    <ore:oreOverworldPlatinum>.add(<thermalfoundation:ore:6>);
+    <ore:oreOverworldIridium>.add(<thermalfoundation:ore:7>);
+    <ore:oreOverworldTitanium>.add(<contenttweaker:titanium_ore>);
     <ore:oreOverworldTungsten>.add(<contenttweaker:tungsten_ore>);
+    <ore:oreOverworldUranium>.add(<immersiveengineering:ore:5>);
+    <ore:oreOverworldYellorium>.add(<bigreactors:oreyellorite>);
+
+    <ore:oreOverworlGallium>.add(<contenttweaker:gallium_ore>);
+    <ore:oreOverworldOrichalcum>.add(<contenttweaker:orichalcum_ore>);
+
+    <ore:oreOverworldCoal>.add(<minecraft:coal_ore>);
+    <ore:oreOverworldElectrotine>.add(<contenttweaker:electrotine_ore>);
+
+    <ore:oreOverworldDiamond>.add(<minecraft:diamond_ore>);
+    <ore:oreOverworldGravitite>.add(<netherendingores:ore_other_1:7>);
+
+    
+
+
+
+    //other
+    <ore:oreMagicalCopper>.add(<mysticalworld:copper_ore>);
+    <ore:oreMagicalTin>.add(<mekanism:oreblock:2>);
+    //<ore:oreMagicalCopper>.add(<minecraft:diamond_ore>);
 }
 {//erebus
     <ore:oreErebusCoal>.add(<erebus:ore_coal>);
@@ -264,6 +291,7 @@ function addFluidReservoir(
     <ore:oreErebusTemple>.add(<erebus:ore_temple>);
     <ore:blockErebusAmber>.add(<erebus:amber>);
     <ore:blockErebusGneiss>.add(<erebus:gneiss>);
+
     <ore:erebusDutchCapMushroom>.add(<erebus:dutch_cap_mushroom>);
     <ore:erebusGrandmasShoesMushroom>.add(<erebus:grandmas_shoes_mushroom>);
     <ore:erebusDarkCappedMushroom>.add(<erebus:dark_capped_mushroom>);
@@ -304,6 +332,16 @@ var mil as int = 1000000;
 
 //overworld
 addExcavator("Iron", 20, ["oreOverworldIron", "oreOverworldNickel"], [0.8, 0.2], [0, -11325]);
+addExcavator("Copper", 20, ["oreOverworldCopper", "oreOverworldGold"], [0.8, 0.2], [0, -11325]);
+addExcavator("Tin", 20, ["oreOverworldTin", "oreOverworldSilver"], [0.8, 0.2], [0, -11325]);
+addExcavator("Electrum", 20, ["oreOverworldGold", "oreOverworldSilver", "oreOverworldElectrotine"], [0.45, 0.45, 0.1], [0, -11325]);
+addExcavator("Nickel", 20, ["oreOverworldNickel", "oreOverworldIron", "oreOverworldPlatinum"], [0.75, 0.2, 0.05], [0, -11325]);
+addExcavator("BauxiteVein", 10, ["oreOverworldBauxite", "oreOverworldAluminum", "oreOverworldGallium"], [0.79, 0.2, 0.01], [0, -11325]);
+
+addExcavator("Coal1", 20, ["oreOverworlCoal"], [1], [0, -11325]);
+addExcavator("Coal2", 10, ["oreOverworlCoal", "oreOverworldDiamond"], [0.99, 0.01], [0, -11325]);
+
+
 
 addFluidReservoir("Oil", 35, <liquid:oil>, 5*mil, 10*mil, 6, [0, -11325, 7]);
 addFluidReservoir("Rich Oil", 5, <liquid:oil>, 50*mil, 100*mil, 30, [0, -11325, 7]);
@@ -313,6 +351,8 @@ addFluidReservoir("OW Sea Water", 25, <liquid:sea_water>, 5*mil, 10*mil, 6, [0])
 addFluidReservoir("OW Mana", 5, <liquid:mana>, mil, 3*mil, 0, [0]);
 
 //erebus
+
+
 addFluidReservoir("Erebus Bugs", 10, <liquid:bugs>, 10000, 100000, 1, [66]);
 
 //atum

@@ -1,0 +1,20 @@
+{
+	x: -5.0d,
+	y: -4.0d,
+	dependencies: [
+		"32464c8e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "06bdbacf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:simple_motor"
+		}]
+	}],
+	rewards: [{
+		uid: "6371a2aa",
+		type: "item",
+		item: "contenttweaker:simple_motor"
+	}]
+}

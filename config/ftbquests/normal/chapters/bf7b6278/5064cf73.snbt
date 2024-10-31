@@ -10,5 +10,10 @@
 		items: [{
 			item: "immersiveengineering:material 1 9"
 		}]
+	}],
+	rewards: [{
+		uid: "4599c2a4",
+		type: "item",
+		item: "immersiveengineering:material 1 9"
 	}]
 }

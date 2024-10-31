@@ -1,8 +1,8 @@
 {
-	x: 19.0d,
-	y: 3.5d,
+	x: 20.0d,
+	y: 4.5d,
 	dependencies: [
-		"2b755328"
+		"81c9df15"
 	],
 	tasks: [{
 		uid: "1242d3a4",
@@ -10,5 +10,10 @@
 		items: [{
 			item: "contenttweaker:bloody_circuit"
 		}]
+	}],
+	rewards: [{
+		uid: "e7947bbe",
+		type: "item",
+		item: "contenttweaker:bloody_circuit"
 	}]
 }

@@ -634,7 +634,14 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		<quark:glowshroom>,
 		<mod_lavacow:chitin>
 	], 320, 96);
-
+	//bridge
+	TartaricForge.removeRecipe([<minecraft:soul_sand>, <minecraft:soul_sand>, <minecraft:obsidian>, <ore:stone>.firstItem]);
+	TartaricForge.addRecipe(<bloodmagic:component:15>, [
+		<mcwbridges:stone_brick_bridge>,
+		<botania:bifrostperm>,
+		<twilightforest:tower_device>,
+		<extrautils2:compresseddirt:1>
+	], 320, 96);
 
 	//binding
 	TartaricForge.removeRecipe([<minecraft:glowstone_dust>,<minecraft:redstone>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
@@ -695,6 +702,10 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	mods.bloodmagic.AlchemyArray.addRecipe(
 		<contenttweaker:tablet_evil>, 
 		<contenttweaker:tablet_engraved>, <extrautils2:simpledecorative:2>, "contenttweaker:textures/hey.png"
+	);
+	mods.bloodmagic.AlchemyArray.addRecipe(
+		<contenttweaker:tablet_good>, 
+		<contenttweaker:tablet_evil>, <extendedcrafting:singularity_custom:42>, "contenttweaker:textures/hey.png"
 	);
 }
 

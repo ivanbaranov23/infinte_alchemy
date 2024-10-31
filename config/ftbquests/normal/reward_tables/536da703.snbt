@@ -1,4 +1,18 @@
 {
 	loot_size: 1,
-	rewards: []
+	rewards: [{
+		item: "enderio:item_item_conduit",
+		count: 12
+	},
+	{
+		item: "enderio:item_liquid_conduit 1 2",
+		count: 12
+	},
+	{
+		item: "enderio:item_endergy_conduit 1 5"
+	},
+	{
+		item: "enderio:item_me_conduit",
+		count: 12
+	}]
 }

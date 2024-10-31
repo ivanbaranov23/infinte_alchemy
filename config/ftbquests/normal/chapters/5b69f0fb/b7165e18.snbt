@@ -1,6 +1,6 @@
 {
 	x: 2.0d,
-	y: 0.0d,
+	y: -2.0d,
 	text: [
 		"Put input block on top, fire or blue fire below and see as the block transforms!"
 	],

@@ -4,6 +4,9 @@
 	text: [
 		"Gives Salt and Seaweed Rich Water."
 	],
+	dependencies: [
+		"0e347247"
+	],
 	optional: true,
 	tasks: [{
 		uid: "e21670de",

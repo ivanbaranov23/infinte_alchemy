@@ -28,6 +28,13 @@ recipes.addShaped("furnace", <minecraft:furnace>,
     	[<roots:runestone>, <contenttweaker:firebrick_block>, <roots:runestone>]
 	]
 );
+recipes.addShaped("furnace2", <minecraft:furnace> * 2,
+    [
+		[<roots:runestone>, <thermalfoundation:material:163>, <roots:runestone>],
+    	[<thermalfoundation:material:163>, <minecraft:glass>, <thermalfoundation:material:163>],
+    	[<roots:runestone>, <contenttweaker:firebrick_block>, <roots:runestone>]
+	]
+);
 
 //brewing
 recipes.remove(<minecraft:brewing_stand>);
@@ -75,6 +82,8 @@ recipes.addShaped("ia_quartz_glass2", <betternether:quartz_glass> * 3, [
 	[<quark:glass_shards>, <ore:crystalPureCertusQuartz>, null]
 ]);
 
+//glowstone
+recipes.addShapeless("glow_uncompr", <minecraft:glowstone_dust> * 4, [<minecraft:glowstone>]);
 
 //nether
 recipes.remove(<betternether:cincinnasite_block>);
@@ -93,6 +102,14 @@ recipes.addShaped("ia_cincinnasite_forged", <betternether:cincinnasite_forged>, 
 	[<ore:dustPyrotheum>, <betternether:cincinnasite_block>, <ore:dustPyrotheum>], 
 	[<roots:infernal_bulb>, <contenttweaker:ptah_godshard>, <roots:infernal_bulb>]
 ]);
+
+recipes.addShaped("ia_quartz_from_tiny", <minecraft:quartz>, [
+	[<agricraft:agri_nugget:2>, <agricraft:agri_nugget:2>, <agricraft:agri_nugget:2>],
+	[<agricraft:agri_nugget:2>, <agricraft:agri_nugget:2>, <agricraft:agri_nugget:2>],
+	[<agricraft:agri_nugget:2>, <agricraft:agri_nugget:2>, <agricraft:agri_nugget:2>]
+]);
+mods.roots.Mortar.addRecipe("ia_quartz", <appliedenergistics2:material:3>, [<minecraft:quartz>]);
+
 
 // plants
 //grass

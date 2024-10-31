@@ -16,6 +16,11 @@ recipes.addShaped("ia_bug_hill1", <contenttweaker:bug_hill_exit1> * 8, [
     [<tconstruct:deco_ground>, <liquid:bugs> * 1000, <tconstruct:deco_ground>],
     [<tconstruct:deco_ground>, <tconstruct:deco_ground>, <tconstruct:deco_ground>]
 ]);
+recipes.addShaped("ia_bug_hill1", <contenttweaker:bug_hill_exit1> * 8, [
+    [<tconstruct:deco_ground>, <tconstruct:deco_ground>, <tconstruct:deco_ground>],
+    [<tconstruct:deco_ground>, <erebus:rein_exo>, <tconstruct:deco_ground>],
+    [<tconstruct:deco_ground>, <tconstruct:deco_ground>, <tconstruct:deco_ground>]
+]);
 
 recipes.addShaped("ia_bug_hill2", <contenttweaker:bug_hill_exit2>, [
     [<moreplates:ironwood_plate>, <contenttweaker:flower_steel_rod>, <moreplates:ironwood_plate>],
@@ -47,6 +52,18 @@ mods.roots.Fey.addRecipe(
         <contenttweaker:glowshroomite_block>,
         <contenttweaker:mushroomite_singularity>
     ]
+);
+
+//fuels
+scripts.content_machines.addFluidMixerRecipe(
+    <liquid:flolit_water> * 1000, 
+    <liquid:honey> * 1000, <liquid:pure_water> * 1000, <contenttweaker:flolit>, 
+    200, 100
+);
+scripts.content_machines.addFluidMixerRecipe(
+    <liquid:flolit_water> * 500, 
+    <liquid:honey> * 1000, <liquid:pure_water> * 1000, <contenttweaker:flolit_plant>, 
+    200, 100
 );
 
 
@@ -330,88 +347,54 @@ for l_food in bug_breeding{
 static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
     //dim, bug, rec time tick, rft, ymin, ymax
     [66, 2000, 20*8, 100, 0, 40]: {
-        <liquid:potion>.withTag({Potion: "minecraft:strength"}) * 1000: [
+        <liquid:flolit_water> * 500: [
             <mekanism:dirtydust> % 20,
-            <mekanism:dirtydust:3> % 18,
-            <mekanism:dirtydust:4> % 15,
+            <mekanism:dirtydust:2> % 18,
+            <mekanism:dirtydust:6> % 15,
 
-            <mekores:mekanismore:33> % 14,
+            <mekores:mekanismore:38> % 14,
 
-            <mekanism:dirtydust:1> % 10,
+            <mekores:mekanismore:23> % 10,
             <mekanism:dirtydust:5> % 10,
             <mekanism:dirtydust:6> % 10,
+            <mekores:mekanismore:108> % 10,
 
             <mekores:mekanismore:268> % 1,
-            <mekores:mekanismore:3> % 1,
-            <thermalfoundation:material:892> % 10,
-
-            
-            <actuallyadditions:item_dust:4> % 8,
-            <actuallyadditions:item_dust:2> % 3,
-            <actuallyadditions:item_dust:3> % 2
-        ],
-        <liquid:potion>.withTag({Potion: "cofhcore:strength4"}) * 1000: [
-            <mekanism:dirtydust> % 10,
-            <mekanism:dirtydust:3> % 9,
-            <mekanism:dirtydust:4> % 7,
-
-            <mekores:mekanismore:33> % 7,
-
-            <mekanism:dirtydust:1> % 5,
-            <mekanism:dirtydust:5> % 5,
-            <mekanism:dirtydust:6> % 5,
-
-            <mekores:mekanismore:268> % 2,
-            <mekores:mekanismore:3> % 2,
-            <thermalfoundation:material:892> % 15,
-
-            <actuallyadditions:item_dust:4> % 16,
-            <actuallyadditions:item_dust:2> % 6,
-            <actuallyadditions:item_dust:3> % 4
+            <thermalfoundation:material:892> % 10
         ]
     },
-    [66, 2500, 20*7, 120, 41, 100]: {
-        <liquid:potion>.withTag({Potion: "minecraft:strength"}) * 1000: [
-            <mekanism:dirtydust> % 18,
-            <mekanism:dirtydust:3> % 16,
-            <mekanism:dirtydust:4> % 13,
+    [66, 2500, 20*7, 120, 41, 90]: {
+        <liquid:flolit_water> * 100: [
+            <erebus:dark_capped_mushroom> % 15,
+            <erebus:sarcastic_czech_mushroom> % 15,
+            <erebus:grandmas_shoes_mushroom> % 15,
+            <erebus:dutch_cap_mushroom> % 15,
+            <erebus:kaizers_fingers_mushroom> % 15,
 
-            <mekores:mekanismore:33> % 12,
-
-            <mekanism:dirtydust:1> % 8,
-            <mekanism:dirtydust:5> % 8,
-            <mekanism:dirtydust:6> % 8,
-
-            <mekores:mekanismore:273> % 10,
+            <erebus:materials:30> % 12,
 
             <contenttweaker:jade_dust> % 5,
             <contenttweaker:malachite_ore_dust> % 7,
-            <erebus:materials:11> % 10
-        ],
-        <liquid:potion>.withTag({Potion: "cofhcore:strength4"}) * 1000: [
-            <mekanism:dirtydust> % 12,
-            <mekanism:dirtydust:3> % 11,
-            <mekanism:dirtydust:4> % 10,
+            <erebus:materials:11> % 10,
 
-            <mekores:mekanismore:33> % 9,
+            <contenttweaker:flolit> % 15
+        ]
+    },
+    [66, 2500, 20*7, 120, 91, 250]: {
+        <liquid:flolit_water> * 100: [
+            <mekanism:dirtydust:3> % 20,
+            <mekanism:dirtydust:5> % 15,
+            <mekores:mekanismore:8> % 4,
+            <contenttweaker:gallium_dirty_dust> % 4,
 
-            <mekanism:dirtydust:1> % 7,
-            <mekanism:dirtydust:5> % 7,
-            <mekanism:dirtydust:6> % 7,
+            <enderio:item_material:33> % 15,
+            <erebus:materials:11> % 20,
 
-            <mekores:mekanismore:273> % 10,
-
-            <contenttweaker:jade_dust> % 10,
-            <contenttweaker:malachite_ore_dust> % 14,
-            <erebus:materials:11> % 15,
-
-            <actuallyadditions:item_dust:4> % 9,
-            <actuallyadditions:item_dust:2> % 5,
-            <actuallyadditions:item_dust:3> % 4
+            <contenttweaker:flolit> % 15
         ]
     }
 };
-/*
+
 var counter as int = 0;
 for stat, fluids in bug_foraging{
     for fluid,loot in fluids{
@@ -441,4 +424,3 @@ for stat, fluids in bug_foraging{
         rec.build();
     }
 }
-*/

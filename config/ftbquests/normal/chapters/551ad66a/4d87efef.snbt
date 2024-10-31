@@ -2,6 +2,7 @@
 	title: "Machine Frame 0.5",
 	x: 8.0d,
 	y: -2.0d,
+	shape: "square",
 	text: [
 		"All machine frames quests will give a quest coin."
 	],
@@ -20,5 +21,25 @@
 		uid: "e877a6e1",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "af188d9f",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "actuallyadditions:block_misc",
+					Count: 1,
+					Damage: 4s
+				},
+				TrophyName: "Frame 0.5",
+				TrophyColorRed: 81,
+				TrophyColorGreen: 48,
+				TrophyColorBlue: 26,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

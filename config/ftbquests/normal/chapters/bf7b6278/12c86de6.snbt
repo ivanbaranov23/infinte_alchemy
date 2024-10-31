@@ -1,0 +1,19 @@
+{
+	title: "I hate this recipe",
+	x: 7.0d,
+	y: -3.0d,
+	text: [
+		"...but i was the who made it."
+	],
+	dependencies: [
+		"05f2e649"
+	],
+	optional: true,
+	tasks: [{
+		uid: "82434ffa",
+		type: "item",
+		items: [{
+			item: "storagedrawers:controller"
+		}]
+	}]
+}

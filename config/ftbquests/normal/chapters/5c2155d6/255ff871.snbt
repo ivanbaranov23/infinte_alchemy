@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"2266a5db"
+	],
+	tasks: [{
+		uid: "11f0a279",
+		type: "item",
+		items: [{
+			item: "contenttweaker:flolit"
+		}]
+	}],
+	rewards: [{
+		uid: "832f2115",
+		type: "item",
+		item: "contenttweaker:flolit",
+		count: 9
+	}]
+}

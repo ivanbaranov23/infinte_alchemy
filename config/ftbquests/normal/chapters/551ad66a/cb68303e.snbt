@@ -16,5 +16,10 @@
 		items: [{
 			item: "contenttweaker:singularity_dust"
 		}]
+	}],
+	rewards: [{
+		uid: "1266efb2",
+		type: "item",
+		item: "contenttweaker:singularity_dust"
 	}]
 }

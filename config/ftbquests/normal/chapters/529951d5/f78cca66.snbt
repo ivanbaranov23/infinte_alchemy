@@ -1,0 +1,93 @@
+{
+	title: "Farm some crops 5",
+	icon: "natura:edibles 1 10",
+	x: -1.0d,
+	y: 4.0d,
+	shape: "diamond",
+	text: [
+		"you can also forage i quess.",
+		"",
+		"Nether eye will grow from the ceiling. It needs some space and it tends to make holes in the floor.",
+		"",
+		"Nether reed wokrs like sugar cane but needs lava instead of water.",
+		"",
+		"Stalagnate needs netherrack on top and on the bottom some number of blocks. You can see in the nether how much they need.",
+		"",
+		"Thornvines spread like vines.",
+		"",
+		"Lucis Spores grow on the wall and it needs 3x1 or more blocks. It can grow into small or large variant. It's blocks are affected by fortune."
+	],
+	dependencies: [
+		"f6d34a4f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0fe83777",
+		type: "item",
+		items: [{
+			item: "betternether:eye_seed"
+		}],
+		count: 64L,
+		consume_items: true
+	},
+	{
+		uid: "67ff04dc",
+		type: "item",
+		items: [{
+			item: "betternether:nether_reed"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "4c3f70ec",
+		type: "item",
+		items: [{
+			item: "betternether:stalagnate_stem"
+		}],
+		count: 128L,
+		consume_items: true
+	},
+	{
+		uid: "fd6288d1",
+		type: "item",
+		items: [{
+			item: "natura:edibles 1 10"
+		}],
+		count: 64L,
+		consume_items: true
+	},
+	{
+		uid: "1fead949",
+		type: "item",
+		items: [{
+			item: "natura:nether_thorn_vines"
+		}],
+		count: 256L,
+		consume_items: true
+	},
+	{
+		uid: "3284b8d9",
+		type: "item",
+		items: [{
+			item: "betternether:ink_bush_seed"
+		}],
+		count: 64L,
+		consume_items: true
+	},
+	{
+		uid: "d157a094",
+		type: "item",
+		items: [{
+			item: "betternether:lucis_spore"
+		}],
+		count: 64L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "972f2a5a",
+		type: "item",
+		item: "contenttweaker:quest_coin",
+		count: 2
+	}]
+}

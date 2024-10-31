@@ -1,0 +1,15 @@
+{
+	x: 2.0d,
+	y: -3.0d,
+	dependencies: [
+		"96744c74"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6575db0a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:creosolon"
+		}]
+	}]
+}

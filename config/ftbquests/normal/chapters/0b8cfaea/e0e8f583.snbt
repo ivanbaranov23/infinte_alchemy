@@ -2,7 +2,7 @@
 	title: "Farm some crops 3",
 	icon: "minecraft:reeds",
 	x: 0.5d,
-	y: 4.0d,
+	y: 3.0d,
 	shape: "diamond",
 	text: [
 		""
@@ -35,7 +35,7 @@
 		items: [{
 			item: "minecraft:melon_block"
 		}],
-		count: 256L,
+		count: 128L,
 		consume_items: true
 	},
 	{
@@ -53,7 +53,7 @@
 		items: [{
 			item: "erebus:materials 1 3"
 		}],
-		count: 256L,
+		count: 64L,
 		consume_items: true
 	}],
 	rewards: [{

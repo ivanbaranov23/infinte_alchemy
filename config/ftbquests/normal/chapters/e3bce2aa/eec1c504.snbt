@@ -1,0 +1,20 @@
+{
+	x: -4.0d,
+	y: 3.0d,
+	dependencies: [
+		"f705a577"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1619db30",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:upgrade 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "757b0fbc",
+		type: "item",
+		item: "thermalfoundation:upgrade 1 1"
+	}]
+}

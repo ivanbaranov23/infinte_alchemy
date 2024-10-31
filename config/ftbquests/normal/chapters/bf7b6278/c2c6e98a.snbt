@@ -1,0 +1,22 @@
+{
+	x: 3.0d,
+	y: -3.0d,
+	text: [
+		"Can be used as lubricant"
+	],
+	dependencies: [
+		"3d7d6eaa"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a2ff87aa",
+		type: "checkmark",
+		title: "Elbow Grease",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "grease"
+			}
+		}
+	}]
+}
