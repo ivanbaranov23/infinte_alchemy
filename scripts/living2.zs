@@ -194,7 +194,7 @@ static animal_type as string[string] = {
 };
 static foods as int[][IItemStack][string] = {
     pilkon: {
-        <contenttweaker:nial_dust>: [10, 20]
+        <thermalfoundation:material:98>: [10, 20]
     },
     crusher: {
         <contenttweaker:crusher_feed>: [15, 25]
@@ -277,19 +277,16 @@ static products as int[IItemStack][string] = {
     chitigic_empress: {}
 };
 static work as IItemStack[IItemStack][string] = {
-    crusher: {
-        <densemetals:dense_iron_ore> * 3: <minecraft:iron_ore> * 5,
-        <densemetals:dense_copper_ore> * 3: <thermalfoundation:ore> * 5,
-        <densemetals:dense_tin_ore> * 3: <thermalfoundation:ore:1> * 5,
-
-        <densemetals:dense_nickel_ore> * 3: <thermalfoundation:ore:5> * 5,
-        <densemetals:dense_zinc_ore> * 3: <contenttweaker:zinc_ore> * 5,
-        <densemetals:dense_aluminum_ore> * 3: <thermalfoundation:ore:4> * 5,
-    },
-
     chitigic_chewer: {
         <prodigytech:meat_ground> * 1: <contenttweaker:chewed_meat> * 1,
-        <contenttweaker:sandworm_gut> * 2: <contenttweaker:chewed_guts> * 1
+        <contenttweaker:sandworm_gut> * 2: <contenttweaker:chewed_guts> * 1,
+        <densemetals:dense_iron_ore> * 20: <minecraft:iron_ore> * 5,
+        <densemetals:dense_copper_ore> * 20: <thermalfoundation:ore> * 5,
+        <densemetals:dense_tin_ore> * 20: <thermalfoundation:ore:1> * 5,
+
+        <densemetals:dense_nickel_ore> * 20: <thermalfoundation:ore:5> * 5,
+        <densemetals:dense_zinc_ore> * 20: <contenttweaker:zinc_ore> * 5,
+        <densemetals:dense_aluminum_ore> * 20: <thermalfoundation:ore:4> * 5,
     },
     chitigic_nursery: {
         <contenttweaker:chitigic_egg> * 20: <contenttweaker:chitigic_drone>.withTag({food:5}) * 1

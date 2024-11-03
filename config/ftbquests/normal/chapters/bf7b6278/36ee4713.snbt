@@ -1,9 +1,15 @@
 {
+	title: "New metals",
 	x: 6.0d,
 	y: -1.0d,
-	dependencies: [
-		"24a16aff"
+	text: [
+		""
 	],
+	dependencies: [
+		"24a16aff",
+		"66d73949"
+	],
+	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "cabba9a7",
 		type: "item",

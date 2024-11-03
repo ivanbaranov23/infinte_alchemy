@@ -387,8 +387,8 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
     Transmutation.addStateToStateRecipe(
         "umbr", 
         StatePredicate.create(<blockstate:biomesoplenty:mud_brick_block>),
-        <blockstate:twilightforest:uberous_soil>, 
-        BlockStateBelow.create(StatePredicate.create(<blockstate:contenttweaker:flower_steel_block>))
+        <blockstate:twilightforest:uberous_soil>,
+        null
     );
 
 
@@ -398,6 +398,13 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
             StatePredicate.create(<blockstate:tconstruct:dried_clay>),
             <blockstate:erebus:ore_temple>, 
             BlockStateBelow.create(StatePredicate.create(<blockstate:erebus:temple_tile>))
+        );
+
+        Transmutation.addStateToStateRecipe(
+            "silver", 
+            StatePredicate.create(<blockstate:natura:overworld_logs:axis=y,type=silverbell>),
+            <blockstate:thermalfoundation:ore:type=silver>,
+            null
         );
     }
 
@@ -431,6 +438,24 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
     Mortar.changeSpell(
         "spell_chrysopoeia",    
         [<roots:runic_dust>, <roots:infernal_bulb>, <darkutils:material>, <tconstruct:edible:3>, <roots:bark_wildwood>]  
+    );
+
+    Mortar.changeSpell(
+        "spell_radiance",    
+        [<prodigytech:ferramic_handbow>, <xreliquary:glowing_water>, <projectred-core:resource_item:504>, <contenttweaker:glowcrystal>, <forge:bucketfilled>.withTag({FluidName: "glass", Amount: 1000})]  
+    );
+
+    Mortar.changeSpell(
+        "spell_sky_soarer",    
+        [<extrautils2:angelblock>, <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}), <roots:mystic_feather>, <mekanism:balloon:*>, <mekanism:balloon:*>]  
+    );
+
+    Mortar.changeSpell(
+        "spell_growth_infusion",    
+        [
+            <minecraft:bone_block>, <thermalfoundation:material:865>, <thermalfoundation:material:865>, 
+            <contenttweaker:fertilizer2>, <mysticalagriculture:fertilized_essence>
+        ]  
     );
 
     Mortar.changeSpell(

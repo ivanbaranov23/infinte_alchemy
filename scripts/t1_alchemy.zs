@@ -109,6 +109,9 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 1000, <liquid
 mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 2000, <liquid:milk> * 2000, [<roots:terra_moss>, <ore:dyeGreen>], 2000);
 mods.alchemistry.Evaporator.addRecipe(<enderio:item_material:48>, <liquid:organic_green> * 250);
 
+//alt t2 ore gen
+mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_osmium>, <tconstruct:edible:1>, <liquid:invar>, 32, true);
+mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_lead>, <minecraft:poisonous_potato>, <liquid:pigiron>, 16, true);
 
 //flolit
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:flolit_dust>, <contenttweaker:flolit>, <liquid:ferramic>, 288, true);

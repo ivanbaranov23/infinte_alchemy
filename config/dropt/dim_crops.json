@@ -1,0 +1,19 @@
+{
+    "rules": [
+        {
+            "match": {
+                "blocks": {"blocks": ["roots:infernal_bulb_crop:7"]},
+                "dimensions": {"ids": [-1]}
+            },
+            "replaceStrategy": "ADD",
+            "drops": [
+                {
+                    
+                    "item": {
+                        "items": ["minecraft:gravel"]
+                    }
+                }
+            ]
+        }
+    ]
+}

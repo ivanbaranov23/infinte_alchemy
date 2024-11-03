@@ -1921,6 +1921,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("bonsai_mushroom_brown").register();
     VanillaFactory.createItem("bonsai_mushroom_red").register();
 
+    VanillaFactory.createItem("nether_pest").register();
+    VanillaFactory.createItem("nitrall").register();
+    VanillaFactory.createItem("dry_dewgonia").register();
 }
 {//prodigy tech
     VanillaFactory.createBlock("ferramic_gravel", <blockmaterial:rock>).register();
