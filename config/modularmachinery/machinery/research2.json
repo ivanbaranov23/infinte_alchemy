@@ -172,7 +172,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "mekanism:plasticblock@15"
+                "modularmachinery:blockenergyinputhatch"
             ]
         },
         {

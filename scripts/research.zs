@@ -55,7 +55,7 @@ function addResearchRecipe(name as string, medium as IItemStack, out as IItemSta
     for inp in input{
         inp.anyAmount().addTooltip(game.localize("ia.tooltip.research") ~ " for \"" + out.displayName + "\", amount: " + (inp.amount as string));
         //out.addTooltip(inp.displayName + " x" + (inp.amount as string));
-        oreDict["research" ~ name].add(inp * 1);
+        //oreDict["research" ~ name].add(inp * 1);
     }
 
     for i in 0 to (input.length - 2){
@@ -87,6 +87,70 @@ function addResearchRecipe(name as string, medium as IItemStack, out as IItemSta
             }
         }
     }
+}
+function addAdvancedResearchRecipe(name as string, medium as IItemStack, out as IItemStack, input as IItemStack[], energy as int, time as int){
+    out.addTooltip("Researched in Advanced Research Station multiblock.");
+    out.addTooltip("Research medium is " ~ medium.displayName ~ ", amount: " ~ medium.amount);
+    out.addTooltip("One research attempt lasts about " ~ time / 20 ~ " seconds at " ~ energy ~ " rf/tick");
+    
+
+    recipes.addShapeless(
+        "ia_research_dup_" + out.name,
+        out * 2,
+        [out, medium * 1, medium * 1, medium * 1, medium * 1, medium * 1]
+    );
+    
+    for inp in input{
+        inp.anyAmount().addTooltip(game.localize("ia.tooltip.research") ~ " for \"" + out.displayName + "\", amount: " + (inp.amount as string));
+        //out.addTooltip(inp.displayName + " x" + (inp.amount as string));
+        //oreDict["research" ~ name].add(inp * 1);
+    }
+
+    for i1 in 0 to (input.length - 7)
+    for i2 in (i1 + 1) to (input.length - 6)
+    for i3 in (i2 + 1) to (input.length - 5)
+    for i4 in (i3 + 1) to (input.length - 4)
+    for i5 in (i4 + 1) to (input.length - 3)
+    for i6 in (i5 + 1) to (input.length - 2)
+    for i7 in (i6 + 1) to (input.length - 1)
+    for i8 in (i7 + 1) to (input.length)            
+    {
+        var rec = RecipeBuilder.newBuilder(
+                    "research_" ~ out.name ~ "_" ~ i1 ~ "_" ~ i2 ~ "_" ~ i3 ~ "_" ~ i4 ~ "_" ~ i5 ~ "_" ~ i6 ~ "_" ~ i7 ~ "_" ~ i8, 
+                    "research2", time);
+
+        rec.addItemInput(medium);
+        rec.addItemInput(input[i1]);
+        rec.addItemInput(input[i2]);
+        rec.addItemInput(input[i3]);
+        rec.addItemInput(input[i4]);
+        rec.addItemInput(input[i5]);
+        rec.addItemInput(input[i6]);
+        rec.addItemInput(input[i7]);
+        rec.addItemInput(input[i8]);
+
+        rec.addEnergyPerTickInput(energy);
+
+        if (i1+i2+i3+i4+i5+i6+i7+i8 == 0+1+2+3+4+5+6+7){
+            rec.addItemOutput(out);
+        }else{
+            var score as int = 0;
+            score += (i1 < 8)?1:0;
+            score += (i2 < 8)?1:0;
+            score += (i3 < 8)?1:0;
+            score += (i4 < 8)?1:0;
+            score += (i5 < 8)?1:0;
+            score += (i6 < 8)?1:0;
+            score += (i7 < 8)?1:0;
+            score += (i8 < 8)?1:0;
+            //>
+
+            rec.addItemOutput(<minecraft:paper>.withDisplayName("Failed Research Paper").withLore([(score as string) + " ingredients are correct"]));
+        }
+        rec.build();
+    }
+        
+    
 }
 
 
@@ -189,6 +253,22 @@ addResearchRecipe("Fluids", <minecraft:paper>, <contenttweaker:research_fluids>,
     ],
     128, 20*20
 );
+
+
+addAdvancedResearchRecipe("Singularity", <contenttweaker:singularity_dust> * 16, <contenttweaker:research_singularity>, [
+    <extendedcrafting:singularity_custom:100> * 64,
+    <contenttweaker:neuro_singularity> * 2,
+    <contenttweaker:fiery_singularity> * 8,
+    <extendedcrafting:singularity_custom:19> * 3,
+    <extendedcrafting:singularity_custom:28> * 12,
+    <extendedcrafting:singularity_custom:50>,
+    <extendedcrafting:singularity_custom:65> * 2,
+    <extendedcrafting:singularity:48> * 8,
+    <extendedcrafting:singularity_custom:51>,
+    <extendedcrafting:singularity:49> * 8,
+    <extendedcrafting:singularity_custom:21> * 3
+], 10000, 20 * 30);
+
 /*addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,
     [
         <forge:bucketfilled>.withTag({FluidName: "anti_venom", Amount: 1000}),

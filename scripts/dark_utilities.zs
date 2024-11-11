@@ -12,3 +12,9 @@ recipes.addShaped("ia_ender_hopper", <darkutils:ender_hopper>, [
 	[<roots:runed_obsidian>, <minecraft:hopper>, <roots:runed_obsidian>]
 ]);
 
+recipes.remove(<darkutils:trap_move>);
+recipes.addShaped("ia_trap_move", <darkutils:trap_move> * 24, [
+	[<immersiveengineering:conveyor>, <immersiveengineering:conveyor>, <immersiveengineering:conveyor>], 
+	[<immersiveengineering:conveyor>, <contenttweaker:awaken_witherite>, <immersiveengineering:conveyor>], 
+	[<immersiveengineering:conveyor>, <immersiveengineering:conveyor>, <immersiveengineering:conveyor>]
+]);

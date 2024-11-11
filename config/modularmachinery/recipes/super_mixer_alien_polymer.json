@@ -25,6 +25,12 @@
         {
             "type": "item",
             "io-type": "input",
+            "item": "industrialforegoing:plastic@0",
+            "amount": 32
+        },
+        {
+            "type": "item",
+            "io-type": "input",
             "item": "contenttweaker:alien_bacteria@0",
             "amount": 1
         },

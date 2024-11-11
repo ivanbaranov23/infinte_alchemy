@@ -152,6 +152,8 @@ static livings as IItemStack[string] = {
     hair_thing: <contenttweaker:lv_hair_thing>,
     baby_hair_thing: <contenttweaker:lv_baby_hair_thing>,
 
+    nitrall: <contenttweaker:nitrall>,
+
     zanite_frog: <contenttweaker:lv_zanite_frog>,
 
     blood_slime: <contenttweaker:lv_blood_slime>,
@@ -177,6 +179,8 @@ static animal_type as string[string] = {
 
     hair_thing: "f1l",
     baby_hair_thing: "f1",
+
+    nitrall: "f1",
 
     zanite_frog: "f1",
 
@@ -217,6 +221,10 @@ static foods as int[][IItemStack][string] = {
         <projectred-core:resource_item:301>: [10, 30]
     },
 
+    nitrall: {
+        <contenttweaker:nether_pest>: [10, 20]
+    },
+
     zanite_frog: {
         <contenttweaker:zanite_frog_feed>: [10, 40]
     },
@@ -254,6 +262,10 @@ static products as int[IItemStack][string] = {
         <contenttweaker:hair_ball>: 25
     },
     baby_hair_thing: {},
+
+    nitrall: {
+        <contenttweaker:nitrall>: 50
+    },
 
     zanite_frog: {
         <contenttweaker:zanite_frog_leg>: 25

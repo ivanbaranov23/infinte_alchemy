@@ -469,6 +469,23 @@ import mods.modularmachinery.RecipeBuilder;
 		20, 4000
 	);
 }
+{//motor
+	recipes.remove(<projectred-core:resource_item:410>);
+	recipes.addShaped("ia_pr_motor", <projectred-core:resource_item:410>, [
+		[<contenttweaker:simple_motor>, <contenttweaker:simple_motor>, <contenttweaker:simple_motor>], 
+		[<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), <thermalfoundation:material:515>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})], 
+		[<projectred-core:resource_item:401>, <contenttweaker:tignalum_gear>, <projectred-core:resource_item:400>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<projectred-core:resource_item:410> * 2],
+		[
+			<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 2, <thermalfoundation:material:515>,
+			<projectred-core:resource_item:401>, <contenttweaker:tignalum_gear>, <projectred-core:resource_item:400>, 
+			<contenttweaker:simple_motor> * 4
+		],
+		<liquid:mekanized_steel> * 144, 20, 256
+	);
+}
 
 scripts.content_machines.addAssemblerRecipe(
 	[<contenttweaker:nuke>], 

@@ -5,8 +5,8 @@ import mods.mekanism.chemical.oxidizer;
 //frame
 recipes.remove(<mekanism:basicblock:8>);
 recipes.addShaped("ia_machine_frame4", <mekanism:basicblock:8>, [
-	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:atum_godshard>, <contenttweaker:mekanized_steel_plate>], 
-	[<contenttweaker:watertight_steel_rod>, <thermalexpansion:frame>, <contenttweaker:watertight_steel_rod>], 
+	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:eliamondin>, <contenttweaker:mekanized_steel_plate>], 
+	[<contenttweaker:atum_godshard>, <thermalexpansion:frame>, <contenttweaker:atum_godshard>], 
 	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:mekanical_core>, <contenttweaker:mekanized_steel_plate>]
 ]);
 
@@ -171,11 +171,11 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 		recipes.addShaped("ia_met_infuser", <mekanism:machineblock:8>, [
 			[<contenttweaker:mushroomite_gear>, <contenttweaker:mushroomite_gear>, null], 
 			[<mekanism:basicblock:8>, <tconstruct:casting>, <contenttweaker:mekanized_steel_rod>], 
-			[<immersiveengineering:material:9>, <thermalfoundation:material:513>, <contenttweaker:mekanized_steel_rod>]
+			[<contenttweaker:eliamondin>, <thermalfoundation:material:513>, <contenttweaker:mekanized_steel_rod>]
 		]);
 		recipes.remove(<mekanism:machineblock:1>);
 		recipes.addShaped("ia_osmium_compressor", <mekanism:machineblock:1>, [
-			[<ore:blockOsmium>, <contenttweaker:mekanized_steel_block>, <ore:blockOsmium>], 
+			[<contenttweaker:eliamondin>, <contenttweaker:mekanized_steel_block>, <contenttweaker:eliamondin>], 
 			[<ore:alloyElite>, <mekanism:basicblock:8>, <ore:alloyElite>], 
 			[<contenttweaker:mekanized_steel_plate>, <ore:gearOsmium>, <contenttweaker:mekanized_steel_plate>]
 		]);
@@ -189,8 +189,8 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 		recipes.remove(<mekanism:machineblock:3>);
 		recipes.addShaped("ia_mek_crusher", <mekanism:machineblock:3>, [
 			[<contenttweaker:mekanized_steel_gear>, <thermalfoundation:material:656>, <contenttweaker:mekanized_steel_gear>], 
-			[<ore:alloyElite>, <mekanism:basicblock:8>, <ore:alloyElite>], 
-			[<contenttweaker:mekanized_steel_gear>, <ore:gearOsgloglas>, <contenttweaker:mekanized_steel_gear>]
+			[<contenttweaker:eliamondin>, <mekanism:basicblock:8>, <contenttweaker:eliamondin>], 
+			[<ore:alloyElite>, <ore:gearOsgloglas>, <ore:alloyElite>]
 		]);
 		recipes.remove(<mekanism:machineblock2:5>);
 		recipes.addShaped("ia_mek_sawmill", <mekanism:machineblock2:5>, [

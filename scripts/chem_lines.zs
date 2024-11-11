@@ -788,6 +788,36 @@ scripts.helper.scripts.content_machines.addFluidMixerRecipe(
     mods.mekanism.compressor.addRecipe(<mekores:mekanismore:36>, <gas:black_slurp>, <exnihilocreatio:item_ore_tungsten>);
 }
 
+{//eliamondin
+    recipes.addShapeless("ia_eliamondin1", <contenttweaker:eliamondin_dust> * 2, [
+        <thermalfoundation:material:102>,
+        <contenttweaker:montu_godshard>,
+        <taiga:terrax_dust>,
+        <mekanism:otherdust>
+    ]);
+    recipes.addShapeless("ia_eliamondin2", <contenttweaker:eliamondin_dust> * 3, [
+        <thermalfoundation:material:102>,
+        <contenttweaker:montu_godshard>,
+        <taiga:terrax_dust>,
+        <mekanism:otherdust>,
+        <thermalfoundation:material:832>, <thermalfoundation:material:832>
+    ]);
+    recipes.addShapeless("ia_eliamondin3", <contenttweaker:eliamondin_dust> * 3, [
+        <thermalfoundation:material:102>,
+        <contenttweaker:montu_godshard>,
+        <taiga:terrax_dust>,
+        <mekanism:otherdust>,
+        <contenttweaker:gelatin>
+    ]);
+
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:eliamondin>, 
+        <contenttweaker:eliamondin_dust>, <contenttweaker:slimy_glass>, 
+        5000
+    );
+
+}
+
 {//glass fiber
     recipes.addShaped("ia_glass_fiber_materials", <contenttweaker:glass_fiber_materials>, [
         [<minecraft:bucket>, <biomesoplenty:white_sand>, <atum:sand>], 
@@ -818,7 +848,7 @@ scripts.helper.scripts.content_machines.addFluidMixerRecipe(
 
 
 {//super glue
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:nacn>], [],
         [
             <contenttweaker:naoh>
@@ -829,7 +859,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
         20, 500
     );
 
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [
             <mekanism:salt>
         ], [
@@ -853,6 +883,15 @@ scripts.content_machines.addAdvancedMixerRecipe(
         <contenttweaker:superglue> * 8, 
         <industrialforegoing:dryrubber>, <appliedenergistics2:material:5>, <liquid:cyanoacrylate> * 1000, 
         512, 40
+    );
+}
+
+{//msg
+    mods.thermalexpansion.Imbuer.addRecipe(<liquid:glutamic_acid> * 1000, <contenttweaker:bacteria>, <liquid:glucose> * 1000, 40000);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:msg>,
+        <contenttweaker:naoh>, <liquid:glutamic_acid> * 500,
+        20000
     );
 }
 
@@ -896,7 +935,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
 
 }
 {//paper
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:chad>], [],
         [
             <minecraft:paper> * 4,
@@ -906,7 +945,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <liquid:ultrapure_water> * 800
         ], 20, 1000
     );
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:chad2> * 2], [],
         [
             <contenttweaker:chad>,
@@ -924,7 +963,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
     );
     mods.mekanism.reaction.addRecipe(
         <contenttweaker:space_paper_base>, <liquid:vapor_of_levity> * 200, <gas:polyethylene> * 4000, 
-        <contenttweaker:space_paper>, <gas:waste_gas> * 500, 900, 60
+        <contenttweaker:space_paper>, <gas:waste_gas> * 50, 900, 60
     );
 }
 {//tartaric acid
@@ -1142,14 +1181,14 @@ scripts.content_machines.addAdvancedMixerRecipe(
     }
 
 
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:hot_chitin>],
         [<liquid:chitin_grade5> * 200],
         [<contenttweaker:mekanized_steel_ingot> * 4, <thermalfoundation:material:136>, <taiga:fractum_ingot> * 4, <alchemistry:ingot:3> * 8],
         [<liquid:chitin_grade1> * 1000, <liquid:chitin_grade2> * 1000, <liquid:chitin_grade3> * 1000, <liquid:high_heat_lava> * 100],
         20, 2048
     );
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:hot_chitin>],
         [<liquid:chitin_grade1> * 200],
         [<contenttweaker:mekanized_steel_ingot> * 4, <thermalfoundation:material:136>, <taiga:fractum_ingot> * 4, <alchemistry:ingot:3> * 8],

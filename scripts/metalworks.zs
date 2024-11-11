@@ -1617,6 +1617,10 @@ static all_metals as IItemStack[string][string] = {
 
         singularity: <extendedcrafting:singularity:4>
     },
+    glowcrystal: {
+        ingot: <contenttweaker:glowcrystal>,
+        block: <contenttweaker:glowcrystal> * 9
+    },
     silicon: {
         ingot: <appliedenergistics2:material:5>,
         block: <appliedenergistics2:material:5> * 9,
@@ -2048,7 +2052,7 @@ function add2alloy(
             [
                 all_metals[metal1].ingot * n1,
                 all_metals[metal2].ingot * n2
-            ], 4000 * (alloy_level + 1)
+            ], 5000 * (alloy_level + 1)
         );
     }
 
@@ -2109,7 +2113,7 @@ function add3alloy(
             all_metals[metal1].ingot * n1,
             all_metals[metal2].ingot * n2,
             all_metals[metal3].ingot * n3
-        ], 5000 * (alloy_level + 1)
+        ], 8000 * (alloy_level + 1)
     );
 
     scripts.helper.addHighOvenAlloy(
@@ -2543,6 +2547,12 @@ add3alloy(1, "flower_steel", 4,
             "electric_steel", 2,
             "red_alloy", 1,
             "conductive_iron", 3
+        );
+
+        add3alloy(1, "lumium", 4,
+            "tin", 3,
+            "silver", 1,
+            "glowcrystal", 3
         );
     }
 

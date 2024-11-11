@@ -664,6 +664,7 @@ item.contenttweaker.fluxed_invar_plate.name=Fluxed Invar Plate
 item.contenttweaker.fluxed_invar_gear.name=Fluxed Invar Gear
 tile.contenttweaker.fluxed_invar_block.name=Block of Fluxed Invar
 
+item.contenttweaker.moon_dust.name=Moon Dust
 item.contenttweaker.moon_ingot.name=Moon Metal Ingot
 item.contenttweaker.moon_plate.name=Moon Metal Plate
 item.contenttweaker.moon_gear.name=Moon Metal Gear
@@ -1053,7 +1054,11 @@ tile.contenttweaker.potato_block5.name=Quintuple Compressed Potato Block
 
 
 
+item.contenttweaker.neutronium_mirror.name=Simple Neutron Reflector
+item.contenttweaker.neutronium_mirror2.name=BC-Ir Neutron Reflector
 
+fluid.glutamic_acid=Glutamic Acid
+item.contenttweaker.msg.name=Monosodium Glutamate
 
 item.contenttweaker.jade_dust.name=Jade Dust
 item.contenttweaker.irradiated_compound.name=Irradiated Compound

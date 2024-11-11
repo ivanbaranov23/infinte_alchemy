@@ -1,7 +1,7 @@
 {
 	title: "TE alloys",
 	x: -3.0d,
-	y: 1.0d,
+	y: -1.0d,
 	text: [
 		""
 	],

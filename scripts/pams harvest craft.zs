@@ -211,6 +211,14 @@ Centrifuge.addRecipe(
     }
 }
 
+{//burger
+    recipes.remove(<harvestcraft:hamburgeritem>);
+    recipes.addShapeless("ia_burger", <harvestcraft:hamburgeritem>, [
+        <harvestcraft:cuttingboarditem>.reuse(),
+        <harvestcraft:toastitem>, <prodigytech:meat_patty>, <contenttweaker:msg>, <harvestcraft:ketchupitem>
+    ]);
+}
+
 {//rice
     recipes.remove(<actuallyadditions:item_misc:9>);
     recipes.addShapeless("ia_rice_dough1", <actuallyadditions:item_misc:9> * 2, [

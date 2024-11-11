@@ -256,6 +256,10 @@ function addAtomicResource(name as string){
     mushroomite_mud.setToolClass("shovel");
     mushroomite_mud.register();
 
+    //eliamondin
+    VanillaFactory.createItem("eliamondin_dust").register();
+    VanillaFactory.createItem("eliamondin").register();
+
     //meka steel
     VanillaFactory.createItem("mekanized_steel_base_ingot").register();
     registerMetal("mekanized_steel");
@@ -1612,6 +1616,10 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
     VanillaFactory.createFluid("colagen", Color.fromHex("6da6a0")).register();
     VanillaFactory.createItem("gelatin_noodle").register();
     VanillaFactory.createItem("gelatin").register();
+
+    //msg
+    VanillaFactory.createFluid("glutamic_acid", Color.fromHex("bd3ca0")).register();
+    VanillaFactory.createItem("msg").register();
 }
 {//plant 'n stuff
     VanillaFactory.createBlock("potato_block1", <blockmaterial:rock>).register();
@@ -1922,7 +1930,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("bonsai_mushroom_red").register();
 
     VanillaFactory.createItem("nether_pest").register();
-    VanillaFactory.createItem("nitrall").register();
+    add_living("nitrall");
+    VanillaFactory.createItem("nitrall_feed").register();
     VanillaFactory.createItem("dry_dewgonia").register();
 }
 {//prodigy tech
@@ -2124,6 +2133,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
         VanillaFactory.createItem("biomaterial1").register();
         VanillaFactory.createItem("neuromass1").register();
+        VanillaFactory.createItem("gemmed_biomass").register();
         
         VanillaFactory.createItem("skymass1").register();
         VanillaFactory.createItem("bloodmass1").register();

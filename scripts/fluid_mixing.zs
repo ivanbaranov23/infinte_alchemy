@@ -13,3 +13,6 @@ FITweaker.addRecipe(<liquid:lava>, false, <liquid:blueslime>, <contenttweaker:bu
 
 FITweaker.addRecipe(<liquid:organic_green>, false, <liquid:andesite>, <minecraft:mossy_cobblestone>.asBlock());
 FITweaker.addRecipe(<liquid:andesite>, false, <liquid:organic_green>, <minecraft:mossy_cobblestone>.asBlock());
+
+FITweaker.addRecipe(<liquid:ash_solution>, false, <liquid:andesite>, <quark:limestone>.asBlock());
+FITweaker.addRecipe(<liquid:andesite>, false, <liquid:ash_solution>, <quark:limestone>.asBlock());
