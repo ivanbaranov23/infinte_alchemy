@@ -264,7 +264,7 @@ static products as int[IItemStack][string] = {
     baby_hair_thing: {},
 
     nitrall: {
-        <contenttweaker:nitrall>: 50
+        <contenttweaker:nitrall>.withTag({food: 30}): 50
     },
 
     zanite_frog: {
@@ -288,20 +288,22 @@ static products as int[IItemStack][string] = {
     chitigic_queen: {},
     chitigic_empress: {}
 };
-static work as IItemStack[IItemStack][string] = {
+static work as int[][IItemStack[]][string] = {
     chitigic_chewer: {
-        <prodigytech:meat_ground> * 1: <contenttweaker:chewed_meat> * 1,
-        <contenttweaker:sandworm_gut> * 2: <contenttweaker:chewed_guts> * 1,
-        <densemetals:dense_iron_ore> * 20: <minecraft:iron_ore> * 5,
-        <densemetals:dense_copper_ore> * 20: <thermalfoundation:ore> * 5,
-        <densemetals:dense_tin_ore> * 20: <thermalfoundation:ore:1> * 5,
+        [<prodigytech:meat_ground>, <contenttweaker:chewed_meat> * 1]: [5, 10],
+        [<contenttweaker:sandworm_gut>, <contenttweaker:chewed_guts> * 1]: [5, 10],
+        [<densemetals:dense_iron_ore>, <minecraft:iron_ore> * 5]: [20, 100],
+        [<densemetals:dense_copper_ore>, <thermalfoundation:ore> * 5]: [20, 100],
+        [<densemetals:dense_tin_ore>, <thermalfoundation:ore:1> * 5]: [20, 100],
 
-        <densemetals:dense_nickel_ore> * 20: <thermalfoundation:ore:5> * 5,
-        <densemetals:dense_zinc_ore> * 20: <contenttweaker:zinc_ore> * 5,
-        <densemetals:dense_aluminum_ore> * 20: <thermalfoundation:ore:4> * 5,
+        [<densemetals:dense_nickel_ore>, <thermalfoundation:ore:5> * 5]: [20, 100],
+        [<densemetals:dense_zinc_ore>, <contenttweaker:zinc_ore> * 5]: [20, 100],
+        [<densemetals:dense_aluminum_ore>, <thermalfoundation:ore:4> * 5]: [20, 100],
+
+        [<contenttweaker:nitrall>, <contenttweaker:nitrall_feed> * 4]: [10, 200]
     },
     chitigic_nursery: {
-        <contenttweaker:chitigic_egg> * 20: <contenttweaker:chitigic_drone>.withTag({food:5}) * 1
+        [<contenttweaker:chitigic_egg>, <contenttweaker:chitigic_drone>.withTag({food:5}) * 1]: [20, 50]
     }
 };
 static reproduction as int[IItemStack][string] = {
@@ -415,16 +417,21 @@ function add_f1(name as string) as string[]{
 
     //work
     if work has name{
+        //int[][IItemStack[]][string]
         info += "Will turn:";
-        for inp in work[name]{
-            info += "   " ~ inp.displayName ~ " into " ~ work[name][inp].displayName ~ " costing " ~ inp.amount ~ " food points.";
-            recipes.addShapeless(name ~ "_work_" ~ inp.name, work[name][inp],
+        for inp,cost in work[name]{
+            info += "   " ~ inp[0].displayName ~ " into " ~ inp[1].displayName ~ " costing between" ~ cost[0] ~ "and" ~ cost[1] ~ " food points.";
+            recipes.addShapeless(name ~ "_work_" ~ inp[0].name, inp[1],
                 [livings[name].only(isAlive).transformNew(function(item){
+                    var range as int = cost[1] - cost[0] + 1;
+                    var value as int = ((Math.floor(Math.random() * range) + cost[0]) as IData).asInt();
+                
                     return item.withTag( {
-                        food: item.tag.food.asInt() - inp.amount,
+
+                        food: item.tag.food.asInt() - value,
                         
                     } );
-                }), inp * 1]
+                }), inp[0]]
             );
         }
     }
@@ -536,16 +543,21 @@ function add_f1l(name as string) as string[]{
         }
     }*/
     if work has name{
+        //int[][IItemStack[]][string]
         info += "Will turn:";
-        for inp in work[name]{
-            info += "   " ~ inp.displayName ~ " into " ~ work[name][inp].displayName ~ " costing " ~ inp.amount ~ " food points.";
-            recipes.addShapeless(name ~ "_work_" ~ inp.name, work[name][inp],
+        for inp,cost in work[name]{
+            info += "   " ~ inp[0].displayName ~ " into " ~ inp[1].displayName ~ " costing between" ~ cost[0] ~ "and" ~ cost[1] ~ " food points.";
+            recipes.addShapeless(name ~ "_work_" ~ inp[0].name, inp[1],
                 [livings[name].only(isAlive).transformNew(function(item){
+                    var range as int = cost[1] - cost[0] + 1;
+                    var value as int = ((Math.floor(Math.random() * range) + cost[0]) as IData).asInt();
+                
                     return item.withTag( {
-                        food: item.tag.food.asInt() - inp.amount,
+
+                        food: item.tag.food.asInt() - value,
                         lifespan: item.tag.lifespan.asInt() - 1
                     } );
-                }), inp * 1]
+                }), inp[0]]
             );
         }
     }

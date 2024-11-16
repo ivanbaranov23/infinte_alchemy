@@ -18,7 +18,11 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .output(item('minecraft:slime_ball'))
         .register()
 
-
+inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('water'))
+        .input(item('deepmoblearning:soot_covered_redstone') * 4)
+        .output(item('minecraft:redstone'))
+        .register()
 
 
 inWorldCrafting.fluidToItem.recipeBuilder()

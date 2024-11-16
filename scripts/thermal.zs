@@ -354,11 +354,11 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 	recipes.addShaped("ia_te_kit3", <thermalfoundation:upgrade:2>, [
 		[null, <redstonearsenal:material:224>, null], 
 		[<ore:blockSignalum>, <contenttweaker:mekanical_core>, <ore:blockSignalum>], 
-		[<contenttweaker:thermal_dust>, <contenttweaker:osgloridium_gear>, <contenttweaker:thermal_dust>]
+		[<contenttweaker:thermal_dust>, <contenttweaker:ra_burner>, <contenttweaker:thermal_dust>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<thermalfoundation:upgrade:2> * 2],
-		[<redstonearsenal:material:224>, <ore:blockSignalum>, <contenttweaker:mekanical_core>, <contenttweaker:osgloridium_gear>],
+		[<redstonearsenal:material:224>, <ore:blockSignalum>, <contenttweaker:mekanical_core>, <contenttweaker:ra_burner>],
 		<liquid:thermal> * 144,
 		20, 128
 	);

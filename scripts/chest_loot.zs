@@ -63,7 +63,7 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
         crate_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:34>, 5);
         crate_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:35>, 1);
 
-        addLootTable("atum:chests/crate", 0, 2, {<contenttweaker:desert_pollen>: 1});
+        addLootTable("atum:chests/crate", 1, 5, {<contenttweaker:desert_pollen>: 1});
         
     }
 
@@ -95,7 +95,7 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
         pyramid_chest_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:34>, 5);
         pyramid_chest_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:35>, 1);
 
-        addLootTable("atum:chests/pyramid_chest", 0, 2, {<contenttweaker:desert_pollen>: 1});
+        addLootTable("atum:chests/pyramid_chest", 1, 4, {<contenttweaker:desert_pollen>: 1});
     }
 
     addLootTable("atum:chests/girafi_tomb", 0, 5, {<contenttweaker:desert_pollen>: 1});
@@ -112,7 +112,7 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
         <thermalfoundation:material:167>: 5,
         <twilightforest:fiery_ingot>: 4,
         <contenttweaker:electric_manyullyn_ingot>: 5,
-        <contenttweaker:nitrall>: 1
+        <contenttweaker:nitrall>.withTag({food: 30}): 1
     });
 }
 

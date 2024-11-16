@@ -105,7 +105,7 @@ import mods.modularmachinery.RecipeBuilder;
 			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
 			[<ore:listAllfishraw>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
 		]);
-		recipes.addShaped("fishy_capacitor2", <contenttweaker:fishy_capacitor> * 4, [
+		recipes.addShaped("fishy_capacitor2", <contenttweaker:fishy_capacitor> * 6, [
 			[<immersiveengineering:material:26>, <ore:listAllfishraw>, <contenttweaker:activated_green_fish>], 
 			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
 			[<contenttweaker:activated_green_fish>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
@@ -243,12 +243,6 @@ import mods.modularmachinery.RecipeBuilder;
 		<liquid:cold_nitrogen> * 1000, 20, 256
 	);
 
-	recipes.addShaped("ia_crucible", <contenttweaker:crucible>, [
-		[<contenttweaker:high_heat_glass>, <exnihilocreatio:block_crucible:1>, <contenttweaker:high_heat_glass>], 
-		[<contenttweaker:high_heat_glass>, <enderio:block_tank:1>, <contenttweaker:high_heat_glass>], 
-		[<contenttweaker:tungsten_plate>, <contenttweaker:chrome_block>, <contenttweaker:tungsten_plate>]
-	]);
-
 	//pressure cutter
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:pressure_cutter>],
@@ -261,6 +255,18 @@ import mods.modularmachinery.RecipeBuilder;
 		],
 		<liquid:watertight_steel> * (144 * 8), 20, 256
 	);
+}
+{//burner
+	recipes.addShaped("ia_ra_burner", <contenttweaker:ra_burner>, [
+		[null, <atum:heart_of_ra>, null], 
+		[<contenttweaker:mekanized_steel_rod>, <contenttweaker:cacti_foci>, <contenttweaker:mekanized_steel_rod>], 
+		[<projectred-transmission:wire>, <extrautils2:machine>, <projectred-transmission:wire>]
+	]);
+	recipes.addShaped("ia_crucible", <contenttweaker:crucible>, [
+		[<contenttweaker:high_heat_glass>, <exnihilocreatio:block_crucible:1>, <contenttweaker:high_heat_glass>], 
+		[<contenttweaker:tungsten_plate>, <enderio:block_tank:1>, <contenttweaker:tungsten_plate>], 
+		[<contenttweaker:chrome_block>, <contenttweaker:ra_burner>, <contenttweaker:chrome_block>]
+	]);
 }
 
 

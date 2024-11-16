@@ -19,6 +19,11 @@ recipes.addShaped("mm_garden_cloche_controller", <modularcontroller:garden_cloch
 	[<botania:fertilizer>, <immersiveengineering:metal_decoration0:5>, <botania:fertilizer>], 
 	[<ore:plankTreatedWood>, <extendedcrafting:singularity_custom:100>, <ore:plankTreatedWood>]
 ]);
+recipes.addShaped("mm_heat_engine_controller", <modularcontroller:heat_engine_controller>, [
+	[<immersiveengineering:metal_decoration0:7>, <prodigytech:energion_aeroheater>, <immersiveengineering:metal_decoration0:7>], 
+	[<prodigytech:heat_capacitor_1>, <extrautils2:machine>, <prodigytech:heat_capacitor_1>], 
+	[<immersiveengineering:metal_decoration0:7>, <prodigytech:energion_aeroheater>, <immersiveengineering:metal_decoration0:7>]
+]);
 
 //XU
 recipes.addShaped("mm_research_station_controller", <modularcontroller:research_station_controller>, [
@@ -216,5 +221,20 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:satellite_la
 	rec.addFluidInput(<liquid:rocket_fuel> * 10000);
 	
 
+	rec.build();
+}
+
+//draconic
+{//
+    var rec = RecipeBuilder.newBuilder("donut_controller", "space_assembler", 200);
+	rec.addEnergyPerTickInput(10 * 1000 * 1000);
+
+    rec.addFluidInput(<liquid:circuit> * 10000);
+
+    rec.addItemInput(<mekanism:machineblock3:1> * 64);
+    rec.addItemInput(<contenttweaker:neutronium_mirror2> * 16);
+	rec.addItemInput(<contenttweaker:laser> * 24);
+    
+    rec.addItemOutput(<modularcontroller:donut_controller>);
 	rec.build();
 }

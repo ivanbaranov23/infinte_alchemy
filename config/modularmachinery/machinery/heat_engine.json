@@ -5,6 +5,39 @@
     "parts": [
         {
             "x": -1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "engineersdecor:thick_steel_pole@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "engineersdecor:thick_steel_pole@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "engineersdecor:thick_steel_pole@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "engineersdecor:thick_steel_pole@0"
+            ]
+        },
+
+        {
+            "x": -1,
             "y": 0,
             "z": 2,
             "elements": [
@@ -195,22 +228,10 @@
                 "immersiveengineering:metal_decoration0@7"
             ]
         },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 0,
-            "elements": [
-                "betternether:cincinnasite_wall@0"
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "betternether:cincinnasite_wall@0"
-            ]
-        },
+
+        
+
+        
         {
             "x": -1,
             "y": 3,
@@ -227,14 +248,8 @@
                 "immersiveengineering:metal_decoration0@7"
             ]
         },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 0,
-            "elements": [
-                "betternether:cincinnasite_wall@0"
-            ]
-        },
+
+        
         {
             "x": -1,
             "y": 3,
@@ -251,14 +266,8 @@
                 "immersiveengineering:metal_decoration0@2"
             ]
         },
-        {
-            "x": -1,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "betternether:cincinnasite_wall@0"
-            ]
-        },
+
+        
         {
             "x": 0,
             "y": 1,

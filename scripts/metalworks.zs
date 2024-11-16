@@ -2457,6 +2457,7 @@ add3alloy(1, "flower_steel", 4,
         <contenttweaker:malachite_polycrystal>, 
         120, 80
     );
+    mods.thermalexpansion.Imbuer.addRecipe(<liquid:malachite_glue> * 1000, <contenttweaker:gelatin>, <liquid:rich_malachite_solution> * 250, 4000);
 
     mods.tconstruct.Casting.addTableRecipe(<contenttweaker:compound_metal>, <contenttweaker:compound_metal_stack>, <liquid:electrical_steel>, 288, true);
     TEAlloyer.addRecipe(

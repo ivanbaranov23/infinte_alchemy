@@ -119,15 +119,15 @@ Distillation.addRecipe(
 	[<liquid:pure_water> * 10, <liquid:water> * 70], 
 	[<actuallyadditions:item_dust:7>, <exnihilocreatio:item_material:3>], 
 	<liquid:witchwater> * 100, 3 * 20 * 128, 3 * 20, 
-	[0.07, 0.15]
+	[0.07, 0.04]
 );
 
 {//lavas
 	Distillation.addRecipe(
 		[<liquid:obsidian> * 60, <liquid:iron> * 12, <liquid:gold> * 4, <liquid:lava_residue> * 2], 
-		[<chisel:basalt>, <deepmoblearning:soot_covered_redstone>], 
+		[<chisel:basalt2:7>, <deepmoblearning:soot_covered_redstone>], 
 		<liquid:lava> * 100, 1200, 50, 
-		[0.07, 0.05]
+		[0.07, 0.03]
 	);
 
 	//nitronite

@@ -6,7 +6,7 @@
         {
             "type": "energy",
             "io-type": "output",
-            "energyPerTick": 5000
+            "energyPerTick": 12000
         },
         {
             "type": "grid",

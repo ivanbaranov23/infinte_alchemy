@@ -250,7 +250,15 @@ function addAtomicResource(name as string){
     registerMoltenMetal("watertight_steel", Color.fromHex("2a5693"));
 
     //mushroomite
-    registerMetal("mushroomite");
+    //registerMetal("mushroomite");
+    VanillaFactory.createItemFood("mushroomite_ingot", 2).register();
+    VanillaFactory.createItem("mushroomite_plate").register();
+    VanillaFactory.createItem("mushroomite_rod").register();
+    VanillaFactory.createItem("mushroomite_gear").register();
+    VanillaFactory.createBlock("mushroomite_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("mushroomite_dust").register();
+    VanillaFactory.createItem("mushroomite_nugget").register();
+
     VanillaFactory.createItem("raw_mushroomite").register();
     var mushroomite_mud = VanillaFactory.createBlock("mushroomite_mud", <blockmaterial:rock>);
     mushroomite_mud.setToolClass("shovel");
@@ -1223,7 +1231,24 @@ function add_mech_part(name as string){
         VanillaFactory.createItem("tincan_target_gem").register();
         VanillaFactory.createItem("tincan_target_mob").register();
 
-        VanillaFactory.createItem("irradiated_compound").register();//todo poison you
+        //VanillaFactory.createItem("irradiated_compound").register();//todo poison you
+        var irradiated_compound = VanillaFactory.createItem("irradiated_compound");
+        irradiated_compound.glowing = true;
+        irradiated_compound.rarity = "rare";
+        irradiated_compound.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
+            if (owner instanceof IPlayer) {
+                val player as IPlayer = owner;
+
+                Commands.call("effect @p minecraft:poison 2 2 true", player, world, false, true);
+                //Commands.call("effect @p minecraft:wither 5 1 true", player, world, false, true);
+                //player.setFire(4);
+                Commands.call("effect @p minecraft:nausea 5 1 true", player, world, false, true);
+                //Commands.call("effect @p minecraft:hunger 5 1 true", player, world, false, true);
+
+            }
+            return;
+        };
+        irradiated_compound.register();
         VanillaFactory.createItem("advanced_plating2_1").register();
         VanillaFactory.createItem("advanced_plating2_2").register();
         VanillaFactory.createItem("advanced_plating2_3").register();
@@ -1281,6 +1306,9 @@ function add_mech_part(name as string){
     }
     VanillaFactory.createItem("mech_taxi_wing").register();
     VanillaFactory.createItem("mech_taxi").register();
+
+    VanillaFactory.createItem("mech_taxi2").register();
+
     VanillaFactory.createItem("empowered_shard").register();
     VanillaFactory.createFluid("dense_steam", Color.fromHex("dedede")).register();
     addWater("empowered_steam");
@@ -1382,14 +1410,21 @@ VanillaFactory.createItem("secure_switch").register();
 
 VanillaFactory.createItem("iron_heart").register();
 VanillaFactory.createItem("gold_slimeball").register();
-VanillaFactory.createItem("brain_slimeball").register();
+VanillaFactory.createItemFood("brain_slimeball", 1).register();
 
 VanillaFactory.createItem("bug_slimeball").register();
 VanillaFactory.createItem("holy_thing").register();
 
 function add_living(lname as string){
-    var it = VanillaFactory.createItem(lname);
+    var it = VanillaFactory.createItemFood(lname, 4);
 
+    it.onItemFoodEaten = function(stack, world, player) {
+            if (!world.isRemote())
+                if (player) {
+                    player.addPotionEffect(<potion:minecraft:poison>.makePotionEffect(20 * 15, 1));
+                }
+    };
+    
     it.maxStackSize = 1;
     
     it.register();
@@ -1423,7 +1458,17 @@ knife.register();
 
 {//worm pit
     VanillaFactory.createItem("sandy_spice").register();
-    VanillaFactory.createItem("chewed_meat").register();
+    //VanillaFactory.createItem("chewed_meat").register();
+    var chewed_meat = VanillaFactory.createItemFood("chewed_meat", 6);
+        chewed_meat.onItemFoodEaten = function(stack, world, player) {
+            if (!world.isRemote())
+                if (player) {
+                    player.addPotionEffect(<potion:minecraft:hunger>.makePotionEffect(20 * 30, 1));
+                }
+        };
+
+    chewed_meat.register();
+    
     VanillaFactory.createItem("ancient_sandstone").register();
     VanillaFactory.createItem("fear").register();
     
@@ -1445,7 +1490,7 @@ knife.register();
     }
 
     VanillaFactory.createItem("wormweave").register();
-    VanillaFactory.createItem("wormium_ingot").register();
+    VanillaFactory.createItemFood("wormium_ingot", 4).register();
     VanillaFactory.createBlock("wormium_block", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("wormholium").register();
@@ -1631,7 +1676,7 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
     //nether eye
     VanillaFactory.createItem("flowering_nether_eye").register();
     VanillaFactory.createItem("flower_nether_eye").register();
-    VanillaFactory.createItem("primitive_eyes").register();
+    VanillaFactory.createItemFood("primitive_eyes", 2).register();
 
     VanillaFactory.createFluid("glowshroom_stew", Color.fromHex("00ffff")).register();
     VanillaFactory.createItem("bamboo_dust").register();
@@ -1689,7 +1734,17 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
     VanillaFactory.createFluid("gulonic_acid", Color.fromHex("c0b028")).register();
     VanillaFactory.createItem("vitamin_c").register();
 
-    VanillaFactory.createItem("vitamins").register();
+    //VanillaFactory.createItem("vitamins").register();
+    var vitamins = VanillaFactory.createItemFood("vitamins", 6);
+        vitamins.alwaysEdible = true;
+        vitamins.onItemFoodEaten = function(stack, world, player) {
+            if (!world.isRemote())
+                if (player) {
+                    player.addPotionEffect(<potion:minecraft:regeneration>.makePotionEffect(20 * 30, 1));
+                }
+        };
+
+    vitamins.register();
 }
 
 VanillaFactory.createFluid("bacteria_waste", Color.fromHex("0b241b")).register();
@@ -1881,7 +1936,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("druidic_dust").register();
     VanillaFactory.createItem("entwood").register();
-    VanillaFactory.createItem("entwood_dust").register();
+    VanillaFactory.createItemFood("entwood_dust", 8).register();
     var entwood_block = VanillaFactory.createBlock("entwood_block", <blockmaterial:rock>);
     entwood_block.setToolClass("axe");
     //entwood_block.setBlockSoundType(<soundtype:ground>);
@@ -1967,7 +2022,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("glowcrystal").register();
     VanillaFactory.createItem("diode1").register();
-    VanillaFactory.createItem("fishy_capacitor").register();
+    VanillaFactory.createItemFood("fishy_capacitor", 4).register();
 
     VanillaFactory.createItem("creosolon").register();
     VanillaFactory.createItem("creosolon_frame").register();
@@ -2039,6 +2094,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("watertight_lead_plate").register();
 }
 {//atum
+    VanillaFactory.createItem("ra_burner").register();
+
     VanillaFactory.createItem("desert_pollen").register();
     VanillaFactory.createFluid("air_gold", Color.fromHex("f5f0ba")).register();
     VanillaFactory.createFluid("air_gold2", Color.fromHex("ea9b0e")).register();
@@ -2197,7 +2254,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createFluid("crystal_fluid1", Color.fromHex("6fc674")).register();
     VanillaFactory.createFluid("crystal_fluid2", Color.fromHex("4f9c6d")).register();
-    VanillaFactory.createFluid("crystal_fluid3", Color.fromHex("357876")).register();
+    //VanillaFactory.createFluid("crystal_fluid3", Color.fromHex("357876")).register();
+    addWater("crystal_fluid3");
     VanillaFactory.createFluid("crystal_waste", Color.fromHex("2f1c23")).register();
 
     VanillaFactory.createItem("neuro_crystal").register();

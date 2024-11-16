@@ -58,7 +58,7 @@ recipes.addShapeless("pilkeum", <contenttweaker:pilkeum> * 2, [
 ]);
 mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2050);
 
-//
+//cactus
 mods.immersiveengineering.BlastFurnace.addRecipe(
 	<contenttweaker:cactus_charcoal>, <harvestcraft:bakedcactusitem>, 
 	20 * 10, 
@@ -69,6 +69,24 @@ mods.immersiveengineering.CokeOven.addRecipe(
 	<contenttweaker:cactus_charcoal>,
     20 * 10
 );
+{//cactus in tingalum oven
+    var rec = RecipeBuilder.newBuilder("cactus", "tignalum_oven", 20);
+
+    rec.addEnergyPerTickInput(1024);
+
+    rec.addItemOutput(<contenttweaker:cactus_charcoal> * 3);
+    rec.addItemOutput(<contenttweaker:cactus_charcoal>);
+    rec.setChance(0.5);
+    rec.addItemOutput(<contenttweaker:cactus_charcoal>);
+    rec.setChance(0.25);
+
+    rec.addItemInput(<minecraft:cactus> * 2);
+    
+    
+    rec.addHotAirInput(250, 250, 1001);
+
+    rec.build();
+}
 
 //
 recipes.addShaped("glowcrystal", <contenttweaker:glowcrystal> * 2, [
@@ -157,5 +175,6 @@ recipes.addShapeless("jade_to_flolit", <contenttweaker:flolit>, [
     <liquid:grape_juice> * 1000
 ]);
 
+//itemduct
 mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:glass:3>, <roots:runed_obsidian>, <liquid:lead>, 288, true);
 mods.tconstruct.Casting.addTableRecipe(<thermaldynamics:duct_32:2>, <thermaldynamics:duct_32>, <liquid:glowstone>, 500, true);

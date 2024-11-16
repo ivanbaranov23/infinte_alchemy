@@ -1,0 +1,14 @@
+{
+	x: 6.0d,
+	y: -1.0d,
+	dependencies: [
+		"8cc62bd6"
+	],
+	tasks: [{
+		uid: "3d5922cf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ra_burner"
+		}]
+	}]
+}

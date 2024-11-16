@@ -266,7 +266,7 @@
     "hasGUI": true,
     "extraVariants": [],
     "resourceName": "sorter_food",
-    "model": "contenttweaker:machines/fluid_mixer",
+    "model": "contenttweaker:machines/sorter_food",
     "colors": [
       {
         "r": 255,
@@ -292,7 +292,7 @@
     "hasGUI": true,
     "extraVariants": [],
     "resourceName": "sorter_livespan",
-    "model": "contenttweaker:machines/fluid_mixer",
+    "model": "contenttweaker:machines/sorter_livespan",
     "colors": [
       {
         "r": 255,

@@ -209,6 +209,20 @@ Centrifuge.addRecipe(
             1000
         );
     }
+
+    {//cake
+        recipes.remove(<harvestcraft:carrotcakeitem>);
+        recipes.addShaped("ia_carrotcakeitem", <harvestcraft:carrotcakeitem>, [
+            [<harvestcraft:carrotjuiceitem>, <harvestcraft:carrotjuiceitem>, <harvestcraft:carrotjuiceitem>], 
+            [<harvestcraft:candiedpecansitem>, <enderio:item_material:70>, <harvestcraft:candiedpecansitem>]
+        ]);
+
+        recipes.remove(<harvestcraft:cheesecakeitem>);
+        recipes.addShaped("ia_cheesecakeitem", <harvestcraft:cheesecakeitem>, [
+            [<ore:listAllheavycream>, <ore:listAllheavycream>, <ore:listAllheavycream>], 
+            [<harvestcraft:crackersitem>, <harvestcraft:cheeseitem>, <harvestcraft:crackersitem>]
+        ]);
+    }
 }
 
 {//burger
@@ -655,6 +669,13 @@ InductionSmelter.addRecipe(
 	<harvestcraft:oliveoilitem>, <harvestcraft:whitemushroomitem> * 4, 400
 );
 
+mods.roots.Pyre.removeRecipe(<minecraft:cooked_beef>);
+mods.roots.Pyre.removeRecipe(<minecraft:cooked_porkchop>);
+mods.roots.Pyre.removeRecipe(<minecraft:cooked_chicken>);
+mods.roots.Pyre.removeRecipe(<minecraft:cooked_mutton>);
+mods.roots.Pyre.removeRecipe(<minecraft:cooked_rabbit>);
+mods.roots.Pyre.removeRecipe(<mysticalworld:cooked_venison>);
+
 moveCookingRecipe(<minecraft:chicken>, <minecraft:cooked_chicken>);
 moveCookingRecipe(<minecraft:mutton>, <minecraft:cooked_mutton>);
 moveCookingRecipe(<minecraft:beef>, <minecraft:cooked_beef>);
@@ -704,6 +725,13 @@ moveCookingRecipe(<harvestcraft:rawtofeegitem>, <harvestcraft:cookedtofeegitem>)
 moveCookingRecipe(<harvestcraft:rawtofishitem>, <harvestcraft:cookedtofishitem>);
 moveCookingRecipe(<harvestcraft:rawtofaconitem>, <harvestcraft:cookedtofaconitem>);
 moveCookingRecipe(<harvestcraft:rawtofeakitem>, <harvestcraft:cookedtofeakitem>);
+
+recipes.remove(<harvestcraft:grilledasparagusitem>);
+InductionSmelter.addRecipe(
+    <harvestcraft:grilledasparagusitem> * 4,
+    <harvestcraft:oliveoilitem>, <harvestcraft:asparagusitem> * 4, 
+    400
+);
 
 furnace.remove(<tconevo:edible:1>);
 InductionSmelter.addRecipe(

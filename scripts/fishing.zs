@@ -15,7 +15,7 @@ import mods.modularmachinery.RecipeBuilder;
 static counter as int = 1;
 function addCoralGrowthRec(coral as IItemStack, cat as IItemStack){
     print("coral" ~ counter);
-    var rec = RecipeBuilder.newBuilder("coral" ~ counter, "fish_tank", 12 * 20);
+    var rec = RecipeBuilder.newBuilder("coral" ~ counter, "fish_tank", 8 * 20);
     counter += 1;
 
     rec.addEnergyPerTickInput(100);
@@ -50,7 +50,7 @@ addCoralGrowthRec(<contenttweaker:terra_coral>, <contenttweaker:fertilizer7>);
 
 function addFishRec(fout as IItemStack, cat as IItemStack){
     print("fish" ~ counter);
-    var rec = RecipeBuilder.newBuilder("fish" ~ counter, "fish_tank", 12 * 20);
+    var rec = RecipeBuilder.newBuilder("fish" ~ counter, "fish_tank", 8 * 20);
     counter += 1;
 
     rec.addEnergyPerTickInput(100);
@@ -67,7 +67,7 @@ function addFishRec(fout as IItemStack, cat as IItemStack){
             
     for i in 0 to 6{
         rec.addItemOutput(fout);
-        rec.setChance( 0.5 - (0.05 * i) );
+        rec.setChance( 0.75 - (0.05 * i) );
     }
     
 

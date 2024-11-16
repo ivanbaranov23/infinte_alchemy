@@ -122,15 +122,14 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
     addMMPartRecipe(7, <modularmachinery:blockenergyinputhatch:6>, <modularmachinery:blockenergyinputhatch:7>, <draconicevolution:chaos_shard>, false);
 
     //energy output 
-    /*addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockfluidoutputhatch:1>, <erebus:bambucket>.withTag({}), true);
-    addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockfluidoutputhatch:1>, <erebus:bambucket>.withTag({}), true);
-    addMMPartRecipe(2, <modularmachinery:blockfluidoutputhatch:1>, <modularmachinery:blockfluidoutputhatch:2>, <minecraft:bucket>, true);
-    addMMPartRecipe(3, <modularmachinery:blockfluidoutputhatch:2>, <modularmachinery:blockfluidoutputhatch:3>, <fluiddrawers:tank>, true);
-    addMMPartRecipe(4, <modularmachinery:blockfluidoutputhatch:3>, <modularmachinery:blockfluidoutputhatch:4>, <enderio:block_tank>, true):
-    addMMPartRecipe(5, <modularmachinery:blockfluidoutputhatch:4>, <modularmachinery:blockfluidoutputhatch:5>, <bloodmagic:blood_tank:2>, true);
-    addMMPartRecipe(6, <modularmachinery:blockfluidoutputhatch:5>, <modularmachinery:blockfluidoutputhatch:6>, <astralsorcery:blockwell>, true);
-    addMMPartRecipe(7, <modularmachinery:blockfluidoutputhatch:6>, <modularmachinery:blockfluidoutputhatch:7>, <alchemistry:xenon_light>, true);
-    */
+    addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockenergyoutputhatch:1>, <immersiveengineering:metal_decoration0>, true);
+    addMMPartRecipe(2, <modularmachinery:blockenergyoutputhatch:1>, <modularmachinery:blockenergyoutputhatch:2>, <immersiveengineering:metal_device0:2>, true);
+    addMMPartRecipe(3, <modularmachinery:blockenergyoutputhatch:2>, <modularmachinery:blockenergyoutputhatch:3>, <mekanism:energycube>.withTag({tier: 0}), true);
+    addMMPartRecipe(4, <modularmachinery:blockenergyoutputhatch:3>, <modularmachinery:blockenergyoutputhatch:4>, <enderio:block_cap_bank:2>, true);
+    addMMPartRecipe(5, <modularmachinery:blockenergyoutputhatch:4>, <modularmachinery:blockenergyoutputhatch:5>, <botania:manavoid>, true);
+    addMMPartRecipe(6, <modularmachinery:blockenergyoutputhatch:5>, <modularmachinery:blockenergyoutputhatch:6>, <draconicevolution:draconium_capacitor:1>, true);
+    addMMPartRecipe(7, <modularmachinery:blockenergyoutputhatch:6>, <modularmachinery:blockenergyoutputhatch:7>, <draconicevolution:chaos_shard>, true);
+
 }
 
 {//others

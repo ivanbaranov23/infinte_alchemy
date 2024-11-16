@@ -670,6 +670,30 @@ mods.bloodmagic.TartaricForge.addRecipe(<prodigytech:tartaric_stoker> * 12, [
 	}
 }
 
+function addHeatEngineRecipe(energy as int, cat as IItemStack){
+    var rec = RecipeBuilder.newBuilder("temp" ~ energy, "heat_engine", 60 * 20);
+    rec.addEnergyPerTickOutput(energy * 10);
+
+    
+    rec.addItemInput(cat);
+    //rec.setChance(0.1);
+    
+
+    rec.addHotAirInput(energy, energy - 1, energy + 10000);
+
+    rec.build();
+}
+{
+	addHeatEngineRecipe(250, <minecraft:gravel>);
+	addHeatEngineRecipe(500, <minecraft:cobblestone>);
+	addHeatEngineRecipe(1000, <prodigytech:charred_cobblestone>);
+	addHeatEngineRecipe(1500, <minecraft:netherrack>);
+	addHeatEngineRecipe(2000, <minecraft:nether_brick>);
+	addHeatEngineRecipe(2500, <minecraft:magma>);
+	addHeatEngineRecipe(3000, <contenttweaker:firebrick_block>);
+	addHeatEngineRecipe(3500, <contenttweaker:hot_block>);
+}
+
 {//circuit_plate
 	var tpc_circuit_plate = RecipeBuilder.newBuilder("tpc_circuit_plate", "tree_powered_compressor", 120);
 	tpc_circuit_plate.addItemInput(<enderio:item_material:48>);

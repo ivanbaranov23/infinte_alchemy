@@ -1052,6 +1052,8 @@ tile.contenttweaker.potato_block5.name=Quintuple Compressed Potato Block
 
 
 
+item.contenttweaker.eliamondin.name=Eliamondin Gem
+item.contenttweaker.eliamondin_dust.name=Eliamondin Dust
 
 
 item.contenttweaker.neutronium_mirror.name=Simple Neutron Reflector
@@ -1913,3 +1915,5 @@ item.contenttweaker.ice_shard.name=Icestone Crystal
 tile.contenttweaker.ice_shard_block.name=Block of Icestone Crystals
 
 fluid.cold_liquid=Cryotheum Coolant
+
+item.contenttweaker.gemmed_biomass.name=Biocell with Gem Refining Biomass

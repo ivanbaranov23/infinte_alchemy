@@ -55,7 +55,7 @@ function addResearchRecipe(name as string, medium as IItemStack, out as IItemSta
     for inp in input{
         inp.anyAmount().addTooltip(game.localize("ia.tooltip.research") ~ " for \"" + out.displayName + "\", amount: " + (inp.amount as string));
         //out.addTooltip(inp.displayName + " x" + (inp.amount as string));
-        //oreDict["research" ~ name].add(inp * 1);
+        oreDict["research" ~ name].add(inp * 1);
     }
 
     for i in 0 to (input.length - 2){
@@ -103,7 +103,7 @@ function addAdvancedResearchRecipe(name as string, medium as IItemStack, out as 
     for inp in input{
         inp.anyAmount().addTooltip(game.localize("ia.tooltip.research") ~ " for \"" + out.displayName + "\", amount: " + (inp.amount as string));
         //out.addTooltip(inp.displayName + " x" + (inp.amount as string));
-        //oreDict["research" ~ name].add(inp * 1);
+        oreDict["research" ~ name].add(inp * 1);
     }
 
     for i1 in 0 to (input.length - 7)
@@ -269,7 +269,7 @@ addAdvancedResearchRecipe("Singularity", <contenttweaker:singularity_dust> * 16,
     <extendedcrafting:singularity_custom:21> * 3
 ], 10000, 20 * 30);
 
-/*addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,
+addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,
     [
         <forge:bucketfilled>.withTag({FluidName: "anti_venom", Amount: 1000}),
         <aether_legacy:aechor_petal> * 16,
@@ -343,7 +343,7 @@ addResearchRecipe("Blood", <bloodmagic:slate:4>, <contenttweaker:research_magic2
         <bloodmagic:blood_shard> * 64
     ],
     10000, 400 * 20
-);*/
+);
 
 
 

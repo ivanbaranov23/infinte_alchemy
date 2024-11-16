@@ -19,3 +19,4 @@ import mods.modularmachinery.RecipeBuilder;
 
 	rec.build();
 }
+

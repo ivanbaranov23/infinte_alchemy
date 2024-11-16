@@ -1,6 +1,9 @@
 {
 	x: 10.0d,
 	y: 0.0d,
+	text: [
+		"Tastes like lead"
+	],
 	dependencies: [
 		"7d6a11c2"
 	],

@@ -6,10 +6,10 @@ recipes.addShaped("ia_netcable", <xnet:netcable> * 8, [
 ]);
 
 recipes.remove(<xnet:connector>);
-recipes.addShaped("ia_xnet_connector", <xnet:connector>, [
-    [<xnet:connector>, <xnet:netcable>, <xnet:connector>], 
-    [<xnet:connector>, <appliedenergistics2:interface>, <xnet:connector>], 
-    [<xnet:connector>, <xnet:netcable>, <xnet:connector>]
+recipes.addShaped("ia_xnet_connector", <xnet:connector> * 2, [
+    [<contenttweaker:xnet_wire>, <xnet:netcable>, <contenttweaker:xnet_wire>], 
+    [<contenttweaker:xnet_wire>, <appliedenergistics2:interface>, <contenttweaker:xnet_wire>], 
+    [<contenttweaker:xnet_wire>, <xnet:netcable>, <contenttweaker:xnet_wire>]
 ]);
 
 recipes.remove(<xnet:controller>);

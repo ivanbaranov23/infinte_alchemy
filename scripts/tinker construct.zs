@@ -94,3 +94,12 @@ recipes.addShaped("ia_bocuit", <contenttweaker:bocuit>, [
     [<contenttweaker:gold_wire>, <prodigytech:circuit_crude>, <immersiveengineering:material:20>], 
     [null, <contenttweaker:zinc_wire>, null]
 ]);
+
+{
+    recipes.remove(<tconstruct:materials:14>);
+    recipes.addShaped("ia_reinforced_mod", <tconstruct:materials:14>, [
+        [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>], 
+        [<contenttweaker:anput_godshard>, <tconstruct:cast>, <contenttweaker:anput_godshard>], 
+        [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>]
+    ]);
+}
