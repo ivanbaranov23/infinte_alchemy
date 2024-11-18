@@ -1,0 +1,18 @@
+{
+	x: 10.0d,
+	y: 1.0d,
+	dependencies: [
+		"cb68303e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1408201c",
+		type: "item",
+		items: [{
+			item: "snad:snad"
+		},
+		{
+			item: "snad:snad 1 1"
+		}]
+	}]
+}

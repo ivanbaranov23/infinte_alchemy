@@ -5,8 +5,17 @@ import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 
 
-//   /setblock ~ ~ ~ minecraft:chest 2 replace {LootTable:"contenttweaker:aether_treated_ship_chest"}
+//   /setblock ~ ~ ~ minecraft:chest 2 replace {LootTable:"minecraft:chests/nether_bridge"}
 
+static pool as int = 0;
+function addLootTable(table as string, rmin as int, rmax as int, items as int[IItemStack]){
+    pool += 1;
+    var lt = LootTweaker.getTable(table);
+    var lp = lt.addPool("autopool" ~ pool, rmin, rmax, 0, 0);
+    for item in items{
+        lp.addItemEntry(item, items[item]);
+    }
+}
 
 {//atum
     //ae2 presses
@@ -53,6 +62,9 @@ import loottweaker.vanilla.loot.LootPool;
         crate_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:33>, 10);
         crate_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:34>, 5);
         crate_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:35>, 1);
+
+        addLootTable("atum:chests/crate", 1, 5, {<contenttweaker:desert_pollen>: 1});
+        
     }
 
     {//pyramid chest
@@ -82,9 +94,27 @@ import loottweaker.vanilla.loot.LootPool;
         pyramid_chest_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:33>, 10);
         pyramid_chest_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:34>, 5);
         pyramid_chest_thermal_thingy.addItemEntry(<thermalfoundation:upgrade:35>, 1);
+
+        addLootTable("atum:chests/pyramid_chest", 1, 4, {<contenttweaker:desert_pollen>: 1});
     }
+
+    addLootTable("atum:chests/girafi_tomb", 0, 5, {<contenttweaker:desert_pollen>: 1});
 }
 
+{//nether
+    //ingot
+    addLootTable("minecraft:chests/nether_bridge", 1, 4, {
+        <tconstruct:ingots:1>: 30,
+        <contenttweaker:thermal_ingot>: 25,
+        <contenttweaker:watertight_steel_ingot>: 30,
+        <taiga:terrax_ingot>: 10,
+        <contenttweaker:mushroomite_ingot>: 12,
+        <thermalfoundation:material:167>: 5,
+        <twilightforest:fiery_ingot>: 4,
+        <contenttweaker:electric_manyullyn_ingot>: 5,
+        <contenttweaker:nitrall>.withTag({food: 30}): 1
+    });
+}
 
 {//aether
     {//ship chest

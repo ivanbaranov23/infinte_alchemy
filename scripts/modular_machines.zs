@@ -122,15 +122,14 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
     addMMPartRecipe(7, <modularmachinery:blockenergyinputhatch:6>, <modularmachinery:blockenergyinputhatch:7>, <draconicevolution:chaos_shard>, false);
 
     //energy output 
-    /*addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockfluidoutputhatch:1>, <erebus:bambucket>.withTag({}), true);
-    addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockfluidoutputhatch:1>, <erebus:bambucket>.withTag({}), true);
-    addMMPartRecipe(2, <modularmachinery:blockfluidoutputhatch:1>, <modularmachinery:blockfluidoutputhatch:2>, <minecraft:bucket>, true);
-    addMMPartRecipe(3, <modularmachinery:blockfluidoutputhatch:2>, <modularmachinery:blockfluidoutputhatch:3>, <fluiddrawers:tank>, true);
-    addMMPartRecipe(4, <modularmachinery:blockfluidoutputhatch:3>, <modularmachinery:blockfluidoutputhatch:4>, <enderio:block_tank>, true):
-    addMMPartRecipe(5, <modularmachinery:blockfluidoutputhatch:4>, <modularmachinery:blockfluidoutputhatch:5>, <bloodmagic:blood_tank:2>, true);
-    addMMPartRecipe(6, <modularmachinery:blockfluidoutputhatch:5>, <modularmachinery:blockfluidoutputhatch:6>, <astralsorcery:blockwell>, true);
-    addMMPartRecipe(7, <modularmachinery:blockfluidoutputhatch:6>, <modularmachinery:blockfluidoutputhatch:7>, <alchemistry:xenon_light>, true);
-    */
+    addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockenergyoutputhatch:1>, <immersiveengineering:metal_decoration0>, true);
+    addMMPartRecipe(2, <modularmachinery:blockenergyoutputhatch:1>, <modularmachinery:blockenergyoutputhatch:2>, <immersiveengineering:metal_device0:2>, true);
+    addMMPartRecipe(3, <modularmachinery:blockenergyoutputhatch:2>, <modularmachinery:blockenergyoutputhatch:3>, <mekanism:energycube>.withTag({tier: 0}), true);
+    addMMPartRecipe(4, <modularmachinery:blockenergyoutputhatch:3>, <modularmachinery:blockenergyoutputhatch:4>, <enderio:block_cap_bank:2>, true);
+    addMMPartRecipe(5, <modularmachinery:blockenergyoutputhatch:4>, <modularmachinery:blockenergyoutputhatch:5>, <botania:manavoid>, true);
+    addMMPartRecipe(6, <modularmachinery:blockenergyoutputhatch:5>, <modularmachinery:blockenergyoutputhatch:6>, <draconicevolution:draconium_capacitor:1>, true);
+    addMMPartRecipe(7, <modularmachinery:blockenergyoutputhatch:6>, <modularmachinery:blockenergyoutputhatch:7>, <draconicevolution:chaos_shard>, true);
+
 }
 
 {//others
@@ -152,9 +151,9 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
     ]);
 
     recipes.addShaped("ia_mm_grid_input", <modularmagic:blockgridproviderinput>, [
-        [<extrautils2:decorativesolid:8>, <ore:plateEvilMetal>, <extrautils2:decorativesolid:8>], 
-        [<extrautils2:suncrystal>, <modularmachinery:blockcasing:4>, <ore:gemMoon>], 
-        [<extrautils2:decorativesolid:8>, <ore:plateEvilMetal>, <extrautils2:decorativesolid:8>]
+        [<extrautils2:decorativesolid:3>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:3>], 
+        [<moreplates:enchanted_plate>, <modularmachinery:blockcasing:4>, <moreplates:enchanted_plate>], 
+        [<extrautils2:decorativesolid:3>, <ore:gemMoon>, <extrautils2:decorativesolid:3>]
     ]);
     recipes.addShaped("ia_mm_grid_output", <modularmagic:blockgridprovideroutput>, [
         [<extrautils2:decorativesolid:8>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:8>], 
@@ -239,10 +238,7 @@ function addMMRecipe(
 
 function addEarlySingularuty(sing as IItemStack, iten as IItemStack, time as int){
     var recipe = RecipeBuilder.newBuilder("tcp_" + sing.name, "tree_powered_compressor", time);
-    recipe.addItemInput(iten * 64);
-    recipe.addItemInput(iten * 64);
-    recipe.addItemInput(iten * 64);
-    recipe.addItemInput(iten * 64);
+    recipe.addItemInput(iten * 256);
     recipe.addItemInput(<ore:treeSapling>, 4);
     recipe.addItemInput(<minecraft:dye:15> * 16);
     recipe.addFluidInput(<fluid:water> * 1000);
@@ -282,10 +278,7 @@ addMMRecipe("high_oven_glass2", "high_oven", 15*20, 32,
 //addEarlySingularuty(<extendedcrafting:singularity_custom:100>, <minecraft:log>, );
 {//wood
     var recipe = RecipeBuilder.newBuilder("tcp_wood", "tree_powered_compressor", 20*60*5);
-    recipe.addItemInput(<ore:logWood>, 64);
-    recipe.addItemInput(<ore:logWood>, 64);
-    recipe.addItemInput(<ore:logWood>, 64);
-    recipe.addItemInput(<ore:logWood>, 64);
+    recipe.addItemInput(<ore:logWood>, 256);
     recipe.addItemInput(<ore:treeSapling>, 4);
     recipe.addItemInput(<minecraft:dye:15> * 16);
     recipe.addFluidInput(<fluid:water> * 1000);

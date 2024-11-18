@@ -95,6 +95,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:relic_ingot>, <contenttweaker:relic_block>);
 
     addNuggetIngotBlockRecipe(<contenttweaker:fluix_steel_nugget>, <contenttweaker:fluix_steel_ingot>, <contenttweaker:fluix_steel_block>);
+    add3x3Recipe(<contenttweaker:xnet_ingot>, <contenttweaker:xnet_block>);
     addNuggetIngotBlockRecipe(<contenttweaker:menril_steel_nugget>, <contenttweaker:menril_steel_ingot>, <contenttweaker:menril_steel_block>);
 
     addNuggetIngotBlockRecipe(<contenttweaker:black_bronze_nugget>, <contenttweaker:black_bronze_ingot>, <contenttweaker:black_bronze_block>);
@@ -134,6 +135,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<tconevo:metal:40>, <tconevo:metal_block:8>);
 
     add3x3Recipe(<contenttweaker:purple_gold_ingot>, <contenttweaker:purple_gold_block>);
+    add3x3Recipe(<contenttweaker:peridotite_ingot>, <contenttweaker:peridotite_block>);
 
     add3x3Recipe(<contenttweaker:imperial_steel_ingot>, <contenttweaker:imperial_steel_block>);
 
@@ -163,6 +165,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:light_ingot>, <contenttweaker:light_block>);
     add3x3Recipe(<contenttweaker:glowshroomite_ingot>, <contenttweaker:glowshroomite_block>);
     add3x3Recipe(<contenttweaker:orichalcum_ingot>, <contenttweaker:orichalcum_block>);
+    add3x3Recipe(<contenttweaker:orichalconite_ingot>, <contenttweaker:orichalconite_block>);
     add3x3Recipe(<contenttweaker:vibralcum_ingot>, <contenttweaker:vibralcum_block>);
     add3x3Recipe(<contenttweaker:nitinol_ingot>, <contenttweaker:nitinol_block>);
     add3x3Recipe(<contenttweaker:neuronium_ingot>, <contenttweaker:neuronium_block>);
@@ -189,6 +192,15 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:ice_shard>, <contenttweaker:ice_shard_block>);
     
     add3x3Recipe(<contenttweaker:wormium_ingot>, <contenttweaker:wormium_block>);
+}
+
+{//potato
+    add3x3Recipe(<minecraft:potato>, <contenttweaker:potato_block1>);
+    add3x3Recipe(<contenttweaker:potato_block1>, <contenttweaker:potato_block2>);
+    add3x3Recipe(<contenttweaker:potato_block2>, <contenttweaker:potato_block3>);
+    add3x3Recipe(<contenttweaker:potato_block3>, <contenttweaker:potato_block4>);
+    add3x3Recipe(<contenttweaker:potato_block4>, <contenttweaker:potato_block5>);
+    
 }
 
 
@@ -227,26 +239,26 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
 }
 
 {//components
-    recipes.addShaped("ia_power_core_inactive", <contenttweaker:power_core_inactive>, [
-        [null, <immersiveengineering:wirecoil:5>, null], 
-        [<immersiveengineering:wirecoil:5>, <ore:gemQuartzBlack>, <immersiveengineering:wirecoil:5>], 
-        [null, <immersiveengineering:wirecoil:5>, null]
+    recipes.addShaped("ia_power_core_inactive", <contenttweaker:power_core_inactive> * 2, [
+        [<immersiveengineering:wirecoil:5>, <contenttweaker:diode1>, <immersiveengineering:wirecoil:5>], 
+        [<immersiveengineering:wirecoil:5>, <actuallyadditions:block_misc:2>, <immersiveengineering:wirecoil:5>], 
+        [<immersiveengineering:wirecoil:5>, <contenttweaker:diode1>, <immersiveengineering:wirecoil:5>]
     ]);
     
     scripts.content_machines.addAssemblerRecipe(
-        [<contenttweaker:power_core_active>],
-        [<ore:gemQuartzBlack>, <immersiveengineering:wirecoil:5> * 2],
+        [<contenttweaker:power_core_active> * 2],
+        [<ore:gemQuartzBlack>, <immersiveengineering:wirecoil:5> * 2, <contenttweaker:hot_energion>, <contenttweaker:diode1>],
         <liquid:napalm> * 500,
         10, 256
     );
 
     recipes.addShapeless("ia_electric_stone_dust1",
-        <contenttweaker:electric_stone_dust> * 2,
-        [<enderio:item_material:20>, <roots:runic_dust>, <tconstruct:soil>]
+        <contenttweaker:electric_stone_dust> * 6,
+        [<enderio:item_material:20>, <roots:runic_dust>, <tconstruct:soil>, <appliedenergistics2:material:45>]
     );
     recipes.addShapeless("ia_electric_stone_dust2",
-        <contenttweaker:electric_stone_dust> * 4,
-        [<enderio:item_material:20>, <roots:runic_dust>, <tconstruct:soil>, <prodigytech:zorra_leaf>]
+        <contenttweaker:electric_stone_dust> * 12,
+        [<enderio:item_material:20>, <roots:runic_dust>, <tconstruct:soil>, <appliedenergistics2:material:45>, <prodigytech:zorra_leaf>]
     );
     
 
@@ -367,9 +379,9 @@ recipes.addShapeless("ia_lazy_soup", <contenttweaker:lazy_soup>, [
 
 TEImbuer.addRecipe(<liquid:haste_potion> * 500, <appliedenergistics2:material:2>, <liquid:potion>.withTag({Potion: "cofhcore:haste4"}) * 500, 3000);
 TEImbuer.addRecipe(<liquid:speed_potion> * 500, <appliedenergistics2:material:3>, <liquid:potion>.withTag({Potion: "cofhcore:swiftness4"}) * 500, 3000);
-scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 200, 
-    <liquid:haste_potion> * 100,
-    <liquid:speed_potion> * 100,
+scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 400, 
+    <liquid:haste_potion> * 200,
+    <liquid:speed_potion> * 200,
     <actuallyadditions:item_dust:7>,
     32, 80
 );
@@ -520,26 +532,11 @@ recipes.addShapeless("ia_food_pellet", <contenttweaker:food_pellet>,
     );
 }
 
-//research
-recipes.addShapeless(
-    "ia_glass_cutter_research_token",
-    <contenttweaker:glass_cutter_research_token>,
-    [<extrautils2:glasscutter>.noReturn()]
-);
-recipes.addShapeless(
-    "ia_steel_hoe_research_token",
-    <contenttweaker:steel_hoe_research_token>,
-    [<immersiveengineering:hoe_steel>.noReturn()]
-);
 
 recipes.addShapeless(
     "ia_empty_ingot", <contenttweaker:empty_ingot> * 8,
     [<minecraft:brick>]
 );
-
-
-
-
 
 
 

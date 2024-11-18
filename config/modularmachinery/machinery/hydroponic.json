@@ -1,0 +1,748 @@
+{
+    "registryname": "hydroponic",
+    "localizedname": "Hydroponic",
+    "color": "1d0423",
+    "parts": [
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_wall@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"ultrapure_water","Amount":"16000"}},
+            "elements": [
+                "openblocks:tank@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all",
+                "modularmagic:blocklifeessenceproviderinput@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "quantumflux:darkstone@1"
+            ]
+        }
+    ]}

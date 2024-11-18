@@ -1,0 +1,21 @@
+{
+	x: 7.0d,
+	y: 1.0d,
+	dependencies: [
+		"b7f2dc32",
+		"414abca0"
+	],
+	tasks: [{
+		uid: "d5e24fb4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:flolit_sheet"
+		}]
+	}],
+	rewards: [{
+		uid: "f00b5982",
+		type: "item",
+		item: "contenttweaker:flolit_sheet",
+		count: 4
+	}]
+}

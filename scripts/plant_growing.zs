@@ -289,6 +289,11 @@ function addGCrecipe_alltiers2(min_tier as int,
             [(<twilightforest:steeleaf_ingot>) % 75 ],
             [], 4, 4
         );
+        addGCrecipe_alltiers2(0, 
+            [<contenttweaker:flolit_plant>, <contenttweaker:research_plants1>], 
+            [<contenttweaker:flolit_plant> % 75],
+            [<harvestcraft:huckleberryitem>], 2, 2
+        );
         
         addGCrecipe_alltiers2(3, 
             [<stygian:endglow>, <contenttweaker:research_plants1>], 
@@ -301,6 +306,8 @@ function addGCrecipe_alltiers2(min_tier as int,
             [<contenttweaker:celestial_corn> % 75],
             [<contenttweaker:ender_bacteria>], 4, 4
         );
+
+        
     }
 
     {//vines

@@ -249,7 +249,7 @@ recipes.removeByMod("solarflux");
 
 	recipes.addShaped("ia_solar_panel5", <solarflux:solar_panel_5> * 2, [
 		[<solarflux:photovoltaic_cell_3>, <solarflux:photovoltaic_cell_3>, <solarflux:photovoltaic_cell_3>], 
-		[<solarflux:solar_panel_4>, <mekanism:controlcircuit:3>, <solarflux:solar_panel_4>], 
+		[<solarflux:solar_panel_4>, <contenttweaker:ra_burner>, <solarflux:solar_panel_4>], 
 		[<solarflux:solar_panel_4>, <mekanism:basicblock:8>, <solarflux:solar_panel_4>]
 	]);
 	addAssemblerRecipe(
@@ -257,7 +257,7 @@ recipes.removeByMod("solarflux");
 		[
 			<solarflux:photovoltaic_cell_3> * 3,
 			<solarflux:solar_panel_4> * 6,
-			<mekanism:controlcircuit:3>,
+			<contenttweaker:ra_burner>,
 			<mekanism:basicblock:8>
 		], null,
 		20, 1000

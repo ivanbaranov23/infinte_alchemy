@@ -1,0 +1,39 @@
+{
+    "name": "thicc_oak",
+    "mod": "erebus",
+    "sapling": {
+      "name": "contenttweaker:bonsai_sapling",
+      "data": 0
+    },
+    "growTimeMultiplier": 0.9,
+    "drops": [
+      {
+        "name": "minecraft:log",
+        "data": 0,
+        "type": "CUSTOM",
+        "count": 3,
+        "chance": 0.8
+      },
+      {
+        "name": "minecraft:log",
+        "data": 0,
+        "type": "CUSTOM",
+        "count": 3,
+        "chance": 0.5
+      },
+      {
+        "name": "minecraft:log",
+        "data": 0,
+        "type": "CUSTOM",
+        "count": 2,
+        "chance": 0.3
+      },
+      {
+        "name": "minecraft:log",
+        "data": 0,
+        "type": "CUSTOM",
+        "count": 2,
+        "chance": 0.2
+      }
+    ]
+  }

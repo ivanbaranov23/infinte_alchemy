@@ -1,0 +1,65 @@
+{
+	icon: "modularcontroller:garden_cloche_controller",
+	x: 12.0d,
+	y: 6.0d,
+	text: [
+		"MB for growing plants. Needs seeds, soil, fertilizer and sometimes a catalyst."
+	],
+	dependencies: [
+		"51cb0d40"
+	],
+	optional: true,
+	tasks: [{
+		uid: "14dfb363",
+		type: "item",
+		items: [{
+			item: "modularcontroller:garden_cloche_controller"
+		}]
+	},
+	{
+		uid: "8318761a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:greenhouse_lamps"
+		}]
+	},
+	{
+		uid: "69d35ab9",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:treated_wood"
+		}],
+		count: 4L
+	},
+	{
+		uid: "265ca402",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:treated_wood_slab"
+		}],
+		count: 4L
+	},
+	{
+		uid: "3eb26db3",
+		type: "item",
+		items: [{
+			item: "tconstruct:clear_glass"
+		}],
+		count: 8L
+	},
+	{
+		uid: "15d39672",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_quartz_wall"
+		}],
+		count: 8L
+	},
+	{
+		uid: "f5b7ddab",
+		type: "item",
+		items: [{
+			item: "roots:elemental_soil_earth"
+		}]
+	}]
+}

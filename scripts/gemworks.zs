@@ -206,3 +206,14 @@ scripts.helper.addFluidMixerRecipe(
     <liquid:hexane> * 500, <liquid:crystaloil> * 300, <actuallyadditions:item_dust:2>, 
     512, 20
 );
+
+
+scripts.content_machines.addFluidSieveRecipeRandom(
+    [
+        <contenttweaker:biocell>,
+        <aether_legacy:zanite_gemstone> % 30
+    ], <liquid:crystal_fluid3> * 400, 
+    null, <contenttweaker:gemmed_biomass>,
+    <exnihilocreatio:item_mesh:4>,
+    40, 3000
+);

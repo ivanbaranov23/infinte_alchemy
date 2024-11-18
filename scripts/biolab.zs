@@ -596,6 +596,34 @@ addBiolabRecipe(
             10, 5000
         );
     }
+    {//gemmed
+        addBiolabRecipe(
+            [<contenttweaker:gemmed_biomass>], 
+            [
+                <contenttweaker:biomaterial1>,
+                <prodigytech:energion_crystal_seed> * 4,
+                <extrautils2:ingredients:3> * 4,
+                <contenttweaker:ptah_godshard> * 2,
+                <redstonearsenal:material:160>
+            ], [
+                <liquid:malachite_glue> * 3000
+            ], [],
+            30, 5000, 250
+        );
+        addBiolabRecipe(
+            [<contenttweaker:gemmed_biomass>], 
+            [
+                <contenttweaker:biomaterial1>,
+                <prodigytech:energion_crystal_seed> * 4,
+                <extrautils2:ingredients:3> * 4,
+                <contenttweaker:ptah_godshard> * 2,
+                <aether_legacy:zanite_gemstone> * 3
+            ], [
+                <liquid:malachite_glue> * 3000
+            ], [],
+            15, 10000, 250
+        );
+    }
 }
 {//biomat2 -> things
     {//muscle

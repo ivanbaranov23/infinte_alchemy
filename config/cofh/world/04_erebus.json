@@ -1,5 +1,28 @@
 {
     "populate": {
+		"erebus_flolit": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": {
+					"name": "contenttweaker:flolit_ore"
+				},
+				"material": "erebus:umberstone",
+				"cluster-size": 8
+			},
+			"cluster-count": 10,
+			"min-height": 20,
+			"max-height": 105,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					66
+				]
+			}
+		},
+
 		"erebus_copper": {
 			"enabled": "true",
 			"distribution": "uniform",

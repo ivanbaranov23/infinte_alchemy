@@ -23,5 +23,25 @@
 		uid: "48016517",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "85f3d3c3",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "minecraft:furnace",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "Furnace",
+				TrophyColorRed: 38,
+				TrophyColorGreen: 83,
+				TrophyColorBlue: 148,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

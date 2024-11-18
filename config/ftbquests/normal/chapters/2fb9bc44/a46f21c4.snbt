@@ -1,0 +1,18 @@
+{
+	x: -1.5d,
+	y: -1.0d,
+	text: [
+		"Source of aluminum"
+	],
+	dependencies: [
+		"d9309953"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9f35a63d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ferramic_gravel"
+		}]
+	}]
+}

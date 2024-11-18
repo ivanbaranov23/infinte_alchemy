@@ -1,0 +1,18 @@
+{
+	x: 5.0d,
+	y: -2.0d,
+	dependencies: [
+		"4c76e76d"
+	],
+	tasks: [{
+		uid: "2cf21932",
+		type: "checkmark",
+		title: "Malachite Glue",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "malachite_glue"
+			}
+		}
+	}]
+}

@@ -1,11 +1,11 @@
 {
-	x: 3.0d,
+	x: -1.0d,
 	y: -2.0d,
 	text: [
 		"One fluid tank is filled from the top, another from the bottom, recipes accept any order of fluid. "
 	],
 	dependencies: [
-		"be945a5b"
+		"7ee7dc77"
 	],
 	tasks: [{
 		uid: "85bcec29",

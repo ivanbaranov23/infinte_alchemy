@@ -4,6 +4,9 @@
 	text: [
 		"Corn can be mixed and distilled to get Zinc, Nickel and Yellorium. You can also get Iridium if you mix it twice."
 	],
+	dependencies: [
+		"0e347247"
+	],
 	optional: true,
 	tasks: [{
 		uid: "1e2c5f64",

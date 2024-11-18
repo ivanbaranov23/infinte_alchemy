@@ -102,10 +102,7 @@ function addIngotCompress(ingot as IItemStack, singul as IItemStack){
 	rec2.addEnergyPerTickInput(2048);
 	rec2.addItemOutput(singul);
 		
-	rec2.addItemInput(ingot * 64);
-	rec2.addItemInput(ingot * 64);
-	rec2.addItemInput(ingot * 64);
-	rec2.addItemInput(ingot * 64);
+	rec2.addItemInput(ingot * 256);
 
 	rec2.addMekanismHeatInput(700, 699, 1.0/0);
 		

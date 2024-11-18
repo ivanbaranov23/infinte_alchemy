@@ -1,0 +1,13 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "edges",
+        "textures": [
+            "contenttweaker:blocks/parts/conveyor_frame-ctm",
+            "contenttweaker:blocks/empty"
+        ],
+        "extra": {
+            "connect_inside": false
+        }
+    }
+}

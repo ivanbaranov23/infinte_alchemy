@@ -25,6 +25,19 @@ recipes.addShaped("ia_frame10", <actuallyadditions:block_misc:8>, [
 	[<extendedcrafting:material:36>, <enderio:item_capacitor_crystalline>, <extendedcrafting:material:36>]
 ]);
 
+recipes.remove(<actuallyadditions:block_canola_press>);
+recipes.addShaped("block_canola_press", <actuallyadditions:block_canola_press>, [
+	[null, <immersiveengineering:wooden_device0:1>, null],
+	[<minecraft:piston>, <actuallyadditions:item_misc:13>, <minecraft:piston>], 
+	[<enderio:item_material:11>, <extrautils2:machine>, <enderio:item_material:11>]
+]);
+scripts.jei.addJEIhint(
+    [<actuallyadditions:item_misc:13>], [], 
+    [<actuallyadditions:block_canola_press>], 
+    [], [<liquid:canolaoil>]
+);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:canolaoil> * 100, <actuallyadditions:item_misc:13>, 1000);
+
 
 val atomic_resources as IItemStack[string][string] = {
 	redstone: {

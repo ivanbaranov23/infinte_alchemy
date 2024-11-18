@@ -1,0 +1,15 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "cross": "contenttweaker:blocks/mushroomium_tree",
+      "texture": "contenttweaker:blocks/mushroomium_tree",
+      "particle": "contenttweaker:blocks/mushroomium_tree"
+    },
+    "model": "minecraft:block/cross"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

@@ -1,8 +1,8 @@
 {
-	x: 4.0d,
-	y: 2.0d,
+	x: 3.0d,
+	y: 3.0d,
 	text: [
-		"Can be made with lapis, rosin or tree resin."
+		"Can be made with lapis, rosin or tree resin in high oven."
 	],
 	dependencies: [
 		"837cf6f5"

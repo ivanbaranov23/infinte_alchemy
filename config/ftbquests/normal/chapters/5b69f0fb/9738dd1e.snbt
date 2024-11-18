@@ -1,0 +1,13 @@
+{
+	x: -6.0d,
+	y: 3.0d,
+	dependencies: [
+		"ed841e3a"
+	],
+	tasks: [{
+		uid: "3ca49424",
+		type: "checkmark",
+		title: "Transmutation",
+		icon: "roots:ritual_transmutation"
+	}]
+}

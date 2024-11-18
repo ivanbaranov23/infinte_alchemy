@@ -57,14 +57,14 @@ function addSawRecipeWByproduct(log as IItemStack, planks as IItemStack, byprod 
 //recipe_name as string, machine_name as string, time as int, energy as int,
 //    out as IItemStack[], 
 //input_iis as IItemStack[], input_iode as IOreDictEntry[], input_iode_amounts as int[], input_unconsumed as IItemStack[]
-static HOA_time as int[] = [5, 20, 60, 300, 300];
-static HOA_energy as int[] = [32, 128, 512, 4096, 1000000];
+static HOA_time as int[] = [5, 10, 20, 40, 120];
+static HOA_energy as int[] = [32, 64, 300, 1000, 10000];
 
 function addHighOvenAlloy(rname as string, level as int, output as IItemStack[], inputs as IItemStack[]){
     scripts.modular_machines.addMMRecipe(
-            rname, "high_oven", HOA_time[level] * 20, HOA_energy[level],
-            output,
-            inputs, [], [], []
+        rname, "high_oven", HOA_time[level] * 20, HOA_energy[level],
+        output,
+        inputs, [], [], []
     );    
 }
 function addHighOvenSmelting(output as IItemStack[], inputs as IItemStack[], fluids as ILiquidStack[], time as int, energy as int){
@@ -110,26 +110,6 @@ function addPlantStationRecipe(
 
 
 function addFluidMixerRecipe(out as ILiquidStack, inp1 as ILiquidStack, inp2 as ILiquidStack, inp as IItemStack, rf_tick as int, time as int){
-	/*addCustomMachineRecipe(
-		"fluid_mixer",
-		{
-			ifluid1: inp1,
-			ifluid2: inp2,
-			iitem1: inp
-		}, {
-			ofluid1: out
-		}, rf_tick * time, time
-	);
-	//mb recipe
-	var rec = RecipeBuilder.newBuilder(out.name ~ out.amount, "large_mixer", time / 2);
-    rec.addEnergyPerTickInput(rf_tick * 4);
-
-    rec.addFluidOutput(out);
-	rec.addFluidInput(inp1);
-	rec.addFluidInput(inp2);
-    rec.addItemInput(inp);
-    
-    rec.build();*/
 
 
 	//req recipe
@@ -141,26 +121,6 @@ function addFluidMixerRecipe(out as ILiquidStack, inp1 as ILiquidStack, inp2 as 
 	);
 }
 function addFluidAlloyerRecipe(out as IItemStack, inp1 as IItemStack, inp2 as IItemStack, fluid as ILiquidStack, rf_tick as int, time as int){
-	/*addCustomMachineRecipe(
-		"fluid_alloyer",
-		{
-			ifluid1: fluid,
-			iitem1: inp1,
-			iitem2: inp2
-		}, {
-			oitem1: out
-		}, time * rf_tick, time
-	);
-
-	var rec = RecipeBuilder.newBuilder(out.name ~ out.amount, "large_fluid_alloyer", time / 2);
-    rec.addEnergyPerTickInput(rf_tick * 4);
-
-    rec.addItemOutput(out);
-	rec.addFluidInput(fluid);
-	rec.addItemInput(inp1);
-	rec.addItemInput(inp2);
-    
-    rec.build();*/
 
 	//
 	scripts.content_machines.addFluidAlloyerRecipe(
@@ -170,39 +130,7 @@ function addFluidAlloyerRecipe(out as IItemStack, inp1 as IItemStack, inp2 as II
 		time, rf_tick
 	);
 }
-/*
-function addAssemblerRecipe(
-	out as IItemStack, 
-	inp1 as IItemStack, inp2 as IItemStack, inp3 as IItemStack, inp4 as IItemStack,// inp5 as IItemStack,
-	rf_tick as int, time as int
-){
-	addCustomMachineRecipe(
-		"assembler",
-		{
-			iitem1: inp1,
-			iitem2: inp2,
-			iitem3: inp3,
-			iitem4: inp4//,
-			//iitem5: inp5
-		}, {
-			oitem1: out
-		}, time * rf_tick, time
-	);
 
-	var rec = RecipeBuilder.newBuilder(out.name ~ out.amount, "large_assembler", time / 4);
-    rec.addEnergyPerTickInput(rf_tick * 8);
-
-    rec.addItemOutput(out);
-	
-	if (inp1) {rec.addItemInput(inp1);}
-	if (inp2) {rec.addItemInput(inp2);}
-	if (inp3) {rec.addItemInput(inp3);}
-	if (inp4) {rec.addItemInput(inp4);}
-	//if (inp5) {rec.addItemInput(inp5);}
-    
-    rec.build();
-}
-*/
 
 function addCarryRecipe(out as IItemStack, inp as IItemStack, other as IIngredient[][]){
 	recipes.addShaped("ia_carry_" ~ out.displayName, out, [

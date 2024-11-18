@@ -1,8 +1,9 @@
 {
 	x: 8.5d,
-	y: 5.0d,
+	y: 6.0d,
 	shape: "square",
 	dependencies: [
+		"ab697167",
 		"3b1a1171"
 	],
 	tasks: [{
@@ -20,5 +21,25 @@
 		uid: "acb78af7",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "aaa3814a",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "immersiveengineering:tool",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "Hammer",
+				TrophyColorRed: 81,
+				TrophyColorGreen: 48,
+				TrophyColorBlue: 26,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

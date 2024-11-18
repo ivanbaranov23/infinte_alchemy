@@ -1,0 +1,39 @@
+{
+	title: "Auto mob farm",
+	icon: "mob_grinding_utils:fan",
+	x: 9.0d,
+	y: 3.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"cb68303e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ce358344",
+		type: "item",
+		items: [{
+			item: "mob_grinding_utils:absorption_hopper"
+		}]
+	},
+	{
+		uid: "ab0f29ed",
+		type: "item",
+		items: [{
+			item: "mob_grinding_utils:fan"
+		}]
+	},
+	{
+		uid: "cb0583b9",
+		type: "item",
+		items: [{
+			item: "mob_grinding_utils:saw"
+		}]
+	}],
+	rewards: [{
+		uid: "6b19e584",
+		type: "item",
+		item: "ironchest:iron_chest 1 2"
+	}]
+}

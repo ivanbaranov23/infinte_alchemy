@@ -130,6 +130,14 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<mysticalagriculture:soulstone>, <twilightforest:naga_scale>, <mysticalagriculture:soulstone>], 
         [<tconstruct:brownstone:3>, <mysticalagriculture:soulstone>, <tconstruct:brownstone:3>]
     ]);
+
+    recipes.addShapeless("ia_umber_soil", <twilightforest:uberous_soil>, [
+        <contenttweaker:mushroomite_mud>,
+        <atum:fertile_soil>,
+        <roots:elemental_soil_air>,
+        <erebus:mud>,
+        <erebus:umbergravel>
+    ]);
 }
 
 {//aether

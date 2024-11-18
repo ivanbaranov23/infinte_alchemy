@@ -1,0 +1,26 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "roots:roots_guide": {
+      "viewedEntries": [
+        "roots:rituals/ritual_transmutation",
+        "roots:spells/library",
+        "roots:spells/introduction2",
+        "roots:crafting/gramary",
+        "roots:spells/introduction",
+        "roots:spells/spell_fey_light"
+      ],
+      "bookmarks": [],
+      "history": [
+        "roots:spells/spell_fey_light",
+        "roots:spells/introduction",
+        "roots:spells/introduction2",
+        "roots:spells/library",
+        "roots:crafting/gramary",
+        "roots:rituals/ritual_transmutation"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

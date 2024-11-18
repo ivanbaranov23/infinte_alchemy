@@ -5,8 +5,8 @@ import mods.mekanism.chemical.oxidizer;
 //frame
 recipes.remove(<mekanism:basicblock:8>);
 recipes.addShaped("ia_machine_frame4", <mekanism:basicblock:8>, [
-	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:atum_godshard>, <contenttweaker:mekanized_steel_plate>], 
-	[<contenttweaker:watertight_steel_rod>, <thermalexpansion:frame>, <contenttweaker:watertight_steel_rod>], 
+	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:eliamondin>, <contenttweaker:mekanized_steel_plate>], 
+	[<contenttweaker:atum_godshard>, <thermalexpansion:frame>, <contenttweaker:atum_godshard>], 
 	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:mekanical_core>, <contenttweaker:mekanized_steel_plate>]
 ]);
 
@@ -171,26 +171,26 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 		recipes.addShaped("ia_met_infuser", <mekanism:machineblock:8>, [
 			[<contenttweaker:mushroomite_gear>, <contenttweaker:mushroomite_gear>, null], 
 			[<mekanism:basicblock:8>, <tconstruct:casting>, <contenttweaker:mekanized_steel_rod>], 
-			[<immersiveengineering:material:9>, <thermalfoundation:material:513>, <contenttweaker:mekanized_steel_rod>]
+			[<contenttweaker:eliamondin>, <thermalfoundation:material:513>, <contenttweaker:mekanized_steel_rod>]
 		]);
 		recipes.remove(<mekanism:machineblock:1>);
 		recipes.addShaped("ia_osmium_compressor", <mekanism:machineblock:1>, [
-			[<ore:blockOsmium>, <contenttweaker:mekanized_steel_block>, <ore:blockOsmium>], 
+			[<contenttweaker:eliamondin>, <contenttweaker:mekanized_steel_block>, <contenttweaker:eliamondin>], 
 			[<ore:alloyElite>, <mekanism:basicblock:8>, <ore:alloyElite>], 
 			[<contenttweaker:mekanized_steel_plate>, <ore:gearOsmium>, <contenttweaker:mekanized_steel_plate>]
 		]);
 		recipes.remove(<mekanism:machineblock>);
 		recipes.addShaped("ia_enrichment_chamber", <mekanism:machineblock>, [
-			[<contenttweaker:spicy_enriched_bioblend>, <thermalfoundation:material:656>, <contenttweaker:spicy_enriched_bioblend>], 
-			[<contenttweaker:relic_ingot>, <mekanism:basicblock:8>, <contenttweaker:relic_ingot>], 
+			[<contenttweaker:spicy_enriched_bioblend>, <prodigytech:magnetic_reassembler>, <contenttweaker:spicy_enriched_bioblend>], 
+			[<thermalfoundation:material:656>, <mekanism:basicblock:8>, <thermalfoundation:material:656>], 
 			[<ore:circuitAdvanced>, <appliedenergistics2:quartz_growth_accelerator>, <ore:circuitAdvanced>]
 		]);
 	
 		recipes.remove(<mekanism:machineblock:3>);
 		recipes.addShaped("ia_mek_crusher", <mekanism:machineblock:3>, [
 			[<contenttweaker:mekanized_steel_gear>, <thermalfoundation:material:656>, <contenttweaker:mekanized_steel_gear>], 
-			[<ore:alloyElite>, <mekanism:basicblock:8>, <ore:alloyElite>], 
-			[<contenttweaker:mekanized_steel_gear>, <ore:gearOsgloglas>, <contenttweaker:mekanized_steel_gear>]
+			[<contenttweaker:eliamondin>, <mekanism:basicblock:8>, <contenttweaker:eliamondin>], 
+			[<ore:alloyElite>, <ore:gearOsgloglas>, <ore:alloyElite>]
 		]);
 		recipes.remove(<mekanism:machineblock2:5>);
 		recipes.addShaped("ia_mek_sawmill", <mekanism:machineblock2:5>, [
@@ -222,15 +222,15 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 		]);
 		recipes.remove(<mekanism:machineblock2:4>);
 		recipes.addShaped("ia_electrolizer", <mekanism:machineblock2:4>, [
-			[<contenttweaker:mekanized_steel_rod>, null, <contenttweaker:mekanized_steel_rod>], 
+			[<contenttweaker:mekanized_steel_rod>, <mekanism:electrolyticcore>, <contenttweaker:mekanized_steel_rod>], 
 			[<ore:circuitAdvanced>, <mekanism:basicblock:8>, <ore:circuitAdvanced>], 
-			[<contenttweaker:mekanized_steel_plate>, <mekanism:electrolyticcore>, <contenttweaker:mekanized_steel_plate>]
+			[<contenttweaker:mekanized_steel_plate>, <contenttweaker:ra_burner>, <contenttweaker:mekanized_steel_plate>]
 		]);
 		recipes.remove(<mekanism:machineblock2:1>);
 		recipes.addShaped("ia_chem_oxydizer", <mekanism:machineblock2:1>, [
 			[null, <mekanism:controlcircuit:2>, null], 
 			[<ironchest:iron_chest:1>, <mekanism:basicblock:8>, <mekanism:gastank>.withTag({tier: 2})], 
-			[<moreplates:osmiridium_plate>, <mekanism:controlcircuit:2>, <moreplates:osmiridium_plate>]
+			[<moreplates:osmiridium_plate>, <contenttweaker:ra_burner>, <moreplates:osmiridium_plate>]
 		]);
 		recipes.remove(<mekanism:machineblock2:2>);
 		recipes.addShaped("ia_chem_infuser", <mekanism:machineblock2:2>, [
@@ -250,7 +250,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	recipes.addShaped("ia_chem_dissolver_chamber", <mekanism:machineblock2:6>, [
 		[<contenttweaker:mekanized_steel_plate>, <mekanism:electrolyticcore>, <contenttweaker:mekanized_steel_plate>], 
 		[<contenttweaker:gastight_steel_gear>, <mekanism:basicblock:8>, <contenttweaker:gastight_steel_gear>], 
-		[<contenttweaker:mekanized_steel_plate>, <ore:circuitUltimate>, <contenttweaker:mekanized_steel_plate>]
+		[<ore:circuitUltimate>, <contenttweaker:ra_burner>, <ore:circuitUltimate>]
 	]);
 	recipes.remove(<mekanism:machineblock2:7>);
 	recipes.addShaped("ia_chem_washer", <mekanism:machineblock2:7>, [
@@ -262,7 +262,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	recipes.addShaped("ia_mek_purification_chamber", <mekanism:machineblock:9>, [
 		[<contenttweaker:mekanized_steel_plate>, <ore:circuitElite>, <contenttweaker:mekanized_steel_plate>], 
 		[<ore:rodHDPE>, <mekanism:machineblock>, <ore:rodHDPE>], 
-		[<contenttweaker:mekanized_steel_plate>, <ore:circuitElite>, <contenttweaker:mekanized_steel_plate>]
+		[<contenttweaker:mekanized_steel_plate>, <contenttweaker:ra_burner>, <contenttweaker:mekanized_steel_plate>]
 	]);
 	recipes.remove(<mekanism:machineblock2:3>);
 	recipes.addShaped("ia_mek_chemical_injection_chamber", <mekanism:machineblock2:3>, [

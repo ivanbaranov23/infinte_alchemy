@@ -1,0 +1,60 @@
+{
+    "type": "firebloom",
+    "version": 2,
+    "ref": {
+      "a": {
+        "name": "erebus:giant_flower",
+        "meta": 15
+      },
+      "b": {
+        "name": "erebus:giant_flower",
+        "meta": 12
+      },
+      "c": {
+        "name": "botania:blazeblock",
+        "meta": 0
+      }
+    },
+    "shape": [
+      [
+        "c c c",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "     ",
+        " bbb ",
+        "  b  ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "c   c",
+        " bbb ",
+        " bab ",
+        "  a  ",
+        "  a  ",
+        "  a  "
+      ],
+      [
+        "     ",
+        " bbb ",
+        "  b  ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      [
+        "c c c",
+        "     ",
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ]
+    ]
+  }

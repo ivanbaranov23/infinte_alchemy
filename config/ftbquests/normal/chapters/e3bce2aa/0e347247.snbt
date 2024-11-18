@@ -1,6 +1,9 @@
 {
 	x: 7.0d,
 	y: 5.0d,
+	text: [
+		"Can be made into pam's gardens for crops. Some crops can be obtained through other means."
+	],
 	dependencies: [
 		"740daded"
 	],

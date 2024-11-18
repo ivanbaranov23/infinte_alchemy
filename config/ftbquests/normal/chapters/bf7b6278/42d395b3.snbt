@@ -1,5 +1,5 @@
 {
-	x: 1.0d,
+	x: 0.0d,
 	y: 0.0d,
 	shape: "square",
 	tasks: [{
@@ -12,5 +12,10 @@
 				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}
+	}],
+	rewards: [{
+		uid: "81a4cea0",
+		type: "item",
+		item: "immersiveengineering:tool 1 3"
 	}]
 }

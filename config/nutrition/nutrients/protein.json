@@ -57,6 +57,8 @@
 			"portionMeat"
 		],
 		"items": [
+			"contenttweaker:food_pellet",
+
 			"abyssalcraft:beefp",
 			"abyssalcraft:chickenp",
 			"abyssalcraft:eggp",

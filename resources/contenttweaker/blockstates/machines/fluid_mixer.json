@@ -27,8 +27,8 @@
             "east":  {  "y": 90 }
         },
       "active": {
-        "true": {},
-        "false": {}
+        "true": {"textures": {"north": "contenttweaker:blocks/fluid_mixer_active"}},
+        "false": {"textures": {"north": "contenttweaker:blocks/fluid_mixer"}}
       }
     }
   }

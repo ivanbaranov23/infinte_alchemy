@@ -1,0 +1,22 @@
+{
+	x: -5.0d,
+	y: -5.0d,
+	dependencies: [
+		"a2041799"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ab818dd8",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_auto_sifter"
+		}]
+	},
+	{
+		uid: "f48e6aba",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_waterwheel"
+		}]
+	}]
+}

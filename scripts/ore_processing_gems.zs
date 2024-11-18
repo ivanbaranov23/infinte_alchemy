@@ -7,10 +7,7 @@ import mods.thermalexpansion.Transposer;
     
 
     //addSimpleCrushingRecipe(malachite_ore, <contenttweaker:malachite_ore_dust> * 4); //todo crushing byproducts
-    mods.inworldcrafting.FluidToItem.transform(
-        <contenttweaker:malachite_dust>, 
-        <liquid:water>, [<contenttweaker:malachite_ore_dust>]
-    );
+    
     furnace.addRecipe(<contenttweaker:malachite_polycrystal>, <contenttweaker:malachite_dust>);
     furnace.addRecipe(<thermalfoundation:material:128>, <contenttweaker:malachite_dust>);
 
@@ -36,6 +33,10 @@ import mods.thermalexpansion.Transposer;
         <exnihilocreatio:item_mesh:4>,
         20, 500
     );
+}
+
+{//flolit
+    <ore:dustFlolit>.add(<contenttweaker:flolit>);
 }
 
 {//cincinnasite
@@ -144,8 +145,11 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
     <biomesoplenty:gem>.displayName = "Enethyst";
     <biomesoplenty:gem_block>.displayName = "Block of Enethyst";
+    <biomesoplenty:gem_ore>.displayName = "Enethyst Ore";
     <biomesoplenty:gem>.addTooltip("Ender Amethyst");
     <biomesoplenty:gem_block>.addTooltip("Ender Amethyst");
+    <biomesoplenty:gem_ore>.addTooltip("Ender Amethyst");
+
 
     <ore:dustAmethyst>.add(<contenttweaker:amethyst_dust>);
     <ore:dustEnethyst>.add(<contenttweaker:ender_amethyst_dust>);

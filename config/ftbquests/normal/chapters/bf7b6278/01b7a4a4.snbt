@@ -1,6 +1,6 @@
 {
-	x: 5.0d,
-	y: 2.0d,
+	x: 4.0d,
+	y: 4.0d,
 	text: [
 		"It's fluid drawers. Just attach them to drawer controller and pump fluid into it. Drawer storage and void upgardes work with it. "
 	],

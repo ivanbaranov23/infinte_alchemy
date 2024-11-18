@@ -1,0 +1,18 @@
+{
+	x: -5.0d,
+	y: 4.0d,
+	text: [
+		"One of the ways of obtaining this"
+	],
+	dependencies: [
+		"9738dd1e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "bafcefd4",
+		type: "item",
+		items: [{
+			item: "minecraft:waterlily"
+		}]
+	}]
+}

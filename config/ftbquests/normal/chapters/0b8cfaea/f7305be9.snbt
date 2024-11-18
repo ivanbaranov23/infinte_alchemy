@@ -9,7 +9,6 @@
 		"More mycelium speeds up the transformation."
 	],
 	dependencies: [
-		"6cb0e4ca",
 		"2ecdc636"
 	],
 	tasks: [{

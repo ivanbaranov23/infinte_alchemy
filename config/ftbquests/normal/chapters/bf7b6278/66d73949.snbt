@@ -1,0 +1,13 @@
+{
+	x: 5.0d,
+	y: -2.0d,
+	text: [
+		"All these metals can be made sieveless. Search JEI for ores/pieces/molten"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ca3cfaa9",
+		type: "checkmark",
+		title: "No sieve, no problem"
+	}]
+}

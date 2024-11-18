@@ -5,7 +5,9 @@
 	text: [
 		"You know how it's done. ",
 		"",
-		"Make a barrel for water and dirt, sieve for sieving and crook for string."
+		"Make a barrel for water and dirt, sieve for sieving and crook for string.",
+		"",
+		"Did you know: you can milk entities by putting them on top of a barrel?"
 	],
 	dependencies: [
 		"911ba93a"

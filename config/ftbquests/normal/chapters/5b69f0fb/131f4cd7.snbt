@@ -1,0 +1,15 @@
+{
+	x: -5.0d,
+	y: 5.0d,
+	dependencies: [
+		"99fe0134"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4cb3d7be",
+		type: "item",
+		items: [{
+			item: "roots:unending_bowl"
+		}]
+	}]
+}

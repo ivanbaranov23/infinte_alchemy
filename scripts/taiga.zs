@@ -63,24 +63,5 @@ mods.actuallyadditions.Empowerer.addRecipe(
 );
 
 
-
-
-//jei fluids
-function addJEIhint_fluid_smeltery_temperature(fluid as ILiquidStack, temp as int){
-    scripts.jei.addJEIhint(
-        [],
-        [fluid],
-        [<tconstruct:smeltery_controller>, <tconstruct:seared_tank>],
-        [<minecraft:paper>.withDisplayName("Temperature: " ~ temp)]
-    );
-}
-addJEIhint_fluid_smeltery_temperature(<liquid:lava>, 1000);
-addJEIhint_fluid_smeltery_temperature(<liquid:pyrotheum>, 3700);
-addJEIhint_fluid_smeltery_temperature(<liquid:fiery_essence>, 700);
-addJEIhint_fluid_smeltery_temperature(<liquid:fire_water>, 1700);
-addJEIhint_fluid_smeltery_temperature(<liquid:magma_fluid>, 1700);
-addJEIhint_fluid_smeltery_temperature(<liquid:dilithium_fluid>, 1200);
-addJEIhint_fluid_smeltery_temperature(<liquid:nitronite_fluid>, 2800);
-
-
-mods.thermalexpansion.Crucible.removeRecipe(<minecraft:magma>);
+mods.tconstruct.Melting.removeRecipe(<liquid:basalt_fluid>);
+<ore:blockBasalt>.remove(<taiga:basalt_block>);

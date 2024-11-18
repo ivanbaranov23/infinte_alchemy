@@ -1,0 +1,16 @@
+{
+	x: 6.5d,
+	y: 6.0d,
+	tasks: [{
+		uid: "094122e8",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 133"
+		}]
+	}],
+	rewards: [{
+		uid: "36c37b81",
+		type: "item",
+		item: "thermalfoundation:storage 1 5"
+	}]
+}

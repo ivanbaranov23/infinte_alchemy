@@ -21,6 +21,14 @@ recipes.addShaped("ia_dry_rubber", <industrialforegoing:dryrubber>, [
 	[<ore:pelletHDPE>, <thermalfoundation:material:832>, <ore:pelletHDPE>], 
 	[<industrialforegoing:tinydryrubber>, <mekanism:biofuel>, <industrialforegoing:tinydryrubber>]
 ]);
+furnace.remove(<industrialforegoing:plastic>);
+mods.enderio.AlloySmelter.addRecipe(<industrialforegoing:plastic> * 3, 
+    [
+        <industrialforegoing:dryrubber> * 4,
+		<contenttweaker:eliamondin>,
+		<twilightforest:ironwood_ingot> * 2
+    ]
+);
 
 //<ore:slimeball>.remove(<industrialforegoing:pink_slime>);
 

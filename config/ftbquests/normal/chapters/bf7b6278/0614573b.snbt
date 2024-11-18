@@ -5,7 +5,7 @@
 	text: [
 		"Research Station (RS) is a bit special compared to other multiblocks. It is mainly used to do research, but can also be used to get info on mech and livings.",
 		"",
-		"Research book will give you access to new recipes with better yields. The book itself is not consumed in recipes, tho ME system will eat it, so keep it in mind. You don't have to do all research.  ",
+		"Research book will give you access to new recipes with better yields. The book itself is not consumed in recipes, tho ME system will eat it, so keep that in mind. You don't have to do all research.  ",
 		"",
 		"Reseach is a small puzzle. You have a list of 5-8 items for research and your goal is to find 3 correct among them. ",
 		"To perform research load research medium and 3 items into RS and after some time you will get either research book or a piece of paper ",
@@ -77,5 +77,28 @@
 		uid: "efaeccb0",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "7db56d8c",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "minecraft:paper",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "Frame 1",
+				TrophyColorRed: 171,
+				TrophyColorGreen: 171,
+				TrophyColorBlue: 171,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b,
+				display: {
+					Name: "Research"
+				}
+			}
+		}
 	}]
 }

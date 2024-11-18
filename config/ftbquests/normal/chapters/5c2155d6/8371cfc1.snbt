@@ -3,7 +3,7 @@
 	x: 4.0d,
 	y: 4.0d,
 	text: [
-		"Honey drip will make your tool sometime drop nectar when mining blocks while elastic fibre is just a good handle or extra."
+		"Honey drip will make your tool sometime drop nectar when mining blocks while elastic fibre is just a good handle/extra."
 	],
 	dependencies: [
 		"2266a5db"

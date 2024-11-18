@@ -1,3 +1,4 @@
+import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
@@ -78,3 +79,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 //love
 removePotion(<minecraft:double_plant:4>, <liquid:potion>.withTag({Potion: "extrautils2:xu2.love"}));
 addPotion("extrautils2:xu2.love", <contenttweaker:life>);
+
+//gravity
+removePotion(<ore:obsidian>.firstItem, <liquid:potion>.withTag({Potion: "extrautils2:xu2.gravity"}));
+addPotion("extrautils2:xu2.gravity", <contenttweaker:bedrockium_alloy_ingot>);

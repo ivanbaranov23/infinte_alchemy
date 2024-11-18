@@ -6,6 +6,25 @@
     "coolDown": 20
   },
   {
+    "entityOnTop": "zombie",
+    "result": "rot",
+    "amount": 40,
+    "coolDown": 20
+  },
+  {
+    "entityOnTop": "snowman",
+    "result": "water",
+    "amount": 80,
+    "coolDown": 20
+  },
+  
+  {
+    "entityOnTop": "twilightforest:loyal_zombie",
+    "result": "rot",
+    "amount": 100,
+    "coolDown": 10
+  },
+  {
     "entityOnTop": "erebus:erebus.beetle",
     "result": "beetle_juice",
     "amount": 10,

@@ -1,0 +1,19 @@
+{
+	x: 6.5d,
+	y: 3.0d,
+	dependencies: [
+		"e6b9706a"
+	],
+	tasks: [{
+		uid: "fcb0fb03",
+		type: "item",
+		items: [{
+			item: "prodigytech:circuit_crude"
+		}]
+	}],
+	rewards: [{
+		uid: "d48d31e3",
+		type: "item",
+		item: "prodigytech:circuit_crude"
+	}]
+}

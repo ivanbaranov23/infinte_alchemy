@@ -86,8 +86,8 @@ function getColor(v as double){
 
 
 <contenttweaker:satellite1>.addTooltip("Satellite Power: 10");
-<contenttweaker:satellite2>.addTooltip("Satellite Power: 100");
-<contenttweaker:satellite3>.addTooltip("Satellite Power: 1000");
+<contenttweaker:satellite2>.addTooltip("Satellite Power: 1000");
+<contenttweaker:satellite3>.addTooltip("Satellite Power: 100000");
 
 
 
@@ -142,7 +142,7 @@ function getColor(v as double){
             <contenttweaker:pandemonium_plate>,
             <contenttweaker:moon_plate> * 3
 		],
-		<liquid:dark_matter> * 576, 40, 4096
+		<liquid:alien_polymer> * 1000, 40, 4096
 	);
 
 	scripts.content_machines.addAssemblerRecipe(
@@ -167,7 +167,7 @@ function getColor(v as double){
             <contenttweaker:signal_reciever>,
             <contenttweaker:satellite_plating> * 2,
             <contenttweaker:satellite_chip> * 2,
-            <solarflux:solar_panel_6> * 4,
+            <solarflux:solar_panel_6> * 16,
             <contenttweaker:robot_brain> * 4,
             <contenttweaker:rtg>
         ],
@@ -188,17 +188,22 @@ function getColor(v as double){
     );
 
     //antenna
-    scripts.content_machines.addAssemblerRecipe(
-        [<contenttweaker:antenna_mk1>],
-        [
-            <contenttweaker:signal_reciever> * 5,
-            <contenttweaker:satellite_plating>,
-            <contenttweaker:satellite_chip> * 4,
-            <contenttweaker:zirconium_mirror>
-        ],
-        <liquid:mirion2> * (8 * 144), 40, 4096
-    );
-
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:antenna_mk1>, [
+        [null, null, <contenttweaker:signal_reciever>, null, null], 
+        [null, null, <contenttweaker:signal_reciever>, null, null], 
+        [<contenttweaker:signal_reciever>, null, <contenttweaker:signal_reciever>, null, <contenttweaker:signal_reciever>], 
+        [<contenttweaker:satellite_chip>, <contenttweaker:zirconium_mirror>, <contenttweaker:zirconium_mirror>, <contenttweaker:zirconium_mirror>, <contenttweaker:satellite_chip>], 
+        [<contenttweaker:satellite_chip>, <contenttweaker:satellite_plating>, <contenttweaker:satellite_plating>, <contenttweaker:satellite_plating>, <contenttweaker:satellite_chip>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:antenna_mk2>, [
+        [null, null, null, <contenttweaker:signal_reciever>, null, null, null], 
+        [null, null, null, <contenttweaker:signal_reciever>, null, null, null], 
+        [<contenttweaker:signal_reciever>, null, null, <contenttweaker:signal_reciever>, null, null, <contenttweaker:signal_reciever>], 
+        [<contenttweaker:signal_reciever>, null, null, <contenttweaker:signal_reciever>, null, null, <contenttweaker:signal_reciever>], 
+        [<contenttweaker:satellite_plating2>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_chip>, <contenttweaker:information_crystal>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_plating2>], 
+        [<contenttweaker:satellite_plating2>, <contenttweaker:circuit1>, <contenttweaker:information_crystal>, <contenttweaker:rtg2>, <contenttweaker:information_crystal>, <contenttweaker:circuit1>, <contenttweaker:satellite_plating2>], 
+        [<contenttweaker:satellite_plating2>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_chip>, <contenttweaker:information_crystal>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_plating2>]
+    ]);
 
     //drone
     scripts.content_machines.addAssemblerRecipe(

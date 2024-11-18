@@ -119,15 +119,15 @@ Distillation.addRecipe(
 	[<liquid:pure_water> * 10, <liquid:water> * 70], 
 	[<actuallyadditions:item_dust:7>, <exnihilocreatio:item_material:3>], 
 	<liquid:witchwater> * 100, 3 * 20 * 128, 3 * 20, 
-	[0.07, 0.15]
+	[0.07, 0.04]
 );
 
 {//lavas
 	Distillation.addRecipe(
 		[<liquid:obsidian> * 60, <liquid:iron> * 12, <liquid:gold> * 4, <liquid:lava_residue> * 2], 
-		[<chisel:basalt>, <deepmoblearning:soot_covered_redstone>], 
+		[<chisel:basalt2:7>, <deepmoblearning:soot_covered_redstone>], 
 		<liquid:lava> * 100, 1200, 50, 
-		[0.07, 0.05]
+		[0.07, 0.03]
 	);
 
 	//nitronite
@@ -227,7 +227,7 @@ Refinery.addRecipe(<liquid:pure_water> * 3000, <mekanism:dirtydust:5> % 1, <liqu
 
 {//ultarpure water and ion beads
 	scripts.content_machines.addBioAssemblerRecipe(
-		[<contenttweaker:ion_beads_spent>], <liquid:ultrapure_water> * 200,
+		[<contenttweaker:ion_beads_spent>], <liquid:ultrapure_water> * 400,
 		[
 			<contenttweaker:ion_beads>,
 			<contenttweaker:advanced_cryotheum>
@@ -305,7 +305,7 @@ TEImbuer.addRecipe(<liquid:sterile_water> * (500), <contenttweaker:soap>, <liqui
 
 
 {//holy water
-	mods.inworldcrafting.ExplosionCrafting.explodeItemRecipe(<contenttweaker:holy_thing>, <mod_lavacow:holy_sludge>, 90);
+	
 	Vat.addRecipe(
 		<liquid:holy_water> * 1000, 1.0, <liquid:pure_water> * 1000, 
 		[<aether_legacy:holystone>], [1.0], 
@@ -425,7 +425,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
     	<liquid:endacid> * 2000, 3.0, <liquid:endacid> * 1000, 
 		[<stygian:endlog>], [1.0], 
 		[<contenttweaker:delicate_tanzanite>], [1.0], 
-		5000
+		100000
 	);
 	scripts.content_machines.addBioAssemblerRecipe(
         [], <liquid:endacid> * 1500, 

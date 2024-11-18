@@ -1,5 +1,5 @@
 {
-	x: 11.0d,
+	x: 12.0d,
 	y: 0.0d,
 	shape: "square",
 	dependencies: [
@@ -30,6 +30,26 @@
 					AS_Amulet_HolderLeast: -5658007986434875901L,
 					AS_Amulet_HolderMost: -7773060121311102705L
 				}
+			}
+		}
+	},
+	{
+		uid: "42cac4fe",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "prodigytech:explosion_furnace",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "Explosion Furnace",
+				TrophyColorRed: 171,
+				TrophyColorGreen: 171,
+				TrophyColorBlue: 171,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
 			}
 		}
 	}]

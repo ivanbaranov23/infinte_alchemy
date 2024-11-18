@@ -31,6 +31,7 @@ addGas("ammonium_nitrate", "2e3e53", true);
 addGas("rfna", "e0190a", false);
 
 addGas("carmin", "cb1109", false);
+addGas("black_slurp", "000000", true);
 
 addGas("polyethylene", "723265", true);
 

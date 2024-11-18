@@ -1,0 +1,51 @@
+{
+    "type": "mushroom_red",
+    "version": 2,
+    "ref": {
+      "a": {
+        "name": "minecraft:red_mushroom_block",
+        "meta": 14
+      },
+      "b": {
+        "name": "minecraft:red_mushroom_block",
+        "meta": 10
+      }
+    },
+    "shape": [
+      [
+        "     ",
+        " aaa ",
+        " aaa ",
+        " aaa ",
+        "     "
+      ],
+      [
+        " aaa ",
+        "a   a",
+        "a   a",
+        "a   a",
+        "     "
+      ],
+      [
+        " aaa ",
+        "a b a",
+        "a b a",
+        "a b a",
+        "  b  "
+      ],
+      [
+        " aaa ",
+        "a   a",
+        "a   a",
+        "a   a",
+        "     "
+      ],
+      [
+        "     ",
+        " aaa ",
+        " aaa ",
+        " aaa ",
+        "     "
+      ]
+    ]
+  }

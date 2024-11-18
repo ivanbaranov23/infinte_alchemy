@@ -1,0 +1,15 @@
+{
+	x: 0.0d,
+	y: 10.0d,
+	dependencies: [
+		"f3a246c2",
+		"814f67b9"
+	],
+	tasks: [{
+		uid: "a1f3a040",
+		type: "item",
+		items: [{
+			item: "nae2:coprocessor_16x"
+		}]
+	}]
+}

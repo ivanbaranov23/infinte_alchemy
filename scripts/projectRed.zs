@@ -50,21 +50,7 @@ import mods.appliedenergistics2.Inscriber;
 		20, 1000
 	);
 
-	//motor
-	recipes.remove(<projectred-core:resource_item:410>);
-	recipes.addShaped("ia_pr_motor", <projectred-core:resource_item:410>, [
-		[null, <contenttweaker:mekanized_steel_rod>, null], 
-		[<contenttweaker:titanium_plate>, <thermalfoundation:material:515>, <contenttweaker:titanium_plate>], 
-		[<projectred-core:resource_item:401>, <contenttweaker:tignalum_gear>, <projectred-core:resource_item:400>]
-	]);
-	scripts.content_machines.addAssemblerRecipe(
-		[<projectred-core:resource_item:410> * 2],
-		[
-			<contenttweaker:titanium_plate>, <thermalfoundation:material:515>,
-			<projectred-core:resource_item:401>, <contenttweaker:tignalum_gear>, <projectred-core:resource_item:400>
-		],
-		<liquid:mekanized_steel> * 288, 20, 256
-	);
+	
 
 	mods.actuallyadditions.Empowerer.addRecipe(
 		<projectred-expansion:infused_ender_pearl> * 2, <appliedenergistics2:material:9>, 

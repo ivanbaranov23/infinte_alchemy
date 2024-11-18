@@ -1,6 +1,6 @@
 {
 	title: "All the generators",
-	x: -4.0d,
+	x: -2.0d,
 	y: 2.0d,
 	text: [
 		"Make all the generators. You'll need 2 sets of them: one for rainbow generator and another to run rainbow generator.",

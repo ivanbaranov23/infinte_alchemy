@@ -1,6 +1,9 @@
 {
 	x: 2.5d,
 	y: -1.0d,
+	text: [
+		"Charges capacitor with hot air"
+	],
 	dependencies: [
 		"3e071216"
 	],

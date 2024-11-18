@@ -52,5 +52,12 @@
 			item: "immersiveengineering:metal_decoration0 1 4"
 		}],
 		count: 2L
+	},
+	{
+		uid: "602d19ab",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		}]
 	}]
 }

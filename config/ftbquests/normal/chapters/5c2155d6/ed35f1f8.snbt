@@ -1,0 +1,65 @@
+{
+	title: "Research vines",
+	icon: "contenttweaker:research_plants3",
+	x: 4.0d,
+	y: -5.0d,
+	shape: "gear",
+	tasks: [{
+		uid: "4374d3be",
+		type: "item",
+		items: [{
+			item: "atum:ophidian_tongue_flower"
+		}],
+		count: 4L
+	},
+	{
+		uid: "f608bbf5",
+		type: "item",
+		items: [{
+			item: "botania:vineball"
+		}],
+		count: 4L
+	},
+	{
+		uid: "ebc7a429",
+		type: "item",
+		items: [{
+			item: "erebus:wall_plants_cultivated 1 7"
+		}],
+		count: 4L
+	},
+	{
+		uid: "08784031",
+		type: "item",
+		items: [{
+			item: "natura:nether_thorn_vines"
+		}],
+		count: 8L
+	},
+	{
+		uid: "b5bfe540",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "blueslime",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "203c5de7",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "purpleslime",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

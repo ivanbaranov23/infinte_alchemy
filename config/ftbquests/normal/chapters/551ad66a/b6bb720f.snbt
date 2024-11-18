@@ -1,0 +1,16 @@
+{
+	x: 3.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "fea9d378",
+		type: "item",
+		items: [{
+			item: "minecraft:redstone"
+		}]
+	}],
+	rewards: [{
+		uid: "79e7d083",
+		type: "item",
+		item: "minecraft:redstone_block"
+	}]
+}

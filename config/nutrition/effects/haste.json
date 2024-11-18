@@ -1,0 +1,14 @@
+{
+	"name": "haste",               
+	"potion": "minecraft:haste",  
+	"amplifier": 0,                  
+	"minimum": 80,                  
+	"maximum": 95,                  
+	"detect": "any",                 
+	"nutrients": [                   
+		"protein"                  
+	],                               
+	"cumulative_modifier": 1,        
+	"particles": "transparent",      
+	"enabled": true                 
+}

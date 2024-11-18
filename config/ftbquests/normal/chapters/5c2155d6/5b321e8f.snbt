@@ -2,7 +2,7 @@
 	title: "Research Plants 1",
 	icon: "contenttweaker:research_plants1",
 	x: 3.0d,
-	y: -4.0d,
+	y: -5.0d,
 	shape: "gear",
 	text: [
 		""

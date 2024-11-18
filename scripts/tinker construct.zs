@@ -18,6 +18,13 @@ recipes.addShaped(
     [<tconstruct:seared:3>, <minecraft:furnace>, <tconstruct:seared:3>]]
 );
 
+recipes.remove(<tconstruct:seared_furnace_controller>);
+recipes.addShaped("ia_seared_furnace", <tconstruct:seared_furnace_controller>, [
+    [<tconstruct:seared:3>, <tconstruct:materials>, <tconstruct:seared:3>],
+    [<tconstruct:materials>, <morefurnaces:furnaceblock:5>, <tconstruct:materials>],
+    [<tconstruct:seared:3>, <tconstruct:materials>, <tconstruct:seared:3>]
+]);
+
 //bauxite
 Casting.addBasinRecipe(
     <immersiveengineering:ore:1>, 
@@ -55,7 +62,11 @@ recipes.addShaped("ia_silky_jewel_alt", <tconstruct:materials:16>, [
 {//slime
     recipes.remove(<minecraft:slime>);
     recipes.addShaped("ia_slime_block_no_ore", <minecraft:slime>,
-        [[<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>], [<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>], [<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>]]
+        [
+            [<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>], 
+            [<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>], 
+            [<minecraft:slime_ball>, <minecraft:slime_ball>, <minecraft:slime_ball>]
+        ]
     );
 
     //drop
@@ -76,3 +87,19 @@ recipes.addShaped("ia_firewood", <tconstruct:firewood:1>, [
     [<taiga:osram_nugget>, <biomesoplenty:flower_0:15>, <taiga:osram_nugget>],
     [<minecraft:blaze_powder>, <tconstruct:firewood>, <minecraft:blaze_powder>]
 ]);
+
+//materials
+recipes.addShaped("ia_bocuit", <contenttweaker:bocuit>, [
+    [null, <immersiveengineering:material:22>, null], 
+    [<contenttweaker:gold_wire>, <prodigytech:circuit_crude>, <immersiveengineering:material:20>], 
+    [null, <contenttweaker:zinc_wire>, null]
+]);
+
+{
+    recipes.remove(<tconstruct:materials:14>);
+    recipes.addShaped("ia_reinforced_mod", <tconstruct:materials:14>, [
+        [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>], 
+        [<contenttweaker:anput_godshard>, <tconstruct:cast>, <contenttweaker:anput_godshard>], 
+        [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>]
+    ]);
+}

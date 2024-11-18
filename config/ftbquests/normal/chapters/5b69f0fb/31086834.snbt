@@ -1,0 +1,23 @@
+{
+	x: -7.0d,
+	y: 2.0d,
+	text: [
+		"Barrel with a snowman on top will be producing water."
+	],
+	dependencies: [
+		"9738dd1e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8e1bd688",
+		type: "item",
+		items: [{
+			item: "minecraft:snowball"
+		}]
+	}],
+	rewards: [{
+		uid: "d3c16dff",
+		type: "item",
+		item: "minecraft:pumpkin"
+	}]
+}

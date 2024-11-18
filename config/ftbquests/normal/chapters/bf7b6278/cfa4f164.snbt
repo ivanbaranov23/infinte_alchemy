@@ -24,7 +24,7 @@
 		"",
 		"Nuit blessed fuel - 2 mb/t",
 		"",
-		"flow of infinity - 0 mb/t (free power) (make a creative energy source at this point)"
+		"flow of infinity - 0 mb/t (free power)"
 	],
 	dependencies: [
 		"05e9c099",

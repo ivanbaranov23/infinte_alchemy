@@ -37,9 +37,6 @@ recipes.addShapeless("sand_to_sandyglass",
 recipes.remove(<extrautils2:decorativesolidwood:1>);
 recipes.remove(<extrautils2:magicapple>);
 
-//demon and angel alt
-
-
 
 //sun crystal
 recipes.remove(<extrautils2:suncrystal:250>);
@@ -65,6 +62,37 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     10000
 );
 
+{//nodes
+	recipes.remove(<extrautils2:pipe>);
+	recipes.addShaped("ia_xu_pipe", <extrautils2:pipe> * 16, [
+		[null, <projectred-transmission:wire>, null], 
+		[<projectred-transmission:wire>, <contenttweaker:zinc_rod>, <projectred-transmission:wire>], 
+		[null, <projectred-transmission:wire>, null]
+	]);
+
+	recipes.remove(<extrautils2:grocket>);
+	recipes.addShaped("ia_grocket", <extrautils2:grocket>, [
+		[null, <extrautils2:pipe>, null], 
+		[<minecraft:stone_slab>, <extrautils2:pipe>, <minecraft:stone_slab>], 
+		[<minecraft:stone_slab>, <minecraft:chest>, <minecraft:stone_slab>]
+	]);
+
+	recipes.remove(<extrautils2:grocket:2>);
+	recipes.addShaped("ia_grocket2", <extrautils2:grocket:2>, [
+		[null, <extrautils2:pipe>, null], 
+		[<minecraft:stone_slab>, <extrautils2:pipe>, <minecraft:stone_slab>], 
+		[<minecraft:stone_slab>, <minecraft:bucket>, <minecraft:stone_slab>]
+	]);
+
+	recipes.remove(<extrautils2:grocket:3>);
+	recipes.addShapeless("ia_grocket3", <extrautils2:grocket:3>, [
+		<extrautils2:grocket>, <contenttweaker:simple_motor>
+	]);
+	recipes.remove(<extrautils2:grocket:4>);
+	recipes.addShapeless("ia_grocket4", <extrautils2:grocket:4>, [
+		<extrautils2:grocket:2>, <contenttweaker:simple_motor>
+	]);
+}
 
 //golden lasso
 recipes.remove(<extrautils2:goldenlasso>);
@@ -83,14 +111,10 @@ recipes.addShaped("ia_resonator", <extrautils2:resonator>, [
 ]);
 
 Resonator.add(<enderio:item_alloy_ingot>, <thermalfoundation:material:160>, 1600);
+Resonator.add(<enderio:item_material:32>, <moreplates:osmium_plate>, 1600);
+Resonator.add(<projectred-core:resource_item:105>, <moreplates:cobalt_plate>, 1600);
+mods.extrautils2.Crusher.add(<minecraft:prismarine_crystals>, <minecraft:prismarine_shard>);
 
-//machine block
-recipes.remove(<extrautils2:machine>);
-recipes.addShaped("ia_machine_frame1", <extrautils2:machine> * 4, [
-	[<projectred-core:resource_item>, <ironchest:iron_chest>, <projectred-core:resource_item>], 
-	[<immersiveengineering:wirecoil:5>, <contenttweaker:power_core_active>, <immersiveengineering:wirecoil:5>], 
-	[<projectred-core:resource_item>, <morefurnaces:furnaceblock>, <projectred-core:resource_item>]
-]);
 
 {/////////////////////////////////////machines
 	//enchanter

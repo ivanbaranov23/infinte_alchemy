@@ -47,12 +47,16 @@ function addMekOreNew(
     //nickel
     addMekOreFix([<thermalfoundation:ore:5>, <exnihilocreatio:item_ore_nickel:1>], <gas:nickel>, <mekores:mekanismore:11>, <mekores:mekanismore:12>);
     //zinc
+    addMekOreFix([<contenttweaker:zinc_ore>, <exnihilocreatio:item_ore_zinc:1>], <gas:zinc>, <mekores:mekanismore:111>, <mekores:mekanismore:112>);
     //aluminum
     addMekOreFix([<thermalfoundation:ore:4>, <exnihilocreatio:item_ore_aluminum:1>, <erebus:ore_aluminium>], <gas:aluminum>, <mekores:mekanismore:31>, <mekores:mekanismore:32>);
 
     //cobalt
+    addMekOreFix([<netherendingores:ore_other_1:4>, <tconstruct:ore>, <exnihilocreatio:item_ore_cobalt:1>], <gas:cobalt>, <mekores:mekanismore:36>, <mekores:mekanismore:37>);
     //ardite
+    addMekOreFix([<netherendingores:ore_other_1:2>, <tconstruct:ore:1>, <exnihilocreatio:item_ore_ardite:1>], <gas:ardite>, <mekores:mekanismore:41>, <mekores:mekanismore:42>);
 
+    //taiga
     addMekOreFix([<contenttweaker:karmesine_chunk>], <gas:karmesine>, <mekores:mekanismore:271>, <mekores:mekanismore:272>);
     addMekOreFix([<contenttweaker:ovium_chunk>], <gas:ovium>, <mekores:mekanismore:276>, <mekores:mekanismore:277>);
     addMekOreFix([<contenttweaker:jauxum_chunk>], <gas:jauxum>, <mekores:mekanismore:281>, <mekores:mekanismore:282>);
@@ -148,7 +152,14 @@ function addMekOreNew(
 
     //draconium
     addMekOreFix(
-        [<draconicevolution:draconium_ore>, <exnihilocreatio:item_ore_draconium:1>], <gas:draconium>, <mekores:mekanismore:51>, <mekores:mekanismore:52>
+        [<draconicevolution:draconium_ore>, <exnihilocreatio:item_ore_draconium:1>], 
+        <gas:draconium>, <mekores:mekanismore:51>, <mekores:mekanismore:52>
+    );
+
+    //palladium
+    addMekOreFix(
+        [<contenttweaker:palladium_chunk>], 
+        <gas:palladium>, <mekores:mekanismore:121>, <mekores:mekanismore:122>
     );
 
     //abyssum

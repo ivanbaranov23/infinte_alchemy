@@ -4,6 +4,9 @@
 	text: [
 		"USed for making cooking oil used for cooking"
 	],
+	dependencies: [
+		"0e347247"
+	],
 	optional: true,
 	or_tasks: true,
 	tasks: [{

@@ -1,0 +1,21 @@
+{
+	title: "Nuit Blessed Fuel",
+	x: 5.0d,
+	y: -2.0d,
+	text: [
+		"Can be used in power generation"
+	],
+	dependencies: [
+		"8cc62bd6"
+	],
+	tasks: [{
+		uid: "d330d282",
+		type: "checkmark",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "nuit_fuel"
+			}
+		}
+	}]
+}

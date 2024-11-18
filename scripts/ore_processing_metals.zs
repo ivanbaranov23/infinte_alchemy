@@ -46,37 +46,93 @@
 
     <exnihilocreatio:item_ore_titanium:2>.displayName = "Titanium Ore Dust";
     scripts.helper.addHighOvenSmelting(
-        [<contenttweaker:titanium_nugget> * 8], 
-        [<contenttweaker:titanium_dust> * 2, <prodigytech:emerald_dust>], 
-        [<liquid:lava> * 1000], 10 * 20, 256
+        [<contenttweaker:titanium_ingot> * 2], 
+        [<contenttweaker:titanium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<liquid:pyrotheum> * 2000], 20 * 20, 256
     );
-    scripts.helper.addHighOvenSmelting(
-        [<immersiveengineering:material:7>, <contenttweaker:titanium_nugget> * 12], 
-        [<contenttweaker:titanium_dust> * 2, <contenttweaker:jade_dust> * 2], 
-        [<liquid:pyrotheum> * 1000], 7 * 20, 256
-    );
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:titanium_ingot>], [<contenttweaker:titanium_dust>], 1024, 1);
 
     <densemetals:dense_rutile_ore>.displayName = "Dense Titanium Ore";
     mods.jei.JEI.addItem(<densemetals:dense_rutile_ore>);
 }
 
 
-//mithril
-<moreplates:mana_infused_stick>.displayName = "Mithril Rod";
-game.setLocalization("tile.thermalfoundation.ore.mithril.name", "Mithril Ore");
-game.setLocalization("tile.thermalfoundation.storage.mithril.name", "Block of Mithril");
-<thermalfoundation:coin:72>.displayName = "Mithril Coin";
-<thermalfoundation:material:72>.displayName = "Mithril Dust";
-<thermalfoundation:material:136>.displayName = "Mithril Ingot";
-<thermalfoundation:material:200>.displayName = "Mithril Nugget";
-<thermalfoundation:material:264>.displayName = "Mithril Gear";
-<thermalfoundation:material:328>.displayName = "Mithril Plate";
-game.setLocalization("tile.thermalfoundation.glass.mithril.name", "Hardened Mithril Glass");
+{//mithril
+    <moreplates:mana_infused_stick>.displayName = "Mithril Rod";
+    game.setLocalization("tile.thermalfoundation.ore.mithril.name", "Mithril Ore");
+    game.setLocalization("tile.thermalfoundation.storage.mithril.name", "Block of Mithril");
+    <thermalfoundation:coin:72>.displayName = "Mithril Coin";
+    <thermalfoundation:material:72>.displayName = "Mithril Dust";
+    <thermalfoundation:material:136>.displayName = "Mithril Ingot";
+    <thermalfoundation:material:200>.displayName = "Mithril Nugget";
+    <thermalfoundation:material:264>.displayName = "Mithril Gear";
+    <thermalfoundation:material:328>.displayName = "Mithril Plate";
+    game.setLocalization("tile.thermalfoundation.glass.mithril.name", "Hardened Mithril Glass");
+
+    furnace.remove(<thermalfoundation:material:136>);
+    furnace.remove(<ore:ingotMithril>);
+
+    mods.immersiveengineering.ArcFurnace.removeRecipe(<thermalfoundation:material:136>);
+    mods.tconstruct.Melting.removeRecipe(<liquid:mithril>, <exnihilocreatio:item_ore_mithril:1>);
+    mods.tconstruct.Melting.removeRecipe(<liquid:mithril>, <exnihilocreatio:item_ore_mithril:2>);
+    mods.tconstruct.Melting.removeRecipe(<liquid:mithril>, <thermalfoundation:material:72>);
+
+    scripts.helper.addHighOvenSmelting(
+        [<thermalfoundation:material:136> * 2], 
+        [<thermalfoundation:material:72> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<liquid:pyrotheum> * 2000], 20 * 20, 256
+    );
+    scripts.ore_processing.addTingalumOvenRecipe([<thermalfoundation:material:136>], [<thermalfoundation:material:72>], 1024, 1);
+}
+{//chrome
+    <ore:ingotChrome>.add(<contenttweaker:chrome_ingot>);
+    <ore:dustChrome>.add(<contenttweaker:chrome_dust>);
+
+    scripts.helper.addHighOvenSmelting(
+        [<contenttweaker:chrome_ingot> * 2], 
+        [<contenttweaker:chrome_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<liquid:pyrotheum> * 2000], 20 * 20, 256
+    );
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:chrome_ingot>], [<contenttweaker:chrome_dust>], 4096, 1);
+
+    <densemetals:dense_chromium_ore>.displayName = "Dense Chrome Ore";
+    mods.jei.JEI.addItem(<densemetals:dense_chromium_ore>);
+
+}
+{//neodymium
+    <ore:ingotNeodymium>.add(<contenttweaker:neodymium_ingot>);
+    <ore:dustNeodymium>.add(<contenttweaker:neodymium_dust>);
+
+
+    scripts.helper.addHighOvenSmelting(
+        [<contenttweaker:neodymium_ingot> * 2], 
+        [<contenttweaker:neodymium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<liquid:pyrotheum> * 2000], 20 * 20, 256
+    );
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:neodymium_ingot>], [<contenttweaker:neodymium_dust>], 1024, 1);
+
+}
+
 
 {//gallium
     <ore:dustGallium>.add(<contenttweaker:gallium_dust>);
     <ore:ingotGallium>.add(<contenttweaker:gallium_ingot>);
     
+}
+{//arkenium
+    <ore:ingotArkenium>.add(<contenttweaker:arkenium_ingot>);
+    <ore:dustArkenium>.add(<contenttweaker:arkenium_dust>);
+
+    furnace.remove(<contenttweaker:arkenium_ingot>);
+    furnace.remove(<ore:ingotArkenium>);
+    
+    scripts.helper.addHighOvenSmelting(
+        [<contenttweaker:arkenium_ingot> * 2], 
+        [<contenttweaker:arkenium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<liquid:pyrotheum> * 3000], 20 * 20, 1024
+    );
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:arkenium_ingot>], [<contenttweaker:arkenium_dust>], 4096, 1);
+
 }
 
 {//steeleaf
@@ -102,23 +158,35 @@ game.setLocalization("tile.thermalfoundation.glass.mithril.name", "Hardened Mith
     mods.tconstruct.Melting.removeRecipe(<liquid:draconium>, <exnihilocreatio:item_ore_draconium:1>);
     mods.tconstruct.Melting.removeRecipe(<liquid:draconium>, <draconicevolution:draconium_dust>);
     mods.immersiveengineering.ArcFurnace.removeRecipe(<draconicevolution:draconium_ingot>);
+
+    recipes.remove(<draconicevolution:draconium_dust>);
     
-    scripts.helper.addFluidAlloyerRecipe(
+    scripts.helper.addHighOvenSmelting(
+        [<draconicevolution:draconium_ingot> * 2], 
+        [<draconicevolution:draconium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<liquid:pyrotheum> * 3000], 20 * 20, 1024
+    );
+    /*scripts.helper.addFluidAlloyerRecipe(
         <draconicevolution:draconium_ingot>, 
         <draconicevolution:draconium_dust>, <prodigytech:inferno_crystal> * 2, <liquid:pyrotheum> * 2000, 
         4096, 100
-    );
+    );*/
+
+    scripts.ore_processing.addTingalumOvenRecipe([<draconicevolution:draconium_ingot>], [<draconicevolution:draconium_dust>], 4096, 1);
 }
 
-//orichalcum
-<ore:dustOrichalcum>.add(<contenttweaker:orichalcum_dust>);
+{//orichalcum
+    <ore:dustOrichalcum>.add(<contenttweaker:orichalcum_dust>);
 
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:orichalcum_ingot>], [<contenttweaker:orichalcum_dust>], 100 * 1000, 5);
+}
 
 //gravitite
 mods.tconstruct.Melting.removeRecipe(<liquid:gravitite>, <netherendingores:ore_end_modded_2:6>);
 
 //death metal
 <ore:dustDeathMetal>.add(<contenttweaker:death_metal_dust>);
+scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:death_metal_ingot>], [<contenttweaker:death_metal_dust>], 10 * 1000 * 1000, 10);
 
 
 {//bedrockium

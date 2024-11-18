@@ -69,6 +69,31 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
         [<ore:cropEggplant>,<minecraft:brown_mushroom>, <minecraft:yellow_flower>, <ore:tallgrass>, <ore:rootsBark>]
     );
 
+    Pyre.removeRecipe(<roots:stalicripe>);
+    Pyre.addRecipe("ia_stalicripe",
+        <roots:stalicripe> * 4,
+        [
+            <actuallyadditions:item_misc:13>, <contenttweaker:bauxite_dust>, <thermalfoundation:material>, <thermalfoundation:material:770>,
+            <contenttweaker:potato_block2> | <mysticalcreations:bilim_essence>
+        ]
+    );
+    Pyre.removeRecipe(<roots:dewgonia>);
+    Pyre.addRecipe("ia_dewgonia",
+        <roots:dewgonia> * 4,
+        [
+            <natura:materials>, <minecraft:water_bucket>, <minecraft:waterlily>, <projectred-core:resource_item:105>,
+            <contenttweaker:potato_block2> | <mysticalcreations:bilim_essence>
+        ]
+    );
+    Pyre.removeRecipe(<roots:infernal_bulb>);
+    Pyre.addRecipe("ia_infernal_bulb",
+        <roots:infernal_bulb> * 4,
+        [
+            <roots:cooked_pereskia>, <minecraft:lava_bucket>, <tconstruct:slime:4>, <minecraft:glowstone_dust>,
+            <contenttweaker:potato_block2> | <mysticalcreations:bilim_essence>
+        ]
+    );
+
     Pyre.removeRecipe(<roots:baffle_cap_mushroom>);
     Pyre.addRecipe("ia_baffle_cap_mushroom",
         <roots:baffle_cap_mushroom> * 4,
@@ -166,9 +191,38 @@ Fey.addRecipe("ia_runic_crafter", <roots:runic_crafter>,
     Fey.addRecipe("living_pick", <roots:living_pickaxe>, [
         <exnihilocreatio:hammer_iron>,
         <roots:terra_moss>,
-        <minecraft:wooden_pickaxe>,
+        <minecraft:iron_pickaxe>,
         <roots:bark_wildwood>,
         <roots:bark_wildwood>
+    ]);
+
+
+    recipes.addShaped("ia_arrowrootitem", <harvestcraft:arrowrootitem>, [
+        [<mysticalcreations:bilim_essence>, <minecraft:arrow>, <mysticalcreations:bilim_essence>], 
+        [<minecraft:arrow>, <minecraft:arrow>, <minecraft:arrow>], 
+        [<mysticalcreations:bilim_essence>, <minecraft:arrow>, <mysticalcreations:bilim_essence>]
+    ]);
+    Fey.removeRecipe(<roots:living_arrow>);
+    Fey.addRecipe("living_arrow1", <roots:living_arrow>, [
+        <minecraft:arrow>,
+        <minecraft:arrow>,
+        <harvestcraft:arrowrootitem>,
+        <harvestcraft:arrowrootitem>,
+        <roots:terra_moss>
+    ]);
+    Fey.addRecipe("living_arrow2", <roots:living_arrow> * 4, [
+        <minecraft:spectral_arrow>,
+        <minecraft:spectral_arrow>,
+        <harvestcraft:arrowrootitem>,
+        <harvestcraft:arrowrootitem>,
+        <roots:terra_moss>
+    ]);
+    Fey.addRecipe("living_arrow3", <roots:living_arrow> * 16, [
+        <aether_legacy:dart:1> | <aether_legacy:dart:2>,
+        <aether_legacy:dart:1> | <aether_legacy:dart:2>,
+        <harvestcraft:arrowrootitem>,
+        <harvestcraft:arrowrootitem>,
+        <roots:terra_moss>
     ]);
 }
 
@@ -205,7 +259,7 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
 {//staffwood
     Mortar.addRecipe("glue", 
         <contenttweaker:organic_glue>, 
-        [<harvestcraft:doughitem>, <erebus:materials:40>, <erebus:materials:40>, <mekanism:salt>, <harvestcraft:snailcookeditem>]
+        [<harvestcraft:doughitem> | <moreplates:knightslime_plate> | <contenttweaker:creosolon>, <erebus:materials:40>, <erebus:materials:40>, <mekanism:salt>, <harvestcraft:snailcookeditem>]
     );
     Fey.addRecipe("staffwood",
         <contenttweaker:staffwood>,
@@ -314,6 +368,12 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
     
 }
 
+recipes.remove(<roots:staff>);
+recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
+    [null, <roots:terra_moss>, <extendedcrafting:singularity_custom:100>], 
+    [<mysticalcreations:bilim_essence>, <moreplates:bronze_stick>, <roots:terra_moss>], 
+    [<moreplates:bronze_stick>, <mysticalcreations:bilim_essence>, null]
+]);
 
 
 {//transmutation
@@ -327,8 +387,8 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
     Transmutation.addStateToStateRecipe(
         "umbr", 
         StatePredicate.create(<blockstate:biomesoplenty:mud_brick_block>),
-        <blockstate:twilightforest:uberous_soil>, 
-        BlockStateBelow.create(StatePredicate.create(<blockstate:contenttweaker:flower_steel_block>))
+        <blockstate:twilightforest:uberous_soil>,
+        null
     );
 
 
@@ -338,6 +398,13 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
             StatePredicate.create(<blockstate:tconstruct:dried_clay>),
             <blockstate:erebus:ore_temple>, 
             BlockStateBelow.create(StatePredicate.create(<blockstate:erebus:temple_tile>))
+        );
+
+        Transmutation.addStateToStateRecipe(
+            "silver", 
+            StatePredicate.create(<blockstate:natura:overworld_logs:axis=y,type=silverbell>),
+            <blockstate:thermalfoundation:ore:type=silver>,
+            null
         );
     }
 
@@ -372,6 +439,29 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
         "spell_chrysopoeia",    
         [<roots:runic_dust>, <roots:infernal_bulb>, <darkutils:material>, <tconstruct:edible:3>, <roots:bark_wildwood>]  
     );
+
+    Mortar.changeSpell(
+        "spell_radiance",    
+        [<prodigytech:ferramic_handbow>, <xreliquary:glowing_water>, <projectred-core:resource_item:504>, <contenttweaker:glowcrystal>, <forge:bucketfilled>.withTag({FluidName: "glass", Amount: 1000})]  
+    );
+
+    Mortar.changeSpell(
+        "spell_sky_soarer",    
+        [<extrautils2:angelblock>, <forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}), <roots:mystic_feather>, <mekanism:balloon:*>, <mekanism:balloon:*>]  
+    );
+
+    Mortar.changeSpell(
+        "spell_growth_infusion",    
+        [
+            <minecraft:bone_block>, <thermalfoundation:material:865>, <thermalfoundation:material:865>, 
+            <contenttweaker:fertilizer2>, <mysticalagriculture:fertilized_essence>
+        ]  
+    );
+
+    Mortar.changeSpell(
+        "spell_fey_light",    
+        [<roots:glass_eye>, <contenttweaker:glowcrystal>, <minecraft:double_plant>, <roots:cloud_berry>, <roots:cloud_berry>]  
+    );
 }
 
 
@@ -388,7 +478,7 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
     Rituals.modifyRitual("ritual_flower_growth",
         [
             <botania:fertilizer>,
-            <roots:baffle_cap_mushroom>,
+            <roots:baffle_cap_mushroom> | <contenttweaker:weak_enhancer>,
             <ore:rootsBark>,
             <immersiveengineering:material:4>,
             <immersiveengineering:material:4>
@@ -445,8 +535,10 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
         sapling_floweroak: <biomesoplenty:sapling_1:5>,
         sapling_balsam: <erebus:sapling_balsam>,
         sapling_bamboo: <erebus:sapling_bamboo>,
+        sapling_bamboo2: <biomesoplenty:sapling_0:2>,
         sapling_amaranth: <natura:overworld_sapling:2>,
-        sapling_blossom: <quark:variant_sapling:1>
+        sapling_blossom: <quark:variant_sapling:1>,
+        sapling_ghost: <natura:nether_sapling>
     };
     val flower_soils as IIngredient[string] = {
         ia_mushroom_red: <minecraft:mycelium>,
@@ -477,9 +569,8 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
 
         sapling_palm: <twilightforest:uberous_soil>,
         sapling_floweroak: <twilightforest:uberous_soil>,
-        sapling_balsam: <twilightforest:uberous_soil>,
+        //sapling_balsam: <twilightforest:uberous_soil>,
         sapling_bamboo: <twilightforest:uberous_soil>,
-        sapling_amaranth: <twilightforest:uberous_soil>,
         sapling_blossom: <twilightforest:uberous_soil>
     };
 
@@ -581,6 +672,8 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
     //borer
     Chrysopoeia.addRecipe("borer_essence1", <erebus:materials:18> * 6, <twilightforest:borer_essence>);
     Chrysopoeia.addRecipe("borer_essence2", <mysticalagriculture:crafting> * 64, <twilightforest:borer_essence>);
+
+    Chrysopoeia.addRecipe("glowstone", <minecraft:gold_block>, <minecraft:glowstone>);
 }
 {//forest runes
     mods.appliedenergistics2.Inscriber.addRecipe(<contenttweaker:runewood>, 

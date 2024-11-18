@@ -1,6 +1,7 @@
 import crafttweaker.item.IItemStack;
 import mods.modularmachinery.RecipeBuilder;
 
+
 {//aa coils
 	recipes.addShapeless("ia_coil_core1_1", <contenttweaker:coil_core1> * 2, [<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, <thermalfoundation:material:515>, <immersiveengineering:wirecoil:2>, <contenttweaker:platinum_wire>]);
 	recipes.addShapeless("ia_coil_core1_2", <contenttweaker:coil_core1> * 3, [<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, <thermalfoundation:material:515>, <immersiveengineering:wirecoil:2>, <contenttweaker:platinum_wire>, <contenttweaker:insulation_strand>]);
@@ -89,6 +90,41 @@ import mods.modularmachinery.RecipeBuilder;
 
 
 {//circuit like
+	{//immersive
+		//cacti
+		
+		furnace.setFuel(<contenttweaker:cactus_charcoal>, 200 * 16);
+		recipes.addShaped("cacti_foci", <contenttweaker:cacti_foci>, [
+			[<minecraft:stained_glass:13>, <contenttweaker:cactus_charcoal>, <minecraft:stained_glass:13>],
+			[<contenttweaker:cactus_charcoal>, <immersiveengineering:stone_decoration:8>, <contenttweaker:cactus_charcoal>],
+			[<minecraft:stained_glass:13>, <contenttweaker:cactus_charcoal>, <minecraft:stained_glass:13>]
+		]);
+		//fishy
+		recipes.addShaped("fishy_capacitor", <contenttweaker:fishy_capacitor> * 3, [
+			[<immersiveengineering:material:26>, <ore:listAllfishraw>, <ore:listAllfishraw>], 
+			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
+			[<ore:listAllfishraw>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
+		]);
+		recipes.addShaped("fishy_capacitor2", <contenttweaker:fishy_capacitor> * 6, [
+			[<immersiveengineering:material:26>, <ore:listAllfishraw>, <contenttweaker:activated_green_fish>], 
+			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
+			[<contenttweaker:activated_green_fish>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
+		]);
+		//diode1
+		recipes.addShaped("diode1", <contenttweaker:diode1> * 2, [
+			[<contenttweaker:glowcrystal>, <contenttweaker:glass_hull>], 
+			[<contenttweaker:zinc_rod>, <contenttweaker:zinc_rod>]
+		]);
+		//circuit
+		recipes.addShapeless("ia_exotic_circuit_bp", <immersiveengineering:blueprint>.withTag({blueprint: "exotic_circuit"}), [<contenttweaker:research_circuit1>]);
+		mods.immersiveengineering.Blueprint.addRecipe("exotic_circuit", 
+			<immersiveengineering:material:27> * 2, 
+			[
+				<contenttweaker:cacti_foci>, <contenttweaker:diode1>,
+				<contenttweaker:fishy_capacitor>, <contenttweaker:fishy_capacitor>
+			]
+		);
+	}
 	//mek circuits
 	recipes.remove(<mekanism:controlcircuit:1>);
 	recipes.addShaped("ia_mek_circuit1", <mekanism:controlcircuit:1>, [
@@ -126,14 +162,14 @@ import mods.modularmachinery.RecipeBuilder;
 		[<contenttweaker:gold_wire>, <contenttweaker:soggy_wooden_board>, <contenttweaker:zinc_wire>], 
 		[null, <tconstruct:materials:10>, null]
 	]);
-	recipes.addShaped("ia_advanced_circuit_plate_base", <contenttweaker:advanced_circuit_plate_base>, [
+	recipes.addShaped("ia_advanced_circuit_plate_base", <contenttweaker:advanced_circuit_plate_base> * 2, [
 		[null, <prodigytech:circuit_plate>, null], 
 		[<appliedenergistics2:material:23>, <contenttweaker:wired_wooden_board>, <appliedenergistics2:material:23>], 
-		[null, <ore:itemRubber>, null]
+		[<ore:itemRubber>, <contenttweaker:flolit_sheet>, <ore:itemRubber>]
 	]);
 	mods.mekanism.compressor.addRecipe(
 		<contenttweaker:advanced_circuit_plate_base>,
-		<gas:sulfuricacid> * 50, 
+		<gas:sulfuricacid>, 
 		<contenttweaker:advanced_circuit_plate>
 	);
 	scripts.content_machines.addFluidAlloyerRecipe(
@@ -207,12 +243,6 @@ import mods.modularmachinery.RecipeBuilder;
 		<liquid:cold_nitrogen> * 1000, 20, 256
 	);
 
-	recipes.addShaped("ia_crucible", <contenttweaker:crucible>, [
-		[<contenttweaker:high_heat_glass>, <exnihilocreatio:block_crucible:1>, <contenttweaker:high_heat_glass>], 
-		[<contenttweaker:high_heat_glass>, <enderio:block_tank:1>, <contenttweaker:high_heat_glass>], 
-		[<contenttweaker:tungsten_plate>, <contenttweaker:chrome_block>, <contenttweaker:tungsten_plate>]
-	]);
-
 	//pressure cutter
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:pressure_cutter>],
@@ -225,6 +255,18 @@ import mods.modularmachinery.RecipeBuilder;
 		],
 		<liquid:watertight_steel> * (144 * 8), 20, 256
 	);
+}
+{//burner
+	recipes.addShaped("ia_ra_burner", <contenttweaker:ra_burner>, [
+		[null, <atum:heart_of_ra>, null], 
+		[<contenttweaker:mekanized_steel_rod>, <contenttweaker:cacti_foci>, <contenttweaker:mekanized_steel_rod>], 
+		[<projectred-transmission:wire>, <extrautils2:machine>, <projectred-transmission:wire>]
+	]);
+	recipes.addShaped("ia_crucible", <contenttweaker:crucible>, [
+		[<contenttweaker:high_heat_glass>, <exnihilocreatio:block_crucible:1>, <contenttweaker:high_heat_glass>], 
+		[<contenttweaker:tungsten_plate>, <enderio:block_tank:1>, <contenttweaker:tungsten_plate>], 
+		[<contenttweaker:chrome_block>, <contenttweaker:ra_burner>, <contenttweaker:chrome_block>]
+	]);
 }
 
 
@@ -433,6 +475,23 @@ import mods.modularmachinery.RecipeBuilder;
 		20, 4000
 	);
 }
+{//motor
+	recipes.remove(<projectred-core:resource_item:410>);
+	recipes.addShaped("ia_pr_motor", <projectred-core:resource_item:410>, [
+		[<contenttweaker:simple_motor>, <contenttweaker:simple_motor>, <contenttweaker:simple_motor>], 
+		[<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), <thermalfoundation:material:515>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})], 
+		[<projectred-core:resource_item:401>, <contenttweaker:tignalum_gear>, <projectred-core:resource_item:400>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<projectred-core:resource_item:410> * 2],
+		[
+			<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 2, <thermalfoundation:material:515>,
+			<projectred-core:resource_item:401>, <contenttweaker:tignalum_gear>, <projectred-core:resource_item:400>, 
+			<contenttweaker:simple_motor> * 4
+		],
+		<liquid:mekanized_steel> * 144, 20, 256
+	);
+}
 
 scripts.content_machines.addAssemblerRecipe(
 	[<contenttweaker:nuke>], 
@@ -501,8 +560,16 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			[<ore:dustBedrock>, <ore:ingotHOPGraphite>, <ore:dustBedrock>], 
 			[<ore:stickSteel>, null, <ore:stickSteel>]
 		]);
+		mods.immersiveengineering.Blueprint.addRecipe("exotic_circuit", 
+			<enderio:item_capacitor_grainy>, 
+			[
+				<enderio:item_material:20>, <enderio:item_material:20>,
+				<immersiveengineering:material:19>,//<thermalfoundation:material:288>
+				<immersiveengineering:material:2>, <immersiveengineering:material:2>
+			]
+		);
 		scripts.content_machines.addAssemblerRecipe(
-			[<enderio:item_capacitor_grainy> * 2],
+			[<enderio:item_capacitor_grainy> * 3],
 			[
 				<ore:dustBedrock> * 3,
 				<ore:ingotHOPGraphite> * 2
@@ -990,7 +1057,13 @@ mods.mekanism.reaction.addRecipe(
 	);
 }
 
-
+{//plants
+	recipes.addShaped("ia_plant_unit", <contenttweaker:plant_unit>, [
+		[<contenttweaker:robot_arm>, null, <contenttweaker:robot_arm>], 
+		[<engineersdecor:small_tree_cutter>, <twilightforest:uberous_soil>, <engineersdecor:factory_placer>], 
+		[<contenttweaker:plant_sample>, <bonsaitrees:bonsaipot:1>, <contenttweaker:plant_sample>]
+	]);
+}
 
 
 

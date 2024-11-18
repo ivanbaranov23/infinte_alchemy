@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: 7.0d,
+	dependencies: [
+		"b41595d2"
+	],
+	tasks: [{
+		uid: "73277f9c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fluxed_processor"
+		}]
+	}]
+}

@@ -143,6 +143,7 @@ print("[living] doind statics");
 
 
 static livings as IItemStack[string] = {
+    pilkon: <contenttweaker:pilkon>,
     crusher: <contenttweaker:lv_crusher>,
     sandworm: <contenttweaker:lv_sandworm>,
     bedrock_golem: <contenttweaker:lv_bedrock_golem>,
@@ -151,13 +152,26 @@ static livings as IItemStack[string] = {
     hair_thing: <contenttweaker:lv_hair_thing>,
     baby_hair_thing: <contenttweaker:lv_baby_hair_thing>,
 
+    nitrall: <contenttweaker:nitrall>,
+
     zanite_frog: <contenttweaker:lv_zanite_frog>,
 
     blood_slime: <contenttweaker:lv_blood_slime>,
 
-    spice_rabbit: <contenttweaker:spice_rabbit>
+    spice_rabbit: <contenttweaker:spice_rabbit>,
+
+    chitigic_drone: <contenttweaker:chitigic_drone>,
+    chitigic_hunter: <contenttweaker:chitigic_hunter>,
+    chitigic_scout: <contenttweaker:chitigic_scout>,
+    chitigic_refinery: <contenttweaker:chitigic_refinery>,
+    chitigic_chewer: <contenttweaker:chitigic_chewer>,
+    chitigic_nursery: <contenttweaker:chitigic_nursery>,
+    chitigic_queen: <contenttweaker:chitigic_queen>,
+    chitigic_empress: <contenttweaker:chitigic_empress>
 };
+
 static animal_type as string[string] = {
+    pilkon: "f1l",
     crusher: "f1",
     sandworm: "f1l",
     draco_lizard: "f1l",
@@ -166,12 +180,26 @@ static animal_type as string[string] = {
     hair_thing: "f1l",
     baby_hair_thing: "f1",
 
+    nitrall: "f1",
+
     zanite_frog: "f1",
 
     blood_slime: "f1l",
-    spice_rabbit: "f1l"
+    spice_rabbit: "f1l",
+
+    chitigic_drone: "f1",
+    chitigic_hunter: "f1l",
+    chitigic_scout: "f1l",
+    chitigic_refinery: "f1l",
+    chitigic_chewer: "f1l",
+    chitigic_nursery: "f1l",
+    chitigic_queen: "f1l",
+    chitigic_empress: "f1l"
 };
 static foods as int[][IItemStack][string] = {
+    pilkon: {
+        <thermalfoundation:material:98>: [10, 20]
+    },
     crusher: {
         <contenttweaker:crusher_feed>: [15, 25]
     },
@@ -187,10 +215,14 @@ static foods as int[][IItemStack][string] = {
     },
 
     hair_thing: {
-        <projectred-core:resource_item:301>: [5, 10]
+        <projectred-core:resource_item:301>: [10, 30]
     },
     baby_hair_thing: {
-        <projectred-core:resource_item:301>: [5, 10]
+        <projectred-core:resource_item:301>: [10, 30]
+    },
+
+    nitrall: {
+        <contenttweaker:nether_pest>: [10, 20]
     },
 
     zanite_frog: {
@@ -201,9 +233,21 @@ static foods as int[][IItemStack][string] = {
 
     spice_rabbit: {
         <contenttweaker:honeyspice_ingot>: [10, 20]
-    }
+    },
+
+    chitigic_drone: {},
+    chitigic_hunter: {},
+    chitigic_scout: {},
+    chitigic_refinery: {},
+    chitigic_chewer: {},
+    chitigic_nursery: {},
+    chitigic_queen: {},
+    chitigic_empress: {}
 };
 static products as int[IItemStack][string] = {
+    pilkon: {
+        <contenttweaker:pilkeum>: 25,
+    },
     crusher: {},
     sandworm: {
         <contenttweaker:sandworm_molt>: 100
@@ -219,6 +263,10 @@ static products as int[IItemStack][string] = {
     },
     baby_hair_thing: {},
 
+    nitrall: {
+        <contenttweaker:nitrall>.withTag({food: 30}): 50
+    },
+
     zanite_frog: {
         <contenttweaker:zanite_frog_leg>: 25
     },
@@ -229,22 +277,42 @@ static products as int[IItemStack][string] = {
 
     spice_rabbit: {
         <contenttweaker:spice_egg>: 4
-    }
+    },
+
+    chitigic_drone: {},
+    chitigic_hunter: {},
+    chitigic_scout: {},
+    chitigic_refinery: {},
+    chitigic_chewer: {},
+    chitigic_nursery: {},
+    chitigic_queen: {},
+    chitigic_empress: {}
 };
-static work as IItemStack[IItemStack][string] = {
-    crusher: {
-        <densemetals:dense_iron_ore> * 3: <minecraft:iron_ore> * 5,
-        <densemetals:dense_copper_ore> * 3: <thermalfoundation:ore> * 5,
-        <densemetals:dense_tin_ore> * 3: <thermalfoundation:ore:1> * 5,
+static work as int[][IItemStack[]][string] = {
+    chitigic_chewer: {
+        [<prodigytech:meat_ground>, <contenttweaker:chewed_meat> * 1]: [5, 10],
+        [<contenttweaker:sandworm_gut>, <contenttweaker:chewed_guts> * 1]: [5, 10],
+        [<densemetals:dense_iron_ore>, <minecraft:iron_ore> * 5]: [20, 100],
+        [<densemetals:dense_copper_ore>, <thermalfoundation:ore> * 5]: [20, 100],
+        [<densemetals:dense_tin_ore>, <thermalfoundation:ore:1> * 5]: [20, 100],
 
-        <densemetals:dense_nickel_ore> * 3: <thermalfoundation:ore:5> * 5,
-        <densemetals:dense_zinc_ore> * 3: <exnihilocreatio:item_ore_zinc:1> * 5,
-        <densemetals:dense_aluminum_ore> * 3: <thermalfoundation:ore:4> * 5,
+        [<densemetals:dense_nickel_ore>, <thermalfoundation:ore:5> * 5]: [20, 100],
+        [<densemetals:dense_zinc_ore>, <contenttweaker:zinc_ore> * 5]: [20, 100],
+        [<densemetals:dense_aluminum_ore>, <thermalfoundation:ore:4> * 5]: [20, 100],
+
+        [<contenttweaker:nitrall>, <contenttweaker:nitrall_feed> * 4]: [10, 200]
+    },
+    chitigic_nursery: {
+        [<contenttweaker:chitigic_egg>, <contenttweaker:chitigic_drone>.withTag({food:5}) * 1]: [20, 50]
     }
-
-    
 };
 static reproduction as int[IItemStack][string] = {
+    pilkon: {
+        <contenttweaker:pilkon>.withTag({
+            food: 1,
+            lifespan: 10
+        }): 50
+    },
     draco_lizard: {
         <contenttweaker:draco_lizard_egg>: 100
     },
@@ -258,9 +326,19 @@ static reproduction as int[IItemStack][string] = {
     }
 };
 static corpses as IItemStack[string] = {
+    pilkon: <contenttweaker:pilkon_corpse>,
     sandworm: <contenttweaker:sandworm_corpse>,
     draco_lizard: <contenttweaker:draco_lizard_corpse>,
-    hair_thing: <contenttweaker:hair_thing_corpse>
+    hair_thing: <contenttweaker:hair_thing_corpse>,
+
+    chitigic_drone: <contenttweaker:chitigic>,
+    chitigic_hunter: <contenttweaker:chitigic> * 3,
+    chitigic_scout: <contenttweaker:chitigic> * 3,
+    chitigic_refinery: <contenttweaker:chitigic> * 3,
+    chitigic_chewer: <contenttweaker:chitigic> * 3,
+    chitigic_nursery: <contenttweaker:chitigic> * 3,
+    chitigic_queen: <contenttweaker:chitigic> * 8,
+    chitigic_empress: <contenttweaker:chitigic> * 32
 };
 static life_essences as int[string] = {
     sandworm: 1,
@@ -339,16 +417,21 @@ function add_f1(name as string) as string[]{
 
     //work
     if work has name{
+        //int[][IItemStack[]][string]
         info += "Will turn:";
-        for inp in work[name]{
-            info += "   " ~ inp.displayName ~ " into " ~ work[name][inp].displayName ~ " costing " ~ inp.amount ~ " food points.";
-            recipes.addShapeless(name ~ "_work_" ~ inp.name, work[name][inp],
+        for inp,cost in work[name]{
+            info += "   " ~ inp[0].displayName ~ " into " ~ inp[1].displayName ~ " costing between" ~ cost[0] ~ "and" ~ cost[1] ~ " food points.";
+            recipes.addShapeless(name ~ "_work_" ~ inp[0].name, inp[1],
                 [livings[name].only(isAlive).transformNew(function(item){
+                    var range as int = cost[1] - cost[0] + 1;
+                    var value as int = ((Math.floor(Math.random() * range) + cost[0]) as IData).asInt();
+                
                     return item.withTag( {
-                        food: item.tag.food.asInt() - inp.amount,
+
+                        food: item.tag.food.asInt() - value,
                         
                     } );
-                }), inp * 1]
+                }), inp[0]]
             );
         }
     }
@@ -435,17 +518,17 @@ function add_f1l(name as string) as string[]{
                             food: item.tag.food.asInt() - reproduction[name][egg],
                             lifespan: item.tag.lifespan.asInt() - 1
                         } );
-                    }),
-                    foods[name].keys[0]
+                    })//,
+                    //foods[name].keys[0]
                 ]
             );
         
         }
     }
 
-    /*
+    
     //work
-    if work has name{
+    /*if work has name{
         info += "Will turn:";
         for works in work[name]{
             info += "   " ~ works[0].displayName ~ " into " ~ works[1].displayName ~ " costing " ~ work[name][works] ~ " food points.";
@@ -459,6 +542,25 @@ function add_f1l(name as string) as string[]{
             );
         }
     }*/
+    if work has name{
+        //int[][IItemStack[]][string]
+        info += "Will turn:";
+        for inp,cost in work[name]{
+            info += "   " ~ inp[0].displayName ~ " into " ~ inp[1].displayName ~ " costing between" ~ cost[0] ~ "and" ~ cost[1] ~ " food points.";
+            recipes.addShapeless(name ~ "_work_" ~ inp[0].name, inp[1],
+                [livings[name].only(isAlive).transformNew(function(item){
+                    var range as int = cost[1] - cost[0] + 1;
+                    var value as int = ((Math.floor(Math.random() * range) + cost[0]) as IData).asInt();
+                
+                    return item.withTag( {
+
+                        food: item.tag.food.asInt() - value,
+                        lifespan: item.tag.lifespan.asInt() - 1
+                    } );
+                }), inp[0]]
+            );
+        }
+    }
 
     //vitamins
     recipes.addShapeless(name ~ "_vitamins", livings[name],
@@ -514,23 +616,34 @@ for name in livings{
 
 recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
 	[<enderio:item_material:8>, <enderio:item_material:8>, <enderio:item_material:8>], 
-	[null, <contenttweaker:bedrockium_alloy_plate>, <contenttweaker:bedrockium_alloy_plate>]
+	[<contenttweaker:bedrockium_alloy_plate>, <contenttweaker:bedrockium_alloy_plate>, null]
 ]);
 <contenttweaker:iron_heart>.addTooltip("Dropped by Iron Golems");
 
 <contenttweaker:vitamins>.addTooltip("For living halves food and gives +10 to lifespan.");
 
+{//pilkon
+    mods.roots.Fey.addRecipe("pilkon", <contenttweaker:pilkon>.withTag({
+            food: 10,
+            lifespan: 10
+        }), [
+        <contenttweaker:pilkeum>, <contenttweaker:pilkeum>, <contenttweaker:pilkeum>,
+        <contenttweaker:singularity_dust>, <roots:wildwood_log>
+    ]);
+
+    scripts.helper.addSawRecipeWByproduct(<contenttweaker:pilkon_corpse>, <contenttweaker:pilkeum> * 4, <contenttweaker:pilkeum> * 2, 25);
+}
 {//crusher
     recipes.addShapeless("ia_crusher_feed", <contenttweaker:crusher_feed> * 4, [
         <contenttweaker:soot>, <contenttweaker:soot>, <contenttweaker:soot>, <ore:dustLunar>, <liquid:ore_waste> * 1000
     ]);
 
-    recipes.addShapeless("ia_living_crusher",
+    /*recipes.addShapeless("ia_living_crusher",
         <contenttweaker:lv_crusher>.withTag({food: 25}),
         [
             <contenttweaker:crusher_feed>, <contenttweaker:crusher_feed>
         ]
-    );
+    );*/
 }
 {//sandworm
     //worm
@@ -789,4 +902,53 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         <exnihilocreatio:item_mesh:4>,
         20, 100
     );
+}
+
+
+static isDroneAlive as IItemCondition = function(item){
+            if (item.tag.memberGet("food")){
+                //item good
+                return (item.tag.food.asInt() > 0);
+            }
+            //item bad
+            return false;
+};
+static isNonDroneAlive as IItemCondition = function(item){
+            if ((item.tag.memberGet("food") as bool) && (item.tag.memberGet("lifespan") as bool)){
+                //item good
+                return (item.tag.food.asInt() > 0)&&(item.tag.lifespan.asInt() > 0);
+            }
+            //item bad
+            return false;
+}; 
+function add8refinery(outp as IItemStack, inp as IIngredient, cost as int){
+    recipes.addShaped("chitigic_refining_" ~ outp.name, outp, [
+        [inp, inp, inp],
+        [inp, <contenttweaker:chitigic_refinery>.only(isNonDroneAlive).transformNew(function(item){
+            return item.withTag( {
+                food: item.tag.food.asInt() - cost,
+                lifespan: item.tag.lifespan.asInt() - 1
+            });
+        }), inp],
+        [inp, inp, inp]
+    ]);
+}
+{//chitigic
+    
+
+    recipes.addShapeless("ia_chit_party", <contenttweaker:chitigic_party>, [
+        <contenttweaker:chitigic_scout>.only(isNonDroneAlive),
+        <contenttweaker:chitigic_hunter>.only(isNonDroneAlive),
+        <contenttweaker:chitigic_hunter>.only(isNonDroneAlive),
+        <contenttweaker:chitigic_hunter>.only(isNonDroneAlive),
+        <contenttweaker:chitigic_hunter>.only(isNonDroneAlive)
+    ]);
+
+    add8refinery(<contenttweaker:life>, <contenttweaker:isis_godshard>, 200);
+    add8refinery(<contenttweaker:chitigic>, <contenttweaker:chitin>, 100);
+
+
+    recipes.addShapeless("ia_chit_queen", <contenttweaker:chitigic_queen>, [
+        <contenttweaker:chitigic_nursery>
+    ]);
 }

@@ -1,0 +1,17 @@
+{
+	title: "Ore Processing",
+	x: -5.0d,
+	y: 2.0d,
+	text: [
+		"Ore processing was reshoveled and overshoveled. Endgame you'll have access to x20+ ore proc or even x25+ if you like pain. Just pay no mind to the dummy"
+	],
+	dependencies: [
+		"32464c8e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4d3c909f",
+		type: "checkmark",
+		icon: "contenttweaker:dummy"
+	}]
+}

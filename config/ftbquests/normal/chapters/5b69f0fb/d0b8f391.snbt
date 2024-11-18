@@ -1,0 +1,18 @@
+{
+	x: 4.0d,
+	y: 1.0d,
+	text: [
+		"This wonderful tool will summon a loyal zombie. This zombie will teleport to the player that summoned it. If it was summoned by player, that is.",
+		"",
+		"Zombie has a strength 2 effect on them. Once the effect runs out, zombie catches fire and burns to death. There are various ways to keep zombie alive, tho you can just resummon it."
+	],
+	tasks: [{
+		uid: "29061fe1",
+		type: "item",
+		items: [{
+			item: "twilightforest:zombie_scepter"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -10,5 +10,10 @@
 		items: [{
 			item: "erebus:materials 1 1"
 		}]
+	}],
+	rewards: [{
+		uid: "48fe59de",
+		type: "item",
+		item: "erebus:jade_block"
 	}]
 }

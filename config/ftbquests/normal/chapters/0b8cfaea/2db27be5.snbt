@@ -1,7 +1,7 @@
 {
 	title: "Slimeball",
-	x: 2.5d,
-	y: 3.0d,
+	x: 1.5d,
+	y: 2.0d,
 	text: [
 		"You can make a cow bait, get a cow, milk it with a bambucket and use mushrooms to make a slime block.",
 		"",

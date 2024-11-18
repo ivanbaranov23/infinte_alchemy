@@ -1,0 +1,16 @@
+{
+	x: 8.0d,
+	y: -2.0d,
+	text: [
+		"Recipe accepts any fish"
+	],
+	dependencies: [
+		"9d327bd4"
+	],
+	optional: true,
+	tasks: [{
+		uid: "99be925d",
+		type: "checkmark",
+		title: "Fish oil"
+	}]
+}

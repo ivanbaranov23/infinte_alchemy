@@ -4,7 +4,9 @@ import mods.prodigytech.explosionfurnace.recipes as explosionfurnace_recipes;
 //explosionfurnace.recipes.addRecipe(IItemStack/IOreDictEntry in, IItemStack out, int ep, IItemStack/IOreDictEntry reagent, int craftPerReagent)
 
 import mods.prodigytech.rotarygrinder;
+//rotarygrinder.addRecipe(inp, outp)
 import mods.prodigytech.solderer;
+import mods.prodigytech.magneticreassembler;
 import mods.prodigytech.atomicreshaper;
 //addRecipeMulti(IItemStack in, int primordium, int time, IItemStack[] outputs, @Optional int[] weights)
 
@@ -55,7 +57,7 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 		<extendedcrafting:singularity:16>, <extendedcrafting:singularity_custom:4>, 36000, <contenttweaker:fireclay> * 64, 1
 	);
 
-	mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:ferramic_gravel>, <minecraft:gravel>, <liquid:ferramic>, 16);
+	mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:ferramic_gravel>, <minecraft:gravel>, <liquid:ferramic>, 16, true);
 }
 
 {//zorra
@@ -100,6 +102,7 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 
 {
 	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:fire_charge>, 288);
+	mods.prodigytech.explosionfurnace.explosives.add(<contenttweaker:pilkeum>, 360 * 2);
 	mods.prodigytech.explosionfurnace.explosives.add(<appliedenergistics2:tiny_tnt>, 750);
 	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:tnt>, 1500);
 	mods.prodigytech.explosionfurnace.explosives.add(<natura:nether_planks:3>, 288);
@@ -124,15 +127,15 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 	]);
 	recipes.remove(<prodigytech:energion_aeroheater>);
 	recipes.addShaped("ai_energion_aeroheater", <prodigytech:energion_aeroheater>, [
-		[<prodigytech:inferno_crystal>, null, <prodigytech:inferno_crystal>], 
+		[<prodigytech:inferno_crystal>, <prodigytech:circuit_crude>, <prodigytech:inferno_crystal>], 
 		[<prodigytech:inferno_crystal>, <ore:gemEnergion>, <prodigytech:inferno_crystal>], 
 		[<ore:gearFerramic>, <prodigytech:solid_fuel_aeroheater>, <ore:gearFerramic>]
 	]);
 	recipes.remove(<prodigytech:tartaric_aeroheater>);
 	recipes.addShaped("ia_tartaric_aeroheater", <prodigytech:tartaric_aeroheater>, [
-		[<ore:gearFerramic>, <prodigytech:aeternus_crystal>, <ore:gearFerramic>], 
-		[<ore:ingotZorrasteel>, <morefurnaces:furnaceblock:1>, <ore:ingotZorrasteel>], 
-		[<ore:ingotZorrasteel>, <prodigytech:energion_aeroheater>, <ore:ingotZorrasteel>]
+		[<prodigytech:zorrasteel_block>, <prodigytech:aeternus_crystal>, <prodigytech:zorrasteel_block>], 
+		[<prodigytech:circuit_perfected>, <morefurnaces:furnaceblock:1>, <prodigytech:circuit_perfected>], 
+		[<prodigytech:zorrasteel_block>, <prodigytech:energion_aeroheater>, <prodigytech:zorrasteel_block>]
 	]);
 
 	recipes.remove(<prodigytech:capacitor_aeroheater>);
@@ -159,6 +162,12 @@ recipes.addShapeless("ia_inferno_fuel", <prodigytech:inferno_fuel>,
 );
 recipes.remove(<prodigytech:energion_dust>);
 //energion in roots mortar
+recipes.addShaped("ia_hot_energion", <contenttweaker:hot_energion> * 8, [
+	[<prodigytech:energion_dust>, <prodigytech:energion_dust>, <prodigytech:energion_dust>], 
+	[<prodigytech:energion_dust>, <prodigytech:heat_capacitor_0>.transformReplace(<prodigytech:heat_capacitor_0:1200>), <prodigytech:energion_dust>], 
+	[<prodigytech:energion_dust>, <prodigytech:energion_dust>, <prodigytech:energion_dust>]
+]);
+
 
 //circuits
 recipes.remove(<prodigytech:circuit_plate>);
@@ -180,11 +189,56 @@ recipes.addShaped("ia_pattern_circuit_perfected", <prodigytech:pattern_circuit_p
 	[<prodigytech:heat_capacitor_0>, <prodigytech:circuit_refined>, <prodigytech:heat_capacitor_0>]
 ]);
 
-solderer.addRecipe(
-	<prodigytech:pattern_circuit_perfected>, 
-	<prodigytech:circuit_refined>, 
-	<prodigytech:circuit_perfected>, 12
-);
+solderer.removeAll();
+{//crude
+	solderer.addRecipe(<prodigytech:pattern_circuit_crude>,
+		<contenttweaker:zinc_ingot> * 8, <prodigytech:circuit_crude>, 12
+	);
+	solderer.addRecipe(<prodigytech:pattern_circuit_crude>,
+		<contenttweaker:zinc_wire> * 4, <prodigytech:circuit_crude>, 12
+	);
+
+	solderer.addRecipe(<contenttweaker:research_circuit1>,
+		<contenttweaker:bocuit>, <prodigytech:circuit_crude> * 4, 12
+	);
+}{//refined
+	recipes.addShaped("ia_pt_crude_chip", <contenttweaker:pt_crude_chip>, [
+		[<moreplates:hammer>.anyDamage().transformDamage(), <contenttweaker:gold_coil>],
+		[null, <contenttweaker:zinc_plate>],
+		[null, <prodigytech:circuit_crude>]
+	]);
+	mods.appliedenergistics2.Inscriber.addRecipe(
+		<contenttweaker:pt_crude_chip>, <contenttweaker:zinc_plate>, false, 
+		<contenttweaker:gold_coil>, <prodigytech:circuit_crude>
+	);
+
+	solderer.addRecipe(<prodigytech:pattern_circuit_refined>,
+		<contenttweaker:pt_crude_chip>, <prodigytech:circuit_refined>, 24
+	);
+
+	solderer.addRecipe(<contenttweaker:research_circuit1>,
+		<contenttweaker:pt_crude_chip>, <prodigytech:circuit_refined> * 2, 24
+	);
+}{//perfected
+	recipes.addShaped("ia_pt_refined_chip", <contenttweaker:pt_refined_chip>, [
+		[<moreplates:hammer>.anyDamage().transformDamage(), <contenttweaker:gold_coil>],
+		[null, <moreplates:diamond_plate>],
+		[null, <prodigytech:circuit_refined>]
+	]);
+	mods.appliedenergistics2.Inscriber.addRecipe(
+		<contenttweaker:pt_refined_chip>, <moreplates:diamond_plate>, false, 
+		<contenttweaker:gold_coil>, <prodigytech:circuit_refined>
+	);
+
+	solderer.addRecipe(<prodigytech:pattern_circuit_perfected>,
+		<contenttweaker:pt_refined_chip>, <prodigytech:circuit_perfected>, 36
+	);
+
+	solderer.addRecipe(<contenttweaker:research_circuit1>,
+		<contenttweaker:pt_refined_chip>, <prodigytech:circuit_perfected> * 2, 36
+	);
+}
+
 
 
 
@@ -192,12 +246,12 @@ solderer.addRecipe(
 	recipes.remove(<prodigytech:heat_capacitor_0:1200>);
 	recipes.addShaped("ia_heat_capacitor_0", <prodigytech:heat_capacitor_0:1200>, [
 		[null, <ore:ingotFerramic>, null], 
-		[<ore:ingotFerramic>, <prodigytech:fuel_pellet_4>, <ore:ingotFerramic>], 
+		[<ore:ingotFerramic>, <prodigytech:fuel_pellet_16>, <ore:ingotFerramic>], 
 		[<ore:stickIron>, <ore:ingotFerramic>, <ore:stickIron>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<prodigytech:heat_capacitor_0:1200>],
-		[<ore:ingotFerramic> * 2, <prodigytech:fuel_pellet_4>, <ore:stickIron>],
+		[<ore:ingotFerramic> * 2, <prodigytech:fuel_pellet_16>, <ore:stickIron>],
 		null,
 		10, 256
 	);
@@ -205,12 +259,12 @@ solderer.addRecipe(
 	recipes.remove(<prodigytech:heat_capacitor_1:1200>);
 	recipes.addShaped("ai_heat_capacitor_1", <prodigytech:heat_capacitor_1:1200>, [
 		[null, <prodigytech:heat_capacitor_0:1200>, null], 
-		[<prodigytech:inferno_fuel>, <prodigytech:circuit_crude>, <prodigytech:inferno_fuel>], 
+		[<contenttweaker:hot_energion>, <prodigytech:circuit_crude>, <contenttweaker:hot_energion>], 
 		[null, <prodigytech:heat_capacitor_0:1200>, null]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<prodigytech:heat_capacitor_1:1200>],
-		[<prodigytech:heat_capacitor_0:1200>, <prodigytech:inferno_fuel>, <prodigytech:circuit_crude>],
+		[<prodigytech:heat_capacitor_0:1200>, <contenttweaker:hot_energion>, <prodigytech:circuit_crude>],
 		<liquid:ferramic> * 288,
 		10, 256
 	);
@@ -307,7 +361,7 @@ solderer.addRecipe(
 	recipes.remove(<prodigytech:automatic_crystal_cutter>);
 	recipes.addShaped("ia_automatic_crystal_cutter", <prodigytech:automatic_crystal_cutter>, [
 		[<ore:ingotFerramic>, <ore:gemEnergion>, <ore:ingotFerramic>], 
-		[<prodigytech:crystal_cutter>, <ore:gemEnergion>, <prodigytech:crystal_cutter>], 
+		[<prodigytech:crystal_cutter>, <prodigytech:circuit_crude>, <prodigytech:crystal_cutter>], 
 		[<ore:ingotFerramic>, <contenttweaker:duraluminum_block>, <ore:ingotFerramic>]
 	]);
 
@@ -365,6 +419,8 @@ solderer.addRecipe(
 
 	rotarygrinder.removeRecipe(<ore:oreCoal>);
 
+	rotarygrinder.addRecipe(<minecraft:coal:1>, <thermalfoundation:material:769>);
+
 	//diamond
 	rotarygrinder.removeRecipe(<minecraft:diamond>);
 	rotarygrinder.addRecipe(<minecraft:diamond>, <mekanism:otherdust>);
@@ -387,6 +443,21 @@ solderer.addRecipe(
 	rotarygrinder.addRecipe(<thermalfoundation:material:133>, <thermalfoundation:material:69>);	//nickel
 	rotarygrinder.addRecipe(<contenttweaker:zinc_ingot>, <contenttweaker:zinc_dust>);			//zinc
 	rotarygrinder.addRecipe(<mekanism:ingot:1>, <mekanism:dust:2>);								//osmium
+
+	rotarygrinder.addRecipe(<thermalfoundation:material:163>, <thermalfoundation:material:99>); //bronze
+	rotarygrinder.addRecipe(<thermalfoundation:material:164>, <thermalfoundation:material:100>);//constantan
+	rotarygrinder.addRecipe(<thermalfoundation:material:162>, <thermalfoundation:material:98>); //invar
+
+	rotarygrinder.addRecipe(<thermalfoundation:material:161>, <thermalfoundation:material:97>); //electrum
+	rotarygrinder.addRecipe(<contenttweaker:lesmium_ingot>, <contenttweaker:lesmium_dust>);     //lesmium
+	rotarygrinder.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>); //steel
+	rotarygrinder.addRecipe(<contenttweaker:duraluminum_ingot>, <contenttweaker:duraluminum_dust>); //steel
+}
+{//m reass
+	magneticreassembler.addRecipe(<enderio:item_material:32>, <minecraft:dye:4>);
+
+	furnace.remove(<actuallyadditions:item_misc:5>);
+	magneticreassembler.addRecipe(<actuallyadditions:item_dust:7>, <actuallyadditions:item_misc:5>);
 }
 
 {//atomic reshaper
@@ -597,6 +668,30 @@ mods.bloodmagic.TartaricForge.addRecipe(<prodigytech:tartaric_stoker> * 12, [
         
         rec.build();
 	}
+}
+
+function addHeatEngineRecipe(energy as int, cat as IItemStack){
+    var rec = RecipeBuilder.newBuilder("temp" ~ energy, "heat_engine", 60 * 20);
+    rec.addEnergyPerTickOutput(energy * 10);
+
+    
+    rec.addItemInput(cat);
+    //rec.setChance(0.1);
+    
+
+    rec.addHotAirInput(energy, energy - 1, energy + 10000);
+
+    rec.build();
+}
+{
+	addHeatEngineRecipe(250, <minecraft:gravel>);
+	addHeatEngineRecipe(500, <minecraft:cobblestone>);
+	addHeatEngineRecipe(1000, <prodigytech:charred_cobblestone>);
+	addHeatEngineRecipe(1500, <minecraft:netherrack>);
+	addHeatEngineRecipe(2000, <minecraft:nether_brick>);
+	addHeatEngineRecipe(2500, <minecraft:magma>);
+	addHeatEngineRecipe(3000, <contenttweaker:firebrick_block>);
+	addHeatEngineRecipe(3500, <contenttweaker:hot_block>);
 }
 
 {//circuit_plate

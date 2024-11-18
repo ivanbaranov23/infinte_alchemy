@@ -5,7 +5,7 @@
       "texture": "contenttweaker:blocks/conveyor_block",
       "particle": "contenttweaker:blocks/conveyor_block"
     },
-    "model": "base:storage",
+    "model": "contenttweaker:conveyor",
     "uvlock": true,
     "transform": "forge:default-block"
   },

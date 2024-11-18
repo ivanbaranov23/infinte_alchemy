@@ -1,0 +1,25 @@
+{
+	x: -5.5d,
+	y: 6.5d,
+	text: [
+		"Milk a zombie with an iron bucket...",
+		"",
+		"",
+		"did you read ex nihilo quest?"
+	],
+	dependencies: [
+		"468cf998"
+	],
+	optional: true,
+	tasks: [{
+		uid: "036bc31b",
+		type: "checkmark",
+		title: "Rot",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "rot"
+			}
+		}
+	}]
+}

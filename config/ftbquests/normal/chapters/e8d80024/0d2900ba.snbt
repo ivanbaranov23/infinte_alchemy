@@ -1,0 +1,38 @@
+{
+	x: 7.0d,
+	y: -8.0d,
+	text: [
+		"*TUM* ORECHID... *TUM* *TUM* ...CAN BE USED... *TUM* ...TO... *TUM* *TUM* *TUM* ...MAKE ORI... *TUM* ...CHALCUM *TUM*",
+		"PURE... *TUM* *TUM* ...DAISY CAN... *TUM* ...RESET UNWANTED... *TUM* ...ORES. *TUM* *TUM* *TUM* *TUM*"
+	],
+	tasks: [{
+		uid: "f6aaf97a",
+		type: "item",
+		items: [{
+			id: "botania:specialflower",
+			tag: {
+				type: "orechid"
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "4dcc288b",
+		type: "item",
+		item: {
+			id: "botania:floatingspecialflower",
+			tag: {
+				type: "orechid"
+			}
+		}
+	},
+	{
+		uid: "1824baaf",
+		type: "item",
+		item: {
+			id: "botania:floatingspecialflower",
+			tag: {
+				type: "puredaisy"
+			}
+		}
+	}]
+}

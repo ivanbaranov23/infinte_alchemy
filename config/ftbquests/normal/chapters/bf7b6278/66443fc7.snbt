@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	text: [
+		"Length of the wires was boosted",
+		"LV and MV are now 64 blocks long, HV is 128"
+	],
+	dependencies: [
+		"a49918a9"
+	],
+	tasks: [{
+		uid: "e77b4bdb",
+		type: "checkmark",
+		title: "IE wires",
+		icon: "immersiveengineering:wirecoil"
+	}]
+}

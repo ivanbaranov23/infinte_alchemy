@@ -36,5 +36,26 @@
       }
     ],
     "duration": 6000
+  },
+  {
+    "inputFluid": "water",
+    "outputFluid": "rot",
+    "transformingBlocks": [
+      {
+        "name": "biomesoplenty:flesh",
+        "meta": 0
+      }
+    ],
+    "blocksToSpawn": [
+      {
+        "name": "biomesoplenty:double_plant",
+        "meta": 2
+      },
+      {
+        "name": "biomesoplenty:plant_1",
+        "meta": 10
+      }
+    ],
+    "duration": 6000
   }
 ]

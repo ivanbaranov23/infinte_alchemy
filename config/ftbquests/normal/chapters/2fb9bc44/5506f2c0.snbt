@@ -1,0 +1,20 @@
+{
+	x: -1.5d,
+	y: 5.0d,
+	text: [
+		"You'll need andesite magma to melt this.",
+		"Magma can be made in ex nihilo crucible and mixed with andesite also from crucible. "
+	],
+	dependencies: [
+		"f8152e75",
+		"d9309953"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c6a171c5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:pilkeum"
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: 12.0d,
+	y: -2.0d,
+	text: [
+		"It's better to turn this into sweet flolit solution and use bughill than just turning it into flolit directly."
+	],
+	dependencies: [
+		"255ff871"
+	],
+	optional: true,
+	tasks: [{
+		uid: "48e8fc88",
+		type: "item",
+		items: [{
+			item: "contenttweaker:flolit_plant"
+		}]
+	}]
+}

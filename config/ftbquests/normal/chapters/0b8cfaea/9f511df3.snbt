@@ -2,7 +2,8 @@
 	x: -1.5d,
 	y: -2.0d,
 	text: [
-		"Mixing witch water and water makes dirt, flowing witch water and water also work."
+		"Mixing witch water and water makes dirt, flowing witch water and water also work.",
+		"To finish this pack you'll need to mass produce a lot of things. Here's a tool to help with that"
 	],
 	dependencies: [
 		"f7305be9"
@@ -14,6 +15,12 @@
 		items: [{
 			item: "minecraft:dirt"
 		}],
-		count: 64L
+		count: 64L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "8a4bc124",
+		type: "item",
+		item: "jecalculation:item_calculator"
 	}]
 }

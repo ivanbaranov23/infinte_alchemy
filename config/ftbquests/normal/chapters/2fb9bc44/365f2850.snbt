@@ -1,10 +1,11 @@
 {
 	x: 9.5d,
 	y: 0.0d,
+	text: [
+		"Turns plants into primordium. Remember: diversity is strength. More crops makes process more efficient"
+	],
 	dependencies: [
-		"5b321e8f",
-		"15e5cba2",
-		"b605ae3a"
+		"15e5cba2"
 	],
 	optional: true,
 	tasks: [{

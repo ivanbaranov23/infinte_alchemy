@@ -1,10 +1,11 @@
+import mods.modularmachinery.RecipeBuilder;
 
 //early game
 recipes.addShaped("mm_tree_powered_compressor_controller",
     <modularcontroller:tree_powered_compressor_controller>,
-    [[<contenttweaker:basic_modularium>, <thermalfoundation:material:24>, <contenttweaker:basic_modularium>],
+    [[<contenttweaker:simple_motor>, <thermalfoundation:material:24>, <contenttweaker:simple_motor>],
     [<thermalfoundation:material:320>, <modularmachinery:blockcasing>, <thermalfoundation:material:320>],
-    [<contenttweaker:basic_modularium>, <minecraft:furnace>, <contenttweaker:basic_modularium>],]
+    [<contenttweaker:simple_motor>, <minecraft:furnace>, <contenttweaker:simple_motor>],]
 );
 
 //IE
@@ -18,12 +19,22 @@ recipes.addShaped("mm_garden_cloche_controller", <modularcontroller:garden_cloch
 	[<botania:fertilizer>, <immersiveengineering:metal_decoration0:5>, <botania:fertilizer>], 
 	[<ore:plankTreatedWood>, <extendedcrafting:singularity_custom:100>, <ore:plankTreatedWood>]
 ]);
+recipes.addShaped("mm_heat_engine_controller", <modularcontroller:heat_engine_controller>, [
+	[<immersiveengineering:metal_decoration0:7>, <prodigytech:energion_aeroheater>, <immersiveengineering:metal_decoration0:7>], 
+	[<prodigytech:heat_capacitor_1>, <extrautils2:machine>, <prodigytech:heat_capacitor_1>], 
+	[<immersiveengineering:metal_decoration0:7>, <prodigytech:energion_aeroheater>, <immersiveengineering:metal_decoration0:7>]
+]);
 
 //XU
 recipes.addShaped("mm_research_station_controller", <modularcontroller:research_station_controller>, [
 	[<ore:bookshelf>, <contenttweaker:power_core_active>, <ore:bookshelf>], 
 	[<contenttweaker:power_core_active>, <extrautils2:machine>, <contenttweaker:power_core_active>], 
 	[<ore:bookshelf>, <extendedcrafting:singularity_custom:1>, <ore:bookshelf>]
+]);
+recipes.addShaped("mm_gp_gen_controller", <modularcontroller:gp_gen_controller>, [
+	[<contenttweaker:lapis_tile>, <immersiveengineering:metal_decoration0:6>, <contenttweaker:lapis_tile>], 
+	[<moreplates:enchanted_plate>, <thermalexpansion:frame:64>, <moreplates:enchanted_plate>], 
+	[<contenttweaker:lapis_tile>, <immersiveengineering:metal_decoration0:6>, <contenttweaker:lapis_tile>]
 ]);
 
 
@@ -192,3 +203,38 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:satellite_la
 	[<contenttweaker:satellite_plating>, <contenttweaker:explosion_resistant_plate>, <modularcontroller:pworld_oregen_controller>, <contenttweaker:explosion_resistant_plate>, <contenttweaker:satellite_plating>], 
 	[<contenttweaker:satellite_plating>, <contenttweaker:satellite_plating>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_plating>, <contenttweaker:satellite_plating>]
 ]);
+{
+	var rec = RecipeBuilder.newBuilder("satellite_assembler_drone", "satellite_launch_pad", 2000);
+	rec.addEnergyPerTickInput(1000000);
+
+	rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));
+
+    rec.addItemInput(<contenttweaker:drone> * 32);
+    rec.addItemInput(<contenttweaker:sewing_unit> * 32);
+	rec.addItemInput(<contenttweaker:laser> * 32);
+	rec.addItemInput(<requious:assembler> * 64);
+	rec.addItemInput(<contenttweaker:conveyor_block> * 12);
+	rec.addItemInput(<contenttweaker:ultimate_rune>);
+	rec.addItemInput(<contenttweaker:star_frame>);
+	
+    rec.addItemOutput(<modularcontroller:space_assembler_controller>);
+	rec.addFluidInput(<liquid:rocket_fuel> * 10000);
+	
+
+	rec.build();
+}
+
+//draconic
+{//
+    var rec = RecipeBuilder.newBuilder("donut_controller", "space_assembler", 200);
+	rec.addEnergyPerTickInput(10 * 1000 * 1000);
+
+    rec.addFluidInput(<liquid:circuit> * 10000);
+
+    rec.addItemInput(<mekanism:machineblock3:1> * 64);
+    rec.addItemInput(<contenttweaker:neutronium_mirror2> * 16);
+	rec.addItemInput(<contenttweaker:laser> * 24);
+    
+    rec.addItemOutput(<modularcontroller:donut_controller>);
+	rec.build();
+}

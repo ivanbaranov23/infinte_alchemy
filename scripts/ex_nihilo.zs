@@ -89,7 +89,7 @@ Compost.addRecipe(<biomesoplenty:plant_0:11>, 0.1, "269023", <minecraft:dirt>);
 Compost.addRecipe(<biomesoplenty:plant_0:12>, 0.1, "269023", <minecraft:dirt>);
 Compost.addRecipe(<mysticalworld:aubergine>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<actuallyadditions:item_flax_seed>, 0.08, "269023", <minecraft:dirt>);
-Compost.addRecipe(<actuallyadditions:item_flax_seed>, 0.08, "e00d0d", <bhc:red_heart>);
+Compost.addRecipe(<bhc:red_heart>, 0.08, "e00d0d", <minecraft:dirt>);
 Compost.addRecipe(<ore:slimeball>, 0.2, "269023", <minecraft:dirt>);
 Compost.addRecipe(<roots:wildroot>, 0.1, "735827", <minecraft:dirt>);
 
@@ -106,13 +106,17 @@ Compost.addRecipe(<mod_lavacow:intestine>, 0.125, "aa4342", <minecraft:dirt>);
 
 Compost.addRecipe(<ore:itemSkull>, 0.5, "269023", <minecraft:dirt>);
 
+for ore in <ore:plant*>{
+	Compost.addRecipe(ore, 0.2, "269023", <minecraft:dirt>);
+}
 
+/*
 //dust fix
 Hammer.addRecipe(
 	<ore:compressed1xSand>, <excompressum:compressed_block>,
 	0, 1.0, 1.0
 );
-
+*/
 //sawdust fix
 Hammer.addRecipe(
 	<ore:logWood>, <mekanism:sawdust> * 4,
@@ -257,30 +261,36 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		
 
 		<exnihilocreatio:block_granite_crushed>: [
-			<exnihilocreatio:item_pebble:1>,
-			<exnihilocreatio:item_pebble:1> % 80,
+			<exnihilocreatio:item_pebble:1> * 2,
+			<exnihilocreatio:item_pebble:1> * 2 % 80,
 			<exnihilocreatio:item_pebble:1> % 75,
 			<exnihilocreatio:item_pebble:1> % 70,
 			<exnihilocreatio:item_pebble:1> % 65,
 			<exnihilocreatio:item_pebble:1> % 60
 		],
 		<exnihilocreatio:block_diorite_crushed>: [
-			<exnihilocreatio:item_pebble:2>,
-			<exnihilocreatio:item_pebble:2> % 80,
+			<exnihilocreatio:item_pebble:2> * 2,
+			<exnihilocreatio:item_pebble:2> * 2 % 80,
 			<exnihilocreatio:item_pebble:2> % 75,
 			<exnihilocreatio:item_pebble:2> % 70,
 			<exnihilocreatio:item_pebble:2> % 65,
 			<exnihilocreatio:item_pebble:2> % 60
 		],
 		<exnihilocreatio:block_andesite_crushed>: [
-			<exnihilocreatio:item_pebble:3>,
-			<exnihilocreatio:item_pebble:3> % 80,
+			<exnihilocreatio:item_pebble:3> * 2,
+			<exnihilocreatio:item_pebble:3> * 2 % 80,
 			<exnihilocreatio:item_pebble:3> % 75,
 			<exnihilocreatio:item_pebble:3> % 70,
 			<exnihilocreatio:item_pebble:3> % 65,
 			<exnihilocreatio:item_pebble:3> % 60
 		],
 
+		<contenttweaker:slimy_sand>: [
+			<contenttweaker:slime_shard> % 75,
+			<contenttweaker:slime_shard> % 50,
+			<contenttweaker:slime_shard> % 25,
+			<contenttweaker:slime_shard> % 10
+		]
 	},
 	flintMesh: {
 		<exnihilocreatio:block_skystone_crushed>: [
@@ -293,6 +303,9 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		<minecraft:sand>: [
 			<appliedenergistics2:material:3> % 30,
 			<minecraft:dye:3> % 10
+		],
+		<minecraft:sand:1>: [
+			<minecraft:redstone> % 15
 		],
 		<minecraft:soul_sand>: [
 			<minecraft:quartz> % 40,
@@ -313,6 +326,10 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_ore_aluminum> % 75,
 			<exnihilocreatio:item_ore_aluminum> % 25,
 			<exnihilocreatio:item_ore_zinc> % 25
+		],
+		<contenttweaker:dried_gravel>: [
+			<exnihilocreatio:item_ore_nickel> % 50,
+			<exnihilocreatio:item_ore_nickel> % 25
 		],
 		
 		<exnihilocreatio:block_granite_crushed>: [
@@ -341,14 +358,20 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		]
 	},
 	ironMesh: {
-		<minecraft:gravel>: [
+		<contenttweaker:slimy_sand>: [
+			<exnihilocreatio:item_ore_gold> % 15,
+			<exnihilocreatio:item_ore_silver> % 15,
+			<exnihilocreatio:item_ore_lead> % 15,
+			<exnihilocreatio:item_ore_osmium> % 15
+		],
+		<contenttweaker:iron_sand>: [
 			<exnihilocreatio:item_ore_gold> % 25,
 			<exnihilocreatio:item_ore_silver> % 25,
 			<exnihilocreatio:item_ore_lead> % 25,
 			<exnihilocreatio:item_ore_osmium> % 25
 		],
 		<minecraft:sand:1>: [
-			<minecraft:redstone> % 5,
+			<minecraft:redstone> % 25,
 			<minecraft:glowstone_dust> % 5
 		],
 
@@ -401,12 +424,12 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_pebble:3> % 40
 		],
 		<tconstruct:soil>: [
-			<exnihilocreatio:item_ore_platinum> % 20,
-			<exnihilocreatio:item_ore_iridium> % 10,
-			<contenttweaker:uranium_pieces> % 5,
-			<exnihilocreatio:item_ore_yellorium> % 4,
-			<exnihilocreatio:item_ore_tungsten> % 10,
-			<exnihilocreatio:item_ore_titanium> % 15
+			<exnihilocreatio:item_ore_platinum> % 1,
+			<exnihilocreatio:item_ore_iridium> % 1,
+			<contenttweaker:uranium_pieces> % 1,
+			<exnihilocreatio:item_ore_yellorium> % 1,
+			<exnihilocreatio:item_ore_tungsten> % 1,
+			<exnihilocreatio:item_ore_titanium> % 1
 		],
 		<biomesoplenty:white_sand>: [
 			<taiga:dilithium_crystal> % 2,

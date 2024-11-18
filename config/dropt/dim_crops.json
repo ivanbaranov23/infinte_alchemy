@@ -1,0 +1,26 @@
+{
+    "rules": [
+        {
+            "match": {
+                "blocks": {"blocks": ["roots:infernal_bulb_crop:7"]},
+                "dimensions": {"ids": [-1]}
+            },
+            "replaceStrategy": "ADD",
+            "drops": [
+                {
+                    "selector": {
+                        "weight": {"value": 1}
+                    },
+                    "item": {
+                        "items": ["contenttweaker:nether_pest"]
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {"value": 3}
+                    }
+                }
+            ]
+        }
+    ]
+}

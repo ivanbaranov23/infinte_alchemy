@@ -57,6 +57,18 @@
 			}
 		}],
 		ignore_damage: true
+	},
+	{
+		uid: "1624ce3f",
+		type: "item",
+		items: [{
+			id: "excompressum:chicken_stick",
+			tag: {
+				IsAngry: 1b
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "64ef02c2",

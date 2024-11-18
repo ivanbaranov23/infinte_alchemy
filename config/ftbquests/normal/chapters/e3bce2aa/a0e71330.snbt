@@ -1,12 +1,74 @@
 {
+	title: "Research fluids",
+	icon: "contenttweaker:research_fluids",
 	x: 5.0d,
 	y: 0.0d,
 	shape: "gear",
+	text: [
+		""
+	],
 	tasks: [{
-		uid: "10e17d65",
+		uid: "0ac53c0d",
 		type: "item",
 		items: [{
-			item: "contenttweaker:research_fluids"
+			item: "enderio:block_reservoir"
+		}],
+		count: 8L
+	},
+	{
+		uid: "289fe947",
+		type: "item",
+		items: [{
+			item: "erebus:fluid_jar"
 		}]
+	},
+	{
+		uid: "e223822f",
+		type: "item",
+		items: [{
+			item: "extrautils2:passivegenerator 1 3"
+		}],
+		count: 8L
+	},
+	{
+		uid: "4e74bf71",
+		type: "item",
+		items: [{
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "xu_demonic_metal",
+				Amount: 1000
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "25b01418",
+		type: "item",
+		items: [{
+			item: "fluiddrawers:tank"
+		}],
+		count: 8L
+	},
+	{
+		uid: "ef3c026e",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 32L
+	},
+	{
+		uid: "5315c3bf",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:tank",
+			tag: {
+				RSControl: 0b,
+				Level: 0b
+			}
+		}],
+		ignore_nbt: 1b
 	}]
 }

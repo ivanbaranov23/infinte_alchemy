@@ -1,0 +1,19 @@
+{
+	x: -10.5d,
+	y: 0.0d,
+	dependencies: [
+		"de0a8b94"
+	],
+	tasks: [{
+		uid: "c732aac2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:xnet_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "f31a9cef",
+		type: "item",
+		item: "contenttweaker:xnet_block"
+	}]
+}

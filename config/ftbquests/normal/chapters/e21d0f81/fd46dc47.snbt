@@ -1,6 +1,9 @@
 {
-	x: 9.0d,
-	y: -2.0d,
+	x: 10.0d,
+	y: -3.0d,
+	text: [
+		"Tastes like ruby and worms"
+	],
 	dependencies: [
 		"8e108481"
 	],

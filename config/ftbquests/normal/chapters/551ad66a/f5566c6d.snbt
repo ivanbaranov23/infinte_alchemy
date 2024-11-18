@@ -1,10 +1,11 @@
 {
-	x: 5.0d,
-	y: 3.0d,
+	x: 8.0d,
+	y: 4.0d,
 	shape: "diamond",
 	dependencies: [
 		"6a411f76"
 	],
+	optional: true,
 	tasks: [{
 		uid: "b1dabd35",
 		type: "item",

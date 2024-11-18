@@ -1,0 +1,140 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = foreground
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  keepaspectratio = false
+  action = backgroundoptions
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-left
+  x = 9
+  action = movebutton
+  y = -61
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  orientation = mid-left
+  x = 9
+  action = movebutton
+  y = -91
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = mid-left
+  x = 9
+  action = movebutton
+  y = -32
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 186
+  width = 268
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 16e6765f-3704-447a-ab04-c824dbb73c121727003772192
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 2
+  width = 169
+  action = deep_customization_element:title_screen_branding
+  actionid = 6e332cd5-058b-4fdd-9eb4-8152a3eb5d9f1727003772275
+  y = 272
+  height = 60
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 411
+  width = 228
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 08372e8a-8794-41c7-a770-cf6a66cfccac1727003772278
+  y = 314
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 423
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = 7a90d12a-5785-4b71-9a0f-3eae907df9441727003772281
+  y = 183
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 183
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 75b34ac8-1746-4160-859b-02aeadf676881727003772284
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = false
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = cecd9c09-a438-4b48-92ae-f09747f2456b1727003772286
+  y = 0
+  height = 30
+}
+
+customization {
+  orientation = mid-left
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  buttonaction = openlink;https://discord.gg/ub3NbSDeZM%btnaction_splitter_fm%
+  x = 9
+  width = 200
+  action = addbutton
+  actionid = 313421fc-cb6b-4d68-a9eb-3476b81ae6f11727006792334
+  y = -1
+  label = discord
+  height = 20
+}
+
+customization {
+  orientation = top-left
+  enable_scrolling = true
+  shadow = true
+  scale = 4.0
+  source = main menu WIP
+  text_border = 0
+  case_mode = normal
+  source_mode = direct
+  line_spacing = 1
+  x = 295
+  width = 310
+  action = custom_layout_element:fancymenu_customization_item_text
+  actionid = 0571e7f9-b74b-4ea7-8f4b-a90b01c885c71729606485060
+  y = 125
+  alignment = left
+  height = 40
+}
+

@@ -1,0 +1,27 @@
+{
+    "name": "mushroom_red",
+    "mod": "erebus",
+    "sapling": {
+      "name": "contenttweaker:bonsai_mushroom_red",
+      "data": 0
+    },
+    "growTimeMultiplier": 1.0,
+    "drops": [
+      {
+        "name": "minecraft:red_mushroom",
+        "data": 0,
+        "type": "CUSTOM",
+        "count": 3,
+        "chance": 0.9
+      },
+      
+      
+      {
+        "name": "exnihilocreatio:item_material",
+        "data": 3,
+        "type": "CUSTOM",
+        "count": 1,
+        "chance": 0.5
+      }
+    ]
+  }

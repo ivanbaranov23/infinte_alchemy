@@ -12,7 +12,17 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .output(item('thermalfoundation:material', 68) * 3)
         .register()
 
+inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('water'))
+        .input(item('contenttweaker:slime_shard'))
+        .output(item('minecraft:slime_ball'))
+        .register()
 
+inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('water'))
+        .input(item('deepmoblearning:soot_covered_redstone') * 4)
+        .output(item('minecraft:redstone'))
+        .register()
 
 
 inWorldCrafting.fluidToItem.recipeBuilder()
@@ -93,6 +103,12 @@ inWorldCrafting.fluidToFluid.recipeBuilder()
         .fluidOutput(fluid('ash_solution'))
         .register()
 
+
+inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('formic_acid'))
+        .input(item('contenttweaker:compound_metal'))
+        .output(item('contenttweaker:compound_metal2'))
+        .register()
 
 
 inWorldCrafting.explosion.recipeBuilder()
