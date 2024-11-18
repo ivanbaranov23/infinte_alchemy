@@ -411,6 +411,20 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 			[<appliedenergistics2:material:6>, <nae2:coprocessor_4x>, <appliedenergistics2:material:6>]
 		]);
 	}
+
+	{
+		recipes.remove(<appliedenergistics2:molecular_assembler>);
+		recipes.addShaped("ia_molecular_assembler", <appliedenergistics2:molecular_assembler>, [
+			[<contenttweaker:fluix_steel_rod>, <appliedenergistics2:quartz_glass>, <contenttweaker:fluix_steel_rod>], 
+			[<appliedenergistics2:material:43>, <thermalexpansion:machine:11>, <appliedenergistics2:material:43>], 
+			[<contenttweaker:fluix_steel_rod>, <appliedenergistics2:quartz_glass>, <contenttweaker:fluix_steel_rod>]
+		]);
+		recipes.addShaped("ia_molecular_assembler2", <appliedenergistics2:molecular_assembler> * 2, [
+			[<contenttweaker:fluix_steel_rod>, <appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:fluix_steel_rod>], 
+			[<appliedenergistics2:material:43>, <thermalexpansion:machine:11>, <appliedenergistics2:material:43>], 
+			[<contenttweaker:fluix_steel_rod>, <appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:fluix_steel_rod>]
+		]);
+	}
 }
 
 

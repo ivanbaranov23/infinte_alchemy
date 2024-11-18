@@ -9,6 +9,8 @@ import crafttweaker.data.IData;
 import mods.requious.Assembly;
 import mods.requious.AssemblyRecipe;
 
+import mods.modularmachinery.RecipeBuilder;
+
 
 
 function addVialProcess(entity as string, poison as ILiquidStack, 
@@ -109,6 +111,32 @@ function addVialProcess(entity as string, poison as ILiquidStack,
 
     <assembly:vial_processor>.addRecipe(recipe);	
 }
+
+furnace.remove(<mysticalagriculture:crafting:38>);
+recipes.addShapeless("soulium_dust", <mysticalagriculture:crafting:29>, [
+    <contenttweaker:research_soul>.reuse(),
+    <enderio:item_material:52>, 
+    <botania:manaresource:15>, 
+    <extendedcrafting:material:37>, 
+    <contenttweaker:tungsten_mixture>
+]);
+var rec = RecipeBuilder.newBuilder("soulium", "tignalum_oven", 10 * 20);
+
+rec.addEnergyPerTickInput(10000);
+rec.addItemOutput(<mysticalagriculture:crafting:38>);
+rec.addItemInput(<mysticalagriculture:crafting:29>);
+rec.addHotAirInput(250, 250, 1001);
+
+rec.build();
+
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <requious:vial_processor>, [
+    [<moreplates:soulium_gear>, <moreplates:soulium_plate>, <moreplates:soulium_plate>, <moreplates:soulium_plate>, <moreplates:soulium_gear>], 
+    [<extendedcrafting:material:36>, <contenttweaker:soul_codex8>, <mob_grinding_utils:saw>, <contenttweaker:soul_codex8>, <extendedcrafting:material:36>], 
+    [<extendedcrafting:material:36>, <enderio:item_material:44>, <enderio:item_material:55>, <enderio:item_material:44>, <extendedcrafting:material:36>], 
+    [<extendedcrafting:material:36>, <contenttweaker:soul_codex8>, <enderio:block_powered_spawner>, <contenttweaker:soul_codex8>, <extendedcrafting:material:36>], 
+    [<moreplates:soulium_gear>, <moreplates:soulium_plate>, <moreplates:soulium_plate>, <moreplates:soulium_plate>, <moreplates:soulium_gear>]
+]);
 
 
 
@@ -592,3 +620,8 @@ addVialProcess("twilightforest:slime_beetle", poison, {
 );
 
 
+//misc
+addVialProcess("industrialforegoing:pink_slime", poison, {
+    <industrialforegoing:pink_slime> * 8: 1.0
+    }, <liquid:if.pink_slime> * 200, 4
+);

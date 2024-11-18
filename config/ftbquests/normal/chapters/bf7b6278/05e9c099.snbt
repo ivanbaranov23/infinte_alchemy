@@ -1,7 +1,11 @@
 {
+	title: "Refinery",
 	icon: "immersiveengineering:metal_multiblock 1 9",
 	x: 11.0d,
 	y: -1.0d,
+	text: [
+		""
+	],
 	dependencies: [
 		"706f727e"
 	],

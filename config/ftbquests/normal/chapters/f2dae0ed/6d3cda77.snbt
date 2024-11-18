@@ -1,0 +1,18 @@
+{
+	x: 1.0d,
+	y: 0.0d,
+	text: [
+		"Allows you to create a chest with 4 items in each slot. Not very useful"
+	],
+	dependencies: [
+		"9e19a925"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6be3a746",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:item_splitter"
+		}]
+	}]
+}

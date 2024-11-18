@@ -455,29 +455,29 @@ recipes.addShapeless("ia_food_pellet", <contenttweaker:food_pellet>,
     ]);
     Transposer.addFillRecipe(
         <contenttweaker:bucket_obsidian_residue>,
-        <contenttweaker:bucket_obsidian>, <liquid:lava_residue> * 1000,
-        1000
+        <contenttweaker:bucket_obsidian>, <liquid:lava_residue> * 4000,
+        10000
     );
     Transposer.addFillRecipe(
         <contenttweaker:bucket_obsidian_void>,
-        <contenttweaker:bucket_obsidian>, <liquid:ender_distillation> * 1000,
-        1000
+        <contenttweaker:bucket_obsidian>, <liquid:ender_distillation> * 1500,
+        10000
     );
 
-    <contenttweaker:bucket_water>.addTooltip("One would imagine that any bucket is watertight.");
+    
     recipes.addShaped("bucket_water", <contenttweaker:bucket_water>, [
         [<contenttweaker:watertight_steel_plate>, <minecraft:bucket>, <contenttweaker:watertight_steel_plate>], 
         [null, <contenttweaker:watertight_steel_plate>, null]
     ]);
     Transposer.addFillRecipe(
         <contenttweaker:bucket_water_heavy>,
-        <contenttweaker:bucket_water>, <liquid:heavywater> * 1000,
-        1000
+        <contenttweaker:bucket_water>, <liquid:heavywater> * 4000,
+        10000
     );
     Transposer.addFillRecipe(
         <contenttweaker:bucket_water_seaweed>,
-        <contenttweaker:bucket_water>, <liquid:seaweed_rich_water> * 1000,
-        1000
+        <contenttweaker:bucket_water>, <liquid:seaweed_rich_water> * 4000,
+        10000
     );
 
     recipes.addShaped("bucket_cursed", <contenttweaker:bucket_cursed>, [
@@ -486,8 +486,8 @@ recipes.addShapeless("ia_food_pellet", <contenttweaker:food_pellet>,
     ]);
     Transposer.addFillRecipe(
         <contenttweaker:bucket_cursed_sand>,
-        <contenttweaker:bucket_cursed>, <liquid:sand> * 1000,
-        1000
+        <contenttweaker:bucket_cursed>, <liquid:sand> * 4000,
+        10000
     );
     
     recipes.addShaped("bucket_valk", <contenttweaker:bucket_valk>, [
@@ -496,8 +496,8 @@ recipes.addShapeless("ia_food_pellet", <contenttweaker:food_pellet>,
     ]);
     Transposer.addFillRecipe(
         <contenttweaker:bucket_valk_cloud>,
-        <contenttweaker:bucket_valk>, <liquid:cloud_seed> * 1000,
-        1000
+        <contenttweaker:bucket_valk>, <liquid:cloud_seed> * 4000,
+        10000
     );
 
     recipes.addShaped("bucket_bio", <contenttweaker:bucket_bio>, [
@@ -506,8 +506,8 @@ recipes.addShapeless("ia_food_pellet", <contenttweaker:food_pellet>,
     ]);
     Transposer.addFillRecipe(
         <contenttweaker:bucket_bio_diesel>,
-        <contenttweaker:bucket_bio>, <liquid:biodiesel> * 1000,
-        1000
+        <contenttweaker:bucket_bio>, <liquid:biodiesel> * 4000,
+        10000
     );
 
     recipes.addShaped("bucket_acid", <contenttweaker:bucket_acid>, [
@@ -522,7 +522,7 @@ recipes.addShapeless("ia_food_pellet", <contenttweaker:food_pellet>,
 
     Transposer.addFillRecipe(
         <contenttweaker:bucket_tree_oil>,
-        <aether_legacy:skyroot_bucket>, <liquid:tree_oil> * 2000,
+        <aether_legacy:skyroot_bucket>, <liquid:tree_oil> * 4000,
         10000
     );
     Transposer.addFillRecipe(
@@ -541,5 +541,5 @@ recipes.addShapeless(
 
 
 
-<contenttweaker:dummy>.addTooltip("Pay this no mind");
+
 furnace.remove(<contenttweaker:dummy>);

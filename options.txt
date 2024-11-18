@@ -99,8 +99,8 @@ key_pe.key.charge:47
 key_pe.key.extra_function:46
 key_pe.key.fire_projectile:19
 key_pe.key.mode:34
-key_quark.keybind.lockBuilding:37
 key_quark.keybind.toggleAutojump:48
+key_quark.keybind.lockBuilding:37
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0

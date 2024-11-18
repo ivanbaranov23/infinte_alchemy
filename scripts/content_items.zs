@@ -1233,7 +1233,6 @@ function add_mech_part(name as string){
 
         //VanillaFactory.createItem("irradiated_compound").register();//todo poison you
         var irradiated_compound = VanillaFactory.createItem("irradiated_compound");
-        irradiated_compound.glowing = true;
         irradiated_compound.rarity = "rare";
         irradiated_compound.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
             if (owner instanceof IPlayer) {
@@ -2730,6 +2729,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     addItem("very_very_bouncy_matter", "epic", 64);
     VanillaFactory.createBlock("space_stabilization_frame", <blockmaterial:rock>).register();
     addGlass("cosmic_prism");
+
+
+    VanillaFactory.createItem("final_frame").register();
 }
 
 //research
@@ -2766,6 +2768,8 @@ VanillaFactory.createItem("demon_bucket").register();
 VanillaFactory.createItem("research_fluids").register();
 VanillaFactory.createItem("research_magic1").register();
 VanillaFactory.createItem("research_magic2").register();
+
+VanillaFactory.createItem("research_soul").register();
 
 VanillaFactory.createItem("research_bacteria1").register();
 

@@ -1,6 +1,6 @@
 {
 	title: "Free Power",
-	icon: "solarflux:solar_panel_7",
+	icon: "solarflux:solar_panel_6",
 	x: -0.5d,
 	y: 5.0d,
 	tasks: [{
@@ -15,6 +15,6 @@
 	rewards: [{
 		uid: "bc22ebfe",
 		type: "item",
-		item: "solarflux:solar_panel_7"
+		item: "solarflux:solar_panel_6"
 	}]
 }

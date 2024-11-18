@@ -350,7 +350,7 @@ for rune_id in 0 to 16{
             [<contenttweaker:rune_boule1>], [],
             [
                 <bloodmagic:slate:4> * 2,
-                <contenttweaker:flower_steel_gear> * 5,
+                <bloodmagic:component:5> * 5,
                 <contenttweaker:luck_particle> * 4,
                 <contenttweaker:rune_boule>
             ], [
@@ -365,7 +365,7 @@ for rune_id in 0 to 16{
             [<contenttweaker:rune_boule1>], [],
             [
                 <bloodmagic:slate:4> * 2,
-                <contenttweaker:flower_steel_gear> * 5,
+                <bloodmagic:component:5> * 5,
                 <contenttweaker:chitin>,
                 <contenttweaker:rune_boule>
             ], [
@@ -380,7 +380,7 @@ for rune_id in 0 to 16{
             [<contenttweaker:rune_boule1>], [],
             [
                 <bloodmagic:slate:4> * 4,
-                <contenttweaker:flower_steel_gear> * 5,
+                <bloodmagic:component:5> * 5,
                 <contenttweaker:entwood_dust> * 12,
                 <contenttweaker:rune_boule>
             ], [
@@ -396,8 +396,9 @@ for rune_id in 0 to 16{
             [<contenttweaker:rune_base> * 4, <contenttweaker:reinforced_cell>], null,
             [
                 <contenttweaker:rune_boule1>,
-                <contenttweaker:lightning_cell>,
-                <contenttweaker:ev_coil> * 2,
+                <contenttweaker:rock_cell>,
+                <contenttweaker:ev_coil> * 8,
+                <contenttweaker:mana_circuit>,
                 <bigreactors:mineralanglesite> * 3
             ], [
                 <liquid:ultrapure_water> * 1000
@@ -431,7 +432,7 @@ for rune_id in 0 to 16{
             <liquid:rune_acid> * 1000,
             <liquid:mana> * 1000,
             <liquid:terrasteel> * 288,
-            <liquid:stellar_alloy> * 72
+            <liquid:stellar_alloy> * 288
         ],
         20, 20000
     );
@@ -544,27 +545,27 @@ for rune_id in 0 to 16{
     {//mana
         RuneAltar.addRecipe(<botania:rune:8>, [
             <contenttweaker:rune_base>, <bloodmagic:component:9>,
-            <enderio:item_material:44>, <contenttweaker:manaclay>,
+            <enderio:item_material:44>, <contenttweaker:manaclay>, <contenttweaker:mana_circuit>,
             <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>
             ], 100000
         );
         RuneAltar.addRecipe(<botania:rune:8> * 2, [
             <contenttweaker:improved_rune_base>, <bloodmagic:component:9>,
-            <enderio:item_material:44>, <contenttweaker:manaclay>,
+            <enderio:item_material:44>, <contenttweaker:manaclay>, <contenttweaker:mana_circuit>,
             <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>
             ], 150000
         );
 
         RuneAltar.addRecipe(<botania:rune:8> * 2, [
             <contenttweaker:rune_base>, <bloodmagic:component:9>,
-            <enderio:item_material:44>, <contenttweaker:manaclay>,
+            <enderio:item_material:44>, <contenttweaker:manaclay>, <contenttweaker:mana_circuit>,
             <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>,
             <contenttweaker:rune_mana_cracked>
             ], 100000
         );
         RuneAltar.addRecipe(<botania:rune:8> * 3, [
             <contenttweaker:improved_rune_base>, <bloodmagic:component:9>,
-            <enderio:item_material:44>, <contenttweaker:manaclay>,
+            <enderio:item_material:44>, <contenttweaker:manaclay>, <contenttweaker:mana_circuit>,
             <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>,
             <contenttweaker:rune_mana_cracked>
             ], 150000

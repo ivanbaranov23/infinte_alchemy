@@ -15,6 +15,8 @@
 <mysticalworld:copper_ore>.displayName = "Magical Copper Ore";
 <mekanism:oreblock:2>.displayName = "Magical Tin Ore";
 
+<contenttweaker:dummy>.addTooltip("Pay this no mind");
+
 //metals
 <contenttweaker:xnet_ingot>.addTooltip("Formerly known as Twitternet Ingot");
 <contenttweaker:death_metal_ingot>.addTooltip("You grip the ingot and fell the death gripping you back.");
@@ -38,3 +40,10 @@
 <immersiveengineering:mold:2>.displayName = "Fake mold";
 <immersiveengineering:mold:2>.addTooltip("Do not believe the Engineer's propaganda,");
 <immersiveengineering:mold:2>.addTooltip("there is no way a rod could be this cheap.");
+
+
+//BM
+<bloodmagic:component:5>.displayName = "Plant Reagent";
+<bloodmagic:component:31>.displayName = "Slime Reagent";
+
+<contenttweaker:bucket_water>.addTooltip("One would imagine that any bucket is watertight.");

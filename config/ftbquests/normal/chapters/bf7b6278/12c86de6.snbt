@@ -3,7 +3,7 @@
 	x: 7.0d,
 	y: -3.0d,
 	text: [
-		"...but i was the who made it."
+		"...but i was the one who made it."
 	],
 	dependencies: [
 		"05f2e649"

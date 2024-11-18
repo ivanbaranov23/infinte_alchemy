@@ -522,26 +522,26 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	TartaricForge.removeRecipe([<minecraft:redstone>, <minecraft:lava_bucket>, <ore:blockCoal>.firstItem, <ore:cobblestone>.firstItem]);
 	recipes.addShapeless("ia_bm_clay_fr", <contenttweaker:alchemical_clay_fr>, [<contenttweaker:alchemical_clay>, <minecraft:lingering_potion>.withTag({Potion: "minecraft:long_fire_resistance"})]);
 	TartaricForge.addRecipe(<bloodmagic:component:1>, [
-		<thermalfoundation:material:1024>, <contenttweaker:alchemical_clay_fr>, <contenttweaker:fluix_steel_dust>, <immersiveengineering:stone_decoration:1>
+		<thermalfoundation:material:1024>, <contenttweaker:alchemical_clay_fr>, <contenttweaker:ra_godshard>, <immersiveengineering:stone_decoration:1>
 	], 32, 8);
 	//water
 	TartaricForge.removeRecipe([<minecraft:water_bucket>, <minecraft:water_bucket>, <minecraft:sugar>]);
 	recipes.addShapeless("ia_bm_clay_wb", <contenttweaker:alchemical_clay_wb>, [<contenttweaker:alchemical_clay>, <minecraft:lingering_potion>.withTag({Potion: "minecraft:long_water_breathing"})]);
 	TartaricForge.addRecipe(<bloodmagic:component>, [
-		<thermalfoundation:material:1025>, <contenttweaker:alchemical_clay_wb>, <contenttweaker:osmiridium_dust>, <contenttweaker:bucket_water_seaweed>
+		<thermalfoundation:material:1025>, <contenttweaker:alchemical_clay_wb>, <contenttweaker:tefnuts_godshard>, <contenttweaker:bucket_water_seaweed>
 	], 32, 8);
 	//earth
 	TartaricForge.removeRecipe([<minecraft:iron_pickaxe>,<minecraft:iron_axe>,<minecraft:iron_shovel>,<minecraft:gunpowder>]);
 	recipes.addShapeless("ia_bm_clay_h", <contenttweaker:alchemical_clay_h>, [<contenttweaker:alchemical_clay>, <minecraft:potion>.withTag({Potion: "cofhcore:haste4"})]);
 	<bloodmagic:component:3>.displayName = "Earth Reagent";
 	TartaricForge.addRecipe(<bloodmagic:component:3>, [
-		<thermalfoundation:material:1027>, <contenttweaker:alchemical_clay_h>, <taiga:terrax_dust>, <betternether:cincinnasite_forged>
+		<thermalfoundation:material:1027>, <contenttweaker:alchemical_clay_h>, <contenttweaker:geb_godshard>, <betternether:cincinnasite_forged>
 	], 32, 8);
 	//air
 	TartaricForge.removeRecipe([<minecraft:ghast_tear>,<ore:feather>.firstItem,<ore:feather>.firstItem]);
 	recipes.addShapeless("ia_bm_clay_jb", <contenttweaker:alchemical_clay_jb>, [<contenttweaker:alchemical_clay>, <minecraft:potion>.withTag({Potion: "cofhcore:leaping4"})]);
 	TartaricForge.addRecipe(<bloodmagic:component:2>, [
-		<thermalfoundation:material:1026>, <contenttweaker:alchemical_clay_jb>, <thermalfoundation:material:102>, <openblocks:fan>
+		<thermalfoundation:material:1026>, <contenttweaker:alchemical_clay_jb>, <contenttweaker:shu_godshard>, <openblocks:fan>
 	], 32, 8);
 
 	//t1.5
@@ -563,7 +563,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	//t2
 	//plant
 	TartaricForge.removeRecipe([<ore:treeSapling>.firstItem,<ore:treeSapling>.firstItem,<ore:sugarcane>.firstItem,<minecraft:sugar>]);
-	<bloodmagic:component:5>.displayName = "Plant Reagent";
+	
 	TartaricForge.addRecipe(<bloodmagic:component:5>, [
 		<atum:fertile_soil>, <contenttweaker:bucket_bio_diesel>, <contenttweaker:flower_steel_ingot>, <betternether:eye_seed>
 	], 100, 16);
@@ -574,9 +574,9 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	], 100, 16);
 	//slime
 	TartaricForge.removeRecipe([<minecraft:slime>, <minecraft:slime>, <minecraft:leather>, <ore:string>.firstItem]);
-	<bloodmagic:component:31>.displayName = "Slime Reagent";
+	
 	TartaricForge.addRecipe(<bloodmagic:component:31>, [
-		<erebus:materials:9>, <roots:strange_ooze>, <tconstruct:slime:2>, <enderio:item_alloy_endergy_ingot:4>
+		<contenttweaker:elastic_clay>, <roots:strange_ooze>, <tconstruct:slime:2>, <enderio:item_alloy_endergy_ingot:4>
 	], 100, 16);
 	//holding
 	TartaricForge.removeRecipe([<ore:chestWood>.firstItem, <ore:leather>.firstItem, <ore:string>.firstItem, <ore:string>.firstItem]);
@@ -591,7 +591,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	TartaricForge.addRecipe(<bloodmagic:component:4>, [
 		<actuallyadditions:block_crystal_empowered:3>, 
 		<storagedrawers:upgrade_void>, 
-		<taiga:iox_ingot>, 
+		<taiga:iox_block>, 
 		<contenttweaker:bucket_obsidian_void>
 	], 320, 128);
 	{//claw and crabolion
@@ -658,7 +658,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	], 800, 256);
 	//bug
 	TartaricForge.addRecipe(<contenttweaker:reagent_bug>, [
-		<contenttweaker:bucket_acid_chitin>, <erebus:materials:13>, <contenttweaker:bug_hill_exit1>, <contenttweaker:aether_bug>
+		<contenttweaker:bucket_acid_chitin>, <erebus:materials:13>, <contenttweaker:bug_hill_exit2>, <contenttweaker:aether_bug>
 	], 800, 256);
 
 
@@ -666,13 +666,13 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		TartaricForge.addRecipe(<contenttweaker:reagent_wood>, [
 			<contenttweaker:entwood_dust>,
 			<actuallyadditions:block_misc:4>,
-			<contenttweaker:steelwood_ingot>,
+			<contenttweaker:duraluminumwood_ingot>,
 			<twilightforest:steeleaf_axe>
 		], 1200, 32);
 		TartaricForge.addRecipe(<contenttweaker:reagent_wood>, [
 			<contenttweaker:bucket_tree_oil>,
 			<actuallyadditions:block_misc:4>,
-			<contenttweaker:steelwood_ingot>,
+			<contenttweaker:duraluminumwood_ingot>,
 			<twilightforest:steeleaf_axe>
 		], 1200, 128);
 	}
@@ -716,10 +716,10 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		[
 			<thermalfoundation:material:1024>,
 			<thermalfoundation:material:1024>,
-			<actuallyadditions:item_crystal_empowered>,
+			<actuallyadditions:block_crystal_empowered>,
 			<bloodmagic:component:1>,
 			<contenttweaker:bucket_obsidian_residue>,
-			<contenttweaker:ra_godshard>
+			<contenttweaker:ra_burner>
 		], 1000, 20, 1
 	);
 
@@ -727,10 +727,10 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		[
 			<thermalfoundation:material:1025>,
 			<thermalfoundation:material:1025>,
-			<actuallyadditions:item_crystal_empowered:1>,
+			<actuallyadditions:block_crystal_empowered:1>,
 			<bloodmagic:component>,
 			<contenttweaker:bucket_water_heavy>,
-			<contenttweaker:tefnuts_godshard>
+			<requious:fluid_mixer>
 		], 1000, 20, 1
 	);
 
@@ -738,10 +738,10 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		[
 			<thermalfoundation:material:1027>,
 			<thermalfoundation:material:1027>,
-			<actuallyadditions:item_crystal_empowered:3>,
+			<actuallyadditions:block_crystal_empowered:3>,
 			<bloodmagic:component:3>,
 			<contenttweaker:bucket_cursed_sand>,
-			<contenttweaker:geb_godshard>
+			<actuallyadditions:block_canola_press>
 		], 1000, 20, 1
 	);
 
@@ -749,10 +749,10 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		[
 			<thermalfoundation:material:1026>,
 			<thermalfoundation:material:1026>,
-			<actuallyadditions:item_crystal_empowered:5>,
+			<actuallyadditions:block_crystal_empowered:5>,
 			<bloodmagic:component:2>,
 			<contenttweaker:bucket_valk_cloud>,
-			<contenttweaker:shu_godshard>
+			<mob_grinding_utils:fan>
 		], 1000, 20, 1
 	);
 

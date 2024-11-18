@@ -3,7 +3,7 @@
     "defaults": {
       "model": "contenttweaker:machine",
       "textures": {
-        "0": "enderio:blocks/osmiridium",
+        "0": "plustic:blocks/osmiridiumblock",
         "north": "contenttweaker:blocks/machines/sorter",
         "east": "contenttweaker:blocks/machines/machine_vent",
         "south": "contenttweaker:blocks/machines/machine_vent",

@@ -530,7 +530,8 @@
       "minecraft:magma_cube"
     ],
     "lootItems": [
-      "minecraft:slime_ball,32"
+      "minecraft:slime_ball,32",
+      "industrialforegoing:pink_slime,16"
     ],
     "trial": {
       "entities": [

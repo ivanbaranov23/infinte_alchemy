@@ -270,3 +270,16 @@ recipes.addShaped("ia_meat_feeder", <industrialforegoing:meat_feeder>, [
 	ProteinReactor.add(<mysticalworld:raw_squid>);
 
 }
+
+//pink slime
+mods.thermalexpansion.Imbuer.addRecipe(<liquid:if.pink_slime> * 1000, <industrialforegoing:pink_slime> * 2, <liquid:purpleslime> * 1000, 8000);
+mods.thermalexpansion.Imbuer.addRecipe(<liquid:if.pink_slime> * 1000, <industrialforegoing:pink_slime> * 2, <liquid:blueslime> * 1000, 8000);
+scripts.content_machines.addBioAssemblerRecipe(
+	[<industrialforegoing:pink_slime> * 4], null,
+	[
+		<ore:slimecrystal> * 4
+	], [
+		<liquid:if.pink_slime> * 1000
+	], <contenttweaker:flesh_support>,
+	5, 10000
+);

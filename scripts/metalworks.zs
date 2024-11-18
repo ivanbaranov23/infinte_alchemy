@@ -4032,6 +4032,11 @@ recipes.addShaped("ia_neutronium_sheetmetal", <contenttweaker:neutronium_sheetme
         "fluxed_electrum", 2,
         "energetic_gold1", 4
     );
+
+
+
+    
+
 }
 
 //modularium

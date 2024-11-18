@@ -1917,3 +1917,14 @@ tile.contenttweaker.ice_shard_block.name=Block of Icestone Crystals
 fluid.cold_liquid=Cryotheum Coolant
 
 item.contenttweaker.gemmed_biomass.name=Biocell with Gem Refining Biomass
+
+item.contenttweaker.ra_burner.name=Ra Burner
+
+item.contenttweaker.nether_pest.name=Nether Pest
+item.contenttweaker.nitrall.name=Nitrall
+item.contenttweaker.nitrall_feed.name=Nitrall Feed
+
+item.contenttweaker.alien_bacteria.name=Alien Bacteria
+
+tile.vial_processor.name=Vial Processor
+requious.jei.recipe.vial_processor=Vial Processor

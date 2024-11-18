@@ -139,3 +139,15 @@ recipe_return.requireItem("hidden", <ore:living>.marked("input1"));
 
 Sorter_food.addRecipe(recipe_return);
 Sorter_livespan.addRecipe(recipe_return);
+
+
+recipes.addShaped("ia_sorter_food", <requious:sorter_food>, [
+    [<moreplates:osmiridium_plate>, <contenttweaker:singularity_dust>, <moreplates:osmiridium_plate>], 
+    [<contenttweaker:mekanical_core>, <minecraft:golden_apple:1>, <contenttweaker:mekanical_core>], 
+    [<moreplates:osmiridium_plate>, <industrialforegoing:item_splitter>, <moreplates:osmiridium_plate>]
+]);
+recipes.addShaped("ia_sorter_livespan", <requious:sorter_livespan>, [
+    [<moreplates:osmiridium_plate>, <contenttweaker:singularity_dust>, <moreplates:osmiridium_plate>], 
+    [<contenttweaker:mekanical_core>, <contenttweaker:life>, <contenttweaker:mekanical_core>], 
+    [<moreplates:osmiridium_plate>, <industrialforegoing:item_splitter>, <moreplates:osmiridium_plate>]
+]);

@@ -1,0 +1,26 @@
+{
+	x: 2.0d,
+	y: -1.0d,
+	text: [
+		"Both sorters work the same: put a living in the slot on the left, then put a living to be sorted in the right. ",
+		"If right one's food/lifespan is bigger than the left one, right one will be outputed up, else - down. Left living is not consumed. "
+	],
+	dependencies: [
+		"6d3cda77"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8312d1c6",
+		type: "item",
+		items: [{
+			item: "requious:sorter_food"
+		}]
+	},
+	{
+		uid: "25685e3f",
+		type: "item",
+		items: [{
+			item: "requious:sorter_livespan"
+		}]
+	}]
+}

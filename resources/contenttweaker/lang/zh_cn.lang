@@ -1,0 +1,1915 @@
+ia.tooltip.research=Research material
+
+item.contenttweaker.fireclay.name=烈焰粘土
+item.contenttweaker.brick_dust.name=砖粉
+item.contenttweaker.firebrick.name=烈焰砖
+tile.contenttweaker.firebrick_block.name=烈焰砖块
+
+item.contenttweaker.rich_clay.name=富集粘土
+item.contenttweaker.kaolin_clay.name=高岭土
+tile.contenttweaker.kaolin_clay_block.name=高岭土块
+
+item.contenttweaker.dolomite.name=白云石
+
+tile.contenttweaker.lapis_stone.name=青金石头
+tile.contenttweaker.lapis_cobblestone.name=青金圆石
+tile.contenttweaker.lapis_gravel.name=青金沙砾
+tile.contenttweaker.lapis_tile.name=青金石砖
+
+item.contenttweaker.industrial_clay.name=工业粘土
+item.contenttweaker.elastic_clay.name=弹性粘土
+
+
+item.contenttweaker.zanite_coral.name=紫金珊瑚
+item.contenttweaker.honeyspice_ingot.name=蜜饯锭
+
+
+tile.contenttweaker.iron_sand.name=铁沙
+tile.contenttweaker.gold_sand.name=金沙
+
+item.contenttweaker.bauxite_dust.name=铝土矿石粉
+fluid.bauxite_slurry=铝土矿石浆
+fluid.bauxite_waste=铝土矿石废料
+fluid.bauxite_waste_treated=精炼铝土矿石废料
+
+item.contenttweaker.modularium_paste.name=基础模块化合金糊
+item.contenttweaker.basic_modularium.name=基础模块化合金锭
+
+item.contenttweaker.ferramic_base.name=预热铝锭
+fluid.ferramic=熔融瓷铁
+
+item.contenttweaker.copper_seed.name=铜种子
+item.contenttweaker.copper_potato.name=铜土豆
+
+tile.contenttweaker.zinc_ore.name=锌矿石
+tile.contenttweaker.atum_sphalerite_ore.name=闪锌矿石
+item.contenttweaker.sphalerite_dust.name=闪锌粉
+item.contenttweaker.zinc_ingot.name=锌锭
+item.contenttweaker.zinc_plate.name=锌板
+item.contenttweaker.zinc_rod.name=锌棒
+item.contenttweaker.zinc_gear.name=锌齿轮
+item.contenttweaker.zinc_wire.name=锌线
+tile.contenttweaker.zinc_block.name=锌块
+item.contenttweaker.zinc_nugget.name=锌粒
+item.contenttweaker.zinc_dust.name=锌粉
+
+tile.contenttweaker.electrotine_ore.name=蓝石矿石
+tile.contenttweaker.electrotine_ore_dense.name=致密蓝石矿石
+fluid.electrotine=不稳定蓝石
+
+item.contenttweaker.ancient_dust.name=古代粉
+item.contenttweaker.ancient_ingot.name=古代锭
+tile.contenttweaker.ancient_block.name=古代块
+
+tile.contenttweaker.atum_lead_ore.name=方铅矿石
+item.contenttweaker.galena_dust.name=方铅粉
+
+item.contenttweaker.nial_ingot.name=镍铝合金锭
+tile.contenttweaker.nial_block.name=镍铝合金块
+item.contenttweaker.nial_dust.name=镍铝合金粉
+fluid.nial=熔融镍铝合金
+
+item.contenttweaker.nickel_oxide.name=氧化镍粉
+
+item.contenttweaker.gold_wire.name=金线
+item.contenttweaker.gold_coil.name=金线圈
+
+item.contenttweaker.wear_resistant_alloy_ingot.name=耐腐蚀合金锭
+item.contenttweaker.wear_resistant_alloy_plate.name=耐腐蚀合金板
+item.contenttweaker.wear_resistant_alloy_rod.name=耐腐蚀合金板
+item.contenttweaker.wear_resistant_alloy_gear.name=耐腐蚀合金锭齿轮
+tile.contenttweaker.wear_resistant_alloy_block.name=耐腐蚀合金块
+item.contenttweaker.wear_resistant_alloy_nugget.name=耐腐蚀合金粒
+item.contenttweaker.wear_resistant_alloy_dust.name=耐腐蚀合金粉
+item.contenttweaker.wear_resistant_alloy_ball.name=耐腐蚀合金磨珠
+fluid.wear_resistant_alloy=熔融耐腐蚀合金
+
+item.contenttweaker.duraluminum_ingot.name=耐酸铝合金锭
+item.contenttweaker.duraluminum_plate.name=耐酸铝合金板
+item.contenttweaker.duraluminum_rod.name=耐酸铝合金棒
+item.contenttweaker.duraluminum_gear.name=耐酸铝合金齿轮
+tile.contenttweaker.duraluminum_block.name=耐酸铝合金块
+item.contenttweaker.duraluminum_nugget.name=耐酸铝合金粒
+item.contenttweaker.duraluminum_dust.name=耐酸铝合金粉
+
+item.contenttweaker.flower_steel_ingot.name=花钢合金锭
+item.contenttweaker.flower_steel_plate.name=花钢合金板
+item.contenttweaker.flower_steel_rod.name=花钢合金棒
+item.contenttweaker.flower_steel_gear.name=花钢合金齿轮
+tile.contenttweaker.flower_steel_block.name=花钢合金块
+
+item.contenttweaker.watertight_steel_ingot.name=防水钢合金锭
+item.contenttweaker.watertight_steel_plate.name=防水钢合金板
+item.contenttweaker.watertight_steel_rod.name=防水钢合金板
+item.contenttweaker.watertight_steel_gear.name=防水钢合金齿轮
+tile.contenttweaker.watertight_steel_block.name=防水钢合金块
+item.contenttweaker.watertight_steel_nugget.name=防水钢合金粒
+item.contenttweaker.watertight_steel_dust.name=防水钢合金粉
+
+item.contenttweaker.lesmium_ingot.name=铅锇合金锭
+item.contenttweaker.lesmium_plate.name=铅锇合金板
+item.contenttweaker.lesmium_rod.name=铅锇合金棒
+item.contenttweaker.lesmium_gear.name=铅锇合金齿轮
+tile.contenttweaker.lesmium_block.name=铅锇合金块
+item.contenttweaker.lesmium_nugget.name=铅锇合金粒
+item.contenttweaker.lesmium_dust.name=铅锇合金粉
+
+item.contenttweaker.angel_ingot.name=天使金属锭
+item.contenttweaker.angel_plate.name=天使金属板
+item.contenttweaker.angel_rod.name=天使金属棒
+item.contenttweaker.angel_gear.name=天使金属齿轮
+tile.contenttweaker.angel_block.name=天使金属块
+item.contenttweaker.angel_nugget.name=天使金属粒
+item.contenttweaker.angel_dust.name=天使金属粉
+
+item.contenttweaker.thermal_paste_base.name=耐热浆料
+item.contenttweaker.thermal_paste.name=高耐热浆料
+item.contenttweaker.thermal_ingot.name=高耐热金属锭
+item.contenttweaker.thermal_plate.name=高耐热金属板
+item.contenttweaker.thermal_rod.name=高耐热金属棒
+item.contenttweaker.thermal_gear.name=高耐热金属齿轮
+tile.contenttweaker.thermal_block.name=高耐热金属块
+item.contenttweaker.thermal_nugget.name=高耐热金属粒
+item.contenttweaker.thermal_dust.name=高耐热金属粉
+
+item.contenttweaker.manyullyn_dust.name=玛玉灵粉
+item.contenttweaker.electric_manyullyn_base_ingot.name=充能玛玉灵合金基底
+tile.contenttweaker.electric_manyullyn_base_block.name=充能玛玉灵合金基底块
+item.contenttweaker.electric_manyullyn_base_nugget.name=充能玛玉灵合金基底粒
+
+item.contenttweaker.electric_manyullyn_ingot.name=充能玛玉灵合金锭
+item.contenttweaker.electric_manyullyn_plate.name=充能玛玉灵合金板
+item.contenttweaker.electric_manyullyn_rod.name=充能玛玉灵合金棒
+item.contenttweaker.electric_manyullyn_gear.name=充能玛玉灵合金齿轮
+tile.contenttweaker.electric_manyullyn_block.name=充能玛玉灵合金块
+item.contenttweaker.electric_manyullyn_nugget.name=充能玛玉灵合金粒
+item.contenttweaker.electric_manyullyn_dust.name=充能玛玉灵合金粉
+
+item.contenttweaker.mushroomite_ingot.name=聚合蘑菇锭
+item.contenttweaker.mushroomite_plate.name=聚合蘑菇板
+item.contenttweaker.mushroomite_rod.name=聚合蘑菇棒
+item.contenttweaker.mushroomite_gear.name=聚合蘑菇齿轮
+tile.contenttweaker.mushroomite_block.name=聚合蘑菇块
+item.contenttweaker.mushroomite_nugget.name=聚合蘑菇粒
+item.contenttweaker.mushroomite_dust.name=聚合蘑菇粉
+item.contenttweaker.raw_mushroomite.name=粗聚合蘑菇
+tile.contenttweaker.mushroomite_mud.name=聚合蘑菇土
+
+item.contenttweaker.mekanized_steel_ingot.name=机械钢锭
+item.contenttweaker.mekanized_steel_plate.name=机械钢板
+item.contenttweaker.mekanized_steel_rod.name=机械钢棒
+item.contenttweaker.mekanized_steel_gear.name=机械钢齿轮
+tile.contenttweaker.mekanized_steel_block.name=机械钢块
+item.contenttweaker.mekanized_steel_nugget.name=机械钢粒
+item.contenttweaker.mekanized_steel_dust.name=机械钢粉
+item.contenttweaker.mekanized_steel_base_ingot.name=机械钢锭基板
+
+item.contenttweaker.fluix_steel_ingot.name=福鲁伊克斯钢锭
+item.contenttweaker.fluix_steel_plate.name=福鲁伊克斯钢板
+item.contenttweaker.fluix_steel_rod.name=福鲁伊克斯钢棒
+item.contenttweaker.fluix_steel_gear.name=福鲁伊克斯钢齿轮
+item.contenttweaker.fluix_steel_wire.name=福鲁伊克斯钢线
+tile.contenttweaker.fluix_steel_block.name=福鲁伊克斯钢块
+item.contenttweaker.fluix_steel_nugget.name=福鲁伊克斯钢粒
+item.contenttweaker.fluix_steel_dust.name=福鲁伊克斯钢粉
+
+item.contenttweaker.menril_steel_base_ingot.name=门瑞欧钢锭基板
+item.contenttweaker.menril_steel_ingot.name=门瑞欧钢锭
+item.contenttweaker.menril_steel_nugget.name=门瑞欧钢粒
+item.contenttweaker.menril_steel_plate.name=门瑞欧钢板
+item.contenttweaker.menril_steel_wire.name=门瑞欧钢线
+item.contenttweaker.menril_steel_dust.name=门瑞欧钢粉
+tile.contenttweaker.menril_steel_block.name=门瑞欧钢块
+
+item.contenttweaker.xnet_ingot.name=Xnet合金锭
+item.contenttweaker.xnet_plate.name=Xnet合金板
+item.contenttweaker.xnet_wire.name=Xnet合金线
+tile.contenttweaker.xnet_block.name=Xnet合金块
+
+
+item.contenttweaker.soy_ingot.name=豆浆金属锭
+item.contenttweaker.soy_plate.name=豆浆金属板
+item.contenttweaker.soy_gear.name=豆浆金属齿轮
+
+item.contenttweaker.glass_ingot.name=水晶锌锭
+item.contenttweaker.potion_zinc_ingot.name=注魔水晶锌锭
+item.contenttweaker.potion_zinc_plate.name=注魔水晶锌板
+item.contenttweaker.potion_zinc_gear.name=注魔水晶锌齿轮
+
+item.contenttweaker.solar_potion_zinc_ingot.name=阳光注魔水晶锌锭
+item.contenttweaker.solar_potion_zinc_plate.name=阳光注魔水晶锌板
+item.contenttweaker.solar_potion_zinc_gear.name=阳光注魔水晶锌齿轮
+
+item.contenttweaker.platinum_wire.name=铂线
+
+item.contenttweaker.black_bronze_ingot.name=焦黑铜锭
+item.contenttweaker.black_bronze_plate.name=焦黑铜板
+item.contenttweaker.black_bronze_rod.name=焦黑铜板
+item.contenttweaker.black_bronze_gear.name=焦黑铜齿轮
+tile.contenttweaker.black_bronze_block.name=焦黑铜块
+item.contenttweaker.black_bronze_nugget.name=焦黑铜粒
+item.contenttweaker.black_bronze_dust.name=焦黑铜粉
+
+item.contenttweaker.tinezo_ingot.name=零素锡合金锭
+item.contenttweaker.tinezo_plate.name=零素锡合金板
+item.contenttweaker.tinezo_gear.name=零素锡合金齿轮
+item.contenttweaker.tinezo_dust.name=零素锡合金粉
+tile.contenttweaker.tinezo_block.name=零素锡合金块
+
+item.contenttweaker.coppra.name=铜水晶
+tile.contenttweaker.coppra_block.name=铜水晶块
+item.contenttweaker.ecoppra.name=充能铜水晶
+tile.contenttweaker.ecoppra_block.name=充能铜水晶块
+item.contenttweaker.nittin.name=锡水晶
+tile.contenttweaker.nittin_block.name=锡水晶块
+item.contenttweaker.enittin.name=充能锡水晶
+tile.contenttweaker.enittin_block.name=充能锡水晶块
+item.contenttweaker.goold.name=金水晶
+tile.contenttweaker.goold_block.name=金水晶块
+item.contenttweaker.egoold.name=充能金水晶
+tile.contenttweaker.egoold_block.name=充能金水晶块
+
+item.contenttweaker.rainbow_crystal_cluster.name=彩虹水晶簇
+
+item.contenttweaker.arkenium_pieces.name=Arkenium 矿石碎片
+item.contenttweaker.arkenium_chunk.name=Arkenium 矿石碎块
+item.contenttweaker.arkenium_ingot.name=阿肯钢锭
+item.contenttweaker.arkenium_plate.name=阿肯钢板
+item.contenttweaker.arkenium_gear.name=阿肯钢齿轮
+tile.contenttweaker.arkenium_block.name=阿肯钢块
+item.contenttweaker.arkenium_dust.name=阿肯钢粉
+fluid.arkenium=熔融阿肯钢
+
+item.contenttweaker.arkenium_ball.name=阿肯钢磨珠
+
+item.contenttweaker.arkenium_crystal.name=阿肯钢晶体
+item.contenttweaker.arkenium_shard.name=阿肯钢碎片
+item.contenttweaker.arkenium_cluster.name=阿肯钢碎块
+item.contenttweaker.arkenium_dirty_dust.name=污浊的阿肯钢粉
+gas.arkenium=阿肯钢浆液
+gas.cleanarkenium=纯净阿肯钢浆液
+
+item.contenttweaker.gallium_pieces.name=镓 矿石碎片
+item.contenttweaker.gallium_chunk.name=镓 矿石碎块
+item.contenttweaker.gallium_ingot.name=镓锭
+item.contenttweaker.gallium_sheet.name=镓板
+tile.contenttweaker.gallium_block.name=镓块
+tile.contenttweaker.gallium_ore.name=镓矿石
+tile.contenttweaker.gallium_dense_ore.name=致密镓矿石
+
+item.contenttweaker.gallium_dust.name=镓粉
+fluid.gallium=熔融镓
+
+item.contenttweaker.gallium_crystal.name=镓晶体
+item.contenttweaker.gallium_shard.name=镓碎片
+item.contenttweaker.gallium_clump.name=镓碎块
+item.contenttweaker.gallium_dirty_dust.name=污浊的镓粉
+gas.gallium=镓浆液
+gas.cleangallium=纯净镓浆液
+
+item.contenttweaker.algan.name=铝镓合金粉
+
+item.contenttweaker.stoneleaf.name=钢叶化石
+item.contenttweaker.stoneleaf_clump.name=钢叶化石簇
+tile.contenttweaker.stoneleaf_ore.name=钢叶化石矿石
+tile.contenttweaker.stoneleaf_dense_ore.name=致密钢叶化石矿石
+
+item.contenttweaker.osmiridium_dust.name=铱锇合金粉
+item.contenttweaker.osmiridium_rod.name=铱锇合金棒
+item.contenttweaker.osmiridium_support.name=铱锇合金支撑结构
+
+item.contenttweaker.osgloridium_ingot.name=铱锇荧黑曜合金锭
+item.contenttweaker.osgloridium_plate.name=铱锇荧黑曜合金板
+item.contenttweaker.osgloridium_rod.name=铱锇荧黑曜合金棒
+item.contenttweaker.osgloridium_gear.name=铱锇荧黑曜合金齿轮
+tile.contenttweaker.osgloridium_block.name=铱锇荧黑曜合金块
+item.contenttweaker.osgloridium_nugget.name=铱锇荧黑曜合金粒
+item.contenttweaker.osgloridium_dust.name=铱锇荧黑曜合金粉
+
+item.contenttweaker.fiery_ball.name=炽铁磨珠
+
+item.contenttweaker.titanium_ingot.name=钛锭
+item.contenttweaker.titanium_plate.name=钛板
+item.contenttweaker.titanium_rod.name=钛棒
+item.contenttweaker.titanium_gear.name=钛齿轮
+tile.contenttweaker.titanium_block.name=钛块
+item.contenttweaker.titanium_nugget.name=钛粒
+item.contenttweaker.titanium_dust.name=钛粉
+tile.contenttweaker.titanium_ore.name=钛矿石
+
+item.contenttweaker.tungsten_plate.name=钨板
+item.contenttweaker.tungsten_wire.name=钨线
+item.contenttweaker.tungsten_coil.name=钨线圈
+tile.contenttweaker.tungsten_block.name=钨块
+tile.contenttweaker.tungsten_ore.name=钨矿石
+item.contenttweaker.tungsten_mixture.name=钨混合物
+
+item.contenttweaker.uranium_pieces.name=铀 矿石碎片
+item.contenttweaker.uranium_chunk.name=铀 矿石碎块
+item.contenttweaker.uranium_mesh.name=铀硬化筛网
+
+item.contenttweaker.weather_chrome_mesh.name=天气水晶铬合金半活体硬化筛网
+
+item.contenttweaker.filter_empty.name=流体过滤器框架
+item.contenttweaker.filter_charcoal.name=木炭流体过滤器
+    VanillaFactory.createItem("filter_solar").register();
+    VanillaFactory.createItem("filter_blood").register();
+
+item.contenttweaker.medical_alloy_ingot.name=医用合金锭
+item.contenttweaker.medical_alloy_plate.name=医用合金板
+item.contenttweaker.medical_alloy_rod.name=医用合金棒
+item.contenttweaker.medical_alloy_gear.name=医用合金齿轮
+item.contenttweaker.medical_alloy_wire.name=医用合金线
+tile.contenttweaker.medical_alloy_block.name=医用合金块
+item.contenttweaker.medical_alloy_nugget.name=医用合金粒
+item.contenttweaker.medical_alloy_dust.name=医用合金粉
+item.contenttweaker.medical_alloy_coil.name=医用合金线圈
+fluid.medical_alloy=熔融医用合金
+
+item.contenttweaker.gastight_steel_ingot.name=气密钢锭
+item.contenttweaker.gastight_steel_plate.name=气密钢锭板
+item.contenttweaker.gastight_steel_rod.name=气密钢锭棒
+item.contenttweaker.gastight_steel_gear.name=气密钢锭齿轮
+tile.contenttweaker.gastight_steel_block.name=气密钢锭块
+item.contenttweaker.gastight_steel_nugget.name=气密钢锭粒
+item.contenttweaker.gastight_steel_dust.name=气密钢锭粉
+
+item.contenttweaker.fluxed_rod.name=红石琥珀金棒
+
+item.contenttweaker.calitunti_ingot.name=充能混合金属锭
+item.contenttweaker.calitunti_plate.name=充能混合金属板
+item.contenttweaker.calitunti_gear.name=充能混合金属齿轮
+tile.contenttweaker.calitunti_block.name=充能混合金属块
+
+item.contenttweaker.amethyst_ingot.name=紫晶锭
+item.contenttweaker.amethyst_nugget.name=紫晶粒
+item.contenttweaker.amethyst_dust.name=紫晶粉
+item.contenttweaker.amethyst_dirty_dust.name=污浊的紫晶粉
+fluid.amethesting=紫水晶溶液
+gas.amethesting=气态紫水晶溶液
+
+item.contenttweaker.ender_amethyst_dust.name=末影紫晶粉
+item.contenttweaker.ender_amethyst_dirty_dust.name=污浊的末影紫晶粉
+fluid.ender_amethyst_dirty=末影紫晶粉浆液
+
+item.contenttweaker.celestial_seed.name=仙域水晶种子
+item.contenttweaker.celestial_corn.name=仙域水晶果实
+item.contenttweaker.celestial_cluster.name=仙域水晶果实簇
+fluid.celestial_oil=仙域油
+fluid.hot_celestial_oil=炽热仙域油
+
+item.contenttweaker.chrome_ingot.name=铬锭
+item.contenttweaker.chrome_dust.name=铬粉
+item.contenttweaker.chrome_pieces.name=铬 矿石碎片
+item.contenttweaker.chrome_chunk.name=铬 矿石碎块
+tile.contenttweaker.chrome_block.name=铬块
+tile.contenttweaker.chrome_ore.name=铬矿石
+fluid.chrome=熔融铬
+
+item.contenttweaker.chrome_crystal.name=铬结晶
+item.contenttweaker.chrome_shard.name=铬碎片
+item.contenttweaker.chrome_cluster.name=铬碎块
+item.contenttweaker.chrome_dirty_dust.name=污浊的铬粉
+gas.chrome=铬浆液
+gas.cleanchrome=纯净铬浆液
+
+item.contenttweaker.bedrockium_chunk.name=基岩碎块
+item.contenttweaker.bedrockium_small_chunk.name=小型基岩碎块
+fluid.raw_bedrockium_solution=稀释未加工基岩溶液
+fluid.bedrockium_solution=未加工基岩溶液
+fluid.refined_bedrockium_solution=基岩溶液
+item.contenttweaker.bedrockium_crystal.name=基岩晶体
+item.contenttweaker.bedrockium_fine_powder.name=高质量基岩粉
+item.contenttweaker.bedrockium_alloy_mix.name=基岩合金混合物
+
+item.contenttweaker.bedrockium_alloy_ingot.name=基岩合金锭
+item.contenttweaker.bedrockium_alloy_plate.name=基岩合金板
+item.contenttweaker.bedrockium_alloy_gear.name=基岩合金齿轮
+tile.contenttweaker.bedrockium_alloy_block.name=基岩合金块
+item.contenttweaker.bedrockium_alloy_ball.name=基岩合金磨珠
+
+item.contenttweaker.cursed_gold_pieces.name=诅咒金 矿石碎片
+item.contenttweaker.cursed_gold_chunk.name=诅咒金 矿石碎块
+item.contenttweaker.cursed_gold_dust.name=诅咒金粉
+item.contenttweaker.cursed_gold_ingot.name=诅咒金锭
+item.contenttweaker.cursed_gold_plate.name=诅咒金板
+
+item.contenttweaker.pure_gold_dust.name=高纯度金粉
+fluid.aqua_regia=王水
+fluid.chloroauric_acid=氯金酸
+item.contenttweaker.unannealed_purple_gold_ingot.name=未退火紫金锭
+item.contenttweaker.purple_gold_ingot.name=紫金锭
+tile.contenttweaker.purple_gold_block.name=紫金锭块
+
+item.contenttweaker.peridotite_ingot.name=橄榄合金锭
+item.contenttweaker.peridotite_sheet.name=FFG-橄榄合金板
+tile.contenttweaker.peridotite_block.name=橄榄合金块
+
+item.contenttweaker.imperomite_catalyst.name=帝金催化剂
+item.contenttweaker.imperomite_catalyst_dust.name=使用过的帝金催化剂
+item.contenttweaker.methyst.name=紫水晶催化剂
+item.contenttweaker.methyst_dirty_dust.name=深色紫水晶催化剂
+item.contenttweaker.methyst_dust.name=浅色紫水晶催化剂
+
+item.contenttweaker.imperial_iron_ingot.name=帝铁锭
+item.contenttweaker.imperial_steel_ingot.name=帝钢锭
+item.contenttweaker.imperial_steel_plate.name=帝钢板
+item.contenttweaker.imperial_steel_gear.name=帝钢齿轮
+tile.contenttweaker.imperial_steel_block.name=帝钢块
+
+tile.contenttweaker.neodymium_ore.name=钕矿石
+item.contenttweaker.neodymium_pieces.name=钕 矿石碎片
+item.contenttweaker.neodymium_chunk.name=钕 矿石碎块
+item.contenttweaker.neodymium_ingot.name=钕锭
+item.contenttweaker.neodymium_plate.name=钕板
+item.contenttweaker.neodymium_rod.name=钕棒
+item.contenttweaker.neodymium_gear.name=钕齿轮
+tile.contenttweaker.neodymium_block.name=钕块
+item.contenttweaker.neodymium_dust.name=钕粉
+fluid.neodymium=熔融钕
+
+item.contenttweaker.neodymium_crystal.name=钕结晶
+item.contenttweaker.neodymium_shard.name=钕碎片
+item.contenttweaker.neodymium_cluster.name=钕碎块
+item.contenttweaker.neodymium_dirty_dust.name=污浊的钕粉
+gas.neodymium=钕浆液
+gas.cleanneodymium=纯净钕浆液
+
+item.contenttweaker.karmesine_pieces.name=绯红铁 矿石碎片
+item.contenttweaker.karmesine_chunk.name=绯红铁 矿石碎块
+item.contenttweaker.ovium_pieces.name=欧维姆 矿石碎片
+item.contenttweaker.ovium_chunk.name=欧维姆 矿石碎块
+item.contenttweaker.jauxum_pieces.name=若氏铁 矿石碎片
+item.contenttweaker.jauxum_chunk.name=若氏铁 矿石碎块
+
+item.contenttweaker.vibranium_pieces.name=振金 矿石碎片
+item.contenttweaker.vibranium_chunk.name=振金 矿石碎块
+
+item.contenttweaker.osram_pieces.name=熔晶 矿石碎片
+item.contenttweaker.osram_chunk.name=熔晶 矿石碎块
+
+item.contenttweaker.prometheum_pieces.name=钷 矿石碎片
+item.contenttweaker.prometheum_chunk.name=钷 矿石碎块
+
+item.contenttweaker.eezo_pieces.name=零素 矿石碎片
+item.contenttweaker.eezo_chunk.name=零素 矿石碎块
+
+item.contenttweaker.palladium_pieces.name=钯 矿石碎片
+item.contenttweaker.palladium_chunk.name=钯 矿石碎块
+item.contenttweaker.palladium_plate.name=钯板
+item.contenttweaker.palladium_gear.name=钯齿轮
+item.contenttweaker.palladium_rod.name=钯棒
+item.contenttweaker.palladium_mesh.name=钯硬化筛网
+
+item.contenttweaker.abyssum_pieces.name=深渊金属 矿石碎片
+item.contenttweaker.abyssum_chunk.name=深渊金属 矿石碎块
+
+item.contenttweaker.yrdeen_plate.name=原金板
+item.contenttweaker.yrdeen_gear.name=原金齿轮
+
+item.contenttweaker.proxii_plate.name=普罗克希板
+item.contenttweaker.proxii_gear.name=普罗克希齿轮
+item.contenttweaker.proxii_ball.name=普罗克希磨珠
+
+item.contenttweaker.awaken_uru_ingot.name=觉醒乌鲁锭
+item.contenttweaker.awaken_uru_plate.name=觉醒乌鲁板
+item.contenttweaker.awaken_uru_gear.name=觉醒乌鲁齿轮
+tile.contenttweaker.awaken_uru_block.name=觉醒乌鲁块
+item.contenttweaker.awaken_uru_dust.name=觉醒乌鲁粉
+
+item.contenttweaker.biotite_dust.name=黑云母粉
+item.contenttweaker.biotite_dirty_dust.name=污浊的黑云母粉
+fluid.biotite=液态黑云母
+
+item.contenttweaker.delicate_amber.name=精致琥珀
+item.contenttweaker.delicate_malachite.name=精致孔雀石
+item.contenttweaker.delicate_tanzanite.name=精致坦桑石
+item.contenttweaker.delicate_topaz.name=精致黄玉
+
+item.contenttweaker.gem_amber_dust.name=富集琥珀粉
+item.contenttweaker.gem_malachite_dust.name=富集孔雀石粉
+item.contenttweaker.gem_peridot_dust.name=富集橄榄石粉
+item.contenttweaker.gem_ruby_dust.name=富集红宝石粉
+item.contenttweaker.gem_sapphire_dust.name=富集蓝宝石粉
+item.contenttweaker.gem_tanzanite_dust.name=富集坦桑石粉
+item.contenttweaker.gem_topaz_dust.name=富集黄玉粉
+
+item.contenttweaker.gem_amber_seed.name=琥珀种子
+item.contenttweaker.gem_malachite_seed.name=孔雀石种子
+item.contenttweaker.gem_peridot_seed.name=橄榄石种子
+item.contenttweaker.gem_ruby_seed.name=红宝石种子
+item.contenttweaker.gem_sapphire_seed.name=蓝宝石种子
+item.contenttweaker.gem_tanzanite_seed.name=坦桑石种子
+item.contenttweaker.gem_topaz_seed.name=黄玉种子
+
+item.contenttweaker.cincinnasite_dirty_dust.name=污浊的辛西纳石粉
+fluid.cincinnasite_slurry=辛西纳石浆液
+item.contenttweaker.rare_earth_dust.name=稀土元素混合物
+tile.contenttweaker.rare_earth_sand.name=稀土砂
+gas.rare_earth_slurry=稀土浆液
+
+item.contenttweaker.ambrosium_dust.name=神能晶粉
+tile.contenttweaker.ambrosium_gravel.name=神能晶沙砾
+item.contenttweaker.ambrosium_seed.name=神能晶种子
+item.contenttweaker.ambrosium_balls.name=神能晶颗粒
+item.contenttweaker.ambrosium_thing.name=生长神能晶片
+item.contenttweaker.ambrosium_crystal_seed.name=神能晶种子
+item.contenttweaker.ambrosium_crystal.name=大型神能晶片
+item.contenttweaker.corrupted_ambrosium.name=腐化神能晶粉
+
+item.contenttweaker.gambrosium_dust.name=充能神能晶粉
+item.contenttweaker.gambrosium_boule.name=充能神能晶球
+item.contenttweaker.gambrosium_wafer.name=充能神能晶片
+
+fluid.ambrosium_slury=神能晶浆液
+fluid.ambrosium_slury_clean=精炼神能晶浆液
+fluid.gambrosium=充能神能晶溶液
+
+item.contenttweaker.explosion_resistant_ingot.name=防爆合金锭
+item.contenttweaker.explosion_resistant_plate.name=防爆合金板
+item.contenttweaker.explosion_resistant_rod.name=防爆合金棒
+item.contenttweaker.explosion_resistant_gear.name=防爆合金齿轮
+tile.contenttweaker.explosion_resistant_block.name=防爆合金块
+tile.contenttweaker.explosion_resistant_sheetmetal.name=防爆合金板方块
+
+item.contenttweaker.hot_ingot.name=熔焰金属锭
+item.contenttweaker.hot_plate.name=熔焰金属板
+item.contenttweaker.hot_gear.name=熔焰齿金属轮
+tile.contenttweaker.hot_block.name=熔焰金属块
+
+item.contenttweaker.tunril_dust.name=钨瑞欧粉
+item.contenttweaker.tunril_dust_big.name=大型钨瑞欧粉
+item.contenttweaker.tunril_ingot.name=钨瑞欧锭
+item.contenttweaker.tunril_plate.name=钨瑞欧板
+item.contenttweaker.tunril_rod.name=钨瑞欧棒
+tile.contenttweaker.tunril_block.name=钨瑞欧块
+
+item.contenttweaker.tignalum_ingot.name=信素钛合金锭
+item.contenttweaker.tignalum_plate.name=信素钛合金板
+item.contenttweaker.tignalum_rod.name=信素钛合金棒
+item.contenttweaker.tignalum_gear.name=信素钛合金齿轮
+tile.contenttweaker.tignalum_block.name=信素钛合金块
+fluid.tignalum=熔融信素钛合金
+item.contenttweaker.tignalum_ball.name=信素钛合金磨珠
+
+item.contenttweaker.mitanium_ingot.name=陨铁钛合金锭
+tile.contenttweaker.mitanium_block.name=陨铁钛合金块
+
+item.contenttweaker.noble_gases_ingot.name=惰性气体金属锭
+
+item.contenttweaker.blood_bronze_plate.name=血青铜板
+item.contenttweaker.blood_bronze_gear.name=血青铜齿轮
+item.contenttweaker.blood_bronze_ball.name=血青铜磨珠
+
+item.contenttweaker.evil_ball.name=恶魔灌注铁磨珠
+
+item.contenttweaker.alchemical_brass_ingot.name=炼金黄铜锭
+item.contenttweaker.alchemical_brass_plate.name=炼金黄铜板
+item.contenttweaker.alchemical_brass_gear.name=炼金黄铜齿轮
+tile.contenttweaker.alchemical_brass_block.name=炼金黄铜块
+
+item.contenttweaker.skeleton_ingot.name=骨锭
+item.contenttweaker.living_steel_ingot.name=活钢锭
+item.contenttweaker.living_steel_plate.name=活钢板
+item.contenttweaker.living_steel_gear.name=活钢齿轮
+tile.contenttweaker.living_steel_block.name=活钢块
+tile.contenttweaker.living_steel_sheetmetal.name=活钢板方块
+
+item.contenttweaker.crystal_metal_ingot.name=晶体金属锭
+item.contenttweaker.crystal_metal_plate.name=晶体金属板
+item.contenttweaker.crystal_metal_gear.name=晶体金属齿轮
+tile.contenttweaker.crystal_metal_block.name=晶体金属块
+item.contenttweaker.crystal_metal_nugget.name=C晶体金属粒
+
+item.contenttweaker.conductive_alloy_ingot.name=高导电性合金锭
+item.contenttweaker.conductive_alloy_plate.name=高导电性合金板
+item.contenttweaker.conductive_alloy_gear.name=高导电性合金齿轮
+item.contenttweaker.conductive_alloy_wire.name=高导电性合金线
+item.contenttweaker.conductive_alloy_coil.name=高导电性合金线圈
+tile.contenttweaker.conductive_alloy_block.name=高导电性合金块
+
+item.contenttweaker.acid_resistant_steel_a.name=耐酸钢原料粉A
+item.contenttweaker.acid_resistant_steel_b.name=耐酸钢原料粉B
+item.contenttweaker.acid_resistant_steel_ingot.name=耐酸钢锭
+item.contenttweaker.acid_resistant_steel_plate.name=耐酸钢板
+item.contenttweaker.acid_resistant_steel_gear.name=耐酸钢齿轮
+tile.contenttweaker.acid_resistant_steel_block.name=耐酸钢块
+
+item.contenttweaker.mana_absorbing_ingot.name=魔力吸收锭
+item.contenttweaker.mana_steel_ball.name=魔力钢磨珠
+
+item.contenttweaker.chlorasteel_ingot.name=克萝拉钢锭
+item.contenttweaker.chlorasteel_plate.name=克萝拉钢板
+item.contenttweaker.chlorasteel_gear.name=克萝拉钢齿轮
+tile.contenttweaker.chlorasteel_block.name=克萝拉钢块
+
+item.contenttweaker.gem_steel_ingot.name=天地宝晶合金锭
+item.contenttweaker.gem_steel_plate.name=天地宝晶合金板
+item.contenttweaker.gem_steel_gear.name=天地宝晶合金齿轮
+tile.contenttweaker.gem_steel_block.name=天地宝晶合金块
+fluid.gem_steel=熔融天地宝晶合金
+
+item.contenttweaker.mirion2_ingot.name=充能蕴魔合金锭
+item.contenttweaker.mirion2_plate.name=充能蕴魔合金板
+item.contenttweaker.mirion2_rod.name=充能蕴魔合金棒
+item.contenttweaker.mirion2_gear.name=充能蕴魔合金齿轮
+tile.contenttweaker.mirion2_block.name=充能蕴魔合金块
+fluid.mirion2=熔融充能蕴魔合金
+
+item.contenttweaker.light_clay1.name=光敏感性化合物
+item.contenttweaker.light_clay2.name=光反应性化合物
+item.contenttweaker.light_ingot.name=阳光金属锭
+item.contenttweaker.light_plate.name=阳光金属板
+item.contenttweaker.light_gear.name=阳光金属齿轮
+tile.contenttweaker.light_block.name=阳光金属块
+
+item.contenttweaker.glowshroomite_ingot.name=阳光聚合蘑菇锭
+tile.contenttweaker.glowshroomite_block.name=阳光聚合蘑菇块
+tile.contenttweaker.glowshroomite_mud.name=阳光聚合蘑菇土
+
+tile.contenttweaker.orichalcum_ore.name=奥钢矿石
+item.contenttweaker.orichalcum_pieces.name=奥钢 矿石碎片
+item.contenttweaker.orichalcum_chunk.name=奥钢 矿石碎块
+item.contenttweaker.orichalcum_ingot.name=奥钢锭
+item.contenttweaker.orichalcum_plate.name=奥钢板
+item.contenttweaker.orichalcum_gear.name=奥钢齿轮
+tile.contenttweaker.orichalcum_block.name=奥钢块
+item.contenttweaker.orichalcum_dust.name=奥钢粉
+fluid.orichalcum=熔融奥钢
+
+item.contenttweaker.orichalcum_crystal.name=奥钢结晶
+item.contenttweaker.orichalcum_shard.name=奥钢碎片
+item.contenttweaker.orichalcum_clump.name=奥钢碎块
+item.contenttweaker.orichalcum_dirty_dust.name=污浊的奥钢粉
+
+item.contenttweaker.vibralcum_ingot.name=奥振金合金锭
+item.contenttweaker.vibralcum_plate.name=奥振金合金板
+item.contenttweaker.vibralcum_gear.name=奥振金合金齿轮
+tile.contenttweaker.vibralcum_block.name=奥振金合金块
+
+item.contenttweaker.nitinol_ingot.name=镍钛记忆合金锭
+item.contenttweaker.nitinol_plate.name=镍钛记忆合金板
+item.contenttweaker.nitinol_rod.name=镍钛记忆合金棒
+item.contenttweaker.nitinol_gear.name=镍钛记忆合金齿轮
+item.contenttweaker.nitinol_wire.name=镍钛记忆合金线
+tile.contenttweaker.nitinol_block.name=镍钛记忆合金块
+
+item.contenttweaker.neuronium_ingot.name=神经元金属锭
+item.contenttweaker.neuronium_plate.name=神经元金属板
+item.contenttweaker.neuronium_gear.name=神经元金属齿轮
+tile.contenttweaker.neuronium_block.name=神经元金属块
+
+item.contenttweaker.fluxed_invar_ingot.name=红石琥珀钢锭
+item.contenttweaker.fluxed_invar_plate.name=红石琥珀钢板
+item.contenttweaker.fluxed_invar_gear.name=红石琥珀钢齿轮
+tile.contenttweaker.fluxed_invar_block.name=红石琥珀钢块
+
+item.contenttweaker.moon_dust.name=月亮金属粉
+item.contenttweaker.moon_ingot.name=月亮金属锭
+item.contenttweaker.moon_plate.name=月亮金属板
+item.contenttweaker.moon_gear.name=月亮金属齿轮
+tile.contenttweaker.moon_block.name=月亮金属块
+
+item.contenttweaker.preblack_ingot.name=粗制黑铁锭
+
+item.contenttweaker.starmetal_plate.name=星辉板
+item.contenttweaker.starmetal_gear.name=星辉齿轮
+tile.contenttweaker.starmetal_block.name=星辉块
+tile.contenttweaker.starmetal_sheetmetal.name=星辉板方块
+
+item.contenttweaker.aquamarine_dust.name=海蓝宝石粉
+item.contenttweaker.aquamarine_dirty_dust.name=污浊的海蓝宝石粉
+
+tile.contenttweaker.zirconium_ore.name=锆矿石
+tile.contenttweaker.zirconium_ore_dense.name=致密锆矿石
+item.contenttweaker.zirconium_pieces.name=Zirconium 矿石碎片
+item.contenttweaker.zirconium_chunk.name=Zirconium 矿石碎块
+item.contenttweaker.zirconium_gem.name=锆宝石
+tile.contenttweaker.zirconium_block.name=锆宝石块
+item.contenttweaker.zirconium_dust.name=锆粉
+fluid.zirconium=熔融锆
+
+item.contenttweaker.zirconium_lens.name=锆透镜
+
+item.contenttweaker.zirconium_crystal.name=锆结晶
+item.contenttweaker.zirconium_shard.name=锆碎片
+item.contenttweaker.zirconium_clump.name=锆碎块
+item.contenttweaker.zirconium_dirty_dust.name=污浊的锆粉
+
+tile.contenttweaker.moissanite_ore.name=莫桑石矿石
+item.contenttweaker.moissanite_dirty.name=污浊的莫桑石
+item.contenttweaker.moissanite.name=莫桑石
+item.contenttweaker.moissanite_plate.name=莫桑石透镜
+
+item.contenttweaker.beryllium_dust.name=铍粉
+item.contenttweaker.beryllium_sheet.name=铍板
+tile.contenttweaker.beryllium_block.name=铍块
+
+item.contenttweaker.polonium_dust.name=钋粉
+tile.contenttweaker.polonium_block.name=钋块
+
+
+item.contenttweaker.star_alloy_ingot.name=强化星辉合金锭
+item.contenttweaker.star_alloy_plate.name=强化星辉合金板
+item.contenttweaker.star_alloy_gear.name=强化星辉合金齿轮
+tile.contenttweaker.star_alloy_block.name=强化星辉合金块
+
+item.contenttweaker.super_alloy_base_ingot.name=超级合金基底
+
+item.contenttweaker.neutronium_dust.name=中子素粉
+item.contenttweaker.neutronium_hammer.name=中子素锤
+tile.contenttweaker.neutronium_sand.name=中子素沙
+tile.contenttweaker.neutronium_sheetmetal.name=中子素板方块
+item.contenttweaker.neutronium_ball.name=中子素粉磨珠
+
+
+item.contenttweaker.ore_cube_spent.name=惰性矿石立方体
+item.contenttweaker.ore_cube1.name=矿石立方体 1
+item.contenttweaker.ore_cube2.name=矿石立方体 2
+item.contenttweaker.ore_cube3.name=矿石立方体 3
+item.contenttweaker.ore_cube4.name=矿石立方体 4
+item.contenttweaker.ore_cube5.name=矿石立方体 5
+
+
+item.contenttweaker.denorm_dust.name=非规格化粉
+fluid.denorm=非规格化流体
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+item.contenttweaker.energized_compound.name=充能化合物
+
+item.contenttweaker.malachite_ore_dust.name=污浊的粗孔雀石粉
+item.contenttweaker.malachite_dust.name=粗孔雀石粉
+item.contenttweaker.malachite_crystal_seed.name=粗孔雀石水晶种子
+item.contenttweaker.malachite_monocrystal.name=粗孔雀石水晶
+item.contenttweaker.malachite_polycrystal.name=粗孔雀石 
+item.contenttweaker.malachite_vase.name=孔雀石花瓶
+tile.contenttweaker.malachite_block.name=粗孔雀石块
+fluid.malachite_solution=孔雀石溶液
+fluid.rich_malachite_solution=浓缩孔雀石溶液
+
+item.contenttweaker.solar_silicon.name=太阳能级硅
+
+item.contenttweaker.aluminum_silicon.name=铝硅混合物
+item.contenttweaker.insulation_base.name=绝缘基底粉
+item.contenttweaker.insulation_strand.name=绝缘线
+item.contenttweaker.insulation_fabric.name=绝缘网
+
+item.contenttweaker.insulated_rod.name=绝缘充能玛玉灵棒
+item.contenttweaker.electromagnet_core.name=极压电磁铁铁芯
+tile.contenttweaker.ev_coil.name=极压电磁铁线圈
+
+item.contenttweaker.gravel_wool.name=沙砾棉
+item.contenttweaker.electric_wool.name=静电棉
+item.contenttweaker.electric_wool2_base.name=高级静电棉基底
+item.contenttweaker.electric_wool2.name=高级静电棉
+
+item.contenttweaker.sky_grain.name=天空颗粒
+
+item.contenttweaker.crystal_coal.name=水晶煤炭
+item.contenttweaker.coral_dust.name=珊瑚粉
+
+item.contenttweaker.reinforced_cell.name=强化电池
+item.contenttweaker.lightning_cell.name=雷元素强化电池
+item.contenttweaker.fire_cell.name=火元素强化电池
+item.contenttweaker.light_cell.name=光元素强化电池
+
+item.contenttweaker.raw_photovoltaic.name=粗制光伏板
+
+item.contenttweaker.zorra_dust.name=佐拉粉
+
+item.contenttweaker.relic_ingot.name=遗物锭
+item.contenttweaker.relic_nugget.name=遗物粒
+tile.contenttweaker.relic_block.name=遗物块
+tile.contenttweaker.treasure_block.name=宝藏块
+
+item.contenttweaker.gilded_soot.name=镀金烟灰
+item.contenttweaker.gold_crystal.name=精致黄金水晶
+item.contenttweaker.prefluxed_electrum_blend.name=未充能红石琥珀金粉
+
+tile.contenttweaker.atum_godshardium_ore.name=神屑矿石
+item.contenttweaker.godshardium.name=强化神屑
+
+item.contenttweaker.atum_godshard.name=阿图姆之神屑
+item.contenttweaker.ra_godshard.name=拉之神屑
+item.contenttweaker.ptah_godshard.name=普塔之神屑
+item.contenttweaker.geb_godshard.name=盖布之神屑
+item.contenttweaker.tefnuts_godshard.name=泰夫努特之神屑
+item.contenttweaker.shu_godshard.name=舒之神屑
+item.contenttweaker.horus_godshard.name=荷鲁斯之神屑
+item.contenttweaker.seth_godshard.name=赛特之神屑
+item.contenttweaker.isis_godshard.name=伊西斯之神屑
+item.contenttweaker.montu_godshard.name=蒙图之神屑
+item.contenttweaker.anubis_godshard.name=阿努比斯之神屑
+item.contenttweaker.nuit_godshard.name=努特之神屑
+item.contenttweaker.anput_godshard.name=安普特之神屑
+fluid.nuit_fuel=神圣努特燃料
+
+fluid.fire=液态火元素
+fluid.luminessence=液态荧光精华
+
+fluid.data=液态数据
+
+item.contenttweaker.lazy_soup.name=安眠汤
+
+item.contenttweaker.guarding_crystal.name=守卫水晶
+
+item.contenttweaker.rotor_blades.name=旋翼桨叶
+item.contenttweaker.mekanical_core.name=机械核心
+item.contenttweaker.power_tap_empty.name=电源抽头（空）
+item.contenttweaker.power_tap.name=电源抽头
+
+item.contenttweaker.gearbox_empty.name=齿轮箱外壳
+item.contenttweaker.gearbox_normal.name=齿轮箱
+item.contenttweaker.gearbox_funky.name=高级齿轮箱
+item.contenttweaker.gearbox_good.name=重型齿轮箱
+fluid.mekanized_lubricant=甲基化润滑油
+
+item.contenttweaker.ae2_chip_core.name=芯片基板
+
+item.contenttweaker.redstone_inlay.name=红石嵌体
+item.contenttweaker.neuron_inlay.name=红石神经元嵌体
+item.contenttweaker.neuron2_inlay.name=高级神经元嵌体
+
+item.contenttweaker.fluid_circuit.name=流体电路板
+item.contenttweaker.fluid_processor.name=流体处理器
+item.contenttweaker.gas_circuit.name=锇荧黑曜合金气体电路板
+item.contenttweaker.gas_processor.name=锇荧黑曜合金气体处理器
+
+item.contenttweaker.fiery_circuit.name=炽铁逻辑电路板
+item.contenttweaker.fiery_processor.name=炽铁逻辑处理器
+item.contenttweaker.enderium_circuit.name=末影流体电路板
+item.contenttweaker.enderium_processor.name=末影流体处理器
+item.contenttweaker.osgloridium_circuit.name=铱锇荧黑曜合金气体电路板
+item.contenttweaker.osgloridium_processor.name=铱锇荧黑曜合金气体处理器
+item.contenttweaker.fluxed_circuit.name=红石琥珀金工程电路板
+item.contenttweaker.fluxed_processor.name=红石琥珀金工程处理器
+
+item.contenttweaker.cursed_circuit.name=诅咒逻辑电路板
+item.contenttweaker.cursed_processor.name=诅咒逻辑处理器
+item.contenttweaker.potion_circuit.name=高级流体电路板
+item.contenttweaker.potion_processor.name=高级流体处理器
+item.contenttweaker.palladium_circuit.name=钯气体电路板
+item.contenttweaker.palladium_processor.name=钯气体处理器
+item.contenttweaker.peridotite_circuit.name=FFG-工程电路板
+item.contenttweaker.peridotite_processor.name=FFG-工程处理器
+
+item.contenttweaker.living_circuit.name=活钢逻辑电路板
+item.contenttweaker.living_processor.name=活钢逻辑处理器
+item.contenttweaker.gambrosium_circuit.name=神能晶运算电路板
+item.contenttweaker.gambrosium_processor.name=神能晶运算处理器
+
+
+fluid.sunnarium_base=液态阳光
+
+
+item.contenttweaker.sticky_bucket.name=恶臭竹粘性液体桶
+fluid.sticky_water=粘性液体
+tile.contenttweaker.burned_slimedirt.name=烧焦史莱姆泥土
+item.contenttweaker.simple_motor.name=简易马达
+
+
+item.contenttweaker.forest_clay.name=森林粘土
+tile.contenttweaker.forest_clay_block.name=森林粘土块
+
+item.contenttweaker.organic_glue.name=有机胶水
+
+item.contenttweaker.wildwood_pulp.name=富集纸浆
+item.contenttweaker.steelwood_ingot.name=钢树锭
+item.contenttweaker.duraluminumwood_ingot.name=耐酸铝树锭
+item.contenttweaker.pereskia_soup.name=木麒麟汤
+item.contenttweaker.burn_powder.name=燃烧粉末
+
+tile.contenttweaker.leaves_vanilla.name=开花橡树树叶
+        var leaves_twilight  VanillaFactory.createBlock("leaves_twilight", <blockmaterial:rock>);
+        
+tile.contenttweaker.leaves_erebus.name=开花沼泽木树叶    
+        var leaves_crystal  VanillaFactory.createBlock("leaves_crystal
+
+item.contenttweaker.druidic_dust.name=德鲁伊粉
+fluid.pereskia_soup=木麒麟汤
+fluid.druid_soup=附魔德鲁伊汤
+
+item.contenttweaker.transmut_gel.name=德鲁伊非规格化凝胶
+
+item.contenttweaker.illagerite.name=粗灾厄化合物
+item.contenttweaker.illagerite_dust.name=灾厄化合物粉
+fluid.illagerite=灾厄化合物溶液
+
+item.contenttweaker.entwood.name=树人木
+item.contenttweaker.entwood_dust.name=树人木粉
+
+item.contenttweaker.staffwood.name=长柄木棍
+item.contenttweaker.staffwood_flower.name=花之权杖
+item.contenttweaker.staffwood_mushroom.name=蘑菇权杖
+item.contenttweaker.staffwood_clay.name=粘土权杖
+item.contenttweaker.staffwood_bug.name=飞虫权杖
+
+tile.contenttweaker.oreshroom_red.name=矿石蘑菇
+tile.contenttweaker.oreshroom_yellow.name=矿石蘑菇
+tile.contenttweaker.oreshroom_green.name=矿石蘑菇
+tile.contenttweaker.oreshroom_blue.name=矿石蘑菇
+tile.contenttweaker.oreshroom_purple.name=矿石蘑菇
+tile.contenttweaker.oreshroom_baffle.name=矿石蘑菇
+tile.contenttweaker.oreshroom_gloom.name=矿石蘑菇
+tile.contenttweaker.oreshroom_glow.name=矿石蘑菇
+
+tile.contenttweaker.ferramic_gravel.name=瓷铁沙砾
+
+item.contenttweaker.compact_empowerer.name=压缩充能台
+
+item.contenttweaker.mute_eye.name=沉默生物眼球
+item.contenttweaker.eye.name=生物眼球
+item.contenttweaker.mechanical_eye.name=机械生物眼球
+item.contenttweaker.robot_brain.name=机械生物大脑
+
+item.contenttweaker.advanced_plating1_1.name=粘合电阻镀板
+item.contenttweaker.advanced_plating1_2.name=镀锡电阻镀板
+item.contenttweaker.advanced_plating1_3.name=压缩镀锡电阻镀板
+item.contenttweaker.advanced_plating1_4.name=强化锡镀板
+item.contenttweaker.advanced_plating1_5.name=强化锡机械镀板
+
+item.contenttweaker.advanced_plating2_1.name=放射性金属三明治
+item.contenttweaker.advanced_plating2_2.name=反应堆板
+item.contenttweaker.advanced_plating2_3.name=机械蟾蜍镀板基底
+item.contenttweaker.advanced_plating2_4.name=机械蟾蜍镀板
+
+item.contenttweaker.nether_boat_plating.name=岩浆防护镀层
+
+item.contenttweaker.nether_boat_osram.name=岩浆底部探索目标：特殊下界矿石
+item.contenttweaker.nether_boat_ores.name=岩浆底部探索目标：下界矿石
+item.contenttweaker.nether_boat_quartz.name=岩浆底部探索目标：石英矿石
+
+item.contenttweaker.robodruid_plating1.name=野木镀层基底
+item.contenttweaker.robodruid_plating2.name=野木镀层
+item.contenttweaker.robodruid_plating3.name=附魔野木镀层
+
+
+item.contenttweaker.advanced_plating3_1.name=双神诅咒金反应装甲板
+item.contenttweaker.advanced_plating3_2.name=黄金圣甲虫装甲组件
+item.contenttweaker.advanced_plating3_3.name=流沙砂光黄金圣甲虫装甲组件
+item.contenttweaker.advanced_plating3_4.name=黄金圣甲虫护甲装甲镀板
+item.contenttweaker.advanced_plating3_5.name=附魔黄金圣甲虫装甲镀板
+
+item.contenttweaker.advanced_plating4_1.name=血液重锻镀板
+item.contenttweaker.advanced_plating4_2.name=血液重锻板岩镀板
+item.contenttweaker.advanced_plating4_3.name=寻血猎手装甲镀板基板
+item.contenttweaker.advanced_plating4_4.name=寻血猎手装甲镀板
+
+
+
+item.contenttweaker.mech_taxi_wing.name=机械滑翔机飞翼
+item.contenttweaker.mech_taxi.name=机械滑翔机
+
+item.contenttweaker.stone_idol.name=石铸人偶 
+
+item.contenttweaker.tincan_sawhand.name=强化锡机械手持式锯片
+item.contenttweaker.tincan_drillhand.name=强化锡机械手持式电钻
+item.contenttweaker.tincan_legs.name=强化锡机器人腿 
+item.contenttweaker.tincan_body.name=强化锡机器人身躯 
+item.contenttweaker.tincan_head.name=强化锡机器人头颅
+item.contenttweaker.tincan_mech.name=强化锡机器人
+
+item.contenttweaker.tincan_target_ore1.name=强化锡机器人探索目标：基础矿石
+item.contenttweaker.tincan_target_ore2.name=强化锡机器人探索目标：稀有矿石
+item.contenttweaker.tincan_target_gem.name=强化锡机器人探索目标：基础宝石
+item.contenttweaker.tincan_target_mob.name=强化锡机器人探索目标：常见怪物
+
+item.contenttweaker.radiotoad_arm.name=机械蟾蜍手臂
+item.contenttweaker.radiotoad_legs.name=机械蟾蜍腿
+item.contenttweaker.radiotoad_body.name=机械蟾蜍身躯
+item.contenttweaker.radiotoad_head.name=机械蟾蜍头颅
+item.contenttweaker.radiotoad_mech.name=机械蟾蜍
+
+item.contenttweaker.nether_boat.name=熔岩深层探索舱
+
+item.contenttweaker.robodruid_arm.name=机械德鲁伊手臂
+item.contenttweaker.robodruid_leg.name=机械德鲁伊腿
+item.contenttweaker.robodruid_body.name=机械德鲁伊身躯
+item.contenttweaker.robodruid_head.name=机械德鲁伊头颅
+item.contenttweaker.robodruid_mech.name=机械德鲁伊
+
+item.contenttweaker.robodruid_target_gems.name=机械德鲁伊探索目标：宝石
+item.contenttweaker.robodruid_target_wood.name=机械德鲁伊探索目标：木材
+item.contenttweaker.robodruid_target_metal.name=机械德鲁伊探索目标：金属
+
+item.contenttweaker.goldscarab_arm.name=机械黄金圣甲虫手臂
+item.contenttweaker.goldscarab_leg.name=机械黄金圣甲虫腿
+item.contenttweaker.goldscarab_body.name=机械黄金圣甲虫身躯
+item.contenttweaker.goldscarab_head.name=机械黄金圣甲虫头颅
+item.contenttweaker.goldscarab_sun.name=机械黄金圣甲虫核心
+item.contenttweaker.goldscarab_mech.name=机械黄金圣甲虫
+
+
+item.contenttweaker.goldscarab_target_ore.name=机械黄金圣甲虫探索目标：沙漠矿石
+item.contenttweaker.goldscarab_target_shard.name=机械黄金圣甲虫探索目标：神屑
+item.contenttweaker.goldscarab_target_water.name=机械黄金圣甲虫探索目标：沙漠液体
+item.contenttweaker.goldscarab_target_oil.name=机械黄金圣甲虫探索目标：沙漠石油
+
+
+item.contenttweaker.bloodhunter_arm.name=机械寻血猎手手臂
+item.contenttweaker.bloodhunter_leg.name=机械寻血猎手腿
+item.contenttweaker.bloodhunter_body.name=机械寻血猎手身躯
+item.contenttweaker.bloodhunter_head.name=机械寻血猎手头颅
+item.contenttweaker.bloodhunter_mech.name=机械寻血猎手
+
+item.contenttweaker.bloodhunter_target_blood.name=机械寻血猎手探索目标：血液
+item.contenttweaker.bloodhunter_target_slate.name=机械寻血猎手探索目标：石板
+item.contenttweaker.bloodhunter_target_fairy.name=机械寻血猎手探索目标：仙灵
+item.contenttweaker.bloodhunter_target_wither.name=机械寻血猎手探索目标：凋零
+
+
+
+
+
+item.contenttweaker.secure_switch.name=安全开关
+item.contenttweaker.cursed_frame.name=诅咒肋骨
+item.contenttweaker.cursed_skull.name=诅咒骷髅头
+item.contenttweaker.cursed_wither.name=诅咒凋零
+item.contenttweaker.cursed_star.name=诅咒之星
+
+
+
+tile.contenttweaker.potato_block1.name=压缩马铃薯块
+tile.contenttweaker.potato_block2.name=二重压缩马铃薯块
+tile.contenttweaker.potato_block3.name=三重压缩马铃薯块
+tile.contenttweaker.potato_block4.name=四重压缩马铃薯块
+tile.contenttweaker.potato_block5.name=五重压缩马铃薯块
+
+
+
+
+
+item.contenttweaker.neutronium_mirror.name=简易中子反射板
+item.contenttweaker.neutronium_mirror2.name=BC-Ir中子反射板
+
+fluid.glutamic_acid=谷氨酸
+item.contenttweaker.msg.name=谷氨酸钠
+
+item.contenttweaker.jade_dust.name=玉粉
+item.contenttweaker.irradiated_compound.name=辐射化合物
+
+item.contenttweaker.iron_heart.name=钢铁之心
+item.contenttweaker.gold_slimeball.name=宝物粘液球
+item.contenttweaker.brain_slimeball.name=嗜脑粘液球
+item.contenttweaker.bug_slimeball.name=甲虫粘液球
+
+item.contenttweaker.holy_thing.name=纯净圣辉软泥
+fluid.holy_water=圣水
+fluid.holy_water2=神圣水
+
+item.contenttweaker.butcher_knife.name=屠刀
+
+fluid.worm_blood=蠕虫血液
+fluid.rot=腐烂液体
+fluid.ender_blood=末影血液
+fluid.evil_blood=邪恶血液
+
+item.contenttweaker.sandy_spice.name=含沙香料
+item.contenttweaker.chewed_meat.name=咀嚼过的肉
+item.contenttweaker.ancient_sandstone.name=古代砂岩
+    VanillaFactory.createItem("fear").register();
+    
+item.contenttweaker.gemmed_spice.name=宝石香料
+item.contenttweaker.wormweave.name=蠕虫布匹
+item.contenttweaker.wormium_ingot.name=蠕虫金属锭
+tile.contenttweaker.wormium_block.name=蠕虫金属块
+item.contenttweaker.wormholium.name=虫洞锭
+fluid.wormy_sand=蠕虫流沙
+
+fluid.desert_soup=古老沙漠的鲜血
+
+item.contenttweaker.lv_crusher.name=活体粉碎机
+item.contenttweaker.crusher_feed.name=粉碎机饲料
+
+item.contenttweaker.desert_pollen.name=沙漠花粉
+item.contenttweaker.lv_sandworm.name=沙虫
+item.contenttweaker.sandworm_molt.name=沙虫表皮
+item.contenttweaker.sandworm_corpse.name=沙虫尸体
+item.contenttweaker.worm_feed.name=虫饲料
+item.contenttweaker.sandworm_gut.name=沙虫肠道
+item.contenttweaker.dry_fibre.name=干弹性纤维
+item.contenttweaker.sandworm_chitin.name=沙甲壳素
+
+item.contenttweaker.lv_draco_lizard.name=龙蜥
+item.contenttweaker.draco_lizard_feed.name=龙蜥饲料
+item.contenttweaker.draco_lizard_corpse.name=龙蜥尸体
+item.contenttweaker.draco_lizard_spit.name=龙蜥唾沫
+item.contenttweaker.draco_lizard_egg.name=龙蜥蛋
+item.contenttweaker.draco_lizard_shells.name=龙蜥蛋壳
+fluid.lizard_spit=蜥蜴唾沫
+fluid.dragon_spit=龙唾沫
+
+item.contenttweaker.lv_bedrock_golem.name=基岩傀儡
+
+item.contenttweaker.lv_hair_thing.name=毛茸茸的东西
+item.contenttweaker.hair_ball.name=毛团
+item.contenttweaker.hair_thing_corpse.name=毛茸茸的东西尸体
+
+item.contenttweaker.lv_baby_hair_thing.name=幼年毛茸茸的东西
+
+item.contenttweaker.lv_blood_slime.name=血史莱姆
+
+item.contenttweaker.life.name=生命源质
+
+item.contenttweaker.plate_mold.name=压板模具
+item.contenttweaker.rod_mold.name=压棒模具
+item.contenttweaker.gear_mold.name=齿轮模具
+
+item.contenttweaker.press_fluid.name=流体压印模板
+item.contenttweaker.press_gas.name=气体压印模板
+
+item.contenttweaker.empty_ingot.name=空锭模板
+
+fluid.andesite=熔融安山岩
+item.contenttweaker.fire_shard.name=火之碎片
+item.contenttweaker.slime_shard.name=粘液碎片
+item.contenttweaker.weak_enhancer.name=弱强化粉
+tile.contenttweaker.slimy_sand.name=粘液沙
+tile.contenttweaker.slimy_glass.name=粘液玻璃
+tile.contenttweaker.dried_gravel.name=干燥粘土沙砾
+
+item.contenttweaker.witherite.name=凋零粉
+item.contenttweaker.awaken_witherite.name=觉醒凋零粉
+
+item.contenttweaker.bonsai_sapling.name=盆栽橡树树苗
+item.contenttweaker.bonsai_mushroom_brown.name=盆栽蘑菇
+item.contenttweaker.bonsai_mushroom_red.name=盆栽蘑菇
+
+item.contenttweaker.hot_energion.name=热能量粉
+item.contenttweaker.pilkeum.name=皮尔康粉
+fluid.andesite_magma=安山岩浆
+
+item.contenttweaker.pilkon.name=皮尔康
+item.contenttweaker.pilkon_corpse.name=皮尔康尸体
+item.contenttweaker.pt_crude_chip.name=粗糙电路芯片
+item.contenttweaker.pt_refined_chip.name=精致电路芯片
+item.contenttweaker.bocuit.name=电路板线
+
+fluid.organic_green=有机绿色染料
+
+item.contenttweaker.creosolon.name=杂酚强化粉
+item.contenttweaker.creosolon_frame.name=杂酚强化框架
+item.contenttweaker.machine_frame_frame.name=机器方块框架
+fluid.grease=Elbow Grease
+item.contenttweaker.cactus_charcoal.name=仙人掌炭
+item.contenttweaker.cacti_foci.name=仙人掌透镜
+item.contenttweaker.fishy_capacitor.name=鱼电容
+item.contenttweaker.glowcrystal.name=荧光水晶
+item.contenttweaker.diode1.name=简易二极管
+
+item.contenttweaker.watertight_lead_plate.name=防水铅版
+
+fluid.malachite_glue=孔雀石粘合剂
+item.contenttweaker.compound_metal_stack.name=混合金属堆
+item.contenttweaker.compound_metal.name=含杂复合金属
+item.contenttweaker.compound_metal2.name=复合金属
+
+
+
+tile.contenttweaker.flolit_ore.name=浮石矿石
+item.contenttweaker.flolit.name=浮石
+item.contenttweaker.flolit_plant.name=浮石植物
+item.contenttweaker.flolit_dust.name=瓷铁-浮石粉
+item.contenttweaker.flolit_sheet.name=瓷铁-浮石板
+fluid.flolit_water=甜浮石溶液
+
+item.contenttweaker.fine_wooden_board.name=高质量木板
+item.contenttweaker.soggy_wooden_board.name=浸水高质量木板
+item.contenttweaker.wired_wooden_board.name=裹线高质量木板
+item.contenttweaker.advanced_circuit_plate_base.name=未成形电路板
+item.contenttweaker.advanced_circuit_plate.name=高级电路板
+
+item.contenttweaker.creeper_component.name=爆炸控制模块
+item.contenttweaker.explosion_device.name=爆炸控制装置
+item.contenttweaker.explosion_device_full.name=喷漆爆炸控制装置
+
+item.contenttweaker.soul_codex1.name=灵魂法典（空）
+item.contenttweaker.soul_codex2.name=灵魂法典（1/7）
+item.contenttweaker.soul_codex3.name=灵魂法典（2/7）
+item.contenttweaker.soul_codex4.name=灵魂法典（3/7）
+item.contenttweaker.soul_codex5.name=灵魂法典（4/7）
+item.contenttweaker.soul_codex6.name=灵魂法典（5/7）
+item.contenttweaker.soul_codex7.name=灵魂法典（6/7）
+item.contenttweaker.soul_codex8.name=灵魂法典
+
+item.contenttweaker.super_vibrant_plate.name=超级脉冲合金板
+
+item.contenttweaker.robot_arm.name=机械臂
+item.contenttweaker.bio_injector.name=生物注射器
+item.contenttweaker.sewing_unit.name=缝纫装置
+
+item.contenttweaker.lens_in.name=会聚透镜
+item.contenttweaker.lens_out.name=发散透镜
+
+item.contenttweaker.tank.name=Tank
+item.contenttweaker.tank2.name=Tank Array
+item.contenttweaker.tank_oxygen.name=Tank with Oxygen
+item.contenttweaker.tank_nitrogen.name=Tank with Nitrogen
+item.contenttweaker.tank_nitrogen_dense.name=Tank with Compressed Nitrogen
+
+item.contenttweaker.crucible.name=High Temprature Crucible
+
+item.contenttweaker.dark_shard.name=Tungsteny Dark Shard
+fluid.blackish_slurp=Dark Grey Slurp
+fluid.black_slurp=Liquid Black Slurp
+gas.black_slurp=Black Slurp Gas
+
+item.contenttweaker.pump.name=Fluid Pump
+item.contenttweaker.cooling_system.name=Cooling System
+item.contenttweaker.pressure_cutter.name=Fluid Pressure Cutter
+item.contenttweaker.laser.name=Laser Engraving Unit
+
+item.contenttweaker.rtg.name=Radioisotope Thermoelectric Generator (RTG)
+item.contenttweaker.rocket_engine.name=Rocket Engine
+item.contenttweaker.pulse_generator.name=Pulse Generator
+
+item.contenttweaker.signal_reciever.name=Signal Communicator
+
+tile.contenttweaker.stomper.name=Stomper
+
+item.contenttweaker.satellite_plating_base1.name=Secure Plating Assembly
+item.contenttweaker.satellite_plating_base2.name=Secure Plating
+item.contenttweaker.satellite_plating.name=Satellite Plating
+
+item.contenttweaker.satellite1.name=Basic Satellite
+        VanillaFactory.createItem("satellite2").register();
+        VanillaFactory.createItem("satellite3").register();
+
+item.contenttweaker.satellite_chip.name=Satellite Memory Chip
+item.contenttweaker.satellite_computer.name=Satellite Controller Computer
+
+item.contenttweaker.drone_base.name=Drone Base
+item.contenttweaker.drone.name=Mining Drone
+
+item.contenttweaker.space_navigator.name=Space Navigator
+
+item.contenttweaker.entangled_particles.name=Entangled Particles
+
+
+item.contenttweaker.glass_cutter_research_token.name=Glass Cutter Research Token
+item.contenttweaker.concrete_token.name=Concrete Research Token
+item.contenttweaker.steel_hoe_research_token.name=Steel Hoe Research Token
+item.contenttweaker.blueslime_bucket.name=Blue Slime Research Token
+item.contenttweaker.purpleslime_bucket.name=Purple Slime Research Token
+
+item.contenttweaker.grass_bucket.name=Grassoline Research Token
+
+item.contenttweaker.glow_bucket.name=Glowstone Research Token
+
+item.contenttweaker.demon_bucket.name=Demon Metal Research Token
+
+item.contenttweaker.research_glass_making.name=How To Make Glass
+item.contenttweaker.research_structure.name=How To Structure Heavy Machinery
+item.contenttweaker.research_sieving.name=Advanced Sieving Options
+item.contenttweaker.research_fluids.name=Advanced Fluid Handling
+item.contenttweaker.research_flight1.name=How To Fly
+item.contenttweaker.research_plants1.name=How To Grow Exotic Plants
+item.contenttweaker.research_plants2.name=How To Grow Exotic Trees
+item.contenttweaker.research_plants3.name=How To Grow Exotic Vines
+item.contenttweaker.research_chemistry1.name=How To Refine Waste
+item.contenttweaker.research_chemistry2.name=How To Polymerize
+item.contenttweaker.research_chemistry3.name=How To Synthesize Alien Materials
+
+item.contenttweaker.research_circuit1.name=How To Make Circuitry From Strange Materials
+
+item.contenttweaker.research_magic2.name=How To Bleed Efficiently
+
+item.contenttweaker.research_bacteria1.name=How To Grow Bacteria
+
+item.contenttweaker.research_heat.name=How To Transfer Heat
+
+        VanillaFactory.createItem("research_luck").register();
+
+
+item.contenttweaker.uu_base1.name=UU Metal Base 1
+item.contenttweaker.uu_base2.name=UU Metal Base 2
+item.contenttweaker.uu_base3.name=UU Metal Base 3
+
+
+
+item.contenttweaker.plant_sample.name=Plant Sample
+
+item.contenttweaker.activated_biopower.name=Activated Biopower
+item.contenttweaker.ashen_biocoal.name=Ashen Biocoal
+item.contenttweaker.biocoal.name=Biocoal
+item.contenttweaker.biomix.name=Biomix
+item.contenttweaker.bioslag.name=Bioslag
+item.contenttweaker.coaled_bioash.name=Coaled Bioash
+item.contenttweaker.coaled_biocoal.name=Coaled Biocoal
+item.contenttweaker.empowered_biospice.name=Empowered Biospice
+item.contenttweaker.enmaned_biomass.name=Enmaned Biomass
+item.contenttweaker.enriched_biocoal.name=Enriched Biocoal
+item.contenttweaker.enriched_bioslag.name=Enriched Bioslag
+item.contenttweaker.enspiced_spicy_bioblend.name=Enspiced Spicy Bioblend
+item.contenttweaker.spicy_bioblend.name=Spicy Bioblend
+item.contenttweaker.spicy_enriched_bioblend.name=Spicy Enriched Bioblend
+item.contenttweaker.whitened_biomass.name=Bioash
+
+
+item.contenttweaker.ldpe.name=LDPE Pellet
+
+item.contenttweaker.food_pellet.name=Food Pellet
+
+fluid.grape_juice=Grape Juice
+fluid.vinegar=Vinegar
+fluid.cheese=Cheese
+
+item.contenttweaker.yeast.name=Yeast
+item.contenttweaker.yeast_rich.name=High Quality Yeast
+fluid.sugary_solution=Sugary Solution
+fluid.yeast=Yeast Culture
+fluid.yeast_rich=High Quality Yeast Culture
+
+fluid.colagen_solution=Colagen Solution
+fluid.impure_colagen=Impure Colagen
+fluid.salty_colagen=Salty Colagen
+fluid.colagen=Colagen
+item.contenttweaker.gelatin_noodle.name=Gelatin Noodles
+item.contenttweaker.gelatin.name=Gelatin
+
+item.contenttweaker.carrot_pulp.name=Carrot Pulp
+fluid.carotene_solution=Impure Carotene Solution
+item.contenttweaker.impure_carotene.name=Impure Carotene
+item.contenttweaker.carotene.name=Carotene
+fluid.carotene=Carotene
+gas.retinol=Retinol Gas
+item.contenttweaker.vitamin_a.name=Vitamin A
+
+fluid.bacteria_broth=Bacteria Broth
+fluid.fermented_bacteria_broth=Fermented Bacteria Broth
+fluid.bacteria_waste=Bacteria Waste
+fluid.cobalamin=Cobalamin
+item.contenttweaker.vitamin_b.name=Vitamin B
+
+item.contenttweaker.bacteria.name=Bacteria
+item.contenttweaker.ender_bacteria.name=Ender Bacteria
+fluid.ender_bacteria_broth=Ender Bacteria Broth
+
+item.contenttweaker.starch.name=Starch
+item.contenttweaker.glucose.name=Glucose
+fluid.glucose=Glucose
+fluid.sorbitol=Sorbitol
+fluid.sorbose=Sorbose
+fluid.gulonic_acid=2-Keto-L-Gulonic Acid
+item.contenttweaker.vitamin_c.name=Vitamin C
+
+item.contenttweaker.vitamins.name=Vitamins
+
+item.contenttweaker.enchantium_chunk.name=Enchantium Chunk
+fluid.enchantium=Enchantium
+
+item.contenttweaker.nacn.name=Sodium Cyanide
+item.contenttweaker.superglue.name=Super Glue
+
+
+fluid.indium_mixture=Hot Galena Sphalerite Mixture
+item.contenttweaker.indium_mixture.name=Galena Sphalerite Mixture
+item.contenttweaker.indium_oxides.name=Indium Lead Zinc Oxides Mixture
+
+fluid.indium_leach=Dissolved Indium Lead Zinc Salts
+fluid.indium_salty=Salty Indium Hydroxide Solution
+
+fluid.indium_hydroxide=Indium Hydroxide
+
+item.contenttweaker.indium_oxide.name=Indium Oxide
+item.contenttweaker.indium_dust.name=Indium Dust
+
+item.contenttweaker.layered_boule.name=Layered Boule
+item.contenttweaker.layered_wafer.name=Layered Wafer
+item.contenttweaker.layered_circuit.name=Layered Circuit
+item.contenttweaker.layered_processor.name=Layered Logic Processor
+
+item.contenttweaker.coil_core1.name=Coil Core Base
+item.contenttweaker.coil_core2.name=Coil Core
+
+item.contenttweaker.laser_mirror.name=Laser Mirror
+
+
+item.contenttweaker.base_seeds.name=Seeds of Controlled Potential
+item.contenttweaker.potential_seeds.name=Seeds of Great Potential
+fluid.essence_slurp=Inferium Slurp
+
+tile.contenttweaker.essence_pump1.name=Inferium Essence Pump
+tile.contenttweaker.essence_pump2.name=Prudentium Essence Pump
+tile.contenttweaker.essence_pump3.name=Intermedium Essence Pump
+    VanillaFactory.createBlock("essence_pump4", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("essence_pump5", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("essence_pump6", <blockmaterial:rock>).register();
+
+fluid.fish_oil=Fish Oil
+
+tile.contenttweaker.space_ice_raw.name=Radioactive Ice
+item.contenttweaker.space_ice.name=Radioactive Ice Dust
+item.contenttweaker.space_ice_crystal.name=Radioactive Ice Crystal
+tile.contenttweaker.space_ice_crystal_block.name=Block of Radioactive Ice Crystal
+
+tile.contenttweaker.worm_glass.name=Worm Terrarium
+item.contenttweaker.sick_worm.name=Irradiated Worm
+
+fluid.strawberry_juice=Strawberry Juice
+fluid.strawberry_wine=Strawberry Wine
+gas.carmin=Carmin Gas
+item.contenttweaker.carminium_ingot.name=Carminium Ingot
+tile.contenttweaker.power_core.name=Power Core Block
+
+item.contenttweaker.uv_lamp.name=UV Lamp
+
+item.contenttweaker.porous_dust.name=Porous Diamond Dust
+item.contenttweaker.grinding_wheel.name=Diamond Grinding Wheel
+item.contenttweaker.soul_dye_base.name=Soul Attuned Dye Base
+
+item.contenttweaker.neuro_crystal.name=Neuronic Crystal
+item.contenttweaker.eio_slab.name=Enhanced Tech Handling Operation Slab
+item.contenttweaker.melodic_paste.name=Melodic Paste
+item.contenttweaker.melodic_reagent.name=Melodic Reagent
+
+item.contenttweaker.mana_wire.name=Mana Wire
+item.contenttweaker.mana_focus.name=Mana Focus
+
+
+item.contenttweaker.deep_dark_core.name=Deep Dark Portal Core
+item.contenttweaker.blood_runic_dust.name=Bloody Runic Dust
+
+item.contenttweaker.bucket_obsidian.name=Obsidian Bucket
+item.contenttweaker.bucket_obsidian_residue.name=Obsidian Bucket of Lava Residue
+item.contenttweaker.bucket_obsidian_void.name=Obsidian Bucket of Dew of the Void
+
+item.contenttweaker.bucket_water.name=Watertight Bucket
+item.contenttweaker.bucket_water_heavy.name=Watertight Bucket of Heavy Water
+item.contenttweaker.bucket_water_seaweed.name=Watertight Bucket of Seaweed Rich Water
+
+item.contenttweaker.bucket_cursed.name=Cursed Gold Bucket
+item.contenttweaker.bucket_cursed_sand.name=Cursed Gold Bucket of Quicksand
+
+item.contenttweaker.bucket_valk.name=Valkyrie Bucket
+item.contenttweaker.bucket_valk_cloud.name=Valkyrie Bucket of Cloud Seed
+
+item.contenttweaker.bucket_bio.name=Biobucket
+item.contenttweaker.bucket_bio_diesel.name=Biobucket of Biodiesel
+
+item.contenttweaker.bucket_acid.name=Acid Resistant Bucket
+item.contenttweaker.bucket_acid_chitin.name=Acid Resistant Bucket of Acidic Chitin Solution
+
+item.contenttweaker.bucket_tree_oil.name=Skyroot Bucket of Tree Oil
+
+item.contenttweaker.alchemical_clay.name=Alchemical Clay Reagent
+
+item.contenttweaker.alchemical_clay_fr.name=Smeared Alchemical Clay (Fire Resistance)
+item.contenttweaker.alchemical_clay_wb.name=Smeared Alchemical Clay (Water Breathing)
+item.contenttweaker.alchemical_clay_h.name=Smeared Alchemical Clay (Haste)
+item.contenttweaker.alchemical_clay_jb.name=Smeared Alchemical Clay (Jump Boost)
+item.contenttweaker.alchemical_clay_st.name=Smeared Alchemical Clay (Stability)
+item.contenttweaker.reagent_acid.name=Acid Reagent
+item.contenttweaker.reagent_wood.name=Wood Reagent
+item.contenttweaker.reagent_oil.name=Oil Reagent
+item.contenttweaker.reagent_glass.name=Glass Reagent
+item.contenttweaker.reagent_bug.name=Bug Reagent
+item.contenttweaker.reagent_mushroom.name=Mushroom Reagent
+item.contenttweaker.potion_reagent.name=Potion Reagent
+
+item.contenttweaker.blood_spike.name=Blood Spike
+
+item.contenttweaker.blood_shard1.name=Small Crystallized Life Essence Chunk
+item.contenttweaker.blood_shard2.name=Crystallized Life Essence Chunk
+item.contenttweaker.blood_shard3.name=Big Crystallized Life Essence Chunk
+item.contenttweaker.blood_shard4.name=Large Crystallized Life Essence Chunk
+tile.contenttweaker.life_essence_ore.name=Life Essence Chunk Ore
+
+item.contenttweaker.slate_6.name=Crystalic Slate
+item.contenttweaker.slate_7.name=Devilonic Slate
+item.contenttweaker.slate_8.name=Transended Slate
+item.contenttweaker.slate_9.name=Abyssal Slate
+item.contenttweaker.slate_10.name=Eldrich Metastable Slate
+
+item.contenttweaker.advanced_pyrotheum.name=Advanced Pyrotheum Dust
+item.contenttweaker.advanced_cryotheum.name=Advanced Cryotheum Dust
+item.contenttweaker.advanced_petrotheum.name=Advanced Petrotheum Dust
+item.contenttweaker.advanced_aerotheum.name=Advanced Aerotheum Dust
+item.contenttweaker.elemental_clay.name=Elemental Clay
+
+tile.contenttweaker.high_heat_glass.name=High Heat Resistant Glass
+tile.contenttweaker.tignalum_blast_brick.name=Tignalum Reinforced Blast Brick
+
+item.contenttweaker.bouncy_matter.name=Extremly Bouncy Matter
+item.contenttweaker.bouncy_matter_small.name=Small Extremly Bouncy Matter
+item.contenttweaker.very_bouncy_matter.name=Extremly-Extreme Extreme-Bounce-Capable Bouncy Matter (Very Extreme)
+item.contenttweaker.very_very_bouncy_matter.name=Bounced Matter
+
+item.contenttweaker.poisotheum.name=Poisotheum
+
+item.contenttweaker.pectin.name=Pectin
+fluid.tamarind_juice=Tamarind Juice
+fluid.tartaric_acid=Tartaric Acid
+item.contenttweaker.wine_diamond.name=Wine Diamond
+item.contenttweaker.wine_diamond_cluster.name=Wine Diamond Cluster
+item.contenttweaker.carminium_sheet.name=Beryllium-Carminium Reflector
+
+
+item.contenttweaker.tablet_empty.name=Empty Tablet
+item.contenttweaker.tablet_evil.name=Evil Tablet
+item.contenttweaker.tablet_engraved.name=Engraved Tablet
+
+item.contenttweaker.muscle_cell.name=Muscle Cell
+item.contenttweaker.muscle.name=Muscle Fiber
+item.contenttweaker.living_motor.name=Living Muscle Motor
+tile.contenttweaker.rotor.name=Crystal Metal Rotor
+
+item.contenttweaker.soul_reflector_base.name=Soul Reflector Base
+item.contenttweaker.soul_reflector.name=Soul Reflector
+item.contenttweaker.will_absorbing_ingot.name=Will Absorbing Ingot
+
+item.contenttweaker.zorra_steel_gem.name=Zorra Gem
+item.contenttweaker.blood_gem.name=Blood Gem
+
+item.contenttweaker.electricium.name=Electricium
+
+item.contenttweaker.flesh_bits.name=Carnexan Bits
+item.contenttweaker.flesh_piece.name=Carnexan Piece
+item.contenttweaker.flesh_spurt.name=Carnexan Spurt
+item.contenttweaker.flesh_rod.name=Carnexan Rod
+item.contenttweaker.flesh_support.name=Carnexan Support Structure
+item.contenttweaker.flesh_spurt_activated.name=Activated Carnexan Spurt
+
+
+fluid.raw_chitin=Raw Chitin Solution
+
+fluid.acidic_chitin=Acidic Chitin Solution
+fluid.salty_chitin=Salty Chitin Solution
+
+fluid.chitin_grade1=Grade 1 Chitin Solution
+fluid.chitin_grade2=Grade 2 Chitin Solution
+fluid.chitin_grade3=Grade 3 Chitin Solution
+fluid.chitin_grade4=Grade 4 Chitin Solution
+fluid.chitin_grade5=Grade 5 Chitin Solution
+
+item.contenttweaker.hot_chitin.name=Hot Metallic Chitin
+item.contenttweaker.chitin.name=Metallic Chitin
+item.contenttweaker.chitin_ball.name=Chitin Ball
+item.contenttweaker.chitin_mirror.name=Chitin Photovoltaic Cell Mirror
+tile.solarflux:custom_solar_panel_chitin.name=Chitin Solar Panel
+
+fluid.circuit=Liquid Circuitry
+item.contenttweaker.neuro_crystal2.name=Bloody Neuronic Crystal
+item.contenttweaker.bloody_circuit.name=Bloody Circuit
+
+tile.contenttweaker.bloody_sheetmetal.name=Bloody Sheetmetal
+tile.contenttweaker.bloody_gearbox_inactive.name=Bloody Gearbox (Inactive)
+tile.contenttweaker.bloody_gearbox.name=Bloody Gearbox
+
+
+
+
+
+item.contenttweaker.revived_bush.name=Revived Bush
+tile.contenttweaker.revived_log.name=Revived Log
+
+tile.contenttweaker.mana_frame.name=Mana Conductive Machine Frame
+
+tile.contenttweaker.manapearl_block.name=Block of Mana Pearls
+
+item.contenttweaker.rune_base.name=Rune Base
+item.contenttweaker.improved_rune_base.name=Improved Rune Base
+item.contenttweaker.advanced_rune_base.name=Advanced Rune Base
+item.contenttweaker.rune_lightning.name=Rune of Lightning
+item.contenttweaker.rune_acid.name=Rune of Acid
+fluid.rune_acid=Rune Acid
+
+
+tile.contenttweaker.rune_water_block.name=Block of Runes of Water
+tile.contenttweaker.rune_fire_block.name=Block of Runes of Fire
+tile.contenttweaker.rune_earth_block.name=Block of Runes of Earth
+tile.contenttweaker.rune_air_block.name=Block of Runes of Air
+
+item.contenttweaker.manaclay.name=Manaclay
+tile.contenttweaker.manaclay_block.name=Manaclay Block
+
+item.contenttweaker.manabrick.name=Manabrick
+tile.contenttweaker.manabrick_block.name=Manabrick Block
+
+item.contenttweaker.mana_circuit.name=Mana Circuit
+item.contenttweaker.very_advanced_circuit_base.name=Fiber Circuit Plate Base
+item.contenttweaker.very_advanced_circuit.name=Fiber Circuit Plate
+item.contenttweaker.very_advanced_mana_circuit.name=Mana Fiber Circuit Plate
+item.contenttweaker.elf_mana_circuit.name=Elven Mana Circuit
+
+item.contenttweaker.elemental_essence_base.name=Elemental Essence(Unbalanced)
+item.contenttweaker.elemental_essence.name=Elemental Essence
+
+item.contenttweaker.rune_water_cracked.name=Cracked Rune of Water
+item.contenttweaker.rune_fire_cracked.name=Cracked Rune of Fire
+item.contenttweaker.rune_earth_cracked.name=Cracked Rune of Earth
+item.contenttweaker.rune_air_cracked.name=Cracked Rune of Air
+
+item.contenttweaker.rune_mana_cracked.name=Cracked Rune of Mana
+item.contenttweaker.rune_acid_cracked.name=Cracked Rune of Acid
+item.contenttweaker.rune_lightning_cracked.name=Cracked Rune of Lightning
+
+    VanillaFactory.createItem("rune_spring_cracked").register();
+item.contenttweaker.rune_summer_cracked.name=Cracked Rune of Summer
+    VanillaFactory.createItem("rune_autumn_cracked").register();
+    VanillaFactory.createItem("rune_winter_cracked").register();
+
+
+item.contenttweaker.luck_chip.name=Gambling Token
+item.contenttweaker.luck_crystal_base.name=Luck Crystal Base
+item.contenttweaker.luck_crystal.name=Luck Crystal
+item.contenttweaker.luck_particle.name=Luck Particle
+
+
+
+
+tile.contenttweaker.night_glass.name=Night Glass
+item.contenttweaker.chad.name=Chad Pulp
+item.contenttweaker.chad2.name=High Quality Paper Pulp
+item.contenttweaker.space_paper_base.name=High Quality Paper Base
+item.contenttweaker.space_paper.name=High Quality Paper
+item.contenttweaker.space_data.name=HQ Paper with Space Search Result
+item.contenttweaker.engraved_space_data=ddd
+
+
+item.contenttweaker.ion_beads.name=Ion Exchange Beads
+item.contenttweaker.ion_beads_spent.name=Spent Ion Exchange Beads
+fluid.ultrapure_water=Ultrapure Water
+
+
+
+
+item.contenttweaker.glass_hull.name=Glass Hull
+tile.contenttweaker.greenhouse_lamps.name=Greenhouse Lamps
+item.contenttweaker.power_core_inactive.name=Power Core (inactive)
+item.contenttweaker.power_core_active.name=Power Core
+item.contenttweaker.electric_stone_dust.name=Electric Stone Dust
+
+item.contenttweaker.charcoal_ball.name=Charcoal Ball
+item.contenttweaker.steeleaf_mush.name=Steeleaf Mush
+
+item.contenttweaker.fertilizer1.name=Basic Fertilizer
+item.contenttweaker.fertilizer2.name=Improved Basic Fertilizer
+item.contenttweaker.fertilizer2_5.name=Fertilized Fertilizer
+item.contenttweaker.fertilizer3.name=Sweet Fertilizer
+item.contenttweaker.fertilizer4.name=Advanced Fertilizer
+item.contenttweaker.fertilizer4_5.name=Empowered Fertilizer Base
+item.contenttweaker.fertilizer5.name=Empowered Fertilizer
+item.contenttweaker.fertilizer6.name=Nitrogen Enriched Fertilizer
+item.contenttweaker.fertilizer7.name=Alchemical Fertilizer
+
+item.contenttweaker.formic_acid_dust.name=Formic Acid Dust
+item.contenttweaker.formic_acid_form.name=Formic Acid Form
+
+
+item.contenttweaker.fluospar.name=Fluospar Gem
+item.contenttweaker.fluospar_dust.name=Fluospar Dust
+
+item.contenttweaker.glass_fiber_materials.name=Bucket of Glass Fiber Materials
+
+fluid.glass_fiber_mixture=Glass Fiber Mixture
+item.contenttweaker.glass_fiber_clump.name=Glass Fiber Clump
+item.contenttweaker.glass_fiber.name=Glass Fiber Strand
+item.contenttweaker.glass_cloth.name=Glass Fiber Cloth
+
+item.contenttweaker.layered_glass.name=Layered Reflector
+item.contenttweaker.perfect_mirror.name=Perfect Mirror
+item.contenttweaker.perfect_mirror_array.name=Perfect Mirror Array
+
+
+
+
+item.contenttweaker.gem_catalyst.name=Crystal Waste Refiner
+item.contenttweaker.ore_catalyst.name=Ore Waste Refiner
+
+
+
+item.contenttweaker.nether_star_dust.name=Nether Star Dust
+item.contenttweaker.nether_star_catalyst.name=Nether Star Catalyst 
+item.contenttweaker.nether_star_waste.name=Spent Nether Star Catalyst
+
+fluid.nether_star_inert=Liquid Inert Nether Star
+gas.nether_star_inert=Inert Nether Star Gas
+fluid.nether_star_solution=Liquid Nether Star
+gas.nether_star_solution=Nether Star Gas
+
+item.contenttweaker.glass_star.name=Glass Star
+
+item.contenttweaker.star_polymer_base_hot.name=Hot Nether Star Polymer Base
+item.contenttweaker.star_polymer_base.name=Nether Star Polymer Base
+item.contenttweaker.star_polymer.name=Nether Star Polymer Sheet
+
+item.contenttweaker.mana_star.name=Mana Star
+
+
+item.contenttweaker.soot.name=Soot
+item.contenttweaker.soap.name=Soap
+
+item.contenttweaker.flowering_nether_eye.name=Flowering Nether Eye
+item.contenttweaker.flower_nether_eye.name=Nether Eye Flower
+item.contenttweaker.primitive_eyes.name=Primitive Eyes
+item.contenttweaker.bamboo_dust.name=Bamboo Dust
+item.contenttweaker.bamboo_dough.name=Bamboo Dough
+item.contenttweaker.bamboo_cookie.name=Bambookie
+fluid.amaranth_juice=Amaranth Oil
+item.contenttweaker.enbiotic.name=Enbiotic Material 
+
+item.contenttweaker.activated_green_fish.name=Activated Green Heart Fish
+
+fluid.coffee=Coffee
+fluid.caffeine=Caffeine
+
+fluid.glowshroom_stew=Glowshroom Stew
+
+item.contenttweaker.dummy.name=Dummy
+
+item.contenttweaker.singularity_dust.name=Singularity Dust
+item.contenttweaker.meta_singularity.name=Singularity Singularity
+item.contenttweaker.mushroomite_singularity.name=Mushroomite Singularity
+item.contenttweaker.fiery_singularity.name=Fiery Metal Singularity
+item.contenttweaker.evil_singularity.name=Evil Infused Iron Singularity
+item.contenttweaker.neodymium_singularity.name=Neodymium Singularity
+item.contenttweaker.solar_silicon_singularity.name=Solar Silicon Singularity
+item.contenttweaker.mana_dust_singularity.name=Mana Dust Singularity
+item.contenttweaker.neuro_singularity.name=Basic Neuron Singularity
+item.contenttweaker.neutronium_singularity.name=Neutronium Singularity
+
+
+item.contenttweaker.biocell.name=Biocell 
+item.contenttweaker.dirty_biocell.name=Dirty Biocell 
+item.contenttweaker.biomass_cell.name=Biocell with Biomass
+item.contenttweaker.grown_biomass_cell.name=Biocell with Incubated Biomass
+
+item.contenttweaker.biomaterial1.name=Biocell with Biomaterial MK1
+item.contenttweaker.neuromass1.name=Biocell with Neuromass MK1
+item.contenttweaker.skymass1.name=Biocell with Skymass MK1
+item.contenttweaker.bloodmass1.name=Biocell with Bloodmass MK1
+item.contenttweaker.glowmass1.name=Biocell with Glowmass MK1
+
+item.contenttweaker.biomaterial2.name=Biocell with Biomaterial MK2
+item.contenttweaker.musclemass1.name=Biocell with Musclemass MK1
+item.contenttweaker.neuromass2.name=Biocell with Neuromass MK2
+
+item.contenttweaker.ophidian_extract.name=Ophidian Extract
+item.contenttweaker.soul_poison.name=Soul Separating Poison
+
+item.contenttweaker.basic_neuron.name=Basic Neuron
+item.contenttweaker.neuron.name=Neuron
+
+tile.contenttweaker.soul_frame.name=Soul-Trapped-in-Electromagnet Frame
+tile.contenttweaker.blood_frame.name=Bloody Reinforced Machine Frame
+
+item.contenttweaker.quest_coin.name=Quest Coin 
+
+
+item.contenttweaker.spice_rabbit.name=Spiced Rabbit
+item.contenttweaker.spice_egg.name=Spiced Egg
+
+
+requious.jei.recipe.roots_flower=Ritual: Flower Growth
+requious.jei.recipe.ie_excavator=Excavator Veins
+requious.jei.recipe.hint=Hint
+
+tile.wood_infuser.name=Wood Infuser
+requious.jei.recipe.wood_infuser=Wood Infuser
+
+tile.fluid_mixer.name=Fluid Mixer
+requious.jei.recipe.fluid_mixer=Fluid Mixer
+
+tile.fluid_alloyer.name=Fluid Alloyer
+requious.jei.recipe.fluid_alloyer=Fluid Alloyer
+
+tile.assembler.name=Assembler
+requious.jei.recipe.assembler=Assembler
+
+tile.advanced_mixer.name=Advanced Mixer
+requious.jei.recipe.advanced_mixer=Advanced Mixer
+
+tile.fluid_sieve.name=Fluid Sieve
+requious.jei.recipe.fluid_sieve=Fluid Sieve
+
+tile.bioassembler.name=Bio Assembler
+requious.jei.recipe.bioassembler=Bio Assembler
+
+
+
+
+fluid.duraluminum=Molten Duraluminum
+fluid.lesmium=Molten Lesmium
+fluid.angel=Molten Angel
+fluid.thermal=Molten High Heat Resistant Steel
+fluid.electric_manyullyn_base=Molten Electric Manyullyn Base
+fluid.electric_manyullyn=Molten Electric Manyullyn
+fluid.watertight_steel=Molten Watertight Steel
+fluid.mekanized_steel=Molten Mekanized Steel
+fluid.osgloridium=Molten Osgloridium
+fluid.black_bronze=Molten Black Bronze
+
+fluid.ash_solution=Ash Solution
+fluid.chocolate=Chocolate
+fluid.haste_potion=Haste Catalyst
+fluid.speed_potion=Speed Catalyst
+fluid.mekanization_catalyst=Mekanization Catalyst
+
+fluid.sea_water=Sea Water
+fluid.seaweed_rich_water=Seaweed Rich Water
+fluid.pure_water=Pure Water
+fluid.sterile_water=Cleaning Liquid
+fluid.fertilizer=Liquid Fertilizer
+
+fluid.ore_drill=Ore Drilling Fluid
+fluid.ore_make=Ore Creation Fluid
+fluid.ore_waste=Ore Waste Fluid
+
+fluid.ore_waste_ref1=Once Refined Ore Waste
+fluid.ore_waste1=Ironless Ore Waste
+fluid.ore_waste_ref2=Twice Refined Ore Waste
+fluid.ore_waste2=Goldless Ore Waste
+fluid.ore_waste_ref3=Thrice Refined Ore Waste
+fluid.ore_waste3=Platinumless Ore Waste
+
+fluid.muddy_sludge=Muddy Sludge
+fluid.radioactive_waste=Radioactive Waste
+
+fluid.kerosene=Kerosene
+fluid.tar=Tar
+
+fluid.enriched_diesel1=Enriched Diesel Fuel
+    registerMoltenMetal("enriched_diesel2", Color.fromHex("780e75"));
+
+fluid.naphthalene=Naphthalene
+fluid.concrete_reinforcer=Concrete Reinforcing Agent
+
+item.contenttweaker.empowered_shard.name=Empowered Shard
+fluid.dense_steam=Dense Steam
+fluid.empowered_steam=Empowered Steam
+
+fluid.nectar_solution=Nectar Solution
+fluid.corn_solution=Corn Based Ore Fluid
+fluid.rich_corn_solution=Corn Based Ore-Rich Fluid
+
+
+fluid.crystal_fluid1=Refined Crystal Waste
+fluid.crystal_fluid2=Crystal Growth Medium
+fluid.crystal_fluid3=Crystal Refining Fluid
+fluid.crystal_waste=Crystal Waste
+
+fluid.amber_slury=Amber Slurry
+fluid.malachite_slury=Malachite Slurry
+fluid.peridot_slury=Peridot Slurry
+fluid.ruby_slury=Ruby Slurry
+fluid.sapphire_slury=Sapphire Slurry
+fluid.tanzanite_slury=Tanzanite Slurry
+fluid.topaz_slury=Topaz Slurry
+
+fluid.solar_silicon_solution=Solar Silicon Solution
+
+fluid.soy_extract=Soy Extract
+fluid.soy_milk=Soy Milk
+
+fluid.ow_air=Liquid Overworld Air
+fluid.erebus_air=Liquid Erebus Air
+fluid.atum_air=Liquid Atum Air
+fluid.nether_air=Liquid Nether Air
+fluid.twilight_air=Liquid Twilight Air
+fluid.aether_air=Liquid Aether Air
+fluid.end_air=Liquid End Air
+
+fluid.noble_gases=Noble Gases
+
+fluid.pheromones=Pheromones
+fluid.refined_pheromones=Refined Pheromones
+fluid.bugs=Bugs
+tile.contenttweaker.bug_hill_exit1.name=Bug Hill Exit
+tile.contenttweaker.bug_hill_exit2.name=Floral Bug Hill Exit
+tile.contenttweaker.bug_hill_exit3.name=Chitinious Bug Hill Exit
+
+fluid.insecticide=Insecticide
+
+fluid.air_gold=Airborn Ancient Gold Particles
+fluid.air_gold2=Concentrated Ancient Gold Particles
+fluid.desert_water=Desert Deep Water
+
+item.contenttweaker.aether_bug.name=Aether Bug
+fluid.skyroot=Skyroot Oil
+
+fluid.lava_residue=Lava Residue
+
+fluid.high_heat_lava=High Heat Lava
+fluid.super_heat_lava=Super Heat Lava
+
+item.contenttweaker.ice_dust.name=Icestone Dust
+item.contenttweaker.ice_shard.name=Icestone Crystal
+tile.contenttweaker.ice_shard_block.name=Block of Icestone Crystals
+
+fluid.cold_liquid=Cryotheum Coolant

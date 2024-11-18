@@ -255,6 +255,22 @@ addResearchRecipe("Fluids", <minecraft:paper>, <contenttweaker:research_fluids>,
 );
 
 
+addAdvancedResearchRecipe("Soul", <minecraft:nether_star>, <contenttweaker:research_soul>, [
+    <enderio:item_material:52> * 32,
+    <contenttweaker:corrupted_ambrosium> * 4,
+    <simplyjetpacks:metaitemmods:11>,
+
+    <taiga:iox_ingot> * 4,
+    <mysticalagradditions:stuff:1> * 4,
+    <contenttweaker:soul_codex8> * 2,
+    <simplyjetpacks:metaitemmods:12> * 8,
+    <contenttweaker:soul_poison> * 8,
+    <enderio:item_soul_vial> * 2,
+    <darkutils:wither_block> * 8,
+    <contenttweaker:cursed_processor> * 4,
+    <extrautils2:ingredients:17> * 4,
+    <contenttweaker:palladium_processor> * 4
+], 10000, 20 * 25);
 addAdvancedResearchRecipe("Singularity", <contenttweaker:singularity_dust> * 16, <contenttweaker:research_singularity>, [
     <extendedcrafting:singularity_custom:100> * 64,
     <contenttweaker:neuro_singularity> * 2,
@@ -267,7 +283,7 @@ addAdvancedResearchRecipe("Singularity", <contenttweaker:singularity_dust> * 16,
     <extendedcrafting:singularity_custom:51>,
     <extendedcrafting:singularity:49> * 8,
     <extendedcrafting:singularity_custom:21> * 3
-], 10000, 20 * 30);
+], 1000000, 20 * 30);
 
 addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,
     [

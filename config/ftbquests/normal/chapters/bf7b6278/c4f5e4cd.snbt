@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 3.0d,
 	text: [
-		"Diesel can be burned at diesel generated for 4096 rf/tick. Lubricant can be used to give a 25% boost to excavators, pumpjacks and crushers and for a large sifter."
+		"Diesel can be burned in a diesel generator for 4096 rf/tick. Lubricant can be used to give a 25% boost to excavators, pumpjacks and crushers and in a large sifter."
 	],
 	dependencies: [
 		"0120a191"

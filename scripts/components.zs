@@ -1380,6 +1380,19 @@ scripts.content_machines.addAssemblerRecipe(
 
 
 }
+{//mana chip
+	mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:rune_mana_chip>, 1000000 * 200, 1000000, <botania:rune:8>, 
+        [
+            <contenttweaker:slime_cell>,
+			<enderio:item_capacitor_melodic>,
+			<enderio:item_capacitor_melodic>,
+			<botania:manaresource:1>,
+			<botania:manaresource:1>,
+			<contenttweaker:soul_codex8>
+        ]
+    );
+}
 
 
 {//signal
@@ -1486,7 +1499,7 @@ scripts.content_machines.addAssemblerRecipe(
         [
 			<contenttweaker:flesh_support>, 
 			<contenttweaker:compact_empowerer> * 3, 
-			<simplyjetpacks:metaitemmods:11>,
+			<simplyjetpacks:metaitemmods:11> * 4,
 			<contenttweaker:cursed_gold_plate> * 16,
 			<moreplates:evil_infused_iron_plate> * 16,
 			<extendedcrafting:singularity:5> * 8
@@ -1502,7 +1515,7 @@ scripts.content_machines.addAssemblerRecipe(
 			<contenttweaker:cursed_skull> * 5,
 			<contenttweaker:cursed_frame>,
 			<contenttweaker:laser> * 4,
-			<extendedcrafting:storage:2>,
+			<extendedcrafting:storage:2> * 4,
 			<contenttweaker:secure_switch>
 		], [
 			<liquid:evil_blood> * 1000

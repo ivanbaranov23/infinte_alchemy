@@ -1,0 +1,24 @@
+{
+	title: "Building Wand",
+	icon: "betterbuilderswands:wandunbreakable",
+	x: 3.5d,
+	y: 4.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "96899683",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true,
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "af8b2e96",
+		type: "item",
+		item: "betterbuilderswands:wandunbreakable"
+	}]
+}
