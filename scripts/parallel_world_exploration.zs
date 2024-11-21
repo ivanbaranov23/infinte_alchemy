@@ -341,7 +341,7 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
     print("[PWE] adding " ~ counter ~ "th recipe: " ~ rec_name);
 
     var rec = RecipeBuilder.newBuilder(rec_name, "pworld_oregen", 20);
-    rec.addEnergyPerTickInput(2048);
+    rec.addEnergyPerTickInput(100000);
     rec.addItemInput(ship);
     var core_count as int = 1;
     for m in mechs {
@@ -352,7 +352,22 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
     rec.addMekanismLaserInput(25000000 as double);
 
     for i, mech in mechs{
-        rec.addItemInput(mech);
+        var amount as int = 0;
+        var skip as bool = false;
+        for j, mech2 in mechs{
+            if (mech.definition.id == mech2.definition.id){
+                if (j < i){//>
+                    skip = true;
+                    break;
+                }else{
+                    amount += 1;
+                }
+            }
+        }
+        if (skip){
+            continue;
+        }
+        rec.addItemInput(mech * (mech.amount * amount));
 
         if (marks[i] == i){
             rec.addItemInput(goals[i]);
@@ -378,12 +393,12 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
 
 function addAll2Recipes(ship as IItemStack){
     for i1 in 0 to loot.length{//0 1 2 3
-        for i2 in i1 to loot.length{//00 01 02 03 11 12 13 22 23
+        for i2 in i1 to loot.length{//00 01 02 03 11 12 13 22 23 33
             var mech1 as IItemStack = loot.keys[i1];
             var mech2 as IItemStack = loot.keys[i2];
 
             var mechs as IItemStack[] = [mech1, mech2];
-            var marks as int[] = [0, (i1 != i2)?1:0];
+            var marks as int[] = [0, (i1 != i2)?1:0];//01 00 00 00 01 00 00 01 00 01
 
             for goal1 in loot[mech1]{
                 for goal2 in loot[mech2]{

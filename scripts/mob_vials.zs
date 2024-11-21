@@ -198,7 +198,7 @@ val sand as ILiquidStack = <liquid:sand> * 100;
         }, <liquid:ender_blood> * 200, 4
     );
 
-    addVialProcess("minecraft:evokecation_illager", poison * 200, {
+    addVialProcess("minecraft:evocation_illager", poison * 200, {
             <minecraft:totem_of_undying> % 70: 0.02,
             <minecraft:emerald> * 4: 0.04
         }, <liquid:blood> * 200, 1

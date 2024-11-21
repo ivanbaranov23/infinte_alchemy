@@ -1,7 +1,7 @@
-[21:39:12] [Client thread/INFO] [JMLogger] JourneyMap log initialized.
-[21:39:12] [Client thread/INFO] [JourneymapClient] initialize ENTER
-[21:39:13] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
-[21:39:13] [Client thread/INFO] [?] Version: JourneyMap 1.12.2-5.7.1p2, built with Forge 14.23.5.2768
+[19:01:10] [Client thread/INFO] [JMLogger] JourneyMap log initialized.
+[19:01:10] [Client thread/INFO] [JourneymapClient] initialize ENTER
+[19:01:11] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[19:01:11] [Client thread/INFO] [?] Version: JourneyMap 1.12.2-5.7.1p2, built with Forge 14.23.5.2768
 Forge: 14.23.5.2860
 Environment: os.name, os.arch, java.version, user.country, user.language=null, game language=en_us, locale=en_us
 Features: 
@@ -12,28 +12,28 @@ Features:
 	MapTopo : singleplayer = true , multiplayer = true
 	MapSurface : singleplayer = true , multiplayer = true
 	MapCaves : singleplayer = true , multiplayer = true
-MiniMapProperties{state=Valid, file=journeymap.minimap.config, configVersion=5.7.1p2, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=Game Time, sizePercent=30, showDayNight=true, info3Label=Location, showMobs=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=Small Dots, showReticle=true, orientation=North, systemTimeRealFormat=HH:mm:ss, shape=Circle, showSelf=true, info4Label=Biome, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, reticleOrientation=Compass, gameTimeRealFormat=HH:mm:ss, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=Top Right, info1Label=Blank, fontScale=1}
+MiniMapProperties{state=Valid, file=journeymap.minimap.config, configVersion=5.7.1p2, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=Game Time, sizePercent=30, showDayNight=true, info3Label=Location, showMobs=true, showPets=true, preferredMapType=night, showCompass=true, mobDisplay=Small Dots, showReticle=true, orientation=North, systemTimeRealFormat=HH:mm:ss, shape=Circle, showSelf=true, info4Label=Biome, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, reticleOrientation=Compass, gameTimeRealFormat=HH:mm:ss, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=Top Right, info1Label=Blank, fontScale=1}
 MiniMapProperties{state=Valid, file=journeymap.minimap2.config, configVersion=5.7.1p2, zoomLevel=0, showPlayers=true, frameAlpha=100, compassFontScale=1, terrainAlpha=100, showEntityNames=true, enabled=true, showPlayerHeading=true, showVillagers=true, info2Label=Game Time, sizePercent=30, showDayNight=true, info3Label=Location, showMobs=true, showPets=true, preferredMapType=day, showCompass=true, mobDisplay=Small Dots, showReticle=true, orientation=North, systemTimeRealFormat=HH:mm:ss, shape=Rectangle, showSelf=true, info4Label=Biome, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, reticleOrientation=Compass, gameTimeRealFormat=HH:mm:ss, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showWaypointLabels=true, locationFormatVerbose=true, position=Top Right, info1Label=Blank, fontScale=1}
 FullMapProperties{state=Valid, file=journeymap.fullmap.config, configVersion=5.7.1p2, mobDisplay=Small Dots, zoomLevel=0, showPlayers=true, showSelf=true, locationFormat=xzyv, playerDisplay=Small Dots, showGrid=true, showEntityNames=true, showPlayerHeading=true, showVillagers=true, showWaypoints=true, showCaves=true, showAnimals=true, showMobHeading=true, showKeys=true, showWaypointLabels=true, locationFormatVerbose=true, showMobs=true, showPets=true, fontScale=1, preferredMapType=day}
 WaypointProperties{state=Valid, file=journeymap.waypoint.config, configVersion=5.7.1p2, autoRemoveDeathpointDistance=2, createDeathpoints=true, showName=true, dateFormat=MM-dd-yyyy, autoRemoveDeathpoints=false, maxDistance=0, autoHideLabel=true, teleportCommand=/tp {name} {x} {y} {z}, showStaticBeam=true, minDistance=4, timeFormat=HH:mm:ss, boldLabel=false, textureSmall=true, showDeathpointlabel=true, showDistance=true, showRotatingBeam=true, fontScale=2, showTexture=true, managerEnabled=true, beaconEnabled=true}
 WebMapProperties{state=Valid, file=journeymap.webmap.config, configVersion=5.7.1p2, zoomLevel=0, showWaypoints=true, showCaves=true, showSelf=true, port=8080, showGrid=true, showEntityNames=true, enabled=false, preferredMapType=day}
 CoreProperties{state=Valid, file=journeymap.core.config, configVersion=5.7.1p2, verboseColorPalette=false, maxPlayersData=32, mapSurfaceAboveCaves=true, optionsManagerViewed=null, announceMod=true, colorPassive=#bbbbbb, renderOverlayEventTypeName=ALL, mapBlendWater=false, renderDistanceSurfaceMax=2, radarVerticalDistance=16, mapBlendGrass=true, recordCacheStats=false, hideSneakingEntities=true, revealShape=Circle, alwaysMapSurface=false, colorVillager=#88e188, mapPlants=false, colorPet=#0077ff, radarLateralDistance=64, mapBathymetry=false, mapCrops=true, maxMobsData=32, mapPlantShadows=false, alwaysMapCaves=false, checkUpdates=true, browserPoll=2000, mapBlendFoliage=true, mappingEnabled=true, colorPlayer=#ffffff, tileHighDisplayQuality=true, cacheVillagersData=2200, logLevel=INFO, maxVillagersData=32, maxAnimalsData=32, mapTransparency=true, tileRenderType=1, caveIgnoreGlass=true, mapTopography=true, renderDistanceCaveMax=2, mapAntialiasing=true, colorSelf=#0000ff, cachePlayersData=2000, cacheMobsData=3000, cachePlayerData=1000, splashViewed=5.7.1p2, colorHostile=#ff0000, cacheAnimalsData=3100, themeName=OceanMonument, mapCaveLighting=true, renderDelay=2, renderOverlayPreEvent=true, autoMapPoll=2000}
-[21:39:13] [Client thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.4
-[21:39:13] [Client thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
-[21:39:13] [Client thread/INFO] [PluginHelper] Initialized IClientPlugin: com.feed_the_beast.ftbutilities.integration.JourneyMapIntegration
-[21:39:13] [Client thread/INFO] [PluginHelper] Initialized IClientPlugin: youyihj.zenutils.impl.util.JourneyMapPlugin
-[21:39:13] [Client thread/INFO] [PluginHelper] Initialized IClientPlugin: com.teamacronymcoders.base.modules.journeymap.JourneyMapPlugin
-[21:39:13] [Client thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg ?ms
-[21:39:38] [Client thread/ERROR] [FileHandler] Couldn't locate icons for Default: C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite%20Alchemy\mods\journeymap-1.12.2-5.7.1p2.jar\assets\journeymap\icon\entity
-[21:39:38] [Client thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
-[21:39:38] [Client thread/ERROR] [FileHandler] Couldn't locate icons for flat: C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite%20Alchemy\mods\journeymap-1.12.2-5.7.1p2.jar\assets\journeymap\theme\flat
-[21:39:38] [Client thread/INFO] [ThemeLoader] Preloaded theme textures: 0
-[21:39:39] [JM-VersionCheck-1/INFO] [VersionCheck$1] Newer version online: JourneyMap 5.7.1p3.jar for Minecraft 1.12.2 on http://minecraft.curseforge.com/projects/journeymap/files/5172461
-[21:51:58] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
-[21:52:16] [Client thread/INFO] [WaypointStore] Loaded 2 waypoints from C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite Alchemy\journeymap\data\sp\New World ~1~\waypoints
-[21:52:16] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite Alchemy\journeymap\data\sp\New World ~1~\DIM0. Memory: 4016MB total, 2021MB free 
-[21:52:16] [Client thread/INFO] [ChatLog] JourneyMap: Press [J]
-[21:57:21] [Client thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for biomesoplenty
-[22:21:41] [Client thread/WARN] [StatTimer] TileDrawStep.updateRegionTexture was slow: 72.2556 (Warning limit reached)
-[22:21:41] [Client thread/WARN] [StatTimer] TileDrawStep.updateRegionTexture: Avg:     0.07ms, Min:        0ms, Max:    1317.29ms, Total:          3 sec, Count:    53630, Canceled:        0, Slow:       10
-[22:26:23] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite Alchemy\journeymap\data\sp\New World ~1~\DIM0
+[19:01:11] [Client thread/INFO] [ClientAPI] [ClientAPI] built with JourneyMap API 1.4
+[19:01:11] [Client thread/INFO] [PluginHelper] Initializing plugins with Client API: journeymap.client.api.impl.ClientAPI
+[19:01:11] [Client thread/INFO] [PluginHelper] Initialized IClientPlugin: com.feed_the_beast.ftbutilities.integration.JourneyMapIntegration
+[19:01:11] [Client thread/INFO] [PluginHelper] Initialized IClientPlugin: youyihj.zenutils.impl.util.JourneyMapPlugin
+[19:01:11] [Client thread/INFO] [PluginHelper] Initialized IClientPlugin: com.teamacronymcoders.base.modules.journeymap.JourneyMapPlugin
+[19:01:11] [Client thread/INFO] [JourneymapClient] initialize EXIT, elapsed count 0 avg ?ms
+[19:01:50] [Client thread/ERROR] [FileHandler] Couldn't locate icons for Default: C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite%20Alchemy\mods\journeymap-1.12.2-5.7.1p2.jar\assets\journeymap\icon\entity
+[19:01:50] [Client thread/INFO] [IconSetFileHandler] Added entity icons from journeymap:icon/entity. Success: false
+[19:01:50] [Client thread/ERROR] [FileHandler] Couldn't locate icons for flat: C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite%20Alchemy\mods\journeymap-1.12.2-5.7.1p2.jar\assets\journeymap\theme\flat
+[19:01:50] [Client thread/INFO] [ThemeLoader] Preloaded theme textures: 0
+[19:01:56] [JM-VersionCheck-1/INFO] [VersionCheck$1] Newer version online: JourneyMap 5.7.1p3.jar for Minecraft 1.12.2 on http://minecraft.curseforge.com/projects/journeymap/files/5172461
+[19:17:47] [Client thread/WARN] [PropertiesBase] core (Initialized) Bad configField entry during updateFrom(): optionsManagerViewed=null
+[19:17:59] [Client thread/INFO] [WaypointStore] Loaded 2 waypoints from C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite Alchemy\journeymap\data\sp\New World ~1~\waypoints
+[19:17:59] [Client thread/INFO] [JourneymapClient] Mapping started in C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite Alchemy\journeymap\data\sp\New World ~1~\DIM0. Memory: 4048MB total, 1449MB free 
+[19:17:59] [Client thread/INFO] [ChatLog] JourneyMap: Press [J]
+[19:19:24] [Client thread/INFO] [ModBlockDelegate] Custom modded block handling enabled for biomesoplenty
+[19:19:27] [Client thread/WARN] [StatTimer] TileDrawStep.updateRegionTexture was slow: 61.5966 (Warning limit reached)
+[19:19:27] [Client thread/WARN] [StatTimer] TileDrawStep.updateRegionTexture: Avg:     6.84ms, Min:        0ms, Max:     576.04ms, Total:          1 sec, Count:      255, Canceled:        0, Slow:       10
+[19:27:26] [Client thread/INFO] [JourneymapClient] Mapping halted in C:\Users\Administrator\Documents\Curse\Minecraft\Instances\Infinite Alchemy\journeymap\data\sp\New World ~1~\DIM0

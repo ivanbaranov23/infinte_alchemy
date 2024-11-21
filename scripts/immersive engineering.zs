@@ -276,21 +276,21 @@ recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decorat
 
 	recipes.remove(<immersiveengineering:metal_decoration0>);
 	recipes.addShaped("ia_ie_lv_coil_block", <immersiveengineering:metal_decoration0>, [
-		[<immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>], 
+		[<immersiveengineering:material:20>, <immersiveengineering:wirecoil>, <immersiveengineering:material:20>], 
 		[<immersiveengineering:wirecoil>, <ore:stickIron>, <immersiveengineering:wirecoil>], 
-		[<immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>]
+		[<immersiveengineering:material:20>, <immersiveengineering:wirecoil>, <immersiveengineering:material:20>]
 	]);
 	recipes.remove(<immersiveengineering:metal_decoration0:1>);
 	recipes.addShaped("ia_ie_mv_coil_block", <immersiveengineering:metal_decoration0:1>, [
-		[<immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>], 
+		[<immersiveengineering:material:21>, <immersiveengineering:wirecoil:1>, <immersiveengineering:material:21>], 
 		[<immersiveengineering:wirecoil:1>, <ore:stickSteel>, <immersiveengineering:wirecoil:1>], 
-		[<immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>]
+		[<immersiveengineering:material:21>, <immersiveengineering:wirecoil:1>, <immersiveengineering:material:21>]
 	]);
 	recipes.remove(<immersiveengineering:metal_decoration0:2>);
 	recipes.addShaped("ia_ie_hv_coil_block", <immersiveengineering:metal_decoration0:2>, [
-		[<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>], 
+		[<immersiveengineering:material:23>, <immersiveengineering:wirecoil:2>, <immersiveengineering:material:23>], 
 		[<immersiveengineering:wirecoil:2>, <contenttweaker:duraluminum_rod>, <immersiveengineering:wirecoil:2>], 
-		[<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>]
+		[<immersiveengineering:material:23>, <immersiveengineering:wirecoil:2>, <immersiveengineering:material:23>]
 	]);
 
 	recipes.remove(<immersiveengineering:wirecoil:4>);

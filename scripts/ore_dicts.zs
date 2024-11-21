@@ -18,3 +18,6 @@
 
 //<ore:blockGlass>.removeItems(<ore:blockGlass>.items);
 //<ore:blockGlass>.add(<minecraft:glass>);
+
+<ore:blockGlass>.remove(<tconstruct:clear_glass>);
+<ore:blockGlass>.removeItems(<tconstruct:clear_stained_glass:*>.items);

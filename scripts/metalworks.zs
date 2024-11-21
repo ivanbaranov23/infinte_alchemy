@@ -1556,6 +1556,13 @@ static all_metals as IItemStack[string][string] = {
         block: <mysticalagradditions:storage:1>
     },
 
+    soulium: {
+        ingot: <mysticalagriculture:crafting:38>,
+        plate: <moreplates:soulium_plate>,
+        gear: <moreplates:soulium_gear>,
+        block: <mysticalagriculture:ingot_storage:6>
+    },
+
     // non metals
     modularium_paste: {
         ingot: <contenttweaker:modularium_paste>
@@ -1974,6 +1981,7 @@ static metals_to_clean as string[] = [
     "mystical_metal3",
     "mystical_metal4",
     "mystical_metal5",
+    "soulium",
     
     "diamond", "emerald",
 
@@ -2396,6 +2404,12 @@ recipes.addShaped("ia_wooden_gear", <thermalfoundation:material:22>, [
         "lead", 1,
         "osmium", 1
     );
+    mods.immersiveengineering.AlloySmelter.addRecipe(
+        <contenttweaker:lesmium_ingot>, 
+        <thermalfoundation:material:131>,
+        <mekanism:ingot:1>,
+            200
+    );
 
     {//watertight_steel
         add3alloy(0, "watertight_steel", 2,
@@ -2541,6 +2555,12 @@ add3alloy(1, "flower_steel", 4,
         add2alloy(1, "blue_alloy", 1,
             "zinc", 1,
             "electrotine", 4
+        );
+        mods.immersiveengineering.AlloySmelter.addRecipe(
+            <projectred-core:resource_item:104>, 
+            <contenttweaker:zinc_ingot>,
+            <projectred-core:resource_item:105> * 4,
+            200
         );
 
         mods.enderio.AlloySmelter.removeRecipe(all_metals.redstone_alloy.ingot);
@@ -4013,6 +4033,11 @@ recipes.addShaped("ia_neutronium_sheetmetal", <contenttweaker:neutronium_sheetme
     add3alloy(4, "mystical_metal0", 2,
         "mystical_base", 1,
         "essence", 1,
+        "steelwood", 1
+    );
+    add3alloy(4, "mystical_metal0", 1,
+        "mystical_base", 1,
+        "emerald", 1,
         "steelwood", 1
     );
 

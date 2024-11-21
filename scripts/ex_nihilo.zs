@@ -195,7 +195,8 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<natura:overworld_seeds> % 15,
 			<natura:overworld_seeds:1> % 15,
 			<actuallyadditions:item_canola_seed> % 10,
-			<actuallyadditions:item_flax_seed> % 10
+			<actuallyadditions:item_flax_seed> % 10,
+			<actuallyadditions:item_rice_seed> % 10
 		],
 		<minecraft:dirt:1>: [
 			<exnihilocreatio:item_pebble> % 50,
@@ -305,11 +306,11 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<minecraft:dye:3> % 10
 		],
 		<minecraft:sand:1>: [
-			<minecraft:redstone> % 15
+			<minecraft:redstone> % 25
 		],
 		<minecraft:soul_sand>: [
 			<minecraft:quartz> % 40,
-			<appliedenergistics2:crystal_seed>.withTag({progress: 300}) % 30
+			<appliedenergistics2:crystal_seed>.withTag({progress: 300}) % 5
 		],
 		<natura:nether_heat_sand>: [
 			<minecraft:blaze_powder> % 60,
@@ -371,8 +372,8 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_ore_osmium> % 25
 		],
 		<minecraft:sand:1>: [
-			<minecraft:redstone> % 25,
-			<minecraft:glowstone_dust> % 5
+			<minecraft:redstone> % 35,
+			<minecraft:glowstone_dust> % 15
 		],
 
 		<exnihilocreatio:block_skystone_crushed>: [

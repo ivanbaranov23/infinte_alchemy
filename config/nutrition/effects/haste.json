@@ -2,8 +2,8 @@
 	"name": "haste",               
 	"potion": "minecraft:haste",  
 	"amplifier": 0,                  
-	"minimum": 80,                  
-	"maximum": 95,                  
+	"minimum": 90,                  
+	"maximum": 100,                  
 	"detect": "any",                 
 	"nutrients": [                   
 		"protein"                  

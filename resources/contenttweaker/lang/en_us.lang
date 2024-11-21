@@ -1928,3 +1928,49 @@ item.contenttweaker.alien_bacteria.name=Alien Bacteria
 
 tile.vial_processor.name=Vial Processor
 requious.jei.recipe.vial_processor=Vial Processor
+
+tile.sorter_food.name=Food Value Living Sorter
+tile.sorter_livespan.name=Livespan Value Living Sorter
+
+ia.rename.industrial_graphite=Industrial Grade Graphite
+ia.rename.magical_copper=Magical Copper Ore
+ia.rename.magical_copper=Magical Tin Ore
+
+ia.tooltip.holy_thing=So just \"holy\"
+ia.tooltip.dummy=Pay this no mind
+ia.tooltip.xnet=Formerly known as Twitternet Ingot
+
+ia.tooltip.death=You touch the ingot and fell the death touching you back.
+ia.tooltip.creosolon=Not-so-weak enhancer
+
+ia.tooltip.m_tier1=Machine Frame Tier 1
+ia.tooltip.m_tier2=Machine Frame Tier 2
+ia.tooltip.m_tier3=Machine Frame Tier 3
+ia.tooltip.m_tier4=Machine Frame Tier 4
+ia.tooltip.m_tier5=Machine Frame Tier 5
+ia.tooltip.m_tier6=Machine Frame Tier 6
+ia.tooltip.m_tier7=Machine Frame Tier 7
+ia.tooltip.m_tier8=Machine Frame Tier 8
+ia.tooltip.m_tier9=Machine Frame Tier 9
+ia.tooltip.m_tier10=Machine Frame Tier 10
+ia.tooltip.m_tier11=Machine Frame Tier 11
+ia.tooltip.m_tier12=Machine Frame Tier 12
+ia.tooltip.m_tier13=Machine Frame Tier 13
+ia.tooltip.m_tier14=Machine Frame Tier 14
+ia.tooltip.m_tier15=Machine Frame Tier 15
+ia.tooltip.m_tier16=Machine Frame Tier 16
+ia.tooltip.m_tier17=The Final Machine Frame
+
+ia.rename.glowstone_ingot=Refined Glowstone Ingot
+ia.rename.glowstone_bloc=Refined Glowstone Block
+
+ia.rename.fake_mold=Fake Mold
+ia.tooltip.propaganda=Do not believe the Engineer's propaganda,
+ia.tooltip.mold_plate=there is no way a plate could be this cheap.
+ia.tooltip.mold_gear=there is no way a gear could be this cheap.
+ia.tooltip.mold_rod=there is no way a rod could be this cheap.
+
+ia.rename.plant_reagent=Plant Reagent
+ia.rename.slime_reagent=Slime Reagent
+
+ia.tooltip.bucket=One would imagine that any bucket is watertight

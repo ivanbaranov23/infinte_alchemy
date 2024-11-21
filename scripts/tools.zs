@@ -38,6 +38,57 @@ static tools as IItemStack[string][string] = {
 
         hammer: <thermalfoundation:tool.hammer_copper>
     },
+    tin: {
+        sword: <thermalfoundation:tool.sword_tin>,
+        pick: <thermalfoundation:tool.pickaxe_tin>,
+        shovel: <thermalfoundation:tool.shovel_tin>,
+        axe: <thermalfoundation:tool.axe_tin>,
+        hoe: <thermalfoundation:tool.hoe_tin>,
+
+        hammer: <thermalfoundation:tool.hammer_tin>
+    },
+
+    nickel: {
+        sword: <thermalfoundation:tool.sword_nickel>,
+        shovel: <thermalfoundation:tool.shovel_nickel>,
+        pick: <thermalfoundation:tool.pickaxe_nickel>,
+        axe: <thermalfoundation:tool.axe_nickel>,
+        hoe: <thermalfoundation:tool.hoe_nickel>,
+        hammer: <thermalfoundation:tool.hammer_nickel>
+    },
+    aluminum: {
+        sword: <thermalfoundation:tool.sword_aluminum>,
+        shovel: <thermalfoundation:tool.shovel_aluminum>,
+        pick: <thermalfoundation:tool.pickaxe_aluminum>,
+        axe: <thermalfoundation:tool.axe_aluminum>,
+        hoe: <thermalfoundation:tool.hoe_aluminum>,
+        hammer: <thermalfoundation:tool.hammer_aluminum>
+    },
+
+    bronze: {
+        sword: <thermalfoundation:tool.sword_bronze>,
+        shovel: <thermalfoundation:tool.shovel_bronze>,
+        pick: <thermalfoundation:tool.pickaxe_bronze>,
+        axe: <thermalfoundation:tool.axe_bronze>,
+        hoe: <thermalfoundation:tool.hoe_bronze>,
+        hammer: <thermalfoundation:tool.hammer_bronze>
+    },
+    constantan: {
+        sword: <thermalfoundation:tool.sword_constantan>,
+        shovel: <thermalfoundation:tool.shovel_constantan>,
+        pick: <thermalfoundation:tool.pickaxe_constantan>,
+        axe: <thermalfoundation:tool.axe_constantan>,
+        hoe: <thermalfoundation:tool.hoe_constantan>,
+        hammer: <thermalfoundation:tool.hammer_constantan>
+    },
+    invar: {
+        sword: <thermalfoundation:tool.sword_invar>,
+        shovel: <thermalfoundation:tool.shovel_invar>,
+        pick: <thermalfoundation:tool.pickaxe_invar>,
+        axe: <thermalfoundation:tool.axe_invar>,
+        hoe: <thermalfoundation:tool.hoe_invar>,
+        hammer: <thermalfoundation:tool.hammer_invar>
+    },
 
     gold: {
         sword: <minecraft:golden_sword>,
@@ -48,6 +99,49 @@ static tools as IItemStack[string][string] = {
 
         hammer: <thermalfoundation:tool.hammer_gold>
     },
+    lead: {
+        sword: <thermalfoundation:tool.sword_lead>,
+        shovel: <thermalfoundation:tool.shovel_lead>,
+        pick: <thermalfoundation:tool.pickaxe_lead>,
+        axe: <thermalfoundation:tool.axe_lead>,
+        hoe: <thermalfoundation:tool.hoe_lead>,
+        hammer: <thermalfoundation:tool.hammer_lead>
+    },
+    silver: {
+        sword: <thermalfoundation:tool.sword_silver>,
+        shovel: <thermalfoundation:tool.shovel_silver>,
+        pick: <thermalfoundation:tool.pickaxe_silver>,
+        axe: <thermalfoundation:tool.axe_silver>,
+        hoe: <thermalfoundation:tool.hoe_silver>,
+        hammer: <thermalfoundation:tool.hammer_silver>
+    },
+
+    steel: {
+        sword: <immersiveengineering:sword_steel>,
+        pick: <immersiveengineering:pickaxe_steel>,
+        shovel: <immersiveengineering:shovel_steel>,
+        axe: <immersiveengineering:axe_steel>,
+        hoe: <immersiveengineering:hoe_steel>
+    },
+    electrum: {
+        sword: <thermalfoundation:tool.sword_electrum>,
+        shovel: <thermalfoundation:tool.shovel_electrum>,
+        pick: <thermalfoundation:tool.pickaxe_electrum>,
+        axe: <thermalfoundation:tool.axe_electrum>,
+        hoe: <thermalfoundation:tool.hoe_electrum>,
+        hammer: <thermalfoundation:tool.hammer_electrum>
+    },
+
+    platinum: {
+        sword: <thermalfoundation:tool.sword_platinum>,
+        shovel: <thermalfoundation:tool.shovel_platinum>,
+        pick: <thermalfoundation:tool.pickaxe_platinum>,
+        axe: <thermalfoundation:tool.axe_platinum>,
+        hoe: <thermalfoundation:tool.hoe_platinum>,
+        hammer: <thermalfoundation:tool.hammer_platinum>
+    },
+
+
     diamond: {
         sword: <minecraft:diamond_sword>,
         pick: <minecraft:diamond_pickaxe>,
@@ -57,6 +151,14 @@ static tools as IItemStack[string][string] = {
 
         hammer: <thermalfoundation:tool.hammer_diamond>
     },
+    emerald: {
+        sword: <actuallyadditions:item_sword_emerald>,
+        pick: <actuallyadditions:item_pickaxe_emerald>,
+        axe: <actuallyadditions:item_axe_emerald>,
+        shovel: <actuallyadditions:item_shovel_emerald>,
+        hoe: <actuallyadditions:item_hoe_emerald>
+    },
+
     limestone: {
         sword: <atum:limestone_sword>,
         pick: <atum:limestone_pickaxe>,
@@ -88,13 +190,56 @@ static materials as IIngredient[string][string] = {
     copper: {
         mat: <thermalfoundation:material:320>
     },
+    tin: {
+        mat: <thermalfoundation:material:321>
+    },
+
+    nickel: {
+        mat: <thermalfoundation:material:325>
+    },
+    aluminum: {
+        mat: <thermalfoundation:material:324>
+    },
+
+    bronze: {
+        mat: <thermalfoundation:material:355>
+    },
+    constantan: {
+        mat: <thermalfoundation:material:356>
+    },
+    invar: {
+        mat: <thermalfoundation:material:354>
+    },
+
     gold: {
         mat: <thermalfoundation:material:33>
     },
+    lead: {
+        mat: <thermalfoundation:material:323>
+    },
+    silver: {
+        mat: <thermalfoundation:material:322>
+    },
+
+    steel: {
+        mat: <thermalfoundation:material:352>,
+        stick: <immersiveengineering:material>
+    },
+    electrum: {
+        mat: <thermalfoundation:material:353>
+    },
+
+    platinum: {
+        mat: <thermalfoundation:material:326>
+    },
+
     diamond: {
         mat: <moreplates:diamond_plate>,
         gem: <minecraft:diamond>,
         stick: <immersiveengineering:material:1>
+    },
+    emerald: {
+        mat: <moreplates:emerald_plate>
     },
 
     limestone: {
@@ -188,7 +333,13 @@ for t in [
     <mysticalworld:silver_axe>,
     <mysticalworld:silver_sword>,
     <mysticalworld:silver_hoe>,
-    <mysticalworld:silver_shovel>
+    <mysticalworld:silver_shovel>,
+
+    <thermalfoundation:tool.sword_steel>,
+    <thermalfoundation:tool.shovel_steel>,
+    <thermalfoundation:tool.pickaxe_steel>,
+    <thermalfoundation:tool.axe_steel>,
+    <thermalfoundation:tool.hoe_steel>
 ] as IItemStack[]{
     mods.jei.JEI.removeAndHide(t);
 }

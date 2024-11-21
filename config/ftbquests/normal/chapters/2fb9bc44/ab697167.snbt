@@ -1,6 +1,9 @@
 {
 	x: 6.5d,
 	y: 6.0d,
+	text: [
+		"Can be obtained as iron byprod or made from rice slimeballs"
+	],
 	tasks: [{
 		uid: "094122e8",
 		type: "item",

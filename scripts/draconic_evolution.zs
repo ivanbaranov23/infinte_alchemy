@@ -2,6 +2,13 @@ import moretweaker.draconicevolution.FusionCrafting;
 
 
 
+recipes.remove(<draconicevolution:potentiometer>);
+recipes.addShaped("potentiometer", <draconicevolution:potentiometer>, [
+    [null, <extrautils2:redstoneclock>, null], 
+    [<projectred-core:resource_item>, <projectred-core:resource_item>, <projectred-core:resource_item>]
+]);
+
+
 FusionCrafting.add(
     <contenttweaker:iv_coil>, <minecraft:coal>, 
     FusionCrafting.DRACONIC, 1000 * 1000, [

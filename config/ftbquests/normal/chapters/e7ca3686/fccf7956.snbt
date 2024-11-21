@@ -3,7 +3,7 @@
 	y: -5.0d,
 	text: [
 		"this multiblock is a bit expensive.",
-		"pillar up 7 blocks and put large fan on 8th, pth and 10th. Find a spot where large fan looks correct. I forbid you to build this otherwise."
+		"pillar up 7 blocks and put large fan on 8th, 9th and 10th. Find a spot where large fan looks correct. I forbid you to build this otherwise."
 	],
 	dependencies: [
 		"0b986a15",

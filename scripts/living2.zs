@@ -704,7 +704,7 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         [<harvestcraft:cookedgrubitem>, <harvestcraft:dragonfruititem>, <natura:edibles:1> | <erebus:erebus_food:5>, <extrautils2:magicapple>, <liquid:liquidchorus> * 1000]
     );
 
-    mods.thermalexpansion.Crucible.addRecipe(<liquid:lizard_spit> * 250, <contenttweaker:draco_lizard_spit>, 4000);
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:lizard_spit> * 1000, <contenttweaker:draco_lizard_spit>, 4000);
     mods.thermalexpansion.Refinery.addRecipe(<liquid:dragon_spit> * 250, <contenttweaker:draco_lizard_spit> % 10, <liquid:lizard_spit> * 500, 8000);
     mods.thermalexpansion.Transposer.addFillRecipe(<minecraft:dragon_breath>, <minecraft:glass_bottle>, <liquid:dragon_spit> * 250, 4000);
 
@@ -720,25 +720,25 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
     );
 
     mods.enderio.SagMill.addRecipe(
-        [<contenttweaker:draco_lizard_shells>, <draconicevolution:draconium_dust> * 2, <draconicevolution:draconium_dust>], [1.0, 0.75, 0.5], 
+        [<contenttweaker:draco_lizard_shells>, <exnihilocreatio:item_ore_draconium> * 3, <exnihilocreatio:item_ore_draconium>], [1.0, 0.75, 0.5], 
         <contenttweaker:draco_lizard_egg>, "CHANCE_ONLY"
     );
     mods.enderio.SagMill.addRecipe(
-        [<minecraft:dye:15> * 4, <draconicevolution:draconium_dust>, <contenttweaker:draco_lizard_spit>], [1.0, 0.3, 0.2], 
+        [<exnihilocreatio:item_ore_draconium> * 2, <draconicevolution:draconium_dust>, <contenttweaker:draco_lizard_spit>], [1.0, 0.3, 0.2], 
         <contenttweaker:draco_lizard_shells>, "MULTIPLY_OUTPUT"
     );
 
     Centrifuge.addRecipe(
         [
             (<minecraft:bone> * 4) % 100,
-            (<draconicevolution:draconium_dust> * 5) % 100,
-            (<draconicevolution:draconium_dust> * 2) % 25,
+            (<exnihilocreatio:item_ore_draconium> * 5) % 100,
+            (<exnihilocreatio:item_ore_draconium> * 2) % 25,
             <quark:enderdragon_scale> % 1
         ], 
-        <contenttweaker:draco_lizard_corpse>, <liquid:blood> * 250, 10000
+        <contenttweaker:draco_lizard_corpse>, <liquid:ender_blood> * 250, 10000
     );
 
-    recipes.addShaped("ia_dragon_egg_from_lizard_egg", <minecraft:dragon_egg> * 2, [
+    recipes.addShaped("ia_dragon_egg_from_lizard_egg", <minecraft:dragon_egg> * 3, [
         [<contenttweaker:draco_lizard_egg>, <contenttweaker:draco_lizard_egg>, <contenttweaker:draco_lizard_egg>], 
         [<contenttweaker:draco_lizard_egg>, <deepmoblearning:pristine_matter_dragon>, <contenttweaker:draco_lizard_egg>], 
         [<contenttweaker:draco_lizard_egg>, <contenttweaker:draco_lizard_egg>, <contenttweaker:draco_lizard_egg>]

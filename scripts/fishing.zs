@@ -92,20 +92,6 @@ addFishRec(<harvestcraft:greenheartfishitem>, <minecraft:dye:2>);
 
 
 
-mods.botaniatweaks.Agglomeration.addRecipe(
-    <botania:manaresource:4>,
-    [
-        <botania:manaresource>,
-        <botania:manaresource:1>,
-        <botania:manaresource:2>,
-        <contenttweaker:terra_coral>
-    ],
-    250000,
-    0xf6faab,
-    0x7dd2e0,
-    <contenttweaker:entwood_block>, <contenttweaker:entwood_block>, <actuallyadditions:block_crystal:1>,
-    null, null, <minecraft:lapis_block>
-);
 
 
 

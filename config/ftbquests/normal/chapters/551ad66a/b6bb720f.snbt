@@ -1,6 +1,9 @@
 {
 	x: 3.0d,
 	y: 2.0d,
+	text: [
+		"Can be made on a pyre or sieved from red sand"
+	],
 	tasks: [{
 		uid: "fea9d378",
 		type: "item",

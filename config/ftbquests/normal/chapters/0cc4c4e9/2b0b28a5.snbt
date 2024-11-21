@@ -1,0 +1,19 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	text: [
+		"Can be dyed"
+	],
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "194429bf",
+		type: "item",
+		items: [{
+			item: "minecraft:elytra"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

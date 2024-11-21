@@ -1,0 +1,18 @@
+{
+	x: 4.5d,
+	y: -3.0d,
+	text: [
+		"Used in a number of recipes"
+	],
+	dependencies: [
+		"1bc9c471"
+	],
+	optional: true,
+	tasks: [{
+		uid: "405214ae",
+		type: "item",
+		items: [{
+			item: "roots:runed_obsidian"
+		}]
+	}]
+}

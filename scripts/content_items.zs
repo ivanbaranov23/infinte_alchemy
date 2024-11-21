@@ -2566,6 +2566,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("rune_autumn_cracked").register();
     VanillaFactory.createItem("rune_winter_cracked").register();
 
+    VanillaFactory.createItem("terra_base").register();
+
     {//enchantium
         var enchantium_chunk = VanillaFactory.createItem("enchantium_chunk");
         enchantium_chunk.register();
@@ -2711,6 +2713,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
 }
 {//endgame
+    VanillaFactory.createBlock("portal", <blockmaterial:rock>).register();
+
     VanillaFactory.createItem("luck_chip").register();
     VanillaFactory.createItem("luck_crystal_base").register();
     addItem("luck_crystal", "rare", 1);
@@ -2740,6 +2744,8 @@ VanillaFactory.createItem("research_glass_making").register();
 
 VanillaFactory.createItem("concrete_token").register();
 VanillaFactory.createItem("research_structure").register();
+
+VanillaFactory.createItem("research_weapons1").register();
 
 VanillaFactory.createItem("steel_hoe_research_token").register();
 VanillaFactory.createItem("research_plants1").register();
@@ -2775,6 +2781,7 @@ VanillaFactory.createItem("research_bacteria1").register();
 
 VanillaFactory.createItem("research_heat").register();
 
+VanillaFactory.createItem("research_terra").register();
 VanillaFactory.createItem("research_luck").register();
 
 VanillaFactory.createItem("research_enchanting").register();

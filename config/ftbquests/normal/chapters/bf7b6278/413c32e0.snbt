@@ -1,0 +1,25 @@
+{
+	x: 6.0d,
+	y: -5.0d,
+	text: [
+		"You can make it via smeltery"
+	],
+	dependencies: [
+		"bf78c792"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6c94f27e",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:duct_32"
+		}]
+	},
+	{
+		uid: "f91867cf",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:duct_32 1 2"
+		}]
+	}]
+}

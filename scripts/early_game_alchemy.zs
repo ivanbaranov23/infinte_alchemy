@@ -140,6 +140,8 @@ function addWeakEnhancerRecipe(inp as IItemStack, outp as IItemStack){
     ] );
 }
 
+mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:133>, <actuallyadditions:item_misc:12>, <liquid:tin>, 72, true);
+
 {//bilim uses
     recipes.addShapeless("ia_terra_spores", <roots:terra_spores> * 6, [
         <mysticalcreations:bilim_essence>,

@@ -1,0 +1,18 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	text: [
+		"Source of redstone and later glowstone"
+	],
+	dependencies: [
+		"563cb9ef"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e8f9307b",
+		type: "item",
+		items: [{
+			item: "minecraft:sand 1 1"
+		}]
+	}]
+}

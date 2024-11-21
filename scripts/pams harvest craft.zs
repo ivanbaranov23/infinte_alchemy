@@ -235,25 +235,21 @@ Centrifuge.addRecipe(
 
 {//rice
     recipes.remove(<actuallyadditions:item_misc:9>);
-    recipes.addShapeless("ia_rice_dough1", <actuallyadditions:item_misc:9> * 2, [
+    recipes.addShapeless("ia_rice_dough1", <actuallyadditions:item_misc:9> * 4, [
         <harvestcraft:mixingbowlitem>.reuse(), 
         <ore:cropRice>, <ore:cropRice>, 
         <ore:listAllwater>, <mekanism:salt>]
     );
-    recipes.addShapeless("ia_rice_dough2", <actuallyadditions:item_misc:9>, [
+    recipes.addShapeless("ia_rice_dough2", <actuallyadditions:item_misc:9> * 2, [
         <harvestcraft:mixingbowlitem>.reuse(), 
         <ore:cropRice>, <ore:cropRice>, <ore:cropRice>, 
         <ore:listAllwater>]
     );
-
-    //recipes.remove(<harvestcraft:ricecakeitem>);
-    //recipes.addShapeless("ia_rice_dough_2", <harvestcraft:ricecakeitem>, [
-    //    <actuallyadditions:item_misc:9>, <ore:listAllmilk>
-    //]);
-
-    //recipes.remove(<actuallyadditions:item_food:17>);
-    //InductionSmelter.addRecipe(<actuallyadditions:item_food:17> * 4, <harvestcraft:ricecakeitem> * 4, <contenttweaker:yeast>, 2200);
-    //InductionSmelter.addRecipe(<actuallyadditions:item_food:17> * 6, <harvestcraft:ricecakeitem> * 4, <contenttweaker:yeast_rich>, 2200);
+    recipes.addShaped("ia_rice_ball", <actuallyadditions:item_misc:12> * 4, [
+        [null, <actuallyadditions:item_misc:9>, null],
+        [<actuallyadditions:item_misc:9>, <liquid:water> * 1000, <actuallyadditions:item_misc:9>],
+        [null, <actuallyadditions:item_misc:9>, null]
+    ]);
 }
 
 {//dough uses

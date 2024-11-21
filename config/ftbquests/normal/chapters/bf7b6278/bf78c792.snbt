@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: -3.0d,
+	text: [
+		"You can make it via smeltery"
+	],
+	dependencies: [
+		"36ee4713"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2fdacb9b",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:glass 1 3"
+		}]
+	}]
+}

@@ -1382,14 +1382,16 @@ scripts.content_machines.addAssemblerRecipe(
 }
 {//mana chip
 	mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:rune_mana_chip>, 1000000 * 200, 1000000, <botania:rune:8>, 
+        <contenttweaker:rune_mana_chip>, 1000000 * 200, 1000000, <contenttweaker:rune_lightning>, 
         [
             <contenttweaker:slime_cell>,
 			<enderio:item_capacitor_melodic>,
 			<enderio:item_capacitor_melodic>,
 			<botania:manaresource:1>,
 			<botania:manaresource:1>,
-			<contenttweaker:soul_codex8>
+			<contenttweaker:soul_codex8>,
+			<botania:rune:8>,
+			<botania:rune:8>
         ]
     );
 }

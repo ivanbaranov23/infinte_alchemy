@@ -1,4 +1,4 @@
-ia.tooltip.research=Research material
+ia.tooltip.research=研究材料
 
 item.contenttweaker.fireclay.name=烈焰粘土
 item.contenttweaker.brick_dust.name=砖粉
@@ -1052,6 +1052,8 @@ tile.contenttweaker.potato_block5.name=五重压缩马铃薯块
 
 
 
+item.contenttweaker.eliamondin.name=弹性钻石
+item.contenttweaker.eliamondin_dust.name=弹性钻石粉
 
 
 item.contenttweaker.neutronium_mirror.name=简易中子反射板
@@ -1198,13 +1200,13 @@ item.contenttweaker.creeper_component.name=爆炸控制模块
 item.contenttweaker.explosion_device.name=爆炸控制装置
 item.contenttweaker.explosion_device_full.name=喷漆爆炸控制装置
 
-item.contenttweaker.soul_codex1.name=灵魂法典（空）
-item.contenttweaker.soul_codex2.name=灵魂法典（1/7）
-item.contenttweaker.soul_codex3.name=灵魂法典（2/7）
-item.contenttweaker.soul_codex4.name=灵魂法典（3/7）
-item.contenttweaker.soul_codex5.name=灵魂法典（4/7）
-item.contenttweaker.soul_codex6.name=灵魂法典（5/7）
-item.contenttweaker.soul_codex7.name=灵魂法典（6/7）
+item.contenttweaker.soul_codex1.name=灵魂法典(空)
+item.contenttweaker.soul_codex2.name=灵魂法典(1/7)
+item.contenttweaker.soul_codex3.name=灵魂法典(2/7)
+item.contenttweaker.soul_codex4.name=灵魂法典(3/7)
+item.contenttweaker.soul_codex5.name=灵魂法典(4/7)
+item.contenttweaker.soul_codex6.name=灵魂法典(5/7)
+item.contenttweaker.soul_codex7.name=灵魂法典(6/7)
 item.contenttweaker.soul_codex8.name=灵魂法典
 
 item.contenttweaker.super_vibrant_plate.name=超级脉冲合金板
@@ -1216,162 +1218,162 @@ item.contenttweaker.sewing_unit.name=缝纫装置
 item.contenttweaker.lens_in.name=会聚透镜
 item.contenttweaker.lens_out.name=发散透镜
 
-item.contenttweaker.tank.name=Tank
-item.contenttweaker.tank2.name=Tank Array
-item.contenttweaker.tank_oxygen.name=Tank with Oxygen
-item.contenttweaker.tank_nitrogen.name=Tank with Nitrogen
-item.contenttweaker.tank_nitrogen_dense.name=Tank with Compressed Nitrogen
+item.contenttweaker.tank.name=储罐
+item.contenttweaker.tank2.name=大堆储罐
+item.contenttweaker.tank_oxygen.name=含氧储罐
+item.contenttweaker.tank_nitrogen.name=含氮储罐
+item.contenttweaker.tank_nitrogen_dense.name=含氮致密储罐
 
-item.contenttweaker.crucible.name=High Temprature Crucible
+item.contenttweaker.crucible.name=高温坩埚
 
-item.contenttweaker.dark_shard.name=Tungsteny Dark Shard
-fluid.blackish_slurp=Dark Grey Slurp
-fluid.black_slurp=Liquid Black Slurp
-gas.black_slurp=Black Slurp Gas
+item.contenttweaker.dark_shard.name=钨深色碎片
+fluid.blackish_slurp=深灰色浆液
+fluid.black_slurp=液态黑色浆液
+gas.black_slurp=气态黑色浆液
 
-item.contenttweaker.pump.name=Fluid Pump
-item.contenttweaker.cooling_system.name=Cooling System
-item.contenttweaker.pressure_cutter.name=Fluid Pressure Cutter
-item.contenttweaker.laser.name=Laser Engraving Unit
+item.contenttweaker.pump.name=流体泵
+item.contenttweaker.cooling_system.name=冷却系统
+item.contenttweaker.pressure_cutter.name=液压切割机
+item.contenttweaker.laser.name=激光雕刻单元
 
-item.contenttweaker.rtg.name=Radioisotope Thermoelectric Generator (RTG)
-item.contenttweaker.rocket_engine.name=Rocket Engine
-item.contenttweaker.pulse_generator.name=Pulse Generator
+item.contenttweaker.rtg.name=放射性同位素热电发电机 (RTG)
+item.contenttweaker.rocket_engine.name=火箭引擎
+item.contenttweaker.pulse_generator.name=脉冲发生器
 
-item.contenttweaker.signal_reciever.name=Signal Communicator
+item.contenttweaker.signal_reciever.name=信号通信器
 
-tile.contenttweaker.stomper.name=Stomper
+tile.contenttweaker.stomper.name=重踏机
 
-item.contenttweaker.satellite_plating_base1.name=Secure Plating Assembly
-item.contenttweaker.satellite_plating_base2.name=Secure Plating
-item.contenttweaker.satellite_plating.name=Satellite Plating
+item.contenttweaker.satellite_plating_base1.name=牢固金属板组件
+item.contenttweaker.satellite_plating_base2.name=牢固金属板
+item.contenttweaker.satellite_plating.name=卫星防护板
 
-item.contenttweaker.satellite1.name=Basic Satellite
+item.contenttweaker.satellite1.name=基础人造卫星
         VanillaFactory.createItem("satellite2").register();
         VanillaFactory.createItem("satellite3").register();
 
-item.contenttweaker.satellite_chip.name=Satellite Memory Chip
-item.contenttweaker.satellite_computer.name=Satellite Controller Computer
+item.contenttweaker.satellite_chip.name=卫星存储芯片
+item.contenttweaker.satellite_computer.name=卫星控制计算机
 
-item.contenttweaker.drone_base.name=Drone Base
-item.contenttweaker.drone.name=Mining Drone
+item.contenttweaker.drone_base.name=无人机基底
+item.contenttweaker.drone.name=采矿无人机
 
-item.contenttweaker.space_navigator.name=Space Navigator
+item.contenttweaker.space_navigator.name=空间导航
 
-item.contenttweaker.entangled_particles.name=Entangled Particles
+item.contenttweaker.entangled_particles.name=纠缠粒子
 
 
-item.contenttweaker.glass_cutter_research_token.name=Glass Cutter Research Token
-item.contenttweaker.concrete_token.name=Concrete Research Token
-item.contenttweaker.steel_hoe_research_token.name=Steel Hoe Research Token
-item.contenttweaker.blueslime_bucket.name=Blue Slime Research Token
-item.contenttweaker.purpleslime_bucket.name=Purple Slime Research Token
+item.contenttweaker.glass_cutter_research_token.name=玻璃切割刀研究令牌
+item.contenttweaker.concrete_token.name=混凝土研究令牌
+item.contenttweaker.steel_hoe_research_token.name=钢锄研究令牌
+item.contenttweaker.blueslime_bucket.name=蓝色史莱姆研究令牌
+item.contenttweaker.purpleslime_bucket.name=紫色史莱姆研究令牌
 
-item.contenttweaker.grass_bucket.name=Grassoline Research Token
+item.contenttweaker.grass_bucket.name=藿香碱研究令牌
 
-item.contenttweaker.glow_bucket.name=Glowstone Research Token
+item.contenttweaker.glow_bucket.name=充能荧石研究令牌
 
-item.contenttweaker.demon_bucket.name=Demon Metal Research Token
+item.contenttweaker.demon_bucket.name=恶魔金属研究令牌
 
-item.contenttweaker.research_glass_making.name=How To Make Glass
-item.contenttweaker.research_structure.name=How To Structure Heavy Machinery
-item.contenttweaker.research_sieving.name=Advanced Sieving Options
-item.contenttweaker.research_fluids.name=Advanced Fluid Handling
-item.contenttweaker.research_flight1.name=How To Fly
-item.contenttweaker.research_plants1.name=How To Grow Exotic Plants
-item.contenttweaker.research_plants2.name=How To Grow Exotic Trees
-item.contenttweaker.research_plants3.name=How To Grow Exotic Vines
-item.contenttweaker.research_chemistry1.name=How To Refine Waste
-item.contenttweaker.research_chemistry2.name=How To Polymerize
-item.contenttweaker.research_chemistry3.name=How To Synthesize Alien Materials
+item.contenttweaker.research_glass_making.name=《如何制作玻璃》
+item.contenttweaker.research_structure.name=《如何建造重型机械》
+item.contenttweaker.research_sieving.name=《高级筛网选项》
+item.contenttweaker.research_fluids.name=《高级流体处理》
+item.contenttweaker.research_flight1.name=《如何飞行》
+item.contenttweaker.research_plants1.name=《如何种植奇异植物》
+item.contenttweaker.research_plants2.name=《如何种植奇异树木》
+item.contenttweaker.research_plants3.name=《如何种植奇异藤蔓》
+item.contenttweaker.research_chemistry1.name=《如何提炼废料》
+item.contenttweaker.research_chemistry2.name=《如何聚合物质》
+item.contenttweaker.research_chemistry3.name=《如何合成特殊物质》
 
-item.contenttweaker.research_circuit1.name=How To Make Circuitry From Strange Materials
+item.contenttweaker.research_circuit1.name=《如何用奇异的材料制作电路板》
 
-item.contenttweaker.research_magic2.name=How To Bleed Efficiently
+item.contenttweaker.research_magic2.name=《如何高效产出血液》
 
-item.contenttweaker.research_bacteria1.name=How To Grow Bacteria
+item.contenttweaker.research_bacteria1.name=《如何培养细菌》
 
-item.contenttweaker.research_heat.name=How To Transfer Heat
+item.contenttweaker.research_heat.name=《如何传递热量》
 
         VanillaFactory.createItem("research_luck").register();
 
 
-item.contenttweaker.uu_base1.name=UU Metal Base 1
-item.contenttweaker.uu_base2.name=UU Metal Base 2
-item.contenttweaker.uu_base3.name=UU Metal Base 3
+item.contenttweaker.uu_base1.name=UU金属锭基底1
+item.contenttweaker.uu_base2.name=UU金属锭基底2
+item.contenttweaker.uu_base3.name=UU金属锭基底3
 
 
 
-item.contenttweaker.plant_sample.name=Plant Sample
+item.contenttweaker.plant_sample.name=植物样品
 
-item.contenttweaker.activated_biopower.name=Activated Biopower
-item.contenttweaker.ashen_biocoal.name=Ashen Biocoal
-item.contenttweaker.biocoal.name=Biocoal
-item.contenttweaker.biomix.name=Biomix
-item.contenttweaker.bioslag.name=Bioslag
-item.contenttweaker.coaled_bioash.name=Coaled Bioash
-item.contenttweaker.coaled_biocoal.name=Coaled Biocoal
-item.contenttweaker.empowered_biospice.name=Empowered Biospice
-item.contenttweaker.enmaned_biomass.name=Enmaned Biomass
-item.contenttweaker.enriched_biocoal.name=Enriched Biocoal
-item.contenttweaker.enriched_bioslag.name=Enriched Bioslag
-item.contenttweaker.enspiced_spicy_bioblend.name=Enspiced Spicy Bioblend
-item.contenttweaker.spicy_bioblend.name=Spicy Bioblend
-item.contenttweaker.spicy_enriched_bioblend.name=Spicy Enriched Bioblend
-item.contenttweaker.whitened_biomass.name=Bioash
+item.contenttweaker.activated_biopower.name=活化生物能源
+item.contenttweaker.ashen_biocoal.name=灰白生物煤
+item.contenttweaker.biocoal.name=生物煤
+item.contenttweaker.biomix.name=生物混合物
+item.contenttweaker.bioslag.name=生物炉渣
+item.contenttweaker.coaled_bioash.name=煤化生物灰
+item.contenttweaker.coaled_biocoal.name=煤化生物煤
+item.contenttweaker.empowered_biospice.name=充能生物香料
+item.contenttweaker.enmaned_biomass.name=可再生生物质
+item.contenttweaker.enriched_biocoal.name=富集生物煤
+item.contenttweaker.enriched_bioslag.name=浓缩生物炉渣
+item.contenttweaker.enspiced_spicy_bioblend.name=五香辣味生物混合物
+item.contenttweaker.spicy_bioblend.name=辣味生物混合物
+item.contenttweaker.spicy_enriched_bioblend.name=辣味富集生物混合物
+item.contenttweaker.whitened_biomass.name=生物灰
 
 
-item.contenttweaker.ldpe.name=LDPE Pellet
+item.contenttweaker.ldpe.name=低密度聚乙烯丸
 
-item.contenttweaker.food_pellet.name=Food Pellet
+item.contenttweaker.food_pellet.name=食物团
 
-fluid.grape_juice=Grape Juice
-fluid.vinegar=Vinegar
-fluid.cheese=Cheese
+fluid.grape_juice=葡萄汁
+fluid.vinegar=醋
+fluid.cheese=奶酪
 
-item.contenttweaker.yeast.name=Yeast
-item.contenttweaker.yeast_rich.name=High Quality Yeast
-fluid.sugary_solution=Sugary Solution
-fluid.yeast=Yeast Culture
-fluid.yeast_rich=High Quality Yeast Culture
+item.contenttweaker.yeast.name=酵母
+item.contenttweaker.yeast_rich.name=高质量酵母
+fluid.sugary_solution=含糖溶液
+fluid.yeast=酵母培养物
+fluid.yeast_rich=高质量酵母培养物
 
-fluid.colagen_solution=Colagen Solution
-fluid.impure_colagen=Impure Colagen
-fluid.salty_colagen=Salty Colagen
-fluid.colagen=Colagen
-item.contenttweaker.gelatin_noodle.name=Gelatin Noodles
-item.contenttweaker.gelatin.name=Gelatin
+fluid.colagen_solution=胶原蛋白溶液
+fluid.impure_colagen=低纯度胶原蛋白
+fluid.salty_colagen=咸胶原蛋白
+fluid.colagen=胶原蛋白
+item.contenttweaker.gelatin_noodle.name=明胶面条
+item.contenttweaker.gelatin.name=明胶
 
-item.contenttweaker.carrot_pulp.name=Carrot Pulp
-fluid.carotene_solution=Impure Carotene Solution
-item.contenttweaker.impure_carotene.name=Impure Carotene
-item.contenttweaker.carotene.name=Carotene
-fluid.carotene=Carotene
-gas.retinol=Retinol Gas
-item.contenttweaker.vitamin_a.name=Vitamin A
+item.contenttweaker.carrot_pulp.name=胡萝卜果肉
+fluid.carotene_solution=低纯胡萝卜素溶液
+item.contenttweaker.impure_carotene.name=低纯胡萝卜素
+item.contenttweaker.carotene.name=胡萝卜素
+fluid.carotene=胡萝卜素
+gas.retinol=视黄醇气体
+item.contenttweaker.vitamin_a.name=维他命A
 
-fluid.bacteria_broth=Bacteria Broth
-fluid.fermented_bacteria_broth=Fermented Bacteria Broth
-fluid.bacteria_waste=Bacteria Waste
-fluid.cobalamin=Cobalamin
-item.contenttweaker.vitamin_b.name=Vitamin B
+fluid.bacteria_broth=细菌培养液
+fluid.fermented_bacteria_broth=发酵细菌培养液
+fluid.bacteria_waste=细菌废料
+fluid.cobalamin=钴胺素
+item.contenttweaker.vitamin_b.name=维他命B
 
-item.contenttweaker.bacteria.name=Bacteria
-item.contenttweaker.ender_bacteria.name=Ender Bacteria
-fluid.ender_bacteria_broth=Ender Bacteria Broth
+item.contenttweaker.bacteria.name=细菌
+item.contenttweaker.ender_bacteria.name=末影细菌
+fluid.ender_bacteria_broth=末影细菌培养液
 
-item.contenttweaker.starch.name=Starch
-item.contenttweaker.glucose.name=Glucose
-fluid.glucose=Glucose
-fluid.sorbitol=Sorbitol
-fluid.sorbose=Sorbose
-fluid.gulonic_acid=2-Keto-L-Gulonic Acid
-item.contenttweaker.vitamin_c.name=Vitamin C
+item.contenttweaker.starch.name=淀粉
+item.contenttweaker.glucose.name=葡萄糖
+fluid.glucose=葡萄糖
+fluid.sorbitol=山梨醇
+fluid.sorbose=山梨糖
+fluid.gulonic_acid=2-酮基-L-古龙酸
+item.contenttweaker.vitamin_c.name=维他命C
 
-item.contenttweaker.vitamins.name=Vitamins
+item.contenttweaker.vitamins.name=维他命
 
-item.contenttweaker.enchantium_chunk.name=Enchantium Chunk
-fluid.enchantium=Enchantium
+item.contenttweaker.enchantium_chunk.name=附魔精华碎块
+fluid.enchantium=附魔精华
 
 item.contenttweaker.nacn.name=Sodium Cyanide
 item.contenttweaker.superglue.name=Super Glue
@@ -1913,3 +1915,16 @@ item.contenttweaker.ice_shard.name=Icestone Crystal
 tile.contenttweaker.ice_shard_block.name=Block of Icestone Crystals
 
 fluid.cold_liquid=Cryotheum Coolant
+
+item.contenttweaker.gemmed_biomass.name=Biocell with Gem Refining Biomass
+
+item.contenttweaker.ra_burner.name=Ra Burner
+
+item.contenttweaker.nether_pest.name=Nether Pest
+item.contenttweaker.nitrall.name=Nitrall
+item.contenttweaker.nitrall_feed.name=Nitrall Feed
+
+item.contenttweaker.alien_bacteria.name=Alien Bacteria
+
+tile.vial_processor.name=Vial Processor
+requious.jei.recipe.vial_processor=Vial Processor

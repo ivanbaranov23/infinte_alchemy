@@ -32,7 +32,7 @@ import mods.requious.AssemblyRecipe;
     print(map.asString());
 
 
-    recipes.addShapeless("Supo", <minecraft:golden_sword>.withTag(map), [<minecraft:iron_sword>, <minecraft:golden_sword>]);
+    //recipes.addShapeless("Supo", <minecraft:golden_sword>.withTag(map), [<minecraft:iron_sword>, <minecraft:golden_sword>]);
 }
 
 static counter as int = 0;

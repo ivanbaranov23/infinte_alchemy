@@ -2,7 +2,7 @@
 	x: 10.0d,
 	y: 6.0d,
 	text: [
-		""
+		"You can make it via smeltery"
 	],
 	dependencies: [
 		"a973cd16"

@@ -1,3 +1,5 @@
+import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import mods.botania.ManaInfusion;
 
 import mods.botania.RuneAltar;
@@ -12,6 +14,19 @@ import mods.botania.ElvenTrade;
 import mods.botania.Apothecary;
 
 import mods.modularmachinery.RecipeBuilder;
+
+
+function addManaHint(out as IItemStack, cat as IIngredient[], mana as int){
+
+    scripts.jei.addJEIhint(
+        [
+            <botania:pool>.withDisplayName("" ~ (mana as float / 1000000.0) ~ " pools")
+        ], [], cat, [out]
+    );
+}
+val pool as int = 1000000;
+
+
 
 {//floral fert
     recipes.remove(<botania:fertilizer>);
@@ -56,7 +71,7 @@ import mods.modularmachinery.RecipeBuilder;
 mods.thermalexpansion.Transposer.addFillRecipe(
     <botania:manaresource:15>, 
     <minecraft:glass_bottle>, 
-    <liquid:end_air> * 250, 1000
+    <liquid:end_air> * 50, 1000
 );
 
 
@@ -651,6 +666,30 @@ for rune_id in 0 to 16{
         <liquid:endacid> * 2000, 
         8000
     );
+
+    {//glass
+        RuneAltar.addRecipe(<contenttweaker:rune_glass>, [
+            <contenttweaker:improved_rune_base>,
+            <contenttweaker:reagent_glass>,
+            <botania:elfglass>,
+            <contenttweaker:glass_star>,
+            <contenttweaker:neutronium_mirror>,
+            <bloodmagic:demon_extras:14>,
+            <ironchest:iron_chest:5>,
+            <botania:rune:8>
+        ], 100000);
+
+        RuneAltar.addRecipe(<contenttweaker:rune_glass> * 3, [
+            <contenttweaker:advanced_rune_base>,
+            <contenttweaker:reagent_glass>,
+            <botania:elfglass>,
+            <contenttweaker:glass_star>,
+            <contenttweaker:neutronium_mirror>,
+            <bloodmagic:demon_extras:14>,
+            <ironchest:iron_chest:5>,
+            <botania:rune:8>
+        ], 200000);
+    }
 }
 {//t 2
     {//summer
@@ -885,32 +924,69 @@ for rune_id in 0 to 16{
         [<botania:managlass>, <botania:managlass>, <contenttweaker:high_heat_glass>, <thermalfoundation:glass:8>, <ore:elfPayCheck>]
     );
 }
-//terra
-recipes.remove(<botania:terraplate>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <botania:terraplate>, [
-	[null, null, null, null, null], 
-	[<minecraft:lapis_block>, <minecraft:lapis_block>, <contenttweaker:poisotheum>, <minecraft:lapis_block>, <minecraft:lapis_block>], 
-	[<moreplates:manasteel_gear>, <botania:rune:6>, <extendedcrafting:singularity_custom:23>, <botania:rune:5>, <moreplates:manasteel_gear>], 
-	[<moreplates:draconium_gear>, <contenttweaker:slate_7>, <contenttweaker:mana_frame>, <contenttweaker:slate_7>, <moreplates:draconium_gear>], 
-	[<moreplates:manasteel_gear>, <botania:rune:4>, <botania:rune:8>, <botania:rune:7>, <moreplates:manasteel_gear>]
-]);
-recipes.addShaped("ia_terra_coral", <contenttweaker:terra_coral>, [
-    [<botania:manaresource:4>, <contenttweaker:life>, <botania:manaresource:4>], 
-    [<botania:manaresource:4>, <contenttweaker:coral_dust>, <botania:manaresource:4>], 
-    [<botania:manaresource:4>, <contenttweaker:life>, <botania:manaresource:4>]
-]);
-//gaia
-recipes.remove(<botania:manaresource:14>);
-mods.extendedcrafting.TableCrafting.addShaped(0, <botania:manaresource:14>, [
-	[null, null, null, <botania:rune:9>, null, null, null], 
-	[null, <botania:rune:11>, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>, <botania:rune:10>, null], 
-	[null, <thermalfoundation:material:1028>, <botania:manaresource:5>, <botania:manaresource:4>, <botania:manaresource:5>, <thermalfoundation:material:1028>, null], 
-	[null, <thermalfoundation:material:1028>, <botania:manaresource:4>, <botania:manaresource:4>, <botania:manaresource:4>, <thermalfoundation:material:1028>, null], 
-	[<botania:rune:13>, <thermalfoundation:material:1028>, <botania:manaresource:5>, <botania:manaresource:4>, <botania:manaresource:5>, <thermalfoundation:material:1028>, <botania:rune:12>], 
-	[null, null, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>, <thermalfoundation:material:1028>, null, null], 
-	[null, null, <botania:rune:14>, null, <botania:rune:15>, null, null]
-]);
+{//terra
+    recipes.remove(<botania:terraplate>);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <botania:terraplate>, [
+        [null, null, null, null, null], 
+        [<minecraft:lapis_block>, <minecraft:lapis_block>, <contenttweaker:poisotheum>, <minecraft:lapis_block>, <minecraft:lapis_block>], 
+        [<moreplates:manasteel_gear>, <botania:rune:6>, <extendedcrafting:singularity_custom:23>, <botania:rune:5>, <moreplates:manasteel_gear>], 
+        [<moreplates:draconium_gear>, <contenttweaker:slate_7>, <contenttweaker:mana_frame>, <contenttweaker:slate_7>, <moreplates:draconium_gear>], 
+        [<moreplates:manasteel_gear>, <botania:rune:4>, <botania:rune:8>, <botania:rune:7>, <moreplates:manasteel_gear>]
+    ]);
+    recipes.addShaped("ia_terra_coral", <contenttweaker:terra_coral>, [
+        [<botania:manaresource:4>, <contenttweaker:life>, <botania:manaresource:4>], 
+        [<botania:manaresource:4>, <contenttweaker:coral_dust>, <botania:manaresource:4>], 
+        [<botania:manaresource:4>, <contenttweaker:life>, <botania:manaresource:4>]
+    ]);
+    addManaHint(<botania:manaresource:4>, [<botania:terraplate>], 2 * pool);
 
+    mods.botaniatweaks.Agglomeration.addRecipe(
+        <botania:manaresource:4> * 2,
+        [
+            <botania:manaresource>,
+            <botania:manaresource:1>,
+            <botania:manaresource:2>,
+            <contenttweaker:terra_coral>,
+            <contenttweaker:terra_coral>
+        ],
+        500000,
+        0xf6faab,
+        0x7dd2e0,
+        <contenttweaker:entwood_block>, <contenttweaker:entwood_block>, <actuallyadditions:block_crystal:1>,
+        null, null, <minecraft:lapis_block>
+    );
+    addManaHint(<botania:manaresource:4>, [<botania:terraplate>, <contenttweaker:entwood_block>], 500000);
+
+
+    //nugget
+
+}
+{//gaia
+    recipes.remove(<botania:manaresource:14>);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <botania:manaresource:14>, [
+        [null, null, null, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>], 
+        [null, null, <contenttweaker:mekanical_core>, <botania:manaresource:5>, <moreplates:terrasteel_plate>, <moreplates:terrasteel_gear>, <contenttweaker:mekanical_core>], 
+        [null, <contenttweaker:mekanical_core>, <moreplates:terrasteel_plate>, <botania:rune:10>, <botania:rune:12>, <moreplates:terrasteel_plate>, <contenttweaker:mekanical_core>], 
+        [<contenttweaker:mekanical_core>, <botania:manaresource:5>, <botania:rune:13>, <botania:rune:9>, <botania:rune:11>, <botania:manaresource:5>, <contenttweaker:mekanical_core>], 
+        [<contenttweaker:mekanical_core>, <moreplates:terrasteel_plate>, <botania:rune:15>, <botania:rune:14>, <moreplates:terrasteel_plate>, <contenttweaker:mekanical_core>, null], 
+        [<contenttweaker:mekanical_core>, <moreplates:terrasteel_gear>, <moreplates:terrasteel_plate>, <botania:manaresource:5>, <contenttweaker:mekanical_core>, null, null], 
+        [<contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, null, null, null]
+    ]);
+
+    RuneAltar.addRecipe(<botania:manaresource:5> * 2, [
+        <botania:manaresource:5>,
+        <botania:quartz:1>,
+        <botania:manaresource:4>,
+        <contenttweaker:gem_steel_ingot> 
+    ], 3 * pool);
+    RuneAltar.addRecipe(<botania:manaresource:5> * 2, [
+        <botania:manaresource:5>,
+        <botania:quartz:1>,
+        <botania:manaresource:4>,
+        <contenttweaker:wormholium>
+    ], 3 * pool);
+    addManaHint(<botania:manaresource:5>, [<botania:pool>], 3 * pool);
+}
 
 mods.extendedcrafting.CombinationCrafting.addRecipe(
     <contenttweaker:mana_star>, 4096 * 200, 4096, <contenttweaker:glass_star>, 

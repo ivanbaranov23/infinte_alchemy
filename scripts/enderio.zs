@@ -32,9 +32,9 @@ recipes.addShaped("ia_machine_frame7", <enderio:item_material:53>, [
 //frame 8
 recipes.remove(<enderio:item_material:66>);
 recipes.addShaped("ia_machine_frame8", <enderio:item_material:66>, [
-	[<moreplates:end_steel_plate>, <moreplates:vivid_alloy_plate>, <moreplates:end_steel_plate>], 
+	[<moreplates:end_steel_plate>, <moreplates:vivid_alloy_gear>, <moreplates:end_steel_plate>], 
 	[<enderio:item_material:56>, <enderio:item_material:53>, <enderio:item_material:56>], 
-	[<moreplates:end_steel_plate>, <moreplates:vivid_alloy_plate>, <moreplates:end_steel_plate>]
+	[<moreplates:end_steel_plate>, <moreplates:vivid_alloy_gear>, <moreplates:end_steel_plate>]
 ]);
 
 //frame 9

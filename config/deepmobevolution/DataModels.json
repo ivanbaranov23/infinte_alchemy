@@ -185,11 +185,10 @@
     }
   },
 
-  {
-    "id": "gaiaguardian",
+  {"id": "gaiaguardian",
     "displayName": "Guardian of Gaia",
     "livingMatter": "overworldian",
-    "simulationRFCost": 256000,
+    "simulationRFCost": 25000000,
     "craftingIngredients": [
       "botania:manaresource,1,5"
     ],
@@ -198,14 +197,19 @@
     ],
     "lootItems": [
       "botania:manaresource,2,5",
-      "contenttweaker:rune_water_cracked,6",
-      "contenttweaker:rune_fire_cracked,6",
-      "contenttweaker:rune_earth_cracked,6",
-      "contenttweaker:rune_air_cracked,6",
+      "contenttweaker:rune_water_cracked,8",
+      "contenttweaker:rune_fire_cracked,8",
+      "contenttweaker:rune_earth_cracked,8",
+      "contenttweaker:rune_air_cracked,8",
   
-      "contenttweaker:rune_mana_cracked,3",
-      "contenttweaker:rune_acid_cracked,3",
-      "contenttweaker:rune_lightning_cracked,3"
+      "contenttweaker:rune_mana_cracked,5",
+      "contenttweaker:rune_acid_cracked,5",
+      "contenttweaker:rune_lightning_cracked,5",
+
+      "contenttweaker:rune_winter_cracked,3",
+      "contenttweaker:rune_spring_cracked,3",
+      "contenttweaker:rune_summer_cracked,3",
+      "contenttweaker:rune_autumn_cracked,3"
     ],
     "deepLearnerDisplay": {
       "hearts": 160,
