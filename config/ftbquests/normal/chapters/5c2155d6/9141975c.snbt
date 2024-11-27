@@ -1,0 +1,26 @@
+{
+	icon: "erebus:flower_seed 1 14",
+	x: 5.0d,
+	y: 0.0d,
+	text: [
+		"Find a giant flwoer, break its stigma to get giant flower seeds. You can grow them and with some luck you'll get a flower with a rainbow stigma."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "de063a72",
+		type: "item",
+		items: [{
+			item: "erebus:flower_seed 1 14"
+		}]
+	},
+	{
+		uid: "a589e09b",
+		type: "item",
+		items: [{
+			item: "erebus:giant_flower_stigma 1 14"
+		}]
+	}]
+}

@@ -49,15 +49,15 @@ import mods.modularmachinery.RecipeBuilder;
     );
     
     mods.bloodmagic.AlchemyTable.addRecipe(
-        <contenttweaker:fertilizer7> * 8, 
-        [<contenttweaker:fertilizer6>, <botania:manaresource:18>, <bloodmagic:component:5>, <bloodmagic:component:5>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
-        1000, 20, 4
-    );
-    mods.bloodmagic.AlchemyTable.addRecipe(
         <contenttweaker:fertilizer7> * 4, 
+        [<contenttweaker:fertilizer6>, <botania:manaresource:18>, <bloodmagic:component:5>, <bloodmagic:component:5>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
+        10000, 20, 4
+    );
+    /*mods.bloodmagic.AlchemyTable.addRecipe(
+        <contenttweaker:fertilizer7>, 
         [<contenttweaker:fertilizer6>, <contenttweaker:entwood_dust>, <bloodmagic:component:5>, <bloodmagic:component:5>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
         1000, 20, 4
-    );
+    );*/
 }
 
 //todo super fertilizer

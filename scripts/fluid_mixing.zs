@@ -1,18 +1,15 @@
 #loader crafttweaker reloadable
 import mods.fluidintetweaker.FITweaker;
 
-FITweaker.addRecipe(<liquid:blueslime>, false, <liquid:creosote>, <quark:jasper>.asBlock());
-FITweaker.addRecipe(<liquid:creosote>, false, <liquid:blueslime>, <quark:jasper>.asBlock());
+FITweaker.addRecipe(<liquid:creosote>, false, <liquid:andesite>, <blockstate:quark:jasper:variant=stone_jasper>);
 
 
-FITweaker.addRecipe(<liquid:blueslime>, false, <liquid:andesite>, <minecraft:stone:5>.asBlock());
-FITweaker.addRecipe(<liquid:andesite>, false, <liquid:blueslime>, <minecraft:stone:5>.asBlock());
+FITweaker.addRecipe(<liquid:andesite>, false, <liquid:blueslime>, <blockstate:minecraft:stone:variant=andesite>);
 
-FITweaker.addRecipe(<liquid:blueslime>, false, <liquid:lava>, <contenttweaker:burned_slimedirt>.asBlock());
-FITweaker.addRecipe(<liquid:lava>, false, <liquid:blueslime>, <contenttweaker:burned_slimedirt>.asBlock());
+FITweaker.addRecipe(<liquid:lava>, false, <liquid:blueslime>, <blockstate:contenttweaker:burned_slimedirt>);
 
-FITweaker.addRecipe(<liquid:organic_green>, false, <liquid:andesite>, <minecraft:mossy_cobblestone>.asBlock());
-FITweaker.addRecipe(<liquid:andesite>, false, <liquid:organic_green>, <minecraft:mossy_cobblestone>.asBlock());
+FITweaker.addRecipe(<liquid:organic_green>, false, <liquid:andesite>, <blockstate:minecraft:mossy_cobblestone>);
 
-FITweaker.addRecipe(<liquid:ash_solution>, false, <liquid:andesite>, <quark:limestone>.asBlock());
-FITweaker.addRecipe(<liquid:andesite>, false, <liquid:ash_solution>, <quark:limestone>.asBlock());
+FITweaker.addRecipe(<liquid:ender_blood>, false, <liquid:andesite>, <blockstate:minecraft:end_stone>);
+
+FITweaker.addRecipe(<liquid:ash_solution>, false, <liquid:andesite>, <blockstate:quark:limestone:variant=stone_limestone>);

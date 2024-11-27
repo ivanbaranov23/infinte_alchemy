@@ -258,7 +258,7 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
 
 {//staffwood
     Mortar.addRecipe("glue", 
-        <contenttweaker:organic_glue>, 
+        <contenttweaker:organic_glue> * 3, 
         [<harvestcraft:doughitem> | <moreplates:knightslime_plate> | <contenttweaker:creosolon>, <erebus:materials:40>, <erebus:materials:40>, <mekanism:salt>, <harvestcraft:snailcookeditem>]
     );
     Fey.addRecipe("staffwood",

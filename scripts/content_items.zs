@@ -2484,6 +2484,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     mana_frame.register();
 
     VanillaFactory.createBlock("manapearl_block", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("terracrux", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("terrastem", <blockmaterial:rock>).register();
 
     {
         var lazy_soup = VanillaFactory.createItemFood("lazy_soup", 8);
@@ -2567,6 +2569,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("rune_winter_cracked").register();
 
     VanillaFactory.createItem("terra_base").register();
+    VanillaFactory.createItem("terra_base_dust").register();
+    VanillaFactory.createBlock("terrasteel_ore", <blockmaterial:rock>).register();
+
+    VanillaFactory.createItem("impure_mana_dust").register();
+    VanillaFactory.createItem("terragem").register();
 
     {//enchantium
         var enchantium_chunk = VanillaFactory.createItem("enchantium_chunk");
@@ -2582,6 +2589,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     {//chitigic
         VanillaFactory.createItem("chitigic").register();
+        VanillaFactory.createItem("chitigicum").register();
         VanillaFactory.createItem("chitigic_food1").register();
         VanillaFactory.createItem("chitigic_food2").register();
         VanillaFactory.createItem("chitigic_food3").register();
@@ -2636,7 +2644,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         VanillaFactory.createItem("space_paper_base").register();
         VanillaFactory.createItem("space_paper").register();
         VanillaFactory.createItem("space_data").register();
-        VanillaFactory.createItem("engraved_space_data").register();
+        //VanillaFactory.createItem("engraved_space_data").register();
     }
     VanillaFactory.createItem("c14_dust").register();
     VanillaFactory.createItem("c14_gem").register();
@@ -2688,6 +2696,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("anti_proton").register();
     VanillaFactory.createItem("neutron").register();
     VanillaFactory.createItem("deathon").register();
+    VanillaFactory.createItem("manathon").register();
 
     VanillaFactory.createItem("positronium").register();
 

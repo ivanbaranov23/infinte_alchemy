@@ -1,0 +1,30 @@
+{
+	title: "What is all that garbage?",
+	x: 13.0d,
+	y: 0.0d,
+	text: [
+		"Bugs eat 3 things: plant, meat and slime. One of them has to be liquid. ",
+		"Low tier recipes need low tier food, higher tiers need 4 times the previous + a bit of better food.",
+		"",
+		"Reipe tiers and their food tiers:",
+		"1 - t1",
+		"2 - t1 * 4, t2",
+		"3 - t1 * 16, t2 * 4, t3",
+		"4 - t1 * 64, t2 * 16, t3 * 4, t4",
+		"..."
+	],
+	dependencies: [
+		"3369d13a"
+	],
+	tasks: [{
+		uid: "2647f94d",
+		type: "checkmark",
+		title: "garbage",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "bugs"
+			}
+		}
+	}]
+}

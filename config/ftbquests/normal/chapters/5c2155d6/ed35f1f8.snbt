@@ -1,8 +1,8 @@
 {
 	title: "Research vines",
 	icon: "contenttweaker:research_plants3",
-	x: 4.0d,
-	y: -5.0d,
+	x: 5.0d,
+	y: -6.0d,
 	shape: "gear",
 	tasks: [{
 		uid: "4374d3be",

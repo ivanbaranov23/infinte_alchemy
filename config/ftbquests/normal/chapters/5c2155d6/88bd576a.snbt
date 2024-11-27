@@ -1,7 +1,7 @@
 {
 	icon: "contenttweaker:malachite_polycrystal",
 	x: 4.0d,
-	y: -2.0d,
+	y: -1.0d,
 	text: [
 		"Basically copper. Can be found in stalagmites along with jade and diamonds."
 	],

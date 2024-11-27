@@ -284,6 +284,20 @@ addAdvancedResearchRecipe("Singularity", <contenttweaker:singularity_dust> * 16,
     <extendedcrafting:singularity:49> * 8,
     <extendedcrafting:singularity_custom:21> * 3
 ], 1000000, 20 * 30);
+addAdvancedResearchRecipe("Terrasteel", <botania:manaresource:4> * 3, <contenttweaker:research_terra>, [
+    <extendedcrafting:singularity_custom:11> * 16,
+    <botania:quartz:5> * 16,
+    <contenttweaker:fertilizer7> * 32,
+    <contenttweaker:terracrux>,
+    <contenttweaker:terra_base> * 4,
+    <botania:storage> * 32,
+    <botania:storage:3> * 32,
+    <contenttweaker:manapearl_block> * 32,
+    <extendedcrafting:singularity_custom:51>,
+    <modularcontroller:mana_bifuser_controller>,
+    <botania:quartz:1> * 24,
+    <extendedcrafting:singularity_custom:50>
+], 1000 * 1000, 20 * 45);
 
 addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,
     [

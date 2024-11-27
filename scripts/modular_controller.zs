@@ -194,6 +194,13 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:super_mixer_
 ]);
 
 //botania
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:mana_bifuser_controller>, [
+	[<moreplates:manasteel_gear>, <moreplates:manasteel_plate>, <moreplates:manasteel_plate>, <moreplates:manasteel_plate>, <moreplates:manasteel_gear>], 
+	[<moreplates:manasteel_plate>, <modularcontroller:energy_infuser_controller>, <contenttweaker:flesh_support>, <modularcontroller:energy_infuser_controller>, <moreplates:manasteel_plate>], 
+	[<botania:bellows>, <botania:pool>, <contenttweaker:mana_frame>, <botania:pool>, <botania:bellows>], 
+	[<botania:quartztypeelf>, <modularcontroller:energy_infuser_controller>, <contenttweaker:flesh_support>, <modularcontroller:energy_infuser_controller>, <botania:quartztypeelf>], 
+	[<botania:quartztypeelf>, <botania:quartztypeelf>, <botania:quartztypeelf>, <botania:quartztypeelf>, <botania:quartztypeelf>]
+]);
 
 //astral
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:satellite_launch_pad_controller>, [

@@ -105,6 +105,11 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
         450: {
             <mysticalagriculture:draconium_essence> * 16: <draconicevolution:draconium_ore>
         }
+    },
+    <liquid:rune_acid>: {
+        150: {
+            <mysticalagriculture:terrasteel_essence> * 16: <contenttweaker:terrasteel_ore>
+        }
     }
 };
 for fluid in essenceToItem_esg{

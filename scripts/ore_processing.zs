@@ -2662,6 +2662,16 @@ val ores as IItemStack[string][string][string] = {
             drilling: <contenttweaker:blood_shard2> * 3
         }
     },
+    terrasteel: {
+        overworld: {
+            item: <contenttweaker:terrasteel_ore>,
+            balling: <contenttweaker:terra_base_dust> * 2,
+            crushingByprod1: <contenttweaker:terra_base_dust>,
+            crushingByprod2: <contenttweaker:terra_base_dust>,
+
+            drilling: <contenttweaker:terra_base_dust> * 3
+        }
+    },
 
     icestone: {
         overworld: {
@@ -2906,7 +2916,8 @@ val drilling_fluid_amount as int[string] = {
     khnumite: 65,
     oil: 135,
     icestone: 175,
-    life_essence: 1000
+    life_essence: 1000,
+    terrasteel: 10000
 };
 
 ///////////////////////////////////////////////////////////////////////////////cleaning

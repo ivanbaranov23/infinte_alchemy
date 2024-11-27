@@ -10,6 +10,7 @@ recipes.addShaped("ia_evaporator", <alchemistry:evaporator>, [
 	[<contenttweaker:watertight_steel_plate>, null, <contenttweaker:watertight_steel_plate>], 
 	[<projectred-core:resource_item>, <contenttweaker:watertight_steel_plate>, <projectred-core:resource_item>]
 ]);
+recipes.addShapeless("ia_evaporator_reset", <alchemistry:evaporator>, [<alchemistry:evaporator>]);
 
 Evaporator.addRecipe(<harvestcraft:seaweeditem>, <liquid:seaweed_rich_water> * 1500);
 

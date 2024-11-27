@@ -1,0 +1,11 @@
+{
+	x: 16.5d,
+	y: -2.0d,
+	tasks: [{
+		uid: "05b5d420",
+		type: "item",
+		items: [{
+			item: "modularcontroller:mana_bifuser_controller"
+		}]
+	}]
+}

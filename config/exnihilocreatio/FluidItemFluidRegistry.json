@@ -15,14 +15,7 @@
     },
     "output": "blueslime"
   },
-  {
-    "inputFluid": "sticky_water",
-    "reactant": {
-      "name": "appliedenergistics2:crystal_seed",
-      "meta": 0
-    },
-    "output": "blueslime"
-  },
+  
   {
     "inputFluid": "rot",
     "reactant": {

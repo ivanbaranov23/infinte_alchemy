@@ -37,6 +37,9 @@
 <mekanism:ingot:3>.displayName = game.localize("ia.rename.glowstone_ingot");
 <mekanism:basicblock:4>.displayName = game.localize("ia.rename.glowstone_block");
 
+//roots
+<contenttweaker:nether_pest>.addTooltip(game.localize("ia.tooltip.nether_pest"));
+
 //prodigy tech
 
 //IE

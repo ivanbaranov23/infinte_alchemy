@@ -2405,7 +2405,7 @@ recipes.addShaped("ia_wooden_gear", <thermalfoundation:material:22>, [
         "osmium", 1
     );
     mods.immersiveengineering.AlloySmelter.addRecipe(
-        <contenttweaker:lesmium_ingot>, 
+        <contenttweaker:lesmium_ingot> * 2, 
         <thermalfoundation:material:131>,
         <mekanism:ingot:1>,
             200

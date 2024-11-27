@@ -1,4 +1,4 @@
-#loader crafttweaker reloadable
+#loader crafttweaker
 import mods.alchemistry.Evaporator;
 
 import mods.thermalexpansion.Centrifuge;

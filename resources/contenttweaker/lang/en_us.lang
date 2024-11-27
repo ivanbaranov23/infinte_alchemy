@@ -1974,3 +1974,16 @@ ia.rename.plant_reagent=Plant Reagent
 ia.rename.slime_reagent=Slime Reagent
 
 ia.tooltip.bucket=One would imagine that any bucket is watertight
+
+ia.tooltip.nether_pest=Drops by Infernal Bulb harvested in Nether
+
+
+item.contenttweaker.research_soul.name=How To Denaturate Soul
+
+item.contenttweaker.terra_coral.name=Terrasteel Coral
+tile.contenttweaker.terracrux.name=Terrasteel Crux
+
+item.contenttweaker.terra_base.name=Terrasteel Glass Ingot
+item.contenttweaker.terra_base_dust.name=Terrasteel Glass Dust
+tile.contenttweaker.terrasteel_ore.name=Terrasteel Glass Ore
+item.contenttweaker.terragem.name=Terragem
