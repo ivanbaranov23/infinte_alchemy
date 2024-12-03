@@ -981,12 +981,38 @@ for rune_id in 0 to 16{
         [null, <moreplates:terrasteel_plate>, null]
     ]);
 
-    //nugget
-    recipes.remove(<botania:manaresource:4>);
-    recipes.addShapeless("ia_terra_ingot", <botania:manaresource:4> * 9, [<botania:storage:1>]);
-    mods.tconstruct.Melting.removeRecipe(<liquid:terrasteel>, <botania:manaresource:18>);
-    mods.tconstruct.Melting.removeRecipe(<liquid:terrasteel>, <botania:manaresource:18>);
-
+    //terrabit
+    recipes.addShapeless("ia_terra_bit", <contenttweaker:terrabit>, [
+        <botania:manaresource:18>,
+        <contenttweaker:entangled_particles>,
+        <contenttweaker:biotite_dust>,
+        <contenttweaker:biotite_dust>,
+        <contenttweaker:neodymium_dust>
+    ]);
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<contenttweaker:terrabit> * 3], null,
+        [
+            <botania:manaresource:18> * 2,
+            <contenttweaker:neodymium_ingot>,
+            <contenttweaker:entangled_particles>,
+            <atum:ectoplasm> * 64
+        ], [
+            <liquid:biotite> * 250
+        ], <contenttweaker:research_terra>, 
+        40, 1000
+    );
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<contenttweaker:terrabit> * 7], null,
+        [
+            <botania:manaresource:18> * 2,
+            <contenttweaker:neodymium_ingot>,
+            <contenttweaker:entangled_particles> * 2,
+            <atum:ectoplasm> * 64
+        ], [
+            <liquid:data> * 10
+        ], <contenttweaker:research_terra>, 
+        40, 1000
+    );
 }
 {//gaia
     recipes.remove(<botania:manaresource:14>);
@@ -1013,6 +1039,31 @@ for rune_id in 0 to 16{
         <contenttweaker:wormholium>
     ], 3 * pool);
     addManaHint(<botania:manaresource:5>, [<botania:pool>], 3 * pool);
+}
+
+
+{//gate
+    mods.extendedcrafting.TableCrafting.addShaped(0, <botania:livingwood:5>, [
+        [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>], 
+        [<botania:livingwood>, <mekanism:basicblock:7>, <mekanism:basicblock:7>, <mekanism:basicblock:7>, <botania:livingwood>], 
+        [<botania:livingwood>, <bloodmagic:component:17>, <mekanism:basicblock:7>, <bloodmagic:component:17>, <botania:livingwood>], 
+        [<botania:livingwood>, <contenttweaker:dim_stable_plate1>, <mekanism:machineblock:11>, <contenttweaker:dim_stable_plate1>, <botania:livingwood>], 
+        [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pylon:1>, [
+        [null, <botania:livingwood>, null, <botania:livingwood>, null], 
+        [null, <enderio:block_tele_pad>, <bloodmagic:component:17>, <enderio:block_tele_pad>, null], 
+        [<botania:livingwood>, <enderio:block_tele_pad>, <botania:pylon>, <enderio:block_tele_pad>, <botania:livingwood>], 
+        [<botania:livingwood>, <enderio:block_tele_pad>, <contenttweaker:mana_frame>, <enderio:block_tele_pad>, <botania:livingwood>], 
+        [<botania:livingwood>, <enderio:block_tele_pad>, <botania:livingwood:5>, <enderio:block_tele_pad>, <botania:livingwood>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <botania:alfheimportal>, [
+        [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>], 
+        [<contenttweaker:dim_stable_plate1>, <contenttweaker:elemental_essence>, <contenttweaker:rune_mana_chip>, <contenttweaker:elemental_essence>, <contenttweaker:dim_stable_plate1>], 
+        [<contenttweaker:dim_stable_plate1>, <contenttweaker:rune_mana_chip>, <contenttweaker:mana_frame>, <contenttweaker:rune_mana_chip>, <contenttweaker:dim_stable_plate1>], 
+        [<contenttweaker:dim_stable_plate1>, <contenttweaker:elemental_essence>, <contenttweaker:rune_mana_chip>, <contenttweaker:elemental_essence>, <contenttweaker:dim_stable_plate1>], 
+        [<botania:livingwood>, <botania:livingwood:5>, <botania:livingwood:5>, <botania:livingwood:5>, <botania:livingwood>]
+    ]);
 }
 
 mods.extendedcrafting.CombinationCrafting.addRecipe(

@@ -105,7 +105,7 @@ recipes.addShapeless("ia_ee_wind", <contenttweaker:elemental_essence_base>,
 
 
 
-recipes.addShaped("ia_elemental_essence", <contenttweaker:elemental_essence> * 8, [
+recipes.addShaped("ia_elemental_essence", <contenttweaker:elemental_essence> * 4, [
         [<botania:manaresource:22>, <contenttweaker:mana_dust_singularity>, <botania:manaresource:22>], 
         [<contenttweaker:entangled_matter_a>.marked("em_a"), <contenttweaker:elemental_essence_base>.marked("essence"), <contenttweaker:entangled_matter_b>.marked("em_b")], 
         [<botania:manaresource:22>, <extendedcrafting:singularity_custom:37>, <botania:manaresource:22>],

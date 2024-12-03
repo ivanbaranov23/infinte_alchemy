@@ -1,0 +1,23 @@
+{
+	title: "Travel Anchor",
+	icon: "enderio:block_travel_anchor",
+	x: 3.5d,
+	y: 5.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "e53b5bf8",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "41923639",
+		type: "item",
+		item: "enderio:block_travel_anchor",
+		count: 4
+	}]
+}

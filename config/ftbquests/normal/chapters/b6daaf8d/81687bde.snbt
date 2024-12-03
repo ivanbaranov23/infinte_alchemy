@@ -2,7 +2,9 @@
 	x: 2.0d,
 	y: 2.0d,
 	text: [
-		"Speeds up TE machines at the cost of coolant"
+		"Speeds up TE machines at the cost of coolant.",
+		"Each can add up to 100% to speed.",
+		"If you use 6 of them, then you make the machine 7 times faster."
 	],
 	dependencies: [
 		"071cc68e"

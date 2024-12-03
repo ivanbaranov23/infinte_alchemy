@@ -1,4 +1,4 @@
 
 
-mods.thermalexpansion.coolant.add(fluid('cold_nitrogen'), 10000000, 100)
-mods.thermalexpansion.coolant.add(fluid('cold_liquid'), 150000000, 900)
+mods.thermalexpansion.coolant.add(fluid('cold_nitrogen'), 2500000, 50)
+mods.thermalexpansion.coolant.add(fluid('cold_liquid'), 500000000, 100)

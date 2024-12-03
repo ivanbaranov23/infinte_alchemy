@@ -1,7 +1,10 @@
 {
 	icon: "modularcontroller:large_cobblegen_controller",
 	x: 0.0d,
-	y: 5.0d,
+	y: 6.0d,
+	text: [
+		"Higher tiers of cobble are faster in cobble per second. Final tier requires over an hour to be made (without modifiers). "
+	],
 	dependencies: [
 		"7ff2e0b3"
 	],

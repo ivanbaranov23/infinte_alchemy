@@ -1,0 +1,19 @@
+{
+	title: "Tool Cheese",
+	x: 6.0d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"8cc62bd6"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d819f319",
+		type: "item",
+		items: [{
+			item: "tconstruct:materials 1 14"
+		}]
+	}]
+}

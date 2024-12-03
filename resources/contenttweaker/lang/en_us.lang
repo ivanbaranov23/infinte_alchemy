@@ -1983,7 +1983,17 @@ item.contenttweaker.research_soul.name=How To Denaturate Soul
 item.contenttweaker.terra_coral.name=Terrasteel Coral
 tile.contenttweaker.terracrux.name=Terrasteel Crux
 
-item.contenttweaker.terra_base.name=Terrasteel Glass Ingot
-item.contenttweaker.terra_base_dust.name=Terrasteel Glass Dust
-tile.contenttweaker.terrasteel_ore.name=Terrasteel Glass Ore
+item.contenttweaker.terra_base.name=Vitrium Terrasteel Ingot
+item.contenttweaker.terra_base_dust.name=Vitrium Terrasteel Dust
+tile.contenttweaker.terrasteel_ore.name=Vitrium Terrasteel Ore
 item.contenttweaker.terragem.name=Terragem
+
+item.contenttweaker.research_terra.name=How To Grow Terrasteel
+
+ia.mb_tooltip.common=As MB modifier 
+ia.mb_tooltip.tpc_sl_glass=3x Speed
+
+ia.mb_tooltip.lcg_water=x0.25 input fluid and items
+ia.mb_tooltip.lcg_fire=x4 Speed
+ia.mb_tooltip.lcg_bedrock=+1 output item
+ia.mb_tooltip.lcg_neutr=+4 output item

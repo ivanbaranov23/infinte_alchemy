@@ -194,7 +194,7 @@ scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:death_metal_ingot>
         [
             <taiga:meteorite_dust> % 50,
             <mekores:mekanismore:88> % 75,
-            <contenttweaker:orichalcum_dirty_dust> % 10
+            <contenttweaker:orichalcum_dirty_dust> % 5
         ], <liquid:raw_bedrockium_solution> * 100, 
         <liquid:endacid> * 250, <contenttweaker:bedrockium_small_chunk>,
         <contenttweaker:uranium_mesh>,
@@ -205,7 +205,12 @@ scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:death_metal_ingot>
 
 //terra
 scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:terra_base>], [<contenttweaker:terra_base_dust>], 1000 * 1000, 10);
-scripts.ore_processing.addTingalumOvenRecipe([<botania:manaresource:4>], [<contenttweaker:terra_base>, <extendedcrafting:singularity_custom:11>, <botania:quartz:1>], 100 * 1000 * 1000, 30);
+scripts.ore_processing.addTingalumOvenRecipe([<botania:manaresource:4>], [
+    <contenttweaker:terra_base>, 
+    <extendedcrafting:singularity_custom:11> * 2,
+    <roots:terra_moss> * 64, 
+    <botania:quartz:1>
+], 100 * 1000 * 1000, 30);
 
 
 //polonium

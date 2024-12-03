@@ -1,0 +1,19 @@
+{
+	x: 15.5d,
+	y: -8.0d,
+	dependencies: [
+		"ae51436d"
+	],
+	tasks: [{
+		uid: "be092b0b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:orichalconite_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "cee6f0d6",
+		type: "item",
+		item: "contenttweaker:orichalconite_block"
+	}]
+}

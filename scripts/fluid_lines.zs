@@ -602,7 +602,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 {//cold fluid
 	scripts.content_machines.addAdvancedMixerRecipe(
 		[],
-		[<liquid:cold_liquid> * 200],
+		[<liquid:cold_liquid> * 500],
 		[
 			<contenttweaker:advanced_cryotheum>,
 			<mod_lavacow:shattered_ice> * 8,

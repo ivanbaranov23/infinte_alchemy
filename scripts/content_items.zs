@@ -553,6 +553,7 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("palladium_gear").register();
     VanillaFactory.createItem("palladium_rod").register();
     VanillaFactory.createItem("palladium_mesh").register();
+    VanillaFactory.createItem("palladium_mana_mesh").register();
 
     VanillaFactory.createItem("abyssum_pieces").register();
     VanillaFactory.createItem("abyssum_chunk").register();
@@ -774,6 +775,7 @@ function addAtomicResource(name as string){
     glowshroomite_mud.register();
 
     VanillaFactory.createBlock("orichalcum_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("orichalcum_dense_ore", <blockmaterial:rock>).register();
     VanillaFactory.createItem("orichalcum_pieces").register();
     VanillaFactory.createItem("orichalcum_chunk").register();
     VanillaFactory.createItem("orichalcum_ingot").register();
@@ -1156,6 +1158,9 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
         VanillaFactory.createItem("neutronium_mirror2").register();
 
         VanillaFactory.createItem("space_navigator").register();
+
+        VanillaFactory.createItem("rocket_engine2").register();
+        addWater("dense_hydrogen");
     }
 
     VanillaFactory.createItem("moon_dust").register();
@@ -2572,6 +2577,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("terra_base_dust").register();
     VanillaFactory.createBlock("terrasteel_ore", <blockmaterial:rock>).register();
 
+    VanillaFactory.createItem("terrabit").register();
+
     VanillaFactory.createItem("impure_mana_dust").register();
     VanillaFactory.createItem("terragem").register();
 
@@ -2609,6 +2616,12 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         
         VanillaFactory.createItem("titanakor_flesh").register();
     }
+
+    addWater("flowers");
+
+    VanillaFactory.createItem("dim_stable_plate1").register();
+    VanillaFactory.createItem("dim_stable_plate2").register();
+
 }
 {//astral
     addGlass("star_frame");

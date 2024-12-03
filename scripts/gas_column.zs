@@ -48,7 +48,7 @@ import mods.modularmachinery.RecipeBuilder;
 	
     rec.build();
 }
-{//waste_gas
+{//rare earth
     var rec = RecipeBuilder.newBuilder("rare_earth_slurry", "gas_column", 200);
     rec.addEnergyPerTickInput(1024);
 
@@ -64,6 +64,19 @@ import mods.modularmachinery.RecipeBuilder;
 	rec.addGasInput("rare_earth_slurry", 1000);
     rec.addItemInput(<contenttweaker:research_chemistry1>);
     rec.setChance(0.0);
+	
+    rec.build();
+}
+
+{//waste_gas + impure mana
+    var rec = RecipeBuilder.newBuilder("impure", "gas_column", 200);
+    rec.addEnergyPerTickInput(1024000);
+
+	rec.addFluidOutput(<liquid:mana> * 50000);
+    
+
+	rec.addGasInput("waste_gas", 15000);
+    rec.addItemInput(<contenttweaker:impure_mana_dust>);
 	
     rec.build();
 }

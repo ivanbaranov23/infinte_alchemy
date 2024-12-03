@@ -1,0 +1,14 @@
+{
+	x: 10.0d,
+	y: -3.5d,
+	dependencies: [
+		"47d78662"
+	],
+	tasks: [{
+		uid: "517fec20",
+		type: "item",
+		items: [{
+			item: "contenttweaker:dim_stable_plate1"
+		}]
+	}]
+}

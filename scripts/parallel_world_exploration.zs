@@ -446,14 +446,23 @@ for mech in loot{
 
 recipes.remove(<mekanism:teleportationcore>);
 recipes.addShaped("ia_teleportationcore", <mekanism:teleportationcore>, [
-	[<contenttweaker:entangled_particles>, <mekanism:controlcircuit:3>, <contenttweaker:entangled_particles>], 
+	[<contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>, <mekanism:controlcircuit:3>, <contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>], 
 	[<mekanism:controlcircuit:3>, <contenttweaker:singularity_dust>, <mekanism:controlcircuit:3>], 
-	[<contenttweaker:entangled_particles>, <mekanism:controlcircuit:3>, <contenttweaker:entangled_particles>]
+	[<contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>, <mekanism:controlcircuit:3>, <contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>]
 ]);
 scripts.content_machines.addAssemblerRecipe(
-    [<mekanism:teleportationcore> * 2],
+    [<mekanism:teleportationcore> * 3],
     [
-        <contenttweaker:singularity_dust> | <contenttweaker:wormholium>,
+        <contenttweaker:singularity_dust>,
+        <mekanism:controlcircuit:3> * 4,
+        <contenttweaker:entangled_particles> * 4
+    ], null,
+    20, 1000
+);
+scripts.content_machines.addAssemblerRecipe(
+    [<mekanism:teleportationcore> * 3],
+    [
+        <contenttweaker:wormholium>,
         <mekanism:controlcircuit:3> * 4,
         <contenttweaker:entangled_particles> * 4
     ], null,

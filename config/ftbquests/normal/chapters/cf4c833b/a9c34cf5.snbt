@@ -1,0 +1,12 @@
+{
+	title: "Left to right rft increases",
+	x: -0.5d,
+	y: -2.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "821b04b2",
+		type: "checkmark"
+	}]
+}

@@ -1,9 +1,9 @@
 {
 	title: "LCG upgrades",
-	x: 0.0d,
-	y: 6.0d,
+	x: -1.0d,
+	y: 7.0d,
 	text: [
-		"water runes instead of waterstone - halves input fluids for each",
+		"water runes instead of waterstone - x0.5 input fluids for each, adds a chance to not consume items: 1 - 50%, 2 - 75%",
 		"fire runes instead of lavastone - halves recpe time for each",
 		"",
 		"bedrock instead of bedrockium - +1 output item",

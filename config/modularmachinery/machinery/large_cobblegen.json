@@ -48,7 +48,8 @@
                     "io": "input",
                     "target": "item",
                     "operation": 1,
-                    "multiplier": 0.5
+                    "multiplier": 0.5,
+                    "affectChance": true
                 },
                 {
                     "io": "input",
@@ -70,7 +71,8 @@
                     "io": "input",
                     "target": "item",
                     "operation": 1,
-                    "multiplier": 0.5
+                    "multiplier": 0.5,
+                    "affectChance": true
                 },
                 {
                     "io": "input",

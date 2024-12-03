@@ -351,7 +351,8 @@ addFluidReservoir("OW Sea Water", 25, <liquid:sea_water>, 5*mil, 10*mil, 6, [0])
 addFluidReservoir("OW Mana", 5, <liquid:mana>, mil, 3*mil, 0, [0]);
 
 //erebus
-
+addExcavator("Erebus Raw Steel Vein", 20, ["oreErebusIron", "oreErebusNickel", "oreErebusCoal"], [0.7, 0.1, 0.2], [66, -11325]);
+addExcavator("Erebus Malachite", 20, ["oreErebusMalachite"], [0.7, 0.1, 0.2], [66, -11325]);
 
 addFluidReservoir("Erebus Bugs", 10, <liquid:bugs>, 10000, 100000, 1, [66]);
 

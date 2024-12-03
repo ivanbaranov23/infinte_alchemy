@@ -1,4 +1,3 @@
-#loader crafttweaker
 import mods.alchemistry.Evaporator;
 
 import mods.thermalexpansion.Centrifuge;
@@ -1160,23 +1159,23 @@ scripts.helper.scripts.content_machines.addFluidMixerRecipe(
     {//grade folding
         scripts.content_machines.addFluidMixerRecipe(
             <liquid:chitin_grade1> * 200, 
-            <liquid:chitin_grade5> * 100, <liquid:chitin_grade2> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
+            <liquid:chitin_grade5> * 100, <liquid:chitin_grade4> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
         );
         scripts.content_machines.addFluidMixerRecipe(
             <liquid:chitin_grade2> * 200, 
-            <liquid:chitin_grade1> * 100, <liquid:chitin_grade3> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
+            <liquid:chitin_grade1> * 100, <liquid:chitin_grade5> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
         );
         scripts.content_machines.addFluidMixerRecipe(
             <liquid:chitin_grade3> * 200, 
-            <liquid:chitin_grade2> * 100, <liquid:chitin_grade4> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
+            <liquid:chitin_grade2> * 100, <liquid:chitin_grade1> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
         );
         scripts.content_machines.addFluidMixerRecipe(
             <liquid:chitin_grade4> * 200, 
-            <liquid:chitin_grade5> * 100, <liquid:chitin_grade3> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
+            <liquid:chitin_grade3> * 100, <liquid:chitin_grade2> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
         );
         scripts.content_machines.addFluidMixerRecipe(
             <liquid:chitin_grade5> * 200, 
-            <liquid:chitin_grade1> * 100, <liquid:chitin_grade4> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
+            <liquid:chitin_grade4> * 100, <liquid:chitin_grade3> * 100,  <contenttweaker:mushroomite_nugget>, 10, 128
         );
     }
 

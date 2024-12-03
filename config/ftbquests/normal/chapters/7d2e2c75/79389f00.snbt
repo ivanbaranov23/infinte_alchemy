@@ -1,0 +1,27 @@
+{
+	x: 21.0d,
+	y: 3.0d,
+	text: [
+		"I don't like this tp option"
+	],
+	dependencies: [
+		"6052902d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b144ec33",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock 1 11"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2f4be20b",
+		type: "item",
+		items: [{
+			item: "mekanism:basicblock 1 7"
+		}],
+		count: 9L
+	}]
+}

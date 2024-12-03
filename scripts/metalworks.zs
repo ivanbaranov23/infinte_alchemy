@@ -1999,7 +1999,7 @@ static custom_metals as string[] = [
     "gastight_steel","chrome", "neodymium",
     "fluix_steel", "menril_steel", "medical_alloy",
     "arkenium", "gallium", "UU_matter",
-    "black_bronze", "tinezo", "tignalum",
+    "black_bronze", "tinezo", "tignalum", "orichalcum",
     "gem_steel", "mirion2"
 ];
 
@@ -3629,8 +3629,9 @@ add3alloy(3, "ender_ingot", 1,
     mods.actuallyadditions.Empowerer.addRecipe(<plustic:mirioningot> * 4, <minecraft:glass>, <tconstruct:ingots>, <botania:manaresource>, <botania:manaresource:7>, <botania:manaresource:4>, 4000, 100, [0.828125, 0.89453125, 0.546875]);
     mods.actuallyadditions.Empowerer.addRecipe(<plustic:mirioningot> * 6, <contenttweaker:glass_ingot>, <tconstruct:ingots>, <botania:manaresource>, <botania:manaresource:7>, <botania:manaresource:4>, 4000, 100, [0.828125, 0.89453125, 0.546875]);
 
+    //viridium
     mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:mirion2_ingot>, 1024 * 20, 1024, <contenttweaker:glass_ingot>, 
+        <contenttweaker:mirion2_ingot> * 2, 102400 * 20, 102400, <contenttweaker:glass_ingot>, 
         [
             <botania:manaresource>, <botania:manaresource:7>, <botania:manaresource:4>, <plustic:mirioningot>,
             <taiga:palladium_ingot>, <simplyjetpacks:metaitemmods:12>, <enderio:item_alloy_endergy_ingot:5>, <redstonearsenal:material:32>
@@ -3639,7 +3640,7 @@ add3alloy(3, "ender_ingot", 1,
 
     //chlorasteel
     mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:chlorasteel_ingot>, 1024 * 20, 1024, <contenttweaker:glass_ingot>,
+        <contenttweaker:chlorasteel_ingot> * 3, 102400 * 20, 102400, <contenttweaker:glass_ingot>,
         [
             <botania:manaresource:4>, <contenttweaker:flower_steel_ingot>, 
             <twilightforest:steeleaf_ingot>, <twilightforest:steeleaf_ingot>, <twilightforest:steeleaf_ingot>,
@@ -3666,11 +3667,9 @@ add3alloy(3, "ender_ingot", 1,
             <twilightforest:knightmetal_block>,
             <contenttweaker:imperial_steel_ingot>,
             <contenttweaker:imperial_steel_ingot>,
-            <contenttweaker:imperial_steel_ingot>,
             <contenttweaker:arkenium_ingot>,
             <enderio:item_alloy_endergy_ingot:2>,
             <enderio:item_alloy_endergy_ingot:2>,
-            <taiga:yrdeen_ingot>,
             <taiga:yrdeen_ingot>
         ]
     );
@@ -3682,9 +3681,7 @@ add3alloy(3, "ender_ingot", 1,
             <taiga:vibranium_ingot>,
             <taiga:vibranium_ingot>,
             <taiga:vibranium_ingot>,
-            <taiga:vibranium_ingot>,
             <contenttweaker:orichalcum_ingot>,
-            <exnihilocreatio:item_ore_tungsten:3>,
             <exnihilocreatio:item_ore_tungsten:3>,
             <contenttweaker:arkenium_ingot>,
             <taiga:niob_ingot>,

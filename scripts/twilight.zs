@@ -82,31 +82,7 @@ recipes.addShaped("ia_carminite_engine", <twilightforest:tower_device:12>, [
 	[<ore:gearRedstoneAlloy>, <twilightforest:block_storage:4>, <ore:gearRedstoneAlloy>], 
 	[<appliedenergistics2:smooth_sky_stone_block>, <ore:gearRedstoneAlloy>, <appliedenergistics2:smooth_sky_stone_block>]
 ]);
-{
-	var rec = RecipeBuilder.newBuilder("1", "carmine_reactor", 10 * 20);
 
-    rec.addEnergyPerTickInput(200);
-
-    rec.addItemInput(<minecraft:redstone>);
-	rec.addGasInput("sodium", 100);
-	rec.addFluidInput(<liquid:strawberry_wine> * 500);
-
-	rec.addGasOutput("carmin", 1000);
-    
-    rec.build();
-}
-{
-	var rec = RecipeBuilder.newBuilder("2", "carmine_reactor", 30 * 20);
-
-    rec.addEnergyPerTickOutput(10000);
-
-    rec.addItemInput(<twilightforest:carminite>);
-	rec.addFluidInput(<liquid:glowstone> * 50);
-	rec.addFluidInput(<liquid:electrotine> * 50);
-	
-    
-    rec.build();
-}
 mods.mekanism.GasConversion.register(<twilightforest:carminite>, <gas:carmin> * 200);
 mods.mekanism.chemical.crystallizer.addRecipe(<gas:carmin> * 250, <twilightforest:carminite>);
 

@@ -1,0 +1,11 @@
+{
+	x: 4.5d,
+	y: 2.0d,
+	tasks: [{
+		uid: "2f4e2d3c",
+		type: "item",
+		items: [{
+			item: "modularcontroller:gp_gen_controller"
+		}]
+	}]
+}

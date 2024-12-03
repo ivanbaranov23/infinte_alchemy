@@ -205,6 +205,13 @@ recipes.addShaped("ia_terrible_recipe_block_industrial_insulation", <enderio:blo
 	]);
 }
 
+recipes.remove(<enderio:block_travel_anchor>);
+recipes.addShaped("ia_block_travel_anchor", <enderio:block_travel_anchor>, [
+	[<mekanism:basicblock:7>, <enderio:item_material:14>, <mekanism:basicblock:7>], 
+	[<enderio:item_material:14>, <mekanism:machineblock:11>, <enderio:item_material:14>], 
+	[<mekanism:basicblock:7>, <enderio:item_material:14>, <mekanism:basicblock:7>]
+]);
+
 recipes.remove(<enderio:block_reservoir>);
 recipes.addShaped("ia_eio_block_reservoir", <enderio:block_reservoir> * 4, [
 	[<minecraft:iron_bars>, <minecraft:glass>, <minecraft:iron_bars>], 
@@ -450,7 +457,7 @@ mods.enderio.SagMill.removeRecipe(<enderio:item_material:76>);
 		
 	};
 	for ball in balls{
-		ball.addTooltip("Durability in SAG mil: " ~ balls[ball] ~ " rf");
+		ball.addTooltip("Durability in SAG mill: " ~ balls[ball] ~ " rf");
 	}
 }
 

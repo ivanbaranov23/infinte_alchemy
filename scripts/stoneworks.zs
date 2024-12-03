@@ -6,6 +6,27 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
 
+function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedItemStack[], fin as ILiquidStack[], time_sec as int, energy as int, n_cons_fl as bool){
+    var rec = RecipeBuilder.newBuilder(out.name, "large_cobblegen", time_sec * 20);
+    if (energy != 0) {rec.addEnergyPerTickInput(energy);}
+
+    rec.addItemOutput(out);
+    
+    if (cat){
+        rec.addItemInput(cat);
+        rec.setChance(0.0);
+    }
+
+    for i in iin{
+        rec.addItemInput(i.stack);
+		rec.setChance(i.chance);
+    }
+    for fi in fin{
+        rec.addFluidInput(fi);
+        if (n_cons_fl) rec.setChance(0.0);
+    }
+    rec.build();
+}
 
 
 {//umber
@@ -22,6 +43,13 @@ import crafttweaker.liquid.ILiquidStack;
 
     scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone>, <erebus:umberstone:1>);
     scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone:1>, <erebus:umbergravel>);
+
+    addCobbleRecipe(
+        <erebus:umberstone> * 4, <erebus:umberstone>, 
+        [<minecraft:stone:1> * 4], 
+        [<liquid:beetle_juice> * 1000], 
+        40, 1024, true
+    );
 }
 
 mods.thermalexpansion.Transposer.addFillRecipe(
@@ -272,69 +300,50 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     );
 }
 
-function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedItemStack[], fin as ILiquidStack[], time_sec as int, energy as int){
-    var rec = RecipeBuilder.newBuilder(out.name, "large_cobblegen", time_sec * 20);
-    if (energy != 0) {rec.addEnergyPerTickInput(energy);}
 
-    rec.addItemOutput(out);
-    
-    if (cat){
-        rec.addItemInput(cat);
-        rec.setChance(0.0);
-    }
-
-    for i in iin{
-        rec.addItemInput(i.stack);
-		rec.setChance(i.chance);
-    }
-    for fi in fin{
-        rec.addFluidInput(fi);
-    }
-    rec.build();
-}
 
 {//compressed cobble
     addCobbleRecipe(<extrautils2:compressedcobblestone>, <extrautils2:compressedcobblestone>, 
         [<minecraft:stone:5>],
-        [<liquid:water> * 10, <liquid:lava> * 10],
-        3, 0
+        [<liquid:water> * 100, <liquid:lava> * 100],
+        1, 32, true
     );
     addCobbleRecipe(<extrautils2:compressedcobblestone:1>, <extrautils2:compressedcobblestone:1>, 
         [<contenttweaker:soot>, <erebus:umberstone>, <minecraft:stone:5> * 4],
-        [<liquid:water> * 40, <liquid:lava> * 40, <liquid:glass> * 10],
-        6, 32
+        [<liquid:water> * 400, <liquid:lava> * 400, <liquid:glass> * 200, <liquid:stone> * 400],
+        3, 32 * 6, false
     );
     addCobbleRecipe(<extrautils2:compressedcobblestone:2>, <extrautils2:compressedcobblestone:2>, 
         [<contenttweaker:soot> * 2, <twilightforest:naga_stone:1>, <erebus:umberstone> * 4, <minecraft:stone:5> * 16],
-        [<liquid:water> * 160, <liquid:lava> * 160, <liquid:glass> * 20, <liquid:stone> * 20],
-        12, 128
+        [<liquid:water> * 1600, <liquid:lava> * 1600, <liquid:glass> * 800, <liquid:stone> * 1600],
+        9, 32 * 36, false
     );
     addCobbleRecipe(<extrautils2:compressedcobblestone:3>, <extrautils2:compressedcobblestone:3>, 
         [<contenttweaker:soot> * 4, <engineersdecor:rebar_concrete>, <twilightforest:naga_stone:1> * 4, <erebus:umberstone> * 16, <minecraft:stone:5> * 64],
-        [<liquid:water> * 640, <liquid:lava> * 640, <liquid:glass> * 100, <liquid:stone> * 100, <liquid:sand> * 100],
-        24, 512
+        [<liquid:water> * 6400, <liquid:lava> * 6400, <liquid:glass> * 3200, <liquid:stone> * 6400, <liquid:sand> * 1000],
+        27, 32 * 216, false
     );
 
     addCobbleRecipe(<extrautils2:compressedcobblestone:4>, <extrautils2:compressedcobblestone:4>, 
         [<contenttweaker:soot> * 8, <contenttweaker:bedrockium_small_chunk>, <engineersdecor:rebar_concrete> * 4, <twilightforest:naga_stone:1> * 16, <erebus:umberstone> * 64],
-        [<liquid:water> * 2560, <liquid:lava> * 2560, <liquid:glass> * 1000, <liquid:stone> * 1000, <liquid:sand> * 1000],
-        48, 2048
+        [<liquid:water> * 25600, <liquid:lava> * 25600, <liquid:glass> * 12800, <liquid:stone> * 25600, <liquid:sand> * 4000],
+        81, 32 * 1296, false
     );
     addCobbleRecipe(<extrautils2:compressedcobblestone:5>, <extrautils2:compressedcobblestone:5>, 
         [<contenttweaker:soot> * 16, <extendedcrafting:singularity_custom:2>, <contenttweaker:bedrockium_small_chunk> * 4, <engineersdecor:rebar_concrete> * 16, <twilightforest:naga_stone:1> * 64],
-        [<liquid:water> * 10240, <liquid:lava> * 10240, <liquid:glass> * 4000, <liquid:stone> * 4000, <liquid:sand> * 4000, <liquid:concrete> * 2000],
-        96, 2048 * 4
+        [<liquid:water> * 102400, <liquid:lava> * 102400, <liquid:glass> * 51200, <liquid:stone> * 102400, <liquid:sand> * 16000, <liquid:concrete> * 20000],
+        243, 32 * 1296 * 6, false
     );
     addCobbleRecipe(<extrautils2:compressedcobblestone:6>, <extrautils2:compressedcobblestone:6>, 
         [<contenttweaker:soot> * 32, <thermalexpansion:machine:15>, <extendedcrafting:singularity_custom:2> * 4, <contenttweaker:bedrockium_small_chunk> * 16, <engineersdecor:rebar_concrete> * 64],
-        [<liquid:water> * 40960, <liquid:lava> * 40960, <liquid:glass> * 8000, <liquid:stone> * 8000, <liquid:sand> * 8000, <liquid:petrotheum> * 4000, <liquid:concrete> * 4000],
-        192, 2048 * 16
+        [<liquid:water> * 409600, <liquid:lava> * 409600, <liquid:glass> * 204800, <liquid:stone> * 409600, <liquid:sand> * 64000, <liquid:petrotheum> * 64000, <liquid:concrete> * 80000],
+        729, 32 * 1296 * 36, false
     );
     //todo: add botania, blood magic or alchemistry thing
     addCobbleRecipe(<extrautils2:compressedcobblestone:7>, <extrautils2:compressedcobblestone:7>, 
         [<contenttweaker:soot> * 64, <extendedcrafting:singularity_custom:35>, <thermalexpansion:machine:15> * 4, <extendedcrafting:singularity_custom:2> * 16, <contenttweaker:bedrockium_small_chunk> * 64],
-        [<liquid:water> * 163840, <liquid:lava> * 163840, <liquid:glass> * 32000, <liquid:stone> * 32000, <liquid:sand> * 32000, <liquid:petrotheum> * 8000, <liquid:concrete> * 8000, <liquid:ore_make> * 4000],
-        384, 2048 * 64
+        [<liquid:water> * 1638400, <liquid:lava> * 1638400, <liquid:glass> * 819200, <liquid:stone> * 1638400, <liquid:sand> * 256000, <liquid:petrotheum> * 256000, <liquid:concrete> * 320000, <liquid:ore_make> * 256000],
+        729 * 3, 32 * 1296 * 216, false
     );
 }
 
@@ -478,8 +487,8 @@ mods.bloodmagic.AlchemyTable.addRecipe(
 
 addCobbleRecipe(<biomesoplenty:flesh> * 4, <biomesoplenty:flesh>, 
     [],
-    [<liquid:water> * 100, <liquid:blood> * 100],
-    1, 128
+    [<liquid:water> * 1000, <liquid:blood> * 1000],
+    1, 128, true
 );
 mods.thermalexpansion.Sawmill.addRecipe(<biomesoplenty:fleshchunk> * 4, <biomesoplenty:flesh>, 2500);
 <biomesoplenty:fleshchunk>.displayName = "Chunk of Nether Flesh";

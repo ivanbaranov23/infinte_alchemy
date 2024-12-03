@@ -21,7 +21,7 @@ import mods.modularmachinery.RecipeBuilder;
 
 	rec.addItemOutput(<contenttweaker:terragem>);
 		
-	rec.addItemInput(<botania:manaresource:18> * 15);
+	rec.addItemInput(<contenttweaker:terrabit> * 15);
 	rec.addItemInput(<contenttweaker:empowered_shard> * 4);
 	rec.addItemInput(<contenttweaker:corrupted_ambrosium> * 2);
 	rec.addFluidInput(<liquid:mana> * (100 * 1000));

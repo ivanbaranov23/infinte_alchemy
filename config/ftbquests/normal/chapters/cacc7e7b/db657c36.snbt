@@ -12,7 +12,6 @@
 		items: [{
 			item: "contenttweaker:quest_coin"
 		}],
-		count: 2L,
 		consume_items: true
 	}],
 	rewards: [{

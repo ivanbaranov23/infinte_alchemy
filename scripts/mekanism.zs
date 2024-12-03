@@ -474,6 +474,22 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	}
 }
 
+{//teleporter
+	recipes.remove(<mekanism:basicblock:7>);
+	recipes.addShaped("ia_mek_portal1", <mekanism:basicblock:7> * 6, [
+		[<redstonearsenal:material:128>, <mekanism:teleportationcore>, <redstonearsenal:material:128>], 
+		[<thermalfoundation:glass_alloy:7>, <mekanism:basicblock:8>, <thermalfoundation:glass_alloy:7>], 
+		[<redstonearsenal:material:128>, <mekanism:teleportationcore>, <redstonearsenal:material:128>]
+	]);
+
+	recipes.remove(<mekanism:machineblock:11>);
+	recipes.addShaped("ia_mek_portal2", <mekanism:machineblock:11>, [
+		[<redstonearsenal:storage>, <mekanism:teleportationcore>, <redstonearsenal:storage>], 
+		[<mekanism:basicblock:7>, <mekanism:basicblock:7>, <mekanism:basicblock:7>], 
+		[<redstonearsenal:storage>, <mekanism:teleportationcore>, <redstonearsenal:storage>]
+	]);
+}
+
 recipes.remove(<mekanism:machineblock:13>);
 recipes.addShaped("ia_personal_chest", <mekanism:machineblock:13>, [
 	[<contenttweaker:mekanized_steel_plate>, <ore:circuitElite>, <contenttweaker:mekanized_steel_plate>], 

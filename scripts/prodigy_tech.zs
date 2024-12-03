@@ -45,7 +45,7 @@ recipes.addShaped("ia_zorrasteel_raw2", <prodigytech:zorrasteel_raw> * 2, [
 	[<contenttweaker:zorra_dust>, <contenttweaker:electric_manyullyn_base_ingot>, <contenttweaker:zorra_dust>], 
 	[null, <contenttweaker:zorra_dust>, null]
 ]);
-explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytech:zorrasteel_ingot> * 4, 360, <prodigytech:aeternus_crystal>, 1);
+explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytech:zorrasteel_ingot> * 4, 576, <prodigytech:aeternus_crystal>, 1);
 
 {//ferramic
 	explosionfurnace_recipes.addRecipe(<thermalfoundation:material:132> * 4, <prodigytech:ferramic_ingot> * 4, 360, <contenttweaker:fireclay>, 1);

@@ -145,8 +145,8 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod1: <thermalfoundation:material:69>,
             crushingByprod2: <erebus:materials:11>,
 
-            drilling: <exnihilocreatio:item_ore_iron> * 7,
-            denorm: <minecraft:iron_ore>
+            drilling: <exnihilocreatio:item_ore_iron> * 9,
+            denorm: <minecraft:iron_ore> * 2
         },
         atum: {
             item: <atum:iron_ore>,
@@ -154,8 +154,8 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod1: <contenttweaker:relic_nugget>,
             crushingByprod2: <atum:sand>,
 
-            drilling: <exnihilocreatio:item_ore_iron> * 7,
-            denorm: <minecraft:iron_ore>
+            drilling: <exnihilocreatio:item_ore_iron> * 9,
+            denorm: <minecraft:iron_ore> * 2
         },
 
         chunk: {
@@ -293,17 +293,79 @@ val ores as IItemStack[string][string][string] = {
     aluminum: {
         chunk: {
             item: <exnihilocreatio:item_ore_aluminum:1>,
-            furnace: <thermalfoundation:material:132>,
-            crushing: <thermalfoundation:material:68> * 2,
+            crushing_no_balls: <contenttweaker:bauxite_dust> * 2,
+            balling: <thermalfoundation:material:68> * 2,
             crushingByprod1: <contenttweaker:zinc_dust>,
-            crushingByprod2: <contenttweaker:dolomite>
+            crushingByprod2: <contenttweaker:dolomite>,
+
+            drilling: <mekores:mekanismore:33> * 3,
+            madeFrom: <exnihilocreatio:item_ore_aluminum> * 3
         },
         bauxite: {
             item: <immersiveengineering:ore:1>,
             furnace: <contenttweaker:bauxite_dust>,
-            crushing: <contenttweaker:bauxite_dust> * 2,
+            crushing_no_balls: <contenttweaker:bauxite_dust> * 2,
+            balling: <contenttweaker:bauxite_dust> * 2,
             crushingByprod1: <appliedenergistics2:material:3>,
-            crushingByprod2: <contenttweaker:dolomite>
+            crushingByprod2: <contenttweaker:dolomite>,
+
+            drilling: <exnihilocreatio:item_ore_aluminum> * 6,
+            denorm: <thermalfoundation:ore:4> * 2
+        },
+        overwolrd: {
+            item: <thermalfoundation:ore:4>,
+            crushing_no_balls: <thermalfoundation:material:68> * 2,
+            balling: <thermalfoundation:material:68> * 2,
+            crushingByprod1: <contenttweaker:bauxite_dust>,
+            crushingByprod2: <contenttweaker:dolomite>,
+
+            drilling: <exnihilocreatio:item_ore_aluminum> * 6
+        },
+        nether: {
+            item: <netherendingores:ore_nether_modded_1>,
+            crushing_no_balls: <thermalfoundation:material:68> * 4,
+            balling: <thermalfoundation:material:68> * 4,
+            crushingByprod1: <contenttweaker:bauxite_dust>,
+            crushingByprod2: <enderio:item_material:32>,
+
+            drilling: <exnihilocreatio:item_ore_aluminum> * 12,
+            denorm: <thermalfoundation:ore:4> * 2
+        },
+        end: {
+            item: <netherendingores:ore_end_modded_1>,
+            crushing_no_balls: <thermalfoundation:material:68> * 5,
+            balling: <thermalfoundation:material:68> * 5,
+            crushingByprod1: <contenttweaker:bauxite_dust>,
+            crushingByprod2: <enderio:item_material:32>,
+
+            drilling: <exnihilocreatio:item_ore_aluminum> * 15,
+            denorm: <thermalfoundation:ore:4> * 3
+        },
+        erebus: {
+            item: <erebus:ore_aluminium>,
+            crushing_no_balls: <thermalfoundation:material:68> * 2,
+            balling: <thermalfoundation:material:68> * 2,
+            crushingByprod1: <contenttweaker:bauxite_dust>,
+            crushingByprod2: <enderio:item_material:32>,
+
+            drilling: <exnihilocreatio:item_ore_aluminum> * 9,
+            denorm: <thermalfoundation:ore:4> * 2
+        },
+
+        clump: {
+            item: <mekores:mekanismore:32>,
+            balling: <mekores:mekanismore:33> * 2,
+            crushingByprod1: <contenttweaker:bauxite_dust>,
+            crushingByprod2: <enderio:item_material:32>,
+        },
+        dirtydust: {
+            item: <mekores:mekanismore:33>,
+            separating1: <thermalfoundation:material:68>,
+            separating2: <contenttweaker:bauxite_dust>,
+            separating3: <contenttweaker:dolomite>,
+            separating4: <contenttweaker:soot>,
+
+            washing: <thermalfoundation:material:68>
         },
 
         dense: {
@@ -312,8 +374,17 @@ val ores as IItemStack[string][string][string] = {
             making: <thermalfoundation:ore:4> * 4,
 
             crushing: <thermalfoundation:ore:4> * 2,
-            crushingByprod1: <contenttweaker:dolomite>,
+            crushingByprod1: <contenttweaker:dolomite> * 4,
             crushingByprod2: <thermalfoundation:ore:4>
+        },
+        dense_nether: {
+            item: <densemetals:dense_nether_aluminum_ore>,
+
+            making: <netherendingores:ore_nether_modded_1> * 4,
+
+            crushing: <netherendingores:ore_nether_modded_1> * 3,
+            crushingByprod1: <contenttweaker:dolomite> * 6,
+            crushingByprod2: <netherendingores:ore_nether_modded_1>
         }
     },
     nickel: {
