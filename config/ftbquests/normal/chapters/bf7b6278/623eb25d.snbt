@@ -1,0 +1,60 @@
+{
+	title: "Tinker Research",
+	icon: "contenttweaker:research_tinker",
+	x: 19.0d,
+	y: 4.0d,
+	shape: "gear",
+	text: [
+		"Gives access to more powerful (aka cheeseful) aspects of TiC. Also more materials"
+	],
+	dependencies: [
+		"0614573b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9f607f0a",
+		type: "item",
+		items: [{
+			item: "minecraft:dye 1 4"
+		}],
+		count: 12L
+	},
+	{
+		uid: "480d4c99",
+		type: "item",
+		items: [{
+			item: "cathedral:cathedral_gargoyle_demon_quartz"
+		}]
+	},
+	{
+		uid: "eb04fb58",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tink_research_token1"
+		}],
+		count: 2L
+	},
+	{
+		uid: "77a8d845",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tink_research_token2"
+		}]
+	},
+	{
+		uid: "597b73cc",
+		type: "item",
+		items: [{
+			item: "tconstruct:ingots 1 5"
+		}],
+		count: 12L
+	},
+	{
+		uid: "54ed8273",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast_custom"
+		}],
+		count: 4L
+	}]
+}

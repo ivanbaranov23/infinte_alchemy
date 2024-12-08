@@ -7,7 +7,6 @@
 	dependencies: [
 		"95048f83"
 	],
-	optional: true,
 	tasks: [{
 		uid: "cbaad83b",
 		type: "item",

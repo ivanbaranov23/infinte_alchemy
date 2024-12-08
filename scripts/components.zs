@@ -913,7 +913,8 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			<contenttweaker:electromagnet_core>,
 			<projectred-core:resource_item:342> * 6,
 			<contenttweaker:electric_wool> * 4,
-			<contenttweaker:arkenium_plate>
+			<contenttweaker:arkenium_plate>,
+			<mekanismgenerators:generator:9> * 3
 		],
 		null,
 		30, 256
@@ -1229,7 +1230,7 @@ scripts.content_machines.addAssemblerRecipe(
 function addElementCellRecipe(outp as IItemStack[], inp as IItemStack[]){
 	var rec = RecipeBuilder.newBuilder(outp[0].name, "energy_infuser", 40);
 
-    rec.addEnergyPerTickInput(32000);
+    rec.addEnergyPerTickInput(320000);
 
 	for out in outp{
 	    rec.addItemOutput(out);
@@ -1244,13 +1245,25 @@ function addElementCellRecipe(outp as IItemStack[], inp as IItemStack[]){
     
     rec.build();
 }
+{//solidlightning
+	var rec = RecipeBuilder.newBuilder("solidlightning", "energy_infuser", 40);
+
+    rec.addEnergyPerTickInput(320000);
+
+	rec.addItemOutput(<moretcon:solidlightning>);
+	
+    rec.addItemInput(<moretcon:blockelectarite>);
+
+    rec.build();
+}
 {//element cell
-	addElementCellRecipe([<contenttweaker:lightning_cell>], [<contenttweaker:electric_manyullyn_dust> * 64]);
+	addElementCellRecipe([<contenttweaker:lightning_cell>], [<contenttweaker:electric_manyullyn_dust> * 64, <moretcon:solidlightning>]);
 
 	addElementCellRecipe([<contenttweaker:fire_cell>], [<contenttweaker:advanced_pyrotheum> * 8, <extendedcrafting:singularity_custom:100>]);
 
 	addElementCellRecipe([<contenttweaker:light_cell>], [<contenttweaker:light_ingot> * 8, <enderio:block_holy_fog> * 32, <erebus:materials:12> * 32]);
 
+	//addElementCellRecipe([])
 }
 
 recipes.addShaped("ia_explosion_device", <contenttweaker:explosion_device>, [

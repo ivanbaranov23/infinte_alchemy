@@ -16,7 +16,7 @@ recipes.addShaped("ia_bug_hill1", <contenttweaker:bug_hill_exit1> * 8, [
     [<tconstruct:deco_ground>, <liquid:bugs> * 1000, <tconstruct:deco_ground>],
     [<tconstruct:deco_ground>, <tconstruct:deco_ground>, <tconstruct:deco_ground>]
 ]);
-recipes.addShaped("ia_bug_hill1", <contenttweaker:bug_hill_exit1> * 8, [
+recipes.addShaped("ia_bug_hill12", <contenttweaker:bug_hill_exit1> * 8, [
     [<tconstruct:deco_ground>, <tconstruct:deco_ground>, <tconstruct:deco_ground>],
     [<tconstruct:deco_ground>, <erebus:rein_exo>, <tconstruct:deco_ground>],
     [<tconstruct:deco_ground>, <tconstruct:deco_ground>, <tconstruct:deco_ground>]
@@ -182,7 +182,8 @@ static bug_fluid_tiers as ILiquidStack[][int][string] = {
             <liquid:biofuel> * 1000,
             <liquid:mushroom_stew> * 4000,
             <liquid:syrup> * 3000,
-            <liquid:refined_biofuel> * 2000
+            <liquid:refined_biofuel> * 2000,
+            <liquid:chocolate_mud> * 500
         ],
         3: [
             <liquid:liquidchorus> * 20000,
@@ -273,9 +274,9 @@ static tier_foods as int[string][int] = {
     }
 };
 static tier_bugs as int[int] = {
-    1: 1000,
-    2: 5000,
-    3: 25000,
+    1: 300,
+    2: 1000,
+    3: 12000,
     4: 125000,
     5: 625000
 };
@@ -284,7 +285,7 @@ for fl_food_type in bug_fluid_tiers{
     for tier in bug_fluid_tiers[fl_food_type]{
         for fluid in bug_fluid_tiers[fl_food_type][tier]{
             print("bugs_" ~ fl_food_type ~ fluid.name ~ tier);
-            var rec = RecipeBuilder.newBuilder("bugs_" ~ fl_food_type ~ fluid.name, "bug_hill", 30 * 20);
+            var rec = RecipeBuilder.newBuilder("bugs_" ~ fl_food_type ~ fluid.name, "bug_hill", 15 * 20);
 
             rec.addEnergyPerTickInput(100 * tier * tier);
 
@@ -344,6 +345,15 @@ for l_food in bug_breeding{
     
     66:     "erebus"       strong competition
 */
+
+{//fluids
+    scripts.content_machines.basicFluidMixerRecipe(
+        null, <liquid:chocolate_mud> * 1000, 
+        <erebus:dark_capped_mushroom>, [<liquid:chocolate> * 1000, <liquid:claymud> * 1000], 
+        20, 1000
+    );
+}
+
 static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
     //dim, bug, rec time tick, rft, ymin, ymax
     [66, 2000, 20*8, 100, 0, 40]: {
@@ -378,6 +388,17 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <erebus:materials:11> % 10,
 
             <contenttweaker:flolit> % 15
+        ],
+        <liquid:chocolate_mud> * 100: [
+            <contenttweaker:flolit> % 20,
+            <contenttweaker:jade_dust> % 10,
+            <contenttweaker:malachite_ore_dust> % 10,
+            <enderio:item_material:33> % 15,
+            <thermalfoundation:material:893> % 2,
+
+            <actuallyadditions:item_dust:2> % 4,
+            <actuallyadditions:item_dust:3> % 3,
+
         ]
     },
     [66, 2500, 20*7, 120, 91, 250]: {

@@ -35,7 +35,8 @@ if you don't want to have fun researching, first 3 items in the list are the ans
 
 
 
-
+mods.jei.JEI.hideCategory("modularmachinery.recipes.research_station");
+mods.jei.JEI.hideCategory("modularmachinery.recipes.research2");
 
 
 
@@ -164,6 +165,17 @@ addResearchRecipe("Glass", <minecraft:paper>, <contenttweaker:research_glass_mak
     ],
     32, 20*20
 );
+addResearchRecipe("Tinker", <tconstruct:cast>, <contenttweaker:research_tinker>,//
+    [
+        <contenttweaker:tink_research_token2>,
+        <tconstruct:cast_custom> * 4,
+        <minecraft:dye:4> * 12,
+        <contenttweaker:tink_research_token1> * 2,
+        <cathedral:cathedral_gargoyle_demon_quartz>,
+        <tconstruct:ingots:5> * 12
+    ],
+    32, 20*20
+);
 addResearchRecipe("ExoticCircuit", <immersiveengineering:material:27>, <contenttweaker:research_circuit1>,//ok
     [
         <immersiveengineering:connector:5> * 6,
@@ -232,13 +244,15 @@ addResearchRecipe("Sieving", <exnihilocreatio:item_mesh:3>, <contenttweaker:rese
         <thermalexpansion:augment:497>
     ], 128, 30 * 20
 );
-addResearchRecipe("Flight", <minecraft:paper>, <contenttweaker:research_flight1>,
-    [<extrautils2:angelblock> * 12,
-    <tconstruct:slimesling>,
-    <contenttweaker:angel_gear> * 4,
-    <contenttweaker:glow_bucket> * 2,
-    <roots:mystic_feather> * 8,
-    <quark:gravisand> * 24],
+addResearchRecipe("Flight", <minecraft:paper>, <contenttweaker:research_flight1>,//ok
+    [
+        <extrautils2:angelblock> * 12,
+        <tconstruct:slimesling>,
+        <contenttweaker:angel_gear> * 4,
+        <contenttweaker:glow_bucket> * 2,
+        <roots:mystic_feather> * 8,
+        <quark:gravisand> * 24
+    ],
     256, 30*20
 );
 addResearchRecipe("Fluids", <minecraft:paper>, <contenttweaker:research_fluids>,//ok
@@ -313,9 +327,9 @@ addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_was
 addResearchRecipe("Polymer", <contenttweaker:bouncy_matter_small>, <contenttweaker:research_chemistry2>,
     [
         <bloodmagic:component:8>,
-        <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 10}]}),
+        <contenttweaker:book_token>,
         <avaritia:resource:7> * 4,
-        <forge:bucketfilled>.withTag({FluidName: "polyethylene", Amount: 1000}),
+        <contenttweaker:polymer_bucket>,
         <contenttweaker:ldpe> * 48,
         <mekanism:polyethene> * 24,
         <enderio:item_material:4> * 32
@@ -425,4 +439,26 @@ recipes.addShapeless(
     "ia_concrete_token2",
     <contenttweaker:concrete_token>,
     [<liquid:concrete> * 1000, <minecraft:bucket>]
+);
+
+recipes.addShapeless(
+    "ia_tinker_token1",
+    <contenttweaker:tink_research_token1>,
+    [<tconstruct:large_sword_blade>.withTag({Material: "moretcon.nahuatl"})]
+);
+recipes.addShapeless(
+    "ia_tinker_token2",
+    <contenttweaker:tink_research_token2>,
+    [<plustic:laser_medium>.withTag({Material: "prismarine"})]
+);
+
+recipes.addShapeless(
+    "ia_book_token",
+    <contenttweaker:book_token>,
+    [<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 10}]})]
+);
+recipes.addShapeless(
+    "ia_polymer_bucket2",
+    <contenttweaker:polymer_bucket>,
+    [<liquid:polyethylene> * 1000, <minecraft:bucket>]
 );

@@ -1,0 +1,34 @@
+{
+	x: -9.5d,
+	y: 4.5d,
+	tasks: [{
+		uid: "49579b4c",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "69a85108",
+		type: "item",
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 30s,
+					id: 35
+				}]
+			}
+		}
+	},
+	{
+		uid: "27265b08",
+		type: "item",
+		item: {
+			id: "apotheosis:hellshelf",
+			tag: {
+				ench: [{
+					id: 57,
+					lvl: 100s
+				}]
+			}
+		}
+	}]
+}

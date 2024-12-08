@@ -191,33 +191,40 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
     
     furnace.remove(<appliedenergistics2:smooth_sky_stone_block>);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <appliedenergistics2:smooth_sky_stone_block>, 
+        <appliedenergistics2:sky_stone_block>, <immersivepetroleum:stone_decoration> * 2, 
+        8000
+    );
     mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:smooth_sky_stone_block> * 4, 
         [
             <appliedenergistics2:sky_stone_block> * 4,
             <immersivepetroleum:stone_decoration> * 3,
-            <extrautils2:compressedsand:1>
+            <minecraft:glass>
         ]
     );
     scripts.content_machines.addAdvancedMixerRecipe(
         [
-            <appliedenergistics2:smooth_sky_stone_block> * 6
+            <appliedenergistics2:smooth_sky_stone_block> * 12
         ], [],
         [
             <immersivepetroleum:stone_decoration> * 2,
             <appliedenergistics2:sky_stone_block> * 4,
-            <contenttweaker:sky_grain> | <contenttweaker:nuit_godshard>
+            <contenttweaker:sky_grain> | <contenttweaker:nuit_godshard>,
+            <minecraft:glass> | <atum:crystal_glass>
         ], [
             <liquid:lubricant> * 1000
         ], 20, 512
     );
     scripts.content_machines.addAdvancedMixerRecipe(
         [
-            <appliedenergistics2:smooth_sky_stone_block> * 6
+            <appliedenergistics2:smooth_sky_stone_block> * 16
         ], [],
         [
             <immersivepetroleum:stone_decoration> * 2,
             <appliedenergistics2:sky_stone_block> * 4,
-            <contenttweaker:sky_grain> | <contenttweaker:nuit_godshard>
+            <contenttweaker:sky_grain> | <contenttweaker:nuit_godshard>,
+            <minecraft:glass> | <atum:crystal_glass>
         ], [
             <liquid:skyroot> * 1000
         ], 20, 512

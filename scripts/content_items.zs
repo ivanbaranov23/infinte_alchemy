@@ -2066,10 +2066,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         bug_hill_exit3.register();
     }
     {//bughill fuels
-        VanillaFactory.createFluid("bh_erebus_fuel", Color.fromHex("fdae29")).register();
-        VanillaFactory.createFluid("bh_nether_fuel", Color.fromHex("ed2b0b")).register();
-        VanillaFactory.createFluid("bh_aether_fuel", Color.fromHex("7db2b4")).register();
+        
     }
+
+    addWater("claymud");
+    addWater("chocolate_mud");
 }
 {//extra u
     var flolit_ore = VanillaFactory.createBlock("flolit_ore", <blockmaterial:rock>);
@@ -2764,6 +2765,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 VanillaFactory.createItem("glass_cutter_research_token").register();
 VanillaFactory.createItem("research_glass_making").register();
 
+VanillaFactory.createItem("tink_research_token1").register();
+VanillaFactory.createItem("tink_research_token2").register();
+VanillaFactory.createItem("research_tinker").register();
+VanillaFactory.createItem("apatite").register();
+
 VanillaFactory.createItem("concrete_token").register();
 VanillaFactory.createItem("research_structure").register();
 
@@ -2779,6 +2785,7 @@ VanillaFactory.createItem("research_plants3").register();
 
 VanillaFactory.createItem("research_mushroom1").register();
 
+
 VanillaFactory.createItem("research_circuit1").register();
 VanillaFactory.createItem("research_circuit2").register();
 
@@ -2789,6 +2796,8 @@ VanillaFactory.createItem("glow_bucket").register();
 VanillaFactory.createItem("research_flight1").register();
 
 VanillaFactory.createItem("research_chemistry1").register();
+VanillaFactory.createItem("polymer_bucket").register();
+VanillaFactory.createItem("book_token").register();
 VanillaFactory.createItem("research_chemistry2").register();
 VanillaFactory.createItem("research_chemistry3").register();
 

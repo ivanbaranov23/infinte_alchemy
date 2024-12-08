@@ -263,7 +263,6 @@ function addItemInfoRecipe(items as IItemStack[], info as string[]){
     rec.addItemOutput(<minecraft:paper>.withDisplayName("Information").withLore(info));
     rec.build();
 }
-mods.jei.JEI.hideCategory("modularmachinery.recipes.research_station");
 
 
 addMMRecipe("high_oven_glass1", "high_oven", 15*20, 32, 

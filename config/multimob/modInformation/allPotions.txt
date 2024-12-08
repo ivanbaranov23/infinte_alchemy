@@ -26,6 +26,9 @@ minecraft:levitation
 minecraft:luck
 minecraft:unluck
 biomesoplenty:curse
+moretcon:bleeding
+moretcon:hyperflames
+moretcon:bloodgodsblessing
 twilightforest:frosted
 tconstruct:carry
 tconstruct:enderference

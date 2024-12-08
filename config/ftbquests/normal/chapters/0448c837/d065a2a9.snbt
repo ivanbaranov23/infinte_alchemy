@@ -1,0 +1,20 @@
+{
+	x: 1.0d,
+	y: -2.0d,
+	dependencies: [
+		"48f5b436"
+	],
+	tasks: [{
+		uid: "8d7c8b0f",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_storage"
+		}]
+	}],
+	rewards: [{
+		uid: "0b3359ff",
+		type: "item",
+		item: "contenttweaker:entangled_particles",
+		count: 4
+	}]
+}

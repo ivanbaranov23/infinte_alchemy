@@ -795,7 +795,10 @@ static all_metals as IItemStack[string][string] = {
         ingot: <actuallyadditions:item_crystal>,
         block: <actuallyadditions:block_crystal>
     },
-
+    coppra: {
+        ingot: <contenttweaker:coppra>,
+        block: <contenttweaker:coppra_block>
+    },
     nittin: {
         ingot: <contenttweaker:nittin>,
         block: <contenttweaker:nittin_block>
@@ -1707,7 +1710,8 @@ static all_metals as IItemStack[string][string] = {
         dust: <contenttweaker:jade_dust>
     },
     redgem: {
-        ingot: <erebus:materials:11>
+        ingot: <erebus:materials:11>,
+        block: <erebus:red_gem>
     },
     cincinnasite: {
         ingot: <betternether:cincinnasite>,
@@ -1716,6 +1720,10 @@ static all_metals as IItemStack[string][string] = {
     biotide: {
         ingot: <quark:biotite>,
         block: <quark:biotite> * 9
+    },
+    res_redstone: {
+        ingot: <extrautils2:ingredients>,
+        block: <extrautils2:ingredients> * 9
     },
 
     // quartz
@@ -2352,7 +2360,7 @@ function finalizeMetal(metal as string){
             mods.thermalexpansion.Transposer.addFillRecipe(
                 all_metals[metal].ingot, <contenttweaker:empty_ingot>, 
                 all_metals_molten[metal] * 144, 
-                2000
+                400
             );
         }
     }
@@ -2524,6 +2532,13 @@ add3alloy(1, "flower_steel", 4,
                 all_metals.tin.ingot
             ] as IItemStack[]
         );
+        mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:99>);
+        add2alloy(1, "bronze", 8, 
+            "coppra", 3,
+            "nittin", 1
+        );
+
+
         scripts.helper.addHighOvenAlloy(
             "electrum_ho" as string, 0,
             [all_metals.electrum.ingot * 2] as IItemStack[],
@@ -2562,6 +2577,18 @@ add3alloy(1, "flower_steel", 4,
             <projectred-core:resource_item:105> * 4,
             200
         );
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <projectred-core:resource_item:105> * 4, 
+            <thermalfoundation:material:893>, <minecraft:dye:4> * 4, 
+            16000
+        );
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <projectred-core:resource_item:105> * 6, 
+            <thermalfoundation:material:894>, <minecraft:dye:4> * 4, 
+            16000
+        );
+
+
 
         mods.enderio.AlloySmelter.removeRecipe(all_metals.redstone_alloy.ingot);
         add3alloy(1, "redstone_alloy", 2,
@@ -2569,14 +2596,38 @@ add3alloy(1, "flower_steel", 4,
             "red_alloy", 1,
             "conductive_iron", 3
         );
+    }
 
+    {//te alloys
+        mods.enderio.AlloySmelter.removeRecipe(all_metals.signalum.ingot);
+        add3alloy(2, "signalum", 4,
+            "copper", 3,
+            "silver", 1,
+            "redstone", 10
+        );
+        add3alloy(2, "signalum", 4,
+            "copper", 3,
+            "silver", 1,
+            "redgem", 3
+        );
+        add3alloy(2, "signalum", 5,
+            "copper", 3,
+            "silver", 1,
+            "res_redstone", 2
+        );
+        
+        mods.enderio.AlloySmelter.removeRecipe(all_metals.lumium.ingot);
+        add3alloy(2, "lumium", 4,
+            "tin", 3,
+            "silver", 1,
+            "glowstone", 4
+        );
         add3alloy(1, "lumium", 4,
             "tin", 3,
             "silver", 1,
             "glowcrystal", 3
         );
     }
-
     {//enderium 
         print("enderium");
         recipes.remove(<thermalfoundation:material:103>);
@@ -2670,22 +2721,30 @@ add3alloy(1, "flower_steel", 4,
 
 
 {//mekanism
-    add3alloy(1, "osgloglass", 1,
+    add3alloy(3, "osgloglass", 1,
         "osmium", 1,
         "refined_obsidian", 1,
         "refined_glowstone", 1
     );
 
     {//osgloridium
-        add2alloy(1, "osmiridium", 2,
-            "osmium", 1,
-            "iridium", 1
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <plustic:osmiridiumingot> * 2, 
+            all_metals.osmium.ingot, all_metals.iridium.ingot, 
+            16000
+        );
+        add3alloy(1, "osmiridium", 8,
+            "osmium", 2,
+            "iridium", 2,
+            "vibranium", 1
         );
 
         mods.enderio.AlloySmelter.addRecipe(all_metals.osgloridium.dust * 2, 
-                [all_metals.osgloglass.ingot,
+            [
+                all_metals.osgloglass.ingot,
                 all_metals.osmiridium.ingot,
-                <mekanism:shard:2> * 2]
+                <mekanism:shard:2> * 2
+            ]
         );
 
         mods.mekanism.compressor.addRecipe(
@@ -2768,8 +2827,8 @@ add3alloy(1, "flower_steel", 4,
 
 }
 
-add3alloy(2, "black_bronze", 3,
-    "bronze", 24,
+add3alloy(3, "black_bronze", 3,
+    "bronze", 32,
     "black_quartz", 4,
     "carminium", 2
 );

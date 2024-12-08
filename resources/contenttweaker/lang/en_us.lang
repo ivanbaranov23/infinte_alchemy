@@ -1997,3 +1997,8 @@ ia.mb_tooltip.lcg_water=x0.25 input fluid and items
 ia.mb_tooltip.lcg_fire=x4 Speed
 ia.mb_tooltip.lcg_bedrock=+1 output item
 ia.mb_tooltip.lcg_neutr=+4 output item
+
+item.contenttweaker.tink_research_token1.name=Nahuatl Large Sword Blade Research Token
+item.contenttweaker.tink_research_token2.name=Prismarine Laser Medium Research Token
+item.contenttweaker.research_tinker.name=How To Tinker Better
+item.contenttweaker.apatite.name=Tinker's Apatite

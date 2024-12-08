@@ -2030,6 +2030,22 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod2: <taiga:meteorite_dust>
         }
     },
+
+
+    //more tcon ores
+    electarite: {
+        ore: {
+            item: <moretcon:oreelectarite>,
+            crushing: <moretcon:gemelectarite> * 2,
+            crushingByprod1: <projectred-core:resource_item:105> * 3,
+            crushingByprod2: <moretcon:gemelectarite> * 2,
+
+            cleaning: <moretcon:gemelectarite> * 4,
+            drilling: <moretcon:gemelectarite> * 4,
+
+            denorm: <contenttweaker:electrotine_ore> * 2
+        }
+    },
     
 
     //other
@@ -2956,6 +2972,8 @@ val drilling_fluid_amount as int[string] = {
     prometheum: 360,
 
     meteorite: 125,
+
+    electarite: 240,
 
 
     coal: 25,

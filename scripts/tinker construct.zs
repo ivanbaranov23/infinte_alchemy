@@ -25,6 +25,7 @@ recipes.addShaped("ia_seared_furnace", <tconstruct:seared_furnace_controller>, [
     [<tconstruct:seared:3>, <tconstruct:materials>, <tconstruct:seared:3>]
 ]);
 
+//todo move
 //bauxite
 Casting.addBasinRecipe(
     <immersiveengineering:ore:1>, 
@@ -90,7 +91,7 @@ recipes.addShaped("ia_firewood", <tconstruct:firewood:1>, [
 
 //materials
 recipes.addShaped("ia_bocuit", <contenttweaker:bocuit>, [
-    [null, <immersiveengineering:material:22>, null], 
+    [<contenttweaker:research_tinker>.reuse(), <immersiveengineering:material:22>, null], 
     [<contenttweaker:gold_wire>, <prodigytech:circuit_crude>, <immersiveengineering:material:20>], 
     [null, <contenttweaker:zinc_wire>, null]
 ]);
@@ -102,4 +103,41 @@ recipes.addShaped("ia_bocuit", <contenttweaker:bocuit>, [
         [<contenttweaker:anput_godshard>, <tconstruct:cast>, <contenttweaker:anput_godshard>], 
         [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>]
     ]);
+    recipes.addShaped("ia_reinforced_mod2", <tconstruct:materials:14>, [
+        [<extrautils2:simpledecorative>, <contenttweaker:bocuit>, <extrautils2:simpledecorative>], 
+        [<contenttweaker:apatite>, <contenttweaker:research_tinker>.reuse(), <contenttweaker:apatite>], 
+        [<extrautils2:simpledecorative>, <contenttweaker:bocuit>, <extrautils2:simpledecorative>]
+    ]);
 }
+
+//research
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}));
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>.withTag({PartType: "plustic:laser_medium"}));
+mods.actuallyadditions.AtomicReconstructor.addRecipe(<tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}), <contenttweaker:research_tinker>, 10000);
+
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "tconstruct:knife_blade"}));
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>.withTag({PartType: "tconstruct:knife_blade"}));
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>.withTag({PartType: "tconstruct:knife_blade"}), <contenttweaker:research_tinker>, <liquid:steel>, 1296, false);
+
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "tconstruct:large_sword_blade"}));
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>.withTag({PartType: "tconstruct:large_sword_blade"}));
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>.withTag({PartType: "tconstruct:large_sword_blade"}), <contenttweaker:research_tinker>, <liquid:soularium>, 1296, false);
+
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "tconevo:part_arcane_focus"}));
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>.withTag({PartType: "tconevo:part_arcane_focus"}));
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>.withTag({PartType: "tconevo:part_arcane_focus"}), <contenttweaker:research_tinker>, <liquid:lumium>, 1296, false);
+
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "moretcon:smallplate"}));
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>.withTag({PartType: "moretcon:smallplate"}));
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>.withTag({PartType: "moretcon:smallplate"}), <contenttweaker:research_tinker>, <liquid:angel>, 1296, false);
+
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "yoyos:yoyo_body"}));
+mods.tconstruct.Casting.removeTableRecipe(<tconstruct:clay_cast>.withTag({PartType: "yoyos:yoyo_body"}));
+mods.tconstruct.Casting.addTableRecipe(<tconstruct:cast>.withTag({PartType: "yoyos:yoyo_body"}), <contenttweaker:research_tinker>, <liquid:iron>, 1296, false);
+//todo fix it
+
+<ore:gemApatite>.add(<contenttweaker:apatite>);
+recipes.addShapeless("ia_apatite", <contenttweaker:apatite>, [
+    <contenttweaker:research_tinker>.reuse(), 
+    <minecraft:bone_block>, <minecraft:diamond>, <erebus:materials:2> | <atum:dusty_bone>
+]);

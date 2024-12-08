@@ -2,18 +2,28 @@ import mods.appliedenergistics2.Inscriber;
 
 import crafttweaker.item.IItemStack;
 
+<ore:ingotFluixsteel>.add(<contenttweaker:fluix_steel_ingot>);
 
 recipes.remove(<appliedenergistics2:quartz_glass>);
+mods.thermalexpansion.Transposer.addFillRecipe(
+    <appliedenergistics2:quartz_glass>, 
+    <betternether:quartz_glass>, 
+    <liquid:platinum> * 288, 5000
+);
 mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_glass> * 4, 
-        [<betternether:quartz_glass> * 4,
+    [
+		<betternether:quartz_glass> * 4,
         <appliedenergistics2:material:1> * 3,
-        <thermalfoundation:coin:70> * 2]
+        <thermalfoundation:coin:70> * 2
+	]
 );
 recipes.remove(<appliedenergistics2:quartz_vibrant_glass>);
 mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>, 
-        [<appliedenergistics2:quartz_glass> * 2,
+    [
+		<appliedenergistics2:quartz_glass> * 2,
         <erebus:materials:12> * 3,
-        <thermalfoundation:coin:102> * 2]
+        <thermalfoundation:coin:102> * 2
+	]
 );
 
 {//chips
@@ -270,9 +280,9 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 	]);
 	recipes.remove(<ae2stuff:inscriber>);
 	recipes.addShaped("ia_inscriber2", <ae2stuff:inscriber>, [
-		[<appliedenergistics2:material:22>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:material:22>], 
+		[<appliedenergistics2:material:22>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:22>], 
 		[<contenttweaker:fluix_steel_gear>, <appliedenergistics2:inscriber>, <contenttweaker:fluix_steel_gear>], 
-		[<appliedenergistics2:material:22>, <appliedenergistics2:quartz_vibrant_glass>, <appliedenergistics2:material:22>]
+		[<appliedenergistics2:material:22>, <appliedenergistics2:quartz_glass>, <appliedenergistics2:material:22>]
 	]);
 
 	recipes.remove(<appliedenergistics2:quartz_growth_accelerator>);
@@ -290,6 +300,11 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 	]);
 	recipes.remove(<appliedenergistics2:drive>);
 	recipes.addShaped("ia_drive", <appliedenergistics2:drive>, [
+		[<contenttweaker:singularity_dust>, <appliedenergistics2:quartz_glass>, <contenttweaker:singularity_dust>], 
+		[<appliedenergistics2:smooth_sky_stone_chest>, <mekanism:basicblock:8>, <appliedenergistics2:smooth_sky_stone_chest>], 
+		[<appliedenergistics2:interface>, <contenttweaker:fluix_steel_gear>, <appliedenergistics2:interface>]
+	]);
+	recipes.addShaped("ia_drive2", <appliedenergistics2:drive> * 2, [
 		[<contenttweaker:singularity_dust>, <appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:singularity_dust>], 
 		[<appliedenergistics2:smooth_sky_stone_chest>, <mekanism:basicblock:8>, <appliedenergistics2:smooth_sky_stone_chest>], 
 		[<appliedenergistics2:interface>, <contenttweaker:fluix_steel_gear>, <appliedenergistics2:interface>]
@@ -305,10 +320,15 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 
 {//me parts
 	recipes.remove(<appliedenergistics2:part:140>);
-	recipes.addShaped("ia_quartz_fiber", <appliedenergistics2:part:140> * 6, [
-		[<ore:crystalPureNetherQuartz>, <ore:crystalPureNetherQuartz>, <ore:crystalPureNetherQuartz>], 
+	recipes.addShaped("ia_quartz_fiber1", <appliedenergistics2:part:140> * 1, [
+		[<minecraft:quartz> | <appliedenergistics2:material>, <minecraft:quartz> | <appliedenergistics2:material>, <minecraft:quartz> | <appliedenergistics2:material>], 
 		[<ore:itemSilicon>, <appliedenergistics2:material:45>, <ore:itemSilicon>], 
-		[<ore:crystalPureNetherQuartz>, <ore:crystalPureNetherQuartz>, <ore:crystalPureNetherQuartz>]
+		[<minecraft:quartz> | <appliedenergistics2:material>, <minecraft:quartz> | <appliedenergistics2:material>, <minecraft:quartz> | <appliedenergistics2:material>]
+	]);
+	recipes.addShaped("ia_quartz_fiber2", <appliedenergistics2:part:140> * 6, [
+		[<ore:crystalPureNetherQuartz> | <ore:crystalPureCertusQuartz>, <ore:crystalPureNetherQuartz> | <ore:crystalPureCertusQuartz>, <ore:crystalPureNetherQuartz> | <ore:crystalPureCertusQuartz>], 
+		[<ore:itemSilicon>, <appliedenergistics2:material:45>, <ore:itemSilicon>], 
+		[<ore:crystalPureNetherQuartz> | <ore:crystalPureCertusQuartz>, <ore:crystalPureNetherQuartz> | <ore:crystalPureCertusQuartz>, <ore:crystalPureNetherQuartz> | <ore:crystalPureCertusQuartz>]
 	]);
 	recipes.remove(<appliedenergistics2:part:16>);
 	recipes.addShaped("ia_fluix_cable", <appliedenergistics2:part:16> * 6, [
@@ -425,8 +445,20 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 			[<contenttweaker:fluix_steel_rod>, <appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:fluix_steel_rod>]
 		]);
 	}
-}
 
+	recipes.remove(<appliedenergistics2:controller>);
+	recipes.addShaped("ia_appliedenergistics2_controller", <appliedenergistics2:controller>, [
+		[<appliedenergistics2:smooth_sky_stone_block>, <appliedenergistics2:material:24>, <appliedenergistics2:smooth_sky_stone_block>], 
+		[<contenttweaker:fluix_steel_gear>, <thermalexpansion:frame:64>, <contenttweaker:fluix_steel_gear>], 
+		[<appliedenergistics2:smooth_sky_stone_block>, <appliedenergistics2:material:24>, <appliedenergistics2:smooth_sky_stone_block>]
+	]);
+}
+recipes.remove(<appliedenergistics2:material:52>);
+recipes.addShaped("ia_pattern", <appliedenergistics2:material:52> * 4, [
+	[null, <appliedenergistics2:quartz_glass>, null], 
+	[<appliedenergistics2:quartz_glass>, <avaritia:compressed_crafting_table>, <appliedenergistics2:quartz_glass>], 
+	[<contenttweaker:fluix_steel_nugget>, <projectred-expansion:charged_battery>, <contenttweaker:fluix_steel_nugget>]
+]);
 
 
 {//storage comp
@@ -550,9 +582,92 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 		recipes.addShapeless("ia_aea_to_nae" ~ proc.name, proc, [procs[proc]]);
 	}
 }
+recipes.remove(<nae2:material>);
+recipes.addShaped("ia_void_cell", <nae2:material>, [
+	[<appliedenergistics2:material:44>, <extrautils2:trashcan>, <appliedenergistics2:material:44>], 
+	[<appliedenergistics2:material:44>, <appliedenergistics2:material:35>, <appliedenergistics2:material:44>], 
+	[<appliedenergistics2:material:44>, <extrautils2:trashcanfluid>, <appliedenergistics2:material:44>]
+]);
+
+{//cards
+	recipes.remove(<appliedenergistics2:material:25>);
+	recipes.addShaped("ia_ae2_card1", <appliedenergistics2:material:25>, [
+		[<contenttweaker:gold_coil>, <moreplates:red_alloy_gear>, null], 
+		[<contenttweaker:fluix_steel_plate>, <appliedenergistics2:material:23>, <immersiveengineering:sheetmetal:9>], 
+		[<contenttweaker:gold_coil>, <moreplates:red_alloy_gear>, null]
+	]);
+	recipes.remove(<appliedenergistics2:material:28>);
+	recipes.addShaped("ia_ae2_card2", <appliedenergistics2:material:28>, [
+		[<thermalfoundation:material:26>, <appliedenergistics2:material:23>, null], 
+		[<appliedenergistics2:material:23>, <appliedenergistics2:material:25>, <immersiveengineering:sheetmetal:9>], 
+		[<thermalfoundation:material:26>, <appliedenergistics2:material:23>, null]
+	]);
+
+	recipes.remove(<appliedenergistics2:material:53>);
+	recipes.addShaped("ia_ae2_autocr", <appliedenergistics2:material:53>, [
+		[<extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>], 
+		[<extrautils2:ingredients:17>, <appliedenergistics2:material:25>, <extrautils2:ingredients:17>], 
+		[<extrautils2:ingredients:17>, <extrautils2:ingredients:17>, <extrautils2:ingredients:17>]
+	]);
+
+	recipes.remove(<appliedenergistics2:material:30>);
+	recipes.addShaped("ia_ae2_accel", <appliedenergistics2:material:30>, [
+		[<contenttweaker:fluix_steel_rod>, <mekanism:speedupgrade>, null], 
+		[<appliedenergistics2:material:12>, <appliedenergistics2:material:28>, <mekanism:speedupgrade>], 
+		[<contenttweaker:fluix_steel_rod>, <mekanism:speedupgrade>, null]
+	]);
+}
+
+recipes.remove(<ae2wtlib:infinity_booster_card>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <ae2wtlib:infinity_booster_card>, [
+	[<appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>], 
+	[<appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>], 
+	[<appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <extendedcrafting:singularity:29>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>], 
+	[<appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_link>, <appliedenergistics2:quantum_ring>, <extendedcrafting:singularity:29>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_link>, <appliedenergistics2:quantum_ring>], 
+	[<appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <extendedcrafting:singularity:29>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>, <appliedenergistics2:quantum_ring>], 
+	[<appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>, <appliedenergistics2:material:41>], 
+	[<appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>, <appliedenergistics2:material:42>]
+]);
+
+{//planes
+	recipes.remove(<appliedenergistics2:part:300>);
+	recipes.remove(<appliedenergistics2:part:302>);
+	recipes.remove(<appliedenergistics2:part:320>);
+	recipes.remove(<appliedenergistics2:part:321>);
+
+	recipes.addShapeless("ia_plane1", <appliedenergistics2:part:300>, [<appliedenergistics2:part:302>]);
+	recipes.addShapeless("ia_plane2", <appliedenergistics2:part:302>, [<appliedenergistics2:part:300>]);
+	recipes.addShapeless("ia_plane3", <appliedenergistics2:part:320>, [<appliedenergistics2:part:321>]);
+	recipes.addShapeless("ia_plane4", <appliedenergistics2:part:321>, [<appliedenergistics2:part:320>]);
+
+	recipes.addShaped("ia_annih_plane", <appliedenergistics2:part:300>, [
+		[null, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>], 
+		[<appliedenergistics2:material:12>, <actuallyadditions:block_breaker>, <appliedenergistics2:quartz_glass>], 
+		[null, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>]
+	]);
+	recipes.addShaped("ia_creat_plane", <appliedenergistics2:part:320>, [
+		[null, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>], 
+		[<appliedenergistics2:material:12>, <actuallyadditions:block_placer>, <appliedenergistics2:quartz_glass>], 
+		[null, <appliedenergistics2:material:44>, <appliedenergistics2:quartz_glass>]
+	]);
+}
+
+{//termianals
+	recipes.remove(<appliedenergistics2:part:380>);
+	recipes.addShapeless("ia_patter2_term", <appliedenergistics2:part:380>, [<appliedenergistics2:part:360>, <appliedenergistics2:molecular_assembler>]);
+
+
+	recipes.remove(<appliedenergistics2:part:341>);
+	recipes.addShapeless("ia_patter2_term", <appliedenergistics2:part:341>, [<appliedenergistics2:part:340>, <contenttweaker:gambrosium_processor>]);
+}
 
 scripts.jei.addJEIhint(
     [<minecraft:iron_ingot>], [], 
     [<appliedenergistics2:certus_quartz_cutting_knife>], 
+    [<appliedenergistics2:material:21>]
+);
+scripts.jei.addJEIhint(
+    [<minecraft:cobblestone>], [<liquid:water>], 
+    [<appliedenergistics2:condenser>], 
     [<appliedenergistics2:material:21>]
 );

@@ -56,11 +56,13 @@ recipes.addShaped("ia_ender_pouch", <enderstorage:ender_pouch>, [
 
 
 
+mods.thermalexpansion.Pulverizer.addRecipe(<contenttweaker:entangled_particles> * 2, <enderstorage:ender_storage>, 20000);
 mods.enderio.SagMill.addRecipe(
-    [<contenttweaker:entangled_particles>, <contenttweaker:entangled_particles>, <contenttweaker:entangled_particles>], 
-    [0.5, 0.5, 0.5], 
-    <enderstorage:ender_storage>, "MULTIPLY_OUTPUT", 40000
+    [<contenttweaker:entangled_particles>, <contenttweaker:entangled_particles>, <contenttweaker:entangled_particles>, <contenttweaker:entangled_particles>], 
+    [1.0, 0.75, 0.5, 0.5], 
+    <enderstorage:ender_storage>, "MULTIPLY_OUTPUT", 100000
 );
+
 
 <contenttweaker:entangled_matter_a>.addAdvancedTooltip(function(item){
 	if (item.tag.memberGet("id"))

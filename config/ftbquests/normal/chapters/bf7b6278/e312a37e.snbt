@@ -1,8 +1,12 @@
 {
+	title: "IE Structure Research",
 	icon: "contenttweaker:research_structure",
 	x: 20.0d,
 	y: 3.0d,
 	shape: "gear",
+	text: [
+		"Cheper IE blocks recipes"
+	],
 	dependencies: [
 		"0614573b"
 	],

@@ -3,7 +3,7 @@
 	x: 0.0d,
 	y: -2.0d,
 	text: [
-		""
+		"You can enable them if you want to"
 	],
 	dependencies: [
 		"de0a8b94"

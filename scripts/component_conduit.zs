@@ -171,4 +171,12 @@
 
 
 	}
+
+    //me
+    recipes.remove(<enderio:item_me_conduit>);
+    recipes.addShaped("ia_item_me_conduit", <enderio:item_me_conduit>, [
+        [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>], 
+        [<appliedenergistics2:part:16>, <appliedenergistics2:part:16>, <appliedenergistics2:part:16>], 
+        [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
+    ]);
 }

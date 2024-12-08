@@ -256,7 +256,7 @@ function addFluidReservoir(
     <ore:oreOverworldUranium>.add(<immersiveengineering:ore:5>);
     <ore:oreOverworldYellorium>.add(<bigreactors:oreyellorite>);
 
-    <ore:oreOverworlGallium>.add(<contenttweaker:gallium_ore>);
+    <ore:oreOverworldGallium>.add(<contenttweaker:gallium_ore>);
     <ore:oreOverworldOrichalcum>.add(<contenttweaker:orichalcum_ore>);
 
     <ore:oreOverworldCoal>.add(<minecraft:coal_ore>);
@@ -278,17 +278,24 @@ function addFluidReservoir(
     <ore:oreErebusCoal>.add(<erebus:ore_coal>);
     <ore:oreErebusIron>.add(<erebus:ore_iron>);
     <ore:oreErebusGold>.add(<erebus:ore_gold>);
+    <ore:oreErebusLead>.add(<erebus:ore_lead>);
+    <ore:oreErebusTin>.add(<erebus:ore_tin>);
+    <ore:oreErebusSilver>.add(<erebus:ore_silver>);
+    <ore:oreErebusAluminum>.add(<erebus:ore_aluminium>);
+
+    <ore:oreErebusJade>.add(<erebus:ore_jade>);
+    <ore:oreErebusMalachite>.add(<erebus:ore_copper>);
     <ore:oreErebusLapis>.add(<erebus:ore_lapis>);
     <ore:oreErebusEmerald>.add(<erebus:ore_emerald>);
     <ore:oreErebusQuartz>.add(<erebus:ore_quartz>);
     <ore:oreErebusPetrifiedQuartz>.add(<erebus:ore_petrified_quartz>);
+    <ore:oreErebusDiamond>.add(<erebus:ore_diamond>);
     <ore:oreErebusEncrustedDiamond>.add(<erebus:ore_encrusted_diamond>);
-    <ore:oreErebusLead>.add(<erebus:ore_lead>);
-    <ore:oreErebusMalachite>.add(<erebus:ore_copper>);
-    <ore:oreErebusTin>.add(<erebus:ore_tin>);
-    <ore:oreErebusSilver>.add(<erebus:ore_silver>);
-    <ore:oreErebusAluminum>.add(<erebus:ore_aluminium>);
+
     <ore:oreErebusTemple>.add(<erebus:ore_temple>);
+    <ore:oreErebusFossil>.add(<erebus:ore_fossil>);
+    <ore:oreErebusWood>.add(<erebus:ore_petrified_wood>);
+
     <ore:blockErebusAmber>.add(<erebus:amber>);
     <ore:blockErebusGneiss>.add(<erebus:gneiss>);
 
@@ -297,6 +304,8 @@ function addFluidReservoir(
     <ore:erebusDarkCappedMushroom>.add(<erebus:dark_capped_mushroom>);
     <ore:erebusKaizersFingersMushroom>.add(<erebus:kaizers_fingers_mushroom>);
     <ore:erebusSarcasticCzechMushroom>.add(<erebus:sarcastic_czech_mushroom>);
+
+    <ore:oreErebusFlolit>.add(<contenttweaker:flolit_ore>);
 }
 {//atum
     <ore:oreAtumCoal>.add(<atum:coal_ore>);
@@ -323,39 +332,52 @@ function addFluidReservoir(
 
     <ore:oreOverworldArkenium>.add(<netherendingores:ore_other_1:9>);
 }
-
 <ore:glowshroom>.add(<quark:glowshroom>);
 
 <ore:oreEndBiotite>.add(<quark:biotite_ore>);
 
 var mil as int = 1000000;
 
-//overworld
-addExcavator("Iron", 20, ["oreOverworldIron", "oreOverworldNickel"], [0.8, 0.2], [0, -11325]);
-addExcavator("Copper", 20, ["oreOverworldCopper", "oreOverworldGold"], [0.8, 0.2], [0, -11325]);
-addExcavator("Tin", 20, ["oreOverworldTin", "oreOverworldSilver"], [0.8, 0.2], [0, -11325]);
-addExcavator("Electrum", 20, ["oreOverworldGold", "oreOverworldSilver", "oreOverworldElectrotine"], [0.45, 0.45, 0.1], [0, -11325]);
-addExcavator("Nickel", 20, ["oreOverworldNickel", "oreOverworldIron", "oreOverworldPlatinum"], [0.75, 0.2, 0.05], [0, -11325]);
-addExcavator("BauxiteVein", 10, ["oreOverworldBauxite", "oreOverworldAluminum", "oreOverworldGallium"], [0.79, 0.2, 0.01], [0, -11325]);
+{//overworld
+    addExcavator("Iron", 30, ["oreOverworldIron", "oreOverworldNickel"], [0.8, 0.2], [0, -11325]);
+    addExcavator("Copper", 30, ["oreOverworldCopper", "oreOverworldGold"], [0.8, 0.2], [0, -11325]);
+    addExcavator("Tin", 30, ["oreOverworldTin", "oreOverworldSilver"], [0.8, 0.2], [0, -11325]);
+    addExcavator("Electrum", 30, ["oreOverworldGold", "oreOverworldSilver", "oreOverworldElectrotine"], [0.45, 0.45, 0.1], [0, -11325]);
+    addExcavator("Nickel", 30, ["oreOverworldNickel", "oreOverworldIron", "oreOverworldPlatinum"], [0.75, 0.2, 0.05], [0, -11325]);
+    addExcavator("BauxiteVein", 20, ["oreOverworldBauxite", "oreOverworldAluminum", "oreOverworldGallium"], [0.79, 0.2, 0.01], [0, -11325]);
 
-addExcavator("Coal1", 20, ["oreOverworlCoal"], [1], [0, -11325]);
-addExcavator("Coal2", 10, ["oreOverworlCoal", "oreOverworldDiamond"], [0.99, 0.01], [0, -11325]);
+    addExcavator("Coal1", 30, ["oreOverworlCoal"], [1], [0, -11325]);
+    addExcavator("Coal2", 20, ["oreOverworlCoal", "oreOverworldDiamond"], [0.99, 0.01], [0, -11325]);
 
 
 
-addFluidReservoir("Oil", 35, <liquid:oil>, 5*mil, 10*mil, 6, [0, -11325, 7]);
-addFluidReservoir("Rich Oil", 5, <liquid:oil>, 50*mil, 100*mil, 30, [0, -11325, 7]);
-addFluidReservoir("OW Lava", 25, <liquid:lava>, 5*mil, 10*mil, 6, [0]);
+    addFluidReservoir("Oil", 35, <liquid:oil>, 5*mil, 10*mil, 6, [0, -11325, 7]);
+    addFluidReservoir("Rich Oil", 5, <liquid:oil>, 50*mil, 100*mil, 30, [0, -11325, 7]);
+    addFluidReservoir("OW Lava", 25, <liquid:lava>, 5*mil, 10*mil, 6, [0]);
 
-addFluidReservoir("OW Sea Water", 25, <liquid:sea_water>, 5*mil, 10*mil, 6, [0]);
-addFluidReservoir("OW Mana", 5, <liquid:mana>, mil, 3*mil, 0, [0]);
+    addFluidReservoir("OW Sea Water", 25, <liquid:sea_water>, 5*mil, 10*mil, 6, [0]);
+    addFluidReservoir("OW Mana", 5, <liquid:mana>, mil, 3*mil, 0, [0]);
+}
+{//erebus
+    addExcavator("Erebus Raw Steel Vein", 30, ["oreErebusIron", "oreErebusNickel", "oreErebusCoal"], [0.7, 0.1, 0.2], [66, -11325]);
+    addExcavator("Erebus Malachite", 30, ["oreErebusMalachite", "oreErebusJade", "oreErebusTin"], [0.7, 0.2, 0.1], [66, -11325]);
+    addExcavator("Erebus Jade", 20, ["oreErebusJade", "oreErebusFlolit"], [0.8, 0.2], [66, -11325]);
+    addExcavator("Erebus Flolit", 10, ["oreErebusFlolit", "oreErebusIron", "oreErebusSilver"], [0.7, 0.2, 0.1], [66, -11325]);
+    addExcavator("Erebus Coal", 30, ["oreErebusCoal", "oreErebusDiamond", "oreErebusEncrustedDiamond"], [0.9, 0.07, 0.03], [66, -11325]);
+    addExcavator("Erebus Diamond", 10, ["oreErebusCoal", "oreErebusDiamond", "oreErebusEncrustedDiamond"], [0.3, 0.6, 0.1], [66, -11325]);
+    addExcavator("Erebus Lead", 20, ["oreErebusLead", "oreErebusSilver", "oreErebusQuartz"], [0.45, 0.45, 0.1], [66, -11325]);
+    addExcavator("Erebus Fossil", 10, ["oreErebusFossil", "oreErebusFlolit", "oreErebusWood"], [0.85, 0.1, 0.05], [66, -11325]);
+    addExcavator("Erebus Temple", 5, ["oreErebusTemple", "oreErebusLead", "oreErebusQuartz"], [0.75, 0.15, 0.1], [66, -11325]);
 
-//erebus
-addExcavator("Erebus Raw Steel Vein", 20, ["oreErebusIron", "oreErebusNickel", "oreErebusCoal"], [0.7, 0.1, 0.2], [66, -11325]);
-addExcavator("Erebus Malachite", 20, ["oreErebusMalachite"], [0.7, 0.1, 0.2], [66, -11325]);
+    addExcavator("Erebus Petrified", 5, ["oreErebusWood", "oreErebusPetrifiedQuartz"], [0.75, 0.25], [66, -11325]);
+    addExcavator("Erebus Quartz", 15, ["oreErebusPetrifiedQuartz", "oreErebusQuartz"], [0.35, 0.65], [66, -11325]);
 
-addFluidReservoir("Erebus Bugs", 10, <liquid:bugs>, 10000, 100000, 1, [66]);
 
+    addFluidReservoir("Erebus Bugs", 10, <liquid:bugs>, 10000, 100000, 1, [66, -11325]);
+    addFluidReservoir("Erebus Rich Mud", 20, <liquid:claymud>, 3 * mil, 7 * mil, 6, [66, -11325]);
+    addFluidReservoir("Erebus Tar", 30, <liquid:tar>, mil, 5 * mil, 4, [66, -11325]);
+    addFluidReservoir("Erebus Formic Acid", 20, <liquid:formic_acid>, mil, 3 * mil, 0, [66, -11325]);
+}
 //atum
 addExcavator("Atum Coal", 25, ["oreAtumCoal", "oreAtumDiamond", "oreAtumEmerald"], [0.8, 0.15, 0.05], [17]);
 addExcavator("Atum Diamond", 5, ["oreAtumDiamond", "oreAtumCoal", "oreAtumEmerald"], [0.7, 0.2, 0.1], [17]);

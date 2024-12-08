@@ -6,7 +6,8 @@
 		"Mech missions are explained in chapter 7++. For now you'll need to do this mission to get amethysts."
 	],
 	dependencies: [
-		"5aa601fa"
+		"5aa601fa",
+		"d065a2a9"
 	],
 	tasks: [{
 		uid: "387a9e84",

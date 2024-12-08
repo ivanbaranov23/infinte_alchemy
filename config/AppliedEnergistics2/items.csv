@@ -1742,6 +1742,7 @@ aeadditions:pattern.fluid:0, ME Fluid Pattern: fluid.premana_juice
 aeadditions:pattern.fluid:0, ME Fluid Pattern: fluid.mana_juice
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Rune Acid
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Enchantium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: fluid.flowers
 aeadditions:pattern.fluid:0, ME Fluid Pattern: fluid.starlight_lubricant
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Sunnaronite
 aeadditions:pattern.fluid:0, ME Fluid Pattern: fluid.dark_catalyst
@@ -1762,6 +1763,7 @@ aeadditions:pattern.fluid:0, ME Fluid Pattern: Liquid Formaldehyde
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Liquid Ethyl Cyanoacrylate
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Liquid Cyanoacrylate
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Liquid Taurine
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Blood Infused Glitch
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Evil Infused Iron
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Enchanted Metal
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Demon Metal
@@ -1859,6 +1861,27 @@ aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Osgloglas
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Osmiridium
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Mirion
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Infinity
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Fusionite
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Irradium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Solsteel
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Gallium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Runesteel
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Gravitonium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Trichromadentium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Atronium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Ebonite
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Fusion Lava
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Valasium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Hallowsite
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Blightsteel
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Sanguiseelium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Liquified Souls
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Zracohlium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Penguinite
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Ironwood
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Arkenium
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Valkyrie Metal
+aeadditions:pattern.fluid:0, ME Fluid Pattern: Liquid Golden Amber
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Liquid XP
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Gravitite
 aeadditions:pattern.fluid:0, ME Fluid Pattern: Molten Valkyrie Metal
@@ -4176,6 +4199,162 @@ moreplates:ironwood_gear, Ironwood Gear
 moreplates:ironwood_plate, Ironwood Plate
 moreplates:knightmetal_gear, Knightmetal Gear
 moreplates:knightmetal_plate, Knightmetal Plate
+moretcon:liquidfusionite, Molten Fusionite
+moretcon:liquidirradium, Molten Irradium
+moretcon:liquidsolarsteel, Molten Solsteel
+moretcon:liquidhydrogen, Hydrogen Gas
+moretcon:liquidgallium, Molten Gallium
+moretcon:liquidrunesteel, Molten Runesteel
+moretcon:liquidgravitonium, Molten Gravitonium
+moretcon:liquidtrichromadentium, Molten Trichromadentium
+moretcon:liquidatronium, Molten Atronium
+moretcon:liquidebonite, Molten Ebonite
+moretcon:liquidfusionlava, Fusion Lava
+moretcon:liquidvalasium, Molten Valasium
+moretcon:liquidhallowsite, Molten Hallowsite
+moretcon:liquidblightsteel, Molten Blightsteel
+moretcon:liquidsanguiseelium, Molten Sanguiseelium
+moretcon:liquifiedsouls, Liquified Souls
+moretcon:liquidzracohlium, Molten Zracohlium
+moretcon:liquidpenguinite, Molten Penguinite
+moretcon:liquidironwood, Molten Ironwood
+moretcon:liquidarkenium, Molten Arkenium
+moretcon:liquidvalkyriemetal, Molten Valkyrie Metal
+moretcon:liquidgoldenamber, Liquid Golden Amber
+moretcon:blockgravitoniumfaucet, Gravitonium Infused Faucet
+moretcon:blockfusionite, Block of Fusionite
+moretcon:orebedrockfusionite, Bedrock Fusionite Ore
+moretcon:orefusionite, Fusionite Ore
+moretcon:blockvalasium, Block of Valasium
+moretcon:blockirradium, Block of Irradium
+moretcon:oreirradium, Irradium Ore
+moretcon:blocksolarsteel, Block of Solsteel
+moretcon:orevoidspar, Void Spar Ore
+moretcon:blockvoidspar, Block of Void Spar
+moretcon:orenaturalvoidspar, Bedrock Void Spar Ore
+moretcon:oreenderal, Enderal Ore
+moretcon:blockenderal, Block of Enderal
+moretcon:blockgarstone, Block of Garstone
+moretcon:oregarstone, Garstone Ore
+moretcon:blockgallium, Block of Gallium
+moretcon:oregallium, Gallium Ore
+moretcon:blockrunesteel, Block of Runesteel
+moretcon:blocktrichromadentium, Block of Trichromadentium
+moretcon:oregravitonium, Gravitonium Ore
+moretcon:oregravitoniumdense, Dense Gravitonium Ore
+moretcon:blockgravitonium, Block of Gravitonium
+moretcon:blocksteel, Block of Steel
+moretcon:orebloodstone, Bloodstone Ore
+moretcon:blockbloodstone, Block of Bloodstone
+moretcon:oreechostone, Echostone Ore
+moretcon:blockechostone, Block of Echostone
+moretcon:oreigniglomerate, Igniglomerate Cluster
+moretcon:blockigniglomerate, Block of Igniglomerate
+moretcon:blockatronium, Block of Atronium
+moretcon:oreebonite, Ebonite Ore
+moretcon:blockebonite, Block of Ebonite
+moretcon:oreerythynite, Erythynite Ore
+moretcon:blockerythynite, Block of Erythynite
+moretcon:oreetherstone, Etherstone Ore
+moretcon:blocketherstone, Block of Etherstone
+moretcon:oreelectarite, Electarite Ore
+moretcon:blockelectarite, Block of Electarite
+moretcon:orehallowsite, Hallowsite Ore
+moretcon:blockhallowsite, Block of Hallowsite
+moretcon:blockblightsteel, Block of Blightsteel
+moretcon:blocksanguiseelium, Block of Sanguiseelium
+moretcon:orezracohlium, Zracohlium Ore
+moretcon:blockzracohlium, Block of Zracohlium
+moretcon:blockcobbledbedrock, Cobbled Bedrock
+moretcon:blockotherstone, Otherstone
+moretcon:blockpenguinite, Block of Penguinite
+moretcon:orearkenium, Arkenium Ore
+moretcon:blockarkenium, Block of Arkenium
+moretcon:blockgravitite, Block of Enchanted Gravitite
+moretcon:blockvalkyriemetal, Block of Valkyrie Metal
+moretcon:debugtool, ExistingEevee's Strange Debug Tool (E.E.S.D.T.)
+moretcon:ingotfusionite, Fusionite Ingot
+moretcon:nuggetfusionite, Fusionite Nugget
+moretcon:ingotvalasium, Valasium Ingot
+moretcon:nuggetvalasium, Valasium Nugget
+moretcon:ingotirradium, Irradium Ingot
+moretcon:nuggetirradium, Irradium Nugget
+moretcon:ingotsolarsteel, Solsteel Ingot
+moretcon:nuggetsolarsteel, Solsteel Nugget
+moretcon:ingotgallium, Gallium Ingot
+moretcon:nuggetgallium, Gallium Nugget
+moretcon:ingotsteel, Steel Ingot
+moretcon:nuggetsteel, Steel Nugget
+moretcon:ingotgravitonium, Gravitonium Ingot
+moretcon:nuggetgravitonium, Gravitonium Nugget
+moretcon:ingotrunesteel, Runesteel Ingot
+moretcon:nuggetrunesteel, Runesteel Nugget
+moretcon:ingottrichromadentium, Trichromadentium Ingot
+moretcon:nuggettrichromadentium, Trichromadentium Nugget
+moretcon:ingotatronium, Atronium Ingot
+moretcon:nuggetatronium, Atronium Nugget
+moretcon:ingotebonite, Ebonite Ingot
+moretcon:nuggetebonite, Ebonite Nugget
+moretcon:ingothallowsite, Hallowsite Ingot
+moretcon:nuggethallowsite, Hallowsite Nugget
+moretcon:ingotblightsteel, Blightsteel Ingot
+moretcon:nuggetblightsteel, Blightsteel Nugget
+moretcon:ingotsanguiseelium, Sanguiseelium Ingot
+moretcon:nuggetsanguiseelium, Sanguiseelium Nugget
+moretcon:ingotzracohlium, Zracohlium Ingot
+moretcon:nuggetzracohlium, Zracohlium Nugget
+moretcon:gemvoidspar, Void Spar
+moretcon:gemenderal, Enderal
+moretcon:gemgarstone, Garstone
+moretcon:gembloodstone, Bloodstone
+moretcon:gemechostone, Echostone
+moretcon:gemigniglomerate, Igniglomerate Shard
+moretcon:gemerythynite, Erythynite
+moretcon:gemetherstone, Etherstone
+moretcon:gemelectarite, Electarite
+moretcon:crushingmodifier, Crushing Modifier
+moretcon:matterreconstructiongel, Matter Reconstruction Gel
+moretcon:carbonpile, Pile of Carbon
+moretcon:rawsteel, Raw Steel
+moretcon:spacetimedisruptionpowder, Space Time Disruption Powder
+moretcon:hydrogenrichredstonepowder, Hydrogen Rich Redstone Powder
+moretcon:solidlightning, Solid Lightning
+moretcon:reforgeheavy, item.moretcon.reforgeheavy.name
+moretcon:reforgesharpened, item.moretcon.reforgesharpened.name
+moretcon:reforgeconsistant, item.moretcon.reforgeconsistant.name
+moretcon:dustfusionite, Fusionite Dust
+moretcon:dustvalasium, Valasium Dust
+moretcon:dustirradium, Irradium Dust
+moretcon:dustsolarsteel, Solsteel Dust
+moretcon:dustgallium, Gallium Dust
+moretcon:duststeel, Steel Dust
+moretcon:dustgravitonium, Gravitonium Dust
+moretcon:dustrunesteel, Runesteel Dust
+moretcon:dusttrichromadentium, Trichromadentium Dust
+moretcon:dustatronium, Atronium Dust
+moretcon:dustebonite, Ebonite Dust
+moretcon:dusthallowsite, Hallowsite Dust
+moretcon:dustblightsteel, Blightsteel Dust
+moretcon:dustsanguiseelium, Sanguiseelium Dust
+moretcon:dustzracohlium, Zracohlium Dust
+moretcon:nuggetpenguinite, Penguinite Nugget
+moretcon:ingotpenguinite, Penguinite Ingot
+moretcon:dustpenguinite, Penguinite Dust
+moretcon:dustironwood, Ironwood Dust
+moretcon:dustfiery, Fiery Dust
+moretcon:dustknightmetal, Knightmetal Dust
+moretcon:ingotarkenium, Arkenium Ingot
+moretcon:nuggetarkenium, Arkenium Nugget
+moretcon:ingotvalkyriemetal, Valkyrie Metal Ingot
+moretcon:nuggetvalkyriemetal, Valkyrie Metal Nugget
+moretcon:dustarkenium, Arkenium Dust
+moretcon:dustvalkyriemetal, Valkyrie Metal Dust
+moretcon:gravitoniumsponge, Gravitonium Sponge
+moretcon:itemtrichromadentiumsponge:0, Filled Trichromadentium Gravitonium Sponge
+moretcon:itematroniumsponge:0, Filled Atronium Gravitonium Sponge
+moretcon:itemsolarsteelsponge:0, Filled Solsteel Gravitonium Sponge
+moretcon:itemvalasiumsponge:0, Filled Valasium Gravitonium Sponge
+moretcon:itemsanguiseeliumsponge:0, Filled Sanguiseelium Gravitonium Sponge
 openblocks:ladder, Jaded Ladder
 openblocks:guide, Building Guide
 openblocks:builder_guide, Enhanced Building Guide
@@ -8205,6 +8384,54 @@ appliedenergistics2:facade:0, Cable Facade - Flux Crystal Block
 appliedenergistics2:facade:0, Cable Facade - Alumite Block
 appliedenergistics2:facade:0, Cable Facade - Osgloglas Block
 appliedenergistics2:facade:0, Cable Facade - Osmiridium Block
+appliedenergistics2:facade:0, Cable Facade - Block of Fusionite
+appliedenergistics2:facade:0, Cable Facade - Bedrock Fusionite Ore
+appliedenergistics2:facade:0, Cable Facade - Fusionite Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Valasium
+appliedenergistics2:facade:0, Cable Facade - Block of Irradium
+appliedenergistics2:facade:0, Cable Facade - Irradium Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Solsteel
+appliedenergistics2:facade:0, Cable Facade - Void Spar Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Void Spar
+appliedenergistics2:facade:0, Cable Facade - Bedrock Void Spar Ore
+appliedenergistics2:facade:0, Cable Facade - Enderal Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Enderal
+appliedenergistics2:facade:0, Cable Facade - Block of Garstone
+appliedenergistics2:facade:0, Cable Facade - Garstone Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Gallium
+appliedenergistics2:facade:0, Cable Facade - Gallium Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Runesteel
+appliedenergistics2:facade:0, Cable Facade - Block of Trichromadentium
+appliedenergistics2:facade:0, Cable Facade - Gravitonium Ore
+appliedenergistics2:facade:0, Cable Facade - Dense Gravitonium Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Gravitonium
+appliedenergistics2:facade:0, Cable Facade - Block of Steel
+appliedenergistics2:facade:0, Cable Facade - Bloodstone Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Bloodstone
+appliedenergistics2:facade:0, Cable Facade - Echostone Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Echostone
+appliedenergistics2:facade:0, Cable Facade - Igniglomerate Cluster
+appliedenergistics2:facade:0, Cable Facade - Block of Igniglomerate
+appliedenergistics2:facade:0, Cable Facade - Block of Atronium
+appliedenergistics2:facade:0, Cable Facade - Ebonite Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Ebonite
+appliedenergistics2:facade:0, Cable Facade - Erythynite Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Erythynite
+appliedenergistics2:facade:0, Cable Facade - Block of Etherstone
+appliedenergistics2:facade:0, Cable Facade - Electarite Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Electarite
+appliedenergistics2:facade:0, Cable Facade - Hallowsite Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Hallowsite
+appliedenergistics2:facade:0, Cable Facade - Block of Blightsteel
+appliedenergistics2:facade:0, Cable Facade - Block of Sanguiseelium
+appliedenergistics2:facade:0, Cable Facade - Zracohlium Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Zracohlium
+appliedenergistics2:facade:0, Cable Facade - Cobbled Bedrock
+appliedenergistics2:facade:0, Cable Facade - Block of Penguinite
+appliedenergistics2:facade:0, Cable Facade - Arkenium Ore
+appliedenergistics2:facade:0, Cable Facade - Block of Arkenium
+appliedenergistics2:facade:0, Cable Facade - Block of Enchanted Gravitite
+appliedenergistics2:facade:0, Cable Facade - Block of Valkyrie Metal
 appliedenergistics2:facade:0, Cable Facade - Elevator
 appliedenergistics2:facade:0, Cable Facade - Sponge
 appliedenergistics2:facade:0, Cable Facade - Scaffolding
@@ -10639,6 +10866,9 @@ appliedenergistics2:facade:0, Cable Facade - Elder Prismarine
 appliedenergistics2:facade:0, Cable Facade - Elder Sea Lantern
 appliedenergistics2:facade:0, Cable Facade - Glowcelium
 appliedenergistics2:facade:0, Cable Facade - Glowshroom
+appliedenergistics2:facade:0, Cable Facade - Sugar Block
+appliedenergistics2:facade:0, Cable Facade - Red Slime Block
+appliedenergistics2:facade:0, Cable Facade - Gravisand
 appliedenergistics2:facade:0, Cable Facade - Spruce Bookshelf
 appliedenergistics2:facade:0, Cable Facade - Lit Redstone Lamp
 appliedenergistics2:facade:0, Cable Facade - Blaze Lantern
@@ -10670,9 +10900,6 @@ appliedenergistics2:facade:0, Cable Facade - Soul Sandstone
 appliedenergistics2:facade:0, Cable Facade - Turf Block
 appliedenergistics2:facade:0, Cable Facade - Netherwrought Stone
 appliedenergistics2:facade:0, Cable Facade - White Quilted Wool
-appliedenergistics2:facade:0, Cable Facade - Sugar Block
-appliedenergistics2:facade:0, Cable Facade - Red Slime Block
-appliedenergistics2:facade:0, Cable Facade - Gravisand
 appliedenergistics2:facade:0, Cable Facade - Livingrock
 appliedenergistics2:facade:0, Cable Facade - Livingrock Brick
 appliedenergistics2:facade:0, Cable Facade - Mossy Livingrock Brick
@@ -10971,6 +11198,7 @@ appliedenergistics2:facade:0, Cable Facade - Corrupted Wither Dust Block
 appliedenergistics2:facade:0, Cable Facade - Checkered Wither Dust Block
 appliedenergistics2:facade:0, Cable Facade - Glitch Infused Block
 appliedenergistics2:facade:0, Cable Facade - Soot-covered Machine Casing
+appliedenergistics2:facade:0, Cable Facade - §cBlock of Blood Infused Glitch Ingot§r
 appliedenergistics2:facade:0, Cable Facade - Clinker Brick Block
 appliedenergistics2:facade:0, Cable Facade - Stained Clinker Brick Block
 appliedenergistics2:facade:0, Cable Facade - Slag Brick Block
@@ -11840,7 +12068,7 @@ appliedenergistics2:facade:0, Cable Facade - Block of Runes of Earth
 appliedenergistics2:facade:0, Cable Facade - Block of Runes of Air
 appliedenergistics2:facade:0, Cable Facade - Manaclay Block
 appliedenergistics2:facade:0, Cable Facade - Manabrick Block
-appliedenergistics2:facade:0, Cable Facade - Terrasteel Glass Ore
+appliedenergistics2:facade:0, Cable Facade - Vitrium Terrasteel Ore
 appliedenergistics2:facade:0, Cable Facade - tile.contenttweaker.computer.name
 appliedenergistics2:facade:0, Cable Facade - tile.contenttweaker.particle1.name
 appliedenergistics2:facade:0, Cable Facade - tile.contenttweaker.portal.name
@@ -14030,43 +14258,47 @@ tconstruct:slime_vine_purple_end:0, Purple Slimy Vine
 tconstruct:slime_vine_purple_mid:0, Purple Slimy Vine
 tconstruct:slime_vine_purple:0, Purple Slimy Vine
 tconstruct:pattern:0, Blank Pattern
-tconstruct:pattern:0, Scythe Head Pattern
+tconstruct:pattern:0, Kama Head Pattern
+tconstruct:pattern:0, Bowstring Pattern
+tconstruct:pattern:0, Axe Head Pattern
+tconstruct:pattern:0, Sledge Hammer Head Pattern
 tconstruct:pattern:0, Fletching Pattern
-tconstruct:pattern:0, Arcane Focus Pattern
-tconstruct:pattern:0, Knife Blade Pattern
-tconstruct:pattern:0, Mouthpiece Pattern
-tconstruct:pattern:0, Bowlimb Pattern
-tconstruct:pattern:0, Arrow Head Pattern
-tconstruct:pattern:0, Pickaxe Head Pattern
-tconstruct:pattern:0, Wide Guard Pattern
-tconstruct:pattern:0, Arrow Shaft Pattern
-tconstruct:pattern:0, Tough Tool Rod Pattern
-tconstruct:pattern:0, Sharpening Kit Pattern
-tconstruct:pattern:0, Broad Axe Head Pattern
 tconstruct:pattern:0, Pipe Piece Pattern
 tconstruct:pattern:0, Chisel Head Pattern
-tconstruct:pattern:0, Hammer Head Pattern
-tconstruct:pattern:0, Sign Plate Pattern
-tconstruct:pattern:0, Excavator Head Pattern
-tconstruct:pattern:0, Binding Pattern
-tconstruct:pattern:0, Kama Head Pattern
+tconstruct:pattern:0, Axle Pattern
+tconstruct:pattern:0, Large Plate Pattern
 tconstruct:pattern:0, Tough Binding Pattern
+tconstruct:pattern:0, Sign Plate Pattern
+tconstruct:pattern:0, Large Sword Blade Pattern
+tconstruct:pattern:0, Scythe Head Pattern
+tconstruct:pattern:0, Excavator Head Pattern
+tconstruct:pattern:0, Arcane Focus Pattern
+tconstruct:pattern:0, Pan Pattern
+tconstruct:pattern:0, Body Pattern
+tconstruct:pattern:0, Cross Guard Pattern
+tconstruct:pattern:0, Small Plate Pattern
+tconstruct:pattern:0, Tube Pattern
+tconstruct:pattern:0, Sharpening Kit Pattern
 tconstruct:pattern:0, Tool Rod Pattern
 tconstruct:pattern:0, Shovel Head Pattern
-tconstruct:pattern:0, Hand Guard Pattern
-tconstruct:pattern:0, Pan Pattern
-tconstruct:pattern:0, Dart Tip Pattern
-tconstruct:pattern:0, Sledge Hammer Head Pattern
-tconstruct:pattern:0, Tube Pattern
 tconstruct:pattern:0, Sword Blade Pattern
-tconstruct:pattern:0, Large Sword Blade Pattern
-tconstruct:pattern:0, Large Plate Pattern
-tconstruct:pattern:0, Cross Guard Pattern
-tconstruct:pattern:0, Shard Pattern
+tconstruct:pattern:0, Mouthpiece Pattern
+tconstruct:pattern:0, Binding Pattern
+tconstruct:pattern:0, Wide Guard Pattern
 tconstruct:pattern:0, Laser Medium Pattern
-tconstruct:pattern:0, Bowstring Pattern
+tconstruct:pattern:0, Tough Tool Rod Pattern
+tconstruct:pattern:0, Arrow Shaft Pattern
+tconstruct:pattern:0, Knife Blade Pattern
 tconstruct:pattern:0, Battery Cell Pattern
-tconstruct:pattern:0, Axe Head Pattern
+tconstruct:pattern:0, Dart Tip Pattern
+tconstruct:pattern:0, Cord Pattern
+tconstruct:pattern:0, Shard Pattern
+tconstruct:pattern:0, Arrow Head Pattern
+tconstruct:pattern:0, Bowlimb Pattern
+tconstruct:pattern:0, Pickaxe Head Pattern
+tconstruct:pattern:0, Broad Axe Head Pattern
+tconstruct:pattern:0, Hand Guard Pattern
+tconstruct:pattern:0, Hammer Head Pattern
 tconstruct:shard:0, Black Quartz Shard
 tconstruct:shard:0, Restonia Crystal Shard
 tconstruct:shard:0, Palis Crystal Shard
@@ -14201,6 +14433,7 @@ tconstruct:shard:0, Goold Crystal Shard
 tconstruct:shard:0, Osgloridium Shard
 tconstruct:shard:0, Arkenium Shard
 tconstruct:shard:0, Black Bronze Shard
+tconstruct:shard:0, Blood Infused Glitch Shard
 tconstruct:shard:0, Magical Wooden Shard
 tconstruct:shard:0, Evil Infused Shard
 tconstruct:shard:0, Enchanted Shard
@@ -14279,6 +14512,38 @@ tconstruct:shard:0, Amethyst Shard
 tconstruct:shard:0, Osgloglas Shard
 tconstruct:shard:0, Osmiridium Shard
 tconstruct:shard:0, Signalum Shard
+tconstruct:shard:0, Zracohlium Shard
+tconstruct:shard:0, Fusionite Shard
+tconstruct:shard:0, Valasium Shard
+tconstruct:shard:0, Void Spar Shard
+tconstruct:shard:0, Enderal Shard
+tconstruct:shard:0, Irradium Shard
+tconstruct:shard:0, Solsteel Shard
+tconstruct:shard:0, Gallium Shard
+tconstruct:shard:0, Garstone Shard
+tconstruct:shard:0, Runesteel Shard
+tconstruct:shard:0, Gravitonium Shard
+tconstruct:shard:0, Trichromadentium Shard
+tconstruct:shard:0, Bloodstone Shard
+tconstruct:shard:0, Echostone Shard
+tconstruct:shard:0, Igniglomerate Shard
+tconstruct:shard:0, Atronium Shard
+tconstruct:shard:0, Ebonite Shard
+tconstruct:shard:0, Erythynite Shard
+tconstruct:shard:0, Etherstone Shard
+tconstruct:shard:0, Electarite Shard
+tconstruct:shard:0, Hallowsite Shard
+tconstruct:shard:0, Blightsteel Shard
+tconstruct:shard:0, Sanguiseelium Shard
+tconstruct:shard:0, Seared Stone Shard
+tconstruct:shard:0, Ironwood Shard
+tconstruct:shard:0, Penguinite Shard
+tconstruct:shard:0, Arkenium Shard
+tconstruct:shard:0, Skyroot Shard
+tconstruct:shard:0, Holystone Shard
+tconstruct:shard:0, Zanite Shard
+tconstruct:shard:0, Gravitite Shard
+tconstruct:shard:0, Valkyrie Metal Shard
 tconstruct:shard:0, Skyroot Shard
 tconstruct:shard:0, Holystone Shard
 tconstruct:shard:0, Zanite Shard
@@ -14428,6 +14693,7 @@ tconstruct:sharpening_kit:0, Goold Crystal Sharpening Kit
 tconstruct:sharpening_kit:0, Osgloridium Sharpening Kit
 tconstruct:sharpening_kit:0, Arkenium Sharpening Kit
 tconstruct:sharpening_kit:0, Black Bronze Sharpening Kit
+tconstruct:sharpening_kit:0, Blood Infused Glitch Sharpening Kit
 tconstruct:sharpening_kit:0, Magical Wooden Sharpening Kit
 tconstruct:sharpening_kit:0, Evil Infused Sharpening Kit
 tconstruct:sharpening_kit:0, Enchanted Sharpening Kit
@@ -14506,6 +14772,45 @@ tconstruct:sharpening_kit:0, Amethyst Sharpening Kit
 tconstruct:sharpening_kit:0, Osgloglas Sharpening Kit
 tconstruct:sharpening_kit:0, Osmiridium Sharpening Kit
 tconstruct:sharpening_kit:0, Signalum Sharpening Kit
+tconstruct:sharpening_kit:0, Zracohlium Sharpening Kit
+tconstruct:sharpening_kit:0, Fusionite Sharpening Kit
+tconstruct:sharpening_kit:0, Valasium Sharpening Kit
+tconstruct:sharpening_kit:0, Void Spar Sharpening Kit
+tconstruct:sharpening_kit:0, Enderal Sharpening Kit
+tconstruct:sharpening_kit:0, Irradium Sharpening Kit
+tconstruct:sharpening_kit:0, Solsteel Sharpening Kit
+tconstruct:sharpening_kit:0, Gallium Sharpening Kit
+tconstruct:sharpening_kit:0, Enderexamite Sharpening Kit
+tconstruct:sharpening_kit:0, Garstone Sharpening Kit
+tconstruct:sharpening_kit:0, Runesteel Sharpening Kit
+tconstruct:sharpening_kit:0, Gravitonium Sharpening Kit
+tconstruct:sharpening_kit:0, Trichromadentium Sharpening Kit
+tconstruct:sharpening_kit:0, Bloodstone Sharpening Kit
+tconstruct:sharpening_kit:0, Echostone Sharpening Kit
+tconstruct:sharpening_kit:0, Igniglomerate Sharpening Kit
+tconstruct:sharpening_kit:0, Atronium Sharpening Kit
+tconstruct:sharpening_kit:0, Ebonite Sharpening Kit
+tconstruct:sharpening_kit:0, Erythynite Sharpening Kit
+tconstruct:sharpening_kit:0, Shadowglass Sharpening Kit
+tconstruct:sharpening_kit:0, Etherstone Sharpening Kit
+tconstruct:sharpening_kit:0, Electarite Sharpening Kit
+tconstruct:sharpening_kit:0, Hallowsite Sharpening Kit
+tconstruct:sharpening_kit:0, Blightsteel Sharpening Kit
+tconstruct:sharpening_kit:0, Sanguiseelium Sharpening Kit
+tconstruct:sharpening_kit:0, Ioximite Sharpening Kit
+tconstruct:sharpening_kit:0, Nahuatl Sharpening Kit
+tconstruct:sharpening_kit:0, Slimewood Sharpening Kit
+tconstruct:sharpening_kit:0, Seared Stone Sharpening Kit
+tconstruct:sharpening_kit:0, Ironwood Sharpening Kit
+tconstruct:sharpening_kit:0, Penguinite Sharpening Kit
+tconstruct:sharpening_kit:0, Ferroherb Sharpening Kit
+tconstruct:sharpening_kit:0, Arkenium Sharpening Kit
+tconstruct:sharpening_kit:0, Skyroot Sharpening Kit
+tconstruct:sharpening_kit:0, Holystone Sharpening Kit
+tconstruct:sharpening_kit:0, Zanite Sharpening Kit
+tconstruct:sharpening_kit:0, Gravitite Sharpening Kit
+tconstruct:sharpening_kit:0, Valkyrie Metal Sharpening Kit
+tconstruct:sharpening_kit:0, Amberwood Sharpening Kit
 tconstruct:sharpening_kit:0, Skyroot Sharpening Kit
 tconstruct:sharpening_kit:0, Holystone Sharpening Kit
 tconstruct:sharpening_kit:0, Zanite Sharpening Kit
@@ -14655,6 +14960,7 @@ tconstruct:pick_head:0, Goold Crystal Pickaxe Head
 tconstruct:pick_head:0, Osgloridium Pickaxe Head
 tconstruct:pick_head:0, Arkenium Pickaxe Head
 tconstruct:pick_head:0, Black Bronze Pickaxe Head
+tconstruct:pick_head:0, Blood Infused Glitch Pickaxe Head
 tconstruct:pick_head:0, Magical Wooden Pickaxe Head
 tconstruct:pick_head:0, Evil Infused Pickaxe Head
 tconstruct:pick_head:0, Enchanted Pickaxe Head
@@ -14733,6 +15039,45 @@ tconstruct:pick_head:0, Amethyst Pickaxe Head
 tconstruct:pick_head:0, Osgloglas Pickaxe Head
 tconstruct:pick_head:0, Osmiridium Pickaxe Head
 tconstruct:pick_head:0, Signalum Pickaxe Head
+tconstruct:pick_head:0, Zracohlium Pickaxe Head
+tconstruct:pick_head:0, Fusionite Pickaxe Head
+tconstruct:pick_head:0, Valasium Pickaxe Head
+tconstruct:pick_head:0, Void Spar Pickaxe Head
+tconstruct:pick_head:0, Enderal Pickaxe Head
+tconstruct:pick_head:0, Irradium Pickaxe Head
+tconstruct:pick_head:0, Solsteel Pickaxe Head
+tconstruct:pick_head:0, Gallium Pickaxe Head
+tconstruct:pick_head:0, Enderexamite Pickaxe Head
+tconstruct:pick_head:0, Garstone Pickaxe Head
+tconstruct:pick_head:0, Runesteel Pickaxe Head
+tconstruct:pick_head:0, Gravitonium Pickaxe Head
+tconstruct:pick_head:0, Trichromadentium Pickaxe Head
+tconstruct:pick_head:0, Bloodstone Pickaxe Head
+tconstruct:pick_head:0, Echostone Pickaxe Head
+tconstruct:pick_head:0, Igniglomerate Pickaxe Head
+tconstruct:pick_head:0, Atronium Pickaxe Head
+tconstruct:pick_head:0, Ebonite Pickaxe Head
+tconstruct:pick_head:0, Erythynite Pickaxe Head
+tconstruct:pick_head:0, Shadowglass Pickaxe Head
+tconstruct:pick_head:0, Etherstone Pickaxe Head
+tconstruct:pick_head:0, Electarite Pickaxe Head
+tconstruct:pick_head:0, Hallowsite Pickaxe Head
+tconstruct:pick_head:0, Blightsteel Pickaxe Head
+tconstruct:pick_head:0, Sanguiseelium Pickaxe Head
+tconstruct:pick_head:0, Ioximite Pickaxe Head
+tconstruct:pick_head:0, Nahuatl Pickaxe Head
+tconstruct:pick_head:0, Slimewood Pickaxe Head
+tconstruct:pick_head:0, Seared Stone Pickaxe Head
+tconstruct:pick_head:0, Ironwood Pickaxe Head
+tconstruct:pick_head:0, Penguinite Pickaxe Head
+tconstruct:pick_head:0, Ferroherb Pickaxe Head
+tconstruct:pick_head:0, Arkenium Pickaxe Head
+tconstruct:pick_head:0, Skyroot Pickaxe Head
+tconstruct:pick_head:0, Holystone Pickaxe Head
+tconstruct:pick_head:0, Zanite Pickaxe Head
+tconstruct:pick_head:0, Gravitite Pickaxe Head
+tconstruct:pick_head:0, Valkyrie Metal Pickaxe Head
+tconstruct:pick_head:0, Amberwood Pickaxe Head
 tconstruct:pick_head:0, Skyroot Pickaxe Head
 tconstruct:pick_head:0, Holystone Pickaxe Head
 tconstruct:pick_head:0, Zanite Pickaxe Head
@@ -14882,6 +15227,7 @@ tconstruct:shovel_head:0, Goold Crystal Shovel Head
 tconstruct:shovel_head:0, Osgloridium Shovel Head
 tconstruct:shovel_head:0, Arkenium Shovel Head
 tconstruct:shovel_head:0, Black Bronze Shovel Head
+tconstruct:shovel_head:0, Blood Infused Glitch Shovel Head
 tconstruct:shovel_head:0, Magical Wooden Shovel Head
 tconstruct:shovel_head:0, Evil Infused Shovel Head
 tconstruct:shovel_head:0, Enchanted Shovel Head
@@ -14960,6 +15306,45 @@ tconstruct:shovel_head:0, Amethyst Shovel Head
 tconstruct:shovel_head:0, Osgloglas Shovel Head
 tconstruct:shovel_head:0, Osmiridium Shovel Head
 tconstruct:shovel_head:0, Signalum Shovel Head
+tconstruct:shovel_head:0, Zracohlium Shovel Head
+tconstruct:shovel_head:0, Fusionite Shovel Head
+tconstruct:shovel_head:0, Valasium Shovel Head
+tconstruct:shovel_head:0, Void Spar Shovel Head
+tconstruct:shovel_head:0, Enderal Shovel Head
+tconstruct:shovel_head:0, Irradium Shovel Head
+tconstruct:shovel_head:0, Solsteel Shovel Head
+tconstruct:shovel_head:0, Gallium Shovel Head
+tconstruct:shovel_head:0, Enderexamite Shovel Head
+tconstruct:shovel_head:0, Garstone Shovel Head
+tconstruct:shovel_head:0, Runesteel Shovel Head
+tconstruct:shovel_head:0, Gravitonium Shovel Head
+tconstruct:shovel_head:0, Trichromadentium Shovel Head
+tconstruct:shovel_head:0, Bloodstone Shovel Head
+tconstruct:shovel_head:0, Echostone Shovel Head
+tconstruct:shovel_head:0, Igniglomerate Shovel Head
+tconstruct:shovel_head:0, Atronium Shovel Head
+tconstruct:shovel_head:0, Ebonite Shovel Head
+tconstruct:shovel_head:0, Erythynite Shovel Head
+tconstruct:shovel_head:0, Shadowglass Shovel Head
+tconstruct:shovel_head:0, Etherstone Shovel Head
+tconstruct:shovel_head:0, Electarite Shovel Head
+tconstruct:shovel_head:0, Hallowsite Shovel Head
+tconstruct:shovel_head:0, Blightsteel Shovel Head
+tconstruct:shovel_head:0, Sanguiseelium Shovel Head
+tconstruct:shovel_head:0, Ioximite Shovel Head
+tconstruct:shovel_head:0, Nahuatl Shovel Head
+tconstruct:shovel_head:0, Slimewood Shovel Head
+tconstruct:shovel_head:0, Seared Stone Shovel Head
+tconstruct:shovel_head:0, Ironwood Shovel Head
+tconstruct:shovel_head:0, Penguinite Shovel Head
+tconstruct:shovel_head:0, Ferroherb Shovel Head
+tconstruct:shovel_head:0, Arkenium Shovel Head
+tconstruct:shovel_head:0, Skyroot Shovel Head
+tconstruct:shovel_head:0, Holystone Shovel Head
+tconstruct:shovel_head:0, Zanite Shovel Head
+tconstruct:shovel_head:0, Gravitite Shovel Head
+tconstruct:shovel_head:0, Valkyrie Metal Shovel Head
+tconstruct:shovel_head:0, Amberwood Shovel Head
 tconstruct:shovel_head:0, Skyroot Shovel Head
 tconstruct:shovel_head:0, Holystone Shovel Head
 tconstruct:shovel_head:0, Zanite Shovel Head
@@ -15109,6 +15494,7 @@ tconstruct:axe_head:0, Goold Crystal Axe Head
 tconstruct:axe_head:0, Osgloridium Axe Head
 tconstruct:axe_head:0, Arkenium Axe Head
 tconstruct:axe_head:0, Black Bronze Axe Head
+tconstruct:axe_head:0, Blood Infused Glitch Axe Head
 tconstruct:axe_head:0, Magical Wooden Axe Head
 tconstruct:axe_head:0, Evil Infused Axe Head
 tconstruct:axe_head:0, Enchanted Axe Head
@@ -15187,6 +15573,45 @@ tconstruct:axe_head:0, Amethyst Axe Head
 tconstruct:axe_head:0, Osgloglas Axe Head
 tconstruct:axe_head:0, Osmiridium Axe Head
 tconstruct:axe_head:0, Signalum Axe Head
+tconstruct:axe_head:0, Zracohlium Axe Head
+tconstruct:axe_head:0, Fusionite Axe Head
+tconstruct:axe_head:0, Valasium Axe Head
+tconstruct:axe_head:0, Void Spar Axe Head
+tconstruct:axe_head:0, Enderal Axe Head
+tconstruct:axe_head:0, Irradium Axe Head
+tconstruct:axe_head:0, Solsteel Axe Head
+tconstruct:axe_head:0, Gallium Axe Head
+tconstruct:axe_head:0, Enderexamite Axe Head
+tconstruct:axe_head:0, Garstone Axe Head
+tconstruct:axe_head:0, Runesteel Axe Head
+tconstruct:axe_head:0, Gravitonium Axe Head
+tconstruct:axe_head:0, Trichromadentium Axe Head
+tconstruct:axe_head:0, Bloodstone Axe Head
+tconstruct:axe_head:0, Echostone Axe Head
+tconstruct:axe_head:0, Igniglomerate Axe Head
+tconstruct:axe_head:0, Atronium Axe Head
+tconstruct:axe_head:0, Ebonite Axe Head
+tconstruct:axe_head:0, Erythynite Axe Head
+tconstruct:axe_head:0, Shadowglass Axe Head
+tconstruct:axe_head:0, Etherstone Axe Head
+tconstruct:axe_head:0, Electarite Axe Head
+tconstruct:axe_head:0, Hallowsite Axe Head
+tconstruct:axe_head:0, Blightsteel Axe Head
+tconstruct:axe_head:0, Sanguiseelium Axe Head
+tconstruct:axe_head:0, Ioximite Axe Head
+tconstruct:axe_head:0, Nahuatl Axe Head
+tconstruct:axe_head:0, Slimewood Axe Head
+tconstruct:axe_head:0, Seared Stone Axe Head
+tconstruct:axe_head:0, Ironwood Axe Head
+tconstruct:axe_head:0, Penguinite Axe Head
+tconstruct:axe_head:0, Ferroherb Axe Head
+tconstruct:axe_head:0, Arkenium Axe Head
+tconstruct:axe_head:0, Skyroot Axe Head
+tconstruct:axe_head:0, Holystone Axe Head
+tconstruct:axe_head:0, Zanite Axe Head
+tconstruct:axe_head:0, Gravitite Axe Head
+tconstruct:axe_head:0, Valkyrie Metal Axe Head
+tconstruct:axe_head:0, Amberwood Axe Head
 tconstruct:axe_head:0, Skyroot Axe Head
 tconstruct:axe_head:0, Holystone Axe Head
 tconstruct:axe_head:0, Zanite Axe Head
@@ -15336,6 +15761,7 @@ tconstruct:broad_axe_head:0, Goold Crystal Broad Axe Head
 tconstruct:broad_axe_head:0, Osgloridium Broad Axe Head
 tconstruct:broad_axe_head:0, Arkenium Broad Axe Head
 tconstruct:broad_axe_head:0, Black Bronze Broad Axe Head
+tconstruct:broad_axe_head:0, Blood Infused Glitch Broad Axe Head
 tconstruct:broad_axe_head:0, Magical Wooden Broad Axe Head
 tconstruct:broad_axe_head:0, Evil Infused Broad Axe Head
 tconstruct:broad_axe_head:0, Enchanted Broad Axe Head
@@ -15414,6 +15840,45 @@ tconstruct:broad_axe_head:0, Amethyst Broad Axe Head
 tconstruct:broad_axe_head:0, Osgloglas Broad Axe Head
 tconstruct:broad_axe_head:0, Osmiridium Broad Axe Head
 tconstruct:broad_axe_head:0, Signalum Broad Axe Head
+tconstruct:broad_axe_head:0, Zracohlium Broad Axe Head
+tconstruct:broad_axe_head:0, Fusionite Broad Axe Head
+tconstruct:broad_axe_head:0, Valasium Broad Axe Head
+tconstruct:broad_axe_head:0, Void Spar Broad Axe Head
+tconstruct:broad_axe_head:0, Enderal Broad Axe Head
+tconstruct:broad_axe_head:0, Irradium Broad Axe Head
+tconstruct:broad_axe_head:0, Solsteel Broad Axe Head
+tconstruct:broad_axe_head:0, Gallium Broad Axe Head
+tconstruct:broad_axe_head:0, Enderexamite Broad Axe Head
+tconstruct:broad_axe_head:0, Garstone Broad Axe Head
+tconstruct:broad_axe_head:0, Runesteel Broad Axe Head
+tconstruct:broad_axe_head:0, Gravitonium Broad Axe Head
+tconstruct:broad_axe_head:0, Trichromadentium Broad Axe Head
+tconstruct:broad_axe_head:0, Bloodstone Broad Axe Head
+tconstruct:broad_axe_head:0, Echostone Broad Axe Head
+tconstruct:broad_axe_head:0, Igniglomerate Broad Axe Head
+tconstruct:broad_axe_head:0, Atronium Broad Axe Head
+tconstruct:broad_axe_head:0, Ebonite Broad Axe Head
+tconstruct:broad_axe_head:0, Erythynite Broad Axe Head
+tconstruct:broad_axe_head:0, Shadowglass Broad Axe Head
+tconstruct:broad_axe_head:0, Etherstone Broad Axe Head
+tconstruct:broad_axe_head:0, Electarite Broad Axe Head
+tconstruct:broad_axe_head:0, Hallowsite Broad Axe Head
+tconstruct:broad_axe_head:0, Blightsteel Broad Axe Head
+tconstruct:broad_axe_head:0, Sanguiseelium Broad Axe Head
+tconstruct:broad_axe_head:0, Ioximite Broad Axe Head
+tconstruct:broad_axe_head:0, Nahuatl Broad Axe Head
+tconstruct:broad_axe_head:0, Slimewood Broad Axe Head
+tconstruct:broad_axe_head:0, Seared Stone Broad Axe Head
+tconstruct:broad_axe_head:0, Ironwood Broad Axe Head
+tconstruct:broad_axe_head:0, Penguinite Broad Axe Head
+tconstruct:broad_axe_head:0, Ferroherb Broad Axe Head
+tconstruct:broad_axe_head:0, Arkenium Broad Axe Head
+tconstruct:broad_axe_head:0, Skyroot Broad Axe Head
+tconstruct:broad_axe_head:0, Holystone Broad Axe Head
+tconstruct:broad_axe_head:0, Zanite Broad Axe Head
+tconstruct:broad_axe_head:0, Gravitite Broad Axe Head
+tconstruct:broad_axe_head:0, Valkyrie Metal Broad Axe Head
+tconstruct:broad_axe_head:0, Amberwood Broad Axe Head
 tconstruct:broad_axe_head:0, Skyroot Broad Axe Head
 tconstruct:broad_axe_head:0, Holystone Broad Axe Head
 tconstruct:broad_axe_head:0, Zanite Broad Axe Head
@@ -15563,6 +16028,7 @@ tconstruct:sword_blade:0, Goold Crystal Sword Blade
 tconstruct:sword_blade:0, Osgloridium Sword Blade
 tconstruct:sword_blade:0, Arkenium Sword Blade
 tconstruct:sword_blade:0, Black Bronze Sword Blade
+tconstruct:sword_blade:0, Blood Infused Glitch Sword Blade
 tconstruct:sword_blade:0, Magical Wooden Sword Blade
 tconstruct:sword_blade:0, Evil Infused Sword Blade
 tconstruct:sword_blade:0, Enchanted Sword Blade
@@ -15641,6 +16107,45 @@ tconstruct:sword_blade:0, Amethyst Sword Blade
 tconstruct:sword_blade:0, Osgloglas Sword Blade
 tconstruct:sword_blade:0, Osmiridium Sword Blade
 tconstruct:sword_blade:0, Signalum Sword Blade
+tconstruct:sword_blade:0, Zracohlium Sword Blade
+tconstruct:sword_blade:0, Fusionite Sword Blade
+tconstruct:sword_blade:0, Valasium Sword Blade
+tconstruct:sword_blade:0, Void Spar Sword Blade
+tconstruct:sword_blade:0, Enderal Sword Blade
+tconstruct:sword_blade:0, Irradium Sword Blade
+tconstruct:sword_blade:0, Solsteel Sword Blade
+tconstruct:sword_blade:0, Gallium Sword Blade
+tconstruct:sword_blade:0, Enderexamite Sword Blade
+tconstruct:sword_blade:0, Garstone Sword Blade
+tconstruct:sword_blade:0, Runesteel Sword Blade
+tconstruct:sword_blade:0, Gravitonium Sword Blade
+tconstruct:sword_blade:0, Trichromadentium Sword Blade
+tconstruct:sword_blade:0, Bloodstone Sword Blade
+tconstruct:sword_blade:0, Echostone Sword Blade
+tconstruct:sword_blade:0, Igniglomerate Sword Blade
+tconstruct:sword_blade:0, Atronium Sword Blade
+tconstruct:sword_blade:0, Ebonite Sword Blade
+tconstruct:sword_blade:0, Erythynite Sword Blade
+tconstruct:sword_blade:0, Shadowglass Sword Blade
+tconstruct:sword_blade:0, Etherstone Sword Blade
+tconstruct:sword_blade:0, Electarite Sword Blade
+tconstruct:sword_blade:0, Hallowsite Sword Blade
+tconstruct:sword_blade:0, Blightsteel Sword Blade
+tconstruct:sword_blade:0, Sanguiseelium Sword Blade
+tconstruct:sword_blade:0, Ioximite Sword Blade
+tconstruct:sword_blade:0, Nahuatl Sword Blade
+tconstruct:sword_blade:0, Slimewood Sword Blade
+tconstruct:sword_blade:0, Seared Stone Sword Blade
+tconstruct:sword_blade:0, Ironwood Sword Blade
+tconstruct:sword_blade:0, Penguinite Sword Blade
+tconstruct:sword_blade:0, Ferroherb Sword Blade
+tconstruct:sword_blade:0, Arkenium Sword Blade
+tconstruct:sword_blade:0, Skyroot Sword Blade
+tconstruct:sword_blade:0, Holystone Sword Blade
+tconstruct:sword_blade:0, Zanite Sword Blade
+tconstruct:sword_blade:0, Gravitite Sword Blade
+tconstruct:sword_blade:0, Valkyrie Metal Sword Blade
+tconstruct:sword_blade:0, Amberwood Sword Blade
 tconstruct:sword_blade:0, Skyroot Sword Blade
 tconstruct:sword_blade:0, Holystone Sword Blade
 tconstruct:sword_blade:0, Zanite Sword Blade
@@ -15790,6 +16295,7 @@ tconstruct:large_sword_blade:0, Goold Crystal Large Sword Blade
 tconstruct:large_sword_blade:0, Osgloridium Large Sword Blade
 tconstruct:large_sword_blade:0, Arkenium Large Sword Blade
 tconstruct:large_sword_blade:0, Black Bronze Large Sword Blade
+tconstruct:large_sword_blade:0, Blood Infused Glitch Large Sword Blade
 tconstruct:large_sword_blade:0, Magical Wooden Large Sword Blade
 tconstruct:large_sword_blade:0, Evil Infused Large Sword Blade
 tconstruct:large_sword_blade:0, Enchanted Large Sword Blade
@@ -15868,6 +16374,45 @@ tconstruct:large_sword_blade:0, Amethyst Large Sword Blade
 tconstruct:large_sword_blade:0, Osgloglas Large Sword Blade
 tconstruct:large_sword_blade:0, Osmiridium Large Sword Blade
 tconstruct:large_sword_blade:0, Signalum Large Sword Blade
+tconstruct:large_sword_blade:0, Zracohlium Large Sword Blade
+tconstruct:large_sword_blade:0, Fusionite Large Sword Blade
+tconstruct:large_sword_blade:0, Valasium Large Sword Blade
+tconstruct:large_sword_blade:0, Void Spar Large Sword Blade
+tconstruct:large_sword_blade:0, Enderal Large Sword Blade
+tconstruct:large_sword_blade:0, Irradium Large Sword Blade
+tconstruct:large_sword_blade:0, Solsteel Large Sword Blade
+tconstruct:large_sword_blade:0, Gallium Large Sword Blade
+tconstruct:large_sword_blade:0, Enderexamite Large Sword Blade
+tconstruct:large_sword_blade:0, Garstone Large Sword Blade
+tconstruct:large_sword_blade:0, Runesteel Large Sword Blade
+tconstruct:large_sword_blade:0, Gravitonium Large Sword Blade
+tconstruct:large_sword_blade:0, Trichromadentium Large Sword Blade
+tconstruct:large_sword_blade:0, Bloodstone Large Sword Blade
+tconstruct:large_sword_blade:0, Echostone Large Sword Blade
+tconstruct:large_sword_blade:0, Igniglomerate Large Sword Blade
+tconstruct:large_sword_blade:0, Atronium Large Sword Blade
+tconstruct:large_sword_blade:0, Ebonite Large Sword Blade
+tconstruct:large_sword_blade:0, Erythynite Large Sword Blade
+tconstruct:large_sword_blade:0, Shadowglass Large Sword Blade
+tconstruct:large_sword_blade:0, Etherstone Large Sword Blade
+tconstruct:large_sword_blade:0, Electarite Large Sword Blade
+tconstruct:large_sword_blade:0, Hallowsite Large Sword Blade
+tconstruct:large_sword_blade:0, Blightsteel Large Sword Blade
+tconstruct:large_sword_blade:0, Sanguiseelium Large Sword Blade
+tconstruct:large_sword_blade:0, Ioximite Large Sword Blade
+tconstruct:large_sword_blade:0, Nahuatl Large Sword Blade
+tconstruct:large_sword_blade:0, Slimewood Large Sword Blade
+tconstruct:large_sword_blade:0, Seared Stone Large Sword Blade
+tconstruct:large_sword_blade:0, Ironwood Large Sword Blade
+tconstruct:large_sword_blade:0, Penguinite Large Sword Blade
+tconstruct:large_sword_blade:0, Ferroherb Large Sword Blade
+tconstruct:large_sword_blade:0, Arkenium Large Sword Blade
+tconstruct:large_sword_blade:0, Skyroot Large Sword Blade
+tconstruct:large_sword_blade:0, Holystone Large Sword Blade
+tconstruct:large_sword_blade:0, Zanite Large Sword Blade
+tconstruct:large_sword_blade:0, Gravitite Large Sword Blade
+tconstruct:large_sword_blade:0, Valkyrie Metal Large Sword Blade
+tconstruct:large_sword_blade:0, Amberwood Large Sword Blade
 tconstruct:large_sword_blade:0, Skyroot Large Sword Blade
 tconstruct:large_sword_blade:0, Holystone Large Sword Blade
 tconstruct:large_sword_blade:0, Zanite Large Sword Blade
@@ -16017,6 +16562,7 @@ tconstruct:hammer_head:0, Goold Crystal Hammer Head
 tconstruct:hammer_head:0, Osgloridium Hammer Head
 tconstruct:hammer_head:0, Arkenium Hammer Head
 tconstruct:hammer_head:0, Black Bronze Hammer Head
+tconstruct:hammer_head:0, Blood Infused Glitch Hammer Head
 tconstruct:hammer_head:0, Magical Wooden Hammer Head
 tconstruct:hammer_head:0, Evil Infused Hammer Head
 tconstruct:hammer_head:0, Enchanted Hammer Head
@@ -16095,6 +16641,45 @@ tconstruct:hammer_head:0, Amethyst Hammer Head
 tconstruct:hammer_head:0, Osgloglas Hammer Head
 tconstruct:hammer_head:0, Osmiridium Hammer Head
 tconstruct:hammer_head:0, Signalum Hammer Head
+tconstruct:hammer_head:0, Zracohlium Hammer Head
+tconstruct:hammer_head:0, Fusionite Hammer Head
+tconstruct:hammer_head:0, Valasium Hammer Head
+tconstruct:hammer_head:0, Void Spar Hammer Head
+tconstruct:hammer_head:0, Enderal Hammer Head
+tconstruct:hammer_head:0, Irradium Hammer Head
+tconstruct:hammer_head:0, Solsteel Hammer Head
+tconstruct:hammer_head:0, Gallium Hammer Head
+tconstruct:hammer_head:0, Enderexamite Hammer Head
+tconstruct:hammer_head:0, Garstone Hammer Head
+tconstruct:hammer_head:0, Runesteel Hammer Head
+tconstruct:hammer_head:0, Gravitonium Hammer Head
+tconstruct:hammer_head:0, Trichromadentium Hammer Head
+tconstruct:hammer_head:0, Bloodstone Hammer Head
+tconstruct:hammer_head:0, Echostone Hammer Head
+tconstruct:hammer_head:0, Igniglomerate Hammer Head
+tconstruct:hammer_head:0, Atronium Hammer Head
+tconstruct:hammer_head:0, Ebonite Hammer Head
+tconstruct:hammer_head:0, Erythynite Hammer Head
+tconstruct:hammer_head:0, Shadowglass Hammer Head
+tconstruct:hammer_head:0, Etherstone Hammer Head
+tconstruct:hammer_head:0, Electarite Hammer Head
+tconstruct:hammer_head:0, Hallowsite Hammer Head
+tconstruct:hammer_head:0, Blightsteel Hammer Head
+tconstruct:hammer_head:0, Sanguiseelium Hammer Head
+tconstruct:hammer_head:0, Ioximite Hammer Head
+tconstruct:hammer_head:0, Nahuatl Hammer Head
+tconstruct:hammer_head:0, Slimewood Hammer Head
+tconstruct:hammer_head:0, Seared Stone Hammer Head
+tconstruct:hammer_head:0, Ironwood Hammer Head
+tconstruct:hammer_head:0, Penguinite Hammer Head
+tconstruct:hammer_head:0, Ferroherb Hammer Head
+tconstruct:hammer_head:0, Arkenium Hammer Head
+tconstruct:hammer_head:0, Skyroot Hammer Head
+tconstruct:hammer_head:0, Holystone Hammer Head
+tconstruct:hammer_head:0, Zanite Hammer Head
+tconstruct:hammer_head:0, Gravitite Hammer Head
+tconstruct:hammer_head:0, Valkyrie Metal Hammer Head
+tconstruct:hammer_head:0, Amberwood Hammer Head
 tconstruct:hammer_head:0, Skyroot Hammer Head
 tconstruct:hammer_head:0, Holystone Hammer Head
 tconstruct:hammer_head:0, Zanite Hammer Head
@@ -16244,6 +16829,7 @@ tconstruct:excavator_head:0, Goold Crystal Excavator Head
 tconstruct:excavator_head:0, Osgloridium Excavator Head
 tconstruct:excavator_head:0, Arkenium Excavator Head
 tconstruct:excavator_head:0, Black Bronze Excavator Head
+tconstruct:excavator_head:0, Blood Infused Glitch Excavator Head
 tconstruct:excavator_head:0, Magical Wooden Excavator Head
 tconstruct:excavator_head:0, Evil Infused Excavator Head
 tconstruct:excavator_head:0, Enchanted Excavator Head
@@ -16322,6 +16908,45 @@ tconstruct:excavator_head:0, Amethyst Excavator Head
 tconstruct:excavator_head:0, Osgloglas Excavator Head
 tconstruct:excavator_head:0, Osmiridium Excavator Head
 tconstruct:excavator_head:0, Signalum Excavator Head
+tconstruct:excavator_head:0, Zracohlium Excavator Head
+tconstruct:excavator_head:0, Fusionite Excavator Head
+tconstruct:excavator_head:0, Valasium Excavator Head
+tconstruct:excavator_head:0, Void Spar Excavator Head
+tconstruct:excavator_head:0, Enderal Excavator Head
+tconstruct:excavator_head:0, Irradium Excavator Head
+tconstruct:excavator_head:0, Solsteel Excavator Head
+tconstruct:excavator_head:0, Gallium Excavator Head
+tconstruct:excavator_head:0, Enderexamite Excavator Head
+tconstruct:excavator_head:0, Garstone Excavator Head
+tconstruct:excavator_head:0, Runesteel Excavator Head
+tconstruct:excavator_head:0, Gravitonium Excavator Head
+tconstruct:excavator_head:0, Trichromadentium Excavator Head
+tconstruct:excavator_head:0, Bloodstone Excavator Head
+tconstruct:excavator_head:0, Echostone Excavator Head
+tconstruct:excavator_head:0, Igniglomerate Excavator Head
+tconstruct:excavator_head:0, Atronium Excavator Head
+tconstruct:excavator_head:0, Ebonite Excavator Head
+tconstruct:excavator_head:0, Erythynite Excavator Head
+tconstruct:excavator_head:0, Shadowglass Excavator Head
+tconstruct:excavator_head:0, Etherstone Excavator Head
+tconstruct:excavator_head:0, Electarite Excavator Head
+tconstruct:excavator_head:0, Hallowsite Excavator Head
+tconstruct:excavator_head:0, Blightsteel Excavator Head
+tconstruct:excavator_head:0, Sanguiseelium Excavator Head
+tconstruct:excavator_head:0, Ioximite Excavator Head
+tconstruct:excavator_head:0, Nahuatl Excavator Head
+tconstruct:excavator_head:0, Slimewood Excavator Head
+tconstruct:excavator_head:0, Seared Stone Excavator Head
+tconstruct:excavator_head:0, Ironwood Excavator Head
+tconstruct:excavator_head:0, Penguinite Excavator Head
+tconstruct:excavator_head:0, Ferroherb Excavator Head
+tconstruct:excavator_head:0, Arkenium Excavator Head
+tconstruct:excavator_head:0, Skyroot Excavator Head
+tconstruct:excavator_head:0, Holystone Excavator Head
+tconstruct:excavator_head:0, Zanite Excavator Head
+tconstruct:excavator_head:0, Gravitite Excavator Head
+tconstruct:excavator_head:0, Valkyrie Metal Excavator Head
+tconstruct:excavator_head:0, Amberwood Excavator Head
 tconstruct:excavator_head:0, Skyroot Excavator Head
 tconstruct:excavator_head:0, Holystone Excavator Head
 tconstruct:excavator_head:0, Zanite Excavator Head
@@ -16471,6 +17096,7 @@ tconstruct:kama_head:0, Goold Crystal Kama Head
 tconstruct:kama_head:0, Osgloridium Kama Head
 tconstruct:kama_head:0, Arkenium Kama Head
 tconstruct:kama_head:0, Black Bronze Kama Head
+tconstruct:kama_head:0, Blood Infused Glitch Kama Head
 tconstruct:kama_head:0, Magical Wooden Kama Head
 tconstruct:kama_head:0, Evil Infused Kama Head
 tconstruct:kama_head:0, Enchanted Kama Head
@@ -16549,6 +17175,45 @@ tconstruct:kama_head:0, Amethyst Kama Head
 tconstruct:kama_head:0, Osgloglas Kama Head
 tconstruct:kama_head:0, Osmiridium Kama Head
 tconstruct:kama_head:0, Signalum Kama Head
+tconstruct:kama_head:0, Zracohlium Kama Head
+tconstruct:kama_head:0, Fusionite Kama Head
+tconstruct:kama_head:0, Valasium Kama Head
+tconstruct:kama_head:0, Void Spar Kama Head
+tconstruct:kama_head:0, Enderal Kama Head
+tconstruct:kama_head:0, Irradium Kama Head
+tconstruct:kama_head:0, Solsteel Kama Head
+tconstruct:kama_head:0, Gallium Kama Head
+tconstruct:kama_head:0, Enderexamite Kama Head
+tconstruct:kama_head:0, Garstone Kama Head
+tconstruct:kama_head:0, Runesteel Kama Head
+tconstruct:kama_head:0, Gravitonium Kama Head
+tconstruct:kama_head:0, Trichromadentium Kama Head
+tconstruct:kama_head:0, Bloodstone Kama Head
+tconstruct:kama_head:0, Echostone Kama Head
+tconstruct:kama_head:0, Igniglomerate Kama Head
+tconstruct:kama_head:0, Atronium Kama Head
+tconstruct:kama_head:0, Ebonite Kama Head
+tconstruct:kama_head:0, Erythynite Kama Head
+tconstruct:kama_head:0, Shadowglass Kama Head
+tconstruct:kama_head:0, Etherstone Kama Head
+tconstruct:kama_head:0, Electarite Kama Head
+tconstruct:kama_head:0, Hallowsite Kama Head
+tconstruct:kama_head:0, Blightsteel Kama Head
+tconstruct:kama_head:0, Sanguiseelium Kama Head
+tconstruct:kama_head:0, Ioximite Kama Head
+tconstruct:kama_head:0, Nahuatl Kama Head
+tconstruct:kama_head:0, Slimewood Kama Head
+tconstruct:kama_head:0, Seared Stone Kama Head
+tconstruct:kama_head:0, Ironwood Kama Head
+tconstruct:kama_head:0, Penguinite Kama Head
+tconstruct:kama_head:0, Ferroherb Kama Head
+tconstruct:kama_head:0, Arkenium Kama Head
+tconstruct:kama_head:0, Skyroot Kama Head
+tconstruct:kama_head:0, Holystone Kama Head
+tconstruct:kama_head:0, Zanite Kama Head
+tconstruct:kama_head:0, Gravitite Kama Head
+tconstruct:kama_head:0, Valkyrie Metal Kama Head
+tconstruct:kama_head:0, Amberwood Kama Head
 tconstruct:kama_head:0, Skyroot Kama Head
 tconstruct:kama_head:0, Holystone Kama Head
 tconstruct:kama_head:0, Zanite Kama Head
@@ -16698,6 +17363,7 @@ tconstruct:scythe_head:0, Goold Crystal Scythe Head
 tconstruct:scythe_head:0, Osgloridium Scythe Head
 tconstruct:scythe_head:0, Arkenium Scythe Head
 tconstruct:scythe_head:0, Black Bronze Scythe Head
+tconstruct:scythe_head:0, Blood Infused Glitch Scythe Head
 tconstruct:scythe_head:0, Magical Wooden Scythe Head
 tconstruct:scythe_head:0, Evil Infused Scythe Head
 tconstruct:scythe_head:0, Enchanted Scythe Head
@@ -16776,6 +17442,45 @@ tconstruct:scythe_head:0, Amethyst Scythe Head
 tconstruct:scythe_head:0, Osgloglas Scythe Head
 tconstruct:scythe_head:0, Osmiridium Scythe Head
 tconstruct:scythe_head:0, Signalum Scythe Head
+tconstruct:scythe_head:0, Zracohlium Scythe Head
+tconstruct:scythe_head:0, Fusionite Scythe Head
+tconstruct:scythe_head:0, Valasium Scythe Head
+tconstruct:scythe_head:0, Void Spar Scythe Head
+tconstruct:scythe_head:0, Enderal Scythe Head
+tconstruct:scythe_head:0, Irradium Scythe Head
+tconstruct:scythe_head:0, Solsteel Scythe Head
+tconstruct:scythe_head:0, Gallium Scythe Head
+tconstruct:scythe_head:0, Enderexamite Scythe Head
+tconstruct:scythe_head:0, Garstone Scythe Head
+tconstruct:scythe_head:0, Runesteel Scythe Head
+tconstruct:scythe_head:0, Gravitonium Scythe Head
+tconstruct:scythe_head:0, Trichromadentium Scythe Head
+tconstruct:scythe_head:0, Bloodstone Scythe Head
+tconstruct:scythe_head:0, Echostone Scythe Head
+tconstruct:scythe_head:0, Igniglomerate Scythe Head
+tconstruct:scythe_head:0, Atronium Scythe Head
+tconstruct:scythe_head:0, Ebonite Scythe Head
+tconstruct:scythe_head:0, Erythynite Scythe Head
+tconstruct:scythe_head:0, Shadowglass Scythe Head
+tconstruct:scythe_head:0, Etherstone Scythe Head
+tconstruct:scythe_head:0, Electarite Scythe Head
+tconstruct:scythe_head:0, Hallowsite Scythe Head
+tconstruct:scythe_head:0, Blightsteel Scythe Head
+tconstruct:scythe_head:0, Sanguiseelium Scythe Head
+tconstruct:scythe_head:0, Ioximite Scythe Head
+tconstruct:scythe_head:0, Nahuatl Scythe Head
+tconstruct:scythe_head:0, Slimewood Scythe Head
+tconstruct:scythe_head:0, Seared Stone Scythe Head
+tconstruct:scythe_head:0, Ironwood Scythe Head
+tconstruct:scythe_head:0, Penguinite Scythe Head
+tconstruct:scythe_head:0, Ferroherb Scythe Head
+tconstruct:scythe_head:0, Arkenium Scythe Head
+tconstruct:scythe_head:0, Skyroot Scythe Head
+tconstruct:scythe_head:0, Holystone Scythe Head
+tconstruct:scythe_head:0, Zanite Scythe Head
+tconstruct:scythe_head:0, Gravitite Scythe Head
+tconstruct:scythe_head:0, Valkyrie Metal Scythe Head
+tconstruct:scythe_head:0, Amberwood Scythe Head
 tconstruct:scythe_head:0, Skyroot Scythe Head
 tconstruct:scythe_head:0, Holystone Scythe Head
 tconstruct:scythe_head:0, Zanite Scythe Head
@@ -16925,6 +17630,7 @@ tconstruct:pan_head:0, Goold Crystal Pan
 tconstruct:pan_head:0, Osgloridium Pan
 tconstruct:pan_head:0, Arkenium Pan
 tconstruct:pan_head:0, Black Bronze Pan
+tconstruct:pan_head:0, Blood Infused Glitch Pan
 tconstruct:pan_head:0, Magical Wooden Pan
 tconstruct:pan_head:0, Evil Infused Pan
 tconstruct:pan_head:0, Enchanted Pan
@@ -17003,6 +17709,45 @@ tconstruct:pan_head:0, Amethyst Pan
 tconstruct:pan_head:0, Osgloglas Pan
 tconstruct:pan_head:0, Osmiridium Pan
 tconstruct:pan_head:0, Signalum Pan
+tconstruct:pan_head:0, Zracohlium Pan
+tconstruct:pan_head:0, Fusionite Pan
+tconstruct:pan_head:0, Valasium Pan
+tconstruct:pan_head:0, Void Spar Pan
+tconstruct:pan_head:0, Enderal Pan
+tconstruct:pan_head:0, Irradium Pan
+tconstruct:pan_head:0, Solsteel Pan
+tconstruct:pan_head:0, Gallium Pan
+tconstruct:pan_head:0, Enderexamite Pan
+tconstruct:pan_head:0, Garstone Pan
+tconstruct:pan_head:0, Runesteel Pan
+tconstruct:pan_head:0, Gravitonium Pan
+tconstruct:pan_head:0, Trichromadentium Pan
+tconstruct:pan_head:0, Bloodstone Pan
+tconstruct:pan_head:0, Echostone Pan
+tconstruct:pan_head:0, Igniglomerate Pan
+tconstruct:pan_head:0, Atronium Pan
+tconstruct:pan_head:0, Ebonite Pan
+tconstruct:pan_head:0, Erythynite Pan
+tconstruct:pan_head:0, Shadowglass Pan
+tconstruct:pan_head:0, Etherstone Pan
+tconstruct:pan_head:0, Electarite Pan
+tconstruct:pan_head:0, Hallowsite Pan
+tconstruct:pan_head:0, Blightsteel Pan
+tconstruct:pan_head:0, Sanguiseelium Pan
+tconstruct:pan_head:0, Ioximite Pan
+tconstruct:pan_head:0, Nahuatl Pan
+tconstruct:pan_head:0, Slimewood Pan
+tconstruct:pan_head:0, Seared Stone Pan
+tconstruct:pan_head:0, Ironwood Pan
+tconstruct:pan_head:0, Penguinite Pan
+tconstruct:pan_head:0, Ferroherb Pan
+tconstruct:pan_head:0, Arkenium Pan
+tconstruct:pan_head:0, Skyroot Pan
+tconstruct:pan_head:0, Holystone Pan
+tconstruct:pan_head:0, Zanite Pan
+tconstruct:pan_head:0, Gravitite Pan
+tconstruct:pan_head:0, Valkyrie Metal Pan
+tconstruct:pan_head:0, Amberwood Pan
 tconstruct:pan_head:0, Skyroot Pan
 tconstruct:pan_head:0, Holystone Pan
 tconstruct:pan_head:0, Zanite Pan
@@ -17152,6 +17897,7 @@ tconstruct:sign_head:0, Goold Crystal Sign Plate
 tconstruct:sign_head:0, Osgloridium Sign Plate
 tconstruct:sign_head:0, Arkenium Sign Plate
 tconstruct:sign_head:0, Black Bronze Sign Plate
+tconstruct:sign_head:0, Blood Infused Glitch Sign Plate
 tconstruct:sign_head:0, Magical Wooden Sign Plate
 tconstruct:sign_head:0, Evil Infused Sign Plate
 tconstruct:sign_head:0, Enchanted Sign Plate
@@ -17230,6 +17976,45 @@ tconstruct:sign_head:0, Amethyst Sign Plate
 tconstruct:sign_head:0, Osgloglas Sign Plate
 tconstruct:sign_head:0, Osmiridium Sign Plate
 tconstruct:sign_head:0, Signalum Sign Plate
+tconstruct:sign_head:0, Zracohlium Sign Plate
+tconstruct:sign_head:0, Fusionite Sign Plate
+tconstruct:sign_head:0, Valasium Sign Plate
+tconstruct:sign_head:0, Void Spar Sign Plate
+tconstruct:sign_head:0, Enderal Sign Plate
+tconstruct:sign_head:0, Irradium Sign Plate
+tconstruct:sign_head:0, Solsteel Sign Plate
+tconstruct:sign_head:0, Gallium Sign Plate
+tconstruct:sign_head:0, Enderexamite Sign Plate
+tconstruct:sign_head:0, Garstone Sign Plate
+tconstruct:sign_head:0, Runesteel Sign Plate
+tconstruct:sign_head:0, Gravitonium Sign Plate
+tconstruct:sign_head:0, Trichromadentium Sign Plate
+tconstruct:sign_head:0, Bloodstone Sign Plate
+tconstruct:sign_head:0, Echostone Sign Plate
+tconstruct:sign_head:0, Igniglomerate Sign Plate
+tconstruct:sign_head:0, Atronium Sign Plate
+tconstruct:sign_head:0, Ebonite Sign Plate
+tconstruct:sign_head:0, Erythynite Sign Plate
+tconstruct:sign_head:0, Shadowglass Sign Plate
+tconstruct:sign_head:0, Etherstone Sign Plate
+tconstruct:sign_head:0, Electarite Sign Plate
+tconstruct:sign_head:0, Hallowsite Sign Plate
+tconstruct:sign_head:0, Blightsteel Sign Plate
+tconstruct:sign_head:0, Sanguiseelium Sign Plate
+tconstruct:sign_head:0, Ioximite Sign Plate
+tconstruct:sign_head:0, Nahuatl Sign Plate
+tconstruct:sign_head:0, Slimewood Sign Plate
+tconstruct:sign_head:0, Seared Stone Sign Plate
+tconstruct:sign_head:0, Ironwood Sign Plate
+tconstruct:sign_head:0, Penguinite Sign Plate
+tconstruct:sign_head:0, Ferroherb Sign Plate
+tconstruct:sign_head:0, Arkenium Sign Plate
+tconstruct:sign_head:0, Skyroot Sign Plate
+tconstruct:sign_head:0, Holystone Sign Plate
+tconstruct:sign_head:0, Zanite Sign Plate
+tconstruct:sign_head:0, Gravitite Sign Plate
+tconstruct:sign_head:0, Valkyrie Metal Sign Plate
+tconstruct:sign_head:0, Amberwood Sign Plate
 tconstruct:sign_head:0, Skyroot Sign Plate
 tconstruct:sign_head:0, Holystone Sign Plate
 tconstruct:sign_head:0, Zanite Sign Plate
@@ -17379,6 +18164,7 @@ tconstruct:tool_rod:0, Goold Crystal Tool Rod
 tconstruct:tool_rod:0, Osgloridium Tool Rod
 tconstruct:tool_rod:0, Arkenium Tool Rod
 tconstruct:tool_rod:0, Black Bronze Tool Rod
+tconstruct:tool_rod:0, Blood Infused Glitch Tool Rod
 tconstruct:tool_rod:0, Magical Wooden Tool Rod
 tconstruct:tool_rod:0, Evil Infused Tool Rod
 tconstruct:tool_rod:0, Enchanted Tool Rod
@@ -17457,6 +18243,45 @@ tconstruct:tool_rod:0, Amethyst Tool Rod
 tconstruct:tool_rod:0, Osgloglas Tool Rod
 tconstruct:tool_rod:0, Osmiridium Tool Rod
 tconstruct:tool_rod:0, Signalum Tool Rod
+tconstruct:tool_rod:0, Zracohlium Tool Rod
+tconstruct:tool_rod:0, Fusionite Tool Rod
+tconstruct:tool_rod:0, Valasium Tool Rod
+tconstruct:tool_rod:0, Void Spar Tool Rod
+tconstruct:tool_rod:0, Enderal Tool Rod
+tconstruct:tool_rod:0, Irradium Tool Rod
+tconstruct:tool_rod:0, Solsteel Tool Rod
+tconstruct:tool_rod:0, Gallium Tool Rod
+tconstruct:tool_rod:0, Enderexamite Tool Rod
+tconstruct:tool_rod:0, Garstone Tool Rod
+tconstruct:tool_rod:0, Runesteel Tool Rod
+tconstruct:tool_rod:0, Gravitonium Tool Rod
+tconstruct:tool_rod:0, Trichromadentium Tool Rod
+tconstruct:tool_rod:0, Bloodstone Tool Rod
+tconstruct:tool_rod:0, Echostone Tool Rod
+tconstruct:tool_rod:0, Igniglomerate Tool Rod
+tconstruct:tool_rod:0, Atronium Tool Rod
+tconstruct:tool_rod:0, Ebonite Tool Rod
+tconstruct:tool_rod:0, Erythynite Tool Rod
+tconstruct:tool_rod:0, Shadowglass Tool Rod
+tconstruct:tool_rod:0, Etherstone Tool Rod
+tconstruct:tool_rod:0, Electarite Tool Rod
+tconstruct:tool_rod:0, Hallowsite Tool Rod
+tconstruct:tool_rod:0, Blightsteel Tool Rod
+tconstruct:tool_rod:0, Sanguiseelium Tool Rod
+tconstruct:tool_rod:0, Ioximite Tool Rod
+tconstruct:tool_rod:0, Nahuatl Tool Rod
+tconstruct:tool_rod:0, Slimewood Tool Rod
+tconstruct:tool_rod:0, Seared Stone Tool Rod
+tconstruct:tool_rod:0, Ironwood Tool Rod
+tconstruct:tool_rod:0, Penguinite Tool Rod
+tconstruct:tool_rod:0, Ferroherb Tool Rod
+tconstruct:tool_rod:0, Arkenium Tool Rod
+tconstruct:tool_rod:0, Skyroot Tool Rod
+tconstruct:tool_rod:0, Holystone Tool Rod
+tconstruct:tool_rod:0, Zanite Tool Rod
+tconstruct:tool_rod:0, Gravitite Tool Rod
+tconstruct:tool_rod:0, Valkyrie Metal Tool Rod
+tconstruct:tool_rod:0, Amberwood Tool Rod
 tconstruct:tool_rod:0, Skyroot Tool Rod
 tconstruct:tool_rod:0, Holystone Tool Rod
 tconstruct:tool_rod:0, Zanite Tool Rod
@@ -17605,6 +18430,7 @@ tconstruct:tough_tool_rod:0, Goold Crystal Tough Tool Rod
 tconstruct:tough_tool_rod:0, Osgloridium Tough Tool Rod
 tconstruct:tough_tool_rod:0, Arkenium Tough Tool Rod
 tconstruct:tough_tool_rod:0, Black Bronze Tough Tool Rod
+tconstruct:tough_tool_rod:0, Blood Infused Glitch Tough Tool Rod
 tconstruct:tough_tool_rod:0, Magical Wooden Tough Tool Rod
 tconstruct:tough_tool_rod:0, Evil Infused Tough Tool Rod
 tconstruct:tough_tool_rod:0, Enchanted Tough Tool Rod
@@ -17683,6 +18509,45 @@ tconstruct:tough_tool_rod:0, Amethyst Tough Tool Rod
 tconstruct:tough_tool_rod:0, Osgloglas Tough Tool Rod
 tconstruct:tough_tool_rod:0, Osmiridium Tough Tool Rod
 tconstruct:tough_tool_rod:0, Signalum Tough Tool Rod
+tconstruct:tough_tool_rod:0, Zracohlium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Fusionite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Valasium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Void Spar Tough Tool Rod
+tconstruct:tough_tool_rod:0, Enderal Tough Tool Rod
+tconstruct:tough_tool_rod:0, Irradium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Solsteel Tough Tool Rod
+tconstruct:tough_tool_rod:0, Gallium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Enderexamite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Garstone Tough Tool Rod
+tconstruct:tough_tool_rod:0, Runesteel Tough Tool Rod
+tconstruct:tough_tool_rod:0, Gravitonium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Trichromadentium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Bloodstone Tough Tool Rod
+tconstruct:tough_tool_rod:0, Echostone Tough Tool Rod
+tconstruct:tough_tool_rod:0, Igniglomerate Tough Tool Rod
+tconstruct:tough_tool_rod:0, Atronium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Ebonite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Erythynite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Shadowglass Tough Tool Rod
+tconstruct:tough_tool_rod:0, Etherstone Tough Tool Rod
+tconstruct:tough_tool_rod:0, Electarite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Hallowsite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Blightsteel Tough Tool Rod
+tconstruct:tough_tool_rod:0, Sanguiseelium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Ioximite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Nahuatl Tough Tool Rod
+tconstruct:tough_tool_rod:0, Slimewood Tough Tool Rod
+tconstruct:tough_tool_rod:0, Seared Stone Tough Tool Rod
+tconstruct:tough_tool_rod:0, Ironwood Tough Tool Rod
+tconstruct:tough_tool_rod:0, Penguinite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Ferroherb Tough Tool Rod
+tconstruct:tough_tool_rod:0, Arkenium Tough Tool Rod
+tconstruct:tough_tool_rod:0, Skyroot Tough Tool Rod
+tconstruct:tough_tool_rod:0, Holystone Tough Tool Rod
+tconstruct:tough_tool_rod:0, Zanite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Gravitite Tough Tool Rod
+tconstruct:tough_tool_rod:0, Valkyrie Metal Tough Tool Rod
+tconstruct:tough_tool_rod:0, Amberwood Tough Tool Rod
 tconstruct:tough_tool_rod:0, Skyroot Tough Tool Rod
 tconstruct:tough_tool_rod:0, Holystone Tough Tool Rod
 tconstruct:tough_tool_rod:0, Zanite Tough Tool Rod
@@ -17831,6 +18696,7 @@ tconstruct:binding:0, Goold Crystal Binding
 tconstruct:binding:0, Osgloridium Binding
 tconstruct:binding:0, Arkenium Binding
 tconstruct:binding:0, Black Bronze Binding
+tconstruct:binding:0, Blood Infused Glitch Binding
 tconstruct:binding:0, Magical Wooden Binding
 tconstruct:binding:0, Evil Infused Binding
 tconstruct:binding:0, Enchanted Binding
@@ -17909,6 +18775,45 @@ tconstruct:binding:0, Amethyst Binding
 tconstruct:binding:0, Osgloglas Binding
 tconstruct:binding:0, Osmiridium Binding
 tconstruct:binding:0, Signalum Binding
+tconstruct:binding:0, Zracohlium Binding
+tconstruct:binding:0, Fusionite Binding
+tconstruct:binding:0, Valasium Binding
+tconstruct:binding:0, Void Spar Binding
+tconstruct:binding:0, Enderal Binding
+tconstruct:binding:0, Irradium Binding
+tconstruct:binding:0, Solsteel Binding
+tconstruct:binding:0, Gallium Binding
+tconstruct:binding:0, Enderexamite Binding
+tconstruct:binding:0, Garstone Binding
+tconstruct:binding:0, Runesteel Binding
+tconstruct:binding:0, Gravitonium Binding
+tconstruct:binding:0, Trichromadentium Binding
+tconstruct:binding:0, Bloodstone Binding
+tconstruct:binding:0, Echostone Binding
+tconstruct:binding:0, Igniglomerate Binding
+tconstruct:binding:0, Atronium Binding
+tconstruct:binding:0, Ebonite Binding
+tconstruct:binding:0, Erythynite Binding
+tconstruct:binding:0, Shadowglass Binding
+tconstruct:binding:0, Etherstone Binding
+tconstruct:binding:0, Electarite Binding
+tconstruct:binding:0, Hallowsite Binding
+tconstruct:binding:0, Blightsteel Binding
+tconstruct:binding:0, Sanguiseelium Binding
+tconstruct:binding:0, Ioximite Binding
+tconstruct:binding:0, Nahuatl Binding
+tconstruct:binding:0, Slimewood Binding
+tconstruct:binding:0, Seared Stone Binding
+tconstruct:binding:0, Ironwood Binding
+tconstruct:binding:0, Penguinite Binding
+tconstruct:binding:0, Ferroherb Binding
+tconstruct:binding:0, Arkenium Binding
+tconstruct:binding:0, Skyroot Binding
+tconstruct:binding:0, Holystone Binding
+tconstruct:binding:0, Zanite Binding
+tconstruct:binding:0, Gravitite Binding
+tconstruct:binding:0, Valkyrie Metal Binding
+tconstruct:binding:0, Amberwood Binding
 tconstruct:binding:0, Skyroot Binding
 tconstruct:binding:0, Holystone Binding
 tconstruct:binding:0, Zanite Binding
@@ -18057,6 +18962,7 @@ tconstruct:tough_binding:0, Goold Crystal Tough Binding
 tconstruct:tough_binding:0, Osgloridium Tough Binding
 tconstruct:tough_binding:0, Arkenium Tough Binding
 tconstruct:tough_binding:0, Black Bronze Tough Binding
+tconstruct:tough_binding:0, Blood Infused Glitch Tough Binding
 tconstruct:tough_binding:0, Magical Wooden Tough Binding
 tconstruct:tough_binding:0, Evil Infused Tough Binding
 tconstruct:tough_binding:0, Enchanted Tough Binding
@@ -18135,6 +19041,45 @@ tconstruct:tough_binding:0, Amethyst Tough Binding
 tconstruct:tough_binding:0, Osgloglas Tough Binding
 tconstruct:tough_binding:0, Osmiridium Tough Binding
 tconstruct:tough_binding:0, Signalum Tough Binding
+tconstruct:tough_binding:0, Zracohlium Tough Binding
+tconstruct:tough_binding:0, Fusionite Tough Binding
+tconstruct:tough_binding:0, Valasium Tough Binding
+tconstruct:tough_binding:0, Void Spar Tough Binding
+tconstruct:tough_binding:0, Enderal Tough Binding
+tconstruct:tough_binding:0, Irradium Tough Binding
+tconstruct:tough_binding:0, Solsteel Tough Binding
+tconstruct:tough_binding:0, Gallium Tough Binding
+tconstruct:tough_binding:0, Enderexamite Tough Binding
+tconstruct:tough_binding:0, Garstone Tough Binding
+tconstruct:tough_binding:0, Runesteel Tough Binding
+tconstruct:tough_binding:0, Gravitonium Tough Binding
+tconstruct:tough_binding:0, Trichromadentium Tough Binding
+tconstruct:tough_binding:0, Bloodstone Tough Binding
+tconstruct:tough_binding:0, Echostone Tough Binding
+tconstruct:tough_binding:0, Igniglomerate Tough Binding
+tconstruct:tough_binding:0, Atronium Tough Binding
+tconstruct:tough_binding:0, Ebonite Tough Binding
+tconstruct:tough_binding:0, Erythynite Tough Binding
+tconstruct:tough_binding:0, Shadowglass Tough Binding
+tconstruct:tough_binding:0, Etherstone Tough Binding
+tconstruct:tough_binding:0, Electarite Tough Binding
+tconstruct:tough_binding:0, Hallowsite Tough Binding
+tconstruct:tough_binding:0, Blightsteel Tough Binding
+tconstruct:tough_binding:0, Sanguiseelium Tough Binding
+tconstruct:tough_binding:0, Ioximite Tough Binding
+tconstruct:tough_binding:0, Nahuatl Tough Binding
+tconstruct:tough_binding:0, Slimewood Tough Binding
+tconstruct:tough_binding:0, Seared Stone Tough Binding
+tconstruct:tough_binding:0, Ironwood Tough Binding
+tconstruct:tough_binding:0, Penguinite Tough Binding
+tconstruct:tough_binding:0, Ferroherb Tough Binding
+tconstruct:tough_binding:0, Arkenium Tough Binding
+tconstruct:tough_binding:0, Skyroot Tough Binding
+tconstruct:tough_binding:0, Holystone Tough Binding
+tconstruct:tough_binding:0, Zanite Tough Binding
+tconstruct:tough_binding:0, Gravitite Tough Binding
+tconstruct:tough_binding:0, Valkyrie Metal Tough Binding
+tconstruct:tough_binding:0, Amberwood Tough Binding
 tconstruct:tough_binding:0, Skyroot Tough Binding
 tconstruct:tough_binding:0, Holystone Tough Binding
 tconstruct:tough_binding:0, Zanite Tough Binding
@@ -18283,6 +19228,7 @@ tconstruct:wide_guard:0, Goold Crystal Wide Guard
 tconstruct:wide_guard:0, Osgloridium Wide Guard
 tconstruct:wide_guard:0, Arkenium Wide Guard
 tconstruct:wide_guard:0, Black Bronze Wide Guard
+tconstruct:wide_guard:0, Blood Infused Glitch Wide Guard
 tconstruct:wide_guard:0, Magical Wooden Wide Guard
 tconstruct:wide_guard:0, Evil Infused Wide Guard
 tconstruct:wide_guard:0, Enchanted Wide Guard
@@ -18361,6 +19307,45 @@ tconstruct:wide_guard:0, Amethyst Wide Guard
 tconstruct:wide_guard:0, Osgloglas Wide Guard
 tconstruct:wide_guard:0, Osmiridium Wide Guard
 tconstruct:wide_guard:0, Signalum Wide Guard
+tconstruct:wide_guard:0, Zracohlium Wide Guard
+tconstruct:wide_guard:0, Fusionite Wide Guard
+tconstruct:wide_guard:0, Valasium Wide Guard
+tconstruct:wide_guard:0, Void Spar Wide Guard
+tconstruct:wide_guard:0, Enderal Wide Guard
+tconstruct:wide_guard:0, Irradium Wide Guard
+tconstruct:wide_guard:0, Solsteel Wide Guard
+tconstruct:wide_guard:0, Gallium Wide Guard
+tconstruct:wide_guard:0, Enderexamite Wide Guard
+tconstruct:wide_guard:0, Garstone Wide Guard
+tconstruct:wide_guard:0, Runesteel Wide Guard
+tconstruct:wide_guard:0, Gravitonium Wide Guard
+tconstruct:wide_guard:0, Trichromadentium Wide Guard
+tconstruct:wide_guard:0, Bloodstone Wide Guard
+tconstruct:wide_guard:0, Echostone Wide Guard
+tconstruct:wide_guard:0, Igniglomerate Wide Guard
+tconstruct:wide_guard:0, Atronium Wide Guard
+tconstruct:wide_guard:0, Ebonite Wide Guard
+tconstruct:wide_guard:0, Erythynite Wide Guard
+tconstruct:wide_guard:0, Shadowglass Wide Guard
+tconstruct:wide_guard:0, Etherstone Wide Guard
+tconstruct:wide_guard:0, Electarite Wide Guard
+tconstruct:wide_guard:0, Hallowsite Wide Guard
+tconstruct:wide_guard:0, Blightsteel Wide Guard
+tconstruct:wide_guard:0, Sanguiseelium Wide Guard
+tconstruct:wide_guard:0, Ioximite Wide Guard
+tconstruct:wide_guard:0, Nahuatl Wide Guard
+tconstruct:wide_guard:0, Slimewood Wide Guard
+tconstruct:wide_guard:0, Seared Stone Wide Guard
+tconstruct:wide_guard:0, Ironwood Wide Guard
+tconstruct:wide_guard:0, Penguinite Wide Guard
+tconstruct:wide_guard:0, Ferroherb Wide Guard
+tconstruct:wide_guard:0, Arkenium Wide Guard
+tconstruct:wide_guard:0, Skyroot Wide Guard
+tconstruct:wide_guard:0, Holystone Wide Guard
+tconstruct:wide_guard:0, Zanite Wide Guard
+tconstruct:wide_guard:0, Gravitite Wide Guard
+tconstruct:wide_guard:0, Valkyrie Metal Wide Guard
+tconstruct:wide_guard:0, Amberwood Wide Guard
 tconstruct:wide_guard:0, Skyroot Wide Guard
 tconstruct:wide_guard:0, Holystone Wide Guard
 tconstruct:wide_guard:0, Zanite Wide Guard
@@ -18509,6 +19494,7 @@ tconstruct:hand_guard:0, Goold Crystal Hand Guard
 tconstruct:hand_guard:0, Osgloridium Hand Guard
 tconstruct:hand_guard:0, Arkenium Hand Guard
 tconstruct:hand_guard:0, Black Bronze Hand Guard
+tconstruct:hand_guard:0, Blood Infused Glitch Hand Guard
 tconstruct:hand_guard:0, Magical Wooden Hand Guard
 tconstruct:hand_guard:0, Evil Infused Hand Guard
 tconstruct:hand_guard:0, Enchanted Hand Guard
@@ -18587,6 +19573,45 @@ tconstruct:hand_guard:0, Amethyst Hand Guard
 tconstruct:hand_guard:0, Osgloglas Hand Guard
 tconstruct:hand_guard:0, Osmiridium Hand Guard
 tconstruct:hand_guard:0, Signalum Hand Guard
+tconstruct:hand_guard:0, Zracohlium Hand Guard
+tconstruct:hand_guard:0, Fusionite Hand Guard
+tconstruct:hand_guard:0, Valasium Hand Guard
+tconstruct:hand_guard:0, Void Spar Hand Guard
+tconstruct:hand_guard:0, Enderal Hand Guard
+tconstruct:hand_guard:0, Irradium Hand Guard
+tconstruct:hand_guard:0, Solsteel Hand Guard
+tconstruct:hand_guard:0, Gallium Hand Guard
+tconstruct:hand_guard:0, Enderexamite Hand Guard
+tconstruct:hand_guard:0, Garstone Hand Guard
+tconstruct:hand_guard:0, Runesteel Hand Guard
+tconstruct:hand_guard:0, Gravitonium Hand Guard
+tconstruct:hand_guard:0, Trichromadentium Hand Guard
+tconstruct:hand_guard:0, Bloodstone Hand Guard
+tconstruct:hand_guard:0, Echostone Hand Guard
+tconstruct:hand_guard:0, Igniglomerate Hand Guard
+tconstruct:hand_guard:0, Atronium Hand Guard
+tconstruct:hand_guard:0, Ebonite Hand Guard
+tconstruct:hand_guard:0, Erythynite Hand Guard
+tconstruct:hand_guard:0, Shadowglass Hand Guard
+tconstruct:hand_guard:0, Etherstone Hand Guard
+tconstruct:hand_guard:0, Electarite Hand Guard
+tconstruct:hand_guard:0, Hallowsite Hand Guard
+tconstruct:hand_guard:0, Blightsteel Hand Guard
+tconstruct:hand_guard:0, Sanguiseelium Hand Guard
+tconstruct:hand_guard:0, Ioximite Hand Guard
+tconstruct:hand_guard:0, Nahuatl Hand Guard
+tconstruct:hand_guard:0, Slimewood Hand Guard
+tconstruct:hand_guard:0, Seared Stone Hand Guard
+tconstruct:hand_guard:0, Ironwood Hand Guard
+tconstruct:hand_guard:0, Penguinite Hand Guard
+tconstruct:hand_guard:0, Ferroherb Hand Guard
+tconstruct:hand_guard:0, Arkenium Hand Guard
+tconstruct:hand_guard:0, Skyroot Hand Guard
+tconstruct:hand_guard:0, Holystone Hand Guard
+tconstruct:hand_guard:0, Zanite Hand Guard
+tconstruct:hand_guard:0, Gravitite Hand Guard
+tconstruct:hand_guard:0, Valkyrie Metal Hand Guard
+tconstruct:hand_guard:0, Amberwood Hand Guard
 tconstruct:hand_guard:0, Skyroot Hand Guard
 tconstruct:hand_guard:0, Holystone Hand Guard
 tconstruct:hand_guard:0, Zanite Hand Guard
@@ -18735,6 +19760,7 @@ tconstruct:cross_guard:0, Goold Crystal Cross Guard
 tconstruct:cross_guard:0, Osgloridium Cross Guard
 tconstruct:cross_guard:0, Arkenium Cross Guard
 tconstruct:cross_guard:0, Black Bronze Cross Guard
+tconstruct:cross_guard:0, Blood Infused Glitch Cross Guard
 tconstruct:cross_guard:0, Magical Wooden Cross Guard
 tconstruct:cross_guard:0, Evil Infused Cross Guard
 tconstruct:cross_guard:0, Enchanted Cross Guard
@@ -18813,6 +19839,45 @@ tconstruct:cross_guard:0, Amethyst Cross Guard
 tconstruct:cross_guard:0, Osgloglas Cross Guard
 tconstruct:cross_guard:0, Osmiridium Cross Guard
 tconstruct:cross_guard:0, Signalum Cross Guard
+tconstruct:cross_guard:0, Zracohlium Cross Guard
+tconstruct:cross_guard:0, Fusionite Cross Guard
+tconstruct:cross_guard:0, Valasium Cross Guard
+tconstruct:cross_guard:0, Void Spar Cross Guard
+tconstruct:cross_guard:0, Enderal Cross Guard
+tconstruct:cross_guard:0, Irradium Cross Guard
+tconstruct:cross_guard:0, Solsteel Cross Guard
+tconstruct:cross_guard:0, Gallium Cross Guard
+tconstruct:cross_guard:0, Enderexamite Cross Guard
+tconstruct:cross_guard:0, Garstone Cross Guard
+tconstruct:cross_guard:0, Runesteel Cross Guard
+tconstruct:cross_guard:0, Gravitonium Cross Guard
+tconstruct:cross_guard:0, Trichromadentium Cross Guard
+tconstruct:cross_guard:0, Bloodstone Cross Guard
+tconstruct:cross_guard:0, Echostone Cross Guard
+tconstruct:cross_guard:0, Igniglomerate Cross Guard
+tconstruct:cross_guard:0, Atronium Cross Guard
+tconstruct:cross_guard:0, Ebonite Cross Guard
+tconstruct:cross_guard:0, Erythynite Cross Guard
+tconstruct:cross_guard:0, Shadowglass Cross Guard
+tconstruct:cross_guard:0, Etherstone Cross Guard
+tconstruct:cross_guard:0, Electarite Cross Guard
+tconstruct:cross_guard:0, Hallowsite Cross Guard
+tconstruct:cross_guard:0, Blightsteel Cross Guard
+tconstruct:cross_guard:0, Sanguiseelium Cross Guard
+tconstruct:cross_guard:0, Ioximite Cross Guard
+tconstruct:cross_guard:0, Nahuatl Cross Guard
+tconstruct:cross_guard:0, Slimewood Cross Guard
+tconstruct:cross_guard:0, Seared Stone Cross Guard
+tconstruct:cross_guard:0, Ironwood Cross Guard
+tconstruct:cross_guard:0, Penguinite Cross Guard
+tconstruct:cross_guard:0, Ferroherb Cross Guard
+tconstruct:cross_guard:0, Arkenium Cross Guard
+tconstruct:cross_guard:0, Skyroot Cross Guard
+tconstruct:cross_guard:0, Holystone Cross Guard
+tconstruct:cross_guard:0, Zanite Cross Guard
+tconstruct:cross_guard:0, Gravitite Cross Guard
+tconstruct:cross_guard:0, Valkyrie Metal Cross Guard
+tconstruct:cross_guard:0, Amberwood Cross Guard
 tconstruct:cross_guard:0, Skyroot Cross Guard
 tconstruct:cross_guard:0, Holystone Cross Guard
 tconstruct:cross_guard:0, Zanite Cross Guard
@@ -18962,6 +20027,7 @@ tconstruct:large_plate:0, Goold Crystal Large Plate
 tconstruct:large_plate:0, Osgloridium Large Plate
 tconstruct:large_plate:0, Arkenium Large Plate
 tconstruct:large_plate:0, Black Bronze Large Plate
+tconstruct:large_plate:0, Blood Infused Glitch Large Plate
 tconstruct:large_plate:0, Magical Wooden Large Plate
 tconstruct:large_plate:0, Evil Infused Large Plate
 tconstruct:large_plate:0, Enchanted Large Plate
@@ -19040,6 +20106,45 @@ tconstruct:large_plate:0, Amethyst Large Plate
 tconstruct:large_plate:0, Osgloglas Large Plate
 tconstruct:large_plate:0, Osmiridium Large Plate
 tconstruct:large_plate:0, Signalum Large Plate
+tconstruct:large_plate:0, Zracohlium Large Plate
+tconstruct:large_plate:0, Fusionite Large Plate
+tconstruct:large_plate:0, Valasium Large Plate
+tconstruct:large_plate:0, Void Spar Large Plate
+tconstruct:large_plate:0, Enderal Large Plate
+tconstruct:large_plate:0, Irradium Large Plate
+tconstruct:large_plate:0, Solsteel Large Plate
+tconstruct:large_plate:0, Gallium Large Plate
+tconstruct:large_plate:0, Enderexamite Large Plate
+tconstruct:large_plate:0, Garstone Large Plate
+tconstruct:large_plate:0, Runesteel Large Plate
+tconstruct:large_plate:0, Gravitonium Large Plate
+tconstruct:large_plate:0, Trichromadentium Large Plate
+tconstruct:large_plate:0, Bloodstone Large Plate
+tconstruct:large_plate:0, Echostone Large Plate
+tconstruct:large_plate:0, Igniglomerate Large Plate
+tconstruct:large_plate:0, Atronium Large Plate
+tconstruct:large_plate:0, Ebonite Large Plate
+tconstruct:large_plate:0, Erythynite Large Plate
+tconstruct:large_plate:0, Shadowglass Large Plate
+tconstruct:large_plate:0, Etherstone Large Plate
+tconstruct:large_plate:0, Electarite Large Plate
+tconstruct:large_plate:0, Hallowsite Large Plate
+tconstruct:large_plate:0, Blightsteel Large Plate
+tconstruct:large_plate:0, Sanguiseelium Large Plate
+tconstruct:large_plate:0, Ioximite Large Plate
+tconstruct:large_plate:0, Nahuatl Large Plate
+tconstruct:large_plate:0, Slimewood Large Plate
+tconstruct:large_plate:0, Seared Stone Large Plate
+tconstruct:large_plate:0, Ironwood Large Plate
+tconstruct:large_plate:0, Penguinite Large Plate
+tconstruct:large_plate:0, Ferroherb Large Plate
+tconstruct:large_plate:0, Arkenium Large Plate
+tconstruct:large_plate:0, Skyroot Large Plate
+tconstruct:large_plate:0, Holystone Large Plate
+tconstruct:large_plate:0, Zanite Large Plate
+tconstruct:large_plate:0, Gravitite Large Plate
+tconstruct:large_plate:0, Valkyrie Metal Large Plate
+tconstruct:large_plate:0, Amberwood Large Plate
 tconstruct:large_plate:0, Skyroot Large Plate
 tconstruct:large_plate:0, Holystone Large Plate
 tconstruct:large_plate:0, Zanite Large Plate
@@ -19181,6 +20286,7 @@ tconstruct:knife_blade:0, Goold Crystal Knife Blade
 tconstruct:knife_blade:0, Osgloridium Knife Blade
 tconstruct:knife_blade:0, Arkenium Knife Blade
 tconstruct:knife_blade:0, Black Bronze Knife Blade
+tconstruct:knife_blade:0, Blood Infused Glitch Knife Blade
 tconstruct:knife_blade:0, Magical Wooden Knife Blade
 tconstruct:knife_blade:0, Evil Infused Knife Blade
 tconstruct:knife_blade:0, Enchanted Knife Blade
@@ -19259,6 +20365,45 @@ tconstruct:knife_blade:0, Amethyst Knife Blade
 tconstruct:knife_blade:0, Osgloglas Knife Blade
 tconstruct:knife_blade:0, Osmiridium Knife Blade
 tconstruct:knife_blade:0, Signalum Knife Blade
+tconstruct:knife_blade:0, Zracohlium Knife Blade
+tconstruct:knife_blade:0, Fusionite Knife Blade
+tconstruct:knife_blade:0, Valasium Knife Blade
+tconstruct:knife_blade:0, Void Spar Knife Blade
+tconstruct:knife_blade:0, Enderal Knife Blade
+tconstruct:knife_blade:0, Irradium Knife Blade
+tconstruct:knife_blade:0, Solsteel Knife Blade
+tconstruct:knife_blade:0, Gallium Knife Blade
+tconstruct:knife_blade:0, Enderexamite Knife Blade
+tconstruct:knife_blade:0, Garstone Knife Blade
+tconstruct:knife_blade:0, Runesteel Knife Blade
+tconstruct:knife_blade:0, Gravitonium Knife Blade
+tconstruct:knife_blade:0, Trichromadentium Knife Blade
+tconstruct:knife_blade:0, Bloodstone Knife Blade
+tconstruct:knife_blade:0, Echostone Knife Blade
+tconstruct:knife_blade:0, Igniglomerate Knife Blade
+tconstruct:knife_blade:0, Atronium Knife Blade
+tconstruct:knife_blade:0, Ebonite Knife Blade
+tconstruct:knife_blade:0, Erythynite Knife Blade
+tconstruct:knife_blade:0, Shadowglass Knife Blade
+tconstruct:knife_blade:0, Etherstone Knife Blade
+tconstruct:knife_blade:0, Electarite Knife Blade
+tconstruct:knife_blade:0, Hallowsite Knife Blade
+tconstruct:knife_blade:0, Blightsteel Knife Blade
+tconstruct:knife_blade:0, Sanguiseelium Knife Blade
+tconstruct:knife_blade:0, Ioximite Knife Blade
+tconstruct:knife_blade:0, Nahuatl Knife Blade
+tconstruct:knife_blade:0, Slimewood Knife Blade
+tconstruct:knife_blade:0, Seared Stone Knife Blade
+tconstruct:knife_blade:0, Ironwood Knife Blade
+tconstruct:knife_blade:0, Penguinite Knife Blade
+tconstruct:knife_blade:0, Ferroherb Knife Blade
+tconstruct:knife_blade:0, Arkenium Knife Blade
+tconstruct:knife_blade:0, Skyroot Knife Blade
+tconstruct:knife_blade:0, Holystone Knife Blade
+tconstruct:knife_blade:0, Zanite Knife Blade
+tconstruct:knife_blade:0, Gravitite Knife Blade
+tconstruct:knife_blade:0, Valkyrie Metal Knife Blade
+tconstruct:knife_blade:0, Amberwood Knife Blade
 tconstruct:knife_blade:0, Skyroot Knife Blade
 tconstruct:knife_blade:0, Holystone Knife Blade
 tconstruct:knife_blade:0, Zanite Knife Blade
@@ -19386,6 +20531,7 @@ tconstruct:bow_limb:0, Lead Bowlimb
 tconstruct:bow_limb:0, Silver Bowlimb
 tconstruct:bow_limb:0, Electrum Bowlimb
 tconstruct:bow_limb:0, Steel Bowlimb
+tconstruct:bow_limb:0, Blood Infused Glitch Bowlimb
 tconstruct:bow_limb:0, Magical Wooden Bowlimb
 tconstruct:bow_limb:0, Demonic Bowlimb
 tconstruct:bow_limb:0, Molten Meat Bowlimb
@@ -19462,6 +20608,45 @@ tconstruct:bow_limb:0, Amethyst Bowlimb
 tconstruct:bow_limb:0, Osgloglas Bowlimb
 tconstruct:bow_limb:0, Osmiridium Bowlimb
 tconstruct:bow_limb:0, Signalum Bowlimb
+tconstruct:bow_limb:0, Zracohlium Bowlimb
+tconstruct:bow_limb:0, Fusionite Bowlimb
+tconstruct:bow_limb:0, Valasium Bowlimb
+tconstruct:bow_limb:0, Void Spar Bowlimb
+tconstruct:bow_limb:0, Enderal Bowlimb
+tconstruct:bow_limb:0, Irradium Bowlimb
+tconstruct:bow_limb:0, Solsteel Bowlimb
+tconstruct:bow_limb:0, Gallium Bowlimb
+tconstruct:bow_limb:0, Enderexamite Bowlimb
+tconstruct:bow_limb:0, Garstone Bowlimb
+tconstruct:bow_limb:0, Runesteel Bowlimb
+tconstruct:bow_limb:0, Gravitonium Bowlimb
+tconstruct:bow_limb:0, Trichromadentium Bowlimb
+tconstruct:bow_limb:0, Bloodstone Bowlimb
+tconstruct:bow_limb:0, Echostone Bowlimb
+tconstruct:bow_limb:0, Igniglomerate Bowlimb
+tconstruct:bow_limb:0, Atronium Bowlimb
+tconstruct:bow_limb:0, Ebonite Bowlimb
+tconstruct:bow_limb:0, Erythynite Bowlimb
+tconstruct:bow_limb:0, Shadowglass Bowlimb
+tconstruct:bow_limb:0, Etherstone Bowlimb
+tconstruct:bow_limb:0, Electarite Bowlimb
+tconstruct:bow_limb:0, Hallowsite Bowlimb
+tconstruct:bow_limb:0, Blightsteel Bowlimb
+tconstruct:bow_limb:0, Sanguiseelium Bowlimb
+tconstruct:bow_limb:0, Ioximite Bowlimb
+tconstruct:bow_limb:0, Nahuatl Bowlimb
+tconstruct:bow_limb:0, Slimewood Bowlimb
+tconstruct:bow_limb:0, Seared Stone Bowlimb
+tconstruct:bow_limb:0, Ironwood Bowlimb
+tconstruct:bow_limb:0, Penguinite Bowlimb
+tconstruct:bow_limb:0, Ferroherb Bowlimb
+tconstruct:bow_limb:0, Arkenium Bowlimb
+tconstruct:bow_limb:0, Skyroot Bowlimb
+tconstruct:bow_limb:0, Holystone Bowlimb
+tconstruct:bow_limb:0, Zanite Bowlimb
+tconstruct:bow_limb:0, Gravitite Bowlimb
+tconstruct:bow_limb:0, Valkyrie Metal Bowlimb
+tconstruct:bow_limb:0, Amberwood Bowlimb
 tconstruct:bow_limb:0, Skyroot Bowlimb
 tconstruct:bow_limb:0, Holystone Bowlimb
 tconstruct:bow_limb:0, Zanite Bowlimb
@@ -19615,6 +20800,7 @@ tconstruct:arrow_head:0, Goold Crystal Arrow Head
 tconstruct:arrow_head:0, Osgloridium Arrow Head
 tconstruct:arrow_head:0, Arkenium Arrow Head
 tconstruct:arrow_head:0, Black Bronze Arrow Head
+tconstruct:arrow_head:0, Blood Infused Glitch Arrow Head
 tconstruct:arrow_head:0, Magical Wooden Arrow Head
 tconstruct:arrow_head:0, Evil Infused Arrow Head
 tconstruct:arrow_head:0, Enchanted Arrow Head
@@ -19693,6 +20879,45 @@ tconstruct:arrow_head:0, Amethyst Arrow Head
 tconstruct:arrow_head:0, Osgloglas Arrow Head
 tconstruct:arrow_head:0, Osmiridium Arrow Head
 tconstruct:arrow_head:0, Signalum Arrow Head
+tconstruct:arrow_head:0, Zracohlium Arrow Head
+tconstruct:arrow_head:0, Fusionite Arrow Head
+tconstruct:arrow_head:0, Valasium Arrow Head
+tconstruct:arrow_head:0, Void Spar Arrow Head
+tconstruct:arrow_head:0, Enderal Arrow Head
+tconstruct:arrow_head:0, Irradium Arrow Head
+tconstruct:arrow_head:0, Solsteel Arrow Head
+tconstruct:arrow_head:0, Gallium Arrow Head
+tconstruct:arrow_head:0, Enderexamite Arrow Head
+tconstruct:arrow_head:0, Garstone Arrow Head
+tconstruct:arrow_head:0, Runesteel Arrow Head
+tconstruct:arrow_head:0, Gravitonium Arrow Head
+tconstruct:arrow_head:0, Trichromadentium Arrow Head
+tconstruct:arrow_head:0, Bloodstone Arrow Head
+tconstruct:arrow_head:0, Echostone Arrow Head
+tconstruct:arrow_head:0, Igniglomerate Arrow Head
+tconstruct:arrow_head:0, Atronium Arrow Head
+tconstruct:arrow_head:0, Ebonite Arrow Head
+tconstruct:arrow_head:0, Erythynite Arrow Head
+tconstruct:arrow_head:0, Shadowglass Arrow Head
+tconstruct:arrow_head:0, Etherstone Arrow Head
+tconstruct:arrow_head:0, Electarite Arrow Head
+tconstruct:arrow_head:0, Hallowsite Arrow Head
+tconstruct:arrow_head:0, Blightsteel Arrow Head
+tconstruct:arrow_head:0, Sanguiseelium Arrow Head
+tconstruct:arrow_head:0, Ioximite Arrow Head
+tconstruct:arrow_head:0, Nahuatl Arrow Head
+tconstruct:arrow_head:0, Slimewood Arrow Head
+tconstruct:arrow_head:0, Seared Stone Arrow Head
+tconstruct:arrow_head:0, Ironwood Arrow Head
+tconstruct:arrow_head:0, Penguinite Arrow Head
+tconstruct:arrow_head:0, Ferroherb Arrow Head
+tconstruct:arrow_head:0, Arkenium Arrow Head
+tconstruct:arrow_head:0, Skyroot Arrow Head
+tconstruct:arrow_head:0, Holystone Arrow Head
+tconstruct:arrow_head:0, Zanite Arrow Head
+tconstruct:arrow_head:0, Gravitite Arrow Head
+tconstruct:arrow_head:0, Valkyrie Metal Arrow Head
+tconstruct:arrow_head:0, Amberwood Arrow Head
 tconstruct:arrow_head:0, Skyroot Arrow Head
 tconstruct:arrow_head:0, Holystone Arrow Head
 tconstruct:arrow_head:0, Zanite Arrow Head
@@ -19727,6 +20952,40 @@ tconstruct:arrow_shaft:0, Ice Arrow Shaft
 tconstruct:arrow_shaft:0, Endrod Arrow Shaft
 tconstruct:arrow_shaft:0, Treated Wood Arrow Shaft
 tconstruct:arrow_shaft:0, TNT Arrow Shaft
+tconstruct:arrow_shaft:0, Zracohlium Arrow Shaft
+tconstruct:arrow_shaft:0, Fusionite Arrow Shaft
+tconstruct:arrow_shaft:0, Valasium Arrow Shaft
+tconstruct:arrow_shaft:0, Void Spar Arrow Shaft
+tconstruct:arrow_shaft:0, Enderal Arrow Shaft
+tconstruct:arrow_shaft:0, Irradium Arrow Shaft
+tconstruct:arrow_shaft:0, Solsteel Arrow Shaft
+tconstruct:arrow_shaft:0, Gallium Arrow Shaft
+tconstruct:arrow_shaft:0, Enderexamite Arrow Shaft
+tconstruct:arrow_shaft:0, Garstone Arrow Shaft
+tconstruct:arrow_shaft:0, Runesteel Arrow Shaft
+tconstruct:arrow_shaft:0, Gravitonium Arrow Shaft
+tconstruct:arrow_shaft:0, Trichromadentium Arrow Shaft
+tconstruct:arrow_shaft:0, Bloodstone Arrow Shaft
+tconstruct:arrow_shaft:0, Echostone Arrow Shaft
+tconstruct:arrow_shaft:0, Igniglomerate Arrow Shaft
+tconstruct:arrow_shaft:0, Atronium Arrow Shaft
+tconstruct:arrow_shaft:0, Ebonite Arrow Shaft
+tconstruct:arrow_shaft:0, Erythynite Arrow Shaft
+tconstruct:arrow_shaft:0, Shadowglass Arrow Shaft
+tconstruct:arrow_shaft:0, Electarite Arrow Shaft
+tconstruct:arrow_shaft:0, Hallowsite Arrow Shaft
+tconstruct:arrow_shaft:0, Blightsteel Arrow Shaft
+tconstruct:arrow_shaft:0, Sanguiseelium Arrow Shaft
+tconstruct:arrow_shaft:0, Ioximite Arrow Shaft
+tconstruct:arrow_shaft:0, Nahuatl Arrow Shaft
+tconstruct:arrow_shaft:0, Slimewood Arrow Shaft
+tconstruct:arrow_shaft:0, Ironwood Arrow Shaft
+tconstruct:arrow_shaft:0, Penguinite Arrow Shaft
+tconstruct:arrow_shaft:0, Ferroherb Arrow Shaft
+tconstruct:arrow_shaft:0, Arkenium Arrow Shaft
+tconstruct:arrow_shaft:0, Skyroot Arrow Shaft
+tconstruct:arrow_shaft:0, Valkyrie Metal Arrow Shaft
+tconstruct:arrow_shaft:0, Amberwood Arrow Shaft
 tconstruct:arrow_shaft:0, Skyroot Arrow Shaft
 tconstruct:fletching:0, Ghostwood Fletching
 tconstruct:fletching:0, Steeleaf Fletching
@@ -19761,6 +21020,40 @@ tconstruct:bolt_core:0, Ice-Iron Bolt Core
 tconstruct:bolt_core:0, Endrod-Iron Bolt Core
 tconstruct:bolt_core:0, Treated Wood-Iron Bolt Core
 tconstruct:bolt_core:0, TNT-Iron Bolt Core
+tconstruct:bolt_core:0, Zracohlium-Iron Bolt Core
+tconstruct:bolt_core:0, Fusionite-Iron Bolt Core
+tconstruct:bolt_core:0, Valasium-Iron Bolt Core
+tconstruct:bolt_core:0, Void Spar-Iron Bolt Core
+tconstruct:bolt_core:0, Enderal-Iron Bolt Core
+tconstruct:bolt_core:0, Irradium-Iron Bolt Core
+tconstruct:bolt_core:0, Solsteel-Iron Bolt Core
+tconstruct:bolt_core:0, Gallium-Iron Bolt Core
+tconstruct:bolt_core:0, Enderexamite-Iron Bolt Core
+tconstruct:bolt_core:0, Garstone-Iron Bolt Core
+tconstruct:bolt_core:0, Runesteel-Iron Bolt Core
+tconstruct:bolt_core:0, Gravitonium-Iron Bolt Core
+tconstruct:bolt_core:0, Trichromadentium-Iron Bolt Core
+tconstruct:bolt_core:0, Bloodstone-Iron Bolt Core
+tconstruct:bolt_core:0, Echostone-Iron Bolt Core
+tconstruct:bolt_core:0, Igniglomerate-Iron Bolt Core
+tconstruct:bolt_core:0, Atronium-Iron Bolt Core
+tconstruct:bolt_core:0, Ebonite-Iron Bolt Core
+tconstruct:bolt_core:0, Erythynite-Iron Bolt Core
+tconstruct:bolt_core:0, Shadowglass-Iron Bolt Core
+tconstruct:bolt_core:0, Electarite-Iron Bolt Core
+tconstruct:bolt_core:0, Hallowsite-Iron Bolt Core
+tconstruct:bolt_core:0, Blightsteel-Iron Bolt Core
+tconstruct:bolt_core:0, Sanguiseelium-Iron Bolt Core
+tconstruct:bolt_core:0, Ioximite-Iron Bolt Core
+tconstruct:bolt_core:0, Nahuatl-Iron Bolt Core
+tconstruct:bolt_core:0, Slimewood-Iron Bolt Core
+tconstruct:bolt_core:0, Ironwood-Iron Bolt Core
+tconstruct:bolt_core:0, Penguinite-Iron Bolt Core
+tconstruct:bolt_core:0, Ferroherb-Iron Bolt Core
+tconstruct:bolt_core:0, Arkenium-Iron Bolt Core
+tconstruct:bolt_core:0, Skyroot-Iron Bolt Core
+tconstruct:bolt_core:0, Valkyrie Metal-Iron Bolt Core
+tconstruct:bolt_core:0, Amberwood-Iron Bolt Core
 tconstruct:bolt_core:0, Skyroot-Iron Bolt Core
 tconstruct:tooltables:0, Crafting Station
 tconstruct:tooltables:1, Stencil Table
@@ -20064,6 +21357,35 @@ tconstruct:toolforge:0, Tool Forge
 tconstruct:toolforge:0, Tool Forge
 tconstruct:toolforge:0, Tool Forge
 tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
+tconstruct:toolforge:0, Tool Forge
 tconstruct:pickaxe, Pickaxe
 tconstruct:shovel, Shovel
 tconstruct:hatchet, Hatchet
@@ -20134,84 +21456,92 @@ tconstruct:seared_stairs_road:0, Seared Road Stairs
 tconstruct:seared_stairs_tile:0, Seared Tile Stairs
 tconstruct:seared_stairs_creeper:0, Seared Creeperface Stairs
 tconstruct:cast:0, Blank Cast
-tconstruct:cast:0, Scythe Head Cast
-tconstruct:cast:0, Arcane Focus Cast
-tconstruct:cast:0, Knife Blade Cast
-tconstruct:cast:0, Mouthpiece Cast
-tconstruct:cast:0, Bowlimb Cast
-tconstruct:cast:0, Arrow Head Cast
-tconstruct:cast:0, Pickaxe Head Cast
-tconstruct:cast:0, Wide Guard Cast
-tconstruct:cast:0, Arrow Shaft Cast
-tconstruct:cast:0, Tough Tool Rod Cast
-tconstruct:cast:0, Sharpening Kit Cast
-tconstruct:cast:0, Broad Axe Head Cast
+tconstruct:cast:0, Kama Head Cast
+tconstruct:cast:0, Bowstring Cast
+tconstruct:cast:0, Axe Head Cast
+tconstruct:cast:0, Sledge Hammer Head Cast
 tconstruct:cast:0, Pipe Piece Cast
 tconstruct:cast:0, Chisel Head Cast
-tconstruct:cast:0, Hammer Head Cast
-tconstruct:cast:0, Sign Plate Cast
-tconstruct:cast:0, Excavator Head Cast
-tconstruct:cast:0, Binding Cast
-tconstruct:cast:0, Kama Head Cast
+tconstruct:cast:0, Axle Cast
+tconstruct:cast:0, Large Plate Cast
 tconstruct:cast:0, Tough Binding Cast
+tconstruct:cast:0, Sign Plate Cast
+tconstruct:cast:0, Large Sword Blade Cast
+tconstruct:cast:0, Scythe Head Cast
+tconstruct:cast:0, Excavator Head Cast
+tconstruct:cast:0, Arcane Focus Cast
+tconstruct:cast:0, Pan Cast
+tconstruct:cast:0, Body Cast
+tconstruct:cast:0, Cross Guard Cast
+tconstruct:cast:0, Small Plate Cast
+tconstruct:cast:0, Tube Cast
+tconstruct:cast:0, Sharpening Kit Cast
 tconstruct:cast:0, Tool Rod Cast
 tconstruct:cast:0, Shovel Head Cast
-tconstruct:cast:0, Hand Guard Cast
-tconstruct:cast:0, Pan Cast
-tconstruct:cast:0, Dart Tip Cast
-tconstruct:cast:0, Sledge Hammer Head Cast
-tconstruct:cast:0, Tube Cast
 tconstruct:cast:0, Sword Blade Cast
-tconstruct:cast:0, Large Sword Blade Cast
-tconstruct:cast:0, Large Plate Cast
-tconstruct:cast:0, Cross Guard Cast
-tconstruct:cast:0, Shard Cast
+tconstruct:cast:0, Mouthpiece Cast
+tconstruct:cast:0, Binding Cast
+tconstruct:cast:0, Wide Guard Cast
 tconstruct:cast:0, Laser Medium Cast
-tconstruct:cast:0, Bowstring Cast
+tconstruct:cast:0, Tough Tool Rod Cast
+tconstruct:cast:0, Arrow Shaft Cast
+tconstruct:cast:0, Knife Blade Cast
 tconstruct:cast:0, Battery Cell Cast
-tconstruct:cast:0, Axe Head Cast
+tconstruct:cast:0, Dart Tip Cast
+tconstruct:cast:0, Cord Cast
+tconstruct:cast:0, Shard Cast
+tconstruct:cast:0, Arrow Head Cast
+tconstruct:cast:0, Bowlimb Cast
+tconstruct:cast:0, Pickaxe Head Cast
+tconstruct:cast:0, Broad Axe Head Cast
+tconstruct:cast:0, Hand Guard Cast
+tconstruct:cast:0, Hammer Head Cast
 tconstruct:cast_custom:0, Ingot Cast
 tconstruct:cast_custom:1, Nugget Cast
 tconstruct:cast_custom:2, Gem Cast
 tconstruct:cast_custom:3, Plate Cast
 tconstruct:cast_custom:4, Gear Cast
 tconstruct:clay_cast:0, item.tconstruct.clay_cast.blank
-tconstruct:clay_cast:0, Scythe Head Clay Cast
-tconstruct:clay_cast:0, Arcane Focus Clay Cast
-tconstruct:clay_cast:0, Knife Blade Clay Cast
-tconstruct:clay_cast:0, Mouthpiece Clay Cast
-tconstruct:clay_cast:0, Bowlimb Clay Cast
-tconstruct:clay_cast:0, Arrow Head Clay Cast
-tconstruct:clay_cast:0, Pickaxe Head Clay Cast
-tconstruct:clay_cast:0, Wide Guard Clay Cast
-tconstruct:clay_cast:0, Arrow Shaft Clay Cast
-tconstruct:clay_cast:0, Tough Tool Rod Clay Cast
-tconstruct:clay_cast:0, Sharpening Kit Clay Cast
-tconstruct:clay_cast:0, Broad Axe Head Clay Cast
+tconstruct:clay_cast:0, Kama Head Clay Cast
+tconstruct:clay_cast:0, Bowstring Clay Cast
+tconstruct:clay_cast:0, Axe Head Clay Cast
+tconstruct:clay_cast:0, Sledge Hammer Head Clay Cast
 tconstruct:clay_cast:0, Pipe Piece Clay Cast
 tconstruct:clay_cast:0, Chisel Head Clay Cast
-tconstruct:clay_cast:0, Hammer Head Clay Cast
-tconstruct:clay_cast:0, Sign Plate Clay Cast
-tconstruct:clay_cast:0, Excavator Head Clay Cast
-tconstruct:clay_cast:0, Binding Clay Cast
-tconstruct:clay_cast:0, Kama Head Clay Cast
+tconstruct:clay_cast:0, Axle Clay Cast
+tconstruct:clay_cast:0, Large Plate Clay Cast
 tconstruct:clay_cast:0, Tough Binding Clay Cast
+tconstruct:clay_cast:0, Sign Plate Clay Cast
+tconstruct:clay_cast:0, Large Sword Blade Clay Cast
+tconstruct:clay_cast:0, Scythe Head Clay Cast
+tconstruct:clay_cast:0, Excavator Head Clay Cast
+tconstruct:clay_cast:0, Arcane Focus Clay Cast
+tconstruct:clay_cast:0, Pan Clay Cast
+tconstruct:clay_cast:0, Body Clay Cast
+tconstruct:clay_cast:0, Cross Guard Clay Cast
+tconstruct:clay_cast:0, Small Plate Clay Cast
+tconstruct:clay_cast:0, Tube Clay Cast
+tconstruct:clay_cast:0, Sharpening Kit Clay Cast
 tconstruct:clay_cast:0, Tool Rod Clay Cast
 tconstruct:clay_cast:0, Shovel Head Clay Cast
-tconstruct:clay_cast:0, Hand Guard Clay Cast
-tconstruct:clay_cast:0, Pan Clay Cast
-tconstruct:clay_cast:0, Dart Tip Clay Cast
-tconstruct:clay_cast:0, Sledge Hammer Head Clay Cast
-tconstruct:clay_cast:0, Tube Clay Cast
 tconstruct:clay_cast:0, Sword Blade Clay Cast
-tconstruct:clay_cast:0, Large Sword Blade Clay Cast
-tconstruct:clay_cast:0, Large Plate Clay Cast
-tconstruct:clay_cast:0, Cross Guard Clay Cast
-tconstruct:clay_cast:0, Shard Clay Cast
+tconstruct:clay_cast:0, Mouthpiece Clay Cast
+tconstruct:clay_cast:0, Binding Clay Cast
+tconstruct:clay_cast:0, Wide Guard Clay Cast
 tconstruct:clay_cast:0, Laser Medium Clay Cast
-tconstruct:clay_cast:0, Bowstring Clay Cast
+tconstruct:clay_cast:0, Tough Tool Rod Clay Cast
+tconstruct:clay_cast:0, Arrow Shaft Clay Cast
+tconstruct:clay_cast:0, Knife Blade Clay Cast
 tconstruct:clay_cast:0, Battery Cell Clay Cast
-tconstruct:clay_cast:0, Axe Head Clay Cast
+tconstruct:clay_cast:0, Dart Tip Clay Cast
+tconstruct:clay_cast:0, Cord Clay Cast
+tconstruct:clay_cast:0, Shard Clay Cast
+tconstruct:clay_cast:0, Arrow Head Clay Cast
+tconstruct:clay_cast:0, Bowlimb Clay Cast
+tconstruct:clay_cast:0, Pickaxe Head Clay Cast
+tconstruct:clay_cast:0, Broad Axe Head Clay Cast
+tconstruct:clay_cast:0, Hand Guard Clay Cast
+tconstruct:clay_cast:0, Hammer Head Clay Cast
 tconstruct:stone_torch:0, Stone Torch
 tconstruct:stone_ladder:0, Stone Ladder
 tconstruct:punji:0, Punji Sticks
@@ -21061,6 +22391,22 @@ quark:glowshroom, tile.glowshroom.name
 quark:glowshroom_block, tile.glowshroom_block.name
 quark:soul_bead, item.soul_bead.name
 quark:smoker, Smoker
+quark:chute, tile.chute.name
+quark:sugar_block, tile.sugar_block.name
+quark:redstone_randomizer, tile.redstone_randomizer.name
+quark:iron_button, tile.iron_button.name
+quark:gold_button, tile.gold_button.name
+quark:iron_rod, tile.iron_rod.name
+quark:color_slime:0, Red Slime Block
+quark:color_slime:1, Blue Slime Block
+quark:color_slime:2, Cyan Slime Block
+quark:color_slime:3, Magenta Slime Block
+quark:color_slime:4, Yellow Slime Block
+quark:gravisand, tile.gravisand.name
+quark:redstone_inductor, tile.redstone_inductor.name
+quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
+quark:rain_detector, tile.rain_detector.name
+quark:chain, item.chain.name
 quark:spruce_trapdoor, tile.spruce_trapdoor.name
 quark:birch_trapdoor, tile.birch_trapdoor.name
 quark:jungle_trapdoor, tile.jungle_trapdoor.name
@@ -21160,6 +22506,7 @@ quark:acacia_button, tile.acacia_button.name
 quark:dark_oak_button, tile.dark_oak_button.name
 quark:grate, tile.grate.name
 quark:glass_item_frame, item.glass_item_frame.name
+quark:witch_hat, item.witch_hat.name
 quark:sandstone_new:0, Polished Sandstone
 quark:sandstone_new:1, Sandstone Bricks
 quark:sandstone_new:2, Polished Red Sandstone
@@ -21480,39 +22827,6 @@ quark:quilted_wool:12, Brown Quilted Wool
 quark:quilted_wool:13, Green Quilted Wool
 quark:quilted_wool:14, Red Quilted Wool
 quark:quilted_wool:15, Black Quilted Wool
-quark:chute, tile.chute.name
-quark:sugar_block, tile.sugar_block.name
-quark:redstone_randomizer, tile.redstone_randomizer.name
-quark:iron_button, tile.iron_button.name
-quark:gold_button, tile.gold_button.name
-quark:iron_rod, tile.iron_rod.name
-quark:color_slime:0, Red Slime Block
-quark:color_slime:1, Blue Slime Block
-quark:color_slime:2, Cyan Slime Block
-quark:color_slime:3, Magenta Slime Block
-quark:color_slime:4, Yellow Slime Block
-quark:gravisand, tile.gravisand.name
-quark:redstone_inductor, tile.redstone_inductor.name
-quark:obsidian_pressure_plate, tile.obsidian_pressure_plate.name
-quark:rain_detector, tile.rain_detector.name
-quark:chain, item.chain.name
-quark:glass_shards:0, Glass Shard
-quark:glass_shards:1, White Glass Shard
-quark:glass_shards:2, Orange Glass Shard
-quark:glass_shards:3, Magenta Glass Shard
-quark:glass_shards:4, Light Blue Glass Shard
-quark:glass_shards:5, Yellow Glass Shard
-quark:glass_shards:6, Lime Glass Shard
-quark:glass_shards:7, Pink Glass Shard
-quark:glass_shards:8, Gray Glass Shard
-quark:glass_shards:9, Light Gray Glass Shard
-quark:glass_shards:10, Cyan Glass Shard
-quark:glass_shards:11, Purple Glass Shard
-quark:glass_shards:12, Blue Glass Shard
-quark:glass_shards:13, Brown Glass Shard
-quark:glass_shards:14, Green Glass Shard
-quark:glass_shards:15, Red Glass Shard
-quark:glass_shards:16, Black Glass Shard
 quark:pickarang, item.pickarang.name
 quark:arrow_ender, item.arrow_ender.name
 quark:arrow_explosive, item.arrow_explosive.name
@@ -21545,7 +22859,23 @@ quark:parrot_egg:2, Green Parrot Egg
 quark:parrot_egg:3, Cyan Parrot Egg
 quark:parrot_egg:4, Gray Parrot Egg
 quark:enderdragon_scale, item.enderdragon_scale.name
-quark:witch_hat, item.witch_hat.name
+quark:glass_shards:0, Glass Shard
+quark:glass_shards:1, White Glass Shard
+quark:glass_shards:2, Orange Glass Shard
+quark:glass_shards:3, Magenta Glass Shard
+quark:glass_shards:4, Light Blue Glass Shard
+quark:glass_shards:5, Yellow Glass Shard
+quark:glass_shards:6, Lime Glass Shard
+quark:glass_shards:7, Pink Glass Shard
+quark:glass_shards:8, Gray Glass Shard
+quark:glass_shards:9, Light Gray Glass Shard
+quark:glass_shards:10, Cyan Glass Shard
+quark:glass_shards:11, Purple Glass Shard
+quark:glass_shards:12, Blue Glass Shard
+quark:glass_shards:13, Brown Glass Shard
+quark:glass_shards:14, Green Glass Shard
+quark:glass_shards:15, Red Glass Shard
+quark:glass_shards:16, Black Glass Shard
 akashictome:tome, item.tome.name
 avaritiarecipemaker:avaritiarecipemakerblock, Avaritia Recipe Factory
 avaritiarecipemaker:vanillarecipemakerblock, Vanilla Recipe Factory
@@ -21561,343 +22891,6 @@ bhc:blue_heart_canister, Blue Heart Canister
 bhc:relic_apple, Relic Apple
 bhc:wither_bone, Wither Bone
 bhc:heart_amulet, Heart Amulet
-botania:lexicon, item.lexicon.name
-botania:petal:0, Mystical White Petal
-botania:petal:1, Mystical Orange Petal
-botania:petal:2, Mystical Magenta Petal
-botania:petal:3, Mystical Light Blue Petal
-botania:petal:4, Mystical Yellow Petal
-botania:petal:5, Mystical Lime Petal
-botania:petal:6, Mystical Pink Petal
-botania:petal:7, Mystical Gray Petal
-botania:petal:8, Mystical Light Gray Petal
-botania:petal:9, Mystical Cyan Petal
-botania:petal:10, Mystical Purple Petal
-botania:petal:11, Mystical Blue Petal
-botania:petal:12, Mystical Brown Petal
-botania:petal:13, Mystical Green Petal
-botania:petal:14, Mystical Red Petal
-botania:petal:15, Mystical Black Petal
-botania:dye:0, Floral White Powder
-botania:dye:1, Floral Orange Powder
-botania:dye:2, Floral Magenta Powder
-botania:dye:3, Floral Light Blue Powder
-botania:dye:4, Floral Yellow Powder
-botania:dye:5, Floral Lime Powder
-botania:dye:6, Floral Pink Powder
-botania:dye:7, Floral Gray Powder
-botania:dye:8, Floral Light Gray Powder
-botania:dye:9, Floral Cyan Powder
-botania:dye:10, Floral Purple Powder
-botania:dye:11, Floral Blue Powder
-botania:dye:12, Floral Brown Powder
-botania:dye:13, Floral Green Powder
-botania:dye:14, Floral Red Powder
-botania:dye:15, Floral Black Powder
-botania:pestleandmortar, item.pestleAndMortar.name
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:twigwand:0, Wand of the Forest
-botania:manaresource:0, Manasteel Ingot
-botania:manaresource:1, Mana Pearl
-botania:manaresource:2, Mana Diamond
-botania:manaresource:3, Livingwood Twig
-botania:manaresource:4, Terrasteel Ingot
-botania:manaresource:5, Gaia Spirit
-botania:manaresource:6, Redstone Root
-botania:manaresource:7, Elementium Ingot
-botania:manaresource:8, Pixie Dust
-botania:manaresource:9, Dragonstone
-botania:manaresource:11, Crafting Placeholder
-botania:manaresource:12, Red String
-botania:manaresource:13, Dreamwood Twig
-botania:manaresource:14, Gaia Spirit Ingot
-botania:manaresource:15, Ender Air Bottle
-botania:manaresource:16, Mana Infused String
-botania:manaresource:17, Manasteel Nugget
-botania:manaresource:18, Terrasteel Nugget
-botania:manaresource:19, Elementium Nugget
-botania:manaresource:20, Living Root
-botania:manaresource:21, Pebble
-botania:manaresource:22, Manaweave Cloth
-botania:manaresource:23, Mana Powder
-botania:lens:0, Mana Lens
-botania:lens:1, Mana Lens: Velocity
-botania:lens:2, Mana Lens: Potency
-botania:lens:3, Mana Lens: Resistance
-botania:lens:4, Mana Lens: Efficiency
-botania:lens:5, Mana Lens: Bounce
-botania:lens:6, Mana Lens: Gravity
-botania:lens:7, Mana Lens: Bore
-botania:lens:8, Mana Lens: Damaging
-botania:lens:9, Mana Lens: Phantom
-botania:lens:10, Mana Lens: Magnetizing
-botania:lens:11, Mana Lens: Entropic
-botania:lens:12, Mana Lens: Influence
-botania:lens:13, Mana Lens: Weight
-botania:lens:14, Mana Lens: Paintslinger
-botania:lens:15, Mana Lens: Kindle
-botania:lens:16, Mana Lens: Force
-botania:lens:17, Mana Lens: Flash
-botania:lens:18, Mana Lens: Warp
-botania:lens:19, Mana Lens: Redirective
-botania:lens:20, Mana Lens: Celebratory
-botania:lens:21, Mana Lens: Flare
-botania:lens:22, Mana Lens: Messenger
-botania:lens:23, Mana Lens: Tripwire
-botania:rune:0, Rune of Water
-botania:rune:1, Rune of Fire
-botania:rune:2, Rune of Earth
-botania:rune:3, Rune of Air
-botania:rune:4, Rune of Spring
-botania:rune:5, Rune of Summer
-botania:rune:6, Rune of Autumn
-botania:rune:7, Rune of Winter
-botania:rune:8, Rune of Mana
-botania:rune:9, Rune of Lust
-botania:rune:10, Rune of Gluttony
-botania:rune:11, Rune of Greed
-botania:rune:12, Rune of Sloth
-botania:rune:13, Rune of Wrath
-botania:rune:14, Rune of Envy
-botania:rune:15, Rune of Pride
-botania:manatablet, item.manaTablet.name
-botania:managun, item.manaGun.name
-botania:manacookie, item.manaCookie.name
-botania:fertilizer, item.fertilizer.name
-botania:grassseeds:0, Pasture Seeds
-botania:grassseeds:1, Boreal Seeds
-botania:grassseeds:2, Infestation Spores
-botania:grassseeds:3, Dry Pasture Seeds
-botania:grassseeds:4, Golden Pasture Seeds
-botania:grassseeds:5, Vivid Pasture Seeds
-botania:grassseeds:6, Scorched Pasture Seeds
-botania:grassseeds:7, Infused Pasture Seeds
-botania:grassseeds:8, Mutated Pasture Seeds
-botania:dirtrod, item.dirtRod.name
-botania:terraformrod, item.terraformRod.name
-botania:grasshorn:0, Horn of the Wild
-botania:grasshorn:1, Horn of the Canopy
-botania:grasshorn:2, Horn of the Covering
-botania:manamirror, item.manaMirror.name
-botania:manasteelhelm, item.manasteelHelm.name
-botania:manasteelhelmreveal, item.manasteelHelmReveal.name
-botania:manasteelchest, item.manasteelChest.name
-botania:manasteellegs, item.manasteelLegs.name
-botania:manasteelboots, item.manasteelBoots.name
-botania:manasteelpick, item.manasteelPick.name
-botania:manasteelshovel, item.manasteelShovel.name
-botania:manasteelaxe, item.manasteelAxe.name
-botania:manasteelsword, item.manasteelSword.name
-botania:manasteelshears, item.manasteelShears.name
-botania:terrasteelhelm, item.terrasteelHelm.name
-botania:terrasteelhelmreveal, item.terrasteelHelmReveal.name
-botania:terrasteelchest, item.terrasteelChest.name
-botania:terrasteellegs, item.terrasteelLegs.name
-botania:terrasteelboots, item.terrasteelBoots.name
-botania:terrasword, item.terraSword.name
-botania:tinyplanet, item.tinyPlanet.name
-botania:manaring, item.manaRing.name
-botania:auraring, item.auraRing.name
-botania:manaringgreater, item.manaRingGreater.name
-botania:auraringgreater, item.auraRingGreater.name
-botania:travelbelt, item.travelBelt.name
-botania:knockbackbelt, item.knockbackBelt.name
-botania:icependant, item.icePendant.name
-botania:lavapendant, item.lavaPendant.name
-botania:magnetring, item.magnetRing.name
-botania:waterring, item.waterRing.name
-botania:miningring, item.miningRing.name
-botania:terrapick, item.terraPick.name
-botania:divacharm, item.divaCharm.name
-botania:flighttiara:0, Flügel Tiara
-botania:flighttiara:1, Flügel Tiara
-botania:flighttiara:2, Flügel Tiara
-botania:flighttiara:3, Flügel Tiara
-botania:flighttiara:4, Flügel Tiara
-botania:flighttiara:5, Flügel Tiara
-botania:flighttiara:6, Flügel Tiara
-botania:flighttiara:7, Flügel Tiara
-botania:flighttiara:8, Flügel Tiara
-botania:enderdagger, item.enderDagger.name
-botania:quartz:0, Smokey Quartz
-botania:quartz:1, Mana Quartz
-botania:quartz:2, Blaze Quartz
-botania:quartz:3, Lavender Quartz
-botania:quartz:4, Redquartz
-botania:quartz:5, Elven Quartz
-botania:quartz:6, Sunny Quartz
-botania:waterrod, item.waterRod.name
-botania:elementiumhelm, item.elementiumHelm.name
-botania:elementiumhelmreveal, item.elementiumHelmReveal.name
-botania:elementiumchest, item.elementiumChest.name
-botania:elementiumlegs, item.elementiumLegs.name
-botania:elementiumboots, item.elementiumBoots.name
-botania:elementiumpick, item.elementiumPick.name
-botania:elementiumshovel, item.elementiumShovel.name
-botania:elementiumaxe, item.elementiumAxe.name
-botania:elementiumsword, item.elementiumSword.name
-botania:elementiumshears, item.elementiumShears.name
-botania:openbucket, item.openBucket.name
-botania:spawnermover, item.spawnerMover.name
-botania:pixiering, item.pixieRing.name
-botania:supertravelbelt, item.superTravelBelt.name
-botania:rainbowrod, item.rainbowRod.name
-botania:tornadorod, item.tornadoRod.name
-botania:firerod, item.fireRod.name
-botania:vineball, item.vineBall.name
-botania:slingshot, item.slingshot.name
-botania:manabottle, item.manaBottle.name
-botania:laputashard:0, Shard of Laputa
-botania:laputashard:4, Shard of Laputa
-botania:laputashard:9, Shard of Laputa
-botania:laputashard:14, Shard of Laputa
-botania:laputashard:19, Shard of Laputa
-botania:virus:0, Necrodermal Virus
-botania:virus:1, Nullodermal Virus
-botania:reachring, item.reachRing.name
-botania:skydirtrod, item.skyDirtRod.name
-botania:itemfinder, item.itemFinder.name
-botania:superlavapendant, item.superLavaPendant.name
-botania:enderhand, item.enderHand.name
-botania:glasspick, item.glassPick.name
-botania:spark, item.spark.name
-botania:sparkupgrade:0, Spark Augment: Dispersive
-botania:sparkupgrade:1, Spark Augment: Dominant
-botania:sparkupgrade:2, Spark Augment: Recessive
-botania:sparkupgrade:3, Spark Augment: Isolated
-botania:diviningrod, item.diviningRod.name
-botania:gravityrod, item.gravityRod.name
-botania:manainkwell, item.manaInkwell.name
-botania:vial:0, Managlass Vial
-botania:vial:1, Alfglass Flask
-botania:brewvial, item.brewVial.name
-botania:brewflask, item.brewFlask.name
-botania:bloodpendant, item.bloodPendant.name
-botania:missilerod, item.missileRod.name
-botania:holycloak, item.holyCloak.name
-botania:unholycloak, item.unholyCloak.name
-botania:balancecloak, item.balanceCloak.name
-botania:craftinghalo, item.craftingHalo.name
-botania:blacklotus:0, Black Lotus
-botania:blacklotus:1, Blacker Lotus
-botania:monocle, item.monocle.name
-botania:clip, item.clip.name
-botania:cobblerod, item.cobbleRod.name
-botania:smeltrod, item.smeltRod.name
-botania:worldseed, item.worldSeed.name
-botania:spellcloth, item.spellCloth.name
-botania:thornchakram:0, Thorn Chakram
-botania:thornchakram:1, Flare Chakram
-botania:overgrowthseed, item.overgrowthSeed.name
-botania:craftpattern:0, Crafting Pattern #1: 1x1
-botania:craftpattern:1, Crafting Pattern #2: 2x2
-botania:craftpattern:2, Crafting Pattern #3: 1x2
-botania:craftpattern:3, Crafting Pattern #4: 2x1
-botania:craftpattern:4, Crafting Pattern #5: 1x3
-botania:craftpattern:5, Crafting Pattern #6: 3x1
-botania:craftpattern:6, Crafting Pattern #7: 2x3
-botania:craftpattern:7, Crafting Pattern #8: 3x2
-botania:craftpattern:8, Crafting Pattern #9: Donut
-botania:ancientwill:0, Will of Ahrim
-botania:ancientwill:1, Will of Dharok
-botania:ancientwill:2, Will of Guthan
-botania:ancientwill:3, Will of Torag
-botania:ancientwill:4, Will of Verac
-botania:ancientwill:5, Will of Karil
-botania:corporeaspark:0, Corporea Spark
-botania:corporeaspark:1, Master Corporea Spark
-botania:livingwoodbow, item.livingwoodBow.name
-botania:crystalbow, item.crystalBow.name
-botania:cosmetic:0, Black Bowtie
-botania:cosmetic:1, Black Tie
-botania:cosmetic:2, Red Glasses
-botania:cosmetic:3, Puffy Scarf
-botania:cosmetic:4, Engineer Goggles
-botania:cosmetic:5, Eyepatch
-botania:cosmetic:6, Wicked Eyepatch
-botania:cosmetic:7, Red Ribbons
-botania:cosmetic:8, Pink Flower Bud
-botania:cosmetic:9, Polka-Dotted Bows
-botania:cosmetic:10, Blue Butterfly
-botania:cosmetic:11, Cat Ears
-botania:cosmetic:12, Witch Pin
-botania:cosmetic:13, Devil Tail
-botania:cosmetic:14, Kamui Eye
-botania:cosmetic:15, Googly Eyes
-botania:cosmetic:16, Four-Leafed Clover
-botania:cosmetic:17, Clock Eye
-botania:cosmetic:18, Unicorn Horn
-botania:cosmetic:19, Devil Horns
-botania:cosmetic:20, Hyper Plus
-botania:cosmetic:21, Botanist Emblem
-botania:cosmetic:22, Ancient Mask
-botania:cosmetic:23, Eerie Mask
-botania:cosmetic:24, Alien Antenna
-botania:cosmetic:25, Anaglyph Glasses
-botania:cosmetic:26, Orange Shades
-botania:cosmetic:27, Groucho Glasses
-botania:cosmetic:28, Thick Eyebrows
-botania:cosmetic:29, Lusitanic Shield
-botania:cosmetic:30, Tiny Potato Mask
-botania:cosmetic:31, Questgiver Mark
-botania:cosmetic:32, Thinking Hand
-botania:swapring, item.swapRing.name
-botania:flowerbag, item.flowerBag.name
-botania:phantomink, item.phantomInk.name
-botania:poolminecart, item.poolMinecart.name
-botania:pinkinator, item.pinkinator.name
-botania:infinitefruit, item.infiniteFruit.name
-botania:kingkey, item.kingKey.name
-botania:flugeleye, item.flugelEye.name
-botania:thorring, item.thorRing.name
-botania:odinring, item.odinRing.name
-botania:lokiring, item.lokiRing.name
-botania:dice, item.dice.name
-botania:keepivy, item.keepIvy.name
-botania:blackholetalisman:0, Black Hole Talisman
-botania:recordgaia1, item.recordGaia1.name
-botania:recordgaia2, item.recordGaia2.name
-botania:temperancestone:0, Stone of Temperance
-botania:incensestick, item.incenseStick.name
-botania:terraaxe, item.terraAxe.name
-botania:waterbowl, item.waterBowl.name
-botania:obediencestick, item.obedienceStick.name
-botania:cacophonium, item.cacophonium.name
-botania:slimebottle:0, Slime in a Bottle
-botania:starsword, item.starSword.name
-botania:exchangerod, item.exchangeRod.name
-botania:magnetringgreater, item.magnetRingGreater.name
-botania:thundersword, item.thunderSword.name
-botania:manaweavehelm, item.manaweaveHelm.name
-botania:manaweavechest, item.manaweaveChest.name
-botania:manaweavelegs, item.manaweaveLegs.name
-botania:manaweaveboots, item.manaweaveBoots.name
-botania:autocraftinghalo, item.autocraftingHalo.name
-botania:gaiahead, item.gaiaHead.name
-botania:sextant, item.sextant.name
-botania:speedupbelt, item.speedUpBelt.name
-botania:baublebox, item.baubleBox.name
-botania:dodgering, item.dodgeRing.name
-botania:invisibilitycloak, item.invisibilityCloak.name
-botania:cloudpendant, item.cloudPendant.name
-botania:supercloudpendant, item.superCloudPendant.name
-botania:thirdeye, item.thirdEye.name
-botania:astrolabe, item.astrolabe.name
-botania:goddesscharm, item.goddessCharm.name
 botania:flower:0, Mystical White Flower
 botania:flower:1, Mystical Orange Flower
 botania:flower:2, Mystical Magenta Flower
@@ -22386,6 +23379,343 @@ botania:shimmerwoodplanks0stairs, tile.shimmerwoodPlanks0Stairs.name
 botania:managlasspane, tile.manaGlassPane.name
 botania:elfglasspane, tile.elfGlassPane.name
 botania:bifrostpermpane, tile.bifrostPermPane.name
+botania:lexicon, item.lexicon.name
+botania:petal:0, Mystical White Petal
+botania:petal:1, Mystical Orange Petal
+botania:petal:2, Mystical Magenta Petal
+botania:petal:3, Mystical Light Blue Petal
+botania:petal:4, Mystical Yellow Petal
+botania:petal:5, Mystical Lime Petal
+botania:petal:6, Mystical Pink Petal
+botania:petal:7, Mystical Gray Petal
+botania:petal:8, Mystical Light Gray Petal
+botania:petal:9, Mystical Cyan Petal
+botania:petal:10, Mystical Purple Petal
+botania:petal:11, Mystical Blue Petal
+botania:petal:12, Mystical Brown Petal
+botania:petal:13, Mystical Green Petal
+botania:petal:14, Mystical Red Petal
+botania:petal:15, Mystical Black Petal
+botania:dye:0, Floral White Powder
+botania:dye:1, Floral Orange Powder
+botania:dye:2, Floral Magenta Powder
+botania:dye:3, Floral Light Blue Powder
+botania:dye:4, Floral Yellow Powder
+botania:dye:5, Floral Lime Powder
+botania:dye:6, Floral Pink Powder
+botania:dye:7, Floral Gray Powder
+botania:dye:8, Floral Light Gray Powder
+botania:dye:9, Floral Cyan Powder
+botania:dye:10, Floral Purple Powder
+botania:dye:11, Floral Blue Powder
+botania:dye:12, Floral Brown Powder
+botania:dye:13, Floral Green Powder
+botania:dye:14, Floral Red Powder
+botania:dye:15, Floral Black Powder
+botania:pestleandmortar, item.pestleAndMortar.name
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:twigwand:0, Wand of the Forest
+botania:manaresource:0, Manasteel Ingot
+botania:manaresource:1, Mana Pearl
+botania:manaresource:2, Mana Diamond
+botania:manaresource:3, Livingwood Twig
+botania:manaresource:4, Terrasteel Ingot
+botania:manaresource:5, Gaia Spirit
+botania:manaresource:6, Redstone Root
+botania:manaresource:7, Elementium Ingot
+botania:manaresource:8, Pixie Dust
+botania:manaresource:9, Dragonstone
+botania:manaresource:11, Crafting Placeholder
+botania:manaresource:12, Red String
+botania:manaresource:13, Dreamwood Twig
+botania:manaresource:14, Gaia Spirit Ingot
+botania:manaresource:15, Ender Air Bottle
+botania:manaresource:16, Mana Infused String
+botania:manaresource:17, Manasteel Nugget
+botania:manaresource:18, Terrasteel Nugget
+botania:manaresource:19, Elementium Nugget
+botania:manaresource:20, Living Root
+botania:manaresource:21, Pebble
+botania:manaresource:22, Manaweave Cloth
+botania:manaresource:23, Mana Powder
+botania:lens:0, Mana Lens
+botania:lens:1, Mana Lens: Velocity
+botania:lens:2, Mana Lens: Potency
+botania:lens:3, Mana Lens: Resistance
+botania:lens:4, Mana Lens: Efficiency
+botania:lens:5, Mana Lens: Bounce
+botania:lens:6, Mana Lens: Gravity
+botania:lens:7, Mana Lens: Bore
+botania:lens:8, Mana Lens: Damaging
+botania:lens:9, Mana Lens: Phantom
+botania:lens:10, Mana Lens: Magnetizing
+botania:lens:11, Mana Lens: Entropic
+botania:lens:12, Mana Lens: Influence
+botania:lens:13, Mana Lens: Weight
+botania:lens:14, Mana Lens: Paintslinger
+botania:lens:15, Mana Lens: Kindle
+botania:lens:16, Mana Lens: Force
+botania:lens:17, Mana Lens: Flash
+botania:lens:18, Mana Lens: Warp
+botania:lens:19, Mana Lens: Redirective
+botania:lens:20, Mana Lens: Celebratory
+botania:lens:21, Mana Lens: Flare
+botania:lens:22, Mana Lens: Messenger
+botania:lens:23, Mana Lens: Tripwire
+botania:rune:0, Rune of Water
+botania:rune:1, Rune of Fire
+botania:rune:2, Rune of Earth
+botania:rune:3, Rune of Air
+botania:rune:4, Rune of Spring
+botania:rune:5, Rune of Summer
+botania:rune:6, Rune of Autumn
+botania:rune:7, Rune of Winter
+botania:rune:8, Rune of Mana
+botania:rune:9, Rune of Lust
+botania:rune:10, Rune of Gluttony
+botania:rune:11, Rune of Greed
+botania:rune:12, Rune of Sloth
+botania:rune:13, Rune of Wrath
+botania:rune:14, Rune of Envy
+botania:rune:15, Rune of Pride
+botania:manatablet, item.manaTablet.name
+botania:managun, item.manaGun.name
+botania:manacookie, item.manaCookie.name
+botania:fertilizer, item.fertilizer.name
+botania:grassseeds:0, Pasture Seeds
+botania:grassseeds:1, Boreal Seeds
+botania:grassseeds:2, Infestation Spores
+botania:grassseeds:3, Dry Pasture Seeds
+botania:grassseeds:4, Golden Pasture Seeds
+botania:grassseeds:5, Vivid Pasture Seeds
+botania:grassseeds:6, Scorched Pasture Seeds
+botania:grassseeds:7, Infused Pasture Seeds
+botania:grassseeds:8, Mutated Pasture Seeds
+botania:dirtrod, item.dirtRod.name
+botania:terraformrod, item.terraformRod.name
+botania:grasshorn:0, Horn of the Wild
+botania:grasshorn:1, Horn of the Canopy
+botania:grasshorn:2, Horn of the Covering
+botania:manamirror, item.manaMirror.name
+botania:manasteelhelm, item.manasteelHelm.name
+botania:manasteelhelmreveal, item.manasteelHelmReveal.name
+botania:manasteelchest, item.manasteelChest.name
+botania:manasteellegs, item.manasteelLegs.name
+botania:manasteelboots, item.manasteelBoots.name
+botania:manasteelpick, item.manasteelPick.name
+botania:manasteelshovel, item.manasteelShovel.name
+botania:manasteelaxe, item.manasteelAxe.name
+botania:manasteelsword, item.manasteelSword.name
+botania:manasteelshears, item.manasteelShears.name
+botania:terrasteelhelm, item.terrasteelHelm.name
+botania:terrasteelhelmreveal, item.terrasteelHelmReveal.name
+botania:terrasteelchest, item.terrasteelChest.name
+botania:terrasteellegs, item.terrasteelLegs.name
+botania:terrasteelboots, item.terrasteelBoots.name
+botania:terrasword, item.terraSword.name
+botania:tinyplanet, item.tinyPlanet.name
+botania:manaring, item.manaRing.name
+botania:auraring, item.auraRing.name
+botania:manaringgreater, item.manaRingGreater.name
+botania:auraringgreater, item.auraRingGreater.name
+botania:travelbelt, item.travelBelt.name
+botania:knockbackbelt, item.knockbackBelt.name
+botania:icependant, item.icePendant.name
+botania:lavapendant, item.lavaPendant.name
+botania:magnetring, item.magnetRing.name
+botania:waterring, item.waterRing.name
+botania:miningring, item.miningRing.name
+botania:terrapick, item.terraPick.name
+botania:divacharm, item.divaCharm.name
+botania:flighttiara:0, Flügel Tiara
+botania:flighttiara:1, Flügel Tiara
+botania:flighttiara:2, Flügel Tiara
+botania:flighttiara:3, Flügel Tiara
+botania:flighttiara:4, Flügel Tiara
+botania:flighttiara:5, Flügel Tiara
+botania:flighttiara:6, Flügel Tiara
+botania:flighttiara:7, Flügel Tiara
+botania:flighttiara:8, Flügel Tiara
+botania:enderdagger, item.enderDagger.name
+botania:quartz:0, Smokey Quartz
+botania:quartz:1, Mana Quartz
+botania:quartz:2, Blaze Quartz
+botania:quartz:3, Lavender Quartz
+botania:quartz:4, Redquartz
+botania:quartz:5, Elven Quartz
+botania:quartz:6, Sunny Quartz
+botania:waterrod, item.waterRod.name
+botania:elementiumhelm, item.elementiumHelm.name
+botania:elementiumhelmreveal, item.elementiumHelmReveal.name
+botania:elementiumchest, item.elementiumChest.name
+botania:elementiumlegs, item.elementiumLegs.name
+botania:elementiumboots, item.elementiumBoots.name
+botania:elementiumpick, item.elementiumPick.name
+botania:elementiumshovel, item.elementiumShovel.name
+botania:elementiumaxe, item.elementiumAxe.name
+botania:elementiumsword, item.elementiumSword.name
+botania:elementiumshears, item.elementiumShears.name
+botania:openbucket, item.openBucket.name
+botania:spawnermover, item.spawnerMover.name
+botania:pixiering, item.pixieRing.name
+botania:supertravelbelt, item.superTravelBelt.name
+botania:rainbowrod, item.rainbowRod.name
+botania:tornadorod, item.tornadoRod.name
+botania:firerod, item.fireRod.name
+botania:vineball, item.vineBall.name
+botania:slingshot, item.slingshot.name
+botania:manabottle, item.manaBottle.name
+botania:laputashard:0, Shard of Laputa
+botania:laputashard:4, Shard of Laputa
+botania:laputashard:9, Shard of Laputa
+botania:laputashard:14, Shard of Laputa
+botania:laputashard:19, Shard of Laputa
+botania:virus:0, Necrodermal Virus
+botania:virus:1, Nullodermal Virus
+botania:reachring, item.reachRing.name
+botania:skydirtrod, item.skyDirtRod.name
+botania:itemfinder, item.itemFinder.name
+botania:superlavapendant, item.superLavaPendant.name
+botania:enderhand, item.enderHand.name
+botania:glasspick, item.glassPick.name
+botania:spark, item.spark.name
+botania:sparkupgrade:0, Spark Augment: Dispersive
+botania:sparkupgrade:1, Spark Augment: Dominant
+botania:sparkupgrade:2, Spark Augment: Recessive
+botania:sparkupgrade:3, Spark Augment: Isolated
+botania:diviningrod, item.diviningRod.name
+botania:gravityrod, item.gravityRod.name
+botania:manainkwell, item.manaInkwell.name
+botania:vial:0, Managlass Vial
+botania:vial:1, Alfglass Flask
+botania:brewvial, item.brewVial.name
+botania:brewflask, item.brewFlask.name
+botania:bloodpendant, item.bloodPendant.name
+botania:missilerod, item.missileRod.name
+botania:holycloak, item.holyCloak.name
+botania:unholycloak, item.unholyCloak.name
+botania:balancecloak, item.balanceCloak.name
+botania:craftinghalo, item.craftingHalo.name
+botania:blacklotus:0, Black Lotus
+botania:blacklotus:1, Blacker Lotus
+botania:monocle, item.monocle.name
+botania:clip, item.clip.name
+botania:cobblerod, item.cobbleRod.name
+botania:smeltrod, item.smeltRod.name
+botania:worldseed, item.worldSeed.name
+botania:spellcloth, item.spellCloth.name
+botania:thornchakram:0, Thorn Chakram
+botania:thornchakram:1, Flare Chakram
+botania:overgrowthseed, item.overgrowthSeed.name
+botania:craftpattern:0, Crafting Pattern #1: 1x1
+botania:craftpattern:1, Crafting Pattern #2: 2x2
+botania:craftpattern:2, Crafting Pattern #3: 1x2
+botania:craftpattern:3, Crafting Pattern #4: 2x1
+botania:craftpattern:4, Crafting Pattern #5: 1x3
+botania:craftpattern:5, Crafting Pattern #6: 3x1
+botania:craftpattern:6, Crafting Pattern #7: 2x3
+botania:craftpattern:7, Crafting Pattern #8: 3x2
+botania:craftpattern:8, Crafting Pattern #9: Donut
+botania:ancientwill:0, Will of Ahrim
+botania:ancientwill:1, Will of Dharok
+botania:ancientwill:2, Will of Guthan
+botania:ancientwill:3, Will of Torag
+botania:ancientwill:4, Will of Verac
+botania:ancientwill:5, Will of Karil
+botania:corporeaspark:0, Corporea Spark
+botania:corporeaspark:1, Master Corporea Spark
+botania:livingwoodbow, item.livingwoodBow.name
+botania:crystalbow, item.crystalBow.name
+botania:cosmetic:0, Black Bowtie
+botania:cosmetic:1, Black Tie
+botania:cosmetic:2, Red Glasses
+botania:cosmetic:3, Puffy Scarf
+botania:cosmetic:4, Engineer Goggles
+botania:cosmetic:5, Eyepatch
+botania:cosmetic:6, Wicked Eyepatch
+botania:cosmetic:7, Red Ribbons
+botania:cosmetic:8, Pink Flower Bud
+botania:cosmetic:9, Polka-Dotted Bows
+botania:cosmetic:10, Blue Butterfly
+botania:cosmetic:11, Cat Ears
+botania:cosmetic:12, Witch Pin
+botania:cosmetic:13, Devil Tail
+botania:cosmetic:14, Kamui Eye
+botania:cosmetic:15, Googly Eyes
+botania:cosmetic:16, Four-Leafed Clover
+botania:cosmetic:17, Clock Eye
+botania:cosmetic:18, Unicorn Horn
+botania:cosmetic:19, Devil Horns
+botania:cosmetic:20, Hyper Plus
+botania:cosmetic:21, Botanist Emblem
+botania:cosmetic:22, Ancient Mask
+botania:cosmetic:23, Eerie Mask
+botania:cosmetic:24, Alien Antenna
+botania:cosmetic:25, Anaglyph Glasses
+botania:cosmetic:26, Orange Shades
+botania:cosmetic:27, Groucho Glasses
+botania:cosmetic:28, Thick Eyebrows
+botania:cosmetic:29, Lusitanic Shield
+botania:cosmetic:30, Tiny Potato Mask
+botania:cosmetic:31, Questgiver Mark
+botania:cosmetic:32, Thinking Hand
+botania:swapring, item.swapRing.name
+botania:flowerbag, item.flowerBag.name
+botania:phantomink, item.phantomInk.name
+botania:poolminecart, item.poolMinecart.name
+botania:pinkinator, item.pinkinator.name
+botania:infinitefruit, item.infiniteFruit.name
+botania:kingkey, item.kingKey.name
+botania:flugeleye, item.flugelEye.name
+botania:thorring, item.thorRing.name
+botania:odinring, item.odinRing.name
+botania:lokiring, item.lokiRing.name
+botania:dice, item.dice.name
+botania:keepivy, item.keepIvy.name
+botania:blackholetalisman:0, Black Hole Talisman
+botania:recordgaia1, item.recordGaia1.name
+botania:recordgaia2, item.recordGaia2.name
+botania:temperancestone:0, Stone of Temperance
+botania:incensestick, item.incenseStick.name
+botania:terraaxe, item.terraAxe.name
+botania:waterbowl, item.waterBowl.name
+botania:obediencestick, item.obedienceStick.name
+botania:cacophonium, item.cacophonium.name
+botania:slimebottle:0, Slime in a Bottle
+botania:starsword, item.starSword.name
+botania:exchangerod, item.exchangeRod.name
+botania:magnetringgreater, item.magnetRingGreater.name
+botania:thundersword, item.thunderSword.name
+botania:manaweavehelm, item.manaweaveHelm.name
+botania:manaweavechest, item.manaweaveChest.name
+botania:manaweavelegs, item.manaweaveLegs.name
+botania:manaweaveboots, item.manaweaveBoots.name
+botania:autocraftinghalo, item.autocraftingHalo.name
+botania:gaiahead, item.gaiaHead.name
+botania:sextant, item.sextant.name
+botania:speedupbelt, item.speedUpBelt.name
+botania:baublebox, item.baubleBox.name
+botania:dodgering, item.dodgeRing.name
+botania:invisibilitycloak, item.invisibilityCloak.name
+botania:cloudpendant, item.cloudPendant.name
+botania:supercloudpendant, item.superCloudPendant.name
+botania:thirdeye, item.thirdEye.name
+botania:astrolabe, item.astrolabe.name
+botania:goddesscharm, item.goddessCharm.name
 bloodmagic:altar, Blood Altar
 bloodmagic:blood_rune:0, Blank Rune
 bloodmagic:blood_rune:1, Speed Rune
@@ -23185,6 +24515,12 @@ deepmoblearning:machine_casing, Soot-covered Machine Casing
 deepmoblearning:simulation_chamber, Simulation Chamber
 deepmoblearning:extraction_chamber, Loot Fabricator
 deepmoblearning:trial_keystone, Trial Keystone
+deepmoblearningbm:digital_agonizer, Digital Mob Agonizer
+deepmoblearningbm:digital_will_injector, Digital Demon Will Injector
+deepmoblearningbm:block_blood_infused_glitch_ingot, §cBlock of Blood Infused Glitch Ingot§r
+deepmoblearningbm:altar_linker, Altar Linker
+deepmoblearningbm:blood_infused_glitch_ingot, §cBlood Infused Glitch Ingot§r
+deepmoblearningbm:blood_infused_glitch_nugget, §cBlood Infused Glitch Nugget§r
 effortlessbuilding:randomizer_bag, Randomizer Bag
 effortlessbuilding:reach_upgrade1, Reach Upgrade 1
 effortlessbuilding:reach_upgrade2, Reach Upgrade 2
@@ -23278,6 +24614,139 @@ engineersdecor:halfslab_sheetmetal_steel, Steel Sheet Metal Slice
 engineersdecor:halfslab_sheetmetal_copper, Copper Sheet Metal Slice
 engineersdecor:halfslab_sheetmetal_gold, Gold Sheet Metal Slice
 engineersdecor:halfslab_sheetmetal_aluminum, Aluminum Sheet Metal Slice
+erebus:erebus_food:0, Beetle Larva
+erebus:erebus_food:1, Cooked Beetle Larva
+erebus:erebus_food:2, Grasshopper Leg
+erebus:erebus_food:3, Cooked Grasshopper Leg
+erebus:erebus_food:4, Tarantula Leg
+erebus:erebus_food:5, Crispy Tarantula Leg
+erebus:erebus_food:6, Bamboo Soup
+erebus:erebus_food:7, Melonade
+erebus:erebus_food:8, Sparkly Melonade
+erebus:erebus_food:9, Larvae-on-a-Stick
+erebus:erebus_food:10, Honey Sandwich
+erebus:erebus_food:11, Dark Fruit
+erebus:erebus_food:12, Raw Titan Chop
+erebus:erebus_food:13, Cooked Titan Chop
+erebus:erebus_food:14, Swampberries
+erebus:erebus_food:15, Cabbage
+erebus:erebus_food:16, Cooked Titan Stew
+erebus:erebus_food:17, Raw Prickly Pear
+erebus:erebus_food:18, Cooked Prickly Pear
+erebus:erebus_food:19, Dark Fruit Pie
+erebus:heart_berries, Heartberries
+erebus:life_blood, Life Blood
+erebus:turnip, Turnips
+erebus:cabbage_seeds, Cabbage Seeds
+erebus:mandrake_root, Mandrake Root
+erebus:stag_heart_raw, Heart of the Stag
+erebus:stag_heart_cooked, Roasted Heart of the Stag
+erebus:smoothie:0, Green Tea Grasshopper Smoothie
+erebus:smoothie:1, Money Honey Smoothie
+erebus:smoothie:2, Nothing In The Middle Smoothie
+erebus:smoothie:3, Green Giant Smoothie
+erebus:smoothie:4, Seedy Goodness Smoothie
+erebus:smoothie:5, Givin' Me The Blues Smoothie
+erebus:smoothie:6, Hot Hot Baby Smoothie
+erebus:smoothie:7, Don't Meddle With The Nettle Smoothie
+erebus:smoothie:8, Liquid Gold Smoothie
+erebus:smoothie:9, Bryuf's Brew Smoothie
+erebus:idols:0, Mud Scarab
+erebus:idols:1, Iron Scarab
+erebus:idols:2, Gold Scarab
+erebus:idols:3, Jade Scarab
+erebus:idols:4, Spawn Mud Umbergolem
+erebus:idols:5, Spawn Iron Umbergolem
+erebus:idols:6, Spawn Gold Umbergolem
+erebus:idols:7, Spawn Jade Umbergolem
+erebus:jade_helmet, Jade Helmet
+erebus:jade_chestplate, Jade Chestplate
+erebus:jade_leggings, Jade Leggings
+erebus:jade_boots, Jade Boots
+erebus:jade_sword, Jade Sword
+erebus:jade_pickaxe, Jade Pickaxe
+erebus:jade_axe, Jade Axe
+erebus:jade_shovel, Jade Shovel
+erebus:jade_paxel, Jade Paxel
+erebus:jade_hoe, Jade Hoe
+erebus:exoskeleton_helmet, Exoskeleton Helmet
+erebus:exoskeleton_chestplate, Exoskeleton Chestplate
+erebus:exoskeleton_leggings, Exoskeleton Leggings
+erebus:exoskeleton_boots, Exoskeleton Boots
+erebus:rein_exoskeleton_helmet, Reinforced Exoskeleton Helmet
+erebus:rein_exoskeleton_chestplate, Reinforced Exoskeleton Chestplate
+erebus:rein_exoskeleton_leggings, Reinforced Exoskeleton Leggings
+erebus:rein_exoskeleton_boots, Reinforced Exoskeleton Boots
+erebus:rhino_exoskeleton_helmet, Rhino Plate Helmet
+erebus:rhino_exoskeleton_chestplate, Rhino Plate Chestplate
+erebus:rhino_exoskeleton_leggings, Rhino Plate Leggings
+erebus:rhino_exoskeleton_boots, Rhino Plate Boots
+erebus:bamboo_helmet, Bamboo Helmet
+erebus:bamboo_chestplate, Bamboo Chestplate
+erebus:bamboo_leggings, Bamboo Leggings
+erebus:bamboo_boots, Bamboo Boots
+erebus:bambucket, Bambucket
+erebus:rein_compound_goggles, Reinforced Compound Goggles
+erebus:compound_goggles, Compound Goggles
+erebus:sprint_leggings, Sprint Leggings
+erebus:jump_boots, Jump Boots
+erebus:glider_chestplate, Glider Chestplate
+erebus:glider_chestplate_powered, Powered Glider Chestplate
+erebus:mushroom_helmet, Mush Helm
+erebus:spider_t_shirt, Tarantula Boss Trophy
+erebus:water_striders, Water Striders
+erebus:bamboo_shield, Bamboo Shield
+erebus:exoskeleton_shield, Exoskeleton Shield
+erebus:jade_shield, Jade Shield
+erebus:rein_exoskeleton_shield, Reinforced Exoskeleton Shield
+erebus:rhino_exoskeleton_shield, Rhino Plate Shield
+erebus:rolled_newspaper, Rolled-up Newspaper
+erebus:wasp_sword, Wasp Sword
+erebus:wasp_dagger, Wasp Dagger
+erebus:enhanced_scorpion_pincer, Augmented Scorpion Pincer
+erebus:war_hammer, Quake Hammer
+erebus:web_slinger, Web Slinger
+erebus:web_slinger_wither, Wither Web Slinger
+erebus:max_speed_bow, Maximum Speed Bow
+erebus:nectar_collector, Nectar Collector
+erebus:ant_taming_amulet, Ant Taming Amulet
+erebus:bee_taming_amulet, Bee Taming Amulet
+erebus:woodlouse_ball, Woodlouse Ball
+erebus:wand_of_animation, Wand of Animation
+erebus:anti_venom_bottle, Bottle of Anti-Venom
+erebus:flower_seed:0, Black Flower Seeds
+erebus:flower_seed:1, Red Flower Seeds
+erebus:flower_seed:2, Brown Flower Seeds
+erebus:flower_seed:3, Blue Flower Seeds
+erebus:flower_seed:4, Purple Flower Seeds
+erebus:flower_seed:5, Cyan Flower Seeds
+erebus:flower_seed:6, Light Gray Flower Seeds
+erebus:flower_seed:7, Gray Flower Seeds
+erebus:flower_seed:8, Pink Flower Seeds
+erebus:flower_seed:9, Yellow Flower Seeds
+erebus:flower_seed:10, Light Blue Flower Seeds
+erebus:flower_seed:11, Magenta Flower Seeds
+erebus:flower_seed:12, Orange Flower Seeds
+erebus:flower_seed:13, White Flower Seeds
+erebus:flower_seed:14, Rainbow Flower Seeds
+erebus:death_compass, Death Compass
+erebus:spray_can, Insect Repellent
+erebus:whetstone:0, Whetstone
+erebus:whetstone:1, Whetstone
+erebus:whetstone:2, Whetstone
+erebus:whetstone:3, Whetstone
+erebus:whetstone:4, Whetstone
+erebus:whetstone:5, Whetstone
+erebus:portal_activator, Staff of Gaea
+erebus:homing_beecon, Homing Beecon
+erebus:homing_beecon_advanced, Advanced Homing Beecon
+erebus:wand_of_preservation, Wand of Preservation
+erebus:compost, Compost
+erebus:planticide, Planticide
+erebus:smoothie_book, Smoothie-matic 2000
+erebus:horn_of_summoning, Horn of Bee Summoning
+erebus:erebus_map, Empty Papyrus Map (N.Y.I)
+erebus:erebus_map_filled:0, Papyrus Map (N.Y.I)
 erebus:umberstone:0, Umberstone
 erebus:umberstone:1, Umbercobble
 erebus:umberstone:2, Mossy Umbercobble
@@ -23658,139 +25127,6 @@ erebus:stairs_varnished, Varnished Stairs
 erebus:slab_planks_varnished, Varnished Slab
 erebus:fence_varnished, Varnished Fence
 erebus:fence_gate_varnished, Varnished Fence Gate
-erebus:erebus_food:0, Beetle Larva
-erebus:erebus_food:1, Cooked Beetle Larva
-erebus:erebus_food:2, Grasshopper Leg
-erebus:erebus_food:3, Cooked Grasshopper Leg
-erebus:erebus_food:4, Tarantula Leg
-erebus:erebus_food:5, Crispy Tarantula Leg
-erebus:erebus_food:6, Bamboo Soup
-erebus:erebus_food:7, Melonade
-erebus:erebus_food:8, Sparkly Melonade
-erebus:erebus_food:9, Larvae-on-a-Stick
-erebus:erebus_food:10, Honey Sandwich
-erebus:erebus_food:11, Dark Fruit
-erebus:erebus_food:12, Raw Titan Chop
-erebus:erebus_food:13, Cooked Titan Chop
-erebus:erebus_food:14, Swampberries
-erebus:erebus_food:15, Cabbage
-erebus:erebus_food:16, Cooked Titan Stew
-erebus:erebus_food:17, Raw Prickly Pear
-erebus:erebus_food:18, Cooked Prickly Pear
-erebus:erebus_food:19, Dark Fruit Pie
-erebus:heart_berries, Heartberries
-erebus:life_blood, Life Blood
-erebus:turnip, Turnips
-erebus:cabbage_seeds, Cabbage Seeds
-erebus:mandrake_root, Mandrake Root
-erebus:stag_heart_raw, Heart of the Stag
-erebus:stag_heart_cooked, Roasted Heart of the Stag
-erebus:smoothie:0, Green Tea Grasshopper Smoothie
-erebus:smoothie:1, Money Honey Smoothie
-erebus:smoothie:2, Nothing In The Middle Smoothie
-erebus:smoothie:3, Green Giant Smoothie
-erebus:smoothie:4, Seedy Goodness Smoothie
-erebus:smoothie:5, Givin' Me The Blues Smoothie
-erebus:smoothie:6, Hot Hot Baby Smoothie
-erebus:smoothie:7, Don't Meddle With The Nettle Smoothie
-erebus:smoothie:8, Liquid Gold Smoothie
-erebus:smoothie:9, Bryuf's Brew Smoothie
-erebus:idols:0, Mud Scarab
-erebus:idols:1, Iron Scarab
-erebus:idols:2, Gold Scarab
-erebus:idols:3, Jade Scarab
-erebus:idols:4, Spawn Mud Umbergolem
-erebus:idols:5, Spawn Iron Umbergolem
-erebus:idols:6, Spawn Gold Umbergolem
-erebus:idols:7, Spawn Jade Umbergolem
-erebus:jade_helmet, Jade Helmet
-erebus:jade_chestplate, Jade Chestplate
-erebus:jade_leggings, Jade Leggings
-erebus:jade_boots, Jade Boots
-erebus:jade_sword, Jade Sword
-erebus:jade_pickaxe, Jade Pickaxe
-erebus:jade_axe, Jade Axe
-erebus:jade_shovel, Jade Shovel
-erebus:jade_paxel, Jade Paxel
-erebus:jade_hoe, Jade Hoe
-erebus:exoskeleton_helmet, Exoskeleton Helmet
-erebus:exoskeleton_chestplate, Exoskeleton Chestplate
-erebus:exoskeleton_leggings, Exoskeleton Leggings
-erebus:exoskeleton_boots, Exoskeleton Boots
-erebus:rein_exoskeleton_helmet, Reinforced Exoskeleton Helmet
-erebus:rein_exoskeleton_chestplate, Reinforced Exoskeleton Chestplate
-erebus:rein_exoskeleton_leggings, Reinforced Exoskeleton Leggings
-erebus:rein_exoskeleton_boots, Reinforced Exoskeleton Boots
-erebus:rhino_exoskeleton_helmet, Rhino Plate Helmet
-erebus:rhino_exoskeleton_chestplate, Rhino Plate Chestplate
-erebus:rhino_exoskeleton_leggings, Rhino Plate Leggings
-erebus:rhino_exoskeleton_boots, Rhino Plate Boots
-erebus:bamboo_helmet, Bamboo Helmet
-erebus:bamboo_chestplate, Bamboo Chestplate
-erebus:bamboo_leggings, Bamboo Leggings
-erebus:bamboo_boots, Bamboo Boots
-erebus:bambucket, Bambucket
-erebus:rein_compound_goggles, Reinforced Compound Goggles
-erebus:compound_goggles, Compound Goggles
-erebus:sprint_leggings, Sprint Leggings
-erebus:jump_boots, Jump Boots
-erebus:glider_chestplate, Glider Chestplate
-erebus:glider_chestplate_powered, Powered Glider Chestplate
-erebus:mushroom_helmet, Mush Helm
-erebus:spider_t_shirt, Tarantula Boss Trophy
-erebus:water_striders, Water Striders
-erebus:bamboo_shield, Bamboo Shield
-erebus:exoskeleton_shield, Exoskeleton Shield
-erebus:jade_shield, Jade Shield
-erebus:rein_exoskeleton_shield, Reinforced Exoskeleton Shield
-erebus:rhino_exoskeleton_shield, Rhino Plate Shield
-erebus:rolled_newspaper, Rolled-up Newspaper
-erebus:wasp_sword, Wasp Sword
-erebus:wasp_dagger, Wasp Dagger
-erebus:enhanced_scorpion_pincer, Augmented Scorpion Pincer
-erebus:war_hammer, Quake Hammer
-erebus:web_slinger, Web Slinger
-erebus:web_slinger_wither, Wither Web Slinger
-erebus:max_speed_bow, Maximum Speed Bow
-erebus:nectar_collector, Nectar Collector
-erebus:ant_taming_amulet, Ant Taming Amulet
-erebus:bee_taming_amulet, Bee Taming Amulet
-erebus:woodlouse_ball, Woodlouse Ball
-erebus:wand_of_animation, Wand of Animation
-erebus:anti_venom_bottle, Bottle of Anti-Venom
-erebus:flower_seed:0, Black Flower Seeds
-erebus:flower_seed:1, Red Flower Seeds
-erebus:flower_seed:2, Brown Flower Seeds
-erebus:flower_seed:3, Blue Flower Seeds
-erebus:flower_seed:4, Purple Flower Seeds
-erebus:flower_seed:5, Cyan Flower Seeds
-erebus:flower_seed:6, Light Gray Flower Seeds
-erebus:flower_seed:7, Gray Flower Seeds
-erebus:flower_seed:8, Pink Flower Seeds
-erebus:flower_seed:9, Yellow Flower Seeds
-erebus:flower_seed:10, Light Blue Flower Seeds
-erebus:flower_seed:11, Magenta Flower Seeds
-erebus:flower_seed:12, Orange Flower Seeds
-erebus:flower_seed:13, White Flower Seeds
-erebus:flower_seed:14, Rainbow Flower Seeds
-erebus:death_compass, Death Compass
-erebus:spray_can, Insect Repellent
-erebus:whetstone:0, Whetstone
-erebus:whetstone:1, Whetstone
-erebus:whetstone:2, Whetstone
-erebus:whetstone:3, Whetstone
-erebus:whetstone:4, Whetstone
-erebus:whetstone:5, Whetstone
-erebus:portal_activator, Staff of Gaea
-erebus:homing_beecon, Homing Beecon
-erebus:homing_beecon_advanced, Advanced Homing Beecon
-erebus:wand_of_preservation, Wand of Preservation
-erebus:compost, Compost
-erebus:planticide, Planticide
-erebus:smoothie_book, Smoothie-matic 2000
-erebus:horn_of_summoning, Horn of Bee Summoning
-erebus:erebus_map, Empty Papyrus Map (N.Y.I)
-erebus:erebus_map_filled:0, Papyrus Map (N.Y.I)
 exnihilocreatio:hammer_wood, Wooden Hammer
 exnihilocreatio:hammer_stone, Stone Hammer
 exnihilocreatio:hammer_iron, Iron Hammer
@@ -25983,19 +27319,6 @@ mekanismgenerators:reactor:2, Reactor Port
 mekanismgenerators:reactor:3, Reactor Logic Adapter
 mekanismgenerators:reactorglass:0, Reactor Glass
 mekanismgenerators:reactorglass:1, Laser Focus Matrix
-mob_grinding_utils:fan, Mob Fan
-mob_grinding_utils:saw, Mob Masher
-mob_grinding_utils:absorption_hopper, Absorption Hopper
-mob_grinding_utils:spikes, Iron Spikes
-mob_grinding_utils:tank, Singularity Tank
-mob_grinding_utils:tank_sink, XP Drain Singularity Tank
-mob_grinding_utils:xp_tap, XP Tap
-mob_grinding_utils:wither_muffler, Wither Boss Death Muffler
-mob_grinding_utils:dragon_muffler, Ender Dragon Death Muffler
-mob_grinding_utils:dark_oak_stone, Dark Oak Stone
-mob_grinding_utils:entity_conveyor, Entity Conveyor
-mob_grinding_utils:ender_inhibitor_on, Ender Inhibitor Active
-mob_grinding_utils:ender_inhibitor_off, Ender Inhibitor Inactive
 mob_grinding_utils:fan_upgrade:0, Mob Fan Upgrade
 mob_grinding_utils:fan_upgrade:1, Mob Fan Upgrade
 mob_grinding_utils:fan_upgrade:2, Mob Fan Upgrade
@@ -26009,6 +27332,19 @@ mob_grinding_utils:saw_upgrade:5, Mob Masher Upgrade
 mob_grinding_utils:mob_swab, Mob Swab
 mob_grinding_utils:gm_chicken_feed, GM Chicken Feed
 mob_grinding_utils:null_sword, Imaginary Not Here Sword
+mob_grinding_utils:fan, Mob Fan
+mob_grinding_utils:saw, Mob Masher
+mob_grinding_utils:absorption_hopper, Absorption Hopper
+mob_grinding_utils:spikes, Iron Spikes
+mob_grinding_utils:tank, Singularity Tank
+mob_grinding_utils:tank_sink, XP Drain Singularity Tank
+mob_grinding_utils:xp_tap, XP Tap
+mob_grinding_utils:wither_muffler, Wither Boss Death Muffler
+mob_grinding_utils:dragon_muffler, Ender Dragon Death Muffler
+mob_grinding_utils:dark_oak_stone, Dark Oak Stone
+mob_grinding_utils:entity_conveyor, Entity Conveyor
+mob_grinding_utils:ender_inhibitor_on, Ender Inhibitor Active
+mob_grinding_utils:ender_inhibitor_off, Ender Inhibitor Inactive
 modulardiversity:blockmanainputhatch, Mana Input Hatch
 modulardiversity:blockmanaoutputhatch, Mana Output Hatch
 modulardiversity:blockjackhatch, Pumpjack Hatch
@@ -26182,6 +27518,7 @@ plustic:pipe_piece:0, Goold Crystal Pipe Piece
 plustic:pipe_piece:0, Osgloridium Pipe Piece
 plustic:pipe_piece:0, Arkenium Pipe Piece
 plustic:pipe_piece:0, Black Bronze Pipe Piece
+plustic:pipe_piece:0, Blood Infused Glitch Pipe Piece
 plustic:pipe_piece:0, Magical Wooden Pipe Piece
 plustic:pipe_piece:0, Evil Infused Pipe Piece
 plustic:pipe_piece:0, Enchanted Pipe Piece
@@ -26260,6 +27597,45 @@ plustic:pipe_piece:0, Amethyst Pipe Piece
 plustic:pipe_piece:0, Osgloglas Pipe Piece
 plustic:pipe_piece:0, Osmiridium Pipe Piece
 plustic:pipe_piece:0, Signalum Pipe Piece
+plustic:pipe_piece:0, Zracohlium Pipe Piece
+plustic:pipe_piece:0, Fusionite Pipe Piece
+plustic:pipe_piece:0, Valasium Pipe Piece
+plustic:pipe_piece:0, Void Spar Pipe Piece
+plustic:pipe_piece:0, Enderal Pipe Piece
+plustic:pipe_piece:0, Irradium Pipe Piece
+plustic:pipe_piece:0, Solsteel Pipe Piece
+plustic:pipe_piece:0, Gallium Pipe Piece
+plustic:pipe_piece:0, Enderexamite Pipe Piece
+plustic:pipe_piece:0, Garstone Pipe Piece
+plustic:pipe_piece:0, Runesteel Pipe Piece
+plustic:pipe_piece:0, Gravitonium Pipe Piece
+plustic:pipe_piece:0, Trichromadentium Pipe Piece
+plustic:pipe_piece:0, Bloodstone Pipe Piece
+plustic:pipe_piece:0, Echostone Pipe Piece
+plustic:pipe_piece:0, Igniglomerate Pipe Piece
+plustic:pipe_piece:0, Atronium Pipe Piece
+plustic:pipe_piece:0, Ebonite Pipe Piece
+plustic:pipe_piece:0, Erythynite Pipe Piece
+plustic:pipe_piece:0, Shadowglass Pipe Piece
+plustic:pipe_piece:0, Etherstone Pipe Piece
+plustic:pipe_piece:0, Electarite Pipe Piece
+plustic:pipe_piece:0, Hallowsite Pipe Piece
+plustic:pipe_piece:0, Blightsteel Pipe Piece
+plustic:pipe_piece:0, Sanguiseelium Pipe Piece
+plustic:pipe_piece:0, Ioximite Pipe Piece
+plustic:pipe_piece:0, Nahuatl Pipe Piece
+plustic:pipe_piece:0, Slimewood Pipe Piece
+plustic:pipe_piece:0, Seared Stone Pipe Piece
+plustic:pipe_piece:0, Ironwood Pipe Piece
+plustic:pipe_piece:0, Penguinite Pipe Piece
+plustic:pipe_piece:0, Ferroherb Pipe Piece
+plustic:pipe_piece:0, Arkenium Pipe Piece
+plustic:pipe_piece:0, Skyroot Pipe Piece
+plustic:pipe_piece:0, Holystone Pipe Piece
+plustic:pipe_piece:0, Zanite Pipe Piece
+plustic:pipe_piece:0, Gravitite Pipe Piece
+plustic:pipe_piece:0, Valkyrie Metal Pipe Piece
+plustic:pipe_piece:0, Amberwood Pipe Piece
 plustic:pipe_piece:0, Skyroot Pipe Piece
 plustic:pipe_piece:0, Holystone Pipe Piece
 plustic:pipe_piece:0, Zanite Pipe Piece
@@ -26286,6 +27662,15 @@ plustic:laser_medium:0, Prismarine Laser Medium
 plustic:laser_medium:0, Blazerod Laser Medium
 plustic:laser_medium:0, Endrod Laser Medium
 plustic:laser_medium:0, Jade Laser Medium
+plustic:laser_medium:0, Fusionite Laser Medium
+plustic:laser_medium:0, Valasium Laser Medium
+plustic:laser_medium:0, Irradium Laser Medium
+plustic:laser_medium:0, Solsteel Laser Medium
+plustic:laser_medium:0, Gravitonium Laser Medium
+plustic:laser_medium:0, Trichromadentium Laser Medium
+plustic:laser_medium:0, Ebonite Laser Medium
+plustic:laser_medium:0, Erythynite Laser Medium
+plustic:laser_medium:0, Ioximite Laser Medium
 plustic:battery_cell:0, Restonia Crystal Battery Cell
 plustic:battery_cell:0, Enori Crystal Battery Cell
 plustic:battery_cell:0, Fluix Battery Cell
@@ -26295,6 +27680,14 @@ plustic:battery_cell:0, Copper Battery Cell
 plustic:battery_cell:0, Silver Battery Cell
 plustic:battery_cell:0, Blazerod Battery Cell
 plustic:battery_cell:0, Endrod Battery Cell
+plustic:battery_cell:0, Fusionite Battery Cell
+plustic:battery_cell:0, Valasium Battery Cell
+plustic:battery_cell:0, Irradium Battery Cell
+plustic:battery_cell:0, Solsteel Battery Cell
+plustic:battery_cell:0, Gravitonium Battery Cell
+plustic:battery_cell:0, Trichromadentium Battery Cell
+plustic:battery_cell:0, Ebonite Battery Cell
+plustic:battery_cell:0, Ioximite Battery Cell
 plustic:laser_gun, Laser Gun
 plustic:katana, Katana
 mowziesmobs:foliaath_seed, Foliaath Seed
@@ -26831,6 +28224,7 @@ tinkersaether:mouthpiece:0, Goold Crystal Mouthpiece
 tinkersaether:mouthpiece:0, Osgloridium Mouthpiece
 tinkersaether:mouthpiece:0, Arkenium Mouthpiece
 tinkersaether:mouthpiece:0, Black Bronze Mouthpiece
+tinkersaether:mouthpiece:0, Blood Infused Glitch Mouthpiece
 tinkersaether:mouthpiece:0, Magical Wooden Mouthpiece
 tinkersaether:mouthpiece:0, Evil Infused Mouthpiece
 tinkersaether:mouthpiece:0, Enchanted Mouthpiece
@@ -26909,6 +28303,45 @@ tinkersaether:mouthpiece:0, Amethyst Mouthpiece
 tinkersaether:mouthpiece:0, Osgloglas Mouthpiece
 tinkersaether:mouthpiece:0, Osmiridium Mouthpiece
 tinkersaether:mouthpiece:0, Signalum Mouthpiece
+tinkersaether:mouthpiece:0, Zracohlium Mouthpiece
+tinkersaether:mouthpiece:0, Fusionite Mouthpiece
+tinkersaether:mouthpiece:0, Valasium Mouthpiece
+tinkersaether:mouthpiece:0, Void Spar Mouthpiece
+tinkersaether:mouthpiece:0, Enderal Mouthpiece
+tinkersaether:mouthpiece:0, Irradium Mouthpiece
+tinkersaether:mouthpiece:0, Solsteel Mouthpiece
+tinkersaether:mouthpiece:0, Gallium Mouthpiece
+tinkersaether:mouthpiece:0, Enderexamite Mouthpiece
+tinkersaether:mouthpiece:0, Garstone Mouthpiece
+tinkersaether:mouthpiece:0, Runesteel Mouthpiece
+tinkersaether:mouthpiece:0, Gravitonium Mouthpiece
+tinkersaether:mouthpiece:0, Trichromadentium Mouthpiece
+tinkersaether:mouthpiece:0, Bloodstone Mouthpiece
+tinkersaether:mouthpiece:0, Echostone Mouthpiece
+tinkersaether:mouthpiece:0, Igniglomerate Mouthpiece
+tinkersaether:mouthpiece:0, Atronium Mouthpiece
+tinkersaether:mouthpiece:0, Ebonite Mouthpiece
+tinkersaether:mouthpiece:0, Erythynite Mouthpiece
+tinkersaether:mouthpiece:0, Shadowglass Mouthpiece
+tinkersaether:mouthpiece:0, Etherstone Mouthpiece
+tinkersaether:mouthpiece:0, Electarite Mouthpiece
+tinkersaether:mouthpiece:0, Hallowsite Mouthpiece
+tinkersaether:mouthpiece:0, Blightsteel Mouthpiece
+tinkersaether:mouthpiece:0, Sanguiseelium Mouthpiece
+tinkersaether:mouthpiece:0, Ioximite Mouthpiece
+tinkersaether:mouthpiece:0, Nahuatl Mouthpiece
+tinkersaether:mouthpiece:0, Slimewood Mouthpiece
+tinkersaether:mouthpiece:0, Seared Stone Mouthpiece
+tinkersaether:mouthpiece:0, Ironwood Mouthpiece
+tinkersaether:mouthpiece:0, Penguinite Mouthpiece
+tinkersaether:mouthpiece:0, Ferroherb Mouthpiece
+tinkersaether:mouthpiece:0, Arkenium Mouthpiece
+tinkersaether:mouthpiece:0, Skyroot Mouthpiece
+tinkersaether:mouthpiece:0, Holystone Mouthpiece
+tinkersaether:mouthpiece:0, Zanite Mouthpiece
+tinkersaether:mouthpiece:0, Gravitite Mouthpiece
+tinkersaether:mouthpiece:0, Valkyrie Metal Mouthpiece
+tinkersaether:mouthpiece:0, Amberwood Mouthpiece
 tinkersaether:mouthpiece:0, Skyroot Mouthpiece
 tinkersaether:mouthpiece:0, Holystone Mouthpiece
 tinkersaether:mouthpiece:0, Zanite Mouthpiece
@@ -27036,6 +28469,7 @@ tinkersaether:tube:0, Lead Tube
 tinkersaether:tube:0, Silver Tube
 tinkersaether:tube:0, Electrum Tube
 tinkersaether:tube:0, Steel Tube
+tinkersaether:tube:0, Blood Infused Glitch Tube
 tinkersaether:tube:0, Magical Wooden Tube
 tinkersaether:tube:0, Demonic Tube
 tinkersaether:tube:0, Molten Meat Tube
@@ -27112,6 +28546,45 @@ tinkersaether:tube:0, Amethyst Tube
 tinkersaether:tube:0, Osgloglas Tube
 tinkersaether:tube:0, Osmiridium Tube
 tinkersaether:tube:0, Signalum Tube
+tinkersaether:tube:0, Zracohlium Tube
+tinkersaether:tube:0, Fusionite Tube
+tinkersaether:tube:0, Valasium Tube
+tinkersaether:tube:0, Void Spar Tube
+tinkersaether:tube:0, Enderal Tube
+tinkersaether:tube:0, Irradium Tube
+tinkersaether:tube:0, Solsteel Tube
+tinkersaether:tube:0, Gallium Tube
+tinkersaether:tube:0, Enderexamite Tube
+tinkersaether:tube:0, Garstone Tube
+tinkersaether:tube:0, Runesteel Tube
+tinkersaether:tube:0, Gravitonium Tube
+tinkersaether:tube:0, Trichromadentium Tube
+tinkersaether:tube:0, Bloodstone Tube
+tinkersaether:tube:0, Echostone Tube
+tinkersaether:tube:0, Igniglomerate Tube
+tinkersaether:tube:0, Atronium Tube
+tinkersaether:tube:0, Ebonite Tube
+tinkersaether:tube:0, Erythynite Tube
+tinkersaether:tube:0, Shadowglass Tube
+tinkersaether:tube:0, Etherstone Tube
+tinkersaether:tube:0, Electarite Tube
+tinkersaether:tube:0, Hallowsite Tube
+tinkersaether:tube:0, Blightsteel Tube
+tinkersaether:tube:0, Sanguiseelium Tube
+tinkersaether:tube:0, Ioximite Tube
+tinkersaether:tube:0, Nahuatl Tube
+tinkersaether:tube:0, Slimewood Tube
+tinkersaether:tube:0, Seared Stone Tube
+tinkersaether:tube:0, Ironwood Tube
+tinkersaether:tube:0, Penguinite Tube
+tinkersaether:tube:0, Ferroherb Tube
+tinkersaether:tube:0, Arkenium Tube
+tinkersaether:tube:0, Skyroot Tube
+tinkersaether:tube:0, Holystone Tube
+tinkersaether:tube:0, Zanite Tube
+tinkersaether:tube:0, Gravitite Tube
+tinkersaether:tube:0, Valkyrie Metal Tube
+tinkersaether:tube:0, Amberwood Tube
 tinkersaether:tube:0, Skyroot Tube
 tinkersaether:tube:0, Holystone Tube
 tinkersaether:tube:0, Zanite Tube
@@ -27254,6 +28727,7 @@ tinkersaether:dart_tip:0, Goold Crystal Dart Tip
 tinkersaether:dart_tip:0, Osgloridium Dart Tip
 tinkersaether:dart_tip:0, Arkenium Dart Tip
 tinkersaether:dart_tip:0, Black Bronze Dart Tip
+tinkersaether:dart_tip:0, Blood Infused Glitch Dart Tip
 tinkersaether:dart_tip:0, Magical Wooden Dart Tip
 tinkersaether:dart_tip:0, Evil Infused Dart Tip
 tinkersaether:dart_tip:0, Enchanted Dart Tip
@@ -27332,6 +28806,45 @@ tinkersaether:dart_tip:0, Amethyst Dart Tip
 tinkersaether:dart_tip:0, Osgloglas Dart Tip
 tinkersaether:dart_tip:0, Osmiridium Dart Tip
 tinkersaether:dart_tip:0, Signalum Dart Tip
+tinkersaether:dart_tip:0, Zracohlium Dart Tip
+tinkersaether:dart_tip:0, Fusionite Dart Tip
+tinkersaether:dart_tip:0, Valasium Dart Tip
+tinkersaether:dart_tip:0, Void Spar Dart Tip
+tinkersaether:dart_tip:0, Enderal Dart Tip
+tinkersaether:dart_tip:0, Irradium Dart Tip
+tinkersaether:dart_tip:0, Solsteel Dart Tip
+tinkersaether:dart_tip:0, Gallium Dart Tip
+tinkersaether:dart_tip:0, Enderexamite Dart Tip
+tinkersaether:dart_tip:0, Garstone Dart Tip
+tinkersaether:dart_tip:0, Runesteel Dart Tip
+tinkersaether:dart_tip:0, Gravitonium Dart Tip
+tinkersaether:dart_tip:0, Trichromadentium Dart Tip
+tinkersaether:dart_tip:0, Bloodstone Dart Tip
+tinkersaether:dart_tip:0, Echostone Dart Tip
+tinkersaether:dart_tip:0, Igniglomerate Dart Tip
+tinkersaether:dart_tip:0, Atronium Dart Tip
+tinkersaether:dart_tip:0, Ebonite Dart Tip
+tinkersaether:dart_tip:0, Erythynite Dart Tip
+tinkersaether:dart_tip:0, Shadowglass Dart Tip
+tinkersaether:dart_tip:0, Etherstone Dart Tip
+tinkersaether:dart_tip:0, Electarite Dart Tip
+tinkersaether:dart_tip:0, Hallowsite Dart Tip
+tinkersaether:dart_tip:0, Blightsteel Dart Tip
+tinkersaether:dart_tip:0, Sanguiseelium Dart Tip
+tinkersaether:dart_tip:0, Ioximite Dart Tip
+tinkersaether:dart_tip:0, Nahuatl Dart Tip
+tinkersaether:dart_tip:0, Slimewood Dart Tip
+tinkersaether:dart_tip:0, Seared Stone Dart Tip
+tinkersaether:dart_tip:0, Ironwood Dart Tip
+tinkersaether:dart_tip:0, Penguinite Dart Tip
+tinkersaether:dart_tip:0, Ferroherb Dart Tip
+tinkersaether:dart_tip:0, Arkenium Dart Tip
+tinkersaether:dart_tip:0, Skyroot Dart Tip
+tinkersaether:dart_tip:0, Holystone Dart Tip
+tinkersaether:dart_tip:0, Zanite Dart Tip
+tinkersaether:dart_tip:0, Gravitite Dart Tip
+tinkersaether:dart_tip:0, Valkyrie Metal Dart Tip
+tinkersaether:dart_tip:0, Amberwood Dart Tip
 tinkersaether:dart_tip:0, Skyroot Dart Tip
 tinkersaether:dart_tip:0, Holystone Dart Tip
 tinkersaether:dart_tip:0, Zanite Dart Tip
@@ -27498,6 +29011,7 @@ tcomplement:chisel_head:0, Goold Crystal Chisel Head
 tcomplement:chisel_head:0, Osgloridium Chisel Head
 tcomplement:chisel_head:0, Arkenium Chisel Head
 tcomplement:chisel_head:0, Black Bronze Chisel Head
+tcomplement:chisel_head:0, Blood Infused Glitch Chisel Head
 tcomplement:chisel_head:0, Magical Wooden Chisel Head
 tcomplement:chisel_head:0, Evil Infused Chisel Head
 tcomplement:chisel_head:0, Enchanted Chisel Head
@@ -27576,6 +29090,45 @@ tcomplement:chisel_head:0, Amethyst Chisel Head
 tcomplement:chisel_head:0, Osgloglas Chisel Head
 tcomplement:chisel_head:0, Osmiridium Chisel Head
 tcomplement:chisel_head:0, Signalum Chisel Head
+tcomplement:chisel_head:0, Zracohlium Chisel Head
+tcomplement:chisel_head:0, Fusionite Chisel Head
+tcomplement:chisel_head:0, Valasium Chisel Head
+tcomplement:chisel_head:0, Void Spar Chisel Head
+tcomplement:chisel_head:0, Enderal Chisel Head
+tcomplement:chisel_head:0, Irradium Chisel Head
+tcomplement:chisel_head:0, Solsteel Chisel Head
+tcomplement:chisel_head:0, Gallium Chisel Head
+tcomplement:chisel_head:0, Enderexamite Chisel Head
+tcomplement:chisel_head:0, Garstone Chisel Head
+tcomplement:chisel_head:0, Runesteel Chisel Head
+tcomplement:chisel_head:0, Gravitonium Chisel Head
+tcomplement:chisel_head:0, Trichromadentium Chisel Head
+tcomplement:chisel_head:0, Bloodstone Chisel Head
+tcomplement:chisel_head:0, Echostone Chisel Head
+tcomplement:chisel_head:0, Igniglomerate Chisel Head
+tcomplement:chisel_head:0, Atronium Chisel Head
+tcomplement:chisel_head:0, Ebonite Chisel Head
+tcomplement:chisel_head:0, Erythynite Chisel Head
+tcomplement:chisel_head:0, Shadowglass Chisel Head
+tcomplement:chisel_head:0, Etherstone Chisel Head
+tcomplement:chisel_head:0, Electarite Chisel Head
+tcomplement:chisel_head:0, Hallowsite Chisel Head
+tcomplement:chisel_head:0, Blightsteel Chisel Head
+tcomplement:chisel_head:0, Sanguiseelium Chisel Head
+tcomplement:chisel_head:0, Ioximite Chisel Head
+tcomplement:chisel_head:0, Nahuatl Chisel Head
+tcomplement:chisel_head:0, Slimewood Chisel Head
+tcomplement:chisel_head:0, Seared Stone Chisel Head
+tcomplement:chisel_head:0, Ironwood Chisel Head
+tcomplement:chisel_head:0, Penguinite Chisel Head
+tcomplement:chisel_head:0, Ferroherb Chisel Head
+tcomplement:chisel_head:0, Arkenium Chisel Head
+tcomplement:chisel_head:0, Skyroot Chisel Head
+tcomplement:chisel_head:0, Holystone Chisel Head
+tcomplement:chisel_head:0, Zanite Chisel Head
+tcomplement:chisel_head:0, Gravitite Chisel Head
+tcomplement:chisel_head:0, Valkyrie Metal Chisel Head
+tcomplement:chisel_head:0, Amberwood Chisel Head
 tcomplement:chisel_head:0, Skyroot Chisel Head
 tcomplement:chisel_head:0, Holystone Chisel Head
 tcomplement:chisel_head:0, Zanite Chisel Head
@@ -27726,6 +29279,7 @@ tcomplement:sledge_head:0, Goold Crystal Sledge Hammer Head
 tcomplement:sledge_head:0, Osgloridium Sledge Hammer Head
 tcomplement:sledge_head:0, Arkenium Sledge Hammer Head
 tcomplement:sledge_head:0, Black Bronze Sledge Hammer Head
+tcomplement:sledge_head:0, Blood Infused Glitch Sledge Hammer Head
 tcomplement:sledge_head:0, Magical Wooden Sledge Hammer Head
 tcomplement:sledge_head:0, Evil Infused Sledge Hammer Head
 tcomplement:sledge_head:0, Enchanted Sledge Hammer Head
@@ -27804,6 +29358,45 @@ tcomplement:sledge_head:0, Amethyst Sledge Hammer Head
 tcomplement:sledge_head:0, Osgloglas Sledge Hammer Head
 tcomplement:sledge_head:0, Osmiridium Sledge Hammer Head
 tcomplement:sledge_head:0, Signalum Sledge Hammer Head
+tcomplement:sledge_head:0, Zracohlium Sledge Hammer Head
+tcomplement:sledge_head:0, Fusionite Sledge Hammer Head
+tcomplement:sledge_head:0, Valasium Sledge Hammer Head
+tcomplement:sledge_head:0, Void Spar Sledge Hammer Head
+tcomplement:sledge_head:0, Enderal Sledge Hammer Head
+tcomplement:sledge_head:0, Irradium Sledge Hammer Head
+tcomplement:sledge_head:0, Solsteel Sledge Hammer Head
+tcomplement:sledge_head:0, Gallium Sledge Hammer Head
+tcomplement:sledge_head:0, Enderexamite Sledge Hammer Head
+tcomplement:sledge_head:0, Garstone Sledge Hammer Head
+tcomplement:sledge_head:0, Runesteel Sledge Hammer Head
+tcomplement:sledge_head:0, Gravitonium Sledge Hammer Head
+tcomplement:sledge_head:0, Trichromadentium Sledge Hammer Head
+tcomplement:sledge_head:0, Bloodstone Sledge Hammer Head
+tcomplement:sledge_head:0, Echostone Sledge Hammer Head
+tcomplement:sledge_head:0, Igniglomerate Sledge Hammer Head
+tcomplement:sledge_head:0, Atronium Sledge Hammer Head
+tcomplement:sledge_head:0, Ebonite Sledge Hammer Head
+tcomplement:sledge_head:0, Erythynite Sledge Hammer Head
+tcomplement:sledge_head:0, Shadowglass Sledge Hammer Head
+tcomplement:sledge_head:0, Etherstone Sledge Hammer Head
+tcomplement:sledge_head:0, Electarite Sledge Hammer Head
+tcomplement:sledge_head:0, Hallowsite Sledge Hammer Head
+tcomplement:sledge_head:0, Blightsteel Sledge Hammer Head
+tcomplement:sledge_head:0, Sanguiseelium Sledge Hammer Head
+tcomplement:sledge_head:0, Ioximite Sledge Hammer Head
+tcomplement:sledge_head:0, Nahuatl Sledge Hammer Head
+tcomplement:sledge_head:0, Slimewood Sledge Hammer Head
+tcomplement:sledge_head:0, Seared Stone Sledge Hammer Head
+tcomplement:sledge_head:0, Ironwood Sledge Hammer Head
+tcomplement:sledge_head:0, Penguinite Sledge Hammer Head
+tcomplement:sledge_head:0, Ferroherb Sledge Hammer Head
+tcomplement:sledge_head:0, Arkenium Sledge Hammer Head
+tcomplement:sledge_head:0, Skyroot Sledge Hammer Head
+tcomplement:sledge_head:0, Holystone Sledge Hammer Head
+tcomplement:sledge_head:0, Zanite Sledge Hammer Head
+tcomplement:sledge_head:0, Gravitite Sledge Hammer Head
+tcomplement:sledge_head:0, Valkyrie Metal Sledge Hammer Head
+tcomplement:sledge_head:0, Amberwood Sledge Hammer Head
 tcomplement:sledge_head:0, Skyroot Sledge Hammer Head
 tcomplement:sledge_head:0, Holystone Sledge Hammer Head
 tcomplement:sledge_head:0, Zanite Sledge Hammer Head
@@ -27822,12 +29415,12 @@ tcomplement:sledge_head:0, Emerald Sledge Hammer Head
 tcomplement:sledge_hammer, Sledge Hammer
 toolbelt:belt, Tool Belt
 toolbelt:pouch, Belt Pouch
-torchmaster:frozen_pearl, Frozen Pearl
 torchmaster:mega_torch:0, Mega Torch
 torchmaster:mega_torch:1, Unlit Mega Torch
 torchmaster:terrain_lighter, Terrain Lighter
 torchmaster:dread_lamp, Dread Lamp
 torchmaster:feral_flare_lantern, Feral Flare Lantern
+torchmaster:frozen_pearl, Frozen Pearl
 wct:wct, Wireless Crafting Terminal
 wct:wct_creative, Creative Wireless Crafting Terminal
 wct:magnet_card, Magnet Card
@@ -28402,6 +29995,16 @@ xtones:zyth:12, Zyth 13
 xtones:zyth:13, Zyth 14
 xtones:zyth:14, Zyth 15
 xtones:zyth:15, Zyth 16
+yoyos:cord, Cord
+yoyos:creative_yoyo, Rainbowyo
+yoyos:wooden_yoyo, Wooden Yoyo
+yoyos:stone_yoyo, Stone Yoyo
+yoyos:iron_yoyo, Iron Yoyo
+yoyos:diamond_yoyo, Diamond Yoyo
+yoyos:gold_yoyo, Gold Yoyo
+yoyos:shear_yoyo, Shear Yoyo
+yoyos:hoe_yoyo, Yohoe
+yoyos:sticky_yoyo, Sticky Yoyo
 densemetals:dense_iron_ore, Dense Iron Ore 
 densemetals:dense_coal_ore, Dense Coal Ore 
 densemetals:dense_gold_ore, Dense Gold Ore 
@@ -30728,9 +32331,9 @@ contenttweaker:rune_spring_cracked, item.contenttweaker.rune_spring_cracked.name
 contenttweaker:rune_summer_cracked, Cracked Rune of Summer
 contenttweaker:rune_autumn_cracked, item.contenttweaker.rune_autumn_cracked.name
 contenttweaker:rune_winter_cracked, item.contenttweaker.rune_winter_cracked.name
-contenttweaker:terra_base, Terrasteel Glass Ingot
-contenttweaker:terra_base_dust, Terrasteel Glass Dust
-contenttweaker:terrasteel_ore:0, Terrasteel Glass Ore
+contenttweaker:terra_base, Vitrium Terrasteel Ingot
+contenttweaker:terra_base_dust, Vitrium Terrasteel Dust
+contenttweaker:terrasteel_ore:0, Vitrium Terrasteel Ore
 contenttweaker:terrabit, item.contenttweaker.terrabit.name
 contenttweaker:impure_mana_dust, item.contenttweaker.impure_mana_dust.name
 contenttweaker:terragem, Terragem
@@ -30890,8 +32493,6 @@ fenceoverhaul:birch_overhauledfence, Diagonal Birch Fence
 fenceoverhaul:jungle_overhauledfence, Diagonal Jungle Fence
 fenceoverhaul:acacia_overhauledfence, Diagonal Acacia Fence
 fenceoverhaul:dark_oak_overhauledfence, Diagonal Dark Oak Fence
-fluiddrawers:tank:0, Basic Tank
-fluiddrawers:tank_custom:0, Framed Tank
 tconevo:earth_material_block:0, Pink Slimy Mud
 tconevo:metal_block:0, Wyvern Metal Block
 tconevo:metal_block:1, Draconic Metal Block
@@ -30902,6 +32503,8 @@ tconevo:metal_block:5, Bound Metal Block
 tconevo:metal_block:6, Sentient Metal Block
 tconevo:metal_block:7, Energium Metal Block
 tconevo:metal_block:8, UU-Metal Block
+fluiddrawers:tank:0, Basic Tank
+fluiddrawers:tank_custom:0, Framed Tank
 tconevo:material:0, Coalescence Matrix
 tconevo:material:1, Pink Slime Crystal
 tconevo:material:2, Plate of Unsealing
@@ -32853,6 +34456,274 @@ mekores:mekanismore:376, Lutetium Shard
 mekores:mekanismore:377, Lutetium Clump
 mekores:mekanismore:378, Dirty Lutetium Dust
 mekores:mekanismore:379, Lutetium Dust
+moretcon:smallplate:0, Black Quartz Small Plate
+moretcon:smallplate:0, Restonia Crystal Small Plate
+moretcon:smallplate:0, Palis Crystal Small Plate
+moretcon:smallplate:0, Diamatine Crystal Small Plate
+moretcon:smallplate:0, Void Crystal Small Plate
+moretcon:smallplate:0, Emeradic Crystal Small Plate
+moretcon:smallplate:0, Enori Crystal Small Plate
+moretcon:smallplate:0, Sunnarium Small Plate
+moretcon:smallplate:0, Sky Stone Small Plate
+moretcon:smallplate:0, Certus Quartz Small Plate
+moretcon:smallplate:0, Fluix Small Plate
+moretcon:smallplate:0, Fluix Steel Small Plate
+moretcon:smallplate:0, Aquamarine Small Plate
+moretcon:smallplate:0, Starmetal Small Plate
+moretcon:smallplate:0, Crystal Matrix Small Plate
+moretcon:smallplate:0, Neutronium Small Plate
+moretcon:smallplate:0, Infinity Small Plate
+moretcon:smallplate:0, Bound Small Plate
+moretcon:smallplate:0, Sentient Small Plate
+moretcon:smallplate:0, Livingrock Small Plate
+moretcon:smallplate:0, Livingwood Small Plate
+moretcon:smallplate:0, Dreamwood Small Plate
+moretcon:smallplate:0, Manasteel Small Plate
+moretcon:smallplate:0, Terrasteel Small Plate
+moretcon:smallplate:0, Elementium Small Plate
+moretcon:smallplate:0, Draconium Small Plate
+moretcon:smallplate:0, Wyvern Small Plate
+moretcon:smallplate:0, Draconic Small Plate
+moretcon:smallplate:0, Chaotic Small Plate
+moretcon:smallplate:0, Litherite Small Plate
+moretcon:smallplate:0, Erodium Small Plate
+moretcon:smallplate:0, Kyronite Small Plate
+moretcon:smallplate:0, Pladium Small Plate
+moretcon:smallplate:0, Ionite Small Plate
+moretcon:smallplate:0, Aethium Small Plate
+moretcon:smallplate:0, Lonsdaleite Small Plate
+moretcon:smallplate:0, Mica Small Plate
+moretcon:smallplate:0, Apatite Small Plate
+moretcon:smallplate:0, Essence-Infused Small Plate
+moretcon:smallplate:0, Meaty Small Plate
+moretcon:smallplate:0, Slime Small Plate
+moretcon:smallplate:0, Pink Metal Small Plate
+moretcon:smallplate:0, Rubber Small Plate
+moretcon:smallplate:0, Advanced Alloy Small Plate
+moretcon:smallplate:0, Energium Small Plate
+moretcon:smallplate:0, Carbon Fiber Small Plate
+moretcon:smallplate:0, Iridium Small Plate
+moretcon:smallplate:0, UU-Metal Small Plate
+moretcon:smallplate:0, Osmium Small Plate
+moretcon:smallplate:0, Refined Obsidian Small Plate
+moretcon:smallplate:0, Refined Glowstone Small Plate
+moretcon:smallplate:0, HDPE Small Plate
+moretcon:smallplate:0, Ghostwood Small Plate
+moretcon:smallplate:0, Bloodwood Small Plate
+moretcon:smallplate:0, Darkwood Small Plate
+moretcon:smallplate:0, Fusewood Small Plate
+moretcon:smallplate:0, Dark Matter Small Plate
+moretcon:smallplate:0, Red Matter Small Plate
+moretcon:smallplate:0, Fluxed Electrum Small Plate
+moretcon:smallplate:0, Flux Crystal Small Plate
+moretcon:smallplate:0, Gelid Enderium Small Plate
+moretcon:smallplate:0, Gelid Gem Small Plate
+moretcon:smallplate:0, Thaumium Small Plate
+moretcon:smallplate:0, Void Metal Small Plate
+moretcon:smallplate:0, Primal Metal Small Plate
+moretcon:smallplate:0, Tin Small Plate
+moretcon:smallplate:0, Aluminium Small Plate
+moretcon:smallplate:0, Nickel Small Plate
+moretcon:smallplate:0, Platinum Small Plate
+moretcon:smallplate:0, Invar Small Plate
+moretcon:smallplate:0, Constantan Small Plate
+moretcon:smallplate:0, Lumium Small Plate
+moretcon:smallplate:0, Enderium Small Plate
+moretcon:smallplate:0, Electrical Small Plate
+moretcon:smallplate:0, Energetic Small Plate
+moretcon:smallplate:0, Vibrant Small Plate
+moretcon:smallplate:0, Red Small Plate
+moretcon:smallplate:0, Conductive Small Plate
+moretcon:smallplate:0, Pulsating Small Plate
+moretcon:smallplate:0, Dark Small Plate
+moretcon:smallplate:0, Souled Small Plate
+moretcon:smallplate:0, Small Plate of the End
+moretcon:smallplate:0, Fake-Iron Small Plate
+moretcon:smallplate:0, Steeleaf Small Plate
+moretcon:smallplate:0, Fiery Small Plate
+moretcon:smallplate:0, Knightly Small Plate
+moretcon:smallplate:0, Wooden Small Plate
+moretcon:smallplate:0, Stone Small Plate
+moretcon:smallplate:0, Flint Small Plate
+moretcon:smallplate:0, Cactus Small Plate
+moretcon:smallplate:0, Bone Small Plate
+moretcon:smallplate:0, Obsidian Small Plate
+moretcon:smallplate:0, Prismarine Small Plate
+moretcon:smallplate:0, End Small Plate
+moretcon:smallplate:0, Paper Small Plate
+moretcon:smallplate:0, Sponge Small Plate
+moretcon:smallplate:0, Firewood Small Plate
+moretcon:smallplate:0, Iron Small Plate
+moretcon:smallplate:0, Pig Iron Small Plate
+moretcon:smallplate:0, Knightslime Small Plate
+moretcon:smallplate:0, Slime Small Plate
+moretcon:smallplate:0, Slime Small Plate
+moretcon:smallplate:0, Magma Slime Small Plate
+moretcon:smallplate:0, Netherrack Small Plate
+moretcon:smallplate:0, Cobalt Small Plate
+moretcon:smallplate:0, Ardite Small Plate
+moretcon:smallplate:0, Manyullyn Small Plate
+moretcon:smallplate:0, Copper Small Plate
+moretcon:smallplate:0, Bronze Small Plate
+moretcon:smallplate:0, Lead Small Plate
+moretcon:smallplate:0, Silver Small Plate
+moretcon:smallplate:0, Electrum Small Plate
+moretcon:smallplate:0, Steel Small Plate
+moretcon:smallplate:0, Ferramic Small Plate
+moretcon:smallplate:0, Angelic Small Plate
+moretcon:smallplate:0, Duraluminum Small Plate
+moretcon:smallplate:0, Watertight Steel Small Plate
+moretcon:smallplate:0, High Heat Resistant Small Plate
+moretcon:smallplate:0, Erosion Resistant Small Plate
+moretcon:smallplate:0, Mushroomite Small Plate
+moretcon:smallplate:0, Electric Manyullyn Small Plate
+moretcon:smallplate:0, Khnumite Small Plate
+moretcon:smallplate:0, Relic Small Plate
+moretcon:smallplate:0, Uranium Small Plate
+moretcon:smallplate:0, Honey Small Plate
+moretcon:smallplate:0, Elastic Fiber Small Plate
+moretcon:smallplate:0, Soapy Small Plate
+moretcon:smallplate:0, Coppra Crystal Small Plate
+moretcon:smallplate:0, Nittin Crystal Small Plate
+moretcon:smallplate:0, Goold Crystal Small Plate
+moretcon:smallplate:0, Osgloridium Small Plate
+moretcon:smallplate:0, Arkenium Small Plate
+moretcon:smallplate:0, Black Bronze Small Plate
+moretcon:smallplate:0, Blood Infused Glitch Small Plate
+moretcon:smallplate:0, Magical Wooden Small Plate
+moretcon:smallplate:0, Evil Infused Small Plate
+moretcon:smallplate:0, Enchanted Small Plate
+moretcon:smallplate:0, Demonic Small Plate
+moretcon:smallplate:0, Molten Meat Small Plate
+moretcon:smallplate:0, Vespa Carapace Small Plate
+moretcon:smallplate:0, Scythe Claw Small Plate
+moretcon:smallplate:0, Ectoplasm Small Plate
+moretcon:smallplate:0, Treated Wood Small Plate
+moretcon:smallplate:0, Prosperity Shard Small Plate
+moretcon:smallplate:0, Soulium Small Plate
+moretcon:smallplate:0, Base Essence Small Plate
+moretcon:smallplate:0, Inferium Small Plate
+moretcon:smallplate:0, Prudentium Small Plate
+moretcon:smallplate:0, Intermedium Small Plate
+moretcon:smallplate:0, Superium Small Plate
+moretcon:smallplate:0, Supremium Small Plate
+moretcon:smallplate:0, Tiberium Small Plate
+moretcon:smallplate:0, Aurorium Small Plate
+moretcon:smallplate:0, Prometheum Small Plate
+moretcon:smallplate:0, Duranite Small Plate
+moretcon:smallplate:0, Valyrium Small Plate
+moretcon:smallplate:0, Vibranium Small Plate
+moretcon:smallplate:0, Terrax Small Plate
+moretcon:smallplate:0, Palladium Small Plate
+moretcon:smallplate:0, Uru Small Plate
+moretcon:smallplate:0, Eezo Small Plate
+moretcon:smallplate:0, Basalt Small Plate
+moretcon:smallplate:0, Triberium Small Plate
+moretcon:smallplate:0, Fractum Small Plate
+moretcon:smallplate:0, Violium Small Plate
+moretcon:smallplate:0, Proxii Small Plate
+moretcon:smallplate:0, Tritonite Small Plate
+moretcon:smallplate:0, Ignitz Small Plate
+moretcon:smallplate:0, Imperomite Small Plate
+moretcon:smallplate:0, Solarium Small Plate
+moretcon:smallplate:0, Nihilite Small Plate
+moretcon:smallplate:0, Adamant Small Plate
+moretcon:smallplate:0, Dyonite Small Plate
+moretcon:smallplate:0, Nucleum Small Plate
+moretcon:smallplate:0, Lumix Small Plate
+moretcon:smallplate:0, Seismum Small Plate
+moretcon:smallplate:0, Astrium Small Plate
+moretcon:smallplate:0, Niob Small Plate
+moretcon:smallplate:0, Yrdeen Small Plate
+moretcon:smallplate:0, Meteorite Small Plate
+moretcon:smallplate:0, Obsidiorite Small Plate
+moretcon:smallplate:0, Mithril Small Plate
+moretcon:smallplate:0, Signalum Small Plate
+moretcon:smallplate:0, Brass Small Plate
+moretcon:smallplate:0, Zinc Small Plate
+moretcon:smallplate:0, Gaia Spirit Small Plate
+moretcon:smallplate:0, Yellorium Small Plate
+moretcon:smallplate:0, Cyanite Small Plate
+moretcon:smallplate:0, Blutonium Small Plate
+moretcon:smallplate:0, Ludicrite Small Plate
+moretcon:smallplate:0, Quartz Enriched Iron Small Plate
+moretcon:smallplate:0, Wyvern Draconium Small Plate
+moretcon:smallplate:0, Awakened Draconium Small Plate
+moretcon:smallplate:0, Chaotic Draconium Small Plate
+moretcon:smallplate:0, Ebony Psimetal Small Plate
+moretcon:smallplate:0, Fluxed Electrum Small Plate
+moretcon:smallplate:0, Tungsten Small Plate
+moretcon:smallplate:0, Titanium Small Plate
+moretcon:smallplate:0, Advanced Alloy Small Plate
+moretcon:smallplate:0, Ruby Small Plate
+moretcon:smallplate:0, Sapphire Small Plate
+moretcon:smallplate:0, Peridot Small Plate
+moretcon:smallplate:0, Certus Quartz Small Plate
+moretcon:smallplate:0, Alumite Small Plate
+moretcon:smallplate:0, Jade Small Plate
+moretcon:smallplate:0, Malachite Small Plate
+moretcon:smallplate:0, Topaz Small Plate
+moretcon:smallplate:0, Tanzanite Small Plate
+moretcon:smallplate:0, Amethyst Small Plate
+moretcon:smallplate:0, Osgloglas Small Plate
+moretcon:smallplate:0, Osmiridium Small Plate
+moretcon:smallplate:0, Signalum Small Plate
+moretcon:smallplate:0, Zracohlium Small Plate
+moretcon:smallplate:0, Fusionite Small Plate
+moretcon:smallplate:0, Valasium Small Plate
+moretcon:smallplate:0, Void Spar Small Plate
+moretcon:smallplate:0, Enderal Small Plate
+moretcon:smallplate:0, Irradium Small Plate
+moretcon:smallplate:0, Solsteel Small Plate
+moretcon:smallplate:0, Gallium Small Plate
+moretcon:smallplate:0, Enderexamite Small Plate
+moretcon:smallplate:0, Garstone Small Plate
+moretcon:smallplate:0, Runesteel Small Plate
+moretcon:smallplate:0, Gravitonium Small Plate
+moretcon:smallplate:0, Trichromadentium Small Plate
+moretcon:smallplate:0, Bloodstone Small Plate
+moretcon:smallplate:0, Echostone Small Plate
+moretcon:smallplate:0, Igniglomerate Small Plate
+moretcon:smallplate:0, Atronium Small Plate
+moretcon:smallplate:0, Ebonite Small Plate
+moretcon:smallplate:0, Erythynite Small Plate
+moretcon:smallplate:0, Shadowglass Small Plate
+moretcon:smallplate:0, Etherstone Small Plate
+moretcon:smallplate:0, Electarite Small Plate
+moretcon:smallplate:0, Hallowsite Small Plate
+moretcon:smallplate:0, Blightsteel Small Plate
+moretcon:smallplate:0, Sanguiseelium Small Plate
+moretcon:smallplate:0, Ioximite Small Plate
+moretcon:smallplate:0, Nahuatl Small Plate
+moretcon:smallplate:0, Slimewood Small Plate
+moretcon:smallplate:0, Seared Stone Small Plate
+moretcon:smallplate:0, Ironwood Small Plate
+moretcon:smallplate:0, Penguinite Small Plate
+moretcon:smallplate:0, Ferroherb Small Plate
+moretcon:smallplate:0, Arkenium Small Plate
+moretcon:smallplate:0, Skyroot Small Plate
+moretcon:smallplate:0, Holystone Small Plate
+moretcon:smallplate:0, Zanite Small Plate
+moretcon:smallplate:0, Gravitite Small Plate
+moretcon:smallplate:0, Valkyrie Metal Small Plate
+moretcon:smallplate:0, Amberwood Small Plate
+moretcon:smallplate:0, Skyroot Small Plate
+moretcon:smallplate:0, Holystone Small Plate
+moretcon:smallplate:0, Zanite Small Plate
+moretcon:smallplate:0, Gravitite Small Plate
+moretcon:smallplate:0, Golden Amber Small Plate
+moretcon:smallplate:0, Valkyrie Small Plate
+moretcon:smallplate:0, Swet Small Plate
+moretcon:smallplate:0, Candy Cane Small Plate
+moretcon:smallplate:0, Cold Aercloud Small Plate
+moretcon:smallplate:0, Blue Aercloud Small Plate
+moretcon:smallplate:0, Golden Aercloud Small Plate
+moretcon:smallplate:0, Icestone Small Plate
+moretcon:smallplate:0, Blood Bronze Small Plate
+moretcon:smallplate:0, Mirion Small Plate
+moretcon:smallplate:0, Emerald Small Plate
+moretcon:gauntlet, Gauntlet
+moretcon:ring, Ring
 nae2:material:0, ME Void Storage Component
 nae2:material:1, §c256k§r ME Storage Component
 nae2:material:2, §61024k§r ME Storage Component
@@ -32914,6 +34785,157 @@ tinkersaether:valkyrie_nugget, Valkyrie Metal Nugget
 tinkersaether:valkyrie_block, Block of Valkyrie Metal
 tinkersaether:swet_crystal, Swet Crystal
 trumpetskeleton:trumpet, Trumpet
+yoyos:yoyo_axle:0, Manasteel Axle
+yoyos:yoyo_axle:0, Terrasteel Axle
+yoyos:yoyo_axle:0, Elementium Axle
+yoyos:yoyo_axle:0, Lonsdaleite Axle
+yoyos:yoyo_axle:0, Mica Axle
+yoyos:yoyo_axle:0, Rubber Axle
+yoyos:yoyo_axle:0, Iridium Axle
+yoyos:yoyo_axle:0, Osmium Axle
+yoyos:yoyo_axle:0, Amber Axle
+yoyos:yoyo_axle:0, Tin Axle
+yoyos:yoyo_axle:0, Nickel Axle
+yoyos:yoyo_axle:0, Platinum Axle
+yoyos:yoyo_axle:0, Invar Axle
+yoyos:yoyo_axle:0, Constantan Axle
+yoyos:yoyo_axle:0, Lumium Axle
+yoyos:yoyo_axle:0, Enderium Axle
+yoyos:yoyo_axle:0, Wooden Axle
+yoyos:yoyo_axle:0, Stone Axle
+yoyos:yoyo_axle:0, Flint Axle
+yoyos:yoyo_axle:0, Cactus Axle
+yoyos:yoyo_axle:0, Bone Axle
+yoyos:yoyo_axle:0, Obsidian Axle
+yoyos:yoyo_axle:0, Prismarine Axle
+yoyos:yoyo_axle:0, End Axle
+yoyos:yoyo_axle:0, Paper Axle
+yoyos:yoyo_axle:0, Sponge Axle
+yoyos:yoyo_axle:0, Firewood Axle
+yoyos:yoyo_axle:0, Iron Axle
+yoyos:yoyo_axle:0, Pig Iron Axle
+yoyos:yoyo_axle:0, Knightslime Axle
+yoyos:yoyo_axle:0, Slime Axle
+yoyos:yoyo_axle:0, Slime Axle
+yoyos:yoyo_axle:0, Magma Slime Axle
+yoyos:yoyo_axle:0, Netherrack Axle
+yoyos:yoyo_axle:0, Cobalt Axle
+yoyos:yoyo_axle:0, Ardite Axle
+yoyos:yoyo_axle:0, Manyullyn Axle
+yoyos:yoyo_axle:0, Copper Axle
+yoyos:yoyo_axle:0, Bronze Axle
+yoyos:yoyo_axle:0, Lead Axle
+yoyos:yoyo_axle:0, Silver Axle
+yoyos:yoyo_axle:0, Electrum Axle
+yoyos:yoyo_axle:0, Steel Axle
+yoyos:yoyo_axle:0, Blazerod Axle
+yoyos:yoyo_axle:0, Ice Axle
+yoyos:yoyo_axle:0, Basalt Axle
+yoyos:yoyo_axle:0, Mithril Axle
+yoyos:yoyo_axle:0, Signalum Axle
+yoyos:yoyo_axle:0, Brass Axle
+yoyos:yoyo_axle:0, Zinc Axle
+yoyos:yoyo_axle:0, Gaia Spirit Axle
+yoyos:yoyo_axle:0, Blutonium Axle
+yoyos:yoyo_axle:0, Ludicrite Axle
+yoyos:yoyo_axle:0, Ebony Psimetal Axle
+yoyos:yoyo_axle:0, Fluxed Electrum Axle
+yoyos:yoyo_axle:0, Tungsten Axle
+yoyos:yoyo_axle:0, Titanium Axle
+yoyos:yoyo_axle:0, Advanced Alloy Axle
+yoyos:yoyo_axle:0, Ruby Axle
+yoyos:yoyo_axle:0, Sapphire Axle
+yoyos:yoyo_axle:0, Peridot Axle
+yoyos:yoyo_axle:0, Alumite Axle
+yoyos:yoyo_axle:0, Malachite Axle
+yoyos:yoyo_axle:0, Topaz Axle
+yoyos:yoyo_axle:0, Tanzanite Axle
+yoyos:yoyo_axle:0, Amethyst Axle
+yoyos:yoyo_axle:0, Osgloglas Axle
+yoyos:yoyo_axle:0, Osmiridium Axle
+yoyos:yoyo_axle:0, Signalum Axle
+yoyos:yoyo_axle:0, Mirion Axle
+yoyos:yoyo_axle:0, Emerald Axle
+yoyos:yoyo_body:0, Manasteel Body
+yoyos:yoyo_body:0, Terrasteel Body
+yoyos:yoyo_body:0, Elementium Body
+yoyos:yoyo_body:0, Lonsdaleite Body
+yoyos:yoyo_body:0, Mica Body
+yoyos:yoyo_body:0, Rubber Body
+yoyos:yoyo_body:0, Iridium Body
+yoyos:yoyo_body:0, Osmium Body
+yoyos:yoyo_body:0, Amber Body
+yoyos:yoyo_body:0, Tin Body
+yoyos:yoyo_body:0, Nickel Body
+yoyos:yoyo_body:0, Platinum Body
+yoyos:yoyo_body:0, Invar Body
+yoyos:yoyo_body:0, Constantan Body
+yoyos:yoyo_body:0, Lumium Body
+yoyos:yoyo_body:0, Enderium Body
+yoyos:yoyo_body:0, Wooden Body
+yoyos:yoyo_body:0, Stone Body
+yoyos:yoyo_body:0, Flint Body
+yoyos:yoyo_body:0, Cactus Body
+yoyos:yoyo_body:0, Bone Body
+yoyos:yoyo_body:0, Obsidian Body
+yoyos:yoyo_body:0, Prismarine Body
+yoyos:yoyo_body:0, End Body
+yoyos:yoyo_body:0, Paper Body
+yoyos:yoyo_body:0, Sponge Body
+yoyos:yoyo_body:0, Firewood Body
+yoyos:yoyo_body:0, Iron Body
+yoyos:yoyo_body:0, Pig Iron Body
+yoyos:yoyo_body:0, Knightslime Body
+yoyos:yoyo_body:0, Slime Body
+yoyos:yoyo_body:0, Slime Body
+yoyos:yoyo_body:0, Magma Slime Body
+yoyos:yoyo_body:0, Netherrack Body
+yoyos:yoyo_body:0, Cobalt Body
+yoyos:yoyo_body:0, Ardite Body
+yoyos:yoyo_body:0, Manyullyn Body
+yoyos:yoyo_body:0, Copper Body
+yoyos:yoyo_body:0, Bronze Body
+yoyos:yoyo_body:0, Lead Body
+yoyos:yoyo_body:0, Silver Body
+yoyos:yoyo_body:0, Electrum Body
+yoyos:yoyo_body:0, Steel Body
+yoyos:yoyo_body:0, Ice Body
+yoyos:yoyo_body:0, Basalt Body
+yoyos:yoyo_body:0, Mithril Body
+yoyos:yoyo_body:0, Signalum Body
+yoyos:yoyo_body:0, Brass Body
+yoyos:yoyo_body:0, Zinc Body
+yoyos:yoyo_body:0, Gaia Spirit Body
+yoyos:yoyo_body:0, Blutonium Body
+yoyos:yoyo_body:0, Ludicrite Body
+yoyos:yoyo_body:0, Ebony Psimetal Body
+yoyos:yoyo_body:0, Fluxed Electrum Body
+yoyos:yoyo_body:0, Tungsten Body
+yoyos:yoyo_body:0, Titanium Body
+yoyos:yoyo_body:0, Advanced Alloy Body
+yoyos:yoyo_body:0, Ruby Body
+yoyos:yoyo_body:0, Sapphire Body
+yoyos:yoyo_body:0, Peridot Body
+yoyos:yoyo_body:0, Alumite Body
+yoyos:yoyo_body:0, Malachite Body
+yoyos:yoyo_body:0, Topaz Body
+yoyos:yoyo_body:0, Tanzanite Body
+yoyos:yoyo_body:0, Amethyst Body
+yoyos:yoyo_body:0, Osgloglas Body
+yoyos:yoyo_body:0, Osmiridium Body
+yoyos:yoyo_body:0, Signalum Body
+yoyos:yoyo_body:0, Mirion Body
+yoyos:yoyo_body:0, Emerald Body
+yoyos:yoyo_cord:0, Knightslime Cord
+yoyos:yoyo_cord:0, Slime Cord
+yoyos:yoyo_cord:0, Slime Cord
+yoyos:yoyo_cord:0, Magma Slime Cord
+yoyos:yoyo_cord:0, String Cord
+yoyos:yoyo_cord:0, Slimevine Cord
+yoyos:yoyo_cord:0, Slimevine Cord
+yoyos:yoyo_cord:0, Vines Cord
+yoyos:yoyo, Yoyo
+yoyos:book, Yoyos and You
 roots:roots_guide, The Magic of the Wilds
 roots:moonglow_seed, Moonglow Seed
 roots:moonglow_leaf, Moonglow Leaf
@@ -33608,4 +35630,8 @@ exnihilocreatio:item_ore_zinc:0, Zinc Ore Piece
 exnihilocreatio:item_ore_zinc:1, Zinc Ore Chunk
 exnihilocreatio:item_ore_zinc:2, Zinc Ore Dust
 exnihilocreatio:item_ore_zinc:3, Zinc Ingot
+yoyos:mana_cord, Mana Infused Cord
+yoyos:manasteel_yoyo, Manasteel Yoyo
+yoyos:elementium_yoyo, Elementium Yoyo
+yoyos:terrasteel_yoyo, Terra Chaser
 guideapi:bloodmagic-guide, item.guideapi.book.bloodmagic.guide.name
