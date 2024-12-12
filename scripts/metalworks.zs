@@ -1517,6 +1517,31 @@ static all_metals as IItemStack[string][string] = {
         ball: <contenttweaker:proxii_ball>
     },
 
+    //moretcon
+    hallowsite: {
+        ingot: <moretcon:ingothallowsite>,
+        block: <moretcon:blockhallowsite>,
+        dust: <moretcon:dusthallowsite>
+    },
+    ebonite: {
+        ingot: <moretcon:ingotebonite>,
+        block: <moretcon:blockebonite>,
+        dust: <moretcon:dustebonite>
+    },
+    blightsteel: {
+        ingot: <moretcon:ingotblightsteel>,
+        block: <moretcon:blockblightsteel>,
+        dust: <moretcon:dustblightsteel>
+    },
+
+    caelumite: {
+        ingot: <contenttweaker:caelumite_ingot>,
+        plate: <contenttweaker:caelumite_plate>,
+        rod: <contenttweaker:caelumite_rod>,
+        block: <contenttweaker:caelumite_block>,
+        dust: <contenttweaker:caelumite_dust>
+    },
+
     //mystical agric
     mystical_base: {
         ingot: <mysticalagriculture:crafting:32>,
@@ -1936,6 +1961,10 @@ static all_metals_molten as ILiquidStack[string] = {
     yrdeen: <liquid:yrdeen_fluid>,
     proxii: <liquid:proxii_fluid>,
 
+    ebonite: <liquid:liquidebonite>,
+    hallowsite: <liquid:liquidhallowsite>,
+    blightsteel: <liquid:liquidblightsteel>,
+
     mystical_metal0: <liquid:inferium>,
     mystical_metal1: <liquid:prudentium>,
     mystical_metal2: <liquid:intermedium>,
@@ -2008,7 +2037,8 @@ static custom_metals as string[] = [
     "fluix_steel", "menril_steel", "medical_alloy",
     "arkenium", "gallium", "UU_matter",
     "black_bronze", "tinezo", "tignalum", "orichalcum",
-    "gem_steel", "mirion2"
+    "gem_steel", "mirion2",
+    "caelumite"
 ];
 
 
@@ -4068,6 +4098,19 @@ recipes.addShaped("ia_neutronium_sheetmetal", <contenttweaker:neutronium_sheetme
         "palladium", 3,
         "duranite", 1,
         "osram", 1
+    );
+}
+
+{//moretcon
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <moretcon:ingotblightsteel> * 2, 
+        <moretcon:ingotebonite>, <moretcon:ingothallowsite>, 
+        16000
+    );
+    add3alloy(3, "blightsteel", 4,
+        "ebonite", 1,
+        "hallowsite", 1,
+        "uru", 1
     );
 }
 

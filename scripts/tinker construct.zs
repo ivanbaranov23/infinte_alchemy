@@ -98,9 +98,14 @@ recipes.addShaped("ia_bocuit", <contenttweaker:bocuit>, [
 
 {
     recipes.remove(<tconstruct:materials:14>);
-    recipes.addShaped("ia_reinforced_mod", <tconstruct:materials:14>, [
+    recipes.addShaped("ia_reinforced_mod1", <tconstruct:materials:14> * 5, [
         [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>], 
         [<contenttweaker:anput_godshard>, <tconstruct:cast>, <contenttweaker:anput_godshard>], 
+        [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>]
+    ]);
+    recipes.addShaped("ia_reinforced_mod3", <tconstruct:materials:14>, [
+        [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>], 
+        [<contenttweaker:horus_godshard>, <tconstruct:cast>, <contenttweaker:horus_godshard>], 
         [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>]
     ]);
     recipes.addShaped("ia_reinforced_mod2", <tconstruct:materials:14>, [

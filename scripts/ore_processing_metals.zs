@@ -1,13 +1,16 @@
-
+import mods.enderio.SagMill;
 
 {//copper
-    mods.thermalexpansion.InductionSmelter.addRecipe(
-        <thermalfoundation:material:163> * 12, 
-        <mekanism:dirtydust:3> * 4, <moreplates:tin_stick>, 
-        3000
-    );
-}
+    
 
+    recipes.addShapeless("copper_conv", <thermalfoundation:ore>, [
+        <immersiveengineering:ore> | <mekanism:oreblock:1>
+    ]);
+}
+{//aluminum
+    furnace.remove(<erebus:materials:42>);
+    
+}
 
 {//ardite
     scripts.content_machines.addBioAssemblerRecipe(
@@ -25,6 +28,22 @@
         ], <contenttweaker:research_chemistry3>,
         40, 1000
     );
+}
+
+{//silver
+    recipes.addShapeless("silver_conv", <thermalfoundation:ore:2>, [
+        <mysticalworld:silver_ore> | <immersiveengineering:ore:3>
+    ]);
+}
+
+
+{//atum
+    SagMill.addRecipe([<thermalfoundation:material> * 2, <atum:loot_ruby_broach>, <atum:loot_sapphire_broach>], [1.0, 0.1, 0.1], <atum:iron_ore>, "MULTIPLY_OUTPUT");
+
+
+    SagMill.addRecipe([<thermalfoundation:material:1> * 2, <atum:loot_ruby_scepter>, <atum:loot_sapphire_scepter>], [1.0, 0.1, 0.1], <atum:gold_ore>, "MULTIPLY_OUTPUT");
+
+
 }
 
 
@@ -55,7 +74,9 @@
     <densemetals:dense_rutile_ore>.displayName = "Dense Titanium Ore";
     mods.jei.JEI.addItem(<densemetals:dense_rutile_ore>);
 }
-
+{//cursed gold
+    <ore:dustCursedgold>.add(<contenttweaker:cursed_gold_dust>);
+}
 
 {//mithril
     <moreplates:mana_infused_stick>.displayName = "Mithril Rod";
@@ -218,3 +239,6 @@ scripts.ore_processing.addTingalumOvenRecipe([<botania:manaresource:4>], [
 
 //beryllium
 <ore:dustBeryllium>.add(<contenttweaker:beryllium_dust>);
+
+<ore:oreCaelumite>.add(<contenttweaker:caelumite_ore>);
+<ore:dustCaelumite>.add(<contenttweaker:caelumite_dust>);

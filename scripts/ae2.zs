@@ -455,7 +455,7 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 }
 recipes.remove(<appliedenergistics2:material:52>);
 recipes.addShaped("ia_pattern", <appliedenergistics2:material:52> * 4, [
-	[null, <appliedenergistics2:quartz_glass>, null], 
+	[<contenttweaker:fluix_steel_nugget>, <appliedenergistics2:quartz_glass>, <contenttweaker:fluix_steel_nugget>], 
 	[<appliedenergistics2:quartz_glass>, <avaritia:compressed_crafting_table>, <appliedenergistics2:quartz_glass>], 
 	[<contenttweaker:fluix_steel_nugget>, <projectred-expansion:charged_battery>, <contenttweaker:fluix_steel_nugget>]
 ]);
@@ -653,8 +653,8 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <ae2wtlib:infinity_booster_card
 }
 
 {//termianals
-	recipes.remove(<appliedenergistics2:part:380>);
-	recipes.addShapeless("ia_patter2_term", <appliedenergistics2:part:380>, [<appliedenergistics2:part:360>, <appliedenergistics2:molecular_assembler>]);
+	recipes.remove(<appliedenergistics2:part:360>);
+	recipes.addShapeless("ia_patter1_term", <appliedenergistics2:part:360>, [<appliedenergistics2:part:380>, <appliedenergistics2:molecular_assembler>]);
 
 
 	recipes.remove(<appliedenergistics2:part:341>);

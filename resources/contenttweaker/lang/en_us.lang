@@ -1933,8 +1933,7 @@ tile.sorter_food.name=Food Value Living Sorter
 tile.sorter_livespan.name=Livespan Value Living Sorter
 
 ia.rename.industrial_graphite=Industrial Grade Graphite
-ia.rename.magical_copper=Magical Copper Ore
-ia.rename.magical_copper=Magical Tin Ore
+
 
 ia.tooltip.holy_thing=So just \"holy\"
 ia.tooltip.dummy=Pay this no mind
@@ -2002,3 +2001,9 @@ item.contenttweaker.tink_research_token1.name=Nahuatl Large Sword Blade Research
 item.contenttweaker.tink_research_token2.name=Prismarine Laser Medium Research Token
 item.contenttweaker.research_tinker.name=How To Tinker Better
 item.contenttweaker.apatite.name=Tinker's Apatite
+
+item.contenttweaker.uru_pieces.name=Uru Pieces
+item.contenttweaker.uru_chunk.name=Uru Chunk
+
+ia.rename.magical_copper=Magical Copper Ore
+ia.rename.magical_tin=Magical Tin Ore

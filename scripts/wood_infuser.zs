@@ -276,7 +276,7 @@ for stone,ore_list in {
 } as IItemStack[IItemStack][IItemStack] {
     for dust,ore in ore_list{
         mods.roots.Pyre.addRecipe(
-            "ore_craft_" ~ ore.name ~ dust.name, ore,
+            "ore_craft_" ~ ore.name ~ dust.name, ore * 2,
             [
                 <contenttweaker:burn_powder>,
                 <thermalfoundation:material:770>,

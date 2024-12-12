@@ -24,6 +24,13 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .output(item('minecraft:redstone'))
         .register()
 
+inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('water'))
+        .input(item('contenttweaker:malachite_ore_dust'))
+        .input(item('appliedenergistics2:material', 2))
+        .output(item('contenttweaker:malachite_dust'))
+        .register()
+
 
 inWorldCrafting.fluidToItem.recipeBuilder()
         .fluidInput(fluid('blueslime'))

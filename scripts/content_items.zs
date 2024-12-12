@@ -487,6 +487,9 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("cursed_gold_dust").register();
     VanillaFactory.createItem("cursed_gold_ingot").register();
     VanillaFactory.createItem("cursed_gold_plate").register();
+    VanillaFactory.createBlock("cursed_gold_altar1", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("cursed_gold_altar2", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("cursed_gold_altar3", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("pure_gold_dust").register();
     VanillaFactory.createFluid("aqua_regia", Color.fromHex("ffff0b")).register();
@@ -565,11 +568,30 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("proxii_gear").register();
     VanillaFactory.createItem("proxii_ball").register();
 
+    VanillaFactory.createItem("uru_pieces").register();
+    VanillaFactory.createItem("uru_chunk").register();
+
     VanillaFactory.createItem("awaken_uru_ingot").register();
     VanillaFactory.createItem("awaken_uru_plate").register();
     VanillaFactory.createItem("awaken_uru_gear").register();
     VanillaFactory.createBlock("awaken_uru_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("awaken_uru_dust").register();
+
+    VanillaFactory.createItem("hallowsite_pieces").register();
+    VanillaFactory.createItem("hallowsite_chunk").register();
+
+    //VanillaFactory.createBlock("caelumite_ore", <blockmaterial:rock>).register();
+    var caelumite_ore = VanillaFactory.createBlock("caelumite_ore", <blockmaterial:rock>);
+    caelumite_ore.lightValue = 1;
+    caelumite_ore.register();
+    VanillaFactory.createItem("caelumite_ingot").register();
+    VanillaFactory.createItem("caelumite_plate").register();
+    VanillaFactory.createItem("caelumite_rod").register();
+    //VanillaFactory.createBlock("caelumite_block", <blockmaterial:rock>).register();
+    var caelumite_block = VanillaFactory.createBlock("caelumite_block", <blockmaterial:rock>);
+    caelumite_block.lightValue = 1;
+    caelumite_block.register();
+    VanillaFactory.createItem("caelumite_dust").register();
 
     VanillaFactory.createItem("biotite_dust").register();
     VanillaFactory.createItem("biotite_dirty_dust").register();
@@ -824,7 +846,8 @@ function addAtomicResource(name as string){
 
     VanillaFactory.createItem("preblack_ingot").register();
 
-    //eVanillaFactory.createItem("starmetal_ingot").register();
+    VanillaFactory.createBlock("starmetal_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("starmetal_space_ore", <blockmaterial:rock>).register();
     VanillaFactory.createItem("starmetal_plate").register();
     VanillaFactory.createItem("starmetal_gear").register();
     VanillaFactory.createBlock("starmetal_block", <blockmaterial:rock>).register();
@@ -1312,6 +1335,8 @@ function add_mech_part(name as string){
     VanillaFactory.createItem("mech_taxi").register();
 
     VanillaFactory.createItem("mech_taxi2").register();
+    VanillaFactory.createItem("mech_taxi3").register();
+    VanillaFactory.createItem("mech_taxi4").register();
 
     VanillaFactory.createItem("empowered_shard").register();
     VanillaFactory.createFluid("dense_steam", Color.fromHex("dedede")).register();

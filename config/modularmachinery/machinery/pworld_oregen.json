@@ -2,6 +2,24 @@
     "registryname": "pworld_oregen",
     "localizedname": "Parallel World Exploration Hub",
     "color": "161919",
+    "modifiers": [
+        {
+            "x": 0,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "contenttweaker:portal@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 4
+                }
+            ]
+        }
+    ],
     "parts": [
         {
             "x": -1,

@@ -23,9 +23,8 @@
 		}]
 	}],
 	rewards: [{
-		uid: "d9f74424",
+		uid: "40cc30b1",
 		type: "item",
-		item: "contenttweaker:relic_ingot",
-		count: 9
+		item: "contenttweaker:relic_block"
 	}]
 }

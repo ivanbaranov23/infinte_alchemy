@@ -115,6 +115,290 @@
 					-1
 				]
 			}
+		},
+
+		"roof_hole1": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "cluster",
+				"block": ["minecraft:air", {"name": "natura:clouds", "metadata": 2, "weight": 0.1}],
+				"cluster-size": 40,
+                
+                "gen-body": ["minecraft:air", "netherrack", "bedrock", "biomesoplenty:flesh"],
+                "material": "bedrock"
+			},
+			"cluster-count": 30,
+            "chunk-chance": 1,
+			"min-height": 125,
+			"max-height": 127,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"roof_hole2": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					{
+						"type": "plate",
+						"block": ["moretcon:blockcobbledbedrock", "bedrock", "air"],
+						"radius": 7,
+						"height": 0,
+						
+						
+						"material": [
+							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
+							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
+							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
+							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
+						]
+					},
+					{
+						"type": "plate",
+						"block": [{"name": "minecraft:air", "weight": 50}, {"name": "natura:clouds", "metadata": 3, "weight": 1}],
+						"radius": 5.5,
+						"height": 15,
+						
+						
+						"material": [
+							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
+							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
+							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
+							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
+						]
+					},
+					{
+						"type": "plate",
+						"block": ["minecraft:air"],
+						"radius": 5,
+						"height": 30,
+						"slim": true,
+						
+						
+						"material": [
+							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
+							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
+							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
+							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
+						]
+					},
+					{
+						"type": "plate",
+						"block": ["minecraft:air"],
+						"radius": 4,
+						"height": 60,
+						"slim": true,
+						
+						
+						"material": [
+							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
+							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
+							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
+							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
+						]
+					}
+				]
+			},
+			"cluster-count": 1,
+            "chunk-chance": 40,
+			"min-height": 126,
+			"max-height": 128,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"sulfur_cloud": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "cluster",
+				"block": [{"name": "natura:clouds", "metadata": 3}],
+				"cluster-size": 50,
+                
+                
+                "material": "minecraft:air"
+			},
+			"cluster-count": 2,
+            "chunk-chance": 3,
+			"min-height": 150,
+			"max-height": 160,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether_pyro": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "lake",
+				"block": {"name": "thermalfoundation:fluid_pyrotheum"},
+                "material": [
+                    "minecraft:bedrock",
+					"minecraft:netherrack"
+                ],
+				"use-material": false,
+				"outline-block": [
+					{"name": "chisel:basalt2", "metadata": 7}
+
+				]
+			},
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 125,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+
+		"nether_glow_stal": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [{"name": "chisel:glowstone1", "metadata": 15, "weight": 50}, {"name": "contenttweaker:caelumite_ore", "weight": 1}],
+				"min-height": 8,
+                "material": ["minecraft:air", "bedrock"]
+			},
+			"cluster-count": 2,
+            "chunk-chance": 6,
+			"min-height": 120,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		
+		"nether_glowshrooms": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "decoration",
+				"block": {"name": "biomesoplenty:mushroom", "metadata": 3},
+				"cluster-size": 10,
+                
+                "surface": ["netherrack", "bedrock"],
+				"see-sky": false,
+				"check-stay": true,
+				"material": "air"
+			},
+			"cluster-count": 7,
+            "chunk-chance": 1,
+			"min-height": 120,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether_bedrock1": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "decoration",
+				"block": {"name": "extrautils2:decorativebedrock", "metadata": 2},
+				"cluster-size": 10,
+                
+                "surface": ["bedrock"],
+				"see-sky": false,
+				"material": "air"
+			},
+			"cluster-count": 7,
+            "chunk-chance": 1,
+			"min-height": 120,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether_bedrock2": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "decoration",
+				"block": {"name": "extrautils2:decorativebedrock", "metadata": 2},
+				"cluster-size": 10,
+				"stack-height": 2,
+                
+                "surface": ["bedrock"],
+				"see-sky": false,
+				"material": "air"
+			},
+			"cluster-count": 4,
+            "chunk-chance": 1,
+			"min-height": 120,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"nether_bedrock3": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "stalagmite",
+				"block": [
+                    {"name": "stone", "weight": 50},
+                    {"name": "thermalfoundation:ore", "weight": 15},
+                    {"name": "densemetals:dense_copper_ore", "weight": 5},
+                    {"name": "immersiveengineering:ore", "weight": 10}
+                ],
+                "min-height": 19
+			},
+			"cluster-count": 4,
+            "chunk-chance": 8,
+			"min-height": 120,
+			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
 		}
     }
 }

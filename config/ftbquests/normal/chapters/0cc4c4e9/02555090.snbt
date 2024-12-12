@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 0.0d,
+	dependencies: [
+		"a758a11f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "af6c25b1",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:gem"
+		}]
+	}],
+	rewards: [{
+		uid: "11e340ed",
+		type: "item",
+		item: "biomesoplenty:gem_block"
+	}]
+}

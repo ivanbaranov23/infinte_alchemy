@@ -192,6 +192,8 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:ice_shard>, <contenttweaker:ice_shard_block>);
     
     add3x3Recipe(<contenttweaker:wormium_ingot>, <contenttweaker:wormium_block>);
+    
+    add3x3Recipe(<contenttweaker:caelumite_ingot>, <contenttweaker:caelumite_block>);
 }
 
 {//potato

@@ -56,10 +56,7 @@ function addMekOreNew(
     //ardite
     addMekOreFix([<netherendingores:ore_other_1:2>, <tconstruct:ore:1>, <exnihilocreatio:item_ore_ardite:1>], <gas:ardite>, <mekores:mekanismore:41>, <mekores:mekanismore:42>);
 
-    //taiga
-    addMekOreFix([<contenttweaker:karmesine_chunk>], <gas:karmesine>, <mekores:mekanismore:271>, <mekores:mekanismore:272>);
-    addMekOreFix([<contenttweaker:ovium_chunk>], <gas:ovium>, <mekores:mekanismore:276>, <mekores:mekanismore:277>);
-    addMekOreFix([<contenttweaker:jauxum_chunk>], <gas:jauxum>, <mekores:mekanismore:281>, <mekores:mekanismore:282>);
+    
     
 }
 {//t2
@@ -68,16 +65,6 @@ function addMekOreNew(
     //osmium
     //lead
 
-    //osram
-    addMekOreFix([<contenttweaker:osram_chunk>], <gas:osram>, <mekores:mekanismore:291>, <mekores:mekanismore:292>);
-    //eezo
-    addMekOreFix([<contenttweaker:eezo_chunk>], <gas:eezo>, <mekores:mekanismore:296>, <mekores:mekanismore:297>);
-    //dilitheum
-    addMekOreNew(<gas:dilithium>, <gas:cleandilithium>, 
-        <taiga:dilithium_crystal>, <mekores:mekanismore:126>, <mekores:mekanismore:127>, <mekores:mekanismore:128>,
-        <taiga:dilithium_dust>
-    );
-    addMekOreFix([<taiga:dilithium_ore>, <netherendingores:ore_nether_modded_1:14>], <gas:dilithium>, <taiga:dilithium_crystal>, <mekores:mekanismore:126>);
     
 }
 {//t3
@@ -136,9 +123,7 @@ function addMekOreNew(
         <gas:neodymium>, <contenttweaker:neodymium_shard>, <contenttweaker:neodymium_cluster>
     );
 
-    //vibranium
-    addMekOreFix([<contenttweaker:vibranium_chunk>], <gas:vibranium>, <mekores:mekanismore:266>, <mekores:mekanismore:267>);
-
+    
     //arkenium
     addMekOreNew(
         <gas:arkenium>, <gas:cleanarkenium>, 
@@ -162,11 +147,7 @@ function addMekOreNew(
         <gas:palladium>, <mekores:mekanismore:121>, <mekores:mekanismore:122>
     );
 
-    //abyssum
-    addMekOreFix(
-        [<contenttweaker:abyssum_chunk>],
-        <gas:abyssum>, <mekores:mekanismore:301>, <mekores:mekanismore:302>
-    );
+    
 
     //orichlcum
     addMekOreNew(
@@ -200,6 +181,42 @@ function addMekOreNew(
         [<contenttweaker:death_metal_ore>, <contenttweaker:death_metal_chunk>], 
         <gas:death_metal>, <contenttweaker:death_metal_shard>, <contenttweaker:death_metal_clump>
     );
+}
+
+
+{//taiga
+    addMekOreFix([<contenttweaker:karmesine_chunk>], <gas:karmesine>, <mekores:mekanismore:271>, <mekores:mekanismore:272>);
+    addMekOreFix([<contenttweaker:ovium_chunk>], <gas:ovium>, <mekores:mekanismore:276>, <mekores:mekanismore:277>);
+    addMekOreFix([<contenttweaker:jauxum_chunk>], <gas:jauxum>, <mekores:mekanismore:281>, <mekores:mekanismore:282>);
+    
+    //osram
+    addMekOreFix([<contenttweaker:osram_chunk>], <gas:osram>, <mekores:mekanismore:291>, <mekores:mekanismore:292>);
+    //prometheum
+    addMekOreFix([<contenttweaker:prometheum_chunk>], <gas:prometheum>, <mekores:mekanismore:216>, <mekores:mekanismore:217>);
+    //eezo
+    addMekOreFix([<contenttweaker:eezo_chunk>], <gas:eezo>, <mekores:mekanismore:296>, <mekores:mekanismore:297>);
+    //dilitheum
+    addMekOreNew(<gas:dilithium>, <gas:cleandilithium>, 
+        <taiga:dilithium_crystal>, <mekores:mekanismore:126>, <mekores:mekanismore:127>, <mekores:mekanismore:128>,
+        <taiga:dilithium_dust>
+    );
+    addMekOreFix([<taiga:dilithium_ore>, <netherendingores:ore_nether_modded_1:14>], <gas:dilithium>, <taiga:dilithium_crystal>, <mekores:mekanismore:126>);
+    
+    //vibranium
+    addMekOreFix([<contenttweaker:vibranium_chunk>], <gas:vibranium>, <mekores:mekanismore:266>, <mekores:mekanismore:267>);
+    //abyssum
+    addMekOreFix(
+        [<contenttweaker:abyssum_chunk>],
+        <gas:abyssum>, <mekores:mekanismore:301>, <mekores:mekanismore:302>
+    );
+    //uru
+    addMekOreFix(
+        [<contenttweaker:uru_chunk>],
+        <gas:uru>, <mekores:mekanismore:286>, <mekores:mekanismore:287>
+    );
+}
+{//moretcon
+
 }
 
 /*

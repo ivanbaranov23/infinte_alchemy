@@ -293,6 +293,7 @@ function addFluidReservoir(
     <ore:oreErebusEncrustedDiamond>.add(<erebus:ore_encrusted_diamond>);
 
     <ore:oreErebusTemple>.add(<erebus:ore_temple>);
+    <ore:oreErebusGneiss>.add(<erebus:ore_gneiss>);
     <ore:oreErebusFossil>.add(<erebus:ore_fossil>);
     <ore:oreErebusWood>.add(<erebus:ore_petrified_wood>);
 
@@ -325,6 +326,26 @@ function addFluidReservoir(
 
     <ore:oreGodshard>.add(<contenttweaker:atum_godshardium_ore>);
 }
+{//nether
+    <ore:oreHellIron>.add(<netherendingores:ore_nether_vanilla:4>);
+    <ore:oreHellCopper>.add(<netherendingores:ore_nether_modded_1:1>);
+    <ore:oreHellTin>.add(<netherendingores:ore_nether_modded_1:7>);
+
+    <ore:oreHellNickel>.add(<netherendingores:ore_nether_modded_1:5>);
+    <ore:oreHellZinc>.add(<netherendingores:ore_nether_modded_2>);
+    <ore:oreHellAluminum>.add(<netherendingores:ore_nether_modded_1>);
+
+    <ore:oreHellCobalt>.add(<tconstruct:ore>);
+    <ore:oreHellArdite>.add(<tconstruct:ore:1>);
+
+    <ore:oreHellGold>.add(<netherendingores:ore_nether_vanilla:3>);
+    <ore:oreHellSilver>.add(<netherendingores:ore_nether_modded_1:7>);
+    <ore:oreHellOsmium>.add(<netherendingores:ore_nether_modded_1:11>);
+    <ore:oreHellLead>.add(<netherendingores:ore_nether_modded_1:3>);
+    //<ore:oreHell>.add();
+
+    <ore:oreHellOsmium>.add(<netherendingores:ore_nether_modded_1:11>);
+}
 {//aether
     <ore:oreAetherAmbrosium>.add(<aether_legacy:ambrosium_ore>);
     <ore:oreAetherZanite>.add(<aether_legacy:zanite_ore>);
@@ -333,9 +354,27 @@ function addFluidReservoir(
     <ore:oreOverworldArkenium>.add(<netherendingores:ore_other_1:9>);
 }
 <ore:glowshroom>.add(<quark:glowshroom>);
+{//end
+    <ore:oreEndBiotite>.add(<quark:biotite_ore>);
 
-<ore:oreEndBiotite>.add(<quark:biotite_ore>);
+    <ore:oreTheendIron>.add(<netherendingores:ore_end_vanilla:4>);
+    <ore:oreTheendCopper>.add(<netherendingores:ore_end_modded_1:1>);
+    <ore:oreTheendTin>.add(<netherendingores:ore_end_modded_1:7>);
 
+    <ore:oreTheendNickel>.add(<netherendingores:ore_end_modded_1:5>);
+    <ore:oreTheendZinc>.add(<netherendingores:ore_end_modded_2>);
+    <ore:oreTheendAluminum>.add(<netherendingores:ore_end_modded_1>);
+
+    <ore:oreTheendCobalt>.add(<netherendingores:ore_other_1:5>);
+    <ore:oreTheendArdite>.add(<netherendingores:ore_other_1:3>);
+
+    <ore:oreTheendGold>.add(<netherendingores:ore_end_vanilla:3>);
+    <ore:oreTheendSilver>.add(<netherendingores:ore_end_modded_1:7>);
+    <ore:oreTheendOsmium>.add(<netherendingores:ore_end_modded_1:11>);
+    <ore:oreTheendLead>.add(<netherendingores:ore_end_modded_1:3>);
+
+    <ore:oreTheendOsmium>.add(<netherendingores:ore_end_modded_1:11>);
+}
 var mil as int = 1000000;
 
 {//overworld
@@ -368,7 +407,7 @@ var mil as int = 1000000;
     addExcavator("Erebus Lead", 20, ["oreErebusLead", "oreErebusSilver", "oreErebusQuartz"], [0.45, 0.45, 0.1], [66, -11325]);
     addExcavator("Erebus Fossil", 10, ["oreErebusFossil", "oreErebusFlolit", "oreErebusWood"], [0.85, 0.1, 0.05], [66, -11325]);
     addExcavator("Erebus Temple", 5, ["oreErebusTemple", "oreErebusLead", "oreErebusQuartz"], [0.75, 0.15, 0.1], [66, -11325]);
-
+    
     addExcavator("Erebus Petrified", 5, ["oreErebusWood", "oreErebusPetrifiedQuartz"], [0.75, 0.25], [66, -11325]);
     addExcavator("Erebus Quartz", 15, ["oreErebusPetrifiedQuartz", "oreErebusQuartz"], [0.35, 0.65], [66, -11325]);
 

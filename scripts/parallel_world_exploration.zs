@@ -332,7 +332,7 @@ static core_cost as int[IItemStack] = {
 
 static counter as int = 0;
 //todo boat, fuel, multimek expeditions, portal opener
-function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], marks as int[], ship as IItemStack) {
+function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], marks as int[], ship as IItemStack, chance as float) {
     counter += 1;
     var rec_name as string = "pworld_oregen_";// ~ counter ~ "_";
     for i,m in mechs{
@@ -368,6 +368,7 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
             continue;
         }
         rec.addItemInput(mech * (mech.amount * amount));
+        rec.setChance(chance);
 
         if (marks[i] == i){
             rec.addItemInput(goals[i]);
@@ -391,7 +392,7 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
 }
 
 
-function addAll2Recipes(ship as IItemStack){
+function addAll2Recipes(ship as IItemStack, chance as float){
     for i1 in 0 to loot.length{//0 1 2 3
         for i2 in i1 to loot.length{//00 01 02 03 11 12 13 22 23 33
             var mech1 as IItemStack = loot.keys[i1];
@@ -407,7 +408,7 @@ function addAll2Recipes(ship as IItemStack){
                     if (marks[1] != 1) {
                         goals[1] = goals[marks[1]];
                     }
-                    addExplorationRecipe(mechs, goals, marks, ship);
+                    addExplorationRecipe(mechs, goals, marks, ship, chance);
                 }
             }
             
@@ -415,7 +416,8 @@ function addAll2Recipes(ship as IItemStack){
     }
 }
 
-addAll2Recipes(<contenttweaker:mech_taxi>);
+addAll2Recipes(<contenttweaker:mech_taxi>, 1.0);
+addAll2Recipes(<contenttweaker:mech_taxi2>, 0.9);
 
 for mech in loot{
     for goal in loot[mech]{
@@ -499,6 +501,17 @@ recipes.addShaped("ia_tincan_target_mob", <contenttweaker:tincan_target_mob>, [
 	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
 	[<contenttweaker:advanced_plating1_4>, <extrautils2:ingredients:10>, <contenttweaker:advanced_plating1_4>], 
 	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
+]);
+
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:portal>, [
+    [<modularcontroller:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularcontroller:pworld_oregen_controller>], 
+    [<enderio:block_tele_pad>, <contenttweaker:wormholium>, <bloodmagic:component:17>, <bloodmagic:component:17>, <bloodmagic:component:17>, <contenttweaker:wormholium>, <enderio:block_tele_pad>], 
+    [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
+    [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <botania:alfheimportal>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
+    [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
+    [<enderio:block_tele_pad>, <contenttweaker:wormholium>, <bloodmagic:component:17>, <bloodmagic:component:17>, <bloodmagic:component:17>, <contenttweaker:wormholium>, <enderio:block_tele_pad>], 
+    [<modularcontroller:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularcontroller:pworld_oregen_controller>]
 ]);
 
 /*
