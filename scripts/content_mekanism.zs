@@ -21,6 +21,16 @@ function addGas(name as string, color as string, needFluid as bool){
 
 addGas("naoh", "eae553", true);
 
+{
+    var xpjuice = GasFactory.createGas("xpjuice");
+    xpjuice.setColorize(false);
+    //gas.setColor(Color.fromHex(color).getIntColor());
+    xpjuice.setNeedFluid(true);
+    xpjuice.setIcon("blocks/xpjuice");
+    xpjuice.setIconFlowing("blocks/xpjuice");
+    xpjuice.register();
+}
+
 addGas("nitrogen", "476678", true);
 addGas("ammonia", "2f3e58", true);
 addGas("nitric_oxide", "2f3e58", false);

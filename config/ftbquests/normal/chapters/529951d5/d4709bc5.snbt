@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: -1.0d,
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "8e4089ef",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:soulstone"
+		}]
+	}]
+}

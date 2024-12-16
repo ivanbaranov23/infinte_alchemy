@@ -228,6 +228,14 @@ addWoodInfuseFireJEI(<immersiveengineering:ore:5>, <erebus:grandmas_shoes_mushro
 ]);
 
 
+addWoodInfuseFire(
+    <blockstate:erebus:ore_petrified_wood>, <blockstate:erebus:petrified_bark_red:axis=y>, [
+        <ore:dustWood> * 16, <tconstruct:materials> * 3
+], 20);
+addWoodInfuseFireJEI(<erebus:ore_petrified_wood>, <erebus:petrified_bark_red>, [
+        <ore:dustWood> * 16, <tconstruct:materials> * 3
+]);
+
 
 addWoodInfuseBlueFire(
     <blockstate:contenttweaker:divine_mud>, <blockstate:contenttweaker:glowshroomite_mud>, [
@@ -252,7 +260,7 @@ for stone,ore_list in {
         <thermalfoundation:material:768>: <minecraft:coal_ore>,
         <enderio:item_material:32>: <minecraft:lapis_ore>,
         <minecraft:redstone>: <minecraft:redstone_ore>,
-        <appliedenergistics2:material:3>: <netherendingores:ore_other_1>,
+        <appliedenergistics2:material:3>: <mysticalworld:quartz_ore>,
 
         <appliedenergistics2:material:2>: <appliedenergistics2:quartz_ore>, 
 

@@ -65,11 +65,11 @@ scripts.content_machines.addAssemblerRecipe(
 
 //conveyor
 recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}));
-recipes.addShaped("ia_conveyor", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, [
+recipes.addShaped("ia_conveyor1", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, [
 	[<minecraft:leather>, <minecraft:leather>, <minecraft:leather>], 
 	[<immersiveengineering:material:9>, <contenttweaker:simple_motor>, <immersiveengineering:material:9>]
 ]);
-recipes.addShaped("ia_conveyor", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 16, [
+recipes.addShaped("ia_conveyor2", <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 16, [
 	[<roots:fey_leather>, <roots:fey_leather>, <roots:fey_leather>], 
 	[<immersiveengineering:material:9>, <contenttweaker:simple_motor>, <immersiveengineering:material:9>]
 ]);

@@ -149,6 +149,7 @@ function addAtomicResource(name as string){
 
     //iron
     VanillaFactory.createItem("iron_apple").register();
+    VanillaFactory.createBlock("poor_iron_ore", <blockmaterial:rock>).register();
 
     //copper
     VanillaFactory.createItem("copper_seed").register();
@@ -580,14 +581,12 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("hallowsite_pieces").register();
     VanillaFactory.createItem("hallowsite_chunk").register();
 
-    //VanillaFactory.createBlock("caelumite_ore", <blockmaterial:rock>).register();
     var caelumite_ore = VanillaFactory.createBlock("caelumite_ore", <blockmaterial:rock>);
     caelumite_ore.lightValue = 1;
     caelumite_ore.register();
     VanillaFactory.createItem("caelumite_ingot").register();
     VanillaFactory.createItem("caelumite_plate").register();
     VanillaFactory.createItem("caelumite_rod").register();
-    //VanillaFactory.createBlock("caelumite_block", <blockmaterial:rock>).register();
     var caelumite_block = VanillaFactory.createBlock("caelumite_block", <blockmaterial:rock>);
     caelumite_block.lightValue = 1;
     caelumite_block.register();
@@ -1035,7 +1034,17 @@ function add_godshard(name as string){
     add_godshard("anubis");
     add_godshard("nuit");
     add_godshard("anput");
-    VanillaFactory.createItem("godshardium").register();
+
+    var atum_ingot = VanillaFactory.createItem("atum_ingot");
+    atum_ingot.glowing = true;
+    atum_ingot.rarity = "rare";
+    atum_ingot.register();
+
+    //VanillaFactory.createItem("godshardium").register();
+    var godshardium = VanillaFactory.createItem("godshardium");
+    godshardium.glowing = true;
+    godshardium.rarity = "rare";
+    godshardium.register();
 
     var nuit_fuel = VanillaFactory.createFluid("nuit_fuel", Color.fromHex("ea6056"));
     nuit_fuel.material = <blockmaterial:lava>;
@@ -1529,8 +1538,6 @@ knife.register();
 
 
 {//living
-    add_living("lv_crusher");
-    VanillaFactory.createItem("crusher_feed").register();
 
     add_living("lv_sandworm");
     VanillaFactory.createItem("sandworm_molt").register();
@@ -2758,7 +2765,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 }
 
 {//inf line
-
+    VanillaFactory.createBlock("galastem", <blockmaterial:rock>).register();
 }
 {//endgame
     VanillaFactory.createBlock("portal", <blockmaterial:rock>).register();
@@ -2784,6 +2791,19 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
 
     VanillaFactory.createItem("final_frame").register();
+
+    //addItem("infinity_treat", "epic", 64);
+    {
+        var infinity_treat = VanillaFactory.createItemFood("infinity_treat", 1000);
+        infinity_treat.alwaysEdible = true;
+        infinity_treat.onItemFoodEaten = function(stack, world, player) {
+            if (!world.isRemote())
+                if (player) {
+                    player.addPotionEffect(<potion:extrautils2:effect.xu2.doom>.makePotionEffect(20, 0));
+                }
+        };
+        infinity_treat.register();
+    }
 }
 
 //research
@@ -2810,6 +2830,16 @@ VanillaFactory.createItem("research_plants3").register();
 
 VanillaFactory.createItem("research_mushroom1").register();
 
+VanillaFactory.createItem("organic_green_token").register();
+VanillaFactory.createItem("residue_token").register();
+VanillaFactory.createItem("malachite_token").register();
+VanillaFactory.createItem("sand_token").register();
+VanillaFactory.createItem("sludge_token").register();
+VanillaFactory.createItem("research_cobblegen").register();
+
+VanillaFactory.createFluid("sludge_cg", Color.fromHex("2d092d")).register();
+VanillaFactory.createFluid("organic_cg", Color.fromHex("83a854")).register();
+registerMoltenMetal("residue_cg", Color.fromHex("493b2f"));
 
 VanillaFactory.createItem("research_circuit1").register();
 VanillaFactory.createItem("research_circuit2").register();
@@ -2839,6 +2869,7 @@ VanillaFactory.createItem("research_heat").register();
 
 VanillaFactory.createItem("research_terra").register();
 VanillaFactory.createItem("research_luck").register();
+VanillaFactory.createItem("research_chitigic").register();
 
 VanillaFactory.createItem("research_enchanting").register();
 

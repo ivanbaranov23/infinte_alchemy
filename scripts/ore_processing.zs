@@ -220,6 +220,21 @@ val ores as IItemStack[string][string][string] = {
             separating2: <thermalfoundation:material:68>,
             separating3: <thermalfoundation:material:70>,
             separating4: <contenttweaker:soot>
+        },
+
+
+        poor: {
+            item: <contenttweaker:poor_iron_ore>,
+            furnace: <minecraft:iron_nugget> * 3,
+
+            crushing: <prodigytech:iron_dust_tiny> * 4,
+            crushingByprod1: <prodigytech:iron_dust_tiny> * 2,
+
+            alloySlag2: <minecraft:iron_nugget> * 6,
+            alloySlag3: <minecraft:iron_nugget> * 9,
+
+            drilling: <prodigytech:iron_dust_tiny> * 9,
+            denorm: <minecraft:iron_ore>
         }
     },
     copper: {
@@ -1123,6 +1138,12 @@ val ores as IItemStack[string][string][string] = {
             madeFrom: <exnihilocreatio:item_ore_lead> * 3
         },
 
+        clump: {
+            item: <mekanism:clump:6>,
+            balling: <mekanism:dirtydust:6>,
+            crushingByprod1: <thermalfoundation:material:66>,
+            crushingByprod2: <thermalfoundation:material:2053>,
+        },
         dirtydust: {
             item: <mekanism:dirtydust:6>,
             separating1: <thermalfoundation:material:67>,
@@ -1614,7 +1635,8 @@ val ores as IItemStack[string][string][string] = {
     chrome: {
         otherworld: {
             item: <contenttweaker:chrome_ore>,
-            crushing: <contenttweaker:chrome_dust> * 2,
+            crushing_no_balls: <contenttweaker:chrome_dust> * 2,
+            balling: <contenttweaker:chrome_dust> * 2,
             crushingByprod1: <biomesoplenty:gem:1>,
             crushingByprod2: <biomesoplenty:gem:1>,
 
@@ -1622,7 +1644,8 @@ val ores as IItemStack[string][string][string] = {
         },
         chunk: {
             item: <contenttweaker:chrome_chunk>,
-            crushing: <contenttweaker:chrome_dust> * 2,
+            crushing_no_balls: <contenttweaker:chrome_dust> * 2,
+            balling: <contenttweaker:chrome_dust> * 2,
             crushingByprod1: <biomesoplenty:gem:1>,
             crushingByprod2: <biomesoplenty:gem:1>,
 
@@ -1865,8 +1888,9 @@ val ores as IItemStack[string][string][string] = {
     //t5
     starmetal: {
         overworld: {
-            item: <astralsorcery:blockcustomore:1>,
-            crushing: <astralsorcery:itemcraftingcomponent:2> * 2,
+            item: <contenttweaker:starmetal_ore>,
+            crushing_no_balls: <astralsorcery:itemcraftingcomponent:2> * 2,
+            balling: <astralsorcery:itemcraftingcomponent:2> * 2,
             crushingByprod1: <taiga:uru_dust>,
             crushingByprod2: <contenttweaker:nether_star_dust>,
 
@@ -2681,16 +2705,11 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod2: <appliedenergistics2:material:5>,
 
             drilling: <enderio:item_material:33> * 5,
-            denorm: <netherendingores:ore_other_1>
+            //denorm: <netherendingores:ore_other_1>
         },
-        overworld2: {
+        poor: {
             item: <netherendingores:ore_other_1>,
-            crushing: <appliedenergistics2:material:3> * 4,
-            crushingByprod1: <appliedenergistics2:material:5>,
-            crushingByprod2: <appliedenergistics2:material:2>,
-
-            drilling: <enderio:item_material:33> * 5,
-            denorm: <mysticalworld:quartz_ore>
+            furnace: <appliedenergistics2:material:3>
         },
         nether: {
             item: <minecraft:quartz_ore>,
@@ -2901,7 +2920,8 @@ val ores as IItemStack[string][string][string] = {
     emerald: {
         overworld: {
             item: <minecraft:emerald_ore>,
-            crushing: <prodigytech:emerald_dust> * 2,
+            crushing_no_balls: <prodigytech:emerald_dust> * 2,
+            balling: <prodigytech:emerald_dust> * 2,
             crushingByprod1: <appliedenergistics2:material:5>,
             crushingByprod2: <contenttweaker:chrome_dust>,
 
@@ -2909,7 +2929,8 @@ val ores as IItemStack[string][string][string] = {
         },
         nether: {
             item: <netherendingores:ore_nether_vanilla:2>,
-            crushing: <prodigytech:emerald_dust> * 4,
+            crushing_no_balls: <prodigytech:emerald_dust> * 4,
+            balling: <prodigytech:emerald_dust> * 4,
             crushingByprod1: <appliedenergistics2:material:5>,
             crushingByprod2: <contenttweaker:chrome_dust> * 2,
 
@@ -2918,9 +2939,10 @@ val ores as IItemStack[string][string][string] = {
         },
         end: {
             item: <netherendingores:ore_end_vanilla:2>,
-            crushing: <prodigytech:emerald_dust> * 5,
+            crushing_no_balls: <prodigytech:emerald_dust> * 5,
+            balling: <prodigytech:emerald_dust> * 5,
             crushingByprod1: <appliedenergistics2:material:5> * 3,
-            crushingByprod2: <contenttweaker:chrome_dust> * 2,
+            crushingByprod2: <contenttweaker:chrome_dust>,
 
             drilling: <actuallyadditions:item_dust:3> * 8,
             denorm: <minecraft:emerald_ore> * 3
@@ -2928,21 +2950,22 @@ val ores as IItemStack[string][string][string] = {
 
         erebus: {
             item: <erebus:ore_emerald>,
-            crushing: <prodigytech:emerald_dust> * 3,
+            crushing_no_balls: <prodigytech:emerald_dust> * 3,
+            balling: <prodigytech:emerald_dust> * 3,
             crushingByprod1: <contenttweaker:jade_dust>,
             crushingByprod2: <contenttweaker:chrome_dust> * 2,
 
             drilling: <actuallyadditions:item_dust:3> * 5,
-            denorm: <minecraft:emerald_ore>
+            denorm: <minecraft:emerald_ore> * 2
         },
         atum: {
             item: <atum:emerald_ore>,
-            crushing: <prodigytech:emerald_dust> * 3,
+            crushing_no_balls: <prodigytech:emerald_dust> * 3,
             crushingByprod1: <contenttweaker:relic_nugget>,
-            crushingByprod2: <contenttweaker:chrome_dust> * 2,
+            crushingByprod2: <contenttweaker:chrome_dust>,
 
             drilling: <actuallyadditions:item_dust:3> * 5,
-            denorm: <minecraft:emerald_ore>
+            denorm: <minecraft:emerald_ore> * 2
         },
 
         dense: {
@@ -3373,7 +3396,8 @@ val ores as IItemStack[string][string][string] = {
         ore: {
             item: <contenttweaker:caelumite_ore>,
             furnace: <contenttweaker:caelumite_ingot>,
-            crushing: <contenttweaker:caelumite_dust> * 2,
+            crushing_no_balls: <contenttweaker:caelumite_dust> * 2,
+            balling: <contenttweaker:caelumite_dust> * 2,
             crushingByprod1: <minecraft:glowstone_dust> * 4,
             crushingByprod2: <projectred-core:resource_item:105> * 8,
 
@@ -3388,7 +3412,10 @@ val to_clean as IItemStack[][string] = {
     frn: [
         <erebus:materials:42>,
         <bigreactors:ingotyellorium>,
-        <moretcon:ingothallowsite>
+        <astralsorcery:itemcraftingcomponent:1>,
+
+        <moretcon:ingothallowsite>,
+        <minecraft:emerald>
     ],
 
     TE_pulv: [
@@ -3408,6 +3435,9 @@ val to_clean as IItemStack[][string] = {
     ],
     TE_is_richslag: [
         
+    ],
+    MEK_enrich: [
+        <netherendingores:ore_other_1>
     ],
 
     EIO_sag: [
@@ -3485,6 +3515,9 @@ val chances as int[string][string][string] = {
     redstone: {
         overworld: {
             crushingByprod2: 1
+        },
+        atum: {
+            crushingByprod1: 50
         }
     },
 
@@ -3492,8 +3525,16 @@ val chances as int[string][string][string] = {
         erebus: {
             crushingByprod1: 5
         },
+        atum: {
+            crushingByprod1: 50
+        },
         dense_nether: {
             crushingByprod1: 15
+        }
+    },
+    emerald: {
+        atum: {
+            crushingByprod1: 50
         }
     },
 
@@ -3681,8 +3722,8 @@ print("[IA] ------------------------------- Ore Cleaning! ----------------------
 //furnace.remove(<contenttweaker:dummy>);
 //recipes.remove(<contenttweaker:dummy>);
 
-for i in 0 to 28
-    mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:cutting_fluid>, <contenttweaker:dummy>]);
+//for i in 0 to 28
+    //mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:cutting_fluid>, <contenttweaker:dummy>]);
 
 //for i in 0 to 30
 //mods.immersiveengineering.ArcFurnace.removeRecipe(<netherendingores:ore_nether_modded_2:4>);
@@ -3701,6 +3742,9 @@ for i in 0 to 28
     }
     for item in to_clean.TE_is_richslag{
         InductionSmelter.removeRecipe(item, <thermalfoundation:material:865>);
+    }
+    for item in to_clean.MEK_enrich{
+        mods.mekanism.enrichment.removeRecipe(item);
     }
     for item in to_clean.EIO_sag{
         SagMill.removeRecipe(item);
@@ -3992,22 +4036,17 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 furnace.remove(<exnihilocreatio:item_ore_zinc:3>);
 recipes.remove(<exnihilocreatio:item_ore_zinc:3>);
 recipes.remove(<exnihilocreatio:item_ore_zinc:2>);
-
+/*
 <exnihilocreatio:item_ore_zinc:2>.addTooltip("This item is replaced. Put in crafting table to change to correct version.");
 recipes.addShapeless("ia_zinc_fix1", <contenttweaker:zinc_dust>, [<exnihilocreatio:item_ore_zinc:2>]);
 <exnihilocreatio:item_ore_zinc:3>.addTooltip("This item is replaced. Put in crafting table to change to correct version.");
 recipes.addShapeless("ia_zinc_fix2", <contenttweaker:zinc_ingot>, [<exnihilocreatio:item_ore_zinc:3>]);
-
+*/
 mods.jei.JEI.addItem(<densemetals:dense_zinc_ore>);
 
 //osmium
 
 mods.jei.JEI.addItem(<densemetals:dense_osmium_ore>);
-
-{//lead
-    <immersiveengineering:ore:2>.displayName = "Galena Ore";
-    
-}
 
 
 
@@ -4029,9 +4068,9 @@ mods.jei.JEI.addItem(<densemetals:dense_uranium_ore>);
 
 
 //eezo
-mods.tconstruct.Melting.removeRecipe(<liquid:eezo_fluid>, <taiga:eezo_ore>);
-mods.tconstruct.Melting.removeRecipe(<liquid:eezo_fluid>, <taiga:eezo_dust>);
-
+//mods.tconstruct.Melting.removeRecipe(<liquid:eezo_fluid>, <taiga:eezo_ore>);
+//mods.tconstruct.Melting.removeRecipe(<liquid:eezo_fluid>, <taiga:eezo_dust>);
+mods.tconstruct.Melting.addRecipe(<liquid:eezo_fluid> * 288, <contenttweaker:eezo_chunk>);
 
 //arkenium
 
@@ -4054,11 +4093,8 @@ mods.prodigytech.rotarygrinder.addRecipe(<minecraft:hardened_clay>, <contenttwea
 
 /////////gems
 <ore:gemRuby>.remove(<projectred-core:resource_item:200>);
-<projectred-core:resource_item:200>.displayName = "Delicate Ruby";
 <ore:gemPeridot>.remove(<projectred-core:resource_item:202>);
-<projectred-core:resource_item:202>.displayName = "Delicate Peridot";
 <ore:gemSapphire>.remove(<projectred-core:resource_item:201>);
-<projectred-core:resource_item:201>.displayName = "Delicate Sapphire";
 
 //coal
 Transposer.addFillRecipe(
@@ -4077,11 +4113,6 @@ Transposer.addFillRecipe(
         64, 20
     );
 }
-
-
-
-
-
 
 
 

@@ -152,7 +152,7 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
 
     recipes.addShaped("ia_mm_grid_input", <modularmagic:blockgridproviderinput>, [
         [<extrautils2:decorativesolid:3>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:3>], 
-        [<moreplates:enchanted_plate>, <modularmachinery:blockcasing:4>, <moreplates:enchanted_plate>], 
+        [<moreplates:enchanted_plate>, <modularmachinery:blockcasing>, <moreplates:enchanted_plate>], 
         [<extrautils2:decorativesolid:3>, <ore:gemMoon>, <extrautils2:decorativesolid:3>]
     ]);
     recipes.addShaped("ia_mm_grid_output", <modularmagic:blockgridprovideroutput>, [

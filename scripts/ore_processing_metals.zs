@@ -39,11 +39,14 @@ import mods.enderio.SagMill;
 
 {//atum
     SagMill.addRecipe([<thermalfoundation:material> * 2, <atum:loot_ruby_broach>, <atum:loot_sapphire_broach>], [1.0, 0.1, 0.1], <atum:iron_ore>, "MULTIPLY_OUTPUT");
-
+    SagMill.addRecipe([<thermalfoundation:material:768> * 2, <atum:loot_ruby_broach>, <atum:loot_sapphire_broach>], [1.0, 0.1, 0.1], <atum:coal_ore>, "MULTIPLY_OUTPUT");
 
     SagMill.addRecipe([<thermalfoundation:material:1> * 2, <atum:loot_ruby_scepter>, <atum:loot_sapphire_scepter>], [1.0, 0.1, 0.1], <atum:gold_ore>, "MULTIPLY_OUTPUT");
-
-
+    SagMill.addRecipe([<minecraft:redstone> * 8, <atum:loot_ruby_scepter>, <atum:loot_sapphire_scepter>], [1.0, 0.1, 0.1], <atum:redstone_ore>, "MULTIPLY_OUTPUT");
+    SagMill.addRecipe([<enderio:item_material:32> * 8, <atum:loot_ruby_scepter>, <atum:loot_sapphire_scepter>], [1.0, 0.1, 0.1], <atum:lapis_ore>, "MULTIPLY_OUTPUT");
+    
+    SagMill.addRecipe([<prodigytech:emerald_dust> * 2, <atum:loot_ruby_idol>, <atum:loot_sapphire_idol>], [1.0, 0.1, 0.1], <atum:emerald_ore>, "MULTIPLY_OUTPUT");
+    SagMill.addRecipe([<mekanism:otherdust> * 2, <atum:loot_ruby_idol>, <atum:loot_sapphire_idol>], [1.0, 0.1, 0.1], <atum:diamond_ore>, "MULTIPLY_OUTPUT");
 }
 
 
@@ -63,7 +66,7 @@ import mods.enderio.SagMill;
     mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <exnihilocreatio:item_ore_titanium:2>);
     mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <contenttweaker:titanium_dust>);
 
-    <exnihilocreatio:item_ore_titanium:2>.displayName = "Titanium Ore Dust";
+    
     scripts.helper.addHighOvenSmelting(
         [<contenttweaker:titanium_ingot> * 2], 
         [<contenttweaker:titanium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
@@ -71,7 +74,6 @@ import mods.enderio.SagMill;
     );
     scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:titanium_ingot>], [<contenttweaker:titanium_dust>], 1024, 1);
 
-    <densemetals:dense_rutile_ore>.displayName = "Dense Titanium Ore";
     mods.jei.JEI.addItem(<densemetals:dense_rutile_ore>);
 }
 {//cursed gold
@@ -79,16 +81,7 @@ import mods.enderio.SagMill;
 }
 
 {//mithril
-    <moreplates:mana_infused_stick>.displayName = "Mithril Rod";
-    game.setLocalization("tile.thermalfoundation.ore.mithril.name", "Mithril Ore");
-    game.setLocalization("tile.thermalfoundation.storage.mithril.name", "Block of Mithril");
-    <thermalfoundation:coin:72>.displayName = "Mithril Coin";
-    <thermalfoundation:material:72>.displayName = "Mithril Dust";
-    <thermalfoundation:material:136>.displayName = "Mithril Ingot";
-    <thermalfoundation:material:200>.displayName = "Mithril Nugget";
-    <thermalfoundation:material:264>.displayName = "Mithril Gear";
-    <thermalfoundation:material:328>.displayName = "Mithril Plate";
-    game.setLocalization("tile.thermalfoundation.glass.mithril.name", "Hardened Mithril Glass");
+    
 
     furnace.remove(<thermalfoundation:material:136>);
     furnace.remove(<ore:ingotMithril>);

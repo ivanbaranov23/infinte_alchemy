@@ -284,7 +284,7 @@
                 "material": ["minecraft:air", "bedrock"]
 			},
 			"cluster-count": 2,
-            "chunk-chance": 6,
+            "chunk-chance": 7,
 			"min-height": 120,
 			"max-height": 130,
 			"retrogen": "true",

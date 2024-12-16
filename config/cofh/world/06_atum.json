@@ -68,6 +68,32 @@
 					17
 				]
 			}
+		},
+
+		"atum_sand_lake": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "lake",
+				"block": {"name": "biomesoplenty:sand"},
+                "material": [
+					"atum:porphyry",
+                    {"name": "atum:limestone", "metadata": 0}
+                ],
+				"use-material": true
+			},
+			"cluster-count": 2,
+            "chunk-chance": 1,
+			"min-height": 10,
+			"max-height": 48,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					17
+				]
+			}
 		}
     }
 }

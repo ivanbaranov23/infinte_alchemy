@@ -403,3 +403,18 @@ addLargeEnchanterRecipeChain(<minecraft:book>, <enchantment:apotheosis:hell_infu
     -<enchantment:minecraft:protection> - Protection I (at level 1, max level 4, treasure: no, enchant id 0)
     */
 }
+
+
+recipes.addShapeless("book_ench", <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 57 as short}]}),
+    [<minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 58 as short}]}).marked("mark")],
+    function(out, ins, cInfo){
+        var book as IItemStack = ins.mark;
+        //var enchs as IData = book.tag.StoredEnchantments;
+        for ench in book.tag.StoredEnchantments.asList(){
+            if (ench.id == 58){
+                return <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: ench.lvl as short, id: 57 as short}]});
+            }
+        }
+        return null;
+    }, null
+);

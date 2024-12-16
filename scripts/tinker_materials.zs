@@ -15,7 +15,7 @@ import crafttweaker.entity.IEntityItem;
 //4 - cobalt ore
 //5 cobalt tool - 
 
-//addHeadMaterialStats(durability, mining speed, damage, mining level)
+
 
 
 {//ferramic
@@ -238,19 +238,110 @@ import crafttweaker.entity.IEntityItem;
     mat.register();
 }
 
+{//honey drop
+    val trait = TraitBuilder.create("honey");
+    trait.localizedName = "Sweet Nectar";
+    trait.localizedDescription = "Breaking blocks sometimes drop nectar";
+    trait.onBlockHarvestDrops = function(trait, tool, event) {
+	    event.addItem(<item:erebus:materials:19> % 10);
+    };
+    var t = trait.register();
 
+    val mat = MaterialBuilder.create("honey_drop");
+    mat.color = 0xe4b60e;
+
+    mat.craftable = true;
+    mat.castable = false;
+
+    mat.addItem(<item:erebus:materials:20>, 1, 36);
+    mat.representativeItem = <item:erebus:materials:20>;
+
+    mat.addHeadMaterialStats(100, 2.5f, 3.5f, 1);//stone tool level
+    mat.addHandleMaterialStats(0.8, 100);
+    mat.addExtraMaterialStats(70);
+
+    mat.addMaterialTrait("tasty", null);
+    mat.addMaterialTrait(t, "head");
+
+    mat.itemLocalizer = function(thisMaterial, itemName){return "Honey " + itemName;};
+    mat.localizedName = "Honey Drop";
+    mat.register();
+}
+{//elastic_fiber
+    val mat = MaterialBuilder.create("elastic_fiber");
+    mat.color = 0x00753a;
+
+    mat.craftable = true;
+    mat.castable = false;
+
+    mat.addItem(<item:erebus:materials:9>);
+    mat.representativeItem = <item:erebus:materials:9>;
+
+    mat.addHeadMaterialStats(100, 2.5f, 3.5f, 1);//stone tool level
+    mat.addHandleMaterialStats(1.4, 100);
+    mat.addExtraMaterialStats(60);
+
+    mat.addMaterialTrait("ecological", null);
+    mat.addMaterialTrait("unnatural", null);
+
+    mat.itemLocalizer = function(thisMaterial, itemName){return "Elastic Fiber " + itemName;};
+    mat.localizedName = "Elastic Fiber";
+    mat.register();
+}
+{//petrified wood
+    val trait = TraitBuilder.create("morningwood");
+    trait.localizedName = "Morning Wood";
+    trait.localizedDescription = "Deals +50% damage from midnight to noon.";
+    trait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
+	    if (!isNull(attacker)){
+            if (target.world.getWorldTime() >= 18000){
+                //18000 midnight
+                //6000 noon
+                return (newDamage + 1.5f);
+            }
+            if (6000 >= target.world.getWorldTime()){
+                //18000 midnight
+                //6000 noon
+                return (newDamage + 1.5f);
+            }
+        }
+        return newDamage;
+    };
+    var t = trait.register();
+
+    val mat = MaterialBuilder.create("petrifiedwood");
+    mat.color = 0x723926;
+
+    mat.craftable = true;
+    mat.castable = false;
+
+    mat.addItem(<item:erebus:materials:7>);
+    mat.representativeItem = <item:erebus:materials:7>;
+    
+    mat.addHeadMaterialStats(280, 4.2f, 5.2f, 3);
+    mat.addHandleMaterialStats(1.2, 40);
+    mat.addExtraMaterialStats(140);
+    mat.addProjectileMaterialStats();
+
+    mat.addMaterialTrait(t, null);
+    mat.addMaterialTrait("ecological", null);
+
+    mat.itemLocalizer = function(thisMaterial, itemName){return "Petrified Wood " + itemName;};
+    mat.localizedName = "Petrified Wood";
+    mat.register();
+}
 
 {//khnumite
     val trait = TraitBuilder.create("stonesupremacy");
     trait.localizedName = "Stone Supremacy";
-    trait.localizedDescription = "Does twice the damage to non-stone enemies and zero damage to stone ones. How one would know which are stone? By asking their name of course";
+    trait.localizedDescription = "Does +50% damage to non-stone enemies and zero damage to stone ones. How one would know which are stone? By asking their name of course";
     trait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
 	    if (!isNull(target)){
             if (target.definition.name.toLowerCase() has "stone"){
                 return 0.0 as float;
             }
             else
-                return (newDamage + newDamage);
+                return (newDamage * 1.5f);
         }
         return (newDamage + newDamage);
     };
@@ -306,7 +397,7 @@ import crafttweaker.entity.IEntityItem;
     mat.register();
 }
 
-
+//addHeadMaterialStats(durability, mining speed, damage, mining level)
 
 {//uranium
     val mat = MaterialBuilder.create("uranium");
@@ -331,7 +422,38 @@ import crafttweaker.entity.IEntityItem;
     mat.localizedName = "Uranium";
     mat.register();
 }
+{//zincglass
+    val trait = TraitBuilder.create("glasscannon");
+    trait.localizedName = "Glass Cannon";
+    trait.localizedDescription = "Crit deals x3 damage.";
+    trait.calcDamage = function(trait, tool, attacker, target, originalDamage, newDamage, isCritical) {
+	    if (isCritical){
+            return newDamage * 3.0f;
+        }
+        return newDamage;
+    };
+    var t = trait.register();
 
+    val mat = MaterialBuilder.create("zincglass");
+    mat.color = 0xc0f5fe;
+
+    mat.craftable = true;
+    mat.castable = false;
+
+    mat.addItem(<item:contenttweaker:glass_ingot>);
+    mat.representativeItem = <item:contenttweaker:glass_ingot>;
+
+    mat.addHeadMaterialStats(10, 4.5f, 10.0f, 0);
+    mat.addHandleMaterialStats(0.1, -300);
+    mat.addExtraMaterialStats(-300);
+    mat.addProjectileMaterialStats();
+
+    mat.addMaterialTrait(t, null);
+
+    mat.itemLocalizer = function(thisMaterial, itemName){return "Glass " + itemName;};
+    mat.localizedName = "Glass";
+    mat.register();
+}
 {//zorra leaf
     val mat = MaterialBuilder.create("zorra_leaf");
     mat.color = 0xffffff;
@@ -352,56 +474,7 @@ import crafttweaker.entity.IEntityItem;
     mat.register();
 }
 
-{//honey drop
-    val trait = TraitBuilder.create("honey");
-    trait.localizedName = "Sweet Nectar";
-    trait.localizedDescription = "Breaking blocks sometimes drop nectar";
-    trait.onBlockHarvestDrops = function(trait, tool, event) {
-	    event.addItem(<item:erebus:materials:19> % 10);
-    };
-    var t = trait.register();
 
-    val mat = MaterialBuilder.create("honey_drop");
-    mat.color = 0xe4b60e;
-
-    mat.craftable = true;
-    mat.castable = false;
-
-    mat.addItem(<item:erebus:materials:20>, 1, 36);
-    mat.representativeItem = <item:erebus:materials:20>;
-
-    mat.addHeadMaterialStats(100, 2.5f, 3.5f, 1);//stone tool level
-    mat.addHandleMaterialStats(0.8, 100);
-    mat.addExtraMaterialStats(70);
-
-    mat.addMaterialTrait("tasty", null);
-    mat.addMaterialTrait(t, "head");
-
-    mat.itemLocalizer = function(thisMaterial, itemName){return "Honey " + itemName;};
-    mat.localizedName = "Honey Drop";
-    mat.register();
-}
-{//elastic_fiber
-    val mat = MaterialBuilder.create("elastic_fiber");
-    mat.color = 0x00753a;
-
-    mat.craftable = true;
-    mat.castable = false;
-
-    mat.addItem(<item:erebus:materials:9>);
-    mat.representativeItem = <item:erebus:materials:9>;
-
-    mat.addHeadMaterialStats(100, 2.5f, 3.5f, 1);//stone tool level
-    mat.addHandleMaterialStats(1.4, 100);
-    mat.addExtraMaterialStats(60);
-
-    mat.addMaterialTrait("ecological", null);
-    mat.addMaterialTrait("unnatural", null);
-
-    mat.itemLocalizer = function(thisMaterial, itemName){return "Elastic Fiber " + itemName;};
-    mat.localizedName = "Elastic Fiber";
-    mat.register();
-}
 
 {//soap
     val mat = MaterialBuilder.create("soap");

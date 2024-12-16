@@ -1,8 +1,8 @@
 {
-	x: 17.0d,
+	x: 16.0d,
 	y: 1.0d,
 	text: [
-		"5x is mandatory for titanium"
+		"Mekanism 5x processing is mandatory for titanium"
 	],
 	dependencies: [
 		"02409eb4"

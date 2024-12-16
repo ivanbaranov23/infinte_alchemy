@@ -256,23 +256,30 @@ function addFluidReservoir(
     <ore:oreOverworldUranium>.add(<immersiveengineering:ore:5>);
     <ore:oreOverworldYellorium>.add(<bigreactors:oreyellorite>);
 
+    <ore:oreOverworldChrome>.add(<contenttweaker:chrome_ore>);
+    <ore:oreOverworldNeodymium>.add(<contenttweaker:neodymium_ore>);
     <ore:oreOverworldGallium>.add(<contenttweaker:gallium_ore>);
     <ore:oreOverworldOrichalcum>.add(<contenttweaker:orichalcum_ore>);
 
     <ore:oreOverworldCoal>.add(<minecraft:coal_ore>);
+    <ore:oreOverworldRedstone>.add(<minecraft:redstone_ore>);
     <ore:oreOverworldElectrotine>.add(<contenttweaker:electrotine_ore>);
 
     <ore:oreOverworldDiamond>.add(<minecraft:diamond_ore>);
     <ore:oreOverworldGravitite>.add(<netherendingores:ore_other_1:7>);
 
     
-
+    //bop
+    <ore:oreOverworldRuby>.add(<biomesoplenty:gem_ore:1>);
+    <ore:oreOverworldSapphire>.add(<biomesoplenty:gem_ore:6>);
 
 
     //other
     <ore:oreMagicalCopper>.add(<mysticalworld:copper_ore>);
     <ore:oreMagicalTin>.add(<mekanism:oreblock:2>);
     //<ore:oreMagicalCopper>.add(<minecraft:diamond_ore>);
+
+    <ore:orePoorIron>.add(<contenttweaker:poor_iron_ore>);
 }
 {//erebus
     <ore:oreErebusCoal>.add(<erebus:ore_coal>);
@@ -329,7 +336,7 @@ function addFluidReservoir(
 {//nether
     <ore:oreHellIron>.add(<netherendingores:ore_nether_vanilla:4>);
     <ore:oreHellCopper>.add(<netherendingores:ore_nether_modded_1:1>);
-    <ore:oreHellTin>.add(<netherendingores:ore_nether_modded_1:7>);
+    <ore:oreHellTin>.add(<netherendingores:ore_nether_modded_1:8>);
 
     <ore:oreHellNickel>.add(<netherendingores:ore_nether_modded_1:5>);
     <ore:oreHellZinc>.add(<netherendingores:ore_nether_modded_2>);
@@ -359,7 +366,7 @@ function addFluidReservoir(
 
     <ore:oreTheendIron>.add(<netherendingores:ore_end_vanilla:4>);
     <ore:oreTheendCopper>.add(<netherendingores:ore_end_modded_1:1>);
-    <ore:oreTheendTin>.add(<netherendingores:ore_end_modded_1:7>);
+    <ore:oreTheendTin>.add(<netherendingores:ore_end_modded_1:8>);
 
     <ore:oreTheendNickel>.add(<netherendingores:ore_end_modded_1:5>);
     <ore:oreTheendZinc>.add(<netherendingores:ore_end_modded_2>);
@@ -387,8 +394,11 @@ var mil as int = 1000000;
 
     addExcavator("Coal1", 30, ["oreOverworlCoal"], [1], [0, -11325]);
     addExcavator("Coal2", 20, ["oreOverworlCoal", "oreOverworldDiamond"], [0.99, 0.01], [0, -11325]);
+    addExcavator("Redstone", 20, ["oreOverworldRedstone", "oreOverworldRuby"], [0.97, 0.03], [0, -11325]);
 
+    addExcavator("Titanium and Garbage", 5, ["oreOverworlTitanium", "oreOverworldSapphire", "oreOverworldNeodymium", "oreVibranium"], [0.90, 0.07, 0.02, 0.01], [0, -11325]);
 
+    addExcavator("Chrome", 10, ["oreOverworldChrome", "oreOverworldRuby", "oreOverworldRedstone"], [0.8, 0.1, 0.1], [0, -11325]);
 
     addFluidReservoir("Oil", 35, <liquid:oil>, 5*mil, 10*mil, 6, [0, -11325, 7]);
     addFluidReservoir("Rich Oil", 5, <liquid:oil>, 50*mil, 100*mil, 30, [0, -11325, 7]);

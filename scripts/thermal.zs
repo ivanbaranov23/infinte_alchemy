@@ -399,7 +399,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 
 	recipes.remove(<thermalexpansion:augment:497>);
 	recipes.addShaped("ia_clastic_deposition", <thermalexpansion:augment:497>, [
-		[null, <thermalfoundation:material:515>, null], 
+		[<contenttweaker:research_cobblegen>.reuse(), <thermalfoundation:material:515>, null], 
 		[<contenttweaker:mushroomite_plate>, <extendedcrafting:singularity_custom:2>, <contenttweaker:mushroomite_plate>], 
 		[null, <contenttweaker:electric_manyullyn_gear>, null]
 	]);
@@ -738,7 +738,6 @@ scripts.helper.addFluidMixerRecipe(<liquid:chocolate> * 500,
 );
 Transposer.addFillRecipe(<actuallyadditions:item_food:9>, <minecraft:sugar>, <liquid:chocolate> * 250, 1000);
 Transposer.addFillRecipe(<actuallyadditions:item_food:9> * 2, <prodigytech:sugar_cube>, <liquid:chocolate> * 250, 1000);
-<actuallyadditions:item_food:9>.displayName = "Meh Chocolate";
 
 InductionSmelter.addRecipe(
 	<harvestcraft:chocolatebaritem> * 3,

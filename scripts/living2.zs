@@ -144,7 +144,6 @@ print("[living] doind statics");
 
 static livings as IItemStack[string] = {
     pilkon: <contenttweaker:pilkon>,
-    crusher: <contenttweaker:lv_crusher>,
     sandworm: <contenttweaker:lv_sandworm>,
     bedrock_golem: <contenttweaker:lv_bedrock_golem>,
     draco_lizard: <contenttweaker:lv_draco_lizard>,
@@ -165,14 +164,16 @@ static livings as IItemStack[string] = {
     chitigic_scout: <contenttweaker:chitigic_scout>,
     chitigic_refinery: <contenttweaker:chitigic_refinery>,
     chitigic_chewer: <contenttweaker:chitigic_chewer>,
+    chitigic_chef: <contenttweaker:chitigic_chef>,
+    chitigic_engineer: <contenttweaker:chitigic_engineer>,
     chitigic_nursery: <contenttweaker:chitigic_nursery>,
+
     chitigic_queen: <contenttweaker:chitigic_queen>,
     chitigic_empress: <contenttweaker:chitigic_empress>
 };
 
 static animal_type as string[string] = {
     pilkon: "f1l",
-    crusher: "f1",
     sandworm: "f1l",
     draco_lizard: "f1l",
     bedrock_golem: "f1",
@@ -192,16 +193,16 @@ static animal_type as string[string] = {
     chitigic_scout: "f1l",
     chitigic_refinery: "f1l",
     chitigic_chewer: "f1l",
+    chitigic_chef: "f1l",
+    chitigic_engineer: "f1l",
     chitigic_nursery: "f1l",
+
     chitigic_queen: "f1l",
-    chitigic_empress: "f1l"
+    chitigic_empress: "f1"
 };
 static foods as int[][IItemStack][string] = {
     pilkon: {
         <thermalfoundation:material:98>: [10, 20]
-    },
-    crusher: {
-        <contenttweaker:crusher_feed>: [15, 25]
     },
     sandworm: {
         <contenttweaker:worm_feed>: [5, 15]
@@ -240,7 +241,10 @@ static foods as int[][IItemStack][string] = {
     chitigic_scout: {},
     chitigic_refinery: {},
     chitigic_chewer: {},
+    chitigic_chef: {},
+    chitigic_engineer: {},
     chitigic_nursery: {},
+
     chitigic_queen: {},
     chitigic_empress: {}
 };
@@ -248,7 +252,6 @@ static products as int[IItemStack][string] = {
     pilkon: {
         <contenttweaker:pilkeum>: 25,
     },
-    crusher: {},
     sandworm: {
         <contenttweaker:sandworm_molt>: 100
     },
@@ -284,7 +287,10 @@ static products as int[IItemStack][string] = {
     chitigic_scout: {},
     chitigic_refinery: {},
     chitigic_chewer: {},
+    chitigic_chef: {},
+    chitigic_engineer: {},
     chitigic_nursery: {},
+
     chitigic_queen: {},
     chitigic_empress: {}
 };
@@ -302,8 +308,12 @@ static work as int[][IItemStack[]][string] = {
 
         [<contenttweaker:nitrall>, <contenttweaker:nitrall_feed> * 4]: [10, 200]
     },
+    chitigic_chef: {
+        [<contenttweaker:chitigic_food1>, <contenttweaker:chitigic_food3>]: [100, 300],
+        [<contenttweaker:chitigic_food2>, <contenttweaker:chitigic_food3>]: [30, 80]
+    },
     chitigic_nursery: {
-        [<contenttweaker:chitigic_egg>, <contenttweaker:chitigic_drone>.withTag({food:5}) * 1]: [20, 50]
+        [<contenttweaker:chitigic_egg>, <contenttweaker:chitigic_drone>.withTag({food:125}) * 1]: [10, 20]
     }
 };
 static reproduction as int[IItemStack][string] = {
@@ -338,7 +348,7 @@ static corpses as IItemStack[string] = {
     chitigic_chewer: <contenttweaker:chitigic> * 3,
     chitigic_nursery: <contenttweaker:chitigic> * 3,
     chitigic_queen: <contenttweaker:chitigic> * 8,
-    chitigic_empress: <contenttweaker:chitigic> * 32
+    chitigic_empress: <contenttweaker:chitigic> * 64
 };
 static life_essences as int[string] = {
     sandworm: 1,
@@ -633,18 +643,6 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
 
     scripts.helper.addSawRecipeWByproduct(<contenttweaker:pilkon_corpse>, <contenttweaker:pilkeum> * 4, <contenttweaker:pilkeum> * 2, 25);
 }
-{//crusher
-    recipes.addShapeless("ia_crusher_feed", <contenttweaker:crusher_feed> * 4, [
-        <contenttweaker:soot>, <contenttweaker:soot>, <contenttweaker:soot>, <ore:dustLunar>, <liquid:ore_waste> * 1000
-    ]);
-
-    /*recipes.addShapeless("ia_living_crusher",
-        <contenttweaker:lv_crusher>.withTag({food: 25}),
-        [
-            <contenttweaker:crusher_feed>, <contenttweaker:crusher_feed>
-        ]
-    );*/
-}
 {//sandworm
     //worm
     recipes.addShapeless("ia_lv_sandworm", 
@@ -933,8 +931,62 @@ function add8refinery(outp as IItemStack, inp as IIngredient, cost as int){
         [inp, inp, inp]
     ]);
 }
+function addDroneToWorker(worker as IItemStack, cats as IIngredient[], cost as int){
+    recipes.addShapeless("chitigic_dronetoworker", worker, 
+        cats + <contenttweaker:chitigic_drone>.only(
+            function(item){
+                if (item.tag.memberGet("food")){
+                    //item good
+                    return (item.tag.food.asInt() >= cost);
+                }
+                //item bad
+                return false;
+            }
+        )
+    );
+}
 {//chitigic
+    //food
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<contenttweaker:chitigic_food1>], null, 
+        [
+            <contenttweaker:flesh_piece> * 4,
+            <harvestcraft:southernstylebreakfastitem>|<harvestcraft:meatfeastpizzaitem>|<harvestcraft:thankfuldinneritem>|<harvestcraft:koreandinneritem>|<harvestcraft:gourmetvenisonburgeritem>|<harvestcraft:cornedbeefbreakfastitem>,
+            <minecraft:golden_apple:1> * 4
+        ], [<liquid:bugs> * 1000], <extrautils2:machine>.withTag({Type: "extrautils2:generator_culinary"}),
+        400, 100000
+    );
+    mods.mekanism.infuser.addRecipe("MANA", 160, <contenttweaker:chitigic_food1>, <contenttweaker:chitigic_food2>);
+
+
+    //egg
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:chitigic_egg> * 4, [
+        [null, null, <extendedcrafting:singularity_custom:19>, <extendedcrafting:singularity_custom:19>, <extendedcrafting:singularity_custom:19>, null, null], 
+        [null, <extendedcrafting:singularity_custom:19>, <contenttweaker:chitin_ball>, <contenttweaker:life>, <contenttweaker:chitin_ball>, <extendedcrafting:singularity_custom:19>, null], 
+        [<extendedcrafting:singularity_custom:19>, <contenttweaker:chitin_ball>, <extendedcrafting:singularity_custom:41>, <contenttweaker:blood_shard4>, <extendedcrafting:singularity_custom:41>, <contenttweaker:chitin_ball>, <extendedcrafting:singularity_custom:19>], 
+        [<extendedcrafting:singularity_custom:19>, <contenttweaker:life>, <contenttweaker:blood_shard4>, <extendedcrafting:singularity_custom:53>, <contenttweaker:blood_shard4>, <contenttweaker:life>, <extendedcrafting:singularity_custom:19>], 
+        [<extendedcrafting:singularity_custom:19>, <contenttweaker:chitin_ball>, <extendedcrafting:singularity_custom:41>, <contenttweaker:blood_shard4>, <extendedcrafting:singularity_custom:41>, <contenttweaker:chitin_ball>, <extendedcrafting:singularity_custom:19>], 
+        [null, <extendedcrafting:singularity_custom:19>, <contenttweaker:chitin_ball>, <contenttweaker:life>, <contenttweaker:chitin_ball>, <extendedcrafting:singularity_custom:19>, null], 
+        [null, null, <extendedcrafting:singularity_custom:19>, <extendedcrafting:singularity_custom:19>, <extendedcrafting:singularity_custom:19>, null, null]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:chitigic_egg> * 2, [
+        [null, <contenttweaker:chitigic>, <contenttweaker:chitigic>, <contenttweaker:chitigic>, null], 
+        [<contenttweaker:chitigic>, <contenttweaker:life>, <contenttweaker:chitin>, <contenttweaker:life>, <contenttweaker:chitigic>], 
+        [<contenttweaker:chitigic>, <contenttweaker:chitin>, <contenttweaker:chitin_ball>, <contenttweaker:chitin>, <contenttweaker:chitigic>], 
+        [<contenttweaker:chitigic>, <contenttweaker:life>, <contenttweaker:chitin>, <contenttweaker:life>, <contenttweaker:chitigic>], 
+        [null, <contenttweaker:chitigic>, <contenttweaker:chitigic>, <contenttweaker:chitigic>, null]
+    ]);
+
+    //drone
+    recipes.addShapeless("chitigic_egg", <contenttweaker:chitigic_drone>.withTag({food:5}), [<contenttweaker:chitigic_egg>]);
+
+    //workers
+    addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
+    //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
+    //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
+    //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
     
+
 
     recipes.addShapeless("ia_chit_party", <contenttweaker:chitigic_party>, [
         <contenttweaker:chitigic_scout>.only(isNonDroneAlive),

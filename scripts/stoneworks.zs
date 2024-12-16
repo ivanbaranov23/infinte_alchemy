@@ -45,10 +45,10 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
     scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone:1>, <erebus:umbergravel>);
 
     addCobbleRecipe(
-        <erebus:umberstone> * 4, <erebus:umberstone>, 
-        [<minecraft:stone:1> * 4], 
+        <erebus:umberstone> * 16, <erebus:umberstone>, 
+        [<minecraft:stone:1> * 16], 
         [<liquid:beetle_juice> * 1000], 
-        40, 1024, true
+        1, 1024, true
     );
 }
 

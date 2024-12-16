@@ -2007,3 +2007,57 @@ item.contenttweaker.uru_chunk.name=Uru Chunk
 
 ia.rename.magical_copper=Magical Copper Ore
 ia.rename.magical_tin=Magical Tin Ore
+ia.rename.poor_quartz=Poor Quartz Ore
+
+
+item.contenttweaker.organic_green_token.name=Organic Green Research Token
+item.contenttweaker.residue_token.name=Lava Residue Research Token
+item.contenttweaker.malachite_token.name=Malachite Adhesive Research Token
+item.contenttweaker.sand_token.name=Quicksand Research Token
+item.contenttweaker.sludge_token.name=Sludge Research Token
+item.contenttweaker.research_cobblegen.name=How To Mix Fluids Into Cobblestone
+
+fluid.sludge_cg=Cobblegeneic Sludge
+fluid.organic_cg=Cobblegeneic Organic Green
+fluid.residue_cg=Cobblegeneic Lava Residue
+
+tile.contenttweaker.poor_iron_ore.name=Poor Iron Ore
+
+ia.rename.galena=Galena Ore
+ia.rename.nickel_oxide=Nickel Oxide Ore
+ia.rename.mehchoch=Meh Chocolate
+
+ia.rename.mith_rod=Mithril Rod
+ia.rename.mith_ore=Mithril Ore
+ia.rename.mith_block=Block of Mithril
+ia.rename.mith_coin=Mithril Coin
+ia.rename.mith_dust=Mithril Dust
+ia.rename.mith_ingot=Mithril Ingot
+ia.rename.mith_nugget=Mithril Nugget
+ia.rename.mith_gear=Mithril Gear
+ia.rename.mith_plate=Mithril Plate
+ia.rename.mith_glass=Hardened Mithril Glass
+
+ia.rename.formation_chip=Formation Chip
+ia.rename.annihilation_chip=Annihilation Chip
+
+
+ia.rename.dense_ti_ore=Dense Titanium Ore
+ia.rename.poor_quartz=Poor Quartz Ore
+
+ia.rename.d_ruby=Delicate Ruby
+ia.rename.d_peridot=Delicate Peridot
+ia.rename.d_sapphire=Delicate Sapphire
+
+
+ia.rename.enethyst=Enethyst
+ia.rename.enethyst_block=Block of Enethyst
+ia.rename.enethyst_ore=Enethyst Ore
+ia.tooltip.enethyst=Ender Amethyst
+
+tile.contenttweaker.caelumite_ore.name=Caelumite Ore
+item.contenttweaker.caelumite_ingot.name=Caelumite Ingot
+item.contenttweaker.caelumite_plate.name=Caelumite Plate
+item.contenttweaker.caelumite_rod.name=Caelumite Rod
+tile.contenttweaker.caelumite_block.name=Block of Caelumite
+item.contenttweaker.caelumite_dust.name=Caelumite Dust

@@ -2489,6 +2489,17 @@ add3alloy(1, "flower_steel", 4,
 );
 
 {//extra ut
+    mods.mekanism.compressor.addRecipe(
+        <minecraft:dye:4>, 
+        <gas:xpjuice>,
+        <extrautils2:ingredients:12>
+    );
+    mods.mekanism.compressor.addRecipe(
+        <extrautils2:ingredients:3>, 
+        <gas:xpjuice>,
+        <extrautils2:ingredients:12> * 2
+    );
+
     recipes.addShapeless("compound_metal_stack_main", <contenttweaker:compound_metal_stack> * 2, [
         <liquid:malachite_glue> * 1000,
         <tconstruct:ingots:5>, 
@@ -2855,6 +2866,11 @@ add3alloy(1, "flower_steel", 4,
         );
     }
 
+    //atum
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:atum_godshard> * 16, <liquid:chrome> * (144 * 6), <gas:xpjuice> * 3000, 
+        <contenttweaker:atum_ingot>, <gas:chrome> * 1000, 2500, 60
+    );
 }
 
 add3alloy(3, "black_bronze", 3,
@@ -3397,7 +3413,12 @@ scripts.helper.addFluidAlloyerRecipe(
 }
 add3alloy(2, "explosion_resistant", 8,
     "bedrockium_alloy", 1,
-    "terrax", 4,
+    "terrax", 8,
+    "invar", 24
+);
+add3alloy(2, "explosion_resistant", 8,
+    "bedrockium_alloy", 1,
+    "duranite", 8,
     "invar", 24
 );
 recipes.addShaped("ia_explosion_resistant_sheetmetal", <contenttweaker:explosion_resistant_sheetmetal> * 4, [

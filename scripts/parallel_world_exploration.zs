@@ -128,8 +128,8 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
     },
     <contenttweaker:nether_boat> * 16: {
         <contenttweaker:nether_boat_osram>: [
-            [<betternether:cincinnasite_ore> * 128, <tconstruct:ore> * 96, <tconstruct:ore:1> * 96, <taiga:osram_ore> * 64, <taiga:tiberium_ore> * 128, <taiga:prometheum_ore> * 48, <taiga:valyrium_ore> * 48, <taiga:basalt_block> * 128],
-            [<betternether:cincinnasite_ore> * 128, <tconstruct:ore> * 96, <tconstruct:ore:1> * 96, <taiga:osram_ore> * 64, <taiga:tiberium_ore> * 128, <taiga:prometheum_ore> * 48, <taiga:valyrium_ore> * 48, <taiga:basalt_block> * 160]
+            [<betternether:cincinnasite_ore> * 256, <tconstruct:ore> * 256, <tconstruct:ore:1> * 256, <taiga:osram_ore> * 128, <taiga:tiberium_ore> * 144, <taiga:prometheum_ore> * 64, <taiga:valyrium_ore> * 64, <taiga:basalt_block> * 128, <moretcon:oreigniglomerate> * 8],
+            [<betternether:cincinnasite_ore> * 256, <tconstruct:ore> * 256, <tconstruct:ore:1> * 256, <taiga:osram_ore> * 128, <taiga:tiberium_ore> * 144, <taiga:prometheum_ore> * 64, <taiga:valyrium_ore> * 64, <taiga:basalt_block> * 160, <moretcon:oreigniglomerate> * 8]
         ],
         <contenttweaker:nether_boat_ores>: [
             [
@@ -334,7 +334,7 @@ static counter as int = 0;
 //todo boat, fuel, multimek expeditions, portal opener
 function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], marks as int[], ship as IItemStack, chance as float) {
     counter += 1;
-    var rec_name as string = "pworld_oregen_";// ~ counter ~ "_";
+    var rec_name as string = "pworld_oregen_" ~ ship.name ~ "_";// ~ counter ~ "_";
     for i,m in mechs{
         rec_name = rec_name ~ m.name ~ goals[i].name ~ "_";
     }
@@ -417,7 +417,7 @@ function addAll2Recipes(ship as IItemStack, chance as float){
 }
 
 addAll2Recipes(<contenttweaker:mech_taxi>, 1.0);
-addAll2Recipes(<contenttweaker:mech_taxi2>, 0.9);
+addAll2Recipes(<contenttweaker:mech_taxi2>, 0.75);
 
 for mech in loot{
     for goal in loot[mech]{

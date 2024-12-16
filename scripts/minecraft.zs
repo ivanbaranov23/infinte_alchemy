@@ -132,7 +132,13 @@ recipes.addShapeless(
 	[<exnihilocreatio:item_seed_sugarcane>]
 );
 
-
+//g apple
+recipes.removeByRecipeName("bhc:god_apple");
+recipes.addShaped("ia_g_apple_alt", <minecraft:golden_apple:1>, [
+	[<minecraft:gold_block>, <extendedcrafting:singularity:5>, <minecraft:gold_block>],
+	[<extendedcrafting:singularity:5>, <minecraft:apple>, <extendedcrafting:singularity:5>],
+	[<minecraft:gold_block>, <extendedcrafting:singularity:5>, <minecraft:gold_block>]
+]);
 recipes.addShaped("ia_g_apple_alt", <minecraft:golden_apple:1>, [
 	[<minecraft:gold_ingot>, <contenttweaker:vitamins>, <minecraft:gold_ingot>],
 	[<contenttweaker:vitamins>, <minecraft:apple>, <contenttweaker:vitamins>],
@@ -148,6 +154,11 @@ furnace.remove(<bigreactors:ingotgraphite>);
 furnace.addRecipe(<prodigytech:ash>, <minecraft:coal:1>);
 
 recipes.remove(<minecraft:experience_bottle>);
+mods.mekanism.compressor.addRecipe(
+    <minecraft:glass_bottle>, 
+    <gas:xpjuice>,
+    <minecraft:experience_bottle>
+);
 
 //paper
 <minecraft:paper>.displayName = "Low Quality Paper";

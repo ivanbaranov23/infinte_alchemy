@@ -504,6 +504,8 @@ recipes.addShaped("ia_atomicdisassembler", <mekanism:atomicdisassembler>, [
 	[null, <contenttweaker:tignalum_rod>, null]
 ]);
 
+mods.mekanism.GasConversion.register(<minecraft:experience_bottle>, <gas:xpjuice> * 150);
+mods.mekanism.chemical.oxidizer.addRecipe(<minecraft:experience_bottle>, <gas:xpjuice> * 150);
 
 scripts.jei.addJEIhint(
 	[], [],

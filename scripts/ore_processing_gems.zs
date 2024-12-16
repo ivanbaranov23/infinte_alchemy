@@ -99,11 +99,13 @@ mods.jei.JEI.addItem(<actuallyadditions:item_dust:3>);
 
 //aquamarine
 <ore:dustAquamarine>.add(<contenttweaker:aquamarine_dust>);
+<ore:dustOverworldAquamarine>.add(<contenttweaker:aquamarine_dust>);
+<ore:oreOverworldAquamarine>.add(<astralsorcery:blockcustomsandore>);
 mods.thermalexpansion.Transposer.addFillRecipe(
     <astralsorcery:itemcraftingcomponent>, 
     <contenttweaker:aquamarine_dust>, 
     <liquid:crystal_fluid2> * 250, 
-    12000
+    10000
 );
 
 //spaceice
@@ -143,12 +145,6 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<biomesoplenty:gem>, <biomesoplenty:gem>, <biomesoplenty:gem>]
     ]);
 
-    <biomesoplenty:gem>.displayName = "Enethyst";
-    <biomesoplenty:gem_block>.displayName = "Block of Enethyst";
-    <biomesoplenty:gem_ore>.displayName = "Enethyst Ore";
-    <biomesoplenty:gem>.addTooltip("Ender Amethyst");
-    <biomesoplenty:gem_block>.addTooltip("Ender Amethyst");
-    <biomesoplenty:gem_ore>.addTooltip("Ender Amethyst");
 
 
     <ore:dustAmethyst>.add(<contenttweaker:amethyst_dust>);

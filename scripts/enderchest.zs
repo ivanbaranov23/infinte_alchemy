@@ -20,17 +20,17 @@ import mods.ctutils.utils.Math;
 		[<contenttweaker:singularity_dust> | <contenttweaker:wormholium>, <avaritiaddons:avaritiaddons_chest>, <contenttweaker:singularity_dust> | <contenttweaker:wormholium>], 
 		[<redstonearsenal:material:224>, <redstonearsenal:storage:1>, <redstonearsenal:material:224>]
 	]);
-	recipes.addShaped("ia_ender_chest2", <enderstorage:ender_storage> * 2, [
+	recipes.addShaped("ia_ender_chest2", <enderstorage:ender_storage> * 4, [
 		[<contenttweaker:light_plate>, <bloodmagic:component:27>, <contenttweaker:light_plate>], 
 		[<contenttweaker:singularity_dust> | <contenttweaker:wormholium>, <avaritiaddons:avaritiaddons_chest>, <contenttweaker:singularity_dust> | <contenttweaker:wormholium>], 
 		[<contenttweaker:light_plate>, <bloodmagic:component:4>, <contenttweaker:light_plate>]
 	]);
-	recipes.addShaped("ia_ender_chest3", <enderstorage:ender_storage> * 4, [
+	recipes.addShaped("ia_ender_chest3", <enderstorage:ender_storage> * 16, [
 		[<contenttweaker:mirion2_ingot>, <botania:rune:11>, <contenttweaker:mirion2_ingot>], 
 		[<contenttweaker:singularity_dust> | <contenttweaker:wormholium>, <avaritiaddons:avaritiaddons_chest>, <contenttweaker:singularity_dust> | <contenttweaker:wormholium>], 
 		[<contenttweaker:mirion2_ingot>, <botania:rune:11>, <contenttweaker:mirion2_ingot>]
 	]);
-	recipes.addShaped("ia_ender_chest4", <enderstorage:ender_storage> * 8, [
+	recipes.addShaped("ia_ender_chest4", <enderstorage:ender_storage> * 64, [
 		[<draconicevolution:draconic_ingot>, <projecte:item.pe_covalence_dust:1>, <draconicevolution:draconic_ingot>], 
 		[<contenttweaker:singularity_dust> | <contenttweaker:wormholium>, <avaritiaddons:avaritiaddons_chest>, <contenttweaker:singularity_dust> | <contenttweaker:wormholium>], 
 		[<draconicevolution:draconic_ingot>, <projecte:item.pe_covalence_dust:1>, <draconicevolution:draconic_ingot>]

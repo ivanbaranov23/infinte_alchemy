@@ -48,7 +48,7 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 	<ore:AE2processor2>.addItems([<contenttweaker:fiery_processor>, <contenttweaker:enderium_processor>, <contenttweaker:osgloridium_processor>]);
 	<ore:AE2processor3>.addItems([<contenttweaker:cursed_processor>, <contenttweaker:potion_processor>, <contenttweaker:palladium_processor>]);
 
-	<appliedenergistics2:material:43>.displayName = "Formation Chip";
+	
 	recipes.addShaped("ae2_formation_chip1", <appliedenergistics2:material:43>, [
 		[null, <ore:AE2processor1>, null], 
 		[<thermalfoundation:glass_alloy:6>, <contenttweaker:ae2_chip_core>, <thermalfoundation:glass_alloy:6>], 
@@ -66,7 +66,6 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 	]);
 
 
-	<appliedenergistics2:material:44>.displayName = "Annihilation Chip";
 	recipes.addShaped("ae2_destruction_chip1", <appliedenergistics2:material:44>, [
 		[null, <ore:AE2processor1>, null], 
 		[<thermalfoundation:glass_alloy:5>, <contenttweaker:ae2_chip_core>, <thermalfoundation:glass_alloy:5>], 

@@ -99,6 +99,12 @@ draconicevolution:enderenergymanipulator
 thermalexpansion:florb
 thermalexpansion:morb
 quark:chest_passenger
+quark:seat
+quark:flat_item_frame
+quark:leash_knot
+quark:colored_item_frame
+quark:glass_item_frame
+quark:gravisand
 quark:pickarang
 quark:arrow_ender
 quark:arrow_explosive
@@ -106,10 +112,6 @@ quark:arrow_torch
 quark:dragon_breath_bottle
 quark:soul_powder
 quark:parrot_egg
-quark:flat_item_frame
-quark:leash_knot
-quark:colored_item_frame
-quark:glass_item_frame
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -119,8 +121,6 @@ quark:frog
 quark:pirate
 quark:crab
 quark:wraith
-quark:seat
-quark:gravisand
 astralsorcery:entityhighlighted
 astralsorcery:entitystardust
 astralsorcery:entitycrystal
@@ -256,6 +256,9 @@ mysticalagriculture:prudentium_arrow
 mysticalagriculture:intermedium_arrow
 mysticalagriculture:superium_arrow
 mysticalagriculture:supremium_arrow
+testdummy:dummy
+testdummy:floating_number
+testdummy:floating_number_dps
 redstonearsenal:flux_arrow
 plustic:supremeleader
 plustic:blindbandit
@@ -349,8 +352,8 @@ appliedenergistics2:appeng.entity.entitytinytntprimed
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
-enderio:falling_machine
 enderio:primed_charge
+enderio:falling_machine
 enderio:owl_egg
 projecte:water_projectile
 projecte:lava_projectile

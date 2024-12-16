@@ -163,7 +163,7 @@ addResearchRecipe("Glass", <minecraft:paper>, <contenttweaker:research_glass_mak
         <immersiveengineering:stone_decoration:8>,
         <roots:glass_eye>
     ],
-    32, 20*20
+    32, 5*20
 );
 addResearchRecipe("Tinker", <tconstruct:cast>, <contenttweaker:research_tinker>,//
     [
@@ -174,7 +174,7 @@ addResearchRecipe("Tinker", <tconstruct:cast>, <contenttweaker:research_tinker>,
         <cathedral:cathedral_gargoyle_demon_quartz>,
         <tconstruct:ingots:5> * 12
     ],
-    32, 20*20
+    32, 5*20
 );
 addResearchRecipe("ExoticCircuit", <immersiveengineering:material:27>, <contenttweaker:research_circuit1>,//ok
     [
@@ -185,7 +185,7 @@ addResearchRecipe("ExoticCircuit", <immersiveengineering:material:27>, <contentt
         <contenttweaker:cactus_charcoal> * 32,
         <immersiveengineering:toolupgrade:10> * 10
     ],
-    128, 30*20
+    128, 5*20
 );
 addResearchRecipe("Structure", <immersiveengineering:metal_decoration1:1> * 12, <contenttweaker:research_structure>,//ok
     [
@@ -196,7 +196,7 @@ addResearchRecipe("Structure", <immersiveengineering:metal_decoration1:1> * 12, 
         <immersiveengineering:metal_decoration0:5> * 2,
         <contenttweaker:concrete_token> * 8
     ],
-    128, 30*20
+    128, 5*20
 );
 
 
@@ -209,7 +209,7 @@ addResearchRecipe("Plants1", <minecraft:paper> * 4, <contenttweaker:research_pla
         <erebus:materials:55> * 8,
         <actuallyadditions:item_fertilizer> * 16
     ],
-    128, 30*20
+    128, 5*20
 );
 addResearchRecipe("Trees", <prodigytech:zorra_leaf>, <contenttweaker:research_plants2>,//ok
     [
@@ -219,7 +219,7 @@ addResearchRecipe("Trees", <prodigytech:zorra_leaf>, <contenttweaker:research_pl
         <prodigytech:zorrasteel_ingot> * 3,
         <tconstruct:broad_axe_head>.withTag({Material: "firewood"}),
         <minecraft:apple> * 32
-    ], 512, 45 * 20
+    ], 512, 5 * 20
 );
 addResearchRecipe("Vines", <contenttweaker:plant_sample>, <contenttweaker:research_plants3>,//ok
     [
@@ -229,7 +229,7 @@ addResearchRecipe("Vines", <contenttweaker:plant_sample>, <contenttweaker:resear
         <natura:nether_thorn_vines> * 8,
         <contenttweaker:blueslime_bucket> * 2,
         <contenttweaker:purpleslime_bucket> * 2
-    ], 512, 45 * 20
+    ], 512, 5 * 20
 );
 <botania:vineball>.addTooltip("Throw me at the wall");
 
@@ -242,7 +242,7 @@ addResearchRecipe("Sieving", <exnihilocreatio:item_mesh:3>, <contenttweaker:rese
         <contenttweaker:grass_bucket> * 2,
         <moreplates:pig_iron_gear> * 8,
         <thermalexpansion:augment:497>
-    ], 128, 30 * 20
+    ], 128, 5 * 20
 );
 addResearchRecipe("Flight", <minecraft:paper>, <contenttweaker:research_flight1>,//ok
     [
@@ -253,7 +253,7 @@ addResearchRecipe("Flight", <minecraft:paper>, <contenttweaker:research_flight1>
         <roots:mystic_feather> * 8,
         <quark:gravisand> * 24
     ],
-    256, 30*20
+    256, 5*20
 );
 addResearchRecipe("Fluids", <minecraft:paper>, <contenttweaker:research_fluids>,//ok
     [
@@ -265,7 +265,19 @@ addResearchRecipe("Fluids", <minecraft:paper>, <contenttweaker:research_fluids>,
         <fluiddrawers:tank> * 8,
         <enderio:block_reservoir> * 8
     ],
-    128, 20*20
+    128, 5*20
+);
+addResearchRecipe("Cobblegen", <mysticalagriculture:soulstone> * 4, <contenttweaker:research_cobblegen>,//ok
+    [
+        <contenttweaker:organic_green_token>,
+        <contenttweaker:concrete_token> * 4,
+        <contenttweaker:malachite_token>,
+        <contenttweaker:sand_token>,
+        <contenttweaker:sludge_token> * 2,
+        <contenttweaker:residue_token>,
+        <contenttweaker:blueslime_bucket> * 3
+    ],
+    128, 5*20
 );
 
 
@@ -284,7 +296,7 @@ addAdvancedResearchRecipe("Soul", <minecraft:nether_star>, <contenttweaker:resea
     <contenttweaker:cursed_processor> * 4,
     <extrautils2:ingredients:17> * 4,
     <contenttweaker:palladium_processor> * 4
-], 10000, 20 * 25);
+], 10000, 20 * 5);
 addAdvancedResearchRecipe("Singularity", <contenttweaker:singularity_dust> * 16, <contenttweaker:research_singularity>, [
     <extendedcrafting:singularity_custom:100> * 64,
     <contenttweaker:neuro_singularity> * 2,
@@ -297,7 +309,7 @@ addAdvancedResearchRecipe("Singularity", <contenttweaker:singularity_dust> * 16,
     <extendedcrafting:singularity_custom:51>,
     <extendedcrafting:singularity:49> * 8,
     <extendedcrafting:singularity_custom:21> * 3
-], 1000000, 20 * 30);
+], 1000000, 20 * 5);
 addAdvancedResearchRecipe("Terrasteel", <botania:manaresource:4> * 3, <contenttweaker:research_terra>, [
     <extendedcrafting:singularity_custom:11> * 16,
     <botania:quartz:5> * 16,
@@ -311,7 +323,7 @@ addAdvancedResearchRecipe("Terrasteel", <botania:manaresource:4> * 3, <contenttw
     <modularcontroller:mana_bifuser_controller>,
     <botania:quartz:1> * 24,
     <extendedcrafting:singularity_custom:50>
-], 1000 * 1000, 20 * 45);
+], 1000 * 1000, 20 * 5);
 
 addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,
     [
@@ -322,7 +334,7 @@ addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_was
         <contenttweaker:fertilizer4> * 8,
         <contenttweaker:energized_compound> * 4
     ],
-    512, 30*20
+    512, 5*20
 );
 addResearchRecipe("Polymer", <contenttweaker:bouncy_matter_small>, <contenttweaker:research_chemistry2>,
     [
@@ -334,7 +346,7 @@ addResearchRecipe("Polymer", <contenttweaker:bouncy_matter_small>, <contenttweak
         <mekanism:polyethene> * 24,
         <enderio:item_material:4> * 32
     ],
-    2048, 120*20
+    2048, 5*20
 );
 addResearchRecipe("AlienMat", <moreplates:end_steel_plate>, <contenttweaker:research_chemistry3>,
     [
@@ -346,7 +358,7 @@ addResearchRecipe("AlienMat", <moreplates:end_steel_plate>, <contenttweaker:rese
         <contenttweaker:gambrosium_dust> * 32,
         <deepmoblearning:polymer_clay> * 64
     ],
-    4096, 5*60*20
+    4096, 5*20
 );
 
 addResearchRecipe("Heat", <prodigytech:heat_capacitor_0>, <contenttweaker:research_heat>,
@@ -359,7 +371,7 @@ addResearchRecipe("Heat", <prodigytech:heat_capacitor_0>, <contenttweaker:resear
         <modulardiversity:blockhotairinputhatch> * 4,
         <prodigytech:energion_crystal_seed> * 64
     ],
-    1024, 180*20
+    1024, 5*20
 );
 
 addResearchRecipe("Bacteria", <contenttweaker:bacteria> * 4, <contenttweaker:research_bacteria1>,
@@ -372,7 +384,7 @@ addResearchRecipe("Bacteria", <contenttweaker:bacteria> * 4, <contenttweaker:res
         <xreliquary:mob_ingredient:6> * 48,
         <contenttweaker:soap> * 64
     ],
-    2048, 300*20
+    2048, 5*20
 );
 
 addResearchRecipe("Blood", <bloodmagic:slate:4>, <contenttweaker:research_magic2>,
@@ -386,7 +398,7 @@ addResearchRecipe("Blood", <bloodmagic:slate:4>, <contenttweaker:research_magic2
         <bhc:red_heart> * 48,
         <bloodmagic:blood_shard> * 64
     ],
-    10000, 400 * 20
+    10000, 5 * 20
 );
 
 
@@ -461,4 +473,30 @@ recipes.addShapeless(
     "ia_polymer_bucket2",
     <contenttweaker:polymer_bucket>,
     [<liquid:polyethylene> * 1000, <minecraft:bucket>]
+);
+
+recipes.addShapeless(
+    "organic_green_token",
+    <contenttweaker:organic_green_token>,
+    [<liquid:organic_green> * 1000, <minecraft:bucket>]
+);
+recipes.addShapeless(
+    "malachite_token",
+    <contenttweaker:malachite_token>,
+    [<liquid:malachite_glue> * 1000, <minecraft:bucket>]
+);
+recipes.addShapeless(
+    "sand_token",
+    <contenttweaker:sand_token>,
+    [<liquid:sand> * 1000, <minecraft:bucket>]
+);
+recipes.addShapeless(
+    "residue_token",
+    <contenttweaker:residue_token>,
+    [<liquid:lava_residue> * 1000, <minecraft:bucket>]
+);
+recipes.addShapeless(
+    "sludge_token",
+    <contenttweaker:sludge_token>,
+    [<liquid:sludge> * 1000, <minecraft:bucket>]
 );

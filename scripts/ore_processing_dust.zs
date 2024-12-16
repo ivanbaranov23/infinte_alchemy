@@ -78,7 +78,6 @@ mods.thermalexpansion.Centrifuge.addRecipe(
 
 
 //nickel oxide
-<immersiveengineering:ore:4>.displayName = "Nickel Oxide Ore";
 
 //graphite
 <ore:dustIGraphite>.add(<quantumflux:graphitedust>);
