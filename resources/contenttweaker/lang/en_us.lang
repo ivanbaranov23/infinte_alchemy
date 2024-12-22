@@ -2061,3 +2061,15 @@ item.contenttweaker.caelumite_plate.name=Caelumite Plate
 item.contenttweaker.caelumite_rod.name=Caelumite Rod
 tile.contenttweaker.caelumite_block.name=Block of Caelumite
 item.contenttweaker.caelumite_dust.name=Caelumite Dust
+
+ia.egg_hint.sword=Drops when killed
+
+item.contenttweaker.khnumite_heart.name=Khnumite Heart
+item.contenttweaker.lich_bone.name=Lich Bone
+item.contenttweaker.excited_powder.name=Excited Powder
+item.contenttweaker.sanded_rod.name=Sanded and Polished Rod
+item.contenttweaker.evil_desert_dust.name=Evil Desert Ectoplasm
+
+item.contenttweaker.infinity_treat.name=Infinity Treat
+
+fluid.khnumite=Coarse Metallic Khnumite

@@ -172,6 +172,18 @@ import mods.ctutils.utils.Math;
     );
 }
 
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:infinity_treat>, [
+    [null, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, null], 
+    [<harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>], 
+    [<harvestcraft:chaoscookieitem>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <botania_tweaks:compressed_tiny_potato_8>, <botania_tweaks:compressed_tiny_potato_8>, <botania_tweaks:compressed_tiny_potato_8>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <harvestcraft:chaoscookieitem>], 
+    [<harvestcraft:chaoscookieitem>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <botania_tweaks:compressed_tiny_potato_8>, <botania_tweaks:compressed_tiny_potato_8>, <botania_tweaks:compressed_tiny_potato_8>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <harvestcraft:chaoscookieitem>], 
+    [<harvestcraft:chaoscookieitem>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <botania_tweaks:compressed_tiny_potato_8>, <botania_tweaks:compressed_tiny_potato_8>, <botania_tweaks:compressed_tiny_potato_8>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <harvestcraft:chaoscookieitem>], 
+    [<harvestcraft:chaoscookieitem>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <botania_tweaks:compressed_tiny_potato_8>, <botania_tweaks:compressed_tiny_potato_8>, <botania_tweaks:compressed_tiny_potato_8>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <harvestcraft:chaoscookieitem>], 
+    [<harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>], 
+    [<contenttweaker:galastem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <contenttweaker:galastem>], 
+    [null, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, null]
+]);
+
 
 
 {//bouncy matter

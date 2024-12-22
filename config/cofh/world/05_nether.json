@@ -1,5 +1,84 @@
 {
     "populate": {
+		"roof_hole2": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"type": "sequential",
+				"generators": [
+					{
+						"type": "plate",
+						"block": ["moretcon:blockcobbledbedrock", "bedrock", "air"],
+						"radius": 7,
+						"height": 0,
+						
+						
+						"material": [
+							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
+							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
+							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
+							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
+						]
+					},
+					{
+						"type": "plate",
+						"block": [{"name": "minecraft:air", "weight": 50}, {"name": "natura:clouds", "metadata": 3, "weight": 1}],
+						"radius": 5.5,
+						"height": 15,
+						
+						
+						"material": [
+							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
+							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
+							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
+							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
+						]
+					},
+					{
+						"type": "plate",
+						"block": ["minecraft:air"],
+						"radius": 5,
+						"height": 30,
+						"slim": true,
+						
+						
+						"material": [
+							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
+							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
+							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
+							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
+						]
+					},
+					{
+						"type": "plate",
+						"block": ["minecraft:air"],
+						"radius": 4,
+						"height": 60,
+						"slim": true,
+						
+						
+						"material": [
+							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
+							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
+							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
+							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
+						]
+					}
+				]
+			},
+			"cluster-count": 1,
+            "chunk-chance": 40,
+			"min-height": 126,
+			"max-height": 128,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
 		"nether_gcr": {
 			"enabled": "true",
 			"distribution": "uniform",
@@ -141,98 +220,20 @@
 				]
 			}
 		},
-		"roof_hole2": {
-			"enabled": "true",
-			"distribution": "uniform",
-			"generator": {
-				"type": "sequential",
-				"generators": [
-					{
-						"type": "plate",
-						"block": ["moretcon:blockcobbledbedrock", "bedrock", "air"],
-						"radius": 7,
-						"height": 0,
-						
-						
-						"material": [
-							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
-							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
-							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
-							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
-						]
-					},
-					{
-						"type": "plate",
-						"block": [{"name": "minecraft:air", "weight": 50}, {"name": "natura:clouds", "metadata": 3, "weight": 1}],
-						"radius": 5.5,
-						"height": 15,
-						
-						
-						"material": [
-							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
-							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
-							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
-							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
-						]
-					},
-					{
-						"type": "plate",
-						"block": ["minecraft:air"],
-						"radius": 5,
-						"height": 30,
-						"slim": true,
-						
-						
-						"material": [
-							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
-							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
-							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
-							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
-						]
-					},
-					{
-						"type": "plate",
-						"block": ["minecraft:air"],
-						"radius": 4,
-						"height": 60,
-						"slim": true,
-						
-						
-						"material": [
-							"minecraft:air", "minecraft:netherrack", "minecraft:bedrock", "biomesoplenty:flesh",
-							"minecraft:lava", "tconstruct:ore", {"name": "tconstruct:ore", "metadata": 1}, "betternether:cincinnasite_ore",
-							"mysticalagriculture:soulstone", {"name": "draconicevolution:draconium_ore", "metadata": 1}, "minecraft:quartz_ore",
-							"moretcon:blockcobbledbedrock", "betternether:netherrack_moss", "minecraft:soul_sand", "quark:basalt", {"name": "biomesoplenty:grass", "metadata": 6}
-						]
-					}
-				]
-			},
-			"cluster-count": 1,
-            "chunk-chance": 40,
-			"min-height": 126,
-			"max-height": 128,
-			"retrogen": "true",
-			"biome": "all",
-			"dimension": {
-				"restriction": "whitelist",
-				"value": [
-					-1
-				]
-			}
-		},
+		
 		"sulfur_cloud": {
 			"enabled": "true",
 			"distribution": "uniform",
 			"generator": {
                 "type": "cluster",
 				"block": [{"name": "natura:clouds", "metadata": 3}],
-				"cluster-size": 50,
+				"cluster-size": 35,
                 
                 
                 "material": "minecraft:air"
 			},
-			"cluster-count": 2,
-            "chunk-chance": 3,
+			"cluster-count": 1,
+            "chunk-chance": 4,
 			"min-height": 150,
 			"max-height": 160,
 			"retrogen": "true",
@@ -296,6 +297,7 @@
 				]
 			}
 		},
+		
 		
 		"nether_glowshrooms": {
 			"enabled": "true",
@@ -391,6 +393,28 @@
             "chunk-chance": 8,
 			"min-height": 120,
 			"max-height": 130,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+		"bedrock_ores": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+                "type": "cluster",
+				"block": ["taiga:eezo_ore", "moretcon:orenaturalvoidspar", "moretcon:orebedrockfusionite", "moretcon:oreebonite"],
+				"cluster-size": 1,
+                "material": ["bedrock"]
+			},
+			"cluster-count": 10,
+            "chunk-chance": 4,
+			"min-height": 127,
+			"max-height": 128,
 			"retrogen": "true",
 			"biome": "all",
 			"dimension": {

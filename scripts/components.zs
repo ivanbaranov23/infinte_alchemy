@@ -2,6 +2,104 @@ import crafttweaker.item.IItemStack;
 import mods.modularmachinery.RecipeBuilder;
 
 
+
+{//thermal
+	//sanded
+	mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:sanded_rod>, <contenttweaker:thermal_rod>, <liquid:khnumite> * 125, 10000);
+	
+	//gold coil
+	recipes.remove(<thermalfoundation:material:513>);
+	recipes.addShaped("ia_reception_coil", <thermalfoundation:material:513>, [
+		[null, <immersiveengineering:wirecoil:5>, <ore:gearGold>], 
+		[<immersiveengineering:wirecoil:5>, <contenttweaker:thermal_rod>, <immersiveengineering:wirecoil:5>], 
+		[<ore:gearGold>, <immersiveengineering:wirecoil:5>, null]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<thermalfoundation:material:513>], 
+		[<immersiveengineering:wirecoil:5> * 2, <thermalfoundation:material:25>],
+		<liquid:thermal> * 144,
+		10, 128
+	);
+	recipes.addShaped("ia_reception_coil2", <thermalfoundation:material:513> * 4, [
+		[null, <immersiveengineering:wirecoil:5>, <ore:gearGold>], 
+		[<immersiveengineering:wirecoil:5>, <contenttweaker:sanded_rod>, <immersiveengineering:wirecoil:5>], 
+		[<ore:gearGold>, <immersiveengineering:wirecoil:5>, null]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<thermalfoundation:material:513> * 5], 
+		[<immersiveengineering:wirecoil:5> * 2, <thermalfoundation:material:25>, <contenttweaker:sanded_rod>],
+		null,
+		10, 128
+	);
+
+	//silver coil
+	recipes.remove(<thermalfoundation:material:514>);
+	recipes.addShaped("ia_transmission_coil", <thermalfoundation:material:514>, [
+		[null, <immersiveengineering:wirecoil:5>, <ore:gearSilver>], 
+		[<immersiveengineering:wirecoil:5>, <contenttweaker:thermal_rod>, <immersiveengineering:wirecoil:5>], 
+		[<ore:gearSilver>, <immersiveengineering:wirecoil:5>, null]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<thermalfoundation:material:514>], 
+		[<immersiveengineering:wirecoil:5> * 2, <thermalfoundation:material:258>],
+		<liquid:thermal> * 144,
+		10, 128
+	);
+	recipes.addShaped("ia_transmission_coil2", <thermalfoundation:material:514> * 4, [
+		[null, <immersiveengineering:wirecoil:5>, <ore:gearSilver>], 
+		[<immersiveengineering:wirecoil:5>, <contenttweaker:sanded_rod>, <immersiveengineering:wirecoil:5>], 
+		[<ore:gearSilver>, <immersiveengineering:wirecoil:5>, null]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<thermalfoundation:material:514> * 5], 
+		[<immersiveengineering:wirecoil:5> * 2, <thermalfoundation:material:258>, <contenttweaker:sanded_rod>],
+		null,
+		10, 128
+	);
+
+	//electrum coil
+	recipes.remove(<thermalfoundation:material:515>);
+	recipes.addShaped("ia_conductance_coil", <thermalfoundation:material:515> * 2, [
+		[<ore:gearElectrum>, <thermalfoundation:material:514>, <contenttweaker:gold_coil>], 
+		[<thermalfoundation:material:513>, <immersiveengineering:material:9>, <thermalfoundation:material:514>], 
+		[<contenttweaker:gold_coil>, <thermalfoundation:material:513>, <ore:gearElectrum>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<thermalfoundation:material:515> * 3], 
+		[<immersiveengineering:material:9>, <thermalfoundation:material:513>, <thermalfoundation:material:514>, <thermalfoundation:material:289>],
+		<liquid:thermal> * 144,
+		10, 256
+	);
+
+	
+	recipes.remove(<thermalfoundation:material:512>);
+	recipes.addShaped("ia_redstone_servo", <thermalfoundation:material:512>, [
+		[<immersiveengineering:wirecoil:5>, <immersiveengineering:metal_device1:6>, <immersiveengineering:wirecoil:5>], 
+		[<immersiveengineering:material:8>, <contenttweaker:research_fluids>.reuse(), <immersiveengineering:material:8>], 
+		[<immersiveengineering:wirecoil:5>, <immersiveengineering:metal_device1:6>, <immersiveengineering:wirecoil:5>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<thermalfoundation:material:512>], 
+		[<immersiveengineering:material:8>, <immersiveengineering:metal_device1:6>, <immersiveengineering:wirecoil:5> * 2],
+		<liquid:watertight_steel> * 144,
+		10, 128
+	);
+
+	recipes.remove(<thermalfoundation:material:657>);
+	recipes.addShaped("ia_saw_blade", <thermalfoundation:material:657>, [
+		[<contenttweaker:wear_resistant_alloy_plate>, <contenttweaker:duraluminum_plate>, null], 
+		[<contenttweaker:duraluminum_plate>, <immersiveengineering:material:9>, <contenttweaker:duraluminum_plate>], 
+		[null, <contenttweaker:duraluminum_plate>, <contenttweaker:wear_resistant_alloy_plate>]
+	]);
+	recipes.remove(<thermalfoundation:material:656>);
+	recipes.addShaped("ia_drill_head", <thermalfoundation:material:656>, [
+		[<contenttweaker:duraluminum_plate>, <contenttweaker:wear_resistant_alloy_plate>, null], 
+		[<immersiveengineering:material:9>, <contenttweaker:duraluminum_plate>, <contenttweaker:duraluminum_plate>], 
+		[<contenttweaker:duraluminum_plate>, <contenttweaker:wear_resistant_alloy_plate>, null]
+	]);
+}
+
+
 {//aa coils
 	recipes.addShapeless("ia_coil_core1_1", <contenttweaker:coil_core1> * 2, [<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, <thermalfoundation:material:515>, <immersiveengineering:wirecoil:2>, <contenttweaker:platinum_wire>]);
 	recipes.addShapeless("ia_coil_core1_2", <contenttweaker:coil_core1> * 3, [<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, <thermalfoundation:material:515>, <immersiveengineering:wirecoil:2>, <contenttweaker:platinum_wire>, <contenttweaker:insulation_strand>]);
@@ -110,10 +208,15 @@ import mods.modularmachinery.RecipeBuilder;
 			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
 			[<contenttweaker:activated_green_fish>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
 		]);
-		//diode1
+		//diode
 		recipes.addShaped("diode1", <contenttweaker:diode1> * 2, [
 			[<contenttweaker:glowcrystal>, <contenttweaker:glass_hull>], 
 			[<contenttweaker:zinc_rod>, <contenttweaker:zinc_rod>]
+		]);
+		recipes.addShaped("diode2", <contenttweaker:diode2>, [
+			[null, <moretcon:gemelectarite>, null], 
+			[<contenttweaker:diode1>, <moretcon:gemelectarite>, <contenttweaker:diode1>], 
+			[<projectred-core:resource_item:402>, <contenttweaker:diode1>, <projectred-core:resource_item:402>]
 		]);
 		//circuit
 		recipes.addShapeless("ia_exotic_circuit_bp", <immersiveengineering:blueprint>.withTag({blueprint: "exotic_circuit"}), [<contenttweaker:research_circuit1>]);

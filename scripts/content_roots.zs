@@ -1,7 +1,10 @@
 #loader contenttweaker
+import crafttweaker.item.IItemStack;
+import mods.contenttweaker.MutableItemStack;
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.ActionResult;
+import crafttweaker.entity.IEntity;
 
 import mods.contenttweaker.BlockState;
 
@@ -155,10 +158,49 @@ var staffwood_bug = VanillaFactory.createItem("staffwood_bug");
         return true;
     };
     staffwood_bug.itemRightClick = function(stack, world, player, hand){
-        stack.damage(1, player);
+        
+        if (hand == "MAIN_HAND"){
+            
+            
+            if (!world.isRemote()){
+                stack.damage(1, player);
+
+                var offhand as MutableItemStack = player.getHeldItem(mods.contenttweaker.Hand.off());
+                if (isNull(offhand)) return "Fail";
+
+                if (offhand.definition.id == "minecraft:gold_ingot"){
+                    //world.spawnEntity()
+                    var ent = <entity:minecraft:sheep>.spawnEntity(world, player.position);
+                    
+                }
+
+                offhand.shrink(1);
+                
+            }
+        }
         return "Pass";
     };
     staffwood_bug.register();
+var staffwood_fire = VanillaFactory.createItem("staffwood_fire");
+    staffwood_fire.maxStackSize = 1;
+    staffwood_fire.maxDamage = 50;
+    staffwood_fire.toolLevel = 1;
+    staffwood_fire.toolClass = "staffwood_fire";
+    staffwood_fire.itemDestroyedBlock = function(item, world, block, pos, player) {
+        if (item) item.damage(1, player);
+        return true;
+    };
+    staffwood_fire.onItemUse = function(player, world, pos, hand, facing, blockHit) {
+        var block = world.getBlockState(pos);
+        if (block == <block:contenttweaker:forest_clay_block>) {
+            world.setBlockState(<block:contenttweaker:forest_fire>, pos);
+            player.getHeldItem(hand).damage(1, player);
+            return ActionResult.success();
+        }
+        
+        return ActionResult.pass();
+    };
+    staffwood_fire.register();
 
 function addOreshroom(name as string){
     var oreshroom = VanillaFactory.createBlock("oreshroom_" ~ name, <blockmaterial:rock>);

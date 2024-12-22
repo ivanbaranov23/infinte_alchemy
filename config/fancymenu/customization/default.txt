@@ -9,37 +9,166 @@ customization-meta {
 }
 
 customization {
+  name = pano
+  action = setbackgroundpanorama
+}
+
+customization {
   keepaspectratio = false
   action = backgroundoptions
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
-  orientation = mid-left
+  orientation = top-left
   x = 9
   action = movebutton
-  y = -61
+  y = 57
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  width = 190
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/button4.png
+  backgroundnormal = resources/button3.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = top-left
+  x = 9
+  action = movebutton
+  y = 120
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 190
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/button4.png
+  backgroundnormal = resources/button3.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  orientation = top-left
+  x = 9
+  action = movebutton
+  y = 141
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  width = 190
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/button4.png
+  backgroundnormal = resources/button3.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  orientation = top-right
+  x = -30
+  action = movebutton
+  y = 287
 }
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
-  orientation = mid-left
+  orientation = top-left
   x = 9
   action = movebutton
-  y = -91
+  y = 36
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  width = 190
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/button4.png
+  backgroundnormal = resources/button3.png
 }
 
 customization {
   identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  orientation = top-left
+  x = 9
+  action = movebutton
+  y = 78
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  width = 190
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = resources/button4.png
+  backgroundnormal = resources/button3.png
+}
+
+customization {
+  identifier = %id=376346%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=376346%
   orientation = mid-left
   x = 9
   action = movebutton
-  y = -32
+  y = 30
+}
+
+customization {
+  identifier = %id=376346%
+  width = 90
+  action = resizebutton
+  height = 20
 }
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 186
   width = 268
   action = deep_customization_element:title_screen_forge_top
@@ -72,7 +201,7 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 423
   width = 13
   action = deep_customization_element:title_screen_realms_notification
@@ -83,7 +212,7 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 183
   width = 274
   action = deep_customization_element:title_screen_logo
@@ -95,7 +224,7 @@ customization {
 customization {
   orientation = original
   splash_color = #ffff00
-  hidden = false
+  hidden = true
   x = 0
   width = 60
   splash_rotation = -20
@@ -106,35 +235,41 @@ customization {
 }
 
 customization {
-  orientation = mid-left
-  loopbackgroundanimations = true
+  orientation = top-left
   restartbackgroundanimations = true
   buttonaction = openlink;https://discord.gg/ub3NbSDeZM%btnaction_splitter_fm%
+  backgroundhovered = resources/button4.png
+  label = Discord
+  loopbackgroundanimations = true
+  hoverlabel = Pls join
   x = 9
-  width = 200
+  width = 190
   action = addbutton
   actionid = 313421fc-cb6b-4d68-a9eb-3476b81ae6f11727006792334
-  y = -1
-  label = discord
+  y = 99
+  backgroundnormal = resources/button3.png
   height = 20
 }
 
 customization {
-  orientation = top-left
-  enable_scrolling = true
-  shadow = true
-  scale = 4.0
-  source = main menu WIP
-  text_border = 0
-  case_mode = normal
-  source_mode = direct
-  line_spacing = 1
-  x = 295
-  width = 310
-  action = custom_layout_element:fancymenu_customization_item_text
-  actionid = 0571e7f9-b74b-4ea7-8f4b-a90b01c885c71729606485060
-  y = 125
-  alignment = left
-  height = 40
+  path = resources/contenttweaker/textures/items/quest_coin.png
+  orientation = mid-centered
+  x = -53
+  width = 112
+  actionid = 93ffbc48-1fca-46f3-aba5-3d561e4b7e881734539847768
+  action = addtexture
+  y = -74
+  height = 112
+}
+
+customization {
+  path = resources/title3.gif
+  orientation = top-centered
+  x = -150
+  width = 300
+  actionid = fe62bf9a-b99f-4c7c-b140-6c1f209da0d61734717719512
+  action = addtexture
+  y = 12
+  height = 100
 }
 

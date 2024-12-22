@@ -467,9 +467,9 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
 {//gelatin
     {//colagen
         //bones
-        mods.thermalexpansion.Imbuer.addRecipe(<liquid:colagen_solution> * 150, <minecraft:dye:15>, <liquid:steam> * 500, 4500);
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:colagen_solution> * 90, <minecraft:dye:15>, <liquid:steam> * 500, 15000);
         
-        mods.thermalexpansion.Imbuer.addRecipe(<liquid:colagen_solution> * 150, <minecraft:dye:15>,<liquid:vinegar> * 200, 3500);
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:colagen_solution> * 100, <minecraft:dye:15>,<liquid:vinegar> * 200, 3500);
 
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:colagen_solution> * 100, <minecraft:dye:15>, <liquid:liquidhydrogenchloride> * 200, 1500);
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:colagen_solution> * 300, <minecraft:bone>, <liquid:liquidhydrogenchloride> * 200, 1500);

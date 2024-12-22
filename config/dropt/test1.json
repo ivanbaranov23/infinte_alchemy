@@ -171,6 +171,10 @@
             ]
         },
 
+        {"match": {"drops": {"drops": ["contenttweaker:forest_fire"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED"
+        },
+
         {
             "match": {
                 "blocks": {"blocks": ["minecraft:cobblestone:0"]},

@@ -1,0 +1,16 @@
+{
+	x: 5.0d,
+	y: 0.0d,
+	text: [
+		"Find a giant hole and go up. You'll find nether roof is a bit less barren then usual. There's a few things to be found here."
+	],
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "976b3579",
+		type: "checkmark",
+		title: "Nether Roof",
+		icon: "minecraft:bedrock"
+	}]
+}

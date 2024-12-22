@@ -2746,6 +2746,27 @@ add3alloy(1, "flower_steel", 4,
     }
 
     {//mekanized_steel
+        recipes.addShapeless("ia_excited_dust", <contenttweaker:excited_powder> * 2, [
+            <actuallyadditions:item_dust:7>,
+            <extrautils2:ingredients:4>,
+            <harvestcraft:extremechiliitem>,
+            <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust>
+        ]);
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:haste_potion> * 500, <appliedenergistics2:material:2>, <liquid:potion>.withTag({Potion: "cofhcore:haste4"}) * 500, 3000);
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:speed_potion> * 500, <appliedenergistics2:material:3>, <liquid:potion>.withTag({Potion: "cofhcore:swiftness4"}) * 500, 3000);
+        scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 400, 
+            <liquid:haste_potion> * 200,
+            <liquid:speed_potion> * 200,
+            <actuallyadditions:item_dust:7>,
+            32, 80
+        );
+        scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 500, 
+            <liquid:haste_potion> * 200,
+            <liquid:speed_potion> * 200,
+            <contenttweaker:excited_powder>,
+            32, 80
+        );
+
         add3alloy(1, "mekanized_steel_base", 3,
             "electric_manyullyn", 1,
             "enderium", 2,

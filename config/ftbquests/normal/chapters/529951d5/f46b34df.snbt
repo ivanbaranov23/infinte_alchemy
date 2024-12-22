@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: -1.0d,
+	dependencies: [
+		"e01acda9"
+	],
+	tasks: [{
+		uid: "83234dbf",
+		type: "item",
+		items: [{
+			item: "moretcon:gemerythynite"
+		}]
+	}],
+	rewards: [{
+		uid: "0350004b",
+		type: "item",
+		item: "moretcon:blockerythynite"
+	}]
+}

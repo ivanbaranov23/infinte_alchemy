@@ -134,12 +134,12 @@ recipes.addShapeless(
 
 //g apple
 recipes.removeByRecipeName("bhc:god_apple");
-recipes.addShaped("ia_g_apple_alt", <minecraft:golden_apple:1>, [
+recipes.addShaped("ia_g_apple_alt1", <minecraft:golden_apple:1>, [
 	[<minecraft:gold_block>, <extendedcrafting:singularity:5>, <minecraft:gold_block>],
 	[<extendedcrafting:singularity:5>, <minecraft:apple>, <extendedcrafting:singularity:5>],
 	[<minecraft:gold_block>, <extendedcrafting:singularity:5>, <minecraft:gold_block>]
 ]);
-recipes.addShaped("ia_g_apple_alt", <minecraft:golden_apple:1>, [
+recipes.addShaped("ia_g_apple_alt2", <minecraft:golden_apple:1>, [
 	[<minecraft:gold_ingot>, <contenttweaker:vitamins>, <minecraft:gold_ingot>],
 	[<contenttweaker:vitamins>, <minecraft:apple>, <contenttweaker:vitamins>],
 	[<minecraft:gold_ingot>, <contenttweaker:vitamins>, <minecraft:gold_ingot>]

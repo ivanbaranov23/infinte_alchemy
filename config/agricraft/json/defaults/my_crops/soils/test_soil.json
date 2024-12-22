@@ -1,0 +1,18 @@
+{
+  "path": "my_crops/soils/test_soil.json",
+  "enabled": true,
+  "id": "testtest",
+  "name": "Aqueous Soil",
+  "varients": [
+    {
+      "item": "erebus:ore_petrified_wood",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": true
+    }
+  ]
+}

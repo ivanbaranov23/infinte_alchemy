@@ -35,7 +35,7 @@ Casting.addBasinRecipe(
 //eezo
 scripts.helper.addFluidAlloyerRecipe(
     <taiga:eezo_ore>, 
-    <enderio:item_material:20> * 32, <contenttweaker:black_bronze_ingot> * 4, 
+    <enderio:item_material:20> * 16, <contenttweaker:black_bronze_ingot> * 1, 
     <liquid:petrotheum> * 2000, 
     256, 30
 );

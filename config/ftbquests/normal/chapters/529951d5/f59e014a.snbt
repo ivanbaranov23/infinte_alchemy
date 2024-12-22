@@ -1,0 +1,24 @@
+{
+	x: 7.0d,
+	y: 0.0d,
+	text: [
+		"The following ores can only be mined with pickaxe with \"Bottom's End\" modifier. ",
+		"You might notice that to break void spar, bloodstone or ebonite ore you need a void spar, bloodstone or ebonite pickaxe.",
+		"You need to either find non-bedrock void spar ore in another dimension or create one of the materials artificially"
+	],
+	dependencies: [
+		"e01acda9"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e66db487",
+		type: "checkmark",
+		title: "Bottom's End",
+		icon: {
+			id: "tconstruct:pick_head",
+			tag: {
+				Material: "moretcon.ioximite"
+			}
+		}
+	}]
+}

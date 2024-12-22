@@ -330,6 +330,14 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
         [<minecraft:paper>.withDisplayName("Break with staff")],
         [<contenttweaker:staffwood_flower>]
     );
+
+
+    addStaffHint(<contenttweaker:forest_clay_block>, <contenttweaker:staffwood_fire>, <contenttweaker:forest_fire>, true);
+    recipes.addShaped("ia_staffwood_fire", <contenttweaker:staffwood_fire>, [
+        [null, <contenttweaker:druid_bone>, <contenttweaker:lich_bone>], 
+        [null, <contenttweaker:staffwood>, <contenttweaker:druid_bone>], 
+        [<biomesoplenty:jar_filled:1>, null, null]
+    ]);
 }
 {//flower staff
     <contenttweaker:staffwood_flower>.addShiftTooltip("Breaking block:", "Press Shift for Info");

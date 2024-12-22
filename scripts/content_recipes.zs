@@ -379,14 +379,7 @@ recipes.addShapeless("ia_lazy_soup", <contenttweaker:lazy_soup>, [
 ]);
 
 
-TEImbuer.addRecipe(<liquid:haste_potion> * 500, <appliedenergistics2:material:2>, <liquid:potion>.withTag({Potion: "cofhcore:haste4"}) * 500, 3000);
-TEImbuer.addRecipe(<liquid:speed_potion> * 500, <appliedenergistics2:material:3>, <liquid:potion>.withTag({Potion: "cofhcore:swiftness4"}) * 500, 3000);
-scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 400, 
-    <liquid:haste_potion> * 200,
-    <liquid:speed_potion> * 200,
-    <actuallyadditions:item_dust:7>,
-    32, 80
-);
+
 scripts.helper.addFluidMixerRecipe(<liquid:sea_water> * 1000,
     <liquid:water> * 1000,
     <liquid:witchwater> * 100,

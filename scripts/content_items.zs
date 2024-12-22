@@ -1446,11 +1446,7 @@ VanillaFactory.createItem("secure_switch").register();
     cursed_star.register();
 }
 
-VanillaFactory.createItem("iron_heart").register();
-VanillaFactory.createItem("gold_slimeball").register();
-VanillaFactory.createItemFood("brain_slimeball", 1).register();
 
-VanillaFactory.createItem("bug_slimeball").register();
 VanillaFactory.createItem("holy_thing").register();
 
 function add_living(lname as string){
@@ -1669,6 +1665,27 @@ addWater("radioactive_waste");
 
 VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
 
+
+{//mob
+    VanillaFactory.createItem("iron_heart").register();
+    VanillaFactory.createItem("gold_slimeball").register();
+    VanillaFactory.createItemFood("brain_slimeball", 1).register();
+
+    VanillaFactory.createItem("bug_slimeball").register();
+
+    VanillaFactory.createItem("witherite").register();
+    VanillaFactory.createItem("awaken_witherite").register();
+
+    VanillaFactory.createItem("illagerite").register();
+    VanillaFactory.createItem("illagerite_dust").register();
+    VanillaFactory.createFluid("illagerite", Color.fromHex("474b4b")).register();
+
+    VanillaFactory.createItem("khnumite_heart").register();
+    addLava("khnumite");
+
+    VanillaFactory.createItem("druid_bone").register();
+    VanillaFactory.createItem("lich_bone").register();
+}
 {//food
     //soy line
     VanillaFactory.createFluid("soy_extract", Color.fromHex("c5e0ca")).register();
@@ -1980,12 +1997,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("transmut_gel").register();
 
-    VanillaFactory.createItem("witherite").register();
-    VanillaFactory.createItem("awaken_witherite").register();
-
-    VanillaFactory.createItem("illagerite").register();
-    VanillaFactory.createItem("illagerite_dust").register();
-    VanillaFactory.createFluid("illagerite", Color.fromHex("474b4b")).register();
+    
 
     VanillaFactory.createItem("runewood").register();//todo evilwood?
     VanillaFactory.createItem("runewood_enchanted").register();
@@ -2024,6 +2036,14 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     add_living("nitrall");
     VanillaFactory.createItem("nitrall_feed").register();
     VanillaFactory.createItem("dry_dewgonia").register();
+
+    var forest_fire = VanillaFactory.createBlock("forest_fire", <blockmaterial:rock>);
+    forest_fire.setFullBlock(false);
+    forest_fire.setPassable(true);
+    forest_fire.setBlockLayer("TRANSLUCENT");
+    forest_fire.setLightOpacity(0);
+    forest_fire.setTranslucent(true);
+    forest_fire.register();
 }
 {//prodigy tech
     VanillaFactory.createBlock("ferramic_gravel", <blockmaterial:rock>).register();
@@ -2058,6 +2078,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("glowcrystal").register();
     VanillaFactory.createItem("diode1").register();
+    VanillaFactory.createItem("diode2").register();
     VanillaFactory.createItemFood("fishy_capacitor", 4).register();
 
     VanillaFactory.createItem("creosolon").register();
@@ -2130,6 +2151,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("compound_metal2").register();
     VanillaFactory.createItem("watertight_lead_plate").register();
 }
+{//thermal
+    VanillaFactory.createItem("excited_powder").register();
+    VanillaFactory.createItem("sanded_rod").register();
+}
 {//atum
     VanillaFactory.createItem("ra_burner").register();
 
@@ -2145,6 +2170,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         desert_soup.flowingLocation = 'contenttweaker:fluids/desert_soup';
         desert_soup.register();
     }
+    VanillaFactory.createItem("evil_desert_dust").register();
 }
 {//ae2
     VanillaFactory.createItem("ae2_chip_core").register();
@@ -2209,6 +2235,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createFluid("strawberry_juice", Color.fromHex("f15353")).register();
     VanillaFactory.createFluid("strawberry_wine", Color.fromHex("890000")).register();
+
+    addWater("slimebone");
 }
 {//actually addition
     VanillaFactory.createItem("coil_core1").register();
@@ -2799,8 +2827,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         infinity_treat.onItemFoodEaten = function(stack, world, player) {
             if (!world.isRemote())
                 if (player) {
-                    player.addPotionEffect(<potion:extrautils2:effect.xu2.doom>.makePotionEffect(20, 0));
-                }
+                    Commands.call("effect @p extrautils2:effect.xu2.doom 1 0", player, world, false, true);
+                }                                   
         };
         infinity_treat.register();
     }

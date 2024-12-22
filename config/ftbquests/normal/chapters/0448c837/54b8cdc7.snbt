@@ -2,7 +2,8 @@
 	x: -4.0d,
 	y: 3.0d,
 	text: [
-		"Can be used to make Grains of Infinity"
+		"Can be used to make Grains of Infinity.",
+		"Can be rarely found on the nether roof"
 	],
 	dependencies: [
 		"b5128cac"

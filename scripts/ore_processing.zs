@@ -1436,8 +1436,14 @@ val ores as IItemStack[string][string][string] = {
         },
         dense: {
             item: <densemetals:dense_rutile_ore>,
-
+            crushing: <contenttweaker:titanium_ore> * 3,
+            crushingByprod1: <biomesoplenty:gem:6> * 6,
             making: <contenttweaker:titanium_ore> * 4
+        },
+        clump: {
+            item: <mekores:mekanismore:87>,
+            balling: <mekores:mekanismore:88>,
+            crushingByprod1: <biomesoplenty:gem:6>
         }
     },
     tungsten: {

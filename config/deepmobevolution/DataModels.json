@@ -125,7 +125,7 @@
     "trial": {
       "entities": [
         "atum:nomad,25",
-        "atum:assasin,35",
+        "atum:assasin,45",
         "atum:brigand,25",
         "atum:barbarian,25"
       ],
@@ -164,9 +164,10 @@
     ],
     "trial": {
       "entities": [
-        "aether_legacy:zephyr,55",
+        "aether_legacy:zephyr,5",
         "thermalfoundation:blitz,25",
-        "aether_legacy:cockatrice,10"
+        "aether_legacy:cockatrice,10",
+        "aether_legacy:swet,25"
       ],
       "spawnDelay": 2.6,
       "rewards": [

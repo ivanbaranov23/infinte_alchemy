@@ -63,17 +63,21 @@ scripts.content_machines.addAssemblerRecipe(
 
 recipes.remove(<deepmoblearning:trial_key>);
 recipes.addShaped("ia_trial_key", <deepmoblearning:trial_key>, [
-	[<extrautils2:suncrystal>, <moreplates:mana_infused_stick>, <moreplates:mana_infused_stick>], 
-	[null, <enderio:item_material:14>, <enderio:item_material:14>]
+	[<extrautils2:suncrystal>, <moreplates:platinum_stick>]
 ]);
 
 {//blocks
 	recipes.remove(<deepmoblearning:trial_keystone>);
-	recipes.addShaped("ia_trial_keystone", <deepmoblearning:trial_keystone>, [
+	/*recipes.addShaped("ia_trial_keystone", <deepmoblearning:trial_keystone>, [
 		[null, <deepmoblearning:trial_key>, null], 
 		[<deepmoblearning:soot_covered_plate>, <moreplates:dark_steel_plate>, <deepmoblearning:soot_covered_plate>], 
 		[<deepmoblearning:soot_covered_plate>, <deepmoblearning:machine_casing>, <deepmoblearning:soot_covered_plate>]
+	]);*/
+	recipes.addShaped("ia_trial_keystone", <deepmoblearning:trial_keystone>, [
+		[<roots:runed_obsidian>, <deepmoblearning:trial_key>, <roots:runed_obsidian>], 
+		[<roots:runed_obsidian>, <thermalexpansion:frame:64>, <roots:runed_obsidian>]
 	]);
+
 	recipes.remove(<deepmoblearning:simulation_chamber>);
 	recipes.addShaped("ia_simulation_chamber", <deepmoblearning:simulation_chamber>, [
 		[<deepmoblearning:soot_covered_plate>, <deepmoblearning:glitch_infused_ingot>, <deepmoblearning:soot_covered_plate>], 

@@ -1,0 +1,20 @@
+{
+	x: 8.0d,
+	y: -1.0d,
+	dependencies: [
+		"f59e014a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "da097ba4",
+		type: "item",
+		items: [{
+			item: "moretcon:gembloodstone"
+		}]
+	}],
+	rewards: [{
+		uid: "400adbbf",
+		type: "item",
+		item: "moretcon:blockbloodstone"
+	}]
+}

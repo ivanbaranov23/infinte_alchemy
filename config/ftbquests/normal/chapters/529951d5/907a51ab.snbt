@@ -1,0 +1,22 @@
+{
+	x: 5.0d,
+	y: -2.0d,
+	text: [
+		"Floaty and light emitting material. Found in glowstone stalagmites"
+	],
+	dependencies: [
+		"e01acda9"
+	],
+	tasks: [{
+		uid: "68da22eb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:caelumite_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "ae8a57ad",
+		type: "item",
+		item: "contenttweaker:caelumite_block"
+	}]
+}

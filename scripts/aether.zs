@@ -164,6 +164,12 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 		[<contenttweaker:ambrosium_dust>, <contenttweaker:nether_star_dust>, <contenttweaker:ambrosium_dust>], 
 		[<contenttweaker:ambrosium_dust>, <contenttweaker:ambrosium_dust>, <contenttweaker:ambrosium_dust>]
 	]);
+	mods.thermalexpansion.InductionSmelter.addRecipe(
+		<contenttweaker:corrupted_ambrosium>, 
+		<contenttweaker:ambrosium_dust>, <contenttweaker:evil_desert_dust> * 64, 
+		25000
+	);
+
 
 	//gambrosium
 	mods.immersiveengineering.Mixer.addRecipe(<liquid:ambrosium_slury> * 1000, <liquid:hf> * 300, [

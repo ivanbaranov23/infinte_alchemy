@@ -4,10 +4,90 @@ import crafttweaker.liquid.ILiquidStack;
 
 import mods.modularmachinery.RecipeBuilder;
 
+function addEggHint(ent as string, drops as IItemStack[]){
+    scripts.jei.addJEIhint(
+        [<minecraft:spawn_egg>.withTag({EntityTag: {id: ent}})], [],
+        [<minecraft:diamond_sword>.withDisplayName(game.localize("ia.egg_hint.sword"))],
+        drops
+    );
+}
+
 <entity:minecraft:villager_golem>.addDrop(<contenttweaker:iron_heart> % 50);
 
-<entity:primitivemobs:treasure_slime>.addDrop(<contenttweaker:gold_slimeball> % 75);
-<entity:primitivemobs:treasure_slime>.addDrop(<contenttweaker:gold_slimeball> % 75);
+{//atum
+    addEggHint("atum:wraith", [<atum:ectoplasm>]);
+    recipes.addShapeless("ia_evil_desert_dust", <contenttweaker:evil_desert_dust>, [
+        <atum:ectoplasm>,
+        <contenttweaker:sphalerite_dust>,
+        <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>,
+        <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>
+    ]);
+
+    {//khnumite
+        addEggHint("atum:stoneguard", [<contenttweaker:khnumite_heart>]);
+        addEggHint("atum:stonewarden", [<contenttweaker:khnumite_heart>]);
+        <entity:atum:stoneguard>.addDrop(<contenttweaker:khnumite_heart> % 50);
+        <entity:atum:stonewarden>.addDrop(<contenttweaker:khnumite_heart> % 75);
+        scripts.jei.addJEIhint([<atum:khnumite_face>, <atum:khnumite_block> * 2], [], [], [
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: "atum:stoneguard"}})
+        ]);
+        scripts.jei.addJEIhint([<atum:khnumite_face>, <atum:khnumite_block> * 4], [], [], [
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: "atum:stonewarden"}})
+        ]);
+
+
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:khnumite> * 2000, <atum:khnumite_face>, <liquid:chloroauric_acid> * 1000, 10000);
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:khnumite> * 2000, <contenttweaker:khnumite_heart>, <liquid:chloroauric_acid> * 1000, 10000);
+        
+        mods.thermalexpansion.Refinery.addRecipe(<liquid:sand> * 1000, <contenttweaker:sphalerite_dust> % 40, <liquid:khnumite> * 500, 6000);
+        mods.immersivepetroleum.Distillation.addRecipe([<liquid:sand> * 1000], [
+            <contenttweaker:sphalerite_dust>,
+            <exnihilocreatio:item_ore_osmium> * 8,
+            <atum:khnumite>,
+            <taiga:duranite_dust>
+        ], <liquid:khnumite> * 500, 5000, 40, [
+            0.4,
+            0.8,
+            0.3,
+            0.1
+        ]);
+
+        scripts.content_machines.addFluidSieveRecipeRandom(
+            [
+                <contenttweaker:sphalerite_dust> % 50,
+                <exnihilocreatio:item_ore_osmium> * 12,
+                <atum:khnumite> % 40,
+                <taiga:duranite_dust> % 20,
+                <taiga:vibranium_dust> % 10
+            ], <liquid:sand> * 1000, 
+            <liquid:khnumite> * 500, <contenttweaker:witherite>,
+            null,
+            40, 1000
+        );
+    }
+}
+{
+    addEggHint("twilightforest:skeleton_druid", [<contenttweaker:druid_bone>]);
+    addEggHint("twilightforest:skeleton_druid", [<contenttweaker:lich_bone>.withLore(["Rare"])]);
+    <entity:twilightforest:skeleton_druid>.addDrop(<contenttweaker:druid_bone> % 80);
+    <entity:twilightforest:skeleton_druid>.addDrop(<contenttweaker:lich_bone> % 3);
+    
+    {//lich
+        addEggHint("twilightforest:lich", [<contenttweaker:lich_bone> * 4]);
+        <entity:twilightforest:lich>.addDrop(<contenttweaker:lich_bone> * 4);
+        scripts.content_machines.addBioAssemblerRecipe(
+            [<contenttweaker:lich_bone>], null, 
+            [
+                <ore:boneWithered> * 4,
+                <thermalfoundation:material:1028> * 32
+            ], [<liquid:slimebone> * 1000], <twilightforest:trophy:1>,
+            200, 1000
+        );
+    }
+}
+
+<entity:primitivemobs:treasure_slime>.addDrop(<contenttweaker:gold_slimeball> % 55);
+<entity:primitivemobs:treasure_slime>.addDrop(<contenttweaker:gold_slimeball> % 25);
 mods.thermalexpansion.Centrifuge.addRecipe([
         <extendedcrafting:material:128> % 30, <extendedcrafting:material:129> % 20,
         <contenttweaker:relic_nugget> % 30, <taiga:meteorite_nugget> % 5
@@ -189,7 +269,7 @@ function addVialProcess(entity as string, drops as IItemStack[], liquids as ILiq
 
 {//ow
     //addVialProcess("minecraft:zombie", [<minecraft:skull:2>, <xreliquary:mob_ingredient:6>, <minecraft:rotten_flesh> * 8, <minecraft:bone> * 2], [<liquid:rot> * 50], regen);
-    addVialProcess("minecraft:villager_golem", [<contenttweaker:iron_heart>, <minecraft:iron_ingot> * 16, <minecraft:pumpkin>], [], poison);
+    //addVialProcess("minecraft:villager_golem", [<contenttweaker:iron_heart>, <minecraft:iron_ingot> * 16, <minecraft:pumpkin>], [], poison);
 
 
     addVialProcess("primitivemobs:treasure_slime", [<contenttweaker:gold_slimeball> * 8], [], poison);

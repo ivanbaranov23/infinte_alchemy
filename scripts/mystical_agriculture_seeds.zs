@@ -40,3 +40,32 @@ var tier_seed as IItemStack[int] = {
     1: <mysticalagriculture:crafting:17>,
     2: <mysticalagriculture:crafting:18>
 };
+var seed_items as IItemStack[][IItemStack][string] = {
+    TEAlloyer: {
+        <mysticalagriculture:silicon_seeds>: [<appliedenergistics2:material:20> * 64],
+
+    }
+};
+
+{//0
+    recipes.addShaped("ia_slimy_bone_seeds", <mysticalagriculture:slimy_bone_seeds>, [
+        [<contenttweaker:lich_bone>, <mod_lavacow:silky_sludge>], 
+        [<mod_lavacow:silky_sludge>, <minecraft:wheat_seeds>]
+    ]);
+}
+
+{//TEAlloyer
+    for seed,ing in seed_items.TEAlloyer{
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            seed, 
+            <mysticalagriculture:crafting:18>, ing[0], 
+            100000
+        );
+    }
+    /*mods.thermalexpansion.InductionSmelter.addRecipe(
+        <mysticalagriculture:silicon_seeds>, 
+        <mysticalagriculture:crafting:18>, IItemStack secondaryInput, 
+        int energy_infuser
+    );*/
+
+}

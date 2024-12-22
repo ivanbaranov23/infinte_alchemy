@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -1.0d,
+	dependencies: [
+		"f59e014a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "89c9515b",
+		type: "item",
+		items: [{
+			item: "moretcon:gemvoidspar"
+		}]
+	}],
+	rewards: [{
+		uid: "781749ab",
+		type: "item",
+		item: "moretcon:blockvoidspar"
+	}]
+}

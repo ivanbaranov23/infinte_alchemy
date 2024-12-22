@@ -1,0 +1,20 @@
+{
+	x: 8.0d,
+	y: 1.0d,
+	dependencies: [
+		"f59e014a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2bfcf2f3",
+		type: "item",
+		items: [{
+			item: "moretcon:ingotebonite"
+		}]
+	}],
+	rewards: [{
+		uid: "93bf7ec6",
+		type: "item",
+		item: "moretcon:blockebonite"
+	}]
+}

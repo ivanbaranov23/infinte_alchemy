@@ -1,0 +1,70 @@
+{
+  "path": "my_crops/plants/torchlight_plant.json",
+  "enabled": true,
+  "id": "torchlight",
+  "plant_name": "Torchlight Crop",
+  "seed_name": "Torchlight Seeds",
+  "seed_items": [
+    {
+      "item": "twilightforest:torchberries",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "${Name} Seeds."
+  },
+  "growth_chance": 0.9,
+  "growth_bonus": 0.025,
+  "bonemeal": true,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.0,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 1.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 5,
+        "chance": 0.9,
+        "required": true,
+        "item": "twilightforest:torchberries",
+        "meta": 0,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 10,
+    "max_light": 16,
+    "soils": [
+      "farmland_soil"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "cross",
+    "seed_texture": "contenttweaker:blocks/torchlight_plant",
+    "plant_textures": [
+      "contenttweaker:blocks/torchlight_plant1",
+      "contenttweaker:blocks/torchlight_plant2",
+      "contenttweaker:blocks/torchlight_plant3",
+      "contenttweaker:blocks/torchlight_plant4",
+      "contenttweaker:blocks/torchlight_plant5",
+      "contenttweaker:blocks/torchlight_plant6"
+    ]
+  }
+}

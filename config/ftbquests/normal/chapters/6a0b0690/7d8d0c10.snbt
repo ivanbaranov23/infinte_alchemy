@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: 2.0d,
+	dependencies: [
+		"51fd7c52"
+	],
+	tasks: [{
+		uid: "572e25d5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:lich_bone"
+		}]
+	}]
+}
