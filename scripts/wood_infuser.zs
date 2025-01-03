@@ -74,7 +74,7 @@ function addWoodInfuseFire(wood_out as IBlockState, wood_in as IBlockState, inpu
             var state = container.world.getBlockState(container.pos.getOffset(crafttweaker.world.IFacing.down(),1));
             var state2 = container.world.getBlockState(container.pos.getOffset(crafttweaker.world.IFacing.up(),1));
             return (
-                (state.block.definition.id == "minecraft:fire") || (state.block.definition.id == "biomesoplenty:blue_fire")
+                (state.block.definition.id == "minecraft:fire") || (state.block.definition.id == "biomesoplenty:blue_fire") || (state.block.definition.id == "contenttweaker:forest_fire") 
                 ) && (state2 == wood_in);
         }, 20
     );
@@ -119,7 +119,9 @@ function addWoodInfuseBlueFire(wood_out as IBlockState, wood_in as IBlockState, 
     recipe.requireWorldCondition("world", function(container){
             var state = container.world.getBlockState(container.pos.getOffset(crafttweaker.world.IFacing.down(),1));
             var state2 = container.world.getBlockState(container.pos.getOffset(crafttweaker.world.IFacing.up(),1));
-            return (state.block.definition.id == "biomesoplenty:blue_fire") && (state2 == wood_in);
+            return (
+                (state.block.definition.id == "biomesoplenty:blue_fire") || (state.block.definition.id == "contenttweaker:forest_fire") 
+                ) && (state2 == wood_in);
         }, 20
     );
     recipe.setActive(time_t).requireDuration("duration", time_t);
@@ -145,7 +147,48 @@ function addWoodInfuseBlueFireJEI(wood_out as IItemStack, wood_in as IIngredient
     Wood_infuser.addJEIRecipe(recipe);
 }
 
+function addWoodInfuseForestFire(wood_out as IBlockState, wood_in as IBlockState, inputItem as IIngredient[], time_t as int){
+    var recipe = AssemblyRecipe.create(function(container) {
+        container.addWorldOutput(function(container){
+            var state2 = container.world.getBlockState(container.pos.getOffset(crafttweaker.world.IFacing.up(),1));
+            if (state2 == wood_in)
+                container.world.setBlockState(wood_out, container.pos.getOffset(crafttweaker.world.IFacing.up(),1));
+            return true;
+        });
+        if (container.random.nextDouble() > 0.75)
+            container.addItemOutput("output", <biomesoplenty:ash>);
+    });
+    for i in inputItem {
+        recipe = recipe.requireItem("input", i);
+    }
+    recipe.requireWorldCondition("world", function(container){
+            var state = container.world.getBlockState(container.pos.getOffset(crafttweaker.world.IFacing.down(),1));
+            var state2 = container.world.getBlockState(container.pos.getOffset(crafttweaker.world.IFacing.up(),1));
+            return (state.block.definition.id == "contenttweaker:forest_fire") && (state2 == wood_in);
+        }, 20
+    );
+    recipe.setActive(time_t).requireDuration("duration", time_t);
+    
 
+    Wood_infuser.addRecipe(recipe);
+    
+}
+function addWoodInfuseForestFireJEI(wood_out as IItemStack, wood_in as IIngredient, inputItem as IIngredient[]){
+    var recipe = AssemblyRecipe.create(function(container) {
+        container.addItemOutput("output_log", wood_out);
+        container.addItemOutput("output", <biomesoplenty:ash>.withDisplayName("25% chance of making"));
+        
+    });
+    for i in inputItem {
+        recipe = recipe.requireItem("input", i);
+    }
+    recipe.requireItem("input_log", wood_in);
+    recipe.requireItem("fire", <contenttweaker:forest_fire>);
+    //recipe.requireDuration("duration", time_t).setActive(time_t);
+    
+
+    Wood_infuser.addJEIRecipe(recipe);
+}
 
 
 recipes.remove(<mysticalworld:charred_log>);
@@ -237,18 +280,42 @@ addWoodInfuseFireJEI(<erebus:ore_petrified_wood>, <erebus:petrified_bark_red>, [
 ]);
 
 
-addWoodInfuseBlueFire(
+addWoodInfuseForestFire(
     <blockstate:contenttweaker:divine_mud>, <blockstate:contenttweaker:glowshroomite_mud>, [
         <contenttweaker:reagent_bug>,
         <tconevo:earth_material_block> * 16,
         <contenttweaker:empowered_shard> * 4
 ], 20);
-addWoodInfuseBlueFireJEI(<contenttweaker:divine_mud>, <contenttweaker:glowshroomite_mud>, [
+addWoodInfuseForestFireJEI(<contenttweaker:divine_mud>, <contenttweaker:glowshroomite_mud>, [
         <contenttweaker:reagent_bug>,
         <tconevo:earth_material_block> * 16,
         <contenttweaker:empowered_shard> * 3
 ]);
 
+
+//excted mud
+addWoodInfuseBlueFire(
+    <blockstate:contenttweaker:excited_mud>, <blockstate:contenttweaker:mushroomite_mud>, [
+       <contenttweaker:excited_powder> * 2,
+        <actuallyadditions:item_worm> * 5,
+        <contenttweaker:fertilizer4> | <mysticalagriculture:fertilized_essence>
+], 20);
+addWoodInfuseBlueFireJEI(<contenttweaker:excited_mud>, <contenttweaker:mushroomite_mud>, [
+       <contenttweaker:excited_powder> * 2,
+        <actuallyadditions:item_worm> * 5,
+        <contenttweaker:fertilizer4> | <mysticalagriculture:fertilized_essence>
+]);
+addWoodInfuseForestFire(
+    <blockstate:contenttweaker:excited_mud>, <blockstate:erebus:mud>, [
+       <contenttweaker:excited_powder> * 2,
+        <actuallyadditions:item_worm> * 5,
+        <contenttweaker:fertilizer4> | <mysticalagriculture:fertilized_essence>
+], 20);
+addWoodInfuseForestFireJEI(<contenttweaker:excited_mud>, <erebus:mud>, [
+       <contenttweaker:excited_powder> * 2,
+        <actuallyadditions:item_worm> * 5,
+        <contenttweaker:fertilizer4> | <mysticalagriculture:fertilized_essence>
+]);
 
 
 

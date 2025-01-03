@@ -255,6 +255,13 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
         out
     );
 }
+function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStack[], luck as bool){
+    scripts.jei.addJEIhint(
+        [inp], [],
+        [staff, <minecraft:paper>.withDisplayName("Break Using Staff")],
+        out
+    );
+}
 
 {//staffwood
     Mortar.addRecipe("glue", 
@@ -266,12 +273,13 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
         [<contenttweaker:organic_glue>, <biomesoplenty:bamboo>, <natura:sticks:9>, <natura:sticks:2>, <immersiveengineering:material>]
     );
 
-
+    //clay
     addStaffHint(<contenttweaker:kaolin_clay_block>, <contenttweaker:staffwood_clay>, <contenttweaker:forest_clay_block>, true);
     addStaffHint(<minecraft:clay>, <contenttweaker:staffwood_clay>, <tconstruct:dried_clay>, true);
     addStaffHint(<excompressum:compressed_block:5>, <contenttweaker:staffwood_clay>, <atum:khnumite_raw>, true);
     addStaffHint(<atum:khnumite_block>, <contenttweaker:staffwood_clay>, <netherendingores:ore_other_1:6>, true);
 
+    //mushroom
     <contenttweaker:staffwood_mushroom>.addShiftTooltip("Breaking block:", "Press Shift for Info");
     <contenttweaker:staffwood_mushroom>.addShiftTooltip("->block will be replaced with an ore");
     <contenttweaker:staffwood_mushroom>.addShiftTooltip("->staff takes 1 damage");
@@ -325,18 +333,26 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
         <contenttweaker:geode_ore>.withLore(["Fortune lvl >= 1"])
     ], true);
     
+
     scripts.jei.addJEIhint(
         [<contenttweaker:staffwood>, <biomesoplenty:leaves_3:9>], [],
         [<minecraft:paper>.withDisplayName("Break with staff")],
         [<contenttweaker:staffwood_flower>]
     );
 
-
+    //fire
     addStaffHint(<contenttweaker:forest_clay_block>, <contenttweaker:staffwood_fire>, <contenttweaker:forest_fire>, true);
     recipes.addShaped("ia_staffwood_fire", <contenttweaker:staffwood_fire>, [
         [null, <contenttweaker:druid_bone>, <contenttweaker:lich_bone>], 
         [null, <contenttweaker:staffwood>, <contenttweaker:druid_bone>], 
         [<biomesoplenty:jar_filled:1>, null, null]
+    ]);
+
+    //bug
+    recipes.addShaped("ia_staffwood_bug", <contenttweaker:staffwood_bug>, [
+        [<erebus:materials:2>, <xreliquary:mob_ingredient:1>, <erebus:materials:15> | <erebus:materials:35>], 
+        [null, <contenttweaker:staffwood>, <xreliquary:mob_ingredient:11>], 
+        [<xreliquary:mob_ingredient:6>, null, null]
     ]);
 }
 {//flower staff
@@ -368,7 +384,7 @@ function addStaffHint2(inp as IIngredient, staff as IItemStack, out as IItemStac
     ], false);
 }
 {//burn powder
-    Mortar.addRecipe("burn_powder1", <contenttweaker:burn_powder> * 8, [
+    Mortar.addRecipe("burn_powder1", <contenttweaker:burn_powder> * 4, [
         <mysticalworld:charred_log>, <mysticalworld:charred_log>,
         <tconstruct:edible:34>, <thermalfoundation:material:771>, <erebus:small_plant:4>
     ]);
@@ -546,7 +562,10 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
         sapling_bamboo2: <biomesoplenty:sapling_0:2>,
         sapling_amaranth: <natura:overworld_sapling:2>,
         sapling_blossom: <quark:variant_sapling:1>,
-        sapling_ghost: <natura:nether_sapling>
+        sapling_ghost: <natura:nether_sapling>,
+
+        nettle1: <erebus:small_plant>,
+        nettle2: <erebus:small_plant:1>
     };
     val flower_soils as IIngredient[string] = {
         ia_mushroom_red: <minecraft:mycelium>,
@@ -579,7 +598,10 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
         sapling_floweroak: <twilightforest:uberous_soil>,
         //sapling_balsam: <twilightforest:uberous_soil>,
         sapling_bamboo: <twilightforest:uberous_soil>,
-        sapling_blossom: <twilightforest:uberous_soil>
+        sapling_blossom: <twilightforest:uberous_soil>,
+
+        nettle1: <erebus:mud>,
+        nettle2: <erebus:mud>
     };
 
     //jei

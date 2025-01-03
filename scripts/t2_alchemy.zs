@@ -13,7 +13,7 @@ mods.immersivepetroleum.Distillation.addRecipe(
 	<liquid:rotten_slime> * 200, 20 * 120, 20, 
 	[]
 );
-mods.thermalexpansion.Refinery.addRecipe(<liquid:biodiesel> * 750, null, <liquid:rotten_slime> * 2000, 4000);
+mods.thermalexpansion.Refinery.addRecipe(<liquid:biodiesel> * 750, null, <liquid:rotten_slime> * 2000, 12000);
 
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<exnihilocreatio:item_ore_tungsten:2>, <contenttweaker:anubis_godshard>, 8000);
 mods.actuallyadditions.AtomicReconstructor.addRecipe(<exnihilocreatio:item_ore_tungsten:2>, <contenttweaker:anput_godshard>, 8000);

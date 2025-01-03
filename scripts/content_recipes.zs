@@ -40,36 +40,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
 
 
 {//clay
-    //fireclay
-    recipes.addShapeless(<contenttweaker:fireclay> * 2, [<minecraft:clay_ball>, <contenttweaker:brick_dust>, <minecraft:blaze_powder>, <minecraft:flint>]);
-    //firebrick
-    furnace.addRecipe(<contenttweaker:firebrick>, <contenttweaker:fireclay>);
     
-    add2x2Recipe(<contenttweaker:firebrick>, <contenttweaker:firebrick_block>);
-    add2x2Recipe(<contenttweaker:kaolin_clay>, <contenttweaker:kaolin_clay_block>);
-
-
-    //industrial clay
-    recipes.addShapeless("ai_industrail_clay", 
-        <contenttweaker:industrial_clay>, 
-        [<contenttweaker:fireclay>, <contenttweaker:fireclay>, <prodigytech:inferno_crystal>, <ore:dustConstantan>, <exnihilocreatio:item_material:1>]
-    );
-
-    add2x2Recipe(<contenttweaker:forest_clay>, <contenttweaker:forest_clay_block>);
-
-    //elastic clay
-    recipes.addShapeless("ia_elastic_clay1", 
-        <contenttweaker:elastic_clay>, 
-        [<contenttweaker:industrial_clay>, <contenttweaker:solar_silicon>, <contenttweaker:steeleaf_mush>, <erebus:materials:9>]
-    );
-    recipes.addShapeless("ia_elastic_clay2", 
-        <contenttweaker:elastic_clay> * 2, 
-        [<contenttweaker:industrial_clay>, <contenttweaker:solar_silicon>, <contenttweaker:steeleaf_mush>, <erebus:materials:9>, <contenttweaker:kaolin_clay>]
-    );
-
-
-    add2x2Recipe(<contenttweaker:manaclay>, <contenttweaker:manaclay_block>);
-    add2x2Recipe(<contenttweaker:manabrick>, <contenttweaker:manabrick_block>);
 }
 
 {//metals

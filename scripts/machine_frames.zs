@@ -10,6 +10,18 @@ recipes.addShaped("ia_machine_frame_frame2", <contenttweaker:machine_frame_frame
     [<thermalfoundation:material:354>, <contenttweaker:creosolon_frame>, <thermalfoundation:material:354>], 
     [<projectred-core:resource_item>, <immersiveengineering:metal_decoration0:4>, <projectred-core:resource_item>]
 ]);
+mods.immersiveengineering.Blueprint.addRecipe("structure", 
+	<contenttweaker:machine_frame_frame> * 12, 
+	[
+		<contenttweaker:creosolon_frame>,
+        <contenttweaker:tube_processor>,
+        <projectred-core:resource_item:1>,
+        <projectred-core:resource_item:1>,
+        <thermalfoundation:material:354>,
+        <immersiveengineering:metal_decoration0:4>
+	]
+);
+
 recipes.addShaped("ia_watertight_lead_plate", <contenttweaker:watertight_lead_plate>, [
     [<thermalfoundation:material:323>, <extrautils2:decorativesolid:7>, <thermalfoundation:material:323>], 
     [<contenttweaker:compound_metal>, null, <contenttweaker:compound_metal>], 
@@ -36,4 +48,27 @@ recipes.addShaped("ia_machine_frame3", <thermalexpansion:frame>, [
 	[<ore:plateElectricalSteel>, <prodigytech:circuit_perfected>, <ore:plateElectricalSteel>], 
 	[<contenttweaker:simple_motor>, <thermalexpansion:frame:64>, <contenttweaker:simple_motor>], 
 	[<ore:plateSteel>, <contenttweaker:thermal_gear>, <ore:plateSteel>]
+]);
+
+recipes.remove(<mekanism:basicblock:8>);
+recipes.addShaped("ia_machine_frame4", <mekanism:basicblock:8>, [
+	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:eliamondin>, <contenttweaker:mekanized_steel_plate>], 
+	[<contenttweaker:atum_godshard>, <thermalexpansion:frame>, <contenttweaker:atum_godshard>], 
+	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:mekanical_core>, <contenttweaker:mekanized_steel_plate>]
+]);
+
+
+
+recipes.remove(<actuallyadditions:block_misc:9>);
+recipes.addShaped("ia_frame5", <actuallyadditions:block_misc:9>, [
+	[<redstonearsenal:material:128>, <contenttweaker:tube_computer>, <redstonearsenal:material:128>], 
+	[<contenttweaker:titanium_rod>, <mekanism:basicblock:8>, <contenttweaker:titanium_rod>], 
+	[<contenttweaker:osgloridium_plate>, <contenttweaker:gearbox_normal>, <contenttweaker:osgloridium_plate>]
+]);
+
+recipes.remove(<actuallyadditions:block_misc:8>);
+recipes.addShaped("ia_frame10", <actuallyadditions:block_misc:8>, [
+	[<extendedcrafting:material:36>, <contenttweaker:robot_arm>, <extendedcrafting:material:36>], 
+	[<biomesoplenty:terrestrial_artifact>, <enderio:item_material:54>, <biomesoplenty:terrestrial_artifact>], 
+	[<extendedcrafting:material:36>, <enderio:item_capacitor_crystalline>, <extendedcrafting:material:36>]
 ]);

@@ -1,0 +1,8 @@
+{
+  "path": "my_crops/mutations/excited_crop_mutation.json",
+  "enabled": true,
+  "chance": 0.5,
+  "child": "excited_crop",
+  "parent1": "actuallyadditions:canola_plant",
+  "parent2": "torchlight"
+}

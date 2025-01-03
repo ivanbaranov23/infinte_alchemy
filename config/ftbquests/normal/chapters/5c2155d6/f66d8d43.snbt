@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 3.0d,
+	dependencies: [
+		"c66f4805"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fadb5af9",
+		type: "checkmark",
+		title: "Anti Venom",
+		icon: "erebus:anti_venom_bottle"
+	}]
+}

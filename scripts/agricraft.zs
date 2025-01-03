@@ -1,5 +1,6 @@
-recipes.removeByMod("agricraft");
+//recipes.removeByMod("agricraft");
 
+recipes.remove(<agricraft:crop_sticks>);
 recipes.addShaped("ia_cropstick1", <agricraft:crop_sticks> * 4, [
     [null, <natura:sticks:*>, null],
     [<natura:sticks:*>, <contenttweaker:fertilizer2>, <natura:sticks:*>],

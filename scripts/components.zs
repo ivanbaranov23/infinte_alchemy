@@ -1,6 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.modularmachinery.RecipeBuilder;
-
+import mods.immersiveengineering.Blueprint;
 
 
 {//thermal
@@ -165,12 +165,17 @@ import mods.modularmachinery.RecipeBuilder;
 		[<contenttweaker:egoold>, <actuallyadditions:item_misc:7>, <contenttweaker:egoold>], 
 		[<contenttweaker:titanium_gear>, <contenttweaker:egoold>, <appliedenergistics2:material:22>]
 	]);
+	recipes.addShaped("ia_aa_coil21", <actuallyadditions:item_misc:8> * 2, [
+		[<contenttweaker:cheesy_capacitor>, <contenttweaker:egoold>, <contenttweaker:titanium_gear>], 
+		[<contenttweaker:egoold>, <actuallyadditions:item_misc:7>, <contenttweaker:egoold>], 
+		[<contenttweaker:titanium_gear>, <contenttweaker:egoold>, <contenttweaker:cheesy_capacitor>]
+	]);
 	<actuallyadditions:item_misc:8>.displayName = "Advanced Laser Coil";
 	scripts.content_machines.addAssemblerRecipe(
-		[<actuallyadditions:item_misc:8> * 2],
+		[<actuallyadditions:item_misc:8> * 3],
 		[
 			<actuallyadditions:item_misc:7>,
-			<appliedenergistics2:material:22> * 2,
+			<contenttweaker:cheesy_capacitor> * 2,
 			<contenttweaker:egoold> * 4
 		], <fluid:titanium> * (144 * 8),
 		20, 1000
@@ -197,6 +202,8 @@ import mods.modularmachinery.RecipeBuilder;
 			[<contenttweaker:cactus_charcoal>, <immersiveengineering:stone_decoration:8>, <contenttweaker:cactus_charcoal>],
 			[<minecraft:stained_glass:13>, <contenttweaker:cactus_charcoal>, <minecraft:stained_glass:13>]
 		]);
+		mods.mekanism.infuser.addRecipe("FUNGI", 80, <contenttweaker:cacti_foci>, <contenttweaker:fungi_cacti_foci>);
+
 		//fishy
 		recipes.addShaped("fishy_capacitor", <contenttweaker:fishy_capacitor> * 3, [
 			[<immersiveengineering:material:26>, <ore:listAllfishraw>, <ore:listAllfishraw>], 
@@ -208,26 +215,92 @@ import mods.modularmachinery.RecipeBuilder;
 			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
 			[<contenttweaker:activated_green_fish>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
 		]);
-		//diode
-		recipes.addShaped("diode1", <contenttweaker:diode1> * 2, [
-			[<contenttweaker:glowcrystal>, <contenttweaker:glass_hull>], 
-			[<contenttweaker:zinc_rod>, <contenttweaker:zinc_rod>]
-		]);
-		recipes.addShaped("diode2", <contenttweaker:diode2>, [
-			[null, <moretcon:gemelectarite>, null], 
-			[<contenttweaker:diode1>, <moretcon:gemelectarite>, <contenttweaker:diode1>], 
-			[<projectred-core:resource_item:402>, <contenttweaker:diode1>, <projectred-core:resource_item:402>]
-		]);
+		mods.mekanism.infuser.addRecipe("CHEESE", 80, <contenttweaker:fishy_capacitor>, <contenttweaker:cheesy_capacitor>);
+		
+		{//glass hull and vacuum tube
+			mods.tconstruct.Casting.addTableRecipe(
+				<contenttweaker:glass_hull>, 
+				<ore:ingotSteel>,
+				<liquid:glass>, 1000,
+				true
+			);
+			mods.thermalexpansion.InductionSmelter.addRecipe(
+				<contenttweaker:glass_hull>, 
+				<thermalfoundation:material:160>, <minecraft:glass>, 1500
+			);
+			scripts.content_machines.addAssemblerRecipe(
+				[<contenttweaker:glass_hull> * 2],
+				[<thermalfoundation:material:160>],
+				<liquid:glass> * 1000,
+				5, 16
+			);
+
+			Blueprint.removeRecipe(<immersiveengineering:material:26>);
+			Blueprint.addRecipe("components", 
+				<immersiveengineering:material:26> * 2, 
+				[
+					<contenttweaker:glass_hull>, <contenttweaker:glass_hull>, 
+					<ore:wireCopper>, <contenttweaker:zinc_wire>, <ore:wireAluminum>, 
+					<ore:stickCopper>
+				]
+			);
+			recipes.addShapeless("ia_vac_tube", <immersiveengineering:material:26>, [
+				<contenttweaker:glass_hull>, 
+				<ore:wireCopper>, <contenttweaker:zinc_wire>, <ore:wireAluminum>, 
+				<ore:stickCopper>
+			]);
+
+			
+			scripts.content_machines.addAssemblerRecipe(
+				[<immersiveengineering:material:26> * 4],
+				[<contenttweaker:glass_hull> * 4, <ore:wireCopper>, <contenttweaker:zinc_wire>, <ore:wireAluminum>],
+				null,
+				10, 128
+			);
+			
+		}
+
 		//circuit
+		scripts.content_machines.addAssemblerRecipe(
+			[<immersiveengineering:material:27> * 2],
+			[<immersiveengineering:stone_decoration:8>, <immersiveengineering:material:26> * 2],
+			<liquid:copper> * 288,
+			10, 128
+		);
 		recipes.addShapeless("ia_exotic_circuit_bp", <immersiveengineering:blueprint>.withTag({blueprint: "exotic_circuit"}), [<contenttweaker:research_circuit1>]);
 		mods.immersiveengineering.Blueprint.addRecipe("exotic_circuit", 
-			<immersiveengineering:material:27> * 2, 
+			<immersiveengineering:material:27> * 3, 
 			[
 				<contenttweaker:cacti_foci>, <contenttweaker:diode1>,
 				<contenttweaker:fishy_capacitor>, <contenttweaker:fishy_capacitor>
 			]
 		);
 	}
+
+	{//tubes
+		recipes.addShaped("ia_tube_processor1", <contenttweaker:tube_processor>, [
+			[<immersiveengineering:material:26>, <immersiveengineering:material:26>, <immersiveengineering:material:26>], 
+			[<immersiveengineering:material:26>, <immersiveengineering:material:26>, <immersiveengineering:material:26>], 
+			[<immersiveengineering:wirecoil>, <appliedenergistics2:material:23>, <immersiveengineering:wirecoil>]
+		]);
+		recipes.addShaped("ia_tube_processor2", <contenttweaker:tube_processor> * 2, [
+			[<immersiveengineering:material:26>, <immersiveengineering:material:26>, <immersiveengineering:material:26>], 
+			[<immersiveengineering:material:26>, <immersiveengineering:material:26>, <immersiveengineering:material:26>], 
+			[<immersiveengineering:wirecoil>, <prodigytech:circuit_crude> | <immersiveengineering:material:27>, <immersiveengineering:wirecoil>]
+		]);
+		
+		recipes.addShaped("ia_tube_computer1", <contenttweaker:tube_computer>, [
+			[<contenttweaker:tube_processor>, <mekanism:controlcircuit:1>, <contenttweaker:tube_processor>], 
+			[<contenttweaker:tube_processor>, <mekanism:controlcircuit:1>, <contenttweaker:tube_processor>], 
+			[<contenttweaker:mekanized_steel_plate>, <moreplates:electrotine_alloy_plate>, <contenttweaker:mekanized_steel_plate>]
+		]);
+		recipes.addShaped("ia_tube_computer2", <contenttweaker:tube_computer> * 2, [
+			[<contenttweaker:tube_processor>, <mekanism:controlcircuit:1>, <contenttweaker:tube_processor>], 
+			[<contenttweaker:tube_processor>, <mekanism:controlcircuit:1>, <contenttweaker:tube_processor>], 
+			[<contenttweaker:mekanized_steel_plate>, <contenttweaker:emolachite>, <contenttweaker:mekanized_steel_plate>]
+		]);
+	}	
+
 	//mek circuits
 	recipes.remove(<mekanism:controlcircuit:1>);
 	recipes.addShaped("ia_mek_circuit1", <mekanism:controlcircuit:1>, [
@@ -265,11 +338,23 @@ import mods.modularmachinery.RecipeBuilder;
 		[<contenttweaker:gold_wire>, <contenttweaker:soggy_wooden_board>, <contenttweaker:zinc_wire>], 
 		[null, <tconstruct:materials:10>, null]
 	]);
+	recipes.addShaped("ia_wired_wooden_board2", <contenttweaker:wired_wooden_board> * 3, [
+		[null, <contenttweaker:fluix_steel_wire>, null], 
+		[<contenttweaker:gold_wire>, <contenttweaker:soggy_wooden_board>, <contenttweaker:zinc_wire>], 
+		[null, <contenttweaker:emolachite>, null]
+	]);
+
 	recipes.addShaped("ia_advanced_circuit_plate_base", <contenttweaker:advanced_circuit_plate_base> * 2, [
 		[null, <prodigytech:circuit_plate>, null], 
 		[<appliedenergistics2:material:23>, <contenttweaker:wired_wooden_board>, <appliedenergistics2:material:23>], 
 		[<ore:itemRubber>, <contenttweaker:flolit_sheet>, <ore:itemRubber>]
 	]);
+	recipes.addShaped("ia_advanced_circuit_plate_base2", <contenttweaker:advanced_circuit_plate_base> * 4, [
+		[<appliedenergistics2:material:23>, <prodigytech:circuit_plate>, <appliedenergistics2:material:23>], 
+		[<contenttweaker:fungi_cacti_foci>, <contenttweaker:wired_wooden_board>, <contenttweaker:fungi_cacti_foci>], 
+		[<ore:itemRubber>, <contenttweaker:flolit_sheet>, <ore:itemRubber>]
+	]);
+	
 	mods.mekanism.compressor.addRecipe(
 		<contenttweaker:advanced_circuit_plate_base>,
 		<gas:sulfuricacid>, 
@@ -302,7 +387,29 @@ import mods.modularmachinery.RecipeBuilder;
 		20, 10000
 	);
 }
+{//diode
+	recipes.addShaped("diode1", <contenttweaker:diode1> * 2, [
+		[<contenttweaker:glowcrystal>, <contenttweaker:glass_hull>], 
+		[<contenttweaker:zinc_rod>, <contenttweaker:zinc_rod>]
+	]);
 
+	recipes.addShaped("diode2", <contenttweaker:diode2>, [
+		[null, <moretcon:gemelectarite>, null], 
+		[<contenttweaker:diode1>, <moretcon:gemelectarite>, <contenttweaker:diode1>], 
+		[<projectred-core:resource_item:402>, <contenttweaker:diode1>, <projectred-core:resource_item:402>]
+	]);
+	recipes.addShaped("diode21", <contenttweaker:diode2> * 2, [
+		[null, <moretcon:gemelectarite>, null], 
+		[<contenttweaker:diode1>, <moretcon:gemelectarite>, <contenttweaker:diode1>], 
+		[<projectred-core:resource_item:402>, <contenttweaker:cheesy_capacitor>, <projectred-core:resource_item:402>]
+	]);
+
+	mods.thermalexpansion.Transposer.addFillRecipe(
+		<contenttweaker:tar_light>,
+		<twilightforest:torchberries> * 16, <liquid:enriched_tar> * 1000,
+		25000
+	);
+}
 
 {//tanks
 	recipes.addShaped("ia_tank_component", <contenttweaker:tank>, [
@@ -377,9 +484,27 @@ import mods.modularmachinery.RecipeBuilder;
 	recipes.remove(<quantumflux:craftingpiece:5>);
 	recipes.addShaped("ia_advanced_circuit", <quantumflux:craftingpiece:5>, [
 		[<ore:circuitUltimate>, <prodigytech:circuit_perfected>, <ore:circuitUltimate>], 
-		[<appliedenergistics2:material:24>, <quantumflux:craftingpiece:3>, <appliedenergistics2:material:24>], 
+		[<appliedenergistics2:material:24>, <contenttweaker:tube_computer>, <appliedenergistics2:material:24>], 
 		[<ore:circuitUltimate>, <prodigytech:circuit_perfected>, <ore:circuitUltimate>]
 	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<quantumflux:craftingpiece:5> * 4],
+		[
+			<prodigytech:circuit_perfected> * 2,
+			<appliedenergistics2:material:24> * 2, 
+			<contenttweaker:tube_computer>,
+			<ore:circuitUltimate> * 4,
+			<contenttweaker:bug_chip>
+		],
+		<liquid:electric_manyullyn> * 144,
+		20, 1600
+	);
+	mods.thermalexpansion.InductionSmelter.addRecipe(
+		<contenttweaker:bug_chip>, 
+		<quantumflux:craftingpiece:5>, <contenttweaker:centipedium> * 4, 15000
+	);
+
+
 
 	recipes.remove(<quantumflux:craftingpiece>);
 	recipes.addShaped("ia_quibit", <quantumflux:craftingpiece>, [

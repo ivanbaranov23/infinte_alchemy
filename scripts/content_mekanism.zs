@@ -7,6 +7,7 @@ import mods.contenttweaker.Color;
 
 mods.mekatweaker.InfuserType.addType("GOLD");
 mods.mekatweaker.InfuserType.addType("MANA");
+mods.mekatweaker.InfuserType.addType("CHEESE");
 //todo neutronium, meat, sarahanium
 
 function addGas(name as string, color as string, needFluid as bool){
@@ -93,7 +94,7 @@ addGas("amethesting", "8e3885", true);
     explosion_stone_glue.setIconFlowing("blocks/explosion_stone_glue");
     explosion_stone_glue.register();
 }
-addGas("waste_gas", "1f1f20", true);
+addGas("waste_gas", "1f1f20", false);
 
 
 function addMetalGas(name as string, color as string){

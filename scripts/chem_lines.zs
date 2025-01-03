@@ -217,6 +217,14 @@ import mods.modularmachinery.RecipeBuilder;
     
 }
 
+{//salt
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <contenttweaker:supersalt>, 
+        <minecraft:ghast_tear> * 8, <harvestcraft:saltedcaramelitem> * 4, <liquid:hf> * 100, 
+        200, 1000
+    );
+}
+
 {//concrete
     {//leaded
         mods.thermalexpansion.Transposer.addFillRecipe(
@@ -329,7 +337,7 @@ import mods.modularmachinery.RecipeBuilder;
     }    
     
 
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [], [<liquid:concrete_reinforcer> * 1000],
         [
             <contenttweaker:naoh> * 3,
@@ -349,6 +357,33 @@ scripts.content_machines.addAdvancedMixerRecipe(
 {//pheromones
     mods.thermalexpansion.Crucible.addRecipe(<liquid:pheromones> * 1000, <erebus:materials:37>, 4000);
     mods.thermalexpansion.Imbuer.addRecipe(<liquid:refined_pheromones> * 500, <xreliquary:mob_ingredient:2>, <liquid:pheromones> * 500, 2000);
+}
+
+{//emolachite
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:emolachite> * 1000, 
+        <liquid:electrotine> * 500, <liquid:rich_malachite_solution> * 500, <mekanism:enrichedalloy> * 8, 
+        256, 20
+    );
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:emolachite> * 1000, 
+        <liquid:electrotine> * 250, <liquid:rich_malachite_solution> * 250, <contenttweaker:supersalt>, 
+        256, 20
+    );
+
+    Evaporator.addRecipe(<contenttweaker:emolachite>, <liquid:emolachite> * 1000);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:emolachite> * 3,
+        <contenttweaker:electric_manyullyn_dust>, <liquid:emolachite> * 1000,
+        1000
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:emolachite> * 3,
+        <contenttweaker:organic_glue>, <liquid:emolachite> * 1000,
+        1000
+    );
+
+    
 }
 
 
@@ -514,7 +549,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
     
 }
 {//bio fluids
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:imperomite_catalyst_dust>], [<liquid:cool_soup> * 500],
         [
             <contenttweaker:imperomite_catalyst>,
@@ -529,7 +564,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
         ],
         40, 1000
     );
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:imperomite_catalyst_dust>], [<liquid:cool_soup> * 500],
         [
             <contenttweaker:imperomite_catalyst>,
@@ -544,7 +579,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
         ],
         40, 1000
     );
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:imperomite_catalyst_dust>], [<liquid:cool_soup> * 500],
         [
             <contenttweaker:imperomite_catalyst>,
@@ -573,7 +608,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
 }
 mods.thermalexpansion.Refinery.addRecipe(<liquid:caffeine> * 200, null, <liquid:coffee> * 400, 8000);
 
-scripts.helper.scripts.content_machines.addFluidMixerRecipe(
+scripts.content_machines.addFluidMixerRecipe(
     <liquid:aqua_regia> * 1000, 
     <liquid:nitric_acid> * 500, <liquid:liquidhydrogenchloride> * 500, <exnihilocreatio:item_material:3>, 
     256, 20

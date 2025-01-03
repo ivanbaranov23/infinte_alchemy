@@ -1,0 +1,80 @@
+{
+  "path": "my_crops/plants/nettle_plant.json",
+  "enabled": true,
+  "id": "nettle",
+  "plant_name": "nettle Crop",
+  "seed_name": "nettle Seeds",
+  "seed_items": [
+    {
+      "item": "erebus:small_plant",
+      "meta": 1,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "${Name} Seeds."
+  },
+  "growth_chance": 0.9,
+  "growth_bonus": 0.025,
+  "bonemeal": true,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.0,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 1.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 3,
+        "chance": 0.9,
+        "required": true,
+        "item": "erebus:materials",
+        "meta": 30,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      },
+      {
+        "min": 1,
+        "max": 3,
+        "chance": 0.9,
+        "required": true,
+        "item": "erebus:materials",
+        "meta": 31,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 10,
+    "max_light": 16,
+    "soils": [
+      "mud"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "hash",
+    "seed_texture": "contenttweaker:blocks/nettle4",
+    "plant_textures": [
+      "contenttweaker:blocks/nettle1",
+      "contenttweaker:blocks/nettle2",
+      "contenttweaker:blocks/nettle3",
+      "contenttweaker:blocks/nettle4"
+    ]
+  }
+}

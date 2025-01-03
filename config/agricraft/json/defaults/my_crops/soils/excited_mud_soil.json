@@ -1,0 +1,18 @@
+{
+  "path": "my_crops/soils/excited_mud_soil.json",
+  "enabled": true,
+  "id": "excited_mud",
+  "name": "Excited Mud",
+  "varients": [
+    {
+      "item": "contenttweaker:excited_mud",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ]
+}

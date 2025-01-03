@@ -1,0 +1,20 @@
+{
+	x: -1.0d,
+	y: -2.0d,
+	dependencies: [
+		"ede6c34d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "bf2bc8ef",
+		type: "item",
+		items: [{
+			item: "contenttweaker:diode2"
+		}]
+	}],
+	rewards: [{
+		uid: "ec7fbf11",
+		type: "item",
+		item: "contenttweaker:diode2"
+	}]
+}

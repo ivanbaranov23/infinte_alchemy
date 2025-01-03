@@ -11,19 +11,7 @@ import mods.actuallyadditions.Empowerer;
 
 
 
-recipes.remove(<actuallyadditions:block_misc:9>);
-recipes.addShaped("ia_frame5", <actuallyadditions:block_misc:9>, [
-	[<redstonearsenal:material:128>, <ore:circuitUltimate>, <redstonearsenal:material:128>], 
-	[<contenttweaker:titanium_rod>, <mekanism:basicblock:8>, <contenttweaker:titanium_rod>], 
-	[<contenttweaker:osgloridium_plate>, <contenttweaker:gearbox_normal>, <contenttweaker:osgloridium_plate>]
-]);
 
-recipes.remove(<actuallyadditions:block_misc:8>);
-recipes.addShaped("ia_frame10", <actuallyadditions:block_misc:8>, [
-	[<extendedcrafting:material:36>, <contenttweaker:robot_arm>, <extendedcrafting:material:36>], 
-	[<biomesoplenty:terrestrial_artifact>, <enderio:item_material:54>, <biomesoplenty:terrestrial_artifact>], 
-	[<extendedcrafting:material:36>, <enderio:item_capacitor_crystalline>, <extendedcrafting:material:36>]
-]);
 
 recipes.remove(<actuallyadditions:block_canola_press>);
 recipes.addShaped("block_canola_press", <actuallyadditions:block_canola_press>, [

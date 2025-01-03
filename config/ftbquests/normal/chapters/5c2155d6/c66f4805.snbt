@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"Shear it.",
+		"",
+		"Will slowly spread around. Drops nettle leaves and flowers"
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7c9b84cd",
+		type: "item",
+		items: [{
+			item: "erebus:small_plant"
+		}]
+	}]
+}

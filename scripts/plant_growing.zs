@@ -174,7 +174,7 @@ function addGCrecipe2(tier as int,
     if (tier != 0) {rec.addEnergyPerTickInput(GCenergy[tier] * p_m);}
 
     for o in fruits{
-        for i in 0 to (tier+1){
+        for i in 0 to (tier * 2 + 1){
             rec.addItemOutput(o.stack);
             rec.setChance(o.chance);
         }

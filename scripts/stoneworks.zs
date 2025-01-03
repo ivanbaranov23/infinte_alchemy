@@ -29,29 +29,37 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
 }
 
 
-{//umber
-    <ore:stone>.remove(<erebus:umberstone>);
-    <ore:cobblestone>.remove(<erebus:umberstone:1>);
+{//erebus
+    {//umber
+        <ore:stone>.remove(<erebus:umberstone>);
+        <ore:cobblestone>.remove(<erebus:umberstone:1>);
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <erebus:umberstone>, 
+            <minecraft:stone:1>, <liquid:beetle_juice> * 100, 
+            1000
+        );
+
+        mods.exnihilocreatio.Hammer.addRecipe(<erebus:umberstone>, <erebus:umberstone:1>, 0, 1.0, 1.0);
+        mods.exnihilocreatio.Hammer.addRecipe(<erebus:umberstone:1>, <erebus:umbergravel>, 0, 1.0, 1.0);
+
+        scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone>, <erebus:umberstone:1>);
+        scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone:1>, <erebus:umbergravel>);
+
+        addCobbleRecipe(
+            <erebus:umberstone> * 16, <erebus:umberstone>, 
+            [<minecraft:stone:1> * 16], 
+            [<liquid:beetle_juice> * 1000], 
+            1, 1024, true
+        );
+    }
+
+    //mud
     mods.thermalexpansion.Transposer.addFillRecipe(
-        <erebus:umberstone>, 
-        <minecraft:stone:1>, <liquid:beetle_juice> * 100, 
+        <erebus:mud>, 
+        <biomesoplenty:mud>, <liquid:claymud> * 100, 
         1000
     );
-
-    mods.exnihilocreatio.Hammer.addRecipe(<erebus:umberstone>, <erebus:umberstone:1>, 0, 1.0, 1.0);
-    mods.exnihilocreatio.Hammer.addRecipe(<erebus:umberstone:1>, <erebus:umbergravel>, 0, 1.0, 1.0);
-
-    scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone>, <erebus:umberstone:1>);
-    scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone:1>, <erebus:umbergravel>);
-
-    addCobbleRecipe(
-        <erebus:umberstone> * 16, <erebus:umberstone>, 
-        [<minecraft:stone:1> * 16], 
-        [<liquid:beetle_juice> * 1000], 
-        1, 1024, true
-    );
 }
-
 mods.thermalexpansion.Transposer.addFillRecipe(
     <tconstruct:seared:1>, 
     <minecraft:cobblestone>, <liquid:stone> * 216, 
@@ -144,11 +152,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         <atum:khnumite_raw>, <gas:oxygen> * 50, 1000, 60
     );
 
-    recipes.addShaped("ia_mud", <biomesoplenty:mud> * 16, [
-        [<atum:coin_dirty>, <atum:coin_dirty>, <atum:coin_dirty>],
-        [<atum:coin_dirty>, <minecraft:clay>, <atum:coin_dirty>],
-        [<atum:coin_dirty>, <atum:coin_dirty>, <atum:coin_dirty>]
-    ]);
+    
     
 }
 
@@ -306,7 +310,16 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<quark:marble>]
     );
 }
-
+{//bop
+    recipes.addShaped("ia_mud", <biomesoplenty:mud> * 16, [
+        [null, <atum:coin_dirty>, null],
+        [<atum:coin_dirty>, <minecraft:clay>, <atum:coin_dirty>],
+        [null, <atum:coin_dirty>, null]
+    ]);
+    recipes.addShapeless("ia_mud_balls", <biomesoplenty:mudball> * 4,[
+        <biomesoplenty:mud>
+    ]);
+}
 
 
 {//compressed cobble

@@ -1058,6 +1058,10 @@ static all_metals as IItemStack[string][string] = {
         block: <contenttweaker:awaken_uru_block>,
         dust: <contenttweaker:awaken_uru_dust>
     },
+    atum: {
+        ingot: <contenttweaker:atum_ingot>,
+        block: <contenttweaker:atum_ingot> * 9
+    },
 
 
     draconium: {
@@ -1518,6 +1522,11 @@ static all_metals as IItemStack[string][string] = {
     },
 
     //moretcon
+    runesteel: {
+        ingot: <moretcon:ingotrunesteel>,
+        block: <moretcon:blockrunesteel>,
+        dust: <moretcon:dustrunesteel>
+    },
     hallowsite: {
         ingot: <moretcon:ingothallowsite>,
         block: <moretcon:blockhallowsite>,
@@ -1961,6 +1970,7 @@ static all_metals_molten as ILiquidStack[string] = {
     yrdeen: <liquid:yrdeen_fluid>,
     proxii: <liquid:proxii_fluid>,
 
+    runesteel: <liquid:liquidrunesteel>,
     ebonite: <liquid:liquidebonite>,
     hallowsite: <liquid:liquidhallowsite>,
     blightsteel: <liquid:liquidblightsteel>,
@@ -2038,7 +2048,9 @@ static custom_metals as string[] = [
     "arkenium", "gallium", "UU_matter",
     "black_bronze", "tinezo", "tignalum", "orichalcum",
     "gem_steel", "mirion2",
-    "caelumite"
+    "caelumite",
+
+    "runesteel"
 ];
 
 
@@ -2752,6 +2764,13 @@ add3alloy(1, "flower_steel", 4,
             <harvestcraft:extremechiliitem>,
             <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust>
         ]);
+        recipes.addShapeless("ia_excited_dust2", <contenttweaker:excited_powder> * 3, [
+            <actuallyadditions:item_dust:7>,
+            <extrautils2:ingredients:4>,
+            <harvestcraft:extremechiliitem>,
+            <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust>,
+            <contenttweaker:excited_crop>
+        ]);
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:haste_potion> * 500, <appliedenergistics2:material:2>, <liquid:potion>.withTag({Potion: "cofhcore:haste4"}) * 500, 3000);
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:speed_potion> * 500, <appliedenergistics2:material:3>, <liquid:potion>.withTag({Potion: "cofhcore:swiftness4"}) * 500, 3000);
         scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 400, 
@@ -2946,6 +2965,11 @@ addCasting(all_metals["arkenium"], all_metals_molten["arkenium"]);
 scripts.helper.addFluidAlloyerRecipe(
     all_metals.soy_steel.ingot, 
     all_metals.electric_steel.ingot * 4, all_metals.nickel.ingot * 4, <liquid:soy_milk> * 2000, 
+    512, 60
+);
+scripts.helper.addFluidAlloyerRecipe(
+    all_metals.soy_steel.ingot * 2, 
+    all_metals.electric_steel.ingot * 4, <contenttweaker:supersalt>, <liquid:soy_milk> * 2000, 
     512, 60
 );
 
@@ -3279,8 +3303,8 @@ scripts.helper.addFluidAlloyerRecipe(
         mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_gold1.ingot);
         
         add3alloy(3, "energetic_gold1", 4,
-            "gold", 16,
-            "chrome", 3,
+            "gold", 24,
+            "atum", 2,
             "energized_compound", 1
         );
     }
@@ -3290,8 +3314,8 @@ scripts.helper.addFluidAlloyerRecipe(
         mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_silver1.ingot);
         
         add3alloy(3, "energetic_silver1", 4,
-            "silver", 16,
-            "chrome", 3,
+            "silver", 24,
+            "atum", 2,
             "energized_compound", 1
         );
     }
@@ -4144,6 +4168,14 @@ recipes.addShaped("ia_neutronium_sheetmetal", <contenttweaker:neutronium_sheetme
 }
 
 {//moretcon
+    //runesteel
+    <ore:dustRunesteel>.add(<moretcon:dustrunesteel>);
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:liquidrunesteel> * 216, 
+        <liquid:ardite> * (144 * 8), <liquid:steel> * (144 * 8), <roots:runed_obsidian>, 
+        100, 256
+    );
+
     mods.thermalexpansion.InductionSmelter.addRecipe(
         <moretcon:ingotblightsteel> * 2, 
         <moretcon:ingotebonite>, <moretcon:ingothallowsite>, 

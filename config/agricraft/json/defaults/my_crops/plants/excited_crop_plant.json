@@ -1,0 +1,72 @@
+{
+  "path": "my_crops/plants/excited_crop_plant.json",
+  "enabled": true,
+  "id": "excited_crop",
+  "plant_name": "excited_crop Crop",
+  "seed_name": "excited_crop Seeds",
+  "seed_items": [
+    {
+      "item": "contenttweaker:excited_crop",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": false,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ],
+  "description": {
+    "translations": {},
+    "default": "${Name} Seeds."
+  },
+  "growth_chance": 0.9,
+  "growth_bonus": 0.025,
+  "bonemeal": true,
+  "tier": 1,
+  "weedable": false,
+  "aggressive": false,
+  "spread_chance": 0.0,
+  "spawn_chance": 0.0,
+  "grass_drop_chance": 0.0,
+  "seed_drop_chance": 1.0,
+  "seed_drop_bonus": 0.0,
+  "products": {
+    "products": [
+      {
+        "min": 1,
+        "max": 3,
+        "chance": 0.9,
+        "required": true,
+        "item": "contenttweaker:excited_crop",
+        "meta": 0,
+        "tags": "",
+        "ignoreMeta": false,
+        "ignoreTags": [],
+        "useOreDict": false
+      }
+    ]
+  },
+  "requirement": {
+    "min_light": 10,
+    "max_light": 16,
+    "soils": [
+      "excited_mud"
+    ],
+    "conditions": []
+  },
+  "texture": {
+    "render_type": "cross",
+    "seed_texture": "contenttweaker:items/excited_crop",
+    "plant_textures": [
+      "contenttweaker:items/excited_crop1",
+      "contenttweaker:items/excited_crop2",
+      "contenttweaker:items/excited_crop3",
+      "contenttweaker:items/excited_crop4",
+      "contenttweaker:items/excited_crop5",
+      "contenttweaker:items/excited_crop6",
+      "contenttweaker:items/excited_crop7",
+      "contenttweaker:items/excited_crop8"
+    ]
+  }
+}

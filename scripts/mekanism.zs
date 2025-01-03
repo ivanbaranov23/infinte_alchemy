@@ -2,13 +2,7 @@
 import mods.mekanism.infuser;
 import mods.mekanism.chemical.oxidizer;
 
-//frame
-recipes.remove(<mekanism:basicblock:8>);
-recipes.addShaped("ia_machine_frame4", <mekanism:basicblock:8>, [
-	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:eliamondin>, <contenttweaker:mekanized_steel_plate>], 
-	[<contenttweaker:atum_godshard>, <thermalexpansion:frame>, <contenttweaker:atum_godshard>], 
-	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:mekanical_core>, <contenttweaker:mekanized_steel_plate>]
-]);
+
 
 
 
@@ -34,6 +28,8 @@ mods.mekatweaker.InfuserType.addTypeObject(<aether_legacy:golden_amber>, "GOLD",
 <aether_legacy:golden_amber>.addTooltip("Gives 80 gold in metallurgic infuser.");
 
 mods.mekatweaker.InfuserType.addTypeObject(<botania:manaresource:23>, "MANA", 10);
+
+mods.mekatweaker.InfuserType.addTypeObject(<harvestcraft:cheeseitem>, "CHEESE", 10);
 
 
 
@@ -397,7 +393,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	]);
 	recipes.remove(<mekanism:basicblock:14>);
 	recipes.addShaped("ia_evaporation_controller", <mekanism:basicblock:14>, [
-		[<mekanism:basicblock2>, <alchemistry:evaporator>, <mekanism:basicblock2>], 
+		[<mekanism:basicblock2>, <quantumflux:craftingpiece:5>, <mekanism:basicblock2>], 
 		[<mekanism:electrolyticcore>, <twilightforest:tower_device:12>, <mekanism:electrolyticcore>], 
 		[<mekanism:basicblock2>, <alchemistry:evaporator>, <mekanism:basicblock2>]
 	]);

@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: -2.0d,
+	dependencies: [
+		"056de2a5"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f6c6965e",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:slimy_bone_seeds"
+		}]
+	}]
+}

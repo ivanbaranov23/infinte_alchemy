@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: 1.0d,
+	text: [
+		"Grab some for farming"
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9e793127",
+		type: "item",
+		items: [{
+			item: "erebus:mud"
+		}]
+	}]
+}

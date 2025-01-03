@@ -487,9 +487,8 @@
         [<contenttweaker:calitunti_plate>, <simplyjetpacks:metaitemmods:21>, <contenttweaker:calitunti_plate>]
     ]);
     recipes.addShaped("ia_mech_taxi", <contenttweaker:mech_taxi>, [
-        [null, <actuallyadditions:block_crystal_empowered:1>, null], 
-        [<contenttweaker:mech_taxi_wing>, <aether_legacy:valkyrie_cape>, <contenttweaker:mech_taxi_wing>], 
-        [null, <ore:blockValkyrie>, null]
+        [<contenttweaker:diode2>, <actuallyadditions:block_crystal_empowered:1>, <contenttweaker:diode2>], 
+        [<contenttweaker:mech_taxi_wing>, <aether_legacy:valkyrie_cape>, <contenttweaker:mech_taxi_wing>]
     ]);
 }
 

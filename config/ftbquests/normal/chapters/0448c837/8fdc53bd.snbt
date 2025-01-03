@@ -10,5 +10,10 @@
 		items: [{
 			item: "actuallyadditions:item_misc 1 8"
 		}]
+	}],
+	rewards: [{
+		uid: "4c4cf09f",
+		type: "item",
+		item: "actuallyadditions:item_misc 1 8"
 	}]
 }

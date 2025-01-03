@@ -41,8 +41,14 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 	Crucible.addRecipe(<liquid:oil> * 4000, <contenttweaker:reagent_oil>, 5000);
 	mods.thermalexpansion.Centrifuge.addRecipe([], <contenttweaker:reagent_oil>, <liquid:crude_oil> * 4000, 5000);
 
-	//tar -> IE oil
-	mods.immersiveengineering.Refinery.addRecipe(<liquid:oil> * 8, <liquid:tar> * 8, <liquid:coal> * 8, 400);
+	{//tar
+		mods.immersiveengineering.Refinery.addRecipe(<liquid:oil> * 24, <liquid:tar> * 8, <liquid:coal> * 8, 400);
+		scripts.content_machines.addFluidMixerRecipe(
+			<liquid:enriched_tar> * 250, 
+			<liquid:tar> * 1000, <liquid:muddy_sludge> * 1000, <contenttweaker:supersalt>, 
+			40, 500
+		);
+	}
 
 	Distillation.addRecipe(
 		[<liquid:diesel> * 50, <liquid:kerosene> * 75, <liquid:gasoline> * 25, <liquid:refined_oil> * 50], 

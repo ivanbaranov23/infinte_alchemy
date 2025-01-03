@@ -8,6 +8,8 @@ import mods.thermalexpansion.Transposer;
 import mods.thermalexpansion.Pulverizer;
 import mods.thermalexpansion.Centrifuge;
 
+import mods.modularmachinery.RecipeBuilder;
+
 function moveCookingRecipe(raw as IItemStack, cooked as IItemStack){
     furnace.remove(cooked);
     InductionSmelter.addRecipe(
@@ -231,6 +233,40 @@ Centrifuge.addRecipe(
         <harvestcraft:cuttingboarditem>.reuse(),
         <harvestcraft:toastitem>, <prodigytech:meat_patty>, <contenttweaker:msg>, <harvestcraft:ketchupitem>
     ]);
+
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:burger> * 100, <harvestcraft:deluxecheeseburgeritem>, 2000);
+
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:big_burger1>],
+        [
+            <harvestcraft:onionhamburgeritem> * 8,
+            <harvestcraft:baconcheeseburgeritem> * 8,
+            <harvestcraft:coleslawburgeritem> * 8,
+            <harvestcraft:beetburgeritem> * 8,
+            <harvestcraft:bltitem> * 8
+        ], <liquid:burger> * 1000,
+        20, 1000
+    );
+
+    {
+        var rec = RecipeBuilder.newBuilder("burger", "satellite_launch_pad", 20);
+        rec.addEnergyPerTickInput(1000000000);
+
+        rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));
+
+        rec.addItemInput(<contenttweaker:big_burger1> * 64);
+        rec.addItemInput(<harvestcraft:epicbaconitem> * 4);
+        rec.addItemInput(<contenttweaker:flesh_support>);
+        rec.addItemInput(<contenttweaker:activated_biopower> * 64);
+        rec.addFluidInput(<liquid:burger> * 25000);
+        
+        rec.addItemOutput(<contenttweaker:big_burger2>);
+        rec.addItemOutput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));
+        rec.addFluidInput(<liquid:rocket_fuel> * 10000);
+        
+
+        rec.build();
+    }
 }
 
 {//rice
@@ -636,7 +672,15 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
 recipes.remove(<harvestcraft:cornmealitem>);
 mods.thermalexpansion.Sawmill.addRecipe(
     <harvestcraft:cornmealitem>, 
-    <harvestcraft:cornitem> * 4, 1500);
+    <harvestcraft:cornitem> * 4, 1500
+);
+
+//river mud
+Transposer.addFillRecipe(
+    <harvestcraft:rivermudcakeitem>,
+    <harvestcraft:coconutitem>, <liquid:chocolate_mud> * 500,
+    1000
+);
 
 //recipes moved to machines
 recipes.remove(<harvestcraft:caramelitem>);

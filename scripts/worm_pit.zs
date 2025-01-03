@@ -132,7 +132,13 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:wormium_ingot>,
         <contenttweaker:gemmed_spice>
     ], 25000
 );
-
+recipes.addShapeless("ia_centipedium", <contenttweaker:centipedium>, [
+        <contenttweaker:wormium_ingot>, 
+        <moretcon:dustrunesteel>, 
+        <contenttweaker:ophidian_extract>, 
+        <erebus:materials:13>
+    ]
+);
 
 scripts.content_machines.addAdvancedMixerRecipe(
     [<contenttweaker:methyst_dust>], [<liquid:wormy_sand> * 1000],

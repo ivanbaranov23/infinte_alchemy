@@ -44,19 +44,12 @@
 		}]
 	},
 	{
-		uid: "fed438ee",
+		uid: "0509bce1",
 		type: "item",
 		items: [{
-			id: "forge:bucketfilled",
-			tag: {
-				FluidName: "glass",
-				Amount: 1000
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
+			item: "cathedral:cathedral_glass_stained"
 		}],
-		ignore_damage: true
+		count: 16L
 	}],
 	rewards: [{
 		uid: "d3fd432a",

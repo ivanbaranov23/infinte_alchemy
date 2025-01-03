@@ -413,6 +413,14 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
 
             <contenttweaker:flolit> % 15
         ]
+    },
+    [0, 10*1000, 20*10, 100*1000, 0, 255]: {
+        <liquid:circuit> * 100: [
+            <contenttweaker:bug_chip> % 10,
+            <contenttweaker:bug_chip> % 10,
+            <contenttweaker:bug_chip> % 10,
+            <contenttweaker:bug_chip> % 10
+        ]//250
     }
 };
 

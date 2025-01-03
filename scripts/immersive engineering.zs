@@ -12,48 +12,7 @@ Blueprint.addRecipe("molds", <contenttweaker:plate_mold>, [<contenttweaker:dural
 Blueprint.addRecipe("molds", <contenttweaker:rod_mold>, [<contenttweaker:duraluminum_plate>, <contenttweaker:duraluminum_plate>, <contenttweaker:duraluminum_plate>, <contenttweaker:duraluminum_plate>]);
 Blueprint.addRecipe("molds", <contenttweaker:gear_mold>, [<contenttweaker:duraluminum_plate>, <contenttweaker:duraluminum_plate>, <contenttweaker:duraluminum_plate>, <contenttweaker:duraluminum_plate>]);
 
-{//glass hull and vacuum tube
-	mods.tconstruct.Casting.addTableRecipe(
-		<contenttweaker:glass_hull>, 
-		<ore:ingotSteel>,
-		<liquid:glass>, 1000,
-		true
-	);
-	mods.thermalexpansion.InductionSmelter.addRecipe(
-		<contenttweaker:glass_hull>, 
-		<thermalfoundation:material:160>, <minecraft:glass>, 1500
-	);
-	scripts.content_machines.addAssemblerRecipe(
-		[<contenttweaker:glass_hull> * 2],
-		[<thermalfoundation:material:160>],
-		<liquid:glass> * 1000,
-		5, 16
-	);
 
-	Blueprint.removeRecipe(<immersiveengineering:material:26>);
-	Blueprint.addRecipe("components", 
-		<immersiveengineering:material:26> * 2, 
-		[
-			<contenttweaker:glass_hull>, <contenttweaker:glass_hull>, 
-			<ore:wireCopper>, <contenttweaker:zinc_wire>, <ore:wireAluminum>, 
-			<ore:stickCopper>
-		]
-	);
-	
-	scripts.content_machines.addAssemblerRecipe(
-		[<immersiveengineering:material:26> * 4],
-		[<contenttweaker:glass_hull> * 4, <ore:wireCopper>, <contenttweaker:zinc_wire>, <ore:wireAluminum>],
-		null,
-		10, 128
-	);
-	//circuit
-	scripts.content_machines.addAssemblerRecipe(
-		[<immersiveengineering:material:27> * 2],
-		[<immersiveengineering:stone_decoration:8>, <immersiveengineering:material:26> * 2],
-		<liquid:copper> * 288,
-		10, 128
-	);
-}
 
 //pipe
 scripts.content_machines.addAssemblerRecipe(

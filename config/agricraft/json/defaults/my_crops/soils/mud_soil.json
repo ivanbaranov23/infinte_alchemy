@@ -1,0 +1,18 @@
+{
+  "path": "my_crops/soils/mud_soil.json",
+  "enabled": true,
+  "id": "mud",
+  "name": "Erebus Mud",
+  "varients": [
+    {
+      "item": "erebus:mud",
+      "meta": 0,
+      "tags": "",
+      "ignoreMeta": true,
+      "ignoreTags": [
+        "*"
+      ],
+      "useOreDict": false
+    }
+  ]
+}

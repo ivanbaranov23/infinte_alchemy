@@ -2025,7 +2025,7 @@ tile.contenttweaker.poor_iron_ore.name=Poor Iron Ore
 
 ia.rename.galena=Galena Ore
 ia.rename.nickel_oxide=Nickel Oxide Ore
-ia.rename.mehchoch=Meh Chocolate
+ia.rename.mehchocho=Meh Chocolate
 
 ia.rename.mith_rod=Mithril Rod
 ia.rename.mith_ore=Mithril Ore
@@ -2073,3 +2073,21 @@ item.contenttweaker.evil_desert_dust.name=Evil Desert Ectoplasm
 item.contenttweaker.infinity_treat.name=Infinity Treat
 
 fluid.khnumite=Coarse Metallic Khnumite
+
+tile.contenttweaker.forest_fire.name=Forest Fey Fire
+item.contenttweaker.fungi_cacti_foci.name=Fungi Cacti Foci
+item.contenttweaker.diode2.name=Electarite Diode
+item.contenttweaker.tube_processor.name=Vacuum Tube Processor
+item.contenttweaker.tube_computer.name=Vacuum Tube Computer
+tile.contenttweaker.excited_mud.name=Excited Mud
+item.contenttweaker.excited_crop.name=Excited Crop
+item.contenttweaker.emolachite.name=Emolachite Paste
+item.contenttweaker.supersalt.name=Super Salt
+
+fluid.claymud=Clay Rich Mud
+fluid.chocolate_mud=Chocolate Mud
+fluid.emolachite=Emolachite Slurp
+
+item.contenttweaker.atum_ingot.name=Atum Godshard Ingot
+item.contenttweaker.druid_bone.name=Druid Bone
+item.contenttweaker.staffwood_fire.name=Forest Fey Fire Staff

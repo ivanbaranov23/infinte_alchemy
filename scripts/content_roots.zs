@@ -7,11 +7,15 @@ import mods.contenttweaker.ActionResult;
 import crafttweaker.entity.IEntity;
 
 import mods.contenttweaker.BlockState;
+import mods.contenttweaker.Commands;
 
 
 function compare_defs(state1 as BlockState, state2 as BlockState) as bool{
     //this is so dumb
     return state1.getBlock().definition.getStateFromMeta(0) == state2.getBlock().definition.getStateFromMeta(0);
+}
+function compare_items(item1 as IItemStack, item2 as IItemStack) as bool{
+    return (item1.definition.id == item2.definition.id) && (item1.metadata == item2.metadata);
 }
 
 
@@ -173,6 +177,12 @@ var staffwood_bug = VanillaFactory.createItem("staffwood_bug");
                     var ent = <entity:minecraft:sheep>.spawnEntity(world, player.position);
                     
                 }
+                else if (compare_items(offhand, <item:xreliquary:mob_ingredient:6>)){
+                    Commands.call("summon minecraft:zombie ~ ~ ~ {NoAI:true}", player, world, false, true);
+                } 
+                else if (compare_items(offhand, <item:xreliquary:mob_ingredient>)){
+                    Commands.call("summon minecraft:skeleton ~ ~ ~ {NoAI:true}", player, world, false, true);
+                } 
 
                 offhand.shrink(1);
                 

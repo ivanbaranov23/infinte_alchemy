@@ -16,7 +16,7 @@ function addEggHint(ent as string, drops as IItemStack[]){
 
 {//atum
     addEggHint("atum:wraith", [<atum:ectoplasm>]);
-    recipes.addShapeless("ia_evil_desert_dust", <contenttweaker:evil_desert_dust>, [
+    recipes.addShapeless("ia_evil_desert_dust", <contenttweaker:evil_desert_dust> * 2, [
         <atum:ectoplasm>,
         <contenttweaker:sphalerite_dust>,
         <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>,
@@ -280,13 +280,6 @@ function addVialProcess(entity as string, drops as IItemStack[], liquids as ILiq
     }
 }
 
-{//erebus
-    
-    
-    //addVialProcess("erebus:erebus.solifuge", [<erebus:materials:8> * 4], [], poison);
-    
-    
-}
 //nether
 addVialProcess("minecraft:blaze", [<xreliquary:mob_ingredient:7>, <minecraft:blaze_rod> * 4, <thermalfoundation:material:771> * 8], [<liquid:fiery_essence> * 100], water);
 
@@ -311,11 +304,6 @@ mods.roots.SummonCreatures.addEntity(
     <entity:primitivemobs:dodo>, // the entity to be summoned
     [<primitivemobs:dodo_egg>, <excompressum:chicken_stick>.withTag({IsAngry: 1 as byte}), <tconstruct:edible:12>] // a list of ingredients used for the summoning
 );
-/*mods.roots.SummonCreatures.addEntity(
-  <entity:primitivemobs:dodo>, // the entity to be summoned
-  [<primitivemobs:dodo_egg>, <excompressum:chicken_stick>, <tconstruct:edible:12>] // a list of ingredients used for the summoning
-);*/
-
 
 {//fish undead rising
     //shatered ice
@@ -348,13 +336,16 @@ mods.roots.SummonCreatures.addEntity(
     );
 }
 
-{//erebus
-    
-}
 
-
-
-
-
-
-
+mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 500, <liquid:water> * 500, [
+        <mysticalagriculture:slimy_bone_essence>,
+        <minecraft:gunpowder> * 8,
+        <mod_lavacow:intestine> * 4
+    ], 2000
+);
+mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 2000, <liquid:organic_green> * 2000, [
+        <mysticalagriculture:slimy_bone_essence>,
+        <minecraft:gunpowder> * 8,
+        <mod_lavacow:intestine> * 4
+    ], 2000
+);

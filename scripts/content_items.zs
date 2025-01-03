@@ -1529,6 +1529,8 @@ knife.register();
 
     VanillaFactory.createItem("wormholium").register();
 
+    VanillaFactory.createItem("centipedium").register();
+
     VanillaFactory.createItem("sick_worm").register();
 }
 
@@ -2081,6 +2083,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("diode2").register();
     VanillaFactory.createItemFood("fishy_capacitor", 4).register();
 
+    VanillaFactory.createItem("tube_processor").register();
+    VanillaFactory.createItem("tube_computer").register();
+
     VanillaFactory.createItem("creosolon").register();
     VanillaFactory.createItem("creosolon_frame").register();
     VanillaFactory.createItem("machine_frame_frame").register();
@@ -2118,6 +2123,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         bug_hill_exit3.setFullBlock(false);
         bug_hill_exit3.register();
     }
+    
     {//bughill fuels
         
     }
@@ -2153,6 +2159,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 }
 {//thermal
     VanillaFactory.createItem("excited_powder").register();
+    var excited_mud = VanillaFactory.createBlock("excited_mud", <blockmaterial:clay>);
+    excited_mud.setToolClass("shovel");
+    excited_mud.setBlockSoundType(<soundtype:ground>);
+    excited_mud.register();
+    VanillaFactory.createItem("excited_crop").register();
     VanillaFactory.createItem("sanded_rod").register();
 }
 {//atum
@@ -2223,6 +2234,26 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createFluid("blackish_slurp", Color.fromHex("202020")).register();
     VanillaFactory.createFluid("black_slurp", Color.fromHex("000000")).register();
 
+    VanillaFactory.createItem("emolachite").register();
+    VanillaFactory.createFluid("emolachite", Color.fromHex("16804c")).register();
+
+    VanillaFactory.createItem("supersalt").register();
+
+    var tar_light = VanillaFactory.createBlock("tar_light", <blockmaterial:rock>);
+    //tar_light.setFullBlock(false);
+    //tar_light.setPassable(true);
+    //tar_light.setBlockLayer("TRANSLUCENT");
+    //tar_light.setLightOpacity(0);
+    //tar_light.setTranslucent(true);
+    tar_light.lightValue = 1;
+    tar_light.register();
+
+    VanillaFactory.createItemFood("cheesy_capacitor", 5).register();
+
+    VanillaFactory.createItemFood("big_burger1", 5).register();
+    VanillaFactory.createItemFood("big_burger2", 500).register();
+    VanillaFactory.createItemFood("big_burger3", 50000).register();
+    addWater("burger");
 }
 {//twili
     var power_core = VanillaFactory.createBlock("power_core", <blockmaterial:rock>);
@@ -2534,6 +2565,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     rotor.setTranslucent(true);
     rotor.setFullBlock(false);
     rotor.register();
+
+    VanillaFactory.createItem("bug_chip").register();
 }
 {//botania
     addItem("revived_bush", "rare", 16);
@@ -2822,7 +2855,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     //addItem("infinity_treat", "epic", 64);
     {
-        var infinity_treat = VanillaFactory.createItemFood("infinity_treat", 1000);
+        var infinity_treat = VanillaFactory.createItemFood("infinity_treat", 100000);
         infinity_treat.alwaysEdible = true;
         infinity_treat.onItemFoodEaten = function(stack, world, player) {
             if (!world.isRemote())

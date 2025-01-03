@@ -82,8 +82,8 @@ static gem_solution as ILiquidStack[string] = {
     tanzanite: <liquid:tanzanite_slury>,
 };
 static gem_growing_reagent as IItemStack[] = [
-    <projectred-core:resource_item:105>,
-    <taiga:dilithium_dust>,
+    <contenttweaker:supersalt>,
+    <moretcon:dustrunesteel>,
     <thermalfoundation:material:1028>
 ];
 static gem_growing_reagent_mult as float[] = [

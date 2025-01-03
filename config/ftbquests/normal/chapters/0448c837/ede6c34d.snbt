@@ -1,0 +1,44 @@
+{
+	x: -1.0d,
+	y: -1.0d,
+	dependencies: [
+		"b1759689"
+	],
+	optional: true,
+	tasks: [{
+		uid: "812d6b36",
+		type: "item",
+		items: [{
+			item: "projectred-core:resource_item 1 400"
+		}]
+	},
+	{
+		uid: "8df3466d",
+		type: "item",
+		items: [{
+			item: "projectred-core:resource_item 1 401"
+		}]
+	},
+	{
+		uid: "f57298eb",
+		type: "item",
+		items: [{
+			item: "projectred-core:resource_item 1 402"
+		}]
+	}],
+	rewards: [{
+		uid: "dad1186f",
+		type: "item",
+		item: "projectred-core:resource_item 1 400"
+	},
+	{
+		uid: "03fbe52a",
+		type: "item",
+		item: "projectred-core:resource_item 1 401"
+	},
+	{
+		uid: "bf3d113e",
+		type: "item",
+		item: "projectred-core:resource_item 1 402"
+	}]
+}
