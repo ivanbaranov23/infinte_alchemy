@@ -323,25 +323,25 @@ recipes.addShaped("ia_hv_capacitor", <immersiveengineering:metal_device0:2>, [
 {//components
 	recipes.remove(<immersiveengineering:material:8>);
 	recipes.addShaped("ia_iron_component", <immersiveengineering:material:8> * 2, [
-		[<ore:plateIron>, null, <ore:plateIron>], 
-		[<ore:stickGold>, <contenttweaker:duraluminum_ingot>, <ore:stickLead>], 
-		[<ore:plateIron>, null, <ore:plateIron>]
+		[<ore:plateIron>, <contenttweaker:duraluminum_ingot>, <ore:plateIron>], 
+		[<ore:stickGold>, <contenttweaker:simple_motor>, <ore:stickLead>], 
+		[<ore:plateIron>, <contenttweaker:duraluminum_ingot>, <ore:plateIron>]
 	]);
 	Blueprint.removeRecipe(<immersiveengineering:material:8>);
 	Blueprint.addRecipe(
 		"components", <immersiveengineering:material:8> * 3, 
-		[<ore:plateIron>, <ore:stickGold>, <contenttweaker:duraluminum_ingot>, <ore:stickLead>]
+		[<ore:plateIron>, <ore:stickGold>, <contenttweaker:duraluminum_ingot>, <contenttweaker:simple_motor>, <ore:stickLead>]
 	);
 	recipes.remove(<immersiveengineering:material:9>);
 	recipes.addShaped("ia_steel_component", <immersiveengineering:material:9> * 2, [
-		[<ore:plateSteel>, null, <ore:plateSteel>], 
-		[<ore:stickElectrum>, <contenttweaker:duraluminum_ingot>, <contenttweaker:lesmium_rod>], 
-		[<ore:plateSteel>, null, <ore:plateSteel>]
+		[<ore:plateSteel>, <contenttweaker:duraluminum_ingot>, <ore:plateSteel>], 
+		[<ore:stickElectrum>, <contenttweaker:simple_motor>, <contenttweaker:lesmium_rod>], 
+		[<ore:plateSteel>, <contenttweaker:duraluminum_ingot>, <ore:plateSteel>]
 	]);
 	Blueprint.removeRecipe(<immersiveengineering:material:9>);
 	Blueprint.addRecipe(
 		"components", <immersiveengineering:material:9> * 3, 
-		[<ore:plateSteel>, <ore:stickElectrum>, <contenttweaker:duraluminum_ingot>, <contenttweaker:lesmium_rod>]
+		[<ore:plateSteel>, <ore:stickElectrum>, <contenttweaker:duraluminum_ingot>, <contenttweaker:simple_motor>, <contenttweaker:lesmium_rod>]
 	);
 }
 

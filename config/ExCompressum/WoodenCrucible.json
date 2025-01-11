@@ -13,10 +13,10 @@
     "__comment": "You can define additional items to melt in the Wooden Crucible here. Use * as a wildcard for metadata. Use ore: prefix in name to query the Ore Dictionary. Metadata is ignored for Ore Dictionary entries.",
     "entries": [
       {
-        "name": "",
-        "metadata": "*",
+        "name": "harvestcraft:waterchestnutitem",
+        "metadata": "0",
         "fluid": "water",
-        "amount": 0
+        "amount": 4000
       }
     ]
   },

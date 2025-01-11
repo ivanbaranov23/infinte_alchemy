@@ -1,11 +1,6 @@
 import mods.extrautils2.Resonator;
 
-//sandy glass
-recipes.remove(<extrautils2:decorativesolid:4>);
-recipes.addShapeless("sand_to_sandyglass",
-    <extrautils2:decorativesolid:4> * 2,
-    [<ore:sand>, <ore:sand>, <ore:itemFlint>, <quark:glass_shards>, <appliedenergistics2:material:3>]
-);
+
 
 {//polished stone
 	recipes.remove(<extrautils2:decorativesolid:2>);

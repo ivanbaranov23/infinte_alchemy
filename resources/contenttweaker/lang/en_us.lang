@@ -2091,3 +2091,11 @@ fluid.emolachite=Emolachite Slurp
 item.contenttweaker.atum_ingot.name=Atum Godshard Ingot
 item.contenttweaker.druid_bone.name=Druid Bone
 item.contenttweaker.staffwood_fire.name=Forest Fey Fire Staff
+
+tile.contenttweaker.meka_umbran.name=Mekanized Log
+item.contenttweaker.flight_computer.name=Flight Computer
+item.contenttweaker.light_support.name=Light Support
+item.contenttweaker.centipedium.name=Centipedium Ingot
+item.contenttweaker.cheesy_capacitor.name=Cheesy Capacitor
+item.contenttweaker.cheesy_circuit.name=Cheesy Circuit
+item.contenttweaker.bug_chip.name=Buggy Chip

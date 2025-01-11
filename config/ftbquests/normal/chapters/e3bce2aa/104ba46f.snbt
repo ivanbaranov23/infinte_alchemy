@@ -16,5 +16,10 @@
 		type: "checkmark",
 		title: "Build a base",
 		icon: "thermalfoundation:wrench"
+	}],
+	rewards: [{
+		uid: "209e324c",
+		type: "item",
+		item: "contenttweaker:quest_coin"
 	}]
 }

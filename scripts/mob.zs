@@ -66,7 +66,7 @@ function addEggHint(ent as string, drops as IItemStack[]){
         );
     }
 }
-{
+{//twilight
     addEggHint("twilightforest:skeleton_druid", [<contenttweaker:druid_bone>]);
     addEggHint("twilightforest:skeleton_druid", [<contenttweaker:lich_bone>.withLore(["Rare"])]);
     <entity:twilightforest:skeleton_druid>.addDrop(<contenttweaker:druid_bone> % 80);
@@ -104,6 +104,9 @@ scripts.content_machines.addBioAssemblerRecipeRandom(
     <thermalexpansion:machine:10>,
     10, 256
 );
+
+scripts.helper.addSimpleCrushingRecipe(<minecraft:firework_charge>, <minecraft:gunpowder>);
+
 
 <entity:twilightforest:slime_beetle>.addDrop(<contenttweaker:bug_slimeball> % 75);
 <entity:twilightforest:slime_beetle>.addDrop(<contenttweaker:bug_slimeball> % 75);

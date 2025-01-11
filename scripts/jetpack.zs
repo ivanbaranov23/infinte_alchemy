@@ -6,7 +6,11 @@ recipes.addShaped("flying_unit", <simplyjetpacks:metaitemmods:27>, [
 	[<redstonearsenal:material:128>, <actuallyadditions:item_misc:8>, <redstonearsenal:material:128>],
 	[<thermalfoundation:glass:8>, <contenttweaker:tinezo_plate>, <thermalfoundation:glass:8>]
 ]);
-
+recipes.addShaped("ia_light_support", <contenttweaker:light_support>, [
+	[<contenttweaker:caelumite_rod>, <contenttweaker:tinezo_plate>, <contenttweaker:caelumite_rod>], 
+	[<contenttweaker:tinezo_plate>, <simplyjetpacks:metaitemmods:28>, <contenttweaker:tinezo_plate>], 
+	[<contenttweaker:caelumite_rod>, <contenttweaker:tinezo_plate>, <contenttweaker:caelumite_rod>]
+]);
 
 //thermal
 recipes.remove(<simplyjetpacks:metaitemmods:20>);
@@ -45,6 +49,12 @@ scripts.helper.addCarryRecipe(<simplyjetpacks:itemjetpack:17>, <simplyjetpacks:i
 	[<thermalfoundation:material:354>, <thermalexpansion:capacitor:1>, <thermalfoundation:material:354>],
 	[<contenttweaker:tinezo_plate>, <contenttweaker:tinezo_plate>],
 	[<simplyjetpacks:metaitemmods:21>, <thermalfoundation:armor.plate_invar>, <simplyjetpacks:metaitemmods:21>]
+]);
+recipes.remove(<simplyjetpacks:itemjetpack:18>);
+scripts.helper.addCarryRecipe(<simplyjetpacks:itemjetpack:18>, <simplyjetpacks:itemjetpack:17>, [
+	[<redstonearsenal:material:224>, <thermalexpansion:capacitor:2>, <redstonearsenal:material:224>],
+	[<moretcon:blockgravitite> | <contenttweaker:gravity_ingot>, <moretcon:blockgravitite> | <contenttweaker:gravity_ingot>],
+	[<simplyjetpacks:metaitemmods:22>, <contenttweaker:light_support>, <simplyjetpacks:metaitemmods:22>]
 ]);
 
 

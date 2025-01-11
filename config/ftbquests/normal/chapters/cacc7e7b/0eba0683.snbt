@@ -1,10 +1,10 @@
 {
-	title: "Tinker Mod",
+	title: "Tinker Hammer Mod",
 	icon: "excompressum:double_compressed_diamond_hammer",
 	x: 1.5d,
 	y: 2.0d,
 	text: [
-		""
+		"Allows TiC hammers to hammer like a compressed hammer. "
 	],
 	tasks: [{
 		uid: "ba0a6395",

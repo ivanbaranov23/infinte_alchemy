@@ -317,6 +317,30 @@ addWoodInfuseForestFireJEI(<contenttweaker:excited_mud>, <erebus:mud>, [
         <contenttweaker:fertilizer4> | <mysticalagriculture:fertilized_essence>
 ]);
 
+//meka umbran
+addWoodInfuseBlueFire(
+    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=y,variant=umbran>, [
+        <betternether:cincinnasite> * 4,
+        <contenttweaker:mekanized_steel_dust> * 4,
+        <contenttweaker:simple_motor>
+], 20);
+addWoodInfuseBlueFireJEI(<contenttweaker:meka_umbran>, <biomesoplenty:log_0:6>, [
+        <betternether:cincinnasite> * 4,
+        <contenttweaker:mekanized_steel_dust> * 4,
+        <contenttweaker:simple_motor>
+]);
+addWoodInfuseForestFire(
+    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=y,variant=umbran>, [
+        <betternether:cincinnasite> * 2,
+        <contenttweaker:mekanized_steel_dust> * 2,
+        <minecraft:piston> * 2
+], 10);
+addWoodInfuseForestFireJEI(<contenttweaker:meka_umbran>, <biomesoplenty:log_0:6>, [
+        <betternether:cincinnasite> * 2,
+        <contenttweaker:mekanized_steel_dust> * 2,
+        <minecraft:piston> * 2
+]);
+
 
 
 //ores

@@ -1,6 +1,6 @@
 {
 	title: "Welcome to Infinite Alchemy",
-	x: -6.5d,
+	x: -7.5d,
 	y: -1.0d,
 	shape: "square",
 	text: [

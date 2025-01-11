@@ -280,25 +280,11 @@ recipes.addShaped("ia_rainbow_crystal_cluster", <contenttweaker:rainbow_crystal_
 ]);
 
 
-recipes.addShaped("ia_mekanical_core1", <contenttweaker:mekanical_core>, [
+/*recipes.addShaped("ia_mekanical_core1", <contenttweaker:mekanical_core>, [
 	[<ore:gearSignalum>, <ore:dustMana>], 
 	[<ore:plateOsmium>, <ore:plateOsmium>], 
 	[<thermalfoundation:material:514>, <ore:gearSignalum>]
-]);
-recipes.addShaped("ia_mekanical_core2", <contenttweaker:mekanical_core> * 4, [
-	[<ore:gearSignalum>, <ore:dustMana>], 
-	[<contenttweaker:mekanized_steel_plate>, <contenttweaker:mekanized_steel_plate>], 
-	[<thermalfoundation:material:514>, <ore:gearSignalum>]
-]);
-scripts.content_machines.addAssemblerRecipe(
-    [<contenttweaker:mekanical_core> * 6],
-    [
-        <thermalfoundation:material:514>,
-        <ore:gearSignalum> * 2,
-        <ore:dustMana> * 2
-    ], <liquid:mekanized_steel> * 576, 
-    20, 256
-);
+]);*/
 
 
 recipes.addShaped("ia_stone_idol", <contenttweaker:stone_idol>, [

@@ -278,6 +278,8 @@ function addAtomicResource(name as string){
     VanillaFactory.createFluid("speed_potion", Color.fromHex("637c88")).register();
     VanillaFactory.createFluid("mekanization_catalyst", Color.fromHex("ad0000")).register();
 
+    VanillaFactory.createBlock("meka_umbran", <blockmaterial:rock>).register();
+
     //relic
     VanillaFactory.createItem("relic_ingot").register();
     VanillaFactory.createItem("relic_nugget").register();
@@ -384,6 +386,9 @@ function addAtomicResource(name as string){
     rainbow_crystal_cluster.glowing = true;
     rainbow_crystal_cluster.rarity = "rare";
     rainbow_crystal_cluster.register();
+
+    VanillaFactory.createItem("gravity_ingot").register();
+    VanillaFactory.createItem("gravity_dust").register();
 
     VanillaFactory.createItem("arkenium_pieces").register();
     VanillaFactory.createItem("arkenium_chunk").register();
@@ -591,6 +596,7 @@ function addAtomicResource(name as string){
     caelumite_block.lightValue = 1;
     caelumite_block.register();
     VanillaFactory.createItem("caelumite_dust").register();
+    VanillaFactory.createItem("light_support").register();
 
     VanillaFactory.createItem("biotite_dust").register();
     VanillaFactory.createItem("biotite_dirty_dust").register();
@@ -1340,6 +1346,7 @@ function add_mech_part(name as string){
 
         VanillaFactory.createItem("robot_brain").register();
     }
+    VanillaFactory.createItem("flight_computer").register();
     VanillaFactory.createItem("mech_taxi_wing").register();
     VanillaFactory.createItem("mech_taxi").register();
 
@@ -2254,6 +2261,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItemFood("big_burger2", 500).register();
     VanillaFactory.createItemFood("big_burger3", 50000).register();
     addWater("burger");
+
+    VanillaFactory.createItemFood("cheesy_circuit", 20).register();
+    VanillaFactory.createItem("gold_circuit").register();
 }
 {//twili
     var power_core = VanillaFactory.createBlock("power_core", <blockmaterial:rock>);
@@ -2795,6 +2805,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         dark_catalyst.flowingLocation = 'contenttweaker:fluids/dark_catalyst';
         dark_catalyst.register();
     }
+
+    VanillaFactory.createBlock("mana_pipe", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("electric_core", <blockmaterial:rock>).register();
+    //VanillaFactory.createBlock("manapearl_block", <blockmaterial:rock>).register();
 }
 {//draconic
     VanillaFactory.createItem("electron").register();

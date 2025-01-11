@@ -3046,6 +3046,27 @@ scripts.helper.addFluidAlloyerRecipe(
     );
 }
 
+{//gravity
+    TEAlloyer.addRecipe(
+        <contenttweaker:gravity_dust>, 
+        <aether_legacy:enchanted_gravitite>,
+        <moretcon:ingotgravitonium> * 2,
+        16000
+    );
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:gravity_dust> * 2, 
+        [
+            <aether_legacy:enchanted_gravitite>,
+            <moretcon:ingotgravitonium> * 2,
+            <contenttweaker:caelumite_ingot> * 2
+        ], 20000
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:gravity_ingot>, 
+        <contenttweaker:gravity_dust>, 
+        <liquid:potion>.withTag({Potion: "extrautils2:xu2.gravity"}) * 500, 10000
+    );
+}
+
 {////////////////enderio alloys
     {//illagerite
         mods.thermalexpansion.Imbuer.addRecipe(

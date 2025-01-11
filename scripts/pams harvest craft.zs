@@ -615,10 +615,10 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         [<minecraft:bucket>, <alchemistry:condensed_milk>, <mekanism:salt>, <harvestcraft:lemonaideitem>]
     );
 
-    Mixer.addRecipe(<liquid:cheese> * 4000, <liquid:milk> * 4000, 
+    Mixer.addRecipe(<liquid:cheese> * 2000, <liquid:milk> * 2000, 
         [<mekanism:salt>, <harvestcraft:lemonaideitem>], 1000
     );
-    Mixer.addRecipe(<liquid:cheese> * 4000, <liquid:soy_milk> * 4000, 
+    Mixer.addRecipe(<liquid:cheese> * 3000, <liquid:soy_milk> * 3000, 
         [<mekanism:salt>, <harvestcraft:lemonaideitem>], 1000
     );
 

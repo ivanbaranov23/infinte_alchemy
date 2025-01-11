@@ -1,6 +1,16 @@
 import crafttweaker.item.IItemStack;
 import mods.modularmachinery.RecipeBuilder;
 
+
+recipes.addShaped("ia_red_flower", <minecraft:red_flower> * 2, [
+    [<minecraft:dye:15>, <minecraft:tallgrass:1>, <minecraft:dye:15>]
+]);
+recipes.addShaped("ia_yellow_flower", <minecraft:yellow_flower> * 2, [
+    [<minecraft:dye:15>],
+    [<minecraft:tallgrass:1>],
+    [<minecraft:dye:15>]
+]);
+
 {//glass
     {    
         var rec = RecipeBuilder.newBuilder("glass", "tree_powered_compressor", 40);
@@ -42,10 +52,10 @@ mods.exnihilocreatio.Hammer*/
 
 //andesite magma
 recipes.addShapeless("orslime", <minecraft:magma_cream>, [<tconstruct:edible:4>, <tconstruct:edible:4>, <ore:slimeball>]);
-mods.tconstruct.Alloy.addRecipe(<liquid:andesite_magma> * 250, [<liquid:andesite> * 250, <liquid:magma_fluid> * 250, <liquid:sky_stone> * 36]);
+mods.tconstruct.Alloy.addRecipe(<liquid:andesite_magma> * 250, [<liquid:andesite> * 250, <liquid:magma_fluid> * 288, <liquid:sky_stone> * 36]);
 scripts.content_machines.addFluidMixerRecipe(
     <liquid:andesite_magma> * 250, 
-    <liquid:andesite> * 250, <liquid:magma_fluid> * 250, <appliedenergistics2:material:45>, 
+    <liquid:andesite> * 250, <liquid:magma_fluid> * 288, <appliedenergistics2:material:45>, 
     20, 100
 );
 //pilkeum
@@ -57,6 +67,9 @@ recipes.addShapeless("pilkeum", <contenttweaker:pilkeum> * 2, [
     <contenttweaker:weak_enhancer>
 ]);
 mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2050);
+mods.thermalexpansion.Crucible.addRecipe(
+	<liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2000
+);
 
 //cactus
 mods.immersiveengineering.BlastFurnace.addRecipe(

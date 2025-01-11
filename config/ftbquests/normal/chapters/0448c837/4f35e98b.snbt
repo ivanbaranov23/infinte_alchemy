@@ -1,0 +1,21 @@
+{
+	x: 7.0d,
+	y: 2.0d,
+	dependencies: [
+		"8fdc53bd"
+	],
+	optional: true,
+	tasks: [{
+		uid: "98ed5064",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_battery"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "4b2d7f6d",
+		type: "item",
+		item: "actuallyadditions:item_battery"
+	}]
+}

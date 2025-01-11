@@ -635,7 +635,7 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
 {//pilkon
     mods.roots.Fey.addRecipe("pilkon", <contenttweaker:pilkon>.withTag({
             food: 10,
-            lifespan: 10
+            lifespan: 25
         }), [
         <contenttweaker:pilkeum>, <contenttweaker:pilkeum>, <contenttweaker:pilkeum>,
         <contenttweaker:singularity_dust>, <roots:wildwood_log>

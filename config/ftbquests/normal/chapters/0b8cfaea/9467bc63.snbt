@@ -1,0 +1,23 @@
+{
+	x: -5.5d,
+	y: -2.0d,
+	text: [
+		"Put dust block into a water barrel."
+	],
+	dependencies: [
+		"2ecdc636"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ca1266e5",
+		type: "item",
+		items: [{
+			item: "minecraft:clay"
+		}]
+	}],
+	rewards: [{
+		uid: "20d56dd8",
+		type: "item",
+		item: "tconstruct:dried_clay"
+	}]
+}

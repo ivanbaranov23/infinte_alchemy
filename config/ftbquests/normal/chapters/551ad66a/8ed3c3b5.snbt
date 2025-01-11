@@ -1,0 +1,15 @@
+{
+	x: 9.0d,
+	y: 2.0d,
+	dependencies: [
+		"cb68303e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c4b3d6c9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bonsai_sapling"
+		}]
+	}]
+}

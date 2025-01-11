@@ -1,5 +1,22 @@
 {
     "rules":[
+        {"match": {"blocks": {"blocks": ["minecraft:glass:0"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "item": {
+                        "items": [
+                            "quark:glass_shards"
+                        ],
+                        "quantity": {
+                            "min": 1,
+                            "max": 4
+                        }
+                    }
+                }
+            ]
+        },
+
         {"match": {"drops": {"drops": ["contenttweaker:treasure_block"]}},
             "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
             "drops": [

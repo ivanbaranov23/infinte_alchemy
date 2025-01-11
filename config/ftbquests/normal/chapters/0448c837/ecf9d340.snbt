@@ -1,0 +1,29 @@
+{
+	x: 7.0d,
+	y: 3.0d,
+	dependencies: [
+		"4f35e98b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ddc1c83c",
+		type: "item",
+		items: [{
+			id: "actuallyadditions:item_battery_quintuple",
+			tag: {
+				Energy: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a24ba5ee",
+		type: "item",
+		item: {
+			id: "actuallyadditions:item_battery_quintuple",
+			tag: {
+				Energy: 0
+			}
+		}
+	}]
+}

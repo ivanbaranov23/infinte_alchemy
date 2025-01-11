@@ -481,13 +481,19 @@
 //mech planes
 
 {//taxi
+    recipes.addShaped("ia_flight_computer", <contenttweaker:flight_computer>, [
+        [<actuallyadditions:block_crystal_empowered:1>, <aether_legacy:enchanted_gravitite>, <actuallyadditions:block_crystal_empowered:1>], 
+        [<contenttweaker:tinezo_plate>, <simplyjetpacks:metaitemmods:28>, <contenttweaker:tinezo_plate>], 
+        [<quantumflux:craftingpiece:5>, <aether_legacy:enchanted_gravitite>, <quantumflux:craftingpiece:5>]
+    ]);
     recipes.addShaped("ia_mech_taxi_wing", <contenttweaker:mech_taxi_wing>, [
         [null, <ore:ingotValkyrie>, <ore:ingotValkyrie>], 
         [<ore:ingotValkyrie>, <ore:ingotValkyrie>, <ore:plateKnightslime>], 
         [<contenttweaker:calitunti_plate>, <simplyjetpacks:metaitemmods:21>, <contenttweaker:calitunti_plate>]
     ]);
     recipes.addShaped("ia_mech_taxi", <contenttweaker:mech_taxi>, [
-        [<contenttweaker:diode2>, <actuallyadditions:block_crystal_empowered:1>, <contenttweaker:diode2>], 
+        [null, <contenttweaker:flight_computer>, null],
+        [<contenttweaker:diode2>, <actuallyadditions:item_battery_quintuple>, <contenttweaker:diode2>], 
         [<contenttweaker:mech_taxi_wing>, <aether_legacy:valkyrie_cape>, <contenttweaker:mech_taxi_wing>]
     ]);
 }

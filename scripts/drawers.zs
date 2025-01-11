@@ -52,6 +52,11 @@ recipes.addShaped("ia_drawer_upgrade_void", <storagedrawers:upgrade_void> * 2, [
 	[<ore:dustObsidian>, <storagedrawers:upgrade_template>, <ore:dustObsidian>], 
 	[<roots:runed_obsidian>, <ore:dustObsidian>, <roots:runed_obsidian>]
 ]);
+recipes.addShaped("ia_drawer_upgrade_void2", <storagedrawers:upgrade_void>, [
+	[<roots:runed_obsidian>, <ore:dustObsidian>, <roots:runed_obsidian>], 
+	[<ore:dustObsidian>, <extendedcrafting:singularity_custom:3>, <ore:dustObsidian>], 
+	[<roots:runed_obsidian>, <ore:dustObsidian>, <roots:runed_obsidian>]
+]);
 
 
 recipes.remove(<fluiddrawers:tank>);

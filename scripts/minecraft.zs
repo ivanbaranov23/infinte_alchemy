@@ -60,27 +60,7 @@ recipes.addShaped("ia_brewing_stand", <minecraft:brewing_stand>, [
 	]);
 }
 
-//glass
-furnace.remove(<minecraft:glass>);
-recipes.remove(<minecraft:glass>);
 
-mods.thermalexpansion.Transposer.addFillRecipe(
-	<minecraft:glass> * 4, 
-	<thermalfoundation:material:1024>, <liquid:sand> * 250, 
-	3000
-);
-
-furnace.remove(<betternether:quartz_glass>);
-recipes.addShaped("ia_quartz_glass1", <betternether:quartz_glass>, [
-	[null, <ore:crystalPureNetherQuartz>, <quark:glass_shards>], 
-	[<ore:crystalPureNetherQuartz>, <thermalfoundation:glass:2>, <ore:crystalPureNetherQuartz>], 
-	[<quark:glass_shards>, <ore:crystalPureNetherQuartz>, null]
-]);
-recipes.addShaped("ia_quartz_glass2", <betternether:quartz_glass> * 3, [
-	[<contenttweaker:research_glass_making>.reuse(), <ore:crystalPureCertusQuartz>, <quark:glass_shards>], 
-	[<ore:crystalPureNetherQuartz>, <thermalfoundation:glass:2>, <ore:crystalPureNetherQuartz>], 
-	[<quark:glass_shards>, <ore:crystalPureCertusQuartz>, null]
-]);
 
 //glowstone
 recipes.addShapeless("glow_uncompr", <minecraft:glowstone_dust> * 4, [<minecraft:glowstone>]);

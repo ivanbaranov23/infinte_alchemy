@@ -42,6 +42,10 @@ infuser.addRecipe("GOLD", 20, <contenttweaker:soot>, <contenttweaker:gilded_soot
 recipes.remove(<quantumflux:craftingpiece:1>);
 infuser.addRecipe("GOLD", 500, <bigreactors:reactorcasingcores>, <quantumflux:craftingpiece:1>);
 
+//alloy
+infuser.removeRecipe(<mekanism:enrichedalloy>);
+infuser.addRecipe("REDSTONE", 40, <thermalfoundation:material:354>, <mekanism:enrichedalloy>);
+
 //gases
 mods.mekanism.chemical.infuser.addRecipe(<gas:nitrogen> * 2, <gas:hydrogen> * 3, <gas:ammonia> * 2);
 

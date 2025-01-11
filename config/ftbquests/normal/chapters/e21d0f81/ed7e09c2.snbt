@@ -1,0 +1,21 @@
+{
+	x: -1.0d,
+	y: -1.0d,
+	text: [
+		"quicksand lakes can be found below y=50"
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7fe9400b",
+		type: "checkmark",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "sand"
+			}
+		}
+	}]
+}
