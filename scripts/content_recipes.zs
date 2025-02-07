@@ -294,13 +294,6 @@ recipes.addShaped("ia_stone_idol", <contenttweaker:stone_idol>, [
 ]);
 
 
-/*todo radition protection plating
-mods.extendedcrafting.TableCrafting.addShaped(0, <>, [
-	[null, <ore:plateLead>, <contenttweaker:malachite_monocrystal>], 
-	[<ore:plateLead>, <contenttweaker:irradiated_compound>, <contenttweaker:titanium_plate>], 
-	[<contenttweaker:malachite_monocrystal>, <contenttweaker:titanium_plate>, null]
-]);
-*/
 
 {//silicon
     scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 100, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <appliedenergistics2:material:5>, 128, 40);
@@ -346,11 +339,7 @@ scripts.helper.addFluidMixerRecipe(<liquid:sea_water> * 1000,
 
 
 
-scripts.helper.addFluidAlloyerRecipe(
-    <contenttweaker:irradiated_compound>, 
-    <immersiveengineering:metal:5> * 2, <bigreactors:ingotyellorium>, <liquid:emerald> * 2000, 
-    128, 40
-);
+
 scripts.helper.addFluidAlloyerRecipe(
     <contenttweaker:medical_alloy_ingot> * 3,
     <contenttweaker:titanium_ingot>, <contenttweaker:angel_ingot> * 8, <liquid:sterile_water> * 1000,

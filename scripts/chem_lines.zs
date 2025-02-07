@@ -224,6 +224,12 @@ import mods.modularmachinery.RecipeBuilder;
         200, 1000
     );
 }
+{//lithium
+    mods.mekanism.reaction.addRecipe(
+        <mekanism:otherdust:4> * 3, <liquid:sand> * 250, <gas:deuterium> * 1000, 
+        <taiga:dilithium_crystal>, <gas:tritium> * 1000, 1000, 20
+    );
+}
 
 {//concrete
     {//leaded
@@ -255,7 +261,7 @@ import mods.modularmachinery.RecipeBuilder;
             [<ore:stickEnderium>, <actuallyadditions:item_crystal_empowered:5>, <ore:stickEnderium>], 
             [<immersiveengineering:stone_decoration:7>, <appliedenergistics2:smooth_sky_stone_block>, <immersiveengineering:stone_decoration:7>]
         ]);
-    scripts.content_machines.addAdvancedMixerRecipe(
+        scripts.content_machines.addAdvancedMixerRecipe(
             [<engineersdecor:rebar_concrete> * 4], [],
             [
                 <appliedenergistics2:smooth_sky_stone_block> * 4,
@@ -359,32 +365,7 @@ import mods.modularmachinery.RecipeBuilder;
     mods.thermalexpansion.Imbuer.addRecipe(<liquid:refined_pheromones> * 500, <xreliquary:mob_ingredient:2>, <liquid:pheromones> * 500, 2000);
 }
 
-{//emolachite
-    scripts.content_machines.addFluidMixerRecipe(
-        <liquid:emolachite> * 1000, 
-        <liquid:electrotine> * 500, <liquid:rich_malachite_solution> * 500, <mekanism:enrichedalloy> * 8, 
-        256, 20
-    );
-    scripts.content_machines.addFluidMixerRecipe(
-        <liquid:emolachite> * 1000, 
-        <liquid:electrotine> * 250, <liquid:rich_malachite_solution> * 250, <contenttweaker:supersalt>, 
-        256, 20
-    );
 
-    Evaporator.addRecipe(<contenttweaker:emolachite>, <liquid:emolachite> * 1000);
-    mods.thermalexpansion.Transposer.addFillRecipe(
-        <contenttweaker:emolachite> * 3,
-        <contenttweaker:electric_manyullyn_dust>, <liquid:emolachite> * 1000,
-        1000
-    );
-    mods.thermalexpansion.Transposer.addFillRecipe(
-        <contenttweaker:emolachite> * 3,
-        <contenttweaker:organic_glue>, <liquid:emolachite> * 1000,
-        1000
-    );
-
-    
-}
 
 
 
@@ -820,6 +801,17 @@ scripts.content_machines.addFluidMixerRecipe(
     mods.mekanism.compressor.addRecipe(<mekanism:shard>, <gas:black_slurp>, <exnihilocreatio:item_ore_tungsten>);
     mods.mekanism.compressor.addRecipe(<mekores:mekanismore:11>, <gas:black_slurp>, <exnihilocreatio:item_ore_tungsten>);
     mods.mekanism.compressor.addRecipe(<mekores:mekanismore:36>, <gas:black_slurp>, <exnihilocreatio:item_ore_tungsten>);
+}
+{//uranium
+    scripts.helper.addFluidAlloyerRecipe(
+        <contenttweaker:irradiated_compound>, 
+        <immersiveengineering:metal:5> * 2, <bigreactors:ingotyellorium>, <liquid:emerald> * 2000, 
+        128, 40
+    );
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+		<contenttweaker:banana>, 
+		<contenttweaker:irradiated_compound>, <harvestcraft:bananaitem>, 50000
+	);
 }
 
 {//eliamondin
@@ -1431,49 +1423,49 @@ scripts.content_machines.addFluidMixerRecipe(
 
 {//indium
     //indium mixture
-scripts.content_machines.addAdvancedMixerRecipe(
-        [],
-        [<liquid:indium_mixture> * 250],
-        [
-            <contenttweaker:sphalerite_dust>,
-            <contenttweaker:galena_dust>
-        ], [
-            <liquid:ore_make> * 1000,
-            <liquid:high_heat_lava> * 100
-        ],
-        40, 10000
-    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+            [],
+            [<liquid:indium_mixture> * 250],
+            [
+                <contenttweaker:sphalerite_dust>,
+                <contenttweaker:galena_dust>
+            ], [
+                <liquid:ore_make> * 1000,
+                <liquid:high_heat_lava> * 100
+            ],
+            40, 10000
+        );
 
-    mods.thermalexpansion.Transposer.addFillRecipe(
-        <contenttweaker:indium_mixture>, 
-        <thermalfoundation:material:1025>, 
-        <liquid:indium_mixture> * 1500, 10000
-    );
-    mods.thermalexpansion.Transposer.addFillRecipe(
-        <contenttweaker:indium_mixture>, 
-        <contenttweaker:ice_shard>, 
-        <liquid:indium_mixture> * 1000, 10000
-    );
-    scripts.content_machines.basicFluidMixerRecipe(
-        <contenttweaker:indium_mixture>, null, 
-        null, [<liquid:indium_mixture> * 750, <liquid:cold_liquid> * 40], 40, 500
-    );
-    
-    //indium oxide mixture
-    mods.thermalexpansion.InductionSmelter.addRecipe(
-        <contenttweaker:tank>, 
-        <contenttweaker:tank_oxygen>, <contenttweaker:indium_mixture>, 
-        20000, 
-        <contenttweaker:indium_oxides>,
-        80
-    );
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <contenttweaker:indium_mixture>, 
+            <thermalfoundation:material:1025>, 
+            <liquid:indium_mixture> * 1500, 10000
+        );
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <contenttweaker:indium_mixture>, 
+            <contenttweaker:ice_shard>, 
+            <liquid:indium_mixture> * 1000, 10000
+        );
+        scripts.content_machines.basicFluidMixerRecipe(
+            <contenttweaker:indium_mixture>, null, 
+            null, [<liquid:indium_mixture> * 750, <liquid:cold_liquid> * 40], 40, 500
+        );
+        
+        //indium oxide mixture
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <contenttweaker:tank>, 
+            <contenttweaker:tank_oxygen>, <contenttweaker:indium_mixture>, 
+            20000, 
+            <contenttweaker:indium_oxides>,
+            80
+        );
 
 
-    //+HCl -> salty metallic solution
-    mods.thermalexpansion.Imbuer.addRecipe(<liquid:indium_leach> * (1000), <contenttweaker:indium_oxides>, <liquid:aqua_regia> * 1000, 30000);
+        //+HCl -> salty metallic solution
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:indium_leach> * (1000), <contenttweaker:indium_oxides>, <liquid:aqua_regia> * 1000, 30000);
 
-    //+NaOH -> Pb + Zn + Salty Indium Hydroxide Sol
-scripts.content_machines.addAdvancedMixerRecipe(
+        //+NaOH -> Pb + Zn + Salty Indium Hydroxide Sol
+    scripts.content_machines.addAdvancedMixerRecipe(
         [
             <mekanism:dirtydust:6>,
             <mekores:mekanismore:113>
@@ -1526,7 +1518,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
 }
 
 {//desert blood
-scripts.content_machines.addAdvancedMixerRecipe(
+    scripts.content_machines.addAdvancedMixerRecipe(
         [],
         [<liquid:desert_soup> * 500],
         [

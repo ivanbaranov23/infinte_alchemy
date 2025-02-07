@@ -1,5 +1,5 @@
 {
-	x: 4.0d,
+	x: 5.0d,
 	y: 2.0d,
 	text: [
 		"Helpful guide for building. Use buttons on the block to configure, apply redstone to activate, press with block to auto build."

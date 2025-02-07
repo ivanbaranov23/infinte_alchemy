@@ -101,10 +101,10 @@ import mods.mekanism.infuser;
 
 
 {//aa coils
-	recipes.addShapeless("ia_coil_core1_1", <contenttweaker:coil_core1> * 2, [<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, <thermalfoundation:material:515>, <immersiveengineering:wirecoil:2>, <contenttweaker:platinum_wire>]);
-	recipes.addShapeless("ia_coil_core1_2", <contenttweaker:coil_core1> * 3, [<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, <thermalfoundation:material:515>, <immersiveengineering:wirecoil:2>, <contenttweaker:platinum_wire>, <contenttweaker:insulation_strand>]);
+	recipes.addShapeless("ia_coil_core1_1", <contenttweaker:coil_core1> * 1, [<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, <thermalfoundation:material:515>, <immersiveengineering:wirecoil:2>, <contenttweaker:platinum_wire>]);
+	recipes.addShapeless("ia_coil_core1_2", <contenttweaker:coil_core1> * 2, [<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, <thermalfoundation:material:515>, <immersiveengineering:wirecoil:2>, <contenttweaker:platinum_wire>, <contenttweaker:insulation_strand>]);
 	scripts.content_machines.addAssemblerRecipe(
-		[<contenttweaker:coil_core1> * 4], [
+		[<contenttweaker:coil_core1> * 3], [
 			<contenttweaker:black_bronze_rod>, <contenttweaker:tunril_rod>, <moreplates:lumium_stick>, 
 			<thermalfoundation:material:515>, 
 			<contenttweaker:platinum_wire>, 
@@ -189,6 +189,10 @@ import mods.mekanism.infuser;
 		], 100000
 	);
 	recipes.addShapeless("ia_laser_mirror", <contenttweaker:laser_mirror>, [<solarflux:photovoltaic_cell_1>, <contenttweaker:osmiridium_support>, <contenttweaker:tunril_plate>, <contenttweaker:superglue>]);
+	recipes.addShapeless("ia_laser_mirror2", <contenttweaker:laser_mirror>, [
+		<solarflux:photovoltaic_cell_1>, <contenttweaker:osmiridium_support>, <contenttweaker:tunril_plate>,
+		<contenttweaker:elastic_clay>, <contenttweaker:wine_diamond>
+	]);
 }
 
 
@@ -215,7 +219,7 @@ import mods.mekanism.infuser;
 			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
 			[<contenttweaker:activated_green_fish>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
 		]);
-		mods.mekanism.infuser.addRecipe("CHEESE", 80, <contenttweaker:fishy_capacitor>, <contenttweaker:cheesy_capacitor>);
+		mods.mekanism.infuser.addRecipe("CHEESE", 160, <contenttweaker:fishy_capacitor> * 2, <contenttweaker:cheesy_capacitor>);
 		
 		{//glass hull and vacuum tube
 			mods.tconstruct.Casting.addTableRecipe(
@@ -1465,7 +1469,7 @@ mods.mekanism.reaction.addRecipe(
 		[
 			<mekanism:basicblock:8>,
 			<quantumflux:craftingpiece:2> * 2,
-			<mekanism:controlcircuit:3>,
+			<quantumflux:craftingpiece:5>,
 			<actuallyadditions:item_crystal_empowered> * 6
 		],
 		null,

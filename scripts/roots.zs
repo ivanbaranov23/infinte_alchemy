@@ -169,6 +169,7 @@ Fey.removeRecipe(<roots:runestone>);
 Fey.addRecipe("ia_runestone", <roots:runestone> * 4, 
     [<prodigytech:charred_stone>, <prodigytech:charred_stone>, <prodigytech:charred_stone>,<roots:cloud_berry>, <roots:pereskia>]
 );
+scripts.helper.addSimpleCrushingRecipe(<roots:runestone>, <roots:runic_dust>);
 
 Fey.removeRecipe(<roots:elemental_soil>);
 Fey.addRecipe("ia_elemental_soil", <roots:elemental_soil> * 4, 

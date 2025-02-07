@@ -1,0 +1,51 @@
+{
+	icon: "mekanismgenerators:reactor",
+	x: -1.0d,
+	y: -3.0d,
+	dependencies: [
+		"0d785587"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9ff16563",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor"
+		}]
+	},
+	{
+		uid: "5b2d30e8",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor 1 1"
+		}]
+	},
+	{
+		uid: "24a5f561",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactorglass"
+		}]
+	},
+	{
+		uid: "a75f91b2",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactorglass 1 1"
+		}]
+	},
+	{
+		uid: "36315936",
+		type: "item",
+		items: [{
+			item: "mekanism:machineblock2 1 13"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "532cd3c8",
+		type: "item",
+		item: "mekanismgenerators:reactor 1 1",
+		count: 4
+	}]
+}

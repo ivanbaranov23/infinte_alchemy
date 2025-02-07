@@ -1,0 +1,19 @@
+{
+    "registryname": "stabilizer2",
+    "localizedname": "Super Stabilizer2",
+    "color": "000000",
+    "parts": [
+        {
+            "x": 6,
+            "y": 0,
+            "z": 2,
+            "nbt": {
+                
+                "activeRecipe":{"recipeName":"modularmachinery:1_sub_0"}
+            },
+            "elements": [
+                "modularcontroller:stabilizer_controller@3"
+            ]
+        }
+    ]
+}

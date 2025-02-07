@@ -286,6 +286,9 @@ Centrifuge.addRecipe(
         [<actuallyadditions:item_misc:9>, <liquid:water> * 1000, <actuallyadditions:item_misc:9>],
         [null, <actuallyadditions:item_misc:9>, null]
     ]);
+    recipes.addShapeless("ia_rice_ball2", <actuallyadditions:item_misc:12>, [
+        <actuallyadditions:item_misc:9>, <harvestcraft:freshwateritem>
+    ]);
 }
 
 {//dough uses

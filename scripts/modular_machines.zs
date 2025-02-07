@@ -134,9 +134,9 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
 
 {//others
     recipes.addShaped("mm_heat_input", <modulardiversity:blockhotairinputhatch>, [
-        [<modularmachinery:itemmodularium>, <prodigytech:circuit_perfected>, <modularmachinery:itemmodularium>], 
-        [<ore:blockZorrasteel>, <modularmachinery:blockcasing>, <ore:blockZorrasteel>], 
-        [<modularmachinery:itemmodularium>, <prodigytech:capacitor_charger>, <modularmachinery:itemmodularium>]
+        [<contenttweaker:basic_modularium>, <prodigytech:circuit_perfected>, <contenttweaker:basic_modularium>], 
+        [<contenttweaker:basic_modularium>, <modularmachinery:blockcasing>, <contenttweaker:basic_modularium>], 
+        [<contenttweaker:basic_modularium>, <prodigytech:capacitor_charger>, <contenttweaker:basic_modularium>]
     ]);
     recipes.addShaped("mm_heat_pouput", <modulardiversity:blockhotairoutputhatch>, [
         [<modularmachinery:itemmodularium>, <prodigytech:capacitor_aeroheater>, <modularmachinery:itemmodularium>], 

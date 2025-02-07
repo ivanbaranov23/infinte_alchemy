@@ -47,12 +47,12 @@ import crafttweaker.liquid.ILiquidStack;
     NumisticDynamo.addGemFuel(<erebus:materials:11>, 250*1000);
 
     NumisticDynamo.addGemFuel(<contenttweaker:malachite_vase>, 2000000);
-    NumisticDynamo.addGemFuel(<contenttweaker:gem_steel_ingot>, 100*1000*1000);
+    NumisticDynamo.addGemFuel(<contenttweaker:gem_steel_ingot>, 1000*1000*1000);
 
     NumisticDynamo.addGemFuel(<aether_legacy:ambrosium_shard>, 350*1000);
     NumisticDynamo.addGemFuel(<aether_legacy:zanite_gemstone>, 400*1000);
 
-    NumisticDynamo.addGemFuel(<taiga:dilithium_crystal>, 250*1000);
+    NumisticDynamo.addGemFuel(<taiga:dilithium_crystal>, 750*1000);
     NumisticDynamo.addGemFuel(<integrateddynamics:crystalized_chorus_chunk>, 250*1000);
     NumisticDynamo.addGemFuel(<biomesoplenty:crystal_shard>, 500*1000);
 }

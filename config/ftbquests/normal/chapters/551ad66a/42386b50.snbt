@@ -22,5 +22,10 @@
 		uid: "bc3d84c2",
 		type: "item",
 		item: "darkutils:timer"
+	},
+	{
+		uid: "58129260",
+		type: "item",
+		item: "moretcon:blockgravitoniumfaucet"
 	}]
 }

@@ -294,17 +294,22 @@ function addGCrecipe_alltiers2(min_tier as int,
             [<contenttweaker:flolit_plant> % 75],
             [<harvestcraft:huckleberryitem>], 2, 2
         );
+        addGCrecipe_alltiers2(0, 
+            [<contenttweaker:excited_crop>, <contenttweaker:research_plants1>], 
+            [<contenttweaker:excited_crop> * 2 % 75],
+            [<harvestcraft:chilipepperitem>], 2, 2
+        );
         
         addGCrecipe_alltiers2(3, 
             [<stygian:endglow>, <contenttweaker:research_plants1>], 
             [(<stygian:endglow> * 4) % 75, <contenttweaker:ender_bacteria> % 10],
-            [], 4, 4
+            [<contenttweaker:excited_crop> * 4], 4, 4
         );
 
         addGCrecipe_alltiers2(3, 
             [<contenttweaker:celestial_seed>, <contenttweaker:research_plants1>, <contenttweaker:uv_lamp>], 
             [<contenttweaker:celestial_corn> % 75],
-            [<contenttweaker:ender_bacteria>], 4, 4
+            [<contenttweaker:ender_bacteria>, <contenttweaker:excited_crop> * 4], 4, 4
         );
 
         

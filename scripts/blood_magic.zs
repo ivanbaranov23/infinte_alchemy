@@ -331,7 +331,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 
 {//runes
 	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:blood_runic_dust>, 
-		[<erebus:life_blood> * 4, <contenttweaker:malachite_polycrystal> * 8, <roots:runic_dust>], 
+		[<erebus:life_blood> * 4, <contenttweaker:malachite_polycrystal> * 12, <moretcon:dustrunesteel> * 2], 
 		10000
 	);
 

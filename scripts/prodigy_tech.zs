@@ -447,11 +447,12 @@ solderer.removeAll();
 	rotarygrinder.addRecipe(<thermalfoundation:material:163>, <thermalfoundation:material:99>); //bronze
 	rotarygrinder.addRecipe(<thermalfoundation:material:164>, <thermalfoundation:material:100>);//constantan
 	rotarygrinder.addRecipe(<thermalfoundation:material:162>, <thermalfoundation:material:98>); //invar
+	rotarygrinder.addRecipe(<contenttweaker:nial_ingot>, <contenttweaker:nial_dust>);			//nial
 
 	rotarygrinder.addRecipe(<thermalfoundation:material:161>, <thermalfoundation:material:97>); //electrum
 	rotarygrinder.addRecipe(<contenttweaker:lesmium_ingot>, <contenttweaker:lesmium_dust>);     //lesmium
 	rotarygrinder.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>); //steel
-	rotarygrinder.addRecipe(<contenttweaker:duraluminum_ingot>, <contenttweaker:duraluminum_dust>); //steel
+	rotarygrinder.addRecipe(<contenttweaker:duraluminum_ingot>, <contenttweaker:duraluminum_dust>); //duraluminum
 }
 {//m reass
 	magneticreassembler.addRecipe(<enderio:item_material:32>, <minecraft:dye:4>);

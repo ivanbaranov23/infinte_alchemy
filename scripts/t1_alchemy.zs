@@ -101,6 +101,10 @@ mods.immersiveengineering.CokeOven.addRecipe(
     rec.build();
 }
 
+//slime
+furnace.addRecipe(<contenttweaker:slime_shard> * 2, <contenttweaker:slimy_sand>);
+scripts.helper.addSimpleCrushingRecipeWByproduct(<contenttweaker:burned_slimedirt>, <contenttweaker:slime_shard>, <contenttweaker:fire_shard>, 100);
+
 //
 recipes.addShaped("glowcrystal", <contenttweaker:glowcrystal> * 2, [
     [null, <contenttweaker:fire_shard>, <contenttweaker:fire_shard>], 
@@ -116,8 +120,19 @@ recipes.addShapeless("ia_creosolon", <contenttweaker:creosolon> * 2, [
     <contenttweaker:cactus_charcoal>,
     <immersiveengineering:wirecoil:3>
 ]);
+recipes.addShapeless("ia_creosolon2", <contenttweaker:creosolon> * 2, [
+    <contenttweaker:weak_enhancer>,
+    <contenttweaker:weak_enhancer>,
+    <contenttweaker:cactus_charcoal>,
+    <immersiveengineering:wirecoil:3>,
+    <liquid:creosote> * 1000,
+    <liquid:creosote> * 1000,
+    <liquid:creosote> * 1000,
+    <liquid:creosote> * 1000
+]);
 
-mods.immersiveengineering.Mixer.addRecipe(<liquid:grease> * 4000, <liquid:canolaoil> * 4000, [<contenttweaker:creosolon>], 2000);
+mods.immersiveengineering.Mixer.addRecipe(<liquid:grease> * 3000, <liquid:canolaoil> * 3000, [<contenttweaker:creosolon>], 2000);
+mods.thermalexpansion.Imbuer.addRecipe(<liquid:grease> * 2000, <contenttweaker:creosolon>, <liquid:canolaoil> * 2000, 2000);
 mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:creosolon_frame>, <contenttweaker:creosolon>, <minecraft:skull:1>, 10000, 4);
 
 function addCreosolonRecipe(inp as IItemStack, outp as IItemStack){
@@ -127,6 +142,11 @@ addCreosolonRecipe(<quark:black_ash>, <minecraft:gunpowder> * 6);
 addCreosolonRecipe(<darkutils:material>, <minecraft:gunpowder> * 6);
 addCreosolonRecipe(<minecraft:skull:1>, <extrautils2:ingredients:10>);
 addCreosolonRecipe(<extrautils2:ingredients:10>, <minecraft:skull:1>);
+
+mods.thermalexpansion.Centrifuge.addRecipe(
+    [<contenttweaker:karmesine_pieces>, <contenttweaker:ovium_pieces>, <contenttweaker:jauxum_pieces>], <contenttweaker:creosolon>, <liquid:creosote> * 500, 
+    3000
+);
 
 
 //coke_dust
@@ -175,7 +195,7 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:flolit_sheet> * 4, [
 
 recipes.addShaped("ia_flolit_plant", <contenttweaker:flolit_plant>, [
     [<mysticalcreations:bilim_essence>, <contenttweaker:flolit>, <mysticalcreations:bilim_essence>], 
-    [<contenttweaker:flolit>, <contenttweaker:weak_enhancer>, <contenttweaker:flolit>], 
+    [<contenttweaker:flolit>, <contenttweaker:creosolon>, <contenttweaker:flolit>], 
     [<mysticalcreations:bilim_essence>, <contenttweaker:flolit>, <mysticalcreations:bilim_essence>]
 ]);
 

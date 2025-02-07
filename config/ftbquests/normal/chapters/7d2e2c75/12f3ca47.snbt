@@ -1,0 +1,17 @@
+{
+	x: 17.0d,
+	y: 4.0d,
+	dependencies: [
+		"63ef8217"
+	],
+	optional: true,
+	tasks: [{
+		uid: "cb7fa431",
+		type: "item",
+		items: [{
+			id: "thermalinnovation:injector",
+			tag: {}
+		}],
+		ignore_nbt: 1b
+	}]
+}

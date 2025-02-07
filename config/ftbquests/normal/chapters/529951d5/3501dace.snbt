@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	text: [
+		"Found rarely in nether fortress chests"
+	],
+	dependencies: [
+		"5bb8b829"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c63a631f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:nitrall"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

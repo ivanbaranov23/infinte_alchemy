@@ -1198,6 +1198,8 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
         VanillaFactory.createItem("space_navigator").register();
 
         VanillaFactory.createItem("rocket_engine2").register();
+
+        VanillaFactory.createFluid("hydrogen_mix", Color.fromHex("13224c")).register();
         addWater("dense_hydrogen");
     }
 
@@ -1274,23 +1276,29 @@ function add_mech_part(name as string){
         VanillaFactory.createItem("tincan_target_gem").register();
         VanillaFactory.createItem("tincan_target_mob").register();
 
-        //VanillaFactory.createItem("irradiated_compound").register();//todo poison you
         var irradiated_compound = VanillaFactory.createItem("irradiated_compound");
         irradiated_compound.rarity = "rare";
         irradiated_compound.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
             if (owner instanceof IPlayer) {
                 val player as IPlayer = owner;
-
                 Commands.call("effect @p minecraft:poison 2 2 true", player, world, false, true);
-                //Commands.call("effect @p minecraft:wither 5 1 true", player, world, false, true);
-                //player.setFire(4);
                 Commands.call("effect @p minecraft:nausea 5 1 true", player, world, false, true);
-                //Commands.call("effect @p minecraft:hunger 5 1 true", player, world, false, true);
-
             }
             return;
         };
         irradiated_compound.register();
+        var banana = VanillaFactory.createItem("banana");
+        banana.rarity = "rare";
+        banana.onItemUpdate = function(itemStack, world, owner, slot, isSelected) {
+            if (owner instanceof IPlayer) {
+                val player as IPlayer = owner;
+                Commands.call("effect @p minecraft:poison 2 2 true", player, world, false, true);
+                Commands.call("effect @p minecraft:nausea 5 1 true", player, world, false, true);
+            }
+            return;
+        };
+        banana.register();
+
         VanillaFactory.createItem("advanced_plating2_1").register();
         VanillaFactory.createItem("advanced_plating2_2").register();
         VanillaFactory.createItem("advanced_plating2_3").register();
@@ -2264,6 +2272,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItemFood("cheesy_circuit", 20).register();
     VanillaFactory.createItem("gold_circuit").register();
+
+    VanillaFactory.createItem("soapart_dust").register();
+    VanillaFactory.createItem("soapart").register();
 }
 {//twili
     var power_core = VanillaFactory.createBlock("power_core", <blockmaterial:rock>);
@@ -2807,7 +2818,13 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     }
 
     VanillaFactory.createBlock("mana_pipe", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("electric_core", <blockmaterial:rock>).register();
+    //VanillaFactory.createBlock("electric_core", <blockmaterial:rock>).register();
+    var electric_core = VanillaFactory.createBlock("electric_core", <blockmaterial:rock>);
+    electric_core.setFullBlock(false);
+    electric_core.setBlockLayer("TRANSLUCENT");
+    electric_core.setLightOpacity(0);
+    electric_core.setTranslucent(true);
+    electric_core.register();
     //VanillaFactory.createBlock("manapearl_block", <blockmaterial:rock>).register();
 }
 {//draconic
@@ -2820,6 +2837,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("manathon").register();
 
     VanillaFactory.createItem("positronium").register();
+
+    VanillaFactory.createItem("electron_emitter").register();
+    VanillaFactory.createItem("positron_emitter").register();
 
     VanillaFactory.createItem("barion1").register();
     VanillaFactory.createItem("barion2").register();

@@ -1,0 +1,22 @@
+{
+    "machine": "stabilizer",
+    "registryName": "1",
+    "recipeTime": 100,
+    "requirements": [
+        
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:blood_shard2@0"
+        },
+        {
+
+            "type": "lifeessence",
+            
+            "io-type": "input",
+            
+            "essencepertick": 5
+            
+        }
+    ]
+}

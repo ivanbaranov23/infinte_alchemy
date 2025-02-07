@@ -287,13 +287,13 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	recipes.remove(<mekanism:machineblock2:13>);
 	recipes.addShaped("ia_mek_laser", <mekanism:machineblock2:13>, [
 		[<actuallyadditions:block_laser_relay>, <quantumflux:craftingpiece:2>, null], 
-		[<mekanism:basicblock:8>, <ore:circuitUltimate>, <actuallyadditions:block_crystal_empowered>], 
+		[<mekanism:basicblock:8>, <quantumflux:craftingpiece:5>, <actuallyadditions:block_crystal_empowered>], 
 		[<actuallyadditions:block_laser_relay>, <quantumflux:craftingpiece:2>, null]
 	]);
 	recipes.remove(<mekanism:machineblock2:14>);
 	recipes.addShaped("ia_mek_laser_redirect", <mekanism:machineblock2:14>, [
 		[<contenttweaker:mekanized_steel_plate>, <contenttweaker:laser_mirror>, <contenttweaker:mekanized_steel_plate>], 
-		[<aether_legacy:ice_ring>.noReturn(), <mekanism:basicblock2:3>, <actuallyadditions:item_crystal_empowered>], 
+		[<aether_legacy:ice_ring>.noReturn(), <mekanism:basicblock2:3>, <actuallyadditions:block_crystal_empowered>], 
 		[<contenttweaker:mekanized_steel_plate>, <contenttweaker:laser_mirror>, <contenttweaker:mekanized_steel_plate>]
 	]);
 

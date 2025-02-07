@@ -80,3 +80,18 @@ import mods.modularmachinery.RecipeBuilder;
 	
     rec.build();
 }
+
+
+{//heavy water
+    var rec = RecipeBuilder.newBuilder("heavy", "gas_column", 100);
+    rec.addEnergyPerTickInput(256000);
+
+	rec.addFluidOutput(<liquid:heavywater> * 100000);
+    
+
+	rec.addGasInput("nickel", 500);
+    rec.addFluidInput(<liquid:sea_water> * 20000);
+    rec.addItemInput(<alchemistry:ingot:74>);
+	
+    rec.build();
+}

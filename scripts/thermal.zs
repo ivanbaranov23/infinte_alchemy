@@ -436,12 +436,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 
 {//tools
 	
-	recipes.removeByRecipeName("thermalinnovation:injector");
-	recipes.addShaped("ia_injector", <thermalinnovation:injector>.withTag({}), [
-		[null, <thermalfoundation:material:356>, <contenttweaker:potion_zinc_gear>], 
-		[<thermalfoundation:material:356>, <contenttweaker:medical_alloy_rod>, <thermalfoundation:material:358>], 
-		[<contenttweaker:medical_alloy_rod>, <thermalfoundation:material:640>, <moreplates:lumium_stick>]
-	]);
+	
 
 	recipes.remove(<thermalexpansion:satchel:100>);
 	recipes.addShaped("ia_te_void_satchel", <thermalexpansion:satchel:100>, [

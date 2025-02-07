@@ -9,16 +9,28 @@ import mods.modularmachinery.RecipeBuilder;
 
 
 {//dense hydrogen
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:hydrogen_mix> * 250],
+        [
+            <botania:manaresource:15> * 8,
+            <enderio:item_material:37>
+        ], [
+            <liquid:liquidhydrogen> * 1000,
+            <liquid:liquiddeuterium> * 1000,
+            <liquid:liquidtritium> * 1000
+        ], 40, 25000
+    );
+
     mods.mekanism.infuser.addRecipe("MANA", 30, <contenttweaker:palladium_mesh>, <contenttweaker:palladium_mana_mesh>);
 
     scripts.content_machines.addFluidSieveRecipeRandom(
         [
-            <contenttweaker:palladium_mesh> % 90,
-            <contenttweaker:impure_mana_dust>.weight(0.001)
+            <contenttweaker:palladium_mesh> % 95,
+            <contenttweaker:impure_mana_dust>.weight(0.01)
         ], <liquid:dense_hydrogen> * 200, 
-        <liquid:liquidhydrogen> * 1000, <contenttweaker:palladium_mana_mesh>,
+        <liquid:hydrogen_mix> * 1000, <contenttweaker:palladium_mana_mesh>,
         <contenttweaker:flesh_support>,
-        10, 10000
+        10, 100000
     );
 }
 

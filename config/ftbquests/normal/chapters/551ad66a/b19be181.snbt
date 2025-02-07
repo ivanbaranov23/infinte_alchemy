@@ -1,7 +1,7 @@
 {
 	title: "Tree powered compressor",
 	icon: "minecraft:sapling",
-	x: 5.0d,
+	x: 6.0d,
 	y: 0.0d,
 	text: [
 		"Make a tree powered compressor. This multiblock will use pressure from growing saplings to compress soft materials into a singularity.",

@@ -1043,6 +1043,7 @@ for rune_id in 0 to 16{
 
 
 {//gate
+    recipes.remove(<botania:livingwood:5>);
     mods.extendedcrafting.TableCrafting.addShaped(0, <botania:livingwood:5>, [
         [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>], 
         [<botania:livingwood>, <mekanism:basicblock:7>, <mekanism:basicblock:7>, <mekanism:basicblock:7>, <botania:livingwood>], 
@@ -1050,6 +1051,7 @@ for rune_id in 0 to 16{
         [<botania:livingwood>, <contenttweaker:dim_stable_plate1>, <mekanism:machineblock:11>, <contenttweaker:dim_stable_plate1>, <botania:livingwood>], 
         [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>]
     ]);
+    recipes.remove(<botania:pylon:1>);
     mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pylon:1>, [
         [null, <botania:livingwood>, null, <botania:livingwood>, null], 
         [null, <enderio:block_tele_pad>, <bloodmagic:component:17>, <enderio:block_tele_pad>, null], 
@@ -1057,6 +1059,7 @@ for rune_id in 0 to 16{
         [<botania:livingwood>, <enderio:block_tele_pad>, <contenttweaker:mana_frame>, <enderio:block_tele_pad>, <botania:livingwood>], 
         [<botania:livingwood>, <enderio:block_tele_pad>, <botania:livingwood:5>, <enderio:block_tele_pad>, <botania:livingwood>]
     ]);
+    recipes.remove(<botania:alfheimportal>);
     mods.extendedcrafting.TableCrafting.addShaped(0, <botania:alfheimportal>, [
         [<botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>, <botania:livingwood>], 
         [<contenttweaker:dim_stable_plate1>, <contenttweaker:elemental_essence>, <contenttweaker:rune_mana_chip>, <contenttweaker:elemental_essence>, <contenttweaker:dim_stable_plate1>], 

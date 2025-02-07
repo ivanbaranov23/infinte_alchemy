@@ -365,3 +365,47 @@ recipes.addShaped("ia_dark_sword", <enderio:item_dark_steel_sword>, [
     [<enderio:item_material:8>]
 ]);
 //addCarryRecipe(<enderio:item_dark_steel_pickaxe>, <redstonearsenal:tool.pickaxe_flux>.withTag({Energy: 0}), other as IIngredient[][])
+
+
+//thermal tools
+recipes.removeByRecipeName("thermalinnovation:injector");
+recipes.addShaped("ia_injector", <thermalinnovation:injector>.withTag({}), [
+	[null, <thermalfoundation:material:356>, <contenttweaker:potion_zinc_gear>], 
+	[<thermalfoundation:material:356>, <contenttweaker:medical_alloy_rod>, <thermalfoundation:material:358>], 
+	[<contenttweaker:medical_alloy_rod>, <thermalfoundation:material:640>, <moreplates:lumium_stick>]
+]);
+recipes.removeByRecipeName("thermalinnovation:injector_1");
+scripts.helper.addCarryRecipe(<thermalinnovation:injector:1>, <thermalinnovation:injector>, [
+    [null, <thermalfoundation:material:354>, null],
+    [<thermalfoundation:material:354>, <thermalfoundation:material:354>],
+    [<contenttweaker:medical_alloy_rod>, <thermalfoundation:material:354>, null]
+]);
+recipes.removeByRecipeName("thermalinnovation:injector_2");
+scripts.helper.addCarryRecipe(<thermalinnovation:injector:2>, <thermalinnovation:injector:1>, [
+    [null, <thermalfoundation:material:354>, null],
+    [<thermalfoundation:material:353>, <thermalfoundation:material:353>],
+    [<contenttweaker:medical_alloy_rod>, <thermalfoundation:material:354>, null]
+]);
+recipes.removeByRecipeName("thermalinnovation:injector_3");
+scripts.helper.addCarryRecipe(<thermalinnovation:injector:3>, <thermalinnovation:injector:2>, [
+    [null, <thermalfoundation:material:353>, null],
+    [<thermalfoundation:material:357>, <thermalfoundation:material:357>],
+    [<contenttweaker:medical_alloy_rod>, <thermalfoundation:material:353>, null]
+]);
+recipes.removeByRecipeName("thermalinnovation:injector_4");
+scripts.helper.addCarryRecipe(<thermalinnovation:injector:4>, <thermalinnovation:injector:3>, [
+    [null, <thermalfoundation:material:357>, null],
+    [<thermalfoundation:material:359>, <thermalfoundation:material:359>],
+    [<contenttweaker:medical_alloy_rod>, <thermalfoundation:material:357>, null]
+]);
+scripts.content_machines.addAssemblerRecipe(
+    [<thermalinnovation:injector:4>],
+    [
+        <thermalinnovation:injector>,
+        <thermalfoundation:material:354> * 3,
+        <thermalfoundation:material:353> * 3,
+        <thermalfoundation:material:357> * 3,
+        <thermalfoundation:material:359> * 3
+    ], <liquid:medical_alloy> * 1152,
+    20, 1000
+);

@@ -1,6 +1,6 @@
 {
 	title: "Machine Frame 0.5",
-	x: 8.0d,
+	x: 9.0d,
 	y: -2.0d,
 	shape: "square",
 	text: [

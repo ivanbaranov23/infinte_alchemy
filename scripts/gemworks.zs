@@ -113,7 +113,7 @@ function addSeedGemRecipes(gem as string){
     
     Transposer.addFillRecipe(
         gem_parts[gem].gem, 
-        gem_parts[gem].seed, <liquid:crystal_fluid2> * 250, 
+        gem_parts[gem].seed, <liquid:crystal_fluid2> * 50, 
         4000
     );
 
@@ -204,6 +204,11 @@ scripts.helper.addFluidMixerRecipe(
 scripts.helper.addFluidMixerRecipe(
     <liquid:crystal_fluid2> * 2000, 
     <liquid:hexane> * 500, <liquid:crystaloil> * 300, <actuallyadditions:item_dust:2>, 
+    512, 20
+);
+scripts.helper.addFluidMixerRecipe(
+    <liquid:crystal_fluid2> * 1500, 
+    <liquid:hexane> * 500, <liquid:crystaloil> * 300, <contenttweaker:coral_dust> * 8, 
     512, 20
 );
 

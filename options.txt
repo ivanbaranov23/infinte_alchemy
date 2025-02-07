@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:120
 fboEnable:true
-difficulty:2
+difficulty:1
 fancyGraphics:false
 ao:0
 renderClouds:true
@@ -222,6 +222,7 @@ key_key.effortlessbuilding.undo.desc:44:CONTROL
 key_key.effortlessbuilding.redo.desc:21:CONTROL
 key_key.effortlessbuilding.altplacement.desc:29
 key_key.mod_lavacow.special:34
+key_key.ae2fc.open_wireless_fluid_pattern_terminal.desc:0
 key_key.immersiveengineering.magnetEquip:31
 key_key.immersiveengineering.chemthrowerSwitch:0
 key_key.integrateddynamics.logic_programmer_focus_search:33:ALT

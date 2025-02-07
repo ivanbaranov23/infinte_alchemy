@@ -1874,8 +1874,8 @@ static all_metals_molten as ILiquidStack[string] = {
     
     mekanized_steel: <liquid:mekanized_steel>,
 
-    refined_obsidian: <liquid:refinedobsidian>,
-    refined_glowstone: <liquid:refinedglowstone>,
+    refined_obsidian: <liquid:refined_obsidian>,
+    refined_glowstone: <liquid:refined_glowstone>,
     osgloglass: <liquid:osgloglas>,
     osmiridium: <liquid:osmiridium>,
     osgloridium: <liquid:osgloridium>, 
@@ -2802,6 +2802,11 @@ add3alloy(1, "flower_steel", 4,
 
 
 {//mekanism
+    {//mek metals fix
+        Melting.removeRecipe(<liquid:refined_obsidian>, <mekanism:otherdust:5>);
+        mods.immersiveengineering.ArcFurnace.removeRecipe(<mekanism:ingot>);
+    }
+
     add3alloy(3, "osgloglass", 1,
         "osmium", 1,
         "refined_obsidian", 1,
@@ -3249,7 +3254,7 @@ scripts.helper.addFluidAlloyerRecipe(
 
         add3alloy(3, "end_steel", 4,
             "dark_steel", 6,
-            "palladium", 3,
+            "proxii", 3,
             "biotide", 8
         );
     }
@@ -3395,12 +3400,12 @@ scripts.helper.addFluidAlloyerRecipe(
 
 
         mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:4>);
-        mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4> * 8, [
+        mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4> * 2, [
             <industrialforegoing:pink_slime_ingot> * 16,
             all_metals.crystalline_alloy.ingot,
             <aether_legacy:aercloud:3> * 4
         ], 20000);
-        mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4> * 8, [
+        mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4> * 2, [
             <industrialforegoing:pink_slime_ingot> * 16,
             all_metals.crystalline_alloy.ingot,
             <botania:petal:6> * 48
@@ -3701,7 +3706,7 @@ add3alloy(3, "ender_ingot", 1,
     {//conductive alloy
         mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:conductive_alloy_ingot>, 
             [
-                <enderio:item_alloy_ingot:1> * 2, <exnihilocreatio:item_ore_tungsten:3>, <contenttweaker:gallium_ingot>,
+                <enderio:item_alloy_ingot:1>, <exnihilocreatio:item_ore_tungsten:3>, <contenttweaker:gallium_ingot>,
                 <contenttweaker:electric_manyullyn_ingot>, <thermalfoundation:storage>, <thermalfoundation:storage_alloy:1>
             ], 
             1000, 20, 1
@@ -3771,28 +3776,28 @@ add3alloy(3, "ender_ingot", 1,
 {//botania
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot>, 
         [
-            <taiga:tritonite_block>, <contenttweaker:atum_godshard>, <enderio:item_alloy_endergy_ingot:2>, 
+            <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
             <bloodmagic:slate>
         ], 
         128, 16
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 2, 
         [
-            <taiga:tritonite_block>, <contenttweaker:atum_godshard>, <enderio:item_alloy_endergy_ingot:2>, 
+            <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
             <bloodmagic:slate:1>
         ], 
         128, 16
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 4, 
         [
-            <taiga:tritonite_block>, <contenttweaker:atum_godshard>, <enderio:item_alloy_endergy_ingot:2>, 
+            <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
             <bloodmagic:slate:2>
         ], 
         128, 16
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 8, 
         [
-            <taiga:tritonite_block>, <contenttweaker:atum_godshard>, <enderio:item_alloy_endergy_ingot:2>, 
+            <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
             <bloodmagic:slate:3>
         ], 
         128, 16

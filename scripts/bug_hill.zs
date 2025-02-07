@@ -28,10 +28,10 @@ recipes.addShaped("ia_bug_hill2", <contenttweaker:bug_hill_exit2>, [
     [<moreplates:ironwood_plate>, <contenttweaker:flower_steel_rod>, <moreplates:ironwood_plate>]
 ]);
 
-recipes.addShaped("ia_bug_hill3", <contenttweaker:bug_hill_exit3>, [
-    [<contenttweaker:chitin>, <contenttweaker:chitin_ball>, <contenttweaker:chitin>],
-    [<contenttweaker:chitin>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin>],
-    [<contenttweaker:chitin>, <contenttweaker:chitin>, <contenttweaker:chitin>]
+recipes.addShaped("ia_bug_hill3", <contenttweaker:bug_hill_exit3> * 2, [
+    [<contenttweaker:chitin_ball>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin_ball>],
+    [<contenttweaker:bug_hill_exit2>, <contenttweaker:rune_bug>, <contenttweaker:bug_hill_exit2>],
+    [<contenttweaker:chitin_ball>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin_ball>]
 ]);
 
 //mud
@@ -415,7 +415,7 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
         ]
     },
     [0, 10*1000, 20*10, 100*1000, 0, 255]: {
-        <liquid:circuit> * 100: [
+        <liquid:circuit> * 200: [
             <contenttweaker:bug_chip> % 10,
             <contenttweaker:bug_chip> % 10,
             <contenttweaker:bug_chip> % 10,

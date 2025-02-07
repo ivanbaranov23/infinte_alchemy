@@ -1,0 +1,15 @@
+{
+	x: 6.0d,
+	y: 6.0d,
+	dependencies: [
+		"0e347247"
+	],
+	optional: true,
+	tasks: [{
+		uid: "203da7b9",
+		type: "item",
+		items: [{
+			item: "harvestcraft:bananaitem"
+		}]
+	}]
+}

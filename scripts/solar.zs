@@ -326,7 +326,8 @@ scripts.content_machines.addAdvancedMixerRecipe(
 	[], [<liquid:sunnarium> * 200],
 	[
 		<extrautils2:suncrystal>,
-		<contenttweaker:solar_silicon>
+		<contenttweaker:solar_silicon> * 4,
+		<contenttweaker:light_ingot>
 	], [
 		<liquid:sunnarium_base> * 1000,
 		<liquid:luminessence> * 150,

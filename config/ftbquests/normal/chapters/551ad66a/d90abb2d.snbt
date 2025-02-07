@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: 1.0d,
+	dependencies: [
+		"b6bb720f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "65cbb52b",
+		type: "item",
+		items: [{
+			item: "extrautils2:pipe"
+		}]
+	}]
+}

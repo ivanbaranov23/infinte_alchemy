@@ -29,7 +29,7 @@ var mil as int = 1000000;
 }
 {
     var rec = RecipeBuilder.newBuilder("energy", "donut", 5);
-	rec.addEnergyPerTickOutput(100 * mil);
+	rec.addEnergyPerTickOutput(500 * mil);
 
 	rec.addItemInput(<contenttweaker:positronium>);
     //rec.addItemInput(<contenttweaker:positron>);

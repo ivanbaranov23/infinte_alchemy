@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: -5.0d,
+	dependencies: [
+		"518dd5e5"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7cf4369a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:superglue"
+		}]
+	}]
+}

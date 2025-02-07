@@ -1,5 +1,5 @@
 {
-	x: 5.0d,
+	x: 6.0d,
 	y: -1.0d,
 	text: [
 		"It is generally ill advised to build any multiblock on a chunk border. All multiblock in this modpack are smaller than 15x15 so they should fit inside a single chunk."
