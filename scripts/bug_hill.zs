@@ -28,10 +28,17 @@ recipes.addShaped("ia_bug_hill2", <contenttweaker:bug_hill_exit2>, [
     [<moreplates:ironwood_plate>, <contenttweaker:flower_steel_rod>, <moreplates:ironwood_plate>]
 ]);
 
-recipes.addShaped("ia_bug_hill3", <contenttweaker:bug_hill_exit3> * 2, [
+/*recipes.addShaped("ia_bug_hill3", <contenttweaker:bug_hill_exit3> * 2, [
     [<contenttweaker:chitin_ball>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin_ball>],
     [<contenttweaker:bug_hill_exit2>, <contenttweaker:rune_bug>, <contenttweaker:bug_hill_exit2>],
     [<contenttweaker:chitin_ball>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin_ball>]
+]);*/
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:bug_hill_exit3>, [
+    [<contenttweaker:chitin_ball>, <contenttweaker:chitin>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin>, <contenttweaker:chitin_ball>], 
+    [<contenttweaker:chitin>, null, null, null, <contenttweaker:chitin>], 
+    [<contenttweaker:bug_hill_exit2>, null, <contenttweaker:rune_bug>, null, <contenttweaker:bug_hill_exit2>], 
+    [<contenttweaker:chitin>, null, null, null, <contenttweaker:chitin>], 
+    [<contenttweaker:chitin_ball>, <contenttweaker:chitin>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin>, <contenttweaker:chitin_ball>]
 ]);
 
 //mud
@@ -406,7 +413,7 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <mekanism:dirtydust:3> % 20,
             <mekanism:dirtydust:5> % 15,
             <mekores:mekanismore:8> % 4,
-            <contenttweaker:gallium_dirty_dust> % 4,
+            <contenttweaker:gallium_dirty_dust> % 2,
 
             <enderio:item_material:33> % 15,
             <erebus:materials:11> % 20,

@@ -810,7 +810,7 @@ scripts.content_machines.addFluidMixerRecipe(
     );
     mods.thermalexpansion.InductionSmelter.addRecipe(
 		<contenttweaker:banana>, 
-		<contenttweaker:irradiated_compound>, <harvestcraft:bananaitem>, 50000
+		<contenttweaker:irradiated_compound> * 3, <harvestcraft:bananaitem> * 64, 50000
 	);
 }
 

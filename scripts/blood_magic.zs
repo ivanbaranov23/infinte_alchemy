@@ -514,9 +514,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 
 	//t1
 	//clay
-	TartaricForge.addRecipe(<contenttweaker:alchemical_clay>, [
-		<enderio:item_material:76>, <extrautils2:ingredients:5>, <atum:khnumite_block>, <aether_legacy:zanite_block>
-	], 32, 16);
+	
 
 	//lava
 	TartaricForge.removeRecipe([<minecraft:redstone>, <minecraft:lava_bucket>, <ore:blockCoal>.firstItem, <ore:cobblestone>.firstItem]);
@@ -682,32 +680,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		<natura:soups:7>, <minecraft:redstone_lamp>, <mekanism:basicblock:4>, <integrateddynamics:menril_torch>
 	], 320, 8);
 }
-{//tablet
-	TartaricForge.addRecipe(<contenttweaker:tablet_empty> * 3, [
-		<contenttweaker:soul_codex8>, <contenttweaker:alchemical_clay>, <contenttweaker:advanced_petrotheum>, <tconstruct:dried_clay>
-	], 300, 120);
 
-	scripts.content_machines.addBioAssemblerRecipe(
-		[<contenttweaker:tablet_engraved>], null,
-		[
-			<contenttweaker:tablet_empty>,
-			<contenttweaker:blood_runic_dust> * 5,
-			<contenttweaker:poisotheum>
-		], [
-			<liquid:ultrapure_water> * 1000
-		], <contenttweaker:pressure_cutter>,
-		20, 10000
-	);
-	
-	mods.bloodmagic.AlchemyArray.addRecipe(
-		<contenttweaker:tablet_evil>, 
-		<contenttweaker:tablet_engraved>, <extrautils2:simpledecorative:2>, "contenttweaker:textures/hey.png"
-	);
-	mods.bloodmagic.AlchemyArray.addRecipe(
-		<contenttweaker:tablet_good>, 
-		<contenttweaker:tablet_evil>, <extendedcrafting:singularity_custom:42>, "contenttweaker:textures/hey.png"
-	);
-}
 
 {//alchemical table
 	
@@ -758,12 +731,12 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 
 	AlchemyTable.addRecipe(<contenttweaker:electricium>, 
 		[
-			<contenttweaker:insulation_strand>,
-			<contenttweaker:insulation_strand>,
-			<contenttweaker:enittin>,
+			<enderio:block_industrial_insulation>,
+			<contenttweaker:enittin_block>,
 			<bloodmagic:component:12>,
-			<contenttweaker:electric_manyullyn_block>,
-			<contenttweaker:horus_godshard>
+			<quantumflux:darkstone:1>,
+			<contenttweaker:lightning_cell>,
+			<contenttweaker:power_tap>
 		], 10000, 20, 3
 	);
 

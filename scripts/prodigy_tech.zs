@@ -98,6 +98,8 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 		[<contenttweaker:zorra_steel_gem>, <minecraft:enchanting_table>, <contenttweaker:zorra_steel_gem>],
 		[<contenttweaker:zorra_steel_gem>, <enderio:block_dark_steel_anvil>, <contenttweaker:zorra_steel_gem>]
 	]);
+
+	<ore:treeLeaves>.remove(<prodigytech:zorra_leaves>);
 }
 
 {
@@ -202,7 +204,7 @@ solderer.removeAll();
 		<contenttweaker:bocuit>, <prodigytech:circuit_crude> * 4, 12
 	);
 }{//refined
-	recipes.addShaped("ia_pt_crude_chip", <contenttweaker:pt_crude_chip>, [
+	recipes.addShaped("ia_pt_crude_chip1", <contenttweaker:pt_crude_chip>, [
 		[<moreplates:hammer>.anyDamage().transformDamage(), <contenttweaker:gold_coil>],
 		[null, <contenttweaker:zinc_plate>],
 		[null, <prodigytech:circuit_crude>]
@@ -210,6 +212,16 @@ solderer.removeAll();
 	mods.appliedenergistics2.Inscriber.addRecipe(
 		<contenttweaker:pt_crude_chip>, <contenttweaker:zinc_plate>, false, 
 		<contenttweaker:gold_coil>, <prodigytech:circuit_crude>
+	);
+
+	recipes.addShaped("ia_pt_crude_chip2", <contenttweaker:pt_crude_chip>, [
+		[<moreplates:hammer>.anyDamage().transformDamage(), <thermalfoundation:material:25>],
+		[null, <contenttweaker:zinc_plate>],
+		[null, <prodigytech:circuit_crude>]
+	]);
+	mods.appliedenergistics2.Inscriber.addRecipe(
+		<contenttweaker:pt_crude_chip>, <contenttweaker:zinc_plate>, false, 
+		<thermalfoundation:material:25>, <prodigytech:circuit_crude>
 	);
 
 	solderer.addRecipe(<prodigytech:pattern_circuit_refined>,

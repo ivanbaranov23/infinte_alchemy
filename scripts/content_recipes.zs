@@ -307,7 +307,7 @@ recipes.addShaped("ia_stone_idol", <contenttweaker:stone_idol>, [
     furnace.remove(<projectred-core:resource_item:300>);
     mods.enderio.AlloySmelter.addRecipe(<projectred-core:resource_item:300>, 
         [<projectred-core:resource_item:250> * 4, <appliedenergistics2:material:5> * 32, <contenttweaker:solar_silicon> * 4], 
-        8000
+        50000
     );
 
     recipes.remove(<projectred-core:resource_item:301>);

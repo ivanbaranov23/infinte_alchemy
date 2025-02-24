@@ -4,7 +4,7 @@ import mods.alfinivia.Milking;
 import crafttweaker.entity.IEntityDefinition;
 
 
-
+//zombie
 Milking.add(
     <minecraft:bucket>,
     <entity:minecraft:zombie>,
@@ -15,6 +15,19 @@ scripts.jei.addJEIhint(
     [<minecraft:bucket>],
     [<forge:bucketfilled>.withTag({FluidName: "rot", Amount: 1000})], [<liquid:rot>]
 );
+
+//fire beetle
+Milking.add(
+    <minecraft:bucket>,
+    <entity:twilightforest:fire_beetle>,
+    <forge:bucketfilled>.withTag({FluidName: "fiery_essence", Amount: 1000}), false
+);
+scripts.jei.addJEIhint(
+    [<minecraft:egg>.withDisplayName(<entity:twilightforest:fire_beetle>.id), <minecraft:spawn_egg>.withTag({EntityTag: {id: "twilightforest:fire_beetle"}})], [],
+    [<minecraft:bucket>],
+    [<forge:bucketfilled>.withTag({FluidName: "fiery_essence", Amount: 1000})], [<liquid:fiery_essence>]
+);
+
 
 function addArrowMilking(ent as IEntityDefinition, item as IItemStack){
     Milking.add(

@@ -1,11 +1,4 @@
 
-recipes.remove(<deepmoblearning:machine_casing>);
-recipes.addShaped("ia_deep_casing", <deepmoblearning:machine_casing>, [
-	[<deepmoblearning:soot_covered_plate>, <deepmoblearning:polymer_clay>, <deepmoblearning:soot_covered_plate>], 
-	[<contenttweaker:basic_neuron>, <enderio:item_material:53>, <contenttweaker:basic_neuron>], 
-	[<deepmoblearning:soot_covered_plate>, <deepmoblearning:polymer_clay>, <deepmoblearning:soot_covered_plate>]
-]);
-
 
 recipes.remove(<deepmoblearning:soot_covered_plate>);
 mods.enderio.AlloySmelter.addRecipe(<deepmoblearning:soot_covered_plate>, 

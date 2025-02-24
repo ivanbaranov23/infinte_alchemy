@@ -2073,7 +2073,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("hot_energion").register();
 
     VanillaFactory.createItem("pilkeum").register();
-    VanillaFactory.createItem("pilkon").register();
+    add_living("pilkon");
     VanillaFactory.createItem("pilkon_corpse").register();
     VanillaFactory.createFluid("pilkon_blood", Color.fromHex("e59797")).register();
     registerMoltenMetal("andesite_magma", Color.fromHex("9d603c"));
@@ -2392,6 +2392,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("blood_runic_dust").register();
     
     VanillaFactory.createItem("blood_gem").register();
+
+    VanillaFactory.createItem("tartaric_dust").register();
+    addWater("tartaric_gel");
 
     VanillaFactory.createItem("soul_reflector_base").register();
     VanillaFactory.createItem("soul_reflector").register();

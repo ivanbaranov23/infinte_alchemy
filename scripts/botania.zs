@@ -592,26 +592,26 @@ for rune_id in 0 to 16{
     {//lightning
         RuneAltar.addRecipe(<contenttweaker:rune_lightning>, [
             <contenttweaker:rune_base>, <contenttweaker:electricium>,
-            <contenttweaker:power_tap>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
+            <thermalexpansion:machine:9>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
             <botania:rune:8>
             ], 40000
         );
         RuneAltar.addRecipe(<contenttweaker:rune_lightning> * 2, [
             <contenttweaker:improved_rune_base>, <contenttweaker:electricium>,
-            <contenttweaker:power_tap>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
+            <thermalexpansion:machine:9>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
             <botania:rune:8>
             ], 60000
         );
 
         RuneAltar.addRecipe(<contenttweaker:rune_lightning> * 2, [
             <contenttweaker:rune_base>, <contenttweaker:electricium>,
-            <contenttweaker:power_tap>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
+            <thermalexpansion:machine:9>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
             <botania:rune:8>, <contenttweaker:rune_lightning_cracked>
             ], 40000
         );
         RuneAltar.addRecipe(<contenttweaker:rune_lightning> * 3, [
             <contenttweaker:improved_rune_base>, <contenttweaker:electricium>,
-            <contenttweaker:power_tap>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
+            <thermalexpansion:machine:9>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
             <botania:rune:8>, <contenttweaker:rune_lightning_cracked>
             ], 60000
         );

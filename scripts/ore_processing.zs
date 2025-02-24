@@ -82,7 +82,7 @@ function addClumpCrushing(clump as IItemStack, main as IItemStack,
 
 }
 
-function addTingalumOvenRecipe(out as IItemStack[], inp as IItemStack[], energy as int, sec as int){
+function addTingalumOvenRecipe(out as IItemStack[], inp as IItemStack[], energy as int, sec as int, temp as int = 250){
     var rec = RecipeBuilder.newBuilder("ore_proc_" ~ out[0].name ~ inp[0].name, "tignalum_oven", sec * 20);
 
     rec.addEnergyPerTickInput(energy);
@@ -95,7 +95,7 @@ function addTingalumOvenRecipe(out as IItemStack[], inp as IItemStack[], energy 
         rec.addItemInput(i);
     }
     
-    rec.addHotAirInput(250, 250, 1001);
+    rec.addHotAirInput(temp, temp, 1000000);
 
     rec.build();
 }

@@ -66,6 +66,16 @@ recipes.addShaped("ia_frame5", <actuallyadditions:block_misc:9>, [
 	[<contenttweaker:osgloridium_plate>, <contenttweaker:gearbox_normal>, <contenttweaker:osgloridium_plate>]
 ]);
 
+
+
+recipes.remove(<deepmoblearning:machine_casing>);
+recipes.addShaped("ia_deep_casing", <deepmoblearning:machine_casing>, [
+	[<deepmoblearning:soot_covered_plate>, <deepmoblearning:polymer_clay>, <deepmoblearning:soot_covered_plate>], 
+	[<contenttweaker:neuron_inlay>, <enderio:item_material:53>, <contenttweaker:neuron_inlay>], 
+	[<deepmoblearning:soot_covered_plate>, <deepmoblearning:polymer_clay>, <deepmoblearning:soot_covered_plate>]
+]);
+
+
 recipes.remove(<actuallyadditions:block_misc:8>);
 recipes.addShaped("ia_frame10", <actuallyadditions:block_misc:8>, [
 	[<extendedcrafting:material:36>, <contenttweaker:robot_arm>, <extendedcrafting:material:36>], 

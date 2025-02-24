@@ -97,7 +97,7 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
     Pyre.removeRecipe(<roots:baffle_cap_mushroom>);
     Pyre.addRecipe("ia_baffle_cap_mushroom",
         <roots:baffle_cap_mushroom> * 4,
-        [<contenttweaker:mushroomite_ingot>, <roots:moonglow_leaf>, <roots:dewgonia>, <roots:stalicripe>, <roots:infernal_bulb>]
+        [<contenttweaker:mushroomite_ingot> | <prodigytech:heat_capacitor_1>, <roots:moonglow_leaf>, <roots:dewgonia>, <roots:stalicripe>, <roots:infernal_bulb>]
     );
 }
 {//crops 2 electric boogaloo
@@ -520,6 +520,8 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
         ia_glowshroom2: <natura:nether_glowshroom:1>,
         ia_glowshroom3: <natura:nether_glowshroom:2>,
 
+        ia_roots_mushroom: <roots:baffle_cap_mushroom>,
+
         ia_botania_flower0: <botania:flower>,
         ia_botania_flower1: <botania:flower:1>,
         ia_botania_flower2: <botania:flower:2>,
@@ -575,6 +577,8 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
         ia_glowshroom1: <natura:nether_tainted_soil>,
         ia_glowshroom2: <natura:nether_tainted_soil>,
         ia_glowshroom3: <natura:nether_tainted_soil>,
+
+        ia_roots_mushroom: <minecraft:mycelium>,
 
         ia_botania_mushroom0: <minecraft:mycelium>,
         ia_botania_mushroom1: <minecraft:mycelium>,

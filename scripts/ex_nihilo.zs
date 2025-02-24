@@ -9,8 +9,6 @@ import mods.exnihilocreatio.Compost;
 
 import mods.exnihilocreatio.Hammer;
 
-//recipes.remove(<exnihilocreatio:item_material:1>);
-recipes.addShapeless("ia_porcelain_clay", <exnihilocreatio:item_material:1> * 8, [<ore:clayBall>, <ore:clayBall>, <ore:clayBall>, <ore:dustNetherQuartz>, <ore:dyeWhite>, <ore:dustAsh>]);
 //mesh
 recipes.remove(<exnihilocreatio:item_mesh:1>);
 recipes.addShaped("ia_string_mesh",

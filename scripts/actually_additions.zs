@@ -236,9 +236,9 @@ recipes.addShaped("ia_wooden_frame", <actuallyadditions:block_misc:4> * 4, [
 ]);
 recipes.remove(<actuallyadditions:block_giant_chest>);
 recipes.addShaped("ia_crate1", <actuallyadditions:block_giant_chest>, [
-	[<erebus:bamboo_crate>, <immersiveengineering:wooden_device0>, <erebus:bamboo_crate>], 
-	[<immersiveengineering:wooden_device0>, <actuallyadditions:block_misc:4>, <immersiveengineering:wooden_device0>], 
-	[<erebus:bamboo_crate>, <immersiveengineering:wooden_device0>, <erebus:bamboo_crate>]
+	[<erebus:bamboo_crate>, <immersiveengineering:wooden_device0> | <ironchest:iron_chest:3>, <erebus:bamboo_crate>], 
+	[<immersiveengineering:wooden_device0> | <ironchest:iron_chest:3>, <actuallyadditions:block_misc:4>, <immersiveengineering:wooden_device0> | <ironchest:iron_chest:3>], 
+	[<erebus:bamboo_crate>, <immersiveengineering:wooden_device0> | <ironchest:iron_chest:3>, <erebus:bamboo_crate>]
 ]);
 
 recipes.remove(<actuallyadditions:block_atomic_reconstructor>);

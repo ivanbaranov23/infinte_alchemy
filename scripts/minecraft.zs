@@ -179,79 +179,7 @@ recipes.remove(<minecraft:paper>);
 		[<ore:stone>, <contenttweaker:mekanized_steel_plate>, <ore:stone>]
 	]);
 }
-{//chests
-	recipes.removeByMod("ironchest");
-	recipes.addShaped("ia_copper_chest", <ironchest:iron_chest:3>, [
-		[<extrautils2:minichest>, <ore:plateCopper>, <extrautils2:minichest>], 
-		[<ore:stickCopper>, <ore:chestWood>, <ore:stickCopper>], 
-		[<extrautils2:minichest>, <ore:plateCopper>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_iron_chest", <ironchest:iron_chest>, [
-		[<extrautils2:minichest>, <ore:plateIron>, <extrautils2:minichest>], 
-		[<ore:stickIron>, <ironchest:iron_chest:3>, <ore:stickIron>], 
-		[<extrautils2:minichest>, <ore:plateIron>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_silver_chest", <ironchest:iron_chest:4>, [
-		[<extrautils2:minichest>, <ore:plateSilver>, <extrautils2:minichest>], 
-		[<ore:stickSilver>, <ironchest:iron_chest>, <ore:stickSilver>], 
-		[<extrautils2:minichest>, <ore:plateSilver>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_gold_chest", <ironchest:iron_chest:1>, [
-		[<extrautils2:minichest>, <ore:plateGold>, <extrautils2:minichest>], 
-		[<ore:stickGold>, <ironchest:iron_chest:4>, <ore:stickGold>], 
-		[<extrautils2:minichest>, <ore:plateGold>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_diamond_chest", <ironchest:iron_chest:2>, [
-		[<extrautils2:minichest>, <ore:gearDiamond>, <extrautils2:minichest>], 
-		[<ore:plateDiamond>, <ironchest:iron_chest:1>, <ore:plateDiamond>], 
-		[<extrautils2:minichest>, <ore:gearDiamond>, <extrautils2:minichest>]
-	]);
 
-	recipes.addShaped("ia_obsidian_chest", <ironchest:iron_chest:6>, [
-		[<ore:runedObsidian>, <ore:runedObsidian>, <ore:runedObsidian>], 
-		[<ore:runedObsidian>, <ironchest:iron_chest:2>, <ore:runedObsidian>], 
-		[<ore:runedObsidian>, <ore:runedObsidian>, <ore:runedObsidian>]
-	]);
-	recipes.addShaped("ia_crystal_chest", <ironchest:iron_chest:5>, [
-		[<integratedterminals:menril_glass>, <integratedterminals:menril_glass>, <integratedterminals:menril_glass>], 
-		[<integratedterminals:menril_glass>, <ironchest:iron_chest:2>, <integratedterminals:menril_glass>], 
-		[<integratedterminals:menril_glass>, <integratedterminals:menril_glass>, <integratedterminals:menril_glass>]
-	]);
-
-	
-}
-{//chest upgrades
-	recipes.addShaped("ia_wood_copper_chest_upgrade", <ironchest:wood_copper_chest_upgrade>, [
-		[<extrautils2:minichest>, <ore:plateCopper>, <extrautils2:minichest>], 
-		[<ore:stickCopper>, <ore:plankWood>, <ore:stickCopper>], 
-		[<extrautils2:minichest>, <ore:plateCopper>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_wood_iron_chest_upgrade", <ironchest:wood_iron_chest_upgrade>, [
-		[<extrautils2:minichest>, <ore:plateIron>, <extrautils2:minichest>], 
-		[<ore:stickIron>, <ironchest:wood_copper_chest_upgrade>, <ore:stickIron>], 
-		[<extrautils2:minichest>, <ore:plateIron>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_copper_iron_chest_upgrade", <ironchest:copper_iron_chest_upgrade>, [
-		[<extrautils2:minichest>, <ore:plateIron>, <extrautils2:minichest>], 
-		[<ore:stickIron>, <ore:ingotCopper>, <ore:stickIron>], 
-		[<extrautils2:minichest>, <ore:plateIron>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_copper_silver_chest_upgrade", <ironchest:copper_silver_chest_upgrade>, [
-		[<extrautils2:minichest>, <ore:plateSilver>, <extrautils2:minichest>], 
-		[<ore:stickSilver>, <ironchest:copper_iron_chest_upgrade>, <ore:stickSilver>], 
-		[<extrautils2:minichest>, <ore:plateSilver>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_silver_gold_chest_upgrade", <ironchest:silver_gold_chest_upgrade>, [
-		[<extrautils2:minichest>, <ore:plateGold>, <extrautils2:minichest>], 
-		[<ore:stickGold>, <ore:ingotSilver>, <ore:stickGold>], 
-		[<extrautils2:minichest>, <ore:plateGold>, <extrautils2:minichest>]
-	]);
-	recipes.addShaped("ia_gold_diamond_chest_upgrade", <ironchest:gold_diamond_chest_upgrade>, [
-		[<extrautils2:minichest>, <ore:gearDiamond>, <extrautils2:minichest>], 
-		[<ore:plateDiamond>, <ore:ingotGold>, <ore:plateDiamond>], 
-		[<extrautils2:minichest>, <ore:gearDiamond>, <extrautils2:minichest>]
-	]);
-}
 {//furnaces
 	recipes.removeByMod("morefurnaces");
 	recipes.addShaped("ia_copper_furnace", <morefurnaces:furnaceblock:5>, [

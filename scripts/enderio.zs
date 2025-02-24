@@ -423,13 +423,6 @@ recipes.addShaped("ia_dark_steel_direct", <enderio:item_dark_steel_upgrade:1>.wi
 }
 
 
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:76>);
-recipes.addShapeless("ia_clay_glowstone", <enderio:item_material:76>, [
-	<deepmoblearning:polymer_clay>, <contenttweaker:insulation_strand>, 
-	<ore:crystalTiberium>, <enderio:block_holy_fog>, 
-	<liquid:clay> * 2000
-]);
-mods.enderio.SagMill.removeRecipe(<enderio:item_material:76>);
 
 
 {//balls

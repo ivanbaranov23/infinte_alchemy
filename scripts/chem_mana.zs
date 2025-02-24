@@ -7,6 +7,24 @@ import mods.thermalexpansion.Imbuer;
 
 import mods.modularmachinery.RecipeBuilder;
 
+{//tartaric gel
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:tartaric_gel> * 250],
+        [
+            <prodigytech:tartaric_stoker> * 32,
+            <moretcon:dustknightmetal> * 4,
+            <enderio:item_material:75> * 4
+        ], [
+            <liquid:tartaric_acid> * 2000,
+            <liquid:evil_blood> * 500
+        ], 40, 25000
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(
+		<contenttweaker:tartaric_dust>, 
+		<bloodmagic:soul_gem>.withTag({souls: 64.0, demonWillType: "destructive"}), <liquid:tartaric_gel> * 1000, 
+		25000
+	);
+}
 
 {//dense hydrogen
     scripts.content_machines.addAdvancedMixerRecipe(

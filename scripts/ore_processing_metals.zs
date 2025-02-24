@@ -224,7 +224,7 @@ scripts.ore_processing.addTingalumOvenRecipe([<botania:manaresource:4>], [
     <extendedcrafting:singularity_custom:11> * 2,
     <roots:terra_moss> * 64, 
     <botania:quartz:1>
-], 100 * 1000 * 1000, 30);
+], 100 * 1000 * 1000, 30, 4000);
 
 
 //polonium

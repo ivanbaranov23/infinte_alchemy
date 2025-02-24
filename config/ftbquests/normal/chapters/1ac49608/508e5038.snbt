@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: 7.0d,
+	text: [
+		"You can use this block to passive/program one recipe in an extended crafting table."
+	],
+	dependencies: [
+		"e817dd96"
+	],
+	optional: true,
+	tasks: [{
+		uid: "41b89db1",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:interface"
+		}]
+	}]
+}

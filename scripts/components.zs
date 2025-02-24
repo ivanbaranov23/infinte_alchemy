@@ -358,7 +358,7 @@ import mods.mekanism.infuser;
 				<ore:circuitUltimate> * 4,
 				<contenttweaker:bug_chip>
 			],
-			<liquid:electric_manyullyn> * 144,
+			<liquid:electric_manyullyn> * 576,
 			20, 1600
 		);
 		mods.thermalexpansion.InductionSmelter.addRecipe(
@@ -380,7 +380,7 @@ import mods.mekanism.infuser;
 				<contenttweaker:cheesy_circuit> * 4,
 				<contenttweaker:bug_chip>
 			],
-			<liquid:electric_manyullyn> * 144,
+			<liquid:electric_manyullyn> * 576,
 			20, 1600
 		);
 	}
@@ -1699,14 +1699,14 @@ scripts.content_machines.addAssemblerRecipe(
 }
 {//mana chip
 	mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:rune_mana_chip>, 1000000 * 200, 1000000, <contenttweaker:rune_lightning>, 
+        <contenttweaker:rune_mana_chip>, 10000000 * 200, 10000000, <contenttweaker:rune_lightning>, 
         [
             <contenttweaker:slime_cell>,
 			<enderio:item_capacitor_melodic>,
 			<enderio:item_capacitor_melodic>,
 			<botania:manaresource:1>,
 			<botania:manaresource:1>,
-			<contenttweaker:soul_codex8>,
+			<contenttweaker:tablet_good>,
 			<botania:rune:8>,
 			<botania:rune:8>
         ]
