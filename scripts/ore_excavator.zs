@@ -266,6 +266,11 @@ function addFluidReservoir(
     <ore:oreOverworldElectrotine>.add(<contenttweaker:electrotine_ore>);
 
     <ore:oreOverworldDiamond>.add(<minecraft:diamond_ore>);
+    <ore:oreOverworldLapis>.add(<minecraft:lapis_ore>);
+    <ore:oreOverworldQuartz>.add(<mysticalworld:quartz_ore>);
+    <ore:oreOverworldCertusQuartz>.add(<appliedenergistics2:quartz_ore>);
+    <ore:oreOverworldChargedCertusQuartz>.add(<appliedenergistics2:charged_quartz_ore>);
+    <ore:oreOverworldBlackQuartz>.add(<actuallyadditions:block_misc:3>);
     <ore:oreOverworldGravitite>.add(<netherendingores:ore_other_1:7>);
 
     
@@ -390,11 +395,17 @@ var mil as int = 1000000;
     addExcavator("Tin", 30, ["oreOverworldTin", "oreOverworldSilver"], [0.8, 0.2], [0, -11325]);
     addExcavator("Electrum", 30, ["oreOverworldGold", "oreOverworldSilver", "oreOverworldElectrotine"], [0.45, 0.45, 0.1], [0, -11325]);
     addExcavator("Nickel", 30, ["oreOverworldNickel", "oreOverworldIron", "oreOverworldPlatinum"], [0.75, 0.2, 0.05], [0, -11325]);
-    addExcavator("BauxiteVein", 20, ["oreOverworldBauxite", "oreOverworldAluminum", "oreOverworldGallium"], [0.79, 0.2, 0.01], [0, -11325]);
+    addExcavator("BauxiteVein", 20, ["oreOverworldBauxite", "oreOverworldAluminum", "oreOverworldGallium"], [0.78, 0.2, 0.02], [0, -11325]);
 
-    addExcavator("Coal1", 30, ["oreOverworlCoal"], [1], [0, -11325]);
-    addExcavator("Coal2", 20, ["oreOverworlCoal", "oreOverworldDiamond"], [0.99, 0.01], [0, -11325]);
+    addExcavator("Coal1", 30, ["oreOverworldCoal"], [1], [0, -11325]);
+    addExcavator("Coal2", 20, ["oreOverworldCoal", "oreOverworldDiamond"], [0.99, 0.01], [0, -11325]);
     addExcavator("Redstone", 20, ["oreOverworldRedstone", "oreOverworldRuby"], [0.97, 0.03], [0, -11325]);
+
+    addExcavator("Lapis1", 20, ["oreOverworldLapis", "oreOverworldElectrotine", "dustSulfur"], [0.85, 0.1, 0.05], [0, -11325]);
+    addExcavator("Lapis2", 20, ["oreOverworldLapis", "oreOverworldCertusQuartz"], [0.85, 0.15], [0, -11325]);
+    addExcavator("Quartz", 10, ["oreOverworldQuartz", "oreOverworldCertusQuartz", "oreOverworldBlackQuartz"], [0.65, 0.3, 0.05], [0, -11325]);
+    addExcavator("Certus Quartz", 10, ["oreOverworldCertusQuartz", "oreOverworldChargedCertusQuartz", "oreOverworldBlackQuartz"], [0.65, 0.25, 0.1], [0, -11325]);
+    
 
     addExcavator("Titanium and Garbage", 5, ["oreOverworlTitanium", "oreOverworldSapphire", "oreOverworldNeodymium", "oreVibranium"], [0.90, 0.07, 0.02, 0.01], [0, -11325]);
 

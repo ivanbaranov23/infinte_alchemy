@@ -219,6 +219,18 @@ Distillation.addRecipe(
 			],
 			20, 2000
 		);
+		scripts.content_machines.addAdvancedMixerRecipe(
+			[],
+			[<liquid:evil_blood> * 400],
+			[<extrautils2:ingredients:10>, <twilightforest:fiery_blood>, <contenttweaker:blood_runic_dust>],
+			[
+				<liquid:blood> * 2000,
+				<liquid:if.protein> * 500,
+				<liquid:rot> * 1000,
+				<liquid:pilkon_blood> * 250
+			],
+			20, 2000
+		);
 	}
 }
 
@@ -274,12 +286,12 @@ TEImbuer.addRecipe(<liquid:potion>.withTag({Potion: "minecraft:awkward"}) * 1000
 
 //seaweed water -> fertilizer
 TEImbuer.addRecipe(<liquid:fertilizer> * (250), <thermalfoundation:fertilizer>, <liquid:pure_water> * 1000, 4800);
-TEImbuer.addRecipe(<liquid:fertilizer> * (250 + 100), <thermalfoundation:fertilizer:1>, <liquid:pure_water> * 1000, 4800);
-TEImbuer.addRecipe(<liquid:fertilizer> * (250 + 200), <thermalfoundation:fertilizer:2>, <liquid:pure_water> * 1000, 4800);
+TEImbuer.addRecipe(<liquid:fertilizer> * (250 + 250), <thermalfoundation:fertilizer:1>, <liquid:pure_water> * 1000, 4800);
+TEImbuer.addRecipe(<liquid:fertilizer> * (250 + 500), <thermalfoundation:fertilizer:2>, <liquid:pure_water> * 1000, 4800);
 
 TEImbuer.addRecipe(<liquid:fertilizer> * (400), <thermalfoundation:fertilizer>, <liquid:seaweed_rich_water> * 1000, 3000);
-TEImbuer.addRecipe(<liquid:fertilizer> * (400 + 100), <thermalfoundation:fertilizer:1>, <liquid:seaweed_rich_water> * 1000, 3000);
-TEImbuer.addRecipe(<liquid:fertilizer> * (400 + 200), <thermalfoundation:fertilizer:2>, <liquid:seaweed_rich_water> * 1000, 3000);
+TEImbuer.addRecipe(<liquid:fertilizer> * (400 + 400), <thermalfoundation:fertilizer:1>, <liquid:seaweed_rich_water> * 1000, 3000);
+TEImbuer.addRecipe(<liquid:fertilizer> * (400 + 800), <thermalfoundation:fertilizer:2>, <liquid:seaweed_rich_water> * 1000, 3000);
 
 
 //witch water alt recipes

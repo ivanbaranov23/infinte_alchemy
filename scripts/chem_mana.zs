@@ -12,11 +12,13 @@ import mods.modularmachinery.RecipeBuilder;
         [], [<liquid:tartaric_gel> * 250],
         [
             <prodigytech:tartaric_stoker> * 32,
-            <moretcon:dustknightmetal> * 4,
-            <enderio:item_material:75> * 4
+            <moretcon:dustknightmetal> * 12,
+            <enderio:item_material:75> * 4,
+            <contenttweaker:reagent_wood>
         ], [
             <liquid:tartaric_acid> * 2000,
-            <liquid:evil_blood> * 500
+            <liquid:evil_blood> * 500,
+            <liquid:vapor_of_levity> * 500
         ], 40, 25000
     );
     mods.thermalexpansion.Transposer.addFillRecipe(

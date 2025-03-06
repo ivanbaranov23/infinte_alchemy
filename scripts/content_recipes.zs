@@ -295,26 +295,25 @@ recipes.addShaped("ia_stone_idol", <contenttweaker:stone_idol>, [
 
 
 
-{//silicon
-    scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 100, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <appliedenergistics2:material:5>, 128, 40);
-    scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 120, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <mysticalagriculture:silicon_essence>, 128, 40);
-    mods.alchemistry.Evaporator.addRecipe(<contenttweaker:solar_silicon>, <liquid:solar_silicon_solution> * 1000);
 
-    recipes.remove(<projectred-core:resource_item:250>);
-    recipes.addShapeless("ia_sandy_coal1", <projectred-core:resource_item:250>, [<contenttweaker:charcoal_ball>, <extrautils2:decorativesolid:4>, <extrautils2:decorativesolid:4>, <contenttweaker:crystal_coal>]);
-    recipes.addShapeless("ia_sandy_coal2", <projectred-core:resource_item:250> * 3, [<contenttweaker:charcoal_ball>, <extrautils2:decorativesolid:4>, <extrautils2:decorativesolid:4>, <contenttweaker:crystal_coal>, <contenttweaker:sandworm_chitin>]);
 
-    furnace.remove(<projectred-core:resource_item:300>);
-    mods.enderio.AlloySmelter.addRecipe(<projectred-core:resource_item:300>, 
-        [<projectred-core:resource_item:250> * 4, <appliedenergistics2:material:5> * 32, <contenttweaker:solar_silicon> * 4], 
-        50000
-    );
-
-    recipes.remove(<projectred-core:resource_item:301>);
-    scripts.helper.addSawRecipe(<projectred-core:resource_item:300>, <projectred-core:resource_item:301> * 8);
-}
-
-recipes.addShapeless("ia_crystal_coal", <contenttweaker:crystal_coal>, [<actuallyadditions:item_misc:22>, <minecraft:coal>, <thermalfoundation:material:802>, <extrautils2:ingredients:4>, <actuallyadditions:item_crystal:3>]);
+recipes.addShapeless("ia_crystal_coal", <contenttweaker:crystal_coal>, [
+    <actuallyadditions:item_misc:22>, 
+    <minecraft:coal>, 
+    <thermalfoundation:material:802>, 
+    <extrautils2:ingredients:4>, 
+    <prodigytech:fuel_pellet_64>,
+    <actuallyadditions:item_crystal:3>
+]);
+recipes.addShapeless("ia_crystal_coal2", <contenttweaker:crystal_coal> * 2, [
+    <actuallyadditions:item_misc:22>, 
+    <minecraft:coal>, 
+    <thermalfoundation:material:802>, 
+    <extrautils2:ingredients:4>, 
+    <prodigytech:fuel_pellet_64>,
+    <actuallyadditions:item_crystal:3>,
+    <contenttweaker:enriched_biocoal>
+]);
 furnace.setFuel(<contenttweaker:crystal_coal>, 200 * 512);
 
 

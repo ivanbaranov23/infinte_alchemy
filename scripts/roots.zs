@@ -110,14 +110,15 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
             <minecraft:wheat_seeds>,
             <minecraft:melon_seeds>,
             <minecraft:pumpkin_seeds>,
-            <immersiveengineering:seed>
+            <immersiveengineering:seed>,
+            <exnihilocreatio:item_seed_sugarcane>,
+            <actuallyadditions:item_canola_seed>
         ]
     );
     scripts.jei.addJEIhint(
         [<minecraft:tallgrass:1>], [], 
         [
-            <minecraft:tallgrass:1>.withDisplayName("Punch to get the following items:"),
-            <minecraft:tallgrass:1>.withDisplayName("this are only some")
+            <minecraft:tallgrass:1>.withDisplayName("Punch to get the following items:")
         ], 
         [
             <roots:wildroot>,
@@ -129,11 +130,7 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
         ]
     );
 }
-Mortar.addRecipe("coral", 
-    <contenttweaker:coral_dust>,
-    [<biomesoplenty:coral>, <biomesoplenty:coral:1>, <biomesoplenty:coral:2>, <biomesoplenty:coral:3>, <ore:coralFeed>]
-);
-<contenttweaker:coral_dust>.addTooltip("You are the second worst thing to happen to the corals");
+
 
 Pyre.addRecipe("modularium_paste_pyre",
     <contenttweaker:modularium_paste> * 4,
@@ -452,6 +449,13 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
         <blockstate:biomesoplenty:sapling_1:variant=flowering>, 
         BlockStateAbove.create(StatePredicate.create(<blockstate:contenttweaker:flower_steel_block>))
     );
+
+    Transmutation.addStateToStateRecipe(
+        "sulfur", 
+        PropertyPredicate.create(<blockstate:minecraft:wool:color=yellow> as IBlockState, "color"),
+        <blockstate:natura:clouds:type=sulfur>,
+        null //BlockStateAbove.create(StatePredicate.create(<blockstate:contenttweaker:flower_steel_block>))
+    );
 }
 {//rituals recipes
     Rituals.modifyRitual(
@@ -698,15 +702,24 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
     //transmut
     Chrysopoeia.addRecipe("transmut1", <contenttweaker:singularity_dust>, <contenttweaker:transmut_gel>);
     Chrysopoeia.addRecipe("transmut2", <prodigytech:primordium> * 64, <contenttweaker:transmut_gel>);
-    Chrysopoeia.addRecipe("transmut3", <contenttweaker:entwood_dust> * 24, <contenttweaker:transmut_gel>);
+    Chrysopoeia.addRecipe("transmut3", <contenttweaker:entwood_dust> * 12, <contenttweaker:transmut_gel>);
+    Chrysopoeia.addRecipe("transmut4", <thermalfoundation:material:1028> * 8, <contenttweaker:transmut_gel>);
 
     //bamboo
     Chrysopoeia.addRecipe("bamboo1", <erebus:sapling_bamboo>, <biomesoplenty:sapling_0:2>);
     Chrysopoeia.addRecipe("bamboo2", <biomesoplenty:sapling_0:2>, <harvestcraft:bambooshootitem>);
 
-    //borer
+    //entwood_dust
+    Chrysopoeia.addRecipe("entwood_dust", <erebus:materials:7> * 8, <contenttweaker:entwood_dust>);
+    Chrysopoeia.addRecipe("entwood_dust2", <moretcon:dustironwood> * 6, <contenttweaker:entwood_dust>);
+
+    //twilight
     Chrysopoeia.addRecipe("borer_essence1", <erebus:materials:18> * 6, <twilightforest:borer_essence>);
-    Chrysopoeia.addRecipe("borer_essence2", <mysticalagriculture:crafting> * 64, <twilightforest:borer_essence>);
+    Chrysopoeia.addRecipe("borer_essence2", <mysticalagriculture:crafting> * 32, <twilightforest:borer_essence>);
+
+    Chrysopoeia.addRecipe("twilight_sapling", <ore:treeSapling> * 16, <twilightforest:twilight_sapling>);
+    Chrysopoeia.addRecipe("twilight_root", <twilightforest:root>, <twilightforest:root:1>);
+
 
     Chrysopoeia.addRecipe("glowstone", <minecraft:gold_block>, <minecraft:glowstone>);
 }

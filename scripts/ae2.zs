@@ -84,6 +84,18 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 
 }
 
+function add_ae2_process_rec(output as IItemStack, input as IItemStack, topInput as IItemStack, bottomInput as IItemStack){
+	Inscriber.addRecipe(output, input, false, topInput, bottomInput);
+	scripts.content_machines.addAssemblerRecipe(
+		[output * 16],
+		[
+			input * 16,
+			topInput * 16,
+			bottomInput * 16
+		], 
+		<liquid:fluix_steel> * 144, 5, 1000
+	);
+}
 {//circuits and processors
 	//Inscriber.removeRecipe(output);
 	//Inscriber.addRecipe(IItemStack output, IItemStack input, boolean inscribe, @Optional IItemStack topInput, @Optional IItemStack bottomInput);
@@ -131,7 +143,7 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 		[<contenttweaker:redstone_inlay> * 4],
 		[<immersiveengineering:wirecoil:5>, <projectred-core:resource_item:103> * 2],
 		null,
-		10, 64
+		5, 64
 	);
 
 	//silicon
@@ -153,11 +165,17 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 		//certus
 		//Inscriber.removeRecipe();
 		Inscriber.removeRecipe(<appliedenergistics2:material:23>);
-		Inscriber.addRecipe(<appliedenergistics2:material:23>, <contenttweaker:redstone_inlay>, false, <appliedenergistics2:material:16>, <appliedenergistics2:material:20>);
+		add_ae2_process_rec(<appliedenergistics2:material:23>, <contenttweaker:redstone_inlay>, <appliedenergistics2:material:16>, <appliedenergistics2:material:20>);
+
+		scripts.content_machines.addAssemblerRecipe(
+			[<appliedenergistics2:material:16> * 16],
+			[<appliedenergistics2:material:10> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
 
 		//gambrosium
 		Inscriber.addRecipe(<contenttweaker:gambrosium_circuit> * 4, <contenttweaker:gambrosium_wafer>, true, <appliedenergistics2:material:13>);
-		Inscriber.addRecipe(<contenttweaker:gambrosium_processor>, <contenttweaker:neuron_inlay>, false, <contenttweaker:gambrosium_circuit>, <appliedenergistics2:material:23>);
+		add_ae2_process_rec(<contenttweaker:gambrosium_processor>, <contenttweaker:neuron_inlay>, <contenttweaker:gambrosium_circuit>, <appliedenergistics2:material:23>);
 		scripts.content_machines.addBioAssemblerRecipe(
 			[<contenttweaker:gambrosium_wafer> * 12], null,
 			[
@@ -194,7 +212,7 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 			20, 10000
 		);
 		Inscriber.addRecipe(<contenttweaker:layered_circuit> * 4, <contenttweaker:layered_wafer>, true, <appliedenergistics2:material:13>);
-		Inscriber.addRecipe(<contenttweaker:layered_processor>, <contenttweaker:neuron2_inlay>, false, <contenttweaker:layered_circuit>, <contenttweaker:gambrosium_processor>);
+		add_ae2_process_rec(<contenttweaker:layered_processor>, <contenttweaker:neuron2_inlay>, <contenttweaker:layered_circuit>, <contenttweaker:gambrosium_processor>);
 	}
 
 	{//engineer
@@ -205,15 +223,33 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 		Inscriber.addRecipe(<appliedenergistics2:material:17>, <moreplates:diamond_plate>, true, <appliedenergistics2:material:14>);
 		Inscriber.addRecipe(<appliedenergistics2:material:17>, <actuallyadditions:item_crystal:2>, true, <appliedenergistics2:material:14>);
 
-		Inscriber.addRecipe(<appliedenergistics2:material:24>, <contenttweaker:redstone_inlay>, false, <appliedenergistics2:material:17>, <appliedenergistics2:material:20>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<appliedenergistics2:material:17> * 16],
+			[<actuallyadditions:item_crystal:2> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<appliedenergistics2:material:24>, <contenttweaker:redstone_inlay>, <appliedenergistics2:material:17>, <appliedenergistics2:material:20>);
 
 		//fluxed
-		Inscriber.addRecipe(<contenttweaker:fluxed_circuit>, <redstonearsenal:material:128>, true, <appliedenergistics2:material:14>);		
-		Inscriber.addRecipe(<contenttweaker:fluxed_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:fluxed_circuit>, <appliedenergistics2:material:24>);
+		Inscriber.addRecipe(<contenttweaker:fluxed_circuit>, <redstonearsenal:material:128>, true, <appliedenergistics2:material:14>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:fluxed_circuit> * 16],
+			[<redstonearsenal:material:128> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:fluxed_processor>, <contenttweaker:redstone_inlay>, <contenttweaker:fluxed_circuit>, <appliedenergistics2:material:24>);
 
 		//peridotite
-		Inscriber.addRecipe(<contenttweaker:peridotite_circuit>, <contenttweaker:peridotite_sheet>, true, <appliedenergistics2:material:14>);		
-		Inscriber.addRecipe(<contenttweaker:peridotite_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:peridotite_circuit>, <contenttweaker:fluxed_processor>);
+		Inscriber.addRecipe(<contenttweaker:peridotite_circuit>, <contenttweaker:peridotite_sheet>, true, <appliedenergistics2:material:14>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:peridotite_circuit> * 16],
+			[<contenttweaker:peridotite_sheet> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:peridotite_processor>, <contenttweaker:redstone_inlay>, <contenttweaker:peridotite_circuit>, <contenttweaker:fluxed_processor>);
 
 	}
 	
@@ -225,19 +261,43 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 		Inscriber.addRecipe(<appliedenergistics2:material:18>, <thermalfoundation:material:33>, true, <appliedenergistics2:material:15>);
 		Inscriber.addRecipe(<appliedenergistics2:material:18>, <contenttweaker:goold>, true, <appliedenergistics2:material:15>);
 
-		Inscriber.addRecipe(<appliedenergistics2:material:22>, <contenttweaker:redstone_inlay>, false, <appliedenergistics2:material:18>, <appliedenergistics2:material:20>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<appliedenergistics2:material:18> * 16],
+			[<contenttweaker:goold> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<appliedenergistics2:material:22>, <contenttweaker:redstone_inlay>, <appliedenergistics2:material:18>, <appliedenergistics2:material:20>);
 
 		//fiery
 		Inscriber.addRecipe(<contenttweaker:fiery_circuit>, <moreplates:fiery_plate>, true, <appliedenergistics2:material:15>);
-		Inscriber.addRecipe(<contenttweaker:fiery_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:fiery_circuit>, <appliedenergistics2:material:22>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:fiery_circuit> * 16],
+			[<moreplates:fiery_plate> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:fiery_processor>, <contenttweaker:redstone_inlay>, <contenttweaker:fiery_circuit>, <appliedenergistics2:material:22>);
 
 
 		//cursed
 		Inscriber.addRecipe(<contenttweaker:cursed_circuit>, <contenttweaker:cursed_gold_plate>, true, <appliedenergistics2:material:15>);
-		Inscriber.addRecipe(<contenttweaker:cursed_processor>, <contenttweaker:neuron_inlay>, false, <contenttweaker:cursed_circuit>, <contenttweaker:fiery_processor>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:cursed_circuit> * 16],
+			[<contenttweaker:cursed_gold_plate> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:cursed_processor>, <contenttweaker:neuron_inlay>, <contenttweaker:cursed_circuit>, <contenttweaker:fiery_processor>);
 		//living
 		Inscriber.addRecipe(<contenttweaker:living_circuit>, <contenttweaker:living_steel_plate>, true, <appliedenergistics2:material:15>);
-		Inscriber.addRecipe(<contenttweaker:living_processor>, <contenttweaker:neuron2_inlay>, false, <contenttweaker:living_circuit>, <contenttweaker:cursed_processor>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:living_circuit> * 16],
+			[<contenttweaker:living_steel_plate> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:living_processor>, <contenttweaker:neuron2_inlay>, <contenttweaker:living_circuit>, <contenttweaker:cursed_processor>);
 		
 
 	}
@@ -246,25 +306,65 @@ mods.enderio.AlloySmelter.addRecipe(<appliedenergistics2:quartz_vibrant_glass>,
 	{//fluid
 		Inscriber.addRecipe(<contenttweaker:fluid_circuit>, <contenttweaker:watertight_steel_plate>, true, <contenttweaker:press_fluid>);
 		Inscriber.addRecipe(<contenttweaker:fluid_circuit>, <actuallyadditions:item_crystal:1>, true, <contenttweaker:press_fluid>);
-		Inscriber.addRecipe(<contenttweaker:fluid_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:fluid_circuit>, <appliedenergistics2:material:20>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:fluid_circuit> * 16],
+			[<actuallyadditions:item_crystal:1> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:fluid_processor>, <contenttweaker:redstone_inlay>, <contenttweaker:fluid_circuit>, <appliedenergistics2:material:20>);
+		
 		//enderium
 		Inscriber.addRecipe(<contenttweaker:enderium_circuit>, <thermalfoundation:material:359>, true, <contenttweaker:press_fluid>);
-		Inscriber.addRecipe(<contenttweaker:enderium_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:enderium_circuit>, <contenttweaker:fluid_processor>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:enderium_circuit> * 16],
+			[<thermalfoundation:material:359> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+		
+		add_ae2_process_rec(<contenttweaker:enderium_processor>, <contenttweaker:redstone_inlay>, <contenttweaker:enderium_circuit>, <contenttweaker:fluid_processor>);
+		
 		//potion
 		Inscriber.addRecipe(<contenttweaker:potion_circuit>, <contenttweaker:solar_potion_zinc_plate>, true, <contenttweaker:press_fluid>);
-		Inscriber.addRecipe(<contenttweaker:potion_processor>, <contenttweaker:neuron_inlay>, false, <contenttweaker:potion_circuit>, <contenttweaker:enderium_processor>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:potion_circuit> * 16],
+			[<contenttweaker:solar_potion_zinc_plate> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:potion_processor>, <contenttweaker:neuron_inlay>, <contenttweaker:potion_circuit>, <contenttweaker:enderium_processor>);
 	}
 
 
 	{//gas
 		Inscriber.addRecipe(<contenttweaker:gas_circuit>, <moreplates:osgloglas_plate>, true, <contenttweaker:press_gas>);
-		Inscriber.addRecipe(<contenttweaker:gas_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:gas_circuit>, <appliedenergistics2:material:20>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:gas_circuit> * 16],
+			[<moreplates:osgloglas_plate> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:gas_processor>, <contenttweaker:redstone_inlay>, <contenttweaker:gas_circuit>, <appliedenergistics2:material:20>);
+		
 		//osgloridium
 		Inscriber.addRecipe(<contenttweaker:osgloridium_circuit>, <contenttweaker:osgloridium_plate>, true, <contenttweaker:press_gas>);
-		Inscriber.addRecipe(<contenttweaker:osgloridium_processor>, <contenttweaker:redstone_inlay>, false, <contenttweaker:osgloridium_circuit>, <contenttweaker:gas_processor>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:osgloridium_circuit> * 16],
+			[<contenttweaker:osgloridium_plate> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:osgloridium_processor>, <contenttweaker:redstone_inlay>, <contenttweaker:osgloridium_circuit>, <contenttweaker:gas_processor>);
+		
 		//palladium
 		Inscriber.addRecipe(<contenttweaker:palladium_circuit>, <contenttweaker:palladium_plate>, true, <contenttweaker:press_gas>);
-		Inscriber.addRecipe(<contenttweaker:palladium_processor>, <contenttweaker:neuron_inlay>, false, <contenttweaker:palladium_circuit>, <contenttweaker:osgloridium_processor>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:palladium_circuit> * 16],
+			[<contenttweaker:palladium_plate> * 16], 
+			<liquid:fluix_steel> * 144, 5, 1000
+		);
+
+		add_ae2_process_rec(<contenttweaker:palladium_processor>, <contenttweaker:neuron_inlay>, <contenttweaker:palladium_circuit>, <contenttweaker:osgloridium_processor>);
 	}	
 }
 

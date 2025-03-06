@@ -230,6 +230,80 @@ import mods.modularmachinery.RecipeBuilder;
         <taiga:dilithium_crystal>, <gas:tritium> * 1000, 1000, 20
     );
 }
+{//silicon
+    mods.mekanism.crusher.removeRecipe(<ore:itemSilicon>);
+
+    scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 100, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <appliedenergistics2:material:5>, 128, 40);
+    scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 120, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <mysticalagriculture:silicon_essence>, 128, 40);
+    mods.alchemistry.Evaporator.addRecipe(<contenttweaker:solar_silicon>, <liquid:solar_silicon_solution> * 1250);
+
+    recipes.remove(<projectred-core:resource_item:250>);
+    recipes.addShapeless("ia_sandy_coal1", <projectred-core:resource_item:250>, [<contenttweaker:charcoal_ball>, <extrautils2:decorativesolid:4>, <extrautils2:decorativesolid:4>, <contenttweaker:crystal_coal>]);
+    recipes.addShapeless("ia_sandy_coal2", <projectred-core:resource_item:250> * 3, [<contenttweaker:charcoal_ball>, <extrautils2:decorativesolid:4>, <extrautils2:decorativesolid:4>, <contenttweaker:crystal_coal>, <contenttweaker:sandworm_chitin>]);
+
+    furnace.remove(<projectred-core:resource_item:300>);
+    mods.enderio.AlloySmelter.addRecipe(<projectred-core:resource_item:300>, 
+        [<projectred-core:resource_item:250> * 4, <appliedenergistics2:material:5> * 48, <contenttweaker:solar_silicon> * 4], 
+        50000
+    );
+
+    recipes.remove(<projectred-core:resource_item:301>);
+    scripts.helper.addSawRecipe(<projectred-core:resource_item:300>, <projectred-core:resource_item:301> * 8);
+}
+
+{//redstone
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <minecraft:redstone>,
+        <mekanism:salt>, <liquid:redstone> * 250,
+        500
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <minecraft:redstone>,
+        <mekanism:otherdust:4>, <liquid:redstone> * 250,
+        500
+    );
+}
+{//electrotine
+    recipes.addShapeless("ia_electrotine", <projectred-core:resource_item:105> * 3, [
+        <thermalfoundation:material:97>, <thermalfoundation:material:97>, <thermalfoundation:material:97>, 
+        <enderio:item_material:32>, <enderio:item_material:32>, 
+        <contenttweaker:electric_stone_dust>, <twilightforest:borer_essence>, <botania:dye:11>
+    ]);
+    mods.thermalexpansion.Centrifuge.addRecipe(
+        [
+            <thermalfoundation:material:97> % 85, <enderio:item_material:32> % 30
+        ], <projectred-core:resource_item:105>, null, 
+        1000
+    );
+
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:electrotine> * 250, <projectred-core:resource_item:105>, 500);
+    Evaporator.addRecipe(<projectred-core:resource_item:105>, <liquid:electrotine> * 500);
+
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <projectred-core:resource_item:105>,
+        <mekanism:salt>, <liquid:electrotine> * 250,
+        500
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <projectred-core:resource_item:105>,
+        <mekanism:otherdust:4>, <liquid:electrotine> * 250,
+        500
+    );
+}
+{//glowstone
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <minecraft:glowstone_dust>,
+        <mekanism:salt>, <liquid:glowstone> * 250,
+        500
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <minecraft:glowstone_dust>,
+        <mekanism:otherdust:4>, <liquid:glowstone> * 250,
+        500
+    );
+}
+
+
 
 {//concrete
     {//leaded
@@ -805,7 +879,12 @@ scripts.content_machines.addFluidMixerRecipe(
 {//uranium
     scripts.helper.addFluidAlloyerRecipe(
         <contenttweaker:irradiated_compound>, 
-        <immersiveengineering:metal:5> * 2, <bigreactors:ingotyellorium>, <liquid:emerald> * 2000, 
+        <immersiveengineering:metal:5> * 4, <bigreactors:ingotyellorium> * 2, <liquid:emerald> * 2000, 
+        128, 40
+    );
+    scripts.helper.addFluidAlloyerRecipe(
+        <contenttweaker:irradiated_compound>, 
+        <immersiveengineering:metal:5> * 3, <bigreactors:ingotyellorium>, <liquid:liquidirradium> * 576, 
         128, 40
     );
     mods.thermalexpansion.InductionSmelter.addRecipe(

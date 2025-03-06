@@ -91,40 +91,48 @@ recipes.addShaped("ia_quartz_from_tiny", <minecraft:quartz>, [
 mods.roots.Mortar.addRecipe("ia_quartz", <appliedenergistics2:material:3>, [<minecraft:quartz>]);
 
 
-// plants
-//grass
-mods.mekanism.infuser.addRecipe("BIO", 20, <minecraft:dirt>, <minecraft:grass>);
-//mushrooms
-recipes.addShapeless(
-    "ia_red_mushroom_dup",
-    <minecraft:red_mushroom> * 3,
-    [<exnihilocreatio:item_material:3>, <minecraft:red_mushroom>]
-);
-recipes.addShapeless(
-    "ia_brown_mushroom_dup",
-    <minecraft:brown_mushroom> * 3,
-    [<exnihilocreatio:item_material:3>, <minecraft:brown_mushroom>]
-);
-//sugarcane
-recipes.addShapeless(
-	"ia_early_sugarcane",
-	<minecraft:reeds>,
-	[<exnihilocreatio:item_seed_sugarcane>]
-);
+{//plants
+	//grass
+	mods.mekanism.infuser.addRecipe("BIO", 20, <minecraft:dirt>, <minecraft:grass>);
+	//trees
+	mods.chisel.Carving.addGroup("vanillasapling");
+	mods.chisel.Carving.addVariation("vanillasapling", <minecraft:sapling>);
+	mods.chisel.Carving.addVariation("vanillasapling", <minecraft:sapling:1>);
+	mods.chisel.Carving.addVariation("vanillasapling", <minecraft:sapling:2>);
+	mods.chisel.Carving.addVariation("vanillasapling", <minecraft:sapling:3>);
+	mods.chisel.Carving.addVariation("vanillasapling", <minecraft:sapling:4>);
+	mods.chisel.Carving.addVariation("vanillasapling", <minecraft:sapling:5>);
+	//mushrooms
+	recipes.addShapeless(
+		"ia_red_mushroom_dup",
+		<minecraft:red_mushroom> * 3,
+		[<exnihilocreatio:item_material:3>, <minecraft:red_mushroom>]
+	);
+	recipes.addShapeless(
+		"ia_brown_mushroom_dup",
+		<minecraft:brown_mushroom> * 3,
+		[<exnihilocreatio:item_material:3>, <minecraft:brown_mushroom>]
+	);
+	//sugarcane
+	recipes.addShapeless(
+		"ia_early_sugarcane",
+		<minecraft:reeds>,
+		[<exnihilocreatio:item_seed_sugarcane>]
+	);
 
-//g apple
-recipes.removeByRecipeName("bhc:god_apple");
-recipes.addShaped("ia_g_apple_alt1", <minecraft:golden_apple:1>, [
-	[<minecraft:gold_block>, <extendedcrafting:singularity:5>, <minecraft:gold_block>],
-	[<extendedcrafting:singularity:5>, <minecraft:apple>, <extendedcrafting:singularity:5>],
-	[<minecraft:gold_block>, <extendedcrafting:singularity:5>, <minecraft:gold_block>]
-]);
-recipes.addShaped("ia_g_apple_alt2", <minecraft:golden_apple:1>, [
-	[<minecraft:gold_ingot>, <contenttweaker:vitamins>, <minecraft:gold_ingot>],
-	[<contenttweaker:vitamins>, <minecraft:apple>, <contenttweaker:vitamins>],
-	[<minecraft:gold_ingot>, <contenttweaker:vitamins>, <minecraft:gold_ingot>]
-]);
-
+	//g apple
+	recipes.removeByRecipeName("bhc:god_apple");
+	recipes.addShaped("ia_g_apple_alt1", <minecraft:golden_apple:1>, [
+		[<minecraft:gold_block>, <extendedcrafting:singularity:5>, <minecraft:gold_block>],
+		[<extendedcrafting:singularity:5>, <minecraft:apple>, <extendedcrafting:singularity:5>],
+		[<minecraft:gold_block>, <extendedcrafting:singularity:5>, <minecraft:gold_block>]
+	]);
+	recipes.addShaped("ia_g_apple_alt2", <minecraft:golden_apple:1>, [
+		[<minecraft:gold_ingot>, <contenttweaker:vitamins>, <minecraft:gold_ingot>],
+		[<contenttweaker:vitamins>, <minecraft:apple>, <contenttweaker:vitamins>],
+		[<minecraft:gold_ingot>, <contenttweaker:vitamins>, <minecraft:gold_ingot>]
+	]);
+}
 
 //bricks
 furnace.addRecipe(<minecraft:brick>, <contenttweaker:brick_dust>);

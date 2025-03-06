@@ -65,7 +65,12 @@ for crop in [
     <roots:stalicripe>,
 
     <contenttweaker:flolit_plant>,
-    <twilightforest:steeleaf_ingot>
+    <twilightforest:steeleaf_ingot>,
+
+    <biomesoplenty:coral>,
+    <biomesoplenty:coral:1>,
+    <biomesoplenty:coral:2>,
+    <biomesoplenty:coral:3>
 ] as IItemStack[]{
     addHydroponicRec(crop);
 }

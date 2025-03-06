@@ -143,11 +143,11 @@ recipes.addShaped("ia_stone_gear", <thermalfoundation:material:23>, [
     [<ore:cobblestone>, <ore:gearWood>, <ore:cobblestone>], 
     [<ore:rodStone>, <ore:cobblestone>, <ore:rodStone>]
 ]);
-recipes.addShaped("ia_simple_motor", <contenttweaker:simple_motor> * 2, [
-    [null, <exnihilocreatio:block_axle_stone>, null], 
-    [<ore:gearWood>, <minecraft:piston>, <minecraft:piston>], 
-    [<ore:gearWood>, <minecraft:piston>, <minecraft:piston>]
-]);
+
+
+
+
+
 //ex nihilo
 recipes.remove(<exnihilocreatio:block_axle_stone>);
 recipes.addShaped("block_axle_stone", <exnihilocreatio:block_axle_stone>, [

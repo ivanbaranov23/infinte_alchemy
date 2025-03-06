@@ -169,6 +169,29 @@
                 }
             ]
         },
+        {"match": {"blocks": {"blocks": ["natura:nether_heat_sand"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "EXCLUDED",
+                        "weight": {"value": 1, "fortuneModifier": 2}
+                    },
+                    "item": {
+                        "items": ["minecraft:blaze_powder"]
+                    }
+                },
+                {
+                    "selector": {
+                        "weight": {"value": 3}
+                        
+                    },
+                    "item": {
+                        "items": ["natura:nether_heat_sand"]
+                    }
+                }
+            ]
+        },
         {"match": {"blocks": {"blocks": ["twilightforest:moonworm:*"]}},
             "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
             "drops": [

@@ -34,7 +34,7 @@ recipes.addShapeless("ssn_ex_kabel", <storagenetwork:ex_kabel> * 2, [
 ]);
 
 recipes.remove(<storagenetwork:process_kabel>);
-recipes.addShapeless("ssn_ex_kabel", <storagenetwork:process_kabel>, [
+recipes.addShapeless("ssn_proc_kabel", <storagenetwork:process_kabel>, [
     <storagenetwork:im_kabel>, <storagenetwork:ex_kabel>, <prodigytech:circuit_refined>
 ]);
 

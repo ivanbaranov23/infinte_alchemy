@@ -27,11 +27,11 @@ furnace.addRecipe(<contenttweaker:firebrick>, <contenttweaker:fireclay>);
 add2x2Recipe(<contenttweaker:firebrick>, <contenttweaker:firebrick_block>);
 
 //porcelin
-recipes.addShapeless("ia_porcelain_clay", <exnihilocreatio:item_material:1> * 8, [
+recipes.addShapeless("ia_porcelain_clay1", <exnihilocreatio:item_material:1> * 8, [
     <ore:clayBall>, <ore:clayBall>, <ore:clayBall>, 
     <ore:dustNetherQuartz>, <ore:dyeWhite>, <ore:dustAsh>
 ]);
-recipes.addShapeless("ia_porcelain_clay", <exnihilocreatio:item_material:1> * 16, [
+recipes.addShapeless("ia_porcelain_clay2", <exnihilocreatio:item_material:1> * 16, [
     <contenttweaker:rich_clay>, <contenttweaker:rich_clay>, <contenttweaker:rich_clay>, 
     <ore:dustNetherQuartz>, <ore:dyeWhite>, <ore:dustAsh>
 ]);
@@ -40,7 +40,7 @@ recipes.addShapeless("ia_porcelain_clay", <exnihilocreatio:item_material:1> * 16
 //kaolin
 add2x2Recipe(<contenttweaker:kaolin_clay>, <contenttweaker:kaolin_clay_block>);
 mods.thermalexpansion.InductionSmelter.addRecipe(
-    <contenttweaker:kaolin_clay> * 32, 
+    <contenttweaker:kaolin_clay> * 40, 
     <contenttweaker:sandworm_chitin>, <minecraft:clay_ball> * 8, 
     5000, 
     <atum:khnumite> * 4, 50

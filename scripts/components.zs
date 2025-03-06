@@ -780,6 +780,30 @@ import mods.mekanism.infuser;
 	);
 }
 {//motor
+	recipes.addShaped("ia_simple_motor", <contenttweaker:simple_motor> * 2, [
+		[null, <exnihilocreatio:block_axle_stone>, null], 
+		[<ore:gearWood>, <minecraft:piston>, <minecraft:piston>], 
+		[<ore:gearWood>, <minecraft:piston>, <minecraft:piston>]
+	]);
+	Blueprint.addRecipe("components", 
+			<contenttweaker:simple_motor> * 3, 
+			[
+				<exnihilocreatio:block_axle_stone>,
+				<minecraft:piston>, <minecraft:piston>, <immersiveengineering:material>,
+				<ore:gearWood>, <ore:gearWood>
+			]
+	);
+	scripts.content_machines.addAssemblerRecipe(
+		[<contenttweaker:simple_motor> * 12],
+		[
+			<exnihilocreatio:block_axle_stone> * 3,
+			<minecraft:piston> * 6,
+			<immersiveengineering:material> * 4
+		],
+		<liquid:knightslime> * 144, 20, 32
+	);
+
+
 	recipes.remove(<projectred-core:resource_item:410>);
 	recipes.addShaped("ia_pr_motor", <projectred-core:resource_item:410>, [
 		[<contenttweaker:simple_motor>, <contenttweaker:simple_motor>, <contenttweaker:simple_motor>], 

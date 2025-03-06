@@ -2,7 +2,26 @@
 #loader crafttweaker reloadable
 import mods.fluidintetweaker.FITweaker;
 import mods.fluidintetweaker.FBTweaker;
-import mods.fluidintetweaker.behavior.Condition;
+import mods.fluidintetweaker.behavior.Condition as BCondition;
+import mods.fluidintetweaker.interaction.Condition as ICondition;
+
+
+FITweaker.addRecipe(<liquid:blood>, <liquid:water>, <blockstate:biomesoplenty:flesh>);
+
+FITweaker.addRecipe(<liquid:blood>, <liquid:witchwater>, <blockstate:minecraft:soul_sand>);
+FITweaker.addRecipe(<liquid:blueslime>, <liquid:witchwater>, <blockstate:tconstruct:slime_dirt:type=blue>);
+FITweaker.addRecipe(<liquid:ash_solution>, <liquid:witchwater>, <blockstate:quark:marble>);
+FITweaker.addRecipe(<liquid:andesite>, <liquid:witchwater>, 
+    FITweaker.outputBuilder()
+        .addEvent(
+            FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:stone:variant=andesite>)
+        )
+        .addEvent(
+            FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:netherrack>)
+                .addCondition(ICondition.byChance, [0.25f])
+        )
+);
+
 
 FITweaker.addRecipe(<liquid:creosote>, <liquid:andesite>, <blockstate:quark:jasper:variant=stone_jasper>);
 
@@ -39,15 +58,15 @@ FITweaker.addRecipe(<liquid:lava>, <liquid:andesite>, <blockstate:minecraft:ston
 }
 
 {//jei
-    FITweaker.addJEIRecipeWrapper(<liquid:blood>, 1, <liquid:water>, 1,
+    /**FITweaker.addJEIRecipeWrapper(<liquid:blood>, 1, <liquid:water>, 1,
         FITweaker.outputBuilder().addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:biomesoplenty:flesh>))
     );
     FITweaker.addJEIRecipeWrapper(<liquid:blood>, 1, <liquid:witchwater>, 1,
         FITweaker.outputBuilder().addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:soul_sand>))
-    );
+    )
     FITweaker.addJEIRecipeWrapper(<liquid:blueslime>, 1, <liquid:witchwater>, 1,
         FITweaker.outputBuilder().addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:tconstruct:slime_dirt:type=blue>))
-    );
+    );*/
     FITweaker.addJEIRecipeWrapper(<liquid:sand>, 1, <liquid:water>, 1,
         FITweaker.outputBuilder().addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:biomesoplenty:mud:variant=mud>))
     );
@@ -67,10 +86,10 @@ FBTweaker.addRecipe(<liquid:water>, FBTweaker.outputBuilder()
 FBTweaker.addRecipe(<liquid:cold_liquid>, FBTweaker.outputBuilder()
     .addEvent(FBTweaker.eventBuilder().createPotionEffectEvent(
         "mowziesmobs:frozen", 20, 0
-    ).addCondition(Condition.byChance, [0.1f]))
+    ).addCondition(BCondition.byChance, [0.1f]))
     .addEvent(FBTweaker.eventBuilder().createPotionEffectEvent(
         "minecraft:instant_damage", 1, 0
-    ).addCondition(Condition.byChance, [0.1f]))
+    ).addCondition(BCondition.byChance, [0.1f]))
     .addEvent(FBTweaker.eventBuilder().createSetSnowEvent())
     
 );
@@ -86,16 +105,16 @@ FBTweaker.addRecipe(<liquid:sand>, FBTweaker.outputBuilder()
     
     .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
         <entity:minecraft:zombie>, <entity:atum:mummy>
-    ).addCondition(Condition.byChance, [0.1f]))
+    ).addCondition(BCondition.byChance, [0.1f]))
     .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
         <entity:minecraft:zombie>, <entity:atum:wraith>
-    ).addCondition(Condition.byChance, [0.1f]))
+    ).addCondition(BCondition.byChance, [0.1f]))
     .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
         <entity:minecraft:zombie>, <entity:atum:forsaken>
-    ).addCondition(Condition.byChance, [0.1f]))
+    ).addCondition(BCondition.byChance, [0.1f]))
     .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
         <entity:minecraft:zombie>, <entity:minecraft:husk>
-    ).addCondition(Condition.byChance, [0.1f]))
+    ).addCondition(BCondition.byChance, [0.1f]))
     
 );
 //FBTweaker.eventBuilder().createEntityConversionEvent();

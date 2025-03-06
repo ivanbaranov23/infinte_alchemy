@@ -19,7 +19,12 @@
 		type: "item",
 		item: {
 			id: "erebus:bambucket",
-			tag: {}
+			tag: {
+				Fluid: {
+					FluidName: "water",
+					Amount: 1000
+				}
+			}
 		}
 	}]
 }

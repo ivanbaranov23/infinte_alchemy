@@ -567,6 +567,41 @@ scripts.helper.addPlantStationRecipe(
     ], <liquid:holy_water> * 4000, 12
 );
 
+//plant sample
+mods.thermalexpansion.InductionSmelter.addRecipe(<tconstruct:materials:1> * 3, <roots:elemental_soil>, <thermalfoundation:material:865> * 2, 1500, <thermalfoundation:material:864>, 45);
+
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:plant_sample>, <tconstruct:materials:1>, <liquid:refined_biofuel> * 2500, 3000);
+{
+    scripts.helper.addPlantStationRecipe(
+        <roots:elemental_soil_earth>,
+        [
+            <contenttweaker:plant_sample> * 4
+        ],
+        [
+            <tconstruct:materials:1>,
+            <contenttweaker:excited_crop>,
+            <appliedenergistics2:material:4>,
+            <harvestcraft:ceasarsaladitem>
+        ],
+        <liquid:refined_biofuel> * 3000,
+        20
+    );
+    scripts.helper.addPlantStationRecipe(
+        <roots:elemental_soil_earth>,
+        [
+            <contenttweaker:plant_sample> * 4
+        ],
+        [
+            <tconstruct:materials:1>,
+            <contenttweaker:excited_crop>,
+            <mekanism:biofuel>,
+            <harvestcraft:ceasarsaladitem>
+        ],
+        <liquid:refined_biofuel> * 3000,
+        20
+    );
+}
+
 //processing
 
 //jade
@@ -682,17 +717,27 @@ mods.mekanism.sawmill.addRecipe(
 );
 
 
-//potash apples
-scripts.helper.addSawRecipeWByproduct(<natura:edibles:10>, <thermalfoundation:material:772> * 2, <thermalfoundation:material:772>, 50);
-mods.prodigytech.atomicreshaper.addRecipe(<natura:edibles:10>, <contenttweaker:dolomite>, 12);
-mods.actuallyadditions.Empowerer.addRecipe(
-	<minecraft:quartz_block> * 2, <minecraft:sand>, 
-	<natura:edibles:10>,
-    <natura:edibles:10>,
-    <natura:edibles:10>,
-    <natura:edibles:10>,
-	4000, 10
-);
+{//potash apples
+    recipes.addShaped("ia_chalky_apple", <natura:edibles:10>, [
+        [null, <natura:nether_leaves2>, null], 
+        [<natura:nether_leaves2>, <minecraft:apple>, <natura:nether_leaves2>], 
+        [null, <natura:nether_leaves2>, null]
+    ]);
+
+    recipes.addShapeless("ia_niter", <thermalfoundation:material:772>, [
+        <natura:edibles:10>
+    ]);
+    scripts.helper.addSawRecipeWByproduct(<natura:edibles:10>, <thermalfoundation:material:772> * 2, <thermalfoundation:material:772>, 50);
+    mods.prodigytech.atomicreshaper.addRecipe(<natura:edibles:10>, <contenttweaker:dolomite>, 12);
+    mods.actuallyadditions.Empowerer.addRecipe(
+        <minecraft:quartz_block> * 2, <minecraft:sand>, 
+        <natura:edibles:10>,
+        <natura:edibles:10>,
+        <natura:edibles:10>,
+        <natura:edibles:10>,
+        4000, 10
+    );
+}
 
 {//grape
     mods.immersiveengineering.Refinery.addRecipe(<liquid:purpleslime> * 10, <liquid:grape_juice> * 8, <liquid:blueslime> * 8, 300);

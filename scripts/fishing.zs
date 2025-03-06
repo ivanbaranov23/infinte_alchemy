@@ -103,30 +103,65 @@ mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesopl
 mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesoplenty:coral:2>, 0.1);
 mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesoplenty:coral:3>, 0.1);
 
-//pink coral
-mods.thermalexpansion.Centrifuge.addRecipe([
-    <thermalfoundation:material:816> % 10
-], <biomesoplenty:coral> * 4, <liquid:blood> * 100, 2000);
-recipes.addShaped("ia_pink_cloud", <aether_legacy:aercloud:3>,[
-    [<biomesoplenty:coral>, <biomesoplenty:coral>, <biomesoplenty:coral>],
-    [<biomesoplenty:coral>, <ore:aercloud>, <biomesoplenty:coral>],
-    [<biomesoplenty:coral>, <biomesoplenty:coral>, <biomesoplenty:coral>]
-]);
+{//coral
+    mods.roots.Mortar.addRecipe("coral", 
+        <contenttweaker:coral_dust>,
+        [<biomesoplenty:coral>, <biomesoplenty:coral:1>, <biomesoplenty:coral:2>, <biomesoplenty:coral:3>, <ore:coralFeed>]
+    );
+    mods.roots.Mortar.addRecipe("coral2", 
+        <contenttweaker:coral_dust> * 2,
+        [<biomesoplenty:coral>, <biomesoplenty:coral:1>, <biomesoplenty:coral:2>, <biomesoplenty:coral:3>, <contenttweaker:plant_sample>]
+    );
+    <contenttweaker:coral_dust>.addTooltip("You are the second worst thing to happen to the corals");
 
-//blue coral
-mods.thermalexpansion.Centrifuge.addRecipe([
-    <mekores:mekanismore:38> % 5,
-    <thermalfoundation:material:816> % 10
-], <biomesoplenty:coral:2> * 4, <liquid:electrotine> * 100, 2000);
+    //pink coral
+    mods.thermalexpansion.Centrifuge.addRecipe([
+        <thermalfoundation:material:816> % 10
+    ], <biomesoplenty:coral> * 4, <liquid:blood> * 100, 2000);
+    recipes.addShaped("ia_pink_cloud", <aether_legacy:aercloud:3>,[
+        [<biomesoplenty:coral>, <biomesoplenty:coral>, <biomesoplenty:coral>],
+        [<biomesoplenty:coral>, <ore:aercloud>, <biomesoplenty:coral>],
+        [<biomesoplenty:coral>, <biomesoplenty:coral>, <biomesoplenty:coral>]
+    ]);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:coral_dust>, 
+        <biomesoplenty:coral>, <contenttweaker:plant_sample>, 
+        1000
+    );
+
+    //orange coral
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:coral_dust>, 
+        <biomesoplenty:coral:1>, <contenttweaker:plant_sample>, 
+        1000
+    );
+
+    //blue coral
+    mods.thermalexpansion.Centrifuge.addRecipe([
+        <mekores:mekanismore:38> % 5,
+        <thermalfoundation:material:816> % 10
+    ], <biomesoplenty:coral:2> * 4, <liquid:electrotine> * 100, 2000);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:coral_dust>, 
+        <biomesoplenty:coral:2>, <contenttweaker:plant_sample>, 
+        1000
+    );
 
 
-//glowing coral
-mods.thermalexpansion.Centrifuge.addRecipe([
-    <minecraft:glowstone_dust> % 50,
-    <minecraft:glowstone_dust> % 30,
-    <thermalfoundation:material:816> % 10
-], <biomesoplenty:coral:3> * 4, null, 2000);
+    //glowing coral
+    mods.thermalexpansion.Centrifuge.addRecipe([
+        <minecraft:glowstone_dust> % 50,
+        <minecraft:glowstone_dust> % 30,
+        <thermalfoundation:material:816> % 10
+    ], <biomesoplenty:coral:3> * 4, null, 2000);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:coral_dust>, 
+        <biomesoplenty:coral:3>, <contenttweaker:plant_sample>, 
+        1000
+    );
 
+    
+}
 
 //zanite coral
 mods.thermalexpansion.Centrifuge.addRecipe([

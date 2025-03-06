@@ -58,18 +58,32 @@ scripts.content_machines.addFluidMixerRecipe(
     <liquid:andesite> * 250, <liquid:magma_fluid> * 288, <appliedenergistics2:material:45>, 
     20, 100
 );
-//pilkeum
-recipes.addShapeless("pilkeum", <contenttweaker:pilkeum> * 2, [
-    <prodigytech:ferramic_dust>, <prodigytech:ferramic_dust>, 
-    <harvestcraft:carrotjuiceitem>,
-    <botania:dye:6>,
-    <minecraft:gunpowder>,
-    <contenttweaker:weak_enhancer>
-]);
-mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2050);
-mods.thermalexpansion.Crucible.addRecipe(
-	<liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2000
-);
+{//pilkeum
+    recipes.addShapeless("pilkeum", <contenttweaker:pilkeum> * 2, [
+        <prodigytech:ferramic_dust>, <prodigytech:ferramic_dust>, 
+        <harvestcraft:carrotjuiceitem>,
+        <botania:dye:6>,
+        <minecraft:gunpowder>,
+        <contenttweaker:weak_enhancer>
+    ]);
+    mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2050);
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2000
+    );
+
+
+    mods.tconstruct.Melting.addRecipe(<liquid:pilkon_blood> * 1000, <contenttweaker:pilkon_corpse>, 2050);
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:pilkon_blood> * 1000, <contenttweaker:pilkon_corpse>, 3000
+    );
+    mods.immersivepetroleum.Distillation.addRecipe(
+        [<liquid:biodiesel> * 100, <liquid:impure_colagen> * 25], 
+        [<contenttweaker:pilkeum>], <liquid:pilkon_blood> * 50, 
+        2000, 25, 
+        [0.1]
+    );
+    mods.immersiveengineering.Refinery.addRecipe(<liquid:pilkon_blood> * 75, <liquid:blood> * 50, <liquid:if.pink_slime> * 50, 800);
+}
 
 //cactus
 mods.immersiveengineering.BlastFurnace.addRecipe(
@@ -115,14 +129,14 @@ recipes.addShaped("glowcrystal", <contenttweaker:glowcrystal> * 2, [
 //creosolon
 recipes.addShapeless("ia_creosolon", <contenttweaker:creosolon> * 2, [
     <contenttweaker:weak_enhancer>,
-    <contenttweaker:weak_enhancer>,
+    <contenttweaker:weak_enhancer> | <appliedenergistics2:material:5>,
     <liquid:creosote> * 4000,
     <contenttweaker:cactus_charcoal>,
     <immersiveengineering:wirecoil:3>
 ]);
 recipes.addShapeless("ia_creosolon2", <contenttweaker:creosolon> * 2, [
     <contenttweaker:weak_enhancer>,
-    <contenttweaker:weak_enhancer>,
+    <contenttweaker:weak_enhancer> | <appliedenergistics2:material:5>,
     <contenttweaker:cactus_charcoal>,
     <immersiveengineering:wirecoil:3>,
     <liquid:creosote> * 1000,

@@ -804,7 +804,8 @@ mods.actuallyadditions.Empowerer.addRecipe(
 	rec.addItemInput(<contenttweaker:bug_slimeball> * 8);
 	rec.addItemInput(<moreplates:knightslime_gear> * 16);
 
-	rec.addFluidInput(<liquid:polyethylene> * 16000);
+	rec.addFluidInput(<liquid:polyethylene> * 40000);
+	rec.addFluidInput(<liquid:tartaric_gel> * 1000);
 	rec.addFluidInput(<liquid:potion>.withTag({Potion: "cofhcore:regeneration4"}) * 16000);
 
     rec.build();

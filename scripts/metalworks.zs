@@ -2490,13 +2490,13 @@ recipes.addShaped("ia_wooden_gear", <thermalfoundation:material:22>, [
     );
 }
 
-mods.thermalexpansion.Crucible.addRecipe(<liquid:electrotine> * 250, <projectred-core:resource_item:105>, 1000);
+
 
 addCasting(all_metals.ferramic, <liquid:ferramic>);
 
 add3alloy(1, "flower_steel", 4,
     "zorra_steel", 1,
-    "plant_sample", 2,
+    "plant_sample", 8,
     "petals", 8
 );
 
@@ -2701,10 +2701,25 @@ add3alloy(1, "flower_steel", 4,
     }
 
     {//logic steels
-        add2alloy(1, "fluix_steel", 4,
+        /*add2alloy(1, "fluix_steel", 4,
             "cincinnasite", 2,
             "fluix", 3
+        );*/
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            all_metals.fluix_steel.ingot * 4, 
+            all_metals.cincinnasite.ingot * 2, all_metals.fluix.ingot * 3,
+		    2500
         );
+        mods.enderio.AlloySmelter.addRecipe(all_metals.fluix_steel.ingot * 6, 
+            [
+                all_metals.cincinnasite.ingot * 2,
+                all_metals.fluix.ingot * 3,
+                all_metals.soy_steel.ingot
+            ]
+        );
+
+
+
         add2alloy(1, "menril_steel_base", 2,
             "fluix_steel", 1,
             "menril_berry", 4
@@ -2769,8 +2784,10 @@ add3alloy(1, "flower_steel", 4,
             <extrautils2:ingredients:4>,
             <harvestcraft:extremechiliitem>,
             <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust>,
-            <contenttweaker:excited_crop>
+            <contenttweaker:excited_crop> | <contenttweaker:coral_dust>
         ]);
+
+
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:haste_potion> * 500, <appliedenergistics2:material:2>, <liquid:potion>.withTag({Potion: "cofhcore:haste4"}) * 500, 3000);
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:speed_potion> * 500, <appliedenergistics2:material:3>, <liquid:potion>.withTag({Potion: "cofhcore:swiftness4"}) * 500, 3000);
         scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 400, 
@@ -3309,14 +3326,14 @@ scripts.helper.addFluidAlloyerRecipe(
         );
     }
 
-    recipes.addShapeless("ia_energized_compound1", <contenttweaker:energized_compound> * 6, [
+    recipes.addShapeless("ia_energized_compound1", <contenttweaker:energized_compound> * 3, [
         <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>
     ]);
-    recipes.addShapeless("ia_energized_compound2", <contenttweaker:energized_compound> * 8, [
+    recipes.addShapeless("ia_energized_compound2", <contenttweaker:energized_compound> * 4, [
         <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>,
         <biomesoplenty:shroompowder>
     ]);
-    recipes.addShapeless("ia_energized_compound3", <contenttweaker:energized_compound> * 12, [
+    recipes.addShapeless("ia_energized_compound3", <contenttweaker:energized_compound> * 6, [
         <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>,
         <biomesoplenty:shroompowder>, <biomesoplenty:gem>
     ]);

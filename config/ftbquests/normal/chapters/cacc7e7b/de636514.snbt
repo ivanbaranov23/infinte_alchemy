@@ -1,0 +1,52 @@
+{
+	title: "I love Tinker",
+	icon: "moretcon:blockgravitoniumfaucet",
+	x: -4.5d,
+	y: 1.0d,
+	text: [
+		"some hot fuel, interesting materials and some fast faucets"
+	],
+	tasks: [{
+		uid: "99317894",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "bf3c46da",
+		type: "item",
+		item: {
+			id: "tconstruct:seared_tank",
+			tag: {
+				FluidName: "nitronite_fluid",
+				Amount: 4000
+			}
+		}
+	},
+	{
+		uid: "566c43cb",
+		type: "item",
+		item: "moretcon:blockgravitoniumfaucet",
+		count: 8
+	},
+	{
+		uid: "35e1660b",
+		type: "item",
+		item: "contenttweaker:apatite",
+		count: 4
+	},
+	{
+		uid: "6c31dff0",
+		type: "item",
+		item: "tconstruct:materials 1 14",
+		count: 5
+	},
+	{
+		uid: "ee3f009c",
+		type: "item",
+		item: "tconstruct:firewood 1 1",
+		count: 4
+	}]
+}

@@ -9,19 +9,5 @@
     "minecraft:dirt:2": 1,
     "minecraft:dirt": 1,
     "minecraft:dirt:1": 1
-  },
-  "blueslime": {
-    "tconstruct:slime_dirt:1": 1
-  },
-  "blood": {
-    "minecraft:soul_sand": 1
-  },
-  "ash_solution": {
-    "quark:marble": 1
-  },
-  "andesite": {
-    "minecraft:cobblestone:-1": 1,
-    "minecraft:stone:5": 1,
-    "minecraft:netherrack": 1
   }
 }

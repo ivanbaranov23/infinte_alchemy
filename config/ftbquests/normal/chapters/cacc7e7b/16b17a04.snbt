@@ -19,6 +19,6 @@
 		type: "item",
 		auto: "disabled",
 		item: "enderio:item_soul_vial",
-		count: 3
+		count: 4
 	}]
 }

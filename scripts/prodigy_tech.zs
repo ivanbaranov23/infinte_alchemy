@@ -104,7 +104,7 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 
 {
 	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:fire_charge>, 288);
-	mods.prodigytech.explosionfurnace.explosives.add(<contenttweaker:pilkeum>, 360 * 2);
+	mods.prodigytech.explosionfurnace.explosives.add(<contenttweaker:pilkeum>, 360 * 4);
 	mods.prodigytech.explosionfurnace.explosives.add(<appliedenergistics2:tiny_tnt>, 750);
 	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:tnt>, 1500);
 	mods.prodigytech.explosionfurnace.explosives.add(<natura:nether_planks:3>, 288);
@@ -267,6 +267,7 @@ solderer.removeAll();
 		null,
 		10, 256
 	);
+	mods.thermalexpansion.Transposer.addFillRecipe(<prodigytech:heat_capacitor_0>, <prodigytech:heat_capacitor_0:1200>, <liquid:steam> * 8000, 8000);
 
 	recipes.remove(<prodigytech:heat_capacitor_1:1200>);
 	recipes.addShaped("ai_heat_capacitor_1", <prodigytech:heat_capacitor_1:1200>, [

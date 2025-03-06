@@ -641,6 +641,11 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         <contenttweaker:singularity_dust>, <roots:wildwood_log>
     ]);
 
+    recipes.addShapeless("ia_pilkon_corpse", <contenttweaker:pilkon_corpse>, [
+        <contenttweaker:pilkon>,
+        <immersiveengineering:sword_steel>.transformDamage(50)
+    ]);
+
     scripts.helper.addSawRecipeWByproduct(<contenttweaker:pilkon_corpse>, <contenttweaker:pilkeum> * 4, <contenttweaker:pilkeum> * 2, 25);
 }
 {//sandworm
