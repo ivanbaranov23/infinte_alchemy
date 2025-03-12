@@ -9,7 +9,9 @@ import mods.requious.Assembly;
 
 import mods.requious.ComponentFace;
 import mods.requious.SlotVisual;
+import mods.requious.GaugeDirection;
 import mods.requious.AssemblyRecipe;
+
 
 
 static Fluid_mixer as Assembly = <assembly:fluid_mixer>;
@@ -28,7 +30,7 @@ static Fluid_mixer as Assembly = <assembly:fluid_mixer>;
         .setGroup("power");
 
     Fluid_mixer.setDurationSlot(4, 2)
-        .setVisual(mods.requious.SlotVisual.arrowRight())
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 10, 1, 10, GaugeDirection.right(), false))
         .setGroup("duration");
 
     Fluid_mixer.setItemSlot(6, 2, ComponentFace.all(), 64)
@@ -42,7 +44,7 @@ static Fluid_mixer as Assembly = <assembly:fluid_mixer>;
     Fluid_mixer.setJEIItemSlot(0 ,0, "input");
     Fluid_mixer.setJEIFluidSlot(1, 0, "input");
     Fluid_mixer.setJEIFluidSlot(2, 0, "input");
-    Fluid_mixer.setJEIDurationSlot(3, 0, "duration", SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png", 0, 8));
+    Fluid_mixer.setJEIDurationSlot(3, 0, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 10, 1, 10, GaugeDirection.right(), false));
     Fluid_mixer.setJEIItemSlot(4, 0, "output");
     Fluid_mixer.setJEIFluidSlot(5, 0, "output");
     Fluid_mixer.setJEIEnergySlot(7, 0, "power");
@@ -68,6 +70,7 @@ function basicFluidMixerRecipe(outputItem as IItemStack, outputFluid as ILiquidS
     for fluid in inputFluids {
         recipe = recipe.requireFluid("input", fluid);
     }
+    recipe.setActive(time_t);
     recipe.requireDuration("duration", time_t);
     recipe = recipe.requireEnergy("power", time_t * rft);
     //recipe.requireEnergy("power", 1000);
@@ -82,6 +85,7 @@ function addFluidMixerRecipe(outf as ILiquidStack, inpf1 as ILiquidStack, inpf2 
     if (inpi) recipe = recipe.requireItem("input", inpi);
     recipe = recipe.requireFluid("input", inpf1);
     recipe = recipe.requireFluid("input", inpf2);
+    recipe.setActive(time_t);
     recipe = recipe.requireDuration("duration", time_t);
     recipe = recipe.requireEnergy("power", time_t * rft);
 
@@ -112,7 +116,7 @@ static Fluid_alloyer as Assembly = <assembly:fluid_alloyer>;
         .setGroup("power");
 
     Fluid_alloyer.setDurationSlot(4, 2)
-        .setVisual(mods.requious.SlotVisual.arrowRight())
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 9, 1, 9, GaugeDirection.right(), false))
         .setGroup("duration");
 
     Fluid_alloyer.setItemSlot(6, 2, ComponentFace.all(), 64)
@@ -123,7 +127,7 @@ static Fluid_alloyer as Assembly = <assembly:fluid_alloyer>;
     Fluid_alloyer.setJEIFluidSlot(0, 0, "input");
     Fluid_alloyer.setJEIItemSlot(1, 0, "input");
     Fluid_alloyer.setJEIItemSlot(2, 0, "input");
-    Fluid_alloyer.setJEIDurationSlot(3, 0, "duration", SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png", 0, 8));
+    Fluid_alloyer.setJEIDurationSlot(3, 0, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 9, 1, 9, GaugeDirection.right(), false));
     Fluid_alloyer.setJEIItemSlot(4, 0, "output");
     Fluid_alloyer.setJEIEnergySlot(6, 0, "power");
 
@@ -135,6 +139,7 @@ function addFluidAlloyerRecipe(out as IItemStack, inpi1 as IIngredient, inpi2 as
     if (inpi1) recipe = recipe.requireItem("input", inpi1);
     if (inpi2) recipe = recipe.requireItem("input", inpi2);
     recipe = recipe.requireFluid("input", inpf);
+    recipe.setActive(time_t);
     recipe = recipe.requireDuration("duration", time_t);
     recipe = recipe.requireEnergy("power", time_t * rft);
 
@@ -182,7 +187,7 @@ static Assembler as Assembly = <assembly:assembler>;
         .setGroup("power");
 
     Assembler.setDurationSlot(5, 2)
-        .setVisual(mods.requious.SlotVisual.arrowRight())
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 8, 1, 8, GaugeDirection.right(), false))
         .setGroup("duration");
 
     Assembler.setItemSlot(7, 2, ComponentFace.all(), 64)
@@ -204,7 +209,7 @@ static Assembler as Assembly = <assembly:assembler>;
     
     Assembler.setJEIFluidSlot(2, 2, "input");
     
-    Assembler.setJEIDurationSlot(4, 1, "duration", SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png", 0, 8));
+    Assembler.setJEIDurationSlot(4, 1, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 8, 1, 8, GaugeDirection.right(), false));
     Assembler.setJEIItemSlot(5, 1, "output0");
     Assembler.setJEIItemSlot(6, 1, "output1");
     //Fluid_alloyer.setJEIFluidSlot(5, 0, "output");
@@ -226,6 +231,7 @@ function addAssemblerRecipe(out as IItemStack[], inp as IIngredient[], fluid as 
     if (fluid){
         recipe = recipe.requireFluid("input", fluid);
     }
+    recipe.setActive(time_t);
     recipe = recipe.requireDuration("duration", time_t);
     /*recipe.requireWorldCondition("world", function(container){
         var state = container.world.getBlockState(container.pos);
@@ -282,7 +288,7 @@ static AdvancedMixer as Assembly = <assembly:advanced_mixer>;
         .setGroup("power");
 
     AdvancedMixer.setDurationSlot(5, 2)
-        .setVisual(mods.requious.SlotVisual.arrowRight())
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 10, 1, 10, GaugeDirection.right(), false))
         .setGroup("duration");
 
     AdvancedMixer.setItemSlot(6, 1, ComponentFace.all(), 64)
@@ -313,7 +319,7 @@ static AdvancedMixer as Assembly = <assembly:advanced_mixer>;
     AdvancedMixer.setJEIItemSlot(3, 1, "input");
     AdvancedMixer.setJEIItemSlot(4, 1, "input");
     
-    AdvancedMixer.setJEIDurationSlot(5, 1, "duration", SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png", 0, 8));
+    AdvancedMixer.setJEIDurationSlot(5, 1, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 10, 1, 10, GaugeDirection.right(), false));
     AdvancedMixer.setJEIItemSlot(6, 0, "output0");
     AdvancedMixer.setJEIItemSlot(6, 1, "output1");
     AdvancedMixer.setJEIFluidSlot(7, 0, "output0");
@@ -339,6 +345,7 @@ function addAdvancedMixerRecipe(out as IItemStack[], outfluid as ILiquidStack[],
     for i in inpfluid{
         recipe = recipe.requireFluid("input", i);
     }
+    recipe.setActive(time_t);
     recipe = recipe.requireDuration("duration", time_t);
     recipe = recipe.requireEnergy("power", time_t * rft);
 
@@ -355,6 +362,94 @@ addAssemblerRecipe(
 );
 
 
+
+
+static Recycler as Assembly = <assembly:recycler>;
+{
+    
+    Recycler.setItemSlot(1, 2, ComponentFace.all(), 64)
+        .setAccess(true, false)
+        .setGroup("input");
+    
+    Recycler.setEnergySlot(0, 2, ComponentFace.all(), 40000)
+        .setAccess(true, false)
+        .setGroup("power");
+
+    Recycler.setDurationSlot(3, 2)
+        .setVisual(SlotVisual.createGauge("contenttweaker:textures/rf_gauges.png", 0, 0, 1, 0, GaugeDirection.right(), false, 1, 1, [255, 255, 255]))
+        .setGroup("duration");
+
+    {
+        Recycler.setItemSlot(5, 1, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output0");
+        Recycler.setItemSlot(6, 1, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output1");
+        Recycler.setItemSlot(7, 1, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output2");
+
+        Recycler.setItemSlot(5, 2, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output3");
+        Recycler.setItemSlot(6, 2, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output4");
+        Recycler.setItemSlot(7, 2, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output5");
+        
+        Recycler.setItemSlot(5, 3, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output6");
+        Recycler.setItemSlot(6, 3, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output7");
+        Recycler.setItemSlot(7, 3, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output8");
+    }
+    
+    Recycler.setItemSlot(1, 1, ComponentFace.all(), 1)
+        .setAccess(true, false)
+        .setGroup("luck");
+    Recycler.setItemSlot(1, 0, ComponentFace.all(), 1)
+        .setAccess(false, false)
+        .setHandAccess(false, false)
+        .setHidden()
+        .setGroup("luck2");
+    Recycler.setSelectionSlot(2, 1, "selection", 0)
+        .setGroup("selection")
+        .setMaxSelection(1);
+
+
+    //Recycler.setJEIEnergySlot(0, 1, "power");
+    Recycler.setJEIItemSlot(0, 1, "input");
+
+    Recycler.setJEIItemSlot(2, 0, "output");
+    Recycler.setJEIItemSlot(3, 0, "output");
+    Recycler.setJEIItemSlot(4, 0, "output");
+
+    Recycler.setJEIItemSlot(2, 1, "output");
+    Recycler.setJEIItemSlot(3, 1, "output");
+    Recycler.setJEIItemSlot(4, 1, "output");
+
+    Recycler.setJEIItemSlot(2, 2, "output");
+    Recycler.setJEIItemSlot(3, 2, "output");
+    Recycler.setJEIItemSlot(4, 2, "output");
+    
+    Recycler.setJEIDurationSlot(1, 0, "duration", SlotVisual.createGauge("contenttweaker:textures/rf_gauges.png", 0, 0, 1, 0, GaugeDirection.right(), false, 1, 1, [255, 255, 255]));
+}
 
 
 static Vial_processor as Assembly = <assembly:vial_processor>;
@@ -486,7 +581,7 @@ static FluidSieve as Assembly = <assembly:fluid_sieve>;
         .setGroup("power");
 
     FluidSieve.setDurationSlot(4, 2)
-        .setVisual(mods.requious.SlotVisual.arrowRight())
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 7, 1, 7, GaugeDirection.right(), false))
         .setGroup("duration");
 
     {    
@@ -525,7 +620,7 @@ static FluidSieve as Assembly = <assembly:fluid_sieve>;
     FluidSieve.setJEIItemSlot(2, 1, "mesh");
     FluidSieve.setJEIItemSlot(3, 1, "input");
     
-    FluidSieve.setJEIDurationSlot(4, 1, "duration", SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png", 0, 8));
+    FluidSieve.setJEIDurationSlot(4, 1, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 7, 1, 7, GaugeDirection.right(), false));
 
     FluidSieve.setJEIFluidSlot(6, 2, "output");
 
@@ -566,6 +661,7 @@ function addFluidSieveRecipeRandom(
     if mesh{
         recipe = recipe.requireItem("mesh", mesh, 0, 0);
     }
+    recipe.setActive(time_t);
     recipe = recipe.requireDuration("duration", time_t);
     recipe = recipe.requireEnergy("power", time_t * rft);
 
@@ -696,6 +792,7 @@ function addBioAssemblerRecipe(
     if catalyst{
         recipe = recipe.requireItem("catalyst", catalyst, 0, 0);
     }
+    recipe.setActive(time_t);
     recipe = recipe.requireDuration("duration", time_t);
     recipe = recipe.requireEnergy("power", time_t * rft);
 
@@ -729,6 +826,7 @@ function addBioAssemblerRecipeRandom(
     if catalyst{
         recipe = recipe.requireItem("catalyst", catalyst, 0, 0);
     }
+    recipe.setActive(time_t);
     recipe = recipe.requireDuration("duration", time_t);
     recipe = recipe.requireEnergy("power", time_t * rft);
 

@@ -1,0 +1,34 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+      "model": "contenttweaker:machine",
+      "textures": {
+        "0": "contenttweaker:blocks/machines/recycler_wall",
+        "north": "contenttweaker:blocks/machines/recycler",
+        "east": "contenttweaker:blocks/machines/machine_vent",
+        "south": "contenttweaker:blocks/machines/machine_vent",
+        "west": "contenttweaker:blocks/machines/machine_vent",
+
+        "up": "contenttweaker:blocks/machines/machine_hatch_blue",
+        "down": "contenttweaker:blocks/machines/machine_hatch_blue",
+
+        "particle": "contenttweaker:blocks/coppra_block"
+      }
+    },
+    "variants":{
+      "normal":[{}],
+      "inventory":[{}],
+      "facing": {
+            "__down":  { "x": 180 },
+            "__up":    { },
+            "north": { },
+            "south": {  "y": 180 },
+            "west":  {  "y": 270 },
+            "east":  {  "y": 90 }
+        },
+      "active": {
+        "true": {"textures": {"north": "contenttweaker:blocks/machines/recycler_active"}},
+        "false": {"textures": {"north": "contenttweaker:blocks/machines/recycler"}}
+      }
+    }
+  }

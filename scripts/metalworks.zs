@@ -2488,6 +2488,91 @@ recipes.addShaped("ia_wooden_gear", <thermalfoundation:material:22>, [
         "alumite", 2,
         "copper", 1
     );
+
+
+
+    {//simple alloys
+            
+        scripts.helper.addHighOvenAlloy(
+            "bronze_ho" as string, 0,
+            [all_metals.bronze.ingot * 4] as IItemStack[],
+            [
+                all_metals.copper.ingot * 3,
+                all_metals.tin.ingot
+            ] as IItemStack[]
+        );
+        mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:99>);
+        add2alloy(1, "bronze", 8, 
+            "coppra", 3,
+            "nittin", 1
+        );
+
+
+        //missing
+        add2alloy(1, "invar", 3,
+            "iron", 2,
+            "nickel", 1
+        );
+        add2alloy(1, "constantan", 2,
+            "copper", 1,
+            "nickel", 1
+        );
+        add2alloy(1, "manyullyn", 3,
+            "cobalt", 2,
+            "ardite", 1
+        );
+        
+
+
+        scripts.helper.addHighOvenAlloy(
+            "electrum_ho" as string, 0,
+            [all_metals.electrum.ingot * 2] as IItemStack[],
+            [
+                all_metals.gold.ingot,
+                all_metals.silver.ingot
+            ] as IItemStack[]
+        );
+        add3alloy(1, "alumite", 3,
+            "aluminum", 5,
+            "iron", 2,
+            "obsidian", 1
+        );
+
+
+        add2alloy(1, "red_alloy", 1,
+            "copper", 1,
+            "redstone", 4
+        );
+        add2alloy(1, "blue_alloy", 1,
+            "zinc", 1,
+            "electrotine", 4
+        );
+        mods.immersiveengineering.AlloySmelter.addRecipe(
+            <projectred-core:resource_item:104>, 
+            <contenttweaker:zinc_ingot>,
+            <projectred-core:resource_item:105> * 4,
+            200
+        );
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <projectred-core:resource_item:105> * 4, 
+            <thermalfoundation:material:893>, <minecraft:dye:4> * 6, 
+            16000
+        );
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <projectred-core:resource_item:105> * 3, 
+            <thermalfoundation:material:894>, <minecraft:dye:4> * 6, 
+            16000
+        );
+
+
+
+        mods.enderio.AlloySmelter.removeRecipe(all_metals.redstone_alloy.ingot);
+        add3alloy(1, "redstone_alloy", 2,
+            "electric_steel", 2,
+            "red_alloy", 1,
+            "conductive_iron", 3
+        );
+    }
 }
 
 
@@ -2575,81 +2660,7 @@ add3alloy(1, "flower_steel", 4,
         );
     }
 
-    {//simple alloys
-            
-        scripts.helper.addHighOvenAlloy(
-            "bronze_ho" as string, 0,
-            [all_metals.bronze.ingot * 4] as IItemStack[],
-            [
-                all_metals.copper.ingot * 3,
-                all_metals.tin.ingot
-            ] as IItemStack[]
-        );
-        mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:99>);
-        add2alloy(1, "bronze", 8, 
-            "coppra", 3,
-            "nittin", 1
-        );
-
-
-        scripts.helper.addHighOvenAlloy(
-            "electrum_ho" as string, 0,
-            [all_metals.electrum.ingot * 2] as IItemStack[],
-            [
-                all_metals.gold.ingot,
-                all_metals.silver.ingot
-            ] as IItemStack[]
-        );
-        add3alloy(1, "alumite", 3,
-            "aluminum", 5,
-            "iron", 2,
-            "obsidian", 1
-        );
-        scripts.helper.addHighOvenAlloy(
-            "alumite_ho" as string, 0,
-            [all_metals.alumite.ingot * 3] as IItemStack[],
-            [
-                all_metals.aluminum.ingot * 5,
-                all_metals.iron.ingot * 2,
-                <minecraft:obsidian>
-            ] as IItemStack[]
-        );
-
-
-        add2alloy(1, "red_alloy", 1,
-            "copper", 1,
-            "redstone", 4
-        );
-        add2alloy(1, "blue_alloy", 1,
-            "zinc", 1,
-            "electrotine", 4
-        );
-        mods.immersiveengineering.AlloySmelter.addRecipe(
-            <projectred-core:resource_item:104>, 
-            <contenttweaker:zinc_ingot>,
-            <projectred-core:resource_item:105> * 4,
-            200
-        );
-        mods.thermalexpansion.InductionSmelter.addRecipe(
-            <projectred-core:resource_item:105> * 4, 
-            <thermalfoundation:material:893>, <minecraft:dye:4> * 4, 
-            16000
-        );
-        mods.thermalexpansion.InductionSmelter.addRecipe(
-            <projectred-core:resource_item:105> * 6, 
-            <thermalfoundation:material:894>, <minecraft:dye:4> * 4, 
-            16000
-        );
-
-
-
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.redstone_alloy.ingot);
-        add3alloy(1, "redstone_alloy", 2,
-            "electric_steel", 2,
-            "red_alloy", 1,
-            "conductive_iron", 3
-        );
-    }
+    
 
     {//te alloys
         mods.enderio.AlloySmelter.removeRecipe(all_metals.signalum.ingot);
@@ -2784,7 +2795,7 @@ add3alloy(1, "flower_steel", 4,
             <extrautils2:ingredients:4>,
             <harvestcraft:extremechiliitem>,
             <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust>,
-            <contenttweaker:excited_crop> | <contenttweaker:coral_dust>
+            <contenttweaker:excited_crop>
         ]);
 
 

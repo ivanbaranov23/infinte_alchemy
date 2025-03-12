@@ -17,6 +17,9 @@ recipes.addShaped("ia_end_cake", <dimensionaledibles:end_cake>, [
 ]);
 
 
+//shrub
+furnace.addRecipe(<minecraft:tallgrass>, <ore:treeSapling>);
+
 
 
 //furnace
@@ -28,13 +31,11 @@ recipes.addShaped("furnace", <minecraft:furnace>,
     	[<roots:runestone>, <contenttweaker:firebrick_block>, <roots:runestone>]
 	]
 );
-recipes.addShaped("furnace2", <minecraft:furnace> * 2,
-    [
-		[<roots:runestone>, <thermalfoundation:material:163>, <roots:runestone>],
-    	[<thermalfoundation:material:163>, <minecraft:glass>, <thermalfoundation:material:163>],
-    	[<roots:runestone>, <contenttweaker:firebrick_block>, <roots:runestone>]
-	]
-);
+recipes.addShaped("furnace2", <minecraft:furnace> * 2, [
+	[<roots:runestone>, <thermalfoundation:material:163>, <roots:runestone>],
+    [<thermalfoundation:material:163>, <minecraft:glass>, <thermalfoundation:material:163>],
+    [<roots:runestone>, <contenttweaker:firebrick_block>, <roots:runestone>]
+]);
 
 //brewing
 recipes.remove(<minecraft:brewing_stand>);

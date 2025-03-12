@@ -25,7 +25,7 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:glass_fiber@0",
+            "item": "contenttweaker:glass_cloth@0",
             "amount": 1
         },
         {

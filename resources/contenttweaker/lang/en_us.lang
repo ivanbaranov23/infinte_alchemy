@@ -2099,3 +2099,7 @@ item.contenttweaker.centipedium.name=Centipedium Ingot
 item.contenttweaker.cheesy_capacitor.name=Cheesy Capacitor
 item.contenttweaker.cheesy_circuit.name=Cheesy Circuit
 item.contenttweaker.bug_chip.name=Buggy Chip
+
+
+tile.recycler.name=Recycler
+requious.jei.recipe.recycler=Recycler

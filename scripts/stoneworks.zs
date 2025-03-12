@@ -293,22 +293,14 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
     //jasper
     mods.thermalexpansion.Transposer.addFillRecipe(
-        <quark:jasper> * 8, 
+        <quark:jasper> * 12, 
         <quark:hardened_clay_tiles> * 2, 
-        <liquid:clay> * 144, 500
+        <liquid:clay> * 144, 400
     );
-    scripts.jei.addJEIhint(
-        [], [<liquid:creosote>, <liquid:witchwater>],
-        [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-        [<quark:jasper>]
-    );
+    
 
     //marble
-    scripts.jei.addJEIhint(
-        [], [<liquid:ash_solution>, <liquid:witchwater>],
-        [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-        [<quark:marble>]
-    );
+    mods.thermalexpansion.Compactor.addStorageRecipe(<quark:marble>, <quark:limestone>, 400);
 }
 {//bop
     recipes.addShaped("ia_mud", <biomesoplenty:mud> * 16, [
@@ -520,11 +512,7 @@ mods.enderio.SagMill.addRecipe(
     [1.0, 0.5, 0.25, 0.25], 
     <biomesoplenty:fleshchunk>, "MULTIPLY_OUTPUT"
 );
-scripts.jei.addJEIhint(
-    [], [<liquid:water>, <liquid:blood>],
-    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-    [<biomesoplenty:flesh>]
-);
+
 
 //basalt
 mods.thermalexpansion.Transposer.addFillRecipe(

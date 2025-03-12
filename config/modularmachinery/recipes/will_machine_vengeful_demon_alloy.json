@@ -6,7 +6,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 1000
+            "energyPerTick": 10000
         },
         {
             "type": "will",
@@ -25,13 +25,13 @@
         {
             "type": "item",
             "io-type": "input",
-            "item": "contenttweaker:glass_fiber@0",
+            "item": "contenttweaker:glass_cloth@0",
             "amount": 1
         },
         {
             "type": "item",
             "io-type": "input",
-            "item": "enderio:item_material@14",
+            "item": "enderio:item_material@18",
             "amount": 1
         },
         {

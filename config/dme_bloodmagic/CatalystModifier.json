@@ -29,6 +29,34 @@
   },
   {
     "catalyst": {
+      "id": "deepmoblearning:living_matter_aether"
+    },
+    "multiplier": 2.5,
+    "operations": 10
+  },
+  {
+    "catalyst": {
+      "id": "deepmoblearning:living_matter_atum"
+    },
+    "multiplier": 2.5,
+    "operations": 10
+  },
+  {
+    "catalyst": {
+      "id": "deepmoblearning:living_matter_erebus"
+    },
+    "multiplier": 2.5,
+    "operations": 10
+  },
+  {
+    "catalyst": {
+      "id": "contenttweaker:blood_matter"
+    },
+    "multiplier": 5.0,
+    "operations": 20
+  },
+  {
+    "catalyst": {
       "id": "deepmoblearning:glitch_heart"
     },
     "multiplier": 5.0,

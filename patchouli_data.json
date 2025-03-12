@@ -31,6 +31,24 @@
         "deepmoblearning:2_trials/0_trial_key"
       ],
       "completedManualQuests": []
+    },
+    "floralchemy:guide": {
+      "viewedEntries": [
+        "floralchemy:blocks/flooded_soil_entry",
+        "floralchemy:blocks/leaky_cauldron_entry",
+        "floralchemy:botania/petro_petunia_entry",
+        "floralchemy:plants/crystalthorn",
+        "floralchemy:plants/hedge"
+      ],
+      "bookmarks": [],
+      "history": [
+        "floralchemy:plants/hedge",
+        "floralchemy:plants/crystalthorn",
+        "floralchemy:botania/petro_petunia_entry",
+        "floralchemy:blocks/leaky_cauldron_entry",
+        "floralchemy:blocks/flooded_soil_entry"
+      ],
+      "completedManualQuests": []
     }
   }
 }

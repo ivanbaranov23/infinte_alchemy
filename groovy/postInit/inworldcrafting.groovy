@@ -99,6 +99,12 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .register()
 
 inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('witchwater'), 1.0f)
+        .input(item('minecraft:wheat_seeds'))
+        .output(item('exnihilocreatio:item_material', 3))
+        .register()
+
+inWorldCrafting.fluidToItem.recipeBuilder()
         .fluidInput(fluid('witchwater'), 0.1f)
         .input(item('minecraft:porkchop'))
         .output(item('minecraft:rotten_flesh'))

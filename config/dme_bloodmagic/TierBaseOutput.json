@@ -14,5 +14,9 @@
   {
     "tier": 4,
     "base_output": 300
+  },
+  {
+    "tier": 4,
+    "base_output": 450
   }
 ]

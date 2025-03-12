@@ -84,3 +84,21 @@ recipes.addShaped("ia_trial_key", <deepmoblearning:trial_key>, [
 		[<deepmoblearning:soot_covered_plate>, <deepmoblearning:pristine_matter_zombie>, <deepmoblearning:soot_covered_plate>]
 	]);
 }
+
+
+scripts.content_machines.addBioAssemblerRecipe(
+    [<contenttweaker:blood_matter> * 4], null, 
+    [
+		<deepmoblearning:living_matter_hellish> * 12,
+		<deepmoblearning:living_matter_extraterrestrial> * 12,
+		<deepmoblearning:living_matter_atum> * 12,
+		<deepmoblearning:living_matter_erebus> * 12,
+		<deepmoblearning:living_matter_aether> * 12,
+		<deepmoblearning:living_matter_twilight> * 12
+	], 
+	[
+		<liquid:bloodbronze> * 144
+	], 
+	<contenttweaker:research_magic2>,
+    20, 20
+);

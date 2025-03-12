@@ -9,6 +9,8 @@ import mods.fluidintetweaker.interaction.Condition as ICondition;
 FITweaker.addRecipe(<liquid:blood>, <liquid:water>, <blockstate:biomesoplenty:flesh>);
 
 FITweaker.addRecipe(<liquid:blood>, <liquid:witchwater>, <blockstate:minecraft:soul_sand>);
+FITweaker.addRecipe(<liquid:witchwater>, <liquid:blood>, <blockstate:minecraft:soul_sand>);
+
 FITweaker.addRecipe(<liquid:blueslime>, <liquid:witchwater>, <blockstate:tconstruct:slime_dirt:type=blue>);
 FITweaker.addRecipe(<liquid:ash_solution>, <liquid:witchwater>, <blockstate:quark:marble>);
 FITweaker.addRecipe(<liquid:andesite>, <liquid:witchwater>, 
@@ -39,13 +41,15 @@ FITweaker.addRecipe(<liquid:lava>, <liquid:andesite>, <blockstate:minecraft:ston
 
 
 {//research
+    FITweaker.addRecipe(<liquid:residue_cg>, <liquid:liquifiedsouls>, <blockstate:netherendingores:ore_other_1:blocks=overworld_quartz_ore>);
+
     FITweaker.addRecipe(<liquid:organic_cg>, <liquid:andesite>, <blockstate:minecraft:mossy_cobblestone>);
     FITweaker.addRecipe(<liquid:organic_cg>, <liquid:formic_acid>, <blockstate:erebus:petrified_bark_red:axis=y>);
 
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:pure_water>, <blockstate:contenttweaker:poor_iron_ore>);
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:sand>, <blockstate:atum:sand>);
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:redstone>, <blockstate:minecraft:sand:variant=red_sand>);
-    FITweaker.addRecipe(<liquid:residue_cg>, <liquid:liquifiedsouls>, <blockstate:netherendingores:ore_other_1:blocks=overworld_quartz_ore>);
+    
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:pyrotheum>, <blockstate:quark:biome_cobblestone:variant=fire_stone>);
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:cryotheum>, <blockstate:quark:biome_cobblestone:variant=icy_stone>);
 

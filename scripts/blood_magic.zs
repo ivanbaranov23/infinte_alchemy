@@ -173,14 +173,12 @@ function BloodAltar_addRecipe(output as IItemStack, input as IItemStack, minimum
 	BloodAltar.removeRecipe(<bloodmagic:slate:2>);
 	BloodAltar_addRecipe(<bloodmagic:slate:3>, <bloodmagic:slate:2>, 3, 30000, 100, 5);
 
+	BloodAltar_addRecipe(<contenttweaker:slate_6>, <bloodmagic:slate:4>, 5, 75000, 500, 5);
+	BloodAltar_addRecipe(<contenttweaker:slate_7>, <contenttweaker:slate_6>, 5, 100*1000, 1000, 5);
+	BloodAltar_addRecipe(<contenttweaker:slate_8>, <contenttweaker:slate_7>, 5, 200*1000, 3000, 5);
+	BloodAltar_addRecipe(<contenttweaker:slate_9>, <contenttweaker:slate_8>, 5, 500*1000, 7500, 5);
 
-	//BloodAltar.removeRecipe(<bloodmagic:slate:1>);
-	BloodAltar_addRecipe(<contenttweaker:slate_6>, <bloodmagic:slate:4>, 5, 1000000, 1500, 5);
-	BloodAltar_addRecipe(<contenttweaker:slate_7>, <contenttweaker:slate_6>, 5, 2*1000*1000, 2*1000, 5);
-	BloodAltar_addRecipe(<contenttweaker:slate_8>, <contenttweaker:slate_7>, 5, 10*1000*1000, 10*1000, 5);
-	BloodAltar_addRecipe(<contenttweaker:slate_9>, <contenttweaker:slate_8>, 5, 25*1000*1000, 25*1000, 5);
-
-	BloodAltar_addRecipe(<contenttweaker:slate_10>, <contenttweaker:slate_9>, 5, 2*1000*1000*1000, 2*1000*1000, 5);
+	BloodAltar_addRecipe(<contenttweaker:slate_10>, <contenttweaker:slate_9>, 5, 1500*1000, 10000, 5);
 
 	BloodAltar_addRecipe(<contenttweaker:blood_spike>, <contenttweaker:black_bronze_rod>, 2, 2500, 25, 5);
 
@@ -268,14 +266,14 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	);
 }
 {//ingots
-	BloodAltar_addRecipe(<bloodtinker:blood_bronze_ingot>, <contenttweaker:black_bronze_ingot>, 0, 1000, 50, 50);
-	BloodAltar_addRecipe(<bloodtinker:blood_bronze_block>, <contenttweaker:black_bronze_block>, 0, 8000, 500, 100);
+	BloodAltar_addRecipe(<bloodtinker:blood_bronze_ingot>, <contenttweaker:black_bronze_ingot>, 0, 4000, 50, 250);
+	BloodAltar_addRecipe(<bloodtinker:blood_bronze_block>, <contenttweaker:black_bronze_block>, 0, 32000, 500, 500);
 
 	BloodAltar_addRecipe(<tconevo:metal:25>, <bloodtinker:blood_bronze_ingot>, 3, 30000, 1000, 5000);
 	BloodAltar_addRecipe(<tconevo:metal_block:5>, <bloodtinker:blood_bronze_block>, 3, 30000 * 8, 5000, 10000);
 
-	BloodAltar_addRecipe(<contenttweaker:crystal_metal_ingot>, <tconevo:metal:25>, 5, 50000, 2000, 5000);
-	BloodAltar_addRecipe(<contenttweaker:crystal_metal_block>, <tconevo:metal_block:5>, 5, 50000 * 8, 10000, 10000);
+	BloodAltar_addRecipe(<contenttweaker:crystal_metal_ingot>, <tconevo:metal:25>, 5, 200000, 2000, 5000);
+	BloodAltar_addRecipe(<contenttweaker:crystal_metal_block>, <tconevo:metal_block:5>, 5, 200000 * 8, 10000, 10000);
 
 
 	scripts.content_machines.addAssemblerRecipe(
@@ -680,6 +678,31 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		<natura:soups:7>, <minecraft:redstone_lamp>, <mekanism:basicblock:4>, <integrateddynamics:menril_torch>
 	], 320, 8);
 }
+{
+	TartaricForge.addRecipe(<contenttweaker:mixed_will_crystal>, [
+		<bloodmagic:item_demon_crystal:1>, <bloodmagic:item_demon_crystal:2>, <bloodmagic:item_demon_crystal:3>, <bloodmagic:item_demon_crystal:4>
+	], 1200, 100);
+
+
+	mods.enderio.AlloySmelter.addRecipe(<bloodmagic:item_demon_crystal:1>, 
+		[<enderio:item_material:18> * 2, <bloodmagic:item_demon_crystal> * 2, <projectred-core:resource_item:202>], 
+		500000
+	);
+	mods.enderio.AlloySmelter.addRecipe(<bloodmagic:item_demon_crystal:2>, 
+		[<enderio:item_material:18> * 2, <bloodmagic:item_demon_crystal> * 2, <contenttweaker:delicate_amber>], 
+		500000
+	);
+	mods.enderio.AlloySmelter.addRecipe(<bloodmagic:item_demon_crystal:3>, 
+		[<enderio:item_material:18> * 2, <bloodmagic:item_demon_crystal> * 2, <projectred-core:resource_item:200>], 
+		500000
+	);
+	mods.enderio.AlloySmelter.addRecipe(<bloodmagic:item_demon_crystal:4>, 
+		[<enderio:item_material:18> * 2, <bloodmagic:item_demon_crystal> * 2, <contenttweaker:delicate_tanzanite>], 
+		500000
+	);
+	
+}
+
 
 
 {//alchemical table

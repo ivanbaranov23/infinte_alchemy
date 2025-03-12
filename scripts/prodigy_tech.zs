@@ -14,6 +14,9 @@ import mods.modularmachinery.RecipeBuilder;
 import crafttweaker.item.IItemStack;
 
 
+import scripts.recycler.addRecycle;
+
+
 furnace.remove(<projectred-core:resource_item>);
 furnace.addRecipe(<prodigytech:charred_stone>, <minecraft:stone>);
 
@@ -28,6 +31,10 @@ recipes.addShaped(
     [<appliedenergistics2:tiny_tnt>, <extendedcrafting:singularity_custom:100>, <appliedenergistics2:tiny_tnt>],
     [<roots:runestone>, <minecraft:furnace>, <roots:runestone>]]
 );
+addRecycle(<prodigytech:explosion_furnace>, [
+	<extendedcrafting:singularity_custom:100>, <minecraft:furnace>, <thermalfoundation:storage_alloy:3>, 
+	<appliedenergistics2:tiny_tnt> * 2, <roots:runestone> * 4
+]);
 
 
 //explosionfurnace_recipes.removeRecipeByOutput(<prodigytech:ferramic_ingot>);
@@ -98,6 +105,9 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 		[<contenttweaker:zorra_steel_gem>, <minecraft:enchanting_table>, <contenttweaker:zorra_steel_gem>],
 		[<contenttweaker:zorra_steel_gem>, <enderio:block_dark_steel_anvil>, <contenttweaker:zorra_steel_gem>]
 	]);
+	addRecycle(<prodigytech:zorra_altar>, [
+		<minecraft:enchanting_table>, <enderio:block_dark_steel_anvil>, <contenttweaker:zorra_steel_gem> * 4
+	]);
 
 	<ore:treeLeaves>.remove(<prodigytech:zorra_leaves>);
 }
@@ -121,24 +131,44 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 		[<ore:ingotFerramic>, <contenttweaker:firebrick_block>, <ore:ingotFerramic>], 
 		[<ore:ingotAluminum>, <thermalfoundation:material:324>, <ore:ingotAluminum>]
 	]);
+	addRecycle(<prodigytech:magmatic_aeroheater>, [
+		<contenttweaker:firebrick_block>, 
+		<ore:ingotFerramic>.firstItem * 4, <ore:ingotAluminum>.firstItem * 6
+	]);
+
 	recipes.remove(<prodigytech:solid_fuel_aeroheater>);
 	recipes.addShaped("ia_solid_fuel_aeroheater", <prodigytech:solid_fuel_aeroheater>, [
 		[<ore:ingotFerramic>, <prodigytech:fuel_pellet_16>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <morefurnaces:furnaceblock>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <prodigytech:magmatic_aeroheater>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:solid_fuel_aeroheater>, [
+		<morefurnaces:furnaceblock>, <prodigytech:magmatic_aeroheater>,
+		<ore:ingotFerramic>.firstItem * 6, <prodigytech:fuel_pellet_16>
+	]);
+
 	recipes.remove(<prodigytech:energion_aeroheater>);
 	recipes.addShaped("ai_energion_aeroheater", <prodigytech:energion_aeroheater>, [
 		[<prodigytech:inferno_crystal>, <prodigytech:circuit_crude>, <prodigytech:inferno_crystal>], 
 		[<prodigytech:inferno_crystal>, <ore:gemEnergion>, <prodigytech:inferno_crystal>], 
 		[<ore:gearFerramic>, <prodigytech:solid_fuel_aeroheater>, <ore:gearFerramic>]
 	]);
+	addRecycle(<prodigytech:energion_aeroheater>, [
+		<prodigytech:solid_fuel_aeroheater>, <prodigytech:circuit_crude>,
+		<ore:ingotFerramic>.firstItem * 16, <ore:gemEnergion>.firstItem, <prodigytech:inferno_crystal> * 4
+	]);
+
 	recipes.remove(<prodigytech:tartaric_aeroheater>);
 	recipes.addShaped("ia_tartaric_aeroheater", <prodigytech:tartaric_aeroheater>, [
 		[<prodigytech:zorrasteel_block>, <prodigytech:aeternus_crystal>, <prodigytech:zorrasteel_block>], 
 		[<prodigytech:circuit_perfected>, <morefurnaces:furnaceblock:1>, <prodigytech:circuit_perfected>], 
 		[<prodigytech:zorrasteel_block>, <prodigytech:energion_aeroheater>, <prodigytech:zorrasteel_block>]
 	]);
+	addRecycle(<prodigytech:tartaric_aeroheater>, [
+		<prodigytech:energion_aeroheater>, <morefurnaces:furnaceblock:1>, <prodigytech:aeternus_crystal>,
+		<prodigytech:circuit_perfected> * 2, <prodigytech:zorrasteel_block> * 4
+	]);
+
 
 	recipes.remove(<prodigytech:capacitor_aeroheater>);
 	recipes.addShaped("ia_capacitor_aeroheater", <prodigytech:capacitor_aeroheater>, [
@@ -146,6 +176,11 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 		[<ore:ingotFerramic>, null, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <ore:ingotFerramic>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:capacitor_aeroheater>, [
+		<prodigytech:heat_capacitor_0:1200>,
+		<ore:ingotFerramic>.firstItem * 7
+	]);
+
 }
 
 
@@ -316,23 +351,38 @@ solderer.removeAll();
 		[<ore:ingotFerramic>, <ore:dustAsh>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <contenttweaker:firebrick_block>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:incinerator>, [
+		<contenttweaker:firebrick_block>, <ore:ingotFerramic>.firstItem * 6
+	]);
+
 	recipes.remove(<prodigytech:capacitor_charger>);
 	recipes.addShaped("ia_capacitor_charger", <prodigytech:capacitor_charger>, [
 		[<ore:ingotFerramic>, <ore:ingotFerramic>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, null, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <prodigytech:heat_capacitor_0:1200>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:capacitor_charger>, [
+		<prodigytech:heat_capacitor_0:1200>, <ore:ingotFerramic>.firstItem * 7
+	]);
+	
 	recipes.remove(<prodigytech:fuel_processor>);
 	recipes.addShaped("ia_fuel_processor", <prodigytech:fuel_processor>, [
 		[<ore:ingotFerramic>, null, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <ore:plateAluminum>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <contenttweaker:firebrick_block>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:fuel_processor>, [
+		<contenttweaker:firebrick_block>, <ore:ingotFerramic>.firstItem * 6, <ore:ingotAluminum>.firstItem * 4
+	]);
+
 	recipes.remove(<prodigytech:heat_sawmill>);
 	recipes.addShaped("ia_heat_sawmill", <prodigytech:heat_sawmill>, [
 		[<ore:gearFerramic>, <ore:gearFerramic>, <ore:gearFerramic>], 
 		[<ore:ingotFerramic>, null, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <ore:plateCarbon>, <ore:ingotFerramic>]
+	]);
+	addRecycle(<prodigytech:heat_sawmill>, [
+		<ore:ingotFerramic>.firstItem * 28, <ore:plateCarbon>.firstItem 
 	]);
 
 	recipes.remove(<prodigytech:rotary_grinder>);
@@ -341,6 +391,10 @@ solderer.removeAll();
 		[<ore:ingotFerramic>, null, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <appliedenergistics2:grindstone>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:rotary_grinder>, [
+		<appliedenergistics2:grindstone>, <ore:ingotFerramic>.firstItem * 14
+	]);
+
 	recipes.remove(<prodigytech:ore_refinery>);
 	recipes.addShaped("ia_ore_refinery1", <prodigytech:ore_refinery>, [
 		[<ore:ingotFerramic>, <prodigytech:heat_capacitor_0>, <ore:ingotFerramic>], 
@@ -352,6 +406,9 @@ solderer.removeAll();
 		[<ore:ingotFerramic>, <prodigytech:circuit_crude>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <prodigytech:rotary_grinder>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:ore_refinery>, [
+		<prodigytech:rotary_grinder>, <ore:ingotFerramic>.firstItem * 6, <prodigytech:heat_capacitor_0:1200>
+	]);
 
 	recipes.remove(<prodigytech:blower_furnace>);
 	recipes.addShaped("ia_blower_furnace", <prodigytech:blower_furnace>, [
@@ -359,24 +416,42 @@ solderer.removeAll();
 		[<ore:dustCharcoal>, null, <ore:dustCharcoal>], 
 		[<ore:ingotFerramic>, <minecraft:furnace>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:blower_furnace>, [
+		<minecraft:furnace>, <ore:ingotFerramic>.firstItem * 4, <ore:ingotAluminum>.firstItem
+	]);
+
 	recipes.remove(<prodigytech:magnetic_reassembler>);
 	recipes.addShaped("ia_magnetic_reassembler", <prodigytech:magnetic_reassembler>, [
 		[<ore:ingotFerramic>, <prodigytech:heat_capacitor_0>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <ore:gearFerramic>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <prodigytech:blower_furnace>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:magnetic_reassembler>, [
+		<prodigytech:blower_furnace>, <ore:ingotFerramic>.firstItem * 14, <prodigytech:heat_capacitor_0:1200>
+	]);
+
 	recipes.remove(<prodigytech:solderer>);
 	recipes.addShaped("ai_solderer", <prodigytech:solderer>, [
 		[<ore:ingotFerramic>, <ore:stickGold>, <ore:ingotFerramic>], 
 		[<ore:gearFerramic>, <prodigytech:circuit_plate>, <ore:gearFerramic>], 
 		[<ore:ingotFerramic>, <ore:plateCarbon>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:solderer>, [
+		<prodigytech:circuit_plate>, <ore:ingotFerramic>.firstItem * 20, 
+		<ore:ingotGold>.firstItem * 3, <ore:plateCarbon>.firstItem
+	]);
+
 	recipes.remove(<prodigytech:automatic_crystal_cutter>);
 	recipes.addShaped("ia_automatic_crystal_cutter", <prodigytech:automatic_crystal_cutter>, [
 		[<ore:ingotFerramic>, <ore:gemEnergion>, <ore:ingotFerramic>], 
 		[<prodigytech:crystal_cutter>, <prodigytech:circuit_crude>, <prodigytech:crystal_cutter>], 
 		[<ore:ingotFerramic>, <contenttweaker:duraluminum_block>, <ore:ingotFerramic>]
 	]);
+	addRecycle(<prodigytech:automatic_crystal_cutter>, [
+		<prodigytech:crystal_cutter>, <ore:ingotFerramic>.firstItem * 4, <ore:gemEnergion>.firstItem, <prodigytech:circuit_crude>,
+		<contenttweaker:duraluminum_block>, 
+	]);
+
 
 	recipes.remove(<prodigytech:primordialis_reactor>);
 	recipes.addShaped("ia_primordialis_reactor", <prodigytech:primordialis_reactor>, [
@@ -384,12 +459,22 @@ solderer.removeAll();
 		[<contenttweaker:research_plants1>.reuse(), <extendedcrafting:singularity_custom:100>, <contenttweaker:research_sieving>.reuse()], 
 		[<ore:blockFerramic>, <thermalexpansion:frame:64>, <ore:blockFerramic>]
 	]);
+	addRecycle(<prodigytech:primordialis_reactor>, [
+		<thermalexpansion:frame:64>, <ore:blockFerramic>.firstItem * 4, <prodigytech:heat_capacitor_1:1200>,
+		<extendedcrafting:singularity_custom:100>
+	]);
+
 	recipes.remove(<prodigytech:atomic_reshaper>);
 	recipes.addShaped("ia_atomic_reshaper", <prodigytech:atomic_reshaper>, [
 		[<ore:blockFerramic>, <prodigytech:heat_capacitor_1>, <ore:blockFerramic>], 
 		[<prodigytech:primordium>, <extrautils2:suncrystal>, <prodigytech:primordium>], 
 		[<ore:blockFerramic>, <thermalexpansion:frame:64>, <ore:blockFerramic>]
 	]);
+	addRecycle(<prodigytech:atomic_reshaper>, [
+		<thermalexpansion:frame:64>, <ore:blockFerramic>.firstItem * 4, <prodigytech:heat_capacitor_1:1200>,
+		<extrautils2:suncrystal:250>
+	]);
+
 }
 
 {//grinder fix

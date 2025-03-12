@@ -231,7 +231,7 @@ import mods.modularmachinery.RecipeBuilder;
     );
 }
 {//silicon
-    mods.mekanism.crusher.removeRecipe(<ore:itemSilicon>);
+    //mods.mekanism.crusher.removeRecipe(<ore:itemSilicon>);
 
     scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 100, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <appliedenergistics2:material:5>, 128, 40);
     scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 120, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <mysticalagriculture:silicon_essence>, 128, 40);
@@ -900,7 +900,7 @@ scripts.content_machines.addFluidMixerRecipe(
         <taiga:terrax_dust>,
         <mekanism:otherdust>
     ]);
-    recipes.addShapeless("ia_eliamondin2", <contenttweaker:eliamondin_dust> * 3, [
+    recipes.addShapeless("ia_eliamondin2", <contenttweaker:eliamondin_dust> * 2, [
         <thermalfoundation:material:102>,
         <contenttweaker:montu_godshard>,
         <taiga:terrax_dust>,

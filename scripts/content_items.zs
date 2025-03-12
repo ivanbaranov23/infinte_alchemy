@@ -2048,6 +2048,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("bonsai_sapling").register();
     VanillaFactory.createItem("bonsai_mushroom_brown").register();
     VanillaFactory.createItem("bonsai_mushroom_red").register();
+    VanillaFactory.createItem("bonsai_baffle_cap").register();
+    VanillaFactory.createItem("sus_sapling").register();
 
     VanillaFactory.createItem("nether_pest").register();
     add_living("nitrall");
@@ -2403,6 +2405,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createBlock("soul_frame", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("blood_frame", <blockmaterial:rock>).register();
 
+    VanillaFactory.createItem("blood_matter").register();
+
     {//buckets
         VanillaFactory.createItem("bucket_obsidian").register();
         var residue = VanillaFactory.createItem("bucket_obsidian_residue");
@@ -2488,8 +2492,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("reagent_bug").register();
     VanillaFactory.createItem("reagent_mushroom").register();
     VanillaFactory.createItem("reagent_glass").register();
+    VanillaFactory.createItem("reagent_crystal").register();
     VanillaFactory.createItem("reagent_potion").register();
     VanillaFactory.createItem("reagent_space").register();
+
+    VanillaFactory.createItem("mixed_will_crystal").register();
 
     {//nether star dup & starry polymer
     

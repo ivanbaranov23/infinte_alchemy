@@ -21,46 +21,7 @@ dj2.elastic_fibre.desc0=§f- Locusts (in Elysian Fields and Subterranean Savanna
 dj2.elastic_fibre.desc1=§f- Punchrooms (in Fungal Forests as an uncommon drop)");
 */
 
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.praying_mantis>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:grandmas_shoes_mushroom>] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.centipede>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.glow_worm>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:glowstone>] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.grasshopper>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:hopper>, <minecraft:tallgrass:1>] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.locust>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:erebus_food:2>] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.mosquito>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <tconstruct:edible:3>] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.tarantula>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:material:1>] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.velvet_worm>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <harvestcraft:redvelvetcupcakeitem>] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.fungal_weevil>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <exnihilocreatio:item_material:3>] // a list of ingredients used for the summoning
-);
-mods.roots.SummonCreatures.addEntity(
-  <entity:erebus:erebus.cicada>, // the entity to be summoned
-  [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:poisonous_potato>] // a list of ingredients used for the summoning
-);
+
 
 //bamboo
 recipes.addShapeless(

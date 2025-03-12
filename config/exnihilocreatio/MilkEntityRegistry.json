@@ -17,11 +17,17 @@
     "amount": 80,
     "coolDown": 20
   },
+  {
+    "entityOnTop": "witch",
+    "result": "witchwater",
+    "amount": 40,
+    "coolDown": 20
+  },
   
   {
     "entityOnTop": "twilightforest:loyal_zombie",
     "result": "rot",
-    "amount": 100,
+    "amount": 200,
     "coolDown": 10
   },
   {

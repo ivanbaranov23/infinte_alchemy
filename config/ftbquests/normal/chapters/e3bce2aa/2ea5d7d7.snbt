@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: 1.0d,
+	dependencies: [
+		"c56832d9"
+	],
+	optional: true,
+	tasks: [{
+		uid: "aa03129c",
+		type: "checkmark",
+		title: "Ore Creation Fluid",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "ore_make"
+			}
+		}
+	}]
+}

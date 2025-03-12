@@ -168,6 +168,19 @@ recipes.addShaped("ia_vibrant_crystal", <enderio:item_material:15>, [
 	[<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2>]
 ]);
 
+recipes.addShaped("ia_weather_crystal1", <enderio:item_material:18> * 4, [
+    [<contenttweaker:mixed_will_crystal>, <enderio:item_material:14>, <contenttweaker:mixed_will_crystal>], 
+    [<enderio:item_material:15>, <enderio:item_material:16>, <enderio:item_material:15>], 
+    [<contenttweaker:mixed_will_crystal>, <enderio:item_material:14>, <contenttweaker:mixed_will_crystal>]
+]);
+recipes.addShaped("ia_weather_crystal2", <enderio:item_material:18> * 4, [
+    [<contenttweaker:crystal_metal_nugget>, <enderio:item_material:14>, <contenttweaker:crystal_metal_nugget>], 
+    [<enderio:item_material:15>, <enderio:item_material:16>, <enderio:item_material:15>], 
+    [<contenttweaker:crystal_metal_nugget>, <enderio:item_material:14>, <contenttweaker:crystal_metal_nugget>]
+]);
+
+
+
 
 recipes.addShapeless("ia_gem_cat", <contenttweaker:gem_catalyst> * 8, 
     [

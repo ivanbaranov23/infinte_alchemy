@@ -2,6 +2,7 @@ import mods.immersiveengineering.Blueprint;
 import mods.immersivepetroleum.Distillation;
 import mods.modularmachinery.RecipeBuilder;
 
+import scripts.recycler.addRecycle;
 
 //molds
 Blueprint.removeRecipe(<immersiveengineering:mold>);
@@ -47,12 +48,14 @@ recipes.addShapeless("ia_ie_water_wheel", <immersiveengineering:wooden_device1>,
 	<exnihilocreatio:block_waterwheel>, <immersiveengineering:material:8>,
 	<immersiveengineering:material:10>, <immersiveengineering:material:10>, <immersiveengineering:material:10>, <immersiveengineering:material:10>
 ]);
+addRecycle(<immersiveengineering:wooden_device1>, [<immersiveengineering:material:8>, <immersiveengineering:treated_wood> * 20]);
 recipes.remove(<immersiveengineering:wooden_device1:1>);
 recipes.addShaped("ia_ie_windmill", <immersiveengineering:wooden_device1:1>, [
 	[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
 	[<immersiveengineering:material:11>, <immersiveengineering:material:8>, <immersiveengineering:material:11>],
 	[<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]
 ]);
+addRecycle(<immersiveengineering:wooden_device1:1>, [<immersiveengineering:material:8>, <immersiveengineering:treated_wood> * 40]);
 
 {//glass
 	recipes.remove(<immersiveengineering:stone_decoration:8>);
@@ -351,7 +354,10 @@ recipes.addShaped("ia_kinetic_dynamo", <immersiveengineering:metal_device1:2>, [
 	[<ore:stickCopper>, <immersiveengineering:wirecoil:2>, <contenttweaker:zinc_rod>], 
 	[<ore:plateSteel>, <prodigytech:circuit_refined>, <ore:plateSteel>]
 ]);
-
+addRecycle(<immersiveengineering:metal_device1:2>, [
+	<prodigytech:circuit_refined>, <immersiveengineering:wirecoil:2> * 2, <ore:ingotCopper>.firstItem * 6, <contenttweaker:zinc_ingot> * 6,
+	<ore:ingotSteel>.firstItem * 8
+]);
 
 recipes.remove(<immersiveengineering:metal_device1:3>);
 recipes.addShaped("ia_thermo_gen", <immersiveengineering:metal_device1:3>, [
@@ -359,12 +365,24 @@ recipes.addShaped("ia_thermo_gen", <immersiveengineering:metal_device1:3>, [
 	[<ore:wireCopper>, <immersiveengineering:wirecoil:2>, <contenttweaker:zinc_wire>], 
 	[<ore:wireCopper>, <prodigytech:magmatic_aeroheater>, <contenttweaker:zinc_wire>]
 ]);
+addRecycle(<immersiveengineering:metal_device1:3>, [
+	<prodigytech:heat_capacitor_0:1200>, <immersiveengineering:wirecoil:2>, <ore:ingotCopper>.firstItem * 3, <contenttweaker:zinc_ingot> * 3,
+	<prodigytech:magmatic_aeroheater>
+]);
 
 recipes.remove(<immersiveengineering:metal_device1:1>);
 recipes.addShaped("ia_external_heater", <immersiveengineering:metal_device1:1>, [
 	[<contenttweaker:duraluminum_plate>, <ore:plateCarbon>, <contenttweaker:duraluminum_plate>], 
 	[<ore:plateCarbon>, <prodigytech:blower_furnace>, <ore:plateCarbon>], 
 	[<contenttweaker:duraluminum_plate>, <ore:blockRedstone>, <contenttweaker:duraluminum_plate>]
+]);
+addRecycle(<immersiveengineering:metal_device1:1>, [
+	<prodigytech:blower_furnace>, <contenttweaker:duraluminum_ingot> * 16, <ore:plateCarbon>.firstItem * 3,
+	<minecraft:redstone_block>
+]);
+
+addRecycle(<immersiveengineering:metal_device1>, [
+	<immersiveengineering:metal_device1:1>, <immersiveengineering:sheetmetal:9> * 7
 ]);
 
 

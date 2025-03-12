@@ -1,4 +1,5 @@
 import mods.modularmachinery.RecipeBuilder;
+import scripts.recycler.addRecycle;
 
 //early game
 recipes.addShaped("mm_tree_powered_compressor_controller",
@@ -7,6 +8,11 @@ recipes.addShaped("mm_tree_powered_compressor_controller",
     [<thermalfoundation:material:320>, <modularmachinery:blockcasing>, <thermalfoundation:material:320>],
     [<contenttweaker:simple_motor>, <minecraft:furnace>, <contenttweaker:simple_motor>],]
 );
+addRecycle(<modularcontroller:tree_powered_compressor_controller>, [
+	<modularmachinery:blockcasing>, <minecraft:furnace>, 
+	<minecraft:iron_ingot> * 8, <thermalfoundation:material:128> * 8, 
+	<contenttweaker:simple_motor> * 4
+]);
 
 //IE
 recipes.addShaped("mm_high_oven_controller", <modularcontroller:high_oven_controller>, [
@@ -14,15 +20,27 @@ recipes.addShaped("mm_high_oven_controller", <modularcontroller:high_oven_contro
 	[<morefurnaces:furnaceblock>, <immersiveengineering:metal_decoration0:5>, <morefurnaces:furnaceblock>], 
 	[<immersiveengineering:stone_decoration:2>, <tconstruct:smeltery_controller>, <immersiveengineering:stone_decoration:2>]
 ]);
+addRecycle(<modularcontroller:high_oven_controller>, [
+	<immersiveengineering:metal_decoration0:5>, <morefurnaces:furnaceblock> * 2, <tconstruct:smeltery_controller> * 2,
+	<immersiveengineering:stone_decoration:2> * 4
+]);
 recipes.addShaped("mm_garden_cloche_controller", <modularcontroller:garden_cloche_controller>, [
 	[<ore:plankTreatedWood>, <contenttweaker:greenhouse_lamps>, <ore:plankTreatedWood>], 
 	[<botania:fertilizer>, <immersiveengineering:metal_decoration0:5>, <botania:fertilizer>], 
 	[<ore:plankTreatedWood>, <extendedcrafting:singularity_custom:100>, <ore:plankTreatedWood>]
 ]);
+addRecycle(<modularcontroller:garden_cloche_controller>, [
+	<immersiveengineering:metal_decoration0:5>, <contenttweaker:greenhouse_lamps>, <botania:fertilizer> * 2, <extendedcrafting:singularity_custom:100>,
+	<immersiveengineering:treated_wood> * 4
+]);
 recipes.addShaped("mm_heat_engine_controller", <modularcontroller:heat_engine_controller>, [
 	[<immersiveengineering:metal_decoration0:7>, <prodigytech:energion_aeroheater>, <immersiveengineering:metal_decoration0:7>], 
 	[<prodigytech:heat_capacitor_1>, <extrautils2:machine>, <prodigytech:heat_capacitor_1>], 
 	[<immersiveengineering:metal_decoration0:7>, <prodigytech:energion_aeroheater>, <immersiveengineering:metal_decoration0:7>]
+]);
+addRecycle(<modularcontroller:heat_engine_controller>, [
+	<extrautils2:machine>, <prodigytech:energion_aeroheater> * 2, <prodigytech:heat_capacitor_1:1200>, <prodigytech:heat_capacitor_1:1200>,
+	<immersiveengineering:metal_decoration0:7> * 4
 ]);
 
 //XU
@@ -30,6 +48,10 @@ recipes.addShaped("mm_research_station_controller", <modularcontroller:research_
 	[<ore:bookshelf>, <contenttweaker:power_core_active>, <ore:bookshelf>], 
 	[<contenttweaker:power_core_active>, <extrautils2:machine>, <contenttweaker:power_core_active>], 
 	[<ore:bookshelf>, <extendedcrafting:singularity_custom:1>, <ore:bookshelf>]
+]);
+addRecycle(<modularcontroller:research_station_controller>, [
+	<extrautils2:machine>, <contenttweaker:power_core_active> * 3, <extendedcrafting:singularity_custom:1>,
+	<ore:bookshelf>.firstItem * 4
 ]);
 recipes.addShaped("mm_gp_gen_controller", <modularcontroller:gp_gen_controller>, [
 	[<contenttweaker:lapis_tile>, <immersiveengineering:metal_decoration0:6>, <contenttweaker:lapis_tile>], 
@@ -142,7 +164,7 @@ recipes.addShaped("mm_energy_infuser_controller", <modularcontroller:energy_infu
 
 
 recipes.addShaped("mm_tingalum_oven_controller", <modularcontroller:tignalum_oven_controller>, [
-	[<contenttweaker:tignalum_blast_brick>, <prodigytech:heat_capacitor_1>, <contenttweaker:tignalum_blast_brick>], 
+	[<contenttweaker:tignalum_blast_brick>, <prodigytech:heat_capacitor_3>, <contenttweaker:tignalum_blast_brick>], 
 	[<immersiveengineering:metal_device1>, <actuallyadditions:block_misc:8>, <immersiveengineering:metal_device1>], 
 	[<contenttweaker:tignalum_blast_brick>, <modularcontroller:high_oven_controller>, <contenttweaker:tignalum_blast_brick>]
 ]);

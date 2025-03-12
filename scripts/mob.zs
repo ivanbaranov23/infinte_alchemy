@@ -1,6 +1,8 @@
 #priority 5
 import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.entity.IEntityDefinition;
 
 import mods.modularmachinery.RecipeBuilder;
 
@@ -11,8 +13,70 @@ function addEggHint(ent as string, drops as IItemStack[]){
         drops
     );
 }
+function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
+    mods.roots.SummonCreatures.addEntity(
+        ent, inps
+    );
 
-<entity:minecraft:villager_golem>.addDrop(<contenttweaker:iron_heart> % 50);
+    scripts.jei.addJEIhint(
+        inps, [],
+        [<roots:ritual_summon_creatures>],
+        [
+            <minecraft:spawn_egg>.withTag({EntityTag: {id: ent.id}}),
+            <enderio:item_soul_vial:1>.withTag({entityId: ent.id})
+        ]
+    );
+}
+
+{//minecraft
+    <entity:minecraft:villager_golem>.addDrop(<contenttweaker:iron_heart> % 50);
+
+    mods.roots.SummonCreatures.removeEntity(<entity:minecraft:mooshroom>);
+    addRootsSummoning(<entity:minecraft:mooshroom>, [<quark:glowshroom>, <contenttweaker:mushroomite_block>, <minecraft:cooked_beef>]);
+}
+
+{//erebus
+    addRootsSummoning(
+    <entity:erebus:erebus.praying_mantis>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:grandmas_shoes_mushroom>] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.centipede>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.glow_worm>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:glowstone>] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.grasshopper>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:hopper>, <minecraft:tallgrass:1>] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.locust>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:erebus_food:2>] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.mosquito>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <tconstruct:edible:3>] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.tarantula>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:material:1>] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.velvet_worm>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <harvestcraft:redvelvetcupcakeitem>] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.fungal_weevil>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <exnihilocreatio:item_material:3>] // a list of ingredients used for the summoning
+    );
+    addRootsSummoning(
+    <entity:erebus:erebus.cicada>, // the entity to be summoned
+    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:poisonous_potato>] // a list of ingredients used for the summoning
+    );
+}
 
 {//atum
     addEggHint("atum:wraith", [<atum:ectoplasm>]);
@@ -84,43 +148,124 @@ function addEggHint(ent as string, drops as IItemStack[]){
             200, 1000
         );
     }
+
+    <entity:twilightforest:slime_beetle>.addDrop(<contenttweaker:bug_slimeball> % 75);
+    <entity:twilightforest:slime_beetle>.addDrop(<contenttweaker:bug_slimeball> % 75);
+    <ore:slimeball>.add(<contenttweaker:bug_slimeball>);
+    recipes.addShapeless("ia_bug_slimeball_slimeball", <minecraft:slime_ball>, [<contenttweaker:bug_slimeball>]);
+    mods.thermalexpansion.Centrifuge.addRecipe([
+        <minecraft:slime_ball> % 100, <minecraft:slime_ball> % 50, 
+        <erebus:materials> % 25, <mod_lavacow:chitin> % 25], 
+        <contenttweaker:bug_slimeball>, null, 
+        2000
+    );
+
 }
 
-<entity:primitivemobs:treasure_slime>.addDrop(<contenttweaker:gold_slimeball> % 55);
-<entity:primitivemobs:treasure_slime>.addDrop(<contenttweaker:gold_slimeball> % 25);
-mods.thermalexpansion.Centrifuge.addRecipe([
-        <extendedcrafting:material:128> % 30, <extendedcrafting:material:129> % 20,
-        <contenttweaker:relic_nugget> % 30, <taiga:meteorite_nugget> % 5
-    ], 
-    <contenttweaker:gold_slimeball>, null, 
-    2000
+{//primitive
+    <entity:primitivemobs:treasure_slime>.addDrop(<contenttweaker:gold_slimeball> % 55);
+    <entity:primitivemobs:treasure_slime>.addDrop(<contenttweaker:gold_slimeball> % 25);
+    mods.thermalexpansion.Centrifuge.addRecipe([
+            <extendedcrafting:material:128> % 30, <extendedcrafting:material:129> % 20,
+            <contenttweaker:relic_nugget> % 30, <taiga:meteorite_nugget> % 5
+        ], 
+        <contenttweaker:gold_slimeball>, null, 
+        2000
+    );
+
+    <entity:primitivemobs:brain_slime>.addDrop(<contenttweaker:brain_slimeball> % 75);
+    <entity:primitivemobs:brain_slime>.addDrop(<contenttweaker:brain_slimeball> % 75);
+    scripts.content_machines.addBioAssemblerRecipeRandom(
+        [<prodigytech:meat_ground> % 40, <contenttweaker:basic_neuron> % 10], <liquid:blood> * 400,
+        [<contenttweaker:brain_slimeball>], [],
+        <thermalexpansion:machine:10>,
+        10, 256
+    );
+
+    scripts.helper.addSimpleCrushingRecipe(<minecraft:firework_charge>, <minecraft:gunpowder>);
+
+
+    <entity:primitivemobs:void_eye>.addDrop(<contenttweaker:primitive_eyes> % 25);
+
+
+
+    addRootsSummoning(<entity:primitivemobs:dodo>, // the entity to be summoned
+        [<primitivemobs:dodo_egg>, <excompressum:chicken_stick>.withTag({IsAngry: 1 as byte}), <tconstruct:edible:12>] // a list of ingredients used for the summoning
+    );
+}
+
+
+
+
+
+
+
+
+{//fish undead rising
+    //shatered ice
+    recipes.addShapeless("ia_frozenthigh", <mod_lavacow:shattered_ice> * 3, [<mod_lavacow:frozenthigh>]);
+
+    //sludge
+    <ore:slimeball>.remove(<mod_lavacow:silky_sludge>);
+    <ore:stickWood>.remove(<mod_lavacow:mossy_stick>);
+
+    mods.roots.SummonCreatures.addEntity(
+        <entity:mod_lavacow:sludgelord>, // the entity to be summoned
+        [<minecraft:slime>, <forge:bucketfilled>.withTag({FluidName: "sludge", Amount: 1000}), <minecraft:log>] // a list of ingredients used for the summoning
+    );
+
+    //mods.MobStages.addStage("postWither", "mod_lavacow:sludgelord", 66);
+    //mods.MobStages.addStage("postSludgeLord", "mod_lavacow:sludgelord", 0);
+
+    //<minecraft:spawn_egg>.withTag({EntityTag: {id: "mod_lavacow:sludgelord"}})
+
+    //foul
+    scripts.helper.addSawRecipe(<mod_lavacow:foul_hide>, <mod_lavacow:foul_bristle> * 3);
+
+
+    <entity:mod_lavacow:boneworm>.addDrop(<contenttweaker:primitive_eyes> % 90);
+}
+
+{//reliquary
+    mods.thermalexpansion.Centrifuge.addRecipe(
+        [(<mod_lavacow:shattered_ice> * 3) % 75, <mod_lavacow:shattered_ice> % 50, <minecraft:snowball> % 50], 
+        <xreliquary:mob_ingredient:10>, 
+        <liquid:cryotheum> * 100, 
+        2000
+    );
+}
+
+
+mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 500, <liquid:water> * 500, [
+        <mysticalagriculture:slimy_bone_essence>,
+        <minecraft:gunpowder> * 8,
+        <mod_lavacow:intestine> * 4
+    ], 2000
+);
+mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 2000, <liquid:organic_green> * 2000, [
+        <mysticalagriculture:slimy_bone_essence>,
+        <minecraft:gunpowder> * 8,
+        <mod_lavacow:intestine> * 4
+    ], 2000
 );
 
-<entity:primitivemobs:brain_slime>.addDrop(<contenttweaker:brain_slimeball> % 75);
-<entity:primitivemobs:brain_slime>.addDrop(<contenttweaker:brain_slimeball> % 75);
-scripts.content_machines.addBioAssemblerRecipeRandom(
-    [<prodigytech:meat_ground> % 40, <contenttweaker:basic_neuron> % 10], <liquid:blood> * 400,
-    [<contenttweaker:brain_slimeball>], [],
-    <thermalexpansion:machine:10>,
-    10, 256
-);
-
-scripts.helper.addSimpleCrushingRecipe(<minecraft:firework_charge>, <minecraft:gunpowder>);
 
 
-<entity:twilightforest:slime_beetle>.addDrop(<contenttweaker:bug_slimeball> % 75);
-<entity:twilightforest:slime_beetle>.addDrop(<contenttweaker:bug_slimeball> % 75);
-<ore:slimeball>.add(<contenttweaker:bug_slimeball>);
-recipes.addShapeless("ia_bug_slimeball_slimeball", <minecraft:slime_ball>, [<contenttweaker:bug_slimeball>]);
-mods.thermalexpansion.Centrifuge.addRecipe([
-    <minecraft:slime_ball> % 100, <minecraft:slime_ball> % 50, 
-    <erebus:materials> % 25, <mod_lavacow:chitin> % 25], 
-    <contenttweaker:bug_slimeball>, null, 
-    2000
-);
 
-<entity:primitivemobs:void_eye>.addDrop(<contenttweaker:primitive_eyes> % 25);
-<entity:mod_lavacow:boneworm>.addDrop(<contenttweaker:primitive_eyes> % 90);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //0     otherworld
 //-1    nether
@@ -245,6 +390,8 @@ static aether_mobs as string[] = [
 ];
 
 
+
+
 val regen as ILiquidStack = <liquid:potion>.withTag({Potion: "cofhcore:regeneration4"}) * 100;
 val poison as ILiquidStack = <liquid:potion>.withTag({Potion: "cofhcore:poison4"}) * 100;
 val water as ILiquidStack = <liquid:pure_water> * 1000;
@@ -303,52 +450,3 @@ addVialProcess("mysticalworld:entity_endermini", [<enderio:block_enderman_skull>
 
 
 
-mods.roots.SummonCreatures.addEntity(
-    <entity:primitivemobs:dodo>, // the entity to be summoned
-    [<primitivemobs:dodo_egg>, <excompressum:chicken_stick>.withTag({IsAngry: 1 as byte}), <tconstruct:edible:12>] // a list of ingredients used for the summoning
-);
-
-{//fish undead rising
-    //shatered ice
-    recipes.addShapeless("ia_frozenthigh", <mod_lavacow:shattered_ice> * 3, [<mod_lavacow:frozenthigh>]);
-
-    //sludge
-    <ore:slimeball>.remove(<mod_lavacow:silky_sludge>);
-    <ore:stickWood>.remove(<mod_lavacow:mossy_stick>);
-
-    mods.roots.SummonCreatures.addEntity(
-        <entity:mod_lavacow:sludgelord>, // the entity to be summoned
-        [<minecraft:slime>, <forge:bucketfilled>.withTag({FluidName: "sludge", Amount: 1000}), <minecraft:log>] // a list of ingredients used for the summoning
-    );
-
-    //mods.MobStages.addStage("postWither", "mod_lavacow:sludgelord", 66);
-    //mods.MobStages.addStage("postSludgeLord", "mod_lavacow:sludgelord", 0);
-
-    //<minecraft:spawn_egg>.withTag({EntityTag: {id: "mod_lavacow:sludgelord"}})
-
-    //foul
-    scripts.helper.addSawRecipe(<mod_lavacow:foul_hide>, <mod_lavacow:foul_bristle> * 3);
-}
-
-{//reliquary
-    mods.thermalexpansion.Centrifuge.addRecipe(
-        [(<mod_lavacow:shattered_ice> * 3) % 75, <mod_lavacow:shattered_ice> % 50, <minecraft:snowball> % 50], 
-        <xreliquary:mob_ingredient:10>, 
-        <liquid:cryotheum> * 100, 
-        2000
-    );
-}
-
-
-mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 500, <liquid:water> * 500, [
-        <mysticalagriculture:slimy_bone_essence>,
-        <minecraft:gunpowder> * 8,
-        <mod_lavacow:intestine> * 4
-    ], 2000
-);
-mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 2000, <liquid:organic_green> * 2000, [
-        <mysticalagriculture:slimy_bone_essence>,
-        <minecraft:gunpowder> * 8,
-        <mod_lavacow:intestine> * 4
-    ], 2000
-);

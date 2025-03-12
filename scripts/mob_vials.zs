@@ -56,6 +56,7 @@ function addVialProcess(entity as string, poison as ILiquidStack,
         
         recipe = recipe.requireFluid("input", poison);
         
+        recipe.setActive(20);
         recipe = recipe.requireDuration("duration", 20);
         recipe = recipe.requireEnergy("power", 1000);
 
@@ -95,6 +96,7 @@ function addVialProcess(entity as string, poison as ILiquidStack,
         
         recipe = recipe.requireFluid("input", poison);
         
+        recipe.setActive(20);
         recipe = recipe.requireDuration("duration", 20);
         recipe = recipe.requireEnergy("power", 1000);
 

@@ -2,22 +2,20 @@
     "name": "amongus",
     "mod": "erebus",
     "sapling": {
-      "name": "minecraft:glass",
+      "name": "contenttweaker:sus_sapling",
       "data": 0
     },
     "growTimeMultiplier": 1.0,
     "drops": [
       {
-        "name": "erebus:small_plant",
-        "data": 4,
+        "name": "minecraft:log",
+        "data": 0,
         "type": "CUSTOM",
-        "count": 3,
-        "chance": 0.6
+        "count": 1,
+        "chance": 0.8
       },
-      
-      
       {
-        "name": "minecraft:blaze_powder",
+        "name": "contenttweaker:sus_sapling",
         "data": 0,
         "type": "CUSTOM",
         "count": 1,

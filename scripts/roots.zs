@@ -720,8 +720,12 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
     Chrysopoeia.addRecipe("twilight_sapling", <ore:treeSapling> * 16, <twilightforest:twilight_sapling>);
     Chrysopoeia.addRecipe("twilight_root", <twilightforest:root>, <twilightforest:root:1>);
 
-
+    //glowstone
     Chrysopoeia.addRecipe("glowstone", <minecraft:gold_block>, <minecraft:glowstone>);
+
+
+    mods.roots.Spells.getSpell("chrysopoeia").setCost(mods.roots.Herbs.dewgonia, 0.1);
+    mods.roots.Spells.getSpell("chrysopoeia").setCost(mods.roots.Herbs.spirit_herb, 0.5);
 }
 {//forest runes
     mods.appliedenergistics2.Inscriber.addRecipe(<contenttweaker:runewood>, 
