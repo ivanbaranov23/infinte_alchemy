@@ -137,16 +137,12 @@ mods.enderio.SoulBinder.addRecipe(<contenttweaker:guarding_crystal>, <actuallyad
 		8000
 	);
 	AlloySmelter.addRecipe(<contenttweaker:insulation_base> * 2, 
-		[<appliedenergistics2:part:140>, <contenttweaker:aluminum_silicon> * 2, <minecraft:dye:15> * 6], 
-		6000
+		[<appliedenergistics2:part:140>, <contenttweaker:aluminum_silicon> * 2, <contenttweaker:calcium>], 
+		8000
 	);
 	AlloySmelter.addRecipe(<contenttweaker:insulation_base> * 3, 
-		[<appliedenergistics2:part:140>, <contenttweaker:aluminum_silicon> * 3, <enderio:item_material:32> * 2], 
+		[<appliedenergistics2:part:140>, <contenttweaker:aluminum_silicon> * 3, <alchemistry:element:20> * 6], 
 		4000
-	);
-	AlloySmelter.addRecipe(<contenttweaker:insulation_base> * 6, 
-		[<appliedenergistics2:part:140>, <contenttweaker:aluminum_silicon> * 4, <alchemistry:element:20>], 
-		2000
 	);
 	mods.thermalexpansion.Centrifuge.addRecipe(
 		[(<contenttweaker:insulation_strand> * 2) % 100, <contenttweaker:insulation_strand> % 50, <contenttweaker:insulation_strand> % 25], <contenttweaker:insulation_base> * 4, null, 

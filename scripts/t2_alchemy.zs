@@ -51,6 +51,11 @@ recipes.addShapeless("soapart_dust", <contenttweaker:soapart_dust>, [
 	<contenttweaker:sandy_spice> | <contenttweaker:emolachite> | <betternether:lucis_spore>,
 	<liquid:grease> * 4000
 ]);
+recipes.addShapeless("soapart_dust2", <contenttweaker:soapart_dust>, [
+	<mekanism:otherdust:5>, <thermalfoundation:material:1028>, <contenttweaker:soap>, <contenttweaker:soap>,
+	<contenttweaker:sandy_spice> | <contenttweaker:emolachite> | <betternether:lucis_spore>,
+	<liquid:grease> * 1000, <liquid:grease> * 1000, <liquid:grease> * 1000, <liquid:grease> * 1000
+]);
 mods.thermalexpansion.Transposer.addFillRecipe(
     <contenttweaker:soapart>,
     <contenttweaker:soapart_dust>, <liquid:crystal_fluid2> * 400,

@@ -18,7 +18,8 @@ function addRecycle(machine as IItemStack, loot as IItemStack[]){
     {//jei
         var recipe = AssemblyRecipe.create(function(container) {
             for item in loot{
-                container.addItemOutput("output", item.withLore(["Base chance: 30% + 1% * luck"]));
+                var iitem = item;
+                container.addItemOutput("output", iitem.withLore(["Base chance: 30% + 1% * luck"]));
             }
         });
 

@@ -3,7 +3,7 @@
 	y: -2.0d,
 	shape: "diamond",
 	text: [
-		"Too gated tbh"
+		"Automate and mass produce metals as much as possible. And non metals as well."
 	],
 	dependencies: [
 		"941b6c91"
@@ -19,8 +19,8 @@
 		consume_items: true
 	}],
 	rewards: [{
-		uid: "a22357bb",
+		uid: "f2617220",
 		type: "item",
-		item: "storagedrawers:drawer_key"
+		item: "contenttweaker:quest_coin"
 	}]
 }

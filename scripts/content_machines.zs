@@ -376,7 +376,7 @@ static Recycler as Assembly = <assembly:recycler>;
         .setGroup("power");
 
     Recycler.setDurationSlot(3, 2)
-        .setVisual(SlotVisual.createGauge("contenttweaker:textures/rf_gauges.png", 0, 0, 1, 0, GaugeDirection.right(), false, 1, 1, [255, 255, 255]))
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 2, 9, 3, 9, GaugeDirection.right(), false))
         .setGroup("duration");
 
     {
@@ -448,7 +448,7 @@ static Recycler as Assembly = <assembly:recycler>;
     Recycler.setJEIItemSlot(3, 2, "output");
     Recycler.setJEIItemSlot(4, 2, "output");
     
-    Recycler.setJEIDurationSlot(1, 0, "duration", SlotVisual.createGauge("contenttweaker:textures/rf_gauges.png", 0, 0, 1, 0, GaugeDirection.right(), false, 1, 1, [255, 255, 255]));
+    Recycler.setJEIDurationSlot(1, 0, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 2, 9, 3, 9, GaugeDirection.right(), false));
 }
 
 
@@ -467,7 +467,7 @@ static Vial_processor as Assembly = <assembly:vial_processor>;
         .setGroup("power");
 
     Vial_processor.setDurationSlot(3, 2)
-        .setVisual(mods.requious.SlotVisual.arrowRight())
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 2, 10, 3, 10, GaugeDirection.right(), false))
         .setGroup("duration");
 
     {
@@ -519,7 +519,8 @@ static Vial_processor as Assembly = <assembly:vial_processor>;
         .setGroup("output");
     
     Vial_processor.setItemSlot(1, 1, ComponentFace.all(), 1)
-        .setAccess(true, false)
+        .setAccess(false, false)
+        .setHandAccess(true, true)
         .setGroup("luck");
     Vial_processor.setItemSlot(1, 0, ComponentFace.all(), 1)
         .setAccess(false, false)
@@ -550,7 +551,7 @@ static Vial_processor as Assembly = <assembly:vial_processor>;
     
     Vial_processor.setJEIFluidSlot(5, 1, "output");
     
-    Vial_processor.setJEIDurationSlot(1, 0, "duration", SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png", 0, 8));
+    Vial_processor.setJEIDurationSlot(1, 0, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 2, 10, 3, 10, GaugeDirection.right(), false));
     //Vial_processor.setJEIItemSlot(5, 1, "output0");
     //Vial_processor.setJEIItemSlot(6, 1, "output1");
     //Fluid_alloyer.setJEIFluidSlot(5, 0, "output");

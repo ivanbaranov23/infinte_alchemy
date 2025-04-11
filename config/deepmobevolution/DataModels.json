@@ -78,6 +78,7 @@
     ],
     "lootItems": [
       "atum:khnumite,8",
+      "contenttweaker:khnumite_heart,2",
       "atum:coin_dirty,12",
       "atum:loot_dirty_idol",
       "atum:loot_dirty_scepter,2",
@@ -92,7 +93,8 @@
       ],
       "spawnDelay": 2.6,
       "rewards": [
-        "deepmoblearning:glitch_heart,5"
+        "deepmoblearning:glitch_heart,5",
+      "contenttweaker:khnumite_heart,6"
       ]
     },
     "deepLearnerDisplay": {

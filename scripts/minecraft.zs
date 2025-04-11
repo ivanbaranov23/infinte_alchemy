@@ -16,7 +16,8 @@ recipes.addShaped("ia_end_cake", <dimensionaledibles:end_cake>, [
 	[<ore:endstone>, <erebus:materials:38>, <ore:endstone>]
 ]);
 
-
+//string
+<ore:cropFlax>.remove(<minecraft:string>);
 //shrub
 furnace.addRecipe(<minecraft:tallgrass>, <ore:treeSapling>);
 

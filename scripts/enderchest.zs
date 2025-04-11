@@ -92,7 +92,7 @@ mods.enderio.SagMill.addRecipe(
 	});
 	recipe = recipe.requireItem("input", <contenttweaker:entangled_particles> * 4);
 	recipe = recipe.requireItem("input", <contenttweaker:bouncy_matter_small> * 4);
-	recipe = recipe.requireItem("input", <appliedenergistics2:material:48>);
+	recipe = recipe.requireItem("input", <appliedenergistics2:material:47>);
 	
     
     

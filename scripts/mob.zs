@@ -90,8 +90,10 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
     {//khnumite
         addEggHint("atum:stoneguard", [<contenttweaker:khnumite_heart>]);
         addEggHint("atum:stonewarden", [<contenttweaker:khnumite_heart>]);
+        
         <entity:atum:stoneguard>.addDrop(<contenttweaker:khnumite_heart> % 50);
         <entity:atum:stonewarden>.addDrop(<contenttweaker:khnumite_heart> % 75);
+
         scripts.jei.addJEIhint([<atum:khnumite_face>, <atum:khnumite_block> * 2], [], [], [
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "atum:stoneguard"}})
         ]);
@@ -99,10 +101,11 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
             <minecraft:spawn_egg>.withTag({EntityTag: {id: "atum:stonewarden"}})
         ]);
 
-
+        //heart proc
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:khnumite> * 2000, <atum:khnumite_face>, <liquid:chloroauric_acid> * 1000, 10000);
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:khnumite> * 2000, <contenttweaker:khnumite_heart>, <liquid:chloroauric_acid> * 1000, 10000);
         
+        //liquid proc
         mods.thermalexpansion.Refinery.addRecipe(<liquid:sand> * 1000, <contenttweaker:sphalerite_dust> % 40, <liquid:khnumite> * 500, 6000);
         mods.immersivepetroleum.Distillation.addRecipe([<liquid:sand> * 1000], [
             <contenttweaker:sphalerite_dust>,
@@ -128,6 +131,30 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
             null,
             40, 1000
         );
+        scripts.content_machines.addFluidSieveRecipeRandom(
+            [
+                <contenttweaker:sphalerite_dust> * 2 % 75,
+                <exnihilocreatio:item_ore_osmium> * 16,
+                <atum:khnumite> % 70,
+                <taiga:duranite_dust> % 50,
+                <taiga:vibranium_dust> % 40
+            ], <liquid:sand> * 1000, 
+            <liquid:khnumite> * 300, <contenttweaker:awaken_witherite>,
+            null,
+            40, 1000
+        );
+
+        //block alt
+        recipes.addShaped("ia_khnumite_block", <atum:khnumite_block> * 3, [
+            [<atum:khnumite>, <atum:khnumite>, <atum:khnumite>],
+            [<atum:khnumite>, <contenttweaker:khnumite_heart>, <atum:khnumite>],
+            [<atum:khnumite>, <atum:khnumite>, <atum:khnumite>]
+        ]);
+        recipes.addShaped("ia_khnumite_face", <atum:khnumite_face> * 2, [
+            [<atum:khnumite>, <minecraft:diamond>, <atum:khnumite>],
+            [<atum:khnumite>, <contenttweaker:khnumite_heart>, <atum:khnumite>],
+            [<atum:khnumite>, <atum:khnumite>, <atum:khnumite>]
+        ]);
     }
 }
 {//twilight
@@ -169,7 +196,7 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
             <extendedcrafting:material:128> % 30, <extendedcrafting:material:129> % 20,
             <contenttweaker:relic_nugget> % 30, <taiga:meteorite_nugget> % 5
         ], 
-        <contenttweaker:gold_slimeball>, null, 
+        <contenttweaker:gold_slimeball> * 4, null, 
         2000
     );
 
@@ -180,6 +207,12 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
         [<contenttweaker:brain_slimeball>], [],
         <thermalexpansion:machine:10>,
         10, 256
+    );
+    mods.thermalexpansion.Centrifuge.addRecipe([
+            <prodigytech:meat_ground> % 40
+        ], 
+        <contenttweaker:brain_slimeball>, <liquid:blood> * 400, 
+        2000
     );
 
     scripts.helper.addSimpleCrushingRecipe(<minecraft:firework_charge>, <minecraft:gunpowder>);
@@ -235,7 +268,7 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
     );
 }
 
-
+/*
 mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 500, <liquid:water> * 500, [
         <mysticalagriculture:slimy_bone_essence>,
         <minecraft:gunpowder> * 8,
@@ -248,10 +281,30 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 2000, <liquid:org
         <mod_lavacow:intestine> * 4
     ], 2000
 );
+*/
+mods.tconstruct.Melting.addRecipe(<liquid:slimebone> * 200, <mysticalagriculture:slimy_bone_essence>, 1000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:slimebone> * 250, <mysticalagriculture:slimy_bone_essence>, 3000);
 
+var chvgjhb as float[IItemStack] = {
+    <minecraft:skull:2>: 0.01,
+    <minecraft:rotten_flesh>: 0.1,
+    <xreliquary:mob_ingredient:6>: 0.03,
 
+    <minecraft:skull>: 0.01,
+    <minecraft:bone>: 0.1,
+    <xreliquary:mob_ingredient>: 0.03,
+    
+    <minecraft:skull:4>: 0.01,
+    <minecraft:gunpowder>: 0.1,
+    <xreliquary:mob_ingredient:3>: 0.03
+};
 
-
+mods.immersivepetroleum.Distillation.addRecipe(
+    [<liquid:xpjuice> * 50, <liquid:blood> * 25, <liquid:sludge> * 125], 
+    chvgjhb.keys, 
+    <liquid:slimebone> * 200, 1000, 20, 
+    chvgjhb.values
+);
 
 
 

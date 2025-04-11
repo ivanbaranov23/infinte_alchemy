@@ -671,6 +671,16 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
     );
 }
 
+{//spice
+    recipes.remove(<harvestcraft:extremechiliitem>);
+    recipes.addShapeless("extremechiliitem", <harvestcraft:extremechiliitem>, [
+        <harvestcraft:chiliitem>,
+        <harvestcraft:chilipepperitem>,
+        <harvestcraft:blazingsoupitem>
+    ]);
+
+}
+
 //corn
 recipes.remove(<harvestcraft:cornmealitem>);
 mods.thermalexpansion.Sawmill.addRecipe(

@@ -504,7 +504,12 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 
 	TartaricForge.removeRecipe([<bloodmagic:soul_gem:1>, <minecraft:diamond>, <ore:blockGold>.firstItem, <bloodmagic:slate:2>]);
 	TartaricForge.addRecipe(<bloodmagic:soul_gem:2>.withTag({}), [
-		<bloodmagic:soul_gem:1>, <bloodmagic:slate:2>, <bloodmagic:component:25>, <contenttweaker:blood_gem>
+		<bloodmagic:soul_gem:1>, <bloodmagic:slate:2>, <contenttweaker:neuro_crystal2>, <bloodmagic:component:27>
+	], 256, 128);
+
+	TartaricForge.removeRecipe([<bloodmagic:soul_gem:2>, <bloodmagic:blood_shard>, <bloodmagic:item_demon_crystal>, <bloodmagic:slate:3>]);
+	TartaricForge.addRecipe(<bloodmagic:soul_gem:3>.withTag({}), [
+		<bloodmagic:soul_gem:2>, <bloodmagic:slate:2>, <contenttweaker:neuro_crystal2>, <bloodmagic:component:27>
 	], 256, 128);
 }
 {//tartaric reagents
@@ -645,6 +650,30 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		<contenttweaker:alchemical_brass_gear>, <contenttweaker:living_steel_ingot>, <aether_legacy:healing_stone>, <contenttweaker:isis_godshard>
 	], 80, 64);
 
+
+	//t4
+	//crystal
+	TartaricForge.addRecipe(<contenttweaker:reagent_crystal>, [
+		<contenttweaker:crystal_metal_ingot>,
+		<thermalfoundation:material:866>,
+		<bloodmagic:demon_extras:12>,
+		<bloodmagic:demon_crystal:*>
+	], 4000, 500);
+	TartaricForge.addRecipe(<contenttweaker:reagent_crystal>, [
+		<contenttweaker:crystal_metal_ingot>,
+		<thermalfoundation:material:866>,
+		<bloodmagic:demon_extras:12>,
+		<contenttweaker:mixed_will_crystal>
+	], 4000, 500);
+
+	//t5
+	//space
+	/*TartaricForge.addRecipe(<contenttweaker:reagent_crystal>, [
+		<contenttweaker:crystal_metal_ingot>,
+		<thermalfoundation:material:866>,
+		<bloodmagic:demon_extras:12>,
+		<bloodmagic:demon_crystal:*>
+	], 16000, 1000);*/
 	
 	//, 16000, 1000
 

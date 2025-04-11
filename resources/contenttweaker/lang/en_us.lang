@@ -2103,3 +2103,10 @@ item.contenttweaker.bug_chip.name=Buggy Chip
 
 tile.recycler.name=Recycler
 requious.jei.recipe.recycler=Recycler
+
+item.contenttweaker.calcium.name=Calcium
+
+item.contenttweaker.sus_sapling.name=Sus Sapling
+
+fluid.slimebone=Slimy Bone Essence
+item.contenttweaker.elemental_reduction.name=Elemental Reduction Powder

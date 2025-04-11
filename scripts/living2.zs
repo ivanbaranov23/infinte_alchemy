@@ -664,7 +664,11 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         <contenttweaker:worm_feed> * 4, 
         [<contenttweaker:desert_pollen>, <quark:tallow>, <harvestcraft:bakedcactusitem>, <contenttweaker:relic_nugget>]
     );
-
+    mods.enderio.SoulBinder.addRecipe(
+		<contenttweaker:worm_feed2>, <contenttweaker:worm_feed>, 
+		["erebus:erebus.velvet_worm"], 50000, 12
+	);
+    
     //processing
     Centrifuge.addRecipe(
         [<contenttweaker:sandworm_molt> % 100,

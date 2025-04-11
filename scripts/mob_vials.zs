@@ -265,7 +265,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <minecraft:skull> % 60: 0.04,
             <xreliquary:mob_ingredient> * 2: 0.04,
             <minecraft:bone> * 8: 0.05,
-            <erebus:materials:2> % 5: 0.005
+            <erebus:materials:2> % 5: 0.005,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:ash_solution> * 50, 1
     );
 
@@ -310,7 +311,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <tconstruct:materials:17> * 4: 0.04,
             <darkutils:material> * 4: 0.05,
             <minecraft:coal> * 6: 0.05,
-            <extrautils2:ingredients:10> % 60: 0.04
+            <extrautils2:ingredients:10> % 60: 0.04,
+            <contenttweaker:undead_essence>.weight(2.0 / 10000): 0.001
         }, <liquid:ash_solution> * 100, 2
     );
 
@@ -319,14 +321,16 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <xreliquary:mob_ingredient:6> % 90: 0.03,
             <minecraft:rotten_flesh> * 8: 0.04,
             <minecraft:bone> * 4: 0.05,
-            <minecraft:iron_ingot> * 4 % 60: 0.04
+            <minecraft:iron_ingot> * 4 % 60: 0.04,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:rot> * 50, 1
     );
 }
 
 {//atum
     addVialProcess("atum:bonestorm", <liquid:holy_water> * 50, {
-            <atum:dusty_bone> * 2: 0.03
+            <atum:dusty_bone> * 2: 0.03,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
     addVialProcess("atum:camel", poison, {
@@ -343,7 +347,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     );
 
     addVialProcess("atum:forsaken", <liquid:holy_water> * 50, {
-            <atum:dusty_bone> * 4: 0.03
+            <atum:dusty_bone> * 4: 0.03,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:ash_solution> * 50, 1
     );
 
@@ -351,16 +356,19 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <xreliquary:mob_ingredient:6> % 70: 0.03,
             <minecraft:rotten_flesh> * 6: 0.04,
             <minecraft:bone> * 4: 0.05,
-            <atum:cloth_scrap> * 4 % 80: 0.04
+            <atum:cloth_scrap> * 4 % 80: 0.04,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:rot> * 100, 1
     );
 
     addVialProcess("atum:stoneguard", <liquid:lubricant> * 100, {
-            <atum:khnumite> * 4 % 80: 0.04
+            <atum:khnumite> * 4 % 80: 0.04,
+            <contenttweaker:khnumite_heart> % 50: 0.02
         }, <liquid:sky_stone> * 50, 1
     );
     addVialProcess("atum:stonewarden", <liquid:lubricant> * 150, {
-            <atum:khnumite> * 6 % 80: 0.04
+            <atum:khnumite> * 6 % 80: 0.04,
+            <contenttweaker:khnumite_heart> % 50: 0.02
         }, <liquid:sky_stone> * 100, 1
     );
 
@@ -377,7 +385,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     );
 
     addVialProcess("atum:wraith", holy, {
-            <atum:ectoplasm> * 2 % 80: 0.03
+            <atum:ectoplasm> * 2 % 80: 0.03,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
 }
@@ -465,11 +474,13 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     
     addVialProcess("erebus:erebus.zombie_ant", holy, {
         <erebus:materials:65> * 6: 0.05, 
-        <erebus:materials:37> * 1: 0.07
+        <erebus:materials:37> * 1: 0.07,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:rot> * 75, 1);
     addVialProcess("erebus:erebus.zombie_ant_soldier", holy, {
         <erebus:materials:65> * 8: 0.05, 
-        <erebus:materials:37> * 1: 0.07
+        <erebus:materials:37> * 1: 0.07,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:rot> * 100, 1);
 
     addVialProcess("erebus:erebus.pond_skater", insect, {
@@ -522,7 +533,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <mod_lavacow:hyphae> * 3: 0.04, 
             <minecraft:rotten_flesh> * 8: 0.02, 
             <minecraft:bone> * 2: 0.04,
-            <mod_lavacow:cordy_shroom> % 30: 0.05
+            <mod_lavacow:cordy_shroom> % 30: 0.05,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:rot> * 125, 1
     );
     addVialProcess("mod_lavacow:parasite", insect * 75, {
@@ -542,7 +554,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <minecraft:rotten_flesh> * 4: 0.04,
             <minecraft:bone> * 2: 0.05,
             <mod_lavacow:shattered_ice> * 4 % 60: 0.04,
-            <mod_lavacow:frozenthigh> % 20: 0.04
+            <mod_lavacow:frozenthigh> % 20: 0.04,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:rot> * 50, 1
     );
     addVialProcess("mod_lavacow:undeadswine", holy * 150, {
@@ -551,7 +564,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <minecraft:bone> * 2: 0.05,
             <mod_lavacow:pigboarhide> % 70: 0.04,
             <mod_lavacow:plagued_porkchop> % 70: 0.04,
-            <mod_lavacow:sharptooth> * 2 % 70: 0.04
+            <mod_lavacow:sharptooth> * 2 % 70: 0.04,
+            <contenttweaker:undead_essence>.weight(2.0 / 10000): 0.001
         }, <liquid:rot> * 50, 2
     );
 
@@ -610,7 +624,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <mod_lavacow:acidicheart>.withTag({StoredEnchantments: [{lvl: 3 as short, id: 44}]}) % 2: 0.005,
             <minecraft:rotten_flesh> * 3: 0.05,
             <minecraft:bone> * 4: 0.05,
-            <contenttweaker:primitive_eyes>: 0.05
+            <contenttweaker:primitive_eyes>: 0.05,
+            <contenttweaker:undead_essence>.weight(2.0 / 10000): 0.001
         }, <liquid:rot> * 100, 2
     );
 }

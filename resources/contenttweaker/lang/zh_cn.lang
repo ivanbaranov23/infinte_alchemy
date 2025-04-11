@@ -1720,114 +1720,114 @@ item.contenttweaker.soap.name=肥皂
 item.contenttweaker.flowering_nether_eye.name=开花眼珠藤
 item.contenttweaker.flower_nether_eye.name=眼珠藤花
 item.contenttweaker.primitive_eyes.name=原始眼珠
-item.contenttweaker.bamboo_dust.name=Bamboo Dust
-item.contenttweaker.bamboo_dough.name=Bamboo Dough
-item.contenttweaker.bamboo_cookie.name=Bambookie
-fluid.amaranth_juice=Amaranth Oil
-item.contenttweaker.enbiotic.name=Enbiotic Material 
+item.contenttweaker.bamboo_dust.name=竹粉
+item.contenttweaker.bamboo_dough.name=竹面团
+item.contenttweaker.bamboo_cookie.name=竹饼干
+fluid.amaranth_juice=苋属植物油
+item.contenttweaker.enbiotic.name=冥灯材料
 
-item.contenttweaker.activated_green_fish.name=Activated Green Heart Fish
+item.contenttweaker.activated_green_fish.name=活化绿心鱼
 
-fluid.coffee=Coffee
-fluid.caffeine=Caffeine
+fluid.coffee=咖啡
+fluid.caffeine=咖啡因
 
-fluid.glowshroom_stew=Glowshroom Stew
+fluid.glowshroom_stew=荧光蘑菇炖菜
 
 item.contenttweaker.dummy.name=Dummy
 
-item.contenttweaker.singularity_dust.name=Singularity Dust
-item.contenttweaker.meta_singularity.name=Singularity Singularity
-item.contenttweaker.mushroomite_singularity.name=Mushroomite Singularity
-item.contenttweaker.fiery_singularity.name=Fiery Metal Singularity
-item.contenttweaker.evil_singularity.name=Evil Infused Iron Singularity
-item.contenttweaker.neodymium_singularity.name=Neodymium Singularity
-item.contenttweaker.solar_silicon_singularity.name=Solar Silicon Singularity
-item.contenttweaker.mana_dust_singularity.name=Mana Dust Singularity
-item.contenttweaker.neuro_singularity.name=Basic Neuron Singularity
-item.contenttweaker.neutronium_singularity.name=Neutronium Singularity
+item.contenttweaker.singularity_dust.name=奇点粉
+item.contenttweaker.meta_singularity.name=奇点奇点
+item.contenttweaker.mushroomite_singularity.name=聚合蘑菇奇点
+item.contenttweaker.fiery_singularity.name=炽铁奇点
+item.contenttweaker.evil_singularity.name=恶魔灌注铁奇点
+item.contenttweaker.neodymium_singularity.name=钕奇点
+item.contenttweaker.solar_silicon_singularity.name=太阳能级硅奇点
+item.contenttweaker.mana_dust_singularity.name=元始魔力粉奇点
+item.contenttweaker.neuro_singularity.name=基础神经元奇点
+item.contenttweaker.neutronium_singularity.name=中子素奇点
 
 
-item.contenttweaker.biocell.name=Biocell 
-item.contenttweaker.dirty_biocell.name=Dirty Biocell 
-item.contenttweaker.biomass_cell.name=Biocell with Biomass
-item.contenttweaker.grown_biomass_cell.name=Biocell with Incubated Biomass
+item.contenttweaker.biocell.name=生物电池
+item.contenttweaker.dirty_biocell.name=肮脏生物电池
+item.contenttweaker.biomass_cell.name=含有生物质的生物电池
+item.contenttweaker.grown_biomass_cell.name=含有培养生物质的生物电池
 
-item.contenttweaker.biomaterial1.name=Biocell with Biomaterial MK1
-item.contenttweaker.neuromass1.name=Biocell with Neuromass MK1
-item.contenttweaker.skymass1.name=Biocell with Skymass MK1
-item.contenttweaker.bloodmass1.name=Biocell with Bloodmass MK1
-item.contenttweaker.glowmass1.name=Biocell with Glowmass MK1
+item.contenttweaker.biomaterial1.name=含有生物材料的生物电池-MK1
+item.contenttweaker.neuromass1.name=含有神经元物质的生物电池-MK1
+item.contenttweaker.skymass1.name=含有天空物质的生物电池-MK1
+item.contenttweaker.bloodmass1.name=含有血液物质的生物电池-MK1
+item.contenttweaker.glowmass1.name=含有荧光物质的生物电池-MK1
 
-item.contenttweaker.biomaterial2.name=Biocell with Biomaterial MK2
-item.contenttweaker.musclemass1.name=Biocell with Musclemass MK1
-item.contenttweaker.neuromass2.name=Biocell with Neuromass MK2
+item.contenttweaker.biomaterial2.name=含有生物材料的生物电池-MK2
+item.contenttweaker.musclemass1.name=含有肌肉物质的生物电池-MK1
+item.contenttweaker.neuromass2.name=含有神经元物质的生物电池-MK2
 
-item.contenttweaker.ophidian_extract.name=Ophidian Extract
-item.contenttweaker.soul_poison.name=Soul Separating Poison
+item.contenttweaker.ophidian_extract.name=蛇舌提取物
+item.contenttweaker.soul_poison.name=灵魂分离药剂
 
-item.contenttweaker.basic_neuron.name=Basic Neuron
-item.contenttweaker.neuron.name=Neuron
+item.contenttweaker.basic_neuron.name=基础神经元
+item.contenttweaker.neuron.name=神经元
 
-tile.contenttweaker.soul_frame.name=Soul-Trapped-in-Electromagnet Frame
-tile.contenttweaker.blood_frame.name=Bloody Reinforced Machine Frame
+tile.contenttweaker.soul_frame.name=困有灵魂的极压电磁铁框架
+tile.contenttweaker.blood_frame.name=血腥强化机器框架
 
-item.contenttweaker.quest_coin.name=Quest Coin 
-
-
-item.contenttweaker.spice_rabbit.name=Spiced Rabbit
-item.contenttweaker.spice_egg.name=Spiced Egg
+item.contenttweaker.quest_coin.name=任务币
 
 
-requious.jei.recipe.roots_flower=Ritual: Flower Growth
-requious.jei.recipe.ie_excavator=Excavator Veins
-requious.jei.recipe.hint=Hint
-
-tile.wood_infuser.name=Wood Infuser
-requious.jei.recipe.wood_infuser=Wood Infuser
-
-tile.fluid_mixer.name=Fluid Mixer
-requious.jei.recipe.fluid_mixer=Fluid Mixer
-
-tile.fluid_alloyer.name=Fluid Alloyer
-requious.jei.recipe.fluid_alloyer=Fluid Alloyer
-
-tile.assembler.name=Assembler
-requious.jei.recipe.assembler=Assembler
-
-tile.advanced_mixer.name=Advanced Mixer
-requious.jei.recipe.advanced_mixer=Advanced Mixer
-
-tile.fluid_sieve.name=Fluid Sieve
-requious.jei.recipe.fluid_sieve=Fluid Sieve
-
-tile.bioassembler.name=Bio Assembler
-requious.jei.recipe.bioassembler=Bio Assembler
+item.contenttweaker.spice_rabbit.name=五香兔肉
+item.contenttweaker.spice_egg.name=五香蛋
 
 
+requious.jei.recipe.roots_flower=仪式：繁花争艳
+requious.jei.recipe.ie_excavator=斗轮挖掘机矿脉
+requious.jei.recipe.hint=提示
+
+tile.wood_infuser.name=木料注入器
+requious.jei.recipe.wood_infuser=木料注入器
+
+tile.fluid_mixer.name=流体混合器
+requious.jei.recipe.fluid_mixer=流体混合器
+
+tile.fluid_alloyer.name=混合合金锻炉
+requious.jei.recipe.fluid_alloyer=混合合金锻炉
+
+tile.assembler.name=机械装配室
+requious.jei.recipe.assembler=机械装配室
+
+tile.advanced_mixer.name=高级混合器
+requious.jei.recipe.advanced_mixer=高级混合器
+
+tile.fluid_sieve.name=流体筛子
+requious.jei.recipe.fluid_sieve=流体筛子
+
+tile.bioassembler.name=生物装配室
+requious.jei.recipe.bioassembler=生物装配室
 
 
-fluid.duraluminum=Molten Duraluminum
-fluid.lesmium=Molten Lesmium
-fluid.angel=Molten Angel
-fluid.thermal=Molten High Heat Resistant Steel
-fluid.electric_manyullyn_base=Molten Electric Manyullyn Base
-fluid.electric_manyullyn=Molten Electric Manyullyn
-fluid.watertight_steel=Molten Watertight Steel
-fluid.mekanized_steel=Molten Mekanized Steel
-fluid.osgloridium=Molten Osgloridium
-fluid.black_bronze=Molten Black Bronze
 
-fluid.ash_solution=Ash Solution
-fluid.chocolate=Chocolate
-fluid.haste_potion=Haste Catalyst
-fluid.speed_potion=Speed Catalyst
-fluid.mekanization_catalyst=Mekanization Catalyst
 
-fluid.sea_water=Sea Water
+fluid.duraluminum=熔融耐酸铝合金
+fluid.lesmium=熔融铅锇合金
+fluid.angel=熔融天使金属
+fluid.thermal=熔融高耐热金属
+fluid.electric_manyullyn_base=熔融充能玛玉灵合金基底
+fluid.electric_manyullyn=熔融充能玛玉灵合金
+fluid.watertight_steel=熔融防水钢合金
+fluid.mekanized_steel=熔融机械钢
+fluid.osgloridium=熔融铱锇荧黑曜合金
+fluid.black_bronze=熔融焦黑铜
+
+fluid.ash_solution=灰烬溶液
+fluid.chocolate=巧克力
+fluid.haste_potion=急迫催化剂
+fluid.speed_potion=迅捷催化剂
+fluid.mekanization_catalyst=机械催化剂
+
+fluid.sea_water=海水
 fluid.seaweed_rich_water=富含海藻的水
-fluid.pure_water=Pure Water
-fluid.sterile_water=Cleaning Liquid
-fluid.fertilizer=Liquid Fertilizer
+fluid.pure_water=纯净水
+fluid.sterile_water=清洗液
+fluid.fertilizer=液态肥料
 
 fluid.ore_drill=Ore Drilling Fluid
 fluid.ore_make=Ore Creation Fluid
@@ -1987,3 +1987,120 @@ item.contenttweaker.terra_base.name=Terrasteel Glass Ingot
 item.contenttweaker.terra_base_dust.name=Terrasteel Glass Dust
 tile.contenttweaker.terrasteel_ore.name=Terrasteel Glass Ore
 item.contenttweaker.terragem.name=Terragem
+
+item.contenttweaker.research_terra.name=How To Grow Terrasteel
+
+ia.mb_tooltip.common=As MB modifier 
+ia.mb_tooltip.tpc_sl_glass=3x Speed
+
+ia.mb_tooltip.lcg_water=x0.25 input fluid and items
+ia.mb_tooltip.lcg_fire=x4 Speed
+ia.mb_tooltip.lcg_bedrock=+1 output item
+ia.mb_tooltip.lcg_neutr=+4 output item
+
+item.contenttweaker.tink_research_token1.name=Nahuatl Large Sword Blade Research Token
+item.contenttweaker.tink_research_token2.name=Prismarine Laser Medium Research Token
+item.contenttweaker.research_tinker.name=How To Tinker Better
+item.contenttweaker.apatite.name=Tinker's Apatite
+
+item.contenttweaker.uru_pieces.name=Uru Pieces
+item.contenttweaker.uru_chunk.name=Uru Chunk
+
+ia.rename.magical_copper=Magical Copper Ore
+ia.rename.magical_tin=Magical Tin Ore
+ia.rename.poor_quartz=Poor Quartz Ore
+
+
+item.contenttweaker.organic_green_token.name=Organic Green Research Token
+item.contenttweaker.residue_token.name=Lava Residue Research Token
+item.contenttweaker.malachite_token.name=Malachite Adhesive Research Token
+item.contenttweaker.sand_token.name=Quicksand Research Token
+item.contenttweaker.sludge_token.name=Sludge Research Token
+item.contenttweaker.research_cobblegen.name=How To Mix Fluids Into Cobblestone
+
+fluid.sludge_cg=Cobblegeneic Sludge
+fluid.organic_cg=Cobblegeneic Organic Green
+fluid.residue_cg=Cobblegeneic Lava Residue
+
+tile.contenttweaker.poor_iron_ore.name=Poor Iron Ore
+
+ia.rename.galena=Galena Ore
+ia.rename.nickel_oxide=Nickel Oxide Ore
+ia.rename.mehchocho=Meh Chocolate
+
+ia.rename.mith_rod=Mithril Rod
+ia.rename.mith_ore=Mithril Ore
+ia.rename.mith_block=Block of Mithril
+ia.rename.mith_coin=Mithril Coin
+ia.rename.mith_dust=Mithril Dust
+ia.rename.mith_ingot=Mithril Ingot
+ia.rename.mith_nugget=Mithril Nugget
+ia.rename.mith_gear=Mithril Gear
+ia.rename.mith_plate=Mithril Plate
+ia.rename.mith_glass=Hardened Mithril Glass
+
+ia.rename.formation_chip=Formation Chip
+ia.rename.annihilation_chip=Annihilation Chip
+
+
+ia.rename.dense_ti_ore=Dense Titanium Ore
+ia.rename.poor_quartz=Poor Quartz Ore
+
+ia.rename.d_ruby=Delicate Ruby
+ia.rename.d_peridot=Delicate Peridot
+ia.rename.d_sapphire=Delicate Sapphire
+
+
+ia.rename.enethyst=Enethyst
+ia.rename.enethyst_block=Block of Enethyst
+ia.rename.enethyst_ore=Enethyst Ore
+ia.tooltip.enethyst=Ender Amethyst
+
+tile.contenttweaker.caelumite_ore.name=Caelumite Ore
+item.contenttweaker.caelumite_ingot.name=Caelumite Ingot
+item.contenttweaker.caelumite_plate.name=Caelumite Plate
+item.contenttweaker.caelumite_rod.name=Caelumite Rod
+tile.contenttweaker.caelumite_block.name=Block of Caelumite
+item.contenttweaker.caelumite_dust.name=Caelumite Dust
+
+ia.egg_hint.sword=Drops when killed
+
+item.contenttweaker.khnumite_heart.name=Khnumite Heart
+item.contenttweaker.lich_bone.name=Lich Bone
+item.contenttweaker.excited_powder.name=Excited Powder
+item.contenttweaker.sanded_rod.name=Sanded and Polished Rod
+item.contenttweaker.evil_desert_dust.name=Evil Desert Ectoplasm
+
+item.contenttweaker.infinity_treat.name=Infinity Treat
+
+fluid.khnumite=Coarse Metallic Khnumite
+
+tile.contenttweaker.forest_fire.name=Forest Fey Fire
+item.contenttweaker.fungi_cacti_foci.name=Fungi Cacti Foci
+item.contenttweaker.diode2.name=Electarite Diode
+item.contenttweaker.tube_processor.name=Vacuum Tube Processor
+item.contenttweaker.tube_computer.name=Vacuum Tube Computer
+tile.contenttweaker.excited_mud.name=Excited Mud
+item.contenttweaker.excited_crop.name=Excited Crop
+item.contenttweaker.emolachite.name=Emolachite Paste
+item.contenttweaker.supersalt.name=Super Salt
+
+fluid.claymud=Clay Rich Mud
+fluid.chocolate_mud=Chocolate Mud
+fluid.emolachite=Emolachite Slurp
+
+item.contenttweaker.atum_ingot.name=Atum Godshard Ingot
+item.contenttweaker.druid_bone.name=Druid Bone
+item.contenttweaker.staffwood_fire.name=Forest Fey Fire Staff
+
+tile.contenttweaker.meka_umbran.name=Mekanized Log
+item.contenttweaker.flight_computer.name=Flight Computer
+item.contenttweaker.light_support.name=Light Support
+item.contenttweaker.centipedium.name=Centipedium Ingot
+item.contenttweaker.cheesy_capacitor.name=Cheesy Capacitor
+item.contenttweaker.cheesy_circuit.name=Cheesy Circuit
+item.contenttweaker.bug_chip.name=Buggy Chip
+
+
+tile.recycler.name=Recycler
+requious.jei.recipe.recycler=Recycler

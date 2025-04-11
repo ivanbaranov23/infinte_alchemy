@@ -45,7 +45,8 @@
 		type: "item",
 		items: [{
 			item: "modularmachinery:blockcasing"
-		}]
+		}],
+		count: 3L
 	},
 	{
 		uid: "c0784815",
@@ -61,7 +62,7 @@
 		items: [{
 			item: "chisel:glass 1 9"
 		}],
-		count: 6L
+		count: 10L
 	},
 	{
 		uid: "4497e6f4",
@@ -69,7 +70,7 @@
 		items: [{
 			item: "roots:runestone"
 		}],
-		count: 16L
+		count: 10L
 	},
 	{
 		uid: "4de32bc3",

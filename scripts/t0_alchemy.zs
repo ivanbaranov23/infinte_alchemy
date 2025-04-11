@@ -120,18 +120,7 @@ function addWeakEnhancerRecipe(inp as IItemStack, outp as IItemStack){
 }
 
 {//andesite
-    scripts.jei.addJEIhint(
-        [<minecraft:stone:5>], [],
-        [<exnihilocreatio:block_crucible:1>],
-        [<forge:bucketfilled>.withTag({FluidName: "andesite", Amount: 1000})], [<liquid:andesite>]
-    );
-    scripts.jei.addJEIhint(
-        [], [<liquid:witchwater>, <liquid:andesite>],
-        [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-        [<minecraft:cobblestone>, <minecraft:stone:5>, <minecraft:netherrack>]
-    );
-
-    mods.tconstruct.Melting.addRecipe(<liquid:andesite> * 250, <minecraft:stone:5>);
+    
 
 
     mods.tconstruct.Alloy.addRecipe( <liquid:zinc> * 8, [

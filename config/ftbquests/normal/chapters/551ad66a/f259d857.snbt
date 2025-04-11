@@ -1,0 +1,28 @@
+{
+	title: "True Wood Enjoyer",
+	icon: "contenttweaker:sus_sapling",
+	x: 9.0d,
+	y: 5.0d,
+	shape: "square",
+	hide_dependency_lines: true,
+	dependencies: [
+		"f5566c6d"
+	],
+	hide: true,
+	hide_text_until_complete: true,
+	optional: true,
+	tasks: [{
+		uid: "a34fa6bb",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_custom 1 100"
+		}],
+		count: 1000L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "8c290b5c",
+		type: "item",
+		item: "contenttweaker:sus_sapling"
+	}]
+}

@@ -41,6 +41,6 @@ mods.immersiveengineering.BlastFurnace.addRecipe(
 
 recipes.remove(<moretcon:hydrogenrichredstonepowder>);
 mods.mekanism.reaction.addRecipe(
-    <extendedcrafting:singularity:3>, <liquid:dense_hydrogen> * 4000, <gas:nether_star_solution> * 100, 
+    <extendedcrafting:singularity:3>, <liquid:dense_hydrogen> * 4000, <gas:nether_star_solution> * 2000, 
     <moretcon:hydrogenrichredstonepowder>, <gas:waste_gas> * 100, 1500, 60
 );

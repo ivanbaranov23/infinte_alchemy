@@ -675,57 +675,70 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
     }
 }
 
+function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemStack){
+    Chrysopoeia.addRecipe(name, inp, outp);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        outp, 
+        inp, <contenttweaker:transmut_gel>, 
+        5000, 
+        outp, 50
+    );
+
+}
 {//Chrysopoeia
     Chrysopoeia.removeRecipeByOutput(<minecraft:iron_nugget>);
     Chrysopoeia.removeRecipeByOutput(<minecraft:gold_nugget>);
+    Chrysopoeia.removeRecipeByOutput(<minecraft:iron_ingot>);
+    Chrysopoeia.removeRecipeByOutput(<minecraft:gold_ingot>);
 
     //tier 1
-    Chrysopoeia.addRecipe("iron_tin", <minecraft:iron_ingot> * 2, <thermalfoundation:material:129>);
-    Chrysopoeia.addRecipe("tin_cpr", <thermalfoundation:material:129> * 2, <thermalfoundation:material:128>);
+    Chrysopoeia_addRecipe("iron_tin", <minecraft:iron_ingot> * 4, <thermalfoundation:material:129> * 4);
+    Chrysopoeia_addRecipe("tin_cpr", <thermalfoundation:material:129> * 4, <thermalfoundation:material:128> * 4);
+    Chrysopoeia_addRecipe("cpr_iron", <thermalfoundation:material:128> * 4, <minecraft:iron_ingot> * 4);
 
-    Chrysopoeia.addRecipe("al_znc", <thermalfoundation:material:132> * 2, <contenttweaker:zinc_ingot>);
-    Chrysopoeia.addRecipe("znc_nkl", <contenttweaker:zinc_ingot> * 2, <thermalfoundation:material:133>);
-    Chrysopoeia.addRecipe("nkl_al", <thermalfoundation:material:133> * 2, <thermalfoundation:material:132>);
+    Chrysopoeia_addRecipe("al_znc", <thermalfoundation:material:132> * 4, <contenttweaker:zinc_ingot> * 4);
+    Chrysopoeia_addRecipe("znc_nkl", <contenttweaker:zinc_ingot> * 4, <thermalfoundation:material:133> * 4);
+    Chrysopoeia_addRecipe("nkl_al", <thermalfoundation:material:133> * 4, <thermalfoundation:material:132> * 4);
 
     //tier 2
-    Chrysopoeia.addRecipe("gold_lead", <minecraft:gold_ingot> * 2, <thermalfoundation:material:131>);
-    Chrysopoeia.addRecipe("lead_osm", <thermalfoundation:material:131> * 2, <mekanism:ingot:1>);
-    Chrysopoeia.addRecipe("osm_slv", <mekanism:ingot:1> * 2, <thermalfoundation:material:130>);
+    Chrysopoeia_addRecipe("gold_lead", <minecraft:gold_ingot> * 4, <thermalfoundation:material:131> * 4);
+    Chrysopoeia_addRecipe("lead_osm", <thermalfoundation:material:131> * 4, <mekanism:ingot:1> * 4);
+    Chrysopoeia_addRecipe("osm_slv", <mekanism:ingot:1> * 4, <thermalfoundation:material:130> * 4);
+    Chrysopoeia_addRecipe("slv_gold", <thermalfoundation:material:130> * 4, <minecraft:gold_ingot> * 4);
 
-    Chrysopoeia.addRecipe("cob_ard", <tconstruct:ingots> * 2, <tconstruct:ingots:1>);
-    Chrysopoeia.addRecipe("ard_cob", <tconstruct:ingots:1> * 2, <tconstruct:ingots>);
+    Chrysopoeia_addRecipe("cob_ard", <tconstruct:ingots> * 4, <tconstruct:ingots:1> * 4);
+    Chrysopoeia_addRecipe("ard_cob", <tconstruct:ingots:1> * 4, <tconstruct:ingots> * 4);
 
-    Chrysopoeia.addRecipe("kar_ov", <taiga:karmesine_ingot> * 2, <taiga:ovium_ingot>);
-    Chrysopoeia.addRecipe("ov_jax", <taiga:ovium_ingot> * 2, <taiga:jauxum_ingot>);
-    Chrysopoeia.addRecipe("jax_ov", <taiga:jauxum_ingot> * 2, <taiga:karmesine_ingot>);
+    Chrysopoeia_addRecipe("kar_ov", <taiga:karmesine_ingot> * 4, <taiga:ovium_ingot> * 4);
+    Chrysopoeia_addRecipe("ov_jax", <taiga:ovium_ingot> * 4, <taiga:jauxum_ingot> * 4);
+    Chrysopoeia_addRecipe("jax_ov", <taiga:jauxum_ingot> * 4, <taiga:karmesine_ingot> * 4);
 
     //transmut
-    Chrysopoeia.addRecipe("transmut1", <contenttweaker:singularity_dust>, <contenttweaker:transmut_gel>);
-    Chrysopoeia.addRecipe("transmut2", <prodigytech:primordium> * 64, <contenttweaker:transmut_gel>);
-    Chrysopoeia.addRecipe("transmut3", <contenttweaker:entwood_dust> * 12, <contenttweaker:transmut_gel>);
-    Chrysopoeia.addRecipe("transmut4", <thermalfoundation:material:1028> * 8, <contenttweaker:transmut_gel>);
+    Chrysopoeia_addRecipe("transmut1", <contenttweaker:singularity_dust>, <contenttweaker:transmut_gel> * 2);
+    Chrysopoeia_addRecipe("transmut2", <prodigytech:primordium> * 48, <contenttweaker:transmut_gel>);
+    Chrysopoeia_addRecipe("transmut3", <contenttweaker:entwood_dust> * 8, <contenttweaker:transmut_gel>);
+    Chrysopoeia_addRecipe("transmut4", <thermalfoundation:material:1028> * 8, <contenttweaker:transmut_gel>);
 
     //bamboo
     Chrysopoeia.addRecipe("bamboo1", <erebus:sapling_bamboo>, <biomesoplenty:sapling_0:2>);
     Chrysopoeia.addRecipe("bamboo2", <biomesoplenty:sapling_0:2>, <harvestcraft:bambooshootitem>);
 
     //entwood_dust
-    Chrysopoeia.addRecipe("entwood_dust", <erebus:materials:7> * 8, <contenttweaker:entwood_dust>);
-    Chrysopoeia.addRecipe("entwood_dust2", <moretcon:dustironwood> * 6, <contenttweaker:entwood_dust>);
+    Chrysopoeia_addRecipe("entwood_dust", <erebus:materials:7> * 8, <contenttweaker:entwood_dust>);
+    Chrysopoeia_addRecipe("entwood_dust2", <moretcon:dustironwood> * 6, <contenttweaker:entwood_dust>);
 
     //twilight
-    Chrysopoeia.addRecipe("borer_essence1", <erebus:materials:18> * 6, <twilightforest:borer_essence>);
-    Chrysopoeia.addRecipe("borer_essence2", <mysticalagriculture:crafting> * 32, <twilightforest:borer_essence>);
+    Chrysopoeia_addRecipe("borer_essence1", <erebus:materials:18> * 6, <twilightforest:borer_essence>);
+    Chrysopoeia_addRecipe("borer_essence2", <mysticalagriculture:crafting> * 32, <twilightforest:borer_essence>);
 
     Chrysopoeia.addRecipe("twilight_sapling", <ore:treeSapling> * 16, <twilightforest:twilight_sapling>);
-    Chrysopoeia.addRecipe("twilight_root", <twilightforest:root>, <twilightforest:root:1>);
+    Chrysopoeia_addRecipe("twilight_root", <twilightforest:root>, <twilightforest:root:1>);
 
     //glowstone
-    Chrysopoeia.addRecipe("glowstone", <minecraft:gold_block>, <minecraft:glowstone>);
+    Chrysopoeia_addRecipe("glowstone", <minecraft:gold_block>, <minecraft:glowstone>);
 
 
-    mods.roots.Spells.getSpell("chrysopoeia").setCost(mods.roots.Herbs.dewgonia, 0.1);
-    mods.roots.Spells.getSpell("chrysopoeia").setCost(mods.roots.Herbs.spirit_herb, 0.5);
+
 }
 {//forest runes
     mods.appliedenergistics2.Inscriber.addRecipe(<contenttweaker:runewood>, 
@@ -853,7 +866,7 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
     {//fluid_conversions
         var fluid_conversions as ILiquidStack[ILiquidStack][int[]] = {
             //transmut, fluid in, fluid out
-            [1, 144 * 16, 144 * 12]: {
+            [1, 144 * 16, 144 * 16]: {
                 <liquid:copper>: <liquid:iron>,
                 <liquid:iron>: <liquid:tin>,
                 <liquid:tin>: <liquid:copper>,
@@ -870,7 +883,9 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
                 <liquid:lead>: <liquid:osmium>,
                 <liquid:osmium>: <liquid:silver>,
                 
-                
+                <liquid:karmesine_fluid>: <liquid:ovium_fluid>,
+                <liquid:ovium_fluid>: <liquid:jauxum_fluid>,
+                <liquid:jauxum_fluid>: <liquid:karmesine_fluid>
             }
         };
 

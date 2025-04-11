@@ -142,6 +142,12 @@ inWorldCrafting.fluidToFluid.recipeBuilder()
         .input(item('prodigytech:ash') * 3)
         .fluidOutput(fluid('ash_solution'))
         .register()
+inWorldCrafting.fluidToFluid.recipeBuilder()
+        .fluidInput(fluid('witchwater'))
+        .input(item('thermalfoundation:material', 769) * 32)
+        .input(item('contenttweaker:weak_enhancer'))
+        .fluidOutput(fluid('creosote'))
+        .register()
 
 
 inWorldCrafting.fluidToItem.recipeBuilder()

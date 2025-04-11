@@ -16,15 +16,15 @@ recipes.addShaped("ia_bonsai_oak", <contenttweaker:bonsai_sapling>, [
 recipes.addShapeless("ia_bonsai_oak2", <contenttweaker:bonsai_sapling>, [<minecraft:sapling>, <contenttweaker:research_plants2>.reuse()]);
 
 recipes.addShaped("ia_bonsai_mushroom_red", <contenttweaker:bonsai_mushroom_red>, [
-    [<contenttweaker:mushroomite_block>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_block>], 
+    [<contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>], 
     [<contenttweaker:mushroomite_rod>, <minecraft:red_mushroom>, <contenttweaker:mushroomite_rod>], 
-    [<contenttweaker:mushroomite_block>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_block>]
+    [<contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>]
 ]);
 recipes.addShapeless("ia_bonsai_mushroom_red2", <contenttweaker:bonsai_mushroom_red>, [<minecraft:red_mushroom>, <contenttweaker:research_mushroom1>.reuse()]);
 
 recipes.addShaped("ia_bonsai_mushroom_brown", <contenttweaker:bonsai_mushroom_brown>, [
-    [<contenttweaker:mushroomite_block>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_block>], 
+    [<contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>], 
     [<contenttweaker:mushroomite_rod>, <minecraft:brown_mushroom>, <contenttweaker:mushroomite_rod>], 
-    [<contenttweaker:mushroomite_block>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_block>]
+    [<contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>]
 ]);
 recipes.addShapeless("ia_bonsai_mushroom_brown2", <contenttweaker:bonsai_mushroom_brown>, [<minecraft:brown_mushroom>, <contenttweaker:research_mushroom1>.reuse()]);

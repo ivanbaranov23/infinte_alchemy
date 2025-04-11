@@ -875,7 +875,7 @@ mods.actuallyadditions.Empowerer.addRecipe(
 
 		mods.enderio.SliceNSplice.addRecipe(<contenttweaker:neuro_crystal2> * 2, 
 			[
-				<contenttweaker:blood_gem>, <contenttweaker:neuron2_inlay>, <contenttweaker:blood_gem>, 
+				<contenttweaker:blood_gem>, <contenttweaker:living_processor>, <contenttweaker:blood_gem>, 
 				<contenttweaker:chitin>, <enderio:item_capacitor_crystalline>, <contenttweaker:chitin>
 			], 50000
 		);

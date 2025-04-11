@@ -183,6 +183,10 @@ static all_metals as IItemStack[string][string] = {
 
         singularity: <extendedcrafting:singularity:28>
     },
+    invar_sing: {
+        ingot: <extendedcrafting:singularity:28>,
+        block: <extendedcrafting:singularity:28> * 9
+    },
     steel: {
         ingot: <thermalfoundation:material:160>,
         plate: <thermalfoundation:material:352>,
@@ -312,6 +316,10 @@ static all_metals as IItemStack[string][string] = {
 
         singularity: <extendedcrafting:singularity:27>
     },
+    electrum_sing: {
+        ingot: <extendedcrafting:singularity:27>,
+        block: <extendedcrafting:singularity:27> * 9
+    },
     lesmium: {
         ingot: <contenttweaker:lesmium_ingot>,
         plate: <contenttweaker:lesmium_plate>,
@@ -322,6 +330,10 @@ static all_metals as IItemStack[string][string] = {
         nugget: <contenttweaker:lesmium_nugget>,
 
         singularity: <extendedcrafting:singularity_custom:12>
+    },
+    lesmium_sing: {
+        ingot: <extendedcrafting:singularity_custom:12>,
+        block: <extendedcrafting:singularity_custom:12> * 9
     },
 
     // tier 2.5 metals
@@ -1273,6 +1285,28 @@ static all_metals as IItemStack[string][string] = {
         block: <contenttweaker:beryllium_block>
     },
 
+    //alchemistry
+    plutonium: {
+        ingot: <alchemistry:ingot:94>,
+        block: <alchemistry:ingot:94> * 9
+    },
+
+    cyanite: {
+        ingot: <bigreactors:ingotcyanite>,
+        block: <bigreactors:blockcyanite>,
+        dust: <bigreactors:dustcyanite>
+    },
+    blutonium: {
+        ingot: <bigreactors:ingotblutonium>,
+        block: <bigreactors:blockblutonium>,
+        dust: <bigreactors:dustblutonium>
+    },
+    ludicrite: {
+        ingot: <bigreactors:ingotludicrite>,
+        block: <bigreactors:blockludicrite>,
+        dust: <bigreactors:dustludicrite>
+    },
+
     //endgame
     lucky_alloy: {
         ingot: <contenttweaker:lucky_alloy_ingot>,
@@ -1639,6 +1673,17 @@ static all_metals as IItemStack[string][string] = {
     lightning_cell: {
         ingot: <contenttweaker:lightning_cell>,
         block: <contenttweaker:lightning_cell> * 9
+    },
+
+    irradiated_compound: {
+        ingot: <contenttweaker:irradiated_compound>,
+        block: <contenttweaker:irradiated_compound> * 9,
+        dust: <contenttweaker:irradiated_compound>
+    },
+    irradiated_banana: {
+        ingot: <contenttweaker:banana>,
+        block: <contenttweaker:banana> * 9,
+        dust: <contenttweaker:banana>
     },
 
     // dusts
@@ -2422,6 +2467,11 @@ recipes.addShaped("ia_wooden_gear", <thermalfoundation:material:22>, [
     [<ore:plankWood>, null, <ore:plankWood>],
     [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>]
 ]);
+recipes.addShaped("ia_wooden_gear2", <thermalfoundation:material:22> * 2, [
+    [<immersiveengineering:material>, <ore:plankTreatedWood>, <immersiveengineering:material>],
+    [<ore:plankTreatedWood>, null, <ore:plankTreatedWood>],
+    [<immersiveengineering:material>, <ore:plankTreatedWood>, <immersiveengineering:material>]
+]);
 
 
 
@@ -2788,13 +2838,13 @@ add3alloy(1, "flower_steel", 4,
             <actuallyadditions:item_dust:7>,
             <extrautils2:ingredients:4>,
             <harvestcraft:extremechiliitem>,
-            <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust>
+            <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust> | <contenttweaker:calcium>
         ]);
         recipes.addShapeless("ia_excited_dust2", <contenttweaker:excited_powder> * 3, [
             <actuallyadditions:item_dust:7>,
             <extrautils2:ingredients:4>,
             <harvestcraft:extremechiliitem>,
-            <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust>,
+            <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust> | <contenttweaker:calcium>,
             <contenttweaker:excited_crop>
         ]);
 
@@ -2807,7 +2857,7 @@ add3alloy(1, "flower_steel", 4,
             <actuallyadditions:item_dust:7>,
             32, 80
         );
-        scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 500, 
+        scripts.helper.addFluidMixerRecipe(<liquid:mekanization_catalyst> * 600, 
             <liquid:haste_potion> * 200,
             <liquid:speed_potion> * 200,
             <contenttweaker:excited_powder>,
@@ -2852,6 +2902,9 @@ add3alloy(1, "flower_steel", 4,
             "iridium", 2,
             "vibranium", 1
         );
+        recipes.addShapeless("ia_met_osmiridium", <contenttweaker:osmiridium_dust> * 2, [
+            all_metals.osmium.dust, all_metals.iridium.dust
+        ]);
 
         mods.enderio.AlloySmelter.addRecipe(all_metals.osgloridium.dust * 2, 
             [
@@ -3356,10 +3409,10 @@ scripts.helper.addFluidAlloyerRecipe(
         mods.immersiveengineering.ArcFurnace.removeRecipe(all_metals.energetic_gold1.ingot);
         mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_gold1.ingot);
         
-        add3alloy(3, "energetic_gold1", 4,
-            "gold", 24,
-            "atum", 2,
-            "energized_compound", 1
+        add3alloy(3, "energetic_gold1", 8,
+            "electrum_sing", 1,
+            "atum", 6,
+            "energized_compound", 4
         );
     }
     {//energetic silver
@@ -3367,10 +3420,10 @@ scripts.helper.addFluidAlloyerRecipe(
         //mods.immersiveengineering.ArcFurnace.removeRecipe(all_metals.energetic_gold1.ingot);
         mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_silver1.ingot);
         
-        add3alloy(3, "energetic_silver1", 4,
-            "silver", 24,
-            "atum", 2,
-            "energized_compound", 1
+        add3alloy(3, "energetic_silver1", 8,
+            "lesmium_sing", 1,
+            "atum", 6,
+            "energized_compound", 4
         );
     }
 
@@ -3510,21 +3563,36 @@ scripts.helper.addFluidAlloyerRecipe(
         ], 10000
     );
 }
-add3alloy(2, "explosion_resistant", 8,
-    "bedrockium_alloy", 1,
-    "terrax", 8,
-    "invar", 24
-);
-add3alloy(2, "explosion_resistant", 8,
-    "bedrockium_alloy", 1,
-    "duranite", 8,
-    "invar", 24
-);
-recipes.addShaped("ia_explosion_resistant_sheetmetal", <contenttweaker:explosion_resistant_sheetmetal> * 4, [
-	[null, <contenttweaker:explosion_resistant_plate>, null], 
-	[<contenttweaker:explosion_resistant_plate>, <immersiveengineering:sheetmetal:8>, <contenttweaker:explosion_resistant_plate>], 
-	[null, <contenttweaker:explosion_resistant_plate>, null]
-]);
+{//explosion_resistant
+    add3alloy(2, "explosion_resistant", 6,
+        "bedrockium_alloy", 2,
+        "terrax", 12,
+        "invar_sing", 1
+    );
+    add3alloy(2, "explosion_resistant", 8,
+        "bedrockium_alloy", 2,
+        "duranite", 12,
+        "invar_sing", 1
+    );
+
+    add3alloy(3, "explosion_resistant", 2,
+        "bedrockium_alloy", 1,
+        "terrax", 6,
+        "invar", 64
+    );
+    add3alloy(3, "explosion_resistant", 2,
+        "bedrockium_alloy", 1,
+        "duranite", 6,
+        "invar", 64
+    );
+
+    recipes.addShaped("ia_explosion_resistant_sheetmetal", <contenttweaker:explosion_resistant_sheetmetal> * 4, [
+        [null, <contenttweaker:explosion_resistant_plate>, null], 
+        [<contenttweaker:explosion_resistant_plate>, <immersiveengineering:sheetmetal:8>, <contenttweaker:explosion_resistant_plate>], 
+        [null, <contenttweaker:explosion_resistant_plate>, null]
+    ]);
+}
+
 
 add3alloy(2, "hot", 1,
     "thermal_steel", 2,
@@ -3771,10 +3839,10 @@ add3alloy(3, "ender_ingot", 1,
     {//acid_resistant
         mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:acid_resistant_steel_a> * 2, 
             [
-                <thermalfoundation:material:160>,
-                <thermalfoundation:material:160>,
-                <contenttweaker:titanium_ingot>,
-                <thermalfoundation:material:132>,
+                <moretcon:ingotsanguiseelium>,
+                <moretcon:ingotblightsteel>,
+                <moretcon:ingotvalasium>,
+                <extendedcrafting:material:36>,
                 <contenttweaker:formic_acid_form>,
                 <bloodmagic:cutting_fluid>
             ], 
@@ -3782,10 +3850,10 @@ add3alloy(3, "ender_ingot", 1,
         );
         mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:acid_resistant_steel_b> * 2, 
             [
-                <thermalfoundation:material:160>,
-                <thermalfoundation:material:160>,
-                <contenttweaker:chrome_ingot>,
-                <thermalfoundation:material:133>,
+                <contenttweaker:mitanium_ingot>,
+                <taiga:iox_ingot>,
+                <taiga:nihilite_ingot>,
+                <contenttweaker:awaken_uru_ingot>,
                 <contenttweaker:formic_acid_form>,
                 <bloodmagic:cutting_fluid>
             ], 
@@ -4083,6 +4151,23 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <bloodmagic:demon_extras:10>
         ]
     );
+}
+
+{//alchemistry
+    recipes.remove(<bigreactors:ingotblutonium>);
+    recipes.addShapeless("ia_unblock_blutonium", <bigreactors:ingotblutonium> * 9, [<bigreactors:blockblutonium>]);
+
+    add3alloy(3, "blutonium", 3,
+        "plutonium", 1,
+        "atum", 2,
+        "irradiated_compound", 1
+    );
+    add3alloy(3, "blutonium", 8,
+        "plutonium", 2,
+        "atum", 3,
+        "irradiated_banana", 1
+    );
+
 }
 {//draconic
     //draconium

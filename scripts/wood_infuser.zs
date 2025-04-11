@@ -368,6 +368,8 @@ for stone,ore_list in {
         <contenttweaker:zinc_dust>: <contenttweaker:zinc_ore>,
 
         <mekanism:dust:2>: <mekanism:oreblock>,
+
+        <mysticalagriculture:crafting>: <mysticalagriculture:inferium_ore>
     },
     <minecraft:stone:5>: {<taiga:karmesine_dust>: <taiga:karmesine_ore>},
     <minecraft:stone:3>: {<taiga:ovium_dust>: <taiga:ovium_ore>},
@@ -375,7 +377,7 @@ for stone,ore_list in {
 } as IItemStack[IItemStack][IItemStack] {
     for dust,ore in ore_list{
         mods.roots.Pyre.addRecipe(
-            "ore_craft_" ~ ore.name ~ dust.name, ore * 2,
+            "ore_craft_" ~ ore.name ~ dust.name, ore,
             [
                 <contenttweaker:burn_powder>,
                 <thermalfoundation:material:770>,

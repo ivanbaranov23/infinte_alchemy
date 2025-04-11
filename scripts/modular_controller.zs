@@ -203,10 +203,11 @@ scripts.content_machines.addBioAssemblerRecipe(
 		<bloodmagic:blood_rune:3> * 4,
 		<bloodmagic:blood_rune:6> * 4
 	],
-	[<liquid:bound_metal> * (144 * 8)],
+	[],
 	<contenttweaker:research_magic2>,
 	20, 1000
 );
+
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:super_mixer_controller>, [
 	[<tconevo:metal:28>, <requious:advanced_mixer>, <tconevo:metal:28>, <requious:advanced_mixer>, <tconevo:metal:28>], 
 	[<requious:advanced_mixer>, <contenttweaker:living_motor>, <contenttweaker:slate_6>, <contenttweaker:living_motor>, <requious:advanced_mixer>], 

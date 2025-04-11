@@ -12,6 +12,10 @@ import mods.ctutils.utils.Math;
 
 
 {//luck particle
+    mods.jei.JEI.addItem(<contenttweaker:luck_crystal>.withTag({luck: 1}));
+    mods.jei.JEI.addItem(<contenttweaker:luck_crystal>.withTag({luck: 100}));
+
+
     recipes.addShaped("ia_luck_chip", <contenttweaker:luck_chip>, [
         [<atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>], 
         [<atum:coin_gold>, <contenttweaker:luck_particle>, <atum:coin_gold>], 

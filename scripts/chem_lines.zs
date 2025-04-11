@@ -250,6 +250,30 @@ import mods.modularmachinery.RecipeBuilder;
     recipes.remove(<projectred-core:resource_item:301>);
     scripts.helper.addSawRecipe(<projectred-core:resource_item:300>, <projectred-core:resource_item:301> * 8);
 }
+{//calcium
+    <ore:dustCalcium>.add(<contenttweaker:calcium>);
+
+    furnace.addRecipe(<contenttweaker:calcium>, <contenttweaker:coral_dust>);
+    Centrifuge.addRecipe(
+        [
+            <contenttweaker:calcium> % 10
+        ], <minecraft:dye:15> * 16, null, 
+        3000
+    );
+    Centrifuge.addRecipe(
+        [
+            <contenttweaker:calcium> * 4
+
+        ], <contenttweaker:lich_bone>, <liquid:mana> * 2000, 
+        12000
+    );
+    Centrifuge.addRecipe(
+        [
+            <contenttweaker:calcium> % 25,
+        ], <enderio:item_material:32>, null, 
+        12000
+    );
+}
 
 {//redstone
     mods.thermalexpansion.Transposer.addFillRecipe(
@@ -1340,6 +1364,11 @@ scripts.content_machines.addFluidMixerRecipe(
             <appliedenergistics2:material:45>
         ]);
         mods.roots.Chrysopoeia.addRecipe("awaken_witherite", <contenttweaker:witherite>, <contenttweaker:awaken_witherite>);
+        mods.enderio.SoulBinder.addRecipe(
+            <contenttweaker:awaken_witherite>, <contenttweaker:witherite>, 
+            ["minecraft:wither_skeleton"], 10000, 8
+        );
+
         {//druid circle
 
         }
@@ -1355,15 +1384,15 @@ scripts.content_machines.addFluidMixerRecipe(
     {//catalyst
         recipes.addShapeless("ia_nether_star_catalyst1", <contenttweaker:nether_star_catalyst> * 2, [
             <contenttweaker:nether_star_dust>, 
-            <contenttweaker:advanced_cryotheum>, 
-            <darkutils:wither_block>, 
+            <contenttweaker:reagent_acid> | <contenttweaker:blood_matter> | <astralsorcery:itemcraftingcomponent:2>, 
+            <darkutils:wither_block> | <contenttweaker:awaken_witherite>, 
             <quantumflux:graphitedust>, <quantumflux:graphitedust>
         ]);
         recipes.addShapeless("ia_nether_star_catalyst2", <contenttweaker:nether_star_catalyst> * 2, [
             <contenttweaker:research_chemistry1>.reuse(), 
             <contenttweaker:nether_star_waste>, 
-            <contenttweaker:advanced_cryotheum>, 
-            <darkutils:wither_block>, 
+            <contenttweaker:reagent_acid> | <contenttweaker:blood_matter> | <astralsorcery:itemcraftingcomponent:2>, 
+            <darkutils:wither_block> | <contenttweaker:awaken_witherite>, 
             <quantumflux:graphitedust>, 
             <quantumflux:graphitedust>, 
             <bigreactors:dustcyanite>

@@ -1673,7 +1673,8 @@ val ores as IItemStack[string][string][string] = {
             crushing: <contenttweaker:gallium_dust> * 2,
             crushingByprod1: <contenttweaker:bauxite_dust>,
 
-            drilling: <contenttweaker:gallium_pieces> * 6
+            drilling: <contenttweaker:gallium_pieces> * 6,
+            denorm: <immersiveengineering:ore:4>
         },
         dense: {
             item: <contenttweaker:gallium_dense_ore>,
@@ -1725,7 +1726,8 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod1: <taiga:duranite_dust>,
             crushingByprod2: <thermalfoundation:material:72>,
 
-            drilling: <contenttweaker:vibranium_pieces> * 6
+            drilling: <contenttweaker:vibranium_pieces> * 6,
+            denorm: <moretcon:orearkenium>
         },
         chunk: {
             item: <contenttweaker:vibranium_chunk>,
@@ -1776,7 +1778,8 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod1: <taiga:eezo_dust>,
             crushingByprod2: <contenttweaker:bedrockium_small_chunk>,
 
-            drilling: <contenttweaker:arkenium_pieces> * 6
+            drilling: <contenttweaker:arkenium_pieces> * 6,
+            denorm: <contenttweaker:gallium_ore>
         },
         nether: {
             item: <netherendingores:ore_nether_modded_2:8>,
@@ -1807,6 +1810,16 @@ val ores as IItemStack[string][string][string] = {
 
             madeFrom: <contenttweaker:arkenium_pieces> * 3,
             made2x2: <contenttweaker:arkenium_pieces>
+        },
+
+        aether: {
+            item: <moretcon:orearkenium>,
+            crushing: <contenttweaker:arkenium_dust> * 3,
+            crushingByprod1: <aether_legacy:zanite_gemstone>,
+            crushingByprod2: <moretcon:dustgravitonium>,
+
+            drilling: <contenttweaker:arkenium_pieces> * 6,
+            denorm: <netherendingores:ore_other_1:9>
         }
     },
     draconium: {
@@ -1817,7 +1830,8 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod1: <thermalfoundation:material:72>,
             crushingByprod2: <mekores:mekanismore:28>,
 
-            drilling: <exnihilocreatio:item_ore_draconium> * 6
+            drilling: <exnihilocreatio:item_ore_draconium> * 6,
+            denorm: <taiga:vibranium_ore>
         },
         nether: {
             item: <draconicevolution:draconium_ore:1>,
@@ -2619,7 +2633,7 @@ val ores as IItemStack[string][string][string] = {
         overworld: {
             item: <minecraft:redstone_ore>,
             crushing: <minecraft:redstone> * 10,
-            crushingByprod1: <deepmoblearning:soot_covered_redstone>,
+            crushingByprod1: <exnihilocreatio:item_ore_ardite:2>,
             crushingByprod2: <contenttweaker:rare_earth_dust>
         },
         atum: {
@@ -2630,7 +2644,7 @@ val ores as IItemStack[string][string][string] = {
         nether: {
             item: <netherendingores:ore_nether_vanilla:6>,
             crushing: <minecraft:redstone> * 14,
-            crushingByprod1: <deepmoblearning:soot_covered_redstone>,
+            crushingByprod1: <exnihilocreatio:item_ore_ardite:2>,
             crushingByprod2: <contenttweaker:rare_earth_dust>,
 
             denorm: <minecraft:redstone_ore> * 2
@@ -2818,7 +2832,7 @@ val ores as IItemStack[string][string][string] = {
             item: <netherendingores:ore_end_vanilla:5>,
             crushing: <enderio:item_material:32> * 16,
             crushingByprod1: <appliedenergistics2:material:5> * 4,
-            crushingByprod2: <actuallyadditions:item_dust:4>,
+            crushingByprod2: <contenttweaker:calcium>,
 
             drilling: <actuallyadditions:item_dust:4> * 16,
             denorm: <minecraft:lapis_ore> * 3
@@ -2827,6 +2841,7 @@ val ores as IItemStack[string][string][string] = {
             item: <densemetals:dense_lapis_ore>,
             crushing: <minecraft:lapis_ore> * 3,
             crushingByprod1: <atum:khnumite> * 12,
+            crushingByprod2: <contenttweaker:calcium>,
 
             making: <minecraft:lapis_ore> * 4
         },
@@ -2842,6 +2857,7 @@ val ores as IItemStack[string][string][string] = {
             item: <actuallyadditions:item_dust:4>,
             separating1: <enderio:item_material:32>,
             separating2: <enderio:item_material:32>,
+            separating3: <contenttweaker:calcium>,
             separating4: <contenttweaker:soot>
         }
     },
@@ -3957,6 +3973,14 @@ for material in ores {
             }
 
             Centrifuge.addRecipe(outputs, ores[material][ore_type].item, <liquid:ore_waste> * drilling_fluid_amount[material], 2000 + 50 * drilling_fluid_amount[material]);
+
+            
+            mods.tconstruct.Casting.addBasinRecipe(
+                ores[material][ore_type].separating1, 
+                ores[material][ore_type].item,
+                <liquid:water>, 1000,
+                true
+            );
         }
 
         //seeds
@@ -3984,8 +4008,8 @@ for material in ores {
         //denorm
         if (ores[material][ore_type] has "denorm"){
             mods.mekanism.reaction.addRecipe(
-                ores[material][ore_type].item, <liquid:denorm> * drilling_fluid_amount[material], <gas:fusionfuel> * 40, 
-                ores[material][ore_type].denorm, <gas:fusionfuel> * 15, 1000, 20
+                ores[material][ore_type].item, <liquid:denorm> * drilling_fluid_amount[material], <gas:carmin> * 40, 
+                ores[material][ore_type].denorm, <gas:waste_gas> * 40, 1000, 20
             );
         }
     }

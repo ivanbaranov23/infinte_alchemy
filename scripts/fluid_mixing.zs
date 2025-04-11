@@ -36,7 +36,7 @@ FITweaker.addRecipe(<liquid:ender_blood>, <liquid:andesite>, <blockstate:minecra
 
 FITweaker.addRecipe(<liquid:ash_solution>, <liquid:andesite>, <blockstate:quark:limestone:variant=stone_limestone>);
 
-FITweaker.addRecipe(<liquid:ash_solution>, <liquid:lava>, <blockstate:minecraft:stone:variant=diorite>);
+FITweaker.addRecipe(<liquid:lava>, <liquid:ash_solution>, <blockstate:minecraft:stone:variant=diorite>);
 FITweaker.addRecipe(<liquid:lava>, <liquid:andesite>, <blockstate:minecraft:stone:variant=granite>);
 
 
@@ -101,7 +101,6 @@ FBTweaker.addRecipe(<liquid:malachite_glue>, FBTweaker.outputBuilder()
     .addEvent(FBTweaker.eventBuilder().createPotionEffectEvent(
         "minecraft:slowness", 20, 0
     ))
-    .addEvent(FBTweaker.eventBuilder().createSetSnowEvent())
     
 );
 
@@ -119,6 +118,30 @@ FBTweaker.addRecipe(<liquid:sand>, FBTweaker.outputBuilder()
     .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
         <entity:minecraft:zombie>, <entity:minecraft:husk>
     ).addCondition(BCondition.byChance, [0.1f]))
+    
+);
+
+FBTweaker.addRecipe(<liquid:fiery_essence>, FBTweaker.outputBuilder()
+    
+    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
+        <entity:minecraft:spider>, <entity:twilightforest:tower_termite>
+    ).addCondition(BCondition.byChance, [0.1f]))
+    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
+        <entity:minecraft:cave_spider>, <entity:twilightforest:tower_termite>
+    ).addCondition(BCondition.byChance, [0.1f]))
+    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
+        <entity:primitivemobs:baby_spider>, <entity:twilightforest:tower_termite>
+    ).addCondition(BCondition.byChance, [0.1f]))
+    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
+        <entity:primitivemobs:mother_spider>, <entity:twilightforest:tower_termite>
+    ).addCondition(BCondition.byChance, [0.1f]))
+
+    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
+        <entity:minecraft:spider>, <entity:twilightforest:king_spider>
+    ).addCondition(BCondition.byChance, [0.05f]))
+    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
+        <entity:primitivemobs:mother_spider>, <entity:twilightforest:king_spider>
+    ).addCondition(BCondition.byChance, [0.05f]))
     
 );
 //FBTweaker.eventBuilder().createEntityConversionEvent();

@@ -52,8 +52,8 @@
     "catalyst": {
       "id": "contenttweaker:blood_matter"
     },
-    "multiplier": 5.0,
-    "operations": 20
+    "multiplier": 6.0,
+    "operations": 25
   },
   {
     "catalyst": {

@@ -93,6 +93,10 @@ mods.tconstruct.Drying.addRecipe(<erebus:bambucket>.withTag({Fluid: {FluidName: 
 mods.tconstruct.Casting.addTableRecipe(<tconstruct:edible:1>, null, <liquid:blueslime>, 160);
 mods.tconstruct.Melting.addRecipe(<liquid:blueslime> * 160, <tconstruct:edible:1>);
 
+//orange slime
+recipes.addShapeless("ia_orange slime", <tconstruct:edible:4> * 3, [
+    <ore:slimeball>, <ore:slimeball>, <contenttweaker:weak_enhancer>, <ore:dyeOrange>
+]);
 
 
 mods.exnihilocreatio.Hammer.addRecipe(

@@ -387,6 +387,16 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 		[<ore:coinPlatinum>, <thermalfoundation:material:515>, <ore:coinPlatinum>], 
 		[<ore:coinPlatinum>, <ore:plateEmerald>, <ore:coinPlatinum>]
 	]);
+
+
+	recipes.remove(<thermalexpansion:augment:448>);
+	mods.extendedcrafting.TableCrafting.addShaped(0, <thermalexpansion:augment:448>, [
+		[<contenttweaker:bedrockium_alloy_plate>, <thermalfoundation:material:512>, <contenttweaker:acid_resistant_steel_gear>, <thermalfoundation:material:512>, <contenttweaker:bedrockium_alloy_plate>], 
+		[<thermalfoundation:material:512>, <contenttweaker:nether_star_dust>, <extendedcrafting:singularity_custom:28>, <contenttweaker:nether_star_dust>, <thermalfoundation:material:512>], 
+		[<contenttweaker:acid_resistant_steel_gear>, <extendedcrafting:singularity:4>, <thermalexpansion:machine:12>, <extendedcrafting:singularity:3>, <contenttweaker:acid_resistant_steel_gear>], 
+		[<thermalfoundation:material:512>, <contenttweaker:nether_star_dust>, <contenttweaker:mana_dust_singularity>, <contenttweaker:nether_star_dust>, <thermalfoundation:material:512>], 
+		[<contenttweaker:bedrockium_alloy_plate>, <thermalfoundation:material:512>, <contenttweaker:acid_resistant_steel_gear>, <thermalfoundation:material:512>, <contenttweaker:bedrockium_alloy_plate>]
+	]);
 }
 
 {//dynamos

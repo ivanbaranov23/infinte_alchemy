@@ -73,5 +73,25 @@
 		type: "item",
 		item: "minecraft:iron_block",
 		count: 32
+	},
+	{
+		uid: "ecff1c90",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyItem: {
+					id: "immersivepetroleum:material",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyName: "Big Tower",
+				TrophyColorRed: 30,
+				TrophyColorGreen: 27,
+				TrophyColorBlue: 27,
+				TrophyVariant: "neon",
+				TrophyShowsTooltip: 1b
+			}
+		}
 	}]
 }

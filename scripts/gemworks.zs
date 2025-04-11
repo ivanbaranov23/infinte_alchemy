@@ -235,3 +235,45 @@ scripts.content_machines.addFluidSieveRecipeRandom(
     <exnihilocreatio:item_mesh:4>,
     40, 3000
 );
+
+
+
+
+<ore:gems>.addItems([
+    <extrautils2:suncrystal>,
+    <tconstruct:materials:9>,
+    <minecraft:diamond>,
+    <minecraft:emerald>,
+    <thermalfoundation:material:893>,
+    <thermalfoundation:material:894>,
+    <thermalfoundation:material:895>,
+    <aether_legacy:ambrosium_shard>,
+    <thermalfoundation:material:866>,
+    <appliedenergistics2:material:10>,
+    <appliedenergistics2:material:12>,
+    <extrautils2:ingredients>,
+    <erebus:materials:1>,
+    <darkutils:shulker_pearl>,
+    <biomesoplenty:gem:7>,
+    <extrautils2:ingredients:5>,
+    <moretcon:gemvoidspar>,
+    <mysticalworld:amethyst_gem>,
+    <tinkersaether:swet_crystal>,
+    <tconstruct:materials:10>,
+    <biomesoplenty:gem:3>,
+    <biomesoplenty:gem:4>,
+    <biomesoplenty:gem:5>,
+    <biomesoplenty:gem:6>,
+    <taiga:dilithium_crystal>,
+    <moretcon:gemelectarite>,
+    <mysticalworld:pearl>,
+    <tconstruct:materials:11>,
+    <tconevo:material:1>,
+    <astralsorcery:itemcraftingcomponent>,
+    <biomesoplenty:gem>,
+    <biomesoplenty:gem:1>,
+    <biomesoplenty:gem:2>,
+    <taiga:tiberium_crystal>,
+    <quark:biotite>,
+    <aether_legacy:zanite_gemstone>
+]);

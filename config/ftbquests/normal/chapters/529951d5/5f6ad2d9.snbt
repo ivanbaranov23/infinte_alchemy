@@ -1,0 +1,15 @@
+{
+	x: 1.0d,
+	y: -2.0d,
+	dependencies: [
+		"5bb8b829"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2f0c947a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:nether_pest"
+		}]
+	}]
+}

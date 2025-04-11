@@ -265,6 +265,8 @@ function addAtomicResource(name as string){
     mushroomite_mud.setToolClass("shovel");
     mushroomite_mud.register();
 
+    VanillaFactory.createItem("calcium").register();
+
     //eliamondin
     VanillaFactory.createItem("eliamondin_dust").register();
     VanillaFactory.createItem("eliamondin").register();
@@ -1557,6 +1559,9 @@ knife.register();
 
     add_living_food("sandworm_corpse", 4, [<potion:minecraft:poison>]);
     VanillaFactory.createItem("worm_feed").register();
+    var worm_feed2 = VanillaFactory.createItem("worm_feed2");
+    worm_feed2.glowing = true;
+    worm_feed2.register();
     VanillaFactory.createItem("sandworm_gut").register();
     VanillaFactory.createItem("dry_fibre").register();
     VanillaFactory.createItem("sandworm_chitin").register();
@@ -1595,6 +1600,22 @@ life.register();
 var hyper_life = VanillaFactory.createItem("hyper_life");
 hyper_life.setRarity("epic");
 hyper_life.register();
+
+{//sprook
+    VanillaFactory.createItemFood("sprook1", 2).register();
+    VanillaFactory.createItemFood("sprook2", 2).register();
+    VanillaFactory.createItemFood("sprook3", 2).register();
+    VanillaFactory.createItemFood("sprook4", 2).register();
+    VanillaFactory.createItem("sprooks1").register();
+    VanillaFactory.createItem("sprooks2").register();
+    VanillaFactory.createItem("sprooks3").register();
+
+    VanillaFactory.createBlock("sprook_wheel1", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("sprook_wheel2", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("sprook_wheel3", <blockmaterial:rock>).register();
+
+    addWater("sprook_mush");
+}
 
 VanillaFactory.createItem("ophidian_extract").register();
 VanillaFactory.createItem("soul_poison").register();
@@ -2013,6 +2034,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     entwood_block.register();
 
     VanillaFactory.createItem("transmut_gel").register();
+    VanillaFactory.createItem("elemental_reduction").register();
+    
+
 
     
 
@@ -2386,6 +2410,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("mana_focus").register();
 
     VanillaFactory.createItem("plant_unit").register();
+
+    VanillaFactory.createItem("undead_essence").register();
 }
 
 

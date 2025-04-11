@@ -226,6 +226,12 @@ recipes.addShaped("ia_block_coffee_machine", <actuallyadditions:block_coffee_mac
 	[<contenttweaker:soy_plate>, <contenttweaker:soy_gear>, <contenttweaker:robot_arm>], 
 	[<contenttweaker:soy_plate>, <actuallyadditions:block_misc:8>, <actuallyadditions:item_misc:8>]
 ]);
+recipes.remove(<actuallyadditions:block_item_repairer>);
+recipes.addShaped("ia_block_item_repairer", <actuallyadditions:block_item_repairer>, [
+	[<moreplates:draconium_plate>|<tconevo:metal:43>|<thermalexpansion:augment:401>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 70}]}), <moreplates:draconium_plate>|<tconevo:metal:43>|<thermalexpansion:augment:401>],
+	[<actuallyadditions:item_misc:7>, <actuallyadditions:block_misc:9>, <actuallyadditions:item_misc:7>],
+	[<moreplates:draconium_plate>|<tconevo:metal:43>|<thermalexpansion:augment:401>, <thermalexpansion:machine:9>, <moreplates:draconium_plate>|<tconevo:metal:43>|<thermalexpansion:augment:401>]
+]);
 
 //blocks
 recipes.remove(<actuallyadditions:block_misc:4>);

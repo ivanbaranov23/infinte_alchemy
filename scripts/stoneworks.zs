@@ -29,6 +29,26 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
 }
 
 
+{//stones
+    {//andesite
+        mods.thermalexpansion.Crucible.removeRecipe(<minecraft:stone:5>);
+
+        scripts.jei.addJEIhint(
+            [<minecraft:stone:5>], [],
+            [<exnihilocreatio:block_crucible:1>],
+            [<forge:bucketfilled>.withTag({FluidName: "andesite", Amount: 1000})], [<liquid:andesite>]
+        );
+        scripts.jei.addJEIhint(
+            [], [<liquid:witchwater>, <liquid:andesite>],
+            [<minecraft:cobblestone>.withDisplayName("In world mixing")],
+            [<minecraft:cobblestone>, <minecraft:stone:5>, <minecraft:netherrack>]
+        );
+
+        mods.tconstruct.Melting.addRecipe(<liquid:andesite> * 250, <minecraft:stone:5>);
+        mods.thermalexpansion.Crucible.addRecipe(<liquid:andesite> * 250, <minecraft:stone:5>, 4000);
+    }
+}
+
 {//erebus
     {//umber
         <ore:stone>.remove(<erebus:umberstone>);

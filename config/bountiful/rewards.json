@@ -1,73 +1,168 @@
 [
-  {
-    "content": "minecraft:gold_nugget",
-    "unitWorth": 100,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:gold_ingot",
-    "unitWorth": 900,
-    "weight": 100
-  },
-  {
-    "content": "minecraft:diamond",
-    "unitWorth": 2400,
-    "weight": 10
-  },
-  {
-    "content": "minecraft:iron_sword",
+  {"content": "minecraft:iron_sword",
     "unitWorth": 750,
-    "weight": 5,
+    "weight": 1,
     "nbt_data": "{display:{Lore:[\"Sharper than Usual.\"]},ench:[{id:16,lvl:1}]}",
     "amount": {
       "min": 1,
       "max": 1
     }
   },
-  {
-    "content": "minecraft:leather_helmet",
-    "unitWorth": 500,
-    "weight": 5,
+
+  {"content": "biomesoplenty:gem:7",
     "amount": {
       "min": 1,
-      "max": 1
-    }
+      "max": 16
+    },
+    "unitWorth": 125,
+    "weight": 600
   },
-  {
-    "content": "minecraft:leather_boots",
-    "unitWorth": 450,
-    "weight": 5,
+  {"content": "projectred-core:resource_item:105",
     "amount": {
       "min": 1,
-      "max": 1
-    }
+      "max": 16
+    },
+    "unitWorth": 150,
+    "weight": 1000
   },
-  {
-    "content": "minecraft:iron_chestplate",
-    "unitWorth": 1800,
-    "weight": 5,
+
+  {"content": "roots:baffle_cap_mushroom",
     "amount": {
       "min": 1,
-      "max": 1
-    }
+      "max": 16
+    },
+    "unitWorth": 170,
+    "weight": 750
   },
-  {
-    "content": "minecraft:golden_chestplate",
-    "unitWorth": 1200,
-    "weight": 5,
+  {"content": "minecraft:prismarine_shard",
     "amount": {
       "min": 1,
-      "max": 1
-    }
+      "max": 16
+    },
+    "unitWorth": 150,
+    "weight": 1000
   },
-  {
-    "content": "minecraft:bow",
-    "unitWorth": 1300,
-    "weight": 10,
-    "nbt_data": "{ench:[{id:48,lvl:2}]}",
+  {"content": "contenttweaker:wine_diamond",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 300,
+    "weight": 500
+  },
+  {"content": "contenttweaker:coral_dust",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 150,
+    "weight": 1000
+  },
+  {"content": "contenttweaker:apatite",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 250,
+    "weight": 500
+  },
+  {"content": "harvestcraft:chocolatebaritem",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 100,
+    "weight": 1000
+  },
+
+  {"content": "erebus:materials:55",
+    "amount": {
+      "min": 1,
+      "max": 64
+    },
+    "unitWorth": 12,
+    "weight": 700
+  },
+  {"content": "harvestcraft:doughitem",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 100,
+    "weight": 1000
+  },
+  {"content": "harvestcraft:vinegaritem",
+    "amount": {
+      "min": 1,
+      "max": 16
+    },
+    "unitWorth": 100,
+    "weight": 1000
+  },
+  {"content": "minecraft:diamond",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 200,
+    "weight": 650
+  },
+  {"content": "thermalfoundation:material:135",
+    "amount": {
+      "min": 1,
+      "max": 12
+    },
+    "unitWorth": 250,
+    "weight": 450
+  },
+  {"content": "contenttweaker:rare_earth_dust",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 300,
+    "weight": 300
+  },
+
+
+  {"content": "moretcon:gemelectarite",
+    "amount": {
+      "min": 1,
+      "max": 12
+    },
+    "unitWorth": 300,
+    "weight": 200
+  },
+  {"content": "contenttweaker:bonsai_mushroom_brown",
     "amount": {
       "min": 1,
       "max": 1
-    }
+    },
+    "unitWorth": 1000,
+    "weight": 300
+  },
+  {"content": "contenttweaker:bonsai_mushroom_red",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 1000,
+    "weight": 300
+  },
+  {"content": "contenttweaker:bacteria",
+    "amount": {
+      "min": 1,
+      "max": 12
+    },
+    "unitWorth": 300,
+    "weight": 400
+  },
+  {"content": "contenttweaker:bonsai_baffle_cap",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 2000,
+    "weight": 100
   }
 ]
