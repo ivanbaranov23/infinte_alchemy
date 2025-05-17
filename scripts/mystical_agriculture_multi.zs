@@ -66,6 +66,7 @@ recipes.addShaped("ia_essence_pump5", <contenttweaker:essence_pump5>, [
     [<contenttweaker:cooling_system>, <mysticalagriculture:mystical_machine_frame>, <contenttweaker:cooling_system>]
 ]);
 
+mods.tconstruct.Melting.addRecipe(<liquid:essence_slurp> * 50, <mysticalagriculture:crafting>);
 mods.thermalexpansion.Crucible.addRecipe(
     <liquid:essence_slurp> * 50,
     <mysticalagriculture:crafting>,

@@ -877,7 +877,7 @@ item.contenttweaker.gambrosium_processor.name=Gambrosium Calculation Processor
 fluid.sunnarium_base=Sunnaronite
 
 
-item.contenttweaker.sticky_bucket.name=Stinky Sticky Water Bambuket
+item.contenttweaker.sticky_bucket.name=Stinky Sticky Water Bambucket
 fluid.sticky_water=Sticky Water
 tile.contenttweaker.burned_slimedirt.name=Burned Slimy Dirt
 item.contenttweaker.simple_motor.name=Simple Motor
@@ -1277,8 +1277,8 @@ item.contenttweaker.demon_bucket.name=Demon Metal Research Token
 
 item.contenttweaker.research_glass_making.name=How To Make Glass
 item.contenttweaker.research_structure.name=How To Structure Heavy Machinery
-item.contenttweaker.research_sieving.name=Advanced Sieving Options
-item.contenttweaker.research_fluids.name=Advanced Fluid Handling
+item.contenttweaker.research_sieving.name=How To Sieve
+item.contenttweaker.research_fluids.name=How To Handle Fluid
 item.contenttweaker.research_flight1.name=How To Fly
 item.contenttweaker.research_plants1.name=How To Grow Exotic Plants
 item.contenttweaker.research_plants2.name=How To Grow Exotic Trees
@@ -2110,3 +2110,34 @@ item.contenttweaker.sus_sapling.name=Sus Sapling
 
 fluid.slimebone=Slimy Bone Essence
 item.contenttweaker.elemental_reduction.name=Elemental Reduction Powder
+
+item.contenttweaker.orichalconite_ingot.name=Orichalconite Ingot
+item.contenttweaker.orichalconite_plate.name=Orichalconite Plate
+item.contenttweaker.orichalconite_gear.name=Orichalconite Gear
+tile.contenttweaker.orichalconite_block.name=Block of Orichalconite
+
+item.contenttweaker.dralladium_ingot.name=Dralladium Ingot
+item.contenttweaker.dralladium_plate.name=Dralladium Plate
+tile.contenttweaker.dralladium_block.name=Block of Dralladium
+
+item.contenttweaker.slate_steel_ingot.name=Slate Steel Ingot
+item.contenttweaker.slate_steel_plate.name=Slate Steel Plate
+item.contenttweaker.slate_steel_rod.name=Slate Steel Rod
+item.contenttweaker.slate_steel_wire.name=Slate Steel Wire
+tile.contenttweaker.slate_steel_block.name=Block of Slate Steel
+
+item.contenttweaker.slate_steel_coil.name=Slate Steel Coil
+
+tile.contenttweaker.plutonium_block.name=Block of Plutonium
+fluid.plutonium=Molten Plutonium
+
+item.contenttweaker.iron_apple.name=Iron Apple
+item.contenttweaker.slag_small.name=Small Slag
+item.contenttweaker.bonsai_baffle_cap.name=Bonsai Baffle Cap
+
+item.contenttweaker.antivenom_token.name=Anti-Venom Research Token
+item.contenttweaker.plantoil_token.name=Plant Oil Research Token
+item.contenttweaker.waste_token.name=Bacteria Waste Research Token
+item.contenttweaker.brooth_token.name=Fermented Bacteria Broth Research Token
+
+item.contenttweaker.axe_token.name=Firewood Broad Axe Head Research Token

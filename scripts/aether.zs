@@ -133,7 +133,7 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 	mods.thermalexpansion.Transposer.addFillRecipe(
         <contenttweaker:ambrosium_balls>, <contenttweaker:zinc_dust>, 
         <liquid:ambrosium_slury_clean> * 1000, 
-        2000
+        12000
     );
 
 	mods.thermalexpansion.Transposer.addFillRecipe(
@@ -149,7 +149,7 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 		], 
 		[0.75, 0.5, 0.8], 
 		<contenttweaker:ambrosium_crystal>, 
-		"MULTIPLY_OUTPUT", 20000
+		"MULTIPLY_OUTPUT", 200000
 	);
 
 	//corrupted ambrosium
@@ -167,11 +167,48 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 	mods.thermalexpansion.InductionSmelter.addRecipe(
 		<contenttweaker:corrupted_ambrosium>, 
 		<contenttweaker:ambrosium_dust>, <contenttweaker:evil_desert_dust> * 64, 
-		25000
+		250000
 	);
 
 
 	//gambrosium
+	mods.immersiveengineering.Mixer.addRecipe(<liquid:ambrosium_slury> * 1500, <liquid:hf> * 1500, [
+		<contenttweaker:ambrosium_dust>, 
+		<appliedenergistics2:quartz_glass>, 
+		<thermalfoundation:material:1028>, 
+		<betternether:lucis_spore>
+	], 3000);
+	mods.immersiveengineering.Mixer.addRecipe(<liquid:ambrosium_slury> * 750, <liquid:acetic_acid> * 750, [
+		<contenttweaker:ambrosium_dust>, 
+		<appliedenergistics2:quartz_glass>, 
+		<thermalfoundation:material:1028>, 
+		<betternether:lucis_spore>
+	], 3000);
+
+	mods.immersiveengineering.Mixer.addRecipe(<liquid:ambrosium_slury> * 500, <liquid:hf> * 500, [
+		<contenttweaker:ambrosium_dust>, 
+		<appliedenergistics2:quartz_glass>, 
+		<thermalfoundation:material:1028>, 
+		<contenttweaker:mushroomite_ingot>
+	], 3000);
+	mods.immersiveengineering.Mixer.addRecipe(<liquid:ambrosium_slury> * 250, <liquid:acetic_acid> * 250, [
+		<contenttweaker:ambrosium_dust>, 
+		<appliedenergistics2:quartz_glass>, 
+		<thermalfoundation:material:1028>, 
+		<contenttweaker:mushroomite_ingot>
+	], 3000);
+
+
+
+	mods.thermalexpansion.Refinery.addRecipePotion(<liquid:ambrosium_slury_clean> * 100, <liquid:ambrosium_slury> * 100, 10000);
+	mods.immersivepetroleum.Distillation.addRecipe(
+		[<liquid:ambrosium_slury_clean> * 100], 
+		[<contenttweaker:ambrosium_thing>], 
+		<liquid:ambrosium_slury> * 100, 
+		4000, 20, 
+		[0.01]
+	);
+	/*
 	mods.immersiveengineering.Mixer.addRecipe(<liquid:ambrosium_slury> * 1000, <liquid:hf> * 300, [
 		<contenttweaker:ambrosium_dust>, 
 		<appliedenergistics2:material:1>, 
@@ -194,14 +231,15 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 		[0.01]
 	);
 
-	/*recipes.addShapeless("ia_gambrosium", <contenttweaker:gambrosium_dust> * 2, [
+	recipes.addShapeless("ia_gambrosium", <contenttweaker:gambrosium_dust> * 2, [
 		<contenttweaker:ambrosium_dust>, <contenttweaker:ambrosium_dust>, 
 		<contenttweaker:energized_compound>, 
 		<taiga:jauxum_dust>, <taiga:jauxum_dust>, 
 		<actuallyadditions:item_crystal_empowered:1>, 
 		<thermalfoundation:material:895>, <thermalfoundation:material:895>,
 
-	]);*/
+	]);
+	*/
 
 	mods.immersiveengineering.Mixer.addRecipe(<liquid:gambrosium> * 1000, <liquid:jauxum_fluid> * 250, [
 		<contenttweaker:ambrosium_balls>, 
@@ -217,7 +255,7 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 			<contenttweaker:ambrosium_crystal_seed>, 
 			<projectred-core:resource_item:300> * 4, 
 			<contenttweaker:gambrosium_dust> * 64
-		], 200000
+		], 25000000
 	);
 	scripts.helper.addSawRecipeWByproduct(<contenttweaker:gambrosium_boule>, <contenttweaker:gambrosium_wafer> * 8, <contenttweaker:gambrosium_dust>, 75);
 }

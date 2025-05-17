@@ -74,6 +74,19 @@ scripts.content_machines.addBioAssemblerRecipe(
     20, 1000
 );
 
+mods.thermalexpansion.Transposer.addFillRecipe(
+	<twilightforest:fiery_blood>, 
+	<twilightforest:fiery_tears>, <liquid:blood> * 2000, 12000
+);
+recipes.addShapeless("ia_fiery_blood1", <twilightforest:fiery_blood> * 8, [
+	<twilightforest:trophy:2>,
+	<minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>
+]);
+recipes.addShapeless("ia_fiery_blood1", <twilightforest:fiery_blood> * 2, [
+	<twilightforest:hydra_chop>,
+	<minecraft:glass_bottle>, <minecraft:glass_bottle>
+]);
+
 
 //carminite things
 recipes.remove(<twilightforest:tower_device:12>);
@@ -89,5 +102,11 @@ mods.mekanism.chemical.crystallizer.addRecipe(<gas:carmin> * 250, <twilightfores
 mods.mekanism.compressor.addRecipe(<thermalfoundation:material:166>, <gas:carmin>, <contenttweaker:carminium_ingot>);
 mods.mekanism.compressor.addRecipe(<taiga:tritonite_ingot>, <gas:carmin>, <contenttweaker:carminium_ingot>);
 mods.mekanism.compressor.addRecipe(<taiga:violium_ingot>, <gas:carmin>, <contenttweaker:carminium_ingot> * 3);
+
+recipes.addShapeless("ia_fiery_tears1", <twilightforest:fiery_tears> * 8, [
+	<twilightforest:trophy:3>,
+	<minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>
+]);
+
 
 mods.jei.JEI.hideCategory("jei_uncrafting");

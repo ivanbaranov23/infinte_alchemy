@@ -334,130 +334,9 @@ recipes.addShaped("ia_opencrate", <botania:opencrate>, [
 for rune_id in 0 to 16{ 
     mods.botania.RuneAltar.removeRecipe(<botania:rune>.definition.makeStack(rune_id));
 }
-{//rune bases
-    scripts.content_machines.addBioAssemblerRecipe(
-        [<contenttweaker:rune_string> * 2, <contenttweaker:methyst_dust>, <contenttweaker:methyst_dirty_dust> * 7], null, 
-        [   
-            <bloodmagic:soul_snare> * 4,
-            <contenttweaker:luck_particle> * 4,
-            <contenttweaker:blood_runic_dust> * 12,
-            <contenttweaker:methyst> * 8
-        ], [<liquid:sentient_metal> * (144 * 8), <liquid:mana_juice> * 1000], <contenttweaker:flesh_support>, 20, 100000
-    );
-    scripts.content_machines.addBioAssemblerRecipe(
-        [<contenttweaker:rune_boule_core> * 3, <contenttweaker:methyst_dust> * 22, <contenttweaker:methyst_dirty_dust> * 3], null, 
-        [   
-            <contenttweaker:rune_string> * 12,
-            <contenttweaker:tablet_evil> * 2,
-            <contenttweaker:flesh_rod> * 8,
-            <enderio:item_material:68> * 20,
-            <contenttweaker:neuro_crystal2> * 5,
-            <contenttweaker:methyst> * 25
-        ], [<liquid:sentient_metal> * (144 * 8), <liquid:mana_juice> * 1000], <contenttweaker:flesh_support>, 200, 100000
-    );
 
-    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_boule>, [
-        [null, null, <bloodmagic:demon_extras:10>, <contenttweaker:pure_cincinnasite>, <contenttweaker:pure_cincinnasite>], 
-        [null, <bloodmagic:demon_extras:14>, <botania:manaresource:1>, <botania:manaresource:22>, <contenttweaker:pure_cincinnasite>], 
-        [<bloodmagic:demon_extras:10>, <botania:manaresource:1>, <contenttweaker:rune_boule_core>, <botania:manaresource:1>, <bloodmagic:demon_extras:10>], 
-        [<contenttweaker:pure_cincinnasite>, <botania:manaresource:22>, <botania:manaresource:1>, <bloodmagic:demon_extras:14>, null], 
-        [<contenttweaker:pure_cincinnasite>, <contenttweaker:pure_cincinnasite>, <bloodmagic:demon_extras:10>, null, null]
-    ]);
-    {//rune base
-        scripts.content_machines.addAdvancedMixerRecipe(
-            [<contenttweaker:rune_boule1>], [],
-            [
-                <bloodmagic:slate:4> * 2,
-                <bloodmagic:component:5> * 5,
-                <contenttweaker:luck_particle> * 4,
-                <contenttweaker:rune_boule>
-            ], [
-                <liquid:mana_juice> * 1000,
-                <liquid:livingrock> * (144 * 4),
-                <liquid:draconium> * 216,
-                <liquid:biotite> * 1000
-            ],
-            20, 20000
-        );
-        scripts.content_machines.addAdvancedMixerRecipe(
-            [<contenttweaker:rune_boule1>], [],
-            [
-                <bloodmagic:slate:4> * 2,
-                <bloodmagic:component:5> * 5,
-                <contenttweaker:chitin>,
-                <contenttweaker:rune_boule>
-            ], [
-                <liquid:mana_juice> * 1500,
-                <liquid:livingrock> * (144 * 6),
-                <liquid:draconium> * 288,
-                <liquid:biotite> * 1000
-            ],
-            20, 20000
-        );
-        scripts.content_machines.addAdvancedMixerRecipe(
-            [<contenttweaker:rune_boule1>], [],
-            [
-                <bloodmagic:slate:4> * 4,
-                <bloodmagic:component:5> * 5,
-                <contenttweaker:entwood_dust> * 12,
-                <contenttweaker:rune_boule>
-            ], [
-                <liquid:mana_juice> * 1000,
-                <liquid:livingrock> * (144 * 6),
-                <liquid:draconium> * 288,
-                <liquid:biotite> * 1000
-            ],
-            20, 20000
-        );
 
-        scripts.content_machines.addBioAssemblerRecipe(
-            [<contenttweaker:rune_base> * 4, <contenttweaker:reinforced_cell>], null,
-            [
-                <contenttweaker:rune_boule1>,
-                <contenttweaker:rock_cell>,
-                <contenttweaker:ev_coil> * 8,
-                <contenttweaker:mana_circuit>,
-                <bigreactors:mineralanglesite> * 3
-            ], [
-                <liquid:ultrapure_water> * 1000
-            ], <contenttweaker:pressure_cutter>, 
-            40, 2000
-        );
-    }
-
-    scripts.content_machines.addBioAssemblerRecipe(
-        [<contenttweaker:improved_rune_base> * 2, <contenttweaker:reinforced_cell>], null,
-        [
-            <contenttweaker:rune_base> * 3,
-            <moreplates:manasteel_plate> * 2,
-            <contenttweaker:slate_6>,
-            <contenttweaker:lightning_cell>,
-            <bigreactors:mineralanglesite> * 3
-        ], [
-            <liquid:rune_acid> * 200,
-            <liquid:livingrock> * 576
-        ], <botania:rune:8>, 
-        40, 2000
-    );
-    scripts.content_machines.addAdvancedMixerRecipe(
-        [<contenttweaker:advanced_rune_base> * 2], [],
-        [
-            <contenttweaker:elemental_essence>,
-            <contenttweaker:improved_rune_base> * 3,
-            <contenttweaker:super_vibrant_plate> * 12,
-            <contenttweaker:gem_steel_gear>
-        ], [
-            <liquid:rune_acid> * 1000,
-            <liquid:mana> * 1000,
-            <liquid:terrasteel> * 288,
-            <liquid:stellar_alloy> * 288
-        ],
-        20, 20000
-    );
-}
-
-//t 1
-{
+{//t 1
     {//water
         RuneAltar.addRecipe(<botania:rune>, [
             <contenttweaker:rune_base>, <contenttweaker:advanced_cryotheum>, 
@@ -886,7 +765,7 @@ for rune_id in 0 to 16{
 
 
 {//block of rune
-    recipes.addShaped("ia_botania_block_rune_water", <contenttweaker:rune_water_block>, [
+    /*recipes.addShaped("ia_botania_block_rune_water", <contenttweaker:rune_water_block>, [
         [<botania:rune>, <botania:rune>, <botania:rune>], 
         [<botania:rune>, <bloodmagic:ritual_stone:1>, <botania:rune>], 
         [<botania:rune>, <botania:rune>, <botania:rune>]
@@ -905,6 +784,65 @@ for rune_id in 0 to 16{
         [<botania:rune:3>, <botania:rune:3>, <botania:rune:3>], 
         [<botania:rune:3>, <bloodmagic:ritual_stone:4>, <botania:rune:3>], 
         [<botania:rune:3>, <botania:rune:3>, <botania:rune:3>]
+    ]);*/
+
+
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_water_block>, [
+        [<botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>], 
+        [<botania:rune>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune>], 
+        [<botania:rune>, <contenttweaker:chitin>, <bloodmagic:ritual_stone:1>, <contenttweaker:chitin>, <botania:rune>], 
+        [<botania:rune>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune>], 
+        [<botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_fire_block>, [
+        [<botania:rune:1>, <botania:rune:1>, <botania:rune:1>, <botania:rune:1>, <botania:rune:1>], 
+        [<botania:rune:1>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune:1>], 
+        [<botania:rune:1>, <contenttweaker:chitin>, <bloodmagic:ritual_stone:2>, <contenttweaker:chitin>, <botania:rune:1>], 
+        [<botania:rune:1>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune:1>], 
+        [<botania:rune:1>, <botania:rune:1>, <botania:rune:1>, <botania:rune:1>, <botania:rune:1>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_earth_block>, [
+        [<botania:rune:2>, <botania:rune:2>, <botania:rune:2>, <botania:rune:2>, <botania:rune:2>], 
+        [<botania:rune:2>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune:2>], 
+        [<botania:rune:2>, <contenttweaker:chitin>, <bloodmagic:ritual_stone:3>, <contenttweaker:chitin>, <botania:rune:2>], 
+        [<botania:rune:2>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune:2>], 
+        [<botania:rune:2>, <botania:rune:2>, <botania:rune:2>, <botania:rune:2>, <botania:rune:2>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_air_block>, [
+        [<botania:rune:3>, <botania:rune:3>, <botania:rune:3>, <botania:rune:3>, <botania:rune:3>], 
+        [<botania:rune:3>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune:3>], 
+        [<botania:rune:3>, <contenttweaker:chitin>, <bloodmagic:ritual_stone:4>, <contenttweaker:chitin>, <botania:rune:3>], 
+        [<botania:rune:3>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune:3>], 
+        [<botania:rune:3>, <botania:rune:3>, <botania:rune:3>, <botania:rune:3>, <botania:rune:3>]
+    ]);
+
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_water_block> * 3, [
+        [<botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>], 
+        [<botania:rune>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitigic>, <contenttweaker:orichalconite_gear>, <botania:rune>], 
+        [<botania:rune>, <contenttweaker:chitigic>, <bloodmagic:ritual_stone:1>, <contenttweaker:chitigic>, <botania:rune>], 
+        [<botania:rune>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitigic>, <contenttweaker:orichalconite_gear>, <botania:rune>], 
+        [<botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_fire_block> * 3, [
+        [<botania:rune:1>, <botania:rune:1>, <botania:rune:1>, <botania:rune:1>, <botania:rune:1>], 
+        [<botania:rune:1>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitigic>, <contenttweaker:orichalconite_gear>, <botania:rune:1>], 
+        [<botania:rune:1>, <contenttweaker:chitigic>, <bloodmagic:ritual_stone:2>, <contenttweaker:chitigic>, <botania:rune:1>], 
+        [<botania:rune:1>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitigic>, <contenttweaker:orichalconite_gear>, <botania:rune:1>], 
+        [<botania:rune:1>, <botania:rune:1>, <botania:rune:1>, <botania:rune:1>, <botania:rune:1>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_earth_block> * 3, [
+        [<botania:rune:2>, <botania:rune:2>, <botania:rune:2>, <botania:rune:2>, <botania:rune:2>], 
+        [<botania:rune:2>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitigic>, <contenttweaker:orichalconite_gear>, <botania:rune:2>], 
+        [<botania:rune:2>, <contenttweaker:chitigic>, <bloodmagic:ritual_stone:3>, <contenttweaker:chitigic>, <botania:rune:2>], 
+        [<botania:rune:2>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitigic>, <contenttweaker:orichalconite_gear>, <botania:rune:2>], 
+        [<botania:rune:2>, <botania:rune:2>, <botania:rune:2>, <botania:rune:2>, <botania:rune:2>]
+    ]);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_air_block> * 3, [
+        [<botania:rune:3>, <botania:rune:3>, <botania:rune:3>, <botania:rune:3>, <botania:rune:3>], 
+        [<botania:rune:3>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitigic>, <contenttweaker:orichalconite_gear>, <botania:rune:3>], 
+        [<botania:rune:3>, <contenttweaker:chitigic>, <bloodmagic:ritual_stone:4>, <contenttweaker:chitigic>, <botania:rune:3>], 
+        [<botania:rune:3>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitigic>, <contenttweaker:orichalconite_gear>, <botania:rune:3>], 
+        [<botania:rune:3>, <botania:rune:3>, <botania:rune:3>, <botania:rune:3>, <botania:rune:3>]
     ]);
 }
 

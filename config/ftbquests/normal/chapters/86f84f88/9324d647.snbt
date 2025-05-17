@@ -1,15 +1,17 @@
 {
 	title: "Research trees",
 	icon: "contenttweaker:research_plants2",
-	x: 3.0d,
-	y: 2.0d,
+	x: -1.0d,
+	y: 1.0d,
 	shape: "gear",
 	text: [
 		""
 	],
-	optional: true,
+	dependencies: [
+		"c529d48c"
+	],
 	tasks: [{
-		uid: "cd2db0da",
+		uid: "d18b9d45",
 		type: "item",
 		items: [{
 			item: "minecraft:apple"
@@ -17,14 +19,14 @@
 		count: 32L
 	},
 	{
-		uid: "9520ac24",
+		uid: "40ef8c0e",
 		type: "item",
 		items: [{
 			item: "bonsaitrees:bonsaipot 1 1"
 		}]
 	},
 	{
-		uid: "07291278",
+		uid: "815cd47c",
 		type: "item",
 		items: [{
 			item: "natura:redwood_logs 1 1"
@@ -32,7 +34,7 @@
 		count: 8L
 	},
 	{
-		uid: "c0751988",
+		uid: "a0fc0b2c",
 		type: "item",
 		items: [{
 			item: "prodigytech:zorrasteel_ingot"
@@ -40,7 +42,7 @@
 		count: 3L
 	},
 	{
-		uid: "ece0b909",
+		uid: "149eedcd",
 		type: "item",
 		items: [{
 			item: "tconstruct:slime_sapling 1 2"
@@ -48,13 +50,10 @@
 		count: 12L
 	},
 	{
-		uid: "c41aef5b",
+		uid: "02607a6e",
 		type: "item",
 		items: [{
-			id: "tconstruct:broad_axe_head",
-			tag: {
-				Material: "firewood"
-			}
+			item: "contenttweaker:axe_token"
 		}]
 	}]
 }

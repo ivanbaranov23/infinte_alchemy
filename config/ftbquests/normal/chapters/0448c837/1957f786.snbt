@@ -1,0 +1,15 @@
+{
+	x: 10.0d,
+	y: 6.0d,
+	dependencies: [
+		"a0d3decc"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8ea34406",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gemmed_biomass"
+		}]
+	}]
+}

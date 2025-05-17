@@ -17,6 +17,12 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .input(item('contenttweaker:slime_shard'))
         .output(item('minecraft:slime_ball'))
         .register()
+inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('essence_slurp'))
+        .input(item('minecraft:paper') * 8)
+        .output(item('mysticalagriculture:crafting', 5))
+        .register()
+
 
 inWorldCrafting.fluidToItem.recipeBuilder()
         .fluidInput(fluid('water'))

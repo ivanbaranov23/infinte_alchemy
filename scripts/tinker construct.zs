@@ -96,7 +96,7 @@ recipes.addShaped("ia_bocuit", <contenttweaker:bocuit>, [
     [null, <contenttweaker:zinc_wire>, null]
 ]);
 
-{
+{//reinforced mod
     recipes.remove(<tconstruct:materials:14>);
     recipes.addShaped("ia_reinforced_mod1", <tconstruct:materials:14> * 5, [
         [<roots:runed_obsidian>, <thermalfoundation:material:359>, <roots:runed_obsidian>], 

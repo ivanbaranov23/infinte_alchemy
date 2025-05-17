@@ -57,9 +57,23 @@ import mods.modularmachinery.RecipeBuilder;
 {//dim stable
     scripts.content_machines.addAssemblerRecipe([<contenttweaker:dim_stable_plate1>], [
         <botania:rune:2>,
-        <contenttweaker:orichalconite_plate>,
+        <contenttweaker:orichalconite_plate> * 4,
         <contenttweaker:awaken_uru_plate> * 4,
         <contenttweaker:crystal_metal_plate>,
         <contenttweaker:living_steel_plate> * 2
-    ], <liquid:mirion2> * 576, 100, 10000);
+    ], <liquid:circuit> * 1000, 100, 100000);
+    scripts.content_machines.addAssemblerRecipe([<contenttweaker:dim_stable_plate1>], [
+        <botania:rune:2>,
+        <contenttweaker:orichalconite_plate> * 4,
+        <contenttweaker:alchemical_brass_plate> * 4,
+        <contenttweaker:crystal_metal_plate>,
+        <contenttweaker:living_steel_plate> * 2
+    ], <liquid:circuit> * 1000, 100, 100000);
+    scripts.content_machines.addAssemblerRecipe([<contenttweaker:dim_stable_plate1>], [
+        <botania:rune:2>,
+        <contenttweaker:orichalconite_plate> * 4,
+        <contenttweaker:super_vibrant_plate> * 24,
+        <contenttweaker:crystal_metal_plate>,
+        <contenttweaker:living_steel_plate> * 2
+    ], <liquid:circuit> * 1000, 100, 100000);
 }

@@ -387,6 +387,11 @@ function add_ae2_process_rec(output as IItemStack, input as IItemStack, topInput
 	recipes.remove(<appliedenergistics2:quartz_growth_accelerator>);
 	recipes.addShaped("ia_quartz_growth_accelerator", <appliedenergistics2:quartz_growth_accelerator>, [
 		[<appliedenergistics2:smooth_sky_stone_block>, <contenttweaker:fluix_steel_rod>, <appliedenergistics2:smooth_sky_stone_block>], 
+		[<thermalfoundation:glass:2>, <thermalexpansion:frame>, <thermalfoundation:glass:2>], 
+		[<appliedenergistics2:smooth_sky_stone_block>, <appliedenergistics2:material:24>, <appliedenergistics2:smooth_sky_stone_block>]
+	]);
+	recipes.addShaped("ia_quartz_growth_accelerator2", <appliedenergistics2:quartz_growth_accelerator> * 2, [
+		[<appliedenergistics2:smooth_sky_stone_block>, <contenttweaker:fluix_steel_rod>, <appliedenergistics2:smooth_sky_stone_block>], 
 		[<appliedenergistics2:quartz_glass>, <thermalexpansion:frame>, <appliedenergistics2:quartz_glass>], 
 		[<appliedenergistics2:smooth_sky_stone_block>, <appliedenergistics2:material:24>, <appliedenergistics2:smooth_sky_stone_block>]
 	]);

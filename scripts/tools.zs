@@ -409,3 +409,46 @@ scripts.content_machines.addAssemblerRecipe(
     ], <liquid:medical_alloy> * 1152,
     20, 1000
 );
+
+
+
+
+
+
+recipes.addShapeless("ia_tic_pick", <tconstruct:pickaxe>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 3, Durability: 21, HarvestLevel: 0, Attack: 0.1 as float}, Unbreakable: 1 as byte, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 0, Durability: 21, HarvestLevel: 0, Attack: 0.1 as float}, Special: {Categories: ["aoe", "tool", "harvest"]}, TinkerData: {UsedModifiers: 5, Materials: ["ma.prosperity", "ma.prosperity", "ma.prosperity"], Modifiers: ["toolleveling", "reinforced"]}, Modifiers: [{identifier: "writable", color: -6044219, level: 2, writable2: 1 as byte, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "reinforced", color: 5254787, level: 5}], Traits: ["writable1", "writable2", "toolleveling", "reinforced"]}), [
+    <contenttweaker:research_tinker>.reuse(),
+    <mysticalagriculture:storage:5>, <mysticalagriculture:storage:5>,
+    <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>,
+    <minecraft:diamond_pickaxe>
+]);
+recipes.addShapeless("ia_tic_axe", <tconstruct:hatchet>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 3, Durability: 21, HarvestLevel: 0, Attack: 0.6 as float}, Unbreakable: 1 as byte, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 0, Durability: 21, HarvestLevel: 0, Attack: 0.6 as float}, Special: {Categories: ["aoe", "weapon", "tool", "harvest"]}, TinkerData: {UsedModifiers: 5, Materials: ["ma.prosperity", "ma.prosperity", "ma.prosperity"], Modifiers: ["toolleveling", "reinforced"]}, Modifiers: [{identifier: "writable", color: -6044219, level: 2, writable2: 1 as byte, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "reinforced", color: 5254787, level: 5}], Traits: ["writable1", "writable2", "toolleveling", "reinforced"]}), [
+    <contenttweaker:research_tinker>.reuse(),
+    <mysticalagriculture:storage:5>, <mysticalagriculture:storage:5>,
+    <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>,
+    <minecraft:diamond_axe>
+]);
+recipes.addShapeless("ia_tic_hoe", <tconstruct:mattock>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, HarvestLevelAxe: 0, MiningSpeed: 0.83 as float, FreeModifiers: 3, HarvestLevelShovel: 0, Durability: 16, HarvestLevel: 0, Attack: 3.1 as float}, Unbreakable: 1 as byte, Stats: {AttackSpeedMultiplier: 1.0 as float, HarvestLevelAxe: 0, MiningSpeed: 0.83 as float, FreeModifiers: 0, HarvestLevelShovel: 0, Durability: 16, HarvestLevel: 0, Attack: 3.1 as float}, Special: {Categories: ["aoe", "tool", "harvest"]}, TinkerData: {UsedModifiers: 5, Materials: ["ma.prosperity", "ma.prosperity", "ma.prosperity"], Modifiers: ["toolleveling", "reinforced"]}, Modifiers: [{identifier: "writable", color: -6044219, level: 2, writable2: 1 as byte, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "reinforced", color: 5254787, level: 5}], Traits: ["writable1", "writable2", "toolleveling", "reinforced"]}), [
+    <contenttweaker:research_tinker>.reuse(),
+    <mysticalagriculture:storage:5>, <mysticalagriculture:storage:5>,
+    <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>,
+    <minecraft:diamond_hoe>
+]);
+recipes.addShapeless("ia_tic_sword", <tconstruct:broadsword>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 3, Durability: 23, HarvestLevel: 0, Attack: 1.1 as float}, Unbreakable: 1 as byte, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 0, Durability: 23, HarvestLevel: 0, Attack: 1.1 as float}, Special: {Categories: ["weapon", "tool"]}, TinkerData: {UsedModifiers: 5, Materials: ["ma.prosperity", "ma.prosperity", "ma.prosperity"], Modifiers: ["toolleveling", "reinforced"]}, Modifiers: [{identifier: "writable", color: -6044219, level: 2, writable2: 1 as byte, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "reinforced", color: 5254787, level: 5}], Traits: ["writable1", "writable2", "toolleveling", "reinforced"]}), [
+    <contenttweaker:research_tinker>.reuse(),
+    <mysticalagriculture:storage:5>, <mysticalagriculture:storage:5>,
+    <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>,
+    <minecraft:diamond_sword>
+]);
+recipes.addShapeless("ia_tic_shears", <tconstruct:kama>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 3, Durability: 21, HarvestLevel: 0, Attack: 0.1 as float}, Unbreakable: 1 as byte, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 0, Durability: 21, HarvestLevel: 0, Attack: 0.1 as float}, Special: {Categories: ["aoe", "weapon", "tool", "harvest"]}, TinkerData: {UsedModifiers: 5, Materials: ["ma.prosperity", "ma.prosperity", "ma.prosperity"], Modifiers: ["toolleveling", "reinforced"]}, Modifiers: [{identifier: "writable", color: -6044219, level: 2, writable2: 1 as byte, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "reinforced", color: 5254787, level: 5}], Traits: ["writable1", "writable2", "toolleveling", "reinforced"]}), [
+    <contenttweaker:research_tinker>.reuse(),
+    <mysticalagriculture:storage:5>, <mysticalagriculture:storage:5>,
+    <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>,
+    <thermalfoundation:tool.shears_diamond>
+]);
+recipes.addShapeless("ia_tic_hammer", <tcomplement:sledge_hammer>.withTag({StatsOriginal: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 3, Durability: 21, HarvestLevel: 0, Attack: 0.1 as float}, Unbreakable: 1 as byte, Stats: {AttackSpeedMultiplier: 1.0 as float, MiningSpeed: 0.83 as float, FreeModifiers: 0, Durability: 21, HarvestLevel: 0, Attack: 0.1 as float}, Special: {Categories: ["aoe", "weapon", "tool", "harvest"]}, TinkerData: {UsedModifiers: 5, Materials: ["ma.prosperity", "ma.prosperity", "ma.prosperity"], Modifiers: ["toolleveling", "reinforced"]}, Modifiers: [{identifier: "writable", color: -6044219, level: 2, writable2: 1 as byte, writable1: 1 as byte}, {identifier: "toolleveling", color: 16777215, level: 1}, {identifier: "reinforced", color: 5254787, level: 5}], Traits: ["writable1", "writable2", "toolleveling", "reinforced"]}), [
+    <contenttweaker:research_tinker>.reuse(),
+    <mysticalagriculture:storage:5>, <mysticalagriculture:storage:5>,
+    <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>, <tconstruct:materials:14>,
+    <exnihilocreatio:hammer_diamond>
+]);
+

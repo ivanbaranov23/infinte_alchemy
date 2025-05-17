@@ -95,6 +95,12 @@ Centrifuge.addRecipe(
         [null, <ore:dyeRed>, <ore:dyeRed>]
     ]);
 
+    recipes.addShaped("ia_starfruititem", <harvestcraft:starfruititem> * 4, [
+        [<ore:dyeLime>, <contenttweaker:plant_sample>, <ore:dyeLime>],
+        [null, <extrautils2:magicapple>, null],
+        [<ore:dyeLime>, null, <ore:dyeLime>]
+    ]);
+
     recipes.addShaped("ia_banana", <harvestcraft:bananaitem> * 4, [
         [null, null, <contenttweaker:plant_sample>], 
         [null, <extrautils2:magicapple>, <ore:dyeYellow>], 

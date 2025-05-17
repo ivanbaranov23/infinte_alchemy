@@ -893,7 +893,7 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			[
 				<enderio:item_material:20>, <enderio:item_material:20>,
 				<immersiveengineering:material:19>,//<thermalfoundation:material:288>
-				<immersiveengineering:material:2>, <immersiveengineering:material:2>
+				<immersiveengineering:material:2>//, <immersiveengineering:material:2>
 			]
 		);
 		scripts.content_machines.addAssemblerRecipe(
@@ -1191,9 +1191,9 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			<contenttweaker:nickel_oxide> * 8,
 			<contenttweaker:conductive_alloy_wire> * 3
 		], [
+			<liquid:electrical_steel> * (144 * 12),
 			<liquid:biotite> * 1000,
-			<liquid:ender_distillation> * 500,
-			<liquid:electrical_steel> * 288,
+			<liquid:alien_polymer> * 500,
 			<liquid:chloroauric_acid> * 1000
 		],
 		40, 1000
@@ -1229,11 +1229,7 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		[<contenttweaker:insulated_rod>, <contenttweaker:coil_core2>, <contenttweaker:insulated_rod>], 
 		[<contenttweaker:tungsten_coil>, <contenttweaker:insulated_rod>, <contenttweaker:tungsten_coil>]
 	]);
-	/*scripts.helper.addAssemblerRecipe(
-		<contenttweaker:electromagnet_core>,
-		<contenttweaker:insulation_fabric>, <contenttweaker:tungsten_coil> * 2, <contenttweaker:insulated_rod>, null,
-		4096, 20
-	);*/
+	
 
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:ev_coil>],
@@ -1256,6 +1252,23 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:medical_alloy_coil>,
     ]
 );
 
+
+scripts.content_machines.addAssemblerRecipe(
+    [<contenttweaker:slate_steel_coil>, <contenttweaker:imperomite_catalyst_dust> * 2],
+    [
+        <contenttweaker:ev_coil>,
+        <contenttweaker:slate_steel_wire> * 16,
+        <moreplates:ironwood_plate> * 4,
+        <extendedcrafting:material:3>,
+        <contenttweaker:osmiridium_support> * 4,
+        <contenttweaker:imperomite_catalyst> * 2
+    ], <liquid:tignalum> * 576, 40, 10000
+);
+recipes.addShaped("ia_conductive_alloy_coil", <contenttweaker:conductive_alloy_coil>, [
+	[<contenttweaker:conductive_alloy_wire>, <contenttweaker:tungsten_coil>, <contenttweaker:conductive_alloy_wire>], 
+	[<immersiveengineering:wirecoil:2>, <botania:manaresource:3>, <immersiveengineering:wirecoil:2>], 
+	[<contenttweaker:conductive_alloy_wire>, <contenttweaker:tungsten_coil>, <contenttweaker:conductive_alloy_wire>]
+]);
 
 
 mods.mekanism.reaction.addRecipe(
@@ -1512,33 +1525,18 @@ mods.mekanism.reaction.addRecipe(
 		20, 4096
 	);
 
-	scripts.content_machines.addBioAssemblerRecipe(
-		[<projectred-core:resource_item:320>], null, 
-        [
-			<projectred-core:resource_item:301>
-		], [
-			<liquid:redstone> * 400
-		], <contenttweaker:laser>,
-        5, 1000
-	);
-	scripts.content_machines.addBioAssemblerRecipe(
-		[<projectred-core:resource_item:341>], null, 
-        [
-			<projectred-core:resource_item:301>
-		], [
-			<liquid:glowstone> * 1000
-		], <contenttweaker:laser>,
-        5, 1000
-	);
-	scripts.content_machines.addBioAssemblerRecipe(
-		[<projectred-core:resource_item:342>], null, 
-        [
-			<projectred-core:resource_item:301>
-		], [
-			<liquid:electrotine> * 1000
-		], <contenttweaker:laser>,
-        5, 1000
-	);
+	mods.mekanism.reaction.addRecipe(
+        <projectred-core:resource_item:301> * 32, <liquid:redstone> * 2000, <gas:evil_nitrate> * 50, 
+        <projectred-core:resource_item:320> * 32, <gas:waste_gas> * 50, 50000, 60
+    );
+	mods.mekanism.reaction.addRecipe(
+        <projectred-core:resource_item:301> * 32, <liquid:glowstone> * 2000, <gas:evil_nitrate> * 50, 
+        <projectred-core:resource_item:341> * 32, <gas:waste_gas> * 50, 50000, 60
+    );
+	mods.mekanism.reaction.addRecipe(
+        <projectred-core:resource_item:301> * 32, <liquid:electrotine> * 2000, <gas:evil_nitrate> * 50, 
+        <projectred-core:resource_item:342> * 32, <gas:waste_gas> * 50, 50000, 60
+    );
 }
 
 
@@ -1674,6 +1672,17 @@ scripts.content_machines.addAssemblerRecipe(
 	[<contenttweaker:neuron> * 4, <contenttweaker:neuron_inlay> * 8, <enderio:item_capacitor_melodic> * 4, <contenttweaker:osmiridium_support>],
 	null, 80, 1024
 );
+scripts.content_machines.addAssemblerRecipe(
+	[<contenttweaker:diode3> * 2],
+	[
+		<contenttweaker:fluxed_invar_plate>,
+		<enderio:item_material:56> * 8,
+		<contenttweaker:flesh_rod> * 4,
+		<contenttweaker:living_processor> * 2,
+		<contenttweaker:muscle> * 16
+	],
+	<liquid:sunnarium> * 1000, 80, 100000
+);
 
 {
 	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:carminium_sheet>, 
@@ -1726,8 +1735,8 @@ scripts.content_machines.addAssemblerRecipe(
         <contenttweaker:rune_mana_chip>, 10000000 * 200, 10000000, <contenttweaker:rune_lightning>, 
         [
             <contenttweaker:slime_cell>,
-			<enderio:item_capacitor_melodic>,
-			<enderio:item_capacitor_melodic>,
+			<contenttweaker:bloody_circuit>,
+			<contenttweaker:diode3>,
 			<botania:manaresource:1>,
 			<botania:manaresource:1>,
 			<contenttweaker:tablet_good>,

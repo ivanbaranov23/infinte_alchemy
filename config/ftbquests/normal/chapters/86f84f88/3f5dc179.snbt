@@ -1,18 +1,17 @@
 {
-	title: "Tinker Research",
+	title: "Ressearch Tinker",
 	icon: "contenttweaker:research_tinker",
-	x: 19.0d,
-	y: 4.0d,
+	x: -2.0d,
+	y: 0.0d,
 	shape: "gear",
 	text: [
-		"Gives access to more powerful (aka cheeseful) aspects of TiC. Also more materials"
+		"Unlocks some cool new tool materials, casts for parts of the more powerful tools, a tad earlier reinforced modifier and easier tool cheese recipes"
 	],
 	dependencies: [
-		"0614573b"
+		"c529d48c"
 	],
-	optional: true,
 	tasks: [{
-		uid: "9f607f0a",
+		uid: "6e94e4ad",
 		type: "item",
 		items: [{
 			item: "minecraft:dye 1 4"
@@ -20,14 +19,14 @@
 		count: 12L
 	},
 	{
-		uid: "480d4c99",
+		uid: "266916c7",
 		type: "item",
 		items: [{
 			item: "cathedral:cathedral_gargoyle_demon_quartz"
 		}]
 	},
 	{
-		uid: "eb04fb58",
+		uid: "e81fc0a0",
 		type: "item",
 		items: [{
 			item: "contenttweaker:tink_research_token1"
@@ -35,14 +34,14 @@
 		count: 2L
 	},
 	{
-		uid: "77a8d845",
+		uid: "a54d4154",
 		type: "item",
 		items: [{
 			item: "contenttweaker:tink_research_token2"
 		}]
 	},
 	{
-		uid: "597b73cc",
+		uid: "6bdb0560",
 		type: "item",
 		items: [{
 			item: "tconstruct:ingots 1 5"
@@ -50,7 +49,7 @@
 		count: 12L
 	},
 	{
-		uid: "54ed8273",
+		uid: "2ea63838",
 		type: "item",
 		items: [{
 			item: "tconstruct:cast_custom"

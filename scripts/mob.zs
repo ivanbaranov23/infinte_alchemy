@@ -150,7 +150,14 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
             [<atum:khnumite>, <contenttweaker:khnumite_heart>, <atum:khnumite>],
             [<atum:khnumite>, <atum:khnumite>, <atum:khnumite>]
         ]);
-        recipes.addShaped("ia_khnumite_face", <atum:khnumite_face> * 2, [
+        //face
+        recipes.remove(<atum:khnumite_face>);
+        recipes.addShaped("ia_khnumite_face1", <atum:khnumite_face>, [
+            [<atum:khnumite>, <minecraft:diamond>, <atum:khnumite>],
+            [<atum:khnumite>, <atum:khnumite>, <atum:khnumite>],
+            [<atum:khnumite>, <atum:khnumite>, <atum:khnumite>]
+        ]);
+        recipes.addShaped("ia_khnumite_face2", <atum:khnumite_face> * 2, [
             [<atum:khnumite>, <minecraft:diamond>, <atum:khnumite>],
             [<atum:khnumite>, <contenttweaker:khnumite_heart>, <atum:khnumite>],
             [<atum:khnumite>, <atum:khnumite>, <atum:khnumite>]

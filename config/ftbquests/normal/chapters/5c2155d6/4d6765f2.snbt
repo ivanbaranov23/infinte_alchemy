@@ -2,8 +2,7 @@
 	x: 5.0d,
 	y: -3.0d,
 	dependencies: [
-		"cf3998b5",
-		"5b321e8f"
+		"cf3998b5"
 	],
 	optional: true,
 	tasks: [{

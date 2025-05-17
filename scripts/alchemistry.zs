@@ -31,4 +31,19 @@ Combiner.addRecipe(<contenttweaker:inert_glass>, [
 ]);
 
 
-//
+{//elements alt recs
+	//plutonium
+	scripts.content_machines.addFluidSieveRecipeRandom(
+		[
+			<contenttweaker:filter_empty> % 95,
+			<taiga:prometheum_dust> * 2 % 90,
+			<moretcon:dustirradium> % 90,
+			<moretcon:dustzracohlium> % 85,
+			<moretcon:dustgravitonium> % 80,
+			<taiga:meteorite_dust> * 3 % 90
+		], <liquid:plutonium> * 800, 
+		<liquid:radioactive_waste> * 1000, <contenttweaker:filter_blood>,
+		<contenttweaker:weather_chrome_mesh>,
+		100, 10000
+	);
+}

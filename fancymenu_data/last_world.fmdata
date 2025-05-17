@@ -2,6 +2,6 @@ type = last_world
 
 last_world {
   is_server = false
-  world = test like 3rd
+  world = New Skyblock
 }
 

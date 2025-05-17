@@ -39,10 +39,6 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
 //brick dust in Ore proccesing
 
 
-{//clay
-    
-}
-
 {//metals
     addNuggetIngotBlockRecipe(<contenttweaker:zinc_nugget>, <contenttweaker:zinc_ingot>, <contenttweaker:zinc_block>);
 
@@ -121,8 +117,11 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:tignalum_ingot>, <contenttweaker:tignalum_block>);
     add3x3Recipe(<contenttweaker:mitanium_ingot>, <contenttweaker:mitanium_block>);
 
+    add3x3Recipe(<contenttweaker:dralladium_ingot>, <contenttweaker:dralladium_block>);
+
     add3x3Recipe(<contenttweaker:alchemical_brass_ingot>, <contenttweaker:alchemical_brass_block>);
 
+    add3x3Recipe(<contenttweaker:slate_steel_ingot>, <contenttweaker:slate_steel_block>);
     add3x3Recipe(<contenttweaker:living_steel_ingot>, <contenttweaker:living_steel_block>);
     addNuggetIngotBlockRecipe(<contenttweaker:crystal_metal_nugget>, <contenttweaker:crystal_metal_ingot>, <contenttweaker:crystal_metal_block>);
     add3x3Recipe(<contenttweaker:conductive_alloy_ingot>, <contenttweaker:conductive_alloy_block>);
@@ -154,6 +153,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:space_ice_crystal>, <contenttweaker:space_ice_crystal_block>);
     add3x3Recipe(<alchemistry:ingot:4>, <contenttweaker:beryllium_block>);
     add3x3Recipe(<alchemistry:ingot:84>, <contenttweaker:polonium_block>);
+    add3x3Recipe(<alchemistry:ingot:94>, <contenttweaker:plutonium_block>);
 
     add3x3Recipe(<contenttweaker:lucky_alloy_ingot>, <contenttweaker:lucky_alloy_block>);
 
@@ -166,6 +166,13 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     
     add3x3Recipe(<contenttweaker:caelumite_ingot>, <contenttweaker:caelumite_block>);
 }
+
+recipes.addShaped("ia_slag_small", <immersiveengineering:material:7>, [
+    [null, <contenttweaker:slag_small>, null], 
+    [<contenttweaker:slag_small>, <contenttweaker:slag_small>, <contenttweaker:slag_small>], 
+    [null, <contenttweaker:slag_small>, null]
+]);
+mods.thermalexpansion.Compactor.addStorageRecipe(<immersiveengineering:material:7>, <contenttweaker:slag_small> * 4, 400);
 
 {//potato
     add3x3Recipe(<minecraft:potato>, <contenttweaker:potato_block1>);

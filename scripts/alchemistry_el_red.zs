@@ -58,11 +58,17 @@ var elements as int[IItemStack][IItemStack] = {
     }
 };
 var elements_no_alch as int[IItemStack][IItemStack] = {
+    <alchemistry:element:3>: {
+        <mekanism:otherdust:4>: 4
+    },
     <alchemistry:element:20>: {
         <contenttweaker:calcium>: 4
-    },
+    },/*
     <alchemistry:element:78>: {
         <thermalfoundation:material:134>: 4
+    }*/
+    <alchemistry:element:84>: {    
+        <contenttweaker:polonium_dust>: 4
     }
 };
 for el in elements{

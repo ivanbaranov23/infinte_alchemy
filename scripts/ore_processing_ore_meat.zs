@@ -37,7 +37,10 @@ var meat_names as string[IItemStack][] = [
         <actuallyadditions:item_dust:2> * 2: "oreDiamond",
         <actuallyadditions:item_dust:3> * 2: "oreEmerald",
         
-        <mekores:mekanismore:298>: "oreEezo"
+        <mekores:mekanismore:298>: "oreEezo",
+
+        <twilightforest:ironwood_raw> * 3: "oreIronwood",
+        <contenttweaker:stoneleaf_ore> * 6: "oreStoneleaf"
     }, {//3
         <mekores:mekanismore:18>: "orePlatinum",
         <mekores:mekanismore:23>: "oreIridium",
@@ -111,7 +114,7 @@ for ore_tier in 0 to meat_names.length{
     for item, ore_name in meat_names[ore_tier]{
         var rec = RecipeBuilder.newBuilder("ore_proc_" ~ ore_name, "blood_meat_infuser", 20 + ore_tier * 20);
 
-        rec.addEnergyPerTickInput(500 + 100 * ore_tier);
+        rec.addEnergyPerTickInput(1000 + 500 * ore_tier * ore_tier);
 
         rec.addItemOutput(<contenttweaker:ore_cube_spent>);
         rec.addFluidOutput(<liquid:if.ore_fluid_raw>.withTag({Ore: ore_name}) * (3200 * item.amount));

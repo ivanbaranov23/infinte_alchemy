@@ -124,6 +124,17 @@ recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decorat
 	[<ore:gunpowder>, <ore:plateSteel>, <ore:gunpowder>], 
 	[<ore:clayPorcelain>, <immersiveengineering:stone_decoration:1>, <ore:clayPorcelain>]
 ]);
+recipes.remove(<immersiveengineering:stone_decoration:10>);
+recipes.addShaped("ia_kiln", <immersiveengineering:stone_decoration:10> * 4, [
+	[<contenttweaker:firebrick_block>, <quark:sandy_bricks>, <contenttweaker:firebrick_block>], 
+	[<quark:sandy_bricks>, <contenttweaker:industrial_clay>, <quark:sandy_bricks>], 
+	[<contenttweaker:firebrick_block>, <quark:sandy_bricks>, <contenttweaker:firebrick_block>]
+]);
+recipes.addShaped("ia_kiln2", <immersiveengineering:stone_decoration:10> * 8, [
+	[<contenttweaker:firebrick_block>, <biomesoplenty:dried_sand>, <contenttweaker:firebrick_block>], 
+	[<biomesoplenty:dried_sand>, <contenttweaker:industrial_clay>, <biomesoplenty:dried_sand>], 
+	[<contenttweaker:firebrick_block>, <biomesoplenty:dried_sand>, <contenttweaker:firebrick_block>]
+]);
 
 
 {// multiblocks parts
@@ -191,6 +202,13 @@ recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decorat
 		);
 	}
 }
+mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.withTag({Unbreakable: 1}), 
+    [
+        <immersiveengineering:graphite_electrode>,
+        <quantumflux:craftingpiece:6> * 24,
+        <contenttweaker:diode2> * 4
+    ], 1000 * 1000 * 100
+);
 
 {//wires and coils
 	recipes.remove(<immersiveengineering:wirecoil:5>);

@@ -1,14 +1,24 @@
 {
-	title: "Research fluids",
+	title: "Research fluid handling",
 	icon: "contenttweaker:research_fluids",
-	x: 5.0d,
-	y: 0.0d,
+	x: 0.0d,
+	y: 2.0d,
 	shape: "gear",
 	text: [
-		""
+		"Nessesary for TE, gives ender fluid conduits"
+	],
+	dependencies: [
+		"c529d48c"
 	],
 	tasks: [{
-		uid: "0ac53c0d",
+		uid: "2be37bf5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:demon_bucket"
+		}]
+	},
+	{
+		uid: "48f7f847",
 		type: "item",
 		items: [{
 			item: "enderio:block_reservoir"
@@ -16,14 +26,14 @@
 		count: 8L
 	},
 	{
-		uid: "289fe947",
+		uid: "53643046",
 		type: "item",
 		items: [{
 			item: "erebus:fluid_jar"
 		}]
 	},
 	{
-		uid: "e223822f",
+		uid: "14fda1c2",
 		type: "item",
 		items: [{
 			item: "extrautils2:passivegenerator 1 3"
@@ -31,20 +41,7 @@
 		count: 8L
 	},
 	{
-		uid: "4e74bf71",
-		type: "item",
-		items: [{
-			id: "forge:bucketfilled",
-			tag: {
-				FluidName: "xu_demonic_metal",
-				Amount: 1000
-			}
-		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
-	},
-	{
-		uid: "25b01418",
+		uid: "30205857",
 		type: "item",
 		items: [{
 			item: "fluiddrawers:tank"
@@ -52,7 +49,7 @@
 		count: 8L
 	},
 	{
-		uid: "ef3c026e",
+		uid: "6daa0a30",
 		type: "item",
 		items: [{
 			item: "immersiveengineering:metal_device1 1 6"
@@ -60,7 +57,7 @@
 		count: 32L
 	},
 	{
-		uid: "5315c3bf",
+		uid: "e8c37df7",
 		type: "item",
 		items: [{
 			id: "thermalexpansion:tank",

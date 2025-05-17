@@ -14,38 +14,65 @@
     <capacitor key="enderio:block_enhanced_combustion_generator/efficiency" base="200" scaler="CENT" />
 
 
+
+
+    <capacitor key="enderio:block_alloy_smelter/intake" base="25000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_alloy_smelter/buffer" base="100000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_alloy_smelter/use" base="500" scaler="QUADRATIC" />
+
+    <capacitor key="enderio:block_enhanced_alloy_smelter/intake" base="30000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_alloy_smelter/buffer" base="150000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_alloy_smelter/use" base="600" scaler="QUADRATIC" />
+
+
+    <capacitor key="enderio:block_sag_mill/intake" base="25000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_sag_mill/buffer" base="100000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_sag_mill/use" base="500" scaler="QUADRATIC" />
+
+    <capacitor key="enderio:block_enhanced_sag_mill/intake" base="30000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_sag_mill/buffer" base="150000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_sag_mill/use" base="600" scaler="QUADRATIC" />
+
+
+    <capacitor key="enderio:block_vat/intake" base="25000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_vat/buffer" base="100000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_vat/use" base="500" scaler="QUADRATIC" />
+
+    <capacitor key="enderio:block_enhanced_vat/intake" base="30000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_vat/buffer" base="150000" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_vat/use" base="600" scaler="QUADRATIC" />
     
 
     
-    <grindingball name="wear_resistant_alloy_ball" durability="250000" grinding="1.2" chance="1.2" power="0.9">
+    <grindingball name="wear_resistant_alloy_ball" durability="750000" grinding="1.2" chance="1.2" power="0.9">
         <item name="item:contenttweaker:wear_resistant_alloy_ball"/>
     </grindingball>
-    <grindingball name="fiery_ball" durability="80000" grinding="1.1" chance="1.1" power="0.3">
+    <grindingball name="fiery_ball" durability="120000" grinding="1.1" chance="1.1" power="0.3">
         <item name="item:contenttweaker:fiery_ball"/>
     </grindingball>
-    <grindingball name="arkenium_ball" durability="120000" grinding="1.1" chance="1.7" power="0.9">
+    <grindingball name="arkenium_ball" durability="320000" grinding="1.1" chance="1.7" power="0.9">
         <item name="item:contenttweaker:arkenium_ball"/>
     </grindingball>
-    <grindingball name="bedrockium_alloy_ball" durability="600000" grinding="1.4" chance="1.4" power="0.9">
+    <grindingball name="bedrockium_alloy_ball" durability="3600000" grinding="1.4" chance="1.4" power="0.9">
         <item name="item:contenttweaker:bedrockium_alloy_ball"/>
     </grindingball>
-    <grindingball name="proxii_ball" durability="100000" grinding="1.6" chance="2.0" power="1.1">
+    <grindingball name="proxii_ball" durability="300000" grinding="1.6" chance="2.0" power="1.1">
         <item name="item:contenttweaker:proxii_ball"/>
     </grindingball>
-    <grindingball name="tignalum_ball" durability="400000" grinding="1.3" chance="1.3" power="0.9">
+    <grindingball name="tignalum_ball" durability="500000" grinding="1.3" chance="1.3" power="0.9">
         <item name="item:contenttweaker:tignalum_ball"/>
     </grindingball>
-    <grindingball name="blood_bronze_ball" durability="120000" grinding="2.0" chance="1.75" power="0.8">
+    <grindingball name="blood_bronze_ball" durability="320000" grinding="2.0" chance="1.75" power="0.8">
         <item name="item:contenttweaker:blood_bronze_ball"/>
     </grindingball>
-    <grindingball name="evil_ball" durability="130000" grinding="1.75" chance="2.1" power="1.0">
+    <grindingball name="evil_ball" durability="4000000" grinding="1.75" chance="2.1" power="1.0">
         <item name="item:contenttweaker:evil_ball"/>
     </grindingball>
-    <grindingball name="mana_steel_ball" durability="120000" grinding="1.8" chance="2.5" power="0.9">
+    <grindingball name="mana_steel_ball" durability="12000000" grinding="1.8" chance="2.5" power="0.9">
         <item name="item:contenttweaker:mana_steel_ball"/>
     </grindingball>
 
-    <grindingball name="neutronium_ball" durability="1000000" grinding="2.0" chance="2.5" power="0.75">
+    <grindingball name="neutronium_ball" durability="100000000" grinding="2.0" chance="2.5" power="0.75">
         <item name="item:contenttweaker:neutronium_ball"/>
     </grindingball>
         

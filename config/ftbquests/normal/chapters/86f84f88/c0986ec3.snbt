@@ -1,0 +1,62 @@
+{
+	title: "Research Exotic Circuit Materials",
+	icon: "contenttweaker:research_circuit1",
+	x: -1.0d,
+	y: 0.0d,
+	shape: "gear",
+	text: [
+		"Better recipes for PT circuits and alt recipes for early circuits and circuit like materials"
+	],
+	dependencies: [
+		"c529d48c"
+	],
+	tasks: [{
+		uid: "284624c7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:cactus_charcoal"
+		}],
+		count: 32L
+	},
+	{
+		uid: "1904849d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fishy_capacitor"
+		}],
+		count: 24L
+	},
+	{
+		uid: "c941b7ed",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:connector 1 5"
+		}],
+		count: 6L
+	},
+	{
+		uid: "3af4f7aa",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:toolupgrade 1 10"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ae70ac31",
+		type: "item",
+		items: [{
+			item: "prodigytech:circuit_refined"
+		}],
+		count: 8L
+	},
+	{
+		uid: "7019d86f",
+		type: "item",
+		items: [{
+			item: "prodigytech:pattern_circuit_perfected"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

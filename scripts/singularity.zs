@@ -121,6 +121,7 @@ for mat in expl_compressables{
 		addIngotCompress(scripts.metalworks.all_metals[mat].ingot, scripts.metalworks.all_metals[mat].singularity);
 	}
 }
+/*
 for alloys, mats in alloy_compressable{
 	var rec = RecipeBuilder.newBuilder(alloys[0] ~ "_compression_alloying", "explosion_compressor", 3 * 20);
 
@@ -139,7 +140,7 @@ for alloys, mats in alloy_compressable{
 	rec.addItemInput(<mekanism:obsidiantnt>);
 		
 	rec.build();
-}
+}*/
 
 for mat in non_metallic_singularities{
 	if (non_metallic_singularities[mat] has "item"){
@@ -326,6 +327,13 @@ recipes.addShaped("ia_double_compressed_crafting_table", <avaritia:double_compre
 
 recipes.remove(<extendedcrafting:compressor>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, [
+	[<extendedcrafting:storage>, <extendedcrafting:material:16>, <aeadditions:storage.component>, <extendedcrafting:material:16>, <extendedcrafting:storage>], 
+	[<extendedcrafting:singularity_custom:67>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <extendedcrafting:singularity_custom:67>], 
+	[<extendedcrafting:singularity_custom:67>, <modularcontroller:explosion_compressor_controller>, <extendedcrafting:frame>, <modularcontroller:explosion_compressor_controller>, <extendedcrafting:singularity_custom:67>], 
+	[<extendedcrafting:singularity_custom:67>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <extendedcrafting:singularity_custom:67>], 
+	[<extendedcrafting:storage>, <extendedcrafting:material:16>, <aeadditions:storage.component>, <extendedcrafting:material:16>, <extendedcrafting:storage>]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor> * 2, [
 	[<extendedcrafting:storage>, <extendedcrafting:material:16>, <aeadditions:storage.component>, <extendedcrafting:material:16>, <extendedcrafting:storage>], 
 	[<bloodmagic:component:14>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <bloodmagic:component:14>], 
 	[<bloodmagic:component:14>, <modularcontroller:explosion_compressor_controller>, <extendedcrafting:frame>, <modularcontroller:explosion_compressor_controller>, <bloodmagic:component:14>], 

@@ -81,6 +81,7 @@ recipes.addShapeless("ai_industrail_clay3",
 //forest
 add2x2Recipe(<contenttweaker:forest_clay>, <contenttweaker:forest_clay_block>);
 
+
 //elastic clay
 recipes.addShapeless("ia_elastic_clay1", 
     <contenttweaker:elastic_clay>, 

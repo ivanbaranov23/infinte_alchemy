@@ -50,6 +50,11 @@ import mods.thermalexpansion.Transposer;
 <ore:dustNetherQuartz>.remove(<enderio:item_material:33>);
 <enderio:item_material:33>.displayName = "Dirty Nether Quartz Dust";
 mods.jei.JEI.addItem(<enderio:item_material:33>);
+mods.botania.PureDaisy.addRecipe(<netherendingores:ore_other_1>, <mysticalworld:quartz_ore>);
+//certus
+mods.botania.PureDaisy.addRecipe(<appliedenergistics2:quartz_ore>, <appliedenergistics2:charged_quartz_ore>);
+mods.botania.PureDaisy.addRecipe(<netherendingores:ore_nether_modded_1:9>, <netherendingores:ore_nether_modded_1:10>);
+mods.botania.PureDaisy.addRecipe(<netherendingores:ore_end_modded_1:9>, <netherendingores:ore_end_modded_1:10>);
 
 
 

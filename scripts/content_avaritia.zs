@@ -1,12 +1,19 @@
 #loader avaritiaitem reloadable
 import mods.avaritiaitem.AvaritiaItemBuilder;
 
+AvaritiaItemBuilder.registerItem("neutroniumwood", 64, "neutroniumwood")
+    .shouldDrawHalo(true)
+    .haloTextures("halo_noise")
+    .haloSize(8)
+    .create();
+
+
+
 AvaritiaItemBuilder.registerItem("cosmic_fish", 64, "cosmic_fish")
     .shouldDrawCosmic(true)
     .mask("cosmic_fish_mask")
     .maskOpacity(1.0f)
     .create();
-
 
 AvaritiaItemBuilder.registerItem("cosmic_pieces", 64, "cosmic_pieces")
     .shouldDrawCosmic(true)

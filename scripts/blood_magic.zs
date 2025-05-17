@@ -28,12 +28,10 @@ val any_orbs as IIngredient[] = [
 ];
 
 
-recipes.addShapeless("soul_posion", <contenttweaker:soul_poison>, 
-    [
+recipes.addShapeless("soul_posion", <contenttweaker:soul_poison>, [
 		<contenttweaker:ophidian_extract>, <contenttweaker:irradiated_compound>, <contenttweaker:seth_godshard>, 
 		<mowziesmobs:naga_fang> | <contenttweaker:rare_earth_dust> | <contenttweaker:indium_dust> | <tconevo:metal:32>
-	]
-);
+]);
 
 recipes.remove(<bloodmagic:soul_snare>);
 scripts.content_machines.addAssemblerRecipe(
@@ -998,7 +996,42 @@ scripts.content_machines.addAdvancedMixerRecipe(
 		);
 	}
 }
+{//crystal hints
+	var w = <bloodmagic:item_demon_crystal>.withDisplayName("Will in a chunk");
 
+	scripts.jei.addJEIhint(
+		[
+			<bloodmagic:soul_gem>.withTag({souls: 64.0}),
+			<bloodmagic:monster_soul>
+		], [], [<bloodmagic:demon_crucible>], [w]
+	);scripts.jei.addJEIhint(
+		[<bloodmagic:item_demon_crystal>], [], [<bloodmagic:demon_crucible>], [w * 50]
+	);
+	scripts.jei.addJEIhint(
+		[w * 100], [], [<bloodmagic:demon_crystallizer>], [<bloodmagic:demon_crystal>]
+	);
+
+	//growth
+	scripts.jei.addJEIhint(
+		[w * 50, <bloodmagic:demon_crystal>], [], [], [<bloodmagic:demon_crystal> * 2]
+	);
+
+	scripts.jei.addJEIhint(
+		[<bloodmagic:demon_crystal>], [], [
+			<minecraft:iron_pickaxe>, 
+			<bloodmagic:ritual_diviner:1>.withTag({current_ritual: "crystal_harvest"})
+		], [<bloodmagic:item_demon_crystal>]
+	);
+
+	scripts.jei.addJEIhint(
+		[
+			<bloodmagic:soul_gem>.withTag({}),
+			<bloodmagic:item_demon_crystal:2>.withDisplayName("Will in a chunk") * 64
+		], [], [<bloodmagic:soul_forge>], [
+			<bloodmagic:soul_gem>.withTag({souls: 64.0, demonWillType: "destructive"})
+		]
+	);
+}
 
 
 

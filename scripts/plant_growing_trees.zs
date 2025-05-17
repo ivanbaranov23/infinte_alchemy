@@ -170,7 +170,7 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
 
 {//interesting
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<extrautils2:ironwood_log> * 24, (<exnihilocreatio:item_ore_iron:1>.withDisplayName("Iron Apple") * 4) % 25, (<extrautils2:ironwood_sapling> * 8) % 0], [<extrautils2:ironwood_sapling>], 12, 128
+        [<extrautils2:ironwood_log> * 24, (<contenttweaker:iron_apple> * 4) % 25, (<extrautils2:ironwood_sapling> * 8) % 0], [<extrautils2:ironwood_sapling>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 24], 
         [<aether_legacy:aether_log:1> * 24, (<aether_legacy:ambrosium_shard> * 2) % 30, <contenttweaker:ambrosium_seed> % 0, (<aether_legacy:golden_oak_sapling> * 8) % 0], [<aether_legacy:golden_oak_sapling>], 30, 512
@@ -197,15 +197,80 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
 );
 }
 //mine
-addIBTrecipe([<industrialforegoing:fertilizer> * 32, <biomesoplenty:log_0:4> * 16, <botania:fertilizer> * 24], 
-    [<contenttweaker:revived_log> * 4, <contenttweaker:revived_bush> % 0], [<contenttweaker:revived_bush>], 20, 1024
-);
+{//revived
+    addIBTrecipe([
+            <contenttweaker:luck_particle>,
+            <industrialforegoing:fertilizer> * 128, 
+            <biomesoplenty:log_0:4> * 64, 
+            <botania:fertilizer> * 64,
+            <bloodmagic:component:3> * 4
+        ], 
+        [<contenttweaker:revived_log> * 4, <contenttweaker:revived_bush> % 0], [<contenttweaker:revived_bush>], 20, 40960
+    );
+    addIBTrecipe([
+            <contenttweaker:luck_particle>,
+            <industrialforegoing:fertilizer> * 128, 
+            <biomesoplenty:log_0:4> * 64, 
+            <botania:fertilizer> * 64,
+            <bloodmagic:component:5>
+        ], 
+        [<contenttweaker:revived_log> * 8, <contenttweaker:revived_bush> % 0], [<contenttweaker:revived_bush>], 20, 10240
+    );
+    addIBTrecipe([
+            <contenttweaker:luck_particle>,
+            <industrialforegoing:fertilizer> * 128, 
+            <biomesoplenty:log_0:4> * 64, 
+            <botania:fertilizer> * 64,
+            <contenttweaker:reagent_wood>
+        ], 
+        [<contenttweaker:revived_log> * 24, <contenttweaker:revived_bush> % 5], [<contenttweaker:revived_bush>], 20, 10240
+    );
+}
 
 
 
 
 
 //processing
+{//apples
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <minecraft:golden_apple>, <minecraft:apple>, <liquid:gold> * 576, 2000
+    );
+    mods.tconstruct.Casting.addTableRecipe(
+		<minecraft:golden_apple>, 
+		<minecraft:apple>,
+		<liquid:gold>, 576,
+		true
+	);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <minecraft:golden_apple>, 
+		<minecraft:apple>, <contenttweaker:goold> * 2, 2000
+    );
+
+
+
+    
+    recipes.addShaped("ia_iron_apple", <contenttweaker:iron_apple>, [
+        [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+        [<minecraft:iron_ingot>, <minecraft:apple>, <minecraft:iron_ingot>],
+        [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]
+    ]);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:iron_apple>, <minecraft:apple>, <liquid:iron> * 576, 2000
+    );
+    mods.tconstruct.Casting.addTableRecipe(
+		<contenttweaker:iron_apple>, 
+		<minecraft:apple>,
+		<liquid:iron>, 576,
+		true
+	);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:iron_apple>, 
+		<minecraft:apple>, <actuallyadditions:item_crystal:5> * 2, 2000
+    );
+    scripts.helper.addSawRecipe(<contenttweaker:iron_apple>, <exnihilocreatio:item_ore_iron> * 4);
+    
+}
 {//mushroom glowshroom
     scripts.helper.addSawRecipe(<minecraft:brown_mushroom_block>, <minecraft:brown_mushroom> * 4);
     scripts.helper.addSawRecipe(<minecraft:red_mushroom_block>, <minecraft:red_mushroom> * 4);
@@ -298,6 +363,18 @@ MechanicalSqueezer.addRecipe(<natura:nether_sapling2>,
 );
 
 
+{//natura
+    //redwood
+    recipes.addShapeless("ia_redwood", <natura:redwood_sapling>, [
+        <minecraft:sapling:1>, <minecraft:sapling:1>, <minecraft:sapling:1>, <minecraft:sapling:1>,
+        <ore:dyeRed>, <contenttweaker:creosolon>
+    ]);
+    recipes.addShapeless("ia_redwood2", <natura:redwood_sapling> * 7, [
+        <minecraft:sapling:1>, <minecraft:sapling:1>, <minecraft:sapling:1>, <minecraft:sapling:1>,
+        <ore:dyeRed>, <contenttweaker:creosolon>, <contenttweaker:research_plants2>.reuse()
+    ]);
+    //addPlantStationRecipe(catalyst as IItemStack, out as IItemStack[], inp as IItemStack[], fl as ILiquidStack, time_sec as int);
+}
 
 
 {//burnt wood

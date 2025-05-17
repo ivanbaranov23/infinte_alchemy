@@ -169,6 +169,25 @@
                 }
             ]
         },
+
+        {"match": {"drops": {"drops": ["minecraft:dirt:1"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "EXCLUDED"
+                    },
+                    "item": {
+                        "items": [
+                            "minecraft:dirt"
+                        ],
+                        "quantity": {
+                            "fixed": 1
+                        }
+                    }
+                }
+            ]
+        },
         {"match": {"blocks": {"blocks": ["natura:nether_heat_sand"]}},
             "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
             "drops": [

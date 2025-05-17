@@ -1,0 +1,4 @@
+// Compressed Crafting Table
+recipes.remove(<avaritia:compressed_crafting_table>);
+recipes.addShaped(<avaritia:compressed_crafting_table> * 1, [[null, <avaritia:compressed_crafting_table>, null], [null, <avaritia:compressed_crafting_table>, null],[null, <avaritia:compressed_crafting_table>, null]]);
+

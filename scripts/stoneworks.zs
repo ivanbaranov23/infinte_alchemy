@@ -331,6 +331,9 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     recipes.addShapeless("ia_mud_balls", <biomesoplenty:mudball> * 4,[
         <biomesoplenty:mud>
     ]);
+
+    mods.tconstruct.Drying.addRecipe(<biomesoplenty:dried_sand>, <minecraft:sand>, 20 * 60 * 10);
+    mods.tconstruct.Drying.addRecipe(<biomesoplenty:dried_sand>, <alchemistry:wet_sand>, 20 * 30);
 }
 
 

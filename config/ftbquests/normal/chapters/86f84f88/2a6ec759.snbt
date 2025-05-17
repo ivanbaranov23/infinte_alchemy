@@ -1,0 +1,58 @@
+{
+	title: "Research waste",
+	icon: "contenttweaker:research_chemistry1",
+	x: -2.0d,
+	y: 3.0d,
+	shape: "gear",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "bbf7aa46",
+		type: "item",
+		items: [{
+			item: "contenttweaker:energized_compound"
+		}],
+		count: 4L
+	},
+	{
+		uid: "659dfcf5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bedrockium_alloy_mix"
+		}],
+		count: 2L
+	},
+	{
+		uid: "2a95b552",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fertilizer4"
+		}],
+		count: 8L
+	},
+	{
+		uid: "34ebe559",
+		type: "item",
+		items: [{
+			item: "aether_legacy:aechor_petal"
+		}],
+		count: 16L
+	},
+	{
+		uid: "4c1aa1ad",
+		type: "item",
+		items: [{
+			item: "contenttweaker:antivenom_token"
+		}],
+		count: 4L
+	},
+	{
+		uid: "d047b849",
+		type: "item",
+		items: [{
+			item: "contenttweaker:plantoil_token"
+		}],
+		count: 8L
+	}]
+}

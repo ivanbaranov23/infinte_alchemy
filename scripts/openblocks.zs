@@ -1,3 +1,7 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.WeightedItemStack;
 
 recipes.remove(<openblocks:xp_bottler>);
 recipes.addShaped("ia_xp_bottler", <openblocks:xp_bottler>, [
@@ -27,3 +31,15 @@ scripts.jei.addJEIhint(
     [],
     [<liquid:xpjuice>]
 );
+
+for input,output in {
+    <deepmoblearning:pristine_matter_zombie>: <openblocks:trophy:0>.withTag({entity_id: "minecraft:zombie"}),
+
+    <deepmoblearning:pristine_matter_wither_skeleton>: <openblocks:trophy:0>.withTag({entity_id: "minecraft:wither_skeleton"})
+} as IItemStack[IItemStack] {
+    recipes.addShaped("open_" ~ input.name, output, [
+        [input, input, input],
+        [input, <exnihilocreatio:item_material:5>, input],
+        [input, input, input]
+    ]);
+}

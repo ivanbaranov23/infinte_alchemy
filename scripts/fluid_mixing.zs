@@ -10,6 +10,10 @@ FITweaker.addRecipe(<liquid:blood>, <liquid:water>, <blockstate:biomesoplenty:fl
 
 FITweaker.addRecipe(<liquid:blood>, <liquid:witchwater>, <blockstate:minecraft:soul_sand>);
 FITweaker.addRecipe(<liquid:witchwater>, <liquid:blood>, <blockstate:minecraft:soul_sand>);
+FITweaker.addRecipe(<blockstate:biomesoplenty:flesh>, <liquid:witchwater>,
+    FITweaker.outputBuilder()
+        .addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:soul_sand>))
+);
 
 FITweaker.addRecipe(<liquid:blueslime>, <liquid:witchwater>, <blockstate:tconstruct:slime_dirt:type=blue>);
 FITweaker.addRecipe(<liquid:ash_solution>, <liquid:witchwater>, <blockstate:quark:marble>);
@@ -37,6 +41,12 @@ FITweaker.addRecipe(<liquid:ender_blood>, <liquid:andesite>, <blockstate:minecra
 FITweaker.addRecipe(<liquid:ash_solution>, <liquid:andesite>, <blockstate:quark:limestone:variant=stone_limestone>);
 
 FITweaker.addRecipe(<liquid:lava>, <liquid:ash_solution>, <blockstate:minecraft:stone:variant=diorite>);
+FITweaker.addRecipe(<liquid:ash_solution>, <liquid:lava>, <blockstate:minecraft:stone:variant=diorite>);
+FITweaker.addRecipe(<blockstate:minecraft:cobblestone>, <liquid:ash_solution>,
+    FITweaker.outputBuilder()
+        .addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:stone:variant=diorite>))
+);
+
 FITweaker.addRecipe(<liquid:lava>, <liquid:andesite>, <blockstate:minecraft:stone:variant=granite>);
 
 

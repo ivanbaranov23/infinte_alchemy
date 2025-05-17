@@ -1,6 +1,7 @@
 
 import mods.modularmachinery.RecipeBuilder;
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 
@@ -183,7 +184,7 @@ addResearchRecipe("ExoticCircuit", <immersiveengineering:material:27>, <contentt
         <prodigytech:circuit_refined> * 8,
         <contenttweaker:fishy_capacitor> * 24,
         <contenttweaker:cactus_charcoal> * 32,
-        <immersiveengineering:toolupgrade:10> * 10
+        <immersiveengineering:toolupgrade:10> * 1
     ],
     128, 5*20
 );
@@ -217,7 +218,7 @@ addResearchRecipe("Trees", <prodigytech:zorra_leaf>, <contenttweaker:research_pl
         <natura:redwood_logs:1> * 8,
         <tconstruct:slime_sapling:2> * 12,
         <prodigytech:zorrasteel_ingot> * 3,
-        <tconstruct:broad_axe_head>.withTag({Material: "firewood"}),
+        <contenttweaker:axe_token>,
         <minecraft:apple> * 32
     ], 512, 5 * 20
 );
@@ -280,6 +281,36 @@ addResearchRecipe("Cobblegen", <mysticalagriculture:soulstone> * 4, <contenttwea
     128, 5*20
 );
 
+addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,
+    [
+        <contenttweaker:antivenom_token> * 4,
+        <aether_legacy:aechor_petal> * 16,
+        <contenttweaker:bedrockium_alloy_mix> *2,
+        <contenttweaker:plantoil_token> * 8,
+        <contenttweaker:fertilizer4> * 8,
+        <contenttweaker:energized_compound> * 4
+    ],
+    512, 5*20
+);
+recipes.addShapeless("ia_waste_book_dup_alt", <contenttweaker:research_chemistry1> * 2, [
+    <contenttweaker:research_chemistry1>,
+    <contenttweaker:gem_catalyst>, <contenttweaker:gem_catalyst>, <contenttweaker:gem_catalyst>, <contenttweaker:gem_catalyst>, <contenttweaker:gem_catalyst>
+]);
+
+addResearchRecipe("Bacteria", <contenttweaker:bacteria> * 4, <contenttweaker:research_bacteria1>,
+    [
+        <contenttweaker:waste_token> * 2,
+        <minecraft:fermented_spider_eye> * 64,
+        <harvestcraft:vinegaritem> * 48,
+        <contenttweaker:brooth_token> * 4,
+        <actuallyadditions:block_fermenting_barrel> * 4,
+        <xreliquary:mob_ingredient:6> * 48,
+        <contenttweaker:soap> * 64
+    ],
+    2048, 5*20
+);
+
+
 
 addAdvancedResearchRecipe("Soul", <minecraft:nether_star>, <contenttweaker:research_soul>, [
     <enderio:item_material:52> * 32,
@@ -325,17 +356,6 @@ addAdvancedResearchRecipe("Terrasteel", <botania:manaresource:4> * 3, <contenttw
     <extendedcrafting:singularity_custom:50>
 ], 1000 * 1000, 20 * 5);
 
-addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,
-    [
-        <forge:bucketfilled>.withTag({FluidName: "anti_venom", Amount: 1000}),
-        <aether_legacy:aechor_petal> * 16,
-        <contenttweaker:bedrockium_alloy_mix> *2,
-        <forge:bucketfilled>.withTag({FluidName: "plantoil", Amount: 1000}),
-        <contenttweaker:fertilizer4> * 8,
-        <contenttweaker:energized_compound> * 4
-    ],
-    512, 5*20
-);
 addResearchRecipe("Polymer", <contenttweaker:bouncy_matter_small>, <contenttweaker:research_chemistry2>,
     [
         <bloodmagic:component:8>,
@@ -374,19 +394,7 @@ addResearchRecipe("Heat", <prodigytech:heat_capacitor_0>, <contenttweaker:resear
     1024, 5*20
 );
 
-addResearchRecipe("Bacteria", <contenttweaker:bacteria> * 4, <contenttweaker:research_bacteria1>,
-    [
-        <forge:bucketfilled>.withTag({FluidName: "bacteria_waste", Amount: 1000}),
-        <minecraft:fermented_spider_eye> * 64,
-        <harvestcraft:vinegaritem> * 48,
-        <forge:bucketfilled>.withTag({FluidName: "fermented_bacteria_broth", Amount: 1000}),
-        <actuallyadditions:block_fermenting_barrel> * 4,
-        <xreliquary:mob_ingredient:6> * 48,
-        <contenttweaker:soap> * 64
-    ],
-    2048, 5*20
-);
-
+//redo
 addResearchRecipe("Blood", <bloodmagic:slate:4>, <contenttweaker:research_magic2>,
     [
         <forge:bucketfilled>.withTag({FluidName: "evil_blood", Amount: 1000}),
@@ -403,8 +411,16 @@ addResearchRecipe("Blood", <bloodmagic:slate:4>, <contenttweaker:research_magic2
 
 
 
+function addFluidTokenRec(token as IItemStack, fl as ILiquidStack){
+    recipes.addShapeless("res_fluid_token_buck_" ~ token.name, token, [
+        <forge:bucketfilled>.withTag({FluidName: fl.name, Amount: 1000}).noReturn()
+    ]);
+    recipes.addShapeless("res_fluid_token_fluid_" ~ token.name, token, [
+        <minecraft:bucket>, fl * 1000
+    ]);
+}
 
-//research
+//research tokens
 recipes.addShapeless(
     "ia_glass_cutter_research_token",
     <contenttweaker:glass_cutter_research_token>,
@@ -463,6 +479,17 @@ recipes.addShapeless(
     <contenttweaker:tink_research_token2>,
     [<plustic:laser_medium>.withTag({Material: "prismarine"})]
 );
+
+recipes.addShapeless(
+    "ia_axe_token",
+    <contenttweaker:axe_token>,
+    [<tconstruct:broad_axe_head>.withTag({Material: "firewood"})]
+);
+addFluidTokenRec(<contenttweaker:antivenom_token>, <liquid:anti_venom>);
+addFluidTokenRec(<contenttweaker:plantoil_token>, <liquid:plantoil>);
+
+addFluidTokenRec(<contenttweaker:waste_token>, <liquid:bacteria_waste>);
+addFluidTokenRec(<contenttweaker:brooth_token>, <liquid:fermented_bacteria_broth>);
 
 recipes.addShapeless(
     "ia_book_token",

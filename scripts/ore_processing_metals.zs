@@ -162,6 +162,20 @@ import mods.enderio.SagMill;
         8000
     );
 }
+{//ironwood
+    
+    mods.thermalexpansion.Imbuer.addRecipe(
+        <liquid:liquidironwood> * (144 * 9), 
+        <contenttweaker:stoneleaf>, <liquid:if.ore_fluid_fermented>.withTag({Ore: "oreIronwood"}) * 400, 
+        10000
+    );
+    mods.thermalexpansion.Imbuer.addRecipe(
+        <liquid:liquidironwood> * (144 * 9), 
+        <contenttweaker:empowered_biospice>, <liquid:if.ore_fluid_fermented>.withTag({Ore: "oreIronwood"}) * 400, 
+        10000
+    );
+    
+}
 
 
 {//draconium
