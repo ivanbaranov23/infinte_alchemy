@@ -1,6 +1,13 @@
 {
 	x: -1.0d,
 	y: -5.0d,
+	text: [
+		"If you don't want to grow a giant tree, you can buy your way out of it in shop.",
+		"",
+		"If you will grow it, then:",
+		"1) be careful with chop-whole-tree items. It can let to a crash.",
+		"2) If you decided to keep the tree, then light it up and consider turning fire spread off"
+	],
 	dependencies: [
 		"e9c0fd86"
 	],

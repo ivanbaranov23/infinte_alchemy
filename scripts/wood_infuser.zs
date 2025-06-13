@@ -306,15 +306,15 @@ addWoodInfuseBlueFireJEI(<contenttweaker:excited_mud>, <contenttweaker:mushroomi
         <contenttweaker:fertilizer4> | <mysticalagriculture:fertilized_essence>
 ]);
 addWoodInfuseForestFire(
-    <blockstate:contenttweaker:excited_mud>, <blockstate:erebus:mud>, [
-       <contenttweaker:excited_powder> * 2,
-        <actuallyadditions:item_worm> * 5,
-        <contenttweaker:fertilizer4> | <mysticalagriculture:fertilized_essence>
+    <blockstate:contenttweaker:excited_mud>, <blockstate:biomesoplenty:mud:variant=mud>, [
+    <contenttweaker:excited_powder> * 2,
+    <actuallyadditions:item_worm> * 5,
+    <contenttweaker:fertilizer3>
 ], 20);
-addWoodInfuseForestFireJEI(<contenttweaker:excited_mud>, <erebus:mud>, [
-       <contenttweaker:excited_powder> * 2,
-        <actuallyadditions:item_worm> * 5,
-        <contenttweaker:fertilizer4> | <mysticalagriculture:fertilized_essence>
+addWoodInfuseForestFireJEI(<contenttweaker:excited_mud>, <biomesoplenty:mud>, [
+    <contenttweaker:excited_powder> * 2,
+    <actuallyadditions:item_worm> * 5,
+    <contenttweaker:fertilizer3>
 ]);
 
 //meka umbran

@@ -2,7 +2,17 @@
 	x: 0.5d,
 	y: 8.5d,
 	text: [
-		"Select recipe in altar, put corresponding block and dust on top of altar and watch the magic"
+		"Select recipe in altar, put corresponding stone on top of altar and dust on top of the stone and watch the magic.",
+		"",
+		"[dust]",
+		"[stone]",
+		"[altar]",
+		"",
+		"will turn into",
+		"",
+		"[cobble]",
+		"[ore]",
+		"[altar]"
 	],
 	dependencies: [
 		"acffbdbd"

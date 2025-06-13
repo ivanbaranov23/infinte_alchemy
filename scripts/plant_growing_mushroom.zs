@@ -4,17 +4,11 @@ import mods.immersiveengineering.Mixer as IEMixer;
 {//glowshroom stew
 
     mods.thermalexpansion.Transposer.addFillRecipe(
-        <natura:soups:4>, <minecraft:bowl>, <liquid:glowshroom_stew> * 250, 1000
-    );
-    mods.thermalexpansion.Transposer.addFillRecipe(
-        <natura:soups:7>, <natura:empty_bowls:2>, <liquid:glowshroom_stew> * 250, 1000
+        <natura:glowshroom_stew>, <minecraft:bowl>, <liquid:glowshroom_stew> * 250, 1000
     );
 
     mods.thermalexpansion.Transposer.addExtractRecipe(
-        <liquid:glowshroom_stew> * 250, <natura:soups:4>, 1000, <minecraft:bowl>
-    );
-    mods.thermalexpansion.Transposer.addExtractRecipe(
-        <liquid:glowshroom_stew> * 250, <natura:soups:7>, 1000, <natura:empty_bowls:2>
+        <liquid:glowshroom_stew> * 250, <natura:glowshroom_stew>, 1000, <minecraft:bowl>
     );
 
     //glowcelium

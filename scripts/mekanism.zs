@@ -333,6 +333,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 		[<mekanism:controlcircuit:3>, <thermalfoundation:upgrade:3>, <mekanism:controlcircuit:3>], 
 		[<mekanism:atomicalloy>, <mekanism:electrolyticcore>, <mekanism:atomicalloy>]
 	]);
+	recipes.remove(<mekanism:tierinstaller:3>);
 
 	recipes.remove(<mekanism:speedupgrade>);
 	recipes.addShaped("ia_speedupgrade", <mekanism:speedupgrade>, [

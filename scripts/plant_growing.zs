@@ -61,6 +61,7 @@ import mods.modularmachinery.RecipeBuilder;
 }
 
 //todo super fertilizer
+//todo nonlinear growth
 static GCsoils as IItemStack[] = [
     <minecraft:dirt>,//0
     <minecraft:grass>,
@@ -103,6 +104,19 @@ static GCfertilizer as IItemStack[] = [
     <contenttweaker:fertilizer6>,
     <contenttweaker:fertilizer7>
 ];
+
+static GCnumbers as int[] = [
+    1, //0
+    2, 
+    3, //2
+    5,
+    8, //4
+    13,
+    21, //6
+    34,
+    55
+];
+
 function addGCrecipe(tier as int, seeds as IItemStack[], fruits as WeightedItemStack[], catalyst as IItemStack[], mult as int){
     var rec = RecipeBuilder.newBuilder("GC_" ~ fruits[0].stack.name ~ seeds[0].name ~ tier, "garden_cloche", GCtime[tier] * mult);
 
@@ -174,10 +188,10 @@ function addGCrecipe2(tier as int,
     if (tier != 0) {rec.addEnergyPerTickInput(GCenergy[tier] * p_m);}
 
     for o in fruits{
-        for i in 0 to (tier * 2 + 1){
-            rec.addItemOutput(o.stack);
+        //for i in 0 to (tier * 2 + 1){
+            rec.addItemOutput(o.stack * (o.stack.amount * GCnumbers[tier]));
             rec.setChance(o.chance);
-        }
+        //}
     }
 
     for i in seeds{
@@ -264,7 +278,11 @@ function addGCrecipe_alltiers2(min_tier as int,
 
     //cat
     {//pam
-
+        addGCrecipe_alltiers2(0, 
+            [<harvestcraft:beanseeditem>], 
+            [(<harvestcraft:beanitem> * 4) % 95],
+            [], 1, 1
+        );
     }
     {//other    
         addGCrecipe_alltiers2(2, 

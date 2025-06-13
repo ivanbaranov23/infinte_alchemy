@@ -1,0 +1,22 @@
+{
+	x: 0.5d,
+	y: 7.0d,
+	text: [
+		"Can be used to make cobalt, ardite and gelatin"
+	],
+	dependencies: [
+		"f1b4ed5a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2cef672d",
+		type: "checkmark",
+		title: "Pilkon Blood",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "pilkon_blood"
+			}
+		}
+	}]
+}

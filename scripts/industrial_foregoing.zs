@@ -271,6 +271,10 @@ recipes.addShaped("ia_meat_feeder", <industrialforegoing:meat_feeder>, [
 
 }
 
+//fertilizer
+<ore:dyeBrown>.remove(<industrialforegoing:fertilizer>);
+recipes.addShapeless("ia_if_fert_to_brown", <thermalfoundation:dye:3>, [<industrialforegoing:fertilizer>]);
+
 //pink slime
 mods.thermalexpansion.Imbuer.addRecipe(<liquid:if.pink_slime> * 1000, <industrialforegoing:pink_slime> * 2, <liquid:purpleslime> * 1000, 8000);
 mods.thermalexpansion.Imbuer.addRecipe(<liquid:if.pink_slime> * 1000, <industrialforegoing:pink_slime> * 2, <liquid:blueslime> * 1000, 8000);

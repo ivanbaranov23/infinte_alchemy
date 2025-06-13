@@ -10,5 +10,10 @@
 		items: [{
 			item: "contenttweaker:biomaterial1"
 		}]
+	}],
+	rewards: [{
+		uid: "a945be81",
+		type: "item",
+		item: "contenttweaker:biomaterial1"
 	}]
 }

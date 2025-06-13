@@ -23,7 +23,8 @@
 				FluidName: "nitronite_fluid",
 				Amount: 4000
 			}
-		}
+		},
+		count: 3
 	},
 	{
 		uid: "566c43cb",
@@ -35,18 +36,23 @@
 		uid: "35e1660b",
 		type: "item",
 		item: "contenttweaker:apatite",
-		count: 4
+		count: 24
 	},
 	{
 		uid: "6c31dff0",
 		type: "item",
 		item: "tconstruct:materials 1 14",
-		count: 5
+		count: 15
 	},
 	{
 		uid: "ee3f009c",
 		type: "item",
 		item: "tconstruct:firewood 1 1",
-		count: 4
+		count: 24
+	},
+	{
+		uid: "ac4c8724",
+		type: "item",
+		item: "excompressum:double_compressed_diamond_hammer"
 	}]
 }

@@ -1,0 +1,15 @@
+{
+	x: 6.5d,
+	y: 3.0d,
+	dependencies: [
+		"4c22ee1e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fa21ae4c",
+		type: "item",
+		items: [{
+			item: "bountiful:bountyboarditem"
+		}]
+	}]
+}

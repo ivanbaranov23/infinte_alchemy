@@ -46,6 +46,31 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
 
         mods.tconstruct.Melting.addRecipe(<liquid:andesite> * 250, <minecraft:stone:5>);
         mods.thermalexpansion.Crucible.addRecipe(<liquid:andesite> * 250, <minecraft:stone:5>, 4000);
+
+        recipes.addShaped("ia_andesite_cr", <exnihilocreatio:block_andesite_crushed>, [
+            [null, <exnihilocreatio:item_pebble:3>, null],
+            [<exnihilocreatio:item_pebble:3>, <exnihilocreatio:item_pebble:3>, <exnihilocreatio:item_pebble:3>],
+            [null, <exnihilocreatio:item_pebble:3>, null]
+        ]);
+    }
+
+    recipes.addShaped("ia_diorite_cr", <exnihilocreatio:block_diorite_crushed>, [
+            [null, <exnihilocreatio:item_pebble:2>, null],
+            [<exnihilocreatio:item_pebble:2>, <exnihilocreatio:item_pebble:2>, <exnihilocreatio:item_pebble:2>],
+            [null, <exnihilocreatio:item_pebble:2>, null]
+    ]);
+
+    recipes.addShaped("ia_granite_cr", <exnihilocreatio:block_granite_crushed>, [
+            [null, <exnihilocreatio:item_pebble:1>, null],
+            [<exnihilocreatio:item_pebble:1>, <exnihilocreatio:item_pebble:1>, <exnihilocreatio:item_pebble:1>],
+            [null, <exnihilocreatio:item_pebble:1>, null]
+    ]);
+
+
+    {//netherrack
+        recipes.addShapeless("ia_netherrack", <minecraft:netherrack> * 4, [
+            <ore:cobblestone>, <ore:cobblestone>, <minecraft:soul_sand>, <minecraft:blaze_powder>
+        ]);
     }
 }
 

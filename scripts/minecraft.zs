@@ -21,7 +21,8 @@ recipes.addShaped("ia_end_cake", <dimensionaledibles:end_cake>, [
 //shrub
 furnace.addRecipe(<minecraft:tallgrass>, <ore:treeSapling>);
 
-
+//charcoal
+scripts.helper.addSimpleCrushingRecipe(<minecraft:coal:1>, <thermalfoundation:material:769>);
 
 //furnace
 recipes.remove(<minecraft:furnace>);
@@ -36,6 +37,18 @@ recipes.addShaped("furnace2", <minecraft:furnace> * 2, [
 	[<roots:runestone>, <thermalfoundation:material:163>, <roots:runestone>],
     [<thermalfoundation:material:163>, <minecraft:glass>, <thermalfoundation:material:163>],
     [<roots:runestone>, <contenttweaker:firebrick_block>, <roots:runestone>]
+]);
+
+//hoppers
+recipes.addShaped("ia_wooden_hopper", <tconstruct:wooden_hopper>, [
+	[<ore:plankWood>, <ore:logWood>, <ore:plankWood>],
+	[<ore:plankWood>, <ore:logWood>, <ore:plankWood>],
+	[null, <ore:plankWood>, null]
+]);
+recipes.addShaped("ia_hopper", <minecraft:hopper>, [
+	[null, <ore:ingotIron>, null],
+	[<ore:ingotIron>, <tconstruct:wooden_hopper>, <ore:ingotIron>],
+	[null, <ore:ingotIron>, null]
 ]);
 
 //brewing
@@ -244,7 +257,7 @@ recipes.addShaped("ia_tnt1", <minecraft:tnt>, [
 recipes.addShaped("ia_tnt2", <minecraft:tnt> * 3, [
 	[<appliedenergistics2:tiny_tnt>, <immersiveengineering:wirecoil:3>, <appliedenergistics2:tiny_tnt>], 
 	[<ore:sand>, <ore:gunpowder>, <ore:sand>], 
-	[<appliedenergistics2:tiny_tnt>, <natura:empty_bowls:3>, <appliedenergistics2:tiny_tnt>]
+	[<appliedenergistics2:tiny_tnt>, <natura:nether_planks:3>, <appliedenergistics2:tiny_tnt>]
 ]);
 
 //beacon

@@ -9,8 +9,8 @@
 			"astralsorcery:cap_item_amulet_holder": {}
 		}
 	},
-	x: -0.5d,
-	y: 1.0d,
+	x: -4.5d,
+	y: 2.0d,
 	text: [
 		"Can be applied to pretty much every TE thing: satchels, tanks, infusers, quivers, bores, saws, energy cells, capacitors and even watering cans. "
 	],

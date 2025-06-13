@@ -1,7 +1,79 @@
 
+{//manyullyn
+    {//pilkon
+        mods.tconstruct.Alloy.addRecipe( <liquid:cobalt> * 144, [
+            <liquid:obsidian> * 576,
+            <liquid:pilkon_blood> * 75
+        ]);
+        mods.tconstruct.Alloy.addRecipe( <liquid:ardite> * 144, [
+            <liquid:redstone> * 200,
+            <liquid:pilkon_blood> * 75
+        ]);
+
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <mekores:mekanismore:38>, 
+            <minecraft:obsidian> * 2, <liquid:pilkon_blood> * 75, 
+            10000
+        );
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <mekores:mekanismore:43>, 
+            <minecraft:redstone> * 2, <liquid:pilkon_blood> * 75, 
+            10000
+        );
+    }
+    {//pilkon
+        mods.tconstruct.Alloy.addRecipe( <liquid:cobalt> * 144, [
+            <liquid:obsidian> * 576,
+            <liquid:blazing_blood> * 75
+        ]);
+        mods.tconstruct.Alloy.addRecipe( <liquid:ardite> * 144, [
+            <liquid:redstone> * 200,
+            <liquid:blazing_blood> * 75
+        ]);
+
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <mekores:mekanismore:38>, 
+            <minecraft:obsidian> * 2, <liquid:blazing_blood> * 75, 
+            10000
+        );
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <mekores:mekanismore:43>, 
+            <minecraft:redstone> * 2, <liquid:blazing_blood> * 75, 
+            10000
+        );
+    }
+}
+
+{//flolit
+    recipes.addShaped("ia_flolit_plant", <contenttweaker:flolit_plant>, [
+        [<mysticalcreations:bilim_essence>, <contenttweaker:flolit>, <mysticalcreations:bilim_essence>], 
+        [<contenttweaker:flolit>, <contenttweaker:creosolon>, <contenttweaker:flolit>], 
+        [<mysticalcreations:bilim_essence>, <contenttweaker:flolit>, <mysticalcreations:bilim_essence>]
+    ]);
+
+    mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:flolit>, <contenttweaker:flolit_plant> * 8, 1500);
+
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:flolit_oil> * 2000, 
+        <liquid:grape_juice> * 1000, <liquid:naphthalene> * 500, 
+        <contenttweaker:primitive_eyes>, 
+        256, 40
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(
+		<contenttweaker:flolit>, 
+		<appliedenergistics2:material:4>, <liquid:flolit_oil> * (500), 
+		3000
+	);
+}
+
 scripts.content_machines.addFluidMixerRecipe(
     <liquid:aqua_regia> * 1000, 
-    <liquid:nitric_acid> * 500, <liquid:liquidhydrogenchloride> * 500, <exnihilocreatio:item_material:3>, 
+    <liquid:nitric_acid> * 500, <liquid:liquidhydrogenchloride> * 500, <minecraft:prismarine_crystals>, 
+    256, 40
+);
+scripts.content_machines.addFluidMixerRecipe(
+    <liquid:aqua_regia> * 1000, 
+    <liquid:nitric_acid> * 500, <liquid:liquidhydrogenchloride> * 500, <contenttweaker:watertight_steel_nugget>, 
     256, 20
 );
 
@@ -44,26 +116,26 @@ scripts.content_machines.addFluidMixerRecipe(
     );
     mods.mekanism.reaction.addRecipe(
         <contenttweaker:cursed_gold_pieces>, <liquid:liquidgoldenamber> * 3000, <gas:rfna> * 200, 
-        <exnihilocreatio:item_ore_gold> * 10, <gas:gold> * 1500, 900, 60
+        <exnihilocreatio:item_ore_gold> * 12, <gas:gold> * 1500, 900, 60
     );
 
     //chloroauric
     mods.thermalexpansion.Imbuer.addRecipe(
         <liquid:chloroauric_acid> * 100, 
-        <minecraft:gold_ingot>, 
-        <liquid:aqua_regia> * 50, 
+        <minecraft:gold_ingot> * 2, 
+        <liquid:aqua_regia> * 120, 
         3000
     );
     mods.thermalexpansion.Imbuer.addRecipe(
         <liquid:chloroauric_acid> * 500, 
         <aether_legacy:golden_amber>, 
-        <liquid:aqua_regia> * 300, 
+        <liquid:aqua_regia> * 500, 
         5000
     );
     mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:chloroauric_acid> * 800, 
+        <liquid:chloroauric_acid> * 500, 
         <mekanism:dirtydust:1>, 
-        <liquid:aqua_regia> * 800, 
+        <liquid:aqua_regia> * 500, 
         5000
     );
 
@@ -79,7 +151,7 @@ scripts.content_machines.addFluidMixerRecipe(
         [<contenttweaker:pure_gold_dust>, <mekanism:dirtydust>, <mekores:mekanismore:253>], 
         <liquid:chloroauric_acid> * 1000, 
         20 * 256, 20, 
-        [0.5, 0.15, 0.1]
+        [0.5, 0.15, 0.03]
     );
 
 
@@ -163,9 +235,18 @@ scripts.content_machines.addFluidMixerRecipe(
 }
 
 {//bauxite
+    //bauxite
+    mods.tconstruct.Casting.addBasinRecipe(
+        <immersiveengineering:ore:1>, 
+        <minecraft:quartz_block>, 
+        <liquid:glass>, 1000, 
+        true
+    );
+    
+
     mods.thermalexpansion.Imbuer.addRecipe(
         <liquid:bauxite_slurry> * 1000,
-        <contenttweaker:bauxite_dust>, <liquid:hf> * 250,
+        <contenttweaker:bauxite_dust> * 2, <liquid:hf> * 250,
         3000
     );
     mods.thermalexpansion.Refinery.addRecipe(
@@ -265,3 +346,12 @@ scripts.content_machines.addFluidMixerRecipe(
         <contenttweaker:imperomite_catalyst_dust>, <gas:cyanoacrylate> * 250, 9000, 60
     );
 }
+
+
+//eezo
+    scripts.helper.addFluidAlloyerRecipe(
+        <taiga:eezo_ore>, 
+        <enderio:item_material:20> * 16, <contenttweaker:black_bronze_ingot> * 1, 
+        <liquid:petrotheum> * 2000, 
+        256, 30
+    );

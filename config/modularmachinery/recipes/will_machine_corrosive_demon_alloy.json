@@ -6,7 +6,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 10000
+            "energyPerTick": 100000
         },
         {
             "type": "will",

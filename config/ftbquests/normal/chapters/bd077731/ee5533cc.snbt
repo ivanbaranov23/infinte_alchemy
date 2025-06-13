@@ -1,0 +1,28 @@
+{
+	title: "Autocrafting",
+	x: 4.5d,
+	y: 2.0d,
+	text: [
+		"In controller you can set to either always make smt or you can queue a number of items you want. ",
+		"",
+		"This will not do recursive crafting. For example: you have recipe tin dust->tin ingot and 3 copper ingots+tin ingots->4 bronze.",
+		"Requesting bronze won't make the system to smelt tin."
+	],
+	dependencies: [
+		"a271d997"
+	],
+	tasks: [{
+		uid: "42f90a98",
+		type: "item",
+		items: [{
+			item: "storagenetwork:process_kabel"
+		}]
+	},
+	{
+		uid: "b5246938",
+		type: "item",
+		items: [{
+			item: "storagenetwork:controller"
+		}]
+	}]
+}

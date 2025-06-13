@@ -1,0 +1,18 @@
+{
+	x: -5.0d,
+	y: 3.0d,
+	text: [
+		"Silverbell logs can be turned into silver ore. You can get saplings from sieving or using tin ore proc byprod"
+	],
+	dependencies: [
+		"9738dd1e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "23fe70b2",
+		type: "item",
+		items: [{
+			item: "natura:overworld_sapling 1 1"
+		}]
+	}]
+}

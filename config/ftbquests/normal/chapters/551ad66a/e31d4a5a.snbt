@@ -1,0 +1,12 @@
+{
+	x: -1.0d,
+	y: 4.0d,
+	optional: true,
+	tasks: [{
+		uid: "8ac02d1a",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_material 1 5"
+		}]
+	}]
+}

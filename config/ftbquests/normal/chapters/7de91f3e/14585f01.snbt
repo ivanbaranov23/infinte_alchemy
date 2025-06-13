@@ -1,0 +1,11 @@
+{
+	x: 3.0d,
+	y: 4.5d,
+	tasks: [{
+		uid: "faf04656",
+		type: "item",
+		items: [{
+			item: "modularcontroller:will_machine_controller"
+		}]
+	}]
+}

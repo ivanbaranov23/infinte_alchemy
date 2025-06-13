@@ -1,0 +1,63 @@
+{
+    "machine": "will_machine",
+    "registryName": "will_machine_slate_steel",
+    "recipeTime": 20,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 2000000
+        },
+        {
+            "type": "will",
+            "io-type": "input",
+            "willtype": "steadfast",
+            "willamount": 75
+        },
+        
+      
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "bloodmagic:slate@4",
+            "amount": 2
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:neuron@0",
+            "amount": 5
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "mysticalagradditions:stuff@0",
+            "amount": 5
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "nihilite_fluid",
+            "amount": 4320
+        },
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "ultrapure_water",
+            "amount": 2000
+        },
+
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:slate_steel_ingot@0",
+            "amount": 4
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:reagent_pollution@0",
+            "amount": 1
+        }
+    ]
+}

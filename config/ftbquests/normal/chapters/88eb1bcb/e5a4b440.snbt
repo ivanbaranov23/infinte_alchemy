@@ -13,7 +13,9 @@
 	y: -1.0d,
 	shape: "diamond",
 	text: [
-		"High level Sieve Fortune can be used to get more resources"
+		"High level Sieve Fortune can be used to get more resources",
+		"",
+		"You can buy even higher lvl of sieve fortune in the shop"
 	],
 	dependencies: [
 		"8f076c73"

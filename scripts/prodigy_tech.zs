@@ -64,7 +64,12 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 		<extendedcrafting:singularity:16>, <extendedcrafting:singularity_custom:4>, 36000, <contenttweaker:fireclay> * 64, 1
 	);
 
-	mods.tconstruct.Casting.addBasinRecipe(<contenttweaker:ferramic_gravel>, <minecraft:gravel>, <liquid:ferramic>, 16, true);
+	mods.tconstruct.Casting.addTableRecipe(<contenttweaker:ferramic_gravel>, <minecraft:gravel>, <liquid:ferramic>, 16, true);
+	mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:ferramic_gravel>, 
+        <minecraft:gravel>, <liquid:ferramic> * 16, 
+        1000
+    );
 }
 
 {//zorra
@@ -113,11 +118,11 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 }
 
 {
-	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:fire_charge>, 288);
+	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:fire_charge>, 250);
 	mods.prodigytech.explosionfurnace.explosives.add(<contenttweaker:pilkeum>, 360 * 4);
 	mods.prodigytech.explosionfurnace.explosives.add(<appliedenergistics2:tiny_tnt>, 750);
-	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:tnt>, 1500);
-	mods.prodigytech.explosionfurnace.explosives.add(<natura:nether_planks:3>, 288);
+	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:tnt>, 3000);
+	mods.prodigytech.explosionfurnace.explosives.add(<natura:nether_planks:3>, 250);
 }
 
 
@@ -769,28 +774,28 @@ mods.bloodmagic.TartaricForge.addRecipe(<prodigytech:tartaric_stoker> * 12, [
 	}
 }
 
-function addHeatEngineRecipe(energy as int, cat as IItemStack){
+function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
     var rec = RecipeBuilder.newBuilder("temp" ~ energy, "heat_engine", 60 * 20);
-    rec.addEnergyPerTickOutput(energy * 10);
+    rec.addEnergyPerTickOutput(energy);
 
     
     rec.addItemInput(cat);
-    //rec.setChance(0.1);
+    rec.setChance(0.0);
     
 
-    rec.addHotAirInput(energy, energy - 1, energy + 10000);
+    rec.addHotAirInput(temp, temp - 1, temp + 10000);
 
     rec.build();
 }
 {
-	addHeatEngineRecipe(250, <minecraft:gravel>);
-	addHeatEngineRecipe(500, <minecraft:cobblestone>);
-	addHeatEngineRecipe(1000, <prodigytech:charred_cobblestone>);
-	addHeatEngineRecipe(1500, <minecraft:netherrack>);
-	addHeatEngineRecipe(2000, <minecraft:nether_brick>);
-	addHeatEngineRecipe(2500, <minecraft:magma>);
-	addHeatEngineRecipe(3000, <contenttweaker:firebrick_block>);
-	addHeatEngineRecipe(3500, <contenttweaker:hot_block>);
+	addHeatEngineRecipe(250, 4000, <minecraft:gravel>);
+	addHeatEngineRecipe(500, 8000, <minecraft:cobblestone>);
+	addHeatEngineRecipe(1000, 20000, <prodigytech:charred_cobblestone>);
+	addHeatEngineRecipe(1500, 30000, <minecraft:netherrack>);
+	addHeatEngineRecipe(2000, 40000, <minecraft:nether_brick>);
+	addHeatEngineRecipe(2500, 60000, <minecraft:magma>);
+	addHeatEngineRecipe(3000, 100000, <contenttweaker:firebrick_block>);
+	addHeatEngineRecipe(3500, 250000, <contenttweaker:hot_block>);
 }
 
 {//circuit_plate

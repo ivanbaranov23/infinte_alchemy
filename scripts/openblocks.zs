@@ -43,3 +43,11 @@ for input,output in {
         [input, input, input]
     ]);
 }
+
+
+
+
+recipes.remove(<openblocks:hang_glider>);
+recipes.addShaped("ia_hang_glider", <openblocks:hang_glider>, [[
+    <openblocks:generic>, <contenttweaker:angel_rod>, <openblocks:generic>
+]]);

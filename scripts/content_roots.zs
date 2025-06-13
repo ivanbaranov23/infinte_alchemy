@@ -161,7 +161,37 @@ var staffwood_bug = VanillaFactory.createItem("staffwood_bug");
         if (item) item.damage(1, player);
         return true;
     };
-    staffwood_bug.itemRightClick = function(stack, world, player, hand){
+    staffwood_bug.onItemUse = function(player, world, pos, hand, facing, blockHit){
+        
+        if (hand == mods.contenttweaker.Hand.main()){
+            
+            
+            if (!world.isRemote()){
+                
+                var stack as MutableItemStack = player.getHeldItem(mods.contenttweaker.Hand.main());
+                var offhand as MutableItemStack = player.getHeldItem(mods.contenttweaker.Hand.off());
+                if (isNull(offhand)) return mods.contenttweaker.ActionResult.fail();
+                var ent_pos = pos.getOffset(facing, 1);
+                var ent_pos_str as string = "" ~ ent_pos.x ~ " " ~ ent_pos.y ~ " " ~ ent_pos.z ~ " {NoAI:true}";
+
+                if (compare_items(offhand, <item:xreliquary:mob_ingredient:6>)){
+                    Commands.call("summon minecraft:zombie " ~ ent_pos_str, player, world, false, true);
+                    offhand.shrink(1);
+                    stack.damage(1, player);
+                } 
+                else if (compare_items(offhand, <item:xreliquary:mob_ingredient>)){
+                    Commands.call("summon minecraft:skeleton " ~ ent_pos_str, player, world, false, true);
+                    offhand.shrink(1);
+                    stack.damage(1, player);
+                } 
+
+                
+                return mods.contenttweaker.ActionResult.success();
+            }
+        }
+        return mods.contenttweaker.ActionResult.pass();
+    };
+    /*staffwood_bug.itemRightClick = function(stack, world, player, hand){
         
         if (hand == "MAIN_HAND"){
             
@@ -179,17 +209,19 @@ var staffwood_bug = VanillaFactory.createItem("staffwood_bug");
                 }
                 else if (compare_items(offhand, <item:xreliquary:mob_ingredient:6>)){
                     Commands.call("summon minecraft:zombie ~ ~ ~ {NoAI:true}", player, world, false, true);
+                    offhand.shrink(1);
                 } 
                 else if (compare_items(offhand, <item:xreliquary:mob_ingredient>)){
                     Commands.call("summon minecraft:skeleton ~ ~ ~ {NoAI:true}", player, world, false, true);
+                    offhand.shrink(1);
                 } 
 
-                offhand.shrink(1);
+                
                 
             }
         }
         return "Pass";
-    };
+    };*/
     staffwood_bug.register();
 var staffwood_fire = VanillaFactory.createItem("staffwood_fire");
     staffwood_fire.maxStackSize = 1;

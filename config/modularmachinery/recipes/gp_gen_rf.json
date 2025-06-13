@@ -1,24 +1,24 @@
 {
     "machine": "gp_gen",
     "registryName": "gp_gen_rf",
-    "recipeTime": 100,
+    "recipeTime": 120,
     "requirements": [
         {
             "type": "energy",
             "io-type": "output",
-            "energyPerTick": 12000
+            "energyPerTick": 16000
         },
         {
             "type": "grid",
             "io-type": "input",
-            "power": 100
+            "power": 80
         },
         
         {
             "type": "item",
             "io-type": "input",
             "item": "minecraft:experience_bottle@0",
-            "amount": 1
+            "amount": 3
         }
     ]
 }

@@ -289,18 +289,18 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
         ],
         <contenttweaker:bloodhunter_target_blood>: [
             [
-                <contenttweaker:blood_shard4> * 4,
-                <contenttweaker:blood_shard3> * 8
+                <contenttweaker:blood_shard4> * 24,
+                <contenttweaker:blood_shard3> * 32
             ],[
-                <contenttweaker:blood_shard4> * 4,
-                <contenttweaker:blood_shard3> * 8
+                <contenttweaker:blood_shard4> * 24,
+                <contenttweaker:blood_shard3> * 32
             ]
         ],
-        <contenttweaker:bloodhunter_target_wither> * 3: [
+        <contenttweaker:bloodhunter_target_wither>: [
             [
-                <minecraft:nether_star> * 64
+                <minecraft:nether_star> * 100
             ], [
-                <minecraft:nether_star> * 64
+                <minecraft:nether_star> * 100
             ]
         ],
         <contenttweaker:cursed_wither>: [
@@ -308,8 +308,8 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
             [<contenttweaker:cursed_star>]
         ],
         <contenttweaker:tribute>: [
-            [<contenttweaker:slate_10>],
-            [<contenttweaker:slate_10>]
+            [<contenttweaker:slate_10> * 16],
+            [<contenttweaker:slate_10> * 16]
         ]
     }
 };

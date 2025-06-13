@@ -2224,7 +2224,7 @@ function add2alloy(
         mods.immersiveengineering.ArcFurnace.addRecipe(
             all_metals[alloy].ingot * alloyn, 
             all_metals[metal1].ingot * n1, <contenttweaker:slag_small>,
-            100 * alloy_level * alloy_level, 50 * alloy_level * alloy_level * alloy_level,
+            100 * alloy_level * alloy_level, 150 * alloy_level * alloy_level * alloy_level,
             [all_metals[metal2].ingot * n2],
             "Alloying"
         );
@@ -2305,7 +2305,7 @@ function add3alloy(
     mods.immersiveengineering.ArcFurnace.addRecipe(
         all_metals[alloy].ingot * alloyn, 
         all_metals[metal1].ingot * n1, <contenttweaker:slag_small>,
-        150 * alloy_level * alloy_level, 100 * alloy_level * alloy_level * alloy_level,
+        150 * alloy_level * alloy_level, 200 * alloy_level * alloy_level * alloy_level,
         [all_metals[metal2].ingot * n2, all_metals[metal3].ingot * n3],
         "Alloying"
     );
@@ -2491,13 +2491,11 @@ function finalizeMetal(metal as string){
         [null, <ore:stickWood>, null],
         [null, <ore:stickWood>, null]
     ]);
-    recipes.addShaped(
-        "plate_hammer_recipe_plates",
-        <moreplates:hammer>,
-        [[<ore:plateIron>, <ore:ingotBronze>, <ore:plateIron>],
+    recipes.addShaped("plate_hammer_recipe_plates", <moreplates:hammer>, [
+        [<ore:plateIron>, <ore:ingotBronze>, <ore:plateIron>],
         [null, <ore:stickWood>, null],
-        [null, <ore:stickWood>, null]]
-    );
+        [null, <ore:stickWood>, null]
+    ]);
 
     for metal in metals_to_clean {
         print("[IA] cleaning " + metal);
@@ -2612,13 +2610,17 @@ recipes.addShaped("ia_wooden_gear2", <thermalfoundation:material:22> * 2, [
     [<ore:plankTreatedWood>, null, <ore:plankTreatedWood>],
     [<immersiveengineering:material>, <ore:plankTreatedWood>, <immersiveengineering:material>]
 ]);
+TEPress.addGearRecipe(<thermalfoundation:material:22>, <minecraft:planks> * 4, 300);
+TEPress.addGearRecipe(<thermalfoundation:material:22>, <immersiveengineering:treated_wood> * 2, 300);
+TEPress.addGearRecipe(<thermalfoundation:material:23>, <minecraft:cobblestone> * 4, 300);
+TEPress.addGearRecipe(<thermalfoundation:material:23>, <minecraft:stone> * 2, 300);
 
 
 
 //alloys
 
 {//early game
-    add2alloy(0, "bronze", 4,
+    add2alloy(1, "bronze", 4,
         "tin", 1,
         "copper", 3
     );
@@ -2640,37 +2642,37 @@ recipes.addShaped("ia_wooden_gear2", <thermalfoundation:material:22> * 2, [
         32, 10
     );
 
-    add2alloy(0, "nial", 4,
+    add2alloy(1, "nial", 4,
         "nickel", 3,
         "aluminum", 1
     );
     
 
-    add2alloy(0, "lesmium", 2, 
+    add2alloy(1, "lesmium", 2, 
         "lead", 1,
         "osmium", 1
     );
     
 
     {//watertight_steel
-        add3alloy(0, "watertight_steel", 2,
+        add3alloy(1, "watertight_steel", 2,
             "steel", 2,
             "bronze", 2,
             "lapis", 1
         );
-        add3alloy(0, "watertight_steel", 3,
+        add3alloy(1, "watertight_steel", 3,
             "steel", 2,
             "bronze", 2,
             "resin", 1
         );
-        add3alloy(0, "watertight_steel", 5,
+        add3alloy(1, "watertight_steel", 5,
             "steel", 2,
             "bronze", 2,
             "balsam_resin", 1
         );
     }
 
-    add2alloy(0, "wear_resistant_alloy", 5,
+    add2alloy(1, "wear_resistant_alloy", 5,
         "cobalt", 2,
         "zinc", 3
     );
@@ -2717,7 +2719,27 @@ recipes.addShaped("ia_wooden_gear2", <thermalfoundation:material:22> * 2, [
             "aluminum", 3
         );
         
+        /*add2alloy(1, "steel", 1,
+            "iron", 1,
+            "coal", 4
+        );*/
+        mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <moretcon:rawsteel>);
+        {//steel singul
+            var rec2 = RecipeBuilder.newBuilder("alloy_compression_steel", "explosion_compressor", 3 * 20);
+            rec2.addEnergyPerTickInput(8192);
+            rec2.addItemOutput(<extendedcrafting:singularity:24>);
+                
+            rec2.addItemInput(<extendedcrafting:singularity:1>);
+            rec2.addItemInput(<extendedcrafting:singularity> * 2);
 
+            rec2.addMekanismHeatInput(700, 699, 1.0/0);
+                
+                        
+            rec2.addItemInput(<mekanism:obsidiantnt>);
+                
+            rec2.build();
+        }
+        
 
         /*scripts.helper.addHighOvenAlloy(
             "electrum_ho" as string, 0,
@@ -2731,6 +2753,13 @@ recipes.addShaped("ia_wooden_gear2", <thermalfoundation:material:22> * 2, [
             "gold", 1,
             "silver", 1
         );
+
+        mods.tconstruct.Alloy.removeRecipe(<liquid:alumite>);
+        mods.tconstruct.Alloy.addRecipe(<liquid:alumite> * 24, [
+            <liquid:aluminum> * 40,
+            <liquid:iron> * 16,
+            <liquid:obsidian> * 16
+        ]);
         add3alloy(1, "alumite", 3,
             "aluminum", 5,
             "iron", 2,
@@ -3275,27 +3304,27 @@ scripts.helper.addFluidAlloyerRecipe(
         all_metals.tin.ingot * 3,
         2000
     );
-    add2alloy(1, "tinezo", 3,
+    add2alloy(2, "tinezo", 3,
         "eezo", 2,
         "nittin", 4
     );
 
-    add3alloy(0, "tinezo", 3,
+    add3alloy(2, "tinezo", 3,
         "eezo", 1,
         "tin", 8,
         "platinum", 1
     );
-    add3alloy(0, "tinezo", 3,
+    add3alloy(2, "tinezo", 3,
         "eezo", 1,
         "tin", 8,
         "chrome", 1
     );
-    add3alloy(0, "tinezo", 2,
+    add3alloy(2, "tinezo", 2,
         "eezo", 1,
         "tin", 6,
         "lesmium", 3
     );
-    add3alloy(0, "tinezo", 2,
+    add3alloy(2, "tinezo", 2,
         "eezo", 1,
         "tin", 5,
         "angel", 2
@@ -3561,14 +3590,17 @@ scripts.helper.addFluidAlloyerRecipe(
     }
 
     recipes.addShapeless("ia_energized_compound1", <contenttweaker:energized_compound> * 3, [
-        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>
+        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <thermalfoundation:material:1028>, 
+        <taiga:dilithium_dust>, <thermalfoundation:material:103>
     ]);
     recipes.addShapeless("ia_energized_compound2", <contenttweaker:energized_compound> * 4, [
-        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>,
+        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <thermalfoundation:material:1028>, 
+        <taiga:dilithium_dust>, <thermalfoundation:material:103>,
         <biomesoplenty:shroompowder>
     ]);
     recipes.addShapeless("ia_energized_compound3", <contenttweaker:energized_compound> * 6, [
-        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <minecraft:experience_bottle>, <taiga:dilithium_dust>, <thermalfoundation:material:103>,
+        <contenttweaker:irradiated_compound>, <contenttweaker:solar_silicon>, <thermalfoundation:material:1028>, 
+        <taiga:dilithium_dust>, <thermalfoundation:material:103>,
         <biomesoplenty:shroompowder>, <biomesoplenty:gem>
     ]);
     
@@ -3608,6 +3640,11 @@ scripts.helper.addFluidAlloyerRecipe(
             "gambrosium", 1,
             "osgloridium", 1
         );
+        add3alloy(3, "energetic_gold2", 2,
+            "energetic_gold1", 2,
+            "gambrosium", 1,
+            "fluxed_electrum", 1
+        );
     }
     {//vivid
         mods.tconstruct.Alloy.removeRecipe(<liquid:vivid_alloy>);
@@ -3617,6 +3654,11 @@ scripts.helper.addFluidAlloyerRecipe(
             "energetic_silver1", 1,
             "gambrosium", 1,
             "osgloridium", 1
+        );
+        add3alloy(3, "energetic_silver2", 2,
+            "energetic_silver1", 2,
+            "gambrosium", 1,
+            "fluxed_electrum", 1
         );
     }
 
@@ -3637,17 +3679,17 @@ scripts.helper.addFluidAlloyerRecipe(
             <enderio:item_material:36> * 2,
             <taiga:yrdeen_ingot> * 4,
             <enderio:item_material:18>
-        ], 20000);
+        ], 200000);
         mods.enderio.AlloySmelter.addRecipe(all_metals.crystalline_alloy.ingot * 2, [
             <enderio:item_material:36> * 1,
             <taiga:yrdeen_ingot> * 2,
             <biomesoplenty:crystal_shard> * 64
-        ], 20000);
+        ], 200000);
         mods.enderio.AlloySmelter.addRecipe(all_metals.crystalline_alloy.ingot * 12, [
             <enderio:item_material:36> * 4,
             <taiga:yrdeen_ingot> * 8,
             <contenttweaker:crystal_metal_nugget>
-        ], 20000);
+        ], 200000);
 
 
         mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:4>);
@@ -3655,12 +3697,12 @@ scripts.helper.addFluidAlloyerRecipe(
             <industrialforegoing:pink_slime_ingot> * 16,
             all_metals.crystalline_alloy.ingot,
             <aether_legacy:aercloud:3> * 4
-        ], 20000);
+        ], 200000);
         mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4> * 2, [
             <industrialforegoing:pink_slime_ingot> * 16,
             all_metals.crystalline_alloy.ingot,
             <botania:petal:6> * 48
-        ], 20000);
+        ], 200000);
     }
 
 
@@ -3817,11 +3859,11 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:cursed_gold_ingot> * 4,
 
     mods.enderio.AlloySmelter.addRecipe(<contenttweaker:imperomite_catalyst>, 
         [
-            <contenttweaker:noble_gases_ingot>,
-            <contenttweaker:cursed_gold_ingot>,
-            <taiga:imperomite_ingot>
+            <contenttweaker:noble_gases_ingot> * 24,
+            <contenttweaker:cursed_gold_ingot> * 24,
+            <taiga:imperomite_ingot> * 24
         ],
-        300000
+        5000 * 1000
     );
     mods.enderio.AlloySmelter.addRecipe(<contenttweaker:imperomite_catalyst> * 2, 
         [
@@ -3829,23 +3871,36 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:cursed_gold_ingot> * 4,
             <contenttweaker:imperomite_catalyst_dust>,
             <mekanism:enrichediron>
         ],
-        10000
+        25000
     );
 
 
-    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:imperial_iron_ingot> * 8, 
+    recipes.addShapeless("ia_imperial_dust1", <contenttweaker:imperial_dust1>, [
+        <harvestcraft:starfruitjellyitem>, <contenttweaker:caelumite_dust>, <contenttweaker:algan>, <moretcon:dustpenguinite>, <contenttweaker:arkenium_dust>, <quantumflux:graphitedust>, 
+        <contenttweaker:eliamondin_dust>, <moretcon:dustvalasium>, <taiga:iox_dust>
+    ]);
+    
+    mods.thermalexpansion.Centrifuge.addRecipe(
+        [<contenttweaker:imperial_dust2>, <contenttweaker:imperial_dust3>], <contenttweaker:imperial_dust1>, null, 
+        25000
+    );
+    mods.thermalexpansion.Centrifuge.addRecipe(
+        [<contenttweaker:eliamondin_dust>, <moretcon:dustvalasium>, <taiga:iox_dust>], <contenttweaker:imperial_dust3>, <liquid:unknown> * 100, 
+        25000
+    );
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:imperial_iron_ingot>, 
         [
-            <minecraft:iron_ingot> * 32,
-            <twilightforest:knightmetal_ingot> * 16,
+            <contenttweaker:imperial_dust2> * 2,
+            <twilightforest:knightmetal_ingot> * 8,
             <contenttweaker:imperomite_catalyst>
         ],
-        10000
+        40000
     );
 
     mods.immersiveengineering.BlastFurnace.addRecipe(
         <contenttweaker:imperial_steel_ingot>, <contenttweaker:imperial_iron_ingot>, 
-        20 * 30, 
-        <contenttweaker:soot>
+        20 * 60 * 5, 
+        <contenttweaker:imperomite_catalyst_dust>
     );
     //todo tignalum furnace
 }
@@ -4038,6 +4093,8 @@ add3alloy(3, "ender_ingot", 1,
             ]
         );
     }
+
+    //slate steel in mm recipes
 }
 {//botania
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot>, 
@@ -4363,16 +4420,25 @@ scripts.content_machines.addAdvancedMixerRecipe(
     mods.extendedcrafting.CombinationCrafting.addRecipe(
         <contenttweaker:pandemonium_ingot>, 10240 * 100, 10240 * 5, <contenttweaker:super_alloy_base_ingot>,
         [
-            <extendedcrafting:singularity_custom:41>, 
             <extendedcrafting:singularity_custom:41>,
             <contenttweaker:fiery_singularity>,
             <contenttweaker:crystal_metal_block>,
-            <enderio:block_alloy_endergy:1>,
-            <enderio:block_alloy_endergy:1>,
             <contenttweaker:living_steel_block>,
             <contenttweaker:living_steel_block>,
             <contenttweaker:death_metal_block>,
             <bloodmagic:demon_extras:13>,
+            <contenttweaker:sin_nickel_ingot>
+        ]
+    );
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:pandemonium_ingot> * 3, 10240 * 100, 10240 * 5, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <extendedcrafting:singularity_custom:41>,
+            <contenttweaker:fiery_singularity>,
+            <contenttweaker:crystal_metal_block>,
+            <contenttweaker:living_steel_block>,
+            <contenttweaker:living_steel_block>,
+            <contenttweaker:death_metal_block>,
             <bloodmagic:demon_extras:13>,
             <projecte:matter_block:1>
         ]
@@ -4509,6 +4575,28 @@ recipes.addShaped("ia_neutronium_sheetmetal", <contenttweaker:neutronium_sheetme
         "ebonite", 1,
         "hallowsite", 1,
         "uru", 1
+    );
+
+
+    //valasium
+    mods.tconstruct.Casting.removeBasinRecipe(<moretcon:itemvalasiumsponge>);
+    mods.tconstruct.Casting.addBasinRecipe(<moretcon:itemvalasiumsponge>, <moretcon:itemvalasiumsponge:5>, <liquid:liquidrunesteel>, 144 * 12, true);
+    
+    mods.thermalexpansion.Transposer.addFillRecipe(<moretcon:itemvalasiumsponge:2>, <moretcon:itemvalasiumsponge:1>, <liquid:liquidfusionite> * 288, 8000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<moretcon:itemvalasiumsponge:3>, <moretcon:itemvalasiumsponge:2>, <liquid:gallium> * 576, 8000);
+    mods.tconstruct.Casting.addBasinRecipe(<moretcon:itemvalasiumsponge:3>, <moretcon:itemvalasiumsponge:2>, <liquid:gallium>, 144 * 4, true);
+    mods.thermalexpansion.Transposer.addFillRecipe(<moretcon:itemvalasiumsponge:4>, <moretcon:itemvalasiumsponge:3>, <liquid:liquidgravitonium> * 1296, 8000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<moretcon:itemvalasiumsponge:5>, <moretcon:itemvalasiumsponge:4>, <liquid:cobalt> * (144 * 4 * 9), 8000);
+    mods.thermalexpansion.Transposer.addFillRecipe(<moretcon:itemvalasiumsponge>, <moretcon:itemvalasiumsponge:5>, <liquid:liquidrunesteel> * (144 * 12), 8000);
+
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<moretcon:itemvalasiumsponge:4>], [], 
+        [<moretcon:itemvalasiumsponge:1>], [
+            <liquid:liquidgravitonium> * 1296,
+            <liquid:gallium> * 576,
+            <liquid:liquidfusionite> * 288
+        ], 
+        120, 2000
     );
 }
 

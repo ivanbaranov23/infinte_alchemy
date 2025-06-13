@@ -1961,7 +1961,7 @@ ia.tooltip.m_tier16=Machine Frame Tier 16
 ia.tooltip.m_tier17=The Final Machine Frame
 
 ia.rename.glowstone_ingot=Refined Glowstone Ingot
-ia.rename.glowstone_bloc=Refined Glowstone Block
+ia.rename.glowstone_block=Refined Glowstone Block
 
 ia.rename.fake_mold=Fake Mold
 ia.tooltip.propaganda=Do not believe the Engineer's propaganda,
@@ -2141,3 +2141,16 @@ item.contenttweaker.waste_token.name=Bacteria Waste Research Token
 item.contenttweaker.brooth_token.name=Fermented Bacteria Broth Research Token
 
 item.contenttweaker.axe_token.name=Firewood Broad Axe Head Research Token
+
+entity.Villager.shady_merchant=Shady Merchant
+entity.Villager.alchemist=Alchemist
+entity.Villager.red_mechanic=Red Mechanic
+
+item.contenttweaker.pandemonium_ingot.name=Pandemonium Ingot
+item.contenttweaker.pandemonium_plate.name=Pandemonium Plate
+
+fluid.pilkon_blood=Pilkon Blood
+
+item.contenttweaker.flapper.name=Flapper
+
+fluid.flolit_oil=Flolit Oil

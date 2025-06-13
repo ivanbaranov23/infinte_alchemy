@@ -3,9 +3,47 @@ import mods.alchemistry.Evaporator;
 import mods.thermalexpansion.Centrifuge;
 import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Imbuer;
+import mods.thermalexpansion.Transposer;
 
 
 import mods.modularmachinery.RecipeBuilder;
+
+{//formic acid dup
+    recipes.addShapeless("ia_formic_acid_dust", <contenttweaker:formic_acid_dust> * 2, [
+        <ore:shardProsperity>, <ore:shardProsperity>, <ore:shardProsperity>, <contenttweaker:bauxite_dust>, <ore:dustCharcoal>
+    ]);
+    recipes.addShapeless("ia_formic_acid_dust2", <contenttweaker:formic_acid_dust> * 2, [
+        <ore:shardProsperity>, <harvestcraft:beanitem>, <contenttweaker:bauxite_dust>, <ore:dustCharcoal>
+    ]);
+    recipes.addShapeless("ia_formic_acid_dust3", <contenttweaker:formic_acid_dust>, [
+        <ore:shardProsperity>, <agricraft:agri_nugget:2>, <agricraft:agri_nugget:2>, <contenttweaker:bauxite_dust>, <ore:dustCharcoal>
+    ]);
+    
+    Transposer.addFillRecipe(
+        <contenttweaker:formic_acid_form>,
+        <contenttweaker:formic_acid_dust>, <liquid:formic_acid> * 1000,
+        2000
+    );
+    Crucible.addRecipe(<liquid:formic_acid> * 2500, <contenttweaker:formic_acid_form>, 10000);
+    <contenttweaker:formic_acid_form>.addTooltip("Get yourself a vat!");
+
+    mods.enderio.Vat.addRecipe(
+        <liquid:formic_acid> * 1000, 3.0, <liquid:formic_acid> * 1000, 
+        [<contenttweaker:formic_acid_dust>, <contenttweaker:formic_acid_form>], [1.0, 2.5], 
+        [<agricraft:agri_nugget:2>], [1.0], 
+        25000
+    );
+
+
+
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <mekanism:otherdust>,
+        <contenttweaker:charcoal_ball> * 3, <liquid:formic_acid> * 3000,
+        16000
+    );
+
+}
+
 
 {//polyethylene
     mods.mekanism.reaction.addRecipe(
@@ -685,253 +723,7 @@ import mods.modularmachinery.RecipeBuilder;
         20, 10000
     );
 }
-mods.thermalexpansion.Refinery.addRecipe(<liquid:caffeine> * 200, null, <liquid:coffee> * 400, 8000);
 
-scripts.content_machines.addFluidMixerRecipe(
-    <liquid:aqua_regia> * 1000, 
-    <liquid:nitric_acid> * 500, <liquid:liquidhydrogenchloride> * 500, <exnihilocreatio:item_material:3>, 
-    256, 20
-);
-/*
-{//cursed gold & gold
-
-    mods.enderio.Vat.addRecipe(
-		<liquid:air_gold2> * 1000, 1.5, <liquid:air_gold> * 1000, 
-		[<thermalfoundation:coin:70>, <thermalfoundation:coin:71>, <thermalfoundation:coin:72>], [0.5, 0.75, 1.0], 
-		[<atum:loot_sapphire_broach>, <atum:loot_ruby_broach>, <atum:loot_emerald_broach>, <atum:loot_diamond_broach>], [0.5, 1.0, 1.5, 2.0], 
-		5000
-	);
-	mods.thermalexpansion.Transposer.addFillRecipe(
-		<contenttweaker:cursed_gold_pieces>, 
-		<contenttweaker:gold_crystal>, <liquid:air_gold2> * (400), 
-		3000
-	);
-
-    //cursed -> gold
-    mods.mekanism.compressor.addRecipe(<contenttweaker:cursed_gold_pieces>, <gas:rfna>, <exnihilocreatio:item_ore_gold> * 8);
-    mods.mekanism.reaction.addRecipe(
-        <minecraft:prismarine_crystals>, <liquid:liquidgoldenamber> * 3000, <gas:cleangold> * 200, 
-        null, <gas:gold> * 1500, 900, 60
-    );
-    mods.mekanism.reaction.addRecipe(
-        <mysticalworld:unripe_pearl>, <liquid:liquidgoldenamber> * 3000, <gas:cleangold> * 200, 
-        null, <gas:gold> * 1500, 900, 60
-    );
-    mods.mekanism.reaction.addRecipe(
-        <contenttweaker:cursed_gold_pieces>, <liquid:liquidgoldenamber> * 3000, <gas:rfna> * 200, 
-        <exnihilocreatio:item_ore_gold> * 10, <gas:gold> * 1500, 900, 60
-    );
-
-    //chloroauric
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:chloroauric_acid> * 100, 
-        <minecraft:gold_ingot>, 
-        <liquid:aqua_regia> * 50, 
-        3000
-    );
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:chloroauric_acid> * 500, 
-        <aether_legacy:golden_amber>, 
-        <liquid:aqua_regia> * 300, 
-        5000
-    );
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:chloroauric_acid> * 800, 
-        <mekanism:dirtydust:1>, 
-        <liquid:aqua_regia> * 800, 
-        5000
-    );
-
-    //distilling
-    mods.thermalexpansion.Refinery.addRecipe(
-        <liquid:aqua_regia> * 900, 
-        <contenttweaker:pure_gold_dust> % 40, 
-        <liquid:chloroauric_acid> * 1000, 
-        4000
-    );
-    mods.immersivepetroleum.Distillation.addRecipe(
-        [<liquid:aqua_regia> * 1000], 
-        [<contenttweaker:pure_gold_dust>, <mekanism:dirtydust>, <mekores:mekanismore:253>], 
-        <liquid:chloroauric_acid> * 1000, 
-        20 * 256, 20, 
-        [0.5, 0.15, 0.1]
-    );
-
-
-    //pure -> normal
-    recipes.addShapeless("ia_pure_gold_to_normal", <thermalfoundation:material:1> * 6, [
-        <contenttweaker:pure_gold_dust>, 
-        <thermalfoundation:material>, <thermalfoundation:material>, <thermalfoundation:material>, <thermalfoundation:material>, <thermalfoundation:material>
-    ]);
-    mods.thermalexpansion.InductionSmelter.addRecipe(
-		<minecraft:gold_ingot> * 12, 
-		<contenttweaker:pure_gold_dust>, <contenttweaker:gilded_soot>, 25000
-	);
-
-    //purple gold
-    //todo argon
-    scripts.helper.scripts.content_machines.addFluidAlloyerRecipe(
-        <contenttweaker:unannealed_purple_gold_ingot>, 
-        <contenttweaker:pure_gold_dust> * 3, <thermalfoundation:material:132>, <liquid:noble_gases> * 1000, 
-        512, 40
-    );
-
-    mods.thermalexpansion.Transposer.addFillRecipe(
-        <contenttweaker:purple_gold_ingot>, 
-        <contenttweaker:unannealed_purple_gold_ingot>, <liquid:fire_water> * 4000, 
-        50000
-    );
-}
-{//cincinnasite
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:cincinnasite_slurry> * 250,
-        <betternether:cincinnasite>, <liquid:hf> * 250,
-        3000
-    );
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:cincinnasite_slurry> * 500,
-        <contenttweaker:cincinnasite_dirty_dust>, <liquid:hf> * 250,
-        3000
-    );
-
-    scripts.content_machines.addFluidSieveRecipeRandom(
-        [
-            <contenttweaker:filter_empty>,
-            <mekanism:dirtydust:1> % 30,
-            <contenttweaker:arkenium_dust> % 20,
-            <contenttweaker:rare_earth_dust> % 10
-        ], <liquid:glowstone> * 100,
-        <liquid:cincinnasite_slurry> * 250, <contenttweaker:filter_charcoal>,
-        <exnihilocreatio:item_mesh:4>, 20, 500
-    );
-    scripts.content_machines.addFluidSieveRecipeRandom(
-        [
-            <contenttweaker:filter_empty>,
-            <mekanism:dirtydust:1> % 40,
-            <contenttweaker:arkenium_dust> % 30,
-            <contenttweaker:rare_earth_dust> % 20
-        ], <liquid:glowstone> * 125,
-        <liquid:cincinnasite_slurry> * 250, <contenttweaker:filter_charcoal>,
-        <contenttweaker:uranium_mesh>, 20, 1000
-    );
-
-    scripts.content_machines.addBioAssemblerRecipe(
-        [<betternether:cincinnasite> * 6], null, 
-        [
-            <contenttweaker:pure_gold_dust>,
-            <contenttweaker:arkenium_dust>,
-            <contenttweaker:rare_earth_dust>,
-            <ore:nuggetDiamond> * 3
-            
-        ], [
-            <liquid:mushroom_stew> * 1000,
-            <liquid:glowstone> * 400
-        ], <contenttweaker:research_chemistry3>,
-        20, 1000
-    );
-}
-{//rare earth
-    mods.mekanism.chemical.dissolution.addRecipe(<contenttweaker:rare_earth_dust>, <gas:rare_earth_slurry> * 250);
-    mods.mekanism.chemical.crystallizer.addRecipe(<gas:rare_earth_slurry> * 250, <contenttweaker:rare_earth_dust>);
-
-    //in gas_column
-}
-{//bauxite
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:bauxite_slurry> * 1000,
-        <contenttweaker:bauxite_dust>, <liquid:hf> * 250,
-        3000
-    );
-    mods.thermalexpansion.Refinery.addRecipe(
-        <liquid:bauxite_waste> * 125,
-        <thermalfoundation:material:68> % 80, <liquid:bauxite_slurry> * 250,
-        3000
-    );
-    mods.thermalexpansion.Refinery.addRecipe(
-        <liquid:hf> * 125,
-        null, <liquid:bauxite_waste> * 250,
-        3000
-    );
-
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:bauxite_waste_treated> * 1000,
-        <contenttweaker:ore_catalyst>, <liquid:bauxite_waste> * 1000,
-        8000
-    );
-    scripts.content_machines.addFluidSieveRecipeRandom(
-        [
-            <contenttweaker:filter_empty>,
-            <mekores:mekanismore:33> % 85,
-            <contenttweaker:gallium_dust> % 65
-        ],  <liquid:hf> * 120, 
-        <liquid:bauxite_waste_treated> * 250, <contenttweaker:filter_charcoal>,
-        null,
-        20, 200
-    );
-}
-{//platinum
-    scripts.content_machines.addFluidAlloyerRecipe(
-        <exnihilocreatio:item_ore_platinum>, 
-        <quark:jasper>, <ore:ring>, <liquid:ore_make> * 400, 
-        40, 120
-    );
-    scripts.content_machines.addFluidAlloyerRecipe(
-        <exnihilocreatio:item_ore_platinum> * 2, 
-        <quark:jasper>, <ore:broach>, <liquid:ore_make> * 400, 
-        40, 120
-    );
-    scripts.content_machines.addFluidAlloyerRecipe(
-        <exnihilocreatio:item_ore_platinum> * 3, 
-        <quark:jasper>, <ore:necklace>, <liquid:ore_make> * 400, 
-        40, 120
-    );
-    scripts.content_machines.addFluidAlloyerRecipe(
-        <exnihilocreatio:item_ore_platinum> * 5, 
-        <quark:jasper>, <ore:scepter>, <liquid:ore_make> * 400, 
-        40, 120
-    );
-    scripts.content_machines.addFluidAlloyerRecipe(
-        <exnihilocreatio:item_ore_platinum> * 10, 
-        <quark:jasper>, <ore:idol>, <liquid:ore_make> * 400, 
-        40, 120
-    );
-}
-{//tungsten
-    <contenttweaker:dark_shard>.addTooltip("Source of tungsten");
-    scripts.content_machines.addFluidAlloyerRecipe(
-        <contenttweaker:dark_shard>, 
-        <ore:dyeBlack> * 3, <contenttweaker:zinc_dust> * 2, <liquid:essence_slurp> * 500, 
-        100, 200
-    );
-    scripts.content_machines.addFluidAlloyerRecipe(
-        <contenttweaker:dark_shard>, 
-        <ore:dyeBlack> * 3, <contenttweaker:zinc_dust> * 2, <liquid:oil> * 500, 
-        100, 200
-    );
-
-    mods.thermalexpansion.Crucible.addRecipe(<liquid:blackish_slurp> * 250, <contenttweaker:dark_shard>, 4000);
-    mods.thermalexpansion.Imbuer.addRecipe(<liquid:black_slurp> * 1000, <contenttweaker:coaled_biocoal>, <liquid:blackish_slurp> * 1000, 2000);
-
-    mods.mekanism.compressor.addRecipe(<mekanism:shard>, <gas:black_slurp>, <exnihilocreatio:item_ore_tungsten>);
-    mods.mekanism.compressor.addRecipe(<mekores:mekanismore:11>, <gas:black_slurp>, <exnihilocreatio:item_ore_tungsten>);
-    mods.mekanism.compressor.addRecipe(<mekores:mekanismore:36>, <gas:black_slurp>, <exnihilocreatio:item_ore_tungsten>);
-}
-{//uranium
-    scripts.helper.addFluidAlloyerRecipe(
-        <contenttweaker:irradiated_compound>, 
-        <immersiveengineering:metal:5> * 4, <bigreactors:ingotyellorium> * 2, <liquid:emerald> * 2000, 
-        128, 40
-    );
-    scripts.helper.addFluidAlloyerRecipe(
-        <contenttweaker:irradiated_compound>, 
-        <immersiveengineering:metal:5> * 3, <bigreactors:ingotyellorium>, <liquid:liquidirradium> * 576, 
-        128, 40
-    );
-    mods.thermalexpansion.InductionSmelter.addRecipe(
-		<contenttweaker:banana>, 
-		<contenttweaker:irradiated_compound> * 3, <harvestcraft:bananaitem> * 64, 50000
-	);
-}*/
 
 {//eliamondin
     
@@ -1075,6 +867,30 @@ scripts.content_machines.addFluidMixerRecipe(
 
 }
 {//paper
+    //low quality
+    <ore:logWood>.remove(<harvestcraft:pampaperbark>);
+    recipes.addShapeless("ia_lq_paper_log1", <harvestcraft:pampaperbark>, [
+        <harvestcraft:paperbark_sapling>, <atum:fertile_soil_pile>, 
+
+        <botania:fertilizer>
+    ]);
+    recipes.addShapeless("ia_lq_paper_log2", <harvestcraft:pampaperbark>, [
+        <harvestcraft:paperbark_sapling>, <atum:fertile_soil_pile>, 
+        <industrialforegoing:fertilizer>, <industrialforegoing:fertilizer>, <industrialforegoing:fertilizer>
+    ]);
+    recipes.addShapeless("ia_lq_paper_log3", <harvestcraft:pampaperbark> * 2, [
+        <harvestcraft:paperbark_sapling>, <atum:fertile_soil_pile>, 
+        <industrialforegoing:fertilizer>, <industrialforegoing:fertilizer>, <industrialforegoing:fertilizer>,
+        <botania:fertilizer>
+    ]);
+
+    recipes.addShapeless("ia_lq_paper", <minecraft:paper> * 2, [
+        <harvestcraft:cuttingboarditem>.reuse(),
+        <harvestcraft:pampaperbark>
+    ]);
+    scripts.helper.addSawRecipe(<harvestcraft:pampaperbark>, <minecraft:paper> * 4);
+
+    //high quality
     scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:chad>], [],
         [
@@ -1430,7 +1246,7 @@ scripts.content_machines.addFluidMixerRecipe(
     mods.thermalexpansion.InductionSmelter.addRecipe(
         <contenttweaker:nether_star_dust>, 
         <minecraft:nether_star>, <contenttweaker:nether_star_catalyst>, 
-        100000, 
+        500000, 
         <contenttweaker:nether_star_waste>, 60
     );
 
@@ -1455,7 +1271,7 @@ scripts.content_machines.addFluidMixerRecipe(
     );
 
     {//star polymer
-    scripts.content_machines.addAdvancedMixerRecipe(
+        scripts.content_machines.addAdvancedMixerRecipe(
             [<contenttweaker:star_polymer_base_hot>],
             [],
             [
@@ -1472,7 +1288,7 @@ scripts.content_machines.addFluidMixerRecipe(
             20, 10000
         );
 
-    scripts.content_machines.addAdvancedMixerRecipe(
+        scripts.content_machines.addAdvancedMixerRecipe(
             [<contenttweaker:star_polymer_base>],
             [],
             [
@@ -1544,210 +1360,30 @@ scripts.content_machines.addFluidMixerRecipe(
 			<thermalfoundation:material:1028> * 16
 		]
 	);
-    scripts.helper.scripts.content_machines.addFluidAlloyerRecipe(
+    scripts.content_machines.addFluidAlloyerRecipe(
         <minecraft:nether_star>, 
         <contenttweaker:glass_star>, <thermalfoundation:material:1028> * 16, <liquid:nether_star_solution> * 1000, 
         1024, 100
     );
 
-}
-/*{//nether star
-    {//wither dust
-        recipes.remove(<darkutils:wither_block>);
-        recipes.remove(<darkutils:material>);
-
-        scripts.helper.addSimpleCrushingRecipe(<tconstruct:materials:17>, <darkutils:material>);
-        scripts.helper.addSimpleCrushingRecipe(<bhc:wither_bone>, <darkutils:material>);
-        scripts.helper.addSimpleCrushingRecipe(
-            <openblocks:trophy:37>.withTag({entity_id: "minecraft:wither_skeleton"}), 
-            <darkutils:material> * 24
-        );
-
-        scripts.helper.addSimpleCrushingRecipeWByproduct(
-            <minecraft:skull:1>, 
-            <darkutils:material> * 4,  <darkutils:material>, 
-            50
-        );
-        scripts.helper.addSimpleCrushingRecipeWByproduct(
-            <xreliquary:mob_ingredient:1>,
-            <darkutils:material> * 2, <darkutils:material>,
-            50
-        );
-        
-        mods.thermalexpansion.Compactor.addStorageRecipe(<darkutils:wither_block>, <darkutils:material> * 16, 5000);
-    }
-
-    {//witherite
-        recipes.addShapeless("witherite", <contenttweaker:witherite>, [
-            <enderio:item_material:20>, <enderio:item_material:20>, 
-            <quark:black_ash>, <quark:black_ash>, 
-            <appliedenergistics2:material:45>
-        ]);
-        mods.roots.Chrysopoeia.addRecipe("awaken_witherite", <contenttweaker:witherite>, <contenttweaker:awaken_witherite>);
-        mods.enderio.SoulBinder.addRecipe(
-            <contenttweaker:awaken_witherite>, <contenttweaker:witherite>, 
-            ["minecraft:wither_skeleton"], 10000, 8
-        );
-
-        {//druid circle
-
-        }
-    }
-
-    recipes.addShaped("ia_glass_star", <contenttweaker:glass_star>, [
-        [<contenttweaker:glass_fiber>, <contenttweaker:glass_ingot>, <contenttweaker:glass_fiber>], 
-        [<contenttweaker:glass_ingot>, <bloodmagic:item_demon_crystal>, <contenttweaker:glass_ingot>], 
-        [<contenttweaker:glass_fiber>, <contenttweaker:glass_ingot>, <contenttweaker:glass_fiber>]
+    //shards
+    recipes.removeByRecipeName("mysticalagradditions:nether_star_shards");
+    recipes.addShaped("ia_ns_shard_to_ns", <minecraft:nether_star>, [
+        [null, <mysticalagradditions:stuff>, null],
+        [<mysticalagradditions:stuff>, <contenttweaker:mana_wire>, <mysticalagradditions:stuff>],
+        [null, <mysticalagradditions:stuff>, null]
     ]);
 
+    scripts.helper.addSawRecipeWByproduct(<minecraft:nether_star>, <mysticalagradditions:stuff> * 2, <mysticalagradditions:stuff>, 50);
 
-    {//catalyst
-        recipes.addShapeless("ia_nether_star_catalyst1", <contenttweaker:nether_star_catalyst> * 2, [
-            <contenttweaker:nether_star_dust>, 
-            <contenttweaker:reagent_acid> | <contenttweaker:blood_matter> | <astralsorcery:itemcraftingcomponent:2>, 
-            <darkutils:wither_block> | <contenttweaker:awaken_witherite>, 
-            <quantumflux:graphitedust>, <quantumflux:graphitedust>
-        ]);
-        recipes.addShapeless("ia_nether_star_catalyst2", <contenttweaker:nether_star_catalyst> * 2, [
-            <contenttweaker:research_chemistry1>.reuse(), 
-            <contenttweaker:nether_star_waste>, 
-            <contenttweaker:reagent_acid> | <contenttweaker:blood_matter> | <astralsorcery:itemcraftingcomponent:2>, 
-            <darkutils:wither_block> | <contenttweaker:awaken_witherite>, 
-            <quantumflux:graphitedust>, 
-            <quantumflux:graphitedust>, 
-            <bigreactors:dustcyanite>
-        ]);
-    }
-
-    mods.enderio.SagMill.addRecipe(
-        [<contenttweaker:arkenium_dust> * 4, <contenttweaker:nether_star_dust>], [1.0, 0.3], 
-        <minecraft:nether_star>, "CHANCE_ONLY", 
-        20000
-    );
     mods.thermalexpansion.InductionSmelter.addRecipe(
-        <contenttweaker:nether_star_dust>, 
-        <minecraft:nether_star>, <contenttweaker:nether_star_catalyst>, 
-        100000, 
-        <contenttweaker:nether_star_waste>, 60
+        <mysticalagradditions:stuff>, 
+        <mysticalagradditions:stuff>, <harvestcraft:starfruitjellyitem> * 64, 
+        2000000, 
+        <mysticalagradditions:stuff>, 30
     );
+}
 
-    mods.thermalexpansion.Centrifuge.addRecipe(
-        [(<contenttweaker:arkenium_dust> * 3) % 50, <taiga:astrium_dust> % 50, <astralsorcery:itemcraftingcomponent:2> % 50, <draconicevolution:draconium_dust> % 50], 
-        <contenttweaker:nether_star_waste>, 
-        <liquid:nether_star_solution> * 200, 
-        20000
-    );
-
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:nether_star_solution> * (1000), 
-        <contenttweaker:nether_star_dust>, 
-        <liquid:endacid> * 2000, 
-        8000
-    );
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:nether_star_solution> * (750), 
-        <minecraft:nether_star>, 
-        <liquid:endacid> * 2000, 
-        12000
-    );
-
-    {//star polymer
-    scripts.content_machines.addAdvancedMixerRecipe(
-            [<contenttweaker:star_polymer_base_hot>],
-            [],
-            [
-                <contenttweaker:bouncy_matter_small> * 3,
-                <contenttweaker:chitin> * 4,
-                <botania:manaresource:22> * 8,
-                <biomesoplenty:crystal_shard> * 12
-            ], [
-                <liquid:mana> * 2000,
-                <liquid:rune_acid> * 1000,
-                <liquid:sunnarium> * 500,
-                <liquid:super_heat_lava> * 1000
-            ],
-            20, 10000
-        );
-
-    scripts.content_machines.addAdvancedMixerRecipe(
-            [<contenttweaker:star_polymer_base>],
-            [],
-            [
-                <contenttweaker:star_polymer_base_hot>,
-                <contenttweaker:singularity_dust> * 2,
-                <contenttweaker:flesh_piece> * 4,
-                <contenttweaker:elemental_clay> * 4
-            ], [
-                <liquid:cold_liquid> * 1000
-            ],
-            20, 10000
-        );
-
-        /*
-        scripts.content_machines.addAssemblerRecipe(
-            [<contenttweaker:star_polymer_base> * 12],
-            [
-                <contenttweaker:bouncy_matter>,
-                <contenttweaker:insulation_fabric> * 8,
-                <botania:manaresource:22> * 4,
-                <biomesoplenty:crystal_shard> * 64,
-                <appliedenergistics2:material:6> * 8,
-                <contenttweaker:elastic_clay> * 32
-            ],
-            <liquid:fluorine> * 10000,
-            20 * 10, 1000
-        );
-
-        mods.mekanism.reaction.addRecipe(
-            <contenttweaker:star_polymer_base>, <liquid:vapor_of_levity> * 3000, <gas:nether_star_solution> * 4000, 
-            <contenttweaker:star_polymer>, <gas:nether_star_inert> * 500, 900, 60
-        );
-        mods.mekanism.reaction.addRecipe(
-            <contenttweaker:star_polymer_base>, <liquid:alien_polymer> * 3000, <gas:nether_star_solution> * 3500, 
-            <contenttweaker:star_polymer>, <gas:nether_star_inert> * 500, 900, 60
-        );
-    }
-
-    mods.mekanism.solarneutronactivator.addRecipe(<gas:nether_star_inert> * 2, <gas:nether_star_solution>);
-
-    mods.mekanism.separator.addRecipe(<liquid:nether_star_inert>, 200, <gas:neutron_inert> * 10, <gas:evil>);
-    mods.mekanism.separator.addRecipe(<liquid:nether_star_solution>, 200, <gas:neutron_inert> * 2, <gas:evil>);
-
-    //star -> stuff
-    mods.aether_legacy.Enchanter.registerEnchantment(<minecraft:nether_star>, <astralsorcery:itemcraftingcomponent:1> * 2, 1000);
-    mods.actuallyadditions.AtomicReconstructor.addRecipe(<contenttweaker:arkenium_ingot> * 4, <minecraft:nether_star>, 10000);
-
-    //making
-    recipes.removeByRecipeName("deepmoblearning:living_matter_conversion_21");
-    mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <minecraft:nether_star>, 1024 * 20, <contenttweaker:glass_star>,
-        [
-            <draconicevolution:draconium_ingot>,
-            <draconicevolution:draconium_ingot>,
-            <astralsorcery:itemcraftingcomponent:1>,
-            <astralsorcery:itemcraftingcomponent:1>,
-            <taiga:astrium_ingot>,
-            <taiga:astrium_ingot>,
-            <contenttweaker:arkenium_ingot>,
-            <contenttweaker:arkenium_ingot>,
-            <contenttweaker:arkenium_ingot>,
-            <contenttweaker:arkenium_ingot>
-        ]
-    );
-    mods.enderio.AlloySmelter.addRecipe(<minecraft:nether_star>, 
-		[
-			<contenttweaker:glass_star>,
-			<contenttweaker:nether_star_dust>,
-			<thermalfoundation:material:1028> * 16
-		]
-	);
-    scripts.helper.scripts.content_machines.addFluidAlloyerRecipe(
-        <minecraft:nether_star>, 
-        <contenttweaker:glass_star>, <thermalfoundation:material:1028> * 16, <liquid:nether_star_solution> * 1000, 
-        1024, 100
-    );
-
-}*/
 
 {//indium
     //indium mixture

@@ -1,0 +1,18 @@
+{
+	title: "Microtransactions",
+	x: 3.0d,
+	y: 2.0d,
+	text: [
+		"You can buy 500 GP in the shop.",
+		"It is expensive tho"
+	],
+	dependencies: [
+		"be945a5b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2f880ffd",
+		type: "checkmark",
+		icon: "extrautils2:passivegenerator 1 8"
+	}]
+}

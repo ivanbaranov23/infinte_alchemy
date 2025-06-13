@@ -43,5 +43,11 @@
 				chiseldata: {}
 			}
 		}
+	},
+	{
+		uid: "cf5f81ff",
+		type: "item",
+		item: "ironchest:iron_chest 1 2",
+		count: 2
 	}]
 }

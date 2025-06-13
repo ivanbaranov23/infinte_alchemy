@@ -4020,12 +4020,23 @@ for material in ores {
 
 scripts.helper.addFluidMixerRecipe(
     <liquid:ore_drill> * 2000, 
-    <liquid:petrotheum> * 1000, <liquid:blood> * 100, <contenttweaker:wear_resistant_alloy_dust>, 
+    <liquid:petrotheum> * 500, <liquid:blood> * 100, <contenttweaker:wear_resistant_alloy_dust>, 
     64, 80
 );
 scripts.helper.addFluidMixerRecipe(
+    <liquid:ore_drill> * 2000, 
+    <liquid:petrotheum> * 500, <liquid:honey> * 1000, <contenttweaker:wear_resistant_alloy_dust>, 
+    64, 80
+);
+
+scripts.helper.addFluidMixerRecipe(
     <liquid:ore_make> * 2000, 
-    <liquid:aerotheum> * 1000, <liquid:sulfuricacid> * 100, <contenttweaker:bioslag>, 
+    <liquid:aerotheum> * 500, <liquid:sulfuricacid> * 100, <contenttweaker:bioslag>, 
+    128, 80
+);
+scripts.helper.addFluidMixerRecipe(
+    <liquid:ore_make> * 2000, 
+    <liquid:aerotheum> * 500, <liquid:liquidlithium> * 400, <contenttweaker:bioslag>, 
     128, 80
 );
 
@@ -4047,7 +4058,7 @@ print("[IA] ------------------------------- Ore Adding Uniques! ----------------
 
 ////aluminum
 //bauxite
-furnace.remove(<ore:ingotAluminum>);
+//furnace.remove(<ore:ingotAluminum>);
 
 AEgrinder.addRecipe(<contenttweaker:bauxite_dust>, <immersiveengineering:ore:1>, 4, <contenttweaker:bauxite_dust>, 0.75);
 mods.thermalexpansion.Transposer.addFillRecipe(
@@ -4058,14 +4069,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
 
 //zinc
-<ore:dustZinc>.remove(<exnihilocreatio:item_ore_zinc:2>);
-<ore:dustZinc>.add(<contenttweaker:zinc_dust>);
-<ore:ingotZinc>.remove(<exnihilocreatio:item_ore_zinc:3>);
-<ore:ingotZinc>.add(<contenttweaker:zinc_ingot>);
 
-furnace.remove(<exnihilocreatio:item_ore_zinc:3>);
-recipes.remove(<exnihilocreatio:item_ore_zinc:3>);
-recipes.remove(<exnihilocreatio:item_ore_zinc:2>);
 /*
 <exnihilocreatio:item_ore_zinc:2>.addTooltip("This item is replaced. Put in crafting table to change to correct version.");
 recipes.addShapeless("ia_zinc_fix1", <contenttweaker:zinc_dust>, [<exnihilocreatio:item_ore_zinc:2>]);

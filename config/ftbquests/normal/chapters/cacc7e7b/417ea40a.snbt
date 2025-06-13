@@ -1,0 +1,44 @@
+{
+	title: "Mesh Fortune and Efficiency",
+	icon: "excompressum:auto_sieve",
+	x: 2.5d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "f9ec6aa1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "3884ec9c",
+		type: "item",
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 10s,
+					id: 40
+				}]
+			}
+		}
+	},
+	{
+		uid: "ea7d6ccb",
+		type: "item",
+		item: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 25s,
+					id: 39
+				}]
+			}
+		}
+	}]
+}

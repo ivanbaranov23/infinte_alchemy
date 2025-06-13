@@ -1,0 +1,25 @@
+{
+	title: "To sieve or to sift?",
+	x: 14.0d,
+	y: 3.0d,
+	text: [
+		"Large sifter does 16 items at a time and gives 20% bonus to outputs. But it doesn't work with sieve enchantments.",
+		"",
+		"Autosieve does work enchanments. You can buy sieve fortune in the shop.",
+		"",
+		"The choice is yours"
+	],
+	tasks: [{
+		uid: "0315be0a",
+		type: "checkmark",
+		icon: {
+			id: "minecraft:enchanted_book",
+			tag: {
+				StoredEnchantments: [{
+					lvl: 3s,
+					id: 40
+				}]
+			}
+		}
+	}]
+}

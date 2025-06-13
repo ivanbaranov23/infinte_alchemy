@@ -1,0 +1,42 @@
+{
+	title: "TE Machines Augments",
+	icon: "thermalfoundation:upgrade 1 35",
+	x: -0.5d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "53e71610",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "811e6b03",
+		type: "item",
+		item: "thermalfoundation:upgrade 1 35",
+		count: 4
+	},
+	{
+		uid: "00a6b658",
+		type: "item",
+		item: "thermalexpansion:augment 1 128",
+		count: 20
+	},
+	{
+		uid: "092373be",
+		type: "item",
+		item: "thermalexpansion:augment 1 129",
+		count: 8
+	},
+	{
+		uid: "7d2cfd45",
+		type: "item",
+		item: "thermalexpansion:augment 1 448",
+		count: 4
+	}]
+}

@@ -189,8 +189,7 @@ static singularity_tiers as IItemStack[][] = [
 	[//0
 		<extendedcrafting:singularity_custom:1>,
 		<extendedcrafting:singularity_custom:2>,
-		<extendedcrafting:singularity_custom:3>,
-		<extendedcrafting:singularity_custom:100>
+		<extendedcrafting:singularity_custom:3>
 	],[//1
 		<extendedcrafting:singularity>,
 		<extendedcrafting:singularity:1>,
@@ -307,7 +306,7 @@ for tier,arr in singularity_tiers{
 	}
 	
 }
-
+recipes.addShapeless("ia_singulr_wooden", singularity_dust, [<extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>]);
 
 
 //recipes

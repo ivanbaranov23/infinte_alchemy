@@ -1,8 +1,8 @@
 {
 	title: "Free Power",
 	icon: "solarflux:solar_panel_6",
-	x: -0.5d,
-	y: 5.0d,
+	x: -1.5d,
+	y: 1.0d,
 	tasks: [{
 		uid: "0dabd964",
 		type: "item",

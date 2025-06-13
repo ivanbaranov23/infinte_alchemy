@@ -1,0 +1,17 @@
+{
+	title: "Microtransactions",
+	x: -5.0d,
+	y: 2.0d,
+	text: [
+		"You can buy kits and augments in the shop"
+	],
+	dependencies: [
+		"1c3613ba"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c3cf3392",
+		type: "checkmark",
+		icon: "thermalfoundation:upgrade 1 35"
+	}]
+}

@@ -148,7 +148,16 @@ function addAtomicResource(name as string){
     iron_sand.register();
 
     //iron
-    VanillaFactory.createItem("iron_apple").register();
+    var iron_apple = VanillaFactory.createItemFood("iron_apple", 6);
+        iron_apple.alwaysEdible = true;
+        iron_apple.onItemFoodEaten = function(stack, world, player) {
+            if (!world.isRemote())
+                if (player) {
+                    player.addPotionEffect(<potion:minecraft:resistance>.makePotionEffect(20 * 15, 1));
+                }
+        };
+
+    iron_apple.register();
     VanillaFactory.createBlock("poor_iron_ore", <blockmaterial:rock>).register();
 
     //copper
@@ -517,11 +526,15 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("methyst_dirty_dust").register();
     VanillaFactory.createItem("methyst_dust").register();
 
+    VanillaFactory.createItem("imperial_dust1").register();
+    VanillaFactory.createItem("imperial_dust2").register();
+    VanillaFactory.createItem("imperial_dust3").register();
     VanillaFactory.createItem("imperial_iron_ingot").register();
     VanillaFactory.createItem("imperial_steel_ingot").register();
     VanillaFactory.createItem("imperial_steel_plate").register();
     VanillaFactory.createItem("imperial_steel_gear").register();
     VanillaFactory.createBlock("imperial_steel_block", <blockmaterial:rock>).register();
+    addWater("unknown");
 
     VanillaFactory.createBlock("neodymium_ore", <blockmaterial:rock>).register();
     VanillaFactory.createItem("neodymium_pieces").register();
@@ -1994,6 +2007,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("weak_enhancer").register();
 
     registerMoltenMetal("andesite", Color.fromHex("53534c"));
+
+    VanillaFactory.createItem("flapper").register();
 }
 {//roots
     VanillaFactory.createItem("burn_powder").register();
@@ -2200,6 +2215,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("flolit_sheet").register();
 
     VanillaFactory.createFluid("flolit_water", Color.fromHex("d7aaed")).register();
+    VanillaFactory.createFluid("flolit_oil", Color.fromHex("9a66b3")).register();
 
     var malachite_glue = VanillaFactory.createFluid("malachite_glue", Color.fromHex("4f7f50"));
     malachite_glue.material = <blockmaterial:water>;
@@ -3005,6 +3021,8 @@ VanillaFactory.createItem("research_sieving").register();
 
 VanillaFactory.createItem("glow_bucket").register();
 VanillaFactory.createItem("research_flight1").register();
+
+VanillaFactory.createItem("research_logistic").register();
 
 VanillaFactory.createItem("research_chemistry1").register();
 VanillaFactory.createItem("polymer_bucket").register();

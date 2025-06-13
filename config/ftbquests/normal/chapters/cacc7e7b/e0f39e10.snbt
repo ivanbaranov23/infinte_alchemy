@@ -9,7 +9,7 @@
 		items: [{
 			item: "contenttweaker:quest_coin"
 		}],
-		count: 3L,
+		count: 2L,
 		consume_items: true
 	}],
 	rewards: [{

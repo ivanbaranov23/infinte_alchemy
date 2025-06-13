@@ -50,11 +50,16 @@ FITweaker.addRecipe(<blockstate:minecraft:cobblestone>, <liquid:ash_solution>,
 FITweaker.addRecipe(<liquid:lava>, <liquid:andesite>, <blockstate:minecraft:stone:variant=granite>);
 
 
+//aether
+FITweaker.addRecipe(<liquid:dirt>, <liquid:liquidgoldenamber>, <blockstate:aether_legacy:aether_dirt>);
+
+
 {//research
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:liquifiedsouls>, <blockstate:netherendingores:ore_other_1:blocks=overworld_quartz_ore>);
 
     FITweaker.addRecipe(<liquid:organic_cg>, <liquid:andesite>, <blockstate:minecraft:mossy_cobblestone>);
     FITweaker.addRecipe(<liquid:organic_cg>, <liquid:formic_acid>, <blockstate:erebus:petrified_bark_red:axis=y>);
+
 
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:pure_water>, <blockstate:contenttweaker:poor_iron_ore>);
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:sand>, <blockstate:atum:sand>);
@@ -62,6 +67,9 @@ FITweaker.addRecipe(<liquid:lava>, <liquid:andesite>, <blockstate:minecraft:ston
     
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:pyrotheum>, <blockstate:quark:biome_cobblestone:variant=fire_stone>);
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:cryotheum>, <blockstate:quark:biome_cobblestone:variant=icy_stone>);
+    
+    FITweaker.addRecipe(<liquid:residue_cg>, <liquid:liquidgoldenamber>, <blockstate:aether_legacy:holystone:aether_legacy_double_drops=false,dungeon_block=false>);
+
 
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:malachite_glue>, <blockstate:erebus:umberstone:type=umberstone>);
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:stone>, <blockstate:tconstruct:soil:type=grout>);
@@ -69,6 +77,8 @@ FITweaker.addRecipe(<liquid:lava>, <liquid:andesite>, <blockstate:minecraft:ston
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:sea_water>, <blockstate:biomesoplenty:dirt:coarse=false,variant=silty>);
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:sand>, <blockstate:biomesoplenty:dirt:coarse=false,variant=sandy>);
     //FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:sand>, <blockstate:tconstruct:dried_clay:type=clay>);
+
+    
 }
 
 {//jei
@@ -114,44 +124,4 @@ FBTweaker.addRecipe(<liquid:malachite_glue>, FBTweaker.outputBuilder()
     
 );
 
-FBTweaker.addRecipe(<liquid:sand>, FBTweaker.outputBuilder()
-    
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:minecraft:zombie>, <entity:atum:mummy>
-    ).addCondition(BCondition.byChance, [0.1f]))
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:minecraft:zombie>, <entity:atum:wraith>
-    ).addCondition(BCondition.byChance, [0.1f]))
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:minecraft:zombie>, <entity:atum:forsaken>
-    ).addCondition(BCondition.byChance, [0.1f]))
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:minecraft:zombie>, <entity:minecraft:husk>
-    ).addCondition(BCondition.byChance, [0.1f]))
-    
-);
-
-FBTweaker.addRecipe(<liquid:fiery_essence>, FBTweaker.outputBuilder()
-    
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:minecraft:spider>, <entity:twilightforest:tower_termite>
-    ).addCondition(BCondition.byChance, [0.1f]))
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:minecraft:cave_spider>, <entity:twilightforest:tower_termite>
-    ).addCondition(BCondition.byChance, [0.1f]))
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:primitivemobs:baby_spider>, <entity:twilightforest:tower_termite>
-    ).addCondition(BCondition.byChance, [0.1f]))
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:primitivemobs:mother_spider>, <entity:twilightforest:tower_termite>
-    ).addCondition(BCondition.byChance, [0.1f]))
-
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:minecraft:spider>, <entity:twilightforest:king_spider>
-    ).addCondition(BCondition.byChance, [0.05f]))
-    .addEvent(FBTweaker.eventBuilder().createEntityConversionEvent(
-        <entity:primitivemobs:mother_spider>, <entity:twilightforest:king_spider>
-    ).addCondition(BCondition.byChance, [0.05f]))
-    
-);
 //FBTweaker.eventBuilder().createEntityConversionEvent();

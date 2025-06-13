@@ -1,6 +1,10 @@
 {
 	x: 11.5d,
 	y: -2.0d,
+	text: [
+		"Input primordium and an input item. Reshaper will turn said item into one of the outputs at random at the cost of primordium.",
+		"Like all PT machines, reshaper can be sped up with hotter air."
+	],
 	dependencies: [
 		"e062efd0"
 	],

@@ -10,9 +10,5 @@
   "minecraft:stone:5": {
     "fluid": "andesite",
     "amount": 250
-  },
-  "minecraft:magma:0": {
-    "fluid": "magma_fluid",
-    "amount": 100
   }
 }

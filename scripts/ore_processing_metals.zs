@@ -1,15 +1,40 @@
 import mods.enderio.SagMill;
 
+{//iron
+    mods.tconstruct.Melting.addRecipe(<liquid:iron> * 288, <minecraft:iron_ore>, 700);
+
+    mods.botania.PureDaisy.addRecipe(<contenttweaker:poor_iron_ore>, <minecraft:iron_ore>);
+}
 {//copper
-    
+    mods.tconstruct.Melting.addRecipe(<liquid:copper> * 288, <thermalfoundation:ore>, 700);
 
     recipes.addShapeless("copper_conv", <thermalfoundation:ore>, [
         <immersiveengineering:ore> | <mekanism:oreblock:1>
     ]);
 }
+{//tin
+    mods.tconstruct.Melting.addRecipe(<liquid:tin> * 288, <thermalfoundation:ore:1>, 700);
+}
+{//nickel
+    mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 288, <thermalfoundation:ore:5>, 700);
+}
 {//aluminum
+    mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <thermalfoundation:ore:4>, 700);
+
     furnace.remove(<erebus:materials:42>);
-    
+    furnace.addRecipe(<thermalfoundation:material:196> * 2, <contenttweaker:bauxite_dust>);
+}
+{//zinc
+    mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 288, <contenttweaker:zinc_ore>, 700);
+
+    <ore:dustZinc>.remove(<exnihilocreatio:item_ore_zinc:2>);
+    <ore:dustZinc>.add(<contenttweaker:zinc_dust>);
+    <ore:ingotZinc>.remove(<exnihilocreatio:item_ore_zinc:3>);
+    <ore:ingotZinc>.add(<contenttweaker:zinc_ingot>);
+
+    furnace.remove(<exnihilocreatio:item_ore_zinc:3>);
+    recipes.remove(<exnihilocreatio:item_ore_zinc:3>);
+    recipes.remove(<exnihilocreatio:item_ore_zinc:2>);
 }
 
 {//ardite

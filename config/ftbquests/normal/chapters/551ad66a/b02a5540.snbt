@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	dependencies: [
+		"e31d4a5a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ac0f2141",
+		type: "checkmark",
+		title: "Blaze blood",
+		icon: {
+			id: "thermalexpansion:florb",
+			Damage: 1s,
+			tag: {
+				Fluid: "blazing_blood"
+			}
+		}
+	}]
+}

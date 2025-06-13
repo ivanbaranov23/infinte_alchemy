@@ -176,7 +176,7 @@ function BloodAltar_addRecipe(output as IItemStack, input as IItemStack, minimum
 	BloodAltar_addRecipe(<contenttweaker:slate_8>, <contenttweaker:slate_7>, 5, 200*1000, 3000, 5);
 	BloodAltar_addRecipe(<contenttweaker:slate_9>, <contenttweaker:slate_8>, 5, 500*1000, 7500, 5);
 
-	BloodAltar_addRecipe(<contenttweaker:slate_10>, <contenttweaker:slate_9>, 5, 1500*1000, 10000, 5);
+	BloodAltar_addRecipe(<contenttweaker:slate_10>, <contenttweaker:slate_9>, 5, 3000*1000, 10000, 5);
 
 	BloodAltar_addRecipe(<contenttweaker:blood_spike>, <contenttweaker:black_bronze_rod>, 2, 2500, 25, 5);
 
@@ -702,7 +702,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	//blood lamp
 	TartaricForge.removeRecipe([<ore:glowstone>.firstItem, <minecraft:torch>, <minecraft:redstone>, <minecraft:redstone>]);
 	TartaricForge.addRecipe(<bloodmagic:component:11>, [
-		<natura:soups:7>, <minecraft:redstone_lamp>, <mekanism:basicblock:4>, <integrateddynamics:menril_torch>
+		<natura:glowshroom_stew>, <minecraft:redstone_lamp>, <mekanism:basicblock:4>, <integrateddynamics:menril_torch>
 	], 320, 8);
 }
 {

@@ -8,7 +8,7 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "engineersdecor:thick_steel_pole@0"
+                "engineersdecor:thick_steel_pole"
             ]
         },
         {
@@ -16,7 +16,7 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "engineersdecor:thick_steel_pole@0"
+                "engineersdecor:thick_steel_pole"
             ]
         },
         {
@@ -24,7 +24,7 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "engineersdecor:thick_steel_pole@0"
+                "engineersdecor:thick_steel_pole"
             ]
         },
         {
@@ -32,7 +32,7 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "engineersdecor:thick_steel_pole@0"
+                "engineersdecor:thick_steel_pole"
             ]
         },
 

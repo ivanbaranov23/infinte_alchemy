@@ -5,7 +5,8 @@
 		"Can be made more efficiently with dilithium."
 	],
 	dependencies: [
-		"b1fd723f"
+		"b1fd723f",
+		"e09b89f1"
 	],
 	optional: true,
 	tasks: [{

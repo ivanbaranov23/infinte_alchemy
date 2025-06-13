@@ -1,0 +1,23 @@
+{
+	x: 5.5d,
+	y: 3.0d,
+	text: [
+		"A travelling merchant can spawn and can buy crops and whatnot from you. You can give him an emerald block to make him stay, otherwise he will eventually leave"
+	],
+	dependencies: [
+		"778e9042"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fcc374a3",
+		type: "item",
+		items: [{
+			item: "minecraft:emerald"
+		}]
+	}],
+	rewards: [{
+		uid: "ef006f78",
+		type: "item",
+		item: "minecraft:emerald_block"
+	}]
+}

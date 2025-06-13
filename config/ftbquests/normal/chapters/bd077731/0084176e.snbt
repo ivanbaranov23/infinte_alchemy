@@ -1,0 +1,25 @@
+{
+	title: "IO",
+	x: 4.5d,
+	y: -2.0d,
+	text: [
+		"Exports and imports items. Self explanatory tbh"
+	],
+	dependencies: [
+		"a271d997"
+	],
+	tasks: [{
+		uid: "687c5cfc",
+		type: "item",
+		items: [{
+			item: "storagenetwork:ex_kabel"
+		}]
+	},
+	{
+		uid: "593318aa",
+		type: "item",
+		items: [{
+			item: "storagenetwork:im_kabel"
+		}]
+	}]
+}

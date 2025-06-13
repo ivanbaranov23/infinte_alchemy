@@ -1,0 +1,53 @@
+{
+	title: "Electrodes",
+	icon: {
+		id: "immersiveengineering:graphite_electrode",
+		tag: {
+			Unbreakable: 1
+		}
+	},
+	x: 2.5d,
+	y: 1.0d,
+	text: [
+		"Unbreakable electrodes for an arc furnace"
+	],
+	tasks: [{
+		uid: "5af8211f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "da9faca2",
+		type: "item",
+		item: {
+			id: "immersiveengineering:graphite_electrode",
+			tag: {
+				Unbreakable: 1
+			}
+		}
+	},
+	{
+		uid: "d5074102",
+		type: "item",
+		item: {
+			id: "immersiveengineering:graphite_electrode",
+			tag: {
+				Unbreakable: 1
+			}
+		}
+	},
+	{
+		uid: "ccde3c62",
+		type: "item",
+		item: {
+			id: "immersiveengineering:graphite_electrode",
+			tag: {
+				Unbreakable: 1
+			}
+		}
+	}]
+}

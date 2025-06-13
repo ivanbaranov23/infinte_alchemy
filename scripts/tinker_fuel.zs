@@ -1,12 +1,14 @@
 import crafttweaker.liquid.ILiquidStack;
+//why is it separate?
+
 
 <liquid:andesite_magma>.definition.temperature = 2200;
 mods.tconstruct.Fuel.registerFuel(<liquid:andesite_magma> * 50, 20 * 20);
-<liquid:high_heat_lava>.definition.temperature = 3300;
+<liquid:high_heat_lava>.definition.temperature = 6300;
 mods.tconstruct.Fuel.registerFuel(<liquid:high_heat_lava> * 50, 20 * 80);
-<liquid:super_heat_lava>.definition.temperature = 5300;
+<liquid:super_heat_lava>.definition.temperature = 20300;
 mods.tconstruct.Fuel.registerFuel(<liquid:super_heat_lava> * 50, 20 * 100);
-<liquid:fire>.definition.temperature = 60000;
+<liquid:fire>.definition.temperature = 300300;
 mods.tconstruct.Fuel.registerFuel(<liquid:fire> * 50, 20 * 10);
 
 <liquid:obsidian>.definition.temperature = 1500;
@@ -29,6 +31,8 @@ addJEIhint_fluid_smeltery_temperature(<liquid:fire_water>, 1700);
 addJEIhint_fluid_smeltery_temperature(<liquid:magma_fluid>, 1700);
 addJEIhint_fluid_smeltery_temperature(<liquid:dilithium_fluid>, 1200);
 addJEIhint_fluid_smeltery_temperature(<liquid:nitronite_fluid>, 2800);
+addJEIhint_fluid_smeltery_temperature(<liquid:obsidian>, 2800);
+addJEIhint_fluid_smeltery_temperature(<liquid:blazing_blood>, 2800);
 
 addJEIhint_fluid_smeltery_temperature(<liquid:andesite_magma>, 1900);
 addJEIhint_fluid_smeltery_temperature(<liquid:high_heat_lava>, 3000);

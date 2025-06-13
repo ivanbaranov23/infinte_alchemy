@@ -1,0 +1,19 @@
+{
+	x: 5.0d,
+	y: 3.0d,
+	text: [
+		"You can buy tier installers in the shop"
+	],
+	dependencies: [
+		"433f5c18"
+	],
+	optional: true,
+	tasks: [{
+		uid: "34d21bf5",
+		type: "item",
+		items: [{
+			item: "mekanism:tierinstaller"
+		}],
+		ignore_nbt: 1b
+	}]
+}

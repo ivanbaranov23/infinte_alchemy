@@ -1,6 +1,6 @@
 import mods.extrautils2.Resonator;
 
-
+import scripts.recycler.addRecycle;
 
 {//polished stone
 	recipes.remove(<extrautils2:decorativesolid:2>);
@@ -69,7 +69,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 	recipes.addShaped("ia_grocket", <extrautils2:grocket>, [
 		[null, <extrautils2:pipe>, null], 
 		[<minecraft:stone_slab>, <extrautils2:pipe>, <minecraft:stone_slab>], 
-		[<minecraft:stone_slab>, <minecraft:chest>, <minecraft:stone_slab>]
+		[<minecraft:stone_slab>, <ore:chest>, <minecraft:stone_slab>]
 	]);
 
 	recipes.remove(<extrautils2:grocket:2>);
@@ -107,8 +107,10 @@ recipes.addShaped("ia_resonator", <extrautils2:resonator>, [
 
 Resonator.add(<enderio:item_alloy_ingot>, <thermalfoundation:material:160>, 1600);
 Resonator.add(<enderio:item_material:32>, <moreplates:osmium_plate>, 1600);
-Resonator.add(<projectred-core:resource_item:105>, <moreplates:cobalt_plate>, 1600);
+Resonator.add(<projectred-core:resource_item:105>, <tconstruct:metal>, 2000);
+Resonator.add(<extrautils2:ingredients>, <erebus:materials:11>, 800);
 mods.extrautils2.Crusher.add(<minecraft:prismarine_crystals>, <minecraft:prismarine_shard>);
+
 
 
 {/////////////////////////////////////machines
@@ -118,6 +120,11 @@ mods.extrautils2.Crusher.add(<minecraft:prismarine_crystals>, <minecraft:prismar
 		[<minecraft:experience_bottle>, <extrautils2:machine>, <minecraft:experience_bottle>], 
 		[<extrautils2:decorativesolid:3>, <ore:gearDemonicMetal>, <extrautils2:decorativesolid:3>]
 	]);
+	addRecycle(<extrautils2:machine>.withTag({Type: "extrautils2:enchanter"}), [
+		<extrautils2:machine>,
+		<extrautils2:suncrystal:250>, <extrautils2:ingredients:11> * 8,
+		<extrautils2:decorativesolid:3> * 4
+	]);
 
 	//analog crafter
 	recipes.remove(<extrautils2:analogcrafter>);
@@ -126,11 +133,21 @@ mods.extrautils2.Crusher.add(<minecraft:prismarine_crystals>, <minecraft:prismar
 		[<extrautils2:decorativesolidwood>, <extrautils2:machine>, <extrautils2:decorativesolidwood>], 
 		[<extrautils2:decorativesolidwood>, <ore:blockQuartzBlack>, <extrautils2:decorativesolidwood>]
 	]);
+	addRecycle(<extrautils2:analogcrafter>, [
+		<extrautils2:machine>,
+		<avaritia:compressed_crafting_table>, <actuallyadditions:block_misc:2>, <extrautils2:decorativesolidwood> * 6
+	]);
+
+	//crafter
 	recipes.remove(<extrautils2:crafter>);
 	recipes.addShaped("ia_best_crafter", <extrautils2:crafter>, [
 		[<prodigytech:zorra_log>, <ore:gearIronwood>, <prodigytech:zorra_log>], 
 		[<contenttweaker:basic_neuron>, <avaritia:double_compressed_crafting_table>, <contenttweaker:basic_neuron>], 
 		[<prodigytech:zorra_log>, <ore:gearIronwood>, <prodigytech:zorra_log>]
+	]);
+	addRecycle(<extrautils2:crafter>, [
+		<avaritia:double_compressed_crafting_table>, <contenttweaker:basic_neuron> * 2,
+		<twilightforest:ironwood_ingot> * 16
 	]);
 
 	//el furnace
@@ -138,6 +155,11 @@ mods.extrautils2.Crusher.add(<minecraft:prismarine_crystals>, <minecraft:prismar
 		[<extrautils2:decorativesolid:3>, <morefurnaces:furnaceblock>, <extrautils2:decorativesolid:3>], 
 		[<contenttweaker:angel_rod>, <extrautils2:machine>, <contenttweaker:angel_rod>], 
 		[<extrautils2:decorativesolid:3>, <ore:gearDemonicMetal>, <extrautils2:decorativesolid:3>]
+	]);
+	addRecycle(<extrautils2:machine>.withTag({Type: "extrautils2:furnace"}), [
+		<extrautils2:machine>,
+		<morefurnaces:furnaceblock>, <extrautils2:ingredients:11> * 8,
+		<extrautils2:decorativesolid:3> * 4, <contenttweaker:angel_ingot> * 6
 	]);
 
 	
@@ -148,6 +170,11 @@ mods.extrautils2.Crusher.add(<minecraft:prismarine_crystals>, <minecraft:prismar
 		[<extrautils2:decorativesolid:3>, <appliedenergistics2:grindstone>, <extrautils2:decorativesolid:3>], 
 		[<ore:gearFerramic>, <extrautils2:machine>, <ore:gearFerramic>], 
 		[<extrautils2:decorativesolid:3>, <ore:gearDemonicMetal>, <extrautils2:decorativesolid:3>]
+	]);
+	addRecycle(<extrautils2:machine>.withTag({Type: "extrautils2:crusher"}), [
+		<extrautils2:machine>,
+		<appliedenergistics2:grindstone>, <extrautils2:ingredients:11> * 8,
+		<extrautils2:decorativesolid:3> * 4, <prodigytech:ferramic_ingot> * 16
 	]);
 }
 
@@ -291,7 +318,7 @@ recipes.addShaped("ia_eu_speed_upgrade1", <extrautils2:ingredients:6>, [
 
 recipes.remove(<extrautils2:ingredients:8>);
 recipes.addShaped("ia_eu_mining_upgrade", <extrautils2:ingredients:8>, [
-	[null, <contenttweaker:zinc_gear>, null], 
+	[<contenttweaker:zinc_gear>, <projectred-expansion:machine2>, <contenttweaker:zinc_gear>], 
 	[<extrautils2:grocket:2>, <ore:xuUpgradeBlank> | <extendedcrafting:singularity_custom:1>, <extrautils2:grocket>], 
 	[null, <ore:gearNickel>, null]
 ]);
@@ -311,6 +338,10 @@ recipes.addShaped("ia_eu2_user", <extrautils2:user>, [
 	[<moreplates:evil_infused_iron_plate>, <contenttweaker:awaken_uru_gear>, <moreplates:evil_infused_iron_plate>], 
 	[<projectred-core:resource_item:401>, <actuallyadditions:block_misc:9>, <projectred-core:resource_item:401>], 
 	[<moreplates:evil_infused_iron_plate>, <contenttweaker:gearbox_funky>, <moreplates:evil_infused_iron_plate>]
+]);
+addRecycle(<extrautils2:user>, [
+	<actuallyadditions:block_misc:9>, <contenttweaker:gearbox_funky>, <projectred-core:resource_item:401> * 2,
+	<contenttweaker:awaken_uru_ingot> * 8, <extrautils2:ingredients:17> * 16
 ]);
 
 //deep dark
@@ -334,3 +365,25 @@ mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:teleporter:1>,
 		<extendedcrafting:singularity_custom:18>, <extendedcrafting:singularity_custom:19>, <extendedcrafting:singularity_custom:20>, <extendedcrafting:singularity_custom:21>, <extendedcrafting:singularity_custom:22>, <extendedcrafting:singularity_custom:23>, <extendedcrafting:singularity_custom:24>
 	]
 );
+
+
+
+
+//ring
+recipes.remove(<extrautils2:chickenring:1>);
+recipes.addShaped("ia_squid_ring", <extrautils2:chickenring:1>, [
+	[<moreplates:lead_stick>, <xreliquary:mob_ingredient:12>, <moreplates:lead_stick>],
+	[<contenttweaker:flapper>, <extrautils2:chickenring>, <contenttweaker:flapper>],
+	[<moreplates:lead_stick>, <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}}), <moreplates:lead_stick>]
+]);
+
+
+
+recipes.remove(<extrautils2:angelring:*>);
+mods.chisel.Carving.addGroup("angel_ring");
+mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring>);
+mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:1>);
+mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:2>);
+mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:3>);
+mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:4>);
+mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:5>);

@@ -1,0 +1,44 @@
+{
+	title: "TE Dynamo Augments",
+	icon: {
+		id: "thermalexpansion:dynamo",
+		tag: {
+			Facing: 1b,
+			RSControl: 0b,
+			Energy: 0,
+			Level: 0b
+		}
+	},
+	x: -0.5d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "b518f047",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "434ecf9b",
+		type: "item",
+		item: "thermalfoundation:upgrade 1 35",
+		count: 4
+	},
+	{
+		uid: "06c6f2e4",
+		type: "item",
+		item: "thermalexpansion:augment 1 512",
+		count: 40
+	},
+	{
+		uid: "0f8fff38",
+		type: "item",
+		item: "thermalexpansion:augment 1 513",
+		count: 24
+	}]
+}

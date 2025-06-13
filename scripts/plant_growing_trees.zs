@@ -32,30 +32,30 @@ function addIBTrecipe(inputs as IItemStack[], outputs as WeightedItemStack[], ca
 
 //vanilla
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:log> * 24, (<minecraft:apple> * 6) % 75, (<minecraft:sapling> * 8) % 0], [<minecraft:sapling>], 10, 128
+    [<minecraft:log> * 64, (<minecraft:apple> * 6) % 75, (<minecraft:sapling> * 8) % 0], [<minecraft:sapling>], 2, 500
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:log:1> * 24, (<minecraft:sapling:1> * 8) % 0], [<minecraft:sapling:1>], 10, 128
+    [<minecraft:log:1> * 64, (<minecraft:sapling:1> * 8) % 0], [<minecraft:sapling:1>], 2, 500
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:log:2> * 24, (<minecraft:sapling:2> * 8) % 0], [<minecraft:sapling:2>], 10, 128
+    [<minecraft:log:2> * 64, (<minecraft:sapling:2> * 8) % 0], [<minecraft:sapling:2>], 2, 500
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:log:3> * 24, (<minecraft:sapling:3> * 8) % 0], [<minecraft:sapling:3>], 10, 128
+    [<minecraft:log:3> * 64, (<minecraft:sapling:3> * 8) % 0], [<minecraft:sapling:3>], 2, 500
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:log2> * 24, (<minecraft:sapling:4> * 8) % 0], [<minecraft:sapling:4>], 10, 128
+    [<minecraft:log2> * 64, (<minecraft:sapling:4> * 8) % 0], [<minecraft:sapling:4>], 2, 500
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:log2:1> * 24, (<minecraft:sapling:5> * 8) % 0], [<minecraft:sapling:5>], 10, 128
+    [<minecraft:log2:1> * 64, (<minecraft:sapling:5> * 8) % 0], [<minecraft:sapling:5>], 2, 500
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:brown_mushroom> * 12, (<minecraft:brown_mushroom_block> * 8) % 0], 
-    [<minecraft:brown_mushroom>, <contenttweaker:research_mushroom1>], 10, 128
+    [<minecraft:brown_mushroom> * 32, (<minecraft:brown_mushroom_block> * 8) % 0], 
+    [<minecraft:brown_mushroom>, <contenttweaker:research_mushroom1>], 2, 500
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:red_mushroom> * 12, (<minecraft:red_mushroom_block> * 8) % 0], 
-    [<minecraft:red_mushroom>, <contenttweaker:research_mushroom1>], 10, 128
+    [<minecraft:red_mushroom> * 32, (<minecraft:red_mushroom_block> * 8) % 0], 
+    [<minecraft:red_mushroom>, <contenttweaker:research_mushroom1>], 2, 500
 );
 
 {//erebus
@@ -194,7 +194,12 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
     addIBTrecipe([<industrialforegoing:fertilizer> * 12, <botania:fertilizer> * 8], 
         [<roots:baffle_cap_mushroom> * 8, (<roots:baffle_cap_huge_top> * 4) % 0], 
         [<roots:baffle_cap_mushroom>, <contenttweaker:research_mushroom1>], 20, 512
-);
+    );
+
+    
+    addIBTrecipe([<industrialforegoing:fertilizer> * 32], 
+        [<harvestcraft:pampaperbark> * 24, (<harvestcraft:paperbark_sapling> * 4) % 0], [<harvestcraft:paperbark_sapling>], 15, 2000
+    );
 }
 //mine
 {//revived

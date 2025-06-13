@@ -107,10 +107,10 @@ for relic in relics{
     scripts.helper.addSimpleCrushingRecipe(relics[relic].gold, gold_nugget * nugget_number[relic]);
 
     //gem
-    scripts.helper.addSimpleCrushingRecipeWByproduct(relics[relic].ruby, gold_nugget * nugget_number[relic], ruby, chance[relic]);
-    scripts.helper.addSimpleCrushingRecipeWByproduct(relics[relic].sapphire, gold_nugget * nugget_number[relic], sapphire, chance[relic]);
-    scripts.helper.addSimpleCrushingRecipeWByproduct(relics[relic].emerald, gold_nugget * nugget_number[relic], emerald, chance[relic]);
-    scripts.helper.addSimpleCrushingRecipeWByproduct(relics[relic].diamond, gold_nugget * nugget_number[relic], diamond, chance[relic]);
+    scripts.helper.addSimpleCrushingRecipeWByproduct(relics[relic].ruby, relic_nugget * nugget_number[relic], ruby, chance[relic]);
+    scripts.helper.addSimpleCrushingRecipeWByproduct(relics[relic].sapphire, relic_nugget * nugget_number[relic], sapphire, chance[relic]);
+    scripts.helper.addSimpleCrushingRecipeWByproduct(relics[relic].emerald, relic_nugget * nugget_number[relic], emerald, chance[relic]);
+    scripts.helper.addSimpleCrushingRecipeWByproduct(relics[relic].diamond, relic_nugget * nugget_number[relic], diamond, chance[relic]);
 }
 for mat in ore_materials{
     <ore:ring>.add(relics.ring[mat]);

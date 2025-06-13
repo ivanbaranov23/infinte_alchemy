@@ -1,4 +1,6 @@
 
+recipes.remove(<extrautils2:minichest>);
+recipes.addShapeless("ia_minichest", <extrautils2:minichest> * 8, [<ore:chestWood>]);
 
 {//ironchests
 	recipes.removeByMod("ironchest");

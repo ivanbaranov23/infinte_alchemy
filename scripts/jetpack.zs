@@ -1,10 +1,23 @@
 
 
+recipes.addShaped("flapper", <contenttweaker:flapper>, [
+	[<contenttweaker:angel_gear>, <openblocks:generic>],
+	[<immersiveengineering:cloth_device:1>, <immersiveengineering:metal_decoration0:3>]
+]);
+scripts.content_machines.addAssemblerRecipe(
+	[<contenttweaker:flapper> * 3], 
+	[
+		<contenttweaker:angel_gear>, <openblocks:hang_glider>,
+		<immersiveengineering:cloth_device:1>, <immersiveengineering:metal_decoration0:3>
+	], <liquid:steel> * 144,
+	20, 100
+);
+
 recipes.remove(<simplyjetpacks:metaitemmods:27>);
 recipes.addShaped("flying_unit", <simplyjetpacks:metaitemmods:27>, [
-	[<thermalfoundation:glass:8>, <contenttweaker:tinezo_plate>, <thermalfoundation:glass:8>],
+	[<contenttweaker:tinezo_plate>, <thermalfoundation:glass:8>, <contenttweaker:tinezo_plate>],
 	[<redstonearsenal:material:128>, <actuallyadditions:item_misc:8>, <redstonearsenal:material:128>],
-	[<thermalfoundation:glass:8>, <contenttweaker:tinezo_plate>, <thermalfoundation:glass:8>]
+	[<contenttweaker:tinezo_plate>, <contenttweaker:flapper>, <contenttweaker:tinezo_plate>]
 ]);
 recipes.addShaped("ia_light_support", <contenttweaker:light_support>, [
 	[<contenttweaker:caelumite_rod>, <contenttweaker:tinezo_plate>, <contenttweaker:caelumite_rod>], 
@@ -47,7 +60,7 @@ recipes.addShaped("ia_lead_jetpack", <simplyjetpacks:itemjetpack:16>.withTag({})
 recipes.remove(<simplyjetpacks:itemjetpack:17>);
 scripts.helper.addCarryRecipe(<simplyjetpacks:itemjetpack:17>, <simplyjetpacks:itemjetpack:16>, [
 	[<thermalfoundation:material:354>, <thermalexpansion:capacitor:1>, <thermalfoundation:material:354>],
-	[<contenttweaker:tinezo_plate>, <contenttweaker:tinezo_plate>],
+	[<contenttweaker:tinezo_plate> | <contenttweaker:flapper>, <contenttweaker:tinezo_plate> | <contenttweaker:flapper>],
 	[<simplyjetpacks:metaitemmods:21>, <thermalfoundation:armor.plate_invar>, <simplyjetpacks:metaitemmods:21>]
 ]);
 recipes.remove(<simplyjetpacks:itemjetpack:18>);

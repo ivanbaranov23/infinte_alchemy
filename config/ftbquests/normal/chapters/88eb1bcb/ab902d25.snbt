@@ -50,5 +50,22 @@
 		uid: "74f79104",
 		type: "checkmark",
 		title: "10 casings/hatches"
+	}],
+	rewards: [{
+		uid: "51a58606",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/gp_gen",
+				label: "Gp Gen",
+				size: 9
+			}
+		}
 	}]
 }

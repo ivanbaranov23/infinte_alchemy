@@ -325,7 +325,7 @@ furnace.setFuel(<contenttweaker:crystal_coal>, 200 * 512);
 
 
 recipes.addShapeless("ia_lazy_soup", <contenttweaker:lazy_soup>, [
-    <natura:empty_bowls>, 
+    <minecraft:bowl>, 
     <contenttweaker:primitive_eyes>, 
     <harvestcraft:pizzasliceitem>, 
     <harvestcraft:pizzasliceitem>, 

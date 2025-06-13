@@ -2,6 +2,11 @@
 	x: -4.0d,
 	y: 0.0d,
 	shape: "square",
+	text: [
+		"Make a 2x2 hole, fill it with water and surrond it with dirt. Put flowers on top of the dirt.",
+		"",
+		"Throw blank magic map in to open the portal to twilight forest"
+	],
 	tasks: [{
 		uid: "65145ab3",
 		type: "item",

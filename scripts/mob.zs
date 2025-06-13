@@ -6,11 +6,21 @@ import crafttweaker.entity.IEntityDefinition;
 
 import mods.modularmachinery.RecipeBuilder;
 
+import scripts.mob_jei.addJEIentityHint;
+
 function addEggHint(ent as string, drops as IItemStack[]){
-    scripts.jei.addJEIhint(
-        [<minecraft:spawn_egg>.withTag({EntityTag: {id: ent}})], [],
-        [<minecraft:diamond_sword>.withDisplayName(game.localize("ia.egg_hint.sword"))],
-        drops
+    addJEIentityHint(
+        [], null, ent,
+        [<minecraft:diamond_sword>.withDisplayName(game.localize("ia.egg_hint.sword"))], null,
+        drops, null, ""
+    );
+}
+
+function addRootsSummoning_jei(ent as IEntityDefinition, inps as IIngredient[]){
+    addJEIentityHint(
+        inps, null, "",
+        [<roots:ritual_summon_creatures>, <roots:catalyst_plate>], null,
+        [], null, ent.id
     );
 }
 function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
@@ -18,74 +28,157 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
         ent, inps
     );
 
-    scripts.jei.addJEIhint(
-        inps, [],
-        [<roots:ritual_summon_creatures>],
-        [
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: ent.id}}),
-            <enderio:item_soul_vial:1>.withTag({entityId: ent.id})
-        ]
+    addRootsSummoning_jei(ent, inps);
+}
+function readdRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
+    mods.roots.SummonCreatures.removeEntity(ent);
+    mods.roots.SummonCreatures.addEntity(
+        ent, inps
     );
+
+    addRootsSummoning_jei(ent, inps);
 }
 
 {//minecraft
+    //zombie
+    readdRootsSummoning(<entity:minecraft:zombie>, [
+        <mysticalagriculture:storage>, <xreliquary:mob_ingredient:6>, <contenttweaker:potato_block1>, 
+        <harvestcraft:zombiejerkyitem> | <tconstruct:edible:10>
+    ]);
+
+    mods.prodigytech.heatsawmill.addRecipe(<minecraft:skull:2>, <minecraft:rotten_flesh> * 4);
+    scripts.helper.addSawRecipeWByproduct(<minecraft:skull:2>, <minecraft:rotten_flesh> * 6, <minecraft:rotten_flesh> * 2, 10);
+    recipes.addShapeless("ia_zombie_skull_to_bone", <minecraft:rotten_flesh> * 3, [
+        <harvestcraft:cuttingboarditem>.reuse(), <minecraft:skull:2>
+    ]);
+
+
+    //skeleton
+    readdRootsSummoning(<entity:minecraft:skeleton>, [
+        <mysticalagriculture:storage>, <xreliquary:mob_ingredient>, <tconstruct:materials:20>, <minecraft:bow:*>
+    ]);
+
+    mods.prodigytech.heatsawmill.addRecipe(<minecraft:skull>, <minecraft:bone> * 3);
+    scripts.helper.addSawRecipeWByproduct(<minecraft:skull>, <minecraft:bone> * 4, <minecraft:bone>, 10);
+    recipes.addShapeless("ia_skull_to_bone", <minecraft:bone> * 2, [
+        <harvestcraft:cuttingboarditem>.reuse(), <minecraft:skull>
+    ]);
+
+    scripts.helper.addSawRecipeWByproduct(<minecraft:skull:1>, <tconstruct:materials:17> * 4, <tconstruct:materials:17>, 10);
+
+    //witch
+    readdRootsSummoning(<entity:minecraft:witch>, [
+        <mysticalagriculture:storage>, <minecraft:redstone>, <minecraft:glowstone_dust>, <minecraft:sugar>, <minecraft:glass_bottle>
+    ]);
+
+    //golem
+    addRootsSummoning(<entity:minecraft:villager_golem>, [
+        <mysticalagriculture:storage>, <minecraft:iron_block>, <minecraft:pumpkin>
+    ]);
     <entity:minecraft:villager_golem>.addDrop(<contenttweaker:iron_heart> % 50);
 
-    mods.roots.SummonCreatures.removeEntity(<entity:minecraft:mooshroom>);
-    addRootsSummoning(<entity:minecraft:mooshroom>, [<quark:glowshroom>, <contenttweaker:mushroomite_block>, <minecraft:cooked_beef>]);
+    //mooshroom
+    //mods.roots.SummonCreatures.removeEntity(<entity:minecraft:mooshroom>);
+    readdRootsSummoning(<entity:minecraft:mooshroom>, [<mysticalagriculture:storage>, <quark:glowshroom>, <contenttweaker:mushroomite_block>, <minecraft:cooked_beef>]);
 }
 
 {//erebus
+    addEggHint("erebus:erebus.chameleon_tick", [<erebus:materials:18>]);
+    addEggHint("erebus:erebus.praying_mantis", [<erebus:materials:18>]);
     addRootsSummoning(
-    <entity:erebus:erebus.praying_mantis>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:grandmas_shoes_mushroom>] // a list of ingredients used for the summoning
+        <entity:erebus:erebus.praying_mantis>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:grandmas_shoes_mushroom>] // a list of ingredients used for the summoning
+    );
+
+    addEggHint("erebus:erebus.centipede", [<erebus:materials:8>]);
+    addRootsSummoning(
+        <entity:erebus:erebus.centipede>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})] // a list of ingredients used for the summoning
+    );
+
+    addEggHint("erebus:erebus.glow_worm", [<erebus:materials:12>]);
+    addRootsSummoning(
+        <entity:erebus:erebus.glow_worm>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:glowstone>] // a list of ingredients used for the summoning
+    );
+    
+    addEggHint("erebus:erebus.glow_worm", [<erebus:erebus_food:2>]);
+    addRootsSummoning(
+        <entity:erebus:erebus.grasshopper>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:hopper>, <minecraft:tallgrass:1>] // a list of ingredients used for the summoning
+    );
+
+    addEggHint("erebus:erebus.locust", [<erebus:materials:9>]);
+    addRootsSummoning(
+        <entity:erebus:erebus.locust>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:erebus_food:2>] // a list of ingredients used for the summoning
+    );
+
+    addEggHint("erebus:erebus.mosquito", [<erebus:life_blood>]);
+    addRootsSummoning(
+        <entity:erebus:erebus.mosquito>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <tconstruct:edible:3>] // a list of ingredients used for the summoning
+    );
+    
+    addEggHint("erebus:erebus.tarantula", [<erebus:erebus_food:4>]);
+    addRootsSummoning(
+        <entity:erebus:erebus.tarantula>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:material:1>] // a list of ingredients used for the summoning
     );
     addRootsSummoning(
-    <entity:erebus:erebus.centipede>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})] // a list of ingredients used for the summoning
+        <entity:erebus:erebus.velvet_worm>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <harvestcraft:redvelvetcupcakeitem>] // a list of ingredients used for the summoning
     );
+
+    addEggHint("erebus:erebus.fungal_weevil", [
+        <erebus:dark_capped_mushroom>,
+        <erebus:sarcastic_czech_mushroom>,
+        <erebus:grandmas_shoes_mushroom>,
+        <erebus:dutch_cap_mushroom>,
+        <erebus:kaizers_fingers_mushroom>
+    ]);
     addRootsSummoning(
-    <entity:erebus:erebus.glow_worm>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:glowstone>] // a list of ingredients used for the summoning
+        <entity:erebus:erebus.fungal_weevil>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <alchemistry:element:68>] // a list of ingredients used for the summoning
     );
+
+    addEggHint("erebus:erebus.cicada", [<erebus:materials:28>]);
     addRootsSummoning(
-    <entity:erebus:erebus.grasshopper>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:hopper>, <minecraft:tallgrass:1>] // a list of ingredients used for the summoning
+        <entity:erebus:erebus.cicada>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:poisonous_potato>] // a list of ingredients used for the summoning
     );
+
+    addEggHint("erebus:erebus.pond_skater", [<erebus:materials:57>]);
     addRootsSummoning(
-    <entity:erebus:erebus.locust>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:erebus_food:2>] // a list of ingredients used for the summoning
-    );
-    addRootsSummoning(
-    <entity:erebus:erebus.mosquito>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <tconstruct:edible:3>] // a list of ingredients used for the summoning
-    );
-    addRootsSummoning(
-    <entity:erebus:erebus.tarantula>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:material:1>] // a list of ingredients used for the summoning
-    );
-    addRootsSummoning(
-    <entity:erebus:erebus.velvet_worm>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <harvestcraft:redvelvetcupcakeitem>] // a list of ingredients used for the summoning
-    );
-    addRootsSummoning(
-    <entity:erebus:erebus.fungal_weevil>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <exnihilocreatio:item_material:3>] // a list of ingredients used for the summoning
-    );
-    addRootsSummoning(
-    <entity:erebus:erebus.cicada>, // the entity to be summoned
-    [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:poisonous_potato>] // a list of ingredients used for the summoning
+        <entity:erebus:erebus.pond_skater>, // the entity to be summoned
+        [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <enderio:block_reservoir>] // a list of ingredients used for the summoning
     );
 }
 
 {//atum
     addEggHint("atum:wraith", [<atum:ectoplasm>]);
-    recipes.addShapeless("ia_evil_desert_dust", <contenttweaker:evil_desert_dust> * 2, [
+    recipes.addShapeless("ia_evil_desert_dust", <contenttweaker:evil_desert_dust> * 3, [
         <atum:ectoplasm>,
         <contenttweaker:sphalerite_dust>,
         <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>,
         <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>
     ]);
+
+    for en in [<entity:atum:mummy>, <entity:atum:wraith>, <entity:atum:forsaken>, <entity:minecraft:husk>] as IEntityDefinition[]{
+        en.addDrop(<atum:loot_dirty_ring> % 5);
+        en.addDrop(<atum:loot_dirty_broach> % 5);
+        en.addDrop(<atum:loot_dirty_necklace> % 3);
+        en.addDrop(<atum:loot_dirty_scepter> % 2);
+        en.addDrop(<atum:loot_dirty_idol> % 1);
+
+        addEggHint(en.id, [
+            <atum:loot_dirty_ring>,
+            <atum:loot_dirty_broach>,
+            <atum:loot_dirty_necklace>,
+            <atum:loot_dirty_scepter>,
+            <atum:loot_dirty_idol>
+        ]);
+    }
 
     {//khnumite
         addEggHint("atum:stoneguard", [<contenttweaker:khnumite_heart>]);
@@ -94,12 +187,18 @@ function addRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
         <entity:atum:stoneguard>.addDrop(<contenttweaker:khnumite_heart> % 50);
         <entity:atum:stonewarden>.addDrop(<contenttweaker:khnumite_heart> % 75);
 
-        scripts.jei.addJEIhint([<atum:khnumite_face>, <atum:khnumite_block> * 2], [], [], [
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "atum:stoneguard"}})
-        ]);
-        scripts.jei.addJEIhint([<atum:khnumite_face>, <atum:khnumite_block> * 4], [], [], [
-            <minecraft:spawn_egg>.withTag({EntityTag: {id: "atum:stonewarden"}})
-        ]);
+        addJEIentityHint(
+            [<atum:khnumite_face>, <atum:khnumite_block> * 2], null, "",
+            [], null,
+            [], null, "atum:stoneguard"
+        );
+        addJEIentityHint(
+            [<atum:khnumite_face>, <atum:khnumite_block> * 4], null, "",
+            [], null,
+            [], null, "atum:stonewarden"
+        );
+
+        
 
         //heart proc
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:khnumite> * 2000, <atum:khnumite_face>, <liquid:chloroauric_acid> * 1000, 10000);

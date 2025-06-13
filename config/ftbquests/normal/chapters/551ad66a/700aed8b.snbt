@@ -1,12 +1,14 @@
 {
-	x: 2.0d,
-	y: 1.0d,
+	x: 1.0d,
+	y: 4.0d,
 	text: [
-		"Melts things faster. Can also melt magma and pilkeum."
+		"Melts things faster. Can also melt pilkeum."
 	],
 	dependencies: [
-		"42386b50"
+		"b02a5540",
+		"3b7d9cce"
 	],
+	dependency_requirement: "one_completed",
 	optional: true,
 	tasks: [{
 		uid: "dbcc86d2",

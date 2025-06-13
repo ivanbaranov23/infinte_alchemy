@@ -1,0 +1,27 @@
+{
+	x: 0.5d,
+	y: 0.0d,
+	dependencies: [
+		"e8320d0b"
+	],
+	tasks: [{
+		uid: "cbde62a5",
+		type: "item",
+		items: [{
+			item: "storagenetwork:kabel"
+		}]
+	},
+	{
+		uid: "46c74bfb",
+		type: "item",
+		items: [{
+			item: "storagenetwork:simple_kabel"
+		}]
+	}],
+	rewards: [{
+		uid: "f26280c1",
+		type: "item",
+		item: "storagenetwork:simple_kabel",
+		count: 4
+	}]
+}

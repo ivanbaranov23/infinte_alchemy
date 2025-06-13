@@ -1,0 +1,32 @@
+{
+	title: "Basic System",
+	x: 2.5d,
+	y: 0.0d,
+	text: [
+		"Place simple cables to all chests you want to connect. Then you can search and access all the items in the chests.",
+		"",
+		"Big chests are the way to go here."
+	],
+	dependencies: [
+		"c6d42597"
+	],
+	tasks: [{
+		uid: "de1e0274",
+		type: "item",
+		items: [{
+			item: "storagenetwork:inventory"
+		}]
+	},
+	{
+		uid: "ddac3af2",
+		type: "item",
+		items: [{
+			item: "storagenetwork:master"
+		}]
+	}],
+	rewards: [{
+		uid: "abbf0229",
+		type: "item",
+		item: "ironchest:iron_chest 1 1"
+	}]
+}

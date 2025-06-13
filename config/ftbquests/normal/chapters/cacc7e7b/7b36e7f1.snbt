@@ -1,0 +1,32 @@
+{
+	title: "Miner",
+	icon: {
+		id: "mekanism:machineblock",
+		Damage: 4s,
+		tag: {
+			mekData: {}
+		}
+	},
+	x: 4.5d,
+	y: 3.0d,
+	tasks: [{
+		uid: "e71d9e0a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 10L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "f9cc7619",
+		type: "item",
+		item: {
+			id: "mekanism:machineblock",
+			Damage: 4s,
+			tag: {
+				mekData: {}
+			}
+		}
+	}]
+}

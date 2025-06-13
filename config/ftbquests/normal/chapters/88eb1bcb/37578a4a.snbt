@@ -1,0 +1,19 @@
+{
+	x: 4.0d,
+	y: -3.0d,
+	text: [
+		"Not quite flight, but helpful for moving between floors"
+	],
+	dependencies: [
+		"81952ff5"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1ee6dec0",
+		type: "item",
+		items: [{
+			item: "extrautils2:chickenring 1 1"
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,78 @@
+{
+	title: "Mek Tier Installers",
+	icon: "mekanism:tierinstaller 1 2",
+	x: -0.5d,
+	y: 5.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "3ba666a1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "30d386c6",
+		type: "item",
+		item: "mekanism:tierinstaller"
+	},
+	{
+		uid: "37455d65",
+		type: "item",
+		item: "mekanism:tierinstaller"
+	},
+	{
+		uid: "bb4478cf",
+		type: "item",
+		item: "mekanism:tierinstaller"
+	},
+	{
+		uid: "5496c18a",
+		type: "item",
+		item: "mekanism:tierinstaller"
+	},
+	{
+		uid: "5f94b627",
+		type: "item",
+		item: "mekanism:tierinstaller 1 1"
+	},
+	{
+		uid: "5747d194",
+		type: "item",
+		item: "mekanism:tierinstaller 1 1"
+	},
+	{
+		uid: "7ee170d8",
+		type: "item",
+		item: "mekanism:tierinstaller 1 1"
+	},
+	{
+		uid: "a38ec6a9",
+		type: "item",
+		item: "mekanism:tierinstaller 1 1"
+	},
+	{
+		uid: "216654bd",
+		type: "item",
+		item: "mekanism:tierinstaller 1 2"
+	},
+	{
+		uid: "02188643",
+		type: "item",
+		item: "mekanism:tierinstaller 1 2"
+	},
+	{
+		uid: "4c109298",
+		type: "item",
+		item: "mekanism:tierinstaller 1 2"
+	},
+	{
+		uid: "af73550a",
+		type: "item",
+		item: "mekanism:tierinstaller 1 2"
+	}]
+}

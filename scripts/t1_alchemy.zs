@@ -54,36 +54,11 @@ mods.exnihilocreatio.Hammer*/
 recipes.addShapeless("orslime", <minecraft:magma_cream>, [<tconstruct:edible:4>, <tconstruct:edible:4>, <ore:slimeball>]);
 mods.tconstruct.Alloy.addRecipe(<liquid:andesite_magma> * 250, [<liquid:andesite> * 250, <liquid:magma_fluid> * 288, <liquid:sky_stone> * 36]);
 scripts.content_machines.addFluidMixerRecipe(
-    <liquid:andesite_magma> * 250, 
+    <liquid:andesite_magma> * 400, 
     <liquid:andesite> * 250, <liquid:magma_fluid> * 288, <appliedenergistics2:material:45>, 
     20, 100
 );
-{//pilkeum
-    recipes.addShapeless("pilkeum", <contenttweaker:pilkeum> * 2, [
-        <prodigytech:ferramic_dust>, <prodigytech:ferramic_dust>, 
-        <harvestcraft:carrotjuiceitem>,
-        <botania:dye:6>,
-        <minecraft:gunpowder>,
-        <contenttweaker:weak_enhancer>
-    ]);
-    mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2050);
-    mods.thermalexpansion.Crucible.addRecipe(
-        <liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2000
-    );
 
-
-    mods.tconstruct.Melting.addRecipe(<liquid:pilkon_blood> * 1000, <contenttweaker:pilkon_corpse>, 2050);
-    mods.thermalexpansion.Crucible.addRecipe(
-        <liquid:pilkon_blood> * 1000, <contenttweaker:pilkon_corpse>, 3000
-    );
-    mods.immersivepetroleum.Distillation.addRecipe(
-        [<liquid:biodiesel> * 100, <liquid:impure_colagen> * 25], 
-        [<contenttweaker:pilkeum>], <liquid:pilkon_blood> * 50, 
-        2000, 25, 
-        [0.1]
-    );
-    mods.immersiveengineering.Refinery.addRecipe(<liquid:pilkon_blood> * 75, <liquid:blood> * 50, <liquid:if.pink_slime> * 50, 800);
-}
 
 //cactus
 mods.immersiveengineering.BlastFurnace.addRecipe(
@@ -207,13 +182,7 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:flolit_sheet> * 4, [
     <contenttweaker:angel_ingot> * 2
 ], 15000);
 
-recipes.addShaped("ia_flolit_plant", <contenttweaker:flolit_plant>, [
-    [<mysticalcreations:bilim_essence>, <contenttweaker:flolit>, <mysticalcreations:bilim_essence>], 
-    [<contenttweaker:flolit>, <contenttweaker:creosolon>, <contenttweaker:flolit>], 
-    [<mysticalcreations:bilim_essence>, <contenttweaker:flolit>, <mysticalcreations:bilim_essence>]
-]);
 
-mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:flolit>, <contenttweaker:flolit_plant> * 8, 1500);
 
 //creosolon
 recipes.addShapeless("jade_to_flolit", <contenttweaker:flolit>, [

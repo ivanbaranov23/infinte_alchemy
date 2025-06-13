@@ -1,6 +1,11 @@
 {
 	x: -0.5d,
 	y: 1.0d,
+	text: [
+		"Right click the log to get paper. You can also bone meal the log to speed up regrowth.",
+		"",
+		"In fact, paperbark wood block doesn't need tree or dirt, it'll grow anyway."
+	],
 	dependencies: [
 		"15a113bb"
 	],

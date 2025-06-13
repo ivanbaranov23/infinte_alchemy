@@ -1,0 +1,20 @@
+{
+	x: 13.0d,
+	y: 4.5d,
+	dependencies: [
+		"14585f01",
+		"e997e1c0"
+	],
+	tasks: [{
+		uid: "1e3fd041",
+		type: "item",
+		items: [{
+			item: "contenttweaker:slate_steel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "89039296",
+		type: "item",
+		item: "contenttweaker:slate_steel_block"
+	}]
+}

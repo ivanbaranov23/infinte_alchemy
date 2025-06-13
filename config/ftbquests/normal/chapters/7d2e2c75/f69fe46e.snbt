@@ -1,6 +1,7 @@
 {
-	x: 11.0d,
-	y: 0.0d,
+	title: "To the twilight forest chapter.",
+	x: 9.0d,
+	y: 1.0d,
 	shape: "square",
 	text: [
 		"Gate for Twilight Forest"
@@ -9,10 +10,8 @@
 		"30e63d05"
 	],
 	tasks: [{
-		uid: "75c3d959",
-		type: "item",
-		items: [{
-			item: "twilightforest:magic_map_focus"
-		}]
+		uid: "3f0bf2db",
+		type: "checkmark",
+		icon: "twilightforest:magic_map_focus"
 	}]
 }

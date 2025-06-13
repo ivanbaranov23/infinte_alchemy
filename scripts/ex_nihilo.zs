@@ -9,6 +9,8 @@ import mods.exnihilocreatio.Compost;
 
 import mods.exnihilocreatio.Hammer;
 
+import scripts.recycler.addRecycle;
+
 //mesh
 recipes.remove(<exnihilocreatio:item_mesh:1>);
 recipes.addShaped("ia_string_mesh",
@@ -62,13 +64,19 @@ recipes.addShaped("ia_auto_sieve", <excompressum:auto_sieve>, [
 	[<ore:paneGlassColorless>, <thermalexpansion:frame:64>, <ore:paneGlassColorless>], 
 	[<ore:plateSteel>, <exnihilocreatio:block_sieve>, <ore:plateSteel>]
 ]);
+addRecycle(<excompressum:auto_sieve>, [
+	<thermalexpansion:frame:64>, <thermalfoundation:material:160> * 16
+]);
 recipes.remove(<excompressum:auto_heavy_sieve>);
 recipes.addShaped("ia_auto_heavy_sieve", <excompressum:auto_heavy_sieve>, [
 	[<contenttweaker:duraluminum_plate>, <contenttweaker:research_sieving>.reuse(), <contenttweaker:duraluminum_plate>], 
 	[<excompressum:auto_sieve>, <thermalexpansion:frame>, <excompressum:auto_sieve>], 
 	[<contenttweaker:duraluminum_plate>, <excompressum:heavy_sieve>, <contenttweaker:duraluminum_plate>]
 ]);
-
+addRecycle(<excompressum:auto_heavy_sieve>, [
+	<thermalexpansion:frame>, <excompressum:auto_sieve> * 2,
+	<contenttweaker:duraluminum_ingot> * 16
+]);
 
 
 
@@ -83,8 +91,8 @@ Compost.addRecipe(<ore:listAllseed>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<immersiveengineering:seed>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<actuallyadditions:item_canola_seed>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<contenttweaker:chewed_meat>, 0.5, "269023", <minecraft:dirt>);
-Compost.addRecipe(<biomesoplenty:plant_0:11>, 0.1, "269023", <minecraft:dirt>);
-Compost.addRecipe(<biomesoplenty:plant_0:12>, 0.1, "269023", <minecraft:dirt>);
+//Compost.addRecipe(<biomesoplenty:plant_0:11>, 0.1, "269023", <minecraft:dirt>);
+//Compost.addRecipe(<biomesoplenty:plant_0:12>, 0.1, "269023", <minecraft:dirt>);
 Compost.addRecipe(<mysticalworld:aubergine>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<actuallyadditions:item_flax_seed>, 0.08, "269023", <minecraft:dirt>);
 Compost.addRecipe(<bhc:red_heart>, 0.08, "e00d0d", <minecraft:dirt>);
@@ -152,7 +160,17 @@ scripts.jei.addJEIhint(
     [<minecraft:soul_sand>]
 );
 
-
+//doll
+recipes.addShaped("ia_doll", <exnihilocreatio:item_material:5>, [
+	[<exnihilocreatio:item_material:1>, <extrautils2:ingredients:2>, <exnihilocreatio:item_material:1>], 
+	[null, <exnihilocreatio:item_material:1>, null], 
+	[<exnihilocreatio:item_material:1>, null, <exnihilocreatio:item_material:1>]
+]);
+recipes.addShaped("ia_doll2", <exnihilocreatio:item_material:5>, [
+	[<exnihilocreatio:item_material:1>, <contenttweaker:creosolon>, <exnihilocreatio:item_material:1>], 
+	[null, <exnihilocreatio:item_material:1>, null], 
+	[<exnihilocreatio:item_material:1>, null, <exnihilocreatio:item_material:1>]
+]);
 
 
 //mycelium
@@ -262,6 +280,7 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		<exnihilocreatio:block_granite_crushed>: [
 			<exnihilocreatio:item_pebble:1> * 2,
 			<exnihilocreatio:item_pebble:1> * 2 % 80,
+			<exnihilocreatio:item_pebble:1> * 2 % 75,
 			<exnihilocreatio:item_pebble:1> % 75,
 			<exnihilocreatio:item_pebble:1> % 70,
 			<exnihilocreatio:item_pebble:1> % 65,
@@ -270,6 +289,7 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		<exnihilocreatio:block_diorite_crushed>: [
 			<exnihilocreatio:item_pebble:2> * 2,
 			<exnihilocreatio:item_pebble:2> * 2 % 80,
+			<exnihilocreatio:item_pebble:2> * 2 % 75,
 			<exnihilocreatio:item_pebble:2> % 75,
 			<exnihilocreatio:item_pebble:2> % 70,
 			<exnihilocreatio:item_pebble:2> % 65,
@@ -278,6 +298,7 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		<exnihilocreatio:block_andesite_crushed>: [
 			<exnihilocreatio:item_pebble:3> * 2,
 			<exnihilocreatio:item_pebble:3> * 2 % 80,
+			<exnihilocreatio:item_pebble:3> * 2 % 75,
 			<exnihilocreatio:item_pebble:3> % 75,
 			<exnihilocreatio:item_pebble:3> % 70,
 			<exnihilocreatio:item_pebble:3> % 65,
@@ -354,6 +375,18 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 
 		<exnihilocreatio:block_netherrack_crushed>: [
 			<exnihilocreatio:item_ore_gold> % 20
+		],
+
+		<natura:nether_tainted_soil>: [
+			<biomesoplenty:dirt:2> % 10,
+			<biomesoplenty:dirt:1> % 10,
+			<biomesoplenty:dirt> % 10,
+			<minecraft:dirt:1> % 10,
+			<minecraft:clay_ball> % 10
+		],
+		<biomesoplenty:dirt:2>: [
+			<thermalfoundation:material:772> % 15,
+			<agricraft:agri_nugget:2> % 5
 		]
 	},
 	ironMesh: {
@@ -410,6 +443,12 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_ore_gold> % 35,
 			<exnihilocreatio:item_ore_cobalt> % 20,
 			<exnihilocreatio:item_ore_ardite> % 20
+		],
+
+		<biomesoplenty:dirt:2>: [
+			<thermalfoundation:material:772> % 40,
+			<agricraft:agri_nugget:2> % 40,
+			<agricraft:agri_nugget:2> % 10
 		]
 	},
 	diamondMesh: {

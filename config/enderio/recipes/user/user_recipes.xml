@@ -18,29 +18,29 @@
 
     <capacitor key="enderio:block_alloy_smelter/intake" base="25000" scaler="QUADRATIC" />
     <capacitor key="enderio:block_alloy_smelter/buffer" base="100000" scaler="QUADRATIC" />
-    <capacitor key="enderio:block_alloy_smelter/use" base="500" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_alloy_smelter/use" base="1500" scaler="QUADRATIC" />
 
     <capacitor key="enderio:block_enhanced_alloy_smelter/intake" base="30000" scaler="QUADRATIC" />
     <capacitor key="enderio:block_enhanced_alloy_smelter/buffer" base="150000" scaler="QUADRATIC" />
-    <capacitor key="enderio:block_enhanced_alloy_smelter/use" base="600" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_alloy_smelter/use" base="2000" scaler="QUADRATIC" />
 
 
     <capacitor key="enderio:block_sag_mill/intake" base="25000" scaler="QUADRATIC" />
     <capacitor key="enderio:block_sag_mill/buffer" base="100000" scaler="QUADRATIC" />
-    <capacitor key="enderio:block_sag_mill/use" base="500" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_sag_mill/use" base="1500" scaler="QUADRATIC" />
 
     <capacitor key="enderio:block_enhanced_sag_mill/intake" base="30000" scaler="QUADRATIC" />
     <capacitor key="enderio:block_enhanced_sag_mill/buffer" base="150000" scaler="QUADRATIC" />
-    <capacitor key="enderio:block_enhanced_sag_mill/use" base="600" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_sag_mill/use" base="2000" scaler="QUADRATIC" />
 
 
     <capacitor key="enderio:block_vat/intake" base="25000" scaler="QUADRATIC" />
     <capacitor key="enderio:block_vat/buffer" base="100000" scaler="QUADRATIC" />
-    <capacitor key="enderio:block_vat/use" base="500" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_vat/use" base="1500" scaler="QUADRATIC" />
 
     <capacitor key="enderio:block_enhanced_vat/intake" base="30000" scaler="QUADRATIC" />
     <capacitor key="enderio:block_enhanced_vat/buffer" base="150000" scaler="QUADRATIC" />
-    <capacitor key="enderio:block_enhanced_vat/use" base="600" scaler="QUADRATIC" />
+    <capacitor key="enderio:block_enhanced_vat/use" base="2000" scaler="QUADRATIC" />
     
 
     

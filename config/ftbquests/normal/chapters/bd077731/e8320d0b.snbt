@@ -1,0 +1,14 @@
+{
+	x: -0.5d,
+	y: 0.0d,
+	text: [
+		"Simple storage networks allows you to connect and search inventories. ",
+		"Moreover SSN allows to do autocrafting."
+	],
+	tasks: [{
+		uid: "fb0831ac",
+		type: "checkmark",
+		title: "SSN",
+		icon: "storagenetwork:simple_kabel"
+	}]
+}

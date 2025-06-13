@@ -1,0 +1,37 @@
+{
+	icon: {
+		id: "immersiveengineering:graphite_electrode",
+		tag: {
+			Unbreakable: 1
+		}
+	},
+	x: 1.0d,
+	y: 4.0d,
+	text: [
+		"You can make an arc furnace if you want, but it is optional",
+		"You can also buy unbreakable electrodes in the shop"
+	],
+	optional: true,
+	tasks: [{
+		uid: "cfeafdf3",
+		type: "checkmark",
+		title: "Electrodes"
+	}],
+	rewards: [{
+		uid: "396f8a57",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/immersiveengineering/ie-arcfurnace",
+				label: "Ie-arcfurnace",
+				size: 5
+			}
+		}
+	}]
+}

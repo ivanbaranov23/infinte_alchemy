@@ -1,0 +1,28 @@
+{
+	x: 1.0d,
+	y: 3.0d,
+	text: [
+		"Can melt magma, consumed very fast.",
+		"",
+		"Magma also can melt magma.",
+		"",
+		"Do note: fuel in smeltery gets consumed in ~50 mb at a time and sets timer and temp in smeltery. ",
+		"So when you swap fuel, it'll take some time for previuos fuel to run out."
+	],
+	dependencies: [
+		"42386b50"
+	],
+	optional: true,
+	tasks: [{
+		uid: "93026106",
+		type: "checkmark",
+		title: "Obsidian",
+		icon: {
+			id: "thermalexpansion:florb",
+			Damage: 1s,
+			tag: {
+				Fluid: "obsidian"
+			}
+		}
+	}]
+}

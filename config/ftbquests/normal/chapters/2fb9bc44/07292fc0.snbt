@@ -1,6 +1,13 @@
 {
+	title: "Ore generation",
 	x: 12.5d,
 	y: -3.0d,
+	text: [
+		"You can generate a variety of ores via reshaper. There are some ores that are quite hard to get otherwise. It also gives ore blocks as opposed to ore pieces."
+	],
+	dependencies: [
+		"4be5dc01"
+	],
 	optional: true,
 	tasks: [{
 		uid: "ddfa40fc",

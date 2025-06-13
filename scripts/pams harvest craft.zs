@@ -19,6 +19,11 @@ function moveCookingRecipe(raw as IItemStack, cooked as IItemStack){
     );
 }
 
+//water
+recipes.remove(<harvestcraft:freshwateritem>);
+recipes.addShapeless("ia_pam_water", <harvestcraft:freshwateritem> * 4, [<liquid:water> * 1000]);
+recipes.addShapeless("ia_pam_water2", <harvestcraft:freshwateritem> * 16, [<liquid:pure_water> * 1000]);
+
 //milk ore fix
 <ore:milkBucket>.remove(<aether_legacy:skyroot_bucket>);
 <ore:listAllmilk>.remove(<aether_legacy:skyroot_bucket>);
@@ -509,6 +514,20 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
     );
 }
 
+{//jam
+    recipes.remove(<harvestcraft:starfruitjellyitem>);
+
+    recipes.addShapeless("ia_starfruitjellyitem1", <harvestcraft:starfruitjellyitem>, [
+        <harvestcraft:saucepanitem>.reuse(),
+        <harvestcraft:starfruititem>, <harvestcraft:starfruititem>, <harvestcraft:starfruititem>, <harvestcraft:starfruititem>,
+        <harvestcraft:starfruititem>, <harvestcraft:starfruititem>, <harvestcraft:starfruititem>, <harvestcraft:starfruititem>
+    ]);
+    recipes.addShapeless("ia_starfruitjellyitem2", <harvestcraft:starfruitjellyitem>, [
+        <harvestcraft:saucepanitem>.reuse(),
+        <harvestcraft:starfruititem>, <harvestcraft:starfruititem>, <actuallyadditions:item_crystal:5>
+    ]);
+}
+
 {//gelatin
     {//colagen
         //bones
@@ -653,7 +672,8 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         [<actuallyadditions:item_coffee_beans>], 1000
     );
 
-    
+    mods.thermalexpansion.Refinery.addRecipe(<liquid:caffeine> * 200, null, <liquid:coffee> * 400, 8000);
+
 }
 
 {//energy drink

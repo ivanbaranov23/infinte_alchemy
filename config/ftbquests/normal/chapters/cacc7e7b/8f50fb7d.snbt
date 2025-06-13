@@ -1,0 +1,20 @@
+{
+	title: "dank null",
+	icon: "danknull:dank_null_5",
+	x: 1.5d,
+	y: 2.0d,
+	tasks: [{
+		uid: "fad782da",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "41fbc35f",
+		type: "item",
+		item: "danknull:dank_null_5"
+	}]
+}

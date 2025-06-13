@@ -46,6 +46,8 @@ import mods.thermalexpansion.Transposer;
     
 }
 
+//coal
+
 //quartz
 <ore:dustNetherQuartz>.remove(<enderio:item_material:33>);
 <enderio:item_material:33>.displayName = "Dirty Nether Quartz Dust";

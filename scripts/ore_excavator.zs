@@ -437,6 +437,7 @@ var mil as int = 1000000;
     addFluidReservoir("Erebus Rich Mud", 20, <liquid:claymud>, 3 * mil, 7 * mil, 6, [66, -11325]);
     addFluidReservoir("Erebus Tar", 30, <liquid:tar>, mil, 5 * mil, 4, [66, -11325]);
     addFluidReservoir("Erebus Formic Acid", 20, <liquid:formic_acid>, mil, 3 * mil, 0, [66, -11325]);
+    addFluidReservoir("Erebus Flolit Oil", 15, <liquid:flolit_oil>, 2 * mil, 5 * mil, 0, [66, -11325]);
 }
 //atum
 addExcavator("Atum Coal", 25, ["oreAtumCoal", "oreAtumDiamond", "oreAtumEmerald"], [0.8, 0.15, 0.05], [17]);

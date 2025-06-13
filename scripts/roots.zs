@@ -348,9 +348,9 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
 
     //bug
     recipes.addShaped("ia_staffwood_bug", <contenttweaker:staffwood_bug>, [
-        [<erebus:materials:2>, <xreliquary:mob_ingredient:1>, <erebus:materials:15> | <erebus:materials:35>], 
-        [null, <contenttweaker:staffwood>, <xreliquary:mob_ingredient:11>], 
-        [<xreliquary:mob_ingredient:6>, null, null]
+        [<erebus:materials:2>, <xreliquary:mob_ingredient:11>, <erebus:materials:15> | <erebus:materials:35>], 
+        [null, <contenttweaker:staffwood>, <tconstruct:materials:22>], 
+        [<tconstruct:materials:21>, null, null]
     ]);
 }
 {//flower staff
@@ -425,6 +425,12 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
         Transmutation.addStateToStateRecipe(
             "silver", 
             StatePredicate.create(<blockstate:natura:overworld_logs:axis=y,type=silverbell>),
+            <blockstate:thermalfoundation:ore:type=silver>,
+            null
+        );
+        Transmutation.addStateToStateRecipe(
+            "silver2", 
+            StatePredicate.create(<blockstate:natura:overworld_planks:type=silverbell>),
             <blockstate:thermalfoundation:ore:type=silver>,
             null
         );
@@ -680,7 +686,7 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     mods.thermalexpansion.InductionSmelter.addRecipe(
         outp, 
         inp, <contenttweaker:transmut_gel>, 
-        5000, 
+        25000, 
         outp, 50
     );
 

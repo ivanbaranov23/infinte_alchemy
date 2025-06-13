@@ -504,23 +504,7 @@ InductionSmelter.addRecipe(
 <harvestcraft:chocolatebaritem>.addTooltip("Made with a secret ingredient");
 
 
-//formic acid dup
-recipes.addShapeless("ia_formic_acid_dust", 
-	<contenttweaker:formic_acid_dust>, 
-	[<ore:shardProsperity>, <ore:shardProsperity>, <ore:shardProsperity>, <contenttweaker:bauxite_dust>, <ore:dustCharcoal>]);
-Transposer.addFillRecipe(
-	<contenttweaker:formic_acid_form>,
-	<contenttweaker:formic_acid_dust>, <liquid:formic_acid> * 1000,
-	2000
-);
-Crucible.addRecipe(<liquid:formic_acid> * 2500, <contenttweaker:formic_acid_form>, 10000);
-<contenttweaker:formic_acid_form>.addTooltip("Get yourself a vat!");
 
-Transposer.addFillRecipe(
-	<mekanism:otherdust>,
-	<contenttweaker:charcoal_ball> * 3, <liquid:formic_acid> * 3000,
-	16000
-);
 
 //mithril glass
 recipes.addShaped("ia_mithril_glass", <thermalfoundation:glass:8>, [

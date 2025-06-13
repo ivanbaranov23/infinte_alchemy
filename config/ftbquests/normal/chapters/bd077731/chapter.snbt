@@ -1,0 +1,7 @@
+{
+	title: "ch 2++: poor man's ME",
+	icon: "storagenetwork:simple_kabel",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

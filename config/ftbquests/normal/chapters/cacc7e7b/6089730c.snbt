@@ -1,0 +1,27 @@
+{
+	title: "500 GP",
+	icon: "extrautils2:passivegenerator 1 8",
+	x: 0.5d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "2a2af0d4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 6L
+	}],
+	rewards: [{
+		uid: "ca764536",
+		type: "item",
+		item: "extrautils2:passivegenerator 1 8"
+	},
+	{
+		uid: "630eedd7",
+		type: "item",
+		item: "minecraft:dragon_egg"
+	}]
+}

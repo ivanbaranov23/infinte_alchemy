@@ -2,6 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
 import mods.tconstruct.Casting;
+import mods.tconstruct.Melting;
 
 //<ticontrait:direct>.addItem(<immersiveengineering:toolupgrade:12>);
 
@@ -9,38 +10,44 @@ import mods.tconstruct.Casting;
 Casting.removeTableRecipe(<tconstruct:cast_custom:3>);
 Casting.removeTableRecipe(<tconstruct:cast_custom:4>);
 
-recipes.remove(<tconstruct:smeltery_controller>);
-recipes.addShaped(
-    "furnace_to_smeltery_controller",
-    <tconstruct:smeltery_controller>,
-    [[<tconstruct:seared:3>, <ore:plateTin>, <tconstruct:seared:3>],
-    [<ore:plateCopper>, <ore:gearIron>, <ore:plateCopper>],
-    [<tconstruct:seared:3>, <minecraft:furnace>, <tconstruct:seared:3>]]
-);
+{//smeltery and seared
+    recipes.remove(<tconstruct:smeltery_controller>);
+    recipes.addShaped("furnace_to_smeltery_controller", <tconstruct:smeltery_controller>, [
+        [<tconstruct:seared:3>, <ore:plateTin>, <tconstruct:seared:3>],
+        [<ore:plateCopper>, <ore:gearIron>, <ore:plateCopper>],
+        [<tconstruct:seared:3>, <minecraft:furnace>, <tconstruct:seared:3>]
+    ]);
 
-recipes.remove(<tconstruct:seared_furnace_controller>);
-recipes.addShaped("ia_seared_furnace", <tconstruct:seared_furnace_controller>, [
-    [<tconstruct:seared:3>, <tconstruct:materials>, <tconstruct:seared:3>],
-    [<tconstruct:materials>, <morefurnaces:furnaceblock:5>, <tconstruct:materials>],
-    [<tconstruct:seared:3>, <tconstruct:materials>, <tconstruct:seared:3>]
-]);
+    recipes.remove(<tconstruct:seared_furnace_controller>);
+    recipes.addShaped("ia_seared_furnace", <tconstruct:seared_furnace_controller>, [
+        [<tconstruct:seared:3>, <tconstruct:materials>, <tconstruct:seared:3>],
+        [<tconstruct:materials>, <morefurnaces:furnaceblock:5>, <tconstruct:materials>],
+        [<tconstruct:seared:3>, <tconstruct:materials>, <tconstruct:seared:3>]
+    ]);
 
-//todo move
-//bauxite
-Casting.addBasinRecipe(
-    <immersiveengineering:ore:1>, 
-    <minecraft:quartz_block>, 
-    <liquid:glass>, 1000, 
-    true);
-//eezo
-scripts.helper.addFluidAlloyerRecipe(
-    <taiga:eezo_ore>, 
-    <enderio:item_material:20> * 16, <contenttweaker:black_bronze_ingot> * 1, 
-    <liquid:petrotheum> * 2000, 
-    256, 30
-);
+    recipes.addShaped("ia_seared_tank", <tconstruct:seared_tank>, [
+        [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
+        [<tconstruct:materials>, <tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>, <tconstruct:materials>],
+        [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]
+    ]);
+    recipes.addShaped("ia_seared_tank1", <tconstruct:seared_tank:1>, [
+        [<tconstruct:materials>, <tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>, <tconstruct:materials>],
+        [<tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>, <tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>, <tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>],
+        [<tconstruct:materials>, <tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>, <tconstruct:materials>]
+    ]);
+    recipes.addShaped("ia_seared_tank2", <tconstruct:seared_tank:2>, [
+        [<tconstruct:materials>, <tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>, <tconstruct:materials>],
+        [<tconstruct:materials>, <tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>, <tconstruct:materials>],
+        [<tconstruct:materials>, <tconstruct:clear_glass> | <tconstruct:clear_stained_glass:*>, <tconstruct:materials>]
+    ]);
+
+}
+
+//
 
 
+
+//todo move to metalworks
 //basic modularium
 Casting.addTableRecipe(
     <contenttweaker:basic_modularium>, 
@@ -80,7 +87,11 @@ recipes.addShaped("ia_silky_jewel_alt", <tconstruct:materials:16>, [
 
     //ore slime
     <ore:slimeball>.remove(<industrialforegoing:pink_slime>);
+
+    mods.thermalexpansion.Crucible.removeRecipe(<tconstruct:slime_congealed:3>);
 }
+//calcium
+Casting.removeTableRecipe(<minecraft:bone>);
 
 recipes.remove(<tconstruct:firewood:1>);
 recipes.addShaped("ia_firewood", <tconstruct:firewood:1>, [

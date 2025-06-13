@@ -108,22 +108,40 @@ recipes.addShaped("ia_ie_wirecutter", <immersiveengineering:tool:1>, [
 
 recipes.remove(<immersiveengineering:stone_decoration>);
 recipes.addShaped("ia_coke_brick", <immersiveengineering:stone_decoration> * 6, [
-	[<contenttweaker:fireclay>, <ore:ingotBrick>, <contenttweaker:fireclay>], 
+	[<roots:runestone>, <ore:ingotBrick>, <roots:runestone>], 
 	[<ore:ingotBrick>, <contenttweaker:industrial_clay>, <ore:ingotBrick>], 
-	[<contenttweaker:fireclay>, <ore:ingotBrick>, <contenttweaker:fireclay>]
+	[<roots:runestone>, <ore:ingotBrick>, <roots:runestone>]
 ]);
 recipes.remove(<immersiveengineering:stone_decoration:1>);
-recipes.addShaped("ia_blast_brick", <immersiveengineering:stone_decoration:1> * 4, [
+mods.prodigytech.explosionfurnace.recipes.addRecipe(
+	<immersiveengineering:stone_decoration> * 3, <immersiveengineering:stone_decoration:1> * 3, 500, 
+	<prodigytech:circuit_crude>, 1
+);
+mods.prodigytech.explosionfurnace.recipes.addRecipe(
+	<immersiveengineering:stone_decoration> * 3, <immersiveengineering:stone_decoration:1> * 3, 500, 
+	<integrateddynamics:crystalized_chorus_chunk> * 4, 1
+);
+mods.prodigytech.explosionfurnace.recipes.addRecipe(
+	<immersiveengineering:stone_decoration> * 3, <immersiveengineering:stone_decoration:1> * 3, 500, 
+	<contenttweaker:burn_powder> * 4, 1
+);
+
+/*recipes.addShaped("ia_blast_brick", <immersiveengineering:stone_decoration:1> * 4, [
 	[<contenttweaker:firebrick>, <ore:ingotBrickNether>, <contenttweaker:firebrick>], 
 	[<ore:ingotBrickNether>, <contenttweaker:industrial_clay>, <ore:ingotBrickNether>], 
 	[<contenttweaker:firebrick>, <ore:ingotBrickNether>, <contenttweaker:firebrick>]
-]);
+]);*/
 recipes.remove(<immersiveengineering:stone_decoration:2>);
 recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decoration:2> * 3, [
 	[<immersiveengineering:stone_decoration:1>, <ore:clayPorcelain>, <immersiveengineering:stone_decoration:1>], 
 	[<ore:gunpowder>, <ore:plateSteel>, <ore:gunpowder>], 
 	[<ore:clayPorcelain>, <immersiveengineering:stone_decoration:1>, <ore:clayPorcelain>]
 ]);
+mods.prodigytech.explosionfurnace.recipes.addRecipe(
+	<immersiveengineering:stone_decoration:1> * 3, <immersiveengineering:stone_decoration:2> * 3, 3000, 
+	<ore:plateSteel>, 1
+);
+
 recipes.remove(<immersiveengineering:stone_decoration:10>);
 recipes.addShaped("ia_kiln", <immersiveengineering:stone_decoration:10> * 4, [
 	[<contenttweaker:firebrick_block>, <quark:sandy_bricks>, <contenttweaker:firebrick_block>], 

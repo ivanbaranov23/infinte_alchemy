@@ -45,7 +45,7 @@ function addSimpleCrushingRecipeWByproduct(ingot as IItemStack, dust as IItemSta
 
 function addSawRecipe(log as IItemStack, planks as IItemStack){
 	mods.prodigytech.heatsawmill.addRecipe(log, planks);
-	mods.thermalexpansion.Sawmill.addRecipe(planks, log, 2000);
+	mods.thermalexpansion.Sawmill.addRecipe(planks, log, 1500);
 	mods.mekanism.sawmill.addRecipe(log, planks);
 }
 function addSawRecipeWByproduct(log as IItemStack, planks as IItemStack, byprod as IItemStack, chance100 as int){

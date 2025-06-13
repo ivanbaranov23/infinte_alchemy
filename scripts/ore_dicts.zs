@@ -78,3 +78,5 @@
     <ore:oreChunkOrichalcum>.add(<contenttweaker:orichalcum_chunk>);
     <ore:oreChunkZirconium>.add(<contenttweaker:zirconium_chunk>);
 }
+
+//slime

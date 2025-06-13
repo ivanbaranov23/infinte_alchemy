@@ -7,6 +7,39 @@ import mods.thermalexpansion.Imbuer;
 
 import mods.modularmachinery.RecipeBuilder;
 
+
+{//pilkeum
+    recipes.addShapeless("pilkeum", <contenttweaker:pilkeum> * 2, [
+        <prodigytech:ferramic_dust>, <prodigytech:ferramic_dust>, 
+        <harvestcraft:carrotjuiceitem>,
+        <botania:dye:6>,
+        <minecraft:gunpowder>,
+        <contenttweaker:weak_enhancer>
+    ]);
+    mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2050);
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:aluminum> * (144 * 9), <contenttweaker:pilkeum>, 2000
+    );
+
+
+    mods.tconstruct.Melting.addRecipe(<liquid:pilkon_blood> * 1000, <contenttweaker:pilkon_corpse>, 2050);
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:pilkon_blood> * 1000, <contenttweaker:pilkon_corpse>, 5000
+    );
+    mods.immersivepetroleum.Distillation.addRecipe(
+        [<liquid:biodiesel> * 200, <liquid:colagen> * 15], 
+        [<contenttweaker:pilkeum>], <liquid:pilkon_blood> * 50, 
+        2000, 25, 
+        [0.04]
+    );
+    
+    //mods.immersiveengineering.Refinery.addRecipe(<liquid:pilkon_blood> * 15, <liquid:blood> * 50, <liquid:if.pink_slime> * 50, 8800);
+    scripts.content_machines.addFluidMixerRecipe(<liquid:pilkon_blood> * 750, <liquid:blood> * 1000, <liquid:if.pink_slime> * 1000, <prodigytech:ferramic_dust>, 200, 150);
+    //scripts.content_machines.addFluidMixerRecipe(<liquid:pilkon_blood> * 750, <liquid:blood> * 1000, <liquid:if.pink_slime> * 1000, <contenttweaker:ferramic_gravel> * 4, 200, 150);
+
+
+}
+
 {//tartaric gel
     scripts.content_machines.addAdvancedMixerRecipe(
         [], [<liquid:tartaric_gel> * 250],

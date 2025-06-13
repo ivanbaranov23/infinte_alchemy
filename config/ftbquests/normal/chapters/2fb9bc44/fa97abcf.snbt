@@ -1,0 +1,57 @@
+{
+	title: "More metals and alloys",
+	x: 12.5d,
+	y: -4.0d,
+	text: [
+		"Can be obtained from creosolon or from PT ore gen"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e3432e28",
+		type: "item",
+		items: [{
+			item: "taiga:karmesine_ingot"
+		}]
+	},
+	{
+		uid: "16de9074",
+		type: "item",
+		items: [{
+			item: "taiga:ovium_ingot"
+		}]
+	},
+	{
+		uid: "90509019",
+		type: "item",
+		items: [{
+			item: "taiga:jauxum_ingot"
+		}]
+	},
+	{
+		uid: "0a26bab1",
+		type: "item",
+		items: [{
+			item: "taiga:terrax_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "87354189",
+		type: "item",
+		item: "taiga:karmesine_block"
+	},
+	{
+		uid: "c1b1c043",
+		type: "item",
+		item: "taiga:ovium_block"
+	},
+	{
+		uid: "2e0e2bc1",
+		type: "item",
+		item: "taiga:jauxum_block"
+	},
+	{
+		uid: "d4c64cdd",
+		type: "item",
+		item: "taiga:terrax_block"
+	}]
+}

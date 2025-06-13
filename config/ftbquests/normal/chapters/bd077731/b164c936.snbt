@@ -1,0 +1,14 @@
+{
+	x: 3.5d,
+	y: 0.0d,
+	dependencies: [
+		"a271d997"
+	],
+	tasks: [{
+		uid: "e56c0384",
+		type: "item",
+		items: [{
+			item: "storagenetwork:request"
+		}]
+	}]
+}
