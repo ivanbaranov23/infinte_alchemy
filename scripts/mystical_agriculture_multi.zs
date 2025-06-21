@@ -97,7 +97,7 @@ mods.thermalexpansion.Crucible.addRecipe(
     <ore:inferiumSlurp3>.addItems([<mekanism:otherdust>, <prodigytech:emerald_dust>, <prodigytech:energion_dust>, <immersiveengineering:material:17>]);
 }
 
-{
+{//slurp1
     var rec = RecipeBuilder.newBuilder("slurp1", "essence_extractor", 20 * 6);
 
     rec.addEnergyPerTickInput(256);
@@ -106,7 +106,7 @@ mods.thermalexpansion.Crucible.addRecipe(
     rec.addItemInput(<ore:inferiumSlurp1>, 10);
 
     rec.build();
-}{
+}{//slurp2
     var rec = RecipeBuilder.newBuilder("slurp2", "essence_extractor", 20 * 6 * 3);
 
     rec.addEnergyPerTickInput(1024);
@@ -115,7 +115,7 @@ mods.thermalexpansion.Crucible.addRecipe(
     rec.addItemInput(<ore:inferiumSlurp2>, 10);
 
     rec.build();
-}{
+}{//slurp3
     var rec = RecipeBuilder.newBuilder("slurp3", "essence_extractor", 20 * 6 * 9);
 
     rec.addEnergyPerTickInput(4096);
@@ -156,4 +156,127 @@ mods.thermalexpansion.Crucible.addRecipe(
     rec.addItemOutput(<mysticalagriculture:end_inferium_ore> * 16);
 
     rec.build();
+}
+
+{//essence compress 1
+    {
+        var rec = RecipeBuilder.newBuilder("essence_compress1", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(10 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
+        rec.addItemInput(<mysticalagriculture:crafting> * 16);
+        rec.addItemInput(<ore:slimecrystal>, 4);
+        
+        rec.addItemOutput(<mysticalagriculture:crafting:1> * 4);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_compress2", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(20 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 3000);
+        rec.addItemInput(<mysticalagriculture:crafting:1> * 16);
+        rec.addItemInput(<ore:slimecrystal>, 6);
+        
+        rec.addItemOutput(<mysticalagriculture:crafting:2> * 4);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_compress3", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(40 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 5000);
+        rec.addItemInput(<mysticalagriculture:crafting:2> * 16);
+        rec.addItemInput(<ore:slimecrystal>, 8);
+        
+        rec.addItemOutput(<mysticalagriculture:crafting:3> * 4);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_compress4", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(80 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 7000);
+        rec.addItemInput(<mysticalagriculture:crafting:3> * 16);
+        rec.addItemInput(<ore:slimecrystal>, 12);
+        
+        rec.addItemOutput(<mysticalagriculture:crafting:4> * 4);
+
+        rec.build();
+    }
+}
+
+{//essence crystal 1
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal1", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(100 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 4000);
+        rec.addItemInput(<mysticalagriculture:crafting> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<mysticalagriculture:crafting:1> * 64);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal2", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(300 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 8000);
+        rec.addItemInput(<mysticalagriculture:crafting:1> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<mysticalagriculture:crafting:2> * 64);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal3", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(900 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 16000);
+        rec.addItemInput(<mysticalagriculture:crafting:2> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<mysticalagriculture:crafting:3> * 64);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal4", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(2700 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 32000);
+        rec.addItemInput(<mysticalagriculture:crafting:3> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<mysticalagriculture:crafting:4> * 64);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal5", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(8100 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addItemInput(<mysticalagriculture:crafting:4> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<mysticalagradditions:insanium> * 64);
+
+        rec.build();
+    }
 }

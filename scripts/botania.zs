@@ -142,6 +142,16 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<botania:manaresource:16>, <contenttweaker:insulation_fabric>, <botania:manaresource:16>]
     ]);
 
+    {//potato
+        ManaInfusion.removeRecipe(<botania:tinypotato>);
+        ManaInfusion.addInfusion(<botania:tinypotato>, <minecraft:potato>, 125);
+        ManaInfusion.addInfusion(<botania_tweaks:compressed_tiny_potato_1>, <contenttweaker:potato_block1>, 125);
+        ManaInfusion.addInfusion(<botania_tweaks:compressed_tiny_potato_2>, <contenttweaker:potato_block2>, 125 * 8);
+        ManaInfusion.addInfusion(<botania_tweaks:compressed_tiny_potato_3>, <contenttweaker:potato_block3>, 125 * 64);
+        ManaInfusion.addInfusion(<botania_tweaks:compressed_tiny_potato_4>, <contenttweaker:potato_block4>, 125 * 512);
+        ManaInfusion.addInfusion(<botania_tweaks:compressed_tiny_potato_5>, <contenttweaker:potato_block5>, 125 * 4096);
+    }
+
     //ManaInfusion.removeRecipe();
     /*
     ManaInfusion.addInfusion(<botania:manaresource:1>, <minecraft:ender_pearl>, 6000);

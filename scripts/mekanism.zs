@@ -398,7 +398,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	]);
 	recipes.remove(<mekanism:basicblock:14>);
 	recipes.addShaped("ia_evaporation_controller", <mekanism:basicblock:14>, [
-		[<mekanism:basicblock2>, <quantumflux:craftingpiece:5>, <mekanism:basicblock2>], 
+		[<mekanism:basicblock2>, <mekanism:controlcircuit:3>, <mekanism:basicblock2>], 
 		[<mekanism:electrolyticcore>, <twilightforest:tower_device:12>, <mekanism:electrolyticcore>], 
 		[<mekanism:basicblock2>, <alchemistry:evaporator>, <mekanism:basicblock2>]
 	]);

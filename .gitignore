@@ -21,3 +21,13 @@ cache/groovy/_index.json
 cache/groovy/_index.json
 cache/groovy/postInit/postInit.inworldcrafting.clz
 crafttweaker.log
+*.log
+hei_bookmarks.ini
+OpenComputersMod-1.8.7-52-libjnlua52-windows-x86_64.dll
+OpenComputersMod-1.8.7-54-libjnlua54-windows-x86_64.dll
+OpenComputersMod-1.8.7-53-libjnlua53-windows-x86_64.dll
+options.txt
+patchouli_data.json
+usercache.json
+usernamecache.json
+BotaniaVars.dat

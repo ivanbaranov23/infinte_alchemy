@@ -62,7 +62,7 @@ var staffwood_flower = VanillaFactory.createItem("staffwood_flower");
     staffwood_flower.register();
 var staffwood_mushroom = VanillaFactory.createItem("staffwood_mushroom");
     staffwood_mushroom.maxStackSize = 1;
-    staffwood_mushroom.maxDamage = 100;
+    staffwood_mushroom.maxDamage = 200;
     staffwood_mushroom.toolLevel = 1;
     staffwood_mushroom.toolClass = "staffwood_mushroom";
     staffwood_mushroom.itemDestroyedBlock = function(item, world, block, pos, player) {
@@ -185,6 +185,12 @@ var staffwood_bug = VanillaFactory.createItem("staffwood_bug");
                     stack.damage(1, player);
                 } 
 
+                else if (compare_items(offhand, <item:mod_lavacow:acidicheart>)){
+                    Commands.call("summon mod_lavacow:boneworm " ~ ent_pos_str, player, world, false, true);
+                    offhand.shrink(1);
+                    stack.damage(1, player);
+                } 
+
                 
                 return mods.contenttweaker.ActionResult.success();
             }
@@ -247,6 +253,7 @@ var staffwood_fire = VanillaFactory.createItem("staffwood_fire");
 function addOreshroom(name as string){
     var oreshroom = VanillaFactory.createBlock("oreshroom_" ~ name, <blockmaterial:rock>);
     oreshroom.setToolClass("axe");
+    oreshroom.setToolLevel(0);
     oreshroom.setBlockLayer("TRANSLUCENT");
     oreshroom.register();
 }

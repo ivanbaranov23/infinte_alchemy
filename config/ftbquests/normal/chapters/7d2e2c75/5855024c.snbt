@@ -33,15 +33,14 @@
 		item: "contenttweaker:quest_coin"
 	},
 	{
-		uid: "b7699893",
-		type: "choice",
-		icon: {
+		uid: "771c2369",
+		type: "item",
+		item: {
 			id: "mekanism:basicblock2",
 			Damage: 3s,
 			tag: {
 				tier: 3
 			}
-		},
-		table: 1
+		}
 	}]
 }

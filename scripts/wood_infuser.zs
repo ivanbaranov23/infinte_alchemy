@@ -248,10 +248,18 @@ addWoodInfuseBlueFireJEI(<contenttweaker:entwood_block>, <contenttweaker:revived
 
 addWoodInfuseFire(
     <blockstate:mekanism:saltblock>, <blockstate:alchemistry:wet_sand>, [
-        <ore:dyeWhite>
+        <ore:dyeWhite> * 2, <minecraft:sugar> * 3
 ], 20);
 addWoodInfuseFireJEI(<mekanism:saltblock>, <alchemistry:wet_sand>, [
-        <ore:dyeWhite>
+        <ore:dyeWhite> * 2, <minecraft:sugar> * 3
+]);
+
+addWoodInfuseFire(
+    <blockstate:erebus:mud>, <blockstate:tconstruct:soil:type=slimy_mud_blue>, [
+        <contenttweaker:bamboo_dust>, <biomesoplenty:mudball> * 2
+], 20);
+addWoodInfuseFireJEI(<erebus:mud>, <tconstruct:soil:2>, [
+        <contenttweaker:bamboo_dust>, <biomesoplenty:mudball> * 2
 ]);
 
 

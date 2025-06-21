@@ -82,7 +82,7 @@ recipes.addShapeless("ia_fiery_blood1", <twilightforest:fiery_blood> * 8, [
 	<twilightforest:trophy:2>,
 	<minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>
 ]);
-recipes.addShapeless("ia_fiery_blood1", <twilightforest:fiery_blood> * 2, [
+recipes.addShapeless("ia_fiery_blood2", <twilightforest:fiery_blood> * 2, [
 	<twilightforest:hydra_chop>,
 	<minecraft:glass_bottle>, <minecraft:glass_bottle>
 ]);

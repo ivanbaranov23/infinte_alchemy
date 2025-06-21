@@ -188,7 +188,8 @@ val ores as IItemStack[string][string][string] = {
             alloySlag3: <minecraft:iron_ingot> * 3,
 
             drilling: <mekanism:dirtydust> * 3,
-            madeFrom: <exnihilocreatio:item_ore_iron> * 3
+            madeFrom: <exnihilocreatio:item_ore_iron> * 3,
+            madeWeak: <exnihilocreatio:item_ore_iron>
         },
 
         dense: {
@@ -300,7 +301,8 @@ val ores as IItemStack[string][string][string] = {
             alloySlag3: <thermalfoundation:material:128> * 3,
 
             drilling: <mekanism:dirtydust:3> * 3,
-            madeFrom: <exnihilocreatio:item_ore_copper> * 3
+            madeFrom: <exnihilocreatio:item_ore_copper> * 3,
+            madeWeak: <exnihilocreatio:item_ore_copper>
         },
 
         clump: {
@@ -423,7 +425,8 @@ val ores as IItemStack[string][string][string] = {
 
             drilling: <mekanism:dirtydust:4> * 3,
 
-            madeFrom: <exnihilocreatio:item_ore_tin> * 3
+            madeFrom: <exnihilocreatio:item_ore_tin> * 3,
+            madeWeak: <exnihilocreatio:item_ore_tin>
         },
         clump: {
             item: <mekanism:clump:4>,
@@ -462,7 +465,8 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod2: <contenttweaker:dolomite>,
 
             drilling: <mekores:mekanismore:33> * 3,
-            madeFrom: <exnihilocreatio:item_ore_aluminum> * 3
+            madeFrom: <exnihilocreatio:item_ore_aluminum> * 3,
+            madeWeak: <exnihilocreatio:item_ore_aluminum>
         },
         bauxite: {
             item: <immersiveengineering:ore:1>,
@@ -601,6 +605,7 @@ val ores as IItemStack[string][string][string] = {
             alloySlag3: <thermalfoundation:material:133> * 3,
 
             madeFrom: <exnihilocreatio:item_ore_nickel> * 3,
+            madeWeak: <exnihilocreatio:item_ore_nickel>,
             drilling: <mekores:mekanismore:13> * 3
         },
 
@@ -687,7 +692,8 @@ val ores as IItemStack[string][string][string] = {
             alloySlag3: <contenttweaker:zinc_ingot> * 3,
 
             drilling: <mekores:mekanismore:113> * 3,
-            madeFrom: <exnihilocreatio:item_ore_zinc> * 3
+            madeFrom: <exnihilocreatio:item_ore_zinc> * 3,
+            madeWeak: <exnihilocreatio:item_ore_zinc>
         },
 
         dense: {
@@ -742,7 +748,8 @@ val ores as IItemStack[string][string][string] = {
             alloySlag3: <tconstruct:ingots> * 3,
 
             drilling: <mekores:mekanismore:38> * 3,
-            madeFrom: <exnihilocreatio:item_ore_cobalt> * 3
+            madeFrom: <exnihilocreatio:item_ore_cobalt> * 3,
+            madeWeak: <exnihilocreatio:item_ore_cobalt>
         },
         overworld: {
             item: <netherendingores:ore_other_1:4>,
@@ -810,7 +817,8 @@ val ores as IItemStack[string][string][string] = {
             alloySlag3: <tconstruct:ingots:1> * 3,
 
             drilling: <mekores:mekanismore:43> * 3,
-            madeFrom: <exnihilocreatio:item_ore_ardite> * 3
+            madeFrom: <exnihilocreatio:item_ore_ardite> * 3,
+            madeWeak: <exnihilocreatio:item_ore_ardite>
         },
         overworld: {
             item: <netherendingores:ore_other_1:2>,
@@ -890,6 +898,7 @@ val ores as IItemStack[string][string][string] = {
             alloySlag3: <minecraft:gold_ingot> * 3,
 
             madeFrom: <exnihilocreatio:item_ore_gold> * 3,
+            madeCreosolon: <exnihilocreatio:item_ore_gold>,
             drilling: <mekanism:dirtydust:1> * 3,
         },
 
@@ -1039,7 +1048,8 @@ val ores as IItemStack[string][string][string] = {
 
             drilling: <mekanism:dirtydust:5> * 3,
 
-            madeFrom: <exnihilocreatio:item_ore_silver> * 3
+            madeFrom: <exnihilocreatio:item_ore_silver> * 3,
+            madeCreosolon: <exnihilocreatio:item_ore_silver>
         },
         dense: {
             item: <densemetals:dense_silver_ore>,
@@ -1135,7 +1145,8 @@ val ores as IItemStack[string][string][string] = {
 
             drilling: <mekanism:dirtydust:6> * 3,
 
-            madeFrom: <exnihilocreatio:item_ore_lead> * 3
+            madeFrom: <exnihilocreatio:item_ore_lead> * 3,
+            madeCreosolon: <exnihilocreatio:item_ore_lead>
         },
 
         clump: {
@@ -1238,7 +1249,8 @@ val ores as IItemStack[string][string][string] = {
             alloySlag3: <mekanism:ingot:1> * 3,
 
             drilling: <mekanism:dirtydust:2> * 3,
-            madeFrom: <exnihilocreatio:item_ore_osmium> * 3
+            madeFrom: <exnihilocreatio:item_ore_osmium> * 3,
+            madeCreosolon: <exnihilocreatio:item_ore_osmium>
         },
         clump: {
             item: <mekanism:clump:2>,
@@ -2333,7 +2345,8 @@ val ores as IItemStack[string][string][string] = {
             drilling: <mekores:mekanismore:298>  * 3,
             
             madeFrom: <contenttweaker:eezo_pieces> * 3,
-            made2x2: <contenttweaker:eezo_pieces>
+            made2x2: <contenttweaker:eezo_pieces>,
+            madeCreosolon: <contenttweaker:eezo_pieces>
         },
         ore: {
             item: <taiga:eezo_ore>,
@@ -2376,7 +2389,8 @@ val ores as IItemStack[string][string][string] = {
             drilling: <mekores:mekanismore:273> * 3,
 
             madeFrom: <contenttweaker:karmesine_pieces> * 3,
-            made2x2: <contenttweaker:karmesine_pieces>
+            made2x2: <contenttweaker:karmesine_pieces>,
+            madeWeak: <contenttweaker:karmesine_pieces>
         },
         clump: {
             item: <mekores:mekanismore:272>,
@@ -2416,7 +2430,8 @@ val ores as IItemStack[string][string][string] = {
             drilling: <mekores:mekanismore:278> * 3,
 
             madeFrom: <contenttweaker:ovium_pieces> * 3,
-            made2x2: <contenttweaker:ovium_pieces>
+            made2x2: <contenttweaker:ovium_pieces>,
+            madeWeak: <contenttweaker:ovium_pieces>
         },
         clump: {
             item: <mekores:mekanismore:277>,
@@ -2458,7 +2473,8 @@ val ores as IItemStack[string][string][string] = {
             drilling: <mekores:mekanismore:283> * 3,
 
             madeFrom: <contenttweaker:jauxum_pieces> * 3,
-            made2x2: <contenttweaker:jauxum_pieces>
+            made2x2: <contenttweaker:jauxum_pieces>,
+            madeWeak: <contenttweaker:jauxum_pieces>
         },
         clump: {
             item: <mekores:mekanismore:282>,
@@ -2498,7 +2514,8 @@ val ores as IItemStack[string][string][string] = {
             drilling: <mekores:mekanismore:293> * 3,
 
             madeFrom: <contenttweaker:osram_pieces> * 3,
-            made2x2: <contenttweaker:osram_pieces>
+            made2x2: <contenttweaker:osram_pieces>,
+            madeCreosolon: <contenttweaker:osram_pieces>
         },
         nether: {
             item: <taiga:osram_ore>,
@@ -3927,6 +3944,19 @@ for material in ores {
                 [ores[material][ore_type].made2x2, ores[material][ore_type].made2x2]
             ]);
         }
+        if (ores[material][ore_type] has "madeWeak"){
+            recipes.addShaped("op_" ~ material ~ ore_type ~ "_Weak_craft", ores[material][ore_type].item, [
+                [ores[material][ore_type].madeWeak, ores[material][ore_type].madeWeak],
+                [ores[material][ore_type].madeWeak, <contenttweaker:weak_enhancer>]
+            ]);
+        }
+        if (ores[material][ore_type] has "madeCreosolon"){
+            recipes.addShaped("op_" ~ material ~ ore_type ~ "_Creosolon_craft", ores[material][ore_type].item, [
+                [ores[material][ore_type].madeCreosolon, ores[material][ore_type].madeCreosolon],
+                [ores[material][ore_type].madeCreosolon, <contenttweaker:creosolon>]
+            ]);
+        }
+
         //cleaning
         if (ores[material][ore_type] has "cleaning"){
             enrichment.addRecipe(ores[material][ore_type].item, ores[material][ore_type].cleaning);

@@ -40,13 +40,13 @@ function addWeakEnhancerRecipe(inp as IItemStack, outp as IItemStack){
     recipes.addShapeless("weak_enh" ~ inp.displayName, outp, [inp, <contenttweaker:weak_enhancer>]);
 }
 {//weak enhancer
-    recipes.addShapeless("ia_weak_enhancer", <contenttweaker:weak_enhancer> * 4, [
+    recipes.addShapeless("ia_weak_enhancer1", <contenttweaker:weak_enhancer> * 4, [
         <biomesoplenty:fleshchunk>,
         <contenttweaker:slime_shard>,
         <minecraft:redstone>,
         <minecraft:flint>
     ]);
-    recipes.addShapeless("ia_weak_enhancer", <contenttweaker:weak_enhancer> * 6, [
+    recipes.addShapeless("ia_weak_enhancer2", <contenttweaker:weak_enhancer> * 6, [
         <biomesoplenty:fleshchunk>,
         <contenttweaker:slime_shard>,
         <minecraft:redstone>,

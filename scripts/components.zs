@@ -1264,11 +1264,11 @@ scripts.content_machines.addAssemblerRecipe(
         <contenttweaker:imperomite_catalyst> * 2
     ], <liquid:tignalum> * 576, 40, 10000
 );
-recipes.addShaped("ia_conductive_alloy_coil", <contenttweaker:conductive_alloy_coil>, [
+/*recipes.addShaped("ia_conductive_alloy_coil", <contenttweaker:conductive_alloy_coil>, [
 	[<contenttweaker:conductive_alloy_wire>, <contenttweaker:tungsten_coil>, <contenttweaker:conductive_alloy_wire>], 
 	[<immersiveengineering:wirecoil:2>, <botania:manaresource:3>, <immersiveengineering:wirecoil:2>], 
 	[<contenttweaker:conductive_alloy_wire>, <contenttweaker:tungsten_coil>, <contenttweaker:conductive_alloy_wire>]
-]);
+]);*/
 
 
 mods.mekanism.reaction.addRecipe(
@@ -1821,15 +1821,15 @@ scripts.content_machines.addAssemblerRecipe(
 }
 
 scripts.content_machines.addAssemblerRecipe(
-	[<contenttweaker:secure_switch>], 
+	[<contenttweaker:secure_switch> * 4], 
 	[
-		<minecraft:lever>,
-		<contenttweaker:advanced_plating1_4> * 4,
-		<contenttweaker:explosion_resistant_plate> * 4,
-		<contenttweaker:advanced_plating2_2> * 4,
-		<contenttweaker:acid_resistant_steel_plate> * 4
+		<minecraft:lever> * 4,
+		<contenttweaker:advanced_plating1_4>,
+		<contenttweaker:explosion_resistant_plate>,
+		<contenttweaker:advanced_plating2_2>,
+		<contenttweaker:acid_resistant_steel_plate>
 	],
-	<liquid:tignalum> * (144 * 8), 20, 1024 
+	<liquid:tignalum> * (144 * 2), 20, 1024 
 );
 
 {//wither

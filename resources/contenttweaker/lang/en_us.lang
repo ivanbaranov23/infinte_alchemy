@@ -894,17 +894,15 @@ item.contenttweaker.duraluminumwood_ingot.name=Duraluminumwood Ingot
 item.contenttweaker.pereskia_soup.name=Pereskia Soup
 item.contenttweaker.burn_powder.name=Burn Powder
 
-tile.contenttweaker.leaves_vanilla.name=Flowered Oak Leaves
-        var leaves_twilight  VanillaFactory.createBlock("leaves_twilight", <blockmaterial:rock>);
+tile.contenttweaker.leaves_vanilla.name=Flowered Oak leaves_crystal
         
 tile.contenttweaker.leaves_erebus.name=Flowered Marshwood Leaves    
-        var leaves_crystal  VanillaFactory.createBlock("leaves_crystal
 
 item.contenttweaker.druidic_dust.name=Druidic Powder
 fluid.pereskia_soup=Pereskia Soup
 fluid.druid_soup=Enchanted Druid Soup
 
-item.contenttweaker.transmut_gel.name=Druid Trasnmutation Gel
+item.contenttweaker.transmut_gel.name=Druid Transmutation Gel
 
 item.contenttweaker.illagerite.name=Raw Illagerite
 item.contenttweaker.illagerite_dust.name=Illagerite Dust

@@ -713,6 +713,7 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("blood_bronze_ball").register();
 
     VanillaFactory.createItem("evil_ball").register();
+    addWater("vile");
 
     VanillaFactory.createItem("crabolion").register();
 
@@ -948,6 +949,8 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("death_metal_gear").register();
     VanillaFactory.createBlock("death_metal_block", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("death_metal_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("death_metal_dense_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("living_waste", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("death_metal_dust").register();
     VanillaFactory.createItem("death_metal_pieces").register();

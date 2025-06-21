@@ -252,8 +252,8 @@ recipes.addShaped("ia_heart_of_ra", <atum:heart_of_ra>, [
 recipes.remove(<atum:radiant_beacon>);
 recipes.addShaped("ia_radiant_beacon", <atum:radiant_beacon>, [
 	[<atum:crystal_glass>, <atum:crystal_glass>, <atum:crystal_glass>], 
-	[<contenttweaker:relic_ingot>, <atum:heart_of_ra>, <contenttweaker:relic_ingot>], 
-	[<atum:limestone_brick_large>, <contenttweaker:singularity_dust>, <atum:limestone_brick_large>]
+	[<contenttweaker:singularity_dust>, <atum:heart_of_ra>, <contenttweaker:singularity_dust>], 
+	[<atum:limestone_brick_large>, <contenttweaker:relic_block>, <atum:limestone_brick_large>]
 ]);
 
 //soil

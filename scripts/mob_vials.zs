@@ -626,7 +626,7 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <minecraft:bone> * 4: 0.05,
             <contenttweaker:primitive_eyes>: 0.05,
             <contenttweaker:undead_essence>.weight(2.0 / 10000): 0.001
-        }, <liquid:rot> * 100, 2
+        }, <liquid:vile> * 100, 1
     );
 }
 

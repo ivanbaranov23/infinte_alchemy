@@ -1,0 +1,15 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	dependencies: [
+		"7aa8e742"
+	],
+	optional: true,
+	tasks: [{
+		uid: "16143b86",
+		type: "item",
+		items: [{
+			item: "betternether:bone_mushroom"
+		}]
+	}]
+}

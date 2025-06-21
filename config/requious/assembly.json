@@ -285,40 +285,15 @@
       "z2": 1.0
     }
   },
-  {
-    "placeType": "Up",
-    "layerType": "Cutout",
-    "hasGUI": true,
-    "extraVariants": [],
-    "resourceName": "feeder",
-    "model": "contenttweaker:machines/fluid_mixer",
-    "colors": [
-      {
-        "r": 255,
-        "g": 255,
-        "b": 255,
-        "a": 255
-      }
-    ],
-    "hardness": 5.0,
-    "blastResistance": 5.0,
-    "aabb": {
-      "x1": 0.0,
-      "y1": 0.0,
-      "z1": 0.0,
-      "x2": 1.0,
-      "y2": 1.0,
-      "z2": 1.0
-    }
-  },
+  
 
 
-  {
+  {"resourceName": "sorter_food",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "sorter_food",
+    
     "model": "contenttweaker:machines/sorter_food",
     "colors": [
       {
@@ -339,12 +314,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "sorter_livespan",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "sorter_livespan",
+    
     "model": "contenttweaker:machines/sorter_livespan",
     "colors": [
       {
@@ -366,12 +341,38 @@
     }
   },
 
-  {
+  {"resourceName": "void_infuser",
+    "placeType": "Up",
+    "layerType": "Cutout",
+    "hasGUI": true,
+    "extraVariants": [],
+    
+    "model": "contenttweaker:machines/void_infuser",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+  },
+  {"resourceName": "feeder",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "void_infuser",
+    
     "model": "contenttweaker:machines/recycler",
     "colors": [
       {

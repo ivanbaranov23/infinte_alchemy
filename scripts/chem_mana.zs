@@ -40,6 +40,26 @@ import mods.modularmachinery.RecipeBuilder;
 
 }
 
+{//evil
+
+    //normal: 1 ns -> 8 ei
+
+    //this:
+    //1 ns -> 1000 lns
+    //1000 lns -> 1000 e
+    //1000 e -> 4000 en
+    //4000 en -> 20 ei
+
+    mods.mekanism.chemical.infuser.addRecipe(<gas:rfna>, <gas:evil>, <gas:evil_nitrate> * 4);
+    mods.mekanism.compressor.addRecipe(<mekanism:enrichediron>, <gas:evil_nitrate>, <extrautils2:ingredients:17>);
+    
+    //vile
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:awaken_witherite>, <liquid:vile> * 2000, <gas:nickel> * 2000, 
+        null, <gas:evil> * 100, 900, 60
+    );
+}
+
 {//tartaric gel
     scripts.content_machines.addAdvancedMixerRecipe(
         [], [<liquid:tartaric_gel> * 250],

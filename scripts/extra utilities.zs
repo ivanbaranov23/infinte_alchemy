@@ -2,6 +2,9 @@ import mods.extrautils2.Resonator;
 
 import scripts.recycler.addRecycle;
 
+
+scripts.helper.addSawRecipe(<minecraft:ender_pearl>, <extrautils2:endershard> * 8);
+
 {//polished stone
 	recipes.remove(<extrautils2:decorativesolid:2>);
 

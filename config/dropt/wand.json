@@ -1,6 +1,6 @@
 {
     "rules":[
-        {
+        {"_name": "living shovel forest clay",
             "match": {
                 "blocks": {"blocks": ["minecraft:clay:0"]},
                 "harvester": {
@@ -16,7 +16,7 @@
                 }
             ]
         },
-        {
+        {"_name": "flower staff rec",
             "match": {
                 "blocks": {"blocks": [
                     "biomesoplenty:leaves_3:9",
@@ -40,7 +40,7 @@
                 }
             ]
         },
-        {
+        {"_name": "flower staff mc leaves",
             "match": {
                 "blocks": {"blocks": [
                     "minecraft:leaves:*"
@@ -102,7 +102,7 @@
                 }
             ]
         },
-        {
+        {"_name": "flower staff mc leaves alt",
             "match": {
                 "blocks": {"blocks": [
                     "contenttweaker:leaves_vanilla"
@@ -162,7 +162,7 @@
         },
 
         
-        {
+        {"_name": "flower staff erebus leaves",
             "match": {
                 "blocks": {"blocks": [
                     "erebus:leaves_marshwood:*"
@@ -249,7 +249,7 @@
                 }
             ]
         },
-        {
+        {"_name": "flower staff erebus leaves alt",
             "match": {
                 "blocks": {"blocks": [
                     "contenttweaker:leaves_erebus"
@@ -335,28 +335,7 @@
         },
 
 
-        {
-            "match": {
-                "blocks": {"blocks": [
-                    "contenttweaker:mushroomite_mud:0"
-                ]},
-                "harvester": {
-                    "heldItemMainHand": {"items" :["contenttweaker:staffwood"]}
-                }
-            },
-            "drops": [
-                {
-                    "item": {
-                        "items": [
-                            "contenttweaker:staffwood_mushroom"
-                        ],
-                        "quantity": {
-                            "fixed": 1
-                        }
-                    }
-                }
-            ]
-        },
+        
 
         {"match": {"blocks": {"blocks": ["erebus:kaizers_fingers_mushroom_block:14"]}, 
                 "harvester": {
@@ -374,16 +353,6 @@
                     },
                     "replaceBlock": {
                         "block": "minecraft:netherrack"
-                    }
-                },
-                {
-                    "selector": {
-                        "weight": {
-                            "value": 4
-                        }
-                    },
-                    "replaceBlock": {
-                        "block": "biomesoplenty:flesh"
                     }
                 },
 
@@ -451,16 +420,6 @@
                     },
                     "replaceBlock": {
                         "block": "minecraft:netherrack"
-                    }
-                },
-                {
-                    "selector": {
-                        "weight": {
-                            "value": 4
-                        }
-                    },
-                    "replaceBlock": {
-                        "block": "biomesoplenty:flesh"
                     }
                 },
 
