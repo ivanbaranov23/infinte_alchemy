@@ -2152,3 +2152,43 @@ fluid.pilkon_blood=Pilkon Blood
 item.contenttweaker.flapper.name=Flapper
 
 fluid.flolit_oil=Flolit Oil
+
+
+item.contenttweaker.nuke.name=Nuke
+item.contenttweaker.gravity_ingot.name=Gravity Ingot
+item.contenttweaker.gravity_dust.name=Gravity Dust
+
+item.contenttweaker.imperial_dust1.name=Not Secret Imperial Steel Component
+item.contenttweaker.imperial_dust2.name=Secret Imperial Steel Component
+item.contenttweaker.imperial_dust3.name=Mixture of Leftovers of Secret Imperial Steel Component
+
+tile.contenttweaker.entwood_block.name=Block of Entwood
+
+item.contenttweaker.soapart_dust.name=Soapart Dust
+item.contenttweaker.soapart.name=Soapart
+
+item.contenttweaker.undead_essence.name=Undead Essence
+item.contenttweaker.tartaric_dust.name=Tartaric Dust
+
+item.contenttweaker.blood_matter.name=Blood Matter
+item.contenttweaker.mixed_will_crystal.name=Mixed Will Crystal
+
+item.contenttweaker.terrabit.name=Terrabit
+item.contenttweaker.impure_mana_dust.name=Impure Mana Dust
+
+item.contenttweaker.palladium_mana_mesh.name=Palladium Mana Mesh
+
+item.contenttweaker.crabolion.name=Crabolion Ingot
+
+
+fluid.flowers=Flower Plasma
+fluid.flowers_depleted=Depleted Flower Plasma
+
+item.contenttweaker.plasma_gen.name=Plasma Unit
+item.contenttweaker.evil_core.name=Evil Core
+item.contenttweaker.tablet_good.name=Unevil Tablet
+item.contenttweaker.rune_mana_chip.name=Advanced Runic Chip
+
+tile.void_infuser.name=Void Infuser
+
+item.contenttweaker.carrot_copper.name=Cappet

@@ -101,7 +101,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     recipes.remove(<botania:pool>);
     mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool>, [
         [null, null, null, null, null], 
-        [<contenttweaker:rune_base>, null, null, null, <contenttweaker:rune_base>], 
+        [<ore:livingrock>, null, null, null, <ore:livingrock>], 
         [<ore:livingrock>, <ore:plateMithril>, <ore:plateMithril>, <ore:plateMithril>, <ore:livingrock>], 
         [<ore:livingrock>, <contenttweaker:manabrick_block>, <contenttweaker:manabrick_block>, <contenttweaker:manabrick_block>, <ore:livingrock>], 
         [<ore:livingrock>, <ore:livingrock>, <ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
@@ -170,11 +170,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     }
 }
 
-recipes.addShaped("ia_frame13", <contenttweaker:mana_frame>, [
-	[<moreplates:manasteel_plate>, <contenttweaker:rune_base>, <moreplates:manasteel_plate>], 
-	[<contenttweaker:pure_cincinnasite>, <contenttweaker:blood_frame>, <contenttweaker:pure_cincinnasite>], 
-	[<moreplates:crystalline_alloy_plate>, <contenttweaker:bloody_circuit>, <moreplates:crystalline_alloy_plate>]
-]);
+
 recipes.remove(<botania:runealtar>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
 	[<bloodmagic:points_upgrade>, null, null, null, <bloodmagic:points_upgrade>], 
@@ -864,113 +860,42 @@ for rune_id in 0 to 16{
     ElvenTrade.removeRecipe(<moreplates:elementium_gear>);
     ElvenTrade.removeRecipe(<botania:storage:2>);
     ElvenTrade.addRecipe(
-        [<botania:manaresource:7>],
-        [<botania:manaresource>, <botania:manaresource>, <contenttweaker:neodymium_ingot>, <prodigytech:ferramic_block>, <contenttweaker:elemental_clay>, <ore:elfPayCheck>]
+        [<botania:manaresource:7> * 6],
+        [<botania:storage>, <contenttweaker:terrabit>, <contenttweaker:terrabit>, <contenttweaker:elemental_essence>, <botania:rune:3>]
     );
 
     //glass
     ElvenTrade.removeRecipe(<botania:elfglass>);
     ElvenTrade.addRecipe(
-        [<botania:elfglass>, <botania:elfglass>],
-        [<botania:managlass>, <botania:managlass>, <contenttweaker:high_heat_glass>, <thermalfoundation:glass:8>, <ore:elfPayCheck>]
+        [<botania:elfglass>],
+        [<botania:managlass>, <botania:managlass>, <contenttweaker:terra_base>, <industrialforegoing:laser_lens:14>]
     );
 }
-{//terra
-    recipes.remove(<botania:terraplate>);
-    mods.extendedcrafting.TableCrafting.addShaped(0, <botania:terraplate>, [
-        [null, null, null, null, null], 
-        [<minecraft:lapis_block>, <minecraft:lapis_block>, <contenttweaker:poisotheum>, <minecraft:lapis_block>, <minecraft:lapis_block>], 
-        [<moreplates:manasteel_gear>, <botania:rune:6>, <extendedcrafting:singularity_custom:23>, <botania:rune:5>, <moreplates:manasteel_gear>], 
-        [<moreplates:draconium_gear>, <contenttweaker:slate_7>, <contenttweaker:mana_frame>, <contenttweaker:slate_7>, <moreplates:draconium_gear>], 
-        [<moreplates:manasteel_gear>, <botania:rune:4>, <botania:rune:8>, <botania:rune:7>, <moreplates:manasteel_gear>]
-    ]);
-    recipes.addShaped("ia_terra_coral", <contenttweaker:terra_coral>, [
-        [<botania:manaresource:4>, <contenttweaker:life>, <botania:manaresource:4>], 
-        [<botania:manaresource:4>, <contenttweaker:coral_dust>, <botania:manaresource:4>], 
-        [<botania:manaresource:4>, <contenttweaker:life>, <botania:manaresource:4>]
-    ]);
-    addManaHint(<botania:manaresource:4>, [<botania:terraplate>], 2 * pool);
 
-    mods.botaniatweaks.Agglomeration.addRecipe(
-        <botania:manaresource:4> * 2,
-        [
-            <botania:manaresource>,
-            <botania:manaresource:1>,
-            <botania:manaresource:2>,
-            <contenttweaker:terra_coral>,
-            <contenttweaker:terra_coral>
-        ],
-        500000,
-        0xf6faab,
-        0x7dd2e0,
-        <contenttweaker:entwood_block>, <contenttweaker:entwood_block>, <actuallyadditions:block_crystal:1>,
-        null, null, <minecraft:lapis_block>
-    );
-    addManaHint(<botania:manaresource:4>, [<botania:terraplate>, <contenttweaker:entwood_block>], 500000);
-
-    mods.botaniatweaks.Agglomeration.addRecipe(
-        <botania:storage:1>,
-        [
-            <botania:storage:3>,
-            <botania:storage>,
-            <contenttweaker:manapearl_block>
-        ],
-        1000000 * 4,
-        0xf6faab,
-        0x7dd2e0,
-        <contenttweaker:terracrux>, <botania:shimmerrock>, <botania:shimmerrock>,
-        null, null, null
-    );
-    addManaHint(<botania:manaresource:4>, [<botania:terraplate>, <botania:storage:1>, <contenttweaker:terracrux>], 1000000 * 8);
-
-    recipes.addShaped("terracrux", <contenttweaker:terracrux>, [
-        [null, <moreplates:terrasteel_plate>, null], 
-        [<moreplates:terrasteel_plate>, <contenttweaker:manapearl_block>, <moreplates:terrasteel_plate>], 
-        [null, <moreplates:terrasteel_plate>, null]
-    ]);
-
-    //terrabit
-    recipes.addShapeless("ia_terra_bit", <contenttweaker:terrabit>, [
-        <botania:manaresource:18>,
-        <contenttweaker:entangled_particles>,
-        <contenttweaker:biotite_dust>,
-        <contenttweaker:biotite_dust>,
-        <contenttweaker:neodymium_dust>
-    ]);
-    scripts.content_machines.addBioAssemblerRecipe(
-        [<contenttweaker:terrabit> * 3], null,
-        [
-            <botania:manaresource:18> * 2,
-            <contenttweaker:neodymium_ingot>,
-            <contenttweaker:entangled_particles>,
-            <atum:ectoplasm> * 64
-        ], [
-            <liquid:biotite> * 250
-        ], <contenttweaker:research_terra>, 
-        40, 1000
-    );
-    scripts.content_machines.addBioAssemblerRecipe(
-        [<contenttweaker:terrabit> * 7], null,
-        [
-            <botania:manaresource:18> * 2,
-            <contenttweaker:neodymium_ingot>,
-            <contenttweaker:entangled_particles> * 2,
-            <atum:ectoplasm> * 64
-        ], [
-            <liquid:data> * 10
-        ], <contenttweaker:research_terra>, 
-        40, 1000
-    );
-}
 {//gaia
+    
+    recipes.remove(<botania:pylon:2>);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pylon:2>, [
+        [null, null, <botania:manaresource:8>, <botania:manaresource:8>, <botania:manaresource:8>, null, null], 
+        [null, <botania:manaresource:8>, <botania:manaresource:8>, <contenttweaker:elf_mana_circuit>, <botania:manaresource:8>, <botania:manaresource:8>, null], 
+        [null, <botania:manaresource:8>, <contenttweaker:death_metal_gear>, <contenttweaker:evil_core>, <contenttweaker:death_metal_gear>, <botania:manaresource:8>, null], 
+        [null, <botania:manaresource:8>, <bloodmagic:demon_pylon>, <botania:pylon:1>, <bloodmagic:demon_pylon>, <botania:manaresource:8>, null], 
+        [<moreplates:elementium_plate>, <moreplates:elementium_plate>, <contenttweaker:death_metal_gear>, <contenttweaker:mana_frame>, <contenttweaker:death_metal_gear>, <moreplates:elementium_plate>, <moreplates:elementium_plate>], 
+        [<moreplates:elementium_plate>, <moreplates:elementium_plate>, <contenttweaker:gearbox_great>, <contenttweaker:mana_frame>, <contenttweaker:gearbox_great>, <moreplates:elementium_plate>, <moreplates:elementium_plate>], 
+        [null, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>, <contenttweaker:elf_mana_circuit>, <simplyjetpacks:metaitemmods:11>, <simplyjetpacks:metaitemmods:11>, null]
+    ]);
+
+
+    //why here and not in metalworks?
+    //todo move
     recipes.remove(<botania:manaresource:14>);
     mods.extendedcrafting.TableCrafting.addShaped(0, <botania:manaresource:14>, [
         [null, null, null, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>], 
-        [null, null, <contenttweaker:mekanical_core>, <botania:manaresource:5>, <contenttweaker:mirion2_plate>, <contenttweaker:mirion2_gear>, <contenttweaker:mekanical_core>], 
-        [null, <contenttweaker:mekanical_core>, <contenttweaker:mirion2_plate>, <botania:rune:10>, <botania:rune:12>, <contenttweaker:mirion2_plate>, <contenttweaker:mekanical_core>], 
+        [null, null, <contenttweaker:mekanical_core>, <botania:manaresource:5>, <contenttweaker:terragem>, <contenttweaker:terragem>, <contenttweaker:mekanical_core>], 
+        [null, <contenttweaker:mekanical_core>, <contenttweaker:terragem>, <botania:rune:10>, <botania:rune:12>, <contenttweaker:terragem>, <contenttweaker:mekanical_core>], 
         [<contenttweaker:mekanical_core>, <botania:manaresource:5>, <botania:rune:13>, <botania:rune:9>, <botania:rune:11>, <botania:manaresource:5>, <contenttweaker:mekanical_core>], 
-        [<contenttweaker:mekanical_core>, <contenttweaker:mirion2_plate>, <botania:rune:15>, <botania:rune:14>, <contenttweaker:mirion2_plate>, <contenttweaker:mekanical_core>, null], 
-        [<contenttweaker:mekanical_core>, <contenttweaker:mirion2_gear>, <contenttweaker:mirion2_plate>, <botania:manaresource:5>, <contenttweaker:mekanical_core>, null, null], 
+        [<contenttweaker:mekanical_core>, <contenttweaker:terragem>, <botania:rune:15>, <botania:rune:14>, <contenttweaker:terragem>, <contenttweaker:mekanical_core>, null], 
+        [<contenttweaker:mekanical_core>, <contenttweaker:terragem>, <contenttweaker:terragem>, <botania:manaresource:5>, <contenttweaker:mekanical_core>, null, null], 
         [<contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, null, null, null]
     ]);
 

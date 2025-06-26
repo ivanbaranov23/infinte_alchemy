@@ -5,6 +5,8 @@ import crafttweaker.item.WeightedItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.liquid.ILiquidStack;
 
+import mods.thermalexpansion.InductionSmelter;
+
 
 function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedItemStack[], fin as ILiquidStack[], time_sec as int, energy as int, n_cons_fl as bool){
     var rec = RecipeBuilder.newBuilder(out.name, "large_cobblegen", time_sec * 20);
@@ -359,6 +361,13 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
     mods.tconstruct.Drying.addRecipe(<biomesoplenty:dried_sand>, <minecraft:sand>, 20 * 60 * 10);
     mods.tconstruct.Drying.addRecipe(<biomesoplenty:dried_sand>, <alchemistry:wet_sand>, 20 * 30);
+}
+{//soul stone
+    InductionSmelter.addRecipe(
+        <mysticalagriculture:soulstone>, 
+        <minecraft:sandstone>, <enderio:item_alloy_nugget:7>, 
+        1000
+    );
 }
 
 

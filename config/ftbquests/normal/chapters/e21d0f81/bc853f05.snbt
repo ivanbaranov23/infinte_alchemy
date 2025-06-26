@@ -1,0 +1,17 @@
+{
+	x: 1.0d,
+	y: 1.0d,
+	text: [
+		"Fish"
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "68ad1796",
+		type: "item",
+		items: [{
+			item: "atum:fish_forsaken"
+		}]
+	}]
+}

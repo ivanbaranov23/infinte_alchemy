@@ -256,14 +256,7 @@ scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:death_metal_ingot>
     
 }
 
-//terra
-scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:terra_base>], [<contenttweaker:terra_base_dust>], 1000 * 1000, 10);
-scripts.ore_processing.addTingalumOvenRecipe([<botania:manaresource:4>], [
-    <contenttweaker:terra_base>, 
-    <extendedcrafting:singularity_custom:11> * 2,
-    <roots:terra_moss> * 64, 
-    <botania:quartz:1>
-], 100 * 1000 * 1000, 30, 4000);
+
 
 
 //polonium

@@ -67,5 +67,17 @@
 			}
 		}],
 		ignore_nbt: 1b
+	},
+	{
+		uid: "e0fb2ca8",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_fluids"
+		}]
+	}],
+	rewards: [{
+		uid: "e3370288",
+		type: "item",
+		item: "contenttweaker:research_fluids"
 	}]
 }

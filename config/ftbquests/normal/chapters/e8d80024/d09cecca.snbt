@@ -1,0 +1,15 @@
+{
+	x: 13.0d,
+	y: -5.0d,
+	dependencies: [
+		"cf57f0c5",
+		"576061b6"
+	],
+	tasks: [{
+		uid: "768d4474",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rune_mana_chip"
+		}]
+	}]
+}

@@ -1,0 +1,40 @@
+{
+	title: "Some Reshapable items",
+	x: 13.5d,
+	y: -3.0d,
+	text: [
+		"Only some, there are more"
+	],
+	dependencies: [
+		"07292fc0"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7bf77673",
+		type: "item",
+		items: [{
+			item: "minecraft:stone"
+		}]
+	},
+	{
+		uid: "0e36435b",
+		type: "item",
+		items: [{
+			item: "minecraft:quartz_block"
+		}]
+	},
+	{
+		uid: "4ca6efe2",
+		type: "item",
+		items: [{
+			item: "quark:jasper"
+		}]
+	},
+	{
+		uid: "ab9b658a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gravel_wool"
+		}]
+	}]
+}

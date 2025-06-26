@@ -1,0 +1,20 @@
+{
+	x: 24.0d,
+	y: -3.0d,
+	shape: "square",
+	dependencies: [
+		"0aac85b0"
+	],
+	tasks: [{
+		uid: "e58366d2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:star_alloy_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "cd05a385",
+		type: "item",
+		item: "contenttweaker:star_alloy_block"
+	}]
+}

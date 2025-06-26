@@ -107,7 +107,7 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
         }
     },
     <liquid:rune_acid>: {
-        150: {
+        50: {
             <mysticalagriculture:terrasteel_essence> * 16: <contenttweaker:terrasteel_ore>
         }
     }

@@ -161,6 +161,7 @@ function addAtomicResource(name as string){
     VanillaFactory.createBlock("poor_iron_ore", <blockmaterial:rock>).register();
 
     //copper
+    VanillaFactory.createItem("carrot_copper").register();
     VanillaFactory.createItem("copper_seed").register();
     VanillaFactory.createItem("copper_potato").register();
 
@@ -2699,6 +2700,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         lazy_soup.register();
     }
 
+    addItem("evil_core", "epic", 64);
+    addItem("plasma_gen", "rare", 64);
+
     VanillaFactory.createItem("rune_string").register();
     VanillaFactory.createItem("rune_boule_core").register();
     VanillaFactory.createItem("rune_boule").register();
@@ -2775,6 +2779,13 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("impure_mana_dust").register();
     VanillaFactory.createItem("terragem").register();
 
+    var cutting = VanillaFactory.createBlock("cutting", <blockmaterial:rock>);
+    cutting.setBlockLayer("TRANSLUCENT");
+    cutting.setLightOpacity(0);
+    cutting.setTranslucent(true);
+    cutting.setFullBlock(false);
+    cutting.register();
+
     {//enchantium
         var enchantium_chunk = VanillaFactory.createItem("enchantium_chunk");
         enchantium_chunk.register();
@@ -2811,6 +2822,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     }
 
     addWater("flowers");
+    addWater("flowers_depleted");
 
     VanillaFactory.createItem("dim_stable_plate1").register();
     VanillaFactory.createItem("dim_stable_plate2").register();
@@ -2935,6 +2947,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     addGlass("inert_glass");
 
 
+    VanillaFactory.createItem("imaginium_element").register();
 }
 
 {//inf line

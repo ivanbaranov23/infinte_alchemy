@@ -57,5 +57,17 @@
 			item: "immersiveengineering:metal_decoration2"
 		}],
 		count: 24L
+	},
+	{
+		uid: "11370c22",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_structure"
+		}]
+	}],
+	rewards: [{
+		uid: "fb756aff",
+		type: "item",
+		item: "contenttweaker:research_structure"
 	}]
 }

@@ -1,0 +1,19 @@
+{
+	x: 20.0d,
+	y: -2.0d,
+	dependencies: [
+		"157198e4"
+	],
+	tasks: [{
+		uid: "ac197c64",
+		type: "item",
+		items: [{
+			item: "contenttweaker:death_metal_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "00d1bdac",
+		type: "item",
+		item: "contenttweaker:death_metal_block"
+	}]
+}

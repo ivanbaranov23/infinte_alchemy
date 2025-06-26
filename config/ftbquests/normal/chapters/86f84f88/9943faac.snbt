@@ -57,5 +57,17 @@
 			item: "natura:nether_thorn_vines"
 		}],
 		count: 8L
+	},
+	{
+		uid: "d840aa67",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_plants3"
+		}]
+	}],
+	rewards: [{
+		uid: "57af5481",
+		type: "item",
+		item: "contenttweaker:research_plants3"
 	}]
 }

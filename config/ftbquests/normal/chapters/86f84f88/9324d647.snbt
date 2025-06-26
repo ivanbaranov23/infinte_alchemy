@@ -55,5 +55,17 @@
 		items: [{
 			item: "contenttweaker:axe_token"
 		}]
+	},
+	{
+		uid: "9acfbda9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_plants2"
+		}]
+	}],
+	rewards: [{
+		uid: "624f8851",
+		type: "item",
+		item: "contenttweaker:research_plants2"
 	}]
 }

@@ -1,0 +1,17 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	text: [
+		"Costs 125 mana. Each next tier, if made directly, costs 8x the previous tier."
+	],
+	dependencies: [
+		"7bd6ebcf"
+	],
+	tasks: [{
+		uid: "00619949",
+		type: "item",
+		items: [{
+			item: "botania:tinypotato"
+		}]
+	}]
+}

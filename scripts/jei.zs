@@ -133,3 +133,5 @@ removeAndHide(<excompressum:compressed_block:9>);
 removeAndHide(<thermalexpansion:device:1>);
 removeAndHide(<thermalexpansion:device:8>);
 removeAndHide(<thermalexpansion:device:12>);
+
+removeAndHide(<excompressum:uncompressed_coal>);

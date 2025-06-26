@@ -19,7 +19,7 @@ function essenceGood(item as IItemStack) as bool{
 });
 recipes.addShaped("ia_elemental_essence_base", <contenttweaker:elemental_essence_base>, [
         [<contenttweaker:elemental_clay>, <botania:rune:6>, <contenttweaker:elemental_clay>], 
-        [<botania:rune:4>, <contenttweaker:elf_mana_circuit>, <botania:rune:5>], 
+        [<botania:rune:4>, <contenttweaker:bloody_circuit>, <botania:rune:5>], 
         [<contenttweaker:elemental_clay>, <botania:rune:7>, <contenttweaker:elemental_clay>]
     ],
     function(out, ins, cInfo){

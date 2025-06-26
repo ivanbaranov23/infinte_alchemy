@@ -1,0 +1,19 @@
+{
+	x: 15.0d,
+	y: 0.5d,
+	dependencies: [
+		"e997e1c0"
+	],
+	tasks: [{
+		uid: "fec98290",
+		type: "item",
+		items: [{
+			item: "contenttweaker:conductive_alloy_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "2b7b2fb6",
+		type: "item",
+		item: "contenttweaker:conductive_alloy_block"
+	}]
+}

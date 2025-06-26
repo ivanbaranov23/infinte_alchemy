@@ -111,9 +111,14 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 }
 {//fish oil
 	mods.immersiveengineering.Squeezer.addRecipe(<prodigytech:meat_ground>, <liquid:fish_oil> * 500, <ore:listAllfishraw> * 4, 3000);
+	scripts.jei.addJEIhint(
+		[<ore:listAllfishraw>], [],
+		[<immersiveengineering:metal_multiblock:7>],
+		[], [<liquid:fish_oil>]
+	);
 
 	Distillation.addRecipe(
-		[<liquid:biodiesel> * 70, <liquid:lubricant> * 5], 
+		[<liquid:biodiesel> * 40, <liquid:lubricant> * 5], 
 		[], 
 		<liquid:fish_oil> * 100, 20 * 128, 20, 
 		[]
@@ -487,8 +492,8 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 		[
 			<contenttweaker:empowered_shard> % 75
 		], null,
-		<liquid:empowered_steam> * 500, <contenttweaker:ice_shard> | <minecraft:diamond> | <minecraft:emerald> | <mysticalworld:amethyst_gem>,
-		<minecraft:emerald>,
+		<liquid:empowered_steam> * 500, (<contenttweaker:ice_shard> | <minecraft:diamond> | <minecraft:emerald> | <mysticalworld:amethyst_gem>) * 4,
+		<contenttweaker:weather_chrome_mesh>,
 		20, 250
 	);
 

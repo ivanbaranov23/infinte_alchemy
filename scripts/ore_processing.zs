@@ -2739,7 +2739,7 @@ val ores as IItemStack[string][string][string] = {
             item: <mysticalworld:quartz_ore>,
             crushing: <appliedenergistics2:material:3> * 4,
             crushingByprod1: <appliedenergistics2:material:2>,
-            crushingByprod2: <appliedenergistics2:material:5>,
+            crushingByprod2: <actuallyadditions:item_dust:4>,
 
             drilling: <enderio:item_material:33> * 5,
             //denorm: <netherendingores:ore_other_1>
@@ -2752,7 +2752,7 @@ val ores as IItemStack[string][string][string] = {
             item: <minecraft:quartz_ore>,
             crushing: <appliedenergistics2:material:3> * 6,
             crushingByprod1: <appliedenergistics2:material:2>,
-            crushingByprod2: <appliedenergistics2:material:5>,
+            crushingByprod2: <actuallyadditions:item_dust:4>,
 
             drilling: <enderio:item_material:33> * 6,
             denorm: <mysticalworld:quartz_ore> * 2
@@ -2762,7 +2762,7 @@ val ores as IItemStack[string][string][string] = {
             item: <netherendingores:ore_other_1:1>,
             crushing: <appliedenergistics2:material:3> * 8,
             crushingByprod1: <appliedenergistics2:material:2> * 3,
-            crushingByprod2: <appliedenergistics2:material:5> * 3,
+            crushingByprod2: <actuallyadditions:item_dust:4> * 3,
 
             drilling: <enderio:item_material:33> * 8,
             denorm: <mysticalworld:quartz_ore> * 3

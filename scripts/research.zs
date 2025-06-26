@@ -47,6 +47,11 @@ function addResearchRecipe(name as string, medium as IItemStack, out as IItemSta
     out.addTooltip("Research medium is " ~ medium.displayName ~ ", amount: " ~ medium.amount);
     out.addTooltip("One research attempt lasts about " ~ time / 20 ~ " seconds at " ~ energy ~ " rf/tick");
     
+    scripts.jei.addJEIhint(
+        [medium], [],
+        [<modularcontroller:research_station_controller>],
+        [out]
+    );
 
     recipes.addShapeless(
         "ia_research_dup_" + out.name,
@@ -95,6 +100,11 @@ function addAdvancedResearchRecipe(name as string, medium as IItemStack, out as 
     out.addTooltip("Research medium is " ~ medium.displayName ~ ", amount: " ~ medium.amount);
     out.addTooltip("One research attempt lasts about " ~ time / 20 ~ " seconds at " ~ energy ~ " rf/tick");
     
+    scripts.jei.addJEIhint(
+        [medium], [],
+        [<modularcontroller:research2_controller>],
+        [out]
+    );
 
     recipes.addShapeless(
         "ia_research_dup_" + out.name,

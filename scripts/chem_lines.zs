@@ -539,6 +539,7 @@ import mods.modularmachinery.RecipeBuilder;
 {//vitamins
     {//vitamin a
         mods.thermalexpansion.Pulverizer.addRecipe(<contenttweaker:carrot_pulp>, <minecraft:carrot>, 500, <contenttweaker:carrot_pulp>, 50);
+        scripts.helper.addSawRecipe(<minecraft:carrot>, <contenttweaker:carrot_pulp>);
 
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:carotene_solution> * 250, <contenttweaker:carrot_pulp>, <liquid:hexane> * 250, 2000);
 

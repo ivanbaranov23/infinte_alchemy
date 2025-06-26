@@ -1,0 +1,95 @@
+{
+	title: "Cobble Generators",
+	icon: "compacter:cobbler",
+	x: 0.5d,
+	y: 3.0d,
+	text: [
+		"If you want to do it before research or don't want to do research or want sand generator with starlight"
+	],
+	tasks: [{
+		uid: "b6734f3a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "515428fd",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sludge_cg",
+				Amount: 1000
+			}
+		}
+	},
+	{
+		uid: "36375c6e",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "sludge_cg",
+				Amount: 1000
+			}
+		}
+	},
+	{
+		uid: "0a4796f5",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "organic_cg",
+				Amount: 1000
+			}
+		}
+	},
+	{
+		uid: "d0702a44",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "organic_cg",
+				Amount: 1000
+			}
+		}
+	},
+	{
+		uid: "8e3ce95c",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "residue_cg",
+				Amount: 1000
+			}
+		}
+	},
+	{
+		uid: "fc8df831",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "residue_cg",
+				Amount: 1000
+			}
+		}
+	},
+	{
+		uid: "5d7b916e",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "astralsorcery.liquidstarlight",
+				Amount: 1000
+			}
+		}
+	}]
+}

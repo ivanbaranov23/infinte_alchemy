@@ -114,3 +114,11 @@ recipes.addShaped("ia_ma_soul_glass_pane", <mysticalagriculture:soul_glass_pane>
         [<mysticalagriculture:soul_glass>, <mysticalagriculture:soul_glass>, <mysticalagriculture:soul_glass>]
     ]
 );
+
+
+
+recipes.addShaped("ia_seed_reprocessor", <mysticalagriculture:seed_reprocessor>, [
+    [<thermalfoundation:material:322>, <harvestcraft:sunflowerseedsitem>, <thermalfoundation:material:322>], 
+    [<harvestcraft:roastedpumpkinseedsitem>, <extrautils2:machine>, <harvestcraft:roastedpumpkinseedsitem>], 
+    [<thermalfoundation:material:322>, <harvestcraft:sunflowerseedsitem>, <thermalfoundation:material:322>]
+]);

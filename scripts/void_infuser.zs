@@ -16,7 +16,8 @@ import mods.requious.AssemblyRecipe;
 import mods.requious.Variable;
 import mods.requious.Parameter;
 
-
+import crafttweaker.util.Math;
+import mods.ctutils.utils.Math as Math2;
 
 
 static Void_infuser as Assembly = <assembly:void_infuser>;
@@ -26,9 +27,9 @@ Void_infuser.setTextSlot(0,0).setVisual(mods.requious.SlotVisual.create(7,1)).se
     mods.requious.SlotVisual.energySlot(),"test_variable","capacity"
 ).addPart("requious.text.test",["test_variable"]).addPart("requious.text.owner",["owner"]);*/
 
-Void_infuser.setTextSlot(0,1).setVisual(mods.requious.SlotVisual.create(7,1)).setRenderText("pos1: %s %s %s\npos2: %s %s %s", ["pos1x", "pos1y", "pos1z", "pos2x", "pos2y", "pos2z"]);
-Void_infuser.setTextSlot(0,2).setVisual(mods.requious.SlotVisual.create(7,1)).setRenderText("%s %s %s", ["living_rock_blocks", "living_metal_blocks", "death_point"]);
-
+//Void_infuser.setTextSlot(0,1).setVisual(mods.requious.SlotVisual.create(7,1)).setRenderText("pos1: %s %s %s\npos2: %s %s %s", ["pos1x", "pos1y", "pos1z", "pos2x", "pos2y", "pos2z"]);
+//Void_infuser.setTextSlot(0,2).setVisual(mods.requious.SlotVisual.create(7,1)).setRenderText("%s %s %s", ["living_rock_blocks", "living_metal_blocks", "death_point"]);
+//todo debug info for players
 
 
 Void_infuser.setItemSlot(4, 4, ComponentFace.all(), 64)
@@ -47,7 +48,7 @@ for pot,v in {
     <botania_tweaks:compressed_tiny_potato_5>:  100000,
     <botania_tweaks:compressed_tiny_potato_6>:  1000000,
     <botania_tweaks:compressed_tiny_potato_7>:  10000000,
-    <botania_tweaks:compressed_tiny_potato_8>:  100000000
+    <botania_tweaks:compressed_tiny_potato_8>:  100000000 //10^8
 
 } as int[IItemStack]{
     var testVariables = AssemblyRecipe.create(function(container) {
@@ -102,11 +103,8 @@ var main_rec = AssemblyRecipe.create(function(container) {
             var wrong_blocks as int = 0;
 
 
-            var start_pos as IBlockPos = container.pos.getOffset(IFacing.up(),3).getOffset(IFacing.north(),1).getOffset(IFacing.west(),1);
+            var start_pos as IBlockPos = container.pos.getOffset(IFacing.up(),2).getOffset(IFacing.north(),1).getOffset(IFacing.west(),1);
 
-            container.setInteger("pos1x", start_pos.getX());
-            container.setInteger("pos1y", start_pos.getY());
-            container.setInteger("pos1z", start_pos.getZ());
 
             for x in 0 to 3
             for y in 0 to 3
@@ -125,26 +123,27 @@ var main_rec = AssemblyRecipe.create(function(container) {
                     wrong_blocks += 1;
             }
 
-            var pos as IBlockPos = start_pos.getOffset(IFacing.up(), 2).getOffset(IFacing.south(), 2).getOffset(IFacing.east(), 2);
-
-            container.setInteger("pos2x", pos.getX());
-            container.setInteger("pos2y", pos.getY());
-            container.setInteger("pos2z", pos.getZ());
 
             death_point = (((living_rock_blocks as double) * sin_pointsd * 0.01) + ((living_metal_blocks as double) * sin_pointsd * 0.03)) as int;
             
             //so dumb
-            recover_sin = (living_wood_blocks as double) * (0.2 as double);
-            if (recover_sin > 0.95) recover_sin = 0.95;
+            recover_sin = (living_wood_blocks as double) * (0.2 as double) - (wrong_blocks as double) * 0.1;
+            recover_sin = Math.clamp(recover_sin, 0.0, 0.95);
 
-            var death_lmetal as int = min(living_metal_blocks, death_point / 5000);
-            var death_lrock as int = min(living_rock_blocks, (death_point - death_lmetal * 5000) / 20000);
+            var death_lmetal as int = min(living_metal_blocks, death_point / 1000);
+            var death_lrock as int = min(living_rock_blocks, (death_point - death_lmetal * 1000) / 4000);
 
-            container.setInteger("living_rock_blocks", (living_rock_blocks as double) * sin_pointsd * 0.01);
-            container.setInteger("living_metal_blocks", (living_metal_blocks as double) * sin_pointsd * 0.03);
+            var recovered_sin as int = ((sin_pointsd - (death_point as double)) * recover_sin) as int;
+            var sin_coeff as double = pow((Math.log10(recovered_sin as double) - 3.0) / 5.0, 2.0);
+            //log10 -> 4 - 8
+            // -3.0 -> 1 - 5
+            // /5 -> 0.2 - 1
+            // ^2
+
+            
             container.setInteger("death_point", death_point);
 
-            container.setInteger("sin", ((sin_pointsd - (death_point as double)) * recover_sin) as int);
+            container.setInteger("sin", recovered_sin);
 
             for x in 0 to 3
             for y in 0 to 3
@@ -156,14 +155,24 @@ var main_rec = AssemblyRecipe.create(function(container) {
                 if (state == living_rock){
                     if (death_lrock > 0){
                         death_lrock -= 1;
-                        container.world.setBlockState(<blockstate:contenttweaker:death_metal_ore>, pos);
+                        if (Math2.random() < sin_coeff)
+                            container.world.setBlockState(<blockstate:contenttweaker:death_metal_dense_ore>, pos);
+                        else
+                            container.world.setBlockState(<blockstate:contenttweaker:death_metal_ore>, pos);
                     }
                 }
                 else if (state == living_metal){
                     if (death_lmetal > 0){
                         death_lmetal -= 1;
-                        container.world.setBlockState(<blockstate:contenttweaker:death_metal_ore>, pos);
+                        if (Math2.random() < sin_coeff)
+                            container.world.setBlockState(<blockstate:contenttweaker:death_metal_dense_ore>, pos);
+                        else
+                            container.world.setBlockState(<blockstate:contenttweaker:death_metal_ore>, pos);
                     }
+                }
+                else if (state == living_wood){
+                    if (Math2.random() > sin_coeff)
+                        container.world.setBlockState(<blockstate:contenttweaker:living_waste>, pos);
                 }
             }
 
@@ -177,3 +186,16 @@ Void_infuser.addRecipe(main_rec);
 
 
 print("[void] 3");
+
+scripts.content_machines.addAssemblerRecipe(
+    [<requious:void_infuser>], 
+    [
+        <contenttweaker:mana_frame>,
+        <contenttweaker:evil_core>,
+        <contenttweaker:rune_mana_chip> * 3,
+        <extendedcrafting:material:2> * 16,
+        <contenttweaker:plasma_gen> * 8,
+        <contenttweaker:terragem> * 16
+    ], <liquid:mirion2> * 864,
+    20, 10000
+);

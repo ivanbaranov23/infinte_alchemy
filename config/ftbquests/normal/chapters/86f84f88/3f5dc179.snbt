@@ -1,5 +1,5 @@
 {
-	title: "Ressearch Tinker",
+	title: "Research Tinker",
 	icon: "contenttweaker:research_tinker",
 	x: -2.0d,
 	y: 0.0d,
@@ -55,5 +55,17 @@
 			item: "tconstruct:cast_custom"
 		}],
 		count: 4L
+	},
+	{
+		uid: "aa05aa37",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_tinker"
+		}]
+	}],
+	rewards: [{
+		uid: "808baab4",
+		type: "item",
+		item: "contenttweaker:research_tinker"
 	}]
 }

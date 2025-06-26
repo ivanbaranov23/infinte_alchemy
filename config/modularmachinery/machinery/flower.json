@@ -2,6 +2,219 @@
     "registryname": "flower",
     "localizedname": "Energy Flower Generator",
     "color": "007800",
+    "modifiers": [
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "description": "+150% fluid output, -50% input mana",
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "contenttweaker:terrastem@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "mana",
+                    "operation": 1,
+                    "multiplier": 0.93303299
+                }, {
+                    "io": "output",
+                    "target": "fluid",
+                    "operation": 1,
+                    "multiplier": 1.095958226
+                }
+            ]
+        }
+    ],
     "parts": [
         {
             "x": -1,

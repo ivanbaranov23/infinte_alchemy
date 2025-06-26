@@ -105,8 +105,6 @@ quark:arrow_torch
 quark:dragon_breath_bottle
 quark:soul_powder
 quark:parrot_egg
-quark:seat
-quark:chest_passenger
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -116,11 +114,13 @@ quark:frog
 quark:pirate
 quark:crab
 quark:wraith
+quark:seat
 quark:gravisand
 quark:flat_item_frame
 quark:leash_knot
 quark:colored_item_frame
 quark:glass_item_frame
+quark:chest_passenger
 astralsorcery:entityhighlighted
 astralsorcery:entitystardust
 astralsorcery:entitycrystal
@@ -352,9 +352,9 @@ appliedenergistics2:appeng.entity.entitytinytntprimed
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
-enderio:falling_machine
 enderio:primed_charge
 enderio:owl_egg
+enderio:falling_machine
 projecte:water_projectile
 projecte:lava_projectile
 projecte:mob_randomizer

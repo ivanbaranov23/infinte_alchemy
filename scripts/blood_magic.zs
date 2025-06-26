@@ -44,18 +44,7 @@ scripts.content_machines.addAssemblerRecipe(
 	null, 20, 256
 );
 
-recipes.addShaped("ia_frame11", <contenttweaker:soul_frame>, [
-	[<tconevo:metal:33>, <contenttweaker:soul_codex8>, <tconevo:metal:33>], 
-	[<contenttweaker:ev_coil>, <actuallyadditions:block_misc:8>, <contenttweaker:ev_coil>], 
-	[<moreplates:crystalline_alloy_plate>, <contenttweaker:soul_codex8>, <moreplates:crystalline_alloy_plate>]
-]);
-<contenttweaker:soul_frame>.addTooltip("Truly a fate worse than death");
 
-recipes.addShaped("ia_frame12", <contenttweaker:blood_frame>, [
-	[<contenttweaker:blood_bronze_plate>, <bloodmagic:component:12>, <contenttweaker:blood_bronze_plate>], 
-	[<bloodmagic:slate:1>, <contenttweaker:soul_frame>, <bloodmagic:slate:1>], 
-	[<contenttweaker:blood_bronze_plate>, <bloodmagic:component:12>, <contenttweaker:blood_bronze_plate>]
-]);
 
 
 function BloodAltar_addRecipe(output as IItemStack, input as IItemStack, minimumTier as int, syphon as int, consumeRate as int, drainRate as int){

@@ -72,7 +72,7 @@ import mods.modularmachinery.RecipeBuilder;
     var rec = RecipeBuilder.newBuilder("impure", "gas_column", 200);
     rec.addEnergyPerTickInput(1024000);
 
-	rec.addFluidOutput(<liquid:mana> * 50000);
+	rec.addFluidOutput(<liquid:mana> * 150000);
     
 
 	rec.addGasInput("waste_gas", 15000);

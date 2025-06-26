@@ -117,16 +117,24 @@ function addWeakEnhancerRecipe(inp as IItemStack, outp as IItemStack){
 
     addWeakEnhancerRecipe(<roots:glass_eye>, <enderio:item_material:62> * 2);
     addWeakEnhancerRecipe(<minecraft:ender_pearl>, <enderio:item_material:62> * 5);
+
+
+    addWeakEnhancerRecipe(<harvestcraft:arrowrootitem>, <minecraft:arrow> * 8);
 }
+recipes.addShapeless("ia_arrows_to_flint", <minecraft:flint>, [
+    <minecraft:arrow>, <minecraft:arrow>, <minecraft:arrow>, <minecraft:arrow>
+]);
+
 
 {//andesite
     
 
 
-    mods.tconstruct.Alloy.addRecipe( <liquid:zinc> * 8, [
+    /*mods.tconstruct.Alloy.addRecipe( <liquid:zinc> * 8, [
         <liquid:iron> * 8,
         <liquid:andesite> * 8
-    ] );
+    ] );*/
+    mods.tconstruct.Casting.addTableRecipe(<contenttweaker:zinc_ingot>, <minecraft:iron_ingot>, <liquid:andesite>, 250, true);
 }
 
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:133>, <actuallyadditions:item_misc:12>, <liquid:tin>, 72, true);
@@ -151,7 +159,8 @@ mods.exnihilocreatio.Hammer.addRecipe(
 	0, 0.4, 1.0
 );
 mods.tconstruct.Melting.addRecipe(<liquid:iron> * 144, <contenttweaker:iron_sand>);
-
+scripts.helper.addSimpleCrushingRecipeWByproduct(<contenttweaker:iron_sand>, <exnihilocreatio:item_ore_iron> * 3, <exnihilocreatio:item_ore_iron>, 30);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:iron> * 288, <contenttweaker:iron_sand>, 1000);
 
 mods.exnihilocreatio.Hammer.addRecipe(
 	<contenttweaker:gold_sand>, <exnihilocreatio:item_ore_gold>,
@@ -162,3 +171,7 @@ mods.exnihilocreatio.Hammer.addRecipe(
 	0, 0.4, 1.0
 );
 mods.tconstruct.Melting.addRecipe(<liquid:gold> * 144, <contenttweaker:gold_sand>);
+scripts.helper.addSimpleCrushingRecipeWByproduct(<contenttweaker:gold_sand>, <exnihilocreatio:item_ore_gold> * 3, <exnihilocreatio:item_ore_gold>, 30);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:gold> * 288, <contenttweaker:gold_sand>, 1000);
+
+

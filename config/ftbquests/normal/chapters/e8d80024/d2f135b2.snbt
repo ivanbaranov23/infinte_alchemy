@@ -1,0 +1,24 @@
+{
+	x: 3.0d,
+	y: 4.0d,
+	text: [
+		"Costs 125 * 8^4 * 9^3 = 373 mil mana. Or 373 mana pools. Default tiny potato recipe took 1337 mana btw."
+	],
+	dependencies: [
+		"1087f28f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e954bc28",
+		type: "item",
+		items: [{
+			item: "botania_tweaks:compressed_tiny_potato_8"
+		}]
+	}],
+	rewards: [{
+		uid: "5e5952e9",
+		type: "item",
+		item: "contenttweaker:quest_coin",
+		count: 3
+	}]
+}

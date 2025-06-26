@@ -50,10 +50,17 @@
 			item: "cathedral:cathedral_glass_stained"
 		}],
 		count: 16L
+	},
+	{
+		uid: "0d1ea94e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_glass_making"
+		}]
 	}],
 	rewards: [{
 		uid: "d3fd432a",
 		type: "item",
-		item: "minecraft:paper"
+		item: "contenttweaker:research_glass_making"
 	}]
 }

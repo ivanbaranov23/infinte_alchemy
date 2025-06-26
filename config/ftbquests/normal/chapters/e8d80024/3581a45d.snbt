@@ -1,0 +1,11 @@
+{
+	x: 22.0d,
+	y: 1.0d,
+	tasks: [{
+		uid: "449823d6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:terra_rune_base"
+		}]
+	}]
+}

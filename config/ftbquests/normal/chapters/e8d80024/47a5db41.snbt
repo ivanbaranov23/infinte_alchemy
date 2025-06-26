@@ -1,0 +1,13 @@
+{
+	x: 23.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "4802d0e3",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_gaiaguardian"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

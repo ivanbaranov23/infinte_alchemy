@@ -60,5 +60,17 @@
 		items: [{
 			item: "thermalexpansion:augment 1 497"
 		}]
+	},
+	{
+		uid: "9e1dc478",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_sieving"
+		}]
+	}],
+	rewards: [{
+		uid: "4c7e8d1d",
+		type: "item",
+		item: "contenttweaker:research_sieving"
 	}]
 }

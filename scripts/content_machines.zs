@@ -247,7 +247,10 @@ recipes.addShaped("ia_assembler", <requious:assembler>, [
 	[<contenttweaker:robot_arm>, <enderio:item_material:54>, <contenttweaker:robot_arm>], 
 	[<moreplates:melodic_alloy_plate>, <enderio:block_dark_steel_anvil>, <moreplates:melodic_alloy_plate>]
 ]);
-
+addAssemblerRecipe([<requious:assembler>], [
+    <enderio:item_material:54>, <mekanism:machineblock2:13>, <contenttweaker:robot_arm>, <enderio:block_dark_steel_anvil>,
+    <moreplates:melodic_alloy_plate>
+], null, 40, 1000);
 
 
 static AdvancedMixer as Assembly = <assembly:advanced_mixer>;
@@ -714,7 +717,7 @@ static bioAssembler as Assembly = <assembly:bioassembler>;
             .setHandAccess(true, true)
             .setGroup("catalyst");
 
-    bioAssembler.setEnergySlot(0, 2, ComponentFace.all(), 4000000)
+    bioAssembler.setEnergySlot(0, 2, ComponentFace.all(), 100000000)
         .setAccess(true, false)
         .setGroup("power");
 

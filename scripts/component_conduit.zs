@@ -9,6 +9,11 @@
 		[<ore:ingotPulsatingIron>, <thermaldynamics:duct_32:2>, <ore:ingotPulsatingIron>], 
 		[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
 	]);
+	recipes.addShaped("ia_item_conduit2", <enderio:item_item_conduit> * 6, [
+		[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
+		[<ore:ingotPulsatingIron>, <contenttweaker:research_logistic>.reuse(), <ore:ingotPulsatingIron>], 
+		[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
+	]);
 
 	//fluid
 	recipes.addShaped("ia_fluid_conduit1", <enderio:item_liquid_conduit> * 8, [
@@ -35,6 +40,11 @@
 	recipes.addShaped("ia_gas_conduit", <enderio:item_gas_conduit:2> * 8, [
 		[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
 		[<contenttweaker:gastight_steel_dust>, <contenttweaker:gastight_steel_rod>, <contenttweaker:gastight_steel_dust>], 
+		[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
+	]);
+	recipes.addShaped("ia_gas_conduit2", <enderio:item_gas_conduit:2> * 6, [
+		[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>], 
+		[<contenttweaker:gastight_steel_dust>, <contenttweaker:research_logistic>.reuse(), <contenttweaker:gastight_steel_dust>], 
 		[<ore:itemConduitBinder>, <ore:itemConduitBinder>, <ore:itemConduitBinder>]
 	]);
 
@@ -79,6 +89,11 @@
 			[<immersiveengineering:wirecoil>, <enderio:item_endergy_conduit:3>, <immersiveengineering:wirecoil>], 
 			[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
 		]);
+		recipes.addShaped("ia_copper_conduit2", <enderio:item_endergy_conduit:4> * 4, [
+			[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>], 
+			[<immersiveengineering:wirecoil>, <contenttweaker:research_logistic>.reuse(), <immersiveengineering:wirecoil>], 
+			[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
+		]);
         scripts.content_machines.addAssemblerRecipe(
             [<enderio:item_endergy_conduit:4> * 12],
             [<enderio:item_material:4> * 6, <immersiveengineering:wirecoil> * 2, <enderio:item_endergy_conduit:3>],
@@ -92,6 +107,11 @@
 			[<immersiveengineering:wirecoil:1>, <enderio:item_endergy_conduit:4>, <immersiveengineering:wirecoil:1>], 
 			[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
 		]);
+		recipes.addShaped("ia_electrum_conduit2", <enderio:item_endergy_conduit:6> * 4, [
+			[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>], 
+			[<immersiveengineering:wirecoil:1>, <contenttweaker:research_logistic>.reuse(), <immersiveengineering:wirecoil:1>], 
+			[<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
+		]);
         scripts.content_machines.addAssemblerRecipe(
             [<enderio:item_endergy_conduit:6> * 12],
             [<enderio:item_material:4> * 6, <immersiveengineering:wirecoil:1> * 2, <enderio:item_endergy_conduit:4>],
@@ -103,6 +123,11 @@
         recipes.addShaped("ia_e_silver_conduit", <enderio:item_endergy_conduit:7> * 4, [
 			[<enderio:item_material:4>, <contenttweaker:insulation_strand>, <enderio:item_material:4>], 
 			[<enderio:item_alloy_endergy_ingot:5>, <enderio:item_endergy_conduit:6>, <enderio:item_alloy_endergy_ingot:5>], 
+			[<enderio:item_material:4>, <contenttweaker:insulation_strand>, <enderio:item_material:4>]
+		]);
+        recipes.addShaped("ia_e_silver_conduit2", <enderio:item_endergy_conduit:7> * 2, [
+			[<enderio:item_material:4>, <contenttweaker:insulation_strand>, <enderio:item_material:4>], 
+			[<enderio:item_alloy_endergy_ingot:5>, <contenttweaker:research_logistic>.reuse(), <enderio:item_alloy_endergy_ingot:5>], 
 			[<enderio:item_material:4>, <contenttweaker:insulation_strand>, <enderio:item_material:4>]
 		]);
         scripts.content_machines.addAssemblerRecipe(

@@ -74,11 +74,13 @@ function addFishRec(fout as IItemStack, cat as IItemStack){
     rec.build();
 }
 <ore:fishFeed>.addItems([<thermalfoundation:bait>, <harvestcraft:fishtrapbaititem>, <prodigytech:meat_ground>]);
+//vaninlla
 addFishRec(<minecraft:fish>, <thermalfoundation:material:816>);
 addFishRec(<minecraft:fish:1>, <thermalfoundation:material:816>);
 addFishRec(<minecraft:fish:2>, <thermalfoundation:material:816>);
 addFishRec(<minecraft:fish:3>, <thermalfoundation:material:816>);
 
+//pam
 addFishRec(<harvestcraft:musselrawitem>, <biomesoplenty:coral:2>);
 addFishRec(<harvestcraft:scalloprawitem>, <biomesoplenty:coral:2>);
 addFishRec(<harvestcraft:clamrawitem>, <biomesoplenty:coral:2>);
@@ -89,6 +91,9 @@ addFishRec(<harvestcraft:shrimprawitem>, <biomesoplenty:coral>);
 addFishRec(<harvestcraft:crayfishrawitem>, <biomesoplenty:coral>);
 
 addFishRec(<harvestcraft:greenheartfishitem>, <minecraft:dye:2>);
+
+//atum
+addFishRec(<atum:fish_forsaken>, <harvestcraft:tacoitem>);
 
 
 

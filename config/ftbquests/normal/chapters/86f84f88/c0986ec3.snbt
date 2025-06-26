@@ -58,5 +58,17 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	},
+	{
+		uid: "078aae40",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_circuit1"
+		}]
+	}],
+	rewards: [{
+		uid: "c0d117c8",
+		type: "item",
+		item: "contenttweaker:research_circuit1"
 	}]
 }

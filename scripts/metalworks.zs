@@ -1041,7 +1041,8 @@ static all_metals as IItemStack[string][string] = {
         block: <contenttweaker:gallium_block>,
         dust: <contenttweaker:gallium_dust>,
 
-        element: <alchemistry:element:31>
+        element: <alchemistry:element:31>,
+        singularity: <extendedcrafting:singularity_custom:63>
     },
 
     ender_ingot: {
@@ -3348,7 +3349,12 @@ scripts.helper.addFluidAlloyerRecipe(
     mods.thermalexpansion.Transposer.addFillRecipe(
         <contenttweaker:gravity_ingot>, 
         <contenttweaker:gravity_dust>, 
-        <liquid:potion>.withTag({Potion: "extrautils2:xu2.gravity"}) * 500, 10000
+        <liquid:potion>.withTag({Potion: "extrautils2:xu2.gravity"}) * 1000, 10000
+    );
+    scripts.jei.addJEIhint(
+        [<contenttweaker:gravity_dust>, <forge:bucketfilled>.withTag({FluidName: "potion", Amount: 1000, Tag: {Potion: "extrautils2:xu2.gravity"}})], [<liquid:potion>.withTag({Potion: "extrautils2:xu2.gravity"})],
+        [],
+        [<contenttweaker:gravity_ingot>]
     );
 }
 
@@ -4025,12 +4031,16 @@ add3alloy(3, "ender_ingot", 1,
     }
 
     {//conductive alloy
-        mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:conductive_alloy_ingot>, 
+        mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:conductive_alloy_ingot> * 4, 
             [
-                <enderio:item_alloy_ingot:1>, <exnihilocreatio:item_ore_tungsten:3>, <contenttweaker:gallium_ingot>,
-                <contenttweaker:electric_manyullyn_ingot>, <thermalfoundation:storage>, <thermalfoundation:storage_alloy:1>
+                <contenttweaker:super_alloy_base_ingot>,
+                <redstonearsenal:material:224>,
+                <contenttweaker:electricium>,
+                <extendedcrafting:singularity:17>,
+                <extendedcrafting:singularity_custom:28>,
+                <enderio:block_alloy_endergy:2>
             ], 
-            1000, 20, 1
+            50000, 40, 5
         );
     }
 
@@ -4180,7 +4190,7 @@ add3alloy(3, "ender_ingot", 1,
 
     //vibralcum
     mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:vibralcum_ingot> * 3, 1024 * 20, 1024, <contenttweaker:glass_ingot>,
+        <contenttweaker:vibralcum_ingot> * 2, 102400 * 20, 102400, <contenttweaker:glass_ingot>,
         [
             <taiga:vibranium_ingot>,
             <taiga:vibranium_ingot>,
@@ -4196,26 +4206,18 @@ add3alloy(3, "ender_ingot", 1,
 
     //stellar alloy
     mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:3>);
+    
     mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <enderio:item_alloy_endergy_ingot:3>, 1024 * 100, 1024 * 5, <contenttweaker:glass_ingot>,
+        <enderio:item_alloy_endergy_ingot:3> * 6, 102400 * 120, 102400 * 6, <contenttweaker:super_alloy_base_ingot>,
         [
-            <enderio:item_alloy_endergy_ingot:2>, <enderio:item_alloy_endergy_ingot:2>, <enderio:item_alloy_endergy_ingot:2>, 
-            <contenttweaker:conductive_alloy_ingot>, <contenttweaker:conductive_alloy_ingot>, 
-            <contenttweaker:bedrockium_alloy_ingot>, <contenttweaker:bedrockium_alloy_ingot>, <contenttweaker:bedrockium_alloy_ingot>, 
-            <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:1>,
-            <minecraft:nether_star>,
-            <contenttweaker:rune_lightning>
-        ]
-    );
-    mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <enderio:item_alloy_endergy_ingot:3> * 2, 1024 * 120, 1024 * 6, <contenttweaker:super_alloy_base_ingot>,
-        [
-            <enderio:item_alloy_endergy_ingot:2>, <enderio:item_alloy_endergy_ingot:2>, <enderio:item_alloy_endergy_ingot:2>, 
-            <contenttweaker:conductive_alloy_ingot>, <contenttweaker:conductive_alloy_ingot>, 
-            <contenttweaker:bedrockium_alloy_ingot>, <contenttweaker:bedrockium_alloy_ingot>, <contenttweaker:bedrockium_alloy_ingot>, 
-            <astralsorcery:itemcraftingcomponent:1>, <astralsorcery:itemcraftingcomponent:1>,
-            <minecraft:nether_star>,
-            <contenttweaker:rune_lightning>
+            <contenttweaker:rune_lightning>,
+            <contenttweaker:conductive_alloy_wire>,
+            <contenttweaker:conductive_alloy_wire>,
+            <contenttweaker:slate_steel_wire>,
+            <contenttweaker:slate_steel_wire>,
+            <contenttweaker:bedrockium_alloy_block>,
+            <enderio:block_alloy_endergy:2>,
+            <extendedcrafting:singularity_custom:63>
         ]
     );
     
@@ -4301,6 +4303,19 @@ scripts.content_machines.addAdvancedMixerRecipe(
         [null, <contenttweaker:starmetal_plate>, null]
     ]);
 
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:star_alloy_ingot> * 8, 10240 * 100, 10240 * 5, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <enderio:block_alloy_endergy:3>,
+            <contenttweaker:starmetal_block>,
+            <contenttweaker:starmetal_block>,
+            <contenttweaker:starmetal_block>,
+            <contenttweaker:death_metal_block>,
+            <extendedcrafting:singularity:29>,
+            <extendedcrafting:singularity_custom:55>,
+            <botania:manaresource:14>
+        ]
+    );
 
     
     mods.extendedcrafting.CombinationCrafting.addRecipe(
@@ -4341,25 +4356,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
         ]
     );
 
-    mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:star_alloy_ingot> * 8, 10240 * 100, 10240 * 5, <contenttweaker:super_alloy_base_ingot>,
-        [
-            <contenttweaker:starmetal_block>,
-            <contenttweaker:starmetal_block>,
-            <enderio:item_alloy_endergy_ingot:3>,
-            <enderio:item_alloy_endergy_ingot:3>,
-            <enderio:item_alloy_endergy_ingot:3>,
-            <enderio:item_alloy_endergy_ingot:3>,
-            <taiga:adamant_ingot>,
-            <taiga:adamant_ingot>,
-            <taiga:adamant_ingot>,
-            <taiga:adamant_ingot>,
-            <contenttweaker:mirion2_ingot>,
-            <contenttweaker:gem_steel_ingot>,
-            <extendedcrafting:singularity:29>,
-            <extendedcrafting:singularity_custom:55>
-        ]
-    );
+    
 
 
     mods.extendedcrafting.CombinationCrafting.addRecipe(

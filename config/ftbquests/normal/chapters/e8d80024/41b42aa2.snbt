@@ -1,0 +1,19 @@
+{
+	x: 18.0d,
+	y: -1.0d,
+	text: [
+		"One recipe takes all the petals and mana and gives 35 mil rft and depleted flower plasma, which can be futher burned.",
+		"Another one takes neutrons and 3x mana and gives 125 mil rft."
+	],
+	dependencies: [
+		"e69ed70a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "29066e26",
+		type: "item",
+		items: [{
+			item: "modularcontroller:flower_controller"
+		}]
+	}]
+}

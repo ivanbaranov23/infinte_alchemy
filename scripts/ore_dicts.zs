@@ -79,4 +79,14 @@
     <ore:oreChunkZirconium>.add(<contenttweaker:zirconium_chunk>);
 }
 
+{//dense
+    <ore:oreManyIron>.add(<densemetals:dense_iron_ore>);
+
+    <ore:oreManyNickel>.add(<densemetals:dense_nickel_ore>);
+}
+
+<ore:sandIron>.add(<contenttweaker:iron_sand>);
+
+<ore:oreOxideNickel>.add(<immersiveengineering:ore:4>);
+
 //slime

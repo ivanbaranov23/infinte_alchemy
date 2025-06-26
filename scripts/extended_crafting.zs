@@ -71,7 +71,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<extendedcrafting:material:7>, <m
 
 //components
 recipes.remove(<extendedcrafting:material:14>);
-Inscriber.addRecipe(<extendedcrafting:material:14>, <extendedcrafting:material:2>, false, <thermalfoundation:material:327>, <contenttweaker:advanced_circuit_plate>);
+Inscriber.addRecipe(<extendedcrafting:material:14>, <extendedcrafting:material:2>, false, <minecraft:nether_star>, <enderio:item_capacitor_crystalline>);
 
 recipes.remove(<extendedcrafting:material:8>);
 recipes.addShaped("ia_ec_components1", <extendedcrafting:material:8>, [
@@ -82,7 +82,7 @@ recipes.addShaped("ia_ec_components1", <extendedcrafting:material:8>, [
 
 
 recipes.remove(<extendedcrafting:material:15>);
-Inscriber.addRecipe(<extendedcrafting:material:15>, <extendedcrafting:material:14>, false, <redstonearsenal:material:128>, <mekanism:controlcircuit:3>);
+Inscriber.addRecipe(<extendedcrafting:material:15>, <extendedcrafting:material:14>, false, <contenttweaker:light_plate>, <contenttweaker:electricium>);
 
 recipes.remove(<extendedcrafting:material:9>);
 recipes.addShaped("ia_ec_components2", <extendedcrafting:material:9>, [
@@ -93,7 +93,7 @@ recipes.addShaped("ia_ec_components2", <extendedcrafting:material:9>, [
 
 
 recipes.remove(<extendedcrafting:material:16>);
-Inscriber.addRecipe(<extendedcrafting:material:16>, <extendedcrafting:material:15>, false, <moreplates:vivid_alloy_plate>, <enderio:item_material:44>);
+Inscriber.addRecipe(<extendedcrafting:material:16>, <extendedcrafting:material:15>, false, <moreplates:manasteel_plate>, <contenttweaker:bloody_circuit>);
 
 recipes.remove(<extendedcrafting:material:10>);
 recipes.addShaped("ia_ec_components3", <extendedcrafting:material:10>, [

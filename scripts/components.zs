@@ -1035,6 +1035,32 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			[<moreplates:end_steel_plate>, <contenttweaker:lightning_cell>, <moreplates:end_steel_plate>], 
 			[<enderio:item_capacitor_crystalline>, <moreplates:melodic_alloy_gear>, <enderio:item_capacitor_crystalline>]
 		]);
+		scripts.content_machines.addAssemblerRecipe(
+			[<enderio:item_capacitor_melodic> * 2],
+			[
+				<enderio:item_capacitor_crystalline> * 3,
+				<contenttweaker:potion_processor> * 2,
+				<moreplates:melodic_alloy_gear> * 2,
+				<moreplates:end_steel_plate> * 2,
+				<contenttweaker:lightning_cell>
+			],
+			<liquid:crystalline_alloy> * 144, 20, 1024
+		);
+
+
+		recipes.remove(<enderio:item_capacitor_stellar>);
+		scripts.content_machines.addAssemblerRecipe(
+			[<enderio:item_capacitor_stellar> * 6],
+			[
+				<enderio:item_capacitor_melodic> * 4,
+				<contenttweaker:plasma_gen> * 4,
+				<contenttweaker:terragem> * 4,
+				<moreplates:stellar_alloy_plate> * 2,
+				<mekanism:basicblock2:3>.withTag({tier: 3})
+			],
+			<liquid:mirion2> * (144 * 8), 20, 1024
+		);
+
 	}
 	//enderman
 	mods.enderio.SliceNSplice.removeRecipe(<enderio:block_enderman_skull:2>);
@@ -1868,6 +1894,7 @@ scripts.content_machines.addAssemblerRecipe(
 			<contenttweaker:cursed_frame>,
 			<contenttweaker:laser> * 4,
 			<extendedcrafting:storage:2> * 4,
+			<contenttweaker:tablet_evil> * 3,
 			<contenttweaker:secure_switch>
 		], [
 			<liquid:evil_blood> * 1000
@@ -1876,7 +1903,7 @@ scripts.content_machines.addAssemblerRecipe(
     );
 	<contenttweaker:cursed_wither>.addTooltip("Laser-Super-Wither-Death Machine");
 	<contenttweaker:cursed_wither>.addTooltip("Thankfully deactivated");
-	<contenttweaker:cursed_wither>.addTooltip("Do not activate in places you don't want evaporated.");
+	<contenttweaker:cursed_wither>.addTooltip("Do not activate in dimensions you don't want evaporated.");
 
 	mods.enderio.SagMill.addRecipe(
         [<contenttweaker:cursed_star>, <minecraft:nether_star>, <contenttweaker:nether_star_dust>, <contenttweaker:cursed_gold_pieces> * 4], 
@@ -1884,3 +1911,46 @@ scripts.content_machines.addAssemblerRecipe(
         <contenttweaker:cursed_star>, "CHANCE_ONLY", 500000
     );
 }
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:evil_core>, [
+	[null, null, <taiga:astrium_ingot>, <taiga:astrium_block>, <taiga:astrium_ingot>, null, null], 
+	[null, <taiga:astrium_ingot>, <contenttweaker:diode2>, <extrautils2:simpledecorative:2>, <contenttweaker:diode2>, <taiga:astrium_ingot>, null], 
+	[<contenttweaker:slate_10>, <contenttweaker:slate_steel_coil>, <contenttweaker:compact_empowerer>, <contenttweaker:cursed_star>, <contenttweaker:compact_empowerer>, <contenttweaker:slate_steel_coil>, <contenttweaker:slate_10>], 
+	[null, <contenttweaker:diode2>, <contenttweaker:compact_empowerer>, <extrautils2:simpledecorative:2>, <contenttweaker:compact_empowerer>, <contenttweaker:diode2>, null], 
+	[null, null, <taiga:astrium_ingot>, <extrautils2:simpledecorative:2>, <taiga:astrium_ingot>, null, null], 
+	[null, <contenttweaker:slate_10>, <contenttweaker:slate_steel_coil>, <contenttweaker:diode2>, <contenttweaker:slate_steel_coil>, <contenttweaker:slate_10>, null], 
+	[null, null, null, <taiga:astrium_block>, null, null, null]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:evil_core> * 2, [
+	[null, null, <taiga:astrium_ingot>, <taiga:astrium_block>, <taiga:astrium_ingot>, null, null], 
+	[null, <taiga:astrium_ingot>, <contenttweaker:fear>, <extrautils2:simpledecorative:2>, <contenttweaker:fear>, <taiga:astrium_ingot>, null], 
+	[<contenttweaker:slate_10>, <contenttweaker:slate_steel_coil>, <contenttweaker:compact_empowerer>, <contenttweaker:cursed_star>, <contenttweaker:compact_empowerer>, <contenttweaker:slate_steel_coil>, <contenttweaker:slate_10>], 
+	[null, <contenttweaker:fear>, <contenttweaker:compact_empowerer>, <extrautils2:simpledecorative:2>, <contenttweaker:compact_empowerer>, <contenttweaker:fear>, null], 
+	[null, null, <taiga:astrium_ingot>, <extrautils2:simpledecorative:2>, <taiga:astrium_ingot>, null, null], 
+	[null, <contenttweaker:slate_10>, <contenttweaker:slate_steel_coil>, <contenttweaker:fear>, <contenttweaker:slate_steel_coil>, <contenttweaker:slate_10>, null], 
+	[null, null, null, <taiga:astrium_block>, null, null, null]
+]);
+
+scripts.content_machines.addAssemblerRecipe(
+    [<contenttweaker:plasma_gen>], 
+    [
+        <contenttweaker:laser> * 4,
+		<immersiveengineering:metal_device1:8> * 32,
+		<contenttweaker:ev_coil> * 16,
+		<contenttweaker:electricium> * 4,
+		<prodigytech:heat_capacitor_3> * 3
+    ], <liquid:super_heat_lava> * 1000,
+    20, 10000
+);
+
+scripts.content_machines.addAssemblerRecipe(
+    [<contenttweaker:cutting>], 
+    [
+        <extrautils2:lawsword> * 4,
+		<contenttweaker:pure_cincinnasite> * 32,
+		<contenttweaker:vibralcum_gear> * 16,
+		<contenttweaker:rune_mana_chip> * 4,
+		<contenttweaker:robot_brain> * 16
+    ], <liquid:tignalum> * 1440,
+    20, 10000
+);

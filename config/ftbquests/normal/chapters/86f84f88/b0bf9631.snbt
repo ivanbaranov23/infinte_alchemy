@@ -57,5 +57,17 @@
 			item: "erebus:materials 1 55"
 		}],
 		count: 8L
+	},
+	{
+		uid: "90dac2ee",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_plants1"
+		}]
+	}],
+	rewards: [{
+		uid: "859dc88e",
+		type: "item",
+		item: "contenttweaker:research_plants1"
 	}]
 }

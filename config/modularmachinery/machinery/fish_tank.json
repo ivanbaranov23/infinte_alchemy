@@ -19,11 +19,11 @@
                 }, {
                     "io": "input",
                     "target": "duration",
-                    "operation": 0,
-                    "multiplier": 50
+                    "operation": 1,
+                    "multiplier": 0.988361533
                 }
             ],
-            "description": "+3 item output, -92.5% recipe time"
+            "description": "x4 item output, -90% recipe time"
         }
     ],
     "parts": [

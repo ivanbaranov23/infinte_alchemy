@@ -69,6 +69,13 @@ import crafttweaker.liquid.ILiquidStack;
     CombustionGen.removeFuel(<liquid:if.protein>);
     CombustionGen.removeFuel(<liquid:biofuel>);
     CombustionGen.removeFuel(<liquid:fire_water>);
+    
+    CombustionGen.removeFuel(<liquid:refined_fuel>);
+    CombustionGen.removeFuel(<liquid:empoweredoil>);
+    CombustionGen.removeFuel(<liquid:biodiesel>);
+    CombustionGen.removeFuel(<liquid:diesel>);
+    CombustionGen.removeFuel(<liquid:gasoline>);
+    CombustionGen.removeFuel(<liquid:refined_biofuel>);
 
 
     CombustionGen.removeFuel(<liquid:canolaoil>);
@@ -86,6 +93,7 @@ import crafttweaker.liquid.ILiquidStack;
     //addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
     CombustionGen.addFuel(<liquid:enriched_diesel1>, 25 * 1000, 120 * 1000);
     CombustionGen.addFuel(<liquid:sunnarium_base>, 20 * 1000, 60 * 1000);
+    CombustionGen.addFuel(<liquid:flowers_depleted>, 500 * 1000, 30 * 1000);
     //expected rf
     //basic, 3 cap -> 4 -> 4*10+10 = 50    ---> 15
     //adv, 3 cap -> 110

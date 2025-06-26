@@ -1,0 +1,22 @@
+{
+	x: 15.0d,
+	y: 1.0d,
+	text: [
+		"To make Elemental Essence you need to get 2 entangled matter particles with the same frequency and a balanced EEB.",
+		"",
+		"To balance EEB you add corresponding runes to make all 4 values on it to be equal."
+	],
+	dependencies: [
+		"cea4c2c5",
+		"b994403f",
+		"c4a5d599",
+		"bb76c9c9"
+	],
+	tasks: [{
+		uid: "6c0e6fe5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:elemental_essence"
+		}]
+	}]
+}

@@ -1,3 +1,9 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.WeightedItemStack;
+
+import mods.modularmachinery.RecipeBuilder;
 
 
 scripts.content_machines.addBioAssemblerRecipe(
@@ -28,6 +34,73 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_boule>, [
         [<contenttweaker:pure_cincinnasite>, <botania:manaresource:22>, <botania:manaresource:1>, <bloodmagic:demon_extras:14>, null], 
         [<contenttweaker:pure_cincinnasite>, <contenttweaker:pure_cincinnasite>, <bloodmagic:demon_extras:10>, null, null]
 ]);
+
+
+function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IItemStack[]){
+    scripts.content_machines.addBioAssemblerRecipe(
+        outs, null,
+        inps, [<liquid:ultrapure_water> * 1000], <contenttweaker:pressure_cutter>, 
+        100, 120000
+    );
+
+    {//kikoku
+        var rec = RecipeBuilder.newBuilder(outs[0].displayName ~ "_kikoku", "rune_cutter", 20 * 15);
+
+		rec.addEnergyPerTickInput(2048 * 1000);
+
+        for output in outs
+    		rec.addItemOutput(output);
+        for output in bonus
+    		rec.addItemOutput(output).setChance(0.5);
+		
+	
+    	for input in inps
+            rec.addItemInput(input);
+
+		rec.addFluidInput(<liquid:ultrapure_water> * 750);
+        rec.addItemInput(<extrautils2:lawsword:*>).setChance(0.02);
+
+		rec.build();
+    }
+    {//kikoku 2
+        var rec = RecipeBuilder.newBuilder(outs[0].displayName ~ "_kikoku2", "rune_cutter", 20 * 10);
+
+		rec.addEnergyPerTickInput(10240 * 1000);
+
+        for output in outs
+    		rec.addItemOutput(output);
+        for output in bonus
+    		rec.addItemOutput(output).setChance(0.75);
+		
+	
+    	for input in inps
+            rec.addItemInput(input);
+
+		rec.addFluidInput(<liquid:starlight_lubricant> * 750);
+        rec.addItemInput(<extrautils2:lawsword:*>).setChance(0.01);
+
+		rec.build();
+    }
+    {//sotc
+        var rec = RecipeBuilder.newBuilder(outs[0].displayName ~ "_inf", "rune_cutter", 20);
+
+		rec.addEnergyPerTickInput(125 * 1000 * 1000);
+
+        for output in outs
+    		rec.addItemOutput(output);
+        for output in bonus
+    		rec.addItemOutput(output);
+		
+	
+    	for input in inps
+            rec.addItemInput(input);
+
+		rec.addFluidInput(<liquid:starlight_lubricant> * 250);
+        rec.addItemInput(<avaritia:infinity_sword>).setChance(0.0);
+
+		rec.build();
+    }
+}
 
 {//rune base
     {//t1
@@ -136,32 +209,20 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_boule>, [
     }
 }
 {//cutting
-    scripts.content_machines.addBioAssemblerRecipe(
-            [<contenttweaker:rune_base> * 6, <contenttweaker:reinforced_cell>], null,
-            [
-                <contenttweaker:rune_boule1>,
-                <contenttweaker:rock_cell>,
-                <contenttweaker:ev_coil> * 8,
-                <contenttweaker:mana_circuit> * 2,
-                <bigreactors:mineralanglesite> * 3
-            ], [
-                <liquid:ultrapure_water> * 1000
-            ], <contenttweaker:pressure_cutter>, 
-            40, 2000
-    );
-    scripts.content_machines.addBioAssemblerRecipe(
-            [<contenttweaker:improved_rune_base> * 6, <contenttweaker:methyst_dirty_dust> * 3], null,
-            [
-                <contenttweaker:rune_boule2>,
-                <botania:rune:8>,
-                <contenttweaker:tartaric_dust>,
-                
-                <contenttweaker:methyst> * 3
-            ], [
-                <liquid:ultrapure_water> * 1000
-            ], <contenttweaker:pressure_cutter>, 
-            40, 2000
-    );
+    addRuneCutting([<contenttweaker:rune_base> * 6, <contenttweaker:reinforced_cell>], [
+        <contenttweaker:rune_boule1>,
+        <contenttweaker:rock_cell>,
+        <contenttweaker:ev_coil> * 8,
+        <contenttweaker:mana_circuit> * 2,
+        <bigreactors:mineralanglesite> * 3
+    ], [<contenttweaker:rune_base> * 4]);
+    addRuneCutting([<contenttweaker:improved_rune_base> * 6, <contenttweaker:methyst_dirty_dust> * 3], [
+        <contenttweaker:rune_boule2>,
+        <contenttweaker:orichalconite_plate> * 8,
+        <contenttweaker:tartaric_dust> * 2,
+        <contenttweaker:rune_base> * 2,
+        <contenttweaker:methyst> * 3
+    ], [<contenttweaker:improved_rune_base> * 4]);
 }
 
 

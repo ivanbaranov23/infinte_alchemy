@@ -87,12 +87,12 @@ recipes.addShaped("fish_tank_controller", <modularcontroller:fish_tank_controlle
 
 //mek
 
-recipes.addShaped('mm_carmine_reactor_controller', <modularcontroller:carmine_reactor_controller>, [
+recipes.addShaped("mm_carmine_reactor_controller", <modularcontroller:carmine_reactor_controller>, [
 	[<contenttweaker:carminium_ingot>, <redstonearsenal:material:96>, <contenttweaker:carminium_ingot>], 
 	[<quantumflux:craftingpiece:5>, <actuallyadditions:block_misc:9>, <quantumflux:craftingpiece:5>], 
 	[<contenttweaker:carminium_ingot>, <redstonearsenal:material:96>, <contenttweaker:carminium_ingot>]
 ]);
-recipes.addShaped('mm_gas_column_controller', <modularcontroller:gas_column_controller>, [
+recipes.addShaped("mm_gas_column_controller", <modularcontroller:gas_column_controller>, [
 	[<contenttweaker:osgloridium_processor>, <mekanism:gastank>.withTag({'tier': 3}), <contenttweaker:osgloridium_processor>], 
 	[<aeadditions:gas_interface>, <mekanism:basicblock:14>, <aeadditions:gas_interface>], 
 	[<contenttweaker:osgloridium_processor>, <actuallyadditions:block_misc:9>, <contenttweaker:osgloridium_processor>]
@@ -223,6 +223,24 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:mana_bifuser
 	[<botania:bellows>, <botania:pool>, <contenttweaker:mana_frame>, <botania:pool>, <botania:bellows>], 
 	[<botania:quartztypeelf>, <modularcontroller:energy_infuser_controller>, <contenttweaker:flesh_support>, <modularcontroller:energy_infuser_controller>, <botania:quartztypeelf>], 
 	[<botania:quartztypeelf>, <botania:quartztypeelf>, <botania:quartztypeelf>, <botania:quartztypeelf>, <botania:quartztypeelf>]
+]);
+mods.botania.ElvenTrade.addRecipe(
+	[<modularcontroller:flower_controller>], [
+		<contenttweaker:mana_frame>,
+		<extendedcrafting:singularity_custom:11>,
+		<contenttweaker:terracrux>,
+		<contenttweaker:plasma_gen>,
+		<contenttweaker:plasma_gen>
+	]
+);
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:rune_cutter_controller>, [
+	[<contenttweaker:pure_metal>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:pure_metal>], 
+	[<contenttweaker:rune_base>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <contenttweaker:rune_base>], 
+	[<contenttweaker:rune_base>, <thermalfoundation:material:657>, <contenttweaker:gem_steel_plate>, <contenttweaker:rune_mana_chip>, <contenttweaker:gem_steel_plate>, <thermalfoundation:material:657>, <contenttweaker:rune_base>], 
+	[<contenttweaker:rune_base>, <thermalfoundation:material:657>, <extendedcrafting:singularity_custom:63>, <contenttweaker:mana_frame>, <extendedcrafting:singularity_custom:63>, <thermalfoundation:material:657>, <contenttweaker:rune_base>], 
+	[<contenttweaker:rune_base>, <thermalfoundation:material:657>, <contenttweaker:gem_steel_plate>, <contenttweaker:rune_mana_chip>, <contenttweaker:gem_steel_plate>, <thermalfoundation:material:657>, <contenttweaker:rune_base>], 
+	[<contenttweaker:rune_base>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <contenttweaker:rune_base>], 
+	[<contenttweaker:pure_metal>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:pure_metal>]
 ]);
 
 //astral

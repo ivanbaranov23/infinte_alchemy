@@ -69,7 +69,7 @@ recipes.addShaped("ia_frame5", <actuallyadditions:block_misc:9>, [
 
 
 recipes.remove(<deepmoblearning:machine_casing>);
-recipes.addShaped("ia_deep_casing", <deepmoblearning:machine_casing>, [
+recipes.addShaped("ia_dml_casing", <deepmoblearning:machine_casing>, [
 	[<deepmoblearning:soot_covered_plate>, <deepmoblearning:polymer_clay>, <deepmoblearning:soot_covered_plate>], 
 	[<contenttweaker:neuron_inlay>, <enderio:item_material:53>, <contenttweaker:neuron_inlay>], 
 	[<deepmoblearning:soot_covered_plate>, <deepmoblearning:polymer_clay>, <deepmoblearning:soot_covered_plate>]
@@ -82,3 +82,29 @@ recipes.addShaped("ia_frame10", <actuallyadditions:block_misc:8>, [
 	[<biomesoplenty:terrestrial_artifact>, <enderio:item_material:54>, <biomesoplenty:terrestrial_artifact>], 
 	[<extendedcrafting:material:36>, <enderio:item_capacitor_crystalline>, <extendedcrafting:material:36>]
 ]);
+
+
+recipes.addShaped("ia_frame11", <contenttweaker:soul_frame>, [
+	[<tconevo:metal:33>, <contenttweaker:soul_codex8>, <tconevo:metal:33>], 
+	[<contenttweaker:ev_coil>, <actuallyadditions:block_misc:8>, <contenttweaker:ev_coil>], 
+	[<moreplates:crystalline_alloy_plate>, <contenttweaker:soul_codex8>, <moreplates:crystalline_alloy_plate>]
+]);
+<contenttweaker:soul_frame>.addTooltip("Truly a fate worse than death");
+
+
+recipes.addShaped("ia_frame12", <contenttweaker:blood_frame>, [
+	[<contenttweaker:blood_bronze_plate>, <bloodmagic:component:12>, <contenttweaker:blood_bronze_plate>], 
+	[<bloodmagic:slate:1>, <contenttweaker:soul_frame>, <bloodmagic:slate:1>], 
+	[<contenttweaker:blood_bronze_plate>, <bloodmagic:component:12>, <contenttweaker:blood_bronze_plate>]
+]);
+
+
+//frame 13
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_frame>, [
+	[<moreplates:manasteel_gear>, <botania:managlass>, <moreplates:manasteel_plate>, <botania:managlass>, <moreplates:manasteel_gear>], 
+	[<botania:managlass>, <contenttweaker:pure_cincinnasite>, <contenttweaker:rune_base>, <contenttweaker:pure_cincinnasite>, <botania:managlass>], 
+	[<botania:managlass>, <contenttweaker:bloody_circuit>, <contenttweaker:blood_frame>, <contenttweaker:bloody_circuit>, <botania:managlass>], 
+	[<botania:managlass>, <contenttweaker:pure_cincinnasite>, <contenttweaker:rune_base>, <contenttweaker:pure_cincinnasite>, <botania:managlass>], 
+	[<moreplates:crystalline_alloy_gear>, <botania:managlass>, <moreplates:crystalline_alloy_plate>, <botania:managlass>, <moreplates:crystalline_alloy_gear>]
+]);
+

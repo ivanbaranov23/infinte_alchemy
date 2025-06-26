@@ -184,6 +184,42 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:flolit_sheet> * 4, [
 
 
 
+{//altarless copper
+    recipes.addShapeless("ia_carrot_copper", <contenttweaker:carrot_copper> * 2, [
+        <contenttweaker:carrot_pulp>, <contenttweaker:carrot_pulp>,
+        <minecraft:flint>, <minecraft:brown_mushroom> | <minecraft:red_mushroom>
+    ]);
+    recipes.addShapeless("ia_carrot_copper2", <contenttweaker:carrot_copper> * 3, [
+        <contenttweaker:carrot_pulp>, <contenttweaker:carrot_pulp>,
+        <minecraft:flint>, <liquid:mushroom_stew> * 1000
+    ]);
+    recipes.addShapeless("ia_carrot_copper3", <contenttweaker:carrot_copper> * 3, [
+        <contenttweaker:carrot_pulp>, <contenttweaker:carrot_pulp>,
+        <minecraft:flint>, <harvestcraft:whitemushroomitem>
+    ]);
+
+    
+    mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_copper:1>, <contenttweaker:carrot_copper>, <liquid:andesite>, 500, true);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <exnihilocreatio:item_ore_copper:1>, 
+        <contenttweaker:carrot_copper>, <liquid:andesite> * 250, 
+        1500
+    );
+}
+{//tin
+    recipes.addShapeless("ia_tin_very_normal_and_logical_recipe", <thermalfoundation:material:65>, [
+        <natura:materials:1>, 
+        <natura:materials:1>, 
+        <prodigytech:energion_dust>, 
+        <prodigytech:ash>
+    ]);
+}
+{//coal alt
+    mods.prodigytech.magneticreassembler.addRecipe(<prodigytech:ash>, <actuallyadditions:item_misc:10> * 3);
+    
+}
+
+
 //creosolon
 recipes.addShapeless("jade_to_flolit", <contenttweaker:flolit>, [
     <contenttweaker:creosolon>, 

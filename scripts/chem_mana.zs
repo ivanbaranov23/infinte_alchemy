@@ -81,6 +81,19 @@ import mods.modularmachinery.RecipeBuilder;
 	);
 }
 
+{//living waste
+    mods.thermalexpansion.Insolator.addRecipe(
+        <botania:livingwood>,
+        <contenttweaker:living_waste>, <contenttweaker:fertilizer6>, 25 * 1000 * 1000,
+        <contenttweaker:impure_mana_dust>, 4, 1000
+    );
+    mods.thermalexpansion.Insolator.addRecipe(
+        <botania:livingwood>,
+        <contenttweaker:living_waste>, <contenttweaker:fertilizer7>, 50 * 1000 * 1000,
+        <contenttweaker:impure_mana_dust>, 20, 1000
+    );
+}
+
 {//dense hydrogen
     scripts.content_machines.addAdvancedMixerRecipe(
         [], [<liquid:hydrogen_mix> * 250],

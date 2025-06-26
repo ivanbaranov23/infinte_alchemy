@@ -1,0 +1,111 @@
+{
+	title: "How to Grow Terrasteel",
+	icon: "contenttweaker:research_terra",
+	x: 0.0d,
+	y: 5.0d,
+	text: [
+		"Have you ever thought \"man, i sure want to make terrasteel with coral\"? Well now you can! ",
+		"",
+		"This research gives a whole bunch of ways to make terrasteel cheaper (mana-wise, material-wise some are more expensive)."
+	],
+	dependencies: [
+		"231754b8"
+	],
+	tasks: [{
+		uid: "71bc8329",
+		type: "item",
+		items: [{
+			item: "botania:storage"
+		}],
+		count: 32L
+	},
+	{
+		uid: "6dc2be4a",
+		type: "item",
+		items: [{
+			item: "botania:storage 1 3"
+		}],
+		count: 32L
+	},
+	{
+		uid: "cb098af6",
+		type: "item",
+		items: [{
+			item: "botania:quartz 1 1"
+		}],
+		count: 24L
+	},
+	{
+		uid: "0d892508",
+		type: "item",
+		items: [{
+			item: "botania:quartz 1 5"
+		}],
+		count: 16L
+	},
+	{
+		uid: "cdb5a71a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:fertilizer7"
+		}],
+		count: 32L
+	},
+	{
+		uid: "6fe6bbd5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:manapearl_block"
+		}],
+		count: 32L
+	},
+	{
+		uid: "aa6c19a7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:terracrux"
+		}]
+	},
+	{
+		uid: "4431eb9f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:terra_base"
+		}],
+		count: 4L
+	},
+	{
+		uid: "5603e492",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_custom 1 11"
+		}],
+		count: 16L
+	},
+	{
+		uid: "0fdd6e91",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_custom 1 50"
+		}]
+	},
+	{
+		uid: "cc5818d4",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_custom 1 51"
+		}]
+	},
+	{
+		uid: "47f343ef",
+		type: "item",
+		items: [{
+			item: "modularcontroller:mana_bifuser_controller"
+		}]
+	}],
+	rewards: [{
+		uid: "e5039640",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

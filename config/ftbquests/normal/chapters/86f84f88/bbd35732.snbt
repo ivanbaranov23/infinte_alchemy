@@ -65,5 +65,17 @@
 			item: "contenttweaker:sludge_token"
 		}],
 		count: 2L
+	},
+	{
+		uid: "40737dab",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_cobblegen"
+		}]
+	}],
+	rewards: [{
+		uid: "800323b8",
+		type: "item",
+		item: "contenttweaker:research_cobblegen"
 	}]
 }
