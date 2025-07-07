@@ -37,12 +37,6 @@ tconstruct:magnetic
 tconstruct:momentum
 tconstruct:dot
 tconstruct:splinter
-quark:blue
-quark:black
-quark:white
-quark:resilience
-quark:curse
-quark:danger_sight
 botania:soulcross
 botania:featherfeet
 botania:emptiness
@@ -67,6 +61,12 @@ bloodmagic:grounded
 bloodmagic:suspended
 bloodmagic:heavy_heart
 bloodmagic:feathered
+quark:blue
+quark:black
+quark:white
+quark:resilience
+quark:curse
+quark:danger_sight
 mod_lavacow:corroded
 mod_lavacow:soiled
 mod_lavacow:infested

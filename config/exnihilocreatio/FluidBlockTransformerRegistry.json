@@ -155,5 +155,15 @@
     "fluidName": "andesite_magma",
     "input": "contenttweaker:slimy_sand",
     "output": "contenttweaker:slimy_glass"
+  },
+
+
+  {
+    "fluidName": "sand",
+    "input": "deepmoblearning:pristine_matter_stone:0",
+    "output": "minecraft:sand:0",
+    "toSpawn": "atum:stoneguard",
+    "spawnCount": 8,
+    "spawnRange": 6
   }
 ]

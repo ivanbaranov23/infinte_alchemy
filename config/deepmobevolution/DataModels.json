@@ -26,7 +26,7 @@
       "hearts": 160,
       "mobTrivia": [
         "A mushroom.",
-        "Can mush your room."
+        "Can mush your room. And you."
       ],
       "entity": "erebus:erebus.crushroom",
       "entityScale": 16,
@@ -94,7 +94,7 @@
       "spawnDelay": 2.6,
       "rewards": [
         "deepmoblearning:glitch_heart,5",
-      "contenttweaker:khnumite_heart,6"
+        "contenttweaker:khnumite_heart,6"
       ]
     },
     "deepLearnerDisplay": {

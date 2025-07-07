@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"837cf6f5"
+	],
+	optional: true,
+	tasks: [{
+		uid: "eb010408",
+		type: "item",
+		items: [{
+			item: "torchmaster:feral_flare_lantern"
+		}]
+	}]
+}

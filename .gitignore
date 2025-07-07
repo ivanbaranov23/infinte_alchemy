@@ -5,7 +5,7 @@ journeymap/
 cache/
 backups/
 crasf-reports/
-
+dumps/
 cache/groovy/_index.json
 cache/groovy/_index.json
 cache/groovy/postInit/postInit.inworldcrafting.clz
@@ -31,3 +31,5 @@ patchouli_data.json
 usercache.json
 usernamecache.json
 BotaniaVars.dat
+scripts/a.cpp
+/screenshots

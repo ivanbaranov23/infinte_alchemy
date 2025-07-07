@@ -1,6 +1,9 @@
 {
-	x: 1.0d,
+	x: 2.0d,
 	y: 2.0d,
+	text: [
+		"Dropped by lich."
+	],
 	dependencies: [
 		"51fd7c52"
 	],

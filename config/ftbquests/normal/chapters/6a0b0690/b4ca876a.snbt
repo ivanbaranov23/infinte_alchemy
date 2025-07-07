@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	text: [
+		"This staff is used to make forest fey fire to make cooler stuff in wood infuser"
+	],
+	dependencies: [
+		"7d8d0c10",
+		"561478bf"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4529a219",
+		type: "item",
+		items: [{
+			item: "contenttweaker:staffwood_fire"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

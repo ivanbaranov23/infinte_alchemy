@@ -49,6 +49,7 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
         crate_metal_ingot.addItemEntry(<contenttweaker:thermal_ingot>, 25);
         crate_metal_ingot.addItemEntry(<contenttweaker:watertight_steel_ingot>, 30);
         crate_metal_ingot.addItemEntry(<taiga:terrax_ingot>, 10);
+        crate_metal_ingot.addItemEntry(<biomesoplenty:gem:3>, 10);
         crate_metal_ingot.addItemEntry(<thermalfoundation:material:167>, 5);
 
         var crate_thermal_thingy as LootPool = crate_table.addPool("crate_thermal_thingy", 0, 2, 0, 0);
@@ -75,6 +76,7 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
         pyramid_chest_metal_ingot.addItemEntry(<contenttweaker:thermal_ingot>, 25);
         pyramid_chest_metal_ingot.addItemEntry(<contenttweaker:watertight_steel_ingot>, 30);
         pyramid_chest_metal_ingot.addItemEntry(<taiga:terrax_ingot>, 10);
+        pyramid_chest_metal_ingot.addItemEntry(<biomesoplenty:gem:3>, 10);
         pyramid_chest_metal_ingot.addItemEntry(<thermalfoundation:material:167>, 5);
 
         var pyramid_chest_gem as LootPool = pyramid_chest_table.addPool("pyramid_chest_gem", 0, 3, 0, 0);

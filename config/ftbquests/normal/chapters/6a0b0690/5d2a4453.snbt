@@ -1,0 +1,15 @@
+{
+	x: 0.0d,
+	y: 3.0d,
+	dependencies: [
+		"6c51986d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a8725ece",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tar_light"
+		}]
+	}]
+}

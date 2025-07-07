@@ -48,8 +48,7 @@ recipes.addShaped("ia_te_reservoir", reservoir, [
 
 
 
-Transposer.addFillRecipe(<projectred-core:resource_item>, <contenttweaker:electric_stone_dust>, <liquid:concrete> * 200, 3000);
-Transposer.addFillRecipe(<contenttweaker:power_core_active>, <contenttweaker:power_core_inactive>, <liquid:napalm> * 750, 10000);
+
 
 recipes.remove(<thermalfoundation:material:640>);
 recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [

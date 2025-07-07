@@ -16,5 +16,10 @@
 		uid: "aca1501f",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "f5188cfe",
+		type: "item",
+		item: "animus:altardiviner"
 	}]
 }

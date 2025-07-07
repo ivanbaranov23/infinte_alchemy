@@ -2,8 +2,7 @@
 	x: -1.5d,
 	y: 5.0d,
 	text: [
-		"You'll need andesite magma to melt this.",
-		"Magma can be made in ex nihilo crucible and mixed with andesite also from crucible. "
+		"You'll need andesite magma to melt this."
 	],
 	dependencies: [
 		"f8152e75",

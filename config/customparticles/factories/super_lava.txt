@@ -1,0 +1,4 @@
+template basic
+texture contenttweaker:textures/particles.png
+spriteMetaData 64 64 0 0 8 8
+motionPath up

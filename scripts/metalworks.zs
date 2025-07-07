@@ -2927,17 +2927,29 @@ add3alloy(1, "flower_steel", 4,
         mods.enderio.AlloySmelter.removeRecipe(<thermalfoundation:material:167>);
         mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:39>);
         mods.tconstruct.Alloy.removeRecipe(<liquid:enderium>);
+        mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:103>);
 
-        add2alloy(1, "enderium_base", 4,
+        add2alloy(1, "enderium_base", 2,
             "mushroomite", 3,
-            "platinum", 1
+            "platinum", 2
         );
         mods.thermalexpansion.Transposer.addFillRecipe(
             <thermalfoundation:material:167>,
-            <enderio:item_material:39>, <liquid:ender> * 250,
+            <enderio:item_material:39>, <liquid:ender> * 1250,
             5000
         );
-        mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:103>);
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <thermalfoundation:material:167> * 3,
+            <enderio:item_material:39>, <liquid:goop> * 500,
+            5000
+        );
+
+        scripts.helper.addFluidMixerRecipe(<liquid:goop> * 1000, 
+            <liquid:ender> * 500,
+            <liquid:tar> * 1000,
+            <harvestcraft:vinegaritem>,
+            320, 80
+        );
     }
 
     {//logic steels
@@ -3019,7 +3031,7 @@ add3alloy(1, "flower_steel", 4,
             <harvestcraft:extremechiliitem>,
             <contenttweaker:burn_powder> | <contenttweaker:evil_desert_dust> | <contenttweaker:calcium>
         ]);
-        recipes.addShapeless("ia_excited_dust2", <contenttweaker:excited_powder> * 3, [
+        recipes.addShapeless("ia_excited_dust2", <contenttweaker:excited_powder> * 4, [
             <actuallyadditions:item_dust:7>,
             <extrautils2:ingredients:4>,
             <harvestcraft:extremechiliitem>,
@@ -4282,15 +4294,13 @@ scripts.content_machines.addAdvancedMixerRecipe(
         <contenttweaker:fluxed_invar_ingot> * 3, 10240 * 200, 10240, <contenttweaker:super_alloy_base_ingot>, 
         [
             <extendedcrafting:singularity:28>,
-            <redstonearsenal:storage>,
-            <redstonearsenal:storage>,
-            <redstonearsenal:storage>,
-            <redstonearsenal:storage:1>,
+            <redstonearsenal:material:224>,
+            <redstonearsenal:material:224>,
             <bloodmagic:demon_extras:14>,
-            <tconevo:metal:40>,
-            <contenttweaker:bedrockium_alloy_ingot>,
-            <enderio:item_alloy_endergy_ingot:6>,
-            <contenttweaker:vibralcum_ingot>
+            <contenttweaker:bedrockium_alloy_plate>,
+            <tconevo:metal:43>,
+            <moreplates:vivid_alloy_plate>,
+            <contenttweaker:vibralcum_block>
         ]
     );
 }

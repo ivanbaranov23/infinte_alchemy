@@ -81,6 +81,21 @@ import mods.modularmachinery.RecipeBuilder;
     mods.mekanism.chemical.infuser.addRecipe(<gas:fluorine>, <gas:hydrogen>, <gas:hf>);
 }
 
+{//tar
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <contenttweaker:zeolite> * 3, 
+        <contenttweaker:aluminum_silicon>, <contenttweaker:naoh> * 4, <liquid:aerotheum> * 500, 
+        100, 500
+    );
+
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:zeolite>, <liquid:greenslime> * 500, <gas:tar_gas> * 1000, 
+        null, <gas:methane> * 1000, 3600, 160
+    );
+
+    mods.mekanism.compressor.addRecipe(<harvestcraft:taroitem>, <gas:tar_gas>, <immersivepetroleum:material>);
+}
+
 
 {//gems
     mods.mekanism.separator.addRecipe(<liquid:ruby_slury> * 2, 200, <gas:cleaniron>, <gas:cleanchrome>);
@@ -281,8 +296,8 @@ import mods.modularmachinery.RecipeBuilder;
 
     furnace.remove(<projectred-core:resource_item:300>);
     mods.enderio.AlloySmelter.addRecipe(<projectred-core:resource_item:300>, 
-        [<projectred-core:resource_item:250> * 4, <appliedenergistics2:material:5> * 48, <contenttweaker:solar_silicon> * 4], 
-        50000
+        [<projectred-core:resource_item:250> * 4, <contenttweaker:aluminum_silicon> * 32, <contenttweaker:solar_silicon> * 8], 
+        150000
     );
 
     recipes.remove(<projectred-core:resource_item:301>);

@@ -22,6 +22,7 @@
 		type: "item",
 		items: [{
 			item: "contenttweaker:pilkon"
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

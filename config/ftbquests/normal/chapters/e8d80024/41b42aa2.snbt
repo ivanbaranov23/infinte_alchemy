@@ -2,6 +2,8 @@
 	x: 18.0d,
 	y: -1.0d,
 	text: [
+		"If you're making multiple of these, make each of them in different color. In fact make all of them be in multiple colors.",
+		"",
 		"One recipe takes all the petals and mana and gives 35 mil rft and depleted flower plasma, which can be futher burned.",
 		"Another one takes neutrons and 3x mana and gives 125 mil rft."
 	],

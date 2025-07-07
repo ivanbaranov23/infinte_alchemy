@@ -1,0 +1,14 @@
+{
+	x: 0.0d,
+	y: 2.0d,
+	dependencies: [
+		"51fd7c52"
+	],
+	tasks: [{
+		uid: "a06a62e4",
+		type: "item",
+		items: [{
+			item: "twilightforest:torchberries"
+		}]
+	}]
+}

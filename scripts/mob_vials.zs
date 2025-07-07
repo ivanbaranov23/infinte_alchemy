@@ -364,12 +364,12 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     addVialProcess("atum:stoneguard", <liquid:lubricant> * 100, {
             <atum:khnumite> * 4 % 80: 0.04,
             <contenttweaker:khnumite_heart> % 50: 0.02
-        }, <liquid:sky_stone> * 50, 1
+        }, <liquid:sky_stone> * 100, 1
     );
     addVialProcess("atum:stonewarden", <liquid:lubricant> * 150, {
             <atum:khnumite> * 6 % 80: 0.04,
             <contenttweaker:khnumite_heart> % 50: 0.02
-        }, <liquid:sky_stone> * 100, 1
+        }, <liquid:sky_stone> * 200, 1
     );
 
     addVialProcess("atum:sunspeaker", poison, {

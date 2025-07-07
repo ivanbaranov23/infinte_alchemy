@@ -8,6 +8,12 @@ import mods.modularmachinery.RecipeBuilder;
 
 import scripts.mob_jei.addJEIentityHint;
 
+import loottweaker.LootTweaker;
+import loottweaker.vanilla.loot.LootTable;
+import loottweaker.vanilla.loot.LootPool;
+import loottweaker.vanilla.loot.Functions;
+import loottweaker.vanilla.loot.Conditions;
+
 function addEggHint(ent as string, drops as IItemStack[]){
     addJEIentityHint(
         [], null, ent,
@@ -38,6 +44,28 @@ function readdRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
 
     addRootsSummoning_jei(ent, inps);
 }
+
+
+static pool as int = 0;
+function addLoot(ent as string, ent_table as string, items as IItemStack[], stats as int[][]){
+    pool += 1;
+    var lt = LootTweaker.getTable(ent_table);
+    var lp = lt.addPool("autopool" ~ pool, 1, 1, 0, 0);
+    for i,item in items{
+        lp.addItemEntry(item, 1, 1, [
+            //Functions.lootingEnchantBonus(stats[i][1], stats[i][2], stats[i][3])
+        ], [
+            Conditions.randomChanceWithLooting((stats[i][0] as float) / 100.0, (stats[i][1] as float) / 100.0)
+        ]);
+    }
+
+    addJEIentityHint(
+        [], null, ent,
+        [<minecraft:diamond_sword>.withDisplayName(game.localize("ia.egg_hint.sword"))], null,
+        items, null, ""
+    );
+}
+
 
 {//minecraft
     //zombie
@@ -184,23 +212,27 @@ function readdRootsSummoning(ent as IEntityDefinition, inps as IIngredient[]){
         addEggHint("atum:stoneguard", [<contenttweaker:khnumite_heart>]);
         addEggHint("atum:stonewarden", [<contenttweaker:khnumite_heart>]);
         
-        <entity:atum:stoneguard>.addDrop(<contenttweaker:khnumite_heart> % 50);
-        <entity:atum:stonewarden>.addDrop(<contenttweaker:khnumite_heart> % 75);
+        //<entity:atum:stoneguard>.addDrop(<contenttweaker:khnumite_heart> % 50);
+        addLoot("atum:stoneguard", "atum:entities/stoneguard", [<contenttweaker:khnumite_heart>], [[30, 10, 1]]);
+        //<entity:atum:stonewarden>.addDrop(<contenttweaker:khnumite_heart> % 75);
+        addLoot("atum:stonewarden", "atum:entities/stonewarden", [<contenttweaker:khnumite_heart>], [[60, 15, 1]]);
+
 
         addJEIentityHint(
             [<atum:khnumite_face>, <atum:khnumite_block> * 2], null, "",
-            [], null,
+            [<openblocks:glyph:73>], null,
             [], null, "atum:stoneguard"
         );
         addJEIentityHint(
             [<atum:khnumite_face>, <atum:khnumite_block> * 4], null, "",
-            [], null,
+            [<openblocks:glyph:84>], null,
             [], null, "atum:stonewarden"
         );
 
         
 
         //heart proc
+        scripts.helper.addSawRecipeWByproduct(<contenttweaker:khnumite_heart>, <atum:khnumite> * 3, <atum:khnumite>, 30);
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:khnumite> * 2000, <atum:khnumite_face>, <liquid:chloroauric_acid> * 1000, 10000);
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:khnumite> * 2000, <contenttweaker:khnumite_heart>, <liquid:chloroauric_acid> * 1000, 10000);
         

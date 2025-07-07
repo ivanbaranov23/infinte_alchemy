@@ -61,5 +61,28 @@
 		items: [{
 			item: "roots:elemental_soil_earth"
 		}]
+	}],
+	rewards: [{
+		uid: "c79b602b",
+		type: "item",
+		item: "contenttweaker:fertilizer3",
+		count: 4
+	},
+	{
+		uid: "ac11e4e5",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/garden_cloche",
+				label: "Garden Cloche",
+				size: 5
+			}
+		}
 	}]
 }

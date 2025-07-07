@@ -34,6 +34,29 @@
                     "multiplier": 16
                 }
             ]
+        },
+        {"description": "output items x3, -20% chance to consume inputs",
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:tar_light@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 3
+                },
+                {
+                    "io": "input",
+                    "target": "item",
+                    "operation": 1,
+                    "multiplier": 0.8,
+                    "affectChance": true
+                }
+            ]
         }
     ],
     "parts": [

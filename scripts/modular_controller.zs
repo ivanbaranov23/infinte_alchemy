@@ -97,6 +97,11 @@ recipes.addShaped("mm_gas_column_controller", <modularcontroller:gas_column_cont
 	[<aeadditions:gas_interface>, <mekanism:basicblock:14>, <aeadditions:gas_interface>], 
 	[<contenttweaker:osgloridium_processor>, <actuallyadditions:block_misc:9>, <contenttweaker:osgloridium_processor>]
 ]);
+recipes.addShaped("mm_tar_pit_controller", <modularcontroller:tar_pit_controller>, [
+	[<contenttweaker:tungsten_plate>, <mekanism:gastank>.withTag({tier: 3}), <contenttweaker:tungsten_plate>], 
+	[<openblocks:tank>.withTag({tank: {FluidName: "tar", Amount: 16000}}), <mekanism:basicblock:8>, <openblocks:tank>.withTag({tank: {FluidName: "tar", Amount: 16000}})], 
+	[<contenttweaker:tungsten_plate>, <contenttweaker:arkenium_plate>, <contenttweaker:tungsten_plate>]
+]);
 
 //AA
 recipes.addShaped("mm_explosion_compressor_controller", <modularcontroller:explosion_compressor_controller>, [

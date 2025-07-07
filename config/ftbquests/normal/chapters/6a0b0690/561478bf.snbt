@@ -1,0 +1,18 @@
+{
+	x: 1.0d,
+	y: 2.0d,
+	text: [
+		"Dropped by druid skeletons."
+	],
+	dependencies: [
+		"51fd7c52"
+	],
+	optional: true,
+	tasks: [{
+		uid: "71215ef5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:druid_bone"
+		}]
+	}]
+}

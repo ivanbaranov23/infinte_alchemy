@@ -3,6 +3,12 @@ import mods.modularmachinery.RecipeBuilder;
 import mods.immersiveengineering.Blueprint;
 import mods.mekanism.infuser;
 
+
+mods.immersiveengineering.BottlingMachine.addRecipe(<projectred-core:resource_item>, <contenttweaker:electric_stone_dust>, <liquid:concrete> * 250);
+mods.thermalexpansion.Transposer.addFillRecipe(<projectred-core:resource_item>, <contenttweaker:electric_stone_dust>, <liquid:concrete> * 200, 3000);
+
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active>, <contenttweaker:power_core_inactive>, <liquid:napalm> * 750, 10000);
+
 {//thermal
 	//sanded
 	mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:sanded_rod>, <contenttweaker:thermal_rod>, <liquid:khnumite> * 125, 10000);
@@ -1418,9 +1424,10 @@ mods.mekanism.reaction.addRecipe(
 		[
 			<enderio:item_capacitor_crystalline>,
 			<contenttweaker:algan> * 16,
-			<immersiveengineering:material:26> * 16,
-			<contenttweaker:noble_gases_ingot> * 8,
-			<quantumflux:craftingpiece:2> * 4
+			<immersiveengineering:material:26> * 24,
+			<contenttweaker:noble_gases_ingot> * 12,
+			<quantumflux:craftingpiece:2> * 6,
+			<contenttweaker:lens_out>
 		], null, 20, 1000
 	);
 }
@@ -1480,27 +1487,37 @@ mods.mekanism.reaction.addRecipe(
 	
 }
 {//lenses
-	
+	recipes.addShaped("ia_lens_out", <contenttweaker:lens_out>, [
+		[<contenttweaker:glass_fiber>, <extrautils2:ineffableglass:2>, <contenttweaker:glass_fiber>], 
+		[<thermalfoundation:material:321>, <contenttweaker:delicate_topaz>, <thermalfoundation:material:321>], 
+		[<contenttweaker:glass_fiber>, <extrautils2:ineffableglass:2>, <contenttweaker:glass_fiber>]
+	]);
 	scripts.content_machines.addAssemblerRecipe(
-		[<contenttweaker:lens_out>],
+		[<contenttweaker:lens_out> * 2],
 		[
 			<contenttweaker:delicate_topaz>,
 			<tconstruct:clear_glass> * 8,
 			<contenttweaker:glass_fiber> * 2,
 			<extrautils2:ineffableglass:2>
 		],
-		<liquid:tin> * 1000,
+		<liquid:tin> * 576,
 		20, 512
 	);
+
+	recipes.addShaped("ia_lens_in", <contenttweaker:lens_in>, [
+		[<contenttweaker:glass_fiber>, <extrautils2:ineffableglass:2>, <contenttweaker:glass_fiber>], 
+		[<thermalfoundation:material:321>, <contenttweaker:delicate_amber>, <thermalfoundation:material:321>], 
+		[<contenttweaker:glass_fiber>, <extrautils2:ineffableglass:2>, <contenttweaker:glass_fiber>]
+	]);
 	scripts.content_machines.addAssemblerRecipe(
-		[<contenttweaker:lens_in>],
+		[<contenttweaker:lens_in> * 2],
 		[
 			<contenttweaker:delicate_amber>,
 			<tconstruct:clear_glass> * 8,
 			<contenttweaker:glass_fiber> * 2,
 			<extrautils2:ineffableglass:2>
 		],
-		<liquid:tin> * 1000,
+		<liquid:tin> * 576,
 		20, 512
 	);
 
@@ -1938,7 +1955,8 @@ scripts.content_machines.addAssemblerRecipe(
 		<immersiveengineering:metal_device1:8> * 32,
 		<contenttweaker:ev_coil> * 16,
 		<contenttweaker:electricium> * 4,
-		<prodigytech:heat_capacitor_3> * 3
+		<prodigytech:heat_capacitor_3> * 3,
+		<mekanismgenerators:reactor:1> * 4
     ], <liquid:super_heat_lava> * 1000,
     20, 10000
 );

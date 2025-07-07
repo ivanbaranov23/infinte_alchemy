@@ -407,7 +407,7 @@ var mil as int = 1000000;
     addExcavator("Certus Quartz", 10, ["oreOverworldCertusQuartz", "oreOverworldChargedCertusQuartz", "oreOverworldBlackQuartz"], [0.65, 0.25, 0.1], [0, -11325]);
     
 
-    addExcavator("Titanium and Garbage", 5, ["oreOverworlTitanium", "oreOverworldSapphire", "oreOverworldNeodymium", "oreVibranium"], [0.90, 0.07, 0.02, 0.01], [0, -11325]);
+    addExcavator("Titanium and Garbage", 5, ["oreOverworldTitanium", "oreOverworldSapphire", "oreOverworldNeodymium", "oreVibranium"], [0.90, 0.07, 0.02, 0.01], [0, -11325]);
 
     addExcavator("Chrome", 10, ["oreOverworldChrome", "oreOverworldRuby", "oreOverworldRedstone"], [0.8, 0.1, 0.1], [0, -11325]);
 

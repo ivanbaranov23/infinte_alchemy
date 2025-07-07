@@ -29,6 +29,7 @@ recipes.addShapeless(
     <erebus:materials:3> * 4,
     [<erebus:planks:8>]
 );
+<erebus:bambucket>.definition.setContainerItem(<erebus:bambucket>.definition);
 
 {//mushroom dup
   recipes.addShapeless("ia_erebus_mushroom_dup1", 
@@ -104,11 +105,11 @@ recipes.addShaped("ia_portal_activator", <erebus:portal_activator>, [
     [<ore:stickTreatedWood>, null, null]
   ]);
 
-  scripts.jei.addJEIhint(
+  /*scripts.jei.addJEIhint(
     [<minecraft:spawn_egg>.withTag({EntityTag: {id: "erebus:erebus.beetle"}})], [], 
     [<minecraft:bucket>, <industrialforegoing:animal_resource_harvester>], 
     [<forge:bucketfilled>.withTag({FluidName: "beetle_juice", Amount: 1000})], [<liquid:beetle_juice>]
-  );
+  );*/
   mods.thermalexpansion.Crucible.addRecipe(<liquid:honey> * 75, <erebus:materials:20>, 500);
 
   scripts.jei.addJEIhint(

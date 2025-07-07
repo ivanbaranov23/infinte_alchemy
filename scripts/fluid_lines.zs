@@ -127,7 +127,7 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 
 
 Distillation.addRecipe(
-	[<liquid:pure_water> * 10, <liquid:water> * 70], 
+	[<liquid:pure_water> * 40], 
 	[<actuallyadditions:item_dust:7>, <exnihilocreatio:item_material:3>], 
 	<liquid:witchwater> * 100, 3 * 20 * 128, 3 * 20, 
 	[0.07, 0.04]
@@ -148,7 +148,45 @@ Distillation.addRecipe(
 		20, 500
 	);
 
-	//heat lava
+	{//heat lava
+		scripts.content_machines.addAdvancedMixerRecipe(
+			[], [<liquid:high_heat_lava> * 400, <liquid:lava_residue> * 100],
+			[
+				<thermalexpansion:florb>.withTag({Fluid: "napalm"}) * 4,
+				<contenttweaker:hot_ingot> | <thermalexpansion:florb:1>.withTag({Fluid: "blazing_blood"}), <bloodmagic:component:1>, <prodigytech:heat_capacitor_1>
+			], [
+				<liquid:lava> * 2000,
+				<liquid:pyrotheum> * 1000, 
+				<liquid:empoweredoil> * 1000,
+				<liquid:andesite_magma> * 1000
+			], 20, 2000
+		);
+		scripts.content_machines.addAdvancedMixerRecipe(
+			[], [<liquid:high_heat_lava> * 500, <liquid:lava_residue> * 100],
+			[
+				<thermalexpansion:florb>.withTag({Fluid: "napalm"}) * 4,
+				<contenttweaker:hot_ingot> | <thermalexpansion:florb:1>.withTag({Fluid: "blazing_blood"}), <bloodmagic:component:1>, <prodigytech:heat_capacitor_1>
+			], [
+				<liquid:lava> * 2000,
+				<liquid:pyrotheum> * 1000, 
+				<liquid:empoweredoil> * 1000,
+				<liquid:nitronite_fluid> * 250
+			], 20, 2000
+		);
+		scripts.content_machines.addAdvancedMixerRecipe(
+			[], [<liquid:high_heat_lava> * 450, <liquid:lava_residue> * 100],
+			[
+				<thermalexpansion:florb>.withTag({Fluid: "napalm"}) * 4,
+				<contenttweaker:hot_ingot> | <thermalexpansion:florb:1>.withTag({Fluid: "blazing_blood"}), <bloodmagic:component:1>, <prodigytech:heat_capacitor_1>
+			], [
+				<liquid:lava> * 2000,
+				<liquid:pyrotheum> * 1000, 
+				<liquid:empoweredoil> * 1000,
+				<liquid:fierymetal> * 288
+			], 20, 2000
+		);
+	}
+	/*
 	scripts.content_machines.addAdvancedMixerRecipe(
 		[<prodigytech:heat_capacitor_1:1200>], 
 		[<liquid:high_heat_lava> * 100, <liquid:lava_residue> * 100], 
@@ -162,8 +200,9 @@ Distillation.addRecipe(
 		[<contenttweaker:hot_ingot>, <bloodmagic:component:1>, <prodigytech:heat_capacitor_2>], 
 		[<liquid:lava> * 1000, <liquid:pyrotheum> * 1000, <liquid:fire_water> * 1000, <liquid:magma_fluid> * 1000], 
 		20, 2048
-	);
+	);*/
 
+	//super lava
 	scripts.content_machines.addAdvancedMixerRecipe(
 		[<prodigytech:heat_capacitor_3:1200>], 
 		[<liquid:super_heat_lava> * 1000, <liquid:lava_residue> * 1000], 
@@ -269,10 +308,40 @@ Refinery.addRecipe(<liquid:pure_water> * 3000, <mekanism:dirtydust:5> % 1, <liqu
 	mods.thermalexpansion.Infuser.addRecipe(<contenttweaker:ion_beads>, <contenttweaker:ion_beads_spent>, 25000);
 }
 
-//water -> sea water
+{//water -> sea water
 
-Transposer.addExtractRecipe(<liquid:sea_water> * 2000, <minecraft:sea_lantern>, 3000, <biomesoplenty:gem:6> % 10);
+	Transposer.addExtractRecipe(<liquid:sea_water> * 2000, <minecraft:sea_lantern>, 3000, <biomesoplenty:gem:6> % 10);
 
+	Distillation.addRecipe(
+		[<liquid:pure_water> * 75, <liquid:seaweed_rich_water> * 15], 
+		[<mekanism:salt>, <mekores:mekanismore:3>, <projectred-core:resource_item:105>, <minecraft:prismarine_shard>], 
+		<liquid:sea_water> * 100, 1200, 30, 
+		[0.1, 0.001, 0.14, 0.003]
+	);
+
+
+	scripts.content_machines.addFluidMixerRecipe(
+		<liquid:ocean_water> * 1250, 
+		<liquid:seaweed_rich_water> * 1000, <liquid:methane> * 150, <ore:listAllfishfresh> * 3, 
+		80, 1000
+	);
+	{
+		//var a as IItemStack[];
+		var b as float[] = [];
+		for f in <ore:listAllfishfresh>.items{
+			//a += f;
+			b += 0.1;
+		}
+
+		Distillation.addRecipe(
+			[<liquid:methane> * 10, <liquid:seaweed_rich_water> * 15], 
+			<ore:listAllfishfresh>.items, 
+			<liquid:ocean_water> * 125, 1200, 30, 
+			b
+		);
+	}
+	
+}
 
 //heavy water -> water
 Distillation.addRecipe(
@@ -308,14 +377,6 @@ TEImbuer.addRecipe(<liquid:witchwater> * (2000), <exnihilocreatio:item_material:
 Refinery.addRecipe(<liquid:sugary_solution> * 750, <minecraft:sugar> % 10, <liquid:honey> * 1000, 2000);
 TEImbuer.addRecipe(<liquid:sugary_solution> * (500), <minecraft:sugar>, <liquid:water> * 500, 3000);
 TEImbuer.addRecipe(<liquid:sugary_solution> * (500), <minecraft:sugar>, <liquid:pure_water> * 500, 1000);
-
-//sea water sieving
-Distillation.addRecipe(
-	[<liquid:pure_water> * 75, <liquid:seaweed_rich_water> * 15], 
-	[<mekanism:salt>, <mekores:mekanismore:3>, <projectred-core:resource_item:105>, <minecraft:prismarine_shard>], 
-	<liquid:sea_water> * 100, 1200, 30, 
-	[0.1, 0.001, 0.14, 0.003]
-);
 
 //cleaning fluid
 scripts.helper.addFluidMixerRecipe(<liquid:sterile_water> * 500,

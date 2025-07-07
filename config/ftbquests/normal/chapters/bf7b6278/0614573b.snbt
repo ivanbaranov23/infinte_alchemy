@@ -1,7 +1,7 @@
 {
 	icon: "modularcontroller:research_station_controller",
 	x: 17.0d,
-	y: 3.0d,
+	y: 1.0d,
 	text: [
 		"Research Station (RS) is a bit special compared to other multiblocks. It is mainly used to do research, but can also be used to get info on mech and livings.",
 		"",

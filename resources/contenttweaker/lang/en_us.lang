@@ -1050,8 +1050,8 @@ tile.contenttweaker.potato_block5.name=Quintuple Compressed Potato Block
 
 
 
-item.contenttweaker.eliamondin.name=Eliamondin Gem
-item.contenttweaker.eliamondin_dust.name=Eliamondin Dust
+item.contenttweaker.eliamondin.name=Rubberald Gem
+item.contenttweaker.eliamondin_dust.name=Rubberald Dust
 
 
 item.contenttweaker.neutronium_mirror.name=Simple Neutron Reflector
@@ -1937,7 +1937,7 @@ ia.tooltip.holy_thing=So just \"holy\"
 ia.tooltip.dummy=Pay this no mind
 ia.tooltip.xnet=Formerly known as Twitternet Ingot
 
-ia.tooltip.death=You touch the ingot and fell the death touching you back.
+ia.tooltip.death=You touch the ingot and feel the death touching you back.
 ia.tooltip.creosolon=Not-so-weak enhancer
 
 ia.tooltip.m_tier1=Machine Frame Tier 1
@@ -2192,3 +2192,23 @@ item.contenttweaker.rune_mana_chip.name=Advanced Runic Chip
 tile.void_infuser.name=Void Infuser
 
 item.contenttweaker.carrot_copper.name=Cappet
+item.contenttweaker.tinley.name=Tinley
+
+fluid.vile=Vile Fluid
+fluid.tartaric_gel=Tartaric Gel
+
+ia.egg_hint.doll=Drop doll into a barrel with fluid
+
+item.contenttweaker.zeolite.name=Zeolite
+
+fluid.hydrogen_mix=Hydrogen Mixture
+fluid.dense_hydrogen=Dense Hydrogen
+
+item.contenttweaker.research_logistic.name=How to Move Stuff Around 
+
+requious.jei.recipe.entity_hint=Entity Hint
+
+fluid.goop=Enderious Goop
+fluid.enriched_tar=Enriched Tar
+
+fluid.ocean_water=Ocean Water

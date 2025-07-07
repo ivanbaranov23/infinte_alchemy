@@ -99,7 +99,8 @@ import mods.modularmachinery.RecipeBuilder;
         [], [<liquid:hydrogen_mix> * 250],
         [
             <botania:manaresource:15> * 8,
-            <enderio:item_material:37>
+            <enderio:item_material:37>,
+            <contenttweaker:zeolite> * 6
         ], [
             <liquid:liquidhydrogen> * 1000,
             <liquid:liquiddeuterium> * 1000,

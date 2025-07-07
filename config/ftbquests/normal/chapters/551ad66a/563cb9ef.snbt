@@ -2,7 +2,9 @@
 	x: 0.0d,
 	y: 1.0d,
 	text: [
-		"Did you know that TiC table and faucet works just fine without smeltery?"
+		"Did you know that TiC table and faucet works just fine without smeltery?",
+		"",
+		"You can get blood by melting rotten flesh or yourself. For second method you need to stand in the non empty smeltery"
 	],
 	dependencies: [
 		"42386b50",

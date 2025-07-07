@@ -1,0 +1,26 @@
+{
+	x: 5.0d,
+	y: 2.0d,
+	text: [
+		"Crop for better recipe for item for better recipe for fluid for making mekanized steel."
+	],
+	dependencies: [
+		"b4ca876a",
+		"6c51986d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1a1853e0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:excited_mud"
+		}]
+	},
+	{
+		uid: "bcead6b1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:excited_crop"
+		}]
+	}]
+}

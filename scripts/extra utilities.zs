@@ -62,8 +62,13 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
 {//nodes
 	recipes.remove(<extrautils2:pipe>);
-	recipes.addShaped("ia_xu_pipe", <extrautils2:pipe> * 16, [
+	recipes.addShaped("ia_xu_pipe", <extrautils2:pipe> * 12, [
 		[null, <projectred-transmission:wire>, null], 
+		[<projectred-transmission:wire>, <contenttweaker:zinc_rod>, <projectred-transmission:wire>], 
+		[null, <projectred-transmission:wire>, null]
+	]);
+	recipes.addShaped("ia_xu_pipe2", <extrautils2:pipe> * 24, [
+		[<contenttweaker:research_logistic>.reuse(), <projectred-transmission:wire>, null], 
 		[<projectred-transmission:wire>, <contenttweaker:zinc_rod>, <projectred-transmission:wire>], 
 		[null, <projectred-transmission:wire>, null]
 	]);

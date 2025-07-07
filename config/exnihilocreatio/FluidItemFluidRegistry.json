@@ -23,5 +23,14 @@
       "meta": 0
     },
     "output": "rotten_slime"
+  },
+  
+  {
+    "inputFluid": "ash_solution",
+    "reactant": {
+      "name": "biomesoplenty:gem",
+      "meta": 3
+    },
+    "output": "sand"
   }
 ]

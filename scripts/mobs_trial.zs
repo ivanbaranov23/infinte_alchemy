@@ -24,3 +24,4 @@ function addTrial(trial as string, mobs as string[], item as IItemStack){
 
 addKey("stone", <atum:khnumite>);
 addTrial("stone", ["atum:stoneguard", "atum:stonewarden"], <atum:khnumite>);
+

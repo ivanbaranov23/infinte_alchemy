@@ -1,0 +1,22 @@
+{
+	x: 13.0d,
+	y: -1.0d,
+	text: [
+		"A better recipe for PT circuit plates"
+	],
+	dependencies: [
+		"94a536fd"
+	],
+	optional: true,
+	tasks: [{
+		uid: "df327d99",
+		type: "checkmark",
+		title: "Organic Green",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "organic_green"
+			}
+		}
+	}]
+}

@@ -23,6 +23,26 @@ for speed,paths in {
         <minecraft:hardened_clay>,
         <minecraft:stained_hardened_clay:*>,
     ],
+    2: [
+        <roots:runestone>,
+        <roots:runestone_brick>,
+        <roots:runestone_brick_alt>,
+        <roots:chiseled_runestone>,
+
+        <prodigytech:charred_stone>,
+        <prodigytech:charred_stonebricks>,
+        <prodigytech:zorra_planks>,
+        <prodigytech:ash_bricks>,
+        <prodigytech:particle_board>,
+        <prodigytech:particle_board_planks>,
+
+        <immersiveengineering:sheetmetal:*>,
+        <immersiveengineering:treated_wood:*>,
+
+        <extrautils2:decorativesolid>,
+        <extrautils2:decorativesolid:1>,
+        <extrautils2:decorativesolid:5>
+    ],
     2.3: [
         <minecraft:obsidian>,
         <minecraft:jukebox>,
@@ -31,15 +51,29 @@ for speed,paths in {
         <immersiveengineering:stone_decoration:4>, 
         <immersiveengineering:stone_decoration:5>, 
         <immersiveengineering:stone_decoration:7>,
-        <immersivepetroleum:stone_decoration>
+        <engineersdecor:clinker_brick_block>,
+        <engineersdecor:clinker_brick_stained_block>,
+        <engineersdecor:slag_brick_block>,
+
+        <extrautils2:decorativesolid:2>,
+        <extrautils2:decorativesolid:3>,
+
+        <betternether:bone_tile>
     ],
     2.5: [
         <minecraft:diamond_block>,
 
         <immersiveengineering:stone_decoration:6>
+    ],
+    3.0: [
+        <immersivepetroleum:stone_decoration>
+    ],
+
+    10.99: [
+        <extrautils2:decorativesolid:8>
     ]
 } as IItemStack[][float]{
     for path in paths{
-        path.addTooltip("Speed bonus " ~ ( (speed - 1) * 100 ) as int ~ "%");
+        path.addTooltip("Speed bonus +" ~ ( (speed - 1) * 100 ) as int ~ "%");
     }
 }

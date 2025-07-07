@@ -111,8 +111,8 @@ static GCnumbers as int[] = [
     3, //2
     5,
     8, //4
-    13,
-    21, //6
+    16,
+    32, //6
     34,
     55
 ];
@@ -283,6 +283,12 @@ function addGCrecipe_alltiers2(min_tier as int,
             [(<harvestcraft:beanitem> * 4) % 95],
             [], 1, 1
         );
+        
+        addGCrecipe_alltiers2(0, 
+            [<harvestcraft:taroseeditem>], 
+            [(<harvestcraft:taroitem> * 4) % 95],
+            [], 1, 1
+        );
     }
     {//other    
         addGCrecipe_alltiers2(2, 
@@ -323,10 +329,15 @@ function addGCrecipe_alltiers2(min_tier as int,
             [(<stygian:endglow> * 4) % 75, <contenttweaker:ender_bacteria> % 10],
             [<contenttweaker:excited_crop> * 4], 4, 4
         );
+        addGCrecipe_alltiers2(3, 
+            [<contenttweaker:spicy_cactus>, <contenttweaker:research_plants1>], 
+            [<contenttweaker:spicy_cactus> % 75],
+            [<contenttweaker:honeyspice_ingot>], 4, 4
+        );
 
         addGCrecipe_alltiers2(3, 
             [<contenttweaker:celestial_seed>, <contenttweaker:research_plants1>, <contenttweaker:uv_lamp>], 
-            [<contenttweaker:celestial_corn> % 75],
+            [<contenttweaker:celestial_corn> % 75, <contenttweaker:celestial_corn> % 50, <contenttweaker:celestial_corn> % 25],
             [<contenttweaker:ender_bacteria>, <contenttweaker:excited_crop> * 4], 4, 4
         );
 
@@ -622,6 +633,40 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:plant_sample>, <t
 
 //processing
 
+
+
+
+
+{//pam
+    {//barley
+        scripts.helper.addSimpleCrushingRecipeWByproduct(
+            <natura:materials>, <natura:materials:1> * 2, <natura:materials:1>, 50
+        );
+        mods.mekanism.crusher.addRecipe(<natura:materials>, <natura:materials:1> * 2);
+        mods.prodigytech.rotarygrinder.addRecipe(<natura:materials>, <natura:materials:1> * 2);
+
+
+        recipes.addShapeless("ia_barley_natura", <natura:overworld_seeds>, [
+            <harvestcraft:barleyseeditem>
+        ]);
+        recipes.addShapeless("ia_barley_pam", <harvestcraft:barleyseeditem>, [
+            <natura:overworld_seeds>
+        ]);
+    }
+
+    {//amaranth
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:amaranth_juice> * 500, <harvestcraft:amaranthitem>, <liquid:water> * 200, 2000);
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:amaranth_juice> * 750, <harvestcraft:amaranthitem>, <liquid:formic_acid> * 25, 1000);
+
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:amaranth_juice> * 500, <harvestcraft:amaranthseeditem>, <liquid:water> * 200, 2000);
+        mods.thermalexpansion.Imbuer.addRecipe(<liquid:amaranth_juice> * 750, <harvestcraft:amaranthseeditem>, <liquid:formic_acid> * 25, 1000);
+
+        mods.thermalexpansion.Refinery.addRecipe(<liquid:lubricant> * 50, null, <liquid:amaranth_juice> * 200, 2000);
+        mods.immersiveengineering.Refinery.addRecipe(<liquid:purpleslime> * 16, <liquid:amaranth_juice> * 8, <liquid:blueslime> * 8, 300);
+    }
+
+}
+
 //jade
 addGCrecipe_alltiers2(2, 
     [<erebus:jade_berry_bush>], 
@@ -644,17 +689,6 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<erebus:materials:1>,
     furnace.addRecipe(<contenttweaker:bamboo_cookie>, <contenttweaker:bamboo_dough>);
 }
 
-{//amaranth
-    mods.thermalexpansion.Imbuer.addRecipe(<liquid:amaranth_juice> * 500, <harvestcraft:amaranthitem>, <liquid:water> * 200, 2000);
-    mods.thermalexpansion.Imbuer.addRecipe(<liquid:amaranth_juice> * 750, <harvestcraft:amaranthitem>, <liquid:formic_acid> * 25, 1000);
-
-    mods.thermalexpansion.Imbuer.addRecipe(<liquid:amaranth_juice> * 500, <harvestcraft:amaranthseeditem>, <liquid:water> * 200, 2000);
-    mods.thermalexpansion.Imbuer.addRecipe(<liquid:amaranth_juice> * 750, <harvestcraft:amaranthseeditem>, <liquid:formic_acid> * 25, 1000);
-
-    mods.thermalexpansion.Refinery.addRecipe(<liquid:lubricant> * 50, null, <liquid:amaranth_juice> * 200, 2000);
-    mods.immersiveengineering.Refinery.addRecipe(<liquid:purpleslime> * 16, <liquid:amaranth_juice> * 8, <liquid:blueslime> * 8, 300);
-}
-
 {//enbiotic
     scripts.helper.addSawRecipeWByproduct(<stygian:endglow>, <mekanism:biofuel>, <contenttweaker:enbiotic>, 25);
     mods.roots.Mortar.addRecipe("enbiotic1", <contenttweaker:enbiotic> * 4, [
@@ -673,6 +707,10 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<erebus:materials:1>,
         [<contenttweaker:ender_amethyst_dirty_dust> % 30, <contenttweaker:ender_bacteria> % 5], 
         <contenttweaker:enbiotic>, <liquid:biotite> * 300, 5000
     );
+}
+{//super spice
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:spicy_latex> * 250, <contenttweaker:spicy_cactus>, 16000);
+
 }
 
 {//celestial

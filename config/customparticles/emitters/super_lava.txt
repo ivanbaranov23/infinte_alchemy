@@ -1,0 +1,4 @@
+template block contenttweaker:super_heat_lava true
+modes inside
+factory super_lava
+density 2500

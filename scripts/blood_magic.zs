@@ -691,7 +691,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	//blood lamp
 	TartaricForge.removeRecipe([<ore:glowstone>.firstItem, <minecraft:torch>, <minecraft:redstone>, <minecraft:redstone>]);
 	TartaricForge.addRecipe(<bloodmagic:component:11>, [
-		<natura:glowshroom_stew>, <minecraft:redstone_lamp>, <mekanism:basicblock:4>, <integrateddynamics:menril_torch>
+		<natura:glowshroom_stew>, <torchmaster:feral_flare_lantern>, <mekanism:basicblock:4>, <integrateddynamics:menril_torch>
 	], 320, 8);
 }
 {

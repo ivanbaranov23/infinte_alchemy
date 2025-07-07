@@ -242,6 +242,11 @@ scripts.content_machines.addFluidMixerRecipe(
         <liquid:glass>, 1000, 
         true
     );
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <immersiveengineering:ore:1> * 3, 
+        <minecraft:quartz_block> * 2, 
+        <liquid:glass> * 1500, 1000
+    );
     
 
     mods.thermalexpansion.Imbuer.addRecipe(

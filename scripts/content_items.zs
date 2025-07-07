@@ -165,6 +165,9 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("copper_seed").register();
     VanillaFactory.createItem("copper_potato").register();
 
+    //tin
+    VanillaFactory.createItem("tinley").register();
+
     //bauxite
     VanillaFactory.createItem("bauxite_dust").register();
     VanillaFactory.createFluid("bauxite_slurry", Color.fromHex("955f28")).register();
@@ -1688,6 +1691,7 @@ VanillaFactory.createItem("steeleaf_mush").register();
 
 //fluids
 VanillaFactory.createFluid("sea_water", Color.fromHex("2c72c8")).register();
+VanillaFactory.createFluid("ocean_water", Color.fromHex("082779")).register();
 VanillaFactory.createFluid("seaweed_rich_water", Color.fromHex("1b8053")).register();
 
 VanillaFactory.createFluid("nectar_solution", Color.fromHex("88856e")).register();
@@ -1727,8 +1731,13 @@ addWater("radioactive_waste");
     
     registerMoltenMetal("tar", Color.fromHex("16131a"));
     registerMoltenMetal("enriched_tar", Color.fromHex("0c0a0f"));
+    VanillaFactory.createItem("tar_bone").register();
+    VanillaFactory.createItem("zeolite").register();
+
     VanillaFactory.createFluid("enriched_diesel1", Color.fromHex("50192c")).register();
     registerMoltenMetal("enriched_diesel2", Color.fromHex("780e75"));
+
+    
 
     VanillaFactory.createFluid("naphthalene", Color.fromHex("ac6533")).register();
     VanillaFactory.createFluid("concrete_reinforcer", Color.fromHex("635d6d")).register();
@@ -1791,6 +1800,11 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
     //msg
     VanillaFactory.createFluid("glutamic_acid", Color.fromHex("bd3ca0")).register();
     VanillaFactory.createItem("msg").register();
+
+    //super spice
+    VanillaFactory.createItem("spicy_cactus").register();
+    VanillaFactory.createFluid("spicy_latex", Color.fromHex("6dd278")).register();
+    VanillaFactory.createItem("spicy_cactus_dust").register();
 }
 {//plant 'n stuff
     VanillaFactory.createBlock("potato_block1", <blockmaterial:rock>).register();
@@ -1955,6 +1969,9 @@ VanillaFactory.createItem("flesh_spurt_activated").register();
     super_heat_lava.stillLocation = 'contenttweaker:fluids/super_heat_lava_still';
     super_heat_lava.flowingLocation = 'contenttweaker:fluids/super_heat_lava_flow';
     super_heat_lava.register();
+
+    addLava("insane_heat_lava");
+    addLava("bonkers_heat_lava");
 }
 
 VanillaFactory.createItemFood("food_pellet", 40).register();
@@ -2244,6 +2261,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     excited_mud.register();
     VanillaFactory.createItem("excited_crop").register();
     VanillaFactory.createItem("sanded_rod").register();
+
+    VanillaFactory.createFluid("goop", Color.fromHex("0d2e30")).register();
 }
 {//atum
     VanillaFactory.createItem("ra_burner").register();

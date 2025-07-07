@@ -185,34 +185,50 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:flolit_sheet> * 4, [
 
 
 {//altarless copper
-    recipes.addShapeless("ia_carrot_copper", <contenttweaker:carrot_copper> * 2, [
+    recipes.addShapeless("ia_carrot_copper", <contenttweaker:carrot_copper> * 6, [
         <contenttweaker:carrot_pulp>, <contenttweaker:carrot_pulp>,
         <minecraft:flint>, <minecraft:brown_mushroom> | <minecraft:red_mushroom>
     ]);
-    recipes.addShapeless("ia_carrot_copper2", <contenttweaker:carrot_copper> * 3, [
+    recipes.addShapeless("ia_carrot_copper2", <contenttweaker:carrot_copper> * 8, [
         <contenttweaker:carrot_pulp>, <contenttweaker:carrot_pulp>,
         <minecraft:flint>, <liquid:mushroom_stew> * 1000
     ]);
-    recipes.addShapeless("ia_carrot_copper3", <contenttweaker:carrot_copper> * 3, [
+    recipes.addShapeless("ia_carrot_copper3", <contenttweaker:carrot_copper> * 8, [
         <contenttweaker:carrot_pulp>, <contenttweaker:carrot_pulp>,
         <minecraft:flint>, <harvestcraft:whitemushroomitem>
     ]);
 
     
-    mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_copper:1>, <contenttweaker:carrot_copper>, <liquid:andesite>, 500, true);
+    mods.immersiveengineering.BottlingMachine.addRecipe(<exnihilocreatio:item_ore_copper:1>, <contenttweaker:carrot_copper>, <liquid:andesite> * 500);
     mods.thermalexpansion.Transposer.addFillRecipe(
         <exnihilocreatio:item_ore_copper:1>, 
         <contenttweaker:carrot_copper>, <liquid:andesite> * 250, 
         1500
     );
+    furnace.addRecipe(<thermalfoundation:material:192> * 6, <contenttweaker:carrot_copper>);
 }
 {//tin
-    recipes.addShapeless("ia_tin_very_normal_and_logical_recipe", <thermalfoundation:material:65>, [
+    recipes.addShapeless("ia_tin_very_normal_and_logical_recipe1", <contenttweaker:tinley> * 4, [
         <natura:materials:1>, 
         <natura:materials:1>, 
         <prodigytech:energion_dust>, 
         <prodigytech:ash>
     ]);
+    recipes.addShapeless("ia_tin_very_normal_and_logical_recipe2", <contenttweaker:tinley> * 6, [
+        <natura:materials:1>, 
+        <natura:materials:1>, 
+        <prodigytech:energion_dust>, 
+        <ore:itemSlag> | <contenttweaker:bioslag>
+    ]);
+    recipes.addShapeless("ia_tin_very_normal_and_logical_recipe3", <contenttweaker:tinley> * 12, [
+        <natura:materials:1>, 
+        <natura:materials:1>, 
+        <prodigytech:energion_dust>, 
+        <thermalfoundation:material:865> | <contenttweaker:bioslag>
+    ]);
+
+    mods.prodigytech.magneticreassembler.addRecipe(<contenttweaker:tinley>, <thermalfoundation:material:129>);
+    furnace.addRecipe(<thermalfoundation:material:193> * 3, <contenttweaker:tinley>);
 }
 {//coal alt
     mods.prodigytech.magneticreassembler.addRecipe(<prodigytech:ash>, <actuallyadditions:item_misc:10> * 3);

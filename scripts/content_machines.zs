@@ -78,7 +78,7 @@ function basicFluidMixerRecipe(outputItem as IItemStack, outputFluid as ILiquidS
     Fluid_mixer.addRecipe(recipe);
     Fluid_mixer.addJEIRecipe(recipe);	
 }
-function addFluidMixerRecipe(outf as ILiquidStack, inpf1 as ILiquidStack, inpf2 as ILiquidStack, inpi as IItemStack, time_t as int, rft as int){
+function addFluidMixerRecipe(outf as ILiquidStack, inpf1 as ILiquidStack, inpf2 as ILiquidStack, inpi as IIngredient, time_t as int, rft as int){
     var recipe = AssemblyRecipe.create(function(container) {
         container.addFluidOutput("output", outf);
     });

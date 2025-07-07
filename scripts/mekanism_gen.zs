@@ -35,4 +35,17 @@ recipes.addShaped("ia_mek_solarpanel", <mekanismgenerators:solarpanel>, [
         [<mekanismgenerators:reactorglass>, <mekanism:machineblock2:14>, <mekanismgenerators:reactorglass>], 
         [<contenttweaker:laser_mirror>, <mekanismgenerators:reactorglass>, <contenttweaker:laser_mirror>]
     ]);
+    recipes.addShaped("ia_mek_reactor_laser_input2", <mekanismgenerators:reactorglass:1>, [
+        [<contenttweaker:laser_mirror>, <mekanismgenerators:reactorglass>, <contenttweaker:laser_mirror>], 
+        [<mekanismgenerators:reactorglass>, <contenttweaker:lens_out> | <contenttweaker:lens_in>, <mekanismgenerators:reactorglass>], 
+        [<contenttweaker:laser_mirror>, <mekanismgenerators:reactorglass>, <contenttweaker:laser_mirror>]
+    ]);
+
+
+    recipes.remove(<mekanismgenerators:reactor>);
+    recipes.addShaped("ia_mek_reactor_reactor", <mekanismgenerators:reactor>, [
+        [<mekanismgenerators:reactor:1>, <mekanism:gastank>.withTag({tier: 3, mekData: {stored: {amount: 512000, gasName: "fusionfuel"}}}), <mekanismgenerators:reactor:1>], 
+        [<enderio:item_basic_capacitor:2> | <enderio:item_capacitor_vivid>, <enderio:item_material:1>, <enderio:item_basic_capacitor:2> | <enderio:item_capacitor_vivid>], 
+        [<mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>, <mekanismgenerators:reactor:1>]
+    ]);
 }

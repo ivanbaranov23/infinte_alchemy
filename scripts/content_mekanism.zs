@@ -55,6 +55,8 @@ addGas("retinol", "ffc546", false);
 addGas("fluorine", "bba52c", true);
 addGas("hf", "75af2e", true);
 
+addGas("tar_gas", "0c0a0f", false);
+
 addGas("osgloridium", "747c41", true);
 
 addGas("light1", "dddb57", false);

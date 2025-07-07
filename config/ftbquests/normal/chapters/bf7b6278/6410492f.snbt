@@ -1,6 +1,9 @@
 {
 	x: 13.0d,
 	y: 0.0d,
+	text: [
+		"Hardens after being placed in world for some time."
+	],
 	dependencies: [
 		"94a536fd"
 	],

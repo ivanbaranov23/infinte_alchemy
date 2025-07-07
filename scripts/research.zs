@@ -15,7 +15,7 @@ don't look
 
 
 
-if you don't want to have fun researching, first 3 items in the list are the answer
+if you don't want to have fun researching, first 3/8 items in the list are the answer
 
 
 */
@@ -206,6 +206,18 @@ addResearchRecipe("Structure", <immersiveengineering:metal_decoration1:1> * 12, 
         <immersiveengineering:metal_decoration1:5> * 24,
         <immersiveengineering:metal_decoration0:5> * 2,
         <contenttweaker:concrete_token> * 8
+    ],
+    128, 5*20
+);
+addResearchRecipe("Logistic", <enderio:item_conduit_facade> * 4, <contenttweaker:research_logistic>,
+    [
+        <extrautils2:grocket:3> * 16,
+        <enderio:item_endergy_conduit:6> * 24,
+        <thermaldynamics:duct_32:2> * 8,
+        <extrautils2:pipe> * 64,
+        <erebus:bamboo_pipe> * 12,
+        <minecraft:ender_chest> * 16,
+        <thermaldynamics:servo:3> * 24
     ],
     128, 5*20
 );

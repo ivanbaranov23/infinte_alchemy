@@ -1,0 +1,20 @@
+{
+	title: "Gotta go fast",
+	x: 9.0d,
+	y: 7.0d,
+	text: [
+		"Some blocks give a speed boost. It will take bottom block for speed boost. ",
+		"Meaning putting nether wart block under floor will slow you down, putting asphalt under floor makes you flash"
+	],
+	dependencies: [
+		"a973cd16"
+	],
+	optional: true,
+	tasks: [{
+		uid: "12e48142",
+		type: "item",
+		items: [{
+			item: "immersivepetroleum:stone_decoration"
+		}]
+	}]
+}

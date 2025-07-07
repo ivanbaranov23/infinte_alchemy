@@ -127,3 +127,26 @@ addFluidMilking(<entity:minecraft:zombie>, <liquid:rot>);
 addFluidMilking(<entity:twilightforest:fire_beetle>, <liquid:fiery_essence>);
 addFluidMilking(<entity:erebus:erebus.beetle>, <liquid:beetle_juice>);
 addFluidMilking_only_IF(<entity:minecraft:skeleton>, <liquid:notmilk>);
+
+addJEIentityHint(
+    [], null, "minecraft:snowman",
+    [<exnihilocreatio:block_barrel0> | <exnihilocreatio:block_barrel1>], null,
+    [], <liquid:water>, ""
+);
+
+//trading
+addJEIentityHint(
+    [<minecraft:emerald_block>], null, "primitivemobs:traveling_merchant",
+    [], null,
+    [<minecraft:bed>.withDisplayName("Makes him stay")], null, "primitivemobs:traveling_merchant"
+);
+addJEIentityHint(
+    [], null, "primitivemobs:traveling_merchant",
+    [], null,
+    [<minecraft:emerald>], null, ""
+);
+addJEIentityHint(
+    [<minecraft:emerald>], null, "primitivemobs:traveling_merchant",
+    [], null,
+    [<minecraft:chorus_fruit>, <minecraft:ghast_tear>, <minecraft:prismarine_crystals>], null, ""
+);

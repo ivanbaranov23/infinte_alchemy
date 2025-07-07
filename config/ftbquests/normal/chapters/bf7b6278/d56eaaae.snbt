@@ -2,7 +2,7 @@
 	title: "Research Glass",
 	icon: "contenttweaker:research_glass_making",
 	x: 19.0d,
-	y: 3.0d,
+	y: 1.0d,
 	shape: "gear",
 	text: [
 		"This will probably be your first research. There are only 10 combinations of 3 items from 5. ",

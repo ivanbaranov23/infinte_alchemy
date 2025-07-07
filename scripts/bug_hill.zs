@@ -24,7 +24,7 @@ recipes.addShaped("ia_bug_hill12", <contenttweaker:bug_hill_exit1> * 8, [
 
 recipes.addShaped("ia_bug_hill2", <contenttweaker:bug_hill_exit2>, [
     [<moreplates:ironwood_plate>, <contenttweaker:flower_steel_rod>, <moreplates:ironwood_plate>],
-    [<contenttweaker:flower_steel_rod>, <contenttweaker:bug_hill_exit1>, <contenttweaker:flower_steel_rod>],
+    [<contenttweaker:druid_bone>, <contenttweaker:bug_hill_exit1>, <contenttweaker:druid_bone>],
     [<moreplates:ironwood_plate>, <contenttweaker:flower_steel_rod>, <moreplates:ironwood_plate>]
 ]);
 

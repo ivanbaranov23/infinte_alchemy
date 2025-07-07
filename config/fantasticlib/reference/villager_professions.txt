@@ -1,0 +1,17 @@
+minecraft:farmer
+minecraft:librarian
+minecraft:priest
+minecraft:smith
+minecraft:butcher
+minecraft:nitwit
+openblocks:radio
+roots:wild_mage
+primitivemobs:miner
+primitivemobs:merchant
+primitivemobs:fakemerchant
+primitivemobs:sheepman_scavenger
+primitivemobs:sheepman_alchemist
+primitivemobs:sheepman_thief
+actuallyadditions:jamguy
+actuallyadditions:engineer
+immersiveengineering:engineer
