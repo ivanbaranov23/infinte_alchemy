@@ -1,0 +1,16 @@
+{
+	x: -5.0d,
+	y: 2.5d,
+	dependencies: [
+		"4c848500",
+		"80fe12e8"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c7700d7e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:divine_mud"
+		}]
+	}]
+}

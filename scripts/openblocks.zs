@@ -3,6 +3,8 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.WeightedItemStack;
 
+//<openblocks:tank>.definition.stackSize = 1;
+
 recipes.remove(<openblocks:xp_bottler>);
 recipes.addShaped("ia_xp_bottler", <openblocks:xp_bottler>, [
 	[<contenttweaker:zinc_plate>, <minecraft:glass_bottle>, <contenttweaker:zinc_plate>], 

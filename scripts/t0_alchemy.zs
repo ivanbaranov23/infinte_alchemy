@@ -140,11 +140,18 @@ recipes.addShapeless("ia_arrows_to_flint", <minecraft:flint>, [
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:133>, <actuallyadditions:item_misc:12>, <liquid:tin>, 72, true);
 
 {//bilim uses
-    recipes.addShapeless("ia_terra_spores", <roots:terra_spores> * 6, [
+    recipes.addShapeless("ia_terra_spores", <minecraft:mossy_cobblestone> * 3, [
         <mysticalcreations:bilim_essence>,
-        <roots:wildroot>,
-        <roots:wildroot>,
-        <roots:wildroot>
+        <ore:cobblestone>,
+        <ore:cobblestone>,
+        <ore:cobblestone>
+
+    ]);
+    recipes.addShapeless("ia_terra_spores2", <roots:terra_moss> * 2, [
+        <mysticalcreations:bilim_essence>,
+        <mysticalcreations:bilim_essence>,
+        <mysticalcreations:bilim_essence>,
+        <roots:terra_spores>
     ]);
     
 }

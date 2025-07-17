@@ -247,6 +247,15 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:rune_cutter_
 	[<contenttweaker:rune_base>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <thermalfoundation:material:657>, <contenttweaker:rune_base>], 
 	[<contenttweaker:pure_metal>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:vibralcum_plate>, <contenttweaker:pure_metal>]
 ]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:rune_cracker_controller>, [
+	[<botania:quartztypesunny>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartztypesunny>], 
+	[<botania:quartz:6>, <contenttweaker:rune_base>, <contenttweaker:improved_rune_base>, <contenttweaker:laser>, <contenttweaker:improved_rune_base>, <contenttweaker:rune_base>, <botania:quartz:6>], 
+	[<botania:quartz:6>, <contenttweaker:rune_base>, <contenttweaker:laser_mirror>, <contenttweaker:laser_mirror>, <contenttweaker:laser_mirror>, <contenttweaker:rune_base>, <botania:quartz:6>], 
+	[<botania:quartz:6>, <contenttweaker:rune_base>, <actuallyadditions:item_drill:3>, <contenttweaker:mana_frame>, <actuallyadditions:item_drill:3>, <contenttweaker:rune_base>, <botania:quartz:6>], 
+	[<botania:quartz:6>, <contenttweaker:rune_base>, <contenttweaker:laser_mirror>, <contenttweaker:laser_mirror>, <contenttweaker:laser_mirror>, <contenttweaker:rune_base>, <botania:quartz:6>], 
+	[<botania:quartz:6>, <contenttweaker:rune_base>, <contenttweaker:improved_rune_base>, <contenttweaker:improved_rune_base>, <contenttweaker:improved_rune_base>, <contenttweaker:rune_base>, <botania:quartz:6>], 
+	[<botania:quartztypesunny>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartztypesunny>]
+]);
 
 //astral
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:satellite_launch_pad_controller>, [

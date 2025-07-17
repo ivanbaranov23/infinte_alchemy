@@ -1,9 +1,0 @@
-{
-	x: 0.0d,
-	y: -4.0d,
-	tasks: [{
-		uid: "273399ea",
-		type: "checkmark",
-		icon: "extendedcrafting:singularity_custom 1 4"
-	}]
-}

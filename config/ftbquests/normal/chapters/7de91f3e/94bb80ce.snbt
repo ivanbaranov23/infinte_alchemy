@@ -1,7 +1,7 @@
 {
 	icon: "modularcontroller:regen_chamber_controller",
 	x: 10.0d,
-	y: -0.5d,
+	y: 0.5d,
 	text: [
 		"This machine creates bouncy matter - matter that will be jumping stronger with every bounce. Obviously, this needs a very strong containment chamber.",
 		"This one uses literal bedrock as bounce pads and living metal for regenerating damage.",

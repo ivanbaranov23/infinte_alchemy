@@ -5,7 +5,7 @@ import loottweaker.vanilla.loot.LootTable;
 import loottweaker.vanilla.loot.LootPool;
 
 
-//   /setblock ~ ~ ~ minecraft:chest 2 replace {LootTable:"minecraft:chests/nether_bridge"}
+//   /setblock ~ ~ ~ minecraft:chest 2 replace {LootTable:"atum:chests/pharaoh"}
 
 static pool as int = 0;
 function addLootTable(table as string, rmin as int, rmax as int, items as int[IItemStack]){
@@ -15,6 +15,51 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
     for item in items{
         lp.addItemEntry(item, items[item]);
     }
+}
+
+{
+    {//alien 1
+        var alien_erebus_1 as LootTable = LootTweaker.newTable("contenttweaker:alien_erebus_1");
+        //var alien_erebus_1_pool as LootPool = alien_erebus_1.addPool("alien_erebus_1_pool", 3, 7, 0, 0);
+
+        addLootTable("contenttweaker:alien_erebus_1", 5, 14, {
+            <enderio:item_alloy_ingot:3>: 30,
+            <extrautils2:ingredients:12>: 25,
+            <minecraft:dye:4>: 50,
+            <contenttweaker:compound_metal2>: 15,
+            <extrautils2:unstableingots:2>: 3,
+            <extrautils2:ingredients:17>: 3,
+            <contenttweaker:mekanized_steel_ingot>: 5,
+            <contenttweaker:thermal_ingot>: 10,
+            <contenttweaker:electric_manyullyn_ingot>: 15
+        });
+        
+        addLootTable("contenttweaker:alien_erebus_1", 1, 3, {
+            <scannable:scanner>: 10,
+            <scannable:module_blank>: 40,
+            <industrialforegoing:meat_feeder>.withTag({Fluid: {FluidName: "meat", Amount: 128000}}): 10,
+            <tconstruct:materials:14> * 2: 15,
+            <thermalfoundation:upgrade>: 10,
+            <thermalfoundation:upgrade:33>: 5,
+            <thermalfoundation:upgrade:34>: 3,
+            <thermalfoundation:upgrade:35>: 1
+        });
+
+        addLootTable("contenttweaker:alien_erebus_1", 0, 2, {
+            <prodigytech:zorrasteel_handbow>: 10,
+            <extrautils2:luxsaber:4>.withTag({Energy: 40000}): 10,
+            <extrautils2:luxsaber:2>.withTag({Energy: 40000}): 10,
+            <twilightforest:seeker_bow>: 10,
+            <extrautils2:chickenring:1>: 3
+        });
+
+        addLootTable("contenttweaker:alien_erebus_1", 1, 4, {
+            <erebus:materials:37>: 1,
+            <erebus:materials:35>: 3,
+            <erebus:jade_berry_bush>: 1,
+            <extrautils2:suncrystal>: 2
+        });
+    }   
 }
 
 {//atum

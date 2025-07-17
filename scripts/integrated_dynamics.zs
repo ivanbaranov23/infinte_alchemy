@@ -7,6 +7,8 @@ recipes.addShaped("ia_squeezer", <integrateddynamics:squeezer>, [
 	[<ore:logWood>, <minecraft:iron_ingot>, <ore:logWood>]
 ]);
 
+mods.prodigytech.magneticreassembler.addRecipe(<minecraft:chorus_fruit_popped>, <integrateddynamics:crystalized_chorus_chunk>);
+
 
 
 recipes.remove(<integrateddynamics:variable>);

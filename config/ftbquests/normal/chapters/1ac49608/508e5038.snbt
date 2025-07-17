@@ -5,7 +5,8 @@
 		"You can use this block to passive/program one recipe in an extended crafting table."
 	],
 	dependencies: [
-		"e817dd96"
+		"e817dd96",
+		"a983e999"
 	],
 	optional: true,
 	tasks: [{

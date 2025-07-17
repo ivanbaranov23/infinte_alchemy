@@ -1,7 +1,7 @@
 {
 	icon: "contenttweaker:research_chemistry2",
-	x: 9.0d,
-	y: 0.5d,
+	x: 10.0d,
+	y: 1.5d,
 	shape: "gear",
 	dependencies: [
 		"2a094c8e"

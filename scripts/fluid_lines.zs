@@ -543,7 +543,9 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 	scripts.content_machines.addFluidSieveRecipeRandom(
 		[
 			<contenttweaker:filter_empty>,
-			<contenttweaker:empowered_shard> % 60
+			<contenttweaker:empowered_shard> % 60,
+			<contenttweaker:empowered_shard> % 40,
+			<contenttweaker:empowered_shard> % 20
 		], null,
 		<liquid:empowered_steam> * 500, <contenttweaker:filter_solar>,
 		<exnihilocreatio:item_mesh:4>,

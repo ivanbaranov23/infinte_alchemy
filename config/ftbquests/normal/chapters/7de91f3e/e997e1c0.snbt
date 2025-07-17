@@ -3,7 +3,7 @@
 	x: 13.0d,
 	y: 0.5d,
 	text: [
-		"52 runes"
+		"+52 runes"
 	],
 	dependencies: [
 		"647de8d9"

@@ -12,7 +12,8 @@
 		items: [{
 			item: "contenttweaker:quest_coin"
 		}],
-		count: 6L
+		count: 7L,
+		consume_items: true
 	}],
 	rewards: [{
 		uid: "ca764536",

@@ -1610,19 +1610,7 @@ item.contenttweaker.elf_mana_circuit.name=Elven Mana Circuit
 item.contenttweaker.elemental_essence_base.name=Elemental Essence(Unbalanced)
 item.contenttweaker.elemental_essence.name=Elemental Essence
 
-item.contenttweaker.rune_water_cracked.name=Cracked Rune of Water
-item.contenttweaker.rune_fire_cracked.name=Cracked Rune of Fire
-item.contenttweaker.rune_earth_cracked.name=Cracked Rune of Earth
-item.contenttweaker.rune_air_cracked.name=Cracked Rune of Air
 
-item.contenttweaker.rune_mana_cracked.name=Cracked Rune of Mana
-item.contenttweaker.rune_acid_cracked.name=Cracked Rune of Acid
-item.contenttweaker.rune_lightning_cracked.name=Cracked Rune of Lightning
-
-    VanillaFactory.createItem("rune_spring_cracked").register();
-item.contenttweaker.rune_summer_cracked.name=Cracked Rune of Summer
-    VanillaFactory.createItem("rune_autumn_cracked").register();
-    VanillaFactory.createItem("rune_winter_cracked").register();
 
 
 item.contenttweaker.luck_chip.name=Gambling Token
@@ -2212,3 +2200,62 @@ fluid.goop=Enderious Goop
 fluid.enriched_tar=Enriched Tar
 
 fluid.ocean_water=Ocean Water
+
+item.contenttweaker.diode3.name=Reinforced Living Diode
+
+item.contenttweaker.reagent_crystal.name=Crystal Reagent
+
+item.contenttweaker.rune_string.name=Runic String
+item.contenttweaker.rune_boule_core.name=Rune Boule Core
+item.contenttweaker.rune_boule.name=Rune Boule Base
+item.contenttweaker.rune_boule1.name=Rune Boule
+item.contenttweaker.rune_boule2.name=Improved Rune Boule
+item.contenttweaker.rune_boule3.name=Advanced Rune Boule
+
+item.contenttweaker.gaia_catalyst.name=Gaia Catalyst
+item.contenttweaker.gaia_catalyst_used.name=Used Gaia Catalyst
+
+item.contenttweaker.death_metal_ingot.name=Death Metal Ingot
+item.contenttweaker.death_metal_plate.name=Death Metal Plate
+item.contenttweaker.death_metal_gear.name=Death Metal Gear
+tile.contenttweaker.death_metal_block.name=Block of Death Metal
+tile.contenttweaker.death_metal_ore.name=Death Metal Ore
+tile.contenttweaker.death_metal_dense_ore.name=Dense Death Metal Ore
+
+
+item.contenttweaker.death_metal_dust.name=Death Metal Dust
+item.contenttweaker.death_metal_pieces.name=Death Metal Pieces
+item.contenttweaker.death_metal_chunk.name=Death Metal Chunk
+    
+item.contenttweaker.death_metal_crystal.name=Death Metal Crystal
+item.contenttweaker.death_metal_shard.name=Death Metal Shard
+item.contenttweaker.death_metal_clump.name=Death Metal Clump
+item.contenttweaker.death_metal_dirty_dust.name=Dirty Death Metal Dust
+
+ia.rename.disabled=§4DISABLED
+
+item.contenttweaker.rune_water_cracked.name=Cracked Rune of Water
+item.contenttweaker.rune_fire_cracked.name=Cracked Rune of Fire
+item.contenttweaker.rune_earth_cracked.name=Cracked Rune of Earth
+item.contenttweaker.rune_air_cracked.name=Cracked Rune of Air
+
+item.contenttweaker.rune_mana_cracked.name=Cracked Rune of Mana
+item.contenttweaker.rune_acid_cracked.name=Cracked Rune of Acid
+item.contenttweaker.rune_lightning_cracked.name=Cracked Rune of Lightning
+item.contenttweaker.rune_mushroom_cracked.name=Cracked Rune of Mushroom
+item.contenttweaker.rune_bug_cracked.name=Cracked Rune of Bug
+item.contenttweaker.rune_glass_cracked.name=Cracked Rune of Glass
+
+item.contenttweaker.rune_spring_cracked.name=Cracked Rune of Spring
+item.contenttweaker.rune_summer_cracked.name=Cracked Rune of Summer
+item.contenttweaker.rune_autumn_cracked.name=Cracked Rune of Autumn
+item.contenttweaker.rune_winter_cracked.name=Cracked Rune of Winter
+    
+item.contenttweaker.rune_lust_cracked.name=Cracked Rune of Lust
+item.contenttweaker.rune_gluttony_cracked.name=Cracked Rune of Gluttony
+item.contenttweaker.rune_greed_cracked.name=Cracked Rune of Greed
+item.contenttweaker.rune_sloth_cracked.name=Cracked Rune of Sloth
+item.contenttweaker.rune_wraith_cracked.name=Cracked Rune of Wraith
+item.contenttweaker.rune_envy_cracked.name=Cracked Rune of Envy
+item.contenttweaker.rune_pride_cracked.name=Cracked Rune of Pride
+

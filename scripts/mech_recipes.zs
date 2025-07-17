@@ -395,7 +395,7 @@
 
 {//bloodhunter
     mods.enderio.AlloySmelter.addRecipe(<contenttweaker:advanced_plating4_1>, 
-        [<contenttweaker:blood_bronze_plate> * 3, <tconevo:metal:28>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:slate_steel_plate>, <tconevo:metal:28>, <contenttweaker:advanced_plating1_4>], 
         12000
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:advanced_plating4_2>, [
@@ -439,11 +439,35 @@
         [null, null, <contenttweaker:advanced_plating4_4>, null, null]
     ]);
 
-    recipes.addShaped("ia_bloodhunter_mech", <contenttweaker:bloodhunter_mech>, [
-        [<contenttweaker:bloodhunter_arm>, <contenttweaker:bloodhunter_head>, <contenttweaker:bloodhunter_arm>], 
-        [<contenttweaker:bloodhunter_leg>, <contenttweaker:bloodhunter_body>, <contenttweaker:bloodhunter_leg>], 
-        [<contenttweaker:bloodhunter_leg>, null, <contenttweaker:bloodhunter_leg>]
-    ]);
+
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<contenttweaker:bloodhunter_mech>], null, 
+        [
+            <contenttweaker:bloodhunter_head>,
+            <contenttweaker:bloodhunter_body>,
+            <contenttweaker:bloodhunter_arm> * 2,
+            <contenttweaker:bloodhunter_leg> * 4,
+            <minecraft:nether_star> * 4
+        ], [
+            <liquid:bound_metal> * 1440,
+            <liquid:evil_blood> * 1000
+        ], <contenttweaker:sewing_unit>,
+        60, 100 * 1000
+    );
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<contenttweaker:bloodhunter_mech>], null, 
+        [
+            <contenttweaker:bloodhunter_head>,
+            <contenttweaker:bloodhunter_body>,
+            <contenttweaker:bloodhunter_arm> * 2,
+            <contenttweaker:bloodhunter_leg> * 4,
+            <contenttweaker:fear>
+        ], [
+            <liquid:bound_metal> * 1440,
+            <liquid:evil_blood> * 1000
+        ], <contenttweaker:sewing_unit>,
+        60, 100 * 1000
+    );
 
 
     recipes.addShaped("ia_bloodhunter_target_blood", <contenttweaker:bloodhunter_target_blood>, [

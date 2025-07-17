@@ -869,7 +869,7 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         <contenttweaker:spice_egg>
     ], 20000);
 
-    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:spice_rabbit>.withTag({
+    /*mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:spice_rabbit>.withTag({
             food: 20,
             lifespan: 5
         }), [
@@ -878,15 +878,15 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         [<contenttweaker:life>, <contenttweaker:eye>, <contenttweaker:honeyspice_ingot>, <contenttweaker:eye>, <contenttweaker:life>], 
         [<contenttweaker:life>, <contenttweaker:honeyspice_ingot>, <contenttweaker:honeyspice_ingot>, <contenttweaker:honeyspice_ingot>, <contenttweaker:life>], 
         [<contenttweaker:honeyspice_ingot>, <contenttweaker:honeyspice_ingot>, <contenttweaker:life>, <contenttweaker:honeyspice_ingot>, <contenttweaker:honeyspice_ingot>]
-    ]);
+    ]);*/
     mods.thermalexpansion.InductionSmelter.addRecipe(
         <contenttweaker:spice_rabbit>.withTag({
             food: 20,
             lifespan: 5
         }), 
         <minecraft:potion>.withTag({Potion: "extrautils2:xu2.love"}),
-        <contenttweaker:honeyspice_ingot> * 8,
-        2000000
+        <contenttweaker:honeyspice_ingot> * 24,
+        20 * 1000 * 1000
     );
 
     mods.thermalexpansion.InductionSmelter.addRecipe(

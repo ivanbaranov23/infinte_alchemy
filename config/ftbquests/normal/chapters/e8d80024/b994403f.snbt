@@ -10,5 +10,10 @@
 		items: [{
 			item: "botania:rune 1 6"
 		}]
+	}],
+	rewards: [{
+		uid: "db6685fe",
+		type: "item",
+		item: "botania:rune 1 6"
 	}]
 }

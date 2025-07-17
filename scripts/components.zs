@@ -750,9 +750,8 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			<contenttweaker:living_steel_ingot> * 4,
 			<contenttweaker:muscle> * 6
 		], [
-			<liquid:mekanized_lubricant> * 1000,
 			<liquid:bound_metal> * 576
-		], <contenttweaker:bio_injector>,
+		], <contenttweaker:sewing_unit>,
 		20, 4000
 	);
 	scripts.content_machines.addAssemblerRecipe(

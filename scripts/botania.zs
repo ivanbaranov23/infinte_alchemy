@@ -142,6 +142,10 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<botania:manaresource:16>, <contenttweaker:insulation_fabric>, <botania:manaresource:16>]
     ]);
 
+    //mana pearl
+    ManaInfusion.removeRecipe(<botania:manaresource:1>);//6000
+    ManaInfusion.addInfusion(<botania:manaresource:1>, <projectred-expansion:infused_ender_pearl>, 10000);
+
     {//potato
         ManaInfusion.removeRecipe(<botania:tinypotato>);
         ManaInfusion.addInfusion(<botania:tinypotato>, <minecraft:potato>, 125);
@@ -337,437 +341,6 @@ recipes.addShaped("ia_opencrate", <botania:opencrate>, [
 
 
 //runes
-for rune_id in 0 to 16{ 
-    mods.botania.RuneAltar.removeRecipe(<botania:rune>.definition.makeStack(rune_id));
-}
-
-
-{//t 1
-    {//water
-        RuneAltar.addRecipe(<botania:rune>, [
-            <contenttweaker:rune_base>, <contenttweaker:advanced_cryotheum>, 
-            <contenttweaker:watertight_steel_block>, <enderio:block_reservoir>, <enderio:block_reservoir>, <moreplates:osmiridium_gear>
-            ], 15000
-        );
-        RuneAltar.addRecipe(<botania:rune> * 3, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:advanced_cryotheum>, 
-            <contenttweaker:watertight_steel_block>, <enderio:block_reservoir>, <enderio:block_reservoir>, <moreplates:osmiridium_gear>
-            ], 30000
-        );
-
-        RuneAltar.addRecipe(<botania:rune> * 2, [
-            <contenttweaker:rune_base>, <contenttweaker:advanced_cryotheum>, 
-            <contenttweaker:watertight_steel_block>, <enderio:block_reservoir>, <enderio:block_reservoir>, <moreplates:osmiridium_gear>,
-            <contenttweaker:rune_water_cracked>
-            ], 15000
-        );
-        RuneAltar.addRecipe(<botania:rune> * 4, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:advanced_cryotheum>, 
-            <contenttweaker:watertight_steel_block>, <enderio:block_reservoir>, <enderio:block_reservoir>, <moreplates:osmiridium_gear>,
-            <contenttweaker:rune_water_cracked>
-            ], 30000
-        );
-    }
-    {//fire
-        RuneAltar.addRecipe(<botania:rune:1>, [
-            <contenttweaker:rune_base>, <contenttweaker:advanced_pyrotheum>, 
-            <contenttweaker:thermal_block>, <contenttweaker:firebrick_block>, <forge:bucketfilled>.withTag({FluidName: "fire_water", Amount: 1000}), <moreplates:demon_gear>
-            ], 15000
-        );
-        RuneAltar.addRecipe(<botania:rune:1> * 3, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:advanced_pyrotheum>, 
-            <contenttweaker:thermal_block>, <contenttweaker:firebrick_block>, <forge:bucketfilled>.withTag({FluidName: "fire_water", Amount: 1000}), <moreplates:demon_gear>
-            ], 30000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:1> * 2, [
-            <contenttweaker:rune_base>, <contenttweaker:advanced_pyrotheum>, 
-            <contenttweaker:thermal_block>, <contenttweaker:firebrick_block>, <forge:bucketfilled>.withTag({FluidName: "fire_water", Amount: 1000}), <moreplates:demon_gear>,
-            <contenttweaker:rune_fire_cracked>
-            ], 15000
-        );
-        RuneAltar.addRecipe(<botania:rune:1> * 4, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:advanced_pyrotheum>, 
-            <contenttweaker:thermal_block>, <contenttweaker:firebrick_block>, <forge:bucketfilled>.withTag({FluidName: "fire_water", Amount: 1000}), <moreplates:demon_gear>,
-            <contenttweaker:rune_fire_cracked>
-            ], 30000
-        );
-    }
-    {//earth
-        RuneAltar.addRecipe(<botania:rune:2>, [
-            <contenttweaker:rune_base>, <contenttweaker:advanced_petrotheum>, 
-            <thermalfoundation:storage_alloy:4>, <extrautils2:compressedcobblestone:1>, <contenttweaker:flower_steel_ingot>, <contenttweaker:wear_resistant_alloy_gear>
-            ], 15000
-        );
-        RuneAltar.addRecipe(<botania:rune:2> * 3, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:advanced_petrotheum>, 
-            <thermalfoundation:storage_alloy:4>, <extrautils2:compressedcobblestone:1>, <contenttweaker:flower_steel_ingot>, <contenttweaker:wear_resistant_alloy_gear>
-            ], 30000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:2>, [
-            <contenttweaker:rune_base>, <contenttweaker:advanced_petrotheum>, 
-            <thermalfoundation:storage_alloy:4>, <extrautils2:compressedcobblestone:1>, <contenttweaker:flower_steel_ingot>, <contenttweaker:wear_resistant_alloy_gear>,
-            <contenttweaker:rune_earth_cracked>
-            ], 15000
-        );
-        RuneAltar.addRecipe(<botania:rune:2> * 3, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:advanced_petrotheum>, 
-            <thermalfoundation:storage_alloy:4>, <extrautils2:compressedcobblestone:1>, <contenttweaker:flower_steel_ingot>, <contenttweaker:wear_resistant_alloy_gear>,
-            <contenttweaker:rune_earth_cracked>
-            ], 30000
-        );
-    }
-    {//air
-        RuneAltar.addRecipe(<botania:rune:3>, [
-            <contenttweaker:rune_base>, <contenttweaker:advanced_aerotheum>,
-            <contenttweaker:angel_block>, <aether_legacy:aerogel>, <erebus:materials:16>, <contenttweaker:soy_gear> 
-            ], 15000
-        );
-        RuneAltar.addRecipe(<botania:rune:3> * 3, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:advanced_aerotheum>,
-            <contenttweaker:angel_block>, <aether_legacy:aerogel>, <erebus:materials:16>, <contenttweaker:soy_gear> 
-            ], 30000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:3> * 2, [
-            <contenttweaker:rune_base>, <contenttweaker:advanced_aerotheum>,
-            <contenttweaker:angel_block>, <aether_legacy:aerogel>, <erebus:materials:16>, <contenttweaker:soy_gear>,
-            <contenttweaker:rune_air_cracked>
-            ], 15000
-        );
-        RuneAltar.addRecipe(<botania:rune:3> * 4, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:advanced_aerotheum>,
-            <contenttweaker:angel_block>, <aether_legacy:aerogel>, <erebus:materials:16>, <contenttweaker:soy_gear>,
-            <contenttweaker:rune_air_cracked>
-            ], 30000
-        );
-    }
-}
-{//t 1.5
-    {//mana
-        RuneAltar.addRecipe(<botania:rune:8>, [
-            <contenttweaker:rune_base>, <bloodmagic:component:9>,
-            <enderio:item_material:44>, <contenttweaker:manaclay>, <contenttweaker:mana_circuit>,
-            <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>
-            ], 100000
-        );
-        RuneAltar.addRecipe(<botania:rune:8> * 2, [
-            <contenttweaker:improved_rune_base>, <bloodmagic:component:9>,
-            <enderio:item_material:44>, <contenttweaker:manaclay>, <contenttweaker:mana_circuit>,
-            <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>
-            ], 150000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:8> * 2, [
-            <contenttweaker:rune_base>, <bloodmagic:component:9>,
-            <enderio:item_material:44>, <contenttweaker:manaclay>, <contenttweaker:mana_circuit>,
-            <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>,
-            <contenttweaker:rune_mana_cracked>
-            ], 100000
-        );
-        RuneAltar.addRecipe(<botania:rune:8> * 3, [
-            <contenttweaker:improved_rune_base>, <bloodmagic:component:9>,
-            <enderio:item_material:44>, <contenttweaker:manaclay>, <contenttweaker:mana_circuit>,
-            <botania:rune>, <botania:rune:1>, <botania:rune:2>, <botania:rune:3>,
-            <contenttweaker:rune_mana_cracked>
-            ], 150000
-        );
-    }
-    {//lightning
-        RuneAltar.addRecipe(<contenttweaker:rune_lightning>, [
-            <contenttweaker:rune_base>, <contenttweaker:electricium>,
-            <thermalexpansion:machine:9>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
-            <botania:rune:8>
-            ], 40000
-        );
-        RuneAltar.addRecipe(<contenttweaker:rune_lightning> * 2, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:electricium>,
-            <thermalexpansion:machine:9>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
-            <botania:rune:8>
-            ], 60000
-        );
-
-        RuneAltar.addRecipe(<contenttweaker:rune_lightning> * 2, [
-            <contenttweaker:rune_base>, <contenttweaker:electricium>,
-            <thermalexpansion:machine:9>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
-            <botania:rune:8>, <contenttweaker:rune_lightning_cracked>
-            ], 40000
-        );
-        RuneAltar.addRecipe(<contenttweaker:rune_lightning> * 3, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:electricium>,
-            <thermalexpansion:machine:9>, <erebus:lightning_speed_block>, <contenttweaker:basic_neuron>, <moreplates:energetic_silver_gear>,
-            <botania:rune:8>, <contenttweaker:rune_lightning_cracked>
-            ], 60000
-        );
-    }
-    {//acid
-        RuneAltar.addRecipe(<contenttweaker:rune_acid>, [
-            <contenttweaker:rune_base>, <contenttweaker:reagent_acid>,
-            <forge:bucketfilled>.withTag({FluidName: "endacid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "chloroauric_acid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "nitric_acid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "acetic_acid", Amount: 1000}),
-            <contenttweaker:vitamin_c>,
-            <contenttweaker:acid_resistant_steel_gear>,
-            <botania:rune:8>
-            ], 40000
-        );
-        RuneAltar.addRecipe(<contenttweaker:rune_acid> * 2, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:reagent_acid>,
-            <forge:bucketfilled>.withTag({FluidName: "endacid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "chloroauric_acid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "nitric_acid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "acetic_acid", Amount: 1000}),
-            <contenttweaker:vitamin_c>,
-            <contenttweaker:acid_resistant_steel_gear>,
-            <botania:rune:8>
-            ], 60000
-        );
-
-        RuneAltar.addRecipe(<contenttweaker:rune_acid> * 2, [
-            <contenttweaker:rune_base>, <contenttweaker:reagent_acid>,
-            <forge:bucketfilled>.withTag({FluidName: "endacid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "chloroauric_acid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "nitric_acid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "acetic_acid", Amount: 1000}),
-            <contenttweaker:vitamin_c>,
-            <contenttweaker:acid_resistant_steel_gear>,
-            <botania:rune:8>, <contenttweaker:rune_acid_cracked>
-            ], 40000
-        );
-        RuneAltar.addRecipe(<contenttweaker:rune_acid> * 3, [
-            <contenttweaker:improved_rune_base>, <contenttweaker:reagent_acid>,
-            <forge:bucketfilled>.withTag({FluidName: "endacid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "chloroauric_acid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "nitric_acid", Amount: 1000}),
-            <forge:bucketfilled>.withTag({FluidName: "acetic_acid", Amount: 1000}),
-            <contenttweaker:vitamin_c>,
-            <contenttweaker:acid_resistant_steel_gear>,
-            <botania:rune:8>, <contenttweaker:rune_acid_cracked>
-            ], 60000
-        );
-    }    
-    mods.thermalexpansion.Imbuer.addRecipe(
-        <liquid:rune_acid> * (3000), 
-        <contenttweaker:rune_acid>, 
-        <liquid:endacid> * 2000, 
-        8000
-    );
-
-    {//glass
-        RuneAltar.addRecipe(<contenttweaker:rune_glass>, [
-            <contenttweaker:improved_rune_base>,
-            <contenttweaker:reagent_glass>,
-            <botania:elfglass>,
-            <contenttweaker:glass_star>,
-            <contenttweaker:neutronium_mirror>,
-            <bloodmagic:demon_extras:14>,
-            <ironchest:iron_chest:5>,
-            <botania:rune:8>
-        ], 100000);
-
-        RuneAltar.addRecipe(<contenttweaker:rune_glass> * 3, [
-            <contenttweaker:advanced_rune_base>,
-            <contenttweaker:reagent_glass>,
-            <botania:elfglass>,
-            <contenttweaker:glass_star>,
-            <contenttweaker:neutronium_mirror>,
-            <bloodmagic:demon_extras:14>,
-            <ironchest:iron_chest:5>,
-            <botania:rune:8>
-        ], 200000);
-    }
-}
-{//t 2
-    {//summer
-        RuneAltar.addRecipe(<botania:rune:5>, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_fire_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "high_heat_lava", Amount: 16000}}), 
-            <contenttweaker:crucible>,
-            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>,
-            <botania:rune:1>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:5> * 3, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_fire_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "high_heat_lava", Amount: 16000}}), 
-            <contenttweaker:crucible>,
-            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>,
-            <botania:rune:1>], 100000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:5> * 2, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_fire_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "high_heat_lava", Amount: 16000}}), 
-            <contenttweaker:crucible>,
-            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>,
-            <contenttweaker:rune_summer_cracked>,
-            <botania:rune:1>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:5> * 4, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_fire_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "high_heat_lava", Amount: 16000}}), 
-            <contenttweaker:crucible>,
-            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>,
-            <contenttweaker:rune_summer_cracked>,
-            <botania:rune:1>], 100000
-        );
-
-    }
-    {//spring
-        RuneAltar.addRecipe(<botania:rune:4>, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_earth_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
-            <botania:rune:2>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:4> * 3, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_earth_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
-            <botania:rune:2>], 100000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:4> * 2, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_earth_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
-            <contenttweaker:rune_summer_cracked>,
-            <botania:rune:2>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:4> * 4, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_earth_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
-            <contenttweaker:rune_summer_cracked>,
-            <botania:rune:2>], 100000
-        );
-    }
-    {//autumn
-        RuneAltar.addRecipe(<botania:rune:6>, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_air_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}), 
-            <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
-            <botania:rune:3>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:6> * 3, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_air_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}), 
-            <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
-            <botania:rune:3>], 100000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:6> * 2, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_air_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}), 
-            <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
-            <contenttweaker:rune_autumn_cracked>,
-            <botania:rune:3>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:6> * 4, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_air_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}), 
-            <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
-            <contenttweaker:rune_autumn_cracked>,
-            <botania:rune:3>], 100000
-        );
-    }
-    {//winter
-        RuneAltar.addRecipe(<botania:rune:7>, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_water_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}), 
-            <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
-            <botania:rune:3>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:7> * 3, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_water_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}), 
-            <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
-            <botania:rune:3>], 100000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:7> * 2, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_water_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}), 
-            <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
-            <contenttweaker:rune_autumn_cracked>,
-            <botania:rune:3>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:7> * 4, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_water_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}), 
-            <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
-            <contenttweaker:rune_autumn_cracked>,
-            <botania:rune:3>], 100000
-        );
-    }
-    
-}
-{//3
-    {//lust
-        RuneAltar.addRecipe(<botania:rune:9>, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:gem_steel_gear>,//gear
-            <extendedcrafting:singularity_custom:18>,//gem sing
-            <extendedcrafting:singularity_custom:64>,//sing
-            <openblocks:tank>.withTag({tank: {FluidName: "potion", Amount: 16000, Tag: {Potion: "extrautils2:xu2.love"}}}),//tank
-            <contenttweaker:spice_rabbit>,//smt
-            <extrautils2:opinium:8>,
-            <mysticalagriculture:crafting:4>
-            ], 200000
-        );
-    }
-    {//sloth
-        RuneAltar.addRecipe(<botania:rune:12>, [
-            <contenttweaker:advanced_rune_base>, 
-            <moreplates:stellar_alloy_gear>,//gear
-            <extendedcrafting:singularity_custom:20>,//gem sing
-            <extendedcrafting:singularity_custom:53>,//sing
-            <openblocks:tank>.withTag({tank: {FluidName: "cyanoacrylate", Amount: 16000}}),//tank
-            <contenttweaker:lazy_soup>,//smt
-            <extrautils2:opinium:8>,
-            <mysticalagriculture:crafting:4>
-            ], 200000
-        );
-    }
-    {//pride
-        RuneAltar.addRecipe(<botania:rune:15>, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:fluxed_invar_gear>,//gear
-            <extendedcrafting:singularity_custom:22>,//gem sing
-            <extendedcrafting:singularity_custom:38>,//sing
-            <openblocks:tank>.withTag({tank: {FluidName: "cyanoacrylate", Amount: 16000}}),//tank
-            <contenttweaker:gearbox_great>,//smt
-            <extrautils2:opinium:8>,
-            <mysticalagriculture:crafting:4>
-            ], 200000
-        );
-    }
-}
 
 
 {//block of rune
@@ -852,6 +425,18 @@ for rune_id in 0 to 16{
     ]);
 }
 
+{//spark
+    recipes.remove(<botania:spark>);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <botania:spark> * 2, [
+        [null, null, <botania:manaresource:16>, <taiga:vibranium_block>, <botania:manaresource:16>, null, null], 
+        [null, <taiga:vibranium_block>, <fluxnetworks:fluxcore>, <botania:spreader>, <fluxnetworks:fluxcore>, <taiga:vibranium_block>, null], 
+        [<botania:manaresource:16>, <fluxnetworks:fluxcore>, <contenttweaker:mana_focus>, <fluxnetworks:fluxcore>, <contenttweaker:mana_focus>, <fluxnetworks:fluxcore>, <botania:manaresource:16>], 
+        [<taiga:vibranium_block>, <botania:spreader>, <fluxnetworks:fluxcore>, <botania:rune:3>, <fluxnetworks:fluxcore>, <botania:spreader>, <taiga:vibranium_block>], 
+        [<botania:manaresource:16>, <fluxnetworks:fluxcore>, <contenttweaker:mana_focus>, <fluxnetworks:fluxcore>, <contenttweaker:mana_focus>, <fluxnetworks:fluxcore>, <botania:manaresource:16>], 
+        [null, <taiga:vibranium_block>, <fluxnetworks:fluxcore>, <botania:spreader>, <fluxnetworks:fluxcore>, <taiga:vibranium_block>, null], 
+        [null, null, <botania:manaresource:16>, <taiga:vibranium_block>, <botania:manaresource:16>, null, null]
+    ]);
+}
 
 {//elven trade
     //elementum
@@ -861,7 +446,7 @@ for rune_id in 0 to 16{
     ElvenTrade.removeRecipe(<botania:storage:2>);
     ElvenTrade.addRecipe(
         [<botania:manaresource:7> * 6],
-        [<botania:storage>, <contenttweaker:terrabit>, <contenttweaker:terrabit>, <contenttweaker:elemental_essence>, <botania:rune:3>]
+        [<botania:storage>, <contenttweaker:terrabit>, <contenttweaker:terrabit>, <contenttweaker:elemental_clay>, <botania:rune:3>]
     );
 
     //glass
@@ -891,11 +476,11 @@ for rune_id in 0 to 16{
     recipes.remove(<botania:manaresource:14>);
     mods.extendedcrafting.TableCrafting.addShaped(0, <botania:manaresource:14>, [
         [null, null, null, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>], 
-        [null, null, <contenttweaker:mekanical_core>, <botania:manaresource:5>, <contenttweaker:terragem>, <contenttweaker:terragem>, <contenttweaker:mekanical_core>], 
+        [null, null, <contenttweaker:mekanical_core>, <botania:manaresource:5>, <contenttweaker:terragem>, <contenttweaker:mirion2_gear>, <contenttweaker:mekanical_core>], 
         [null, <contenttweaker:mekanical_core>, <contenttweaker:terragem>, <botania:rune:10>, <botania:rune:12>, <contenttweaker:terragem>, <contenttweaker:mekanical_core>], 
         [<contenttweaker:mekanical_core>, <botania:manaresource:5>, <botania:rune:13>, <botania:rune:9>, <botania:rune:11>, <botania:manaresource:5>, <contenttweaker:mekanical_core>], 
         [<contenttweaker:mekanical_core>, <contenttweaker:terragem>, <botania:rune:15>, <botania:rune:14>, <contenttweaker:terragem>, <contenttweaker:mekanical_core>, null], 
-        [<contenttweaker:mekanical_core>, <contenttweaker:terragem>, <contenttweaker:terragem>, <botania:manaresource:5>, <contenttweaker:mekanical_core>, null, null], 
+        [<contenttweaker:mekanical_core>,<contenttweaker:mirion2_gear>, <contenttweaker:terragem>, <botania:manaresource:5>, <contenttweaker:mekanical_core>, null, null], 
         [<contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, <contenttweaker:mekanical_core>, null, null, null]
     ]);
 

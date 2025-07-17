@@ -1,0 +1,64 @@
+{
+    "machine": "super_mixer",
+    "registryName": "super_mixer_gaia_crystal",
+    "recipeTime": 200,
+    "requirements": [
+        {
+            "type": "energy",
+            "io-type": "input",
+            "energyPerTick": 100000
+        },
+        {
+            "type": "will",
+            "io-type": "input",
+            "willtype": "destructive",
+            "willamount": 40
+        },
+        
+        
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:gaia_catalyst@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:gaia_catalyst_used@0",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "output",
+            "item": "contenttweaker:gaia_crystal@0",
+            "amount": 4
+        },
+
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "botania:manaresource@14",
+            "amount": 1
+        },
+        {
+            "type": "item",
+            "io-type": "input",
+            "item": "contenttweaker:slate_steel_coil@0",
+            "amount": 1
+        },
+        {
+            "type": "gas",
+            "io-type": "input",
+            "gas": "carmin",
+            "amount": 10000
+        },
+
+        {
+            "type": "fluid",
+            "io-type": "input",
+            "fluid": "tartaric_gel",
+            "amount": 10000
+        }
+    ]
+}

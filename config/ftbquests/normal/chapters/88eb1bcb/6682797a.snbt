@@ -1,0 +1,25 @@
+{
+	x: 0.0d,
+	y: -3.0d,
+	text: [
+		"DIstill sea water for salt. It can be used to skip drying coagulated blood.",
+		"",
+		"Distilling sea water will also solve your electrotine problems"
+	],
+	dependencies: [
+		"4c76e76d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0f4c6949",
+		type: "item",
+		items: [{
+			item: "mekanism:salt"
+		}]
+	}],
+	rewards: [{
+		uid: "987c0eb6",
+		type: "item",
+		item: "mekanism:saltblock"
+	}]
+}

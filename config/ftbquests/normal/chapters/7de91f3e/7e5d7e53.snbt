@@ -1,11 +1,11 @@
 {
-	x: -3.0d,
-	y: 1.5d,
+	x: -1.0d,
+	y: -3.5d,
 	text: [
 		"Greatly redices usage of Vapor of Levity"
 	],
 	dependencies: [
-		"1dee57dd"
+		"f10b4556"
 	],
 	optional: true,
 	tasks: [{

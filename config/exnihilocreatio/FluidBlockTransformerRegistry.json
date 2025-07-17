@@ -9,11 +9,7 @@
     "input": "ore:dustRedstone",
     "output": "minecraft:netherrack:0"
   },
-  {
-    "fluidName": "lava",
-    "input": "ore:dustGlowstone",
-    "output": "minecraft:end_stone:0"
-  },
+  
   {
     "fluidName": "witchwater",
     "input": "ore:sand",

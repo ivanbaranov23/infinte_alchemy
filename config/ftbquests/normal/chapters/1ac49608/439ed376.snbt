@@ -1,0 +1,14 @@
+{
+	x: 2.0d,
+	y: 8.0d,
+	dependencies: [
+		"a983e999"
+	],
+	tasks: [{
+		uid: "342b2ef6",
+		type: "item",
+		items: [{
+			item: "modularcontroller:rainbow_leacher_controller"
+		}]
+	}]
+}

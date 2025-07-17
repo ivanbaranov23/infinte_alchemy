@@ -1,11 +1,12 @@
 {
 	title: "Orb 2",
 	x: 5.0d,
-	y: -3.5d,
+	y: -4.5d,
 	text: [
 		""
 	],
 	dependencies: [
+		"16c55e20",
 		"0ec04df7"
 	],
 	optional: true,

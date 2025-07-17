@@ -121,9 +121,7 @@ function addLava(name as string){
     lapis_gravel.setToolClass("shovel");
     lapis_gravel.setBlockSoundType(<soundtype:sand>);    
     lapis_gravel.register();
-    var lapis_tile = VanillaFactory.createBlock("lapis_tile", <blockmaterial:rock>);
-    lapis_tile.setFullBlock(true);
-    lapis_tile.register();
+    VanillaFactory.createBlock("lapis_tile", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("industrial_clay").register();
     VanillaFactory.createItem("elastic_clay").register();
@@ -2399,6 +2397,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         VanillaFactory.createItem("biomaterial2").register();
         VanillaFactory.createItem("musclemass1").register();
         VanillaFactory.createItem("neuromass2").register();
+        VanillaFactory.createItem("manamass").register();
 
         VanillaFactory.createItem("biomaterial3").register();
 
@@ -2783,11 +2782,22 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("rune_mana_cracked").register();
     VanillaFactory.createItem("rune_acid_cracked").register();
     VanillaFactory.createItem("rune_lightning_cracked").register();
+    VanillaFactory.createItem("rune_mushroom_cracked").register();
+    VanillaFactory.createItem("rune_bug_cracked").register();
+    VanillaFactory.createItem("rune_glass_cracked").register();
 
     VanillaFactory.createItem("rune_spring_cracked").register();
     VanillaFactory.createItem("rune_summer_cracked").register();
     VanillaFactory.createItem("rune_autumn_cracked").register();
     VanillaFactory.createItem("rune_winter_cracked").register();
+    
+    VanillaFactory.createItem("rune_lust_cracked").register();
+    VanillaFactory.createItem("rune_gluttony_cracked").register();
+    VanillaFactory.createItem("rune_greed_cracked").register();
+    VanillaFactory.createItem("rune_sloth_cracked").register();
+    VanillaFactory.createItem("rune_wraith_cracked").register();
+    VanillaFactory.createItem("rune_envy_cracked").register();
+    VanillaFactory.createItem("rune_pride_cracked").register();
 
     VanillaFactory.createItem("terra_base").register();
     VanillaFactory.createItem("terra_base_dust").register();
@@ -2797,6 +2807,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("impure_mana_dust").register();
     VanillaFactory.createItem("terragem").register();
+
+    VanillaFactory.createItem("rune_cyclic").register();
+    VanillaFactory.createItem("rune_sin").register();
+
 
     var cutting = VanillaFactory.createBlock("cutting", <blockmaterial:rock>);
     cutting.setBlockLayer("TRANSLUCENT");
@@ -2843,17 +2857,24 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     addWater("flowers");
     addWater("flowers_depleted");
 
+    addWater("mysterious");
+
     VanillaFactory.createItem("dim_stable_plate1").register();
     VanillaFactory.createItem("dim_stable_plate2").register();
 
+    
+    VanillaFactory.createItem("gaia_catalyst").register();
+    VanillaFactory.createItem("gaia_catalyst_used").register();
+    VanillaFactory.createItem("gaia_crystal").register();
 }
 {//astral
     addGlass("star_frame");
     addGlass("night_glass");
-
-    addGlass("starry_glass");
     
     addWater("starlight_lubricant");
+
+    VanillaFactory.createItem("battle_computer").register();
+    VanillaFactory.createItem("stealing_computer").register();
 
     VanillaFactory.createItem("conveyor").register();
     addGlass("conveyor_block");
@@ -2916,6 +2937,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("alien_wreck").register();
     VanillaFactory.createItem("alien_electrode").register();
     VanillaFactory.createItem("alien_motor").register();
+    VanillaFactory.createBlock("alien_gearbox", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("alien_sheetmetal", <blockmaterial:rock>).register();
 
     {//dark catalyst
         var dark_catalyst = VanillaFactory.createFluid("dark_catalyst", Color.fromHex("ea6056"));

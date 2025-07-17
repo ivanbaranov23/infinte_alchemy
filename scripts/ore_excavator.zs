@@ -273,7 +273,10 @@ function addFluidReservoir(
     <ore:oreOverworldBlackQuartz>.add(<actuallyadditions:block_misc:3>);
     <ore:oreOverworldGravitite>.add(<netherendingores:ore_other_1:7>);
 
-    
+    //taiga
+    <ore:oreOverworldKarmesine>.add(<taiga:karmesine_ore>);
+    <ore:oreOverworldVibranium>.add(<taiga:vibranium_ore>);
+
     //bop
     <ore:oreOverworldRuby>.add(<biomesoplenty:gem_ore:1>);
     <ore:oreOverworldSapphire>.add(<biomesoplenty:gem_ore:6>);
@@ -397,6 +400,9 @@ var mil as int = 1000000;
     addExcavator("Nickel", 30, ["oreOverworldNickel", "oreOverworldIron", "oreOverworldPlatinum"], [0.75, 0.2, 0.05], [0, -11325]);
     addExcavator("BauxiteVein", 20, ["oreOverworldBauxite", "oreOverworldAluminum", "oreOverworldGallium"], [0.78, 0.2, 0.02], [0, -11325]);
 
+    addExcavator("Karmesine", 20, ["oreOverworldKarmesine", "oreOverworldCopper", "oreOverworldRedstone"], [0.65, 0.2, 0.15], [0, -11325]);
+
+
     addExcavator("Coal1", 30, ["oreOverworldCoal"], [1], [0, -11325]);
     addExcavator("Coal2", 20, ["oreOverworldCoal", "oreOverworldDiamond"], [0.99, 0.01], [0, -11325]);
     addExcavator("Redstone", 20, ["oreOverworldRedstone", "oreOverworldRuby"], [0.97, 0.03], [0, -11325]);
@@ -407,7 +413,7 @@ var mil as int = 1000000;
     addExcavator("Certus Quartz", 10, ["oreOverworldCertusQuartz", "oreOverworldChargedCertusQuartz", "oreOverworldBlackQuartz"], [0.65, 0.25, 0.1], [0, -11325]);
     
 
-    addExcavator("Titanium and Garbage", 5, ["oreOverworldTitanium", "oreOverworldSapphire", "oreOverworldNeodymium", "oreVibranium"], [0.90, 0.07, 0.02, 0.01], [0, -11325]);
+    addExcavator("Titanium and Garbage", 5, ["oreOverworldTitanium", "oreOverworldSapphire", "oreOverworldNeodymium", "oreOverworldVibranium"], [0.90, 0.07, 0.02, 0.01], [0, -11325]);
 
     addExcavator("Chrome", 10, ["oreOverworldChrome", "oreOverworldRuby", "oreOverworldRedstone"], [0.8, 0.1, 0.1], [0, -11325]);
 

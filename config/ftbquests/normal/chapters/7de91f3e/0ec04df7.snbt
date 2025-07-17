@@ -1,7 +1,7 @@
 {
 	title: "Tier II",
-	x: 5.0d,
-	y: -7.5d,
+	x: 4.0d,
+	y: -5.5d,
 	text: [
 		"8 runes for tier 2"
 	],

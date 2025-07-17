@@ -1,0 +1,14 @@
+{
+	x: 8.0d,
+	y: 2.0d,
+	dependencies: [
+		"af69ad5d"
+	],
+	tasks: [{
+		uid: "304cef62",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rune_boule1"
+		}]
+	}]
+}

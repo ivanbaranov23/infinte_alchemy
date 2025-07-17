@@ -10,7 +10,7 @@ import mods.modularmachinery.RecipeBuilder;
 
 
 {//flower
-    var rec = RecipeBuilder.newBuilder("flower1", "flower", 3200);
+    var rec = RecipeBuilder.newBuilder("flower1", "flower", 800);
     rec.addEnergyPerTickOutput(1000 * 1000 * 35);
 
 
@@ -26,7 +26,7 @@ import mods.modularmachinery.RecipeBuilder;
     rec.build();
 }
 {//flower
-    var rec = RecipeBuilder.newBuilder("flower2", "flower", 1600);
+    var rec = RecipeBuilder.newBuilder("flower2", "flower", 400);
     rec.addEnergyPerTickOutput(1000 * 1000 * 125);
 
 

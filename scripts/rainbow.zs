@@ -6,6 +6,17 @@ import crafttweaker.oredict.IOreDictEntry;
 
 import mods.modularmachinery.RecipeBuilder;
 
+var curry = <harvestcraft:deluxechickencurryitem> as IItemStack;
+var bbqplatter = <harvestcraft:bbqplatteritem> as IItemStack;
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:rainbow_leacher_controller>, [
+    [<extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>], 
+    [<extrautils2:decorativesolid:7>, curry, curry, curry, <extrautils2:decorativesolid:7>], 
+    [<extrautils2:decorativesolid:7>, <biomesoplenty:terrestrial_artifact>, <extendedcrafting:frame>, <biomesoplenty:terrestrial_artifact>, <extrautils2:decorativesolid:7>], 
+    [<extrautils2:decorativesolid:7>, bbqplatter, bbqplatter, bbqplatter, <extrautils2:decorativesolid:7>], 
+    [<extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>, <extrautils2:decorativesolid:7>]
+]);
+
 {//rainbowcurryitem
     recipes.remove(<harvestcraft:rainbowcurryitem>);
 
@@ -13,7 +24,7 @@ import mods.modularmachinery.RecipeBuilder;
 
     //rec.addEnergyPerTickInput(1000 * 1000 * 1000);
 
-    rec.addItemInput(<harvestcraft:deluxechickencurryitem> * 1000);
+    rec.addItemInput(curry * 1000);
 
     rec.addItemOutput(<harvestcraft:rainbowcurryitem>);
 
@@ -26,7 +37,7 @@ import mods.modularmachinery.RecipeBuilder;
 
     //rec.addEnergyPerTickInput(1000 * 1000 * 1000);
 
-    rec.addItemInput(<harvestcraft:bbqplatteritem> * 1000);
+    rec.addItemInput(bbqplatter * 1000);
 
     rec.addItemOutput(<harvestcraft:epicbaconitem>);
 

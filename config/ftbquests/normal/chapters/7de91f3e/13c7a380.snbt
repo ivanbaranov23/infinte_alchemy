@@ -1,7 +1,7 @@
 {
 	icon: "contenttweaker:flesh_bits",
-	x: 10.0d,
-	y: -6.5d,
+	x: 17.0d,
+	y: 0.5d,
 	text: [
 		"\"Carnexan\" - A combination of \"carneo\" and \"exos\" (Greek for \"outer\"), to create a name that means \"exterior of meat\" or \"external flesh\"",
 		"(c) Character.AI chatbot ",

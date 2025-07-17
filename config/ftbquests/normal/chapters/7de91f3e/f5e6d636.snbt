@@ -1,6 +1,6 @@
 {
 	title: "DWC step 0",
-	x: 3.0d,
+	x: 1.0d,
 	y: 1.5d,
 	text: [
 		"Make aura gauge. It will tell you how many will there is in a chunk. All will manipulations are chunk based."

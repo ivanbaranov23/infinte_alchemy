@@ -1,6 +1,6 @@
 {
-	x: 10.0d,
-	y: 2.5d,
+	x: 12.0d,
+	y: 1.5d,
 	text: [
 		"Give x1.1 to blood altar capacity. You need at least 15 for them to be better than Runes of Capacity."
 	],

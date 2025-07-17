@@ -633,8 +633,7 @@ addBiolabRecipe(
                 <contenttweaker:biomaterial2>,
                 <erebus:materials:13> * 24,
                 <contenttweaker:elastic_clay> * 8,
-                <harvestcraft:crackeritem> * 64,
-                <harvestcraft:crackeritem> * 64,
+                <harvestcraft:crackeritem> * 256,
                 <harvestcraft:meatfeastpizzaitem> * 12
             ], [
                 <liquid:if.protein> * 10000,
@@ -696,6 +695,21 @@ addBiolabRecipe(
             ], [],
             60, 5000
         );
+    }
+    {//manamass
+        addBiolabRecipe(
+            [<contenttweaker:manamass>], 
+            [
+                <contenttweaker:biomaterial2>,
+                <botania:quartz:1> * 4,
+                <contenttweaker:terra_base>
+            ], [
+                <liquid:mana_juice> * 12000,
+                <liquid:unknown> * 5000
+            ], [],
+            60, 5000, 500
+        );
+        
     }
 }
 

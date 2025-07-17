@@ -1,0 +1,18 @@
+{
+	x: -5.0d,
+	y: 2.0d,
+	text: [
+		"There is a block of bedrock under your starting island"
+	],
+	dependencies: [
+		"32464c8e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7ec00103",
+		type: "item",
+		items: [{
+			item: "enderio:item_material 1 20"
+		}]
+	}]
+}

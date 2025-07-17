@@ -94,6 +94,13 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
 
     scripts.helper.addSawRecipeWByproduct(<minecraft:skull:1>, <tconstruct:materials:17> * 4, <tconstruct:materials:17>, 10);
 
+    //creeper
+    mods.prodigytech.heatsawmill.addRecipe(<minecraft:skull:4>, <minecraft:gunpowder> * 4);
+    scripts.helper.addSawRecipeWByproduct(<minecraft:skull:4>, <minecraft:gunpowder> * 6, <minecraft:gunpowder> * 2, 10);
+    recipes.addShapeless("ia_creepr_skull_to_bone", <minecraft:gunpowder> * 3, [
+        <harvestcraft:cuttingboarditem>.reuse(), <minecraft:skull:4>
+    ]);
+
     //witch
     readdRootsSummoning(<entity:minecraft:witch>, [
         <mysticalagriculture:storage>, <minecraft:redstone>, <minecraft:glowstone_dust>, <minecraft:sugar>, <minecraft:glass_bottle>

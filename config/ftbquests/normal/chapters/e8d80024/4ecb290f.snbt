@@ -1,0 +1,15 @@
+{
+	x: 23.0d,
+	y: -2.0d,
+	dependencies: [
+		"0aac85b0"
+	],
+	optional: true,
+	tasks: [{
+		uid: "73cad536",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gaia_catalyst"
+		}]
+	}]
+}

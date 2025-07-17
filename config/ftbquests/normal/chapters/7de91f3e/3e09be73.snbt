@@ -1,6 +1,6 @@
 {
 	x: 4.0d,
-	y: -2.5d,
+	y: -4.5d,
 	text: [
 		"Denorm can be used to change ores version"
 	],

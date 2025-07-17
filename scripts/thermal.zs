@@ -172,7 +172,7 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 	recipes.remove(te_cobblegen);
 	recipes.addShaped("ia_te_cobblegen", te_cobblegen, [
 		[<contenttweaker:thermal_plate>, <ore:xuUpgradeMining>, <contenttweaker:thermal_plate>], 
-		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
+		[<extrautils2:compressedcobblestone:1>, <thermalexpansion:frame>, <extrautils2:compressedcobblestone:1>], 
 		[<contenttweaker:thermal_plate>, <thermalfoundation:material:513>, <contenttweaker:thermal_plate>]
 	]);
 
@@ -390,6 +390,14 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 		[<ore:coinPlatinum>, <ore:plateEmerald>, <ore:coinPlatinum>], 
 		[<ore:coinPlatinum>, <thermalfoundation:material:515>, <ore:coinPlatinum>], 
 		[<ore:coinPlatinum>, <ore:plateEmerald>, <ore:coinPlatinum>]
+	]);
+
+	
+	recipes.remove(<thermalexpansion:augment:256>);
+	recipes.addShaped("ia_te_food_aug", <thermalexpansion:augment:256>, [
+		[<prodigytech:meat_patty>, <thermalfoundation:material:322>, <prodigytech:meat_patty>], 
+		[<thermalfoundation:material:322>, <prodigytech:food_enricher>, <thermalfoundation:material:322>], 
+		[<prodigytech:meat_patty>, <thermalfoundation:material:322>, <prodigytech:meat_patty>]
 	]);
 
 

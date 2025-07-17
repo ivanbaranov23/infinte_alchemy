@@ -2,10 +2,11 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/night_glass",
+      "all": "contenttweaker:blocks/night_glass",
+      "connected_tex": "contenttweaker:blocks/night_glass-ctm",
       "particle": "contenttweaker:blocks/night_glass"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

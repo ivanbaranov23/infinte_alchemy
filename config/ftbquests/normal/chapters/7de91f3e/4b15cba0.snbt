@@ -1,11 +1,11 @@
 {
-	x: 9.0d,
-	y: -7.5d,
+	x: 15.0d,
+	y: -1.5d,
 	text: [
 		"It's called assembler but it's also biochemical reactor, fluid siever, incubator, chemical injector and battle arena."
 	],
 	dependencies: [
-		"fb79e1ee"
+		"1dfe9fef"
 	],
 	tasks: [{
 		uid: "175d3e2a",

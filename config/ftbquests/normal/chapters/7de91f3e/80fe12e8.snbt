@@ -10,5 +10,10 @@
 		items: [{
 			item: "contenttweaker:reagent_bug"
 		}]
+	}],
+	rewards: [{
+		uid: "b8adf31e",
+		type: "item",
+		item: "contenttweaker:reagent_bug"
 	}]
 }

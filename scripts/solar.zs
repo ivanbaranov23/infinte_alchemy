@@ -173,7 +173,7 @@ recipes.removeByMod("solarflux");
 			<contenttweaker:zirconium_lens> * 12,
 			<contenttweaker:star_polymer> * 4,
 			<contenttweaker:electric_wool2> * 4,
-			<contenttweaker:starry_glass> * 2,
+			<contenttweaker:night_glass> * 2,
 			<contenttweaker:perfect_mirror_array>
 		], [
 

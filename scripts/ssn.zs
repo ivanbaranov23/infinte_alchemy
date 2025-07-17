@@ -1,12 +1,12 @@
 
 recipes.remove(<storagenetwork:kabel>);
-recipes.addShaped("ssn_kabel1", <storagenetwork:kabel> * 2, [
+recipes.addShaped("ssn_kabel1", <storagenetwork:kabel> * 4, [
     [<roots:bark_wildwood>, <roots:bark_wildwood>, <roots:bark_wildwood>], 
     [<extrautils2:minichest>, <thermaldynamics:duct_32> | <extrautils2:pipe>, <extrautils2:minichest>], 
     [<roots:bark_wildwood>, <roots:bark_wildwood>, <roots:bark_wildwood>]
 ]);
 recipes.remove(<storagenetwork:kabel>);
-recipes.addShaped("ssn_kabel2", <storagenetwork:kabel> * 4, [
+recipes.addShaped("ssn_kabel2", <storagenetwork:kabel> * 8, [
     [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>], 
     [<extrautils2:minichest>, <thermaldynamics:duct_32> | <extrautils2:pipe>, <extrautils2:minichest>], 
     [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]

@@ -90,6 +90,13 @@ recipes.addShaped("ia_silky_jewel_alt", <tconstruct:materials:16>, [
 
     mods.thermalexpansion.Crucible.removeRecipe(<tconstruct:slime_congealed:3>);
 }
+furnace.addRecipe(<tconstruct:edible:1>, <tconstruct:slime_grass_tall>);
+furnace.addRecipe(<tconstruct:edible:1>, <tconstruct:slime_grass_tall:1>);
+furnace.addRecipe(<tconstruct:edible:1>, <tconstruct:slime_vine_blue_end>);
+furnace.addRecipe(<tconstruct:edible:1>, <tconstruct:slime_vine_blue_mid>);
+furnace.addRecipe(<tconstruct:edible:1>, <tconstruct:slime_sapling>);
+furnace.addRecipe(<tconstruct:edible:1>, <tconstruct:slime_leaves>);
+
 //calcium
 Casting.removeTableRecipe(<minecraft:bone>);
 

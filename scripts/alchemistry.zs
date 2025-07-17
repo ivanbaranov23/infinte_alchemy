@@ -26,7 +26,7 @@ Combiner.addRecipe(<contenttweaker:insulation_strand>, [<contenttweaker:insulati
 Combiner.addRecipe(<contenttweaker:inert_glass>, [
 	<extendedcrafting:singularity_custom:3> * 4, <alchemistry:element:500>, 
 	//<alchemistry:fusion_casing> * 16, <alchemistry:fission_casing> * 16,
-	<contenttweaker:starry_glass> * 4, <bloodmagic:decorative_brick:2> * 4,
+	<contenttweaker:night_glass> * 4, <bloodmagic:decorative_brick:2> * 4,
 	<contenttweaker:star_polymer> * 16
 ]);
 

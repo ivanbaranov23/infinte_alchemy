@@ -1,0 +1,14 @@
+{
+	x: 9.5d,
+	y: 0.5d,
+	dependencies: [
+		"a70d58c9"
+	],
+	tasks: [{
+		uid: "5a2c5fc2",
+		type: "item",
+		items: [{
+			item: "botania:spark"
+		}]
+	}]
+}

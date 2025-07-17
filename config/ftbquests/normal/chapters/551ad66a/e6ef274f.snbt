@@ -1,7 +1,7 @@
 {
 	title: "Ore Processing",
-	x: -5.0d,
-	y: 2.0d,
+	x: -6.0d,
+	y: 1.0d,
 	text: [
 		"Ore processing was reshoveled and overshoveled. Endgame you'll have access to x20+ ore proc or even x25+ if you like pain. Just pay no mind to the dummy"
 	],

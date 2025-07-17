@@ -231,7 +231,8 @@
         },
 
         {"match": {"drops": {"drops": ["contenttweaker:forest_fire"]}},
-            "replaceStrategy": "REPLACE_ALL_IF_SELECTED"
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": []
         },
 
         {
@@ -316,6 +317,59 @@
                         "quantity": {
                             "min": 1,
                             "max": 4
+                        }
+                    }
+                }
+            ]
+        },
+
+
+
+        {"match": {"blocks": {"blocks": ["contenttweaker:alien_sheetmetal"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "EXCLUDED"
+                    },
+                    "item": {
+                        "items": [
+                            "taiga:iox_ingot",
+                            "moretcon:ingotgravitonium",
+                            "draconicevolution:draconium_ingot",
+                            "contenttweaker:mekanized_steel_ingot",
+                            "contenttweaker:mitanium_ingot"
+                        ],
+                        "quantity": {
+                            "min": 2,
+                            "max": 6
+                        }
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["contenttweaker:alien_gearbox"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "selector": {
+                        "silktouch": "EXCLUDED"
+                    },
+                    "item": {
+                        "items": [
+                            "thermalfoundation:material:512",
+                            "contenttweaker:mekanical_core",
+                            "thermalfoundation:material:514",
+                            "thermalfoundation:material:515",
+                            "thermalfoundation:material:513",
+                            "thermalfoundation:material:640",
+                            "immersiveengineering:metal_decoration0:4",
+                            "immersiveengineering:metal_decoration0:5",
+                            "immersiveengineering:metal_decoration0:7"
+                        ],
+                        "quantity": {
+                            "min": 1,
+                            "max": 2
                         }
                     }
                 }

@@ -1,0 +1,22 @@
+{
+	x: -3.0d,
+	y: 3.5d,
+	dependencies: [
+		"70de01c4"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d3f08f05",
+		type: "checkmark",
+		title: "Sunnarium",
+		icon: {
+			id: "aeadditions:pattern.fluid",
+			tag: {
+				Fluid: {
+					FluidName: "sunnarium",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

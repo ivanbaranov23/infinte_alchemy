@@ -1,12 +1,11 @@
 {
 	title: "Orb 4",
-	x: 10.0d,
-	y: 1.5d,
+	x: 12.0d,
+	y: 0.5d,
 	text: [
 		""
 	],
 	dependencies: [
-		"647de8d9",
 		"2a094c8e"
 	],
 	tasks: [{

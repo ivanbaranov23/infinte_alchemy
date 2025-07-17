@@ -1,0 +1,95 @@
+{
+	title: "Cheaper(?) than tier 2",
+	x: 18.0d,
+	y: 1.0d,
+	text: [
+		"Cheaper in some aspects"
+	],
+	dependencies: [
+		"f7bd3a5e"
+	],
+	tasks: [{
+		uid: "b34303fb",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 9"
+		}]
+	},
+	{
+		uid: "536e7cff",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 10"
+		}]
+	},
+	{
+		uid: "7fd318a8",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 11"
+		}]
+	},
+	{
+		uid: "8e0eb87f",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 12"
+		}]
+	},
+	{
+		uid: "0d9efc8e",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 13"
+		}]
+	},
+	{
+		uid: "6c79020a",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 14"
+		}]
+	},
+	{
+		uid: "0ec5a8dd",
+		type: "item",
+		items: [{
+			item: "botania:rune 1 15"
+		}]
+	}],
+	rewards: [{
+		uid: "a0eb28a5",
+		type: "item",
+		item: "botania:rune 1 9"
+	},
+	{
+		uid: "94664555",
+		type: "item",
+		item: "botania:rune 1 10"
+	},
+	{
+		uid: "7c8cad8a",
+		type: "item",
+		item: "botania:rune 1 11"
+	},
+	{
+		uid: "a7905bef",
+		type: "item",
+		item: "botania:rune 1 12"
+	},
+	{
+		uid: "8c3acf61",
+		type: "item",
+		item: "botania:rune 1 13"
+	},
+	{
+		uid: "75796601",
+		type: "item",
+		item: "botania:rune 1 14"
+	},
+	{
+		uid: "14e53110",
+		type: "item",
+		item: "botania:rune 1 15"
+	}]
+}

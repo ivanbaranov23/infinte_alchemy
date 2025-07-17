@@ -3,7 +3,7 @@
 	x: 3.0d,
 	y: -5.5d,
 	text: [
-		"Can be made cheaper via elemental clay"
+		""
 	],
 	dependencies: [
 		"7b2724a0",

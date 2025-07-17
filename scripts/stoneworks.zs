@@ -204,6 +204,22 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 }
 
 {//twilight
+    recipes.addShaped("ia_aurora_block", <twilightforest:aurora_block>, [
+        [<tconstruct:brownstone:3>, <mysticalagriculture:soulstone>, <tconstruct:brownstone:3>], 
+        [<mysticalagriculture:soulstone>, <contenttweaker:sky_grain>, <mysticalagriculture:soulstone>], 
+        [<tconstruct:brownstone:3>, <mysticalagriculture:soulstone>, <tconstruct:brownstone:3>]
+    ]);
+    recipes.addShaped("ia_aurora_block2", <twilightforest:aurora_block> * 5, [
+        [<mysticalagriculture:soulstone> | <appliedenergistics2:sky_stone_block>, <mysticalagriculture:soulstone> | <appliedenergistics2:sky_stone_block>, <mysticalagriculture:soulstone> | <appliedenergistics2:sky_stone_block>], 
+        [<mysticalagriculture:soulstone> | <appliedenergistics2:sky_stone_block>, <twilightforest:aurora_block>, <mysticalagriculture:soulstone> | <appliedenergistics2:sky_stone_block>], 
+        [<mysticalagriculture:soulstone> | <appliedenergistics2:sky_stone_block>, <mysticalagriculture:soulstone> | <appliedenergistics2:sky_stone_block>, <mysticalagriculture:soulstone> | <appliedenergistics2:sky_stone_block>]
+    ]);
+
+    recipes.addShaped("ia_underbrick", <twilightforest:underbrick> * 2, [
+        [<twilightforest:dark_planks>, <engineersdecor:slag_brick_block> | <prodigytech:ash_bricks>],
+        [<engineersdecor:slag_brick_block> | <prodigytech:ash_bricks>, <twilightforest:dark_planks>]
+    ]);
+
     recipes.addShaped("ia_naga_stone", <twilightforest:naga_stone:1> * 16, [
         [<tconstruct:brownstone:3>, <mysticalagriculture:soulstone>, <tconstruct:brownstone:3>], 
         [<mysticalagriculture:soulstone>, <twilightforest:naga_scale>, <mysticalagriculture:soulstone>], 
@@ -217,6 +233,8 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         <erebus:mud>,
         <erebus:umbergravel>
     ]);
+
+    mods.actuallyadditions.AtomicReconstructor.addRecipe(<twilightforest:giant_cobblestone>, <extrautils2:compressedcobblestone:4>, 100000);
 }
 
 {//aether

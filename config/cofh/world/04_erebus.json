@@ -1,5 +1,32 @@
 {
     "populate": {
+		"alien_erebus_1": {
+			"enabled": "true",
+			"distribution": "uniform",
+			
+            "generator": {
+                "type": "structure",
+                "structure": "structure/alien_erebus_1.nbt",
+				"material": "grass",
+				"integrity": 0.9,
+				"cluster-size": 1
+			},
+
+			"cluster-count": 1,
+            "chunk-chance": 16,
+			"min-height": 10,
+			"max-height": 175,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					66
+				]
+			}
+		},
+
+
 		"erebus_flolit": {
 			"enabled": "true",
 			"distribution": "uniform",

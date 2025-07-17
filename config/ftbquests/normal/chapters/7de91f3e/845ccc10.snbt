@@ -1,11 +1,22 @@
 {
-	x: 6.0d,
-	y: 9.0d,
+	x: -1.0d,
+	y: 1.5d,
+	text: [
+		"Sigil allows one to move blocks including spawners"
+	],
+	dependencies: [
+		"1dee57dd"
+	],
 	tasks: [{
 		uid: "4968207f",
 		type: "item",
 		items: [{
 			item: "bloodmagic:component 1 18"
 		}]
+	}],
+	rewards: [{
+		uid: "ba2e89f0",
+		type: "item",
+		item: "bloodmagic:component 1 18"
 	}]
 }

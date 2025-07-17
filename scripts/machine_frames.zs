@@ -108,3 +108,13 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_frame>, [
 	[<moreplates:crystalline_alloy_gear>, <botania:managlass>, <moreplates:crystalline_alloy_plate>, <botania:managlass>, <moreplates:crystalline_alloy_gear>]
 ]);
 
+//frame 14
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:star_frame>, [
+	[<moreplates:stellar_alloy_plate>, <moreplates:stellar_alloy_plate>, <contenttweaker:night_glass>, <botania:rune:12>, <contenttweaker:night_glass>, <moreplates:stellar_alloy_plate>, <moreplates:stellar_alloy_plate>], 
+	[<moreplates:stellar_alloy_plate>, <contenttweaker:elf_mana_circuit>, null, <contenttweaker:cursed_star>, null, <contenttweaker:elf_mana_circuit>, <moreplates:stellar_alloy_plate>], 
+	[<contenttweaker:night_glass>, null, null, <contenttweaker:star_alloy_plate>, null, null, <contenttweaker:night_glass>], 
+	[<contenttweaker:night_glass>, <contenttweaker:laser>, <contenttweaker:reagent_crystal>, <contenttweaker:mana_frame>, <contenttweaker:reagent_crystal>, <contenttweaker:laser>, <contenttweaker:night_glass>], 
+	[<contenttweaker:night_glass>, null, null, <contenttweaker:star_alloy_plate>, null, null, <contenttweaker:night_glass>], 
+	[<contenttweaker:starmetal_plate>, <contenttweaker:elf_mana_circuit>, null, <contenttweaker:plasma_gen>, null, <contenttweaker:elf_mana_circuit>, <contenttweaker:starmetal_plate>], 
+	[<contenttweaker:starmetal_plate>, <contenttweaker:starmetal_plate>, <contenttweaker:night_glass>, <botania:rune:12>, <contenttweaker:night_glass>, <contenttweaker:starmetal_plate>, <contenttweaker:starmetal_plate>]
+]);

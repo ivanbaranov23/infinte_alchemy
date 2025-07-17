@@ -1,10 +1,10 @@
 {
 	title: "Tier VI",
-	x: 17.0d,
+	x: 16.0d,
 	y: 2.5d,
 	shape: "square",
 	text: [
-		"76 runes"
+		"+76 runes"
 	],
 	dependencies: [
 		"6856e129"

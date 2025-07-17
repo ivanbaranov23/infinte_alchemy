@@ -2,10 +2,11 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/lapis_tile",
+      "all": "contenttweaker:blocks/lapis_tile",
+      "connected_tex": "contenttweaker:blocks/lapis_tile-ctm",
       "particle": "contenttweaker:blocks/lapis_tile"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

@@ -144,3 +144,40 @@ import mods.modularmachinery.RecipeBuilder;
         <contenttweaker:living_steel_plate> * 2
     ], <liquid:circuit> * 1000, 100, 100000);
 }
+
+{//gaia cat
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:gaia_catalyst>],
+        [
+            <contenttweaker:methyst> * 16,
+            <botania:manaresource:14> * 4,
+            <extendedcrafting:singularity_custom:66>,
+            <contenttweaker:evil_core> * 4,
+            <contenttweaker:rune_cyclic> * 8
+        ], null,
+        200, 100000
+    );
+
+    {
+        var rec = RecipeBuilder.newBuilder("ultimate", "rune_cracker", 20 * 1, 1000);
+
+        rec.addEnergyPerTickInput(2048 * 10000);
+
+        rec.addItemOutput(<contenttweaker:gaia_catalyst>);
+            
+        
+        rec.addItemInput(<contenttweaker:gaia_catalyst_used>);
+        rec.addItemInput(<contenttweaker:rune_cyclic>).setChance(0.1);
+        rec.addItemInput(<botania:rune:9>).setChance(0.1);
+        rec.addItemInput(<botania:rune:10>).setChance(0.1);
+        rec.addItemInput(<botania:rune:11>).setChance(0.1);
+        rec.addItemInput(<botania:rune:12>).setChance(0.1);
+        rec.addItemInput(<botania:rune:13>).setChance(0.1);
+        rec.addItemInput(<botania:rune:14>).setChance(0.1);
+        rec.addItemInput(<botania:rune:15>).setChance(0.1);
+
+
+
+        rec.build();
+    }
+}

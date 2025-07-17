@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/flolit_ore",
+      "all": "contenttweaker:blocks/flolit_ore",
       "particle": "contenttweaker:blocks/flolit_ore"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

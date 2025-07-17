@@ -1,0 +1,18 @@
+{
+	x: 3.0d,
+	y: -11.5d,
+	text: [
+		"Quark runes change the color of enchantment glint"
+	],
+	dependencies: [
+		"58109136"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4bca2dfd",
+		type: "item",
+		items: [{
+			item: "quark:rune 1 16"
+		}]
+	}]
+}

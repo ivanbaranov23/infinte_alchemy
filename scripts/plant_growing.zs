@@ -633,9 +633,11 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:plant_sample>, <t
 
 //processing
 
+//carrot
+scripts.helper.addSawRecipe(<minecraft:carrot>, <contenttweaker:carrot_pulp> * 2);
 
-
-
+//beetroot
+scripts.helper.addSawRecipe(<minecraft:beetroot>, <minecraft:dye:1> * 2);
 
 {//pam
     {//barley

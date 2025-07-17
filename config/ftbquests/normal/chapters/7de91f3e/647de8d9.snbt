@@ -3,7 +3,7 @@
 	x: 10.0d,
 	y: -2.5d,
 	text: [
-		"28 runes"
+		"+28 runes"
 	],
 	dependencies: [
 		"dad454c9",

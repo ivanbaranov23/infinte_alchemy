@@ -3,9 +3,7 @@
 	x: 7.0d,
 	y: -5.5d,
 	text: [
-		"20 runes",
-		"",
-		"also can use Sea Lanterns instead of Glowstone"
+		"20 more runes"
 	],
 	dependencies: [
 		"0ec04df7"
@@ -14,7 +12,7 @@
 		uid: "12d12db9",
 		type: "item",
 		items: [{
-			item: "minecraft:glowstone"
+			item: "contenttweaker:tar_light"
 		}],
 		count: 4L
 	}]

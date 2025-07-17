@@ -20,7 +20,16 @@ import scripts.recycler.addRecycle;
 furnace.remove(<projectred-core:resource_item>);
 furnace.addRecipe(<prodigytech:charred_stone>, <minecraft:stone>);
 
-
+//bricks
+recipes.remove(<prodigytech:ash_bricks>);
+recipes.addShaped("ia_ash_bricks1", <prodigytech:ash_bricks>, [
+	[null, <minecraft:brick>, null],
+	[<minecraft:brick>, <prodigytech:ash>, <minecraft:brick>],
+	[null, <minecraft:brick>, null]
+]);
+recipes.addShapeless("ia_ash_bricks2", <prodigytech:ash_bricks>, [
+	<minecraft:brick_block>, <prodigytech:ash>
+]);
 
 //crafting
 recipes.remove(<prodigytech:explosion_furnace>);

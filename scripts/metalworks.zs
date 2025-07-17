@@ -202,10 +202,10 @@ static all_metals as IItemStack[string][string] = {
         singularity: <extendedcrafting:singularity:24>
     },
     alumite:{
-        ingot: <plustic:alumiteingot>,
+        ingot: <tconstruct:ingots:6>,
         plate: <moreplates:alumite_plate>,
         gear: <moreplates:alumite_gear>,
-        block: <plustic:alumiteblock>
+        block: <tconstruct:metal:7>
     },
     duraluminum: {
         ingot: <contenttweaker:duraluminum_ingot>,
@@ -648,7 +648,9 @@ static all_metals as IItemStack[string][string] = {
 
         nugget: <contenttweaker:fluix_steel_nugget>,
         block: <contenttweaker:fluix_steel_block>,
-        dust: <contenttweaker:fluix_steel_dust>
+        dust: <contenttweaker:fluix_steel_dust>,
+
+        singularity: <extendedcrafting:singularity_custom:71>
     },
     xnet: {
         ingot: <contenttweaker:xnet_ingot>,
@@ -2214,13 +2216,13 @@ function add2alloy(
             all_metals[alloy].ingot * alloyn, 
             all_metals[metal1].ingot * n1,
             all_metals[metal2].ingot * n2,
-            2000 * (alloy_level + 1)
+            4000 * (alloy_level + 1)
         );
         mods.enderio.AlloySmelter.addRecipe(all_metals[alloy].ingot * alloyn, 
             [
                 all_metals[metal1].ingot * n1,
                 all_metals[metal2].ingot * n2
-            ], 8000 * (alloy_level + 1)
+            ], 8000 * (alloy_level + 1) * (alloy_level + 1)
         );
         mods.immersiveengineering.ArcFurnace.addRecipe(
             all_metals[alloy].ingot * alloyn, 
@@ -2315,7 +2317,7 @@ function add3alloy(
             all_metals[metal1].ingot * n1,
             all_metals[metal2].ingot * n2,
             all_metals[metal3].ingot * n3
-        ], 12000 * (alloy_level + 1)
+        ], 20000 * (alloy_level + 1) * (alloy_level + 1)
     );
 
     scripts.helper.addHighOvenAlloy(
@@ -2772,6 +2774,8 @@ TEPress.addGearRecipe(<thermalfoundation:material:23>, <minecraft:stone> * 2, 30
             "copper", 1,
             "redstone", 4
         );
+        scripts.helper.addSawRecipe(<projectred-core:resource_item:103>, <projectred-transmission:wire> * 4);
+        
         add2alloy(1, "blue_alloy", 1,
             "zinc", 1,
             "electrotine", 4
@@ -2931,7 +2935,7 @@ add3alloy(1, "flower_steel", 4,
 
         add2alloy(1, "enderium_base", 2,
             "mushroomite", 3,
-            "platinum", 2
+            "platinum", 1
         );
         mods.thermalexpansion.Transposer.addFillRecipe(
             <thermalfoundation:material:167>,
@@ -3569,7 +3573,7 @@ scripts.helper.addFluidAlloyerRecipe(
             <trumpetskeleton:trumpet>,
             <enderio:block_enderman_skull>,
             <mekanism:mufflingupgrade>
-        ], 300, 24);
+        ], 200, 24);
         scripts.content_machines.addAdvancedMixerRecipe(
             [<contenttweaker:melodic_paste> * 4], [<liquid:radioactive_waste> * 200], [
                 <contenttweaker:elastic_clay> * 2,
@@ -3746,21 +3750,61 @@ scripts.helper.addFluidAlloyerRecipe(
     mods.enderio.AlloySmelter.addRecipe(<contenttweaker:bedrockium_chunk>, 
         [
             <extrautils2:compressedcobblestone:3> * 4,
-            <contenttweaker:anubis_godshard>,
+            <contenttweaker:anubis_godshard> * 8,
             <minecraft:diamond_block> * 2
-        ]
+        ], 250000
     );
-    mods.thermalexpansion.Imbuer.addRecipe(<liquid:bedrockium_solution> * 1000, <contenttweaker:bedrockium_chunk>, <liquid:endacid> * 1000, 10000);
-    scripts.content_machines.addAdvancedMixerRecipe(
-        [], [<liquid:bedrockium_solution> * 1200],
-        [
-            <contenttweaker:bedrockium_chunk>
-        ], [
-            <liquid:endacid> * 1000,
-            <liquid:raw_bedrockium_solution> * 200
-        ], 20, 1000
-    );
+    
+    {//bedrockium_solution
+        mods.enderio.Vat.addRecipe(
+            <liquid:bedrockium_solution> * 1000, 1.0, <liquid:endacid> * 1000, 
+            [<contenttweaker:bedrockium_chunk>], [1.0], 
+            [
+                <extendedcrafting:singularity_custom:2>,
+                <contenttweaker:bedrockium_small_chunk>,
+                <twilightforest:giant_cobblestone>
+            ], [
+                1.0,
+                1.2,
+                1.5
+            ], 
+            30000
+        );
+        scripts.content_machines.addAdvancedMixerRecipe(
+            [], [<liquid:bedrockium_solution> * 1300],
+            [
+                <contenttweaker:bedrockium_chunk>
+            ], [
+                <liquid:endacid> * 1000,
+                <liquid:raw_bedrockium_solution> * 200
+            ], 20, 1000
+        );
 
+        
+        mods.enderio.Vat.addRecipe(
+            <liquid:bedrockium_solution> * 1000, 1.5, <liquid:acid1> * 1000, 
+            [<contenttweaker:bedrockium_chunk>], [1.0], 
+            [
+                <extendedcrafting:singularity_custom:2>,
+                <contenttweaker:bedrockium_small_chunk>,
+                <twilightforest:giant_cobblestone>
+            ], [
+                1.0,
+                1.2,
+                1.5
+            ], 
+            30000
+        );
+        scripts.content_machines.addAdvancedMixerRecipe(
+            [], [<liquid:bedrockium_solution> * 2000],
+            [
+                <contenttweaker:bedrockium_chunk>
+            ], [
+                <liquid:acid1> * 1000,
+                <liquid:raw_bedrockium_solution> * 200
+            ], 20, 1000
+        );
+    }
 
     mods.thermalexpansion.Imbuer.addRecipe(<liquid:refined_bedrockium_solution> * 1000, <contenttweaker:bedrockium_small_chunk>, <liquid:bedrockium_solution> * 1000, 10000);
     mods.thermalexpansion.Refinery.addRecipe(<liquid:refined_bedrockium_solution> * 500, <contenttweaker:bedrockium_small_chunk> % 55, <liquid:bedrockium_solution> * 1000, 10000);
@@ -3790,7 +3834,7 @@ scripts.helper.addFluidAlloyerRecipe(
             <contenttweaker:bedrockium_alloy_mix>,
             <contenttweaker:tunril_ingot> * 2,
             <enderio:item_alloy_ingot:6>
-        ], 10000
+        ], 200000
     );
 }
 {//explosion_resistant
@@ -3894,8 +3938,8 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:cursed_gold_ingot> * 4,
 
 
     recipes.addShapeless("ia_imperial_dust1", <contenttweaker:imperial_dust1>, [
-        <harvestcraft:starfruitjellyitem>, <contenttweaker:caelumite_dust>, <contenttweaker:algan>, <moretcon:dustpenguinite>, <contenttweaker:arkenium_dust>, <quantumflux:graphitedust>, 
-        <contenttweaker:eliamondin_dust>, <moretcon:dustvalasium>, <taiga:iox_dust>
+        <harvestcraft:starfruitjellyitem>, <contenttweaker:caelumite_dust>, <contenttweaker:eliamondin_dust>, <contenttweaker:algan>, <contenttweaker:arkenium_dust>, <quantumflux:graphitedust>, 
+        <moretcon:dustvalasium>, <taiga:iox_dust>, <moretcon:dustpenguinite>
     ]);
     
     mods.thermalexpansion.Centrifuge.addRecipe(
@@ -3903,9 +3947,13 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:cursed_gold_ingot> * 4,
         25000
     );
     mods.thermalexpansion.Centrifuge.addRecipe(
-        [<contenttweaker:eliamondin_dust>, <moretcon:dustvalasium>, <taiga:iox_dust>], <contenttweaker:imperial_dust3>, <liquid:unknown> * 100, 
+        [<moretcon:dustpenguinite>, <moretcon:dustvalasium>, <taiga:iox_dust>], <contenttweaker:imperial_dust3>, null, 
         25000
     );
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:unknown> * 1000, <contenttweaker:imperial_dust3>, 25000
+    );
+
     mods.enderio.AlloySmelter.addRecipe(<contenttweaker:imperial_iron_ingot>, 
         [
             <contenttweaker:imperial_dust2> * 2,
@@ -4052,7 +4100,7 @@ add3alloy(3, "ender_ingot", 1,
                 <extendedcrafting:singularity_custom:28>,
                 <enderio:block_alloy_endergy:2>
             ], 
-            50000, 40, 5
+            50000, 40, 2
         );
     }
 
@@ -4122,30 +4170,30 @@ add3alloy(3, "ender_ingot", 1,
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot>, 
         [
             <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
-            <bloodmagic:slate>
+            <bloodmagic:slate:1>
         ], 
-        128, 16
+        500, 256
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 2, 
         [
             <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
-            <bloodmagic:slate:1>
+            <bloodmagic:slate:2>
         ], 
-        128, 16
+        500, 256
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 4, 
         [
             <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
-            <bloodmagic:slate:2>
+            <bloodmagic:slate:3>
         ], 
-        128, 16
+        500, 256
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 8, 
         [
             <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
-            <bloodmagic:slate:3>
+            <bloodmagic:slate:4>
         ], 
-        128, 16
+        500, 256
     );
 
 
@@ -4314,7 +4362,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
     ]);
 
     mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:star_alloy_ingot> * 8, 10240 * 100, 10240 * 5, <contenttweaker:super_alloy_base_ingot>,
+        <contenttweaker:star_alloy_ingot> * 16, 10240 * 10000, 1024000 * 5, <contenttweaker:super_alloy_base_ingot>,
         [
             <enderio:block_alloy_endergy:3>,
             <contenttweaker:starmetal_block>,
@@ -4324,6 +4372,19 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <extendedcrafting:singularity:29>,
             <extendedcrafting:singularity_custom:55>,
             <botania:manaresource:14>
+        ]
+    );
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:star_alloy_ingot> * 8, 10240 * 10000, 1024000 * 5, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <enderio:block_alloy_endergy:3>,
+            <contenttweaker:starmetal_block>,
+            <contenttweaker:starmetal_block>,
+            <contenttweaker:starmetal_block>,
+            <contenttweaker:death_metal_block>,
+            <extendedcrafting:singularity:29>,
+            <extendedcrafting:singularity_custom:55>,
+            <contenttweaker:gaia_crystal>
         ]
     );
 
