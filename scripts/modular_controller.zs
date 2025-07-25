@@ -157,7 +157,7 @@ recipes.addShaped("mm_heat_exchanger_controller", <modularcontroller:heat_exchan
 
 recipes.addShaped("mm_air_collector_controller", <modularcontroller:air_collector_controller>, [
 	[<enderio:item_material:73>, <enderio:item_capacitor_crystalline>, <enderio:item_material:73>], 
-	[<mekanism:filterupgrade>, <enderio:item_material:66>, <mekanism:filterupgrade>], 
+	[<contenttweaker:peridotite_sheet>, <enderio:item_material:66>, <contenttweaker:peridotite_sheet>], 
 	[<enderio:item_material:73>, <contenttweaker:shu_godshard>, <enderio:item_material:73>]
 ]);
 

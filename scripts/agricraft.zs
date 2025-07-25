@@ -31,6 +31,6 @@ for i in [
     <agricraft:agri_seed>.withTag({agri_seed: "resource:redstodendron_plant"})
 
 ] as IItemStack[]{
-    i.displayName = game.localize("ia.rename.disabled");
+    i.addTooltip(game.localize("ia.rename.disabled"));
     
 }

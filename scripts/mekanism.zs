@@ -332,16 +332,33 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 		[<mekanism:controlcircuit:1>, <thermalfoundation:upgrade:1>, <mekanism:controlcircuit:1>], 
 		[<mekanism:enrichedalloy>, <contenttweaker:mekanical_core>, <mekanism:enrichedalloy>]
 	]);
+	recipes.addShaped("ia_tierinstaller02", <mekanism:tierinstaller> * 2, [
+		[<mekanism:enrichedalloy>, <mekanism:controlcircuit:1>, <mekanism:enrichedalloy>], 
+		[<netherite:netheriteingot>, <thermalfoundation:upgrade:1>, <netherite:netheriteingot>], 
+		[<mekanism:enrichedalloy>, <contenttweaker:mekanical_core>, <mekanism:enrichedalloy>]
+	]);
+
 	recipes.remove(<mekanism:tierinstaller:1>);
 	recipes.addShaped("ia_tierinstaller1", <mekanism:tierinstaller:1>, [
 		[<mekanism:reinforcedalloy>, <mekanism:controlcircuit:2>, <mekanism:reinforcedalloy>], 
 		[<mekanism:controlcircuit:2>, <thermalfoundation:upgrade:2>, <mekanism:controlcircuit:2>], 
 		[<mekanism:reinforcedalloy>, <contenttweaker:gearbox_normal>, <mekanism:reinforcedalloy>]
 	]);
+	recipes.addShaped("ia_tierinstaller12", <mekanism:tierinstaller:1> * 2, [
+		[<mekanism:reinforcedalloy>, <mekanism:controlcircuit:2>, <mekanism:reinforcedalloy>], 
+		[<netherite:netheriteingot>, <thermalfoundation:upgrade:2>, <netherite:netheriteingot>], 
+		[<mekanism:reinforcedalloy>, <contenttweaker:gearbox_normal>, <mekanism:reinforcedalloy>]
+	]);
+
 	recipes.remove(<mekanism:tierinstaller:2>);
 	recipes.addShaped("ia_tierinstaller2", <mekanism:tierinstaller:2>, [
 		[<mekanism:atomicalloy>, <mekanism:controlcircuit:3>, <mekanism:atomicalloy>], 
 		[<mekanism:controlcircuit:3>, <thermalfoundation:upgrade:3>, <mekanism:controlcircuit:3>], 
+		[<mekanism:atomicalloy>, <mekanism:electrolyticcore>, <mekanism:atomicalloy>]
+	]);
+	recipes.addShaped("ia_tierinstaller22", <mekanism:tierinstaller:2> * 2, [
+		[<mekanism:atomicalloy>, <mekanism:controlcircuit:3>, <mekanism:atomicalloy>], 
+		[<netherite:netheriteingot>, <thermalfoundation:upgrade:3>, <netherite:netheriteingot>], 
 		[<mekanism:atomicalloy>, <mekanism:electrolyticcore>, <mekanism:atomicalloy>]
 	]);
 	recipes.remove(<mekanism:tierinstaller:3>);

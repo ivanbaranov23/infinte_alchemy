@@ -2259,3 +2259,12 @@ item.contenttweaker.rune_wraith_cracked.name=Cracked Rune of Wraith
 item.contenttweaker.rune_envy_cracked.name=Cracked Rune of Envy
 item.contenttweaker.rune_pride_cracked.name=Cracked Rune of Pride
 
+fluid.rotten_slime=Rotten Slime
+fluid.slimebone_erebus=Erebian Slimy Bone Essence
+
+item.contenttweaker.basalt_dust.name=Basalt Dust Pile
+item.contenttweaker.umberstone_dust.name=Umberstone Dust Pile
+item.contenttweaker.tar_bone.name=Tar Bone
+item.contenttweaker.bug_essence.name=Wisper of Erebus Fauna
+
+tile.immersiveengineering.conveyor..name=Conveyor Belt

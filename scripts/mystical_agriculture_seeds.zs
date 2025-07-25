@@ -48,10 +48,22 @@ var seed_items as IItemStack[][IItemStack][string] = {
 };
 
 {//0
-    recipes.addShaped("ia_slimy_bone_seeds", <mysticalagriculture:slimy_bone_seeds>, [
+    recipes.addShaped("ia_slimy_bone_seeds", <mysticalagriculture:slimy_bone_seeds> * 4, [
         [<contenttweaker:lich_bone>, <mod_lavacow:silky_sludge>], 
-        [<mod_lavacow:silky_sludge>, <minecraft:wheat_seeds>]
+        [<mod_lavacow:intestine>, <minecraft:wheat_seeds>]
     ]);
+    mods.immersiveengineering.AlloySmelter.addRecipe(
+        <mysticalagriculture:slimy_bone_seeds>, 
+        <mod_lavacow:intestine> * 64,
+        <contenttweaker:quest_coin>,
+        4000
+    );
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <mysticalagriculture:slimy_bone_seeds>, 
+        <mod_lavacow:intestine> * 64,
+        <contenttweaker:quest_coin>,
+        40000
+    );
 }
 
 {//TEAlloyer

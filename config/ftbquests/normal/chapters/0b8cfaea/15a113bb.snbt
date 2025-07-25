@@ -11,7 +11,7 @@
 		uid: "e796a472",
 		type: "item",
 		items: [{
-			item: "minecraft:reeds"
+			item: "exnihilocreatio:item_seed_sugarcane"
 		}]
 	}],
 	rewards: [{

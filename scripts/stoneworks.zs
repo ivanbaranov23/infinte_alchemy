@@ -69,10 +69,59 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
     ]);
 
 
-    {//netherrack
-        recipes.addShapeless("ia_netherrack", <minecraft:netherrack> * 4, [
-            <ore:cobblestone>, <ore:cobblestone>, <minecraft:soul_sand>, <minecraft:blaze_powder>
-        ]);
+    
+
+    {//basalt
+        //backport
+        mods.chisel.Carving.addVariation("basalt", <netherblocks:basalt>);
+        mods.chisel.Carving.addVariation("basalt", <netherblocks:basalt:1>);
+
+        //dust pile
+        scripts.helper.addSimpleCrushingRecipeWByproduct(
+            <chisel:basalt2:7>, <contenttweaker:basalt_dust> * 2, <contenttweaker:basalt_dust>, 50
+        );
+        mods.prodigytech.rotarygrinder.addRecipe(<chisel:basalt2:7>, <contenttweaker:basalt_dust> * 2);
+
+        mods.thermalexpansion.Centrifuge.addRecipe([
+            <appliedenergistics2:material:5> % 10,
+            <appliedenergistics2:material:5> % 5,
+            <mekanism:dirtydust> % 5
+            //olivine
+        ], <contenttweaker:basalt_dust> * 4, null, 400);
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <thermalfoundation:material:2053>, 
+            <contenttweaker:basalt_dust>, <liquid:petrotheum> * 50, 
+            1000
+        );
+
+
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <chisel:basalt2:7>, 
+            <contenttweaker:basalt_dust>, <liquid:stone> * 576, 
+            1000
+        );
+
+        //other basalt
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <taiga:basalt_block>, 
+            <minecraft:obsidian>, 
+            <liquid:thermal> * 144, 4500
+        );
+    }
+
+    {//obsidian
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <netherblocks:crying_obsidian>, 
+            <roots:runed_obsidian>,
+            <harvestcraft:onionitem> * 6,
+            12000
+        );
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <netherblocks:crying_obsidian>, 
+            <roots:runed_obsidian>,
+            <minecraft:ghast_tear>,
+            12000
+        );
     }
 }
 
@@ -80,10 +129,29 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
     {//umber
         <ore:stone>.remove(<erebus:umberstone>);
         <ore:cobblestone>.remove(<erebus:umberstone:1>);
+
+        mods.tconstruct.Casting.addBasinRecipe(
+            <erebus:umberstone>, 
+            <minecraft:stone:1>, <liquid:beetle_juice>, 250, 
+            true, 400
+        );
         mods.thermalexpansion.Transposer.addFillRecipe(
             <erebus:umberstone>, 
             <minecraft:stone:1>, <liquid:beetle_juice> * 100, 
             1000
+        );
+
+        mods.immersiveengineering.AlloySmelter.addRecipe(
+            <erebus:umberstone>, 
+            <minecraft:stone:1> * 16,
+            <extrautils2:magicapple> * 4,
+            200
+        );
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <erebus:umberstone>, 
+            <minecraft:stone:1> * 16,
+            <extrautils2:magicapple> * 4,
+            400
         );
 
         mods.exnihilocreatio.Hammer.addRecipe(<erebus:umberstone>, <erebus:umberstone:1>, 0, 1.0, 1.0);
@@ -91,6 +159,18 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
 
         scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone>, <erebus:umberstone:1>);
         scripts.helper.addSimpleCrushingRecipe(<erebus:umberstone:1>, <erebus:umbergravel>);
+
+        recipes.addShapeless("ia_umberpebble", <contenttweaker:umberstone_dust> * 2, [<erebus:umbergravel>]);
+        recipes.addShapeless("ia_umberstone_dust", <erebus:umbergravel>, [
+            <contenttweaker:umberstone_dust>, <contenttweaker:umberstone_dust>,
+            <contenttweaker:umberstone_dust>, <contenttweaker:umberstone_dust>
+        ]);
+        mods.thermalexpansion.Centrifuge.addRecipe([
+            <thermalfoundation:material:64> % 5,
+            <contenttweaker:jade_dust> % 3,
+            <thermalfoundation:material:768> % 4,
+            <appliedenergistics2:material:2> % 3
+        ], <contenttweaker:umberstone_dust> * 4, null, 400);
 
         addCobbleRecipe(
             <erebus:umberstone> * 16, <erebus:umberstone>, 
@@ -168,9 +248,9 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
     <atum:sand>.displayName = "Limestone Sand";
     <ore:sand>.remove(<atum:sand>);
-    recipes.addShapeless("ia_atum_sand_to_sand", <minecraft:sand> * 2, [<minecraft:sand>, <atum:sand>]);
+    //recipes.addShapeless("ia_atum_sand_to_sand", <minecraft:sand> * 2, [<minecraft:sand>, <atum:sand>]);
 
-    recipes.addShaped("ia_atum_sand", <atum:sand> * 8, [
+    recipes.addShaped("ia_atum_sand", <atum:sand> * 16, [
         [<minecraft:sand>, <minecraft:sand>, <minecraft:sand>], 
         [<minecraft:sand>, <deepmoblearning:living_matter_atum>, <minecraft:sand>], 
         [<minecraft:sand>, <minecraft:sand>, <minecraft:sand>]
@@ -199,8 +279,60 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         <atum:khnumite_raw>, <gas:oxygen> * 50, 1000, 60
     );
 
+    //dust pile
+    recipes.addShapeless("ia_atum_sand_to_pile", <contenttweaker:limestone_dust> * 4, [<atum:sand>, <atum:sand>]);
+    recipes.addShapeless("ia_limestone_dust", <atum:sand>, [
+        <contenttweaker:limestone_dust>, <contenttweaker:limestone_dust>,
+        <contenttweaker:limestone_dust>, <contenttweaker:limestone_dust>
+    ]);
+    mods.thermalexpansion.Centrifuge.addRecipe([
+        <minecraft:sand>,
+        <contenttweaker:relic_nugget> % 4,
+        <thermalfoundation:material:892> % 1,
+        <appliedenergistics2:material:3> % 10
+    ], <contenttweaker:limestone_dust> * 4, null, 400);
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:relic_nugget> % 6,
+            <thermalfoundation:material:892> % 3,
+            <appliedenergistics2:material:3> % 15,
+            <mekanism:dirtydust:1> % 3
+        ], <liquid:sand> * 50, 
+        <liquid:pure_water> * 250, <contenttweaker:limestone_dust> * 2,
+        <exnihilocreatio:item_mesh:4>,
+        80, 500
+    );
+}
+
+{//nether
+    recipes.addShaped("ia_blackstone1", <netherblocks:blackstone> * 2, [
+        [<minecraft:cobblestone>, <ore:dyeBlack>],
+        [<ore:dyeBlack>, <minecraft:cobblestone>]
+    ]);
+    recipes.addShaped("ia_blackstone2", <netherblocks:blackstone> * 4, [
+        [<minecraft:cobblestone>, <minecraft:obsidian> | <appliedenergistics2:sky_stone_block>],
+        [<minecraft:obsidian> | <appliedenergistics2:sky_stone_block>, <minecraft:cobblestone>]
+    ]);
     
-    
+    {//netherrack
+        scripts.helper.addSimpleCrushingRecipe(<minecraft:netherrack>, <exnihilocreatio:block_netherrack_crushed>);
+
+        recipes.addShapeless("ia_netherrack", <minecraft:netherrack> * 2, [
+            <ore:cobblestone>, <ore:cobblestone>, <minecraft:soul_sand>, <minecraft:blaze_powder>
+        ]);
+
+        recipes.addShapeless("ia_netherrack_dust", <contenttweaker:netherrack_dust> * 2, [<exnihilocreatio:block_netherrack_crushed>]);
+        recipes.addShapeless("ia_netherrack_stone_dust", <exnihilocreatio:block_netherrack_crushed>, [
+            <contenttweaker:netherrack_dust>, <contenttweaker:netherrack_dust>,
+            <contenttweaker:netherrack_dust>, <contenttweaker:netherrack_dust>
+        ]);
+        mods.thermalexpansion.Centrifuge.addRecipe([
+            <minecraft:blaze_powder> % 10,
+            <contenttweaker:cincinnasite_dirty_dust> % 1,
+            <minecraft:redstone> % 4,
+            <thermalfoundation:material:771> % 5
+        ], <contenttweaker:netherrack_dust> * 4, null, 400);
+    }
 }
 
 {//twilight
@@ -247,6 +379,11 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
 
 {//skystone
+    scripts.helper.addSimpleCrushingRecipeWByproduct(
+        <appliedenergistics2:sky_stone_block>, <exnihilocreatio:block_skystone_crushed>, <appliedenergistics2:material:45>, 4
+    );
+    mods.prodigytech.rotarygrinder.addRecipe(<appliedenergistics2:sky_stone_block>, <exnihilocreatio:block_skystone_crushed>);
+
     scripts.content_machines.addFluidAlloyerRecipe(
         <appliedenergistics2:sky_stone_block> * 2, 
         <minecraft:netherrack> | <erebus:umberstone> | <atum:limestone>, <appliedenergistics2:material:45>, <liquid:lava> * 800, 
@@ -326,6 +463,25 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 		<appliedenergistics2:material:45>, null, 
 		2000
 	);
+}
+
+{//umberrack
+    recipes.addShaped("ia_umberrack_dust", <contenttweaker:umberrack_dust>, [
+        [<contenttweaker:umberstone_dust>, <contenttweaker:netherrack_dust>],
+        [<contenttweaker:netherrack_dust>, <contenttweaker:umberstone_dust>]
+    ]);
+    furnace.addRecipe(<contenttweaker:umberrack>, <contenttweaker:umberrack_dust>);
+
+    recipes.addShaped("ia_umberrack_bricks", <contenttweaker:umberrack_bricks>, [
+        [<contenttweaker:umberrack>, <contenttweaker:umberrack>],
+        [<contenttweaker:umberrack>, <contenttweaker:umberrack>]
+    ]);
+
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <contenttweaker:awakened_umberrack> * 4, 
+        <contenttweaker:umberrack> * 4, <taiga:duranite_ingot>, <liquid:cryotheum> * 2000, 
+        40, 1000
+    );
 }
 
 
@@ -588,13 +744,6 @@ mods.enderio.SagMill.addRecipe(
     <biomesoplenty:fleshchunk>, "MULTIPLY_OUTPUT"
 );
 
-
-//basalt
-mods.thermalexpansion.Transposer.addFillRecipe(
-    <taiga:basalt_block>, 
-    <minecraft:obsidian>, 
-    <liquid:thermal> * 144, 4500
-);
 
 
 

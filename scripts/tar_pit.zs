@@ -129,3 +129,7 @@ import mods.modularmachinery.RecipeBuilder;
 
     rec.build();
 }
+
+mods.thermalexpansion.Centrifuge.addRecipe([
+    <contenttweaker:dna_erebus> % 1
+], <contenttweaker:tar_bone> * 3, <liquid:tar> * 500, 4000);

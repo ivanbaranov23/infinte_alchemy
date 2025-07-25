@@ -1,0 +1,22 @@
+{
+	title: "Skipping Erebus",
+	x: 3.0d,
+	y: -1.0d,
+	text: [
+		"If you are scared of bugs you can:",
+		"1) make ench apples -> umberstone -> bug essence -> stuff, make mud -> balsam tree -> resin -> more stuff.",
+		"2) go to erebus, grab some umberstone, maybe mud, and dip. Then make bug essence and balsam and so on.",
+		"3) turn on peaceful, go and grab everything you need and get drops from erebus slimy bone essence"
+	],
+	dependencies: [
+		"cec674e3"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4d480768",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bug_essence"
+		}]
+	}]
+}

@@ -594,14 +594,14 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     Chrysopoeia_addRecipe("jax_ov", <taiga:jauxum_ingot> * 4, <taiga:karmesine_ingot> * 4);
 
     //transmut
-    Chrysopoeia_addRecipe("transmut1", <contenttweaker:singularity_dust>, <contenttweaker:transmut_gel> * 2);
-    Chrysopoeia_addRecipe("transmut2", <prodigytech:primordium> * 48, <contenttweaker:transmut_gel>);
-    Chrysopoeia_addRecipe("transmut3", <contenttweaker:entwood_dust> * 8, <contenttweaker:transmut_gel>);
-    Chrysopoeia_addRecipe("transmut4", <thermalfoundation:material:1028> * 8, <contenttweaker:transmut_gel>);
+    Chrysopoeia.addRecipe("transmut1", <contenttweaker:singularity_dust>, <contenttweaker:transmut_gel> * 2);
+    Chrysopoeia.addRecipe("transmut2", <prodigytech:primordium> * 48, <contenttweaker:transmut_gel>);
+    Chrysopoeia.addRecipe("transmut3", <contenttweaker:entwood_dust> * 8, <contenttweaker:transmut_gel>);
+    Chrysopoeia.addRecipe("transmut4", <thermalfoundation:material:1028> * 8, <contenttweaker:transmut_gel>);
 
     //bamboo
-    Chrysopoeia.addRecipe("bamboo1", <erebus:sapling_bamboo>, <biomesoplenty:sapling_0:2>);
-    Chrysopoeia.addRecipe("bamboo2", <biomesoplenty:sapling_0:2>, <harvestcraft:bambooshootitem>);
+    Chrysopoeia_addRecipe("bamboo1", <erebus:sapling_bamboo>, <biomesoplenty:sapling_0:2>);
+    Chrysopoeia_addRecipe("bamboo2", <biomesoplenty:sapling_0:2>, <harvestcraft:bambooshootitem>);
 
     //entwood_dust
     Chrysopoeia_addRecipe("entwood_dust", <erebus:materials:7> * 8, <contenttweaker:entwood_dust>);
@@ -617,6 +617,7 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     //glowstone
     Chrysopoeia_addRecipe("glowstone", <minecraft:gold_block>, <minecraft:glowstone>);
 
+    Chrysopoeia_addRecipe("eyes", <biomesoplenty:double_plant:2> * 2, <contenttweaker:primitive_eyes>);
 
     //Chrysopoeia_addRecipe("bloodshroom", <mod_lavacow:cordy_shroom>, <mod_lavacow:bloodtooth_shroom>);
 }

@@ -52,6 +52,19 @@ static dimensionIdentifier as string[int] = {
     66:     "erebus"
     
 } as string[int];
+//jei item
+static dim_item_hints as IItemStack[int] = {
+    -11325: <extrautils2:compressedcobblestone:7>,
+    
+    -1:     <minecraft:netherrack>,
+    0:      <minecraft:stone>,
+    1:      <minecraft:end_stone>,
+    4:      <aether_legacy:holystone>,
+    7:      <twilightforest:aurora_block>,
+    17:     <atum:limestone>,
+    
+    66:     <erebus:umberstone>
+};
 
 // List of names and color codes for the rarities used, in `rarity: [name, color]` format
 static rarityTable as string[][int] = {
@@ -79,6 +92,7 @@ excavator.addJEICatalyst(<immersiveengineering:metal_multiblock:11>);
 excavator.addJEICatalyst(<immersiveengineering:metal_multiblock:12>);
 excavator.addJEICatalyst(<immersiveengineering:metal_device1:7>);
 excavator.setJEIItemSlot(0, 0, "core_sample", SlotVisual.itemSlot());
+excavator.setJEIItemSlot(0, 1, "dim_item", SlotVisual.itemSlot());
 excavator.setJEIDecoration(1, 0, "indicator_arrow", SlotVisual.arrowRight());
 addSlots(excavator, "item_output", [
            [3,0], [4,0], [5,0], [6,0], [7,0], [8,0], [9,0],
@@ -104,9 +118,11 @@ function addExcavator(name as string, rarity as int, ores as string[], chances a
 
     var locations = "Generates in the ";
     var dimNames as string[] = [] as string[];
+    var dim_items as IIngredient = dim_item_hints[dims[0]];
 
     for i, dim in dims {
         dimNames += dimensionIdentifier[dim];
+        dim_items = dim_items | dim_item_hints[dim];
     }
 
     // A basic enumeration function, includes oxford comma
@@ -136,6 +152,7 @@ function addExcavator(name as string, rarity as int, ores as string[], chances a
         },
         mineral: name,
     }));
+    recipe.requireItem("dim_item", dim_items);
 
     <assembly:ie_excavator>.addJEIRecipe(recipe);
 }

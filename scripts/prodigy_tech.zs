@@ -561,6 +561,10 @@ solderer.removeAll();
 	rotarygrinder.addRecipe(<thermalfoundation:material:162>, <thermalfoundation:material:98>); //invar
 	rotarygrinder.addRecipe(<contenttweaker:nial_ingot>, <contenttweaker:nial_dust>);			//nial
 
+	rotarygrinder.addRecipe(<tconstruct:ingots>, <exnihilocreatio:item_ore_cobalt:2>);	 		//cobalt
+	rotarygrinder.addRecipe(<tconstruct:ingots:1>, <exnihilocreatio:item_ore_ardite:2>);		//ardite
+	rotarygrinder.addRecipe(<tconstruct:ingots:2>, <contenttweaker:manyullyn_dust>);			//manyullyn
+
 	rotarygrinder.addRecipe(<thermalfoundation:material:161>, <thermalfoundation:material:97>); //electrum
 	rotarygrinder.addRecipe(<contenttweaker:lesmium_ingot>, <contenttweaker:lesmium_dust>);     //lesmium
 	rotarygrinder.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>); //steel

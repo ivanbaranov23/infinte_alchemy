@@ -374,7 +374,30 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
 
 
 
+{//illager
+    addLoot("minecraft:vindication_illager", "minecraft:entities/vindication_illager", [<contenttweaker:illagerite>], [[30, 10, 1]]);
+    addLoot("minecraft:evocation_illager", "minecraft:entities/evocation_illager", [<contenttweaker:illagerite>], [[50, 20, 1]]);
 
+
+    addLoot("illagers_plus:archer", "illagers_plus:entity/entity_archer", [<contenttweaker:illagerite>], [[20, 10, 1]]);
+    addLoot("illagers_plus:furantur", "illagers_plus:entity/entity_furantur", [<contenttweaker:illagerite>], [[20, 10, 1]]);
+    addLoot("illagers_plus:enchanter", "illagers_plus:entity/entity_enchanter", [<contenttweaker:illagerite>], [[20, 10, 1]]);
+    addLoot("illagers_plus:illager_king", "illagers_plus:entity/entity_illager_king", [<contenttweaker:illagerite> * 3], [[70, 30, 1]]);
+
+/* 
+illagers_plus:illager_king",
+      "illagers_plus:necromancer",
+      "illagers_plus:furantur",
+      "illagers_plus:archer",
+      "illagers_plus:enchanter",
+      "illagers_plus:hoarder",
+      "minecraft:vindication_illager",
+      "minecraft:evocation_illager",
+      "primitivemobs:trollager",
+      "minecraft:illusion_illager
+*/
+
+}
 
 
 
@@ -427,31 +450,100 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:slimebone> * 2000, <liquid:org
     ], 2000
 );
 */
+
+
+//ow
 mods.tconstruct.Melting.addRecipe(<liquid:slimebone> * 200, <mysticalagriculture:slimy_bone_essence>, 1000);
 mods.thermalexpansion.Crucible.addRecipe(<liquid:slimebone> * 250, <mysticalagriculture:slimy_bone_essence>, 3000);
 
-var chvgjhb as float[IItemStack] = {
+var ow_mob_drops as float[IItemStack] = {
+    //zombie
     <minecraft:skull:2>: 0.01,
     <minecraft:rotten_flesh>: 0.1,
     <xreliquary:mob_ingredient:6>: 0.03,
 
+    //skeleton
     <minecraft:skull>: 0.01,
     <minecraft:bone>: 0.1,
     <xreliquary:mob_ingredient>: 0.03,
     
+    //creeper
     <minecraft:skull:4>: 0.01,
     <minecraft:gunpowder>: 0.1,
-    <xreliquary:mob_ingredient:3>: 0.03
-};
+    <xreliquary:mob_ingredient:3>: 0.03,
 
+    //spider
+    <minecraft:spider_eye>: 0.1,
+    <minecraft:string>: 0.15,
+    <xreliquary:mob_ingredient:2>: 0.03,
+
+    //enderman
+    <enderio:block_enderman_skull>: 0.005,
+    <minecraft:ender_pearl>: 0.05,
+    <xreliquary:mob_ingredient:11>: 0.01,
+
+
+    //guardian
+    <minecraft:prismarine_shard>: 0.01,
+    <minecraft:prismarine_crystals>: 0.01,
+    <xreliquary:mob_ingredient:16>: 0.003,
+    //slime
+    <minecraft:slime_ball>: 0.03,
+    <xreliquary:mob_ingredient:4>: 0.01,
+    //witch
+    <xreliquary:witch_hat>: 0.001,
+    <contenttweaker:illagerite>: 0.0001
+
+};
 mods.immersivepetroleum.Distillation.addRecipe(
     [<liquid:xpjuice> * 50, <liquid:blood> * 25, <liquid:sludge> * 125], 
-    chvgjhb.keys, 
+    ow_mob_drops.keys, 
     <liquid:slimebone> * 200, 1000, 20, 
-    chvgjhb.values
+    ow_mob_drops.values
 );
 
+//erebus
+scripts.content_machines.addFluidMixerRecipe(
+    <liquid:slimebone_erebus> * 1000, 
+    <liquid:slimebone> * 500, <liquid:bugs> * 200, <erebus:materials:55>, 
+    80, 128
+);
 
+var erebus_mob_drops as float[IItemStack] = {
+    <erebus:materials>: 0.05,
+    <erebus:materials:21>: 0.03,
+    <erebus:materials:4>: 0.01,
+    <erebus:materials:6>: 0.01,
+    <erebus:materials:9>: 0.001,
+
+    <erebus:life_blood>: 0.005,
+    <erebus:materials:18>: 0.005,
+    <erebus:materials:28>: 0.005,
+    <erebus:materials:57>: 0.005,
+    <erebus:materials:37>: 0.005,
+    <erebus:materials:12>: 0.005,
+
+    <erebus:materials:23>: 0.004,
+    <erebus:materials:8>: 0.004,
+    <erebus:materials:13>: 0.004,
+    
+    <erebus:materials:23>: 0.003,
+    <erebus:materials:60>: 0.003,
+    <erebus:materials:10>: 0.003,
+    <erebus:materials:17>: 0.003,
+    <erebus:erebus_food:2>: 0.003,
+    <erebus:erebus_food:4>: 0.003,
+
+    <erebus:erebus_food:12>: 0.001,
+    <erebus:materials:35>: 0.001,
+    <erebus:materials:36>: 0.001
+};
+mods.immersivepetroleum.Distillation.addRecipe(
+    [<liquid:xpjuice> * 50, <liquid:blood> * 25, <liquid:beetle_juice> * 25], 
+    erebus_mob_drops.keys, 
+    <liquid:slimebone_erebus> * 75, 1000, 20, 
+    erebus_mob_drops.values
+);
 
 
 

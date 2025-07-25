@@ -206,6 +206,18 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:flolit_sheet> * 4, [
         1500
     );
     furnace.addRecipe(<thermalfoundation:material:192> * 6, <contenttweaker:carrot_copper>);
+    mods.immersiveengineering.AlloySmelter.addRecipe(
+        <exnihilocreatio:item_ore_copper:1>, 
+        <contenttweaker:carrot_copper>,
+        <contenttweaker:basalt_dust>,
+        200
+    );
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <exnihilocreatio:item_ore_copper:1>, 
+        <contenttweaker:carrot_copper>,
+        <contenttweaker:basalt_dust>,
+        400
+    );
 }
 {//tin
     recipes.addShapeless("ia_tin_very_normal_and_logical_recipe1", <contenttweaker:tinley> * 4, [

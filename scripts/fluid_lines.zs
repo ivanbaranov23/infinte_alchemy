@@ -138,7 +138,7 @@ Distillation.addRecipe(
 		[<liquid:obsidian> * 60, <liquid:iron> * 12, <liquid:gold> * 4, <liquid:lava_residue> * 2], 
 		[<chisel:basalt2:7>, <deepmoblearning:soot_covered_redstone>], 
 		<liquid:lava> * 100, 1200, 50, 
-		[0.07, 0.03]
+		[0.25, 0.13]
 	);
 
 	//nitronite
@@ -326,18 +326,67 @@ Refinery.addRecipe(<liquid:pure_water> * 3000, <mekanism:dirtydust:5> % 1, <liqu
 		80, 1000
 	);
 	{
-		//var a as IItemStack[];
-		var b as float[] = [];
-		for f in <ore:listAllfishfresh>.items{
-			//a += f;
-			b += 0.1;
-		}
 
 		Distillation.addRecipe(
 			[<liquid:methane> * 10, <liquid:seaweed_rich_water> * 15], 
-			<ore:listAllfishfresh>.items, 
+			[
+				<minecraft:fish>,
+				<minecraft:fish:1>,
+				<minecraft:fish:2>,
+				<minecraft:fish:3>,
+
+				<mod_lavacow:piranha>,
+				<mod_lavacow:cheirolepis>,
+				<mod_lavacow:zombiepiranha_item>,
+				<mysticalworld:raw_squid>,
+
+				<harvestcraft:calamarirawitem>,
+				<harvestcraft:musselrawitem>,
+				<harvestcraft:oysterrawitem>,
+				<harvestcraft:turtlerawitem>,
+				<harvestcraft:snailrawitem>,
+
+				<harvestcraft:crayfishrawitem>,
+				<harvestcraft:scalloprawitem>,
+				<harvestcraft:jellyfishrawitem>,
+				<harvestcraft:octopusrawitem>,
+				<harvestcraft:frograwitem>,
+				
+				<harvestcraft:eelrawitem>,
+				<harvestcraft:crabrawitem>,
+				<harvestcraft:clamrawitem>,
+				<harvestcraft:anchovyrawitem>,
+				<harvestcraft:bassrawitem>,
+				
+				<harvestcraft:carprawitem>,
+				<harvestcraft:catfishrawitem>,
+				<harvestcraft:charrrawitem>,
+				<harvestcraft:grouperrawitem>,
+				<harvestcraft:herringrawitem>,
+				
+				<harvestcraft:mudfishrawitem>,
+				<harvestcraft:perchrawitem>,
+				<harvestcraft:snapperrawitem>,
+				<harvestcraft:tilapiarawitem>,
+				<harvestcraft:troutrawitem>,
+				
+				<harvestcraft:tunarawitem>,
+				<harvestcraft:walleyerawitem>,
+				<harvestcraft:greenheartfishitem>,
+				<harvestcraft:sardinerawitem>
+			], 
 			<liquid:ocean_water> * 125, 1200, 30, 
-			b
+			[
+				0.1, 0.1, 0.1, 0.1,
+				0.1, 0.1, 0.1, 0.1,
+
+				0.1, 0.1, 0.1, 0.1, 0.1,
+				0.1, 0.1, 0.1, 0.1, 0.1,
+				0.1, 0.1, 0.1, 0.1, 0.1,
+				0.1, 0.1, 0.1, 0.1, 0.1,
+				0.1, 0.1, 0.1, 0.1, 0.1,
+				0.1, 0.1, 0.1, 0.1
+			]
 		);
 	}
 	

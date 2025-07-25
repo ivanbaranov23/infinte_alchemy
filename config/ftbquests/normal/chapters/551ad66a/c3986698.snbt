@@ -1,0 +1,19 @@
+{
+	title: "Peaceful route",
+	x: 4.0d,
+	y: 5.0d,
+	text: [
+		"In case you want to go peaceful or you want to save on lag or you want to skip a dimension (like erebus)."
+	],
+	dependencies: [
+		"5ebea001"
+	],
+	optional: true,
+	tasks: [{
+		uid: "86c8127c",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:slimy_bone_seeds"
+		}]
+	}]
+}

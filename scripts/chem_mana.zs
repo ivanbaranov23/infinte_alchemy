@@ -159,7 +159,7 @@ import mods.modularmachinery.RecipeBuilder;
     );
 
     {
-        var rec = RecipeBuilder.newBuilder("ultimate", "rune_cracker", 20 * 1, 1000);
+        var rec = RecipeBuilder.newBuilder("ultimate", "rune_cracker", 20 * 1, -1000);
 
         rec.addEnergyPerTickInput(2048 * 10000);
 

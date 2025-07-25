@@ -46,7 +46,7 @@ addWormRecipe(16, [<actuallyadditions:item_worm> * 16], [<actuallyadditions:item
 addWormRecipe(8, [<actuallyadditions:item_worm> * 8], [<actuallyadditions:item_worm>, <atum:fertile_soil_pile> * 2], 10);
 addWormRecipe(24, [<contenttweaker:wormweave> * 16], [
     <actuallyadditions:item_worm> * 32, <minecraft:string> * 64, 
-    <contenttweaker:titanium_dust> * 3, <mekanism:shard:3> * 5, <industrialforegoing:plastic> * 8, <contenttweaker:dry_fibre> * 8], 10
+    <contenttweaker:titanium_dust> * 3, <mekanism:shard:3> * 5, <industrialforegoing:plastic> * 4, <contenttweaker:dry_fibre> * 8], 10
 );
 
 

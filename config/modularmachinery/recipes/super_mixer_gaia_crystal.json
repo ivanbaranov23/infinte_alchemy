@@ -6,7 +6,7 @@
         {
             "type": "energy",
             "io-type": "input",
-            "energyPerTick": 100000
+            "energyPerTick": 102400000
         },
         {
             "type": "will",
@@ -32,7 +32,7 @@
             "type": "item",
             "io-type": "output",
             "item": "contenttweaker:gaia_crystal@0",
-            "amount": 4
+            "amount": 8
         },
 
         {

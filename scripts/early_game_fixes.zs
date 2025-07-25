@@ -109,22 +109,10 @@ mods.exnihilocreatio.Hammer.addRecipe(
 );
 
 
-scripts.jei.addJEIhint(
-    [], [<liquid:lava>, <liquid:blueslime>],
-    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-    [<contenttweaker:burned_slimedirt>]
-);
-
-scripts.jei.addJEIhint(
-    [], [<liquid:witchwater>, <liquid:blueslime>],
-    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-    [<tconstruct:slime_dirt:1>]
-);
 
 
 
-
-Mortar.addRecipe("ferramic_al", <exnihilocreatio:item_ore_aluminum> * 10, [
+Mortar.addRecipe("ferramic_al", <exnihilocreatio:item_ore_aluminum> * 12, [
     <contenttweaker:ferramic_gravel>,
     <contenttweaker:ferramic_gravel>,
     <contenttweaker:ferramic_gravel>,
@@ -150,7 +138,7 @@ recipes.addShaped("ia_stone_gear", <thermalfoundation:material:23>, [
 
 
 
-
+//why here?
 
 //ex nihilo
 recipes.remove(<exnihilocreatio:block_axle_stone>);

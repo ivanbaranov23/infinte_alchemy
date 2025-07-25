@@ -1,66 +1,73 @@
 import mods.enderio.SagMill;
 
-{//iron
-    mods.tconstruct.Melting.addRecipe(<liquid:iron> * 288, <minecraft:iron_ore>, 700);
+{//t1
+    {//iron
+        mods.tconstruct.Melting.addRecipe(<liquid:iron> * 288, <minecraft:iron_ore>, 700);
 
-    mods.botania.PureDaisy.addRecipe(<contenttweaker:poor_iron_ore>, <minecraft:iron_ore>);
-}
-{//copper
-    mods.tconstruct.Melting.addRecipe(<liquid:copper> * 288, <thermalfoundation:ore>, 700);
+        mods.botania.PureDaisy.addRecipe(<contenttweaker:poor_iron_ore>, <minecraft:iron_ore>);
+    }
+    {//copper
+        mods.tconstruct.Melting.addRecipe(<liquid:copper> * 288, <thermalfoundation:ore>, 700);
 
-    recipes.addShapeless("copper_conv", <thermalfoundation:ore>, [
-        <immersiveengineering:ore> | <mekanism:oreblock:1>
-    ]);
-}
-{//tin
-    mods.tconstruct.Melting.addRecipe(<liquid:tin> * 288, <thermalfoundation:ore:1>, 700);
-}
-{//nickel
-    mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 288, <thermalfoundation:ore:5>, 700);
-}
-{//aluminum
-    mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <thermalfoundation:ore:4>, 700);
+        recipes.addShapeless("copper_conv", <thermalfoundation:ore>, [
+            <immersiveengineering:ore> | <mekanism:oreblock:1>
+        ]);
+    }
+    {//tin
+        mods.tconstruct.Melting.addRecipe(<liquid:tin> * 288, <thermalfoundation:ore:1>, 700);
+    }
+    {//nickel
+        mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 288, <thermalfoundation:ore:5>, 700);
+    }
+    {//aluminum
+        mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <thermalfoundation:ore:4>, 700);
 
-    furnace.remove(<erebus:materials:42>);
-    furnace.addRecipe(<thermalfoundation:material:196> * 2, <contenttweaker:bauxite_dust>);
+        furnace.remove(<erebus:materials:42>);
+        furnace.addRecipe(<thermalfoundation:material:196> * 2, <contenttweaker:bauxite_dust>);
+    }
+    {//zinc
+        mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 288, <contenttweaker:zinc_ore>, 700);
+
+        <ore:dustZinc>.remove(<exnihilocreatio:item_ore_zinc:2>);
+        <ore:dustZinc>.add(<contenttweaker:zinc_dust>);
+        <ore:ingotZinc>.remove(<exnihilocreatio:item_ore_zinc:3>);
+        <ore:ingotZinc>.add(<contenttweaker:zinc_ingot>);
+
+        furnace.remove(<exnihilocreatio:item_ore_zinc:3>);
+        recipes.remove(<exnihilocreatio:item_ore_zinc:3>);
+        recipes.remove(<exnihilocreatio:item_ore_zinc:2>);
+    }
+
+    {//ardite
+        scripts.content_machines.addBioAssemblerRecipe(
+            [], <liquid:ardite> * 1500, 
+            [
+                <thermalfoundation:material:128> * 8,
+                <minecraft:gold_ingot> * 8,
+                <taiga:valyrium_ingot>,
+                <deepmoblearning:living_matter_hellish> * 8,
+                <deepmoblearning:soot_covered_redstone> * 5,
+                <enderio:block_holy_fog>
+            ], [
+                <liquid:fiery_essence> * 1000,
+                <liquid:high_heat_lava> * 50
+            ], <contenttweaker:research_chemistry3>,
+            40, 1000
+        );
+    }
 }
-{//zinc
-    mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 288, <contenttweaker:zinc_ore>, 700);
-
-    <ore:dustZinc>.remove(<exnihilocreatio:item_ore_zinc:2>);
-    <ore:dustZinc>.add(<contenttweaker:zinc_dust>);
-    <ore:ingotZinc>.remove(<exnihilocreatio:item_ore_zinc:3>);
-    <ore:ingotZinc>.add(<contenttweaker:zinc_ingot>);
-
-    furnace.remove(<exnihilocreatio:item_ore_zinc:3>);
-    recipes.remove(<exnihilocreatio:item_ore_zinc:3>);
-    recipes.remove(<exnihilocreatio:item_ore_zinc:2>);
-}
-
-{//ardite
-    scripts.content_machines.addBioAssemblerRecipe(
-        [], <liquid:ardite> * 1500, 
-        [
-            <thermalfoundation:material:128> * 8,
-            <minecraft:gold_ingot> * 8,
-            <taiga:valyrium_ingot>,
-            <deepmoblearning:living_matter_hellish> * 8,
-            <deepmoblearning:soot_covered_redstone> * 5,
-            <enderio:block_holy_fog>
-        ], [
-            <liquid:fiery_essence> * 1000,
-            <liquid:high_heat_lava> * 50
-        ], <contenttweaker:research_chemistry3>,
-        40, 1000
-    );
-}
-
 {//silver
     recipes.addShapeless("silver_conv", <thermalfoundation:ore:2>, [
         <mysticalworld:silver_ore> | <immersiveengineering:ore:3>
     ]);
 }
 
+{//netherite
+    <ore:oreNetherite>.remove(<netherite:ancientdebris>);
+    <ore:dustNetherite>.add(<netherite:netheritescrap>);
+    furnace.remove(<netherite:netheritescrap>);
+    furnace.remove(<netherite:netheriteingot>);
+}
 
 {//atum
     SagMill.addRecipe([<thermalfoundation:material> * 2, <atum:loot_ruby_broach>, <atum:loot_sapphire_broach>], [1.0, 0.1, 0.1], <atum:iron_ore>, "MULTIPLY_OUTPUT");
@@ -97,7 +104,7 @@ import mods.enderio.SagMill;
         [<contenttweaker:titanium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
         [<liquid:pyrotheum> * 2000], 20 * 20, 256
     );
-    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:titanium_ingot>], [<contenttweaker:titanium_dust>], 1024, 1);
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:titanium_ingot>], [<contenttweaker:titanium_dust>], 10240, 1);
 
     mods.jei.JEI.addItem(<densemetals:dense_rutile_ore>);
 }
@@ -121,7 +128,7 @@ import mods.enderio.SagMill;
         [<thermalfoundation:material:72> * 3, <prodigytech:inferno_crystal> * 4], 
         [<liquid:pyrotheum> * 2000], 20 * 20, 256
     );
-    scripts.ore_processing.addTingalumOvenRecipe([<thermalfoundation:material:136>], [<thermalfoundation:material:72>], 1024, 1);
+    scripts.ore_processing.addTingalumOvenRecipe([<thermalfoundation:material:136>], [<thermalfoundation:material:72>], 10240, 1);
 }
 {//chrome
     <ore:ingotChrome>.add(<contenttweaker:chrome_ingot>);
@@ -132,7 +139,7 @@ import mods.enderio.SagMill;
         [<contenttweaker:chrome_dust> * 3, <prodigytech:inferno_crystal> * 4], 
         [<liquid:pyrotheum> * 2000], 20 * 20, 256
     );
-    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:chrome_ingot>], [<contenttweaker:chrome_dust>], 4096, 1);
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:chrome_ingot>], [<contenttweaker:chrome_dust>], 40960, 1);
 
     <densemetals:dense_chromium_ore>.displayName = "Dense Chrome Ore";
     mods.jei.JEI.addItem(<densemetals:dense_chromium_ore>);
@@ -143,12 +150,12 @@ import mods.enderio.SagMill;
     <ore:dustNeodymium>.add(<contenttweaker:neodymium_dust>);
 
 
-    scripts.helper.addHighOvenSmelting(
+    /*scripts.helper.addHighOvenSmelting(
         [<contenttweaker:neodymium_ingot> * 2], 
         [<contenttweaker:neodymium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
         [<liquid:pyrotheum> * 2000], 20 * 20, 256
-    );
-    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:neodymium_ingot>], [<contenttweaker:neodymium_dust>], 1024, 1);
+    );*/
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:neodymium_ingot>], [<contenttweaker:neodymium_dust>], 40960, 1, 990);
 
 }
 
@@ -215,7 +222,7 @@ import mods.enderio.SagMill;
     recipes.remove(<draconicevolution:draconium_dust>);
     
     scripts.helper.addHighOvenSmelting(
-        [<draconicevolution:draconium_ingot> * 2], 
+        [<draconicevolution:draconium_ingot>], 
         [<draconicevolution:draconium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
         [<liquid:pyrotheum> * 3000], 20 * 20, 1024
     );
@@ -225,13 +232,13 @@ import mods.enderio.SagMill;
         4096, 100
     );*/
 
-    scripts.ore_processing.addTingalumOvenRecipe([<draconicevolution:draconium_ingot>], [<draconicevolution:draconium_dust>], 4096, 1);
+    scripts.ore_processing.addTingalumOvenRecipe([<draconicevolution:draconium_ingot>], [<draconicevolution:draconium_dust>], 40960, 1, 990);
 }
 
 {//orichalcum
     <ore:dustOrichalcum>.add(<contenttweaker:orichalcum_dust>);
 
-    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:orichalcum_ingot>], [<contenttweaker:orichalcum_dust>], 100 * 1000, 5);
+    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:orichalcum_ingot>], [<contenttweaker:orichalcum_dust>], 100 * 1000, 5, 1500);
 }
 
 //gravitite
@@ -239,7 +246,7 @@ mods.tconstruct.Melting.removeRecipe(<liquid:gravitite>, <netherendingores:ore_e
 
 //death metal
 <ore:dustDeathMetal>.add(<contenttweaker:death_metal_dust>);
-scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:death_metal_ingot>], [<contenttweaker:death_metal_dust>], 10 * 1000 * 1000, 10);
+scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:death_metal_ingot>], [<contenttweaker:death_metal_dust>], 10 * 1000 * 1000, 10, 3000);
 
 
 {//bedrockium

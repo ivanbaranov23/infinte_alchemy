@@ -79,6 +79,12 @@ recipes.addShaped("ia_portal_activator", <erebus:portal_activator>, [
 	[<ore:gearEnchantedMetal>, <enderio:item_material:48>, null]
 ]);
 
+
+
+{//peaceful
+
+}
+
 {//bee keeping
   recipes.addShaped("ia_beehive", <harvestcraft:beehive>, [
     [<erebus:materials>, <erebus:materials:19>, <erebus:materials>], 
@@ -139,4 +145,16 @@ recipes.addShaped("ia_jade_bush3", <erebus:jade_berry_bush> * 5, [
 ]);
 
 //amber
-mods.thermalexpansion.Transposer.addFillRecipe(<erebus:amber>, <thermalfoundation:material:832>, <liquid:resin> * 1000, 3000);
+mods.tconstruct.Casting.addBasinRecipe(
+	<erebus:amber>, 
+	<erebus:materials:40>, <liquid:resin>, 2000, 
+  true, 400
+);
+mods.thermalexpansion.Transposer.addFillRecipe(<erebus:amber>, <erebus:materials:40>, <liquid:resin> * 2000, 6000);
+
+mods.tconstruct.Casting.addBasinRecipe(
+	<erebus:amber>, 
+	<thermalfoundation:material:832>, <liquid:resin>, 1000, 
+  true, 200
+);
+mods.thermalexpansion.Transposer.addFillRecipe(<erebus:amber>, <thermalfoundation:material:832>, <liquid:resin> * 500, 3000);

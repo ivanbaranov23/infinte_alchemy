@@ -10,6 +10,12 @@ import crafttweaker.util.Math;
 
 import mods.modularmachinery.RecipeBuilder;
 
+recipes.addShaped("ia_bugs", <forge:bucketfilled>.withTag({FluidName: "bugs", Amount: 1000}), [
+    [<contenttweaker:bug_essence>, <contenttweaker:bug_essence>, <contenttweaker:bug_essence>],
+    [<contenttweaker:bug_essence>, <minecraft:bucket>, <contenttweaker:bug_essence>],
+    [<contenttweaker:bug_essence>, <contenttweaker:bug_essence>, <contenttweaker:bug_essence>]
+]);
+
 //exits
 recipes.addShaped("ia_bug_hill1", <contenttweaker:bug_hill_exit1> * 8, [
     [<tconstruct:deco_ground>, <tconstruct:deco_ground>, <tconstruct:deco_ground>],

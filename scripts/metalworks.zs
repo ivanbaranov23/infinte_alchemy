@@ -493,6 +493,15 @@ static all_metals as IItemStack[string][string] = {
         gear: <contenttweaker:flower_steel_gear>,
         block: <contenttweaker:flower_steel_block>
     },
+    netherite: {
+        ingot: <netherite:netheriteingot>,
+        block: <netherite:netheriteblock>
+    },
+    netherite_scrap: {
+        ingot: <netherite:netheritescrap>,
+        dust: <netherite:netheritescrap>,
+        block: <netherite:netheritescrap> * 9
+    },
 
     // tier 3 metals
     platinum: {
@@ -1857,6 +1866,13 @@ static all_metals as IItemStack[string][string] = {
         block: <extrautils2:ingredients> * 9
     },
 
+    //bop
+    ruby: {
+        ingot: <biomesoplenty:gem:1>,
+        dust: <biomesoplenty:gem:1>,
+        block: <biomesoplenty:gem_block:1>
+    },
+
     // quartz
     black_quartz: {
         ingot: <actuallyadditions:item_misc:5>,
@@ -2406,6 +2422,16 @@ function addBall(ingot as IItemStack, ball as IItemStack){
         [ingot, ingot, ingot],
         [<contenttweaker:porous_dust>, ingot, <contenttweaker:porous_dust>]
     ]);
+    //pd -> 6, mat -> 4.8
+    scripts.content_machines.addBioAssemblerRecipe(
+        [
+            ball * 8
+        ], null, 
+        [
+            <contenttweaker:porous_dust>, ingot
+        ], [], <contenttweaker:research_ball>,
+        20, 1000
+    );
 }
 function addElement(nam as string){
     recipes.addShapeless("ia_el_red" ~ nam, all_metals[nam].element * 4, 
@@ -2432,10 +2458,10 @@ function addCasting(metal as IItemStack[string], molten as ILiquidStack){
     Casting.addTableRecipe(metal.ingot, <tconstruct:cast_custom>, molten, 144, false);
     Casting.addBasinRecipe(metal.block, null, molten, 1296);
 
-    Melting.addRecipe(molten * 144, metal.ingot, 700);
-    if (metal.keys has "dust") {Melting.addRecipe(molten * 144, metal.dust, 500);}
+    Melting.addRecipe(molten * 144, metal.ingot, 1000);
+    if (metal.keys has "dust") {Melting.addRecipe(molten * 144, metal.dust, 700);}
     
-    Melting.addRecipe(molten * 1296, metal.block, 1000);
+    Melting.addRecipe(molten * 1296, metal.block, 1300);
 
     mods.thermalexpansion.Crucible.addRecipe(molten * 144, metal.ingot, 4000);
     if (metal.keys has "dust") {mods.thermalexpansion.Crucible.addRecipe(molten * 144, metal.dust, 4000);}
@@ -2817,7 +2843,15 @@ add3alloy(1, "flower_steel", 4,
     "plant_sample", 8,
     "petals", 8
 );
-
+{//netherite
+    recipes.remove(<netherite:netheriteingot>);
+    recipes.addShapeless("ia_netherite_uncompress", <netherite:netheriteingot> * 9, [<netherite:netheriteblock>]);
+    add3alloy(2, "netherite", 1, 
+        "netherite_scrap", 4,
+        "cincinnasite", 6,
+        "ruby", 3
+    );
+}
 {//extra ut
     mods.mekanism.compressor.addRecipe(
         <minecraft:dye:4>, 
@@ -2957,23 +2991,11 @@ add3alloy(1, "flower_steel", 4,
     }
 
     {//logic steels
-        /*add2alloy(1, "fluix_steel", 4,
+        add2alloy(1, "fluix_steel", 4,
             "cincinnasite", 2,
             "fluix", 3
-        );*/
-        mods.thermalexpansion.InductionSmelter.addRecipe(
-            all_metals.fluix_steel.ingot * 4, 
-            all_metals.cincinnasite.ingot * 2, all_metals.fluix.ingot * 3,
-		    2500
         );
-        mods.enderio.AlloySmelter.addRecipe(all_metals.fluix_steel.ingot * 6, 
-            [
-                all_metals.cincinnasite.ingot * 2,
-                all_metals.fluix.ingot * 3,
-                all_metals.soy_steel.ingot
-            ]
-        );
-
+        
 
 
         add2alloy(1, "menril_steel_base", 2,

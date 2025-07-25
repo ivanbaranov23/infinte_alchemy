@@ -105,6 +105,13 @@ function addLava(name as string){
     var firebrick_block = VanillaFactory.createBlock("firebrick_block", <blockmaterial:rock>);
     firebrick_block.register();
 
+    VanillaFactory.createItem("basalt_dust").register();
+    VanillaFactory.createItem("umberstone_dust").register();
+    VanillaFactory.createItem("limestone_dust").register();
+    VanillaFactory.createItem("netherrack_dust").register();
+    VanillaFactory.createItem("holystone_dust").register();
+    VanillaFactory.createItem("endstone_dust").register();
+
 
     VanillaFactory.createItem("rich_clay").register();
     VanillaFactory.createItem("kaolin_clay").register();
@@ -114,6 +121,9 @@ function addLava(name as string){
     kaolin_clay_block.register();
 
     VanillaFactory.createItem("dolomite").register();
+    
+    VanillaFactory.createBlock("karmesine_tile", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("karmesine_tile2", <blockmaterial:rock>).register();
 
     VanillaFactory.createBlock("lapis_stone", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("lapis_cobblestone", <blockmaterial:rock>).register();
@@ -125,6 +135,11 @@ function addLava(name as string){
 
     VanillaFactory.createItem("industrial_clay").register();
     VanillaFactory.createItem("elastic_clay").register();
+
+    VanillaFactory.createItem("umberrack_dust").register();
+    VanillaFactory.createItem("umberrack").register();
+    VanillaFactory.createBlock("umberrack_bricks", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("awakened_umberrack").register();
 }
 function addAtomicResource(name as string){
         VanillaFactory.createItem(name).register();
@@ -1208,6 +1223,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     stomper.setTranslucent(true);
     stomper.setFullBlock(false);
     stomper.register();
+    VanillaFactory.createItem("signal_sandworm").register();
 
     {//satellites
         
@@ -1730,6 +1746,9 @@ addWater("radioactive_waste");
     registerMoltenMetal("tar", Color.fromHex("16131a"));
     registerMoltenMetal("enriched_tar", Color.fromHex("0c0a0f"));
     VanillaFactory.createItem("tar_bone").register();
+    VanillaFactory.createItem("dna_erebus").register();
+    VanillaFactory.createItem("egg_erebus").register();
+
     VanillaFactory.createItem("zeolite").register();
 
     VanillaFactory.createFluid("enriched_diesel1", Color.fromHex("50192c")).register();
@@ -2223,6 +2242,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     addWater("claymud");
     addWater("chocolate_mud");
+    addWater("slimebone_erebus");
+
+    VanillaFactory.createItem("bug_essence").register();
 }
 {//extra u
     var flolit_ore = VanillaFactory.createBlock("flolit_ore", <blockmaterial:rock>);

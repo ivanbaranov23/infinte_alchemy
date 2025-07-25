@@ -1,0 +1,25 @@
+{
+	x: 8.0d,
+	y: -4.0d,
+	text: [
+		"...turns out peridotite is a real rock...",
+		"",
+		"this is a rock ingot"
+	],
+	dependencies: [
+		"9c0f5db1"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b2793f6a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:peridotite_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "66bd2bf4",
+		type: "item",
+		item: "contenttweaker:peridotite_block"
+	}]
+}

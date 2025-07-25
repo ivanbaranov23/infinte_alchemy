@@ -20,3 +20,5 @@ mods.chisel.Carving.addGroup("bone");
 mods.chisel.Carving.addVariation("bone", <minecraft:bone_block>);
 mods.chisel.Carving.addVariation("bone", <betternether:bone_block>);
 mods.chisel.Carving.addVariation("bone", <betternether:bone_tile>);
+
+

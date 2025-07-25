@@ -95,7 +95,7 @@ function addTingalumOvenRecipe(out as IItemStack[], inp as IItemStack[], energy 
         rec.addItemInput(i);
     }
     
-    rec.addHotAirInput(temp, temp, 1000000);
+    rec.addHotAirInput(temp, temp, 1000000000);
 
     rec.build();
 }
@@ -3445,6 +3445,18 @@ val ores as IItemStack[string][string][string] = {
 
             drilling: <contenttweaker:caelumite_dust> * 3
         }
+    },
+    netherite: {
+        debris: {
+            item: <netherite:ancientdebris>,
+
+            crushing_no_balls: <netherite:netheritescrap>,
+            balling: <netherite:netheritescrap>,
+            crushingByprod1: <netherite:netheritescrap>,
+            crushingByprod2: <netherite:netheritescrap>,
+
+            drilling: <netherite:netheritescrap> * 2
+        }
     }
 };
 val to_clean as IItemStack[][string] = {
@@ -3469,6 +3481,8 @@ val to_clean as IItemStack[][string] = {
         <draconicevolution:draconium_dust>,
         <contenttweaker:neodymium_dust>,
         <contenttweaker:zirconium_dust>,
+
+        <netherite:netheritescrap>,
 
         <moretcon:dusthallowsite>
     ],
@@ -3699,6 +3713,7 @@ val drilling_fluid_amount as int[string] = {
     life_essence: 1000,
     terrasteel: 10000,
     caelumite: 500,
+    netherite: 2000
 };
 
 ///////////////////////////////////////////////////////////////////////////////cleaning
@@ -3737,6 +3752,7 @@ for oredic in [
     <ore:oreStoneleaf>,
     <ore:oreSpaceice>,
     <ore:oreCaelumite>,
+    <ore:oreNetherite>,
     //todo
     //oreEMC
     //oreInfinity?
@@ -4206,7 +4222,7 @@ recipes.addShapeless("ia_ore_refinement1",
     rec.addItemInput(<thermalfoundation:material:801>);
     
     
-    rec.addHotAirInput(250, 250, 1001);
+    rec.addHotAirInput(250, 250, 1000000000);
 
     rec.build();
 }

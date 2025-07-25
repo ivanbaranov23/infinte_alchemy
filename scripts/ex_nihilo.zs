@@ -147,17 +147,12 @@ Hammer.addRecipe(
 scripts.jei.addJEIhint(
     [], [<liquid:lava>, <liquid:witchwater>],
     [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-    [<minecraft:stone:1>, <minecraft:stone:3>, <minecraft:stone:5>]
+    [<minecraft:cobblestone>, <minecraft:stone:1>, <minecraft:stone:3>, <minecraft:stone:5>]
 );
 scripts.jei.addJEIhint(
     [], [<liquid:water>, <liquid:witchwater>],
     [<minecraft:cobblestone>.withDisplayName("In world mixing")],
     [<minecraft:dirt>, <minecraft:dirt:1>, <minecraft:dirt:2>]
-);
-scripts.jei.addJEIhint(
-    [], [<liquid:blood>, <liquid:witchwater>],
-    [<minecraft:cobblestone>.withDisplayName("In world mixing")],
-    [<minecraft:soul_sand>]
 );
 
 //doll

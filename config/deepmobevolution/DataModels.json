@@ -1,4 +1,56 @@
 [
+  {"id": "illager",
+    "displayName": "Illagers",
+    "livingMatter": "overworldian",
+    "simulationRFCost": 2560,
+    "craftingIngredients": [
+      "contenttweaker:illagerite"
+    ],
+    "associatedMobs": [
+      "illagers_plus:illager_king",
+      "illagers_plus:necromancer",
+      "illagers_plus:furantur",
+      "illagers_plus:archer",
+      "illagers_plus:enchanter",
+      "illagers_plus:hoarder",
+      "minecraft:vindication_illager",
+      "minecraft:evocation_illager",
+      "primitivemobs:trollager",
+      "minecraft:illusion_illager"
+    ],
+    "lootItems": [
+      "contenttweaker:illagerite,32"
+    ],
+    "deepLearnerDisplay": {
+      "hearts": 37,
+      "mobTrivia": [
+        "A mushroom.",
+        "Can mush your room. And you."
+      ],
+      "entity": "illagers_plus:illager_king",
+      "entityScale": 16,
+      "entityOffsetX": 10,
+      "entityOffsetY": 20
+    },
+    "trial": {
+      "entities": [
+        "illagers_plus:illager_king,5",
+        "illagers_plus:necromancer,15",
+        "illagers_plus:furantur,15",
+        "illagers_plus:archer,20",
+        "illagers_plus:enchanter,15",
+        "illagers_plus:hoarder,15",
+        "minecraft:vindication_illager,20",
+        "minecraft:evocation_illager,15",
+        "primitivemobs:trollager,5",
+        "minecraft:illusion_illager,5"
+      ],
+      "spawnDelay": 2.4,
+      "rewards": [
+        "deepmoblearning:glitch_heart,5"
+      ]
+    }
+  },
   {"id": "mushroom",
     "displayName": "Erebus Mushroom",
     "livingMatter": "erebus",
@@ -15,15 +67,15 @@
       "erebus:erebus.crushroom"
     ],
     "lootItems": [
-      "erebus:dark_capped_mushroom,16",
-      "erebus:sarcastic_czech_mushroom,16",
-      "erebus:grandmas_shoes_mushroom,16",
-      "erebus:dutch_cap_mushroom,16",
-      "erebus:kaizers_fingers_mushroom,16",
+      "erebus:dark_capped_mushroom,64",
+      "erebus:sarcastic_czech_mushroom,64",
+      "erebus:grandmas_shoes_mushroom,64",
+      "erebus:dutch_cap_mushroom,64",
+      "erebus:kaizers_fingers_mushroom,64",
       "exnihilocreatio:item_ore_lead,48,0"
     ],
     "deepLearnerDisplay": {
-      "hearts": 160,
+      "hearts": 100,
       "mobTrivia": [
         "A mushroom.",
         "Can mush your room. And you."
@@ -47,10 +99,10 @@
       "atum:pharaoh"
     ],
     "lootItems": [
-      "atum:coin_gold,8",
-      "contenttweaker:cursed_gold_pieces,1",
-      "contenttweaker:relic_ingot,4",
-      "atum:fertile_soil_pile,12"
+      "atum:coin_gold,24",
+      "contenttweaker:cursed_gold_pieces,4",
+      "contenttweaker:relic_ingot,8",
+      "atum:fertile_soil_pile,32"
     ],
     "deepLearnerDisplay": {
       "hearts": 160,
@@ -77,14 +129,14 @@
       "atum:stonewarden"
     ],
     "lootItems": [
-      "atum:khnumite,8",
-      "contenttweaker:khnumite_heart,2",
-      "atum:coin_dirty,12",
-      "atum:loot_dirty_idol",
-      "atum:loot_dirty_scepter,2",
-      "atum:loot_dirty_necklace,4",
-      "atum:loot_dirty_broach,6",
-      "atum:loot_dirty_ring,8"
+      "atum:khnumite,32",
+      "contenttweaker:khnumite_heart,8",
+      "atum:coin_dirty,48",
+      "atum:loot_dirty_idol,4",
+      "atum:loot_dirty_scepter,8",
+      "atum:loot_dirty_necklace,16",
+      "atum:loot_dirty_broach,24",
+      "atum:loot_dirty_ring,32"
     ],
     "trial": {
       "entities": [
@@ -119,10 +171,10 @@
       "atum:assasin"
     ],
     "lootItems": [
-      "atum:coin,2",
-      "atum:dusty_bone,12",
-      "atum:ophidian_tongue_flower,12",
-      "contenttweaker:ophidian_extract,4"
+      "atum:coin,16",
+      "atum:dusty_bone,24",
+      "atum:ophidian_tongue_flower,24",
+      "contenttweaker:ophidian_extract,12"
     ],
     "trial": {
       "entities": [
@@ -159,10 +211,10 @@
       "aether_legacy:zephyr"
     ],
     "lootItems": [
-      "aether_legacy:aercloud,12",
-      "aether_legacy:aercloud,10,1",
-      "aether_legacy:aercloud,8,2",
-      "aether_legacy:aercloud,4,3"
+      "aether_legacy:aercloud,32",
+      "aether_legacy:aercloud,24,1",
+      "aether_legacy:aercloud,16,2",
+      "aether_legacy:aercloud,12,3"
     ],
     "trial": {
       "entities": [
@@ -199,20 +251,20 @@
       "botania:doppleganger"
     ],
     "lootItems": [
-      "botania:manaresource,2,5",
-      "contenttweaker:rune_water_cracked,8",
-      "contenttweaker:rune_fire_cracked,8",
-      "contenttweaker:rune_earth_cracked,8",
-      "contenttweaker:rune_air_cracked,8",
+      "botania:manaresource,4,5",
+      "contenttweaker:rune_water_cracked,16",
+      "contenttweaker:rune_fire_cracked,16",
+      "contenttweaker:rune_earth_cracked,16",
+      "contenttweaker:rune_air_cracked,16",
   
-      "contenttweaker:rune_mana_cracked,5",
-      "contenttweaker:rune_acid_cracked,5",
-      "contenttweaker:rune_lightning_cracked,5",
+      "contenttweaker:rune_mana_cracked,12",
+      "contenttweaker:rune_acid_cracked,12",
+      "contenttweaker:rune_lightning_cracked,12",
 
-      "contenttweaker:rune_winter_cracked,3",
-      "contenttweaker:rune_spring_cracked,3",
-      "contenttweaker:rune_summer_cracked,3",
-      "contenttweaker:rune_autumn_cracked,3"
+      "contenttweaker:rune_winter_cracked,8",
+      "contenttweaker:rune_spring_cracked,8",
+      "contenttweaker:rune_summer_cracked,8",
+      "contenttweaker:rune_autumn_cracked,8"
     ],
     "deepLearnerDisplay": {
       "hearts": 160,
@@ -239,8 +291,9 @@
       "primitivemobs:blazing_juggernaut"
     ],
     "lootItems": [
-      "minecraft:blaze_rod,22",
-      "thermalfoundation:material,32,771"
+      "minecraft:blaze_rod,48",
+      "thermalfoundation:material,32,771",
+      "thermalfoundation:material,24,768"
     ],
     "trial": {
       "entities": [
@@ -285,7 +338,11 @@
     ],
     "lootItems": [
       "minecraft:gunpowder,64",
-      "minecraft:skull,6,4"
+      "minecraft:skull,8,4",
+      "minecraft:firework_charge,32",
+      "minecraft:tnt,4",
+      "xreliquary:mob_ingredient,12,3",
+      "xreliquary:mob_ingredient,4,8"
     ],
     "trial": {
       "entities": [
@@ -324,10 +381,10 @@
       "minecraft:ender_dragon"
     ],
     "lootItems": [
-      "minecraft:skull,1,5",
-      "minecraft:dragon_breath,32",
-      "minecraft:dragon_egg,1",
-      "draconicevolution:dragon_heart,1",
+      "minecraft:skull,3,5",
+      "minecraft:dragon_breath,48",
+      "minecraft:dragon_egg,3",
+      "draconicevolution:dragon_heart,3",
       "exnihilocreatio:item_ore_draconium,64"
     ],
     "deepLearnerDisplay": {
@@ -355,16 +412,21 @@
       "minecraft:endermite"
     ],
     "lootItems": [
-      "minecraft:ender_pearl,6",
-      "minecraft:end_crystal,1",
-      "enderio:block_enderman_skull,2"
+      "minecraft:ender_pearl,16",
+      "minecraft:ender_eye,16",
+      "minecraft:end_crystal,4",
+      "enderio:block_enderman_skull,8",
+      "mysticalworld:unripe_pearl,64",
+      "minecraft:obsidian,64",
+      "xreliquary:mob_ingredient,8,11"
     ],
     "trial": {
       "entities": [
         "deepmoblearning:trial_enderman,10",
         "minecraft:endermite,5",
         "primitivemobs:void_eye,10",
-        "minecraft:shulker,10"
+        "minecraft:shulker,10",
+        "realmrpg_wyrms:ender_wyrm,5"
       ],
       "spawnDelay": 2.0,
       "rewards": [
@@ -394,7 +456,8 @@
       "minecraft:ghast"
     ],
     "lootItems": [
-      "minecraft:ghast_tear,8"
+      "minecraft:ghast_tear,32",
+      "xreliquary:mob_ingredient,12,3"
     ],
     "trial": {
       "entities": [
@@ -420,8 +483,7 @@
       "entityOffsetY": -20
     }
   },
-  {
-    "id": "guardian",
+  {"id": "guardian",
     "displayName": "Guardian",
     "livingMatter": "overworldian",
     "simulationRFCost": 340,
@@ -433,11 +495,11 @@
       "minecraft:elder_guardian"
     ],
     "lootItems": [
-      "minecraft:prismarine_shard,32",
-      "minecraft:prismarine_crystals,32",
+      "minecraft:prismarine_shard,48",
+      "minecraft:prismarine_crystals,48",
       "minecraft:fish,64,0",
-      "xreliquary:mob_ingredient,4,16",
-      "quark:elder_prismarine,1"
+      "xreliquary:mob_ingredient,12,16",
+      "quark:elder_prismarine,4"
     ],
     "deepLearnerDisplay": {
       "hearts": 15,
@@ -452,8 +514,7 @@
       "entityOffsetY": -5
     }
   },
-  {
-    "id": "shulker",
+  {"id": "shulker",
     "displayName": "Shulker",
     "livingMatter": "extraterrestrial",
     "simulationRFCost": 256,
@@ -464,8 +525,9 @@
       "minecraft:shulker"
     ],
     "lootItems": [
-      "minecraft:shulker_shell,18",
-      "minecraft:diamond,2"
+      "minecraft:shulker_shell,32",
+      "darkutils:shulker_pearl,24",
+      "minecraft:diamond,8"
     ],
     "deepLearnerDisplay": {
       "hearts": 15,
@@ -496,7 +558,10 @@
     "lootItems": [
       "minecraft:bone,64",
       "minecraft:arrow,64",
-      "minecraft:skull,6"
+      "minecraft:skull,8",
+      "trumpetskeleton:trumpet",
+      "xreliquary:mob_ingredient,12",
+      "atum:fish_skeletal,16"
     ],
     "trial": {
       "entities": [
@@ -538,7 +603,10 @@
     ],
     "lootItems": [
       "minecraft:slime_ball,32",
-      "industrialforegoing:pink_slime,16"
+      "xreliquary:mob_ingredient,12,4",
+      "industrialforegoing:pink_slime,16",
+      "contenttweaker:brain_slimeball,4",
+      "contenttweaker:gold_slimeball,12"
     ],
     "trial": {
       "entities": [
@@ -628,20 +696,17 @@
       "minecraft:witch"
     ],
     "lootItems": [
-      "minecraft:redstone,32",
-      "minecraft:glowstone_dust,32",
-      "minecraft:sugar,64"
+      "minecraft:redstone,48",
+      "minecraft:glowstone_dust,48",
+      "minecraft:sugar,64",
+      "minecraft:glass_bottle,48"
     ],
     "trial": {
       "entities": [
         "minecraft:witch,20",
         "minecraft:vindication_illager,30",
         "minecraft:evocation_illager,10",
-        "specialmobs:wildswitch,20",
-        "specialmobs:undeadwitch,20",
-        "specialmobs:shadowswitch,10",
-        "primitivemobs:trollager,30",
-        "specialmobs:witchspider,20"
+        "primitivemobs:trollager,5"
       ],
       "rewards": [
         "deepmoblearning:glitch_heart,6"
