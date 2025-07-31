@@ -1,6 +1,9 @@
 {
 	x: 5.0d,
 	y: -2.0d,
+	text: [
+		"After research can be used to make umberstone for free"
+	],
 	dependencies: [
 		"4c76e76d"
 	],

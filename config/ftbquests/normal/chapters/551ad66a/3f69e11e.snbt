@@ -1,6 +1,9 @@
 {
 	x: 9.0d,
 	y: -3.0d,
+	text: [
+		"Trade ores for some non ores. Can give some unique resources"
+	],
 	dependencies: [
 		"4d87efef"
 	],

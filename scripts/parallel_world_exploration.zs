@@ -303,6 +303,9 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <minecraft:nether_star> * 100
             ]
         ],
+        <contenttweaker:bloodhunter_target_mana>: [
+            [<botania:blacklotus:1> * 32], [<botania:blacklotus:1> * 32]
+        ],
         <contenttweaker:cursed_wither>: [
             [<contenttweaker:cursed_star>],
             [<contenttweaker:cursed_star>]

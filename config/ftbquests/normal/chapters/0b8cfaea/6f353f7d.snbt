@@ -1,6 +1,6 @@
 {
-	x: -2.5d,
-	y: 5.5d,
+	x: -1.5d,
+	y: 5.0d,
 	text: [
 		"Ew. Maybe if you wait a bit the smell will disappear"
 	],
@@ -8,6 +8,7 @@
 		"468cf998",
 		"6cb0e4ca"
 	],
+	optional: true,
 	tasks: [{
 		uid: "06f6db8a",
 		type: "item",

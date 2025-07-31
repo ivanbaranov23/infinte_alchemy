@@ -1,7 +1,7 @@
 {
 	x: 4.0d,
 	y: -1.0d,
-	shape: "rsquare",
+	shape: "square",
 	text: [
 		"Gate for erebus."
 	],

@@ -2,6 +2,9 @@
 	x: 13.0d,
 	y: 0.0d,
 	shape: "square",
+	text: [
+		"Gate for Prodigy Tech - a tech mod that is underrated imo"
+	],
 	dependencies: [
 		"6f43094e"
 	],

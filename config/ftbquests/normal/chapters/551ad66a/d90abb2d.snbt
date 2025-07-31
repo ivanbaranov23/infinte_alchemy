@@ -1,6 +1,9 @@
 {
 	x: 4.0d,
 	y: 1.0d,
+	text: [
+		"An early option for pipes"
+	],
 	dependencies: [
 		"b6bb720f"
 	],

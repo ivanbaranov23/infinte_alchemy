@@ -1,11 +1,11 @@
 {
-	x: -6.0d,
-	y: -4.0d,
+	x: 6.0d,
+	y: 6.0d,
 	text: [
 		"Early autocrafting"
 	],
 	dependencies: [
-		"a2041799"
+		"3ce2f0f0"
 	],
 	optional: true,
 	tasks: [{

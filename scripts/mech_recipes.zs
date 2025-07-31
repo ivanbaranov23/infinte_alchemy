@@ -485,6 +485,13 @@
         [<contenttweaker:advanced_plating4_1>, <erebus:materials:6>, <contenttweaker:advanced_plating4_1>], 
         [<contenttweaker:blood_shard1>, <contenttweaker:advanced_plating4_1>, <contenttweaker:blood_shard1>]
     ]);
+    recipes.addShaped("ia_bloodhunter_target_mana", <contenttweaker:bloodhunter_target_mana>, [
+        [<contenttweaker:blood_shard3>, <contenttweaker:advanced_plating4_1>, <contenttweaker:blood_shard3>], 
+        [<contenttweaker:advanced_plating4_1>, <botania:blacklotus:1>, <contenttweaker:advanced_plating4_1>], 
+        [<contenttweaker:blood_shard3>, <contenttweaker:advanced_plating4_1>, <contenttweaker:blood_shard3>]
+    ]);
+    <contenttweaker:bloodhunter_target_mana>.addTooltip(game.localize("ia.tooltip.bloodhunter_target_mana"));
+
     scripts.content_machines.addAssemblerRecipe(
         [<contenttweaker:bloodhunter_target_wither>], 
         [

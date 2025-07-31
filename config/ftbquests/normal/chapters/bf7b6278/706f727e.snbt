@@ -49,5 +49,22 @@
 			item: "immersiveengineering:metal_decoration1 1 1"
 		}],
 		count: 2L
+	}],
+	rewards: [{
+		uid: "171fd9ab",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/immersiveengineering/ie-metalpress",
+				label: "Ie-metalpress",
+				size: 3
+			}
+		}
 	}]
 }

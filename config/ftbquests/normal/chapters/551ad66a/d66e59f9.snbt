@@ -1,6 +1,6 @@
 {
-	x: 12.0d,
-	y: 3.0d,
+	x: 13.0d,
+	y: 4.0d,
 	dependencies: [
 		"cb68303e"
 	],
@@ -40,6 +40,18 @@
 			tag: {
 				overlay: 1b,
 				fuzzy: 1b
+			}
+		}
+	},
+	{
+		uid: "9dbcaf12",
+		type: "item",
+		item: {
+			id: "buildinggadgets:buildingtool",
+			tag: {
+				blockstate: {
+					Name: "minecraft:air"
+				}
 			}
 		}
 	}]

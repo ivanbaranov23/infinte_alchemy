@@ -2,7 +2,7 @@
 	title: "Farm some crops 1",
 	icon: "minecraft:wheat",
 	x: -0.5d,
-	y: 4.0d,
+	y: 2.0d,
 	shape: "diamond",
 	text: [
 		"Farm some crops and sell them for money."

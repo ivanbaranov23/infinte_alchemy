@@ -1,10 +1,10 @@
 {
 	title: "Wood Enjoyer",
 	x: 9.0d,
-	y: 4.0d,
+	y: 3.0d,
 	shape: "diamond",
 	text: [
-		""
+		"I sure do enjoy some wood in the morning"
 	],
 	dependencies: [
 		"6a411f76"

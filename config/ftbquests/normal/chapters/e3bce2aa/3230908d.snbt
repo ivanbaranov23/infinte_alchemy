@@ -1,6 +1,10 @@
 {
+	title: "Yet another crusher",
 	x: -1.0d,
 	y: 1.0d,
+	text: [
+		"Sorry, this one is pulverizer"
+	],
 	dependencies: [
 		"31c8f138"
 	],

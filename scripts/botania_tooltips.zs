@@ -1,9 +1,17 @@
 //feel free to use this
 //onlly flower with no jei
 
-<botania:specialflower>.withTag({type: "manastar"}).addTooltip("place next to mana pool");
-<botania:specialflower>.withTag({type: "manastar"}).addTooltip("glows blue when pool gaining mana");
-<botania:specialflower>.withTag({type: "manastar"}).addTooltip("glows red when pool loses mana");
+<botania:specialflower>.withTag({type: "spectrolus"}).addTooltip("Eats colored wool in certain order,");
+<botania:specialflower>.withTag({type: "spectrolus"}).addTooltip("gives 1920 or 2560 per wool block.");
+
+<botania:specialflower>.withTag({type: "dandelifeon"}).addTooltip("Way too complicated for tooltip explanation.");
+<botania:specialflower>.withTag({type: "dandelifeon"}).addTooltip("Hard to automate,but gives tons of mana");
+
+
+
+<botania:specialflower>.withTag({type: "manastar"}).addTooltip("Place next to mana pool");
+<botania:specialflower>.withTag({type: "manastar"}).addTooltip("Glows blue when pool gaining mana");
+<botania:specialflower>.withTag({type: "manastar"}).addTooltip("Glows red when pool loses mana");
 
 <botania:specialflower>.withTag({type: "endoflame"}).addTooltip("turns burnables to mana at 30 mps");
 <botania:specialflower>.withTag({type: "hydroangeas"}).addTooltip("turns water sources blocks to mana at 6.7 mps");

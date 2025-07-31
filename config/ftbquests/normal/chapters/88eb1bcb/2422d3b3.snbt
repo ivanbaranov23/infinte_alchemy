@@ -1,6 +1,9 @@
 {
 	x: -4.0d,
 	y: -1.0d,
+	text: [
+		"You can make XU2 solar panel instead"
+	],
 	tasks: [{
 		uid: "d03cfb9d",
 		type: "item",

@@ -1,0 +1,26 @@
+{
+	x: 3.0d,
+	y: 4.0d,
+	text: [
+		"Hey you don't even need to milk a zombie for this"
+	],
+	dependencies: [
+		"9c741525"
+	],
+	tasks: [{
+		uid: "5fc2a2c8",
+		type: "checkmark",
+		title: "Rot",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "rot"
+			}
+		}
+	}],
+	rewards: [{
+		uid: "129cc63d",
+		type: "item",
+		item: "biomesoplenty:plant_1 1 10"
+	}]
+}

@@ -1,6 +1,9 @@
 {
 	x: 1.0d,
 	y: -1.0d,
+	text: [
+		"Freezer: the freezer"
+	],
 	dependencies: [
 		"31c8f138"
 	],

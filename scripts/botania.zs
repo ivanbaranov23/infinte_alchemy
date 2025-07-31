@@ -278,7 +278,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
     Apothecary.removeRecipe("puredaisy");
     Apothecary.addRecipe("puredaisy", [
         <contenttweaker:revived_bush>,
-        <tconstruct:soil:4>, <contenttweaker:soap>,
+        <tconstruct:soil:4>, <contenttweaker:soapart>, <mekanism:machineblock:9>,
         <botania:petalblock>, <botania:petalblock>, <botania:petalblock>
     ]);
 
@@ -454,6 +454,13 @@ recipes.addShaped("ia_opencrate", <botania:opencrate>, [
     ElvenTrade.addRecipe(
         [<botania:elfglass>],
         [<botania:managlass>, <botania:managlass>, <contenttweaker:terra_base>, <industrialforegoing:laser_lens:14>]
+    );
+
+    //gem
+    ElvenTrade.removeRecipe(<botania:manaresource:9>);
+    ElvenTrade.addRecipe(
+        [<botania:manaresource:9>],
+        [<botania:manaresource:2>, <botania:manaresource:2>, <draconicevolution:dragon_heart>, <extendedcrafting:singularity_custom:67>]
     );
 }
 

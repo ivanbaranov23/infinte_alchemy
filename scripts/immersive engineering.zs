@@ -95,8 +95,8 @@ recipes.addShaped("ia_panzerglass_block", <engineersdecor:panzerglass_block> * 2
 
 recipes.remove(<immersiveengineering:tool>);
 recipes.addShaped("ia_ie_hammer", <immersiveengineering:tool>, [
-	[<ore:plateInvar>, <prodigytech:heat_capacitor_1>, <ore:plateInvar>], 
-	[null, <ore:stickConstantan>, null], 
+	[<ore:plateInvar>, <prodigytech:circuit_refined>, <ore:plateInvar>], 
+	[null, <prodigytech:heat_capacitor_1>, null], 
 	[null, <ore:stickConstantan>, null]
 ]);
 recipes.remove(<immersiveengineering:tool:1>);
@@ -153,6 +153,12 @@ recipes.addShaped("ia_kiln2", <immersiveengineering:stone_decoration:10> * 8, [
 	[<biomesoplenty:dried_sand>, <contenttweaker:industrial_clay>, <biomesoplenty:dried_sand>], 
 	[<contenttweaker:firebrick_block>, <biomesoplenty:dried_sand>, <contenttweaker:firebrick_block>]
 ]);
+
+mods.immersiveengineering.MetalPress.addRecipe(
+	<immersiveengineering:graphite_electrode>.withTag({graphDmg: 48000}), 
+	<immersiveengineering:material:19>, 
+	<contenttweaker:rod_mold>, 10000, 4
+);
 
 
 {// multiblocks parts

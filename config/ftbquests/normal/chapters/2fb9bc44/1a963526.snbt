@@ -2,6 +2,9 @@
 	icon: "modularcontroller:heat_engine_controller",
 	x: 9.5d,
 	y: 2.0d,
+	text: [
+		"Doesnt work rn"
+	],
 	dependencies: [
 		"15e5cba2"
 	],

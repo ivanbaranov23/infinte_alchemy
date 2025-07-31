@@ -2,9 +2,7 @@
 	x: 0.0d,
 	y: -3.0d,
 	text: [
-		"DIstill sea water for salt. It can be used to skip drying coagulated blood.",
-		"",
-		"Distilling sea water will also solve your electrotine problems"
+		"Distill sea water for salt. It can be used to skip drying coagulated blood."
 	],
 	dependencies: [
 		"4c76e76d"

@@ -1,19 +1,18 @@
 {
-	x: -5.0d,
-	y: -4.0d,
+	x: 6.0d,
+	y: 2.0d,
 	dependencies: [
-		"32464c8e"
+		"b6bb720f"
 	],
-	optional: true,
 	tasks: [{
-		uid: "06bdbacf",
+		uid: "ca9e5458",
 		type: "item",
 		items: [{
 			item: "contenttweaker:simple_motor"
 		}]
 	}],
 	rewards: [{
-		uid: "6371a2aa",
+		uid: "27162e29",
 		type: "item",
 		item: "contenttweaker:simple_motor"
 	}]

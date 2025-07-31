@@ -2,8 +2,11 @@
 	title: "True Wood Enjoyer",
 	icon: "contenttweaker:sus_sapling",
 	x: 9.0d,
-	y: 5.0d,
+	y: 4.0d,
 	shape: "square",
+	text: [
+		"A worthy price for a worthy reward"
+	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"f5566c6d"

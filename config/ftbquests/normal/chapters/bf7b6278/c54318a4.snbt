@@ -1,9 +1,33 @@
 {
+	title: "Autoworkbench",
 	x: 4.0d,
 	y: -4.0d,
+	text: [
+		"Workbench but automatic. Insert blueprint and select recipe. Only one recipe per machine"
+	],
+	dependencies: [
+		"5b6301e9"
+	],
 	tasks: [{
 		uid: "7ed9f05a",
 		type: "checkmark",
 		icon: "immersiveengineering:metal_multiblock 1 5"
+	}],
+	rewards: [{
+		uid: "90677ad4",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/immersiveengineering/ie-autoworkbench",
+				label: "Ie-autoworkbench",
+				size: 3
+			}
+		}
 	}]
 }

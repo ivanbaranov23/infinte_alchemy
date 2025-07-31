@@ -3,11 +3,14 @@
 	x: 2.0d,
 	y: -1.0d,
 	text: [
-		"Pour molten glass on quartz to make bauxite ore. "
+		"Pour molten glass on quartz to make bauxite ore. ",
+		"",
+		"You can make quartz blocks directly from 9 soul sand"
 	],
 	dependencies: [
 		"42386b50"
 	],
+	optional: true,
 	tasks: [{
 		uid: "6f345a80",
 		type: "item",

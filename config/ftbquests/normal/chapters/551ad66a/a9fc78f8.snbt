@@ -1,8 +1,8 @@
 {
 	title: "Auto mob farm",
 	icon: "mob_grinding_utils:fan",
-	x: 10.0d,
-	y: 3.0d,
+	x: 11.0d,
+	y: 4.0d,
 	text: [
 		""
 	],

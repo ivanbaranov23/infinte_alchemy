@@ -1,6 +1,10 @@
 {
-	x: 11.0d,
-	y: 1.0d,
+	title: "Snand",
+	x: 12.0d,
+	y: 1.5d,
+	text: [
+		"Apply redstone signal to grow sugarcane/cactus fast. Red Snad works 10% better than normal, trust me"
+	],
 	dependencies: [
 		"cb68303e"
 	],

@@ -1,6 +1,9 @@
 {
 	x: -1.0d,
 	y: -2.0d,
+	text: [
+		"Gears, gears, gears"
+	],
 	dependencies: [
 		"f673e762"
 	],

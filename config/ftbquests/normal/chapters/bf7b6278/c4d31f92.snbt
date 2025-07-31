@@ -2,7 +2,10 @@
 	x: 8.0d,
 	y: -4.0d,
 	text: [
-		"Can be distilled from Sea Water"
+		"Can be distilled from Sea Water or as cobalt byproduct. Can be used for storage upgrades"
+	],
+	dependencies: [
+		"12c86de6"
 	],
 	optional: true,
 	tasks: [{

@@ -1,14 +1,22 @@
 {
-	x: -1.5d,
-	y: 8.5d,
+	x: 2.5d,
+	y: 2.0d,
 	dependencies: [
 		"acffbdbd"
 	],
+	optional: true,
 	tasks: [{
 		uid: "790c75cf",
 		type: "item",
 		items: [{
 			item: "contenttweaker:fire_shard"
+		}]
+	},
+	{
+		uid: "7521898b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:slime_shard"
 		}]
 	}]
 }

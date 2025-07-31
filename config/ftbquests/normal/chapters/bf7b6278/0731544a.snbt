@@ -1,6 +1,9 @@
 {
 	x: 9.0d,
 	y: -4.0d,
+	text: [
+		"You can make a crusher or use creosolon for coke dust"
+	],
 	dependencies: [
 		"9d327bd4"
 	],

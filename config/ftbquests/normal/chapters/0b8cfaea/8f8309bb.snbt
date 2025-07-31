@@ -1,12 +1,13 @@
 {
-	x: -0.5d,
-	y: 6.5d,
+	x: 0.5d,
+	y: 5.0d,
 	text: [
 		"Put quartz nugget into sticky water in barrel"
 	],
 	dependencies: [
 		"22d5e021"
 	],
+	optional: true,
 	tasks: [{
 		uid: "1db7c3f2",
 		type: "item",

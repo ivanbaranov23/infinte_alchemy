@@ -1,6 +1,9 @@
 {
 	x: 8.0d,
-	y: -3.0d,
+	y: -2.0d,
+	text: [
+		"Alternative for bone meal"
+	],
 	dependencies: [
 		"4d87efef"
 	],

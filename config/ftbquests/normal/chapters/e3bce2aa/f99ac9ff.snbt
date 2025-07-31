@@ -4,7 +4,7 @@
 	x: -3.0d,
 	y: 1.0d,
 	text: [
-		""
+		"More components, yay!"
 	],
 	dependencies: [
 		"f705a577"

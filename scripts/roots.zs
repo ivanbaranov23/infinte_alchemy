@@ -201,21 +201,21 @@ Fey.addRecipe("ia_runic_crafter", <roots:runic_crafter>,
         [<mysticalcreations:bilim_essence>, <minecraft:arrow>, <mysticalcreations:bilim_essence>]
     ]);
     Fey.removeRecipe(<roots:living_arrow>);
-    Fey.addRecipe("living_arrow1", <roots:living_arrow>, [
+    Fey.addRecipe("living_arrow1", <roots:living_arrow> * 4, [
         <minecraft:arrow>,
         <minecraft:arrow>,
         <harvestcraft:arrowrootitem>,
         <harvestcraft:arrowrootitem>,
         <roots:terra_moss>
     ]);
-    Fey.addRecipe("living_arrow2", <roots:living_arrow> * 4, [
+    Fey.addRecipe("living_arrow2", <roots:living_arrow> * 32, [
         <minecraft:spectral_arrow>,
         <minecraft:spectral_arrow>,
         <harvestcraft:arrowrootitem>,
         <harvestcraft:arrowrootitem>,
         <roots:terra_moss>
     ]);
-    Fey.addRecipe("living_arrow3", <roots:living_arrow> * 16, [
+    Fey.addRecipe("living_arrow3", <roots:living_arrow> * 256, [
         <aether_legacy:dart:1> | <aether_legacy:dart:2>,
         <aether_legacy:dart:1> | <aether_legacy:dart:2>,
         <harvestcraft:arrowrootitem>,
@@ -797,3 +797,18 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
 
 }
 
+/*
+<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:villager", entity: {
+    HurtByTimestamp: 0, ForgeData: {}, 
+    Attributes: [], Riches: 104, Invulnerable: 0 as byte, FallFlying: 0 as byte, ForcedAge: 0, PortalCooldown: 0, AbsorptionAmount: 0.0 as float, 
+    FallDistance: 0.0 as float, DeathTime: 0 as short, 
+    ForgeCaps: {}, 
+    HandDropChances: [0.085 as float, 0.085 as float], PersistenceRequired: 0 as byte, 
+    id: "minecraft:villager", Age: 0, Motion: [0.0, -0.0784000015258789, 0.0], Leashed: 0 as byte, 
+    OnGround: 1 as byte, Dimension: 0, 
+    Offers: {Recipes: [{maxUses: 16, buy: {id: "minecraft:emerald", Count: 1, Damage: 0 as short}, sell: {id: "actuallyadditions:block_misc", Count: 2, Damage: 3 as short}, uses: 7, rewardExp: 1 as byte}, {maxUses: 12, buy: {id: "minecraft:emerald", Count: 1, Damage: 0 as short}, sell: {id: "actuallyadditions:item_misc", Count: 7, Damage: 5 as short}, uses: 7, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "minecraft:emerald", Count: 1, Damage: 0 as short}, sell: {id: "actuallyadditions:item_laser_wrench", Count: 1, Damage: 0 as short}, uses: 0, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "actuallyadditions:item_coffee_beans", Count: 30, Damage: 0 as short}, sell: {id: "minecraft:emerald", Count: 1, Damage: 0 as short}, uses: 0, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "minecraft:emerald", Count: 4, Damage: 0 as short}, sell: {id: "actuallyadditions:item_phantom_connector", Count: 1, Damage: 0 as short}, uses: 0, rewardExp: 1 as byte}, 
+    {maxUses: 7, buy: {id: "minecraft:emerald", Count: 15, Damage: 0 as short}, sell: {id: "actuallyadditions:block_laser_relay", Count: 2, Damage: 0 as short}, uses: 6, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "actuallyadditions:block_tiny_torch", Count: 39, Damage: 0 as short}, sell: {id: "minecraft:emerald", Count: 2, Damage: 0 as short}, uses: 0, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "minecraft:emerald", Count: 2, Damage: 0 as short}, sell: {id: "actuallyadditions:block_misc", Count: 2, Damage: 4 as short}, uses: 0, rewardExp: 1 as byte}]}, 
+    Rotation: [134.43378 as float, 10.187842 as float], UpdateBlocked: 0 as byte, HandItems: [{}, {}], 
+    ProfessionName: "actuallyadditions:engineer", 
+    Profession: 15, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 1 as byte, HurtTime: 0 as short, CareerLevel: 3, 
+    Career: 2, Inventory: [], Willing: 1 as byte}})*/

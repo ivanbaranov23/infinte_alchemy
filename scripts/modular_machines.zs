@@ -247,7 +247,7 @@ function addEarlySingularuty(sing as IItemStack, iten as IItemStack, time as int
     var recipe = RecipeBuilder.newBuilder("tcp_" + sing.name, "tree_powered_compressor", time);
     recipe.addItemInput(iten * 256);
     recipe.addItemInput(<ore:treeSapling>, 4);
-    recipe.addItemInput(<minecraft:dye:15> * 16);
+    recipe.addItemInput(<ore:fertilizer>, 16);
     recipe.addFluidInput(<fluid:water> * 1000);
     recipe.addItemOutput(sing);
     recipe.build();

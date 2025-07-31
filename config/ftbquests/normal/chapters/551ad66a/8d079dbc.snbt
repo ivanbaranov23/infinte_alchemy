@@ -1,6 +1,9 @@
 {
 	x: 10.0d,
-	y: -3.0d,
+	y: -2.0d,
+	text: [
+		"Chest big"
+	],
 	dependencies: [
 		"4d87efef"
 	],

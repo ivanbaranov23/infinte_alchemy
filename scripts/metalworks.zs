@@ -4328,15 +4328,10 @@ scripts.content_machines.addAdvancedMixerRecipe(
 );
 
 {//combination
-    mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:nitinol_ingot> * 3, 1024 * 200, 1024, <contenttweaker:super_alloy_base_ingot>, 
+    mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:nitinol_ingot> * 3, 1024 * 200, 1024, <contenttweaker:super_alloy_base_ingot>, 
         [
-            <contenttweaker:titanium_block>,
-            <contenttweaker:titanium_block>,
-            <contenttweaker:titanium_block>,
-            <thermalfoundation:storage:5>,
-            <thermalfoundation:storage:5>,
-            <thermalfoundation:storage:5>,
+            <extendedcrafting:singularity:31>,
+            <extendedcrafting:singularity:25>,
             <contenttweaker:bouncy_matter>,
             <contenttweaker:basic_neuron>,
             <contenttweaker:basic_neuron>,

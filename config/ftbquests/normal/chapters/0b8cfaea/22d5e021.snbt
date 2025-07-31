@@ -1,12 +1,13 @@
 {
-	x: -1.5d,
-	y: 6.5d,
+	x: -0.5d,
+	y: 5.0d,
 	text: [
 		"Much better. "
 	],
 	dependencies: [
 		"6f353f7d"
 	],
+	optional: true,
 	tasks: [{
 		uid: "96e511c7",
 		type: "item",

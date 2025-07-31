@@ -1,6 +1,9 @@
 {
-	x: 12.0d,
-	y: 1.0d,
+	x: 13.0d,
+	y: 2.0d,
+	text: [
+		"Collect them all to get to really weird colored hearts"
+	],
 	dependencies: [
 		"cb68303e"
 	],
@@ -11,6 +14,15 @@
 		items: [{
 			item: "bhc:red_heart_canister"
 		}]
+	},
+	{
+		uid: "62b295fc",
+		type: "item",
+		items: [{
+			item: "bhc:heart_amulet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
 	}],
 	rewards: [{
 		uid: "cf70cd15",

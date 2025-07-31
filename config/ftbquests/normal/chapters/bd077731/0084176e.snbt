@@ -1,7 +1,7 @@
 {
 	title: "IO",
-	x: 4.5d,
-	y: -2.0d,
+	x: 3.5d,
+	y: -1.0d,
 	text: [
 		"Exports and imports items. Self explanatory tbh"
 	],

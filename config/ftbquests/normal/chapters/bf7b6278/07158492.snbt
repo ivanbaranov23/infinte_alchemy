@@ -1,6 +1,9 @@
 {
 	x: 14.0d,
 	y: 0.0d,
+	text: [
+		"Can be used for advanced redstone components"
+	],
 	dependencies: [
 		"6410492f"
 	],

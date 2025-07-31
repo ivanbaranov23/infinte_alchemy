@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: 3.0d,
+	dependencies: [
+		"b7f2dc32"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c7653d84",
+		type: "item",
+		items: [{
+			item: "contenttweaker:flapper"
+		}]
+	}],
+	rewards: [{
+		uid: "f29bcd86",
+		type: "item",
+		item: "contenttweaker:flapper"
+	}]
+}

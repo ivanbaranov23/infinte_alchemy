@@ -4,7 +4,7 @@
 	y: 0.0d,
 	shape: "square",
 	text: [
-		""
+		"Welcome to TE chapter. How many machines you'll need for this chapter? Yes"
 	],
 	dependencies: [
 		"f705a577"

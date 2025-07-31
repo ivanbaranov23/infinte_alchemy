@@ -1,6 +1,9 @@
 {
 	x: 5.0d,
 	y: 0.0d,
+	text: [
+		"Stiffed with iron. Iron that was made steel that is."
+	],
 	dependencies: [
 		"a49918a9"
 	],

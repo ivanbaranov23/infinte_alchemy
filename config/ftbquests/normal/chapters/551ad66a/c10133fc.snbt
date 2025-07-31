@@ -1,6 +1,9 @@
 {
-	x: 5.0d,
+	x: 4.0d,
 	y: 4.0d,
+	text: [
+		"Minor plant enhancer"
+	],
 	dependencies: [
 		"5ebea001"
 	],
@@ -10,6 +13,13 @@
 		type: "item",
 		items: [{
 			item: "mysticalcreations:bilim_seeds"
+		}]
+	},
+	{
+		uid: "5c7b6824",
+		type: "item",
+		items: [{
+			item: "mysticalcreations:bilim_essence"
 		}]
 	}]
 }

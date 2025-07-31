@@ -1,8 +1,11 @@
 {
-	x: -4.0d,
-	y: -4.0d,
+	x: 6.0d,
+	y: 4.0d,
+	text: [
+		"Use block breaker to automate cobblestone generators. There're a bunch of different fluid mixing recipes"
+	],
 	dependencies: [
-		"a2041799"
+		"3ce2f0f0"
 	],
 	optional: true,
 	tasks: [{

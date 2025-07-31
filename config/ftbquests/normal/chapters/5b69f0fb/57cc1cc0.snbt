@@ -1,0 +1,11 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	tasks: [{
+		uid: "958fcca3",
+		type: "item",
+		items: [{
+			item: "requious:altar2"
+		}]
+	}]
+}

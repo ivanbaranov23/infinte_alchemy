@@ -1,8 +1,12 @@
 {
-	x: -5.0d,
-	y: -5.0d,
+	x: 6.0d,
+	y: 5.0d,
+	text: [
+		"Put water over water wheels and connect them via axles to auto sifter. ",
+		"Put up to 25 sieves on top of auto sifter. You can hopper items into auto sifter. If you put an inventory over the sieve, it'll collect items there"
+	],
 	dependencies: [
-		"a2041799"
+		"3ce2f0f0"
 	],
 	optional: true,
 	tasks: [{

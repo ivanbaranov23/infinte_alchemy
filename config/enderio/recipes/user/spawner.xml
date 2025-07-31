@@ -4,6 +4,7 @@
     <recipe name="Spawner, defaults" required="true">
         <spawning>
             <entity name="deepmoblearning:glitch"        disabled="true"/>
+            <entity name="primitivemobs:dodo"            disabled="true"/>
             <entity name="minecraft:villager"            costMultiplier="10" disabled="false"/> <!-- Villager -->
             <entity name="minecraft:villager_golem"      costMultiplier="10" disabled="false"/>
         </spawning>

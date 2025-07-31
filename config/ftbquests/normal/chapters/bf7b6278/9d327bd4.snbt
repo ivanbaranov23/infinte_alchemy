@@ -59,5 +59,22 @@
 		items: [{
 			item: "minecraft:piston"
 		}]
+	}],
+	rewards: [{
+		uid: "56e2b4c5",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/immersiveengineering/ie-squeezer",
+				label: "Ie-squeezer",
+				size: 3
+			}
+		}
 	}]
 }

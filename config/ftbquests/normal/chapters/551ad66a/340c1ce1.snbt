@@ -1,6 +1,6 @@
 {
-	x: 12.0d,
-	y: 2.0d,
+	x: 13.5d,
+	y: 3.0d,
 	text: [
 		"Speeds up tick rate around it. Kinda op so it was made unspammable"
 	],
@@ -14,5 +14,10 @@
 		items: [{
 			item: "torcherino:blocktorcherino"
 		}]
+	}],
+	rewards: [{
+		uid: "54537be0",
+		type: "item",
+		item: "contenttweaker:quest_coin"
 	}]
 }

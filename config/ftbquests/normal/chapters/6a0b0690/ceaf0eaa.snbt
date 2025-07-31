@@ -13,6 +13,38 @@
 		items: [{
 			item: "modularcontroller:tar_pit_controller"
 		}]
+	},
+	{
+		uid: "f48e2da6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tar_light"
+		}],
+		count: 12L
+	},
+	{
+		uid: "9bcb3066",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_quartz_wall"
+		}],
+		count: 8L
+	},
+	{
+		uid: "644c2591",
+		type: "item",
+		items: [{
+			item: "chisel:concrete_black1 1 6"
+		}],
+		count: 32L
+	},
+	{
+		uid: "27af6e2f",
+		type: "item",
+		items: [{
+			item: "immersivepetroleum:stone_decoration"
+		}],
+		count: 9L
 	}],
 	rewards: [{
 		uid: "dfe485b8",

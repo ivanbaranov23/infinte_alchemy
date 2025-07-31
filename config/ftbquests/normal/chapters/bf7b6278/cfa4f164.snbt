@@ -1,4 +1,5 @@
 {
+	title: "Diesel Generator",
 	x: 10.0d,
 	y: -3.0d,
 	text: [
@@ -35,5 +36,22 @@
 		uid: "684aa199",
 		type: "checkmark",
 		icon: "immersiveengineering:metal_multiblock 1 10"
+	}],
+	rewards: [{
+		uid: "2d330827",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/immersiveengineering/ie-dieselgenerator",
+				label: "Ie-dieselgenerator",
+				size: 5
+			}
+		}
 	}]
 }

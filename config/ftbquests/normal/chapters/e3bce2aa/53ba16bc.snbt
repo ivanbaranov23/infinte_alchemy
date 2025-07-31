@@ -3,7 +3,7 @@
 	x: -3.0d,
 	y: -1.0d,
 	text: [
-		""
+		"More alloys, yay!"
 	],
 	dependencies: [
 		"f705a577"

@@ -2,6 +2,9 @@
 	x: -4.0d,
 	y: 0.0d,
 	shape: "square",
+	text: [
+		"Heat resistant properties of honey are... idk tbh"
+	],
 	tasks: [{
 		uid: "78d0ae86",
 		type: "item",

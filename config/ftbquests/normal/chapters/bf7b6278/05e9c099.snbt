@@ -4,7 +4,7 @@
 	x: 11.0d,
 	y: -1.0d,
 	text: [
-		""
+		"Can be used to make biodiesel"
 	],
 	dependencies: [
 		"706f727e"
@@ -55,5 +55,22 @@
 		items: [{
 			item: "immersiveengineering:metal_decoration0 1 3"
 		}]
+	}],
+	rewards: [{
+		uid: "629a5b2e",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/immersiveengineering/ie-refinery",
+				label: "Ie-refinery",
+				size: 5
+			}
+		}
 	}]
 }

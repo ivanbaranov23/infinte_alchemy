@@ -1,14 +1,13 @@
 {
-	x: -0.5d,
-	y: 7.5d,
+	x: 2.5d,
+	y: 3.0d,
 	text: [
-		"You can also make lava and blue slime meet in world to make this, tho this process is finicky.",
-		"",
-		"To automate this i would recommend just paying the quartz tax."
+		"You can also make lava and blue slime meet in world to make this, tho this process is finicky."
 	],
 	dependencies: [
 		"8f8309bb"
 	],
+	optional: true,
 	tasks: [{
 		uid: "09768e7a",
 		type: "item",

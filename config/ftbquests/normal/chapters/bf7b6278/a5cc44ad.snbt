@@ -1,6 +1,9 @@
 {
 	x: 4.0d,
 	y: 2.0d,
+	text: [
+		"Lights up a large area"
+	],
 	dependencies: [
 		"837cf6f5"
 	],

@@ -33,7 +33,7 @@ function addBiolabRecipe(
         rec.setChance(0.0);
     }
 
-    if (temp != 0) {rec.addHotAirInput(temp, temp - 1.0, 1.0 / 0.0);}
+    //if (temp != 0) {rec.addHotAirInput(temp, 0, 1000*1000*1000);}
 
     rec.build();
 }

@@ -1,6 +1,10 @@
 {
+	title: "Coke Oven",
 	x: 2.0d,
 	y: -1.0d,
+	text: [
+		"For making coal coke and creosote"
+	],
 	dependencies: [
 		"6a23fe89"
 	],

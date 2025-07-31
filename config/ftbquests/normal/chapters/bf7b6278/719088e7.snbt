@@ -3,7 +3,7 @@
 	x: 2.0d,
 	y: 1.0d,
 	text: [
-		""
+		"Make blast furnace to make steel. Continue making steel, you'll need a mountain of the stuff"
 	],
 	dependencies: [
 		"6a23fe89"

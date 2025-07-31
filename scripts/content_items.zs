@@ -140,6 +140,14 @@ function addLava(name as string){
     VanillaFactory.createItem("umberrack").register();
     VanillaFactory.createBlock("umberrack_bricks", <blockmaterial:rock>).register();
     VanillaFactory.createItem("awakened_umberrack").register();
+
+    VanillaFactory.createBlock("raw_greenick", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("greenick_smoth", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("greenick_bricks", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("greenick_tile", <blockmaterial:rock>).register();
+
+    VanillaFactory.createBlock("pumpk_tile", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("pumpk_tile2", <blockmaterial:rock>).register();
 }
 function addAtomicResource(name as string){
         VanillaFactory.createItem(name).register();
@@ -1400,6 +1408,7 @@ function add_mech_part(name as string){
         VanillaFactory.createItem("bloodhunter_target_slate").register();
         VanillaFactory.createItem("bloodhunter_target_fairy").register();
         VanillaFactory.createItem("bloodhunter_target_wither").register();
+        VanillaFactory.createItem("bloodhunter_target_mana").register();
 
         VanillaFactory.createItem("mute_eye").register();
         VanillaFactory.createItem("eye").register();
@@ -2789,7 +2798,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("very_advanced_circuit_base").register();
     VanillaFactory.createItem("very_advanced_circuit").register();
     VanillaFactory.createItem("very_advanced_mana_circuit").register();
+    VanillaFactory.createItem("engraved_mana_circuit").register();
 
+    VanillaFactory.createItem("elf_boule").register();
+    VanillaFactory.createItem("elf_wafer").register();
     VanillaFactory.createItem("elf_mana_circuit").register();
 
     VanillaFactory.createItem("elemental_essence_base").register();

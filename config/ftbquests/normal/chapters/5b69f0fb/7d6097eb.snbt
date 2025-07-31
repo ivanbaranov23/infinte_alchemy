@@ -1,0 +1,13 @@
+{
+	x: -3.0d,
+	y: 1.0d,
+	text: [
+		"Healing aura ritual can outheal mobs in the smeltery. Meaning free infinite blood"
+	],
+	tasks: [{
+		uid: "a65f5c03",
+		type: "checkmark",
+		title: "Free blood",
+		icon: "roots:ritual_healing_aura"
+	}]
+}

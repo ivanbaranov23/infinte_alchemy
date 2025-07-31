@@ -1,7 +1,8 @@
 {
-	x: -3.5d,
-	y: 7.5d,
+	x: 1.5d,
+	y: -6.0d,
 	dependencies: [
+		"9467bc63",
 		"3b120419"
 	],
 	optional: true,

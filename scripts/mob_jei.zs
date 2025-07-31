@@ -150,3 +150,31 @@ addJEIentityHint(
     [], null,
     [<minecraft:chorus_fruit>, <minecraft:ghast_tear>, <minecraft:prismarine_crystals>], null, ""
 );
+
+//fluid transform
+addJEIentityHint(
+    [], null, "minecraft:squid", 
+    [], <liquid:lifeessence>,
+    [], null, "minecraft:guardian"
+);
+addJEIentityHint(
+    [], null, "minecraft:villager", 
+    [], <liquid:lifeessence>,
+    [], null, "minecraft:vindication_illager"
+);
+addJEIentityHint(
+    [], null, "minecraft:chicken", 
+    [], <liquid:lifeessence>,
+    [], null, "primitivemobs:dodo"
+);
+
+addJEIentityHint(
+    [], null, "minecraft:skeleton", 
+    [], <liquid:witchwater>,
+    [], null, "minecraft:wither_skeleton"
+);
+addJEIentityHint(
+    [], null, "minecraft:creeper", 
+    [], <liquid:witchwater>,
+    [<xreliquary:mob_ingredient:8>], null, "minecraft:creeper"
+);

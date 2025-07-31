@@ -796,7 +796,7 @@ function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
     rec.setChance(0.0);
     
 
-    rec.addHotAirInput(temp, temp - 1, temp + 10000);
+    rec.addHotAirInput(temp, 0, 0);
 
     rec.build();
 }

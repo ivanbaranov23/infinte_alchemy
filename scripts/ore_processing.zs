@@ -95,7 +95,7 @@ function addTingalumOvenRecipe(out as IItemStack[], inp as IItemStack[], energy 
         rec.addItemInput(i);
     }
     
-    rec.addHotAirInput(temp, temp, 1000000000);
+    //rec.addHotAirInput(temp, temp, 1000000000);
 
     rec.build();
 }

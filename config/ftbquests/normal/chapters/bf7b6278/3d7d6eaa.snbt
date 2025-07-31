@@ -1,6 +1,9 @@
 {
 	x: 2.0d,
 	y: -3.0d,
+	text: [
+		"A stronger enhancer"
+	],
 	dependencies: [
 		"96744c74"
 	],

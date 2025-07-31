@@ -7,7 +7,7 @@
 		"",
 		"Make some roots crops. ",
 		"",
-		"You won't be able to grow them just yet so you'll need to use crafting recipe multiple times."
+		"You won't be able to grow cloud berry just yet so you'll need to use crafting recipe multiple times."
 	],
 	dependencies: [
 		"f7305be9",

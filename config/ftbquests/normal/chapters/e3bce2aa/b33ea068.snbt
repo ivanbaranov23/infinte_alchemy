@@ -1,6 +1,9 @@
 {
 	x: 2.0d,
 	y: -2.0d,
+	text: [
+		"It's rocking time"
+	],
 	dependencies: [
 		"31c8f138"
 	],

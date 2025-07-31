@@ -8,9 +8,9 @@
 		"It's recipes takes quite a long time so consider crafting singularities before you'll need them."
 	],
 	dependencies: [
-		"b6bb720f",
 		"8148d18c",
-		"17c93154"
+		"17c93154",
+		"3ce2f0f0"
 	],
 	tasks: [{
 		uid: "a2f66fbd",

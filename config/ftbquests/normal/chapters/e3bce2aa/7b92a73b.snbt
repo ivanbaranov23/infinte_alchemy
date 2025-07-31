@@ -1,0 +1,18 @@
+{
+	x: 2.0d,
+	y: -3.0d,
+	text: [
+		"It's sanding time"
+	],
+	dependencies: [
+		"b33ea068"
+	],
+	optional: true,
+	tasks: [{
+		uid: "5699e2c9",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 1 497"
+		}]
+	}]
+}

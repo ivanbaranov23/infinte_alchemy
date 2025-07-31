@@ -1,8 +1,8 @@
 {
 	x: -3.0d,
-	y: -3.0d,
+	y: -2.0d,
 	text: [
-		"Works with custom cobblegen"
+		"Works with custom cobblegen, i repeat, works with custom cobblegen"
 	],
 	dependencies: [
 		"7ee7dc77"
@@ -14,5 +14,10 @@
 		items: [{
 			item: "extrautils2:ingredients 1 8"
 		}]
+	}],
+	rewards: [{
+		uid: "9b64285a",
+		type: "item",
+		item: "extrautils2:ingredients 1 8"
 	}]
 }

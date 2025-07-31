@@ -1,0 +1,36 @@
+{
+	title: "Drawers",
+	x: -6.5d,
+	y: -2.0d,
+	text: [
+		"Drawers base storage capacity was boosted by 4 times"
+	],
+	dependencies: [
+		"911ba93a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7d9e5a40",
+		type: "item",
+		items: [{
+			item: "storagedrawers:framingtable"
+		}]
+	},
+	{
+		uid: "3a300242",
+		type: "item",
+		items: [{
+			item: "storagedrawers:customdrawers"
+		}]
+	}],
+	rewards: [{
+		uid: "4a0d0232",
+		type: "item",
+		item: "storagedrawers:drawer_key"
+	},
+	{
+		uid: "c66fceb5",
+		type: "item",
+		item: "storagedrawers:quantify_key"
+	}]
+}

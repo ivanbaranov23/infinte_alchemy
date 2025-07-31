@@ -1,6 +1,6 @@
 {
 	x: -4.5d,
-	y: 5.5d,
+	y: 2.0d,
 	text: [
 		"Are you tired of all skyblock starting the same? Tired of twerking, composting, hammering and sieving again and again?  ",
 		"",
@@ -9,6 +9,7 @@
 	dependencies: [
 		"2ecdc636"
 	],
+	optional: true,
 	tasks: [{
 		uid: "a916d998",
 		type: "checkmark",

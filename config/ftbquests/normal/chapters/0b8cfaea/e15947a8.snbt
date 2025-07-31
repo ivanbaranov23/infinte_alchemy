@@ -1,6 +1,6 @@
 {
-	x: 0.5d,
-	y: 8.5d,
+	x: 3.5d,
+	y: 3.0d,
 	text: [
 		"Select recipe in altar, put corresponding stone on top of altar and dust on top of the stone and watch the magic.",
 		"",
@@ -17,6 +17,7 @@
 	dependencies: [
 		"acffbdbd"
 	],
+	optional: true,
 	tasks: [{
 		uid: "9bab8001",
 		type: "item",

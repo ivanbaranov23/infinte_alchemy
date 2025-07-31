@@ -4,7 +4,7 @@
 	x: 10.0d,
 	y: -1.0d,
 	text: [
-		""
+		"For making ethanol"
 	],
 	dependencies: [
 		"706f727e"
@@ -55,5 +55,22 @@
 			item: "minecraft:cauldron"
 		}],
 		count: 4L
+	}],
+	rewards: [{
+		uid: "3dafe389",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/immersiveengineering/ie-fermenter",
+				label: "Ie-fermenter",
+				size: 3
+			}
+		}
 	}]
 }

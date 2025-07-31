@@ -5,6 +5,9 @@ minecraft:smith
 minecraft:butcher
 minecraft:nitwit
 openblocks:radio
+vtt:brewer
+vtt:redstoner
+vtt:tinkerer
 roots:wild_mage
 primitivemobs:miner
 primitivemobs:merchant
@@ -13,5 +16,4 @@ primitivemobs:sheepman_scavenger
 primitivemobs:sheepman_alchemist
 primitivemobs:sheepman_thief
 actuallyadditions:jamguy
-actuallyadditions:engineer
 immersiveengineering:engineer

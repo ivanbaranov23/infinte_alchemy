@@ -1,12 +1,13 @@
 {
-	x: 1.5d,
-	y: 8.5d,
+	x: 4.5d,
+	y: 3.0d,
 	text: [
 		"Breaks cobble->gravel->sand->dust in world, so you don't have to place it"
 	],
 	dependencies: [
 		"e15947a8"
 	],
+	optional: true,
 	tasks: [{
 		uid: "95e8beb6",
 		type: "item",

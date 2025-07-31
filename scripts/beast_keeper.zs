@@ -37,16 +37,16 @@ function addArrowMilking(ent as IEntityDefinition, item as IItemStack){
         [item]
     );
 }
-addArrowMilking(<entity:minecraft:zombie>, <exnihilocreatio:item_ore_iron>);
-addArrowMilking(<entity:minecraft:skeleton>, <exnihilocreatio:item_ore_tin>);
-addArrowMilking(<entity:minecraft:spider>, <exnihilocreatio:item_ore_copper>);
-addArrowMilking(<entity:primitivemobs:skeleton_warrior>, <exnihilocreatio:item_ore_zinc>);
-addArrowMilking(<entity:minecraft:enderman>, <exnihilocreatio:item_ore_nickel>);
+addArrowMilking(<entity:minecraft:zombie>, <exnihilocreatio:item_ore_iron> * 4);
+addArrowMilking(<entity:minecraft:skeleton>, <exnihilocreatio:item_ore_tin> * 4);
+addArrowMilking(<entity:minecraft:spider>, <exnihilocreatio:item_ore_copper> * 4);
+addArrowMilking(<entity:primitivemobs:skeleton_warrior>, <exnihilocreatio:item_ore_zinc> * 4);
+addArrowMilking(<entity:minecraft:enderman>, <exnihilocreatio:item_ore_nickel> * 4);
 
-addArrowMilking(<entity:minecraft:creeper>, <thermalfoundation:material:771>);
+addArrowMilking(<entity:minecraft:creeper>, <thermalfoundation:material:771> * 4);
 
 
-addArrowMilking(<entity:minecraft:zombie_pigman>, <exnihilocreatio:item_ore_gold>);
+addArrowMilking(<entity:minecraft:zombie_pigman>, <exnihilocreatio:item_ore_gold> * 4);
 
 
 

@@ -9,6 +9,7 @@
 	dependencies: [
 		"911ba93a"
 	],
+	or_tasks: true,
 	tasks: [{
 		uid: "13855945",
 		type: "item",

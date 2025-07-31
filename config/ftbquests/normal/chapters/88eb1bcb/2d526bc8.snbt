@@ -1,6 +1,9 @@
 {
 	x: -2.0d,
 	y: 1.0d,
+	text: [
+		"Needs GP from manual mill or solar panels. Later you can make better gp sources"
+	],
 	dependencies: [
 		"7ee7dc77"
 	],

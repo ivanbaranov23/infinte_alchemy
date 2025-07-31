@@ -1,6 +1,9 @@
 {
 	x: 11.0d,
 	y: 3.0d,
+	text: [
+		"Can be used to make power in diesel generator"
+	],
 	dependencies: [
 		"0120a191"
 	],

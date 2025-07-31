@@ -9,7 +9,9 @@
 		"",
 		"Reseach is a small puzzle. You have a list of 5-8 items for research and your goal is to find 3 correct among them. ",
 		"To perform research load research medium and 3 items into RS and after some time you will get either research book or a piece of paper ",
-		"which will tell you how many correct items were among those 3."
+		"which will tell you how many correct items were among those 3.",
+		"",
+		"Research medium is used to dup the book and can be found in tooltips or in the hint."
 	],
 	dependencies: [
 		"da8c7508"
@@ -89,7 +91,7 @@
 					Count: 1,
 					Damage: 0s
 				},
-				TrophyName: "Frame 1",
+				TrophyName: "Research",
 				TrophyColorRed: 171,
 				TrophyColorGreen: 171,
 				TrophyColorBlue: 171,
@@ -98,6 +100,23 @@
 				display: {
 					Name: "Research"
 				}
+			}
+		}
+	},
+	{
+		uid: "8b9a8eec",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/research_station",
+				label: "Research Station",
+				size: 5
 			}
 		}
 	}]

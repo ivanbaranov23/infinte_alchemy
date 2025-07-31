@@ -2268,3 +2268,23 @@ item.contenttweaker.tar_bone.name=Tar Bone
 item.contenttweaker.bug_essence.name=Wisper of Erebus Fauna
 
 tile.immersiveengineering.conveyor..name=Conveyor Belt
+
+tile.contenttweaker.tar_light.name=Tar Light
+
+item.contenttweaker.bloodhunter_target_mana.name=BloodHunter Mission Target: Picking Flowers
+ia.tooltip.bloodhunter_target_mana=...in the Dark Realm
+
+item.contenttweaker.umberrack_dust.name=Umberrack Dust
+item.contenttweaker.umberrack.name=Umberrack Brick
+tile.contenttweaker.umberrack_bricks.name=Umberrack Bricks
+
+tile.contenttweaker.raw_greenick.name=Raw Greenick
+tile.contenttweaker.greenick_smoth.name=Smooth Greenick
+tile.contenttweaker.greenick_bricks.name=Greenick Bricks
+tile.contenttweaker.greenick_tile.name=Greenick Tile
+
+tile.contenttweaker.pumpk_tile.name=Pumpk Tile
+tile.contenttweaker.pumpk_tile2.name=Pumpk CTM Tile
+
+tile.contenttweaker.karmesine_tile.name=Karmesine Tile
+tile.contenttweaker.karmesine_tile2.name=Karmesine CTM Tile

@@ -36,7 +36,7 @@ if you don't want to have fun researching, first 3/8 items in the list are the a
 
 
 
-mods.jei.JEI.hideCategory("modularmachinery.recipes.research_station");
+//mods.jei.JEI.hideCategory("modularmachinery.recipes.research_station");
 mods.jei.JEI.hideCategory("modularmachinery.recipes.research2");
 
 
@@ -46,6 +46,8 @@ function addResearchRecipe(name as string, medium as IItemStack, out as IItemSta
     out.addTooltip("Researched in Research Station multiblock.");
     out.addTooltip("Research medium is " ~ medium.displayName ~ ", amount: " ~ medium.amount);
     out.addTooltip("One research attempt lasts about " ~ time / 20 ~ " seconds at " ~ energy ~ " rf/tick");
+
+    medium.addTooltip("Research medium for " ~ out.displayName);
     
     scripts.jei.addJEIhint(
         [medium], [],
@@ -69,7 +71,7 @@ function addResearchRecipe(name as string, medium as IItemStack, out as IItemSta
         for j in (i + 1) to (input.length - 1){
             for k in (j + 1) to input.length{
                 var rec = RecipeBuilder.newBuilder(
-                    "research_" + out.name + (i as string) + "_" + (j as string) + "_" + (k as string) , 
+                    "research_" ~ name ~ "_" ~ i ~ "_" ~ j ~ "_" ~ k, 
                     "research_station", time);
 
                 rec.addItemInput(medium);

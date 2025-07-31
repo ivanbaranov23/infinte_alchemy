@@ -1,6 +1,10 @@
 {
 	x: 4.0d,
 	y: 3.0d,
+	text: [
+		"Enhances stuff. Like making more dyes or more flint or fire shards from lava. ",
+		"Make redstone to make enhancer to make more redstone to make more enhancer"
+	],
 	dependencies: [
 		"b6bb720f",
 		"9c741525"

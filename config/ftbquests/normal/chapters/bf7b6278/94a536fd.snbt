@@ -13,5 +13,22 @@
 		uid: "ae487e06",
 		type: "checkmark",
 		icon: "immersiveengineering:metal_multiblock 1 15"
+	}],
+	rewards: [{
+		uid: "b5149cba",
+		type: "item",
+		item: {
+			id: "capsule:capsule",
+			Damage: 3s,
+			tag: {
+				display: {
+					color: 3949738
+				},
+				sourceInventory: {},
+				structureName: "config/capsule/prefabs/immersiveengineering/ie-mixer",
+				label: "Ie-mixer",
+				size: 3
+			}
+		}
 	}]
 }

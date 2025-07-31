@@ -1,0 +1,20 @@
+{
+	x: 9.5d,
+	y: 2.5d,
+	shape: "diamond",
+	text: [
+		"You can grow paperbark here too"
+	],
+	dependencies: [
+		"6a411f76"
+	],
+	tasks: [{
+		uid: "8bd2ab9d",
+		type: "item",
+		items: [{
+			item: "minecraft:paper"
+		}],
+		count: 1024L,
+		consume_items: true
+	}]
+}
