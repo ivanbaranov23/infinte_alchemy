@@ -1,4 +1,5 @@
 {
+	title: "Chrysopopoeaff",
 	icon: {
 		id: "roots:spell_icon",
 		tag: {
@@ -9,6 +10,9 @@
 	},
 	x: 2.0d,
 	y: 2.0d,
+	text: [
+		"Put items to transform in your off hand and use the spell to transform items"
+	],
 	dependencies: [
 		"b2974413"
 	],

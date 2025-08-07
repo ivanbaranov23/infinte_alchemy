@@ -1,0 +1,19 @@
+{
+	title: "x0.7 to recipe time",
+	x: 10.0d,
+	y: 3.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"22106357"
+	],
+	optional: true,
+	tasks: [{
+		uid: "cfa385be",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ev_coil"
+		}]
+	}]
+}

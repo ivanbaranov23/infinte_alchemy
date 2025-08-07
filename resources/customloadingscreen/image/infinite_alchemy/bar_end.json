@@ -1,0 +1,18 @@
+{
+    "parent": "builtin/image",
+    "image": "customloadingscreen:image/infinite_alchemy/bar_end.png",
+    "position_type": "CENTER",
+    "offset_pos": "CENTER",
+    "position": {
+        "x": "-screen_width * 0.4 + percentage * screen_width * 0.8", 
+        "y":"screen_height * 0.3 - 20",
+        "width": "64",
+        "height": "64"
+    },
+    "texture": {
+        "x": "0", 
+        "y": "(floor(time * 10) % 8) * 0.125",
+        "width": "1",
+        "height": "0.125"
+    }
+}

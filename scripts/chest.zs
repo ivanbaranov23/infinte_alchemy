@@ -1,3 +1,5 @@
+import scripts.recycler.addRecycle;
+
 
 recipes.remove(<extrautils2:minichest>);
 recipes.addShapeless("ia_minichest", <extrautils2:minichest> * 8, [<ore:chestWood>]);
@@ -86,31 +88,42 @@ recipes.addShapeless("ia_minichest", <extrautils2:minichest> * 8, [<ore:chestWoo
         [<actuallyadditions:block_misc:4>], 
         [<minecraft:chest>]
     ]);
+	addRecycle(<colossalchests:chest_wall> * 4, [<actuallyadditions:block_misc:4>, <minecraft:chest> * 2]);
+
     recipes.addShaped("cc_copper", <colossalchests:chest_wall:1> * 4, [
         [<ironchest:iron_chest:3>], 
         [<actuallyadditions:block_misc:4>], 
         [<ironchest:iron_chest:3>]
     ]);
+	addRecycle(<colossalchests:chest_wall:1> * 4, [<actuallyadditions:block_misc:4>, <ironchest:iron_chest:3> * 2]);
+
     recipes.addShaped("cc_iron", <colossalchests:chest_wall:2> * 4, [
         [<ironchest:iron_chest>], 
         [<actuallyadditions:block_misc:4>], 
         [<ironchest:iron_chest>]
     ]);
+	addRecycle(<colossalchests:chest_wall:2> * 4, [<actuallyadditions:block_misc:4>, <ironchest:iron_chest> * 2]);
+
     recipes.addShaped("cc_silver", <colossalchests:chest_wall:3> * 4, [
         [<ironchest:iron_chest:4>], 
         [<actuallyadditions:block_misc:4>], 
         [<ironchest:iron_chest:4>]
     ]);
+	addRecycle(<colossalchests:chest_wall:3> * 4, [<actuallyadditions:block_misc:4>, <ironchest:iron_chest:4> * 2]);
+
     recipes.addShaped("cc_gold", <colossalchests:chest_wall:4> * 4, [
         [<ironchest:iron_chest:1>], 
         [<actuallyadditions:block_misc:4>], 
         [<ironchest:iron_chest:1>]
     ]);
+	addRecycle(<colossalchests:chest_wall:4> * 4, [<actuallyadditions:block_misc:4>, <ironchest:iron_chest:1> * 2]);
+
     recipes.addShaped("cc_diamond", <colossalchests:chest_wall:5> * 4, [
         [<ironchest:iron_chest:2>], 
         [<actuallyadditions:block_misc:4>], 
         [<ironchest:iron_chest:2>]
     ]);
+	addRecycle(<colossalchests:chest_wall:5> * 4, [<actuallyadditions:block_misc:4>, <ironchest:iron_chest:2> * 2]);
     
 
 	recipes.remove(<colossalchests:colossal_chest:*>);
@@ -119,6 +132,12 @@ recipes.addShapeless("ia_minichest", <extrautils2:minichest> * 8, [<ore:chestWoo
 			[<actuallyadditions:block_misc:4>, <storagedrawers:controller>, <actuallyadditions:block_misc:4>], 
 			[<actuallyadditions:block_giant_chest>, <colossalchests:chest_wall>.definition.makeStack(i), <actuallyadditions:block_giant_chest>], 
 			[<actuallyadditions:block_misc:4>, <storagedrawers:controller>, <actuallyadditions:block_misc:4>]
+		]);
+		addRecycle(<colossalchests:colossal_chest>.definition.makeStack(i), [
+			<colossalchests:chest_wall>.definition.makeStack(i),
+			<storagedrawers:controller> * 2,
+			<actuallyadditions:block_misc:4> * 4,
+			<actuallyadditions:block_giant_chest> * 2
 		]);
 	}
 }

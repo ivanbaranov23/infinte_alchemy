@@ -1,0 +1,67 @@
+{
+	x: 2.5d,
+	y: 2.0d,
+	text: [
+		"Imo colossal chests aren't worth using without SSN or the like."
+	],
+	dependencies: [
+		"a271d997"
+	],
+	optional: true,
+	or_tasks: true,
+	tasks: [{
+		uid: "672569f0",
+		type: "item",
+		items: [{
+			item: "colossalchests:colossal_chest"
+		}]
+	},
+	{
+		uid: "66c65bec",
+		type: "item",
+		items: [{
+			item: "colossalchests:colossal_chest 1 1"
+		}]
+	},
+	{
+		uid: "595a85b5",
+		type: "item",
+		items: [{
+			item: "colossalchests:colossal_chest 1 2"
+		}]
+	},
+	{
+		uid: "b68b7df6",
+		type: "item",
+		items: [{
+			item: "colossalchests:colossal_chest 1 3"
+		}]
+	},
+	{
+		uid: "9a1a2c17",
+		type: "item",
+		items: [{
+			item: "colossalchests:colossal_chest 1 4"
+		}]
+	},
+	{
+		uid: "f2052395",
+		type: "item",
+		items: [{
+			item: "colossalchests:colossal_chest 1 5"
+		}]
+	},
+	{
+		uid: "b64c4d01",
+		type: "item",
+		items: [{
+			item: "colossalchests:colossal_chest 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "54a731e0",
+		type: "item",
+		item: "actuallyadditions:block_misc 1 4",
+		count: 4
+	}]
+}

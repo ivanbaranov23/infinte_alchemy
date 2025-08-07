@@ -1,5 +1,5 @@
 {
-	x: 4.0d,
+	x: 7.0d,
 	y: 1.0d,
 	text: [
 		"This wonderful tool will summon a loyal zombie. This zombie will teleport to the player that summoned it. If it was summoned by player, that is.",

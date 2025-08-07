@@ -1,6 +1,9 @@
 {
 	x: 3.0d,
 	y: 3.0d,
+	text: [
+		"Did you know that induction smelter is also a druid?"
+	],
 	dependencies: [
 		"fbc73e23"
 	],

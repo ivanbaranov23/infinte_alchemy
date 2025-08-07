@@ -1,8 +1,21 @@
 {
-	x: 8.0d,
+	icon: "modularcontroller:druid_circle_controller",
+	x: 10.0d,
 	y: 0.0d,
+	text: [
+		"Put skulls on runestone walls.",
+		"",
+		"Druid circle is somewhat unique multiblock. It has 8 pillars and you are supposed to change them to what you need. ",
+		"",
+		"You can get more output liquid or add chance to not consume inputs.",
+		"Mix and match pillars for desired effect. ",
+		"",
+		"All pillar effects are write per pillar."
+	],
 	dependencies: [
-		"8f8c00ed"
+		"8f8c00ed",
+		"05dc6375",
+		"f9275816"
 	],
 	tasks: [{
 		uid: "9e7a6336",
@@ -10,5 +23,21 @@
 		items: [{
 			item: "modularcontroller:druid_circle_controller"
 		}]
+	},
+	{
+		uid: "8ff9142c",
+		type: "item",
+		items: [{
+			item: "minecraft:skull 1 1"
+		}],
+		count: 4L
+	},
+	{
+		uid: "6f45ac81",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:jar_filled 1 1"
+		}],
+		ignore_nbt: 1b
 	}]
 }

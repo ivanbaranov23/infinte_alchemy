@@ -4,6 +4,9 @@
 	text: [
 		"You can find inferior glowshrooms in the nether or make them via Flower Growth Ritual. Use them to make Glowshroom stew"
 	],
+	dependencies: [
+		"7aa8e742"
+	],
 	tasks: [{
 		uid: "b0c9a4e0",
 		type: "checkmark",

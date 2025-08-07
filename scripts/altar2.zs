@@ -42,27 +42,52 @@ altar.setJEIItemSlot(5, 0, "output");
 static inputs as int[][IBlockState] = {
     <blockstate:minecraft:stone:variant=andesite>: [3, 1, 0, 0],
     <blockstate:minecraft:stone:variant=granite>: [2, 1, 0, 0],
+    <blockstate:minecraft:stone:variant=diorite>: [2, 1, 1, 0],
+
+    <blockstate:minecraft:sand:variant=sand>: [1, 1, 1, 0],
+    <blockstate:minecraft:gravel>: [0, 2, -1, 0],
+    <blockstate:minecraft:obsidian>: [2, -1, 2, 0],
+    <blockstate:minecraft:glass>: [3, 0, -1, 1],
     
     <blockstate:minecraft:concrete:color=red>: [1, 0, 0, 0],
     <blockstate:minecraft:concrete:color=yellow>: [0, 1, 0, 0],
     <blockstate:minecraft:concrete:color=green>: [0, 0, 1, 0],
     <blockstate:minecraft:concrete:color=blue>: [0, 0, 0, 1],
 
+    <blockstate:minecraft:wool:color=red>: [-1, 0, 0, 0],
+    <blockstate:minecraft:wool:color=yellow>: [0, -1, 0, 0],
+    <blockstate:minecraft:wool:color=green>: [0, 0, -1, 0],
+    <blockstate:minecraft:wool:color=blue>: [0, 0, 0, -1],
+
     <blockstate:minecraft:iron_ore>: [10, 3, 0, 0],
     <blockstate:thermalfoundation:ore:type=copper>: [8, 3, 0, 0],
+    <blockstate:thermalfoundation:ore:type=tin>: [9, 3, 3, 0],
 };
 
 static jei_info as int[][IItemStack] = {
     <minecraft:stone:5>: [3, 1, 0, 0],
     <minecraft:stone:1>: [2, 1, 0, 0],
+    <minecraft:stone:3>: [2, 1, 1, 0],
+
+    <minecraft:sand>: [1, 1, 1, 0],
+    <minecraft:gravel>: [0, 2, -1, 0],
+    <minecraft:obsidian>: [2, -1, 2, 0],
+    <minecraft:glass>: [3, 0, -1, 1],
 
     <minecraft:concrete:14>: [1, 0, 0, 0],
     <minecraft:concrete:4>: [0, 1, 0, 0],
     <minecraft:concrete:13>: [0, 0, 1, 0],
     <minecraft:concrete:11>: [0, 0, 0, 1],
 
+    <minecraft:wool:14>: [-1, 0, 0, 0],
+    <minecraft:wool:4>: [0, -1, 0, 0],
+    <minecraft:wool:13>: [0, 0, -1, 0],
+    <minecraft:wool:11>: [0, 0, 0, -1],
+
+
     <minecraft:iron_ore>: [10, 3, 0, 0],
     <thermalfoundation:ore>: [8, 3, 0, 0],
+    <thermalfoundation:ore:1>: [9, 3, 3, 0],
 };
 
 
@@ -139,10 +164,14 @@ for item,score in jei_info{
         container.addItemOutput("output", item);
         
     });
-    if (score[0] != 0) recipe.requireItem("red",       <thermalfoundation:dye:1> * score[0]);
-    if (score[1] != 0) recipe.requireItem("yellow",    <thermalfoundation:dye:11>* score[1]);
-    if (score[2] != 0) recipe.requireItem("green",     <thermalfoundation:dye:2> * score[2]);
-    if (score[3] != 0) recipe.requireItem("blue",      <thermalfoundation:dye:4> * score[3]);
+    if (score[0] > 0) recipe.requireItem("red",         <thermalfoundation:dye:1>.withDisplayName("+") * score[0]);
+    else if (score[0] < 0) recipe.requireItem("red",        <botania:dye:14>.withDisplayName("-") * (-score[0]));
+    if (score[1] > 0) recipe.requireItem("yellow",      <thermalfoundation:dye:11>.withDisplayName("+")* score[1]);
+    else if (score[1] < 0) recipe.requireItem("yellow",     <botania:dye:4>.withDisplayName("-") * (-score[1]));
+    if (score[2] > 0) recipe.requireItem("green",       <thermalfoundation:dye:2>.withDisplayName("+") * score[2]);
+    else if (score[2] < 0) recipe.requireItem("green",      <botania:dye:13>.withDisplayName("-") * (-score[2]));
+    if (score[3] > 0) recipe.requireItem("blue",        <thermalfoundation:dye:4>.withDisplayName("+") * score[3]);
+    else if (score[3] < 0) recipe.requireItem("blue",       <botania:dye:11>.withDisplayName("-") * (-score[3]));
     altar.addJEIRecipe(recipe);
 }
 

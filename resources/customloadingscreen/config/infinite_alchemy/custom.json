@@ -1,0 +1,17 @@
+{
+    "renders":[
+        "infinite_alchemy/bg",
+        "infinite_alchemy/bar_base",
+        "infinite_alchemy/bar_progress",
+        "infinite_alchemy/bar_end",
+        "infinite_alchemy/bar_text"
+    ],
+    "functions":[
+    ],
+    "factories":[
+    ],
+    "actions":[
+    ],
+    "variables":{
+    }
+}

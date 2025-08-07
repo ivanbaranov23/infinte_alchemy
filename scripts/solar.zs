@@ -345,3 +345,24 @@ scripts.content_machines.addAdvancedMixerRecipe(
 		<liquid:glowstone> * 1000
 	], 20, 1000
 );
+
+
+
+{
+	recipes.addShaped("ia_solar_upg_base", <solarflux:blank_upgrade>, [
+		[<contenttweaker:tungsten_plate>, <moreplates:draconium_plate>, <contenttweaker:tungsten_plate>],
+		[<extrautils2:suncrystal>, <solarflux:solar_panel_4>, <extrautils2:suncrystal>],
+		[<contenttweaker:tungsten_plate>, <moreplates:draconium_plate>, <contenttweaker:tungsten_plate>]
+	]);
+
+	recipes.addShaped("ia_solar_eff", <solarflux:efficiency_upgrade>, [
+		[<solarflux:solar_panel_3>, <solarflux:solar_panel_3>, <solarflux:solar_panel_3>],
+		[<solarflux:solar_panel_3>, <solarflux:blank_upgrade>, <solarflux:solar_panel_3>],
+		[<solarflux:solar_panel_3>, <solarflux:solar_panel_3>, <solarflux:solar_panel_3>]
+	]);
+	recipes.addShaped("ia_solar_cap", <solarflux:capacity_upgrade>, [
+		[null, <actuallyadditions:item_battery>, null],
+		[<mekanism:energytablet>, <solarflux:blank_upgrade>, <mekanism:energytablet>],
+		[null, <actuallyadditions:item_battery>, null]
+	]);
+}

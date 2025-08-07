@@ -1,12 +1,24 @@
 import mods.enderio.SagMill;
 
+//ores
+
+
+
 {//t1
     {//iron
+        mods.exnihilocreatio.Hammer.addRecipe(
+            <minecraft:iron_ore>, <exnihilocreatio:item_ore_iron> * 5,
+            0, 1.0, 1.0
+        );
         mods.tconstruct.Melting.addRecipe(<liquid:iron> * 288, <minecraft:iron_ore>, 700);
 
         mods.botania.PureDaisy.addRecipe(<contenttweaker:poor_iron_ore>, <minecraft:iron_ore>);
     }
     {//copper
+        mods.exnihilocreatio.Hammer.addRecipe(
+            <thermalfoundation:ore>, <exnihilocreatio:item_ore_copper> * 5,
+            0, 1.0, 1.0
+        );
         mods.tconstruct.Melting.addRecipe(<liquid:copper> * 288, <thermalfoundation:ore>, 700);
 
         recipes.addShapeless("copper_conv", <thermalfoundation:ore>, [
@@ -14,18 +26,34 @@ import mods.enderio.SagMill;
         ]);
     }
     {//tin
+        mods.exnihilocreatio.Hammer.addRecipe(
+            <thermalfoundation:ore:1>, <exnihilocreatio:item_ore_tin> * 5,
+            0, 1.0, 1.0
+        );
         mods.tconstruct.Melting.addRecipe(<liquid:tin> * 288, <thermalfoundation:ore:1>, 700);
     }
     {//nickel
+        mods.exnihilocreatio.Hammer.addRecipe(
+            <thermalfoundation:ore:5>, <exnihilocreatio:item_ore_nickel> * 5,
+            0, 1.0, 1.0
+        );
         mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 288, <thermalfoundation:ore:5>, 700);
     }
     {//aluminum
-        mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * 144, <thermalfoundation:ore:4>, 700);
+        mods.exnihilocreatio.Hammer.addRecipe(
+            <thermalfoundation:ore:4>, <exnihilocreatio:item_ore_aluminum> * 5,
+            0, 1.0, 1.0
+        );
+        mods.tconstruct.Melting.addRecipe(<liquid:aluminum> * 288, <thermalfoundation:ore:4>, 700);
 
         furnace.remove(<erebus:materials:42>);
         furnace.addRecipe(<thermalfoundation:material:196> * 2, <contenttweaker:bauxite_dust>);
     }
     {//zinc
+        mods.exnihilocreatio.Hammer.addRecipe(
+            <contenttweaker:zinc_ore>, <exnihilocreatio:item_ore_zinc> * 5,
+            0, 1.0, 1.0
+        );
         mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 288, <contenttweaker:zinc_ore>, 700);
 
         <ore:dustZinc>.remove(<exnihilocreatio:item_ore_zinc:2>);

@@ -296,6 +296,7 @@ function addFluidReservoir(
 
     //bop
     <ore:oreOverworldRuby>.add(<biomesoplenty:gem_ore:1>);
+    <ore:oreOverworldAmber>.add(<biomesoplenty:gem_ore:7>);
     <ore:oreOverworldSapphire>.add(<biomesoplenty:gem_ore:6>);
 
 
@@ -429,6 +430,7 @@ var mil as int = 1000000;
     addExcavator("Quartz", 10, ["oreOverworldQuartz", "oreOverworldCertusQuartz", "oreOverworldBlackQuartz"], [0.65, 0.3, 0.05], [0, -11325]);
     addExcavator("Certus Quartz", 10, ["oreOverworldCertusQuartz", "oreOverworldChargedCertusQuartz", "oreOverworldBlackQuartz"], [0.65, 0.25, 0.1], [0, -11325]);
     
+    addExcavator("Amber and Amber", 10, ["oreOverworldAmber", "blockErebusAmber"], [0.75, 0.25], [0, -11325]);
 
     addExcavator("Titanium and Garbage", 5, ["oreOverworldTitanium", "oreOverworldSapphire", "oreOverworldNeodymium", "oreOverworldVibranium"], [0.90, 0.07, 0.02, 0.01], [0, -11325]);
 
@@ -455,6 +457,7 @@ var mil as int = 1000000;
     addExcavator("Erebus Petrified", 5, ["oreErebusWood", "oreErebusPetrifiedQuartz"], [0.75, 0.25], [66, -11325]);
     addExcavator("Erebus Quartz", 15, ["oreErebusPetrifiedQuartz", "oreErebusQuartz"], [0.35, 0.65], [66, -11325]);
 
+    addExcavator("Erebus SLAm", 10, ["oreErebusSilver", "oreErebusLapis", "oreOverworldAmber", "blockErebusAmber"], [0.5, 0.15, 0.25, 0.1], [0, -11325]);
 
     addFluidReservoir("Erebus Bugs", 10, <liquid:bugs>, 10000, 100000, 1, [66, -11325]);
     addFluidReservoir("Erebus Rich Mud", 20, <liquid:claymud>, 3 * mil, 7 * mil, 6, [66, -11325]);

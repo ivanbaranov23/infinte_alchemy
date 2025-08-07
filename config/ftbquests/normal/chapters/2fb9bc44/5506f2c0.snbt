@@ -1,12 +1,11 @@
 {
-	x: -1.5d,
+	x: 1.5d,
 	y: 5.0d,
 	text: [
 		"You'll need andesite magma to melt this."
 	],
 	dependencies: [
-		"f8152e75",
-		"d9309953"
+		"f8152e75"
 	],
 	optional: true,
 	tasks: [{

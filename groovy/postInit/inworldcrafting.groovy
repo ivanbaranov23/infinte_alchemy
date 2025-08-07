@@ -9,7 +9,7 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .input(item('contenttweaker:bauxite_dust') * 2)
         .input(item('appliedenergistics2:material', 3))
         .input(item('minecraft:clay_ball'))
-        .output(item('thermalfoundation:material', 68) * 3)
+        .output(item('thermalfoundation:material', 68) * 5)
         .register()
 
 inWorldCrafting.fluidToItem.recipeBuilder()

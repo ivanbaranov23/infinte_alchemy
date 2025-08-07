@@ -19,24 +19,7 @@ recipes.addShapeless("ia_carbonpile_alt3", <moretcon:carbonpile>, [
 ]);
 
 
-mods.tconstruct.Casting.removeTableRecipe(<moretcon:rawsteel>);
-mods.tconstruct.Casting.addTableRecipe(
-	<moretcon:rawsteel>, 
-	<moretcon:carbonpile>,
-	<liquid:iron>, 144,
-	true
-);
-mods.thermalexpansion.Transposer.addFillRecipe(
-    <moretcon:rawsteel>, <moretcon:carbonpile>, 
-    <liquid:iron> * 144, 
-    1000
-);
-furnace.remove(<ore:ingotSteel>, <moretcon:rawsteel>);
-mods.immersiveengineering.BlastFurnace.addRecipe(
-	<thermalfoundation:material:160> * 2, <moretcon:rawsteel>, 
-	20 * 20, 
-	<thermalfoundation:material:864>
-);
+
 
 
 recipes.remove(<moretcon:hydrogenrichredstonepowder>);

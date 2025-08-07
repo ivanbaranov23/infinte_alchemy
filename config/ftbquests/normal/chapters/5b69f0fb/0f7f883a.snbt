@@ -1,0 +1,17 @@
+{
+	x: 17.0d,
+	y: 0.0d,
+	text: [
+		"Mixing starlight and water makes sand and sometimes aquamarine ore"
+	],
+	dependencies: [
+		"f500329a"
+	],
+	tasks: [{
+		uid: "fc83ea7e",
+		type: "item",
+		items: [{
+			item: "astralsorcery:itemcraftingcomponent"
+		}]
+	}]
+}

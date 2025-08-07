@@ -9,8 +9,8 @@
 			}]
 		}
 	},
-	x: 7.0d,
-	y: -2.0d,
+	x: 6.0d,
+	y: -5.0d,
 	shape: "diamond",
 	text: [
 		"You'll need an Enchantment Applicator to put a Fortune on a staff. Or I can do it for you.",

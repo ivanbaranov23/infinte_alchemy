@@ -1,0 +1,19 @@
+{
+	title: "+1 output item, x2 input energy",
+	x: 10.5d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"22106357"
+	],
+	optional: true,
+	tasks: [{
+		uid: "dd9170de",
+		type: "item",
+		items: [{
+			item: "extrautils2:ironwood_log"
+		}]
+	}]
+}

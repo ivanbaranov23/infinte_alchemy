@@ -10,5 +10,11 @@
 		items: [{
 			item: "prodigytech:circuit_plate"
 		}]
+	}],
+	rewards: [{
+		uid: "ed78683e",
+		type: "item",
+		item: "prodigytech:circuit_plate",
+		count: 4
 	}]
 }

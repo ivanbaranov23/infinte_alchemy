@@ -40,10 +40,10 @@ openblocks:flim_flam
 projectred-expansion:electric_efficiency
 endercore:xpboost
 endercore:autosmelt
-enderio:soulbound
-enderio:repellent
-enderio:witherarrow
 enderio:shimmer
+enderio:soulbound
+enderio:witherarrow
+enderio:repellent
 enderio:witherweapon
 capsule:recall
 exnihilocreatio:sieve_efficiency

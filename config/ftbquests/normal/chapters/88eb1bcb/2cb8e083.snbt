@@ -1,0 +1,25 @@
+{
+	x: 7.0d,
+	y: 4.0d,
+	text: [
+		"Flight. Eats power, unlike the ring"
+	],
+	dependencies: [
+		"9510762c",
+		"354b66f5"
+	],
+	optional: true,
+	tasks: [{
+		uid: "da06cd96",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			Damage: 17s,
+			tag: {
+				Energy: 0,
+				JetpackParticle: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

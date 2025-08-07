@@ -1,6 +1,9 @@
 {
-	x: 0.0d,
-	y: 2.0d,
+	x: -4.0d,
+	y: -2.0d,
+	text: [
+		"You can get resin from balsam tree, which can be obtained from flower growth ritual next to erebus mud"
+	],
 	tasks: [{
 		uid: "323628cb",
 		type: "item",

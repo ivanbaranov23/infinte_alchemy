@@ -10,25 +10,7 @@ recipes.addShaped("ia_yellow_flower", <minecraft:yellow_flower> * 2, [
     [<minecraft:tallgrass:1>],
     [<minecraft:dye:15>]
 ]);
-
-{//glass
-    {    
-        var rec = RecipeBuilder.newBuilder("glass", "tree_powered_compressor", 40);
-
-        rec.addItemInput(<minecraft:quartz>);
-        rec.addItemInput(<appliedenergistics2:material>);
-        rec.addItemInput(<minecraft:flint> * 3);
-
-        rec.addItemInput(<minecraft:sand> * 8);
-
-        rec.addItemInput(<ore:treeSapling>);
-        rec.addItemInput(<minecraft:dye:15>);
-        
-        rec.addFluidInput(<liquid:lava> * 2000);
-        
-        rec.addItemOutput(<minecraft:glass> * 8);
-        rec.build();
-    }
+{
     {    
         var rec = RecipeBuilder.newBuilder("slimy_glass", "high_oven", 100);
         rec.addEnergyPerTickInput(32);

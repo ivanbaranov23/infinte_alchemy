@@ -1,0 +1,17 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	text: [
+		"Summon a cube. Milk a cube. Make a cheese out of cube milk."
+	],
+	dependencies: [
+		"f75ca920"
+	],
+	tasks: [{
+		uid: "ab0a43f7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:roving"
+		}]
+	}]
+}

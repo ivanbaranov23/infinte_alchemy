@@ -1,9 +1,21 @@
 {
-	x: 4.0d,
-	y: 3.0d,
+	x: 2.0d,
+	y: 0.0d,
+	text: [
+		"Put corresponding items onto catalyst plates to summon a creature."
+	],
+	dependencies: [
+		"b2974413"
+	],
 	tasks: [{
 		uid: "ea2fec28",
 		type: "checkmark",
+		title: "Summoning",
 		icon: "roots:ritual_summon_creatures"
+	}],
+	rewards: [{
+		uid: "6b670fed",
+		type: "item",
+		item: "roots:catalyst_plate"
 	}]
 }

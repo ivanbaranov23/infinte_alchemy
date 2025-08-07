@@ -1,0 +1,21 @@
+{
+	x: 16.0d,
+	y: 0.0d,
+	text: [
+		"Melt some stuff for starlight"
+	],
+	dependencies: [
+		"51249f7c"
+	],
+	tasks: [{
+		uid: "da864772",
+		type: "checkmark",
+		title: "Starlight",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "astralsorcery.liquidstarlight"
+			}
+		}
+	}]
+}

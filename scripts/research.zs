@@ -36,7 +36,7 @@ if you don't want to have fun researching, first 3/8 items in the list are the a
 
 
 
-//mods.jei.JEI.hideCategory("modularmachinery.recipes.research_station");
+mods.jei.JEI.hideCategory("modularmachinery.recipes.research_station");
 mods.jei.JEI.hideCategory("modularmachinery.recipes.research2");
 
 

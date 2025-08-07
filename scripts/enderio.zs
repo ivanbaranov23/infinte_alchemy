@@ -45,6 +45,22 @@ recipes.addShaped("ia_machine_frame9", <enderio:item_material:54>, [
 	[<moreplates:melodic_alloy_plate>, <quantumflux:craftingpiece:1>, <moreplates:melodic_alloy_plate>]
 ]);
 
+//tank
+recipes.remove(<enderio:block_tank>);
+recipes.addShapeless("ia_eio_tank_reset", <enderio:block_tank>, [<enderio:block_tank>]);
+recipes.addShaped("ia_eio_tank", <enderio:block_tank>, [
+	[<minecraft:iron_bars>, <extrautils2:grocket:2>, <minecraft:iron_bars>],
+	[<minecraft:iron_bars>, <openblocks:tank>, <minecraft:iron_bars>],
+	[<minecraft:iron_bars>, <extrautils2:grocket:2>, <minecraft:iron_bars>]
+]);
+recipes.remove(<enderio:block_tank:1>);
+recipes.addShapeless("ia_eio_tank2_reset", <enderio:block_tank:1>, [<enderio:block_tank:1>]);
+recipes.addShaped("ia_eio_tank2", <enderio:block_tank:1>, [
+	[<immersiveengineering:sheetmetal:8>, <ore:dyeBlack>, <immersiveengineering:sheetmetal:8>],
+	[<ore:dyeBlack>, <enderio:block_tank>, <ore:dyeBlack>],
+	[<immersiveengineering:sheetmetal:8>, <immersiveengineering:metal_device0:5>, <immersiveengineering:sheetmetal:8>]
+]);
+
 //glass
 <ore:blockGlassHardened>.remove(<enderio:block_fused_quartz:*>);
 

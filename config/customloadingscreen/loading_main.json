@@ -1,0 +1,17 @@
+{
+    "renders":[
+        {
+            "image": {
+                "parent": "builtin/image"
+            }
+        }
+    ],
+    "functions":[
+    ],
+    "factories":[
+    ],
+    "actions":[
+    ],
+    "variables":{
+    }
+}

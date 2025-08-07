@@ -120,7 +120,7 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 	recipes.addShaped("ia_te_crusher", te_crusher, [
 		[<contenttweaker:compound_metal2>, <thermalfoundation:material:656>, <contenttweaker:compound_metal2>], 
 		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
-		[<contenttweaker:thermal_plate>, <thermalfoundation:material:513>, <contenttweaker:thermal_plate>]
+		[<taiga:karmesine_block>, <thermalfoundation:material:513>, <taiga:karmesine_block>]
 	]);
 
 	val te_furnace = <thermalexpansion:machine>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
@@ -136,7 +136,7 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 	recipes.addShaped("ia_te_compactor", te_compactor, [
 		[<thermalfoundation:material:323>, <contenttweaker:duraluminum_block>, <thermalfoundation:material:323>], 
 		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
-		[<contenttweaker:thermal_plate>, <thermalfoundation:material:513>, <contenttweaker:thermal_plate>]
+		[<taiga:tritonite_block>, <thermalfoundation:material:513>, <taiga:tritonite_block>]
 	]);
 
 	val te_sawmill = <thermalexpansion:machine:2>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
@@ -179,23 +179,23 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 	val te_ice_machine = <thermalexpansion:machine:14>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
 	recipes.remove(te_ice_machine);
 	recipes.addShaped("ia_te_ice_machine", te_ice_machine, [
-		[<contenttweaker:thermal_plate>, <cookingforblockheads:fridge>, <contenttweaker:thermal_plate>], 
+		[<taiga:ovium_block>, <cookingforblockheads:fridge>, <taiga:ovium_block>], 
 		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
-		[<contenttweaker:thermal_plate>, <thermalfoundation:material:513>, <contenttweaker:thermal_plate>]
+		[<biomesoplenty:gem_block:6>, <thermalfoundation:material:513>, <biomesoplenty:gem_block:6>]
 	]);
 
 	val te_enchanter = <thermalexpansion:machine:13>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
 	recipes.remove(te_enchanter);
 	recipes.addShaped("ia_te_enchanter", te_enchanter, [
-		[<contenttweaker:thermal_plate>, <minecraft:enchanting_table>, <contenttweaker:thermal_plate>], 
+		[<extrautils2:simpledecorative>, <minecraft:enchanting_table>, <extrautils2:simpledecorative>], 
 		[<minecraft:experience_bottle>, <thermalexpansion:frame>, <minecraft:experience_bottle>], 
-		[<contenttweaker:thermal_plate>, <thermalfoundation:material:513>, <contenttweaker:thermal_plate>]
+		[<moretcon:blockhallowsite>, <thermalfoundation:material:513>, <moretcon:blockhallowsite>]
 	]);
 
 	val te_crafter = <thermalexpansion:machine:11>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
 	recipes.remove(te_crafter);
 	recipes.addShaped("ia_te_crafter", te_crafter, [
-		[<contenttweaker:thermal_plate>, <avaritia:compressed_crafting_table>, <contenttweaker:thermal_plate>], 
+		[<moreplates:pig_iron_plate>, <avaritia:compressed_crafting_table>, <moreplates:pig_iron_plate>], 
 		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
 		[<contenttweaker:thermal_plate>, <thermalfoundation:material:513>, <contenttweaker:thermal_plate>]
 	]);
@@ -203,7 +203,7 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 	val te_centrifuge = <thermalexpansion:machine:10>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
 	recipes.remove(te_centrifuge);
 	recipes.addShaped("ia_te_centrifuge", te_centrifuge, [
-		[<contenttweaker:thermal_plate>, <contenttweaker:rotor_blades>, <contenttweaker:thermal_plate>], 
+		[<contenttweaker:wear_resistant_alloy_plate>, <contenttweaker:rotor_blades>, <contenttweaker:wear_resistant_alloy_plate>], 
 		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
 		[<contenttweaker:thermal_plate>, <thermalfoundation:material:513>, <contenttweaker:thermal_plate>]
 	]);
@@ -223,31 +223,31 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 	val te_transposer = <thermalexpansion:machine:8>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
 	recipes.remove(te_transposer);
 	recipes.addShaped("ia_te_transposer", te_transposer, [
-		[<contenttweaker:thermal_plate>, <extrautils2:grocket:2>, <contenttweaker:thermal_plate>], 
+		[<contenttweaker:watertight_steel_plate>, <extrautils2:grocket:2>, <contenttweaker:watertight_steel_plate>], 
 		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
-		[<contenttweaker:thermal_plate>, <thermalfoundation:material:512>, <contenttweaker:thermal_plate>]
+		[<thermalfoundation:storage:6>, <thermalfoundation:material:512>, <thermalfoundation:storage:6>]
 	]);
 
 	val te_magma = <thermalexpansion:machine:6>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
 	recipes.remove(te_magma);
 	recipes.addShaped("ia_te_magma", te_magma, [
-		[<contenttweaker:thermal_plate>, <immersiveengineering:stone_decoration:1>, <contenttweaker:thermal_plate>], 
-		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
-		[<contenttweaker:thermal_plate>, <thermalfoundation:material:512>, <contenttweaker:thermal_plate>]
+		[<prodigytech:heat_capacitor_1>, <exnihilocreatio:block_crucible:1>, <prodigytech:heat_capacitor_1>], 
+		[<immersiveengineering:stone_decoration:2>, <thermalexpansion:frame>, <immersiveengineering:stone_decoration:2>], 
+		[<tconstruct:metal:2>, <thermalfoundation:material:512>, <tconstruct:metal:2>]
 	]);
 
 	val te_still = <thermalexpansion:machine:7>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 2, 3, 3, 3, 3] as byte[] as byte[], Level: 0 as byte});
 	recipes.remove(te_still);
 	recipes.addShaped("ia_te_still", te_still, [
-		[<contenttweaker:thermal_plate>, <alchemistry:evaporator>, <contenttweaker:thermal_plate>], 
-		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
-		[<contenttweaker:thermal_plate>, <thermalfoundation:material:512>, <contenttweaker:thermal_plate>]
+		[<immersiveengineering:sheetmetal:9>, <alchemistry:evaporator>, <immersiveengineering:sheetmetal:9>], 
+		[<immersiveengineering:sheetmetal:9>, <thermalexpansion:frame>, <immersiveengineering:sheetmetal:9>], 
+		[<immersiveengineering:metal_decoration0:5>, <thermalfoundation:material:512>, <immersiveengineering:metal_decoration0:5>]
 	]);
 
 	val te_alchemical = <thermalexpansion:machine:12>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
 	recipes.remove(te_alchemical);
 	recipes.addShaped("ia_te_alchemical", te_alchemical, [
-		[<contenttweaker:thermal_plate>, <minecraft:brewing_stand>, <contenttweaker:thermal_plate>], 
+		[<moreplates:enchanted_plate>, <minecraft:brewing_stand>, <moreplates:enchanted_plate>], 
 		[<contenttweaker:duraluminum_gear>, <thermalexpansion:frame>, <contenttweaker:duraluminum_gear>], 
 		[<contenttweaker:thermal_plate>, <thermalfoundation:material:512>, <contenttweaker:thermal_plate>]
 	]);
@@ -457,7 +457,12 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 }
 
 {//tools
-	
+	recipes.remove(<thermalfoundation:meter>);
+	recipes.addShaped("ia_thermal_meter", <thermalfoundation:meter>, [
+		[<moreplates:copper_stick>, null, <moreplates:copper_stick>],
+		[<thermalfoundation:material:323>, <moreplates:redstone_alloy_plate>, <thermalfoundation:material:323>],
+		[null, <thermalfoundation:material:25>, null]
+	]);
 	
 
 	recipes.remove(<thermalexpansion:satchel:100>);
@@ -486,7 +491,7 @@ mods.tconstruct.Casting.addTableRecipe(
 
 
 
-
+//todo move to pam
 //caramel
 Refinery.addRecipe(<liquid:syrup> * 750, <thermalfoundation:material:816> % 50, <liquid:sap> * 500, 1500);
 

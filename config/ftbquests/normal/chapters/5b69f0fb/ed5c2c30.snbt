@@ -1,0 +1,19 @@
+{
+	title: "chance to consume input items -8%",
+	x: 9.5d,
+	y: 2.0d,
+	text: [
+		"Some items will stop being consumed if there are enough columns"
+	],
+	dependencies: [
+		"22106357"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b0880d39",
+		type: "item",
+		items: [{
+			item: "roots:wildwood_log"
+		}]
+	}]
+}

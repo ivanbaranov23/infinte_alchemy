@@ -1,0 +1,25 @@
+{
+	x: 12.0d,
+	y: -3.0d,
+	text: [
+		"Caelumite can be found above nether roof"
+	],
+	dependencies: [
+		"96d9df75",
+		"b0edf54b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "87e65462",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			Damage: 18s,
+			tag: {
+				Energy: 0,
+				JetpackParticle: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

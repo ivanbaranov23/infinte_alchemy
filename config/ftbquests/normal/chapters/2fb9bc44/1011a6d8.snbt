@@ -1,0 +1,26 @@
+{
+	x: -0.5d,
+	y: 5.0d,
+	text: [
+		"Made with either natura sticks or treated sticks.",
+		"",
+		"Stats are limited and agricraft material crops are disabled."
+	],
+	dependencies: [
+		"f8152e75"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3fb8fdc1",
+		type: "item",
+		items: [{
+			item: "agricraft:crop_sticks"
+		}]
+	}],
+	rewards: [{
+		uid: "bf988c5a",
+		type: "item",
+		item: "agricraft:crop_sticks",
+		count: 4
+	}]
+}

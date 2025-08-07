@@ -1,6 +1,6 @@
 {
-	x: -0.5d,
-	y: 6.0d,
+	x: 2.5d,
+	y: 5.0d,
 	text: [
 		"Pilkon is one of living creatures that live in your inventory. Living can eat, produce material and die. Some can also breed or work.",
 		"",

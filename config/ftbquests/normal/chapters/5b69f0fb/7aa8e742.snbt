@@ -1,6 +1,9 @@
 {
-	x: -3.0d,
-	y: 3.0d,
+	x: -6.0d,
+	y: -3.0d,
+	text: [
+		"Will grow a large number of flowers around it. What flower will grow depends on the soil under it."
+	],
 	dependencies: [
 		"ed841e3a"
 	],

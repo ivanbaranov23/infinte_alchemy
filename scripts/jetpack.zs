@@ -15,9 +15,9 @@ scripts.content_machines.addAssemblerRecipe(
 
 recipes.remove(<simplyjetpacks:metaitemmods:27>);
 recipes.addShaped("flying_unit", <simplyjetpacks:metaitemmods:27>, [
-	[<contenttweaker:tinezo_plate>, <contenttweaker:flapper>, <contenttweaker:tinezo_plate>],
+	[<contenttweaker:tinezo_plate>, <thermalfoundation:material:894>, <contenttweaker:tinezo_plate>],
 	[<thermalfoundation:material:353>, <thermalfoundation:glass:8>, <thermalfoundation:material:353>],
-	[<contenttweaker:tinezo_plate>, <contenttweaker:flapper>, <contenttweaker:tinezo_plate>]
+	[<contenttweaker:tinezo_plate>, <thermalfoundation:material:894>, <contenttweaker:tinezo_plate>]
 ]);
 recipes.addShaped("ia_light_support", <contenttweaker:light_support>, [
 	[<contenttweaker:caelumite_rod>, <contenttweaker:tinezo_plate>, <contenttweaker:caelumite_rod>], 
@@ -42,7 +42,7 @@ recipes.remove(<simplyjetpacks:metaitemmods:22>);
 recipes.addShaped("ia_te_thruster3", <simplyjetpacks:metaitemmods:22>, [
 	[<contenttweaker:electric_manyullyn_gear>, <contenttweaker:caelumite_plate>, <contenttweaker:electric_manyullyn_gear>], 
 	[<thermalfoundation:material:640>, <thermalexpansion:dynamo:2>, <thermalfoundation:material:640>], 
-	[<simplyjetpacks:metaitemmods:28>, <simplyjetpacks:metaitemmods:21>, <simplyjetpacks:metaitemmods:28>]
+	[<thermalexpansion:augment:128>, <simplyjetpacks:metaitemmods:21>, <thermalexpansion:augment:128>]
 ]);
 recipes.remove(<simplyjetpacks:metaitemmods:23>);
 recipes.addShaped("ia_te_thruster4", <simplyjetpacks:metaitemmods:23>, [
@@ -62,20 +62,20 @@ recipes.addShaped("ia_lead_jetpack", <simplyjetpacks:itemjetpack:16>.withTag({})
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshaped16");
 scripts.helper.addCarryRecipe(<simplyjetpacks:itemjetpack:17>, <simplyjetpacks:itemjetpack:16>, [
 	[<thermalfoundation:material:354>, <thermalexpansion:capacitor:1>, <thermalfoundation:material:354>],
-	[<contenttweaker:tinezo_plate> | <contenttweaker:flapper>, <contenttweaker:tinezo_plate> | <contenttweaker:flapper>],
+	[<contenttweaker:flapper>, <contenttweaker:flapper>],
 	[<simplyjetpacks:metaitemmods:21>, <thermalfoundation:armor.plate_invar>, <simplyjetpacks:metaitemmods:21>]
 ]);
 //recipes.remove(<simplyjetpacks:itemjetpack:18>);
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshaped17");
 scripts.helper.addCarryRecipe(<simplyjetpacks:itemjetpack:18>, <simplyjetpacks:itemjetpack:17>, [
-	[<redstonearsenal:material:224>, <thermalexpansion:capacitor:2>, <redstonearsenal:material:224>],
+	[<thermalfoundation:material:359>, <thermalexpansion:capacitor:2>, <thermalfoundation:material:359>],
 	[<contenttweaker:caelumite_plate>, <contenttweaker:caelumite_plate>],
-	[<simplyjetpacks:metaitemmods:22>, <contenttweaker:light_support>, <simplyjetpacks:metaitemmods:22>]
+	[<simplyjetpacks:metaitemmods:22>, <contenttweaker:light_support> | <extrautils2:chickenring:1>, <simplyjetpacks:metaitemmods:22>]
 ]);
 
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshaped18");
 scripts.helper.addCarryRecipe(<simplyjetpacks:itemjetpack:19>, <simplyjetpacks:itemjetpack:18>, [
-	[<thermalfoundation:material:359>, <thermalexpansion:capacitor:2>, <thermalfoundation:material:359>],
+	[<contenttweaker:osgloridium_plate>, <thermalexpansion:capacitor:3>, <contenttweaker:osgloridium_plate>],
 	[<quantumflux:craftingpiece:5>, <quantumflux:craftingpiece:5>],
 	[<simplyjetpacks:metaitemmods:23>, <mekanism:armoredjetpack>, <simplyjetpacks:metaitemmods:23>]
 ]);

@@ -1,6 +1,9 @@
 {
 	x: -3.0d,
 	y: 2.0d,
+	text: [
+		"Like a crusher but single block"
+	],
 	dependencies: [
 		"7ee7dc77"
 	],

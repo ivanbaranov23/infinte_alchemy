@@ -21,6 +21,13 @@ import mods.ctutils.utils.Math;
         [<atum:coin_gold>, <contenttweaker:luck_particle>, <atum:coin_gold>], 
         [<atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>]
     ]);
+    recipes.addShaped("ia_luck_chip2", <contenttweaker:luck_chip> * 3, [
+        [<atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>], 
+        [<contenttweaker:luck_particle>, <contenttweaker:research_luck>.reuse(), <contenttweaker:luck_particle>], 
+        [<atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>]
+    ]);
+
+    
 
     //luck crystal base
     mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:luck_crystal_base>, [
@@ -61,7 +68,7 @@ import mods.ctutils.utils.Math;
     );
     recipes.addShaped("ia_luck_crystal_reroll", <contenttweaker:luck_crystal>,
         [
-            [null, <contenttweaker:luck_chip> | <contenttweaker:research_luck>, null],
+            [null, <contenttweaker:luck_chip>, null],
             [<contenttweaker:luck_chip>, <contenttweaker:luck_crystal>, <contenttweaker:luck_chip>],
             [null, <contenttweaker:luck_chip>, null]
         ],

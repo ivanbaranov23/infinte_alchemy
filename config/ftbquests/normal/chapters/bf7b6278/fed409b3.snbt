@@ -1,0 +1,21 @@
+{
+	x: 7.0d,
+	y: 5.0d,
+	dependencies: [
+		"5d655018"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c30b1e66",
+		type: "item",
+		items: [{
+			id: "simplyjetpacks:itemjetpack",
+			Damage: 16s,
+			tag: {
+				Energy: 0,
+				JetpackParticle: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

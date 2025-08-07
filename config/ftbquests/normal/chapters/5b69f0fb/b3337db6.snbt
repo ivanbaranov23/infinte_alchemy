@@ -1,0 +1,19 @@
+{
+	title: "+144 mb of output liquid",
+	x: 9.5d,
+	y: 1.0d,
+	text: [
+		"That's right, you get more metals from transmuting them"
+	],
+	dependencies: [
+		"22106357"
+	],
+	optional: true,
+	tasks: [{
+		uid: "75dbb527",
+		type: "item",
+		items: [{
+			item: "prodigytech:zorra_log"
+		}]
+	}]
+}

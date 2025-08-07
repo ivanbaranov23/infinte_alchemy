@@ -1,6 +1,7 @@
 {
 	x: -0.5d,
 	y: 0.0d,
+	shape: "square",
 	text: [
 		"Simple storage networks allows you to connect and search inventories. ",
 		"Moreover SSN allows to do autocrafting."

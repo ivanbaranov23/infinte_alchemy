@@ -1,0 +1,45 @@
+{
+	title: "Spooky chest access at a distance",
+	x: 2.5d,
+	y: -2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"a271d997"
+	],
+	optional: true,
+	or_tasks: true,
+	tasks: [{
+		uid: "183d02e1",
+		type: "item",
+		items: [{
+			item: "storagenetwork:remote"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "83be6556",
+		type: "item",
+		items: [{
+			item: "storagenetwork:remote 1 1"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "eda7d056",
+		type: "item",
+		items: [{
+			item: "storagenetwork:remote 1 2"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5297b035",
+		type: "item",
+		items: [{
+			item: "storagenetwork:remote 1 3"
+		}],
+		ignore_nbt: 1b
+	}]
+}

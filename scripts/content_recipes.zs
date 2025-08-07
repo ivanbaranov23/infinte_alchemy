@@ -127,6 +127,8 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:conductive_alloy_ingot>, <contenttweaker:conductive_alloy_block>);
     add3x3Recipe(<contenttweaker:acid_resistant_steel_ingot>, <contenttweaker:acid_resistant_steel_block>);
 
+    add3x3Recipe(<contenttweaker:darker_steel_ingot>, <contenttweaker:darker_steel_block>);
+
     add3x3Recipe(<botania:manaresource:1>, <contenttweaker:manapearl_block>);
     add3x3Recipe(<contenttweaker:chlorasteel_ingot>, <contenttweaker:chlorasteel_block>);
     add3x3Recipe(<contenttweaker:gem_steel_ingot>, <contenttweaker:gem_steel_block>);

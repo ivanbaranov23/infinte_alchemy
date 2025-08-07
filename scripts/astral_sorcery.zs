@@ -30,6 +30,20 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:sunnarium_core>
     [<taiga:nihilite_block>, <contenttweaker:compact_empowerer>, <contenttweaker:compact_empowerer>, <contenttweaker:compact_empowerer>, <taiga:nihilite_block>]
 ]);
 
+//altar
+recipes.remove(<astralsorcery:blockaltar>);
+
+//lightwell
+mods.astralsorcery.Altar.removeAltarRecipe("astralsorcery:shaped/internal/altar/lightwell");
+mods.extendedcrafting.TableCrafting.addShaped(0, <astralsorcery:blockwell>, [
+    [<astralsorcery:blockmarble>, null, null, null, <astralsorcery:blockmarble>], 
+    [<astralsorcery:blockmarble>, null, null, null, <astralsorcery:blockmarble>], 
+    [<astralsorcery:blockmarble>, <astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent>, <astralsorcery:itemcraftingcomponent>, <astralsorcery:blockmarble>], 
+    [<astralsorcery:blockmarble>, <contenttweaker:starmetal_plate>, <actuallyadditions:block_misc:9>, <contenttweaker:starmetal_plate>, <astralsorcery:blockmarble>], 
+    [<astralsorcery:blockmarble>, <astralsorcery:blockmarble:6>, <astralsorcery:blockmarble:6>, <astralsorcery:blockmarble:6>, <astralsorcery:blockmarble>]
+]);
+
+
 {
     var recipe = AssemblyRecipe.create(function(container) {
 		for o in 0 to 2 {

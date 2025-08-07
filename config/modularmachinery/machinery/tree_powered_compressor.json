@@ -15,7 +15,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -31,7 +31,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -47,7 +47,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -63,7 +63,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -79,7 +79,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -95,7 +95,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -111,7 +111,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -127,7 +127,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -143,7 +143,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         },
@@ -159,7 +159,7 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.7937
+                    "multiplier": 0.895957
                 }
             ]
         }

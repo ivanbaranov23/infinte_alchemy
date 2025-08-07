@@ -28,7 +28,8 @@
 		type: "item",
 		items: [{
 			item: "minecraft:sea_lantern"
-		}]
+		}],
+		count: 2L
 	},
 	{
 		uid: "b9d8c80f",
@@ -36,7 +37,7 @@
 		items: [{
 			item: "contenttweaker:lapis_tile"
 		}],
-		count: 21L
+		count: 47L
 	},
 	{
 		uid: "90556a10",
@@ -44,7 +45,7 @@
 		items: [{
 			item: "erebus:amber_glass"
 		}],
-		count: 45L
+		count: 14L
 	},
 	{
 		uid: "74f79104",

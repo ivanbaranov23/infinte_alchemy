@@ -392,21 +392,21 @@ solderer.removeAll();
 	recipes.remove(<prodigytech:heat_sawmill>);
 	recipes.addShaped("ia_heat_sawmill", <prodigytech:heat_sawmill>, [
 		[<ore:gearFerramic>, <ore:gearFerramic>, <ore:gearFerramic>], 
-		[<ore:ingotFerramic>, null, <ore:ingotFerramic>], 
+		[<ore:ingotFerramic>, <contenttweaker:simple_motor>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <ore:plateCarbon>, <ore:ingotFerramic>]
 	]);
 	addRecycle(<prodigytech:heat_sawmill>, [
-		<ore:ingotFerramic>.firstItem * 28, <ore:plateCarbon>.firstItem 
+		<ore:ingotFerramic>.firstItem * 28, <ore:plateCarbon>.firstItem, <contenttweaker:simple_motor>
 	]);
 
 	recipes.remove(<prodigytech:rotary_grinder>);
 	recipes.addShaped("ia_rotary_grinder", <prodigytech:rotary_grinder>, [
 		[<ore:ingotFerramic>, <ore:gearFerramic>, <ore:ingotFerramic>], 
-		[<ore:ingotFerramic>, null, <ore:ingotFerramic>], 
+		[<ore:ingotFerramic>, <contenttweaker:simple_motor>, <ore:ingotFerramic>], 
 		[<ore:ingotFerramic>, <appliedenergistics2:grindstone>, <ore:ingotFerramic>]
 	]);
 	addRecycle(<prodigytech:rotary_grinder>, [
-		<appliedenergistics2:grindstone>, <ore:ingotFerramic>.firstItem * 14
+		<appliedenergistics2:grindstone>, <ore:ingotFerramic>.firstItem * 14, <contenttweaker:simple_motor>
 	]);
 
 	recipes.remove(<prodigytech:ore_refinery>);
@@ -818,11 +818,34 @@ function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
 	tpc_circuit_plate.addItemInput(<immersiveengineering:wirecoil>);
 
 	tpc_circuit_plate.addItemInput(<ore:treeSapling>, 1);
-	tpc_circuit_plate.addItemInput(<minecraft:dye:15>);
+	tpc_circuit_plate.addItemInput(<ore:fertilizer>, 1);
 	tpc_circuit_plate.addFluidInput(<fluid:water> * 250);
 
 	tpc_circuit_plate.addItemOutput(<prodigytech:circuit_plate> * 2);
 	tpc_circuit_plate.build();
+	
+	var tpc_circuit_pure = RecipeBuilder.newBuilder("tpc_circuit_pure", "tree_powered_compressor", 120);
+	tpc_circuit_pure.addItemInput(<enderio:item_material:48>);
+	tpc_circuit_pure.addItemInput(<minecraft:paper> * 4);
+	tpc_circuit_pure.addItemInput(<immersiveengineering:wirecoil>);
+
+	tpc_circuit_pure.addItemInput(<ore:treeSapling>, 1);
+	tpc_circuit_pure.addItemInput(<ore:fertilizer>, 1);
+	tpc_circuit_pure.addFluidInput(<fluid:pure_water> * 250);
+
+	tpc_circuit_pure.addItemOutput(<prodigytech:circuit_plate> * 3);
+	tpc_circuit_pure.build();
+	
+	var tpc_circuit_fert = RecipeBuilder.newBuilder("tpc_circuit_fert", "tree_powered_compressor", 120);
+	tpc_circuit_fert.addItemInput(<enderio:item_material:48>);
+	tpc_circuit_fert.addItemInput(<minecraft:paper> * 4);
+	tpc_circuit_fert.addItemInput(<immersiveengineering:wirecoil>);
+
+	tpc_circuit_fert.addItemInput(<ore:treeSapling>, 1);
+	tpc_circuit_fert.addFluidInput(<liquid:fertilizer> * 250);
+
+	tpc_circuit_fert.addItemOutput(<prodigytech:circuit_plate> * 6);
+	tpc_circuit_fert.build();
 
 	var tpc_circuit_plate2 = RecipeBuilder.newBuilder("tpc_circuit_plate2", "tree_powered_compressor", 120);
 	tpc_circuit_plate2.addItemInput(<enderio:item_material:48>);
@@ -830,7 +853,7 @@ function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
 	tpc_circuit_plate2.addItemInput(<thermalfoundation:material:320>);
 
 	tpc_circuit_plate2.addItemInput(<ore:treeSapling>, 1);
-	tpc_circuit_plate2.addItemInput(<minecraft:dye:15>);
+	tpc_circuit_plate2.addItemInput(<ore:fertilizer>, 1);
 	tpc_circuit_plate2.addFluidInput(<fluid:water> * 250);
 
 	tpc_circuit_plate2.addItemOutput(<prodigytech:circuit_plate> * 1);

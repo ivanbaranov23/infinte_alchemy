@@ -173,15 +173,7 @@
             <erebus:materials:48> | <quark:glowshroom> | <betternether:bone_mushroom> | <betternether:lucis_spore>
         ]
     );
-    mods.roots.Mortar.addRecipe("druidic_dust",
-        <contenttweaker:druidic_dust> * 3,
-        [
-            <contenttweaker:enmaned_biomass>,
-            <roots:runic_dust>, <roots:runic_dust>,
-            <mod_lavacow:ectoplasm_mass>,
-            <roots:moonglow_leaf> | <roots:strange_ooze> | <roots:mystic_feather>
-        ]
-    );
+    
 
     mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:robodruid_plating1>, [
         [null, null, <mod_lavacow:foul_bristle>, <roots:runed_wildwood>, <roots:strange_ooze>], 

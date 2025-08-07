@@ -1,6 +1,9 @@
 {
-	x: -2.0d,
-	y: 2.0d,
+	x: -6.0d,
+	y: -5.0d,
+	text: [
+		"is a flower."
+	],
 	dependencies: [
 		"7aa8e742"
 	],

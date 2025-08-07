@@ -2748,11 +2748,35 @@ TEPress.addGearRecipe(<thermalfoundation:material:23>, <minecraft:stone> * 2, 30
             "aluminum", 3
         );
         
-        /*add2alloy(1, "steel", 1,
-            "iron", 1,
-            "coal", 4
-        );*/
-        mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <moretcon:rawsteel>);
+      
+        {//raw steel
+            mods.tconstruct.Melting.removeRecipe(<liquid:steel>, <moretcon:rawsteel>);
+            mods.tconstruct.Casting.removeTableRecipe(<moretcon:rawsteel>);
+            mods.tconstruct.Casting.addTableRecipe(
+                <moretcon:rawsteel>, 
+                <moretcon:carbonpile>,
+                <liquid:iron>, 144,
+                true
+            );
+            mods.thermalexpansion.Transposer.addFillRecipe(
+                <moretcon:rawsteel>, <moretcon:carbonpile>, 
+                <liquid:iron> * 144, 
+                1000
+            );
+            furnace.remove(<ore:ingotSteel>, <moretcon:rawsteel>);
+            
+            
+            mods.immersiveengineering.BlastFurnace.addRecipe(
+                <thermalfoundation:material:160> * 2, <moretcon:rawsteel>, 
+                20 * 20, 
+                <thermalfoundation:material:864>
+            );
+            TEAlloyer.addRecipe(<thermalfoundation:material:160> * 2, 
+                <moretcon:rawsteel>, <thermalfoundation:material:864>, 4000, 
+                <moretcon:carbonpile>, 30
+            );
+            mods.mekanism.infuser.addRecipe("CARBON", 10, <moretcon:rawsteel>, <mekanism:enrichediron> * 3);
+        }
         {//steel singul
             var rec2 = RecipeBuilder.newBuilder("alloy_compression_steel", "explosion_compressor", 3 * 20);
             rec2.addEnergyPerTickInput(8192);
@@ -2823,7 +2847,18 @@ TEPress.addGearRecipe(<thermalfoundation:material:23>, <minecraft:stone> * 2, 30
             16000
         );
 
-
+        mods.immersiveengineering.AlloySmelter.addRecipe(
+            <enderio:item_alloy_ingot:5>, 
+            <minecraft:iron_ingot>,
+            <minecraft:ender_pearl>,
+            200
+        );
+        mods.immersiveengineering.AlloySmelter.addRecipe(
+            <enderio:item_alloy_ingot:4>, 
+            <minecraft:iron_ingot>,
+            <minecraft:redstone>,
+            200
+        );
 
         mods.enderio.AlloySmelter.removeRecipe(all_metals.redstone_alloy.ingot);
         add3alloy(1, "redstone_alloy", 2,
@@ -3854,8 +3889,8 @@ scripts.helper.addFluidAlloyerRecipe(
     mods.enderio.AlloySmelter.addRecipe(<contenttweaker:bedrockium_alloy_ingot>, 
         [
             <contenttweaker:bedrockium_alloy_mix>,
-            <contenttweaker:tunril_ingot> * 2,
-            <enderio:item_alloy_ingot:6>
+            <netherite:netheriteingot> * 2,
+            <enderio:item_alloy_ingot:6> * 4
         ], 200000
     );
 }
@@ -4140,7 +4175,7 @@ add3alloy(3, "ender_ingot", 1,
 
         scripts.helper.addFluidAlloyerRecipe(
             <contenttweaker:light_ingot>, 
-            <solarflux:mirror> * 4, <contenttweaker:glass_ingot> * 4, <liquid:light2> * 500, 
+            <solarflux:photovoltaic_cell_2> * 4, <contenttweaker:noble_gases_ingot> * 4, <liquid:light2> * 500, 
             500, 20
         );
     }
@@ -4313,10 +4348,40 @@ recipes.addShapeless("tungsten_mixture", <contenttweaker:tungsten_mixture>, [
     <darkutils:material>, <thermalfoundation:material:1027>, <contenttweaker:arkenium_dust>
 ]);
 scripts.content_machines.addAdvancedMixerRecipe(
+    [<contenttweaker:darker_steel_ingot> * 4], [],
+    [
+        <contenttweaker:bedrockium_alloy_ingot> * 2,
+        <moretcon:ingotblightsteel> * 4,
+        <taiga:palladium_ingot> * 12,
+        <contenttweaker:tungsten_mixture>
+    ], [
+        <liquid:draconium> * (144 * 16),
+        <liquid:sentient_metal> * 576,
+        <liquid:plutonium> * 576
+    ],
+    1024, 40
+);
+
+
+scripts.content_machines.addAdvancedMixerRecipe(
     [<contenttweaker:super_alloy_base_ingot> * 4, <contenttweaker:imperomite_catalyst_dust>], [],
     [
         <extendedcrafting:singularity_custom:39>, 
         <contenttweaker:tungsten_mixture> * 12, 
+        <contenttweaker:rare_earth_dust> * 16,
+        <contenttweaker:imperomite_catalyst> * 3,
+    ], [
+        <liquid:noble_gases> * 2000, 
+        <liquid:rune_acid> * 500,
+        <liquid:vapor_of_levity> * 250
+    ],
+    1024, 40
+);
+scripts.content_machines.addAdvancedMixerRecipe(
+    [<contenttweaker:super_alloy_base_ingot> * 8, <contenttweaker:imperomite_catalyst_dust>], [],
+    [
+        <extendedcrafting:singularity_custom:39>, 
+        <contenttweaker:darker_steel_ingot> * 12, 
         <contenttweaker:rare_earth_dust> * 16,
         <contenttweaker:imperomite_catalyst> * 3,
     ], [

@@ -1,0 +1,19 @@
+{
+	title: "x0.6 to input energy",
+	x: 10.5d,
+	y: 2.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"22106357"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f6b138db",
+		type: "item",
+		items: [{
+			item: "integrateddynamics:menril_log"
+		}]
+	}]
+}

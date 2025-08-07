@@ -17,6 +17,11 @@ function moveCookingRecipe(raw as IItemStack, cooked as IItemStack){
         <harvestcraft:oliveoilitem>, raw * 4, 
         400
     );
+    mods.roots.Pyre.addRecipe("cooking" ~ raw.name, cooked, [
+        raw, raw, raw,
+        <ore:listAllspice>,
+        <harvestcraft:oliveoilitem> | <roots:infernal_bulb>
+    ]);
 }
 
 //water

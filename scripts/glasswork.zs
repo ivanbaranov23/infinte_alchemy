@@ -1,3 +1,5 @@
+import mods.modularmachinery.RecipeBuilder;
+
 //glass
 furnace.remove(<minecraft:glass>);
 recipes.remove(<minecraft:glass>);
@@ -21,21 +23,59 @@ mods.thermalexpansion.InductionSmelter.addRecipe(
 furnace.addRecipe(<minecraft:glass>, <extrautils2:decorativesolid:4>);
 
 recipes.addShapeless("glass_glass",
-    <minecraft:glass> * 4,
+    <minecraft:glass> * 2,
     [<liquid:glass> * 2000, <ore:itemFlint>, <appliedenergistics2:material:3>]
 );
 recipes.addShapeless("glass_glass_glass",
-    <minecraft:glass> * 4,
+    <minecraft:glass> * 2,
     [<liquid:glass> * 1000, <liquid:glass> * 1000, <ore:itemFlint>, <appliedenergistics2:material:3>]
 );
 recipes.addShapeless("glass_glass_silver",
-    <minecraft:glass> * 6,
+    <minecraft:glass> * 4,
     [<liquid:glass> * 2000, <ore:itemFlint>, <appliedenergistics2:material:3>, <mysticalworld:silver_dust_tiny>]
 );
 recipes.addShapeless("glass_glass_silver_glass",
-    <minecraft:glass> * 6,
+    <minecraft:glass> * 4,
     [<liquid:glass> * 1000, <liquid:glass> * 1000, <ore:itemFlint>, <appliedenergistics2:material:3>, <mysticalworld:silver_dust_tiny>]
 );
+
+
+{//tpc
+    {    
+        var rec = RecipeBuilder.newBuilder("glass", "tree_powered_compressor", 40);
+
+        rec.addItemInput(<minecraft:quartz>);
+        rec.addItemInput(<appliedenergistics2:material>);
+        rec.addItemInput(<minecraft:flint> * 3);
+
+        rec.addItemInput(<minecraft:sand> * 8);
+
+        rec.addItemInput(<ore:treeSapling>);
+        rec.addItemInput(<ore:fertilizer>);
+        
+        rec.addFluidInput(<liquid:lava> * 2000);
+        
+        rec.addItemOutput(<minecraft:glass> * 8);
+        rec.build();
+    }
+    {    
+        var rec = RecipeBuilder.newBuilder("glass", "tree_powered_compressor", 40);
+
+        rec.addItemInput(<minecraft:quartz>);
+        rec.addItemInput(<appliedenergistics2:material>);
+        rec.addItemInput(<minecraft:flint> * 3);
+
+        rec.addItemInput(<minecraft:sand> * 8);
+
+        rec.addItemInput(<ore:treeSapling>);
+        rec.addItemInput(<ore:fertilizer>);
+        
+        rec.addFluidInput(<liquid:obsidian> * 2000);
+        
+        rec.addItemOutput(<minecraft:glass> * 12);
+        rec.build();
+    }
+}
 
 //sandy glass
 recipes.remove(<extrautils2:decorativesolid:4>);
@@ -46,6 +86,10 @@ recipes.addShapeless("sand_to_sandyglass",
 recipes.addShapeless("sand_to_sandyglass2",
     <extrautils2:decorativesolid:4> * 6,
     [<ore:sand>, <ore:sand>, <ore:sand>, <ore:itemFlint>, <tconstruct:clear_glass>, <appliedenergistics2:material:3>]
+);
+recipes.addShapeless("sand_to_sandyglass3",
+    <extrautils2:decorativesolid:4> * 12,
+    [<ore:sand>, <ore:sand>, <ore:sand>, <ore:itemFlint>, <tconstruct:clear_glass>, <appliedenergistics2:material:3>, <mysticalworld:silver_dust_tiny>]
 );
 furnace.remove(<extrautils2:decorativeglass>);
 

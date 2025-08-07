@@ -332,6 +332,13 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         2000
     );
 
+
+    //cube
+    addRootsSummoning(<entity:twilightforest:roving_cube>, [
+        <thermalfoundation:storage:3>,
+        <forge:bucketfilled>.withTag({FluidName: "notmilk", Amount: 1000}),
+        <harvestcraft:beanitem>
+    ]);
 }
 
 {//primitive

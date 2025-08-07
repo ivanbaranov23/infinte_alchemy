@@ -366,6 +366,28 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
 }
 
 
+Rituals.modifyRitual("ritual_summon_creatures",
+    [
+        <excompressum:bait:2>,
+        <darkutils:material>,
+        <roots:moonglow_leaf>,
+        <roots:moonglow_leaf>,
+        <roots:bark_wildwood>
+    ]
+);
+Rituals.getRitual("ritual_summon_creatures").setInteger("interval", 60);
+
+Rituals.modifyRitual("ritual_healing_aura",
+    [
+        <bhc:red_heart>,
+        <contenttweaker:iron_apple>,
+        <roots:terra_moss>,
+        <roots:bark_birch>, <roots:bark_birch>
+    ]
+);
+Rituals.getRitual("ritual_healing_aura").setFloat("amount", 6.0);
+Rituals.getRitual("ritual_healing_aura").setFloat("player_amount", 2.0);
+
 {//flower ritual
     <ore:netherMycelium>.add(<biomesoplenty:grass:8>);
     <ore:netherMycelium>.add(<betternether:nether_mycelium>);
@@ -629,186 +651,3 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     Chrysopoeia.addRecipe("runewood_activation", <contenttweaker:runewood>, <contenttweaker:runewood_enchanted>);
     
 }
-{//druid circle
-    {//transmut gel in circle
-        var gel_recs as WeightedItemStack[][][int] = {
-            1: [
-                [
-                    <contenttweaker:singularity_dust> * 4 % 23,
-                    <prodigytech:primordium> * 40,
-                    <contenttweaker:elastic_clay> * 4 % 47
-                ],
-                [
-                    <contenttweaker:singularity_dust> * 4 % 23,
-                    <prodigytech:primordium> * 36,
-                    <erebus:materials:7> * 4 % 80,
-                    <contenttweaker:ancient_dust>
-                ],
-                [
-                    <contenttweaker:singularity_dust> * 4 % 23,
-                    <prodigytech:primordium> * 36,
-                    <twilightforest:borer_essence> * 4,
-                    <erebus:materials:57> * 4
-                ]
-            ],
-            2: [
-                [
-                    <contenttweaker:singularity_dust> * 4 % 31,
-                    <prodigytech:primordium> * 40,
-                    <contenttweaker:denorm_dust> * 4 % 80,
-                    <darkutils:material> * 4
-                ],
-                [
-                    <contenttweaker:singularity_dust> * 4 % 31,
-                    <prodigytech:primordium> * 32,
-                    <contenttweaker:denorm_dust> * 4 % 80,
-                    <mekanism:substrate> * 12,
-                    <primitivemobs:spider_egg>,
-                    <mod_lavacow:mimic_claw>
-                ],
-            ],
-            3: [
-                [
-                    <contenttweaker:singularity_dust> * 4 % 39,
-                    <prodigytech:primordium> * 32,
-                    <contenttweaker:denorm_dust> * 4 % 80,
-                    <mowziesmobs:foliaath_seed>,
-                    <betternether:eye_seed>,
-                    <thermalfoundation:material:832> * 12,
-                    <tconevo:material:1> * 3
-                ],
-                [
-                    <contenttweaker:singularity_dust> * 4 % 39,
-                    <prodigytech:primordium> * 28,
-                    <contenttweaker:denorm_dust> * 4 % 80,
-                    <extrautils2:redorchid>,
-                    <quark:soul_bead> * 3,
-                    <deepmoblearning:living_matter_overworldian> * 24
-                ],
-            ],
-            4: [
-                [
-                    <contenttweaker:singularity_dust> * 4 % 31,
-                    <prodigytech:primordium> * 28,
-                    <contenttweaker:denorm_dust> * 4 % 80,
-                    <deepmoblearning:living_matter_overworldian> * 24,
-                    <contenttweaker:mushroomite_ingot> * 12,
-                    <aether_legacy:healing_stone> * 4,
-                    <atum:fertile_soil_pile> * 8,
-                    <thermalfoundation:geode> * 4
-                ],
-                [
-                    <contenttweaker:singularity_dust> * 4 % 31,
-                    <prodigytech:primordium> * 28,
-                    <contenttweaker:denorm_dust> * 4 % 80,
-                    <deepmoblearning:living_matter_overworldian> * 24,
-                    <contenttweaker:mushroomite_ingot> * 12,
-                    <aether_legacy:healing_stone> * 4,
-                    <atum:fertile_soil_pile> * 8,
-                    <contenttweaker:luck_particle> * 4
-                ],
-                [
-                    <contenttweaker:singularity_dust> * 4 % 31,
-                    <prodigytech:primordium> * 28,
-                    <contenttweaker:denorm_dust> * 4 % 80,
-                    <deepmoblearning:living_matter_overworldian> * 24,
-                    <contenttweaker:mushroomite_ingot> * 12,
-                    <aether_legacy:healing_stone> * 4,
-                    <atum:fertile_soil_pile> * 8,
-                    <contenttweaker:entwood_dust>
-                ],
-            ]
-        };
-
-        var counter as int = 0;
-        for gel_out,recs in gel_recs{
-            for items in recs{
-                var rec = RecipeBuilder.newBuilder("transmut_gel" ~ counter, "druid_circle", 120);
-                counter += 1;
-
-                rec.addEnergyPerTickInput(256);
-
-
-                rec.addItemOutput(<contenttweaker:transmut_gel> * gel_out);
-
-                for itm in items{
-                    rec.addItemInput(itm.stack);
-                    rec.setChance(itm.chance);
-                    
-                }
-
-                rec.addFluidInput(<liquid:pereskia_soup> * 1000);
-                
-                rec.build();
-            }
-        }
-    }
-
-    {//fluid_conversions
-        var fluid_conversions as ILiquidStack[ILiquidStack][int[]] = {
-            //transmut, fluid in, fluid out
-            [1, 144 * 16, 144 * 16]: {
-                <liquid:copper>: <liquid:iron>,
-                <liquid:iron>: <liquid:tin>,
-                <liquid:tin>: <liquid:copper>,
-
-                <liquid:aluminum>: <liquid:zinc>,
-                <liquid:zinc>: <liquid:nickel>,
-                <liquid:nickel>: <liquid:aluminum>,
-
-                <liquid:ardite>: <liquid:cobalt>,
-                <liquid:cobalt>: <liquid:ardite>,
-
-                <liquid:silver>: <liquid:gold>,
-                <liquid:gold>: <liquid:lead>,
-                <liquid:lead>: <liquid:osmium>,
-                <liquid:osmium>: <liquid:silver>,
-                
-                <liquid:karmesine_fluid>: <liquid:ovium_fluid>,
-                <liquid:ovium_fluid>: <liquid:jauxum_fluid>,
-                <liquid:jauxum_fluid>: <liquid:karmesine_fluid>
-            }
-        };
-
-        for amounts,recs in fluid_conversions{
-            for f_in,f_out in recs{
-                var rec = RecipeBuilder.newBuilder("fluid_conversions" ~ f_in.name ~ "_" ~ f_out.name, "druid_circle", 80);
-
-                rec.addEnergyPerTickInput(128);
-
-
-                rec.addItemInput(<contenttweaker:transmut_gel> * amounts[0]);
-                rec.addItemInput(<contenttweaker:singularity_dust> * 4);
-                rec.setChance(0.08 * 3.9);
-                rec.addItemInput(<contenttweaker:druidic_dust>);
-                rec.setChance(0.08 * 5.9);
-
-                rec.addItemInput(<contenttweaker:soot> * 12);
-
-                rec.addFluidInput(f_in * amounts[1]);
-                rec.addFluidOutput(f_out * amounts[2]);
-                
-                rec.build();
-            }
-        }
-    }
-
-
-
-}
-
-/*
-<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:villager", entity: {
-    HurtByTimestamp: 0, ForgeData: {}, 
-    Attributes: [], Riches: 104, Invulnerable: 0 as byte, FallFlying: 0 as byte, ForcedAge: 0, PortalCooldown: 0, AbsorptionAmount: 0.0 as float, 
-    FallDistance: 0.0 as float, DeathTime: 0 as short, 
-    ForgeCaps: {}, 
-    HandDropChances: [0.085 as float, 0.085 as float], PersistenceRequired: 0 as byte, 
-    id: "minecraft:villager", Age: 0, Motion: [0.0, -0.0784000015258789, 0.0], Leashed: 0 as byte, 
-    OnGround: 1 as byte, Dimension: 0, 
-    Offers: {Recipes: [{maxUses: 16, buy: {id: "minecraft:emerald", Count: 1, Damage: 0 as short}, sell: {id: "actuallyadditions:block_misc", Count: 2, Damage: 3 as short}, uses: 7, rewardExp: 1 as byte}, {maxUses: 12, buy: {id: "minecraft:emerald", Count: 1, Damage: 0 as short}, sell: {id: "actuallyadditions:item_misc", Count: 7, Damage: 5 as short}, uses: 7, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "minecraft:emerald", Count: 1, Damage: 0 as short}, sell: {id: "actuallyadditions:item_laser_wrench", Count: 1, Damage: 0 as short}, uses: 0, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "actuallyadditions:item_coffee_beans", Count: 30, Damage: 0 as short}, sell: {id: "minecraft:emerald", Count: 1, Damage: 0 as short}, uses: 0, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "minecraft:emerald", Count: 4, Damage: 0 as short}, sell: {id: "actuallyadditions:item_phantom_connector", Count: 1, Damage: 0 as short}, uses: 0, rewardExp: 1 as byte}, 
-    {maxUses: 7, buy: {id: "minecraft:emerald", Count: 15, Damage: 0 as short}, sell: {id: "actuallyadditions:block_laser_relay", Count: 2, Damage: 0 as short}, uses: 6, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "actuallyadditions:block_tiny_torch", Count: 39, Damage: 0 as short}, sell: {id: "minecraft:emerald", Count: 2, Damage: 0 as short}, uses: 0, rewardExp: 1 as byte}, {maxUses: 7, buy: {id: "minecraft:emerald", Count: 2, Damage: 0 as short}, sell: {id: "actuallyadditions:block_misc", Count: 2, Damage: 4 as short}, uses: 0, rewardExp: 1 as byte}]}, 
-    Rotation: [134.43378 as float, 10.187842 as float], UpdateBlocked: 0 as byte, HandItems: [{}, {}], 
-    ProfessionName: "actuallyadditions:engineer", 
-    Profession: 15, ArmorItems: [{}, {}, {}, {}], CanPickUpLoot: 1 as byte, HurtTime: 0 as short, CareerLevel: 3, 
-    Career: 2, Inventory: [], Willing: 1 as byte}})*/

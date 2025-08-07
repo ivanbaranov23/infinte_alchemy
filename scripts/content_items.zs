@@ -785,6 +785,10 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("acid_resistant_steel_gear").register();
     VanillaFactory.createBlock("acid_resistant_steel_block", <blockmaterial:rock>).register();
 
+    //darker
+    VanillaFactory.createItem("darker_steel_ingot").register();
+    VanillaFactory.createBlock("darker_steel_block", <blockmaterial:rock>).register();
+
     //botania
     VanillaFactory.createItem("mana_absorbing_ingot").register();
     VanillaFactory.createItem("mana_steel_ball").register();
@@ -2117,7 +2121,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("elemental_reduction").register();
     
 
-
+    addWater("roving_milk");
+    VanillaFactory.createItem("roving").register();
     
 
     VanillaFactory.createItem("runewood").register();//todo evilwood?
@@ -2167,6 +2172,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     forest_fire.setLightOpacity(0);
     forest_fire.setTranslucent(true);
     forest_fire.register();
+
+    addItem("inversion_dust", "rare", 64);
 }
 {//prodigy tech
     VanillaFactory.createBlock("ferramic_gravel", <blockmaterial:rock>).register();
@@ -2974,14 +2981,23 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createBlock("alien_gearbox", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("alien_sheetmetal", <blockmaterial:rock>).register();
 
-    {//dark catalyst
+    /*{//dark catalyst
         var dark_catalyst = VanillaFactory.createFluid("dark_catalyst", Color.fromHex("ea6056"));
         dark_catalyst.material = <blockmaterial:lava>;
         dark_catalyst.colorize = false;
         dark_catalyst.stillLocation = 'contenttweaker:fluids/dark_catalyst';
         dark_catalyst.flowingLocation = 'contenttweaker:fluids/dark_catalyst';
         dark_catalyst.register();
-    }
+    }*/
+    addWater("dark_catalyst");
+    addWater("dark_catalyst1");
+    addWater("dark_catalyst2");
+    addWater("dark_catalyst3");
+    addWater("dark_catalyst4");
+    addWater("dark_catalyst5");
+    addWater("dark_catalyst6");
+    addWater("dark_catalyst7");
+    
 
     VanillaFactory.createBlock("mana_pipe", <blockmaterial:rock>).register();
     //VanillaFactory.createBlock("electric_core", <blockmaterial:rock>).register();

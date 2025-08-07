@@ -129,19 +129,6 @@ Hammer.addRecipe(
 	0, 1.0, 1.0
 );
 
-//ores
-Hammer.addRecipe(
-	<minecraft:iron_ore>, <exnihilocreatio:item_ore_iron> * 5,
-	0, 1.0, 1.0
-);
-Hammer.addRecipe(
-	<thermalfoundation:ore>, <exnihilocreatio:item_ore_copper> * 5,
-	0, 1.0, 1.0
-);
-Hammer.addRecipe(
-	<thermalfoundation:ore:1>, <exnihilocreatio:item_ore_tin> * 5,
-	0, 1.0, 1.0
-);
 
 //witch water mixin
 scripts.jei.addJEIhint(

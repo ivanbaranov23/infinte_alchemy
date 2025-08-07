@@ -273,20 +273,20 @@ function addItemInfoRecipe(items as IItemStack[], info as string[]){
 
 
 addMMRecipe("high_oven_glass1", "high_oven", 15*20, 32, 
-[<minecraft:glass> * 12], 
+[<minecraft:glass> * 16], 
 [<quark:glass_shards> * 4, <appliedenergistics2:material:3> * 4, <minecraft:sand> * 16], [], [], [<contenttweaker:research_glass_making>]);
 addMMRecipe("high_oven_glass2", "high_oven", 15*20, 32, 
-[<minecraft:glass> * 16], 
+[<minecraft:glass> * 24], 
 [<mysticalworld:silver_dust_tiny> * 4, <appliedenergistics2:material:3> * 4, <minecraft:sand> * 16], [], [], [<contenttweaker:research_glass_making>]);
 
 
-
+//todo move
 //addEarlySingularuty(<extendedcrafting:singularity_custom:100>, <minecraft:log>, );
 {//wood
     var recipe = RecipeBuilder.newBuilder("tcp_wood", "tree_powered_compressor", 20*60*5);
     recipe.addItemInput(<ore:logWood>, 256);
     recipe.addItemInput(<ore:treeSapling>, 4);
-    recipe.addItemInput(<minecraft:dye:15> * 16);
+    recipe.addItemInput(<ore:fertilizer>, 16);
     recipe.addFluidInput(<fluid:water> * 1000);
     recipe.addItemOutput(<extendedcrafting:singularity_custom:100>);
     recipe.build();

@@ -300,3 +300,13 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularcontroller:satellite_la
     rec.addItemOutput(<modularcontroller:donut_controller>);
 	rec.build();
 }
+
+
+
+
+//whack
+recipes.addShaped("mm_druid_circle_controller", <modularcontroller:druid_circle_controller>, [
+	[<contenttweaker:flower_steel_plate>, <requious:altar2>, <contenttweaker:flower_steel_plate>], 
+	[<quark:glowshroom>, <thermalexpansion:frame>, <quark:glowshroom>], 
+	[<contenttweaker:flower_steel_plate>, <requious:altar2>, <contenttweaker:flower_steel_plate>]
+]);

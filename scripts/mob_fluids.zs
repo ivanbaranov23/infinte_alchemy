@@ -25,6 +25,18 @@ function addOneToMany(fluid as ILiquidStack, ent as IEntityDefinition[][IEntityD
 addOneToMany(<liquid:sea_water>, {<entity:minecraft:skeleton>: [<entity:quark:pirate>]});
 
 
+addOneToMany(<liquid:liquifiedsouls>, {
+    <entity:minecraft:skeleton>: [<entity:quark:wraith>],
+    <entity:minecraft:zombie>: [<entity:quark:wraith>],
+
+    <entity:atum:mummy>: [<entity:atum:wraith>],
+    <entity:atum:forsaken>: [<entity:atum:wraith>],
+    <entity:minecraft:husk>: [<entity:atum:wraith>],
+
+    <entity:minecraft:squid>: [<entity:mod_lavacow:ghostray>],
+    <entity:twilightforest:penguin>: [<entity:mod_lavacow:pingu>],
+});
+
 {//atum
     /*FBTweaker.addRecipe(<liquid:sand>, FBTweaker.outputBuilder()
         

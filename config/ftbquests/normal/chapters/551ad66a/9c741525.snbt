@@ -1,6 +1,9 @@
 {
 	x: 2.0d,
 	y: 3.0d,
+	text: [
+		"Made when blood and water mix together in world."
+	],
 	dependencies: [
 		"563cb9ef"
 	],
@@ -9,7 +12,7 @@
 		uid: "7fda57a2",
 		type: "item",
 		items: [{
-			item: "biomesoplenty:flesh"
+			item: "biomesoplenty:fleshchunk"
 		}]
 	}]
 }

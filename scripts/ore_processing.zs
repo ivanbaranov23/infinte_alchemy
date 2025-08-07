@@ -2493,9 +2493,10 @@ val ores as IItemStack[string][string][string] = {
     tiberium: {
         nether: {
             item: <taiga:tiberium_ore>,
-            crushing: <taiga:tiberium_crystal> * 4,
-            crushingByprod1: <taiga:tiberium_dust>,
-            crushingByprod2: <taiga:tiberium_crystal> * 4,
+            crushing_no_balls: <taiga:tiberium_crystal> * 4,
+            balling: <taiga:tiberium_crystal> * 4,
+            crushingByprod1: <moretcon:dustironwood>,
+            crushingByprod2: <moretcon:dustirradium>,
 
             drilling: <mekores:mekanismore:248> * 4
         }
@@ -2539,6 +2540,49 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod2: <taiga:prometheum_dust>
         }
     },
+    aurorium: {
+        end: {
+            item: <taiga:aurorium_ore>,
+            crushing_no_balls: <taiga:aurorium_dust> * 2,
+            balling: <taiga:aurorium_dust> * 2,
+            crushingByprod1: <mekanism:clump:1>,
+            crushingByprod2: <contenttweaker:cursed_gold_dust>,
+
+            alloySlag2: <taiga:aurorium_ingot> * 2,
+            alloySlag3: <taiga:aurorium_ingot> * 3,
+
+            drilling: <mekores:mekanismore:253> * 3
+        }
+    },
+    duranite: {
+        ore: {
+            item: <taiga:duranite_ore>,
+            crushing_no_balls: <taiga:duranite_dust> * 2,
+            balling: <taiga:duranite_dust> * 2,
+            crushingByprod1: <exnihilocreatio:item_ore_nickel>,
+            crushingByprod2: <taiga:meteorite_dust> * 3,
+
+            alloySlag2: <taiga:duranite_ingot> * 2,
+            alloySlag3: <taiga:duranite_ingot> * 3,
+
+            drilling: <mekores:mekanismore:258> * 3
+        }
+    },
+    valyrium: {
+        nether: {
+            item: <taiga:valyrium_ore>,
+            crushing_no_balls: <taiga:valyrium_dust> * 2,
+            balling: <taiga:valyrium_dust> * 2,
+            crushingByprod1: <moretcon:gemgarstone>,
+            crushingByprod2: <taiga:tiberium_crystal> * 3,
+
+            alloySlag2: <taiga:valyrium_ingot> * 2,
+            alloySlag3: <taiga:valyrium_ingot> * 3,
+
+            drilling: <mekores:mekanismore:263> * 3
+
+        }
+    },
     abyssum: {
         end: {
             item: <taiga:abyssum_ore>,
@@ -2566,6 +2610,9 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod1: <bigreactors:dustyellorium>,
             crushingByprod2: <exnihilocreatio:item_ore_tungsten:2>,
 
+            alloySlag2: <taiga:prometheum_ingot> * 2,
+            alloySlag3: <taiga:prometheum_ingot> * 3,
+
             denorm: <immersiveengineering:ore:5>,
             drilling: <contenttweaker:prometheum_pieces> * 6
         },
@@ -2575,6 +2622,9 @@ val ores as IItemStack[string][string][string] = {
             balling: <taiga:prometheum_dust> * 2,
             crushingByprod1: <bigreactors:dustyellorium>,
             crushingByprod2: <exnihilocreatio:item_ore_tungsten:2>,
+            
+            alloySlag2: <taiga:prometheum_ingot> * 2,
+            alloySlag3: <taiga:prometheum_ingot> * 3,
 
             madeFrom: <contenttweaker:prometheum_pieces> * 3,
             made2x2: <contenttweaker:prometheum_pieces>,
@@ -3671,6 +3721,9 @@ val drilling_fluid_amount as int[string] = {
     tiberium: 200,
 
     osram: 320,
+    aurorium: 400,
+    duranite: 200,
+    valyrium: 300,
     abyssum: 500,
     prometheum: 360,
     uru: 600,
@@ -3717,7 +3770,7 @@ val drilling_fluid_amount as int[string] = {
 };
 
 ///////////////////////////////////////////////////////////////////////////////cleaning
-print("[IA] ------------------------------- Ore Cleaing! -------------------------------");
+print("[IA] ------------------------------- Ore Clearing! -------------------------------");
 
 PTgrinder.removeAll();
 
@@ -4107,9 +4160,9 @@ print("[IA] ------------------------------- Ore Adding Uniques! ----------------
 //furnace.remove(<ore:ingotAluminum>);
 
 AEgrinder.addRecipe(<contenttweaker:bauxite_dust>, <immersiveengineering:ore:1>, 4, <contenttweaker:bauxite_dust>, 0.75);
-mods.thermalexpansion.Transposer.addFillRecipe(
-	<thermalfoundation:material:68> * 2, 
-	<contenttweaker:bauxite_dust>, <liquid:witchwater> * 100, 
+mods.thermalexpansion.InductionSmelter.addRecipe(
+	<thermalfoundation:material:68> * 4, 
+	<contenttweaker:bauxite_dust>, <appliedenergistics2:material:3>, 
 	2000
 );
 
@@ -4213,8 +4266,8 @@ recipes.addShapeless("ia_ore_refinement1",
 
     rec.addEnergyPerTickInput(1024);
 
-    rec.addItemOutput(<contenttweaker:soot> * 3);
-    rec.addItemOutput(<contenttweaker:soot>);
+    rec.addItemOutput(<contenttweaker:soot> * 5);
+    rec.addItemOutput(<contenttweaker:soot> * 2);
     rec.setChance(0.5);
     rec.addItemOutput(<contenttweaker:soot>);
     rec.setChance(0.25);
@@ -4222,7 +4275,7 @@ recipes.addShapeless("ia_ore_refinement1",
     rec.addItemInput(<thermalfoundation:material:801>);
     
     
-    rec.addHotAirInput(250, 250, 1000000000);
+    //rec.addHotAirInput(250, 250, 1000000000);
 
     rec.build();
 }
