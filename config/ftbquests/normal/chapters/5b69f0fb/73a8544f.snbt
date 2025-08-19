@@ -1,0 +1,16 @@
+{
+	x: 17.0d,
+	y: 1.0d,
+	dependencies: [
+		"f500329a"
+	],
+	tasks: [{
+		uid: "eff2f556",
+		type: "item",
+		items: [{
+			item: "contenttweaker:staffwood_ice"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

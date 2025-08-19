@@ -10,5 +10,12 @@
 		items: [{
 			item: "contenttweaker:rune_boule1"
 		}]
+	},
+	{
+		uid: "392d6f37",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rune_base"
+		}]
 	}]
 }

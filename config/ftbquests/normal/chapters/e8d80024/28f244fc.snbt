@@ -1,6 +1,9 @@
 {
 	x: 11.0d,
 	y: -1.0d,
+	text: [
+		"Botania runes are not consumed when crafting in runic altar"
+	],
 	dependencies: [
 		"8dcb080b",
 		"a70d58c9",

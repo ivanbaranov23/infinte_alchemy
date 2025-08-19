@@ -147,12 +147,6 @@ mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:133>, <actual
         <ore:cobblestone>
 
     ]);
-    recipes.addShapeless("ia_terra_spores2", <roots:terra_moss> * 2, [
-        <mysticalcreations:bilim_essence>,
-        <mysticalcreations:bilim_essence>,
-        <mysticalcreations:bilim_essence>,
-        <roots:terra_spores>
-    ]);
     
 }
 

@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/umberrack_bricks",
+      "all": "contenttweaker:blocks/umberrack_bricks",
       "particle": "contenttweaker:blocks/umberrack_bricks"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

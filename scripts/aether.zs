@@ -227,14 +227,7 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
         <liquid:gambrosium> * 250, 
         2000
     );
-	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:gambrosium_boule>, [
-			<contenttweaker:ambrosium_crystal_seed>, 
-			<projectred-core:resource_item:300> * 4, 
-			<contenttweaker:gambrosium_dust> * 64
-		], 25000000
-	);
-	scripts.helper.addSawRecipeWByproduct(<contenttweaker:gambrosium_boule>, <contenttweaker:gambrosium_wafer> * 8, <contenttweaker:gambrosium_dust>, 75);
-}
+	}
 /*{//ambrosium
 	Enchanter.registerEnchantment(<minecraft:gravel>, <contenttweaker:ambrosium_gravel>, 100);
 	Enchanter.registerEnchantment(<exnihilocreatio:block_skystone_crushed>, <contenttweaker:ambrosium_gravel>, 80);

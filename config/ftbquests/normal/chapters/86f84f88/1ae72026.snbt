@@ -38,7 +38,7 @@
 		items: [{
 			item: "extrautils2:passivegenerator 1 3"
 		}],
-		count: 8L
+		count: 4L
 	},
 	{
 		uid: "30205857",

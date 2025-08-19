@@ -463,7 +463,7 @@ Rituals.getRitual("ritual_healing_aura").setFloat("player_amount", 2.0);
         sapling_floweroak: <biomesoplenty:sapling_1:5>,
         sapling_balsam: <erebus:sapling_balsam>,
         sapling_bamboo: <erebus:sapling_bamboo>,
-        sapling_bamboo2: <biomesoplenty:sapling_0:2>,
+        //sapling_bamboo2: <biomesoplenty:sapling_0:2>,
         sapling_amaranth: <natura:overworld_sapling:2>,
         sapling_blossom: <quark:variant_sapling:1>,
         sapling_ghost: <natura:nether_sapling>,
@@ -471,7 +471,9 @@ Rituals.getRitual("ritual_healing_aura").setFloat("player_amount", 2.0);
         nettle1: <erebus:small_plant>,
         nettle2: <erebus:small_plant:1>,
 
-        bone_mushroom: <betternether:bone_mushroom>
+        bone_mushroom: <betternether:bone_mushroom>,
+
+        origin: <biomesoplenty:flower_1:5>
     };
     val flower_soils as IIngredient[string] = {
         ia_mushroom_red: <minecraft:mycelium>,
@@ -512,7 +514,9 @@ Rituals.getRitual("ritual_healing_aura").setFloat("player_amount", 2.0);
         nettle1: <erebus:mud>,
         nettle2: <erebus:mud>,
 
-        bone_mushroom: <betternether:bone_tile>
+        bone_mushroom: <betternether:bone_tile>,
+
+        origin: <biomesoplenty:grass:5>
     };
 
     //jei
@@ -633,13 +637,21 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     Chrysopoeia_addRecipe("borer_essence1", <erebus:materials:18> * 6, <twilightforest:borer_essence>);
     Chrysopoeia_addRecipe("borer_essence2", <mysticalagriculture:crafting> * 32, <twilightforest:borer_essence>);
 
-    Chrysopoeia.addRecipe("twilight_sapling", <ore:treeSapling> * 16, <twilightforest:twilight_sapling>);
+    Chrysopoeia.addRecipe("twilight_sapling", <minecraft:sapling> * 16, <twilightforest:twilight_sapling>);
     Chrysopoeia_addRecipe("twilight_root", <twilightforest:root>, <twilightforest:root:1>);
 
+    //redstone
+    Chrysopoeia_addRecipe("redstone", <biomesoplenty:gem:1> * 2, <minecraft:redstone> * 8);
     //glowstone
     Chrysopoeia_addRecipe("glowstone", <minecraft:gold_block>, <minecraft:glowstone>);
 
     Chrysopoeia_addRecipe("eyes", <biomesoplenty:double_plant:2> * 2, <contenttweaker:primitive_eyes>);
+
+    Chrysopoeia_addRecipe("jar", <minecraft:glass_bottle>, <biomesoplenty:jar_empty>);
+
+    //quartz
+    Chrysopoeia_addRecipe("certus_to", <appliedenergistics2:material:3> * 4, <appliedenergistics2:material:2> * 4);
+    Chrysopoeia_addRecipe("certus_from", <appliedenergistics2:material:2> * 4, <appliedenergistics2:material:3> * 4);
 
     //Chrysopoeia_addRecipe("bloodshroom", <mod_lavacow:cordy_shroom>, <mod_lavacow:bloodtooth_shroom>);
 }

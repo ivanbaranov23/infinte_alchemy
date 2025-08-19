@@ -67,6 +67,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
 
     addNuggetIngotBlockRecipe(<contenttweaker:black_bronze_nugget>, <contenttweaker:black_bronze_ingot>, <contenttweaker:black_bronze_block>);
     add3x3Recipe(<contenttweaker:tinezo_ingot>, <contenttweaker:tinezo_block>);
+    add3x3Recipe(<contenttweaker:rubeezo_ingot>, <contenttweaker:rubeezo_block>);
     
 
     <contenttweaker:osgloridium_ingot>.addTooltip("Made of mostly osmium");

@@ -1,6 +1,6 @@
 {
 	title: "ME Presses",
-	x: 1.0d,
+	x: 1.5d,
 	y: -1.0d,
 	text: [
 		"Generates in pharaoh tombs and girafi tombs.",

@@ -22,7 +22,7 @@ mods.chisel.Carving.addVariation("greenick", <contenttweaker:greenick_tile>);
 mods.chisel.Carving.addVariation("greenick", <contenttweaker:greenick_bricks>);
 	
     
-recipes.addShapeless("ia_karmesine_tile", <contenttweaker:karmesine_tile> * 16, [
+recipes.addShapeless("ia_karmesine_tile", <contenttweaker:karmesine_tile> * 32, [
     <ore:stone>, <ore:stone>, <ore:stone>, <ore:stone>,
     <taiga:karmesine_dust>,
     <ore:stone>, <ore:stone>, <ore:stone>, <ore:stone>
@@ -30,3 +30,21 @@ recipes.addShapeless("ia_karmesine_tile", <contenttweaker:karmesine_tile> * 16, 
 mods.chisel.Carving.addGroup("karmesine");
 mods.chisel.Carving.addVariation("karmesine", <contenttweaker:karmesine_tile>);
 mods.chisel.Carving.addVariation("karmesine", <contenttweaker:karmesine_tile2>);
+
+recipes.addShapeless("ia_ovium_tile", <contenttweaker:ovium_tile> * 32, [
+    <ore:stone>, <ore:stone>, <ore:stone>, <ore:stone>,
+    <taiga:ovium_dust>,
+    <ore:stone>, <ore:stone>, <ore:stone>, <ore:stone>
+]);
+mods.chisel.Carving.addGroup("ovium");
+mods.chisel.Carving.addVariation("ovium", <contenttweaker:ovium_tile>);
+mods.chisel.Carving.addVariation("ovium", <contenttweaker:ovium_tile2>);
+
+recipes.addShapeless("ia_jauxum_tile", <contenttweaker:jauxum_tile> * 32, [
+    <ore:stone>, <ore:stone>, <ore:stone>, <ore:stone>,
+    <taiga:jauxum_dust>,
+    <ore:stone>, <ore:stone>, <ore:stone>, <ore:stone>
+]);
+mods.chisel.Carving.addGroup("jauxum");
+mods.chisel.Carving.addVariation("jauxum", <contenttweaker:jauxum_tile>);
+mods.chisel.Carving.addVariation("jauxum", <contenttweaker:jauxum_tile2>);

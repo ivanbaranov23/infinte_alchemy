@@ -1,8 +1,10 @@
 {
 	x: -3.0d,
-	y: -2.0d,
+	y: -3.0d,
 	text: [
-		"Works with custom cobblegen, i repeat, works with custom cobblegen"
+		"Works with custom cobblegen, i repeat, works with custom cobblegen.",
+		"",
+		"If it doesn't, try swapping fluids around"
 	],
 	dependencies: [
 		"7ee7dc77"

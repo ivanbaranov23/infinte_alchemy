@@ -2011,7 +2011,7 @@ tile.contenttweaker.poor_iron_ore.name=Poor Iron Ore
 
 ia.rename.galena=Galena Ore
 ia.rename.nickel_oxide=Nickel Oxide Ore
-ia.rename.mehchocho=Meh Chocolate
+ia.rename.mehchoco=Meh Chocolate
 
 ia.rename.mith_rod=Mithril Rod
 ia.rename.mith_ore=Mithril Ore
@@ -2290,3 +2290,70 @@ tile.contenttweaker.karmesine_tile.name=Karmesine Tile
 tile.contenttweaker.karmesine_tile2.name=Karmesine CTM Tile
 
 requious.jei.recipe.altar=Ore Altar
+
+item.contenttweaker.algae.name=Algal Bloom
+item.contenttweaker.algae_feed.name=Algae Feed
+item.contenttweaker.algae_string.name=Algal String
+
+ia.tooltip.ore_altar0=Place stone on top of this block
+ia.tooltip.ore_altar1=Place dust on top of stone block
+ia.tooltip.ore_altar2=Wait for 20 seconds
+ia.tooltip.ore_altar3=Stone will transform into ore
+ia.tooltip.ore_altar4=Dust will transform into cobblestone
+ia.tooltip.ore_altar5=- - - - -
+ia.tooltip.ore_altar6=Altar checks for correct stone once a second
+ia.tooltip.ore_altar7=Correct stone needs to be on altar only at the start and the end of the recipe
+
+tile.altar2.name=Transmutation Altar
+requious.jei.recipe.altar2=Transmutation Altar
+ia.tooltip.trans_altar0=Place 4 blocks in from of the altar
+ia.tooltip.trans_altar1=Each block has 4 values
+ia.tooltip.trans_altar2=In jei TE dyes signal positive values, Bot dyes - negative.
+ia.tooltip.trans_altar3=- - - - -
+ia.tooltip.trans_altar4=Input iron dust, after 10 seconds, altar will sum all the values,
+ia.tooltip.trans_altar5=resulting 4 values determine the output.
+ia.tooltip.trans_altar6=If there's a block with resulting values, 4 blocks will be replaced with this block.
+ia.tooltip.trans_altar7=Otherwise 4 blocks will be replaced with dirt.
+ia.tooltip.trans_altar8=- - - - -
+ia.tooltip.trans_altar9=Any block in jei can be transmuted into.
+ia.tooltip.trans_altar10=Any block NOT in jei will be treated as 0 0 0 0
+ia.tooltip.trans_altar11=If any of the 4 blocks are air, recipe will fail.
+
+ia.tooltip.research_tooltip0=Used to make research books.
+ia.tooltip.research_tooltip1=Each research is a puzzle.
+ia.tooltip.research_tooltip2=Only 4 slot input can be used on the multiblock
+ia.tooltip.research_tooltip3=- - - - -
+ia.tooltip.research_tooltip4=To research you need to put a research medium and 3 possible inputs.
+ia.tooltip.research_tooltip5=There are 5+ possible inputs for each research.
+ia.tooltip.research_tooltip6=Each attempts takes 5 seconds.
+ia.tooltip.research_tooltip7=- - - - -
+ia.tooltip.research_tooltip8=Research medium is the item in jei hint, it is stated in the research book tooltip,
+ia.tooltip.research_tooltip9=and it is the item used for duplicating it.
+ia.tooltip.research_tooltip10=Research tokens are NOT research mediums
+
+entity.twilightforest.roving_cube.name=Roving Cube
+fluid.roving_milk=Roving Milk
+item.contenttweaker.roving.name=Roving Cheese
+
+tile.contenttweaker.mana_pipe.name=High Throughput Mana Pipe
+tile.contenttweaker.cutting.name=Cutting Module
+tile.contenttweaker.pure_metal.name=Pure Block of Metal
+tile.contenttweaker.pure_sheetmetal.name=Pure Sheetmetal
+tile.contenttweaker.pure_cincinnasite.name=Pure Cincinnasite
+
+item.contenttweaker.benzene.name=Benzene
+item.contenttweaker.chlorobenzene.name=Chlorobenzene
+item.contenttweaker.benzaldehyde.name=Benzaldehyde
+item.contenttweaker.ethylbenzene.name=Ethylnenzene
+
+item.contenttweaker.toluene.name=Toluene
+item.contenttweaker.tosyl_chloride.name=Tosyl Chloride
+item.contenttweaker.nh2nhts.name=Tosylhydrazine
+item.contenttweaker.naots.name=Sodium Tosylate
+
+item.contenttweaker.chlorosulfonic.name=Chlorosulfonic Acid
+
+tile.contenttweaker.ovium_tile.name=Ovium Tile
+tile.contenttweaker.ovium_tile2.name=Ovium CTM Tile
+tile.contenttweaker.jauxum_tile.name=Jauxum Tile
+tile.contenttweaker.jauxum_tile2.name=Jauxum CTM Tile

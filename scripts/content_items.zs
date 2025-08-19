@@ -124,6 +124,10 @@ function addLava(name as string){
     
     VanillaFactory.createBlock("karmesine_tile", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("karmesine_tile2", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("ovium_tile", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("ovium_tile2", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("jauxum_tile", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("jauxum_tile2", <blockmaterial:rock>).register();
 
     VanillaFactory.createBlock("lapis_stone", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("lapis_cobblestone", <blockmaterial:rock>).register();
@@ -410,6 +414,10 @@ function addAtomicResource(name as string){
     VanillaFactory.createBlock("tinezo_block", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("zanite_coral").register();
+
+    VanillaFactory.createItem("rubeezo_ingot").register();
+    VanillaFactory.createItem("rubeezo_dust").register();
+    VanillaFactory.createBlock("rubeezo_block", <blockmaterial:rock>).register();
 
     addAtomicResource("coppra");
     addAtomicResource("nittin");
@@ -1236,6 +1244,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     stomper.setFullBlock(false);
     stomper.register();
     VanillaFactory.createItem("signal_sandworm").register();
+    VanillaFactory.createItem("worm_heart").register();
 
     {//satellites
         
@@ -1617,6 +1626,9 @@ knife.register();
 
 
 {//living
+    add_living("algae");
+    VanillaFactory.createItem("algae_feed").register();
+    VanillaFactory.createItem("algae_string").register();
 
     add_living("lv_sandworm");
     VanillaFactory.createItem("sandworm_molt").register();
@@ -2159,6 +2171,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("bonsai_mushroom_red").register();
     VanillaFactory.createItem("bonsai_baffle_cap").register();
     VanillaFactory.createItem("sus_sapling").register();
+
+    VanillaFactory.createItem("ice_bone").register();
 
     VanillaFactory.createItem("nether_pest").register();
     add_living("nitrall");
@@ -2850,8 +2864,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("terragem").register();
 
     VanillaFactory.createItem("rune_cyclic").register();
-    VanillaFactory.createItem("rune_sin").register();
 
+    VanillaFactory.createItem("mana_conductor").register();
+    VanillaFactory.createItem("mana_resistor").register();
 
     var cutting = VanillaFactory.createBlock("cutting", <blockmaterial:rock>);
     cutting.setBlockLayer("TRANSLUCENT");
@@ -2944,6 +2959,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         VanillaFactory.createItem("space_paper").register();
         VanillaFactory.createItem("space_data").register();
         //VanillaFactory.createItem("engraved_space_data").register();
+
+        
     }
     VanillaFactory.createItem("c14_dust").register();
     VanillaFactory.createItem("c14_gem").register();
@@ -3010,6 +3027,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     //VanillaFactory.createBlock("manapearl_block", <blockmaterial:rock>).register();
 }
 {//draconic
+    VanillaFactory.createItem("ouroboros_core").register();
+    VanillaFactory.createItem("manticore_core").register();
+
     VanillaFactory.createItem("electron").register();
     VanillaFactory.createItem("positron").register();
     VanillaFactory.createItem("proton").register();
@@ -3037,7 +3057,50 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 {//alchemistry
     addGlass("chemical_core");
     addGlass("inert_glass");
+    
+    VanillaFactory.createItem("pentadiene").register();
+    VanillaFactory.createItem("cyclopentadiene").register();
+    VanillaFactory.createItem("dicyclopentadiene").register();
 
+    VanillaFactory.createItem("toluene").register();
+    VanillaFactory.createItem("tosyl_chloride").register();
+    VanillaFactory.createItem("nh2nhts").register();
+    VanillaFactory.createItem("naots").register();
+
+    VanillaFactory.createItem("chlorosulfonic").register();
+    VanillaFactory.createItem("zsm5").register();
+
+    VanillaFactory.createItem("benzene").register();
+    VanillaFactory.createItem("chlorobenzene").register();
+    VanillaFactory.createItem("benzaldehyde").register();
+    VanillaFactory.createItem("ethylbenzene").register();
+    
+    VanillaFactory.createItem("cyclohexane").register();
+    VanillaFactory.createItem("cyclohexene").register();
+
+    VanillaFactory.createItem("mesitylene").register();
+    VanillaFactory.createItem("mesitylamine").register();
+    
+    VanillaFactory.createItem("xylene").register();
+
+    VanillaFactory.createItem("mustard_gas").register();
+
+    VanillaFactory.createItem("pph3").register();
+    VanillaFactory.createItem("phchn").register();
+    
+    VanillaFactory.createItem("pcy3").register();
+
+    VanillaFactory.createItem("cyclohexyl_bromide").register();
+    VanillaFactory.createItem("dibromoethane").register();
+    VanillaFactory.createItem("simes").register();
+
+    VanillaFactory.createItem("rucl3h2o").register();
+    VanillaFactory.createItem("rucl2_pph3_3").register();
+    VanillaFactory.createItem("rucl2_pph3_2_chph").register();
+    VanillaFactory.createItem("rucl2_pcy3_2_chph").register();
+    VanillaFactory.createItem("grubbs2").register();
+
+    VanillaFactory.createItem("self_healing_polymer").register();
 
     VanillaFactory.createItem("imaginium_element").register();
 }
@@ -3060,6 +3123,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createBlock("eye_center", <blockmaterial:rock>).register();
 
     VanillaFactory.createBlock("brain_matter_block", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("brain_matter_block2", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("sf_assembler_block", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("sf_infuser_block", <blockmaterial:rock>).register();
 

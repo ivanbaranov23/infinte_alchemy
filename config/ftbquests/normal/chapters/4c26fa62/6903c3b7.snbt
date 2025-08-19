@@ -1,0 +1,14 @@
+{
+	x: -3.0d,
+	y: 4.5d,
+	dependencies: [
+		"a817726b"
+	],
+	tasks: [{
+		uid: "0befafc2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rucl2_pcy3_2_chph"
+		}]
+	}]
+}

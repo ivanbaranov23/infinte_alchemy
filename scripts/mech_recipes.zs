@@ -519,6 +519,17 @@
         [<contenttweaker:diode2>, <actuallyadditions:item_battery_quintuple>, <contenttweaker:diode2>], 
         [<contenttweaker:mech_taxi_wing>, <aether_legacy:valkyrie_cape>, <contenttweaker:mech_taxi_wing>]
     ]);
+
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:mech_taxi2> * 2], [
+            <contenttweaker:flight_computer>,
+            <actuallyadditions:item_battery_quintuple>,
+            <contenttweaker:elf_mana_circuit>,
+            <contenttweaker:rocket_engine> * 3,
+            <contenttweaker:caelumite_plate> * 64
+        ], null, 
+        20, 100000
+    );
 }
 
 

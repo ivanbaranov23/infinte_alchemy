@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "contenttweaker:items/rucl2_pph3_3"
+  }
+}

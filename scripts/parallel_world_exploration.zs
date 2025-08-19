@@ -314,6 +314,19 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
             [<contenttweaker:slate_10> * 16],
             [<contenttweaker:slate_10> * 16]
         ]
+    },
+    <contenttweaker:chitigic_party>: {
+        <contenttweaker:signal_sandworm>: [
+            [
+                <contenttweaker:worm_heart> * 16,
+                <contenttweaker:chitigic> * 16,
+                <contenttweaker:sandworm_gut> * 128
+            ], [
+                <contenttweaker:worm_heart> * 16,
+                <contenttweaker:chitigic> * 16,
+                <contenttweaker:sandworm_gut> * 128
+            ]
+        ]
     }
 };
 static fuels as ILiquidStack[IItemStack] = {

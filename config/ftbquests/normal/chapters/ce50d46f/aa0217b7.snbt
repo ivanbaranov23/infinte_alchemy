@@ -1,0 +1,14 @@
+{
+	x: 20.5d,
+	y: 3.0d,
+	dependencies: [
+		"29ec6c24"
+	],
+	tasks: [{
+		uid: "787ea3b9",
+		type: "item",
+		items: [{
+			item: "modularcontroller:starlight_pool_controller"
+		}]
+	}]
+}

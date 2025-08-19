@@ -1,0 +1,26 @@
+{
+	x: 16.0d,
+	y: -1.0d,
+	text: [
+		"Algal bloom is a living that can be used to make strings, useful for wire coils.",
+		"",
+		"Algal bloom gets 10-20 food points from eating.",
+		"",
+		"Making string takes 15 food.",
+		"",
+		"Unlike pilkon, this one can already be automated with, for example, eio simple crafter."
+	],
+	dependencies: [
+		"331aeb66"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e2346c9e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:algae"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -846,6 +846,84 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <requious:bioassembler>, [
 	[<contenttweaker:living_steel_plate>, <bloodmagic:component:8>, <contenttweaker:living_processor>, <bloodmagic:component:8>, <contenttweaker:living_steel_plate>]
 ]);
 
+static chemical_reactor as Assembly = <assembly:chemical_reactor>;
+{
+    for x in 0 to 3
+    for y in 0 to 3
+    {
+        chemical_reactor.setItemSlot(1 + x, 1 + y, ComponentFace.all(), 64)
+            .setAccess(true, false)
+            .setGroup("input");
+        chemical_reactor.setJEIItemSlot(x, y, "input");
+    }
+
+    for x in 0 to 2
+    for y in 0 to 3
+    {
+        chemical_reactor.setItemSlot(7 + x, 1 + y, ComponentFace.all(), 64)
+            .setAccess(false, true)
+            .setHandAccess(false, true)
+            .setGroup("output" ~ (x + y*2));
+        chemical_reactor.setJEIItemSlot(6 + x, y, "output" ~ (x + y*2));
+    }
+
+    for y in 0 to 3
+    {
+        chemical_reactor.setItemSlot(5, 1 + y, ComponentFace.all(), 64)
+            .setAccess(true, false)
+            .setGroup("cat");
+        chemical_reactor.setJEIItemSlot(4, y, "cat");
+    }
+    
+    chemical_reactor.setEnergySlot(0, 2, ComponentFace.all(), 100 * 1000 * 1000 * 1000)
+        .setAccess(true, false)
+        .setGroup("power");
+
+    chemical_reactor.setDurationSlot(4, 2)
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 9, 1, 9, GaugeDirection.right(), false))
+        .setGroup("duration1");
+    chemical_reactor.setDurationSlot(6, 2)
+        .setVisual(SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 9, 1, 9, GaugeDirection.right(), false))
+        .setGroup("duration2");
+
+    
+
+    //chemical_reactor.setJEIItemSlot(1, 0, "input");
+    //chemical_reactor.setJEIItemSlot(2, 0, "input");
+    chemical_reactor.setJEIDurationSlot(3, 1, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 9, 1, 9, GaugeDirection.right(), false));
+    chemical_reactor.setJEIDurationSlot(5, 1, "duration", SlotVisual.createGauge("requious:textures/gui/assembly_gauges.png", 0, 9, 1, 9, GaugeDirection.right(), false));
+    //chemical_reactor.setJEIItemSlot(4, 0, "output");
+    //chemical_reactor.setJEIEnergySlot(6, 0, "power");
+
+}
+function addChemicalRecipe(
+    out as WeightedItemStack[], inp as IIngredient[], cat as IIngredient[]
+){
+    var recipe = AssemblyRecipe.create(function(container) {
+        for o in 0 to out.length {
+			if(container.jei)
+				container.addItemOutput("output" ~ o, out[o].stack.withLore(["§d§l" ~ out[o].percent ~ "%"]));
+			else if(container.random.nextDouble() < out[o].chance) //>
+				container.addItemOutput("output" ~ o, out[o].stack);
+		}
+    });
+    for i in inp recipe.requireItem("input", i);
+    for i in cat recipe.requireItem("cat", i, 0, 0);
+
+    recipe = recipe.requireDuration("duration1", 5);
+    recipe = recipe.requireDuration("duration2", 5);
+    recipe = recipe.requireEnergy("power", 1000 * 1000 * 1000);
+
+    chemical_reactor.addRecipe(recipe);
+    chemical_reactor.addJEIRecipe(recipe);	
+}
+addChemicalRecipe(
+    [<alchemistry:compound:202>],
+    [<alchemistry:element:118>, <alchemistry:element:117> * 4],
+    []
+);
+
+
 
 addBioAssemblerRecipeRandom(
     [<contenttweaker:flesh_bits> % 10, <contenttweaker:imperomite_catalyst_dust> % 100 ],

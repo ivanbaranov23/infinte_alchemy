@@ -276,3 +276,14 @@ recipes.addShapeless("ia_inversion_dust2", <contenttweaker:inversion_dust> * 2, 
                 
     rec.build();
 }
+
+scripts.content_machines.addFluidAlloyerRecipe(
+    <contenttweaker:ice_bone>, 
+    <contenttweaker:druid_bone>, <contenttweaker:druidic_dust> * 4, <liquid:astralsorcery.liquidstarlight> * 2000, 
+    20, 1000
+);
+scripts.content_machines.addFluidAlloyerRecipe(
+    <contenttweaker:ice_bone>, 
+    <contenttweaker:tar_bone> * 4, <contenttweaker:druidic_dust> * 4, <liquid:astralsorcery.liquidstarlight> * 2000, 
+    20, 1000
+);

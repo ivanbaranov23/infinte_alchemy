@@ -718,6 +718,12 @@ static all_metals as IItemStack[string][string] = {
         block: <contenttweaker:tinezo_block>,
         dust: <contenttweaker:tinezo_dust>
     },
+    rubeezo: {
+        ingot: <contenttweaker:rubeezo_ingot>,
+
+        block: <contenttweaker:rubeezo_block>,
+        dust: <contenttweaker:rubeezo_dust>
+    },
     medical_alloy: {
         ingot: <contenttweaker:medical_alloy_ingot>,
         plate: <contenttweaker:medical_alloy_plate>,
@@ -2166,7 +2172,7 @@ static custom_metals as string[] = [
     "gastight_steel","chrome", "neodymium",
     "fluix_steel", "menril_steel", "medical_alloy",
     "arkenium", "gallium", "UU_matter",
-    "black_bronze", "tinezo", "tignalum", "orichalcum",
+    "black_bronze", "tinezo", "rubeezo", "tignalum", "orichalcum",
     "gem_steel", "mirion2",
     "caelumite", "plutonium",
 
@@ -2974,7 +2980,7 @@ add3alloy(1, "flower_steel", 4,
         add3alloy(2, "signalum", 4,
             "copper", 3,
             "silver", 1,
-            "redgem", 3
+            "redgem", 2
         );
         add3alloy(2, "signalum", 5,
             "copper", 3,
@@ -3402,6 +3408,33 @@ scripts.helper.addFluidAlloyerRecipe(
         "eezo", 1,
         "tin", 5,
         "angel", 2
+    );
+}
+{//rubeezo
+    recipes.addShapeless("ia_rubeezo_dust", <contenttweaker:rubeezo_dust> * 2, [
+        <biomesoplenty:gem:1>, <taiga:eezo_dust>, <taiga:eezo_dust>,
+        <harvestcraft:strawberryrhubarbpieitem>, <appliedenergistics2:material:2>
+    ]);
+    recipes.addShapeless("ia_rubeezo_dust2", <contenttweaker:rubeezo_dust> * 6, [
+        <biomesoplenty:gem:1>, <taiga:eezo_dust>, <taiga:eezo_dust>,
+        <harvestcraft:strawberryrhubarbpieitem>, <appliedenergistics2:material:2>, <contenttweaker:rare_earth_dust>
+    ]);
+    recipes.addShapeless("ia_rubeezo_dust3", <contenttweaker:rubeezo_dust> * 6, [
+        <biomesoplenty:gem:1>, <taiga:eezo_dust>, <taiga:eezo_dust>,
+        <harvestcraft:strawberryrhubarbpieitem>, <appliedenergistics2:material:2>, <liquid:worm_blood> * 1000
+    ]);
+
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:rubeezo_ingot> * 8], [],
+        [
+            <biomesoplenty:gem:1>, 
+            <harvestcraft:strawberryrhubarbpieitem>, 
+            <appliedenergistics2:material:2>,
+            <contenttweaker:rare_earth_dust>
+        ], [
+            <liquid:worm_blood> * 500,
+            <liquid:eezo_fluid> * 216
+        ], 100, 10000
     );
 }
 
@@ -4338,6 +4371,47 @@ add3alloy(3, "ender_ingot", 1,
         ]
     );
     
+    //mana conductor
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:mana_conductor> * 4, 102400 * 120, 102400 * 6, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <botania:storage>,
+            <botania:storage>,
+            <contenttweaker:terragem>,
+            <contenttweaker:vibralcum_block>,
+            <extendedcrafting:singularity:29>,
+            <contenttweaker:blood_gem>,
+            <biomesoplenty:jar_filled:1>,
+            <botania:rune:8>
+        ]
+    );
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:mana_conductor> * 4, 102400 * 120, 102400 * 6, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <botania:storage>,
+            <botania:storage>,
+            <contenttweaker:terragem>,
+            <contenttweaker:vibralcum_block>,
+            <extendedcrafting:singularity:29>,
+            <moretcon:blockbloodstone>,
+            <biomesoplenty:jar_filled:1>,
+            <botania:rune:8>
+        ]
+    );
+    //mana resistor
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:mana_resistor> * 4, 102400 * 120, 102400 * 6, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <botania:storage>,
+            <botania:storage>,
+            <contenttweaker:terragem>,
+            <extendedcrafting:singularity:30>,
+            <extendedcrafting:singularity:30>,
+            <extendedcrafting:singularity_custom:21>,
+            <contenttweaker:awaken_witherite>,
+            <botania:rune:8>
+        ]
+    );
 }
 
 recipes.addShapeless("tungsten_mixture", <contenttweaker:tungsten_mixture>, [
@@ -4393,13 +4467,13 @@ scripts.content_machines.addAdvancedMixerRecipe(
 );
 
 {//combination
-    mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:nitinol_ingot> * 3, 1024 * 200, 1024, <contenttweaker:super_alloy_base_ingot>, 
+    mods.extendedcrafting.CombinationCrafting.addRecipe(<contenttweaker:nitinol_ingot> * 2, 1024 * 200, 1024, <contenttweaker:super_alloy_base_ingot>, 
         [
             <extendedcrafting:singularity:31>,
             <extendedcrafting:singularity:25>,
             <contenttweaker:bouncy_matter>,
-            <contenttweaker:basic_neuron>,
-            <contenttweaker:basic_neuron>,
+            <contenttweaker:neuron2_inlay>,
+            <contenttweaker:alchemical_brass_ingot>,
             <contenttweaker:alchemical_brass_ingot>,
             <contenttweaker:alchemical_brass_ingot>,
             <contenttweaker:alchemical_brass_ingot>

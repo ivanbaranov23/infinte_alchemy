@@ -1,6 +1,10 @@
 {
+	title: "Wireless mana",
 	x: 9.5d,
 	y: 0.5d,
+	text: [
+		"Wirelesser than mana spreader"
+	],
 	dependencies: [
 		"a70d58c9"
 	],

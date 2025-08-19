@@ -1,6 +1,11 @@
 {
 	x: 8.0d,
 	y: -1.0d,
+	text: [
+		"Runes need a rune base to be made. You can get more runes by using a higher tier of rune base. ",
+		"",
+		"While making a new rune, you can fix already existing one. If you do recipe with cracked rune, it cannot be inserted last or the recipe will start without it."
+	],
 	dependencies: [
 		"a82fb596",
 		"9301f84f"

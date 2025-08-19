@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: -2.0d,
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "cdde05a4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:kaolin_clay"
+		}]
+	}]
+}

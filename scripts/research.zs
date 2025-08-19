@@ -285,7 +285,7 @@ addResearchRecipe("Fluids", <minecraft:paper>, <contenttweaker:research_fluids>,
         <erebus:fluid_jar>,
         <contenttweaker:demon_bucket>,
         <immersiveengineering:metal_device1:6> * 32,
-        <extrautils2:passivegenerator:3> * 8,
+        <extrautils2:passivegenerator:3> * 4,
         <thermalexpansion:tank>,
         <fluiddrawers:tank> * 8,
         <enderio:block_reservoir> * 8

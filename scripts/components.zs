@@ -200,7 +200,79 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		<contenttweaker:elastic_clay>, <contenttweaker:wine_diamond>
 	]);
 }
+{//coils
+	recipes.remove(<projectred-core:resource_item:400>);
+	recipes.addShaped("ia_pr_copper_coil", <projectred-core:resource_item:400>, [
+		[<ore:blockEezo>, <contenttweaker:coppra>, <contenttweaker:coppra>], 
+		[<contenttweaker:coppra>, <contenttweaker:osgloridium_rod>, <contenttweaker:coppra>], 
+		[<contenttweaker:coppra>, <contenttweaker:coppra>, <ore:blockEezo>]
+	]);
+	recipes.addShaped("ia_pr_copper_coil2", <projectred-core:resource_item:400>, [
+		[<contenttweaker:rubeezo_ingot>, <contenttweaker:coppra>, <contenttweaker:coppra>], 
+		[<contenttweaker:coppra>, <contenttweaker:osgloridium_rod>, <contenttweaker:coppra>], 
+		[<contenttweaker:coppra>, <contenttweaker:coppra>, <contenttweaker:rubeezo_ingot>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<projectred-core:resource_item:400> * 2],
+		[
+			<contenttweaker:osgloridium_rod>,
+			<contenttweaker:coppra> * 4,
+			<contenttweaker:rubeezo_ingot>
+		], null,
+		20, 1000
+	);
 
+	<projectred-core:resource_item:401>.displayName = "Tin Coil";
+	recipes.remove(<projectred-core:resource_item:401>);
+	recipes.addShaped("ia_pr_tin_coil", <projectred-core:resource_item:401>, [
+		[<ore:blockEezo>, <contenttweaker:nittin>, <contenttweaker:nittin>], 
+		[<contenttweaker:nittin>, <contenttweaker:osgloridium_rod>, <contenttweaker:nittin>], 
+		[<contenttweaker:nittin>, <contenttweaker:nittin>, <ore:blockEezo>]
+	]);
+	recipes.addShaped("ia_pr_tin_coil2", <projectred-core:resource_item:401>, [
+		[<contenttweaker:rubeezo_ingot>, <contenttweaker:nittin>, <contenttweaker:nittin>], 
+		[<contenttweaker:nittin>, <contenttweaker:osgloridium_rod>, <contenttweaker:nittin>], 
+		[<contenttweaker:nittin>, <contenttweaker:nittin>, <contenttweaker:rubeezo_ingot>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<projectred-core:resource_item:401> * 2],
+		[
+			<contenttweaker:osgloridium_rod>,
+			<contenttweaker:nittin> * 4,
+			<contenttweaker:rubeezo_ingot>
+		], null,
+		20, 1000
+	);
+
+	recipes.remove(<projectred-core:resource_item:402>);
+	recipes.addShaped("ia_pr_gold_coil", <projectred-core:resource_item:402>, [
+		[<ore:blockEezo>, <contenttweaker:goold>, <contenttweaker:goold>], 
+		[<contenttweaker:goold>, <contenttweaker:osgloridium_rod>, <contenttweaker:goold>], 
+		[<contenttweaker:goold>, <contenttweaker:goold>, <ore:blockEezo>]
+	]);
+	recipes.addShaped("ia_pr_gold_coil2", <projectred-core:resource_item:402>, [
+		[<contenttweaker:rubeezo_ingot>, <contenttweaker:goold>, <contenttweaker:goold>], 
+		[<contenttweaker:goold>, <contenttweaker:osgloridium_rod>, <contenttweaker:goold>], 
+		[<contenttweaker:goold>, <contenttweaker:goold>, <contenttweaker:rubeezo_ingot>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<projectred-core:resource_item:402> * 2],
+		[
+			<contenttweaker:osgloridium_rod>,
+			<contenttweaker:goold> * 4,
+			<contenttweaker:rubeezo_ingot>
+		], null,
+		20, 1000
+	);
+
+	
+
+	mods.actuallyadditions.Empowerer.addRecipe(
+		<projectred-expansion:infused_ender_pearl> * 2, <appliedenergistics2:material:9>, 
+		<mysticalworld:pearl>, <contenttweaker:bouncy_matter_small>, <enderio:item_material:75>, <contenttweaker:mana_focus>, 
+		10000, 20, [143.0 / 255.0, 41.0 / 255.0, 133.0 / 255.0]
+	);
+}
 
 {//circuit like
 	{//immersive
@@ -479,6 +551,25 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		<twilightforest:torchberries> * 16, <liquid:enriched_tar> * 1000,
 		25000
 	);
+}
+{//boule
+	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:gambrosium_boule>, [
+			<contenttweaker:ambrosium_crystal_seed>, 
+			<projectred-core:resource_item:300> * 4, 
+			<contenttweaker:gambrosium_dust> * 64
+		], 25000000
+	);
+	scripts.helper.addSawRecipeWByproduct(<contenttweaker:gambrosium_boule>, <contenttweaker:gambrosium_wafer> * 8, <contenttweaker:gambrosium_dust>, 75);
+
+
+	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:elf_boule>, [
+			<contenttweaker:gambrosium_boule> * 4,
+			<botania:rune:9> * 3,
+			<botania:manaresource:7> * 32
+		], 250000000
+	);
+	
+	
 }
 
 {//tanks
@@ -1215,7 +1306,7 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		512, 20
 	);
 	scripts.content_machines.addAdvancedMixerRecipe(
-		[<contenttweaker:electric_wool2_base> * 4], [],
+		[<contenttweaker:electric_wool2_base> * 2], [],
 		[
 			<contenttweaker:gravel_wool> * 16,
 			<contenttweaker:rare_earth_dust> * 6,
@@ -1224,7 +1315,20 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		], [
 			<liquid:electrical_steel> * (144 * 12),
 			<liquid:biotite> * 1000,
-			<liquid:alien_polymer> * 500,
+			<liquid:chloroauric_acid> * 1000
+		],
+		40, 1000
+	);
+	scripts.content_machines.addAdvancedMixerRecipe(
+		[<contenttweaker:electric_wool2_base> * 6], [],
+		[
+			<contenttweaker:gravel_wool> * 16,
+			<contenttweaker:rarer_earth_dust>,
+			<contenttweaker:nickel_oxide> * 8,
+			<contenttweaker:conductive_alloy_wire> * 3
+		], [
+			<liquid:electrical_steel> * (144 * 12),
+			<liquid:biotite> * 1000,
 			<liquid:chloroauric_acid> * 1000
 		],
 		40, 1000
@@ -1761,13 +1865,40 @@ scripts.content_machines.addAssemblerRecipe(
 
 	mods.mekanism.infuser.addRecipe("MANA", 30, <contenttweaker:very_advanced_circuit>, <contenttweaker:very_advanced_mana_circuit>);
 
-	<ore:elfPayCheck>.add(<thermalfoundation:coin:103>);
-	<ore:elfPayCheck>.add(<thermalfoundation:coin:71>);
-	<ore:elfPayCheck>.add(<harvestcraft:deluxecheeseburgeritem>);
-	<ore:elfPayCheck>.add(<actuallyadditions:item_food:8>);
+	scripts.content_machines.addBioAssemblerRecipe(
+		[<contenttweaker:engraved_mana_circuit>], null, [
+			<contenttweaker:very_advanced_mana_circuit>,
+			<quantumflux:craftingpiece:2> * 16,
+			<enderio:item_capacitor_melodic>
+		], [
+			<liquid:bound_metal> * 1152,
+			<liquid:circuit> * 1000
+		], <contenttweaker:laser>,
+		100, 1000000
+	);
+
+	<ore:elfPayCheck1>.add(<contenttweaker:big_burger1>);
+	<ore:elfPayCheck2>.add(<harvestcraft:rainbowcurryitem>);
+	<ore:elfPayCheck2>.add(<harvestcraft:epicbaconitem>);
+	<ore:elfPayCheck3>.add(<contenttweaker:big_burger2>);
 
 	mods.botania.ElvenTrade.addRecipe([<contenttweaker:elf_mana_circuit>], [
-		<contenttweaker:very_advanced_mana_circuit>, <contenttweaker:mana_circuit>, <moreplates:elementium_plate>, <quantumflux:craftingpiece:2>, <ore:elfPayCheck>
+		<contenttweaker:engraved_mana_circuit>,
+		<contenttweaker:elf_wafer>, <contenttweaker:elf_wafer>, 
+		<contenttweaker:bloody_circuit>,
+		<ore:elfPayCheck1>
+	]);
+	mods.botania.ElvenTrade.addRecipe([<contenttweaker:elf_mana_circuit> * 3], [
+		<contenttweaker:engraved_mana_circuit>,
+		<contenttweaker:elf_wafer>, <contenttweaker:elf_wafer>, 
+		<contenttweaker:bloody_circuit>,
+		<ore:elfPayCheck2>
+	]);
+	mods.botania.ElvenTrade.addRecipe([<contenttweaker:elf_mana_circuit> * 16], [
+		<contenttweaker:engraved_mana_circuit>,
+		<contenttweaker:elf_wafer>, <contenttweaker:elf_wafer>, 
+		<contenttweaker:bloody_circuit>,
+		<ore:elfPayCheck3>
 	]);
 
 
@@ -1787,6 +1918,14 @@ scripts.content_machines.addAssemblerRecipe(
         ]
     );
 }
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_pipe>, [
+	[<contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>], 
+	[<contenttweaker:mana_conductor>, <contenttweaker:mana_conductor>, <contenttweaker:plasma_gen>, <contenttweaker:mana_conductor>, <contenttweaker:mana_conductor>], 
+	[<botania:pump>, <botania:pump>, <contenttweaker:soul_frame>, <botania:pump>, <botania:pump>], 
+	[<contenttweaker:mana_conductor>, <contenttweaker:mana_conductor>, <contenttweaker:plasma_gen>, <contenttweaker:mana_conductor>, <contenttweaker:mana_conductor>], 
+	[<contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>]
+]);
 
 
 {//signal
@@ -1838,14 +1977,14 @@ scripts.content_machines.addAssemblerRecipe(
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:rocket_engine>], 
 		[
-			<contenttweaker:explosion_device_full>,
-			<contenttweaker:tank_oxygen> * 4,
-			<contenttweaker:cooling_system>,
-			<contenttweaker:tank2>,
-			<contenttweaker:explosion_resistant_plate> * 4,
-			<contenttweaker:tignalum_plate> * 4
+			<contenttweaker:explosion_device_full> * 8,
+			<contenttweaker:tank_oxygen> * 24,
+			<contenttweaker:cooling_system> * 2,
+			<contenttweaker:tank2> * 4,
+			<contenttweaker:explosion_resistant_plate> * 24,
+			<simplyjetpacks:metaitemmods:23> * 2
 		],
-		<liquid:thermal> * (144 * 8), 20, 1024 
+		<liquid:tignalum> * (144 * 8), 20, 1024 
 	);
 	
 }

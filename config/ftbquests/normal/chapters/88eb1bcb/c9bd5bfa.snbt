@@ -1,5 +1,5 @@
 {
-	x: 10.0d,
+	x: 12.0d,
 	y: 1.0d,
 	text: [
 		"Put this machine to a tree, give it some sawdust or fertilizer and it will start genearating a fluid like sap or resin from that tree.",

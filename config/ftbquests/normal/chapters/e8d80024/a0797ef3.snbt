@@ -2,6 +2,9 @@
 	icon: "modularcontroller:rune_cutter_controller",
 	x: 14.0d,
 	y: -6.0d,
+	text: [
+		"Better recipes for rune bases"
+	],
 	dependencies: [
 		"d09cecca"
 	],

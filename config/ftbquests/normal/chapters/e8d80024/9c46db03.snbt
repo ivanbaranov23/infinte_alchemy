@@ -1,0 +1,15 @@
+{
+	x: 21.0d,
+	y: -5.0d,
+	dependencies: [
+		"0a8f114b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "07d20c9c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mech_taxi2"
+		}]
+	}]
+}

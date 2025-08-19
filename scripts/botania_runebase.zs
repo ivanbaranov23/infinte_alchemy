@@ -247,6 +247,11 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
     ], [<contenttweaker:advanced_rune_base> * 4, <contenttweaker:improved_rune_base> * 3]);
 }
 
+addRuneCutting(
+    [<contenttweaker:elf_wafer> * 8, <contenttweaker:reinforced_cell>],
+    [<contenttweaker:elf_boule>, <contenttweaker:slime_cell>],
+    [<contenttweaker:elf_wafer> * 4]
+);
 
 
 

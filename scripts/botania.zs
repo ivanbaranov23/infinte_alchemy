@@ -296,9 +296,9 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
 
     PureDaisy.addRecipe(<contenttweaker:living_steel_sheetmetal>, <contenttweaker:pure_sheetmetal>);
     PureDaisy.addRecipe(<contenttweaker:crystal_metal_block>, <contenttweaker:pure_metal>);
-    PureDaisy.addRecipe(<betternether:cincinnasite_forged>, <contenttweaker:pure_cincinnasite>);
+    PureDaisy.addRecipe(<contenttweaker:fluix_steel_block>, <contenttweaker:pure_cincinnasite>);
 
-    
+    PureDaisy.addRecipe(<minecraft:grass>, <biomesoplenty:grass:5>);
 }
 {//quartz
     ManaInfusion.removeRecipe(<botania:quartz:1>);

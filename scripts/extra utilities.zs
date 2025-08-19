@@ -18,6 +18,16 @@ scripts.helper.addSawRecipe(<minecraft:ender_pearl>, <extrautils2:endershard> * 
 		<contenttweaker:lapis_stone>, <liquid:stone> * 144, 
 		500
 	);
+	mods.tconstruct.Casting.addBasinRecipe(
+		<extrautils2:decorativesolid:2> * 3, 
+		<contenttweaker:lapis_stone>, <liquid:pilkon_blood>, 50, 
+		true, 200
+	);
+	mods.thermalexpansion.Transposer.addFillRecipe(
+		<extrautils2:decorativesolid:2> * 3, 
+		<contenttweaker:lapis_stone>, <liquid:pilkon_blood> * 50, 
+		500
+	);
 }
 {//lunar dust
 	<ore:dyeMagenta>.remove(<extrautils2:ingredients:3>);

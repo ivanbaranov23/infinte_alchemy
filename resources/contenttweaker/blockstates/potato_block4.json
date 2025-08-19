@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/potato_block4",
+      "all": "contenttweaker:blocks/potato_block4",
       "particle": "contenttweaker:blocks/potato_block4"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

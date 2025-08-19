@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/greenick_tile",
+      "all": "contenttweaker:blocks/greenick_tile",
       "particle": "contenttweaker:blocks/greenick_tile"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/greenick_smoth",
+      "all": "contenttweaker:blocks/greenick_smoth",
       "particle": "contenttweaker:blocks/greenick_smoth"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

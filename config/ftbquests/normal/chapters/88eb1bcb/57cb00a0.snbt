@@ -1,0 +1,107 @@
+{
+	title: "Grow some stones 1",
+	x: -3.0d,
+	y: -4.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"f9b61c54"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e448586d",
+		type: "item",
+		items: [{
+			item: "minecraft:stone 1 5"
+		}],
+		count: 10240L,
+		consume_items: true
+	},
+	{
+		uid: "63c37390",
+		type: "item",
+		items: [{
+			item: "minecraft:stone 1 1"
+		}],
+		count: 10240L,
+		consume_items: true
+	},
+	{
+		uid: "28c9a94e",
+		type: "item",
+		items: [{
+			item: "minecraft:stone 1 3"
+		}],
+		count: 10240L,
+		consume_items: true
+	},
+	{
+		uid: "92786786",
+		type: "item",
+		items: [{
+			item: "quark:jasper"
+		}],
+		count: 2560L,
+		consume_items: true
+	},
+	{
+		uid: "f7a2b2d7",
+		type: "item",
+		items: [{
+			item: "quark:limestone"
+		}],
+		count: 2560L,
+		consume_items: true
+	},
+	{
+		uid: "7293679b",
+		type: "item",
+		items: [{
+			item: "quark:marble"
+		}],
+		count: 2560L,
+		consume_items: true
+	},
+	{
+		uid: "b9f4faef",
+		type: "item",
+		items: [{
+			item: "minecraft:soul_sand"
+		}],
+		count: 10240L,
+		consume_items: true
+	},
+	{
+		uid: "6076ed9b",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:flesh"
+		}],
+		count: 1024L,
+		consume_items: true
+	},
+	{
+		uid: "4a401f49",
+		type: "item",
+		items: [{
+			item: "tconstruct:slime_dirt 1 1"
+		}],
+		count: 1024L,
+		consume_items: true
+	},
+	{
+		uid: "c3e7d264",
+		type: "item",
+		items: [{
+			item: "contenttweaker:burned_slimedirt"
+		}],
+		count: 1024L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "f450fe4a",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: -5.0d,
+	y: 0.0d,
+	text: [
+		"Will push transformed item to the output (use for living)"
+	],
+	dependencies: [
+		"7ee7dc77"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1599c7d4",
+		type: "item",
+		items: [{
+			item: "enderio:block_simple_crafter"
+		}]
+	}]
+}

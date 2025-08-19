@@ -1,0 +1,28 @@
+{
+	x: 17.0d,
+	y: 2.0d,
+	dependencies: [
+		"e69ed70a"
+	],
+	tasks: [{
+		uid: "74dbeb24",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_conductor"
+		}]
+	},
+	{
+		uid: "205d6669",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_resistor"
+		}]
+	},
+	{
+		uid: "70a6a359",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_pipe"
+		}]
+	}]
+}

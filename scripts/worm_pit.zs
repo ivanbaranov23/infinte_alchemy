@@ -154,3 +154,24 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     <extrautils2:decorativeglass>, <liquid:wormy_sand> * 1000,
     1000
 );
+
+
+
+
+
+{
+    var rec = RecipeBuilder.newBuilder("worm_finding", "worm_pit", 30 * 20);
+    counter += 1;
+
+    rec.addEnergyPerTickInput(10 * 1000 * 1000);
+
+    rec.addItemOutput(<contenttweaker:signal_sandworm>).setChance(0.8);
+
+    rec.addItemInput(<contenttweaker:worm_feed2> * 100);
+    rec.addItemInput(<contenttweaker:signal_reciever>);
+    
+    rec.addDimensionRequirement([17]);
+
+    rec.build();
+}
+

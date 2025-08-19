@@ -1,0 +1,17 @@
+{
+	x: 1.0d,
+	y: 1.5d,
+	text: [
+		"Wash some dirty coins"
+	],
+	dependencies: [
+		"e67d3763"
+	],
+	tasks: [{
+		uid: "dbd9530c",
+		type: "item",
+		items: [{
+			item: "atum:coin_gold"
+		}]
+	}]
+}

@@ -3,7 +3,7 @@
 	x: 15.0d,
 	y: 0.0d,
 	text: [
-		"You might loook at chapters and see that AS chapter is between late game and end game. But some of the stuff is actually already possible to obtain."
+		"You might look at chapters and see that AS chapter is between late game and end game. But some of the stuff is actually already possible to obtain."
 	],
 	dependencies: [
 		"22106357"

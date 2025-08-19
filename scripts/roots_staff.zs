@@ -12,13 +12,13 @@ function addStaffHint(inp as IIngredient, staff as IItemStack, out as IItemStack
     if (right)
         scripts.jei.addJEIhint(
             [inp], [],
-            [staff, <minecraft:paper>.withDisplayName("Right Click")],
+            [staff, <botania:cosmetic:32>.withDisplayName("Right Click")],
             [out]
         );
     else
         scripts.jei.addJEIhint(
             [inp], [],
-            [staff, <minecraft:paper>.withDisplayName("Break Using Staff")],
+            [staff, <botania:cosmetic:32>.withDisplayName("Break Using Staff")],
             [out]
         );
 }
@@ -112,26 +112,6 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
     ], true);
 }
 
-
-
-{//fire
-    addStaffHint(<contenttweaker:forest_clay_block>, <contenttweaker:staffwood_fire>, <contenttweaker:forest_fire>, true);
-    recipes.addShaped("ia_staffwood_fire", <contenttweaker:staffwood_fire>, [
-        [null, <contenttweaker:druid_bone>, <contenttweaker:lich_bone>], 
-        [null, <contenttweaker:staffwood>, <contenttweaker:druid_bone>], 
-        [<biomesoplenty:jar_filled:1>, null, null]
-    ]);
-}
-
-{//bug
-    recipes.addShaped("ia_staffwood_bug", <contenttweaker:staffwood_bug>, [
-        [<erebus:materials:2>, <xreliquary:mob_ingredient:11>, <erebus:materials:15> | <erebus:materials:35>], 
-        [null, <contenttweaker:staffwood>, <tconstruct:materials:22>], 
-        [<tconstruct:materials:21>, null, null]
-    ]);
-}
-
-
 {//flower staff
     <contenttweaker:staffwood_flower>.addShiftTooltip("Breaking block:", "Press Shift for Info");
     <contenttweaker:staffwood_flower>.addShiftTooltip("->block will drop an item");
@@ -164,4 +144,33 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
         <biomesoplenty:plant_0:12>,
         <twilightforest:steeleaf_ingot>
     ], false);
+}
+
+
+{//fire
+    addStaffHint(<contenttweaker:forest_clay_block>, <contenttweaker:staffwood_fire>, <contenttweaker:forest_fire>, true);
+    recipes.addShaped("ia_staffwood_fire", <contenttweaker:staffwood_fire>, [
+        [null, <contenttweaker:druid_bone>, <contenttweaker:lich_bone>], 
+        [null, <contenttweaker:staffwood>, <contenttweaker:druid_bone>], 
+        [<biomesoplenty:jar_filled:1>, null, null]
+    ]);
+}
+
+{//bug
+    recipes.addShaped("ia_staffwood_bug", <contenttweaker:staffwood_bug>, [
+        [<erebus:materials:2>, <xreliquary:mob_ingredient:11>, <erebus:materials:15> | <erebus:materials:35>], 
+        [null, <contenttweaker:staffwood>, <tconstruct:materials:22>], 
+        [<tconstruct:materials:21>, null, null]
+    ]);
+}
+
+{//ice
+    recipes.addShaped("ia_staffwood_ice", <contenttweaker:staffwood_ice>, [
+        [null, <contenttweaker:ice_bone>, <xreliquary:mob_ingredient:10>], 
+        [null, <contenttweaker:staffwood>, <contenttweaker:ice_bone>], 
+        [<contenttweaker:ice_bone>, null, null]
+    ]);
+
+    addStaffHint(<minecraft:lapis_ore>, <contenttweaker:staffwood_ice>, <netherendingores:ore_other_1:10>, true);
+    addStaffHint(<quark:biome_cobblestone:1>, <contenttweaker:staffwood_ice>, <aether_legacy:icestone>, true);
 }

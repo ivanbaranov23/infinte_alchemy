@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/gallium_dense_ore",
+      "all": "contenttweaker:blocks/gallium_dense_ore",
       "particle": "contenttweaker:blocks/gallium_dense_ore"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

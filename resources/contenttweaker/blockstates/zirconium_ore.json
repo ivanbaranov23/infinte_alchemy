@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/zirconium_ore",
+      "all": "contenttweaker:blocks/zirconium_ore",
       "particle": "contenttweaker:blocks/zirconium_ore"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

@@ -3,7 +3,7 @@
     "localizedname": "Tree powered compressor",
     "color": "41414a",
     "modifiers": [
-        {"description": "x4 speed",
+        {"description": "x3 speed",
             "x": -1,
             "y": 1,
             "z": 1,

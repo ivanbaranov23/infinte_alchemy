@@ -24,6 +24,7 @@ VanillaFactory.createFluid("hexane", Color.fromHex("e4dec5")).register();
 VanillaFactory.createFluid("fluorine", Color.fromHex("bba52c")).register();
 VanillaFactory.createFluid("hf", Color.fromHex("75af2e")).register();
 
+VanillaFactory.createFluid("chlorosulfonic", Color.fromHex("70d06f")).register();
 
 VanillaFactory.createFluid("methane", Color.fromHex("6d9c61")).register();
 VanillaFactory.createFluid("acetic_acid", Color.fromHex("532d0d")).register();

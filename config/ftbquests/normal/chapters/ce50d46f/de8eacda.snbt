@@ -1,0 +1,14 @@
+{
+	x: 23.5d,
+	y: 8.0d,
+	dependencies: [
+		"bd6cbf81"
+	],
+	tasks: [{
+		uid: "19aa97ad",
+		type: "item",
+		items: [{
+			item: "contenttweaker:titanakor_flesh"
+		}]
+	}]
+}

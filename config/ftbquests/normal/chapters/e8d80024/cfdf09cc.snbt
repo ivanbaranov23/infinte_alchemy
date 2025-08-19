@@ -1,0 +1,29 @@
+{
+	icon: "modularcontroller:rune_cracker_controller",
+	x: 17.0d,
+	y: 3.0d,
+	dependencies: [
+		"70670ef2"
+	],
+	tasks: [{
+		uid: "f00c28db",
+		type: "item",
+		items: [{
+			item: "modularcontroller:rune_cracker_controller"
+		}]
+	},
+	{
+		uid: "eaa749c1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electric_core"
+		}]
+	},
+	{
+		uid: "05f40cb6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_pipe"
+		}]
+	}]
+}

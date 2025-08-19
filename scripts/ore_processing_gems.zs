@@ -104,6 +104,22 @@ mods.immersiveengineering.Crusher.addRecipe( <enderio:item_material:32>, <minecr
 <actuallyadditions:item_dust:3>.displayName = "Dirty Emerald Dust";
 mods.jei.JEI.addItem(<actuallyadditions:item_dust:3>);
 
+{//bop
+    {//ruby
+        furnace.addRecipe(<thermalfoundation:material:132> * 3, <biomesoplenty:gem:1>);
+    }
+    {
+
+    }
+}
+
+{//red gem
+    scripts.helper.addSawRecipe(<erebus:red_gem>, <erebus:materials:11> * 4);
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:redstone> * 300, <erebus:materials:11>, 3000
+    );
+}
+
 //aquamarine
 <ore:dustAquamarine>.add(<contenttweaker:aquamarine_dust>);
 <ore:dustOverworldAquamarine>.add(<contenttweaker:aquamarine_dust>);

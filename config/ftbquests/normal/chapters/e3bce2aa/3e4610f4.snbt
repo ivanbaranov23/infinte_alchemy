@@ -4,9 +4,6 @@
 	text: [
 		"Consider skipping and moving straight to large sifter."
 	],
-	dependencies: [
-		"b605ae3a"
-	],
 	optional: true,
 	tasks: [{
 		uid: "76ce303e",

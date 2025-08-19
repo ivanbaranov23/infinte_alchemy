@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/neodymium_ore",
+      "all": "contenttweaker:blocks/neodymium_ore",
       "particle": "contenttweaker:blocks/neodymium_ore"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

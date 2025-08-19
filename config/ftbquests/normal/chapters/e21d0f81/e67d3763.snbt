@@ -15,8 +15,9 @@
 		dim: 17
 	}],
 	rewards: [{
-		uid: "a660b811",
-		type: "custom",
-		auto: "no_toast"
+		uid: "5ca792e5",
+		type: "item",
+		item: "atum:pharaoh_torch",
+		count: 4
 	}]
 }

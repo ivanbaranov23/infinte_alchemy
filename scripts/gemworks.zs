@@ -143,6 +143,16 @@ addSeedGemRecipes("tanzanite");
 
 mods.thermalexpansion.Centrifuge.addRecipe([<thermalfoundation:material> % 75, <contenttweaker:chrome_dust> % 25], <contenttweaker:gem_ruby_dust>, null, 5000);
 
+{//bop
+    {//amber
+        recipes.addShapeless("ia_amber_to_amber", <biomesoplenty:gem:7>, [
+            <erebus:amber>, <erebus:amber>, <erebus:amber>, <erebus:amber>,
+            <minecraft:diamond>,
+            <erebus:amber>, <erebus:amber>, <erebus:amber>, <erebus:amber>
+        ]);
+    }
+}
+
 
 recipes.remove(<biomesoplenty:terrestrial_artifact>);
 recipes.addShaped("ia_terrestrial_artifact", <biomesoplenty:terrestrial_artifact>, [

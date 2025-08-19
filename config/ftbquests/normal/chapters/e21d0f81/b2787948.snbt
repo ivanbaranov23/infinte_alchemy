@@ -1,0 +1,19 @@
+{
+	title: "Money printer",
+	x: 2.0d,
+	y: 2.0d,
+	text: [
+		"Used to make coins used to make coins"
+	],
+	dependencies: [
+		"bd884c2c",
+		"e39f9e3a"
+	],
+	tasks: [{
+		uid: "d5abf01b",
+		type: "item",
+		items: [{
+			item: "thermalexpansion:augment 1 336"
+		}]
+	}]
+}

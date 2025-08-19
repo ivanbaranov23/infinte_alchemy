@@ -249,6 +249,36 @@ var staffwood_fire = VanillaFactory.createItem("staffwood_fire");
         return ActionResult.pass();
     };
     staffwood_fire.register();
+var staffwood_ice = VanillaFactory.createItem("staffwood_ice");
+    staffwood_ice.maxStackSize = 1;
+    staffwood_ice.maxDamage = 150;
+    staffwood_ice.onItemUse = function(player, world, pos, hand, facing, blockHit) {
+        var block = world.getBlockState(pos);
+        if (block == <block:quark:biome_cobblestone:1>) {
+            world.setBlockState(<block:aether_legacy:icestone>, pos);
+            player.getHeldItem(hand).damage(1, player);
+            return ActionResult.success();
+        } else if (block == <block:minecraft:lapis_ore>) {
+            world.setBlockState(<block:netherendingores:ore_other_1:10>, pos);
+            player.getHeldItem(hand).damage(1, player);
+            return ActionResult.success();
+        } else {
+            var offhand as MutableItemStack = player.getHeldItem(mods.contenttweaker.Hand.off());
+            if (isNull(offhand)) return mods.contenttweaker.ActionResult.pass();
+            var ent_pos = pos.getOffset(facing, 1);
+            var ent_pos_str as string = "" ~ ent_pos.x ~ " " ~ ent_pos.y ~ " " ~ ent_pos.z;
+
+            if (compare_items(offhand, <item:xreliquary:mob_ingredient:10>)){
+                Commands.call("summon mowziesmobs:frostmaw " ~ ent_pos_str, player, world, false, true);
+                offhand.shrink(1);
+                player.getHeldItem(hand).damage(10, player);
+            } 
+        }
+        
+        return ActionResult.pass();
+    };
+    staffwood_ice.register();
+
 
 function addOreshroom(name as string){
     var oreshroom = VanillaFactory.createBlock("oreshroom_" ~ name, <blockmaterial:rock>);

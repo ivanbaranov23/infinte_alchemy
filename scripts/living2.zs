@@ -2,6 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
+import crafttweaker.item.WeightedItemStack;
 
 import crafttweaker.data.IData;
 
@@ -13,7 +14,9 @@ import mods.ctutils.utils.Math;
 
 import mods.thermalexpansion.Centrifuge;
 //Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
+import mods.requious.Assembly;
 
+import mods.requious.AssemblyRecipe;
 
 {//life
     print("[living] doing life essence");
@@ -143,6 +146,7 @@ print("[living] doind statics");
 
 
 static livings as IItemStack[string] = {
+    algae: <contenttweaker:algae>,
     pilkon: <contenttweaker:pilkon>,
     sandworm: <contenttweaker:lv_sandworm>,
     bedrock_golem: <contenttweaker:lv_bedrock_golem>,
@@ -173,6 +177,7 @@ static livings as IItemStack[string] = {
 };
 
 static animal_type as string[string] = {
+    algae: "f1",
     pilkon: "f1l",
     sandworm: "f1l",
     draco_lizard: "f1l",
@@ -201,6 +206,9 @@ static animal_type as string[string] = {
     chitigic_empress: "f1"
 };
 static foods as int[][IItemStack][string] = {
+    algae: {
+        <contenttweaker:algae_feed>: [10, 20]
+    },
     pilkon: {
         <thermalfoundation:material:98>: [10, 20]
     },
@@ -249,6 +257,9 @@ static foods as int[][IItemStack][string] = {
     chitigic_empress: {}
 };
 static products as int[IItemStack][string] = {
+    algae: {
+        <contenttweaker:algae_string>: 15
+    },
     pilkon: {
         <contenttweaker:pilkeum>: 25,
     },
@@ -361,6 +372,27 @@ static extra_info as string[string] = {
     baby_hair_thing: "Grows up at 250 food points."
 };
 
+
+
+function addVitamins(name as string){
+    //vitamins
+    recipes.addShapeless(name ~ "_vitamins", livings[name],
+        [livings[name].only(function(item){
+            if ((item.tag.memberGet("food") as bool) && (item.tag.memberGet("lifespan") as bool)){
+                //item good
+                return (item.tag.food.asInt() > 0)&&(item.tag.lifespan.asInt() > 0);
+            }
+            //item bad
+            return false;
+        }).marked("mark"), <contenttweaker:vitamins>],
+        function(out, ins, cInfo){
+            return ins.mark.withTag( {
+                food: ins.mark.tag.food.asInt() / 2,
+                lifespan: ins.mark.tag.lifespan.asInt() + 10
+            });
+        }, null
+    );
+}
 
 
 function add_f1(name as string) as string[]{
@@ -572,16 +604,7 @@ function add_f1l(name as string) as string[]{
         }
     }
 
-    //vitamins
-    recipes.addShapeless(name ~ "_vitamins", livings[name],
-        [livings[name].only(isAlive).marked("mark"), <contenttweaker:vitamins>],
-        function(out, ins, cInfo){
-            return ins.mark.withTag( {
-                food: ins.mark.tag.food.asInt() / 2,
-                lifespan: ins.mark.tag.lifespan.asInt() + 10
-            });
-        }, null
-    );
+    
 
     return info;
 }
@@ -632,7 +655,24 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
 
 <contenttweaker:vitamins>.addTooltip("For living halves food and gives +10 to lifespan.");
 
+{//algae
+    recipes.addShaped("ia_algae", <contenttweaker:algae>.withTag({
+            food: 10
+        }), [
+            [<harvestcraft:seaweeditem>, <contenttweaker:singularity_dust>, <harvestcraft:seaweeditem>],
+            [<contenttweaker:singularity_dust>, <harvestcraft:seaweeditem>, <contenttweaker:singularity_dust>],
+            [<harvestcraft:seaweeditem>, <contenttweaker:singularity_dust>, <harvestcraft:seaweeditem>]
+    ]);
+    recipes.addShapeless("ia_algae_feed", <contenttweaker:algae_feed> * 2, [
+        <ore:listAllseed>, <minecraft:sugar>, <minecraft:clay_ball>
+    ]);
+    recipes.addShapeless("ia_algae_feed2", <contenttweaker:algae_feed> * 6, [
+        <ore:listAllseed>, <minecraft:sugar>, <minecraft:clay_ball>, <liquid:sea_water> * 1000
+    ]);
+}
 {//pilkon
+    addVitamins("pilkon");
+
     mods.roots.Fey.addRecipe("pilkon", <contenttweaker:pilkon>.withTag({
             food: 10,
             lifespan: 25
@@ -649,6 +689,7 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
     scripts.helper.addSawRecipeWByproduct(<contenttweaker:pilkon_corpse>, <contenttweaker:pilkeum> * 4, <contenttweaker:pilkeum> * 2, 25);
 }
 {//sandworm
+    addVitamins("sandworm");
     //worm
     recipes.addShapeless("ia_lv_sandworm", 
         <contenttweaker:lv_sandworm>.withTag({
@@ -698,6 +739,8 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
 
 }
 {//draco lizard
+    addVitamins("draco_lizard");
+
     mods.roots.Pyre.addRecipe(
         "draco_lizard_egg",
         <contenttweaker:draco_lizard_egg>,
@@ -762,6 +805,7 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
     ]);
 }
 {//hair thing
+    addVitamins("hair_thing");
     Centrifuge.addRecipe(
         [
             <contenttweaker:insulation_strand> % 100,
@@ -799,6 +843,7 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
     );
 }
 {//blood slime
+    addVitamins("blood_slime");
     mods.extendedcrafting.TableCrafting.addShaped(0, 
         <contenttweaker:lv_blood_slime>.withTag({
             food: 20,
@@ -954,6 +999,64 @@ function addDroneToWorker(worker as IItemStack, cats as IIngredient[], cost as i
         )
     );
 }
+
+function addBioAssemblerRecipeChitigic(
+    spec as IItemStack, inp as IIngredient[], fluid_in as ILiquidStack[], catalyst as IIngredient,
+    out as WeightedItemStack[], fluid_out as ILiquidStack,
+    cost as int
+){
+    var recipe = AssemblyRecipe.create(function(container) {
+		
+			
+        
+
+        if(container.jei){
+            for o in 0 to out.length {
+    			container.addItemOutput("output" ~ o, out[o].stack.withLore(["§d§l" ~ out[o].percent ~ "%"]));
+            }
+            container.addItemOutput("output3", spec);
+            if fluid_out{
+                container.addFluidOutput("output", fluid_out);
+            }
+        }
+        else{
+            var living as IItemStack = container.getItem("living");
+
+            if (living.tag.memberGet("life"))
+            if (living.tag.life > 0){
+            
+                for o in 0 to out.length
+                    if(container.random.nextDouble() < out[o].chance) //>
+                        container.addItemOutput("output" ~ o, out[o].stack);
+
+                container.addItemOutput("output3", living.withTag({
+                    food: living.tag.food.asInt() - cost,
+                    life: living.tag.life.asInt() - 1
+                }));
+            }
+        }
+        
+        
+	});
+    recipe = recipe.requireItem("input", spec.marked("living"));
+	for i in inp{
+        recipe = recipe.requireItem("input", i);
+    }
+    for fluid in fluid_in{
+        recipe = recipe.requireFluid("input", fluid);
+    }
+
+    if catalyst{
+        recipe = recipe.requireItem("catalyst", catalyst, 0, 0);
+    }
+    recipe.setActive(40);
+    recipe = recipe.requireDuration("duration", 40);
+    recipe = recipe.requireEnergy("power", 1000 * 1000 * 40);
+
+    <assembly:bioassembler>.addRecipe(recipe);
+    <assembly:bioassembler>.addJEIRecipe(recipe);	
+}
+
 {//chitigic
     //food
     scripts.content_machines.addBioAssemblerRecipe(
@@ -995,6 +1098,15 @@ function addDroneToWorker(worker as IItemStack, cats as IIngredient[], cost as i
     //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
     //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
     
+    addBioAssemblerRecipeChitigic(
+        <contenttweaker:chitigic_hunter>, [<contenttweaker:lv_sandworm>], [], null,
+        [
+            <contenttweaker:sandworm_corpse>,
+            <contenttweaker:sandworm_gut> * 4,
+            <contenttweaker:sandworm_chitin> * 4
+        ], <liquid:worm_blood> * 1000,
+        10
+    );
 
 
     recipes.addShapeless("ia_chit_party", <contenttweaker:chitigic_party>, [

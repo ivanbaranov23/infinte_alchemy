@@ -1,0 +1,14 @@
+{
+	x: -5.0d,
+	y: 4.5d,
+	dependencies: [
+		"2d31e5c3"
+	],
+	tasks: [{
+		uid: "37ddb063",
+		type: "item",
+		items: [{
+			item: "requious:chemical_reactor"
+		}]
+	}]
+}

@@ -374,6 +374,47 @@
                     }
                 }
             ]
+        },
+
+        {"match": {"blocks": {"blocks": ["netherblocks:basalt:2"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "item": {
+                        "items": ["netherblocks:basalt"]
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["netherblocks:basalt:4"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "item": {
+                        "items": ["netherblocks:basalt"]
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["netherblocks:basalt:3"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "item": {
+                        "items": ["netherblocks:basalt:1"]
+                    }
+                }
+            ]
+        },
+        {"match": {"blocks": {"blocks": ["netherblocks:basalt:5"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "item": {
+                        "items": ["netherblocks:basalt:1"]
+                    }
+                }
+            ]
         }
     ]
 }

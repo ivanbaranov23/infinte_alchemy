@@ -1,8 +1,8 @@
 {
 	title: "Plant Station",
 	icon: "modularcontroller:plant_station_controller",
-	x: 2.0d,
-	y: 2.0d,
+	x: 1.0d,
+	y: 3.0d,
 	text: [
 		"Make a plant station. It can be used to make fertile soil, plants and tree saplings."
 	],

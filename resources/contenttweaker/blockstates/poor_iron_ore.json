@@ -2,10 +2,10 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/poor_iron_ore",
+      "all": "contenttweaker:blocks/poor_iron_ore",
       "particle": "contenttweaker:blocks/poor_iron_ore"
     },
-    "model": "base:storage",
+    "model": "cube_all",
     "uvlock": true,
     "transform": "forge:default-block"
   },

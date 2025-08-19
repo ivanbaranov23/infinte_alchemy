@@ -283,6 +283,13 @@ recipes.addShaped("ia_dark_steel_direct", <enderio:item_dark_steel_upgrade:1>.wi
 ]);
 
 {//machines
+	recipes.remove(<enderio:block_simple_crafter>);
+	recipes.addShaped("ia_simple_crafter1", <enderio:block_simple_crafter>, [
+		[<moreplates:electrical_steel_plate>, <avaritia:compressed_crafting_table>, <moreplates:electrical_steel_plate>],
+		[<enderio:item_material:11>, <extrautils2:machine>, <enderio:item_material:11>],
+		[<moreplates:electrical_steel_plate>, <avaritia:compressed_crafting_table>, <moreplates:electrical_steel_plate>]
+	]);
+
 	recipes.remove(<enderio:block_simple_alloy_smelter>);
 	recipes.addShaped("ia_simple_alloy_smelter1", <enderio:block_simple_alloy_smelter>, [
 		[<contenttweaker:mekanized_steel_plate>, <contenttweaker:anput_godshard>, <contenttweaker:mekanized_steel_plate>], 

@@ -26,8 +26,11 @@ function moveCookingRecipe(raw as IItemStack, cooked as IItemStack){
 
 //water
 recipes.remove(<harvestcraft:freshwateritem>);
-recipes.addShapeless("ia_pam_water", <harvestcraft:freshwateritem> * 4, [<liquid:water> * 1000]);
-recipes.addShapeless("ia_pam_water2", <harvestcraft:freshwateritem> * 16, [<liquid:pure_water> * 1000]);
+recipes.addShapeless("ia_pam_water1", <harvestcraft:freshwateritem> * 4, [<erebus:bambucket>.withTag({'Fluid': {'FluidName': 'water', 'Amount': 1000}})]);
+recipes.addShapeless("ia_pam_water2", <harvestcraft:freshwateritem> * 16, [<erebus:bambucket>.withTag({'Fluid': {'FluidName': 'pure_water', 'Amount': 1000}})]);
+
+recipes.addShapeless("ia_pam_water3", <harvestcraft:freshwateritem> * 4, [<liquid:water> * 1000]);
+recipes.addShapeless("ia_pam_water4", <harvestcraft:freshwateritem> * 16, [<liquid:pure_water> * 1000]);
 
 //milk ore fix
 <ore:milkBucket>.remove(<aether_legacy:skyroot_bucket>);

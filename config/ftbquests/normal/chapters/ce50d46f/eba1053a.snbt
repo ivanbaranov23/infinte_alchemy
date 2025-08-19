@@ -1,6 +1,9 @@
 {
 	x: 18.5d,
 	y: 4.0d,
+	text: [
+		"Nab a vortex for yourself"
+	],
 	dependencies: [
 		"501a09f7"
 	],

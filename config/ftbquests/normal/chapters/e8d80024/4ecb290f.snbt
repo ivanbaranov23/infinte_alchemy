@@ -1,8 +1,12 @@
 {
-	x: 23.0d,
-	y: -2.0d,
+	x: 22.0d,
+	y: 3.0d,
+	text: [
+		"Rune cracker wil crack runes when it has runes but not catalyst"
+	],
 	dependencies: [
-		"0aac85b0"
+		"0aac85b0",
+		"cfdf09cc"
 	],
 	optional: true,
 	tasks: [{
@@ -11,5 +15,10 @@
 		items: [{
 			item: "contenttweaker:gaia_catalyst"
 		}]
+	}],
+	rewards: [{
+		uid: "4b96f67e",
+		type: "item",
+		item: "contenttweaker:gaia_catalyst_used"
 	}]
 }
