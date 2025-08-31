@@ -16,7 +16,7 @@ import mods.modularmachinery.RecipeBuilder;
 
     rec.addFluidOutput(<liquid:flowers_depleted> * 3000);
     rec.addFluidInput(<liquid:flowers> * 4000);
-    rec.addManaInput(5000);
+    rec.addManaInput(5000, false);
 
 
     for it in 0 to 16{
@@ -32,8 +32,8 @@ import mods.modularmachinery.RecipeBuilder;
 
     //rec.addFluidOutput(<liquid:flowers_depleted> * 100);
     rec.addFluidInput(<liquid:flowers> * 2500);
-	rec.addGasInput("neutron_active", 2500);
-    rec.addManaInput(15000);
+	rec.addGasInput(<gas:neutron_active> * 2500);
+    rec.addManaInput(15000, false);
 
 	rec.addItemInput(<moretcon:solidlightning>);
 

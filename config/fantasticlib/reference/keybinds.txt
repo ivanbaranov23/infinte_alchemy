@@ -207,6 +207,9 @@ mekanism.key.feetMode
 mekanism.key.mode
 mekanism.key.voice
 
+key.categories.mmcea
+key.cycle
+
 key.moreoverlays.category
 key.moreoverlays.chunkbounds.desc
 key.moreoverlays.lightoverlay.desc

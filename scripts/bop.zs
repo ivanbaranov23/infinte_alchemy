@@ -6,6 +6,9 @@ recipes.addShaped("ia_jar_empty", <biomesoplenty:jar_empty>, [
     [<minecraft:glass>, <minecraft:glass_bottle>, <minecraft:glass>]
 ]);
 
+//sand
+<ore:sand>.remove(<biomesoplenty:white_sand>);
+recipes.addShapeless("ia_un_whitewashing_sand", <minecraft:sand>, [<biomesoplenty:white_sand>]);
 
 //blue fire
 scripts.jei.addJEIhint(

@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:carmine_reactor_controller",
+	icon: "modularmachinery:carmine_reactor_controller",
 	x: 1.0d,
 	y: -4.0d,
 	dependencies: [
@@ -10,7 +10,7 @@
 		uid: "2366d1b9",
 		type: "item",
 		items: [{
-			item: "modularcontroller:carmine_reactor_controller"
+			item: "modularmachinery:carmine_reactor_controller"
 		}]
 	},
 	{

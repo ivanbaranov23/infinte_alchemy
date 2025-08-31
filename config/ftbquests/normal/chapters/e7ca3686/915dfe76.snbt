@@ -15,7 +15,7 @@
 		uid: "647e21e1",
 		type: "item",
 		items: [{
-			item: "modularcontroller:bonsai_controller"
+			item: "modularmachinery:bonsai_controller"
 		}]
 	}]
 }

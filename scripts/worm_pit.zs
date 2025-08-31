@@ -34,10 +34,10 @@ function addWormRecipe(rec_lvl as int, out as IItemStack[], inp as IItemStack[],
     }
 
     if (rec_lvl != 0){
-        rec.addItemInput(<ore:bugFoodMeat1>, rec_lvl);
+        rec.addItemInput(<ore:bugFoodMeat1> * rec_lvl);
         rec.addItemOutput(<contenttweaker:chewed_meat> * (rec_lvl / 2));
     }
-    rec.addDimensionRequirement([17]);
+    rec.addDimensionInput(17);
 
     rec.build();
 }
@@ -170,7 +170,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     rec.addItemInput(<contenttweaker:worm_feed2> * 100);
     rec.addItemInput(<contenttweaker:signal_reciever>);
     
-    rec.addDimensionRequirement([17]);
+    rec.addDimensionInput(17);
 
     rec.build();
 }

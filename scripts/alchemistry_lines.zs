@@ -54,6 +54,8 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
 }
 
 addFluidConv(<alchemistry:compound:205>, <liquid:liquidethene>);
+addFluidConv(<alchemistry:compound:214>, <liquid:formic_acid>);
+addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
 
 {//phenol
     Atomizer.addRecipe(<contenttweaker:ethylbenzene> * 8, <liquid:ethylbenzene> * 1000);
@@ -236,7 +238,16 @@ addFluidConv(<alchemistry:compound:205>, <liquid:liquidethene>);
     ]);
     <contenttweaker:dibromoethane>.addTooltip("H₄C₂Br₂");
 }
-
+{//barium
+    Dissolver.addRecipe(<contenttweaker:awaken_witherite>, false, 1,
+        [
+            [100, <alchemistry:compound:506> * 8]
+        ]
+    );
+}
+{//cerium
+    mods.mekanism.compressor.addRecipe(<alchemistry:ingot:58>, <gas:oxygen>, <contenttweaker:ceria>);
+}
 
 {//ruthenium thing
     addChemicalRecipe(
@@ -277,3 +288,8 @@ addFluidConv(<alchemistry:compound:205>, <liquid:liquidethene>);
     );
     <contenttweaker:grubbs2>.addTooltip("RuCl₂(PCy₃)(SIMes)(=CHPh)");
 }
+
+mods.mekanism.reaction.addRecipe(
+    <contenttweaker:rarer_earth_dust>, <liquid:acid1> * 1000, <gas:cleanorichalcum> * 250, 
+    <alchemistry:ingot:57>, <gas:waste_gas> * 25, 50000, 60
+);

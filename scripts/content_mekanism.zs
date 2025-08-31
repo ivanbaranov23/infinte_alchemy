@@ -86,6 +86,9 @@ addGas("ethanolamine", "afdfe9", false);
 addGas("taurine", "afdfe9", true);
 
 addGas("rare_earth_slurry", "694217", false);
+addGas("rarer_earth_slurry", "afd91d", false);
+addGas("bastnasite_slurry", "d28200", false);
+
 addGas("amethesting", "8e3885", true);
 
 

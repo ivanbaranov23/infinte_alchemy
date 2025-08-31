@@ -2357,3 +2357,25 @@ tile.contenttweaker.ovium_tile.name=Ovium Tile
 tile.contenttweaker.ovium_tile2.name=Ovium CTM Tile
 tile.contenttweaker.jauxum_tile.name=Jauxum Tile
 tile.contenttweaker.jauxum_tile2.name=Jauxum CTM Tile
+
+ia.rename.deco_amethyst=Decorative Amethyst
+
+item.contenttweaker.ceria.name=Ceria
+
+item.contenttweaker.darker_steel_ingot.name=Darker Steel Ingot
+tile.contenttweaker.darker_steel_block.name=Block of Darker Steel
+
+item.contenttweaker.mischmetal_ingot.name=Mischmetal Ingot
+tile.contenttweaker.mischmetal_block.name=Block of Mischmetal
+
+item.contenttweaker.spicy_cactus.name=Euphorbia Resinifera
+fluid.spicy_latex=Euphorbium
+item.contenttweaker.spicy_cactus_dust.name=Resiniferatoxin
+ia.tooltip.spicy_cactus_dust=The Spiciest Substance Known to Man
+
+item.contenttweaker.rubeezo_ingot.name=Rubezo Ingot
+item.contenttweaker.rubeezo_dust.name=Rubezo Dust
+tile.contenttweaker.rubeezo_block.name=Block of Rubezo
+
+tile.contenttweaker.alien_gearbox.name=Fautly Alien Gearbox
+tile.contenttweaker.alien_sheetmetal.name=Alien Sheetmetal

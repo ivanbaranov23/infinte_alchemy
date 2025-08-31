@@ -140,7 +140,7 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
 }
 
 {//others
-    recipes.addShaped("mm_heat_input", <modulardiversity:blockhotairinputhatch>, [
+    /*recipes.addShaped("mm_heat_input", <modulardiversity:blockhotairinputhatch>, [
         [<contenttweaker:basic_modularium>, <prodigytech:circuit_perfected>, <contenttweaker:basic_modularium>], 
         [<contenttweaker:basic_modularium>, <modularmachinery:blockcasing>, <contenttweaker:basic_modularium>], 
         [<contenttweaker:basic_modularium>, <prodigytech:capacitor_charger>, <contenttweaker:basic_modularium>]
@@ -155,28 +155,28 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
         [<contenttweaker:osgloridium_plate>, <solarflux:mirror>, <contenttweaker:osgloridium_plate>], 
         [<quantumflux:craftingpiece:2>, <modularmachinery:blockcasing:4>, <quantumflux:craftingpiece:2>], 
         [<contenttweaker:osgloridium_plate>, <solarflux:mirror>, <contenttweaker:osgloridium_plate>]
-    ]);
+    ]);*/
 
-    recipes.addShaped("ia_mm_grid_input", <modularmagic:blockgridproviderinput>, [
+    recipes.addShaped("ia_mm_grid_input", <modularmachinery:blockgridproviderinput>, [
         [<extrautils2:decorativesolid:3>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:3>], 
         [<moreplates:enchanted_plate>, <modularmachinery:blockcasing>, <moreplates:enchanted_plate>], 
         [<extrautils2:decorativesolid:3>, <ore:gemMoon>, <extrautils2:decorativesolid:3>]
     ]);
-    recipes.addShaped("ia_mm_grid_output", <modularmagic:blockgridprovideroutput>, [
+    recipes.addShaped("ia_mm_grid_output", <modularmachinery:blockgridprovideroutput>, [
         [<extrautils2:decorativesolid:8>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:8>], 
         [<ore:plateEvilMetal>, <modularmachinery:blockcasing:4>, <ore:plateEvilMetal>], 
         [<extrautils2:decorativesolid:8>, <ore:gemMoon>, <extrautils2:decorativesolid:8>]
     ]);
 
     {//will
-        mods.bloodmagic.TartaricForge.addRecipe(<modularmagic:blockwillproviderinput>, [
+        mods.bloodmagic.TartaricForge.addRecipe(<modularmachinery:blockwillproviderinput>, [
             <bloodmagic:demon_crystallizer>,
             <bloodmagic:demon_extras:10>,
             <modularmachinery:blockcasing:4>,
             <bloodmagic:demon_will_gauge>
         ], 1200, 200);
 
-        mods.bloodmagic.TartaricForge.addRecipe(<modularmagic:blockwillprovideroutput>, [
+        mods.bloodmagic.TartaricForge.addRecipe(<modularmachinery:blockwillprovideroutput>, [
             <bloodmagic:demon_crucible>,
             <bloodmagic:demon_extras:10>,
             <modularmachinery:blockcasing:4>,
@@ -207,12 +207,13 @@ recipes.addShaped("ia_mm_firebox", <modularmachinery:blockcasing:2>, [
 	[<contenttweaker:hot_gear>, <modularmachinery:blockcasing:4>, <contenttweaker:hot_gear>], 
 	[<modularmachinery:itemmodularium>, <actuallyadditions:item_misc:8>, <modularmachinery:itemmodularium>]
 ]);
+/*
 recipes.addShaped("ia_mm_heat_input", <modulardiversity:blockmekheatinput>, [
 	[<contenttweaker:thermal_plate>, <prodigytech:heat_capacitor_1>, <contenttweaker:thermal_plate>], 
 	[<ore:xuRedstoneCoil>, <modularmachinery:blockcasing:4>, <ore:xuRedstoneCoil>], 
 	[<contenttweaker:thermal_plate>, <immersiveengineering:metal_device1:1>, <contenttweaker:thermal_plate>]
 ]);
-
+*/
 
 //recipes
 function addMMRecipe(
@@ -232,7 +233,7 @@ function addMMRecipe(
         rec.addItemInput(i);
     }
     for i, inp in input_iode{
-        rec.addItemInput(inp, input_iode_amounts[i]);
+        rec.addItemInput(inp * input_iode_amounts[i]);
     }
     for i in input_unconsumed{
         rec.addItemInput(i);
@@ -246,8 +247,8 @@ function addMMRecipe(
 function addEarlySingularuty(sing as IItemStack, iten as IItemStack, time as int){
     var recipe = RecipeBuilder.newBuilder("tcp_" + sing.name, "tree_powered_compressor", time);
     recipe.addItemInput(iten * 256);
-    recipe.addItemInput(<ore:treeSapling>, 4);
-    recipe.addItemInput(<ore:fertilizer>, 16);
+    recipe.addItemInput(<ore:treeSapling> * 4);
+    recipe.addItemInput(<ore:fertilizer> * 16);
     recipe.addFluidInput(<fluid:water> * 1000);
     recipe.addItemOutput(sing);
     recipe.build();
@@ -284,9 +285,9 @@ addMMRecipe("high_oven_glass2", "high_oven", 15*20, 32,
 //addEarlySingularuty(<extendedcrafting:singularity_custom:100>, <minecraft:log>, );
 {//wood
     var recipe = RecipeBuilder.newBuilder("tcp_wood", "tree_powered_compressor", 20*60*5);
-    recipe.addItemInput(<ore:logWood>, 256);
-    recipe.addItemInput(<ore:treeSapling>, 4);
-    recipe.addItemInput(<ore:fertilizer>, 16);
+    recipe.addItemInput(<ore:logWood> * 256);
+    recipe.addItemInput(<ore:treeSapling> * 4);
+    recipe.addItemInput(<ore:fertilizer> * 16);
     recipe.addFluidInput(<fluid:water> * 1000);
     recipe.addItemOutput(<extendedcrafting:singularity_custom:100>);
     recipe.build();

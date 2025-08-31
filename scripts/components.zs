@@ -1713,7 +1713,7 @@ function addElementCellRecipe(outp as IItemStack[], inp as IItemStack[]){
 		rec.addItemInput(i);
 	}
 
-	rec.addMekanismLaserInput(25000000 as double);
+	//rec.addMekanismLaserInput(25000000 as double);
     
     rec.build();
 }
@@ -1733,9 +1733,17 @@ function addElementCellRecipe(outp as IItemStack[], inp as IItemStack[]){
 
 	addElementCellRecipe([<contenttweaker:fire_cell>], [<contenttweaker:advanced_pyrotheum> * 8, <extendedcrafting:singularity_custom:100>]);
 
-	addElementCellRecipe([<contenttweaker:light_cell>], [<contenttweaker:light_ingot> * 8, <enderio:block_holy_fog> * 32, <erebus:materials:12> * 32]);
+	addElementCellRecipe([<contenttweaker:light_cell>], [
+		<contenttweaker:light_ingot> * 8, 
+		<enderio:block_holy_fog> * 32, 
+		<erebus:materials:12> * 32
+	]);
 
-	//addElementCellRecipe([])
+	addElementCellRecipe([<contenttweaker:slime_cell>], [
+		<contenttweaker:bouncy_matter_small> * 16,
+		<tconevo:material:1> * 256,
+		<contenttweaker:imperomite_catalyst> * 3
+	]);
 }
 
 recipes.addShaped("ia_explosion_device", <contenttweaker:explosion_device>, [
@@ -1849,10 +1857,10 @@ scripts.content_machines.addAssemblerRecipe(
 
 	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:very_advanced_circuit_base>, 
 		[
-			<contenttweaker:glass_cloth> * 3,
+			<botania:manaresource:22> * 3,
 			<contenttweaker:advanced_circuit_plate> * 4,
 			<contenttweaker:conductive_alloy_coil> * 2
-		], 10000
+		], 50000
 	);
 
 	mods.botania.RuneAltar.addRecipe(<contenttweaker:very_advanced_circuit>,

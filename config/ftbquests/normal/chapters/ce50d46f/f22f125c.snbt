@@ -1,0 +1,23 @@
+{
+	x: 14.5d,
+	y: 5.0d,
+	text: [
+		"Can also be bought from elves"
+	],
+	dependencies: [
+		"c7965077"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b1dbda90",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bastnasite"
+		}]
+	}],
+	rewards: [{
+		uid: "aa7f0109",
+		type: "item",
+		item: "contenttweaker:bastnasite_block"
+	}]
+}

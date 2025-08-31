@@ -378,7 +378,17 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         [<primitivemobs:dodo_egg>, <excompressum:chicken_stick>.withTag({IsAngry: 1 as byte}), <tconstruct:edible:12>] // a list of ingredients used for the summoning
     );
 }
-
+{//mowzie
+    addRootsSummoning(<entity:mowziesmobs:grottol>, [<mysticalagriculture:storage>, <tconstruct:materials:10>, <prodigytech:energion_crystal_seed>, <xreliquary:mob_ingredient:2>]);
+    addJEIentityHint(
+        [], null, "mowziesmobs:grottol",
+        [
+            <minecraft:iron_pickaxe>,
+            <minecraft:iron_pickaxe>.withTag({ench: [{lvl: 3 as short, id: 35}], RepairCost: 3})
+        ], null,
+        [<minecraft:diamond>], null, ""
+    );
+}
 
 
 {//illager

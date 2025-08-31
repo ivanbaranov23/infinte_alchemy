@@ -1,0 +1,21 @@
+{
+	x: 2.5d,
+	y: 0.5d,
+	text: [
+		"Spammable"
+	],
+	tasks: [{
+		uid: "097c0dbc",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:dynamo",
+			Damage: 5s,
+			tag: {
+				Facing: 1b,
+				RSControl: 0b,
+				Energy: 0,
+				Level: 0b
+			}
+		}]
+	}]
+}

@@ -79,7 +79,7 @@ function addBlockCompress(block as IItemStack, singul as IItemStack){
 	rec.addItemOutput(singul);
 
 	rec.addItemInput(block * 32);
-	rec.addMekanismHeatInput(500, 499, 1.0/0);
+	//rec.addMekanismHeatInput(500, 499, 1.0/0);
 
 	rec.addItemInput(<mekanism:obsidiantnt>);
 	rec.build();
@@ -91,7 +91,7 @@ function addIngotCompress(ingot as IItemStack, singul as IItemStack){
 		
 	rec2.addItemInput(ingot * 256);
 
-	rec2.addMekanismHeatInput(700, 699, 1.0/0);
+	//rec2.addMekanismHeatInput(700, 699, 1.0/0);
 		
 				
 	rec2.addItemInput(<contenttweaker:explosion_device_full>);
@@ -296,14 +296,14 @@ recipes.remove(<extendedcrafting:compressor>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, [
 	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>], 
 	[<extendedcrafting:singularity_custom:67>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <extendedcrafting:singularity_custom:67>], 
-	[<extendedcrafting:singularity_custom:67>, <modularcontroller:explosion_compressor_controller>, <extendedcrafting:frame>, <modularcontroller:explosion_compressor_controller>, <extendedcrafting:singularity_custom:67>], 
+	[<extendedcrafting:singularity_custom:67>, <modularmachinery:explosion_compressor_controller>, <extendedcrafting:frame>, <modularmachinery:explosion_compressor_controller>, <extendedcrafting:singularity_custom:67>], 
 	[<extendedcrafting:singularity_custom:67>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <extendedcrafting:singularity_custom:67>], 
 	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>]
 ]);
 mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor> * 2, [
 	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>], 
 	[<bloodmagic:component:14>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <bloodmagic:component:14>], 
-	[<bloodmagic:component:14>, <modularcontroller:explosion_compressor_controller>, <extendedcrafting:frame>, <modularcontroller:explosion_compressor_controller>, <bloodmagic:component:14>], 
+	[<bloodmagic:component:14>, <modularmachinery:explosion_compressor_controller>, <extendedcrafting:frame>, <modularmachinery:explosion_compressor_controller>, <bloodmagic:component:14>], 
 	[<bloodmagic:component:14>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <bloodmagic:component:14>], 
 	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>]
 ]);

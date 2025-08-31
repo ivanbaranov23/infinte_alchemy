@@ -998,6 +998,9 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("death_metal_clump").register();
     VanillaFactory.createItem("death_metal_dirty_dust").register();
 
+    VanillaFactory.createItem("mischmetal_ingot").register();
+    VanillaFactory.createBlock("mischmetal_block", <blockmaterial:rock>).register();
+
     VanillaFactory.createBlock("emc_ore", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("pandemonium_ingot").register();
@@ -1289,7 +1292,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     VanillaFactory.createItem("information_crystal").register();
 
     VanillaFactory.createItem("circuit1").register();
-    VanillaFactory.createItem("circuit2").register();
+    //VanillaFactory.createItem("circuit2").register();
     VanillaFactory.createItem("circuit3").register();
 }
 
@@ -2893,6 +2896,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         VanillaFactory.createItem("chitigic_food1").register();
         VanillaFactory.createItem("chitigic_food2").register();
         VanillaFactory.createItem("chitigic_food3").register();
+        VanillaFactory.createItem("chitigic_food4").register();
         VanillaFactory.createItem("chitigic_egg").register();
         VanillaFactory.createItem("chewed_guts").register();
         add_living("chitigic_drone");
@@ -2938,9 +2942,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createBlock("computer", <blockmaterial:rock>).register();
 
     VanillaFactory.createBlock("particle1", <blockmaterial:rock>).register();
-    //VanillaFactory.createBlock("particle2", <blockmaterial:rock>).register();
-    //VanillaFactory.createBlock("particle3", <blockmaterial:rock>).register();
-    //VanillaFactory.createBlock("particle4", <blockmaterial:rock>).register();
+    
     addGlass("magnetic_glass");
 
     VanillaFactory.createFluid("sunnarium_base", Color.fromHex("f5ad33")).register();
@@ -2986,6 +2988,13 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     antenna_mk3.setTranslucent(true);
     antenna_mk3.setFullBlock(false);
     antenna_mk3.register();
+
+    VanillaFactory.createBlock("bastnasite_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("bastnasite").register();
+    VanillaFactory.createBlock("bastnasite_block", <blockmaterial:rock>).register();
+    
+    VanillaFactory.createItem("csitl").register();
+    VanillaFactory.createItem("scintillator").register();
 
     VanillaFactory.createItem("zblank").register();
     VanillaFactory.createItem("inverted_gem_ingot").register();
@@ -3057,6 +3066,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 {//alchemistry
     addGlass("chemical_core");
     addGlass("inert_glass");
+
+    VanillaFactory.createItem("ceria").register();
     
     VanillaFactory.createItem("pentadiene").register();
     VanillaFactory.createItem("cyclopentadiene").register();
@@ -3082,6 +3093,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("mesitylamine").register();
     
     VanillaFactory.createItem("xylene").register();
+
+    VanillaFactory.createItem("cp2zrcl2").register();
+    VanillaFactory.createItem("cp2zrhcl").register();
+
 
     VanillaFactory.createItem("mustard_gas").register();
 

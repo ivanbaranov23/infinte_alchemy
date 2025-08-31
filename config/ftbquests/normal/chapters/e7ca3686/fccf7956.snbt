@@ -14,7 +14,7 @@
 		uid: "867617d1",
 		type: "item",
 		items: [{
-			item: "modularcontroller:air_collector_controller"
+			item: "modularmachinery:air_collector_controller"
 		}]
 	}],
 	rewards: [{

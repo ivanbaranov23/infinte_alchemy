@@ -10,7 +10,7 @@ import mods.modularmachinery.RecipeBuilder;
 		
 	rec.addItemInput(<botania:manaresource:4>);
 
-	rec.addManaInput(100000);
+	rec.addManaInput(100000, false);
 	rec.build();
 }
 
@@ -26,6 +26,6 @@ import mods.modularmachinery.RecipeBuilder;
 	rec.addItemInput(<contenttweaker:corrupted_ambrosium> * 2);
 	rec.addFluidInput(<liquid:mana> * (100 * 1000));
 
-	rec.addManaInput(100000);
+	rec.addManaInput(100000, false);
 	rec.build();
 }

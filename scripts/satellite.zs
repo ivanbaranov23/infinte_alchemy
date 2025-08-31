@@ -201,7 +201,7 @@ function getColor(v as double){
         [<contenttweaker:signal_reciever>, null, null, <contenttweaker:signal_reciever>, null, null, <contenttweaker:signal_reciever>], 
         [<contenttweaker:signal_reciever>, null, null, <contenttweaker:signal_reciever>, null, null, <contenttweaker:signal_reciever>], 
         [<contenttweaker:satellite_plating2>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_chip>, <contenttweaker:information_crystal>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_plating2>], 
-        [<contenttweaker:satellite_plating2>, <contenttweaker:circuit1>, <contenttweaker:information_crystal>, <contenttweaker:rtg2>, <contenttweaker:information_crystal>, <contenttweaker:circuit1>, <contenttweaker:satellite_plating2>], 
+        [<contenttweaker:satellite_plating2>, <contenttweaker:circuit1>, <contenttweaker:information_crystal>, <contenttweaker:vortexed_ingot>, <contenttweaker:information_crystal>, <contenttweaker:circuit1>, <contenttweaker:satellite_plating2>], 
         [<contenttweaker:satellite_plating2>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_chip>, <contenttweaker:information_crystal>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_plating2>]
     ]);
 
@@ -276,6 +276,126 @@ chip data
 static satelliteController as Assembly = <assembly:satellite_controller>;
 static sat_comp as IIngredient = <contenttweaker:satellite_computer>.marked("computer");
 
+
+static chip_data as float[string][string] = {
+    //name: [min_sat, weight, sat bonus, luck bonus]
+    iron_asteroid: {
+        minimum: 0, 
+        weight: 1000, 
+        min_tier: 0
+    },
+    copper_asteroid: {
+        minimum: 5, 
+        weight: 1000, 
+        min_tier: 0
+    },
+    tin_asteroid: {
+        minimum: 5, 
+        weight: 1000, 
+        min_tier: 0
+    },
+
+    nickel_asteroid: {
+        minimum: 5, 
+        weight: 1000, 
+        min_tier: 0
+    },
+    aluminum_asteroid: {
+        minimum: 5, 
+        weight: 1000, 
+        min_tier: 0
+    },
+    zinc_asteroid: {
+        minimum: 5, 
+        weight: 1000, 
+        min_tier: 0
+    },
+    /*
+    cobalt
+    ardite
+
+    gold
+    silver
+    lead
+    osmium
+
+    platinum
+    
+
+    */
+    beryllium_asteroid: {
+        minimum: 500,
+        weight: 400,
+        min_tier: 1
+    },
+    moissanite_asteroid: {
+        minimum: 500,
+        weight: 400,
+        min_tier: 0
+    },
+    zirconium_asteroid: {
+        minimum: 100, 
+        weight: 1000, 
+        min_tier: 0
+    },
+    dense_zirconium_asteroid: {
+        minimum: 1000, 
+        weight: 200, 
+        min_tier: 2
+    },
+
+    bastnasite_asteroid: {
+        minimum: 25000,
+        weight: 300,
+        min_tier: 2
+    },
+
+    ice_comet: {
+        minimum: 25, 
+        weight: 400, 
+        min_tier: 1
+    },
+    moon: {
+        minimum: 50, 
+        weight: 400, 
+        min_tier: 1
+    },
+    energy_vortex: {
+        minimum: 100, 
+        weight: 350, 
+        min_tier: 1
+    },
+    rock_crystal: {
+        minimum: 100, 
+        weight: 200, 
+        min_tier: 0
+    },
+    alien_wreck: {
+        minimum: 100, 
+        weight: 200, 
+        min_tier: 0
+    },
+    alien_small_outpost: {
+        minimum: 100, 
+        weight: 200, 
+        min_tier: 0
+    },
+    alien_large_outpost: {
+        minimum: 100, 
+        weight: 200, 
+        min_tier: 0
+    }
+};
+static drone_mining as IItemStack[string] = {
+    iron_asteroid: <densemetals:dense_iron_ore>,
+    copper_asteroid: <densemetals:dense_copper_ore>,
+    tin_asteroid: <densemetals:dense_tin_ore>,
+    nickel_asteroid: <densemetals:dense_nickel_ore>,
+    aluminum_asteroid: <densemetals:dense_aluminum_ore>,
+    zinc_asteroid: <densemetals:dense_zinc_ore>,
+    
+    bastnasite_asteroid: <contenttweaker:bastnasite_ore>
+};
 
 
 function addSatelliteChip(chip_data_in as string, sel_item as IItemStack, chip_data_out as string, min_sat as int, chance as float){
@@ -381,6 +501,28 @@ function addDroneVortexRecipe(it_in as IItemStack, it_out as IItemStack, time_t 
 }
 
 
+addDroneMiningRecipe("iron_asteroid", <densemetals:dense_iron_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("copper_asteroid", <densemetals:dense_copper_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("tin_asteroid", <densemetals:dense_tin_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("nickel_asteroid", <densemetals:dense_nickel_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("aluminum_asteroid", <densemetals:dense_aluminum_ore> * 16, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("zinc_asteroid", <densemetals:dense_zinc_ore> * 16, 20 * 60, 500 * 1000);
+
+addDroneMiningRecipe("beryllium_asteroid", <contenttweaker:beryllium_ore> * 32, 20 * 60, 5000 * 1000);
+addDroneMiningRecipe("moissanite_asteroid", <contenttweaker:moissanite_ore> * 32, 20 * 60, 5000 * 1000);
+addDroneMiningRecipe("zirconium_asteroid", <contenttweaker:zirconium_ore> * 32, 20 * 60, 5000 * 1000);
+
+addDroneMiningRecipe("bastnasite_asteroid", <contenttweaker:bastnasite_ore> * 32, 20 * 60, 5000 * 1000);
+
+addDroneMiningRecipe("ice_comet", <contenttweaker:space_ice_raw> * 16, 20 * 60, 500 * 1000, <contenttweaker:laser>);
+addDroneMiningRecipe("moon", <contenttweaker:moon_dust> * 24, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("rock_crystal", <astralsorcery:blockcustomore>, 20 * 60, 500 * 1000);
+addDroneMiningRecipe("alien_wreck", <contenttweaker:alien_wreck>, 20 * 60, 500 * 1000, <contenttweaker:webbing_unit>);
+addDroneMiningRecipe("alien_small_outpost", <contenttweaker:alien_wreck> * 4, 20 * 60, 500 * 1000, <contenttweaker:laser>);
+addDroneMiningRecipe("alien_large_outpost", <contenttweaker:alien_wreck> * 64, 20 * 60, 500 * 1000, <contenttweaker:nuke>, false);
+
+
+
 {//adding computer
     print("[REQ] adding computer");
     var recipe = AssemblyRecipe.create(function(container) {
@@ -456,111 +598,6 @@ function addDroneVortexRecipe(it_in as IItemStack, it_out as IItemStack, time_t 
     
 }
 
-
-
-static chip_data as float[string][string] = {
-    //name: [min_sat, weight, sat bonus, luck bonus]
-    iron_asteroid: {
-        minimum: 0, 
-        weight: 1000, 
-        min_tier: 0
-    },
-    copper_asteroid: {
-        minimum: 5, 
-        weight: 1000, 
-        min_tier: 0
-    },
-    tin_asteroid: {
-        minimum: 5, 
-        weight: 1000, 
-        min_tier: 0
-    },
-
-    nickel_asteroid: {
-        minimum: 5, 
-        weight: 1000, 
-        min_tier: 0
-    },
-    aluminum_asteroid: {
-        minimum: 5, 
-        weight: 1000, 
-        min_tier: 0
-    },
-    zinc_asteroid: {
-        minimum: 5, 
-        weight: 1000, 
-        min_tier: 0
-    },
-    /*
-    cobalt
-    ardite
-
-    gold
-    silver
-    lead
-    osmium
-
-    platinum
-    
-
-    */
-    beryllium_asteroid: {
-        minimum: 500,
-        weight: 400,
-        min_tier: 1
-    },
-    moissanite_asteroid: {
-        minimum: 500,
-        weight: 400,
-        min_tier: 0
-    },
-    zirconium_asteroid: {
-        minimum: 100, 
-        weight: 1000, 
-        min_tier: 0
-    },
-    dense_zirconium_asteroid: {
-        minimum: 1000, 
-        weight: 200, 
-        min_tier: 2
-    },
-
-    ice_comet: {
-        minimum: 25, 
-        weight: 400, 
-        min_tier: 1
-    },
-    moon: {
-        minimum: 50, 
-        weight: 400, 
-        min_tier: 1
-    },
-    energy_vortex: {
-        minimum: 100, 
-        weight: 350, 
-        min_tier: 1
-    },
-    rock_crystal: {
-        minimum: 100, 
-        weight: 200, 
-        min_tier: 0
-    },
-    alien_wreck: {
-        minimum: 100, 
-        weight: 200, 
-        min_tier: 0
-    },
-    alien_small_outpost: {
-        minimum: 100, 
-        weight: 200, 
-        min_tier: 0
-    },
-    alien_large_outpost: {
-        minimum: 100, 
-        weight: 200, 
-        min_tier: 0
-    }
-};
 
 
 {//search 1
@@ -716,11 +753,6 @@ static chip_data as float[string][string] = {
 }
 
 {//jei
-    /*input_chip");
-    "input_comp");
-    
-    "output_chip");
-    "output_info*/
     for chip_data_out in chip_data{
         mods.jei.JEI.addItem(<contenttweaker:space_data>.withTag({data: chip_data_out}));
         var recipe = AssemblyRecipe.create(function(container) {
@@ -734,16 +766,21 @@ static chip_data as float[string][string] = {
             ));
             
             container.addItemOutput("output_sat", <contenttweaker:satellite1> * chip_data[chip_data_out].minimum);
-            if (chip_data[chip_data_out].min_tier == 1)
-                container.addItemOutput("output_antenna", <contenttweaker:antenna_mk1>);
-            if (chip_data[chip_data_out].min_tier == 2)
-                container.addItemOutput("output_antenna", <contenttweaker:antenna_mk2>);
-            if (chip_data[chip_data_out].min_tier == 3)
-                container.addItemOutput("output_antenna", <contenttweaker:antenna_mk3>);
+            
+            if (drone_mining has chip_data_out){
+                container.addItemOutput("output_item", drone_mining[chip_data_out]);
+            }
         });
 
-        recipe = recipe.requireItem("input_comp", <contenttweaker:satellite_computer>);
+        //recipe = recipe.requireItem("input_comp", <contenttweaker:satellite_computer>);
         recipe = recipe.requireItem("input_chip", <contenttweaker:space_paper>);
+
+        if (chip_data[chip_data_out].min_tier == 1)
+            recipe.requireItem("input_antenna", <contenttweaker:antenna_mk1>);
+        if (chip_data[chip_data_out].min_tier == 2)
+            recipe.requireItem("input_antenna", <contenttweaker:antenna_mk2>);
+        if (chip_data[chip_data_out].min_tier == 3)
+            recipe.requireItem("input_antenna", <contenttweaker:antenna_mk3>);
 
         satelliteController.addJEIRecipe(recipe);
 
@@ -755,35 +792,6 @@ static chip_data as float[string][string] = {
 }
 
 
-
-/*
-addSatelliteChip("none", <minecraft:iron_nugget>.withDisplayName("Explore Local Asteroid Belt"), "explore_space1", 10, 0.15);
-addSatelliteChip("none", <minecraft:iron_ingot>.withDisplayName("Explore Outer Asteroid Belt"), "explore_space2", 50, 0.1);
-addSatelliteChip("none", <minecraft:iron_block>.withDisplayName("Explore Neighbouring Star Systems"), "explore_space3", 150, 0.05);
-addSatelliteChip("none", <extendedcrafting:singularity:1>.withDisplayName("Explore Local Cluster"), "explore_space4", 500, 0.05);
-addSatelliteChip("none", <avaritia:singularity>.withDisplayName("Explore Universe"), "explore_space5", 1500, 0.01);
-addSatelliteChip("none", <extendedcrafting:singularity_ultimate>.withDisplayName("Explore Multiverse"), "explore_space6", 50000, 0.01);
-
-
-addSatelliteChip("explore_space1", <minecraft:iron_ingot>.withDisplayName("Search for Iron"), "iron_asteroid", 10, 0.01);
-*/
-addDroneMiningRecipe("iron_asteroid", <densemetals:dense_iron_ore> * 16, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("copper_asteroid", <densemetals:dense_copper_ore> * 16, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("tin_asteroid", <densemetals:dense_tin_ore> * 16, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("nickel_asteroid", <densemetals:dense_nickel_ore> * 16, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("aluminum_asteroid", <densemetals:dense_aluminum_ore> * 16, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("zinc_asteroid", <densemetals:dense_zinc_ore> * 16, 20 * 60, 500 * 1000);
-
-addDroneMiningRecipe("beryllium_asteroid", <contenttweaker:beryllium_ore> * 8, 20 * 60, 5000 * 1000);
-addDroneMiningRecipe("moissanite_asteroid", <contenttweaker:moissanite_ore> * 8, 20 * 60, 5000 * 1000);
-addDroneMiningRecipe("zirconium_asteroid", <contenttweaker:zirconium_ore> * 8, 20 * 60, 5000 * 1000);
-
-addDroneMiningRecipe("ice_comet", <contenttweaker:space_ice_raw> * 16, 20 * 60, 500 * 1000, <contenttweaker:laser>);
-addDroneMiningRecipe("moon", <contenttweaker:moon_dust> * 24, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("rock_crystal", <astralsorcery:blockcustomore>, 20 * 60, 500 * 1000);
-addDroneMiningRecipe("alien_wreck", <contenttweaker:alien_wreck>, 20 * 60, 500 * 1000, <contenttweaker:webbing_unit>);
-addDroneMiningRecipe("alien_small_outpost", <contenttweaker:alien_wreck> * 4, 20 * 60, 500 * 1000, <contenttweaker:laser>);
-addDroneMiningRecipe("alien_large_outpost", <contenttweaker:alien_wreck> * 64, 20 * 60, 500 * 1000, <contenttweaker:nuke>, false);
 
 recipes.addShapeless("ia_program_space_navigator_energy_vortex", <contenttweaker:space_navigator>.withTag({target: "energy_vortex"}),
     [

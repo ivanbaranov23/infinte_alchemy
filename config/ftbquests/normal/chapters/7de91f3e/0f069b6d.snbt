@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:luck_extractor_controller",
+	icon: "modularmachinery:luck_extractor_controller",
 	x: 11.0d,
 	y: 3.5d,
 	dependencies: [
@@ -10,7 +10,7 @@
 		uid: "db88d0a6",
 		type: "item",
 		items: [{
-			item: "modularcontroller:luck_extractor_controller"
+			item: "modularmachinery:luck_extractor_controller"
 		}]
 	},
 	{

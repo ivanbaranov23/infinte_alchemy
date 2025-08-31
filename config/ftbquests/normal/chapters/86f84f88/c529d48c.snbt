@@ -5,7 +5,7 @@
 		uid: "62e1aa0f",
 		type: "item",
 		items: [{
-			item: "modularcontroller:research_station_controller"
+			item: "modularmachinery:research_station_controller"
 		}]
 	}]
 }

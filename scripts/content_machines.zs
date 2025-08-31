@@ -983,10 +983,10 @@ static satelliteController as Assembly = <assembly:satellite_controller>;
     
 
     satelliteController.setJEIItemSlot(0, 0, "input_chip");
-    satelliteController.setJEIItemSlot(1, 0, "input_comp");
+    satelliteController.setJEIItemSlot(1, 0, "input_antenna");
     satelliteController.setJEIDurationSlot(2, 0, "duration", SlotVisual.create(1,1).addPart("requious:textures/gui/assembly_gauges.png", 0, 8));
     satelliteController.setJEIItemSlot(3, 0, "output_chip");
     satelliteController.setJEIItemSlot(4, 0, "output_info");
     satelliteController.setJEIItemSlot(5, 0, "output_sat");
-    satelliteController.setJEIItemSlot(6, 0, "output_antenna");
+    satelliteController.setJEIItemSlot(6, 0, "output_item");
 }

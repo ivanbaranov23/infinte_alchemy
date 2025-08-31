@@ -18,7 +18,7 @@
 		uid: "a4876d39",
 		type: "item",
 		items: [{
-			item: "modularcontroller:blood_altar_controller"
+			item: "modularmachinery:blood_altar_controller"
 		}]
 	}]
 }

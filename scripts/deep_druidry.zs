@@ -7,7 +7,7 @@ import crafttweaker.item.WeightedItemStack;
 import mods.modularmachinery.RecipeBuilder;
 
 mods.alchemistry.Evaporator.addRecipe(
-    <contenttweaker:roving>, <liquid:roving_milk> * 4000
+    <contenttweaker:roving>, <liquid:roving_milk> * 1000
 );
 
 recipes.addShapeless("ia_druidic_dust1", <contenttweaker:druidic_dust>, [
@@ -23,7 +23,7 @@ recipes.addShapeless("ia_druidic_dust2", <contenttweaker:druidic_dust> * 2, [
 recipes.addShapeless("ia_druidic_dust3", <contenttweaker:druidic_dust> * 4, [
     <contenttweaker:wildwood_pulp>,
     <contenttweaker:roving>,
-    <roots:runic_dust>, <roots:baffle_cap_mushroom>, <contenttweaker:forest_clay>
+    <roots:runic_dust>, <roots:baffle_cap_mushroom>, <contenttweaker:forest_clay> | <caves_n_cliffs:amethyst_cluster_single>
 ]);
 recipes.addShapeless("ia_druidic_dust4", <contenttweaker:druidic_dust> * 6, [
     <contenttweaker:wildwood_pulp>,
@@ -35,7 +35,7 @@ recipes.addShapeless("ia_druidic_dust4", <contenttweaker:druidic_dust> * 6, [
 recipes.addShapeless("ia_druidic_dust5", <contenttweaker:druidic_dust> * 12, [
     <contenttweaker:wildwood_pulp>,
     <contenttweaker:roving>,
-    <roots:runic_dust>, <roots:baffle_cap_mushroom>, <contenttweaker:enmaned_biomass>, <contenttweaker:forest_clay>
+    <roots:runic_dust>, <roots:baffle_cap_mushroom>, <contenttweaker:enmaned_biomass>, <contenttweaker:forest_clay> | <caves_n_cliffs:amethyst_cluster_single>
 ]);
 
 
@@ -152,27 +152,7 @@ recipes.addShapeless("ia_druidic_dust5", <contenttweaker:druidic_dust> * 12, [
                 
             rec.build();
         }
-        /*for gel_out,recs in gel_recs{
-            for items in recs{
-                var rec = RecipeBuilder.newBuilder("transmut_gel" ~ counter, "druid_circle", 120);
-                counter += 1;
-
-                rec.addEnergyPerTickInput(256);
-
-
-                rec.addItemOutput(<contenttweaker:transmut_gel> * gel_out);
-
-                for itm in items{
-                    rec.addItemInput(itm.stack);
-                    rec.setChance(itm.chance);
-                    
-                }
-
-                rec.addFluidInput(<liquid:pereskia_soup> * 1000);
-                
-                rec.build();
-            }
-        }*/
+        
     }
 
     {//fluid_conversions

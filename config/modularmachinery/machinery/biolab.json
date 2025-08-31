@@ -12,7 +12,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -26,7 +26,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -40,7 +40,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -54,7 +54,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -68,7 +68,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -82,7 +82,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -96,7 +96,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -110,7 +110,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -124,7 +124,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -138,7 +138,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -152,7 +152,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -166,7 +166,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -180,7 +180,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -194,7 +194,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -208,7 +208,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -222,7 +222,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -236,7 +236,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -250,7 +250,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -264,7 +264,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -278,7 +278,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -292,7 +292,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -306,7 +306,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -320,7 +320,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -334,7 +334,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -348,7 +348,7 @@
             ],
             "modifier": {
                     "io": "input",
-                    "target": "duration",
+                    "target": "modularmachinery:duration",
                     "operation": 1,
                     "multiplier": 0.9460576467
             }
@@ -376,8 +376,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch"
+                "casings_all"
             ]
         },
         {
@@ -409,8 +408,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch"
+                "casings_all"
             ]
         },
         {
@@ -482,8 +480,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch"
+                "casings_all"
             ]
         },
         {
@@ -547,8 +544,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch"
+                "casings_all"
             ]
         },
         {
@@ -668,8 +664,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch"
+                "casings_all"
             ]
         },
         {
@@ -677,8 +672,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch"
+                "casings_all"
             ]
         },
         {
@@ -702,8 +696,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch"
+                "casings_all"
             ]
         },
         {

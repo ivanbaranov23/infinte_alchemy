@@ -64,7 +64,7 @@ static Feeder as Assembly = <assembly:feeder>;
     //FluidSieve.addJEIRecipe(recipe);	
 }
 {
-    var rec = RecipeBuilder.newBuilder("1", "sprook_pasture", 80);
+    var rec = RecipeBuilder.newBuilder("sprook_pasture1", "sprook_pasture", 80);
 	rec.addEnergyPerTickInput(1000);
 
 	/*rec.addItemInput(<enderio:item_soul_vial:1>.withTag({entityId: entity}));

@@ -49,13 +49,12 @@
             "z": 4,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -72,13 +71,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -95,13 +93,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -134,13 +131,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -149,13 +145,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -164,13 +159,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -179,13 +173,12 @@
             "z": 0,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -202,13 +195,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -217,13 +209,12 @@
             "z": 4,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -232,13 +223,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -247,13 +237,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -262,13 +251,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -493,13 +481,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -516,13 +503,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -539,13 +525,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -554,13 +539,12 @@
             "z": 4,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -569,13 +553,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -584,13 +567,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -599,13 +581,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -614,13 +595,12 @@
             "z": 0,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -629,13 +609,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -764,13 +743,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -779,13 +757,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -794,13 +771,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -849,13 +825,12 @@
             "z": 0,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -864,13 +839,12 @@
             "z": 4,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -879,13 +853,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -894,13 +867,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -909,13 +881,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -924,13 +895,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -947,13 +917,12 @@
             "z": 0,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -962,13 +931,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -985,13 +953,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -1000,13 +967,12 @@
             "z": 4,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -1015,13 +981,12 @@
             "z": 3,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -1038,13 +1003,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -1053,13 +1017,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -1076,13 +1039,12 @@
             "z": 0,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -1091,13 +1053,12 @@
             "z": 4,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -1162,13 +1123,12 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {
@@ -1177,13 +1137,12 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modularmagic:blockwillproviderinput@0",
-                "modularmagic:blockgridproviderinput@0",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockhotairinputhatch@0",
-                "modulardiversity:blockmeklaseracceptor@0",
-                "modularmagic:blocklifeessenceproviderinput@0",
-                "modulardiversity:blockdaylightdetector@0"
+                "modularmachinery:blockwillproviderinput@0",
+                "modularmachinery:blockgridproviderinput@0",
+                "modularmachinery:blockmanainputhatch@0",
+                
+                
+                "modularmachinery:blocklifeessenceproviderinput@0"
             ]
         },
         {

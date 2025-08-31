@@ -1,6 +1,10 @@
 {
+	title: "Diesel generator",
 	x: -0.5d,
-	y: 1.5d,
+	y: 2.5d,
+	text: [
+		""
+	],
 	tasks: [{
 		uid: "a8e45d32",
 		type: "item",
@@ -11,7 +15,6 @@
 				Amount: 1000
 			}
 		}],
-		ignore_damage: true,
-		ignore_nbt: 1b
+		ignore_damage: true
 	}]
 }

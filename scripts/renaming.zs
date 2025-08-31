@@ -39,6 +39,7 @@
 <mekanism:ingot:3>.displayName = game.localize("ia.rename.glowstone_ingot");
 <mekanism:basicblock:4>.displayName = game.localize("ia.rename.glowstone_block");
 
+<caves_n_cliffs:amethyst_cluster_single>.displayName = game.localize("ia.rename.deco_amethyst");
 
 
 //game.setLocalization("tile.netherendingores:ore_other_1", game.localize("ia.rename.poor_quartz"));

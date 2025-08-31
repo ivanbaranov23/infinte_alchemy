@@ -5,7 +5,7 @@
 		uid: "25df9713",
 		type: "item",
 		items: [{
-			item: "modularcontroller:research2_controller"
+			item: "modularmachinery:research2_controller"
 		}]
 	}]
 }

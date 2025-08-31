@@ -1,0 +1,20 @@
+{
+	x: 12.0d,
+	y: -1.0d,
+	dependencies: [
+		"7fa8d2e9"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e49bced2",
+		type: "item",
+		items: [{
+			item: "enderio:block_travel_anchor"
+		}]
+	}],
+	rewards: [{
+		uid: "0a2b8400",
+		type: "item",
+		item: "enderio:block_travel_anchor"
+	}]
+}

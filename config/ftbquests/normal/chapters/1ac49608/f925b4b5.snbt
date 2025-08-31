@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:tignalum_oven_controller",
+	icon: "modularmachinery:tignalum_oven_controller",
 	x: 2.0d,
 	y: 1.0d,
 	text: [
@@ -12,9 +12,9 @@
 	tasks: [{
 		uid: "fa5db77a",
 		type: "item",
-		icon: "modularcontroller:tignalum_oven_controller",
+		icon: "modularmachinery:tignalum_oven_controller",
 		items: [{
-			item: "modularcontroller:tignalum_oven_controller"
+			item: "modularmachinery:tignalum_oven_controller"
 		}]
 	},
 	{

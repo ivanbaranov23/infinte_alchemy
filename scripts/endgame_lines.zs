@@ -92,7 +92,7 @@ import mods.ctutils.utils.Math;
         rec.addItemInput(
             <contenttweaker:luck_crystal>.withTag({luck: i})
         );
-        rec.addFluidInput(<liquid:potion>.withTag({Potion: "cofhcore:luck4"}) * (25 * i));
+        rec.addFluidInput(<liquid:potion>.withTag({Potion: "cofhcore:luck4"}) * (125 * i));
 
         rec.build();
     }

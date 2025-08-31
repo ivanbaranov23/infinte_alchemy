@@ -9,7 +9,7 @@
             "z": 0,
             "nbt": {"machine":"modularmachinery:satellite_launch_pad"},
             "elements": [
-                "modularcontroller:satellite_launch_pad_controller@2"
+                "modularmachinery:satellite_launch_pad_controller@2"
             ]
         },
 

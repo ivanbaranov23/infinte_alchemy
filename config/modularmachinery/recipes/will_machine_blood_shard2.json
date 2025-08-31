@@ -12,7 +12,7 @@
             "type": "will",
             "io-type": "input",
             "willtype": "destructive",
-            "willamount": 5
+            "amount": 5
         },
         
         {

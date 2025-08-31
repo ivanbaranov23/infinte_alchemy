@@ -15,7 +15,7 @@
 		uid: "29066e26",
 		type: "item",
 		items: [{
-			item: "modularcontroller:flower_controller"
+			item: "modularmachinery:flower_controller"
 		}]
 	}]
 }

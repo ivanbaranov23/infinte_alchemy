@@ -217,22 +217,6 @@
         mods.thermalexpansion.Transposer.addExtractRecipe(
             <liquid:pereskia_soup> * 250, <contenttweaker:pereskia_soup>, 1000, <minecraft:bowl>
         );
-
-        mods.immersiveengineering.Mixer.addRecipe(
-            <liquid:druid_soup> * 2000, <liquid:pereskia_soup> * 2000, 
-            [<contenttweaker:druidic_dust>, <erebus:erebus_food:13>, <tconstruct:edible:30>], 
-            30000
-        );
-        mods.immersiveengineering.Mixer.addRecipe(
-            <liquid:druid_soup> * 4000, <liquid:pereskia_soup> * 4000, 
-            [<contenttweaker:druidic_dust>, <erebus:erebus_food:13>, <contenttweaker:bouncy_matter_small>], 
-            30000
-        );
-        mods.immersiveengineering.Mixer.addRecipe(
-            <liquid:druid_soup> * 3500, <liquid:pereskia_soup> * 3500, 
-            [<contenttweaker:druidic_dust>, <erebus:erebus_food:13>, <contenttweaker:gelatin>], 
-            30000
-        );
     }    
 
     //mech parts

@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:regen_chamber_controller",
+	icon: "modularmachinery:regen_chamber_controller",
 	x: 10.0d,
 	y: 0.5d,
 	text: [
@@ -22,7 +22,7 @@
 		uid: "f04bc87b",
 		type: "item",
 		items: [{
-			item: "modularcontroller:regen_chamber_controller"
+			item: "modularmachinery:regen_chamber_controller"
 		}]
 	},
 	{

@@ -39,7 +39,7 @@ function addTableElementShapeless(el as IItemStack, inp as IItemStack, num as in
     recipes.addShapeless("ia_el_red" ~ el.displayName ~ "_" ~ inp.displayName, el, inps);
 }
 var elements as int[IItemStack][IItemStack] = {
-    
+
     <alchemistry:element:68>: {
         <erebus:dark_capped_mushroom_block> * 8: 1,
         <erebus:sarcastic_czech_mushroom_block> * 8: 1,
@@ -63,10 +63,10 @@ var elements_no_alch as int[IItemStack][IItemStack] = {
     },
     <alchemistry:element:20>: {
         <contenttweaker:calcium>: 4
-    },/*
-    <alchemistry:element:78>: {
-        <thermalfoundation:material:134>: 4
-    }*/
+    },
+    <alchemistry:element:56>: {
+        <contenttweaker:awaken_witherite>: 2
+    },
     <alchemistry:element:84>: {    
         <contenttweaker:polonium_dust>: 4
     }

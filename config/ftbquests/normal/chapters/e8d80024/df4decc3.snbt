@@ -8,7 +8,7 @@
 		uid: "05b5d420",
 		type: "item",
 		items: [{
-			item: "modularcontroller:mana_bifuser_controller"
+			item: "modularmachinery:mana_bifuser_controller"
 		}]
 	}]
 }

@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:gas_column_controller",
+	icon: "modularmachinery:gas_column_controller",
 	x: 20.0d,
 	y: -2.0d,
 	dependencies: [
@@ -10,7 +10,7 @@
 		uid: "8cd17388",
 		type: "item",
 		items: [{
-			item: "modularcontroller:gas_column_controller"
+			item: "modularmachinery:gas_column_controller"
 		}]
 	},
 	{

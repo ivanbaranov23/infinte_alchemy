@@ -8,7 +8,7 @@
 		uid: "d75cbaaa",
 		type: "item",
 		items: [{
-			item: "modularcontroller:explosion_compressor_controller"
+			item: "modularmachinery:explosion_compressor_controller"
 		}]
 	}]
 }

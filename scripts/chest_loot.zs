@@ -17,7 +17,7 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
     }
 }
 
-{
+{//erebus
     {//alien 1
         var alien_erebus_1 as LootTable = LootTweaker.newTable("contenttweaker:alien_erebus_1");
         //var alien_erebus_1_pool as LootPool = alien_erebus_1.addPool("alien_erebus_1_pool", 3, 7, 0, 0);
@@ -35,14 +35,16 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
         });
         
         addLootTable("contenttweaker:alien_erebus_1", 1, 3, {
-            <scannable:scanner>: 10,
+            <scannable:scanner>: 7,
             <scannable:module_blank>: 40,
             <industrialforegoing:meat_feeder>.withTag({Fluid: {FluidName: "meat", Amount: 128000}}): 10,
             <tconstruct:materials:14> * 2: 15,
             <thermalfoundation:upgrade>: 10,
             <thermalfoundation:upgrade:33>: 5,
             <thermalfoundation:upgrade:34>: 3,
-            <thermalfoundation:upgrade:35>: 1
+            <thermalfoundation:upgrade:35>: 1,
+
+            <enderio:item_travel_staff>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 0}}): 5
         });
 
         addLootTable("contenttweaker:alien_erebus_1", 0, 2, {

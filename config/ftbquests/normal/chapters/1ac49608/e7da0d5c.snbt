@@ -8,7 +8,7 @@
 		uid: "77c724a9",
 		type: "item",
 		items: [{
-			item: "modularcontroller:energy_infuser_controller"
+			item: "modularmachinery:energy_infuser_controller"
 		}]
 	}]
 }

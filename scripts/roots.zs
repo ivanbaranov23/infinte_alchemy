@@ -473,7 +473,13 @@ Rituals.getRitual("ritual_healing_aura").setFloat("player_amount", 2.0);
 
         bone_mushroom: <betternether:bone_mushroom>,
 
-        origin: <biomesoplenty:flower_1:5>
+        origin: <biomesoplenty:flower_1:5>,
+
+        ame1: <caves_n_cliffs:small_amethyst_bud>,
+        ame2: <caves_n_cliffs:medium_amethyst_bud>, 
+        ame3: <caves_n_cliffs:large_amethyst_bud>, 
+        ame4: <caves_n_cliffs:amethyst_cluster>,
+        ame5: <caves_n_cliffs:amethyst_cluster_single>
     };
     val flower_soils as IIngredient[string] = {
         ia_mushroom_red: <minecraft:mycelium>,
@@ -516,7 +522,13 @@ Rituals.getRitual("ritual_healing_aura").setFloat("player_amount", 2.0);
 
         bone_mushroom: <betternether:bone_tile>,
 
-        origin: <biomesoplenty:grass:5>
+        origin: <biomesoplenty:grass:5>,
+
+        ame1: <caves_n_cliffs:budding_amethyst>,
+        ame2: <caves_n_cliffs:budding_amethyst>,
+        ame3: <caves_n_cliffs:budding_amethyst>,
+        ame4: <caves_n_cliffs:budding_amethyst>,
+        ame5: <caves_n_cliffs:budding_amethyst>,
     };
 
     //jei
@@ -586,7 +598,7 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     mods.thermalexpansion.InductionSmelter.addRecipe(
         outp, 
         inp, <contenttweaker:transmut_gel>, 
-        25000, 
+        15000, 
         outp, 50
     );
 
@@ -654,6 +666,13 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     Chrysopoeia_addRecipe("certus_from", <appliedenergistics2:material:2> * 4, <appliedenergistics2:material:3> * 4);
 
     //Chrysopoeia_addRecipe("bloodshroom", <mod_lavacow:cordy_shroom>, <mod_lavacow:bloodtooth_shroom>);
+    
+    //caves amethyst
+    Chrysopoeia_addRecipe("ame1", <prodigytech:energion_crystal_seed> * 4, <caves_n_cliffs:amethyst_cluster_single> * 4);
+    Chrysopoeia_addRecipe("ame2", <caves_n_cliffs:small_amethyst_bud>, <caves_n_cliffs:amethyst_cluster_single> * 2);
+    Chrysopoeia_addRecipe("ame3", <caves_n_cliffs:medium_amethyst_bud>, <caves_n_cliffs:amethyst_cluster_single> * 3);
+    Chrysopoeia_addRecipe("ame4", <caves_n_cliffs:large_amethyst_bud>, <caves_n_cliffs:amethyst_cluster_single> * 4);
+    Chrysopoeia_addRecipe("ame5", <caves_n_cliffs:amethyst_cluster>, <caves_n_cliffs:amethyst_cluster_single> * 8);
 }
 {//forest runes
     mods.appliedenergistics2.Inscriber.addRecipe(<contenttweaker:runewood>, 

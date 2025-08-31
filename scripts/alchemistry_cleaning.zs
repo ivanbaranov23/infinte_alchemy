@@ -12,12 +12,20 @@ for item in [
     <ore:cobblestone>,
     <ore:stone>,
 
+    <minecraft:quartz>,
+    <minecraft:quartz_ore>,
+    <minecraft:quartz_block>,
+    <minecraft:quartz_block:1>,
+    <minecraft:quartz_block:2>,
+
     <minecraft:nether_wart>,
     <minecraft:nether_wart_block>,
 
     <minecraft:magma>,
 
     <minecraft:ender_pearl>,
+    <minecraft:purpur_block>,
+    <minecraft:purpur_pillar>,
 
     <alchemistry:mineral_salt>,
     <minecraft:skull:1>

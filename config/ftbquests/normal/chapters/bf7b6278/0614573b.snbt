@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:research_station_controller",
+	icon: "modularmachinery:research_station_controller",
 	x: 17.0d,
 	y: 1.0d,
 	text: [
@@ -21,7 +21,7 @@
 		uid: "3459f7f1",
 		type: "item",
 		items: [{
-			item: "modularcontroller:research_station_controller"
+			item: "modularmachinery:research_station_controller"
 		}]
 	},
 	{

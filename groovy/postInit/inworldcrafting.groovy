@@ -163,6 +163,15 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .output(item('contenttweaker:compound_metal2'))
         .register()
 
+inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('druid_soup'))
+        .input(item('thermalfoundation:storage_alloy', 7) * 8)
+        .input(item('contenttweaker:singularity_dust'))
+        .input(item('biomesoplenty:gem', 5) * 32)
+        .input(item('thermalexpansion:frame'))
+        .output(item('enderio:block_travel_anchor'))
+        .register()
+
 
 inWorldCrafting.explosion.recipeBuilder()
     .input(item('thermalfoundation:rockwool', 7))

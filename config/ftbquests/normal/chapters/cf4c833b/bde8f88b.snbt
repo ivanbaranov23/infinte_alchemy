@@ -1,0 +1,11 @@
+{
+	x: 5.5d,
+	y: 5.5d,
+	tasks: [{
+		uid: "24e343e5",
+		type: "item",
+		items: [{
+			item: "mekanismgenerators:reactor"
+		}]
+	}]
+}

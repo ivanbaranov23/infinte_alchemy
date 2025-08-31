@@ -1,0 +1,20 @@
+{
+	title: "Good Loot",
+	x: 2.0d,
+	y: -1.0d,
+	text: [
+		"You can find a piece of alien technology abandoned in erebus. It is broken but you can salvage some useful parts. Chest also contains some good stuff.",
+		"",
+		"Be careful of the locusts who made this pile of goodies their nest."
+	],
+	dependencies: [
+		"2266a5db"
+	],
+	optional: true,
+	tasks: [{
+		uid: "964294ef",
+		type: "checkmark",
+		title: "Good loot",
+		icon: "contenttweaker:alien_gearbox"
+	}]
+}

@@ -210,7 +210,7 @@ mods.immersiveengineering.MetalPress.addRecipe(
 			]
 		);
 		Blueprint.addRecipe("structure", 
-			<immersiveengineering:metal_decoration0:4> * 2, 
+			<immersiveengineering:metal_decoration0:4> * 3, 
 			[
 				<immersiveengineering:metal_decoration1:1>, <immersiveengineering:material:8>,
 				<ore:gearSilver>, <contenttweaker:duraluminum_gear>, <ore:gearOsmium>,
@@ -218,7 +218,7 @@ mods.immersiveengineering.MetalPress.addRecipe(
 			]
 		);
 		Blueprint.addRecipe("structure", 
-			<immersiveengineering:metal_decoration0:5> * 2, 
+			<immersiveengineering:metal_decoration0:5> * 3, 
 			[
 				<immersiveengineering:metal_decoration1:1>, <immersiveengineering:material:9>,
 				<ore:gearElectrum>, <contenttweaker:duraluminum_gear>, <contenttweaker:lesmium_gear>,

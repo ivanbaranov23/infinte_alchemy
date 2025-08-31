@@ -5,7 +5,7 @@
 		uid: "e802dd82",
 		type: "item",
 		items: [{
-			item: "modularcontroller:bug_hill_controller"
+			item: "modularmachinery:bug_hill_controller"
 		}]
 	}]
 }

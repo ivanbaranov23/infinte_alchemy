@@ -2,7 +2,7 @@
 	x: 9.0d,
 	y: 5.0d,
 	text: [
-		"USed for making cooking oil used for cooking"
+		"Used for making cooking oil used for cooking"
 	],
 	dependencies: [
 		"0e347247"

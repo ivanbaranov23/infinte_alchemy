@@ -1,0 +1,22 @@
+{
+	x: 11.0d,
+	y: -1.0d,
+	text: [
+		"Magically delicious"
+	],
+	dependencies: [
+		"22106357"
+	],
+	optional: true,
+	tasks: [{
+		uid: "49caedca",
+		type: "checkmark",
+		title: "Druid Soup",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "druid_soup"
+			}
+		}
+	}]
+}

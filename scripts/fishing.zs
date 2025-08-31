@@ -25,7 +25,7 @@ function addCoralGrowthRec(coral as IItemStack, cat as IItemStack){
     //rec.addFluidOutput(<liquid:bugs> * tier_bugs[tier]);
     rec.addItemInput(coral);
     rec.addItemInput(cat);
-    rec.addItemInput(<ore:coralFeed>, 3);
+    rec.addItemInput(<ore:coralFeed> * 3);
     rec.addFluidInput(<liquid:seaweed_rich_water> * 1500);
     
             
@@ -55,13 +55,10 @@ function addFishRec(fout as IItemStack, cat as IItemStack){
 
     rec.addEnergyPerTickInput(100);
 
-    //rec.addDimensionRequirement([66]);
-
-    //rec.addFluidOutput(<liquid:bugs> * tier_bugs[tier]);
-    //rec.addItemInput(fin);
+    
     rec.addItemInput(fout);
     rec.addItemInput(cat);
-    rec.addItemInput(<ore:fishFeed>, 2);
+    rec.addItemInput(<ore:fishFeed> * 2);
     rec.addFluidInput(<liquid:seaweed_rich_water> * 1000);
     
             

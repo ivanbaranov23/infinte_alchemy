@@ -152,6 +152,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:zirconium_gem>, <contenttweaker:zirconium_block>);
 
     add3x3Recipe(<contenttweaker:death_metal_ingot>, <contenttweaker:death_metal_block>);
+    add3x3Recipe(<contenttweaker:bastnasite>, <contenttweaker:bastnasite_block>);
 
     add3x3Recipe(<contenttweaker:space_ice_crystal>, <contenttweaker:space_ice_crystal_block>);
     add3x3Recipe(<alchemistry:ingot:4>, <contenttweaker:beryllium_block>);
@@ -159,6 +160,8 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<alchemistry:ingot:94>, <contenttweaker:plutonium_block>);
 
     add3x3Recipe(<contenttweaker:lucky_alloy_ingot>, <contenttweaker:lucky_alloy_block>);
+
+    add3x3Recipe(<contenttweaker:mischmetal_ingot>, <contenttweaker:mischmetal_block>);
 
     add3x3Recipe(<contenttweaker:ssa_ingot>, <contenttweaker:ssa_block>);
 
@@ -393,6 +396,16 @@ recipes.addShapeless("ia_food_pellet", <contenttweaker:food_pellet>,
         <fluid:meat> * 1000, 
         <fluid:syrup> * 1000, 
         <contenttweaker:enspiced_spicy_bioblend>
+    ]
+);
+recipes.addShapeless("ia_food_pellet2", <contenttweaker:food_pellet> * 8, 
+    [
+        <fluid:nutrient_distillation> * 1000, 
+        <fluid:mushroom_stew> * 1000, 
+        <fluid:honey> * 1000, 
+        <fluid:meat> * 1000, 
+        <fluid:syrup> * 1000, 
+        <contenttweaker:spicy_cactus_dust>
     ]
 );
 

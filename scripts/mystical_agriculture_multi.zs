@@ -103,7 +103,7 @@ mods.thermalexpansion.Crucible.addRecipe(
     rec.addEnergyPerTickInput(256);
 
     rec.addFluidOutput(<liquid:essence_slurp> * 5000);
-    rec.addItemInput(<ore:inferiumSlurp1>, 10);
+    rec.addItemInput(<ore:inferiumSlurp1> * 10);
 
     rec.build();
 }{//slurp2
@@ -112,7 +112,7 @@ mods.thermalexpansion.Crucible.addRecipe(
     rec.addEnergyPerTickInput(1024);
 
     rec.addFluidOutput(<liquid:essence_slurp> * 25000);
-    rec.addItemInput(<ore:inferiumSlurp2>, 10);
+    rec.addItemInput(<ore:inferiumSlurp2> * 10);
 
     rec.build();
 }{//slurp3
@@ -121,7 +121,7 @@ mods.thermalexpansion.Crucible.addRecipe(
     rec.addEnergyPerTickInput(4096);
 
     rec.addFluidOutput(<liquid:essence_slurp> * 50000);
-    rec.addItemInput(<ore:inferiumSlurp3>, 10);
+    rec.addItemInput(<ore:inferiumSlurp3> * 10);
 
     rec.build();
 }
@@ -166,7 +166,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting> * 16);
-        rec.addItemInput(<ore:slimecrystal>, 4);
+        rec.addItemInput(<ore:slimecrystal> * 4);
         
         rec.addItemOutput(<mysticalagriculture:crafting:1> * 4);
 
@@ -179,7 +179,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addFluidInput(<liquid:sticky_water> * 3000);
         rec.addItemInput(<mysticalagriculture:crafting:1> * 16);
-        rec.addItemInput(<ore:slimecrystal>, 6);
+        rec.addItemInput(<ore:slimecrystal> * 6);
         
         rec.addItemOutput(<mysticalagriculture:crafting:2> * 4);
 
@@ -192,7 +192,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addFluidInput(<liquid:sticky_water> * 5000);
         rec.addItemInput(<mysticalagriculture:crafting:2> * 16);
-        rec.addItemInput(<ore:slimecrystal>, 8);
+        rec.addItemInput(<ore:slimecrystal> * 8);
         
         rec.addItemOutput(<mysticalagriculture:crafting:3> * 4);
 
@@ -205,7 +205,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addFluidInput(<liquid:sticky_water> * 7000);
         rec.addItemInput(<mysticalagriculture:crafting:3> * 16);
-        rec.addItemInput(<ore:slimecrystal>, 12);
+        rec.addItemInput(<ore:slimecrystal> * 12);
         
         rec.addItemOutput(<mysticalagriculture:crafting:4> * 4);
 

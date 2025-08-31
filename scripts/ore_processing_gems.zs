@@ -135,6 +135,28 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 <ore:dustSpaceice>.add(<contenttweaker:space_ice>);
 mods.aether_legacy.Freezer.registerFreezable(<contenttweaker:space_ice>, <contenttweaker:space_ice_crystal>, 200);
 
+{//bastnasite
+    <contenttweaker:bastnasite>.addTooltip("(Ce,La,Nd)CO₃F");
+    mods.alchemistry.Dissolver.addRecipe(<contenttweaker:bastnasite>, false, 1,
+        [
+            [100, 
+                <alchemistry:element:58> * 4, 
+                <alchemistry:element:57> * 4, 
+                <alchemistry:element:60> * 4,
+                <alchemistry:element:6> * 8,
+                <alchemistry:element:8> * 24,
+                <alchemistry:element:9> * 8
+            ]
+        ]
+    );
+    mods.botania.ElvenTrade.addRecipe([<contenttweaker:bastnasite>], [
+        <contenttweaker:manaclay>,
+        <contenttweaker:rare_earth_dust>, <contenttweaker:rare_earth_dust>
+    ]);
+
+
+    
+}
 
 //moissanite
 <ore:dustMoissanite>.add(<contenttweaker:moissanite>);

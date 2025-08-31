@@ -9,8 +9,7 @@
             "z": 4,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "modularmachinery:blockmanainputhatch"
             ]
         },
         {

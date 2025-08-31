@@ -30,7 +30,7 @@ function addRuneRecipes(rune as IItemStack, cracked as IItemStack, inps as IIngr
     RuneAltar.addRecipe(rune * (4 + rune_bonus[tier]), inps + rune_bases[tier + 1] + cracked, mana);
 
     {
-        var rec = RecipeBuilder.newBuilder(rune.displayName, "rune_cracker", 20 * 1);
+        var rec = RecipeBuilder.newBuilder(rune.name, "rune_cracker", 20 * 1);
 
 		rec.addEnergyPerTickInput(2048 * 1000);
 

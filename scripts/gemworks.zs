@@ -152,6 +152,16 @@ mods.thermalexpansion.Centrifuge.addRecipe([<thermalfoundation:material> % 75, <
         ]);
     }
 }
+mods.thermalexpansion.Transposer.addFillRecipe(
+    <contenttweaker:aquamarine_dust>,
+    <biomesoplenty:gem:6>, <liquid:astralsorcery.liquidstarlight> * 500,
+    4000
+);
+mods.thermalexpansion.Transposer.addFillRecipe(
+    <contenttweaker:aquamarine_dust>,
+    <biomesoplenty:gem:6> * 3, <liquid:aqua_regia> * 5000,
+    16000
+);
 
 
 recipes.remove(<biomesoplenty:terrestrial_artifact>);

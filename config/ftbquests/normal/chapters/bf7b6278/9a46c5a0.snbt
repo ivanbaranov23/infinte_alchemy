@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:garden_cloche_controller",
+	icon: "modularmachinery:garden_cloche_controller",
 	x: 12.0d,
 	y: 6.0d,
 	text: [
@@ -13,7 +13,7 @@
 		uid: "14dfb363",
 		type: "item",
 		items: [{
-			item: "modularcontroller:garden_cloche_controller"
+			item: "modularmachinery:garden_cloche_controller"
 		}]
 	},
 	{

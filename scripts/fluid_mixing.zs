@@ -8,13 +8,6 @@ import mods.fluidintetweaker.interaction.Condition as ICondition;
 
 FITweaker.addRecipe(<liquid:blood>, <liquid:water>, <blockstate:biomesoplenty:flesh>);
 
-FITweaker.addRecipe(<liquid:blood>, <liquid:witchwater>, <blockstate:minecraft:soul_sand>);
-FITweaker.addRecipe(<liquid:witchwater>, <liquid:blood>, <blockstate:minecraft:soul_sand>);
-FITweaker.addRecipe(<blockstate:biomesoplenty:flesh>, <liquid:witchwater>,
-    FITweaker.outputBuilder()
-        .addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:soul_sand>))
-);
-
 FITweaker.addRecipe(<liquid:blueslime>, <liquid:witchwater>, <blockstate:tconstruct:slime_dirt:type=blue>);
 FITweaker.addRecipe(<liquid:ash_solution>, <liquid:witchwater>, <blockstate:quark:marble>);
 FITweaker.addRecipe(<liquid:andesite>, <liquid:witchwater>, 
@@ -50,8 +43,32 @@ FITweaker.addRecipe(<blockstate:minecraft:cobblestone>, <liquid:ash_solution>,
 FITweaker.addRecipe(<liquid:lava>, <liquid:andesite>, <blockstate:minecraft:stone:variant=granite>);
 
 
-//aether
-FITweaker.addRecipe(<liquid:dirt>, <liquid:liquidgoldenamber>, <blockstate:aether_legacy:aether_dirt>);
+//dirt
+FITweaker.addRecipe(<liquid:sewage>, <liquid:dirt>,                 <blockstate:minecraft:dirt:snowy=false,variant=dirt>);
+//FITweaker.addRecipe(<liquid:sewage>, <liquid:ash_solution>,         <blockstate:biomesoplenty:dirt:coarse=false,variant=silty>);
+//FITweaker.addRecipe(<liquid:sewage>, <liquid:sand>,                 <blockstate:biomesoplenty:dirt:coarse=false,variant=sandy>);
+//FITweaker.addRecipe(<liquid:sewage>, <liquid:witchwater>,           <blockstate:biomesoplenty:dirt:coarse=false,variant=loamy>);
+FITweaker.addRecipe(<liquid:sewage>, <liquid:liquidgoldenamber>,    <blockstate:aether_legacy:aether_dirt>);
+
+//sand
+FITweaker.addRecipe(<liquid:blood>, <liquid:witchwater>, <blockstate:minecraft:soul_sand>);
+FITweaker.addRecipe(<liquid:witchwater>, <liquid:blood>, <blockstate:minecraft:soul_sand>);
+FITweaker.addRecipe(<blockstate:biomesoplenty:flesh>, <liquid:witchwater>,
+    FITweaker.outputBuilder()
+        .addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:soul_sand>))
+);
+
+FITweaker.addRecipe(<blockstate:minecraft:dirt:snowy=false,variant=dirt>, <liquid:fertilizer>,
+    FITweaker.outputBuilder()
+        .addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:grass:snowy=false>))
+);
+FITweaker.addRecipe(<blockstate:minecraft:farmland:moisture=0>, <liquid:fertilizer>,
+    FITweaker.outputBuilder()
+        .addEvent(FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:grass:snowy=false>))
+);
+
+FITweaker.addRecipe(<liquid:lava>, <liquid:astralsorcery.liquidstarlight>, <blockstate:minecraft:sand:variant=sand>);
+FITweaker.addRecipe(<liquid:sand>, <liquid:astralsorcery.liquidstarlight>, <blockstate:biomesoplenty:white_sand>);
 
 
 {//research
@@ -74,10 +91,13 @@ FITweaker.addRecipe(<liquid:dirt>, <liquid:liquidgoldenamber>, <blockstate:aethe
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:malachite_glue>, <blockstate:erebus:umberstone:type=umberstone>);
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:stone>, <blockstate:tconstruct:soil:type=grout>);
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:clay>, <blockstate:tconstruct:dried_clay:type=clay>);
+
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:sea_water>, <blockstate:biomesoplenty:dirt:coarse=false,variant=silty>);
     FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:sand>, <blockstate:biomesoplenty:dirt:coarse=false,variant=sandy>);
+    FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:witchwater>, <blockstate:biomesoplenty:dirt:coarse=false,variant=loamy>);
     //FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:sand>, <blockstate:tconstruct:dried_clay:type=clay>);
 
+    FITweaker.addRecipe(<liquid:sludge_cg>, <liquid:dirt>, <blockstate:minecraft:dirt:snowy=false,variant=dirt>);
     
 }
 

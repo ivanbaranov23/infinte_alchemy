@@ -2,6 +2,7 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
 import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
 
 import mods.bloodmagic.AlchemyTable;
 //AlchemyTable.addRecipe(IItemStack output, IItemStack[] inputs, int syphon, int ticks, int minTier);
@@ -51,13 +52,21 @@ function BloodAltar_addRecipe(output as IItemStack, input as IItemStack, minimum
 	BloodAltar.addRecipe(output, input, minimumTier, syphon, consumeRate, drainRate);
 
 	if (4 > minimumTier){
-		var rec = RecipeBuilder.newBuilder(input.displayName, "blood_altar", 3 * syphon / consumeRate);
+		var rec = RecipeBuilder.newBuilder(input.name, "blood_altar", 3 * syphon / consumeRate);
 
 		rec.addEnergyPerTickInput(2048);
 
 		rec.addItemOutput(output);
 		
 		rec.addItemInput(input);
+
+		rec.addCatalystInput(
+			<contenttweaker:naots>,
+			["Input life essence x0.333"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:fluid", "input", 0.333, 1, false
+			).build()]
+		).setChance(0.7);
 
 		rec.addFluidInput(<liquid:lifeessence> * (syphon * 2));
 		rec.build();
@@ -1061,18 +1070,3 @@ scripts.content_machines.addAdvancedMixerRecipe(
 }
 
 
-
-{//creative -> blood
-	var rec = RecipeBuilder.newBuilder("creative_blood", "blood_altar", 10);
-
-    rec.addEnergyPerTickInput(4096);
-
-    
-	rec.addItemInput(<bloodmagic:sacrificial_dagger:1>);
-	rec.setChance(0.0);
-	
-
-	rec.addFluidOutput(<liquid:lifeessence> * 10000);
-
-    rec.build();
-}

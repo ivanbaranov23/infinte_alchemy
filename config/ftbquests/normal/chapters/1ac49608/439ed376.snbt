@@ -8,7 +8,7 @@
 		uid: "342b2ef6",
 		type: "item",
 		items: [{
-			item: "modularcontroller:rainbow_leacher_controller"
+			item: "modularmachinery:rainbow_leacher_controller"
 		}]
 	}]
 }

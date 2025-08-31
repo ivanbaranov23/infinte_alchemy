@@ -2,6 +2,9 @@
 	x: 0.0d,
 	y: -8.5d,
 	shape: "square",
+	text: [
+		"There is t6 altar so take that into account. There's also altar subprocessor. "
+	],
 	dependencies: [
 		"c1a676cf"
 	],

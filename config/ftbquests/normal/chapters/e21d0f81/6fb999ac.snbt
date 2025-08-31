@@ -9,7 +9,7 @@
 		uid: "86bc6221",
 		type: "item",
 		items: [{
-			item: "modularcontroller:worm_pit_controller"
+			item: "modularmachinery:worm_pit_controller"
 		}]
 	}]
 }

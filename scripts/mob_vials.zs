@@ -127,7 +127,7 @@ var rec = RecipeBuilder.newBuilder("soulium", "tignalum_oven", 10 * 20);
 rec.addEnergyPerTickInput(10000);
 rec.addItemOutput(<mysticalagriculture:crafting:38>);
 rec.addItemInput(<mysticalagriculture:crafting:29>);
-rec.addHotAirInput(250, 250, 1001);
+//rec.addHotAirInput(250, 250, 1001);
 
 rec.build();
 

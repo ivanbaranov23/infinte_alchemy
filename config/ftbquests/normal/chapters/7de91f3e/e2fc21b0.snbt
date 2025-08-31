@@ -9,7 +9,7 @@
 		uid: "a93f6eab",
 		type: "item",
 		items: [{
-			item: "modularcontroller:super_mixer_controller"
+			item: "modularmachinery:super_mixer_controller"
 		}]
 	}]
 }

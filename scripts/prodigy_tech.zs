@@ -673,7 +673,7 @@ mods.bloodmagic.TartaricForge.addRecipe(<prodigytech:tartaric_stoker> * 12, [
 	);
 }
 
-
+/*
 {//heat exchanger
 	{//lava
 		var rec = RecipeBuilder.newBuilder("lava_heat", "heat_exchanger", 60*20*3);
@@ -810,15 +810,15 @@ function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
 	addHeatEngineRecipe(3000, 100000, <contenttweaker:firebrick_block>);
 	addHeatEngineRecipe(3500, 250000, <contenttweaker:hot_block>);
 }
-
+*/
 {//circuit_plate
 	var tpc_circuit_plate = RecipeBuilder.newBuilder("tpc_circuit_plate", "tree_powered_compressor", 120);
 	tpc_circuit_plate.addItemInput(<enderio:item_material:48>);
 	tpc_circuit_plate.addItemInput(<minecraft:paper> * 4);
 	tpc_circuit_plate.addItemInput(<immersiveengineering:wirecoil>);
 
-	tpc_circuit_plate.addItemInput(<ore:treeSapling>, 1);
-	tpc_circuit_plate.addItemInput(<ore:fertilizer>, 1);
+	tpc_circuit_plate.addItemInput(<ore:treeSapling> * 1);
+	tpc_circuit_plate.addItemInput(<ore:fertilizer> * 1);
 	tpc_circuit_plate.addFluidInput(<fluid:water> * 250);
 
 	tpc_circuit_plate.addItemOutput(<prodigytech:circuit_plate> * 2);
@@ -829,8 +829,8 @@ function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
 	tpc_circuit_pure.addItemInput(<minecraft:paper> * 4);
 	tpc_circuit_pure.addItemInput(<immersiveengineering:wirecoil>);
 
-	tpc_circuit_pure.addItemInput(<ore:treeSapling>, 1);
-	tpc_circuit_pure.addItemInput(<ore:fertilizer>, 1);
+	tpc_circuit_pure.addItemInput(<ore:treeSapling> * 1);
+	tpc_circuit_pure.addItemInput(<ore:fertilizer> * 1);
 	tpc_circuit_pure.addFluidInput(<fluid:pure_water> * 250);
 
 	tpc_circuit_pure.addItemOutput(<prodigytech:circuit_plate> * 3);
@@ -841,7 +841,7 @@ function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
 	tpc_circuit_fert.addItemInput(<minecraft:paper> * 4);
 	tpc_circuit_fert.addItemInput(<immersiveengineering:wirecoil>);
 
-	tpc_circuit_fert.addItemInput(<ore:treeSapling>, 1);
+	tpc_circuit_fert.addItemInput(<ore:treeSapling> * 1);
 	tpc_circuit_fert.addFluidInput(<liquid:fertilizer> * 250);
 
 	tpc_circuit_fert.addItemOutput(<prodigytech:circuit_plate> * 6);
@@ -852,8 +852,8 @@ function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
 	tpc_circuit_plate2.addItemInput(<minecraft:paper> * 4);
 	tpc_circuit_plate2.addItemInput(<thermalfoundation:material:320>);
 
-	tpc_circuit_plate2.addItemInput(<ore:treeSapling>, 1);
-	tpc_circuit_plate2.addItemInput(<ore:fertilizer>, 1);
+	tpc_circuit_plate2.addItemInput(<ore:treeSapling> * 1);
+	tpc_circuit_plate2.addItemInput(<ore:fertilizer> * 1);
 	tpc_circuit_plate2.addFluidInput(<fluid:water> * 250);
 
 	tpc_circuit_plate2.addItemOutput(<prodigytech:circuit_plate> * 1);

@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:large_sifter_controller",
+	icon: "modularmachinery:large_sifter_controller",
 	x: 13.0d,
 	y: 3.0d,
 	text: [
@@ -13,7 +13,7 @@
 		uid: "1d29fb08",
 		type: "item",
 		items: [{
-			item: "modularcontroller:large_sifter_controller"
+			item: "modularmachinery:large_sifter_controller"
 		}]
 	},
 	{

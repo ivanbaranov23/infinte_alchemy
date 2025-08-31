@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:satellite_launch_pad_controller",
+	icon: "modularmachinery:satellite_launch_pad_controller",
 	x: 5.5d,
 	y: 7.0d,
 	text: [
@@ -15,7 +15,7 @@
 		uid: "a5c55e98",
 		type: "item",
 		items: [{
-			item: "modularcontroller:satellite_launch_pad_controller"
+			item: "modularmachinery:satellite_launch_pad_controller"
 		}]
 	},
 	{

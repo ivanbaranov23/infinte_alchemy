@@ -11,7 +11,7 @@
 		uid: "8222bc96",
 		type: "item",
 		items: [{
-			item: "modularcontroller:tar_pit_controller"
+			item: "modularmachinery:tar_pit_controller"
 		}]
 	},
 	{

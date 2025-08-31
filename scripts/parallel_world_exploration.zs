@@ -365,7 +365,7 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
     }
     rec.addItemInput(<mekanism:teleportationcore> * core_count);
 
-    rec.addMekanismLaserInput(25000000 as double);
+    //rec.addMekanismLaserInput(25000000 as double);
 
     for i, mech in mechs{
         var amount as int = 0;
@@ -465,7 +465,7 @@ for mech in loot{
 recipes.remove(<mekanism:teleportationcore>);
 recipes.addShaped("ia_teleportationcore", <mekanism:teleportationcore>, [
 	[<contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>, <quantumflux:craftingpiece:5>, <contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>], 
-	[<mekanism:controlcircuit:3>, <contenttweaker:singularity_dust>, <mekanism:controlcircuit:3>], 
+	[<mekanism:controlcircuit:3>, <contenttweaker:entangled_particles>, <mekanism:controlcircuit:3>], 
 	[<contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>, <quantumflux:craftingpiece:5>, <contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>]
 ]);
 scripts.content_machines.addAssemblerRecipe(
@@ -474,7 +474,7 @@ scripts.content_machines.addAssemblerRecipe(
         <contenttweaker:singularity_dust>,
         <mekanism:controlcircuit:3> * 2,
         <quantumflux:craftingpiece:5> * 2,
-        <contenttweaker:entangled_particles> * 4
+        <contenttweaker:entangled_particles> * 3
     ], null,
     20, 1000
 );
@@ -484,7 +484,7 @@ scripts.content_machines.addAssemblerRecipe(
         <contenttweaker:wormholium>,
         <mekanism:controlcircuit:3> * 2,
         <quantumflux:craftingpiece:5> * 2,
-        <contenttweaker:entangled_particles> * 4
+        <contenttweaker:entangled_particles> * 3
     ], null,
     20, 1000
 );
@@ -493,10 +493,10 @@ mods.thermalexpansion.InductionSmelter.addRecipe(
     <contenttweaker:singularity_dust>, <contenttweaker:wormium_ingot> * 6, 
     25000
 );
-mods.enderio.AlloySmelter.addRecipe(<contenttweaker:wormholium> * 3, [
+mods.enderio.AlloySmelter.addRecipe(<contenttweaker:wormholium> * 4, [
     <contenttweaker:singularity_dust>, 
     <contenttweaker:wormium_ingot> * 8,
-    <contenttweaker:entangled_particles> * 3
+    <contenttweaker:entangled_particles>
 ], 35000);
 
 //goals
@@ -523,13 +523,13 @@ recipes.addShaped("ia_tincan_target_mob", <contenttweaker:tincan_target_mob>, [
 
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:portal>, [
-    [<modularcontroller:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularcontroller:pworld_oregen_controller>], 
+    [<modularmachinery:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularmachinery:pworld_oregen_controller>], 
     [<enderio:block_tele_pad>, <contenttweaker:wormholium>, <bloodmagic:component:17>, <bloodmagic:component:17>, <bloodmagic:component:17>, <contenttweaker:wormholium>, <enderio:block_tele_pad>], 
     [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
     [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <botania:alfheimportal>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
     [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
     [<enderio:block_tele_pad>, <contenttweaker:wormholium>, <bloodmagic:component:17>, <bloodmagic:component:17>, <bloodmagic:component:17>, <contenttweaker:wormholium>, <enderio:block_tele_pad>], 
-    [<modularcontroller:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularcontroller:pworld_oregen_controller>]
+    [<modularmachinery:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularmachinery:pworld_oregen_controller>]
 ]);
 
 /*

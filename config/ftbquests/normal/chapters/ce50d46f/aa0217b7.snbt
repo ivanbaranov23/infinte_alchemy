@@ -8,7 +8,7 @@
 		uid: "787ea3b9",
 		type: "item",
 		items: [{
-			item: "modularcontroller:starlight_pool_controller"
+			item: "modularmachinery:starlight_pool_controller"
 		}]
 	}]
 }

@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:large_cobblegen_controller",
+	icon: "modularmachinery:large_cobblegen_controller",
 	x: 0.0d,
 	y: 6.0d,
 	text: [
@@ -13,7 +13,7 @@
 		uid: "dd451b70",
 		type: "item",
 		items: [{
-			item: "modularcontroller:large_cobblegen_controller"
+			item: "modularmachinery:large_cobblegen_controller"
 		}]
 	},
 	{

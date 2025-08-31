@@ -416,6 +416,7 @@ TEImbuer.addRecipe(<liquid:fertilizer> * (400), <thermalfoundation:fertilizer>, 
 TEImbuer.addRecipe(<liquid:fertilizer> * (400 + 400), <thermalfoundation:fertilizer:1>, <liquid:seaweed_rich_water> * 1000, 3000);
 TEImbuer.addRecipe(<liquid:fertilizer> * (400 + 800), <thermalfoundation:fertilizer:2>, <liquid:seaweed_rich_water> * 1000, 3000);
 
+IEMixer.addRecipe(<liquid:fertilizer> * 125, <liquid:pure_water> * 125, [<thermalfoundation:fertilizer>], 4800);
 
 //witch water alt recipes
 TEImbuer.addRecipe(<liquid:witchwater> * (1000), <exnihilocreatio:item_material:3>, <liquid:water> * 1000, 4000);
@@ -831,7 +832,7 @@ function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as in
 	rec.addFluidInput(<liquid:cloud_seed_concentrated> * cloudin);
 	rec.addItemInput(<contenttweaker:shu_godshard>);
 
-    rec.addDimensionRequirement([dim]);
+    rec.addDimensionInput(dim);
     
     rec.build();
 }

@@ -1,6 +1,6 @@
 {
 	title: "Plant Station",
-	icon: "modularcontroller:plant_station_controller",
+	icon: "modularmachinery:plant_station_controller",
 	x: 1.0d,
 	y: 3.0d,
 	text: [
@@ -15,7 +15,7 @@
 		uid: "7cc9a042",
 		type: "item",
 		items: [{
-			item: "modularcontroller:plant_station_controller"
+			item: "modularmachinery:plant_station_controller"
 		}]
 	},
 	{

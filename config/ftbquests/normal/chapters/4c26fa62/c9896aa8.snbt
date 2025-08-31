@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: 3.5d,
+	dependencies: [
+		"ba943d3c"
+	],
+	tasks: [{
+		uid: "29222dc4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:self_healing_polymer"
+		}]
+	}]
+}

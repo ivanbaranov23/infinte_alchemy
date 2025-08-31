@@ -222,8 +222,8 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockmanaoutputhatch@0"
+                "modularmachinery:blockmanainputhatch@0",
+                "modularmachinery:blockmanaoutputhatch@0"
             ]
         },
         {
@@ -232,8 +232,8 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockmanaoutputhatch@0"
+                "modularmachinery:blockmanainputhatch@0",
+                "modularmachinery:blockmanaoutputhatch@0"
             ]
         },
         {
@@ -242,8 +242,8 @@
             "z": 0,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockmanaoutputhatch@0"
+                "modularmachinery:blockmanainputhatch@0",
+                "modularmachinery:blockmanaoutputhatch@0"
             ]
         },
         {
@@ -252,8 +252,8 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockmanaoutputhatch@0"
+                "modularmachinery:blockmanainputhatch@0",
+                "modularmachinery:blockmanaoutputhatch@0"
             ]
         },
         {
@@ -278,8 +278,8 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockmanaoutputhatch@0"
+                "modularmachinery:blockmanainputhatch@0",
+                "modularmachinery:blockmanaoutputhatch@0"
             ]
         },
         {
@@ -288,8 +288,8 @@
             "z": 0,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockmanaoutputhatch@0"
+                "modularmachinery:blockmanainputhatch@0",
+                "modularmachinery:blockmanaoutputhatch@0"
             ]
         },
         {
@@ -426,8 +426,8 @@
             "z": 2,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockmanaoutputhatch@0"
+                "modularmachinery:blockmanainputhatch@0",
+                "modularmachinery:blockmanaoutputhatch@0"
             ]
         },
         {
@@ -436,8 +436,8 @@
             "z": 1,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockmanainputhatch@0",
-                "modulardiversity:blockmanaoutputhatch@0"
+                "modularmachinery:blockmanainputhatch@0",
+                "modularmachinery:blockmanaoutputhatch@0"
             ]
         },
         {

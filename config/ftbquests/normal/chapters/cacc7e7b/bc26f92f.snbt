@@ -19,5 +19,17 @@
 		type: "item",
 		item: "enderio:block_travel_anchor",
 		count: 8
+	},
+	{
+		uid: "31a68eca",
+		type: "item",
+		item: {
+			id: "enderio:item_travel_staff",
+			tag: {
+				enderio.darksteel.upgrade.energyUpgrade: {
+					level: 0
+				}
+			}
+		}
 	}]
 }

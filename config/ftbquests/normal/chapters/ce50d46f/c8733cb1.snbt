@@ -1,0 +1,14 @@
+{
+	x: 22.5d,
+	y: 4.0d,
+	dependencies: [
+		"29ec6c24"
+	],
+	tasks: [{
+		uid: "03e501a4",
+		type: "item",
+		items: [{
+			item: "contenttweaker:chitigic_food1"
+		}]
+	}]
+}

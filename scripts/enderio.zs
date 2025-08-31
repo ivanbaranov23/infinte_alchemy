@@ -218,7 +218,12 @@ recipes.addShaped("ia_terrible_recipe_block_industrial_insulation", <enderio:blo
 }
 
 recipes.remove(<enderio:block_travel_anchor>);
-recipes.addShaped("ia_block_travel_anchor", <enderio:block_travel_anchor>, [
+/*recipes.addShaped("ia_block_travel_anchor", <enderio:block_travel_anchor>, [
+	[<thermalfoundation:storage_alloy:7>, , <thermalfoundation:storage_alloy:7>],
+	[],
+	[<thermalfoundation:storage_alloy:7>, , <thermalfoundation:storage_alloy:7>]
+]);*/
+recipes.addShaped("ia_block_travel_anchor2", <enderio:block_travel_anchor> * 4, [
 	[<mekanism:basicblock:7>, <enderio:item_material:14>, <mekanism:basicblock:7>], 
 	[<enderio:item_material:14>, <mekanism:machineblock:11>, <enderio:item_material:14>], 
 	[<mekanism:basicblock:7>, <enderio:item_material:14>, <mekanism:basicblock:7>]

@@ -1,0 +1,22 @@
+{
+	title: "Depleted flower plasma",
+	x: 8.5d,
+	y: 5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"83efd058",
+		"4de68455"
+	],
+	tasks: [{
+		uid: "dce43034",
+		type: "checkmark",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "flowers_depleted"
+			}
+		}
+	}]
+}

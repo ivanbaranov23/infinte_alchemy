@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:gp_gen_controller",
+	icon: "modularmachinery:gp_gen_controller",
 	x: 5.0d,
 	y: 0.0d,
 	text: [
@@ -13,14 +13,14 @@
 		uid: "fddaef18",
 		type: "item",
 		items: [{
-			item: "modularcontroller:gp_gen_controller"
+			item: "modularmachinery:gp_gen_controller"
 		}]
 	},
 	{
 		uid: "119ee7b3",
 		type: "item",
 		items: [{
-			item: "modularmagic:blockgridproviderinput"
+			item: "modularmachinery:blockgridproviderinput"
 		}]
 	},
 	{

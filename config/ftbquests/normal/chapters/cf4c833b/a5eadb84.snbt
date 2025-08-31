@@ -1,11 +1,12 @@
 {
-	x: 2.5d,
+	x: 1.5d,
 	y: 3.5d,
 	tasks: [{
 		uid: "2f4e2d3c",
 		type: "item",
+		icon: "modularmachinery:gp_gen_controller",
 		items: [{
-			item: "modularcontroller:gp_gen_controller"
+			item: "modularmachinery:gp_gen_controller"
 		}]
 	}]
 }

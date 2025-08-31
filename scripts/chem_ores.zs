@@ -1,3 +1,19 @@
+import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.IngredientArrayBuilder;
+
+mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_osmium:1>, <tconstruct:edible:1>, <liquid:invar>, 48, true);
+mods.thermalexpansion.Transposer.addFillRecipe(
+    <exnihilocreatio:item_ore_osmium:1>, 
+    <tconstruct:edible:1>, <liquid:invar> * 48, 
+    2000
+);
+mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_lead:1>, <minecraft:poisonous_potato>, <liquid:wear_resistant_alloy>, 32, true);
+mods.thermalexpansion.Transposer.addFillRecipe(
+    <exnihilocreatio:item_ore_lead:1>, 
+    <tconstruct:edible:1>, <liquid:wear_resistant_alloy> * 32, 
+    2000
+);
+
 
 {//manyullyn
     {//pilkon
@@ -232,6 +248,25 @@ scripts.content_machines.addFluidMixerRecipe(
     mods.mekanism.chemical.crystallizer.addRecipe(<gas:rare_earth_slurry> * 250, <contenttweaker:rare_earth_dust>);
 
     //in gas_column
+
+    {//gas colomn
+        var rec = RecipeBuilder.newBuilder("rarer_earth_slurry", "gas_column", 200);
+        rec.addEnergyPerTickInput(1024000);
+
+        rec.addGasOutput(<gas:rare_earth_slurry> * 500);
+        rec.addGasOutput(<gas:evil> * 100);
+        rec.addGasOutput(<gas:cleanneodymium> * 1000);
+        rec.addGasOutput(<gas:cleangallium> * 1000);
+        rec.addItemOutput(<alchemistry:element:57> * 8);
+        rec.addItemOutput(<alchemistry:element:58> * 6);
+        rec.addItemOutput(<alchemistry:element:59>);
+        
+
+        rec.addGasInput(<gas:rarer_earth_slurry> * 10000);
+        rec.addItemInput(<contenttweaker:elemental_reduction> * 12);
+        
+        rec.build();
+    }
 }
 
 {//bauxite
@@ -360,3 +395,40 @@ scripts.content_machines.addFluidMixerRecipe(
         <liquid:petrotheum> * 2000, 
         256, 30
     );
+
+{//bastnasite
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:bastnasite>, <liquid:desert_soup> * 500, <gas:chlorosulfonic> * 250, 
+        null, <gas:bastnasite_slurry> * 250, 50000, 60
+    );
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:bastnasite>, <liquid:evil_blood> * 500, <gas:chlorosulfonic> * 250, 
+        null, <gas:bastnasite_slurry> * 250, 50000, 60
+    );
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:bastnasite>, <liquid:pilkon_blood> * 5000, <gas:chlorosulfonic> * 250, 
+        null, <gas:bastnasite_slurry> * 200, 50000, 60
+    );
+
+    {//gas colomn
+        var rec = RecipeBuilder.newBuilder("bastnasite_slurry", "gas_column", 200);
+        rec.addEnergyPerTickInput(1024000);
+
+        rec.addGasOutput(<gas:rare_earth_slurry> * 12000);
+        rec.addGasOutput(<gas:rarer_earth_slurry> * 3000);
+        rec.addItemOutput(<alchemistry:ingot:57> * 3);
+        rec.addItemOutput(<alchemistry:ingot:58> * 5);
+        
+        rec.addIngredientArrayInput(IngredientArrayBuilder.newBuilder()
+            .addIngredient(<twilightforest:fiery_ingot> * 16)
+            .addIngredient(<contenttweaker:centipedium> * 16)
+            .addIngredient(<moretcon:ingotgravitonium> * 4)
+            .addIngredient(<contenttweaker:neodymium_ingot> * 6)
+        );
+
+        rec.addGasInput(<gas:bastnasite_slurry> * 20000);
+        
+        
+        rec.build();
+    }
+}

@@ -1,6 +1,9 @@
 {
 	x: 6.0d,
 	y: 7.0d,
+	text: [
+		"Druids loves this crop."
+	],
 	dependencies: [
 		"0e347247"
 	],

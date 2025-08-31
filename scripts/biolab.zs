@@ -731,7 +731,7 @@ function addIncubatorRecipe(out as IItemStack[], inp as IItemStack[], cat as IIt
         rec.addItemInput(cat);
         rec.setChance(0.0);
     }
-    rec.addHotAirInput(250, 250, 1001);
+    //rec.addHotAirInput(250, 250, 1001);
 
     rec.build();
 }

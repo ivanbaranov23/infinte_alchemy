@@ -1,0 +1,13 @@
+{
+	x: -1.5d,
+	y: -1.5d,
+	text: [
+		"Going down, power options give more power. Going right, they get more gated. Do note that some options like TE dynamos can be upgraded."
+	],
+	tasks: [{
+		uid: "c35be949",
+		type: "checkmark",
+		title: "Power",
+		icon: "contenttweaker:electricium"
+	}]
+}

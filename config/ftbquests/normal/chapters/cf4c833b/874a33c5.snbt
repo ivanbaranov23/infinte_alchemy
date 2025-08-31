@@ -1,0 +1,11 @@
+{
+	x: 3.5d,
+	y: 4.5d,
+	tasks: [{
+		uid: "5dd3647d",
+		type: "item",
+		items: [{
+			item: "bigreactors:reactorcontroller"
+		}]
+	}]
+}

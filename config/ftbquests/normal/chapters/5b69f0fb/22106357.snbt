@@ -1,9 +1,9 @@
 {
-	icon: "modularcontroller:druid_circle_controller",
+	icon: "modularmachinery:druid_circle_controller",
 	x: 10.0d,
 	y: 0.0d,
 	text: [
-		"Put skulls on runestone walls.",
+		"Put wither skulls on runestone walls.",
 		"",
 		"Druid circle is somewhat unique multiblock. It has 8 pillars and you are supposed to change them to what you need. ",
 		"",
@@ -21,7 +21,7 @@
 		uid: "9e7a6336",
 		type: "item",
 		items: [{
-			item: "modularcontroller:druid_circle_controller"
+			item: "modularmachinery:druid_circle_controller"
 		}]
 	},
 	{

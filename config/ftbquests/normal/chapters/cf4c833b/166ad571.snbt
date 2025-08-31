@@ -1,0 +1,11 @@
+{
+	x: 7.5d,
+	y: 4.5d,
+	tasks: [{
+		uid: "686ccacd",
+		type: "item",
+		items: [{
+			item: "blood_dynamo:mixed_dynamo"
+		}]
+	}]
+}

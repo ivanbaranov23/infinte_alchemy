@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:biolab_controller",
+	icon: "modularmachinery:biolab_controller",
 	x: 3.0d,
 	y: 5.0d,
 	dependencies: [
@@ -9,7 +9,7 @@
 		uid: "2faac3e2",
 		type: "item",
 		items: [{
-			item: "modularcontroller:biolab_controller"
+			item: "modularmachinery:biolab_controller"
 		}]
 	},
 	{

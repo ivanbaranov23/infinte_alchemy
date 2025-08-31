@@ -711,8 +711,28 @@ mods.thermalexpansion.InductionSmelter.addRecipe(<erebus:materials:1>,
     );
 }
 {//super spice
-    mods.thermalexpansion.Crucible.addRecipe(<liquid:spicy_latex> * 250, <contenttweaker:spicy_cactus>, 16000);
+    scripts.helper.addPlantStationRecipe(
+        <roots:elemental_soil_earth>,
+        [
+            <contenttweaker:spicy_cactus>
+        ],
+        [
+            <contenttweaker:honeyspice_ingot> * 32,
+            <contenttweaker:plant_sample> * 32,
+            <contenttweaker:cactus_charcoal> * 32
+        ],
+        <liquid:refined_biofuel> * 3000,
+        20
+    );
 
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:spicy_latex> * 250, <contenttweaker:spicy_cactus>, 4000);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:spicy_cactus_dust>,
+        <contenttweaker:enspiced_spicy_bioblend>, <liquid:spicy_latex> * 1250,
+        16000
+    );
+
+    <contenttweaker:spicy_cactus_dust>.addTooltip(game.localize("ia.tooltip.spicy_cactus_dust"));
 }
 
 {//celestial

@@ -82,9 +82,11 @@ function addClumpCrushing(clump as IItemStack, main as IItemStack,
 
 }
 
+static counter as int = 0;
 function addTingalumOvenRecipe(out as IItemStack[], inp as IItemStack[], energy as int, sec as int, temp as int = 250){
-    var rec = RecipeBuilder.newBuilder("ore_proc_" ~ out[0].name ~ inp[0].name, "tignalum_oven", sec * 20);
-
+    var rec = RecipeBuilder.newBuilder("ore_proc_" ~ counter, "tignalum_oven", sec * 20);
+    counter += 1;
+    
     rec.addEnergyPerTickInput(energy);
 
     for o in out{
@@ -95,13 +97,10 @@ function addTingalumOvenRecipe(out as IItemStack[], inp as IItemStack[], energy 
         rec.addItemInput(i);
     }
     
-    //rec.addHotAirInput(temp, temp, 1000000000);
+    
 
     rec.build();
 }
-
-//recipes.removeByInput(bauxite_ore);
-//addSimpleCrushingRecipe(bauxite_ore, <contenttweaker:bauxite_dust> * 2);
 
 
 /*
@@ -3507,6 +3506,22 @@ val ores as IItemStack[string][string][string] = {
 
             drilling: <netherite:netheritescrap> * 2
         }
+    },
+
+    bastnasite: {
+        ore: {
+            item: <contenttweaker:bastnasite_ore>,
+            furnace: <contenttweaker:rare_earth_dust> * 4,
+            crushing_no_balls: <contenttweaker:bastnasite> * 2,
+            balling: <contenttweaker:bastnasite> * 2,
+            crushingByprod1: <contenttweaker:rare_earth_dust> * 4,
+            crushingByprod2: <contenttweaker:rarer_earth_dust>,
+
+            alloySlag2: <contenttweaker:bastnasite> * 2,
+            alloySlag3: <contenttweaker:bastnasite> * 3,
+
+            drilling: <contenttweaker:bastnasite> * 4
+        }
     }
 };
 val to_clean as IItemStack[][string] = {
@@ -3766,7 +3781,8 @@ val drilling_fluid_amount as int[string] = {
     life_essence: 1000,
     terrasteel: 10000,
     caelumite: 500,
-    netherite: 2000
+    netherite: 2000,
+    bastnasite: 3000
 };
 
 ///////////////////////////////////////////////////////////////////////////////cleaning

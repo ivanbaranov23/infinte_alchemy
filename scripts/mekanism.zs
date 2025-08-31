@@ -507,7 +507,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	recipes.remove(<mekanism:basicblock:7>);
 	recipes.addShaped("ia_mek_portal1", <mekanism:basicblock:7> * 6, [
 		[<redstonearsenal:material:128>, <mekanism:teleportationcore>, <redstonearsenal:material:128>], 
-		[<thermalfoundation:glass_alloy:7>, <mekanism:basicblock:8>, <thermalfoundation:glass_alloy:7>], 
+		[<thermalfoundation:glass_alloy:7>, <thermalexpansion:frame>, <thermalfoundation:glass_alloy:7>], 
 		[<redstonearsenal:material:128>, <mekanism:teleportationcore>, <redstonearsenal:material:128>]
 	]);
 

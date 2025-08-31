@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:rune_cutter_controller",
+	icon: "modularmachinery:rune_cutter_controller",
 	x: 14.0d,
 	y: -6.0d,
 	text: [
@@ -13,7 +13,7 @@
 		uid: "5b85b2e9",
 		type: "item",
 		items: [{
-			item: "modularcontroller:rune_cutter_controller"
+			item: "modularmachinery:rune_cutter_controller"
 		}]
 	},
 	{

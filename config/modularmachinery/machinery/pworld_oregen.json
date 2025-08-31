@@ -112,14 +112,7 @@
                 "immersivepetroleum:stone_decoration@0"
             ]
         },
-        {
-            "x": -2,
-            "y": 2,
-            "z": 9,
-            "elements": [
-                "modulardiversity:blockmeklaseracceptor@0"
-            ]
-        },
+        
         {
             "x": -1,
             "y": 4,
@@ -218,14 +211,7 @@
                 "immersivepetroleum:stone_decoration@0"
             ]
         },
-        {
-            "x": 2,
-            "y": 2,
-            "z": 9,
-            "elements": [
-                "modulardiversity:blockmeklaseracceptor@0"
-            ]
-        },
+        
         {
             "x": 2,
             "y": 0,

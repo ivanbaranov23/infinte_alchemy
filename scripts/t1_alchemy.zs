@@ -67,7 +67,7 @@ mods.immersiveengineering.CokeOven.addRecipe(
     rec.addItemInput(<minecraft:cactus> * 2);
     
     
-    rec.addHotAirInput(250, 250, 1001);
+    //rec.addHotAirInput(250, 250, 1001);
 
     rec.build();
 }
@@ -75,13 +75,6 @@ mods.immersiveengineering.CokeOven.addRecipe(
 //slime
 furnace.addRecipe(<contenttweaker:slime_shard> * 2, <contenttweaker:slimy_sand>);
 scripts.helper.addSimpleCrushingRecipeWByproduct(<contenttweaker:burned_slimedirt>, <contenttweaker:slime_shard>, <contenttweaker:fire_shard>, 100);
-
-//
-recipes.addShaped("glowcrystal", <contenttweaker:glowcrystal> * 2, [
-    [null, <contenttweaker:fire_shard>, <contenttweaker:fire_shard>], 
-    [<contenttweaker:fire_shard>, <minecraft:glowstone_dust>, <contenttweaker:fire_shard>], 
-    [<contenttweaker:fire_shard>, <contenttweaker:fire_shard>, null]
-]);
 
 //creosolon
 recipes.addShapeless("ia_creosolon", <contenttweaker:creosolon> * 2, [
@@ -132,8 +125,6 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 2000, <liquid
 mods.alchemistry.Evaporator.addRecipe(<enderio:item_material:48>, <liquid:organic_green> * 250);
 
 //alt t2 ore gen
-mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_osmium>, <tconstruct:edible:1>, <liquid:invar>, 32, true);
-mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_lead>, <minecraft:poisonous_potato>, <liquid:pigiron>, 16, true);
 
 //flolit
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:flolit_dust>, <contenttweaker:flolit>, <liquid:ferramic>, 288, true);

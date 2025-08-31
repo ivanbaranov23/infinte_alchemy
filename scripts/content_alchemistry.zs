@@ -139,6 +139,19 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["oxygen", 3]
         ]
     );
+    createCompound(505, "zirconium_tetrachloride", 155, 66, 234,
+        [
+            ["zirconium", 1],
+            ["chlorine", 4]
+        ]
+    );
+    createCompound(506, "barium_carbonate", 12, 12, 34,
+        [
+            ["barium", 1],
+            ["carbon", 1],
+            ["oxygen", 3]
+        ]
+    );
 }
 
 

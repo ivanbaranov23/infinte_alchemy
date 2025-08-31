@@ -9,7 +9,7 @@
 		uid: "bc66171f",
 		type: "item",
 		items: [{
-			item: "modularcontroller:blood_meat_infuser_controller"
+			item: "modularmachinery:blood_meat_infuser_controller"
 		}]
 	}]
 }

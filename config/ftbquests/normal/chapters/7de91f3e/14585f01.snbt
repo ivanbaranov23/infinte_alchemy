@@ -5,7 +5,7 @@
 		uid: "faf04656",
 		type: "item",
 		items: [{
-			item: "modularcontroller:will_machine_controller"
+			item: "modularmachinery:will_machine_controller"
 		}]
 	}]
 }

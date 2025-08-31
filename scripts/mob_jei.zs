@@ -140,7 +140,18 @@ addFluidMilking(<entity:minecraft:zombie>, <liquid:rot>);
 addFluidMilking(<entity:twilightforest:fire_beetle>, <liquid:fiery_essence>);
 addFluidMilking(<entity:erebus:erebus.beetle>, <liquid:beetle_juice>);
 addFluidMilking_only_IF(<entity:minecraft:skeleton>, <liquid:notmilk>);
-addFluidMilking_no_barrel(<entity:twilightforest:roving_cube>, <liquid:roving_milk>);
+{
+    Milking.add(
+        <minecraft:bucket>,
+        <entity:twilightforest:roving_cube>,
+        <forge:bucketfilled>.withTag({FluidName: "roving_milk", Amount: 1000}), false
+    );
+    addJEIentityHint(
+        [<minecraft:bucket>], null, <entity:twilightforest:roving_cube>.id,
+        [], null,
+        [<forge:bucketfilled>.withTag({FluidName: "roving_milk", Amount: 1000})], <liquid:roving_milk>, ""
+    );
+}
 
 
 addJEIentityHint(

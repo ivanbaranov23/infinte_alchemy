@@ -51,7 +51,7 @@ function addResearchRecipe(name as string, medium as IItemStack, out as IItemSta
     
     scripts.jei.addJEIhint(
         [medium], [],
-        [<modularcontroller:research_station_controller>],
+        [<modularmachinery:research_station_controller>],
         [out]
     );
 
@@ -104,7 +104,7 @@ function addAdvancedResearchRecipe(name as string, medium as IItemStack, out as 
     
     scripts.jei.addJEIhint(
         [medium], [],
-        [<modularcontroller:research2_controller>],
+        [<modularmachinery:research2_controller>],
         [out]
     );
 
@@ -375,7 +375,7 @@ addAdvancedResearchRecipe("Terrasteel", <botania:manaresource:4> * 3, <contenttw
     <botania:storage:3> * 32,
     <contenttweaker:manapearl_block> * 32,
     <extendedcrafting:singularity_custom:51>,
-    <modularcontroller:mana_bifuser_controller>,
+    <modularmachinery:mana_bifuser_controller>,
     <botania:quartz:1> * 24,
     <extendedcrafting:singularity_custom:50>
 ], 1000 * 1000, 20 * 5);
@@ -412,7 +412,7 @@ addResearchRecipe("Heat", <prodigytech:heat_capacitor_0>, <contenttweaker:resear
         <prodigytech:heat_capacitor_3>,
         <prodigytech:zorrasteel_ingot> * 48,
         <forge:bucketfilled>.withTag({FluidName: "fire_water", Amount: 1000}),
-        <modulardiversity:blockhotairinputhatch> * 4,
+        //<modularmachinery:blockhotairinputhatch> * 4,
         <prodigytech:energion_crystal_seed> * 64
     ],
     1024, 5*20

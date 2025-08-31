@@ -4,6 +4,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.WeightedItemStack;
 
 import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
 
 
 scripts.content_machines.addBioAssemblerRecipe(
@@ -44,7 +45,7 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
     );
 
     {//kikoku
-        var rec = RecipeBuilder.newBuilder(outs[0].displayName ~ "_kikoku", "rune_cutter", 20 * 15);
+        var rec = RecipeBuilder.newBuilder(outs[0].name ~ "_kikoku", "rune_cutter", 20 * 15);
 
 		rec.addEnergyPerTickInput(2048 * 1000);
 
@@ -56,6 +57,13 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
 	
     	for input in inps
             rec.addItemInput(input);
+        rec.addCatalystInput(
+			<contenttweaker:ceria>,
+			["Output x1.5"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:item", "output", 1.5, 1, false
+			).build()]
+		).setChance(0.3);
 
 		rec.addFluidInput(<liquid:ultrapure_water> * 750);
         rec.addItemInput(<extrautils2:lawsword:*>).setChance(0.02);
@@ -63,7 +71,7 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
 		rec.build();
     }
     {//kikoku 2
-        var rec = RecipeBuilder.newBuilder(outs[0].displayName ~ "_kikoku2", "rune_cutter", 20 * 10);
+        var rec = RecipeBuilder.newBuilder(outs[0].name ~ "_kikoku2", "rune_cutter", 20 * 10);
 
 		rec.addEnergyPerTickInput(10240 * 1000);
 
@@ -75,6 +83,13 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
 	
     	for input in inps
             rec.addItemInput(input);
+        rec.addCatalystInput(
+			<contenttweaker:ceria>,
+			["Output x1.5"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:item", "output", 1.5, 1, false
+			).build()]
+		).setChance(0.3);
 
 		rec.addFluidInput(<liquid:starlight_lubricant> * 750);
         rec.addItemInput(<extrautils2:lawsword:*>).setChance(0.01);
@@ -82,18 +97,26 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
 		rec.build();
     }
     {//sotc
-        var rec = RecipeBuilder.newBuilder(outs[0].displayName ~ "_inf", "rune_cutter", 20);
+        var rec = RecipeBuilder.newBuilder(outs[0].name ~ "_inf", "rune_cutter", 20);
 
 		rec.addEnergyPerTickInput(125 * 1000 * 1000);
 
         for output in outs
     		rec.addItemOutput(output);
         for output in bonus
-    		rec.addItemOutput(output);
+    		rec.addItemOutput(output * (output.amount * 4));
 		
 	
     	for input in inps
             rec.addItemInput(input);
+
+        rec.addCatalystInput(
+			<contenttweaker:ceria>,
+			["Output x1.5"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:item", "output", 1.5, 1, false
+			).build()]
+		).setChance(0.3);
 
 		rec.addFluidInput(<liquid:starlight_lubricant> * 250);
         rec.addItemInput(<avaritia:infinity_sword>).setChance(0.0);
@@ -248,9 +271,9 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
 }
 
 addRuneCutting(
-    [<contenttweaker:elf_wafer> * 8, <contenttweaker:reinforced_cell>],
+    [<contenttweaker:elf_wafer> * 12, <contenttweaker:reinforced_cell>],
     [<contenttweaker:elf_boule>, <contenttweaker:slime_cell>],
-    [<contenttweaker:elf_wafer> * 4]
+    [<contenttweaker:elf_wafer> * 8]
 );
 
 

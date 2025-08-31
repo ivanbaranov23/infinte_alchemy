@@ -148,6 +148,10 @@ import mods.modularmachinery.RecipeBuilder;
         <atum:khnumite_face>, <liquid:amaranth_juice> * 1000, <gas:amethesting> * 125, 
         null, <gas:amethesting> * 400, 900, 60
     );
+    mods.mekanism.reaction.addRecipe(
+        <caves_n_cliffs:amethyst_cluster_single> * 4, <liquid:amaranth_juice> * 1000, <gas:amethesting> * 125, 
+        null, <gas:amethesting> * 400, 900, 60
+    );
     mods.thermalexpansion.Transposer.addFillRecipe(
         <mysticalworld:amethyst_gem> * 4,
         <aether_legacy:zanite_gemstone>, <liquid:amethesting> * 100,
@@ -377,6 +381,37 @@ import mods.modularmachinery.RecipeBuilder;
         <minecraft:glowstone_dust>,
         <mekanism:otherdust:4>, <liquid:glowstone> * 250,
         500
+    );
+    
+    //glowcrystal
+    recipes.addShaped("glowcrystal", <contenttweaker:glowcrystal> * 2, [
+        [null, <contenttweaker:fire_shard>, <contenttweaker:fire_shard>], 
+        [<contenttweaker:fire_shard>, <minecraft:glowstone_dust>, <contenttweaker:fire_shard>], 
+        [<contenttweaker:fire_shard>, <contenttweaker:fire_shard>, null]
+    ]);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:glowcrystal> * 3, 
+        <minecraft:glowstone_dust>, <contenttweaker:fire_shard> * 3, 
+        3000
+    );
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:glowcrystal> * 4, 
+        <minecraft:glowstone_dust>, <biomesoplenty:coral:3> * 4, 
+        3000
+    );
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:glowcrystal> * 6, 
+        <minecraft:glowstone_dust>, <contenttweaker:aquamarine_dust>, 
+        3000
+    );
+
+
+    
+    
+    Imbuer.addRecipe(
+        <liquid:glowstone> * 250, 
+        <contenttweaker:glowcrystal>, <liquid:essence_slurp> * 250, 
+        2000
     );
 }
 
@@ -1269,6 +1304,7 @@ import mods.modularmachinery.RecipeBuilder;
     scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:indium_dust>], [<contenttweaker:indium_oxide>], 500, 1);
     
 }
+
 
 {//acid
     scripts.content_machines.addAdvancedMixerRecipe(

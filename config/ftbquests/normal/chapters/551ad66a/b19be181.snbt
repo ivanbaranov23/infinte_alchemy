@@ -16,7 +16,7 @@
 		uid: "a2f66fbd",
 		type: "item",
 		items: [{
-			item: "modularcontroller:tree_powered_compressor_controller"
+			item: "modularmachinery:tree_powered_compressor_controller"
 		}]
 	},
 	{

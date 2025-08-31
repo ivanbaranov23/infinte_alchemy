@@ -302,7 +302,7 @@ for fl_food_type in bug_fluid_tiers{
 
             rec.addEnergyPerTickInput(100 * tier * tier);
 
-            rec.addDimensionRequirement([66]);
+            rec.addDimensionInput(66);
 
             rec.addFluidOutput(<liquid:bugs> * tier_bugs[tier]);
             
@@ -310,7 +310,7 @@ for fl_food_type in bug_fluid_tiers{
             for food_type in ["Plant", "Meat", "Slime"] as string[]{
                 if (fl_food_type != food_type) {
                     for ft,amount in tier_foods[tier]
-                        rec.addItemInput(oreDict.get("bugFood" ~ food_type ~ ft), amount);
+                        rec.addItemInput(oreDict.get("bugFood" ~ food_type ~ ft) * amount);
                 }
             }
 
@@ -326,27 +326,6 @@ for fl_food_type in bug_fluid_tiers{
 
 
 
-/*
-for l_food in bug_breeding{
-    for i_food, stats in bug_breeding[l_food]{
-        var rec = RecipeBuilder.newBuilder("bugs_" ~ l_food.name ~ l_food.amount, "bug_hill", stats[0]);
-
-        if (stats[1] != 0) rec.addEnergyPerTickInput(stats[1]);
-
-        rec.addDimensionRequirement([66]);
-
-        rec.addFluidOutput(<liquid:bugs> * stats[2]);
-        
-        for n, a in i_food
-            rec.addItemInput(oreDict.get(n), a);
-        rec.addFluidInput(l_food);
-        
-        //rec.addHotAirInput(stats[0], stats[0], 1000000);
-
-        rec.build();
-    }
-}
-*/
 /*-11325: "deep_dark",
     
     -1:     "nether",      hot
@@ -446,8 +425,8 @@ for stat, fluids in bug_foraging{
 
         if (stat[3] != 0) rec.addEnergyPerTickInput(stat[3]);
 
-        rec.addDimensionRequirement([0, stat[0]]);
-        rec.addYRequirement(stat[4], stat[5]);
+        rec.addDimensionInput(stat[0]);
+        //rec.addYRequirement(stat[4], stat[5]);
 
         rec.addFluidInput(<liquid:bugs> * stat[1]);
         rec.addFluidInput(fluid);

@@ -1,5 +1,5 @@
 {
-	icon: "modularcontroller:essence_extractor_controller",
+	icon: "modularmachinery:essence_extractor_controller",
 	x: 9.0d,
 	y: -1.0d,
 	text: [
@@ -19,7 +19,7 @@
 		uid: "d8a97d10",
 		type: "item",
 		items: [{
-			item: "modularcontroller:essence_extractor_controller"
+			item: "modularmachinery:essence_extractor_controller"
 		}],
 		count: 4L
 	},

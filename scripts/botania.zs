@@ -91,7 +91,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         rec.addItemInput(<contenttweaker:manaclay>);
         
         
-        rec.addHotAirInput(250, 250, 1001);
+        //rec.addHotAirInput(250, 250, 1001);
 
         rec.build();
     }

@@ -61,7 +61,7 @@ import mods.modularmachinery.RecipeBuilder;
         rec.addFluidInput(<liquid:oil> * 2000);
 
 
-        rec.addGasOutput("tar_gas", 2400);
+        rec.addGasOutput(<gas:tar_gas> * 2400);
 
         rec.build();
     }
@@ -73,7 +73,7 @@ import mods.modularmachinery.RecipeBuilder;
         rec.addItemInput(<contenttweaker:reagent_oil> * 3);
 
 
-        rec.addGasOutput("tar_gas", 120000);
+        rec.addGasOutput(<gas:tar_gas> * 120000);
 
         rec.build();
     }
@@ -99,7 +99,7 @@ import mods.modularmachinery.RecipeBuilder;
 
     rec.addEnergyPerTickInput(1000);
 
-    rec.addItemInput(<ore:boneCool>, 1);
+    rec.addItemInput(<ore:boneCool>);
     rec.addItemOutput(<contenttweaker:tar_bone> * 3);
 
     rec.build();
@@ -113,7 +113,7 @@ import mods.modularmachinery.RecipeBuilder;
 
     rec.addEnergyPerTickInput(1000);
 
-    rec.addItemInput(<ore:boneVeryCool>, 1);
+    rec.addItemInput(<ore:boneVeryCool>);
     rec.addItemOutput(<contenttweaker:tar_bone> * 9);
 
     rec.build();

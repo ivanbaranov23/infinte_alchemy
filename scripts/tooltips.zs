@@ -13,4 +13,4 @@ function addMultiLineTooltip(item as IItemStack, tooltip as string, number as in
 addMultiLineTooltip(<requious:altar>, "ore_altar", 8);
 addMultiLineTooltip(<requious:altar2>, "trans_altar", 12);
 
-addMultiLineTooltip(<modularcontroller:research_station_controller>, "research_tooltip", 11);
+addMultiLineTooltip(<modularmachinery:research_station_controller>, "research_tooltip", 11);

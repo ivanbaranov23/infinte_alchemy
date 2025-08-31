@@ -1344,11 +1344,28 @@ static all_metals as IItemStack[string][string] = {
     
 
     //alchemistry
+    barium: {
+        ingot: <alchemistry:ingot:56>,
+        element: <alchemistry:element:56>
+    },
+    lanthanum: {
+        ingot: <alchemistry:ingot:57>,
+        element: <alchemistry:element:57>
+    },
+    cerium: {
+        ingot: <alchemistry:ingot:58>,
+        element: <alchemistry:element:58>
+    },
     plutonium: {
         ingot: <alchemistry:ingot:94>,
         block: <contenttweaker:plutonium_block>,
 
         element: <alchemistry:element:94>
+    },
+
+    mischmetal: {
+        ingot: <contenttweaker:mischmetal_ingot>,
+        block: <contenttweaker:mischmetal_block>
     },
 
     cyanite: {
@@ -1861,7 +1878,10 @@ static all_metals as IItemStack[string][string] = {
     },
     cincinnasite: {
         ingot: <betternether:cincinnasite>,
-        block: <betternether:cincinnasite_block>
+        block: <betternether:cincinnasite_block>,
+        dust: <betternether:cincinnasite>,
+
+        singularity: <extendedcrafting:singularity_custom:7>
     },
     biotide: {
         ingot: <quark:biotite>,
@@ -1893,7 +1913,9 @@ static all_metals as IItemStack[string][string] = {
     fluix: {
         ingot: <appliedenergistics2:material:7>,
         block: <appliedenergistics2:fluix_block>,
-        dust: <appliedenergistics2:material:8>
+        dust: <appliedenergistics2:material:8>,
+
+        singularity: <extendedcrafting:singularity_custom:8>
     },
 
     //drops
@@ -2275,7 +2297,7 @@ function add2alloy(
         rec2.addItemInput(all_metals[metal1].singularity * n1);
         rec2.addItemInput(all_metals[metal2].singularity * n2);
 
-        rec2.addMekanismHeatInput(700, 699, 1.0/0);
+        //rec2.addMekanismHeatInput(700, 699, 1.0/0);
             
                     
         rec2.addItemInput(<mekanism:obsidiantnt>);
@@ -2366,7 +2388,7 @@ function add3alloy(
         rec2.addItemInput(all_metals[metal2].singularity * n2);
         rec2.addItemInput(all_metals[metal3].singularity * n3);
 
-        rec2.addMekanismHeatInput(700, 699, 1.0/0);
+        //rec2.addMekanismHeatInput(700, 699, 1.0/0);
             
                     
         rec2.addItemInput(<mekanism:obsidiantnt>);
@@ -2453,6 +2475,13 @@ function addElement(nam as string){
         Melting.addRecipe(all_metals_molten[nam] * 8, all_metals[nam].element, 500);
         mods.thermalexpansion.Crucible.addRecipe(all_metals_molten[nam] * 8, all_metals[nam].element, 4000);
     }
+
+    TEAlloyer.addRecipe(
+        all_metals[nam].ingot, 
+        all_metals[nam].element * 16,
+        <contenttweaker:elemental_reduction>,
+        40000
+    );
 }
 
 //mods.tconstruct.Casting.addTableRecipe(IItemStack output, IIngredient cast, ILiquidStack fluid, int amount, @Optional boolean consumeCast, @Optional int time);
@@ -2791,7 +2820,7 @@ TEPress.addGearRecipe(<thermalfoundation:material:23>, <minecraft:stone> * 2, 30
             rec2.addItemInput(<extendedcrafting:singularity:1>);
             rec2.addItemInput(<extendedcrafting:singularity> * 2);
 
-            rec2.addMekanismHeatInput(700, 699, 1.0/0);
+            //rec2.addMekanismHeatInput(700, 699, 1.0/0);
                 
                         
             rec2.addItemInput(<mekanism:obsidiantnt>);
@@ -3036,7 +3065,17 @@ add3alloy(1, "flower_steel", 4,
             "cincinnasite", 2,
             "fluix", 3
         );
-        
+        recipes.addShapeless("ia_fluix_steel_alt", <contenttweaker:fluix_steel_dust> * 6, [
+            <appliedenergistics2:material:8>, <appliedenergistics2:material:8>, <appliedenergistics2:material:8>,
+            <betternether:cincinnasite>, <betternether:cincinnasite>,
+            <harvestcraft:onionsoupitem>
+        ]);
+        recipes.addShapeless("ia_fluix_steel_alt2", <contenttweaker:fluix_steel_dust> * 10, [
+            <appliedenergistics2:material:8>, <appliedenergistics2:material:8>, <appliedenergistics2:material:8>,
+            <betternether:cincinnasite>, <betternether:cincinnasite>,
+            <harvestcraft:onionsoupitem>,
+            <minecraft:potion>.withTag({Potion: "cofhcore:strength4"})
+        ]);
 
 
         add2alloy(1, "menril_steel_base", 2,
@@ -4421,21 +4460,36 @@ recipes.addShapeless("tungsten_mixture", <contenttweaker:tungsten_mixture>, [
     <actuallyadditions:item_dust:7>, 
     <darkutils:material>, <thermalfoundation:material:1027>, <contenttweaker:arkenium_dust>
 ]);
-scripts.content_machines.addAdvancedMixerRecipe(
-    [<contenttweaker:darker_steel_ingot> * 4], [],
-    [
-        <contenttweaker:bedrockium_alloy_ingot> * 2,
-        <moretcon:ingotblightsteel> * 4,
-        <taiga:palladium_ingot> * 12,
-        <contenttweaker:tungsten_mixture>
-    ], [
-        <liquid:draconium> * (144 * 16),
-        <liquid:sentient_metal> * 576,
-        <liquid:plutonium> * 576
-    ],
-    1024, 40
-);
-
+{//darker
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:darker_steel_ingot> * 4], [<liquid:radioactive_waste> * 50],
+        [
+            <contenttweaker:bedrockium_alloy_ingot> * 2,
+            <moretcon:ingotblightsteel> * 4,
+            <taiga:palladium_ingot> * 12,
+            <contenttweaker:tungsten_mixture>
+        ], [
+            <liquid:draconium> * (144 * 16),
+            <liquid:sentient_metal> * 576,
+            <liquid:plutonium> * 576
+        ],
+        1024, 40
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:darker_steel_ingot> * 6], [<liquid:radioactive_waste> * 100],
+        [
+            <contenttweaker:bedrockium_alloy_ingot> * 2,
+            <moretcon:ingotblightsteel> * 4,
+            <contenttweaker:mischmetal_ingot> * 4,
+            <contenttweaker:tungsten_mixture>
+        ], [
+            <liquid:draconium> * (144 * 16),
+            <liquid:sentient_metal> * 576,
+            <liquid:plutonium> * 576
+        ],
+        1024, 40
+    );
+}
 
 scripts.content_machines.addAdvancedMixerRecipe(
     [<contenttweaker:super_alloy_base_ingot> * 4, <contenttweaker:imperomite_catalyst_dust>], [],
@@ -4594,17 +4648,23 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <contenttweaker:tablet_good>,
             <contenttweaker:star_alloy_ingot>,
             <botania:specialflower>.withTag({type: "puredaisy"}),
-            <contenttweaker:pure_sheetmetal>,
-            <contenttweaker:crystal_metal_ingot>,
-            <aether_legacy:enchanted_gravitite>,
-            <aether_legacy:enchanted_gravitite>,
-            <aether_legacy:enchanted_gravitite>,
+            <contenttweaker:pure_metal>,
+            <moretcon:blockgravitite>,
             <bloodmagic:demon_extras:10>
         ]
     );
 }
 
 {//alchemistry
+    //mischmetal
+    add2alloy(3, "mischmetal", 3, 
+        "cerium", 2,
+        "lanthanum", 1
+    );
+       
+
+    
+
     recipes.remove(<bigreactors:ingotblutonium>);
     recipes.addShapeless("ia_unblock_blutonium", <bigreactors:ingotblutonium> * 9, [<bigreactors:blockblutonium>]);
 

@@ -152,7 +152,11 @@
     "input": "contenttweaker:slimy_sand",
     "output": "contenttweaker:slimy_glass"
   },
-
+  {
+    "fluidName": "andesite",
+    "input": "prodigytech:ash_bricks",
+    "output": "caves_n_cliffs:calcite"
+  },
 
   {
     "fluidName": "sand",
