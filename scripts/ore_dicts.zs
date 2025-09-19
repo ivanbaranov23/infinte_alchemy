@@ -90,3 +90,12 @@
 <ore:oreOxideNickel>.add(<immersiveengineering:ore:4>);
 
 //slime
+
+
+//alchemistry
+<ore:dustVanadium>.add(<contenttweaker:vanadium_dust>);
+<ore:dustRubidium>.add(<contenttweaker:rubidium_dust>);
+<ore:dustMolybdenum>.add(<contenttweaker:molybdenum_dust>);
+<ore:dustCesium>.add(<contenttweaker:cesium_dust>);
+
+<ore:dustCadmium>.add(<contenttweaker:cadmium>);

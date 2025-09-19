@@ -126,16 +126,6 @@ recipes.addShapeless("ia_arrows_to_flint", <minecraft:flint>, [
 ]);
 
 
-{//andesite
-    
-
-
-    /*mods.tconstruct.Alloy.addRecipe( <liquid:zinc> * 8, [
-        <liquid:iron> * 8,
-        <liquid:andesite> * 8
-    ] );*/
-    mods.tconstruct.Casting.addTableRecipe(<contenttweaker:zinc_ingot>, <minecraft:iron_ingot>, <liquid:andesite>, 250, true);
-}
 
 mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:133>, <actuallyadditions:item_misc:12>, <liquid:tin>, 72, true);
 

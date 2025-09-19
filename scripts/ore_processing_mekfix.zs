@@ -172,6 +172,17 @@ function addMekOreNew(
         <gas:zirconium>, <contenttweaker:zirconium_shard>, <contenttweaker:zirconium_clump>
     );
 
+    //kikeridan
+    addMekOreNew(
+        <gas:kikeridan>, <gas:cleankikeridan>, 
+        <contenttweaker:kikeridan_crystal>, <contenttweaker:kikeridan_shard>, <contenttweaker:kikeridan_cluster>, <contenttweaker:kikeridan_dirty_dust>, 
+        <contenttweaker:kikeridan_dust>
+    );
+    addMekOreFix(
+        [<contenttweaker:kikeridan_ore>, <contenttweaker:kikeridan_chunk>], 
+        <gas:kikeridan>, <contenttweaker:kikeridan_shard>, <contenttweaker:kikeridan_cluster>
+    );
+    
     addMekOreNew(
         <gas:death_metal>, <gas:cleandeath_metal>, 
         <contenttweaker:death_metal_crystal>, <contenttweaker:death_metal_shard>, <contenttweaker:death_metal_clump>, <contenttweaker:death_metal_dirty_dust>, 

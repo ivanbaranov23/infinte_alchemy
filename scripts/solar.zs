@@ -45,7 +45,39 @@ recipes.removeByMod("solarflux");
 		40, 1000
 	);
 }
-
+{//alloys
+	mods.enderio.AlloySmelter.addRecipe(
+		<contenttweaker:perovskite_ingot> * 4,
+		[
+			<projectred-core:resource_item:301> * 2,
+			<alchemistry:ingot:48>, 
+			<alchemistry:ingot:52>
+		],
+		125000
+	);
+	scripts.content_machines.addAdvancedMixerRecipe(
+		[<contenttweaker:perovskite_ingot> * 6], [],
+		[
+			<projectred-core:resource_item:301> * 2,
+			<alchemistry:ingot:48>, 
+			<alchemistry:ingot:52>,
+			<contenttweaker:glowshroomite_ingot>
+		], [
+			<liquid:ferramic> * 288
+		],
+		20, 100000
+	);
+	
+	mods.enderio.AlloySmelter.addRecipe(
+		<contenttweaker:perovskite2_ingot> * 2,
+		[
+			<contenttweaker:perovskite_ingot> * 4,
+			<contenttweaker:mapbi3> * 24,
+			<contenttweaker:sunnarium_chunk>
+		],
+		125 * 1000 * 1000
+	);
+}
 
 {//mirrors
 	recipes.addShaped("ia_solar_part1", <solarflux:mirror> * 3, [

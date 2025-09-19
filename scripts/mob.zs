@@ -115,6 +115,12 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
     //mooshroom
     //mods.roots.SummonCreatures.removeEntity(<entity:minecraft:mooshroom>);
     readdRootsSummoning(<entity:minecraft:mooshroom>, [<mysticalagriculture:storage>, <quark:glowshroom>, <contenttweaker:mushroomite_block>, <minecraft:cooked_beef>]);
+
+    recipes.addShaped("ia_evil_thing", <extrautils2:ingredients:10>, [
+        [<exnihilocreatio:item_material:3>, <xreliquary:mob_ingredient:1>, <exnihilocreatio:item_material:3>],
+        [<xreliquary:mob_ingredient:1>, <exnihilocreatio:item_material:3>, <xreliquary:mob_ingredient:1>],
+        [<exnihilocreatio:item_material:3>, <xreliquary:mob_ingredient:1>, <exnihilocreatio:item_material:3>]
+    ]);
 }
 
 {//erebus

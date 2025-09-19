@@ -282,7 +282,7 @@ recipes.addShaped("ia_block_atomic_reconstructor", <actuallyadditions:block_atom
 
 	recipes.addShaped("ia_aa_battery_2", <actuallyadditions:item_battery_double>, [
 		[<moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_battery>], 
-		[<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:8>, <actuallyadditions:item_crystal_empowered:5>], 
+		[<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:8> | <contenttweaker:cadmium>, <actuallyadditions:item_crystal_empowered:5>], 
 		[<actuallyadditions:item_battery>, <actuallyadditions:item_crystal_empowered:5>, <moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
@@ -292,14 +292,14 @@ recipes.addShaped("ia_block_atomic_reconstructor", <actuallyadditions:block_atom
 			<actuallyadditions:item_battery>,
 			<moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>,
 			<actuallyadditions:item_crystal:5> * 2,
-			<actuallyadditions:item_misc:8>
+			<actuallyadditions:item_misc:8> | <contenttweaker:cadmium>
 		], null,
 		20, 1000
 	);
 
 	recipes.addShaped("ia_aa_battery_3", <actuallyadditions:item_battery_triple>, [
 		[<moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_battery_double>], 
-		[<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:8>, <actuallyadditions:item_crystal_empowered:5>], 
+		[<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:8> | <contenttweaker:cadmium>, <actuallyadditions:item_crystal_empowered:5>], 
 		[<actuallyadditions:item_battery_double>, <actuallyadditions:item_crystal_empowered:5>, <moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
@@ -309,14 +309,14 @@ recipes.addShaped("ia_block_atomic_reconstructor", <actuallyadditions:block_atom
 			<actuallyadditions:item_battery_double>,
 			<moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>,
 			<actuallyadditions:item_crystal:5> * 2,
-			<actuallyadditions:item_misc:8>
+			<actuallyadditions:item_misc:8> | <contenttweaker:cadmium>
 		], null,
 		20, 1000
 	);
 
 	recipes.addShaped("ia_aa_battery_4", <actuallyadditions:item_battery_quadruple>, [
 		[<moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_battery_triple>], 
-		[<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:8>, <actuallyadditions:item_crystal_empowered:5>], 
+		[<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:8> | <contenttweaker:cadmium>, <actuallyadditions:item_crystal_empowered:5>], 
 		[<actuallyadditions:item_battery_triple>, <actuallyadditions:item_crystal_empowered:5>, <moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
@@ -326,14 +326,14 @@ recipes.addShaped("ia_block_atomic_reconstructor", <actuallyadditions:block_atom
 			<actuallyadditions:item_battery_triple>,
 			<moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>,
 			<actuallyadditions:item_crystal:5> * 2,
-			<actuallyadditions:item_misc:8>
+			<actuallyadditions:item_misc:8> | <contenttweaker:cadmium>
 		], null,
 		20, 1000
 	);
 
 	recipes.addShaped("ia_aa_battery_5", <actuallyadditions:item_battery_quintuple>, [
 		[<moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>, <actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_battery_quadruple>], 
-		[<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:8>, <actuallyadditions:item_crystal_empowered:5>], 
+		[<actuallyadditions:item_crystal_empowered:5>, <actuallyadditions:item_misc:8> | <contenttweaker:cadmium>, <actuallyadditions:item_crystal_empowered:5>], 
 		[<actuallyadditions:item_battery_quadruple>, <actuallyadditions:item_crystal_empowered:5>, <moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
@@ -343,7 +343,7 @@ recipes.addShaped("ia_block_atomic_reconstructor", <actuallyadditions:block_atom
 			<actuallyadditions:item_battery_quadruple>,
 			<moreplates:electrotine_alloy_gear> | <projectred-core:resource_item:342>,
 			<actuallyadditions:item_crystal:5> * 2,
-			<actuallyadditions:item_misc:8>
+			<actuallyadditions:item_misc:8> | <contenttweaker:cadmium>
 		], null,
 		20, 1000
 	);

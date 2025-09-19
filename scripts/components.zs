@@ -1152,7 +1152,8 @@ mods.actuallyadditions.Empowerer.addRecipe(
 				<contenttweaker:plasma_gen> * 4,
 				<contenttweaker:terragem> * 4,
 				<moreplates:stellar_alloy_plate> * 2,
-				<mekanism:basicblock2:3>.withTag({tier: 3})
+				<mekanism:basicblock2:3>.withTag({tier: 3}),
+				<contenttweaker:atomic_clock> * 6
 			],
 			<liquid:mirion2> * (144 * 8), 20, 1024
 		);
@@ -1943,17 +1944,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_pipe>, [
 		<liquid:pulsating_iron> * (144 * 8), 
 		40, 128
 	);
-	scripts.content_machines.addAssemblerRecipe(
-		[<contenttweaker:signal_reciever>],
-		[
-			<contenttweaker:lightning_cell>,
-			<enderio:block_transceiver>,
-			<contenttweaker:pulse_generator> * 8,
-			<enderio:item_material:16> * 4,
-			<extendedcrafting:material:36> * 24
-		],
-		<liquid:mekanized_steel> * 1000, 40, 1024
-	);
+	
 }
 
 {//rtg
@@ -1989,7 +1980,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_pipe>, [
 			<contenttweaker:tank_oxygen> * 24,
 			<contenttweaker:cooling_system> * 2,
 			<contenttweaker:tank2> * 4,
-			<contenttweaker:explosion_resistant_plate> * 24,
+			<alchemistry:ingot:42> * 24,
 			<simplyjetpacks:metaitemmods:23> * 2
 		],
 		<liquid:tignalum> * (144 * 8), 20, 1024 

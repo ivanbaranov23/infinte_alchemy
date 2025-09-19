@@ -11,7 +11,7 @@
         {
             "type": "will",
             "io-type": "input",
-            "willtype": "destructive",
+            "will-type": "destructive",
             "amount": 50
         },
         

@@ -25,12 +25,7 @@ recipes.addShaped("ia_yellow_flower", <minecraft:yellow_flower> * 2, [
     
 }
 
-//bauxite
-/*mods.exnihilocreatio.Hammer.addRecipe(
-	<minecraft:iron_ore>, <exnihilocreatio:item_ore_iron> * 5,
-	0, 1.0, 1.0
-);
-mods.exnihilocreatio.Hammer*/
+
 
 //andesite magma
 recipes.addShapeless("orslime", <minecraft:magma_cream>, [<tconstruct:edible:4>, <tconstruct:edible:4>, <ore:slimeball>]);

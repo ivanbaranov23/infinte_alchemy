@@ -47,14 +47,14 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
         ],
         <contenttweaker:tincan_target_ore2>: [
             [
-                <thermalfoundation:ore:6> * 32,
-                <thermalfoundation:ore:7> * 32,
-                <immersiveengineering:ore:5> * 32,
-                <bigreactors:oreyellorite> * 32,
-                <contenttweaker:titanium_ore> * 32,
-                <contenttweaker:tungsten_ore> * 32,
+                <thermalfoundation:ore:6> * 96,
+                <thermalfoundation:ore:7> * 96,
+                <immersiveengineering:ore:5> * 96,
+                <bigreactors:oreyellorite> * 96,
+                <contenttweaker:titanium_ore> * 96,
+                <contenttweaker:tungsten_ore> * 96,
 
-                <taiga:meteoritecobble_block> * 16
+                <taiga:meteoritecobble_block> * 32
             ],[
                 <thermalfoundation:ore:6> * 64,
                 <thermalfoundation:ore:7> * 64,
@@ -68,27 +68,27 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
         ],
         <contenttweaker:tincan_target_gem>: [
             [
-                <minecraft:diamond_ore> * 40,
-                <minecraft:emerald_ore> * 32,
-                <mysticalworld:amethyst_ore> * 20,
-                <appliedenergistics2:quartz_ore> * 32,
-                <mysticalworld:quartz_ore> * 32,
-                <taiga:dilithium_ore> * 32
+                <minecraft:diamond_ore> * 64,
+                <minecraft:emerald_ore> * 64,
+                <mysticalworld:amethyst_ore> * 32,
+                <appliedenergistics2:quartz_ore> * 64,
+                <mysticalworld:quartz_ore> * 64,
+                <taiga:dilithium_ore> * 64
             ],[
-                <minecraft:diamond_ore> * 40,
-                <minecraft:emerald_ore> * 32,
-                <mysticalworld:amethyst_ore> * 12,
-                <appliedenergistics2:quartz_ore> * 32,
-                <mysticalworld:quartz_ore> * 32,
+                <minecraft:diamond_ore> * 64,
+                <minecraft:emerald_ore> * 64,
+                <mysticalworld:amethyst_ore> * 64,
+                <appliedenergistics2:quartz_ore> * 64,
+                <mysticalworld:quartz_ore> * 64,
                 <taiga:dilithium_ore> * 64
             ]
         ],
         <contenttweaker:tincan_target_mob>: [
             [
-                <xreliquary:mob_ingredient:6> * 64,
-                <xreliquary:mob_ingredient> * 64,
-                <xreliquary:mob_ingredient:3> * 64,
-                <xreliquary:mob_ingredient:2> * 64,
+                <xreliquary:mob_ingredient:6> * 192,
+                <xreliquary:mob_ingredient> * 192,
+                <xreliquary:mob_ingredient:3> * 192,
+                <xreliquary:mob_ingredient:2> * 192,
 
                 null,
                 null,
@@ -97,17 +97,17 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
 
                 null
             ],[
-                <xreliquary:mob_ingredient:6> * 32,
-                <xreliquary:mob_ingredient> * 32,
-                <xreliquary:mob_ingredient:3> * 16,
-                <xreliquary:mob_ingredient:2> * 16,
+                <xreliquary:mob_ingredient:6> * 192,
+                <xreliquary:mob_ingredient> * 192,
+                <xreliquary:mob_ingredient:3> * 192,
+                <xreliquary:mob_ingredient:2> * 192,
 
-                <xreliquary:mob_ingredient:1> * 32,
-                <xreliquary:mob_ingredient:11> * 32,
-                <xreliquary:mob_ingredient:8> * 16,
-                <xreliquary:mob_ingredient:4> * 32,
+                <xreliquary:mob_ingredient:1> * 192,
+                <xreliquary:mob_ingredient:11> * 192,
+                <xreliquary:mob_ingredient:8> * 192,
+                <xreliquary:mob_ingredient:4> * 192,
 
-                <quark:diamond_heart>
+                <quark:diamond_heart> * 4
             ]
         ]
     },
@@ -135,21 +135,21 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
             [
                 <netherendingores:ore_nether_vanilla> * 128,
                 <netherendingores:ore_nether_vanilla:6> * 128,
-                <netherendingores:ore_nether_vanilla:1> * 48,
-                <netherendingores:ore_nether_vanilla:3> * 48,
+                <netherendingores:ore_nether_vanilla:1> * 96,
+                <netherendingores:ore_nether_vanilla:3> * 96,
                 <netherendingores:ore_nether_modded_2:8> * 16
             ],
             [
-                <netherendingores:ore_nether_vanilla> * 128,
-                <netherendingores:ore_nether_vanilla:6> * 128,
-                <netherendingores:ore_nether_vanilla:1> * 48,
-                <netherendingores:ore_nether_vanilla:3> * 48,
+                <netherendingores:ore_nether_vanilla> * 256,
+                <netherendingores:ore_nether_vanilla:6> * 256,
+                <netherendingores:ore_nether_vanilla:1> * 96,
+                <netherendingores:ore_nether_vanilla:3> * 96,
                 <netherendingores:ore_nether_modded_2:8> * 16
             ]
         ],
         <contenttweaker:nether_boat_quartz>: [
-            [<minecraft:quartz_ore> * 160, <netherendingores:ore_nether_modded_1:9> * 96],
-            [<minecraft:quartz_ore> * 160, <netherendingores:ore_nether_modded_1:9> * 96]
+            [<minecraft:quartz_ore> * 320, <netherendingores:ore_nether_modded_1:9> * 144],
+            [<minecraft:quartz_ore> * 320, <netherendingores:ore_nether_modded_1:9> * 144]
         ]
     },
     <contenttweaker:robodruid_mech>: {
@@ -168,29 +168,29 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <biomesoplenty:gem_ore:6> * 128,
                 <biomesoplenty:gem_ore:4> * 128
             ], [
-                <mysticalworld:amethyst_ore> * 64,
-                <densemetals:dense_diamond_ore> * 16,
-                <densemetals:dense_emerald_ore> * 12,
+                <mysticalworld:amethyst_ore> * 128,
+                <densemetals:dense_diamond_ore> * 32,
+                <densemetals:dense_emerald_ore> * 32,
                 <densemetals:dense_lapis_ore> * 32,
 
-                <biomesoplenty:gem_ore:1> * 64,
-                <biomesoplenty:gem_ore:3> * 64,
-                <biomesoplenty:gem_ore:7> * 64,
-                <biomesoplenty:gem_ore:2> * 64,
-                <biomesoplenty:gem_ore:5> * 64,
-                <biomesoplenty:gem_ore:6> * 64,
-                <biomesoplenty:gem_ore:4> * 64
+                <biomesoplenty:gem_ore:1> * 128,
+                <biomesoplenty:gem_ore:3> * 128,
+                <biomesoplenty:gem_ore:7> * 128,
+                <biomesoplenty:gem_ore:2> * 128,
+                <biomesoplenty:gem_ore:5> * 128,
+                <biomesoplenty:gem_ore:6> * 128,
+                <biomesoplenty:gem_ore:4> * 128
             ]
         ],
         <contenttweaker:robodruid_target_wood>: [
             [
-                <erebus:ore_petrified_wood> * 128,
+                <erebus:ore_petrified_wood> * 256,
                 <contenttweaker:entwood> * 32,
-                <roots:wildwood_log> * 128
+                <roots:wildwood_log> * 256
             ], [
-                <erebus:ore_petrified_wood> * 128,
+                <erebus:ore_petrified_wood> * 256,
                 <contenttweaker:entwood> * 32,
-                <roots:wildwood_log> * 128
+                <roots:wildwood_log> * 256
             ]
         ],
         <contenttweaker:robodruid_target_metal>: [
@@ -200,8 +200,8 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <taiga:vibranium_ore> * 96,
                 <taiga:duranite_ore> * 64,
                 <draconicevolution:draconium_ore> * 96,
-                <contenttweaker:orichalcum_ore> * 8,
-                <contenttweaker:geode_ore> * 16
+                <contenttweaker:orichalcum_ore> * 16,
+                <contenttweaker:geode_ore> * 64
 
             ], [
                 <densemetals:dense_mithril_ore> * 32,
@@ -210,7 +210,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <taiga:duranite_ore> * 64,
                 <draconicevolution:draconium_ore> * 96,
                 <contenttweaker:orichalcum_ore> * 16,
-                <contenttweaker:geode_ore> * 16
+                <contenttweaker:geode_ore> * 64
 
             ]
         ]
@@ -220,50 +220,50 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
             [
                 <atum:relic_ore> * 512,
                 <atum:redstone_ore> * 256,
-                <contenttweaker:atum_lead_ore> * 128,
-                <contenttweaker:atum_sphalerite_ore> * 128,
-                <atum:gold_ore> * 192,
-                <atum:diamond_ore> * 96
+                <contenttweaker:atum_lead_ore> * 192,
+                <contenttweaker:atum_sphalerite_ore> * 192,
+                <atum:gold_ore> * 256,
+                <atum:diamond_ore> * 144
             ], [
                 <atum:relic_ore> * 512,
                 <atum:redstone_ore> * 256,
-                <contenttweaker:atum_lead_ore> * 128,
-                <contenttweaker:atum_sphalerite_ore> * 128,
-                <atum:gold_ore> * 192,
+                <contenttweaker:atum_lead_ore> * 192,
+                <contenttweaker:atum_sphalerite_ore> * 192,
+                <atum:gold_ore> * 256,
                 <atum:diamond_ore> * 96
             ]
         ],
         <contenttweaker:goldscarab_target_shard>: [
             [
-                <atum:diamond_ore> * 128,
-                <atum:emerald_ore> * 128,
-                <atum:lapis_ore> * 128,
+                <atum:diamond_ore> * 256,
+                <atum:emerald_ore> * 256,
+                <atum:lapis_ore> * 256,
                 <contenttweaker:atum_godshardium_ore> * 128
             ], [
-                <atum:diamond_ore> * 128,
-                <atum:emerald_ore> * 128,
-                <atum:lapis_ore> * 128,
+                <atum:diamond_ore> * 256,
+                <atum:emerald_ore> * 256,
+                <atum:lapis_ore> * 256,
                 <contenttweaker:atum_godshardium_ore> * 128
             ]
         ],
         <contenttweaker:goldscarab_target_oil>: [
             [
                 <atum:gold_ore> * 192,
-                <thermalfoundation:ore_fluid> * 256,
+                <thermalfoundation:ore_fluid> * 320,
 
             ], [
                 <atum:gold_ore> * 192,
-                <thermalfoundation:ore_fluid> * 256,
+                <thermalfoundation:ore_fluid> * 320,
 
             ]
         ],
         <contenttweaker:goldscarab_target_water>: [
             [
                 <openblocks:tank>.withTag({tank: {FluidName: "sand", Amount: 16000}}) * 64,
-                <openblocks:tank>.withTag({tank: {FluidName: "desert_water", Amount: 16000}}) * 16
+                <openblocks:tank>.withTag({tank: {FluidName: "desert_water", Amount: 16000}}) * 32
             ], [
                 <openblocks:tank>.withTag({tank: {FluidName: "sand", Amount: 16000}}) * 64,
-                <openblocks:tank>.withTag({tank: {FluidName: "desert_water", Amount: 16000}}) * 16    
+                <openblocks:tank>.withTag({tank: {FluidName: "desert_water", Amount: 16000}}) * 32    
             ]
         ]
     },
@@ -283,7 +283,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <erebus:materials:6>.withDisplayName("Fairy Wing") * 8,
             ],[
                 <botania:manaresource:23> * 32,
-                <erebus:materials:6>.withDisplayName("Fairy Wing") * 4,
+                <erebus:materials:6>.withDisplayName("Fairy Wing") * 8,
 
             ]
         ],

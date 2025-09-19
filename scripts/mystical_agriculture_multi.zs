@@ -65,6 +65,11 @@ recipes.addShaped("ia_essence_pump5", <contenttweaker:essence_pump5>, [
     [<moreplates:supremium_gear>, <contenttweaker:essence_pump4>, <moreplates:supremium_gear>],
     [<contenttweaker:cooling_system>, <mysticalagriculture:mystical_machine_frame>, <contenttweaker:cooling_system>]
 ]);
+recipes.addShaped("ia_essence_pump6", <contenttweaker:essence_pump6>, [
+    [<contenttweaker:temperature_control>, <moreplates:insanium_plate>, <contenttweaker:temperature_control>],
+    [<moreplates:insanium_gear>, <contenttweaker:essence_pump5>, <moreplates:insanium_gear>],
+    [<contenttweaker:temperature_control>, <mysticalagriculture:mystical_machine_frame>, <contenttweaker:temperature_control>]
+]);
 
 mods.tconstruct.Melting.addRecipe(<liquid:essence_slurp> * 50, <mysticalagriculture:crafting>);
 mods.thermalexpansion.Crucible.addRecipe(
@@ -224,6 +229,7 @@ mods.thermalexpansion.Crucible.addRecipe(
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
         rec.addItemOutput(<mysticalagriculture:crafting:1> * 64);
+        rec.addItemOutput(<mysticalagriculture:crafting:1> * 64).setChance(0.0);
 
         rec.build();
     }
@@ -237,6 +243,7 @@ mods.thermalexpansion.Crucible.addRecipe(
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
         rec.addItemOutput(<mysticalagriculture:crafting:2> * 64);
+        rec.addItemOutput(<mysticalagriculture:crafting:2> * 64).setChance(0.0);
 
         rec.build();
     }
@@ -250,6 +257,7 @@ mods.thermalexpansion.Crucible.addRecipe(
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
         rec.addItemOutput(<mysticalagriculture:crafting:3> * 64);
+        rec.addItemOutput(<mysticalagriculture:crafting:3> * 64).setChance(0.0);
 
         rec.build();
     }
@@ -263,6 +271,7 @@ mods.thermalexpansion.Crucible.addRecipe(
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
         rec.addItemOutput(<mysticalagriculture:crafting:4> * 64);
+        rec.addItemOutput(<mysticalagriculture:crafting:4> * 64).setChance(0.0);
 
         rec.build();
     }
@@ -276,6 +285,7 @@ mods.thermalexpansion.Crucible.addRecipe(
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
         rec.addItemOutput(<mysticalagradditions:insanium> * 64);
+        rec.addItemOutput(<mysticalagradditions:insanium> * 64).setChance(0.0);
 
         rec.build();
     }

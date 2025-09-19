@@ -1,0 +1,19 @@
+{
+	x: 23.5d,
+	y: 6.0d,
+	dependencies: [
+		"bd6cbf81"
+	],
+	tasks: [{
+		uid: "5cd4d5aa",
+		type: "item",
+		items: [{
+			item: "contenttweaker:kikeridan_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "304d84a3",
+		type: "item",
+		item: "contenttweaker:kikeridan_block"
+	}]
+}

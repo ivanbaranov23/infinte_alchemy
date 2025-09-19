@@ -13,7 +13,7 @@
 		uid: "25ebc22b",
 		type: "item",
 		items: [{
-			item: "modularcontroller:high_oven_controller"
+			item: "modularmachinery:high_oven_controller"
 		}]
 	},
 	{

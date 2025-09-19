@@ -11,7 +11,7 @@
         {
             "type": "will",
             "io-type": "input",
-            "willtype": "destructive",
+            "will-type": "destructive",
             "amount": 5
         },
         
@@ -26,7 +26,7 @@
             
             "io-type": "output",
             
-            "essencepertick": 2560
+            "amount": 256000
             
         }
     ]

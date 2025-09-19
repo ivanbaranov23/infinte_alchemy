@@ -463,3 +463,10 @@ recipes.addShapeless("ia_tic_hammer", <tcomplement:sledge_hammer>.withTag({Stats
     <exnihilocreatio:hammer_diamond>
 ]);
 
+
+recipes.remove(<extrautils2:lawsword>);
+recipes.addShaped("ia_kikoku", <extrautils2:lawsword>, [
+    [<extrautils2:opinium:8>],
+    [<extrautils2:opinium:8> | <contenttweaker:kikeridan_plate>],
+    [<enderio:item_material:71>]
+]);

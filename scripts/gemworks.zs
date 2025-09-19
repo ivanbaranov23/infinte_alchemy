@@ -179,6 +179,10 @@ recipes.addShaped("ia_vivid_crystal", <enderio:item_material:14>, [
 	[<enderio:item_alloy_endergy_ingot:6>, <contenttweaker:delicate_malachite>, <enderio:item_alloy_endergy_ingot:6>], 
 	[<enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:6>]
 ]);
+mods.enderio.SagMill.removeRecipe(<enderio:item_material:14>);
+mods.enderio.SagMill.addRecipe(
+    [<enderio:item_material:36>, <enderio:item_material:36>, <enderio:item_material:35>], [0.50, 0.25, 0.05], <enderio:item_material:14>, "MULTIPLY_OUTPUT", 20000
+);
 
 recipes.remove(<enderio:item_material:15>);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:15>);
@@ -187,6 +191,10 @@ recipes.addShaped("ia_vibrant_crystal", <enderio:item_material:15>, [
 	[<enderio:item_alloy_ingot:2>, <projectred-core:resource_item:202>, <enderio:item_alloy_ingot:2>], 
 	[<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2>]
 ]);
+mods.enderio.SagMill.removeRecipe(<enderio:item_material:15>);
+mods.enderio.SagMill.addRecipe(
+    [<enderio:item_material:35>, <enderio:item_material:35>, <enderio:item_material:36>], [0.50, 0.25, 0.05], <enderio:item_material:15>, "MULTIPLY_OUTPUT", 20000
+);
 
 recipes.addShaped("ia_weather_crystal1", <enderio:item_material:18> * 4, [
     [<contenttweaker:mixed_will_crystal>, <enderio:item_material:14>, <contenttweaker:mixed_will_crystal>], 
@@ -198,6 +206,16 @@ recipes.addShaped("ia_weather_crystal2", <enderio:item_material:18> * 4, [
     [<enderio:item_material:15>, <enderio:item_material:16>, <enderio:item_material:15>], 
     [<contenttweaker:crystal_metal_nugget>, <enderio:item_material:14>, <contenttweaker:crystal_metal_nugget>]
 ]);
+
+mods.enderio.SagMill.removeRecipe(<enderio:item_material:16>);
+mods.enderio.SagMill.addRecipe(
+    [<enderio:item_material:37>, <enderio:item_material:37>], [50, 25], <enderio:item_material:16>, "MULTIPLY_OUTPUT", 20000
+);
+
+mods.enderio.SagMill.removeRecipe(<enderio:item_material:19>);
+mods.enderio.SagMill.addRecipe(
+    [<enderio:item_material:34>, <enderio:item_material:34>], [50, 25], <enderio:item_material:19>, "MULTIPLY_OUTPUT", 20000
+);
 
 
 

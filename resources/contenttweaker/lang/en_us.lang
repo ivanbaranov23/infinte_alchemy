@@ -1238,7 +1238,7 @@ item.contenttweaker.rtg.name=Radioisotope Thermoelectric Generator (RTG)
 item.contenttweaker.rocket_engine.name=Rocket Engine
 item.contenttweaker.pulse_generator.name=Pulse Generator
 
-item.contenttweaker.signal_reciever.name=Signal Communicator
+
 
 tile.contenttweaker.stomper.name=Stomper
 
@@ -2379,3 +2379,11 @@ tile.contenttweaker.rubeezo_block.name=Block of Rubezo
 
 tile.contenttweaker.alien_gearbox.name=Fautly Alien Gearbox
 tile.contenttweaker.alien_sheetmetal.name=Alien Sheetmetal
+
+item.contenttweaker.engraved_mana_circuit.name=Engraved Mana Circuit
+item.contenttweaker.elf_boule.name=Elven Boule
+item.contenttweaker.elf_wafer.name=Elven Wafer
+item.contenttweaker.rune_cyclic.name=Rune of Everchanging Seasons
+
+item.contenttweaker.signal_reciever.name=RF Signal Reciever
+item.contenttweaker.signal_sender.name=RF Signal Sender

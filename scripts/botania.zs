@@ -172,6 +172,8 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     {//alchemy
         ManaInfusion.addAlchemy(<taiga:tritonite_ingot>, <taiga:terrax_ingot>, 5000);
     }
+
+    ManaInfusion.addInfusion(<contenttweaker:solid_mana>, <contenttweaker:alchemical_clay>, 250 * 1000);
 }
 
 
@@ -324,6 +326,13 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
 
     ElvenTrade.removeRecipe(<botania:quartz:5>);
     ElvenTrade.addRecipe([<botania:quartz:5>], [<botania:quartz:1>, <botania:manaresource:18>, <botania:manaresource:18>]);
+
+    recipes.remove(<botania:quartz:4>);
+    mods.enderio.AlloySmelter.addRecipe(<botania:quartz:4> * 4, [
+        <moretcon:hydrogenrichredstonepowder>,
+        <extendedcrafting:singularity_custom:26> * 2,
+        <contenttweaker:delicate_topaz> * 24
+    ], 100 * 1000 * 1000);
 }
 
 recipes.addShaped("ia_opencrate", <botania:opencrate>, [

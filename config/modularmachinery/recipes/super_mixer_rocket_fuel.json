@@ -11,7 +11,7 @@
         {
             "type": "will",
             "io-type": "input",
-            "willtype": "steadfast",
+            "will-type": "steadfast",
             "amount": 30
         },
         

@@ -43,6 +43,7 @@ addCoralGrowthRec(<biomesoplenty:coral>, <tconstruct:edible:3>);
 addCoralGrowthRec(<biomesoplenty:coral:1>, <minecraft:gold_nugget> * 3);
 addCoralGrowthRec(<biomesoplenty:coral:2>, <harvestcraft:blueberryitem>);
 addCoralGrowthRec(<biomesoplenty:coral:3>, <minecraft:glowstone_dust>);
+addCoralGrowthRec(<biomesoplenty:seaweed>, <minecraft:glowstone_dust>);
 
 addCoralGrowthRec(<contenttweaker:zanite_coral>, <contenttweaker:manyullyn_dust>);
 addCoralGrowthRec(<contenttweaker:terra_coral>, <contenttweaker:fertilizer7>);

@@ -51,17 +51,20 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
 
         for output in outs
     		rec.addItemOutput(output);
-        for output in bonus
-    		rec.addItemOutput(output).setChance(0.5);
+        for output in bonus{
+            rec.addItemOutput(output).setChance(0.5);
+            rec.addItemOutput(output).setChance(0.15);
+        }
+    		
 		
 	
     	for input in inps
             rec.addItemInput(input);
         rec.addCatalystInput(
 			<contenttweaker:ceria>,
-			["Output x1.5"],
+			["Output item production chance +25%"],
 			[RecipeModifierBuilder.create(
-				"modularmachinery:item", "output", 1.5, 1, false
+				"modularmachinery:item", "output", 0.25, 0, true
 			).build()]
 		).setChance(0.3);
 
@@ -77,21 +80,23 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
 
         for output in outs
     		rec.addItemOutput(output);
-        for output in bonus
-    		rec.addItemOutput(output).setChance(0.75);
-		
+        for output in bonus{
+            rec.addItemOutput(output).setChance(0.75);
+            rec.addItemOutput(output).setChance(0.25);
+            rec.addItemOutput(output).setChance(0.05);
+        }
 	
     	for input in inps
             rec.addItemInput(input);
-        rec.addCatalystInput(
+       rec.addCatalystInput(
 			<contenttweaker:ceria>,
-			["Output x1.5"],
+			["Output item production chance +25%"],
 			[RecipeModifierBuilder.create(
-				"modularmachinery:item", "output", 1.5, 1, false
+				"modularmachinery:item", "output", 0.25, 0, true
 			).build()]
 		).setChance(0.3);
 
-		rec.addFluidInput(<liquid:starlight_lubricant> * 750);
+		rec.addFluidInput(<liquid:starlight_lubricant> * 1750);
         rec.addItemInput(<extrautils2:lawsword:*>).setChance(0.01);
 
 		rec.build();
@@ -103,22 +108,24 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
 
         for output in outs
     		rec.addItemOutput(output);
-        for output in bonus
-    		rec.addItemOutput(output * (output.amount * 4));
-		
+        for output in bonus{
+            rec.addItemOutput(output * (output.amount * 2)).setChance(0.75);
+            rec.addItemOutput(output * (output.amount * 2)).setChance(0.25);
+            rec.addItemOutput(output * (output.amount * 2)).setChance(0.05);
+        }
 	
     	for input in inps
             rec.addItemInput(input);
 
         rec.addCatalystInput(
 			<contenttweaker:ceria>,
-			["Output x1.5"],
+			["Output item production chance +25%"],
 			[RecipeModifierBuilder.create(
-				"modularmachinery:item", "output", 1.5, 1, false
+				"modularmachinery:item", "output", 0.25, 0, true
 			).build()]
 		).setChance(0.3);
 
-		rec.addFluidInput(<liquid:starlight_lubricant> * 250);
+		rec.addFluidInput(<liquid:starlight_lubricant> * 1000);
         rec.addItemInput(<avaritia:infinity_sword>).setChance(0.0);
 
 		rec.build();

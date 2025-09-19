@@ -10,7 +10,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_lead:1>, <minecraft:poisonous_potato>, <liquid:wear_resistant_alloy>, 32, true);
 mods.thermalexpansion.Transposer.addFillRecipe(
     <exnihilocreatio:item_ore_lead:1>, 
-    <tconstruct:edible:1>, <liquid:wear_resistant_alloy> * 32, 
+    <minecraft:poisonous_potato>, <liquid:wear_resistant_alloy> * 32, 
     2000
 );
 
@@ -257,9 +257,9 @@ scripts.content_machines.addFluidMixerRecipe(
         rec.addGasOutput(<gas:evil> * 100);
         rec.addGasOutput(<gas:cleanneodymium> * 1000);
         rec.addGasOutput(<gas:cleangallium> * 1000);
-        rec.addItemOutput(<alchemistry:element:57> * 8);
-        rec.addItemOutput(<alchemistry:element:58> * 6);
-        rec.addItemOutput(<alchemistry:element:59>);
+        rec.addItemOutput(<alchemistry:element:57> * 24);
+        rec.addItemOutput(<alchemistry:element:58> * 16);
+        rec.addItemOutput(<alchemistry:element:59> * 4);
         
 
         rec.addGasInput(<gas:rarer_earth_slurry> * 10000);
@@ -387,14 +387,84 @@ scripts.content_machines.addFluidMixerRecipe(
     );
 }
 
+{//molybdenum
+    mods.mekanism.reaction.addRecipe(
+        <thermalfoundation:material:160>, <liquid:copper> * 288, <gas:black_slurp> * 1000, 
+        <contenttweaker:molybdenum_dust>, <gas:waste_gas> * 10, 900, 60
+    );
+}
 
-//eezo
+{//eezo
     scripts.helper.addFluidAlloyerRecipe(
         <taiga:eezo_ore>, 
         <enderio:item_material:20> * 16, <contenttweaker:black_bronze_ingot> * 1, 
         <liquid:petrotheum> * 2000, 
         256, 30
     );
+}
+
+{//pollucite
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:pollucite> * 2], [], 
+        [<taiga:dilithium_ingot> * 12, <contenttweaker:enriched_bioslag> * 4, <enderio:item_material:35>], [
+            <liquid:ore_make> * 1500,
+            <liquid:bauxite_waste> * 1000
+        ], 
+        20, 10000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:pollucite> * 2], [], 
+        [<taiga:dilithium_ingot> * 12, <biomesoplenty:seaweed> * 16, <enderio:item_material:35>], [
+            <liquid:ore_make> * 1500,
+            <liquid:bauxite_waste> * 1000
+        ], 
+        20, 10000
+    );
+    mods.enderio.Vat.addRecipe(
+        <liquid:pollucite1> * 1000, 1.0, <liquid:acid1> * 1000, 
+        [<contenttweaker:pollucite>], [1.0], 
+        [<contenttweaker:iodine>], [1.0], 
+        250000
+    );
+
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:filter_empty>,
+            <contenttweaker:rubidium_dust> % 25
+        ], <liquid:pollucite2> * 500, 
+        <liquid:pollucite1> * 500, <contenttweaker:filter_solar>,
+        <contenttweaker:weather_chrome_mesh>,
+        40, 100000
+    );
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:filter_empty>,
+            <contenttweaker:rubidium_dust> % 75
+        ], <liquid:pollucite2> * 500, 
+        <liquid:pollucite1> * 500, <contenttweaker:filter_blood>,
+        <contenttweaker:weather_chrome_mesh>,
+        40, 100000
+    );
+    
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:filter_empty>,
+            <contenttweaker:cesium_dust> % 25
+        ], <liquid:acid1> * 500, 
+        <liquid:pollucite2> * 500, <contenttweaker:filter_solar>,
+        <contenttweaker:weather_chrome_mesh>,
+        40, 100000
+    );
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:filter_empty>,
+            <contenttweaker:cesium_dust> % 75
+        ], <liquid:acid1> * 500, 
+        <liquid:pollucite2> * 500, <contenttweaker:filter_blood>,
+        <contenttweaker:weather_chrome_mesh>,
+        40, 100000
+    );
+}
 
 {//bastnasite
     mods.mekanism.reaction.addRecipe(

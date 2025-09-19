@@ -220,6 +220,58 @@ addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
     <contenttweaker:simes>.addTooltip("H₂IMes");
     <contenttweaker:simes>.addTooltip("SIMes");
 }
+addChemicalRecipe([<contenttweaker:methylamine>], [
+    <alchemistry:compound:215>, <alchemistry:compound:209>
+], []);
+{//acet
+    //acetic acid
+    addFluidConv(<contenttweaker:acetic_acid>, <liquid:acetic_acid>);
+
+    //acetone
+    mods.alchemistry.Electrolyzer.addRecipe(
+        <liquid:cracked_steam> * 1000, <alchemistry:compound:36> * 2, 100,
+        <alchemistry:compound:205>, <alchemistry:compound:34>,
+        <contenttweaker:propylene>, 75, null, 0
+    );
+    addChemicalRecipe(
+        [<contenttweaker:acetone>, <contenttweaker:phenol>],
+        [<contenttweaker:benzene>, <contenttweaker:propylene>, <alchemistry:element:8> * 2],
+        []
+    );
+
+    //ethenone h2c2o
+    addChemicalRecipe(
+        [<contenttweaker:ethenone>, <alchemistry:compound:34>],
+        [<contenttweaker:acetone>, <ore:dustPyrotheum>],
+        []
+    );
+    addChemicalRecipe(
+        [<contenttweaker:ethenone>, <contenttweaker:acetic_acid>],
+        [<contenttweaker:ac2o>, <ore:dustPyrotheum>],
+        []
+    );
+    addChemicalRecipe(
+        [<contenttweaker:ethenone>],
+        [<contenttweaker:acetic_acid>],
+        []//todo triethyl phosphate
+    );
+    
+    //acetic anhydride
+    addChemicalRecipe(
+        [<contenttweaker:ac2o>],
+        [<contenttweaker:ethenone>, <contenttweaker:acetic_acid>],
+        []
+    );
+
+    addChemicalRecipe(
+        [<contenttweaker:acac>],
+        [<contenttweaker:acetone>, <contenttweaker:ac2o>],
+        []
+    );
+}
+
+//todo acetone butanol ethanol
+
 
 {//bromine
     addChemicalRecipe(
@@ -238,12 +290,38 @@ addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
     ]);
     <contenttweaker:dibromoethane>.addTooltip("H₄C₂Br₂");
 }
+{//rubidium
+    addChemicalRecipe(
+        [<contenttweaker:ruacac>],
+        [<contenttweaker:acac>, <alchemistry:element:37>],
+        []
+    );
+}
 {//barium
     Dissolver.addRecipe(<contenttweaker:awaken_witherite>, false, 1,
         [
             [100, <alchemistry:compound:506> * 8]
         ]
     );
+}
+{//iodine
+    Dissolver.addRecipe(<contenttweaker:iodine>, false, 1,
+        [
+            [100, <alchemistry:element:53> * 4]
+        ]
+    );
+    Combiner.addRecipe(<contenttweaker:iodine>, [
+        <alchemistry:element:53> * 4
+    ]);
+
+
+    Combiner.addRecipe(<contenttweaker:mai>, [
+        <contenttweaker:methylamine>, <alchemistry:compound:508>
+    ]);
+    Combiner.addRecipe(<contenttweaker:mapbi3>, [
+        <contenttweaker:mai>, <alchemistry:compound:25>
+    ]);
+    
 }
 {//cerium
     mods.mekanism.compressor.addRecipe(<alchemistry:ingot:58>, <gas:oxygen>, <contenttweaker:ceria>);

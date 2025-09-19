@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import mods.thermalexpansion.Imbuer as TEImbuer; 
 import mods.thermalexpansion.Transposer;
 
+//todo remove this file
 
 
 function add2x2Recipe(brick as IItemStack, block as IItemStack){
@@ -155,6 +156,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:bastnasite>, <contenttweaker:bastnasite_block>);
 
     add3x3Recipe(<contenttweaker:space_ice_crystal>, <contenttweaker:space_ice_crystal_block>);
+    add3x3Recipe(<contenttweaker:kikeridan_ingot>, <contenttweaker:kikeridan_block>);
     add3x3Recipe(<alchemistry:ingot:4>, <contenttweaker:beryllium_block>);
     add3x3Recipe(<alchemistry:ingot:84>, <contenttweaker:polonium_block>);
     add3x3Recipe(<alchemistry:ingot:94>, <contenttweaker:plutonium_block>);
@@ -162,6 +164,8 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:lucky_alloy_ingot>, <contenttweaker:lucky_alloy_block>);
 
     add3x3Recipe(<contenttweaker:mischmetal_ingot>, <contenttweaker:mischmetal_block>);
+    add3x3Recipe(<contenttweaker:perovskite_ingot>, <contenttweaker:perovskite_block>);
+    add3x3Recipe(<contenttweaker:perovskite2_ingot>, <contenttweaker:perovskite2_block>);
 
     add3x3Recipe(<contenttweaker:ssa_ingot>, <contenttweaker:ssa_block>);
 

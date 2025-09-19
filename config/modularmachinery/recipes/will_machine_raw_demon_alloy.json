@@ -11,7 +11,7 @@
         {
             "type": "will",
             "io-type": "input",
-            "willtype": "raw",
+            "will-type": "raw",
             "amount": 50
         },
         

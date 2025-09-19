@@ -2,6 +2,7 @@
 	title: "Grow some stones 1",
 	x: -3.0d,
 	y: -4.0d,
+	shape: "diamond",
 	text: [
 		""
 	],

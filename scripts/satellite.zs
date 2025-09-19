@@ -26,6 +26,7 @@ import mods.requious.Assembly;
 import mods.requious.AssemblyRecipe;
 
 import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
 
 
 static Colors as string[string] = {
@@ -161,6 +162,7 @@ function getColor(v as double){
         [<contenttweaker:satellite_chip>]
     );
 
+    //satellite
 	scripts.content_machines.addAssemblerRecipe(
         [<contenttweaker:satellite1>],
         [
@@ -170,6 +172,17 @@ function getColor(v as double){
             <solarflux:solar_panel_6> * 16,
             <contenttweaker:robot_brain> * 4,
             <contenttweaker:rtg>
+        ],
+        <liquid:mirion2> * (8 * 144), 40, 4096
+    );
+	scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:satellite2>],
+        [
+            <contenttweaker:satellite1> * 8,
+            <contenttweaker:satellite_plating2> * 4,
+            <contenttweaker:satellite_chip> * 2,
+            <solarflux:custom_solar_panel_zirconium> * 8,
+            <contenttweaker:atomic_clock> * 8
         ],
         <liquid:mirion2> * (8 * 144), 40, 4096
     );
@@ -344,9 +357,25 @@ static chip_data as float[string][string] = {
         min_tier: 2
     },
 
+    vanadium_asteroid: {
+        minimum: 200,
+        weight: 450,
+        min_tier: 1
+    },
+    molybdenum_asteroid: {
+        minimum: 300,
+        weight: 400,
+        min_tier: 2
+    },
+
     bastnasite_asteroid: {
         minimum: 25000,
         weight: 300,
+        min_tier: 2
+    },
+    kikeridan_asteroid: {
+        minimum: 25000,
+        weight: 100,
         min_tier: 2
     },
 
@@ -384,6 +413,12 @@ static chip_data as float[string][string] = {
         minimum: 100, 
         weight: 200, 
         min_tier: 0
+    },
+
+    adult_titanakor: {
+        minimum: 1500,
+        weight: 200,
+        min_tier: 1
     }
 };
 static drone_mining as IItemStack[string] = {
@@ -393,8 +428,19 @@ static drone_mining as IItemStack[string] = {
     nickel_asteroid: <densemetals:dense_nickel_ore>,
     aluminum_asteroid: <densemetals:dense_aluminum_ore>,
     zinc_asteroid: <densemetals:dense_zinc_ore>,
+
+    beryllium_asteroid: <contenttweaker:beryllium_ore>,
+    moissanite_asteroid: <contenttweaker:moissanite_ore>,
+    zirconium_asteroid: <contenttweaker:zirconium_ore>,
+    dense_zirconium_asteroid: <contenttweaker:zirconium_ore_dense>,
+
+    vanadium_asteroid: <contenttweaker:vanadium_ore>,
+    molybdenum_asteroid: <contenttweaker:molybdenum_ore>,
     
-    bastnasite_asteroid: <contenttweaker:bastnasite_ore>
+    bastnasite_asteroid: <contenttweaker:bastnasite_ore>,
+    kikeridan_asteroid: <contenttweaker:kikeridan_ore>,
+
+    moon: <contenttweaker:moon_dust>
 };
 
 
@@ -478,6 +524,23 @@ function addDroneMiningRecipe(chip_data_in as string, out as IItemStack, time_t 
 	
 
 	rec.addItemOutput(out);
+	rec.addItemOutput(out).setChance(0.0);
+	rec.addItemOutput(out).setChance(-1.0);
+
+    rec.addCatalystInput(
+			<contenttweaker:naots>,
+			["Input life essence x0.333"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:item", "output", 1.0, 0, true
+			).build()]
+	).setChance(0.7);
+    rec.addCatalystInput(
+			<contenttweaker:acac>,
+			["Input life essence x0.333"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:item", "output", 1.0, 0, true
+			).build()]
+	).setChance(0.7);
 
 	rec.build();
 }
@@ -511,16 +574,63 @@ addDroneMiningRecipe("zinc_asteroid", <densemetals:dense_zinc_ore> * 16, 20 * 60
 addDroneMiningRecipe("beryllium_asteroid", <contenttweaker:beryllium_ore> * 32, 20 * 60, 5000 * 1000);
 addDroneMiningRecipe("moissanite_asteroid", <contenttweaker:moissanite_ore> * 32, 20 * 60, 5000 * 1000);
 addDroneMiningRecipe("zirconium_asteroid", <contenttweaker:zirconium_ore> * 32, 20 * 60, 5000 * 1000);
+addDroneMiningRecipe("dense_zirconium_asteroid", <contenttweaker:zirconium_ore_dense> * 12, 20 * 60, 5000 * 1000);
+
+addDroneMiningRecipe("vanadium_asteroid", <contenttweaker:vanadium_ore> * 32, 20 * 60, 5000 * 1000);
+addDroneMiningRecipe("molybdenum_asteroid", <contenttweaker:molybdenum_ore> * 32, 20 * 60, 5000 * 1000);
 
 addDroneMiningRecipe("bastnasite_asteroid", <contenttweaker:bastnasite_ore> * 32, 20 * 60, 5000 * 1000);
+
+addDroneMiningRecipe("kikeridan_asteroid", <contenttweaker:kikeridan_ore> * 32, 20 * 60 * 5, 5000 * 1000);
 
 addDroneMiningRecipe("ice_comet", <contenttweaker:space_ice_raw> * 16, 20 * 60, 500 * 1000, <contenttweaker:laser>);
 addDroneMiningRecipe("moon", <contenttweaker:moon_dust> * 24, 20 * 60, 500 * 1000);
 addDroneMiningRecipe("rock_crystal", <astralsorcery:blockcustomore>, 20 * 60, 500 * 1000);
+
 addDroneMiningRecipe("alien_wreck", <contenttweaker:alien_wreck>, 20 * 60, 500 * 1000, <contenttweaker:webbing_unit>);
 addDroneMiningRecipe("alien_small_outpost", <contenttweaker:alien_wreck> * 4, 20 * 60, 500 * 1000, <contenttweaker:laser>);
 addDroneMiningRecipe("alien_large_outpost", <contenttweaker:alien_wreck> * 64, 20 * 60, 500 * 1000, <contenttweaker:nuke>, false);
 
+{//titanakor
+    {
+        var rec = RecipeBuilder.newBuilder("titanakor", "satellite_launch_pad", 20 * 60);
+        rec.addEnergyPerTickInput(100 * 1000 * 1000);
+
+        rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "adult_titanakor"}));
+        rec.addItemOutput(<contenttweaker:space_navigator>.withTag({target: "dead_adult_titanakor"}));
+
+        rec.addItemInput(<contenttweaker:drone>);
+        rec.addItemInput(<contenttweaker:nuke>);
+        rec.addItemOutput(<contenttweaker:drone>);
+        
+        rec.addFluidInput(<liquid:rocket_fuel> * 2000);
+        
+
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("dead_adult_titanakor", "satellite_launch_pad", 20 * 60);
+        rec.addEnergyPerTickInput(100 * 1000 * 1000);
+
+        rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "dead_adult_titanakor"}));
+        rec.addItemOutput(<contenttweaker:space_navigator>.withTag({target: "dead_adult_titanakor"}));
+
+        rec.addItemInput(<contenttweaker:drone>);
+        //rec.addItemInput(<contenttweaker:nuke>);
+        rec.addItemOutput(<contenttweaker:drone>);
+        
+        rec.addFluidInput(<liquid:rocket_fuel> * 2000);
+        
+
+        rec.addItemOutput(<contenttweaker:titanakor_flesh>);
+        rec.addItemOutput(<contenttweaker:titanakor_flesh>).setChance(0.0);
+        rec.addItemOutput(<contenttweaker:titanakor_flesh>).setChance(-1.0);
+
+
+        rec.build();
+    }
+}
 
 
 {//adding computer

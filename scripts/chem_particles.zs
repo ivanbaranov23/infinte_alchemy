@@ -1,0 +1,28 @@
+mods.extendedcrafting.TableCrafting.addShapeless(0, <contenttweaker:barion1>, [
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <extrautils2:lawsword>, 
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>,
+    <appliedenergistics2:material:6>
+]);
+

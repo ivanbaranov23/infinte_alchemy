@@ -388,6 +388,15 @@ Rituals.modifyRitual("ritual_healing_aura",
 Rituals.getRitual("ritual_healing_aura").setFloat("amount", 6.0);
 Rituals.getRitual("ritual_healing_aura").setFloat("player_amount", 2.0);
 
+
+Rituals.getRitual("ritual_transmutation").setInteger("radius_x", 8);
+Rituals.getRitual("ritual_transmutation").setInteger("radius_z", 8);
+Rituals.getRitual("ritual_transmutation").setInteger("interval", 25);
+Rituals.modifyRitual("ritual_transmutation", [
+    <roots:moonglow_leaf>, <roots:chiseled_runestone>, 
+    <moretcon:carbonpile>, <actuallyadditions:item_misc:9>, <appliedenergistics2:material:45>
+]);
+
 {//flower ritual
     <ore:netherMycelium>.add(<biomesoplenty:grass:8>);
     <ore:netherMycelium>.add(<betternether:nether_mycelium>);

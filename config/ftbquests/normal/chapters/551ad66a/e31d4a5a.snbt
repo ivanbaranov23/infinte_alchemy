@@ -1,6 +1,9 @@
 {
 	x: -1.0d,
 	y: 4.0d,
+	text: [
+		"Can be used to summon a number of mobs"
+	],
 	optional: true,
 	tasks: [{
 		uid: "8ac02d1a",

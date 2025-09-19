@@ -113,6 +113,7 @@ addMetalGas("neodymium", "d34aa0");
 addMetalGas("arkenium", "333139");
 addMetalGas("gallium", "b5ceea");
 addMetalGas("death_metal", "330d39");
+addMetalGas("kikeridan", "84cc6e");
 
 
 /*

@@ -108,6 +108,9 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 		<exnihilocreatio:item_mesh:4>, 
 		20, 400
 	);
+
+	//napalm
+	TEImbuer.addRecipe(<liquid:napalm> * 200, <thermalfoundation:material:68>, <liquid:gasoline> * 200, 4800);
 }
 {//fish oil
 	mods.immersiveengineering.Squeezer.addRecipe(<prodigytech:meat_ground>, <liquid:fish_oil> * 500, <ore:listAllfishraw> * 4, 3000);
@@ -577,66 +580,80 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 }
 
 
-{//emp steam
-	TEImbuer.addRecipe(<liquid:empowered_steam> * 500, <contenttweaker:rainbow_crystal_cluster>, <liquid:steam> * 4000, 20000);
+{//steam
+	{//dense
+		Distillation.addRecipe(
+			[<liquid:pure_water> * 100, <liquid:dense_steam> * 200, <liquid:steam> * 100], 
+			[], 
+			<liquid:steam> * 1000, 20 * 1000, 20, 
+			[]
+		);
+	}
+
+	{//cracked
+		scripts.content_machines.addFluidMixerRecipe(
+			<liquid:cracked_steam> * 500, 
+			<liquid:dense_steam> * 1000, <liquid:ore_drill> * 1000, <harvestcraft:crackeritem> * 3, 
+			40, 256
+		);
+	}
+
+	{//emp steam
+		TEImbuer.addRecipe(<liquid:empowered_steam> * 500, <contenttweaker:rainbow_crystal_cluster>, <liquid:steam> * 4000, 20000);
 
 
-	scripts.content_machines.addFluidSieveRecipeRandom(
-		[
-			<contenttweaker:filter_empty> % 90,
-			<contenttweaker:empowered_shard> % 50
-		], null,
-		<liquid:empowered_steam> * 500, <contenttweaker:filter_charcoal>,
-		<exnihilocreatio:item_mesh:4>,
-		20, 250
-	);
-	scripts.content_machines.addFluidSieveRecipeRandom(
-		[
-			<contenttweaker:filter_empty>,
-			<contenttweaker:empowered_shard> % 60,
-			<contenttweaker:empowered_shard> % 40,
-			<contenttweaker:empowered_shard> % 20
-		], null,
-		<liquid:empowered_steam> * 500, <contenttweaker:filter_solar>,
-		<exnihilocreatio:item_mesh:4>,
-		20, 250
-	);
-	scripts.content_machines.addFluidSieveRecipeRandom(
-		[
-			<contenttweaker:empowered_shard> % 75
-		], null,
-		<liquid:empowered_steam> * 500, (<contenttweaker:ice_shard> | <minecraft:diamond> | <minecraft:emerald> | <mysticalworld:amethyst_gem>) * 4,
-		<contenttweaker:weather_chrome_mesh>,
-		20, 250
-	);
+		scripts.content_machines.addFluidSieveRecipeRandom(
+			[
+				<contenttweaker:filter_empty> % 90,
+				<contenttweaker:empowered_shard> % 50
+			], null,
+			<liquid:empowered_steam> * 500, <contenttweaker:filter_charcoal>,
+			<exnihilocreatio:item_mesh:4>,
+			20, 250
+		);
+		scripts.content_machines.addFluidSieveRecipeRandom(
+			[
+				<contenttweaker:filter_empty>,
+				<contenttweaker:empowered_shard> % 60,
+				<contenttweaker:empowered_shard> % 40,
+				<contenttweaker:empowered_shard> % 20
+			], null,
+			<liquid:empowered_steam> * 500, <contenttweaker:filter_solar>,
+			<exnihilocreatio:item_mesh:4>,
+			20, 250
+		);
+		scripts.content_machines.addFluidSieveRecipeRandom(
+			[
+				<contenttweaker:empowered_shard> % 75
+			], null,
+			<liquid:empowered_steam> * 500, (<contenttweaker:ice_shard> | <minecraft:diamond> | <minecraft:emerald> | <mysticalworld:amethyst_gem>) * 4,
+			<contenttweaker:weather_chrome_mesh>,
+			20, 250
+		);
 
-	Distillation.addRecipe(
-		[<liquid:pure_water> * 100, <liquid:dense_steam> * 200, <liquid:steam> * 100], 
-		[], 
-		<liquid:steam> * 1000, 20 * 1000, 20, 
-		[]
-	);
-	
-	mods.immersiveengineering.Mixer.addRecipe(
-        <liquid:empowered_steam> * 2000, <liquid:dense_steam> * 2000, 
-        [<contenttweaker:rainbow_crystal_cluster>, <contenttweaker:empowered_shard>, <contenttweaker:fluospar_dust>, <contenttweaker:sky_grain>], 
-        20000
-    );
-    mods.immersiveengineering.Mixer.addRecipe(
-        <liquid:empowered_steam> * 4000, <liquid:dense_steam> * 4000, 
-        [<contenttweaker:rainbow_crystal_cluster>, <contenttweaker:empowered_shard>, <contenttweaker:fluospar_dust>, <contenttweaker:corrupted_ambrosium>], 
-        20000
-    );
-	mods.immersiveengineering.Mixer.addRecipe(
-        <liquid:empowered_steam> * 2000, <liquid:dense_steam> * 2000, 
-        [<contenttweaker:rainbow_crystal_cluster>, <contenttweaker:empowered_shard>, <contenttweaker:ancient_dust>, <contenttweaker:sky_grain>], 
-        20000
-    );
-    mods.immersiveengineering.Mixer.addRecipe(
-        <liquid:empowered_steam> * 4000, <liquid:dense_steam> * 4000, 
-        [<contenttweaker:rainbow_crystal_cluster>, <contenttweaker:empowered_shard>, <contenttweaker:ancient_dust>, <contenttweaker:corrupted_ambrosium>], 
-        20000
-    );
+		
+		
+		mods.immersiveengineering.Mixer.addRecipe(
+			<liquid:empowered_steam> * 2000, <liquid:dense_steam> * 2000, 
+			[<contenttweaker:rainbow_crystal_cluster>, <contenttweaker:empowered_shard>, <contenttweaker:fluospar_dust>, <contenttweaker:sky_grain>], 
+			20000
+		);
+		mods.immersiveengineering.Mixer.addRecipe(
+			<liquid:empowered_steam> * 4000, <liquid:dense_steam> * 4000, 
+			[<contenttweaker:rainbow_crystal_cluster>, <contenttweaker:empowered_shard>, <contenttweaker:fluospar_dust>, <contenttweaker:corrupted_ambrosium>], 
+			20000
+		);
+		mods.immersiveengineering.Mixer.addRecipe(
+			<liquid:empowered_steam> * 2000, <liquid:dense_steam> * 2000, 
+			[<contenttweaker:rainbow_crystal_cluster>, <contenttweaker:empowered_shard>, <contenttweaker:ancient_dust>, <contenttweaker:sky_grain>], 
+			20000
+		);
+		mods.immersiveengineering.Mixer.addRecipe(
+			<liquid:empowered_steam> * 4000, <liquid:dense_steam> * 4000, 
+			[<contenttweaker:rainbow_crystal_cluster>, <contenttweaker:empowered_shard>, <contenttweaker:ancient_dust>, <contenttweaker:corrupted_ambrosium>], 
+			20000
+		);
+	}
 }
 
 {//radioactive waste

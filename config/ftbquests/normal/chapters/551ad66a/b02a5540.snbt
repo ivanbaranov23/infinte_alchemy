@@ -1,6 +1,9 @@
 {
 	x: 0.0d,
 	y: 4.0d,
+	text: [
+		"Melt the blaze in the smeltery to get a fuel hotter than lava"
+	],
 	dependencies: [
 		"e31d4a5a"
 	],

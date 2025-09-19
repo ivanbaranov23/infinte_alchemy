@@ -109,6 +109,13 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["hydroxide", 1]
         ]
     );
+    createCompound(215, "methanol", 20, 88, 190,
+        [
+            ["hydrogen", 3],
+            ["carbon", 1],
+            ["hydroxide", 1]
+        ]
+    );
 }
 
 {//metals
@@ -150,6 +157,18 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["barium", 1],
             ["carbon", 1],
             ["oxygen", 3]
+        ]
+    );
+    createCompound(507, "sodium_iodide", 64, 32, 64,
+        [
+            ["sodium", 1],
+            ["iodine", 1]
+        ]
+    );
+    createCompound(508, "hydrogen_iodide", 114, 32, 164,
+        [
+            ["hydrogen", 1],
+            ["iodine", 1]
         ]
     );
 }

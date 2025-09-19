@@ -64,6 +64,13 @@ import mods.enderio.SagMill;
         furnace.remove(<exnihilocreatio:item_ore_zinc:3>);
         recipes.remove(<exnihilocreatio:item_ore_zinc:3>);
         recipes.remove(<exnihilocreatio:item_ore_zinc:2>);
+
+        mods.tconstruct.Casting.addTableRecipe(<contenttweaker:zinc_ingot>, <minecraft:iron_ingot>, <liquid:andesite>, 250, true);
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <contenttweaker:zinc_ingot>, 
+            <minecraft:iron_ingot>, <liquid:andesite> * 250, 
+            1500
+        );
     }
 
     {//ardite
@@ -276,6 +283,8 @@ mods.tconstruct.Melting.removeRecipe(<liquid:gravitite>, <netherendingores:ore_e
 <ore:dustDeathMetal>.add(<contenttweaker:death_metal_dust>);
 scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:death_metal_ingot>], [<contenttweaker:death_metal_dust>], 10 * 1000 * 1000, 10, 3000);
 
+//kikeridan
+<ore:dustKikeridan>.add(<contenttweaker:kikeridan_dust>);
 
 {//bedrockium
     scripts.content_machines.addFluidSieveRecipeRandom(

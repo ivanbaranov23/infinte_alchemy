@@ -194,15 +194,15 @@ val ores as IItemStack[string][string][string] = {
         dense: {
             item: <densemetals:dense_iron_ore>,
             crushing: <minecraft:iron_ore> * 3,
-            crushingByprod1: <thermalfoundation:material:69> * 4,
-            crushingByprod2: <thermalfoundation:material:65> * 4,
+            crushingByprod1: <contenttweaker:vanadium_dust>,
+            crushingByprod2: <thermalfoundation:material:69> * 4,
 
             making: <minecraft:iron_ore> * 4
         },
         dense_nether: {
             item: <densemetals:dense_nether_iron_ore>,
             crushing: <netherendingores:ore_nether_vanilla:4> * 3,
-            crushingByprod1: <exnihilocreatio:item_ore_cobalt:2> * 4,
+            crushingByprod1: <contenttweaker:vanadium_dust> * 2,
             crushingByprod2: <mekores:mekanismore:218> * 4,
 
             making: <netherendingores:ore_nether_vanilla:4> * 4
@@ -329,6 +329,7 @@ val ores as IItemStack[string][string][string] = {
             separating1: <mekanism:dirtydust:3>, 
             //separating2: <mekanism:dirtydust:3>,
             separating2: <contenttweaker:chrome_dust>,
+            separating3: <contenttweaker:cadmium>,
 
             balling: <mekanism:dirtydust:3>,
             crushingByprod1: <mekanism:dirtydust:3>,
@@ -1931,8 +1932,27 @@ val ores as IItemStack[string][string][string] = {
     beryllium: {
         overworld: {
             item: <contenttweaker:beryllium_ore>,
-            crushing: <contenttweaker:beryllium_dust> * 2,
+            crushing_no_balls: <contenttweaker:beryllium_dust> * 2,
+            balling: <contenttweaker:beryllium_dust> * 2,
             crushingByprod1: <contenttweaker:zirconium_dirty_dust>,
+            crushingByprod2: <contenttweaker:beryllium_dust>
+        }
+    },
+    vanadium: {
+        overworld: {
+            item: <contenttweaker:vanadium_ore>,
+            crushing_no_balls: <contenttweaker:vanadium_dust> * 2,
+            balling: <contenttweaker:vanadium_dust> * 2,
+            crushingByprod1: <exnihilocreatio:item_ore_iron>,
+            crushingByprod2: <contenttweaker:beryllium_dust>
+        }
+    },
+    molybdenum: {
+        overworld: {
+            item: <contenttweaker:molybdenum_ore>,
+            crushing_no_balls: <contenttweaker:molybdenum_dust> * 2,
+            balling: <contenttweaker:molybdenum_dust> * 2,
+            crushingByprod1: <exnihilocreatio:item_ore_iron>,
             crushingByprod2: <contenttweaker:beryllium_dust>
         }
     },
@@ -1986,6 +2006,29 @@ val ores as IItemStack[string][string][string] = {
 
             made2x2: <contenttweaker:death_metal_pieces>,
             madeFrom: <contenttweaker:death_metal_pieces> * 3
+        }
+    },
+    kikeridan: {
+        overworld: {
+            item: <contenttweaker:kikeridan_ore>,
+            crushing_no_balls: <contenttweaker:kikeridan_dust> * 2,
+            balling: <contenttweaker:kikeridan_dust> * 2,
+            crushingByprod1: <contenttweaker:kikeridan_dust>,
+            crushingByprod2: <contenttweaker:beryllium_dust>,
+
+            drilling: <contenttweaker:kikeridan_pieces> * 6
+        },
+        chunk: {
+            item: <contenttweaker:kikeridan_chunk>,
+            crushing_no_balls: <contenttweaker:kikeridan_dust> * 2,
+            balling: <contenttweaker:kikeridan_dust> * 2,
+            crushingByprod1: <contenttweaker:rare_earth_dust>, 
+            crushingByprod2: <taiga:meteoritecobble_block>,
+
+            drilling: <contenttweaker:kikeridan_dirty_dust> * 3,
+
+            made2x2: <contenttweaker:kikeridan_pieces>,
+            madeFrom: <contenttweaker:kikeridan_pieces> * 3
         }
     },
 
@@ -3689,7 +3732,7 @@ val drilling_fluid_amount as int[string] = {
     uranium: 250,
     yellorium: 250,
 
-    cursed_gold: 150,
+    cursed_gold: 250,
 
     mithril: 300,
     chrome: 320,
@@ -3703,9 +3746,13 @@ val drilling_fluid_amount as int[string] = {
     nickel_oxide: 500,
 
     starmetal: 1500,
+    beryllium: 800,
+    vanadium: 1200,
+    molybdenum: 1200,
     zirconium: 1200,
     spaceice: 1000,
     death_metal: 1500,
+    kikeridan: 5000,
 
     ruby: 300,
     topaz: 300,
@@ -3834,7 +3881,11 @@ for oredic in [
     <ore:oreGallium>,
     <ore:oreOrichalcum>,
     <ore:oreZirconium>,
-    <ore:oreDeathMetal>
+    <ore:oreDeathMetal>,
+    <ore:oreKikeridan>,
+
+    <ore:oreVanadium>,
+    <ore:oreMolybdenum>
 ] as IOreDictEntry[]{
     //oredic.removeItems(oredic.items);
     oredic.add(<contenttweaker:dummy>);

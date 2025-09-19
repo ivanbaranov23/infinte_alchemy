@@ -3,7 +3,12 @@
 	y: -8.5d,
 	shape: "square",
 	text: [
-		"There is t6 altar so take that into account. There's also altar subprocessor. "
+		"How many altars would you need? ",
+		"Well, there is t6 altar and there's also altar subprocessor for recipes. Subprocessors only go up to t4 altar recs.",
+		"You'll need to charge your orbs, but you can do it via crystallized life essence chunks.",
+		"You'll need to generate lp, but there's alt ways.",
+		"",
+		"Conclusion: like 2-3? Should be possible to do it with 1"
 	],
 	dependencies: [
 		"c1a676cf"

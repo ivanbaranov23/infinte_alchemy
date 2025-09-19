@@ -27,14 +27,14 @@
             "amount": 1,
             "nbt": {"tank": {
                 "FluidName": "rocket_fuel",
-                "Amount": ">=3200"
+                "Amount": ">=4000"
             }},
             "nbt-display": {"tank": {
                 "FluidName": "rocket_fuel",
-                "Amount": "3200"
+                "Amount": "4000"
                 
             }, "display": {
-                "Name": "3200 mb or more"
+                "Name": "4000 mb or more"
             }}
         },
         {

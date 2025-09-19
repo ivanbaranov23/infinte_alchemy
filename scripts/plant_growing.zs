@@ -669,6 +669,43 @@ scripts.helper.addSawRecipe(<minecraft:beetroot>, <minecraft:dye:1> * 2);
 
 }
 
+{//kelp
+    scripts.helper.addPlantStationRecipe(
+        <roots:elemental_soil_earth>,
+        [
+            <biomesoplenty:seaweed>
+        ],
+        [
+            <contenttweaker:algae_string> * 32,
+            <contenttweaker:coral_dust> * 12,
+            <immersiveengineering:material:7> * 32
+        ],
+        <liquid:refined_biofuel> * 3000,
+        20
+    );
+    scripts.helper.addPlantStationRecipe(
+        <roots:elemental_soil_earth>,
+        [
+            <biomesoplenty:seaweed>
+        ],
+        [
+            <contenttweaker:algae_string> * 32,
+            <contenttweaker:coral_dust> * 12,
+            <thermalfoundation:material:864> * 32
+        ],
+        <liquid:refined_biofuel> * 3000,
+        20
+    );
+    furnace.addRecipe(<contenttweaker:varec>, <biomesoplenty:seaweed>);
+    mods.mekanism.compressor.addRecipe(<contenttweaker:varec>, <gas:chlorine>, <contenttweaker:iodine>);
+
+    mods.alchemistry.Dissolver.addRecipe(<biomesoplenty:seaweed>, false, 1,
+        [
+            [100, <alchemistry:compound:507> * 8]
+        ]
+    );
+}
+
 //jade
 addGCrecipe_alltiers2(2, 
     [<erebus:jade_berry_bush>], 

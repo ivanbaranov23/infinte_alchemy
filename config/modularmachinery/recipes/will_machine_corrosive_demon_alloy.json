@@ -11,7 +11,7 @@
         {
             "type": "will",
             "io-type": "input",
-            "willtype": "corrosive",
+            "will-type": "corrosive",
             "amount": 50
         },
         

@@ -150,3 +150,15 @@ scripts.content_machines.addAdvancedMixerRecipe(
 add2x2Recipe(<contenttweaker:manaclay>, <contenttweaker:manaclay_block>);
 add2x2Recipe(<contenttweaker:manabrick>, <contenttweaker:manabrick_block>);
 
+mods.botaniatweaks.Agglomeration.addRecipe(
+        <contenttweaker:manaclay_block>,
+        [
+            <contenttweaker:elemental_clay>,
+            //<contenttweaker:terra_coral>
+        ],
+        50000,
+        0xf6faab,
+        0x7dd2e0,
+        <contenttweaker:manaclay_block>, <contenttweaker:manaclay_block>, <tconstruct:dried_clay>,
+        null, null, <minecraft:clay>
+);

@@ -673,7 +673,13 @@ import mods.modularmachinery.RecipeBuilder;
         mods.alchemistry.Evaporator.addRecipe(<contenttweaker:vitamin_c>, <liquid:gulonic_acid> * 250);
     }
 
-    recipes.addShapeless("ia_vitamins", <contenttweaker:vitamins>, [<contenttweaker:vitamin_a>, <contenttweaker:vitamin_b>, <contenttweaker:vitamin_c>]);
+    recipes.addShapeless("ia_vitamins", <contenttweaker:vitamins>, [
+        <contenttweaker:vitamin_a>, <contenttweaker:vitamin_b>, <contenttweaker:vitamin_c>
+    ]);
+    recipes.addShapeless("ia_vitamins2", <contenttweaker:vitamins> * 2, [
+        <contenttweaker:vitamin_a>, <contenttweaker:vitamin_b>, <contenttweaker:vitamin_c>,
+        <contenttweaker:iodine>
+    ]);
 }
 {//bacteria
     scripts.content_machines.addBioAssemblerRecipeRandom(
@@ -1222,37 +1228,37 @@ import mods.modularmachinery.RecipeBuilder;
                 <liquid:high_heat_lava> * 100
             ],
             40, 10000
-        );
+    );
 
-        mods.thermalexpansion.Transposer.addFillRecipe(
+    mods.thermalexpansion.Transposer.addFillRecipe(
             <contenttweaker:indium_mixture>, 
             <thermalfoundation:material:1025>, 
             <liquid:indium_mixture> * 1500, 10000
-        );
-        mods.thermalexpansion.Transposer.addFillRecipe(
+    );
+    mods.thermalexpansion.Transposer.addFillRecipe(
             <contenttweaker:indium_mixture>, 
             <contenttweaker:ice_shard>, 
             <liquid:indium_mixture> * 1000, 10000
-        );
-        scripts.content_machines.basicFluidMixerRecipe(
+    );
+    scripts.content_machines.basicFluidMixerRecipe(
             <contenttweaker:indium_mixture>, null, 
             null, [<liquid:indium_mixture> * 750, <liquid:cold_liquid> * 40], 40, 500
-        );
+    );
         
         //indium oxide mixture
-        mods.thermalexpansion.InductionSmelter.addRecipe(
+    mods.thermalexpansion.InductionSmelter.addRecipe(
             <contenttweaker:tank>, 
             <contenttweaker:tank_oxygen>, <contenttweaker:indium_mixture>, 
             20000, 
             <contenttweaker:indium_oxides>,
             80
-        );
+    );
 
 
-        //+HCl -> salty metallic solution
-        mods.thermalexpansion.Imbuer.addRecipe(<liquid:indium_leach> * (1000), <contenttweaker:indium_oxides>, <liquid:aqua_regia> * 1000, 30000);
+    //+HCl -> salty metallic solution
+    mods.thermalexpansion.Imbuer.addRecipe(<liquid:indium_leach> * (1000), <contenttweaker:indium_oxides>, <liquid:aqua_regia> * 1000, 30000);
 
-        //+NaOH -> Pb + Zn + Salty Indium Hydroxide Sol
+    //+NaOH -> Pb + Zn + Salty Indium Hydroxide Sol
     scripts.content_machines.addAdvancedMixerRecipe(
         [
             <mekanism:dirtydust:6>,
@@ -1269,9 +1275,9 @@ import mods.modularmachinery.RecipeBuilder;
     // -> salt + indium hydroxide sol
     mods.immersivepetroleum.Distillation.addRecipe(
         [<liquid:indium_hydroxide> * 15, <liquid:zinc> * 5, <liquid:lead> * 5], 
-        [<mekanism:salt>, <contenttweaker:indium_oxides>], 
+        [<mekanism:salt>, <contenttweaker:indium_oxides>, <contenttweaker:cadmium>], 
         <liquid:indium_salty> * 25, 20 * 1000, 20, 
-        [0.02, 0.005]
+        [0.02, 0.005, 0.001]
     );
     mods.thermalexpansion.Refinery.addRecipe(<liquid:indium_hydroxide> * 100, <mekanism:salt> % 20, <liquid:indium_salty> * 250, 20000);
 

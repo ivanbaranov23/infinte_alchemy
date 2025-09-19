@@ -12,14 +12,14 @@
         {
             "type": "modularmachinery:will",
             "io-type": "input",
-            "willtype": "corrosive",
-            "willamount": 20
+            "will-type": "corrosive",
+            "amount": 20
         },
         {
             "type": "modularmachinery:will",
             "io-type": "input",
-            "willtype": "steadfast",
-            "willamount": 20
+            "will-type": "steadfast",
+            "amount": 20
         },
         
         {
