@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: -2.0d,
+	dependencies: [
+		"b7165e18"
+	],
+	tasks: [{
+		uid: "d913f4de",
+		type: "item",
+		items: [{
+			item: "moretcon:orefusionite"
+		}]
+	}]
+}

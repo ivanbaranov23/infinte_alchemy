@@ -205,3 +205,12 @@
         [<enderio:item_material:4>, <enderio:item_material:4>, <enderio:item_material:4>]
     ]);
 }
+
+{//filters
+	recipes.remove(<gasconduits:item_gas_filter>);
+	recipes.addShaped("ia_eio_item_gas_filter", <gasconduits:item_gas_filter>, [
+		[null, <enderio:item_gas_conduit:2>, null],
+		[<enderio:item_gas_conduit:2>, <enderio:item_fluid_filter>, <enderio:item_gas_conduit:2>],
+		[null, <enderio:item_gas_conduit:2>, null]
+	]);
+}

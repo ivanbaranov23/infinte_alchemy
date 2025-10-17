@@ -4,10 +4,41 @@ import mods.immersiveengineering.Blueprint;
 import mods.mekanism.infuser;
 
 
+{//IE
+	//antimony
+	mods.immersiveengineering.AlloySmelter.addRecipe(
+		<contenttweaker:solder> * 6, 
+		<thermalfoundation:material:129> * 2,
+		<alchemistry:ingot:51>,
+		200
+	);
+	mods.thermalexpansion.InductionSmelter.addRecipe(
+		<contenttweaker:solder> * 8, 
+		<thermalfoundation:material:129> * 2,
+		<alchemistry:ingot:51>,
+		2000
+	);
+
+
+}
+
 mods.immersiveengineering.BottlingMachine.addRecipe(<projectred-core:resource_item>, <contenttweaker:electric_stone_dust>, <liquid:concrete> * 250);
 mods.thermalexpansion.Transposer.addFillRecipe(<projectred-core:resource_item>, <contenttweaker:electric_stone_dust>, <liquid:concrete> * 200, 3000);
 
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active>, <contenttweaker:power_core_inactive>, <liquid:napalm> * 750, 10000);
+
+{//xu2
+	recipes.addShaped("ia_resonating_plate", <contenttweaker:resonating_plate>, [
+		[null, <extrautils2:powertransmitter>, null],
+		[<extrautils2:powertransmitter>, <moreplates:enchanted_plate>, <extrautils2:powertransmitter>],
+		[null, <extrautils2:powertransmitter>, null]
+	]);
+	mods.thermalexpansion.Enchanter.addRecipe(
+		<contenttweaker:resonating_plate>,
+		<moreplates:enchanted_plate>, <extrautils2:powertransmitter> * 2,
+		40000, 2000, false
+	);
+}
 
 {//thermal
 	//sanded
@@ -20,12 +51,6 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:thermal_rod>, <immersiveengineering:wirecoil:5>], 
 		[<ore:gearGold>, <immersiveengineering:wirecoil:5>, <immersiveengineering:material:8>]
 	]);
-	/*scripts.content_machines.addAssemblerRecipe(
-		[<thermalfoundation:material:513>], 
-		[<immersiveengineering:wirecoil:5> * 2, <thermalfoundation:material:25>, <immersiveengineering:material:8>],
-		<liquid:thermal> * 144,
-		10, 128
-	);*/
 	recipes.addShaped("ia_reception_coil2", <thermalfoundation:material:513> * 3, [
 		[<immersiveengineering:material:8>, <immersiveengineering:wirecoil:5>, <ore:gearGold>], 
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:sanded_rod>, <immersiveengineering:wirecoil:5>], 
@@ -45,12 +70,6 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:thermal_rod>, <immersiveengineering:wirecoil:5>], 
 		[<ore:gearSilver>, <immersiveengineering:wirecoil:5>, <immersiveengineering:material:8>]
 	]);
-	/*scripts.content_machines.addAssemblerRecipe(
-		[<thermalfoundation:material:514>], 
-		[<immersiveengineering:wirecoil:5> * 2, <thermalfoundation:material:258>],
-		<liquid:thermal> * 144,
-		10, 128
-	);*/
 	recipes.addShaped("ia_transmission_coil2", <thermalfoundation:material:514> * 3, [
 		[<immersiveengineering:material:8>, <immersiveengineering:wirecoil:5>, <ore:gearSilver>], 
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:sanded_rod>, <immersiveengineering:wirecoil:5>], 
@@ -103,6 +122,170 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		[<immersiveengineering:material:9>, <contenttweaker:duraluminum_plate>, <contenttweaker:duraluminum_plate>], 
 		[<contenttweaker:duraluminum_plate>, <contenttweaker:wear_resistant_alloy_plate>, null]
 	]);
+
+
+	recipes.addShaped("ia_ra_burner", <contenttweaker:ra_burner>, [
+		[null, <atum:heart_of_ra>, null], 
+		[<contenttweaker:mekanized_steel_rod>, <contenttweaker:cacti_foci>, <contenttweaker:mekanized_steel_rod>], 
+		[<thermalfoundation:material:1024>, <extrautils2:machine>, <thermalfoundation:material:1024>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<contenttweaker:ra_burner> * 2], 
+		[<extrautils2:machine>, <atum:heart_of_ra>, <contenttweaker:cacti_foci>, <contenttweaker:mekanized_steel_rod>],
+		<liquid:pyrotheum> * 500,
+		10, 128
+	);
+}
+
+{//mekanism
+	recipes.addShaped("ia_mekanical_core1", <contenttweaker:mekanical_core>, [
+		[<ore:gearSignalum>, <ore:dustMana>], 
+		[<thermalfoundation:material:515>, <contenttweaker:mekanized_steel_plate>], 
+		[<thermalfoundation:material:515>, <ore:gearSignalum>]
+	]);
+	recipes.addShaped("ia_mekanical_core2", <contenttweaker:mekanical_core> * 2, [
+		[<ore:gearSignalum>, <ore:dustMana>], 
+		[<thermalfoundation:material:515>, <contenttweaker:meka_umbran>], 
+		[<thermalfoundation:material:515>, <ore:gearSignalum>]
+	]);
+	recipes.addShaped("ia_mekanical_core4", <contenttweaker:mekanical_core> * 4, [
+		[<ore:gearSignalum>, <contenttweaker:mana_wire>], 
+		[<thermalfoundation:material:515>, <contenttweaker:meka_umbran>], 
+		[<thermalfoundation:material:515>, <ore:gearSignalum>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<contenttweaker:mekanical_core> * 6],
+		[
+			<thermalfoundation:material:515>,
+			<ore:gearSignalum> * 2,
+			<contenttweaker:meka_umbran>,
+			<contenttweaker:mana_wire>
+		], <liquid:mekanized_steel> * 576, 
+		20, 256
+	);
+
+	mods.mekanism.compressor.addRecipe(<contenttweaker:tank>, <gas:hydrogen>, <contenttweaker:tank_hydrogen>);
+	mods.mekanism.compressor.addRecipe(<contenttweaker:tank>, <gas:oxygen>, <contenttweaker:tank_oxygen>);
+	mods.thermalexpansion.InductionSmelter.addRecipe(
+		<contenttweaker:tank_knallgas>, 
+		<contenttweaker:tank_oxygen>,
+		<contenttweaker:tank_hydrogen>,
+		12000
+	);
+	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:tank_knallgas> * 2, 
+        [
+            <contenttweaker:tank_oxygen>,
+		<contenttweaker:tank_hydrogen>
+        ], 32000
+    );
+
+	
+	recipes.addShaped("ia_impact_spreader", <contenttweaker:impact_spreader>, [
+		[null, <netherite:netheriteingot>, null], 
+		[<contenttweaker:eliamondin>, <thermalfoundation:material:512>, <contenttweaker:eliamondin>], 
+		[<mekanism:reinforcedalloy>, <contenttweaker:resonating_plate>, <mekanism:reinforcedalloy>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<contenttweaker:impact_spreader> * 2],
+		[
+			<netherite:netheriteingot>,
+			<contenttweaker:eliamondin>, <thermalfoundation:material:512>,
+			<mekanism:reinforcedalloy>, <contenttweaker:resonating_plate>
+		], null, 
+		20, 256
+	);
+
+	{//igniter	
+		recipes.addShaped("ia_igniter", <contenttweaker:igniter>, [
+			[<natura:flint_and_blaze>, null, <contenttweaker:tank_oxygen>], 
+			[null, <contenttweaker:carminium_ingot>, <contenttweaker:tank_oxygen>], 
+			[<contenttweaker:tank_knallgas>, <contenttweaker:osmiridium_support>, <contenttweaker:ra_burner>]
+		]);
+		/*recipes.addShaped("ia_igniter2", <contenttweaker:igniter> * 2, [
+			[<natura:flint_and_blaze>, null, <contenttweaker:tank_oxygen>], 
+			[null, <contenttweaker:carminium_ingot>, <contenttweaker:tank_oxygen>], 
+			[<alchemistry:compound:36>, <contenttweaker:osmiridium_support>, <contenttweaker:ra_burner>]
+		]);*/
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:igniter> * 4],
+			[
+				<natura:flint_and_blaze>, <contenttweaker:osmiridium_support>, <contenttweaker:ra_burner>,
+				<contenttweaker:carminium_ingot>, <alchemistry:compound:36> | <contenttweaker:tank_knallgas>
+			], null, 
+			20, 256
+		);
+	}
+
+	{//circuits <opencomputers:material:7>
+		infuser.removeRecipe(<mekanism:controlcircuit>);
+		infuser.addRecipe("REDSTONE", 40, <appliedenergistics2:material:24>, <mekanism:controlcircuit>);
+		
+
+		recipes.remove(<mekanism:controlcircuit:1>);
+		recipes.addShaped("ia_mek_circuit1", <mekanism:controlcircuit:1>, [
+			[<ore:alloyAdvanced>, <ore:circuitBasic>, <ore:alloyAdvanced>], 
+			[<ore:ingotRedstoneAlloy>, <opencomputers:material:8>, <ore:ingotRedstoneAlloy>], 
+			[<ore:alloyAdvanced>, <ore:circuitBasic>, <ore:alloyAdvanced>]
+		]);
+		recipes.remove(<mekanism:controlcircuit:2>);
+		recipes.addShaped("ia_mek_circuit2", <mekanism:controlcircuit:2>, [
+			[<ore:alloyElite>, <ore:circuitAdvanced>, <ore:alloyElite>], 
+			[<prodigytech:energion_dust>, <opencomputers:material:9>, <prodigytech:energion_dust>], 
+			[<ore:alloyElite>, <ore:circuitAdvanced>, <ore:alloyElite>]
+		]);
+		recipes.remove(<mekanism:controlcircuit:3>);
+		recipes.addShaped("ia_mek_circuit3", <mekanism:controlcircuit:3>, [
+			[<ore:alloyUltimate>, <ore:circuitElite>, <ore:alloyUltimate>], 
+			[<ore:slimecrystalPink>, <contenttweaker:advanced_circuit_plate>, <ore:slimecrystalPink>], 
+			[<ore:alloyUltimate>, <ore:circuitElite>, <ore:alloyUltimate>]
+		]);
+
+		recipes.addShaped("ia_cheesy_circuit", <contenttweaker:cheesy_circuit>, [
+			[<contenttweaker:cheesy_capacitor>, <contenttweaker:cheesy_capacitor>, <contenttweaker:cheesy_capacitor>],
+			[<contenttweaker:cheesy_capacitor>, <mekanism:controlcircuit:3>, <contenttweaker:cheesy_capacitor>],
+			[<contenttweaker:cheesy_capacitor>, <contenttweaker:cheesy_capacitor>, <contenttweaker:cheesy_capacitor>]
+		]);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:cheesy_circuit>],
+			[<mekanism:controlcircuit:3>, <contenttweaker:cheesy_capacitor> * 4],
+			<liquid:cheese> * 1000,
+			10, 128
+		);
+	}
+}
+{//AA
+	{//filters
+		recipes.addShaped("ia_filter_empty", <contenttweaker:filter_empty> * 3, [
+			[<contenttweaker:watertight_steel_rod>, <exnihilocreatio:item_mesh:3>, <contenttweaker:watertight_steel_rod>], 
+			[<thermalfoundation:material:832>, <exnihilocreatio:item_mesh:3>, <thermalfoundation:material:832>], 
+			[<contenttweaker:watertight_steel_rod>, <exnihilocreatio:item_mesh:3>, <contenttweaker:watertight_steel_rod>]
+		]);
+		scripts.content_machines.addAssemblerRecipe(
+			[<contenttweaker:filter_empty>],
+			[<exnihilocreatio:item_mesh:3>, <thermalfoundation:material:832>], <liquid:watertight_steel> * 288,
+			20, 1000
+		);
+
+
+		recipes.addShapeless("ia_filter_charcoal1", <contenttweaker:filter_charcoal>, [
+			<contenttweaker:filter_empty>, 
+			<contenttweaker:activated_carbon>, <thermalfoundation:material:769>, <thermalfoundation:material:769>, 
+			<thermalfoundation:material:769>, <thermalfoundation:material:769>, <thermalfoundation:material:769>, 
+			<thermalfoundation:material:769>, <thermalfoundation:material:769>
+		]);
+		recipes.addShapeless("ia_filter_charcoal2", <contenttweaker:filter_charcoal>, [
+			<contenttweaker:filter_empty>, 
+			<contenttweaker:activated_carbon>, <thermalfoundation:material:769>, <thermalfoundation:material:769>, 
+			<contenttweaker:soot>, <prodigytech:ash>
+		]);
+
+		recipes.addShapeless("ia_filter_solar", <contenttweaker:filter_solar>, [
+			<contenttweaker:filter_empty>, 
+			<projectred-core:resource_item:341>, <projectred-core:resource_item:341>, <projectred-core:resource_item:341>, 
+			<quantumflux:graphitedust> | <contenttweaker:solar_potion_zinc_ingot> | <contenttweaker:ambrosium_thing>
+		]);
+	}
+
 }
 
 
@@ -383,54 +566,18 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		]);
 	}	
 
-	{//mek circuits
-		infuser.removeRecipe(<mekanism:controlcircuit>);
-		infuser.addRecipe("REDSTONE", 40, <appliedenergistics2:material:24>, <mekanism:controlcircuit>);
-		infuser.addRecipe("REDSTONE", 40, <immersiveengineering:material:27>, <mekanism:controlcircuit>);
-		
-
-		recipes.remove(<mekanism:controlcircuit:1>);
-		recipes.addShaped("ia_mek_circuit1", <mekanism:controlcircuit:1>, [
-			[<ore:alloyAdvanced>, <ore:circuitBasic>, <ore:alloyAdvanced>], 
-			[<ore:ingotRedstoneAlloy>, <prodigytech:circuit_refined>, <ore:ingotRedstoneAlloy>], 
-			[<ore:alloyAdvanced>, <ore:circuitBasic>, <ore:alloyAdvanced>]
-		]);
-		recipes.remove(<mekanism:controlcircuit:2>);
-		recipes.addShaped("ia_mek_circuit2", <mekanism:controlcircuit:2>, [
-			[<ore:alloyElite>, <ore:circuitAdvanced>, <ore:alloyElite>], 
-			[<prodigytech:energion_dust>, <immersiveengineering:material:27>, <prodigytech:energion_dust>], 
-			[<ore:alloyElite>, <ore:circuitAdvanced>, <ore:alloyElite>]
-		]);
-		recipes.remove(<mekanism:controlcircuit:3>);
-		recipes.addShaped("ia_mek_circuit3", <mekanism:controlcircuit:3>, [
-			[<ore:alloyUltimate>, <ore:circuitElite>, <ore:alloyUltimate>], 
-			[<ore:slimecrystalPink>, <contenttweaker:advanced_circuit_plate>, <ore:slimecrystalPink>], 
-			[<ore:alloyUltimate>, <ore:circuitElite>, <ore:alloyUltimate>]
-		]);
-
-		recipes.addShaped("ia_cheesy_circuit", <contenttweaker:cheesy_circuit>, [
-			[<contenttweaker:cheesy_capacitor>, <contenttweaker:cheesy_capacitor>, <contenttweaker:cheesy_capacitor>],
-			[<contenttweaker:cheesy_capacitor>, <mekanism:controlcircuit:3>, <contenttweaker:cheesy_capacitor>],
-			[<contenttweaker:cheesy_capacitor>, <contenttweaker:cheesy_capacitor>, <contenttweaker:cheesy_capacitor>]
-		]);
-		scripts.content_machines.addAssemblerRecipe(
-			[<contenttweaker:cheesy_circuit>],
-			[<mekanism:controlcircuit:3>, <contenttweaker:cheesy_capacitor> * 4],
-			<liquid:cheese> * 1000,
-			10, 128
-		);
-	}
+	
 	{//quantum circuit
 		recipes.remove(<quantumflux:craftingpiece:5>);
 		recipes.addShaped("ia_advanced_circuit2", <quantumflux:craftingpiece:5>, [
-			[<ore:circuitUltimate>, <prodigytech:circuit_perfected>, <ore:circuitUltimate>], 
+			[<ore:circuitUltimate>, <opencomputers:material:9>, <ore:circuitUltimate>], 
 			[<contenttweaker:fluxed_processor>, <contenttweaker:tube_computer>, <contenttweaker:fluxed_processor>], 
-			[<ore:circuitUltimate>, <prodigytech:circuit_perfected>, <ore:circuitUltimate>]
+			[<ore:circuitUltimate>, <opencomputers:material:9>, <ore:circuitUltimate>]
 		]);
 		scripts.content_machines.addAssemblerRecipe(
 			[<quantumflux:craftingpiece:5> * 4],
 			[
-				<prodigytech:circuit_perfected> * 2,
+				<opencomputers:material:9> * 2,
 				<contenttweaker:fluxed_processor> * 2, 
 				<contenttweaker:tube_computer>,
 				<ore:circuitUltimate> * 4,
@@ -445,14 +592,14 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		);
 
 		recipes.addShaped("ia_advanced_circuit", <quantumflux:craftingpiece:5> * 2, [
-			[<contenttweaker:cheesy_circuit>, <prodigytech:circuit_perfected>, <contenttweaker:cheesy_circuit>], 
+			[<contenttweaker:cheesy_circuit>, <opencomputers:material:9>, <contenttweaker:cheesy_circuit>], 
 			[<contenttweaker:fluxed_processor>, <contenttweaker:tube_computer>, <contenttweaker:fluxed_processor>], 
-			[<contenttweaker:cheesy_circuit>, <prodigytech:circuit_perfected>, <contenttweaker:cheesy_circuit>]
+			[<contenttweaker:cheesy_circuit>, <opencomputers:material:9>, <contenttweaker:cheesy_circuit>]
 		]);
 		scripts.content_machines.addAssemblerRecipe(
 			[<quantumflux:craftingpiece:5> * 6],
 			[
-				<prodigytech:circuit_perfected> * 2,
+				<opencomputers:material:9> * 2,
 				<contenttweaker:fluxed_processor> * 2, 
 				<contenttweaker:tube_computer>,
 				<contenttweaker:cheesy_circuit> * 4,
@@ -628,15 +775,11 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 	);
 }
 {//burner
-	recipes.addShaped("ia_ra_burner", <contenttweaker:ra_burner>, [
-		[null, <atum:heart_of_ra>, null], 
-		[<contenttweaker:mekanized_steel_rod>, <contenttweaker:cacti_foci>, <contenttweaker:mekanized_steel_rod>], 
-		[<projectred-transmission:wire>, <extrautils2:machine>, <projectred-transmission:wire>]
-	]);
+	
 	recipes.addShaped("ia_crucible", <contenttweaker:crucible>, [
 		[<contenttweaker:high_heat_glass>, <exnihilocreatio:block_crucible:1>, <contenttweaker:high_heat_glass>], 
 		[<contenttweaker:tungsten_plate>, <enderio:block_tank:1>, <contenttweaker:tungsten_plate>], 
-		[<contenttweaker:chrome_block>, <contenttweaker:ra_burner>, <contenttweaker:chrome_block>]
+		[<contenttweaker:chrome_block>, <contenttweaker:igniter>, <contenttweaker:chrome_block>]
 	]);
 }
 
@@ -689,36 +832,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 }
 
 {//gearboxes and motors
-	recipes.addShaped("ia_mekanical_core1", <contenttweaker:mekanical_core>, [
-		[<ore:gearSignalum>, <ore:dustMana>], 
-		[<thermalfoundation:material:515>, <contenttweaker:mekanized_steel_plate>], 
-		[<thermalfoundation:material:515>, <ore:gearSignalum>]
-	]);
-	recipes.addShaped("ia_mekanical_core2", <contenttweaker:mekanical_core> * 2, [
-		[<ore:gearSignalum>, <ore:dustMana>], 
-		[<thermalfoundation:material:515>, <contenttweaker:meka_umbran>], 
-		[<thermalfoundation:material:515>, <ore:gearSignalum>]
-	]);
-	/*recipes.addShaped("ia_mekanical_core3", <contenttweaker:mekanical_core> * 2, [
-		[<ore:gearSignalum>, <contenttweaker:mana_wire>], 
-		[<thermalfoundation:material:515>, <contenttweaker:mekanized_steel_plate>], 
-		[<thermalfoundation:material:515>, <ore:gearSignalum>]
-	]);*/
-	recipes.addShaped("ia_mekanical_core4", <contenttweaker:mekanical_core> * 4, [
-		[<ore:gearSignalum>, <contenttweaker:mana_wire>], 
-		[<thermalfoundation:material:515>, <contenttweaker:meka_umbran>], 
-		[<thermalfoundation:material:515>, <ore:gearSignalum>]
-	]);
-	scripts.content_machines.addAssemblerRecipe(
-		[<contenttweaker:mekanical_core> * 6],
-		[
-			<thermalfoundation:material:515>,
-			<ore:gearSignalum> * 2,
-			<contenttweaker:meka_umbran>,
-			<contenttweaker:mana_wire>
-		], <liquid:mekanized_steel> * 576, 
-		20, 256
-	);
+	
 
 
 
@@ -1178,7 +1292,7 @@ mods.actuallyadditions.Empowerer.addRecipe(
 	mods.enderio.SliceNSplice.addRecipe(<contenttweaker:creeper_component>, 
 		[
 			<contenttweaker:electric_manyullyn_rod>, <minecraft:skull:4>, <contenttweaker:electric_manyullyn_rod>,
-			<contenttweaker:thermal_rod>, <mekanism:controlcircuit:3>, <contenttweaker:thermal_rod>
+			<contenttweaker:thermal_rod>, <contenttweaker:tank_knallgas>, <contenttweaker:thermal_rod>
 		], 30000, 0
 	);
 
@@ -1532,7 +1646,7 @@ mods.mekanism.reaction.addRecipe(
 			<contenttweaker:noble_gases_ingot> * 12,
 			<quantumflux:craftingpiece:2> * 6,
 			<contenttweaker:lens_out>
-		], null, 20, 1000
+		], <liquid:mercury> * 1000, 20, 1000
 	);
 }
 
@@ -1971,7 +2085,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_pipe>, [
 }
 
 {//rocket
-	mods.mekanism.compressor.addRecipe(<contenttweaker:tank>, <gas:oxygen>, <contenttweaker:tank_oxygen>);
+	
 
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:rocket_engine>], 

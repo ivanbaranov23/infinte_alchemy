@@ -1,7 +1,7 @@
 {
 	title: "Other natura saplings",
 	icon: "natura:nether_sapling 1 1",
-	x: -3.0d,
+	x: -4.0d,
 	y: 0.0d,
 	text: [
 		"Quite rare as the ground is filled with various crap."

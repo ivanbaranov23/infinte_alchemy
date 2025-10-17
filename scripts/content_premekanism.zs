@@ -6,6 +6,8 @@ import mods.contenttweaker.Color;
 VanillaFactory.createItem("naoh").register(); //1 dust = 250
 VanillaFactory.createFluid("naoh", Color.fromHex("eae553")).register();
 
+VanillaFactory.createFluid("phosphoric_acid", Color.fromHex("b53a4c")).register();
+
 VanillaFactory.createFluid("nitrogen", Color.fromHex("476678")).register();
 VanillaFactory.createFluid("ammonia", Color.fromHex("2f3e58")).register();
 VanillaFactory.createFluid("nitric_acid", Color.fromHex("55747d")).register();

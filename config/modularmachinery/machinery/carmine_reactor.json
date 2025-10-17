@@ -496,7 +496,8 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "betternether:cincinnasite_wall@0"
+                "betternether:cincinnasite_wall@0",
+                "modularmachinery:blockparallelcontroller"
             ]
         },
         {

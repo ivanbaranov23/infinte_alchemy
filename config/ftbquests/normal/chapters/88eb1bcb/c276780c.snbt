@@ -1,0 +1,25 @@
+{
+	x: 2.0d,
+	y: -1.0d,
+	text: [
+		"Transmitter will power a few machines around it. 80 rft is not a lot but early game is alright"
+	],
+	dependencies: [
+		"be945a5b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "8d4bc34a",
+		type: "item",
+		items: [{
+			item: "extrautils2:powertransmitter"
+		}]
+	},
+	{
+		uid: "279619e5",
+		type: "item",
+		items: [{
+			item: "extrautils2:powerbattery"
+		}]
+	}]
+}

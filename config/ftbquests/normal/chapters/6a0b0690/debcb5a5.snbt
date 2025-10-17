@@ -1,6 +1,9 @@
 {
 	x: 2.0d,
 	y: -1.0d,
+	text: [
+		"Dropped by liveroots found underground"
+	],
 	dependencies: [
 		"51fd7c52"
 	],

@@ -3,9 +3,9 @@
 	y: 5.0d,
 	text: [
 		"Made with either natura sticks or treated sticks.",
-		"You can get pam crops with these, in particular spices for cooking meat.",
+		"You can get pam crops with these, in particular, spices for cooking meat.",
 		"",
-		"Stats are limited and agricraft material crops are disabled."
+		"Crop stats are limited and agricraft material crops are disabled."
 	],
 	dependencies: [
 		"f8152e75"

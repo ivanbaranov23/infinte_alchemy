@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: -7.0d,
+	dependencies: [
+		"dad92572"
+	],
+	tasks: [{
+		uid: "bce3d17a",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:tin_seeds"
+		}]
+	}]
+}

@@ -2,6 +2,8 @@ import crafttweaker.item.IItemStack;
 
 
 function addSeeds(ess as IItemStack, seeds as IItemStack, energy_m as int){
+    recipes.addShapeless("myst_reset_argicraft_data_" ~ seeds.name, seeds, [seeds]);
+
     mods.thermalexpansion.Insolator.addRecipe(
         ess,
         seeds, <contenttweaker:fertilizer1>, 10000 * energy_m,
@@ -37,6 +39,8 @@ function addSeeds(ess as IItemStack, seeds as IItemStack, energy_m as int){
         seeds, <contenttweaker:fertilizer7>, 30000 * energy_m,
         seeds, 110, 1000
     );
+
+    
 }
 
 
@@ -47,7 +51,16 @@ addSeeds(<mysticalagriculture:wood_essence>, <mysticalagriculture:wood_seeds>, 1
 addSeeds(<mysticalagriculture:water_essence>, <mysticalagriculture:water_seeds>, 1);
 addSeeds(<mysticalagriculture:ice_essence>, <mysticalagriculture:ice_seeds>, 1);
 
-
+//t1 metals
+addSeeds(<mysticalagriculture:iron_essence>, <mysticalagriculture:iron_seeds>, 2);
+addSeeds(<mysticalagriculture:copper_essence>, <mysticalagriculture:copper_seeds>, 2);
+addSeeds(<mysticalagriculture:tin_essence>, <mysticalagriculture:tin_seeds>, 2);
+addSeeds(<mysticalagriculture:nickel_essence>, <mysticalagriculture:nickel_seeds>, 2);
+addSeeds(<mysticalagriculture:aluminum_essence>, <mysticalagriculture:aluminum_seeds>, 2);
+addSeeds(<mysticalagriculture:zinc_essence>, <mysticalagriculture:zinc_seeds>, 2);
+addSeeds(<mysticalagriculture:cobalt_essence>, <mysticalagriculture:cobalt_seeds>, 2);
+addSeeds(<mysticalagriculture:ardite_essence>, <mysticalagriculture:ardite_seeds>, 2);
+addSeeds(<mysticalcreations:antimony_essence>, <mysticalcreations:antimony_seeds>, 2);
 
 addSeeds(<mysticalagriculture:silicon_essence>, <mysticalagriculture:silicon_seeds>, 2);
 

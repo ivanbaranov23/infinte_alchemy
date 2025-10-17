@@ -119,8 +119,6 @@ mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 1000, <liquid
 mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 2000, <liquid:milk> * 2000, [<roots:terra_moss>, <ore:dyeGreen>], 2000);
 mods.alchemistry.Evaporator.addRecipe(<enderio:item_material:48>, <liquid:organic_green> * 250);
 
-//alt t2 ore gen
-
 //flolit
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:flolit_dust>, <contenttweaker:flolit>, <liquid:ferramic>, 288, true);
 mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:flolit_dust>, <contenttweaker:flolit>, <liquid:ferramic> * 144, 8000);

@@ -1,6 +1,9 @@
 {
 	x: -4.0d,
 	y: -4.0d,
+	text: [
+		"Used for staffs. Staffes? Staves? Staff-multple."
+	],
 	dependencies: [
 		"024cb0bc",
 		"39cd0b94"

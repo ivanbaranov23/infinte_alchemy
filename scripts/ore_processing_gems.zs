@@ -283,3 +283,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
 //silicon
 mods.mekanism.crusher.removeRecipe(<appliedenergistics2:material:5>);
+
+{//geode
+    
+}

@@ -1,0 +1,22 @@
+{
+	x: 1.0d,
+	y: -4.0d,
+	text: [
+		"Needed for solder. Can be obtained as byproduct from copper"
+	],
+	dependencies: [
+		"b0b1d2e4"
+	],
+	tasks: [{
+		uid: "478c307d",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 51"
+		}]
+	}],
+	rewards: [{
+		uid: "0a1f7ec0",
+		type: "item",
+		item: "contenttweaker:antimony_block"
+	}]
+}

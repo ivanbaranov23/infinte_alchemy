@@ -3,23 +3,23 @@ import crafttweaker.item.IIngredient;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.item.WeightedItemStack;
 
-recipes.addShaped("ia_pot_seeds", <contenttweaker:potential_seeds>, [
+recipes.addShaped("ia_pot_seeds", <contenttweaker:potential_seeds> * 3, [
     [<contenttweaker:burn_powder> | <tconstruct:firewood:1>, <contenttweaker:entangled_particles>, <contenttweaker:burn_powder> | <tconstruct:firewood:1>],
     [<twilightforest:liveroot>, <mowziesmobs:foliaath_seed>, <twilightforest:liveroot>],
     [<contenttweaker:burn_powder> | <tconstruct:firewood:1>, <contenttweaker:entangled_particles>, <contenttweaker:burn_powder> | <tconstruct:firewood:1>]
 ]);
 <contenttweaker:potential_seeds>.addTooltip("Too potential to use");
 
-mods.enderio.AlloySmelter.addRecipe(<contenttweaker:base_seeds> * 2, [
+mods.enderio.AlloySmelter.addRecipe(<contenttweaker:base_seeds> * 4, [
     <contenttweaker:potential_seeds> * 2,
     <actuallyadditions:item_crystal_empowered:5> * 64,
     <twilightforest:block_storage:2> * 32
-]);
-mods.enderio.AlloySmelter.addRecipe(<contenttweaker:base_seeds> * 3, [
+], 100 * 1000);
+mods.enderio.AlloySmelter.addRecipe(<contenttweaker:base_seeds> * 6, [
     <contenttweaker:potential_seeds> * 2,
     <actuallyadditions:item_crystal_empowered:5> * 64,
     <extendedcrafting:singularity_custom:11>
-]);
+], 100 * 1000);
 mods.aether_legacy.Enchanter.registerEnchantment(<contenttweaker:base_seeds>, <mysticalagriculture:crafting:16>, 20 * 60 * 5);
 <mysticalagriculture:crafting:16>.addTooltip("5 minutes in the altar");
 
@@ -40,9 +40,47 @@ var tier_seed as IItemStack[int] = {
     1: <mysticalagriculture:crafting:17>,
     2: <mysticalagriculture:crafting:18>
 };
-var seed_items as IItemStack[][IItemStack][string] = {
-    TEAlloyer: {
-        <mysticalagriculture:silicon_seeds>: [<appliedenergistics2:material:20> * 64],
+var tier_power as int[int] = {
+    0: 10000,
+    1: 100000,
+    2: 1000000,
+    3: 10000000,
+    4: 100000000,
+    5: 1000000000,
+    6: 10000000000
+};
+var tier_fluid as ILiquidStack[][int] = {
+    0: [],
+    1: [<liquid:dirt> * 1000],
+    2: [<liquid:dirt> * 2000],
+    3: [<liquid:dirt> * 4000],
+    4: [<liquid:dirt> * 12000],
+    5: [<liquid:dirt> * 32000],
+    6: [<liquid:dirt> * 128000],
+    7: []
+};
+var seed_items as IItemStack[][IItemStack][int] = {
+    1: {
+        <mysticalagriculture:stone_seeds>: [<extendedcrafting:singularity_custom:2> * 4],
+        <mysticalagriculture:dirt_seeds>: [
+            <biomesoplenty:dirt> * 64,
+            <biomesoplenty:dirt:1> * 64,
+            <biomesoplenty:dirt:2> * 64,
+            <minecraft:dirt:1> * 64
+        ]
+    },
+    2: {
+        <mysticalagriculture:iron_seeds>: [<extendedcrafting:singularity:1> * 4, <harvestcraft:ironbrewitem> * 16],
+        <mysticalagriculture:copper_seeds>: [<extendedcrafting:singularity:17> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:copper_potato> * 64],
+        <mysticalagriculture:tin_seeds>: [<extendedcrafting:singularity:18> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:tinley> * 64],
+        <mysticalagriculture:nickel_seeds>: [<extendedcrafting:singularity:25> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:nickel_oxide> * 64],
+        <mysticalagriculture:aluminum_seeds>: [<extendedcrafting:singularity:16> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:ferramic_base> * 64],
+        <mysticalagriculture:zinc_seeds>: [<extendedcrafting:singularity:20> * 4, <mysticalagriculture:iron_essence> * 64, <thermalexpansion:florb>.withTag({Fluid: "andesite"}) * 64],
+        <mysticalagriculture:cobalt_seeds>: [<extendedcrafting:singularity:65> * 4, <mysticalagriculture:iron_essence> * 64, <mysticalagriculture:nether_essence> * 64],
+        <mysticalagriculture:ardite_seeds>: [<extendedcrafting:singularity:64> * 4, <mysticalagriculture:iron_essence> * 64, <mysticalagriculture:nether_essence> * 64],
+        <mysticalcreations:antimony_seeds>: [<extendedcrafting:singularity_custom:73> * 4, <mysticalagriculture:iron_essence> * 64],
+
+        <mysticalagriculture:silicon_seeds>: [<projectred-core:resource_item:301> * 64],
 
     }
 };
@@ -66,18 +104,22 @@ var seed_items as IItemStack[][IItemStack][string] = {
     );
 }
 
-{//TEAlloyer
-    for seed,ing in seed_items.TEAlloyer{
-        mods.thermalexpansion.InductionSmelter.addRecipe(
-            seed, 
-            <mysticalagriculture:crafting:18>, ing[0], 
-            100000
-        );
-    }
-    /*mods.thermalexpansion.InductionSmelter.addRecipe(
-        <mysticalagriculture:silicon_seeds>, 
-        <mysticalagriculture:crafting:18>, IItemStack secondaryInput, 
-        int energy_infuser
-    );*/
+for tier in seed_items{
+    for seed,ing in seed_items[tier]{
+        var rec = mods.modularmachinery.RecipeBuilder.newBuilder("myst_agri_" ~ tier ~ "_" ~ seed.name, "plant_station", 10 * 20);
+        rec.addEnergyPerTickInput(tier_power[tier]);
 
+        rec.addItemOutput(seed);
+        
+
+        rec.addItemInput(tier_seed[tier]);
+        for i in ing{
+            rec.addItemInput(i);
+        }
+        
+        for fl in tier_fluid[tier]
+            rec.addFluidInput(fl);
+
+        rec.build();
+    }
 }

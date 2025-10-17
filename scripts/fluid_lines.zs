@@ -518,7 +518,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 	//quicksand
 	Vat.addRecipe(
 		<liquid:sand> * 1000, 2.0, <liquid:ash_solution> * 1000, 
-		[<biomesoplenty:gem:3>], [1.0], 
+		[<biomesoplenty:gem:3>, <mysticalagriculture:stone_essence>], [1.0, 1.5], 
 		[<atum:fertile_soil_pile>], [1.0], 
 		5000
 	);
@@ -810,32 +810,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 	);
 }
 
-{//filters
-	recipes.addShaped("ia_filter_empty", <contenttweaker:filter_empty> * 3, [
-		[<contenttweaker:watertight_steel_rod>, <exnihilocreatio:item_mesh:3>, <contenttweaker:watertight_steel_rod>], 
-		[<thermalfoundation:material:832>, <exnihilocreatio:item_mesh:3>, <thermalfoundation:material:832>], 
-		[<contenttweaker:watertight_steel_rod>, <exnihilocreatio:item_mesh:3>, <contenttweaker:watertight_steel_rod>]
-	]);
 
-
-	recipes.addShapeless("ia_filter_charcoal1", <contenttweaker:filter_charcoal>, [
-		<contenttweaker:filter_empty>, 
-		<thermalfoundation:material:769>, <thermalfoundation:material:769>, <thermalfoundation:material:769>, 
-		<thermalfoundation:material:769>, <thermalfoundation:material:769>, <thermalfoundation:material:769>, 
-		<thermalfoundation:material:769>, <thermalfoundation:material:769>
-	]);
-	recipes.addShapeless("ia_filter_charcoal2", <contenttweaker:filter_charcoal>, [
-		<contenttweaker:filter_empty>, 
-		<thermalfoundation:material:769>, <thermalfoundation:material:769>, <thermalfoundation:material:769>, 
-		<contenttweaker:soot>, <prodigytech:ash>
-	]);
-
-	recipes.addShapeless("ia_filter_solar", <contenttweaker:filter_solar>, [
-		<contenttweaker:filter_empty>, 
-		<projectred-core:resource_item:341>, <projectred-core:resource_item:341>, <projectred-core:resource_item:341>, 
-		<quantumflux:graphitedust> | <contenttweaker:solar_potion_zinc_ingot> | <contenttweaker:ambrosium_thing>
-	]);
-}
 
 //air lines
 function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as int, cloudout as int, time_sec as int, energy as int, dim as int){

@@ -103,12 +103,12 @@ mods.thermalexpansion.InductionSmelter.addRecipe(
 
 furnace.remove(<betternether:quartz_glass>);
 recipes.addShaped("ia_quartz_glass1", <betternether:quartz_glass>, [
-	[null, <ore:crystalPureNetherQuartz>, <quark:glass_shards>], 
+	[null, <ore:crystalPureNetherQuartz>, <taiga:dilithium_crystal>], 
 	[<ore:crystalPureNetherQuartz>, <thermalfoundation:glass:2>, <ore:crystalPureNetherQuartz>], 
-	[<quark:glass_shards>, <ore:crystalPureNetherQuartz>, null]
+	[<taiga:dilithium_crystal>, <ore:crystalPureNetherQuartz>, null]
 ]);
 recipes.addShaped("ia_quartz_glass2", <betternether:quartz_glass> * 3, [
-	[<contenttweaker:research_glass_making>.reuse(), <ore:crystalPureCertusQuartz>, <quark:glass_shards>], 
+	[<contenttweaker:research_glass_making>.reuse(), <ore:crystalPureCertusQuartz>, <taiga:dilithium_crystal>], 
 	[<ore:crystalPureNetherQuartz>, <thermalfoundation:glass:2>, <ore:crystalPureNetherQuartz>], 
-	[<quark:glass_shards>, <ore:crystalPureCertusQuartz>, null]
+	[<taiga:dilithium_crystal>, <ore:crystalPureCertusQuartz>, null]
 ]);

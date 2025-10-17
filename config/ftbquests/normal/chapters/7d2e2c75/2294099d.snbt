@@ -1,7 +1,7 @@
 {
 	icon: "mekanism:basicblock2 1 1",
 	x: 20.0d,
-	y: 8.0d,
+	y: 7.0d,
 	dependencies: [
 		"db272431",
 		"3c118093"

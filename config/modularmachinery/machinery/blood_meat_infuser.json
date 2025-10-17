@@ -176,7 +176,8 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "thermalfoundation:glass_alloy@5"
+                "thermalfoundation:glass_alloy@5",
+                "modularmachinery:blockparallelcontroller"
             ]
         },
         {

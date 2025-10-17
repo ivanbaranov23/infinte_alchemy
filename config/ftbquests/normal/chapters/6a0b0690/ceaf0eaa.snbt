@@ -1,4 +1,5 @@
 {
+	icon: "modularmachinery:tar_pit_controller",
 	x: 1.0d,
 	y: 4.0d,
 	text: [
@@ -7,6 +8,7 @@
 	dependencies: [
 		"5d2a4453"
 	],
+	optional: true,
 	tasks: [{
 		uid: "8222bc96",
 		type: "item",

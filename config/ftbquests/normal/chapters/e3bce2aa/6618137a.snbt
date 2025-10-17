@@ -2,7 +2,7 @@
 	x: 7.0d,
 	y: 7.0d,
 	text: [
-		""
+		"Meat free meat dishes"
 	],
 	dependencies: [
 		"0e347247"

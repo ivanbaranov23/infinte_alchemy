@@ -46,10 +46,12 @@ addRecycle(<modularmachinery:research_station_controller>, [
 ]);
 recipes.addShaped("mm_gp_gen_controller", <modularmachinery:gp_gen_controller>, [
 	[<contenttweaker:lapis_tile>, <immersiveengineering:metal_decoration0:6>, <contenttweaker:lapis_tile>], 
-	[<moreplates:enchanted_plate>, <thermalexpansion:frame:64>, <moreplates:enchanted_plate>], 
+	[<contenttweaker:resonating_plate>, <thermalexpansion:frame:64>, <contenttweaker:resonating_plate>], 
 	[<contenttweaker:lapis_tile>, <immersiveengineering:metal_decoration0:6>, <contenttweaker:lapis_tile>]
 ]);
-
+addRecycle(<modularmachinery:gp_gen_controller>, [
+	<thermalexpansion:frame:64>, <contenttweaker:resonating_plate> * 2, <immersiveengineering:metal_decoration0:6> * 2, <contenttweaker:lapis_tile> * 4
+]);
 
 //TE
 

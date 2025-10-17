@@ -8,7 +8,8 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "appliedenergistics2:tiny_tnt@0"
+                "appliedenergistics2:tiny_tnt@0",
+                "modularmachinery:blockparallelcontroller"
             ]
         },
         {

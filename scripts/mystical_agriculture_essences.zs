@@ -39,6 +39,7 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
         150: {
             <mysticalagriculture:cobalt_essence> * 16: <netherendingores:ore_other_1:4>,
             <mysticalagriculture:ardite_essence> * 16: <netherendingores:ore_other_1:2>,
+            <mysticalcreations:antimony_essence> * 16: <contenttweaker:antimony_ore>,
 
             <mysticalagriculture:redstone_essence> * 12: <minecraft:redstone_ore>,
             <mysticalagriculture:electrotine_essence> * 12: <contenttweaker:electrotine_ore>,
@@ -147,21 +148,35 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
     ]);
 }
 
-addEssenceRec_1(<mysticalagriculture:stone_essence>, <minecraft:stone> * 4);
+//addEssenceRec_1(<mysticalagriculture:stone_essence>, <minecraft:stone> * 4);
 
 {//1
     //stone
-    infuser.addRecipe("FUNGI", 10, <mysticalagriculture:stone_essence>, <minecraft:stone> * 2);
+    infuser.addRecipe("FUNGI", 5, <mysticalagriculture:stone_essence>, <minecraft:stone> * 4);
+    
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:concrete> * 150, <mysticalagriculture:stone_essence>, 2000);
     //dirt
-    infuser.addRecipe("FUNGI", 10, <mysticalagriculture:dirt_essence>, <minecraft:dirt> * 2);
+    infuser.addRecipe("FUNGI", 5, <mysticalagriculture:dirt_essence>, <minecraft:dirt> * 4);
     addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <minecraft:grass> * 6, <deepmoblearning:living_matter_overworldian>);
     addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <atum:coin_dirty> * 4, <thermalfoundation:material:1>);
     addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <twilightforest:uberous_soil> * 4, <deepmoblearning:living_matter_twilight>);
     addEssenceRec_1(<mysticalagriculture:dirt_essence>, <atum:fertile_soil_pile> * 3, <deepmoblearning:living_matter_atum>);
+
+    addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <biomesoplenty:dirt> * 12, <biomesoplenty:dirt>);
+    addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <biomesoplenty:dirt:1> * 12, <biomesoplenty:dirt:1>);
+    addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <biomesoplenty:dirt:2> * 12, <biomesoplenty:dirt:2>);
+    addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <minecraft:dirt:1> * 12, <minecraft:dirt:1>);
+    addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <tconstruct:slime_dirt> * 6, <minecraft:slime_ball>);
+    addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <tconstruct:slime_dirt:1> * 6, <tconstruct:edible:1>);
+    addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <tconstruct:slime_dirt:2> * 6, <tconstruct:edible:2>);
+    addEssenceRec_plus(<mysticalagriculture:dirt_essence>, <tconstruct:slime_dirt:3> * 6, <tconstruct:edible:4>);
+
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:dirt> * 500, <mysticalagriculture:dirt_essence>, 2000);
     //
 }
-
-infuser.addRecipe("FUNGI", 10, <mysticalagriculture:silicon_essence> * 2, <appliedenergistics2:material:5>);
-addEssenceRec_plus(<mysticalagriculture:silicon_essence>, <atum:khnumite> * 4, <deepmoblearning:living_matter_atum>);
-
+{//2
+    infuser.addRecipe("FUNGI", 10, <mysticalagriculture:silicon_essence>, <appliedenergistics2:material:5> * 2);
+    addEssenceRec_plus(<mysticalagriculture:silicon_essence>, <atum:khnumite> * 4, <deepmoblearning:living_matter_atum>);
+    
+}
 

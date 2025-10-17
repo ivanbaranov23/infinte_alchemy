@@ -129,7 +129,23 @@ Resonator.add(<projectred-core:resource_item:105>, <tconstruct:metal>, 2000);
 Resonator.add(<extrautils2:ingredients>, <erebus:materials:11>, 800);
 mods.extrautils2.Crusher.add(<minecraft:prismarine_crystals>, <minecraft:prismarine_shard>);
 
-
+{//rf energy
+	recipes.remove(<extrautils2:powertransmitter>);
+	recipes.addShaped("ia_xu_powertransmitter", <extrautils2:powertransmitter> * 2, [
+		[<enderio:item_endergy_conduit:3>, <extrautils2:ingredients>, <enderio:item_endergy_conduit:3>],
+		[<immersiveengineering:connector:5>, <extrautils2:decorativesolid:3>, <immersiveengineering:connector:5>],
+		[<enderio:item_endergy_conduit:3>, <extrautils2:ingredients>, <enderio:item_endergy_conduit:3>]
+	]);
+	scripts.content_machines.addAssemblerRecipe([<extrautils2:powertransmitter> * 6], [
+		<extrautils2:decorativesolid:3>, <extrautils2:ingredients>, <immersiveengineering:connector:5>, <enderio:item_endergy_conduit:3> * 2
+	], null, 20, 256);
+	recipes.remove(<extrautils2:powerbattery>);
+	recipes.addShaped("ia_xu_battery", <extrautils2:powerbattery>, [
+		[<extrautils2:decorativesolid:3>, <immersiveengineering:metal_decoration0:6>, <extrautils2:decorativesolid:3>], 
+		[<extrautils2:powertransmitter>, <extrautils2:ingredients:2>, <extrautils2:powertransmitter>], 
+		[<extrautils2:decorativesolid:3>, <immersiveengineering:metal_device0>, <extrautils2:decorativesolid:3>]
+	]);
+}
 
 {/////////////////////////////////////machines
 	//enchanter
@@ -388,12 +404,41 @@ mods.extendedcrafting.TableCrafting.addShapeless(0, <extrautils2:teleporter:1>,
 
 
 //ring
+recipes.remove(<extrautils2:chickenring>);
+recipes.addShaped("ia_chicken_ring", <extrautils2:chickenring>, [
+	[<ore:feather>, <immersiveengineering:material:1>, <ore:feather>],
+	[<immersiveengineering:material:1>, <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:chicken"}}), <immersiveengineering:material:1>],
+	[<extrautils2:ingredients>, <immersiveengineering:material:1>, <extrautils2:ingredients>]
+]);
+recipes.addShaped("ia_chicken_ring2", <extrautils2:chickenring>, [
+	[<ore:feather>, <immersiveengineering:material:1>, <ore:feather>],
+	[<immersiveengineering:material:1>, <enderio:item_soul_vial:1>.withTag({entityId: "minecraft:chicken"}).transformNew(function(item){
+		return <enderio:item_soul_vial>;
+	}), <immersiveengineering:material:1>],
+	[<extrautils2:ingredients>, <immersiveengineering:material:1>, <extrautils2:ingredients>]
+]);
+scripts.content_machines.addAssemblerRecipe(
+	[<extrautils2:chickenring>, <enderio:item_soul_vial>], 
+	[<enderio:item_soul_vial:1>.withTag({entityId: "minecraft:chicken"}), <ore:feather>, <immersiveengineering:material:1>, <extrautils2:ingredients>], null, 40, 1000
+);
+
 recipes.remove(<extrautils2:chickenring:1>);
 recipes.addShaped("ia_squid_ring", <extrautils2:chickenring:1>, [
 	[<moreplates:lead_stick>, <xreliquary:mob_ingredient:12>, <moreplates:lead_stick>],
 	[<contenttweaker:flapper>, <extrautils2:chickenring>, <contenttweaker:flapper>],
 	[<moreplates:lead_stick>, <extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}}), <moreplates:lead_stick>]
 ]);
+recipes.addShaped("ia_squid_ring2", <extrautils2:chickenring:1>, [
+	[<moreplates:lead_stick>, <xreliquary:mob_ingredient:12>, <moreplates:lead_stick>],
+	[<contenttweaker:flapper>, <extrautils2:chickenring>, <contenttweaker:flapper>],
+	[<moreplates:lead_stick>, <enderio:item_soul_vial:1>.withTag({entityId: "minecraft:squid"}).transformNew(function(item){
+		return <enderio:item_soul_vial>;
+	}), <moreplates:lead_stick>]
+]);
+scripts.content_machines.addAssemblerRecipe(
+	[<extrautils2:chickenring:1>, <enderio:item_soul_vial>], 
+	[<extrautils2:chickenring>, <enderio:item_soul_vial:1>.withTag({entityId: "minecraft:squid"}), <xreliquary:mob_ingredient:12>, <moreplates:lead_stick>, <contenttweaker:flapper>], null, 40, 1000
+);
 
 
 

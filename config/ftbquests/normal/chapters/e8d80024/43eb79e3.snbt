@@ -1,0 +1,15 @@
+{
+	x: 21.0d,
+	y: 0.0d,
+	dependencies: [
+		"157198e4"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fcdc919f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:void_stone"
+		}]
+	}]
+}

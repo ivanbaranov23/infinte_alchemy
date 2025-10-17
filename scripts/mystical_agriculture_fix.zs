@@ -122,3 +122,8 @@ recipes.addShaped("ia_seed_reprocessor", <mysticalagriculture:seed_reprocessor>,
     [<harvestcraft:roastedpumpkinseedsitem>, <extrautils2:machine>, <harvestcraft:roastedpumpkinseedsitem>], 
     [<thermalfoundation:material:322>, <harvestcraft:sunflowerseedsitem>, <thermalfoundation:material:322>]
 ]);
+
+//clusters
+recipes.addShapeless("ia_ma_nether_cluster", <mysticalagriculture:crafting:8>, [
+    <cathedral:cathedral_gargoyle_demon_netherbrick>, <betternether:cincinnasite_forged>, <betternether:egg_plant>, <biomesoplenty:terrarium:14>
+]);

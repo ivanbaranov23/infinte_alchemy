@@ -6,7 +6,7 @@
 		"Make blast furnace to make steel. Continue making steel, you'll need a mountain of the stuff"
 	],
 	dependencies: [
-		"6a23fe89"
+		"26314133"
 	],
 	tasks: [{
 		uid: "9057d565",

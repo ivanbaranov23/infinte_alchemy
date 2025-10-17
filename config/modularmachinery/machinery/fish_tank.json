@@ -4,9 +4,9 @@
     "color": "dce2f3",
     "modifiers": [
         {
-            "x": [-1, 1],
+            "x": [-1, 0, 1],
             "y": 0,
-            "z": [1, 3],
+            "z": [1, 2, 3],
             "elements": [
                 "contenttweaker:worm_glass@0"
             ],
@@ -136,7 +136,8 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "appliedenergistics2:quartz_glass@0"
+                "appliedenergistics2:quartz_glass@0",
+                "modularmachinery:blockparallelcontroller"
             ]
         },
         {

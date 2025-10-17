@@ -22,9 +22,9 @@ mods.immersiveengineering.Blueprint.addRecipe("structure",
 	]
 );
 
-recipes.addShaped("ia_watertight_lead_plate", <contenttweaker:watertight_lead_plate>, [
+recipes.addShaped("ia_watertight_lead_plate", <contenttweaker:watertight_lead_plate> * 2, [
     [<thermalfoundation:material:323>, <extrautils2:decorativesolid:7>, <thermalfoundation:material:323>], 
-    [<contenttweaker:compound_metal>, null, <contenttweaker:compound_metal>], 
+    [<contenttweaker:compound_metal>, <contenttweaker:resonating_plate>, <contenttweaker:compound_metal>], 
     [<thermalfoundation:material:323>, <extrautils2:decorativesolid:7>, <thermalfoundation:material:323>]
 ]);
 

@@ -48,11 +48,24 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
     );
 }
 
+recipes.addShaped("ia_entwood_heart", <contenttweaker:entwood_heart>, [
+    [<mysticalagriculture:nature_essence>, <contenttweaker:entwood_dust>, <contenttweaker:entwood_dust>], 
+    [<contenttweaker:entwood_dust>, <contenttweaker:power_core>, <contenttweaker:entwood_dust>], 
+    [<contenttweaker:entwood_dust>, <contenttweaker:entwood_dust>, <mysticalagriculture:nature_essence>]
+]);
+function addStaffFinish(staff as IItemStack){
+    recipes.addShapeless("ia_unbreak_" ~ staff.name, staff.withTag({Unbreakable: 1}), [
+        staff, <contenttweaker:entwood_heart>
+    ]);
+}
+
 {//clay
     addStaffHint(<contenttweaker:kaolin_clay_block>, <contenttweaker:staffwood_clay>, <contenttweaker:forest_clay_block>, true);
     addStaffHint(<minecraft:clay>, <contenttweaker:staffwood_clay>, <tconstruct:dried_clay>, true);
     addStaffHint(<excompressum:compressed_block:5>, <contenttweaker:staffwood_clay>, <atum:khnumite_raw>, true);
     addStaffHint(<atum:khnumite_block>, <contenttweaker:staffwood_clay>, <netherendingores:ore_other_1:6>, true);
+
+    addStaffFinish(<contenttweaker:staffwood_clay>);
 }
 
 
@@ -110,6 +123,8 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
         <biomesoplenty:gem_ore:4>,
         <contenttweaker:geode_ore>.withLore(["Fortune lvl >= 1"])
     ], true);
+
+    addStaffFinish(<contenttweaker:staffwood_mushroom>);
 }
 
 {//flower staff
@@ -144,6 +159,8 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
         <biomesoplenty:plant_0:12>,
         <twilightforest:steeleaf_ingot>
     ], false);
+
+    addStaffFinish(<contenttweaker:staffwood_flower>);
 }
 
 
@@ -154,6 +171,8 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
         [null, <contenttweaker:staffwood>, <contenttweaker:druid_bone>], 
         [<biomesoplenty:jar_filled:1>, null, null]
     ]);
+
+    addStaffFinish(<contenttweaker:staffwood_fire>);
 }
 
 {//bug
@@ -162,6 +181,7 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
         [null, <contenttweaker:staffwood>, <tconstruct:materials:22>], 
         [<tconstruct:materials:21>, null, null]
     ]);
+    addStaffFinish(<contenttweaker:staffwood_bug>);
 }
 
 {//ice
@@ -173,4 +193,6 @@ function addStaffHint3(inp as IIngredient, staff as IItemStack, out as IItemStac
 
     addStaffHint(<minecraft:lapis_ore>, <contenttweaker:staffwood_ice>, <netherendingores:ore_other_1:10>, true);
     addStaffHint(<quark:biome_cobblestone:1>, <contenttweaker:staffwood_ice>, <aether_legacy:icestone>, true);
+
+    addStaffFinish(<contenttweaker:staffwood_ice>);
 }

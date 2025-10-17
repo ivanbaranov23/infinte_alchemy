@@ -243,7 +243,7 @@ val ores as IItemStack[string][string][string] = {
             item: <thermalfoundation:ore>,
             crushing_no_balls: <thermalfoundation:material:64> * 2,
             balling: <thermalfoundation:material:64> * 2,
-            crushingByprod1: <thermalfoundation:material:1>,
+            crushingByprod1: <contenttweaker:stibnite>,
             crushingByprod2: <contenttweaker:malachite_dust>,
 
             alloySlag2: <thermalfoundation:material:128> * 2,
@@ -293,7 +293,7 @@ val ores as IItemStack[string][string][string] = {
             item: <exnihilocreatio:item_ore_copper:1>,
             crushing_no_balls: <thermalfoundation:material:64> * 2,
             balling: <thermalfoundation:material:64> * 2,
-            crushingByprod1: <thermalfoundation:material:1>,
+            crushingByprod1: <contenttweaker:stibnite>,
             crushingByprod2: <contenttweaker:malachite_dust>,
 
             alloySlag2: <thermalfoundation:material:128> * 2,
@@ -871,6 +871,44 @@ val ores as IItemStack[string][string][string] = {
             separating2: <minecraft:redstone>,
             separating3: <minecraft:blaze_powder>,
             separating4: <contenttweaker:soot>
+        }
+    },
+    antimony: {
+        ow: {
+            item: <contenttweaker:antimony_ore>,
+            furnace: <contenttweaker:stibnite>,
+            crushing_no_balls: <contenttweaker:stibnite> * 4,
+            balling: <contenttweaker:stibnite> * 4,
+            crushingByprod1: <thermalfoundation:material:771>,
+            crushingByprod2: <contenttweaker:antimony_dust>,
+
+            alloySlag2: <alchemistry:ingot:51> * 4,
+            alloySlag3: <alchemistry:ingot:51> * 6,
+
+            drilling: <contenttweaker:antimony_pieces> * 6
+        },
+        chunk: {
+            item: <contenttweaker:antimony_chunk>,
+            furnace: <contenttweaker:stibnite>,
+            crushing_no_balls: <contenttweaker:stibnite> * 4,
+            balling: <contenttweaker:stibnite> * 4,
+            crushingByprod1: <thermalfoundation:material:771>,
+            crushingByprod2: <contenttweaker:antimony_dust>,
+
+            alloySlag2: <alchemistry:ingot:51> * 4,
+            alloySlag3: <alchemistry:ingot:51> * 6,
+
+            drilling: <contenttweaker:stibnite> * 6,
+            made2x2: <contenttweaker:antimony_pieces>,
+            madeFrom: <contenttweaker:antimony_pieces> * 3
+        },
+        dense: {
+            item: <contenttweaker:antimony_ore_dense>,
+            crushing: <contenttweaker:antimony_ore> * 3,
+            crushingByprod1: <thermalfoundation:material:866>,
+            crushingByprod2: <thermalfoundation:material:866> * 2,
+
+            making: <contenttweaker:antimony_ore> * 4
         }
     },
 
@@ -1584,10 +1622,33 @@ val ores as IItemStack[string][string][string] = {
         }
     },
 
+    bismuth: {
+        ow: {
+            item: <contenttweaker:bismuth_ore>,
+            crushing_no_balls: <contenttweaker:bismuth_dust> * 2,
+            balling: <contenttweaker:bismuth_dust> * 2,
+            crushingByprod1: <mekanism:dirtydust>,
+            crushingByprod2: <contenttweaker:galena_dust>,
+
+            drilling: <contenttweaker:bismuth_pieces> * 6
+        },
+        chunk: {
+            item: <contenttweaker:bismuth_chunk>,
+            crushing_no_balls: <contenttweaker:bismuth_dust> * 2,
+            balling: <contenttweaker:bismuth_dust> * 2,
+            crushingByprod1: <mekanism:dirtydust>,
+            crushingByprod2: <contenttweaker:galena_dust>,
+
+            madeFrom: <contenttweaker:bismuth_pieces> * 3,
+            made2x2: <contenttweaker:bismuth_pieces>
+        }
+    },
+
     cursed_gold: {
         chunk: {
             item: <contenttweaker:cursed_gold_chunk>,
-            crushing: <contenttweaker:cursed_gold_dust> * 2,
+            crushing_no_balls: <contenttweaker:cursed_gold_dust> * 2,
+            balling: <contenttweaker:cursed_gold_dust> * 2,
             crushingByprod1: <atum:coin_gold>,
             crushingByprod2: <thermalfoundation:material:72>,
 
@@ -2727,7 +2788,7 @@ val ores as IItemStack[string][string][string] = {
             crushing_no_balls: <moretcon:gemelectarite> * 2,
             balling: <moretcon:gemelectarite> * 2,
             crushingByprod1: <projectred-core:resource_item:105> * 3,
-            crushingByprod2: <moretcon:gemelectarite> * 2,
+            crushingByprod2: <contenttweaker:scandium_dust>,
 
             cleaning: <moretcon:gemelectarite> * 4,
             drilling: <moretcon:gemelectarite> * 4,
@@ -2735,7 +2796,58 @@ val ores as IItemStack[string][string][string] = {
             denorm: <contenttweaker:electrotine_ore> * 2
         }
     },
-    
+    fusionite: {
+        ow: {
+            item: <moretcon:orefusionite>,
+            crushing_no_balls: <moretcon:dustfusionite> * 2,
+            balling: <moretcon:dustfusionite> * 2,
+            crushingByprod1: <moretcon:gemgarstone>,
+            crushingByprod2: <moretcon:gemelectarite> * 2,
+
+            alloySlag2: <moretcon:ingotfusionite> * 2,
+            alloySlag3: <moretcon:ingotfusionite> * 3,
+
+            cleaning: <moretcon:dustfusionite> * 4,
+            drilling: <moretcon:dustfusionite> * 4,
+
+            denorm: <netherendingores:ore_other_1:2> * 4
+        },
+        bedrock: {
+            item: <moretcon:orebedrockfusionite>,
+            crushing_no_balls: <moretcon:dustfusionite> * 4,
+            balling: <moretcon:dustfusionite> * 4,
+            crushingByprod1: <moretcon:gemgarstone>,
+            crushingByprod2: <moretcon:gemelectarite> * 2,
+
+            alloySlag2: <moretcon:ingotfusionite> * 4,
+            alloySlag3: <moretcon:ingotfusionite> * 5,
+
+            cleaning: <moretcon:dustfusionite> * 4,
+            drilling: <moretcon:dustfusionite> * 4,
+
+            denorm: <moretcon:orefusionite> * 3
+        }
+    },
+    hallowsite: {
+        ow: {
+            item: <moretcon:orehallowsite>,
+            crushing_no_balls: <moretcon:dusthallowsite> * 2,
+            balling: <moretcon:dusthallowsite> * 2,
+            crushingByprod1: <netherite:netheritescrap>,
+
+
+            drilling: <contenttweaker:hallowsite_pieces> * 6
+        },
+        chunk: {
+            item: <contenttweaker:hallowsite_chunk>,
+            crushing_no_balls: <moretcon:dusthallowsite> * 2,
+            balling: <moretcon:dusthallowsite> * 2,
+            crushingByprod1: <netherite:netheritescrap>,
+
+            made2x2: <contenttweaker:hallowsite_pieces>,
+            madeFrom: <contenttweaker:hallowsite_pieces> * 3
+        }
+    },
 
     //other
     redstone: {
@@ -3240,6 +3352,18 @@ val ores as IItemStack[string][string][string] = {
             cleaning: <contenttweaker:moissanite>
         }
     },
+    geode: {
+        ore: {
+            item: <contenttweaker:geode_ore>,
+            crushing_no_balls: <thermalfoundation:geode> * 2,
+            balling: <thermalfoundation:geode> * 2,
+            crushingByprod1: <thermalfoundation:geode>,
+            crushingByprod2: <contenttweaker:amethyst_dust>,
+
+            drilling: <thermalfoundation:geode> * 4,
+            cleaning: <thermalfoundation:geode> * 4
+        }
+    },
 
     prosperity: {
         overworld: {
@@ -3586,6 +3710,7 @@ val to_clean as IItemStack[][string] = {
     TE_is_sand: [
         <contenttweaker:titanium_dust>,
         <thermalfoundation:material:72>,
+        <contenttweaker:chrome_dust>,
         <draconicevolution:draconium_dust>,
         <contenttweaker:neodymium_dust>,
         <contenttweaker:zirconium_dust>,
@@ -3716,6 +3841,7 @@ val drilling_fluid_amount as int[string] = {
 
     cobalt: 50,
     ardite: 45,
+    antimony: 60,
 
     gold: 50,
     silver: 50,
@@ -3731,6 +3857,8 @@ val drilling_fluid_amount as int[string] = {
     tungsten: 275,
     uranium: 250,
     yellorium: 250,
+
+    bismuth: 300,
 
     cursed_gold: 250,
 
@@ -3793,7 +3921,8 @@ val drilling_fluid_amount as int[string] = {
     meteorite: 125,
 
     electarite: 240,
-
+    fusionite: 300,
+    hallowsite: 400,
 
     coal: 25,
     redstone: 45,
@@ -3808,6 +3937,7 @@ val drilling_fluid_amount as int[string] = {
     biotite: 800,
     aquamarine: 1000,
     moissanite: 500,
+    geode: 1000,
 
     prosperity: 100,
     inferium: 100,
@@ -3884,6 +4014,8 @@ for oredic in [
     <ore:oreDeathMetal>,
     <ore:oreKikeridan>,
 
+    <ore:oreBismuth>,
+    <ore:oreAntimony>,
     <ore:oreVanadium>,
     <ore:oreMolybdenum>
 ] as IOreDictEntry[]{
@@ -4057,21 +4189,21 @@ for material in ores {
             Transposer.addFillRecipe(
                 ores[material][ore_type].drilling, 
                 ores[material][ore_type].item, 
-                <liquid:ore_drill> * drilling_fluid_amount[material], 2000 + 50 * drilling_fluid_amount[material]);
+                <liquid:ore_drill> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]);
         }
         //making
         if (ores[material][ore_type] has "making"){
             Transposer.addFillRecipe(
                 ores[material][ore_type].making, 
                 ores[material][ore_type].item, 
-                <liquid:ore_make> * drilling_fluid_amount[material], 2000 + 40 * drilling_fluid_amount[material]
+                <liquid:ore_make> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]
             );
         }
         if (ores[material][ore_type] has "madeFrom"){
             Transposer.addFillRecipe(
                 ores[material][ore_type].item,
                 ores[material][ore_type].madeFrom,  
-                <liquid:ore_make> * drilling_fluid_amount[material], 2000 + 40 * drilling_fluid_amount[material]
+                <liquid:ore_make> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]
             );
         }
         if (ores[material][ore_type] has "made2x2"){

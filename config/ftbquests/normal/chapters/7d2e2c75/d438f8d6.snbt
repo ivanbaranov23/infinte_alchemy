@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: 0.0d,
+	dependencies: [
+		"3aeeee1c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "5b0ab23a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:soy_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "0b7d77b5",
+		type: "item",
+		item: "contenttweaker:soy_ingot",
+		count: 9
+	}]
+}

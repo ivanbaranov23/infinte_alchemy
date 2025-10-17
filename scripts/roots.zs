@@ -471,6 +471,7 @@ Rituals.modifyRitual("ritual_transmutation", [
         sapling_palm: <atum:palm_sapling>,
         sapling_floweroak: <biomesoplenty:sapling_1:5>,
         sapling_balsam: <erebus:sapling_balsam>,
+        sapling_mossbark: <erebus:sapling_mossbark>,
         sapling_bamboo: <erebus:sapling_bamboo>,
         //sapling_bamboo2: <biomesoplenty:sapling_0:2>,
         sapling_amaranth: <natura:overworld_sapling:2>,
@@ -481,6 +482,7 @@ Rituals.modifyRitual("ritual_transmutation", [
         nettle2: <erebus:small_plant:1>,
 
         bone_mushroom: <betternether:bone_mushroom>,
+        egg_plant: <betternether:egg_plant>,
 
         origin: <biomesoplenty:flower_1:5>,
 
@@ -522,6 +524,7 @@ Rituals.modifyRitual("ritual_transmutation", [
         sapling_palm: <twilightforest:uberous_soil>,
         sapling_floweroak: <twilightforest:uberous_soil>,
         sapling_balsam: <erebus:mud>,
+        sapling_mossbark: <erebus:mud>,
         sapling_bamboo: <erebus:mud>,
         sapling_blossom: <twilightforest:uberous_soil>,
         sapling_ghost: <natura:nether_tainted_soil>,
@@ -530,6 +533,7 @@ Rituals.modifyRitual("ritual_transmutation", [
         nettle2: <erebus:mud>,
 
         bone_mushroom: <betternether:bone_tile>,
+        egg_plant: <betternether:netherrack_moss>,
 
         origin: <biomesoplenty:grass:5>,
 
@@ -682,6 +686,11 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     Chrysopoeia_addRecipe("ame3", <caves_n_cliffs:medium_amethyst_bud>, <caves_n_cliffs:amethyst_cluster_single> * 3);
     Chrysopoeia_addRecipe("ame4", <caves_n_cliffs:large_amethyst_bud>, <caves_n_cliffs:amethyst_cluster_single> * 4);
     Chrysopoeia_addRecipe("ame5", <caves_n_cliffs:amethyst_cluster>, <caves_n_cliffs:amethyst_cluster_single> * 8);
+
+    Chrysopoeia_addRecipe("netherrack1", <minecraft:netherrack>, <biomesoplenty:grass:6>);
+    Chrysopoeia_addRecipe("netherrack2", <betternether:netherrack_moss>, <biomesoplenty:grass:6>);
+    Chrysopoeia_addRecipe("netherrack3", <biomesoplenty:grass:6>, <betternether:netherrack_moss>);
+
 }
 {//forest runes
     mods.appliedenergistics2.Inscriber.addRecipe(<contenttweaker:runewood>, 

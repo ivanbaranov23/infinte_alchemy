@@ -18,8 +18,15 @@ for item in [
     <minecraft:quartz_block:1>,
     <minecraft:quartz_block:2>,
 
+    <minecraft:netherrack>,
+    <minecraft:netherbrick>,
+    <minecraft:nether_brick>,
+
     <minecraft:nether_wart>,
     <minecraft:nether_wart_block>,
+
+    <minecraft:glowstone_dust>,
+    <minecraft:glowstone>,
 
     <minecraft:magma>,
 
@@ -28,7 +35,9 @@ for item in [
     <minecraft:purpur_pillar>,
 
     <alchemistry:mineral_salt>,
-    <minecraft:skull:1>
+    <minecraft:skull:1>,
+
+    <ore:dyeLightBlue>
 ] as IIngredient[]{
     Dissolver.removeRecipe(item);
 }

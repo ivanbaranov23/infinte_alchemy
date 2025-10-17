@@ -1,0 +1,23 @@
+{
+	title: "Actual Actual Additions",
+	x: 5.0d,
+	y: 1.0d,
+	text: [
+		""
+	],
+	dependencies: [
+		"95048f83"
+	],
+	tasks: [{
+		uid: "1b03c6dd",
+		type: "item",
+		items: [{
+			item: "contenttweaker:compact_empowerer"
+		}]
+	}],
+	rewards: [{
+		uid: "24cfa377",
+		type: "item",
+		item: "contenttweaker:compact_empowerer"
+	}]
+}

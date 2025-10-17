@@ -116,10 +116,37 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["hydroxide", 1]
         ]
     );
+    createCompound(216, "lithium_chloride", 41, 188, 55,
+        [
+            ["lithium", 1],
+            ["chlorine", 1]
+        ]
+    );
+    createCompound(217, "phosphoric_acid", 181, 58, 76,
+        [
+            ["hydrogen", 3],
+            ["phosphorus", 1],
+            ["oxygen", 4]
+        ]
+    );
+
 }
 
 {//metals
-    
+    createCompound(500, "high_grade_steel_components", 103, 103, 103,
+        [
+            ["carbon", 12],
+            ["manganese", 8],
+            ["chromium", 5],
+
+            ["nickel", 5],
+            ["molybdenum", 5],
+            ["vanadium", 5],
+            
+            ["tungsten", 5],
+            ["boron", 4]
+        ]
+    );
     createCompound(501, "magnesium_bromide_chloride", 23, 11, 87,
         [
             ["magnesium", 1],
@@ -169,6 +196,18 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
         [
             ["hydrogen", 1],
             ["iodine", 1]
+        ]
+    );
+    createCompound(509, "antimony_trichloride", 200, 125, 82,
+        [
+            ["antimony", 1],
+            ["chlorine", 3]
+        ]
+    );
+    createCompound(510, "scandium_chloride", 107, 126, 41,
+        [
+            ["scandium", 1],
+            ["chlorine", 3]
         ]
     );
 }

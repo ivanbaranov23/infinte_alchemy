@@ -79,3 +79,6 @@ fluid.taurine=Liquid Taurine
 gas.explosion_stone_glue=Glued-Explosion Stone Gas
 
 gas.xpjuice=Gaseous XP
+
+fluid.phosphoric_acid=Liquid Phosphoric Acid
+gas.phosphoric_acid=Phosphoric Acid Gas

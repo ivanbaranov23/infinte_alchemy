@@ -313,6 +313,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<minecraft:cobblestone>, <minecraft:obsidian> | <appliedenergistics2:sky_stone_block>],
         [<minecraft:obsidian> | <appliedenergistics2:sky_stone_block>, <minecraft:cobblestone>]
     ]);
+    <ore:cobblestone>.remove(<netherblocks:blackstone>);
     
     {//netherrack
         scripts.helper.addSimpleCrushingRecipe(<minecraft:netherrack>, <exnihilocreatio:block_netherrack_crushed>);
@@ -331,7 +332,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
             <contenttweaker:cincinnasite_dirty_dust> % 1,
             <minecraft:redstone> % 4,
             <thermalfoundation:material:771> % 5
-        ], <contenttweaker:netherrack_dust> * 4, null, 400);
+        ], <contenttweaker:netherrack_dust> * 4, null, 800);
     }
 }
 
@@ -727,7 +728,7 @@ mods.bloodmagic.AlchemyTable.addRecipe(
 
 
 
-
+//meat
 addCobbleRecipe(<biomesoplenty:flesh> * 4, <biomesoplenty:flesh>, 
     [],
     [<liquid:water> * 1000, <liquid:blood> * 1000],

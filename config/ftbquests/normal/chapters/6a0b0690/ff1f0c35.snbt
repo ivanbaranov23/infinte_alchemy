@@ -3,7 +3,8 @@
 	x: 1.0d,
 	y: -4.0d,
 	dependencies: [
-		"9feec472"
+		"9feec472",
+		"bee5a8c6"
 	],
 	optional: true,
 	tasks: [{

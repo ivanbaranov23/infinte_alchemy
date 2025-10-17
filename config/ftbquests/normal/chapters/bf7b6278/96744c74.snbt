@@ -6,7 +6,7 @@
 		"For making coal coke and creosote"
 	],
 	dependencies: [
-		"6a23fe89"
+		"26314133"
 	],
 	tasks: [{
 		uid: "d86e0904",

@@ -14,7 +14,12 @@
 		items: [{
 			item: "minecraft:paper"
 		}],
-		count: 1024L,
+		count: 2048L,
 		consume_items: true
+	}],
+	rewards: [{
+		uid: "fa0d5656",
+		type: "item",
+		item: "contenttweaker:quest_coin"
 	}]
 }

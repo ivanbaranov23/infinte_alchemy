@@ -156,12 +156,12 @@
 			"generator": {
 				"block": [
                     {"name": "netherendingores:ore_nether_vanilla", "metadata": 6, "weight": 7},
-                    {"name": "netherendingores:ore_nether_modded_2", "metadata": 1, "weight": 2}
+                    {"name": "netherendingores:ore_nether_modded_2", "metadata": 1, "weight": 4}
                 ],
 				"material": "minecraft:netherrack",
 				"cluster-size": 4
 			},
-			"cluster-count": 15,
+			"cluster-count": 18,
 			"min-height": 20,
 			"max-height": 105,
 			"retrogen": "true",
@@ -179,6 +179,28 @@
 			"generator": {
 				"block": [
                     {"name": "netherendingores:ore_nether_modded_1", "metadata": 14, "weight": 2}
+                ],
+				"material": "minecraft:netherrack",
+				"cluster-size": 4
+			},
+			"cluster-count": 13,
+			"min-height": 20,
+			"max-height": 105,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					-1
+				]
+			}
+		},
+        "nether_debris": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": [
+                    {"name": "netherite:ancientdebris"}
                 ],
 				"material": "minecraft:netherrack",
 				"cluster-size": 4

@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: -7.5d,
+	dependencies: [
+		"dad92572"
+	],
+	tasks: [{
+		uid: "5ba82d4d",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:copper_seeds"
+		}]
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: -4.5d,
+	dependencies: [
+		"dad92572"
+	],
+	tasks: [{
+		uid: "2c477886",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:zinc_seeds"
+		}]
+	}]
+}

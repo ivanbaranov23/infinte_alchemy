@@ -634,6 +634,29 @@ solderer.removeAll();
 			10, 5
 		]
 	);
+
+	//geode
+	atomicreshaper.addRecipeMulti(<thermalfoundation:geode>, 100, 40, 
+		[
+			<minecraft:diamond>, <minecraft:dye:4>, <minecraft:emerald>,
+			<minecraft:quartz>, <minecraft:prismarine_shard>, <actuallyadditions:item_misc:5>,
+			<astralsorcery:itemcraftingcomponent>, <erebus:materials:1>,
+			<biomesoplenty:gem:1>, <biomesoplenty:gem:3>, <biomesoplenty:gem:7>, <biomesoplenty:gem:2>, <biomesoplenty:gem:5>, <biomesoplenty:gem:6>, <biomesoplenty:gem:4>,
+			<aether_legacy:ambrosium_shard>, <aether_legacy:zanite_gemstone>, <moretcon:gemgarstone>, <moretcon:gemelectarite>,
+			<quark:biotite>, <moretcon:gemigniglomerate>, <taiga:dilithium_crystal>, <taiga:tiberium_crystal>,
+			<thermalfoundation:material:893>, <thermalfoundation:material:894>, <thermalfoundation:material:895>,
+			<contenttweaker:flolit>, <erebus:materials:11>, <contenttweaker:fluospar>
+		], [
+			10, 90, 25,
+			150, 50, 70,
+			10, 60,
+			30, 30, 30, 30, 30, 30, 30,
+			25, 25, 20, 10,
+			15, 4, 20, 20,
+			10, 10, 10,
+			40, 40, 15
+		]
+	);
 }
 
 
@@ -673,144 +696,7 @@ mods.bloodmagic.TartaricForge.addRecipe(<prodigytech:tartaric_stoker> * 12, [
 	);
 }
 
-/*
-{//heat exchanger
-	{//lava
-		var rec = RecipeBuilder.newBuilder("lava_heat", "heat_exchanger", 60*20*3);
 
-        rec.addFluidInput(<liquid:lava> * 3000);
-		rec.addItemInput(<prodigytech:fuel_pellet_64>);
-		rec.addItemInput(<prodigytech:tartaric_stoker> * 16);
-		rec.addMekanismHeatInput(500, 499, 1.0/0);
-
-		rec.addFluidOutput(<liquid:lava_residue> * 300);
-        
-
-        rec.addEnergyPerTickInput(128);
-		rec.addHotAirOutput(500, 400, 550);
-        
-        rec.build();
-	}
-	{//lava2
-		var rec = RecipeBuilder.newBuilder("lava2_heat", "heat_exchanger", 60*20*5);
-
-        rec.addFluidInput(<liquid:high_heat_lava> * 1000);
-		rec.addItemInput(<prodigytech:fuel_pellet_64>);
-		rec.addItemInput(<prodigytech:tartaric_stoker> * 16);
-		rec.addMekanismHeatInput(1200, 1199, 1.0/0);
-
-		rec.addFluidOutput(<liquid:lava_residue> * 1000);
-        
-
-        rec.addEnergyPerTickInput(384);
-		rec.addHotAirOutput(1200, 1100, 1250);
-        
-        rec.build();
-	}
-	{//lava3
-		var rec = RecipeBuilder.newBuilder("lava3_heat", "heat_exchanger", 60*20*7);
-
-        rec.addFluidInput(<liquid:super_heat_lava> * 500);
-		rec.addItemInput(<prodigytech:fuel_pellet_64>);
-		rec.addItemInput(<prodigytech:tartaric_stoker> * 16);
-		rec.addMekanismHeatInput(2000, 1999, 1.0/0);
-
-		rec.addFluidOutput(<liquid:lava_residue> * 3000);
-        
-
-        rec.addEnergyPerTickInput(512);
-		rec.addHotAirOutput(2000, 1900, 2050);
-        
-        rec.build();
-	}
-
-	{//pyrotheum
-		var rec = RecipeBuilder.newBuilder("pyrotheum_heat", "heat_exchanger", 60*20*2);
-
-        rec.addFluidInput(<liquid:pyrotheum> * 2000);
-		rec.addItemInput(<prodigytech:fuel_pellet_64>);
-		rec.addItemInput(<prodigytech:tartaric_stoker> * 16);
-		//rec.addFluidOutput(<liquid:lava_residue> * 300);
-        
-
-        rec.addEnergyPerTickInput(256);
-		rec.addHotAirOutput(1000, 900, 1050);
-
-        
-        rec.build();
-	}
-
-	{//cobble
-		var rec = RecipeBuilder.newBuilder("cobble", "heat_exchanger", 45*20);
-
-		rec.addItemInput(<ore:cobblestone>, 8);
-		rec.addMekanismHeatInput(500, 499, 1.0/0);
-
-		rec.addFluidOutput(<liquid:lava> * 8000);
-		rec.addDimensionRequirement([-1]);
-        
-
-        rec.addEnergyPerTickInput(128);
-		rec.addHotAirOutput(400, 400, 550);
-        
-        rec.build();
-	}
-	{//cobble2
-		var rec = RecipeBuilder.newBuilder("cobble2", "heat_exchanger", 4*45*20);
-
-		rec.addItemInput(<ore:compressed1xCobblestone>, 8);
-		rec.addMekanismHeatInput(800, 799, 1.0/0);
-
-		rec.addFluidOutput(<liquid:lava> * 80000);
-		rec.addDimensionRequirement([-1]);
-        
-
-        rec.addEnergyPerTickInput(256);
-		rec.addHotAirOutput(400, 400, 550);
-        
-        rec.build();
-	}
-	{//cobble3
-		var rec = RecipeBuilder.newBuilder("cobble3", "heat_exchanger", 4*4*45*20);
-
-		rec.addItemInput(<ore:compressed2xCobblestone>, 8);
-		rec.addMekanismHeatInput(1200, 1199, 1.0/0);
-
-		rec.addFluidOutput(<liquid:lava> * 800000);
-		rec.addDimensionRequirement([-1]);
-        
-
-        rec.addEnergyPerTickInput(512);
-		rec.addHotAirOutput(400, 400, 550);
-        
-        rec.build();
-	}
-}
-
-function addHeatEngineRecipe(temp as int, energy as int, cat as IItemStack){
-    var rec = RecipeBuilder.newBuilder("temp" ~ energy, "heat_engine", 60 * 20);
-    rec.addEnergyPerTickOutput(energy);
-
-    
-    rec.addItemInput(cat);
-    rec.setChance(0.0);
-    
-
-    rec.addHotAirInput(temp, 0, 0);
-
-    rec.build();
-}
-{
-	addHeatEngineRecipe(250, 4000, <minecraft:gravel>);
-	addHeatEngineRecipe(500, 8000, <minecraft:cobblestone>);
-	addHeatEngineRecipe(1000, 20000, <prodigytech:charred_cobblestone>);
-	addHeatEngineRecipe(1500, 30000, <minecraft:netherrack>);
-	addHeatEngineRecipe(2000, 40000, <minecraft:nether_brick>);
-	addHeatEngineRecipe(2500, 60000, <minecraft:magma>);
-	addHeatEngineRecipe(3000, 100000, <contenttweaker:firebrick_block>);
-	addHeatEngineRecipe(3500, 250000, <contenttweaker:hot_block>);
-}
-*/
 {//circuit_plate
 	var tpc_circuit_plate = RecipeBuilder.newBuilder("tpc_circuit_plate", "tree_powered_compressor", 120);
 	tpc_circuit_plate.addItemInput(<enderio:item_material:48>);

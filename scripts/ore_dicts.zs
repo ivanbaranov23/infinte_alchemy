@@ -99,3 +99,8 @@
 <ore:dustCesium>.add(<contenttweaker:cesium_dust>);
 
 <ore:dustCadmium>.add(<contenttweaker:cadmium>);
+<ore:dustAntimony>.add(<contenttweaker:antimony_dust>);
+<ore:dustScandium>.add(<contenttweaker:scandium_dust>);
+
+<ore:dustBismuth>.add(<contenttweaker:bismuth_dust>);
+<ore:ingotBismuth>.add(<contenttweaker:bismuth_ingot>);

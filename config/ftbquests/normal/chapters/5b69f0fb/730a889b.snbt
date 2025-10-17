@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: 3.0d,
+	dependencies: [
+		"49ee2b36"
+	],
+	tasks: [{
+		uid: "4b4d34ee",
+		type: "item",
+		items: [{
+			item: "contenttweaker:inversion_dust"
+		}]
+	}]
+}

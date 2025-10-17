@@ -25,6 +25,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <densemetals:dense_nickel_ore> * 48,
                 <densemetals:dense_aluminum_ore> * 48,
                 <densemetals:dense_zinc_ore> * 48,
+                <contenttweaker:antimony_ore_dense> * 40,
 
                 <densemetals:dense_gold_ore> * 32,
                 <densemetals:dense_silver_ore> * 32,
@@ -38,6 +39,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <densemetals:dense_nickel_ore> * 48,
                 <densemetals:dense_aluminum_ore> * 48,
                 <densemetals:dense_zinc_ore> * 48,
+                <contenttweaker:antimony_ore_dense> * 40,
 
                 <densemetals:dense_gold_ore> * 32,
                 <densemetals:dense_silver_ore> * 32,
@@ -54,6 +56,9 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <contenttweaker:titanium_ore> * 96,
                 <contenttweaker:tungsten_ore> * 96,
 
+                <contenttweaker:bismuth_ore> * 64,
+                <contenttweaker:gallium_ore> * 64,
+
                 <taiga:meteoritecobble_block> * 32
             ],[
                 <thermalfoundation:ore:6> * 64,
@@ -62,6 +67,9 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <bigreactors:oreyellorite> * 64,
                 <contenttweaker:titanium_ore> * 64,
                 <contenttweaker:tungsten_ore> * 64,
+                
+                <contenttweaker:bismuth_ore> * 32,
+                <contenttweaker:gallium_ore> * 32,
 
                 <taiga:meteoritecobble_block> * 16
             ]

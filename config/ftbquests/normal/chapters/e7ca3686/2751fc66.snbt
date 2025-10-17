@@ -1,6 +1,11 @@
 {
 	x: 11.0d,
 	y: -5.0d,
+	text: [
+		"Did you know, that there is a lot of dissolved methane in the ocean? Methane is a greenhouse gas and amount of methane that can be dissolved in water decreases with temprature. ",
+		"Meaning raising temprature leads to ocean releasing methane, which leads to worsening of greenhouse effect, which leads to temprature raising even more.",
+		"This cycle has caused a few mass extinctions in the past."
+	],
 	dependencies: [
 		"fccf7956"
 	],

@@ -24,15 +24,20 @@ import mods.roots.Transmutation;
 
 var counter as int = 0;
 
-for inp,outp in {
-    <blockstate:minecraft:sandstone:type=sandstone>: <blockstate:astralsorcery:blockcustomsandore:oretype=aquamarine>
-} as IBlockState[IBlockState] {
-    Transmutation.addStateToStateRecipe(
-        "auto" ~ counter, 
-        StatePredicate.create(inp),
-        outp, 
-        BlockStateAbove.create(StatePredicate.create(<blockstate:biomesoplenty:terrarium:variant=beach>))
-    );
-    counter += 1;
-    
+for top,ahdsfgjd in {
+    <blockstate:biomesoplenty:terrarium:variant=beach>: {
+        <blockstate:minecraft:sandstone:type=sandstone>: <blockstate:astralsorcery:blockcustomsandore:oretype=aquamarine>
+    },
+
+} as IBlockState[IBlockState][IBlockState] {
+    for inp,outp in ahdsfgjd{
+        Transmutation.addStateToStateRecipe(
+            "auto" ~ counter, 
+            StatePredicate.create(inp),
+            outp, 
+            BlockStateAbove.create(StatePredicate.create(top))
+        );
+        counter += 1;
+        
+    }
 }

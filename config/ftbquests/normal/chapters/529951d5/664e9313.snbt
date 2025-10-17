@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 1.0d,
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "479dbbee",
+		type: "item",
+		items: [{
+			item: "taiga:dilithium_crystal"
+		}]
+	}]
+}

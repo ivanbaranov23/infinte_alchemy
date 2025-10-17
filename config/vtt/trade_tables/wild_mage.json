@@ -1,0 +1,29 @@
+{
+    "Profession": "roots:wild_mage",
+    "Career": "wild_mage",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "CareerLevel": 1,
+                "buyB": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 4,
+                        "max": 12
+                    }
+                },
+                "buy": {
+                    "id": "botania:felpumpkin",
+                    "Count": 1,
+                    "Damage": 0
+                },
+                "sell": {
+                    "id": "botania:cocoon",
+                    "Count": 1,
+                    "Damage": 0
+                }
+            }
+        ]
+    }
+}

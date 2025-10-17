@@ -422,8 +422,8 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 	val magma_dynamo = <thermalexpansion:dynamo:1>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte});
 	recipes.remove(magma_dynamo);
 	recipes.addShaped("ia_magma_dynamo", magma_dynamo, [
-		[null, <ore:gearRedstoneAlloy>, null], 
-		[<contenttweaker:thermal_plate>, <thermalexpansion:frame>, <contenttweaker:thermal_plate>], 
+		[<moretcon:ingotfusionite>, <ore:gearRedstoneAlloy>, <moretcon:ingotfusionite>], 
+		[<moretcon:ingotfusionite>, <thermalexpansion:frame>, <moretcon:ingotfusionite>], 
 		[<contenttweaker:electric_manyullyn_plate>, <thermalfoundation:material:514>, <contenttweaker:electric_manyullyn_plate>]
 	]);
 	val l_fuel_dynamo = <thermalexpansion:dynamo:2>.withTag({RSControl: 0 as byte, Facing: 1 as byte, Energy: 0, Level: 0 as byte});
@@ -648,7 +648,7 @@ Sawmill.addRecipe(<thermalfoundation:material:816>, <harvestcraft:fruitbaititem>
 			<minecraft:dye:15> * 2,
 			<actuallyadditions:item_fertilizer> * 4
 		], [],
-		[], [
+		[<mob_grinding_utils:xp_tap>.withDisplayName(game.localize("ia.arb_extractor_hint"))], [
 			<thermalexpansion:device:3>
 		]
 	);
@@ -661,7 +661,7 @@ Sawmill.addRecipe(<thermalfoundation:material:816>, <harvestcraft:fruitbaititem>
 			<mysticalagriculture:fertilized_essence> * 50,
 			<botania:overgrowthseed> * 100
 		], [],
-		[], [
+		[<mob_grinding_utils:xp_tap>.withDisplayName(game.localize("ia.arb_extractor_hint"))], [
 			<thermalexpansion:device:3>
 		]
 	);
@@ -674,7 +674,7 @@ Sawmill.addRecipe(<thermalfoundation:material:816>, <harvestcraft:fruitbaititem>
 			<contenttweaker:fertilizer5> * 25,
 			<contenttweaker:fertilizer6> * 50
 		], [],
-		[], [
+		[<mob_grinding_utils:xp_tap>.withDisplayName(game.localize("ia.arb_extractor_hint"))], [
 			<thermalexpansion:device:3>
 		]
 	);
@@ -682,7 +682,7 @@ Sawmill.addRecipe(<thermalfoundation:material:816>, <harvestcraft:fruitbaititem>
 		[
 			<contenttweaker:fertilizer7> * 100
 		], [],
-		[], [
+		[<mob_grinding_utils:xp_tap>.withDisplayName(game.localize("ia.arb_extractor_hint"))], [
 			<thermalexpansion:device:3>
 		]
 	);

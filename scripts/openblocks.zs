@@ -7,9 +7,9 @@ import crafttweaker.item.WeightedItemStack;
 
 recipes.remove(<openblocks:xp_bottler>);
 recipes.addShaped("ia_xp_bottler", <openblocks:xp_bottler>, [
-	[<contenttweaker:zinc_plate>, <minecraft:glass_bottle>, <contenttweaker:zinc_plate>], 
+	[<immersiveengineering:metal_decoration0:4>, <minecraft:glass_bottle>, <immersiveengineering:metal_decoration0:4>], 
 	[<immersiveengineering:metal_device1:6>, <extrautils2:machine>, <immersiveengineering:metal_device1:6>], 
-	[<contenttweaker:zinc_plate>, <immersiveengineering:material:9>, <contenttweaker:zinc_plate>]
+	[<immersiveengineering:metal_decoration0:4>, <engineersdecor:passive_fluid_accumulator>, <immersiveengineering:metal_decoration0:4>]
 ]);
 
 scripts.jei.addJEIhint(

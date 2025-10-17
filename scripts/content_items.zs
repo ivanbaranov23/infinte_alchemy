@@ -741,6 +741,9 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("mitanium_ingot").register();
     VanillaFactory.createBlock("mitanium_block", <blockmaterial:rock>).register();
 
+    VanillaFactory.createItem("bismuth_bronze_ingot").register();
+    VanillaFactory.createBlock("bismuth_bronze_block", <blockmaterial:rock>).register();
+
     VanillaFactory.createItem("blood_bronze_plate").register();
     VanillaFactory.createItem("blood_bronze_gear").register();
     VanillaFactory.createItem("blood_bronze_ball").register();
@@ -974,6 +977,14 @@ function addAtomicResource(name as string){
 
     VanillaFactory.createItem("vortexed_base").register();
     VanillaFactory.createItem("vortexed_ingot").register();
+
+    VanillaFactory.createItem("bismuth_pieces").register();
+    VanillaFactory.createItem("bismuth_chunk").register();
+    VanillaFactory.createBlock("bismuth_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("bismuth_ingot").register();
+    VanillaFactory.createItem("bismuth_dust").register();
+    VanillaFactory.createBlock("bismuth_block", <blockmaterial:rock>).register();
+    registerMoltenMetal("bismuth", Color.fromHex("8d05b3"));
 
     VanillaFactory.createItem("polonium_dust").register();
     VanillaFactory.createBlock("polonium_block", <blockmaterial:rock>).register();
@@ -1259,12 +1270,9 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
 
     VanillaFactory.createItem("lens_in").register();
     VanillaFactory.createItem("lens_out").register();
-
-    VanillaFactory.createItem("tank").register();
     VanillaFactory.createItem("tank2").register();
-    VanillaFactory.createItem("tank_oxygen").register();
-    VanillaFactory.createItem("tank_nitrogen").register();
-    VanillaFactory.createItem("tank_nitrogen_dense").register();
+
+    
     VanillaFactory.createItem("crucible").register();
 
     VanillaFactory.createItem("pump").register();
@@ -2258,8 +2266,24 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("uu_base3").register();
 
     VanillaFactory.createItem("zorra_steel_gem").register();
+
+    VanillaFactory.createItem("kolbeckite").register();
+    VanillaFactory.createItem("scandium_chloride_dust").register();
+    VanillaFactory.createItem("scandium_dust").register();
+    VanillaFactory.createItem("viking_metal").register();
 }
 {//immers
+    
+    VanillaFactory.createItem("antimony_pieces").register();
+    VanillaFactory.createItem("antimony_chunk").register();
+    VanillaFactory.createBlock("antimony_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("antimony_ore_dense", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("stibnite").register();
+    VanillaFactory.createItem("antimony_dust").register();
+    VanillaFactory.createBlock("antimony_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("solder").register();
+    registerMoltenMetal("antimony", Color.fromHex("c1283a"));
+
     VanillaFactory.createFluid("fish_oil", Color.fromHex("a3925a")).register();
 
     VanillaFactory.createItem("cactus_charcoal").register();
@@ -2278,6 +2302,12 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("creosolon_frame").register();
     VanillaFactory.createItem("machine_frame_frame").register();
     VanillaFactory.createFluid("grease", Color.fromHex("bdbb35")).register();
+
+    VanillaFactory.createItem("balloy_ingot").register();
+    VanillaFactory.createItem("balloy_plate").register();
+    VanillaFactory.createItem("balloy_ball").register();
+    VanillaFactory.createItem("balloy_dust").register();
+    VanillaFactory.createBlock("balloy_block", <blockmaterial:rock>).register();
 }
 {//erebus  
     VanillaFactory.createItem("formic_acid_dust").register();
@@ -2347,6 +2377,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("compound_metal_stack").register();
     VanillaFactory.createItem("compound_metal").register();
     VanillaFactory.createItem("compound_metal2").register();
+    VanillaFactory.createItem("resonating_plate").register();
     VanillaFactory.createItem("watertight_lead_plate").register();
 }
 {//thermal
@@ -2359,6 +2390,15 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("sanded_rod").register();
 
     VanillaFactory.createFluid("goop", Color.fromHex("0d2e30")).register();
+
+    registerMoltenMetal("mercury", Color.fromHex("b9d7ce"));
+
+    VanillaFactory.createItem("eggplant_dust").register();
+    VanillaFactory.createFluid("eggplant", Color.fromHex("4b4647")).register();
+
+    registerMoltenMetal("debris", Color.fromHex("4a2c23"));
+    VanillaFactory.createItem("debris").register();
+
 }
 {//atum
     VanillaFactory.createItem("ra_burner").register();
@@ -2454,6 +2494,17 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("soapart_dust").register();
     VanillaFactory.createItem("soapart").register();
+
+    VanillaFactory.createItem("impact_spreader").register();
+    VanillaFactory.createItem("igniter").register();
+    VanillaFactory.createItem("activated_carbon").register();
+
+    VanillaFactory.createItem("tank").register();
+    VanillaFactory.createItem("tank_hydrogen").register();
+    VanillaFactory.createItem("tank_oxygen").register();
+    VanillaFactory.createItem("tank_knallgas").register();
+    VanillaFactory.createItem("tank_nitrogen").register();
+    VanillaFactory.createItem("tank_nitrogen_dense").register();
 }
 {//twili
     var power_core = VanillaFactory.createBlock("power_core", <blockmaterial:rock>);
@@ -2470,6 +2521,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     addWater("slimebone");
 }
 {//actually addition
+    VanillaFactory.createItem("blue_paste").register();
+    VanillaFactory.createItem("black_paste").register();
     VanillaFactory.createItem("coil_core1").register();
     VanillaFactory.createItem("coil_core2").register();
 
@@ -2907,6 +2960,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("terrabit").register();
 
     VanillaFactory.createItem("impure_mana_dust").register();
+    VanillaFactory.createBlock("void_stone", <blockmaterial:rock>).register();
+    registerMoltenMetal("void_residue", Color.fromHex("000000"));
     VanillaFactory.createItem("terragem").register();
 
     VanillaFactory.createItem("rune_cyclic").register();
@@ -3118,6 +3173,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("varec").register();
     VanillaFactory.createItem("iodine").register();
     VanillaFactory.createItem("ceria").register();
+
+    //phosphoric
+    
     
     VanillaFactory.createItem("pentadiene").register();
     VanillaFactory.createItem("cyclopentadiene").register();
@@ -3167,6 +3225,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("methylamine").register();
     VanillaFactory.createItem("mai").register();
     VanillaFactory.createItem("mapbi3").register();
+
+    VanillaFactory.createItem("phli").register();
+    VanillaFactory.createItem("ph3sb").register();
+    VanillaFactory.createItem("ph3sbcl2").register();
+    VanillaFactory.createItem("ph5sb").register();
 
     VanillaFactory.createItem("pph3").register();
     VanillaFactory.createItem("phchn").register();
@@ -3231,7 +3294,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     }
 }
 
-{    //research
+{//research
     VanillaFactory.createItem("glass_cutter_research_token").register();
     VanillaFactory.createItem("research_glass_making").register();
 
@@ -3273,6 +3336,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("grass_bucket").register();
     VanillaFactory.createItem("research_sieving").register();
+    VanillaFactory.createItem("research_sieving2").register();
 
     VanillaFactory.createItem("glow_bucket").register();
     VanillaFactory.createItem("research_flight1").register();

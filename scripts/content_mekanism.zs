@@ -32,6 +32,8 @@ addGas("naoh", "eae553", true);
     xpjuice.register();
 }
 
+addGas("phosphoric_acid", "b53a4c", true);
+
 addGas("nitrogen", "476678", true);
 addGas("ammonia", "2f3e58", true);
 addGas("nitric_oxide", "2f3e58", false);

@@ -1,0 +1,18 @@
+{
+	x: -4.0d,
+	y: 7.5d,
+	text: [
+		"For making a lot of steel."
+	],
+	dependencies: [
+		"c8681319",
+		"29a45527"
+	],
+	tasks: [{
+		uid: "570d07c3",
+		type: "item",
+		items: [{
+			item: "alchemistry:compound 1 500"
+		}]
+	}]
+}

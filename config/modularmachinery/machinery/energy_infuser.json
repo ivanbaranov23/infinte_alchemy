@@ -160,7 +160,8 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "immersiveengineering:metal_decoration0@2"
+                "immersiveengineering:metal_decoration0@2",
+                "modularmachinery:blockparallelcontroller"
             ]
         },
         {

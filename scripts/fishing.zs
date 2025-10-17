@@ -120,7 +120,7 @@ mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesopl
     //pink coral
     mods.thermalexpansion.Centrifuge.addRecipe([
         <thermalfoundation:material:816> % 10
-    ], <biomesoplenty:coral> * 4, <liquid:blood> * 100, 2000);
+    ], <biomesoplenty:coral> * 1, <liquid:blood> * 100, 2000);
     recipes.addShaped("ia_pink_cloud", <aether_legacy:aercloud:3>,[
         [<biomesoplenty:coral>, <biomesoplenty:coral>, <biomesoplenty:coral>],
         [<biomesoplenty:coral>, <ore:aercloud>, <biomesoplenty:coral>],

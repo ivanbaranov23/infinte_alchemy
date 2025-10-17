@@ -1,0 +1,17 @@
+{
+	x: 1.0d,
+	y: 0.0d,
+	text: [
+		"Very industrial"
+	],
+	dependencies: [
+		"6a23fe89"
+	],
+	tasks: [{
+		uid: "6558bc1c",
+		type: "item",
+		items: [{
+			item: "contenttweaker:industrial_clay"
+		}]
+	}]
+}

@@ -1,7 +1,7 @@
 {
 	icon: "modularmachinery:essence_extractor_controller",
 	x: 9.0d,
-	y: -1.0d,
+	y: 1.0d,
 	text: [
 		"This multiblock is a bit expensive.",
 		"",

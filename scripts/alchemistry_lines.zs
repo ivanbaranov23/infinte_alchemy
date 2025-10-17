@@ -53,6 +53,8 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
     );
 }
 
+addFluidConv(<alchemistry:compound:34>, <liquid:methane>);
+addFluidConv(<alchemistry:compound:39>, <liquid:hexane>);
 addFluidConv(<alchemistry:compound:205>, <liquid:liquidethene>);
 addFluidConv(<alchemistry:compound:214>, <liquid:formic_acid>);
 addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
@@ -97,6 +99,7 @@ addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
     );
     <contenttweaker:phchn>.addTooltip("PhCHN₂");
 
+    
     
 }
 {//toluene
@@ -223,6 +226,8 @@ addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
 addChemicalRecipe([<contenttweaker:methylamine>], [
     <alchemistry:compound:215>, <alchemistry:compound:209>
 ], []);
+<contenttweaker:methylamine>.addTooltip("CH₃NH₂");
+
 {//acet
     //acetic acid
     addFluidConv(<contenttweaker:acetic_acid>, <liquid:acetic_acid>);
@@ -272,7 +277,26 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
 
 //todo acetone butanol ethanol
 
+{//lithium
+    addChemicalRecipe(
+        [<contenttweaker:phli>, <alchemistry:compound:216>],
+        [<contenttweaker:chlorobenzene>, <alchemistry:element:3> * 2],
+        []
+    );
+    <contenttweaker:phli>.addTooltip("PhLi");
+}
+{//phosporous
+    addFluidConv(<alchemistry:compound:217>, <liquid:phosphoric_acid>);
+    //mods.thermalexpansion.Refinery.addRecipe(<liquid:phosphoric_acid> * 250, <mekanism:dirtydust:2> % 25, <liquid:refined_glowstone> * 144, 8000);
+    mods.mekanism.separator.addRecipe(<liquid:refined_glowstone> * 2, 200, <gas:phosphoric_acid> * 5, <gas:liquidosmium>);
 
+
+    Dissolver.addRecipe(<enderio:block_holy_fog>, false, 1,
+        [
+            [100, <alchemistry:element:15> * 2]
+        ]
+    );
+}
 {//bromine
     addChemicalRecipe(
         [<contenttweaker:cyclohexyl_bromide>, <alchemistry:compound:502>],
@@ -304,6 +328,21 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         ]
     );
 }
+{//antimony
+    addChemicalRecipe(
+        [<contenttweaker:ph3sb>, <alchemistry:compound:216> * 3],
+        [<alchemistry:compound:509>, <contenttweaker:phli> * 3],
+        []
+    );
+    Combiner.addRecipe(<contenttweaker:ph3sbcl2>, [
+        <contenttweaker:ph3sb>, <alchemistry:element:17> * 2
+    ]);
+    addChemicalRecipe(
+        [<contenttweaker:ph5sb>, <alchemistry:compound:216> * 2],
+        [<contenttweaker:ph3sbcl2>, <contenttweaker:phli> * 2],
+        []
+    );
+}
 {//iodine
     Dissolver.addRecipe(<contenttweaker:iodine>, false, 1,
         [
@@ -318,13 +357,20 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
     Combiner.addRecipe(<contenttweaker:mai>, [
         <contenttweaker:methylamine>, <alchemistry:compound:508>
     ]);
+    <contenttweaker:mai>.addTooltip("CH₃NH₃I");
+    <contenttweaker:mai>.addTooltip("MAI");
+
     Combiner.addRecipe(<contenttweaker:mapbi3>, [
         <contenttweaker:mai>, <alchemistry:compound:25>
     ]);
-    
+    <contenttweaker:mapbi3>.addTooltip("CH₃NH₃PbI₃");
+    <contenttweaker:mapbi3>.addTooltip("MAPbI₃");
 }
 {//cerium
     mods.mekanism.compressor.addRecipe(<alchemistry:ingot:58>, <gas:oxygen>, <contenttweaker:ceria>);
+}
+{//mercury
+    
 }
 
 {//ruthenium thing

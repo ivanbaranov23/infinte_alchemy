@@ -37,17 +37,17 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(ingot, block);
 }
 
-//brick dust in Ore proccesing
-
 
 {//metals
     addNuggetIngotBlockRecipe(<contenttweaker:zinc_nugget>, <contenttweaker:zinc_ingot>, <contenttweaker:zinc_block>);
 
     add3x3Recipe(<contenttweaker:ancient_ingot>, <contenttweaker:ancient_block>);
     add3x3Recipe(<contenttweaker:nial_ingot>, <contenttweaker:nial_block>);
+    add3x3Recipe(<alchemistry:ingot:51>, <contenttweaker:antimony_block>);
     addNuggetIngotBlockRecipe(<contenttweaker:duraluminum_nugget>, <contenttweaker:duraluminum_ingot>, <contenttweaker:duraluminum_block>);
 
     add3x3Recipe(<contenttweaker:flower_steel_ingot>, <contenttweaker:flower_steel_block>);
+    add3x3Recipe(<contenttweaker:balloy_ingot>, <contenttweaker:balloy_block>);
 
     addNuggetIngotBlockRecipe(<contenttweaker:wear_resistant_alloy_nugget>, <contenttweaker:wear_resistant_alloy_ingot>, <contenttweaker:wear_resistant_alloy_block>);
     addNuggetIngotBlockRecipe(<contenttweaker:lesmium_nugget>, <contenttweaker:lesmium_ingot>, <contenttweaker:lesmium_block>);
@@ -109,6 +109,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:imperial_steel_ingot>, <contenttweaker:imperial_steel_block>);
 
     add3x3Recipe(<contenttweaker:neodymium_ingot>, <contenttweaker:neodymium_block>);
+    add3x3Recipe(<contenttweaker:bismuth_ingot>, <contenttweaker:bismuth_block>);
 
     add3x3Recipe(<contenttweaker:explosion_resistant_ingot>, <contenttweaker:explosion_resistant_block>);
     add3x3Recipe(<contenttweaker:hot_ingot>, <contenttweaker:hot_block>);
@@ -118,6 +119,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
 
     add3x3Recipe(<contenttweaker:tignalum_ingot>, <contenttweaker:tignalum_block>);
     add3x3Recipe(<contenttweaker:mitanium_ingot>, <contenttweaker:mitanium_block>);
+    add3x3Recipe(<contenttweaker:bismuth_bronze_ingot>, <contenttweaker:bismuth_bronze_block>);
 
     add3x3Recipe(<contenttweaker:dralladium_ingot>, <contenttweaker:dralladium_block>);
 

@@ -19,6 +19,9 @@ Evaporator.addRecipe(<harvestcraft:seaweeditem>, <liquid:seaweed_rich_water> * 1
 Combiner.addRecipe(<contenttweaker:insulation_strand>, [<contenttweaker:insulation_base>]);
 
 
+Combiner.addRecipe(<alchemistry:periodic_diagram>, [
+	<minecraft:paper>
+]);
 
 
 

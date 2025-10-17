@@ -9,7 +9,7 @@ val singularity_dust as IItemStack = <contenttweaker:singularity_dust>;
 static expl_compressables as string[] = [
 	"iron", "copper", "tin",
 	"nickel", "aluminum", "zinc",
-	"cobalt", "ardite",
+	"cobalt", "ardite", "antimony",
 	"gold", "silver", "osmium", "lead",
 
 	"platinum", "iridium", "tungsten", "titanium", "uranium", "yellorium",
@@ -108,6 +108,16 @@ for mat in expl_compressables{
 		addIngotCompress(scripts.metalworks.all_metals[mat].ingot, scripts.metalworks.all_metals[mat].singularity);
 	}
 }
+for mat in scripts.metalworks.all_metals{
+	if ( (scripts.metalworks.all_metals[mat] has "singularity") && (scripts.metalworks.all_metals[mat] has "element") ) {
+
+		mods.extendedcrafting.CompressionCrafting.addRecipe(
+			scripts.metalworks.all_metals[mat].singularity, scripts.metalworks.all_metals[mat].element, 192 * 16, 
+			<contenttweaker:research_singularity>, 5000000
+		);
+
+	}
+}
 
 
 for mat in non_metallic_singularities{
@@ -137,6 +147,15 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_s
 
 //singularity
 mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:meta_singularity>, <contenttweaker:singularity_dust>, 256, <extendedcrafting:material:11>, 5000000);
+
+mods.extendedcrafting.CompressionCrafting.addRecipe(
+	<extendedcrafting:singularity_custom:68>, <thermalfoundation:material:160>, 256 * 256, 
+	<extendedcrafting:singularity_custom:68>, 5000000
+);
+mods.extendedcrafting.CompressionCrafting.addRecipe(
+	<extendedcrafting:singularity_custom:69>, <thermalfoundation:material:160>, 256 * 256 * 256, 
+	<extendedcrafting:singularity_custom:69>, 5000000
+);
 
 
 //extra recs

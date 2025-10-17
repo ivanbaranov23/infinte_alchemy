@@ -225,7 +225,6 @@ recipes.addShapeless("ia_druidic_dust5", <contenttweaker:druidic_dust> * 12, [
     }
 }
 
-
 recipes.addShapeless("ia_inversion_dust", <contenttweaker:inversion_dust>, [
     <moretcon:gemgarstone>, 
     <contenttweaker:transmut_gel>, <betternether:cincinnasite_block>, <mekanism:saltblock>,

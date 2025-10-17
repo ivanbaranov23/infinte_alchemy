@@ -6,7 +6,13 @@
         "modularmachinery:blockfluidinputhatch",
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockenergyoutputhatch",
-        "modularmachinery:blockfluidoutputhatch"
+        "modularmachinery:blockfluidoutputhatch",
+        
+        "modularmachinery:blockmeitemoutputbus",
+        "modularmachinery:blockmeiteminputbus",
+        "modularmachinery:blockmefluidoutputbus",
+        "modularmachinery:blockmefluidinputbus",
+        "modularmachinery:blockmepatternprovider"
     ],
     "casings_decorative": [
         "modularmachinery:blockcasing"

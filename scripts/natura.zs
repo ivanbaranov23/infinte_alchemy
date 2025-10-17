@@ -13,3 +13,10 @@ recipes.addShaped("ia_silverbell_sapling", <natura:overworld_sapling:1>, [
     [<ore:dustSilver>, <ore:treeSapling>, <ore:dustSilver>],
     [null, <ore:dustSilver>, null]
 ]);
+
+
+mods.prodigytech.explosionfurnace.recipes.addRecipe(
+    <erebus:sapling_mossbark> * 4, <natura:nether_sapling:1> * 4, 
+    3000, <immersiveengineering:wirecoil:3>, 
+    1
+);

@@ -1388,7 +1388,8 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "modularmachinery:blockcasing@5"
+                "modularmachinery:blockcasing@5",
+                "modularmachinery:blockparallelcontroller"
             ]
         },
         {

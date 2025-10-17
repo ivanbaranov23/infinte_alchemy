@@ -288,6 +288,16 @@ addWoodInfuseFireJEI(<erebus:ore_petrified_wood>, <erebus:petrified_bark_red>, [
 ]);
 
 
+//fusionite
+addWoodInfuseFire(
+    <blockstate:moretcon:orefusionite>, <blockstate:tconstruct:molten_stone>, [
+        <contenttweaker:hot_energion> * 4, <harvestcraft:blueberryjellyitem>, <enderio:item_material:38> * 2
+], 20);
+addWoodInfuseFireJEI(<moretcon:orefusionite>, <forge:bucketfilled>.withTag({FluidName: "stone", Amount: 1000}), [
+        <contenttweaker:hot_energion> * 4, <harvestcraft:blueberryjellyitem>, <enderio:item_material:38> * 2
+]);
+
+
 addWoodInfuseForestFire(
     <blockstate:contenttweaker:divine_mud>, <blockstate:contenttweaker:glowshroomite_mud>, [
         <contenttweaker:reagent_bug>,
@@ -374,6 +384,7 @@ for stone,ore_list in {
         <exnihilocreatio:item_ore_ardite:2>: <netherendingores:ore_other_1:2>,
 
         <contenttweaker:zinc_dust>: <contenttweaker:zinc_ore>,
+        <contenttweaker:stibnite>: <contenttweaker:antimony_ore>,
 
         <mekanism:dust:2>: <mekanism:oreblock>,
 

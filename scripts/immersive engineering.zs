@@ -120,18 +120,14 @@ mods.prodigytech.explosionfurnace.recipes.addRecipe(
 );
 mods.prodigytech.explosionfurnace.recipes.addRecipe(
 	<immersiveengineering:stone_decoration> * 3, <immersiveengineering:stone_decoration:1> * 3, 500, 
-	<integrateddynamics:crystalized_chorus_chunk> * 4, 1
+	<integrateddynamics:crystalized_chorus_chunk>, 1
 );
 mods.prodigytech.explosionfurnace.recipes.addRecipe(
 	<immersiveengineering:stone_decoration> * 3, <immersiveengineering:stone_decoration:1> * 3, 500, 
-	<contenttweaker:burn_powder> * 4, 1
+	<contenttweaker:burn_powder>, 1
 );
 
-/*recipes.addShaped("ia_blast_brick", <immersiveengineering:stone_decoration:1> * 4, [
-	[<contenttweaker:firebrick>, <ore:ingotBrickNether>, <contenttweaker:firebrick>], 
-	[<ore:ingotBrickNether>, <contenttweaker:industrial_clay>, <ore:ingotBrickNether>], 
-	[<contenttweaker:firebrick>, <ore:ingotBrickNether>, <contenttweaker:firebrick>]
-]);*/
+
 recipes.remove(<immersiveengineering:stone_decoration:2>);
 recipes.addShaped("ia_improved_blast_brick", <immersiveengineering:stone_decoration:2> * 3, [
 	[<immersiveengineering:stone_decoration:1>, <ore:clayPorcelain>, <immersiveengineering:stone_decoration:1>], 
@@ -166,9 +162,23 @@ mods.immersiveengineering.MetalPress.addRecipe(
 	recipes.remove(<immersiveengineering:metal_decoration1:1>);
 	recipes.addShaped("ia_steel_scaffold", <immersiveengineering:metal_decoration1:1> * 8, [
 		[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], 
-		[null, <contenttweaker:duraluminum_rod>, null], 
+		[<contenttweaker:solder>, <contenttweaker:duraluminum_rod>, <contenttweaker:solder>], 
 		[<ore:stickSteel>, null, <ore:stickSteel>]
 	]);
+	scripts.content_machines.addAssemblerRecipe([<immersiveengineering:metal_decoration1:1> * 12], [
+		<contenttweaker:duraluminum_rod>, <ore:stickSteel>, <contenttweaker:solder>
+	], null, 20, 256);
+	recipes.remove(<immersiveengineering:metal_decoration1:5>);
+	recipes.addShaped("ia_alum_scaffold", <immersiveengineering:metal_decoration1:5> * 8, [
+		[<thermalfoundation:material:324>, <thermalfoundation:material:324>, <thermalfoundation:material:324>], 
+		[<contenttweaker:solder>, <immersiveengineering:material:3>, <contenttweaker:solder>], 
+		[<immersiveengineering:material:3>, null, <immersiveengineering:material:3>]
+	]);
+	scripts.content_machines.addAssemblerRecipe([<immersiveengineering:metal_decoration1:5> * 12], [
+		<immersiveengineering:material:3> * 2, <contenttweaker:solder>
+	], null, 20, 256);
+	
+
 	recipes.remove(<immersiveengineering:metal_decoration0:3>);
 	recipes.addShaped("ia_ie_redstone_block", <immersiveengineering:metal_decoration0:3>, [
 		[<ore:plateIron> | <contenttweaker:zinc_plate>, <immersiveengineering:connector:12>, <ore:plateIron> | <contenttweaker:zinc_plate>], 
@@ -428,19 +438,19 @@ mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.wi
 //capacitors
 recipes.remove(<immersiveengineering:metal_device0>);
 recipes.addShaped("ia_lv_capacitor", <immersiveengineering:metal_device0>, [
-	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], 
+	[<ore:plateSteel>, <contenttweaker:balloy_plate>, <ore:plateSteel>], 
 	[<ore:gearElectrum>, <immersiveengineering:metal_decoration0>, <contenttweaker:lesmium_gear>], 
 	[<ore:plankTreatedWood>, <ore:blockRedstone>, <ore:plankTreatedWood>]
 ]);
 recipes.remove(<immersiveengineering:metal_device0:1>);
 recipes.addShaped("ia_mv_capacitor", <immersiveengineering:metal_device0:1>, [
-	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], 
+	[<ore:plateSteel>, <contenttweaker:balloy_plate>, <ore:plateSteel>], 
 	[<ore:gearElectrum>, <immersiveengineering:metal_decoration0:1>, <contenttweaker:lesmium_gear>], 
 	[<ore:plankTreatedWood>, <immersiveengineering:metal_device0>, <ore:plankTreatedWood>]
 ]);
 recipes.remove(<immersiveengineering:metal_device0:2>);
 recipes.addShaped("ia_hv_capacitor", <immersiveengineering:metal_device0:2>, [
-	[<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>], 
+	[<ore:plateSteel>, <contenttweaker:balloy_plate>, <ore:plateSteel>], 
 	[<ore:gearElectrum>, <immersiveengineering:metal_decoration0:2>, <contenttweaker:lesmium_gear>], 
 	[<ore:plankTreatedWood>, <immersiveengineering:metal_device0:1>, <ore:plankTreatedWood>]
 ]);
@@ -448,25 +458,25 @@ recipes.addShaped("ia_hv_capacitor", <immersiveengineering:metal_device0:2>, [
 {//components
 	recipes.remove(<immersiveengineering:material:8>);
 	recipes.addShaped("ia_iron_component", <immersiveengineering:material:8> * 2, [
-		[<ore:plateIron>, <contenttweaker:duraluminum_ingot>, <ore:plateIron>], 
+		[<ore:plateIron>, <contenttweaker:duraluminum_ingot>, <contenttweaker:solder>], 
 		[<ore:stickGold>, <contenttweaker:simple_motor>, <ore:stickLead>], 
-		[<ore:plateIron>, <contenttweaker:duraluminum_ingot>, <ore:plateIron>]
+		[<contenttweaker:solder>, <contenttweaker:duraluminum_ingot>, <ore:plateIron>]
 	]);
 	Blueprint.removeRecipe(<immersiveengineering:material:8>);
 	Blueprint.addRecipe(
 		"components", <immersiveengineering:material:8> * 3, 
-		[<ore:plateIron>, <ore:stickGold>, <contenttweaker:duraluminum_ingot>, <contenttweaker:simple_motor>, <ore:stickLead>]
+		[<ore:plateIron>, <contenttweaker:solder>, <ore:stickGold>, <contenttweaker:duraluminum_ingot>, <contenttweaker:simple_motor>, <ore:stickLead>]
 	);
 	recipes.remove(<immersiveengineering:material:9>);
 	recipes.addShaped("ia_steel_component", <immersiveengineering:material:9> * 2, [
-		[<ore:plateSteel>, <contenttweaker:duraluminum_ingot>, <ore:plateSteel>], 
+		[<ore:plateSteel>, <contenttweaker:duraluminum_ingot>, <contenttweaker:solder>], 
 		[<ore:stickElectrum>, <contenttweaker:simple_motor>, <contenttweaker:lesmium_rod>], 
-		[<ore:plateSteel>, <contenttweaker:duraluminum_ingot>, <ore:plateSteel>]
+		[<contenttweaker:solder>, <contenttweaker:duraluminum_ingot>, <ore:plateSteel>]
 	]);
 	Blueprint.removeRecipe(<immersiveengineering:material:9>);
 	Blueprint.addRecipe(
 		"components", <immersiveengineering:material:9> * 3, 
-		[<ore:plateSteel>, <ore:stickElectrum>, <contenttweaker:duraluminum_ingot>, <contenttweaker:simple_motor>, <contenttweaker:lesmium_rod>]
+		[<ore:plateSteel>, <contenttweaker:solder>, <ore:stickElectrum>, <contenttweaker:duraluminum_ingot>, <contenttweaker:simple_motor>, <contenttweaker:lesmium_rod>]
 	);
 }
 

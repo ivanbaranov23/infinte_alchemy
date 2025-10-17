@@ -22,7 +22,10 @@ import mods.ctutils.utils.Math as Math2;
 
 static Void_infuser as Assembly = <assembly:void_infuser>;
 
-Void_infuser.setTextSlot(0,0).setVisual(mods.requious.SlotVisual.create(7,1)).setRenderText("Sin points: %d", ["sin"]);
+Void_infuser.setTextSlot(0,0).setVisual(mods.requious.SlotVisual.create(7,1)).setRenderText(
+    "Sin points: %d.\nLast Death Points: %d.\nLast Sin Coefficient: %d%%.", [
+                "sin",                  "death_point",             "sin_coefficient"
+]);
 /*Void_infuser.setTextSlot(8,0).setVisual(
     mods.requious.SlotVisual.energySlot(),"test_variable","capacity"
 ).addPart("requious.text.test",["test_variable"]).addPart("requious.text.owner",["owner"]);*/
@@ -55,10 +58,10 @@ for pot,v in {
         container.machine.setInteger("sin",container.machine.getInteger("sin") + v);
         //container.machine.setInteger("capacity", 2000);
     });
-
     testVariables.requireItem("input", pot);
-
     Void_infuser.addRecipe(testVariables);
+
+    pot.addTooltip(game.localize("ia.tooltip.potato_sin") ~ v);
 }
 
 
@@ -124,7 +127,9 @@ var main_rec = AssemblyRecipe.create(function(container) {
             }
 
 
-            death_point = (((living_rock_blocks as double) * sin_pointsd * 0.01) + ((living_metal_blocks as double) * sin_pointsd * 0.03)) as int;
+            death_point = (
+                ((living_rock_blocks as double) * sin_pointsd * 0.01) + ((living_metal_blocks as double) * sin_pointsd * 0.03)
+            ) as int;
             
             //so dumb
             recover_sin = (living_wood_blocks as double) * (0.2 as double) - (wrong_blocks as double) * 0.1;
@@ -134,15 +139,16 @@ var main_rec = AssemblyRecipe.create(function(container) {
             var death_lrock as int = min(living_rock_blocks, (death_point - death_lmetal * 1000) / 4000);
 
             var recovered_sin as int = ((sin_pointsd - (death_point as double)) * recover_sin) as int;
-            var sin_coeff as double = pow((Math.log10(recovered_sin as double) - 3.0) / 5.0, 2.0);
+            var sin_coeff as double = pow((Math.log10((recovered_sin + 1) as double) - 3.0) / 5.0, 2.0);
+            sin_coeff = Math.clamp(sin_coeff, 0.0, 1.0);
             //log10 -> 4 - 8
             // -3.0 -> 1 - 5
             // /5 -> 0.2 - 1
             // ^2
-
+            var sin_coeff_int as int = (sin_coeff * 100.0) as int;
             
             container.setInteger("death_point", death_point);
-
+            container.setInteger("sin_coefficient", sin_coeff_int);
             container.setInteger("sin", recovered_sin);
 
             for x in 0 to 3
@@ -173,6 +179,9 @@ var main_rec = AssemblyRecipe.create(function(container) {
                 else if (state == living_wood){
                     if (Math2.random() > sin_coeff)
                         container.world.setBlockState(<blockstate:contenttweaker:living_waste>, pos);
+                }
+                else {
+                    container.world.setBlockState(<blockstate:contenttweaker:void_stone>, pos);
                 }
             }
 

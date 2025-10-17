@@ -34,15 +34,15 @@ function addLootTable(table as string, rmin as int, rmax as int, items as int[II
             <contenttweaker:electric_manyullyn_ingot>: 15
         });
         
-        addLootTable("contenttweaker:alien_erebus_1", 1, 3, {
-            <scannable:scanner>: 7,
+        addLootTable("contenttweaker:alien_erebus_1", 1, 2, {
+            <scannable:scanner>: 3,
             <scannable:module_blank>: 40,
             <industrialforegoing:meat_feeder>.withTag({Fluid: {FluidName: "meat", Amount: 128000}}): 10,
             <tconstruct:materials:14> * 2: 15,
-            <thermalfoundation:upgrade>: 10,
-            <thermalfoundation:upgrade:33>: 5,
-            <thermalfoundation:upgrade:34>: 3,
-            <thermalfoundation:upgrade:35>: 1,
+            <thermalfoundation:upgrade>: 15,
+            <thermalfoundation:upgrade:33>: 10,
+            <thermalfoundation:upgrade:34>: 5,
+            <thermalfoundation:upgrade:35>: 2,
 
             <enderio:item_travel_staff>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 0}}): 5
         });

@@ -369,6 +369,13 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		<biomesoplenty:dirt:2>: [
 			<thermalfoundation:material:772> % 15,
 			<agricraft:agri_nugget:2> % 5
+		],
+
+		<biomesoplenty:dried_sand>: [
+			<exnihilocreatio:item_ore_zinc> % 60,
+			<exnihilocreatio:item_ore_zinc> % 20,
+			<exnihilocreatio:item_ore_nickel> % 30,
+			<contenttweaker:antimony_pieces> % 20
 		]
 	},
 	ironMesh: {
@@ -431,6 +438,10 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<thermalfoundation:material:772> % 40,
 			<agricraft:agri_nugget:2> % 40,
 			<agricraft:agri_nugget:2> % 10
+		],
+
+		<biomesoplenty:dried_sand>: [
+			<contenttweaker:antimony_pieces> % 50
 		]
 	},
 	diamondMesh: {
@@ -443,7 +454,7 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_pebble:2> % 40,
 			<exnihilocreatio:item_pebble:3> % 40
 		],
-		<tconstruct:soil>: [
+		<netherblocks:crying_obsidian>: [
 			<exnihilocreatio:item_ore_platinum> % 1,
 			<exnihilocreatio:item_ore_iridium> % 1,
 			<contenttweaker:uranium_pieces> % 1,

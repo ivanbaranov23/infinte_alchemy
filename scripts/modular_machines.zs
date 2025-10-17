@@ -140,32 +140,17 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
 }
 
 {//others
-    /*recipes.addShaped("mm_heat_input", <modulardiversity:blockhotairinputhatch>, [
-        [<contenttweaker:basic_modularium>, <prodigytech:circuit_perfected>, <contenttweaker:basic_modularium>], 
-        [<contenttweaker:basic_modularium>, <modularmachinery:blockcasing>, <contenttweaker:basic_modularium>], 
-        [<contenttweaker:basic_modularium>, <prodigytech:capacitor_charger>, <contenttweaker:basic_modularium>]
-    ]);
-    recipes.addShaped("mm_heat_pouput", <modulardiversity:blockhotairoutputhatch>, [
-        [<modularmachinery:itemmodularium>, <prodigytech:capacitor_aeroheater>, <modularmachinery:itemmodularium>], 
-        [<prodigytech:zorrasteel_block>, <modularmachinery:blockcasing>, <prodigytech:zorrasteel_block>], 
-        [<modularmachinery:itemmodularium>, <prodigytech:circuit_perfected>, <modularmachinery:itemmodularium>]
-    ]);
-
-    recipes.addShaped("ia_mm_laser_input", <modulardiversity:blockmeklaseracceptor>, [
-        [<contenttweaker:osgloridium_plate>, <solarflux:mirror>, <contenttweaker:osgloridium_plate>], 
-        [<quantumflux:craftingpiece:2>, <modularmachinery:blockcasing:4>, <quantumflux:craftingpiece:2>], 
-        [<contenttweaker:osgloridium_plate>, <solarflux:mirror>, <contenttweaker:osgloridium_plate>]
-    ]);*/
-
     recipes.addShaped("ia_mm_grid_input", <modularmachinery:blockgridproviderinput>, [
         [<extrautils2:decorativesolid:3>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:3>], 
-        [<moreplates:enchanted_plate>, <modularmachinery:blockcasing>, <moreplates:enchanted_plate>], 
+        [<contenttweaker:resonating_plate>, <modularmachinery:blockcasing>, <contenttweaker:resonating_plate>], 
         [<extrautils2:decorativesolid:3>, <ore:gemMoon>, <extrautils2:decorativesolid:3>]
     ]);
-    recipes.addShaped("ia_mm_grid_output", <modularmachinery:blockgridprovideroutput>, [
-        [<extrautils2:decorativesolid:8>, <extrautils2:suncrystal>, <extrautils2:decorativesolid:8>], 
-        [<ore:plateEvilMetal>, <modularmachinery:blockcasing:4>, <ore:plateEvilMetal>], 
-        [<extrautils2:decorativesolid:8>, <ore:gemMoon>, <extrautils2:decorativesolid:8>]
+    mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockgridprovideroutput>, [
+        [<biomesoplenty:terrestrial_artifact>, <contenttweaker:resonating_plate>, <extrautils2:suncrystal>, <contenttweaker:resonating_plate>, <biomesoplenty:terrestrial_artifact>], 
+        [<moreplates:evil_infused_iron_plate>, <contenttweaker:resonating_plate>, <extrautils2:suncrystal>, <contenttweaker:resonating_plate>, <moreplates:evil_infused_iron_plate>], 
+        [<moreplates:evil_infused_iron_plate>, <contenttweaker:resonating_plate>, <modularmachinery:blockcasing:4>, <contenttweaker:resonating_plate>, <moreplates:evil_infused_iron_plate>], 
+        [<moreplates:evil_infused_iron_plate>, <contenttweaker:resonating_plate>, <extrautils2:ingredients:5>, <contenttweaker:resonating_plate>, <moreplates:evil_infused_iron_plate>], 
+        [<biomesoplenty:terrestrial_artifact>, <contenttweaker:resonating_plate>, <extrautils2:ingredients:5>, <contenttweaker:resonating_plate>, <biomesoplenty:terrestrial_artifact>]
     ]);
 
     {//will

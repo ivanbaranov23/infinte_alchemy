@@ -1,0 +1,19 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"aef31a57"
+	],
+	optional: true,
+	tasks: [{
+		uid: "53ddd9b3",
+		type: "checkmark",
+		title: "Ore Waste",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "ore_waste"
+			}
+		}
+	}]
+}

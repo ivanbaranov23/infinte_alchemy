@@ -90,20 +90,104 @@ import mods.enderio.SagMill;
             40, 1000
         );
     }
+
+    {//antimony
+        mods.immersiveengineering.AlloySmelter.addRecipe(
+            <contenttweaker:antimony_dust> * 2, 
+            <contenttweaker:stibnite> * 2,
+            <thermalfoundation:material>,
+            200
+        );
+    
+        mods.thermalexpansion.InductionSmelter.addRecipe(
+            <contenttweaker:antimony_dust> * 2, 
+            <contenttweaker:stibnite> * 2,
+            <thermalfoundation:material>,
+            2000,
+            <mekanism:dirtydust>, 30
+        );
+
+
+        mods.alchemistry.Dissolver.addRecipe(<contenttweaker:stibnite>, false, 1, [
+            [100, <alchemistry:element:51> * 32, <alchemistry:element:16> * 48]
+        ]);
+
+        <contenttweaker:antimony_ore>.addTooltip(game.localize("ia.antimony_tooltip"));
+        <contenttweaker:antimony_ore_dense>.addTooltip(game.localize("ia.antimony_tooltip"));
+    }
 }
 {//silver
     recipes.addShapeless("silver_conv", <thermalfoundation:ore:2>, [
         <mysticalworld:silver_ore> | <immersiveengineering:ore:3>
     ]);
 }
+{//t3
+    {
+        furnace.remove(<thermalfoundation:material:134>);
+        furnace.remove(<ore:ingotPlatinum>);
+    }
+    {
+        furnace.remove(<thermalfoundation:material:135>);
+        furnace.remove(<ore:ingotIridium>);
+    }
+    {//titanium
+        <ore:ingotTitanium>.removeItems(<ore:ingotTitanium>.items);
+        <ore:ingotTitanium>.add(<contenttweaker:titanium_ingot>);
+        <ore:dustTitanium>.remove(<exnihilocreatio:item_ore_titanium:2>);
+        <ore:dustTitanium>.add(<contenttweaker:titanium_dust>);
 
-{//netherite
-    <ore:oreNetherite>.remove(<netherite:ancientdebris>);
-    <ore:dustNetherite>.add(<netherite:netheritescrap>);
-    furnace.remove(<netherite:netheritescrap>);
-    furnace.remove(<netherite:netheriteingot>);
+        furnace.remove(<exnihilocreatio:item_ore_titanium:3>);
+        furnace.remove(<ore:ingotTitanium>);
+        mods.mekanism.chemical.dissolution.addRecipe(<exnihilocreatio:item_ore_titanium:1>, <gas:titanium> * 1000);
+        mods.mekanism.chemical.dissolution.addRecipe(<contenttweaker:titanium_ore>, <gas:titanium> * 1000);
+
+        mods.immersiveengineering.ArcFurnace.removeRecipe(<exnihilocreatio:item_ore_titanium:3>);
+        mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <exnihilocreatio:item_ore_titanium:1>);
+        mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <exnihilocreatio:item_ore_titanium:2>);
+        mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <contenttweaker:titanium_dust>);
+
+        
+        scripts.helper.addHighOvenSmelting(
+            [<contenttweaker:titanium_ingot> * 2], 
+            [<contenttweaker:titanium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+            [<liquid:pyrotheum> * 2000], 20 * 20, 256
+        );
+        scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:titanium_ingot>], [<contenttweaker:titanium_dust>], 10240, 1);
+
+        mods.jei.JEI.addItem(<densemetals:dense_rutile_ore>);
+
+
+        
+    }
+    {
+        furnace.remove(<exnihilocreatio:item_ore_tungsten:3>);
+    }
+    {
+        furnace.remove(<immersiveengineering:metal:5>);
+        furnace.remove(<ore:ingotUranium>);
+    }
+    {//yellorium
+        furnace.remove(<bigreactors:ingotyellorium>);
+        furnace.remove(<ore:ingotYellorium>);
+    }
+
+    {//netherite
+        <ore:oreNetherite>.remove(<netherite:ancientdebris>);
+        <ore:dustNetherite>.add(<netherite:netheritescrap>);
+        furnace.remove(<netherite:netheritescrap>);
+        furnace.remove(<netherite:netheriteingot>);
+
+        mods.thermalexpansion.Crucible.addRecipe(<liquid:debris> * 1000, <netherite:ancientdebris>, 4000);
+        mods.mekanism.reaction.addRecipe(
+            <contenttweaker:ancient_dust>, <liquid:debris> * 500, <gas:acetic_acid> * 500, 
+            <contenttweaker:debris> * 2, <gas:cleanvalyrium> * 300, 1500, 60
+        );
+
+        mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:hydrogenchloride>, <netherite:netheritescrap>);
+        mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:rfna>, <netherite:netheritescrap> * 2);
+        mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:evil_nitrate>, <netherite:netheritescrap> * 4);
+    }
 }
-
 {//atum
     SagMill.addRecipe([<thermalfoundation:material> * 2, <atum:loot_ruby_broach>, <atum:loot_sapphire_broach>], [1.0, 0.1, 0.1], <atum:iron_ore>, "MULTIPLY_OUTPUT");
     SagMill.addRecipe([<thermalfoundation:material:768> * 2, <atum:loot_ruby_broach>, <atum:loot_sapphire_broach>], [1.0, 0.1, 0.1], <atum:coal_ore>, "MULTIPLY_OUTPUT");
@@ -117,32 +201,16 @@ import mods.enderio.SagMill;
 }
 
 
-{//titanium
-    <ore:ingotTitanium>.removeItems(<ore:ingotTitanium>.items);
-    <ore:ingotTitanium>.add(<contenttweaker:titanium_ingot>);
-    <ore:dustTitanium>.remove(<exnihilocreatio:item_ore_titanium:2>);
-    <ore:dustTitanium>.add(<contenttweaker:titanium_dust>);
 
-    furnace.remove(<exnihilocreatio:item_ore_titanium:3>);
-    furnace.remove(<ore:ingotTitanium>);
-    mods.mekanism.chemical.dissolution.addRecipe(<exnihilocreatio:item_ore_titanium:1>, <gas:titanium> * 1000);
-    mods.mekanism.chemical.dissolution.addRecipe(<contenttweaker:titanium_ore>, <gas:titanium> * 1000);
-
-    mods.immersiveengineering.ArcFurnace.removeRecipe(<exnihilocreatio:item_ore_titanium:3>);
-    mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <exnihilocreatio:item_ore_titanium:1>);
-    mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <exnihilocreatio:item_ore_titanium:2>);
-    mods.tconstruct.Melting.removeRecipe(<liquid:titanium>, <contenttweaker:titanium_dust>);
-
-    
-    scripts.helper.addHighOvenSmelting(
-        [<contenttweaker:titanium_ingot> * 2], 
-        [<contenttweaker:titanium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
-        [<liquid:pyrotheum> * 2000], 20 * 20, 256
+{//bismuth
+    mods.actuallyadditions.Empowerer.addRecipe(
+        <contenttweaker:bismuth_ore> * 2, <chisel:diamond:6>, 
+        <contenttweaker:gapo4>, <contenttweaker:fishy_capacitor>, <moretcon:ingotfusionite>, <thermalexpansion:florb>.withTag({Fluid: "ore_make"}), 
+        10000, 20 * 4,
+        [141 / 255.0, 5 / 255.0, 179 / 255.0]
     );
-    scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:titanium_ingot>], [<contenttweaker:titanium_dust>], 10240, 1);
-
-    mods.jei.JEI.addItem(<densemetals:dense_rutile_ore>);
 }
+
 {//cursed gold
     <ore:dustCursedgold>.add(<contenttweaker:cursed_gold_dust>);
 }

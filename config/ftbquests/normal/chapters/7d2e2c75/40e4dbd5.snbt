@@ -1,5 +1,5 @@
 {
-	x: 11.0d,
+	x: 10.0d,
 	y: -2.0d,
 	text: [
 		"Make a scanner from scannable for scanning."

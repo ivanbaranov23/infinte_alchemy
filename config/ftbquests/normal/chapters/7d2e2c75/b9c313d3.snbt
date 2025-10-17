@@ -1,5 +1,5 @@
 {
-	x: -1.0d,
+	x: -5.0d,
 	y: 0.0d,
 	dependencies: [
 		"95214734"
@@ -10,5 +10,10 @@
 		items: [{
 			item: "contenttweaker:mekanical_core"
 		}]
+	}],
+	rewards: [{
+		uid: "b836613b",
+		type: "item",
+		item: "contenttweaker:mekanical_core"
 	}]
 }

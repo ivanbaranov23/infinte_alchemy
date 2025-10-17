@@ -1,0 +1,21 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	text: [
+		"Can be obtained from the delightful nether plant."
+	],
+	dependencies: [
+		"efdd51c6"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4599ea8b",
+		type: "item",
+		items: [{
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "mercury"
+			}
+		}]
+	}]
+}

@@ -10,5 +10,10 @@
 		items: [{
 			item: "mekanism:controlcircuit 1 2"
 		}]
+	}],
+	rewards: [{
+		uid: "61f2fabc",
+		type: "item",
+		item: "mekanism:controlcircuit 1 2"
 	}]
 }

@@ -1,0 +1,22 @@
+{
+	x: 2.0d,
+	y: 2.0d,
+	dependencies: [
+		"7190a5b2"
+	],
+	optional: true,
+	tasks: [{
+		uid: "71701639",
+		type: "item",
+		items: [{
+			item: "mekanism:energytablet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5113f87d",
+		type: "item",
+		item: "mekanism:energytablet"
+	}]
+}

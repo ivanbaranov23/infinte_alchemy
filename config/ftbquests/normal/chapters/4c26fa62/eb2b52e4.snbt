@@ -1,0 +1,26 @@
+{
+	x: -5.0d,
+	y: 10.5d,
+	dependencies: [
+		"29a45527"
+	],
+	tasks: [{
+		uid: "75ef7f08",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mapbi3"
+		}]
+	},
+	{
+		uid: "22dd4df3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:perovskite2_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "2b70782e",
+		type: "item",
+		item: "contenttweaker:perovskite2_block"
+	}]
+}

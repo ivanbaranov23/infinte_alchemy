@@ -2,7 +2,7 @@
 	title: "Hive",
 	icon: "biomesoplenty:honeycomb",
 	x: 1.0d,
-	y: 1.0d,
+	y: 2.0d,
 	text: [
 		"Find a big hive and raid it. There'll be wasps inside."
 	],

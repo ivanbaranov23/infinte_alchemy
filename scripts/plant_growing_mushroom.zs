@@ -37,3 +37,41 @@ import mods.thermalexpansion.Imbuer;
     Imbuer.addRecipe(<liquid:glowshroom_stew> * 1000, <quark:glowshroom>, <liquid:mushroom_stew> * 1000, 8000);
 }
 
+{//eggplant
+    recipes.addShapeless("ia_eggplant", <contenttweaker:eggplant_dust> * 3, [
+        <betternether:egg_plant>, <harvestcraft:eggplantitem>, <minecraft:egg>, <contenttweaker:plant_sample>
+    ]);
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:eggplant_dust> * 8], [], 
+        [
+            <betternether:egg_plant>, <harvestcraft:eggplantitem>, <minecraft:egg>, <contenttweaker:plant_sample>
+        ], [], 40, 500
+    );
+    mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:eggplant_dust> * 12, [
+        <betternether:egg_plant>, <harvestcraft:eggplantitem>, <minecraft:egg>, <contenttweaker:plant_sample>
+    ], 100, 8);
+
+
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <betternether:egg_plant>, 
+        <contenttweaker:eggplant_dust>, <contenttweaker:fertilizer4>, <liquid:mushroom_stew> * 1000, 
+        80, 1000
+    );
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <betternether:egg_plant> * 2, 
+        <contenttweaker:eggplant_dust>, <contenttweaker:fertilizer3>, <liquid:glowshroom_stew> * 500, 
+        80, 1000
+    );
+
+
+    mods.alchemistry.Dissolver.addRecipe(<betternether:egg_plant>, false, 1,
+        [
+            [100, <alchemistry:compound> * 4, <alchemistry:compound:60> * 32]
+        ]
+    );
+    mods.alchemistry.Dissolver.addRecipe(<contenttweaker:eggplant_dust>, false, 1,
+        [
+            [100, <alchemistry:compound:60> * 32]
+        ]
+    );
+}

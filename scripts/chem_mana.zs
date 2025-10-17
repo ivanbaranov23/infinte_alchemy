@@ -59,6 +59,18 @@ import mods.modularmachinery.RecipeBuilder;
         null, <gas:evil> * 100, 900, 60
     );
 }
+{//void
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <moretcon:dustzracohlium> * 4 % 95, <moretcon:dustzracohlium> * 3 % 50,
+            <draconicevolution:draconium_dust> * 6 % 80, <contenttweaker:molybdenum_dust> * 4 % 30,
+            <contenttweaker:nickel_oxide> * 4 % 50
+        ], <liquid:void_residue> * 500, 
+        <liquid:acid1> * 1000, <contenttweaker:void_stone>,
+        <contenttweaker:research_sieving2>,
+        20, 100000
+    );
+}
 
 
 {//nether star

@@ -1,6 +1,9 @@
 {
 	x: 11.0d,
 	y: 2.0d,
+	text: [
+		"To turn oil into oil."
+	],
 	dependencies: [
 		"e08ae208"
 	],

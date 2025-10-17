@@ -1,6 +1,9 @@
 {
-	x: 4.0d,
+	x: 1.0d,
 	y: 1.0d,
+	text: [
+		"This uses a lot of osmium, huh."
+	],
 	dependencies: [
 		"0d70f504",
 		"f643621d"

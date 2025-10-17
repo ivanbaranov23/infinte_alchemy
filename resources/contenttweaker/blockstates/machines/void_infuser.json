@@ -8,8 +8,8 @@
       "inventory":[{}],
       "facing": {"up": {}},
       "active": {
-        "true": {"textures": {"burn_plate": "contenttweaker:blocks/machines/wood_infuser_mesh_active"}},
-        "false": {"textures": {"burn_plate": "contenttweaker:blocks/machines/wood_infuser_mesh"}}
+        "true": {"textures": {"0": "contenttweaker:blocks/machines/void_active"}},
+        "false": {"textures": {"0": "contenttweaker:blocks/empty"}}
       }
     }
   }

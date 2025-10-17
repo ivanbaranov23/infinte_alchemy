@@ -1,0 +1,24 @@
+{
+	x: -3.0d,
+	y: 7.5d,
+	dependencies: [
+		"782fc8e8"
+	],
+	tasks: [{
+		uid: "ebef0c96",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity_custom 1 69"
+		}]
+	}],
+	rewards: [{
+		uid: "ff52dcbe",
+		type: "item",
+		item: "extendedcrafting:singularity_custom 1 69"
+	},
+	{
+		uid: "2b5144d4",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

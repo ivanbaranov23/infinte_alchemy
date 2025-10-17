@@ -1,0 +1,19 @@
+{
+	title: "Alloyer",
+	x: 1.0d,
+	y: -2.0d,
+	text: [
+		"Alloys 2 metals at the cost of furnace fuel."
+	],
+	dependencies: [
+		"26314133"
+	],
+	tasks: [{
+		uid: "3fd39846",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 10"
+		}],
+		count: 8L
+	}]
+}

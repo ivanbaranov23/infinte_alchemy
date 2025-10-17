@@ -1,0 +1,21 @@
+{
+	x: 3.0d,
+	y: 5.0d,
+	dependencies: [
+		"28fec655"
+	],
+	tasks: [{
+		uid: "c6be6d5d",
+		type: "checkmark",
+		title: "Oxygen and Hydrogen",
+		icon: {
+			id: "aeadditions:pattern.fluid",
+			tag: {
+				Fluid: {
+					FluidName: "ec.internal.oxygen",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

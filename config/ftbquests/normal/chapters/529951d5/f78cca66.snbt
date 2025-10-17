@@ -2,7 +2,7 @@
 	title: "Farm some crops 5",
 	icon: "natura:edibles 1 10",
 	x: -1.0d,
-	y: 4.0d,
+	y: 5.0d,
 	shape: "diamond",
 	text: [
 		"you can also forage i quess.",

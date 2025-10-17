@@ -9,11 +9,13 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:csitl>, [
 );
 
 //gapo4
-mods.thermalexpansion.InductionSmelter.addRecipe(
+/*mods.thermalexpansion.InductionSmelter.addRecipe(
 	<contenttweaker:gapo4>, 
-	<contenttweaker:gallium_dust> * 3, <contenttweaker:glowcrystal> * 16, 
+	<contenttweaker:gallium_dust> * 3, <contenttweaker:glowcrystal> * 24, 
 	32000
-);
+);*/
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:gapo4>, <contenttweaker:gallium_dust> * 2, <liquid:phosphoric_acid> * 3000, 10000);
+
 mods.alchemistry.Combiner.addRecipe(<contenttweaker:gapo4>, [
 	<alchemistry:element:31> * 8, <alchemistry:compound:14> * 8
 ]);

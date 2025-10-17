@@ -343,6 +343,13 @@ scripts.content_machines.addFluidMixerRecipe(
         40, 120
     );
 }
+{//titanium
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <exnihilocreatio:item_ore_titanium:1>, 
+        <exnihilocreatio:item_ore_osmium> * 2, <liquid:lava_residue> * 400, 
+        20000
+    );
+}
 {//tungsten
     <contenttweaker:dark_shard>.addTooltip("Source of tungsten");
     scripts.content_machines.addFluidAlloyerRecipe(
@@ -501,4 +508,13 @@ scripts.content_machines.addFluidMixerRecipe(
         
         rec.build();
     }
+}
+
+{//scandium
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:scandium_chloride_dust>], [<liquid:phosphoric_acid> * 1000], 
+        [<contenttweaker:kolbeckite>], [<liquid:hf> * 1000], 
+        40, 20000
+    );
+
 }

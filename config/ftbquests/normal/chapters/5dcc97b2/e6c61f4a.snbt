@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: -5.0d,
+	dependencies: [
+		"dad92572"
+	],
+	tasks: [{
+		uid: "a0539a8f",
+		type: "item",
+		items: [{
+			item: "mysticalcreations:antimony_seeds"
+		}]
+	}]
+}

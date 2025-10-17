@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	dependencies: [
+		"5bb8b829"
+	],
+	optional: true,
+	tasks: [{
+		uid: "bd0f9d44",
+		type: "item",
+		items: [{
+			item: "taiga:valyrium_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "f9dde128",
+		type: "item",
+		item: "taiga:valyrium_block"
+	}]
+}

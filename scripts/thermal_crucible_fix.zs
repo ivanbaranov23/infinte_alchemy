@@ -25,3 +25,5 @@ Crucible.removeRecipe(<minecraft:cobblestone>);
 Crucible.addRecipe(<liquid:stone> * 72, <minecraft:cobblestone>, 5500);
 Crucible.removeRecipe(<minecraft:stone>);
 Crucible.addRecipe(<liquid:stone> * 72, <minecraft:stone>, 5500);
+
+mods.thermalexpansion.Crucible.removeRecipe(<minecraft:magma>);

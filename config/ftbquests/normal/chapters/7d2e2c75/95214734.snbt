@@ -1,6 +1,6 @@
 {
 	title: "Welcome to Mekanism Chapter",
-	x: -2.0d,
+	x: -6.0d,
 	y: 0.0d,
 	shape: "square",
 	text: [

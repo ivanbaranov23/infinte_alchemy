@@ -2344,7 +2344,7 @@ tile.contenttweaker.pure_cincinnasite.name=Pure Cincinnasite
 item.contenttweaker.benzene.name=Benzene
 item.contenttweaker.chlorobenzene.name=Chlorobenzene
 item.contenttweaker.benzaldehyde.name=Benzaldehyde
-item.contenttweaker.ethylbenzene.name=Ethylnenzene
+item.contenttweaker.ethylbenzene.name=Ethylbenzene
 
 item.contenttweaker.toluene.name=Toluene
 item.contenttweaker.tosyl_chloride.name=Tosyl Chloride
@@ -2387,3 +2387,97 @@ item.contenttweaker.rune_cyclic.name=Rune of Everchanging Seasons
 
 item.contenttweaker.signal_reciever.name=RF Signal Reciever
 item.contenttweaker.signal_sender.name=RF Signal Sender
+
+item.contenttweaker.antimony_pieces.name=Stibnite Piece
+item.contenttweaker.antimony_chunk.name=Stibnite Chunk
+tile.contenttweaker.antimony_ore.name=Stibnite Ore
+tile.contenttweaker.antimony_ore_dense.name=Dense Stibnite Ore
+ia.antimony_tooltip=Antimony Mineral
+item.contenttweaker.stibnite.name=Stibnite
+item.contenttweaker.antimony_dust.name=Antimony Dust
+tile.contenttweaker.antimony_block.name=Block of Antimony
+item.contenttweaker.solder.name=Solder
+fluid.antimony=Molten Antimony
+
+ia.egg_hint.cocoon=Feed Coocon Items to Turn It into Mob
+
+item.contenttweaker.methylamine.name=Methylamine
+item.contenttweaker.mai.name=Methylammonium Iodide
+item.contenttweaker.mapbi3.name=Methylammonium Lead Triiodide
+
+ia.tooltip.potato_sin=Sin points in void infuser: 
+ia.tooltip.void_infuser0=§rInput tiny potatoes to get §4sin points§r.
+ia.tooltip.void_infuser1=§rInput §6sin nickel ingot§r to start the recipe. Infuser will count the blocks on top of it:
+ia.tooltip.void_infuser2=§3Livingrock§r, §2Livingwood§r and §6Blocks of Living Metal§r. Everything else,
+ia.tooltip.void_infuser3=§rincluding air, will be counted as §5wrong blocks§r.
+ia.tooltip.void_infuser4=- - - - -
+ia.tooltip.void_infuser5=§4Death points§r=§4Sin points §r* (1% * §3Livingrock §r +  3% * §6Blocks of Living Metal§r)
+ia.tooltip.void_infuser6=§6Sin recover§r=(§2Livingwood§r * 20% - §5wrong blocks§r * 10%)
+ia.tooltip.void_infuser7=§6Sin recover§r is capped at 95%
+ia.tooltip.void_infuser8=§6Sin points§r after recipe will be (§6Sin points§r before - §4Death points§r) * §6Sin recover
+ia.tooltip.void_infuser9=§6Sin coefficient§r=( log10(1 + §6Sin points§r after) / 5 - 0.6 )^2
+ia.tooltip.void_infuser10=- - - - -
+ia.tooltip.void_infuser11=§rAfter recipe, all blocks on top will be transformed. 
+ia.tooltip.void_infuser12=§5Wrong blocks§r will turn into Void Infused Waste.
+ia.tooltip.void_infuser13=§2Livingwood§r will turn into Living Waste with the chance=(1 - §6Sin coefficient§r)%.
+ia.tooltip.void_infuser14=§6Blocks of Living Metal§r will turn into §4Death Metal Ore§r or§4 Dense Death Metal Ore
+ia.tooltip.void_infuser15=§rat 1000§4 death points§r per block.
+ia.tooltip.void_infuser16=§3Livingrock§r will turn into §4Death Metal Ore§r or§4 Dense Death Metal Ore
+ia.tooltip.void_infuser17=§rat 4000§4 death points§r per block.§4 Death points§r are spent on §6Blocks of Living Metal§r first,
+ia.tooltip.void_infuser18=§ron §3Livingrock§r second.
+ia.tooltip.void_infuser19=§rOre will be dense with the chance=§6Sin coefficient§r%
+
+tile.contenttweaker.void_stone.name=Void Infused Waste
+tile.contenttweaker.living_waste.name=Living Waste
+
+item.contenttweaker.balloy_ingot.name=Balloy Ingot
+item.contenttweaker.balloy_plate.name=Balloy Plate
+item.contenttweaker.balloy_ball.name=Balloy Ball
+item.contenttweaker.balloy_dust.name=Balloy Dust
+tile.contenttweaker.balloy_block.name=Block of Balloy
+
+ia.arb_extractor_hint=Amount is an output multiplier
+
+item.contenttweaker.scandium_dust.name=Scandium Dust
+
+tile.contenttweaker.geode_ore.name=Geode Ore
+
+infuse.cheese=Cheese
+
+item.contenttweaker.gapo4.name=Gallium Orthophosphate Crystal
+item.contenttweaker.activated_carbon.name=Activated Carbon
+
+item.contenttweaker.resonating_plate.name=Resonating Plate
+item.contenttweaker.impact_spreader.name=Impact Spreader
+item.contenttweaker.igniter.name=Igniter
+item.contenttweaker.tank_hydrogen.name=Tank with Hydrogen
+item.contenttweaker.tank_knallgas.name=Tank with Knallgas
+
+item.contenttweaker.bismuth_pieces.name=Bismuth Pieces
+item.contenttweaker.bismuth_chunk.name=Bismuth Chunk
+tile.contenttweaker.bismuth_ore.name=Bismuth Ore
+item.contenttweaker.bismuth_ingot.name=Bismuth Ingot
+item.contenttweaker.bismuth_dust.name=Bismuth Dust
+tile.contenttweaker.bismuth_block.name=Block of Bismuth
+fluid.bismuth=Molten Bismuth
+
+item.contenttweaker.varec.name=Kelp Ash (Varec)
+item.contenttweaker.iodine.name=Iodine
+
+item.contenttweaker.blue_paste.name=Blue Paste
+item.contenttweaker.black_paste.name=Black Paste
+item.contenttweaker.bismuth_bronze_ingot.name=Bismuth Bronze Ingot
+tile.contenttweaker.bismuth_bronze_block.name=Block of Bismuth Bronze
+
+item.contenttweaker.eggplant_dust.name=Eggplant-Egg Plant-Egg-Plant Mixture
+
+fluid.mercury=Mercury
+
+item.contenttweaker.gaia_crystal.name=Gaia Crystal
+item.contenttweaker.entwood_heart.name=Entwood Heart
+
+item.contenttweaker.limestone_dust.name=Limestone Dust
+item.contenttweaker.netherrack_dust.name=Netherrack Dust
+
+fluid.debris=Molten Debris
+item.contenttweaker.debris.name=Dirty Netherite Scrap

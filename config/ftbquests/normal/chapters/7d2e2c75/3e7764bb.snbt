@@ -1,13 +1,14 @@
 {
-	x: 12.0d,
+	x: 11.0d,
 	y: 0.0d,
 	text: [
 		"You'll need at least two."
 	],
 	dependencies: [
-		"9feec472",
 		"a6179815",
-		"30e63d05"
+		"30e63d05",
+		"9feec472",
+		"73387547"
 	],
 	tasks: [{
 		uid: "f8453354",

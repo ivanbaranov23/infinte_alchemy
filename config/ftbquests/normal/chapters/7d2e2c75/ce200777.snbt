@@ -1,6 +1,9 @@
 {
-	x: 16.0d,
+	x: 3.0d,
 	y: -3.0d,
+	text: [
+		"Add vibranium for better results"
+	],
 	dependencies: [
 		"373e6863"
 	],

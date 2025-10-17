@@ -108,5 +108,10 @@ recipes.addShapeless("ia_fiery_tears1", <twilightforest:fiery_tears> * 8, [
 	<minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>, <minecraft:glass_bottle>
 ]);
 
+//staffs
+recipes.addShapeless("ia_zombie_scepter", <twilightforest:zombie_scepter>, [
+	<contenttweaker:staffwood>, <contenttweaker:lich_bone>, <contenttweaker:lich_bone>, <minecraft:skull:2>
+]);
+
 
 mods.jei.JEI.hideCategory("jei_uncrafting");

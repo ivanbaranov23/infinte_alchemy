@@ -1987,7 +1987,8 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "minecraft:hardened_clay@0"
+                "minecraft:hardened_clay@0",
+                "modularmachinery:blockparallelcontroller"
             ]
         },
         {

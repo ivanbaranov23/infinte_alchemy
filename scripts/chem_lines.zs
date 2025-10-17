@@ -223,6 +223,19 @@ import mods.modularmachinery.RecipeBuilder;
 }
 
 
+{//carbon
+    mods.thermalexpansion.Compactor.addStorageRecipe(<prodigytech:carbon_plate>, <moretcon:carbonpile>, 2500);
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <contenttweaker:activated_carbon> * 8, 
+        <prodigytech:carbon_plate> * 8, <moretcon:gemgarstone>, <liquid:phosphoric_acid> * 1000, 
+        200, 1000
+    );
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <contenttweaker:activated_carbon> * 12, 
+        <prodigytech:carbon_plate> * 12, <contenttweaker:activated_biopower>, <liquid:phosphoric_acid> * 1000, 
+        200, 1000
+    );
+}
 
 {//nitrogen
     //rfna
@@ -330,6 +343,12 @@ import mods.modularmachinery.RecipeBuilder;
         ], <enderio:item_material:32>, null, 
         12000
     );
+
+    mods.alchemistry.Dissolver.addRecipe(<contenttweaker:coral_dust>, false, 1,
+        [
+            [1, <alchemistry:compound:13> * 32]
+        ]
+    );
 }
 
 {//redstone
@@ -415,6 +434,14 @@ import mods.modularmachinery.RecipeBuilder;
     );
 }
 
+{//mercury
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:mercury> * 250, 
+        <liquid:ore_waste> * 500, <liquid:antimony> * 144, <betternether:egg_plant>, 
+        100, 150
+    );
+    Crucible.addRecipe(<liquid:mercury> * 1000, <thermalfoundation:material:866>, 8000);
+}
 
 
 {//concrete
@@ -801,8 +828,8 @@ import mods.modularmachinery.RecipeBuilder;
 
     mods.thermalexpansion.InductionSmelter.addRecipe(
         <contenttweaker:eliamondin>, 
-        <contenttweaker:eliamondin_dust>, <contenttweaker:slimy_glass>, 
-        5000
+        <contenttweaker:eliamondin_dust>, <contenttweaker:slimy_glass> * 2, 
+        10000
     );
 
 }

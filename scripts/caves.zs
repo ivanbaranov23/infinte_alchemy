@@ -23,10 +23,22 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     800
 );
 
-recipes.addShapeless("ia_dripstone", <caves_n_cliffs:dripstone_block> * 8, [
-    <minecraft:hardened_clay>, <chisel:waterstone>,
-    <chisel:waterstone>, <minecraft:hardened_clay>
-]);
+{//dripstone
+    recipes.addShapeless("ia_dripstone", <caves_n_cliffs:dripstone_block> * 8, [
+        <minecraft:hardened_clay>, <chisel:waterstone>,
+        <chisel:waterstone>, <minecraft:hardened_clay>
+    ]);
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:ovium_pieces> % 30,
+            <exnihilocreatio:item_ore_platinum> % 20,
+            <contenttweaker:gallium_pieces> % 10
+        ], null, 
+        <liquid:tartaric_acid> * 500, <caves_n_cliffs:dripstone_block> * 4,
+        <contenttweaker:research_sieving2>,
+        20, 20000
+    );
+}
 
 recipes.addShapeless("ia_deepslate", <caves_n_cliffs:cobbled_deepslate> * 8, [
     <minecraft:cobblestone>, <quark:slate>,

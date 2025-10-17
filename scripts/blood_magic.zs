@@ -262,8 +262,8 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	);
 }
 {//ingots
-	BloodAltar_addRecipe(<bloodtinker:blood_bronze_ingot>, <contenttweaker:black_bronze_ingot>, 0, 4000, 50, 250);
-	BloodAltar_addRecipe(<bloodtinker:blood_bronze_block>, <contenttweaker:black_bronze_block>, 0, 32000, 500, 500);
+	BloodAltar_addRecipe(<bloodtinker:blood_bronze_ingot>, <contenttweaker:bismuth_bronze_ingot>, 0, 4000, 50, 250);
+	BloodAltar_addRecipe(<bloodtinker:blood_bronze_block>, <contenttweaker:bismuth_bronze_block>, 0, 32000, 500, 500);
 
 	BloodAltar_addRecipe(<tconevo:metal:25>, <bloodtinker:blood_bronze_ingot>, 3, 30000, 1000, 5000);
 	BloodAltar_addRecipe(<tconevo:metal_block:5>, <bloodtinker:blood_bronze_block>, 3, 30000 * 8, 5000, 10000);

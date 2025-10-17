@@ -3,7 +3,7 @@
 	x: 6.0d,
 	y: 1.0d,
 	text: [
-		""
+		"Cheese tools for infinite durability"
 	],
 	dependencies: [
 		"8cc62bd6"

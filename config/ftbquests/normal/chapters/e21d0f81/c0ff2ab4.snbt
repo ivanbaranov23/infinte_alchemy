@@ -11,5 +11,10 @@
 		items: [{
 			item: "contenttweaker:ra_burner"
 		}]
+	}],
+	rewards: [{
+		uid: "77876726",
+		type: "item",
+		item: "contenttweaker:ra_burner"
 	}]
 }

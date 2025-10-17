@@ -5,6 +5,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.WeightedItemStack;
 
 import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
 
 
 <ore:fertilizer>.add(<actuallyadditions:item_fertilizer>);
@@ -116,7 +117,7 @@ static GCnumbers as int[] = [
     34,
     55
 ];
-
+/*
 function addGCrecipe(tier as int, seeds as IItemStack[], fruits as WeightedItemStack[], catalyst as IItemStack[], mult as int){
     var rec = RecipeBuilder.newBuilder("GC_" ~ fruits[0].stack.name ~ seeds[0].name ~ tier, "garden_cloche", GCtime[tier] * mult);
 
@@ -168,7 +169,7 @@ function addGCrecipe_alltiers(min_tier as int, seeds as IItemStack[], fruits as 
         addGCrecipe(i, seeds, fruits, catalyst, mult);
     }
 }
-
+*/
 
 
 recipes.addShaped("ia_vivid_grass", <botania:altgrass:2>, [
@@ -213,8 +214,16 @@ function addGCrecipe2(tier as int,
         rec.addFluidInput(<liquid:fertilizer> * (200 * (tier + 1)));
     }
     if (tier > 3){
-        rec.addFluidInput(<liquid:plantoil> * 100);
+        rec.addFluidInput(<liquid:plantoil> * (125 * tier * (tier + 1)));
     }
+
+    rec.addCatalystInput(
+			<mysticalagriculture:nature_essence> * 4,
+			["Output items x2"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:item", "output", 2, 1, false
+			).build()]
+	).setChance(1.0);
 
     rec.build();
 }

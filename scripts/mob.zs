@@ -325,6 +325,8 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
             ], [<liquid:slimebone> * 1000], <twilightforest:trophy:1>,
             200, 1000
         );
+
+        scripts.helper.addSawRecipeWByproduct(<twilightforest:trophy:1>, <contenttweaker:lich_bone> * 2, <contenttweaker:lich_bone>, 10);
     }
 
     <entity:twilightforest:slime_beetle>.addDrop(<contenttweaker:bug_slimeball> % 75);
@@ -332,10 +334,9 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
     <ore:slimeball>.add(<contenttweaker:bug_slimeball>);
     recipes.addShapeless("ia_bug_slimeball_slimeball", <minecraft:slime_ball>, [<contenttweaker:bug_slimeball>]);
     mods.thermalexpansion.Centrifuge.addRecipe([
-        <minecraft:slime_ball> % 100, <minecraft:slime_ball> % 50, 
-        <erebus:materials> % 25, <mod_lavacow:chitin> % 25], 
-        <contenttweaker:bug_slimeball>, null, 
-        2000
+            <minecraft:slime_ball> % 100, <minecraft:slime_ball> % 50, 
+            <erebus:materials> % 25, <mod_lavacow:chitin> % 25
+        ], <contenttweaker:bug_slimeball>, null, 2000
     );
 
 
@@ -762,4 +763,25 @@ addVialProcess("mysticalworld:entity_endermini", [<enderio:block_enderman_skull>
 
 
 
-
+//cocoon
+recipes.remove(<botania:cocoon>);
+recipes.addShaped("ia_bot_cocoon", <botania:cocoon>, [
+    [<ore:string>, <ore:string>, <ore:string>],
+    [<ore:string>, <botania:felpumpkin>, <ore:string>],
+    [<ore:string>, <contenttweaker:transmut_gel>, <ore:string>]
+]);
+recipes.addShaped("ia_bot_cocoon2", <botania:cocoon> * 3, [
+    [<ore:string>, <ore:string>, <ore:string>],
+    [<ore:string>, <botania:felpumpkin>, <ore:string>],
+    [<ore:string>, <contenttweaker:inversion_dust>, <ore:string>]
+]);
+addJEIentityHint(
+    [<minecraft:emerald>], null, "",
+    [<botania:cocoon>.withDisplayName(game.localize("ia.egg_hint.cocoon"))], null,
+    [], null, "minecraft:villager"
+);
+addJEIentityHint(
+    [<minecraft:chorus_fruit>], null, "",
+    [<botania:cocoon>.withDisplayName(game.localize("ia.egg_hint.cocoon"))], null,
+    [], null, "minecraft:shulker"
+);

@@ -16,7 +16,7 @@ import mods.actuallyadditions.Empowerer;
 recipes.remove(<actuallyadditions:block_canola_press>);
 recipes.addShaped("block_canola_press", <actuallyadditions:block_canola_press>, [
 	[null, <immersiveengineering:wooden_device0:1>, null],
-	[<minecraft:piston>, <actuallyadditions:item_misc:13>, <minecraft:piston>], 
+	[<contenttweaker:simple_motor>, <actuallyadditions:item_misc:13>, <contenttweaker:simple_motor>], 
 	[<enderio:item_material:11>, <extrautils2:machine>, <enderio:item_material:11>]
 ]);
 scripts.jei.addJEIhint(

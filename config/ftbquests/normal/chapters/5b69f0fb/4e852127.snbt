@@ -1,0 +1,18 @@
+{
+	x: -2.0d,
+	y: -4.0d,
+	text: [
+		"Used to make druid staves unbreakable."
+	],
+	dependencies: [
+		"5fe41c97"
+	],
+	optional: true,
+	tasks: [{
+		uid: "98ae1a07",
+		type: "item",
+		items: [{
+			item: "contenttweaker:entwood_heart"
+		}]
+	}]
+}

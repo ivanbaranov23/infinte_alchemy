@@ -39,5 +39,5 @@ addJEIhint_fluid_smeltery_temperature(<liquid:high_heat_lava>, 3000);
 addJEIhint_fluid_smeltery_temperature(<liquid:super_heat_lava>, 5000);
 addJEIhint_fluid_smeltery_temperature(<liquid:fire>, 6000);
 
+addJEIhint_fluid_smeltery_temperature(<liquid:liquidfusionlava>, 1700);
 
-mods.thermalexpansion.Crucible.removeRecipe(<minecraft:magma>);

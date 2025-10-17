@@ -14,5 +14,11 @@
 		items: [{
 			item: "contenttweaker:plant_sample"
 		}]
+	}],
+	rewards: [{
+		uid: "461fa5b3",
+		type: "item",
+		item: "contenttweaker:plant_sample",
+		count: 4
 	}]
 }

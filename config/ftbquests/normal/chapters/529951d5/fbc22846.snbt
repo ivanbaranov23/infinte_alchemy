@@ -13,7 +13,7 @@
 		}
 	},
 	x: 0.0d,
-	y: -2.0d,
+	y: -3.0d,
 	text: [
 		"Apply hull in engineer's workbench to be able swim in lava. "
 	],
