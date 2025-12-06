@@ -17,6 +17,8 @@ VanillaFactory.createFluid("ammonium_nitrate", Color.fromHex("2e3e53")).register
     VanillaFactory.createFluid("cold_nitrogen", Color.fromHex("37d1d9")).register();
 }
 
+//VanillaFactory.createFluid("copper_reject2",  Color.fromHex("1b1510")).register();
+
 VanillaFactory.createFluid("polyethylene", Color.fromHex("723265")).register();
 
 VanillaFactory.createFluid("butene", Color.fromHex("cbc090")).register();

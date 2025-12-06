@@ -201,6 +201,12 @@ recipes.addShaped("ia_terrible_recipe_block_industrial_insulation", <enderio:blo
 
 	<enderio:item_capacitor_stellar>.addTooltip("Capacitor Level 5");
 
+
+	<ometweaks:cake_capacitor>.addShiftTooltip("Cake is a lie", "Capacitor Level 3");
+	<ometweaks:crab_capacitor>.addTooltip("Capacitor Level 4.5");
+	<ometweaks:neutronium_capacitor>.addTooltip("Capacitor Level 7");
+
+
 	<enderio:block_enhanced_alloy_smelter>.addTooltip("Capacitor Level +1");
 	<enderio:block_enhanced_combustion_generator>.addTooltip("Capacitor Level +1");
 	<enderio:block_enhanced_sag_mill>.addTooltip("Capacitor Level +1");

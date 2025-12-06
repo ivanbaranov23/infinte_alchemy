@@ -331,7 +331,7 @@ addBiolabRecipe(
                 <contenttweaker:biomaterial1>,
                 <prodigytech:primordium> * 8,
                 <contenttweaker:electric_manyullyn_dust> * 12,
-                <immersiveengineering:metal:14> * 4
+                <contenttweaker:irradiated_compound> * 3
 
             ], [
                 <liquid:witchwater> * 4000

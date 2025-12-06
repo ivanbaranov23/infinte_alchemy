@@ -8,14 +8,24 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:csitl>, [
 	], 25000000
 );
 
-//gapo4
-/*mods.thermalexpansion.InductionSmelter.addRecipe(
-	<contenttweaker:gapo4>, 
-	<contenttweaker:gallium_dust> * 3, <contenttweaker:glowcrystal> * 24, 
-	32000
-);*/
-mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:gapo4>, <contenttweaker:gallium_dust> * 2, <liquid:phosphoric_acid> * 3000, 10000);
+{//ceramic
+	scripts.content_machines.addFluidAlloyerRecipe(
+		<contenttweaker:batio> * 2, 
+		<alchemistry:ingot:56>, <contenttweaker:titanium_ingot>, <liquid:claymud> * 1000, 
+		20, 500
+	);
+	scripts.content_machines.addAdvancedMixerRecipe([
+		<contenttweaker:batio> * 8
+	], [], [
+		<alchemistry:ingot:56> * 2, <contenttweaker:titanium_ingot> * 2, <alchemistry:ingot:38>
+	], [<liquid:claymud> * 1000], 20, 5000);
+	mods.alchemistry.Combiner.addRecipe(<contenttweaker:batio> * 4, [
+		<alchemistry:compound:511> * 8, <alchemistry:compound:512> * 8, <alchemistry:element:38> * 2
+	]);
+}
 
+//gapo4
+mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:gapo4>, <contenttweaker:gallium_dust> * 2, <liquid:phosphoric_acid> * 3000, 10000);
 mods.alchemistry.Combiner.addRecipe(<contenttweaker:gapo4>, [
 	<alchemistry:element:31> * 8, <alchemistry:compound:14> * 8
 ]);

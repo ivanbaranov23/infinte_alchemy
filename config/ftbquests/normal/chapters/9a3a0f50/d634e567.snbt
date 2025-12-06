@@ -1,0 +1,18 @@
+{
+	x: 7.0d,
+	y: 2.0d,
+	text: [
+		"Put stone inside to get recs for all stone chisels"
+	],
+	dependencies: [
+		"7da75e42"
+	],
+	optional: true,
+	tasks: [{
+		uid: "aedcaa30",
+		type: "item",
+		items: [{
+			item: "ae_chisel:ae_chisel"
+		}]
+	}]
+}

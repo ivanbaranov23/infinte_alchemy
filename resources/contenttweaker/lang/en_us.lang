@@ -2481,3 +2481,61 @@ item.contenttweaker.netherrack_dust.name=Netherrack Dust
 
 fluid.debris=Molten Debris
 item.contenttweaker.debris.name=Dirty Netherite Scrap
+
+item.contenttweaker.cadmium.name=Cadmium Dust
+tile.contenttweaker.cadmium_block.name=Block of Cadmium
+
+item.contenttweaker.zinc_pellet.name=Zinc Pellet
+item.contenttweaker.zinc_pellet2.name=Sintered Zinc Pellet
+
+item.contenttweaker.barium_dust.name=Barium Dust
+tile.contenttweaker.barium_block.name=Block of Barium
+item.contenttweaker.batio.name=Barium Titanate Ceramic
+fluid.benitoite=Molten Benitoite
+
+
+item.contenttweaker.capacitor_base.name=Capacitor Base
+
+item.contenttweaker.ice_bone.name=Ice Bone
+
+item.contenttweaker.molybdenum_dust.name=Molybdenum Dust
+tile.contenttweaker.molybdenum_ore.name=Molybdenum Ore
+tile.contenttweaker.molybdenum_block.name=Block of Molybdenum
+fluid.molybdenum=Molten Molybdenum
+
+fluid.eggplant=Egg Plant Soup
+
+ia.mb_tooltip.bh_exit2=input fluid x1.5, output item +1
+ia.mb_tooltip.bh_exit3=input fluid x2, output item +3
+ia.mb_tooltip.bh_orange=recipe time x0.85, input energy x1.25
+ia.mb_tooltip.bh_pink=input fluid x0.95, output fluid x0.9, energy x1.25
+ia.mb_tooltip.bh_mushroomite=chance to not consume input items +4%, energy x0.9
+ia.mb_tooltip.bh_root=chance to not consume input items +6%, input fluid x0.85, output item chance -2%
+ia.mb_tooltip.bh_glowshroomite=chance to not consume input items +4%, input fluid x0.9, energy x1.1
+ia.mb_tooltip.bh_divine=energy x0.5, output items +1/3, input items +1/2, input fluid x1.5
+
+item.contenttweaker.yellow_dust.name=Energized Dust
+fluid.yellow=Energizer
+item.contenttweaker.capacitor_dust.name=Capacitor Dust
+item.contenttweaker.cool_sulfur.name=Educated Sulfur
+gas.smart=Outsmarting Outgas
+
+item.ometweaks.crab_capacitor.name=Crab Capacitor
+item.ometweaks.cake_capacitor.name=Cake Capacitor
+
+item.contenttweaker.phenol.name=Phenol
+
+gas.waste_gas=Waste Gas
+gas.copper_reject=Gaseous Copper Rejects
+item.contenttweaker.copper_reject.name=Copper Rejects
+fluid.dore=Molten Dore Metal
+
+gas.selenium_dioxide=Selenium Dioxide
+tile.contenttweaker.selenium_block.name=Block of Selenium
+item.contenttweaker.selenium_dust.name=Selenium Dust
+
+tile.contenttweaker.tellurium_block.name=Block of Tellurium
+item.contenttweaker.tellurium_dust.name=Tellurium Dust
+
+tile.contenttweaker.arsenic_block.name=Block of Arsenic
+item.contenttweaker.arsenic_dust.name=Arsenic Dust

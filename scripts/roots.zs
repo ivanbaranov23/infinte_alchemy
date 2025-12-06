@@ -54,7 +54,17 @@ Mortar.removeRecipe(<mysticalworld:gold_dust>);
 Mortar.removeRecipe(<mysticalworld:silver_dust>);
 
 
+{//terramoss
+    scripts.helper.addSawRecipeWByproduct(<minecraft:mossy_cobblestone>, <minecraft:cobblestone>, <roots:terra_moss>, 50);
 
+    scripts.helper.addSawRecipeWByproduct(<additionalcompression:cobblestonemossy_compressed:1>, <additionalcompression:cobblestonemossy_compressed:1>, <roots:terra_moss>, 100);
+    scripts.helper.addSawRecipeWByproduct(<additionalcompression:cobblestonemossy_compressed:2>, <additionalcompression:cobblestonemossy_compressed:2>, <roots:terra_moss> * 2, 100);
+    scripts.helper.addSawRecipeWByproduct(<additionalcompression:cobblestonemossy_compressed:3>, <additionalcompression:cobblestonemossy_compressed:3>, <roots:terra_moss> * 4, 100);
+    scripts.helper.addSawRecipeWByproduct(<additionalcompression:cobblestonemossy_compressed:4>, <additionalcompression:cobblestonemossy_compressed:4>, <roots:terra_moss> * 8, 100);
+    scripts.helper.addSawRecipeWByproduct(<additionalcompression:cobblestonemossy_compressed:5>, <additionalcompression:cobblestonemossy_compressed:5>, <roots:terra_moss> * 16, 100);
+    scripts.helper.addSawRecipeWByproduct(<additionalcompression:cobblestonemossy_compressed:6>, <additionalcompression:cobblestonemossy_compressed:6>, <roots:terra_moss> * 32, 100);
+    scripts.helper.addSawRecipeWByproduct(<additionalcompression:cobblestonemossy_compressed:7>, <additionalcompression:cobblestonemossy_compressed:7>, <roots:terra_moss> * 64, 100);
+}
 
 {//crops
     Pyre.removeRecipe(<roots:pereskia>);

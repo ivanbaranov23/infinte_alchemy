@@ -46,6 +46,10 @@ addGas("rfna", "e0190a", false);
 addGas("carmin", "cb1109", false);
 addGas("black_slurp", "000000", true);
 
+addGas("copper_reject", "36291e", false);
+
+addGas("selenium_dioxide", "683882", false);
+
 addGas("polyethylene", "723265", true);
 
 addGas("butene", "cbc090", true);
@@ -93,6 +97,7 @@ addGas("bastnasite_slurry", "d28200", false);
 
 addGas("amethesting", "8e3885", true);
 
+addGas("smart", "22ffff", false);
 
 {
     var explosion_stone_glue = GasFactory.createGas("explosion_stone_glue");

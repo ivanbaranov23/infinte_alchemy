@@ -183,7 +183,7 @@ scripts.content_machines.addFluidMixerRecipe(
 
     //purple gold
     //todo argon
-    scripts.helper.scripts.content_machines.addFluidAlloyerRecipe(
+    scripts.content_machines.addFluidAlloyerRecipe(
         <contenttweaker:unannealed_purple_gold_ingot>, 
         <contenttweaker:pure_gold_dust> * 3, <thermalfoundation:material:132>, <liquid:noble_gases> * 1000, 
         512, 40
@@ -269,6 +269,45 @@ scripts.content_machines.addFluidMixerRecipe(
     }
 }
 
+{//copper proc
+    mods.mekanism.reaction.addRecipe(
+        <mekanism:dirtydust:3> * 3, <liquid:electrotine> * 1000, <gas:waste_gas> * 250, 
+        <thermalfoundation:material:64> * 5, <gas:copper_reject> * 250, 9000, 60
+    );
+
+    mods.mekanism.reaction.addRecipe(
+        <prodigytech:ash>, <liquid:pyrotheum> * 500, <gas:copper_reject> * 1000, 
+        <contenttweaker:copper_reject>, <gas:selenium_dioxide> * 250, 9000, 60
+    );
+
+    //selenium
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:empty_ingot>, <liquid:liquidsulfurdioxide> * 1000, <gas:selenium_dioxide> * 1000, 
+        <alchemistry:ingot:34>, <gas:sulfuricacid> * 1000, 9000, 60
+    );
+
+    //rejects
+    mods.thermalexpansion.Centrifuge.addRecipe(
+        [
+            <contenttweaker:antimony_dust> % 50,
+            <contenttweaker:arsenic_dust> % 20,
+            <contenttweaker:tellurium_dust> % 10
+        ], <contenttweaker:copper_reject>, <liquid:dore> * 125, 
+        3000
+    );
+
+    //dore
+    mods.thermalexpansion.Refinery.addRecipe(<liquid:electrum> * 250, null, <liquid:dore> * 300, 5000);
+    mods.immersivepetroleum.Distillation.addRecipe(
+        [
+            <liquid:gold> * 100,
+            <liquid:silver> * 100,
+            <liquid:platinum> * 50,
+            <liquid:palladium_fluid> * 10
+        ], [], <liquid:dore> * 300, 1000 * 20, 20, []
+    );
+
+}
 {//bauxite
     //bauxite
     mods.tconstruct.Casting.addBasinRecipe(
@@ -394,6 +433,29 @@ scripts.content_machines.addFluidMixerRecipe(
     );
 }
 
+{//barium
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+		<contenttweaker:barium_dust> * 2, 
+		<contenttweaker:barite_dust> * 3, <immersiveengineering:material:6>, 15000
+	);
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+		<contenttweaker:barium_dust> * 2, 
+		<contenttweaker:barite_dust> * 2, <mysticalagriculture:coal:1>, 10000,
+        <mysticalagriculture:coal>, 50
+	);
+    mods.alchemistry.Dissolver.addRecipe(<contenttweaker:barite_dust>, false, 1,
+        [
+            [100, <alchemistry:compound:51> * 16, <alchemistry:element:38> * 4]
+        ]
+    );
+
+
+    mods.alchemistry.Dissolver.addRecipe(<bigreactors:mineralbenitoite>, false, 1,
+        [
+            [100, <alchemistry:compound:511> * 16, <alchemistry:compound:512> * 16, <alchemistry:compound:1> * 48]
+        ]
+    );
+}
 {//molybdenum
     mods.mekanism.reaction.addRecipe(
         <thermalfoundation:material:160>, <liquid:copper> * 288, <gas:black_slurp> * 1000, 

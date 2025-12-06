@@ -57,6 +57,7 @@ mods.botania.PureDaisy.addRecipe(<netherendingores:ore_other_1>, <mysticalworld:
 mods.botania.PureDaisy.addRecipe(<appliedenergistics2:quartz_ore>, <appliedenergistics2:charged_quartz_ore>);
 mods.botania.PureDaisy.addRecipe(<netherendingores:ore_nether_modded_1:9>, <netherendingores:ore_nether_modded_1:10>);
 mods.botania.PureDaisy.addRecipe(<netherendingores:ore_end_modded_1:9>, <netherendingores:ore_end_modded_1:10>);
+mods.prodigytech.magneticreassembler.addRecipe(<appliedenergistics2:material:2>, <appliedenergistics2:material>);
 
 
 

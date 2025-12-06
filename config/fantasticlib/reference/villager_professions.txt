@@ -8,6 +8,7 @@ openblocks:radio
 vtt:brewer
 vtt:redstoner
 vtt:tinkerer
+oreberries:tinker
 roots:wild_mage
 primitivemobs:miner
 primitivemobs:merchant

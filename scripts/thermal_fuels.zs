@@ -14,6 +14,18 @@ import crafttweaker.liquid.ILiquidStack;
 
 
 
+function DieselHandler_addFuel_jei(fuel as ILiquidStack, time as int){
+    scripts.jei.addJEIhint(
+        [<ae2fc:fluid_drop>.withTag({Fluid: fuel.name}).withDisplayName("Consumed per tick") * (1000 / time)], [fuel],
+        [
+            <immersiveengineering:metal_multiblock:10>
+        ], [], []
+    );
+}
+function DieselHandler_addFuel(fuel as ILiquidStack, time as int){
+    DieselHandler_addFuel_jei(fuel, time);
+    DieselHandler.addFuel(fuel, time);
+}
 {//diesel engine fuels
 	// 20 mb/t = 50
 	// 10 mb/t = 100
@@ -24,23 +36,25 @@ import crafttweaker.liquid.ILiquidStack;
 	// 2 mb/t = 500
 	// 1 mb/t = 1000
 	//DieselHandler.addFuel(ILiquidStack fuel, int time);
+    DieselHandler_addFuel_jei(<liquid:biodiesel>, 125);
+    DieselHandler_addFuel_jei(<liquid:diesel>, 200);
 
 	//thermal
-	DieselHandler.addFuel(<liquid:refined_fuel>, 125);
-	DieselHandler.addFuel(<liquid:refined_biofuel>, 100);
+	DieselHandler_addFuel(<liquid:refined_fuel>, 125);
+	DieselHandler_addFuel(<liquid:refined_biofuel>, 100);
 	//canola
-	DieselHandler.addFuel(<liquid:refinedcanolaoil>, 100);
-	DieselHandler.addFuel(<liquid:crystaloil>, 200);
-	DieselHandler.addFuel(<liquid:empoweredoil>, 500);
+	DieselHandler_addFuel(<liquid:refinedcanolaoil>, 100);
+	DieselHandler_addFuel(<liquid:crystaloil>, 200);
+	DieselHandler_addFuel(<liquid:empoweredoil>, 500);
 
-	DieselHandler.addFuel(<liquid:biofuel>, 100);
+	DieselHandler_addFuel(<liquid:biofuel>, 100);
 
     //contenttweaker
-    DieselHandler.addFuel(<liquid:enriched_diesel1>, 250);
-    DieselHandler.addFuel(<liquid:enriched_diesel2>, 1000);
-    DieselHandler.addFuel(<liquid:nuit_fuel>, 500);
+    DieselHandler_addFuel(<liquid:enriched_diesel1>, 250);
+    DieselHandler_addFuel(<liquid:enriched_diesel2>, 1000);
+    DieselHandler_addFuel(<liquid:nuit_fuel>, 500);
 
-	DieselHandler.addFuel(<liquid:infinity_metal>, 10000);
+	
 }
 
 {//NumisticDynamo
@@ -92,6 +106,7 @@ import crafttweaker.liquid.ILiquidStack;
 
     //addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
     CombustionGen.addFuel(<liquid:enriched_diesel1>, 25 * 1000, 120 * 1000);
+    CombustionGen.addFuel(<liquid:nuit_fuel>, 25 * 1000, 120 * 1000);
     CombustionGen.addFuel(<liquid:sunnarium_base>, 20 * 1000, 60 * 1000);
     CombustionGen.addFuel(<liquid:flowers_depleted>, 500 * 1000, 30 * 1000);
     //expected rf

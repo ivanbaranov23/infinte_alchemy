@@ -134,7 +134,6 @@ biomesoplenty:phantasmagoric_inferno
 biomesoplenty:undergarden
 biomesoplenty:visceral_heap
 jeid:error_biome
-appliedenergistics2:storage_biome
 twilightforest:twilight_lake
 twilightforest:twilight_forest
 twilightforest:dense_twilight_forest
@@ -155,6 +154,7 @@ twilightforest:dark_forest_center
 twilightforest:highlands_center
 twilightforest:thornlands
 twilightforest:spooky_forest
+appliedenergistics2:storage_biome
 atum:dead_oasis
 atum:deadwood_forest
 atum:dried_river

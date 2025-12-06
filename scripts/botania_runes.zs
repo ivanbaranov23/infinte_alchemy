@@ -265,7 +265,7 @@ function addRuneRecipes(rune as IItemStack, cracked as IItemStack, inps as IIngr
             <openblocks:tank>.withTag({tank: {FluidName: "high_heat_lava", Amount: 16000}}), 
             <mekanism:machineblock3:4>,
             <contenttweaker:crucible>,
-            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>,
+            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>, <contenttweaker:petals4>,
             <botania:rune:1>
     ], 1, 25000);
     addRuneRecipes(//spring
@@ -274,7 +274,7 @@ function addRuneRecipes(rune as IItemStack, cracked as IItemStack, inps as IIngr
             <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
             <mekanism:machineblock3:1>,
             <enderio:item_material:41>,
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
+            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>, <contenttweaker:petals3>,
             <botania:rune:2>
     ], 1, 25000);
     addRuneRecipes(//autumn
@@ -283,7 +283,7 @@ function addRuneRecipes(rune as IItemStack, cracked as IItemStack, inps as IIngr
             <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}),
             <mekanism:machineblock2:10>,
             <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
+            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>, <contenttweaker:petals1>,
             <botania:rune:2>
     ], 1, 25000);
     addRuneRecipes(//winter
@@ -292,153 +292,10 @@ function addRuneRecipes(rune as IItemStack, cracked as IItemStack, inps as IIngr
             <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}),
             <mekanism:machineblock2:8>,
             <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
+            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>, <contenttweaker:petals5>,
             <botania:rune:2>
     ], 1, 25000);
-/*
-    {//summer
-        RuneAltar.addRecipe(<botania:rune:5>, [
-            <contenttweaker:improved_rune_base>, 
-            
-            ], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:5> * 3, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_fire_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "high_heat_lava", Amount: 16000}}), 
-            <contenttweaker:crucible>,
-            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>,
-            <botania:rune:1>], 100000
-        );
 
-        RuneAltar.addRecipe(<botania:rune:5> * 2, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_fire_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "high_heat_lava", Amount: 16000}}), 
-            <contenttweaker:crucible>,
-            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>,
-            <contenttweaker:rune_summer_cracked>,
-            <botania:rune:1>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:5> * 4, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_fire_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "high_heat_lava", Amount: 16000}}), 
-            <contenttweaker:crucible>,
-            <extendedcrafting:singularity:64>, <contenttweaker:fiery_singularity>, <botania:quartz:2>,
-            <contenttweaker:rune_summer_cracked>,
-            <botania:rune:1>], 100000
-        );
-
-    }
-    {//spring
-        RuneAltar.addRecipe(<botania:rune:4>, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_earth_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
-            <botania:rune:2>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:4> * 3, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_earth_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
-            <botania:rune:2>], 100000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:4> * 2, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_earth_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
-            <contenttweaker:rune_summer_cracked>,
-            <botania:rune:2>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:4> * 4, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_earth_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}),
-            <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>,
-            <contenttweaker:rune_summer_cracked>,
-            <botania:rune:2>], 100000
-        );
-    }
-    {//autumn
-        RuneAltar.addRecipe(<botania:rune:6>, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_air_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}), 
-            <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
-            <botania:rune:3>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:6> * 3, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_air_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}), 
-            <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
-            <botania:rune:3>], 100000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:6> * 2, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_air_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}), 
-            <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
-            <contenttweaker:rune_autumn_cracked>,
-            <botania:rune:3>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:6> * 4, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_air_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "fermented_bacteria_broth", Amount: 16000}}), 
-            <contenttweaker:plant_unit>,
-            <extendedcrafting:singularity_custom:60>, <extendedcrafting:singularity_custom:20>, <botania:quartz>,
-            <contenttweaker:rune_autumn_cracked>,
-            <botania:rune:3>], 100000
-        );
-    }
-    {//winter
-        RuneAltar.addRecipe(<botania:rune:7>, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_water_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}), 
-            <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
-            <botania:rune:3>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:7> * 3, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_water_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}), 
-            <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
-            <botania:rune:3>], 100000
-        );
-
-        RuneAltar.addRecipe(<botania:rune:7> * 2, [
-            <contenttweaker:improved_rune_base>, 
-            <contenttweaker:rune_water_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}), 
-            <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
-            <contenttweaker:rune_autumn_cracked>,
-            <botania:rune:3>], 50000
-        );
-        RuneAltar.addRecipe(<botania:rune:7> * 4, [
-            <contenttweaker:advanced_rune_base>, 
-            <contenttweaker:rune_water_block>, 
-            <openblocks:tank>.withTag({tank: {FluidName: "cold_nitrogen", Amount: 16000}}), 
-            <contenttweaker:cooling_system>,
-            <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>,
-            <contenttweaker:rune_autumn_cracked>,
-            <botania:rune:3>], 100000
-        );
-    }
-    */
 }
 {//t 3
     addRuneRecipes(<botania:rune:9>, <contenttweaker:rune_lust_cracked>, [

@@ -1,11 +1,48 @@
 {
+	icon: {
+		id: "modularmachinery:bug_hill_controller",
+		tag: {
+			owner: "94208b00-cb7f-390f-b17a-b7b6b839de03"
+		}
+	},
 	x: 12.0d,
 	y: 0.0d,
+	text: [
+		"Bug hill has 2 types of recipes: breeding bugs and sending them to forage for resources. ",
+		"Mud in the structure can be replaced to get better results. Mud good for breeding won't be good for foraging. Bug will only breed in erebus atmosphere."
+	],
 	tasks: [{
 		uid: "e802dd82",
 		type: "item",
 		items: [{
 			item: "modularmachinery:bug_hill_controller"
 		}]
+	},
+	{
+		uid: "6028fbda",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bug_hill_exit1"
+		}],
+		count: 8L
+	},
+	{
+		uid: "529e0dd1",
+		type: "item",
+		items: [{
+			item: "tconstruct:deco_ground"
+		}]
+	},
+	{
+		uid: "55ff949e",
+		type: "item",
+		items: [{
+			item: "modularmachineryaddons:blockdimensionproviderinput"
+		}]
+	},
+	{
+		uid: "def1afee",
+		type: "checkmark",
+		title: "Mud"
 	}]
 }

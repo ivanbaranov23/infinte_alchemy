@@ -528,8 +528,8 @@ function addDroneMiningRecipe(chip_data_in as string, out as IItemStack, time_t 
 	rec.addItemOutput(out).setChance(-1.0);
 
     rec.addCatalystInput(
-			<contenttweaker:naots>,
-			["Input life essence x0.333"],
+			<contenttweaker:ph5sb>,
+			["+1 output"],
 			[RecipeModifierBuilder.create(
 				"modularmachinery:item", "output", 1.0, 0, true
 			).build()]
@@ -918,8 +918,8 @@ addDroneVortexRecipe(<astralsorcery:itemrockcrystalsimple>.withTag({astralsorcer
 
 //vortex
 mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:vortexed_base> * 2, 1000000 * 20, 1000000, <contenttweaker:super_alloy_base_ingot>,
-        [
+    <contenttweaker:vortexed_base> * 2, 1000000 * 20, 1000000, <contenttweaker:super_alloy_base_ingot>,
+    [
             <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>,
             <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>,
             <extendedcrafting:singularity:48>,
@@ -927,5 +927,5 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
             <extendedcrafting:singularity_custom:31>,
             <extendedcrafting:singularity_custom:61>,
             <extendedcrafting:singularity_custom:36>
-        ]
+    ]
 );

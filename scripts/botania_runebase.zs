@@ -35,6 +35,13 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_boule>, [
         [<contenttweaker:pure_cincinnasite>, <botania:manaresource:22>, <botania:manaresource:1>, <bloodmagic:demon_extras:14>, null], 
         [<contenttweaker:pure_cincinnasite>, <contenttweaker:pure_cincinnasite>, <bloodmagic:demon_extras:10>, null, null]
 ]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_boule> * 2, [
+        [null, <botania:biomestonea:*>, <bloodmagic:demon_extras:10>, <contenttweaker:pure_cincinnasite>, <contenttweaker:pure_cincinnasite>], 
+        [<botania:biomestonea:*>, <bloodmagic:demon_extras:14>, <botania:manaresource:1>, <botania:manaresource:22>, <contenttweaker:pure_cincinnasite>], 
+        [<bloodmagic:demon_extras:10>, <botania:manaresource:1>, <contenttweaker:rune_boule_core>, <botania:manaresource:1>, <bloodmagic:demon_extras:10>], 
+        [<contenttweaker:pure_cincinnasite>, <botania:manaresource:22>, <botania:manaresource:1>, <bloodmagic:demon_extras:14>, <botania:biomestonea:*>], 
+        [<contenttweaker:pure_cincinnasite>, <contenttweaker:pure_cincinnasite>, <bloodmagic:demon_extras:10>, <botania:biomestonea:*>, null]
+]);
 
 
 function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IItemStack[]){

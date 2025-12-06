@@ -189,6 +189,8 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("carrot_copper").register();
     VanillaFactory.createItem("copper_seed").register();
     VanillaFactory.createItem("copper_potato").register();
+    VanillaFactory.createItem("copper_reject").register();
+    registerMoltenMetal("dore", Color.fromHex("59561d"));
 
     //tin
     VanillaFactory.createItem("tinley").register();
@@ -210,10 +212,12 @@ function addAtomicResource(name as string){
 
     //zinc
     VanillaFactory.createBlock("zinc_ore", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("atum_sphalerite_ore", <blockmaterial:rock>).register();
-    VanillaFactory.createItem("sphalerite_dust").register();
+    VanillaFactory.createItem("zinc_pellet").register();
+    VanillaFactory.createItem("zinc_pellet2").register();
     registerMetal("zinc");
     VanillaFactory.createItem("zinc_wire").register();
+    VanillaFactory.createBlock("atum_sphalerite_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("sphalerite_dust").register();
     //molten zinc already exist
 
     VanillaFactory.createBlock("electrotine_ore", <blockmaterial:rock>).register();
@@ -900,6 +904,10 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("nitinol_wire").register();
     VanillaFactory.createBlock("nitinol_block", <blockmaterial:rock>).register();
 
+    VanillaFactory.createItem("jet_alloy_ingot").register();
+    VanillaFactory.createItem("jet_alloy_plate").register();
+    VanillaFactory.createBlock("jet_alloy_block", <blockmaterial:rock>).register();
+
     VanillaFactory.createItem("neuronium_ingot").register();
     VanillaFactory.createItem("neuronium_plate").register();
     VanillaFactory.createItem("neuronium_gear").register();
@@ -997,14 +1005,36 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("vanadium_dust").register();
     VanillaFactory.createBlock("vanadium_ore", <blockmaterial:rock>).register();
     registerMoltenMetal("vanadium",  Color.fromHex("736d8e"));
+
+    VanillaFactory.createBlock("arsenic_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("arsenic_dust").register();
+
+    VanillaFactory.createBlock("selenium_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("selenium_dust").register();
+
+    VanillaFactory.createBlock("tellurium_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("tellurium_dust").register();
     
     VanillaFactory.createItem("rubidium_dust").register();
 
     VanillaFactory.createItem("molybdenum_dust").register();
+    VanillaFactory.createBlock("molybdenum_block", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("molybdenum_ore", <blockmaterial:rock>).register();
     registerMoltenMetal("molybdenum",  Color.fromHex("270030"));
 
+    VanillaFactory.createBlock("cadmium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("cadmium").register();
+
+    VanillaFactory.createBlock("barite_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createBlock("barite_ore_end", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("barite_dust").register();
+    registerMoltenMetal("benitoite",  Color.fromHex("87e1ff"));
+    VanillaFactory.createBlock("barium_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("barium_dust").register();
+    VanillaFactory.createItem("batio").register();
+
+    VanillaFactory.createBlock("strontium_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("strontium_dust").register();
 
     VanillaFactory.createItem("pollucite").register();
     VanillaFactory.createFluid("pollucite1", Color.fromHex("484110")).register();
@@ -1202,6 +1232,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     VanillaFactory.createItem("filter_empty").register();
     VanillaFactory.createItem("filter_charcoal").register();
     VanillaFactory.createItem("filter_solar").register();
+    VanillaFactory.createItem("filter_yellow").register();
     VanillaFactory.createItem("filter_blood").register();
 }
 
@@ -1697,6 +1728,10 @@ knife.register();
     addWater("wormy_sand");
     addGlass2("worm_glass");
 
+    add_living("lv_plant");
+
+    add_living("lv_walker");
+
     add_living("lv_draco_lizard");
     VanillaFactory.createItemFood("draco_lizard_corpse", 4).register();
     VanillaFactory.createItem("draco_lizard_feed").register();
@@ -2088,6 +2123,7 @@ VanillaFactory.createItemFood("food_pellet", 40).register();
     VanillaFactory.createItem("indium_oxide").register();
     VanillaFactory.createItem("indium_dust").register();
 
+    VanillaFactory.createItem("layered_wafers").register();
     VanillaFactory.createItem("layered_boule").register();
     VanillaFactory.createItem("layered_wafer").register();
     VanillaFactory.createItem("layered_circuit").register();
@@ -2528,6 +2564,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("laser_mirror").register();
 
+    VanillaFactory.createItem("yellow_dust").register();
+    addWater("yellow");
+
+
     {//biolab
         VanillaFactory.createItem("soap").register();
         VanillaFactory.createFluid("sterile_water", Color.fromHex("e5d1d1")).register();
@@ -2577,6 +2617,14 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createBlock("essence_pump4", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("essence_pump5", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("essence_pump6", <blockmaterial:rock>).register();
+
+    VanillaFactory.createItem("ma_essence1").register();
+    VanillaFactory.createItem("ma_essence2").register();
+    VanillaFactory.createItem("ma_essence3").register();
+    VanillaFactory.createItem("ma_essence4").register();
+    VanillaFactory.createItem("ma_essence5").register();
+    VanillaFactory.createItem("ma_essence6").register();
+    VanillaFactory.createItem("ma_essence7").register();
 }
 {//aether
     {//icestone & cold
@@ -2607,11 +2655,14 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     //VanillaFactory.createFluid("crystal_fluid3", Color.fromHex("357876")).register();
     addWater("crystal_fluid3");
     VanillaFactory.createFluid("crystal_waste", Color.fromHex("2f1c23")).register();
-
+    
+    VanillaFactory.createItem("capacitor_base").register();
     VanillaFactory.createItem("neuro_crystal").register();
     VanillaFactory.createItem("eio_slab").register();
     VanillaFactory.createItem("melodic_paste").register();
     VanillaFactory.createItem("melodic_reagent").register();
+
+    VanillaFactory.createItem("capacitor_dust").register();
 
     VanillaFactory.createItem("mana_wire").register();
     VanillaFactory.createItem("mana_focus").register();
@@ -2619,6 +2670,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("plant_unit").register();
 
     VanillaFactory.createItem("undead_essence").register();
+    addWater("dragon_yolk");
 }
 
 
@@ -2852,6 +2904,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createBlock("manapearl_block", <blockmaterial:rock>).register();
     addItem("solid_mana", "rare", 64);
+    addItem("petals1", "rare", 64);
+    addItem("petals2", "rare", 64);
+    addItem("petals3", "rare", 64);
+    addItem("petals4", "rare", 64);
+    addItem("petals5", "rare", 64);
     VanillaFactory.createBlock("terracrux", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("terrastem", <blockmaterial:rock>).register();
 
@@ -3192,7 +3249,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("acac").register();
     VanillaFactory.createItem("ruacac").register();
     VanillaFactory.createItem("rubidium_sheet").register();
-    
+
+    VanillaFactory.createItem("hemocyanin").register();
+    VanillaFactory.createItem("gpx").register();
+    VanillaFactory.createItem("selenocysteine").register();
 
     VanillaFactory.createItem("toluene").register();
     VanillaFactory.createItem("tosyl_chloride").register();
@@ -3215,6 +3275,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("mesitylamine").register();
     
     VanillaFactory.createItem("xylene").register();
+
+    VanillaFactory.createItem("alanine").register();
+    VanillaFactory.createItem("histidine").register();
 
     VanillaFactory.createItem("cp2zrcl2").register();
     VanillaFactory.createItem("cp2zrhcl").register();

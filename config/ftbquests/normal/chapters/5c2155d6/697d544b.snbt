@@ -1,0 +1,24 @@
+{
+	title: "Grow some bugs",
+	x: 14.0d,
+	y: 0.0d,
+	shape: "diamond",
+	text: [
+		""
+	],
+	dependencies: [
+		"3369d13a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "37a6d107",
+		type: "fluid",
+		fluid: "bugs",
+		amount: 10000000
+	}],
+	rewards: [{
+		uid: "bfdb4b2e",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

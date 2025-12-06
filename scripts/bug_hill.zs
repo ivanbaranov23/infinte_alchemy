@@ -41,9 +41,9 @@ recipes.addShaped("ia_bug_hill2", <contenttweaker:bug_hill_exit2>, [
 ]);*/
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:bug_hill_exit3>, [
     [<contenttweaker:chitin_ball>, <contenttweaker:chitin>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin>, <contenttweaker:chitin_ball>], 
-    [<contenttweaker:chitin>, null, null, null, <contenttweaker:chitin>], 
-    [<contenttweaker:bug_hill_exit2>, null, <contenttweaker:rune_bug>, null, <contenttweaker:bug_hill_exit2>], 
-    [<contenttweaker:chitin>, null, null, null, <contenttweaker:chitin>], 
+    [<contenttweaker:chitin>, null, <contenttweaker:bug_essence>, null, <contenttweaker:chitin>], 
+    [<contenttweaker:bug_hill_exit2>, <contenttweaker:bug_essence>, <contenttweaker:rune_bug>, <contenttweaker:bug_essence>, <contenttweaker:bug_hill_exit2>], 
+    [<contenttweaker:chitin>, null, <contenttweaker:bug_essence>, null, <contenttweaker:chitin>], 
     [<contenttweaker:chitin_ball>, <contenttweaker:chitin>, <contenttweaker:bug_hill_exit2>, <contenttweaker:chitin>, <contenttweaker:chitin_ball>]
 ]);
 
@@ -290,36 +290,50 @@ static tier_bugs as int[int] = {
     1: 300,
     2: 1000,
     3: 12000,
-    4: 125000,
-    5: 625000
+    4: 150000,
+    5: 2000000
 };
 
 for fl_food_type in bug_fluid_tiers{
     for tier in bug_fluid_tiers[fl_food_type]{
         for fluid in bug_fluid_tiers[fl_food_type][tier]{
             print("bugs_" ~ fl_food_type ~ fluid.name ~ tier);
-            var rec = RecipeBuilder.newBuilder("bugs_" ~ fl_food_type ~ fluid.name, "bug_hill", 15 * 20);
+            {    
+                var rec = RecipeBuilder.newBuilder("bugs_" ~ fl_food_type ~ fluid.name, "bug_hill", 15 * 20);
 
-            rec.addEnergyPerTickInput(100 * tier * tier);
-
-            rec.addDimensionInput(66);
-
-            rec.addFluidOutput(<liquid:bugs> * tier_bugs[tier]);
-            
-            
-            for food_type in ["Plant", "Meat", "Slime"] as string[]{
-                if (fl_food_type != food_type) {
-                    for ft,amount in tier_foods[tier]
-                        rec.addItemInput(oreDict.get("bugFood" ~ food_type ~ ft) * amount);
+                rec.addEnergyPerTickInput(100 * tier * tier);
+                rec.addDimensionInput(66);
+                rec.addFluidOutput(<liquid:bugs> * tier_bugs[tier]);
+                
+                for food_type in ["Plant", "Meat", "Slime"] as string[]{
+                    if (fl_food_type != food_type) {
+                        for ft,amount in tier_foods[tier]
+                            rec.addItemInput(oreDict.get("bugFood" ~ food_type ~ ft) * amount);
+                    }
                 }
+
+                rec.addFluidInput(fluid);
+
+                rec.build();
             }
+            {    
+                var rec = RecipeBuilder.newBuilder("bugsl_" ~ fl_food_type ~ fluid.name, "bug_hill", 15 * 20);
 
-            rec.addFluidInput(fluid);
-            
-            //rec.addHotAirInput(stats[0], stats[0], 1000000);
+                rec.addEnergyPerTickInput(100 * tier * tier);
+                rec.addFluidOutput(<liquid:bugs> * tier_bugs[tier]);
+                
+                for food_type in ["Plant", "Meat", "Slime"] as string[]{
+                    if (fl_food_type != food_type) {
+                        for ft,amount in tier_foods[tier]
+                            rec.addItemInput(oreDict.get("bugFood" ~ food_type ~ ft) * amount);
+                    }
+                }
 
-            rec.build();
+                rec.addFluidInput(fluid);
+                rec.addFluidInput(<liquid:erebus_air> * (tier_bugs[tier] / 10));
 
+                rec.build();
+            }
         }
     }
 }
@@ -344,11 +358,32 @@ for fl_food_type in bug_fluid_tiers{
         <erebus:dark_capped_mushroom>, [<liquid:chocolate> * 1000, <liquid:claymud> * 1000], 
         20, 1000
     );
+
+    mods.thermalexpansion.Imbuer.addRecipe(
+        <liquid:eggplant> * 1000, 
+        <contenttweaker:eggplant_dust>, <liquid:potion>.withTag({Potion: "minecraft:long_fire_resistance"}) * 500, 
+        2000
+    );
 }
 
 static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
-    //dim, bug, rec time tick, rft, ymin, ymax
-    [66, 2000, 20*8, 100, 0, 40]: {
+    //dim, bug, rec time tick, rft
+    [66, 2000, 20*8, 100]: {
+        <liquid:refined_biofuel> * 3000: [
+            <erebus:materials:55> % 80,
+            <erebus:materials:55> % 20,
+            <erebus:materials:55> % 10,
+
+            <erebus:materials:11> % 80,
+            <erebus:materials:11> % 20,
+
+            <erebus:materials:30> % 30,
+            <erebus:materials:31> % 30,
+            <erebus:materials:28> % 30,
+            <erebus:materials:18> % 20,
+            <erebus:materials:23> % 10,
+            <erebus:materials:4> % 10
+        ],
         <liquid:flolit_water> * 500: [
             <mekanism:dirtydust> % 20,
             <mekanism:dirtydust:2> % 18,
@@ -365,7 +400,7 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <thermalfoundation:material:892> % 10
         ]
     },
-    [66, 2500, 20*7, 120, 41, 90]: {
+    [66, 3000, 20*7, 400]: {
         <liquid:flolit_water> * 100: [
             <erebus:dark_capped_mushroom> % 15,
             <erebus:sarcastic_czech_mushroom> % 15,
@@ -393,26 +428,46 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
 
         ]
     },
-    [66, 2500, 20*7, 120, 91, 250]: {
-        <liquid:flolit_water> * 100: [
-            <mekanism:dirtydust:3> % 20,
-            <mekanism:dirtydust:5> % 15,
-            <mekores:mekanismore:8> % 4,
-            <contenttweaker:gallium_dirty_dust> % 2,
-
-            <enderio:item_material:33> % 15,
-            <erebus:materials:11> % 20,
-
-            <contenttweaker:flolit> % 15
-        ]
-    },
-    [0, 10*1000, 20*10, 100*1000, 0, 255]: {
+    [0, 10*1000, 20*10, 100*1000]: {
         <liquid:circuit> * 200: [
             <contenttweaker:bug_chip> % 10,
             <contenttweaker:bug_chip> % 10,
             <contenttweaker:bug_chip> % 10,
             <contenttweaker:bug_chip> % 10
         ]//250
+    },
+
+
+    [7, 4000, 20 * 10, 1000]: {
+        <liquid:refined_biofuel> * 3000: [
+            <botania:flower> % 75,
+            <botania:flower:1> % 75,
+            <botania:flower:2> % 75,
+            <botania:flower:3> % 75,
+            <botania:flower:4> % 75,
+            <botania:flower:5> % 75,
+            <botania:flower:6> % 75,
+            <botania:flower:7> % 75,
+            <botania:flower:8> % 75,
+            <botania:flower:9> % 75,
+            <botania:flower:10> % 75,
+            <botania:flower:11> % 75,
+            <botania:flower:12> % 75,
+            <botania:flower:13> % 75,
+            <botania:flower:14> % 75,
+            <botania:flower:15> % 75,
+        ]
+    },
+    [-1, 4000, 20 * 10, 1000]: {
+        <liquid:eggplant> * 1000: [
+            <betternether:egg_plant> % 80,
+            <betternether:egg_plant> % 40,
+            <betternether:egg_plant> % 20,
+            <betternether:lucis_spore> % 20,
+            <betternether:magma_flower> % 20,
+            <betternether:bone_mushroom> % 20,
+            <betternether:agave> % 20
+        ]
     }
 };
 
@@ -426,7 +481,6 @@ for stat, fluids in bug_foraging{
         if (stat[3] != 0) rec.addEnergyPerTickInput(stat[3]);
 
         rec.addDimensionInput(stat[0]);
-        //rec.addYRequirement(stat[4], stat[5]);
 
         rec.addFluidInput(<liquid:bugs> * stat[1]);
         rec.addFluidInput(fluid);

@@ -594,137 +594,64 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
 
 
+var crushing as IItemStack[IItemStack][int] = {
+    1: {
+        <minecraft:sand>: <exnihilocreatio:block_dust>,
 
-mods.bloodmagic.AlchemyTable.addRecipe(
-    <exnihilocreatio:block_dust>, 
-    [
-        <bloodmagic:cutting_fluid:1>,
-        <minecraft:sand>
-    ], 
-    50, 20, 1
-);
-{//single
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <extrautils2:compressedgravel:0>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressedcobblestone:0>
-        ], 
-        1000, 20, 1
-    );
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <extrautils2:compressedsand:0>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressedgravel:0>
-        ], 
-        1000, 20, 1
-    );
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <excompressum:compressed_block>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressedsand:0>
-        ], 
-        1000, 20, 1
-    );
-}
-{//double
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <extrautils2:compressedgravel:1>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressedcobblestone:1>
-        ], 
-        1000, 20, 2
-    );
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <extrautils2:compressedsand:1>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressedgravel:1>
-        ], 
-        1000, 20, 2
-    );
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <excompressum:compressed_block> * 9, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressedsand:1>
-        ], 
-        1000, 20, 2
-    );
-}
-mods.bloodmagic.AlchemyTable.addRecipe(
-    <extrautils2:compressedgravel:1> * 9, 
-    [
-        <bloodmagic:cutting_fluid:1>,
-        <extrautils2:compressedcobblestone:2>
-    ], 
-    2000, 20, 3
-);
-mods.bloodmagic.AlchemyTable.addRecipe(
-    <extrautils2:compressedgravel:1> * 64, 
-    [
-        <bloodmagic:cutting_fluid:1>,
-        <extrautils2:compressedcobblestone:3>
-    ], 
-    10000, 20, 4
-);
+        <minecraft:netherrack>: <exnihilocreatio:block_netherrack_crushed>,
+        <minecraft:end_stone>: <exnihilocreatio:block_endstone_crushed>,
 
-{//netherrack
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <exnihilocreatio:block_netherrack_crushed>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <minecraft:netherrack>
-        ], 
-        1000, 20, 1
-    );
+        <extrautils2:compressedcobblestone>: <extrautils2:compressedgravel>,
+        <extrautils2:compressedgravel>: <extrautils2:compressedsand>,
+        <extrautils2:compressedsand>: <excompressum:compressed_block>,
 
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <excompressum:compressed_block:6>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressednetherrack>
-        ], 
-        1000, 20, 2
-    );
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <excompressum:compressed_block:6> * 9, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressednetherrack:1>
-        ], 
-        1000, 20, 3
-    );
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <excompressum:compressed_block:6> * 64, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <extrautils2:compressednetherrack:2>
-        ], 
-        1000, 20, 4
-    );
+        <extrautils2:compressednetherrack>: <excompressum:compressed_block:6>,
+        <excompressum:compressed_block:10>: <excompressum:compressed_block:7>
+    },
+    2: {
+        <extrautils2:compressedcobblestone:1>: <extrautils2:compressedgravel:1>,
+        <extrautils2:compressedgravel:1>: <extrautils2:compressedsand:1>,
+        <extrautils2:compressedsand:1>: <additionalcompression:dust_compressed:1>,
+
+        <extrautils2:compressednetherrack:1>: <additionalcompression:gravelnether_compressed:1>,
+        <additionalcompression:endstone_compressed:1>: <additionalcompression:gravelend_compressed:1>,
+
+        <extrautils2:compressedcobblestone:2>: <additionalcompression:gravel_compressed:2>,
+        <additionalcompression:gravel_compressed:2>: <additionalcompression:blocksand_compressed:2>,
+        <additionalcompression:blocksand_compressed:2>: <additionalcompression:dust_compressed:2>,
+
+        <extrautils2:compressednetherrack:2>: <additionalcompression:gravelnether_compressed:2>,
+        <additionalcompression:endstone_compressed:2>: <additionalcompression:gravelend_compressed:2>
+    },
+    3: {
+        <extrautils2:compressedcobblestone:3>: <additionalcompression:gravel_compressed:3>,
+        <additionalcompression:gravel_compressed:3>: <additionalcompression:blocksand_compressed:3>,
+        <additionalcompression:blocksand_compressed:3>: <additionalcompression:dust_compressed:3>,
+
+        <extrautils2:compressednetherrack:3>: <additionalcompression:gravelnether_compressed:3>,
+        <additionalcompression:endstone_compressed:3>: <additionalcompression:gravelend_compressed:3>,
+
+        <extrautils2:compressedcobblestone:4>: <additionalcompression:gravel_compressed:4>,
+        <additionalcompression:gravel_compressed:4>: <additionalcompression:blocksand_compressed:4>,
+        <additionalcompression:blocksand_compressed:4>: <additionalcompression:dust_compressed:4>,
+
+        <extrautils2:compressednetherrack:4>: <additionalcompression:gravelnether_compressed:4>,
+        <additionalcompression:endstone_compressed:4>: <additionalcompression:gravelend_compressed:4>,
+    }
+};
+for tier,ghgh in crushing{
+    for block,dust in ghgh{
+        mods.bloodmagic.AlchemyTable.addRecipe(
+            dust, 
+            [
+                <bloodmagic:cutting_fluid:1>,
+                block
+            ], 
+            100 * tier, 20, tier
+        );
+    }
 }
-{//endstone
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <exnihilocreatio:block_endstone_crushed>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <minecraft:end_stone>
-        ], 
-        1000, 20, 3
-    );
-    mods.bloodmagic.AlchemyTable.addRecipe(
-        <excompressum:compressed_block:7>, 
-        [
-            <bloodmagic:cutting_fluid:1>,
-            <excompressum:compressed_block:10>
-        ], 
-        2000, 20, 4
-    );
-}
+
 
 
 

@@ -289,4 +289,145 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.build();
     }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal6", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(24300 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addItemInput(<mysticalagradditions:insanium> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<contenttweaker:ma_essence1> * 64);
+        rec.addItemOutput(<contenttweaker:ma_essence1> * 64).setChance(0.0);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal7", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(72900 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addItemInput(<contenttweaker:ma_essence1> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<contenttweaker:ma_essence2> * 64);
+        rec.addItemOutput(<contenttweaker:ma_essence2> * 64).setChance(0.0);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal8", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(72900 * 3 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addItemInput(<contenttweaker:ma_essence2> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<contenttweaker:ma_essence3> * 64);
+        rec.addItemOutput(<contenttweaker:ma_essence3> * 64).setChance(0.0);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal9", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(72900 * 9 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addItemInput(<contenttweaker:ma_essence3> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<contenttweaker:ma_essence4> * 64);
+        rec.addItemOutput(<contenttweaker:ma_essence4> * 64).setChance(0.0);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal10", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(72900 * 27 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addItemInput(<contenttweaker:ma_essence4> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<contenttweaker:ma_essence5> * 64);
+        rec.addItemOutput(<contenttweaker:ma_essence5> * 64).setChance(0.0);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal11", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(72900 * 81 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addItemInput(<contenttweaker:ma_essence5> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<contenttweaker:ma_essence6> * 64);
+        rec.addItemOutput(<contenttweaker:ma_essence6> * 64).setChance(0.0);
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("essence_crystal12", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(72900 * 243 * 1000);
+
+        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addItemInput(<contenttweaker:ma_essence6> * 256);
+        rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
+        
+        rec.addItemOutput(<contenttweaker:ma_essence7> * 64);
+        rec.addItemOutput(<contenttweaker:ma_essence7> * 64).setChance(0.0);
+
+        rec.build();
+    }
+}
+
+
+
+{//fert essence
+    recipes.addShapeless("ia_fert_essence1", <mysticalagriculture:fertilized_essence>, [
+        <mysticalagriculture:crafting:2>, <botania:fertilizer>, <industrialforegoing:fertilizer>, <contenttweaker:pilkeum>
+    ]);
+    {
+        var rec = RecipeBuilder.newBuilder("fert_essence1", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(10 * 1000);
+
+        rec.addFluidInput(<liquid:pilkon_blood> * 250);
+        rec.addItemInput(<mysticalagriculture:crafting:2>);
+        rec.addItemInput(<botania:fertilizer>);
+        rec.addItemInput(<industrialforegoing:fertilizer> * 4);
+        
+        rec.addItemOutput(<mysticalagriculture:fertilized_essence> * 4);
+
+        rec.build();
+    }
+
+
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <mysticalagriculture:mystical_fertilizer>, 
+        <mysticalagriculture:fertilized_essence>, 
+        <liquid:phosphoric_acid> * 500, 2000
+    );
+    {
+        var rec = RecipeBuilder.newBuilder("mystical_fertilizer", "essence_extractor", 5);
+
+        rec.addEnergyPerTickInput(10 * 1000);
+
+        rec.addFluidInput(<liquid:phosphoric_acid> * 500);
+        rec.addFluidInput(<liquid:ammonia> * 500);
+        rec.addItemInput(<contenttweaker:dolomite>);
+        rec.addItemInput(<mysticalagriculture:fertilized_essence> * 4);
+        
+        rec.addItemOutput(<mysticalagriculture:mystical_fertilizer> * 12);
+
+        rec.build();
+    }
 }

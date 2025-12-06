@@ -69,6 +69,7 @@ key.aether.accessory_menu
 key.appliedenergistics2.category
 key.open_wireless_crafting_terminal.desc
 key.open_wireless_fluid_terminal.desc
+key.open_wireless_interface_terminal.desc
 key.open_wireless_pattern_terminal.desc
 key.open_wireless_terminal.desc
 key.toggle_focus.desc

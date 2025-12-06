@@ -514,7 +514,18 @@ import mods.modularmachinery.RecipeBuilder;
     {//rebar tile
         recipes.remove(<engineersdecor:rebar_concrete_tile>);
 
-        //<engineersdecor:rebar_concrete_tile>
+        mods.botaniatweaks.Agglomeration.addRecipe(
+            <engineersdecor:rebar_concrete_tile> * 3,
+            [
+                <contenttweaker:rune_earth_block>,
+                <contenttweaker:darker_steel_block>,
+                <mekanismgenerators:reactor:1>,
+                <bloodmagic:decorative_brick:2>
+            ],
+            250000,
+            0xf6faab,
+            0x7dd2e0
+        );
     }
 
 
@@ -1445,6 +1456,23 @@ import mods.modularmachinery.RecipeBuilder;
     );
 }
 
+{//erebus dna
+    mods.thermalexpansion.Centrifuge.addRecipe(
+        [
+            <contenttweaker:calcium> % 40,
+            <contenttweaker:dna_erebus> % 1
+        ], <contenttweaker:tar_bone> * 3, <liquid:tar> * 500, 2000
+    );
+
+    scripts.content_machines.addChemicalRecipe(
+        [<contenttweaker:dna_erebus>],
+        [
+            <contenttweaker:tar_bone> * 16,
+            <alchemistry:compound:1207>,
+            <contenttweaker:phenol>
+        ], []
+    );
+}
 
 {//spaceice
     mods.thermalexpansion.Crucible.addRecipe(

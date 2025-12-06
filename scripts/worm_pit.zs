@@ -72,9 +72,7 @@ mods.thermalexpansion.Centrifuge.addRecipe([
     <actuallyadditions:item_worm> % 30,
     <contenttweaker:sandy_spice> % 10
 ], <contenttweaker:chewed_meat> * 4, <liquid:rot> * 400, 2000);
-mods.thermalexpansion.Crucible.addRecipe(
-    <liquid:rot> * 250, <contenttweaker:chewed_meat>, 1000
-);
+
 mods.thermalexpansion.Centrifuge.addRecipe([
     <contenttweaker:enspiced_spicy_bioblend> % 80,
     <contenttweaker:empowered_biospice> % 40
@@ -125,13 +123,27 @@ scripts.content_machines.addAdvancedMixerRecipe(
     ], 20, 1000
 );
 
-mods.enderio.AlloySmelter.addRecipe(<contenttweaker:wormium_ingot>, 
-    [
-        <contenttweaker:wormweave> * 4,
-        <tconstruct:ingots:3> * 3,
-        <contenttweaker:gemmed_spice>
-    ], 25000
-);
+{//wormium
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:wormium_ingot>, 
+        [
+            <contenttweaker:wormweave> * 4,
+            <tconstruct:ingots:3> * 3,
+            <contenttweaker:gemmed_spice>
+        ], 25000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:wormium_ingot> * 16], [],
+        [
+            <contenttweaker:wormweave> * 16,
+            <tconstruct:ingots:3> * 8,
+            <contenttweaker:gemmed_spice> * 2,
+            <contenttweaker:worm_heart>
+        ], [
+            <liquid:worm_blood> * 1000
+        ], 20, 1000
+    );
+}
+
 recipes.addShapeless("ia_centipedium", <contenttweaker:centipedium>, [
         <contenttweaker:wormium_ingot>, 
         <moretcon:dustrunesteel>, 
@@ -156,6 +168,11 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 );
 
 
+{//worm heart
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:worm_blood> * 10000, <contenttweaker:worm_heart>, 10000
+    );
+}
 
 
 

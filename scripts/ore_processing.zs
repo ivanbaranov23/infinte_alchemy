@@ -699,7 +699,7 @@ val ores as IItemStack[string][string][string] = {
         dense: {
             item: <densemetals:dense_zinc_ore>,
             crushing: <contenttweaker:zinc_ore> * 3,
-            crushingByprod1: <thermalfoundation:material:68> * 4,
+            crushingByprod1: <contenttweaker:cadmium>,
             crushingByprod2: <mekanism:dirtydust> * 4,
 
             making: <contenttweaker:zinc_ore> * 4
@@ -2434,6 +2434,30 @@ val ores as IItemStack[string][string][string] = {
             denorm: <densemetals:dense_lead_ore>
         }
     },
+    barite: {
+        ore: {
+            item: <contenttweaker:barite_ore>,
+            furnace: <contenttweaker:barite_dust>,
+            crushing_no_balls: <contenttweaker:barite_dust> * 2,
+            balling: <contenttweaker:barite_dust> * 2,
+            crushingByprod1: <contenttweaker:strontium_dust>,
+            crushingByprod2: <bigreactors:mineralbenitoite>,
+
+            drilling: <contenttweaker:barite_dust> * 4,
+        },
+        end: {
+            item: <contenttweaker:barite_ore_end>,
+            furnace: <contenttweaker:barite_dust>,
+            crushing_no_balls: <contenttweaker:barite_dust> * 5,
+            balling: <contenttweaker:barite_dust> * 5,
+            crushingByprod1: <contenttweaker:strontium_dust>,
+            crushingByprod2: <bigreactors:mineralbenitoite>,
+
+            drilling: <contenttweaker:barite_dust> * 8,
+
+            denorm: <contenttweaker:barite_ore> * 3
+        },
+    },
 
     //taiga ores
     eezo: {
@@ -3903,6 +3927,7 @@ val drilling_fluid_amount as int[string] = {
 
     benitoite: 500,
     anglesite: 750,
+    barite: 300,
 
     eezo: 250,
     karmesine: 120,
@@ -4009,6 +4034,7 @@ for oredic in [
     <ore:oreNeodymium>,
     <ore:oreArkenium>,
     <ore:oreGallium>,
+    <ore:oreBarite>,
     <ore:oreOrichalcum>,
     <ore:oreZirconium>,
     <ore:oreDeathMetal>,

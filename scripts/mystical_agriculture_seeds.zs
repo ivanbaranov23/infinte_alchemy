@@ -67,6 +67,11 @@ var seed_items as IItemStack[][IItemStack][int] = {
             <biomesoplenty:dirt:1> * 64,
             <biomesoplenty:dirt:2> * 64,
             <minecraft:dirt:1> * 64
+        ],
+
+        <mysticalagriculture:nature_seeds>: [
+            <mysticalagriculture:crafting:6>, 
+            <harvestcraft:aridgarden>, <harvestcraft:frostgarden>, <harvestcraft:shadedgarden>, <harvestcraft:soggygarden>, <harvestcraft:tropicalgarden>, <harvestcraft:windygarden>
         ]
     },
     2: {
@@ -102,6 +107,12 @@ var seed_items as IItemStack[][IItemStack][int] = {
         <contenttweaker:quest_coin>,
         40000
     );
+
+
+    recipes.addShaped("nature_cluster", <mysticalagriculture:crafting:6>, [
+        [<botania:cocoon>, <harvestcraft:cookedtofaconitem>], 
+        [<contenttweaker:cacti_foci>, <additionalcompression:cropsugarcane_compressed:2>]
+    ]);
 }
 
 for tier in seed_items{

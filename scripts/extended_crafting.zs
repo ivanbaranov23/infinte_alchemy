@@ -60,6 +60,8 @@ recipes.addShaped("ia_ec_pedestal", <extendedcrafting:pedestal> * 2, [
 
 
 //luminessence
+recipes.remove(<extendedcrafting:material:7>);
+recipes.addShapeless("ia_lumin", <extendedcrafting:material:7> * 9, [<extendedcrafting:storage:1>]);
 mods.thermalexpansion.Transposer.addExtractRecipe(<liquid:fire> * 250, <contenttweaker:fire_cell>, 10000, <contenttweaker:reinforced_cell>);
 mods.enderio.Vat.addRecipe(
 	<liquid:luminessence> * 50, 1.0, <liquid:fire> * 50, 
@@ -67,7 +69,7 @@ mods.enderio.Vat.addRecipe(
 	[<erebus:materials:12>], [1.0], 
 	30000
 );
-mods.thermalexpansion.Transposer.addFillRecipe(<extendedcrafting:material:7>, <moreplates:refined_glowstone_gear> * 4, <liquid:luminessence> * 1000, 40000);
+mods.thermalexpansion.Transposer.addFillRecipe(<extendedcrafting:material:7>, <contenttweaker:cool_sulfur> * 4, <liquid:luminessence> * 1000, 40000);
 
 //components
 recipes.remove(<extendedcrafting:material:14>);

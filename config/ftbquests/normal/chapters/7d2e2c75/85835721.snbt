@@ -1,0 +1,18 @@
+{
+	x: 1.0d,
+	y: 7.0d,
+	text: [
+		"Soon"
+	],
+	dependencies: [
+		"91ba30a7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fb1c7853",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:mystical_fertilizer"
+		}]
+	}]
+}

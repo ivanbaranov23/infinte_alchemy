@@ -14,7 +14,9 @@
 <botania:specialflower>.withTag({type: "manastar"}).addTooltip("Glows red when pool loses mana");
 
 <botania:specialflower>.withTag({type: "endoflame"}).addTooltip("turns burnables to mana at 30 mps");
+<botania:specialflower>.withTag({type: "endoflame"}).addTooltip("§4DECAYS!");
 <botania:specialflower>.withTag({type: "hydroangeas"}).addTooltip("turns water sources blocks to mana at 6.7 mps");
+<botania:specialflower>.withTag({type: "hydroangeas"}).addTooltip("§4DECAYS!");
 <botania:specialflower>.withTag({type: "thermalily"}).addTooltip("turns lava sources blocks to mana at 400 mps");
 <botania:specialflower>.withTag({type: "thermalily"}).addTooltip("one lava bucket gives 18000 mana");
 <botania:specialflower>.withTag({type: "thermalily"}).addTooltip("needs 5-6 minutes to cool down");

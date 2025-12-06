@@ -4,6 +4,9 @@ import mods.alchemistry.Util.createElement;
 import mods.alchemistry.Util.createCompound;
 //createCompound(int meta, String name, int red, int green, int blue, Object[][] components);
 
+
+createElement(120, "vibranium", "Vbr", 0, 0, 0);
+createElement(125, "woodium", "Wd", 0, 0, 0);
 createElement(250, "bouncium", "Bn", 0, 0, 0);
 createElement(500, "transendium", "Trs", 0, 0, 0);
 createElement(1500, "galaxium", "Glx", 93, 42, 172);
@@ -210,6 +213,24 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["chlorine", 3]
         ]
     );
+    createCompound(511, "titanium_dioxide", 33, 197, 55,
+        [
+            ["titanium", 1],
+            ["oxygen", 2]
+        ]
+    );
+    createCompound(512, "barium_oxide", 133, 67, 89,
+        [
+            ["barium", 1],
+            ["oxygen", 1]
+        ]
+    );
+    createCompound(513, "hydrogen_selenide", 133, 67, 89,
+        [
+            ["hydrogen", 2],
+            ["selenium", 1]
+        ]
+    );
 }
 
 
@@ -230,6 +251,13 @@ createCompound(1205, "sodium_chlorate_mixture", 42, 44, 130,
 createCompound(1206, "phosphorus_trichloride", 142, 144, 79,
     [
         ["phosphorus", 1],
+        ["chlorine", 3]
+    ]
+);
+createCompound(1207, "chloroform", 200, 177, 10,
+    [
+        ["hydrogen", 1],
+        ["carbon", 1],
         ["chlorine", 3]
     ]
 );

@@ -26,10 +26,12 @@ import mods.modularmachinery.RecipeModifierBuilder;
     mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:fertilizer3> * 2, <contenttweaker:fertilizer2_5>, <liquid:honey> * 1000, 1000);
     
     recipes.addShapeless("ia_fertilizer4", <contenttweaker:fertilizer4> * 4, [
-        <contenttweaker:fertilizer3>, <industrialforegoing:fertilizer>, <contenttweaker:steeleaf_mush>, <mekanism:biofuel>, <erebus:compost>
+        <contenttweaker:fertilizer3>, <industrialforegoing:fertilizer>, <contenttweaker:steeleaf_mush>, <mekanism:biofuel>, 
+        <erebus:compost> | <mysticalagriculture:fertilized_essence>
     ]);
     recipes.addShapeless("ia_fertilizer4_2", <contenttweaker:fertilizer4> * 6, [
-        <contenttweaker:fertilizer3>, <industrialforegoing:fertilizer>, <contenttweaker:steeleaf_mush>, <mekanism:biofuel>, <erebus:compost>,
+        <contenttweaker:fertilizer3>, <industrialforegoing:fertilizer>, <contenttweaker:steeleaf_mush>, <mekanism:biofuel>, 
+        <erebus:compost> | <mysticalagriculture:fertilized_essence>,
         <liquid:tartaric_acid> * 1000
     ]);
     
@@ -51,7 +53,7 @@ import mods.modularmachinery.RecipeModifierBuilder;
     
     mods.bloodmagic.AlchemyTable.addRecipe(
         <contenttweaker:fertilizer7> * 4, 
-        [<contenttweaker:fertilizer6>, <botania:manaresource:18>, <bloodmagic:component:5>, <bloodmagic:component:5>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
+        [<contenttweaker:fertilizer6>, <contenttweaker:terrabit>, <bloodmagic:component:5>, <contenttweaker:entwood_dust>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
         10000, 20, 4
     );
     /*mods.bloodmagic.AlchemyTable.addRecipe(

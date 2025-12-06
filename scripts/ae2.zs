@@ -187,13 +187,18 @@ function add_ae2_process_rec(output as IItemStack, input as IItemStack, topInput
 		);
 
 		//layered
+		mods.enderio.AlloySmelter.addRecipe(<contenttweaker:layered_wafers>, 
+			[
+				<projectred-core:resource_item:342>,
+				<projectred-core:resource_item:341>,
+				<projectred-core:resource_item:320>
+			], 320 * 1000
+		);
 		scripts.content_machines.addBioAssemblerRecipe(
 			[<contenttweaker:layered_boule>], null,
 			[
 				<contenttweaker:gambrosium_boule> * 2,
-				<projectred-core:resource_item:320> * 12,
-				<projectred-core:resource_item:341> * 12,
-				<projectred-core:resource_item:342> * 12,
+				<contenttweaker:layered_wafers> * 16,
 				<contenttweaker:indium_dust> * 5,
 				<extendedcrafting:material:7>
 			], [

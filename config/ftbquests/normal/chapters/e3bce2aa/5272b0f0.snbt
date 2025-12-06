@@ -9,13 +9,14 @@
 	],
 	optional: true,
 	tasks: [{
-		uid: "4599ea8b",
-		type: "item",
-		items: [{
+		uid: "1a9d41ba",
+		type: "checkmark",
+		title: "Mercury",
+		icon: {
 			id: "thermalexpansion:florb",
 			tag: {
 				Fluid: "mercury"
 			}
-		}]
+		}
 	}]
 }

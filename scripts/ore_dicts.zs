@@ -22,6 +22,12 @@
 <ore:blockGlass>.remove(<tconstruct:clear_glass>);
 <ore:blockGlass>.removeItems(<tconstruct:clear_stained_glass:*>.items);
 
+//<ore:blockCharcoal>.add(<additionalcompression:charcoal_compressed>);
+recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compressed:1>, [
+    [<ore:blockCharcoal>, <ore:blockCharcoal>, <ore:blockCharcoal>],
+    [<ore:blockCharcoal>, <ore:blockCharcoal>, <ore:blockCharcoal>],
+    [<ore:blockCharcoal>, <ore:blockCharcoal>, <ore:blockCharcoal>]
+]);
 
 {//chunks
     //t1
@@ -104,3 +110,6 @@
 
 <ore:dustBismuth>.add(<contenttweaker:bismuth_dust>);
 <ore:ingotBismuth>.add(<contenttweaker:bismuth_ingot>);
+
+<ore:dustBarium>.add(<contenttweaker:barium_dust>);
+<ore:dustStrontium>.add(<contenttweaker:strontium_dust>);

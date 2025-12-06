@@ -11,18 +11,18 @@ var mil as int = 1000000;
 	rec.addEnergyPerTickInput(50 * mil);
 
 	rec.addItemInput(<contenttweaker:electricium>);
-    rec.addItemInput(<contenttweaker:positron>);
+    rec.addItemInput(<contenttweaker:positron> * 64);
     
-    rec.addItemOutput(<contenttweaker:electron>);
+    rec.addItemOutput(<contenttweaker:electron> * 64);
 	rec.build();
 }
 {var rec = RecipeBuilder.newBuilder("positron", "donut", 5);
 	rec.addEnergyPerTickInput(50 * mil);
 
 	rec.addItemInput(<contenttweaker:electricium>);
-    rec.addItemInput(<contenttweaker:electron>);
+    rec.addItemInput(<contenttweaker:electron> * 64);
     
-    rec.addItemOutput(<contenttweaker:positron>);
+    rec.addItemOutput(<contenttweaker:positron> * 64);
 	rec.build();
 }
 
@@ -33,8 +33,8 @@ var mil as int = 1000000;
     rec.addItemInput(<contenttweaker:terragem> * 8);
     rec.addItemInput(<contenttweaker:rune_lightning>);
     
-    rec.addItemOutput(<contenttweaker:positron>);
-    rec.addItemOutput(<contenttweaker:electron>);
+    rec.addItemOutput(<contenttweaker:positron> * 16);
+    rec.addItemOutput(<contenttweaker:electron> * 16);
 	rec.build();
 }
 {var rec = RecipeBuilder.newBuilder("split_pos", "donut", 5);
@@ -46,7 +46,19 @@ var mil as int = 1000000;
     rec.addItemInput(<alchemistry:compound:202>);
     rec.addItemInput(<contenttweaker:terragem> * 8);
     
-    rec.addItemOutput(<contenttweaker:positron>);
+    rec.addItemOutput(<contenttweaker:positron> * 16);
+	rec.build();
+}
+
+
+{var rec = RecipeBuilder.newBuilder("deathon", "donut", 5);
+	rec.addEnergyPerTickInput(50 * mil);
+
+    rec.addItemInput(<alchemistry:element:66> * 6);
+    rec.addItemInput(<alchemistry:element:103> * 6);
+    rec.addItemInput(<contenttweaker:death_metal_dust>);
+    
+    rec.addItemOutput(<contenttweaker:deathon> * 20);
 	rec.build();
 }
 
@@ -70,3 +82,5 @@ var mil as int = 1000000;
     //rec.addItemOutput(<contenttweaker:positronium>);
 	rec.build();
 }
+
+

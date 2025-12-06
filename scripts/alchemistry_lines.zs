@@ -31,7 +31,7 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
 {//Na
     Dissolver.addRecipe(<contenttweaker:naoh>, false, 1,
         [
-            [1, <alchemistry:compound:201> * 8]
+            [100, <alchemistry:compound:201> * 8]
         ]
     );
 
@@ -100,7 +100,12 @@ addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
     <contenttweaker:phchn>.addTooltip("PhCHN₂");
 
     
-    
+    addChemicalRecipe(
+        [<contenttweaker:phenol>, <alchemistry:compound:6>],
+        [<contenttweaker:chlorobenzene>, <alchemistry:compound:201>],
+        []
+    );
+    <contenttweaker:phenol>.addTooltip("PhOH");
 }
 {//toluene
     Dissolver.addRecipe(<deepmoblearning:pristine_matter_creeper>, false, 1,
@@ -322,11 +327,29 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
     );
 }
 {//barium
+    //witherite
     Dissolver.addRecipe(<contenttweaker:awaken_witherite>, false, 1,
         [
             [100, <alchemistry:compound:506> * 8]
         ]
     );
+
+    //benitoite
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:benitoite> * (500), <bigreactors:mineralbenitoite>, 2000
+    );
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:filter_empty>,
+            <contenttweaker:barium_dust> % 50,
+            <contenttweaker:titanium_dust> % 50
+        ], null, 
+        <liquid:benitoite> * 250, <contenttweaker:filter_charcoal>,
+        <exnihilocreatio:item_mesh:4>,
+        20, 1000
+    );
+
+    
 }
 {//antimony
     addChemicalRecipe(
@@ -341,6 +364,24 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         [<contenttweaker:ph5sb>, <alchemistry:compound:216> * 2],
         [<contenttweaker:ph3sbcl2>, <contenttweaker:phli> * 2],
         []
+    );
+}
+{//selenium
+    Dissolver.addRecipe(<contenttweaker:worm_heart>, false, 1,
+        [
+            [50, <contenttweaker:hemocyanin> * 64], 
+            [50, <contenttweaker:gpx> * 16]
+        ]
+    );
+    Dissolver.addRecipe(<contenttweaker:gpx>, false, 1,
+        [
+            [100, <contenttweaker:selenocysteine> * 4]
+        ]
+    );
+    Dissolver.addRecipe(<contenttweaker:selenocysteine>, false, 1,
+        [
+            [100, <contenttweaker:alanine>, <alchemistry:compound:513>]
+        ]
     );
 }
 {//iodine
@@ -417,3 +458,33 @@ mods.mekanism.reaction.addRecipe(
     <contenttweaker:rarer_earth_dust>, <liquid:acid1> * 1000, <gas:cleanorichalcum> * 250, 
     <alchemistry:ingot:57>, <gas:waste_gas> * 25, 50000, 60
 );
+
+
+
+
+
+
+{//worm
+    Atomizer.addRecipe(<contenttweaker:hemocyanin>, <liquid:worm_blood> * 1000);
+    Liquifier.addRecipe(<liquid:worm_blood> * 1000, <contenttweaker:hemocyanin>);
+
+    Dissolver.addRecipe(<contenttweaker:hemocyanin>, false, 1,
+        [
+            [100, <contenttweaker:histidine> * 4, <alchemistry:element:29> * 32]
+        ]
+    );
+}
+{//dragon
+    mods.thermalexpansion.Crucible.addRecipe(
+        <liquid:dragon_yolk> * 250, <minecraft:dragon_egg>, 100000
+    );
+
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<contenttweaker:self_healing_polymer>], null, 
+        [<contenttweaker:star_polymer> * 3, <contenttweaker:dicyclopentadiene> * 16, <contenttweaker:grubbs2> * 16], [
+            <liquid:dragon_yolk> * 2000,
+
+        ], null,
+        20, 1000000
+    );
+}

@@ -300,6 +300,49 @@ import mods.modularmachinery.RecipeBuilder;
 }
 
 
+{
+    recipes.addShapeless("ia_yellow", <contenttweaker:yellow_dust>, [
+        <botania:petalblock:4>,
+        <bigreactors:dustyellorium>,
+        <contenttweaker:geb_godshard>,
+        <contenttweaker:barium_dust>
+    ]);
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:yellow_dust> * 3], [], [
+            <botania:petal:4> * 12,
+            <bigreactors:dustyellorium>,
+            <contenttweaker:geb_godshard>,
+            <contenttweaker:barium_dust>
+        ], [], 20, 10000
+    );
+
+    mods.enderio.Vat.addRecipe(
+        <liquid:yellow> * 1000, 0.5, <liquid:fiery_essence> * 1000, 
+        [<contenttweaker:yellow_dust>], [1.0], 
+        [
+            <contenttweaker:electric_manyullyn_ingot>,
+            <contenttweaker:emolachite>,
+            <mysticalagriculture:crafting:3>,
+            <contenttweaker:undead_essence>
+        ], [
+            1.0,
+            1.5,
+            2.0,
+            2.0
+        ], 
+        30000
+    );
+}
+
+
+{//sulfur
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:capacitor_dust>, <liquid:yellow> * 1000, <gas:evil> * 250, 
+        <contenttweaker:cool_sulfur> * 4, <gas:smart> * 250, 900, 60
+    );
+    mods.mekanism.chemical.crystallizer.addRecipe(<gas:smart> * 250, <contenttweaker:cool_sulfur>);
+}
+
 
 {//tartaric gel
     scripts.content_machines.addAdvancedMixerRecipe(

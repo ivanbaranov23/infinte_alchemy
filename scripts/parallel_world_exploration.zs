@@ -136,8 +136,8 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
     },
     <contenttweaker:nether_boat> * 16: {
         <contenttweaker:nether_boat_osram>: [
-            [<betternether:cincinnasite_ore> * 256, <tconstruct:ore> * 256, <tconstruct:ore:1> * 256, <taiga:osram_ore> * 128, <taiga:tiberium_ore> * 144, <taiga:prometheum_ore> * 64, <taiga:valyrium_ore> * 64, <taiga:basalt_block> * 128, <moretcon:oreigniglomerate> * 8],
-            [<betternether:cincinnasite_ore> * 256, <tconstruct:ore> * 256, <tconstruct:ore:1> * 256, <taiga:osram_ore> * 128, <taiga:tiberium_ore> * 144, <taiga:prometheum_ore> * 64, <taiga:valyrium_ore> * 64, <taiga:basalt_block> * 160, <moretcon:oreigniglomerate> * 8]
+            [<betternether:cincinnasite_ore> * 256, <tconstruct:ore> * 256, <tconstruct:ore:1> * 256, <taiga:osram_ore> * 128, <bigreactors:orebenitoite> * 128, <netherite:ancientdebris> * 96, <taiga:tiberium_ore> * 144, <taiga:prometheum_ore> * 64, <taiga:valyrium_ore> * 64, <taiga:basalt_block> * 128, <moretcon:oreigniglomerate> * 8],
+            [<betternether:cincinnasite_ore> * 256, <tconstruct:ore> * 256, <tconstruct:ore:1> * 256, <taiga:osram_ore> * 128, <bigreactors:orebenitoite> * 128, <netherite:ancientdebris> * 96, <taiga:tiberium_ore> * 144, <taiga:prometheum_ore> * 64, <taiga:valyrium_ore> * 64, <taiga:basalt_block> * 160, <moretcon:oreigniglomerate> * 8]
         ],
         <contenttweaker:nether_boat_ores>: [
             [

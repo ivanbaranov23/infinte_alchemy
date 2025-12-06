@@ -5,7 +5,9 @@
 	y: 0.0d,
 	text: [
 		"Make a tree powered compressor. This multiblock will use pressure from growing saplings to compress soft materials into a singularity.",
-		"It's recipes takes quite a long time so consider crafting singularities before you'll need them."
+		"It's recipes takes quite a long time so consider crafting singularities before you'll need them.",
+		"",
+		"You can assemble multiblocks by right clicking the controller with a stick"
 	],
 	dependencies: [
 		"8148d18c",
@@ -108,5 +110,10 @@
 		type: "item",
 		item: "minecraft:dye 1 15",
 		count: 12
+	},
+	{
+		uid: "5200e77f",
+		type: "item",
+		item: "minecraft:stick"
 	}]
 }

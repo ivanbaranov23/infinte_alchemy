@@ -1,8 +1,9 @@
 {
+	title: "Quicksand",
 	x: -1.0d,
 	y: -1.5d,
 	text: [
-		"quicksand lakes can be found below y=50"
+		"Quicksand lakes can be found below y=50"
 	],
 	dependencies: [
 		"e67d3763"

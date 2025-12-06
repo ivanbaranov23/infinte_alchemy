@@ -13,6 +13,8 @@ import mods.enderio.SagMill;
         mods.tconstruct.Melting.addRecipe(<liquid:iron> * 288, <minecraft:iron_ore>, 700);
 
         mods.botania.PureDaisy.addRecipe(<contenttweaker:poor_iron_ore>, <minecraft:iron_ore>);
+
+        
     }
     {//copper
         mods.exnihilocreatio.Hammer.addRecipe(
@@ -24,6 +26,8 @@ import mods.enderio.SagMill;
         recipes.addShapeless("copper_conv", <thermalfoundation:ore>, [
             <immersiveengineering:ore> | <mekanism:oreblock:1>
         ]);
+
+        
     }
     {//tin
         mods.exnihilocreatio.Hammer.addRecipe(
@@ -38,6 +42,8 @@ import mods.enderio.SagMill;
             0, 1.0, 1.0
         );
         mods.tconstruct.Melting.addRecipe(<liquid:nickel> * 288, <thermalfoundation:ore:5>, 700);
+
+        
     }
     {//aluminum
         mods.exnihilocreatio.Hammer.addRecipe(
@@ -48,6 +54,8 @@ import mods.enderio.SagMill;
 
         furnace.remove(<erebus:materials:42>);
         furnace.addRecipe(<thermalfoundation:material:196> * 2, <contenttweaker:bauxite_dust>);
+
+        
     }
     {//zinc
         mods.exnihilocreatio.Hammer.addRecipe(
@@ -71,6 +79,43 @@ import mods.enderio.SagMill;
             <minecraft:iron_ingot>, <liquid:andesite> * 250, 
             1500
         );
+
+        {//pellets
+            mods.thermalexpansion.InductionSmelter.addRecipe(
+                <contenttweaker:zinc_pellet>, 
+                <mekores:mekanismore:113>,
+                <immersiveengineering:material:17>,
+                2000
+            );
+            mods.thermalexpansion.InductionSmelter.addRecipe(
+                <contenttweaker:zinc_pellet> * 2, 
+                <mekores:mekanismore:111>,
+                <immersiveengineering:material:17>,
+                2000
+            );
+            mods.thermalexpansion.InductionSmelter.addRecipe(
+                <contenttweaker:zinc_pellet> * 2, 
+                <contenttweaker:sphalerite_dust>,
+                <immersiveengineering:material:17>,
+                2000
+            );
+
+            mods.mekanism.reaction.addRecipe(
+                <contenttweaker:zinc_pellet>, <liquid:pyrotheum> * 500, <gas:oxygen> * 200, 
+                <contenttweaker:zinc_pellet2>, <gas:waste_gas> * 5, 1500, 60
+            );
+            scripts.content_machines.addFluidSieveRecipeRandom(
+                [
+                    <contenttweaker:zinc_dust> % 95,
+                    <thermalfoundation:material:771> % 25,
+                    <contenttweaker:cadmium> % 15
+                ], null, 
+                <liquid:sulfuricacid> * 500, <contenttweaker:zinc_pellet2>,
+                null,
+                80, 250
+            );
+
+        }
     }
 
     {//ardite

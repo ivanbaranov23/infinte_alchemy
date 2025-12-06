@@ -178,6 +178,8 @@ function BloodAltar_addRecipe(output as IItemStack, input as IItemStack, minimum
 
 	BloodAltar_addRecipe(<contenttweaker:blood_spike>, <contenttweaker:black_bronze_rod>, 2, 2500, 25, 5);
 
+	BloodAltar_addRecipe(<contenttweaker:filter_blood>, <contenttweaker:filter_empty>, 1, 10*1000, 400, 20);
+
 	//altar caps
 	recipes.remove(<bloodmagic:decorative_brick>);
 	recipes.addShaped("ia_large_bloodstone_tile", <bloodmagic:decorative_brick> * 2, [

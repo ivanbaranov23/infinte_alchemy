@@ -240,8 +240,8 @@
     mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:robodruid_head>, [
         [<contenttweaker:robodruid_plating2>, null, <contenttweaker:robodruid_plating2>, null, <contenttweaker:robodruid_plating2>], 
         [<contenttweaker:robodruid_plating2>, <contenttweaker:robodruid_plating2>, <contenttweaker:robodruid_plating2>, <contenttweaker:robodruid_plating2>, <contenttweaker:robodruid_plating2>], 
-        [<contenttweaker:robodruid_plating3>, <contenttweaker:neuron_inlay>, null, <contenttweaker:neuron_inlay>, <contenttweaker:robodruid_plating3>], 
-        [<contenttweaker:robodruid_plating2>, <contenttweaker:neuron_inlay>, <enderio:item_capacitor_melodic>, <contenttweaker:neuron_inlay>, <contenttweaker:robodruid_plating2>], 
+        [<contenttweaker:robodruid_plating3>, <contenttweaker:neuron_inlay>, <enderio:item_capacitor_melodic> | <contenttweaker:entwood_heart>, <contenttweaker:neuron_inlay>, <contenttweaker:robodruid_plating3>], 
+        [<contenttweaker:robodruid_plating2>, <contenttweaker:neuron_inlay>, <enderio:item_capacitor_melodic> | <contenttweaker:entwood_heart>, <contenttweaker:neuron_inlay>, <contenttweaker:robodruid_plating2>], 
         [null, <contenttweaker:robodruid_plating2>, <projectred-core:resource_item:410>, <contenttweaker:robodruid_plating2>, null]
     ]);
 

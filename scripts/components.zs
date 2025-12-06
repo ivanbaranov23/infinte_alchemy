@@ -325,15 +325,15 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 	
 
 	recipes.remove(<actuallyadditions:item_misc:7>);
-	recipes.addShaped("ia_aa_coil1", <actuallyadditions:item_misc:7> * 2, [
-		[null, <actuallyadditions:item_crystal:5>, <prodigytech:heat_capacitor_0>], 
+	recipes.addShaped("ia_aa_coil1", <actuallyadditions:item_misc:7>, [
+		[null, <actuallyadditions:item_crystal:5>, <prodigytech:heat_capacitor_1>], 
 		[<actuallyadditions:item_crystal:5>, <contenttweaker:coil_core2>, <actuallyadditions:item_crystal:5>], 
-		[<prodigytech:heat_capacitor_0>, <actuallyadditions:item_crystal:5>, null]
+		[<prodigytech:heat_capacitor_1>, <actuallyadditions:item_crystal:5>, null]
 	]);
-	recipes.addShaped("ia_aa_coil1gall", <actuallyadditions:item_misc:7> * 3, [
-		[<contenttweaker:gallium_sheet>, <actuallyadditions:item_crystal:5>, <prodigytech:heat_capacitor_0>], 
+	recipes.addShaped("ia_aa_coil1gall", <actuallyadditions:item_misc:7> * 2, [
+		[<contenttweaker:gallium_sheet>, <actuallyadditions:item_crystal:5>, <prodigytech:heat_capacitor_1>], 
 		[<actuallyadditions:item_crystal:5>, <contenttweaker:coil_core2>, <actuallyadditions:item_crystal:5>], 
-		[<prodigytech:heat_capacitor_0>, <actuallyadditions:item_crystal:5>, <contenttweaker:gallium_sheet>]
+		[<prodigytech:heat_capacitor_1>, <actuallyadditions:item_crystal:5>, <contenttweaker:gallium_sheet>]
 	]);
 	<actuallyadditions:item_misc:7>.displayName = "Basic Laser Coil";
 	scripts.content_machines.addAssemblerRecipe(
@@ -1090,7 +1090,12 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			], 50000
 		);
 	}
-
+	{//capacitor base
+		recipes.addShaped("ia_capacitor_base", <contenttweaker:capacitor_base>, [
+			[<ore:stickIridium>, <contenttweaker:batio>, <ore:stickIridium>], 
+			[<enderio:item_capacitor_grainy>, <actuallyadditions:item_misc:7>, <enderio:item_capacitor_grainy>]
+		]);
+	}
 	{//capacitors
 		recipes.remove(<enderio:item_capacitor_grainy>);
 		recipes.addShaped("ia_cheap_capacitor", <enderio:item_capacitor_grainy>, [
@@ -1117,16 +1122,16 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		recipes.remove(<enderio:item_basic_capacitor>);
 		recipes.addShaped("ia_eio_capacitor_1l", <enderio:item_basic_capacitor>, [
 			[<ore:ingotEezo>, <contenttweaker:ecoppra>, <ore:ingotEezo>], 
-			[<ore:ingotEezo>, <contenttweaker:ecoppra>, <ore:ingotEezo>], 
-			[<ore:stickIridium>, <actuallyadditions:item_misc:7>, <ore:stickIridium>]
+			[<contenttweaker:ecoppra>, <contenttweaker:ecoppra>, <contenttweaker:ecoppra>], 
+			[<ore:ingotEezo>, <contenttweaker:capacitor_base>, <ore:ingotEezo>]
 		]);
 		scripts.content_machines.addAssemblerRecipe(
 			[<enderio:item_basic_capacitor> * 2],
 			[
-				<contenttweaker:ecoppra> * 2,
+				<contenttweaker:ecoppra> * 3,
 				<ore:stickIridium>,
-				<ore:ingotEezo> * 3,
-				<actuallyadditions:item_misc:7>
+				<ore:ingotEezo> * 3, <contenttweaker:batio>,
+				<actuallyadditions:item_misc:7>, <enderio:item_capacitor_grainy> * 3
 			],
 			null, 10, 256
 		);
@@ -1171,16 +1176,16 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		recipes.remove(<enderio:item_capacitor_silver>);
 		recipes.addShaped("ia_eio_capacitor_1r", <enderio:item_capacitor_silver>, [
 			[<ore:ingotEezo>, <contenttweaker:enittin>, <ore:ingotEezo>], 
-			[<ore:ingotEezo>, <contenttweaker:enittin>, <ore:ingotEezo>], 
-			[<ore:stickIridium>, <actuallyadditions:item_misc:7>, <ore:stickIridium>]
+			[<contenttweaker:enittin>, <contenttweaker:enittin>, <contenttweaker:enittin>], 
+			[<ore:ingotEezo>, <contenttweaker:capacitor_base>, <ore:ingotEezo>]
 		]);
 		scripts.content_machines.addAssemblerRecipe(
 			[<enderio:item_capacitor_silver> * 2],
 			[
-				<contenttweaker:enittin> * 2,
+				<contenttweaker:enittin> * 3,
 				<ore:stickIridium>,
-				<ore:ingotEezo> * 3,
-				<actuallyadditions:item_misc:7>
+				<ore:ingotEezo> * 3, <contenttweaker:batio>,
+				<actuallyadditions:item_misc:7>, <enderio:item_capacitor_grainy> * 3
 			],
 			null, 10, 256
 		);
@@ -1272,6 +1277,20 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			<liquid:mirion2> * (144 * 8), 20, 1024
 		);
 
+
+		{
+			recipes.addShaped("ia_cake_capacitor", <ometweaks:cake_capacitor>, [
+				[<contenttweaker:cheesy_capacitor>, <minecraft:cake>, <contenttweaker:cheesy_capacitor>],
+				[<actuallyadditions:item_food:8>, <enderio:item_basic_capacitor> | <enderio:item_capacitor_silver>, <harvestcraft:cherrycheesecakeitem>],
+				[<contenttweaker:cheesy_capacitor>, <harvestcraft:redvelvetcakeitem>, <contenttweaker:cheesy_capacitor>]
+			]);
+			mods.enderio.SliceNSplice.addRecipe(<ometweaks:crab_capacitor>, 
+				[
+					<contenttweaker:crabolion>, <harvestcraft:crabrawitem>, <contenttweaker:crabolion>, 
+					<contenttweaker:cool_sulfur>, <enderio:item_capacitor_melodic>, <contenttweaker:cool_sulfur>
+				], 1000000
+			);
+		}
 	}
 	//enderman
 	mods.enderio.SliceNSplice.removeRecipe(<enderio:block_enderman_skull:2>);
@@ -1279,21 +1298,21 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		[
 			<contenttweaker:wear_resistant_alloy_rod>, <enderio:block_enderman_skull>, <contenttweaker:wear_resistant_alloy_rod>, 
 			<contenttweaker:watertight_steel_rod>, <cookingforblockheads:sink>, <contenttweaker:watertight_steel_rod>
-		], 10000
+		], 100000
 	);
 	mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:43>);
 	mods.enderio.SliceNSplice.addRecipe(<enderio:item_material:43>, 
 		[
 			<contenttweaker:fluxed_rod>, <enderio:block_enderman_skull:2>, <contenttweaker:fluxed_rod>, 
 			<contenttweaker:osgloridium_rod>, <quantumflux:craftingpiece:5>, <contenttweaker:osgloridium_rod>
-		], 30000, 0
+		], 300000, 0
 	);
 	//creeper
 	mods.enderio.SliceNSplice.addRecipe(<contenttweaker:creeper_component>, 
 		[
 			<contenttweaker:electric_manyullyn_rod>, <minecraft:skull:4>, <contenttweaker:electric_manyullyn_rod>,
 			<contenttweaker:thermal_rod>, <contenttweaker:tank_knallgas>, <contenttweaker:thermal_rod>
-		], 30000, 0
+		], 300000, 0
 	);
 
 	//zombie
@@ -1302,7 +1321,7 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		[
 			<moreplates:soularium_plate>, <minecraft:skull:2>, <moreplates:soularium_plate>, 
 			<projectred-core:resource_item:20>, <enderio:item_capacitor_silver> | <enderio:item_basic_capacitor>, <projectred-core:resource_item:20>
-		], 20000, 0
+		], 200000, 0
 	);
 	//skeleton
 	mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:45>);
@@ -1310,7 +1329,7 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		[
 			<moreplates:soularium_plate>, <minecraft:skull:0>, <moreplates:soularium_plate>, 
 			<projectred-core:resource_item:21>, <enderio:item_capacitor_silver> | <enderio:item_basic_capacitor>, <projectred-core:resource_item:21>
-		], 20000, 0
+		], 200000, 0
 	);
 	//guardian
 	mods.enderio.SliceNSplice.removeRecipe(<enderio:item_material:56>);
@@ -1318,7 +1337,7 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		[
 			<quark:elder_sea_lantern>, <exnihilocreatio:item_doll:3>, <quark:elder_sea_lantern>,
 			<enderio:item_alloy_endergy_ingot:6>, <contenttweaker:guarding_crystal>, <enderio:item_alloy_endergy_ingot:6>
-		], 20000, 0
+		], 200000, 0
 	);
 
 
@@ -1412,6 +1431,13 @@ mods.actuallyadditions.Empowerer.addRecipe(
 		[<contenttweaker:power_tap>, <enderio:item_material:18>, <contenttweaker:power_tap>], 
 		[<enderio:item_material:68>, null, <enderio:item_material:68>]
 	]);
+
+	mods.enderio.SagMill.addRecipe(
+		[<contenttweaker:capacitor_dust>, <contenttweaker:capacitor_dust>], [0.95, 0.15], <enderio:item_basic_capacitor>, "MULTIPLY_OUTPUT", 20000
+	);
+	mods.enderio.SagMill.addRecipe(
+		[<contenttweaker:capacitor_dust>, <contenttweaker:capacitor_dust>], [0.95, 0.15], <enderio:item_capacitor_silver>, "MULTIPLY_OUTPUT", 20000
+	);
 }
 
 {//electrostatic wool

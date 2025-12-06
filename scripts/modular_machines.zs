@@ -169,6 +169,28 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
         ], 1200, 200);
     }
 
+    recipes.addShaped("ia_blockdimensionproviderinput", <modularmachineryaddons:blockdimensionproviderinput>, [
+        [<minecraft:compass>],
+        [<modularmachinery:blockcasing>]
+    ]);
+    recipes.addShaped("ia_blockbiomeproviderinput", <modularmachineryaddons:blockbiomeproviderinput>, [
+        [<naturescompass:naturescompass>],
+        [<modularmachinery:blockcasing>]
+    ]);
+}
+
+{//parallel
+    mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockparallelcontroller>, [
+        [<modularmachinery:blockcasing:5>, <modularmachinery:blockcasing:5>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockcasing:5>, <modularmachinery:blockcasing:5>], 
+        [<modularmachinery:blockcasing:5>, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, null, <extendedcrafting:singularity_custom:51>, <modularmachinery:blockcasing:5>], 
+        [<contenttweaker:neuronium_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_alloy_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:neuronium_plate>], 
+        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, null, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, null, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
+        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, <contenttweaker:star_alloy_plate>, <enderio:item_capacitor_stellar>, <contenttweaker:cursed_star>, <enderio:item_capacitor_stellar>, <contenttweaker:star_alloy_plate>, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
+        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, null, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, null, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
+        [<contenttweaker:neuronium_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_alloy_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:neuronium_plate>], 
+        [<modularmachinery:blockcasing:5>, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, null, <extendedcrafting:singularity_custom:51>, <modularmachinery:blockcasing:5>], 
+        [<modularmachinery:blockcasing:5>, <modularmachinery:blockcasing:5>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockcasing:5>, <modularmachinery:blockcasing:5>]
+    ]);
 }
 
 //other

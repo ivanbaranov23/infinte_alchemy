@@ -20,7 +20,7 @@ function addVialProcess(entity as string, poison as ILiquidStack,
         var recipe = AssemblyRecipe.create(function(container) {
             
             for item,o in loot{
-                container.addItemOutput("output", item.stack.withLore(["Base chance: " ~ (item.chance * 100), "Luck increase: " ~ (o * 100)]));
+                container.addItemOutput("output", item.stack.withLore(["Base chance: " ~ (item.chance * 100) ~ "%", "Luck increase: " ~ (o * 100) ~ "%"]));
             }
             if (blood){
                 container.addFluidOutput("output", blood);

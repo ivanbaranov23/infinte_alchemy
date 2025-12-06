@@ -65,7 +65,8 @@ var elements_no_alch as int[IItemStack][IItemStack] = {
         <contenttweaker:calcium>: 4
     },
     <alchemistry:element:56>: {
-        <contenttweaker:awaken_witherite>: 2
+        <contenttweaker:witherite>: 2,
+        <contenttweaker:awaken_witherite>: 4
     },
     <alchemistry:element:84>: {    
         <contenttweaker:polonium_dust>: 4

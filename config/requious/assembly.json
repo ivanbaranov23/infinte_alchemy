@@ -77,12 +77,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "fluid_mixer",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "fluid_mixer",
+    
     "model": "contenttweaker:machines/fluid_mixer",
     "colors": [
       {
@@ -103,12 +103,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "fluid_alloyer",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "fluid_alloyer",
+    
     "model": "contenttweaker:machines/fluid_alloyer",
     "colors": [
       {
@@ -129,12 +129,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "assembler",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "assembler",
+    
     "model": "contenttweaker:machines/assembler",
     "colors": [
       {
@@ -181,12 +181,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "chemical_reactor",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "chemical_reactor",
+    
     "model": "contenttweaker:machines/bioassembler",
     "colors": [
       {
@@ -207,12 +207,38 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "alloyer",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "recycler",
+    
+    "model": "contenttweaker:machines/bioassembler",
+    "colors": [
+      {
+        "r": 255,
+        "g": 255,
+        "b": 255,
+        "a": 255
+      }
+    ],
+    "hardness": 5.0,
+    "blastResistance": 5.0,
+    "aabb": {
+      "x1": 0.0,
+      "y1": 0.0,
+      "z1": 0.0,
+      "x2": 1.0,
+      "y2": 1.0,
+      "z2": 1.0
+    }
+  },
+  {"resourceName": "recycler",
+    "placeType": "Horizontal",
+    "layerType": "Cutout",
+    "hasGUI": true,
+    "extraVariants": [],
+    
     "model": "contenttweaker:machines/recycler",
     "colors": [
       {

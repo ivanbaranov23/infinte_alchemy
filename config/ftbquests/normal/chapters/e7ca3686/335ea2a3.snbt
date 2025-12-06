@@ -1,0 +1,16 @@
+{
+	x: -1.0d,
+	y: -5.0d,
+	tasks: [{
+		uid: "9d9be8ef",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 56"
+		}]
+	}],
+	rewards: [{
+		uid: "2f9979ad",
+		type: "item",
+		item: "contenttweaker:barium_block"
+	}]
+}

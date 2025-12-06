@@ -9,6 +9,8 @@ recipes.addShaped("potentiometer", <draconicevolution:potentiometer>, [
 ]);
 
 
+recipes.remove(<draconicevolution:draconic_core>);
+
 FusionCrafting.add(
     <contenttweaker:iv_coil>, <minecraft:coal>, 
     FusionCrafting.DRACONIC, 1000 * 1000, [

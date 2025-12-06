@@ -1,0 +1,50 @@
+{
+  "Iron": {
+    "color": "#FFC7A3",
+    "tooltip": "Sweet Irony",
+    "smeltingResult": "minecraft:iron_nugget",
+    "oredictNames": []
+  },
+  "Gold": {
+    "color": "#FFCC33",
+    "tooltip": "Pure Luster",
+    "smeltingResult": "minecraft:gold_nugget",
+    "oredictNames": []
+  },
+  "Copper": {
+    "color": "#FF8833",
+    "tooltip": "Tastes like metal",
+    "smeltingResult": "thermalfoundation:material:192",
+    "oredictNames": []
+  },
+  "Tin": {
+    "color": "#BB4422",
+    "tooltip": "Tin Man",
+    "smeltingResult": "thermalfoundation:material:193",
+    "oredictNames": []
+  },
+  "Aluminum": {
+    "color": "#EEFFFF",
+    "tooltip": "White Chocolate",
+    "oredictNames": [],
+    "smeltingResult": "thermalfoundation:material:196"
+  },
+  "Zinc": {
+    "color": "#868F69",
+    "tooltip": "Zinc.",
+    "smeltingResult": "contenttweaker:zinc_nugget"
+  },
+
+
+  
+  "Essence": {
+    "bushName": "Essence Berry Bush",
+    "berryName": "Concentrated Essence Berry",
+    "tooltip": "Tastes like Creeper",
+    "oredictNames": [],
+    "smeltingResult": null,
+    "special": "essence",
+    "growsInLight": true,
+    "tradeable": false
+  }
+}
