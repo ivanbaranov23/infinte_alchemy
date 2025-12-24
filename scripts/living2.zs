@@ -224,10 +224,12 @@ static foods as int[][IItemStack][string] = {
     },
 
     hair_thing: {
-        <projectred-core:resource_item:301>: [10, 30]
+        <projectred-core:resource_item:250>: [10, 30],
+        <projectred-core:resource_item:301>: [50, 150]
     },
     baby_hair_thing: {
-        <projectred-core:resource_item:301>: [10, 30]
+        <projectred-core:resource_item:250>: [10, 30],
+        <projectred-core:resource_item:301>: [50, 150]
     },
 
     nitrall: {
@@ -842,7 +844,8 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         [
             <contenttweaker:insulation_strand> % 100,
             <contenttweaker:insulation_strand> % 50,
-            <immersiveengineering:material:22> % 100
+            <immersiveengineering:material:22> % 100,
+            <contenttweaker:selenium_dust> % 25
         ], 
         <contenttweaker:hair_ball>, null, 2000
     );

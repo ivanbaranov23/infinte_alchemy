@@ -233,6 +233,13 @@ recipes.addShaped("ia_block_item_repairer", <actuallyadditions:block_item_repair
 	[<moreplates:draconium_plate>|<tconevo:metal:43>|<thermalexpansion:augment:401>, <thermalexpansion:machine:9>, <moreplates:draconium_plate>|<tconevo:metal:43>|<thermalexpansion:augment:401>]
 ]);
 
+recipes.remove(<actuallyadditions:block_bio_reactor>);
+recipes.addShaped("ia_block_bio_reactor", <actuallyadditions:block_bio_reactor>, [
+	[<contenttweaker:gold_coil>, <mysticalcreations:bilim_essence>, <contenttweaker:gold_coil>], 
+	[<mysticalcreations:bilim_essence>, <contenttweaker:potato_block2>, <mysticalcreations:bilim_essence>], 
+	[<contenttweaker:gold_coil>, <mysticalcreations:bilim_essence>, <contenttweaker:gold_coil>]
+]);
+
 //blocks
 recipes.remove(<actuallyadditions:block_misc:4>);
 recipes.addShaped("ia_wooden_frame", <actuallyadditions:block_misc:4> * 4, [

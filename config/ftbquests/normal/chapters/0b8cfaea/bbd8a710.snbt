@@ -1,7 +1,7 @@
 {
 	title: "Glass",
 	icon: "minecraft:glass",
-	x: 5.5d,
+	x: 6.5d,
 	y: -5.0d,
 	text: [
 		"Have you ever thought about how unrealistic minecraft glass recipe is? Don't worry, I've got your back. Now it is requires more steps and more ingriedents.",

@@ -176,6 +176,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<alchemistry:ingot:52>, <contenttweaker:tellurium_block>);
     add3x3Recipe(<alchemistry:ingot:56>, <contenttweaker:barium_block>);
     add3x3Recipe(<contenttweaker:mischmetal_ingot>, <contenttweaker:mischmetal_block>);
+    add3x3Recipe(<contenttweaker:terfenol_ingot>, <contenttweaker:terfenol_block>);
     add3x3Recipe(<contenttweaker:perovskite_ingot>, <contenttweaker:perovskite_block>);
     add3x3Recipe(<contenttweaker:perovskite2_ingot>, <contenttweaker:perovskite2_block>);
 
@@ -284,6 +285,11 @@ mods.thermalexpansion.Compactor.addStorageRecipe(<immersiveengineering:material:
     <contenttweaker:cursed_circuit>.addShiftTooltip("2b=b");
     <contenttweaker:cursed_circuit>.addShiftTooltip("2=1");
 
+    recipes.addShaped("ia_grate", <contenttweaker:grate> * 3, [
+        [<plustic:osmiridiumingot>, <mekanism:enrichedalloy>, <plustic:osmiridiumingot>],
+        [<mekanism:enrichedalloy>, <exnihilocreatio:item_mesh:3>, <mekanism:enrichedalloy>],
+        [<plustic:osmiridiumingot>, <mekanism:enrichedalloy>, <plustic:osmiridiumingot>]
+    ]);
 }
 
 mods.enderio.AlloySmelter.addRecipe(<contenttweaker:tignalum_blast_brick>, 

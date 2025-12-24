@@ -235,13 +235,14 @@ for god in godshards{
     );
 }
 
-recipes.addShaped("ia_treasure_block", <contenttweaker:treasure_block>, [
-	[<atum:coin_gold>, <ore:godshard>, <atum:sand>], 
-	[<ore:godshard>, <contenttweaker:relic_ingot>, <ore:godshard>], 
-	[<atum:sand>, <ore:godshard>, <atum:coin_gold>]
-]);
+{//treasure_block
+    recipes.addShaped("ia_treasure_block", <contenttweaker:treasure_block>, [
+	    [<atum:coin_gold>, <ore:godshard>, <atum:sand>], 
+        [<ore:godshard>, <contenttweaker:relic_ingot>, <ore:godshard>], 
+        [<atum:sand>, <ore:godshard>, <atum:coin_gold>]
+    ]);
 
-
+}
 
 //heart of ra
 recipes.addShaped("ia_heart_of_ra", <atum:heart_of_ra>, [

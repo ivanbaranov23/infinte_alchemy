@@ -255,6 +255,7 @@ function addFluidReservoir(
     <ore:oreOverworldAluminum>.add(<thermalfoundation:ore:4>);
     <ore:oreOverworldNickel>.add(<thermalfoundation:ore:5>);
     <ore:oreOverworldZinc>.add(<contenttweaker:zinc_ore>);
+    <ore:oreOverworldAntimony>.add(<contenttweaker:antimony_ore>);
 
     <ore:oreOverworldBauxite>.add(<immersiveengineering:ore:1>);
 

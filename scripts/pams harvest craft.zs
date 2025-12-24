@@ -347,6 +347,21 @@ Centrifuge.addRecipe(
     );
 }
 
+{//heavy cream
+    recipes.remove(<harvestcraft:heavycreamitem>);
+    Centrifuge.addRecipe(
+        [<harvestcraft:heavycreamitem>], <harvestcraft:freshmilkitem>, null, 
+        1000
+    );
+}
+{//butter
+    Centrifuge.addRecipe(
+        [<harvestcraft:butteritem>], <harvestcraft:heavycreamitem>, null, 
+        1000
+    );
+
+}
+
 recipes.remove(<harvestcraft:coconutmilkitem>);
 
 {//cactus

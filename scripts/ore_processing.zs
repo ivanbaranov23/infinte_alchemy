@@ -2056,6 +2056,15 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod2: <contenttweaker:polonium_dust>
         }
     },
+    xenotime: {
+        ore: {
+            item: <contenttweaker:xenotime_ore>,
+            crushing_no_balls: <contenttweaker:xenotime> * 2,
+            balling: <contenttweaker:xenotime> * 2,
+            crushingByprod1: <contenttweaker:tellurium_dust>, //todo swap
+            crushingByprod2: <contenttweaker:rarer_earth_dust>
+        }
+    },
     death_metal: {
         overworld: {
             item: <contenttweaker:death_metal_ore>,
@@ -2714,7 +2723,7 @@ val ores as IItemStack[string][string][string] = {
         end: {
             item: <taiga:abyssum_ore>,
             crushing: <taiga:abyssum_dust> * 2,
-            crushingByprod1: <taiga:palladium_dust>,
+            crushingByprod1: <contenttweaker:barite_dust>,
             crushingByprod2: <mekores:mekanismore:288>,
 
             drilling: <contenttweaker:abyssum_pieces> * 6
@@ -2722,7 +2731,7 @@ val ores as IItemStack[string][string][string] = {
         chunk: {
             item: <contenttweaker:abyssum_chunk>,
             crushing: <taiga:abyssum_dust> * 2,
-            crushingByprod1: <taiga:palladium_dust>,
+            crushingByprod1: <contenttweaker:barite_dust>,
 
             madeFrom: <contenttweaker:abyssum_pieces> * 3,
             made2x2: <contenttweaker:abyssum_pieces>,
@@ -3903,6 +3912,7 @@ val drilling_fluid_amount as int[string] = {
     molybdenum: 1200,
     zirconium: 1200,
     spaceice: 1000,
+    xenotime: 1000,
     death_metal: 1500,
     kikeridan: 5000,
 

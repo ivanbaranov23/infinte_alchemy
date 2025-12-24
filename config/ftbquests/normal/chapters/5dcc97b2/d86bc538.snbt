@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: -4.5d,
+	dependencies: [
+		"8520c921"
+	],
+	tasks: [{
+		uid: "713c934a",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:menril_seeds"
+		}]
+	}]
+}

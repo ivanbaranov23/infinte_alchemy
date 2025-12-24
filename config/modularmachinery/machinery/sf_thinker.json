@@ -1,0 +1,4091 @@
+{
+    "registryname": "sf_thinker",
+    "localizedname": "Space Folder - Thinker",
+    "color": "2d1049",
+    "parts": [
+        
+        {
+            "x": 2,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            
+            "elements": [
+                "casings_all_all"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -13,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -10,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -7,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -9,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -11,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -13,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -12,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -8,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "contenttweaker:eye_corner@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            
+            "elements": [
+                "casings_all_all"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -11,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -13,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -6,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -10,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -13,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -12,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -9,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -9,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -12,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -11,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -10,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -12,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -11,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 7,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -11,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -9,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -12,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -7,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 7,
+            
+            "elements": [
+                "extrautils2:rainbowgenerator@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -6,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -8,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -13,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_side@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -7,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_side@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -8,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_center@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -6,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "contenttweaker:eye_side@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -11,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -9,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -10,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -8,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -13,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 4,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -12,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -10,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -8,
+            "z": 4,
+            "elements": [
+                "contenttweaker:sf_assembler_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -9,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "contenttweaker:sf_assembler_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            
+            "elements": [
+                "casings_all_all"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -7,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -6,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -11,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block2@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 4,
+            "elements": [
+                "contenttweaker:sf_assembler_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -6,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -13,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block2@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -7,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -12,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -9,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block2@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -8,
+            "z": 4,
+            "elements": [
+                "contenttweaker:sf_assembler_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "contenttweaker:sf_assembler_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 4,
+            "elements": [
+                "contenttweaker:sf_assembler_block@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -6,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -7,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -7,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -6,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -6,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -11,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -6,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        
+        {
+            "x": 0,
+            "y": -7,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -12,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -9,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block2@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -7,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -9,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -8,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -8,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -5,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block2@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -9,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -8,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -10,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -4,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -6,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_corner@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -10,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -9,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -11,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -8,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -7,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -11,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -13,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -13,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_side@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -10,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            
+            "elements": [
+                "casings_all_all"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -9,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -12,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -6,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_corner@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 4,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -8,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -13,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -11,
+            "z": 4,
+            "elements": [
+                "contenttweaker:sf_assembler_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -9,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -12,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -10,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -7,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -12,
+            "z": 4,
+            "elements": [
+                "contenttweaker:space_stabilization_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -8,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_corner@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -7,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -10,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -9,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -9,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -8,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -11,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_side@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -4,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block2@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -7,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -12,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -7,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -4,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -6,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -6,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -13,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 4,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -12,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -5,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -11,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -8,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -5,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 4,
+            "elements": [
+                "contenttweaker:eye_corner@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -13,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -11,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 3,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "contenttweaker:eye_side@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -9,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -13,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -6,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -13,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            
+            "elements": [
+                "casings_all_all"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -10,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -7,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -12,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "contenttweaker:eye_corner@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -10,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -9,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -8,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -13,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -11,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -12,
+            "z": 3,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:lamp@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -9,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            
+            "elements": [
+                "casings_all_all"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -13,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -10,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -6,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "extendedcrafting:lamp@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -8,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -11,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -12,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -12,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -11,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -12,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -11,
+            "z": 4,
+            "elements": [
+                "contenttweaker:sf_assembler_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -6,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 5,
+            "y": -13,
+            "z": 2,
+            "elements": [
+                "contenttweaker:iv_coil@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -10,
+            "z": 3,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -10,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -7,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -12,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        
+        {
+            "x": -2,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -13,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -7,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -9,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -10,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -4,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -6,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -8,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -13,
+            "z": 4,
+            "elements": [
+                "contenttweaker:conveyor_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -11,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "contenttweaker:eye_side@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -13,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -6,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -13,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 4,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block2@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -12,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -10,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -9,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -7,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -11,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -13,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -8,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "contenttweaker:eye_side@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -7,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -5,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -11,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -6,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -6,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -8,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 6,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -5,
+            "z": 2,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            
+            "elements": [
+                "casings_all_all"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -12,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -9,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -7,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": -1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 7,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -8,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -10,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -7,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:neutronium_sheetmetal@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -7,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -8,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "contenttweaker:eye_corner@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -8,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -13,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -5,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "contenttweaker:eye_corner@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -6,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -6,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 7,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -4,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -5,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -5,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -12,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -4,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -11,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -9,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -6,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 3,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:computer@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -10,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 7,
+            "elements": [
+                "contenttweaker:eye_center@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 6,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        
+        {
+            "x": 2,
+            "y": 4,
+            "z": 8,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 3,
+            "y": 5,
+            "z": 9,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -9,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -7,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            
+            "elements": [
+                "casings_all_all"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -12,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 5,
+            "z": 10,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -11,
+            "z": 1,
+            "elements": [
+                "contenttweaker:soul_frame@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "engineersdecor:rebar_concrete_tile@0"
+            ]
+        },
+        {
+            "x": -3,
+            "y": 2,
+            "z": 7,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -8,
+            "z": 1,
+            "elements": [
+                "contenttweaker:inert_glass@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 5,
+            "z": 5,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 6,
+            "elements": [
+                "contenttweaker:brain_matter_block@0"
+            ]
+        }
+    ]}

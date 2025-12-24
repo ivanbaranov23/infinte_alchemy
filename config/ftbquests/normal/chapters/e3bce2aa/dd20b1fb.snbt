@@ -9,6 +9,9 @@
 		"",
 		"The choice is yours"
 	],
+	dependencies: [
+		"c0bc8068"
+	],
 	tasks: [{
 		uid: "0315be0a",
 		type: "checkmark",

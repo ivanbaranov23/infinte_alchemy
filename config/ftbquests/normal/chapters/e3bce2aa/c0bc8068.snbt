@@ -1,11 +1,12 @@
 {
 	icon: "modularmachinery:large_sifter_controller",
-	x: 13.0d,
+	x: 12.0d,
 	y: 3.0d,
 	text: [
 		"This multiblock will sieve 16 items at a time using a bit of lubricant. It gives a 1.2 times modifier for drops and can use meshes above diamond."
 	],
 	dependencies: [
+		"96d9df75",
 		"3e4610f4"
 	],
 	optional: true,

@@ -3,89 +3,10 @@
     "localizedname": "Large Sifter",
     "color": "242530",
     "modifiers": [
-        {
-            "x": -1,
+        {"description": "+8 item output, +50 fluid input, x1.5 energy input",
+            "x": 0,
             "y": 1,
-            "z": 2,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ],
-            "description": "+8 item output, +50 fluid input, x1.5 energy input"
-        },
-        {
-            "x": -1,
-            "y": 2,
             "z": 3,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "duration",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 1,
             "elements": [
                 "contenttweaker:lucky_gearbox@0"
             ],
@@ -110,8 +31,8 @@
         },
         {
             "x": 1,
-            "y": 2,
-            "z": 1,
+            "y": 1,
+            "z": 3,
             "elements": [
                 "contenttweaker:lucky_gearbox@0"
             ],
@@ -136,214 +57,6 @@
         },
         {
             "x": -1,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 0,
-            "y": 2,
-            "z": 3,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 2,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 1,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 0,
-            "y": 1,
-            "z": 3,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 1,
-            "y": 2,
-            "z": 3,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 1,
-            "y": 1,
-            "z": 2,
-            "elements": [
-                "contenttweaker:lucky_gearbox@0"
-            ],
-            "modifier": [
-                {
-                    "io": "output",
-                    "target": "item",
-                    "operation": 0,
-                    "multiplier": 8
-                }, {
-                    "io": "input",
-                    "target": "fluid",
-                    "operation": 0,
-                    "multiplier": 50
-                }, {
-                    "io": "input",
-                    "target": "energy",
-                    "operation": 1,
-                    "multiplier": 1.5
-                }
-            ]
-        },
-        {
-            "x": 1,
             "y": 1,
             "z": 3,
             "elements": [
@@ -395,9 +108,191 @@
             ]
         },
         {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
             "x": -1,
             "y": 1,
-            "z": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
             "elements": [
                 "contenttweaker:lucky_gearbox@0"
             ],
@@ -447,8 +342,8 @@
             ]
         },
         {
-            "x": 0,
-            "y": 2,
+            "x": 1,
+            "y": 1,
             "z": 1,
             "elements": [
                 "contenttweaker:lucky_gearbox@0"
@@ -471,6 +366,580 @@
                     "multiplier": 1.5
                 }
             ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:lucky_gearbox@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 8
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 50
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.5
+                }
+            ]
+        },
+
+        {"description": "+1 item output, +5 fluid input, x1.25 energy input",
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:grate@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 1
+                }, {
+                    "io": "input",
+                    "target": "fluid",
+                    "operation": 0,
+                    "multiplier": 5
+                }, {
+                    "io": "input",
+                    "target": "energy",
+                    "operation": 1,
+                    "multiplier": 1.25
+                }
+            ]
+            
         }
     ],
     "parts": [

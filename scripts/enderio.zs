@@ -355,6 +355,8 @@ recipes.addShaped("ia_dark_steel_direct", <enderio:item_dark_steel_upgrade:1>.wi
 	]);
 }
 
+
+
 {//cheap chassi machines
 	recipes.remove(<enderio:block_painter>);
 	recipes.addShaped("ia_eio_block_painter", <enderio:block_painter>, [
@@ -368,6 +370,13 @@ recipes.addShaped("ia_dark_steel_direct", <enderio:item_dark_steel_upgrade:1>.wi
 		[<minecraft:iron_bars>, <engineersdecor:factory_hopper>, <minecraft:iron_bars>], 
 		[<moreplates:redstone_alloy_plate>, <enderio:item_material>, <moreplates:redstone_alloy_plate>], 
 		[<minecraft:iron_bars>, <engineersdecor:factory_hopper>, <minecraft:iron_bars>]
+	]);
+
+	recipes.remove(<enderio:block_enchanter>);
+	recipes.addShaped("ia_eio_enchanter", <enderio:block_enchanter>, [
+		[<moreplates:dark_steel_plate>, <thermalexpansion:machine:13>, <moreplates:dark_steel_plate>],
+		[null, <enderio:item_material>, null],
+		[null, <moreplates:dark_steel_plate>, null]
 	]);
 }
 

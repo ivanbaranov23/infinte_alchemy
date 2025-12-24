@@ -1,6 +1,8 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 
+import mods.modularmachinery.RecipeBuilder;
+
 import mods.mekanism.infuser;
 
 {//gas:explosion_stone_glue
@@ -120,6 +122,21 @@ for fluid in essenceToItem_esg{
                 essence, fluid * cost, <gas:explosion_stone_glue> * cost, 
                 ore, <gas:waste_gas> * (cost / 5), 1000, 60
             );
+            {
+                var rec = RecipeBuilder.newBuilder("making_" ~ ore.name, "essence_burner", 20 * 1);
+
+                rec.addEnergyPerTickInput(256000);
+
+                rec.addItemInput(essence * (essence.amount * 16));
+                rec.addGasInput(<gas:explosion_stone_glue> * (cost * 4));
+                rec.addFluidInput(fluid * (cost * 4));
+                rec.addFluidInput(<liquid:leap> * cost);
+
+                //rec.addFluidOutput(<liquid:essence_slurp> * 5000);
+                rec.addItemOutput(ore * 64);
+
+                rec.build();
+            }
         }
     }
 }
@@ -173,6 +190,22 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
 
     mods.thermalexpansion.Crucible.addRecipe(<liquid:dirt> * 500, <mysticalagriculture:dirt_essence>, 2000);
     //
+
+    //water
+    addEssenceRec_1(<mysticalagriculture:water_essence>, <harvestcraft:freshwateritem> * 4);
+    recipes.addShapeless("ia_water_bucket", <minecraft:water_bucket>, [<minecraft:bucket>, <mysticalagriculture:water_essence>]);
+    recipes.addShapeless("ia_water_bucket_pure", <forge:bucketfilled>.withTag({FluidName: "pure_water", Amount: 1000}), [
+        <minecraft:bucket>, <mysticalagriculture:water_essence>, <mysticalagriculture:water_essence>
+    ]);
+    recipes.addShapeless("ia_water_bucket_sea", <forge:bucketfilled>.withTag({FluidName: "sea_water", Amount: 1000}), [
+        <minecraft:bucket>, <mysticalagriculture:water_essence>, <mekanism:salt> | <alchemistry:mineral_salt>
+    ]);
+    recipes.addShapeless("ia_water_bucket_seaweed", <forge:bucketfilled>.withTag({FluidName: "seaweed_rich_water", Amount: 1000}), [
+        <minecraft:bucket>, <mysticalagriculture:water_essence>, <harvestcraft:seaweeditem>
+    ]);
+
+    //menril
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:menrilresin> * 500, <mysticalagriculture:menril_essence>, 2000);
 }
 {//2
     infuser.addRecipe("FUNGI", 10, <mysticalagriculture:silicon_essence>, <appliedenergistics2:material:5> * 2);

@@ -112,3 +112,9 @@ recipes.addShaped("ia_quartz_glass2", <betternether:quartz_glass> * 3, [
 	[<ore:crystalPureNetherQuartz>, <thermalfoundation:glass:2>, <ore:crystalPureNetherQuartz>], 
 	[<taiga:dilithium_crystal>, <ore:crystalPureCertusQuartz>, null]
 ]);
+
+
+
+mods.alchemistry.Combiner.addRecipe(<contenttweaker:didymium>, [
+    <alchemistry:compound:1> * 32, <alchemistry:element:59> * 8, <alchemistry:element:60> * 8
+]);

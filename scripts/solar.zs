@@ -160,14 +160,14 @@ recipes.removeByMod("solarflux");
 
 	recipes.addShaped("ia_solar_part6", <solarflux:photovoltaic_cell_5> * 3, [
 		[<solarflux:photovoltaic_cell_4>, <solarflux:photovoltaic_cell_4>, <solarflux:photovoltaic_cell_4>], 
-		[<projectred-core:resource_item:341>, <enderio:item_material:17>, <projectred-core:resource_item:341>], 
+		[<projectred-core:resource_item:341>, <contenttweaker:perovskite_plate>, <projectred-core:resource_item:341>], 
 		[<enderio:item_material:34>, <enderio:item_capacitor_crystalline>, <enderio:item_material:34>]
 	]);
 	addAssemblerRecipe(
 		[<solarflux:photovoltaic_cell_5> * 4],
 		[
 			<solarflux:photovoltaic_cell_4> * 3,
-			<projectred-core:resource_item:341>, <enderio:item_material:17>,
+			<projectred-core:resource_item:341>, <contenttweaker:perovskite_plate>,
 			<enderio:item_material:34>, <enderio:item_capacitor_crystalline>
 		], null,
 		20, 400

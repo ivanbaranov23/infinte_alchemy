@@ -175,9 +175,9 @@ recipes.addShaped("ia_terrestrial_artifact", <biomesoplenty:terrestrial_artifact
 recipes.remove(<enderio:item_material:14>);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:14>);
 recipes.addShaped("ia_vivid_crystal", <enderio:item_material:14>, [
-	[<enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:6>], 
-	[<enderio:item_alloy_endergy_ingot:6>, <contenttweaker:delicate_malachite>, <enderio:item_alloy_endergy_ingot:6>], 
-	[<enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:6>]
+	[<enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:6> | <contenttweaker:selenium_block>, <enderio:item_alloy_endergy_ingot:6>], 
+	[<enderio:item_alloy_endergy_ingot:6> | <bloodmagic:item_demon_crystal>, <contenttweaker:delicate_malachite>, <enderio:item_alloy_endergy_ingot:6> | <bloodmagic:item_demon_crystal>], 
+	[<enderio:item_alloy_endergy_ingot:6>, <enderio:item_alloy_endergy_ingot:6> | <contenttweaker:selenium_block>, <enderio:item_alloy_endergy_ingot:6>]
 ]);
 mods.enderio.SagMill.removeRecipe(<enderio:item_material:14>);
 mods.enderio.SagMill.addRecipe(
@@ -187,9 +187,9 @@ mods.enderio.SagMill.addRecipe(
 recipes.remove(<enderio:item_material:15>);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:15>);
 recipes.addShaped("ia_vibrant_crystal", <enderio:item_material:15>, [
-	[<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2>], 
-	[<enderio:item_alloy_ingot:2>, <projectred-core:resource_item:202>, <enderio:item_alloy_ingot:2>], 
-	[<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2>]
+	[<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2> | <contenttweaker:selenium_block>, <enderio:item_alloy_ingot:2>], 
+	[<enderio:item_alloy_ingot:2> | <bloodmagic:item_demon_crystal>, <projectred-core:resource_item:202>, <enderio:item_alloy_ingot:2> | <bloodmagic:item_demon_crystal>], 
+	[<enderio:item_alloy_ingot:2>, <enderio:item_alloy_ingot:2> | <contenttweaker:selenium_block>, <enderio:item_alloy_ingot:2>]
 ]);
 mods.enderio.SagMill.removeRecipe(<enderio:item_material:15>);
 mods.enderio.SagMill.addRecipe(

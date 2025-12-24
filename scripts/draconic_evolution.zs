@@ -8,6 +8,10 @@ recipes.addShaped("potentiometer", <draconicevolution:potentiometer>, [
     [<projectred-core:resource_item>, <projectred-core:resource_item>, <projectred-core:resource_item>]
 ]);
 
+recipes.remove(<draconicevolution:diss_enchanter>);
+recipes.addShapeless("ia_diss_enchanter", <draconicevolution:diss_enchanter>, [
+    <enderio:block_enchanter>, <actuallyadditions:item_disenchanting_lens>
+]);
 
 recipes.remove(<draconicevolution:draconic_core>);
 

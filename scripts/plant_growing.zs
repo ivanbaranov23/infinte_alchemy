@@ -225,7 +225,7 @@ function addGCrecipe2(tier as int,
 			[RecipeModifierBuilder.create(
 				"modularmachinery:item", "output", 2, 1, false
 			).build()]
-	).setChance(1.0);
+	).setChance(0.5);
 
     rec.build();
 }

@@ -270,28 +270,43 @@ scripts.content_machines.addFluidMixerRecipe(
 }
 
 {//copper proc
+    //blue acid
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:blue_acid> * 1000, 
+        <liquid:electrotine> * 500, <liquid:sulfuricacid> * 500, <ore:dustWheat>, 
+        20, 100
+    );
+    
+    //rejects
     mods.mekanism.reaction.addRecipe(
-        <mekanism:dirtydust:3> * 3, <liquid:electrotine> * 1000, <gas:waste_gas> * 250, 
-        <thermalfoundation:material:64> * 5, <gas:copper_reject> * 250, 9000, 60
+        <mekanism:dirtydust:3> * 8, <liquid:electrotine> * 500, <gas:waste_gas> * 150, 
+        <thermalfoundation:material:64> * 12, <gas:copper_reject> * 250, 9000, 60
+    );
+    mods.mekanism.reaction.addRecipe(
+        <mekanism:dirtydust:3> * 8, <liquid:blue_acid> * 500, <gas:waste_gas> * 150, 
+        <thermalfoundation:material:64> * 12, <gas:copper_reject> * 250, 9000, 60
     );
 
     mods.mekanism.reaction.addRecipe(
-        <prodigytech:ash>, <liquid:pyrotheum> * 500, <gas:copper_reject> * 1000, 
-        <contenttweaker:copper_reject>, <gas:selenium_dioxide> * 250, 9000, 60
+        <prodigytech:ash>, <liquid:pyrotheum> * 500, <gas:copper_reject> * 500, 
+        <contenttweaker:copper_reject>, <gas:selenium_dioxide> * 500, 9000, 60
     );
 
     //selenium
+    mods.mekanism.chemical.infuser.addRecipe(<gas:selenium_dioxide>, <gas:water>, <gas:selenious_acid>);
     mods.mekanism.reaction.addRecipe(
-        <contenttweaker:empty_ingot>, <liquid:liquidsulfurdioxide> * 1000, <gas:selenium_dioxide> * 1000, 
+        <contenttweaker:empty_ingot>, <liquid:liquidsulfurdioxide> * 1000, <gas:selenious_acid> * 1000, 
         <alchemistry:ingot:34>, <gas:sulfuricacid> * 1000, 9000, 60
     );
+    
 
     //rejects
     mods.thermalexpansion.Centrifuge.addRecipe(
         [
-            <contenttweaker:antimony_dust> % 50,
-            <contenttweaker:arsenic_dust> % 20,
-            <contenttweaker:tellurium_dust> % 10
+            <projectred-core:resource_item:105> * 2,
+            <contenttweaker:antimony_dust> * 4,
+            <contenttweaker:arsenic_dust>,
+            <contenttweaker:tellurium_dust>
         ], <contenttweaker:copper_reject>, <liquid:dore> * 125, 
         3000
     );
@@ -570,6 +585,21 @@ scripts.content_machines.addFluidMixerRecipe(
         
         rec.build();
     }
+}
+{//xenotime
+    <contenttweaker:xenotime>.addTooltip("(Y,Yb,Gd)PO₄");
+    mods.alchemistry.Dissolver.addRecipe(<contenttweaker:xenotime>, false, 1,
+        [
+            [100, 
+                <alchemistry:element:39> * 4, 
+                <alchemistry:element:70> * 4, 
+                <alchemistry:element:64> * 4,
+                <alchemistry:compound:14> * 8,
+                <alchemistry:element:66>,
+                <alchemistry:element:65>,
+            ]
+        ]
+    );
 }
 
 {//scandium

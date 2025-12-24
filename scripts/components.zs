@@ -700,6 +700,41 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 	);
 }
 {//boule
+	//silicon
+	recipes.remove(<projectred-core:resource_item:250>);
+    recipes.addShapeless("ia_sandy_coal1", <projectred-core:resource_item:250>, [<contenttweaker:charcoal_ball>, <extrautils2:decorativesolid:4>, <extrautils2:decorativesolid:4>, <contenttweaker:crystal_coal>]);
+    recipes.addShapeless("ia_sandy_coal2", <projectred-core:resource_item:250> * 3, [<contenttweaker:charcoal_ball>, <extrautils2:decorativesolid:4>, <extrautils2:decorativesolid:4>, <contenttweaker:crystal_coal>, <contenttweaker:sandworm_chitin>]);
+
+	recipes.addShapeless("ia_prepared_silicon", <contenttweaker:prepared_silicon>, [
+		<projectred-core:resource_item:250>, <contenttweaker:solar_silicon>, 
+		<contenttweaker:aluminum_silicon>, <contenttweaker:aluminum_silicon>, <contenttweaker:aluminum_silicon>, <contenttweaker:aluminum_silicon>,
+		<contenttweaker:aluminum_silicon>, <contenttweaker:aluminum_silicon>
+	]);
+	scripts.content_machines.addAdvancedMixerRecipe(
+		[<contenttweaker:prepared_silicon> * 2], [],
+		[
+			<projectred-core:resource_item:250>, <contenttweaker:solar_silicon>, 
+			<contenttweaker:aluminum_silicon> * 8
+		], [],
+		20, 10000
+	);
+	mods.bloodmagic.AlchemyTable.addRecipe(<contenttweaker:prepared_silicon> * 4, [
+		<projectred-core:resource_item:250>, <contenttweaker:solar_silicon>, 
+		<contenttweaker:aluminum_silicon>, <contenttweaker:aluminum_silicon>, <contenttweaker:aluminum_silicon>, <contenttweaker:aluminum_silicon>
+	], 1000, 20, 1);
+
+
+    furnace.remove(<projectred-core:resource_item:300>);
+    mods.enderio.AlloySmelter.addRecipe(<projectred-core:resource_item:300>, 
+        [<contenttweaker:prepared_silicon> * 6, <contenttweaker:gallium_dust>, <contenttweaker:arsenic_dust>], 
+        150000
+    );
+
+    recipes.remove(<projectred-core:resource_item:301>);
+    scripts.helper.addSawRecipe(<projectred-core:resource_item:300>, <projectred-core:resource_item:301> * 8);
+
+
+	//gambrosium
 	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:gambrosium_boule>, [
 			<contenttweaker:ambrosium_crystal_seed>, 
 			<projectred-core:resource_item:300> * 4, 
@@ -1275,6 +1310,18 @@ mods.actuallyadditions.Empowerer.addRecipe(
 				<contenttweaker:atomic_clock> * 6
 			],
 			<liquid:mirion2> * (144 * 8), 20, 1024
+		);
+
+
+		
+		scripts.content_machines.addAssemblerRecipe(
+			[<ometweaks:kikeridan_capacitor> * 6],
+			[
+				<enderio:item_capacitor_stellar> * 4,
+				<minecraft:beacon> * 16,
+				<contenttweaker:kikeridan_gear> * 8
+			],
+			<liquid:dark_matter> * (144 * 8), 20, 1024
 		);
 
 

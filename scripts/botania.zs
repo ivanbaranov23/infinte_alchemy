@@ -101,8 +101,8 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     recipes.remove(<botania:pool>);
     mods.extendedcrafting.TableCrafting.addShaped(0, <botania:pool>, [
         [null, null, null, null, null], 
-        [<ore:livingrock>, null, null, null, <ore:livingrock>], 
-        [<ore:livingrock>, <ore:plateMithril>, <ore:plateMithril>, <ore:plateMithril>, <ore:livingrock>], 
+        [<bloodmagic:component:27>, null, null, null, <bloodmagic:component:27>], 
+        [<ore:livingrock>, <ore:plateMithril>, <contenttweaker:crystal_metal_plate>, <ore:plateMithril>, <ore:livingrock>], 
         [<ore:livingrock>, <contenttweaker:manabrick_block>, <contenttweaker:manabrick_block>, <contenttweaker:manabrick_block>, <ore:livingrock>], 
         [<ore:livingrock>, <ore:livingrock>, <ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
     ]);
@@ -211,6 +211,23 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
 
 
 
+    RuneAltar.addRecipe(<contenttweaker:petals2>, [
+        <botania:petalblock:0>, <botania:petalblock:0>, <botania:petalblock:0>,
+        <botania:petalblock:8>, <botania:petalblock:8>, <botania:petalblock:8>,
+        <botania:petalblock:7>, <botania:petalblock:7>, <botania:petalblock:7>,
+        <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>,
+        <moretcon:ingotsanguiseelium>
+    ], 10000);
+    RuneAltar.addRecipe(<contenttweaker:petals2> * 2, [
+        <botania:petalblock:0>, <botania:petalblock:0>, <botania:petalblock:0>,
+        <botania:petalblock:8>, <botania:petalblock:8>, <botania:petalblock:8>,
+        <botania:petalblock:7>, <botania:petalblock:7>, <botania:petalblock:7>,
+        <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>,
+        <moretcon:ingotsanguiseelium>, <alchemistry:ingot:68>
+    ], 10000);
+
+
+
     RuneAltar.addRecipe(<contenttweaker:petals3>, [
         <botania:petalblock:5>, <botania:petalblock:5>, <botania:petalblock:5>,
         <botania:petalblock:6>, <botania:petalblock:6>, <botania:petalblock:6>,
@@ -224,6 +241,40 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
         <botania:petalblock:13>, <botania:petalblock:13>, <botania:petalblock:13>,
         <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>,
         <moretcon:ingotatronium>, <alchemistry:ingot:67>
+    ], 10000);
+
+
+
+    RuneAltar.addRecipe(<contenttweaker:petals4>, [
+        <botania:petalblock:12>, <botania:petalblock:12>, <botania:petalblock:12>,
+        <botania:petalblock:9>, <botania:petalblock:9>, <botania:petalblock:9>,
+        <botania:petalblock:15>, <botania:petalblock:15>, <botania:petalblock:15>,
+        <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>,
+        <moretcon:ingotvalasium>
+    ], 10000);
+    RuneAltar.addRecipe(<contenttweaker:petals4> * 2, [
+        <botania:petalblock:12>, <botania:petalblock:12>, <botania:petalblock:12>,
+        <botania:petalblock:9>, <botania:petalblock:9>, <botania:petalblock:9>,
+        <botania:petalblock:15>, <botania:petalblock:15>, <botania:petalblock:15>,
+        <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>,
+        <moretcon:ingotvalasium>, <alchemistry:ingot:64>
+    ], 10000);
+
+
+
+    RuneAltar.addRecipe(<contenttweaker:petals5>, [
+        <botania:petalblock:3>, <botania:petalblock:3>, <botania:petalblock:3>,
+        <botania:petalblock:2>, <botania:petalblock:2>, <botania:petalblock:2>,
+        <botania:petalblock:11>, <botania:petalblock:11>, <botania:petalblock:11>,
+        <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>,
+        <moretcon:ingottrichromadentium>
+    ], 10000);
+    RuneAltar.addRecipe(<contenttweaker:petals5> * 2, [
+        <botania:petalblock:3>, <botania:petalblock:3>, <botania:petalblock:3>,
+        <botania:petalblock:2>, <botania:petalblock:2>, <botania:petalblock:2>,
+        <botania:petalblock:11>, <botania:petalblock:11>, <botania:petalblock:11>,
+        <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>, <roots:terra_moss>,
+        <moretcon:ingottrichromadentium>, <alchemistry:ingot:65>
     ], 10000);
 }
 
@@ -264,7 +315,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
     Apothecary.addRecipe("thermalily", [
         <contenttweaker:revived_bush>,
         <extrautils2:machine>.withTag({Type: "extrautils2:generator_lava"}),
-        <botania:petalblock:14>, <botania:petalblock:1>, <botania:petalblock:1>, 
+        <contenttweaker:petals1>, 
         <botania:rune:1>, <botania:rune:2>
     ]);
 
@@ -276,7 +327,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
     Apothecary.addRecipe("entropinnyum", [
         <contenttweaker:revived_bush>,
         <extrautils2:machine>.withTag({Type: "extrautils2:generator_tnt"}),
-        <botania:petalblock:14>, <xreliquary:mob_ingredient:8>, <xreliquary:mob_ingredient:8>, 
+        <contenttweaker:petals1>, <xreliquary:mob_ingredient:8>, <xreliquary:mob_ingredient:8>, 
         <botania:rune:1>, <botania:rune:13>
     ]);
 
@@ -305,8 +356,16 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
         <enderio:block_farm_station>,
         <xreliquary:fertile_lilypad>,
         <botania:overgrowthseed>,
-        <botania:petalblock:5>, <botania:petalblock:5>, <botania:petalblock:5>,
+        <contenttweaker:petals3>,
         <botania:rune:4>
+    ]);
+    
+    Apothecary.removeRecipe("pollidisiac");
+    Apothecary.addRecipe("pollidisiac", [
+        <contenttweaker:revived_bush>,
+        <botania:petalblock:14>, <botania:petalblock:6>, <botania:petalblock:1>,
+        <contenttweaker:petals3>,
+        <botania:rune:1>, <botania:rune:9>
     ]);
     
 

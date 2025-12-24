@@ -2,6 +2,8 @@
     "registryname": "hydroponic",
     "localizedname": "Hydroponic",
     "color": "1d0423",
+    "has-factory": true,
+	"factory-only": true,
     "parts": [
         {
             "x": 1,

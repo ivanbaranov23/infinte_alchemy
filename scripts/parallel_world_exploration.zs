@@ -58,6 +58,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
 
                 <contenttweaker:bismuth_ore> * 64,
                 <contenttweaker:gallium_ore> * 64,
+                <contenttweaker:barite_ore> * 32,
 
                 <taiga:meteoritecobble_block> * 32
             ],[
@@ -70,6 +71,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 
                 <contenttweaker:bismuth_ore> * 32,
                 <contenttweaker:gallium_ore> * 32,
+                <contenttweaker:barite_ore> * 32,
 
                 <taiga:meteoritecobble_block> * 16
             ]
@@ -531,13 +533,13 @@ recipes.addShaped("ia_tincan_target_mob", <contenttweaker:tincan_target_mob>, [
 
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:portal>, [
-    [<modularmachinery:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularmachinery:pworld_oregen_controller>], 
+    [<modularmachinery:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <botania:alfheimportal>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularmachinery:pworld_oregen_controller>], 
     [<enderio:block_tele_pad>, <contenttweaker:wormholium>, <bloodmagic:component:17>, <bloodmagic:component:17>, <bloodmagic:component:17>, <contenttweaker:wormholium>, <enderio:block_tele_pad>], 
     [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
-    [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <botania:alfheimportal>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
+    [<botania:alfheimportal>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <botania:alfheimportal>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <botania:alfheimportal>], 
     [<enderio:block_tele_pad>, <bloodmagic:component:17>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <mekanism:teleportationcore>, <bloodmagic:component:17>, <enderio:block_tele_pad>], 
     [<enderio:block_tele_pad>, <contenttweaker:wormholium>, <bloodmagic:component:17>, <bloodmagic:component:17>, <bloodmagic:component:17>, <contenttweaker:wormholium>, <enderio:block_tele_pad>], 
-    [<modularmachinery:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularmachinery:pworld_oregen_controller>]
+    [<modularmachinery:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <botania:alfheimportal>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularmachinery:pworld_oregen_controller>]
 ]);
 
 /*

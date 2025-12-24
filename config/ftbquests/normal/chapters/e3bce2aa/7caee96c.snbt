@@ -1,0 +1,25 @@
+{
+	x: 13.0d,
+	y: 3.0d,
+	text: [
+		"Replace bars inside for more output items at the cost of more lub and power"
+	],
+	dependencies: [
+		"c0bc8068"
+	],
+	optional: true,
+	tasks: [{
+		uid: "7f3beeda",
+		type: "item",
+		items: [{
+			item: "contenttweaker:grate"
+		}]
+	},
+	{
+		uid: "a9c85370",
+		type: "item",
+		items: [{
+			item: "contenttweaker:lucky_gearbox"
+		}]
+	}]
+}

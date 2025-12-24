@@ -14,7 +14,7 @@ recipes.remove(<mysticalagriculture:master_infusion_crystal>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagriculture:master_infusion_crystal>, [
     [<contenttweaker:singularity_dust>, <contenttweaker:singularity_dust>, <contenttweaker:singularity_dust>, <contenttweaker:singularity_dust>, <contenttweaker:singularity_dust>], 
     [<contenttweaker:singularity_dust>, <mysticalagradditions:insanium>, <mysticalagradditions:insanium>, <mysticalagradditions:insanium>, <contenttweaker:singularity_dust>], 
-    [<contenttweaker:singularity_dust>, <mysticalagradditions:insanium>, <matc:supremiumcrystal>, <mysticalagradditions:insanium>, <contenttweaker:singularity_dust>], 
+    [<contenttweaker:singularity_dust>, <mysticalagradditions:insanium>, <matc:supremiumcrystal>.anyDamage(), <mysticalagradditions:insanium>, <contenttweaker:singularity_dust>], 
     [<contenttweaker:singularity_dust>, <mysticalagradditions:insanium>, <mysticalagradditions:insanium>, <mysticalagradditions:insanium>, <contenttweaker:singularity_dust>], 
     [<contenttweaker:singularity_dust>, <contenttweaker:singularity_dust>, <contenttweaker:singularity_dust>, <contenttweaker:singularity_dust>, <contenttweaker:singularity_dust>]
 ]);

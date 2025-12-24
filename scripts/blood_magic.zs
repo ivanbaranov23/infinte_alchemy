@@ -31,7 +31,7 @@ val any_orbs as IIngredient[] = [
 
 recipes.addShapeless("soul_posion", <contenttweaker:soul_poison>, [
 		<contenttweaker:ophidian_extract>, <contenttweaker:irradiated_compound>, <contenttweaker:seth_godshard>, 
-		<mowziesmobs:naga_fang> | <contenttweaker:rare_earth_dust> | <contenttweaker:indium_dust> | <tconevo:metal:32>
+		<mowziesmobs:naga_fang> | <contenttweaker:rare_earth_dust> | <contenttweaker:arsenic_dust> | <tconevo:metal:32>
 ]);
 
 recipes.remove(<bloodmagic:soul_snare>);
@@ -45,6 +45,23 @@ scripts.content_machines.addAssemblerRecipe(
 	null, 20, 256
 );
 
+
+recipes.remove(<bloodmagic:sacrificial_dagger>.withTag({sacrifice: 0 as byte}));
+mods.extendedcrafting.TableCrafting.addShaped(0, <bloodmagic:sacrificial_dagger>.withTag({sacrifice: 0 as byte}), [
+	[null, null, null, null, <thermalfoundation:tool.sword_platinum>.noReturn()], 
+	[null, null, null, <thermalfoundation:tool.sword_platinum>.noReturn(), null], 
+	[<enderio:item_material:8>, null, <thermalfoundation:tool.sword_platinum>.noReturn(), null, null], 
+	[null, <contenttweaker:blood_gem>, null, null, null], 
+	[<enderio:item_material:8>, null, <enderio:item_material:8>, null, null]
+]);
+BloodAltar.removeRecipe(<minecraft:iron_sword>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <bloodmagic:dagger_of_sacrifice>, [
+	[null, null, null, null, <mysticalworld:amethyst_sword>.noReturn()], 
+	[null, null, null, <mysticalworld:amethyst_sword>.noReturn(), null], 
+	[<enderio:item_material:8>, null, <mysticalworld:amethyst_sword>.noReturn(), null, null], 
+	[null, <contenttweaker:blood_gem>, null, null, null], 
+	[<enderio:item_material:8>, null, <enderio:item_material:8>, null, null]
+]);
 
 
 
@@ -596,6 +613,11 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	TartaricForge.addRecipe(<bloodmagic:component:27>, [
 		<appliedenergistics2:material:37>, <moreplates:evil_infused_iron_gear>, <ironchest:iron_chest:1>, <actuallyadditions:item_misc:24>
 	], 100, 16);
+	//compression
+	TartaricForge.removeRecipe([<minecraft:obsidian>, <ore:blockIron>.firstItem, <ore:blockGold>.firstItem, <ore:cobblestone>.firstItem]);
+	TartaricForge.addRecipe(<bloodmagic:component:14>, [
+		<extrautils2:compressedcobblestone:4>, <avaritia:double_compressed_crafting_table>, <additionalcompression:dustsugar_compressed:2>, <excompressum:double_compressed_diamond_hammer>
+	], 250, 150);
 
 	//binding
 	TartaricForge.removeRecipe([<minecraft:glowstone_dust>,<minecraft:redstone>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);

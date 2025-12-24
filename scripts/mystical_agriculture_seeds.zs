@@ -71,8 +71,29 @@ var seed_items as IItemStack[][IItemStack][int] = {
 
         <mysticalagriculture:nature_seeds>: [
             <mysticalagriculture:crafting:6>, 
-            <harvestcraft:aridgarden>, <harvestcraft:frostgarden>, <harvestcraft:shadedgarden>, <harvestcraft:soggygarden>, <harvestcraft:tropicalgarden>, <harvestcraft:windygarden>
+            <harvestcraft:aridgarden> * 4, <harvestcraft:frostgarden> * 4, <harvestcraft:shadedgarden> * 4, <harvestcraft:soggygarden> * 4, <harvestcraft:tropicalgarden> * 4, <harvestcraft:windygarden> * 4
+        ],
+        <mysticalagriculture:wood_seeds>: [
+            <mysticalagriculture:nature_essence> * 64,
+            <extendedcrafting:singularity_custom:100> * 4,
+            <integrateddynamics:menril_log> * 64,
+            <twilightforest:ironwood_ingot> * 64
+        ],
+
+        <mysticalagriculture:water_seeds>: [
+            <cookingforblockheads:sink> * 4, <extrautils2:passivegenerator:3> * 4, <mekanism:machineblock:12> * 4
+        ],
+        <mysticalagriculture:nether_seeds>: [
+            <mysticalagriculture:crafting:8>,
+            <extrautils2:compressednetherrack:3>, <extendedcrafting:singularity_custom:25>, <extendedcrafting:singularity:4>, <biomesoplenty:flesh> * 256
+        ],
+
+        <mysticalagriculture:menril_seeds>: [
+            <mysticalagriculture:nature_essence> * 64,
+            <contenttweaker:menril_steel_ingot> * 256,
+            <integrateddynamics:crystalized_menril_block> * 256
         ]
+
     },
     2: {
         <mysticalagriculture:iron_seeds>: [<extendedcrafting:singularity:1> * 4, <harvestcraft:ironbrewitem> * 16],
@@ -83,7 +104,7 @@ var seed_items as IItemStack[][IItemStack][int] = {
         <mysticalagriculture:zinc_seeds>: [<extendedcrafting:singularity:20> * 4, <mysticalagriculture:iron_essence> * 64, <thermalexpansion:florb>.withTag({Fluid: "andesite"}) * 64],
         <mysticalagriculture:cobalt_seeds>: [<extendedcrafting:singularity:65> * 4, <mysticalagriculture:iron_essence> * 64, <mysticalagriculture:nether_essence> * 64],
         <mysticalagriculture:ardite_seeds>: [<extendedcrafting:singularity:64> * 4, <mysticalagriculture:iron_essence> * 64, <mysticalagriculture:nether_essence> * 64],
-        <mysticalcreations:antimony_seeds>: [<extendedcrafting:singularity_custom:73> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalcreations:antimony_seeds>: [<extendedcrafting:singularity_custom:73> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:solder> * 256],
 
         <mysticalagriculture:silicon_seeds>: [<projectred-core:resource_item:301> * 64],
 

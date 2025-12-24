@@ -4,6 +4,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import crafttweaker.item.WeightedItemStack;
 
 import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
 
 import mods.integrateddynamics.MechanicalSqueezer;
 
@@ -26,13 +27,21 @@ function addIBTrecipe(inputs as IItemStack[], outputs as WeightedItemStack[], ca
         rec.addItemInput(i);
         rec.setChance(0.0);
     }
+    rec.addCatalystInput(
+			<mysticalagriculture:wood_essence> * 4,
+			["Output items x2"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:item", "output", 2, 1, false
+			).build()]
+	).setChance(0.5);
+
     rec.addFluidInput(<liquid:fertilizer> * 200);
     rec.build();
 }
 
 //vanilla
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<minecraft:log> * 64, (<minecraft:apple> * 6) % 75, (<minecraft:sapling> * 8) % 0], [<minecraft:sapling>], 2, 500
+    [<minecraft:log> * 64, (<minecraft:apple> * 16) % 75, (<minecraft:sapling> * 8) % 0], [<minecraft:sapling>], 2, 500
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
     [<minecraft:log:1> * 64, (<minecraft:sapling:1> * 8) % 0], [<minecraft:sapling:1>], 2, 500
@@ -60,28 +69,28 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 12],
 
 {//erebus
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<erebus:log_balsam> * 24, (<erebus:sapling_balsam> * 8) % 0], [<erebus:sapling_balsam>], 12, 128
+        [<erebus:log_balsam> * 64, (<erebus:sapling_balsam> * 8) % 0], [<erebus:sapling_balsam>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<erebus:log_baobab> * 24, (<erebus:sapling_baobab> * 8) % 0], [<erebus:sapling_baobab>], 12, 128
+        [<erebus:log_baobab> * 64, (<erebus:sapling_baobab> * 8) % 0], [<erebus:sapling_baobab>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<erebus:log_marshwood> * 24, (<erebus:sapling_marshwood> * 8) % 0], [<erebus:sapling_marshwood>], 12, 128
+        [<erebus:log_marshwood> * 64, (<erebus:sapling_marshwood> * 8) % 0], [<erebus:sapling_marshwood>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<erebus:log_mossbark> * 24, (<erebus:sapling_mossbark> * 8) % 0], [<erebus:sapling_mossbark>], 12, 128
+        [<erebus:log_mossbark> * 64, (<erebus:sapling_mossbark> * 8) % 0], [<erebus:sapling_mossbark>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<erebus:log_mahogany> * 24, (<erebus:sapling_mahogany> * 8) % 0], [<erebus:sapling_mahogany>], 12, 128
+        [<erebus:log_mahogany> * 64, (<erebus:sapling_mahogany> * 8) % 0], [<erebus:sapling_mahogany>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<erebus:log_cypress> * 24, (<erebus:sapling_cypress> * 8) % 0], [<erebus:sapling_cypress>], 12, 128
+        [<erebus:log_cypress> * 64, (<erebus:sapling_cypress> * 8) % 0], [<erebus:sapling_cypress>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<erebus:log_asper> * 24, (<erebus:sapling_asper> * 8) % 0], [<erebus:sapling_asper>], 12, 128
+        [<erebus:log_asper> * 64, (<erebus:sapling_asper> * 8) % 0], [<erebus:sapling_asper>], 12, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<erebus:log_eucalyptus> * 24, (<erebus:sapling_eucalyptus> * 8) % 0], [<erebus:sapling_eucalyptus>], 12, 128
+        [<erebus:log_eucalyptus> * 64, (<erebus:sapling_eucalyptus> * 8) % 0], [<erebus:sapling_eucalyptus>], 12, 128
     );
 
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
@@ -91,23 +100,23 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 12],
 
 {//erebus mushroom
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-        [<erebus:kaizers_fingers_mushroom> * 12, (<erebus:kaizers_fingers_mushroom_block> * 8) % 0], 
+        [<erebus:kaizers_fingers_mushroom> * 32, (<erebus:kaizers_fingers_mushroom_block> * 8) % 0], 
         [<erebus:kaizers_fingers_mushroom>, <contenttweaker:research_mushroom1>], 10, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-        [<erebus:dutch_cap_mushroom> * 12, (<erebus:dutch_cap_mushroom_block> * 8) % 0], 
+        [<erebus:dutch_cap_mushroom> * 32, (<erebus:dutch_cap_mushroom_block> * 8) % 0], 
         [<erebus:dutch_cap_mushroom>, <contenttweaker:research_mushroom1>], 10, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-        [<erebus:grandmas_shoes_mushroom> * 12, (<erebus:grandmas_shoes_mushroom_block> * 8) % 0], 
+        [<erebus:grandmas_shoes_mushroom> * 32, (<erebus:grandmas_shoes_mushroom_block> * 8) % 0], 
         [<erebus:grandmas_shoes_mushroom>, <contenttweaker:research_mushroom1>], 10, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-        [<erebus:sarcastic_czech_mushroom> * 12, (<erebus:sarcastic_czech_mushroom_block> * 8) % 0], 
+        [<erebus:sarcastic_czech_mushroom> * 32, (<erebus:sarcastic_czech_mushroom_block> * 8) % 0], 
         [<erebus:sarcastic_czech_mushroom>, <contenttweaker:research_mushroom1>], 10, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-        [<erebus:dark_capped_mushroom> * 12, (<erebus:dark_capped_mushroom_block> * 8) % 0], 
+        [<erebus:dark_capped_mushroom> * 32, (<erebus:dark_capped_mushroom_block> * 8) % 0], 
         [<erebus:dark_capped_mushroom>, <contenttweaker:research_mushroom1>], 10, 128
     );
     
@@ -115,56 +124,56 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 12],
 
 //other
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<atum:palm_log> * 24, (<atum:date> * 4) % 75, (<atum:palm_sapling> * 8) % 0], [<atum:palm_sapling>], 12, 128
+    [<atum:palm_log> * 64, (<atum:date> * 4) % 75, (<atum:palm_sapling> * 8) % 0], [<atum:palm_sapling>], 12, 128
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-    [<aether_legacy:aether_log> * 24, (<aether_legacy:skyroot_sapling> * 8) % 0], [<aether_legacy:skyroot_sapling>], 12, 128
+    [<aether_legacy:aether_log> * 64, (<aether_legacy:skyroot_sapling> * 8) % 0], [<aether_legacy:skyroot_sapling>], 12, 128
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-    [<prodigytech:zorra_log> * 16, (<prodigytech:zorra_leaf> * 16) % 75, (<prodigytech:zorra_sapling> * 8) % 0], [<prodigytech:zorra_sapling>], 12, 128
+    [<prodigytech:zorra_log> * 64, (<prodigytech:zorra_leaf> * 16) % 75, (<prodigytech:zorra_sapling> * 8) % 0], [<prodigytech:zorra_sapling>], 12, 128
 );
 
 {//natura
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<natura:nether_logs:1> * 24, (<natura:edibles:10> * 6) % 75, (<natura:nether_sapling:2> * 8) % 0], [<natura:nether_sapling:2>], 15, 128
+        [<natura:nether_logs:1> * 64, (<natura:edibles:10> * 6) % 75, (<natura:nether_sapling:2> * 8) % 0], [<natura:nether_sapling:2>], 15, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<natura:nether_logs:2> * 24, (<natura:nether_sapling:1> * 8) % 0], [<natura:nether_sapling:1>], 15, 128
+        [<natura:nether_logs:2> * 64, (<natura:nether_sapling:1> * 8) % 0], [<natura:nether_sapling:1>], 15, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-        [<natura:nether_logs> * 24, (<natura:nether_sapling> * 8) % 0], [<natura:nether_sapling>], 15, 128
+        [<natura:nether_logs> * 64, (<natura:nether_sapling> * 8) % 0], [<natura:nether_sapling>], 15, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 24], 
-        [<natura:nether_logs2> * 24, (<tconstruct:edible:3> * 8) % 50, <tconstruct:edible:33> % 50, (<natura:nether_sapling2> * 8) % 0], [<natura:nether_sapling2>], 15, 256
+        [<natura:nether_logs2> * 64, (<tconstruct:edible:3> * 8) % 50, <tconstruct:edible:33> % 50, (<natura:nether_sapling2> * 8) % 0], [<natura:nether_sapling2>], 15, 256
     );
 
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-        [<natura:nether_glowshroom> * 12, (<natura:nether_green_large_glowshroom> * 8) % 0], 
+        [<natura:nether_glowshroom> * 24, (<natura:nether_green_large_glowshroom> * 8) % 0], 
         [<natura:nether_glowshroom>, <contenttweaker:research_mushroom1>], 10, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-        [<natura:nether_glowshroom:1> * 12, (<natura:nether_blue_large_glowshroom> * 8) % 0], 
+        [<natura:nether_glowshroom:1> * 24, (<natura:nether_blue_large_glowshroom> * 8) % 0], 
         [<natura:nether_glowshroom:1>, <contenttweaker:research_mushroom1>], 10, 128
     );
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-        [<natura:nether_glowshroom:2> * 12, (<natura:nether_purple_large_glowshroom> * 8) % 0], 
+        [<natura:nether_glowshroom:2> * 24, (<natura:nether_purple_large_glowshroom> * 8) % 0], 
         [<natura:nether_glowshroom:2>, <contenttweaker:research_mushroom1>], 10, 128
 );
 }
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
-    [<quark:glowshroom> * 10, (<quark:glowshroom_block> * 6) % 0], 
+    [<quark:glowshroom> * 16, (<quark:glowshroom_block> * 6) % 0], 
     [<quark:glowshroom>, <contenttweaker:research_mushroom1>], 10, 128
 );
 
 //tic
 addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-    [<tconstruct:slime_congealed:4> * 24, (<minecraft:magma_cream> * 6) % 75, (<tconstruct:edible:3> * 4) % 50, (<tconstruct:slime_sapling:2> * 8) % 0], [<tconstruct:slime_sapling:2>], 15, 128
+    [<tconstruct:slime_congealed:4> * 32, (<minecraft:magma_cream> * 6) % 75, (<tconstruct:edible:3> * 4) % 50, (<tconstruct:slime_sapling:2> * 8) % 0], [<tconstruct:slime_sapling:2>], 15, 128
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-    [(<tconstruct:edible:1> * 6) % 75, <tconstruct:slime_congealed> * 24, (<tconstruct:slime_sapling> * 8) % 0], [<tconstruct:slime_sapling>], 15, 128
+    [(<tconstruct:edible:1> * 6) % 75, <tconstruct:slime_congealed> * 32, (<tconstruct:slime_sapling> * 8) % 0], [<tconstruct:slime_sapling>], 15, 128
 );
 addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
-    [(<tconstruct:edible:2> * 6) % 75, <tconstruct:slime_congealed> * 24, (<tconstruct:slime_sapling:1> * 8) % 0], [<tconstruct:slime_sapling:1>], 15, 128
+    [(<tconstruct:edible:2> * 6) % 75, <tconstruct:slime_congealed> * 32, (<tconstruct:slime_sapling:1> * 8) % 0], [<tconstruct:slime_sapling:1>], 15, 128
 );
 
 

@@ -465,3 +465,25 @@ import mods.modularmachinery.RecipeBuilder;
         rec.build();
     }
 }
+
+
+{//rarer earth
+    mods.mekanism.chemical.crystallizer.addRecipe(<gas:rarer_earth_slurry> * 250, <contenttweaker:rarer_earth_dust>);
+
+    mods.botania.ElvenTrade.addRecipe(
+        [<alchemistry:element:59>, <alchemistry:element:59>], 
+        [<contenttweaker:rarer_earth_dust>, <harvestcraft:carrotcakeitem>]
+    );
+    mods.botania.ElvenTrade.addRecipe(
+        [<alchemistry:element:65>, <alchemistry:element:65>], 
+        [<contenttweaker:rarer_earth_dust>, <harvestcraft:chocolatesprinklecakeitem>]
+    );
+    mods.botania.ElvenTrade.addRecipe(
+        [<alchemistry:element:66>, <alchemistry:element:66>], 
+        [<contenttweaker:rarer_earth_dust>, <minecraft:cake>]
+    );
+    mods.botania.ElvenTrade.addRecipe(
+        [<alchemistry:element:67>, <alchemistry:element:67>], 
+        [<contenttweaker:rarer_earth_dust>, <harvestcraft:cherrycheesecakeitem>]
+    );
+}

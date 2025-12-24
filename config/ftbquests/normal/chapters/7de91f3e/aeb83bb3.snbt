@@ -1,6 +1,6 @@
 {
 	title: "Simple Reagents",
-	x: 0.0d,
+	x: -1.0d,
 	y: -5.5d,
 	text: [
 		""

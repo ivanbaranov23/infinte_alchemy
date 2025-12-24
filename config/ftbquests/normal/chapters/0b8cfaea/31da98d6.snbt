@@ -1,5 +1,5 @@
 {
-	x: -0.5d,
+	x: 0.5d,
 	y: 1.0d,
 	text: [
 		"Right click the log to get paper. You can also bone meal the log to speed up regrowth.",

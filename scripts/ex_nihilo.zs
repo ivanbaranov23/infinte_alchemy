@@ -538,7 +538,7 @@ for mesh in sievables{
 		rec.addEnergyPerTickInput(256);
 
 		rec.addItemInput(sand * 16);
-		rec.addFluidInput(<liquid:lubricant> * 150);
+		rec.addFluidInput(<liquid:lubricant> * 50);
 		
 		rec.addItemInput(meshes[mesh]);
 		rec.setChance(0.0);

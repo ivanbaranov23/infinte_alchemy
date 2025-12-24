@@ -3,7 +3,7 @@
 		id: "bloodmagic:sentient_sword",
 		tag: {}
 	},
-	x: -2.0d,
+	x: -3.0d,
 	y: -9.5d,
 	text: [
 		"You can make an early will automation by putting mending on sentient sword (or Sentient metal TiC weapon) and giving it to killer joe."

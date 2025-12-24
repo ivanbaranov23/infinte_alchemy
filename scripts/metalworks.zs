@@ -1854,7 +1854,19 @@ static all_metals as IItemStack[string][string] = {
     },
     menril_berry: {
         ingot: <integrateddynamics:menril_berries>,
+        block: <integrateddynamics:menril_berries> * 9,
         dust: <integrateddynamics:menril_berries>
+    },
+    menril_essence: {
+        ingot: <mysticalagriculture:menril_essence>,
+        block: <mysticalagriculture:menril_essence> * 9,
+        dust: <mysticalagriculture:menril_essence>
+    },
+    salt: {
+        ingot: <mekanism:salt>,
+        block: <mekanism:saltblock>,
+        dust: <mekanism:salt>,
+        singularity: <extendedcrafting:singularity_custom:54>
     },
     resin: {
         ingot: <thermalfoundation:material:832>,
@@ -3344,9 +3356,10 @@ add3alloy(1, "flower_steel", 4,
         ]);
 
 
-        add2alloy(1, "menril_steel_base", 2,
+        add2_3alloy(1, "menril_steel_base", 2, 4,
             "fluix_steel", 1,
-            "menril_berry", 4
+            "menril_berry", 4,
+            "menril_essence", 2
         );
         mods.thermalexpansion.Transposer.addFillRecipe(
             all_metals.menril_steel.ingot, 
@@ -4946,21 +4959,46 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <contenttweaker:alchemical_brass_ingot>
         ]
     );
-    mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:neuronium_ingot> * 2, 1024 * 200, 1024, <contenttweaker:glass_ingot>, 
-        [
-            <contenttweaker:neuro_crystal>,
-            <contenttweaker:neuron_inlay>,
-            <contenttweaker:neuron_inlay>,
-            <contenttweaker:neuron_inlay>,
-            <contenttweaker:neuron_inlay>,
-            <contenttweaker:alchemical_brass_ingot>,
-            <contenttweaker:alchemical_brass_ingot>,
-            <extendedcrafting:material>,
-            <contenttweaker:medical_alloy_coil>,
-            <bloodmagic:demon_extras:11>
-        ]
-    );
+
+    {//neuronium
+        mods.extendedcrafting.CombinationCrafting.addRecipe(
+            <contenttweaker:neuronium_ingot> * 2, 1024 * 200, 1024, <contenttweaker:glass_ingot>, 
+            [
+                <contenttweaker:neuro_crystal>, <contenttweaker:neuro_crystal>,
+                <contenttweaker:chlorasteel_ingot>,
+                <contenttweaker:alchemical_brass_ingot>,
+                <contenttweaker:alchemical_brass_ingot>,
+                <extendedcrafting:material>,
+                <contenttweaker:medical_alloy_coil>,
+                <bloodmagic:demon_extras:11>
+            ]
+        );
+        mods.extendedcrafting.CombinationCrafting.addRecipe(
+            <contenttweaker:neuronium_ingot> * 2, 1024 * 200, 1024, <contenttweaker:glass_ingot>, 
+            [
+                <contenttweaker:neuro_crystal>, <contenttweaker:neuro_crystal>,
+                <contenttweaker:viking_metal>,
+                <contenttweaker:alchemical_brass_ingot>,
+                <contenttweaker:alchemical_brass_ingot>,
+                <extendedcrafting:material>,
+                <contenttweaker:medical_alloy_coil>,
+                <bloodmagic:demon_extras:11>
+            ]
+        );
+        mods.extendedcrafting.CombinationCrafting.addRecipe(
+            <contenttweaker:neuronium_ingot> * 2, 1024 * 200, 1024, <contenttweaker:glass_ingot>, 
+            [
+                <contenttweaker:neuro_crystal>, <contenttweaker:neuro_crystal>,
+                <alchemistry:ingot:73>,
+                <contenttweaker:alchemical_brass_ingot>,
+                <contenttweaker:alchemical_brass_ingot>,
+                <extendedcrafting:material>,
+                <contenttweaker:medical_alloy_coil>,
+                <bloodmagic:demon_extras:11>
+            ]
+        );
+    }
+
     mods.extendedcrafting.CombinationCrafting.addRecipe(
         <contenttweaker:fluxed_invar_ingot> * 3, 10240 * 200, 10240, <contenttweaker:super_alloy_base_ingot>, 
         [
@@ -5034,6 +5072,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
     
         rec.addItemInput(<contenttweaker:kikeridan_dust> * 100);
         rec.addItemInput(<contenttweaker:star_alloy_ingot>);
+        rec.addItemInput(<extrautils2:opinium:8>);
         rec.addItemInput(<moretcon:gemetherstone> * 16);
         rec.addFluidInput(<liquid:enchantium> * 4000);
         
@@ -5127,7 +5166,9 @@ scripts.content_machines.addAdvancedMixerRecipe(
         "lanthanum", 1
     );
        
-
+    mods.alchemistry.Combiner.addRecipe(<contenttweaker:terfenol_ingot>, [
+        <alchemistry:element:65> * 4, <alchemistry:element:66> * 4, <alchemistry:element:26> * 8
+    ]);
     
 
     recipes.remove(<bigreactors:ingotblutonium>);

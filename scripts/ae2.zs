@@ -373,7 +373,22 @@ function add_ae2_process_rec(output as IItemStack, input as IItemStack, topInput
 	}	
 }
 
+{//p2p
+	recipes.remove(<appliedenergistics2:part:460>);
+	recipes.addShaped("ia_p2p", <appliedenergistics2:part:460>, [
+		[null, <contenttweaker:fluix_steel_rod>, null],
+		[<moreplates:electrical_steel_plate>, <appliedenergistics2:material:24>, <moreplates:electrical_steel_plate>]
+	]);
 
+	mods.chisel.Carving.addGroup("p2p");
+	mods.chisel.Carving.addVariation("p2p", <appliedenergistics2:part:460>);
+	mods.chisel.Carving.addVariation("p2p", <appliedenergistics2:part:461>);
+	mods.chisel.Carving.addVariation("p2p", <appliedenergistics2:part:462>);
+	mods.chisel.Carving.addVariation("p2p", <appliedenergistics2:part:463>);
+	mods.chisel.Carving.addVariation("p2p", <appliedenergistics2:part:467>);
+	mods.chisel.Carving.addVariation("p2p", <appliedenergistics2:part:469>);
+	mods.chisel.Carving.addVariation("p2p", <nae2:part:1>);
+}
 
 {//machines
 	recipes.remove(<appliedenergistics2:inscriber>);

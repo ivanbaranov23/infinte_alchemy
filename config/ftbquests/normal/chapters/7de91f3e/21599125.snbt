@@ -1,0 +1,19 @@
+{
+	x: -1.0d,
+	y: -2.5d,
+	dependencies: [
+		"f10b4556"
+	],
+	tasks: [{
+		uid: "2211f213",
+		type: "item",
+		items: [{
+			item: "bloodmagic:component 1 14"
+		}]
+	}],
+	rewards: [{
+		uid: "d1ba153c",
+		type: "item",
+		item: "bloodmagic:component 1 14"
+	}]
+}

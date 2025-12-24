@@ -1,6 +1,9 @@
 {
 	x: 3.0d,
 	y: 0.0d,
+	text: [
+		"Can be dyed with petal powders"
+	],
 	dependencies: [
 		"123beeb9"
 	],
@@ -15,5 +18,10 @@
 		uid: "255fa6bd",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "7652daa6",
+		type: "item",
+		item: "botania:pool"
 	}]
 }

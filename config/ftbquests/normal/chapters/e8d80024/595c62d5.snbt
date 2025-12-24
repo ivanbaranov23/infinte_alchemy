@@ -1,6 +1,9 @@
 {
 	x: 15.0d,
 	y: -3.0d,
+	text: [
+		"Finally you can teleport bread"
+	],
 	dependencies: [
 		"dfd9e26b",
 		"17fe34e5",

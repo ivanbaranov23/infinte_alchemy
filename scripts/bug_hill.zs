@@ -359,6 +359,23 @@ for fl_food_type in bug_fluid_tiers{
         20, 1000
     );
 
+    //taiga
+    scripts.content_machines.basicFluidMixerRecipe(
+        null, <liquid:taiga_fluid> * 1000, 
+        <minecraft:sapling:1>, [<liquid:cryotheum> * 1000, <liquid:terrax_fluid> * 288], 
+        20, 1000
+    );
+    scripts.content_machines.basicFluidMixerRecipe(
+        null, <liquid:taiga_fluid> * 1200, 
+        <biomesoplenty:sapling_0:6>, [<liquid:cryotheum> * 1000, <liquid:terrax_fluid> * 288], 
+        20, 1000
+    );
+    scripts.content_machines.basicFluidMixerRecipe(
+        null, <liquid:taiga_fluid> * 1500, 
+        <harvestcraft:frostgarden>, [<liquid:cryotheum> * 1000, <liquid:terrax_fluid> * 288], 
+        20, 1000
+    );
+
     mods.thermalexpansion.Imbuer.addRecipe(
         <liquid:eggplant> * 1000, 
         <contenttweaker:eggplant_dust>, <liquid:potion>.withTag({Potion: "minecraft:long_fire_resistance"}) * 500, 
@@ -398,23 +415,21 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
 
             <mekores:mekanismore:268> % 1,
             <thermalfoundation:material:892> % 10
+        ],
+        <liquid:cracked_steam> * 100: [
+            <thermalfoundation:material:892> % 50,
+            <immersivepetroleum:material> % 50,
+            <contenttweaker:kaolin_clay> % 50,
+            <contenttweaker:kaolin_clay> % 50,
+            <contenttweaker:kaolin_clay> % 50
         ]
     },
     [66, 3000, 20*7, 400]: {
-        <liquid:flolit_water> * 100: [
-            <erebus:dark_capped_mushroom> % 15,
-            <erebus:sarcastic_czech_mushroom> % 15,
-            <erebus:grandmas_shoes_mushroom> % 15,
-            <erebus:dutch_cap_mushroom> % 15,
-            <erebus:kaizers_fingers_mushroom> % 15,
-
-            <erebus:materials:30> % 12,
-
-            <contenttweaker:jade_dust> % 5,
-            <contenttweaker:malachite_ore_dust> % 7,
-            <erebus:materials:11> % 10,
-
-            <contenttweaker:flolit> % 15
+        <liquid:formic_acid> * 200: [
+            <contenttweaker:flolit> % 20,
+            <contenttweaker:formic_acid_dust> % 40,
+            <mysticalagriculture:crafting:5> % 50,
+            <mysticalagriculture:crafting:5> % 50
         ],
         <liquid:chocolate_mud> * 100: [
             <contenttweaker:flolit> % 20,
@@ -438,6 +453,25 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
     },
 
 
+    [7, 2000, 20*10, 1000]: {
+        <liquid:taiga_fluid> * 400: [
+            <mekores:mekanismore:273> % 75,
+            <mekores:mekanismore:278> % 75,
+            <mekores:mekanismore:283> % 75,
+
+            <mekores:mekanismore:298> % 50,
+            <mekores:mekanismore:258> % 50,
+            <mekores:mekanismore:268> % 25,
+
+            <taiga:dilithium_crystal> % 50
+        ],
+        <liquid:cracked_steam> * 100: [
+            <thermalfoundation:material:892> % 50,
+            <thermalfoundation:material:892> % 50,
+            <immersivepetroleum:material> % 50,
+            <contenttweaker:kaolin_clay> % 50
+        ]
+    },
     [7, 4000, 20 * 10, 1000]: {
         <liquid:refined_biofuel> * 3000: [
             <botania:flower> % 75,
@@ -456,6 +490,17 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <botania:flower:13> % 75,
             <botania:flower:14> % 75,
             <botania:flower:15> % 75,
+        ]
+    },
+
+    [-1, 4000, 20 * 10, 1000]: {
+        <liquid:taiga_fluid> * 400: [
+            <taiga:tiberium_crystal> % 50,
+            <taiga:tiberium_crystal> % 50,
+
+            <mekores:mekanismore:253> % 50,
+            <mekores:mekanismore:218> % 50,
+            <taiga:meteorite_dust> % 50
         ]
     },
     [-1, 4000, 20 * 10, 1000]: {

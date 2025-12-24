@@ -1,0 +1,15 @@
+{
+	x: -1.0d,
+	y: -3.0d,
+	dependencies: [
+		"e9c0fd86"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f2580be1",
+		type: "item",
+		items: [{
+			item: "enderio:block_enchanter"
+		}]
+	}]
+}

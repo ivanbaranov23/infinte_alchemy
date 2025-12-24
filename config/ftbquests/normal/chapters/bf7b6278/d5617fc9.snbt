@@ -1,0 +1,18 @@
+{
+	x: 5.0d,
+	y: 4.0d,
+	text: [
+		"Eats plants and veggies and stuff to give 4-256 rft"
+	],
+	dependencies: [
+		"66443fc7"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0df0b05a",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_bio_reactor"
+		}]
+	}]
+}

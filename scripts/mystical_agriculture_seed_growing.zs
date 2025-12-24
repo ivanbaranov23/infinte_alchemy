@@ -50,6 +50,10 @@ addSeeds(<mysticalagriculture:nature_essence>, <mysticalagriculture:nature_seeds
 addSeeds(<mysticalagriculture:wood_essence>, <mysticalagriculture:wood_seeds>, 1);
 addSeeds(<mysticalagriculture:water_essence>, <mysticalagriculture:water_seeds>, 1);
 addSeeds(<mysticalagriculture:ice_essence>, <mysticalagriculture:ice_seeds>, 1);
+addSeeds(<mysticalagriculture:nether_essence>, <mysticalagriculture:nether_seeds>, 1);
+
+
+addSeeds(<mysticalagriculture:menril_essence>, <mysticalagriculture:menril_seeds>, 1);
 
 //t1 metals
 addSeeds(<mysticalagriculture:iron_essence>, <mysticalagriculture:iron_seeds>, 2);

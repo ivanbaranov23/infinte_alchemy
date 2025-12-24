@@ -51,12 +51,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "wood_infuser",
     "placeType": "Up",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "wood_infuser",
+    
     "model": "contenttweaker:machines/wood_infuser",
     "colors": [
       {
@@ -155,12 +155,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "bioassembler",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "bioassembler",
+    
     "model": "contenttweaker:machines/bioassembler",
     "colors": [
       {
@@ -187,7 +187,7 @@
     "hasGUI": true,
     "extraVariants": [],
     
-    "model": "contenttweaker:machines/bioassembler",
+    "model": "contenttweaker:machines/chemical_reactor",
     "colors": [
       {
         "r": 255,

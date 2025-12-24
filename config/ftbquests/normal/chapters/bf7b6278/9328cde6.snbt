@@ -5,7 +5,8 @@
 		"Water wheel can be your first power source"
 	],
 	dependencies: [
-		"3a66f8bf"
+		"3a66f8bf",
+		"66443fc7"
 	],
 	optional: true,
 	tasks: [{

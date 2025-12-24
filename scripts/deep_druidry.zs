@@ -223,6 +223,22 @@ recipes.addShapeless("ia_druidic_dust5", <contenttweaker:druidic_dust> * 12, [
                 
         rec.build();
     }
+
+    {//druid_soup
+        var rec = RecipeBuilder.newBuilder("enchanter", "druid_circle", 120);
+
+        rec.addEnergyPerTickInput(25600);
+
+        rec.addItemInput(<contenttweaker:transmut_gel> * 4).setChance(0.08 * 5.999);
+        rec.addItemInput(<thermalfoundation:material:1028> * 8).setChance(0.08 * 8.999);
+        rec.addItemInput(<thermalexpansion:machine:13>);
+        rec.addItemInput(<mekanism:basicblock:8>);
+
+        rec.addItemOutput(<enderio:block_enchanter>);
+        rec.addFluidInput(<liquid:druid_soup> * 2000);
+                
+        rec.build();
+    }
 }
 
 recipes.addShapeless("ia_inversion_dust", <contenttweaker:inversion_dust>, [

@@ -1,0 +1,22 @@
+{
+	title: "Meat Men",
+	x: 0.0d,
+	y: -11.5d,
+	text: [
+		"Meat Men are 4 mobs with incresaingly more health. They are agressive and strong and good for sacrificing.",
+		"",
+		"After making a meat man, you can spawn it via spawners or mob duplicators"
+	],
+	tasks: [{
+		uid: "667cf189",
+		type: "item",
+		items: [{
+			id: "enderio:item_soul_vial",
+			Damage: 1s,
+			tag: {
+				entityId: "gloppy:meat_man_1"
+			}
+		}],
+		ignore_nbt: 2b
+	}]
+}

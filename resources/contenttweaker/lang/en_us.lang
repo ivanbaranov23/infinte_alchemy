@@ -2531,6 +2531,7 @@ item.contenttweaker.copper_reject.name=Copper Rejects
 fluid.dore=Molten Dore Metal
 
 gas.selenium_dioxide=Selenium Dioxide
+gas.selenious_acid=Selenious Acid
 tile.contenttweaker.selenium_block.name=Block of Selenium
 item.contenttweaker.selenium_dust.name=Selenium Dust
 
@@ -2539,3 +2540,31 @@ item.contenttweaker.tellurium_dust.name=Tellurium Dust
 
 tile.contenttweaker.arsenic_block.name=Block of Arsenic
 item.contenttweaker.arsenic_dust.name=Arsenic Dust
+
+item.contenttweaker.prepared_silicon.name=Prepared Silicon
+item.contenttweaker.layered_wafers.name=Layer of Silicon Wafers
+
+ia.mb_tooltip.ls_grate1=+1 item output, +5 fluid input, x1.25 energy input per block
+ia.mb_tooltip.ls_grate2=+8 item output, +50 fluid input, x1.5 energy input per block
+
+fluid.leap=L.E.A.P. Solution
+tile.contenttweaker.grate.name=Sifting Grate
+
+tile.contenttweaker.barite_ore.name=Barite Ore
+tile.contenttweaker.barite_ore_end.name=End Barite Ore
+item.contenttweaker.barite_dust.name=Barite Dust
+
+item.contenttweaker.perovskite_ingot.name=Photovoltaic MK 1 Ingot
+item.contenttweaker.perovskite_plate.name=Photovoltaic MK 1 Plate
+tile.contenttweaker.perovskite_block.name=Block of Photovoltaic MK 1
+
+item.contenttweaker.perovskite2_ingot.name=Photovoltaic MK 2 Ingot
+item.contenttweaker.perovskite2_plate.name=Photovoltaic MK 2 Plate
+tile.contenttweaker.perovskite2_block.name=Block of Photovoltaic MK 2
+
+fluid.blue_acid=Blue Acid
+
+fluid.taiga_fluid=Taste of Winter Taiga
+fluid.cracked_steam=Cracking Steam
+
+item.contenttweaker.viking_metal.name=Norse God of Thunder's Ingot

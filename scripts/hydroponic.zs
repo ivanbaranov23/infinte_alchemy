@@ -12,7 +12,7 @@ function addHydroponicRec(crop as IItemStack){
     print("hydro" ~ counter);
     var rec = RecipeBuilder.newBuilder("hydro" ~ counter, "hydroponic", 2);
     counter += 1;
-
+    rec.setMaxThreads(1);
     rec.addEnergyPerTickInput(1000000);
 
     rec.addFluidInput(<liquid:fertilizer> * 1000);

@@ -18,7 +18,7 @@ static expl_compressables as string[] = [
 	"palladium", "draconium", "zirconium",
 
 	"redstone",
-	"coal", "diamond", "emerald", "lapis"
+	"coal", "diamond", "emerald", "lapis", "salt"
 ];
 
 
@@ -44,6 +44,16 @@ static non_metallic_singularities as IItemStack[string][string] = {
 	blood: {
 		item: <tconstruct:edible:3>,
 		singularity: <extendedcrafting:singularity_custom:9>
+	},
+	glowstone: {
+		item: <minecraft:glowstone_dust>,
+		block4: <minecraft:glowstone>,
+		singularity: <extendedcrafting:singularity:4>
+	},
+	quartz: {
+		item: <minecraft:quartz>,
+		block4: <minecraft:quartz_block>,
+		singularity: <extendedcrafting:singularity_custom:25>
 	},
 
 	pyrotheum: {
@@ -79,6 +89,17 @@ function addBlockCompress(block as IItemStack, singul as IItemStack){
 	rec.addItemOutput(singul);
 
 	rec.addItemInput(block * 32);
+	//rec.addMekanismHeatInput(500, 499, 1.0/0);
+
+	rec.addItemInput(<mekanism:obsidiantnt>);
+	rec.build();
+}
+function addBlock4Compress(block as IItemStack, singul as IItemStack){
+	var rec = RecipeBuilder.newBuilder(block.name ~ "_compression_" ~ singul.name, "explosion_compressor", 3 * 20);
+	rec.addEnergyPerTickInput(2048);
+	rec.addItemOutput(singul);
+
+	rec.addItemInput(block * 64);
 	//rec.addMekanismHeatInput(500, 499, 1.0/0);
 
 	rec.addItemInput(<mekanism:obsidiantnt>);
@@ -126,6 +147,9 @@ for mat in non_metallic_singularities{
 	}
 	if (non_metallic_singularities[mat] has "block"){
 		addBlockCompress(non_metallic_singularities[mat].block, non_metallic_singularities[mat].singularity);
+	}
+	if (non_metallic_singularities[mat] has "block4"){
+		addBlock4Compress(non_metallic_singularities[mat].block4, non_metallic_singularities[mat].singularity);
 	}
 }
 

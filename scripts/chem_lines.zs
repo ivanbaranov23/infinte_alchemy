@@ -307,18 +307,7 @@ import mods.modularmachinery.RecipeBuilder;
     scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 120, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <mysticalagriculture:silicon_essence>, 128, 40);
     mods.alchemistry.Evaporator.addRecipe(<contenttweaker:solar_silicon>, <liquid:solar_silicon_solution> * 1250);
 
-    recipes.remove(<projectred-core:resource_item:250>);
-    recipes.addShapeless("ia_sandy_coal1", <projectred-core:resource_item:250>, [<contenttweaker:charcoal_ball>, <extrautils2:decorativesolid:4>, <extrautils2:decorativesolid:4>, <contenttweaker:crystal_coal>]);
-    recipes.addShapeless("ia_sandy_coal2", <projectred-core:resource_item:250> * 3, [<contenttweaker:charcoal_ball>, <extrautils2:decorativesolid:4>, <extrautils2:decorativesolid:4>, <contenttweaker:crystal_coal>, <contenttweaker:sandworm_chitin>]);
-
-    furnace.remove(<projectred-core:resource_item:300>);
-    mods.enderio.AlloySmelter.addRecipe(<projectred-core:resource_item:300>, 
-        [<projectred-core:resource_item:250> * 4, <contenttweaker:aluminum_silicon> * 32, <contenttweaker:solar_silicon> * 8], 
-        150000
-    );
-
-    recipes.remove(<projectred-core:resource_item:301>);
-    scripts.helper.addSawRecipe(<projectred-core:resource_item:300>, <projectred-core:resource_item:301> * 8);
+    
 }
 {//calcium
     <ore:dustCalcium>.add(<contenttweaker:calcium>);

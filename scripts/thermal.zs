@@ -315,6 +315,13 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 	recipes.remove(<thermalexpansion:augment:129>);
 	Transposer.addFillRecipe(<thermalexpansion:augment:129>, <thermalfoundation:material:515>, <liquid:haste_potion> * 2000, 15000);
 
+	recipes.remove(<thermalexpansion:augment:513>);
+	recipes.addShaped("ia_te_fuel_cat", <thermalexpansion:augment:513>, [
+		[null, <thermalfoundation:material:515>, null], 
+		[<thermalfoundation:material:323>, <prodigytech:fuel_processor>, <thermalfoundation:material:323>], 
+		[null, <thermalfoundation:material:515>, null]
+	]);
+
 	recipes.remove(<thermalexpansion:augment:337>);
 	recipes.addShaped("ia_gearworking_die", <thermalexpansion:augment:337>, [
 		[<ore:gearElectricalSteel>, <contenttweaker:gear_mold>, <ore:gearElectricalSteel>], 

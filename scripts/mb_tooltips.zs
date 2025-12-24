@@ -11,6 +11,8 @@ function addMBTooltip(mb as IItemStack, tooltips as string[IItemStack]){
     
 }
 
+addMBTooltip(<modularmachinery:tree_powered_compressor_controller>, {<contenttweaker:slimy_glass>: "ia.mb_tooltip.tpc_sl_glass"});
+
 
 addMBTooltip(<modularmachinery:bug_hill_controller>, {
     <contenttweaker:bug_hill_exit2>: "ia.mb_tooltip.bh_exit2",
@@ -22,9 +24,11 @@ addMBTooltip(<modularmachinery:bug_hill_controller>, {
     <contenttweaker:glowshroomite_mud>: "ia.mb_tooltip.bh_glowshroomite",
     <contenttweaker:divine_mud>: "ia.mb_tooltip.bh_divine"
 });
+addMBTooltip(<modularmachinery:large_sifter_controller>, {
+    <contenttweaker:grate>: "ia.mb_tooltip.ls_grate1",
+    <contenttweaker:lucky_gearbox>: "ia.mb_tooltip.ls_grate2",
+});
 
-
-addMBTooltip(<modularmachinery:tree_powered_compressor_controller>, {<contenttweaker:slimy_glass>: "ia.mb_tooltip.tpc_sl_glass"});
 
 addMBTooltip(<modularmachinery:large_cobblegen_controller>, {
     <contenttweaker:rune_water_block>: "ia.mb_tooltip.lcg_water",

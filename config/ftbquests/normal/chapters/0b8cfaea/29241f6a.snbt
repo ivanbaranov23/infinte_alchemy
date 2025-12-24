@@ -2,7 +2,7 @@
 	x: -0.5d,
 	y: -7.0d,
 	text: [
-		"Heat sand is a great heat source for the crucible. "
+		"Heat sand is a great heat source for the crucible. It also sometimes drops blaze powder the same way gravel sometimes drops flint"
 	],
 	dependencies: [
 		"2a46508c",
@@ -14,6 +14,13 @@
 		type: "item",
 		items: [{
 			item: "natura:nether_heat_sand"
+		}]
+	},
+	{
+		uid: "d7abc5bf",
+		type: "item",
+		items: [{
+			item: "minecraft:blaze_powder"
 		}]
 	}]
 }

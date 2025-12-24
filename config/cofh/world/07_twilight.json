@@ -1,0 +1,105 @@
+{
+    "populate": {
+        "twilight_antimony": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:antimony_ore",
+				"material": "stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					7
+				]
+			}
+		},
+        "twilight_electrotine": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:electrotine_ore",
+				"material": "stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					7
+				]
+			}
+		},
+        "twilight_zinc": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:zinc_ore",
+				"material": "stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					7
+				]
+			}
+		},
+        "twilight_titanium": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:titanium_ore",
+				"material": "stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					7
+				]
+			}
+		},
+        "twilight_tungsten": {
+			"enabled": "true",
+			"distribution": "uniform",
+			"generator": {
+				"block": "contenttweaker:tungsten_ore",
+				"material": "stone",
+				"cluster-size": 5
+			},
+			"cluster-count": 4,
+			"min-height": 0,
+			"max-height": 75,
+			"retrogen": "true",
+			"biome": "all",
+			"dimension": {
+				"restriction": "whitelist",
+				"value": [
+					7
+				]
+			}
+		}
+
+    }
+}

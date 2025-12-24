@@ -236,7 +236,7 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
             [
                 <contenttweaker:rune_boule2>,
                 <contenttweaker:terragem> * 8,
-                <botania:rune:5>,
+                <contenttweaker:elemental_essence>,
                 <contenttweaker:sprooks3> | <contenttweaker:godshardium> | <contenttweaker:enchantium_chunk>
             ], [
                 <liquid:mirion2> * (144 * 12),
@@ -248,7 +248,7 @@ function addRuneCutting(outs as IItemStack[], inps as IItemStack[], bonus as IIt
             [
                 <contenttweaker:rune_boule2>,
                 <contenttweaker:terragem> * 8,
-                <botania:rune:5>,
+                <contenttweaker:elemental_essence>,
                 <contenttweaker:sprooks3> | <contenttweaker:godshardium> | <contenttweaker:enchantium_chunk>
             ], [
                 <liquid:mirion2> * (144 * 12),

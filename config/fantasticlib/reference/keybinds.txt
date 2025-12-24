@@ -283,6 +283,10 @@ roots.keybinds.spell_library
 roots.keybinds.cycle
 roots.keybinds.delete_spell
 
+key.simplybackpacks.category
+key.simplybackpacks.backpackopen.desc
+key.simplybackpacks.backpackpickup.desc
+
 keybind.simplyjetpacks.category
 keybind.simplyjetpacks.emergency_hover
 keybind.simplyjetpacks.hover

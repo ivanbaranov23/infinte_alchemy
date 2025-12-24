@@ -1,0 +1,17 @@
+{
+	x: 17.0d,
+	y: -3.0d,
+	text: [
+		"Rare earth element separation is a very hard process. So make elves do it."
+	],
+	dependencies: [
+		"595c62d5"
+	],
+	tasks: [{
+		uid: "b85a0acc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rarer_earth_dust"
+		}]
+	}]
+}

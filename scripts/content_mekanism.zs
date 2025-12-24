@@ -49,6 +49,7 @@ addGas("black_slurp", "000000", true);
 addGas("copper_reject", "36291e", false);
 
 addGas("selenium_dioxide", "683882", false);
+addGas("selenious_acid", "572771", false);
 
 addGas("polyethylene", "723265", true);
 
