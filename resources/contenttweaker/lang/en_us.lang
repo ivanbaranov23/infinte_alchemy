@@ -2567,4 +2567,27 @@ fluid.blue_acid=Blue Acid
 fluid.taiga_fluid=Taste of Winter Taiga
 fluid.cracked_steam=Cracking Steam
 
-item.contenttweaker.viking_metal.name=Norse God of Thunder's Ingot
+item.contenttweaker.viking_metal.name=Norse God of Thunder-ium Ingot
+
+tile.contenttweaker.tantalum_block.name=Block of Tantalum
+item.contenttweaker.tantalum_dust.name=Tantalum Dust
+
+entity.Villager.ia:erebus_plants=Erebian Botanist
+entity.Villager.ia:erebus_animals=Erebian Bug Merchant
+entity.Villager.ia:aether=Zanite Merchant
+entity.Villager.ia:bonsai=Bonsaist
+entity.Villager.ia:atum=Atum Merchant
+entity.Villager.ia:relic_hunter=Relic Hunter
+entity.Villager.ia:godshards=Godshard Merchant
+
+item.contenttweaker.antimony_nugget.name=Antimony Nugget
+
+item.contenttweaker.quicklime.name=Quicklime
+item.contenttweaker.slacked_lime.name=Slacked Lime
+item.contenttweaker.monocalcium_phosphate.name=Monocalcium Phosphate
+    
+item.contenttweaker.cream_of_tartar.name=Cream of Tartar
+item.contenttweaker.sodium_bicarbonate.name=Sodium Bicarbonate
+item.contenttweaker.baking_soda.name=Baking Powder
+
+gas.potassium_bitartrate=Potassium Bitartrate

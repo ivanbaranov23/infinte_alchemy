@@ -17,7 +17,16 @@ import scripts.content_machines.addChemicalRecipe;
 //fluid 1000 mb = 8 el
 
 
-
+function addItemConv(item as IItemStack, el as IItemStack, count as int = 8){
+    Dissolver.addRecipe(item, false, 1,
+        [
+            [100, el * count]
+        ]
+    );
+    Combiner.addRecipe(item, [
+        el * count
+    ]);
+}
 function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool = false){
     if (readd){
         Atomizer.removeRecipe(fluid);
@@ -58,6 +67,10 @@ addFluidConv(<alchemistry:compound:39>, <liquid:hexane>);
 addFluidConv(<alchemistry:compound:205>, <liquid:liquidethene>);
 addFluidConv(<alchemistry:compound:214>, <liquid:formic_acid>);
 addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
+
+addItemConv(<contenttweaker:starch>, <alchemistry:compound:19>, 8);
+addItemConv(<contenttweaker:sodium_bicarbonate>, <alchemistry:compound:220>, 8);
+
 
 {//phenol
     Atomizer.addRecipe(<contenttweaker:ethylbenzene> * 8, <liquid:ethylbenzene> * 1000);
@@ -301,6 +314,11 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
             [100, <alchemistry:element:15> * 2]
         ]
     );
+}
+{//calcium
+    addItemConv(<contenttweaker:slacked_lime>, <alchemistry:compound:219>);
+    addItemConv(<contenttweaker:quicklime>, <alchemistry:compound:218>);
+    addItemConv(<contenttweaker:monocalcium_phosphate>, <alchemistry:compound:222>);
 }
 {//bromine
     addChemicalRecipe(

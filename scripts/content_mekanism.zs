@@ -34,6 +34,7 @@ addGas("naoh", "eae553", true);
 
 addGas("phosphoric_acid", "b53a4c", true);
 
+
 addGas("nitrogen", "476678", true);
 addGas("ammonia", "2f3e58", true);
 addGas("nitric_oxide", "2f3e58", false);
@@ -87,6 +88,8 @@ addGas("formaldehyde", "bb8840", true);
 
 addGas("ethyl_cyanoacrylate", "96bad5", true);
 addGas("cyanoacrylate", "afdfe9", true);
+
+addGas("potassium_bitartrate", "b4b6dd", false);
 
 addGas("ethylene_oxide", "afdfe9", false);
 addGas("ethanolamine", "afdfe9", false);

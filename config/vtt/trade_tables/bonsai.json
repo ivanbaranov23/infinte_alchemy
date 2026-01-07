@@ -1,0 +1,234 @@
+{
+    "Profession": "ia:bonsai_villager",
+    "Career": "ia:bonsai",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 5
+                    }
+                },
+                "sell": {
+                    "id": "bonsaitrees:bonsaipot",
+                    "Count": 1
+                },
+                "CareerLevel": 1
+            },
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:log",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    },
+                    "Damage": 0
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.3
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:log",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    },
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.3
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:log",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    },
+                    "Damage": 2
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.3
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:log",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    },
+                    "Damage": 3
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.3
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:log2",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    },
+                    "Damage": 0
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.3
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:log2",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    },
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.3
+            },
+
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    }
+                },
+                "sell": {
+                    "id": "contenttweaker:bonsai_sapling",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    }
+                },
+                "sell": {
+                    "id": "contenttweaker:bonsai_mushroom_brown",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 15
+                    }
+                },
+                "sell": {
+                    "id": "contenttweaker:bonsai_mushroom_red",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.5
+            },
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 12,
+                        "max": 25
+                    }
+                },
+                "buyB": {
+                    "id": "extendedcrafting:singularity_custom",
+                    "Count": 1,
+                    "Damage": 100
+                },
+                "sell": {
+                    "id": "bonsaitrees:bonsaipot",
+                    "Count": 2,
+                    "Damage": 1
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 12,
+                        "max": 25
+                    }
+                },
+                "sell": {
+                    "id": "contenttweaker:bonsai_baffle_cap",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.6
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "integrateddynamics:menril_berries",
+                    "Count": {
+                        "min": 1,
+                        "max": 4
+                    }
+                },
+                "CareerLevel": 2,
+                "chance": 0.6
+            }
+
+        ]
+    }
+}

@@ -5,6 +5,10 @@ minecraft:smith
 minecraft:butcher
 minecraft:nitwit
 openblocks:radio
+ia:aether_villager
+ia:atum_villager
+ia:bonsai_villager
+ia:erebus_villager
 vtt:brewer
 vtt:redstoner
 vtt:tinkerer

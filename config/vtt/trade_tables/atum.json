@@ -1,0 +1,135 @@
+{
+    "Profession": "ia:atum_villager",
+    "Career": "ia:atum",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "atum:coin_gold",
+                    "Count": {
+                        "min": 2,
+                        "max": 6
+                    }
+                },
+                "CareerLevel": 1,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 6
+                    }
+                },
+                "buy": {
+                    "id": "atum:coin_gold",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "CareerLevel": 1,
+                "chance": 0.75
+            },
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 12
+                    }
+                },
+                "sell": {
+                    "id": "atum:fertile_soil_pile",
+                    "Count": 3
+                },
+                "CareerLevel": 1
+            },
+
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 6
+                    }
+                },
+                "sell": {
+                    "id": "atum:khnumite",
+                    "Count": 3
+                },
+                "CareerLevel": 2,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "atum:ectoplasm",
+                    "Count": 3
+                },
+                "CareerLevel": 2,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "atum:dusty_bone",
+                    "Count": 4
+                },
+                "CareerLevel": 2,
+                "chance": 0.75
+            },
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 1,
+                        "max": 2
+                    }
+                },
+                "buyB": {
+                    "id": "atum:khnumite",
+                    "Count": {
+                        "min": 5,
+                        "max": 9
+                    }
+                },
+                "sell": {
+                    "id": "atum:khnumite_face",
+                    "Count": 1
+                },
+                "CareerLevel": 3
+            }
+        ]
+    }
+}

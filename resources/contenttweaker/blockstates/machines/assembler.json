@@ -12,7 +12,7 @@
         "up": "contenttweaker:blocks/machines/machine_hatch_blue",
         "down": "contenttweaker:blocks/machines/machine_hatch_blue",
 
-        "particle": "contenttweaker:blocks/coppra_block"
+        "particle": "enderio:blocks/block_alloy_melodic_alloy"
       }
     },
     "variants":{

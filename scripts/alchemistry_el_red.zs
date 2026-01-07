@@ -64,6 +64,9 @@ var elements_no_alch as int[IItemStack][IItemStack] = {
     <alchemistry:element:20>: {
         <contenttweaker:calcium>: 4
     },
+    <alchemistry:element:41>: {
+        <taiga:niob_ingot>: 2
+    },
     <alchemistry:element:56>: {
         <contenttweaker:witherite>: 2,
         <contenttweaker:awaken_witherite>: 4
@@ -87,3 +90,10 @@ for el in elements_no_alch{
         addTableElementShapeless(el * elements_no_alch[el][inp], inp * 1, inp.amount);
     }
 }
+
+
+Dissolver.addRecipe(
+    <taiga:niob_ingot>, true, 1, [
+        [1, <alchemistry:element:41> * 4]
+    ]
+);

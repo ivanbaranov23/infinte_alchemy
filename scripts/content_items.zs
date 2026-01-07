@@ -1009,10 +1009,14 @@ function addAtomicResource(name as string){
     VanillaFactory.createBlock("tantalum_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("tantalum_dust").register();
     VanillaFactory.createItem("tantalum_ore_dust").register();
+    VanillaFactory.createBlock("tantalite_ore", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("tantalum_ore", <blockmaterial:rock>).register();
+    VanillaFactory.createFluid("tantalum_niobium_f", Color.fromHex("3d5caf")).register();
+    VanillaFactory.createFluid("tantalum_f", Color.fromHex("6c8e6e")).register();
 
     VanillaFactory.createBlock("niobium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("niobium_dust").register();
+    VanillaFactory.createFluid("niobium_f", Color.fromHex("021dff")).register();
 
     VanillaFactory.createItem("vanadium_dust").register();
     VanillaFactory.createBlock("vanadium_ore", <blockmaterial:rock>).register();
@@ -1479,6 +1483,9 @@ function add_mech_part(name as string){
         VanillaFactory.createItem("advanced_plating2_3").register();
         VanillaFactory.createItem("advanced_plating2_4").register();
 
+        VanillaFactory.createItem("radiotoad_target1").register();
+        VanillaFactory.createItem("radiotoad_target2").register();
+
         VanillaFactory.createItem("nether_boat_plating").register();
 
         VanillaFactory.createItem("nether_boat_osram").register();
@@ -1936,6 +1943,15 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
     VanillaFactory.createFluid("yeast", Color.fromHex("c1af4e")).register();
     VanillaFactory.createFluid("yeast_rich", Color.fromHex("635216")).register();
 
+    //baking soda
+    VanillaFactory.createItem("quicklime").register();
+    VanillaFactory.createItem("slacked_lime").register();
+    VanillaFactory.createItem("monocalcium_phosphate").register();
+    
+    VanillaFactory.createItem("cream_of_tartar").register();
+    VanillaFactory.createItem("sodium_bicarbonate").register();
+    VanillaFactory.createItem("baking_soda").register();
+
     //gummy
     VanillaFactory.createFluid("colagen_solution", Color.fromHex("745e43")).register();
     VanillaFactory.createFluid("impure_colagen", Color.fromHex("717a68")).register();
@@ -2340,6 +2356,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createBlock("antimony_ore", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("antimony_ore_dense", <blockmaterial:rock>).register();
     VanillaFactory.createItem("stibnite").register();
+    VanillaFactory.createItem("antimony_nugget").register();
     VanillaFactory.createItem("antimony_dust").register();
     VanillaFactory.createBlock("antimony_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("solder").register();
@@ -2578,6 +2595,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     power_core.register();
 
     VanillaFactory.createFluid("strawberry_juice", Color.fromHex("f15353")).register();
+    VanillaFactory.createFluid("strawberry_wine_young", Color.fromHex("c02c2c")).register();
     VanillaFactory.createFluid("strawberry_wine", Color.fromHex("890000")).register();
 
     addWater("slimebone");

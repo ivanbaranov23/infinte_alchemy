@@ -1,0 +1,10 @@
+{
+    "profession": {
+        "name": "ia:aether_villager",
+        "texture": "contenttweaker:textures/entities/aether_villager.png",
+        "zombieTexture": "contenttweaker:textures/entities/aether_zombie_villager.png"
+    },
+    "careers": [
+        "ia:aether"
+    ]
+}

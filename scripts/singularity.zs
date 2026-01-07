@@ -15,7 +15,7 @@ static expl_compressables as string[] = [
 	"platinum", "iridium", "tungsten", "titanium", "uranium", "yellorium",
 	"steeleaf",
 	"chrome", "gallium", "neodymium",
-	"palladium", "draconium", "zirconium",
+	"palladium", "draconium", "zirconium", "tantalum",
 
 	"redstone",
 	"coal", "diamond", "emerald", "lapis", "salt"
@@ -350,3 +350,4 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor> *
 	[<bloodmagic:component:14>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <bloodmagic:component:14>], 
 	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>]
 ]);
+

@@ -98,6 +98,15 @@ draconicevolution:lootcore
 draconicevolution:enderenergymanipulator
 thermalexpansion:florb
 thermalexpansion:morb
+quark:pickarang
+quark:arrow_ender
+quark:arrow_explosive
+quark:arrow_torch
+quark:dragon_breath_bottle
+quark:soul_powder
+quark:parrot_egg
+quark:seat
+quark:gravisand
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -112,15 +121,6 @@ quark:flat_item_frame
 quark:leash_knot
 quark:colored_item_frame
 quark:glass_item_frame
-quark:pickarang
-quark:arrow_ender
-quark:arrow_explosive
-quark:arrow_torch
-quark:dragon_breath_bottle
-quark:soul_powder
-quark:parrot_egg
-quark:seat
-quark:gravisand
 exnihilocreatio:thrown stone
 excompressum:angry_chicken
 botania:mana_burst
@@ -349,8 +349,8 @@ mysticalworld:entity_lava_cat
 mysticalworld:entity_silkworm
 mysticalworld:entity_clam
 enderio:falling_machine
-enderio:primed_charge
 enderio:owl_egg
+enderio:primed_charge
 twilightforest:wild_boar
 twilightforest:bighorn_sheep
 twilightforest:deer

@@ -1,0 +1,11 @@
+{
+    "profession": {
+        "name": "ia:erebus_villager",
+        "texture": "contenttweaker:textures/entities/erebus_villager.png",
+        "zombieTexture": "contenttweaker:textures/entities/erebus_zombie_villager.png"
+    },
+    "careers": [
+        "ia:erebus_plants",
+        "ia:erebus_animals"
+    ]
+}

@@ -43,7 +43,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
 
     add3x3Recipe(<contenttweaker:ancient_ingot>, <contenttweaker:ancient_block>);
     add3x3Recipe(<contenttweaker:nial_ingot>, <contenttweaker:nial_block>);
-    add3x3Recipe(<alchemistry:ingot:51>, <contenttweaker:antimony_block>);
+    addNuggetIngotBlockRecipe(<contenttweaker:antimony_nugget>, <alchemistry:ingot:51>, <contenttweaker:antimony_block>);
     addNuggetIngotBlockRecipe(<contenttweaker:duraluminum_nugget>, <contenttweaker:duraluminum_ingot>, <contenttweaker:duraluminum_block>);
 
     add3x3Recipe(<contenttweaker:flower_steel_ingot>, <contenttweaker:flower_steel_block>);
@@ -171,10 +171,12 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<alchemistry:ingot:33>, <contenttweaker:arsenic_block>);
     add3x3Recipe(<alchemistry:ingot:34>, <contenttweaker:selenium_block>);
     add3x3Recipe(<alchemistry:ingot:38>, <contenttweaker:strontium_block>);
+    add3x3Recipe(<alchemistry:ingot:41>, <contenttweaker:niobium_block>);
     add3x3Recipe(<alchemistry:ingot:42>, <contenttweaker:molybdenum_block>);
     add3x3Recipe(<alchemistry:ingot:48>, <contenttweaker:cadmium_block>);
     add3x3Recipe(<alchemistry:ingot:52>, <contenttweaker:tellurium_block>);
     add3x3Recipe(<alchemistry:ingot:56>, <contenttweaker:barium_block>);
+    add3x3Recipe(<alchemistry:ingot:73>, <contenttweaker:tantalum_block>);
     add3x3Recipe(<contenttweaker:mischmetal_ingot>, <contenttweaker:mischmetal_block>);
     add3x3Recipe(<contenttweaker:terfenol_ingot>, <contenttweaker:terfenol_block>);
     add3x3Recipe(<contenttweaker:perovskite_ingot>, <contenttweaker:perovskite_block>);

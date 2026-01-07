@@ -1,0 +1,121 @@
+{
+    "Profession": "ia:erebus_villager",
+    "Career": "ia:erebus_plants",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": {
+                        "min": 4,
+                        "max": 12
+                    },
+                    "Damage": 3
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 1
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": {
+                        "min": 2,
+                        "max": 5
+                    },
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 30
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": {
+                        "min": 2,
+                        "max": 5
+                    },
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 31
+                },
+                "CareerLevel": 1
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": {
+                        "min": 3,
+                        "max": 8
+                    },
+                    "Damage": 55
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 1
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 7,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:jade_berry_bush",
+                    "Count": 1
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:flolit",
+                    "Count": {
+                        "min": 3,
+                        "max": 6
+                    }
+                },
+                "CareerLevel": 2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:bamboo_cookie",
+                    "Count": {
+                        "min": 3,
+                        "max": 6
+                    }
+                },
+                "CareerLevel": 2
+            }
+        ]
+    }
+}

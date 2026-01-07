@@ -46,8 +46,8 @@ scripts.content_machines.addAssemblerRecipe(
 );
 
 
-recipes.remove(<bloodmagic:sacrificial_dagger>.withTag({sacrifice: 0 as byte}));
-mods.extendedcrafting.TableCrafting.addShaped(0, <bloodmagic:sacrificial_dagger>.withTag({sacrifice: 0 as byte}), [
+recipes.remove(<bloodmagic:sacrificial_dagger>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <bloodmagic:sacrificial_dagger>, [
 	[null, null, null, null, <thermalfoundation:tool.sword_platinum>.noReturn()], 
 	[null, null, null, <thermalfoundation:tool.sword_platinum>.noReturn(), null], 
 	[<enderio:item_material:8>, null, <thermalfoundation:tool.sword_platinum>.noReturn(), null, null], 

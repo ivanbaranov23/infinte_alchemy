@@ -1,0 +1,204 @@
+{
+    "Profession": "ia:erebus_villager",
+    "Career": "ia:erebus_animals",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": {
+                        "min": 2,
+                        "max": 5
+                    },
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 0
+                },
+                "CareerLevel": 1,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": {
+                        "min": 2,
+                        "max": 5
+                    },
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 4
+                },
+                "CareerLevel": 1,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": {
+                        "min": 2,
+                        "max": 5
+                    },
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 8
+                },
+                "CareerLevel": 1,
+                "chance": 0.75
+            },
+
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": {
+                        "min": 2,
+                        "max": 5
+                    },
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 12
+                },
+                "CareerLevel": 2,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 18
+                },
+                "CareerLevel": 2,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 28
+                },
+                "CareerLevel": 2,
+                "chance": 0.75
+            },
+
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 13
+                },
+                "CareerLevel": 3,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 23
+                },
+                "CareerLevel": 3,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:materials",
+                    "Count": 1,
+                    "Damage": 60
+                },
+                "CareerLevel": 3,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:erebus_food",
+                    "Count": 1,
+                    "Damage": 2
+                },
+                "CareerLevel": 3,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 5,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:erebus_food",
+                    "Count": 1,
+                    "Damage": 4
+                },
+                "CareerLevel": 3,
+                "chance": 0.5
+            },
+
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "erebus:materials",
+                    "Count": 25,
+                    "Damage": 1
+                },
+                "sell": {
+                    "id": "erebus:umber_golem_statue",
+                    "Count": 1
+                },
+                "CareerLevel": 4
+            }
+        ]
+    }
+}

@@ -1,0 +1,176 @@
+{
+    "Profession": "ia:atum_villager",
+    "Career": "ia:relic_hunter",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 4,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot",
+                    "Count": {
+                        "min": 4,
+                        "max": 6
+                    }
+                },
+                "CareerLevel": 1,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 4,
+                        "max": 6
+                    }
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot",
+                    "Count": {
+                        "min": 4,
+                        "max": 8
+                    }
+                },
+                "CareerLevel": 1,
+                "chance": 0.75
+            },
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "atum:loot_dirty_ring",
+                    "Count": {
+                        "min": 1,
+                        "max": 4
+                    }
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "atum:loot_dirty_broach",
+                    "Count": {
+                        "min": 1,
+                        "max": 4
+                    }
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "atum:loot_dirty_necklace",
+                    "Count": {
+                        "min": 1,
+                        "max": 4
+                    }
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "atum:loot_dirty_scepter",
+                    "Count": {
+                        "min": 1,
+                        "max": 4
+                    }
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "atum:loot_dirty_idol",
+                    "Count": {
+                        "min": 1,
+                        "max": 4
+                    }
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+
+            
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 16
+                    }
+                },
+                "sell": {
+                    "id": "contenttweaker:treasure_block",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.75
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {
+                        "min": 2,
+                        "max": 12
+                    }
+                },
+                "sell": {
+                    "id": "contenttweaker:cursed_gold_ingot",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.75
+            }
+        ]
+    }
+}

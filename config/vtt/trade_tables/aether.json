@@ -1,0 +1,114 @@
+{
+    "Profession": "ia:aether_villager",
+    "Career": "ia:aether",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "aether_legacy:zanite_gemstone",
+                    "Count": {
+                        "min": 4,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "aether_legacy:ambrosium_shard",
+                    "Count": 3
+                },
+                "CareerLevel": 1,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "aether_legacy:zanite_gemstone",
+                    "Count": {
+                        "min": 2,
+                        "max": 4
+                    }
+                },
+                "buy": {
+                    "id": "aether_legacy:ambrosium_shard",
+                    "Count": {
+                        "min": 9,
+                        "max": 12
+                    }
+                },
+                "CareerLevel": 1,
+                "chance": 0.5
+            },
+
+            {
+                "action": "add",
+                "sell": {
+                    "id": "aether_legacy:zanite_gemstone",
+                    "Count": {
+                        "min": 2,
+                        "max": 4
+                    }
+                },
+                "buy": {
+                    "id": "aether_legacy:healing_stone",
+                    "Count": {
+                        "min": 4,
+                        "max": 10
+                    }
+                },
+                "CareerLevel": 1
+            },
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "aether_legacy:zanite_gemstone",
+                    "Count": {
+                        "min": 4,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "aether_legacy:enchanted_gravitite",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "aether_legacy:zanite_gemstone",
+                    "Count": {
+                        "min": 4,
+                        "max": 8
+                    }
+                },
+                "sell": {
+                    "id": "aether_legacy:gravitite_ore",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.5
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "aether_legacy:zanite_gemstone",
+                    "Count": {
+                        "min": 4,
+                        "max": 8
+                    }
+                },
+                "buy": {
+                    "id": "aether_legacy:golden_amber",
+                    "Count": {
+                        "min": 4,
+                        "max": 18
+                    }
+                },
+                "CareerLevel": 2
+            }
+
+        ]
+    }
+}

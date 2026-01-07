@@ -132,7 +132,43 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["oxygen", 4]
         ]
     );
-
+    createCompound(218, "calcium_oxide", 40, 200, 90,
+        [
+            ["calcium", 1],
+            ["oxygen", 1]
+        ]
+    );
+    createCompound(219, "calcium_hydroxide", 13, 50, 89,
+        [
+            ["calcium", 1],
+            ["hydroxide", 2]
+        ]
+    );
+    createCompound(220, "sodium_bicarbonate", 156, 78, 72,
+        [
+            ["sodium", 1],
+            ["hydrogen", 1],
+            ["carbonate", 1]
+        ]
+    );
+    createCompound(221, "dihydrogen_phosphate", 20, 189, 90,
+        [
+            ["hydrogen", 2],
+            ["phosphate", 1]
+        ]
+    );
+    createCompound(222, "monocalcium_phosphate", 120, 149, 190,
+        [
+            ["calcium", 1],
+            ["dihydrogen_phosphate", 2]
+        ]
+    );
+    /*createCompound(223, "potassium_bitartrate", 55, 44, 177,
+        [
+            ["potassium", 1],
+            ["dihydrogen_phosphate", 2]
+        ]
+    );*/
 }
 
 {//metals

@@ -1,0 +1,12 @@
+{
+    "profession": {
+        "name": "ia:atum_villager",
+        "texture": "contenttweaker:textures/entities/atum_villager.png",
+        "zombieTexture": "contenttweaker:textures/entities/atum_zombie_villager.png"
+    },
+    "careers": [
+        "ia:atum",
+        "ia:relic_hunter",
+        "ia:godshards"
+    ]
+}

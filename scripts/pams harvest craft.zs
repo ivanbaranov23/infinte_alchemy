@@ -429,10 +429,19 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         1000
     );
 
-    mods.thermalexpansion.Imbuer.addRecipe(<liquid:strawberry_wine> * 1000, <contenttweaker:yeast>, <liquid:strawberry_juice> * 1000, 5000);
+    mods.thermalexpansion.Imbuer.addRecipe(<liquid:strawberry_wine_young> * 1000, <contenttweaker:yeast>, <liquid:strawberry_juice> * 1000, 5000);
+    mods.thermalexpansion.Refinery.addRecipe(<liquid:strawberry_wine> * 100, <contenttweaker:cream_of_tartar> % 25, <liquid:strawberry_wine_young> * 100, 5000);
+    
+    mods.mekanism.chemical.crystallizer.addRecipe(<gas:potassium_bitartrate> * 250, <contenttweaker:cream_of_tartar>);
+}
 
-    
-    
+{//bubbly water
+    recipes.remove(<harvestcraft:bubblywateritem>);
+    recipes.addShapeless("ia_bubblywater", <harvestcraft:bubblywateritem>, [
+        <harvestcraft:potitem>.reuse(),
+        <harvestcraft:freshwateritem>,
+        <contenttweaker:sodium_bicarbonate>
+    ]);
 }
 
 {//yeast
@@ -488,6 +497,43 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         1000
     );
 }
+{//baking soda
+    Transposer.addFillRecipe(
+        <contenttweaker:sodium_bicarbonate> * 4,
+        <mysticalagriculture:coal>, <liquid:naoh> * 1000,
+        400
+    );
+
+    Transposer.addFillRecipe(
+        <contenttweaker:monocalcium_phosphate>,
+        <contenttweaker:slacked_lime>, <liquid:phosphoric_acid> * 500,
+        400
+    );
+    recipes.addShapeless("ia_baking_soda", <contenttweaker:baking_soda> * 2, [
+        <harvestcraft:potitem>.reuse(),
+        <contenttweaker:sodium_bicarbonate>,
+        <contenttweaker:sodium_bicarbonate>,
+        <contenttweaker:monocalcium_phosphate>,
+        <contenttweaker:starch>
+    ]);
+    recipes.addShapeless("ia_baking_soda2", <contenttweaker:baking_soda> * 4, [
+        <harvestcraft:potitem>.reuse(),
+        <contenttweaker:sodium_bicarbonate>,
+        <contenttweaker:sodium_bicarbonate>,
+        <contenttweaker:monocalcium_phosphate>,
+        <contenttweaker:cream_of_tartar>,
+        <contenttweaker:starch>
+    ]);
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:baking_soda> * 8], [], [
+            <contenttweaker:sodium_bicarbonate> * 2,
+            <contenttweaker:monocalcium_phosphate>,
+            <contenttweaker:cream_of_tartar>,
+            <contenttweaker:starch>
+        ], [], 20, 1000
+    );
+    
+}
 
 {//bread
     recipes.remove(<minecraft:bread>);
@@ -495,17 +541,6 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
 
     InductionSmelter.addRecipe(<minecraft:bread> * 4, <contenttweaker:yeast>, <harvestcraft:doughitem> * 4, 2000);
     InductionSmelter.addRecipe(<minecraft:bread> * 6, <contenttweaker:yeast_rich>, <harvestcraft:doughitem> * 4, 2000);
-    /*InductionSmelter.addRecipe(
-        IItemStack primaryOutput, 
-        IItemStack primaryInput, IItemStack secondaryInput, 
-        int energy
-    );
-    InductionSmelter.addRecipe(
-        IItemStack primaryOutput, 
-        IItemStack primaryInput, IItemStack secondaryInput, 
-        int energy
-    );*/
-
 }
 
 {//vinegar

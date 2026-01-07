@@ -295,10 +295,18 @@ function addFluidReservoir(
     <ore:oreOverworldKarmesine>.add(<taiga:karmesine_ore>);
     <ore:oreOverworldVibranium>.add(<taiga:vibranium_ore>);
 
+    //moretcon
+    <ore:oreOverworldGarstone>.add(<moretcon:oregarstone>);
+
     //bop
     <ore:oreOverworldRuby>.add(<biomesoplenty:gem_ore:1>);
+    <ore:oreOverworldTopaz>.add(<biomesoplenty:gem_ore:3>);
     <ore:oreOverworldAmber>.add(<biomesoplenty:gem_ore:7>);
+    <ore:oreOverworldPeroidot>.add(<biomesoplenty:gem_ore:2>);
+    <ore:oreOverworldMalachite>.add(<biomesoplenty:gem_ore:5>);
     <ore:oreOverworldSapphire>.add(<biomesoplenty:gem_ore:6>);
+    <ore:oreOverworldTanzanite>.add(<biomesoplenty:gem_ore:4>);
+
 
 
     //other
@@ -487,6 +495,12 @@ addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0,
 //nether
 
 addFluidReservoir("Nether Lava", 35, <liquid:lava>, 10*mil, 15*mil, 10, [-1]);
+
+{//twilight
+    addExcavator("Twilight Redstone", 15, ["oreOverworldRedstone", "oreOverworldGarstone"], [0.95, 0.05], [7]);
+
+    addExcavator("Twilight Garstone", 5, ["oreOverworldGarstone", "oreOverworldRuby"], [0.9, 0.1], [7]);
+}
 
 //aether
 addExcavator("Aether Ambrosium", 25, ["oreAetherAmbrosium", "aercloudGold", "holystone"], [0.7, 0.2, 0.1], [4]);

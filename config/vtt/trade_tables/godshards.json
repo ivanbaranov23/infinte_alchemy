@@ -1,0 +1,273 @@
+{
+    "Profession": "ia:atum_villager",
+    "Career": "ia:godshards",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:atum_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:ra_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:ptah_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:geb_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:tefnuts_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:shu_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:horus_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:seth_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:isis_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:montu_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:anubis_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:nuit_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "contenttweaker:anput_godshard", "Count": 1
+                },
+                "sell": {
+                    "id": "contenttweaker:relic_ingot", "Count": 1
+                },
+                "CareerLevel": 1, "chance": 0.2
+            },
+
+
+
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:atum_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:ra_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:ptah_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:geb_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:tefnuts_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:shu_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:horus_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:seth_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:isis_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:montu_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:anubis_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:nuit_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            },
+            {
+                "action": "add",
+                "sell": {
+                    "id": "contenttweaker:anput_godshard", "Count": 1
+                },
+                "buy": {
+                    "id": "contenttweaker:relic_ingot", "Count": 2
+                },
+                "CareerLevel": 2, "chance": 0.05
+            }
+
+
+        ]
+    }
+}

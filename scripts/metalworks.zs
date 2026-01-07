@@ -53,9 +53,13 @@ static all_metals as IItemStack[string][string] = {
         gear: <thermalfoundation:material:24>,
         block: <minecraft:iron_block>,
         dust: <thermalfoundation:material>,
+        nugget: <minecraft:iron_nugget>,
 
         singularity: <extendedcrafting:singularity:1>,
-        element: <alchemistry:element:26>
+        element: <alchemistry:element:26>,
+
+        bush: <oreberries:iron_oreberry_bush>,
+        berry: <oreberries:iron_oreberry>
     },
     copper: {
         ingot: <thermalfoundation:material:128>,
@@ -65,9 +69,13 @@ static all_metals as IItemStack[string][string] = {
         block: <thermalfoundation:storage>,
         wire: <immersiveengineering:material:20>,
         dust: <thermalfoundation:material:64>,
+        nugget: <thermalfoundation:material:192>,
 
         singularity: <extendedcrafting:singularity:17>,
-        element: <alchemistry:element:29>
+        element: <alchemistry:element:29>,
+
+        bush: <oreberries:copper_oreberry_bush>,
+        berry: <oreberries:copper_oreberry>
     },
     tin: {
         ingot: <thermalfoundation:material:129>,
@@ -76,9 +84,13 @@ static all_metals as IItemStack[string][string] = {
         gear: <thermalfoundation:material:257>,
         block: <thermalfoundation:storage:1>,
         dust: <thermalfoundation:material:65>,
+        nugget: <thermalfoundation:material:193>,
 
         singularity: <extendedcrafting:singularity:18>,
-        element: <alchemistry:element:50>
+        element: <alchemistry:element:50>,
+
+        bush: <oreberries:tin_oreberry_bush>,
+        berry: <oreberries:tin_oreberry>
     },
 
     // tier 1 alloys
@@ -116,9 +128,13 @@ static all_metals as IItemStack[string][string] = {
         block: <thermalfoundation:storage:4>,
         wire: <immersiveengineering:material:22>,
         dust: <thermalfoundation:material:68>,
+        nugget: <thermalfoundation:material:196>,
 
         singularity: <extendedcrafting:singularity:16>,
-        element: <alchemistry:element:13>
+        element: <alchemistry:element:13>,
+
+        bush: <oreberries:aluminum_oreberry_bush>,
+        berry: <oreberries:aluminum_oreberry>
     },
     nickel: {
         ingot: <thermalfoundation:material:133>,
@@ -127,9 +143,13 @@ static all_metals as IItemStack[string][string] = {
         gear: <thermalfoundation:material:261>,
         block: <thermalfoundation:storage:5>,
         dust: <thermalfoundation:material:69>,
+        nugget: <thermalfoundation:material:197>,
 
         singularity: <extendedcrafting:singularity:25>,
-        element: <alchemistry:element:28>
+        element: <alchemistry:element:28>,
+
+        bush: <oreberries:nickel_oreberry_bush>,
+        berry: <oreberries:nickel_oreberry>
     },
     zinc: {
         ingot: <contenttweaker:zinc_ingot>,
@@ -143,7 +163,10 @@ static all_metals as IItemStack[string][string] = {
         dust: <contenttweaker:zinc_dust>,
 
         singularity: <extendedcrafting:singularity:20>,
-        element: <alchemistry:element:30>
+        element: <alchemistry:element:30>,
+
+        bush: <oreberries:zinc_oreberry_bush>,
+        berry: <oreberries:zinc_oreberry>
     },
 
     cobalt: {
@@ -152,9 +175,13 @@ static all_metals as IItemStack[string][string] = {
         gear: <moreplates:cobalt_gear>,
         block: <tconstruct:metal>,
         dust: <exnihilocreatio:item_ore_cobalt:2>,
+        nugget: <tconstruct:nuggets>,
 
         singularity: <extendedcrafting:singularity:65>,
-        element: <alchemistry:element:27>
+        element: <alchemistry:element:27>,
+
+        bush: <oreberries:cobalt_oreberry_bush>,
+        berry: <oreberries:cobalt_oreberry>
     },
     ardite: {
         ingot: <tconstruct:ingots:1>,
@@ -162,16 +189,25 @@ static all_metals as IItemStack[string][string] = {
         gear: <moreplates:ardite_gear>,
         block: <tconstruct:metal:1>,
         dust: <exnihilocreatio:item_ore_ardite:2>,
+        nugget: <tconstruct:nuggets:1>,
 
-        singularity: <extendedcrafting:singularity:64>
+        singularity: <extendedcrafting:singularity:64>,
+
+        bush: <oreberries:ardite_oreberry_bush>,
+        berry: <oreberries:ardite_oreberry>
     },
     antimony: {
         ingot: <alchemistry:ingot:51>,
         block: <contenttweaker:antimony_block>,
+        nugget: <contenttweaker:antimony_nugget>,
         dust: <contenttweaker:antimony_dust>,
+        nugget: <contenttweaker:antimony_nugget>,
 
         singularity: <extendedcrafting:singularity_custom:73>,
-        element: <alchemistry:element:51>
+        element: <alchemistry:element:51>,
+
+        bush: <oreberries:antimony_oreberry_bush>,
+        berry: <oreberries:antimony_oreberry>
     },
 
     // tier 1.5 alloys
@@ -291,9 +327,13 @@ static all_metals as IItemStack[string][string] = {
         block: <minecraft:gold_block>,
         wire: <contenttweaker:gold_wire>,
         dust: <thermalfoundation:material:1>,
+        nugget: <minecraft:gold_nugget>,
 
         singularity: <extendedcrafting:singularity:5>,
-        element: <alchemistry:element:79>
+        element: <alchemistry:element:79>,
+
+        bush: <oreberries:gold_oreberry_bush>,
+        berry: <oreberries:gold_oreberry>
     },
     silver:{
         ingot: <thermalfoundation:material:130>,
@@ -302,9 +342,13 @@ static all_metals as IItemStack[string][string] = {
         gear: <thermalfoundation:material:258>,
         block: <thermalfoundation:storage:2>,
         dust: <thermalfoundation:material:66>,
+        nugget: <thermalfoundation:material:194>,
 
         singularity: <extendedcrafting:singularity:22>,
-        element: <alchemistry:element:47>
+        element: <alchemistry:element:47>,
+
+        bush: <oreberries:silver_oreberry_bush>,
+        berry: <oreberries:silver_oreberry>
     },
     lead: {
         ingot: <thermalfoundation:material:131>,
@@ -313,9 +357,13 @@ static all_metals as IItemStack[string][string] = {
         gear: <thermalfoundation:material:259>,
         block: <thermalfoundation:storage:3>,
         dust: <thermalfoundation:material:67>,
+        nugget: <thermalfoundation:material:195>,
 
         singularity: <extendedcrafting:singularity:23>,
-        element: <alchemistry:element:82>
+        element: <alchemistry:element:82>,
+
+        bush: <oreberries:lead_oreberry_bush>,
+        berry: <oreberries:lead_oreberry>
     },
     osmium: {
         ingot: <mekanism:ingot:1>,
@@ -323,9 +371,13 @@ static all_metals as IItemStack[string][string] = {
         gear: <moreplates:osmium_gear>,
         block: <mekanism:basicblock>,
         dust: <mekanism:dust:2>,
+        nugget: <mekanism:nugget:1>,
 
         singularity: <extendedcrafting:singularity_custom:5>,
-        element: <alchemistry:element:76>
+        element: <alchemistry:element:76>,
+
+        bush: <oreberries:osmium_oreberry_bush>,
+        berry: <oreberries:osmium_oreberry>
     },
 
     // tier 2 alloys
@@ -1460,6 +1512,14 @@ static all_metals as IItemStack[string][string] = {
         ingot: <alchemistry:ingot:58>,
         element: <alchemistry:element:58>
     },
+    tantalum: {
+        ingot: <alchemistry:ingot:73>,
+        block: <contenttweaker:tantalum_block>,
+        dust: <contenttweaker:tantalum_dust>,
+
+        element: <alchemistry:element:73>,
+        singularity: <extendedcrafting:singularity_custom:75>
+    },
     plutonium: {
         ingot: <alchemistry:ingot:94>,
         block: <contenttweaker:plutonium_block>,
@@ -2359,7 +2419,7 @@ static custom_metals as string[] = [
 
     "runesteel",
 
-    "selenium", "tellurium", "arsenic", "molybdenum"
+    "selenium", "tellurium", "arsenic", "molybdenum", "tantalum"
 ];
 
 
@@ -2665,6 +2725,34 @@ function addElement(nam as string){
         40000
     );
 }
+function addBush(nam as string){
+    scripts.jei.addJEIhint(
+        [all_metals[nam].bush], [],
+        [],
+        [all_metals[nam].berry]
+    );
+
+    TEAlloyer.addRecipe(
+        all_metals[nam].nugget * 3, 
+        all_metals[nam].berry,
+        <minecraft:sand>,
+        500
+    );
+
+    <ore:berryBush>.add(all_metals[nam].bush);
+    <ore:berryBerry>.add(all_metals[nam].berry);
+    recipes.addShaped("ia_bush_" ~ nam, all_metals[nam].bush, [
+        [all_metals[nam].ingot | all_metals[nam].berry, all_metals[nam].ingot | all_metals[nam].berry, all_metals[nam].ingot | all_metals[nam].berry],
+        [all_metals[nam].ingot | all_metals[nam].berry, <ore:berryBush>, all_metals[nam].ingot | all_metals[nam].berry],
+        [all_metals[nam].ingot | all_metals[nam].berry, all_metals[nam].ingot | all_metals[nam].berry, all_metals[nam].ingot | all_metals[nam].berry]
+    ]);
+
+    if (all_metals_molten has nam) {
+        Melting.addRecipe(all_metals_molten[nam] * 48, all_metals[nam].berry, 400);
+        mods.thermalexpansion.Crucible.addRecipe(all_metals_molten[nam] * 48, all_metals[nam].berry, 400);
+    }
+
+}
 
 function addCasting(metal as IItemStack[string], molten as ILiquidStack){
     Casting.addTableRecipe(metal.ingot, <tconstruct:cast_custom>, molten, 144, false);
@@ -2677,6 +2765,7 @@ function addCasting(metal as IItemStack[string], molten as ILiquidStack){
 
     mods.thermalexpansion.Crucible.addRecipe(molten * 144, metal.ingot, 4000);
     if (metal.keys has "dust") {mods.thermalexpansion.Crucible.addRecipe(molten * 144, metal.dust, 4000);}
+    
     
     mods.thermalexpansion.Crucible.addRecipe(molten * 1296, metal.block, 32000);
 
@@ -2853,6 +2942,9 @@ function addAdvancedSmelting(ingot as IItemStack, dust as IItemStack, flux1 as I
 
         if (all_metals[metal].keys has "element")
             addElement(metal);
+
+        if (all_metals[metal].keys has "bush")
+            addBush(metal);
 
         if (all_metals_molten has metal) {
             mods.thermalexpansion.Transposer.addFillRecipe(
@@ -4119,7 +4211,7 @@ scripts.helper.addFluidAlloyerRecipe(
         
         add3alloy(3, "energetic_gold1", 8,
             "electrum_sing", 1,
-            "atum", 6,
+            "atum", 2,
             "energized_compound", 4
         );
     }
@@ -4130,7 +4222,7 @@ scripts.helper.addFluidAlloyerRecipe(
         
         add3alloy(3, "energetic_silver1", 8,
             "lesmium_sing", 1,
-            "atum", 6,
+            "atum", 2,
             "energized_compound", 4
         );
     }
@@ -5146,6 +5238,13 @@ scripts.content_machines.addAdvancedMixerRecipe(
     scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:21>, <contenttweaker:scandium_dust>);
 
     addAdvancedSmelting(
+        <alchemistry:ingot:41>, <contenttweaker:niobium_dust>,
+        <taiga:niob_ingot>, <moretcon:gemelectarite>, <liquid:high_heat_lava> * 50, 
+        10000, 20 * 30
+    );
+    scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:41>, <contenttweaker:niobium_dust>);
+
+    addAdvancedSmelting(
         <alchemistry:ingot:48>, <contenttweaker:cadmium>,
         <extrautils2:ingredients:4> * 8, <contenttweaker:chrome_ingot>, <liquid:pyrotheum> * 1500, 
         10000, 20 * 30
@@ -5159,6 +5258,10 @@ scripts.content_machines.addAdvancedMixerRecipe(
     );
     scripts.helper.addSimpleCrushingRecipe(<contenttweaker:bismuth_ingot>, <contenttweaker:bismuth_dust>);
     
+
+    furnace.addRecipe(<contenttweaker:tantalum_dust> * 4, <contenttweaker:capacitor_dust>);
+    //furnace.addRecipe(, <contenttweaker:tantalum_dust>);
+
 
     //mischmetal
     add2alloy(3, "mischmetal", 3, 

@@ -122,7 +122,14 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
         ]
     },
     <contenttweaker:radiotoad_mech>: {
-        <contenttweaker:tincan_target_ore1>: [
+        <contenttweaker:radiotoad_target1>: [
+            [
+                <contenttweaker:tantalite_ore> * 128, 
+            ], [
+                <contenttweaker:tantalite_ore> * 128, 
+            ]
+        ],
+        <contenttweaker:radiotoad_target2>: [
             [
                 <densemetals:dense_coal_ore> * 64,
                 <densemetals:dense_uranium_ore> * 64,

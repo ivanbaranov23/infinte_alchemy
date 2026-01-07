@@ -808,6 +808,25 @@ import mods.modularmachinery.RecipeBuilder;
     );
 }
 
+{//lime
+    //quick lime
+    furnace.addRecipe(<contenttweaker:quicklime>, <contenttweaker:limestone_dust>);
+    furnace.addRecipe(<contenttweaker:quicklime>, <quark:limestone>);
+    furnace.addRecipe(<contenttweaker:quicklime>, <chisel:limestone2:7>);
+
+    furnace.addRecipe(<contenttweaker:quicklime> * 4, <mysticalagriculture:limestone_essence>);
+
+
+    //slacked
+    recipes.addShapeless("ia_slacked_lime", <contenttweaker:slacked_lime>, [
+        <contenttweaker:quicklime>, <harvestcraft:freshwateritem>
+    ]);
+    recipes.addShapeless("ia_slacked_lime2", <contenttweaker:slacked_lime> * 8, [
+        <contenttweaker:quicklime>, <contenttweaker:quicklime>, <contenttweaker:quicklime>, <contenttweaker:quicklime>,
+        <liquid:water> * 1000,
+        <contenttweaker:quicklime>, <contenttweaker:quicklime>, <contenttweaker:quicklime>, <contenttweaker:quicklime>
+    ]);
+}
 
 {//eliamondin
     
@@ -1015,12 +1034,12 @@ import mods.modularmachinery.RecipeBuilder;
     mods.thermalexpansion.Refinery.addRecipe(<liquid:tartaric_acid> * 100, null, <liquid:tamarind_juice> * 250, 2000);
 
     mods.mekanism.reaction.addRecipe(
-        <biomesoplenty:gem:2>, <liquid:tartaric_acid> * 1000, <gas:carmin> * 750, 
-        <contenttweaker:wine_diamond> * 2, <gas:carmin> * 500, 900, 60
+        <biomesoplenty:gem:2>, <liquid:tartaric_acid> * 1000, <gas:carmin> * 250, 
+        <contenttweaker:wine_diamond> * 2, <gas:potassium_bitartrate> * 500, 900, 60
     );
     mods.mekanism.reaction.addRecipe(
-        <minecraft:diamond>, <liquid:tartaric_acid> * 1000, <gas:carmin> * 750, 
-        <contenttweaker:wine_diamond> * 2, <gas:carmin> * 500, 900, 60
+        <minecraft:diamond>, <liquid:tartaric_acid> * 1000, <gas:carmin> * 250, 
+        <contenttweaker:wine_diamond> * 2, <gas:potassium_bitartrate> * 500, 900, 60
     );
 
     recipes.addShaped("wine_diamond_cluster", <contenttweaker:wine_diamond_cluster>, [

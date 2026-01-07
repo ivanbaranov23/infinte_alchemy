@@ -586,6 +586,40 @@ scripts.content_machines.addFluidMixerRecipe(
         rec.build();
     }
 }
+{//tantalum niobium
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:tantalum_niobium_f> * 1000], 
+        [<contenttweaker:tantalum_ore_dust> * 4], [<liquid:hf> * 1000], 
+        40, 20000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:imperomite_catalyst_dust>], [
+            <liquid:tantalum_f> * 1000,
+            <liquid:niobium_f> * 1000
+        ], 
+        [<contenttweaker:imperomite_catalyst>], [<liquid:tantalum_niobium_f> * 1000], 
+        40, 20000
+    );
+
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:filter_empty>,
+            <contenttweaker:tantalum_dust> % 75
+        ], <liquid:hf> * 400, 
+        <liquid:tantalum_f> * 500, <contenttweaker:filter_solar>,
+        <contenttweaker:uranium_mesh>,
+        40, 100000
+    );
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:filter_empty>,
+            <contenttweaker:niobium_dust> % 75
+        ], <liquid:hf> * 400, 
+        <liquid:niobium_f> * 500, <contenttweaker:filter_solar>,
+        <contenttweaker:uranium_mesh>,
+        40, 100000
+    );
+}
 {//xenotime
     <contenttweaker:xenotime>.addTooltip("(Y,Yb,Gd)PO₄");
     mods.alchemistry.Dissolver.addRecipe(<contenttweaker:xenotime>, false, 1,

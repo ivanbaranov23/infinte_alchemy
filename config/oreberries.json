@@ -5,12 +5,7 @@
     "smeltingResult": "minecraft:iron_nugget",
     "oredictNames": []
   },
-  "Gold": {
-    "color": "#FFCC33",
-    "tooltip": "Pure Luster",
-    "smeltingResult": "minecraft:gold_nugget",
-    "oredictNames": []
-  },
+  
   "Copper": {
     "color": "#FF8833",
     "tooltip": "Tastes like metal",
@@ -29,12 +24,61 @@
     "oredictNames": [],
     "smeltingResult": "thermalfoundation:material:196"
   },
+  "Nickel": {
+    "color": "#D8CC93",
+    "oredictNames": [],
+    "smeltingResult": "thermalfoundation:material:197"
+  },
   "Zinc": {
     "color": "#868F69",
     "tooltip": "Zinc.",
     "smeltingResult": "contenttweaker:zinc_nugget"
   },
 
+  "Cobalt": {
+    "color": "#2376DD",
+    "oredictNames": [],
+    "smeltingResult": "tconstruct:nuggets",
+    "tradeable": false
+  },
+  "Ardite": {
+    "color": "#D34117",
+    "oredictNames": [],
+    "smeltingResult": "tconstruct:nuggets:1",
+    "tradeable": false
+  },
+  "Antimony": {
+    "color": "#C1283A",
+    "oredictNames": [],
+    "smeltingResult": "contenttweaker:antimony_nugget",
+    "tradeable": false
+  },
+
+  "Gold": {
+    "color": "#FFCC33",
+    "tooltip": "Pure Luster",
+    "smeltingResult": "minecraft:gold_nugget",
+    "oredictNames": [],
+    "tradeable": false
+  },
+  "Silver": {
+    "color": "#A5C3D0",
+    "oredictNames": [],
+    "smeltingResult": "thermalfoundation:material:194",
+    "tradeable": false
+  },
+  "Lead": {
+    "color": "#57617D",
+    "oredictNames": [],
+    "smeltingResult": "thermalfoundation:material:195",
+    "tradeable": false
+  },
+  "Osmium": {
+    "color": "#939FBF",
+    "oredictNames": [],
+    "smeltingResult": "mekanism:nugget:1",
+    "tradeable": false
+  },
 
   
   "Essence": {

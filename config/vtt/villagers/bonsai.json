@@ -1,0 +1,10 @@
+{
+    "profession": {
+        "name": "ia:bonsai_villager",
+        "texture": "contenttweaker:textures/entities/bonsai_villager.png",
+        "zombieTexture": "contenttweaker:textures/entities/bonsai_zombie_villager.png"
+    },
+    "careers": [
+        "ia:bonsai"
+    ]
+}

@@ -1138,6 +1138,11 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			[<ore:dustBedrock>, <ore:ingotHOPGraphite>, <ore:dustBedrock>], 
 			[<ore:stickSteel>, null, <ore:stickSteel>]
 		]);
+		recipes.addShaped("ia_cheap_capacitor2", <enderio:item_capacitor_grainy> * 4, [
+			[null, <ore:ingotHOPGraphite>, null], 
+			[<ore:dustBedrock>, <ore:ingotHOPGraphite>, <ore:dustBedrock>], 
+			[<ore:stickSteel>, <alchemistry:ingot:73>, <ore:stickSteel>]
+		]);
 		mods.immersiveengineering.Blueprint.addRecipe("exotic_circuit", 
 			<enderio:item_capacitor_grainy>, 
 			[
@@ -1147,10 +1152,11 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			]
 		);
 		scripts.content_machines.addAssemblerRecipe(
-			[<enderio:item_capacitor_grainy> * 3],
+			[<enderio:item_capacitor_grainy> * 8],
 			[
 				<ore:dustBedrock> * 3,
-				<ore:ingotHOPGraphite> * 2
+				<ore:ingotHOPGraphite> * 2,
+				<alchemistry:ingot:73>
 			], <fluid:steel> * 576, 10, 256
 		);
 
@@ -1319,7 +1325,10 @@ mods.actuallyadditions.Empowerer.addRecipe(
 			[
 				<enderio:item_capacitor_stellar> * 4,
 				<minecraft:beacon> * 16,
-				<contenttweaker:kikeridan_gear> * 8
+				<contenttweaker:evil_core> * 6,
+				<contenttweaker:kikeridan_gear> * 8,
+				<extendedcrafting:singularity_custom:75> * 3,
+				
 			],
 			<liquid:dark_matter> * (144 * 8), 20, 1024
 		);

@@ -2017,6 +2017,25 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod2: <contenttweaker:beryllium_dust>
         }
     },
+    tantalum: {
+        tantalite: {
+            item: <contenttweaker:tantalite_ore>,
+            crushing_no_balls: <contenttweaker:tantalum_dust> * 2,
+            balling: <contenttweaker:tantalum_dust> * 2,
+            crushingByprod1: <mekanism:dirtydust>,
+
+            drilling: <contenttweaker:tantalum_dust> * 4
+        },
+        ore: {
+            item: <contenttweaker:tantalum_ore>,
+            crushing_no_balls: <contenttweaker:tantalum_ore_dust> * 2,
+            balling: <contenttweaker:tantalum_ore_dust> * 2,
+            crushingByprod1: <contenttweaker:tantalum_dust>,
+            crushingByprod2: <contenttweaker:niobium_dust>,
+
+            drilling: <contenttweaker:tantalum_ore_dust> * 4
+        }
+    },
     zirconium: {
         overworld: {
             item: <contenttweaker:zirconium_ore>,
@@ -3910,6 +3929,7 @@ val drilling_fluid_amount as int[string] = {
     beryllium: 800,
     vanadium: 1200,
     molybdenum: 1200,
+    tantalum: 800,
     zirconium: 1200,
     spaceice: 1000,
     xenotime: 1000,

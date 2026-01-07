@@ -22,6 +22,24 @@
     ],
     "parts": [
         {
+            "x": 2,
+            "y": 2,
+            "z": 9,
+           
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 9,
+            
+            "elements": [
+                "modularmachinery:blockcasing@5"
+            ]
+        },
+        {
             "x": -1,
             "y": 0,
             "z": 0,
@@ -420,7 +438,7 @@
             "x": -1,
             "y": 2,
             "z": 4,
-            "nbt": {"id":"immersiveengineering:ieslab","slabType":"0"},
+            "nbt": {"id":"immersiveengineering:ieslab"},
             "elements": [
                 "immersiveengineering:storage_slab@1"
             ]
@@ -461,7 +479,7 @@
             "x": 1,
             "y": 2,
             "z": 4,
-            "nbt": {"id":"immersiveengineering:ieslab","slabType":"0"},
+            "nbt": {"id":"immersiveengineering:ieslab"},
             "elements": [
                 "immersiveengineering:storage_slab@1"
             ]
@@ -1054,7 +1072,7 @@
             "x": 0,
             "y": 2,
             "z": 2,
-            "nbt": {"id":"immersiveengineering:ieslab","slabType":"1"},
+            "nbt": {"id":"immersiveengineering:ieslab"},
             "elements": [
                 "immersiveengineering:storage_slab@1"
             ]

@@ -113,3 +113,5 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
 <ore:dustBarium>.add(<contenttweaker:barium_dust>);
 <ore:dustStrontium>.add(<contenttweaker:strontium_dust>);
+
+<ore:dustTantalum>.add(<contenttweaker:tantalum_dust>);
