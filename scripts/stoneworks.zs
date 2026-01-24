@@ -417,7 +417,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [
             <immersivepetroleum:stone_decoration> * 2,
             <appliedenergistics2:sky_stone_block> * 4,
-            <contenttweaker:sky_grain> | <contenttweaker:nuit_godshard>,
+            <contenttweaker:sky_grain> | <contenttweaker:nuit_godshard> | <mysticalagriculture:sky_stone_essence>,
             <minecraft:glass> | <atum:crystal_glass>
         ], [
             <liquid:lubricant> * 1000
@@ -430,7 +430,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [
             <immersivepetroleum:stone_decoration> * 2,
             <appliedenergistics2:sky_stone_block> * 4,
-            <contenttweaker:sky_grain> | <contenttweaker:nuit_godshard>,
+            <contenttweaker:sky_grain> | <contenttweaker:nuit_godshard> | <mysticalagriculture:sky_stone_essence>,
             <minecraft:glass> | <atum:crystal_glass>
         ], [
             <liquid:skyroot> * 1000

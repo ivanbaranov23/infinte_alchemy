@@ -442,6 +442,15 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         <harvestcraft:freshwateritem>,
         <contenttweaker:sodium_bicarbonate>
     ]);
+
+    recipes.addShapeless("ia_ironbrewitem", <harvestcraft:ironbrewitem> * 4, [
+        <harvestcraft:mixingbowlitem>.reuse(),
+        <harvestcraft:bubblywateritem>,
+        <minecraft:sugar>,
+        <harvestcraft:spiceleafitem>,
+        <minecraft:redstone>,
+        <oreberries:iron_oreberry>
+    ]);
 }
 
 {//yeast
@@ -533,6 +542,15 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         ], [], 20, 1000
     );
     
+}
+{//batter
+    recipes.remove(<harvestcraft:batteritem>);
+    recipes.addShapeless("ia_batteritem", <harvestcraft:batteritem> * 4, [
+        <harvestcraft:mixingbowlitem>.reuse(),
+        <contenttweaker:baking_soda>,
+        <harvestcraft:flouritem>,
+        <ore:listAllegg>,
+    ]);
 }
 
 {//bread

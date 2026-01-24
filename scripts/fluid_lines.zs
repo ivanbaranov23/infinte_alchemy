@@ -111,6 +111,15 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 
 	//napalm
 	TEImbuer.addRecipe(<liquid:napalm> * 200, <thermalfoundation:material:68>, <liquid:gasoline> * 200, 4800);
+
+	//cracking
+	Vat.addRecipe(
+		<liquid:cracked_oil>, 1.0, <liquid:cracked_steam> * 1000, 
+		[<immersivepetroleum:material>, <thermalfoundation:material:892>, <contenttweaker:reagent_oil>], [1.0, 1.0, 5.0], 
+		[<contenttweaker:molybdenum_dust>], [1.0], 
+		15000
+	);
+
 }
 {//fish oil
 	mods.immersiveengineering.Squeezer.addRecipe(<prodigytech:meat_ground>, <liquid:fish_oil> * 500, <ore:listAllfishraw> * 4, 3000);

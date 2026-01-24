@@ -128,13 +128,19 @@
 
         "prodigytech:charred_stone": [],
         "prodigytech:charred_stonebricks": [],
+        "unlimitedchiselworks:chisel_stonebrick_prodigytech_charred_stonebricks_0": [],
+        "unlimitedchiselworks:chisel_stonebrick1_prodigytech_charred_stonebricks_0": [],
+        "unlimitedchiselworks:chisel_stonebrick2_prodigytech_charred_stonebricks_0": [],
+
         "prodigytech:zorra_planks": [],
+        "unlimitedchiselworks:chisel_planks_oak_prodigytech_zorra_planks_0": [],
         "prodigytech:ash_bricks": [],
         "prodigytech:particle_board": [],
         "prodigytech:particle_board_planks": [],
 
         "immersiveengineering:sheetmetal": [],
         "immersiveengineering:treated_wood": [],
+        "unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0": [],
         
         "extrautils2:decorativesolid": [0, 1, 5]
     },
@@ -150,14 +156,15 @@
         "betternether:bone_tile": [],
         "extrautils2:decorativesolid": [2, 3]
     },
-        "2.5,4,false": {
+    "2.5,4,false": {
         "minecraft:diamond_block": [],
         "minecraft:beacon": [],
 
         "immersiveengineering:stone_decoration": [6]
     },  
     "3.0,4,false": {
-        "immersivepetroleum:stone_decoration": []
+        "immersivepetroleum:stone_decoration": [],
+        "appliedenergistics2:smooth_sky_stone_block": []
     },
     "10.99,4,false": {
         "extrautils2:decorativesolid": [8]

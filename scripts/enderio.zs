@@ -396,9 +396,9 @@ recipes.addShaped("ia_dark_steel_direct", <enderio:item_dark_steel_upgrade:1>.wi
 
 	recipes.remove(<enderio:block_farm_station>);
 	recipes.addShaped("ia_block_farm_station", <enderio:block_farm_station>, [
-		[<natura:redwood_logs:1>, <bonsaitrees:bonsaipot:1>, <natura:redwood_logs:1>], 
+		[<natura:redwood_logs:1> | <actuallyadditions:block_farmer>, <contenttweaker:plant_unit>, <natura:redwood_logs:1> | <actuallyadditions:block_farmer>], 
 		[<enderio:item_material:44>, <enderio:item_material:53>, <enderio:item_material:44>], 
-		[<natura:redwood_logs:1>, <enderio:item_material:73>, <natura:redwood_logs:1>]
+		[<natura:redwood_logs:1> | <actuallyadditions:block_farmer>, <enderio:item_material:73>, <natura:redwood_logs:1> | <actuallyadditions:block_farmer>]
 	]);
 
 	recipes.remove(<enderio:block_powered_spawner>);

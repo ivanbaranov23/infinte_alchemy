@@ -1,0 +1,20 @@
+{
+	title: "How do i do it in 1.12.2 again?",
+	x: 5.0d,
+	y: 5.0d,
+	text: [
+		"You can get villagers from cocoon of Caprice or from curing a zombie villager.",
+		"Apply redstone to visualise a village. What is a village? Like 3 doors per villager or smt idk"
+	],
+	dependencies: [
+		"b89b6083"
+	],
+	optional: true,
+	tasks: [{
+		uid: "70a423e7",
+		type: "item",
+		items: [{
+			item: "openblocks:village_highlighter"
+		}]
+	}]
+}

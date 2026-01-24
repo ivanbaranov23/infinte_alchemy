@@ -31,13 +31,18 @@ for speed,paths in {
 
         <prodigytech:charred_stone>,
         <prodigytech:charred_stonebricks>,
+        <unlimitedchiselworks:chisel_stonebrick_prodigytech_charred_stonebricks_0:*>,
+        <unlimitedchiselworks:chisel_stonebrick1_prodigytech_charred_stonebricks_0:*>,
+        <unlimitedchiselworks:chisel_stonebrick2_prodigytech_charred_stonebricks_0:*>,
         <prodigytech:zorra_planks>,
+        <unlimitedchiselworks:chisel_planks_oak_prodigytech_zorra_planks_0:*>,
         <prodigytech:ash_bricks>,
         <prodigytech:particle_board>,
         <prodigytech:particle_board_planks>,
 
         <immersiveengineering:sheetmetal:*>,
         <immersiveengineering:treated_wood:*>,
+        <unlimitedchiselworks:chisel_planks_oak_immersiveengineering_treated_wood_0:*>,
 
         <extrautils2:decorativesolid>,
         <extrautils2:decorativesolid:1>,
@@ -66,7 +71,8 @@ for speed,paths in {
         <immersiveengineering:stone_decoration:6>
     ],
     3.0: [
-        <immersivepetroleum:stone_decoration>
+        <immersivepetroleum:stone_decoration>,
+        <appliedenergistics2:smooth_sky_stone_block>
     ],
 
     10.99: [

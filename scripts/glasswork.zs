@@ -114,6 +114,21 @@ recipes.addShaped("ia_quartz_glass2", <betternether:quartz_glass> * 3, [
 ]);
 
 
+//flower
+mods.enderio.AlloySmelter.addRecipe(<contenttweaker:flower_glass> * 2, 
+    [
+        <contenttweaker:flower_steel_block>,
+        <contenttweaker:inversion_dust>,
+        <actuallyadditions:block_greenhouse_glass> * 4
+    ],
+    40000
+);
+
+//managlass
+mods.botania.ManaInfusion.removeRecipe(<botania:managlass>);//150
+mods.botania.ManaInfusion.addInfusion(<botania:managlass>, <contenttweaker:flower_glass>, 2000);
+mods.botania.ManaInfusion.addInfusion(<botania:managlass>, <engineersdecor:panzerglass_block>, 1000);
+
 
 mods.alchemistry.Combiner.addRecipe(<contenttweaker:didymium>, [
     <alchemistry:compound:1> * 32, <alchemistry:element:59> * 8, <alchemistry:element:60> * 8

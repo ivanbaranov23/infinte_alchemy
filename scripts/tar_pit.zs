@@ -29,7 +29,7 @@ import mods.modularmachinery.RecipeBuilder;
         rec.addItemInput(<minecraft:ender_pearl> * 2);
         rec.addFluidInput(<liquid:tar> * 2000);
 
-        rec.addFluidOutput(<liquid:goop> * 2000);
+        rec.addFluidOutput(<liquid:goop> * 4000);
         rec.addItemOutput(<minecraft:glass_bottle>);
 
         rec.build();
@@ -39,12 +39,11 @@ import mods.modularmachinery.RecipeBuilder;
 
         rec.addEnergyPerTickInput(1000);
 
-        rec.addItemInput(<harvestcraft:vinegaritem>);
+        rec.addFluidInput(<liquid:vinegar> * 250);
         rec.addItemInput(<minecraft:ender_pearl> * 2);
         rec.addFluidInput(<liquid:tar> * 2000);
 
-        rec.addFluidOutput(<liquid:goop> * 2000);
-        rec.addItemOutput(<minecraft:glass_bottle>);
+        rec.addFluidOutput(<liquid:goop> * 4000);
 
         rec.build();
     }

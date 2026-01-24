@@ -1,0 +1,25 @@
+{
+	title: "Farming Station",
+	icon: "enderio:block_farm_station",
+	x: 2.5d,
+	y: 3.0d,
+	tasks: [{
+		uid: "f4860c11",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 2L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "de3913ea",
+		type: "item",
+		item: "enderio:block_farm_station"
+	},
+	{
+		uid: "80ed151b",
+		type: "item",
+		item: "enderio:item_basic_capacitor"
+	}]
+}

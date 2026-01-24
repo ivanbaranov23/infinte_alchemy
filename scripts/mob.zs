@@ -6,6 +6,8 @@ import crafttweaker.entity.IEntityDefinition;
 
 import mods.modularmachinery.RecipeBuilder;
 
+import mods.roots.RunicShears;
+
 import scripts.mob_jei.addJEIentityHint;
 
 import loottweaker.LootTweaker;
@@ -73,6 +75,10 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         <mysticalagriculture:storage>, <xreliquary:mob_ingredient:6>, <contenttweaker:potato_block1>, 
         <harvestcraft:zombiejerkyitem> | <tconstruct:edible:10>
     ]);
+    RunicShears.addEntityRecipe(
+        "ia_zombie", <minecraft:rotten_flesh>,
+        <entity:minecraft:zombie>, 120 * 20
+    );
 
     mods.prodigytech.heatsawmill.addRecipe(<minecraft:skull:2>, <minecraft:rotten_flesh> * 4);
     scripts.helper.addSawRecipeWByproduct(<minecraft:skull:2>, <minecraft:rotten_flesh> * 6, <minecraft:rotten_flesh> * 2, 10);
@@ -85,6 +91,10 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
     readdRootsSummoning(<entity:minecraft:skeleton>, [
         <mysticalagriculture:storage>, <xreliquary:mob_ingredient>, <tconstruct:materials:20>, <minecraft:bow:*>
     ]);
+    RunicShears.addEntityRecipe(
+        "ia_skeleton", <minecraft:bone>,
+        <entity:minecraft:skeleton>, 120 * 20
+    );
 
     mods.prodigytech.heatsawmill.addRecipe(<minecraft:skull>, <minecraft:bone> * 3);
     scripts.helper.addSawRecipeWByproduct(<minecraft:skull>, <minecraft:bone> * 4, <minecraft:bone>, 10);
@@ -95,6 +105,10 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
     scripts.helper.addSawRecipeWByproduct(<minecraft:skull:1>, <tconstruct:materials:17> * 4, <tconstruct:materials:17>, 10);
 
     //creeper
+    RunicShears.addEntityRecipe(
+        "ia_creeper", <minecraft:gunpowder>,
+        <entity:minecraft:creeper>, 120 * 20
+    );
     mods.prodigytech.heatsawmill.addRecipe(<minecraft:skull:4>, <minecraft:gunpowder> * 4);
     scripts.helper.addSawRecipeWByproduct(<minecraft:skull:4>, <minecraft:gunpowder> * 6, <minecraft:gunpowder> * 2, 10);
     recipes.addShapeless("ia_creepr_skull_to_bone", <minecraft:gunpowder> * 3, [

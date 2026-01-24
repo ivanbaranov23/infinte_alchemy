@@ -1,0 +1,398 @@
+{
+    "Profession": "ia:chef_villager",
+    "Career": "ia:chef",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 2, "max": 8}
+                },
+                "sell": {
+                    "id": "minecraft:bread",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:cheeseitem",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:doughitem",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:butteritem",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:heavycreamitem",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:flouritem",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 3, "max": 8}
+                },
+                "sell": {
+                    "id": "harvestcraft:batteritem",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "contenttweaker:yeast",
+                    "Count": 1
+                },
+                "CareerLevel": 1,
+                "chance": 0.25
+            },
+
+
+
+
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:caramelitem",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:chocolatebaritem",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:pepperoniitem",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "contenttweaker:gelatin",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:vinegaritem",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:bubblywateritem",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "enderio:item_material",
+                    "Count": 1,
+                    "Damage": 70
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:mayoitem",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:ketchupitem",
+                    "Count": 1
+                },
+                "CareerLevel": 2,
+                "chance": 0.25
+            },
+
+
+
+
+
+
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "prodigytech:meat_patty",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:duckcookeditem",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "minecraft:cooked_rabbit",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:venisoncookeditem",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "minecraft:cooked_chicken",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "minecraft:cooked_porkchop",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "atum:camel_cooked",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:turkeycookeditem",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "minecraft:cooked_mutton",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "tconevo:edible",
+                    "Count": 1,
+                    "Damage": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "harvestcraft:calamaricookeditem",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            },
+            {
+                "action": "add",
+                "buy": {
+                    "id": "minecraft:emerald",
+                    "Count": {"min": 1, "max": 4}
+                },
+                "sell": {
+                    "id": "minecraft:cooked_beef",
+                    "Count": 1
+                },
+                "CareerLevel": 3,
+                "chance": 0.25
+            }
+        ]
+    }
+}

@@ -2752,6 +2752,7 @@ function addBush(nam as string){
         mods.thermalexpansion.Crucible.addRecipe(all_metals_molten[nam] * 48, all_metals[nam].berry, 400);
     }
 
+    furnace.addRecipe(all_metals[nam].ingot * 2, all_metals[nam].bush);
 }
 
 function addCasting(metal as IItemStack[string], molten as ILiquidStack){
@@ -2980,6 +2981,9 @@ TEPress.addGearRecipe(<thermalfoundation:material:22>, <immersiveengineering:tre
 TEPress.addGearRecipe(<thermalfoundation:material:23>, <minecraft:cobblestone> * 4, 300);
 TEPress.addGearRecipe(<thermalfoundation:material:23>, <minecraft:stone> * 2, 300);
 
+
+
+mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legacy:enchanted_gravitite>, 4000);
 
 
 //alloys
@@ -5173,39 +5177,28 @@ scripts.content_machines.addAdvancedMixerRecipe(
 
     
     mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:moon_ingot> * 3, 1024 * 200, 1024, <contenttweaker:glass_ingot>, 
+        <contenttweaker:moon_ingot> * 3, 1024000 * 200, 1024000, <contenttweaker:glass_ingot>, 
         [
             <contenttweaker:moon_dust>,
             <contenttweaker:moon_dust>,
             <contenttweaker:moon_dust>,
-            <contenttweaker:moon_dust>,
-            <contenttweaker:moon_dust>,
-            <contenttweaker:moon_dust>,
             <contenttweaker:amethyst_ingot>,
-            <contenttweaker:purple_gold_ingot>,
             <simplyjetpacks:metaitemmods:12>,
             <contenttweaker:skeleton_ingot>,
             <taiga:nihilite_ingot>,
-            <extrautils2:ingredients:5>,
-            <extrautils2:ingredients:5>,
             <extrautils2:ingredients:5>
         ]
     );
     mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:moon_ingot> * 4, 1024 * 100, 1024, <contenttweaker:glass_ingot>, 
+        <contenttweaker:moon_ingot> * 4, 1024000 * 100, 1024000, <contenttweaker:glass_ingot>, 
         [
             <twilightforest:moonworm>,
             <contenttweaker:moon_dust>,
             <contenttweaker:moon_dust>,
-            <contenttweaker:moon_dust>,
-            <contenttweaker:moon_dust>,
             <contenttweaker:amethyst_ingot>,
-            <contenttweaker:purple_gold_ingot>,
             <simplyjetpacks:metaitemmods:12>,
             <contenttweaker:skeleton_ingot>,
             <taiga:nihilite_ingot>,
-            <extrautils2:ingredients:5>,
-            <extrautils2:ingredients:5>,
             <extrautils2:ingredients:5>
         ]
     );

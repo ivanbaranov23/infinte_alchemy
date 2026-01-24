@@ -381,6 +381,18 @@ for fl_food_type in bug_fluid_tiers{
         <contenttweaker:eggplant_dust>, <liquid:potion>.withTag({Potion: "minecraft:long_fire_resistance"}) * 500, 
         2000
     );
+
+    //nickel yogurt
+    scripts.content_machines.basicFluidMixerRecipe(
+        <contenttweaker:spicy_enriched_bioblend>, <liquid:nickel_yogurt> * 1000, 
+        <contenttweaker:gemmed_spice>, [<liquid:soy_milk> * 1000, <liquid:nickel> * 288], 
+        20, 1000
+    );
+    scripts.content_machines.basicFluidMixerRecipe(
+        <contenttweaker:spicy_enriched_bioblend> * 2, <liquid:nickel_yogurt> * 1500, 
+        <contenttweaker:gemmed_spice>, [<liquid:roving_milk> * 1000, <liquid:nickel> * 288], 
+        20, 1000
+    );
 }
 
 static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
@@ -422,6 +434,11 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <contenttweaker:kaolin_clay> % 50,
             <contenttweaker:kaolin_clay> % 50,
             <contenttweaker:kaolin_clay> % 50
+        ],
+        <liquid:taiga_fluid> * 200: [
+            <mekores:mekanismore:273> % 75,
+            <mekores:mekanismore:278> % 75,
+            <mekores:mekanismore:283> % 75,
         ]
     },
     [66, 3000, 20*7, 400]: {
@@ -470,10 +487,18 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <thermalfoundation:material:892> % 50,
             <immersivepetroleum:material> % 50,
             <contenttweaker:kaolin_clay> % 50
+        ],
+        <liquid:nickel_yogurt> * 100: [
+            <moretcon:gemvoidspar> % 25,
+            <moretcon:gemelectarite> % 25,
+            <moretcon:gemgarstone> % 25,
+            <moretcon:dustfusionite> % 25,
+            <moretcon:dustirradium> % 25,
+            <contenttweaker:arkenium_dust> % 5
         ]
     },
     [7, 4000, 20 * 10, 1000]: {
-        <liquid:refined_biofuel> * 3000: [
+        <liquid:refined_biofuel> * 2000: [
             <botania:flower> % 75,
             <botania:flower:1> % 75,
             <botania:flower:2> % 75,

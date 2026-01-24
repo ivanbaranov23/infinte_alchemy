@@ -7,5 +7,10 @@
 		items: [{
 			item: "modularmachinery:pworld_oregen_controller"
 		}]
+	}],
+	rewards: [{
+		uid: "4c2ea828",
+		type: "item",
+		item: "modularmachinery:blockoutputbus 1 6"
 	}]
 }

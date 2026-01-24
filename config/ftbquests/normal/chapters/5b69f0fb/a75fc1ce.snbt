@@ -1,0 +1,21 @@
+{
+	title: "Who needs a village",
+	x: 6.0d,
+	y: 6.0d,
+	text: [
+		"Will turn selected villager into a baby and make another villager. No need for breeders"
+	],
+	dependencies: [
+		"cf396eae"
+	],
+	optional: true,
+	tasks: [{
+		uid: "ba217e12",
+		type: "item",
+		items: [{
+			item: "mod_lavacow:fissionpotion"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

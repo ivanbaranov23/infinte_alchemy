@@ -22,5 +22,10 @@
 		uid: "8a4bc124",
 		type: "item",
 		item: "jecalculation:item_calculator"
+	},
+	{
+		uid: "39e7e827",
+		type: "item",
+		item: "clipboard:clipboard"
 	}]
 }

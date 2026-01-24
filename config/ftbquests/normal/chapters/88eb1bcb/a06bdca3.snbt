@@ -1,0 +1,17 @@
+{
+	x: 9.0d,
+	y: 2.0d,
+	text: [
+		"In case you can't be bothered supplying fertilizer of any tier"
+	],
+	dependencies: [
+		"e08ae208"
+	],
+	tasks: [{
+		uid: "c5053663",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_farmer"
+		}]
+	}]
+}

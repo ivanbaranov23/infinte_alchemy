@@ -127,9 +127,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     //mana circuit
     ManaInfusion.addInfusion(<contenttweaker:mana_circuit>, <quantumflux:craftingpiece:5>, 30000);
 
-    //managlass
-    ManaInfusion.removeRecipe(<botania:managlass>);//150
-    ManaInfusion.addInfusion(<botania:managlass>, <engineersdecor:panzerglass_block>, 1000);
+    
 
     //mana cloth
     ManaInfusion.removeRecipe(<botania:manaresource:16>);//5000

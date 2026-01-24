@@ -901,8 +901,12 @@ function addChemicalRecipe(
 ){
     var recipe = AssemblyRecipe.create(function(container) {
         for o in 0 to out.length {
-			if(container.jei)
-				container.addItemOutput("output" ~ o, out[o].stack.withLore(["§d§l" ~ out[o].percent ~ "%"]));
+			if(container.jei){
+                if (out[o].percent < 99)
+                    container.addItemOutput("output" ~ o, out[o].stack.withLore(["§d§l" ~ out[o].percent ~ "%"]));
+                else
+                    container.addItemOutput("output" ~ o, out[o].stack);
+            }
 			else if(container.random.nextDouble() < out[o].chance) //>
 				container.addItemOutput("output" ~ o, out[o].stack);
 		}

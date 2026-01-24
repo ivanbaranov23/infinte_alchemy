@@ -1,0 +1,10 @@
+{
+    "profession": {
+        "name": "ia:blood_villager",
+        "texture": "contenttweaker:textures/entities/blood_villager.png",
+        "zombieTexture": "contenttweaker:textures/entities/blood_zombie_villager.png"
+    },
+    "careers": [
+        "ia:blood"
+    ]
+}

@@ -122,6 +122,36 @@ recipes.addShaped("ia_seed_reprocessor", <mysticalagriculture:seed_reprocessor>,
     [<harvestcraft:roastedpumpkinseedsitem>, <extrautils2:machine>, <harvestcraft:roastedpumpkinseedsitem>], 
     [<thermalfoundation:material:322>, <harvestcraft:sunflowerseedsitem>, <thermalfoundation:material:322>]
 ]);
+recipes.addShaped("ia_seed_reprocessor2", <mysticalagriculture:inferium_reprocessor>, [
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:33>, <contenttweaker:arkenium_block>],
+    [<mysticalagriculture:crafting:33>, <mysticalagriculture:seed_reprocessor>, <mysticalagriculture:crafting:33>],
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:33>, <contenttweaker:arkenium_block>]
+]);
+recipes.addShaped("ia_seed_reprocessor3", <mysticalagriculture:prudentium_reprocessor>, [
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:34>, <contenttweaker:arkenium_block>],
+    [<mysticalagriculture:crafting:34>, <mysticalagriculture:inferium_reprocessor>, <mysticalagriculture:crafting:34>],
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:34>, <contenttweaker:arkenium_block>]
+]);
+recipes.addShaped("ia_seed_reprocessor4", <mysticalagriculture:intermedium_reprocessor>, [
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:35>, <contenttweaker:arkenium_block>],
+    [<mysticalagriculture:crafting:35>, <mysticalagriculture:prudentium_reprocessor>, <mysticalagriculture:crafting:35>],
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:35>, <contenttweaker:arkenium_block>]
+]);
+recipes.addShaped("ia_seed_reprocessor5", <mysticalagriculture:superium_reprocessor>, [
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:36>, <contenttweaker:arkenium_block>],
+    [<mysticalagriculture:crafting:36>, <mysticalagriculture:intermedium_reprocessor>, <mysticalagriculture:crafting:36>],
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:36>, <contenttweaker:arkenium_block>]
+]);
+recipes.addShaped("ia_seed_reprocessor6", <mysticalagriculture:supremium_reprocessor>, [
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:37>, <contenttweaker:arkenium_block>],
+    [<mysticalagriculture:crafting:37>, <mysticalagriculture:superium_reprocessor>, <mysticalagriculture:crafting:37>],
+    [<contenttweaker:arkenium_block>, <mysticalagriculture:crafting:37>, <contenttweaker:arkenium_block>]
+]);
+recipes.addShaped("ia_seed_reprocessor7", <mysticalagriculture:ultimate_reprocessor>, [
+    [<contenttweaker:arkenium_block>, <mysticalagradditions:insanium:2>, <contenttweaker:arkenium_block>],
+    [<mysticalagradditions:insanium:2>, <mysticalagriculture:supremium_reprocessor>, <mysticalagradditions:insanium:2>],
+    [<contenttweaker:arkenium_block>, <mysticalagradditions:insanium:2>, <contenttweaker:arkenium_block>]
+]);
 
 //clusters
 recipes.addShapeless("ia_ma_nether_cluster", <mysticalagriculture:crafting:8>, [

@@ -1735,7 +1735,7 @@ mods.mekanism.reaction.addRecipe(
 {//plants
 	recipes.addShaped("ia_plant_unit", <contenttweaker:plant_unit>, [
 		[<contenttweaker:robot_arm>, null, <contenttweaker:robot_arm>], 
-		[<engineersdecor:small_tree_cutter>, <twilightforest:uberous_soil>, <engineersdecor:factory_placer>], 
+		[<engineersdecor:small_tree_cutter>, <twilightforest:uberous_soil>, <actuallyadditions:block_farmer>], 
 		[<contenttweaker:plant_sample>, <bonsaitrees:bonsaipot:1>, <contenttweaker:plant_sample>]
 	]);
 }

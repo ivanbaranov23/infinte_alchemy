@@ -121,6 +121,17 @@
         [<contenttweaker:radiotoad_arm>, <contenttweaker:radiotoad_body>, <contenttweaker:radiotoad_arm>], 
         [null, <contenttweaker:radiotoad_legs>, null]
     ]);
+
+    recipes.addShaped("ia_radiotoad_target1", <contenttweaker:radiotoad_target1>, [
+        [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>], 
+        [<contenttweaker:advanced_plating2_3>, <extendedcrafting:singularity:30>, <contenttweaker:advanced_plating2_3>], 
+        [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>]
+    ]);
+    recipes.addShaped("ia_radiotoad_target2", <contenttweaker:radiotoad_target2>, [
+        [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>], 
+        [<contenttweaker:advanced_plating2_3>, <extendedcrafting:singularity>, <contenttweaker:advanced_plating2_3>], 
+        [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>]
+    ]);
 }
 
 {//lavaboat
@@ -154,12 +165,57 @@
 }
 
 {//skyfinder
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:advanced_plating5_1>, 
+        [<contenttweaker:arkenium_plate>, <aether_legacy:zanite_gemstone> * 4, <contenttweaker:perovskite_plate>], 
+        150000
+    );
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:advanced_plating5_2> * 4, <contenttweaker:dirty_biocell>], [
+            <contenttweaker:advanced_plating5_1> * 4,
+            <contenttweaker:skymass1>
+        ], <liquid:gravitite> * 576, 20, 10000
+    );
+    mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:advanced_plating5_4>, <contenttweaker:advanced_plating5_2> * 4, 15000);
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:advanced_plating5_5>, 
+        [<contenttweaker:advanced_plating5_4> * 4, <taiga:adamant_ingot> * 12, <tconevo:metal:40> * 24], 
+        1500000
+    );
+
     
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:skyfinder_leg>], [
+            <contenttweaker:advanced_plating5_5>,
+            <contenttweaker:rocket_engine>,
+            <enderio:item_capacitor_melodic>
+        ], null, 20, 10000
+    );
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:skyfinder_head>], [
+            <contenttweaker:advanced_plating5_5>,
+            <contenttweaker:laser>,
+            <enderio:item_capacitor_melodic>
+        ], null, 20, 10000
+    );
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:skyfinder_body>], [
+            <contenttweaker:advanced_plating5_5>,
+            <contenttweaker:advanced_plating5_4>,
+            <enderio:item_capacitor_melodic>
+        ], null, 20, 10000
+    );
+
     recipes.addShaped("ia_skyfinder_mech", <contenttweaker:skyfinder_mech>, [
         [null, <contenttweaker:skyfinder_head>, null], 
         [<contenttweaker:skyfinder_leg>, <contenttweaker:skyfinder_body>, <contenttweaker:skyfinder_leg>], 
         [<contenttweaker:skyfinder_leg>, null, <contenttweaker:skyfinder_leg>]
     ]);
+
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:skyfinder_target_zanite>], [
+            <contenttweaker:advanced_plating5_5>,
+            <aether_legacy:zanite_gemstone> * 16
+        ], null, 20, 10000
+    );
 }
 
 {//robodruid

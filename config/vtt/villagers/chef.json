@@ -1,0 +1,10 @@
+{
+    "profession": {
+        "name": "ia:chef_villager",
+        "texture": "contenttweaker:textures/entities/chef_villager.png",
+        "zombieTexture": "contenttweaker:textures/entities/chef_zombie_villager.png"
+    },
+    "careers": [
+        "ia:chef"
+    ]
+}

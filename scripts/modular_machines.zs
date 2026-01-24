@@ -10,31 +10,34 @@ static gears as IItemStack[] = [
     <thermalfoundation:material:291>,       //0
     <thermalfoundation:material:291>,       //1
     <contenttweaker:duraluminum_gear>,      //2
+    <thermalfoundation:material:295>,
     <contenttweaker:mekanized_steel_gear>,  //3
     <enderio:item_material:73>,             //4
     <tconevo:metal:29>,                     //5
     <moreplates:awakened_draconium_gear>,   //6
-    <moreplates:neutronium_gear>            //7
+    //<moreplates:neutronium_gear>            //7
 ];
 static sides as IItemStack[] = [
     null,       //0
     null,       //1
     <contenttweaker:basic_modularium>,      //2
+    <thermalfoundation:material:515>,
     <mekanism:controlcircuit:3>,            //3
     <enderio:item_material:18>,             //4
     <bloodmagic:component:27>,              //5
     <astralsorcery:itemcoloredlens:6>,      //6
-    <draconicevolution:awakened_core>       //7
+    //<draconicevolution:awakened_core>       //7
 ];
 static corners as IItemStack[] = [
     null,       //0
     null,       //1
     null,       //2
+    <contenttweaker:basic_modularium>,
     <contenttweaker:basic_modularium>,  //3
-    <contenttweaker:basic_modularium>,  //4
+    <modularmachinery:itemmodularium>,  //4
     <modularmachinery:itemmodularium>,  //5
-    <modularmachinery:itemmodularium>,  //6
-    <extendedcrafting:material:32>      //7
+    <extendedcrafting:material:32>,  //6
+    //<extendedcrafting:material:32>      //7
 ];
 function addMMPartRecipe(lvl as int, inp as IItemStack, out as IItemStack, cat as IItemStack, flip as bool){
     if (flip){
@@ -76,66 +79,62 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
 
 
 //hatches
-/*recipes.addShaped("mm_item_input_small",
-    <modularmachinery:blockinputbus:1>,
-    [[<tconstruct:wooden_hopper>], [<modularmachinery:blockcasing>], [<ore:gearBronze>]]
-);*/
 {
     //this is awful
     //item input 
     addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockinputbus:1>, <tconstruct:wooden_hopper>, false);
     addMMPartRecipe(2, <modularmachinery:blockinputbus:1>, <modularmachinery:blockinputbus:2>, <minecraft:hopper>, false);
     addMMPartRecipe(3, <modularmachinery:blockinputbus:2>, <modularmachinery:blockinputbus:3>, <mob_grinding_utils:absorption_hopper>, false);
-    addMMPartRecipe(4, <modularmachinery:blockinputbus:3>, <modularmachinery:blockinputbus:4>, <enderio:block_impulse_hopper>, false);
-    addMMPartRecipe(6, <modularmachinery:blockinputbus:4>, <modularmachinery:blockinputbus:5>, <botania:specialflower>.withTag({type: "hopperhock"}), false);
-    addMMPartRecipe(7, <modularmachinery:blockinputbus:5>, <modularmachinery:blockinputbus:6>, <draconicevolution:draconium_chest>, false);
+    addMMPartRecipe(4, <modularmachinery:blockinputbus:3>, <modularmachinery:blockinputbus:4>, <thermalfoundation:upgrade>, false);
+    addMMPartRecipe(6, <modularmachinery:blockinputbus:4>, <modularmachinery:blockinputbus:5>, <enderio:block_impulse_hopper>, false);
+    addMMPartRecipe(7, <modularmachinery:blockinputbus:5>, <modularmachinery:blockinputbus:6>, <botania:specialflower>.withTag({type: "hopperhock"}), false);
 
     //item output 
     addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockoutputbus:1>, <tconstruct:wooden_hopper>, true);
     addMMPartRecipe(2, <modularmachinery:blockoutputbus:1>, <modularmachinery:blockoutputbus:2>, <minecraft:hopper>, true);
     addMMPartRecipe(3, <modularmachinery:blockoutputbus:2>, <modularmachinery:blockoutputbus:3>, <mob_grinding_utils:absorption_hopper>, true);
-    addMMPartRecipe(4, <modularmachinery:blockoutputbus:3>, <modularmachinery:blockoutputbus:4>, <enderio:block_impulse_hopper>, true);
-    addMMPartRecipe(6, <modularmachinery:blockoutputbus:4>, <modularmachinery:blockoutputbus:5>, <botania:specialflower>.withTag({type: "hopperhock"}), true);
-    addMMPartRecipe(7, <modularmachinery:blockoutputbus:5>, <modularmachinery:blockoutputbus:6>, <draconicevolution:draconium_chest>, true);    
+    addMMPartRecipe(4, <modularmachinery:blockoutputbus:3>, <modularmachinery:blockoutputbus:4>, <thermalfoundation:upgrade>, true);
+    addMMPartRecipe(6, <modularmachinery:blockoutputbus:4>, <modularmachinery:blockoutputbus:5>, <enderio:block_impulse_hopper>, true);
+    addMMPartRecipe(7, <modularmachinery:blockoutputbus:5>, <modularmachinery:blockoutputbus:6>, <botania:specialflower>.withTag({type: "hopperhock"}), true);    
 
 
     //fluid input 
     addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockfluidinputhatch:1>, <erebus:bambucket>.withTag({}), false);
     addMMPartRecipe(2, <modularmachinery:blockfluidinputhatch:1>, <modularmachinery:blockfluidinputhatch:2>, <minecraft:bucket>, false);
     addMMPartRecipe(3, <modularmachinery:blockfluidinputhatch:2>, <modularmachinery:blockfluidinputhatch:3>, <fluiddrawers:tank>, false);
-    addMMPartRecipe(4, <modularmachinery:blockfluidinputhatch:3>, <modularmachinery:blockfluidinputhatch:4>, <enderio:block_tank>, false);
-    addMMPartRecipe(5, <modularmachinery:blockfluidinputhatch:4>, <modularmachinery:blockfluidinputhatch:5>, <bloodmagic:blood_tank:2>, false);
-    addMMPartRecipe(6, <modularmachinery:blockfluidinputhatch:5>, <modularmachinery:blockfluidinputhatch:6>, <astralsorcery:blockwell>, false);
-    addMMPartRecipe(7, <modularmachinery:blockfluidinputhatch:6>, <modularmachinery:blockfluidinputhatch:7>, <alchemistry:xenon_light>, false);
+    addMMPartRecipe(4, <modularmachinery:blockfluidinputhatch:3>, <modularmachinery:blockfluidinputhatch:4>, <enderio:block_tank:1>, false);
+    addMMPartRecipe(5, <modularmachinery:blockfluidinputhatch:4>, <modularmachinery:blockfluidinputhatch:5>, <thermalfoundation:material:512>, false);
+    addMMPartRecipe(6, <modularmachinery:blockfluidinputhatch:5>, <modularmachinery:blockfluidinputhatch:6>, <bloodmagic:blood_tank:2>, false);
+    addMMPartRecipe(7, <modularmachinery:blockfluidinputhatch:6>, <modularmachinery:blockfluidinputhatch:7>, <astralsorcery:blockwell>, false);
 
     //fluid output 
     addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockfluidoutputhatch:1>, <erebus:bambucket>.withTag({}), true);
     addMMPartRecipe(2, <modularmachinery:blockfluidoutputhatch:1>, <modularmachinery:blockfluidoutputhatch:2>, <minecraft:bucket>, true);
     addMMPartRecipe(3, <modularmachinery:blockfluidoutputhatch:2>, <modularmachinery:blockfluidoutputhatch:3>, <fluiddrawers:tank>, true);
-    addMMPartRecipe(4, <modularmachinery:blockfluidoutputhatch:3>, <modularmachinery:blockfluidoutputhatch:4>, <enderio:block_tank>, true);
-    addMMPartRecipe(5, <modularmachinery:blockfluidoutputhatch:4>, <modularmachinery:blockfluidoutputhatch:5>, <bloodmagic:blood_tank:2>, true);
-    addMMPartRecipe(6, <modularmachinery:blockfluidoutputhatch:5>, <modularmachinery:blockfluidoutputhatch:6>, <astralsorcery:blockwell>, true);
-    addMMPartRecipe(7, <modularmachinery:blockfluidoutputhatch:6>, <modularmachinery:blockfluidoutputhatch:7>, <alchemistry:xenon_light>, true);
+    addMMPartRecipe(4, <modularmachinery:blockfluidoutputhatch:3>, <modularmachinery:blockfluidoutputhatch:4>, <enderio:block_tank:1>, true);
+    addMMPartRecipe(5, <modularmachinery:blockfluidoutputhatch:4>, <modularmachinery:blockfluidoutputhatch:5>, <thermalfoundation:material:512>, true);
+    addMMPartRecipe(6, <modularmachinery:blockfluidoutputhatch:5>, <modularmachinery:blockfluidoutputhatch:6>, <bloodmagic:blood_tank:2>, true);
+    addMMPartRecipe(7, <modularmachinery:blockfluidoutputhatch:6>, <modularmachinery:blockfluidoutputhatch:7>, <astralsorcery:blockwell>, true);
 
 
     //energy input
     //addMMPartRecipe(0, <modularmachinery:blockcasing>, <modularmachinery:blockenergyinputhatch:0>, <erebus:bambucket>.withTag({}), false);
     addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockenergyinputhatch:1>, <immersiveengineering:metal_decoration0>, false);
     addMMPartRecipe(2, <modularmachinery:blockenergyinputhatch:1>, <modularmachinery:blockenergyinputhatch:2>, <immersiveengineering:metal_device0:2>, false);
-    addMMPartRecipe(3, <modularmachinery:blockenergyinputhatch:2>, <modularmachinery:blockenergyinputhatch:3>, <mekanism:energycube>.withTag({tier: 0}), false);
-    addMMPartRecipe(4, <modularmachinery:blockenergyinputhatch:3>, <modularmachinery:blockenergyinputhatch:4>, <enderio:block_cap_bank:2>, false);
-    addMMPartRecipe(5, <modularmachinery:blockenergyinputhatch:4>, <modularmachinery:blockenergyinputhatch:5>, <botania:manavoid>, false);
-    addMMPartRecipe(6, <modularmachinery:blockenergyinputhatch:5>, <modularmachinery:blockenergyinputhatch:6>, <draconicevolution:draconium_capacitor:1>, false);
-    addMMPartRecipe(7, <modularmachinery:blockenergyinputhatch:6>, <modularmachinery:blockenergyinputhatch:7>, <draconicevolution:chaos_shard>, false);
+    addMMPartRecipe(3, <modularmachinery:blockenergyinputhatch:2>, <modularmachinery:blockenergyinputhatch:3>, <thermalexpansion:capacitor>, false);
+    addMMPartRecipe(4, <modularmachinery:blockenergyinputhatch:3>, <modularmachinery:blockenergyinputhatch:4>, <mekanism:energycube>.withTag({tier: 0}), false);
+    addMMPartRecipe(5, <modularmachinery:blockenergyinputhatch:4>, <modularmachinery:blockenergyinputhatch:5>, <enderio:block_cap_bank:2>, false);
+    addMMPartRecipe(6, <modularmachinery:blockenergyinputhatch:5>, <modularmachinery:blockenergyinputhatch:6>, <botania:manavoid>, false);
+    addMMPartRecipe(7, <modularmachinery:blockenergyinputhatch:6>, <modularmachinery:blockenergyinputhatch:7>, <draconicevolution:draconium_capacitor:1>, false);
 
     //energy output 
     addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockenergyoutputhatch:1>, <immersiveengineering:metal_decoration0>, true);
     addMMPartRecipe(2, <modularmachinery:blockenergyoutputhatch:1>, <modularmachinery:blockenergyoutputhatch:2>, <immersiveengineering:metal_device0:2>, true);
-    addMMPartRecipe(3, <modularmachinery:blockenergyoutputhatch:2>, <modularmachinery:blockenergyoutputhatch:3>, <mekanism:energycube>.withTag({tier: 0}), true);
-    addMMPartRecipe(4, <modularmachinery:blockenergyoutputhatch:3>, <modularmachinery:blockenergyoutputhatch:4>, <enderio:block_cap_bank:2>, true);
-    addMMPartRecipe(5, <modularmachinery:blockenergyoutputhatch:4>, <modularmachinery:blockenergyoutputhatch:5>, <botania:manavoid>, true);
-    addMMPartRecipe(6, <modularmachinery:blockenergyoutputhatch:5>, <modularmachinery:blockenergyoutputhatch:6>, <draconicevolution:draconium_capacitor:1>, true);
-    addMMPartRecipe(7, <modularmachinery:blockenergyoutputhatch:6>, <modularmachinery:blockenergyoutputhatch:7>, <draconicevolution:chaos_shard>, true);
+    addMMPartRecipe(3, <modularmachinery:blockenergyoutputhatch:2>, <modularmachinery:blockenergyoutputhatch:3>, <thermalexpansion:capacitor>, true);
+    addMMPartRecipe(4, <modularmachinery:blockenergyoutputhatch:3>, <modularmachinery:blockenergyoutputhatch:4>, <mekanism:energycube>.withTag({tier: 0}), true);
+    addMMPartRecipe(5, <modularmachinery:blockenergyoutputhatch:4>, <modularmachinery:blockenergyoutputhatch:5>, <enderio:block_cap_bank:2>, true);
+    addMMPartRecipe(6, <modularmachinery:blockenergyoutputhatch:5>, <modularmachinery:blockenergyoutputhatch:6>, <botania:manavoid>, true);
+    addMMPartRecipe(7, <modularmachinery:blockenergyoutputhatch:6>, <modularmachinery:blockenergyoutputhatch:7>, <draconicevolution:draconium_capacitor:1>, true);
 
 }
 

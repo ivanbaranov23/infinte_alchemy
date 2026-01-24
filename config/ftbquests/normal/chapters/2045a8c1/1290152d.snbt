@@ -9,9 +9,7 @@
 		"",
 		"2) N-seated [Transporter]",
 		"",
-		"3) N [Mission]s",
-		"",
-		"4) 25MJ of Mekanism Laser"
+		"3) N [Mission]s"
 	],
 	dependencies: [
 		"9e3c5f9d"

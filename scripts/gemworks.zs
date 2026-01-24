@@ -171,6 +171,15 @@ recipes.addShaped("ia_terrestrial_artifact", <biomesoplenty:terrestrial_artifact
 	[<projectred-core:resource_item:201>, <extrautils2:decorativesolid:8>, <contenttweaker:delicate_malachite>]
 ]);
 
+
+mods.thermalexpansion.InductionSmelter.addRecipe(
+    <moretcon:gemvoidspar>, 
+    <enderio:item_material:75>, <caves_n_cliffs:amethyst_cluster_single> * 4, 
+    100000
+);
+
+
+
 <enderio:item_material:14>.displayName = "Vivid Crystal";
 recipes.remove(<enderio:item_material:14>);
 mods.tconstruct.Casting.removeTableRecipe(<enderio:item_material:14>);

@@ -7,7 +7,9 @@ minecraft:nitwit
 openblocks:radio
 ia:aether_villager
 ia:atum_villager
+ia:blood_villager
 ia:bonsai_villager
+ia:chef_villager
 ia:erebus_villager
 vtt:brewer
 vtt:redstoner

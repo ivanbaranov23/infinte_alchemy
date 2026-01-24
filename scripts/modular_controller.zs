@@ -248,8 +248,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:satellite_lau
 	[<contenttweaker:satellite_plating>, <contenttweaker:explosion_resistant_plate>, <modularmachinery:pworld_oregen_controller>, <contenttweaker:explosion_resistant_plate>, <contenttweaker:satellite_plating>], 
 	[<contenttweaker:satellite_plating>, <contenttweaker:satellite_plating>, <contenttweaker:satellite_chip>, <contenttweaker:satellite_plating>, <contenttweaker:satellite_plating>]
 ]);
-{
-	var rec = RecipeBuilder.newBuilder("satellite_assembler_drone", "satellite_launch_pad", 2000);
+{var rec = RecipeBuilder.newBuilder("satellite_assembler_drone", "satellite_launch_pad", 2000);
 	rec.addEnergyPerTickInput(1000000);
 
 	rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));

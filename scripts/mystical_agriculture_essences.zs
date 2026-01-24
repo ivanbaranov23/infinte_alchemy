@@ -206,10 +206,17 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
 
     //menril
     mods.thermalexpansion.Crucible.addRecipe(<liquid:menrilresin> * 500, <mysticalagriculture:menril_essence>, 2000);
+
+    //limestone
+    infuser.addRecipe("FUNGI", 5, <mysticalagriculture:limestone_essence>, <quark:limestone> * 4);
+    addEssenceRec_plus(<mysticalagriculture:limestone_essence>, <atum:sand> * 24, <deepmoblearning:living_matter_atum>);
+    //sky stone
+    infuser.addRecipe("FUNGI", 5, <mysticalagriculture:sky_stone_essence>, <appliedenergistics2:material:45> * 6);
+    addEssenceRec_plus(<mysticalagriculture:sky_stone_essence>, <appliedenergistics2:sky_stone_block> * 16, <deepmoblearning:living_matter_overworldian>);
 }
 {//2
     infuser.addRecipe("FUNGI", 10, <mysticalagriculture:silicon_essence>, <appliedenergistics2:material:5> * 2);
-    addEssenceRec_plus(<mysticalagriculture:silicon_essence>, <atum:khnumite> * 4, <deepmoblearning:living_matter_atum>);
+    addEssenceRec_plus(<mysticalagriculture:silicon_essence>, <atum:khnumite> * 8, <deepmoblearning:living_matter_atum>);
     
 }
 

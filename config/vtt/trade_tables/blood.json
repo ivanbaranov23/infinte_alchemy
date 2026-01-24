@@ -1,0 +1,113 @@
+{
+    "Profession": "ia:blood_villager",
+    "Career": "ia:blood",
+    "Offers": {
+        "Recipes": [
+            {
+                "action": "add",
+                "CareerLevel": 1,
+                "buyB": {
+                    "id": "contenttweaker:bismuth_bronze_ingot",
+                    "Count": {
+                        "min": 8,
+                        "max": 12
+                    }
+                },
+                "buy": {
+                    "id": "extendedcrafting:singularity_custom",
+                    "Count": 1,
+                    "Damage": 9
+                },
+                "sell": {
+                    "id": "minecraft:spawn_egg",
+                    "Count": 1,
+                    "Damage": 0,
+                    "tag": {
+                        "EntityTag": {
+                            "id": "gloppy:meat_man_1"
+                        }
+                    }
+                }
+            },
+            {
+                "action": "add",
+                "CareerLevel": 1,
+                "buyB": {
+                    "id": "bloodtinker:blood_bronze_ingot",
+                    "Count": {
+                        "min": 8,
+                        "max": 12
+                    }
+                },
+                "buy": {
+                    "id": "extendedcrafting:singularity_custom",
+                    "Count": 2,
+                    "Damage": 9
+                },
+                "sell": {
+                    "id": "minecraft:spawn_egg",
+                    "Count": 1,
+                    "Damage": 0,
+                    "tag": {
+                        "EntityTag": {
+                            "id": "gloppy:meat_man_2"
+                        }
+                    }
+                }
+            },
+            {
+                "action": "add",
+                "CareerLevel": 1,
+                "buyB": {
+                    "id": "tconevo:metal",
+                    "Count": {
+                        "min": 8,
+                        "max": 12
+                    },
+                    "Damage": 25
+                },
+                "buy": {
+                    "id": "extendedcrafting:singularity_custom",
+                    "Count": 3,
+                    "Damage": 9
+                },
+                "sell": {
+                    "id": "minecraft:spawn_egg",
+                    "Count": 1,
+                    "Damage": 0,
+                    "tag": {
+                        "EntityTag": {
+                            "id": "gloppy:meat_man_3"
+                        }
+                    }
+                }
+            },
+            {
+                "action": "add",
+                "CareerLevel": 1,
+                "buyB": {
+                    "id": "contenttweaker:crystal_metal_ingot",
+                    "Count": {
+                        "min": 8,
+                        "max": 12
+                    }
+                },
+                "buy": {
+                    "id": "extendedcrafting:singularity_custom",
+                    "Count": 4,
+                    "Damage": 9
+                },
+                "sell": {
+                    "id": "minecraft:spawn_egg",
+                    "Count": 1,
+                    "Damage": 0,
+                    "tag": {
+                        "EntityTag": {
+                            "id": "gloppy:meat_man_4"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

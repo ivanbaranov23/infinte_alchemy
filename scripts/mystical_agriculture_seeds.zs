@@ -92,8 +92,15 @@ var seed_items as IItemStack[][IItemStack][int] = {
             <mysticalagriculture:nature_essence> * 64,
             <contenttweaker:menril_steel_ingot> * 256,
             <integrateddynamics:crystalized_menril_block> * 256
-        ]
+        ],
 
+        <mysticalagriculture:limestone_seeds>: [
+            <mysticalagriculture:stone_essence> * 64,
+            <atum:limestone> * 256,
+            <quark:limestone> * 256,
+            <chisel:limestone2:7> * 256,
+            <contenttweaker:relic_ingot> * 64
+        ]
     },
     2: {
         <mysticalagriculture:iron_seeds>: [<extendedcrafting:singularity:1> * 4, <harvestcraft:ironbrewitem> * 16],

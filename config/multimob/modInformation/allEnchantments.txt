@@ -41,10 +41,10 @@ projectred-expansion:electric_efficiency
 endercore:xpboost
 endercore:autosmelt
 enderio:soulbound
-enderio:witherweapon
-enderio:witherarrow
 enderio:repellent
 enderio:shimmer
+enderio:witherweapon
+enderio:witherarrow
 exnihilocreatio:sieve_efficiency
 exnihilocreatio:sieve_fortune
 exnihilocreatio:sieve_luck_of_the_sea

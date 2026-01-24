@@ -55,6 +55,9 @@ addSeeds(<mysticalagriculture:nether_essence>, <mysticalagriculture:nether_seeds
 
 addSeeds(<mysticalagriculture:menril_essence>, <mysticalagriculture:menril_seeds>, 1);
 
+addSeeds(<mysticalagriculture:limestone_essence>, <mysticalagriculture:limestone_seeds>, 1);
+addSeeds(<mysticalagriculture:sky_stone_essence>, <mysticalagriculture:sky_stone_seeds>, 1);
+
 //t1 metals
 addSeeds(<mysticalagriculture:iron_essence>, <mysticalagriculture:iron_seeds>, 2);
 addSeeds(<mysticalagriculture:copper_essence>, <mysticalagriculture:copper_seeds>, 2);

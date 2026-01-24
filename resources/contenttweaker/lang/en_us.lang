@@ -312,8 +312,6 @@ item.contenttweaker.weather_chrome_mesh.name=Weather Chrome Semi-Living Mesh
 
 item.contenttweaker.filter_empty.name=Fluid Filter Frame
 item.contenttweaker.filter_charcoal.name=Charcoal Fluid Filter
-    VanillaFactory.createItem("filter_solar").register();
-    VanillaFactory.createItem("filter_blood").register();
 
 item.contenttweaker.medical_alloy_ingot.name=Medical Alloy Ingot
 item.contenttweaker.medical_alloy_plate.name=Medical Alloy Plate
@@ -1082,7 +1080,7 @@ fluid.evil_blood=Evil Blood
 item.contenttweaker.sandy_spice.name=Sandy Spice
 item.contenttweaker.chewed_meat.name=Chewed Meat
 item.contenttweaker.ancient_sandstone.name=Ancient Sandstone
-    VanillaFactory.createItem("fear").register();
+
     
 item.contenttweaker.gemmed_spice.name=Gemmed Spice
 item.contenttweaker.wormweave.name=Wormweave
@@ -1247,8 +1245,7 @@ item.contenttweaker.satellite_plating_base2.name=Secure Plating
 item.contenttweaker.satellite_plating.name=Satellite Plating
 
 item.contenttweaker.satellite1.name=Basic Satellite
-        VanillaFactory.createItem("satellite2").register();
-        VanillaFactory.createItem("satellite3").register();
+
 
 item.contenttweaker.satellite_chip.name=Satellite Memory Chip
 item.contenttweaker.satellite_computer.name=Satellite Controller Computer
@@ -1293,7 +1290,6 @@ item.contenttweaker.research_bacteria1.name=How To Grow Bacteria
 
 item.contenttweaker.research_heat.name=How To Transfer Heat
 
-        VanillaFactory.createItem("research_luck").register();
 
 
 item.contenttweaker.uu_base1.name=UU Metal Base 1
@@ -1407,9 +1403,6 @@ fluid.essence_slurp=Inferium Slurp
 tile.contenttweaker.essence_pump1.name=Inferium Essence Pump
 tile.contenttweaker.essence_pump2.name=Prudentium Essence Pump
 tile.contenttweaker.essence_pump3.name=Intermedium Essence Pump
-    VanillaFactory.createBlock("essence_pump4", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("essence_pump5", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("essence_pump6", <blockmaterial:rock>).register();
 
 fluid.fish_oil=Fish Oil
 
@@ -2591,3 +2584,27 @@ item.contenttweaker.sodium_bicarbonate.name=Sodium Bicarbonate
 item.contenttweaker.baking_soda.name=Baking Powder
 
 gas.potassium_bitartrate=Potassium Bitartrate
+
+entity.Villager.ia:chef=Chef
+entity.Villager.ia:blood=Meat Man Merchant
+
+item.contenttweaker.plant_unit.name=Planting Unit
+
+item.contenttweaker.filter_solar.name=Solar Filter
+item.contenttweaker.filter_blood.name=Blood Filter
+
+item.contenttweaker.entangled_matter_a.name=Entangled Matter
+item.contenttweaker.entangled_matter_b.name=Entangled Matter
+
+tile.contenttweaker.tantalite_ore.name=Tantalite Ore
+
+item.contenttweaker.strontium_dust.name=Strontium Dust
+tile.contenttweaker.strontium_block.name=Block of Strontium
+
+item.contenttweaker.worm_feed2.name=Advanced Worm Feed
+
+tile.contenttweaker.flower_glass.name=Floral Glass
+
+gas.tar_gas=Tar Gas
+
+fluid.nickel_yogurt=Nickel Yogurt

@@ -5,7 +5,8 @@
 		"An early option for pipes"
 	],
 	dependencies: [
-		"b6bb720f"
+		"b6bb720f",
+		"f7752d23"
 	],
 	optional: true,
 	tasks: [{

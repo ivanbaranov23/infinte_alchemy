@@ -1485,6 +1485,7 @@ function add_mech_part(name as string){
 
         VanillaFactory.createItem("radiotoad_target1").register();
         VanillaFactory.createItem("radiotoad_target2").register();
+        VanillaFactory.createItem("radiotoad_target3").register();
 
         VanillaFactory.createItem("nether_boat_plating").register();
 
@@ -1519,17 +1520,20 @@ function add_mech_part(name as string){
         VanillaFactory.createItem("advanced_plating4_3").register();
         VanillaFactory.createItem("advanced_plating4_4").register();
 
-        VanillaFactory.createItem("advanced_plating5_1").register();
-        VanillaFactory.createItem("advanced_plating5_2").register();
-        VanillaFactory.createItem("advanced_plating5_3").register();
-        VanillaFactory.createItem("advanced_plating5_4").register();
-        VanillaFactory.createItem("advanced_plating5_5").register();
-
         VanillaFactory.createItem("bloodhunter_target_blood").register();
         VanillaFactory.createItem("bloodhunter_target_slate").register();
         VanillaFactory.createItem("bloodhunter_target_fairy").register();
         VanillaFactory.createItem("bloodhunter_target_wither").register();
         VanillaFactory.createItem("bloodhunter_target_mana").register();
+
+        VanillaFactory.createItem("advanced_plating5_1").register();
+        VanillaFactory.createItem("advanced_plating5_2").register();
+        //VanillaFactory.createItem("advanced_plating5_3").register();
+        VanillaFactory.createItem("advanced_plating5_4").register();
+        VanillaFactory.createItem("advanced_plating5_5").register();
+
+        VanillaFactory.createItem("skyfinder_target_zanite").register();
+        
 
         VanillaFactory.createItem("mute_eye").register();
         VanillaFactory.createItem("eye").register();
@@ -2427,6 +2431,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     addWater("claymud");
     addWater("chocolate_mud");
     VanillaFactory.createFluid("taiga_fluid", Color.fromHex("395a39")).register();
+    VanillaFactory.createFluid("nickel_yogurt", Color.fromHex("d2c38e")).register();
+    
+    
     addWater("slimebone_erebus");
 
     VanillaFactory.createItem("bug_essence").register();
@@ -3252,8 +3259,13 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("proton").register();
     VanillaFactory.createItem("anti_proton").register();
     VanillaFactory.createItem("neutron").register();
+    VanillaFactory.createItem("alpha_particle").register();
+    
     VanillaFactory.createItem("deathon").register();
     VanillaFactory.createItem("manathon").register();
+    VanillaFactory.createItem("draconic_particle").register();
+
+
 
     VanillaFactory.createItem("positronium").register();
 
@@ -3370,6 +3382,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
 {//inf line
     VanillaFactory.createBlock("galastem", <blockmaterial:rock>).register();
+
+    addItem("infline_seed1", "rare", 64);
+    addItem("infline_seed2", "rare", 64);
+    addItem("infline_seed3", "rare", 64);
+    addItem("infline_seed4", "rare", 64);
 }
 {//endgame
     VanillaFactory.createBlock("portal", <blockmaterial:rock>).register();

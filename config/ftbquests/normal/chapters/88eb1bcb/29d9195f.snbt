@@ -1,0 +1,15 @@
+{
+	x: -4.0d,
+	y: -1.0d,
+	dependencies: [
+		"7ee7dc77"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3f61f9b8",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:seed_reprocessor"
+		}]
+	}]
+}

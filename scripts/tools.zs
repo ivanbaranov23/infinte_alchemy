@@ -466,7 +466,10 @@ recipes.addShapeless("ia_tic_hammer", <tcomplement:sledge_hammer>.withTag({Stats
 
 recipes.remove(<extrautils2:lawsword>);
 recipes.addShaped("ia_kikoku", <extrautils2:lawsword>, [
-    [<extrautils2:opinium:8>],
-    [<extrautils2:opinium:8> | <contenttweaker:kikeridan_plate>],
+    [<extrautils2:opinium:8> | <contenttweaker:kikeridan_ingot>],
+    [<extrautils2:opinium:8> | <contenttweaker:kikeridan_ingot>],
     [<enderio:item_material:71>]
 ]);
+scripts.content_machines.addAssemblerRecipe(
+    [<extrautils2:lawsword> * 2], [<contenttweaker:kikeridan_ingot>, <enderio:item_material:71>], null, 20, 10000
+);

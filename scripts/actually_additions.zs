@@ -233,12 +233,21 @@ recipes.addShaped("ia_block_item_repairer", <actuallyadditions:block_item_repair
 	[<moreplates:draconium_plate>|<tconevo:metal:43>|<thermalexpansion:augment:401>, <thermalexpansion:machine:9>, <moreplates:draconium_plate>|<tconevo:metal:43>|<thermalexpansion:augment:401>]
 ]);
 
+
+
 recipes.remove(<actuallyadditions:block_bio_reactor>);
 recipes.addShaped("ia_block_bio_reactor", <actuallyadditions:block_bio_reactor>, [
 	[<contenttweaker:gold_coil>, <mysticalcreations:bilim_essence>, <contenttweaker:gold_coil>], 
 	[<mysticalcreations:bilim_essence>, <contenttweaker:potato_block2>, <mysticalcreations:bilim_essence>], 
 	[<contenttweaker:gold_coil>, <mysticalcreations:bilim_essence>, <contenttweaker:gold_coil>]
 ]);
+recipes.remove(<actuallyadditions:block_farmer>);
+recipes.addShaped("ia_block_farmer", <actuallyadditions:block_farmer>, [
+	[<moreplates:electrical_steel_plate>, <extendedcrafting:singularity_custom:100>, <moreplates:electrical_steel_plate>], 
+	[<immersiveengineering:hoe_steel>.anyDamage().noReturn(), <thermalexpansion:frame:64>, <immersiveengineering:hoe_steel>.anyDamage().noReturn()], 
+	[<moreplates:electrical_steel_plate>, <actuallyadditions:item_hoe_obsidian>.anyDamage().noReturn(), <moreplates:electrical_steel_plate>]
+]);
+
 
 //blocks
 recipes.remove(<actuallyadditions:block_misc:4>);
