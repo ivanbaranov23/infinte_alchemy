@@ -1,0 +1,19 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "b028db3a",
+		type: "item",
+		items: [{
+			item: "moretcon:gemetherstone"
+		}]
+	}],
+	rewards: [{
+		uid: "fc0a493e",
+		type: "item",
+		item: "moretcon:blocketherstone"
+	}]
+}

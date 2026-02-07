@@ -49,7 +49,11 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
 {//N
     addFluidConv(<alchemistry:compound:209>, <liquid:ammonia>);
     addFluidConv(<alchemistry:compound:212>, <liquid:nitric_acid>);
-    
+
+    Combiner.addRecipe(<contenttweaker:ammonium_chloride>, [
+        <alchemistry:compound:209>, <alchemistry:compound:203>
+    ]);
+    <contenttweaker:ammonium_chloride>.addTooltip("NH₄Cl");
 }
 
 {//chlorosulfonic
@@ -65,8 +69,23 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
 addFluidConv(<alchemistry:compound:34>, <liquid:methane>);
 addFluidConv(<alchemistry:compound:39>, <liquid:hexane>);
 addFluidConv(<alchemistry:compound:205>, <liquid:liquidethene>);
-addFluidConv(<alchemistry:compound:214>, <liquid:formic_acid>);
+
+{//formic
+    addFluidConv(<alchemistry:compound:214>, <liquid:formic_acid>);
+    Combiner.addRecipe(<contenttweaker:ammonium_formate>, [
+        <alchemistry:compound:214>, <alchemistry:compound:209>
+    ]);
+
+    Dissolver.addRecipe(<contenttweaker:ammonium_formate>, false, 1,
+        [
+            [100, <contenttweaker:formamide>, <alchemistry:compound:7>]
+        ]
+    );
+}
+
 addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
+
+addFluidConv(<contenttweaker:tartaric_acid>, <liquid:tartaric_acid>);
 
 addItemConv(<contenttweaker:starch>, <alchemistry:compound:19>, 8);
 addItemConv(<contenttweaker:sodium_bicarbonate>, <alchemistry:compound:220>, 8);
@@ -162,6 +181,12 @@ addItemConv(<contenttweaker:sodium_bicarbonate>, <alchemistry:compound:220>, 8);
         [<contenttweaker:benzene>, <contenttweaker:xylene>],
         [<contenttweaker:toluene> * 2],
         [<contenttweaker:zeolite>]
+    );
+
+    addChemicalRecipe(
+        [<contenttweaker:phthalic_anhydride>, <alchemistry:compound:7> * 3],
+        [<contenttweaker:xylene>, <alchemistry:element:8> * 6],
+        []
     );
 }
 {//₀₁₂₃₄₅₆₇₈₉
@@ -291,6 +316,32 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         [<contenttweaker:acetone>, <contenttweaker:ac2o>],
         []
     );
+
+    //acetaldehyde
+    addChemicalRecipe(
+        [<contenttweaker:acetaldehyde>],
+        [<alchemistry:compound:26>, <alchemistry:element:8>],
+        [<extendedcrafting:singularity:22>]
+    );
+}
+{//hydrogen peroxide
+    
+
+    addChemicalRecipe(
+        [<contenttweaker:ethylantraquinone>, <alchemistry:compound:7> * 1],
+        [<contenttweaker:phthalic_anhydride>, <contenttweaker:ethylbenzene>],
+        []
+    );
+    addChemicalRecipe(
+        [<contenttweaker:ethylantrahydroquinone>],
+        [<contenttweaker:ethylantraquinone>, <alchemistry:element:1> * 2],
+        [<extendedcrafting:singularity_custom:30>]
+    );
+    addChemicalRecipe(
+        [<contenttweaker:ethylantraquinone>, <contenttweaker:h2o2>],
+        [<contenttweaker:ethylantrahydroquinone>, <alchemistry:element:8> * 2],
+        []
+    );
 }
 
 //todo acetone butanol ethanol
@@ -302,6 +353,9 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         []
     );
     <contenttweaker:phli>.addTooltip("PhLi");
+}
+{//sodium
+    addItemConv(<contenttweaker:nacn>, <alchemistry:compound:223>, 8);
 }
 {//phosporous
     addFluidConv(<alchemistry:compound:217>, <liquid:phosphoric_acid>);

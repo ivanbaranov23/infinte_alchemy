@@ -151,7 +151,7 @@ mods.aether_legacy.Freezer.registerFreezable(<contenttweaker:space_ice>, <conten
         ]
     );
     mods.botania.ElvenTrade.addRecipe([<contenttweaker:bastnasite>], [
-        <contenttweaker:manaclay>,
+        <contenttweaker:manaclay>, <moretcon:gemerythynite>,
         <contenttweaker:rare_earth_dust>, <contenttweaker:rare_earth_dust>
     ]);
 

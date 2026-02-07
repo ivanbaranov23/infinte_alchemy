@@ -163,12 +163,25 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["dihydrogen_phosphate", 2]
         ]
     );
-    /*createCompound(223, "potassium_bitartrate", 55, 44, 177,
+    createCompound(223, "sodium_cyanide", 55, 44, 177,
         [
-            ["potassium", 1],
-            ["dihydrogen_phosphate", 2]
+            ["sodium", 1],
+            ["carbon", 1],
+            ["nitrogen", 1]
         ]
-    );*/
+    );
+    createCompound(224, "phosphorus_tribromide", 130, 70, 130,
+        [
+            ["phosphorus", 1],
+            ["bromine", 3]
+        ]
+    );
+    createCompound(225, "carbon_dioxide", 10, 10, 10,
+        [
+            ["carbon", 1],
+            ["oxygen", 2]
+        ]
+    );
 }
 
 {//metals

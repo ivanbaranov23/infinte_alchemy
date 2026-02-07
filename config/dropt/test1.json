@@ -239,7 +239,7 @@
             "match": {
                 "blocks": {"blocks": ["minecraft:cobblestone:0"]},
                 "harvester": {
-                    "heldItemMainHand": {"items" :["roots:living_pickaxe"]}
+                    "heldItemMainHand": {"items" :["roots:living_pickaxe", "roots:terrastone_pickaxe"]}
                 }
             },
             "drops": [
@@ -255,7 +255,7 @@
             "match": {
                 "blocks": {"blocks": ["minecraft:gravel:0"]},
                 "harvester": {
-                    "heldItemMainHand": {"items" :["roots:living_pickaxe"]}
+                    "heldItemMainHand": {"items" :["roots:living_pickaxe", "roots:terrastone_pickaxe"]}
                 }
             },
             "drops": [
@@ -271,7 +271,7 @@
             "match": {
                 "blocks": {"blocks": ["minecraft:sand:0"]},
                 "harvester": {
-                    "heldItemMainHand": {"items" :["roots:living_pickaxe"]}
+                    "heldItemMainHand": {"items" :["roots:living_pickaxe", "roots:terrastone_pickaxe"]}
                 }
             },
             "drops": [

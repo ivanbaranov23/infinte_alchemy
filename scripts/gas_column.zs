@@ -83,7 +83,7 @@ import mods.modularmachinery.RecipeBuilder;
 
 
 {//heavy water
-    var rec = RecipeBuilder.newBuilder("heavy", "gas_column", 100);
+    var rec = RecipeBuilder.newBuilder("heavy", "gas_column", 40);
     rec.addEnergyPerTickInput(256000);
 
 	rec.addFluidOutput(<liquid:heavywater> * 100000);

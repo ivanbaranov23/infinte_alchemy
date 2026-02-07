@@ -1,5 +1,7 @@
 import scripts.content_machines.addAssemblerRecipe;
 //(out as IItemStack[], inp as IIngredient[], fluid as ILiquidStack, time_t as int, rft as int)
+import scripts.content_machines.addBioAssemblerRecipe;
+//(out as IItemStack[], fluid_out as ILiquidStack, inp as IIngredient[], fluid_in as ILiquidStack[], catalyst as IIngredient,time_t as int, rft as int);
 
 mods.enderio.AlloySmelter.addRecipe(<contenttweaker:csitl>, [
 		<contenttweaker:cesium_dust> * 4, 
@@ -89,4 +91,34 @@ addAssemblerRecipe([<contenttweaker:atomic_clock>], [
 
 
 
-//
+{//computers
+	addBioAssemblerRecipe(
+		[<contenttweaker:battle_computer>], null, 
+		[
+			<extendedcrafting:frame>,
+			<contenttweaker:satellite_chip>.withTag({data: "none"}) * 4,
+			<contenttweaker:rune_mana_chip> * 2,
+			<enderio:item_capacitor_stellar> * 4
+		], [
+			<liquid:wrath> * 1000,
+			<liquid:pride> * 1000
+		], 
+		null,
+		20, 1000000
+	);
+	addBioAssemblerRecipe(
+		[<contenttweaker:stealing_computer>], null, 
+		[
+			<extendedcrafting:frame>,
+			<contenttweaker:satellite_chip>.withTag({data: "none"}) * 4,
+			<contenttweaker:rune_mana_chip> * 2,
+			<enderio:item_capacitor_stellar> * 4
+		], [
+			<liquid:greed> * 1000,
+			<liquid:envy> * 1000
+		], 
+		null,
+		20, 1000000
+	);
+
+}

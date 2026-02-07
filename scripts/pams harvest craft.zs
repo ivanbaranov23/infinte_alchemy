@@ -442,6 +442,12 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
         <harvestcraft:freshwateritem>,
         <contenttweaker:sodium_bicarbonate>
     ]);
+    recipes.addShapeless("ia_bubblywater2", <harvestcraft:bubblywateritem> * 4, [
+        <harvestcraft:potitem>.reuse(),
+        <harvestcraft:freshwateritem>,
+        <mysticalagriculture:water_essence>,
+        <contenttweaker:sodium_bicarbonate>
+    ]);
 
     recipes.addShapeless("ia_ironbrewitem", <harvestcraft:ironbrewitem> * 4, [
         <harvestcraft:mixingbowlitem>.reuse(),

@@ -301,6 +301,21 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
             ]
         ]
     },
+    <contenttweaker:skyfinder_mech>: {
+        <contenttweaker:skyfinder_target_zanite>: [
+            [
+                <aether_legacy:ambrosium_ore> * 256,
+                <aether_legacy:zanite_ore> * 256,
+                <aether_legacy:gravitite_ore> * 128,
+                <moretcon:orearkenium> * 256,
+            ], [
+                <aether_legacy:ambrosium_ore> * 256,
+                <aether_legacy:zanite_ore> * 256,
+                <aether_legacy:gravitite_ore> * 128,
+                <moretcon:orearkenium> * 256,
+            ]
+        ]
+    },
     <contenttweaker:bloodhunter_mech>: {
         <contenttweaker:bloodhunter_target_slate>: [
             [
@@ -414,11 +429,7 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
                 }
             }
         }
-        if (skip){
-            continue;
-        }
-        rec.addItemInput(mech * (mech.amount * amount));
-        rec.setChance(chance);
+        
 
         if (marks[i] == i){
             rec.addItemInput(goals[i]);
@@ -436,6 +447,11 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
                 rec.addItemOutput(out);
             }
         }
+        if (skip){
+            continue;
+        }
+        rec.addItemInput(mech * (mech.amount * amount));
+        rec.setChance(chance);
     }
 
     rec.build();

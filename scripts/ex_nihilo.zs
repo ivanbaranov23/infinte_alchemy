@@ -255,7 +255,7 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<agricraft:agri_nugget:2> % 90,
 			<agricraft:agri_nugget:2> % 30,
 			<agricraft:agri_nugget:2> % 10,
-			<appliedenergistics2:crystal_seed>.withTag({progress: 0}) % 30
+			<appliedenergistics2:material:2> % 10
 		],
 		
 
@@ -311,7 +311,7 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 		],
 		<minecraft:soul_sand>: [
 			<minecraft:quartz> % 40,
-			<appliedenergistics2:crystal_seed>.withTag({progress: 300}) % 5
+			<appliedenergistics2:material:2> % 15
 		],
 		<natura:nether_heat_sand>: [
 			<minecraft:blaze_powder> % 60,

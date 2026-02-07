@@ -1,0 +1,23 @@
+{
+	x: 0.0d,
+	y: 1.0d,
+	text: [
+		"Nab some penguins... and melt them."
+	],
+	dependencies: [
+		"51fd7c52"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c4fbb6d5",
+		type: "item",
+		items: [{
+			item: "moretcon:ingotpenguinite"
+		}]
+	}],
+	rewards: [{
+		uid: "6de8c91c",
+		type: "item",
+		item: "moretcon:blockpenguinite"
+	}]
+}

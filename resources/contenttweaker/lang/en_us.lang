@@ -2248,7 +2248,7 @@ item.contenttweaker.rune_lust_cracked.name=Cracked Rune of Lust
 item.contenttweaker.rune_gluttony_cracked.name=Cracked Rune of Gluttony
 item.contenttweaker.rune_greed_cracked.name=Cracked Rune of Greed
 item.contenttweaker.rune_sloth_cracked.name=Cracked Rune of Sloth
-item.contenttweaker.rune_wraith_cracked.name=Cracked Rune of Wraith
+item.contenttweaker.rune_wraith_cracked.name=Cracked Rune of Wrath
 item.contenttweaker.rune_envy_cracked.name=Cracked Rune of Envy
 item.contenttweaker.rune_pride_cracked.name=Cracked Rune of Pride
 
@@ -2608,3 +2608,40 @@ tile.contenttweaker.flower_glass.name=Floral Glass
 gas.tar_gas=Tar Gas
 
 fluid.nickel_yogurt=Nickel Yogurt
+
+tile.contenttweaker.shadowglass_block.name=Block of Shadowglass Composite
+item.contenttweaker.shadowglass_cloth.name=Vitrium Shadowglass Composite Cloth
+
+item.contenttweaker.sprook_slime.name=Primordial Sprook Slime
+item.contenttweaker.sprook1.name=Alpha Sprook
+item.contenttweaker.sprook2.name=Beta Sprook
+item.contenttweaker.sprook3.name=Sigma Sprook
+item.contenttweaker.sprook4.name=Omega Sprook
+item.contenttweaker.sprooks1.name=Group of Sprooks
+item.contenttweaker.sprooks2.name=Crowd of Sprooks
+item.contenttweaker.sprooks3.name=Large Crowd of Sprooks
+
+fluid.sprook_mush=Sprook Mush
+
+tile.contenttweaker.sprook_home.name=Sprook Housing Unit
+
+fluid.society=Liqiud Society
+fluid.society2=Concentrated Society
+
+    
+fluid.lust=Molten Sin of Lust
+fluid.gluttony=Molten Sin of Gluttony
+fluid.greed=Molten Sin of Greed
+fluid.sloth=Molten Sin of Sloth
+fluid.wrath=Molten Sin of Wrath
+fluid.envy=Molten Sin of Envy
+fluid.pride=Molten Sin of Pride
+
+item.contenttweaker.entangled_matter.name=Entangled Matter Cluster
+
+tile.feeder.name=Sprook Feeder
+requious.jei.recipe.feeder=Sprook Feeder
+
+item.contenttweaker.battle_computer.name=Battle Computer
+item.contenttweaker.stealing_computer.name=Stealing Computer
+item.contenttweaker.battle_drone.name=Battle Drone

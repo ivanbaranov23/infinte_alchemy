@@ -26,8 +26,7 @@ import mods.thermalexpansion.Infuser;
 import mods.thermalexpansion.Centrifuge;
 //Centrifuge.addRecipe(WeightedItemStack[] outputs, IItemStack input, ILiquidStack fluid, int energy);
 
-
-//frames
+import scripts.recycler.addRecycle;
 
 
 //tank
@@ -88,6 +87,9 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 		[<mob_grinding_utils:xp_tap>, <thermalexpansion:frame:64>, <mob_grinding_utils:xp_tap>], 
 		[<contenttweaker:watertight_steel_plate>, <ore:gearInvar>, <contenttweaker:watertight_steel_plate>]
 	]);
+	addRecycle(<thermalexpansion:device:3>, [
+		<thermalexpansion:frame:64>, <extendedcrafting:singularity_custom:1>, <mob_grinding_utils:xp_tap> * 2, <contenttweaker:watertight_steel_ingot> * 16
+	]);
 
 	val te_water_pump = <thermalexpansion:device>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [0, 1, 0, 0, 0, 0] as byte[] as byte[]});
 	recipes.remove(te_water_pump);
@@ -96,6 +98,10 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 		[<extrautils2:grocket:2>, <thermalexpansion:frame:64>, <extrautils2:grocket:2>], 
 		[<contenttweaker:watertight_steel_plate>, <roots:unending_bowl>, <contenttweaker:watertight_steel_plate>]
 	]);
+	addRecycle(<thermalexpansion:device>, [
+		<thermalexpansion:frame:64>, <immersiveengineering:metal_device1:6>, <extrautils2:grocket:2> * 2, <roots:unending_bowl>, <contenttweaker:watertight_steel_ingot> * 8
+	]);
+	
 
 	var te_lex = <thermalexpansion:device:7>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [2, 1, 1, 1, 1, 1] as byte[] as byte[]});
 	recipes.remove(te_lex);
@@ -103,6 +109,9 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 		[null, <thermalfoundation:tome_lexicon>, null], 
 		[<thermalfoundation:material:323>, <thermalexpansion:frame:64>, <thermalfoundation:material:323>], 
 		[<thermalfoundation:material:515>, <mysticalworld:pearl>, <thermalfoundation:material:515>]
+	]);
+	addRecycle(<thermalexpansion:device:7>, [
+		<thermalexpansion:frame:64>, <thermalfoundation:tome_lexicon>, <mysticalworld:pearl>, <thermalfoundation:material:515> * 2, <thermalfoundation:material:131> * 8
 	]);
 
 
@@ -113,6 +122,10 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 		[<contenttweaker:ice_shard>, <thermalexpansion:frame>, <contenttweaker:ice_shard>], 
 		[<contenttweaker:electric_manyullyn_gear>, <thermalfoundation:material:512>, <contenttweaker:electric_manyullyn_gear>]
 	]);
+	addRecycle(<thermalexpansion:device:2>, [
+		<thermalexpansion:frame>, <contenttweaker:ice_shard> * 2, <thermalfoundation:material:512>, <contenttweaker:electric_manyullyn_ingot> * 16, <thermalexpansion:augment:128> * 3 
+	]);
+
 }
 {//machines tier2
 	val te_crusher = <thermalexpansion:machine:1>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [3, 1, 2, 2, 2, 2] as byte[] as byte[], Level: 0 as byte});
@@ -372,6 +385,12 @@ mods.extendedcrafting.TableCrafting.addShaped(0, te_phyto_insulator, [
 		[<immersiveengineering:wirecoil:5>, <thermalfoundation:material:327>, <immersiveengineering:wirecoil:5>], 
 		[<thermalfoundation:material:327>, <openblocks:auto_anvil>, <thermalfoundation:material:327>], 
 		[<immersiveengineering:wirecoil:5>, <thermalfoundation:material:327>, <immersiveengineering:wirecoil:5>]
+	]);
+	recipes.remove(<thermalexpansion:augment:402>);
+	recipes.addShaped("ia_te_wireless_charge", <thermalexpansion:augment:402>, [
+		[<thermalfoundation:material:322>, <thermalfoundation:material:289>, <thermalfoundation:material:322>], 
+		[<appliedenergistics2:charger>, <immersiveengineering:metal_device1:5>, <appliedenergistics2:charger>], 
+		[<thermalfoundation:material:322>, <thermalfoundation:material:289>, <thermalfoundation:material:322>]
 	]);
 
 	recipes.remove(<thermalexpansion:augment:303>);

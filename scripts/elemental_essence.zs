@@ -122,7 +122,40 @@ recipes.addShaped("ia_elemental_essence", <contenttweaker:elemental_essence> * 1
             if (essence.tag.fire == essence.tag.water)
             if (essence.tag.fire == essence.tag.earth)
             if (essence.tag.fire == essence.tag.wind)
-                    return <contenttweaker:elemental_essence> * 4;
+                    return <contenttweaker:elemental_essence> * 16;
+                
+        return null; 
+    }, null
+);
+recipes.addShaped("ia_elemental_essence_alt", <contenttweaker:elemental_essence> * 16, [
+        [<botania:manaresource:22>, <contenttweaker:mana_dust_singularity>, <botania:manaresource:22>], 
+        [<contenttweaker:entangled_matter>, <contenttweaker:elemental_essence_base>.marked("essence"), <contenttweaker:entangled_matter>], 
+        [<botania:manaresource:22>, <extendedcrafting:singularity_custom:37>, <botania:manaresource:22>],
+    ],
+    function(out, ins, cInfo){
+        var essence as IItemStack = ins.essence;
+
+        if (essenceGood(essence))
+            if (essence.tag.fire == essence.tag.water)
+            if (essence.tag.fire == essence.tag.earth)
+            if (essence.tag.fire == essence.tag.wind)
+                    return <contenttweaker:elemental_essence> * 16;
+                
+        return null; 
+    }, null
+);
+recipes.addShapeless("ia_entangled_matter", <contenttweaker:entangled_matter> * 2, [
+        <contenttweaker:entangled_matter_a>.marked("em_a"), <contenttweaker:entangled_matter_b>.marked("em_b"), 
+    ],
+    function(out, ins, cInfo){
+        var em_a as IItemStack = ins.em_a;
+        var em_b as IItemStack = ins.em_b;
+        
+
+        if (em_a.tag.memberGet("id"))
+        if (em_b.tag.memberGet("id"))
+        if (em_a.tag.id == em_b.tag.id)
+            return <contenttweaker:entangled_matter> * 2;
                 
         return null; 
     }, null

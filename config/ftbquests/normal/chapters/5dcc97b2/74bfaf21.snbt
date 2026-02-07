@@ -1,0 +1,14 @@
+{
+	x: 0.5d,
+	y: -5.0d,
+	dependencies: [
+		"cdb712e3"
+	],
+	tasks: [{
+		uid: "5b95891d",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:ice_seeds"
+		}]
+	}]
+}

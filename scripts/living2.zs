@@ -918,6 +918,31 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
             } );
         }, null
     );
+    recipes.addShapeless("blood_slime_feeding2", <contenttweaker:lv_blood_slime>,
+        [
+            <contenttweaker:lv_blood_slime>.only(
+                function(item){
+                    if ((item.tag.memberGet("food") as bool) && (item.tag.memberGet("lifespan") as bool)){
+                        //item good
+                        return (item.tag.food.asInt() > 0)&&(item.tag.lifespan.asInt() > 0);
+                    }
+                    //item bad
+                    return false;
+                }
+            ).marked("mark"), 
+            <ore:sprook>
+        ],
+            
+        function(out, ins, cInfo){
+            var range as int = 50 - 10 + 1;
+            var value as int = ((Math.floor(Math.random() * range) + 10) as IData).asInt();
+            
+            return ins.mark.withTag( {
+                food: ins.mark.tag.food.asInt() + value,
+                lifespan: ins.mark.tag.lifespan.asInt()
+            } );
+        }, null
+    );
 }
 {//zanite frog
     recipes.addShapeless("ia_zanite_frog_feed", <contenttweaker:zanite_frog_feed>, [

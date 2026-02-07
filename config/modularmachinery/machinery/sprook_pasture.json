@@ -1,6 +1,6 @@
 {
     "registryname": "sprook_pasture",
-    "localizedname": "Sprook Pasture",
+    "localizedname": "Sprook City",
     "color": "1a1a1a",
     "parts": [
         {
@@ -45,8 +45,7 @@
             "z": 0,
             "elements": [
                 "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "modularmachinery:blockmanainputhatch"
             ]
         },
         {
@@ -70,7 +69,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -81,7 +80,7 @@
                 "id":"requious:assembly",
                 "assembly":"requious:feeder",
                 
-                "5_2":{"active":"1b"}
+                "variables":{"active":">0"}
             },
             "elements": [
                 "requious:feeder@1"
@@ -92,7 +91,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -108,7 +107,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -167,7 +166,7 @@
                 "id":"requious:assembly",
                 "assembly":"requious:feeder",
                 
-                "5_2":{"active":"1b"}
+                "variables":{"active":">0"}
             },
             "elements": [
                 "requious:feeder@1"
@@ -186,9 +185,7 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -196,9 +193,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -215,9 +210,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -225,9 +218,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -235,9 +226,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -263,9 +252,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -300,9 +287,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -310,9 +295,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -336,7 +319,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -344,7 +327,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -352,7 +335,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -360,7 +343,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -368,9 +351,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -386,9 +367,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -396,7 +375,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -404,7 +383,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:potato_block1@0"
+                "contenttweaker:sprook_home@0"
             ]
         },
         {
@@ -412,9 +391,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -422,9 +399,7 @@
             "y": 0,
             "z": 4,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {
@@ -432,9 +407,7 @@
             "y": 0,
             "z": 3,
             "elements": [
-                "casings_all",
-                "modulardiversity:blockhotairinputhatch",
-                "modulardiversity:blockmanainputhatch"
+                "casings_all"
             ]
         },
         {

@@ -1119,6 +1119,9 @@ function addAtomicResource(name as string){
 
     VanillaFactory.createItem("ssa_ingot").register();
     VanillaFactory.createBlock("ssa_block", <blockmaterial:rock>).register();
+
+    VanillaFactory.createItem("shadowglass_cloth").register();
+    VanillaFactory.createBlock("shadowglass_block", <blockmaterial:rock>).register();
 }
 VanillaFactory.createItem("jade_dust").register();
 {//malachite
@@ -1367,6 +1370,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
 
         VanillaFactory.createItem("drone_base").register();
         VanillaFactory.createItem("drone").register();
+        VanillaFactory.createItem("battle_drone").register();
 
         VanillaFactory.createItem("crawler").register();
         VanillaFactory.createItem("webbing_unit").register();
@@ -1388,6 +1392,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     VanillaFactory.createItem("entangled_particles").register();
     VanillaFactory.createItem("entangled_matter_a").register();
     VanillaFactory.createItem("entangled_matter_b").register();
+    VanillaFactory.createItem("entangled_matter").register();
 
     
     VanillaFactory.createItem("prism").register();
@@ -1794,6 +1799,7 @@ hyper_life.setRarity("epic");
 hyper_life.register();
 
 {//sprook
+    VanillaFactory.createItem("sprook_slime").register();
     VanillaFactory.createItemFood("sprook1", 2).register();
     VanillaFactory.createItemFood("sprook2", 2).register();
     VanillaFactory.createItemFood("sprook3", 2).register();
@@ -1802,11 +1808,26 @@ hyper_life.register();
     VanillaFactory.createItem("sprooks2").register();
     VanillaFactory.createItem("sprooks3").register();
 
-    VanillaFactory.createBlock("sprook_wheel1", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("sprook_wheel2", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("sprook_wheel3", <blockmaterial:rock>).register();
-
     addWater("sprook_mush");
+
+    var sprook_home = VanillaFactory.createBlock("sprook_home", <blockmaterial:rock>);
+    sprook_home.setFullBlock(false);
+    sprook_home.setBlockLayer("TRANSLUCENT");
+    sprook_home.setLightOpacity(0);
+    sprook_home.setTranslucent(true);
+    sprook_home.register();
+
+    VanillaFactory.createFluid("society", Color.fromHex("a5adc5")).register();
+    VanillaFactory.createFluid("society2", Color.fromHex("67437d")).register();
+
+    
+    VanillaFactory.createFluid("lust", Color.fromHex("f346d1")).register();
+    VanillaFactory.createFluid("gluttony", Color.fromHex("6e6e6e")).register();
+    VanillaFactory.createFluid("greed", Color.fromHex("2a924c")).register();
+    VanillaFactory.createFluid("sloth", Color.fromHex("a07b4c")).register();
+    VanillaFactory.createFluid("wrath", Color.fromHex("e70000")).register();
+    VanillaFactory.createFluid("envy", Color.fromHex("9c40c3")).register();
+    VanillaFactory.createFluid("pride", Color.fromHex("2c3237")).register();
 }
 
 VanillaFactory.createItem("ophidian_extract").register();
@@ -2077,18 +2098,8 @@ VanillaFactory.createFluid("bacteria_waste", Color.fromHex("0b241b")).register()
 VanillaFactory.createItem("gem_catalyst").register();
 VanillaFactory.createItem("ore_catalyst").register();
 
-VanillaFactory.createItem("flesh_bits").register();
 
-
-
-VanillaFactory.createItem("flesh_piece").register();
-VanillaFactory.createItem("flesh_spurt").register();
-VanillaFactory.createItem("flesh_rod").register();
-VanillaFactory.createItem("flesh_support").register();
-VanillaFactory.createItem("flesh_spurt_activated").register();
-
-
-
+VanillaFactory.createBlock("red_gravel", <blockmaterial:rock>).register();
 
 
 
@@ -2839,6 +2850,15 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("mixed_will_crystal").register();
 
+        
+    VanillaFactory.createItem("flesh_bits").register();
+    VanillaFactory.createItem("flesh_piece").register();
+    VanillaFactory.createItem("flesh_spurt").register();
+    VanillaFactory.createItem("flesh_rod").register();
+    VanillaFactory.createItem("flesh_support").register();
+    VanillaFactory.createItem("flesh_spurt_activated").register();
+
+
     {//nether star dup & starry polymer
     
         VanillaFactory.createItem("nether_star_dust").register();
@@ -3304,6 +3324,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     addWater("cracked_steam");
     addWater("cracked_oil");
 
+    VanillaFactory.createItem("tartaric_acid").register();
+    VanillaFactory.createItem("ethylantraquinone").register();
+    VanillaFactory.createItem("ethylantrahydroquinone").register();
+    VanillaFactory.createItem("h2o2").register();
+
     VanillaFactory.createItem("acetic_acid").register();
     VanillaFactory.createItem("acetone").register();
     VanillaFactory.createItem("ethenone").register();
@@ -3337,8 +3362,17 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("mesitylamine").register();
     
     VanillaFactory.createItem("xylene").register();
+    VanillaFactory.createItem("phthalic_anhydride").register();
+
+    VanillaFactory.createItem("acetaldehyde").register();
+    VanillaFactory.createItem("pyruvate").register();
+    VanillaFactory.createItem("ammonium_chloride").register();
+    VanillaFactory.createItem("ammonium_formate").register();
+    VanillaFactory.createItem("formamide").register();
+
 
     VanillaFactory.createItem("alanine").register();
+    VanillaFactory.createItem("arginine").register();
     VanillaFactory.createItem("histidine").register();
 
     VanillaFactory.createItem("cp2zrcl2").register();
@@ -3498,6 +3532,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("research_bacteria1").register();
 
     VanillaFactory.createItem("research_heat").register();
+
+    VanillaFactory.createItem("research_living").register();
 
     VanillaFactory.createItem("research_terra").register();
     VanillaFactory.createItem("research_luck").register();

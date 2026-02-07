@@ -334,6 +334,9 @@ mods.thermalexpansion.Transposer.addFillRecipe(
             <thermalfoundation:material:771> % 5
         ], <contenttweaker:netherrack_dust> * 4, null, 800);
     }
+
+    //obsidian
+    mods.prodigytech.rotarygrinder.addRecipe(<minecraft:obsidian>, <thermalfoundation:material:770> * 2);
 }
 
 {//twilight
@@ -377,6 +380,21 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]
     ]);
 }
+
+{//end
+    recipes.addShapeless("ia_endstone_dust", <contenttweaker:endstone_dust> * 2, [<exnihilocreatio:block_endstone_crushed>]);
+    recipes.addShapeless("ia_endstone_dustblock_endstone_crushed", <exnihilocreatio:block_endstone_crushed>, [
+        <contenttweaker:endstone_dust>, <contenttweaker:endstone_dust>,
+        <contenttweaker:endstone_dust>, <contenttweaker:endstone_dust>
+    ]);
+
+
+    mods.roots.Mortar.addRecipe("endstone",
+        <contenttweaker:endstone_dust> * 4,
+        [<thermalfoundation:material:98>, <appliedenergistics2:material:45>, <minecraft:sandstone>, <appliedenergistics2:material:46>, <appliedenergistics2:material:46>]
+    );
+}
+
 
 
 {//skystone

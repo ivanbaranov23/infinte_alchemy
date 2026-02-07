@@ -1,0 +1,14 @@
+{
+	x: 1.5d,
+	y: -3.5d,
+	dependencies: [
+		"cdb712e3"
+	],
+	tasks: [{
+		uid: "ba7258e1",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:fire_seeds"
+		}]
+	}]
+}

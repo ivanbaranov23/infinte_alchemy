@@ -1479,6 +1479,12 @@ static all_metals as IItemStack[string][string] = {
         dust: <contenttweaker:selenium_dust>,
         element: <alchemistry:element:34>
     },
+    strontium: {
+        ingot: <alchemistry:ingot:38>,
+        block: <contenttweaker:strontium_block>,
+        dust: <contenttweaker:strontium_dust>,
+        element: <alchemistry:element:38>
+    },
     molybdenum: {
         ingot: <alchemistry:ingot:42>,
         block: <contenttweaker:molybdenum_block>,
@@ -1590,25 +1596,29 @@ static all_metals as IItemStack[string][string] = {
         ingot: <taiga:karmesine_ingot>,
         block: <taiga:karmesine_block>,
         nugget: <taiga:karmesine_nugget>,
-        dust: <taiga:karmesine_dust>
+        dust: <taiga:karmesine_dust>,
+        singularity: <extendedcrafting:singularity_custom:84>
     },
     ovium: {
         ingot: <taiga:ovium_ingot>,
         block: <taiga:ovium_block>,
         nugget: <taiga:ovium_nugget>,
-        dust: <taiga:ovium_dust>
+        dust: <taiga:ovium_dust>,
+        singularity: <extendedcrafting:singularity_custom:85>
     },
     jauxum: {
         ingot: <taiga:jauxum_ingot>,
         block: <taiga:jauxum_block>,
         nugget: <taiga:jauxum_nugget>,
-        dust: <taiga:jauxum_dust>
+        dust: <taiga:jauxum_dust>,
+        singularity: <extendedcrafting:singularity_custom:86>
     },
     terrax: {
         ingot: <taiga:terrax_ingot>,
         block: <taiga:terrax_block>,
         nugget: <taiga:terrax_nugget>,
-        dust: <taiga:terrax_dust>
+        dust: <taiga:terrax_dust>,
+        singularity: <extendedcrafting:singularity_custom:87>
     },
     tritonite: {
         ingot: <taiga:tritonite_ingot>,
@@ -3045,10 +3055,16 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
         "cobalt", 2,
         "zinc", 3
     );
+    
     add3alloy(1, "duraluminum", 6,
         "steel", 4,
         "alumite", 2,
         "copper", 1
+    );
+    add3alloy(1, "duraluminum", 8,
+        "steel", 4,
+        "alumite", 2,
+        "coppra", 1
     );
 
 
@@ -5160,8 +5176,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
     );
 
 
-    {
-        var rec = RecipeBuilder.newBuilder("kikeridan_smelting", "tignalum_oven", 60 * 20);
+    {var rec = RecipeBuilder.newBuilder("kikeridan_smelting1", "tignalum_oven", 60 * 20);
         rec.addEnergyPerTickInput(10 * 1000 * 1000);
 
         rec.addItemOutput(<contenttweaker:kikeridan_ingot> * 4);
@@ -5170,6 +5185,19 @@ scripts.content_machines.addAdvancedMixerRecipe(
         rec.addItemInput(<contenttweaker:star_alloy_ingot>);
         rec.addItemInput(<extrautils2:opinium:8>);
         rec.addItemInput(<moretcon:gemetherstone> * 16);
+        rec.addFluidInput(<liquid:enchantium> * 4000);
+        
+        rec.build();
+    }
+    {var rec = RecipeBuilder.newBuilder("kikeridan_smelting2", "tignalum_oven", 60 * 20);
+        rec.addEnergyPerTickInput(10 * 1000 * 1000);
+
+        rec.addItemOutput(<contenttweaker:kikeridan_ingot> * 8);
+    
+        rec.addItemInput(<contenttweaker:kikeridan_dust> * 200);
+        rec.addItemInput(<contenttweaker:star_alloy_ingot>);
+        rec.addItemInput(<extrautils2:opinium:8>);
+        rec.addItemInput(<extendedcrafting:singularity_custom:82>);
         rec.addFluidInput(<liquid:enchantium> * 4000);
         
         rec.build();

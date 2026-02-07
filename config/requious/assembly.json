@@ -259,12 +259,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "vial_processor",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "vial_processor",
+    
     "model": "contenttweaker:machines/vial_processor",
     "colors": [
       {
@@ -285,12 +285,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "advanced_mixer",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "advanced_mixer",
+    
     "model": "contenttweaker:machines/advanced_mixer",
     "colors": [
       {
@@ -311,12 +311,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "fluid_sieve",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "fluid_sieve",
+    
     "model": "contenttweaker:machines/fluid_sieve",
     "colors": [
       {
@@ -337,12 +337,12 @@
       "z2": 1.0
     }
   },
-  {
+  {"resourceName": "satellite_controller",
     "placeType": "Horizontal",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
-    "resourceName": "satellite_controller",
+    
     "model": "contenttweaker:machines/satellite_controller",
     "colors": [
       {
@@ -446,12 +446,12 @@
     }
   },
   {"resourceName": "feeder",
-    "placeType": "Horizontal",
+    "placeType": "Up",
     "layerType": "Cutout",
     "hasGUI": true,
     "extraVariants": [],
     
-    "model": "contenttweaker:machines/recycler",
+    "model": "contenttweaker:machines/sprook_feeder",
     "colors": [
       {
         "r": 255,

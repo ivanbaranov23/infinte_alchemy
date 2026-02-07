@@ -109,6 +109,11 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
             <mysticalagriculture:draconium_essence> * 16: <draconicevolution:draconium_ore>
         }
     },
+    <liquid:cryotheum>: {
+        200: {
+            <mysticalagriculture:ice_essence> * 16: <aether_legacy:icestone>
+        }
+    },
     <liquid:rune_acid>: {
         50: {
             <mysticalagriculture:terrasteel_essence> * 16: <contenttweaker:terrasteel_ore>
@@ -197,12 +202,29 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
     recipes.addShapeless("ia_water_bucket_pure", <forge:bucketfilled>.withTag({FluidName: "pure_water", Amount: 1000}), [
         <minecraft:bucket>, <mysticalagriculture:water_essence>, <mysticalagriculture:water_essence>
     ]);
+    recipes.addShapeless("ia_water_bucket_heavy", <forge:bucketfilled>.withTag({FluidName: "heavywater", Amount: 1000}), [
+        <minecraft:bucket>, <mysticalagriculture:water_essence>, <mysticalagriculture:water_essence>, <mysticalagriculture:water_essence>
+    ]);
     recipes.addShapeless("ia_water_bucket_sea", <forge:bucketfilled>.withTag({FluidName: "sea_water", Amount: 1000}), [
         <minecraft:bucket>, <mysticalagriculture:water_essence>, <mekanism:salt> | <alchemistry:mineral_salt>
     ]);
     recipes.addShapeless("ia_water_bucket_seaweed", <forge:bucketfilled>.withTag({FluidName: "seaweed_rich_water", Amount: 1000}), [
         <minecraft:bucket>, <mysticalagriculture:water_essence>, <harvestcraft:seaweeditem>
     ]);
+    //ice
+    addEssenceRec_1(<mysticalagriculture:ice_essence>, <minecraft:ice> * 4);
+    recipes.addShapeless("ia_cold_bucket", <forge:bucketfilled>.withTag({FluidName: "cold_nitrogen", Amount: 1000}), [
+        <minecraft:bucket>, <mysticalagriculture:ice_essence>, <mysticalagriculture:ice_essence>, <liquid:nitrogen> * 1000
+    ]);
+    //lava
+    recipes.addShapeless("ia_lava_bucket", <minecraft:lava_bucket>, [<minecraft:bucket>, <mysticalagriculture:fire_essence>, <mysticalagriculture:fire_essence>]);
+    recipes.addShapeless("ia_lava_residue_bucket", <forge:bucketfilled>.withTag({FluidName: "lava_residue", Amount: 1000}), [
+        <minecraft:bucket>, <mysticalagriculture:fire_essence>, <mysticalagriculture:fire_essence>, <mysticalagriculture:stone_essence>
+    ]);
+    recipes.addShapeless("ia_steam_bucket", <forge:bucketfilled>.withTag({FluidName: "steam", Amount: 1000}), [
+        <minecraft:bucket>, <mysticalagriculture:fire_essence>, <mysticalagriculture:water_essence>
+    ]);
+
 
     //menril
     mods.thermalexpansion.Crucible.addRecipe(<liquid:menrilresin> * 500, <mysticalagriculture:menril_essence>, 2000);

@@ -47,7 +47,8 @@ scripts.content_machines.addBioAssemblerRecipe(
     [
         <contenttweaker:activated_biopower> * 4,
         <moretcon:gemelectarite> * 2,
-        <contenttweaker:methyst> * 2
+        <contenttweaker:methyst> * 2,
+        <mysticalagriculture:crafting:6>
     ], [
         <liquid:biotite> * 1500,
         <liquid:fire> * 50

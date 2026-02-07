@@ -44,15 +44,15 @@ import mods.modularmachinery.RecipeModifierBuilder;
     
     mods.mekanism.reaction.addRecipe(
         <contenttweaker:fertilizer5>, <liquid:ender_distillation> * 100, <gas:ammonia> * 50, 
-        <contenttweaker:fertilizer6> * 4, <gas:water> * 50, 50000, 60
+        <contenttweaker:fertilizer6> * 6, <gas:water> * 50, 50000, 60
     );
     mods.mekanism.reaction.addRecipe(
         <contenttweaker:fertilizer5>, <liquid:worm_blood> * 300, <gas:ammonia> * 50, 
-        <contenttweaker:fertilizer6> * 4, <gas:water> * 50, 50000, 60
+        <contenttweaker:fertilizer6> * 6, <gas:water> * 50, 50000, 60
     );
     
     mods.bloodmagic.AlchemyTable.addRecipe(
-        <contenttweaker:fertilizer7> * 4, 
+        <contenttweaker:fertilizer7> * 8, 
         [<contenttweaker:fertilizer6>, <contenttweaker:terrabit>, <bloodmagic:component:5>, <contenttweaker:entwood_dust>, <roots:elemental_soil_earth>, <roots:terra_moss>], 
         10000, 20, 4
     );

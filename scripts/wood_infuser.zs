@@ -297,18 +297,31 @@ addWoodInfuseFireJEI(<moretcon:orefusionite>, <forge:bucketfilled>.withTag({Flui
         <contenttweaker:hot_energion> * 4, <harvestcraft:blueberryjellyitem>, <enderio:item_material:38> * 2
 ]);
 
+{//divine mud
+    addWoodInfuseForestFire(
+        <blockstate:contenttweaker:divine_mud>, <blockstate:contenttweaker:glowshroomite_mud>, [
+            <contenttweaker:reagent_bug>,
+            <tconevo:earth_material_block> * 16,
+            <contenttweaker:empowered_shard> * 4
+    ], 20);
+    addWoodInfuseForestFireJEI(<contenttweaker:divine_mud>, <contenttweaker:glowshroomite_mud>, [
+            <contenttweaker:reagent_bug>,
+            <tconevo:earth_material_block> * 16,
+            <contenttweaker:empowered_shard> * 3
+    ]);
 
-addWoodInfuseForestFire(
-    <blockstate:contenttweaker:divine_mud>, <blockstate:contenttweaker:glowshroomite_mud>, [
-        <contenttweaker:reagent_bug>,
-        <tconevo:earth_material_block> * 16,
-        <contenttweaker:empowered_shard> * 4
-], 20);
-addWoodInfuseForestFireJEI(<contenttweaker:divine_mud>, <contenttweaker:glowshroomite_mud>, [
-        <contenttweaker:reagent_bug>,
-        <tconevo:earth_material_block> * 16,
-        <contenttweaker:empowered_shard> * 3
-]);
+    addWoodInfuseForestFire(
+        <blockstate:contenttweaker:divine_mud>, <blockstate:contenttweaker:red_gravel>, [
+            <contenttweaker:reagent_bug>,
+            <tconevo:earth_material_block> * 16,
+            <contenttweaker:empowered_shard> * 4
+    ], 20);
+    addWoodInfuseForestFireJEI(<contenttweaker:divine_mud>, <contenttweaker:red_gravel>, [
+            <contenttweaker:reagent_bug>,
+            <tconevo:earth_material_block> * 16,
+            <contenttweaker:empowered_shard> * 3
+    ]);
+}
 
 
 //excted mud

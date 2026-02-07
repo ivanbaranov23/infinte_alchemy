@@ -1,6 +1,6 @@
 {
 	icon: "modularmachinery:tar_pit_controller",
-	x: 1.0d,
+	x: -4.0d,
 	y: 4.0d,
 	text: [
 		"Gives better recipe for enderious goop and enriched tar. Can be a source of methane and ancient dust"

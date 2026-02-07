@@ -1,0 +1,38 @@
+{
+	icon: "modularmachinery:sin_burner_controller",
+	x: 20.0d,
+	y: 1.0d,
+	dependencies: [
+		"5033e8ae",
+		"8ff05803"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d6d98622",
+		type: "item",
+		items: [{
+			item: "modularmachinery:sin_burner_controller"
+		}]
+	},
+	{
+		uid: "ccd671cb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:shadowglass_block"
+		}]
+	},
+	{
+		uid: "21c6ff3f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bloody_sheetmetal"
+		}]
+	},
+	{
+		uid: "b37ea843",
+		type: "item",
+		items: [{
+			item: "contenttweaker:darker_steel_block"
+		}]
+	}]
+}

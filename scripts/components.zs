@@ -2028,6 +2028,7 @@ scripts.content_machines.addAssemblerRecipe(
 	[
 		<contenttweaker:fluxed_invar_plate>,
 		<enderio:item_material:56> * 8,
+		<contenttweaker:diode2> * 8,
 		<contenttweaker:flesh_rod> * 4,
 		<contenttweaker:living_processor> * 2,
 		<contenttweaker:muscle> * 16
@@ -2123,6 +2124,10 @@ scripts.content_machines.addAssemblerRecipe(
         ]
     );
 }
+mods.botania.RuneAltar.addRecipe(<contenttweaker:shadowglass_cloth>, [
+	<contenttweaker:terra_base>, <moretcon:repitem:3>, <moretcon:repitem:3>,
+	<contenttweaker:soul_reflector>, <botania:manaresource:22>
+], 20000);
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_pipe>, [
 	[<contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>], 

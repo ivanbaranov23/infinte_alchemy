@@ -2,7 +2,9 @@
 	x: 4.5d,
 	y: 3.0d,
 	text: [
-		"Breaks cobble->gravel->sand->dust in world, so you don't have to place it"
+		"Breaks cobble->gravel->sand->dust in world, so you don't have to place it.",
+		"",
+		"Terrastone pickaxe works the same, just with more durability."
 	],
 	dependencies: [
 		"e15947a8"

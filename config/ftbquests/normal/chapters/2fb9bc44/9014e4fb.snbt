@@ -1,0 +1,18 @@
+{
+	x: 9.5d,
+	y: -2.0d,
+	text: [
+		"Can be early source of power. Gives 5k rft, tho a bit expensive on steel"
+	],
+	dependencies: [
+		"1307bd58"
+	],
+	optional: true,
+	tasks: [{
+		uid: "f7cfba20",
+		type: "item",
+		items: [{
+			item: "modularmachinery:heat_engine_controller"
+		}]
+	}]
+}

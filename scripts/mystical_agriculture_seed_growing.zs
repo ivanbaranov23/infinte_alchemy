@@ -50,6 +50,7 @@ addSeeds(<mysticalagriculture:nature_essence>, <mysticalagriculture:nature_seeds
 addSeeds(<mysticalagriculture:wood_essence>, <mysticalagriculture:wood_seeds>, 1);
 addSeeds(<mysticalagriculture:water_essence>, <mysticalagriculture:water_seeds>, 1);
 addSeeds(<mysticalagriculture:ice_essence>, <mysticalagriculture:ice_seeds>, 1);
+addSeeds(<mysticalagriculture:fire_essence>, <mysticalagriculture:fire_seeds>, 1);
 addSeeds(<mysticalagriculture:nether_essence>, <mysticalagriculture:nether_seeds>, 1);
 
 
@@ -68,6 +69,10 @@ addSeeds(<mysticalagriculture:zinc_essence>, <mysticalagriculture:zinc_seeds>, 2
 addSeeds(<mysticalagriculture:cobalt_essence>, <mysticalagriculture:cobalt_seeds>, 2);
 addSeeds(<mysticalagriculture:ardite_essence>, <mysticalagriculture:ardite_seeds>, 2);
 addSeeds(<mysticalcreations:antimony_essence>, <mysticalcreations:antimony_seeds>, 2);
+
+addSeeds(<mysticalcreations:karmesine_essence>, <mysticalcreations:karmesine_seeds>, 2);
+addSeeds(<mysticalcreations:ovium_essence>, <mysticalcreations:ovium_seeds>, 2);
+addSeeds(<mysticalcreations:jauxum_essence>, <mysticalcreations:jauxum_seeds>, 2);
 
 addSeeds(<mysticalagriculture:silicon_essence>, <mysticalagriculture:silicon_seeds>, 2);
 

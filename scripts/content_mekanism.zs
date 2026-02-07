@@ -25,7 +25,6 @@ addGas("naoh", "eae553", true);
 {
     var xpjuice = GasFactory.createGas("xpjuice");
     xpjuice.setColorize(false);
-    //gas.setColor(Color.fromHex(color).getIntColor());
     xpjuice.setNeedFluid(true);
     xpjuice.setIcon("blocks/xpjuice");
     xpjuice.setIconFlowing("blocks/xpjuice");
@@ -113,6 +112,7 @@ addGas("smart", "22ffff", false);
     explosion_stone_glue.register();
 }
 addGas("waste_gas", "1f1f20", false);
+addGas("red_waste", "930400", false);
 
 
 function addMetalGas(name as string, color as string){

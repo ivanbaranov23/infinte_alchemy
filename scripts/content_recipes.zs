@@ -190,6 +190,8 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:wormium_ingot>, <contenttweaker:wormium_block>);
     
     add3x3Recipe(<contenttweaker:caelumite_ingot>, <contenttweaker:caelumite_block>);
+    
+    add3x3Recipe(<moretcon:repitem:3>, <contenttweaker:shadowglass_block>);
 }
 
 recipes.addShaped("ia_slag_small", <immersiveengineering:material:7>, [

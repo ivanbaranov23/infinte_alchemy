@@ -1,0 +1,23 @@
+{
+	x: 6.0d,
+	y: -3.0d,
+	text: [
+		"Can be used to mine Etherstone"
+	],
+	dependencies: [
+		"f46b34df"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6003ee39",
+		type: "item",
+		items: [{
+			item: "moretcon:ingotatronium"
+		}]
+	}],
+	rewards: [{
+		uid: "82a5cdd5",
+		type: "item",
+		item: "moretcon:blockatronium"
+	}]
+}

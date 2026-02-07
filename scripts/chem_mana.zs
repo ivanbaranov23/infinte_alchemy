@@ -192,7 +192,7 @@ import mods.modularmachinery.RecipeBuilder;
             [
                 <botania:manaresource:5> * 8,
                 <botania:rune:14>,
-                <botania:manaresource:22> * 8,
+                <contenttweaker:shadowglass_cloth> * 4,
                 <biomesoplenty:crystal_shard> * 64
             ], [
                 <liquid:mana_juice> * 2000,
@@ -466,6 +466,100 @@ import mods.modularmachinery.RecipeBuilder;
     }
 }
 
+{//society
+    mods.immersivepetroleum.Distillation.addRecipe(
+        [
+            <liquid:radioactive_waste> * 200,
+            <liquid:unknown> * 50,
+            <liquid:creosote> * 500
+        ], [
+
+        ], <liquid:society> * 300, 10000, 20, []
+    );
+
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:gaia_catalyst_used>], [<liquid:society2> * 1000],
+        [
+            <contenttweaker:gaia_catalyst>
+        ], [
+            <liquid:society> * 1000,
+            <liquid:vile> * 1000
+        ], 20, 100000
+    );
+
+
+    mods.immersivepetroleum.Distillation.addRecipe(
+        [
+            <liquid:lust> * 1000,
+            <liquid:gluttony> * 1000,
+            <liquid:greed> * 1000,
+            <liquid:sloth> * 1000,
+            <liquid:wrath> * 1000,
+            <liquid:envy> * 1000,
+            <liquid:pride> * 1000
+        ], [
+
+        ], <liquid:society2> * 1000, 1000000, 20, []
+    );
+}
+{//sin
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:lust> * 1000],
+        [
+            <contenttweaker:sin_nickel_ingot>, <botania:rune:9>
+        ], [
+            <liquid:super_heat_lava> * 300,
+        ], 20, 100000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:gluttony> * 1000],
+        [
+            <contenttweaker:sin_nickel_ingot>, <botania:rune:10>
+        ], [
+            <liquid:super_heat_lava> * 300,
+        ], 20, 100000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:greed> * 1000],
+        [
+            <contenttweaker:sin_nickel_ingot>, <botania:rune:11>
+        ], [
+            <liquid:super_heat_lava> * 300,
+        ], 20, 100000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:sloth> * 1000],
+        [
+            <contenttweaker:sin_nickel_ingot>, <botania:rune:12>
+        ], [
+            <liquid:super_heat_lava> * 300,
+        ], 20, 100000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:wrath> * 1000],
+        [
+            <contenttweaker:sin_nickel_ingot>, <botania:rune:13>
+        ], [
+            <liquid:super_heat_lava> * 300,
+        ], 20, 100000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:envy> * 1000],
+        [
+            <contenttweaker:sin_nickel_ingot>, <botania:rune:14>
+        ], [
+            <liquid:super_heat_lava> * 300,
+        ], 20, 100000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:pride> * 1000],
+        [
+            <contenttweaker:sin_nickel_ingot>, <botania:rune:15>
+        ], [
+            <liquid:super_heat_lava> * 300,
+        ], 20, 100000
+    );
+}
 
 {//rarer earth
     mods.mekanism.chemical.crystallizer.addRecipe(<gas:rarer_earth_slurry> * 250, <contenttweaker:rarer_earth_dust>);

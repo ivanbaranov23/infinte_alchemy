@@ -18,7 +18,9 @@ static expl_compressables as string[] = [
 	"palladium", "draconium", "zirconium", "tantalum",
 
 	"redstone",
-	"coal", "diamond", "emerald", "lapis", "salt"
+	"coal", "diamond", "emerald", "lapis", "salt",
+
+	"karmesine", "ovium", "jauxum"
 ];
 
 

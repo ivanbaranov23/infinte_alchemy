@@ -2848,6 +2848,30 @@ val ores as IItemStack[string][string][string] = {
             denorm: <contenttweaker:electrotine_ore> * 2
         }
     },
+    etherstone: {
+        ore: {
+            item: <moretcon:oreetherstone>,
+            crushing_no_balls: <moretcon:gemetherstone> * 2,
+            balling: <moretcon:gemetherstone> * 2,
+            crushingByprod1: <taiga:palladium_dust>,
+            crushingByprod2: <moretcon:dustzracohlium>,
+
+            cleaning: <moretcon:gemetherstone> * 4,
+            drilling: <moretcon:gemetherstone> * 4,
+        }
+    },
+    echostone: {
+        ore: {
+            item: <moretcon:oreechostone>,
+            crushing_no_balls: <moretcon:gemechostone> * 2,
+            balling: <moretcon:gemechostone> * 2,
+            crushingByprod1: <moretcon:dustzracohlium>,
+            crushingByprod2: <taiga:aurorium_dust>,
+
+            cleaning: <moretcon:gemechostone> * 4,
+            drilling: <moretcon:gemechostone> * 4,
+        }
+    },
     fusionite: {
         ow: {
             item: <moretcon:orefusionite>,
@@ -3976,6 +4000,8 @@ val drilling_fluid_amount as int[string] = {
     meteorite: 125,
 
     electarite: 240,
+    etherstone: 400,
+    echostone: 400,
     fusionite: 300,
     hallowsite: 400,
 

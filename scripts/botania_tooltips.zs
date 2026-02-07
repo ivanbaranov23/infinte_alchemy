@@ -32,3 +32,4 @@
 
 
 <botania:specialflower>.withTag({type: "agricarnation"}).addTooltip("speeds up crop growth nearby");
+<botania:specialflower>.withTag({type: "fallenKanade"}).addTooltip("gives players regen 3 at the cost of mana");

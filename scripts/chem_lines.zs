@@ -855,7 +855,7 @@ import mods.modularmachinery.RecipeBuilder;
 
 {//glass fiber
     recipes.addShaped("ia_glass_fiber_materials", <contenttweaker:glass_fiber_materials>, [
-        [<minecraft:bucket>, <biomesoplenty:white_sand>, <atum:sand>], 
+        [<minecraft:bucket>, <biomesoplenty:white_sand>, <contenttweaker:quicklime>], 
         [<contenttweaker:kaolin_clay>, <contenttweaker:kaolin_clay>, <contenttweaker:fluospar>], 
         [<contenttweaker:dolomite>, null, null]
     ]);
@@ -1506,7 +1506,22 @@ import mods.modularmachinery.RecipeBuilder;
     ]);
 }
 
+{//red waste
+    
+    recipes.remove(<moretcon:hydrogenrichredstonepowder>);
+    mods.mekanism.reaction.addRecipe(
+        <extendedcrafting:singularity:3>, <liquid:dense_hydrogen> * 4000, <gas:nether_star_solution> * 2000, 
+        <moretcon:hydrogenrichredstonepowder>, <gas:red_waste> * 1000, 1500, 60
+    );
 
+    mods.mekanism.compressor.addRecipe(<minecraft:gravel>, <gas:red_waste>, <contenttweaker:red_gravel>);
+    mods.prodigytech.atomicreshaper.addRecipeMulti(
+        <contenttweaker:red_gravel>, 
+        100, 20 * 5, 
+        [<moretcon:blockgarstone>, <moretcon:blockgarstone> * 2, <moretcon:blockgarstone> * 3, <moretcon:blockgarstone> * 4]
+    );
+
+}
 
 
 {//neutron

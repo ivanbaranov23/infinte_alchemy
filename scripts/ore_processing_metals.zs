@@ -117,8 +117,17 @@ import mods.enderio.SagMill;
 
         }
     }
-
+    {//cobalt
+        mods.exnihilocreatio.Hammer.addRecipe(
+            <netherendingores:ore_other_1:4>, <exnihilocreatio:item_ore_cobalt> * 5,
+            0, 1.0, 1.0
+        );
+    }
     {//ardite
+        mods.exnihilocreatio.Hammer.addRecipe(
+            <netherendingores:ore_other_1:2>, <exnihilocreatio:item_ore_ardite> * 5,
+            0, 1.0, 1.0
+        );
         scripts.content_machines.addBioAssemblerRecipe(
             [], <liquid:ardite> * 1500, 
             [

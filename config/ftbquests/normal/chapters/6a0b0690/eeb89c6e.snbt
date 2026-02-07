@@ -1,6 +1,6 @@
 {
-	x: 3.0d,
-	y: -1.0d,
+	x: -3.0d,
+	y: -2.0d,
 	text: [
 		"Can be used in late game. Yes. Late game. For moon ingots."
 	],

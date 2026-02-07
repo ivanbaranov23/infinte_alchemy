@@ -63,3 +63,10 @@ furnace.addRecipe(<quark:glass_shards>, <minecraft:sand>);
 
 
 //elder prismarine
+
+recipes.removeByRecipeName("quark:bark");
+recipes.removeByRecipeName("quark:bark_1");
+recipes.removeByRecipeName("quark:bark_2");
+recipes.removeByRecipeName("quark:bark_3");
+recipes.removeByRecipeName("quark:bark_4");
+recipes.removeByRecipeName("quark:bark_5");

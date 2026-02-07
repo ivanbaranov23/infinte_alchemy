@@ -1,0 +1,32 @@
+{
+	icon: "modularmachinery:sprook_pasture_controller",
+	x: 5.0d,
+	y: -2.0d,
+	dependencies: [
+		"f085eed4"
+	],
+	optional: true,
+	tasks: [{
+		uid: "23c9e011",
+		type: "item",
+		items: [{
+			item: "modularmachinery:sprook_pasture_controller"
+		}]
+	},
+	{
+		uid: "a85da662",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sprook_home"
+		}],
+		count: 9L
+	},
+	{
+		uid: "b8ff8e15",
+		type: "item",
+		items: [{
+			item: "requious:feeder"
+		}],
+		count: 2L
+	}]
+}

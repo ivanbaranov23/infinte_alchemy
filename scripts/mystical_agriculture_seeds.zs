@@ -83,6 +83,15 @@ var seed_items as IItemStack[][IItemStack][int] = {
         <mysticalagriculture:water_seeds>: [
             <cookingforblockheads:sink> * 4, <extrautils2:passivegenerator:3> * 4, <mekanism:machineblock:12> * 4
         ],
+        <mysticalagriculture:ice_seeds>: [
+            <mysticalagriculture:water_essence> * 64, 
+            <thermalexpansion:machine:14>,
+            <extendedcrafting:singularity_custom:14>
+        ],
+        <mysticalagriculture:fire_seeds>: [
+            <mysticalagriculture:water_essence> * 64, <contenttweaker:inversion_dust> * 4, <projectred-expansion:machine2:4> * 16,
+            <tconstruct:firewood:1> * 16, <twilightforest:fiery_blood> * 16, <extrautils2:passivegenerator:5> * 4
+        ],
         <mysticalagriculture:nether_seeds>: [
             <mysticalagriculture:crafting:8>,
             <extrautils2:compressednetherrack:3>, <extendedcrafting:singularity_custom:25>, <extendedcrafting:singularity:4>, <biomesoplenty:flesh> * 256
@@ -112,6 +121,10 @@ var seed_items as IItemStack[][IItemStack][int] = {
         <mysticalagriculture:cobalt_seeds>: [<extendedcrafting:singularity:65> * 4, <mysticalagriculture:iron_essence> * 64, <mysticalagriculture:nether_essence> * 64],
         <mysticalagriculture:ardite_seeds>: [<extendedcrafting:singularity:64> * 4, <mysticalagriculture:iron_essence> * 64, <mysticalagriculture:nether_essence> * 64],
         <mysticalcreations:antimony_seeds>: [<extendedcrafting:singularity_custom:73> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:solder> * 256],
+
+        <mysticalcreations:karmesine_seeds>: [<extendedcrafting:singularity_custom:84> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalcreations:ovium_seeds>: [<extendedcrafting:singularity_custom:85> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalcreations:jauxum_seeds>: [<extendedcrafting:singularity_custom:86> * 4, <mysticalagriculture:iron_essence> * 64],
 
         <mysticalagriculture:silicon_seeds>: [<projectred-core:resource_item:301> * 64],
 

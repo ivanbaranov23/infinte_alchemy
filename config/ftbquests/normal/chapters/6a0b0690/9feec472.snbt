@@ -1,6 +1,6 @@
 {
-	x: 0.0d,
-	y: -3.0d,
+	x: -2.0d,
+	y: -4.0d,
 	text: [
 		"Surrond it with 6 redstone blocks to see diamond and gold blocks! Make sure to do it right next to your expensive machines."
 	],

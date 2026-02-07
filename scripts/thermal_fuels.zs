@@ -118,6 +118,7 @@ function DieselHandler_addFuel(fuel as ILiquidStack, time as int){
     //alt rf = (cap+3)*power
 
     CombustionGen.addCoolant(<liquid:cold_nitrogen>, 1.0 / 6.0);
+    CombustionGen.addCoolant(<liquid:society>, 20.0 / 6.0);
     
     //100.0/6
     //expect  ~730

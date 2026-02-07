@@ -236,7 +236,21 @@ function getColor(v as double){
             <contenttweaker:drone_base>,
             <contenttweaker:robot_arm> * 2,
             <actuallyadditions:item_drill:3>,
-            <contenttweaker:rocket_engine> * 4
+            <contenttweaker:rocket_engine> * 4,
+            <contenttweaker:stealing_computer>,
+            
+        ],
+        null, 40, 4096
+    );
+    scripts.content_machines.addAssemblerRecipe(
+        [<contenttweaker:battle_drone>],
+        [
+            <contenttweaker:drone_base>,
+            <contenttweaker:robot_arm> * 2,
+            <contenttweaker:laser>,
+            <contenttweaker:rocket_engine> * 4,
+            <contenttweaker:battle_computer>,
+            
         ],
         null, 40, 4096
     );
@@ -544,6 +558,39 @@ function addDroneMiningRecipe(chip_data_in as string, out as IItemStack, time_t 
 
 	rec.build();
 }
+function addDroneBattleRecipe(
+    chip_data_in as string, chip_data_out as string, 
+    out as IItemStack, 
+    time_t as int, rft as int, 
+    cat as IItemStack = <contenttweaker:pressure_cutter>, notconsume as bool = true
+){
+    recipes.addShapeless("ia_program_space_navigator_" ~ chip_data_in, <contenttweaker:space_navigator>.withTag({target: chip_data_in}),
+        [
+            <contenttweaker:space_navigator>,
+            <contenttweaker:satellite_chip>,
+            <contenttweaker:space_data>.withTag({data: chip_data_in})
+        ]
+    );
+
+    var rec = RecipeBuilder.newBuilder(chip_data_in ~ "_battle_drone", "satellite_launch_pad", time_t);
+	rec.addEnergyPerTickInput(rft);
+
+	rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: chip_data_in}));
+    rec.addItemOutput(<contenttweaker:space_navigator>.withTag({target: chip_data_out}));
+
+    rec.addItemInput(<contenttweaker:battle_drone>);
+    rec.addItemInput(cat);
+    rec.addItemOutput(<contenttweaker:battle_drone>);
+    if (notconsume) rec.addItemOutput(cat);
+	rec.addFluidInput(<liquid:rocket_fuel> * 2000);
+	
+
+	rec.addItemOutput(out);
+	rec.addItemOutput(out).setChance(0.0);
+	rec.addItemOutput(out).setChance(-1.0);
+
+	rec.build();
+}
 function addDroneVortexRecipe(it_in as IItemStack, it_out as IItemStack, time_t as int, rft as int){
     
 
@@ -587,9 +634,9 @@ addDroneMiningRecipe("ice_comet", <contenttweaker:space_ice_raw> * 16, 20 * 60, 
 addDroneMiningRecipe("moon", <contenttweaker:moon_dust> * 24, 20 * 60, 500 * 1000);
 addDroneMiningRecipe("rock_crystal", <astralsorcery:blockcustomore>, 20 * 60, 500 * 1000);
 
-addDroneMiningRecipe("alien_wreck", <contenttweaker:alien_wreck>, 20 * 60, 500 * 1000, <contenttweaker:webbing_unit>);
-addDroneMiningRecipe("alien_small_outpost", <contenttweaker:alien_wreck> * 4, 20 * 60, 500 * 1000, <contenttweaker:laser>);
-addDroneMiningRecipe("alien_large_outpost", <contenttweaker:alien_wreck> * 64, 20 * 60, 500 * 1000, <contenttweaker:nuke>, false);
+addDroneMiningRecipe("alien_wreck", <contenttweaker:alien_wreck> * 4, 20 * 60, 500 * 1000, <contenttweaker:webbing_unit>);
+addDroneBattleRecipe("alien_small_outpost", "alien_wreck", <contenttweaker:alien_wreck> * 16, 20 * 60, 500 * 1000, <contenttweaker:laser>);
+addDroneBattleRecipe("alien_large_outpost", "alien_wreck", <contenttweaker:alien_wreck> * 64, 20 * 60, 500 * 1000, <contenttweaker:nuke>, false);
 
 {//titanakor
     {

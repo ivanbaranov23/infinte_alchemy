@@ -2,37 +2,49 @@ import mods.modularmachinery.RecipeBuilder;
 import scripts.recycler.addRecycle;
 
 //early game
-recipes.addShaped("mm_tree_powered_compressor_controller",
-    <modularmachinery:tree_powered_compressor_controller>,
-    [[<contenttweaker:simple_motor>, <thermalfoundation:material:24>, <contenttweaker:simple_motor>],
-    [<thermalfoundation:material:320>, <modularmachinery:blockcasing>, <thermalfoundation:material:320>],
-    [<contenttweaker:simple_motor>, <minecraft:furnace>, <contenttweaker:simple_motor>],]
-);
-addRecycle(<modularmachinery:tree_powered_compressor_controller>, [
-	<modularmachinery:blockcasing>, <minecraft:furnace>, 
-	<minecraft:iron_ingot> * 8, <thermalfoundation:material:128> * 8, 
-	<contenttweaker:simple_motor> * 4
-]);
+{recipes.addShaped("mm_tree_powered_compressor_controller",
+		<modularmachinery:tree_powered_compressor_controller>,
+		[[<contenttweaker:simple_motor>, <thermalfoundation:material:24>, <contenttweaker:simple_motor>],
+		[<thermalfoundation:material:320>, <modularmachinery:blockcasing>, <thermalfoundation:material:320>],
+		[<contenttweaker:simple_motor>, <minecraft:furnace>, <contenttweaker:simple_motor>],]
+	);
+	addRecycle(<modularmachinery:tree_powered_compressor_controller>, [
+		<modularmachinery:blockcasing>, <minecraft:furnace>, 
+		<minecraft:iron_ingot> * 8, <thermalfoundation:material:128> * 8, 
+		<contenttweaker:simple_motor> * 4
+	]);
+}
 
 //IE
-recipes.addShaped("mm_high_oven_controller", <modularmachinery:high_oven_controller>, [
-	[<immersiveengineering:stone_decoration:2>, <tconstruct:smeltery_controller>, <immersiveengineering:stone_decoration:2>], 
-	[<morefurnaces:furnaceblock>, <immersiveengineering:metal_decoration0:5>, <morefurnaces:furnaceblock>], 
-	[<immersiveengineering:stone_decoration:2>, <tconstruct:smeltery_controller>, <immersiveengineering:stone_decoration:2>]
-]);
-addRecycle(<modularmachinery:high_oven_controller>, [
-	<immersiveengineering:metal_decoration0:5>, <morefurnaces:furnaceblock> * 2, <tconstruct:smeltery_controller> * 2,
-	<immersiveengineering:stone_decoration:2> * 4
-]);
-recipes.addShaped("mm_garden_cloche_controller", <modularmachinery:garden_cloche_controller>, [
-	[<ore:plankTreatedWood>, <contenttweaker:greenhouse_lamps>, <ore:plankTreatedWood>], 
-	[<botania:fertilizer>, <immersiveengineering:metal_decoration0:5>, <botania:fertilizer>], 
-	[<ore:plankTreatedWood>, <extendedcrafting:singularity_custom:100>, <ore:plankTreatedWood>]
-]);
-addRecycle(<modularmachinery:garden_cloche_controller>, [
-	<immersiveengineering:metal_decoration0:5>, <contenttweaker:greenhouse_lamps>, <botania:fertilizer> * 2, <extendedcrafting:singularity_custom:100>,
-	<immersiveengineering:treated_wood> * 4
-]);
+{recipes.addShaped("mm_high_oven_controller", <modularmachinery:high_oven_controller>, [
+		[<immersiveengineering:stone_decoration:2>, <tconstruct:smeltery_controller>, <immersiveengineering:stone_decoration:2>], 
+		[<morefurnaces:furnaceblock>, <immersiveengineering:metal_decoration0:5>, <morefurnaces:furnaceblock>], 
+		[<immersiveengineering:stone_decoration:2>, <tconstruct:smeltery_controller>, <immersiveengineering:stone_decoration:2>]
+	]);
+	addRecycle(<modularmachinery:high_oven_controller>, [
+		<immersiveengineering:metal_decoration0:5>, <morefurnaces:furnaceblock> * 2, <tconstruct:smeltery_controller> * 2,
+		<immersiveengineering:stone_decoration:2> * 4
+	]);
+}
+{recipes.addShaped("mm_garden_cloche_controller", <modularmachinery:garden_cloche_controller>, [
+		[<ore:plankTreatedWood>, <contenttweaker:greenhouse_lamps>, <ore:plankTreatedWood>], 
+		[<botania:fertilizer>, <immersiveengineering:metal_decoration0:5>, <botania:fertilizer>], 
+		[<ore:plankTreatedWood>, <extendedcrafting:singularity_custom:100>, <ore:plankTreatedWood>]
+	]);
+	addRecycle(<modularmachinery:garden_cloche_controller>, [
+		<immersiveengineering:metal_decoration0:5>, <contenttweaker:greenhouse_lamps>, <botania:fertilizer> * 2, <extendedcrafting:singularity_custom:100>,
+		<immersiveengineering:treated_wood> * 4
+	]);
+}
+{recipes.addShaped("mm_heat_engine_controller", <modularmachinery:heat_engine_controller>, [
+		[<prodigytech:ferramic_block>, <prodigytech:heat_capacitor_1>, <prodigytech:ferramic_block>], 
+		[<prodigytech:circuit_refined>, <extrautils2:machine>, <prodigytech:circuit_refined>], 
+		[<prodigytech:ferramic_block>, <prodigytech:heat_capacitor_1>, <prodigytech:ferramic_block>]
+	]);
+	addRecycle(<modularmachinery:garden_cloche_controller>, [
+		<extrautils2:machine>, <prodigytech:circuit_refined> * 2, <prodigytech:heat_capacitor_1> * 2, <prodigytech:ferramic_block> * 4
+	]);
+}
 
 //XU
 recipes.addShaped("mm_research_station_controller", <modularmachinery:research_station_controller>, [
@@ -60,10 +72,16 @@ recipes.addShaped("mm_large_sifter", <modularmachinery:large_sifter_controller>,
 	[<contenttweaker:mushroomite_plate>, <excompressum:auto_heavy_sieve>, <contenttweaker:mushroomite_plate>], 
 	[<ore:foodNoodles>, <thermalexpansion:augment:497>, <ore:foodNoodles>]
 ]);
+addRecycle(<modularmachinery:large_sifter_controller>, [
+	<excompressum:auto_heavy_sieve>,<thermalexpansion:augment:497> * 2, <contenttweaker:mushroomite_ingot> * 8
+]);
 recipes.addShaped("mm_plant_station_controller", <modularmachinery:plant_station_controller>, [
 	[<betternether:cincinnasite_forged>, <erebus:planks_petrified_wood>, <betternether:cincinnasite_forged>], 
 	[<contenttweaker:geb_godshard>, <thermalexpansion:frame>, <contenttweaker:geb_godshard>], 
 	[<betternether:cincinnasite_forged>, <erebus:planks_petrified_wood>, <betternether:cincinnasite_forged>]
+]);
+addRecycle(<modularmachinery:plant_station_controller>, [
+	<thermalexpansion:frame>,<erebus:planks_petrified_wood> * 2, <betternether:cincinnasite_forged> * 4, <contenttweaker:geb_godshard> * 2
 ]);
 
 recipes.addShaped("bug_hill_controller", <modularmachinery:bug_hill_controller>, [
@@ -71,11 +89,17 @@ recipes.addShaped("bug_hill_controller", <modularmachinery:bug_hill_controller>,
 	[<twilightforest:borer_essence>, <thermalexpansion:frame>, <twilightforest:borer_essence>], 
 	[<erebus:materials:15>, <thermalexpansion:device:9>, <erebus:materials:15>]
 ]);
+addRecycle(<modularmachinery:bug_hill_controller>, [
+	<thermalexpansion:frame>,<twilightforest:borer_essence> * 2, <excompressum:auto_heavy_sieve>, <thermalexpansion:device:9>, <erebus:materials:15> * 4
+]);
 
 recipes.addShaped("fish_tank_controller", <modularmachinery:fish_tank_controller>, [
 	[<minecraft:sea_lantern>, <thermalfoundation:tool.fishing_rod_platinum>, <minecraft:sea_lantern>], 
 	[<harvestcraft:watertrap>, <thermalexpansion:frame>, <harvestcraft:watertrap>], 
 	[<minecraft:sea_lantern>, <thermalexpansion:device:4>, <minecraft:sea_lantern>]
+]);
+addRecycle(<modularmachinery:fish_tank_controller>, [
+	<thermalexpansion:frame>,<thermalexpansion:device:4>, <minecraft:sea_lantern> * 4, <harvestcraft:watertrap> * 2
 ]);
 
 //mek
@@ -136,8 +160,22 @@ recipes.addShaped("mm_bonsai_controller", <modularmachinery:bonsai_controller>, 
 	[<bonsaitrees:bonsaipot:1>, <enderio:item_material>, <bonsaitrees:bonsaipot:1>], 
 	[<actuallyadditions:block_misc:4>, <engineersdecor:small_tree_cutter>, <actuallyadditions:block_misc:4>]
 ]);
+{recipes.addShaped("mm_sprook_pasture_controller", <modularmachinery:sprook_pasture_controller>, [
+		[<moreplates:soularium_gear>, <contenttweaker:sprooks1>, <moreplates:soularium_gear>], 
+		[<simplyjetpacks:metaitemmods:12>, <enderio:item_material:53>, <simplyjetpacks:metaitemmods:12>], 
+		[<moreplates:soularium_gear>, <enderio:item_capacitor_crystalline>, <moreplates:soularium_gear>]
+	]);
+	addRecycle(<modularmachinery:sprook_pasture_controller>, [
+		<enderio:item_material:53>, <contenttweaker:sprooks1>, <enderio:item_capacitor_crystalline>, <enderio:item_alloy_ingot:7> * 32,
+		<simplyjetpacks:metaitemmods:12> * 2
+	]);
 
-
+	recipes.addShaped("mm_sprook_home", <contenttweaker:sprook_home>, [
+		[<cookingforblockheads:fridge>, <simplyjetpacks:metaitemmods:12>, <cookingforblockheads:sink>], 
+		[<cookingforblockheads:oven>, <simplyjetpacks:metaitemmods:12>, <cookingforblockheads:cooking_table>], 
+		[<immersivepetroleum:stone_decoration>, <immersivepetroleum:stone_decoration>, <immersivepetroleum:stone_decoration>]
+	]);
+}
 recipes.addShaped("mm_air_collector_controller", <modularmachinery:air_collector_controller>, [
 	[<enderio:item_material:73>, <enderio:item_capacitor_crystalline>, <enderio:item_material:73>], 
 	[<contenttweaker:peridotite_sheet>, <enderio:item_material:66>, <contenttweaker:peridotite_sheet>], 
@@ -239,6 +277,16 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:rune_cracker_
 	[<botania:quartz:6>, <contenttweaker:rune_base>, <contenttweaker:improved_rune_base>, <contenttweaker:improved_rune_base>, <contenttweaker:improved_rune_base>, <contenttweaker:rune_base>, <botania:quartz:6>], 
 	[<botania:quartztypesunny>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartz:6>, <botania:quartztypesunny>]
 ]);
+{
+	mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:sin_burner_controller>, [
+		[<contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>, <contenttweaker:rune_cyclic>, <contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>], 
+		[<contenttweaker:shadowglass_cloth>, <contenttweaker:elf_mana_circuit>, <contenttweaker:death_metal_plate>, <contenttweaker:elf_mana_circuit>, <contenttweaker:shadowglass_cloth>], 
+		[<contenttweaker:sin_nickel_ingot>, <contenttweaker:elemental_essence>, <contenttweaker:mana_frame>, <contenttweaker:elemental_essence>, <contenttweaker:sin_nickel_ingot>], 
+		[<contenttweaker:shadowglass_cloth>, <contenttweaker:elf_mana_circuit>, <contenttweaker:death_metal_plate>, <contenttweaker:elf_mana_circuit>, <contenttweaker:shadowglass_cloth>], 
+		[<contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>, <contenttweaker:rune_cyclic>, <contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>]
+	]);
+
+}
 
 //astral
 mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:satellite_launch_pad_controller>, [

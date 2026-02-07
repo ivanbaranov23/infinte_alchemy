@@ -321,7 +321,10 @@ scripts.content_machines.addFluidMixerRecipe(
             <liquid:palladium_fluid> * 10
         ], [], <liquid:dore> * 300, 1000 * 20, 20, []
     );
-
+    mods.mekanism.reaction.addRecipe(
+        <alchemistry:element:56>, <liquid:dore> * 125, <gas:oxygen> * 100, 
+        <alchemistry:element:56>, <gas:waste_gas> * 300, 9000, 60
+    );
 }
 {//bauxite
     //bauxite
@@ -643,4 +646,65 @@ scripts.content_machines.addFluidMixerRecipe(
         40, 20000
     );
 
+}
+
+{//moretcon alt recs
+    //garstone
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <moretcon:gemgarstone>, 
+        <thermalfoundation:material:893>, <contenttweaker:glowcrystal>, <liquid:valyrium_fluid> * 288, 
+        40, 1000
+    );
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<moretcon:gemgarstone> * 4], null, 
+        [
+            <thermalfoundation:material:893>, <contenttweaker:glowcrystal>,
+            <taiga:valyrium_ingot>,
+            <deepmoblearning:living_matter_overworldian> * 4
+        ], [
+            
+        ], <contenttweaker:research_chemistry3>,
+        10, 1000
+    );
+
+    
+    //electarite
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <moretcon:gemelectarite>, 
+        <contenttweaker:electric_manyullyn_ingot> * 3, <contenttweaker:glowcrystal>, <liquid:emolachite> * 250, 
+        40, 1000
+    );
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<moretcon:gemelectarite> * 4], null, 
+        [
+            <contenttweaker:electric_manyullyn_ingot> * 3, <contenttweaker:glowcrystal>,
+            <deepmoblearning:living_matter_overworldian> * 4
+        ], [
+            <liquid:emolachite> * 250
+        ], <contenttweaker:research_chemistry3>,
+        10, 1000
+    );
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<moretcon:gemelectarite> * 8], null, 
+        [
+            <contenttweaker:electric_manyullyn_ingot> * 3, <contenttweaker:scandium_dust>,
+            <deepmoblearning:living_matter_overworldian> * 4
+        ], [
+            <liquid:emolachite> * 250
+        ], <contenttweaker:research_chemistry3>,
+        10, 1000
+    );
+
+
+    //erythynite
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<moretcon:gemerythynite> * 4], null, 
+        [
+            <contenttweaker:caelumite_dust> * 3, <taiga:jauxum_dust>, <contenttweaker:glowcrystal> * 2,
+            <deepmoblearning:living_matter_hellish> * 4, <alchemistry:element:89> * 8
+        ], [
+            <liquid:radioactive_waste> * 250
+        ], <contenttweaker:research_chemistry3>,
+        10, 1000
+    );
 }

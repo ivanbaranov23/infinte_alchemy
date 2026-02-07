@@ -203,6 +203,14 @@ Fey.addRecipe("ia_runic_crafter", <roots:runic_crafter>,
         <roots:bark_wildwood>,
         <roots:bark_wildwood>
     ]);
+    Fey.removeRecipe(<roots:terrastone_pickaxe>);
+    Fey.addRecipe("terrastone_pick", <roots:terrastone_pickaxe>, [
+        <exnihilocreatio:hammer_diamond>,
+        <roots:terra_moss>,
+        <roots:living_pickaxe>,
+        <roots:bark_wildwood>,
+        <roots:bark_wildwood>
+    ]);
 
 
     recipes.addShaped("ia_arrowrootitem", <harvestcraft:arrowrootitem>, [

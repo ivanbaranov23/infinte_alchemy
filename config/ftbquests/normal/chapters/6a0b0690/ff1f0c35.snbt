@@ -1,7 +1,7 @@
 {
 	icon: "modularmachinery:carmine_reactor_controller",
-	x: 1.0d,
-	y: -4.0d,
+	x: -1.0d,
+	y: -5.0d,
 	dependencies: [
 		"9feec472",
 		"bee5a8c6"

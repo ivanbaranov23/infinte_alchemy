@@ -86,6 +86,14 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         <harvestcraft:cuttingboarditem>.reuse(), <minecraft:skull:2>
     ]);
 
+    addRootsSummoning(<entity:minecraft:zombie_villager>, [
+        <mysticalagriculture:storage>, <xreliquary:mob_ingredient:6>, <minecraft:emerald_block>
+    ]);
+    addJEIentityHint(
+        [], null, "minecraft:zombie_villager",
+        [<darkutils:trap_tile:1> | <minecraft:splash_potion>.withTag({Potion: "minecraft:long_weakness"}), <minecraft:golden_apple>], null,
+        [], null, "minecraft:villager"
+    );
 
     //skeleton
     readdRootsSummoning(<entity:minecraft:skeleton>, [
@@ -119,6 +127,15 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
     readdRootsSummoning(<entity:minecraft:witch>, [
         <mysticalagriculture:storage>, <minecraft:redstone>, <minecraft:glowstone_dust>, <minecraft:sugar>, <minecraft:glass_bottle>
     ]);
+
+
+    //enderman
+    scripts.helper.addSimpleCrushingRecipe(<minecraft:ender_pearl>, <appliedenergistics2:material:46>);
+    mods.roots.Mortar.addRecipe("enderpearl",
+        <appliedenergistics2:material:46>,
+        [<minecraft:ender_pearl>]
+    );
+
 
     //golem
     addRootsSummoning(<entity:minecraft:villager_golem>, [

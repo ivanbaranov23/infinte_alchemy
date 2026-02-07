@@ -19,7 +19,7 @@ function addRecycle(machine as IItemStack, loot as IItemStack[]){
         var recipe = AssemblyRecipe.create(function(container) {
             for item in loot{
                 var iitem = item;
-                container.addItemOutput("output", iitem.withLore(["Base chance: 30% + 1% * luck"]));
+                container.addItemOutput("output", iitem.withLore(["Base chance: 50% + 1% * luck"]));
             }
         });
 
@@ -32,7 +32,7 @@ function addRecycle(machine as IItemStack, loot as IItemStack[]){
         var recipe = AssemblyRecipe.create(function(container) {
             
             for i in 0 to loot.length{
-                if (container.random.nextDouble() < 0.3) //>
+                if (container.random.nextDouble() < 0.5) //>
                     container.addItemOutput("output" ~ i, loot[i]);
             }
         });
@@ -58,7 +58,7 @@ function addRecycle(machine as IItemStack, loot as IItemStack[]){
 
             
             for i in 0 to loot.length{
-                var chance as double = 0.3 + (0.01 * luck);
+                var chance as double = 0.5 + (0.01 * luck);
                 if (container.random.nextDouble() < chance) //>
                     container.addItemOutput("output" ~ i, loot[i]);
             }

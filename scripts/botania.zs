@@ -318,8 +318,9 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
     ]);
 
     //this flower is stupid
-    Apothecary.removeRecipe("arcanerose");
-    mods.jei.JEI.removeAndHide(<botania:specialflower>.withTag({type: "arcanerose"}));
+    //why?
+    //Apothecary.removeRecipe("arcanerose");
+    //mods.jei.JEI.removeAndHide(<botania:specialflower>.withTag({type: "arcanerose"}));
 
     Apothecary.removeRecipe("entropinnyum");
     Apothecary.addRecipe("entropinnyum", [
@@ -375,6 +376,15 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
         <botania:petalblock:11>
     ]);
     
+
+    Apothecary.removeRecipe("fallenKanade");
+    Apothecary.addRecipe("fallenKanade", [
+        <contenttweaker:revived_bush>,
+        <modularmachinery:regen_chamber_controller>,
+        <contenttweaker:petals2>,
+        <contenttweaker:petals1>,
+        <botania:rune:4>
+    ]);
 }
 recipes.addShapeless("ia_ancient_wood", <contenttweaker:ancient_wood>, [
     <botania:specialflower>,

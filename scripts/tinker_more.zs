@@ -19,11 +19,9 @@ recipes.addShapeless("ia_carbonpile_alt3", <moretcon:carbonpile>, [
 ]);
 
 
-
-
-
-recipes.remove(<moretcon:hydrogenrichredstonepowder>);
-mods.mekanism.reaction.addRecipe(
-    <extendedcrafting:singularity:3>, <liquid:dense_hydrogen> * 4000, <gas:nether_star_solution> * 2000, 
-    <moretcon:hydrogenrichredstonepowder>, <gas:waste_gas> * 100, 1500, 60
+mods.thermalexpansion.Transposer.addFillRecipe(
+    <moretcon:repitem:3>, 
+    <moretcon:gemerythynite>, 
+    <liquid:liquidebonite> * 144, 10000
 );
+
