@@ -18,6 +18,8 @@ import mods.requious.Assembly;
 
 import mods.requious.AssemblyRecipe;
 
+import mods.modularmachinery.RecipeBuilder;
+
 {//life
     print("[living] doing life essence");
     val raw_life as IItemStack[][int] = {
@@ -156,6 +158,7 @@ static livings as IItemStack[string] = {
     baby_hair_thing: <contenttweaker:lv_baby_hair_thing>,
 
     nitrall: <contenttweaker:nitrall>,
+    snek_plant: <contenttweaker:lv_plant>,
 
     zanite_frog: <contenttweaker:lv_zanite_frog>,
 
@@ -187,6 +190,7 @@ static animal_type as string[string] = {
     baby_hair_thing: "f1",
 
     nitrall: "f1",
+    snek_plant: "f1",
 
     zanite_frog: "f1",
 
@@ -234,6 +238,10 @@ static foods as int[][IItemStack][string] = {
 
     nitrall: {
         <contenttweaker:nether_pest>: [10, 20]
+    },
+    snek_plant: {
+        <contenttweaker:fertilizer3>: [10, 20],
+        <contenttweaker:fertilizer4>: [30, 70]
     },
 
     zanite_frog: {
@@ -313,6 +321,9 @@ static products as int[IItemStack][string] = {
 
     nitrall: {
         <contenttweaker:nitrall>.withTag({food: 30}): 50
+    },
+    snek_plant: {
+        <contenttweaker:leaf>: 25
     },
 
     zanite_frog: {
@@ -475,6 +486,18 @@ function add_f1(name as string) as string[]{
                 } );
             }, null
         );
+        recipes.addShapeless(name ~ "_feeding2_" ~ food.name, livings[name],
+            [livings[name].only(isAlive).marked("mark"), food, food, food, food, <contenttweaker:research_living>.reuse()],
+            
+            function(out, ins, cInfo){
+                var range as int = (foods[name][food][1] - foods[name][food][0]) * 4 + 1;
+                var value as int = ((Math.floor(Math.random() * range) + foods[name][food][0] * 4) as IData).asInt();
+                
+                return ins.mark.withTag( {
+                    food: ins.mark.tag.food.asInt() + value
+                } );
+            }, null
+        );
     }
 
     //product
@@ -489,6 +512,16 @@ function add_f1(name as string) as string[]{
                 } );
             })]
         );
+        recipes.addShapeless(name ~ "_product2_" ~ product.name, product * (product.amount * 8),
+            [livings[name].only(isAlive).transformNew(function(item){
+                return item.withTag( {
+                    food: item.tag.food.asInt() - products[name][product] * 8,
+                    //lifespan: ((ls >= 1000) ? 1000 : (ls - 1))
+                } );
+            }), <contenttweaker:research_living>.reuse()]
+        );
+
+        
     }
 
     //work
@@ -560,6 +593,19 @@ function add_f1l(name as string) as string[]{
                 } );
             }, null
         );
+        recipes.addShapeless(name ~ "_feeding2_" ~ food.name, livings[name],
+            [livings[name].only(isAlive).marked("mark"), food, food, food, food, <contenttweaker:research_living>.reuse()],
+            
+            function(out, ins, cInfo){
+                var range as int = (foods[name][food][1] - foods[name][food][0]) * 4 + 1;
+                var value as int = ((Math.floor(Math.random() * range) + foods[name][food][0] * 4) as IData).asInt();
+                
+                return ins.mark.withTag( {
+                    food: ins.mark.tag.food.asInt() + value,
+                    lifespan: ins.mark.tag.lifespan.asInt()
+                } );
+            }, null
+        );
     }
 
     //products
@@ -573,6 +619,14 @@ function add_f1l(name as string) as string[]{
                     lifespan: item.tag.lifespan.asInt() - 1
                 } );
             })]
+        );
+        recipes.addShapeless(name ~ "_product2_" ~ product.name, product * (product.amount * 8),
+            [livings[name].only(isAlive).transformNew(function(item){
+                return item.withTag( {
+                    food: item.tag.food.asInt() - products[name][product] * 8,
+                    lifespan: item.tag.lifespan.asInt() - 1
+                } );
+            }), <contenttweaker:research_living>.reuse()]
         );
     }
 
@@ -876,6 +930,35 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
             })
         ]
     );
+}
+{//snek plant
+    {
+        var rec = RecipeBuilder.newBuilder("lv_snek_plant", "plant_station", 20 * 30);
+
+        rec.addEnergyPerTickInput(100 * 1000);
+
+        rec.addItemOutput(<contenttweaker:lv_plant>.withTag({food: 10}));
+        
+
+        rec.addItemInput(<contenttweaker:fertilizer3> * 64);
+        rec.addInputs(
+            <alchemistry:ingot:23> * 8,
+            <twilightforest:naga_scale> * 8,
+            <mysticalagriculture:mystical_fertilizer> * 4
+        );
+        
+        
+        rec.addItemInput(<contenttweaker:research_plants1>).setChance(0.0);
+        
+        rec.build();
+    }
+
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <twilightforest:naga_scale>, 
+        <contenttweaker:leaf>, <twilightforest:ironwood_ingot>, 
+        3000
+    );
+
 }
 {//blood slime
     addVitamins("blood_slime");

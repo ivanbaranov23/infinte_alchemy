@@ -122,3 +122,12 @@ addAssemblerRecipe([<contenttweaker:atomic_clock>], [
 	);
 
 }
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:lazy_chip>, [
+	[null, null, null, <contenttweaker:neuro_crystal2>, null, null, null], 
+	[null, null, <contenttweaker:neuro_crystal2>, <contenttweaker:neuro_singularity>, <contenttweaker:neuro_crystal2>, null, null], 
+	[null, <contenttweaker:neuro_crystal2>, <contenttweaker:neuronium_gear>, <contenttweaker:layered_processor>, <contenttweaker:neuronium_gear>, <contenttweaker:neuro_crystal2>, null], 
+	[<contenttweaker:neuro_crystal2>, <contenttweaker:neuro_singularity>, <contenttweaker:layered_processor>, <botania:rune:12>, <contenttweaker:layered_processor>, <contenttweaker:neuro_singularity>, <contenttweaker:neuro_crystal2>], 
+	[null, <contenttweaker:neuro_crystal2>, <contenttweaker:neuronium_gear>, <contenttweaker:layered_processor>, <contenttweaker:neuronium_gear>, <contenttweaker:neuro_crystal2>, null], 
+	[null, null, <contenttweaker:neuro_crystal2>, <contenttweaker:neuro_singularity>, <contenttweaker:neuro_crystal2>, null, null], 
+	[null, null, null, <contenttweaker:neuro_crystal2>, null, null, null]
+]);

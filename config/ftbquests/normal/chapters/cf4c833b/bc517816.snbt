@@ -1,0 +1,11 @@
+{
+	x: 0.5d,
+	y: 3.0d,
+	tasks: [{
+		uid: "fcf023f1",
+		type: "item",
+		items: [{
+			item: "modularmachinery:heat_engine_controller"
+		}]
+	}]
+}

@@ -196,3 +196,12 @@ function addStaffFinish(staff as IItemStack){
 
     addStaffFinish(<contenttweaker:staffwood_ice>);
 }
+
+{//fey
+    recipes.addShaped("ia_staffwood_fey", <contenttweaker:staffwood_fey>, [
+        [<contenttweaker:staffwood_mushroom>, <contenttweaker:fey_ingot>, <botania:manaresource:8>], 
+        [<contenttweaker:fey_ingot>, <botania:manaresource:8>, <contenttweaker:fey_ingot>], 
+        [<botania:manaresource:8>, <contenttweaker:fey_ingot>, <contenttweaker:staffwood_fire>]
+    ]);
+    
+}

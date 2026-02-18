@@ -1,0 +1,26 @@
+{
+	title: "Alt steel recipe",
+	x: 3.0d,
+	y: 3.0d,
+	text: [
+		"You can make cactus charcoal and pour some iron on it to make raw steel. Raw steel cooks faster and gives 2 steel."
+	],
+	dependencies: [
+		"837cf6f5"
+	],
+	optional: true,
+	tasks: [{
+		uid: "18c71c04",
+		type: "item",
+		items: [{
+			item: "moretcon:carbonpile"
+		}]
+	},
+	{
+		uid: "7925a9d5",
+		type: "item",
+		items: [{
+			item: "moretcon:rawsteel"
+		}]
+	}]
+}

@@ -225,7 +225,7 @@ addBiolabRecipe(
                 <bloodmagic:component:5> * 4,
                 <contenttweaker:life>
             ], [
-                <liquid:cool_soup> * 3000,
+                <liquid:superorganic_green> * 10000,
                 <liquid:sentient_metal> * 72
             ], [],
             60, 3000, 1200
@@ -240,7 +240,7 @@ addBiolabRecipe(
                 <bloodmagic:component:8>,
                 <contenttweaker:life>
             ], [
-                <liquid:cool_soup> * 3000,
+                <liquid:superorganic_green> * 10000,
                 <liquid:sentient_metal> * 72
             ], [],
             40, 3000, 1200
@@ -255,7 +255,7 @@ addBiolabRecipe(
                 <bloodmagic:component:30>,
                 <contenttweaker:life>
             ], [
-                <liquid:cool_soup> * 3000,
+                <liquid:superorganic_green> * 10000,
                 <liquid:sentient_metal> * 72
             ], [],
             60, 3000, 1200
@@ -270,7 +270,7 @@ addBiolabRecipe(
                 <contenttweaker:reagent_wood> * 2,
                 <contenttweaker:life>
             ], [
-                <liquid:cool_soup> * 3000,
+                <liquid:superorganic_green> * 10000,
                 <liquid:sentient_metal> * 72
             ], [],
             60, 3000, 1200
@@ -285,7 +285,7 @@ addBiolabRecipe(
                 <contenttweaker:reagent_oil> * 12,
                 <contenttweaker:life>
             ], [
-                <liquid:cool_soup> * 3000,
+                <liquid:superorganic_green> * 10000,
                 <liquid:sentient_metal> * 72
             ], [],
             60, 3000, 1200
@@ -300,7 +300,7 @@ addBiolabRecipe(
                 <bloodmagic:component:31> * 6,
                 <contenttweaker:life>
             ], [
-                <liquid:cool_soup> * 3000,
+                <liquid:superorganic_green> * 10000,
                 <liquid:sentient_metal> * 72
             ], [],
             60, 3000, 1200
@@ -315,7 +315,7 @@ addBiolabRecipe(
                 <contenttweaker:reagent_mushroom>,
                 <contenttweaker:life>
             ], [
-                <liquid:cool_soup> * 3000,
+                <liquid:superorganic_green> * 10000,
                 <liquid:sentient_metal> * 72
             ], [],
             40, 3000, 1200

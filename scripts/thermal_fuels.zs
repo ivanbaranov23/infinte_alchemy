@@ -60,7 +60,7 @@ function DieselHandler_addFuel(fuel as ILiquidStack, time as int){
 {//NumisticDynamo
     NumisticDynamo.addGemFuel(<erebus:materials:11>, 250*1000);
 
-    NumisticDynamo.addGemFuel(<contenttweaker:malachite_vase>, 2000000);
+    NumisticDynamo.addGemFuel(<contenttweaker:malachite_vase>, 16 * 1000 * 1000);
     NumisticDynamo.addGemFuel(<contenttweaker:gem_steel_ingot>, 1000*1000*1000);
 
     NumisticDynamo.addGemFuel(<aether_legacy:ambrosium_shard>, 350*1000);

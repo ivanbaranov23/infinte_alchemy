@@ -1,0 +1,7 @@
+{
+    "test_slab": {
+        "type": "slab",
+        "material": "wood",
+        "soundType": "wood"
+    }
+}

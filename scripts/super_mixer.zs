@@ -36,23 +36,7 @@ import mods.modularmachinery.RecipeModifierBuilder;
     rec.build();
 }
 
-{var rec = RecipeBuilder.newBuilder("insane_lava", "super_mixer", 20 * 1);
 
-    rec.addEnergyPerTickInput(2560000);
-
-    rec.addItemInput(<bloodmagic:lava_crystal>);
-    
-    rec.addFluidInput(<liquid:rocket_fuel> * 500);
-    rec.addFluidInput(<liquid:super_heat_lava> * 2000);
-    rec.addFluidInput(<liquid:blutonium> * 288);
-    rec.addGridPowerInput(300);
-    rec.addManaInput(100000, false);
-
-    
-    rec.addFluidOutput(<liquid:insane_heat_lava> * 1000);
-
-    rec.build();
-}
 
 {var rec = RecipeBuilder.newBuilder("flower_plasma", "super_mixer", 20 * 1);
 

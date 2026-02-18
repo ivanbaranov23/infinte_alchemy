@@ -114,13 +114,7 @@ recipes.addShapeless("ia_coke_dust", <immersiveengineering:material:17> * 4, [
     <ore:fuelCoke>, <ore:fuelCoke>, <ore:fuelCoke>, <ore:fuelCoke>
 ]);
 
-//organic green
-mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 1000, <liquid:water> * 1000, [<roots:terra_moss>, <ore:dyeGreen>], 2000);
-mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 2000, <liquid:milk> * 2000, [<roots:terra_moss>, <ore:dyeGreen>], 2000);
-mods.thermalexpansion.Imbuer.addRecipe(<liquid:organic_green> * 1000, <roots:terra_moss>, <liquid:water> * 1000, 2000);
-mods.thermalexpansion.Imbuer.addRecipe(<liquid:organic_green> * 2000, <roots:terra_moss>, <liquid:milk> * 2000, 2000);
 
-mods.alchemistry.Evaporator.addRecipe(<enderio:item_material:48>, <liquid:organic_green> * 250);
 
 //flolit
 mods.tconstruct.Casting.addTableRecipe(<contenttweaker:flolit_dust>, <contenttweaker:flolit>, <liquid:ferramic>, 288, true);

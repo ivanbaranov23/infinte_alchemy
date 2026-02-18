@@ -4,8 +4,12 @@ recipes.addShaped("flapper", <contenttweaker:flapper>, [
 	[<contenttweaker:angel_gear>, <openblocks:generic>],
 	[<immersiveengineering:cloth_device:1>, <immersiveengineering:metal_decoration0:3>]
 ]);
+recipes.addShaped("flapper2", <contenttweaker:flapper> * 2, [
+	[<contenttweaker:angel_gear>, <openblocks:generic>, <contenttweaker:research_flight1>.reuse()],
+	[<immersiveengineering:cloth_device:1>, <immersiveengineering:metal_decoration0:3>, null]
+]);
 scripts.content_machines.addAssemblerRecipe(
-	[<contenttweaker:flapper> * 3], 
+	[<contenttweaker:flapper> * 4], 
 	[
 		<contenttweaker:angel_gear>, <openblocks:hang_glider>,
 		<immersiveengineering:cloth_device:1>, <immersiveengineering:metal_decoration0:3>
@@ -63,7 +67,7 @@ recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshaped16");
 scripts.helper.addCarryRecipe(<simplyjetpacks:itemjetpack:17>, <simplyjetpacks:itemjetpack:16>, [
 	[<thermalfoundation:material:354>, <thermalexpansion:capacitor:1>, <thermalfoundation:material:354>],
 	[<contenttweaker:flapper>, <contenttweaker:flapper>],
-	[<simplyjetpacks:metaitemmods:21>, <thermalfoundation:armor.plate_invar>, <simplyjetpacks:metaitemmods:21>]
+	[<simplyjetpacks:metaitemmods:21>, <contenttweaker:research_flight1>.reuse(), <simplyjetpacks:metaitemmods:21>]
 ]);
 //recipes.remove(<simplyjetpacks:itemjetpack:18>);
 recipes.removeByRecipeName("simplyjetpacks:upgraderecipeshaped17");

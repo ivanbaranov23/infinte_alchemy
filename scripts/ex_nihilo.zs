@@ -442,6 +442,17 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 
 		<biomesoplenty:dried_sand>: [
 			<contenttweaker:antimony_pieces> % 50
+		],
+		<biomesoplenty:flesh>: [
+			<mod_lavacow:mousse> % 25,
+			<minecraft:porkchop> % 2,
+			<minecraft:beef> % 2,
+			<minecraft:chicken> % 2,
+			<minecraft:rabbit> % 2,
+			<minecraft:mutton> % 2,
+			<harvestcraft:turkeyrawitem> % 2,
+			<harvestcraft:venisonrawitem> % 2,
+			<harvestcraft:duckrawitem> % 2,
 		]
 	},
 	diamondMesh: {

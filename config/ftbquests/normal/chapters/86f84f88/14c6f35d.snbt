@@ -1,0 +1,73 @@
+{
+	title: "Research flight",
+	icon: "contenttweaker:research_flight1",
+	x: 1.0d,
+	y: 1.0d,
+	shape: "gear",
+	text: [
+		""
+	],
+	dependencies: [
+		"c529d48c"
+	],
+	tasks: [{
+		uid: "e57ebeed",
+		type: "item",
+		items: [{
+			item: "contenttweaker:angel_gear"
+		}],
+		count: 4L
+	},
+	{
+		uid: "81510daf",
+		type: "item",
+		items: [{
+			item: "contenttweaker:glow_bucket"
+		}],
+		count: 2L
+	},
+	{
+		uid: "acde258e",
+		type: "item",
+		items: [{
+			item: "extrautils2:angelblock"
+		}],
+		count: 12L
+	},
+	{
+		uid: "a53b910b",
+		type: "item",
+		items: [{
+			item: "quark:gravisand"
+		}],
+		count: 24L
+	},
+	{
+		uid: "3f3146e5",
+		type: "item",
+		items: [{
+			item: "roots:mystic_feather"
+		}],
+		count: 8L
+	},
+	{
+		uid: "8641c102",
+		type: "item",
+		items: [{
+			item: "tconstruct:slimesling"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "5da00eb8",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_flight1"
+		}]
+	}],
+	rewards: [{
+		uid: "acf7ea91",
+		type: "item",
+		item: "contenttweaker:research_flight1"
+	}]
+}

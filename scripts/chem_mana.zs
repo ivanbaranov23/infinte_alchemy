@@ -334,6 +334,22 @@ import mods.modularmachinery.RecipeBuilder;
     );
 }
 
+{//organic green
+    mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 1000, <liquid:water> * 1000, [<roots:terra_moss>, <ore:dyeGreen>], 2000);
+    mods.immersiveengineering.Mixer.addRecipe(<liquid:organic_green> * 2000, <liquid:milk> * 2000, [<roots:terra_moss>, <ore:dyeGreen>], 2000);
+    mods.thermalexpansion.Imbuer.addRecipe(<liquid:organic_green> * 1000, <roots:terra_moss>, <liquid:water> * 1000, 2000);
+    mods.thermalexpansion.Imbuer.addRecipe(<liquid:organic_green> * 2000, <roots:terra_moss>, <liquid:milk> * 2000, 2000);
+
+    mods.alchemistry.Evaporator.addRecipe(<enderio:item_material:48>, <liquid:organic_green> * 250);
+
+
+    mods.enderio.Vat.addRecipe(
+        <liquid:superorganic_green> * 1000, 0.25, <liquid:organic_green> * 1000, 
+        [<twilightforest:steeleaf_ingot>, <contenttweaker:steeleaf_mush>], [1.0, 1.5], 
+        [<immersiveengineering:metal:14>, <bigreactors:dustyellorium>, <moretcon:dustirradium>], [1.0, 1.0, 2.0], 
+        100000
+    );
+}
 
 {//sulfur
     mods.mekanism.reaction.addRecipe(

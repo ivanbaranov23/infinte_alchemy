@@ -40,11 +40,11 @@ openblocks:flim_flam
 projectred-expansion:electric_efficiency
 endercore:xpboost
 endercore:autosmelt
-enderio:soulbound
-enderio:witherweapon
 enderio:shimmer
-enderio:repellent
+enderio:soulbound
 enderio:witherarrow
+enderio:witherweapon
+enderio:repellent
 exnihilocreatio:sieve_efficiency
 exnihilocreatio:sieve_fortune
 exnihilocreatio:sieve_luck_of_the_sea

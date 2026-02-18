@@ -3169,6 +3169,7 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
 
                 <moretcon:ingotsanguiseelium> * 32: 1.35,
                 <taiga:nihilite_ingot> * 32: 1.35,
+                <contenttweaker:fey_ingot> * 8: 1.4,
 
                 <botania:manaresource> * 32: 1.45,
                 <contenttweaker:terra_base> * 16: 1.6,
@@ -3270,9 +3271,15 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
     }
 }
 
+{//ferramic
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <prodigytech:ferramic_ingot>,
+        <contenttweaker:ferramic_base>, <liquid:claymud> * 1000,
+        5000
+    );
+    addCasting(all_metals.ferramic, <liquid:ferramic>);
+}
 
-
-addCasting(all_metals.ferramic, <liquid:ferramic>);
 
 add3alloy(1, "flower_steel", 4,
     "zorra_steel", 1,
@@ -3403,6 +3410,10 @@ add3alloy(1, "flower_steel", 4,
             "copper", 3,
             "silver", 1,
             "res_redstone", 2
+        );
+        add2alloy(2, "signalum", 4,
+            "red_alloy", 3,
+            "silver", 1
         );
         
         mods.enderio.AlloySmelter.removeRecipe(all_metals.lumium.ingot);
@@ -5259,6 +5270,13 @@ scripts.content_machines.addAdvancedMixerRecipe(
     scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:21>, <contenttweaker:scandium_dust>);
 
     addAdvancedSmelting(
+        <alchemistry:ingot:32>, <contenttweaker:germanium_dust>,
+        <prodigytech:aeternus_crystal>, <contenttweaker:sphalerite_dust> * 4, <liquid:high_heat_lava> * 50, 
+        10000, 20 * 30
+    );
+    scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:32>, <contenttweaker:germanium_dust>);
+
+    addAdvancedSmelting(
         <alchemistry:ingot:41>, <contenttweaker:niobium_dust>,
         <taiga:niob_ingot>, <moretcon:gemelectarite>, <liquid:high_heat_lava> * 50, 
         10000, 20 * 30
@@ -5360,14 +5378,93 @@ scripts.content_machines.addAdvancedMixerRecipe(
     addPlate(<contenttweaker:pandemonium_ingot>, <contenttweaker:pandemonium_plate>);
 }
 
-//neutronium
 
-recipes.addShaped("ia_neutronium_sheetmetal", <contenttweaker:neutronium_sheetmetal> * 4, [
-	[null, <moreplates:neutronium_plate>, null], 
-	[<moreplates:neutronium_plate>, <contenttweaker:living_steel_sheetmetal>, <moreplates:neutronium_plate>], 
-	[null, <moreplates:neutronium_plate>, null]
-]);
 
+{//endgame
+
+    {//neutronium
+
+        recipes.addShaped("ia_neutronium_sheetmetal", <contenttweaker:neutronium_sheetmetal> * 4, [
+            [null, <moreplates:neutronium_plate>, null], 
+            [<moreplates:neutronium_plate>, <contenttweaker:living_steel_sheetmetal>, <moreplates:neutronium_plate>], 
+            [null, <moreplates:neutronium_plate>, null]
+        ]);
+
+        recipes.remove(<avaritia:resource:2>);
+        recipes.remove(<avaritia:resource:3>);
+        Melting.removeRecipe(<liquid:neutronium>, <avaritia:resource:2>);
+
+        recipes.addShaped("ia_neutronium_dust", <contenttweaker:neutronium_dust>, [
+            [<avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>],
+            [<avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>],
+            [<avaritia:resource:2>, <avaritia:resource:2>, <avaritia:resource:2>]
+        ]);
+
+        {
+            var rec = RecipeBuilder.newBuilder("neutronium", "tignalum_oven", 10 * 20);
+            rec.addEnergyPerTickInput(128 * 1000 * 1000);
+
+            rec.addItemOutput(<avaritia:resource:3>).setChance(0.0);
+            rec.addItemOutput(<avaritia:resource:3>).setChance(0.0);
+            rec.addItemOutput(<avaritia:resource:3>).setChance(0.0);
+
+            rec.addInput(<avaritia:resource:2>);
+            rec.addInput(<liquid:kikeridan> * 16);
+            rec.addInput(<liquid:pride> * 100);
+            rec.addGasInput(<gas:neutron_active> * 100);
+
+            
+            for item,stat in {
+                <mysticalagradditions:neutronium_essence>: 0.25,
+                <contenttweaker:neutron>: 0.25,
+                <contenttweaker:neutronium_element>: 0.25
+            } as float[IItemStack]
+            {
+                rec.addCatalystInput(
+                        item,
+                        ["Output item chance +" ~ stat*100 ~ "%"],
+                        [RecipeModifierBuilder.create(
+                            "modularmachinery:item", "output", stat, 0, true
+                        ).build()]
+                ).setChance(0.5);
+            }
+
+            
+
+            rec.build();
+        }
+    }
+
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:ssa_ingot>, 1024000 * 100, 1024000 * 5, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <extendedcrafting:singularity_custom:52>,
+            <contenttweaker:draconic_gem>,
+            <extendedcrafting:material:32>,
+            <contenttweaker:ma_essence6>,
+
+            <avaritia:resource:4>,
+            
+            <avaritia:resource:4>,
+            <avaritia:resource:4>,
+            <avaritia:resource:4>
+        ]
+    );
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:ssa_ingot> * 3, 1024000 * 100, 1024000 * 5, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <extendedcrafting:singularity_custom:52>,
+            <contenttweaker:draconic_gem>,
+            <extendedcrafting:material:32>,
+            <contenttweaker:ma_essence6>,
+            <tconevo:metal:10>,
+
+            <avaritia:resource:4>,
+            <avaritia:resource:4>,
+            <avaritia:resource:4>
+        ]
+    );
+}
 
 
 {//taiga metals

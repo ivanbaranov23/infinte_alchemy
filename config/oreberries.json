@@ -80,6 +80,27 @@
     "tradeable": false
   },
 
+  "Karmesine": {
+    "color": "#C93436",
+    "oredictNames": [],
+    "smeltingResult": "taiga:karmesine_nugget",
+    "tradeable": false
+  },
+  "Ovium": {
+    "color": "#3436C9",
+    "oredictNames": [],
+    "smeltingResult": "taiga:ovium_nugget",
+    "tradeable": false
+  },
+  "Jauxum": {
+    "color": "#47B646",
+    "oredictNames": [],
+    "smeltingResult": "taiga:jauxum_nugget",
+    "tradeable": false
+  },
+  
+  
+
   
   "Essence": {
     "bushName": "Essence Berry Bush",

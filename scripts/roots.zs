@@ -294,13 +294,13 @@ recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
 
         Transmutation.addStateToStateRecipe(
             "silver", 
-            StatePredicate.create(<blockstate:natura:overworld_logs:axis=y,type=silverbell>),
+            PropertyPredicate.create(<blockstate:natura:overworld_logs:axis=y,type=silverbell>, "type"),
             <blockstate:thermalfoundation:ore:type=silver>,
             null
         );
         Transmutation.addStateToStateRecipe(
             "silver2", 
-            StatePredicate.create(<blockstate:natura:overworld_planks:type=silverbell>),
+            PropertyPredicate.create(<blockstate:natura:overworld_planks:type=silverbell>, "type"),
             <blockstate:thermalfoundation:ore:type=silver>,
             null
         );
@@ -686,11 +686,14 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     //redstone
     Chrysopoeia_addRecipe("redstone", <biomesoplenty:gem:1> * 2, <minecraft:redstone> * 8);
     //glowstone
-    Chrysopoeia_addRecipe("glowstone", <minecraft:gold_block>, <minecraft:glowstone>);
+    Chrysopoeia_addRecipe("glowstone1", <minecraft:gold_block>, <minecraft:glowstone>);
+    Chrysopoeia_addRecipe("glowstone2", <minecraft:torch> * 64, <minecraft:glowstone_dust>);
 
     Chrysopoeia_addRecipe("eyes", <biomesoplenty:double_plant:2> * 2, <contenttweaker:primitive_eyes>);
 
     Chrysopoeia_addRecipe("jar", <minecraft:glass_bottle>, <biomesoplenty:jar_empty>);
+
+    Chrysopoeia_addRecipe("germanium", <contenttweaker:evil_desert_dust> * 16, <contenttweaker:germanium_dust>);
 
     //quartz
     Chrysopoeia_addRecipe("certus_to", <appliedenergistics2:material:3> * 4, <appliedenergistics2:material:2> * 4);

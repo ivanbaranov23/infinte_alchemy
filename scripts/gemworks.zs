@@ -11,6 +11,8 @@ import mods.enderio.Vat;
 import mods.thermalexpansion.Transposer;
 import mods.thermalexpansion.Refinery;
 
+import mods.modularmachinery.RecipeBuilder;
+
 
 static gem_parts as IItemStack[string][string] = {
     ruby: {
@@ -282,6 +284,50 @@ scripts.content_machines.addFluidSieveRecipeRandom(
     <exnihilocreatio:item_mesh:4>,
     40, 3000
 );
+
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:gargeruby>, [
+    [null, null, <projectred-core:resource_item:200>, null, null], 
+    [null, <projectred-core:resource_item:200>, <contenttweaker:germanium_block>, <projectred-core:resource_item:200>, null], 
+    [<projectred-core:resource_item:200>, <contenttweaker:germanium_block>, <extendedcrafting:singularity_custom:76>, <contenttweaker:germanium_block>, <projectred-core:resource_item:200>], 
+    [null, <projectred-core:resource_item:200>, <contenttweaker:germanium_block>, <projectred-core:resource_item:200>, null], 
+    [null, null, <projectred-core:resource_item:200>, null, null]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:inverse_gargeruby> * 5, [
+    [null, null, null, <contenttweaker:inversion_dust>, null, null, null], 
+    [null, <contenttweaker:inversion_dust>, <contenttweaker:inversion_dust>, <contenttweaker:ma_essence1>, <contenttweaker:inversion_dust>, <contenttweaker:inversion_dust>, null], 
+    [null, <contenttweaker:inversion_dust>, <contenttweaker:terragem>, <contenttweaker:gargeruby>, <contenttweaker:terragem>, <contenttweaker:inversion_dust>, null], 
+    [<contenttweaker:inversion_dust>, <contenttweaker:ma_essence1>, <contenttweaker:gargeruby>, <contenttweaker:gargeruby>, <contenttweaker:gargeruby>, <contenttweaker:ma_essence1>, <contenttweaker:inversion_dust>], 
+    [null, <contenttweaker:inversion_dust>, <contenttweaker:terragem>, <contenttweaker:gargeruby>, <contenttweaker:terragem>, <contenttweaker:inversion_dust>, null], 
+    [null, <contenttweaker:inversion_dust>, <contenttweaker:inversion_dust>, <contenttweaker:ma_essence1>, <contenttweaker:inversion_dust>, <contenttweaker:inversion_dust>, null], 
+    [null, null, null, <contenttweaker:inversion_dust>, null, null, null]
+]);
+
+{var rec = RecipeBuilder.newBuilder("inverted_gem", "satellite_launch_pad", 200);
+	rec.addEnergyPerTickInput(1000 * 1000);
+
+	rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));
+	rec.addItemOutput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));
+
+    rec.addItemInput(<contenttweaker:inverse_gargeruby> * 12);
+	rec.addItemOutput(<contenttweaker:gargeruby> * 12);
+	
+    rec.addItemInput(<contenttweaker:gem_steel_ingot> * 16);
+	rec.addItemOutput(<contenttweaker:inverted_gem_ingot> * 8);
+
+	rec.addFluidInput(<liquid:rocket_fuel> * 10000);
+	
+
+	rec.build();
+}
+
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:draconic_gem> * 2, [
+    [null, <contenttweaker:draconic_particle>, <contenttweaker:draconic_particle>, <contenttweaker:draconic_particle>, null], 
+    [<contenttweaker:draconic_particle>, <contenttweaker:yag_ceramic>, <contenttweaker:c14_gem>, <contenttweaker:yag_ceramic>, <contenttweaker:draconic_particle>], 
+    [<contenttweaker:draconic_particle>, <contenttweaker:c14_gem>, <extendedcrafting:singularity_custom:80>, <contenttweaker:c14_gem>, <contenttweaker:draconic_particle>], 
+    [<contenttweaker:draconic_particle>, <contenttweaker:yag_ceramic>, <contenttweaker:c14_gem>, <contenttweaker:yag_ceramic>, <contenttweaker:draconic_particle>], 
+    [null, <contenttweaker:draconic_particle>, <contenttweaker:draconic_particle>, <contenttweaker:draconic_particle>, null]
+]);
 
 
 

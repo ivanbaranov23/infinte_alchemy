@@ -25,6 +25,7 @@ import mods.modularmachinery.RecipeBuilder;
 	rec.addItemInput(<contenttweaker:empowered_shard> * 4);
 	rec.addItemInput(<contenttweaker:corrupted_ambrosium> * 2);
 	rec.addFluidInput(<liquid:mana> * (100 * 1000));
+	rec.addFluidInput(<liquid:superorganic_green> * 10000);
 
 	rec.addManaInput(100000, false);
 	rec.build();

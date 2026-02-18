@@ -515,6 +515,11 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <botania:flower:13> % 75,
             <botania:flower:14> % 75,
             <botania:flower:15> % 75,
+        ],
+        <liquid:superorganic_green> * 200: [
+            <mekores:mekanismore:3> % 75,
+            <mekores:mekanismore:8> % 75,
+            <moretcon:dustirradium> % 50
         ]
     },
 
@@ -526,6 +531,11 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <mekores:mekanismore:253> % 50,
             <mekores:mekanismore:218> % 50,
             <taiga:meteorite_dust> % 50
+        ],
+        <liquid:superorganic_green> * 200: [
+            <mekores:mekanismore:3> % 75,
+            <mekores:mekanismore:8> % 75,
+            <mekores:mekanismore:218> % 50
         ]
     },
     [-1, 4000, 20 * 10, 1000]: {

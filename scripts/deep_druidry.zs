@@ -251,6 +251,12 @@ recipes.addShapeless("ia_inversion_dust2", <contenttweaker:inversion_dust> * 2, 
     <contenttweaker:transmut_gel>, <betternether:cincinnasite_block>, <contenttweaker:supersalt>,
     <contenttweaker:druidic_dust>, <contenttweaker:druidic_dust>, <contenttweaker:druidic_dust>, <contenttweaker:druidic_dust>
 ]);
+recipes.addShapeless("ia_inversion_dust3", <contenttweaker:inversion_dust> * 6, [
+    <moretcon:gemgarstone>, 
+    <contenttweaker:transmut_gel>, <betternether:cincinnasite_block>, <contenttweaker:supersalt>,
+    <contenttweaker:druidic_dust>, <contenttweaker:druidic_dust>, <contenttweaker:druidic_dust>, <contenttweaker:druidic_dust>,
+    <alchemistry:element:67>
+]);
 
 
 {//druid_soup
@@ -282,3 +288,20 @@ scripts.content_machines.addFluidAlloyerRecipe(
     <contenttweaker:tar_bone> * 4, <contenttweaker:druidic_dust> * 4, <liquid:astralsorcery.liquidstarlight> * 2000, 
     20, 1000
 );
+
+{//fey steel
+    mods.roots.Fey.addRecipe("fey_steel", <contenttweaker:fey_ingot> * 2, [
+        <moretcon:gemenderal>, <contenttweaker:flower_steel_ingot>, <botania:manaresource:8>, <alchemistry:ingot:32>, <contenttweaker:transmut_gel>
+    ]);
+
+    {
+        var rec = RecipeBuilder.newBuilder("fey_steel", "druid_circle", 20);
+        rec.addEnergyPerTickInput(25600);
+
+        rec.addItemInputs(<moretcon:gemenderal>, <contenttweaker:flower_steel_ingot>, <botania:manaresource:8>, <alchemistry:ingot:32>, <contenttweaker:transmut_gel>);
+
+        rec.addItemOutput(<contenttweaker:fey_ingot> * 2);
+                    
+        rec.build();
+    }
+}

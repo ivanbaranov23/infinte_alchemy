@@ -2645,3 +2645,30 @@ requious.jei.recipe.feeder=Sprook Feeder
 item.contenttweaker.battle_computer.name=Battle Computer
 item.contenttweaker.stealing_computer.name=Stealing Computer
 item.contenttweaker.battle_drone.name=Battle Drone
+
+item.contenttweaker.fey_ingot.name=Fey Steel Ingot
+
+fluid.strawberry_wine_young=Young Strawberry Wine
+
+item.contenttweaker.germanium_dust.name=Germanium Dust
+tile.contenttweaker.germanium_block.name=Block of Germanium
+
+item.contenttweaker.gargeruby.name=Gargeruby
+item.contenttweaker.inverse_gargeruby.name=Inverted Gargeruby
+
+item.contenttweaker.inversion_dust.name=Inversion Dust
+
+fluid.superorganic_green=Super-Organic Green
+
+
+item.contenttweaker.ma_essence1.name=Inzanium Essence
+item.contenttweaker.ma_essence2.name=Crazium Essence
+item.contenttweaker.ma_essence3.name=Schizophrenium Essence
+item.contenttweaker.ma_essence4.name=Bi-Polarium Essence
+item.contenttweaker.ma_essence5.name=Depressium Essence
+item.contenttweaker.ma_essence6.name=Cryptanium Essence
+item.contenttweaker.ma_essence7.name=Neutronalium Essence
+
+item.contenttweaker.solid_mana.name=Solid Mana
+
+item.contenttweaker.will_singularity.name=Mixed Will Crystal Singularity

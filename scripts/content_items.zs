@@ -41,7 +41,7 @@ function registerMoltenMetal(m_name as string, col as Color){
 
 function addItem(name as string, rar as string, msize as int){
     var item = VanillaFactory.createItem(name);
-    item.rarity = rar;
+    item.setRarity(rar);
     item.maxStackSize = msize;
     item.register();
 }
@@ -818,6 +818,8 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("chlorasteel_gear").register();
     VanillaFactory.createBlock("chlorasteel_block", <blockmaterial:rock>).register();
 
+    VanillaFactory.createItem("fey_ingot").register();
+
     VanillaFactory.createItem("gem_steel_ingot").register();
     VanillaFactory.createItem("gem_steel_plate").register();
     VanillaFactory.createItem("gem_steel_gear").register();
@@ -1027,6 +1029,9 @@ function addAtomicResource(name as string){
 
     VanillaFactory.createBlock("selenium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("selenium_dust").register();
+
+    VanillaFactory.createBlock("germanium_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("germanium_dust").register();
 
     VanillaFactory.createBlock("tellurium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("tellurium_dust").register();
@@ -1418,6 +1423,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     VanillaFactory.createItem("neodymium_singularity").register();
     VanillaFactory.createItem("solar_silicon_singularity").register();
     VanillaFactory.createItem("neuro_singularity").register();
+    VanillaFactory.createItem("will_singularity").register();
     VanillaFactory.createItem("neutronium_singularity").register();
 }
 
@@ -1762,6 +1768,7 @@ knife.register();
     addGlass2("worm_glass");
 
     add_living("lv_plant");
+    VanillaFactory.createItem("leaf").register();
 
     add_living("lv_walker");
 
@@ -2617,6 +2624,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createFluid("strawberry_wine", Color.fromHex("890000")).register();
 
     addWater("slimebone");
+    VanillaFactory.createFluid("superorganic_green", Color.fromHex("14e939")).register();
 }
 {//actually addition
     VanillaFactory.createItem("blue_paste").register();
@@ -2682,13 +2690,13 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createBlock("essence_pump5", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("essence_pump6", <blockmaterial:rock>).register();
 
-    VanillaFactory.createItem("ma_essence1").register();
-    VanillaFactory.createItem("ma_essence2").register();
-    VanillaFactory.createItem("ma_essence3").register();
-    VanillaFactory.createItem("ma_essence4").register();
-    VanillaFactory.createItem("ma_essence5").register();
-    VanillaFactory.createItem("ma_essence6").register();
-    VanillaFactory.createItem("ma_essence7").register();
+    addItem("ma_essence1", "rare", 64);
+    addItem("ma_essence2", "rare", 64);
+    addItem("ma_essence3", "rare", 64);
+    addItem("ma_essence4", "rare", 64);
+    addItem("ma_essence5", "rare", 64);
+    addItem("ma_essence6", "rare", 64);
+    addItem("ma_essence7", "rare", 64);
 }
 {//aether
     {//icestone & cold
@@ -2738,8 +2746,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("undead_essence").register();
     addWater("dragon_yolk");
 }
-
-
+{//extended carfting
+    VanillaFactory.createItem("gargeruby").register();
+    VanillaFactory.createItem("inverse_gargeruby").register();
+}
 {//blood magic
     VanillaFactory.createItem("deep_dark_core").register();
     VanillaFactory.createItem("blood_runic_dust").register();
@@ -3025,6 +3035,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createFluid("rune_acid", Color.fromHex("369c45")).register();
 
     addItem("rune_mana_chip", "rare", 64);   
+    addItem("lazy_chip", "rare", 64);
     addItem("ultimate_rune", "epic", 64);
     
     VanillaFactory.createBlock("rune_water_block", <blockmaterial:rock>).register();
@@ -3284,6 +3295,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("deathon").register();
     VanillaFactory.createItem("manathon").register();
     VanillaFactory.createItem("draconic_particle").register();
+    VanillaFactory.createItem("draconic_gem").register();
 
 
 
@@ -3411,6 +3423,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("self_healing_polymer").register();
 
+    
+    VanillaFactory.createItem("yag_ceramic").register();
+
     VanillaFactory.createItem("imaginium_element").register();
 }
 
@@ -3462,25 +3477,39 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     }
 }
 
+
+function addResearchBook(name as string, msg as string){
+    var researchBook = VanillaFactory.createItem(name);
+    researchBook.onItemUse = function(player, world, pos, hand, facing, blockHit){
+        if (hand == mods.contenttweaker.Hand.main()){
+            if (!world.isRemote()){
+                Commands.call("tellraw @p \"" ~ msg ~ "\"", player, world, false, true);
+                return mods.contenttweaker.ActionResult.success();
+            }
+        }
+        return mods.contenttweaker.ActionResult.pass();
+    };
+    researchBook.register();
+}
 {//research
     VanillaFactory.createItem("glass_cutter_research_token").register();
-    VanillaFactory.createItem("research_glass_making").register();
+    addResearchBook("research_glass_making", "Add some silver.");
 
     VanillaFactory.createItem("tink_research_token1").register();
     VanillaFactory.createItem("axe_token").register();
 
     VanillaFactory.createItem("tink_research_token2").register();
-    VanillaFactory.createItem("research_tinker").register();
+    addResearchBook("research_tinker", "Pour a block of molten metal on me.");
     VanillaFactory.createItem("apatite").register();
 
     VanillaFactory.createItem("concrete_token").register();
-    VanillaFactory.createItem("research_structure").register();
+    addResearchBook("research_structure", "Just add scaffolding.");
 
     VanillaFactory.createItem("research_weapons1").register();
 
     VanillaFactory.createItem("steel_hoe_research_token").register();
-    VanillaFactory.createItem("research_plants1").register();
-    VanillaFactory.createItem("research_plants2").register();
+    addResearchBook("research_plants1", "Exotic fertilizer.");
+    addResearchBook("research_plants2", "More exotic fertilizer.");
 
     VanillaFactory.createItem("blueslime_bucket").register();
     VanillaFactory.createItem("purpleslime_bucket").register();

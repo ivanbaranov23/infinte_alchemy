@@ -365,6 +365,13 @@ recipes.addShaped("ia_xu2_angel_block", <extrautils2:angelblock>, [
 	[null, <roots:runed_obsidian>, null]
 ]);
 
+//scanner
+recipes.remove(<extrautils2:scanner>);
+recipes.addShaped("ia_eu2_scanner", <extrautils2:scanner>, [
+	[<roots:runestone>, <immersiveengineering:wirecoil:5>, <roots:runestone>], 
+	[<immersiveengineering:wirecoil:5>, <minecraft:observer>, <minecraft:ender_eye> | <contenttweaker:primitive_eyes>], 
+	[<roots:runestone>, <immersiveengineering:wirecoil:5>, <roots:runestone>]
+]);
 
 //user
 recipes.remove(<extrautils2:user>);

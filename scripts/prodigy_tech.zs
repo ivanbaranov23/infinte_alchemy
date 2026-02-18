@@ -132,8 +132,31 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 	mods.prodigytech.explosionfurnace.explosives.add(<appliedenergistics2:tiny_tnt>, 750);
 	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:tnt>, 3000);
 	mods.prodigytech.explosionfurnace.explosives.add(<natura:nether_planks:3>, 250);
-}
 
+	
+	mods.prodigytech.explosionfurnace.dampeners.add(<atum:sand>, 360 * 2);
+	mods.prodigytech.explosionfurnace.dampeners.add(<minecraft:soul_sand>, 360 * 2);
+	mods.prodigytech.explosionfurnace.dampeners.add(<alchemistry:wet_sand>, 360 * 4);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:iron_sand>, 360 * 6);
+	mods.prodigytech.explosionfurnace.dampeners.add(<biomesoplenty:dried_sand>, 360 * 8);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:dried_gravel>, 360 * 8);
+	mods.prodigytech.explosionfurnace.dampeners.add(<quark:gravisand>, 360 * 12);
+
+	mods.prodigytech.explosionfurnace.dampeners.add(<thermalfoundation:material:864>, 250);
+	mods.prodigytech.explosionfurnace.dampeners.add(<immersiveengineering:material:7>, 250);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:bioslag>, 500);
+	mods.prodigytech.explosionfurnace.dampeners.add(<thermalfoundation:material:865>, 1000);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:enriched_bioslag>, 1500);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:gravel_wool>, 1000);
+
+	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting>, 250);
+	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:1>, 250 * 4);
+	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:2>, 250 * 16);
+	//mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:3>, 250 * 64);
+	//mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:4>, 250 * 256);
+	//mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagradditions:insanium>, 250);
+	
+}
 
 
 
@@ -501,6 +524,8 @@ solderer.removeAll();
 
 	rotarygrinder.addRecipe(<minecraft:quartz>, <appliedenergistics2:material:3>);
 
+	rotarygrinder.addRecipe(<appliedenergistics2:material>, <appliedenergistics2:material:2>);
+
 	//iron
 	rotarygrinder.removeRecipe(<minecraft:iron_ingot>);
 	rotarygrinder.addRecipe(<minecraft:iron_ingot>, <thermalfoundation:material>);
@@ -546,6 +571,11 @@ solderer.removeAll();
 	rotarygrinder.removeRecipe(<minecraft:wheat>);
 	rotarygrinder.addRecipe(<minecraft:wheat>, <natura:materials:2> * 2);
 
+	//meat
+	rotarygrinder.addRecipe(<harvestcraft:turkeyrawitem>, <prodigytech:meat_ground>);
+	rotarygrinder.addRecipe(<harvestcraft:venisonrawitem>, <prodigytech:meat_ground>);
+	rotarygrinder.addRecipe(<harvestcraft:duckrawitem>, <prodigytech:meat_ground>);
+
 	//missing
 	rotarygrinder.addRecipe(<thermalfoundation:material:128>, <thermalfoundation:material:64>);	//copper
 	rotarygrinder.addRecipe(<thermalfoundation:material:129>, <thermalfoundation:material:65>);	//tin
@@ -569,6 +599,7 @@ solderer.removeAll();
 	rotarygrinder.addRecipe(<contenttweaker:lesmium_ingot>, <contenttweaker:lesmium_dust>);     //lesmium
 	rotarygrinder.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>); //steel
 	rotarygrinder.addRecipe(<contenttweaker:duraluminum_ingot>, <contenttweaker:duraluminum_dust>); //duraluminum
+	rotarygrinder.addRecipe(<contenttweaker:watertight_steel_ingot>, <contenttweaker:watertight_steel_dust>); //watertight_steel
 }
 {//m reass
 	magneticreassembler.addRecipe(<enderio:item_material:32>, <minecraft:dye:4>);
@@ -679,21 +710,64 @@ mods.bloodmagic.TartaricForge.addRecipe(<prodigytech:tartaric_stoker> * 12, [
 		2000, 
 		<contenttweaker:ferramic_base>
 	);
+	{
+		var rec = RecipeBuilder.newBuilder("preheated_al1", "high_oven", 20);
+		rec.addEnergyPerTickInput(100);
+		rec.addItemOutput(<contenttweaker:ferramic_base>);
+
+		rec.addItemInput(<contenttweaker:research_heat>).setChance(0.0);
+		rec.addItemInput( <thermalfoundation:material:132>);
+		
+		rec.build();
+	}
+	
 	mods.thermalexpansion.InductionSmelter.addRecipe(
 		<contenttweaker:research_heat>, <contenttweaker:research_heat>, <contenttweaker:nial_ingot>, 
 		2000, 
 		<contenttweaker:ferramic_base>
 	);
+	{
+		var rec = RecipeBuilder.newBuilder("preheated_al2", "high_oven", 20);
+		rec.addEnergyPerTickInput(100);
+		rec.addItemOutput(<contenttweaker:ferramic_base>);
+
+		rec.addItemInput(<contenttweaker:research_heat>).setChance(0.0);
+		rec.addItemInput( <contenttweaker:nial_ingot>);
+		
+		rec.build();
+	}
 	mods.thermalexpansion.InductionSmelter.addRecipe(
-		<contenttweaker:research_heat>, <contenttweaker:research_heat>, <plustic:alumiteingot>, 
+		<contenttweaker:research_heat>, <contenttweaker:research_heat>, <tconstruct:ingots:6>, 
 		2000, 
 		<contenttweaker:ferramic_base> * 3
 	);
+	{
+		var rec = RecipeBuilder.newBuilder("preheated_al3", "high_oven", 20);
+		rec.addEnergyPerTickInput(100);
+		rec.addItemOutput(<contenttweaker:ferramic_base> * 3);
+
+		rec.addItemInput(<contenttweaker:research_heat>).setChance(0.0);
+		rec.addItemInput(<tconstruct:ingots:6>);
+		
+		rec.build();
+	}
 	mods.thermalexpansion.InductionSmelter.addRecipe(
 		<contenttweaker:research_heat>, <contenttweaker:research_heat>, <contenttweaker:duraluminum_ingot>, 
 		2000, 
 		<contenttweaker:ferramic_base> * 7
 	);
+	{
+		var rec = RecipeBuilder.newBuilder("preheated_al4", "high_oven", 20);
+		rec.addEnergyPerTickInput(100);
+		rec.addItemOutput(<contenttweaker:ferramic_base> * 7);
+
+		rec.addItemInput(<contenttweaker:research_heat>).setChance(0.0);
+		rec.addItemInput( <contenttweaker:duraluminum_ingot>);
+		
+		rec.build();
+	}
+
+
 }
 
 

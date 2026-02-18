@@ -2834,6 +2834,20 @@ val ores as IItemStack[string][string][string] = {
 
 
     //more tcon ores
+    garstone: {
+        ore: {
+            item: <moretcon:oregarstone>,
+            crushing_no_balls: <moretcon:gemgarstone> * 2,
+            balling: <moretcon:gemgarstone> * 2,
+            crushingByprod1: <taiga:valyrium_dust>,
+            crushingByprod2: <contenttweaker:germanium_dust>,
+
+            cleaning: <moretcon:gemgarstone> * 4,
+            drilling: <moretcon:gemgarstone> * 4,
+
+            denorm: <minecraft:redstone_ore> * 2
+        }
+    },
     electarite: {
         ore: {
             item: <moretcon:oreelectarite>,
@@ -3791,6 +3805,7 @@ val to_clean as IItemStack[][string] = {
         <contenttweaker:neodymium_dust>,
         <contenttweaker:zirconium_dust>,
 
+        <contenttweaker:bismuth_dust>,
         <netherite:netheritescrap>,
 
         <moretcon:dusthallowsite>
@@ -3999,6 +4014,7 @@ val drilling_fluid_amount as int[string] = {
 
     meteorite: 125,
 
+    garstone: 240,
     electarite: 240,
     etherstone: 400,
     echostone: 400,

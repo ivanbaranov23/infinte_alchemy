@@ -99,6 +99,7 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
 
 //alchemistry
+<ore:dustGermanium>.add(<contenttweaker:germanium_dust>);
 <ore:dustVanadium>.add(<contenttweaker:vanadium_dust>);
 <ore:dustRubidium>.add(<contenttweaker:rubidium_dust>);
 <ore:dustMolybdenum>.add(<contenttweaker:molybdenum_dust>);

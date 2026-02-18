@@ -44,8 +44,8 @@ recipes.addShapeless("glass_glass_silver_glass",
     {    
         var rec = RecipeBuilder.newBuilder("glass", "tree_powered_compressor", 40);
 
-        rec.addItemInput(<minecraft:quartz>);
-        rec.addItemInput(<appliedenergistics2:material>);
+        rec.addItemInput(<appliedenergistics2:material:3>);
+        rec.addItemInput(<appliedenergistics2:material:2>);
         rec.addItemInput(<minecraft:flint> * 3);
 
         rec.addItemInput(<minecraft:sand> * 8);
@@ -59,10 +59,10 @@ recipes.addShapeless("glass_glass_silver_glass",
         rec.build();
     }
     {    
-        var rec = RecipeBuilder.newBuilder("glass", "tree_powered_compressor", 40);
+        var rec = RecipeBuilder.newBuilder("glass2", "tree_powered_compressor", 40);
 
-        rec.addItemInput(<minecraft:quartz>);
-        rec.addItemInput(<appliedenergistics2:material>);
+        rec.addItemInput(<appliedenergistics2:material:3>);
+        rec.addItemInput(<appliedenergistics2:material:2>);
         rec.addItemInput(<minecraft:flint> * 3);
 
         rec.addItemInput(<minecraft:sand> * 8);
@@ -70,11 +70,39 @@ recipes.addShapeless("glass_glass_silver_glass",
         rec.addItemInput(<ore:treeSapling>);
         rec.addItemInput(<ore:fertilizer>);
         
-        rec.addFluidInput(<liquid:obsidian> * 2000);
+        rec.addFluidInput(<liquid:obsidian> * 576);
         
         rec.addItemOutput(<minecraft:glass> * 12);
         rec.build();
     }
+}
+{//high oven
+    scripts.modular_machines.addMMRecipe("high_oven_glass1", "high_oven", 15*20, 32, 
+        [<minecraft:glass> * 16], 
+        [<quark:glass_shards> * 4, <appliedenergistics2:material:3> * 4, <minecraft:sand> * 16], 
+        [], [], [<contenttweaker:research_glass_making>]
+    );
+    scripts.modular_machines.addMMRecipe("high_oven_glass2", "high_oven", 15*20, 32, 
+        [<minecraft:glass> * 24], 
+        [<mysticalworld:silver_dust_tiny> * 4, <appliedenergistics2:material:3> * 4, <minecraft:sand> * 16], 
+        [], [], [<contenttweaker:research_glass_making>]
+    );
+    scripts.modular_machines.addMMRecipe("high_oven_glass3", "high_oven", 15*20, 32, 
+        [<minecraft:glass> * 32], 
+        [<mysticalworld:silver_dust_tiny> * 4, <appliedenergistics2:material:3> * 4, <natura:nether_glass> * 8, <natura:nether_glass:1> * 8], 
+        [], [], [<contenttweaker:research_glass_making>]
+    );
+    scripts.modular_machines.addMMRecipe("high_oven_glass4", "high_oven", 15*20, 32, 
+        [<minecraft:glass> * 32], 
+        [<mysticalworld:silver_dust_tiny> * 4, <atum:crystal_glass> * 8, <natura:nether_glass> * 8, <natura:nether_glass:1> * 8], 
+        [], [], [<contenttweaker:research_glass_making>]
+    );
+
+    scripts.modular_machines.addMMRecipe("high_oven_glass4", "high_oven", 15*20, 32, 
+        [<minecraft:glass> * 12], 
+        [<mysticalworld:silver_dust_tiny> * 4, <quark:glass_shards> * 4, <appliedenergistics2:material:3> * 4, <minecraft:sand> * 16], 
+        [], [], []
+    );
 }
 
 //sandy glass

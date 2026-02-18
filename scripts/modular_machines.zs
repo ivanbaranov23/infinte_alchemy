@@ -235,13 +235,6 @@ recipes.addShaped("ia_mm_firebox", <modularmachinery:blockcasing:2>, [
 	[<contenttweaker:hot_gear>, <modularmachinery:blockcasing:4>, <contenttweaker:hot_gear>], 
 	[<modularmachinery:itemmodularium>, <actuallyadditions:item_misc:8>, <modularmachinery:itemmodularium>]
 ]);
-/*
-recipes.addShaped("ia_mm_heat_input", <modulardiversity:blockmekheatinput>, [
-	[<contenttweaker:thermal_plate>, <prodigytech:heat_capacitor_1>, <contenttweaker:thermal_plate>], 
-	[<ore:xuRedstoneCoil>, <modularmachinery:blockcasing:4>, <ore:xuRedstoneCoil>], 
-	[<contenttweaker:thermal_plate>, <immersiveengineering:metal_device1:1>, <contenttweaker:thermal_plate>]
-]);
-*/
 
 //recipes
 function addMMRecipe(
@@ -300,13 +293,6 @@ function addItemInfoRecipe(items as IItemStack[], info as string[]){
     rec.build();
 }
 
-
-addMMRecipe("high_oven_glass1", "high_oven", 15*20, 32, 
-[<minecraft:glass> * 16], 
-[<quark:glass_shards> * 4, <appliedenergistics2:material:3> * 4, <minecraft:sand> * 16], [], [], [<contenttweaker:research_glass_making>]);
-addMMRecipe("high_oven_glass2", "high_oven", 15*20, 32, 
-[<minecraft:glass> * 24], 
-[<mysticalworld:silver_dust_tiny> * 4, <appliedenergistics2:material:3> * 4, <minecraft:sand> * 16], [], [], [<contenttweaker:research_glass_making>]);
 
 
 //todo move

@@ -1,0 +1,11 @@
+{
+	x: 9.5d,
+	y: 7.5d,
+	tasks: [{
+		uid: "c445e832",
+		type: "item",
+		items: [{
+			item: "modularmachinery:large_numismatic_controller"
+		}]
+	}]
+}

@@ -969,8 +969,7 @@ addDroneVortexRecipe(<alchemistry:element:2> * 4, <contenttweaker:alpha_particle
 mods.extendedcrafting.CombinationCrafting.addRecipe(
     <contenttweaker:vortexed_base> * 2, 1000000 * 20, 1000000, <contenttweaker:super_alloy_base_ingot>,
     [
-            <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>,
-            <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>, <extendedcrafting:singularity:24>,
+            <extendedcrafting:singularity_custom:68>,
             <extendedcrafting:singularity:48>,
             <extendedcrafting:singularity_custom:58>,
             <extendedcrafting:singularity_custom:31>,

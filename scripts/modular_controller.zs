@@ -279,11 +279,11 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:rune_cracker_
 ]);
 {
 	mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:sin_burner_controller>, [
-		[<contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>, <contenttweaker:rune_cyclic>, <contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>], 
+		[<contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>, <contenttweaker:lazy_chip>, <contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>], 
 		[<contenttweaker:shadowglass_cloth>, <contenttweaker:elf_mana_circuit>, <contenttweaker:death_metal_plate>, <contenttweaker:elf_mana_circuit>, <contenttweaker:shadowglass_cloth>], 
 		[<contenttweaker:sin_nickel_ingot>, <contenttweaker:elemental_essence>, <contenttweaker:mana_frame>, <contenttweaker:elemental_essence>, <contenttweaker:sin_nickel_ingot>], 
 		[<contenttweaker:shadowglass_cloth>, <contenttweaker:elf_mana_circuit>, <contenttweaker:death_metal_plate>, <contenttweaker:elf_mana_circuit>, <contenttweaker:shadowglass_cloth>], 
-		[<contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>, <contenttweaker:rune_cyclic>, <contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>]
+		[<contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>, <contenttweaker:lazy_chip>, <contenttweaker:shadowglass_cloth>, <contenttweaker:shadowglass_cloth>]
 	]);
 
 }

@@ -522,7 +522,7 @@ addFluidReservoir("Aether Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [-11325]);
 
 //deepdark
 addFluidReservoir("Deepdark Mana", 15, <liquid:mana>, 5 * mil, 10*mil, 12, [-11325]);
-addFluidReservoir("Deepdark Dark Catalyst", 1, <liquid:dark_catalyst>, 50 * 1000, 300 * 1000, 4, [-11325]);
+//addFluidReservoir("Deepdark Dark Catalyst", 5, <liquid:dark_catalyst>, 50 * 1000, 300 * 1000, 4, [-11325]);
 
 /*
 addExcavator("Erebus Mushrooms", 25, ["erebusDutchCapMushroom", "erebusGrandmasShoesMushroom", "erebusDarkCappedMushroom", "erebusKaizersFingersMushroom", "erebusSarcasticCzechMushroom", "glowshroom", "cropMushroomRed", "cropMushroomBrown"], [0.15, 0.15, 0.15, 0.15, 0.15, 0.05, 0.1, 0.1], [66]);

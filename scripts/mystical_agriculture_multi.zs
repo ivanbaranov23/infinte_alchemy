@@ -290,6 +290,7 @@ mods.thermalexpansion.Crucible.addRecipe(
         rec.build();
     }
     {
+
         var rec = RecipeBuilder.newBuilder("essence_crystal6", "essence_extractor", 5);
 
         rec.addEnergyPerTickInput(24300 * 1000);
@@ -388,7 +389,45 @@ mods.thermalexpansion.Crucible.addRecipe(
         rec.build();
     }
 }
-
+function addEssenceCompress(ess_small as IItemStack, ess_big as IItemStack, add_crystal as bool){
+    if add_crystal {
+        recipes.addShaped("ia_ma_essence_compress_"~ess_big.name, ess_big, [
+            [null, ess_small, null],
+            [ess_small, <mysticalagriculture:master_infusion_crystal>.reuse(), ess_small],
+            [null, ess_small, null]
+        ]);
+    }
+    recipes.addShapeless("ia_ma_essence_uncompress_" ~ ess_big.name, ess_small * 2, [ess_big]);
+}
+{//compressing uncompressing essence
+    addEssenceCompress(<mysticalagriculture:crafting>, <mysticalagriculture:crafting:1>, false);
+    addEssenceCompress(<mysticalagriculture:crafting:1>, <mysticalagriculture:crafting:2>, false);
+    addEssenceCompress(<mysticalagriculture:crafting:2>, <mysticalagriculture:crafting:3>, false);
+    addEssenceCompress(<mysticalagriculture:crafting:3>, <mysticalagriculture:crafting:4>, false);
+    addEssenceCompress(<mysticalagriculture:crafting:4>, <mysticalagradditions:insanium>, false);
+    addEssenceCompress(<mysticalagradditions:insanium>, <contenttweaker:ma_essence1>, true);
+    addEssenceCompress(<contenttweaker:ma_essence1>, <contenttweaker:ma_essence2>, true);
+    addEssenceCompress(<contenttweaker:ma_essence2>, <contenttweaker:ma_essence3>, true);
+    addEssenceCompress(<contenttweaker:ma_essence3>, <contenttweaker:ma_essence4>, true);
+    addEssenceCompress(<contenttweaker:ma_essence4>, <contenttweaker:ma_essence5>, true);
+    addEssenceCompress(<contenttweaker:ma_essence5>, <contenttweaker:ma_essence6>, true);
+    addEssenceCompress(<contenttweaker:ma_essence6>, <contenttweaker:ma_essence7>, true);
+    addEssenceCompress(<contenttweaker:ma_essence7>, <mysticalagradditions:stuff:69>, false);
+}
+function addBlockCompress(ess_small as IItemStack, ess_big as IItemStack){
+    recipes.addShaped("ia_ma_essence_block_compress_"~ess_big.name, ess_big, [
+        [null, ess_small, null],
+        [ess_small, <mysticalagriculture:master_infusion_crystal>.reuse(), ess_small],
+        [null, ess_small, null]
+    ]);
+}
+{
+    addBlockCompress(<mysticalagriculture:storage>, <mysticalagriculture:storage:1>);
+    addBlockCompress(<mysticalagriculture:storage:1>, <mysticalagriculture:storage:2>);
+    addBlockCompress(<mysticalagriculture:storage:2>, <mysticalagriculture:storage:3>);
+    addBlockCompress(<mysticalagriculture:storage:3>, <mysticalagriculture:storage:4>);
+    //addBlockCompress(<mysticalagriculture:storage:4>, <mysticalagriculture:storage:1>);
+}
 
 
 {//fert essence

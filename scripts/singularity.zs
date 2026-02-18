@@ -158,21 +158,22 @@ for mat in non_metallic_singularities{
 
 //fix brass
 mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:21>);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:21>, <tconstruct:ingots:5>, 256, <extendedcrafting:material:11>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:21>, <tconstruct:ingots:5>, 256, <contenttweaker:singularity_dust>, 5000000);
 
 //my singularities
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:mushroomite_singularity>, <contenttweaker:mushroomite_ingot>, 256, <extendedcrafting:material:11>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:mushroomite_singularity>, <contenttweaker:mushroomite_ingot>, 256, <contenttweaker:singularity_dust>, 5000000);
 
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:fiery_singularity>, <twilightforest:fiery_ingot>, 256, <extendedcrafting:material:11>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:solar_silicon_singularity>, <contenttweaker:solar_silicon>, 256, <extendedcrafting:material:11>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:mana_dust_singularity>, <thermalfoundation:material:1028>, 256, <extendedcrafting:material:11>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neuro_singularity>, <contenttweaker:basic_neuron>, 256, <extendedcrafting:material:11>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:evil_singularity>, <extrautils2:ingredients:17>, 256, <extendedcrafting:material:11>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:fiery_singularity>, <twilightforest:fiery_ingot>, 256, <contenttweaker:singularity_dust>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:solar_silicon_singularity>, <contenttweaker:solar_silicon>, 256, <contenttweaker:singularity_dust>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:mana_dust_singularity>, <thermalfoundation:material:1028>, 256, <contenttweaker:singularity_dust>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neuro_singularity>, <contenttweaker:basic_neuron>, 256, <contenttweaker:singularity_dust>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:will_singularity>, <contenttweaker:mixed_will_crystal>, 64, <contenttweaker:singularity_dust>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:evil_singularity>, <extrautils2:ingredients:17>, 256, <contenttweaker:singularity_dust>, 5000000);
 
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:resource:4>, 256, <extendedcrafting:material:11>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:resource:4>, 256, <contenttweaker:singularity_dust>, 5000000);
 
 //singularity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:meta_singularity>, <contenttweaker:singularity_dust>, 256, <extendedcrafting:material:11>, 5000000);
+mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:meta_singularity>, <contenttweaker:singularity_dust>, 256, <contenttweaker:singularity_dust>, 5000000);
 
 mods.extendedcrafting.CompressionCrafting.addRecipe(
 	<extendedcrafting:singularity_custom:68>, <thermalfoundation:material:160>, 256 * 256, 
@@ -187,10 +188,10 @@ mods.extendedcrafting.CompressionCrafting.addRecipe(
 //extra recs
 scripts.content_machines.addBioAssemblerRecipeRandom(
 	[
-		<extendedcrafting:singularity_custom:3> % 60,
-		<extendedcrafting:singularity_custom:3> % 60,
-		<extendedcrafting:singularity_custom:3> % 60,
-		<extendedcrafting:singularity_custom:3> % 60
+		<extendedcrafting:singularity_custom:3> % 70,
+		<extendedcrafting:singularity_custom:3> % 70,
+		<extendedcrafting:singularity_custom:3> % 70,
+		<extendedcrafting:singularity_custom:3> % 70
 	], null, [
 		<contenttweaker:reagent_glass>
 	], [], <contenttweaker:research_singularity>,

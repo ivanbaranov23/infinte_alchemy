@@ -143,7 +143,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
             [
                 <contenttweaker:tantalite_ore> * 128, <moretcon:oreelectarite> * 128, <moretcon:oregarstone> * 128
             ], [
-                <contenttweaker:tantalite_ore> * 128, <moretcon:oreelectarite> * 128, <moretcon:oregarstone> * 128
+                <contenttweaker:tantalite_ore> * 256, <moretcon:oreelectarite> * 256, <moretcon:oregarstone> * 256
             ]
         ],
         <contenttweaker:radiotoad_target3>: [
@@ -151,12 +151,12 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <densemetals:dense_coal_ore> * 64,
                 <densemetals:dense_uranium_ore> * 64,
                 <bigreactors:oreyellorite> * 128,
-                <erebus:ore_copper> * 64
+                <erebus:ore_copper> * 128
             ], [
-                <densemetals:dense_coal_ore> * 64,
-                <densemetals:dense_uranium_ore> * 64,
-                <bigreactors:oreyellorite> * 64,
-                <erebus:ore_copper> * 64
+                <densemetals:dense_coal_ore> * 96,
+                <densemetals:dense_uranium_ore> * 96,
+                <bigreactors:oreyellorite> * 256,
+                <erebus:ore_copper> * 256
             ]
         ]
     },
