@@ -28,17 +28,17 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
+				TrophyColorRed: 81,
+				TrophyColorBlue: 26,
+				TrophyName: "Frame 0.5",
+				TrophyColorGreen: 48,
+				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "actuallyadditions:block_misc",
 					Count: 1,
 					Damage: 4s
 				},
-				TrophyName: "Frame 0.5",
-				TrophyColorRed: 81,
-				TrophyColorGreen: 48,
-				TrophyColorBlue: 26,
-				TrophyVariant: "neon",
-				TrophyShowsTooltip: 1b
+				TrophyVariant: "neon"
 			}
 		}
 	}]

@@ -1,0 +1,26 @@
+{
+	title: "Hydrogen Peroxide",
+	x: -1.0d,
+	y: 5.5d,
+	text: [
+		"Loop ethylantraquinone to get hydrogen peroxide."
+	],
+	dependencies: [
+		"97fb5237",
+		"39117ecf"
+	],
+	tasks: [{
+		uid: "d3e014f0",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ethylantraquinone"
+		}]
+	},
+	{
+		uid: "5d936ee2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:h2o2"
+		}]
+	}]
+}

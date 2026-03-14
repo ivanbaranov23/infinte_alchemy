@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: 3.0d,
+	dependencies: [
+		"7b16753c"
+	],
+	tasks: [{
+		uid: "98d4f5fb",
+		type: "item",
+		items: [{
+			item: "ometweaks:neutronium_capacitor"
+		}]
+	}]
+}

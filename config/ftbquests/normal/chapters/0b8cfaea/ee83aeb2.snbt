@@ -30,17 +30,17 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
+				TrophyColorRed: 38,
+				TrophyColorBlue: 148,
+				TrophyName: "Furnace",
+				TrophyColorGreen: 83,
+				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "minecraft:furnace",
 					Count: 1,
 					Damage: 0s
 				},
-				TrophyName: "Furnace",
-				TrophyColorRed: 38,
-				TrophyColorGreen: 83,
-				TrophyColorBlue: 148,
-				TrophyVariant: "neon",
-				TrophyShowsTooltip: 1b
+				TrophyVariant: "neon"
 			}
 		}
 	}]

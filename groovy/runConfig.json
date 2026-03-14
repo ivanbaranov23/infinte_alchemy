@@ -3,9 +3,7 @@
   "packId": "placeholdername",
   "version": "1.0.0",
   "debug": false,
-  "classes": {
-    "preInit": []
-  },
+  
   "loaders": {
     "preInit": [
       "preInit/"

@@ -1,0 +1,14 @@
+{
+	x: 1.0d,
+	y: 5.5d,
+	dependencies: [
+		"9530efb1"
+	],
+	tasks: [{
+		uid: "d2584d80",
+		type: "item",
+		items: [{
+			item: "contenttweaker:adipic_acid"
+		}]
+	}]
+}

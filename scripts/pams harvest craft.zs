@@ -742,9 +742,9 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
 {//coffee
     recipes.remove(<harvestcraft:coffeeitem>);
     recipes.addShapeless("coffeeitem", <harvestcraft:coffeeitem>, [
-        <actuallyadditions:item_coffee>.transformDamage()
+        <actuallyadditions:item_coffee:*>.transformDamage()
     ]);
-    mods.thermalexpansion.Crucible.addRecipe(<liquid:coffee> * 200, <harvestcraft:coffeeitem>, 3500);
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:coffee> * 1000, <harvestcraft:coffeeitem>, 3500);
 
 
     Mixer.addRecipe(<liquid:coffee> * 1000, <liquid:pure_water> * 1000, 
@@ -752,6 +752,12 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
     );
     Mixer.addRecipe(<liquid:coffee> * 1000, <liquid:pure_water> * 1000, 
         [<actuallyadditions:item_coffee_beans>], 1000
+    );
+    mods.thermalexpansion.Imbuer.addRecipe(
+        <liquid:coffee> * 500, <harvestcraft:coffeebeanitem>, <liquid:pure_water> * 500, 1000
+    );
+    mods.thermalexpansion.Imbuer.addRecipe(
+        <liquid:coffee> * 500, <actuallyadditions:item_coffee_beans>, <liquid:pure_water> * 500, 1000
     );
 
     mods.thermalexpansion.Refinery.addRecipe(<liquid:caffeine> * 200, null, <liquid:coffee> * 400, 8000);

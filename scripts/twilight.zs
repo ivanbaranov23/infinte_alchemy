@@ -114,4 +114,4 @@ recipes.addShapeless("ia_zombie_scepter", <twilightforest:zombie_scepter>, [
 ]);
 
 
-mods.jei.JEI.hideCategory("jei_uncrafting");
+//mods.jei.JEI.hideCategory("jei_uncrafting");

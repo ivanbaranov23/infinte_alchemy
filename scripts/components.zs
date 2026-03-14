@@ -19,7 +19,37 @@ import mods.mekanism.infuser;
 		2000
 	);
 
-
+	//components
+	recipes.remove(<immersiveengineering:material:8>);
+	recipes.addShaped("ia_iron_component", <immersiveengineering:material:8> * 2, [
+		[<ore:plateIron>, <contenttweaker:duraluminum_ingot>, <contenttweaker:solder>], 
+		[<ore:stickGold>, <contenttweaker:simple_motor>, <ore:stickLead>], 
+		[<contenttweaker:solder>, <contenttweaker:duraluminum_ingot>, <ore:plateIron>]
+	]);
+	Blueprint.removeRecipe(<immersiveengineering:material:8>);
+	Blueprint.addRecipe(
+		"components", <immersiveengineering:material:8> * 3, 
+		[<ore:plateIron>, <contenttweaker:solder>, <ore:stickGold>, <contenttweaker:duraluminum_ingot>, <contenttweaker:simple_motor>, <ore:stickLead>]
+	);
+	Blueprint.addRecipe(
+		"components", <immersiveengineering:material:8> * 6, 
+		[<ore:plateIron>, <contenttweaker:solder>, <ore:stickGold>, <contenttweaker:duraluminum_ingot>, <contenttweaker:activated_motor>, <ore:stickLead>]
+	);
+	recipes.remove(<immersiveengineering:material:9>);
+	recipes.addShaped("ia_steel_component", <immersiveengineering:material:9> * 2, [
+		[<ore:plateSteel>, <contenttweaker:duraluminum_ingot>, <contenttweaker:solder>], 
+		[<ore:stickElectrum>, <contenttweaker:simple_motor>, <contenttweaker:lesmium_rod>], 
+		[<contenttweaker:solder>, <contenttweaker:duraluminum_ingot>, <ore:plateSteel>]
+	]);
+	Blueprint.removeRecipe(<immersiveengineering:material:9>);
+	Blueprint.addRecipe(
+		"components", <immersiveengineering:material:9> * 3, 
+		[<ore:plateSteel>, <contenttweaker:solder>, <ore:stickElectrum>, <contenttweaker:duraluminum_ingot>, <contenttweaker:simple_motor>, <contenttweaker:lesmium_rod>]
+	);
+	Blueprint.addRecipe(
+		"components", <immersiveengineering:material:9> * 6, 
+		[<ore:plateSteel>, <contenttweaker:solder>, <ore:stickElectrum>, <contenttweaker:duraluminum_ingot>, <contenttweaker:activated_motor>, <contenttweaker:lesmium_rod>]
+	);
 }
 
 mods.immersiveengineering.BottlingMachine.addRecipe(<projectred-core:resource_item>, <contenttweaker:electric_stone_dust>, <liquid:concrete> * 250);
@@ -201,11 +231,6 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			[null, <contenttweaker:carminium_ingot>, <contenttweaker:tank_oxygen>], 
 			[<contenttweaker:tank_knallgas>, <contenttweaker:osmiridium_support>, <contenttweaker:ra_burner>]
 		]);
-		/*recipes.addShaped("ia_igniter2", <contenttweaker:igniter> * 2, [
-			[<natura:flint_and_blaze>, null, <contenttweaker:tank_oxygen>], 
-			[null, <contenttweaker:carminium_ingot>, <contenttweaker:tank_oxygen>], 
-			[<alchemistry:compound:36>, <contenttweaker:osmiridium_support>, <contenttweaker:ra_burner>]
-		]);*/
 		scripts.content_machines.addAssemblerRecipe(
 			[<contenttweaker:igniter> * 4],
 			[
@@ -480,7 +505,15 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
 			[<contenttweaker:activated_green_fish>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
 		]);
-		mods.mekanism.infuser.addRecipe("CHEESE", 160, <contenttweaker:fishy_capacitor> * 2, <contenttweaker:cheesy_capacitor>);
+		
+		//cheesy
+		recipes.addShaped("ia_cheesy_cap", <contenttweaker:cheesy_capacitor> * 2, [
+			[<contenttweaker:cheesestone>, <contenttweaker:fishy_capacitor>, <contenttweaker:cheesestone>],
+			[<contenttweaker:fishy_capacitor>, <contenttweaker:cheesestone>, <contenttweaker:fishy_capacitor>],
+			[<contenttweaker:cheesestone>, <contenttweaker:fishy_capacitor>, <contenttweaker:cheesestone>]
+		]);
+		mods.mekanism.infuser.addRecipe("CHEESE", 120, <contenttweaker:fishy_capacitor> * 2, <contenttweaker:cheesy_capacitor>);
+
 		
 		{//glass hull and vacuum tube
 			mods.tconstruct.Casting.addTableRecipe(
@@ -926,7 +959,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			<contenttweaker:imperomite_catalyst>,
 			<minecraft:dragon_breath> * 2,
 			(<enderio:item_material:51> | <enderio:item_material:52>) * 12,
-			<taiga:seismum_dust> * 2
+			(<taiga:seismum_dust> | <contenttweaker:lubarium_dust>) * 2
 		], [
 			<liquid:lubricant> * 1500,
 			<liquid:mekanization_catalyst> * 1000,
@@ -939,7 +972,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		[
 			<contenttweaker:imperomite_catalyst>,
 			(<enderio:item_material:51> | <enderio:item_material:52>) * 12,
-			<taiga:seismum_dust> * 2
+			(<taiga:seismum_dust> | <contenttweaker:lubarium_dust>) * 2
 		], [
 			<liquid:lubricant> * 1500,
 			<liquid:mekanization_catalyst> * 1000,
@@ -953,7 +986,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		[
 			<contenttweaker:imperomite_catalyst>,
 			(<enderio:item_material:51> | <enderio:item_material:52>) * 12,
-			<taiga:seismum_dust> * 2
+			(<taiga:seismum_dust> | <contenttweaker:lubarium_dust>) * 2
 		], [
 			<liquid:lubricant> * 1500,
 			<liquid:mekanization_catalyst> * 1000,
@@ -1031,12 +1064,20 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		[<ore:gearWood>, <minecraft:piston>, <minecraft:piston>]
 	]);
 	Blueprint.addRecipe("components", 
-			<contenttweaker:simple_motor> * 3, 
-			[
-				<exnihilocreatio:block_axle_stone>,
-				<minecraft:piston>, <minecraft:piston>, <immersiveengineering:material>,
-				<ore:gearWood>, <ore:gearWood>
-			]
+		<contenttweaker:simple_motor> * 3, 
+		[
+			<exnihilocreatio:block_axle_stone>,
+			<minecraft:piston>, <minecraft:piston>, <immersiveengineering:material>,
+			<ore:gearWood>, <ore:gearWood>
+		]
+	);
+	Blueprint.addRecipe("components", 
+		<contenttweaker:simple_motor> * 5, 
+		[
+			<exnihilocreatio:block_axle_stone>,
+			<minecraft:piston>, <minecraft:piston>, <immersiveengineering:material>,
+			<moreplates:knightslime_gear>
+		]
 	);
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:simple_motor> * 12],
@@ -1045,8 +1086,28 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			<minecraft:piston> * 6,
 			<immersiveengineering:material> * 4
 		],
-		<liquid:knightslime> * 144, 20, 32
+		<liquid:knightslime> * 288, 20, 32
 	);
+
+
+	recipes.addShapeless("ia_activated_motor", <contenttweaker:activated_motor> * 2, [
+		<contenttweaker:simple_motor>,
+		<contenttweaker:simple_motor>,
+		<erebus:materials:8>,
+		<contenttweaker:activated_green_fish>,
+		<contenttweaker:cheesy_capacitor>
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<contenttweaker:activated_motor> * 4],
+		[
+			<contenttweaker:simple_motor> * 2,
+			<erebus:materials:8>,
+			<contenttweaker:activated_green_fish>,
+			<contenttweaker:cheesy_capacitor>
+		],
+		null, 20, 320
+	);
+
 
 
 	recipes.remove(<projectred-core:resource_item:410>);
@@ -1664,7 +1725,7 @@ mods.mekanism.reaction.addRecipe(
 			<contenttweaker:moissanite_plate>,
 			<contenttweaker:delicate_amber>,
 			<appliedenergistics2:quartz_glass> * 6
-		], 50000
+		], 500000
 	);
 
 	scripts.content_machines.addAssemblerRecipe(
@@ -1711,6 +1772,15 @@ mods.mekanism.reaction.addRecipe(
 
         rec.build();
     }
+
+	//onyx
+	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:onyx_mirror>, 
+		[
+			<contenttweaker:onyx>,
+			<contenttweaker:shadowglass_cloth> * 2,
+			<contenttweaker:perfect_mirror> * 2
+		], 5000000
+	);
 }
 {//uv lamp
 	scripts.content_machines.addFluidAlloyerRecipe(
@@ -2042,6 +2112,13 @@ scripts.content_machines.addAssemblerRecipe(
 			<botania:rune:13>,
 			<contenttweaker:beryllium_sheet> * 8,
 			<contenttweaker:carminium_ingot> * 48
+		], 1000000
+	);
+	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:carminium_sheet> * 2, 
+		[
+			<botania:rune:13>,
+			<contenttweaker:beryllium_sheet> * 8,
+			<contenttweaker:awakened_carminium_ingot> * 48
 		], 1000000
 	);
 }

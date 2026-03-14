@@ -15,29 +15,6 @@
 		icon: {
 			id: "tconstruct:pickaxe",
 			tag: {
-				StatsOriginal: {
-					AttackSpeedMultiplier: 1.0f,
-					MiningSpeed: 2.5f,
-					FreeModifiers: 3,
-					Durability: 236,
-					HarvestLevel: 1,
-					Attack: 3.5f
-				},
-				Stats: {
-					AttackSpeedMultiplier: 1.0f,
-					MiningSpeed: 2.5f,
-					FreeModifiers: 3,
-					Durability: 236,
-					HarvestLevel: 1,
-					Attack: 3.5f
-				},
-				Special: {
-					Categories: [
-						"tool",
-						"aoe",
-						"harvest"
-					]
-				},
 				TinkerData: {
 					Materials: [
 						"honey_drop",
@@ -46,6 +23,21 @@
 					],
 					Modifiers: [
 						"toolleveling"
+					]
+				},
+				Stats: {
+					FreeModifiers: 3,
+					MiningSpeed: 2.5f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 1,
+					Attack: 3.5f,
+					Durability: 236
+				},
+				Special: {
+					Categories: [
+						"tool",
+						"aoe",
+						"harvest"
 					]
 				},
 				Modifiers: [{
@@ -63,6 +55,14 @@
 					color: 16777215,
 					level: 1
 				}],
+				StatsOriginal: {
+					FreeModifiers: 3,
+					MiningSpeed: 2.5f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 1,
+					Attack: 3.5f,
+					Durability: 236
+				},
 				Traits: [
 					"tasty",
 					"honey",
@@ -81,29 +81,6 @@
 		icon: {
 			id: "tconstruct:pickaxe",
 			tag: {
-				StatsOriginal: {
-					AttackSpeedMultiplier: 1.0f,
-					MiningSpeed: 2.5f,
-					FreeModifiers: 3,
-					Durability: 276,
-					HarvestLevel: 1,
-					Attack: 3.5f
-				},
-				Stats: {
-					AttackSpeedMultiplier: 1.0f,
-					MiningSpeed: 2.5f,
-					FreeModifiers: 3,
-					Durability: 276,
-					HarvestLevel: 1,
-					Attack: 3.5f
-				},
-				Special: {
-					Categories: [
-						"tool",
-						"aoe",
-						"harvest"
-					]
-				},
 				TinkerData: {
 					Materials: [
 						"elastic_fiber",
@@ -112,6 +89,21 @@
 					],
 					Modifiers: [
 						"toolleveling"
+					]
+				},
+				Stats: {
+					FreeModifiers: 3,
+					MiningSpeed: 2.5f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 1,
+					Attack: 3.5f,
+					Durability: 276
+				},
+				Special: {
+					Categories: [
+						"tool",
+						"aoe",
+						"harvest"
 					]
 				},
 				Modifiers: [{
@@ -129,6 +121,14 @@
 					color: 16777215,
 					level: 1
 				}],
+				StatsOriginal: {
+					FreeModifiers: 3,
+					MiningSpeed: 2.5f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 1,
+					Attack: 3.5f,
+					Durability: 276
+				},
 				Traits: [
 					"unnatural",
 					"ecological",
@@ -147,29 +147,6 @@
 		icon: {
 			id: "tconstruct:pickaxe",
 			tag: {
-				StatsOriginal: {
-					AttackSpeedMultiplier: 1.0f,
-					MiningSpeed: 8.0f,
-					FreeModifiers: 3,
-					Durability: 2228,
-					HarvestLevel: 4,
-					Attack: 5.0f
-				},
-				Stats: {
-					AttackSpeedMultiplier: 1.0f,
-					MiningSpeed: 8.0f,
-					FreeModifiers: 3,
-					Durability: 2228,
-					HarvestLevel: 4,
-					Attack: 5.0f
-				},
-				Special: {
-					Categories: [
-						"tool",
-						"harvest",
-						"aoe"
-					]
-				},
 				TinkerData: {
 					Materials: [
 						"jade",
@@ -178,6 +155,21 @@
 					],
 					Modifiers: [
 						"toolleveling"
+					]
+				},
+				Stats: {
+					FreeModifiers: 3,
+					MiningSpeed: 8.0f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 4,
+					Attack: 5.0f,
+					Durability: 2228
+				},
+				Special: {
+					Categories: [
+						"tool",
+						"harvest",
+						"aoe"
 					]
 				},
 				Modifiers: [{
@@ -190,6 +182,14 @@
 					color: 16777215,
 					level: 1
 				}],
+				StatsOriginal: {
+					FreeModifiers: 3,
+					MiningSpeed: 8.0f,
+					AttackSpeedMultiplier: 1.0f,
+					HarvestLevel: 4,
+					Attack: 5.0f,
+					Durability: 2228
+				},
 				Traits: [
 					"jaded",
 					"toolleveling"

@@ -1,11 +1,7 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "textures": {
-      "texture": "contenttweaker:blocks/cursed_gold_altar3",
-      "particle": "contenttweaker:blocks/cursed_gold_altar3"
-    },
-    "model": "base:storage",
+    "model": "contenttweaker:cursed_gold_altar3",
     "uvlock": true,
     "transform": "forge:default-block"
   },

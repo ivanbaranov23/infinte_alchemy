@@ -76,6 +76,19 @@ mods.thermalexpansion.Centrifuge.addRecipe(
     <contenttweaker:ancient_dust> * 4, null, 5000
 );
 
+//cheesestone
+//is a dust
+mods.thermalexpansion.InductionSmelter.addRecipe(
+    <contenttweaker:cheesestone>, 
+    <harvestcraft:cheeseitem> * 2, <minecraft:stone:1> * 4, 
+    1000
+);
+mods.thermalexpansion.InductionSmelter.addRecipe(
+    <contenttweaker:cheesestone> * 2, 
+    <contenttweaker:roving>, <minecraft:stone:1> * 8, 
+    1000
+);
+
 
 //nickel oxide
 

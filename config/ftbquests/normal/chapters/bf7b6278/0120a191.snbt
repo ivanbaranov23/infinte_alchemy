@@ -80,17 +80,17 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
+				TrophyColorRed: 30,
+				TrophyColorBlue: 27,
+				TrophyName: "Big Tower",
+				TrophyColorGreen: 27,
+				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "immersivepetroleum:material",
 					Count: 1,
 					Damage: 0s
 				},
-				TrophyName: "Big Tower",
-				TrophyColorRed: 30,
-				TrophyColorGreen: 27,
-				TrophyColorBlue: 27,
-				TrophyVariant: "neon",
-				TrophyShowsTooltip: 1b
+				TrophyVariant: "neon"
 			}
 		}
 	},

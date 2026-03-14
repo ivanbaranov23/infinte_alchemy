@@ -524,6 +524,13 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_ore_osmium> % 35,
 			<contenttweaker:ambrosium_seed> % 3,
 			<contenttweaker:ambrosium_dust> % 10
+		],
+
+		<contenttweaker:red_gravel>: [
+			<moretcon:gemgarstone> % 50,
+			<moretcon:gemgarstone> % 50,
+			<moretcon:gemgarstone> % 50,
+			<moretcon:gemgarstone> % 50,
 		]
 	}
 };

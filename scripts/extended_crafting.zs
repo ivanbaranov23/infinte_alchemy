@@ -71,6 +71,14 @@ mods.enderio.Vat.addRecipe(
 );
 mods.thermalexpansion.Transposer.addFillRecipe(<extendedcrafting:material:7>, <contenttweaker:cool_sulfur> * 4, <liquid:luminessence> * 1000, 40000);
 
+//lamp
+recipes.remove(<extendedcrafting:lamp:1>);
+recipes.addShaped("ia_lumi_lamp", <extendedcrafting:lamp:1>, [
+	[<extendedcrafting:frame>, <contenttweaker:electricium>, <extendedcrafting:frame>], 
+	[<contenttweaker:electricium>, <extendedcrafting:storage:1>, <contenttweaker:electricium>], 
+	[<extendedcrafting:frame>, <contenttweaker:electricium>, <extendedcrafting:frame>]
+]);
+
 //components
 recipes.remove(<extendedcrafting:material:14>);
 Inscriber.addRecipe(<extendedcrafting:material:14>, <extendedcrafting:material:2>, false, <minecraft:nether_star>, <enderio:item_capacitor_crystalline>);

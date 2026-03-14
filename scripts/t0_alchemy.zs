@@ -166,3 +166,5 @@ scripts.helper.addSimpleCrushingRecipeWByproduct(<contenttweaker:gold_sand>, <ex
 mods.thermalexpansion.Crucible.addRecipe(<liquid:gold> * 288, <contenttweaker:gold_sand>, 1000);
 
 
+mods.tconstruct.Melting.addRecipe(<liquid:blood> * 250, <bhc:red_heart>);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:blood> * 250, <bhc:red_heart>, 1000);

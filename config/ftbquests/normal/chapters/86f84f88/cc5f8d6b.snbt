@@ -1,0 +1,81 @@
+{
+	title: "Research Oreberries",
+	icon: "contenttweaker:research_oreberry",
+	x: -1.0d,
+	y: 2.0d,
+	shape: "gear",
+	text: [
+		"Gives access to some new ore berries and color berries. Color berries give better recs for thermal dusts and can be used to dup metals."
+	],
+	dependencies: [
+		"c529d48c"
+	],
+	tasks: [{
+		uid: "0052fc89",
+		type: "item",
+		items: [{
+			item: "oreberries:cobalt_oreberry_bush"
+		}],
+		count: 4L
+	},
+	{
+		uid: "6f906fd2",
+		type: "item",
+		items: [{
+			item: "oreberries:ardite_oreberry_bush"
+		}],
+		count: 4L
+	},
+	{
+		uid: "ba9ed2f9",
+		type: "item",
+		items: [{
+			item: "oreberries:antimony_oreberry_bush"
+		}],
+		count: 4L
+	},
+	{
+		uid: "80c7dec8",
+		type: "item",
+		items: [{
+			item: "oreberries:gold_oreberry_bush"
+		}],
+		count: 4L
+	},
+	{
+		uid: "b467e0a0",
+		type: "item",
+		items: [{
+			item: "oreberries:silver_oreberry_bush"
+		}],
+		count: 4L
+	},
+	{
+		uid: "5f547924",
+		type: "item",
+		items: [{
+			item: "oreberries:lead_oreberry_bush"
+		}],
+		count: 4L
+	},
+	{
+		uid: "1d55a743",
+		type: "item",
+		items: [{
+			item: "oreberries:osmium_oreberry_bush"
+		}],
+		count: 4L
+	},
+	{
+		uid: "8bdb309d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_oreberry"
+		}]
+	}],
+	rewards: [{
+		uid: "d6dabc08",
+		type: "item",
+		item: "contenttweaker:research_oreberry"
+	}]
+}

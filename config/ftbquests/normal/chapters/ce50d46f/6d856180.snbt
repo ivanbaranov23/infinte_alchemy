@@ -1,0 +1,19 @@
+{
+	x: 24.5d,
+	y: 4.0d,
+	dependencies: [
+		"73f407fa"
+	],
+	tasks: [{
+		uid: "1e78b897",
+		type: "item",
+		items: [{
+			item: "ometweaks:kikeridan_capacitor"
+		}]
+	}],
+	rewards: [{
+		uid: "bc198367",
+		type: "item",
+		item: "ometweaks:kikeridan_capacitor"
+	}]
+}

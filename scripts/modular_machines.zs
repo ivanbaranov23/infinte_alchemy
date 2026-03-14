@@ -167,6 +167,20 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
             <bloodmagic:demon_will_gauge>
         ], 1200, 200);
     }
+    {//lp
+        mods.bloodmagic.TartaricForge.addRecipe(<modularmachinery:blocklifeessenceproviderinput>, [
+            <modularmachinery:blockfluidinputhatch:6>,
+            <moretcon:blockbloodstone>,
+            <modularmachinery:blockcasing:4>,
+            <contenttweaker:tank2>
+        ], 1200, 200);
+        mods.bloodmagic.TartaricForge.addRecipe(<modularmachinery:blocklifeessenceprovideroutput>, [
+            <modularmachinery:blockfluidoutputhatch:6>,
+            <moretcon:blockbloodstone>,
+            <modularmachinery:blockcasing:4>,
+            <contenttweaker:tank2>
+        ], 1200, 200);
+    }
 
     recipes.addShaped("ia_blockdimensionproviderinput", <modularmachineryaddons:blockdimensionproviderinput>, [
         [<minecraft:compass>],

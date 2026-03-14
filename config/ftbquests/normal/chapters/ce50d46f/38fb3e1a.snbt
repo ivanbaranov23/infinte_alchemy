@@ -1,0 +1,14 @@
+{
+	x: 12.5d,
+	y: 0.0d,
+	dependencies: [
+		"b031a7e7"
+	],
+	tasks: [{
+		uid: "ea315dc6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:perfect_mirror"
+		}]
+	}]
+}

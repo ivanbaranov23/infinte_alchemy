@@ -41,9 +41,9 @@ projectred-expansion:electric_efficiency
 endercore:xpboost
 endercore:autosmelt
 enderio:shimmer
-enderio:soulbound
-enderio:witherarrow
 enderio:witherweapon
+enderio:witherarrow
+enderio:soulbound
 enderio:repellent
 exnihilocreatio:sieve_efficiency
 exnihilocreatio:sieve_fortune

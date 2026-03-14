@@ -65,3 +65,38 @@ IMachineRegistry.getMachine("extrautils2:enchanter").addRecipe(
         );
     }
 }
+{//ice
+    var gen = IMachineRegistry.getMachine("extrautils2:generator_ice");
+    
+    gen.removeRecipe({
+        "input": <minecraft:ice>
+    });
+    gen.removeRecipe({
+        "input": <minecraft:packed_ice>
+    });
+    gen.removeRecipe({
+        "input": <minecraft:snowball>
+    });
+    gen.removeRecipe({
+        "input": <minecraft:snow>
+    });
+    gen.removeRecipe({
+        "input": <minecraft:snow_layer>
+    });
+    gen.removeRecipe({
+        "input": <minecraft:ender_eye>
+    });
+
+    for item,time in {
+        <bloodmagic:component:32>: 60 * 20,
+        <contenttweaker:awakened_umberrack>: 10 * 20,
+        <extendedcrafting:singularity_custom:14>: 20 * 20,
+        <contenttweaker:advanced_cryotheum>: 60 * 20,
+        <botania:rune:7>: 5 * 60 * 20
+
+    } as int[IItemStack] {
+        gen.addRecipe(
+            {input: item}, {}, time * 1000, time
+        );
+    }
+}

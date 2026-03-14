@@ -455,7 +455,7 @@ recipes.addShaped("ia_dark_steel_direct", <enderio:item_dark_steel_upgrade:1>.wi
 
 	recipes.remove(<enderio:block_solar_panel:3>);
 	recipes.addShaped("ia_eio_solar3", <enderio:block_solar_panel:3>, [
-		[<enderio:item_material:3>, <contenttweaker:super_vibrant_plate>, <enderio:item_material:3>], 
+		[<contenttweaker:solar_silicon>, <contenttweaker:super_vibrant_plate>, <contenttweaker:solar_silicon>], 
 		[<enderio:block_solar_panel>, <enderio:block_solar_panel>, <enderio:block_solar_panel>], 
 		[<enderio:item_capacitor_vivid>, <enderio:block_solar_panel:2>, <enderio:item_capacitor_vivid>]
 	]);

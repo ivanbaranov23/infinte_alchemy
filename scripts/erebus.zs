@@ -1,28 +1,6 @@
 import moretweaker.erebus.OfferingAltar;
 
 
-
-/*
-//tooltips are from dj2
-<erebus:materials:8>.addTooltip("§f- Solifuges (in the Ulterior Outback biome)");
-<erebus:materials:8>.addTooltip("§f- Centipedes (in most biomes)");
-<erebus:materials:13>.addTooltip("§f- Solifuges (in the Ulterior Outback biome)");
-<erebus:materials:13>.addTooltip("§f- Centipedes (in most biomes)");
-<erebus:materials>.addTooltip("§f- Beetles (in Underground Jungles,");
-<erebus:materials>.addTooltip("§f           Subterranean Savannahs and Elysian Fields)");
-<erebus:materials>.addTooltip("§f- Antlions (in Volcanic Deserts and in Antlion Overlord Pyramids)");
-dj2.magma_crawler_eye.desc0=§f- Magma Crawlers (in Antlion Overlord Pyramids)");
-dj2.tarantula_leg.desc0=§f- Tarantulas (in most biomes)");
-dj2.fly_wing.desc0=§f- Flies (in all biomes)");
-dj2.fly_wing.desc1=§f- Botflies (in most biomes)");
-dj2.dragonfly_wing.desc0=§f- Dragonflies (on Dragonfly Lilypads in)");
-dj2.dragonfly_wing.desc1=§flarge water bodies within Submerged Swamps");
-dj2.elastic_fibre.desc0=§f- Locusts (in Elysian Fields and Subterranean Savannahs)");
-dj2.elastic_fibre.desc1=§f- Punchrooms (in Fungal Forests as an uncommon drop)");
-*/
-
-
-
 //bamboo
 recipes.addShapeless(
     "bamboo_uncrafting",
@@ -158,3 +136,5 @@ mods.tconstruct.Casting.addBasinRecipe(
   true, 200
 );
 mods.thermalexpansion.Transposer.addFillRecipe(<erebus:amber>, <thermalfoundation:material:832>, <liquid:resin> * 500, 3000);
+
+//

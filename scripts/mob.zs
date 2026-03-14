@@ -162,11 +162,30 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <erebus:grandmas_shoes_mushroom>] // a list of ingredients used for the summoning
     );
 
-    addEggHint("erebus:erebus.centipede", [<erebus:materials:8>]);
+    addEggHint("erebus:erebus.centipede", [<erebus:materials:8>, <erebus:materials:13>]);
     addRootsSummoning(
         <entity:erebus:erebus.centipede>, // the entity to be summoned
         [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})] // a list of ingredients used for the summoning
     );
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <erebus:materials:13>, 
+        <erebus:materials:8> * 3, <contenttweaker:simple_motor>, 
+        <liquid:lubricant> * 1000, 
+        20, 256
+    );
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <erebus:materials:13> * 3, 
+        <erebus:materials:8> * 3, <contenttweaker:activated_motor>, 
+        <liquid:lubricant> * 1000, 
+        20, 256
+    );
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <erebus:materials:13> * 6, 
+        <erebus:materials:8> * 3, <contenttweaker:activated_motor>, 
+        <liquid:mekanized_lubricant> * 1000, 
+        20, 256
+    );
+
 
     addEggHint("erebus:erebus.glow_worm", [<erebus:materials:12>]);
     addRootsSummoning(
@@ -174,7 +193,7 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:glowstone>] // a list of ingredients used for the summoning
     );
     
-    addEggHint("erebus:erebus.glow_worm", [<erebus:erebus_food:2>]);
+    addEggHint("erebus:erebus.grasshopper", [<erebus:erebus_food:2>]);
     addRootsSummoning(
         <entity:erebus:erebus.grasshopper>, // the entity to be summoned
         [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <minecraft:hopper>, <minecraft:tallgrass:1>] // a list of ingredients used for the summoning

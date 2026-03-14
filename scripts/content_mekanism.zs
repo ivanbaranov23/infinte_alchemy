@@ -89,8 +89,9 @@ addGas("ethyl_cyanoacrylate", "96bad5", true);
 addGas("cyanoacrylate", "afdfe9", true);
 
 addGas("potassium_bitartrate", "b4b6dd", false);
+addGas("carmin_tartrate", "1c26ce", false);
 
-addGas("ethylene_oxide", "afdfe9", false);
+addGas("ethylene_oxide", "afdfe9", true);
 addGas("ethanolamine", "afdfe9", false);
 addGas("taurine", "afdfe9", true);
 
@@ -114,6 +115,7 @@ addGas("smart", "22ffff", false);
 addGas("waste_gas", "1f1f20", false);
 addGas("red_waste", "930400", false);
 
+addGas("diamond3", "152843", false);
 
 function addMetalGas(name as string, color as string){
     addGas(name, color, false);

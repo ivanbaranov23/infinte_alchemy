@@ -89,11 +89,18 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
     <ore:oreManyIron>.add(<densemetals:dense_iron_ore>);
 
     <ore:oreManyNickel>.add(<densemetals:dense_nickel_ore>);
+
+    <ore:oreManySilver>.add(<densemetals:dense_silver_ore>);
 }
 
+//other
 <ore:sandIron>.add(<contenttweaker:iron_sand>);
 
 <ore:oreOxideNickel>.add(<immersiveengineering:ore:4>);
+
+<ore:oreSpaceSilver>.add(<contenttweaker:argyrodite_ore>);
+<ore:oreOverworldGalena>.add(<immersiveengineering:ore:2>);
+
 
 //slime
 

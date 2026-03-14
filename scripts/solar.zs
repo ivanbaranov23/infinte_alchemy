@@ -161,14 +161,14 @@ recipes.removeByMod("solarflux");
 	recipes.addShaped("ia_solar_part6", <solarflux:photovoltaic_cell_5> * 3, [
 		[<solarflux:photovoltaic_cell_4>, <solarflux:photovoltaic_cell_4>, <solarflux:photovoltaic_cell_4>], 
 		[<projectred-core:resource_item:341>, <contenttweaker:perovskite_plate>, <projectred-core:resource_item:341>], 
-		[<enderio:item_material:34>, <enderio:item_capacitor_crystalline>, <enderio:item_material:34>]
+		[<contenttweaker:solar_lubarium_plate>, <enderio:item_capacitor_crystalline>, <contenttweaker:solar_lubarium_plate>]
 	]);
 	addAssemblerRecipe(
 		[<solarflux:photovoltaic_cell_5> * 4],
 		[
 			<solarflux:photovoltaic_cell_4> * 3,
 			<projectred-core:resource_item:341>, <contenttweaker:perovskite_plate>,
-			<enderio:item_material:34>, <enderio:item_capacitor_crystalline>
+			<contenttweaker:solar_lubarium_plate>, <enderio:item_capacitor_crystalline>
 		], null,
 		20, 400
 	);
@@ -348,7 +348,20 @@ recipes.removeByMod("solarflux");
 			<contenttweaker:goldscarab_sun>,
 			<contenttweaker:soul_frame>
 		], [], null,
-		20, 3000
+		20, 30000
+	);
+
+	
+	addBioAssemblerRecipe(
+		[<solarflux:custom_solar_panel_zirconium> * 3], null,
+		[
+			<contenttweaker:zirconium_mirror> * 3,
+			<solarflux:custom_solar_panel_chitin> * 6,
+			<contenttweaker:light_cell> * 2,
+			<contenttweaker:perovskite2_plate> * 4,
+			<contenttweaker:star_frame>
+		], [], null,
+		20, 300000
 	);
 }
 

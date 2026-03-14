@@ -1,0 +1,14 @@
+{
+	x: 12.0d,
+	y: 4.0d,
+	dependencies: [
+		"2ac98066"
+	],
+	tasks: [{
+		uid: "323ea9ce",
+		type: "item",
+		items: [{
+			item: "modularmachinery:sf_assembler_controller"
+		}]
+	}]
+}

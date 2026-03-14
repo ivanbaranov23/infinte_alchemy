@@ -1,0 +1,15 @@
+{
+	x: 1.0d,
+	y: -2.0d,
+	dependencies: [
+		"afbf7d12"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e83c4adb",
+		type: "item",
+		items: [{
+			item: "modularmachinery:cooling_tower_controller"
+		}]
+	}]
+}

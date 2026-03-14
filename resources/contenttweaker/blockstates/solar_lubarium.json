@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "forge:fluid",
+    "custom": {
+      "fluid": "solar_lubarium"
+    }
+  },
+  "variants": {
+    "normal": [{}]
+  }
+}

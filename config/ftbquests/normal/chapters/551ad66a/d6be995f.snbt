@@ -42,17 +42,17 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
+				TrophyColorRed: 171,
+				TrophyColorBlue: 171,
+				TrophyName: "Explosion Furnace",
+				TrophyColorGreen: 171,
+				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "prodigytech:explosion_furnace",
 					Count: 1,
 					Damage: 0s
 				},
-				TrophyName: "Explosion Furnace",
-				TrophyColorRed: 171,
-				TrophyColorGreen: 171,
-				TrophyColorBlue: 171,
-				TrophyVariant: "neon",
-				TrophyShowsTooltip: 1b
+				TrophyVariant: "neon"
 			}
 		}
 	}]

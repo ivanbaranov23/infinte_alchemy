@@ -1,0 +1,19 @@
+{
+	x: 10.0d,
+	y: 4.0d,
+	dependencies: [
+		"a398d28e"
+	],
+	tasks: [{
+		uid: "70b924cc",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ssa_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "8483bbb4",
+		type: "item",
+		item: "contenttweaker:ssa_block"
+	}]
+}

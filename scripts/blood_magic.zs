@@ -200,15 +200,10 @@ function BloodAltar_addRecipe(output as IItemStack, input as IItemStack, minimum
 	//altar caps
 	recipes.remove(<bloodmagic:decorative_brick>);
 	recipes.addShaped("ia_large_bloodstone_tile", <bloodmagic:decorative_brick> * 2, [
-		[<bloodmagic:blood_shard>, <bloodmagic:slate:2>, <bloodmagic:blood_shard>], 
+		[<bloodmagic:blood_shard>, <moretcon:gembloodstone>, <bloodmagic:blood_shard>], 
 		[<bloodmagic:slate:2>, <bloodmagic:demon_extras:10>, <bloodmagic:slate:2>], 
-		[<bloodmagic:blood_shard>, <bloodmagic:slate:2>, <bloodmagic:blood_shard>]
+		[<bloodmagic:blood_shard>, <moretcon:gembloodstone>, <bloodmagic:blood_shard>]
 	]);
-	/*recipes.addShaped("ia_crystal_cluster", <bloodmagic:decorative_brick:2>, [
-		[<contenttweaker:slate_6>, <bloodmagic:demon_extras:11>, <contenttweaker:slate_6>], 
-		[<bloodmagic:demon_extras:12>, <enderio:item_material:18>, <bloodmagic:demon_extras:13>], 
-		[<contenttweaker:slate_6>, <bloodmagic:demon_extras:14>, <contenttweaker:slate_6>]
-	]);*/
 	mods.extendedcrafting.TableCrafting.addShaped(0, <bloodmagic:decorative_brick:2>, [
 		[<contenttweaker:slate_6>, <enderio:item_material:18>, <enderio:item_material:18>, <enderio:item_material:18>, <contenttweaker:slate_6>], 
 		[<enderio:item_material:18>, <bloodmagic:slate:4>, <bloodmagic:demon_extras:11>, <bloodmagic:slate:4>, <enderio:item_material:18>], 
@@ -600,7 +595,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	//magnet
 	TartaricForge.removeRecipe([<ore:string>.firstItem,<minecraft:gold_ingot>,<minecraft:iron_block>,<minecraft:gold_ingot>]);
 	TartaricForge.addRecipe(<bloodmagic:component:12>, [
-		<actuallyadditions:block_crystal_empowered:5>, <thermalinnovation:magnet:4>, <contenttweaker:neodymium_gear>, <harvestcraft:pizzaitem>
+		<actuallyadditions:block_crystal_empowered:5>, <thermalinnovation:magnet:4>, <contenttweaker:neodymium_gear>, <erebus:lightning_speed_block>
 	], 100, 16);
 	//slime
 	TartaricForge.removeRecipe([<minecraft:slime>, <minecraft:slime>, <minecraft:leather>, <ore:string>.firstItem]);
@@ -731,6 +726,13 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		<contenttweaker:reagent_bug>,
 		<contenttweaker:reagent_glass>,
 		<moreplates:elementium_plate>
+	], 4000, 400);
+	//awakening
+	TartaricForge.addRecipe(<contenttweaker:reagent_awakening>, [
+		<harvestcraft:coffeeitem>,
+		<contenttweaker:awakened_carminium_ingot>,
+		<contenttweaker:awaken_uru_ingot>,
+		<contenttweaker:awakened_umberrack>
 	], 4000, 400);
 	//t5
 	//space

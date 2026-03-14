@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"7b16753c"
+	],
+	tasks: [{
+		uid: "e9e727fd",
+		type: "item",
+		items: [{
+			item: "contenttweaker:neutronium_singularity"
+		}]
+	}]
+}

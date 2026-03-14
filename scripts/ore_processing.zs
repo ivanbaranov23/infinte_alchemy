@@ -1116,6 +1116,16 @@ val ores as IItemStack[string][string][string] = {
             separating2: <thermalfoundation:material:67>,
             separating3: <contenttweaker:galena_dust>,
             separating4: <contenttweaker:soot>
+        },
+
+        space: {
+            item: <contenttweaker:argyrodite_ore>,
+            crushing_no_balls: <exnihilocreatio:item_ore_silver> * 8,
+            balling: <exnihilocreatio:item_ore_silver> * 8,
+            crushingByprod1: <contenttweaker:germanium_dust>,
+            crushingByprod2: <contenttweaker:germanium_dust> * 3,
+
+            drilling: <exnihilocreatio:item_ore_silver> * 16
         }
             
     },
@@ -2943,26 +2953,32 @@ val ores as IItemStack[string][string][string] = {
     redstone: {
         overworld: {
             item: <minecraft:redstone_ore>,
-            crushing: <minecraft:redstone> * 10,
+            crushing_no_balls: <minecraft:redstone> * 10,
+            balling: <minecraft:redstone> * 10,
             crushingByprod1: <exnihilocreatio:item_ore_ardite:2>,
             crushingByprod2: <contenttweaker:rare_earth_dust>
         },
         atum: {
             item: <atum:redstone_ore>,
-            crushing: <minecraft:redstone> * 10,
-            crushingByprod1: <appliedenergistics2:material:5>
+            crushing_no_balls: <minecraft:redstone> * 10,
+            balling: <minecraft:redstone> * 10,
+            crushingByprod1: <appliedenergistics2:material:5>,
+            crushingByprod2: <thermalfoundation:material:866>,
+            denorm: <minecraft:redstone_ore> * 2
         },
         nether: {
             item: <netherendingores:ore_nether_vanilla:6>,
-            crushing: <minecraft:redstone> * 14,
-            crushingByprod1: <exnihilocreatio:item_ore_ardite:2>,
+            crushing_no_balls: <minecraft:redstone> * 14,
+            balling: <minecraft:redstone> * 14,
+            crushingByprod1: <thermalfoundation:material:866>,
             crushingByprod2: <contenttweaker:rare_earth_dust>,
 
             denorm: <minecraft:redstone_ore> * 2
         },
         end: {
             item: <netherendingores:ore_end_vanilla:6>,
-            crushing: <minecraft:redstone> * 16,
+            crushing_no_balls: <minecraft:redstone> * 16,
+            balling: <minecraft:redstone> * 16,
             crushingByprod1: <contenttweaker:rare_earth_dust>,
             crushingByprod2: <contenttweaker:rare_earth_dust>,
 
@@ -3452,6 +3468,18 @@ val ores as IItemStack[string][string][string] = {
 
             drilling: <thermalfoundation:geode> * 4,
             cleaning: <thermalfoundation:geode> * 4
+        }
+    },
+    cheesestone: {
+        ore: {
+            item: <contenttweaker:cheesestone_ore>,
+            crushing_no_balls: <contenttweaker:cheesestone>,
+            balling: <contenttweaker:cheesestone>,
+            crushingByprod1: <contenttweaker:cheesestone>,
+            crushingByprod2: <contenttweaker:cheesestone>,
+
+            drilling: <contenttweaker:cheesestone> * 2,
+            cleaning: <contenttweaker:cheesestone> * 2
         }
     },
 
@@ -4035,6 +4063,7 @@ val drilling_fluid_amount as int[string] = {
     aquamarine: 1000,
     moissanite: 500,
     geode: 1000,
+    cheesestone: 100,
 
     prosperity: 100,
     inferium: 100,
@@ -4413,17 +4442,28 @@ for material in ores {
 
 
 
-
-scripts.helper.addFluidMixerRecipe(
-    <liquid:ore_drill> * 2000, 
-    <liquid:petrotheum> * 500, <liquid:blood> * 100, <contenttweaker:wear_resistant_alloy_dust>, 
-    64, 80
-);
-scripts.helper.addFluidMixerRecipe(
-    <liquid:ore_drill> * 2000, 
-    <liquid:petrotheum> * 500, <liquid:honey> * 1000, <contenttweaker:wear_resistant_alloy_dust>, 
-    64, 80
-);
+{
+    scripts.helper.addFluidMixerRecipe(
+        <liquid:ore_drill> * 2000, 
+        <liquid:petrotheum> * 500, <liquid:blood> * 100, <contenttweaker:wear_resistant_alloy_dust>, 
+        64, 80
+    );
+    scripts.helper.addFluidMixerRecipe(
+        <liquid:ore_drill> * 2000, 
+        <liquid:petrotheum> * 500, <liquid:honey> * 750, <contenttweaker:wear_resistant_alloy_dust>, 
+        64, 80
+    );
+    scripts.helper.addFluidMixerRecipe(
+        <liquid:ore_drill> * 1500, 
+        <liquid:petrotheum> * 500, <liquid:blood> * 100, <contenttweaker:cheesestone>, 
+        64, 80
+    );
+    scripts.helper.addFluidMixerRecipe(
+        <liquid:ore_drill> * 1500, 
+        <liquid:petrotheum> * 500, <liquid:honey> * 750, <contenttweaker:cheesestone>, 
+        64, 80
+    );
+}
 
 scripts.helper.addFluidMixerRecipe(
     <liquid:ore_make> * 2000, 

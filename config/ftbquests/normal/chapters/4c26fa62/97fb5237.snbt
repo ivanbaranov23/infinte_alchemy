@@ -1,0 +1,32 @@
+{
+	title: "Arcane Petrochem",
+	x: -4.0d,
+	y: 5.5d,
+	text: [
+		"Dissolve some oil reagent"
+	],
+	dependencies: [
+		"c8681319"
+	],
+	tasks: [{
+		uid: "b3bec201",
+		type: "item",
+		items: [{
+			item: "contenttweaker:benzene"
+		}]
+	},
+	{
+		uid: "4d69b67e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:toluene"
+		}]
+	},
+	{
+		uid: "54db497f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:xylene"
+		}]
+	}]
+}

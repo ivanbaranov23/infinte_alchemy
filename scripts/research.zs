@@ -257,6 +257,17 @@ addResearchRecipe("Vines", <contenttweaker:plant_sample>, <contenttweaker:resear
     ], 512, 5 * 20
 );
 <botania:vineball>.addTooltip("Throw me at the wall");
+addResearchRecipe("Oreberries", <contenttweaker:plant_sample>, <contenttweaker:research_oreberry>,
+    [
+        <oreberries:antimony_oreberry_bush> * 4,
+        <oreberries:cobalt_oreberry_bush> * 4,
+        <oreberries:lead_oreberry_bush> * 4,
+        <oreberries:ardite_oreberry_bush> * 4,
+        <oreberries:osmium_oreberry_bush> * 4,
+        <oreberries:silver_oreberry_bush> * 4,
+        <oreberries:gold_oreberry_bush> * 4
+    ], 512, 5 * 20
+);
 
 
 addResearchRecipe("Sieving", <exnihilocreatio:item_mesh:3>, <contenttweaker:research_sieving>, //ok

@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 4.5d,
+	dependencies: [
+		"7b73b93a"
+	],
+	tasks: [{
+		uid: "e5c1353d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ethylbenzene"
+		}]
+	}]
+}

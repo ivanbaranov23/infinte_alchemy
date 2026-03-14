@@ -98,7 +98,7 @@ recipes.addShapeless("glass_glass_silver_glass",
         [], [], [<contenttweaker:research_glass_making>]
     );
 
-    scripts.modular_machines.addMMRecipe("high_oven_glass4", "high_oven", 15*20, 32, 
+    scripts.modular_machines.addMMRecipe("high_oven_glass5", "high_oven", 15*20, 32, 
         [<minecraft:glass> * 12], 
         [<mysticalworld:silver_dust_tiny> * 4, <quark:glass_shards> * 4, <appliedenergistics2:material:3> * 4, <minecraft:sand> * 16], 
         [], [], []
@@ -157,7 +157,22 @@ mods.botania.ManaInfusion.removeRecipe(<botania:managlass>);//150
 mods.botania.ManaInfusion.addInfusion(<botania:managlass>, <contenttweaker:flower_glass>, 2000);
 mods.botania.ManaInfusion.addInfusion(<botania:managlass>, <engineersdecor:panzerglass_block>, 1000);
 
-
+//magnetic glass
+mods.enderio.AlloySmelter.addRecipe(<contenttweaker:didymium>, 
+    [
+        <alchemistry:ingot:59>,
+        <contenttweaker:neodymium_ingot>,
+        <contenttweaker:reagent_glass>
+    ],
+    40000
+);
 mods.alchemistry.Combiner.addRecipe(<contenttweaker:didymium>, [
     <alchemistry:compound:1> * 32, <alchemistry:element:59> * 8, <alchemistry:element:60> * 8
 ]);
+
+recipes.addShaped("ia_magnetic_glass", <contenttweaker:magnetic_glass>, [
+    [<contenttweaker:ev_coil> | <alchemistry:ingot:62>, <contenttweaker:didymium>, <contenttweaker:ev_coil> | <alchemistry:ingot:62>],
+    [<contenttweaker:didymium>, <botania:elfglass>, <contenttweaker:didymium>],
+    [<contenttweaker:ev_coil> | <alchemistry:ingot:62>, <contenttweaker:didymium>, <contenttweaker:ev_coil> | <alchemistry:ingot:62>]
+]);
+

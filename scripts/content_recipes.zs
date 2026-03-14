@@ -118,6 +118,8 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:tunril_ingot>, <contenttweaker:tunril_block>);
 
     add3x3Recipe(<contenttweaker:tignalum_ingot>, <contenttweaker:tignalum_block>);
+    add3x3Recipe(<contenttweaker:lubarium_ingot>, <contenttweaker:lubarium_block>);
+    add3x3Recipe(<contenttweaker:solar_lubarium_ingot>, <contenttweaker:solar_lubarium_block>);
     add3x3Recipe(<contenttweaker:mitanium_ingot>, <contenttweaker:mitanium_block>);
     add3x3Recipe(<contenttweaker:bismuth_bronze_ingot>, <contenttweaker:bismuth_bronze_block>);
 
@@ -160,6 +162,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:jet_alloy_ingot>, <contenttweaker:jet_alloy_block>);
 
     add3x3Recipe(<contenttweaker:space_ice_crystal>, <contenttweaker:space_ice_crystal_block>);
+    add3x3Recipe(<contenttweaker:onyx>, <contenttweaker:onyx_block>);
     add3x3Recipe(<contenttweaker:kikeridan_ingot>, <contenttweaker:kikeridan_block>);
     add3x3Recipe(<alchemistry:ingot:4>, <contenttweaker:beryllium_block>);
     add3x3Recipe(<alchemistry:ingot:84>, <contenttweaker:polonium_block>);
@@ -168,6 +171,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:lucky_alloy_ingot>, <contenttweaker:lucky_alloy_block>);
 
 
+    add3x3Recipe(<alchemistry:ingot:23>, <contenttweaker:vanadium_block>);
     add3x3Recipe(<alchemistry:ingot:32>, <contenttweaker:germanium_block>);
     add3x3Recipe(<alchemistry:ingot:33>, <contenttweaker:arsenic_block>);
     add3x3Recipe(<alchemistry:ingot:34>, <contenttweaker:selenium_block>);
@@ -179,6 +183,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<alchemistry:ingot:56>, <contenttweaker:barium_block>);
     add3x3Recipe(<alchemistry:ingot:73>, <contenttweaker:tantalum_block>);
     add3x3Recipe(<contenttweaker:mischmetal_ingot>, <contenttweaker:mischmetal_block>);
+    add3x3Recipe(<contenttweaker:vanadium_alloy_ingot>, <contenttweaker:vanadium_alloy_block>);
     add3x3Recipe(<contenttweaker:terfenol_ingot>, <contenttweaker:terfenol_block>);
     add3x3Recipe(<contenttweaker:perovskite_ingot>, <contenttweaker:perovskite_block>);
     add3x3Recipe(<contenttweaker:perovskite2_ingot>, <contenttweaker:perovskite2_block>);

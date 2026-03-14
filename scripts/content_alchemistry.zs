@@ -182,6 +182,19 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["oxygen", 2]
         ]
     );
+    createCompound(226, "barium_hydroxide", 90, 156, 207,
+        [
+            ["barium", 1],
+            ["hydroxide", 2]
+        ]
+    );
+    createCompound(227, "nitrogen_dioxide", 20, 90, 190,
+        [
+            ["nitrogen", 1],
+            ["oxygen", 2]
+        ]
+    );
+    
 }
 
 {//metals
@@ -278,6 +291,12 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
         [
             ["hydrogen", 2],
             ["selenium", 1]
+        ]
+    );
+    createCompound(514, "sodium_bromide", 30, 177, 77,
+        [
+            ["sodium", 1],
+            ["bromine", 1]
         ]
     );
 }

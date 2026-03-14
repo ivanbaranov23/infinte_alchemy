@@ -223,9 +223,9 @@ scripts.content_machines.addBioAssemblerRecipe(
     [<modularmachinery:blood_altar_controller>], null,
 	[
 		<contenttweaker:blood_frame>,
-		<contenttweaker:bloody_gearbox>,
+		<contenttweaker:bloody_gearbox> * 4,
 		<contenttweaker:tank2> * 4,
-		<contenttweaker:slate_6>,
+		<contenttweaker:slate_6> * 4,
 		<bloodmagic:blood_rune:3> * 4,
 		<bloodmagic:blood_rune:6> * 4
 	],

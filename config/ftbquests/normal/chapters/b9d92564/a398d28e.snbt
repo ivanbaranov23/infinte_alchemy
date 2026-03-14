@@ -1,0 +1,22 @@
+{
+	x: 8.0d,
+	y: 4.0d,
+	text: [
+		"Alloying at its finest."
+	],
+	dependencies: [
+		"b04774b6"
+	],
+	tasks: [{
+		uid: "a7a16b6e",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:material 1 32"
+		}]
+	}],
+	rewards: [{
+		uid: "fe438536",
+		type: "item",
+		item: "extendedcrafting:storage 1 4"
+	}]
+}

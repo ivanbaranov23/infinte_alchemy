@@ -1,0 +1,16 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	tasks: [{
+		uid: "950a0726",
+		type: "item",
+		items: [{
+			item: "contenttweaker:ma_essence7"
+		}]
+	}],
+	rewards: [{
+		uid: "659b61e2",
+		type: "item",
+		item: "contenttweaker:ma_essence7"
+	}]
+}

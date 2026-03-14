@@ -18,17 +18,17 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
+				TrophyColorRed: 123,
+				TrophyColorBlue: 190,
+				TrophyName: "Primordium",
+				TrophyColorGreen: 47,
+				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "prodigytech:primordium",
 					Count: 1,
 					Damage: 0s
 				},
-				TrophyName: "Primordium",
-				TrophyColorRed: 123,
-				TrophyColorGreen: 47,
-				TrophyColorBlue: 190,
-				TrophyVariant: "neon",
-				TrophyShowsTooltip: 1b
+				TrophyVariant: "neon"
 			}
 		}
 	}]

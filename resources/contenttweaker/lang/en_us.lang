@@ -1270,25 +1270,25 @@ item.contenttweaker.glow_bucket.name=Glowstone Research Token
 
 item.contenttweaker.demon_bucket.name=Demon Metal Research Token
 
-item.contenttweaker.research_glass_making.name=How To Make Glass
-item.contenttweaker.research_structure.name=How To Structure Heavy Machinery
-item.contenttweaker.research_sieving.name=How To Sieve
-item.contenttweaker.research_fluids.name=How To Handle Fluid
-item.contenttweaker.research_flight1.name=How To Fly
-item.contenttweaker.research_plants1.name=How To Grow Exotic Plants
-item.contenttweaker.research_plants2.name=How To Grow Exotic Trees
-item.contenttweaker.research_plants3.name=How To Grow Exotic Vines
-item.contenttweaker.research_chemistry1.name=How To Refine Waste
-item.contenttweaker.research_chemistry2.name=How To Polymerize
-item.contenttweaker.research_chemistry3.name=How To Synthesize Alien Materials
+item.contenttweaker.research_glass_making.name=Research: How To Make Glass
+item.contenttweaker.research_structure.name=Research: How To Structure Heavy Machinery
+item.contenttweaker.research_sieving.name=Research: How To Sieve
+item.contenttweaker.research_fluids.name=Research: How To Handle Fluid
+item.contenttweaker.research_flight1.name=Research: How To Fly
+item.contenttweaker.research_plants1.name=Research: How To Grow Exotic Plants
+item.contenttweaker.research_plants2.name=Research: How To Grow Exotic Trees
+item.contenttweaker.research_plants3.name=Research: How To Grow Exotic Vines
+item.contenttweaker.research_chemistry1.name=Research: How To Refine Waste
+item.contenttweaker.research_chemistry2.name=Research: How To Polymerize
+item.contenttweaker.research_chemistry3.name=Research: How To Synthesize Alien Materials
 
-item.contenttweaker.research_circuit1.name=How To Make Circuitry From Strange Materials
+item.contenttweaker.research_circuit1.name=Research: How To Make Circuitry From Strange Materials
 
-item.contenttweaker.research_magic2.name=How To Bleed Efficiently
+item.contenttweaker.research_magic2.name=Research: How To Bleed Efficiently
 
-item.contenttweaker.research_bacteria1.name=How To Grow Bacteria
+item.contenttweaker.research_bacteria1.name=Research: How To Grow Bacteria
 
-item.contenttweaker.research_heat.name=How To Transfer Heat
+item.contenttweaker.research_heat.name=Research: How To Transfer Heat
 
 
 
@@ -1914,7 +1914,7 @@ tile.sorter_livespan.name=Livespan Value Living Sorter
 ia.rename.industrial_graphite=Industrial Grade Graphite
 
 
-ia.tooltip.holy_thing=So just \"holy\"
+ia.tooltip.holy_thing=So just "holy"
 ia.tooltip.dummy=Pay this no mind
 ia.tooltip.xnet=Formerly known as Twitternet Ingot
 
@@ -1956,7 +1956,7 @@ ia.tooltip.bucket=One would imagine that any bucket is watertight
 ia.tooltip.nether_pest=Drops by Infernal Bulb harvested in Nether
 
 
-item.contenttweaker.research_soul.name=How To Denaturate Soul
+item.contenttweaker.research_soul.name=Research: How To Denaturate Soul
 
 item.contenttweaker.terra_coral.name=Terrasteel Coral
 tile.contenttweaker.terracrux.name=Terrasteel Crux
@@ -1966,7 +1966,7 @@ item.contenttweaker.terra_base_dust.name=Vitrium Terrasteel Dust
 tile.contenttweaker.terrasteel_ore.name=Vitrium Terrasteel Ore
 item.contenttweaker.terragem.name=Terragem
 
-item.contenttweaker.research_terra.name=How To Grow Terrasteel
+item.contenttweaker.research_terra.name=Research: How To Grow Terrasteel
 
 ia.mb_tooltip.common=As MB modifier 
 ia.mb_tooltip.tpc_sl_glass=3x Speed
@@ -1978,7 +1978,7 @@ ia.mb_tooltip.lcg_neutr=+4 output item
 
 item.contenttweaker.tink_research_token1.name=Nahuatl Large Sword Blade Research Token
 item.contenttweaker.tink_research_token2.name=Prismarine Laser Medium Research Token
-item.contenttweaker.research_tinker.name=How To Tinker Better
+item.contenttweaker.research_tinker.name=Research: How To Tinker Better
 item.contenttweaker.apatite.name=Tinker's Apatite
 
 item.contenttweaker.uru_pieces.name=Uru Pieces
@@ -1994,7 +1994,7 @@ item.contenttweaker.residue_token.name=Lava Residue Research Token
 item.contenttweaker.malachite_token.name=Malachite Adhesive Research Token
 item.contenttweaker.sand_token.name=Quicksand Research Token
 item.contenttweaker.sludge_token.name=Sludge Research Token
-item.contenttweaker.research_cobblegen.name=How To Mix Fluids Into Cobblestone
+item.contenttweaker.research_cobblegen.name=Research: How To Mix Fluids Into Cobblestone
 
 fluid.sludge_cg=Cobblegeneic Sludge
 fluid.organic_cg=Cobblegeneic Organic Green
@@ -2185,7 +2185,7 @@ item.contenttweaker.zeolite.name=Zeolite
 fluid.hydrogen_mix=Hydrogen Mixture
 fluid.dense_hydrogen=Dense Hydrogen
 
-item.contenttweaker.research_logistic.name=How to Move Stuff Around 
+item.contenttweaker.research_logistic.name=Research: How to Move Stuff Around 
 
 requious.jei.recipe.entity_hint=Entity Hint
 
@@ -2672,3 +2672,100 @@ item.contenttweaker.ma_essence7.name=Neutronalium Essence
 item.contenttweaker.solid_mana.name=Solid Mana
 
 item.contenttweaker.will_singularity.name=Mixed Will Crystal Singularity
+
+item.contenttweaker.lubarium_ingot.name=Lubarium Ingot
+item.contenttweaker.lubarium_dust.name=Lubarium Dust
+tile.contenttweaker.lubarium_block.name=Block of Lubarium
+fluid.lubarium=Molten Lubarium
+
+item.contenttweaker.solar_lubarium_ingot.name=Solar Lubarium Ingot
+item.contenttweaker.solar_lubarium_plate.name=Solar Lubarium Plate
+item.contenttweaker.solar_lubarium_dust.name=Solar Lubarium Dust
+tile.contenttweaker.solar_lubarium_block.name=Block of Solar Lubarium
+fluid.solar_lubarium=Molten Solar Lubarium
+
+item.contenttweaker.vanadium_dust.name=Vanadium Dust
+tile.contenttweaker.vanadium_block.name=Block of Vanadium
+tile.contenttweaker.vanadium_ore.name=Vanadium Ore
+
+item.contenttweaker.vanadium_alloy_ingot.name=Vanadium Alloy Ingot
+tile.contenttweaker.vanadium_alloy_block.name=Block of Vanadium Alloy
+
+item.contenttweaker.metal_singularity.name=Alpha Metallic Singularity
+item.contenttweaker.metal_singularity2.name=Beta Metallic Singularity
+item.contenttweaker.metal_singularity3.name=Gamma Metallic Singularity
+
+item.contenttweaker.mirion2_singularity.name=Viridium Singularity
+
+item.contenttweaker.awakened_carminium_ingot.name=Awakened Carminium Ingot
+
+item.contenttweaker.awakened_umberrack.name=Awakened Umberrack Brick
+tile.contenttweaker.awakened_umberrack_bricks.name=Awakened Umberrack Bricks
+
+item.contenttweaker.reagent_awakening.name=Reagent of Awakening
+
+fluid.diamond2=Dense Diamond Alloy
+gas.diamond3=Rare-Diamond Alloy Gas
+item.contenttweaker.diamond_wire.name=Rare-Diamond Alloy Wire
+item.contenttweaker.diamond4.name=Wrapped RDA Composite
+fluid.diamond5=Liquid RDA Composite Solution
+
+tile.contenttweaker.argyrodite_ore.name=Argyrodite Ore
+
+gas.carmin_tartrate=Cold Carmin Tartrate
+
+fluid.dragon_yolk=Dragon Yolk
+
+tile.contenttweaker.kikeridan_ore.name=Kikeridan Ore
+item.contenttweaker.kikeridan_pieces.name=Kikeridan Pieces
+item.contenttweaker.kikeridan_chunk.name=Kikeridan Chunk
+item.contenttweaker.kikeridan_ingot.name=Kikeridan Ingot
+item.contenttweaker.kikeridan_plate.name=Kikeridan Plate
+item.contenttweaker.kikeridan_gear.name=Kikeridan Gear
+tile.contenttweaker.kikeridan_block.name=Block of Kikeridan
+item.contenttweaker.kikeridan_dust.name=Kikeridan Dust
+fluid.kikeridan=Molten Kikeridan
+
+item.contenttweaker.kikeridan_crystal.name=Kikeridan Crystal
+item.contenttweaker.kikeridan_shard.name=Kikeridan Shard
+item.contenttweaker.kikeridan_cluster.name=Kikeridan Clump
+item.contenttweaker.kikeridan_dirty_dust.name=Dirty Kikeridan Dust
+gas.kikeridan=Kikeridan Slurry
+gas.cleankikeridan=Clean Kikeridan Slurry
+
+gas.death_metal=Death Metal Slurry
+gas.cleandeath_metal=Clean Death Metal Slurry
+
+item.contenttweaker.research_oreberry.name=Research: How to Grow Exotic Berries
+
+item.contenttweaker.ammonium_chloride.name=Ammonium Chloride
+
+item.contenttweaker.benzyl_chloride.name=Benzyl Chloride
+item.contenttweaker.diphenylmethane.name=Diphenylmethane
+item.contenttweaker.benzophenone.name=Benzophenone
+
+item.contenttweaker.ethylantraquinone.name=Ethylantraquinone
+item.contenttweaker.ethylantrahydroquinone.name=Ethylantrahydroquinone
+item.contenttweaker.h2o2.name=Hydrogen Peroxide
+item.contenttweaker.cyclohexane.name=Cyclohexane
+item.contenttweaker.cyclohexene.name=Cyclohexene
+item.contenttweaker.adipic_acid.name=Adipic Acid
+
+fluid.ethylene_oxide=Ethylene Oxide
+item.contenttweaker.ethylene_oxide.name=Ethylene Oxide
+item.contenttweaker.ethylene_glycol.name=Ethylene Glycol
+item.contenttweaker.dioxane.name=1,4-Dioxane
+
+item.contenttweaker.xylene.name=Xylene
+item.contenttweaker.phthalic_anhydride.name=Phthalic Anhydride
+
+item.contenttweaker.petals1.name=Bundle of Petals
+item.contenttweaker.petals2.name=Bundle of Petals
+item.contenttweaker.petals3.name=Bundle of Petals
+item.contenttweaker.petals4.name=Bundle of Petals
+item.contenttweaker.petals5.name=Bundle of Petals
+
+item.contenttweaker.activated_motor.name=Activated Motor
+
+item.contenttweaker.cheesestone.name=Cheesestone
+tile.contenttweaker.cheesestone_ore.name=Cheesestone Ore

@@ -86,6 +86,7 @@ addFluidConv(<alchemistry:compound:205>, <liquid:liquidethene>);
 addFluidConv(<alchemistry:compound:213>, <liquid:formaldehyde>);
 
 addFluidConv(<contenttweaker:tartaric_acid>, <liquid:tartaric_acid>);
+addFluidConv(<contenttweaker:ethylene_oxide>, <liquid:ethylene_oxide>);
 
 addItemConv(<contenttweaker:starch>, <alchemistry:compound:19>, 8);
 addItemConv(<contenttweaker:sodium_bicarbonate>, <alchemistry:compound:220>, 8);
@@ -138,6 +139,29 @@ addItemConv(<contenttweaker:sodium_bicarbonate>, <alchemistry:compound:220>, 8);
         []
     );
     <contenttweaker:phenol>.addTooltip("PhOH");
+
+
+    addChemicalRecipe(
+        [<contenttweaker:benzyl_chloride>, <alchemistry:compound:203>],
+        [<contenttweaker:toluene>, <alchemistry:element:17> * 2],
+        []
+    );
+    <contenttweaker:benzyl_chloride>.addTooltip("PhCH₂Cl");
+
+
+    addChemicalRecipe(
+        [<contenttweaker:diphenylmethane>, <alchemistry:compound:203>],
+        [<contenttweaker:benzyl_chloride>, <contenttweaker:benzene>],
+        [<alchemistry:compound:208>]
+    );
+    <contenttweaker:diphenylmethane>.addTooltip("Ph₂CH₂");
+
+    addChemicalRecipe(
+        [<contenttweaker:benzophenone>, <alchemistry:compound:7>],
+        [<contenttweaker:diphenylmethane>, <alchemistry:element:8> * 2],
+        [<extendedcrafting:singularity:17>]
+    );
+    <contenttweaker:benzophenone>.addTooltip("Ph₂C=O");
 }
 {//toluene
     Dissolver.addRecipe(<deepmoblearning:pristine_matter_creeper>, false, 1,
@@ -182,12 +206,15 @@ addItemConv(<contenttweaker:sodium_bicarbonate>, <alchemistry:compound:220>, 8);
         [<contenttweaker:toluene> * 2],
         [<contenttweaker:zeolite>]
     );
+    <contenttweaker:xylene>.addTooltip("CH₃-C₆H₄-CH₃");
+    <contenttweaker:xylene>.addTooltip("Me-Ph-Me");
 
     addChemicalRecipe(
         [<contenttweaker:phthalic_anhydride>, <alchemistry:compound:7> * 3],
         [<contenttweaker:xylene>, <alchemistry:element:8> * 6],
         []
     );
+    <contenttweaker:phthalic_anhydride>.addTooltip("C₆H₄(CO)₂O");
 }
 {//₀₁₂₃₄₅₆₇₈₉
     addChemicalRecipe(
@@ -239,13 +266,21 @@ addItemConv(<contenttweaker:sodium_bicarbonate>, <alchemistry:compound:220>, 8);
 
     addChemicalRecipe(
         [<contenttweaker:cyclohexene>],
-        [<contenttweaker:benzene>, <alchemistry:element:1> * 2],
+        [<contenttweaker:benzene>, <alchemistry:element:1> * 4],
         [<extendedcrafting:singularity_custom:30>]
     );
 
     addChemicalRecipe(
         [<contenttweaker:pcy3>, <alchemistry:compound:501>],
         [<contenttweaker:cyclohexyl_bromide>, <alchemistry:element:12>, <alchemistry:compound:1206>],
+        []
+    );
+
+
+
+    addChemicalRecipe(
+        [<contenttweaker:adipic_acid>, <alchemistry:compound:7> * 4],
+        [<contenttweaker:cyclohexene>, <contenttweaker:h2o2> * 4],
         []
     );
 }
@@ -340,6 +375,87 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
     addChemicalRecipe(
         [<contenttweaker:ethylantraquinone>, <contenttweaker:h2o2>],
         [<contenttweaker:ethylantrahydroquinone>, <alchemistry:element:8> * 2],
+        []
+    );
+}
+{//dioxane
+    addChemicalRecipe(
+        [<contenttweaker:ethylene_glycol>],
+        [<contenttweaker:ethylene_oxide>, <alchemistry:compound:7>],
+        []
+    );
+    addChemicalRecipe(
+        [<contenttweaker:dioxane>, <alchemistry:compound:7> * 2],
+        [<contenttweaker:ethylene_glycol> * 2],
+        [<alchemistry:compound:211>]
+    );
+
+}
+{//cubane
+    addChemicalRecipe(
+        [<contenttweaker:cyclopentanone>, <alchemistry:compound:7>, <alchemistry:compound:225>],
+        [<contenttweaker:adipic_acid>],
+        [<alchemistry:compound:226>]
+    );
+    
+    addChemicalRecipe(
+        [<contenttweaker:cyclopentanone_ethylene_ketal>, <alchemistry:compound:7>],
+        [<contenttweaker:cyclopentanone>, <contenttweaker:ethylene_glycol>],
+        [<contenttweaker:tosyl_chloride>]
+    );
+
+    addChemicalRecipe(
+        [<contenttweaker:tribrom_cyclopentanone_ethylene_ketal>, <alchemistry:compound:502> * 3],
+        [<contenttweaker:cyclopentanone_ethylene_ketal>, <alchemistry:element:35> * 6],
+        [<contenttweaker:dioxane>]
+    );
+
+    addChemicalRecipe(
+        [<contenttweaker:tribrom_cyclopentanone_ethylene_ketal2>],
+        [<contenttweaker:tribrom_cyclopentanone_ethylene_ketal> * 2],
+        [<alchemistry:compound:201>]
+    );
+
+    addChemicalRecipe(
+        [<contenttweaker:precubane_diketal>, <contenttweaker:ethylene_glycol> * 2],
+        [<contenttweaker:tribrom_cyclopentanone_ethylene_ketal2>],
+        [<alchemistry:compound:211>]
+    );
+
+    addChemicalRecipe(
+        [<contenttweaker:precubane>],
+        [<contenttweaker:precubane_diketal>],
+        [<contenttweaker:uv_lamp>, <contenttweaker:benzophenone>]
+    );
+
+    addChemicalRecipe(
+        [<contenttweaker:cubane_dicarboxylic_acid>, <alchemistry:compound:514> * 2, <alchemistry:compound:15> * 2],
+        [<contenttweaker:precubane>, <alchemistry:compound:201> * 2, <alchemistry:compound:7> * 2],
+        []
+    );
+
+    addChemicalRecipe(
+        [
+            <contenttweaker:cubane>,
+            <thermalexpansion:florb>.withTag({Fluid: "dark_catalyst1"}) * 3,
+            <thermalexpansion:florb>.withTag({Fluid: "dark_catalyst7"})
+        ],
+        [
+            <contenttweaker:cubane_dicarboxylic_acid>,
+            <thermalexpansion:florb>.withTag({Fluid: "dark_catalyst"}) * 4
+        ],
+        []
+    );
+
+
+    addChemicalRecipe(
+        [<contenttweaker:octofluorocubane>, <alchemistry:element:1> * 8],
+        [<contenttweaker:cubane>, <alchemistry:element:9> * 8],
+        []
+    );
+    addChemicalRecipe(
+        [<contenttweaker:octonitrocubane>, <alchemistry:compound:7> * 8],
+        [<contenttweaker:cubane>, <alchemistry:compound:212> * 8],
         []
     );
 }

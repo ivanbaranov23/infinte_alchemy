@@ -86,10 +86,12 @@ function addHighOvenSmelting(output as IItemStack[], inputs as IItemStack[], flu
     rec.build();
 }
 
+static counter as int = 0;
 function addPlantStationRecipe(
 	catalyst as IItemStack, out as IItemStack[], inp as IItemStack[], fl as ILiquidStack, time_sec as int
 ){
-	var rec = RecipeBuilder.newBuilder("ps_" + out[0].name + "_" + inp[0].name, "plant_station", time_sec * 20);
+	var rec = RecipeBuilder.newBuilder("ps_" + counter, "plant_station", time_sec * 20);
+	counter += 1;
 	rec.addEnergyPerTickInput(128);
 
 	for o in out{

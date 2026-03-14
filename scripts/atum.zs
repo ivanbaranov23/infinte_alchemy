@@ -241,6 +241,11 @@ for god in godshards{
         [<ore:godshard>, <contenttweaker:relic_ingot>, <ore:godshard>], 
         [<atum:sand>, <ore:godshard>, <atum:coin_gold>]
     ]);
+    recipes.addShaped("ia_treasure_block2", <contenttweaker:treasure_block> * 2, [
+	    [<atum:coin_gold>, <ore:godshard>, <atum:sand>], 
+        [<ore:godshard>, <contenttweaker:relic_ingot2>, <ore:godshard>], 
+        [<atum:sand>, <ore:godshard>, <atum:coin_gold>]
+    ]);
 
 }
 

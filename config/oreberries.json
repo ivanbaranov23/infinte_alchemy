@@ -98,6 +98,43 @@
     "smeltingResult": "taiga:jauxum_nugget",
     "tradeable": false
   },
+  "Mercury": {
+    "color": "#B9D7CE",
+    "oredictNames": [],
+    "tradeable": false
+  },
+
+  "Akai": {
+    "color": "#E91313",
+    "oredictNames": [],
+    "tradeable": false
+  },
+  "Kii": {
+    "color": "#E9E613",
+    "oredictNames": [],
+    "tradeable": false
+  },
+  "Midori": {
+    "color": "#19E913",
+    "oredictNames": [],
+    "tradeable": false
+  },
+  "Aoi": {
+    "color": "#1365E9",
+    "oredictNames": [],
+    "tradeable": false
+  },
+  "Kuroi": {
+    "color": "#000000",
+    "oredictNames": [],
+    "tradeable": false
+  },
+  "Shiroi": {
+    "color": "#FFFFFF",
+    "oredictNames": [],
+    "tradeable": false
+  },
+
   
   
 

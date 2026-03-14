@@ -1,0 +1,21 @@
+{
+	x: 3.0d,
+	y: 1.0d,
+	dependencies: [
+		"7b16753c"
+	],
+	tasks: [{
+		uid: "8ae1893c",
+		type: "item",
+		items: [{
+			item: "mysticalagradditions:neutronium_seeds"
+		}]
+	},
+	{
+		uid: "5fad581c",
+		type: "item",
+		items: [{
+			item: "mysticalagradditions:special 1 5"
+		}]
+	}]
+}

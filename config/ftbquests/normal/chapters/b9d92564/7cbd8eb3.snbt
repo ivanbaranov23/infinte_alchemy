@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: 4.0d,
+	dependencies: [
+		"ce60f12c"
+	],
+	tasks: [{
+		uid: "9f69524f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:metal_singularity3"
+		}]
+	}]
+}

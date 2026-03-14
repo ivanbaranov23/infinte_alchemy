@@ -1,0 +1,9 @@
+{
+    "ctm": {
+        "ctm_version": 1,
+        "type": "ctm",
+        "textures": [
+            "contenttweaker:blocks/awakened_umberrack_bricks-ctm"
+        ]
+    }
+}

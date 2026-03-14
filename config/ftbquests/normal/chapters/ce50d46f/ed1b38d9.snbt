@@ -1,0 +1,22 @@
+{
+	x: 21.5d,
+	y: 3.0d,
+	text: [
+		"A rare gem, found far away from stars. "
+	],
+	dependencies: [
+		"bd6cbf81"
+	],
+	tasks: [{
+		uid: "b27e014d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:onyx"
+		}]
+	}],
+	rewards: [{
+		uid: "025dbb83",
+		type: "item",
+		item: "contenttweaker:onyx_block"
+	}]
+}

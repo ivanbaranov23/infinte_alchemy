@@ -29,17 +29,17 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
+				TrophyColorRed: 40,
+				TrophyColorBlue: 151,
+				TrophyName: "Frame 2",
+				TrophyColorGreen: 118,
+				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "thermalexpansion:frame",
 					Count: 1,
 					Damage: 64s
 				},
-				TrophyName: "Frame 2",
-				TrophyColorRed: 40,
-				TrophyColorGreen: 118,
-				TrophyColorBlue: 151,
-				TrophyVariant: "neon",
-				TrophyShowsTooltip: 1b
+				TrophyVariant: "neon"
 			}
 		}
 	}]

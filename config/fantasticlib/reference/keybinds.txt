@@ -164,7 +164,9 @@ Fish's Undead Rising
 key.mod_lavacow.special
 
 key.categories.groovyscript
-key.groovyscript.reload
+keybind.groovyscript.copy
+keybind.groovyscript.quick_reload
+keybind.groovyscript.reload
 
 key.categories.integrateddynamics
 key.integrateddynamics.logic_programmer_focus_search
@@ -179,12 +181,6 @@ key.integratedterminals.terminal.tab.previous
 
 invtweaks.key.category
 invtweaks.key.sort
-
-JEI Utilities
-key.jeiutilities.displayRecipe
-key.jeiutilities.pickBookmark
-key.jeiutilities.transferRecipeMax
-key.jeiutilities.transferRecipe
 
 jecalculation.key.category
 jecalculation.key.gui_craft
@@ -315,13 +311,14 @@ key.xtones.scroll
 
 jei (Had Enough Items)
 key.jei.bookmark
+key.hei.crafting
 key.jei.focusSearch
 key.jei.nextPage
 key.jei.previousPage
 key.jei.recipeBack
 key.jei.showRecipe
 key.jei.showUses
-key.jei.toggleBookmarkOverlay
+key.hei.toggleBookmarkOverlay
 key.jei.toggleOverlay
 key.jei.toggleCheatMode
 key.jei.toggleEditMode

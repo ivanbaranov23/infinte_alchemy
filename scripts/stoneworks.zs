@@ -501,6 +501,10 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         <contenttweaker:umberrack> * 4, <taiga:duranite_ingot>, <liquid:cryotheum> * 2000, 
         40, 1000
     );
+    recipes.addShaped("ia_awakened_umberrack_bricks", <contenttweaker:awakened_umberrack_bricks>, [
+        [<contenttweaker:awakened_umberrack>, <contenttweaker:awakened_umberrack>],
+        [<contenttweaker:awakened_umberrack>, <contenttweaker:awakened_umberrack>]
+    ]);
 }
 
 

@@ -144,13 +144,22 @@ scripts.content_machines.addAdvancedMixerRecipe(
     );
 }
 
-recipes.addShapeless("ia_centipedium", <contenttweaker:centipedium>, [
+{//centipedium
+    recipes.addShapeless("ia_centipedium", <contenttweaker:centipedium>, [
         <contenttweaker:wormium_ingot>, 
         <moretcon:dustrunesteel>, 
         <contenttweaker:ophidian_extract>, 
         <erebus:materials:13>
-    ]
-);
+    ]);
+    recipes.addShapeless("ia_centipedium2", <contenttweaker:centipedium> * 3, [
+        <contenttweaker:wormium_ingot>, 
+        <moretcon:dustrunesteel>, 
+        <contenttweaker:ophidian_extract>, 
+        <erebus:materials:13>,
+        <contenttweaker:relic_ingot2>
+    ]);
+
+}
 
 scripts.content_machines.addAdvancedMixerRecipe(
     [<contenttweaker:methyst_dust>], [<liquid:wormy_sand> * 1000],

@@ -1,6 +1,9 @@
 {
 	x: -5.0d,
 	y: 10.5d,
+	text: [
+		"Solar panel material"
+	],
 	dependencies: [
 		"29a45527"
 	],

@@ -1,0 +1,24 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "contenttweaker:blocks/parts/cursed_gold_altar_top",
+		"1": "contenttweaker:blocks/parts/cursed_gold_altar1",
+		"particle": "contenttweaker:blocks/parts/cursed_gold_altar_top"
+	},
+	"elements": [
+		{
+			"from": [4.5, 0, 4.5],
+			"to": [11.5, 16, 11.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2, 0, 2]},
+			"faces": {
+				"north": {"uv": [2, 0, 13, 16], "texture": "#1"},
+				"east": {"uv": [2, 0, 13, 16], "texture": "#1"},
+				"south": {"uv": [2, 0, 13, 16], "texture": "#1"},
+				"west": {"uv": [2, 0, 13, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		}
+	]
+}

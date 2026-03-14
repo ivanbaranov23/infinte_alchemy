@@ -1,0 +1,15 @@
+{
+	x: 21.5d,
+	y: 0.0d,
+	dependencies: [
+		"38fb3e1a",
+		"ed1b38d9"
+	],
+	tasks: [{
+		uid: "aeb9dab6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:onyx_mirror"
+		}]
+	}]
+}

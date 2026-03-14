@@ -337,6 +337,7 @@ static chip_data as float[string][string] = {
         weight: 1000, 
         min_tier: 0
     },
+
     /*
     cobalt
     ardite
@@ -350,6 +351,11 @@ static chip_data as float[string][string] = {
     
 
     */
+    argyrodite_asteroid: {
+        minimum: 200,
+        weight: 500,
+        min_tier: 0
+    },
     beryllium_asteroid: {
         minimum: 500,
         weight: 400,
@@ -391,6 +397,16 @@ static chip_data as float[string][string] = {
         minimum: 25000,
         weight: 100,
         min_tier: 2
+    },
+    onyx: {
+        minimum: 50000,
+        weight: 100,
+        min_tier: 2
+    },
+    dense_onyx: {
+        minimum: 50000,
+        weight: 100,
+        min_tier: 3
     },
 
     ice_comet: {
@@ -443,6 +459,7 @@ static drone_mining as IItemStack[string] = {
     aluminum_asteroid: <densemetals:dense_aluminum_ore>,
     zinc_asteroid: <densemetals:dense_zinc_ore>,
 
+    argyrodite_asteroid: <contenttweaker:argyrodite_ore>,
     beryllium_asteroid: <contenttweaker:beryllium_ore>,
     moissanite_asteroid: <contenttweaker:moissanite_ore>,
     zirconium_asteroid: <contenttweaker:zirconium_ore>,
@@ -453,6 +470,8 @@ static drone_mining as IItemStack[string] = {
     
     bastnasite_asteroid: <contenttweaker:bastnasite_ore>,
     kikeridan_asteroid: <contenttweaker:kikeridan_ore>,
+    onyx: <contenttweaker:onyx>,
+    dense_onyx: <contenttweaker:onyx> * 16,
 
     moon: <contenttweaker:moon_dust>
 };
@@ -618,10 +637,13 @@ addDroneMiningRecipe("nickel_asteroid", <densemetals:dense_nickel_ore> * 16, 20 
 addDroneMiningRecipe("aluminum_asteroid", <densemetals:dense_aluminum_ore> * 16, 20 * 60, 500 * 1000);
 addDroneMiningRecipe("zinc_asteroid", <densemetals:dense_zinc_ore> * 16, 20 * 60, 500 * 1000);
 
+addDroneMiningRecipe("argyrodite_asteroid", <contenttweaker:argyrodite_ore> * 32, 20 * 60, 1000 * 1000);
 addDroneMiningRecipe("beryllium_asteroid", <contenttweaker:beryllium_ore> * 32, 20 * 60, 5000 * 1000);
 addDroneMiningRecipe("moissanite_asteroid", <contenttweaker:moissanite_ore> * 32, 20 * 60, 5000 * 1000);
 addDroneMiningRecipe("zirconium_asteroid", <contenttweaker:zirconium_ore> * 32, 20 * 60, 5000 * 1000);
 addDroneMiningRecipe("dense_zirconium_asteroid", <contenttweaker:zirconium_ore_dense> * 12, 20 * 60, 5000 * 1000);
+addDroneMiningRecipe("onyx", <contenttweaker:onyx>, 20 * 60, 5000 * 1000);
+addDroneMiningRecipe("dense_onyx", <contenttweaker:onyx> * 16, 20 * 60, 5000 * 1000);
 
 addDroneMiningRecipe("vanadium_asteroid", <contenttweaker:vanadium_ore> * 32, 20 * 60, 5000 * 1000);
 addDroneMiningRecipe("molybdenum_asteroid", <contenttweaker:molybdenum_ore> * 32, 20 * 60, 5000 * 1000);
@@ -970,6 +992,17 @@ mods.extendedcrafting.CombinationCrafting.addRecipe(
     <contenttweaker:vortexed_base> * 2, 1000000 * 20, 1000000, <contenttweaker:super_alloy_base_ingot>,
     [
             <extendedcrafting:singularity_custom:68>,
+            <extendedcrafting:singularity:48>,
+            <extendedcrafting:singularity_custom:58>,
+            <extendedcrafting:singularity_custom:31>,
+            <extendedcrafting:singularity_custom:61>,
+            <extendedcrafting:singularity_custom:36>
+    ]
+);
+mods.extendedcrafting.CombinationCrafting.addRecipe(
+    <contenttweaker:vortexed_base> * 2, 1000000 * 20, 1000000, <contenttweaker:super_alloy_base_ingot>,
+    [
+            <contenttweaker:metal_singularity>,
             <extendedcrafting:singularity:48>,
             <extendedcrafting:singularity_custom:58>,
             <extendedcrafting:singularity_custom:31>,

@@ -28,17 +28,17 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
+				TrophyColorRed: 81,
+				TrophyColorBlue: 26,
+				TrophyName: "Hammer",
+				TrophyColorGreen: 48,
+				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "immersiveengineering:tool",
 					Count: 1,
 					Damage: 0s
 				},
-				TrophyName: "Hammer",
-				TrophyColorRed: 81,
-				TrophyColorGreen: 48,
-				TrophyColorBlue: 26,
-				TrophyVariant: "neon",
-				TrophyShowsTooltip: 1b
+				TrophyVariant: "neon"
 			}
 		}
 	}]

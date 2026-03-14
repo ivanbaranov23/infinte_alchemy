@@ -1,7 +1,6 @@
 {
     "test_slab": {
-        "type": "slab",
-        "material": "wood",
-        "soundType": "wood"
+        "type": "pane",
+        "material": "iron"
     }
 }

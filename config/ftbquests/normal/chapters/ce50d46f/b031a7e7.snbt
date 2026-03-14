@@ -1,0 +1,21 @@
+{
+	x: 12.5d,
+	y: 4.0d,
+	dependencies: [
+		"9fe73973"
+	],
+	tasks: [{
+		uid: "db6b63c2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:moissanite_ore"
+		}]
+	},
+	{
+		uid: "69436fca",
+		type: "item",
+		items: [{
+			item: "contenttweaker:moissanite_plate"
+		}]
+	}]
+}

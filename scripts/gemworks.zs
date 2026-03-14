@@ -220,12 +220,12 @@ recipes.addShaped("ia_weather_crystal2", <enderio:item_material:18> * 4, [
 
 mods.enderio.SagMill.removeRecipe(<enderio:item_material:16>);
 mods.enderio.SagMill.addRecipe(
-    [<enderio:item_material:37>, <enderio:item_material:37>], [50, 25], <enderio:item_material:16>, "MULTIPLY_OUTPUT", 20000
+    [<enderio:item_material:37>, <enderio:item_material:37>], [0.50, 0.25], <enderio:item_material:16>, "MULTIPLY_OUTPUT", 20000
 );
 
 mods.enderio.SagMill.removeRecipe(<enderio:item_material:19>);
 mods.enderio.SagMill.addRecipe(
-    [<enderio:item_material:34>, <enderio:item_material:34>], [50, 25], <enderio:item_material:19>, "MULTIPLY_OUTPUT", 20000
+    [<enderio:item_material:34>, <enderio:item_material:34>], [0.50, 0.25], <enderio:item_material:19>, "MULTIPLY_OUTPUT", 20000
 );
 
 

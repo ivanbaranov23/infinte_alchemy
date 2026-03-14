@@ -15,12 +15,12 @@
 			id: "ae2stuff:inscriber",
 			tag: {
 				data: {
-					topLocked: 1b,
 					progress: 0.0f,
-					Items: [],
-					power: 0.0d,
 					bottomLocked: 1b,
-					upgrades: []
+					upgrades: [],
+					topLocked: 1b,
+					power: 0.0d,
+					Items: []
 				}
 			}
 		}]

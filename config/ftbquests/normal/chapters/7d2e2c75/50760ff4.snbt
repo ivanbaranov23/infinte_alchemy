@@ -27,17 +27,17 @@
 		item: {
 			id: "simple_trophies:trophy",
 			tag: {
+				TrophyColorRed: 67,
+				TrophyColorBlue: 67,
+				TrophyName: "Frame 4",
+				TrophyColorGreen: 67,
+				TrophyShowsTooltip: 1b,
 				TrophyItem: {
 					id: "mekanism:basicblock",
 					Count: 1,
 					Damage: 8s
 				},
-				TrophyName: "Frame 4",
-				TrophyColorRed: 67,
-				TrophyColorGreen: 67,
-				TrophyColorBlue: 67,
-				TrophyVariant: "neon",
-				TrophyShowsTooltip: 1b
+				TrophyVariant: "neon"
 			}
 		}
 	}]

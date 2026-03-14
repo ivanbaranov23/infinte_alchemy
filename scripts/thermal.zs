@@ -57,25 +57,76 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 ]);
 
 {//dusts
+	recipes.remove(<thermalfoundation:material:1024>);
+	recipes.addShaped("ia_pyrotheum", <thermalfoundation:material:1024>, [
+		[<minecraft:blaze_powder>, <minecraft:blaze_powder>], 
+		[<minecraft:redstone>, <ore:dustSulfur>]
+	]);
+	recipes.addShaped("ia_pyrotheum_alt", <thermalfoundation:material:1024> * 3, [
+		[<minecraft:blaze_powder>, <minecraft:blaze_powder>, <roots:infernal_bulb>], 
+		[<minecraft:redstone>, <ore:dustSulfur>, <liquid:napalm> * 1000]
+	]);
+	recipes.addShaped("ia_pyrotheum_alt2", <thermalfoundation:material:1024> * 5, [
+		[<minecraft:blaze_powder>, <minecraft:blaze_powder>, <roots:infernal_bulb>], 
+		[<minecraft:redstone>, <ore:dustSulfur>, <liquid:napalm> * 1000],
+		[<oreberries:akai_oreberry>, null, null]
+	]);
+
 	recipes.remove(<thermalfoundation:material:1025>);
 	recipes.addShaped("ia_cryotheum", <thermalfoundation:material:1025>, [
 		[<ore:dustBlizz>, <ore:dustBlizz>], 
 		[<ore:dustElectrotine>, <ore:snowball>]
 	]);
+	recipes.addShaped("ia_cryotheum_alt", <thermalfoundation:material:1025> * 3, [
+		[<ore:dustBlizz>, <ore:dustBlizz>, <roots:dewgonia>], 
+		[<ore:dustElectrotine>, <ore:snowball>, <liquid:cold_nitrogen> * 1000]
+	]);
+	recipes.addShaped("ia_cryotheum_alt2", <thermalfoundation:material:1025> * 5, [
+		[<ore:dustBlizz>, <ore:dustBlizz>, <roots:dewgonia>], 
+		[<ore:dustElectrotine>, <ore:snowball>, <liquid:cold_nitrogen> * 1000],
+		[<oreberries:aoi_oreberry>, null, null]
+	]);
+
 	recipes.remove(<thermalfoundation:material:1027>);
 	recipes.addShaped("ia_petrotheum", <thermalfoundation:material:1027>, [
 		[<ore:dustBasalz>, <ore:dustBasalz>], 
 		[<thermalfoundation:fertilizer>, <ore:dustObsidian>]
 	]);
+	recipes.addShaped("ia_petrotheum_alt", <thermalfoundation:material:1027> * 3, [
+		[<ore:dustBasalz>, <ore:dustBasalz>, <roots:stalicripe>], 
+		[<thermalfoundation:fertilizer>, <ore:dustObsidian>, <liquid:lava_residue> * 1000]
+	]);
+	recipes.addShaped("ia_petrotheum_alt2", <thermalfoundation:material:1027> * 5, [
+		[<ore:dustBasalz>, <ore:dustBasalz>, <roots:stalicripe>], 
+		[<thermalfoundation:fertilizer>, <ore:dustObsidian>, <liquid:lava_residue> * 1000],
+		[<oreberries:midori_oreberry>, null, null]
+	]);
+
 	recipes.remove(<thermalfoundation:material:1026>);
 	recipes.addShaped("ia_aerotheum", <thermalfoundation:material:1026>, [
 		[<ore:dustBlitz>, <ore:dustBlitz>], 
 		[<ore:dustGlowstone>, <ore:dustSaltpeter>]
 	]);
+	recipes.addShaped("ia_aerotheum_alt", <thermalfoundation:material:1026> * 3, [
+		[<ore:dustBlitz>, <ore:dustBlitz>, <roots:cloud_berry>], 
+		[<ore:dustGlowstone>, <ore:dustSaltpeter>, <liquid:brine> * 1000]
+	]);
+	recipes.addShaped("ia_aerotheum_alt2", <thermalfoundation:material:1026> * 5, [
+		[<ore:dustBlitz>, <ore:dustBlitz>, <roots:cloud_berry>], 
+		[<ore:dustGlowstone>, <ore:dustSaltpeter>, <liquid:brine> * 1000],
+		[<oreberries:kii_oreberry>, null, null]
+	]);
+
+
 	recipes.addShaped("ia_mana_dust", <thermalfoundation:material:1028>, [
 		[<thermalfoundation:fertilizer:2>, <ore:dustPyrotheum>, <thermalfoundation:fertilizer:2>], 
 		[<ore:dustAerotheum>, <minecraft:experience_bottle>, <ore:dustPetrotheum>], 
 		[<thermalfoundation:fertilizer:2>, <ore:dustCryotheum>, <thermalfoundation:fertilizer:2>]
+	]);
+	recipes.addShaped("ia_mana_dust2", <thermalfoundation:material:1028> * 3, [
+		[<thermalfoundation:fertilizer:2>, <ore:dustPyrotheum>, <oreberries:kuroi_oreberry>], 
+		[<ore:dustAerotheum>, <minecraft:experience_bottle>, <ore:dustPetrotheum>], 
+		[<oreberries:shiroi_oreberry>, <ore:dustCryotheum>, <thermalfoundation:fertilizer:2>]
 	]);
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:mana> * 50, <thermalfoundation:material:1028>, 10000);
 }

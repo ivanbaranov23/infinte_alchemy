@@ -76,6 +76,7 @@ FITweaker.addRecipe(<liquid:sand>, <liquid:astralsorcery.liquidstarlight>, <bloc
 
     FITweaker.addRecipe(<liquid:organic_cg>, <liquid:andesite>, <blockstate:minecraft:mossy_cobblestone>);
     FITweaker.addRecipe(<liquid:organic_cg>, <liquid:formic_acid>, <blockstate:erebus:petrified_bark_red:axis=y>);
+    FITweaker.addRecipe(<liquid:organic_cg>, <liquid:cheese>, <blockstate:contenttweaker:cheesestone_ore>);
 
 
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:pure_water>, <blockstate:contenttweaker:poor_iron_ore>);

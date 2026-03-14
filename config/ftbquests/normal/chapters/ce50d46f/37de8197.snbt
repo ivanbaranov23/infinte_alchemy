@@ -1,0 +1,15 @@
+{
+	x: 25.5d,
+	y: 4.0d,
+	dependencies: [
+		"6d856180"
+	],
+	optional: true,
+	tasks: [{
+		uid: "978d006c",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockparallelcontroller 1 1"
+		}]
+	}]
+}

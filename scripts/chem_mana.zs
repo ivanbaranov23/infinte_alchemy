@@ -585,6 +585,10 @@ import mods.modularmachinery.RecipeBuilder;
         [<contenttweaker:rarer_earth_dust>, <harvestcraft:carrotcakeitem>]
     );
     mods.botania.ElvenTrade.addRecipe(
+        [<alchemistry:element:62>, <alchemistry:element:62>], 
+        [<contenttweaker:rarer_earth_dust>, <harvestcraft:cherrycheesecakeitem>]
+    );
+    mods.botania.ElvenTrade.addRecipe(
         [<alchemistry:element:65>, <alchemistry:element:65>], 
         [<contenttweaker:rarer_earth_dust>, <harvestcraft:chocolatesprinklecakeitem>]
     );
@@ -595,5 +599,54 @@ import mods.modularmachinery.RecipeBuilder;
     mods.botania.ElvenTrade.addRecipe(
         [<alchemistry:element:67>, <alchemistry:element:67>], 
         [<contenttweaker:rarer_earth_dust>, <harvestcraft:cherrycheesecakeitem>]
+    );
+}
+
+{//diamond lattice
+    recipes.remove(<avaritia:resource>);
+
+    mods.enderio.Vat.addRecipe(
+	    <liquid:diamond2> * 1000, 
+    	0.5, <liquid:diamond> * 1000,
+    	[<taiga:prometheum_dust>], [1.0], 
+	    [<contenttweaker:aquamarine_dust>], [1.0], 100 * 1000
+    );
+    mods.mekanism.reaction.addRecipe(
+        <actuallyadditions:item_crystal_empowered:2>, <liquid:diamond2> * 1000, <gas:rare_earth_slurry> * 500, 
+        null, <gas:diamond3> * 50, 2000, 60
+    );
+    mods.mekanism.compressor.addRecipe(<contenttweaker:mana_wire>, <gas:diamond3>, <contenttweaker:diamond_wire>);
+
+    
+    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:diamond4>, [
+        [<bloodmagic:item_demon_crystal:4>, <contenttweaker:diamond_wire>, <contenttweaker:diamond_wire>, <contenttweaker:diamond_wire>, <bloodmagic:item_demon_crystal:4>], 
+        [<contenttweaker:diamond_wire>, <thermalfoundation:material:26>, <extrautils2:unstableingots:2>, <thermalfoundation:material:26>, <contenttweaker:diamond_wire>], 
+        [<contenttweaker:diamond_wire>, <extrautils2:unstableingots:2>, <contenttweaker:c14_gem>, <extrautils2:unstableingots:2>, <contenttweaker:diamond_wire>], 
+        [<contenttweaker:diamond_wire>, <thermalfoundation:material:26>, <extrautils2:unstableingots:2>, <thermalfoundation:material:26>, <contenttweaker:diamond_wire>], 
+        [<bloodmagic:item_demon_crystal:4>, <contenttweaker:diamond_wire>, <contenttweaker:diamond_wire>, <contenttweaker:diamond_wire>, <bloodmagic:item_demon_crystal:4>]
+    ]);
+
+    {
+        var rec = RecipeBuilder.newBuilder("diamond_lattice", "explosion_compressor", 40);
+
+        rec.addEnergyPerTickInput(100 * 1000 * 1000);
+
+        rec.addOutput(<liquid:diamond5> * 1000);
+        rec.addOutput(<contenttweaker:explosion_device> * 4);
+
+        rec.addItemInput(<contenttweaker:diamond4>);
+        rec.addItemInput(<contenttweaker:explosion_device_full> * 4);
+        rec.addInput(<liquid:insane_heat_lava> * 100);
+
+        rec.build();
+    }
+
+    scripts.content_machines.addBioAssemblerRecipeRandom(
+        [<avaritia:resource> % 90], null, //todo diamond6?
+        [
+            <contenttweaker:osmiridium_support> * 4,
+            <extendedcrafting:singularity:6>
+        ], [<liquid:diamond5> * 1000], <contenttweaker:flesh_support>,
+        40, 1000000
     );
 }

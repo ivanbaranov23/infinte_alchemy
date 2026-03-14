@@ -1,8 +1,9 @@
 {
 	x: -1.0d,
-	y: 3.5d,
+	y: 1.5d,
 	dependencies: [
-		"ba943d3c"
+		"ba943d3c",
+		"7bc682a4"
 	],
 	tasks: [{
 		uid: "29222dc4",
@@ -10,5 +11,10 @@
 		items: [{
 			item: "contenttweaker:self_healing_polymer"
 		}]
+	}],
+	rewards: [{
+		uid: "7395efa2",
+		type: "item",
+		item: "contenttweaker:self_healing_polymer"
 	}]
 }

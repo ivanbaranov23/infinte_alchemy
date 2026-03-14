@@ -1,6 +1,9 @@
 import crafttweaker.item.IItemStack;
 import mods.modularmachinery.RecipeBuilder;
 
+import moretweaker.draconicevolution.FusionCrafting;
+import mods.extendedcrafting.CompressionCrafting;
+
 val singularity_dust as IItemStack = <contenttweaker:singularity_dust>;
 
 
@@ -15,7 +18,7 @@ static expl_compressables as string[] = [
 	"platinum", "iridium", "tungsten", "titanium", "uranium", "yellorium",
 	"steeleaf",
 	"chrome", "gallium", "neodymium",
-	"palladium", "draconium", "zirconium", "tantalum",
+	"palladium", "draconium", "barium", "zirconium", "tantalum",
 
 	"redstone",
 	"coal", "diamond", "emerald", "lapis", "salt",
@@ -157,29 +160,31 @@ for mat in non_metallic_singularities{
 
 
 //fix brass
-mods.extendedcrafting.CompressionCrafting.remove(<extendedcrafting:singularity:21>);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<extendedcrafting:singularity:21>, <tconstruct:ingots:5>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.remove(<extendedcrafting:singularity:21>);
+CompressionCrafting.addRecipe(<extendedcrafting:singularity:21>, <tconstruct:ingots:5>, 256, <contenttweaker:singularity_dust>, 5000000);
 
 //my singularities
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:mushroomite_singularity>, <contenttweaker:mushroomite_ingot>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:mushroomite_singularity>, <contenttweaker:mushroomite_ingot>, 256, <contenttweaker:singularity_dust>, 5000000);
 
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:fiery_singularity>, <twilightforest:fiery_ingot>, 256, <contenttweaker:singularity_dust>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:solar_silicon_singularity>, <contenttweaker:solar_silicon>, 256, <contenttweaker:singularity_dust>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:mana_dust_singularity>, <thermalfoundation:material:1028>, 256, <contenttweaker:singularity_dust>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neuro_singularity>, <contenttweaker:basic_neuron>, 256, <contenttweaker:singularity_dust>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:will_singularity>, <contenttweaker:mixed_will_crystal>, 64, <contenttweaker:singularity_dust>, 5000000);
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:evil_singularity>, <extrautils2:ingredients:17>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:fiery_singularity>, <twilightforest:fiery_ingot>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:solar_silicon_singularity>, <contenttweaker:solar_silicon>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:mana_dust_singularity>, <thermalfoundation:material:1028>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:neuro_singularity>, <contenttweaker:basic_neuron>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:neodymium_singularity>, <contenttweaker:neodymium_ingot>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:will_singularity>, <contenttweaker:mixed_will_crystal>, 64, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:evil_singularity>, <extrautils2:ingredients:17>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:mirion2_singularity>, <contenttweaker:mirion2_ingot>, 256, <contenttweaker:singularity_dust>, 5000000);
 
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:resource:4>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:neutronium_singularity>, <avaritia:resource:4>, 256, <contenttweaker:singularity_dust>, 5000000);
 
 //singularity
-mods.extendedcrafting.CompressionCrafting.addRecipe(<contenttweaker:meta_singularity>, <contenttweaker:singularity_dust>, 256, <contenttweaker:singularity_dust>, 5000000);
+CompressionCrafting.addRecipe(<contenttweaker:meta_singularity>, <contenttweaker:singularity_dust>, 256, <contenttweaker:singularity_dust>, 5000000);
 
-mods.extendedcrafting.CompressionCrafting.addRecipe(
+CompressionCrafting.addRecipe(
 	<extendedcrafting:singularity_custom:68>, <thermalfoundation:material:160>, 256 * 256, 
 	<extendedcrafting:singularity_custom:68>, 5000000
 );
-mods.extendedcrafting.CompressionCrafting.addRecipe(
+CompressionCrafting.addRecipe(
 	<extendedcrafting:singularity_custom:69>, <thermalfoundation:material:160>, 256 * 256 * 256, 
 	<extendedcrafting:singularity_custom:69>, 5000000
 );
@@ -354,3 +359,69 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor> *
 	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>]
 ]);
 
+
+
+FusionCrafting.add(
+    <contenttweaker:metal_singularity>, <contenttweaker:singularity_dust>, 
+    FusionCrafting.BASIC, 100 * 1000 * 1000, [
+        <extendedcrafting:singularity:28>,
+		<extendedcrafting:singularity_custom:39>,
+		<extendedcrafting:singularity:19>,
+		<extendedcrafting:singularity:66>,
+		<extendedcrafting:singularity:27>,
+		<extendedcrafting:singularity_custom:12>,
+		<extendedcrafting:singularity_custom:87>,
+		<extendedcrafting:singularity_custom:72>
+    ]
+);
+FusionCrafting.add(
+    <contenttweaker:metal_singularity2>, <contenttweaker:metal_singularity>, 
+    FusionCrafting.WYVERN, 200 * 1000 * 1000, [
+		<extendedcrafting:singularity:50>,
+		<extendedcrafting:singularity_custom:40>,
+        <extendedcrafting:singularity_custom:89>,
+		<extendedcrafting:singularity_custom:38>,
+
+		<extendedcrafting:singularity_custom:64>,
+		<extendedcrafting:singularity_custom:90>,
+		<extendedcrafting:singularity_custom:91>,
+		<extendedcrafting:singularity_custom:92>
+    ]
+);
+FusionCrafting.add(
+    <contenttweaker:metal_singularity3>, <contenttweaker:metal_singularity2>, 
+    FusionCrafting.DRACONIC, 400 * 1000 * 1000, [
+		<extendedcrafting:singularity_custom:93>,
+		<extendedcrafting:singularity_custom:67>,
+		<extendedcrafting:singularity_custom:58>,
+		<extendedcrafting:singularity_custom:51>,
+
+		<extendedcrafting:singularity_custom:95>,
+		<extendedcrafting:singularity_custom:96>,
+		<extendedcrafting:singularity_custom:97>,
+		<contenttweaker:mirion2_singularity>
+    ]
+);
+FusionCrafting.add(
+    <contenttweaker:gem_singularity>, <contenttweaker:singularity_dust>, 
+    FusionCrafting.DRACONIC, 100 * 1000 * 1000, [
+		<extendedcrafting:singularity_custom:18>,
+		<extendedcrafting:singularity_custom:19>,
+		<extendedcrafting:singularity_custom:20>,
+		<extendedcrafting:singularity_custom:21>,
+		<extendedcrafting:singularity_custom:22>,
+		<extendedcrafting:singularity_custom:23>,
+		<extendedcrafting:singularity_custom:24>,
+		<extendedcrafting:singularity_custom:27>,
+		<extendedcrafting:singularity_custom:37>
+    ]
+);
+FusionCrafting.add(
+    <extendedcrafting:singularity_ultimate>, <contenttweaker:meta_singularity>, 
+    FusionCrafting.DRACONIC, 1000 * 1000 * 1000, [
+		<contenttweaker:neutronium_singularity>,
+		<contenttweaker:metal_singularity3>,
+		<contenttweaker:gem_singularity3>,
+		<extendedcrafting:singularity_custom:69>
+    ]
+);
