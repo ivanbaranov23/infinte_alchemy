@@ -1996,9 +1996,9 @@ item.contenttweaker.sand_token.name=Quicksand Research Token
 item.contenttweaker.sludge_token.name=Sludge Research Token
 item.contenttweaker.research_cobblegen.name=Research: How To Mix Fluids Into Cobblestone
 
-fluid.sludge_cg=Cobblegeneic Sludge
-fluid.organic_cg=Cobblegeneic Organic Green
-fluid.residue_cg=Cobblegeneic Lava Residue
+fluid.sludge_cg=Cobblegenic Sludge
+fluid.organic_cg=Cobblegenic Organic Green
+fluid.residue_cg=Cobblegenic Lava Residue
 
 tile.contenttweaker.poor_iron_ore.name=Poor Iron Ore
 
@@ -2769,3 +2769,7 @@ item.contenttweaker.activated_motor.name=Activated Motor
 
 item.contenttweaker.cheesestone.name=Cheesestone
 tile.contenttweaker.cheesestone_ore.name=Cheesestone Ore
+
+fluid.vanadium=Molten Vanadium
+
+item.ometweaks.mushroom_capacitor.name=Mushroomite Capacitor

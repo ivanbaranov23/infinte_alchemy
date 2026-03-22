@@ -147,7 +147,11 @@ function addMekOreNew(
         <gas:palladium>, <mekores:mekanismore:121>, <mekores:mekanismore:122>
     );
 
-    
+    //vanadium
+    addMekOreFix(
+        [<contenttweaker:vanadium_ore>], 
+        <gas:vanadium>, <mekores:mekanismore:306>, <mekores:mekanismore:307>
+    );
 
     //orichlcum
     addMekOreNew(

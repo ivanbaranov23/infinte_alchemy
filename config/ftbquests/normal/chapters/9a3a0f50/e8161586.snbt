@@ -1,0 +1,19 @@
+{
+	x: -10.5d,
+	y: 2.0d,
+	dependencies: [
+		"7a913b89"
+	],
+	tasks: [{
+		uid: "bd71e036",
+		type: "item",
+		items: [{
+			id: "xnet:connector",
+			tag: {
+				display: {
+					LocName: "tile.xnet.connector_blue.name"
+				}
+			}
+		}]
+	}]
+}

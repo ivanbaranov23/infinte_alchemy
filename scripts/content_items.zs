@@ -97,6 +97,17 @@ function addLava(name as string){
     fluidlavathingyorsmtidk.register();
 }
 
+function addFlower(name as string){
+    var flower = VanillaFactory.createBlock(name, <blockmaterial:rock>);
+
+    flower.setBlockLayer("TRANSLUCENT");
+    flower.setLightOpacity(0);
+    flower.setTranslucent(true);
+    flower.setFullBlock(false);
+    flower.setPassable(true);
+    flower.register();
+}
+
 {//stoneworks
     VanillaFactory.createItem("brick_dust").register();
 
@@ -3383,6 +3394,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("diamond_wire").register();
     VanillaFactory.createItem("diamond4").register();
     registerMoltenMetal("diamond5", Color.fromHex("08061b"));
+    
+    VanillaFactory.createItem("lree").register();
+    VanillaFactory.createItem("hree").register();
+    VanillaFactory.createItem("dehpa").register();
 }
 {//alchemistry
     VanillaFactory.createItem("didymium").register();
@@ -3519,7 +3534,13 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
 {//inf line
     VanillaFactory.createBlock("galastem", <blockmaterial:rock>).register();
-
+    
+    VanillaFactory.createBlock("neutronium_flower_bed", <blockmaterial:rock>).register();
+    addFlower("inf_flower1");
+    addFlower("inf_flower2");
+    addFlower("inf_flower3");
+    addFlower("inf_flower4");
+    addFlower("inf_flower5");
     addItem("infline_seed1", "rare", 64);
     addItem("infline_seed2", "rare", 64);
     addItem("infline_seed3", "rare", 64);

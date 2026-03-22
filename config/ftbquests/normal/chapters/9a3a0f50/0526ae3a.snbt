@@ -1,0 +1,17 @@
+{
+	x: 16.5d,
+	y: 1.0d,
+	text: [
+		"Main part of the logic network."
+	],
+	dependencies: [
+		"c0e32c51"
+	],
+	tasks: [{
+		uid: "43cf81c8",
+		type: "item",
+		items: [{
+			item: "integrateddynamics:cable"
+		}]
+	}]
+}

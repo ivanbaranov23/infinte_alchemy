@@ -29,6 +29,8 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
     [<ore:blockCharcoal>, <ore:blockCharcoal>, <ore:blockCharcoal>]
 ]);
 
+<ore:blockMagnetable>.removeItems(<ore:blockMagnetable>.items);
+
 {//chunks
     //t1
     <ore:oreChunkIron>.add(<exnihilocreatio:item_ore_iron:1>);

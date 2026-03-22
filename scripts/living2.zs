@@ -958,7 +958,11 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         <contenttweaker:leaf>, <twilightforest:ironwood_ingot>, 
         3000
     );
-
+    mods.thermalexpansion.Imbuer.addRecipe(
+        <liquid:vanadium> * 144, 
+        <contenttweaker:leaf>, <liquid:silver> * 288, 
+        4800
+    );
 }
 {//blood slime
     addVitamins("blood_slime");

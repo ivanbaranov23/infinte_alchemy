@@ -1,0 +1,21 @@
+{
+	x: 17.5d,
+	y: 2.0d,
+	dependencies: [
+		"c0e32c51"
+	],
+	tasks: [{
+		uid: "74aa210a",
+		type: "item",
+		items: [{
+			item: "integrateddynamics:variable_transformer"
+		}]
+	},
+	{
+		uid: "36239a3a",
+		type: "item",
+		items: [{
+			item: "integrateddynamics:variable_transformer 1 1"
+		}]
+	}]
+}

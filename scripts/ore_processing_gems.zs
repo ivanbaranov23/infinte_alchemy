@@ -121,6 +121,10 @@ mods.jei.JEI.addItem(<actuallyadditions:item_dust:3>);
     );
 }
 
+{//ambrosium
+    //scripts.helper.addSimpleCrushingRecipe(ingot as IItemStack, dust as IItemStack);
+}
+
 //aquamarine
 <ore:dustAquamarine>.add(<contenttweaker:aquamarine_dust>);
 <ore:dustOverworldAquamarine>.add(<contenttweaker:aquamarine_dust>);

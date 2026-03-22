@@ -37,3 +37,54 @@ recipes.addShaped("ia_id_interface_fluid", <integratedtunnels:part_interface_flu
 	[<contenttweaker:menril_steel_ingot>, <appliedenergistics2:fluid_interface>, <contenttweaker:menril_steel_ingot>], 
 	[<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:cable>, <integrateddynamics:crystalized_menril_chunk>]
 ]);
+
+recipes.remove(<integrateddynamics:logic_programmer>);
+recipes.addShaped("ia_id_logic_programmer", <integrateddynamics:logic_programmer>, [
+	[<contenttweaker:menril_steel_plate>, <integrateddynamics:variable>, <contenttweaker:menril_steel_plate>], 
+	[<integrateddynamics:cable>, <botania:craftinghalo>, <integrateddynamics:cable>], 
+	[<contenttweaker:menril_steel_plate>, <integrateddynamics:variable>, <contenttweaker:menril_steel_plate>]
+]);
+
+recipes.remove(<integratednbt:nbt_extractor>);
+recipes.addShaped("ia_id_nbt_extractor", <integratednbt:nbt_extractor>, [
+	[<contenttweaker:menril_steel_ingot>, <integrateddynamics:crystalized_menril_block>, <contenttweaker:menril_steel_ingot>], 
+	[<contenttweaker:menril_steel_ingot>, <thermalexpansion:frame>, <contenttweaker:menril_steel_ingot>], 
+	[<contenttweaker:menril_steel_ingot>, <integrateddynamics:crystalized_menril_block>, <contenttweaker:menril_steel_ingot>]
+]);
+
+
+{//variable transformer
+	recipes.remove(<integrateddynamics:variable_transformer>);
+	recipes.addShaped("ia_id_variable_transformer", <integrateddynamics:variable_transformer> * 2, [
+		[null, <integrateddynamics:variable>, null], 
+		[<opencomputers:material:8>, <minecraft:piston>, <opencomputers:material:8>], 
+		[null, <integrateddynamics:variable>, null]
+	]);
+	recipes.remove(<integrateddynamics:variable_transformer:1>);
+	recipes.addShaped("ia_id_variable_transformer_1", <integrateddynamics:variable_transformer:1> * 2, [
+		[null, <integrateddynamics:variable>, null], 
+		[<opencomputers:material:8>, <minecraft:sticky_piston>, <opencomputers:material:8>], 
+		[null, <integrateddynamics:variable>, null]
+	]);
+}
+
+{//readers
+	recipes.remove(<integrateddynamics:part_block_reader_item>);
+	recipes.addShapeless("ia_id_part_block_reader_item", <integrateddynamics:part_block_reader_item>, [
+		<integrateddynamics:variable_transformer:1>, <extrautils2:scanner>
+	]);
+
+	
+	recipes.remove(<integrateddynamics:part_entity_reader_item>);
+	recipes.addShapeless("ia_id_part_entity_reader_item", <integrateddynamics:part_entity_reader_item>, [
+		<integrateddynamics:variable_transformer:1>, <contenttweaker:life>
+	]);
+
+}
+
+recipes.remove(<integrateddynamics:logic_director>);
+recipes.addShaped("ia_id_logic_director", <integrateddynamics:logic_director> * 2, [
+	[<integrateddynamics:crystalized_chorus_chunk>, <contenttweaker:menril_steel_plate>, <integrateddynamics:crystalized_chorus_chunk>], 
+	[<integrateddynamics:variable_transformer>, <opencomputers:material:9>, <integrateddynamics:variable_transformer:1>], 
+	[<integrateddynamics:crystalized_chorus_chunk>, <contenttweaker:menril_steel_plate>, <integrateddynamics:crystalized_chorus_chunk>]
+]);

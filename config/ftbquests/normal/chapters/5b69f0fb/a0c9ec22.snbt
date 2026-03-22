@@ -1,0 +1,17 @@
+{
+	x: -5.0d,
+	y: 1.0d,
+	dependencies: [
+		"ed841e3a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0d35555d",
+		type: "item",
+		items: [{
+			item: "botania:craftinghalo"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

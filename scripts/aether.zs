@@ -110,6 +110,12 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 
 
 {//ambrosium
+	mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:ambrosium_dust>, <aether_legacy:ambrosium_shard>, 
+        <liquid:petrotheum> * 250, 
+        2500
+    );
+
 	Enchanter.registerEnchantment(<minecraft:gravel>, <contenttweaker:ambrosium_gravel>, 100);
 	Enchanter.registerEnchantment(<exnihilocreatio:block_skystone_crushed>, <contenttweaker:ambrosium_gravel>, 80);
 	Enchanter.registerEnchantment(<contenttweaker:lapis_gravel>, <contenttweaker:ambrosium_gravel>, 50);
@@ -127,7 +133,12 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 	//1 amb -> 5-10 gravel
 	//gravel ->   in ex_nihilo.zs
 
-	mods.enderio.SagMill.addRecipe([<contenttweaker:ambrosium_seed>, <contenttweaker:ambrosium_seed>, <contenttweaker:ambrosium_dust>], [0.75, 0.5, 0.1], <contenttweaker:ambrosium_thing>, "MULTIPLY_OUTPUT");
+	mods.enderio.SagMill.addRecipe(
+		[<contenttweaker:ambrosium_seed> * 3, <contenttweaker:ambrosium_seed> * 2, <contenttweaker:ambrosium_dust>], 
+		[0.75, 0.5, 0.4], 
+		<contenttweaker:ambrosium_thing>, 
+		"MULTIPLY_OUTPUT", 50000
+	);
 	
 	mods.thermalexpansion.Transposer.addFillRecipe(
         <contenttweaker:ambrosium_balls>, <contenttweaker:zinc_pellet>, 
@@ -137,18 +148,19 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 
 	mods.thermalexpansion.Transposer.addFillRecipe(
         <contenttweaker:ambrosium_crystal_seed>, <contenttweaker:ambrosium_seed> * 4, 
-        <liquid:ambrosium_slury_clean> * 4000, 
+        <liquid:ambrosium_slury_clean> * 2000, 
         250000
     );
 	Enchanter.registerEnchantment(<contenttweaker:ambrosium_crystal_seed>, <contenttweaker:ambrosium_crystal>, 5000);//20*250
-	mods.enderio.SagMill.addRecipe([
+	mods.enderio.SagMill.addRecipe(
+		[
 			<aether_legacy:ambrosium_shard> * 16, 
 			<aether_legacy:ambrosium_shard> * 8, 
 			<contenttweaker:ambrosium_dust>
 		], 
 		[0.75, 0.5, 0.8], 
 		<contenttweaker:ambrosium_crystal>, 
-		"MULTIPLY_OUTPUT", 20000
+		"MULTIPLY_OUTPUT", 200000
 	);
 
 	//corrupted ambrosium

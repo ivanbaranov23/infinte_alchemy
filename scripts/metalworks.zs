@@ -2383,6 +2383,7 @@ static all_metals_molten as ILiquidStack[string] = {
     starmetal: <liquid:starmetal>,
     zirconium: <liquid:zirconium>,
     molybdenum: <liquid:molybdenum>,
+    vanadium: <liquid:vanadium>,
 
     crystal_matrix: <liquid:crystal_matrix>,
     dark_matter: <liquid:dark_matter>,

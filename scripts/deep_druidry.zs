@@ -305,3 +305,19 @@ scripts.content_machines.addFluidAlloyerRecipe(
         rec.build();
     }
 }
+{//mushroom_capacitor
+    mods.roots.Fey.addRecipe("mushroom_capacitor", <ometweaks:mushroom_capacitor>, [
+        <contenttweaker:inversion_dust>, <contenttweaker:cheesy_capacitor>, <enderio:item_capacitor_grainy>, <contenttweaker:mushroomite_rod>, <contenttweaker:mushroomite_rod>
+    ]);
+
+    {
+        var rec = RecipeBuilder.newBuilder("mushroom_capacitor", "druid_circle", 20);
+        rec.addEnergyPerTickInput(25600);
+
+        rec.addItemInputs(<contenttweaker:inversion_dust>, <contenttweaker:cheesy_capacitor>, <enderio:item_capacitor_grainy>, <contenttweaker:mushroomite_rod> * 2);
+
+        rec.addItemOutput(<ometweaks:mushroom_capacitor>);
+                    
+        rec.build();
+    }
+}

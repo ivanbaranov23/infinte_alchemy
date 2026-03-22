@@ -1,0 +1,17 @@
+{
+	x: 15.5d,
+	y: 2.0d,
+	text: [
+		"Useful for debuging."
+	],
+	dependencies: [
+		"594062bb"
+	],
+	tasks: [{
+		uid: "c7156bd8",
+		type: "item",
+		items: [{
+			item: "integrateddynamics:part_display_panel_item"
+		}]
+	}]
+}

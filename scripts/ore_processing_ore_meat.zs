@@ -68,6 +68,7 @@ var meat_names as string[IItemStack][] = [
         <mekores:mekanismore:253>: "oreAurorium",
         <mekores:mekanismore:288>: "oreUru",
         <mekores:mekanismore:53>: "oreDraconium",
+        <mekores:mekanismore:308>: "oreVanadium",
 
         <contenttweaker:biotite_dirty_dust>: "oreEndBiotite",
         <contenttweaker:amethyst_dirty_dust>: "oreAmethyst"

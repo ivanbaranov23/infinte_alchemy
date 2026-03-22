@@ -487,10 +487,12 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_ore_mithril> % 5
 		],
 		<contenttweaker:ambrosium_gravel>: [
+			<exnihilocreatio:item_ore_osmium> % 20,
 			<exnihilocreatio:item_ore_osmium> % 15,
+			<exnihilocreatio:item_ore_osmium> % 10,
 			<minecraft:flint> % 5,
-			<contenttweaker:ambrosium_seed> % 1,
-			<contenttweaker:ambrosium_dust> % 7
+			<contenttweaker:ambrosium_seed> % 5,
+			<contenttweaker:ambrosium_dust> % 20
 		]
 	},
 	uraniumMesh: {

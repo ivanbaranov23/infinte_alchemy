@@ -508,7 +508,13 @@ Rituals.modifyRitual("ritual_transmutation", [
         ame2: <caves_n_cliffs:medium_amethyst_bud>, 
         ame3: <caves_n_cliffs:large_amethyst_bud>, 
         ame4: <caves_n_cliffs:amethyst_cluster>,
-        ame5: <caves_n_cliffs:amethyst_cluster_single>
+        ame5: <caves_n_cliffs:amethyst_cluster_single>,
+
+        inf1: <contenttweaker:inf_flower1>,
+        inf2: <contenttweaker:inf_flower2>,
+        inf3: <contenttweaker:inf_flower3>,
+        inf4: <contenttweaker:inf_flower4>,
+        inf5: <contenttweaker:inf_flower5>
     };
     val flower_soils as IIngredient[string] = {
         ia_mushroom_red: <minecraft:mycelium>,
@@ -560,6 +566,12 @@ Rituals.modifyRitual("ritual_transmutation", [
         ame3: <caves_n_cliffs:budding_amethyst>,
         ame4: <caves_n_cliffs:budding_amethyst>,
         ame5: <caves_n_cliffs:budding_amethyst>,
+
+        inf1: <contenttweaker:neutronium_flower_bed>,
+        inf2: <contenttweaker:neutronium_flower_bed>,
+        inf3: <contenttweaker:neutronium_flower_bed>,
+        inf4: <contenttweaker:neutronium_flower_bed>,
+        inf5: <contenttweaker:neutronium_flower_bed>,
     };
 
     //jei

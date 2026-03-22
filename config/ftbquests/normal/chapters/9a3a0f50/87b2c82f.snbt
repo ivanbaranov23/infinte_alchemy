@@ -1,0 +1,14 @@
+{
+	x: 19.5d,
+	y: 0.0d,
+	dependencies: [
+		"c0e32c51"
+	],
+	tasks: [{
+		uid: "d50c0807",
+		type: "item",
+		items: [{
+			item: "integratednbt:nbt_extractor"
+		}]
+	}]
+}

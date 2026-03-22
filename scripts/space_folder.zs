@@ -1,4 +1,5 @@
 import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.IngredientArrayBuilder;
 
 
 {
@@ -37,5 +38,30 @@ import mods.modularmachinery.RecipeBuilder;
     );
     
     rec.addItemOutput(<extendedcrafting:singularity_ultimate> * 2);
+	rec.build();
+}
+
+{
+    var rec = RecipeBuilder.newBuilder("neutronium_flower_bed", "sf_infuser", 20 * 30);
+	rec.addEnergyPerTickInput(500 * 1000 * 1000);
+
+    rec.addFluidInput(<liquid:dark_catalyst> * 10000);
+    rec.addFluidOutput(<liquid:dark_catalyst6> * 6000);
+    rec.addFluidOutput(<liquid:dark_catalyst2> * 1000);
+    rec.addFluidOutput(<liquid:dark_catalyst3> * 3000);
+
+    rec.addItemInput(<contenttweaker:neutronium_sand> * 8);
+    rec.addInputs(
+        <contenttweaker:ma_essence7>,
+        <contenttweaker:ancient_wood>,
+        <contenttweaker:fertilizer7> * 64
+    );
+    rec.addIngredientArrayInput(IngredientArrayBuilder.newBuilder()
+        .addIngredient(<contenttweaker:mirion2_singularity>)
+        .addIngredient(<contenttweaker:hyper_life>)
+    );
+    rec.addWillInput("STEADFAST", 40);
+    
+    rec.addItemOutput(<contenttweaker:neutronium_flower_bed> * 8);
 	rec.build();
 }

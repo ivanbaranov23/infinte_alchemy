@@ -2015,7 +2015,15 @@ val ores as IItemStack[string][string][string] = {
             crushing_no_balls: <contenttweaker:vanadium_dust> * 2,
             balling: <contenttweaker:vanadium_dust> * 2,
             crushingByprod1: <exnihilocreatio:item_ore_iron>,
-            crushingByprod2: <contenttweaker:beryllium_dust>
+            crushingByprod2: <contenttweaker:beryllium_dust>,
+
+            drilling: <mekores:mekanismore:308> * 3
+        },
+        clump: {
+            item: <mekores:mekanismore:307>,
+            balling: <mekores:mekanismore:308>,
+            crushingByprod1: <exnihilocreatio:item_ore_iron>,
+            crushingByprod2: <contenttweaker:beryllium_dust>,
         }
     },
     molybdenum: {

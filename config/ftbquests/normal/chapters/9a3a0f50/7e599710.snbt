@@ -1,0 +1,24 @@
+{
+	x: 18.5d,
+	y: 3.0d,
+	text: [
+		"Interface for redstone power."
+	],
+	dependencies: [
+		"594062bb"
+	],
+	tasks: [{
+		uid: "93c7db14",
+		type: "item",
+		items: [{
+			item: "integrateddynamics:part_redstone_reader_item"
+		}]
+	},
+	{
+		uid: "ae985201",
+		type: "item",
+		items: [{
+			item: "integrateddynamics:part_redstone_writer_item"
+		}]
+	}]
+}

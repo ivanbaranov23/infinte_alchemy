@@ -1,0 +1,14 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "cross": "contenttweaker:blocks/inf_flower3",
+      "particle": "contenttweaker:blocks/inf_flower3"
+    },
+    "model": "cross"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

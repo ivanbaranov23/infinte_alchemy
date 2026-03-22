@@ -332,6 +332,19 @@ recipes.addShapeless("ia_waste_book_dup_alt", <contenttweaker:research_chemistry
     <contenttweaker:gem_catalyst>, <contenttweaker:gem_catalyst>, <contenttweaker:gem_catalyst>, <contenttweaker:gem_catalyst>, <contenttweaker:gem_catalyst>
 ]);
 
+addResearchRecipe("Heat", <prodigytech:heat_capacitor_0>, <contenttweaker:research_heat>,
+    [
+        <prodigytech:aeternus_crystal> * 64,
+        <extendedcrafting:singularity:16>,
+        <prodigytech:heat_capacitor_2>,
+        <prodigytech:zorrasteel_ingot> * 48,
+        <forge:bucketfilled>.withTag({FluidName: "fire_water", Amount: 1000}),
+        <prodigytech:energion_crystal_seed> * 64
+    ],
+    1024, 5*20
+);
+
+
 addResearchRecipe("Bacteria", <contenttweaker:bacteria> * 4, <contenttweaker:research_bacteria1>,
     [
         <contenttweaker:waste_token> * 2,
@@ -416,18 +429,7 @@ addResearchRecipe("AlienMat", <moreplates:end_steel_plate>, <contenttweaker:rese
     4096, 5*20
 );
 
-addResearchRecipe("Heat", <prodigytech:heat_capacitor_0>, <contenttweaker:research_heat>,
-    [
-        <prodigytech:aeternus_crystal> * 64,
-        <extendedcrafting:singularity:16>,
-        <prodigytech:heat_capacitor_3>,
-        <prodigytech:zorrasteel_ingot> * 48,
-        <forge:bucketfilled>.withTag({FluidName: "fire_water", Amount: 1000}),
-        //<modularmachinery:blockhotairinputhatch> * 4,
-        <prodigytech:energion_crystal_seed> * 64
-    ],
-    1024, 5*20
-);
+
 
 //redo
 addResearchRecipe("Blood", <bloodmagic:slate:4>, <contenttweaker:research_magic2>,

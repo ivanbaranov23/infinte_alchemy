@@ -1,0 +1,19 @@
+{
+	x: 16.5d,
+	y: 3.0d,
+	text: [
+		"Reads blocks (bruh).",
+		"",
+		"Example: block reader is on botania mana pool, nbt extractor extracts amount of mana and shows it on a panel."
+	],
+	dependencies: [
+		"594062bb"
+	],
+	tasks: [{
+		uid: "34ccb78d",
+		type: "item",
+		items: [{
+			item: "integrateddynamics:part_block_reader_item"
+		}]
+	}]
+}

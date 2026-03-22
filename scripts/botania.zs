@@ -65,7 +65,14 @@ val pool as int = 1000000;
         ], 20, 500
     );
 }
-
+{//halo
+    recipes.remove(<botania:craftinghalo>);
+    recipes.addShaped("craftinghalo", <botania:craftinghalo>, [
+        [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>], 
+        [<contenttweaker:angel_rod>, <extendedcrafting:handheld_table>, <contenttweaker:angel_rod>], 
+        [<ore:dyeBlue>, <ore:dyeBlue>, <ore:dyeBlue>]
+    ]);
+}
 
 //ender air
 mods.thermalexpansion.Transposer.addFillRecipe(

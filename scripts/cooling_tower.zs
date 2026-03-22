@@ -7,7 +7,7 @@ import crafttweaker.item.WeightedItemStack;
 import mods.modularmachinery.RecipeBuilder;
 
 
-{var rec = RecipeBuilder.newBuilder("cold_crude", "cooling_tower", 20 * 60);
+{var rec = RecipeBuilder.newBuilder("cold_crude1", "cooling_tower", 20 * 60);
 
     rec.addEnergyPerTickInput(25600);
 
@@ -60,6 +60,8 @@ import mods.modularmachinery.RecipeBuilder;
     rec.build();
 }
 
+
+
 {var rec = RecipeBuilder.newBuilder("carmin_tartarate", "cooling_tower", 20 * 60);
 
     rec.addEnergyPerTickInput(25600);
@@ -70,6 +72,19 @@ import mods.modularmachinery.RecipeBuilder;
     
     rec.addGasInput(<gas:carmin> * 10000);
     rec.addFluidInput(<liquid:tartaric_acid> * 10000);
+                
+    rec.build();
+}
+
+{var rec = RecipeBuilder.newBuilder("blizz", "cooling_tower", 20 * 1);
+
+    rec.addEnergyPerTickInput(2560);
+
+
+    rec.addOutput(<thermalfoundation:material:2049> * 32);
+
+    
+    rec.addInput(<minecraft:snowball> * 64);
                 
     rec.build();
 }

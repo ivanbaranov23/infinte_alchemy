@@ -1,0 +1,14 @@
+{
+	x: -10.5d,
+	y: -1.0d,
+	dependencies: [
+		"7a913b89"
+	],
+	tasks: [{
+		uid: "177ceb72",
+		type: "item",
+		items: [{
+			item: "xnet:controller"
+		}]
+	}]
+}
