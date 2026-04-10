@@ -1,0 +1,11 @@
+{
+	x: 16.0d,
+	y: 3.0d,
+	tasks: [{
+		uid: "af68ad72",
+		type: "item",
+		items: [{
+			item: "contenttweaker:advanced_neuron"
+		}]
+	}]
+}

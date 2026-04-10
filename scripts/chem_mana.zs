@@ -359,6 +359,16 @@ import mods.modularmachinery.RecipeBuilder;
     mods.mekanism.chemical.crystallizer.addRecipe(<gas:smart> * 250, <contenttweaker:cool_sulfur>);
 }
 
+{//mobbium
+    recipes.addShapeless("ia_mobbium1", <contenttweaker:mobbium> * 2, [<contenttweaker:trollsteinn>, <extrautils2:ingredients:10>, <xreliquary:mob_ingredient:9>, <draconicevolution:draconium_dust>]);
+
+    recipes.addShapeless("ia_mobbium2", <contenttweaker:mobbium> * 8, [
+        <contenttweaker:trollsteinn>, <extrautils2:ingredients:10>, <xreliquary:mob_ingredient:9>, <draconicevolution:draconium_dust>,
+        <contenttweaker:insect_essence>
+    ]);
+
+}
+
 
 {//tartaric gel
     scripts.content_machines.addAdvancedMixerRecipe(

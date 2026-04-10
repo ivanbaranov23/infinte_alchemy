@@ -20,7 +20,11 @@ function addVialProcess(entity as string, poison as ILiquidStack,
         var recipe = AssemblyRecipe.create(function(container) {
             
             for item,o in loot{
-                container.addItemOutput("output", item.stack.withLore(["Base chance: " ~ (item.chance * 100) ~ "%", "Luck increase: " ~ (o * 100) ~ "%"]));
+                container.addItemOutput("output", item.stack.withLore([
+                    "Base chance: " ~ (item.chance * 100) ~ "%", 
+                    "Luck increase: " ~ (o * 100) ~ "%",
+                    "At 100 luck: " ~ ((item.chance + o * 100) * 100) ~ "%"
+                ]));
             }
             if (blood){
                 container.addFluidOutput("output", blood);
@@ -152,33 +156,37 @@ val sand as ILiquidStack = <liquid:sand> * 100;
 
 {//minecraft
     addVialProcess("minecraft:bat", poison, {
-            <actuallyadditions:item_misc:15> * 2 % 20: 0.04
+            <actuallyadditions:item_misc:15> * 2 % 20: 0.04,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 15, 0
     );
     addVialProcess("minecraft:blaze", water, {
             <xreliquary:mob_ingredient:7>: 0.04, 
             <minecraft:blaze_rod> * 4: 0.1, 
-            <thermalfoundation:material:771> * 4: 0.05
+            <thermalfoundation:material:771> * 4: 0.05,
+            <contenttweaker:golem_essence>.weight(2.0 / 10000): 0.002
         }, <liquid:fiery_essence> * 100, 1
     );
     addVialProcess("minecraft:cave_spider", insect, {
             <minecraft:spider_eye> * 4 % 50: 0.03,
             <xreliquary:mob_ingredient:2> * 2 % 90: 0.01,
             <minecraft:string> * 8: 0.04,
-            <minecraft:web> % 20: 0.02
+            <minecraft:web> % 20: 0.02,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
     addVialProcess("minecraft:chicken", poison, {
             <minecraft:feather> * 2: 0.05,
             <minecraft:chicken>: 0.05,
             <minecraft:egg>: 0.05,
-            <minecraft:bone> % 10: 0.01
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 25, 0
     );
     addVialProcess("minecraft:cow", poison, {
             <minecraft:beef> * 4: 0.05,
             <minecraft:leather> * 4: 0.05,
-            <minecraft:bone>: 0.04
+            <minecraft:bone>: 0.04,
+            <contenttweaker:animal_essence>.weight(2.0 / 10000): 0.0015
         }, <liquid:milk> * 200, 1
     );
 
@@ -223,7 +231,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     addVialProcess("minecraft:magma_cube", water, {
             <xreliquary:mob_ingredient:7> % 60: 0.03,
             <minecraft:magma_cream> * 4 % 75: 0.05,
-            <thermalfoundation:material:771> * 4: 0.05
+            <thermalfoundation:material:771> * 4: 0.05,
+            <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:fiery_essence> * 200, 2
     );
 
@@ -232,32 +241,37 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <minecraft:leather> * 4: 0.05,
             <minecraft:bone>: 0.04,
             <minecraft:brown_mushroom> * 4: 0.05,
-            <minecraft:red_mushroom> * 4: 0.05
+            <minecraft:red_mushroom> * 4: 0.05,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:mushroom_stew> * 100, 1
     );
 
     addVialProcess("minecraft:pig", poison, {
             <minecraft:porkchop> * 4: 0.05,
             <quark:tallow> * 4: 0.05,
-            <minecraft:bone>: 0.04
+            <minecraft:bone>: 0.04,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 50, 0
     );
 
     addVialProcess("minecraft:rabbit", poison, {
             <minecraft:rabbit> * 4: 0.05,
             <minecraft:rabbit_hide> * 6: 0.05,
-            <minecraft:rabbit_foot> * 2 % 80: 0.04
+            <minecraft:rabbit_foot> * 2 % 80: 0.04,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 15, 0
     );
     addVialProcess("minecraft:sheep", poison, {
             <minecraft:mutton> * 4: 0.05,
-            <minecraft:wool> * 6: 0.05
+            <minecraft:wool> * 6: 0.05,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 25, 0
     );
 
     addVialProcess("minecraft:shulker", water, {
             <minecraft:shulker_shell> * 4: 0.05,
-            <darkutils:shulker_pearl> * 2: 0.04
+            <darkutils:shulker_pearl> * 2: 0.04,
+            <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:ender_blood> * 100, 1
     );
 
@@ -273,14 +287,16 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     addVialProcess("minecraft:slime", poison, {
             <minecraft:slime_ball> * 6: 0.05,
             <xreliquary:mob_ingredient:4>: 0.04,
-            <contenttweaker:bug_slimeball> % 5: 0.03
+            <contenttweaker:bug_slimeball> % 5: 0.03,
+            <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
     addVialProcess("minecraft:spider", insect, {
             <minecraft:spider_eye> * 4 % 70: 0.03,
             <xreliquary:mob_ingredient:2> * 2 % 90: 0.04,
             <minecraft:string> * 8: 0.05,
-            <minecraft:web> * 2 % 20: 0.02
+            <minecraft:web> * 2 % 20: 0.02,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
 
@@ -288,7 +304,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <minecraft:dye> * 4 % 80: 0.04,
             <xreliquary:mob_ingredient:12> % 90: 0.04,
             <harvestcraft:calamarirawitem> * 2: 0.05,
-            <mysticalworld:raw_squid> * 2 % 50: 0.04
+            <mysticalworld:raw_squid> * 2 % 50: 0.04,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 40, 0
     );
 
@@ -330,19 +347,22 @@ val sand as ILiquidStack = <liquid:sand> * 100;
 {//atum
     addVialProcess("atum:bonestorm", <liquid:holy_water> * 50, {
             <atum:dusty_bone> * 2: 0.03,
-            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001,
+            <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
     addVialProcess("atum:camel", poison, {
             <atum:camel_raw> * 4: 0.05,
             <minecraft:leather> * 4: 0.05,
-            <minecraft:bone>: 0.04
+            <minecraft:bone>: 0.04,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 50, 0
     );
 
     addVialProcess("atum:desert_wolf", poison, {
             <atum:wolf_pelt> * 4: 0.05,
-            <minecraft:bone>: 0.04
+            <minecraft:bone>: 0.04,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 50, 0
     );
 
@@ -363,12 +383,14 @@ val sand as ILiquidStack = <liquid:sand> * 100;
 
     addVialProcess("atum:stoneguard", <liquid:lubricant> * 100, {
             <atum:khnumite> * 4 % 80: 0.04,
-            <contenttweaker:khnumite_heart> % 50: 0.02
+            <contenttweaker:khnumite_heart> % 50: 0.02,
+            <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.002
         }, <liquid:sky_stone> * 100, 1
     );
     addVialProcess("atum:stonewarden", <liquid:lubricant> * 150, {
             <atum:khnumite> * 6 % 80: 0.04,
-            <contenttweaker:khnumite_heart> % 50: 0.02
+            <contenttweaker:khnumite_heart> % 50: 0.02,
+            <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.003
         }, <liquid:sky_stone> * 200, 1
     );
 
@@ -380,7 +402,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
 
     addVialProcess("atum:tarantula", insect, {
             <atum:mandibles> * 4 % 80: 0.04,
-            <erebus:erebus_food:4> * 2 % 75: 0.03
+            <erebus:erebus_food:4> * 2 % 75: 0.03,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
 
@@ -398,11 +421,13 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <xreliquary:mob_ingredient:2> * 2 % 90: 0.04,
             <minecraft:string> * 8: 0.05,
             <minecraft:web> * 2 % 30: 0.02,
-            <erebus:materials:21> % 80: 0.05
+            <erebus:materials:21> % 80: 0.05,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
     addVialProcess("erebus:erebus.beetle", insect, {
-        <erebus:materials> * 6: 0.03
+        <erebus:materials> * 6: 0.03,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:beetle_juice> * 100, 1);
 
     addVialProcess("erebus:erebus.wasp", <liquid:insecticide> * 100,
@@ -410,90 +435,108 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <erebus:materials:10>: 0.02, 
             <erebus:materials:6> * 2: 0.02,
             <mod_lavacow:chitin> * 2: 0.05,
-            <erebus:materials:19> % 10: 0.02
+            <erebus:materials:19> % 10: 0.02,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
     addVialProcess("erebus:erebus.centipede", insect, {
         <erebus:materials:8> * 4 % 90: 0.04, 
-        <erebus:materials:21> * 4 % 90: 0.04
+        <erebus:materials:21> * 4 % 90: 0.04,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, null, 0);
     
     addVialProcess("erebus:erebus.mosquito", insect, {
         <erebus:life_blood> * 8: 0.05, 
-        <erebus:materials:6> * 2 % 80: 0.04
+        <erebus:materials:6> * 2 % 80: 0.04,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:blood> * 100, 1);
     addVialProcess("erebus:erebus.tarantula", insect, {
         <erebus:erebus_food:4> * 8 % 80: 0.05, 
-        <minecraft:spider_eye> * 4 % 70: 0.04
+        <minecraft:spider_eye> * 4 % 70: 0.04,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, null, 0);
 
     addVialProcess("erebus:erebus.grasshopper", insect, {
         <erebus:erebus_food:2> * 2: 0.05, 
-        <erebus:materials:6> * 2: 0.05
+        <erebus:materials:6> * 2: 0.05,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, null, 0);
 
     addVialProcess("erebus:erebus.locust", insect * 300, {
         <erebus:materials:9> * 8: 0.1, 
-        <erebus:materials:6> * 2: 0.05
+        <erebus:materials:6> * 2: 0.05,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:blood> * 150, 2);
     addVialProcess("erebus:erebus.rhino_beetle", insect * 300, {
         <erebus:materials:35> * 6: 0.05, 
-        <erebus:materials:6> * 2: 0.05
+        <erebus:materials:6> * 2: 0.05,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:blood> * 150, 2);
 
     addVialProcess("erebus:erebus.glow_worm", insect, {
-        <erebus:materials:12> * 8: 0.1
+        <erebus:materials:12> * 8: 0.1,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:worm_blood> * 100, 1);
     addVialProcess("erebus:erebus.bombardier_beetle", insect * 200, {
         <erebus:materials> * 6: 0.1, 
         <erebus:materials:6> * 2: 0.05, 
         <minecraft:blaze_powder> * 8: 0.1, 
-        <minecraft:gunpowder> * 8: 0.1
+        <minecraft:gunpowder> * 8: 0.1,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:blood> * 125, 2);
 
 
     addVialProcess("erebus:erebus.praying_mantis", insect, {
         <erebus:materials:18> * 8: 0.05, 
-        <erebus:materials:6> * 2: 0.05
+        <erebus:materials:6> * 2: 0.05,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:blood> * 50, 1);
     addVialProcess("erebus:erebus.dragon_fly", insect * 200, {
         <erebus:materials:4> * 4: 0.05, 
-        <erebus:materials:24> * 4: 0.05
+        <erebus:materials:24> * 4: 0.05,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:blood> * 75, 1);
 
     addVialProcess("erebus:erebus.titan_beetle", insect * 300, {
         <erebus:materials> * 10: 0.05, 
         <erebus:materials:6> * 2: 0.05, 
-        <erebus:erebus_food:12>: 0.1
+        <erebus:erebus_food:12>: 0.1,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.002
     }, <liquid:blood> * 125, 1);
 
     addVialProcess("erebus:erebus.cicada", insect, {
         <erebus:materials:28> * 8: 0.05, 
-        <erebus:materials:6> * 2: 0.05
+        <erebus:materials:6> * 2: 0.05,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:blood> * 50, 0);
     
     addVialProcess("erebus:erebus.zombie_ant", holy, {
         <erebus:materials:65> * 6: 0.05, 
         <erebus:materials:37> * 1: 0.07,
-            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:rot> * 75, 1);
     addVialProcess("erebus:erebus.zombie_ant_soldier", holy, {
         <erebus:materials:65> * 8: 0.05, 
         <erebus:materials:37> * 1: 0.07,
-            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.001,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:rot> * 100, 1);
 
     addVialProcess("erebus:erebus.pond_skater", insect, {
-        <erebus:materials:57> * 8: 0.05
+        <erebus:materials:57> * 8: 0.05,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, null, 0);
     addVialProcess("erebus:erebus.woodlouse", insect, {
-        <erebus:materials:23> * 8: 0.05
+        <erebus:materials:23> * 8: 0.05,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, null, 0);
 
     addVialProcess("erebus:erebus.stag_beetle", insect, {
         <erebus:materials> * 12: 0.05, 
         <erebus:materials:66>: 0.05, 
-        <erebus:stag_heart_raw>: 0.05
+        <erebus:stag_heart_raw>: 0.05,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:beetle_juice> * 100, 1);
 
     addVialProcess("erebus:erebus.crushroom", poison * 300, {
@@ -504,29 +547,34 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     }, <liquid:mushroom_stew> * 150, 1);
 
     addVialProcess("erebus:erebus.solifuge", insect, {
-        <erebus:materials:8> * 4 % 80: 0.03
+        <erebus:materials:8> * 4 % 80: 0.03,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, null, 0);
 
     addVialProcess("erebus:erebus.velvet_worm", insect, {
             <minecraft:slime_ball> * 6: 0.05,
             <xreliquary:mob_ingredient:4> % 20: 0.04,
-            <contenttweaker:bug_slimeball> % 25: 0.03
+            <contenttweaker:bug_slimeball> % 25: 0.03,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
         }, <fluid:worm_blood> * 100, 1
     );
 
     addVialProcess("erebus:erebus.scorpion", insect, {
         <erebus:materials:21> * 4: 0.05, 
-        <erebus:materials:17> * 2: 0.03
+        <erebus:materials:17> * 2: 0.03,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:blood> * 50, 1);
 
     addVialProcess("erebus:erebus.magma_crawler", water, {
-        <erebus:materials:60>: 0.04
+        <erebus:materials:60>: 0.04,
+        <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:lava> * 50, 1);
 }
 {//fish undead mobs
     addVialProcess("mod_lavacow:lavacow", water, {
             <mod_lavacow:moltenbeef> % 80: 0.04,
-            <thermalfoundation:material:771> * 2: 0.05
+            <thermalfoundation:material:771> * 2: 0.05,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <fluid:lava> * 200, 4
     );
     addVialProcess("mod_lavacow:zombiemushroom", holy, {
@@ -573,7 +621,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
             <mod_lavacow:moltenbeef> * 2 % 80: 0.04,
             <thermalfoundation:material:771> * 2: 0.05,
             <mod_lavacow:burntovipositor> % 30: 0.03,
-            <minecraft:blaze_powder> * 4: 0.04
+            <minecraft:blaze_powder> * 4: 0.04,
+            <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.003
         }, <fluid:lava> * 250, 4
     );
 
@@ -586,7 +635,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
 
 
     addVialProcess("mod_lavacow:ptera", poison, {
-            <mod_lavacow:ptera_wing> * 2 % 75: 0.05
+            <mod_lavacow:ptera_wing> * 2 % 75: 0.05,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, <liquid:blood> * 50, 1
     );
 
@@ -605,7 +655,8 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     addVialProcess("mod_lavacow:pingu", holy, {
             <mod_lavacow:shattered_ice> * 4: 0.05,
             <mod_lavacow:feather_black> * 2: 0.05,
-            <minecraft:dye:15>: 0.5
+            <minecraft:dye:15>: 0.5,
+            <contenttweaker:animal_essence>.weight(1.0 / 10000): 0.001
         }, null, 0
     );
 
@@ -630,15 +681,55 @@ val sand as ILiquidStack = <liquid:sand> * 100;
     );
 }
 
-//twilight
-addVialProcess("twilightforest:slime_beetle", poison, {
-    <contenttweaker:bug_slimeball> * 8: 1.0
-    }, null, 0
-);
+{//twilight
+    addVialProcess("twilightforest:slime_beetle", insect, {
+            <contenttweaker:bug_slimeball> * 8: 0.05,
+            <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.001,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
+        }, null, 0
+    );
+    addVialProcess("twilightforest:fire_beetle", insect, {
+            <minecraft:gunpowder> * 8 % 50: 0.05,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
+        }, <liquid:fiery_essence> * 300, 4
+    );
+    addVialProcess("twilightforest:helmet_crab", insect, {
+            <twilightforest:armor_shard> * 4 % 50: 0.05,
+            <contenttweaker:insect_essence>.weight(1.0 / 10000): 0.001
+        }, null, 0
+    );
 
+    addVialProcess("twilightforest:giant_miner", poison, {
+            <twilightforest:giant_pickaxe> % 25: 0.1
+        }, null, 0
+    );
+    addVialProcess("twilightforest:skeleton_druid", <liquid:holy_water2> * 100, {
+            <minecraft:skull> % 80: 0.04,
+            <xreliquary:mob_ingredient> * 2: 0.04,
+            <minecraft:bone> * 8: 0.05,
+            <contenttweaker:druid_bone> % 75: 0.05,
+            <twilightforest:torchberries> % 75: 0.05,
+            <contenttweaker:undead_essence>.weight(1.0 / 10000): 0.002
+        }, <liquid:mana> * 50, 1
+    );
+    addVialProcess("twilightforest:death_tome", water, {
+            <minecraft:paper> * 8 % 50: 0.1,
+            <minecraft:book> * 4 % 50: 0.1
+        }, null, 0
+    );
+    addVialProcess("twilightforest:troll", poison, {
+           <twilightforest:magic_beans> % 3: 0.02
+        }, null, 0
+    );
+}
+
+{//aether
+
+}
 
 //misc
 addVialProcess("industrialforegoing:pink_slime", poison, {
-    <industrialforegoing:pink_slime> * 8: 1.0
+    <industrialforegoing:pink_slime> * 8 % 50: 0.05,
+    <contenttweaker:golem_essence>.weight(1.0 / 10000): 0.001
     }, <liquid:if.pink_slime> * 200, 4
 );

@@ -232,7 +232,7 @@
 
         {"match": {"drops": {"drops": ["contenttweaker:forest_fire"]}},
             "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
-            "drops": []
+            "drops": [{}]
         },
 
         {
@@ -341,8 +341,8 @@
                             "contenttweaker:mitanium_ingot"
                         ],
                         "quantity": {
-                            "min": 2,
-                            "max": 6
+                            "min": 1,
+                            "max": 5
                         }
                     }
                 }
@@ -371,6 +371,17 @@
                             "min": 1,
                             "max": 2
                         }
+                    }
+                }
+            ]
+        },
+
+        {"match": {"blocks": {"blocks": ["moretcon:oregallium"]}},
+            "replaceStrategy": "REPLACE_ALL_IF_SELECTED",
+            "drops": [
+                {
+                    "item": {
+                        "items": ["contenttweaker:gallium_ore"]
                     }
                 }
             ]

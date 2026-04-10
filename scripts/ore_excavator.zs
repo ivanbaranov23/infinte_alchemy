@@ -432,6 +432,7 @@ var mil as int = 1000000;
 
     addExcavator("Coal1", 30, ["oreOverworldCoal"], [1], [0, -11325]);
     addExcavator("Coal2", 20, ["oreOverworldCoal", "oreOverworldDiamond"], [0.99, 0.01], [0, -11325]);
+    addExcavator("Coal3", 20, ["oreOverworldCoal", "oreOverworldDiamond"], [0.95, 0.05], [0, -11325]);
     addExcavator("Redstone", 20, ["oreOverworldRedstone", "oreOverworldRuby"], [0.97, 0.03], [0, -11325]);
 
     addExcavator("Lapis1", 20, ["oreOverworldLapis", "oreOverworldElectrotine", "dustSulfur"], [0.85, 0.1, 0.05], [0, -11325]);
@@ -492,9 +493,24 @@ addFluidReservoir("Atum Rich Oil", 5, <liquid:crude_oil>, 10 * mil, 25*mil, 12, 
 addFluidReservoir("Atum Quicksand", 5, <liquid:sand>, mil, 2*mil, 4, [17]);
 addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0, [17]);
 
-//nether
+{//nether
+    addExcavator("Nether Iron", 30, ["oreHellIron", "oreHellNickel"], [0.8, 0.2], [-1]);
+    addExcavator("Nether Copper", 30, ["oreHellCopper", "oreHellGold"], [0.8, 0.2], [-1]);
+    addExcavator("Nether Tin", 30, ["oreHellTin", "oreHellSilver"], [0.8, 0.2], [-1]);
+    
+    addExcavator("Nether Gold", 30, ["oreHellGold", "oreCincinnasite"], [0.8, 0.2], [-1]);
+    addExcavator("Nether Cincinnasite", 20, ["oreCincinnasite", "oreHellGold"], [0.8, 0.2], [-1]);
+    addExcavator("Netherite", 10, ["oreNetherite", "oreCincinnasite", "oreHellRuby"], [0.3, 0.5, 0.2], [-1]);
 
-addFluidReservoir("Nether Lava", 35, <liquid:lava>, 10*mil, 15*mil, 10, [-1]);
+    addExcavator("Nether Cobalt", 30, ["oreHellCobalt", "oreHellArdite", "oreNetherite"], [0.7, 0.28, 0.02], [-1]);
+    addExcavator("Nether Ardite", 30, ["oreHellArdite", "oreHellCobalt", "oreNetherite"], [0.7, 0.28, 0.02], [-1]);
+
+
+    addExcavator("Nether Laac Vein", 10, ["denseOreHellLead", "oreHellArdite", "oreHellAmbrosium", "oreCaelumite"], [0.40, 0.40, 0.01, 0.19], [-1]);
+
+    addFluidReservoir("Nether Lava", 35, <liquid:lava>, 10*mil, 15*mil, 10, [-1]);
+}
+
 
 {//twilight
     addExcavator("Twilight Redstone", 15, ["oreOverworldRedstone", "oreOverworldGarstone"], [0.95, 0.05], [7]);
@@ -519,68 +535,8 @@ addFluidReservoir("Aether Holy Water", 20, <liquid:holy_water>, mil, 10*mil, 10,
 addFluidReservoir("Aether Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [-11325]);
 
 //end
+addExcavator("End Uranium+", 1, ["oreTheendUranium", "oreTheendEmerald", "oreTheendPeridot", "oreTheendElectrotine"], [0.6, 0.2, 0.1, 0.1], [1]);
 
 //deepdark
 addFluidReservoir("Deepdark Mana", 15, <liquid:mana>, 5 * mil, 10*mil, 12, [-11325]);
 //addFluidReservoir("Deepdark Dark Catalyst", 5, <liquid:dark_catalyst>, 50 * 1000, 300 * 1000, 4, [-11325]);
-
-/*
-addExcavator("Erebus Mushrooms", 25, ["erebusDutchCapMushroom", "erebusGrandmasShoesMushroom", "erebusDarkCappedMushroom", "erebusKaizersFingersMushroom", "erebusSarcasticCzechMushroom", "glowshroom", "cropMushroomRed", "cropMushroomBrown"], [0.15, 0.15, 0.15, 0.15, 0.15, 0.05, 0.1, 0.1], [66]);
-addExcavator("Erebus Iron", 25, ["oreErebusIron", "oreErebusTin"], [0.65, 0.35], [66]);
-addExcavator("Erebus Magnetite", 25, ["oreErebusIron", "oreErebusGold"], [0.85, 0.15], [66]);
-addExcavator("Erebus Copper", 30, ["oreErebusCopper", "oreErebusGold", "blockErebusAmber"], [0.65, 0.25, 0.1], [66]);
-addExcavator("Erebus Fossil", 30, ["oreFossil", "blockErebusAmber", "oreErebusCoal", "oreErebusQuartz"], [0.65, 0.25, 0.05, 0.05], [66]);
-addExcavator("Erebus Cassiterite", 15, ["oreErebusTin"], [1.0], [66]);
-addExcavator("Erebus Gold", 20, ["oreErebusGold", "oreErebusCopper"], [0.65, 0.35], [66]);
-addExcavator("Erebus Jade", 20, ["oreJade", "oreErebusEmerald"], [0.65, 0.35], [66]);
-addExcavator("Erebus Lapis", 20, ["oreErebusLapis", "oreErebusIron", "oreGneiss"], [0.65, 0.3, 0.05], [66]);
-addExcavator("Erebus Gneiss", 20, ["blockErebusGneiss", "oreErebusEncrustedDiamond"], [0.65, 0.35], [66]);
-addExcavator("Erebus Aluminium", 20, ["oreErebusAluminium", "oreErebusTin"], [0.7, 0.3], [66]);
-addExcavator("Erebus Galena", 20, ["oreErebusLead", "oreErebusSilver"], [0.50, 0.50], [66]);
-addExcavator("Erebus Coal", 20, ["oreErebusCoal", "orePetrifiedWood", "oreErebusPetrifiedQuartz"], [0.7, 0.15, 0.15], [66]);
-addExcavator("Erebus Temple", 20, ["oreErebusTemple", "orePetrifiedWood", "oreErebusPetrifiedQuartz"], [0.5, 0.25, 0.25], [66]);
-
-addExcavator("End Biotite", 25, ["oreEndBiotite", "oreEndProsperity", "oreEndInferium"], [0.75, 0.15, 0.1], [1]);
-addExcavator("End Prosperity", 25, ["oreEndProsperity", "oreEndInferium"], [0.5, 0.5], [1]);
-addExcavator("End Resonant Clathrate", 25, ["oreEndBiotite", "oreEndProsperity", "oreClathrateEnder"], [0.25, 0.25, 0.5], [1]);
-
-addExcavator("Nether Glowstone", 25, ["blockGlowstone", "oreClathrateGlowstone"], [0.7, 0.3], [-1]);
-addExcavator("Nether Quartz", 25, ["oreQuartz", "oreNetherInferium", "oreNetherProsperity"], [0.7, 0.15, 0.15], [-1]);
-addExcavator("Nether Iron", 25, ["oreNetherIron", "oreNetherTin", "dustSulfur"], [0.5, 0.25, 0.25], [-1]);
-addExcavator("Nether Magnetite", 25, ["oreNetherIron", "oreNetherGold"], [0.85, 0.15], [-1]);
-addExcavator("Nether Copper", 30, ["oreNetherCopper", "oreNetherGold", "blockGlowstone"], [0.65, 0.25, 0.1], [-1]);
-addExcavator("Nether Cassiterite", 15, ["oreNetherTin"], [1.0], [-1]);
-addExcavator("Nether Gold", 20, ["oreNetherGold", "oreNetherCopper", "blockGlowstone"], [0.65, 0.25, 0.1], [-1]);
-addExcavator("Nether Coal", 15, ["oreNetherCoal", "oreNetherDiamond", "oreNetherEmerald"], [0.7, 0.25, 0.05], [-1]);
-addExcavator("Nether Blood", 25, ["oreNetherRedstone", "oreArdite", "oreBloodgem", "oreNetherite"], [0.4, 0.2, 0.2, 0.2], [-1]);
-addExcavator("Nether Cobalt", 25, ["oreCobalt", "oreArdite", "oreCincinnasite"], [0.4, 0.3, 0.3], [-1]);
-addExcavator("Nether Lapis", 25, ["oreNetherLapis", "oreCincinnasite", "oreCobalt"], [0.5, 0.3, 0.2], [-1]);
-addExcavator("Nether Cincinnasite", 25, ["oreCincinnasite", "dustSulfur"], [0.9, 0.1], [-1]);
-
-addExcavator("Iron", 25, ["oreIron", "oreNickel", "oreTin"], [0.55, 0.25, 0.20], [0, 9, -11325]);
-addExcavator("Magnetite", 25, ["oreIron", "oreGold"], [0.85, 0.15], [0, 9, -11325]);
-addExcavator("Pyrite", 20, ["oreIron", "dustSulfur"], [0.5, 0.5], [0, 9, -11325]);
-addExcavator("Copper", 30, ["oreCopper", "oreGold", "oreNickel"], [0.7, 0.25, 0.05], [0, 9, -11325]);
-addExcavator("Cassiterite", 15, ["oreTin"], [1.0], [0, 9, -11325]);
-addExcavator("Gold", 20, ["oreGold", "oreCopper", "oreNickel"], [0.65, 0.25, 0.1], [0, 9, -11325]);
-addExcavator("Nickel", 20, ["oreNickel", "oreIron"], [0.85, 0.15], [0, 9, -11325]);
-addExcavator("Yellorium", 10, ["oreYellorium"], [1.0], [0, 9, -11325]);
-addExcavator("Certus Quartz", 15, ["oreCertusQuartz", "oreChargedCertusQuartz", "oreQuartzBlack"], [0.6, 0.1, 0.3], [0, 9, -11325]);
-addExcavator("Quartzite", 5, ["oreOverworldQuartz", "oreCertusQuartz", "oreChargedCertusQuartz", "oreQuartzBlack"], [0.5, 0.35, 0.05, 0.1], [0, 9, -11325]);
-addExcavator("Galena", 15, ["oreLead", "oreSilver"], [0.50, 0.50], [0, 9, -11325]);
-addExcavator("Lapis", 10, ["oreLapis", "oreIron", "dustSulfur"], [0.65, 0.3, 0.05], [0, 9, -11325]);
-addExcavator("Cinnabar", 15, ["oreRedstone", "oreCinnabar", "oreClathrateRedstone"], [0.65, 0.20, 0.15], [0, 9, -11325]);
-addExcavator("Coal", 25, ["oreCoal", "oreDiamond", "oreEmerald"], [0.84, 0.15, 0.01], [0, 9, -11325]);
-addExcavator("Silt", 25, ["blockClay", "blockSalt", "oreAquamarine", "sand", "gravel"], [0.3, 0.2, 0.1, 0.2, 0.2], [0, 9, -11325]);
-addExcavator("Osmium", 35, ["oreOsmium", "oreIron"], [0.8, 0.2], [0, 9, -11325]);
-addExcavator("Aluminum", 10, ["oreAluminum", "oreTin"], [0.7, 0.3], [0, 9, -11325]);
-addExcavator("Inferium", 25, ["oreInferium", "oreProsperity"], [0.6, 0.4], [0, 9, -11325]);
-addExcavator("Garnet", 25, ["oreGarnet", "oreRedstone", "oreAmethyst"], [0.5, 0.25, 0.25], [0, 9, -11325]);
-addExcavator("Opal", 25, ["oreOpal", "oreDark"], [0.6, 0.4], [0, 9, -11325]);
-addExcavator("Oilsand", 25, ["oreClathrateOilSand", "sand"], [0.9, 0.1], [0, 9, -11325]);
-addExcavator("Oilgravel", 25, ["oreClathrateOilShale", "gravel"], [0.9, 0.1], [0, 9, -11325]);
-addExcavator("Divine", 25, ["oreRupee", "oreRealmite", "oreArlemite"], [0.33, 0.33, 0.33], [0, 9, -11325]);
-addExcavator("Amethyst", 25, ["oreAmethyst", "oreCinnabar", "oreDiamond"], [0.6, 0.3, 0.1], [0, 9, -11325]);
-
-
-*/

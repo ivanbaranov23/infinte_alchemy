@@ -362,6 +362,23 @@ static work as int[][IItemStack[]][string] = {
         [<densemetals:dense_zinc_ore>, <contenttweaker:zinc_ore> * 5]: [20, 100],
         [<densemetals:dense_aluminum_ore>, <thermalfoundation:ore:4> * 5]: [20, 100],
 
+        [<contenttweaker:antimony_ore_dense>, <contenttweaker:antimony_ore> * 5]: [20, 100],
+
+        [<densemetals:dense_gold_ore>, <minecraft:gold_ore> * 5]: [30, 150],
+        [<densemetals:dense_silver_ore>, <thermalfoundation:ore:2> * 5]: [30, 150],
+        [<densemetals:dense_lead_ore>, <thermalfoundation:ore:3> * 5]: [30, 150],
+        [<densemetals:dense_osmium_ore>, <mekanism:oreblock> * 5]: [30, 150],
+
+        [<densemetals:dense_iridium_ore>, <thermalfoundation:ore:7> * 5]: [50, 250],
+
+        [<densemetals:dense_mithril_ore>, <thermalfoundation:ore:8> * 5]: [75, 350],
+
+        [<densemetals:dense_redstone_ore>, <minecraft:redstone_ore> * 5]: [20, 100],
+        [<densemetals:dense_lapis_ore>, <minecraft:lapis_ore> * 5]: [20, 100],
+
+        [<densemetals:dense_diamond_ore>, <minecraft:diamond_ore> * 5]: [30, 150],
+        [<densemetals:dense_emerald_ore>, <minecraft:emerald_ore> * 5]: [30, 150],
+
         [<contenttweaker:nitrall>, <contenttweaker:nitrall_feed> * 4]: [10, 200]
     },
     chitigic_chef: {

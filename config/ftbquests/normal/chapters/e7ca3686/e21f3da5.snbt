@@ -1,12 +1,11 @@
 {
-	x: 0.0d,
-	y: -2.0d,
+	x: -4.0d,
+	y: 0.0d,
 	text: [
 		"Can produce a respectable amount of energy from a fuel and a coolant, tho you can hold on to rainbow gen."
 	],
 	dependencies: [
-		"97e98b69",
-		"029062b7"
+		"97e98b69"
 	],
 	optional: true,
 	tasks: [{

@@ -1,0 +1,38 @@
+{
+	x: 6.0d,
+	y: 4.0d,
+	text: [
+		"Super rare loot only obtainable with vial processors. It is very rare, so you will need some luck *wink* *wink* to get it"
+	],
+	dependencies: [
+		"091c3ec9"
+	],
+	tasks: [{
+		uid: "85c2f297",
+		type: "item",
+		items: [{
+			item: "contenttweaker:undead_essence"
+		}]
+	},
+	{
+		uid: "61f0cb33",
+		type: "item",
+		items: [{
+			item: "contenttweaker:animal_essence"
+		}]
+	},
+	{
+		uid: "6baa5671",
+		type: "item",
+		items: [{
+			item: "contenttweaker:insect_essence"
+		}]
+	},
+	{
+		uid: "9069733d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:golem_essence"
+		}]
+	}]
+}

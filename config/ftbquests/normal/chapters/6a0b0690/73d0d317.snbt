@@ -1,0 +1,15 @@
+{
+	x: 1.0d,
+	y: -1.0d,
+	dependencies: [
+		"87046614"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6c4ffeb9",
+		type: "item",
+		items: [{
+			item: "twilightforest:huge_stalk"
+		}]
+	}]
+}

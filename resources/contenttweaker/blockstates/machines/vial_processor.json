@@ -4,7 +4,7 @@
       "model": "contenttweaker:machine",
       "textures": {
         "0": "enderio:blocks/block_alloy_soularium",
-        "north": "contenttweaker:blocks/machines/vial_processor",
+        "north": "contenttweaker:blocks/machines/vial_processor_active",
         "east": "contenttweaker:blocks/machines/machine_vent",
         "south": "contenttweaker:blocks/machines/machine_vent",
         "west": "contenttweaker:blocks/machines/machine_vent",
@@ -25,8 +25,8 @@
             "east":  {  "y": 90 }
         },
       "active": {
-        "true": {},
-        "false": {}
+        "true": {"textures": {"north": "contenttweaker:blocks/machines/vial_processor_active"}},
+        "false": {"textures": {"north": "contenttweaker:blocks/machines/vial_processor"}}
       }
     }
   }

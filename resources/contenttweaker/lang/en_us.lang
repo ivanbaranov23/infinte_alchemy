@@ -2773,3 +2773,20 @@ tile.contenttweaker.cheesestone_ore.name=Cheesestone Ore
 fluid.vanadium=Molten Vanadium
 
 item.ometweaks.mushroom_capacitor.name=Mushroomite Capacitor
+
+item.contenttweaker.staffwood_mb.name=Staff of Multiblock Building
+
+item.contenttweaker.hallowsite_pieces.name=Hallowsite Pieces
+item.contenttweaker.hallowsite_chunk.name=Hallowsite Chunk
+
+ia.tooltip.sorter_food0=Put a Living into left slot as base
+ia.tooltip.sorter_food1=Put (or pipe in) a Living to be sorted into the right slot
+ia.tooltip.sorter_food2=If Living in right slot has more food than the base one
+ia.tooltip.sorter_food3=It'll be outputed through the top,
+ia.tooltip.sorter_food4=Otherwise - through the bottom
+
+ia.tooltip.sorter_lifespan0=Put a Living into left slot as base
+ia.tooltip.sorter_lifespan1=Put (or pipe in) a Living to be sorted into the right slot
+ia.tooltip.sorter_lifespan2=If Living in right slot has more lifespan than the base one
+ia.tooltip.sorter_lifespan3=It'll be outputed through the top,
+ia.tooltip.sorter_lifespan4=Otherwise - through the bottom

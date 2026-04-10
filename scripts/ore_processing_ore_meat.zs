@@ -54,7 +54,8 @@ var meat_names as string[IItemStack][] = [
         <mekores:mekanismore:263>: "oreValyrium",
 
         <contenttweaker:ender_amethyst_dirty_dust>: "oreEnethyst",
-        <quantumflux:graphiteore> * 2: "oreIGraphite"
+        <quantumflux:graphiteore> * 2: "oreIGraphite",
+        <twilightforest:trollsteinn> * 2: "oreTrollsteinn"
     }, {//4
         <mekores:mekanismore:28>: "oreMithril",
         <contenttweaker:chrome_dirty_dust>: "oreChrome",

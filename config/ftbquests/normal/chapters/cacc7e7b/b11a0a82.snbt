@@ -4,21 +4,12 @@
 		id: "contenttweaker:luck_crystal",
 		tag: {
 			luck: 100
-		},
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {
-				AS_Amulet_HolderLeast: -5658007986434875901L,
-				AS_Amulet_HolderMost: -7773060121311102705L
-			}
 		}
 	},
 	x: -2.5d,
 	y: 4.0d,
 	text: [
 		"Can be used to kick start the loop. Do note that luck 100 crystals have other uses."
-	],
-	dependencies: [
-		"1d7516be"
 	],
 	tasks: [{
 		uid: "e914e3fa",

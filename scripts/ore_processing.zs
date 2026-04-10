@@ -109,7 +109,8 @@ dense ore -> ore -> pieces -> chunk -> crystal -> shard -> clump -> dirty dust -
                                                    \/
                                                    seed -> potato -> soup
 */
-val ores as IItemStack[string][string][string] = {
+
+static ores1 as IItemStack[string][string][string] = {
     iron: {
         overworld: {
             item: <minecraft:iron_ore>,
@@ -510,7 +511,7 @@ val ores as IItemStack[string][string][string] = {
         },
         erebus: {
             item: <erebus:ore_aluminium>,
-            furnace: <thermalfoundation:material:68>,
+            //furnace: <thermalfoundation:material:68>,
             crushing_no_balls: <thermalfoundation:material:68> * 2,
             balling: <thermalfoundation:material:68> * 2,
             crushingByprod1: <contenttweaker:bauxite_dust>,
@@ -882,8 +883,7 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod1: <thermalfoundation:material:771>,
             crushingByprod2: <contenttweaker:antimony_dust>,
 
-            alloySlag2: <alchemistry:ingot:51> * 4,
-            alloySlag3: <alchemistry:ingot:51> * 6,
+            
 
             drilling: <contenttweaker:antimony_pieces> * 6
         },
@@ -895,8 +895,7 @@ val ores as IItemStack[string][string][string] = {
             crushingByprod1: <thermalfoundation:material:771>,
             crushingByprod2: <contenttweaker:antimony_dust>,
 
-            alloySlag2: <alchemistry:ingot:51> * 4,
-            alloySlag3: <alchemistry:ingot:51> * 6,
+            
 
             drilling: <contenttweaker:stibnite> * 6,
             made2x2: <contenttweaker:antimony_pieces>,
@@ -1317,70 +1316,6 @@ val ores as IItemStack[string][string][string] = {
         }
     },
 
-    cincinnasite: {
-        ore: {
-            item: <betternether:cincinnasite_ore>,
-            furnace: <betternether:cincinnasite>,
-            crushing_no_balls: <betternether:cincinnasite> * 2,
-            balling: <betternether:cincinnasite> * 2,
-            crushingByprod1: <contenttweaker:cincinnasite_dirty_dust>,
-            crushingByprod2: <actuallyadditions:item_dust:2>,
-
-            alloySlag2: <betternether:cincinnasite> * 2,
-            alloySlag3: <betternether:cincinnasite> * 3,
-
-            denorm: <netherendingores:ore_nether_vanilla:3>
-        },
-        dirtydust: {
-            item: <contenttweaker:cincinnasite_dirty_dust>,
-            separating1: <betternether:cincinnasite>,
-            separating2: <mekanism:dirtydust:1>,
-            separating4: <contenttweaker:soot>
-        }
-    },
-    dilitheum: {
-        overworld: {
-            item: <taiga:dilithium_ore>,
-            crushing: <taiga:dilithium_crystal> * 2,
-            crushingByprod1: <taiga:dilithium_dust>,
-            crushingByprod2: <taiga:vibranium_dust>,
-
-            drilling: <taiga:dilithium_crystal> * 4
-        },
-        nether: {
-            item: <netherendingores:ore_nether_modded_1:14>,
-            crushing: <taiga:dilithium_crystal> * 4,
-            crushingByprod1: <taiga:dilithium_dust>,
-            crushingByprod2: <taiga:vibranium_dust>,
-
-            drilling: <taiga:dilithium_crystal> * 5,
-            denorm: <taiga:dilithium_ore> * 2
-        },
-        end: {
-            item: <netherendingores:ore_end_modded_1:14>,
-            crushing: <taiga:dilithium_crystal> * 5,
-            crushingByprod1: <taiga:vibranium_dust>,
-            crushingByprod2: <taiga:vibranium_dust>,
-
-            drilling: <taiga:dilithium_crystal> * 6,
-            denorm: <taiga:dilithium_ore> * 3
-        },
-
-        clump: {
-            item: <mekores:mekanismore:127>,
-            balling: <mekores:mekanismore:128>,
-            crushingByprod1: <mekores:mekanismore:128>,
-            crushingByprod2: <taiga:dilithium_dust>
-        },
-        dirtydust: {
-            item: <mekores:mekanismore:128>,
-            separating1: <taiga:dilithium_dust>,
-            separating2: <taiga:dilithium_crystal>,
-            separating3: <taiga:vibranium_dust>,
-            separating4: <contenttweaker:soot>
-        }
-    },
-
     //todo 
     platinum: {
         overworld: {
@@ -1631,7 +1566,6 @@ val ores as IItemStack[string][string][string] = {
 
         }
     },
-
     bismuth: {
         ow: {
             item: <contenttweaker:bismuth_ore>,
@@ -1653,6 +1587,87 @@ val ores as IItemStack[string][string][string] = {
             made2x2: <contenttweaker:bismuth_pieces>
         }
     },
+};
+
+static ores2 as IItemStack[string][string][string] = {
+    
+
+    cincinnasite: {
+        ore: {
+            item: <betternether:cincinnasite_ore>,
+            furnace: <betternether:cincinnasite>,
+            crushing_no_balls: <betternether:cincinnasite> * 2,
+            balling: <betternether:cincinnasite> * 2,
+            crushingByprod1: <contenttweaker:cincinnasite_dirty_dust>,
+            crushingByprod2: <actuallyadditions:item_dust:2>,
+
+            alloySlag2: <betternether:cincinnasite> * 2,
+            alloySlag3: <betternether:cincinnasite> * 3,
+
+            denorm: <netherendingores:ore_nether_vanilla:3>
+        },
+        dirtydust: {
+            item: <contenttweaker:cincinnasite_dirty_dust>,
+            separating1: <betternether:cincinnasite>,
+            separating2: <mekanism:dirtydust:1>,
+            separating4: <contenttweaker:soot>
+        }
+    },
+    dilitheum: {
+        overworld: {
+            item: <taiga:dilithium_ore>,
+            crushing: <taiga:dilithium_crystal> * 2,
+            crushingByprod1: <taiga:dilithium_dust>,
+            crushingByprod2: <taiga:vibranium_dust>,
+
+            drilling: <taiga:dilithium_crystal> * 4
+        },
+        nether: {
+            item: <netherendingores:ore_nether_modded_1:14>,
+            crushing: <taiga:dilithium_crystal> * 4,
+            crushingByprod1: <taiga:dilithium_dust>,
+            crushingByprod2: <taiga:vibranium_dust>,
+
+            drilling: <taiga:dilithium_crystal> * 5,
+            denorm: <taiga:dilithium_ore> * 2
+        },
+        end: {
+            item: <netherendingores:ore_end_modded_1:14>,
+            crushing: <taiga:dilithium_crystal> * 5,
+            crushingByprod1: <taiga:vibranium_dust>,
+            crushingByprod2: <taiga:vibranium_dust>,
+
+            drilling: <taiga:dilithium_crystal> * 6,
+            denorm: <taiga:dilithium_ore> * 3
+        },
+
+        clump: {
+            item: <mekores:mekanismore:127>,
+            balling: <mekores:mekanismore:128>,
+            crushingByprod1: <mekores:mekanismore:128>,
+            crushingByprod2: <taiga:dilithium_dust>
+        },
+        dirtydust: {
+            item: <mekores:mekanismore:128>,
+            separating1: <taiga:dilithium_dust>,
+            separating2: <taiga:dilithium_crystal>,
+            separating3: <taiga:vibranium_dust>,
+            separating4: <contenttweaker:soot>
+        }
+    },
+
+    
+
+    
+    trollsteinn: {
+        ore: {
+            item: <twilightforest:trollsteinn>,
+            crushing_no_balls: <contenttweaker:trollsteinn> * 2,
+            balling: <contenttweaker:trollsteinn> * 2,
+            crushingByprod1: <exnihilocreatio:item_ore_tungsten:2>,
+            crushingByprod2: <contenttweaker:kolbeckite>,
+        }
+    },
 
     cursed_gold: {
         chunk: {
@@ -1667,7 +1682,7 @@ val ores as IItemStack[string][string][string] = {
         }
     },
 
-    //
+    //t4
     mithril: {
         overworld: {
             item: <thermalfoundation:ore:8>,
@@ -1857,7 +1872,8 @@ val ores as IItemStack[string][string][string] = {
     arkenium: {
         overworld: {
             item: <netherendingores:ore_other_1:9>,
-            crushing: <contenttweaker:arkenium_dust> * 2,
+            crushing_no_balls: <contenttweaker:arkenium_dust> * 2,
+            balling: <contenttweaker:arkenium_dust> * 2,
             crushingByprod1: <taiga:eezo_dust>,
             crushingByprod2: <contenttweaker:bedrockium_small_chunk>,
 
@@ -1866,7 +1882,8 @@ val ores as IItemStack[string][string][string] = {
         },
         nether: {
             item: <netherendingores:ore_nether_modded_2:8>,
-            crushing: <contenttweaker:arkenium_dust> * 4,
+            crushing_no_balls: <contenttweaker:arkenium_dust> * 4,
+            balling: <contenttweaker:arkenium_dust> * 4,
             crushingByprod1: <taiga:eezo_dust>,
             crushingByprod2: <contenttweaker:bedrockium_small_chunk>,
 
@@ -1877,7 +1894,8 @@ val ores as IItemStack[string][string][string] = {
         },
         end: {
             item: <netherendingores:ore_end_modded_2:8>,
-            crushing: <contenttweaker:arkenium_dust> * 5,
+            crushing_no_balls: <contenttweaker:arkenium_dust> * 5,
+            balling: <contenttweaker:arkenium_dust> * 5,
             crushingByprod1: <taiga:eezo_dust>,
             crushingByprod2: <contenttweaker:bedrockium_small_chunk>,
 
@@ -1887,7 +1905,8 @@ val ores as IItemStack[string][string][string] = {
         },
         chunk: {
             item: <contenttweaker:arkenium_chunk>,
-            crushing: <contenttweaker:arkenium_dust> * 2,
+            crushing_no_balls: <contenttweaker:arkenium_dust> * 2,
+            balling: <contenttweaker:arkenium_dust> * 2,
             crushingByprod1: <taiga:eezo_dust>,
             crushingByprod2: <contenttweaker:bedrockium_small_chunk>,
 
@@ -1897,7 +1916,8 @@ val ores as IItemStack[string][string][string] = {
 
         aether: {
             item: <moretcon:orearkenium>,
-            crushing: <contenttweaker:arkenium_dust> * 3,
+            crushing_no_balls: <contenttweaker:arkenium_dust> * 3,
+            balling: <contenttweaker:arkenium_dust> * 3,
             crushingByprod1: <aether_legacy:zanite_gemstone>,
             crushingByprod2: <moretcon:dustgravitonium>,
 
@@ -2105,14 +2125,36 @@ val ores as IItemStack[string][string][string] = {
     death_metal: {
         overworld: {
             item: <contenttweaker:death_metal_ore>,
+            balling: <contenttweaker:death_metal_dust> * 2,
+            crushing_no_balls: <contenttweaker:death_metal_dust> * 2,
+            crushingByprod1: <contenttweaker:molybdenum_dust>,
+            crushingByprod2: <thermalfoundation:geode>,
 
             drilling: <contenttweaker:death_metal_pieces> * 6
         },
         chunk: {
             item: <contenttweaker:death_metal_chunk>,
+            balling: <contenttweaker:death_metal_dust> * 2,
+            crushing_no_balls: <contenttweaker:death_metal_dust> * 2,
+            crushingByprod1: <contenttweaker:molybdenum_dust>,
+            crushingByprod2: <thermalfoundation:geode>,
 
             made2x2: <contenttweaker:death_metal_pieces>,
             madeFrom: <contenttweaker:death_metal_pieces> * 3
+        },
+        dense: {
+            item: <contenttweaker:death_metal_dense_ore>,
+            crushing: <contenttweaker:death_metal_ore> * 3,
+            crushingByprod1: <contenttweaker:molybdenum_dust> * 4,
+            crushingByprod2: <thermalfoundation:geode> * 4,
+
+            making: <contenttweaker:death_metal_ore> * 4
+        },
+        clump: {
+            item: <contenttweaker:death_metal_clump>,
+            balling: <contenttweaker:death_metal_dirty_dust> * 1,
+            crushingByprod1: <contenttweaker:molybdenum_dust>,
+            crushingByprod2: <thermalfoundation:geode>,
         }
     },
     kikeridan: {
@@ -2904,6 +2946,15 @@ val ores as IItemStack[string][string][string] = {
             drilling: <moretcon:gemechostone> * 4,
         }
     },
+    bloodstone: {
+        ore: {
+            item: <moretcon:orebloodstone>,
+            crushing_no_balls: <moretcon:gembloodstone> * 2,
+            balling: <moretcon:gembloodstone> * 2,
+            crushingByprod1: <contenttweaker:blood_shard1>,
+            crushingByprod2: <contenttweaker:blood_shard1>,
+        }
+    },
     fusionite: {
         ow: {
             item: <moretcon:orefusionite>,
@@ -2956,8 +3007,72 @@ val ores as IItemStack[string][string][string] = {
             madeFrom: <contenttweaker:hallowsite_pieces> * 3
         }
     },
+    erythynite: {
+        ore: {
+            item: <moretcon:oreerythynite>,
+            crushing_no_balls: <moretcon:gemerythynite> * 2,
+            balling: <moretcon:gemerythynite> * 2,
+            crushingByprod1: <contenttweaker:caelumite_dust>,
+            crushingByprod2: <taiga:jauxum_dust>,
+        }
+    },
+    irradium: {
+        ore: {
+            item: <moretcon:oreirradium>,
+            crushing_no_balls: <moretcon:dustirradium> * 2,
+            balling: <moretcon:dustirradium> * 2,
+            crushingByprod1: <immersiveengineering:metal:14>,
+            crushingByprod2: <bigreactors:dustyellorium>,
+        }
+    },
+    ebonite: {
+        ore: {
+            item: <moretcon:oreebonite>,
+            crushing_no_balls: <moretcon:dustebonite> * 2,
+            balling: <moretcon:dustebonite> * 2,
+            crushingByprod1: <taiga:eezo_dust>,
+            crushingByprod2: <contenttweaker:bedrockium_small_chunk>,
+        }
+    },
 
     //other
+    coal: {
+        overworld: {
+            item: <minecraft:coal_ore>,
+            crushing_no_balls: <thermalfoundation:material:768> * 4,
+            balling: <thermalfoundation:material:768> * 4,
+            crushingByprod1: <thermalfoundation:material:771>,
+            crushingByprod2: <mekanism:otherdust>,
+            drilling: <minecraft:coal> * 6
+        },
+        erebus: {
+            item: <erebus:ore_coal>,
+            crushing_no_balls: <thermalfoundation:material:768> * 4,
+            balling: <thermalfoundation:material:768> * 4,
+            crushingByprod1: <erebus:materials:2>,
+            crushingByprod2: <mekanism:otherdust>,
+            drilling: <minecraft:coal> * 6,
+
+            denorm: <minecraft:coal_ore>
+        },
+        atum: {
+            item: <atum:coal_ore>,
+            crushing_no_balls: <thermalfoundation:material:768> * 4,
+            crushingByprod1: <contenttweaker:relic_nugget>,
+
+            drilling: <minecraft:coal> * 6,
+
+            denorm: <minecraft:coal_ore>
+        },
+        dense: {
+            item: <densemetals:dense_coal_ore>,
+            crushing: <minecraft:coal_ore> * 3,
+            crushingByprod1: <thermalfoundation:material:771> * 4,
+            crushingByprod2: <mekanism:otherdust> * 4,
+
+            making: <minecraft:coal_ore> * 4
+        }
+    },
     redstone: {
         overworld: {
             item: <minecraft:redstone_ore>,
@@ -3175,8 +3290,8 @@ val ores as IItemStack[string][string][string] = {
         dense: {
             item: <densemetals:dense_lapis_ore>,
             crushing: <minecraft:lapis_ore> * 3,
-            crushingByprod1: <atum:khnumite> * 12,
-            crushingByprod2: <contenttweaker:calcium>,
+            crushingByprod1: <atum:khnumite> * 8,
+            crushingByprod2: <contenttweaker:calcium> * 4,
 
             making: <minecraft:lapis_ore> * 4
         },
@@ -3184,6 +3299,7 @@ val ores as IItemStack[string][string][string] = {
             item: <densemetals:dense_nether_lapis_ore>,
             crushing: <netherendingores:ore_nether_vanilla:5> * 3,
             crushingByprod1: <atum:khnumite> * 12,
+            crushingByprod2: <contenttweaker:calcium> * 4,
 
             making: <netherendingores:ore_nether_vanilla:5> * 4
         },
@@ -3336,6 +3452,14 @@ val ores as IItemStack[string][string][string] = {
             crushing: <netherendingores:ore_nether_vanilla:2> * 3,
             crushingByprod1: <contenttweaker:chrome_dust> * 6,
             making: <netherendingores:ore_nether_vanilla:2> * 4
+        },
+
+        dirtydust: {
+            item: <actuallyadditions:item_dust:3>,
+            separating1: <prodigytech:emerald_dust>,
+            separating2: <prodigytech:emerald_dust>,
+            separating3: <contenttweaker:vanadium_dust>,
+            separating4: <contenttweaker:soot>
         }
     },
     certus: {
@@ -3584,11 +3708,12 @@ val ores as IItemStack[string][string][string] = {
             crushing_no_balls: <erebus:materials:74> * 2,
             balling: <erebus:materials:74> * 2,
             crushingByprod1: <erebus:materials:47>,
+            crushingByprod2: <erebus:materials:2>,
 
             alloySlag2: <erebus:materials:74> * 2,
             alloySlag3: <erebus:materials:74> * 3,
 
-            drilling: <erebus:materials:74> * 3
+            drilling: <erebus:materials:74> * 4
         }
     },
     gneiss: {
@@ -3597,17 +3722,18 @@ val ores as IItemStack[string][string][string] = {
             crushing_no_balls: <erebus:materials:47> * 2,
             balling: <erebus:materials:47> * 2,
             crushingByprod1: <erebus:materials:74>,
+            crushingByprod2: <erebus:materials:2>,
 
             alloySlag2: <erebus:materials:47> * 2,
             alloySlag3: <erebus:materials:47> * 3,
 
-            drilling: <erebus:materials:47> * 3
+            drilling: <erebus:materials:47> * 4
         }
     },
     rawmalachite: {
         ore: {
             item: <erebus:ore_copper>,
-
+            furnace: <contenttweaker:malachite_polycrystal>,
             crushing_no_balls: <contenttweaker:malachite_ore_dust> * 2,
             balling: <contenttweaker:malachite_ore_dust> * 2,
             crushingByprod1: <thermalfoundation:material:64>,
@@ -3817,24 +3943,156 @@ val ores as IItemStack[string][string][string] = {
         }
     }
 };
+
 val to_clean as IItemStack[][string] = {
     frn: [
         <erebus:materials:42>,
+        <thermalfoundation:material:132>,
+
         <bigreactors:ingotyellorium>,
         <astralsorcery:itemcraftingcomponent:1>,
 
         <moretcon:ingothallowsite>,
         <minecraft:emerald>
     ],
+    all_pulv: [
+        <minecraft:gold_ore>,
+        <minecraft:iron_ore>,
+        <minecraft:coal_ore>,
+        <minecraft:lapis_ore>,
+        <minecraft:diamond_ore>,
+        <minecraft:redstone_ore>,
+        <minecraft:emerald_ore>,
+
+        <actuallyadditions:block_misc:3>,
+
+        <mekanism:oreblock>,
+        <immersiveengineering:ore:5>,
+        <bigreactors:oreyellorite>,
+        <erebus:ore_jade>,
+
+        <thermalfoundation:ore>,
+        <thermalfoundation:ore:1>,
+        <thermalfoundation:ore:2>,
+        <thermalfoundation:ore:4>,
+        <thermalfoundation:ore:6>,
+        <thermalfoundation:ore:7>,
+        <thermalfoundation:ore:8>,
+
+        <biomesoplenty:gem_ore:1>,
+        <biomesoplenty:gem_ore:2>,
+        <biomesoplenty:gem_ore:3>,
+        <biomesoplenty:gem_ore:4>,
+        <biomesoplenty:gem_ore:5>,
+        <biomesoplenty:gem_ore:6>,
+        <biomesoplenty:gem_ore:7>,
+
+        <netherendingores:ore_other_1:2>,
+
+        <astralsorcery:blockcustomsandore>,
+        <contenttweaker:starmetal_ore>,
+        <mysticalworld:amethyst_ore>,
+
+        <contenttweaker:zinc_ore>,
+        <contenttweaker:titanium_ore>,
+        <contenttweaker:tungsten_ore>,
+
+    ],
+
+    IE_pulv: [
+        <draconicevolution:draconium_ore>,
+
+        <appliedenergistics2:quartz_ore>,
+
+        
+        <netherendingores:ore_other_1:6>,
+        <netherendingores:ore_other_1:9>,
+        <moretcon:orebloodstone>,
+        <moretcon:oregarstone>,
+        <moretcon:orehallowsite>,
+        <moretcon:orezracohlium>,
+        <moretcon:oreebonite>,
+        <moretcon:oreechostone>,
+        <moretcon:oreelectarite>,
+
+        <contenttweaker:chrome_ore>
+    ],
+
+    XU_pulv: [
+        <draconicevolution:draconium_ore>,
+        <netherendingores:ore_other_1:9>,
+        
+        <moretcon:orehallowsite>,
+        <moretcon:orezracohlium>,
+        <moretcon:oreebonite>,
+
+        <taiga:karmesine_ore>,
+        <taiga:ovium_ore>,
+        <taiga:jauxum_ore>,
+        <taiga:eezo_ore>,
+        <taiga:vibranium_ore>,
+        <taiga:duranite_ore>,
+        <taiga:abyssum_ore>,
+        <taiga:valyrium_ore>,
+        <taiga:prometheum_ore>,
+        <taiga:aurorium_ore>,
+        <taiga:osram_ore>,
+        <taiga:palladium_ore>,
+        <taiga:uru_ore>,
+        
+        <contenttweaker:chrome_ore>,
+        <contenttweaker:neodymium_ore>,
+        <contenttweaker:bismuth_ore>
+    ],
 
     TE_pulv: [
-        <quark:biotite_ore>
+        <contenttweaker:electrotine_ore>,
+        <twilightforest:trollsteinn>,
+        <quark:biotite_ore>,
+        <draconicevolution:draconium_ore>,
+        <contenttweaker:moissanite_ore>,
+        <betternether:cincinnasite_ore>,
+
+        <netherendingores:ore_other_1:6>,
+        <netherendingores:ore_other_1:8>,
+        <netherendingores:ore_other_1:9>,
+        <netherendingores:ore_other_1:10>,
+        
+        <contenttweaker:caelumite_ore>,
+        <moretcon:orebloodstone>,
+        <moretcon:oregarstone>,
+        <moretcon:orehallowsite>,
+        <moretcon:oreerythynite>,
+        <moretcon:orezracohlium>,
+        <moretcon:oreebonite>,
+        <moretcon:oreechostone>,
+        <moretcon:oreelectarite>,
+
+        <taiga:karmesine_ore>,
+        <taiga:ovium_ore>,
+        <taiga:jauxum_ore>,
+        <taiga:eezo_ore>,
+        <taiga:vibranium_ore>,
+        <taiga:duranite_ore>,
+        <taiga:abyssum_ore>,
+        <taiga:valyrium_ore>,
+        <taiga:prometheum_ore>,
+        <taiga:aurorium_ore>,
+        <taiga:osram_ore>,
+        <taiga:palladium_ore>,
+        <taiga:uru_ore>,
+
+        <contenttweaker:antimony_ore>,
+        <contenttweaker:chrome_ore>,
+        <contenttweaker:neodymium_ore>,
+        <contenttweaker:bismuth_ore>,
+        <contenttweaker:orichalcum_ore>
     ],
     TE_furn: [
         
     ],
     TE_is_sand: [
-        <contenttweaker:titanium_dust>,
+        /*<contenttweaker:titanium_dust>,
         <thermalfoundation:material:72>,
         <contenttweaker:chrome_dust>,
         <draconicevolution:draconium_dust>,
@@ -3844,11 +4102,16 @@ val to_clean as IItemStack[][string] = {
         <contenttweaker:bismuth_dust>,
         <netherite:netheritescrap>,
 
-        <moretcon:dusthallowsite>
+        <moretcon:dusthallowsite>*/
     ],
     TE_is_richslag: [
         
     ],
+
+    ID_pulv: [
+
+    ],
+
     MEK_enrich: [
         <netherendingores:ore_other_1>
     ],
@@ -3865,17 +4128,26 @@ val to_clean as IItemStack[][string] = {
         <mysticalagriculture:nether_inferium_ore>,
         <mysticalagriculture:end_inferium_ore>,
 
+        <thermalfoundation:ore:3>,
+        <thermalfoundation:ore:5>,
         <thermalfoundation:ore_fluid>,
         <thermalfoundation:ore_fluid:5>,
-        <appliedenergistics2:quartz_ore>,
         <quark:biotite_ore>,
 
         <draconicevolution:draconium_ore>,
         <draconicevolution:draconium_ore:1>,
-        <draconicevolution:draconium_ore:2>
+        <draconicevolution:draconium_ore:2>,
+        
+        <taiga:prometheum_ore>,
+
+        <appliedenergistics2:quartz_ore>,
+        <appliedenergistics2:charged_quartz_ore>,
+
+        <contenttweaker:orichalcum_ore>
     ]
     
 };
+
 
 val chances as int[string][string][string] = {
     iron: {
@@ -3925,6 +4197,14 @@ val chances as int[string][string][string] = {
         },
     },
 
+    coal: {
+        overwolrd: {
+            crushingByprod2: 1
+        },
+        atum: {
+            crushingByprod1: 50
+        }
+    },
     redstone: {
         overworld: {
             crushingByprod2: 1
@@ -3986,6 +4266,7 @@ val drilling_fluid_amount as int[string] = {
     yellorium: 250,
 
     bismuth: 300,
+    trollsteinn: 250,
 
     cursed_gold: 250,
 
@@ -4054,8 +4335,12 @@ val drilling_fluid_amount as int[string] = {
     electarite: 240,
     etherstone: 400,
     echostone: 400,
+    bloodstone: 1000,
     fusionite: 300,
     hallowsite: 400,
+    erythynite: 500,
+    irradium: 400,
+    ebonite: 400,
 
     coal: 25,
     redstone: 45,
@@ -4101,15 +4386,12 @@ print("[IA] ------------------------------- Ore Clearing! ----------------------
 
 PTgrinder.removeAll();
 
-for oredic in <ore:ore*>{
-    oredic.removeItems(oredic.items);
-    oredic.add(<contenttweaker:dummy>);
-}
-for oredic in [
-    <ore:oreElectrotine>,
-    <ore:oreIGraphite>,
 
-    <ore:oreKarmesine>,
+for oredic in [
+    //<ore:oreElectrotine>,
+    //<ore:oreIGraphite>,
+
+    /*<ore:oreKarmesine>,
     <ore:oreOvium>,
     <ore:oreJauxum>,
     <ore:oreEezo>,
@@ -4124,55 +4406,69 @@ for oredic in [
     <ore:oreAbyssum>,
     <ore:oreAurorium>,
     <ore:orePalladium>,
-    <ore:oreUru>,
+    <ore:oreUru>,*/
 
-    <ore:oreLifeEssence>,
-    <ore:oreEnethyst>,
-    <ore:oreMoissanite>,
+    //<ore:oreLifeEssence>,
+    //<ore:oreEnethyst>,
+    //<ore:oreMoissanite>,
     <ore:oreStoneleaf>,
     <ore:oreSpaceice>,
-    <ore:oreCaelumite>,
-    <ore:oreNetherite>,
+    //<ore:oreCaelumite>,
+    //<ore:oreNetherite>,
     //todo
     //oreEMC
     //oreInfinity?
 
     <ore:oreBauxite>,
     <ore:oreFlolit>,
-    <ore:oreChrome>,
-    <ore:oreNeodymium>,
-    <ore:oreArkenium>,
-    <ore:oreGallium>,
+    //<ore:oreChrome>,
+    //<ore:oreNeodymium>,
+    //<ore:oreArkenium>,
+    //<ore:oreGallium>,
     <ore:oreBarite>,
-    <ore:oreOrichalcum>,
+    //<ore:oreOrichalcum>,
     <ore:oreZirconium>,
     <ore:oreDeathMetal>,
     <ore:oreKikeridan>,
 
-    <ore:oreBismuth>,
-    <ore:oreAntimony>,
+    //<ore:oreBismuth>,
+    //<ore:oreAntimony>,
     <ore:oreVanadium>,
     <ore:oreMolybdenum>
 ] as IOreDictEntry[]{
     //oredic.removeItems(oredic.items);
     oredic.add(<contenttweaker:dummy>);
 }
+//<ore:oreLapis>.remove(<contenttweaker:dummy>);
+//<ore:oreLapis>.add(<minecraft:lapis_ore>);
 
 
 print("[IA] ------------------------------- Ore Cleaning! -------------------------------");
 
-//furnace.remove(<contenttweaker:dummy>);
-//recipes.remove(<contenttweaker:dummy>);
+furnace.remove(<ore:ingotCopper>, <erebus:ore_copper>);
+furnace.remove(<ore:ingotAluminum>, <immersiveengineering:ore:1>);
 
-//for i in 0 to 28
-    //mods.bloodmagic.AlchemyTable.removeRecipe([<bloodmagic:cutting_fluid>, <contenttweaker:dummy>]);
 
-//for i in 0 to 30
-//mods.immersiveengineering.ArcFurnace.removeRecipe(<netherendingores:ore_nether_modded_2:4>);
 {
     for item in to_clean.frn{
         furnace.remove(item);
     }
+    for item in to_clean.all_pulv{
+        mods.immersiveengineering.Crusher.removeRecipesForInput(item);
+        mods.thermalexpansion.Pulverizer.removeRecipe(item);
+        EUgrinder.remove(item);
+        mods.enderio.SagMill.removeRecipe(item);
+        mods.bloodmagic.AlchemyTable.removeRecipe([item, <bloodmagic:cutting_fluid>]);
+    }
+
+    for item in to_clean.IE_pulv{
+        mods.immersiveengineering.Crusher.removeRecipesForInput(item);
+    }
+
+    for item in to_clean.XU_pulv{
+        EUgrinder.remove(item);
+    }
+
     for item in to_clean.TE_pulv{
         mods.thermalexpansion.Pulverizer.removeRecipe(item);
     }
@@ -4185,6 +4481,11 @@ print("[IA] ------------------------------- Ore Cleaning! ----------------------
     for item in to_clean.TE_is_richslag{
         InductionSmelter.removeRecipe(item, <thermalfoundation:material:865>);
     }
+
+    for item in to_clean.ID_pulv{
+        IDgrinder.removeRecipe(item);
+    }
+
     for item in to_clean.MEK_enrich{
         mods.mekanism.enrichment.removeRecipe(item);
     }
@@ -4194,22 +4495,25 @@ print("[IA] ------------------------------- Ore Cleaning! ----------------------
     
 }
 
+
+
 print("[IA] ------------------------------- Ore Adding! -------------------------------");
-for material in ores {
+for material,oresm in ores1 {
+
     print("[IA] adding " + material + " ore");
-    for ore_type in ores[material] {
+    for ore_type in oresm {
         //crushing
-        if (ores[material][ore_type] has "crushing"){
+        if (oresm[ore_type] has "crushing"){
             
 
-            if (ores[material][ore_type] has "crushingByprod1"){
+            if (oresm[ore_type] has "crushingByprod1"){
                 var crushByprod1 as int = 10;
                 if (chances has material)
                     if (chances[material] has ore_type)
                         if (chances[material][ore_type] has "crushingByprod1")
                             crushByprod1 = chances[material][ore_type].crushingByprod1 as int;
 
-                if (ores[material][ore_type] has "crushingByprod2"){
+                if (oresm[ore_type] has "crushingByprod2"){
                     var crushByprod2 as int = 3;
                     if (chances has material)
                         if (chances[material] has ore_type)
@@ -4217,28 +4521,28 @@ for material in ores {
                                 crushByprod2 = chances[material][ore_type].crushingByprod2 as int;
 
                     addCrushing12(
-                        ores[material][ore_type].item, ores[material][ore_type].crushing, 
-                        ores[material][ore_type].crushingByprod1, crushByprod1, 
-                        ores[material][ore_type].crushingByprod2, crushByprod2
+                        oresm[ore_type].item, oresm[ore_type].crushing, 
+                        oresm[ore_type].crushingByprod1, crushByprod1, 
+                        oresm[ore_type].crushingByprod2, crushByprod2
                     );
                 } else{
                     addCrushing1(
-                        ores[material][ore_type].item, ores[material][ore_type].crushing, 
-                        ores[material][ore_type].crushingByprod1, crushByprod1
+                        oresm[ore_type].item, oresm[ore_type].crushing, 
+                        oresm[ore_type].crushingByprod1, crushByprod1
                     );
                 }
             }else{
                 //no byprod
-                scripts.helper.addSimpleCrushingRecipe(ores[material][ore_type].item, ores[material][ore_type].crushing);
+                scripts.helper.addSimpleCrushingRecipe(oresm[ore_type].item, oresm[ore_type].crushing);
             }
 
         }
 
         //crushing_no_balls
-        if (ores[material][ore_type] has "crushing_no_balls"){
+        if (oresm[ore_type] has "crushing_no_balls"){
             
 
-            if (ores[material][ore_type] has "crushingByprod1"){
+            if (oresm[ore_type] has "crushingByprod1"){
                 var crushByprod1 as int = 10;
                 if (chances has material)
                     if (chances[material] has ore_type)
@@ -4246,27 +4550,27 @@ for material in ores {
                             crushByprod1 = chances[material][ore_type].crushingByprod1 as int;
 
                 addCrushingRecipe_no_eio(
-                    ores[material][ore_type].item, ores[material][ore_type].crushing_no_balls, 
-                    ores[material][ore_type].crushingByprod1, crushByprod1
+                    oresm[ore_type].item, oresm[ore_type].crushing_no_balls, 
+                    oresm[ore_type].crushingByprod1, crushByprod1
                 );
                 
             }else{
                 //no byprod
-                scripts.helper.addSimpleCrushingRecipe(ores[material][ore_type].item, ores[material][ore_type].crushing);
+                scripts.helper.addSimpleCrushingRecipe(oresm[ore_type].item, oresm[ore_type].crushing);
             }
 
         }
 
         //balling
-        if (ores[material][ore_type] has "balling"){
-            if (ores[material][ore_type] has "crushingByprod1"){
+        if (oresm[ore_type] has "balling"){
+            if (oresm[ore_type] has "crushingByprod1"){
                 var crushByprod1 as int = 10;
                 if (chances has material)
                     if (chances[material] has ore_type)
                         if (chances[material][ore_type] has "crushingByprod1")
                             crushByprod1 = chances[material][ore_type].crushingByprod1 as int;
 
-                if (ores[material][ore_type] has "crushingByprod2"){
+                if (oresm[ore_type] has "crushingByprod2"){
                     var crushByprod2 as int = 4;
                     if (chances has material)
                         if (chances[material] has ore_type)
@@ -4274,15 +4578,15 @@ for material in ores {
                                 crushByprod2 = chances[material][ore_type].crushingByprod2 as int;
 
                     addClumpCrushing(
-                        ores[material][ore_type].item, ores[material][ore_type].balling, 
-                        ores[material][ore_type].crushingByprod1, crushByprod1, 
-                        ores[material][ore_type].crushingByprod2, crushByprod2,
+                        oresm[ore_type].item, oresm[ore_type].balling, 
+                        oresm[ore_type].crushingByprod1, crushByprod1, 
+                        oresm[ore_type].crushingByprod2, crushByprod2,
                         drilling_fluid_amount[material]
                     );
                 } else{
                     addClumpCrushing(
-                        ores[material][ore_type].item, ores[material][ore_type].balling, 
-                        ores[material][ore_type].crushingByprod1, crushByprod1,
+                        oresm[ore_type].item, oresm[ore_type].balling, 
+                        oresm[ore_type].crushingByprod1, crushByprod1,
                         null, 0, drilling_fluid_amount[material]
                     );
                 }
@@ -4292,82 +4596,82 @@ for material in ores {
         
 
         //furnace
-        if (ores[material][ore_type] has "furnace"){
-            furnace.addRecipe(ores[material][ore_type].furnace, ores[material][ore_type].item);
+        if (oresm[ore_type] has "furnace"){
+            furnace.addRecipe(oresm[ore_type].furnace, oresm[ore_type].item);
         }
         //smelter
-        if (ores[material][ore_type] has "alloySlag2"){
+        if (oresm[ore_type] has "alloySlag2"){
             InductionSmelter.addRecipe(
-                ores[material][ore_type].alloySlag2, 
-                ores[material][ore_type].item, <thermalfoundation:material:865>, 
+                oresm[ore_type].alloySlag2, 
+                oresm[ore_type].item, <thermalfoundation:material:865>, 
                 2000 + 75 * drilling_fluid_amount[material], 
                 <thermalfoundation:material:864>, 75);
         }
-        if (ores[material][ore_type] has "alloySlag3"){
+        if (oresm[ore_type] has "alloySlag3"){
             InductionSmelter.addRecipe(
-                ores[material][ore_type].alloySlag3, 
-                ores[material][ore_type].item, <thermalfoundation:material:866>, 
+                oresm[ore_type].alloySlag3, 
+                oresm[ore_type].item, <thermalfoundation:material:866>, 
                 2000 + 45 * drilling_fluid_amount[material], 
                 <thermalfoundation:material:865>, 75);
         }
 
         //washing
-        if (ores[material][ore_type] has "wash"){
+        if (oresm[ore_type] has "wash"){
             Transposer.addFillRecipe(
-                ores[material][ore_type].wash, 
-                ores[material][ore_type].item, 
+                oresm[ore_type].wash, 
+                oresm[ore_type].item, 
                 <liquid:water> * 250, 1000 + 20 * drilling_fluid_amount[material]);
         }
 
         //drilling
-        if (ores[material][ore_type] has "drilling"){
+        if (oresm[ore_type] has "drilling"){
             Transposer.addFillRecipe(
-                ores[material][ore_type].drilling, 
-                ores[material][ore_type].item, 
+                oresm[ore_type].drilling, 
+                oresm[ore_type].item, 
                 <liquid:ore_drill> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]);
         }
         //making
-        if (ores[material][ore_type] has "making"){
+        if (oresm[ore_type] has "making"){
             Transposer.addFillRecipe(
-                ores[material][ore_type].making, 
-                ores[material][ore_type].item, 
+                oresm[ore_type].making, 
+                oresm[ore_type].item, 
                 <liquid:ore_make> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]
             );
         }
-        if (ores[material][ore_type] has "madeFrom"){
+        if (oresm[ore_type] has "madeFrom"){
             Transposer.addFillRecipe(
-                ores[material][ore_type].item,
-                ores[material][ore_type].madeFrom,  
+                oresm[ore_type].item,
+                oresm[ore_type].madeFrom,  
                 <liquid:ore_make> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]
             );
         }
-        if (ores[material][ore_type] has "made2x2"){
-            recipes.addShaped("op_" ~ material ~ ore_type ~ "_2x2_craft", ores[material][ore_type].item, [
-                [ores[material][ore_type].made2x2, ores[material][ore_type].made2x2],
-                [ores[material][ore_type].made2x2, ores[material][ore_type].made2x2]
+        if (oresm[ore_type] has "made2x2"){
+            recipes.addShaped("op_" ~ material ~ ore_type ~ "_2x2_craft", oresm[ore_type].item, [
+                [oresm[ore_type].made2x2, oresm[ore_type].made2x2],
+                [oresm[ore_type].made2x2, oresm[ore_type].made2x2]
             ]);
         }
-        if (ores[material][ore_type] has "madeWeak"){
-            recipes.addShaped("op_" ~ material ~ ore_type ~ "_Weak_craft", ores[material][ore_type].item, [
-                [ores[material][ore_type].madeWeak, ores[material][ore_type].madeWeak],
-                [ores[material][ore_type].madeWeak, <contenttweaker:weak_enhancer>]
+        if (oresm[ore_type] has "madeWeak"){
+            recipes.addShaped("op_" ~ material ~ ore_type ~ "_Weak_craft", oresm[ore_type].item, [
+                [oresm[ore_type].madeWeak, oresm[ore_type].madeWeak],
+                [oresm[ore_type].madeWeak, <contenttweaker:weak_enhancer>]
             ]);
         }
-        if (ores[material][ore_type] has "madeCreosolon"){
-            recipes.addShaped("op_" ~ material ~ ore_type ~ "_Creosolon_craft", ores[material][ore_type].item, [
-                [ores[material][ore_type].madeCreosolon, ores[material][ore_type].madeCreosolon],
-                [ores[material][ore_type].madeCreosolon, <contenttweaker:creosolon>]
+        if (oresm[ore_type] has "madeCreosolon"){
+            recipes.addShaped("op_" ~ material ~ ore_type ~ "_Creosolon_craft", oresm[ore_type].item, [
+                [oresm[ore_type].madeCreosolon, oresm[ore_type].madeCreosolon],
+                [oresm[ore_type].madeCreosolon, <contenttweaker:creosolon>]
             ]);
         }
 
         //cleaning
-        if (ores[material][ore_type] has "cleaning"){
-            enrichment.addRecipe(ores[material][ore_type].item, ores[material][ore_type].cleaning);
+        if (oresm[ore_type] has "cleaning"){
+            enrichment.addRecipe(oresm[ore_type].item, oresm[ore_type].cleaning);
         }
 
 
         //separating
-        if (ores[material][ore_type] has "separating1"){
+        if (oresm[ore_type] has "separating1"){
             var outputs as WeightedItemStack[] = [];
             var sep1 as int = 75;
             if (chances has material)
@@ -4375,74 +4679,327 @@ for material in ores {
                     if (chances[material][ore_type] has "separating1")
                         sep1 = chances[material][ore_type].separating1 as int;
                 
-            outputs += ores[material][ore_type].separating1 % sep1;
+            outputs += oresm[ore_type].separating1 % sep1;
             
-            if (ores[material][ore_type] has "separating2"){
+            if (oresm[ore_type] has "separating2"){
                 var sep2 as int = 15;
                 if (chances has material)
                     if (chances[material] has ore_type)
                         if (chances[material][ore_type] has "separating2")
                             sep2 = chances[material][ore_type].separating2 as int;
                 
-                outputs += ores[material][ore_type].separating2 % sep2;
+                outputs += oresm[ore_type].separating2 % sep2;
             }
-            if (ores[material][ore_type] has "separating3"){
+            if (oresm[ore_type] has "separating3"){
                 var sep3 as int = 3;
                 if (chances has material)
                     if (chances[material] has ore_type)
                         if (chances[material][ore_type] has "separating3")
                             sep3 = chances[material][ore_type].separating3 as int;
                     
-                outputs += ores[material][ore_type].separating3 % sep3;
+                outputs += oresm[ore_type].separating3 % sep3;
             }
-            if (ores[material][ore_type] has "separating4"){
+            if (oresm[ore_type] has "separating4"){
                 var sep4 as int = 10;
                 if (chances has material)
                     if (chances[material] has ore_type)
                         if (chances[material][ore_type] has "separating4")
                             sep4 = chances[material][ore_type].separating4 as int;
                         
-                outputs += ores[material][ore_type].separating4 % sep4;
+                outputs += oresm[ore_type].separating4 % sep4;
             }
 
-            Centrifuge.addRecipe(outputs, ores[material][ore_type].item, <liquid:ore_waste> * drilling_fluid_amount[material], 2000 + 50 * drilling_fluid_amount[material]);
+            Centrifuge.addRecipe(outputs, oresm[ore_type].item, <liquid:ore_waste> * drilling_fluid_amount[material], 2000 + 50 * drilling_fluid_amount[material]);
 
             
             mods.tconstruct.Casting.addBasinRecipe(
-                ores[material][ore_type].separating1, 
-                ores[material][ore_type].item,
+                oresm[ore_type].separating1, 
+                oresm[ore_type].item,
                 <liquid:water>, 1000,
                 true
             );
         }
 
         //seeds
-        if (ores[material][ore_type] has "seeds"){
+        if (oresm[ore_type] has "seeds"){
 
-            mods.enderio.AlloySmelter.addRecipe(ores[material][ore_type].seeds, 
+            mods.enderio.AlloySmelter.addRecipe(oresm[ore_type].seeds, 
                 [
-                    ores[material][ore_type].item,
+                    oresm[ore_type].item,
                     <exnihilocreatio:item_material:3>,
                     <harvestcraft:beeswaxitem>
                 ]
             );
             InductionSmelter.addRecipe(
-                ores[material][ore_type].potato, 
-                ores[material][ore_type].seeds, <thermalfoundation:fertilizer:2> * 3, 2000 + 50 * drilling_fluid_amount[material], 
-                ores[material][ore_type].potato, 50
+                oresm[ore_type].potato, 
+                oresm[ore_type].seeds, <thermalfoundation:fertilizer:2> * 3, 2000 + 50 * drilling_fluid_amount[material], 
+                oresm[ore_type].potato, 50
             );
             mods.thermalexpansion.Insolator.addRecipe(
-                ores[material][ore_type].potato * 2, 
-                ores[material][ore_type].seeds, <thermalfoundation:fertilizer:2> * 3, 10000 + 200 * drilling_fluid_amount[material], 
-                ores[material][ore_type].potato, 75, 1000
+                oresm[ore_type].potato * 2, 
+                oresm[ore_type].seeds, <thermalfoundation:fertilizer:2> * 3, 10000 + 200 * drilling_fluid_amount[material], 
+                oresm[ore_type].potato, 75, 1000
             );
         }
 
         //denorm
-        if (ores[material][ore_type] has "denorm"){
+        if (oresm[ore_type] has "denorm"){
             mods.mekanism.reaction.addRecipe(
-                ores[material][ore_type].item, <liquid:denorm> * drilling_fluid_amount[material], <gas:carmin> * 40, 
-                ores[material][ore_type].denorm, <gas:waste_gas> * 40, 1000, 20
+                oresm[ore_type].item, <liquid:denorm> * drilling_fluid_amount[material], <gas:carmin> * 40, 
+                oresm[ore_type].denorm, <gas:waste_gas> * 40, 1000, 20
+            );
+        }
+    }
+}
+for material,oresm in ores2 {
+
+    print("[IA] adding " + material + " ore");
+    for ore_type in oresm {
+        //crushing
+        if (oresm[ore_type] has "crushing"){
+            
+
+            if (oresm[ore_type] has "crushingByprod1"){
+                var crushByprod1 as int = 10;
+                if (chances has material)
+                    if (chances[material] has ore_type)
+                        if (chances[material][ore_type] has "crushingByprod1")
+                            crushByprod1 = chances[material][ore_type].crushingByprod1 as int;
+
+                if (oresm[ore_type] has "crushingByprod2"){
+                    var crushByprod2 as int = 3;
+                    if (chances has material)
+                        if (chances[material] has ore_type)
+                            if (chances[material][ore_type] has "crushingByprod2")
+                                crushByprod2 = chances[material][ore_type].crushingByprod2 as int;
+
+                    addCrushing12(
+                        oresm[ore_type].item, oresm[ore_type].crushing, 
+                        oresm[ore_type].crushingByprod1, crushByprod1, 
+                        oresm[ore_type].crushingByprod2, crushByprod2
+                    );
+                } else{
+                    addCrushing1(
+                        oresm[ore_type].item, oresm[ore_type].crushing, 
+                        oresm[ore_type].crushingByprod1, crushByprod1
+                    );
+                }
+            }else{
+                //no byprod
+                scripts.helper.addSimpleCrushingRecipe(oresm[ore_type].item, oresm[ore_type].crushing);
+            }
+
+        }
+
+        //crushing_no_balls
+        if (oresm[ore_type] has "crushing_no_balls"){
+            
+
+            if (oresm[ore_type] has "crushingByprod1"){
+                var crushByprod1 as int = 10;
+                if (chances has material)
+                    if (chances[material] has ore_type)
+                        if (chances[material][ore_type] has "crushingByprod1")
+                            crushByprod1 = chances[material][ore_type].crushingByprod1 as int;
+
+                addCrushingRecipe_no_eio(
+                    oresm[ore_type].item, oresm[ore_type].crushing_no_balls, 
+                    oresm[ore_type].crushingByprod1, crushByprod1
+                );
+                
+            }else{
+                //no byprod
+                scripts.helper.addSimpleCrushingRecipe(oresm[ore_type].item, oresm[ore_type].crushing);
+            }
+
+        }
+
+        //balling
+        if (oresm[ore_type] has "balling"){
+            if (oresm[ore_type] has "crushingByprod1"){
+                var crushByprod1 as int = 10;
+                if (chances has material)
+                    if (chances[material] has ore_type)
+                        if (chances[material][ore_type] has "crushingByprod1")
+                            crushByprod1 = chances[material][ore_type].crushingByprod1 as int;
+
+                if (oresm[ore_type] has "crushingByprod2"){
+                    var crushByprod2 as int = 4;
+                    if (chances has material)
+                        if (chances[material] has ore_type)
+                            if (chances[material][ore_type] has "crushingByprod2")
+                                crushByprod2 = chances[material][ore_type].crushingByprod2 as int;
+
+                    addClumpCrushing(
+                        oresm[ore_type].item, oresm[ore_type].balling, 
+                        oresm[ore_type].crushingByprod1, crushByprod1, 
+                        oresm[ore_type].crushingByprod2, crushByprod2,
+                        drilling_fluid_amount[material]
+                    );
+                } else{
+                    addClumpCrushing(
+                        oresm[ore_type].item, oresm[ore_type].balling, 
+                        oresm[ore_type].crushingByprod1, crushByprod1,
+                        null, 0, drilling_fluid_amount[material]
+                    );
+                }
+            }
+
+        }
+        
+
+        //furnace
+        if (oresm[ore_type] has "furnace"){
+            furnace.addRecipe(oresm[ore_type].furnace, oresm[ore_type].item);
+        }
+        //smelter
+        if (oresm[ore_type] has "alloySlag2"){
+            InductionSmelter.addRecipe(
+                oresm[ore_type].alloySlag2, 
+                oresm[ore_type].item, <thermalfoundation:material:865>, 
+                2000 + 75 * drilling_fluid_amount[material], 
+                <thermalfoundation:material:864>, 75);
+        }
+        if (oresm[ore_type] has "alloySlag3"){
+            InductionSmelter.addRecipe(
+                oresm[ore_type].alloySlag3, 
+                oresm[ore_type].item, <thermalfoundation:material:866>, 
+                2000 + 45 * drilling_fluid_amount[material], 
+                <thermalfoundation:material:865>, 75);
+        }
+
+        //washing
+        if (oresm[ore_type] has "wash"){
+            Transposer.addFillRecipe(
+                oresm[ore_type].wash, 
+                oresm[ore_type].item, 
+                <liquid:water> * 250, 1000 + 20 * drilling_fluid_amount[material]);
+        }
+
+        //drilling
+        if (oresm[ore_type] has "drilling"){
+            Transposer.addFillRecipe(
+                oresm[ore_type].drilling, 
+                oresm[ore_type].item, 
+                <liquid:ore_drill> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]);
+        }
+        //making
+        if (oresm[ore_type] has "making"){
+            Transposer.addFillRecipe(
+                oresm[ore_type].making, 
+                oresm[ore_type].item, 
+                <liquid:ore_make> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]
+            );
+        }
+        if (oresm[ore_type] has "madeFrom"){
+            Transposer.addFillRecipe(
+                oresm[ore_type].item,
+                oresm[ore_type].madeFrom,  
+                <liquid:ore_make> * drilling_fluid_amount[material], 1000 + 25 * drilling_fluid_amount[material]
+            );
+        }
+        if (oresm[ore_type] has "made2x2"){
+            recipes.addShaped("op_" ~ material ~ ore_type ~ "_2x2_craft", oresm[ore_type].item, [
+                [oresm[ore_type].made2x2, oresm[ore_type].made2x2],
+                [oresm[ore_type].made2x2, oresm[ore_type].made2x2]
+            ]);
+        }
+        if (oresm[ore_type] has "madeWeak"){
+            recipes.addShaped("op_" ~ material ~ ore_type ~ "_Weak_craft", oresm[ore_type].item, [
+                [oresm[ore_type].madeWeak, oresm[ore_type].madeWeak],
+                [oresm[ore_type].madeWeak, <contenttweaker:weak_enhancer>]
+            ]);
+        }
+        if (oresm[ore_type] has "madeCreosolon"){
+            recipes.addShaped("op_" ~ material ~ ore_type ~ "_Creosolon_craft", oresm[ore_type].item, [
+                [oresm[ore_type].madeCreosolon, oresm[ore_type].madeCreosolon],
+                [oresm[ore_type].madeCreosolon, <contenttweaker:creosolon>]
+            ]);
+        }
+
+        //cleaning
+        if (oresm[ore_type] has "cleaning"){
+            enrichment.addRecipe(oresm[ore_type].item, oresm[ore_type].cleaning);
+        }
+
+
+        //separating
+        if (oresm[ore_type] has "separating1"){
+            var outputs as WeightedItemStack[] = [];
+            var sep1 as int = 75;
+            if (chances has material)
+                if (chances[material] has ore_type)
+                    if (chances[material][ore_type] has "separating1")
+                        sep1 = chances[material][ore_type].separating1 as int;
+                
+            outputs += oresm[ore_type].separating1 % sep1;
+            
+            if (oresm[ore_type] has "separating2"){
+                var sep2 as int = 15;
+                if (chances has material)
+                    if (chances[material] has ore_type)
+                        if (chances[material][ore_type] has "separating2")
+                            sep2 = chances[material][ore_type].separating2 as int;
+                
+                outputs += oresm[ore_type].separating2 % sep2;
+            }
+            if (oresm[ore_type] has "separating3"){
+                var sep3 as int = 3;
+                if (chances has material)
+                    if (chances[material] has ore_type)
+                        if (chances[material][ore_type] has "separating3")
+                            sep3 = chances[material][ore_type].separating3 as int;
+                    
+                outputs += oresm[ore_type].separating3 % sep3;
+            }
+            if (oresm[ore_type] has "separating4"){
+                var sep4 as int = 10;
+                if (chances has material)
+                    if (chances[material] has ore_type)
+                        if (chances[material][ore_type] has "separating4")
+                            sep4 = chances[material][ore_type].separating4 as int;
+                        
+                outputs += oresm[ore_type].separating4 % sep4;
+            }
+
+            Centrifuge.addRecipe(outputs, oresm[ore_type].item, <liquid:ore_waste> * drilling_fluid_amount[material], 2000 + 50 * drilling_fluid_amount[material]);
+
+            
+            mods.tconstruct.Casting.addBasinRecipe(
+                oresm[ore_type].separating1, 
+                oresm[ore_type].item,
+                <liquid:water>, 1000,
+                true
+            );
+        }
+
+        //seeds
+        if (oresm[ore_type] has "seeds"){
+
+            mods.enderio.AlloySmelter.addRecipe(oresm[ore_type].seeds, 
+                [
+                    oresm[ore_type].item,
+                    <exnihilocreatio:item_material:3>,
+                    <harvestcraft:beeswaxitem>
+                ]
+            );
+            InductionSmelter.addRecipe(
+                oresm[ore_type].potato, 
+                oresm[ore_type].seeds, <thermalfoundation:fertilizer:2> * 3, 2000 + 50 * drilling_fluid_amount[material], 
+                oresm[ore_type].potato, 50
+            );
+            mods.thermalexpansion.Insolator.addRecipe(
+                oresm[ore_type].potato * 2, 
+                oresm[ore_type].seeds, <thermalfoundation:fertilizer:2> * 3, 10000 + 200 * drilling_fluid_amount[material], 
+                oresm[ore_type].potato, 75, 1000
+            );
+        }
+
+        //denorm
+        if (oresm[ore_type] has "denorm"){
+            mods.mekanism.reaction.addRecipe(
+                oresm[ore_type].item, <liquid:denorm> * drilling_fluid_amount[material], <gas:carmin> * 40, 
+                oresm[ore_type].denorm, <gas:waste_gas> * 40, 1000, 20
             );
         }
     }
@@ -4512,14 +5069,6 @@ mods.thermalexpansion.InductionSmelter.addRecipe(
 );
 
 
-//zinc
-
-/*
-<exnihilocreatio:item_ore_zinc:2>.addTooltip("This item is replaced. Put in crafting table to change to correct version.");
-recipes.addShapeless("ia_zinc_fix1", <contenttweaker:zinc_dust>, [<exnihilocreatio:item_ore_zinc:2>]);
-<exnihilocreatio:item_ore_zinc:3>.addTooltip("This item is replaced. Put in crafting table to change to correct version.");
-recipes.addShapeless("ia_zinc_fix2", <contenttweaker:zinc_ingot>, [<exnihilocreatio:item_ore_zinc:3>]);
-*/
 mods.jei.JEI.addItem(<densemetals:dense_zinc_ore>);
 
 //osmium
@@ -4574,12 +5123,7 @@ mods.prodigytech.rotarygrinder.addRecipe(<minecraft:hardened_clay>, <contenttwea
 <ore:gemPeridot>.remove(<projectred-core:resource_item:202>);
 <ore:gemSapphire>.remove(<projectred-core:resource_item:201>);
 
-//coal
-Transposer.addFillRecipe(
-    <minecraft:coal_ore> * 4, 
-    <densemetals:dense_coal_ore>, 
-    <liquid:ore_make> * 50, 4000
-);
+
 
 {//icestone
     <ore:dustIcestone>.add(<contenttweaker:ice_dust>);

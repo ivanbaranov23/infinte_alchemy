@@ -1,5 +1,6 @@
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.IngredientArrayBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
 
 
 {
@@ -19,6 +20,40 @@ import mods.modularmachinery.IngredientArrayBuilder;
     rec.addItemOutput(<contenttweaker:brain_matter_block2>);
 	rec.build();
 }
+
+
+mods.mekanism.reaction.addRecipe(
+    <harvestcraft:energydrinkitem>, <liquid:sentient_metal> * 144, <gas:smart> * 250, 
+    null, <gas:smart2> * 250, 900, 60
+);
+{var rec = RecipeBuilder.newBuilder("brain_matter", "sf_thinker", 20 * 30);
+	rec.addEnergyPerTickInput(500 * 1000 * 1000);
+
+    rec.addFluidInput(<liquid:circuit> * 50000);
+    rec.addGasInput(<gas:smart2> * 4000);
+
+    rec.addItemInput(<contenttweaker:reagent_awakening> * 4);
+    rec.addItemInput(<alchemistry:element:107> * 32);
+
+    rec.addCatalystInput(
+			<contenttweaker:animal_essence> * 4,
+			["Output fluid x2"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:fluid", "output", 2, 1, false
+			).build()]
+	).setChance(0.5);
+    rec.addCatalystInput(
+			<contenttweaker:inf_flower4>,
+			["Output fluid x2"],
+			[RecipeModifierBuilder.create(
+				"modularmachinery:fluid", "output", 2, 1, false
+			).build()]
+	).setChance(0.5);
+    
+    rec.addFluidOutput(<liquid:brain_matter> * 1000);
+	rec.build();
+}
+
 
 
 {

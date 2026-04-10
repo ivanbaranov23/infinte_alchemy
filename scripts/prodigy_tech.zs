@@ -526,6 +526,10 @@ solderer.removeAll();
 
 	rotarygrinder.addRecipe(<appliedenergistics2:material>, <appliedenergistics2:material:2>);
 
+	//lapis
+	rotarygrinder.removeRecipe(<minecraft:lapis_ore>);
+	rotarygrinder.removeRecipe(<ore:oreLapis>);
+
 	//iron
 	rotarygrinder.removeRecipe(<minecraft:iron_ingot>);
 	rotarygrinder.addRecipe(<minecraft:iron_ingot>, <thermalfoundation:material>);

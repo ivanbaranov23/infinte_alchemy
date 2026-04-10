@@ -89,6 +89,7 @@ static living_rock as IBlockState = <blockstate:botania:livingrock:variant=defau
 static living_wood as IBlockState = <blockstate:botania:livingwood:variant=default>;
 static living_metal as IBlockState = <blockstate:contenttweaker:living_steel_block>;
 
+ 
 
 var main_rec = AssemblyRecipe.create(function(container) {
         //container.machine.getInteger("sin");
@@ -195,6 +196,17 @@ Void_infuser.addRecipe(main_rec);
 
 
 print("[void] 3");
+
+scripts.jei.addJEIhint(
+    [<contenttweaker:living_steel_block>, <botania:tinypotato> * 1000], [], 
+    [<requious:void_infuser>], 
+    [<contenttweaker:death_metal_ore>, <contenttweaker:death_metal_dense_ore>]
+);
+scripts.jei.addJEIhint(
+    [<botania:livingrock>, <botania:tinypotato> * 4000], [], 
+    [<requious:void_infuser>], 
+    [<contenttweaker:death_metal_ore>, <contenttweaker:death_metal_dense_ore>]
+);
 
 scripts.content_machines.addAssemblerRecipe(
     [<requious:void_infuser>], 

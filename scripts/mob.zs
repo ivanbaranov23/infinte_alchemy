@@ -360,9 +360,9 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
 }
 {//twilight
     addEggHint("twilightforest:skeleton_druid", [<contenttweaker:druid_bone>]);
-    addEggHint("twilightforest:skeleton_druid", [<contenttweaker:lich_bone>.withLore(["Rare"])]);
+    //addEggHint("twilightforest:skeleton_druid", [<contenttweaker:lich_bone>.withLore(["Rare"])]);
     <entity:twilightforest:skeleton_druid>.addDrop(<contenttweaker:druid_bone> % 80);
-    <entity:twilightforest:skeleton_druid>.addDrop(<contenttweaker:lich_bone> % 3);
+    //<entity:twilightforest:skeleton_druid>.addDrop(<contenttweaker:lich_bone> % 3);
     
     {//lich
         addEggHint("twilightforest:lich", [<contenttweaker:lich_bone> * 4]);
@@ -388,6 +388,22 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
             <erebus:materials> % 25, <mod_lavacow:chitin> % 25
         ], <contenttweaker:bug_slimeball>, null, 2000
     );
+
+
+    //giant
+    scripts.recycler.addRecycle(
+        <twilightforest:giant_pickaxe>, [<twilightforest:giant_cobblestone> * 3, <twilightforest:giant_log> * 2]
+    );
+    scripts.recycler.addRecycle(
+        <twilightforest:giant_sword>, [<twilightforest:giant_cobblestone> * 2, <twilightforest:giant_log> * 1]
+    );
+
+    //troll
+    addRootsSummoning(<entity:twilightforest:troll>, [
+        <thermalfoundation:storage:3>,
+        <forge:bucketfilled>.withTag({FluidName: "mana", Amount: 1000}),
+        <harvestcraft:beanitem>
+    ]);
 
 
     //cube

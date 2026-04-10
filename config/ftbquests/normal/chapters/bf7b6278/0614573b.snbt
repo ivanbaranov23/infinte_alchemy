@@ -88,7 +88,7 @@
 			tag: {
 				TrophyColorRed: 171,
 				TrophyColorBlue: 171,
-				TrophyVariant: "neon",
+				TrophyName: "Research",
 				display: {
 					Name: "Research"
 				},
@@ -99,7 +99,7 @@
 					Count: 1,
 					Damage: 0s
 				},
-				TrophyName: "Research"
+				TrophyVariant: "neon"
 			}
 		}
 	},

@@ -1755,6 +1755,7 @@ knife.register();
     VanillaFactory.createFluid("worm_blood", Color.fromHex("7c9761")).register();
     VanillaFactory.createFluid("rot", Color.fromHex("4e2414")).register();
     VanillaFactory.createFluid("ender_blood", Color.fromHex("951ae0")).register();
+    VanillaFactory.createFluid("ghast_blood", Color.fromHex("c9a19e")).register();
     {//evil_blood
         var evil_blood = VanillaFactory.createFluid("evil_blood", Color.fromHex("ea6056"));
         evil_blood.material = <blockmaterial:water>;
@@ -2699,6 +2700,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     addWater("slimebone");
     VanillaFactory.createFluid("superorganic_green", Color.fromHex("14e939")).register();
+
+    VanillaFactory.createItem("trollsteinn").register();
+    VanillaFactory.createItem("mobbium").register();
 }
 {//actually addition
     VanillaFactory.createItem("blue_paste").register();
@@ -2818,6 +2822,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("plant_unit").register();
 
     VanillaFactory.createItem("undead_essence").register();
+    VanillaFactory.createItem("animal_essence").register();
+    VanillaFactory.createItem("insect_essence").register();
+    VanillaFactory.createItem("golem_essence").register();
     addWater("dragon_yolk");
 }
 {//extended carfting
@@ -3531,7 +3538,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("imaginium_element").register();
 }
-
+addWater("brain_matter");
 {//inf line
     VanillaFactory.createBlock("galastem", <blockmaterial:rock>).register();
     

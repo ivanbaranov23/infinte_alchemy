@@ -1,0 +1,11 @@
+{
+	x: 0.0d,
+	y: 4.0d,
+	tasks: [{
+		uid: "c58d9e1f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_soul"
+		}]
+	}]
+}

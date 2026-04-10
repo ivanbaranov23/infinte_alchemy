@@ -59,6 +59,13 @@ function addStaffFinish(staff as IItemStack){
     ]);
 }
 
+
+{//mb
+    recipes.addShaped("ia_staffwood_mb", <contenttweaker:staffwood_mb>, [
+        [<ore:dyeOrange>, <enderio:item_yeta_wrench>], 
+        [<contenttweaker:staffwood>, <ore:dyeOrange>]
+    ]);
+}
 {//clay
     addStaffHint(<contenttweaker:kaolin_clay_block>, <contenttweaker:staffwood_clay>, <contenttweaker:forest_clay_block>, true);
     addStaffHint(<minecraft:clay>, <contenttweaker:staffwood_clay>, <tconstruct:dried_clay>, true);

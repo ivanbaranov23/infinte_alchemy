@@ -1,0 +1,19 @@
+{
+	x: 1.0d,
+	y: -5.0d,
+	text: [
+		"Can be obtainted from milling capacitors or from mech mission."
+	],
+	tasks: [{
+		uid: "c9b1383c",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 73"
+		}]
+	}],
+	rewards: [{
+		uid: "788dc789",
+		type: "item",
+		item: "contenttweaker:tantalum_block"
+	}]
+}

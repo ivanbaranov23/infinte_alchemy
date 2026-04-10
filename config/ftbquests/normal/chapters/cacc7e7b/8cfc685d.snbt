@@ -1,0 +1,31 @@
+{
+	x: -2.5d,
+	y: 5.0d,
+	tasks: [{
+		uid: "70c80eab",
+		type: "item",
+		items: [{
+			item: "contenttweaker:luck_crystal_base"
+		}],
+		consume_items: true
+	},
+	{
+		uid: "edef74fb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 5L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "d85caa1f",
+		type: "item",
+		item: {
+			id: "contenttweaker:luck_crystal",
+			tag: {
+				luck: 1000
+			}
+		}
+	}]
+}

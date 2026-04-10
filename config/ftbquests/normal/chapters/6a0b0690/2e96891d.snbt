@@ -1,0 +1,27 @@
+{
+	title: "Grow some Steeleaf",
+	x: 2.0d,
+	y: 0.0d,
+	shape: "diamond",
+	text: [
+		""
+	],
+	dependencies: [
+		"3282f2a2"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0805c37c",
+		type: "item",
+		items: [{
+			item: "twilightforest:steeleaf_ingot"
+		}],
+		count: 256L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "2477f7c7",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

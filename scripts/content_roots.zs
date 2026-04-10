@@ -25,6 +25,8 @@ var staffwood = VanillaFactory.createItem("staffwood");
         return true;
     };
     staffwood.register();
+var staffwood_mb = VanillaFactory.createItem("staffwood_mb");
+    staffwood_mb.register();
 var staffwood_flower = VanillaFactory.createItem("staffwood_flower");
     staffwood_flower.maxStackSize = 1;
     staffwood_flower.maxDamage = 30;

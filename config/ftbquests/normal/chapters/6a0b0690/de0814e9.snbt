@@ -1,0 +1,27 @@
+{
+	title: "Grow some Excited Crops",
+	x: -2.0d,
+	y: 5.0d,
+	shape: "diamond",
+	text: [
+		""
+	],
+	dependencies: [
+		"a50cf0fc"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e94bf4a5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:excited_crop"
+		}],
+		count: 256L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "986b7202",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: -4.0d,
+	y: -6.0d,
+	text: [
+		"Used to auto assemble multiblocks"
+	],
+	dependencies: [
+		"5fe41c97"
+	],
+	tasks: [{
+		uid: "0d3c4f7e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:staffwood_mb"
+		}]
+	}]
+}

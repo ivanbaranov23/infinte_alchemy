@@ -1,0 +1,24 @@
+{
+	x: 4.0d,
+	y: 4.0d,
+	text: [
+		"Turns soul vials into loot and sometimes fluid. Has exclusive drops.",
+		"",
+		"Insert Luck Crystal to get more drops and fluid."
+	],
+	dependencies: [
+		"ee0081f6"
+	],
+	tasks: [{
+		uid: "3f1418ab",
+		type: "item",
+		items: [{
+			item: "requious:vial_processor"
+		}]
+	}],
+	rewards: [{
+		uid: "7b243b60",
+		type: "item",
+		item: "requious:vial_processor"
+	}]
+}

@@ -63,11 +63,7 @@ import mods.enderio.SagMill;
             0, 1.0, 1.0
         );
         mods.tconstruct.Melting.addRecipe(<liquid:zinc> * 288, <contenttweaker:zinc_ore>, 700);
-
-        <ore:dustZinc>.remove(<exnihilocreatio:item_ore_zinc:2>);
-        <ore:dustZinc>.add(<contenttweaker:zinc_dust>);
-        <ore:ingotZinc>.remove(<exnihilocreatio:item_ore_zinc:3>);
-        <ore:ingotZinc>.add(<contenttweaker:zinc_ingot>);
+        
 
         furnace.remove(<exnihilocreatio:item_ore_zinc:3>);
         recipes.remove(<exnihilocreatio:item_ore_zinc:3>);
@@ -226,7 +222,7 @@ import mods.enderio.SagMill;
     }
 
     {//netherite
-        <ore:oreNetherite>.remove(<netherite:ancientdebris>);
+        //<ore:oreNetherite>.remove(<netherite:ancientdebris>);
         <ore:dustNetherite>.add(<netherite:netheritescrap>);
         furnace.remove(<netherite:netheritescrap>);
         furnace.remove(<netherite:netheriteingot>);

@@ -193,6 +193,11 @@ for res in atomic_resources{
 }
 
 
+//crusher
+mods.jei.JEI.removeAndHide(<actuallyadditions:block_grinder>);
+mods.jei.JEI.removeAndHide(<actuallyadditions:block_grinder_double>);
+
+
 //drill
 recipes.remove(<actuallyadditions:item_misc:16>);
 recipes.addShaped("ia_aa_drill_core", <actuallyadditions:item_misc:16>, [

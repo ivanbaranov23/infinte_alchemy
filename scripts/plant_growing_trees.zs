@@ -8,10 +8,11 @@ import mods.modularmachinery.RecipeModifierBuilder;
 
 import mods.integrateddynamics.MechanicalSqueezer;
 
-
+static counter as int = 0;
 function addIBTrecipe(inputs as IItemStack[], outputs as WeightedItemStack[], catalyst as IItemStack[], time_sec as int, rf_tick as int){
-    var rec = RecipeBuilder.newBuilder("IBT_" ~ outputs[0].stack.name, "bonsai", time_sec * 20);
-
+    var rec = RecipeBuilder.newBuilder("IBT_" ~ counter, "bonsai", time_sec * 20);
+    counter += 1;
+    
     if (rf_tick != 0) {rec.addEnergyPerTickInput(rf_tick);}
 
     for o in outputs{
@@ -35,7 +36,7 @@ function addIBTrecipe(inputs as IItemStack[], outputs as WeightedItemStack[], ca
 			).build()]
 	).setChance(0.5);
 
-    rec.addFluidInput(<liquid:fertilizer> * 200);
+    rec.addFluidInput(<liquid:fertilizer> * 400);
     rec.build();
 }
 
@@ -209,6 +210,11 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
     addIBTrecipe([<industrialforegoing:fertilizer> * 32], 
         [<harvestcraft:pampaperbark> * 24, (<harvestcraft:paperbark_sapling> * 4) % 0], [<harvestcraft:paperbark_sapling>], 15, 2000
     );
+
+    addIBTrecipe([<industrialforegoing:fertilizer> * 12, <botania:fertilizer> * 8, <twilightforest:magic_beans>], 
+        [<twilightforest:huge_stalk> * 64], 
+        [<twilightforest:uberous_soil>], 20, 51200
+    );
 }
 //mine
 {//revived
@@ -217,6 +223,7 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
             <industrialforegoing:fertilizer> * 128, 
             <biomesoplenty:log_0:4> * 64, 
             <botania:fertilizer> * 64,
+            <twilightforest:huge_stalk> * 16,
             <bloodmagic:component:3> * 4
         ], 
         [<contenttweaker:revived_log> * 4, <contenttweaker:revived_bush> % 0], [<contenttweaker:revived_bush>], 20, 40960
@@ -226,6 +233,7 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
             <industrialforegoing:fertilizer> * 128, 
             <biomesoplenty:log_0:4> * 64, 
             <botania:fertilizer> * 64,
+            <twilightforest:huge_stalk> * 16,
             <bloodmagic:component:5>
         ], 
         [<contenttweaker:revived_log> * 8, <contenttweaker:revived_bush> % 0], [<contenttweaker:revived_bush>], 20, 10240
@@ -235,6 +243,7 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
             <industrialforegoing:fertilizer> * 128, 
             <biomesoplenty:log_0:4> * 64, 
             <botania:fertilizer> * 64,
+            <twilightforest:huge_stalk> * 16,
             <contenttweaker:reagent_wood>
         ], 
         [<contenttweaker:revived_log> * 24, <contenttweaker:revived_bush> % 5], [<contenttweaker:revived_bush>], 20, 10240

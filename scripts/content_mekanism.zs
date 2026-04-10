@@ -102,6 +102,7 @@ addGas("bastnasite_slurry", "d28200", false);
 addGas("amethesting", "8e3885", true);
 
 addGas("smart", "22ffff", false);
+addGas("smart2", "96d766", false);
 
 {
     var explosion_stone_glue = GasFactory.createGas("explosion_stone_glue");
