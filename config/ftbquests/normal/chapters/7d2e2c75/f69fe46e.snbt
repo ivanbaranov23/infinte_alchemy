@@ -1,7 +1,7 @@
 {
 	title: "To the twilight forest chapter.",
-	x: 9.0d,
-	y: 1.0d,
+	x: 9.5d,
+	y: 1.5d,
 	shape: "square",
 	text: [
 		"Gate for Twilight Forest"
@@ -9,6 +9,7 @@
 	dependencies: [
 		"30e63d05"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "3f0bf2db",
 		type: "checkmark",

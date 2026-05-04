@@ -294,6 +294,9 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
     scripts.helper.addSawRecipe(<contenttweaker:iron_apple>, <exnihilocreatio:item_ore_iron> * 4);
     
 }
+{//chorus
+    recipes.addShapeless("chorus_flower", <minecraft:chorus_flower>, [<minecraft:chorus_fruit>, <contenttweaker:creosolon>, <roots:petals>]);
+}
 {//mushroom glowshroom
     scripts.helper.addSawRecipe(<minecraft:brown_mushroom_block>, <minecraft:brown_mushroom> * 4);
     scripts.helper.addSawRecipe(<minecraft:red_mushroom_block>, <minecraft:red_mushroom> * 4);

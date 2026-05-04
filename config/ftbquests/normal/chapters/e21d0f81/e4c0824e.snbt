@@ -1,7 +1,7 @@
 {
 	title: "Tool Cheese",
-	x: 6.0d,
-	y: 1.0d,
+	x: 6.5d,
+	y: 1.5d,
 	text: [
 		"Cheese tools for infinite durability"
 	],

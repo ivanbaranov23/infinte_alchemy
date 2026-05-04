@@ -3,7 +3,7 @@ import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipeModifierBuilder;
 
 {//lavas
-	mods.immersivepetroleum.Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:obsidian> * 60, <liquid:iron> * 12, <liquid:gold> * 4, <liquid:lava_residue> * 4], 
 		[<chisel:basalt2:7>, <deepmoblearning:soot_covered_redstone>], 
 		<liquid:lava> * 100, 1200, 50, 

@@ -1,0 +1,23 @@
+{
+	x: 13.0d,
+	y: -4.0d,
+	shape: "diamond",
+	dependencies: [
+		"dfd9e26b"
+	],
+	tasks: [{
+		uid: "205ae965",
+		type: "item",
+		items: [{
+			item: "botania:manaresource 1 4"
+		}],
+		count: 64L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "f05bb4e0",
+		type: "item",
+		item: "contenttweaker:quest_coin",
+		count: 3
+	}]
+}

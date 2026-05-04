@@ -6,7 +6,7 @@ import mods.thermalexpansion.Imbuer as TEImbuer;
 import mods.thermalexpansion.Transposer;
 
 //todo remove this file
-
+//like totally?
 
 function add2x2Recipe(brick as IItemStack, block as IItemStack){
     recipes.addShaped(
@@ -194,6 +194,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:ice_shard>, <contenttweaker:ice_shard_block>);
     
     add3x3Recipe(<contenttweaker:wormium_ingot>, <contenttweaker:wormium_block>);
+    add3x3Recipe(<contenttweaker:titanworm_steel_ingot>, <contenttweaker:titanworm_steel_block>);
     
     add3x3Recipe(<contenttweaker:caelumite_ingot>, <contenttweaker:caelumite_block>);
     

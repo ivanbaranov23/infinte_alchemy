@@ -1,0 +1,14 @@
+{
+	x: 23.5d,
+	y: 2.0d,
+	dependencies: [
+		"72459b4d"
+	],
+	tasks: [{
+		uid: "285dfa95",
+		type: "item",
+		items: [{
+			item: "contenttweaker:onyx_unit"
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: -3.0d,
+	y: 3.0d,
+	text: [
+		"Can be automated with a hopper and a dispencer holding the pestel"
+	],
+	dependencies: [
+		"ed841e3a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "fe695060",
+		type: "item",
+		items: [{
+			item: "roots:mortar"
+		}]
+	}]
+}

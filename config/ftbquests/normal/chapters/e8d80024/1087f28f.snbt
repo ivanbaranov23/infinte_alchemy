@@ -1,6 +1,6 @@
 {
-	x: 3.0d,
-	y: 3.0d,
+	x: 2.0d,
+	y: -1.0d,
 	text: [
 		"Costs 125 mana. Each next tier, if made directly, costs 8x the previous tier."
 	],

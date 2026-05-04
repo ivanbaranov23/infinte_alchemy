@@ -3034,6 +3034,27 @@ static ores2 as IItemStack[string][string][string] = {
             crushingByprod2: <contenttweaker:bedrockium_small_chunk>,
         }
     },
+    voidspar: {
+        ore: {
+            item: <moretcon:orevoidspar>,
+
+            crushing_no_balls: <moretcon:gemvoidspar> * 2,
+            balling: <moretcon:gemvoidspar> * 2,
+            crushingByprod1: <contenttweaker:fluospar_dust>,
+            crushingByprod2: <moretcon:gemvoidspar>,
+            drilling: <moretcon:gemvoidspar> * 4,
+            cleaning: <moretcon:gemvoidspar> * 4
+        }
+    },
+    igniglomerate: {
+        ore: {
+            item: <moretcon:oreigniglomerate>,
+            crushing_no_balls: <moretcon:gemigniglomerate>,
+            balling: <moretcon:gemigniglomerate>,
+            crushingByprod1: <netherite:netheritescrap>,
+            crushingByprod2: <moretcon:gemigniglomerate>,
+        }
+    },
 
     //other
     coal: {
@@ -3064,6 +3085,29 @@ static ores2 as IItemStack[string][string][string] = {
 
             denorm: <minecraft:coal_ore>
         },
+        nether: {
+            item: <netherendingores:ore_nether_vanilla>,
+
+            crushing_no_balls: <thermalfoundation:material:768> * 6,
+            balling: <thermalfoundation:material:768> * 6,
+            crushingByprod1: <thermalfoundation:material:771>,
+            crushingByprod2: <mekanism:otherdust>,
+            drilling: <minecraft:coal> * 8,
+
+            denorm: <minecraft:coal_ore> * 2
+        },
+        end: {
+            item: <netherendingores:ore_end_vanilla>,
+
+            crushing_no_balls: <thermalfoundation:material:768> * 8,
+            balling: <thermalfoundation:material:768> * 8,
+            crushingByprod1: <thermalfoundation:material:771>,
+            crushingByprod2: <mekanism:otherdust> * 2,
+            drilling: <minecraft:coal> * 10,
+
+            denorm: <minecraft:coal_ore> * 3
+        },
+
         dense: {
             item: <densemetals:dense_coal_ore>,
             crushing: <minecraft:coal_ore> * 3,
@@ -4014,6 +4058,10 @@ val to_clean as IItemStack[][string] = {
         <moretcon:oreebonite>,
         <moretcon:oreechostone>,
         <moretcon:oreelectarite>,
+        <moretcon:oreirradium>,
+        <moretcon:orevoidspar>,
+        <moretcon:oreigniglomerate>,
+        <moretcon:oreetherstone>,
 
         <contenttweaker:chrome_ore>
     ],
@@ -4025,6 +4073,7 @@ val to_clean as IItemStack[][string] = {
         <moretcon:orehallowsite>,
         <moretcon:orezracohlium>,
         <moretcon:oreebonite>,
+        <moretcon:oreirradium>,
 
         <taiga:karmesine_ore>,
         <taiga:ovium_ore>,
@@ -4067,6 +4116,10 @@ val to_clean as IItemStack[][string] = {
         <moretcon:oreebonite>,
         <moretcon:oreechostone>,
         <moretcon:oreelectarite>,
+        <moretcon:oreirradium>,
+        <moretcon:orevoidspar>,
+        <moretcon:oreigniglomerate>,
+        <moretcon:oreetherstone>,
 
         <taiga:karmesine_ore>,
         <taiga:ovium_ore>,
@@ -4341,6 +4394,8 @@ val drilling_fluid_amount as int[string] = {
     erythynite: 500,
     irradium: 400,
     ebonite: 400,
+    voidspar: 500,
+    igniglomerate: 1000,
 
     coal: 25,
     redstone: 45,
@@ -4411,7 +4466,7 @@ for oredic in [
     //<ore:oreLifeEssence>,
     //<ore:oreEnethyst>,
     //<ore:oreMoissanite>,
-    <ore:oreStoneleaf>,
+    //<ore:oreStoneleaf>,
     <ore:oreSpaceice>,
     //<ore:oreCaelumite>,
     //<ore:oreNetherite>,

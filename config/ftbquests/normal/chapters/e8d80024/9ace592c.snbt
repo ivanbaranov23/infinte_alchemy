@@ -1,0 +1,21 @@
+{
+	title: "Lots of mana",
+	x: 3.0d,
+	y: 3.0d,
+	text: [
+		"You'll need a lot of mana. And a lot of mana pools to store all of it. But you can research for a better mana pools or buy one from the shop."
+	],
+	dependencies: [
+		"7bd6ebcf"
+	],
+	tasks: [{
+		uid: "aa30bc45",
+		type: "checkmark",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "mana"
+			}
+		}
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: 3.0d,
+	y: 5.0d,
+	shape: "diamond",
+	dependencies: [
+		"5ef92e51"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9ecd34d8",
+		type: "botania_mana",
+		value: 100000000L,
+		show_numbers: true
+	}],
+	rewards: [{
+		uid: "69a0a74b",
+		type: "item",
+		item: "contenttweaker:quest_coin",
+		count: 3
+	}]
+}

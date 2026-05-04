@@ -45,6 +45,15 @@ import scripts.recycler.addRecycle;
 		<extrautils2:machine>, <prodigytech:circuit_refined> * 2, <prodigytech:heat_capacitor_1> * 2, <prodigytech:ferramic_block> * 4
 	]);
 }
+{recipes.addShaped("mm_deepslate_barrel_controller", <modularmachinery:deepslate_barrel_controller>, [
+		[<caves_n_cliffs:deepslate_tiles>, <exnihilocreatio:block_barrel1>, <caves_n_cliffs:deepslate_tiles>], 
+		[<projectred-core:resource_item>, <immersiveengineering:metal_decoration0:5>, <projectred-core:resource_item>], 
+		[<caves_n_cliffs:deepslate_tiles>, <exnihilocreatio:block_barrel1>, <caves_n_cliffs:deepslate_tiles>]
+	]);
+	addRecycle(<modularmachinery:deepslate_barrel_controller>, [
+		<immersiveengineering:metal_decoration0:5>, <projectred-core:resource_item> * 2, <exnihilocreatio:block_barrel1> * 2, <caves_n_cliffs:deepslate_tiles> * 4
+	]);
+}
 
 //XU
 recipes.addShaped("mm_research_station_controller", <modularmachinery:research_station_controller>, [
@@ -103,6 +112,16 @@ addRecycle(<modularmachinery:fish_tank_controller>, [
 ]);
 
 //mek
+recipes.addShaped("mm_compact_distill_controller", <modularmachinery:compact_distill_controller>, [
+	[<immersiveengineering:metal_decoration0:5>, <contenttweaker:distill_sheetmetal>, <immersiveengineering:metal_decoration0:5>], 
+	[<thermalexpansion:augment:129>, <mekanism:basicblock:8>, <thermalexpansion:augment:129>], 
+	[<immersiveengineering:metal_decoration0:5>, <contenttweaker:distill_sheetmetal>, <immersiveengineering:metal_decoration0:5>]
+]);
+addRecycle(<modularmachinery:compact_distill_controller>, [
+	<mekanism:basicblock:8>, <thermalexpansion:augment:129> * 2, 
+	<immersiveengineering:metal_decoration0:5> * 4, <contenttweaker:distill_sheetmetal> * 2
+]);
+
 
 recipes.addShaped("mm_carmine_reactor_controller", <modularmachinery:carmine_reactor_controller>, [
 	[<contenttweaker:carminium_ingot>, <redstonearsenal:material:96>, <contenttweaker:carminium_ingot>], 

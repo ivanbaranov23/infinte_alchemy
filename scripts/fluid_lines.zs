@@ -12,7 +12,7 @@ import mods.thermalexpansion.Crucible;
 import mods.thermalexpansion.Refinery;
 //Refinery.addRecipe(output, outputItem, input, energy);
 
-import mods.immersivepetroleum.Distillation;
+//import mods.immersivepetroleum.Distillation;
 //Distillation.addRecipe(ILiquidStack[] fluidOutputs, IItemStack[] itemOutputs, ILiquidStack fluidInput, int energy, int time, float[] chance)
 
 import mods.immersiveengineering.Mixer as IEMixer;
@@ -50,7 +50,7 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 		);
 	}
 
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:diesel> * 50, <liquid:kerosene> * 75, <liquid:gasoline> * 25, <liquid:refined_oil> * 50], 
 		[<thermalfoundation:material:833>], 
 		<liquid:crude_oil> * 150, 3 * 20 * 128, 3 * 20, 
@@ -75,7 +75,7 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 				<liquid:tar> * 100
 			], 10, 1000
 		);
-		Distillation.addRecipe(
+		scripts.compact_distill.addCompactDistill(
 			[<liquid:kerosene> * 150, <liquid:ethylbenzene> * 20, <liquid:lubricant> * 30],
 			[],
 			<liquid:skyroot> * 200, 3*20*128, 3*20,
@@ -84,14 +84,14 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 	}
 
 	//coal
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:refined_oil> * 40, <liquid:naphthalene> * 10, <liquid:tar> * 40],
 		[],
 		<liquid:coal> * 100, 20 * 250, 20,
 		[]
 	);
 	//naphtha
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:naphthalene> * 50, <liquid:refined_fuel> * 50],
 		[<thermalfoundation:material:771>],
 		<liquid:refined_oil> * 100, 20 * 250, 20,
@@ -129,7 +129,7 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 		[], [<liquid:fish_oil>]
 	);
 
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:biodiesel> * 40, <liquid:lubricant> * 5], 
 		[], 
 		<liquid:fish_oil> * 100, 20 * 128, 20, 
@@ -138,7 +138,7 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 }
 
 
-Distillation.addRecipe(
+scripts.compact_distill.addCompactDistill(
 	[<liquid:pure_water> * 40], 
 	[<actuallyadditions:item_dust:7>, <exnihilocreatio:item_material:3>], 
 	<liquid:witchwater> * 100, 3 * 20 * 128, 3 * 20, 
@@ -201,7 +201,7 @@ Distillation.addRecipe(
 }
 
 //water -> pure water
-Distillation.addRecipe(
+scripts.compact_distill.addCompactDistill(
 	[<liquid:pure_water> * 300, <liquid:sludge> * 10], 
 	[<mekanism:dirtydust:5>], 
 	<liquid:water> * 400, 3 * 20 * 16, 3 * 20, 
@@ -234,7 +234,7 @@ Refinery.addRecipe(<liquid:pure_water> * 3000, <mekanism:dirtydust:5> % 1, <liqu
 
 	Transposer.addExtractRecipe(<liquid:sea_water> * 2000, <minecraft:sea_lantern>, 3000, <biomesoplenty:gem:6> % 10);
 
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:pure_water> * 75, <liquid:seaweed_rich_water> * 15], 
 		[<mekanism:salt>, <mekores:mekanismore:3>, <projectred-core:resource_item:105>, <minecraft:prismarine_shard>], 
 		<liquid:sea_water> * 100, 1200, 30, 
@@ -249,7 +249,7 @@ Refinery.addRecipe(<liquid:pure_water> * 3000, <mekanism:dirtydust:5> % 1, <liqu
 	);
 	{
 
-		Distillation.addRecipe(
+		scripts.compact_distill.addCompactDistill(
 			[<liquid:methane> * 10, <liquid:seaweed_rich_water> * 15], 
 			[
 				<minecraft:fish>,
@@ -315,7 +315,7 @@ Refinery.addRecipe(<liquid:pure_water> * 3000, <mekanism:dirtydust:5> % 1, <liqu
 }
 
 //heavy water -> water
-Distillation.addRecipe(
+scripts.compact_distill.addCompactDistill(
 	[<liquid:water> * 300], 
 	[<mekanism:dirtydust:6>], 
 	<liquid:heavywater> * 400, 20 * 40, 20, 
@@ -410,7 +410,7 @@ TEImbuer.addRecipe(<liquid:sterile_water> * (500), <contenttweaker:soap>, <liqui
 		64, 2*20
 	);
 
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:malachite_solution> * 45, <liquid:witchwater> * 25], 
 		[<harvestcraft:cornseeditem>, <exnihilocreatio:item_ore_yellorium>, <exnihilocreatio:item_ore_zinc>, <exnihilocreatio:item_ore_nickel>], 
 		<liquid:corn_solution> * 150, 1200, 20, 
@@ -422,7 +422,7 @@ TEImbuer.addRecipe(<liquid:sterile_water> * (500), <contenttweaker:soap>, <liqui
 		256, 10*20
 	);
 
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:malachite_solution> * 75, <liquid:witchwater> * 45], 
 		[<exnihilocreatio:item_ore_iridium>, <exnihilocreatio:item_ore_yellorium>, <exnihilocreatio:item_ore_zinc>, <exnihilocreatio:item_ore_nickel>], 
 		<liquid:rich_corn_solution> * 150, 1200, 60, 
@@ -501,7 +501,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 
 {//steam
 	{//dense
-		Distillation.addRecipe(
+		scripts.compact_distill.addCompactDistill(
 			[<liquid:pure_water> * 100, <liquid:dense_steam> * 200, <liquid:steam> * 100], 
 			[], 
 			<liquid:steam> * 1000, 20 * 1000, 20, 
@@ -608,7 +608,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 		[<contenttweaker:ore_catalyst>], [1.0], 
 		5000
 	);
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:iron> * 50, <liquid:copper> * 30, <liquid:tin> * 20, <liquid:nickel> * 30, <liquid:zinc> * 25, <liquid:aluminum> * 35, <liquid:ore_waste1> * 100], 
 		[<contenttweaker:soot>, <thermalfoundation:material:768>, <mekanism:salt>, <thermalfoundation:material:771>], 
 		<liquid:ore_waste_ref1> * 400, 20 * 128, 20, 
@@ -621,7 +621,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 		[<contenttweaker:ore_catalyst> * 2], [1.0], 
 		5000
 	);
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:gold> * 50, <liquid:silver> * 35, <liquid:lead> * 30, <liquid:osmium> * 35, <liquid:cobalt> * 25, <liquid:ardite> * 15, <liquid:ore_waste2> * 100], 
 		[<contenttweaker:soot>, <enderio:item_material:32>, <appliedenergistics2:material:3>, <actuallyadditions:item_dust:7>], 
 		<liquid:ore_waste_ref2> * 400, 20 * 256, 20, 
@@ -634,7 +634,7 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 		[<contenttweaker:ore_catalyst> * 4], [1.0], 
 		5000
 	);
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:platinum> * 50, <liquid:iridium> * 35, <liquid:uranium> * 25, <liquid:yellorium> * 25, <liquid:titanium> * 30, <liquid:tungsten> * 25, <liquid:ore_waste3> * 100], 
 		[<contenttweaker:soot>, <taiga:meteorite_dust>, <taiga:dilithium_dust>], 
 		<liquid:ore_waste_ref3> * 400, 20 * 1024, 20, 
@@ -753,7 +753,7 @@ function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as in
 		<liquid:ow_air> * 1000, 200, 1000, 1000,
 		1, 512, 0
 	);
-	Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:nitrogen> * 300, <liquid:liquidoxygen> * 60, <liquid:noble_gases> * 40], 
 		[], 
 		<liquid:ow_air> * 400, 3 * 20 * 16, 3 * 20, 
@@ -764,7 +764,7 @@ function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as in
 			<liquid:erebus_air> * 1000, 200, 1000, 1000,
 			1, 512, 66
 		);
-		Distillation.addRecipe(
+		scripts.compact_distill.addCompactDistill(
 			[<liquid:liquidoxygen> * 160, <liquid:methane> * 100, <liquid:pheromones> * 100, <liquid:bugs> * 10], 
 			[<erebus:materials:28>, <erebus:erebus_food>], 
 			<liquid:erebus_air> * 400, 3 * 20 * 64, 3 * 20, 
@@ -776,7 +776,7 @@ function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as in
 			<liquid:atum_air> * 1000, 200, 1000, 1000,
 			1, 1024, 17
 		);
-		Distillation.addRecipe(
+		scripts.compact_distill.addCompactDistill(
 			[<liquid:liquidoxygen> * 60, <liquid:sand> * 60, <liquid:noble_gases> * 50, <liquid:air_gold> * 30], 
 			[<atum:sand>, <contenttweaker:desert_pollen>], 
 			<liquid:atum_air> * 200, 2 * 20 * 32, 2 * 20, 
@@ -789,7 +789,7 @@ function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as in
 			<liquid:nether_air> * 1000, 1200, 1000, 990,
 			1, 1024, -1
 		);
-		Distillation.addRecipe(
+		scripts.compact_distill.addCompactDistill(
 			[<liquid:liquidsulfurdioxide> * 100, <liquid:lava_residue> * 40, <liquid:poison> * 20, <liquid:glowstone> * 20], 
 			[<natura:clouds:3> * 2, <natura:clouds:2>, <taiga:tiberium_crystal>, <enderio:block_holy_fog>], 
 			<liquid:nether_air> * 200, 1200, 50, 
@@ -805,7 +805,7 @@ function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as in
 			<liquid:aether_air> * 1000, 800, 2000, 1600,
 			1, 4096, 4
 		);
-		Distillation.addRecipe(
+		scripts.compact_distill.addCompactDistill(
 			[<liquid:noble_gases> * 120, <liquid:holy_water> * 20, <liquid:skyroot> * 30, <liquid:mana> * 10], 
 			[<contenttweaker:aether_bug>, <contenttweaker:ambrosium_dust>], 
 			<liquid:aether_air> * 200, 3 * 20 * 64, 3 * 20, 
@@ -817,7 +817,7 @@ function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as in
 			<liquid:end_air> * 1000, 500, 4000, 3000,
 			2, 5120, 1
 		);
-		Distillation.addRecipe(
+		scripts.compact_distill.addCompactDistill(
 			[<liquid:ender> * 120, <liquid:liquidchorus> * 30, <liquid:mana> * 20, <liquid:dragon_spit> * 5], 
 			[<enderio:item_material:28>], 
 			<liquid:end_air> * 200, 3 * 20 * 64, 3 * 20, 

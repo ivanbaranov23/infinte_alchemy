@@ -1,0 +1,22 @@
+{
+	x: 9.0d,
+	y: -3.0d,
+	text: [
+		"Can be used for better mech target recs"
+	],
+	dependencies: [
+		"3cb0c8e0"
+	],
+	tasks: [{
+		uid: "7253c19f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:titanworm_steel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "511be239",
+		type: "item",
+		item: "contenttweaker:titanworm_steel_block"
+	}]
+}

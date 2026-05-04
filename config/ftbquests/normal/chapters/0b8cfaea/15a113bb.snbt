@@ -26,5 +26,11 @@
 				}
 			}
 		}
+	},
+	{
+		uid: "428739dc",
+		type: "item",
+		item: "minecraft:reeds",
+		count: 4
 	}]
 }

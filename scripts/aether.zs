@@ -236,7 +236,7 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 
 
 	mods.thermalexpansion.Refinery.addRecipePotion(<liquid:ambrosium_slury_clean> * 100, <liquid:ambrosium_slury> * 100, 10000);
-	mods.immersivepetroleum.Distillation.addRecipe(
+	scripts.compact_distill.addCompactDistill(
 		[<liquid:ambrosium_slury_clean> * 100], 
 		[<contenttweaker:ambrosium_thing>], 
 		<liquid:ambrosium_slury> * 100, 

@@ -1,6 +1,7 @@
 {
 	title: "ch 5+++: AE2 and Integrated Dynamics",
 	icon: "contenttweaker:fluix_steel_ingot",
+	disable_toast: true,
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: ""

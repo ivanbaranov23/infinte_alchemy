@@ -111,6 +111,9 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
     <ore:oreArdite>.removeItems([<tconstruct:ore:1>, <exnihilocreatio:item_ore_ardite:1>, <netherendingores:ore_other_1:3>]);
     <ore:oreNetherite>.add(<netherite:ancientdebris>);
 
+    <ore:oreHellCoal>.add(<netherendingores:ore_nether_vanilla>);
+    <ore:oreHellRedstone>.add(<netherendingores:ore_nether_vanilla:6>);
+
     <ore:oreHellRuby>.add(<netherendingores:ore_nether_modded_2:1>);
 
     <ore:oreHellZanite>.add(<netherendingores:ore_nether_modded_2:7>);
@@ -126,6 +129,8 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
     //end
     <ore:oreTheendUranium>.add(<netherendingores:ore_end_modded_1:12>);
+    <ore:oreTheendCoal>.add(<netherendingores:ore_end_vanilla>);
+    <ore:oreTheendRedstone>.add(<netherendingores:ore_end_vanilla:6>);
     <ore:oreTheendEmerald>.add(<netherendingores:ore_end_vanilla:2>);
     <ore:oreTheendPeridot>.add(<netherendingores:ore_end_modded_2:3>);
     <ore:oreTheendElectrotine>.add(<netherendingores:ore_end_modded_2:4>);
@@ -197,6 +202,8 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
         <ore:denseOreRedstone>.add(<densemetals:dense_redstone_ore>);
         <ore:denseOreElectrotine>.add(<contenttweaker:electrotine_ore_dense>);
 
+        <ore:denseOreEmerald>.add(<densemetals:dense_emerald_ore>);
+
 
         <ore:denseOreHellLead>.add(<densemetals:dense_nether_lead_ore>);
     }
@@ -206,10 +213,15 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
     <ore:oreOxideNickel>.add(<immersiveengineering:ore:4>);
 
+    <ore:oreStoneleaf>.add(<contenttweaker:stoneleaf_ore>);
+
     <ore:oreLifeEssence>.add(<contenttweaker:life_essence_ore>);
+    <ore:oreVitriumTerrasteel>.add(<contenttweaker:terrasteel_ore>);
 
     <ore:oreSpaceSilver>.add(<contenttweaker:argyrodite_ore>);
     <ore:oreMoissanite>.add(<contenttweaker:moissanite_ore>);
+
+    <ore:oreBeryllium>.add(<contenttweaker:beryllium_ore>);
 
     <ore:oreOverworldGalena>.add(<immersiveengineering:ore:2>);
 }

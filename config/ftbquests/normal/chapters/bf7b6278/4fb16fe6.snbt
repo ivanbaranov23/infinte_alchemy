@@ -1,0 +1,18 @@
+{
+	x: 13.0d,
+	y: -2.0d,
+	text: [
+		"For mass making stones."
+	],
+	dependencies: [
+		"07158492"
+	],
+	optional: true,
+	tasks: [{
+		uid: "3637ca88",
+		type: "item",
+		items: [{
+			item: "modularmachinery:deepslate_barrel_controller"
+		}]
+	}]
+}

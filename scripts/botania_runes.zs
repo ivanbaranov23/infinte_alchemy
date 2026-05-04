@@ -9,6 +9,10 @@ import mods.botania.RuneAltar;
 for rune_id in 0 to 16{ 
     RuneAltar.removeRecipe(<botania:rune>.definition.makeStack(rune_id));
 }
+RuneAltar.removeRecipe(<botaniverse:morerune>);
+RuneAltar.removeRecipe(<botaniverse:morerune:1>);
+RuneAltar.removeRecipe(<botaniverse:morerune:2>);
+RuneAltar.removeRecipe(<botaniverse:morerune:3>);
 
 static rune_bases as IItemStack[] = [
     <contenttweaker:rune_base>,
@@ -275,7 +279,7 @@ function addRuneRecipes(rune as IItemStack, cracked as IItemStack, inps as IIngr
             <mekanism:machineblock3:1>,
             <enderio:item_material:41>,
             <extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity_custom:57>, <botania:quartz:6>, <contenttweaker:petals3>,
-            <botania:rune:2>
+            <botania:rune:3>
     ], 1, 25000);
     addRuneRecipes(//autumn
         <botania:rune:6>, <contenttweaker:rune_autumn_cracked>, [
@@ -293,7 +297,7 @@ function addRuneRecipes(rune as IItemStack, cracked as IItemStack, inps as IIngr
             <mekanism:machineblock2:8>,
             <contenttweaker:cooling_system>,
             <extendedcrafting:singularity:34>, <extendedcrafting:singularity_custom:14>, <botania:quartz:1>, <contenttweaker:petals5>,
-            <botania:rune:2>
+            <botania:rune>
     ], 1, 25000);
 
 }
@@ -390,6 +394,37 @@ function addRuneRecipes(rune as IItemStack, cracked as IItemStack, inps as IIngr
             ], 200000
         );
     }*/
+}
+
+{
+    RuneAltar.addRecipe(<botaniverse:morerune>, [
+        <contenttweaker:improved_rune_base>,
+        <botaniverse:morerock>, <botaniverse:morerock>, <botaniverse:morerock>, <botaniverse:morerock>,
+        <botania:rune>,
+        <botania:rune:8>,
+        <botania:rune:7>
+    ], 25000);
+    RuneAltar.addRecipe(<botaniverse:morerune:1>, [
+        <contenttweaker:advanced_rune_base>,
+        <botaniverse:morerock:1>, <botaniverse:morerock:1>, <botaniverse:morerock:1>, <botaniverse:morerock:1>,
+        <botania:rune:1>,
+        <botania:rune:6>,
+        <botania:rune:13>
+    ], 45000);
+    RuneAltar.addRecipe(<botaniverse:morerune:2>, [
+        <contenttweaker:advanced_rune_base>,
+        <botaniverse:morerock:2>, <botaniverse:morerock:2>, <botaniverse:morerock:2>, <botaniverse:morerock:2>,
+        <botania:rune:3>,
+        <botania:rune:9>,
+        <botania:rune:5>
+    ], 65000);
+    RuneAltar.addRecipe(<botaniverse:morerune:3>, [
+        <contenttweaker:terra_rune_base>,
+        <botaniverse:morerock:3>, <botaniverse:morerock:3>, <botaniverse:morerock:3>, <botaniverse:morerock:3>,
+        <botania:rune:3>,
+        <botania:rune:6>,
+        <botania:rune:15>
+    ], 85000);
 }
 
 mods.botania.ElvenTrade.addRecipe([

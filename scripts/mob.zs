@@ -301,7 +301,7 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         
         //liquid proc
         mods.thermalexpansion.Refinery.addRecipe(<liquid:sand> * 1000, <contenttweaker:sphalerite_dust> % 40, <liquid:khnumite> * 500, 6000);
-        mods.immersivepetroleum.Distillation.addRecipe([<liquid:sand> * 1000], [
+        scripts.compact_distill.addCompactDistill([<liquid:sand> * 1000], [
             <contenttweaker:sphalerite_dust>,
             <exnihilocreatio:item_ore_osmium> * 8,
             <atum:khnumite>,
@@ -462,7 +462,15 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         [<minecraft:diamond>], null, ""
     );
 }
+{///fish undead
+    //penghoul
+    addRootsSummoning(<entity:mod_lavacow:pingu>, [
+        <minecraft:feather>, <minecraft:ice>, <minecraft:rotten_flesh>
+    ]);
+    addEggHint("mod_lavacow:pingu", [<mod_lavacow:shattered_ice>]);
 
+    recipes.addShapeless("ia_frozenthigh", <mod_lavacow:shattered_ice> * 3, [<mod_lavacow:frozenthigh>]);
+}
 
 {//illager
     addLoot("minecraft:vindication_illager", "minecraft:entities/vindication_illager", [<contenttweaker:illagerite>], [[30, 10, 1]]);
@@ -493,8 +501,7 @@ illagers_plus:illager_king",
 
 
 {//fish undead rising
-    //shatered ice
-    recipes.addShapeless("ia_frozenthigh", <mod_lavacow:shattered_ice> * 3, [<mod_lavacow:frozenthigh>]);
+    
 
     //sludge
     <ore:slimeball>.remove(<mod_lavacow:silky_sludge>);
@@ -585,7 +592,7 @@ var ow_mob_drops as float[IItemStack] = {
     <contenttweaker:illagerite>: 0.0001
 
 };
-mods.immersivepetroleum.Distillation.addRecipe(
+scripts.compact_distill.addCompactDistill(
     [<liquid:xpjuice> * 50, <liquid:blood> * 25, <liquid:sludge> * 125], 
     ow_mob_drops.keys, 
     <liquid:slimebone> * 200, 1000, 20, 
@@ -628,7 +635,7 @@ var erebus_mob_drops as float[IItemStack] = {
     <erebus:materials:35>: 0.001,
     <erebus:materials:36>: 0.001
 };
-mods.immersivepetroleum.Distillation.addRecipe(
+scripts.compact_distill.addCompactDistill(
     [<liquid:xpjuice> * 50, <liquid:blood> * 25, <liquid:beetle_juice> * 25], 
     erebus_mob_drops.keys, 
     <liquid:slimebone_erebus> * 75, 1000, 20, 
@@ -828,26 +835,3 @@ addVialProcess("mysticalworld:entity_endermini", [<enderio:block_enderman_skull>
 
 
 
-
-//cocoon
-recipes.remove(<botania:cocoon>);
-recipes.addShaped("ia_bot_cocoon", <botania:cocoon>, [
-    [<ore:string>, <ore:string>, <ore:string>],
-    [<ore:string>, <botania:felpumpkin>, <ore:string>],
-    [<ore:string>, <contenttweaker:transmut_gel>, <ore:string>]
-]);
-recipes.addShaped("ia_bot_cocoon2", <botania:cocoon> * 3, [
-    [<ore:string>, <ore:string>, <ore:string>],
-    [<ore:string>, <botania:felpumpkin>, <ore:string>],
-    [<ore:string>, <contenttweaker:inversion_dust>, <ore:string>]
-]);
-addJEIentityHint(
-    [<minecraft:emerald>], null, "",
-    [<botania:cocoon>.withDisplayName(game.localize("ia.egg_hint.cocoon"))], null,
-    [], null, "minecraft:villager"
-);
-addJEIentityHint(
-    [<minecraft:chorus_fruit>], null, "",
-    [<botania:cocoon>.withDisplayName(game.localize("ia.egg_hint.cocoon"))], null,
-    [], null, "minecraft:shulker"
-);

@@ -183,6 +183,83 @@ import mods.ctutils.utils.Math;
     );
 }
 
+{//dark matter
+    //removing
+    recipes.remove(<projecte:item.pe_matter>);
+    recipes.addShapeless("ia_dark_matter_uncompress", <projecte:item.pe_matter> * 4, [<projecte:matter_block>]);
+
+    //making
+    {//dark matter unit
+        var rec = RecipeBuilder.newBuilder("dark_matter_unit", "space_assembler", 200);
+        rec.addEnergyPerTickInput(10 * 1000 * 1000);
+
+        rec.addFluidInput(<liquid:circuit> * 10000);
+
+        rec.addInputs([
+            <contenttweaker:onyx_mirror> * 16,
+            <botania:tinyplanetblock>,
+            <extendedcrafting:singularity_custom:99> * 4,
+            <contenttweaker:perfect_mirror_array> * 6,
+            <contenttweaker:magnetic_glass> * 16,
+            <contenttweaker:star_frame>
+        ]);
+        
+        rec.addItemOutput(<contenttweaker:onyx_unit> * 2);
+        rec.build();
+    }
+    {//filling unit 1
+        var rec = RecipeBuilder.newBuilder("filling_dark_matter_unit", "satellite_launch_pad", 200);
+        rec.addEnergyPerTickInput(1000000);
+
+        rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "wimps"}));
+        rec.addItemOutput(<contenttweaker:space_navigator>);
+
+        rec.addInput(<contenttweaker:onyx_unit>);
+        //rec.addInput(<extendedcrafting:singularity_custom:77>);
+        rec.addGasInput(<gas:amethesting> * 25000);
+        
+        rec.addItemOutput(<contenttweaker:onyx_unit2>);
+        rec.addFluidInput(<liquid:rocket_fuel> * 10000);
+        
+
+        rec.build();
+    }
+    {//filling unit 2
+        var rec = RecipeBuilder.newBuilder("filling_dark_matter_unit2", "satellite_launch_pad", 200);
+        rec.addEnergyPerTickInput(1000000);
+
+        rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "wimps"}));
+        rec.addItemOutput(<contenttweaker:space_navigator>);
+
+        rec.addInput(<contenttweaker:onyx_unit>);
+        rec.addInput(<extendedcrafting:singularity_custom:77>).setChance(0.5);
+        //rec.addGasInput(<gas:amethesting> * 25000);
+        
+        rec.addItemOutput(<contenttweaker:onyx_unit2>);
+        rec.addFluidInput(<liquid:rocket_fuel> * 10000);
+        
+
+        rec.build();
+    }
+
+    {//dark matter
+        var rec = RecipeBuilder.newBuilder("dark_matter", "space_assembler", 200);
+        rec.addEnergyPerTickInput(10 * 1000 * 1000);
+
+        //rec.addFluidInput(<liquid:circuit> * 10000);
+
+        rec.addInputs([
+            <contenttweaker:onyx_unit2>
+        ]);
+        
+        rec.addItemOutput(<contenttweaker:onyx_unit> * 1);
+        rec.addOutput(<liquid:dark_matter> * (144 * 32));
+        rec.build();
+    }
+
+
+}
+
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:infinity_treat>, [
     [null, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, null], 
     [<harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <avaritia:cosmic_meatballs>, <harvestcraft:chaoscookieitem>, <harvestcraft:chaoscookieitem>], 
@@ -201,4 +278,104 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:infinity_treat>
     //Extremly-Extreme Extreme-Bounce-Capable Bouncy Matter (Very Extreme)
     <contenttweaker:very_very_bouncy_matter>.addTooltip("The Extremly...Bouncy Matter was so bouncy, that");
     <contenttweaker:very_very_bouncy_matter>.addTooltip("upgrading it caused it to bounce into the forth dimension");
+}
+
+{//infinity line
+    //sieving in ex nihilo
+    
+    mods.roots.Fey.addRecipe("infline", <contenttweaker:heavy_particle> * 16, [
+        <contenttweaker:infline_seed1>,
+        <contenttweaker:infline_seed3>,
+        <extendedcrafting:singularity_custom:74>,
+        <extendedcrafting:singularity_custom:99>,
+        <contenttweaker:ma_essence5>
+    ]);
+
+    {//matter seeds
+        mods.roots.Pyre.addRecipe("matter_seed", <contenttweaker:infline_seed2>, [
+            <contenttweaker:infline_seed1>,
+            <contenttweaker:proton>,
+            <contenttweaker:positronium>,
+            <contenttweaker:fertilizer7>,
+            <contenttweaker:fertilizer7>
+        ]);
+        mods.roots.Pyre.addRecipe("antimatter_seed", <contenttweaker:infline_seed4>, [
+            <contenttweaker:infline_seed3>,
+            <contenttweaker:anti_proton>,
+            <contenttweaker:positronium>,
+            <contenttweaker:fertilizer7>,
+            <contenttweaker:fertilizer7>
+        ]);
+    }
+    {//anti petals
+        mods.roots.Mortar.addRecipe("infline_flower1", <contenttweaker:anti_petals>, [<contenttweaker:inf_flower1>]);
+        mods.roots.Mortar.addRecipe("infline_flower2", <contenttweaker:anti_petals>, [<contenttweaker:inf_flower2>]);
+        mods.roots.Mortar.addRecipe("infline_flower3", <contenttweaker:anti_petals>, [<contenttweaker:inf_flower3>]);
+        mods.roots.Mortar.addRecipe("infline_flower4", <contenttweaker:anti_petals>, [<contenttweaker:inf_flower4>]);
+        mods.roots.Mortar.addRecipe("infline_flower5", <contenttweaker:anti_petals>, [<contenttweaker:inf_flower5>]);
+        
+        mods.roots.Mortar.addRecipe("infline_flower1", <contenttweaker:anti_petals> * 15, [
+            <contenttweaker:inf_flower1>, <contenttweaker:inf_flower2>, <contenttweaker:inf_flower3>, <contenttweaker:inf_flower4>, <contenttweaker:inf_flower5>
+        ]);
+    }
+
+    furnace.addRecipe(<contenttweaker:heavy_particle2>, <contenttweaker:heavy_particle>);
+
+    mods.tconstruct.Melting.addRecipe(<liquid:heavy_fluid1> * 144, <contenttweaker:heavy_particle2>, 5000);
+    mods.tconstruct.Alloy.addRecipe( <liquid:heavy_fluid2> * (144 * 64), [
+                <liquid:heavy_fluid1> * (144 * 64),
+                <liquid:dark_matter> * (144 * 64),
+                <liquid:lifeessence> * (32000)
+    ] );
+    mods.tconstruct.Casting.addTableRecipe(<contenttweaker:time_crystal> * 2, <moretcon:spacetimedisruptionpowder>, <liquid:heavy_fluid2>, 144, true);
+    mods.tconstruct.Casting.addTableRecipe(<contenttweaker:time_crystal>, null, <liquid:heavy_fluid2>, 144, false);
+
+    {var recipe = RecipeBuilder.newBuilder("time_crystal_singularity", "tree_powered_compressor", 20 * 60 * 5);
+        recipe.addItemInput(<contenttweaker:time_crystal> * 256);
+        recipe.addItemInput(<contenttweaker:infline_seed2>);
+        recipe.addItemInput(<contenttweaker:infline_seed4>);
+        recipe.addItemInput(<mysticalagriculture:mystical_fertilizer> * 64);
+        recipe.addFluidInput(<liquid:ultrapure_water> * 10000);
+        recipe.addItemOutput(<contenttweaker:time_crystal_singularity>);
+        recipe.build();
+    }
+
+    //prodigy
+    mods.prodigytech.explosionfurnace.recipes.addRecipe(
+		<contenttweaker:high_superconductor> * 16, <contenttweaker:quantum_wire> * 16, 3000 * 64, <contenttweaker:time_crystal_singularity>, 1
+	);
+
+    mods.prodigytech.magneticreassembler.addRecipe(<contenttweaker:quantum_wire>, <contenttweaker:quantum_wire2>);
+
+    mods.prodigytech.solderer.addRecipe(<prodigytech:pattern_circuit_perfected>,
+		<contenttweaker:quantum_wire2> * 4, <contenttweaker:quantum_circuit>, 36
+	);
+
+    mods.prodigytech.atomicreshaper.addRecipeMulti(
+        <contenttweaker:quantum_circuit>, 50, 20, [
+            <contenttweaker:quantum_circuit1>, <contenttweaker:quantum_circuit2>, <contenttweaker:quantum_circuit3>
+        ]
+    );
+
+    //immersive
+    mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:quantum_core>, <contenttweaker:quantum_circuit1>, <minecraft:skull:1>, 10000, 1);
+    mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:quantum_core> * 2, <contenttweaker:quantum_circuit2>, <minecraft:skull:1>, 10000, 1);
+    mods.immersiveengineering.MetalPress.addRecipe(<contenttweaker:quantum_core> * 4, <contenttweaker:quantum_circuit3>, <minecraft:skull:1>, 10000, 1);
+
+    mods.immersiveengineering.Mixer.addRecipe(
+		<liquid:quantum_circuit> * 1000, <liquid:circuit> * 1000, 
+		[<contenttweaker:quantum_core>, <contenttweaker:anti_petals>], 
+		20000
+	);
+
+    scripts.compact_distill.addCompactDistill(
+        [
+            <liquid:quantum> * 50,
+            <liquid:rainbow> * 50
+        ], 
+        [], 
+        <liquid:quantum_circuit> * 100, 1000000, 10, 
+        []
+    );
+
 }

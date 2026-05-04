@@ -668,7 +668,7 @@ import mods.modularmachinery.RecipeBuilder;
         mods.thermalexpansion.Imbuer.addRecipe(<liquid:fermented_bacteria_broth> * 500, <contenttweaker:yeast_rich>, <liquid:bacteria_broth> * 500, 12000);
 
 
-        mods.immersivepetroleum.Distillation.addRecipe(
+        scripts.compact_distill.addCompactDistill(
             [<liquid:bacteria_waste> * 25, <liquid:cobalamin> * 20, <liquid:sludge> * 30, <liquid:bacteria_broth> * 25], 
             [<contenttweaker:bacteria>, <biomesoplenty:gem:2>], 
             <liquid:fermented_bacteria_broth> * 125, 
@@ -1171,7 +1171,7 @@ import mods.modularmachinery.RecipeBuilder;
         );
 
 
-        mods.immersivepetroleum.Distillation.addRecipe(
+        scripts.compact_distill.addCompactDistill(
             [<liquid:pheromones> * 40, <liquid:raw_chitin> * 40, <liquid:if.protein> * 20], 
             [], 
             <liquid:bugs> * 100, 
@@ -1180,7 +1180,7 @@ import mods.modularmachinery.RecipeBuilder;
         );
     }
 
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [<liquid:pheromones> * 10, <liquid:chitin_grade3> * 3, <liquid:if.protein> * 10], 
         [], 
         <liquid:raw_chitin> * 50, 
@@ -1208,7 +1208,7 @@ import mods.modularmachinery.RecipeBuilder;
         40, 4096
     );
 
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [<liquid:chitin_grade1> * 10, <liquid:chitin_grade2> * 30, <liquid:chitin_grade3> * 80, <liquid:chitin_grade4> * 30, <liquid:chitin_grade5> * 10], 
         [<mekanism:salt>], 
         <liquid:salty_chitin> * 150, 
@@ -1319,7 +1319,7 @@ import mods.modularmachinery.RecipeBuilder;
     );
 
     // -> salt + indium hydroxide sol
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [<liquid:indium_hydroxide> * 15, <liquid:zinc> * 5, <liquid:lead> * 5], 
         [<mekanism:salt>, <contenttweaker:indium_oxides>, <contenttweaker:cadmium>], 
         <liquid:indium_salty> * 25, 20 * 1000, 20, 

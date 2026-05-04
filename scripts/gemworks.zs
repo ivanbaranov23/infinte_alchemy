@@ -238,7 +238,7 @@ recipes.addShapeless("ia_gem_cat", <contenttweaker:gem_catalyst> * 8,
     ]
 );
 mods.thermalexpansion.Imbuer.addRecipe(<liquid:crystal_fluid1> * 500, <contenttweaker:gem_catalyst>, <liquid:crystal_waste> * 1000, 4000);
-mods.immersivepetroleum.Distillation.addRecipe(
+scripts.compact_distill.addCompactDistill(
     [
         <liquid:tanzanite_slury> * 15,
         <liquid:sapphire_slury> * 15,

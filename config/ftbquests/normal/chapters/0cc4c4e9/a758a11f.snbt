@@ -6,6 +6,7 @@
 	text: [
 		"Get to the End and kill the pushover lizard."
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "c12ac53e",
 		type: "dimension",

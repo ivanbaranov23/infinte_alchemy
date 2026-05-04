@@ -6,6 +6,7 @@
 	text: [
 		""
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "a7dc7689",
 		type: "checkmark",

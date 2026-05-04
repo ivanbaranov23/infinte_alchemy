@@ -1,0 +1,48 @@
+{
+	title: "Cool Ingots",
+	x: 6.0d,
+	y: -5.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"0e1f4b48"
+	],
+	optional: true,
+	tasks: [{
+		uid: "353fc54e",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 34"
+		}]
+	},
+	{
+		uid: "ae43af0b",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 52"
+		}]
+	},
+	{
+		uid: "a14538b6",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 33"
+		}]
+	}],
+	rewards: [{
+		uid: "411737cd",
+		type: "item",
+		item: "contenttweaker:selenium_block"
+	},
+	{
+		uid: "3b38db14",
+		type: "item",
+		item: "contenttweaker:tellurium_block"
+	},
+	{
+		uid: "40a46151",
+		type: "item",
+		item: "contenttweaker:arsenic_block"
+	}]
+}

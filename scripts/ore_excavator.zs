@@ -103,6 +103,7 @@ excavator.setJEIFluidSlot(2, 0, "fluid");
 // Creates an excavator vein and adds it to JEI via a custom JEI category.
 // While ores in a vein are limitless, due to restrictions, JEI can only display a maximum of 8.
 function addExcavator(name as string, rarity as int, ores as string[], chances as double[], dims as int[]) as void {
+    print("[ORE_EXCAVATOR] adding vein " ~ name);
     Excavator.addMineral(name, rarity, 0.005, ores, chances, dims);
 
     val recipe = AssemblyRecipe.create(function(container) {
@@ -110,7 +111,11 @@ function addExcavator(name as string, rarity as int, ores as string[], chances a
             val ore = oreDict.get(entry);
             if (!isNull(ore)) {
                 // Multiplying the ore allows us to display the item chance
-                container.addItemOutput("item_output" ~ i, ore.firstItem * (chances[i] * 100));
+                if (!isNull(ore.firstItem)) {
+                    container.addItemOutput("item_output" ~ i, ore.firstItem * (chances[i] * 100));
+                }else{
+                    container.addItemOutput("item_output" ~ i, <minecraft:stone> * (chances[i] * 100));
+                }
             }
         }
     });
@@ -454,7 +459,7 @@ var mil as int = 1000000;
     addFluidReservoir("OW Mana", 5, <liquid:mana>, mil, 3*mil, 0, [0]);
 }
 {//erebus
-    addExcavator("Erebus Raw Steel Vein", 30, ["oreErebusIron", "oreErebusNickel", "oreErebusCoal"], [0.7, 0.1, 0.2], [66, -11325]);
+    addExcavator("Erebus Raw Steel Vein", 30, ["oreErebusIron", "oreGneiss", "oreErebusCoal"], [0.7, 0.05, 0.15], [66, -11325]);
     addExcavator("Erebus Malachite", 30, ["oreErebusMalachite", "oreErebusJade", "oreErebusTin"], [0.7, 0.2, 0.1], [66, -11325]);
     addExcavator("Erebus Jade", 20, ["oreErebusJade", "oreErebusFlolit"], [0.8, 0.2], [66, -11325]);
     addExcavator("Erebus Flolit", 10, ["oreErebusFlolit", "oreErebusIron", "oreErebusSilver"], [0.7, 0.2, 0.1], [66, -11325]);

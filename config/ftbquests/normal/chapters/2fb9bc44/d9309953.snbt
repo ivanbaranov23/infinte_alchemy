@@ -14,6 +14,7 @@
 		"",
 		"Consult prodigy book for more info."
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "50ce37c4",
 		type: "item",

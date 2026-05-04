@@ -162,7 +162,7 @@ scripts.content_machines.addFluidMixerRecipe(
         <liquid:chloroauric_acid> * 1000, 
         4000
     );
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [<liquid:aqua_regia> * 990], 
         [<contenttweaker:pure_gold_dust>, <mekanism:dirtydust>, <mekores:mekanismore:253>], 
         <liquid:chloroauric_acid> * 1000, 
@@ -313,7 +313,7 @@ scripts.content_machines.addFluidMixerRecipe(
 
     //dore
     mods.thermalexpansion.Refinery.addRecipe(<liquid:electrum> * 250, null, <liquid:dore> * 300, 5000);
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [
             <liquid:gold> * 100,
             <liquid:silver> * 100,

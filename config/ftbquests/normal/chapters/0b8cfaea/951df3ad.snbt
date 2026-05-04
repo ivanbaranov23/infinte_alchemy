@@ -1,7 +1,7 @@
 {
 	title: "Drawers",
-	x: -6.5d,
-	y: -2.0d,
+	x: -6.0d,
+	y: -2.5d,
 	text: [
 		"Drawers base storage capacity was boosted by 4 times"
 	],

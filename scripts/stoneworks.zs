@@ -227,6 +227,14 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<contenttweaker:lapis_stone>, <contenttweaker:lapis_stone>]
     ]);
 }
+{//rainbow
+
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <botania:shimmerrock>, 
+        <botania:livingrock> * 4, <botania:managlass>, <liquid:rainbow> * 2000, 
+        40, 10000
+    );
+}
 
 {//atum
     //limestones

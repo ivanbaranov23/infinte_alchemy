@@ -1,8 +1,8 @@
 {
 	title: "TE coils",
 	icon: "thermalfoundation:material 1 515",
-	x: -3.0d,
-	y: 1.0d,
+	x: -2.5d,
+	y: 1.5d,
 	text: [
 		"More components, yay!"
 	],

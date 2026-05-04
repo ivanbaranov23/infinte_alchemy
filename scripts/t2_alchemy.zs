@@ -1,13 +1,13 @@
 
 
-mods.immersivepetroleum.Distillation.addRecipe(
+scripts.compact_distill.addCompactDistill(
 	[<liquid:blueslime> * 50, <liquid:rotten_slime> * 30], 
 	[<contenttweaker:slime_shard>, <contenttweaker:organic_glue>], 
 	<liquid:sticky_water> * 200, 20 * 120, 20, 
 	[0.15, 0.001]
 );
 
-mods.immersivepetroleum.Distillation.addRecipe(
+scripts.compact_distill.addCompactDistill(
 	[<liquid:biodiesel> * 75, <liquid:blood> * 10], 
 	[], 
 	<liquid:rotten_slime> * 200, 20 * 120, 20, 

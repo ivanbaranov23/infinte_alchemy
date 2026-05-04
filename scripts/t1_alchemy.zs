@@ -10,6 +10,12 @@ recipes.addShaped("ia_yellow_flower", <minecraft:yellow_flower> * 2, [
     [<minecraft:tallgrass:1>],
     [<minecraft:dye:15>]
 ]);
+recipes.addShaped("ia_terra_spores2", <roots:terra_spores>, [
+	[null, <minecraft:dye:15>, null], 
+	[<minecraft:dye:15>, <minecraft:tallgrass:1>, <minecraft:dye:15>], 
+	[null, <minecraft:dye:15>, null]
+]);
+
 {
     {    
         var rec = RecipeBuilder.newBuilder("slimy_glass", "high_oven", 100);

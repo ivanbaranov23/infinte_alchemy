@@ -1,13 +1,14 @@
 {
 	title: "We have Plat-line at home",
 	x: 6.0d,
-	y: -2.0d,
+	y: -4.0d,
 	text: [
 		"Introducing copper-line: gives arsenic, cadmium, tellurium, selenium and palladium."
 	],
 	dependencies: [
 		"4bcf41c8"
 	],
+	size: 2.0d,
 	optional: true,
 	tasks: [{
 		uid: "ec6a4dba",

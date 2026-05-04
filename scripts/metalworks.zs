@@ -860,6 +860,15 @@ static all_metals as IItemStack[string][string] = {
         gear: <contenttweaker:calitunti_gear>,
         block: <contenttweaker:calitunti_block>
     },
+    wormium: {
+        ingot: <contenttweaker:wormium_ingot>,
+        block: <contenttweaker:wormium_block>
+    },
+    titanworm_steel: {
+        ingot: <contenttweaker:titanworm_steel_ingot>,
+        plate: <contenttweaker:titanworm_steel_plate>,
+        block: <contenttweaker:titanworm_steel_block>
+    },
 
     fluxed_electrum: {
         ingot: <redstonearsenal:material:32>,
@@ -4004,6 +4013,15 @@ add3alloy(1, "flower_steel", 4,
                 <liquid:worm_blood> * 500,
                 <liquid:eezo_fluid> * 216
             ], 100, 10000
+        );
+    }
+
+
+    {
+        add3alloy(2, "titanworm_steel", 1,
+            "wormium", 1,
+            "mitanium", 1,
+            "tellurium", 1
         );
     }
 

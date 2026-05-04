@@ -1,0 +1,32 @@
+{
+	icon: "modularmachinery:compact_distill_controller",
+	x: 3.5d,
+	y: 3.5d,
+	text: [
+		"Compactier than normal"
+	],
+	dependencies: [
+		"405ee5ba"
+	],
+	tasks: [{
+		uid: "b8e661d8",
+		type: "item",
+		items: [{
+			item: "modularmachinery:compact_distill_controller"
+		}]
+	},
+	{
+		uid: "9b004e89",
+		type: "item",
+		items: [{
+			item: "contenttweaker:distill_sheetmetal"
+		}]
+	},
+	{
+		uid: "2cd056f3",
+		type: "item",
+		items: [{
+			item: "ddb:infinite_alchemy_test_slab"
+		}]
+	}]
+}

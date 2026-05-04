@@ -24,5 +24,11 @@
 		items: [{
 			item: "requious:altar"
 		}]
+	}],
+	rewards: [{
+		uid: "fc61c59c",
+		type: "item",
+		item: "requious:altar",
+		count: 3
 	}]
 }

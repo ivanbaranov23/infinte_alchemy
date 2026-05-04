@@ -549,28 +549,50 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:wormholium> * 4, [
     <contenttweaker:entangled_particles>
 ], 35000);
 
-//goals
-recipes.addShaped("ia_tincan_target_ore1", <contenttweaker:tincan_target_ore1>, [
-	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
-	[<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:17>, <contenttweaker:advanced_plating1_4>], 
-	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
-]);
-recipes.addShaped("ia_tincan_target_ore2", <contenttweaker:tincan_target_ore2>, [
-	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
-	[<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:35>, <contenttweaker:advanced_plating1_4>], 
-	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
-]);
-recipes.addShaped("ia_tincan_target_gem", <contenttweaker:tincan_target_gem>, [
-	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
-	[<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:6>, <contenttweaker:advanced_plating1_4>], 
-	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
-]);
-recipes.addShaped("ia_tincan_target_mob", <contenttweaker:tincan_target_mob>, [
-	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
-	[<contenttweaker:advanced_plating1_4>, <extrautils2:ingredients:10>, <contenttweaker:advanced_plating1_4>], 
-	[<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
-]);
-
+{//goals
+    recipes.addShaped("ia_tincan_target_ore1", <contenttweaker:tincan_target_ore1>, [
+        [<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
+        [<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:17>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
+    ]);
+    recipes.addShaped("ia_tincan_target_ore2", <contenttweaker:tincan_target_ore2>, [
+        [<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
+        [<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:35>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
+    ]);
+    recipes.addShaped("ia_tincan_target_gem", <contenttweaker:tincan_target_gem>, [
+        [<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
+        [<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:6>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
+    ]);
+    recipes.addShaped("ia_tincan_target_mob", <contenttweaker:tincan_target_mob>, [
+        [<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>], 
+        [<contenttweaker:advanced_plating1_4>, <extrautils2:ingredients:10>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:lesmium_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:lesmium_plate>]
+    ]);
+}
+{//goals
+    recipes.addShaped("ia_tincan_target_ore1_2", <contenttweaker:tincan_target_ore1> * 4, [
+        [<contenttweaker:titanworm_steel_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:titanworm_steel_plate>], 
+        [<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:17>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:titanworm_steel_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:titanworm_steel_plate>]
+    ]);
+    recipes.addShaped("ia_tincan_target_ore2_2", <contenttweaker:tincan_target_ore2> * 4, [
+        [<contenttweaker:titanworm_steel_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:titanworm_steel_plate>], 
+        [<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:35>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:titanworm_steel_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:titanworm_steel_plate>]
+    ]);
+    recipes.addShaped("ia_tincan_target_gem_2", <contenttweaker:tincan_target_gem> * 4, [
+        [<contenttweaker:titanworm_steel_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:titanworm_steel_plate>], 
+        [<contenttweaker:advanced_plating1_4>, <extendedcrafting:singularity:6>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:titanworm_steel_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:titanworm_steel_plate>]
+    ]);
+    recipes.addShaped("ia_tincan_target_mob_2", <contenttweaker:tincan_target_mob> * 4, [
+        [<contenttweaker:titanworm_steel_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:titanworm_steel_plate>], 
+        [<contenttweaker:advanced_plating1_4>, <extrautils2:ingredients:10>, <contenttweaker:advanced_plating1_4>], 
+        [<contenttweaker:titanworm_steel_plate>, <contenttweaker:advanced_plating1_4>, <contenttweaker:titanworm_steel_plate>]
+    ]);
+}
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:portal>, [
     [<modularmachinery:pworld_oregen_controller>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <botania:alfheimportal>, <enderio:block_tele_pad>, <enderio:block_tele_pad>, <modularmachinery:pworld_oregen_controller>], 

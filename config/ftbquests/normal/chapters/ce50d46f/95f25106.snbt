@@ -1,0 +1,22 @@
+{
+	x: 25.5d,
+	y: 2.0d,
+	shape: "square",
+	dependencies: [
+		"20295cdf",
+		"092fd624"
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "763c20d0",
+		type: "item",
+		items: [{
+			item: "projecte:item.pe_matter"
+		}]
+	}],
+	rewards: [{
+		uid: "c2524f3c",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

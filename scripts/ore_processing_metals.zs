@@ -55,7 +55,7 @@ import mods.enderio.SagMill;
         furnace.remove(<erebus:materials:42>);
         furnace.addRecipe(<thermalfoundation:material:196> * 2, <contenttweaker:bauxite_dust>);
 
-        
+        furnace.addRecipe(<thermalfoundation:material:132>, <thermalfoundation:material:68>);
     }
     {//zinc
         mods.exnihilocreatio.Hammer.addRecipe(

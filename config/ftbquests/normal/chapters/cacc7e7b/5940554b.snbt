@@ -1,0 +1,31 @@
+{
+	title: "Big pool",
+	icon: "botaniverse:morepool 1 2",
+	x: 1.5d,
+	y: 6.0d,
+	text: [
+		"You can't swim in it"
+	],
+	tasks: [{
+		uid: "1e49ca77",
+		type: "item",
+		items: [{
+			item: "contenttweaker:quest_coin"
+		}],
+		count: 3L,
+		consume_items: true
+	},
+	{
+		uid: "f8888b97",
+		type: "item",
+		items: [{
+			item: "botania:pool"
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "ec655b0b",
+		type: "item",
+		item: "botaniverse:morepool 1 2"
+	}]
+}

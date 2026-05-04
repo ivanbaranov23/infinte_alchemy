@@ -9,6 +9,7 @@
 		"",
 		"Also all metal/gem/metal-like materials quest will give a block of that material as a reward"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "215c45bf",
 		type: "item",

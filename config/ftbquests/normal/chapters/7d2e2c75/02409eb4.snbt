@@ -1,6 +1,6 @@
 {
 	title: "5x ores",
-	x: 15.0d,
+	x: 16.0d,
 	y: -1.0d,
 	text: [
 		"Some 5x steps are used outside ore processing. Mainly crystals and shards.",

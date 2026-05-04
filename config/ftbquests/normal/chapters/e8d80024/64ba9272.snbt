@@ -1,0 +1,14 @@
+{
+	x: 9.0d,
+	y: 4.0d,
+	dependencies: [
+		"50737ad2"
+	],
+	tasks: [{
+		uid: "97f80cca",
+		type: "item",
+		items: [{
+			item: "botania:shimmerrock"
+		}]
+	}]
+}

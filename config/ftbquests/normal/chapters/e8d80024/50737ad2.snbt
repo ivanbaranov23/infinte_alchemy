@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: 0.0d,
+	dependencies: [
+		"7bd6ebcf"
+	],
+	tasks: [{
+		uid: "fa8c0160",
+		type: "item",
+		items: [{
+			item: "botania:managlass"
+		}]
+	}]
+}

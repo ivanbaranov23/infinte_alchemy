@@ -112,7 +112,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
     rec.build();
 }{//slurp2
-    var rec = RecipeBuilder.newBuilder("slurp2", "essence_extractor", 20 * 6 * 3);
+    var rec = RecipeBuilder.newBuilder("slurp2", "essence_extractor", 20 * 6 * 2);
 
     rec.addEnergyPerTickInput(1024);
 
@@ -121,11 +121,11 @@ mods.thermalexpansion.Crucible.addRecipe(
 
     rec.build();
 }{//slurp3
-    var rec = RecipeBuilder.newBuilder("slurp3", "essence_extractor", 20 * 6 * 9);
+    var rec = RecipeBuilder.newBuilder("slurp3", "essence_extractor", 20 * 6 * 4);
 
     rec.addEnergyPerTickInput(4096);
 
-    rec.addFluidOutput(<liquid:essence_slurp> * 50000);
+    rec.addFluidOutput(<liquid:essence_slurp> * 125000);
     rec.addItemInput(<ore:inferiumSlurp3> * 10);
 
     rec.build();
@@ -182,7 +182,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(20 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 3000);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting:1> * 16);
         rec.addItemInput(<ore:slimecrystal> * 6);
         
@@ -195,7 +195,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(40 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 5000);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting:2> * 16);
         rec.addItemInput(<ore:slimecrystal> * 8);
         
@@ -208,7 +208,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(80 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 7000);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting:3> * 16);
         rec.addItemInput(<ore:slimecrystal> * 12);
         
@@ -224,7 +224,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(100 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 4000);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting> * 256);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
@@ -238,7 +238,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(300 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 8000);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting:1> * 256);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
@@ -252,7 +252,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(900 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 16000);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting:2> * 256);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
@@ -266,7 +266,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(2700 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 32000);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting:3> * 256);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
@@ -280,7 +280,7 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(8100 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 64000);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
         rec.addItemInput(<mysticalagriculture:crafting:4> * 256);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
@@ -295,13 +295,12 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(24300 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 64000);
-        rec.addItemInput(<mysticalagradditions:insanium> * 256);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
+        rec.addItemInput(<mysticalagradditions:insanium> * 64);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
-        rec.addItemOutput(<contenttweaker:ma_essence1> * 64);
-        rec.addItemOutput(<contenttweaker:ma_essence1> * 64).setChance(0.0);
-
+        rec.addItemOutput(<contenttweaker:ma_essence1> * 16);
+        rec.addItemOutput(<contenttweaker:ma_essence1> * 16).setChance(0.0);
         rec.build();
     }
     {
@@ -309,12 +308,12 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(72900 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 64000);
-        rec.addItemInput(<contenttweaker:ma_essence1> * 256);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
+        rec.addItemInput(<contenttweaker:ma_essence1> * 64);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
-        rec.addItemOutput(<contenttweaker:ma_essence2> * 64);
-        rec.addItemOutput(<contenttweaker:ma_essence2> * 64).setChance(0.0);
+        rec.addItemOutput(<contenttweaker:ma_essence2> * 16);
+        rec.addItemOutput(<contenttweaker:ma_essence2> * 16).setChance(0.0);
 
         rec.build();
     }
@@ -323,12 +322,12 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(72900 * 3 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 64000);
-        rec.addItemInput(<contenttweaker:ma_essence2> * 256);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
+        rec.addItemInput(<contenttweaker:ma_essence2> * 64);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
-        rec.addItemOutput(<contenttweaker:ma_essence3> * 64);
-        rec.addItemOutput(<contenttweaker:ma_essence3> * 64).setChance(0.0);
+        rec.addItemOutput(<contenttweaker:ma_essence3> * 16);
+        rec.addItemOutput(<contenttweaker:ma_essence3> * 16).setChance(0.0);
 
         rec.build();
     }
@@ -337,12 +336,12 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(72900 * 9 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 64000);
-        rec.addItemInput(<contenttweaker:ma_essence3> * 256);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
+        rec.addItemInput(<contenttweaker:ma_essence3> * 64);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
-        rec.addItemOutput(<contenttweaker:ma_essence4> * 64);
-        rec.addItemOutput(<contenttweaker:ma_essence4> * 64).setChance(0.0);
+        rec.addItemOutput(<contenttweaker:ma_essence4> * 16);
+        rec.addItemOutput(<contenttweaker:ma_essence4> * 16).setChance(0.0);
 
         rec.build();
     }
@@ -351,12 +350,12 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(72900 * 27 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 64000);
-        rec.addItemInput(<contenttweaker:ma_essence4> * 256);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
+        rec.addItemInput(<contenttweaker:ma_essence4> * 64);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
-        rec.addItemOutput(<contenttweaker:ma_essence5> * 64);
-        rec.addItemOutput(<contenttweaker:ma_essence5> * 64).setChance(0.0);
+        rec.addItemOutput(<contenttweaker:ma_essence5> * 16);
+        rec.addItemOutput(<contenttweaker:ma_essence5> * 16).setChance(0.0);
 
         rec.build();
     }
@@ -365,12 +364,12 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(72900 * 81 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 64000);
-        rec.addItemInput(<contenttweaker:ma_essence5> * 256);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
+        rec.addItemInput(<contenttweaker:ma_essence5> * 64);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
-        rec.addItemOutput(<contenttweaker:ma_essence6> * 64);
-        rec.addItemOutput(<contenttweaker:ma_essence6> * 64).setChance(0.0);
+        rec.addItemOutput(<contenttweaker:ma_essence6> * 16);
+        rec.addItemOutput(<contenttweaker:ma_essence6> * 16).setChance(0.0);
 
         rec.build();
     }
@@ -379,12 +378,12 @@ mods.thermalexpansion.Crucible.addRecipe(
 
         rec.addEnergyPerTickInput(72900 * 243 * 1000);
 
-        rec.addFluidInput(<liquid:sticky_water> * 64000);
-        rec.addItemInput(<contenttweaker:ma_essence6> * 256);
+        rec.addFluidInput(<liquid:sticky_water> * 1000);
+        rec.addItemInput(<contenttweaker:ma_essence6> * 64);
         rec.addItemInput(<mysticalagriculture:master_infusion_crystal>).setChance(0.0);
         
-        rec.addItemOutput(<contenttweaker:ma_essence7> * 64);
-        rec.addItemOutput(<contenttweaker:ma_essence7> * 64).setChance(0.0);
+        rec.addItemOutput(<contenttweaker:ma_essence7> * 16);
+        rec.addItemOutput(<contenttweaker:ma_essence7> * 16).setChance(0.0);
 
         rec.build();
     }

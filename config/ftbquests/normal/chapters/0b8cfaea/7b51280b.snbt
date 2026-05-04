@@ -30,5 +30,11 @@
 		items: [{
 			item: "minecraft:gunpowder"
 		}]
+	}],
+	rewards: [{
+		uid: "1d62e4b1",
+		type: "item",
+		item: "minecraft:dye 1 15",
+		count: 8
 	}]
 }

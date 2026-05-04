@@ -113,6 +113,12 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<ore:livingrock>, <contenttweaker:manabrick_block>, <contenttweaker:manabrick_block>, <contenttweaker:manabrick_block>, <ore:livingrock>], 
         [<ore:livingrock>, <ore:livingrock>, <ore:livingrock>, <ore:livingrock>, <ore:livingrock>]
     ]);
+    recipes.remove(<botania:pool:3>);
+    recipes.addShaped("ia_fab_mana_pool", <botania:pool:3>, [
+        [<botania:rune:8>, <contenttweaker:crystal_metal_plate>, <botania:rune:8>], 
+        [<botania:shimmerrock>, <botania:pool>, <botania:shimmerrock>], 
+        [<botania:shimmerrock>, <botania:shimmerrock>, <botania:shimmerrock>]
+    ]);
 
     //mana powder
     ManaInfusion.removeRecipe(<botania:manaresource:23>);//500
@@ -391,6 +397,29 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
         <contenttweaker:petals2>,
         <contenttweaker:petals1>,
         <botania:rune:4>
+    ]);
+
+
+    Apothecary.removeRecipe("vinculotus");
+    Apothecary.addRecipe("vinculotus", [
+        <contenttweaker:revived_bush>,
+        <mob_grinding_utils:ender_inhibitor_on>,
+        <contenttweaker:petals5>,
+        <botania:rune:12>
+    ]);
+    Apothecary.removeRecipe("rannuncarpus");
+    Apothecary.addRecipe("rannuncarpus", [
+        <contenttweaker:revived_bush>,
+        <actuallyadditions:block_phantom_placer>,
+        <contenttweaker:petals1>,
+        <botania:rune:2>
+    ]);
+    Apothecary.removeRecipe("clayconia");
+    Apothecary.addRecipe("clayconia", [
+        <contenttweaker:revived_bush>,
+        <additionalcompression:clay_compressed:3>,
+        <contenttweaker:petals2>,
+        <botania:rune:2>
     ]);
 }
 recipes.addShapeless("ia_ancient_wood", <contenttweaker:ancient_wood>, [
@@ -702,3 +731,18 @@ scripts.jei.addJEIhint(
     [<botania:overgrowthseed>], 
     [<botania:enchantedsoil>.withDisplayName("Increases work speed/mana generated for botania flowers")]
 );
+
+
+
+recipes.remove(<botania:tinyplanetblock>);
+mods.extendedcrafting.TableCrafting.addShaped(0, <botania:tinyplanetblock>, [
+	[null, null, <extendedcrafting:singularity_custom:35>, <extendedcrafting:singularity_custom:35>, <extendedcrafting:singularity_custom:35>, <extendedcrafting:singularity_custom:35>, <extendedcrafting:singularity_custom:35>, null, null], 
+	[null, <extendedcrafting:singularity_custom:35>, <contenttweaker:fluxed_invar_plate>, <contenttweaker:sunnarium_chunk>, <contenttweaker:sunnarium_core>, <contenttweaker:sunnarium_chunk>, <contenttweaker:fluxed_invar_plate>, <extendedcrafting:singularity_custom:35>, null], 
+	[<extendedcrafting:singularity_custom:35>, <contenttweaker:fluxed_invar_plate>, <contenttweaker:star_alloy_gear>, <botania:rune:15>, <extrautils2:compressedcobblestone:7>, <botania:rune:15>, <contenttweaker:star_alloy_gear>, <contenttweaker:fluxed_invar_plate>, <extendedcrafting:singularity_custom:35>], 
+	[<extendedcrafting:singularity_custom:35>, <contenttweaker:sunnarium_chunk>, <botania:rune:15>, <contenttweaker:nether_boat_plating>, <contenttweaker:plasma_gen>, <contenttweaker:nether_boat_plating>, <botania:rune:15>, <contenttweaker:sunnarium_chunk>, <extendedcrafting:singularity_custom:35>], 
+	[<extendedcrafting:singularity_custom:35>, <contenttweaker:sunnarium_core>, <extrautils2:compressedcobblestone:7>, <contenttweaker:plasma_gen>, <botania:tinyplanet>, <contenttweaker:plasma_gen>, <extrautils2:compressedcobblestone:7>, <contenttweaker:sunnarium_core>, <extendedcrafting:singularity_custom:35>], 
+	[<extendedcrafting:singularity_custom:35>, <contenttweaker:sunnarium_chunk>, <botania:rune:15>, <contenttweaker:nether_boat_plating>, <contenttweaker:plasma_gen>, <contenttweaker:nether_boat_plating>, <botania:rune:15>, <contenttweaker:sunnarium_chunk>, <extendedcrafting:singularity_custom:35>], 
+	[<extendedcrafting:singularity_custom:35>, <contenttweaker:fluxed_invar_plate>, <contenttweaker:star_alloy_gear>, <botania:rune:15>, <extrautils2:compressedcobblestone:7>, <botania:rune:15>, <contenttweaker:star_alloy_gear>, <contenttweaker:fluxed_invar_plate>, <extendedcrafting:singularity_custom:35>], 
+	[null, <extendedcrafting:singularity_custom:35>, <contenttweaker:fluxed_invar_plate>, <contenttweaker:sunnarium_chunk>, <contenttweaker:sunnarium_core>, <contenttweaker:sunnarium_chunk>, <contenttweaker:fluxed_invar_plate>, <extendedcrafting:singularity_custom:35>, null], 
+	[null, null, <extendedcrafting:singularity_custom:35>, <extendedcrafting:singularity_custom:35>, <extendedcrafting:singularity_custom:35>, <extendedcrafting:singularity_custom:35>, <extendedcrafting:singularity_custom:35>, null, null]
+]);

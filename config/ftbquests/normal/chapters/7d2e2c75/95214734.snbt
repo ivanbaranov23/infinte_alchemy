@@ -1,11 +1,12 @@
 {
 	title: "Welcome to Mekanism Chapter",
-	x: -6.0d,
+	x: -6.5d,
 	y: 0.0d,
 	shape: "square",
 	text: [
 		"Get ready to handling gas, machines with weird sides and 5x ore processing!"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "99208443",
 		type: "checkmark",

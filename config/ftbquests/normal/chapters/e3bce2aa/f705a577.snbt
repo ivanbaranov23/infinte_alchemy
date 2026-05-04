@@ -5,6 +5,7 @@
 	text: [
 		"Heat resistant properties of honey are... idk tbh"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "78d0ae86",
 		type: "item",

@@ -21,9 +21,9 @@ recipes.addShaped("ia_string_mesh",
 );
 
 recipes.remove(<exnihilocreatio:item_mesh:2>);
-recipes.addShaped("ia_flint_mesh", <exnihilocreatio:item_mesh:2>, [
+scripts.helper.addCarryRecipe(<exnihilocreatio:item_mesh:2>, <exnihilocreatio:item_mesh:1>, [
 	[<excompressum:compressed_block:5>, <roots:runic_dust>, <excompressum:compressed_block:5>], 
-	[<roots:wildewheet>, <exnihilocreatio:item_mesh:1>, <roots:wildewheet>], 
+	[<roots:wildewheet>, <roots:wildewheet>], 
 	[<excompressum:compressed_block:5>, <roots:runic_dust>, <excompressum:compressed_block:5>]
 ]);
 mods.roots.Pyre.addRecipe("flint_mesh", <exnihilocreatio:item_mesh:2>, [
@@ -31,16 +31,16 @@ mods.roots.Pyre.addRecipe("flint_mesh", <exnihilocreatio:item_mesh:2>, [
 ]);
 
 recipes.remove(<exnihilocreatio:item_mesh:3>);
-recipes.addShaped("ia_iron_mesh", <exnihilocreatio:item_mesh:3>, [
+scripts.helper.addCarryRecipe(<exnihilocreatio:item_mesh:3>, <exnihilocreatio:item_mesh:2>, [
 	[<ore:stickSteel>, <contenttweaker:duraluminum_rod>, <ore:stickSteel>], 
-	[<ore:stickSteel>, <exnihilocreatio:item_mesh:2>, <ore:stickSteel>], 
+	[<ore:stickSteel>, <ore:stickSteel>], 
 	[<ore:stickSteel>, <contenttweaker:duraluminum_rod>, <ore:stickSteel>]
 ]);
 
 recipes.remove(<exnihilocreatio:item_mesh:4>);
-recipes.addShaped("ia_diamond_mesh", <exnihilocreatio:item_mesh:4>, [
+scripts.helper.addCarryRecipe(<exnihilocreatio:item_mesh:4>, <exnihilocreatio:item_mesh:3>, [
 	[<contenttweaker:mekanized_steel_rod>, <betternether:cincinnasite_block>, <contenttweaker:mekanized_steel_rod>], 
-	[<ore:stickIridium>, <exnihilocreatio:item_mesh:3>, <ore:stickIridium>], 
+	[<ore:stickIridium>, <ore:stickIridium>], 
 	[<contenttweaker:mekanized_steel_rod>, <betternether:cincinnasite_block>, <contenttweaker:mekanized_steel_rod>]
 ]);
 
@@ -493,6 +493,20 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<minecraft:flint> % 5,
 			<contenttweaker:ambrosium_seed> % 5,
 			<contenttweaker:ambrosium_dust> % 20
+		],
+
+		<excompressum:compressed_block:6>: [
+			<biomesoplenty:gem:1> % 20,
+			<contenttweaker:prometheum_pieces> % 10,
+			<contenttweaker:hallowsite_pieces> % 15,
+			<netherite:netheritescrap> % 15,
+			<contenttweaker:cincinnasite_dirty_dust> % 20,
+			<bigreactors:mineralbenitoite> % 5
+		],
+
+		<contenttweaker:neutronium_sand>: [
+			<contenttweaker:infline_seed1> % 1,
+			<contenttweaker:infline_seed3> % 1
 		]
 	},
 	uraniumMesh: {
@@ -533,6 +547,17 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<moretcon:gemgarstone> % 50,
 			<moretcon:gemgarstone> % 50,
 			<moretcon:gemgarstone> % 50,
+		],
+
+		<contenttweaker:neutronium_sand>: [
+			<contenttweaker:infline_seed1> % 3,
+			<contenttweaker:infline_seed3> % 3
+		]
+	},
+	weatherMesh: {
+		<contenttweaker:neutronium_sand>: [
+			<contenttweaker:infline_seed1> % 10,
+			<contenttweaker:infline_seed3> % 10
 		]
 	}
 };
@@ -541,16 +566,10 @@ static meshes as IItemStack[string] = {
 	flintMesh: <exnihilocreatio:item_mesh:2>,
 	ironMesh: <exnihilocreatio:item_mesh:3>,
 	diamondMesh: <exnihilocreatio:item_mesh:4>,
-	uraniumMesh: <contenttweaker:uranium_mesh>
+	uraniumMesh: <contenttweaker:uranium_mesh>,
+	weatherMesh: <contenttweaker:weather_chrome_mesh>
 };
-static siftables as IItemStack[string] = {
-	gravel: <minecraft:gravel>,
-	sand: <minecraft:sand>,
-	dust: <exnihilocreatio:block_dust>,
 
-	redsand: <minecraft:sand:1>,
-	grout: <tconstruct:soil>
-};
 
 for mesh in sievables{
 	for sand in sievables[mesh]{

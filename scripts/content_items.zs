@@ -2479,6 +2479,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("balloy_ball").register();
     VanillaFactory.createItem("balloy_dust").register();
     VanillaFactory.createBlock("balloy_block", <blockmaterial:rock>).register();
+    
+    VanillaFactory.createBlock("distill_sheetmetal", <blockmaterial:rock>).register();
 }
 {//erebus  
     VanillaFactory.createItem("formic_acid_dust").register();
@@ -2709,6 +2711,10 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("black_paste").register();
     VanillaFactory.createItem("coil_core1").register();
     VanillaFactory.createItem("coil_core2").register();
+
+    VanillaFactory.createItem("titanworm_steel_ingot").register();
+    VanillaFactory.createItem("titanworm_steel_plate").register();
+    VanillaFactory.createBlock("titanworm_steel_block", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("laser_mirror").register();
 
@@ -2970,6 +2976,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     }
 
     addItem("blood_spike", "rare", 64);
+
+    addItem("compressed_compound", "rare", 64);
+    VanillaFactory.createBlock("compressed_compound_block", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("blood_shard1").register();
     VanillaFactory.createItem("blood_shard2").register();
@@ -3235,6 +3244,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
         add_living("chitigic_empress");
         
         VanillaFactory.createItem("titanakor_flesh").register();
+        VanillaFactory.createItem("titanakor_cells").register();
     }
 
     addWater("flowers");
@@ -3548,10 +3558,33 @@ addWater("brain_matter");
     addFlower("inf_flower3");
     addFlower("inf_flower4");
     addFlower("inf_flower5");
+    addItem("anti_petals", "rare", 64);
     addItem("infline_seed1", "rare", 64);
     addItem("infline_seed2", "rare", 64);
     addItem("infline_seed3", "rare", 64);
     addItem("infline_seed4", "rare", 64);
+
+    addItem("heavy_particle", "rare", 64);
+    addItem("heavy_particle2", "rare", 64);
+
+    registerMoltenMetal("heavy_fluid1", Color.fromHex("d5343e"));
+    registerMoltenMetal("heavy_fluid2", Color.fromHex("a71a51"));
+
+    addItem("time_crystal", "rare", 64);
+    addItem("time_crystal_singularity", "epic", 64);
+
+    addItem("quantum_wire", "rare", 64);
+    addItem("quantum_wire2", "rare", 64);
+    addItem("quantum_circuit", "rare", 64);
+    addItem("quantum_circuit1", "rare", 64);
+    addItem("quantum_circuit2", "rare", 64);
+    addItem("quantum_circuit3", "rare", 64);
+
+    addItem("quantum_core", "epic", 64);
+
+    addWater("quantum_circuit");
+    addWater("rainbow");
+    addWater("quantum");
 }
 {//endgame
     VanillaFactory.createBlock("portal", <blockmaterial:rock>).register();
@@ -3686,6 +3719,8 @@ function addResearchBook(name as string, msg as string){
     VanillaFactory.createItem("research_chitigic").register();
 
     VanillaFactory.createItem("research_enchanting").register();
+
+    addResearchBook("research_pool", "Offload mana to the 9 realms.");
 
     VanillaFactory.createItem("research_singularity").register();
 }

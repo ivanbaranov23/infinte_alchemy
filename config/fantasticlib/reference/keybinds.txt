@@ -32,6 +32,7 @@ key.hotbar.8
 key.hotbar.9
 key.inventory
 key.swapHands
+keybind.hammercorerenderstack
 
 key.categories.creative
 key.loadToolbarActivator
@@ -95,6 +96,10 @@ key.range
 key.rotate_mirror
 key.settings_menu
 key.undo
+
+key.cells.category
+key.cells.quick_add_to_filter.desc
+key.cells.memory_card_include_filters.desc
 
 key.carry.category
 key.carry.desc

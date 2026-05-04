@@ -1,0 +1,17 @@
+{
+	x: 23.5d,
+	y: 4.0d,
+	dependencies: [
+		"bd6cbf81"
+	],
+	tasks: [{
+		uid: "9b718b46",
+		type: "item",
+		items: [{
+			id: "contenttweaker:space_data",
+			tag: {
+				data: "wimps"
+			}
+		}]
+	}]
+}

@@ -1,5 +1,5 @@
 {
-	x: 19.0d,
+	x: 20.0d,
 	y: -1.0d,
 	shape: "square",
 	dependencies: [
@@ -7,6 +7,7 @@
 		"03cc85bf",
 		"6052902d"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "c0fa3f5e",
 		type: "checkmark",

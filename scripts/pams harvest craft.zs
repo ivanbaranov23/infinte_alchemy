@@ -499,7 +499,7 @@ recipes.remove(<harvestcraft:coconutmilkitem>);
     mods.immersiveengineering.Refinery.addRecipe(<liquid:yeast_rich> * 16, <liquid:yeast> * 8, <liquid:ethanol> * 8, 200);
     mods.immersiveengineering.Refinery.addRecipe(<liquid:yeast_rich> * 20, <liquid:yeast> * 8, <liquid:sorbitol> * 8, 200);
 
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [<liquid:yeast> * 25, <liquid:ethanol> * 25], 
         [<contenttweaker:yeast_rich>, <contenttweaker:yeast>, <thermalfoundation:material:817>], 
         <liquid:yeast_rich> * 100, 10 * 128, 10, 

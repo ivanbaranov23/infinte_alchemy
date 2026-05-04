@@ -1,0 +1,23 @@
+{
+	x: 3.0d,
+	y: 4.0d,
+	shape: "diamond",
+	text: [
+		"Input via task screen"
+	],
+	dependencies: [
+		"9ace592c"
+	],
+	optional: true,
+	tasks: [{
+		uid: "6f8c90b7",
+		type: "botania_mana",
+		value: 10000000L,
+		show_numbers: true
+	}],
+	rewards: [{
+		uid: "93ebcc98",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

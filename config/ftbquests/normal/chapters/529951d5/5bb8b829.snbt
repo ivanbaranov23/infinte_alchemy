@@ -6,6 +6,7 @@
 	text: [
 		"You might notice that the nether is a bit less empty than normal."
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "2b031296",
 		type: "dimension",

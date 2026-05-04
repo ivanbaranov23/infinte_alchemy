@@ -132,6 +132,7 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 	mods.prodigytech.explosionfurnace.explosives.add(<appliedenergistics2:tiny_tnt>, 750);
 	mods.prodigytech.explosionfurnace.explosives.add(<minecraft:tnt>, 3000);
 	mods.prodigytech.explosionfurnace.explosives.add(<natura:nether_planks:3>, 250);
+	mods.prodigytech.explosionfurnace.explosives.add(<contenttweaker:octonitrocubane>, 3000 * 64);
 
 	
 	mods.prodigytech.explosionfurnace.dampeners.add(<atum:sand>, 360 * 2);
@@ -152,9 +153,17 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting>, 250);
 	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:1>, 250 * 4);
 	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:2>, 250 * 16);
-	//mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:3>, 250 * 64);
-	//mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:4>, 250 * 256);
-	//mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagradditions:insanium>, 250);
+	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:3>, 250 * 64);
+	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagriculture:crafting:4>, 250 * 256);
+	mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagradditions:insanium>, 250 * 1024);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:ma_essence1>, 250 * 1024 * 4);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:ma_essence2>, 250 * 1024 * 16);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:ma_essence3>, 250 * 1024 * 64);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:ma_essence4>, 250 * 1024 * 256);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:ma_essence5>, 250 * 1024 * 1024);
+	mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:ma_essence6>, 250 * 1024 * 1024 * 4);
+	//mods.prodigytech.explosionfurnace.dampeners.add(<contenttweaker:ma_essence7>, 250 * 1024 * 1024 * 16);
+	//mods.prodigytech.explosionfurnace.dampeners.add(<mysticalagradditions:stuff:69>, 250 * 1024);
 	
 }
 
@@ -619,15 +628,15 @@ solderer.removeAll();
 	{//ore gen sub
 		//karmesine
 		atomicreshaper.addRecipeMulti(<exnihilocreatio:block_andesite_crushed>, 10, 40, 
-			[<minecraft:stone:5>, <taiga:karmesine_ore>], [7, 1]
+			[<minecraft:stone:5>, <taiga:karmesine_ore>], [3, 1]
 		);
 		//ovium
 		atomicreshaper.addRecipeMulti(<exnihilocreatio:block_diorite_crushed>, 10, 40, 
-			[<minecraft:stone:3>, <taiga:ovium_ore>], [7, 1]
+			[<minecraft:stone:3>, <taiga:ovium_ore>], [3, 1]
 		);
 		//jauxum
 		atomicreshaper.addRecipeMulti(<exnihilocreatio:block_granite_crushed>, 10, 40, 
-			[<minecraft:stone:1>, <taiga:jauxum_ore>], [7, 1]
+			[<minecraft:stone:1>, <taiga:jauxum_ore>], [3, 1]
 		);
 	}
 	{//rich clay

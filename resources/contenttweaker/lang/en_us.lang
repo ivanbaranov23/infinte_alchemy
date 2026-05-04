@@ -2790,3 +2790,14 @@ ia.tooltip.sorter_lifespan1=Put (or pipe in) a Living to be sorted into the righ
 ia.tooltip.sorter_lifespan2=If Living in right slot has more lifespan than the base one
 ia.tooltip.sorter_lifespan3=It'll be outputed through the top,
 ia.tooltip.sorter_lifespan4=Otherwise - through the bottom
+
+tile.contenttweaker.distill_sheetmetal.name=Compact Distillation Sheetmetal Casing
+tile.infinite_alchemy_test_slab.name=Compact Distillation Bar
+
+ia.tooltip.mana_capacity=Mana Capacity: 
+
+item.contenttweaker.titanworm_steel_ingot.name=Titanworm Steel Ingot
+item.contenttweaker.titanworm_steel_plate.name=Titanworm Steel Plate
+tile.contenttweaker.titanworm_steel_block.name=Block of Titanworm Steel
+
+item.contenttweaker.lazy_chip.name=Lazy Initialisation Chip

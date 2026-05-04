@@ -1,10 +1,11 @@
 {
-	x: 9.0d,
+	x: 9.5d,
 	y: -1.0d,
 	shape: "square",
 	dependencies: [
 		"30e63d05"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "79858457",
 		type: "checkmark",

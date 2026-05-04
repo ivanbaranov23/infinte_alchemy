@@ -9,6 +9,7 @@
 	dependencies: [
 		"2ecdc636"
 	],
+	size: 2.0d,
 	optional: true,
 	tasks: [{
 		uid: "a916d998",

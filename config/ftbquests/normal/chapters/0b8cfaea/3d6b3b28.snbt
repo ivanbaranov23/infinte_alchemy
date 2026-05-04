@@ -1,6 +1,6 @@
 {
 	title: "Shop",
-	x: -8.5d,
+	x: -9.0d,
 	y: -1.0d,
 	text: [
 		"Check out the shop. It uses quest coins.",

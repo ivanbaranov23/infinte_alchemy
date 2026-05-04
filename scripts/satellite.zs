@@ -47,7 +47,7 @@ function getColor(v as double){
 
 <contenttweaker:space_data>.addAdvancedTooltip(function(item){
     if (item.tag.memberGet("data")){
-        return "Data: " ~ Colors.yellow ~ item.tag.data;
+        return "Data: " ~ Colors.yellow ~ game.localize("ia.satellite." + item.tag.data);
     }
     
     return "Data: " ~ Colors.red ~ "unspecified";
@@ -388,6 +388,12 @@ static chip_data as float[string][string] = {
         min_tier: 2
     },
 
+    xenotime_asteroid: {
+        minimum: 5000,
+        weight: 500,
+        min_tier: 2
+    },
+
     bastnasite_asteroid: {
         minimum: 25000,
         weight: 300,
@@ -449,6 +455,12 @@ static chip_data as float[string][string] = {
         minimum: 1500,
         weight: 200,
         min_tier: 1
+    },
+
+    wimps: {
+        minimum: 10000,
+        weight: 50,
+        min_tier: 2
     }
 };
 static drone_mining as IItemStack[string] = {
@@ -467,6 +479,8 @@ static drone_mining as IItemStack[string] = {
 
     vanadium_asteroid: <contenttweaker:vanadium_ore>,
     molybdenum_asteroid: <contenttweaker:molybdenum_ore>,
+
+    xenotime_asteroid: <contenttweaker:xenotime_ore>,
     
     bastnasite_asteroid: <contenttweaker:bastnasite_ore>,
     kikeridan_asteroid: <contenttweaker:kikeridan_ore>,
@@ -647,6 +661,8 @@ addDroneMiningRecipe("dense_onyx", <contenttweaker:onyx> * 16, 20 * 60, 5000 * 1
 
 addDroneMiningRecipe("vanadium_asteroid", <contenttweaker:vanadium_ore> * 32, 20 * 60, 5000 * 1000);
 addDroneMiningRecipe("molybdenum_asteroid", <contenttweaker:molybdenum_ore> * 32, 20 * 60, 5000 * 1000);
+
+addDroneMiningRecipe("xenotime_asteroid", <contenttweaker:xenotime_ore> * 32, 20 * 60, 5000 * 1000);
 
 addDroneMiningRecipe("bastnasite_asteroid", <contenttweaker:bastnasite_ore> * 32, 20 * 60, 5000 * 1000);
 

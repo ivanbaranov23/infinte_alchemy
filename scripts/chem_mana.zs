@@ -26,7 +26,7 @@ import mods.modularmachinery.RecipeBuilder;
     mods.thermalexpansion.Crucible.addRecipe(
         <liquid:pilkon_blood> * 1000, <contenttweaker:pilkon_corpse>, 5000
     );
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [<liquid:biodiesel> * 200, <liquid:colagen> * 15], 
         [<contenttweaker:pilkeum>], <liquid:pilkon_blood> * 50, 
         2000, 25, 
@@ -493,7 +493,7 @@ import mods.modularmachinery.RecipeBuilder;
 }
 
 {//society
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [
             <liquid:radioactive_waste> * 200,
             <liquid:unknown> * 50,
@@ -514,7 +514,7 @@ import mods.modularmachinery.RecipeBuilder;
     );
 
 
-    mods.immersivepetroleum.Distillation.addRecipe(
+    scripts.compact_distill.addCompactDistill(
         [
             <liquid:lust> * 1000,
             <liquid:gluttony> * 1000,

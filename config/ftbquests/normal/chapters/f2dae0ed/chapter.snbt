@@ -1,6 +1,7 @@
 {
 	title: "ch 6++: Industrial Foregoing",
 	icon: "industrialforegoing:pink_slime_ingot",
+	disable_toast: true,
 	always_invisible: false,
 	group: 0,
 	default_quest_shape: ""
