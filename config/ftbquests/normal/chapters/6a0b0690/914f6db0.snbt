@@ -1,0 +1,15 @@
+{
+	x: -4.0d,
+	y: 2.0d,
+	dependencies: [
+		"51fd7c52"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1c203759",
+		type: "item",
+		items: [{
+			item: "twilightforest:twilight_sapling 1 9"
+		}]
+	}]
+}

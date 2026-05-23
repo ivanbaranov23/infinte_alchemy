@@ -14,7 +14,7 @@
 		uid: "37a6d107",
 		type: "fluid",
 		fluid: "bugs",
-		amount: 10000000
+		amount: 100000
 	}],
 	rewards: [{
 		uid: "bfdb4b2e",

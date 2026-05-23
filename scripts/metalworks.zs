@@ -1618,20 +1618,6 @@ static all_metals as IItemStack[string][string] = {
         gear: <moreplates:awakened_draconium_gear>,
         block: <draconicevolution:draconic_block>
     },
-
-    //project e
-    dark_matter: {
-        ingot: <projecte:item.pe_matter>,
-        plate: <moreplates:dark_matter_plate>,
-        gear: <moreplates:dark_matter_gear>,
-        block: <projecte:matter_block>
-    },
-    red_matter: {
-        ingot: <projecte:item.pe_matter:1>,
-        plate: <moreplates:red_matter_plate>,
-        gear: <moreplates:red_matter_gear>,
-        block: <projecte:matter_block:1>
-    },
     lucky_alloy: {
         ingot: <contenttweaker:lucky_alloy_ingot>,
         plate: <contenttweaker:lucky_alloy_plate>,
@@ -2395,8 +2381,6 @@ static all_metals_molten as ILiquidStack[string] = {
     vanadium: <liquid:vanadium>,
 
     crystal_matrix: <liquid:crystal_matrix>,
-    dark_matter: <liquid:dark_matter>,
-    red_matter: <liquid:red_matter>,
     infinity: <liquid:infinity_metal>,
 
     //taiga
@@ -2491,7 +2475,6 @@ static metals_to_clean as string[] = [
     "mana_steel", "elementium", "terra_steel", "mirion",
 
     "draconium", "awakened_draconium", "crystal_matrix",
-    "dark_matter", "red_matter",
     "infinity",
 
     "neutronium",
@@ -2509,7 +2492,7 @@ static metals_to_clean as string[] = [
     "black_quartz", "certus", "fluix"
 ];
 static custom_metals as string[] = [
-    "zinc", "antimony", "duraluminum",
+    "antimony", "duraluminum",
     "lesmium", "nial", "wear_resistant_alloy",
     "watertight_steel",
     "angel", "balloy",
@@ -3096,10 +3079,17 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
 //alloys
 
 {//early game
+    mods.enderio.AlloySmelter.removeRecipe(all_metals.bronze.ingot);
+    mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:99>);
     add2alloy(1, "bronze", 4,
         "tin", 1,
         "copper", 3
     );
+    add2alloy(1, "bronze", 8, 
+        "coppra", 3,
+        "nittin", 1
+    );
+
 
     add3alloy(1, "pigiron", 4, 
         "iron", 4,
@@ -3167,35 +3157,29 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
 
 
     {//simple alloys
-            
-        /*scripts.helper.addHighOvenAlloy(
-            "bronze_ho" as string, 0,
-            [all_metals.bronze.ingot * 4] as IItemStack[],
-            [
-                all_metals.copper.ingot * 3,
-                all_metals.tin.ingot
-            ] as IItemStack[]
-        );*/
-        mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:99>);
-        add2alloy(1, "bronze", 8, 
-            "coppra", 3,
-            "nittin", 1
-        );
+        
 
 
         //missing
+        mods.enderio.AlloySmelter.removeRecipe(all_metals.invar.ingot);
         add2alloy(1, "invar", 3,
             "iron", 2,
             "nickel", 1
         );
+
+        mods.enderio.AlloySmelter.removeRecipe(all_metals.constantan.ingot);
         add2alloy(1, "constantan", 2,
             "copper", 1,
             "nickel", 1
         );
+
+        mods.enderio.AlloySmelter.removeRecipe(all_metals.manyullyn.ingot);
         add2alloy(1, "manyullyn", 1,
             "cobalt", 1,
             "ardite", 1
         );
+
+        //mods.enderio.AlloySmelter.removeRecipe(all_metals.alubrass.ingot);
         add2alloy(1, "alubrass", 4,
             "copper", 1,
             "aluminum", 3
@@ -3293,14 +3277,7 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
         }
         
 
-        /*scripts.helper.addHighOvenAlloy(
-            "electrum_ho" as string, 0,
-            [all_metals.electrum.ingot * 2] as IItemStack[],
-            [
-                all_metals.gold.ingot,
-                all_metals.silver.ingot
-            ] as IItemStack[]
-        );*/
+        mods.enderio.AlloySmelter.removeRecipe(all_metals.electrum.ingot);
         add2alloy(1, "electrum", 2,
             "gold", 1,
             "silver", 1
@@ -4017,7 +3994,7 @@ add3alloy(1, "flower_steel", 4,
     }
 
 
-    {
+    {//titan worm steel
         add3alloy(2, "titanworm_steel", 1,
             "wormium", 1,
             "mitanium", 1,
@@ -5543,19 +5520,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <contenttweaker:sin_nickel_ingot>
         ]
     );
-    mods.extendedcrafting.CombinationCrafting.addRecipe(
-        <contenttweaker:pandemonium_ingot> * 3, 10240 * 100, 10240 * 5, <contenttweaker:super_alloy_base_ingot>,
-        [
-            <extendedcrafting:singularity_custom:41>,
-            <contenttweaker:fiery_singularity>,
-            <contenttweaker:crystal_metal_block>,
-            <contenttweaker:living_steel_block>,
-            <contenttweaker:living_steel_block>,
-            <contenttweaker:death_metal_block>,
-            <bloodmagic:demon_extras:13>,
-            <projecte:matter_block:1>
-        ]
-    );
+    
     addPlate(<contenttweaker:pandemonium_ingot>, <contenttweaker:pandemonium_plate>);
 }
 

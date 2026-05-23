@@ -331,10 +331,3 @@ key.jei.toggleEditMode
 key.categories.p455w0rdslib
 key.toggle_shaders
 
-projecte
-pe.key.armor_toggle
-pe.key.mode
-pe.key.charge
-pe.key.extra_function
-pe.key.fire_projectile
-

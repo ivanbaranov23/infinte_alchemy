@@ -2801,3 +2801,47 @@ item.contenttweaker.titanworm_steel_plate.name=Titanworm Steel Plate
 tile.contenttweaker.titanworm_steel_block.name=Block of Titanworm Steel
 
 item.contenttweaker.lazy_chip.name=Lazy Initialisation Chip
+
+fluid.rainbow=Liqiud Rainbow
+
+tile.contenttweaker.essence_pump4.name=Superium Essence Pump
+tile.contenttweaker.essence_pump5.name=Supremium Essence Pump
+tile.contenttweaker.essence_pump6.name=Insanium Essence Pump
+
+ia.mb_tooltip.ee_pump1=x1 to fluid output
+ia.mb_tooltip.ee_pump2=x2 to fluid output
+ia.mb_tooltip.ee_pump3=x3 to fluid output
+ia.mb_tooltip.ee_pump4=x4 to fluid output
+ia.mb_tooltip.ee_pump5=x5 to fluid output
+ia.mb_tooltip.ee_pump6=x6 to fluid output, unlocks second item output
+
+item.contenttweaker.jet_alloy_ingot.name=Jet Alloy Ingot
+item.contenttweaker.jet_alloy_plate.name=Jet Alloy Plate
+tile.contenttweaker.jet_alloy_block.name=Block of Jet Alloy
+
+item.contenttweaker.gem_singularity.name=Delicate Gem Singularity
+item.contenttweaker.gem_singularity2.name=Rough Gem Singularity
+item.contenttweaker.gem_singularity3.name=Ultimate Gem Singularity
+
+item.contenttweaker.hand_framing_tool.name=Hand Framing Tool
+
+fluid.acid1=Enhanced Acid
+
+item.contenttweaker.onyx.name=Dark Onyx
+tile.contenttweaker.onyx_block.name=Block of Dark Onyx
+item.contenttweaker.onyx_mirror.name=Dark Onyx WIMPs Mirror
+item.contenttweaker.onyx_unit.name=Dark Matter Containment Unit (Empty)
+item.contenttweaker.onyx_unit2.name=Dark Matter Containment Unit (Filled)
+
+item.contenttweaker.relic_ingot2.name=Enchanted Relic Ingot
+
+item.contenttweaker.xenotime.name=Xenotime
+tile.contenttweaker.xenotime_ore.name=Xenotime Ore
+
+fluid.unknown=Unknown Fluid
+fluid.mysterious=Mysterious Fluid
+
+item.contenttweaker.sunnarium_chunk.name=Sunnarium Chunk
+
+item.contenttweaker.fluoroantimonic_acid.name=Fluoroantimonic Acid
+item.contenttweaker.methanium.name=Methanium

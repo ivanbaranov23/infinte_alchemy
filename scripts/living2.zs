@@ -71,10 +71,7 @@ import mods.modularmachinery.RecipeBuilder;
             <contenttweaker:ender_bacteria>
         ],
         8: [
-            <aether_legacy:moa_egg>.withTag({typeId: 0}),
-            <aether_legacy:moa_egg>.withTag({typeId: 1}),
-            <aether_legacy:moa_egg>.withTag({typeId: 2}),
-            <aether_legacy:moa_egg>.withTag({typeId: 3}),
+            <aether_legacy:moa_egg>,
 
             <betternether:eye_seed>,
             <erebus:materials:60>,

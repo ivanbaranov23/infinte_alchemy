@@ -185,8 +185,7 @@ import mods.ctutils.utils.Math;
 
 {//dark matter
     //removing
-    recipes.remove(<projecte:item.pe_matter>);
-    recipes.addShapeless("ia_dark_matter_uncompress", <projecte:item.pe_matter> * 4, [<projecte:matter_block>]);
+    
 
     //making
     {//dark matter unit

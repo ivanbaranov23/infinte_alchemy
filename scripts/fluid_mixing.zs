@@ -20,6 +20,20 @@ FITweaker.addRecipe(<liquid:andesite>, <liquid:witchwater>,
                 .addCondition(ICondition.byChance, [0.25f])
         )
 );
+FITweaker.addRecipe(<liquid:water>, <liquid:witchwater>, 
+    FITweaker.outputBuilder()
+        .addEvent(
+            FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:dirt:snowy=false,variant=dirt>)
+        )
+        .addEvent(
+            FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:dirt:snowy=false,variant=coarse_dirt>)
+                .addCondition(ICondition.byChance, [0.25f])
+        )
+        .addEvent(
+            FITweaker.eventBuilder().createSetBlockEvent(<blockstate:minecraft:dirt:snowy=false,variant=podzol>)
+                .addCondition(ICondition.byChance, [0.25f])
+        )
+);
 
 
 FITweaker.addRecipe(<liquid:creosote>, <liquid:andesite>, <blockstate:quark:jasper:variant=stone_jasper>);

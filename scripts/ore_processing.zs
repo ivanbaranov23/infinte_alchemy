@@ -116,8 +116,8 @@ static ores1 as IItemStack[string][string][string] = {
             item: <minecraft:iron_ore>,
             crushing_no_balls: <thermalfoundation:material> * 2,
             balling: <thermalfoundation:material> * 2,
-            crushingByprod1: <thermalfoundation:material:69>,
-            crushingByprod2: <thermalfoundation:material:65>,
+            crushingByprod1: <mekanism:dust:2>,
+            crushingByprod2: <thermalfoundation:material:69>,
 
             alloySlag2: <minecraft:iron_ingot> * 2,
             alloySlag3: <minecraft:iron_ingot> * 3,
@@ -181,8 +181,8 @@ static ores1 as IItemStack[string][string][string] = {
             item: <exnihilocreatio:item_ore_iron:1>,
             crushing_no_balls: <thermalfoundation:material> * 2,
             balling: <thermalfoundation:material> * 2,
-            crushingByprod1: <thermalfoundation:material:69>,
-            crushingByprod2: <thermalfoundation:material:65>,
+            crushingByprod1: <mekanism:dust:2>,
+            crushingByprod2: <thermalfoundation:material:69>,
 
             alloySlag2: <minecraft:iron_ingot> * 2,
             alloySlag3: <minecraft:iron_ingot> * 3,
@@ -196,7 +196,7 @@ static ores1 as IItemStack[string][string][string] = {
             item: <densemetals:dense_iron_ore>,
             crushing: <minecraft:iron_ore> * 3,
             crushingByprod1: <contenttweaker:vanadium_dust>,
-            crushingByprod2: <thermalfoundation:material:69> * 4,
+            crushingByprod2: <mekanism:dust:2> * 4,
 
             making: <minecraft:iron_ore> * 4
         },
@@ -212,8 +212,8 @@ static ores1 as IItemStack[string][string][string] = {
         clump: {
             item: <mekanism:clump>,
             balling: <mekanism:dirtydust> * 2,
-            crushingByprod1: <thermalfoundation:material:69>,
-            crushingByprod2: <thermalfoundation:material:65>,
+            crushingByprod1: <mekanism:dust:2>,
+            crushingByprod2: <thermalfoundation:material:69>,
         },
         dirtydust: {
             item: <mekanism:dirtydust>,
@@ -462,8 +462,8 @@ static ores1 as IItemStack[string][string][string] = {
             item: <exnihilocreatio:item_ore_aluminum:1>,
             crushing_no_balls: <thermalfoundation:material:68> * 2,
             balling: <thermalfoundation:material:68> * 2,
-            crushingByprod1: <contenttweaker:zinc_dust>,
-            crushingByprod2: <contenttweaker:dolomite>,
+            crushingByprod1: <thermalfoundation:material:1>,
+            crushingByprod2: <contenttweaker:bauxite_dust>,
 
             drilling: <mekores:mekanismore:33> * 3,
             madeFrom: <exnihilocreatio:item_ore_aluminum> * 3,
@@ -484,8 +484,8 @@ static ores1 as IItemStack[string][string][string] = {
             item: <thermalfoundation:ore:4>,
             crushing_no_balls: <thermalfoundation:material:68> * 2,
             balling: <thermalfoundation:material:68> * 2,
-            crushingByprod1: <contenttweaker:bauxite_dust>,
-            crushingByprod2: <contenttweaker:dolomite>,
+            crushingByprod1: <thermalfoundation:material:1>,
+            crushingByprod2: <contenttweaker:bauxite_dust>,
 
             drilling: <exnihilocreatio:item_ore_aluminum> * 6
         },
@@ -524,13 +524,13 @@ static ores1 as IItemStack[string][string][string] = {
         clump: {
             item: <mekores:mekanismore:32>,
             balling: <mekores:mekanismore:33>,
-            crushingByprod1: <contenttweaker:bauxite_dust>,
-            crushingByprod2: <enderio:item_material:32>,
+            crushingByprod1: <thermalfoundation:material:1>,
+            crushingByprod2: <contenttweaker:bauxite_dust>,
         },
         dirtydust: {
             item: <mekores:mekanismore:33>,
             separating1: <thermalfoundation:material:68>,
-            separating2: <contenttweaker:bauxite_dust>,
+            separating2: <thermalfoundation:material:1>,
             separating3: <contenttweaker:dolomite>,
             separating4: <contenttweaker:soot>,
 
@@ -647,7 +647,7 @@ static ores1 as IItemStack[string][string][string] = {
             furnace: <contenttweaker:zinc_ingot>,
             crushing_no_balls: <contenttweaker:zinc_dust> * 2,
             balling: <contenttweaker:zinc_dust> * 2,
-            crushingByprod1: <thermalfoundation:material:68>,
+            crushingByprod1: <thermalfoundation:material:67>,
             crushingByprod2: <mekanism:dirtydust>,
 
             alloySlag2: <contenttweaker:zinc_ingot> * 2,
@@ -659,7 +659,7 @@ static ores1 as IItemStack[string][string][string] = {
             item: <netherendingores:ore_nether_modded_2>,
             crushing_no_balls: <contenttweaker:zinc_dust> * 4,
             balling: <contenttweaker:zinc_dust> * 4,
-            crushingByprod1: <thermalfoundation:material:68>,
+            crushingByprod1: <thermalfoundation:material:67>,
             crushingByprod2: <contenttweaker:gallium_dust>,
 
             alloySlag2: <contenttweaker:zinc_ingot> * 3,
@@ -672,7 +672,7 @@ static ores1 as IItemStack[string][string][string] = {
             item: <netherendingores:ore_end_modded_2>,
             crushing_no_balls: <contenttweaker:zinc_dust> * 5,
             balling: <contenttweaker:zinc_dust> * 5,
-            crushingByprod1: <thermalfoundation:material:68>,
+            crushingByprod1: <thermalfoundation:material:67>,
             crushingByprod2: <contenttweaker:gallium_dust>,
 
             alloySlag2: <contenttweaker:zinc_ingot> * 4,
@@ -686,7 +686,7 @@ static ores1 as IItemStack[string][string][string] = {
             furnace: <contenttweaker:zinc_ingot>,
             crushing_no_balls: <contenttweaker:zinc_dust> * 2,
             balling: <contenttweaker:zinc_dust> * 2,
-            crushingByprod1: <thermalfoundation:material:68>,
+            crushingByprod1: <thermalfoundation:material:67>,
             crushingByprod2: <mekanism:dirtydust>,
 
             alloySlag2: <contenttweaker:zinc_ingot> * 2,
@@ -708,13 +708,14 @@ static ores1 as IItemStack[string][string][string] = {
         clump: {
             item: <mekores:mekanismore:112>,
             balling: <mekores:mekanismore:113>,
-            crushingByprod1: <thermalfoundation:material:68>,
+            crushingByprod1: <thermalfoundation:material:67>,
             crushingByprod2: <mekanism:dirtydust>,
         },
         dirtydust: {
             item: <mekores:mekanismore:113>,
             separating1: <contenttweaker:zinc_dust>,
-            separating2: <thermalfoundation:material>,
+            separating2: <thermalfoundation:material:67>,
+            separating3: <thermalfoundation:material>,
             separating4: <contenttweaker:soot>
         },
 
@@ -3128,7 +3129,6 @@ static ores2 as IItemStack[string][string][string] = {
         atum: {
             item: <atum:redstone_ore>,
             crushing_no_balls: <minecraft:redstone> * 10,
-            balling: <minecraft:redstone> * 10,
             crushingByprod1: <appliedenergistics2:material:5>,
             crushingByprod2: <thermalfoundation:material:866>,
             denorm: <minecraft:redstone_ore> * 2
@@ -3214,7 +3214,8 @@ static ores2 as IItemStack[string][string][string] = {
     quartz: {
         overworld: {
             item: <mysticalworld:quartz_ore>,
-            crushing: <appliedenergistics2:material:3> * 4,
+            crushing_no_balls: <appliedenergistics2:material:3> * 4,
+            balling: <appliedenergistics2:material:3> * 4,
             crushingByprod1: <appliedenergistics2:material:2>,
             crushingByprod2: <actuallyadditions:item_dust:4>,
 
@@ -3227,7 +3228,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         nether: {
             item: <minecraft:quartz_ore>,
-            crushing: <appliedenergistics2:material:3> * 6,
+            crushing_no_balls: <appliedenergistics2:material:3> * 6,
+            balling: <appliedenergistics2:material:3> * 6,
             crushingByprod1: <appliedenergistics2:material:2>,
             crushingByprod2: <actuallyadditions:item_dust:4>,
 
@@ -3237,7 +3239,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         end: {
             item: <netherendingores:ore_other_1:1>,
-            crushing: <appliedenergistics2:material:3> * 8,
+            crushing_no_balls: <appliedenergistics2:material:3> * 8,
+            balling: <appliedenergistics2:material:3> * 8,
             crushingByprod1: <appliedenergistics2:material:2> * 3,
             crushingByprod2: <actuallyadditions:item_dust:4> * 3,
 
@@ -3247,7 +3250,8 @@ static ores2 as IItemStack[string][string][string] = {
 
         granite: {
             item: <mysticalworld:granite_quartz_ore>,
-            crushing: <appliedenergistics2:material:3> * 4,
+            crushing_no_balls: <appliedenergistics2:material:3> * 4,
+            balling: <appliedenergistics2:material:3> * 4,
             crushingByprod1: <appliedenergistics2:material:5>,
             crushingByprod2: <taiga:jauxum_dust>,
 
@@ -3256,7 +3260,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         erebus: {
             item: <erebus:ore_quartz>,
-            crushing: <appliedenergistics2:material:3> * 4,
+            crushing_no_balls: <appliedenergistics2:material:3> * 4,
+            balling: <appliedenergistics2:material:3> * 4,
             crushingByprod1: <appliedenergistics2:material:5>,
             crushingByprod2: <appliedenergistics2:material:2>,
 
@@ -3265,7 +3270,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         erebus_petr: {
             item: <erebus:ore_petrified_quartz>,
-            crushing: <appliedenergistics2:material:3> * 4,
+            crushing_no_balls: <appliedenergistics2:material:3> * 4,
+            balling: <appliedenergistics2:material:3> * 4,
             crushingByprod1: <erebus:materials:74>,
             crushingByprod2: <erebus:materials:74>,
 
@@ -3286,7 +3292,8 @@ static ores2 as IItemStack[string][string][string] = {
     lapis: {
         overworld: {
             item: <minecraft:lapis_ore>,
-            crushing: <enderio:item_material:32> * 8,
+            crushing_no_balls: <enderio:item_material:32> * 8,
+            balling: <enderio:item_material:32> * 8,
             crushingByprod1: <appliedenergistics2:material:5> * 4,
             crushingByprod2: <actuallyadditions:item_dust:4>,
 
@@ -3294,7 +3301,7 @@ static ores2 as IItemStack[string][string][string] = {
         },
         atum: {
             item: <atum:lapis_ore>,
-            crushing: <enderio:item_material:32> * 8,
+            crushing_no_balls: <enderio:item_material:32> * 8,
             crushingByprod1: <contenttweaker:relic_nugget>,
             crushingByprod2: <appliedenergistics2:material:5> * 4,
 
@@ -3304,7 +3311,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         erebus: {
             item: <erebus:ore_lapis>,
-            crushing: <enderio:item_material:32> * 8,
+            crushing_no_balls: <enderio:item_material:32> * 8,
+            balling: <enderio:item_material:32> * 8,
             crushingByprod1: <contenttweaker:jade_dust>,
             crushingByprod2: <biomesoplenty:gem:4>,
 
@@ -3314,7 +3322,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         nether: {
             item: <netherendingores:ore_nether_vanilla:5>,
-            crushing: <enderio:item_material:32> * 12,
+            crushing_no_balls: <enderio:item_material:32> * 12,
+            balling: <enderio:item_material:32> * 12,
             crushingByprod1: <appliedenergistics2:material:5> * 4,
             crushingByprod2: <actuallyadditions:item_dust:4>,
 
@@ -3324,7 +3333,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         end: {
             item: <netherendingores:ore_end_vanilla:5>,
-            crushing: <enderio:item_material:32> * 16,
+            crushing_no_balls: <enderio:item_material:32> * 16,
+            balling: <enderio:item_material:32> * 16,
             crushingByprod1: <appliedenergistics2:material:5> * 4,
             crushingByprod2: <contenttweaker:calcium>,
 
@@ -3359,7 +3369,8 @@ static ores2 as IItemStack[string][string][string] = {
     diamond: {
         overworld: {
             item: <minecraft:diamond_ore>,
-            crushing: <mekanism:otherdust> * 2,
+            crushing_no_balls: <mekanism:otherdust> * 2,
+            balling: <mekanism:otherdust> * 2,
             crushingByprod1: <thermalfoundation:material:768>,
             crushingByprod2: <actuallyadditions:item_dust:2>,
 
@@ -3367,7 +3378,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         nether: {
             item: <netherendingores:ore_nether_vanilla:1>,
-            crushing: <mekanism:otherdust> * 4,
+            crushing_no_balls: <mekanism:otherdust> * 4,
+            balling: <mekanism:otherdust> * 4,
             crushingByprod1: <thermalfoundation:material:768>,
             crushingByprod2: <actuallyadditions:item_dust:2> * 2,
 
@@ -3376,7 +3388,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         end: {
             item: <netherendingores:ore_end_vanilla:1>,
-            crushing: <mekanism:otherdust> * 5,
+            crushing_no_balls: <mekanism:otherdust> * 5,
+            balling: <mekanism:otherdust> * 5,
             crushingByprod1: <thermalfoundation:material:768> * 3,
             crushingByprod2: <contenttweaker:biotite_dust> * 2,
 
@@ -3386,7 +3399,7 @@ static ores2 as IItemStack[string][string][string] = {
 
         atum: {
             item: <atum:diamond_ore>,
-            crushing: <mekanism:otherdust> * 3,
+            crushing_no_balls: <mekanism:otherdust> * 3,
             crushingByprod1: <atum:dusty_bone>,
             crushingByprod2: <thermalfoundation:material:892> * 2,
 
@@ -3395,7 +3408,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         erebus: {
             item: <erebus:ore_diamond>,
-            crushing: <mekanism:otherdust> * 3,
+            crushing_no_balls: <mekanism:otherdust> * 3,
+            balling: <mekanism:otherdust> * 3,
             crushingByprod1: <thermalfoundation:material:768>,
             crushingByprod2: <thermalfoundation:material:892> * 2,
 
@@ -3404,7 +3418,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         volcanic: {
             item: <erebus:ore_encrusted_diamond>,
-            crushing: <mekanism:otherdust> * 3,
+            crushing_no_balls: <mekanism:otherdust> * 3,
+            balling: <mekanism:otherdust> * 3,
             crushingByprod1: <mekores:mekanismore:23>,
             crushingByprod2: <actuallyadditions:item_dust:2> * 2,
 
@@ -3540,7 +3555,8 @@ static ores2 as IItemStack[string][string][string] = {
     charged_certus: {
         overworld: {
             item: <appliedenergistics2:charged_quartz_ore>,
-            crushing: <appliedenergistics2:material:1> * 2,
+            crushing_no_balls: <appliedenergistics2:material:1> * 2,
+            balling: <appliedenergistics2:material:1> * 2,
             crushingByprod1: <appliedenergistics2:material:2>,
             crushingByprod2: <actuallyadditions:item_dust:7>,
 
@@ -3548,7 +3564,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         nether: {
             item: <netherendingores:ore_nether_modded_1:10>,
-            crushing: <appliedenergistics2:material:1> * 4,
+            crushing_no_balls: <appliedenergistics2:material:1> * 4,
+            balling: <appliedenergistics2:material:1> * 4,
             crushingByprod1: <appliedenergistics2:material:2>,
             crushingByprod2: <actuallyadditions:item_dust:7>,
 
@@ -3557,7 +3574,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         end: {
             item: <netherendingores:ore_end_modded_1:10>,
-            crushing: <appliedenergistics2:material:1> * 5,
+            crushing_no_balls: <appliedenergistics2:material:1> * 5,
+            balling: <appliedenergistics2:material:1> * 5,
             crushingByprod1: <appliedenergistics2:material:2>,
             crushingByprod2: <actuallyadditions:item_dust:7>,
 
@@ -3607,7 +3625,8 @@ static ores2 as IItemStack[string][string][string] = {
     aquamarine: {
         overworld: {
             item: <astralsorcery:blockcustomsandore>,
-            crushing: <contenttweaker:aquamarine_dust> * 4,
+            crushing_no_balls: <contenttweaker:aquamarine_dust> * 4,
+            balling: <contenttweaker:aquamarine_dust> * 4,
             crushingByprod1: <contenttweaker:aquamarine_dust>,
             crushingByprod2: <biomesoplenty:gem:6>,
 
@@ -3726,7 +3745,8 @@ static ores2 as IItemStack[string][string][string] = {
         erebus: {
             item: <contenttweaker:flolit_ore>,
 
-            crushing: <contenttweaker:flolit> * 4,
+            crushing_no_balls: <contenttweaker:flolit> * 4,
+            balling: <contenttweaker:flolit> * 4,
             crushingByprod1: <thermalfoundation:material:67>,
             crushingByprod2: <contenttweaker:flolit> * 2,
             cleaning: <contenttweaker:flolit> * 6,
@@ -3738,7 +3758,8 @@ static ores2 as IItemStack[string][string][string] = {
         erebus: {
             item: <erebus:ore_fossil>,
 
-            crushing: <erebus:materials:2> * 4,
+            crushing_no_balls: <erebus:materials:2> * 4,
+            balling: <erebus:materials:2> * 4,
             crushingByprod1: <minecraft:dye:15> * 3,
             crushingByprod2: <xreliquary:mob_ingredient>,
 
@@ -3829,7 +3850,8 @@ static ores2 as IItemStack[string][string][string] = {
         atum: {
             item: <atum:bone_ore>,
             furnace: <atum:dusty_bone>,
-            crushing: <atum:dusty_bone> * 2,
+            crushing_no_balls: <atum:dusty_bone> * 2,
+            balling: <atum:dusty_bone> * 2,
             crushingByprod1: <minecraft:dye:15> * 3,
             crushingByprod2: <contenttweaker:ancient_dust>
         }
@@ -3837,7 +3859,8 @@ static ores2 as IItemStack[string][string][string] = {
     khnumite: {
         raw: {
             item: <atum:khnumite_raw>,
-            crushing: <atum:khnumite> * 2,
+            crushing_no_balls: <atum:khnumite> * 2,
+            balling: <atum:khnumite> * 2,
             crushingByprod1: <appliedenergistics2:material:5>,
             crushingByprod2: <atum:khnumite> * 2,
 
@@ -3847,7 +3870,8 @@ static ores2 as IItemStack[string][string][string] = {
     oil: {
         sand: {
             item: <thermalfoundation:ore_fluid>,
-            crushing: <thermalfoundation:material:892> * 3,
+            crushing_no_balls: <thermalfoundation:material:892> * 3,
+            balling: <thermalfoundation:material:892> * 3,
             crushingByprod1: <thermalfoundation:material:833>,
             crushingByprod2: <thermalfoundation:material:892> * 2,
 
@@ -3856,7 +3880,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         redsand: {
             item: <thermalfoundation:ore_fluid:5>,
-            crushing: <thermalfoundation:material:892> * 3,
+            crushing_no_balls: <thermalfoundation:material:892> * 3,
+            balling: <thermalfoundation:material:892> * 3,
             crushingByprod1: <thermalfoundation:material:833>,
             crushingByprod2: <thermalfoundation:material:892> * 2,
 
@@ -3865,7 +3890,8 @@ static ores2 as IItemStack[string][string][string] = {
         },
         gravel: {
             item: <thermalfoundation:ore_fluid:1>,
-            crushing: <thermalfoundation:material:892> * 4,
+            crushing_no_balls: <thermalfoundation:material:892> * 3,
+            balling: <thermalfoundation:material:892> * 3,
             crushingByprod1: <thermalfoundation:material:833>,
             crushingByprod2: <thermalfoundation:material:892> * 2,
 
@@ -3925,7 +3951,8 @@ static ores2 as IItemStack[string][string][string] = {
     life_essence: {
         overworld: {
             item: <contenttweaker:life_essence_ore>,
-            crushing: <contenttweaker:blood_shard2> * 2,
+            crushing_no_balls: <contenttweaker:blood_shard2> * 2,
+            balling: <contenttweaker:blood_shard2> * 2,
             crushingByprod1: <contenttweaker:blood_shard1>,
             crushingByprod2: <contenttweaker:blood_shard2>,
 
@@ -4172,6 +4199,8 @@ val to_clean as IItemStack[][string] = {
     EIO_sag: [
         <minecraft:clay>,
         <ore:sand>.firstItem,
+        <natura:materials>,
+        <minecraft:netherrack>,
 
         <mysticalagriculture:prosperity_ore>,
         <mysticalagriculture:nether_prosperity_ore>,
@@ -4196,7 +4225,17 @@ val to_clean as IItemStack[][string] = {
         <appliedenergistics2:quartz_ore>,
         <appliedenergistics2:charged_quartz_ore>,
 
-        <contenttweaker:orichalcum_ore>
+        <contenttweaker:orichalcum_ore>,
+
+        <netherendingores:ore_other_1:4>,
+        <contenttweaker:poor_iron_ore>,
+        <thermalfoundation:ore_fluid:1>,
+        <thermalfoundation:ore_fluid:2>,
+        <thermalfoundation:ore_fluid:3>,
+        <thermalfoundation:ore_fluid:4>,
+        <minecraft:quartz_ore>,
+        //<minecraft:iron_ore>,
+        
     ]
     
 };

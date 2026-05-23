@@ -1,9 +1,13 @@
 {
-	x: -3.0d,
-	y: 7.5d,
+	x: -2.0d,
+	y: 6.5d,
+	text: [
+		"Yes that is 16 777 216 ingots of steel in one item. "
+	],
 	dependencies: [
 		"782fc8e8"
 	],
+	optional: true,
 	tasks: [{
 		uid: "ebef0c96",
 		type: "item",

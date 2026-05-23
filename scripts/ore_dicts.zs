@@ -220,6 +220,7 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
     <ore:oreSpaceSilver>.add(<contenttweaker:argyrodite_ore>);
     <ore:oreMoissanite>.add(<contenttweaker:moissanite_ore>);
+    <ore:oreXenotime>.add(<contenttweaker:xenotime_ore>);
 
     <ore:oreBeryllium>.add(<contenttweaker:beryllium_ore>);
 

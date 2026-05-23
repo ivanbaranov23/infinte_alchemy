@@ -279,6 +279,9 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     furnace.remove(<quark:biotite>);
 }
 
+
+
+
 //life essence
 //.add(<contenttweaker:life_essence_ore>);
 <ore:dustLifeEssence>.add(<contenttweaker:blood_shard2>);

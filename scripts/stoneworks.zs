@@ -104,7 +104,12 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
         //other basalt
         mods.thermalexpansion.Transposer.addFillRecipe(
             <taiga:basalt_block>, 
-            <minecraft:obsidian>, 
+            <contenttweaker:basalt_dust>, 
+            <liquid:thermal> * 144, 4500
+        );
+        mods.thermalexpansion.Transposer.addFillRecipe(
+            <taiga:basalt_block> * 3, 
+            <mysticalagriculture:basalt_essence>, 
             <liquid:thermal> * 144, 4500
         );
     }
@@ -122,6 +127,23 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
             <minecraft:ghast_tear>,
             12000
         );
+    }
+}
+{//sandstones
+    {//white
+        recipes.addShaped("ia_white_sand1", <biomesoplenty:white_sand> * 2, [
+            [<minecraft:sand>, <ore:dyeWhite>], 
+            [<ore:dyeWhite>, <minecraft:sand>]
+        ]);
+        recipes.addShaped("ia_white_sand2", <biomesoplenty:white_sand> * 4, [
+            [<minecraft:sand>, <appliedenergistics2:material:3> | <mekanism:salt> | <thermalfoundation:material:772>], 
+            [<appliedenergistics2:material:3> | <mekanism:salt> | <thermalfoundation:material:772>, <minecraft:sand>]
+        ]);
+        recipes.addShaped("ia_white_sand3", <biomesoplenty:white_sand> * 16, [
+            [<minecraft:sand>, <mysticalagriculture:saltpeter_essence>], 
+            [<mysticalagriculture:saltpeter_essence>, <minecraft:sand>]
+        ]);
+        
     }
 }
 
@@ -228,6 +250,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     ]);
 }
 {//rainbow
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:rainbow> * 1000, <extrautils2:decorativesolid:8>, 4000);
 
     scripts.content_machines.addFluidAlloyerRecipe(
         <botania:shimmerrock>, 
@@ -692,8 +715,7 @@ addCobbleRecipe(<biomesoplenty:flesh> * 4, <biomesoplenty:flesh>,
     1, 128, true
 );
 mods.thermalexpansion.Sawmill.addRecipe(<biomesoplenty:fleshchunk> * 4, <biomesoplenty:flesh>, 2500);
-<biomesoplenty:fleshchunk>.displayName = "Chunk of Nether Flesh";
-<biomesoplenty:flesh>.displayName = "Nether Flesh";
+
 mods.thermalexpansion.Pulverizer.addRecipe(<prodigytech:meat_ground>, <biomesoplenty:fleshchunk>, 2000, <prodigytech:meat_ground>, 50);
 mods.mekanism.crusher.addRecipe(<biomesoplenty:fleshchunk>, <prodigytech:meat_ground> * 2);
 mods.enderio.SagMill.addRecipe(

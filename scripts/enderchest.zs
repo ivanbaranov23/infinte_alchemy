@@ -31,9 +31,9 @@ import mods.ctutils.utils.Math;
 		[<contenttweaker:mirion2_ingot>, <botania:rune:11>, <contenttweaker:mirion2_ingot>]
 	]);
 	recipes.addShaped("ia_ender_chest4", <enderstorage:ender_storage> * 64, [
-		[<draconicevolution:draconic_ingot>, <projecte:item.pe_covalence_dust:1>, <draconicevolution:draconic_ingot>], 
+		[<draconicevolution:draconic_ingot>, <contenttweaker:dark_matter>, <draconicevolution:draconic_ingot>], 
 		[<contenttweaker:singularity_dust> | <contenttweaker:wormholium>, <avaritiaddons:avaritiaddons_chest>, <contenttweaker:singularity_dust> | <contenttweaker:wormholium>], 
-		[<draconicevolution:draconic_ingot>, <projecte:item.pe_covalence_dust:1>, <draconicevolution:draconic_ingot>]
+		[<draconicevolution:draconic_ingot>, <contenttweaker:dark_matter>, <draconicevolution:draconic_ingot>]
 	]);
 }
 

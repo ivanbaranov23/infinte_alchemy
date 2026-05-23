@@ -48,9 +48,50 @@ var mil as int = 1000000;
 	rec.addEnergyPerTickInput(50 * mil);
 
 	rec.addItemInput(<contenttweaker:electricium>);
+    rec.addItemInput(<contenttweaker:barion1>);
+    rec.addItemInput(<contenttweaker:methanium>);
+    
+    rec.addItemOutput(<contenttweaker:proton> * 1);
+	rec.build();
+}
+{var rec = RecipeBuilder.newBuilder("proton2", "donut", 5);
+	rec.addEnergyPerTickInput(150 * mil);
+
+	rec.addItemInput(<contenttweaker:electricium>);
     rec.addItemInput(<contenttweaker:barion2>);
+    rec.addItemInput(<contenttweaker:methanium> * 2);
+    
+    rec.addItemOutput(<contenttweaker:proton> * 4);
+	rec.build();
+}
+{var rec = RecipeBuilder.newBuilder("proton3", "donut", 5);
+	rec.addEnergyPerTickInput(250 * mil);
+
+	rec.addItemInput(<contenttweaker:electricium>);
+    rec.addItemInput(<contenttweaker:barion3>);
+    rec.addItemInput(<contenttweaker:methanium> * 4);
+    
+    rec.addItemOutput(<contenttweaker:proton> * 16);
+	rec.build();
+}
+{var rec = RecipeBuilder.newBuilder("proton4", "donut", 5);
+	rec.addEnergyPerTickInput(350 * mil);
+
+	rec.addItemInput(<contenttweaker:electricium>);
+    rec.addItemInput(<contenttweaker:barion4>);
+    rec.addItemInput(<contenttweaker:methanium> * 8);
     
     rec.addItemOutput(<contenttweaker:proton> * 64);
+	rec.build();
+}
+{var rec = RecipeBuilder.newBuilder("proton5", "donut", 5);
+	rec.addEnergyPerTickInput(450 * mil);
+
+	rec.addItemInput(<contenttweaker:electricium>);
+    rec.addItemInput(<contenttweaker:barion5>);
+    rec.addItemInput(<contenttweaker:methanium> * 16);
+    
+    rec.addItemOutput(<contenttweaker:proton> * 256);
 	rec.build();
 }
 

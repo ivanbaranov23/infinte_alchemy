@@ -402,6 +402,7 @@ FusionCrafting.add(
 		<contenttweaker:mirion2_singularity>
     ]
 );
+
 FusionCrafting.add(
     <contenttweaker:gem_singularity>, <contenttweaker:singularity_dust>, 
     FusionCrafting.DRACONIC, 100 * 1000 * 1000, [
@@ -416,6 +417,38 @@ FusionCrafting.add(
 		<extendedcrafting:singularity_custom:37>
     ]
 );
+FusionCrafting.add(
+    <contenttweaker:gem_singularity2>, <contenttweaker:singularity_dust>, 
+    FusionCrafting.DRACONIC, 100 * 1000 * 1000, [
+		<extendedcrafting:singularity_custom:76>,
+		<extendedcrafting:singularity_custom:55>,
+		<extendedcrafting:singularity_custom:78>,
+		<extendedcrafting:singularity:6>,
+		<extendedcrafting:singularity:7>,
+		<extendedcrafting:singularity_custom:81>,
+		<extendedcrafting:singularity_custom:6>,
+		<extendedcrafting:singularity_custom:29>
+    ]
+);
+
+FusionCrafting.add(
+    <contenttweaker:gem_singularity3>, <contenttweaker:singularity_dust>, 
+    FusionCrafting.DRACONIC, 100 * 1000 * 1000, [
+		<contenttweaker:gem_singularity>,
+		<contenttweaker:gem_singularity2>,
+
+		<extendedcrafting:singularity_custom:52>,
+		<contenttweaker:will_singularity>,
+		<contenttweaker:solar_silicon_singularity>,
+		<extendedcrafting:singularity_custom:71>,
+		<extendedcrafting:singularity_custom:79>,
+		<extendedcrafting:singularity_custom:101>
+    ]
+);
+
+
+
+
 FusionCrafting.add(
     <extendedcrafting:singularity_ultimate>, <contenttweaker:meta_singularity>, 
     FusionCrafting.DRACONIC, 1000 * 1000 * 1000, [

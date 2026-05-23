@@ -55,7 +55,16 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
     ]);
     <contenttweaker:ammonium_chloride>.addTooltip("NH₄Cl");
 }
-
+{//noble
+    Dissolver.addRecipe(<contenttweaker:noble_gases_ingot>, false, 2,
+        [
+            [75, <alchemistry:element:10>],
+            [50, <alchemistry:element:18>],
+            [25, <alchemistry:element:36>],
+            [15, <alchemistry:element:54>]
+        ]
+    );
+}
 {//chlorosulfonic
     addFluidConv(<contenttweaker:chlorosulfonic>, <liquid:chlorosulfonic>);
     <contenttweaker:chlorosulfonic>.addTooltip("ClSO₃H");
@@ -64,6 +73,20 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
         <bloodmagic:slate:3>, <liquid:liquidsulfurtrioxide> * 2000, <gas:hydrogenchloride> * 2000, 
         null, <gas:chlorosulfonic> * 25, 50000, 5
     );
+}
+{//fluoroantimonic
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:fluoroantimonic_acid>, <alchemistry:compound:516>, 
+        <liquid:acid1> * 1000, 
+        20000
+    );
+
+    addChemicalRecipe(
+        [<contenttweaker:methanium>, <alchemistry:compound:516> % 50, <alchemistry:compound:228> % 50],
+        [<alchemistry:compound:34>, <alchemistry:element:1>, <contenttweaker:fluoroantimonic_acid>],
+        []
+    );
+    
 }
 
 addFluidConv(<alchemistry:compound:34>, <liquid:methane>);

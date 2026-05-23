@@ -1165,8 +1165,6 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("terfenol_ingot").register();
     VanillaFactory.createBlock("terfenol_block", <blockmaterial:rock>).register();
 
-    VanillaFactory.createBlock("emc_ore", <blockmaterial:rock>).register();
-
     VanillaFactory.createItem("pandemonium_ingot").register();
     VanillaFactory.createItem("pandemonium_plate").register();
 
@@ -1473,23 +1471,24 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     var meta_singularity = VanillaFactory.createItem("meta_singularity");
     meta_singularity.setRarity("epic");
     meta_singularity.register();
-    VanillaFactory.createItem("mushroomite_singularity").register();
-    VanillaFactory.createItem("mana_dust_singularity").register();
-    VanillaFactory.createItem("fiery_singularity").register();
-    VanillaFactory.createItem("evil_singularity").register();
-    VanillaFactory.createItem("neodymium_singularity").register();
-    VanillaFactory.createItem("solar_silicon_singularity").register();
-    VanillaFactory.createItem("neuro_singularity").register();
-    VanillaFactory.createItem("mirion2_singularity").register();
 
-    VanillaFactory.createItem("metal_singularity").register();
-    VanillaFactory.createItem("metal_singularity2").register();
-    VanillaFactory.createItem("metal_singularity3").register();
-    VanillaFactory.createItem("gem_singularity").register();
-    VanillaFactory.createItem("gem_singularity2").register();
-    VanillaFactory.createItem("gem_singularity3").register();
-    VanillaFactory.createItem("will_singularity").register();
-    VanillaFactory.createItem("neutronium_singularity").register();
+    addItem("mushroomite_singularity", "uncommon", 64);
+    addItem("mana_dust_singularity", "uncommon", 64);
+    addItem("fiery_singularity", "uncommon", 64);
+    addItem("evil_singularity", "uncommon", 64);
+    addItem("neodymium_singularity", "uncommon", 64);
+    addItem("solar_silicon_singularity", "uncommon", 64);
+    addItem("neuro_singularity", "uncommon", 64);
+    addItem("mirion2_singularity", "uncommon", 64);
+
+    addItem("metal_singularity", "uncommon", 64);
+    addItem("metal_singularity2", "uncommon", 64);
+    addItem("metal_singularity3", "uncommon", 64);
+    addItem("gem_singularity", "uncommon", 64);
+    addItem("gem_singularity2", "uncommon", 64);
+    addItem("gem_singularity3", "uncommon", 64);
+    addItem("will_singularity", "uncommon", 64);
+    addItem("neutronium_singularity", "uncommon", 64);
 }
 
 
@@ -2652,11 +2651,6 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("supersalt").register();
 
     var tar_light = VanillaFactory.createBlock("tar_light", <blockmaterial:rock>);
-    //tar_light.setFullBlock(false);
-    //tar_light.setPassable(true);
-    //tar_light.setBlockLayer("TRANSLUCENT");
-    //tar_light.setLightOpacity(0);
-    //tar_light.setTranslucent(true);
     tar_light.lightValue = 1;
     tar_light.register();
 
@@ -3415,6 +3409,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("lree").register();
     VanillaFactory.createItem("hree").register();
     VanillaFactory.createItem("dehpa").register();
+
+    VanillaFactory.createItem("dark_matter").register();
 }
 {//alchemistry
     VanillaFactory.createItem("didymium").register();
@@ -3542,6 +3538,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("grubbs2").register();
 
     VanillaFactory.createItem("self_healing_polymer").register();
+
+    VanillaFactory.createItem("fluoroantimonic_acid").register();
+    VanillaFactory.createItem("methanium").register();
 
     
     VanillaFactory.createItem("yag_ceramic").register();

@@ -8,6 +8,10 @@ import crafttweaker.enchantments.IEnchantmentDefinition;
 
 import mods.modularmachinery.RecipeBuilder;
 
+import mods.thermalexpansion.Enchanter as TE_ench;
+import mods.enderio.Enchanter as EIO_ench;
+
+
 import mods.requious.Assembly;
 import mods.requious.AssemblyRecipe;
 
@@ -110,7 +114,7 @@ val minute_t as int = 20 * 1;
 {//enchantium
     scripts.content_machines.addAdvancedMixerRecipe(
         [],
-        [<liquid:enchantium> * 200],
+        [<liquid:enchantium> * 500],
         [
             <extrautils2:ingredients:12> * 4,
             <minecraft:dye:4> * 4,
@@ -126,7 +130,7 @@ val minute_t as int = 20 * 1;
     mods.thermalexpansion.Crucible.addRecipe(<liquid:enchantium> * 4000, <contenttweaker:enchantium_chunk>, 30000);
 
     scripts.content_machines.addBioAssemblerRecipe(
-        [<contenttweaker:enchantium_chunk> * 8], null,
+        [<contenttweaker:enchantium_chunk> * 16], null,
         [
             <extendedcrafting:singularity:2> * 2,
             <extendedcrafting:singularity_custom:7>
@@ -175,6 +179,47 @@ addLargeEnchanterRecipeChain(<apotheosis:weapon_book>, <enchantment:minecraft:sh
     minute_t / 2, minute_t * 3 / 2,
     100, 100
 );
+
+{//looting
+    TE_ench.removeRecipe(<minecraft:book>, <minecraft:gold_ingot>);
+    EIO_ench.removeRecipe(<enchantment:minecraft:looting>);
+
+    TE_ench.addRecipe(
+        enchToBook(<enchantment:minecraft:looting>, 1), 
+        <apotheosis:weapon_book>, <extrautils2:decorativesolidwood:1> * 2,
+        24000, 3000, false
+    );
+    EIO_ench.addRecipe(
+        <enchantment:minecraft:looting>, 
+        <extrautils2:decorativesolidwood:1>, 2, 1
+    );
+
+    addLargeEnchanterRecipeChain(<apotheosis:weapon_book>, <enchantment:minecraft:looting>, 6, 15,
+        [
+            [<extrautils2:decorativesolidwood:1> * 2],
+            [<extrautils2:decorativesolidwood:1> * 2],
+            [<extrautils2:decorativesolidwood:1> * 2],
+            [<extrautils2:decorativesolidwood:1> * 2],
+            [<extrautils2:decorativesolidwood:1> * 2],
+            [<extrautils2:decorativesolidwood:1> * 2],
+
+            [<extrautils2:decorativesolidwood:1> * 4],
+            [<extrautils2:decorativesolidwood:1> * 4],
+            [<extrautils2:decorativesolidwood:1> * 8],
+            [<extrautils2:decorativesolidwood:1> * 8],
+            [<extrautils2:decorativesolidwood:1> * 16],
+            [<extrautils2:decorativesolidwood:1> * 16],
+            [<extrautils2:decorativesolidwood:1> * 32],
+            [<extrautils2:decorativesolidwood:1> * 32],
+            [<extrautils2:decorativesolidwood:1> * 64],
+
+        ],
+        1000, 500,
+        minute_t, minute_t / 2,
+        100, 100
+    );
+}
+
 addLargeEnchanterRecipeChain(<apotheosis:weapon_book>, <enchantment:minecraft:knockback>, 4, 8,
     [
         [<minecraft:piston>],
@@ -390,7 +435,7 @@ addLargeEnchanterRecipeChain(<minecraft:book>, <enchantment:apotheosis:hell_infu
     -<enchantment:minecraft:bane_of_arthropods> - Bane of Arthropods I (at level 1, max level 5, treasure: no, enchant id 18)
     -<enchantment:endercore:xpboost> - XP Boost I (at level 1, max level 3, treasure: no, enchant id 29)
     -<enchantment:minecraft:silk_touch> - Silk Touch (at level 1, max level 1, treasure: no, enchant id 33)
-    -<enchantment:minecraft:looting> - Looting I (at level 1, max level 3, treasure: no, enchant id 21)
+    - - Looting I (at level 1, max level 3, treasure: no, enchant id 21)
     -<enchantment:extrautils2:xu.zoomerang> - Zoomerang I (at level 1, max level 3, treasure: no, enchant id 13)
     -<enchantment:minecraft:depth_strider> - Depth Strider I (at level 1, max level 3, treasure: no, enchant id 8)
     -<enchantment:minecraft:respiration> - Respiration I (at level 1, max level 3, treasure: no, enchant id 5)

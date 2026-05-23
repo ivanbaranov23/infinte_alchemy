@@ -194,6 +194,12 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["oxygen", 2]
         ]
     );
+    createCompound(228, "hydrogen_fluoride", 129, 54, 78,
+        [
+            ["hydrogen", 1],
+            ["fluorine", 1]
+        ]
+    );
     
 }
 
@@ -297,6 +303,18 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
         [
             ["sodium", 1],
             ["bromine", 1]
+        ]
+    );
+    createCompound(515, "gold_fluoride", 152, 109, 96,
+        [
+            ["gold", 1],
+            ["fluorine", 3]
+        ]
+    );
+    createCompound(516, "antimony_pentafluoride", 20, 240, 111,
+        [
+            ["antimony", 1],
+            ["fluorine", 5]
         ]
     );
 }

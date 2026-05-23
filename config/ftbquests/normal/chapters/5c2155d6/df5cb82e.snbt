@@ -2,7 +2,9 @@
 	x: 4.0d,
 	y: 2.0d,
 	text: [
-		"Find a balsam tree. Break it's logs for resin. Take a few saplings with you home."
+		"Find a balsam tree. Break it's logs for resin. Take a few saplings with you home.",
+		"",
+		"If you can't find it, you can use flower growth ritual next to some mud to create it."
 	],
 	dependencies: [
 		"2266a5db"

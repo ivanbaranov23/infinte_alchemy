@@ -30,6 +30,16 @@ addMBTooltip(<modularmachinery:large_sifter_controller>, {
 });
 
 
+addMBTooltip(<modularmachinery:essence_extractor_controller>, {
+    <contenttweaker:essence_pump1>: "ia.mb_tooltip.ee_pump1",
+    <contenttweaker:essence_pump2>: "ia.mb_tooltip.ee_pump2",
+    <contenttweaker:essence_pump3>: "ia.mb_tooltip.ee_pump3",
+    <contenttweaker:essence_pump4>: "ia.mb_tooltip.ee_pump4",
+    <contenttweaker:essence_pump5>: "ia.mb_tooltip.ee_pump5",
+    <contenttweaker:essence_pump6>: "ia.mb_tooltip.ee_pump6",
+});
+
+
 addMBTooltip(<modularmachinery:large_cobblegen_controller>, {
     <contenttweaker:rune_water_block>: "ia.mb_tooltip.lcg_water",
     <contenttweaker:rune_fire_block>: "ia.mb_tooltip.lcg_fire",

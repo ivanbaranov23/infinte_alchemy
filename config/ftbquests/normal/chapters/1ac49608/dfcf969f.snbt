@@ -1,6 +1,6 @@
 {
 	title: "Machine Frame 10",
-	x: 2.0d,
+	x: 3.0d,
 	y: 2.0d,
 	shape: "square",
 	text: [
@@ -8,7 +8,6 @@
 	],
 	dependencies: [
 		"efeb5dc0",
-		"44475ad0",
 		"395610a5"
 	],
 	tasks: [{

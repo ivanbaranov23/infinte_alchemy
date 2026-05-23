@@ -296,8 +296,8 @@ import mods.modularmachinery.RecipeBuilder;
 }
 {//lithium
     mods.mekanism.reaction.addRecipe(
-        <mekanism:otherdust:4> * 3, <liquid:sand> * 250, <gas:deuterium> * 1000, 
-        <taiga:dilithium_crystal>, <gas:tritium> * 1000, 1000, 20
+        <mekanism:otherdust:4> * 4, <liquid:sand> * 250, <gas:deuterium> * 1000, 
+        <taiga:dilithium_crystal> * 2, <gas:tritium> * 1000, 1000, 20
     );
 }
 {//silicon

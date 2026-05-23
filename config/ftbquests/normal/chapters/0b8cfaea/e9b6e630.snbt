@@ -11,6 +11,7 @@
 		type: "item",
 		items: [{
 			item: "exnihilocreatio:item_mesh 1 2"
-		}]
+		}],
+		ignore_nbt: 1b
 	}]
 }

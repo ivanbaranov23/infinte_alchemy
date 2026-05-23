@@ -11,5 +11,10 @@
 		items: [{
 			item: "extrautils2:compressedcobblestone 1 7"
 		}]
+	}],
+	rewards: [{
+		uid: "cee1b3aa",
+		type: "item",
+		item: "contenttweaker:quest_coin"
 	}]
 }

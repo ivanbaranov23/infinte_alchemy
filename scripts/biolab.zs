@@ -701,15 +701,20 @@ addBiolabRecipe(
             [<contenttweaker:manamass>], 
             [
                 <contenttweaker:biomaterial2>,
-                <botania:quartz:1> * 4,
-                <contenttweaker:terra_base>
+                <botania:quartz:1> * 1,
+                <contenttweaker:terra_base>,
+                <contenttweaker:ender_bacteria> * 4,
             ], [
-                <liquid:mana_juice> * 12000,
-                <liquid:unknown> * 5000
+                <liquid:mana_juice> * 8000,
+                <liquid:unknown> * 3000
             ], [],
             60, 5000, 500
         );
-        
+        Transposer.addExtractRecipe(
+            <liquid:mysterious> * 5000,
+            <contenttweaker:manamass>, 10000,
+            <contenttweaker:dirty_biocell>
+        );
     }
 }
 

@@ -43,3 +43,19 @@ recipes.addShaped("open_saw", <mob_grinding_utils:saw>, [
 	[<mob_grinding_utils:spikes>, <thermalfoundation:material:640>, <mob_grinding_utils:spikes>], 
 	[<extrautils2:spike_diamond>, <thermalexpansion:frame:64>, <extrautils2:spike_diamond>]
 ]);
+
+
+{
+	recipes.remove(<mob_grinding_utils:saw_upgrade>);
+	recipes.addShaped("ia_saw_upgrade_sharpness", <mob_grinding_utils:saw_upgrade> * 2, [
+		[<moreplates:redstone_alloy_plate>, <thermalfoundation:material:33>, <moreplates:redstone_alloy_plate>], 
+		[<thermalfoundation:material:33>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 16, lvl: 1 as short}]}), <thermalfoundation:material:33>], 
+		[<moreplates:redstone_alloy_plate>, <thermalfoundation:material:33>, <moreplates:redstone_alloy_plate>]
+	]);
+	recipes.remove(<mob_grinding_utils:saw_upgrade:1>);
+	recipes.addShaped("ia_saw_upgrade_looting", <mob_grinding_utils:saw_upgrade:1> * 2, [
+		[<moreplates:redstone_alloy_plate>, <thermalfoundation:material:33>, <moreplates:redstone_alloy_plate>], 
+		[<thermalfoundation:material:33>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 21, lvl: 1 as short}]}), <thermalfoundation:material:33>], 
+		[<moreplates:redstone_alloy_plate>, <thermalfoundation:material:33>, <moreplates:redstone_alloy_plate>]
+	]);
+}

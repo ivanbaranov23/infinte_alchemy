@@ -8,10 +8,10 @@
 	],
 	size: 2.0d,
 	tasks: [{
-		uid: "763c20d0",
+		uid: "37d56538",
 		type: "item",
 		items: [{
-			item: "projecte:item.pe_matter"
+			item: "contenttweaker:dark_matter"
 		}]
 	}],
 	rewards: [{

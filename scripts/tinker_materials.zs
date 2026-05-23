@@ -496,7 +496,72 @@ import crafttweaker.entity.IEntityItem;
     mat.localizedName = "Soap";
     mat.register();
 }
+{//wormium
+    val mat = MaterialBuilder.create("wormium");
+    mat.color = 0xedd27d;
 
+    mat.craftable = true;
+    mat.castable = false;
+
+    mat.addItem(<item:contenttweaker:wormium_ingot>);
+    mat.representativeItem = <item:contenttweaker:wormium_ingot>;
+
+    mat.addHeadMaterialStats(2000, 5.5f, 8.5f, 4);
+    mat.addHandleMaterialStats(1.25, 100);
+    mat.addExtraMaterialStats(160);
+
+    mat.addMaterialTrait("ecological", null);
+    mat.addMaterialTrait("unnatural", null);
+    mat.addMaterialTrait("slimey_green", null);
+
+    mat.itemLocalizer = function(thisMaterial, itemName){return "Wormium " + itemName;};
+    mat.localizedName = "Wormium";
+    mat.register();
+}
+{//titanworm_steel
+    val mat = MaterialBuilder.create("titanworm_steel");
+    mat.color = 0x41621c;
+
+    mat.craftable = true;
+    mat.castable = false;
+
+    mat.addItem(<item:contenttweaker:titanworm_steel_ingot>);
+    mat.representativeItem = <item:contenttweaker:titanworm_steel_ingot>;
+
+    mat.addHeadMaterialStats(4000, 6.5f, 12.5f, 5);
+    mat.addHandleMaterialStats(1.25, 100);
+    mat.addExtraMaterialStats(160);
+
+    mat.addMaterialTrait("ecological", null);
+    mat.addMaterialTrait("unnatural", null);
+    mat.addMaterialTrait("slimey_green", null);
+    mat.addMaterialTrait("enderference", null);
+    mat.addMaterialTrait("stalwart", null);
+
+    mat.itemLocalizer = function(thisMaterial, itemName){return "Titanworm Steel " + itemName;};
+    mat.localizedName = "Titanworm Steel";
+    mat.register();
+}
+{//bedrockium
+    val mat = MaterialBuilder.create("bedrockium");
+    mat.color = 0x333333;
+
+    mat.craftable = true;
+    mat.castable = false;
+
+    mat.addItem(<item:contenttweaker:bedrockium_small_chunk>);
+    mat.representativeItem = <item:contenttweaker:bedrockium_small_chunk>;
+
+    mat.addHeadMaterialStats(12000, 6.5f, 6.5f, 4);
+    mat.addHandleMaterialStats(1.0, 100);
+    mat.addExtraMaterialStats(1600);
+
+    mat.addMaterialTrait("dense", null);
+
+    mat.itemLocalizer = function(thisMaterial, itemName){return "Bedrockium " + itemName;};
+    mat.localizedName = "Bedrockium";
+    mat.register();
+}
 
 
 val fake_crystalline_base = TraitBuilder.create("fake_crystalline");
@@ -614,7 +679,7 @@ var fake_crystalline = fake_crystalline_base.register();
     mat.liquid = <liquid:arkenium>;
     mat.representativeItem = <item:contenttweaker:arkenium_ingot>;
 
-    mat.addHeadMaterialStats(700, 6.5f, 6.5f, 3);//stone tool level
+    mat.addHeadMaterialStats(1200, 6.5f, 6.5f, 3);//stone tool level
     mat.addHandleMaterialStats(1.25, 100);
     mat.addExtraMaterialStats(60);
     mat.addProjectileMaterialStats();

@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: 6.0d,
+	dependencies: [
+		"0a742663",
+		"995eef61"
+	],
+	tasks: [{
+		uid: "941bb5a3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gem_singularity3"
+		}]
+	}]
+}

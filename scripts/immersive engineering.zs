@@ -275,6 +275,11 @@ mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.wi
 		[<ore:wireCopper>, <ore:stickTreatedWood>, <ore:wireCopper>], 
 		[<immersiveengineering:treated_wood>, <ore:wireCopper>, <contenttweaker:algae_string>]
 	]);
+	recipes.addShaped("ia_ie_lv_coil3", <immersiveengineering:wirecoil> * 2, [
+		[<immersiveengineering:treated_wood>, <ore:wireCopper>, <contenttweaker:algae_string>], 
+		[<ore:wireCopper>, <ore:stickTreatedWood>, <ore:wireCopper>], 
+		[<contenttweaker:algae_string>, <ore:wireCopper>, <immersiveengineering:treated_wood>]
+	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<immersiveengineering:wirecoil> * 6],
 		[<ore:stickTreatedWood>, <ore:wireCopper> * 4, <contenttweaker:algae_string>],
@@ -291,6 +296,11 @@ mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.wi
 		[<contenttweaker:algae_string>, <ore:wireElectrum>, <immersiveengineering:treated_wood>], 
 		[<ore:wireElectrum>, <ore:stickTreatedWood>, <ore:wireElectrum>], 
 		[<immersiveengineering:treated_wood>, <ore:wireElectrum>, <contenttweaker:algae_string>]
+	]);
+	recipes.addShaped("ia_ie_mv_coil3", <immersiveengineering:wirecoil:1> * 2, [
+		[<immersiveengineering:treated_wood>, <ore:wireElectrum>, <contenttweaker:algae_string>], 
+		[<ore:wireElectrum>, <ore:stickTreatedWood>, <ore:wireElectrum>], 
+		[<contenttweaker:algae_string>, <ore:wireElectrum>, <immersiveengineering:treated_wood>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<immersiveengineering:wirecoil:1> * 6],
@@ -309,6 +319,11 @@ mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.wi
 		[<ore:wireSteel>, <ore:stickTreatedWood>, <ore:wireSteel>], 
 		[<immersiveengineering:treated_wood>, <ore:wireSteel>, <contenttweaker:algae_string>]
 	]);
+	recipes.addShaped("ia_ie_hv_coil3", <immersiveengineering:wirecoil:2> * 2, [
+		[<immersiveengineering:treated_wood>, <ore:wireSteel>, <contenttweaker:algae_string>], 
+		[<ore:wireSteel>, <ore:stickTreatedWood>, <ore:wireSteel>], 
+		[<contenttweaker:algae_string>, <ore:wireSteel>, <immersiveengineering:treated_wood>]
+	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<immersiveengineering:wirecoil:2> * 6],
 		[<ore:stickTreatedWood>, <ore:wireSteel> * 4, <contenttweaker:algae_string>],
@@ -326,6 +341,11 @@ mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.wi
 		[<contenttweaker:tungsten_wire>, <ore:stickTreatedWood>, <contenttweaker:tungsten_wire>], 
 		[<immersiveengineering:treated_wood>, <contenttweaker:tungsten_wire>, <contenttweaker:algae_string>]
 	]);
+	recipes.addShaped("ia_ie_ev_coil3", <contenttweaker:tungsten_coil> * 2, [
+		[<immersiveengineering:treated_wood>, <contenttweaker:tungsten_wire>, <contenttweaker:algae_string>], 
+		[<contenttweaker:tungsten_wire>, <ore:stickTreatedWood>, <contenttweaker:tungsten_wire>], 
+		[<contenttweaker:algae_string>, <contenttweaker:tungsten_wire>, <immersiveengineering:treated_wood>]
+	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:tungsten_coil> * 6],
 		[<ore:stickTreatedWood>, <contenttweaker:tungsten_wire> * 4, <contenttweaker:algae_string>],
@@ -342,6 +362,11 @@ mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.wi
 		[<contenttweaker:algae_string>, <contenttweaker:gold_wire>, <immersiveengineering:treated_wood>], 
 		[<contenttweaker:gold_wire>, <ore:stickTreatedWood>, <contenttweaker:gold_wire>], 
 		[<immersiveengineering:treated_wood>, <contenttweaker:gold_wire>, <contenttweaker:algae_string>]
+	]);
+	recipes.addShaped("ia_gold_coil3", <contenttweaker:gold_coil> * 2, [
+		[<immersiveengineering:treated_wood>, <contenttweaker:gold_wire>, <contenttweaker:algae_string>], 
+		[<contenttweaker:gold_wire>, <ore:stickTreatedWood>, <contenttweaker:gold_wire>], 
+		[<contenttweaker:algae_string>, <contenttweaker:gold_wire>, <immersiveengineering:treated_wood>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:gold_coil> * 6],

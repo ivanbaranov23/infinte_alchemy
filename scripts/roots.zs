@@ -526,6 +526,23 @@ Rituals.modifyRitual("ritual_transmutation", [
 
         ia_roots_mushroom: <minecraft:mycelium>,
 
+        ia_botania_flower0: <minecraft:grass>,
+        ia_botania_flower1: <minecraft:grass>,
+        ia_botania_flower2: <minecraft:grass>,
+        ia_botania_flower3: <minecraft:grass>,
+        ia_botania_flower4: <minecraft:grass>,
+        ia_botania_flower5: <minecraft:grass>,
+        ia_botania_flower6: <minecraft:grass>,
+        ia_botania_flower7: <minecraft:grass>,
+        ia_botania_flower8: <minecraft:grass>,
+        ia_botania_flower9: <minecraft:grass>,
+        ia_botania_flower10: <minecraft:grass>,
+        ia_botania_flower11: <minecraft:grass>,
+        ia_botania_flower12: <minecraft:grass>,
+        ia_botania_flower13: <minecraft:grass>,
+        ia_botania_flower14: <minecraft:grass>,
+        ia_botania_flower15: <minecraft:grass>,
+
         ia_botania_mushroom0: <minecraft:mycelium>,
         ia_botania_mushroom1: <minecraft:mycelium>,
         ia_botania_mushroom2: <minecraft:mycelium>,
@@ -546,7 +563,7 @@ Rituals.modifyRitual("ritual_transmutation", [
         quark_glowshroom: <quark:glowcelium>,
 
         sapling_palm: <twilightforest:uberous_soil>,
-        sapling_floweroak: <twilightforest:uberous_soil>,
+        sapling_floweroak: <minecraft:grass>,
         sapling_balsam: <erebus:mud>,
         sapling_mossbark: <erebus:mud>,
         sapling_bamboo: <erebus:mud>,
@@ -584,7 +601,7 @@ Rituals.modifyRitual("ritual_transmutation", [
         roots_flower_JEI.addJEICatalyst(<roots:ritual_flower_growth>);
         roots_flower_JEI.addJEICatalyst(<roots:pyre>);
     }
-    var anySoil as IItemStack = <minecraft:grass>.withDisplayName("Any acceptable soil");
+    var anySoil as IItemStack = <minecraft:dirt>.withDisplayName("Any acceptable soil");
 
     for flower_name in flower_recipes{
         if (flower_soils has flower_name){

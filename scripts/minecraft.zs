@@ -22,7 +22,7 @@ recipes.addShaped("ia_end_cake", <dimensionaledibles:end_cake>, [
 furnace.addRecipe(<minecraft:tallgrass>, <ore:treeSapling>);
 
 //charcoal
-scripts.helper.addSimpleCrushingRecipe(<minecraft:coal:1>, <thermalfoundation:material:769>);
+//scripts.helper.addSimpleCrushingRecipe(<minecraft:coal:1>, <thermalfoundation:material:769>);
 
 //furnace
 recipes.remove(<minecraft:furnace>);

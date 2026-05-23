@@ -2265,7 +2265,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_pipe>, [
 			<contenttweaker:tank_oxygen> * 24,
 			<contenttweaker:cooling_system> * 2,
 			<contenttweaker:tank2> * 4,
-			<alchemistry:ingot:42> * 24,
+			<contenttweaker:jet_alloy_plate> * 2,
 			<simplyjetpacks:metaitemmods:23> * 2
 		],
 		<liquid:tignalum> * (144 * 8), 20, 1024 

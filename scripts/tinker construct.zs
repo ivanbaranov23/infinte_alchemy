@@ -167,3 +167,9 @@ recipes.addShapeless("ia_apatite", <contenttweaker:apatite>, [
     <contenttweaker:research_tinker>.reuse(), 
     <minecraft:bone_block>, <minecraft:diamond>, <erebus:materials:2> | <atum:dusty_bone>
 ]);
+/*
+recipes.addShapeless("ia_bedrockium_small_chunk_research_tinker", <contenttweaker:bedrockium_small_chunk>, [
+    <contenttweaker:research_tinker>.reuse(),  
+    <extrautils2:compressedcobblestone:3>, <taiga:meteorite_dust>, <taiga:duranite_dust>,
+    <biomesoplenty:gem:6>, <biomesoplenty:gem:6>
+]);*/

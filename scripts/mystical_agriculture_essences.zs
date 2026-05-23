@@ -235,6 +235,11 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
     //sky stone
     infuser.addRecipe("FUNGI", 5, <mysticalagriculture:sky_stone_essence>, <appliedenergistics2:material:45> * 6);
     addEssenceRec_plus(<mysticalagriculture:sky_stone_essence>, <appliedenergistics2:sky_stone_block> * 16, <deepmoblearning:living_matter_overworldian>);
+
+    //basalt
+    infuser.addRecipe("FUNGI", 5, <mysticalagriculture:basalt_essence>, <chisel:basalt2:7> * 4);
+    addEssenceRec_1(<mysticalagriculture:basalt_essence>, <contenttweaker:basalt_dust> * 2);
+    
 }
 {//2
     infuser.addRecipe("FUNGI", 10, <mysticalagriculture:silicon_essence>, <appliedenergistics2:material:5> * 2);

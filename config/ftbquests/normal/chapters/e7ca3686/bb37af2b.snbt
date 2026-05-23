@@ -1,0 +1,20 @@
+{
+	x: 0.0d,
+	y: 8.0d,
+	text: [
+		"It is faster and somewhat cheaper to make max compressed cobble and uncompress it down. But that can take a lot of time. Use these cards to speed it up.",
+		"",
+		"Make a compression cell and add this card to it in cell workbench."
+	],
+	dependencies: [
+		"6bb94131"
+	],
+	optional: true,
+	tasks: [{
+		uid: "da4b8f38",
+		type: "item",
+		items: [{
+			item: "cells:decompression_tier_card"
+		}]
+	}]
+}

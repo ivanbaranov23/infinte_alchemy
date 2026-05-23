@@ -109,6 +109,7 @@ tconevo:immortality
 tconevo:mortal_wounds
 tconevo:damage_reduction
 tconevo:damage_boost
+tconevo:true_strike
 nutrition:toughness
 nutrition:nourished
 nutrition:malnourished

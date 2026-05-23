@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+  xsi:schemaLocation="http://enderio.com/recipes ../../../../../../../../enderio-conduits/src/main/resources/assets/enderio/config/recipes/examples/recipes.xsd ">
 
   <!-- This is an example for hard recipes. Copy this file into the enderio/config/recipes/user folder to activate it. -->
 

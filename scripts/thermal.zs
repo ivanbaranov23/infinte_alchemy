@@ -700,6 +700,17 @@ Sawmill.addRecipe(<thermalfoundation:material:816>, <harvestcraft:fruitbaititem>
 			<liquid:amaranth_juice>
 		]
 	);
+	scripts.jei.addJEIhint(
+		[], [],
+		[
+			<thermalexpansion:device:3>,
+			<twilightforest:twilight_sapling:9>
+		], [
+			<forge:bucketfilled>.withTag({FluidName: "rainbow", Amount: 1000})
+		], [
+			<liquid:rainbow>
+		]
+	);
 
 	scripts.jei.addJEIhint(
 		[], [],

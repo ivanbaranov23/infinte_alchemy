@@ -90,10 +90,4 @@ mods.bloodmagic.meteor.recipeBuilder()
     .cost(1000 * 1000)
     .register()
     
-mods.bloodmagic.meteor.recipeBuilder()
-    .catalyst(item('contenttweaker:onyx_unit2'))
-    .component(ore('blockDarkMatter'), 100)
-    .radius(5)
-    .explosionStrength(10)
-    .cost(2000 * 1000)
-    .register()
+

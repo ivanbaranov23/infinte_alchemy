@@ -707,4 +707,19 @@ scripts.content_machines.addFluidMixerRecipe(
         ], <contenttweaker:research_chemistry3>,
         10, 1000
     );
+
+    //echostone
+    scripts.content_machines.addBioAssemblerRecipe(
+        [<moretcon:gemechostone> * 32], null, 
+        [
+            <contenttweaker:pulse_generator> * 3,
+            <erebus:grandmas_shoes_mushroom> * 24,
+            <contenttweaker:bismuth_dust> * 3,
+            <contenttweaker:aquamarine_dust> * 3,
+            <taiga:tritonite_dust> * 12
+        ], [
+            <liquid:mysterious> * 50
+        ], <contenttweaker:research_chemistry3>,
+        20, 1000
+    );
 }

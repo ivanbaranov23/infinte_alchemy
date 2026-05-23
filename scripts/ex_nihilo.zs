@@ -402,6 +402,12 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<mysticalagriculture:crafting:5> % 25,
 			<appliedenergistics2:material:2> % 60
 		],
+		<biomesoplenty:white_sand>: [
+			<taiga:dilithium_crystal> % 1,
+			<exnihilocreatio:item_ore_aluminum> % 20,
+			<appliedenergistics2:material:3> % 30,
+			<thermalfoundation:material:772> % 20
+		],
 
 		<contenttweaker:lapis_gravel>: [
 			<enderio:item_material:32> % 10,
@@ -474,9 +480,10 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<exnihilocreatio:item_ore_titanium> % 1
 		],
 		<biomesoplenty:white_sand>: [
-			<taiga:dilithium_crystal> % 2,
-			<exnihilocreatio:item_ore_aluminum> % 10,
-			<appliedenergistics2:material:3> % 30
+			<taiga:dilithium_crystal> % 5,
+			<exnihilocreatio:item_ore_aluminum> % 30,
+			<appliedenergistics2:material:3> % 40,
+			<thermalfoundation:material:772> % 40
 		],
 
 		<contenttweaker:lapis_gravel>: [
@@ -523,9 +530,10 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<quark:biotite> % 5
 		],
 		<biomesoplenty:white_sand>: [
-			<taiga:dilithium_crystal> % 10,
-			<exnihilocreatio:item_ore_aluminum> % 50,
-			<appliedenergistics2:material:3> % 40
+			<taiga:dilithium_crystal> % 15,
+			<exnihilocreatio:item_ore_aluminum> % 60,
+			<appliedenergistics2:material:3> % 60,
+			<thermalfoundation:material:772> % 60,
 		],
 
 		<excompressum:compressed_block:8>: [

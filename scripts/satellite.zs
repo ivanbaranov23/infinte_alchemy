@@ -307,7 +307,7 @@ static sat_comp as IIngredient = <contenttweaker:satellite_computer>.marked("com
 static chip_data as float[string][string] = {
     //name: [min_sat, weight, sat bonus, luck bonus]
     iron_asteroid: {
-        minimum: 0, 
+        minimum: 1, 
         weight: 1000, 
         min_tier: 0
     },

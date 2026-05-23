@@ -1,13 +1,15 @@
 
 
-mods.thermalexpansion.tapper_tree.add(blockstate('botania:livingwood', 'variant=default'), blockstate('contenttweaker:revived_log'))
-mods.thermalexpansion.tapper.addBlock(item('botania:livingwood'), fluid('lava') * 150)
+
 
 mods.thermalexpansion.tapper.removeBlockByInput(item('natura:overworld_logs', 2))
 mods.thermalexpansion.tapper.addBlock(item('natura:overworld_logs', 2), fluid('amaranth_juice') * 50)
 
 mods.thermalexpansion.tapper_tree.add(blockstate('tconstruct:slime_congealed', 'type=green'), blockstate('tconstruct:slime_leaves', 'check_decay=false', 'decayable=true', 'foliage=blue'))
 mods.thermalexpansion.tapper.addBlock(item('tconstruct:slime_congealed'), fluid('blueslime') * 50)
+
+mods.thermalexpansion.tapper_tree.add(blockstate('twilightforest:twilight_log', 'axis=y', 'variant=oak'), blockstate('twilightforest:twilight_leaves', 'check_decay=false', 'decayable=true', 'variant=rainboak'))
+mods.thermalexpansion.tapper.addBlock(item('twilightforest:twilight_log'), fluid('rainbow') * 10)
 
 mods.thermalexpansion.tapper_fertilizer.add(item('minecraft:dye', 15), 2)
 mods.thermalexpansion.tapper_fertilizer.add(item('actuallyadditions:item_fertilizer'), 4)

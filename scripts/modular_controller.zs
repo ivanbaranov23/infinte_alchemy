@@ -140,6 +140,11 @@ recipes.addShaped("mm_tar_pit_controller", <modularmachinery:tar_pit_controller>
 ]);
 
 //AA
+recipes.addShaped("mm_cincinnasite_blaster_controller", <modularmachinery:cincinnasite_blaster_controller>, [
+	[<actuallyadditions:item_misc:8>, <betternether:cincinnasite_forged>, <actuallyadditions:item_misc:8>], 
+	[<betternether:cincinnasite_forged>, <actuallyadditions:block_misc:9>, <betternether:cincinnasite_forged>], 
+	[<actuallyadditions:item_misc:8>, <betternether:cincinnasite_forge>, <actuallyadditions:item_misc:8>]
+]);
 recipes.addShaped("mm_explosion_compressor_controller", <modularmachinery:explosion_compressor_controller>, [
 	[<ore:plateRefinedObsidian>, <bigreactors:reactorcasing>, <ore:plateRefinedObsidian>], 
 	[<mekanism:obsidiantnt>, <actuallyadditions:block_misc:9>, <mekanism:obsidiantnt>], 

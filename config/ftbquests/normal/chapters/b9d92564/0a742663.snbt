@@ -1,0 +1,11 @@
+{
+	x: 2.0d,
+	y: 6.0d,
+	tasks: [{
+		uid: "98b8d770",
+		type: "item",
+		items: [{
+			item: "contenttweaker:gem_singularity2"
+		}]
+	}]
+}

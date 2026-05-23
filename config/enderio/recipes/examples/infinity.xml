@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes ../../../../../../../../enderio-machines/src/main/resources/assets/enderio/config/recipes/examples/recipes.xsd ">
 
   <recipe name="Sagmill: Infinity Powder" required="true">
       <!-- Note: This recipe is not usually unusable; Ender IO does not add a way to get bedrock.
