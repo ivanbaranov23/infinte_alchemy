@@ -40,6 +40,31 @@ import mods.modularmachinery.RecipeBuilder;
 
 }
 
+{//ender
+    scripts.content_machines.basicFluidMixerRecipe(
+        <contenttweaker:ender_crystal>, <liquid:postender> * 500, 
+        <contenttweaker:singularity_dust>, [
+            <liquid:enderium> * (144 * 8),
+            <liquid:terrax_fluid> * (144 * 8)
+        ], 20, 1000
+    );
+    scripts.content_machines.basicFluidMixerRecipe(
+        <contenttweaker:ender_crystal>, <liquid:postender> * 500, 
+        <biomesoplenty:gem:5> * 4, [
+            <liquid:enderium> * (144 * 8),
+            <liquid:terrax_fluid> * (144 * 8)
+        ], 20, 1000
+    );
+    scripts.content_machines.basicFluidMixerRecipe(
+        <contenttweaker:ender_crystal>, <liquid:postender> * 500, 
+        <moretcon:gemenderal>, [
+            <liquid:enderium> * (144 * 4),
+            <liquid:terrax_fluid> * (144 * 4)
+        ], 20, 1000
+    );
+
+}
+
 {//evil
 
     //normal: 1 ns -> 8 ei
@@ -368,6 +393,39 @@ import mods.modularmachinery.RecipeBuilder;
     ]);
 
 }
+{//garstone
+    mods.enderio.Vat.addRecipe(
+        <liquid:garstone_sludge> * 1000, 1.0, <liquid:enriched_tar> * 1000, 
+        [<moretcon:gemgarstone>], [1.0], 
+        [
+            <prodigytech:energion_crystal_seed>,
+            <contenttweaker:aquamarine_dust>,
+            <moretcon:gemenderal>,
+            <thermalfoundation:material:894>
+        ], [
+            0.5,
+            0.75,
+            1.0,
+            1.25
+        ], 
+        125000
+    );
+
+
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <contenttweaker:filter_empty> % 100,
+            <contenttweaker:imperomite_catalyst_dust> % 100,
+            <contenttweaker:rhodium_dust> % 25,
+            <contenttweaker:rhodium1> % 50,
+            <contenttweaker:yellow_dust> % 100
+        ], <liquid:supersalty> * 500, 
+        <liquid:garstone_sludge> * 500, <contenttweaker:filter_yellow>,
+        <contenttweaker:uranium_mesh>,
+        20, 10000
+    );
+    
+}
 
 
 {//tartaric gel
@@ -402,6 +460,12 @@ import mods.modularmachinery.RecipeBuilder;
         <contenttweaker:living_waste>, <contenttweaker:fertilizer7>, 50 * 1000 * 1000,
         <contenttweaker:impure_mana_dust>, 20, 1000
     );
+}
+{//gularity
+    recipes.addShapeless("ia_gularity", <contenttweaker:gularity>, [
+        <contenttweaker:singularity_dust>, <contenttweaker:impure_mana_dust>
+    ]);
+
 }
 
 {//dense hydrogen
@@ -616,10 +680,10 @@ import mods.modularmachinery.RecipeBuilder;
     recipes.remove(<avaritia:resource>);
 
     mods.enderio.Vat.addRecipe(
-	    <liquid:diamond2> * 1000, 
-    	0.5, <liquid:diamond> * 1000,
+	    <liquid:diamond2> * 1000, 0.5, <liquid:diamond> * 1000,
     	[<taiga:prometheum_dust>], [1.0], 
-	    [<contenttweaker:aquamarine_dust>], [1.0], 100 * 1000
+	    [<contenttweaker:aquamarine_dust>], [1.0], 
+        100 * 1000
     );
     mods.mekanism.reaction.addRecipe(
         <actuallyadditions:item_crystal_empowered:2>, <liquid:diamond2> * 1000, <gas:rare_earth_slurry> * 500, 

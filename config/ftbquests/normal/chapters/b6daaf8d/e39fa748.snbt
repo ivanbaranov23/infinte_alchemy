@@ -20,5 +20,10 @@
 		uid: "77c53dd5",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "b3403e2c",
+		type: "item",
+		item: "dimensionaledibles:overworld_apple"
 	}]
 }

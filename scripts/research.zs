@@ -15,7 +15,7 @@ don't look
 
 
 
-if you don't want to have fun researching, first 3/8 items in the list are the answer
+if you don't want to have fun researching, first 3 or 8 items in the list are the answer
 
 
 */
@@ -223,6 +223,19 @@ addResearchRecipe("Logistic", <enderio:item_conduit_facade> * 4, <contenttweaker
     ],
     128, 5*20
 );
+addResearchRecipe("Teleportation", <minecraft:ender_pearl> * 16, <contenttweaker:research_teleportation>,
+    [
+        <darkutils:ender_hopper> * 4,
+        <thermalfoundation:material:167> * 16,
+        <minecraft:chorus_flower> * 8,
+        <xreliquary:mob_ingredient:11> * 8,
+        <contenttweaker:mana_bucket> * 1,
+        <mob_grinding_utils:ender_inhibitor_on> * 16,
+        <darkutils:material:1> * 24
+    ],
+    2000, 5*20
+);
+
 
 
 addResearchRecipe("Plants1", <minecraft:paper> * 4, <contenttweaker:research_plants1>,//ok
@@ -469,42 +482,15 @@ recipes.addShapeless(
     [<immersiveengineering:hoe_steel>.noReturn()]
 );
 
-recipes.addShapeless(
-    "ia_blueslime_bucket",
-    <contenttweaker:blueslime_bucket>,
-    [<forge:bucketfilled>.withTag({FluidName: "blueslime", Amount: 1000}).noReturn()]
-);
-recipes.addShapeless(
-    "ia_purpleslime_bucket",
-    <contenttweaker:purpleslime_bucket>,
-    [<forge:bucketfilled>.withTag({FluidName: "purpleslime", Amount: 1000}).noReturn()]
-);
-recipes.addShapeless(
-    "ia_grass_bucket",
-    <contenttweaker:grass_bucket>,
-    [<forge:bucketfilled>.withTag({FluidName: "refined_biofuel", Amount: 1000}).noReturn()]
-);
-recipes.addShapeless(
-    "ia_glow_bucket",
-    <contenttweaker:glow_bucket>,
-    [<forge:bucketfilled>.withTag({FluidName: "glowstone", Amount: 1000}).noReturn()]
-);
-recipes.addShapeless(
-    "ia_demon_bucket",
-    <contenttweaker:demon_bucket>,
-    [<forge:bucketfilled>.withTag({FluidName: "xu_demonic_metal", Amount: 1000}).noReturn()]
-);
 
-recipes.addShapeless(
-    "ia_concrete_token",
-    <contenttweaker:concrete_token>,
-    [<forge:bucketfilled>.withTag({FluidName: "concrete", Amount: 1000}).noReturn()]
-);
-recipes.addShapeless(
-    "ia_concrete_token2",
-    <contenttweaker:concrete_token>,
-    [<liquid:concrete> * 1000, <minecraft:bucket>]
-);
+addFluidTokenRec(<contenttweaker:blueslime_bucket>, <liquid:blueslime>);
+addFluidTokenRec(<contenttweaker:purpleslime_bucket>, <liquid:purpleslime>);
+addFluidTokenRec(<contenttweaker:grass_bucket>, <liquid:refined_biofuel>);
+addFluidTokenRec(<contenttweaker:glow_bucket>, <liquid:glowstone>);
+addFluidTokenRec(<contenttweaker:demon_bucket>, <liquid:xu_demonic_metal>);
+addFluidTokenRec(<contenttweaker:concrete_token>, <liquid:concrete>);
+
+addFluidTokenRec(<contenttweaker:mana_bucket>, <liquid:mana>);
 
 recipes.addShapeless(
     "ia_tinker_token1",
@@ -533,6 +519,7 @@ recipes.addShapeless(
     <contenttweaker:book_token>,
     [<minecraft:enchanted_book>.withTag({StoredEnchantments: [{lvl: 1 as short, id: 10}]})]
 );
+
 recipes.addShapeless(
     "ia_polymer_bucket2",
     <contenttweaker:polymer_bucket>,

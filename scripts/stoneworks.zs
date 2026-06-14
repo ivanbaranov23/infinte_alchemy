@@ -115,6 +115,7 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
     }
 
     {//obsidian
+        //crying
         mods.thermalexpansion.InductionSmelter.addRecipe(
             <netherblocks:crying_obsidian>, 
             <roots:runed_obsidian>,
@@ -126,6 +127,19 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
             <roots:runed_obsidian>,
             <minecraft:ghast_tear>,
             12000
+        );
+
+        recipes.remove(<draconicevolution:infused_obsidian>);
+        recipes.addShapeless("ia_infused_obsidian", <draconicevolution:infused_obsidian>, [
+            <contenttweaker:research_teleportation>.reuse(), 
+            <netherblocks:crying_obsidian>, <draconicevolution:draconium_dust>, <botania:blazeblock>, <contenttweaker:transmut_gel>
+        ]);
+        scripts.content_machines.addAdvancedMixerRecipe(
+            [<draconicevolution:infused_obsidian>], [],
+            [
+                <netherblocks:crying_obsidian>, <draconicevolution:draconium_dust>, <botania:blazeblock>, <contenttweaker:transmut_gel>
+            ], [],
+            20, 500
         );
     }
 }
@@ -248,6 +262,35 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<contenttweaker:lapis_stone>, <contenttweaker:lapis_stone>],
         [<contenttweaker:lapis_stone>, <contenttweaker:lapis_stone>]
     ]);
+}
+{//polished stone
+	recipes.remove(<extrautils2:decorativesolid:2>);
+
+	mods.tconstruct.Casting.addBasinRecipe(
+		<extrautils2:decorativesolid:2>, 
+		<contenttweaker:lapis_stone>, <liquid:stone>, 144, 
+		true, 200
+	);
+	mods.thermalexpansion.Transposer.addFillRecipe(
+		<extrautils2:decorativesolid:2>, 
+		<contenttweaker:lapis_stone>, <liquid:stone> * 144, 
+		500
+	);
+	mods.tconstruct.Casting.addBasinRecipe(
+		<extrautils2:decorativesolid:2>, 
+		<minecraft:stone>, <liquid:pilkon_blood>, 50, 
+		true, 200
+	);
+	mods.thermalexpansion.Transposer.addFillRecipe(
+		<extrautils2:decorativesolid:2> * 3, 
+		<contenttweaker:lapis_stone>, <liquid:pilkon_blood> * 50, 
+		500
+	);
+	mods.thermalexpansion.Transposer.addFillRecipe(
+		<extrautils2:decorativesolid:2> * 1, 
+		<minecraft:stone>, <liquid:pilkon_blood> * 50, 
+		500
+	);
 }
 {//rainbow
     mods.thermalexpansion.Crucible.addRecipe(<liquid:rainbow> * 1000, <extrautils2:decorativesolid:8>, 4000);

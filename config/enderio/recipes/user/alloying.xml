@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+ 
+  <recipe name="Alloy: Energetic Alloy" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Vibrant Alloy" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Redstone Alloy" required="true"> 
+    <disabled/>
+  </recipe> 
+
+ 
+  <recipe name="Alloy: Dark Steel" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Dark Steel, Variant" required="false"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: End Steel" required="true"> 
+     <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Construction Alloy" required="false"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Cookie" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Cake" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+ 
+  <recipe name="Alloy: Photovoltaic Plate" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+ 
+ 
+  <recipe name="Clayed Glowstone" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+ 
+  <recipe name="Chassis"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Enhanced Chassis"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Soul Chassis"> 
+    <disabled/>
+  </recipe> 
+   
+  <recipe name="Alloy: Industrial Insulation" required="true"> 
+     <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Nethercotta" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Infinity Goop" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Infinity Goop, Charcoal" required="false"> 
+    <disabled/>
+  </recipe> 
+
+ 
+  <recipe name="Alloy: Endergy Crude Steel" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <!-- <recipe name="Alloy: Endergy Combustive Metal" required="true"> 
+    <alloying energy="10000" exp="0.5"> 
+      <input name="minecraft:fire_charge"/> 
+      <input name="ingotIron"/> 
+      <output name="ingotCombustiveMetal"/> 
+    </alloying> 
+  </recipe> --> 
+ 
+  <recipe name="Alloy: Endergy Crystalline Alloy" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Endergy Crystalline Pink Slime" required="false"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Endergy Melodic Alloy" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Endergy Stellar Alloy" required="true"> 
+    <disabled/>
+  </recipe> 
+ 
+  
+ 
+ 
+ 
+ 
+  <recipe name="Alloy: Energetic Silver Alloy" required="false"> 
+    <disabled/>
+  </recipe> 
+ 
+  <recipe name="Alloy: Vivid Alloy" required="false"> 
+    <disabled/>
+  </recipe> 
+ 
+ 
+  
+</enderio:recipes>

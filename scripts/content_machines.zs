@@ -25,7 +25,7 @@ static Fluid_mixer as Assembly = <assembly:fluid_mixer>;
     Fluid_mixer.setFluidSlot(1, 1, ComponentFace.up(), 12000)
         .setAccess(true,false)
         .setGroup("input");
-    Fluid_mixer.setEnergySlot(0, 2, ComponentFace.all(), 40000)
+    Fluid_mixer.setEnergySlot(0, 2, ComponentFace.all(), 400000)
         .setAccess(true, false)
         .setGroup("power");
 
@@ -111,7 +111,7 @@ static Fluid_alloyer as Assembly = <assembly:fluid_alloyer>;
     Fluid_alloyer.setFluidSlot(1, 2, ComponentFace.all(), 12000)
         .setAccess(true,false)
         .setGroup("input");
-    Fluid_alloyer.setEnergySlot(0, 2, ComponentFace.all(), 40000)
+    Fluid_alloyer.setEnergySlot(0, 2, ComponentFace.all(), 4000000)
         .setAccess(true, false)
         .setGroup("power");
 
@@ -182,7 +182,7 @@ static Assembler as Assembly = <assembly:assembler>;
     Assembler.setFluidSlot(2, 3, ComponentFace.all(), 12000)
         .setAccess(true, false)
         .setGroup("input");
-    Assembler.setEnergySlot(0, 2, ComponentFace.all(), 400000)
+    Assembler.setEnergySlot(0, 2, ComponentFace.all(), 4000000)
         .setAccess(true, false)
         .setGroup("power");
 
@@ -286,7 +286,7 @@ static AdvancedMixer as Assembly = <assembly:advanced_mixer>;
 
 
     
-    AdvancedMixer.setEnergySlot(0, 2, ComponentFace.all(), 400000)
+    AdvancedMixer.setEnergySlot(0, 2, ComponentFace.all(), 4000000)
         .setAccess(true, false)
         .setGroup("power");
 
@@ -465,7 +465,7 @@ static Vial_processor as Assembly = <assembly:vial_processor>;
         .setAccess(true, false)
         .setGroup("input");
     
-    Vial_processor.setEnergySlot(0, 2, ComponentFace.all(), 400000)
+    Vial_processor.setEnergySlot(0, 2, ComponentFace.all(), 4000000)
         .setAccess(true, false)
         .setGroup("power");
 

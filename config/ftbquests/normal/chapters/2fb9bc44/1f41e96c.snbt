@@ -1,0 +1,23 @@
+{
+	x: 6.5d,
+	y: -2.0d,
+	text: [
+		"You can make coal from carbon plates, made from charcoal. Or you can reassemble ash."
+	],
+	dependencies: [
+		"33a0ca28"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4ec3f957",
+		type: "item",
+		items: [{
+			item: "minecraft:coal"
+		}]
+	}],
+	rewards: [{
+		uid: "81a7d63b",
+		type: "item",
+		item: "minecraft:coal_block"
+	}]
+}

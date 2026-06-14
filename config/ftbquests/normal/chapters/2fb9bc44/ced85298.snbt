@@ -1,6 +1,9 @@
 {
 	x: -0.5d,
 	y: 0.0d,
+	text: [
+		"Tunrs anything into ash. Dirt, cobble, anything."
+	],
 	dependencies: [
 		"3e071216"
 	],

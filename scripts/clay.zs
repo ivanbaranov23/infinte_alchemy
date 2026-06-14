@@ -93,7 +93,6 @@ recipes.addShapeless("ia_elastic_clay2",
 );
 
 //clay glowstone
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:76>);
 recipes.addShapeless("ia_clay_glowstone", <enderio:item_material:76>, [
 	<deepmoblearning:polymer_clay>, <deepmoblearning:polymer_clay>, <contenttweaker:insulation_strand>, 
 	<ore:crystalTiberium>, <enderio:block_holy_fog>, 

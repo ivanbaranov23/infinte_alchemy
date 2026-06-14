@@ -10,12 +10,11 @@ import mods.modularmachinery.RecipeBuilder;
     rec.addGasInput(<gas:fluorine> * 20000);
     rec.addFluidInput(<liquid:zirconium> * 4000);
     rec.addFluidInput(<liquid:crystal_fluid2> * 10000);
-    rec.addItemInput(<contenttweaker:night_glass>);
     rec.addItemInput(<contenttweaker:rune_glass>);
-    rec.addItemInput(<alchemistry:ingot:56>);
-    rec.addItemInput(<alchemistry:ingot:57>);
+    rec.addItemInput(<alchemistry:ingot:56> * 4);
+    rec.addItemInput(<alchemistry:ingot:57> * 4);
     
-    rec.addItemOutput(<contenttweaker:zblank>);
+    rec.addItemOutput(<contenttweaker:zblank> * 16);
 	
 	
 

@@ -1,6 +1,9 @@
 {
 	x: 0.5d,
 	y: -6.0d,
+	text: [
+		"Melt some andesite in a crucible. You can mix witch water and lava in world for vanilla stones, including andesite."
+	],
 	dependencies: [
 		"bf75f796"
 	],

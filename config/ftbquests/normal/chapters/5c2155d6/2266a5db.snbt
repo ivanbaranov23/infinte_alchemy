@@ -28,5 +28,10 @@
 				"astralsorcery:cap_item_amulet_holder": {}
 			}
 		}
+	},
+	{
+		uid: "27fad8f8",
+		type: "item",
+		item: "dimensionaledibles:overworld_apple"
 	}]
 }

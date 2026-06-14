@@ -193,17 +193,39 @@ function addWoodInfuseForestFireJEI(wood_out as IItemStack, wood_in as IIngredie
 
 recipes.remove(<mysticalworld:charred_log>);
 addWoodInfuseFire(<blockstate:mysticalworld:charred_log:axis=y>, <blockstate:minecraft:log:variant=oak>, [<ore:string>, <actuallyadditions:item_misc:11> * 2], 20);
+addWoodInfuseFire(<blockstate:mysticalworld:charred_log:axis=x>, <blockstate:minecraft:log:variant=oak,axis=x>, [<ore:string>, <actuallyadditions:item_misc:11> * 2], 20);
+addWoodInfuseFire(<blockstate:mysticalworld:charred_log:axis=z>, <blockstate:minecraft:log:variant=oak,axis=z>, [<ore:string>, <actuallyadditions:item_misc:11> * 2], 20);
 addWoodInfuseFireJEI(<mysticalworld:charred_log>, <minecraft:log>, [<ore:string>, <actuallyadditions:item_misc:11> * 2]);
 
 addWoodInfuseFire(
-    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=y,aether_logs=golden_oak_log>, <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=y,aether_logs=skyroot_log>, [
-        <thermalfoundation:material:1> * 2
-    ], 20
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=y,aether_logs=golden_oak_log>, 
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=y,aether_logs=skyroot_log>, 
+    [<thermalfoundation:material:1> * 2], 20
 );
 addWoodInfuseFire(
-    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=y,aether_logs=golden_oak_log>, <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=y,aether_logs=skyroot_log>, [
-        <contenttweaker:goold>
-    ], 20
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=x,aether_logs=golden_oak_log>, 
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=x,aether_logs=skyroot_log>, 
+    [<thermalfoundation:material:1> * 2], 20
+);
+addWoodInfuseFire(
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=z,aether_logs=golden_oak_log>, 
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=z,aether_logs=skyroot_log>, 
+    [<thermalfoundation:material:1> * 2], 20
+);
+addWoodInfuseFire(
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=y,aether_logs=golden_oak_log>, 
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=y,aether_logs=skyroot_log>, 
+    [<contenttweaker:goold>], 20
+);
+addWoodInfuseFire(
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=x,aether_logs=golden_oak_log>, 
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=x,aether_logs=skyroot_log>, 
+    [<contenttweaker:goold>], 20
+);
+addWoodInfuseFire(
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=z,aether_logs=golden_oak_log>, 
+    <blockstate:aether_legacy:aether_log:aether_legacy_double_drops=false,axis=z,aether_logs=skyroot_log>, 
+    [<contenttweaker:goold>], 20
 );
 addWoodInfuseFireJEI(<aether_legacy:aether_log:1>, <aether_legacy:aether_log>, [<thermalfoundation:material:1> * 2]);
 addWoodInfuseFireJEI(<aether_legacy:aether_log:1>, <aether_legacy:aether_log>, [<contenttweaker:goold>]);
@@ -350,22 +372,35 @@ addWoodInfuseForestFireJEI(<contenttweaker:excited_mud>, <biomesoplenty:mud>, [
 
 //meka umbran
 addWoodInfuseBlueFire(
-    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=y,variant=umbran>, [
-        <betternether:cincinnasite> * 4,
-        <contenttweaker:mekanized_steel_dust> * 4,
-        <contenttweaker:simple_motor>
-], 20);
+    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=y,variant=umbran>, 
+    [<betternether:cincinnasite> * 4, <contenttweaker:mekanized_steel_dust> * 4, <contenttweaker:simple_motor>], 20
+);
+addWoodInfuseBlueFire(
+    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=x,variant=umbran>, 
+    [<betternether:cincinnasite> * 4, <contenttweaker:mekanized_steel_dust> * 4, <contenttweaker:simple_motor>], 20
+);
+addWoodInfuseBlueFire(
+    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=z,variant=umbran>, 
+    [<betternether:cincinnasite> * 4, <contenttweaker:mekanized_steel_dust> * 4, <contenttweaker:simple_motor>], 20
+);
 addWoodInfuseBlueFireJEI(<contenttweaker:meka_umbran>, <biomesoplenty:log_0:6>, [
         <betternether:cincinnasite> * 4,
         <contenttweaker:mekanized_steel_dust> * 4,
         <contenttweaker:simple_motor>
 ]);
+
 addWoodInfuseForestFire(
-    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=y,variant=umbran>, [
-        <betternether:cincinnasite> * 2,
-        <contenttweaker:mekanized_steel_dust> * 2,
-        <minecraft:piston> * 2
-], 10);
+    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=y,variant=umbran>, 
+    [<betternether:cincinnasite> * 2, <contenttweaker:mekanized_steel_dust> * 2, <minecraft:piston> * 2], 10
+);
+addWoodInfuseForestFire(
+    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=x,variant=umbran>, 
+    [<betternether:cincinnasite> * 2, <contenttweaker:mekanized_steel_dust> * 2, <minecraft:piston> * 2], 10
+);
+addWoodInfuseForestFire(
+    <blockstate:contenttweaker:meka_umbran>, <blockstate:biomesoplenty:log_0:axis=z,variant=umbran>, 
+    [<betternether:cincinnasite> * 2, <contenttweaker:mekanized_steel_dust> * 2, <minecraft:piston> * 2], 10
+);
 addWoodInfuseForestFireJEI(<contenttweaker:meka_umbran>, <biomesoplenty:log_0:6>, [
         <betternether:cincinnasite> * 2,
         <contenttweaker:mekanized_steel_dust> * 2,
@@ -409,7 +444,7 @@ for stone,ore_list in {
 } as IItemStack[IItemStack][IItemStack] {
     for dust,ore in ore_list{
         mods.roots.Pyre.addRecipe(
-            "ore_craft_" ~ ore.name ~ dust.name, ore,
+            "ore_craft_" ~ ore.name ~ "_" ~ dust.name, ore,
             [
                 <contenttweaker:burn_powder>,
                 <thermalfoundation:material:770>,

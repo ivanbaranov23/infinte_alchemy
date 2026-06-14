@@ -19,5 +19,10 @@
 		type: "item",
 		item: "atum:pharaoh_torch",
 		count: 4
+	},
+	{
+		uid: "812ee74a",
+		type: "item",
+		item: "dimensionaledibles:overworld_apple"
 	}]
 }

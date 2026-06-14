@@ -70,8 +70,8 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
     <contenttweaker:chlorosulfonic>.addTooltip("ClSO₃H");
 
     mods.mekanism.reaction.addRecipe(
-        <bloodmagic:slate:3>, <liquid:liquidsulfurtrioxide> * 2000, <gas:hydrogenchloride> * 2000, 
-        null, <gas:chlorosulfonic> * 25, 50000, 5
+        <bloodmagic:slate>, <liquid:liquidsulfurtrioxide> * 2000, <gas:hydrogenchloride> * 2000, 
+        null, <gas:chlorosulfonic> * 250, 50000, 5
     );
 }
 {//fluoroantimonic
@@ -329,16 +329,27 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
 ], []);
 <contenttweaker:methylamine>.addTooltip("CH₃NH₂");
 
-{//acet
-    //acetic acid
-    addFluidConv(<contenttweaker:acetic_acid>, <liquid:acetic_acid>);
-
-    //acetone
+{//steam cracking
     mods.alchemistry.Electrolyzer.addRecipe(
         <liquid:cracked_steam> * 1000, <alchemistry:compound:36> * 2, 100,
         <alchemistry:compound:205>, <alchemistry:compound:34>,
         <contenttweaker:propylene>, 75, null, 0
     );
+    <contenttweaker:propylene>.addTooltip("CH₃CH=CH₂");
+
+    mods.alchemistry.Electrolyzer.addRecipe(
+        <liquid:cracked_steam> * 1000, <alchemistry:compound:37> * 2, 100,
+        <alchemistry:compound:36>, <alchemistry:compound:34>,
+        <contenttweaker:butadiene>, 75, null, 0
+    );
+    <contenttweaker:butadiene>.addTooltip("H₂C=CH-CH=CH₂");
+}
+{//acet
+    //acetic acid
+    addFluidConv(<contenttweaker:acetic_acid>, <liquid:acetic_acid>);
+
+    //acetone
+    
     addChemicalRecipe(
         [<contenttweaker:acetone>, <contenttweaker:phenol>],
         [<contenttweaker:benzene>, <contenttweaker:propylene>, <alchemistry:element:8> * 2],
@@ -380,6 +391,79 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         [<contenttweaker:acetaldehyde>],
         [<alchemistry:compound:26>, <alchemistry:element:8>],
         [<extendedcrafting:singularity:22>]
+    );
+}
+{//nitriles
+    addChemicalRecipe(
+        [<contenttweaker:acrylonitrile>, <alchemistry:compound:7>],
+        [<contenttweaker:propylene>, <alchemistry:compound:209>, <alchemistry:element:8> * 3],
+        [<alchemistry:element:83>, <alchemistry:element:15>, <alchemistry:element:42>]
+    );
+    <contenttweaker:acrylonitrile>.addTooltip("H₂C=CH-CN");
+    
+    addChemicalRecipe(
+        [<contenttweaker:adiponitrile>],
+        [<contenttweaker:butadiene>, <alchemistry:compound:207>],
+        [<extendedcrafting:singularity:25>]
+    );
+    addChemicalRecipe(
+        [<contenttweaker:adiponitrile>],
+        [<contenttweaker:acrylonitrile> * 2, <alchemistry:element:1> * 2],
+        [<alchemistry:element:48>]
+    );
+    <contenttweaker:adiponitrile>.addTooltip("(CH₂)₄(CN)₂");
+}
+{//nylon
+    
+    addChemicalRecipe(
+        [<contenttweaker:hexamethylenediamine>],
+        [<contenttweaker:adiponitrile>, <alchemistry:element:1> * 8],
+        [<extendedcrafting:singularity:65>, <extendedcrafting:singularity:1>]
+    );
+    addChemicalRecipe(
+        [<contenttweaker:nylon>, <alchemistry:compound:7> * 15],
+        [<contenttweaker:hexamethylenediamine> * 8, <contenttweaker:adipic_acid> * 8, <thermalexpansion:florb>.withTag({Fluid: "alien_polymer"})],
+        []
+    );
+}
+{//kevlar  ₀₁₂₃₄₅₆₇₈₉
+    Combiner.addRecipe(<contenttweaker:chloroxylen>, [
+       <contenttweaker:xylene>, <alchemistry:element:17> * 6
+    ]);
+    <contenttweaker:chloroxylen>.addTooltip("C₆H₄(CCl₃)₂");
+
+    addChemicalRecipe(
+        [<contenttweaker:terephthalic_acid>, <alchemistry:compound:7> * 2],
+        [<contenttweaker:xylene>, <alchemistry:element:8> * 6],
+        [<alchemistry:compound:514>]
+    );
+    <contenttweaker:terephthalic_acid>.addTooltip("C₆H₄(COOH)₂");
+
+    addChemicalRecipe(
+        [<contenttweaker:tcl>, <alchemistry:compound:203>],
+        [<contenttweaker:chloroxylen>, <contenttweaker:terephthalic_acid>],
+        []
+    );
+    <contenttweaker:tcl>.addTooltip("C₆H₄(COCl)₂");
+
+
+    addChemicalRecipe(
+        [<contenttweaker:nitrochlorobenzene>, <alchemistry:compound:7>],
+        [<contenttweaker:chlorobenzene>, <alchemistry:compound:212>],
+        []
+    );
+    <contenttweaker:nitrochlorobenzene>.addTooltip("ClC₆H₄NO₂");
+    addChemicalRecipe(
+        [<contenttweaker:ppd>, <contenttweaker:ammonium_chloride>, <alchemistry:compound:7> * 2],
+        [<contenttweaker:nitrochlorobenzene>, <alchemistry:compound:209> * 2, <alchemistry:element:1> * 6],
+        []
+    );
+    <contenttweaker:ppd>.addTooltip("C₆H₄(NH₂)₂");
+    
+    addChemicalRecipe(
+        [<contenttweaker:kevlar>, <alchemistry:compound:203> * 16],
+        [<contenttweaker:ppd> * 8, <contenttweaker:tcl> * 8, <thermalexpansion:florb>.withTag({Fluid: "alien_polymer"})],
+        []
     );
 }
 {//hydrogen peroxide
@@ -482,7 +566,24 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         []
     );
 }
+{//xenon
+    addChemicalRecipe(
+        [<contenttweaker:xenon_gold>],
+        [
+            <alchemistry:compound:515>, <alchemistry:element:54> * 4, <contenttweaker:fluoroantimonic_acid> * 4
+        ],
+        []
+    );
+    <contenttweaker:xenon_gold>.addTooltip("AuXe₄(Sb₂F₁₁)₂");
+    mods.extendedcrafting.TableCrafting.addShaped(0, <alchemistry:xenon_light> * 2, [
+        [<contenttweaker:night_glass>, <extrautils2:ineffableglass:2>, <extrautils2:ineffableglass:2>, <extrautils2:ineffableglass:2>, <contenttweaker:night_glass>], 
+        [<extrautils2:ineffableglass:2>, <contenttweaker:xenon_gold>, <contenttweaker:zblank>, <contenttweaker:xenon_gold>, <extrautils2:ineffableglass:2>], 
+        [<extrautils2:ineffableglass:2>, <contenttweaker:zblank>, <extendedcrafting:lamp:1>, <contenttweaker:zblank>, <extrautils2:ineffableglass:2>], 
+        [<extrautils2:ineffableglass:2>, <contenttweaker:xenon_gold>, <contenttweaker:zblank>, <contenttweaker:xenon_gold>, <extrautils2:ineffableglass:2>], 
+        [<contenttweaker:night_glass>, <extrautils2:ineffableglass:2>, <extrautils2:ineffableglass:2>, <extrautils2:ineffableglass:2>, <contenttweaker:night_glass>]
+    ]);
 
+}
 //todo acetone butanol ethanol
 
 {//lithium

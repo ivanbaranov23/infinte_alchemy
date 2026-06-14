@@ -58,7 +58,8 @@ IMachineRegistry.getMachine("extrautils2:enchanter").addRecipe(
     for item,time in {
         <extendedcrafting:material:36>: 20 * 5,
         <enderio:item_material:44>: 20 * 5,
-        <extendedcrafting:singularity:50>: 20 * 60 * 3
+        <extendedcrafting:singularity:50>: 20 * 60 * 3,
+        <contenttweaker:ender_crystal>: 20 * 4
     } as int[IItemStack] {
         gen.addRecipe(
             {input: item}, {}, time * 1000, time
@@ -83,9 +84,7 @@ IMachineRegistry.getMachine("extrautils2:enchanter").addRecipe(
     gen.removeRecipe({
         "input": <minecraft:snow_layer>
     });
-    gen.removeRecipe({
-        "input": <minecraft:ender_eye>
-    });
+   
 
     for item,time in {
         <bloodmagic:component:32>: 60 * 20,

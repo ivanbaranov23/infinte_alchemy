@@ -134,7 +134,7 @@ recipes.addShaped("ia_bocuit", <contenttweaker:bocuit>, [
 }
 
 //lavawood
-mods.thermalexpansion.Transposer.addFillRecipe(<tconstruct:firewood>, <ore:plankWood>.firstItem, <liquid:lava> * 250, 1000);
+mods.thermalexpansion.Transposer.addFillRecipe(<tconstruct:firewood>, <minecraft:planks>, <liquid:lava> * 250, 1000);
 
 //research
 mods.tconstruct.Casting.removeTableRecipe(<tconstruct:cast>.withTag({PartType: "plustic:laser_medium"}));

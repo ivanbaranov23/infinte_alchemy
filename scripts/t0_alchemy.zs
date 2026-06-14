@@ -1,5 +1,23 @@
 import crafttweaker.item.IItemStack;
 
+
+//paper
+recipes.addShapeless("ia_soggy_paper1", <contenttweaker:soggy_paper>, [
+    <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>,
+    <liquid:water> * 1000
+]);
+recipes.addShapeless("ia_soggy_paper2", <contenttweaker:soggy_paper> * 2, [
+    <ore:dustWood>, <ore:dustWood>, <ore:dustWood>, <ore:dustWood>,
+    <liquid:water> * 1000, <contenttweaker:slime_shard>
+]);
+mods.tconstruct.Drying.addRecipe(<minecraft:paper>, <contenttweaker:soggy_paper>, 20 * 15);
+recipes.addShapeless("ia_soggy_paper_to_paper", <minecraft:paper> * 16, [
+    <contenttweaker:soggy_paper>, <contenttweaker:soggy_paper>, <contenttweaker:soggy_paper>, <contenttweaker:soggy_paper>,
+    <contenttweaker:kaolin_clay>,
+    <contenttweaker:soggy_paper>, <contenttweaker:soggy_paper>, <contenttweaker:soggy_paper>, <contenttweaker:soggy_paper>
+]);
+
+//shards
 mods.exnihilocreatio.Hammer.addRecipe(
 	<contenttweaker:burned_slimedirt>, <contenttweaker:fire_shard>,
 	0, 0.6, 1.0
@@ -17,6 +35,7 @@ mods.exnihilocreatio.Hammer.addRecipe(
 	0, 0.3, 0.75
 );
 
+//slimy sand
 recipes.addShaped("ia_slime_sand1", <contenttweaker:slimy_sand> * 4, [
     [<contenttweaker:slime_shard>, <minecraft:sand>],
     [<minecraft:sand>, <contenttweaker:slime_shard>]
@@ -26,10 +45,17 @@ recipes.addShaped("ia_slime_sand2", <contenttweaker:slimy_sand> * 2, [
     [<minecraft:sand>, <minecraft:slime_ball>]
 ]);
 
+//slime
+furnace.addRecipe(<contenttweaker:slime_shard> * 2, <contenttweaker:slimy_sand>);
+scripts.helper.addSimpleCrushingRecipeWByproduct(<contenttweaker:burned_slimedirt>, <contenttweaker:slime_shard>, <contenttweaker:fire_shard>, 100);
+
+
+
 mods.exnihilocreatio.Hammer.addRecipe(
 	<tconstruct:dried_clay>, <contenttweaker:dried_gravel>,
 	0, 1.0, 1.0
 );
+
 
 mods.roots.Pyre.addRecipe("ia_redstone_slime", <minecraft:redstone> * 4, [
     <contenttweaker:fire_shard>, <contenttweaker:fire_shard>, <contenttweaker:brick_dust>,

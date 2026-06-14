@@ -1,0 +1,18 @@
+{
+	x: -2.5d,
+	y: 3.0d,
+	text: [
+		"Can be made into 2x2x2 big crate"
+	],
+	dependencies: [
+		"8b0a9416"
+	],
+	optional: true,
+	tasks: [{
+		uid: "eb15ca3e",
+		type: "item",
+		items: [{
+			item: "erebus:bamboo_crate"
+		}]
+	}]
+}

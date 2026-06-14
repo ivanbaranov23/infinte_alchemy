@@ -1,0 +1,17 @@
+{
+	x: -5.0d,
+	y: 4.5d,
+	text: [
+		"It's steam cracking time!"
+	],
+	dependencies: [
+		"2d31e5c3"
+	],
+	tasks: [{
+		uid: "b61a3d37",
+		type: "item",
+		items: [{
+			item: "alchemistry:electrolyzer"
+		}]
+	}]
+}

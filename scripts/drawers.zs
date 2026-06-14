@@ -54,7 +54,7 @@ recipes.addShaped("ia_drawer_upgrade_void", <storagedrawers:upgrade_void> * 2, [
 ]);
 recipes.addShaped("ia_drawer_upgrade_void2", <storagedrawers:upgrade_void>, [
 	[<roots:runed_obsidian>, <ore:dustObsidian>, <roots:runed_obsidian>], 
-	[<ore:dustObsidian>, <extendedcrafting:singularity_custom:3>, <ore:dustObsidian>], 
+	[<ore:dustObsidian>, <extrautils2:trashcan>, <ore:dustObsidian>], 
 	[<roots:runed_obsidian>, <ore:dustObsidian>, <roots:runed_obsidian>]
 ]);
 

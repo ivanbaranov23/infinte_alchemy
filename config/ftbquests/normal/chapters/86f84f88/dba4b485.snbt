@@ -1,0 +1,80 @@
+{
+	title: "Research Teleportation",
+	icon: "contenttweaker:research_teleportation",
+	x: -1.0d,
+	y: 3.0d,
+	shape: "gear",
+	text: [
+		"Anchors and dislocator tech"
+	],
+	dependencies: [
+		"c529d48c"
+	],
+	tasks: [{
+		uid: "0c51a556",
+		type: "item",
+		items: [{
+			item: "minecraft:chorus_flower"
+		}],
+		count: 8L
+	},
+	{
+		uid: "d0e28c03",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_bucket"
+		}]
+	},
+	{
+		uid: "6979e50f",
+		type: "item",
+		items: [{
+			item: "darkutils:ender_hopper"
+		}],
+		count: 4L
+	},
+	{
+		uid: "7bfe069e",
+		type: "item",
+		items: [{
+			item: "darkutils:material 1 1"
+		}],
+		count: 24L
+	},
+	{
+		uid: "8631a254",
+		type: "item",
+		items: [{
+			item: "xreliquary:mob_ingredient 1 11"
+		}],
+		count: 8L
+	},
+	{
+		uid: "0147f143",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 167"
+		}],
+		count: 16L
+	},
+	{
+		uid: "766ef2a6",
+		type: "item",
+		items: [{
+			item: "mob_grinding_utils:ender_inhibitor_on"
+		}],
+		count: 16L
+	},
+	{
+		uid: "3d3c7522",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_teleportation"
+		}]
+	}],
+	rewards: [{
+		uid: "aa9be681",
+		type: "item",
+		item: "contenttweaker:research_teleportation"
+	}]
+}

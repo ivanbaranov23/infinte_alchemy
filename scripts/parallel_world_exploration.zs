@@ -514,9 +514,9 @@ for mech in loot{
 
 recipes.remove(<mekanism:teleportationcore>);
 recipes.addShaped("ia_teleportationcore", <mekanism:teleportationcore>, [
-	[<contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>, <quantumflux:craftingpiece:5>, <contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>], 
+	[<contenttweaker:entangled_particles> | <contenttweaker:singularity_dust> | <moretcon:gemvoidspar>, <quantumflux:craftingpiece:5>, <contenttweaker:entangled_particles> | <contenttweaker:singularity_dust> | <moretcon:gemvoidspar>], 
 	[<mekanism:controlcircuit:3>, <contenttweaker:entangled_particles>, <mekanism:controlcircuit:3>], 
-	[<contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>, <quantumflux:craftingpiece:5>, <contenttweaker:entangled_particles> | <contenttweaker:singularity_dust>]
+	[<contenttweaker:entangled_particles> | <contenttweaker:singularity_dust> | <moretcon:gemvoidspar>, <quantumflux:craftingpiece:5>, <contenttweaker:entangled_particles> | <contenttweaker:singularity_dust> | <moretcon:gemvoidspar>]
 ]);
 scripts.content_machines.addAssemblerRecipe(
     [<mekanism:teleportationcore> * 3],
@@ -524,7 +524,8 @@ scripts.content_machines.addAssemblerRecipe(
         <contenttweaker:singularity_dust>,
         <mekanism:controlcircuit:3> * 2,
         <quantumflux:craftingpiece:5> * 2,
-        <contenttweaker:entangled_particles> * 3
+        <contenttweaker:entangled_particles> * 3,
+        <moretcon:gemvoidspar> * 4
     ], null,
     20, 1000
 );
@@ -534,7 +535,8 @@ scripts.content_machines.addAssemblerRecipe(
         <contenttweaker:wormholium>,
         <mekanism:controlcircuit:3> * 2,
         <quantumflux:craftingpiece:5> * 2,
-        <contenttweaker:entangled_particles> * 3
+        <contenttweaker:entangled_particles> * 3,
+        <moretcon:gemvoidspar> * 4
     ], null,
     20, 1000
 );
@@ -543,7 +545,7 @@ mods.thermalexpansion.InductionSmelter.addRecipe(
     <contenttweaker:singularity_dust>, <contenttweaker:wormium_ingot> * 6, 
     25000
 );
-mods.enderio.AlloySmelter.addRecipe(<contenttweaker:wormholium> * 4, [
+mods.enderio.AlloySmelter.addRecipe(<contenttweaker:wormholium> * 5, [
     <contenttweaker:singularity_dust>, 
     <contenttweaker:wormium_ingot> * 8,
     <contenttweaker:entangled_particles>

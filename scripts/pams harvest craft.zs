@@ -232,6 +232,11 @@ Centrifuge.addRecipe(
     }
 
     {//cake
+        recipes.addShaped("ia_cake_base", <enderio:item_material:70>, [
+            [<ore:listAllsugar>, <harvestcraft:doughitem>, <ore:listAllsugar>], 
+            [<ore:listAllegg>, <harvestcraft:doughitem>, <ore:listAllegg>]
+        ]);
+
         recipes.remove(<harvestcraft:carrotcakeitem>);
         recipes.addShaped("ia_carrotcakeitem", <harvestcraft:carrotcakeitem>, [
             [<harvestcraft:carrotjuiceitem>, <harvestcraft:carrotjuiceitem>, <harvestcraft:carrotjuiceitem>], 
@@ -311,11 +316,7 @@ Centrifuge.addRecipe(
 }
 
 {//dough uses
-    mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:70>);
-    recipes.addShaped("ia_cake_base", <enderio:item_material:70>, [
-        [<ore:listAllsugar>, <harvestcraft:doughitem>, <ore:listAllsugar>], 
-        [<ore:listAllegg>, <harvestcraft:doughitem>, <ore:listAllegg>]
-    ]);
+    
 
     recipes.remove(<actuallyadditions:item_food:8>);
     recipes.addShaped("ia_chococake", <actuallyadditions:item_food:8>, [

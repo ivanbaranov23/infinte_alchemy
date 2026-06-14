@@ -178,6 +178,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<alchemistry:ingot:38>, <contenttweaker:strontium_block>);
     add3x3Recipe(<alchemistry:ingot:41>, <contenttweaker:niobium_block>);
     add3x3Recipe(<alchemistry:ingot:42>, <contenttweaker:molybdenum_block>);
+    add3x3Recipe(<alchemistry:ingot:45>, <contenttweaker:rhodium_block>);
     add3x3Recipe(<alchemistry:ingot:48>, <contenttweaker:cadmium_block>);
     add3x3Recipe(<alchemistry:ingot:52>, <contenttweaker:tellurium_block>);
     add3x3Recipe(<alchemistry:ingot:56>, <contenttweaker:barium_block>);

@@ -11,5 +11,10 @@
 		items: [{
 			item: "enderio:item_alloy_endergy_ingot 1 5"
 		}]
+	}],
+	rewards: [{
+		uid: "89013694",
+		type: "item",
+		item: "enderio:block_alloy_endergy 1 5"
 	}]
 }

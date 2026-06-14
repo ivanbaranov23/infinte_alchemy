@@ -1,0 +1,19 @@
+{
+	x: 6.0d,
+	y: 7.0d,
+	dependencies: [
+		"5d655018"
+	],
+	tasks: [{
+		uid: "e0ab69a2",
+		type: "item",
+		items: [{
+			id: "portabledrill:portable_drill",
+			ForgeCaps: {
+				"portabledrill:energy": 0
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

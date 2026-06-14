@@ -33,7 +33,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -74,7 +74,7 @@
             "z": 1,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -92,7 +92,7 @@
             "z": 3,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -141,7 +141,7 @@
             "z": 0,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -223,7 +223,7 @@
             "z": 3,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -232,7 +232,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -273,7 +273,7 @@
             "z": 0,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -306,7 +306,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -356,7 +356,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -365,7 +365,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -407,7 +407,7 @@
             "z": 3,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -442,7 +442,7 @@
             "z": 1,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -499,7 +499,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -532,7 +532,7 @@
             "z": 3,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {
@@ -573,7 +573,7 @@
             "z": 2,
             
             "elements": [
-                "modularmachinery:blockcasing@0"
+                "casings_all"
             ]
         },
         {

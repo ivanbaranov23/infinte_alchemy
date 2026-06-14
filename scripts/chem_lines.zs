@@ -290,13 +290,16 @@ import mods.modularmachinery.RecipeBuilder;
 {//salt
     scripts.content_machines.addFluidAlloyerRecipe(
         <contenttweaker:supersalt>, 
-        <minecraft:ghast_tear> * 8, <harvestcraft:saltedcaramelitem> * 4, <liquid:hf> * 100, 
+        <minecraft:ghast_tear> * 8, <harvestcraft:saltedcaramelitem> * 4, <liquid:hf> * 250, 
         200, 1000
     );
+    Evaporator.addRecipe(<contenttweaker:supersalt>, <liquid:supersalty> * 2500);
+
+    
 }
 {//lithium
     mods.mekanism.reaction.addRecipe(
-        <mekanism:otherdust:4> * 4, <liquid:sand> * 250, <gas:deuterium> * 1000, 
+        <mekanism:otherdust:4> * 4, <liquid:sand> * 200, <gas:deuterium> * 1000, 
         <taiga:dilithium_crystal> * 2, <gas:tritium> * 1000, 1000, 20
     );
 }
@@ -305,7 +308,7 @@ import mods.modularmachinery.RecipeBuilder;
 
     scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 100, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <appliedenergistics2:material:5>, 128, 40);
     scripts.helper.addFluidMixerRecipe(<liquid:solar_silicon_solution> * 120, <liquid:liquidchlorine> * 100, <liquid:liquid_sunshine> * 50, <mysticalagriculture:silicon_essence>, 128, 40);
-    mods.alchemistry.Evaporator.addRecipe(<contenttweaker:solar_silicon>, <liquid:solar_silicon_solution> * 1250);
+    Evaporator.addRecipe(<contenttweaker:solar_silicon>, <liquid:solar_silicon_solution> * 1250);
 
     
 }

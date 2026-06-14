@@ -2,6 +2,9 @@
 	icon: "prodigytech:energion_crystal_seed",
 	x: 7.5d,
 	y: 0.0d,
+	text: [
+		"Energion crystal seeds can be placed in world to grow. Harvest them with Crystal Cutter"
+	],
 	dependencies: [
 		"33a0ca28"
 	],
@@ -32,5 +35,10 @@
 		items: [{
 			item: "prodigytech:energion_crystal_seed"
 		}]
+	}],
+	rewards: [{
+		uid: "31b28725",
+		type: "item",
+		item: "prodigytech:crystal_cutter"
 	}]
 }

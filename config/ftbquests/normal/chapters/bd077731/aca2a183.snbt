@@ -1,8 +1,11 @@
 {
+	title: "Single player tech only",
 	x: 2.5d,
 	y: 2.0d,
 	text: [
-		"Imo colossal chests aren't worth using without SSN or the like."
+		"Imo colossal chests aren't worth using without SSN or the like. ",
+		"",
+		"But SSN is laggy on big chests, so beware. If you have performance issues, it might be SSN"
 	],
 	dependencies: [
 		"a271d997"

@@ -12,5 +12,10 @@
 		type: "dimension",
 		icon: "minecraft:end_stone",
 		dim: 1
+	}],
+	rewards: [{
+		uid: "7c765cf3",
+		type: "item",
+		item: "dimensionaledibles:overworld_apple"
 	}]
 }

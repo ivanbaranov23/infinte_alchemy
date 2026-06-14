@@ -24,6 +24,7 @@
                     "biomesoplenty:leaves_3:1"
                 ]},
                 "harvester": {
+                    "type": "REAL_PLAYER",
                     "heldItemMainHand": {"items" :["contenttweaker:staffwood"]}
                 }
             },

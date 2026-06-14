@@ -5,7 +5,7 @@
       "textures": {
         
 
-        "particle": "immersiveengineering:blocks/treated_wood"
+        "particle": "prodigytech:blocks/charred_stone"
       }
     },
     "variants":{

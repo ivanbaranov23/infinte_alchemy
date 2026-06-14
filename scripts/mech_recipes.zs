@@ -425,6 +425,21 @@
     );
 }
 
+{//spider
+    recipes.addShaped("ia_rh_v_block1", <contenttweaker:rh_v_block>, [
+        [null, <contenttweaker:rhodium_plate>, null], 
+        [<contenttweaker:rhodium_plate>, <contenttweaker:vanadium_block>, <contenttweaker:rhodium_plate>], 
+        [null, <contenttweaker:rhodium_plate>, null]
+    ]);
+    recipes.addShaped("ia_rh_v_block2", <contenttweaker:rh_v_block> * 2, [
+        [<contenttweaker:rhodium_plate>, <alchemistry:ingot:48>, <contenttweaker:rhodium_plate>], 
+        [<alchemistry:ingot:48>, <contenttweaker:vanadium_block>, <alchemistry:ingot:48>], 
+        [<contenttweaker:rhodium_plate>, <alchemistry:ingot:48>, <contenttweaker:rhodium_plate>]
+    ]);
+
+    mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:rh_v_plate>, <contenttweaker:rh_v_block>, 15000);
+}
+
 {//bloodhunter
     mods.enderio.AlloySmelter.addRecipe(<contenttweaker:advanced_plating4_1>, 
         [<contenttweaker:slate_steel_plate>, <tconevo:metal:28>, <contenttweaker:advanced_plating1_4>], 

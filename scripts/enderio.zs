@@ -7,7 +7,6 @@ import mods.enderio.Vat;
 //frame 6
 recipes.remove(<enderio:item_material:1>);
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:51>);
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:1>);
 recipes.addShaped("ia_machine_frame6", <enderio:item_material:1>, [
 	[<ore:ingotEezo>, <ore:blockAmethyst>, <ore:ingotEezo>], 
 	[<enderio:item_capacitor_silver>, <actuallyadditions:block_misc:9>, <enderio:item_basic_capacitor>], 
@@ -22,7 +21,6 @@ recipes.addShaped("ia_machine_frame6_alt", <enderio:item_material>, [
 
 //frame 7
 mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_material>, <enderio:item_material:52>);
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:53>);
 recipes.addShaped("ia_machine_frame7", <enderio:item_material:53>, [
 	[<simplyjetpacks:metaitemmods:12>, <moreplates:energetic_silver_plate>, <simplyjetpacks:metaitemmods:12>], 
 	[<enderio:item_material:52>, <enderio:item_material:1>, <enderio:item_material:52>], 
@@ -38,7 +36,6 @@ recipes.addShaped("ia_machine_frame8", <enderio:item_material:66>, [
 ]);
 
 //frame 9
-mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:54>);
 recipes.addShaped("ia_machine_frame9", <enderio:item_material:54>, [
 	[<moreplates:crystalline_pink_slime_plate>, <quantumflux:craftingpiece:1>, <moreplates:crystalline_pink_slime_plate>], 
 	[<enderio:item_material:67>, <enderio:item_material:66>, <enderio:item_material:67>], 
@@ -108,13 +105,19 @@ recipes.addShaped("ia_conduit_binder_dust", <enderio:item_material:22> * 8, [
 		[null, <thermaldynamics:filter:3>, null]
 	]);
 }
+recipes.remove(<enderio:item_conduit_facade>);
+recipes.addShaped("ia_conduit_facade", <enderio:item_conduit_facade> * 4, [
+	[<enderio:item_material:4>, <thermaldynamics:duct_48>, <enderio:item_material:4>],
+	[<thermaldynamics:duct_48>, null, <thermaldynamics:duct_48>],
+	[<enderio:item_material:4>, <thermaldynamics:duct_48>, <enderio:item_material:4>]
+]);
 
 //crystals
 
 mods.enderio.SoulBinder.addRecipe(<contenttweaker:guarding_crystal>, <actuallyadditions:item_crystal_empowered:4>, ["atum:stoneguard"], 50000, 8);
 
 {//dyes
-	AlloySmelter.removeRecipe(<enderio:item_material:49>);
+	//AlloySmelter.removeRecipe(<enderio:item_material:49>);
 	AlloySmelter.addRecipe(<enderio:item_material:49>, 
 		[
 			<enderio:item_material:47> * 6,
@@ -147,7 +150,6 @@ mods.enderio.SoulBinder.addRecipe(<contenttweaker:guarding_crystal>, <actuallyad
 }
 
 {//insulation
-	AlloySmelter.removeRecipe(<enderio:block_industrial_insulation>);
 	AlloySmelter.addRecipe(<contenttweaker:aluminum_silicon> * 4, 
 		[<thermalfoundation:material:68> * 12, <appliedenergistics2:material:5> * 12, <enderio:item_material:22>], 
 		8000
@@ -230,6 +232,11 @@ recipes.remove(<enderio:block_travel_anchor>);
 	[],
 	[<thermalfoundation:storage_alloy:7>, , <thermalfoundation:storage_alloy:7>]
 ]);*/
+recipes.addShaped("ia_block_travel_anchor1", <enderio:block_travel_anchor> * 1, [
+	[<draconicevolution:infused_obsidian>, <thermalfoundation:storage_alloy:7>, <draconicevolution:infused_obsidian>], 
+	[<contenttweaker:ender_crystal>, <thermalexpansion:frame>, <contenttweaker:ender_crystal>], 
+	[<draconicevolution:infused_obsidian>, <thermalfoundation:storage_alloy:7>, <draconicevolution:infused_obsidian>]
+]);
 recipes.addShaped("ia_block_travel_anchor2", <enderio:block_travel_anchor> * 4, [
 	[<mekanism:basicblock:7>, <enderio:item_material:14>, <mekanism:basicblock:7>], 
 	[<enderio:item_material:14>, <mekanism:machineblock:11>, <enderio:item_material:14>], 
@@ -507,8 +514,12 @@ recipes.addShaped("ia_wings", <enderio:item_material:7>, [
 ]);
 
 
+recipes.addShaped("ia_staff_of_traveling", <enderio:item_travel_staff>.withTag({"enderio.darksteel.upgrade.energyUpgrade": {level: 0}}), [
+	[null, <contenttweaker:ender_crystal>],
+	[<contenttweaker:staffwood>, null]
+]);
 
-AlloySmelter.removeRecipe(<enderio:item_dark_steel_upgrade>);
+
 scripts.content_machines.addFluidAlloyerRecipe(<enderio:item_dark_steel_upgrade>, 
 	<mekanism:energyupgrade> * 8, <moreplates:dark_steel_plate> * 4, <liquid:circuit> * 500, 
 	200, 1000

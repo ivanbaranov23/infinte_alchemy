@@ -73,10 +73,6 @@ mods.immersiveengineering.CokeOven.addRecipe(
     rec.build();
 }
 
-//slime
-furnace.addRecipe(<contenttweaker:slime_shard> * 2, <contenttweaker:slimy_sand>);
-scripts.helper.addSimpleCrushingRecipeWByproduct(<contenttweaker:burned_slimedirt>, <contenttweaker:slime_shard>, <contenttweaker:fire_shard>, 100);
-
 //creosolon
 recipes.addShapeless("ia_creosolon", <contenttweaker:creosolon> * 2, [
     <contenttweaker:weak_enhancer>,
@@ -112,6 +108,11 @@ mods.thermalexpansion.Centrifuge.addRecipe(
     [<contenttweaker:karmesine_pieces>, <contenttweaker:ovium_pieces>, <contenttweaker:jauxum_pieces>], <contenttweaker:creosolon>, <liquid:creosote> * 500, 
     3000
 );
+
+recipes.addShapeless("ia_lapis_dust", <enderio:item_material:32>, [
+    <botania:dye:11>, <contenttweaker:creosolon>, 
+    <appliedenergistics2:material:5>, <thermalfoundation:material:771>
+]);
 
 
 //coke_dust

@@ -394,6 +394,11 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 		[<contenttweaker:watertight_steel_plate>, <openblocks:tank>, <contenttweaker:watertight_steel_plate>], 
 		[<immersiveengineering:sheetmetal:8>, <contenttweaker:mekanized_steel_plate>, <immersiveengineering:sheetmetal:8>]
 	]);
+	recipes.addShaped("ia_mek_tank_wall2", <mekanism:basicblock:9> * 2, [
+		[<immersiveengineering:sheetmetal:8>, <moretcon:ingotpenguinite>, <immersiveengineering:sheetmetal:8>], 
+		[<contenttweaker:watertight_steel_plate>, <openblocks:tank>, <contenttweaker:watertight_steel_plate>], 
+		[<immersiveengineering:sheetmetal:8>, <moretcon:ingotpenguinite>, <immersiveengineering:sheetmetal:8>]
+	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<mekanism:basicblock:9> * 4],
 		[<openblocks:tank>, <contenttweaker:mekanized_steel_plate> * 2, <immersiveengineering:sheetmetal:8>],

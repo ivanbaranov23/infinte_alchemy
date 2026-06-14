@@ -4,8 +4,6 @@ import scripts.content_machines.addBioAssemblerRecipe;
 recipes.removeByMod("solarflux");
 
 {//photovoltaic
-	mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:3>);
-
 	recipes.addShaped("ia_raw_photovoltaic", <contenttweaker:raw_photovoltaic>, [
 		[<prodigytech:energion_dust>, <enderio:item_material:38>, <prodigytech:energion_dust>], 
 		[<enderio:item_material:38>, <prodigytech:circuit_plate>, <enderio:item_material:38>], 

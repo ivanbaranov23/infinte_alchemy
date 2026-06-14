@@ -1,6 +1,9 @@
 {
 	x: 5.5d,
 	y: -4.0d,
+	text: [
+		"Crafting table recs for meshes carry over the enchants. Not that you would enchant string mesh but whatever."
+	],
 	dependencies: [
 		"1bc9c471",
 		"f9819274"

@@ -12,5 +12,10 @@
 		type: "dimension",
 		icon: "minecraft:netherrack",
 		dim: -1
+	}],
+	rewards: [{
+		uid: "fd46ddb9",
+		type: "item",
+		item: "dimensionaledibles:overworld_apple"
 	}]
 }

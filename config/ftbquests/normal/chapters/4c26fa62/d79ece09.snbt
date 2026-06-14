@@ -1,0 +1,19 @@
+{
+	x: -5.0d,
+	y: 0.5d,
+	text: [
+		"Makes altar subprocessor recipes cheaper. "
+	],
+	dependencies: [
+		"ee259869",
+		"a817726b"
+	],
+	optional: true,
+	tasks: [{
+		uid: "9ba4a5eb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:naots"
+		}]
+	}]
+}

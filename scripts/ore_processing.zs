@@ -900,7 +900,8 @@ static ores1 as IItemStack[string][string][string] = {
 
             drilling: <contenttweaker:stibnite> * 6,
             made2x2: <contenttweaker:antimony_pieces>,
-            madeFrom: <contenttweaker:antimony_pieces> * 3
+            madeFrom: <contenttweaker:antimony_pieces> * 3,
+            madeWeak: <contenttweaker:antimony_pieces>
         },
         dense: {
             item: <contenttweaker:antimony_ore_dense>,

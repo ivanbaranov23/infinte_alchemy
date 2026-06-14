@@ -1,0 +1,27 @@
+{
+	title: "Cook up some ash",
+	x: -0.5d,
+	y: -2.0d,
+	shape: "diamond",
+	text: [
+		""
+	],
+	dependencies: [
+		"ced85298"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e22afc6b",
+		type: "item",
+		items: [{
+			item: "prodigytech:ash"
+		}],
+		count: 1024L,
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "adfccf84",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

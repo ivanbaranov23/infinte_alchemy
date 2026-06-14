@@ -176,3 +176,9 @@ recipes.addShaped("ia_magnetic_glass", <contenttweaker:magnetic_glass>, [
     [<contenttweaker:ev_coil> | <alchemistry:ingot:62>, <contenttweaker:didymium>, <contenttweaker:ev_coil> | <alchemistry:ingot:62>]
 ]);
 
+//inert
+mods.alchemistry.Combiner.addRecipe(<contenttweaker:inert_glass> * 2, [
+	<extendedcrafting:singularity_custom:3> * 4, <alchemistry:element:500>, 
+	<alchemistry:fusion_casing> * 4, <alchemistry:fission_casing> * 4,
+	<bloodmagic:decorative_brick:2> * 4, <contenttweaker:star_polymer> * 16
+]);

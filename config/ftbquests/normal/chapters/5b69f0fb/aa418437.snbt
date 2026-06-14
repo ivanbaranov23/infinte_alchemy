@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	dependencies: [
+		"fbc73e23"
+	],
+	optional: true,
+	tasks: [{
+		uid: "16d38da6",
+		type: "item",
+		items: [{
+			item: "caves_n_cliffs:amethyst_cluster_single"
+		}]
+	}]
+}

@@ -33,13 +33,11 @@ recipes.addShapeless("ia_ash_bricks2", <prodigytech:ash_bricks>, [
 
 //crafting
 recipes.remove(<prodigytech:explosion_furnace>);
-recipes.addShaped(
-    "ia_explosion_furnace",
-    <prodigytech:explosion_furnace>,
-    [[<roots:runestone>, <thermalfoundation:storage_alloy:3>, <roots:runestone>],
+recipes.addShaped("ia_explosion_furnace", <prodigytech:explosion_furnace>, [
+	[<roots:runestone>, <thermalfoundation:storage_alloy:3>, <roots:runestone>],
     [<appliedenergistics2:tiny_tnt>, <extendedcrafting:singularity_custom:100>, <appliedenergistics2:tiny_tnt>],
-    [<roots:runestone>, <minecraft:furnace>, <roots:runestone>]]
-);
+    [<roots:runestone>, <minecraft:furnace>, <roots:runestone>]
+]);
 addRecycle(<prodigytech:explosion_furnace>, [
 	<extendedcrafting:singularity_custom:100>, <minecraft:furnace>, <thermalfoundation:storage_alloy:3>, 
 	<appliedenergistics2:tiny_tnt> * 2, <roots:runestone> * 4
@@ -69,8 +67,10 @@ explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytec
 	explosionfurnace_recipes.addRecipe(
 		<contenttweaker:ferramic_base> * 8, <prodigytech:ferramic_ingot> * 8, 360, <contenttweaker:fireclay>, 1
 	);
+
+	mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:fireclay_big>, <contenttweaker:fireclay> * 64, 1500);
 	explosionfurnace_recipes.addRecipe(
-		<extendedcrafting:singularity:16>, <extendedcrafting:singularity_custom:4>, 36000, <contenttweaker:fireclay> * 64, 1
+		<extendedcrafting:singularity:16>, <extendedcrafting:singularity_custom:4>, 36000, <contenttweaker:fireclay_big>, 1
 	);
 
 	mods.tconstruct.Casting.addTableRecipe(<contenttweaker:ferramic_gravel>, <minecraft:gravel>, <liquid:ferramic>, 16, true);

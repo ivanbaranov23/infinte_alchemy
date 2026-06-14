@@ -15,5 +15,10 @@
 		uid: "bebce071",
 		type: "dimension",
 		dim: 7
+	}],
+	rewards: [{
+		uid: "7e80af8d",
+		type: "item",
+		item: "dimensionaledibles:overworld_apple"
 	}]
 }

@@ -80,4 +80,8 @@
     </grindingball>
         
 
+    <recipe name="Alloy: Dark Steel">
+        <disabled/>
+    </recipe>
+
 </enderio:recipes>

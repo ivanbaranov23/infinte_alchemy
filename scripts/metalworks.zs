@@ -736,7 +736,7 @@ static all_metals as IItemStack[string][string] = {
 
         nugget: <contenttweaker:osgloridium_nugget>,
         block: <contenttweaker:osgloridium_block>,
-        dust: <contenttweaker:osgloridium_dust>
+        dust2: <contenttweaker:osgloridium_dust>
     },
 
 
@@ -1522,6 +1522,13 @@ static all_metals as IItemStack[string][string] = {
         element: <alchemistry:element:42>,
         singularity: <extendedcrafting:singularity_custom:74>
     },
+    rhodium: {
+        ingot: <alchemistry:ingot:45>,
+        plate: <contenttweaker:rhodium_plate>,
+        block: <contenttweaker:rhodium_block>,
+        dust: <contenttweaker:rhodium_dust>,
+        element: <alchemistry:element:45>
+    },
     cadmium: {
         ingot: <alchemistry:ingot:48>,
         block: <contenttweaker:cadmium_block>,
@@ -2054,6 +2061,12 @@ static all_metals as IItemStack[string][string] = {
         dust: <contenttweaker:banana>
     },
 
+    ender_crystal: {
+        ingot: <contenttweaker:ender_crystal>,
+        block: <contenttweaker:ender_crystal> * 9,
+        dust: <contenttweaker:ender_crystal>
+    },
+
     // dusts
     redstone: {
         ingot: <minecraft:redstone>,
@@ -2499,7 +2512,7 @@ static custom_metals as string[] = [
     "thermal_steel",
     "electric_manyullyn_base", "electric_manyullyn",
     "mekanized_steel", 
-    "osmiridium",
+    "osgloridium",
     "gastight_steel","chrome", "neodymium",
     "fluix_steel", "menril_steel", "medical_alloy",
     "arkenium", "gallium", "UU_matter", "lubarium", "solar_lubarium",
@@ -3079,7 +3092,6 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
 //alloys
 
 {//early game
-    mods.enderio.AlloySmelter.removeRecipe(all_metals.bronze.ingot);
     mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:99>);
     add2alloy(1, "bronze", 4,
         "tin", 1,
@@ -3161,25 +3173,24 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
 
 
         //missing
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.invar.ingot);
         add2alloy(1, "invar", 3,
             "iron", 2,
             "nickel", 1
         );
 
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.constantan.ingot);
+        
         add2alloy(1, "constantan", 2,
             "copper", 1,
             "nickel", 1
         );
 
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.manyullyn.ingot);
+        
         add2alloy(1, "manyullyn", 1,
             "cobalt", 1,
             "ardite", 1
         );
 
-        //mods.enderio.AlloySmelter.removeRecipe(all_metals.alubrass.ingot);
+        
         add2alloy(1, "alubrass", 4,
             "copper", 1,
             "aluminum", 3
@@ -3277,7 +3288,7 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
         }
         
 
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.electrum.ingot);
+        
         add2alloy(1, "electrum", 2,
             "gold", 1,
             "silver", 1
@@ -3336,7 +3347,6 @@ mods.thermalexpansion.Crucible.addRecipe(<liquid:gravitite> * 144, <aether_legac
             200
         );
 
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.redstone_alloy.ingot);
         add3alloy(1, "redstone_alloy", 2,
             "electric_steel", 2,
             "red_alloy", 1,
@@ -3469,7 +3479,7 @@ add3alloy(1, "flower_steel", 4,
     }
 
     {//te alloys
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.signalum.ingot);
+        
         add3alloy(2, "signalum", 4,
             "copper", 3,
             "silver", 1,
@@ -3490,7 +3500,7 @@ add3alloy(1, "flower_steel", 4,
             "silver", 1
         );
         
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.lumium.ingot);
+        
         add3alloy(2, "lumium", 4,
             "tin", 3,
             "silver", 1,
@@ -3505,8 +3515,6 @@ add3alloy(1, "flower_steel", 4,
     {//enderium 
         print("enderium");
         recipes.remove(<thermalfoundation:material:103>);
-        mods.enderio.AlloySmelter.removeRecipe(<thermalfoundation:material:167>);
-        mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:39>);
         mods.tconstruct.Alloy.removeRecipe(<liquid:enderium>);
         mods.thermalexpansion.Centrifuge.removeRecipe(<thermalfoundation:material:103>);
 
@@ -3713,16 +3721,23 @@ add3alloy(1, "flower_steel", 4,
             all_metals.osmium.ingot, all_metals.iridium.ingot, 
             16000
         );
-        add3alloy(1, "osmiridium", 8,
+        
+        add3alloy(2, "osmiridium", 8,
             "osmium", 2,
             "iridium", 2,
             "vibranium", 1
         );
+        add3alloy(2, "osmiridium", 8,
+            "osmium", 2,
+            "iridium", 2,
+            "vanadium", 1
+        );
+
         recipes.addShapeless("ia_met_osmiridium", <contenttweaker:osmiridium_dust> * 2, [
             all_metals.osmium.dust, all_metals.iridium.dust
         ]);
 
-        mods.enderio.AlloySmelter.addRecipe(all_metals.osgloridium.dust * 2, 
+        mods.enderio.AlloySmelter.addRecipe(all_metals.osgloridium.dust2 * 2, 
             [
                 all_metals.osgloglass.ingot,
                 all_metals.osmiridium.ingot,
@@ -3731,7 +3746,7 @@ add3alloy(1, "flower_steel", 4,
         );
 
         mods.mekanism.compressor.addRecipe(
-            all_metals.osgloridium.dust, 
+            all_metals.osgloridium.dust2, 
             all_metals.osgloridium.ingot
         );
     }
@@ -4119,7 +4134,7 @@ scripts.helper.addFluidAlloyerRecipe(
     }
 
     {//infinity reagent
-        mods.enderio.AlloySmelter.removeRecipe(<enderio:item_material:75>);
+        
 
 
         recipes.addShaped("ia_infinity_reagent", <enderio:item_material:75> * 8, [
@@ -4227,7 +4242,7 @@ scripts.helper.addFluidAlloyerRecipe(
 
         mods.tconstruct.Alloy.removeRecipe(<liquid:dark_steel>);
         mods.immersiveengineering.ArcFurnace.removeRecipe(all_metals.dark_steel.ingot);
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.dark_steel.ingot);
+        
 
 
         add3alloy(3, "dark_steel", 2,
@@ -4242,7 +4257,7 @@ scripts.helper.addFluidAlloyerRecipe(
         );
     }
     {//end steel
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.end_steel.ingot);
+       
 
         add3alloy(3, "end_steel", 4,
             "dark_steel", 6,
@@ -4251,7 +4266,7 @@ scripts.helper.addFluidAlloyerRecipe(
         );
     }
     {//melodic
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.melodic_alloy.ingot);
+        
 
         scripts.content_machines.addFluidAlloyerRecipe(
             <contenttweaker:melodic_paste>,
@@ -4321,7 +4336,7 @@ scripts.helper.addFluidAlloyerRecipe(
     {//energetic gold
         mods.tconstruct.Alloy.removeRecipe(<liquid:energetic_alloy>);
         mods.immersiveengineering.ArcFurnace.removeRecipe(all_metals.energetic_gold1.ingot);
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_gold1.ingot);
+        
         
         add3alloy(3, "energetic_gold1", 8,
             "electrum_sing", 1,
@@ -4332,7 +4347,7 @@ scripts.helper.addFluidAlloyerRecipe(
     {//energetic silver
         mods.tconstruct.Alloy.removeRecipe(<liquid:energetic_silver>);
         //mods.immersiveengineering.ArcFurnace.removeRecipe(all_metals.energetic_gold1.ingot);
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_silver1.ingot);
+        
         
         add3alloy(3, "energetic_silver1", 8,
             "lesmium_sing", 1,
@@ -4345,7 +4360,7 @@ scripts.helper.addFluidAlloyerRecipe(
     {//vibrant
         mods.tconstruct.Alloy.removeRecipe(<liquid:vibrant_alloy>);
         mods.thermalexpansion.InductionSmelter.removeRecipe(<enderio:item_alloy_ingot:1>, <minecraft:ender_pearl>);
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_gold2.ingot);
+        //mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_gold2.ingot);
 
         add3alloy(3, "energetic_gold2", 1,
             "energetic_gold1", 1,
@@ -4360,7 +4375,7 @@ scripts.helper.addFluidAlloyerRecipe(
     }
     {//vivid
         mods.tconstruct.Alloy.removeRecipe(<liquid:vivid_alloy>);
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_silver2.ingot);
+        //mods.enderio.AlloySmelter.removeRecipe(all_metals.energetic_silver2.ingot);
 
         add3alloy(3, "energetic_silver2", 1,
             "energetic_silver1", 1,
@@ -4376,7 +4391,7 @@ scripts.helper.addFluidAlloyerRecipe(
 
 
     //dark soularium
-    mods.enderio.AlloySmelter.removeRecipe(all_metals.dark_soularium.ingot);
+    //mods.enderio.AlloySmelter.removeRecipe(all_metals.dark_soularium.ingot);
     add3alloy(3, "dark_soularium", 4,
         "soularium", 16,
         "dark_steel", 4,
@@ -4385,7 +4400,7 @@ scripts.helper.addFluidAlloyerRecipe(
 
 
     {//crystalline
-        mods.enderio.AlloySmelter.removeRecipe(all_metals.crystalline_alloy.ingot);
+        //mods.enderio.AlloySmelter.removeRecipe(all_metals.crystalline_alloy.ingot);
 
         mods.enderio.AlloySmelter.addRecipe(all_metals.crystalline_alloy.ingot * 4, [
             <enderio:item_material:36> * 2,
@@ -4404,7 +4419,7 @@ scripts.helper.addFluidAlloyerRecipe(
         ], 200000);
 
 
-        mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:4>);
+        //mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:4>);
         mods.enderio.AlloySmelter.addRecipe(<enderio:item_alloy_endergy_ingot:4> * 2, [
             <industrialforegoing:pink_slime_ingot> * 16,
             all_metals.crystalline_alloy.ingot,
@@ -4436,7 +4451,7 @@ scripts.helper.addFluidAlloyerRecipe(
     }    
 }
 {//nethercotta
-    mods.enderio.AlloySmelter.removeRecipe(all_metals.nethercotta.ingot);
+    //mods.enderio.AlloySmelter.removeRecipe(all_metals.nethercotta.ingot);
     add3alloy(3, "nethercotta", 1, 
         "netherite", 1,
         "nether_cluster", 1,
@@ -4772,6 +4787,11 @@ add3alloy(3, "ender_ingot", 1,
     "yrdeen", 4,
     "prescience", 1
 );
+add3alloy(3, "ender_ingot", 2,
+    "ender_crystal", 3,
+    "yrdeen", 4,
+    "prescience", 1
+);
 
 {//uu ingot
     mods.prodigytech.atomicreshaper.addRecipeMulti(<contenttweaker:duraluminumwood_ingot>, 150, 80, [<contenttweaker:uu_base1>, <prodigytech:ash>], [9, 1]);
@@ -5065,7 +5085,7 @@ add3alloy(3, "ender_ingot", 1,
     <contenttweaker:vibralcum_ingot>.addTooltip("Vibration Dumping Alloy");
 
     //stellar alloy
-    mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:3>);
+    //mods.enderio.AlloySmelter.removeRecipe(<enderio:item_alloy_endergy_ingot:3>);
     
     mods.extendedcrafting.CombinationCrafting.addRecipe(
         <enderio:item_alloy_endergy_ingot:3> * 6, 102400 * 120, 102400 * 6, <contenttweaker:super_alloy_base_ingot>,

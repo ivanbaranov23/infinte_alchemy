@@ -2845,3 +2845,41 @@ item.contenttweaker.sunnarium_chunk.name=Sunnarium Chunk
 
 item.contenttweaker.fluoroantimonic_acid.name=Fluoroantimonic Acid
 item.contenttweaker.methanium.name=Methanium
+item.contenttweaker.xenon_gold.name=Tetraxenogold(II) Undecafluorodiantimonate
+
+item.contenttweaker.didymium.name=Didymium Glass
+tile.contenttweaker.magnetic_glass.name=Magnetic Confinement Glass
+
+item.contenttweaker.propylene.name=Propylene
+item.contenttweaker.butadiene.name=Butadiene
+item.contenttweaker.acrylonitrile.name=Acrylonitrile
+item.contenttweaker.adiponitrile.name=Adiponitrile
+item.contenttweaker.hexamethylenediamine.name=Hexamethylenediamine
+item.contenttweaker.nylon.name=Nylon 66
+
+item.contenttweaker.terephthalic_acid.name=Terephthalic Acid
+
+item.contenttweaker.chloroxylen.name=1,4-Bis(trichloromethyl)benzene
+item.contenttweaker.tcl.name=Terephthaloyl Chloride
+
+item.contenttweaker.nitrochlorobenzene.name=Nitrochlorobenzene
+item.contenttweaker.ppd.name=Phenylenediamine
+item.contenttweaker.kevlar.name=Kevlar
+
+item.contenttweaker.mana_bucket.name=Primal Mana Research Token
+item.contenttweaker.research_teleportation.name=Research: How To Teleport
+
+item.contenttweaker.ender_crystal.name=Enderference Crystal
+item.contenttweaker.gularity.name=Gularity Dust
+item.contenttweaker.dark_matter.name=Dark Matter
+
+item.contenttweaker.lv_plant.name=Snek Plant
+item.contenttweaker.leaf.name=Scaly Vanadium Leaf
+
+item.contenttweaker.soggy_paper.name=Soggy Paper
+
+item.contenttweaker.rhodium_plate.name=Rhodium Plate
+item.contenttweaker.rhodium_dust.name=Rhodium Dust
+tile.contenttweaker.rhodium_block.name=Block of Rhodium
+
+item.contenttweaker.filter_yellow.name=Yellow Catalytic Filter

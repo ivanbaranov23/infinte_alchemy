@@ -1,4 +1,4 @@
-
+import mods.integrateddynamics.Squeezer;
 
 recipes.remove(<integrateddynamics:squeezer>);
 recipes.addShaped("ia_squeezer", <integrateddynamics:squeezer>, [

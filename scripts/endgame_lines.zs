@@ -256,7 +256,11 @@ import mods.ctutils.utils.Math;
         rec.build();
     }
 
-
+    mods.thermalexpansion.Transposer.addFillRecipe(
+		<contenttweaker:dark_matter>, 
+		<contenttweaker:gularity>, <liquid:dark_matter> * 144, 
+		25000
+	);
 }
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:infinity_treat>, [

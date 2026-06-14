@@ -129,6 +129,9 @@ recipes.addShaped("ia_tool_casing", <thermalfoundation:material:640>, [
 		[<oreberries:shiroi_oreberry>, <ore:dustCryotheum>, <thermalfoundation:fertilizer:2>]
 	]);
 	mods.thermalexpansion.Crucible.addRecipe(<liquid:mana> * 50, <thermalfoundation:material:1028>, 10000);
+
+
+	
 }
 {//machines tier1
 	val te_extracter = <thermalexpansion:device:3>.withTag({RSControl: 0 as byte, Facing: 3 as byte, Energy: 0, SideCache: [1, 1, 2, 2, 2, 2] as byte[] as byte[]});

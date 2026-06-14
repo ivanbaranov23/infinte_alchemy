@@ -13,6 +13,13 @@ recipes.addShapeless("ia_diss_enchanter", <draconicevolution:diss_enchanter>, [
     <enderio:block_enchanter>, <actuallyadditions:item_disenchanting_lens>
 ]);
 
+recipes.remove(<draconicevolution:dislocator_receptacle>);
+recipes.addShaped("ia_dislocator_receptacle", <draconicevolution:dislocator_receptacle>, [
+	[<draconicevolution:infused_obsidian>, <integrateddynamics:logic_director>, <draconicevolution:infused_obsidian>], 
+	[<integrateddynamics:logic_director>, <enderio:block_travel_anchor>, <integrateddynamics:logic_director>], 
+	[<draconicevolution:infused_obsidian>, <thermalexpansion:frame>, <draconicevolution:infused_obsidian>]
+]);
+
 recipes.remove(<draconicevolution:draconic_core>);
 
 FusionCrafting.add(

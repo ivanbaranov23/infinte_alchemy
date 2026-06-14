@@ -25,7 +25,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:rainbow_leach
 
     //rec.addEnergyPerTickInput(1000 * 1000 * 1000);
 
-    rec.addItemInput(curry * 1000);
+    rec.addItemInput(curry * 256);
 
     rec.addItemOutput(<harvestcraft:rainbowcurryitem>);
 
@@ -38,7 +38,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:rainbow_leach
 
     //rec.addEnergyPerTickInput(1000 * 1000 * 1000);
 
-    rec.addItemInput(bbqplatter * 1000);
+    rec.addItemInput(bbqplatter * 256);
 
     rec.addItemOutput(<harvestcraft:epicbaconitem>);
 

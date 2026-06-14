@@ -286,7 +286,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			[<contenttweaker:watertight_steel_rod>, <exnihilocreatio:item_mesh:3>, <contenttweaker:watertight_steel_rod>]
 		]);
 		scripts.content_machines.addAssemblerRecipe(
-			[<contenttweaker:filter_empty>],
+			[<contenttweaker:filter_empty> * 2],
 			[<exnihilocreatio:item_mesh:3>, <thermalfoundation:material:832>], <liquid:watertight_steel> * 288,
 			20, 1000
 		);
@@ -309,6 +309,13 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			<projectred-core:resource_item:341>, <projectred-core:resource_item:341>, <projectred-core:resource_item:341>, 
 			<quantumflux:graphitedust> | <contenttweaker:solar_potion_zinc_ingot> | <contenttweaker:ambrosium_thing>
 		]);
+
+		scripts.content_machines.addFluidAlloyerRecipe(
+			<contenttweaker:filter_yellow>, 
+			<contenttweaker:filter_charcoal>, <contenttweaker:imperomite_catalyst>, <liquid:yellow> * 1000, 
+			20, 10000
+		);
+		
 	}
 
 }

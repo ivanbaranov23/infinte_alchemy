@@ -78,12 +78,27 @@ var staffwood_mushroom = VanillaFactory.createItem("staffwood_mushroom");
             player.getHeldItem(hand).damage(2, player);
             return ActionResult.success();
         }
+        else if (block == <block:erebus:kaizers_fingers_mushroom_block:0>) {
+            world.setBlockState(<block:contenttweaker:oreshroom_red>, pos);
+            player.getHeldItem(hand).damage(2, player);
+            return ActionResult.success();
+        }
         else if (block == <block:erebus:dutch_cap_mushroom_block:14>) {
             world.setBlockState(<block:contenttweaker:oreshroom_yellow>, pos);
             player.getHeldItem(hand).damage(2, player);
             return ActionResult.success();
         }
-        else if (block == <block<erebus:grandmas_shoes_mushroom_block:14>) {
+        else if (block == <block:erebus:dutch_cap_mushroom_block:0>) {
+            world.setBlockState(<block:contenttweaker:oreshroom_yellow>, pos);
+            player.getHeldItem(hand).damage(2, player);
+            return ActionResult.success();
+        }
+        else if (block == <block:erebus:grandmas_shoes_mushroom_block:14>) {
+            world.setBlockState(<block:contenttweaker:oreshroom_green>, pos);
+            player.getHeldItem(hand).damage(2, player);
+            return ActionResult.success();
+        }
+        else if (block == <block:erebus:grandmas_shoes_mushroom_block:0>) {
             world.setBlockState(<block:contenttweaker:oreshroom_green>, pos);
             player.getHeldItem(hand).damage(2, player);
             return ActionResult.success();
@@ -93,7 +108,17 @@ var staffwood_mushroom = VanillaFactory.createItem("staffwood_mushroom");
             player.getHeldItem(hand).damage(2, player);
             return ActionResult.success();
         }
+        else if (block == <block:erebus:dark_capped_mushroom_block:0>) {
+            world.setBlockState(<block:contenttweaker:oreshroom_blue>, pos);
+            player.getHeldItem(hand).damage(2, player);
+            return ActionResult.success();
+        }
         else if (block == <block:erebus:sarcastic_czech_mushroom_block:14>) {
+            world.setBlockState(<block:contenttweaker:oreshroom_purple>, pos);
+            player.getHeldItem(hand).damage(2, player);
+            return ActionResult.success();
+        }
+        else if (block == <block:erebus:sarcastic_czech_mushroom_block:0>) {
             world.setBlockState(<block:contenttweaker:oreshroom_purple>, pos);
             player.getHeldItem(hand).damage(2, player);
             return ActionResult.success();
