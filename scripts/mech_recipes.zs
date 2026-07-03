@@ -170,8 +170,8 @@
         150000
     );
     scripts.content_machines.addAssemblerRecipe(
-        [<contenttweaker:advanced_plating5_2> * 4, <contenttweaker:dirty_biocell>], [
-            <contenttweaker:advanced_plating5_1> * 4,
+        [<contenttweaker:advanced_plating5_2> * 8, <contenttweaker:dirty_biocell>], [
+            <contenttweaker:advanced_plating5_1> * 8,
             <contenttweaker:skymass1>
         ], <liquid:gravitite> * 576, 20, 10000
     );

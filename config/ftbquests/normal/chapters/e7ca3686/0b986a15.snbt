@@ -1,7 +1,11 @@
 {
-	x: 9.0d,
+	title: "Machine Frame 8",
+	x: 10.0d,
 	y: 0.0d,
 	shape: "square",
+	text: [
+		""
+	],
 	dependencies: [
 		"f085eed4",
 		"30efc77d"
@@ -18,5 +22,25 @@
 		uid: "e6b21eb2",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "c2de71c0",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorRed: 222,
+				TrophyColorBlue: 42,
+				TrophyName: "Frame 8",
+				TrophyColorGreen: 207,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					id: "enderio:item_material",
+					Count: 1,
+					Damage: 66s
+				},
+				TrophyVariant: "neon"
+			}
+		}
 	}]
 }

@@ -518,9 +518,12 @@ addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0,
 
 
 {//twilight
+    
     addExcavator("Twilight Redstone", 15, ["oreOverworldRedstone", "oreOverworldGarstone"], [0.95, 0.05], [7]);
 
     addExcavator("Twilight Garstone", 5, ["oreOverworldGarstone", "oreOverworldRuby"], [0.9, 0.1], [7]);
+
+    addFluidReservoir("Twilight Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [7]);
 }
 
 //aether
@@ -537,7 +540,7 @@ addFluidReservoir("Aether Skyroot Oil", 20, <liquid:skyroot>, 5*mil, 10*mil, 10,
 addFluidReservoir("Aether Rich Skyroot Oil", 5, <liquid:skyroot>, 25*mil, 50*mil, 100, [4]);
 addFluidReservoir("Aether Holy Water", 20, <liquid:holy_water>, mil, 10*mil, 10, [4]);
 
-addFluidReservoir("Aether Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [-11325]);
+addFluidReservoir("Aether Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [4]);
 
 //end
 addExcavator("End Uranium+", 1, ["oreTheendUranium", "oreTheendEmerald", "oreTheendPeridot", "oreTheendElectrotine"], [0.6, 0.2, 0.1, 0.1], [1]);

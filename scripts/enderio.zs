@@ -518,6 +518,11 @@ recipes.addShaped("ia_staff_of_traveling", <enderio:item_travel_staff>.withTag({
 	[null, <contenttweaker:ender_crystal>],
 	[<contenttweaker:staffwood>, null]
 ]);
+recipes.addShaped("ia_item_xp_transfer", <enderio:item_xp_transfer>, [
+	[null, null, <enderio:item_alloy_ingot:7>], 
+	[null, <thermalfoundation:tome_experience>.withTag({Experience: 10000}), null], 
+	[<enderio:item_alloy_ingot:7>, null, null]
+]);
 
 
 scripts.content_machines.addFluidAlloyerRecipe(<enderio:item_dark_steel_upgrade>, 

@@ -1,7 +1,11 @@
 {
+	title: "Machine Frame 6",
 	x: -2.0d,
 	y: 0.0d,
 	shape: "square",
+	text: [
+		"Welcome to EIO chapter"
+	],
 	size: 2.0d,
 	tasks: [{
 		uid: "e72bc146",
@@ -14,5 +18,25 @@
 		uid: "7936d454",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "6ff8e6e3",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorRed: 67,
+				TrophyColorBlue: 67,
+				TrophyName: "Frame 6",
+				TrophyColorGreen: 67,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					id: "enderio:item_material",
+					Count: 1,
+					Damage: 1s
+				},
+				TrophyVariant: "neon"
+			}
+		}
 	}]
 }

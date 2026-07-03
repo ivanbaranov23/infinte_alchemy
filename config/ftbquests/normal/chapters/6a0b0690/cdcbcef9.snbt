@@ -1,0 +1,23 @@
+{
+	title: "Skipping Twilight",
+	x: -8.0d,
+	y: -3.0d,
+	text: [
+		"You can mostly skip going to twilight forest in case it's too laggy or you've been there a billion times.",
+		"",
+		"Get steeleaf via flower staff, use it to make twilit soup"
+	],
+	dependencies: [
+		"f8d00f2a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "670f0277",
+		type: "item",
+		items: [{
+			item: "contenttweaker:staffwood_flower"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

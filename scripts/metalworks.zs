@@ -961,6 +961,18 @@ static all_metals as IItemStack[string][string] = {
         block: <actuallyadditions:block_crystal_empowered:3>
     },
 
+    // aether
+    valkyrie: {
+        ingot: <tinkersaether:valkyrie_ingot>,
+        block: <tinkersaether:valkyrie_block>,
+        nugget: <tinkersaether:valkyrie_nugget>,
+        dust: <moretcon:dustvalkyriemetal>
+    },
+    zanite: {
+        ingot: <aether_legacy:zanite_gemstone>,
+        block: <aether_legacy:zanite_block>
+    },
+
     // ender io things
     conductive_iron: {
         ingot: <enderio:item_alloy_ingot:4>,
@@ -1491,6 +1503,12 @@ static all_metals as IItemStack[string][string] = {
     
 
     //alchemistry
+    magnesium: {
+        ingot: <alchemistry:ingot:12>,
+        block: <contenttweaker:magnesium_block>,
+        dust: <contenttweaker:magnesium_dust>,
+        element: <alchemistry:element:12>
+    },
     vanadium: {
         ingot: <alchemistry:ingot:23>,
         block: <contenttweaker:vanadium_block>,
@@ -2391,6 +2409,7 @@ static all_metals_molten as ILiquidStack[string] = {
     starmetal: <liquid:starmetal>,
     zirconium: <liquid:zirconium>,
     molybdenum: <liquid:molybdenum>,
+    rhodium: <liquid:rhodium>,
     vanadium: <liquid:vanadium>,
 
     crystal_matrix: <liquid:crystal_matrix>,
@@ -2522,7 +2541,7 @@ static custom_metals as string[] = [
 
     "runesteel",
 
-    "selenium", "tellurium", "arsenic", "molybdenum", "tantalum"
+    "magnesium", "selenium", "tellurium", "arsenic", "molybdenum", "rhodium", "tantalum"
 ];
 
 
@@ -2807,11 +2826,11 @@ function addBall(ingot as IItemStack, ball as IItemStack){
     );
 }
 function addElement(nam as string){
-    recipes.addShapeless("ia_el_red" ~ nam, all_metals[nam].element * 4, 
+    recipes.addShapeless("ia_el_red" ~ nam, all_metals[nam].element * 12, 
         [all_metals[nam].ingot, <contenttweaker:elemental_reduction>]
     );
     if (all_metals[nam].keys has "dust"){
-        recipes.addShapeless("ia_el_red_dust" ~ nam, all_metals[nam].element * 4, 
+        recipes.addShapeless("ia_el_red_dust" ~ nam, all_metals[nam].element * 12, 
             [all_metals[nam].dust, <contenttweaker:elemental_reduction>]
         );
     }
@@ -3434,13 +3453,13 @@ add3alloy(1, "flower_steel", 4,
         );
         mods.tconstruct.Casting.addTableRecipe(
             <contenttweaker:thermal_paste>, <contenttweaker:thermal_paste_base>, 
-            <liquid:honey>, 250, 
+            <liquid:honey>, 200, 
             true
         );
         mods.thermalexpansion.Transposer.addFillRecipe(
             <contenttweaker:thermal_paste>, 
             <contenttweaker:thermal_paste_base>, 
-            <liquid:honey> * 250, 1000
+            <liquid:honey> * 200, 1000
         );
 
         //compound2
@@ -4053,6 +4072,19 @@ scripts.helper.addFluidAlloyerRecipe(
     );
 }
 
+{//aether
+    add3alloy(2, "valkyrie", 3,
+        "valkyrie", 1,
+        "valyrium", 1,
+        "magnesium", 1
+    );
+    add3alloy(2, "valkyrie", 3,
+        "valkyrie", 1,
+        "valyrium", 1,
+        "zanite", 1
+    );
+
+}
 {//gravity
     TEAlloyer.addRecipe(
         <contenttweaker:gravity_dust>, 

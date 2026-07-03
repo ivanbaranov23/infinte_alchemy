@@ -182,9 +182,6 @@ Fey.removeRecipe(<roots:elemental_soil>);
 Fey.addRecipe("ia_elemental_soil", <roots:elemental_soil> * 4, 
     [<ore:compressed1xDirt>, <botania:fertilizer>, <minecraft:bone_block>, <roots:stalicripe>, <ore:dustCharcoal>]
 );
-Fey.addRecipe("ia_elemental_soil2", <roots:elemental_soil> * 6, 
-    [<mysticalagriculture:dirt_essence>, <botania:fertilizer>, <minecraft:bone_block>, <roots:stalicripe>, <ore:dustCharcoal>]
-);
 
 
 Fey.removeRecipe(<roots:runic_crafter>);

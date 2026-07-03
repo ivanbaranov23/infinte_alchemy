@@ -820,7 +820,8 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			<contenttweaker:rotor_blades> * 2,
 			<projectred-core:resource_item:410> * 2,
 			<contenttweaker:fluid_processor> * 3,
-			<immersiveengineering:metal_device0:5>
+			<immersiveengineering:metal_device0:5>,
+			<contenttweaker:watertight_lead_plate>
 		],
 		<liquid:watertight_steel> * (6 * 144), 20, 256
 	);
@@ -1131,6 +1132,35 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 			<contenttweaker:simple_motor> * 4
 		],
 		<liquid:mekanized_steel> * 144, 20, 256
+	);
+
+
+
+	mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:porous_plate>, 
+        <enderio:item_material:72>,
+        <contenttweaker:magnesium_dust> * 8,
+        20 * 1000
+    );
+	scripts.content_machines.addAdvancedMixerRecipe(
+		[<contenttweaker:methyst_dirty_dust>], [<liquid:threeway> * 1000], 
+		[
+			<thermalfoundation:material:134> * 3,
+			<taiga:palladium_ingot> * 3,
+			<alchemistry:ingot:45> * 3,
+			<contenttweaker:methyst>
+		], [
+			<liquid:aqua_regia> * 1000
+		], 20, 1000
+	);
+
+	scripts.content_machines.addAssemblerRecipe(
+		[<contenttweaker:twc>], 
+		[
+			<contenttweaker:porous_plate>,
+			
+		], <liquid:threeway> * 1000,
+		20, 10000
 	);
 }
 
@@ -2126,14 +2156,14 @@ scripts.content_machines.addAssemblerRecipe(
 			<botania:rune:13>,
 			<contenttweaker:beryllium_sheet> * 8,
 			<contenttweaker:carminium_ingot> * 48
-		], 1000000
+		], 10000000
 	);
 	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:carminium_sheet> * 2, 
 		[
 			<botania:rune:13>,
 			<contenttweaker:beryllium_sheet> * 8,
 			<contenttweaker:awakened_carminium_ingot> * 48
-		], 1000000
+		], 10000000
 	);
 }
 

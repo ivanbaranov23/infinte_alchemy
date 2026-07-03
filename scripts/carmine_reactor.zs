@@ -6,10 +6,14 @@ recipes.addShaped("ia_power_core_block", <contenttweaker:power_core>, [
     [<contenttweaker:power_core_active>, <redstonearsenal:material:224>, <contenttweaker:power_core_active>]
 ]);
 
+mods.mekanism.reaction.addRecipe(
+    <minecraft:redstone>, <liquid:strawberry_wine> * 500, <gas:sodium> * 100, 
+    null, <gas:carmin> * 100, 50000, 60
+);
 {
 	var rec = RecipeBuilder.newBuilder("carmin", "carmine_reactor", 10 * 20);
 
-    rec.addEnergyPerTickInput(200);
+    rec.addEnergyPerTickInput(2000);
 
     rec.addItemInput(<minecraft:redstone>);
 	rec.addGasInput(<gas:sodium> * 100);

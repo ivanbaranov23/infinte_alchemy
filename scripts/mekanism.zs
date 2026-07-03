@@ -52,17 +52,6 @@ mods.mekanism.chemical.infuser.addRecipe(<gas:nitric_dioxide>, <gas:water> * 2, 
 mods.mekanism.chemical.infuser.addRecipe(<gas:nitric_acid>, <gas:ammonia>, <gas:ammonium_nitrate>);
 
 //box
-recipes.remove(<mekanism:cardboardbox>);
-recipes.addShaped("ia_cardbox", <mekanism:cardboardbox>, [
-	[<ore:dustWood>, <ore:dustWood>, <ore:dustWood>],
-	[<contenttweaker:quest_coin>, <actuallyadditions:block_misc:4>, <contenttweaker:quest_coin>],
-	[<ore:dustWood>, <ore:dustWood>, <ore:dustWood>]
-]);
-recipes.addShaped("ia_cardbox2", <mekanism:cardboardbox>, [
-	[<ore:dustWood>, <contenttweaker:blood_shard2>, <ore:dustWood>],
-	[<bloodmagic:component:18>, <actuallyadditions:block_misc:4>, <bloodmagic:component:18>],
-	[<ore:dustWood>,<contenttweaker:blood_shard2>, <ore:dustWood>]
-]);
 
 
 //plastic blocks
@@ -94,7 +83,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	recipes.remove(<mekanism:energytablet>);
 	recipes.addShaped("ia_mek_battery", <mekanism:energytablet>, [
 		[<ore:alloyAdvanced>, <contenttweaker:mekanized_steel_ingot> | <contenttweaker:electric_manyullyn_ingot> | <alchemistry:ingot:74>, <ore:alloyAdvanced>], 
-		[<ore:circuitBasic>, <ore:plateOsgloglas>, <ore:circuitBasic>], 
+		[<ore:circuitBasic>, <ore:ingotOsgloglas>, <ore:circuitBasic>], 
 		[<ore:alloyAdvanced>, <contenttweaker:mekanized_steel_ingot> | <contenttweaker:electric_manyullyn_ingot> | <alchemistry:ingot:74>, <ore:alloyAdvanced>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
@@ -103,7 +92,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 			<mekanism:enrichedalloy> * 2,
 			<contenttweaker:mekanized_steel_ingot> | <contenttweaker:electric_manyullyn_ingot> | <alchemistry:ingot:74>,
 			<ore:circuitBasic>
-		], <liquid:osgloglas> * 288,
+		], <liquid:osgloglas> * 144,
 		10, 250
 	);
 
@@ -401,7 +390,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<mekanism:basicblock:9> * 4],
-		[<openblocks:tank>, <contenttweaker:mekanized_steel_plate> * 2, <immersiveengineering:sheetmetal:8>],
+		[<openblocks:tank>, <contenttweaker:mekanized_steel_plate> | <moretcon:ingotpenguinite> * 2, <immersiveengineering:sheetmetal:8>],
 		<liquid:watertight_steel> * 576,
 		10, 64
 	);
@@ -416,7 +405,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	recipes.remove(<mekanism:basicblock2:7>);
 	recipes.addShaped("ia_mek_boiler", <mekanism:basicblock2:7> * 2, [
 		[<ore:alloyElite>, <mekanism:basicblock:9>, <ore:alloyElite>], 
-		[<mekanism:basicblock:9>, <thermalexpansion:augment:640>, <mekanism:basicblock:9>], 
+		[<mekanism:basicblock:9>, <thermalexpansion:augment:576>, <mekanism:basicblock:9>], 
 		[<ore:alloyElite>, <mekanism:basicblock:9>, <ore:alloyElite>]
 	]);
 

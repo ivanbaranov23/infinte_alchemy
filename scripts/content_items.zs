@@ -133,6 +133,11 @@ function addFlower(name as string){
     kaolin_clay_block.register();
 
     VanillaFactory.createItem("dolomite").register();
+    VanillaFactory.createItem("dolomite2").register();
+    VanillaFactory.createItem("magnesium_dust").register();
+    VanillaFactory.createBlock("magnesium_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("porous_plate").register();
+    
     
     VanillaFactory.createBlock("karmesine_tile", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("karmesine_tile2", <blockmaterial:rock>).register();
@@ -1093,6 +1098,7 @@ function addAtomicResource(name as string){
 
     {//rh v 
         VanillaFactory.createItem("rhodium1").register();
+        VanillaFactory.createItem("rhodium2").register();
         addLava("garstone_sludge");
         addLava("garstone_sludge2");
 
@@ -1861,6 +1867,11 @@ knife.register();
     VanillaFactory.createItem("leaf").register();
 
     add_living("lv_walker");
+
+    add_living("honey_spider");
+    VanillaFactory.createItem("honey_spider_corpse").register();
+    VanillaFactory.createItem("honey_web").register();
+    VanillaFactory.createFluid("spider_mead", Color.fromHex("c9ae08")).register();
 
     add_living("lv_draco_lizard");
     VanillaFactory.createItemFood("draco_lizard_corpse", 4).register();
@@ -2729,6 +2740,15 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("trollsteinn").register();
     VanillaFactory.createItem("mobbium").register();
+
+
+    VanillaFactory.createFluid("twilit_soup", Color.fromHex("08820c")).register();
+
+    VanillaFactory.createFluid("vow_fire", Color.fromHex("d21313")).register();
+    VanillaFactory.createFluid("vow_ice", Color.fromHex("47c0ed")).register();
+    VanillaFactory.createFluid("vow_honor", Color.fromHex("5ea12a")).register();
+    VanillaFactory.createFluid("vow_death", Color.fromHex("4c145e")).register();
+    //VanillaFactory.createFluid("vow_fire", Color.fromHex("d21313")).register();
 }
 {//actually addition
     VanillaFactory.createItem("blue_paste").register();
@@ -2860,6 +2880,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 {//extended carfting
     VanillaFactory.createItem("gargeruby").register();
     VanillaFactory.createItem("inverse_gargeruby").register();
+
+    VanillaFactory.createFluid("threeway", Color.fromHex("591c1c")).register();
+    VanillaFactory.createItem("twc").register();
 }
 {//blood magic
     VanillaFactory.createItem("deep_dark_core").register();
@@ -3226,6 +3249,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("mana_conductor").register();
     VanillaFactory.createItem("mana_resistor").register();
+    VanillaFactory.createItem("mana_charged_ingot").register();
 
     var cutting = VanillaFactory.createBlock("cutting", <blockmaterial:rock>);
     cutting.setBlockLayer("TRANSLUCENT");

@@ -500,6 +500,22 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 
 
 {//steam
+	scripts.jei.addJEIhint(
+		[], [<liquid:water>], 
+		[
+			<thermalexpansion:dynamo> | <thermalexpansion:dynamo:1> | <thermalexpansion:dynamo:2>,
+			<thermalexpansion:augment:576>
+		], 
+		[], [<liquid:steam>]
+	);
+	scripts.jei.addJEIhint(
+		[], [<liquid:water>], 
+		[
+			<mekanism:basicblock2:7>, <mekanism:basicblock2:5>, <mekanism:basicblock2:6>
+		], 
+		[], [<liquid:steam>]
+	);
+
 	{//dense
 		scripts.compact_distill.addCompactDistill(
 			[<liquid:pure_water> * 100, <liquid:dense_steam> * 200, <liquid:steam> * 100], 
@@ -818,7 +834,7 @@ function addAirCollectionRecipe(outp as ILiquidStack, cryo as int, cloudin as in
 			2, 5120, 1
 		);
 		scripts.compact_distill.addCompactDistill(
-			[<liquid:ender> * 120, <liquid:liquidchorus> * 30, <liquid:mana> * 20, <liquid:dragon_spit> * 5], 
+			[<liquid:ender> * 100, <liquid:postender> * 30, <liquid:liquidchorus> * 30, <liquid:mana> * 20, <liquid:dragon_spit> * 5], 
 			[<enderio:item_material:28>], 
 			<liquid:end_air> * 200, 3 * 20 * 64, 3 * 20, 
 			[0.04]

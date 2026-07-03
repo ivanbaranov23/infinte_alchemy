@@ -2,6 +2,264 @@
     "registryname": "high_oven",
     "localizedname": "High oven",
     "color": "27140e",
+    "modifiers": [
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 0,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:tignalum_blast_brick@0"
+            ],
+            "modifier": [
+                {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.91700404
+                }
+            ]
+        }
+    ],
     "parts": [
         {
             "x": -1,

@@ -119,59 +119,6 @@ static GCnumbers as int[] = [
     34,
     55
 ];
-/*
-function addGCrecipe(tier as int, seeds as IItemStack[], fruits as WeightedItemStack[], catalyst as IItemStack[], mult as int){
-    var rec = RecipeBuilder.newBuilder("GC_" ~ fruits[0].stack.name ~ seeds[0].name ~ tier, "garden_cloche", GCtime[tier] * mult);
-
-    if (tier != 0) {rec.addEnergyPerTickInput(GCenergy[tier]);}
-
-    for o in fruits{
-        rec.addItemOutput(o.stack);
-        rec.setChance(o.chance);
-    }
-
-    for i in seeds{
-        rec.addItemInput(i);
-        rec.setChance( GCchance[tier] );
-    }
-    
-    rec.addItemInput(GCsoils[tier]);
-    rec.setChance(0.0);
-
-    for i in catalyst{
-        rec.addItemInput(i);
-        rec.setChance(0.0);
-    }
-    if (tier < 3){
-        //>
-        rec.addFluidInput(<liquid:water> * (200 * (tier + 1)));
-    }else{
-        rec.addFluidInput(<liquid:fertilizer> * (200 * (tier + 1)));
-    }
-
-
-    if (tier > 1){
-        rec.addItemInput(<ore:fertilizer>, tier * 2);
-    }
-    if (tier > 2){
-        rec.addItemInput(<contenttweaker:plant_sample>);
-        rec.setChance( 1.0 / (tier as float) );
-    }
-    if (tier > 4){
-        rec.addItemInput(<ore:advancedFertilizer>, tier - 4);
-    }
-    if (tier > 5){
-        rec.addFluidInput(<liquid:plantoil> * 100);
-    }
-
-    rec.build();
-}
-function addGCrecipe_alltiers(min_tier as int, seeds as IItemStack[], fruits as WeightedItemStack[], catalyst as IItemStack[], mult as int){
-    for i in min_tier to 7{
-        addGCrecipe(i, seeds, fruits, catalyst, mult);
-    }
-}
-*/
 
 
 recipes.addShaped("ia_vivid_grass", <botania:altgrass:2>, [
@@ -577,6 +524,48 @@ scripts.helper.addPlantStationRecipe(
 
     ], <liquid:tree_oil> * 2000, 12
 );
+
+scripts.helper.addPlantStationRecipe(
+	<contenttweaker:research_plants1>, 
+    [<extrautils2:redorchid>], 
+    [
+        <minecraft:red_flower> * 16,
+        <erebus:materials:11> * 16,
+        <minecraft:redstone_ore> * 4
+    ], <liquid:fertilizer> * 2000, 12
+);
+
+{//time tree
+    scripts.helper.addPlantStationRecipe(
+        <contenttweaker:research_plants2>, 
+        [<twilightforest:twilight_sapling:5>], 
+        [
+            <integrateddynamics:menril_sapling> * 4,
+            <torcherino:blocktorcherino>,
+            <minecraft:clock> * 64
+
+        ], <liquid:tree_oil> * 2000, 12
+    );
+    scripts.helper.addPlantStationRecipe(
+        <contenttweaker:research_plants2>, 
+        [<twilightforest:twilight_sapling:5> * 4], 
+        [
+            <twilightforest:twilight_sapling:5>,
+            <minecraft:clock> * 4
+
+        ], <liquid:fertilizer> * 2000, 12
+    );
+    scripts.helper.addPlantStationRecipe(
+        <contenttweaker:research_plants2>, 
+        [<twilightforest:magic_log_core>], 
+        [
+            <twilightforest:magic_log> * 64,
+            <minecraft:clock> * 4
+
+        ], <liquid:fertilizer> * 2000, 12
+    );
+}
+
 scripts.helper.addPlantStationRecipe(
 	<contenttweaker:research_plants2>, 
     [<extrautils2:ironwood_sapling>], 

@@ -241,8 +241,12 @@ rotarygrinder.addRecipe(<prodigytech:carbon_plate>, <thermalfoundation:material:
 
 recipes.remove(<prodigytech:inferno_fuel>);
 recipes.addShapeless("ia_inferno_fuel", <prodigytech:inferno_fuel>, 
+	[<prodigytech:enriched_fuel>, <prodigytech:fuel_pellet_1>, <ore:powderBlaze>, <minecraft:sugar>, <prodigytech:ash>]
+);
+recipes.addShapeless("ia_inferno_fuel2", <prodigytech:inferno_fuel> * 2, 
 	[<prodigytech:enriched_fuel>, <prodigytech:fuel_pellet_1>, <ore:powderBlaze>, <prodigytech:sugar_cube>, <prodigytech:ash>]
 );
+
 recipes.remove(<prodigytech:energion_dust>);
 //energion in roots mortar
 recipes.addShaped("ia_hot_energion", <contenttweaker:hot_energion> * 8, [
@@ -613,6 +617,8 @@ solderer.removeAll();
 	rotarygrinder.addRecipe(<thermalfoundation:material:160>, <thermalfoundation:material:96>); //steel
 	rotarygrinder.addRecipe(<contenttweaker:duraluminum_ingot>, <contenttweaker:duraluminum_dust>); //duraluminum
 	rotarygrinder.addRecipe(<contenttweaker:watertight_steel_ingot>, <contenttweaker:watertight_steel_dust>); //watertight_steel
+
+	rotarygrinder.addRecipe(<minecraft:dye:4>, <enderio:item_material:32>);						//manyullyn
 }
 {//m reass
 	magneticreassembler.addRecipe(<enderio:item_material:32>, <minecraft:dye:4>);

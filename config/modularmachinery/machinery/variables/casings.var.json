@@ -12,7 +12,10 @@
         "modularmachinery:blockmeiteminputbus",
         "modularmachinery:blockmefluidoutputbus",
         "modularmachinery:blockmefluidinputbus",
-        "modularmachinery:blockmepatternprovider"
+        "modularmachinery:blockmepatternprovider",
+
+        "modularmachineryaddons:blocksingularityiteminputbus",
+        "modularmachineryaddons:blocksingularityitemoutputbus"
     ],
     "casings_all_all": [
         "modularmachinery:blockcasing@0",

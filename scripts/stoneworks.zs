@@ -160,6 +160,17 @@ function addCobbleRecipe(out as IItemStack, cat as IItemStack, iin as WeightedIt
         
     }
 }
+{//dolomite
+    furnace.addRecipe(<contenttweaker:dolomite2>, <contenttweaker:dolomite>);
+    InductionSmelter.addRecipe(
+        <contenttweaker:magnesium_dust>,
+        <contenttweaker:dolomite2>, 
+        <appliedenergistics2:material:5>,
+        2000,
+        <thermalfoundation:material:864>, 30
+    );
+}
+
 
 {//erebus
     {//umber

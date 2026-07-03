@@ -171,6 +171,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:lucky_alloy_ingot>, <contenttweaker:lucky_alloy_block>);
 
 
+    add3x3Recipe(<alchemistry:ingot:12>, <contenttweaker:magnesium_block>);
     add3x3Recipe(<alchemistry:ingot:23>, <contenttweaker:vanadium_block>);
     add3x3Recipe(<alchemistry:ingot:32>, <contenttweaker:germanium_block>);
     add3x3Recipe(<alchemistry:ingot:33>, <contenttweaker:arsenic_block>);

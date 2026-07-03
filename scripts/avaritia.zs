@@ -307,16 +307,3 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <avaritiaddons:avaritiaddons_ch
 
 
 
-
-
-
-
-
-
-mods.extendedcrafting.TableCrafting.addShaped(2, <contenttweaker:quest_coin>, [
-	[<ore:coinIron>, <ore:coinGold>, <ore:coinCopper>, <ore:coinTin>, <ore:coinSilver>], 
-	[<ore:coinLead>, <ore:coinAluminum>, <ore:coinNickel>, <ore:coinPlatinum>, <ore:coinIridium>], 
-	[<ore:coinMithril>, <ore:coinSteel>, <ore:ingotInfinity>, <ore:coinElectrum>, <ore:coinInvar>], 
-	[<ore:coinBronze>, <ore:coinConstantan>, <ore:coinSignalum>, <ore:coinLumium>, <ore:coinEnderium>], 
-	[<atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>, <atum:coin_gold>]
-]);

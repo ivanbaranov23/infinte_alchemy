@@ -1,7 +1,7 @@
 inWorldCrafting.fluidToItem.recipeBuilder()
         .fluidInput(fluid('redstone'))
         .input(item('thermalfoundation:material', 16))
-        .output(item('erebus:materials', 11))
+        .output(item('erebus:materials', 11) * 2)
         .register()
 
 inWorldCrafting.fluidToItem.recipeBuilder()

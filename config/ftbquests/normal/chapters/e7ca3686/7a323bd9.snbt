@@ -1,0 +1,23 @@
+{
+	x: 4.0d,
+	y: 3.0d,
+	text: [
+		"Used for solar panels"
+	],
+	dependencies: [
+		"04395e3a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d7633910",
+		type: "item",
+		items: [{
+			item: "contenttweaker:perovskite_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "a8f186fb",
+		type: "item",
+		item: "contenttweaker:perovskite_block"
+	}]
+}

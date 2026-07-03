@@ -281,6 +281,16 @@ addResearchRecipe("Oreberries", <contenttweaker:plant_sample>, <contenttweaker:r
         <oreberries:gold_oreberry_bush> * 4
     ], 512, 5 * 20
 );
+addResearchRecipe("Mushroom", <contenttweaker:mushroomite_ingot>, <contenttweaker:research_mushroom1>,
+    [
+        <erebus:sarcastic_czech_mushroom>,
+        <betternether:bone_mushroom>,
+        <mod_lavacow:cordy_shroom>,
+        <roots:baffle_cap_mushroom>,
+        <harvestcraft:whitemushroomitem>,
+        <biomesoplenty:mushroom:3>
+    ], 512, 5 * 20
+);
 
 
 addResearchRecipe("Sieving", <exnihilocreatio:item_mesh:3>, <contenttweaker:research_sieving>, //ok

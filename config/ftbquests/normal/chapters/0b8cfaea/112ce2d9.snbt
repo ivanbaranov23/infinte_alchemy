@@ -1,6 +1,6 @@
 {
 	x: 4.5d,
-	y: 3.0d,
+	y: 5.0d,
 	text: [
 		"Breaks cobble->gravel->sand->dust in world, so you don't have to place it.",
 		"",

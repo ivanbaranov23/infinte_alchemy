@@ -1,6 +1,6 @@
 {
 	x: 8.0d,
-	y: -2.0d,
+	y: -3.0d,
 	dependencies: [
 		"30efc77d"
 	],
@@ -8,7 +8,19 @@
 		uid: "00ca80c0",
 		type: "item",
 		items: [{
+			item: "contenttweaker:soul_codex1"
+		}]
+	},
+	{
+		uid: "e1dd1d07",
+		type: "item",
+		items: [{
 			item: "contenttweaker:soul_codex8"
 		}]
+	}],
+	rewards: [{
+		uid: "3426545d",
+		type: "item",
+		item: "contenttweaker:soul_codex8"
 	}]
 }

@@ -831,7 +831,7 @@ import mods.modularmachinery.RecipeBuilder;
     ]);
 }
 
-{//eliamondin
+{//eliamondin rubberald
     
     recipes.addShapeless("ia_eliamondin2", <contenttweaker:eliamondin_dust> * 2, [
         <thermalfoundation:material:102>,
@@ -850,10 +850,16 @@ import mods.modularmachinery.RecipeBuilder;
 
     mods.thermalexpansion.InductionSmelter.addRecipe(
         <contenttweaker:eliamondin>, 
-        <contenttweaker:eliamondin_dust>, <contenttweaker:slimy_glass> * 2, 
+        <contenttweaker:eliamondin_dust>, <immersiveengineering:stone_decoration:8>, 
         10000
     );
-
+    mods.enderio.AlloySmelter.addRecipe(<contenttweaker:eliamondin> * 3, 
+		[
+			<contenttweaker:eliamondin_dust> * 2, 
+            <immersiveengineering:stone_decoration:8>,
+            <tconstruct:materials:16> 
+		], 12000
+	);
 }
 
 {//glass fiber

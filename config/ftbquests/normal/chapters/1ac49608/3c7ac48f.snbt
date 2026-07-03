@@ -1,0 +1,25 @@
+{
+	x: 0.0d,
+	y: -4.0d,
+	dependencies: [
+		"41925402"
+	],
+	optional: true,
+	tasks: [{
+		uid: "4048906b",
+		type: "item",
+		items: [{
+			item: "contenttweaker:methyst"
+		}]
+	}],
+	rewards: [{
+		uid: "12fd84ee",
+		type: "item",
+		item: "contenttweaker:methyst_dirty_dust"
+	},
+	{
+		uid: "bb0b96cc",
+		type: "item",
+		item: "contenttweaker:methyst_dust"
+	}]
+}

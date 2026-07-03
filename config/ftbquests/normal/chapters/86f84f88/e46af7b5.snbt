@@ -1,0 +1,67 @@
+{
+	title: "Research Mushroom",
+	icon: "contenttweaker:research_mushroom1",
+	x: 0.0d,
+	y: 3.0d,
+	shape: "gear",
+	text: [
+		""
+	],
+	dependencies: [
+		"c529d48c"
+	],
+	tasks: [{
+		uid: "b7fac5e1",
+		type: "item",
+		items: [{
+			item: "betternether:bone_mushroom"
+		}]
+	},
+	{
+		uid: "959edf5c",
+		type: "item",
+		items: [{
+			item: "biomesoplenty:mushroom 1 3"
+		}]
+	},
+	{
+		uid: "12259350",
+		type: "item",
+		items: [{
+			item: "erebus:sarcastic_czech_mushroom"
+		}]
+	},
+	{
+		uid: "54b20753",
+		type: "item",
+		items: [{
+			item: "mod_lavacow:cordy_shroom"
+		}]
+	},
+	{
+		uid: "a8f74298",
+		type: "item",
+		items: [{
+			item: "harvestcraft:whitemushroomitem"
+		}]
+	},
+	{
+		uid: "f7f690e7",
+		type: "item",
+		items: [{
+			item: "roots:baffle_cap_mushroom"
+		}]
+	},
+	{
+		uid: "4099261e",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_mushroom1"
+		}]
+	}],
+	rewards: [{
+		uid: "007c0729",
+		type: "item",
+		item: "contenttweaker:research_mushroom1"
+	}]
+}

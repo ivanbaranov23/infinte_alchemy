@@ -1,7 +1,7 @@
 {
 	title: "It grows on trees!",
-	x: 1.5d,
-	y: 6.0d,
+	x: 0.5d,
+	y: 7.0d,
 	text: [
 		"Slime is it."
 	],

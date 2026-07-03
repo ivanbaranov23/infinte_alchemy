@@ -1,6 +1,9 @@
 {
 	x: 6.0d,
 	y: 0.0d,
+	text: [
+		"Needs research to be made."
+	],
 	dependencies: [
 		"31c8f138"
 	],

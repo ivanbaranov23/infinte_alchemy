@@ -1,0 +1,28 @@
+{
+	title: "Full of will",
+	x: -3.0d,
+	y: 7.5d,
+	text: [
+		""
+	],
+	dependencies: [
+		"08563df6"
+	],
+	tasks: [{
+		uid: "1363d96d",
+		type: "item",
+		items: [{
+			id: "bloodmagic:soul_gem",
+			Damage: 4s,
+			tag: {
+				souls: 16384.0d
+			}
+		}],
+		consume_items: true
+	}],
+	rewards: [{
+		uid: "3500d3d1",
+		type: "item",
+		item: "contenttweaker:quest_coin"
+	}]
+}

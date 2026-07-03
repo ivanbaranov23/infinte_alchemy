@@ -63,6 +63,12 @@ import mods.modularmachinery.RecipeBuilder;
         ], 20, 1000
     );
 
+
+    mods.thermalexpansion.Refinery.addRecipe(
+        <liquid:ender> * 400, null, 
+        <liquid:postender> * 500, 
+        2000
+    );
 }
 
 {//evil
@@ -325,7 +331,7 @@ import mods.modularmachinery.RecipeBuilder;
 }
 
 
-{
+{//yellow
     recipes.addShapeless("ia_yellow", <contenttweaker:yellow_dust>, [
         <botania:petalblock:4>,
         <bigreactors:dustyellorium>,
@@ -425,6 +431,13 @@ import mods.modularmachinery.RecipeBuilder;
         20, 10000
     );
     
+
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:rhodium2>, 
+        <contenttweaker:rhodium1>, <thermalfoundation:material:134>, 
+        50000, 
+        <mekores:mekanismore:18>, 50
+    );
 }
 
 

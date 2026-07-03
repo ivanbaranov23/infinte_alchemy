@@ -199,7 +199,7 @@ import mods.enderio.SagMill;
         
         scripts.helper.addHighOvenSmelting(
             [<contenttweaker:titanium_ingot> * 2], 
-            [<contenttweaker:titanium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+            [<contenttweaker:titanium_dust> * 3, <prodigytech:inferno_crystal> * 2], 
             [<liquid:pyrotheum> * 2000], 20 * 20, 256
         );
         scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:titanium_ingot>], [<contenttweaker:titanium_dust>], 10240, 1);
@@ -278,7 +278,7 @@ import mods.enderio.SagMill;
 
     scripts.helper.addHighOvenSmelting(
         [<thermalfoundation:material:136> * 2], 
-        [<thermalfoundation:material:72> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<thermalfoundation:material:72> * 3, <prodigytech:inferno_crystal> * 2], 
         [<liquid:pyrotheum> * 2000], 20 * 20, 256
     );
     scripts.ore_processing.addTingalumOvenRecipe([<thermalfoundation:material:136>], [<thermalfoundation:material:72>], 10240, 1);
@@ -289,7 +289,7 @@ import mods.enderio.SagMill;
 
     scripts.helper.addHighOvenSmelting(
         [<contenttweaker:chrome_ingot> * 2], 
-        [<contenttweaker:chrome_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<contenttweaker:chrome_dust> * 3, <prodigytech:inferno_crystal> * 2], 
         [<liquid:pyrotheum> * 2000], 20 * 20, 256
     );
     scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:chrome_ingot>], [<contenttweaker:chrome_dust>], 40960, 1);
@@ -327,7 +327,7 @@ import mods.enderio.SagMill;
     
     scripts.helper.addHighOvenSmelting(
         [<contenttweaker:arkenium_ingot> * 2], 
-        [<contenttweaker:arkenium_dust> * 3, <prodigytech:inferno_crystal> * 4], 
+        [<contenttweaker:arkenium_dust> * 3, <prodigytech:inferno_crystal> * 2], 
         [<liquid:pyrotheum> * 3000], 20 * 20, 1024
     );
     scripts.ore_processing.addTingalumOvenRecipe([<contenttweaker:arkenium_ingot>], [<contenttweaker:arkenium_dust>], 4096, 1);

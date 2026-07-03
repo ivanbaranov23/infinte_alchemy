@@ -35,6 +35,24 @@ mods.actuallyadditions.AtomicReconstructor.addRecipe(<exnihilocreatio:item_ore_t
         256, 20
     );
 
+    
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:emolachite> * 1000, 
+        <liquid:electrotine> * 500, <liquid:postender> * 500, <mekanism:enrichedalloy> * 3, 
+        256, 20
+    );
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:emolachite> * 1000, 
+        <liquid:electrotine> * 250, <liquid:postender> * 250, <contenttweaker:supersalt>, 
+        256, 20
+    );
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:emolachite> * 1000, 
+        <liquid:electrotine> * 250, <liquid:postender> * 250, <betternether:bone_mushroom>, 
+        256, 20
+    );
+
+
     mods.alchemistry.Evaporator.addRecipe(<contenttweaker:emolachite>, <liquid:emolachite> * 1000);
     mods.thermalexpansion.Transposer.addFillRecipe(
         <contenttweaker:emolachite> * 2,

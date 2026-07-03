@@ -368,10 +368,11 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         []
     );
     addChemicalRecipe(
-        [<contenttweaker:ethenone>],
+        [<contenttweaker:ethenone>, <alchemistry:compound:7>],
         [<contenttweaker:acetic_acid>],
         []//todo triethyl phosphate
     );
+    <contenttweaker:ethenone>.addTooltip("H₂C=C=O");
     
     //acetic anhydride
     addChemicalRecipe(

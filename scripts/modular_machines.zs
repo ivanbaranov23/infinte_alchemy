@@ -15,7 +15,7 @@ static gears as IItemStack[] = [
     <enderio:item_material:73>,             //4
     <tconevo:metal:29>,                     //5
     <moreplates:awakened_draconium_gear>,   //6
-    //<moreplates:neutronium_gear>            //7
+    <moreplates:neutronium_gear>            //7
 ];
 static sides as IItemStack[] = [
     null,       //0
@@ -26,18 +26,18 @@ static sides as IItemStack[] = [
     <enderio:item_material:18>,             //4
     <bloodmagic:component:27>,              //5
     <astralsorcery:itemcoloredlens:6>,      //6
-    //<draconicevolution:awakened_core>       //7
+    <draconicevolution:awakened_core>       //7
 ];
 static corners as IItemStack[] = [
     null,       //0
     null,       //1
     null,       //2
-    <contenttweaker:basic_modularium>,
     <contenttweaker:basic_modularium>,  //3
-    <modularmachinery:itemmodularium>,  //4
+    <contenttweaker:basic_modularium>,  //4
     <modularmachinery:itemmodularium>,  //5
-    <extendedcrafting:material:32>,  //6
-    //<extendedcrafting:material:32>      //7
+    <modularmachinery:itemmodularium>,  //6
+    <modularmachinery:itemmodularium>,  //7
+    <extendedcrafting:material:32>      //8
 ];
 function addMMPartRecipe(lvl as int, inp as IItemStack, out as IItemStack, cat as IItemStack, flip as bool){
     if (flip){
@@ -82,20 +82,22 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
 {
     //this is awful
     //item input 
-    addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockinputbus:1>, <tconstruct:wooden_hopper>, false);
-    addMMPartRecipe(2, <modularmachinery:blockinputbus:1>, <modularmachinery:blockinputbus:2>, <minecraft:hopper>, false);
-    addMMPartRecipe(3, <modularmachinery:blockinputbus:2>, <modularmachinery:blockinputbus:3>, <mob_grinding_utils:absorption_hopper>, false);
-    addMMPartRecipe(4, <modularmachinery:blockinputbus:3>, <modularmachinery:blockinputbus:4>, <thermalfoundation:upgrade>, false);
-    addMMPartRecipe(6, <modularmachinery:blockinputbus:4>, <modularmachinery:blockinputbus:5>, <enderio:block_impulse_hopper>, false);
-    addMMPartRecipe(7, <modularmachinery:blockinputbus:5>, <modularmachinery:blockinputbus:6>, <botania:specialflower>.withTag({type: "hopperhock"}), false);
+    addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockinputbus:1>, <ironchest:iron_chest>, false);
+    addMMPartRecipe(2, <modularmachinery:blockinputbus:1>, <modularmachinery:blockinputbus:2>, <ironchest:iron_chest:1>, false);
+    addMMPartRecipe(3, <modularmachinery:blockinputbus:2>, <modularmachinery:blockinputbus:3>, <ironchest:iron_chest:2>, false);
+    addMMPartRecipe(4, <modularmachinery:blockinputbus:3>, <modularmachinery:blockinputbus:4>, <mekanism:machineblock:13>, false);
+    addMMPartRecipe(6, <modularmachinery:blockinputbus:4>, <modularmachinery:blockinputbus:5>, <avaritiaddons:avaritiaddons_chest>, false);
+    addMMPartRecipe(7, <modularmachinery:blockinputbus:5>, <modularmachinery:blockinputbus:6>, <draconicevolution:draconium_chest>, false);
+    addMMPartRecipe(8, <modularmachinery:blockinputbus:6>, <modularmachineryaddons:blocksingularityiteminputbus:6>, <avaritiaddons:avaritiaddons_chest:1>, false);
 
     //item output 
-    addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockoutputbus:1>, <tconstruct:wooden_hopper>, true);
-    addMMPartRecipe(2, <modularmachinery:blockoutputbus:1>, <modularmachinery:blockoutputbus:2>, <minecraft:hopper>, true);
-    addMMPartRecipe(3, <modularmachinery:blockoutputbus:2>, <modularmachinery:blockoutputbus:3>, <mob_grinding_utils:absorption_hopper>, true);
-    addMMPartRecipe(4, <modularmachinery:blockoutputbus:3>, <modularmachinery:blockoutputbus:4>, <thermalfoundation:upgrade>, true);
-    addMMPartRecipe(6, <modularmachinery:blockoutputbus:4>, <modularmachinery:blockoutputbus:5>, <enderio:block_impulse_hopper>, true);
-    addMMPartRecipe(7, <modularmachinery:blockoutputbus:5>, <modularmachinery:blockoutputbus:6>, <botania:specialflower>.withTag({type: "hopperhock"}), true);    
+    addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockoutputbus:1>, <ironchest:iron_chest>, true);
+    addMMPartRecipe(2, <modularmachinery:blockoutputbus:1>, <modularmachinery:blockoutputbus:2>, <ironchest:iron_chest:1>, true);
+    addMMPartRecipe(3, <modularmachinery:blockoutputbus:2>, <modularmachinery:blockoutputbus:3>, <ironchest:iron_chest:2>, true);
+    addMMPartRecipe(4, <modularmachinery:blockoutputbus:3>, <modularmachinery:blockoutputbus:4>, <mekanism:machineblock:13>, true);
+    addMMPartRecipe(6, <modularmachinery:blockoutputbus:4>, <modularmachinery:blockoutputbus:5>, <avaritiaddons:avaritiaddons_chest>, true);
+    addMMPartRecipe(7, <modularmachinery:blockoutputbus:5>, <modularmachinery:blockoutputbus:6>, <draconicevolution:draconium_chest>, true);
+    addMMPartRecipe(8, <modularmachinery:blockoutputbus:6>, <modularmachineryaddons:blocksingularityitemoutputbus:6>, <avaritiaddons:avaritiaddons_chest:1>, true);    
 
 
     //fluid input 
@@ -189,6 +191,11 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
     recipes.addShaped("ia_blockbiomeproviderinput", <modularmachineryaddons:blockbiomeproviderinput>, [
         [<naturescompass:naturescompass>],
         [<modularmachinery:blockcasing>]
+    ]);
+    recipes.addShaped("ia_blocklaserinput", <modularmachineryaddons:blocklaserinput>, [
+        [<modularmachinery:itemmodularium>, <modularmachinery:blockcasing:4>, <modularmachinery:itemmodularium>], 
+        [<contenttweaker:laser_mirror>, <actuallyadditions:item_battery_quintuple>, <contenttweaker:laser_mirror>], 
+        [<modularmachinery:itemmodularium>, <modularmachinery:blockcasing:4>, <modularmachinery:itemmodularium>]
     ]);
 }
 

@@ -76,12 +76,14 @@ recipes.addShapeless(
     ]);
 }
 
-//honey
-Transposer.addFillRecipe(<harvestcraft:royaljellyitem>, <thermalfoundation:material:1>, <liquid:honey> * 1000, 2000);
-Centrifuge.addRecipe(
-	[<harvestcraft:beeswaxitem>, <erebus:materials:19> % 25], <harvestcraft:honeyitem>, null, 
-	1000
-);
+{//honey
+    Transposer.addFillRecipe(<harvestcraft:royaljellyitem>, <thermalfoundation:material:1>, <liquid:honey> * 1000, 2000);
+    Centrifuge.addRecipe(
+	    [<harvestcraft:beeswaxitem>, <erebus:materials:19> % 50], <harvestcraft:honeyitem>, <liquid:honey> * 100, 
+	    1000
+    );
+
+}
 
 recipes.remove(<harvestcraft:cottoncandyitem>);
 Centrifuge.addRecipe(

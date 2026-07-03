@@ -18,87 +18,87 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
     <contenttweaker:tincan_mech>: {
         <contenttweaker:tincan_target_ore1>: [
             [
-                <densemetals:dense_iron_ore> * 64,
-                <densemetals:dense_copper_ore> * 64,
-                <densemetals:dense_tin_ore> * 64,
+                <densemetals:dense_iron_ore> * 128,
+                <densemetals:dense_copper_ore> * 96,
+                <densemetals:dense_tin_ore> * 96,
 
-                <densemetals:dense_nickel_ore> * 48,
-                <densemetals:dense_aluminum_ore> * 48,
-                <densemetals:dense_zinc_ore> * 48,
+                <densemetals:dense_nickel_ore> * 64,
+                <densemetals:dense_aluminum_ore> * 64,
+                <densemetals:dense_zinc_ore> * 64,
                 <contenttweaker:antimony_ore_dense> * 40,
 
-                <densemetals:dense_gold_ore> * 32,
-                <densemetals:dense_silver_ore> * 32,
-                <densemetals:dense_lead_ore> * 32,
-                <densemetals:dense_osmium_ore> * 32
+                <densemetals:dense_gold_ore> * 64,
+                <densemetals:dense_silver_ore> * 48,
+                <densemetals:dense_lead_ore> * 48,
+                <densemetals:dense_osmium_ore> * 48
             ],[
-                <densemetals:dense_iron_ore> * 64,
-                <densemetals:dense_copper_ore> * 64,
-                <densemetals:dense_tin_ore> * 64,
+                <densemetals:dense_iron_ore> * 128,
+                <densemetals:dense_copper_ore> * 96,
+                <densemetals:dense_tin_ore> * 96,
 
-                <densemetals:dense_nickel_ore> * 48,
-                <densemetals:dense_aluminum_ore> * 48,
-                <densemetals:dense_zinc_ore> * 48,
+                <densemetals:dense_nickel_ore> * 64,
+                <densemetals:dense_aluminum_ore> * 64,
+                <densemetals:dense_zinc_ore> * 64,
                 <contenttweaker:antimony_ore_dense> * 40,
 
-                <densemetals:dense_gold_ore> * 32,
-                <densemetals:dense_silver_ore> * 32,
-                <densemetals:dense_lead_ore> * 32,
-                <densemetals:dense_osmium_ore> * 32
+                <densemetals:dense_gold_ore> * 64,
+                <densemetals:dense_silver_ore> * 48,
+                <densemetals:dense_lead_ore> * 48,
+                <densemetals:dense_osmium_ore> * 48
             ]
         ],
         <contenttweaker:tincan_target_ore2>: [
             [
-                <thermalfoundation:ore:6> * 96,
-                <thermalfoundation:ore:7> * 96,
-                <immersiveengineering:ore:5> * 96,
-                <bigreactors:oreyellorite> * 96,
-                <contenttweaker:titanium_ore> * 96,
-                <contenttweaker:tungsten_ore> * 96,
+                <thermalfoundation:ore:6> * 128,
+                <thermalfoundation:ore:7> * 128,
+                <immersiveengineering:ore:5> * 128,
+                <bigreactors:oreyellorite> * 128,
+                <contenttweaker:titanium_ore> * 128,
+                <contenttweaker:tungsten_ore> * 128,
 
                 <contenttweaker:bismuth_ore> * 64,
                 <contenttweaker:gallium_ore> * 64,
-                <contenttweaker:barite_ore> * 32,
+                <contenttweaker:barite_ore> * 64,
 
-                <taiga:meteoritecobble_block> * 32
+                <taiga:meteoritecobble_block> * 64
             ],[
-                <thermalfoundation:ore:6> * 64,
-                <thermalfoundation:ore:7> * 64,
-                <immersiveengineering:ore:5> * 64,
-                <bigreactors:oreyellorite> * 64,
-                <contenttweaker:titanium_ore> * 64,
-                <contenttweaker:tungsten_ore> * 64,
+                <thermalfoundation:ore:6> * 128,
+                <thermalfoundation:ore:7> * 128,
+                <immersiveengineering:ore:5> * 128,
+                <bigreactors:oreyellorite> * 128,
+                <contenttweaker:titanium_ore> * 128,
+                <contenttweaker:tungsten_ore> * 128,
                 
-                <contenttweaker:bismuth_ore> * 32,
-                <contenttweaker:gallium_ore> * 32,
-                <contenttweaker:barite_ore> * 32,
+                <contenttweaker:bismuth_ore> * 64,
+                <contenttweaker:gallium_ore> * 64,
+                <contenttweaker:barite_ore> * 64,
 
-                <taiga:meteoritecobble_block> * 16
+                <taiga:meteoritecobble_block> * 64
             ]
         ],
         <contenttweaker:tincan_target_gem>: [
             [
-                <minecraft:diamond_ore> * 64,
-                <minecraft:emerald_ore> * 64,
+                <minecraft:diamond_ore> * 192,
+                <minecraft:emerald_ore> * 128,
                 <mysticalworld:amethyst_ore> * 32,
-                <appliedenergistics2:quartz_ore> * 64,
-                <mysticalworld:quartz_ore> * 64,
-                <taiga:dilithium_ore> * 64
+                <appliedenergistics2:quartz_ore> * 128,
+                <mysticalworld:quartz_ore> * 128,
+                <taiga:dilithium_ore> * 128
             ],[
-                <minecraft:diamond_ore> * 64,
-                <minecraft:emerald_ore> * 64,
-                <mysticalworld:amethyst_ore> * 64,
-                <appliedenergistics2:quartz_ore> * 64,
-                <mysticalworld:quartz_ore> * 64,
-                <taiga:dilithium_ore> * 64
+                <minecraft:diamond_ore> * 192,
+                <minecraft:emerald_ore> * 128,
+                <mysticalworld:amethyst_ore> * 128,
+                <appliedenergistics2:quartz_ore> * 128,
+                <mysticalworld:quartz_ore> * 128,
+                <taiga:dilithium_ore> * 128
             ]
         ],
         <contenttweaker:tincan_target_mob>: [
             [
-                <xreliquary:mob_ingredient:6> * 192,
-                <xreliquary:mob_ingredient> * 192,
-                <xreliquary:mob_ingredient:3> * 192,
-                <xreliquary:mob_ingredient:2> * 192,
+                <xreliquary:mob_ingredient:6> * 256,
+                <xreliquary:mob_ingredient> * 256,
+                <xreliquary:mob_ingredient:3> * 256,
+                <xreliquary:mob_ingredient:2> * 256,
 
                 null,
                 null,
@@ -107,15 +107,15 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
 
                 null
             ],[
-                <xreliquary:mob_ingredient:6> * 192,
-                <xreliquary:mob_ingredient> * 192,
-                <xreliquary:mob_ingredient:3> * 192,
-                <xreliquary:mob_ingredient:2> * 192,
+                <xreliquary:mob_ingredient:6> * 256,
+                <xreliquary:mob_ingredient> * 256,
+                <xreliquary:mob_ingredient:3> * 256,
+                <xreliquary:mob_ingredient:2> * 256,
 
-                <xreliquary:mob_ingredient:1> * 192,
-                <xreliquary:mob_ingredient:11> * 192,
-                <xreliquary:mob_ingredient:8> * 192,
-                <xreliquary:mob_ingredient:4> * 192,
+                <xreliquary:mob_ingredient:1> * 256,
+                <xreliquary:mob_ingredient:11> * 256,
+                <xreliquary:mob_ingredient:8> * 256,
+                <xreliquary:mob_ingredient:4> * 256,
 
                 <quark:diamond_heart> * 4
             ]
@@ -124,96 +124,125 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
     <contenttweaker:radiotoad_mech>: {
         <contenttweaker:radiotoad_target1>: [
             [
-                <densemetals:dense_platinum_ore> * 64,
-                <densemetals:dense_iridium_ore> * 64,
-                <densemetals:dense_rutile_ore> * 64,
-                <densemetals:dense_uranium_ore> * 64,
-                <bigreactors:oreyellorite> * (64 * 4),
-                <contenttweaker:tungsten_ore> * (64 * 4)
+                <densemetals:dense_platinum_ore> * 192,
+                <densemetals:dense_iridium_ore> * 192,
+                <densemetals:dense_rutile_ore> * 192,
+                <densemetals:dense_uranium_ore> * 192,
+                <bigreactors:oreyellorite> * (192 * 4),
+                <contenttweaker:tungsten_ore> * (192 * 4)
             ], [
-                <densemetals:dense_platinum_ore> * 64,
-                <densemetals:dense_iridium_ore> * 64,
-                <densemetals:dense_rutile_ore> * 64,
-                <densemetals:dense_uranium_ore> * 64,
-                <bigreactors:oreyellorite> * (64 * 4),
-                <contenttweaker:tungsten_ore> * (64 * 4)
+                <densemetals:dense_platinum_ore> * 192,
+                <densemetals:dense_iridium_ore> * 192,
+                <densemetals:dense_rutile_ore> * 192,
+                <densemetals:dense_uranium_ore> * 192,
+                <bigreactors:oreyellorite> * (192 * 4),
+                <contenttweaker:tungsten_ore> * (192 * 4)
             ]
         ],
         <contenttweaker:radiotoad_target2>: [
             [
-                <contenttweaker:tantalite_ore> * 128, <moretcon:oreelectarite> * 128, <moretcon:oregarstone> * 128
+                <contenttweaker:tantalite_ore> * 512, 
+                <moretcon:oreelectarite> * 512, 
+                <moretcon:oregarstone> * 512
+ 
             ], [
-                <contenttweaker:tantalite_ore> * 256, <moretcon:oreelectarite> * 256, <moretcon:oregarstone> * 256
+                <contenttweaker:tantalite_ore> * 512, 
+                <moretcon:oreelectarite> * 512, 
+                <moretcon:oregarstone> * 512
+ 
             ]
         ],
         <contenttweaker:radiotoad_target3>: [
             [
-                <densemetals:dense_coal_ore> * 64,
-                <densemetals:dense_uranium_ore> * 64,
-                <bigreactors:oreyellorite> * 128,
-                <erebus:ore_copper> * 128
-            ], [
-                <densemetals:dense_coal_ore> * 96,
+                <densemetals:dense_coal_ore> * 128,
                 <densemetals:dense_uranium_ore> * 96,
                 <bigreactors:oreyellorite> * 256,
+                <erebus:ore_copper> * 256
+            ], [
+                <densemetals:dense_coal_ore> * 160,
+                <densemetals:dense_uranium_ore> * 128,
+                <bigreactors:oreyellorite> * 320,
                 <erebus:ore_copper> * 256
             ]
         ]
     },
     <contenttweaker:nether_boat> * 16: {
         <contenttweaker:nether_boat_osram>: [
-            [<betternether:cincinnasite_ore> * 256, <tconstruct:ore> * 256, <tconstruct:ore:1> * 256, <taiga:osram_ore> * 128, <bigreactors:orebenitoite> * 128, <netherite:ancientdebris> * 96, <taiga:tiberium_ore> * 144, <taiga:prometheum_ore> * 64, <taiga:valyrium_ore> * 64, <taiga:basalt_block> * 128, <moretcon:oreigniglomerate> * 8],
-            [<betternether:cincinnasite_ore> * 256, <tconstruct:ore> * 256, <tconstruct:ore:1> * 256, <taiga:osram_ore> * 128, <bigreactors:orebenitoite> * 128, <netherite:ancientdebris> * 96, <taiga:tiberium_ore> * 144, <taiga:prometheum_ore> * 64, <taiga:valyrium_ore> * 64, <taiga:basalt_block> * 160, <moretcon:oreigniglomerate> * 8]
+            [
+                <betternether:cincinnasite_ore> * 256, 
+                <tconstruct:ore> * 256, 
+                <tconstruct:ore:1> * 256, 
+                <taiga:osram_ore> * 256, 
+                <bigreactors:orebenitoite> * 256, 
+                <netherite:ancientdebris> * 128, 
+                <taiga:tiberium_ore> * 144, 
+                <taiga:prometheum_ore> * 128, 
+                <taiga:valyrium_ore> * 128, 
+                <taiga:basalt_block> * 128, 
+                <moretcon:oreigniglomerate> * 16
+            ], [
+                <betternether:cincinnasite_ore> * 256, 
+                <tconstruct:ore> * 256, 
+                <tconstruct:ore:1> * 256, 
+                <taiga:osram_ore> * 256, 
+                <bigreactors:orebenitoite> * 256, 
+                <netherite:ancientdebris> * 128, 
+                <taiga:tiberium_ore> * 144, 
+                <taiga:prometheum_ore> * 128, 
+                <taiga:valyrium_ore> * 128, 
+                <taiga:basalt_block> * 256, 
+                <moretcon:oreigniglomerate> * 16
+            ]
         ],
         <contenttweaker:nether_boat_ores>: [
             [
-                <netherendingores:ore_nether_vanilla> * 128,
-                <netherendingores:ore_nether_vanilla:6> * 128,
-                <netherendingores:ore_nether_vanilla:1> * 96,
-                <netherendingores:ore_nether_vanilla:3> * 96,
-                <netherendingores:ore_nether_modded_2:8> * 16
+                <netherendingores:ore_nether_vanilla> * 192,
+                <netherendingores:ore_nether_vanilla:6> * 192,
+                <netherendingores:ore_nether_vanilla:1> * 128,
+                <netherendingores:ore_nether_vanilla:3> * 128,
+                <netherendingores:ore_nether_modded_2:8> * 32
             ],
             [
-                <netherendingores:ore_nether_vanilla> * 256,
-                <netherendingores:ore_nether_vanilla:6> * 256,
-                <netherendingores:ore_nether_vanilla:1> * 96,
-                <netherendingores:ore_nether_vanilla:3> * 96,
-                <netherendingores:ore_nether_modded_2:8> * 16
+                <netherendingores:ore_nether_vanilla> * 320,
+                <netherendingores:ore_nether_vanilla:6> * 320,
+                <netherendingores:ore_nether_vanilla:1> * 128,
+                <netherendingores:ore_nether_vanilla:3> * 128,
+                <netherendingores:ore_nether_modded_2:8> * 64
             ]
         ],
         <contenttweaker:nether_boat_quartz>: [
-            [<minecraft:quartz_ore> * 320, <netherendingores:ore_nether_modded_1:9> * 144],
-            [<minecraft:quartz_ore> * 320, <netherendingores:ore_nether_modded_1:9> * 144]
+            [<minecraft:quartz_ore> * 512, <netherendingores:ore_nether_modded_1:9> * 256],
+            [<minecraft:quartz_ore> * 512, <netherendingores:ore_nether_modded_1:9> * 256]
         ]
     },
     <contenttweaker:robodruid_mech>: {
         <contenttweaker:robodruid_target_gems>: [
             [
-                <mysticalworld:amethyst_ore> * 128,
-                <densemetals:dense_diamond_ore> * 32,
-                <densemetals:dense_emerald_ore> * 32,
-                <densemetals:dense_lapis_ore> * 48,
+                <mysticalworld:amethyst_ore> * 256,
+                <densemetals:dense_diamond_ore> * 64,
+                <densemetals:dense_emerald_ore> * 64,
+                <densemetals:dense_lapis_ore> * 64,
 
-                <biomesoplenty:gem_ore:1> * 128,
-                <biomesoplenty:gem_ore:3> * 128,
-                <biomesoplenty:gem_ore:7> * 128,
-                <biomesoplenty:gem_ore:2> * 128,
-                <biomesoplenty:gem_ore:5> * 128,
-                <biomesoplenty:gem_ore:6> * 128,
-                <biomesoplenty:gem_ore:4> * 128
+                <biomesoplenty:gem_ore:1> * 256,
+                <biomesoplenty:gem_ore:3> * 256,
+                <biomesoplenty:gem_ore:7> * 256,
+                <biomesoplenty:gem_ore:2> * 256,
+                <biomesoplenty:gem_ore:5> * 256,
+                <biomesoplenty:gem_ore:6> * 256,
+                <biomesoplenty:gem_ore:4> * 256
             ], [
-                <mysticalworld:amethyst_ore> * 128,
-                <densemetals:dense_diamond_ore> * 32,
-                <densemetals:dense_emerald_ore> * 32,
-                <densemetals:dense_lapis_ore> * 32,
+                <mysticalworld:amethyst_ore> * 256,
+                <densemetals:dense_diamond_ore> * 64,
+                <densemetals:dense_emerald_ore> * 64,
+                <densemetals:dense_lapis_ore> * 64,
 
-                <biomesoplenty:gem_ore:1> * 128,
-                <biomesoplenty:gem_ore:3> * 128,
-                <biomesoplenty:gem_ore:7> * 128,
-                <biomesoplenty:gem_ore:2> * 128,
-                <biomesoplenty:gem_ore:5> * 128,
-                <biomesoplenty:gem_ore:6> * 128,
-                <biomesoplenty:gem_ore:4> * 128
+                <biomesoplenty:gem_ore:1> * 256,
+                <biomesoplenty:gem_ore:3> * 256,
+                <biomesoplenty:gem_ore:7> * 256,
+                <biomesoplenty:gem_ore:2> * 256,
+                <biomesoplenty:gem_ore:5> * 256,
+                <biomesoplenty:gem_ore:6> * 256,
+                <biomesoplenty:gem_ore:4> * 256
             ]
         ],
         <contenttweaker:robodruid_target_wood>: [
@@ -414,7 +443,7 @@ function addExplorationRecipe(mechs as IItemStack[], goals as IItemStack[], mark
     }
     rec.addItemInput(<mekanism:teleportationcore> * core_count);
 
-    //rec.addMekanismLaserInput(25000000 as double);
+    rec.addLaserInput(25000000 as double);
 
     for i, mech in mechs{
         var amount as int = 0;

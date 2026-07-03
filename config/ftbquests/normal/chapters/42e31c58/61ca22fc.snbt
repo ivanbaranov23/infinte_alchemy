@@ -17,5 +17,25 @@
 		uid: "ed2415de",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "15982b85",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorRed: 30,
+				TrophyColorBlue: 27,
+				TrophyName: "Frame 7b",
+				TrophyColorGreen: 27,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					id: "deepmoblearning:machine_casing",
+					Count: 1,
+					Damage: 0s
+				},
+				TrophyVariant: "neon"
+			}
+		}
 	}]
 }

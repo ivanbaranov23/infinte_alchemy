@@ -230,6 +230,13 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 //slime
 
 
+//valkyrie
+<ore:dustValkyrieMetal>.remove(<moretcon:dustvalkyriemetal>);
+<ore:dustValkyrie>.add(<moretcon:dustvalkyriemetal>);
+
+
+
+
 //alchemistry
 <ore:dustGermanium>.add(<contenttweaker:germanium_dust>);
 <ore:dustVanadium>.add(<contenttweaker:vanadium_dust>);

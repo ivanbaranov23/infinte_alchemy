@@ -102,16 +102,8 @@ quark:flat_item_frame
 quark:leash_knot
 quark:colored_item_frame
 quark:glass_item_frame
-quark:chest_passenger
 quark:gravisand
 quark:seat
-quark:pickarang
-quark:arrow_ender
-quark:arrow_explosive
-quark:arrow_torch
-quark:dragon_breath_bottle
-quark:soul_powder
-quark:parrot_egg
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -121,6 +113,14 @@ quark:frog
 quark:pirate
 quark:crab
 quark:wraith
+quark:chest_passenger
+quark:pickarang
+quark:arrow_ender
+quark:arrow_explosive
+quark:arrow_torch
+quark:dragon_breath_bottle
+quark:soul_powder
+quark:parrot_egg
 exnihilocreatio:thrown stone
 excompressum:angry_chicken
 botania:mana_burst
@@ -353,8 +353,8 @@ mysticalworld:entity_lava_cat
 mysticalworld:entity_silkworm
 mysticalworld:entity_clam
 enderio:falling_machine
-enderio:owl_egg
 enderio:primed_charge
+enderio:owl_egg
 twilightforest:wild_boar
 twilightforest:bighorn_sheep
 twilightforest:deer

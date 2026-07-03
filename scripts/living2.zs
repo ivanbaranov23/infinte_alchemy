@@ -156,6 +156,7 @@ static livings as IItemStack[string] = {
 
     nitrall: <contenttweaker:nitrall>,
     snek_plant: <contenttweaker:lv_plant>,
+    honey_spider: <contenttweaker:honey_spider>,
 
     zanite_frog: <contenttweaker:lv_zanite_frog>,
 
@@ -188,6 +189,7 @@ static animal_type as string[string] = {
 
     nitrall: "f1",
     snek_plant: "f1",
+    honey_spider: "f1",
 
     zanite_frog: "f1",
 
@@ -239,6 +241,13 @@ static foods as int[][IItemStack][string] = {
     snek_plant: {
         <contenttweaker:fertilizer3>: [10, 20],
         <contenttweaker:fertilizer4>: [30, 70]
+    },
+    honey_spider: {
+        <harvestcraft:grubitem>:            [0, 20],
+        <actuallyadditions:item_worm>:      [0, 20],
+        <twilightforest:moonworm>:          [0, 20],
+        <mysticalworld:silkworm_egg>:       [0, 20],
+        <exnihilocreatio:item_material:2>:  [0, 20],
     },
 
     zanite_frog: {
@@ -322,6 +331,7 @@ static products as int[IItemStack][string] = {
     snek_plant: {
         <contenttweaker:leaf>: 25
     },
+    honey_spider: {},
 
     zanite_frog: {
         <contenttweaker:zanite_frog_leg>: 25
@@ -348,6 +358,9 @@ static products as int[IItemStack][string] = {
     chitigic_empress: {}
 };
 static work as int[][IItemStack[]][string] = {
+    honey_spider: {
+        [<erebus:materials:19>, <contenttweaker:honey_web>]:  [5, 15],
+    },
     chitigic_chewer: {
         [<prodigytech:meat_ground>, <contenttweaker:chewed_meat> * 1]: [5, 10],
         [<contenttweaker:sandworm_gut>, <contenttweaker:chewed_guts> * 1]: [5, 10],
@@ -410,6 +423,7 @@ static corpses as IItemStack[string] = {
     sandworm: <contenttweaker:sandworm_corpse>,
     draco_lizard: <contenttweaker:draco_lizard_corpse>,
     hair_thing: <contenttweaker:hair_thing_corpse>,
+    honey_spider: <contenttweaker:honey_spider_corpse>,
 
     chitigic_drone: <contenttweaker:chitigic>,
     chitigic_hunter: <contenttweaker:chitigic> * 3,
@@ -977,6 +991,26 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
         <contenttweaker:leaf>, <liquid:silver> * 288, 
         4800
     );
+}
+{//honey spider
+    livings.honey_spider.addTooltip("Designed by Tokito");
+
+    recipes.addShaped("ia_honey_spider", livings.honey_spider.withTag({
+                food: 20
+            }), [
+        [<xreliquary:mob_ingredient:2>, <harvestcraft:queenbeeitem>, <xreliquary:mob_ingredient:2>], 
+        [<harvestcraft:queenbeeitem>, <contenttweaker:singularity_dust>, <harvestcraft:queenbeeitem>], 
+        [<xreliquary:mob_ingredient:2>, <harvestcraft:queenbeeitem>, <xreliquary:mob_ingredient:2>]
+    ]);
+    Centrifuge.addRecipe(
+        [
+            <erebus:materials:20> % 100,
+            <erebus:materials:20> % 25,
+            <erebus:materials:20> % 25
+        ], 
+        <contenttweaker:honey_web>, <liquid:honey> * 200, 4000
+    );
+
 }
 {//blood slime
     addVitamins("blood_slime");

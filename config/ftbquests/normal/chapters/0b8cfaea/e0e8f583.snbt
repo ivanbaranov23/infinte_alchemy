@@ -1,8 +1,8 @@
 {
 	title: "Farm some crops 3",
 	icon: "minecraft:reeds",
-	x: 0.5d,
-	y: 3.0d,
+	x: 1.5d,
+	y: 4.0d,
 	shape: "diamond",
 	text: [
 		"You can make colossal bamboo shoot to grow bamboo. It will grow like sugarcane, so leave bottom block."

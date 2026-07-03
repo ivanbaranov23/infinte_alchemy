@@ -99,7 +99,7 @@ recipes.addShaped("ia_portal_activator", <erebus:portal_activator>, [
   scripts.jei.addJEIhint(
     [<erebus:materials:20>], [], 
     [<erebus:liquifier>, <minecraft:redstone_block>], 
-    [<erebus:materials:20>.withDisplayName("50 mb of honey")], [<liquid:honey>]
+    [<ae2fc:fluid_drop>.withTag({Fluid: "honey"}) * 50], [<liquid:honey>]
   );
 }
 //beetles

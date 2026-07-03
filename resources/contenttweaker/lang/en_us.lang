@@ -2883,3 +2883,29 @@ item.contenttweaker.rhodium_dust.name=Rhodium Dust
 tile.contenttweaker.rhodium_block.name=Block of Rhodium
 
 item.contenttweaker.filter_yellow.name=Yellow Catalytic Filter
+
+fluid.postender=Post Ender Solution
+fluid.supersalty=Supersalty Solution
+
+item.contenttweaker.ammonium_formate.name=Ammonium Formate
+item.contenttweaker.tartaric_acid.name=Tartaric Acid
+item.contenttweaker.phli.name=Phenyllithium
+
+item.contenttweaker.honey_spider.name=Honey Spider
+item.contenttweaker.honey_spider_corpse.name=Honey Spider Corpse
+item.contenttweaker.honey_web.name=Honey Web
+
+item.contenttweaker.research_mushroom1.name=Research: How to Grow Mushrooms
+
+item.contenttweaker.fireclay_big.name=Big Clump of Fire Clay
+item.contenttweaker.dolomite2.name=Calcinated Dolomite
+item.contenttweaker.magnesium_dust.name=Magnesium Dust
+tile.contenttweaker.magnesium_block.name=Block of Magnesium
+
+fluid.twilit_soup=Twilit Soup
+fluid.vow_fire=Vow of Fire
+fluid.vow_ice=Vow of Ice
+fluid.vow_honor=Vow of Honnor
+fluid.vow_death=Vow of Undying Life
+
+item.contenttweaker.manamass.name=Biocell with Manamass

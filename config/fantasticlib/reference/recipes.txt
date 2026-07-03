@@ -7656,8 +7656,8 @@ chisel:voidstone
 chisel:voidstone2
 chisel:waterstone
 enderio:copy-filter
-enderio:clear-config
 enderio:dark_shield_recipes
+enderio:clear-config
 twilightforest:arctic_armor_dyeing
 twilightforest:scepter_repairing
 twilightforest:magic_map_cloning
@@ -7812,7 +7812,6 @@ bloodmagic:soul_gem_destructive
 bloodmagic:soul_gem_vengeful
 bloodmagic:soul_gem_steadfast
 atum:map_extending_scroll
-atum:desert_armor_dyes
 atum:crystal_white
 atum:framed_white
 atum:crystal_to_framed_white
@@ -8045,6 +8044,7 @@ minecraft:stone_pickaxe
 minecraft:stone_hoe
 minecraft:stone_axe
 atum:disenchant
+atum:desert_armor_dyes
 quark:paper_wall
 quark:paper_wall_big
 quark:paper_wall_sakura
@@ -8128,6 +8128,24 @@ quark:blaze_lantern
 quark:nether_brick_fence_gate
 quark:grate
 quark:glass_item_frame
+quark:chute
+quark:sugar_block
+quark:sugar
+quark:iron_button
+quark:iron_button_1
+quark:gold_button
+quark:gold_button_1
+quark:iron_rod
+quark:gravisand
+quark:obsidian_pressure_plate
+quark:rain_detector
+quark:chain
+quark:chainmail_helmet
+quark:chainmail_chestplate
+quark:chainmail_leggings
+quark:chainmail_boots
+quark:elytra_dyeing
+quark:firework_cloning
 quark:sandstone_new
 quark:sandstone_new_1
 quark:sandstone_new_2
@@ -8455,38 +8473,6 @@ quark:stained_glass_12
 quark:stained_glass_13
 quark:stained_glass_14
 quark:stained_glass_15
-quark:chute
-quark:sugar_block
-quark:sugar
-quark:iron_button
-quark:iron_button_1
-quark:gold_button
-quark:gold_button_1
-quark:iron_rod
-quark:gravisand
-quark:obsidian_pressure_plate
-quark:rain_detector
-quark:chain
-quark:chainmail_helmet
-quark:chainmail_chestplate
-quark:chainmail_leggings
-quark:chainmail_boots
-quark:elytra_dyeing
-quark:firework_cloning
-quark:arrow_ender
-quark:arrow_explosive
-quark:arrow_torch
-quark:map_pinning
-quark:rune
-quark:dispenser
-quark:repeater
-quark:chest_minecart
-quark:furnace_minecart
-quark:hopper_minecart
-quark:tnt_minecart
-quark:chest_minecart_1
-quark:horse_whistle
-quark:elytra_duplication
 quark:root_dye
 quark:root_dye_1
 quark:root_dye_2
@@ -8540,6 +8526,20 @@ quark:icy_stone_brick_wall
 quark:elder_prismarine_wall
 quark:elder_prismarine_bricks_wall
 quark:elder_prismarine_dark_wall
+quark:arrow_ender
+quark:arrow_explosive
+quark:arrow_torch
+quark:map_pinning
+quark:rune
+quark:dispenser
+quark:repeater
+quark:chest_minecart
+quark:furnace_minecart
+quark:hopper_minecart
+quark:tnt_minecart
+quark:chest_minecart_1
+quark:horse_whistle
+quark:elytra_duplication
 quark:spruce_trapdoor
 quark:birch_trapdoor
 quark:jungle_trapdoor
@@ -8581,6 +8581,13 @@ quark:birch_button
 quark:jungle_button
 quark:acacia_button
 quark:dark_oak_button
+quark:redstone_randomizer
+quark:color_slime
+quark:color_slime_1
+quark:color_slime_2
+quark:color_slime_3
+quark:color_slime_4
+quark:redstone_inductor
 quark:sandstone_new_4
 quark:sandstone_new_5
 quark:world_stone_bricks
@@ -8705,15 +8712,6 @@ quark:wool_30
 quark:wool_31
 quark:quilted_wool_46
 quark:quilted_wool_47
-quark:redstone_randomizer
-quark:color_slime
-quark:color_slime_1
-quark:color_slime_2
-quark:color_slime_3
-quark:color_slime_4
-quark:redstone_inductor
-quark:pickarang
-quark:soul_powder
 quark:rune_1
 quark:rune_2
 quark:rune_3
@@ -8752,44 +8750,46 @@ quark:elder_prismarine_1
 quark:elder_prismarine_2
 quark:elder_sea_lantern
 quark:biome_cobblestone
+quark:pickarang
+quark:soul_powder
 akashictome:attachment
 akashictome:tome
 akashictome:tome_1
-capsule:config/capsule/prefabs/immersiveengineering/ie-cokeoven
-capsule:config/capsule/prefabs/immersiveengineering/ie-silo
-capsule:config/capsule/prefabs/immersiveengineering/ie-blastfurnace
-capsule:config/capsule/prefabs/immersiveengineering/ie-blastfurnaceadvanced
-capsule:config/capsule/prefabs/rune_cutter
-capsule:config/capsule/prefabs/immersiveengineering/ie-assembler
-capsule:config/capsule/prefabs/immersiveengineering/ie-fermenter
-capsule:config/capsule/prefabs/immersiveengineering/ie-refinery
-capsule:config/capsule/prefabs/immersiveengineering/ie-excavatordemo
-capsule:config/capsule/prefabs/darkcobble_corner
-capsule:config/capsule/prefabs/immersiveengineering/ie-autoworkbench
-capsule:config/capsule/prefabs/immersiveengineering/ie-alloysmelter
-capsule:config/capsule/prefabs/immersiveengineering/ie-arcfurnace
-capsule:config/capsule/prefabs/darkcobble_corner_tower_top
-capsule:config/capsule/prefabs/immersiveengineering/ie-metalpress
-capsule:config/capsule/prefabs/tar_pit
-capsule:config/capsule/prefabs/research_station
-capsule:config/capsule/prefabs/heat_exchanger
-capsule:config/capsule/prefabs/garden_cloche
-capsule:config/capsule/prefabs/immersiveengineering/ie-squeezer
-capsule:config/capsule/prefabs/darkcobble_wall
-capsule:config/capsule/prefabs/immersiveengineering/ie-bottlingmachine
-capsule:config/capsule/prefabs/immersiveengineering/ie-sheetmetaltank
-capsule:config/capsule/prefabs/immersiveengineering/ie-mixer
-capsule:config/capsule/prefabs/chicken_cooker
-capsule:config/capsule/prefabs/darkcobble_gate
-capsule:config/capsule/prefabs/immersiveengineering/ie-crusher
-capsule:config/capsule/prefabs/ie-distillation
-capsule:config/capsule/prefabs/sfa_pillar
-capsule:config/capsule/prefabs/immersiveengineering/ie-lightningrod
-capsule:config/capsule/prefabs/immersivepetroleum/ip-pumpjack
-capsule:config/capsule/prefabs/heat_engine
-capsule:config/capsule/prefabs/darkcobble_corner_tower
 capsule:config/capsule/prefabs/gp_gen
+capsule:config/capsule/prefabs/immersiveengineering/ie-bottlingmachine
+capsule:config/capsule/prefabs/immersiveengineering/ie-blastfurnaceadvanced
+capsule:config/capsule/prefabs/immersiveengineering/ie-blastfurnace
+capsule:config/capsule/prefabs/immersiveengineering/ie-silo
+capsule:config/capsule/prefabs/immersiveengineering/ie-cokeoven
+capsule:config/capsule/prefabs/immersivepetroleum/ip-pumpjack
+capsule:config/capsule/prefabs/garden_cloche
+capsule:config/capsule/prefabs/darkcobble_wall
+capsule:config/capsule/prefabs/sfa_pillar
+capsule:config/capsule/prefabs/darkcobble_corner
+capsule:config/capsule/prefabs/immersiveengineering/ie-mixer
+capsule:config/capsule/prefabs/immersiveengineering/ie-alloysmelter
+capsule:config/capsule/prefabs/immersiveengineering/ie-autoworkbench
+capsule:config/capsule/prefabs/heat_exchanger
+capsule:config/capsule/prefabs/research_station
+capsule:config/capsule/prefabs/immersiveengineering/ie-sheetmetaltank
+capsule:config/capsule/prefabs/immersiveengineering/ie-refinery
+capsule:config/capsule/prefabs/tar_pit
+capsule:config/capsule/prefabs/immersiveengineering/ie-lightningrod
+capsule:config/capsule/prefabs/immersiveengineering/ie-fermenter
+capsule:config/capsule/prefabs/immersiveengineering/ie-squeezer
+capsule:config/capsule/prefabs/ie-distillation
+capsule:config/capsule/prefabs/darkcobble_corner_tower
+capsule:config/capsule/prefabs/immersiveengineering/ie-excavatordemo
+capsule:config/capsule/prefabs/darkcobble_corner_tower_top
+capsule:config/capsule/prefabs/immersiveengineering/ie-crusher
+capsule:config/capsule/prefabs/immersiveengineering/ie-metalpress
+capsule:config/capsule/prefabs/chicken_cooker
 capsule:config/capsule/prefabs/immersiveengineering/ie-dieselgenerator
+capsule:config/capsule/prefabs/heat_engine
+capsule:config/capsule/prefabs/immersiveengineering/ie-assembler
+capsule:config/capsule/prefabs/rune_cutter
+capsule:config/capsule/prefabs/immersiveengineering/ie-arcfurnace
+capsule:config/capsule/prefabs/darkcobble_gate
 cathedral:stainedglass
 cathedral:pane_stained_firetaijitu
 cathedral:pane_stained_amberrhombus
@@ -10384,6 +10384,19 @@ betterbuilderswands:recipewandunbreakable
 betterbuilderswands:wandunbreakable13
 betterbuilderswands:wandunbreakable14
 cells:configurable_cell_assembly
+debark:debark_log_debarked_log_minecraft_log
+debark:debark_log_debarked_log_minecraft_log2
+debark:debark_log_debarked_log_biomesoplenty_log_0
+debark:debark_log_debarked_log_biomesoplenty_log_1
+debark:debark_log_debarked_log_biomesoplenty_log_2
+debark:debark_log_debarked_log_biomesoplenty_log_3
+debark:debark_log_debarked_log_biomesoplenty_log_4
+debark:debark_log_debarked_log_aether_legacy_aether_log
+debark:debark_log_debarked_log_atum_palm_log
+debark:debark_log_debarked_log_natura_overworld_logs
+debark:debark_log_debarked_log_natura_overworld_logs2
+debark:debark_log_debarked_log_natura_nether_logs
+debark:debark_log_debarked_log_twilightforest_twilight_log
 dimensionaledibles:overworld_cake
 dimensionaledibles:overworld_apple
 fenceoverhaul:oak_overhauledfence
@@ -13193,12 +13206,14 @@ crafttweaker:ia_mm_tile.modularmachinery.blockinputbus.reinforced
 crafttweaker:ia_mm_tile.modularmachinery.blockinputbus.big
 crafttweaker:ia_mm_tile.modularmachinery.blockinputbus.huge
 crafttweaker:ia_mm_tile.modularmachinery.blockinputbus.ludicrous
+crafttweaker:ia_mm_tile.modularmachineryaddons.blocksingularityiteminputbus.ludicrous
 crafttweaker:ia_mm_tile.modularmachinery.blockoutputbus.small
 crafttweaker:ia_mm_tile.modularmachinery.blockoutputbus.normal
 crafttweaker:ia_mm_tile.modularmachinery.blockoutputbus.reinforced
 crafttweaker:ia_mm_tile.modularmachinery.blockoutputbus.big
 crafttweaker:ia_mm_tile.modularmachinery.blockoutputbus.huge
 crafttweaker:ia_mm_tile.modularmachinery.blockoutputbus.ludicrous
+crafttweaker:ia_mm_tile.modularmachineryaddons.blocksingularityitemoutputbus.ludicrous
 crafttweaker:ia_mm_tile.modularmachinery.blockfluidinputhatch.small
 crafttweaker:ia_mm_tile.modularmachinery.blockfluidinputhatch.normal
 crafttweaker:ia_mm_tile.modularmachinery.blockfluidinputhatch.reinforced
@@ -13230,6 +13245,7 @@ crafttweaker:ia_mm_tile.modularmachinery.blockenergyoutputhatch.ultimate
 crafttweaker:ia_mm_grid_input
 crafttweaker:ia_blockdimensionproviderinput
 crafttweaker:ia_blockbiomeproviderinput
+crafttweaker:ia_blocklaserinput
 crafttweaker:ia_mm_gearbox
 crafttweaker:ia_mm_circuit_block
 crafttweaker:ia_mm_vent
@@ -13556,6 +13572,8 @@ crafttweaker:ingot_to_plate_ct_neuronium ingot
 crafttweaker:ingot_to_gear_ct_neuronium ingot
 crafttweaker:ia_el_redlanthanum
 crafttweaker:ingot_to_plate_ct_dralladium ingot
+crafttweaker:ia_el_redmagnesium
+crafttweaker:ia_el_red_dustmagnesium
 crafttweaker:ingot_to_rod_ct_viridium ingot
 crafttweaker:ingot_to_plate_ct_viridium ingot
 crafttweaker:ingot_to_gear_ct_viridium ingot
@@ -13799,56 +13817,56 @@ crafttweaker:op_orichalcumchunk_2x2_craft
 crafttweaker:op_eezochunk_2x2_craft
 crafttweaker:op_eezochunk_creosolon_craft
 crafttweaker:ia_ore_refinement1
-crafttweaker:ia_ma_compress_item.ma.crafting_superium_essence
-crafttweaker:ia_ma_uncompress_item.ma.crafting_superium_essence
-crafttweaker:ia_ma_compress_item.ma.coal_prudentium
-crafttweaker:ia_ma_uncompress_item.ma.coal_prudentium
-crafttweaker:ia_ma_compress_item.ma.crafting_intermedium_nugget
-crafttweaker:ia_ma_uncompress_item.ma.crafting_intermedium_nugget
-crafttweaker:ia_ma_compress_item.ma.coal_inferium
-crafttweaker:ia_ma_uncompress_item.ma.coal_inferium
-crafttweaker:ia_ma_compress_item.ma.crafting_prudentium_ingot
-crafttweaker:ia_ma_uncompress_item.ma.crafting_prudentium_ingot
-crafttweaker:ia_ma_compress_item.ma.crafting_intermedium_essence
-crafttweaker:ia_ma_uncompress_item.ma.crafting_intermedium_essence
-crafttweaker:ia_ma_compress_item.ma.crafting_intermedium_ingot
-crafttweaker:ia_ma_uncompress_item.ma.crafting_intermedium_ingot
-crafttweaker:ia_ma_compress_item.ma.crafting_prosperity_shard
-crafttweaker:ia_ma_uncompress_item.ma.crafting_prosperity_shard
-crafttweaker:ia_ma_compress_item.ma.crafting_supremium_ingot
-crafttweaker:ia_ma_uncompress_item.ma.crafting_supremium_ingot
-crafttweaker:ia_ma_compress_item.ma.crafting_superium_ingot
-crafttweaker:ia_ma_uncompress_item.ma.crafting_superium_ingot
-crafttweaker:ia_ma_compress_item.ma.crafting_supremium_essence
-crafttweaker:ia_ma_uncompress_item.ma.crafting_supremium_essence
-crafttweaker:ia_ma_compress_item.ma.crafting_soulium_ingot
-crafttweaker:ia_ma_uncompress_item.ma.crafting_soulium_ingot
-crafttweaker:ia_ma_compress_item.ma.crafting_base_essence_nugget
-crafttweaker:ia_ma_uncompress_item.ma.crafting_base_essence_nugget
-crafttweaker:ia_ma_compress_item.ma.crafting_inferium_nugget
-crafttweaker:ia_ma_uncompress_item.ma.crafting_inferium_nugget
-crafttweaker:ia_ma_compress_item.ma.coal_supremium
-crafttweaker:ia_ma_uncompress_item.ma.coal_supremium
-crafttweaker:ia_ma_compress_item.ma.crafting_prudentium_essence
-crafttweaker:ia_ma_uncompress_item.ma.crafting_prudentium_essence
-crafttweaker:ia_ma_compress_item.ma.coal_superium
-crafttweaker:ia_ma_uncompress_item.ma.coal_superium
 crafttweaker:ia_ma_compress_item.ma.crafting_inferium_ingot
 crafttweaker:ia_ma_uncompress_item.ma.crafting_inferium_ingot
 crafttweaker:ia_ma_compress_item.ma.crafting_prudentium_nugget
 crafttweaker:ia_ma_uncompress_item.ma.crafting_prudentium_nugget
-crafttweaker:ia_ma_compress_item.ma.crafting_soulium_nugget
-crafttweaker:ia_ma_uncompress_item.ma.crafting_soulium_nugget
-crafttweaker:ia_ma_compress_item.ma.crafting_supremium_nugget
-crafttweaker:ia_ma_uncompress_item.ma.crafting_supremium_nugget
-crafttweaker:ia_ma_compress_item.ma.coal_intermedium
-crafttweaker:ia_ma_uncompress_item.ma.coal_intermedium
-crafttweaker:ia_ma_compress_item.ma.crafting_base_essence_ingot
-crafttweaker:ia_ma_uncompress_item.ma.crafting_base_essence_ingot
-crafttweaker:ia_ma_compress_item.ma.crafting_inferium_essence
-crafttweaker:ia_ma_uncompress_item.ma.crafting_inferium_essence
+crafttweaker:ia_ma_compress_item.ma.coal_inferium
+crafttweaker:ia_ma_uncompress_item.ma.coal_inferium
+crafttweaker:ia_ma_compress_item.ma.crafting_prudentium_essence
+crafttweaker:ia_ma_uncompress_item.ma.crafting_prudentium_essence
+crafttweaker:ia_ma_compress_item.ma.crafting_intermedium_essence
+crafttweaker:ia_ma_uncompress_item.ma.crafting_intermedium_essence
+crafttweaker:ia_ma_compress_item.ma.crafting_prudentium_ingot
+crafttweaker:ia_ma_uncompress_item.ma.crafting_prudentium_ingot
+crafttweaker:ia_ma_compress_item.ma.coal_prudentium
+crafttweaker:ia_ma_uncompress_item.ma.coal_prudentium
+crafttweaker:ia_ma_compress_item.ma.crafting_inferium_nugget
+crafttweaker:ia_ma_uncompress_item.ma.crafting_inferium_nugget
 crafttweaker:ia_ma_compress_item.ma.crafting_superium_nugget
 crafttweaker:ia_ma_uncompress_item.ma.crafting_superium_nugget
+crafttweaker:ia_ma_compress_item.ma.crafting_inferium_essence
+crafttweaker:ia_ma_uncompress_item.ma.crafting_inferium_essence
+crafttweaker:ia_ma_compress_item.ma.crafting_intermedium_nugget
+crafttweaker:ia_ma_uncompress_item.ma.crafting_intermedium_nugget
+crafttweaker:ia_ma_compress_item.ma.crafting_base_essence_ingot
+crafttweaker:ia_ma_uncompress_item.ma.crafting_base_essence_ingot
+crafttweaker:ia_ma_compress_item.ma.crafting_prosperity_shard
+crafttweaker:ia_ma_uncompress_item.ma.crafting_prosperity_shard
+crafttweaker:ia_ma_compress_item.ma.crafting_supremium_ingot
+crafttweaker:ia_ma_uncompress_item.ma.crafting_supremium_ingot
+crafttweaker:ia_ma_compress_item.ma.crafting_soulium_nugget
+crafttweaker:ia_ma_uncompress_item.ma.crafting_soulium_nugget
+crafttweaker:ia_ma_compress_item.ma.coal_superium
+crafttweaker:ia_ma_uncompress_item.ma.coal_superium
+crafttweaker:ia_ma_compress_item.ma.crafting_supremium_nugget
+crafttweaker:ia_ma_uncompress_item.ma.crafting_supremium_nugget
+crafttweaker:ia_ma_compress_item.ma.crafting_superium_ingot
+crafttweaker:ia_ma_uncompress_item.ma.crafting_superium_ingot
+crafttweaker:ia_ma_compress_item.ma.crafting_intermedium_ingot
+crafttweaker:ia_ma_uncompress_item.ma.crafting_intermedium_ingot
+crafttweaker:ia_ma_compress_item.ma.crafting_base_essence_nugget
+crafttweaker:ia_ma_uncompress_item.ma.crafting_base_essence_nugget
+crafttweaker:ia_ma_compress_item.ma.crafting_superium_essence
+crafttweaker:ia_ma_uncompress_item.ma.crafting_superium_essence
+crafttweaker:ia_ma_compress_item.ma.coal_intermedium
+crafttweaker:ia_ma_uncompress_item.ma.coal_intermedium
+crafttweaker:ia_ma_compress_item.ma.crafting_supremium_essence
+crafttweaker:ia_ma_uncompress_item.ma.crafting_supremium_essence
+crafttweaker:ia_ma_compress_item.ma.crafting_soulium_ingot
+crafttweaker:ia_ma_uncompress_item.ma.crafting_soulium_ingot
+crafttweaker:ia_ma_compress_item.ma.coal_supremium
+crafttweaker:ia_ma_uncompress_item.ma.coal_supremium
 crafttweaker:ia_ma_slab_tile.ma.soulstone_polished
 crafttweaker:ia_ma_slab_tile.ma.soulstone_brick
 crafttweaker:ia_ma_slab_tile.ma.soulstone_cobbled
@@ -13879,6 +13897,7 @@ crafttweaker:ia_tartaric_aeroheater
 crafttweaker:ia_capacitor_aeroheater
 crafttweaker:ia_carbon_plate_charcoal
 crafttweaker:ia_inferno_fuel
+crafttweaker:ia_inferno_fuel2
 crafttweaker:ia_hot_energion
 crafttweaker:ia_pattern_circuit_crude
 crafttweaker:ai_pattern_circuit_refined
@@ -14013,6 +14032,10 @@ crafttweaker:ia_ae2comp_2_3
 crafttweaker:ia_ae2comp_2_4
 crafttweaker:ia_ae2comp_2_5
 crafttweaker:ia_ae2comp_2_6
+crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_16384k
+crafttweaker:ia_aea_to_naeitem.nae2.material.cell_part_16384k
+crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_1024k
+crafttweaker:ia_aea_to_naeitem.nae2.material.cell_part_1024k
 crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_256k
 crafttweaker:ia_aea_to_naeitem.nae2.material.cell_part_256k
 crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_4096k
@@ -14021,10 +14044,6 @@ crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_fluid_256k
 crafttweaker:ia_aea_to_naeitem.nae2.material.cell_part_fluid_256k
 crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_fluid_4096k
 crafttweaker:ia_aea_to_naeitem.nae2.material.cell_part_fluid_4096k
-crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_1024k
-crafttweaker:ia_aea_to_naeitem.nae2.material.cell_part_1024k
-crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_16384k
-crafttweaker:ia_aea_to_naeitem.nae2.material.cell_part_16384k
 crafttweaker:ia_nae_to_aeaitem.nae2.material.cell_part_fluid_1024k
 crafttweaker:ia_aea_to_naeitem.nae2.material.cell_part_fluid_1024k
 crafttweaker:ia_void_cell
@@ -14061,22 +14080,22 @@ crafttweaker:ia_evaporator_reset
 crafttweaker:elemental_reduction
 crafttweaker:elemental_reduction2
 crafttweaker:elemental_reduction3
+crafttweaker:ia_el_rederbium_varnished planks
+crafttweaker:ia_el_rederbium_kaizer's fingers mushroom block
+crafttweaker:ia_el_rederbium_dark capped mushroom block
 crafttweaker:ia_el_rederbium_grandma's shoes mushroom block
 crafttweaker:ia_el_rederbium_dutch cap mushroom block
-crafttweaker:ia_el_rederbium_reinforced exoskeleton plate
-crafttweaker:ia_el_rederbium_kaizer's fingers mushroom block
-crafttweaker:ia_el_rederbium_sarcastic czech mushroom block
-crafttweaker:ia_el_rederbium_varnished planks
 crafttweaker:ia_el_rederbium_soul crystal
-crafttweaker:ia_el_rederbium_dark capped mushroom block
+crafttweaker:ia_el_rederbium_sarcastic czech mushroom block
+crafttweaker:ia_el_rederbium_reinforced exoskeleton plate
 crafttweaker:ia_el_redplutonium_cyanite dust
 crafttweaker:ia_el_redplutonium_cyanite ingot
-crafttweaker:ia_el_redlithium_lithium dust
-crafttweaker:ia_el_redpolonium_polonium dust
 crafttweaker:ia_el_redbarium_awakened witherite
 crafttweaker:ia_el_redbarium_witherite
-crafttweaker:ia_el_redniobium_niob ingot
 crafttweaker:ia_el_redcalcium_calcium
+crafttweaker:ia_el_redlithium_lithium dust
+crafttweaker:ia_el_redniobium_niob ingot
+crafttweaker:ia_el_redpolonium_polonium dust
 crafttweaker:ia_dcpd
 crafttweaker:ia_eg_altar
 crafttweaker:ia_scarab
@@ -14658,6 +14677,8 @@ crafttweaker:ia_plutonium ingot_block of plutonium_compression
 crafttweaker:ia_plutonium ingot_block of plutonium_uncompression
 crafttweaker:ia_item.contenttweaker.lucky_alloy_ingot.name_tile.contenttweaker.lucky_alloy_block.name_compression
 crafttweaker:ia_item.contenttweaker.lucky_alloy_ingot.name_tile.contenttweaker.lucky_alloy_block.name_uncompression
+crafttweaker:ia_magnesium ingot_block of magnesium_compression
+crafttweaker:ia_magnesium ingot_block of magnesium_uncompression
 crafttweaker:ia_vanadium ingot_block of vanadium_compression
 crafttweaker:ia_vanadium ingot_block of vanadium_uncompression
 crafttweaker:ia_germanium ingot_block of germanium_compression
@@ -14672,8 +14693,8 @@ crafttweaker:ia_niobium ingot_tile.contenttweaker.niobium_block.name_compression
 crafttweaker:ia_niobium ingot_tile.contenttweaker.niobium_block.name_uncompression
 crafttweaker:ia_molybdenum ingot_block of molybdenum_compression
 crafttweaker:ia_molybdenum ingot_block of molybdenum_uncompression
-crafttweaker:ia_rhodium ingot_tile.contenttweaker.rhodium_block.name_compression
-crafttweaker:ia_rhodium ingot_tile.contenttweaker.rhodium_block.name_uncompression
+crafttweaker:ia_rhodium ingot_block of rhodium_compression
+crafttweaker:ia_rhodium ingot_block of rhodium_uncompression
 crafttweaker:ia_cadmium ingot_block of cadmium_compression
 crafttweaker:ia_cadmium ingot_block of cadmium_uncompression
 crafttweaker:ia_tellurium ingot_block of tellurium_compression
@@ -14868,6 +14889,7 @@ crafttweaker:ia_eio_solar3
 crafttweaker:ia_wing
 crafttweaker:ia_wings
 crafttweaker:ia_staff_of_traveling
+crafttweaker:ia_item_xp_transfer
 crafttweaker:ia_luck_chip
 crafttweaker:ia_luck_chip2
 crafttweaker:ia_luck_crystal
@@ -15118,39 +15140,39 @@ crafttweaker:chitigic_chef_feeding_item.contenttweaker.chitigic_food2
 crafttweaker:chitigic_chef_feeding2_item.contenttweaker.chitigic_food2
 crafttweaker:chitigic_chef_work_item.contenttweaker.chitigic_food1
 crafttweaker:chitigic_chef_work_item.contenttweaker.chitigic_food2
-crafttweaker:baby_hair_thing_feeding_item.projectred.core.itemresource.silicon
-crafttweaker:baby_hair_thing_feeding2_item.projectred.core.itemresource.silicon
 crafttweaker:baby_hair_thing_feeding_item.projectred.core.itemresource.sand_coal_comp
 crafttweaker:baby_hair_thing_feeding2_item.projectred.core.itemresource.sand_coal_comp
+crafttweaker:baby_hair_thing_feeding_item.projectred.core.itemresource.silicon
+crafttweaker:baby_hair_thing_feeding2_item.projectred.core.itemresource.silicon
 crafttweaker:chitigic_chewer_feeding_item.contenttweaker.chitigic_food3
 crafttweaker:chitigic_chewer_feeding2_item.contenttweaker.chitigic_food3
 crafttweaker:chitigic_chewer_feeding_item.contenttweaker.chitigic_food2
 crafttweaker:chitigic_chewer_feeding2_item.contenttweaker.chitigic_food2
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_diamond_ore
-crafttweaker:chitigic_chewer_work_item.contenttweaker.sandworm_gut
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_iridium_ore
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_lapis_ore
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_silver_ore
-crafttweaker:chitigic_chewer_work_item.prodigytech.meat_ground
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_osmium_ore
 crafttweaker:chitigic_chewer_work_tile.densemetals.dense_tin_ore
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_nickel_ore
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_iron_ore
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_aluminum_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_diamond_ore
 crafttweaker:chitigic_chewer_work_tile.densemetals.dense_zinc_ore
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_gold_ore
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_mithril_ore
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_emerald_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_iridium_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_lead_ore
+crafttweaker:chitigic_chewer_work_item.prodigytech.meat_ground
+crafttweaker:chitigic_chewer_work_item.contenttweaker.sandworm_gut
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_iron_ore
 crafttweaker:chitigic_chewer_work_tile.densemetals.dense_copper_ore
 crafttweaker:chitigic_chewer_work_tile.densemetals.dense_redstone_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_silver_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_mithril_ore
 crafttweaker:chitigic_chewer_work_item.contenttweaker.nitrall
-crafttweaker:chitigic_chewer_work_tile.densemetals.dense_lead_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_gold_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_nickel_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_aluminum_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_emerald_ore
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_osmium_ore
 crafttweaker:chitigic_chewer_work_tile.contenttweaker.antimony_ore_dense
+crafttweaker:chitigic_chewer_work_tile.densemetals.dense_lapis_ore
 crafttweaker:ia_chitigic_chewer_corpse
-crafttweaker:hair_thing_feeding_item.projectred.core.itemresource.silicon
-crafttweaker:hair_thing_feeding2_item.projectred.core.itemresource.silicon
 crafttweaker:hair_thing_feeding_item.projectred.core.itemresource.sand_coal_comp
 crafttweaker:hair_thing_feeding2_item.projectred.core.itemresource.sand_coal_comp
+crafttweaker:hair_thing_feeding_item.projectred.core.itemresource.silicon
+crafttweaker:hair_thing_feeding2_item.projectred.core.itemresource.silicon
 crafttweaker:hair_thing_product_item.contenttweaker.hair_ball
 crafttweaker:hair_thing_product2_item.contenttweaker.hair_ball
 crafttweaker:hair_thing_reproduction_item.contenttweaker.lv_baby_hair_thing
@@ -15179,10 +15201,10 @@ crafttweaker:blood_slime_product_item.contenttweaker.blood_shard4
 crafttweaker:blood_slime_product2_item.contenttweaker.blood_shard4
 crafttweaker:chitigic_hunter_feeding_item.contenttweaker.chitigic_food3
 crafttweaker:chitigic_hunter_feeding2_item.contenttweaker.chitigic_food3
-crafttweaker:chitigic_hunter_feeding_item.contenttweaker.chitigic_food1
-crafttweaker:chitigic_hunter_feeding2_item.contenttweaker.chitigic_food1
 crafttweaker:chitigic_hunter_feeding_item.contenttweaker.chitigic_food2
 crafttweaker:chitigic_hunter_feeding2_item.contenttweaker.chitigic_food2
+crafttweaker:chitigic_hunter_feeding_item.contenttweaker.chitigic_food1
+crafttweaker:chitigic_hunter_feeding2_item.contenttweaker.chitigic_food1
 crafttweaker:ia_chitigic_hunter_corpse
 crafttweaker:chitigic_refinery_feeding_item.contenttweaker.chitigic_food3
 crafttweaker:chitigic_refinery_feeding2_item.contenttweaker.chitigic_food3
@@ -15202,15 +15224,15 @@ crafttweaker:spice_rabbit_product2_item.contenttweaker.spice_egg
 crafttweaker:spice_rabbit_reproduction_item.contenttweaker.spice_egg
 crafttweaker:chitigic_scout_feeding_item.contenttweaker.chitigic_food3
 crafttweaker:chitigic_scout_feeding2_item.contenttweaker.chitigic_food3
-crafttweaker:chitigic_scout_feeding_item.contenttweaker.chitigic_food1
-crafttweaker:chitigic_scout_feeding2_item.contenttweaker.chitigic_food1
 crafttweaker:chitigic_scout_feeding_item.contenttweaker.chitigic_food2
 crafttweaker:chitigic_scout_feeding2_item.contenttweaker.chitigic_food2
+crafttweaker:chitigic_scout_feeding_item.contenttweaker.chitigic_food1
+crafttweaker:chitigic_scout_feeding2_item.contenttweaker.chitigic_food1
 crafttweaker:ia_chitigic_scout_corpse
-crafttweaker:bedrock_golem_feeding_item.eezo_ingot
-crafttweaker:bedrock_golem_feeding2_item.eezo_ingot
 crafttweaker:bedrock_golem_feeding_tile.eezo_block
 crafttweaker:bedrock_golem_feeding2_tile.eezo_block
+crafttweaker:bedrock_golem_feeding_item.eezo_ingot
+crafttweaker:bedrock_golem_feeding2_item.eezo_ingot
 crafttweaker:bedrock_golem_product_item.contenttweaker.bedrockium_small_chunk
 crafttweaker:bedrock_golem_product2_item.contenttweaker.bedrockium_small_chunk
 crafttweaker:ia_bedrock_golem_life_essence
@@ -15221,6 +15243,18 @@ crafttweaker:draco_lizard_product2_item.contenttweaker.draco_lizard_spit
 crafttweaker:draco_lizard_reproduction_item.contenttweaker.draco_lizard_egg
 crafttweaker:ia_draco_lizard_corpse
 crafttweaker:ia_draco_lizard_life_essence
+crafttweaker:honey_spider_feeding_item.grubitem
+crafttweaker:honey_spider_feeding2_item.grubitem
+crafttweaker:honey_spider_feeding_tile.twilightforest.moonworm
+crafttweaker:honey_spider_feeding2_tile.twilightforest.moonworm
+crafttweaker:honey_spider_feeding_item.actuallyadditions.item_worm
+crafttweaker:honey_spider_feeding2_item.actuallyadditions.item_worm
+crafttweaker:honey_spider_feeding_item.item_material.silkworm
+crafttweaker:honey_spider_feeding2_item.item_material.silkworm
+crafttweaker:honey_spider_feeding_item.silkworm_egg
+crafttweaker:honey_spider_feeding2_item.silkworm_egg
+crafttweaker:honey_spider_work_item.erebus.materials.nectar
+crafttweaker:ia_honey_spider_corpse
 crafttweaker:chitigic_nursery_feeding_item.contenttweaker.chitigic_food3
 crafttweaker:chitigic_nursery_feeding2_item.contenttweaker.chitigic_food3
 crafttweaker:chitigic_nursery_feeding_item.contenttweaker.chitigic_food2
@@ -15238,18 +15272,18 @@ crafttweaker:zanite_frog_feeding_item.contenttweaker.zanite_frog_feed
 crafttweaker:zanite_frog_feeding2_item.contenttweaker.zanite_frog_feed
 crafttweaker:zanite_frog_product_item.contenttweaker.zanite_frog_leg
 crafttweaker:zanite_frog_product2_item.contenttweaker.zanite_frog_leg
-crafttweaker:snek_plant_feeding_item.contenttweaker.fertilizer3
-crafttweaker:snek_plant_feeding2_item.contenttweaker.fertilizer3
 crafttweaker:snek_plant_feeding_item.contenttweaker.fertilizer4
 crafttweaker:snek_plant_feeding2_item.contenttweaker.fertilizer4
+crafttweaker:snek_plant_feeding_item.contenttweaker.fertilizer3
+crafttweaker:snek_plant_feeding2_item.contenttweaker.fertilizer3
 crafttweaker:snek_plant_product_item.contenttweaker.leaf
 crafttweaker:snek_plant_product2_item.contenttweaker.leaf
 crafttweaker:chitigic_drone_feeding_item.contenttweaker.chitigic_food3
 crafttweaker:chitigic_drone_feeding2_item.contenttweaker.chitigic_food3
-crafttweaker:chitigic_drone_feeding_item.contenttweaker.chitigic_food1
-crafttweaker:chitigic_drone_feeding2_item.contenttweaker.chitigic_food1
 crafttweaker:chitigic_drone_feeding_item.contenttweaker.chitigic_food2
 crafttweaker:chitigic_drone_feeding2_item.contenttweaker.chitigic_food2
+crafttweaker:chitigic_drone_feeding_item.contenttweaker.chitigic_food1
+crafttweaker:chitigic_drone_feeding2_item.contenttweaker.chitigic_food1
 crafttweaker:ia_chitigic_drone_corpse
 crafttweaker:ia_butcher_knife
 crafttweaker:ia_algae
@@ -15266,6 +15300,7 @@ crafttweaker:ia_draco_lizard_feed2
 crafttweaker:ia_dragon_egg_from_lizard_egg
 crafttweaker:hair_thing_vitamins
 crafttweaker:ia_hair_thing_growing
+crafttweaker:ia_honey_spider
 crafttweaker:blood_slime_vitamins
 crafttweaker:blood_slime_feeding
 crafttweaker:blood_slime_feeding2
@@ -15318,6 +15353,8 @@ crafttweaker:ia_robodruid_leg
 crafttweaker:robodruid_mech
 crafttweaker:ia_advanced_plating3_1
 crafttweaker:ia_goldscarab_mech
+crafttweaker:ia_rh_v_block1
+crafttweaker:ia_rh_v_block2
 crafttweaker:ia_bloodhunter_target_blood
 crafttweaker:ia_bloodhunter_target_slate
 crafttweaker:ia_bloodhunter_target_fairy
@@ -15328,8 +15365,6 @@ crafttweaker:ia_mech_taxi_wing
 crafttweaker:ia_mech_taxi
 crafttweaker:ia_salt_compession
 crafttweaker:ia_salt_decompression
-crafttweaker:ia_cardbox
-crafttweaker:ia_cardbox2
 crafttweaker:ia_plasticblock
 crafttweaker:ia_electrolyticcore
 crafttweaker:ia_mek_battery
@@ -15370,6 +15405,7 @@ crafttweaker:ia_energyupgrade
 crafttweaker:ia_speedupgrade2
 crafttweaker:ia_energyupgrade2
 crafttweaker:ia_mek_tank_wall
+crafttweaker:ia_mek_tank_wall2
 crafttweaker:ia_mek_structure_glass
 crafttweaker:ia_mek_boiler
 crafttweaker:ia_evaporation_block
@@ -15565,8 +15601,8 @@ crafttweaker:sand_to_sandyglass1
 crafttweaker:ia_silverbell_sapling
 crafttweaker:ia_xp_bottler
 crafttweaker:ia_xp_drain
-crafttweaker:open_item.deepmoblearning.pristine_matter_wither_skeleton
 crafttweaker:open_item.deepmoblearning.pristine_matter_zombie
+crafttweaker:open_item.deepmoblearning.pristine_matter_wither_skeleton
 crafttweaker:ia_hang_glider
 crafttweaker:ia_open_tank_reset
 crafttweaker:ia_oc_transistor
@@ -15671,6 +15707,13 @@ crafttweaker:ia_blue_quark_crystal
 crafttweaker:ia_indigo_quark_crystal
 crafttweaker:ia_white_quark_crystal
 crafttweaker:ia_black_quark_crystal
+crafttweaker:ia_lots_of_iron
+crafttweaker:ia_wandunbreakable_coin
+crafttweaker:ia_cardbox2
+crafttweaker:ia_cardbox
+crafttweaker:ia_creative_mod
+crafttweaker:blocksingularityiteminputbus_coin
+crafttweaker:blocksingularityitemoutputbus_coin
 crafttweaker:ia_research_dup_item.contenttweaker.research_glass_making
 crafttweaker:ia_research_dup_item.contenttweaker.research_tinker
 crafttweaker:ia_research_dup_item.contenttweaker.research_circuit1
@@ -15681,6 +15724,7 @@ crafttweaker:ia_research_dup_item.contenttweaker.research_plants1
 crafttweaker:ia_research_dup_item.contenttweaker.research_plants2
 crafttweaker:ia_research_dup_item.contenttweaker.research_plants3
 crafttweaker:ia_research_dup_item.contenttweaker.research_oreberry
+crafttweaker:ia_research_dup_item.contenttweaker.research_mushroom1
 crafttweaker:ia_research_dup_item.contenttweaker.research_sieving
 crafttweaker:ia_research_dup_item.contenttweaker.research_flight1
 crafttweaker:ia_research_dup_item.contenttweaker.research_fluids
@@ -15732,12 +15776,12 @@ crafttweaker:sludge_token
 crafttweaker:ia_fey_crafter
 crafttweaker:ia_arrowrootitem
 crafttweaker:roots_staff
-crafttweaker:ia_roots_tile.runed_jungle
-crafttweaker:ia_roots_tile.runed_dark_oak
-crafttweaker:ia_roots_tile.runed_oak
-crafttweaker:ia_roots_tile.runed_acacia
 crafttweaker:ia_roots_tile.runed_birch
+crafttweaker:ia_roots_tile.runed_dark_oak
+crafttweaker:ia_roots_tile.runed_acacia
 crafttweaker:ia_roots_tile.runed_wildwood
+crafttweaker:ia_roots_tile.runed_oak
+crafttweaker:ia_roots_tile.runed_jungle
 crafttweaker:ia_roots_tile.runed_spruce
 crafttweaker:ia_entwood_heart
 crafttweaker:ia_staffwood_mb
@@ -16290,7 +16334,11 @@ crafttweaker:ia_dread_lamp
 crafttweaker:ia_early_map_focus
 crafttweaker:ia_magic_map_empty
 crafttweaker:ia_carminite_uncompress
-crafttweaker:ia_fiery_ingot
+crafttweaker:ia_fiery_ingot1
+crafttweaker:ia_fiery_ingot2
+crafttweaker:ia_fiery_ingot3
+crafttweaker:ia_fiery_ingot4
+crafttweaker:ia_fiery_ingot5
 crafttweaker:ia_fiery_blood1
 crafttweaker:ia_fiery_blood2
 crafttweaker:ia_carminite_engine

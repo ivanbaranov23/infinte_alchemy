@@ -14,7 +14,7 @@ scripts.content_machines.addAssemblerRecipe(
 
 recipes.remove(<deepmoblearning:polymer_clay>);
 mods.mekanism.reaction.addRecipe(
-    <contenttweaker:elastic_clay>, <liquid:refined_pheromones> * 100, <gas:polyethylene> * 50, 
+    <contenttweaker:elastic_clay>, <liquid:refined_pheromones> * 200, <gas:polyethylene> * 150, 
     <deepmoblearning:polymer_clay> * 8, <gas:waste_gas> * 10, 50000, 60
 );
 

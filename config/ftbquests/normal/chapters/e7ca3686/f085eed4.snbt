@@ -1,6 +1,10 @@
 {
+	title: "Machine Frame 7",
 	x: 5.0d,
 	y: 0.0d,
+	text: [
+		""
+	],
 	dependencies: [
 		"97e98b69",
 		"2e1be161"
@@ -16,5 +20,25 @@
 		uid: "bbf0c598",
 		type: "item",
 		item: "contenttweaker:quest_coin"
+	},
+	{
+		uid: "b6ba956b",
+		type: "item",
+		item: {
+			id: "simple_trophies:trophy",
+			tag: {
+				TrophyColorRed: 81,
+				TrophyColorBlue: 26,
+				TrophyName: "Frame 7",
+				TrophyColorGreen: 48,
+				TrophyShowsTooltip: 1b,
+				TrophyItem: {
+					id: "enderio:item_material",
+					Count: 1,
+					Damage: 53s
+				},
+				TrophyVariant: "neon"
+			}
+		}
 	}]
 }

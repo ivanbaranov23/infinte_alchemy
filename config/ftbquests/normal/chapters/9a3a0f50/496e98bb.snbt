@@ -17,8 +17,8 @@
 				data: {
 					progress: 0.0f,
 					bottomLocked: 1b,
-					topLocked: 1b,
 					upgrades: [],
+					topLocked: 1b,
 					power: 0.0d,
 					Items: []
 				}

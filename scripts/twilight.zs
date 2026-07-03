@@ -61,13 +61,34 @@ recipes.removeByRecipeName("twilightforest:materials/fiery_conversion/fiery_iron
 recipes.removeByRecipeName("twilightforest:materials/fiery_conversion/fiery_iron_pickaxe");
 recipes.removeByRecipeName("twilightforest:materials/fiery_conversion/fiery_iron_sword");
 recipes.removeByRecipeName("twilightforest:materials/fiery_conversion/fiery_ingot");
-recipes.addShapeless("ia_fiery_ingot", <twilightforest:fiery_ingot> * 2, [<twilightforest:fiery_blood>, <ore:ingotManyullyn>, <ore:ingotOsgloglas>, <tconstruct:ingots:1>]);
+recipes.addShapeless("ia_fiery_ingot1", <twilightforest:fiery_ingot> * 2, [
+	<twilightforest:fiery_blood>, <ore:ingotManyullyn>, <ore:ingotOsgloglas>, 
+	<tconstruct:ingots:1>
+]);
+recipes.addShapeless("ia_fiery_ingot2", <twilightforest:fiery_ingot> * 6, [
+	<twilightforest:fiery_blood>, <ore:ingotManyullyn>, <ore:ingotOsgloglas>, 
+	<alchemistry:ingot:33>
+]);
+recipes.addShapeless("ia_fiery_ingot3", <twilightforest:fiery_ingot> * 4, [
+	<twilightforest:fiery_blood>, <ore:ingotManyullyn>, <ore:ingotOsgloglas>, 
+	<contenttweaker:rubeezo_ingot> | <contenttweaker:carminium_ingot>
+]);
+recipes.addShapeless("ia_fiery_ingot4", <twilightforest:fiery_ingot> * 8, [
+	<twilightforest:fiery_blood>, <ore:ingotManyullyn>, <ore:ingotOsgloglas>, 
+	<alchemistry:ingot:81>
+]);
+recipes.addShapeless("ia_fiery_ingot5", <twilightforest:fiery_ingot> * 16, [
+	<twilightforest:fiery_blood>, <ore:ingotManyullyn>, <ore:ingotOsgloglas>, 
+	<alchemistry:ingot:103>
+]);
+
 scripts.content_machines.addBioAssemblerRecipe(
-    [<twilightforest:fiery_ingot> * 5], null, 
+    [<twilightforest:fiery_ingot> * 32], null, 
     [
         <twilightforest:fiery_blood>,
-		<tconstruct:ingots:1>,
-		<tconstruct:ingots:2>
+		<tconstruct:ingots:1>, 
+		<contenttweaker:rubeezo_ingot> | <contenttweaker:carminium_ingot>,
+		<alchemistry:ingot:103>
     ], [
         <liquid:osgloglas> * 144
     ], <contenttweaker:research_chemistry3>,
@@ -115,3 +136,37 @@ recipes.addShapeless("ia_zombie_scepter", <twilightforest:zombie_scepter>, [
 
 
 //mods.jei.JEI.hideCategory("jei_uncrafting");
+
+
+{//skip
+	mods.immersiveengineering.Mixer.addRecipe(<liquid:twilit_soup> * 1000, <liquid:mana> * 1000, [
+		<contenttweaker:steeleaf_mush>,
+		<twilightforest:borer_essence>
+	], 3000);
+	scripts.compact_distill.addCompactDistill(
+		[<liquid:vow_fire> * 20, <liquid:vow_ice> * 20, <liquid:vow_honor> * 20, <liquid:vow_death> * 20], 
+		[<twilightforest:borer_essence>, <twilightforest:torchberries>], 
+		<liquid:twilit_soup> * 100, 
+		4000, 20, 
+		[0.01, 0.1]
+	);
+
+	mods.alchemistry.Evaporator.addRecipe(
+		<twilightforest:alpha_fur>, <liquid:vow_ice> * 1000
+	);
+	mods.thermalexpansion.Transposer.addFillRecipe(
+		<twilightforest:fiery_tears>, 
+		<minecraft:glass_bottle>, <liquid:vow_fire> * 500, 
+		4000
+	);
+	mods.thermalexpansion.Transposer.addFillRecipe(
+		<twilightforest:armor_shard_cluster>, 
+		<twilightforest:armor_shard> * 4, <liquid:vow_honor> * 500, 
+		4000
+	);
+	mods.thermalexpansion.Transposer.addFillRecipe(
+		<contenttweaker:lich_bone>, 
+		<contenttweaker:calcium> * 4, <liquid:vow_death> * 2500, 
+		4000
+	);
+}
