@@ -1,5 +1,5 @@
 {
-	x: 24.5d,
+	x: 24.0d,
 	y: -3.0d,
 	shape: "square",
 	dependencies: [
@@ -17,5 +17,10 @@
 		uid: "cd05a385",
 		type: "item",
 		item: "contenttweaker:star_alloy_block"
+	},
+	{
+		uid: "6b9e9990",
+		type: "item",
+		item: "contenttweaker:quest_coin"
 	}]
 }

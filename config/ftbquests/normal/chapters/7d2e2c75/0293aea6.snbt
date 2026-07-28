@@ -12,17 +12,6 @@
 	tasks: [{
 		uid: "9d905d82",
 		type: "checkmark",
-		icon: {
-			id: "aeadditions:pattern.fluid",
-			tag: {
-				Fluid: {
-					FluidName: "ec.internal.sodium",
-					Amount: 1000
-				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
-		}
+		icon: "alchemistry:element 1 11"
 	}]
 }

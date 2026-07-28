@@ -129,26 +129,28 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <densemetals:dense_rutile_ore> * 192,
                 <densemetals:dense_uranium_ore> * 192,
                 <bigreactors:oreyellorite> * (192 * 4),
-                <contenttweaker:tungsten_ore> * (192 * 4)
+                <contenttweaker:tungsten_dense_ore> * 192
             ], [
                 <densemetals:dense_platinum_ore> * 192,
                 <densemetals:dense_iridium_ore> * 192,
                 <densemetals:dense_rutile_ore> * 192,
                 <densemetals:dense_uranium_ore> * 192,
                 <bigreactors:oreyellorite> * (192 * 4),
-                <contenttweaker:tungsten_ore> * (192 * 4)
+                <contenttweaker:tungsten_dense_ore> * 192
             ]
         ],
         <contenttweaker:radiotoad_target2>: [
             [
                 <contenttweaker:tantalite_ore> * 512, 
                 <moretcon:oreelectarite> * 512, 
-                <moretcon:oregarstone> * 512
+                <moretcon:oregarstone> * 512,
+                <densemetals:dense_chromium_ore> * 128
  
             ], [
                 <contenttweaker:tantalite_ore> * 512, 
                 <moretcon:oreelectarite> * 512, 
-                <moretcon:oregarstone> * 512
+                <moretcon:oregarstone> * 512,
+                <densemetals:dense_chromium_ore> * 128
  
             ]
         ],
@@ -213,6 +215,42 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
         <contenttweaker:nether_boat_quartz>: [
             [<minecraft:quartz_ore> * 512, <netherendingores:ore_nether_modded_1:9> * 256],
             [<minecraft:quartz_ore> * 512, <netherendingores:ore_nether_modded_1:9> * 256]
+        ]
+    },
+    <contenttweaker:spider_mech>: {
+        <contenttweaker:spider_target_metals>: [
+            [
+                <draconicevolution:draconium_ore> * 48,
+                <thermalfoundation:ore:8> * 64,
+                <twilightforest:trollsteinn> * 128,
+                <contenttweaker:rhodplumsite_space_ore> * 128,
+                <contenttweaker:stoneleaf_dense_ore> * 32,
+                <thermalfoundation:ore_fluid:3> * 128
+            ],
+            [
+                <draconicevolution:draconium_ore> * 48,
+                <thermalfoundation:ore:8> * 64,
+                <twilightforest:trollsteinn> * 128,
+                <contenttweaker:rhodplumsite_space_ore> * 128,
+                <contenttweaker:stoneleaf_dense_ore> * 32,
+                <thermalfoundation:ore_fluid:3> * 128
+            ]
+        ],
+        <contenttweaker:spider_target_dusts>: [
+            [
+                <densemetals:dense_redstone_ore> * 128,
+                <contenttweaker:electrotine_ore_dense> * 128,
+                <densemetals:dense_coal_ore> * 128,
+                <densemetals:dense_quartz_ore> * 128,
+                <minecraft:glowstone> * 256
+            ],
+            [
+                <densemetals:dense_redstone_ore> * 128,
+                <contenttweaker:electrotine_ore_dense> * 128,
+                <densemetals:dense_coal_ore> * 128,
+                <densemetals:dense_quartz_ore> * 128,
+                <minecraft:glowstone> * 256
+            ]
         ]
     },
     <contenttweaker:robodruid_mech>: {

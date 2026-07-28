@@ -1,0 +1,14 @@
+{
+	x: 5.0d,
+	y: -1.0d,
+	dependencies: [
+		"496a1ec1"
+	],
+	tasks: [{
+		uid: "bc1ebb2a",
+		type: "item",
+		items: [{
+			item: "contenttweaker:spider_mech"
+		}]
+	}]
+}

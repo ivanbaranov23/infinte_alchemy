@@ -3,6 +3,7 @@
 	x: 7.0d,
 	y: -5.5d,
 	text: [
+		"Tier 3 caps were changed to tar light.",
 		"20 more runes"
 	],
 	dependencies: [

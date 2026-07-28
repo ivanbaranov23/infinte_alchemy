@@ -83,37 +83,29 @@
     ]);
     recipes.addShaped("ia_advanced_plating2_4", <contenttweaker:advanced_plating2_4>, [
         [<contenttweaker:insulation_strand>, <contenttweaker:advanced_plating2_3>, <contenttweaker:insulation_strand>], 
-        [<enderio:item_gas_conduit:2>, <immersiveengineering:metal:35>, <enderio:item_liquid_conduit:2>], 
+        [<enderio:item_gas_conduit:2>, <alchemistry:ingot:48>, <enderio:item_liquid_conduit:2>], 
         [<contenttweaker:insulation_strand>, <contenttweaker:advanced_plating1_4>, <contenttweaker:insulation_strand>]
     ]);
 
-    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:radiotoad_arm>, [
-        [null, <projectred-core:resource_item:410>, <contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>, null], 
-        [null, <contenttweaker:bedrockium_alloy_ingot>, <projectred-core:resource_item:410>, <contenttweaker:advanced_plating2_4>, null], 
-        [null, <contenttweaker:bedrockium_alloy_ingot>, <thermalfoundation:material:640>, <contenttweaker:advanced_plating2_4>, null], 
-        [null, <contenttweaker:bedrockium_alloy_ingot>, <contenttweaker:explosion_device_full>, <contenttweaker:advanced_plating2_4>, null], 
-        [null, <thermalfoundation:material:656>, <thermalfoundation:material:656>, <thermalfoundation:material:656>, null]
+    recipes.addShaped("ia_radiotoad_arm", <contenttweaker:radiotoad_arm>, [
+        [<projectred-core:resource_item:410>, <contenttweaker:advanced_plating2_4>, null], 
+        [null, <actuallyadditions:item_misc:16>, <contenttweaker:advanced_plating2_4>], 
+        [null, <thermalfoundation:material:656>, <thermalfoundation:material:656>]
     ]);
-    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:radiotoad_legs>, [
-        [null, <projectred-core:resource_item:410>, <contenttweaker:bedrockium_alloy_plate>, <projectred-core:resource_item:410>, null], 
-        [<contenttweaker:advanced_plating2_4>, <projectred-core:resource_item:410>, null, <projectred-core:resource_item:410>, <contenttweaker:advanced_plating2_4>], 
-        [<contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>, null, <contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>], 
-        [<contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>, null, <contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>], 
-        [<contenttweaker:explosion_device_full>, <contenttweaker:explosion_device_full>, null, <contenttweaker:explosion_device_full>, <contenttweaker:explosion_device_full>]
+    recipes.addShaped("ia_radiotoad_legs", <contenttweaker:radiotoad_legs>, [
+        [<projectred-core:resource_item:410>, <contenttweaker:bedrockium_alloy_plate>, <projectred-core:resource_item:410>], 
+        [<contenttweaker:advanced_plating2_4>, null, <contenttweaker:advanced_plating2_4>], 
+        [<contenttweaker:advanced_plating2_4>, null, <contenttweaker:advanced_plating2_4>]
     ]);
-    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:radiotoad_body>, [
-        [null, <openblocks:tank>.withTag({tank: {FluidName: "poison", Amount: 16000}}), <projectred-core:resource_item:410>, <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}), null], 
-        [<projectred-core:resource_item:410>, <openblocks:tank>.withTag({tank: {FluidName: "poison", Amount: 16000}}), <contenttweaker:bedrockium_alloy_gear>, <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}}), <projectred-core:resource_item:410>], 
-        [<contenttweaker:advanced_plating2_4>, <thermalexpansion:dynamo:3>, <extrautils2:machine>.withTag({Type: "extrautils2:generator_dragonsbreath"}), <thermalexpansion:dynamo:3>, <contenttweaker:advanced_plating2_4>], 
-        [<simplyjetpacks:metaitemmods:21>, <contenttweaker:advanced_plating2_4>, <contenttweaker:bedrockium_alloy_gear>, <contenttweaker:advanced_plating2_4>, <simplyjetpacks:metaitemmods:21>], 
-        [null, <simplyjetpacks:metaitemmods:21>, <projectred-core:resource_item:410>, <simplyjetpacks:metaitemmods:21>, null]
+    recipes.addShaped("ia_radiotoad_body", <contenttweaker:radiotoad_body>, [
+        [<openblocks:tank>.withTag({tank: {FluidName: "poison", Amount: 16000}}), <contenttweaker:advanced_plating2_4>, <openblocks:tank>.withTag({tank: {FluidName: "hot_spring_water", Amount: 16000}})], 
+        [<thermalexpansion:dynamo:3>, <enderio:item_material:73>, <thermalexpansion:dynamo:3>], 
+        [<simplyjetpacks:metaitemmods:23>, <contenttweaker:advanced_plating2_4>, <simplyjetpacks:metaitemmods:23>]
     ]);
-    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:radiotoad_head>, [
-        [null, <contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>, null], 
-        [null, <contenttweaker:advanced_plating2_4>, <enderio:item_capacitor_melodic>, <contenttweaker:advanced_plating2_4>, null], 
-        [null, <contenttweaker:mechanical_eye>, <contenttweaker:bedrockium_alloy_gear>, <contenttweaker:mechanical_eye>, null], 
-        [null, <contenttweaker:advanced_plating2_4>, <enderio:item_capacitor_melodic>, <contenttweaker:advanced_plating2_4>, null], 
-        [null, null, <projectred-core:resource_item:410>, null, null]
+    recipes.addShaped("ia_radiotoad_head", <contenttweaker:radiotoad_head>, [
+        [<contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>, <contenttweaker:advanced_plating2_4>], 
+        [<contenttweaker:mechanical_eye>, <contenttweaker:gambrosium_processor>, <contenttweaker:mechanical_eye>], 
+        [<contenttweaker:advanced_plating2_4>, <projectred-core:resource_item:410>, <contenttweaker:advanced_plating2_4>]
     ]);
 
     recipes.addShaped("ia_radiotoad_mech", <contenttweaker:radiotoad_mech>, [
@@ -124,10 +116,15 @@
 
     recipes.addShaped("ia_radiotoad_target1", <contenttweaker:radiotoad_target1>, [
         [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>], 
-        [<contenttweaker:advanced_plating2_3>, <extendedcrafting:singularity:30>, <contenttweaker:advanced_plating2_3>], 
+        [<contenttweaker:advanced_plating2_3>, <extendedcrafting:singularity:30> | <extendedcrafting:singularity:32> | <extendedcrafting:singularity:35>, <contenttweaker:advanced_plating2_3>], 
         [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>]
     ]);
     recipes.addShaped("ia_radiotoad_target2", <contenttweaker:radiotoad_target2>, [
+        [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>], 
+        [<contenttweaker:advanced_plating2_3>, <extendedcrafting:singularity_custom:98>, <contenttweaker:advanced_plating2_3>], 
+        [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>]
+    ]);
+    recipes.addShaped("ia_radiotoad_target3", <contenttweaker:radiotoad_target3>, [
         [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>], 
         [<contenttweaker:advanced_plating2_3>, <extendedcrafting:singularity>, <contenttweaker:advanced_plating2_3>], 
         [<contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>, <contenttweaker:advanced_plating2_3>]
@@ -376,11 +373,11 @@
         [null, null, <contenttweaker:advanced_plating3_5>, null, null]
     ]);
     mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:goldscarab_sun>, [
-        [null, <moreplates:refined_glowstone_gear>, <moreplates:refined_glowstone_gear>, <moreplates:refined_glowstone_gear>, null], 
-        [<moreplates:refined_glowstone_gear>, <contenttweaker:advanced_plating3_5>, <contenttweaker:advanced_plating3_5>, <contenttweaker:advanced_plating3_5>, <moreplates:refined_glowstone_gear>], 
-        [<moreplates:refined_glowstone_gear>, <contenttweaker:advanced_plating3_5>, <extendedcrafting:singularity:4>, <contenttweaker:advanced_plating3_5>, <moreplates:refined_glowstone_gear>], 
-        [<moreplates:refined_glowstone_gear>, <contenttweaker:advanced_plating3_5>, <contenttweaker:advanced_plating3_5>, <contenttweaker:advanced_plating3_5>, <moreplates:refined_glowstone_gear>], 
-        [null, <moreplates:refined_glowstone_gear>, <moreplates:refined_glowstone_gear>, <moreplates:refined_glowstone_gear>, null]
+        [null, <quark:crystal:3>, <quark:crystal:3>, <quark:crystal:3>, null], 
+        [<quark:crystal:3>, <contenttweaker:advanced_plating3_5>, <contenttweaker:advanced_plating3_5>, <contenttweaker:advanced_plating3_5>, <quark:crystal:3>], 
+        [<quark:crystal:3>, <contenttweaker:advanced_plating3_5>, <extendedcrafting:singularity:4>, <contenttweaker:advanced_plating3_5>, <quark:crystal:3>], 
+        [<quark:crystal:3>, <contenttweaker:advanced_plating3_5>, <contenttweaker:advanced_plating3_5>, <contenttweaker:advanced_plating3_5>, <quark:crystal:3>], 
+        [null, <quark:crystal:3>, <quark:crystal:3>, <quark:crystal:3>, null]
     ]);
 
     recipes.addShaped("ia_goldscarab_mech", <contenttweaker:goldscarab_mech>, [
@@ -431,13 +428,70 @@
         [<contenttweaker:rhodium_plate>, <contenttweaker:vanadium_block>, <contenttweaker:rhodium_plate>], 
         [null, <contenttweaker:rhodium_plate>, null]
     ]);
-    recipes.addShaped("ia_rh_v_block2", <contenttweaker:rh_v_block> * 2, [
-        [<contenttweaker:rhodium_plate>, <alchemistry:ingot:48>, <contenttweaker:rhodium_plate>], 
-        [<alchemistry:ingot:48>, <contenttweaker:vanadium_block>, <alchemistry:ingot:48>], 
-        [<contenttweaker:rhodium_plate>, <alchemistry:ingot:48>, <contenttweaker:rhodium_plate>]
-    ]);
 
     mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:rh_v_plate>, <contenttweaker:rh_v_block>, 15000);
+
+    recipes.addShaped("spider_plate", <contenttweaker:spider_plate>, [
+        [null, <contenttweaker:advanced_plating1_4>, null], 
+        [<contenttweaker:peridotite_processor>, <contenttweaker:rh_v_plate>, <contenttweaker:peridotite_processor>], 
+        [null, <contenttweaker:advanced_plating1_4>, null]
+    ]);
+
+
+    recipes.addShaped("spider_mech_head", <contenttweaker:spider_mech_head>, [
+        [<contenttweaker:spider_plate>, <contenttweaker:mechanical_eye>, <contenttweaker:spider_plate>], 
+        [<contenttweaker:mechanical_eye>, <contenttweaker:gambrosium_processor>, <contenttweaker:mechanical_eye>], 
+        [<contenttweaker:spider_plate>, <contenttweaker:mechanical_eye>, <contenttweaker:spider_plate>]
+    ]);
+    recipes.addShaped("spider_mech_body", <contenttweaker:spider_mech_body>, [
+        [<contenttweaker:spider_plate>, <projectred-core:resource_item:410>, <contenttweaker:spider_plate>], 
+        [<contenttweaker:spider_plate>, <enderio:block_combustion_generator>, <contenttweaker:spider_plate>], 
+        [<contenttweaker:spider_plate>, <simplyjetpacks:metaitemmods:23>, <contenttweaker:spider_plate>]
+    ]);
+    recipes.addShaped("spider_mech_leg", <contenttweaker:spider_mech_leg>, [
+        [null, <contenttweaker:spider_plate>, <projectred-core:resource_item:410>], 
+        [<contenttweaker:spider_plate>, <actuallyadditions:item_misc:16>, null], 
+        [<contenttweaker:spider_plate>, <thermalfoundation:material:656>, null]
+    ]);
+
+
+    recipes.addShaped("ia_spider_mech", <contenttweaker:spider_mech>, [
+        [null, <contenttweaker:spider_mech_head>, null], 
+        [<contenttweaker:spider_mech_leg>, <contenttweaker:spider_mech_body>, <contenttweaker:spider_mech_leg>], 
+        [<contenttweaker:spider_mech_leg>, null, <contenttweaker:spider_mech_leg>]
+    ]);
+
+
+    recipes.addShaped("spider_target_metals", <contenttweaker:spider_target_metals>, [
+        [<contenttweaker:spider_plate>, <contenttweaker:mobbium>, <contenttweaker:spider_plate>], 
+        [<contenttweaker:mobbium>, <draconicevolution:draconium_block>, <contenttweaker:mobbium>], 
+        [<contenttweaker:spider_plate>, <contenttweaker:mobbium>, <contenttweaker:spider_plate>]
+    ]);
+    recipes.addShaped("spider_target_dusts", <contenttweaker:spider_target_dusts>, [
+        [<contenttweaker:spider_plate>, <contenttweaker:mobbium>, <contenttweaker:spider_plate>], 
+        [<contenttweaker:mobbium>, <extendedcrafting:singularity:3>, <contenttweaker:mobbium>], 
+        [<contenttweaker:spider_plate>, <contenttweaker:mobbium>, <contenttweaker:spider_plate>]
+    ]);
+
+
+    {//fuel
+        scripts.content_machines.addFluidMixerRecipe(
+            <liquid:spider_mead> * 500, 
+            <liquid:ethanol> * 1000, <liquid:cold_diesel> * 250, <erebus:materials:20> * 8, 
+            20, 1000
+        );
+        scripts.content_machines.addFluidMixerRecipe(
+            <liquid:spider_mead> * 750, 
+            <liquid:ethanol> * 1000, <liquid:cold_diesel> * 250, <contenttweaker:honey_web>, 
+            20, 1000
+        );
+        scripts.content_machines.addFluidMixerRecipe(
+            <liquid:spider_mead> * 1000, 
+            <liquid:ethanol> * 1000, <liquid:cold_diesel> * 125, <contenttweaker:honey_spider_corpse>, 
+            20, 1000
+        );
+
+    }
 }
 
 {//bloodhunter

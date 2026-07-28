@@ -1,7 +1,7 @@
 {
 	icon: "modularmachinery:tignalum_oven_controller",
 	x: 3.0d,
-	y: 1.0d,
+	y: 0.5d,
 	text: [
 		"Throw signs on it haphazardly"
 	],

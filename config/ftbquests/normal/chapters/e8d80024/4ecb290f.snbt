@@ -1,8 +1,8 @@
 {
 	x: 22.0d,
-	y: 3.0d,
+	y: 2.0d,
 	text: [
-		"Rune cracker wil crack runes when it has runes but not catalyst"
+		"Rune cracker will crack runes when it has runes but not catalyst."
 	],
 	dependencies: [
 		"0aac85b0",

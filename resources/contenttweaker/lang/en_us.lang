@@ -2905,7 +2905,44 @@ tile.contenttweaker.magnesium_block.name=Block of Magnesium
 fluid.twilit_soup=Twilit Soup
 fluid.vow_fire=Vow of Fire
 fluid.vow_ice=Vow of Ice
-fluid.vow_honor=Vow of Honnor
+fluid.vow_honor=Vow of Honor
 fluid.vow_death=Vow of Undying Life
 
 item.contenttweaker.manamass.name=Biocell with Manamass
+
+item.contenttweaker.biocell_plankton.name=Biocell with Plankton Seed Culture
+fluid.plankton=Mixed Plankton
+fluid.plankton2=Phytoplankton
+fluid.plankton3=Zooplankton
+fluid.algal_fuel=Algae Biofuel
+
+item.contenttweaker.mana_charged_ingot.name=Mana Overcharged Ingot
+item.contenttweaker.rare_gem.name=Rare Mana Gem
+
+fluid.rhodium=Molten Rhodium
+
+fluid.cold_crude=Cold Crude Oil
+
+fluid.garstone_sludge=Garstone Sludge
+item.contenttweaker.rhodium1.name=Gar Gar Dust
+item.contenttweaker.rhodium2.name=Precious Gar Gar Dust
+
+item.contenttweaker.staffwood_meteorite.name=Meteorite Staff
+
+tile.contenttweaker.tungsten_dense_ore.name=Dense Tungsten Ore
+tile.contenttweaker.rhodplumsite_space_ore.name=Rhodplumsite Ore
+
+item.contenttweaker.acetic_acid.name=Acetic Acid
+item.contenttweaker.chloroacetic_acid.name=Chloroacetic Acid
+item.contenttweaker.ac2o.name=Acetic Anhydride
+item.contenttweaker.ethenone.name=Ethenone
+item.contenttweaker.acetone.name=Acetone
+
+
+
+item.contenttweaker.trollsteinn.name=Trollsteinn
+item.contenttweaker.trollsteinn_gem.name=Trollsteinn Gem
+item.contenttweaker.mobbium=Mobbium
+
+fluid.cold_diesel=Cold Diesel
+fluid.spider_mead=Spider Mead

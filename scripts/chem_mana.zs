@@ -417,13 +417,12 @@ import mods.modularmachinery.RecipeBuilder;
         125000
     );
 
-
     scripts.content_machines.addFluidSieveRecipeRandom(
         [
             <contenttweaker:filter_empty> % 100,
             <contenttweaker:imperomite_catalyst_dust> % 100,
-            <contenttweaker:rhodium_dust> % 25,
-            <contenttweaker:rhodium1> % 50,
+            <contenttweaker:rhodium_dust> % 75,
+            <contenttweaker:rhodium1> % 15,
             <contenttweaker:yellow_dust> % 100
         ], <liquid:supersalty> * 500, 
         <liquid:garstone_sludge> * 500, <contenttweaker:filter_yellow>,
@@ -431,12 +430,31 @@ import mods.modularmachinery.RecipeBuilder;
         20, 10000
     );
     
-
     mods.thermalexpansion.InductionSmelter.addRecipe(
         <contenttweaker:rhodium2>, 
         <contenttweaker:rhodium1>, <thermalfoundation:material:134>, 
         50000, 
         <mekores:mekanismore:18>, 50
+    );
+
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <alchemistry:ingot:45> * 3, 
+        <contenttweaker:rhodium1>, <contenttweaker:ice_dust>, 
+        50000
+    );
+
+    mods.prodigytech.atomicreshaper.addRecipeMulti(
+        <contenttweaker:rhodium2>, 
+        20, 20 * 5, 
+        [
+            <biomesoplenty:gem_ore:1> * 8,
+            <biomesoplenty:gem_ore:3> * 8,
+            <biomesoplenty:gem_ore:7> * 8,
+            <biomesoplenty:gem_ore:2> * 8,
+            <biomesoplenty:gem_ore:5> * 8,
+            <biomesoplenty:gem_ore:6> * 8,
+            <biomesoplenty:gem_ore:4> * 8,
+        ]
     );
 }
 

@@ -130,7 +130,7 @@ recipes.addShaped("mm_carmine_reactor_controller", <modularmachinery:carmine_rea
 ]);
 recipes.addShaped("mm_gas_column_controller", <modularmachinery:gas_column_controller>, [
 	[<contenttweaker:osgloridium_processor>, <mekanism:gastank>.withTag({'tier': 3}), <contenttweaker:osgloridium_processor>], 
-	[<aeadditions:gas_interface>, <mekanism:basicblock:14>, <aeadditions:gas_interface>], 
+	[<mekeng:gas_interface>, <mekanism:basicblock:14>, <mekeng:gas_interface>], 
 	[<contenttweaker:osgloridium_processor>, <actuallyadditions:block_misc:9>, <contenttweaker:osgloridium_processor>]
 ]);
 recipes.addShaped("mm_tar_pit_controller", <modularmachinery:tar_pit_controller>, [
@@ -165,6 +165,17 @@ recipes.addShaped("mm_worm_pit_controller", <modularmachinery:worm_pit_controlle
 	[<contenttweaker:enspiced_spicy_bioblend>, <actuallyadditions:block_misc:9>, <contenttweaker:enspiced_spicy_bioblend>], 
 	[<contenttweaker:sandworm_chitin>, <contenttweaker:stomper>, <contenttweaker:sandworm_chitin>]
 ]);
+
+{recipes.addShaped("mm_plankton_tank_controller", <modularmachinery:plankton_tank_controller>, [
+		[<minecraft:prismarine:2>, <minecraft:prismarine:2>, <minecraft:prismarine:2>], 
+		[<contenttweaker:biocell_plankton>, <actuallyadditions:block_misc:9>, <contenttweaker:biocell_plankton>], 
+		[<minecraft:prismarine:2>, <immersiveengineering:metal_device0:5>, <minecraft:prismarine:2>]
+	]);
+	addRecycle(<modularmachinery:plankton_tank_controller>, [
+		<actuallyadditions:block_misc:9>, <immersiveengineering:metal_device0:5>, <minecraft:prismarine:2> * 5,
+		<contenttweaker:biocell_plankton> * 2
+	]);
+}
 
 //MA
 recipes.addShaped("mm_essence_extractor_controller", <modularmachinery:essence_extractor_controller>, [
@@ -204,6 +215,11 @@ recipes.addShaped("mm_air_collector_controller", <modularmachinery:air_collector
 	[<enderio:item_material:73>, <enderio:item_capacitor_crystalline>, <enderio:item_material:73>], 
 	[<contenttweaker:peridotite_sheet>, <enderio:item_material:66>, <contenttweaker:peridotite_sheet>], 
 	[<enderio:item_material:73>, <contenttweaker:shu_godshard>, <enderio:item_material:73>]
+]);
+recipes.addShaped("mm_cooling_tower_controller", <modularmachinery:cooling_tower_controller>, [
+	[<contenttweaker:ice_shard_block>, <aether_legacy:freezer>, <contenttweaker:ice_shard_block>], 
+	[<enderio:item_capacitor_crystalline>, <thermalfoundation:material:1025>, <enderio:item_capacitor_crystalline>], 
+	[<contenttweaker:awakened_umberrack_bricks>, <enderio:item_material:1>, <contenttweaker:awakened_umberrack_bricks>]
 ]);
 
 recipes.addShaped("mm_energy_infuser_controller", <modularmachinery:energy_infuser_controller>, [

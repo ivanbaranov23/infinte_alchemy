@@ -1,6 +1,9 @@
 {
 	x: 13.0d,
 	y: 4.0d,
+	text: [
+		"Stores 4 million mana."
+	],
 	dependencies: [
 		"cc267d8f",
 		"47c0caca",

@@ -1,0 +1,22 @@
+{
+	x: 3.0d,
+	y: 1.0d,
+	text: [
+		"Can be obtained in other ways than dense zinc ore byprod."
+	],
+	dependencies: [
+		"dfe36bad"
+	],
+	tasks: [{
+		uid: "bc7aac96",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 48"
+		}]
+	}],
+	rewards: [{
+		uid: "1818918c",
+		type: "item",
+		item: "contenttweaker:cadmium_block"
+	}]
+}

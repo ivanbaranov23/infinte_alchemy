@@ -1,0 +1,15 @@
+{
+	x: 7.0d,
+	y: 6.0d,
+	dependencies: [
+		"6680db0a"
+	],
+	optional: true,
+	tasks: [{
+		uid: "1d472ab3",
+		type: "item",
+		items: [{
+			item: "contenttweaker:biocell_plankton"
+		}]
+	}]
+}

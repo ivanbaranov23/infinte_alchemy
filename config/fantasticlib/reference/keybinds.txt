@@ -57,6 +57,12 @@ key.previous_item.desc
 key.open_danknull.desc
 key.togglehud.desc
 
+key.ae2exttable.category
+key.open_advanced_extended_wireless_crafting_terminal
+key.open_basic_extended_wireless_crafting_terminal
+key.open_elite_extended_wireless_crafting_terminal
+key.open_ultimate_extended_wireless_crafting_terminal
+
 key.ae2fc.category
 key.ae2fc.open_wireless_fluid_pattern_terminal.desc
 

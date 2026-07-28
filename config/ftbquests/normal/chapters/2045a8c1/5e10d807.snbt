@@ -1,0 +1,17 @@
+{
+	x: -2.0d,
+	y: 2.0d,
+	text: [
+		"Might want to switch to this eventually"
+	],
+	dependencies: [
+		"14b378ae"
+	],
+	tasks: [{
+		uid: "495ef6d3",
+		type: "item",
+		items: [{
+			item: "modularmachineryaddons:blocksingularityitemoutputbus 1 6"
+		}]
+	}]
+}

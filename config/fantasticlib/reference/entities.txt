@@ -103,7 +103,14 @@ quark:leash_knot
 quark:colored_item_frame
 quark:glass_item_frame
 quark:gravisand
-quark:seat
+quark:chest_passenger
+quark:pickarang
+quark:arrow_ender
+quark:arrow_explosive
+quark:arrow_torch
+quark:dragon_breath_bottle
+quark:soul_powder
+quark:parrot_egg
 quark:stoneling
 quark:archaeologist
 quark:foxhound
@@ -113,14 +120,7 @@ quark:frog
 quark:pirate
 quark:crab
 quark:wraith
-quark:chest_passenger
-quark:pickarang
-quark:arrow_ender
-quark:arrow_explosive
-quark:arrow_torch
-quark:dragon_breath_bottle
-quark:soul_powder
-quark:parrot_egg
+quark:seat
 exnihilocreatio:thrown stone
 excompressum:angry_chicken
 botania:mana_burst
@@ -353,8 +353,8 @@ mysticalworld:entity_lava_cat
 mysticalworld:entity_silkworm
 mysticalworld:entity_clam
 enderio:falling_machine
-enderio:primed_charge
 enderio:owl_egg
+enderio:primed_charge
 twilightforest:wild_boar
 twilightforest:bighorn_sheep
 twilightforest:deer
@@ -447,11 +447,6 @@ appliedenergistics2:appeng.entity.entitytinytntprimed
 appliedenergistics2:appeng.entity.entitygrowingcrystal
 appliedenergistics2:appeng.entity.entitysingularity
 appliedenergistics2:appeng.entity.entitychargedquartz
-mekanism:obsidiantnt
-mekanism:robit
-mekanism:balloon
-mekanism:babyskeleton
-mekanism:flame
 bloodmagic:blood_light
 bloodmagic:soul_snare
 bloodmagic:soul_arrow
@@ -547,6 +542,11 @@ mod_lavacow:cactusthorn
 mod_lavacow:enigmoth
 mod_lavacow:enigmoth_larva
 mod_lavacow:moth_scales
+mekanism:obsidiantnt
+mekanism:robit
+mekanism:balloon
+mekanism:babyskeleton
+mekanism:flame
 natura:babyheatscarspider
 natura:heatscarspider
 natura:imp

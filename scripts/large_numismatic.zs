@@ -27,6 +27,8 @@ for gem,power in {
 
     <bloodmagic:item_demon_crystal:*> * 8:      5 * mil,
 
+    <contenttweaker:rare_gem>:                  50 * mil,
+
     <contenttweaker:gargeruby>:                 125 * mil,
     <contenttweaker:inverse_gargeruby>:         200 * mil,
     <contenttweaker:terragem>:                  125 * mil,

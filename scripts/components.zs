@@ -2111,7 +2111,7 @@ mods.mekanism.compressor.addRecipe(
 			<contenttweaker:primitive_eyes> * 4,
 			<contenttweaker:basic_neuron> * 3,
 			<industrialforegoing:laser_lens:14>
-		]
+		], 100000
 	);
 	//todo eye fluid
 	mods.thermalexpansion.Transposer.addFillRecipe(
@@ -2119,6 +2119,12 @@ mods.mekanism.compressor.addRecipe(
 		<contenttweaker:mute_eye>, <liquid:nutrient_distillation> * 5000, 
 		10000
 	);
+
+	recipes.addShaped("ia_mechanical_eye", <contenttweaker:mechanical_eye>, [
+		[null, <contenttweaker:neuron_inlay>, <contenttweaker:eye>], 
+		[<quantumflux:craftingpiece>, <contenttweaker:neuron_inlay>, <contenttweaker:neuron_inlay>], 
+		[<contenttweaker:medical_alloy_coil>, <quantumflux:craftingpiece>, null]
+	]);
 	scripts.content_machines.addAssemblerRecipe(
 		[<contenttweaker:mechanical_eye>],
 		[<contenttweaker:eye>, <contenttweaker:neuron_inlay> * 2, <contenttweaker:medical_alloy_coil>, <quantumflux:craftingpiece>],

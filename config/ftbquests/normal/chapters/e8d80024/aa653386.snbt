@@ -1,0 +1,18 @@
+{
+	x: 17.0d,
+	y: 4.0d,
+	text: [
+		"Stores 10 million mana."
+	],
+	dependencies: [
+		"6c1559c4",
+		"f7bd3a5e"
+	],
+	tasks: [{
+		uid: "6df2ec76",
+		type: "item",
+		items: [{
+			item: "botaniverse:morepool 1 1"
+		}]
+	}]
+}

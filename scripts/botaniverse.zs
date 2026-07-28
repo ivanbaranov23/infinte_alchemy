@@ -28,3 +28,32 @@ scripts.content_machines.addBioAssemblerRecipe(
     ], <contenttweaker:research_pool>,
     20, 1000000
 );
+
+scripts.content_machines.addBioAssemblerRecipe(
+    [<botaniverse:morepool:2>, <contenttweaker:gaia_catalyst_used>], null, 
+    [
+        <botaniverse:morepool:1>,
+        <botaniverse:morerune:2> * 2,
+        <botaniverse:morerock:2> * 8,
+        <contenttweaker:star_alloy_plate> * 2,
+        <contenttweaker:gaia_catalyst>
+    ], [
+        <liquid:rune_acid> * 1000,
+        <liquid:livingrock> * 576
+    ], <contenttweaker:research_pool>,
+    20, 1000000
+);
+scripts.content_machines.addBioAssemblerRecipe(
+    [<botaniverse:morepool:3>, <contenttweaker:gaia_catalyst_used>], null, 
+    [
+        <botaniverse:morepool:2>,
+        <botaniverse:morerune:3> * 2,
+        <botaniverse:morerock:3> * 8,
+        <contenttweaker:kikeridan_plate> * 4,
+        <contenttweaker:gaia_catalyst>
+    ], [
+        <liquid:rune_acid> * 1000,
+        <liquid:livingrock> * 576
+    ], <contenttweaker:research_pool>,
+    20, 1000000
+);

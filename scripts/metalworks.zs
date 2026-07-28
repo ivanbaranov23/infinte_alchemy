@@ -1515,6 +1515,12 @@ static all_metals as IItemStack[string][string] = {
         dust: <contenttweaker:vanadium_dust>,
         element: <alchemistry:element:23>
     },
+    germanium: {
+        ingot: <alchemistry:ingot:32>,
+        block: <contenttweaker:germanium_block>,
+        dust: <contenttweaker:germanium_dust>,
+        element: <alchemistry:element:32>
+    },
     arsenic: {
         ingot: <alchemistry:ingot:33>,
         block: <contenttweaker:arsenic_block>,
@@ -1593,6 +1599,12 @@ static all_metals as IItemStack[string][string] = {
 
         element: <alchemistry:element:73>,
         singularity: <extendedcrafting:singularity_custom:75>
+    },
+    thallium: {
+        ingot: <alchemistry:ingot:81>,
+        block: <contenttweaker:thallium_block>,
+        dust: <contenttweaker:thallium_dust>,
+        element: <alchemistry:element:81>
     },
     plutonium: {
         ingot: <alchemistry:ingot:94>,
@@ -2408,6 +2420,8 @@ static all_metals_molten as ILiquidStack[string] = {
     draconium: <liquid:draconium>,
     starmetal: <liquid:starmetal>,
     zirconium: <liquid:zirconium>,
+    kikeridan: <liquid:kikeridan>,
+
     molybdenum: <liquid:molybdenum>,
     rhodium: <liquid:rhodium>,
     vanadium: <liquid:vanadium>,
@@ -2541,7 +2555,8 @@ static custom_metals as string[] = [
 
     "runesteel",
 
-    "magnesium", "selenium", "tellurium", "arsenic", "molybdenum", "rhodium", "tantalum"
+    "magnesium", "selenium", "tellurium", "arsenic", "molybdenum", "rhodium", "tantalum",
+    "kikeridan"
 ];
 
 
@@ -5020,6 +5035,8 @@ add3alloy(3, "ender_ingot", 2,
         500, 256
     );
 
+    
+
 
 
     //mirion
@@ -5190,6 +5207,21 @@ add3alloy(3, "ender_ingot", 2,
             <moretcon:gemgarstone>
         ]
     );
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:awakened_carminium_ingot> * 12, 102400 * 20, 102400, <contenttweaker:glass_ingot>,
+        [
+            <contenttweaker:carminium_ingot>,
+            <contenttweaker:carminium_ingot>,
+            <contenttweaker:carminium_ingot>,
+            <contenttweaker:carminium_ingot>,
+            <contenttweaker:carminium_ingot>,
+            <contenttweaker:carminium_ingot>,
+            <botania:quartz:4>,
+            <contenttweaker:rhodium2>
+        ]
+    );
+
+    
 }
 
 recipes.addShapeless("tungsten_mixture", <contenttweaker:tungsten_mixture>, [
@@ -5404,6 +5436,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
         rec.build();
     }
 
+
     
     mods.extendedcrafting.CombinationCrafting.addRecipe(
         <contenttweaker:moon_ingot> * 3, 1024000 * 200, 1024000, <contenttweaker:glass_ingot>, 
@@ -5489,7 +5522,14 @@ scripts.content_machines.addAdvancedMixerRecipe(
     
 
     furnace.addRecipe(<contenttweaker:tantalum_dust> * 4, <contenttweaker:capacitor_dust>);
-    //furnace.addRecipe(, <contenttweaker:tantalum_dust>);
+    
+
+    
+    addAdvancedSmelting(
+        <alchemistry:ingot:81>, <contenttweaker:thallium_dust>, 
+        <prodigytech:aeternus_crystal>, <contenttweaker:poisotheum>, <liquid:high_heat_lava> * 50, 
+        10000, 20 * 30
+    );
 
 
     //mischmetal

@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: 12.0d,
+	dependencies: [
+		"57ddcaa6"
+	],
+	tasks: [{
+		uid: "2b079d06",
+		type: "item",
+		items: [{
+			item: "nae2:material 1 8"
+		}]
+	}]
+}

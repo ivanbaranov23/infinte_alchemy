@@ -8,17 +8,6 @@
 		uid: "630ca03a",
 		type: "checkmark",
 		title: "Lithium",
-		icon: {
-			id: "aeadditions:pattern.fluid",
-			tag: {
-				Fluid: {
-					FluidName: "liquidlithium",
-					Amount: 1000
-				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
-		}
+		icon: "alchemistry:element 1 3"
 	}]
 }

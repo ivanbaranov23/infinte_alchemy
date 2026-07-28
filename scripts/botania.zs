@@ -130,6 +130,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(
     ManaInfusion.removeRecipe(<moreplates:manasteel_plate>); //3000
     ManaInfusion.removeRecipe(<moreplates:manasteel_gear>); //3000
     ManaInfusion.addInfusion(<botania:manaresource>, <contenttweaker:mana_absorbing_ingot>, 7500);
+    ManaInfusion.addInfusion(<contenttweaker:mana_charged_ingot>, <botania:manaresource>, 2 * 1000 * 1000);
 
     //mana diamond
     ManaInfusion.removeRecipe(<botania:manaresource:2>); //10000
@@ -399,6 +400,15 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
         <botania:rune:4>
     ]);
 
+    Apothecary.removeRecipe("excompressum.orechidEvolved");
+    Apothecary.removeRecipe("orechid");
+    Apothecary.addRecipe("orechid", [
+        <contenttweaker:revived_bush>,
+        <additionalcompression:stone_compressed:4>,
+        <contenttweaker:petals1>,
+        <contenttweaker:petals2>,
+        <botania:rune:2>
+    ]);
 
     Apothecary.removeRecipe("vinculotus");
     Apothecary.addRecipe("vinculotus", [
@@ -410,7 +420,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
     Apothecary.removeRecipe("rannuncarpus");
     Apothecary.addRecipe("rannuncarpus", [
         <contenttweaker:revived_bush>,
-        <actuallyadditions:block_phantom_placer>,
+        <animus:component>,
         <contenttweaker:petals1>,
         <botania:rune:2>
     ]);
@@ -420,6 +430,24 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <botania:runealtar>, [
         <additionalcompression:clay_compressed:3>,
         <contenttweaker:petals2>,
         <botania:rune:2>
+    ]);
+    Apothecary.removeRecipe("exoflame");
+    Apothecary.addRecipe("exoflame", [
+        <contenttweaker:revived_bush>,
+        <immersiveengineering:metal_device1>,
+        <contenttweaker:petals1>,
+        <botania:rune:1>,
+        <botania:rune:5>
+    ]);
+
+
+    Apothecary.removeRecipe("jiyuulia");
+    Apothecary.addRecipe("jiyuulia", [
+        <contenttweaker:revived_bush>,
+        <enderio:block_aversion_obelisk>,
+        <contenttweaker:petals3>,
+        <botania:rune:0>,
+        <botania:rune:3>
     ]);
 }
 recipes.addShapeless("ia_ancient_wood", <contenttweaker:ancient_wood>, [
@@ -505,28 +533,6 @@ recipes.addShaped("ia_opencrate", <botania:opencrate>, [
 
 
 {//block of rune
-    /*recipes.addShaped("ia_botania_block_rune_water", <contenttweaker:rune_water_block>, [
-        [<botania:rune>, <botania:rune>, <botania:rune>], 
-        [<botania:rune>, <bloodmagic:ritual_stone:1>, <botania:rune>], 
-        [<botania:rune>, <botania:rune>, <botania:rune>]
-    ]);
-    recipes.addShaped("ia_botania_block_rune_fire", <contenttweaker:rune_fire_block>, [
-        [<botania:rune:1>, <botania:rune:1>, <botania:rune:1>], 
-        [<botania:rune:1>, <bloodmagic:ritual_stone:2>, <botania:rune:1>], 
-        [<botania:rune:1>, <botania:rune:1>, <botania:rune:1>]
-    ]);
-    recipes.addShaped("ia_botania_block_rune_earth", <contenttweaker:rune_earth_block>, [
-        [<botania:rune:2>, <botania:rune:2>, <botania:rune:2>], 
-        [<botania:rune:2>, <bloodmagic:ritual_stone:3>, <botania:rune:2>], 
-        [<botania:rune:2>, <botania:rune:2>, <botania:rune:2>]
-    ]);
-    recipes.addShaped("ia_botania_block_rune_air", <contenttweaker:rune_air_block>, [
-        [<botania:rune:3>, <botania:rune:3>, <botania:rune:3>], 
-        [<botania:rune:3>, <bloodmagic:ritual_stone:4>, <botania:rune:3>], 
-        [<botania:rune:3>, <botania:rune:3>, <botania:rune:3>]
-    ]);*/
-
-
     mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:rune_water_block>, [
         [<botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>, <botania:rune>], 
         [<botania:rune>, <contenttweaker:orichalconite_gear>, <contenttweaker:chitin>, <contenttweaker:orichalconite_gear>, <botania:rune>], 

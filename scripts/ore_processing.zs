@@ -801,7 +801,7 @@ static ores1 as IItemStack[string][string][string] = {
         },
         dirtydust: {
             item: <mekores:mekanismore:38>,
-            separating1: <mekores:mekanismore:37>,
+            separating1: <exnihilocreatio:item_ore_cobalt:2>,
             separating2: <projectred-core:resource_item:105>,
             separating3: <thermalfoundation:material:2049>,
             separating4: <contenttweaker:soot>
@@ -1246,6 +1246,17 @@ static ores1 as IItemStack[string][string][string] = {
             separating1: <thermalfoundation:material:67>,
             separating2: <thermalfoundation:material:66>,
             separating4: <thermalfoundation:material:771>
+        },
+
+
+        rhodplumsite: {
+            item: <contenttweaker:rhodplumsite_space_ore>,
+            crushing_no_balls: <exnihilocreatio:item_ore_lead> * 8,
+            balling: <exnihilocreatio:item_ore_lead> * 8,
+            crushingByprod1: <contenttweaker:rhodium_dust>,
+            crushingByprod2: <contenttweaker:rhodium_dust> * 3,
+
+            drilling: <exnihilocreatio:item_ore_lead> * 16
         }
     },
     osmium: {
@@ -1484,6 +1495,14 @@ static ores1 as IItemStack[string][string][string] = {
             crushingByprod2: <contenttweaker:arkenium_dust>,
 
             drilling: <exnihilocreatio:item_ore_tungsten> * 6
+        },
+        dense: {
+            item: <contenttweaker:tungsten_dense_ore>,
+            crushing: <contenttweaker:tungsten_ore> * 3,
+            crushingByprod1: <taiga:prometheum_dust> * 4,
+            crushingByprod2: <contenttweaker:arkenium_dust> * 4,
+
+            making: <contenttweaker:tungsten_ore> * 4
         },
         clump: {
             item: <mekores:mekanismore:107>,
@@ -2906,6 +2925,12 @@ static ores2 as IItemStack[string][string][string] = {
             alloySlag3: <taiga:duranite_ingot> * 3,
 
             drilling: <mekores:mekanismore:258> * 3
+        },
+        clump: {
+            item: <mekores:mekanismore:257>,
+            balling: <mekores:mekanismore:258>,
+            crushingByprod1: <exnihilocreatio:item_ore_nickel>,
+            crushingByprod2: <taiga:meteorite_dust> * 3,
         }
     },
     valyrium: {

@@ -247,12 +247,17 @@ mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.wi
 
 {//wires and coils
 	recipes.remove(<immersiveengineering:wirecoil:5>);
-	recipes.addShaped("ia_ie_redstone_coil", <immersiveengineering:wirecoil:5> * 2, [
+	recipes.addShaped("ia_ie_redstone_coil", <immersiveengineering:wirecoil:5> * 1, [
+		[<projectred-transmission:wire>, <projectred-transmission:wire>, <projectred-transmission:wire>], 
+		[<thermalfoundation:material:132>, <immersiveengineering:material>, <thermalfoundation:material:132>], 
+		[<projectred-transmission:wire>, <projectred-transmission:wire>, <projectred-transmission:wire>]
+	]);
+	recipes.addShaped("ia_ie_redstone_coil2", <immersiveengineering:wirecoil:5> * 2, [
 		[<projectred-transmission:wire>, <projectred-transmission:wire>, <projectred-transmission:wire>], 
 		[<immersiveengineering:material:22>, <immersiveengineering:material>, <immersiveengineering:material:22>], 
 		[<projectred-transmission:wire>, <projectred-transmission:wire>, <projectred-transmission:wire>]
 	]);
-	recipes.addShaped("ia_ie_redstone_coil2", <immersiveengineering:wirecoil:5> * 4, [
+	recipes.addShaped("ia_ie_redstone_coil3", <immersiveengineering:wirecoil:5> * 4, [
 		[<projectred-transmission:wire>, <contenttweaker:algae_string>, <projectred-transmission:wire>], 
 		[<immersiveengineering:material:22>, <immersiveengineering:material>, <immersiveengineering:material:22>], 
 		[<projectred-transmission:wire>, <contenttweaker:algae_string>, <projectred-transmission:wire>]
@@ -456,6 +461,15 @@ mods.enderio.AlloySmelter.addRecipe(<immersiveengineering:graphite_electrode>.wi
 		[null, <immersiveengineering:material:22>, null], 
 		[<immersiveengineering:stone_decoration:8>, <immersiveengineering:material:22>, <immersiveengineering:stone_decoration:8>],
 		[<immersiveengineering:stone_decoration:8>, <immersiveengineering:material:22>, <immersiveengineering:stone_decoration:8>]
+	]);
+
+
+
+
+	recipes.remove(<immersiveengineering:connector:12>);
+	recipes.addShaped("ie_redstone_relay", <immersiveengineering:connector:12> * 4, [
+		[null, <thermalfoundation:material:161>, null], 
+		[<minecraft:hardened_clay>, <projectred-core:resource_item:103>, <minecraft:hardened_clay>]
 	]);
 }
 

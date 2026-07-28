@@ -1,0 +1,19 @@
+{
+	x: 7.0d,
+	y: -1.0d,
+	dependencies: [
+		"e54ea09d"
+	],
+	tasks: [{
+		uid: "6fcd245f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stoneleaf"
+		}]
+	}],
+	rewards: [{
+		uid: "f130c957",
+		type: "item",
+		item: "contenttweaker:stoneleaf_clump"
+	}]
+}

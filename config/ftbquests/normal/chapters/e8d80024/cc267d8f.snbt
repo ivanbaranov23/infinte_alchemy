@@ -1,6 +1,9 @@
 {
 	x: 11.0d,
 	y: 4.0d,
+	text: [
+		"The same capacity as normal pool but fancier."
+	],
 	dependencies: [
 		"64ba9272",
 		"28f244fc"

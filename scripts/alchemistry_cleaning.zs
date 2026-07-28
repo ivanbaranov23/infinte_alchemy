@@ -30,6 +30,8 @@ for item in [
 
     <minecraft:magma>,
 
+    <minecraft:blaze_powder>,
+
     <minecraft:ender_pearl>,
     <minecraft:purpur_block>,
     <minecraft:purpur_pillar>,

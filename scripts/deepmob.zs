@@ -3,13 +3,13 @@
 recipes.remove(<deepmoblearning:soot_covered_plate>);
 mods.enderio.AlloySmelter.addRecipe(<deepmoblearning:soot_covered_plate>, 
     [<moreplates:refined_obsidian_plate> * 4, <contenttweaker:soot> * 12, <contenttweaker:bedrockium_alloy_plate>], 
-    8000
+    80000
 );
 scripts.content_machines.addAssemblerRecipe(
 	[<deepmoblearning:soot_covered_plate> * 2],
 	[<moreplates:refined_obsidian_plate> * 4, <contenttweaker:soot> * 12, <contenttweaker:bedrockium_alloy_plate>, <contenttweaker:awaken_witherite>], 
 	<liquid:tignalum> * (144 * 8),
-	20, 1000
+	20, 10000
 );
 
 recipes.remove(<deepmoblearning:polymer_clay>);

@@ -91,7 +91,7 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
     Pyre.addRecipe("ia_dewgonia",
         <roots:dewgonia> * 4,
         [
-            <natura:materials>, <minecraft:water_bucket>, <minecraft:waterlily>, <projectred-core:resource_item:105>,
+            <natura:materials>, <minecraft:water_bucket>, <minecraft:waterlily>, <enderio:item_material:32>,
             <contenttweaker:potato_block2> | <mysticalcreations:bilim_essence>
         ]
     );

@@ -54,6 +54,14 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
         <alchemistry:compound:209>, <alchemistry:compound:203>
     ]);
     <contenttweaker:ammonium_chloride>.addTooltip("NH₄Cl");
+
+    //nitromethane
+    addChemicalRecipe(
+        [<contenttweaker:nitromethane>, <alchemistry:compound:6>, <alchemistry:compound:220>],
+        [<contenttweaker:chloroacetic_acid>, <alchemistry:compound:229>],
+        []
+    );
+    
 }
 {//noble
     Dissolver.addRecipe(<contenttweaker:noble_gases_ingot>, false, 2,
@@ -346,7 +354,13 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
 }
 {//acet
     //acetic acid
+    addChemicalRecipe(
+        [<contenttweaker:acetic_acid>],
+        [<alchemistry:compound:205>, <alchemistry:element:8> * 2],
+        [<extendedcrafting:singularity_custom:30>]
+    );
     addFluidConv(<contenttweaker:acetic_acid>, <liquid:acetic_acid>);
+    <contenttweaker:acetic_acid>.addTooltip("H₃C-COOH");
 
     //acetone
     
@@ -370,7 +384,7 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
     addChemicalRecipe(
         [<contenttweaker:ethenone>, <alchemistry:compound:7>],
         [<contenttweaker:acetic_acid>],
-        []//todo triethyl phosphate
+        [<contenttweaker:triethyl_phosphate>]//todo triethyl phosphate
     );
     <contenttweaker:ethenone>.addTooltip("H₂C=C=O");
     
@@ -380,6 +394,8 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         [<contenttweaker:ethenone>, <contenttweaker:acetic_acid>],
         []
     );
+    <contenttweaker:ac2o>.addTooltip("(CH₃CO)₂O");
+    <contenttweaker:ac2o>.addTooltip("Ac₂O");
 
     addChemicalRecipe(
         [<contenttweaker:acac>],
@@ -393,6 +409,17 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
         [<alchemistry:compound:26>, <alchemistry:element:8>],
         [<extendedcrafting:singularity:22>]
     );
+    <contenttweaker:acetaldehyde>.addTooltip("ClH₂C-COOH");
+
+    //chloroacetic_acid
+    addChemicalRecipe(
+        [<contenttweaker:chloroacetic_acid>, <alchemistry:compound:203>],
+        [<contenttweaker:acetic_acid>, <alchemistry:element:17> * 2],
+        [<contenttweaker:ac2o>]
+    );
+    <contenttweaker:chloroacetic_acid>.addTooltip("ClH₂C-COOH");
+
+    //
 }
 {//nitriles
     addChemicalRecipe(

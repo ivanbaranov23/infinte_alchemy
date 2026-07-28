@@ -1,0 +1,23 @@
+{
+	x: -1.0d,
+	y: -0.5d,
+	text: [
+		"Sigil of storm can be used to summon lightning."
+	],
+	dependencies: [
+		"1dee57dd"
+	],
+	optional: true,
+	tasks: [{
+		uid: "0fde2920",
+		type: "item",
+		items: [{
+			item: "animus:component 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "1f94a04c",
+		type: "item",
+		item: "animus:component 1 4"
+	}]
+}

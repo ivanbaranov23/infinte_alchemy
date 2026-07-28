@@ -1,0 +1,20 @@
+{
+	x: -5.0d,
+	y: -0.5d,
+	dependencies: [
+		"1dee57dd"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b67d5092",
+		type: "item",
+		items: [{
+			item: "animus:component"
+		}]
+	}],
+	rewards: [{
+		uid: "43915db9",
+		type: "item",
+		item: "animus:component"
+	}]
+}

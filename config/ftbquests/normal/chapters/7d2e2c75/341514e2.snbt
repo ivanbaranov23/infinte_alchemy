@@ -1,14 +1,6 @@
 {
 	title: "Deuterium",
-	icon: {
-		id: "aeadditions:pattern.fluid",
-		tag: {
-			Fluid: {
-				FluidName: "liquiddeuterium",
-				Amount: 1000
-			}
-		}
-	},
+	icon: "alchemistry:element 1 1",
 	x: 7.0d,
 	y: 7.0d,
 	text: [

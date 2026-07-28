@@ -12,7 +12,7 @@
 		uid: "ce9c8671",
 		type: "item",
 		items: [{
-			item: "aeadditions:gas_interface"
+			item: "mekeng:gas_interface"
 		}]
 	}]
 }

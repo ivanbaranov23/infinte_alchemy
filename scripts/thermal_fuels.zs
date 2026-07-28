@@ -54,13 +54,14 @@ function DieselHandler_addFuel(fuel as ILiquidStack, time as int){
     DieselHandler_addFuel(<liquid:enriched_diesel2>, 1000);
     DieselHandler_addFuel(<liquid:nuit_fuel>, 500);
 
-	
+	DieselHandler_addFuel(<liquid:algal_fuel>, 500);
 }
 
 {//NumisticDynamo
     NumisticDynamo.addGemFuel(<erebus:materials:11>, 250*1000);
 
     NumisticDynamo.addGemFuel(<contenttweaker:malachite_vase>, 16 * 1000 * 1000);
+    NumisticDynamo.addGemFuel(<contenttweaker:trollsteinn_gem>, 4 * 1000 * 1000);
     NumisticDynamo.addGemFuel(<contenttweaker:gem_steel_ingot>, 1000*1000*1000);
 
     NumisticDynamo.addGemFuel(<aether_legacy:ambrosium_shard>, 350*1000);
@@ -107,6 +108,7 @@ function DieselHandler_addFuel(fuel as ILiquidStack, time as int){
     //addFuel(ILiquidStack fuel, int powerPerCycleRF, int totalBurnTime);
     CombustionGen.addFuel(<liquid:enriched_diesel1>, 25 * 1000, 120 * 1000);
     CombustionGen.addFuel(<liquid:nuit_fuel>, 25 * 1000, 120 * 1000);
+    CombustionGen.addFuel(<liquid:algal_fuel>, 25 * 1000, 120 * 1000);
     CombustionGen.addFuel(<liquid:sunnarium_base>, 20 * 1000, 60 * 1000);
     CombustionGen.addFuel(<liquid:flowers_depleted>, 500 * 1000, 30 * 1000);
     //expected rf

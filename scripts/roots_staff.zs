@@ -170,6 +170,20 @@ function addStaffFinish(staff as IItemStack){
     addStaffFinish(<contenttweaker:staffwood_flower>);
 }
 
+{//meteorite
+    recipes.addShaped("ia_staffwood_meteorite", <contenttweaker:staffwood_meteorite>, [
+        [null, <appliedenergistics2:sky_compass>, <extrautils2:compressedcobblestone:3>], 
+        [null, <thermalinnovation:magnet:4>.withTag({Energy: 600000}), <appliedenergistics2:sky_compass>], 
+        [<contenttweaker:staffwood>, null, null]
+    ]);
+
+    scripts.jei.addJEIhint(
+        [], [],
+        [<contenttweaker:staffwood_meteorite>, <botania:cosmetic:32>.withDisplayName("Right Click")],
+        [<taiga:meteoritecobble_block>]
+    );
+    addStaffFinish(<contenttweaker:staffwood_meteorite>);
+}
 
 {//fire
     addStaffHint(<contenttweaker:forest_clay_block>, <contenttweaker:staffwood_fire>, <contenttweaker:forest_fire>, true);

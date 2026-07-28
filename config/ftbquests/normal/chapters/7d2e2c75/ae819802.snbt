@@ -8,14 +8,6 @@
 		uid: "c6be6d5d",
 		type: "checkmark",
 		title: "Oxygen and Hydrogen",
-		icon: {
-			id: "aeadditions:pattern.fluid",
-			tag: {
-				Fluid: {
-					FluidName: "ec.internal.oxygen",
-					Amount: 1000
-				}
-			}
-		}
+		icon: "alchemistry:element 1 8"
 	}]
 }

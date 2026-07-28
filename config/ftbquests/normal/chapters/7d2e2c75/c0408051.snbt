@@ -9,17 +9,6 @@
 		uid: "0f564eaf",
 		type: "checkmark",
 		title: "D-T fuel",
-		icon: {
-			id: "aeadditions:pattern.fluid",
-			tag: {
-				Fluid: {
-					FluidName: "liquidfusionfuel",
-					Amount: 1000
-				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
-			}
-		}
+		icon: "alchemistry:element 1 1"
 	}]
 }

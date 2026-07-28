@@ -67,6 +67,11 @@ recipes.addShaped("ia_item_soul_vial", <enderio:item_soul_vial>, [
 	[<appliedenergistics2:quartz_vibrant_glass>, <contenttweaker:medical_alloy_gear>, <appliedenergistics2:quartz_vibrant_glass>], 
 	[<appliedenergistics2:quartz_vibrant_glass>, <extendedcrafting:singularity_custom:3>, <appliedenergistics2:quartz_vibrant_glass>]
 ]);
+recipes.addShaped("ia_item_soul_vial2", <enderio:item_soul_vial> * 4, [
+	[null, <ore:blockSoularium>, null], 
+	[<appliedenergistics2:quartz_vibrant_glass>, <animus:component:1>, <appliedenergistics2:quartz_vibrant_glass>], 
+	[<appliedenergistics2:quartz_vibrant_glass>, <animus:component:1>, <appliedenergistics2:quartz_vibrant_glass>]
+]);
 
 recipes.remove(<enderio:item_material:22>);
 recipes.addShaped("ia_conduit_binder_dust", <enderio:item_material:22> * 8, [
@@ -127,16 +132,16 @@ mods.enderio.SoulBinder.addRecipe(<contenttweaker:guarding_crystal>, <actuallyad
 	);
 
 	recipes.remove(<enderio:item_material:52>);
-	recipes.addShaped("soul_dye_base", <contenttweaker:soul_dye_base> * 6, 
+	recipes.addShaped("soul_dye_base", <contenttweaker:soul_dye_base> * 8, 
 		[
-			[<enderio:item_material:50>, <appliedenergistics2:material:3>, <enderio:item_material:49>],
+			[<enderio:item_material:50>, <contenttweaker:rhodium_dust> | <contenttweaker:trollsteinn>, <enderio:item_material:49>],
 			[<appliedenergistics2:material:3>, <contenttweaker:delicate_amber>, <appliedenergistics2:material:3>],
-			[<enderio:item_material:49>, <appliedenergistics2:material:3>, <enderio:item_material:50>]
+			[<enderio:item_material:49>, <contenttweaker:rhodium_dust> | <contenttweaker:trollsteinn>, <enderio:item_material:50>]
 		]
 	);
 	mods.thermalexpansion.Transposer.addFillRecipe(
         <enderio:item_material:52> * 2, <contenttweaker:soul_dye_base>, 
-        <liquid:soularium> * 216, 
+        <liquid:soularium> * 288, 
         2000
     );
 	recipes.remove(<enderio:item_material:67>);

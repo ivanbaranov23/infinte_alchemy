@@ -1,0 +1,14 @@
+{
+	x: -1.0d,
+	y: 5.0d,
+	text: [
+		"Put on top of 2 iron bars to summon a blaze."
+	],
+	tasks: [{
+		uid: "69b67950",
+		type: "item",
+		items: [{
+			item: "botania:felpumpkin"
+		}]
+	}]
+}

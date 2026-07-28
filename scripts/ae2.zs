@@ -124,14 +124,11 @@ function add_ae2_process_rec(output as IItemStack, input as IItemStack, topInput
 
 	//inlay
 	Inscriber.addRecipe(<contenttweaker:redstone_inlay> * 4, <moreplates:red_alloy_plate>, false, <immersiveengineering:wirecoil:5>, <immersiveengineering:wirecoil:5>);
-	//Inscriber.addRecipe(<contenttweaker:neuron_inlay>, <contenttweaker:basic_neuron>, false, <contenttweaker:redstone_inlay>, <contenttweaker:redstone_inlay>);
 	recipes.addShaped("ia_neuron_inlay", <contenttweaker:neuron_inlay>, [
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:redstone_inlay>, <immersiveengineering:wirecoil:5>],
 		[<contenttweaker:redstone_inlay>, <contenttweaker:basic_neuron>, <contenttweaker:redstone_inlay>],
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:redstone_inlay>, <immersiveengineering:wirecoil:5>]
 	]);
-	
-	//Inscriber.addRecipe(<contenttweaker:neuron2_inlay>, <contenttweaker:neuron>, false, <contenttweaker:neuron_inlay>, <contenttweaker:neuron_inlay>);
 	recipes.addShaped("ia_neuron_inlay2", <contenttweaker:neuron2_inlay>, [
 		[<moreplates:redstone_alloy_plate>, <contenttweaker:neuron_inlay>, <moreplates:redstone_alloy_plate>],
 		[<contenttweaker:neuron_inlay>, <contenttweaker:neuron>, <contenttweaker:neuron_inlay>],
@@ -254,7 +251,7 @@ function add_ae2_process_rec(output as IItemStack, input as IItemStack, topInput
 			<liquid:fluix_steel> * 144, 5, 1000
 		);
 
-		add_ae2_process_rec(<contenttweaker:peridotite_processor>, <contenttweaker:redstone_inlay>, <contenttweaker:peridotite_circuit>, <contenttweaker:fluxed_processor>);
+		add_ae2_process_rec(<contenttweaker:peridotite_processor>, <contenttweaker:neuron_inlay>, <contenttweaker:peridotite_circuit>, <contenttweaker:fluxed_processor>);
 
 	}
 	
@@ -501,18 +498,19 @@ function add_ae2_process_rec(output as IItemStack, input as IItemStack, topInput
 			[<contenttweaker:watertight_steel_plate>, <appliedenergistics2:material:44>, <contenttweaker:watertight_steel_plate>]
 		]);
 
-		recipes.remove(<aeadditions:gas_interface>);
-		recipes.addShaped("ia_ae2_gas_interface1", <aeadditions:gas_interface> * 2, [
+		
+		recipes.remove(<mekeng:gas_interface>);
+		recipes.addShaped("ia_ae2_gas_interface1", <mekeng:gas_interface> * 2, [
 			[<moreplates:osgloglas_plate>, <appliedenergistics2:material:43>, <moreplates:osgloglas_plate>], 
 			[<contenttweaker:gas_processor>, <thermalexpansion:frame>, <contenttweaker:gas_processor>], 
 			[<moreplates:osgloglas_plate>, <appliedenergistics2:material:44>, <moreplates:osgloglas_plate>]
 		]);
-		recipes.addShaped("ia_ae2_gas_interface2", <aeadditions:gas_interface> * 4, [
+		recipes.addShaped("ia_ae2_gas_interface2", <mekeng:gas_interface> * 4, [
 			[<moreplates:osgloglas_plate>, <appliedenergistics2:material:43>, <moreplates:osgloglas_plate>], 
 			[<contenttweaker:osgloridium_processor>, <thermalexpansion:frame>, <contenttweaker:osgloridium_processor>], 
 			[<moreplates:osgloglas_plate>, <appliedenergistics2:material:44>, <moreplates:osgloglas_plate>]
 		]);
-		recipes.addShaped("ia_ae2_gas_interface3", <aeadditions:gas_interface> * 8, [
+		recipes.addShaped("ia_ae2_gas_interface3", <mekeng:gas_interface> * 8, [
 			[<moreplates:osgloglas_plate>, <appliedenergistics2:material:43>, <moreplates:osgloglas_plate>], 
 			[<contenttweaker:palladium_processor>, <thermalexpansion:frame>, <contenttweaker:palladium_processor>], 
 			[<moreplates:osgloglas_plate>, <appliedenergistics2:material:44>, <moreplates:osgloglas_plate>]
@@ -551,7 +549,7 @@ function add_ae2_process_rec(output as IItemStack, input as IItemStack, topInput
 		recipes.remove(<nae2:coprocessor_16x>);
 		recipes.addShaped("ia_coprocessor_16x", <nae2:coprocessor_16x>, [
 			[<appliedenergistics2:material:6>, <contenttweaker:peridotite_processor>, <appliedenergistics2:material:6>], 
-			[<nae2:coprocessor_4x>, <aeadditions:storage.component>, <nae2:coprocessor_4x>], 
+			[<nae2:coprocessor_4x>, <nae2:material:1>, <nae2:coprocessor_4x>], 
 			[<appliedenergistics2:material:6>, <nae2:coprocessor_4x>, <appliedenergistics2:material:6>]
 		]);
 	}
@@ -592,26 +590,24 @@ recipes.addShaped("ia_pattern", <appliedenergistics2:material:52> * 4, [
 			<appliedenergistics2:material:36>,
 			<appliedenergistics2:material:37>,
 			<appliedenergistics2:material:38>,
-			<aeadditions:storage.component>,
-			<aeadditions:storage.component:1>,
-			<aeadditions:storage.component:2>,
-			<aeadditions:storage.component:3>
+			<nae2:material:1>,
+			<nae2:material:2>,
+			<nae2:material:3>,
+			<nae2:material:4>
 		], [//fluid
 			<appliedenergistics2:material:54>,
 			<appliedenergistics2:material:55>,
 			<appliedenergistics2:material:56>,
 			<appliedenergistics2:material:57>,
-			<aeadditions:storage.component:4>,
-			<aeadditions:storage.component:5>,
-			<aeadditions:storage.component:6>
+			<nae2:material:5>,
+			<nae2:material:6>,
+			<nae2:material:7>,
+			<nae2:material:8>
 		], [//gas
-			<aeadditions:storage.component:7>,
-			<aeadditions:storage.component:8>,
-			<aeadditions:storage.component:9>,
-			<aeadditions:storage.component:10>,
-			<aeadditions:storage.component:11>,
-			<aeadditions:storage.component:12>,
-			<aeadditions:storage.component:13>
+			<mekeng:gas_core_1k>,
+			<mekeng:gas_core_4k>,
+			<mekeng:gas_core_16k>,
+			<mekeng:gas_core_64k>
 		]
 	];
 	var corner_item as IItemStack[] = [
@@ -690,22 +686,8 @@ recipes.addShaped("ia_pattern", <appliedenergistics2:material:52> * 4, [
 
 	}
 }
-{//nae fix
-	var procs as IItemStack[IItemStack] = {
-		<nae2:material:1>: <aeadditions:storage.component>,
-		<nae2:material:2>: <aeadditions:storage.component:1>,
-		<nae2:material:3>: <aeadditions:storage.component:2>,
-		<nae2:material:4>: <aeadditions:storage.component:3>,
-		<nae2:material:5>: <aeadditions:storage.component:4>,
-		<nae2:material:6>: <aeadditions:storage.component:5>,
-		<nae2:material:7>: <aeadditions:storage.component:6>
-	};
-	for proc in procs {
-		recipes.remove(proc);
-		recipes.addShapeless("ia_nae_to_aea" ~ proc.name, procs[proc], [proc]);
-		recipes.addShapeless("ia_aea_to_nae" ~ proc.name, proc, [procs[proc]]);
-	}
-}
+
+
 recipes.remove(<nae2:material>);
 recipes.addShaped("ia_void_cell", <nae2:material>, [
 	[<appliedenergistics2:material:44>, <extrautils2:trashcan>, <appliedenergistics2:material:44>], 

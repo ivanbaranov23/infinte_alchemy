@@ -461,6 +461,12 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         ], null,
         [<minecraft:diamond>], null, ""
     );
+
+
+    addRootsSummoning(<entity:mowziesmobs:foliaath>, [
+        <mysticalagriculture:storage>, <contenttweaker:mobbium>, <contenttweaker:flower_steel_block>
+    ]);
+    addEggHint("mowziesmobs:foliaath", [<mowziesmobs:foliaath_seed>]);
 }
 {///fish undead
     //penghoul

@@ -9,7 +9,7 @@
 		uid: "78b0595b",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.component 1 10"
+			item: "mekeng:gas_core_64k"
 		}]
 	}]
 }

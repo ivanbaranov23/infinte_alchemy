@@ -345,18 +345,18 @@ recipes.addShaped("ia_double_compressed_crafting_table", <avaritia:double_compre
 
 recipes.remove(<extendedcrafting:compressor>);
 mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor>, [
-	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>], 
+	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <nae2:material:1>, <extendedcrafting:material:14>, <extendedcrafting:storage>], 
 	[<extendedcrafting:singularity_custom:67>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <extendedcrafting:singularity_custom:67>], 
 	[<extendedcrafting:singularity_custom:67>, <modularmachinery:explosion_compressor_controller>, <extendedcrafting:frame>, <modularmachinery:explosion_compressor_controller>, <extendedcrafting:singularity_custom:67>], 
 	[<extendedcrafting:singularity_custom:67>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <extendedcrafting:singularity_custom:67>], 
-	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>]
+	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <nae2:material:1>, <extendedcrafting:material:14>, <extendedcrafting:storage>]
 ]);
 mods.extendedcrafting.TableCrafting.addShaped(0, <extendedcrafting:compressor> * 2, [
-	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>], 
+	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <nae2:material:1>, <extendedcrafting:material:14>, <extendedcrafting:storage>], 
 	[<bloodmagic:component:14>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <bloodmagic:component:14>], 
 	[<bloodmagic:component:14>, <modularmachinery:explosion_compressor_controller>, <extendedcrafting:frame>, <modularmachinery:explosion_compressor_controller>, <bloodmagic:component:14>], 
 	[<bloodmagic:component:14>, <mekanism:machineblock:1>, <avaritia:double_compressed_crafting_table>, <mekanism:machineblock:1>, <bloodmagic:component:14>], 
-	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <aeadditions:storage.component>, <extendedcrafting:material:14>, <extendedcrafting:storage>]
+	[<extendedcrafting:storage>, <extendedcrafting:material:14>, <nae2:material:1>, <extendedcrafting:material:14>, <extendedcrafting:storage>]
 ]);
 
 

@@ -1,0 +1,15 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	dependencies: [
+		"dfcf969f"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2927b24b",
+		type: "item",
+		items: [{
+			item: "enderio:block_killer_joe"
+		}]
+	}]
+}

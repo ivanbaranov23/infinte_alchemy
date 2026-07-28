@@ -38,13 +38,13 @@ openblocks:explosive
 openblocks:last_stand
 openblocks:flim_flam
 projectred-expansion:electric_efficiency
-endercore:autosmelt
 endercore:xpboost
-enderio:soulbound
+endercore:autosmelt
 enderio:witherweapon
-enderio:repellent
 enderio:witherarrow
 enderio:shimmer
+enderio:soulbound
+enderio:repellent
 exnihilocreatio:sieve_efficiency
 exnihilocreatio:sieve_fortune
 exnihilocreatio:sieve_luck_of_the_sea

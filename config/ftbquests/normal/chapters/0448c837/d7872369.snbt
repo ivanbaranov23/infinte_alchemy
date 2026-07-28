@@ -1,0 +1,15 @@
+{
+	x: 8.0d,
+	y: 7.0d,
+	dependencies: [
+		"50183e13"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a8c16897",
+		type: "item",
+		items: [{
+			item: "modularmachinery:plankton_tank_controller"
+		}]
+	}]
+}

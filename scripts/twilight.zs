@@ -135,7 +135,9 @@ recipes.addShapeless("ia_zombie_scepter", <twilightforest:zombie_scepter>, [
 ]);
 
 
-//mods.jei.JEI.hideCategory("jei_uncrafting");
+//trollsteinn
+mods.prodigytech.magneticreassembler.addRecipe(<contenttweaker:trollsteinn>, <contenttweaker:trollsteinn_gem>);
+
 
 
 {//skip
@@ -145,10 +147,10 @@ recipes.addShapeless("ia_zombie_scepter", <twilightforest:zombie_scepter>, [
 	], 3000);
 	scripts.compact_distill.addCompactDistill(
 		[<liquid:vow_fire> * 20, <liquid:vow_ice> * 20, <liquid:vow_honor> * 20, <liquid:vow_death> * 20], 
-		[<twilightforest:borer_essence>, <twilightforest:torchberries>], 
+		[<twilightforest:borer_essence>, <twilightforest:torchberries>, <contenttweaker:trollsteinn>], 
 		<liquid:twilit_soup> * 100, 
 		4000, 20, 
-		[0.01, 0.1]
+		[0.01, 0.1, 0.01]
 	);
 
 	mods.alchemistry.Evaporator.addRecipe(
@@ -161,7 +163,7 @@ recipes.addShapeless("ia_zombie_scepter", <twilightforest:zombie_scepter>, [
 	);
 	mods.thermalexpansion.Transposer.addFillRecipe(
 		<twilightforest:armor_shard_cluster>, 
-		<twilightforest:armor_shard> * 4, <liquid:vow_honor> * 500, 
+		<twilightforest:armor_shard> * 3, <liquid:vow_honor> * 500, 
 		4000
 	);
 	mods.thermalexpansion.Transposer.addFillRecipe(

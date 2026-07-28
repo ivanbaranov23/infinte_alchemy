@@ -84,6 +84,12 @@ recipes.addShapeless(
     );
 
 }
+{//sugar
+    mods.alchemistry.Evaporator.addRecipe(<prodigytech:sugar_cube>, <liquid:sugary_solution> * 250);
+    mods.prodigytech.magneticreassembler.addRecipe(<quark:sugar_block>, <prodigytech:sugar_cube> * 9);
+    mods.prodigytech.magneticreassembler.addRecipe(<additionalcompression:dustsugar_compressed>, <prodigytech:sugar_cube> * 9);
+    mods.prodigytech.magneticreassembler.addRecipe(<additionalcompression:dustsugar_compressed:1>, <prodigytech:sugar_cube> * 64);
+}
 
 recipes.remove(<harvestcraft:cottoncandyitem>);
 Centrifuge.addRecipe(

@@ -5,7 +5,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.modularmachinery.RecipeBuilder;
 
 {//water
-    var rec = RecipeBuilder.newBuilder("water", "gas_column", 1000);
+    var rec = RecipeBuilder.newBuilder("water", "gas_column", 500);
     rec.addEnergyPerTickInput(320);
 
 	rec.addGasOutput(<gas:hydrogen> * 20000);

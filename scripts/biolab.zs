@@ -171,6 +171,39 @@ addBiolabRecipe(
         30, 500, 250
     );
 }
+{//grown biomass -> plankton
+    addBiolabRecipe(
+        [<contenttweaker:biocell_plankton>], 
+        [
+            <contenttweaker:grown_biomass_cell>,
+            <contenttweaker:algae_string> * 16,
+
+
+        ], [
+            <liquid:ocean_water> * 1000,
+            <liquid:biotite> * 1000
+        ], [],
+        10, 500, 400
+    );
+    addBiolabRecipe(
+        [<contenttweaker:biocell_plankton>], 
+        [
+            <contenttweaker:grown_biomass_cell>,
+            <contenttweaker:algae_string> * 24,
+
+
+        ], [
+            <liquid:ocean_water> * 2000,
+            <liquid:refined_biofuel> * 1000
+        ], [],
+        10, 500, 400
+    );
+    /*Transposer.addExtractRecipe(
+        <liquid:plankton> * 1000,
+        <contenttweaker:biocell_plankton>, 10000,
+        <contenttweaker:dirty_biocell>
+    );*/
+}
 {//biomats
     {//1
         addBiolabRecipe(

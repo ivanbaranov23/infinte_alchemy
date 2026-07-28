@@ -1,7 +1,7 @@
 {
 	icon: "modularmachinery:rune_cracker_controller",
-	x: 18.0d,
-	y: 3.0d,
+	x: 19.0d,
+	y: 2.0d,
 	dependencies: [
 		"70670ef2"
 	],

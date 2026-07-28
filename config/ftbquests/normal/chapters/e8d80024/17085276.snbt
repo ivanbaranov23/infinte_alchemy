@@ -1,0 +1,17 @@
+{
+	x: 14.0d,
+	y: 5.0d,
+	text: [
+		"Costs 2 mil mana, meaning can only be made in a bigger mana pool than normal."
+	],
+	dependencies: [
+		"6c1559c4"
+	],
+	tasks: [{
+		uid: "cd13222f",
+		type: "item",
+		items: [{
+			item: "contenttweaker:mana_charged_ingot"
+		}]
+	}]
+}

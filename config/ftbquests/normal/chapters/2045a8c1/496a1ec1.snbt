@@ -1,0 +1,19 @@
+{
+	x: 3.0d,
+	y: -1.0d,
+	dependencies: [
+		"dfe36bad"
+	],
+	tasks: [{
+		uid: "b22a0c25",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 23"
+		}]
+	}],
+	rewards: [{
+		uid: "2e0c405f",
+		type: "item",
+		item: "contenttweaker:vanadium_block"
+	}]
+}

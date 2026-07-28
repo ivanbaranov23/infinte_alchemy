@@ -200,7 +200,19 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
             ["fluorine", 1]
         ]
     );
-    
+    createCompound(229, "sodium_nitrile", 120, 190, 70,
+        [
+            ["sodium", 1],
+            ["nitrogen", 1],
+            ["oxygen", 2]
+        ]
+    );
+    createCompound(230, "phosphorus_pentoxide", 188, 1, 80,
+        [
+            ["phosphorus", 4],
+            ["oxygen", 10]
+        ]
+    );
 }
 
 {//metals

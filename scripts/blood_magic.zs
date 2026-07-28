@@ -111,7 +111,7 @@ function BloodAltar_addRecipe(output as IItemStack, input as IItemStack, minimum
 
 	//bloody sheetmetal
 	scripts.content_machines.addBioAssemblerRecipe(
-		[<contenttweaker:bloody_sheetmetal>], null,
+		[<contenttweaker:bloody_sheetmetal> * 4], null,
 		[
 			<contenttweaker:flesh_support>,
 			<contenttweaker:living_steel_sheetmetal>,
@@ -514,7 +514,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 
 	TartaricForge.removeRecipe([<bloodmagic:soul_gem:1>, <minecraft:diamond>, <ore:blockGold>.firstItem, <bloodmagic:slate:2>]);
 	TartaricForge.addRecipe(<bloodmagic:soul_gem:2>.withTag({}), [
-		<bloodmagic:soul_gem:1>, <bloodmagic:slate:2>, <contenttweaker:electricium>, <bloodmagic:component:18>
+		<bloodmagic:soul_gem:1>, <bloodmagic:slate:2>, <contenttweaker:electricium>, <bloodmagic:component:27>
 	], 256, 128);
 
 	TartaricForge.removeRecipe([<bloodmagic:soul_gem:2>, <bloodmagic:blood_shard>, <bloodmagic:item_demon_crystal>, <bloodmagic:slate:3>]);
@@ -681,6 +681,23 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		<twilightforest:tower_device>,
 		<extrautils2:compresseddirt:1>
 	], 320, 96);
+	//lightning
+	TartaricForge.removeRecipe([<minecraft:water_bucket>, <ore:blockSand>.firstItem, <minecraft:fishing_rod:*>, <minecraft:ghast_tear>]);
+	TartaricForge.addRecipe(<animus:component:4>, [
+		<moretcon:solidlightning>,
+		<contenttweaker:viking_metal>,
+		<enderio:item_material:18>,
+		<quark:rain_detector>
+	], 320, 96);
+	//builder
+	TartaricForge.removeRecipe([<minecraft:sugar>, <minecraft:crafting_table>, <minecraft:dispenser>, <minecraft:brick_block>]);
+	TartaricForge.addRecipe(<animus:component>, [
+		<extrautils2:itembuilderswand>,
+		<openblocks:builder_guide>,
+		<buildinggadgets:buildingtool>,
+		<actuallyadditions:block_phantom_placer>
+	], 320, 96);
+
 
 	//acid
 	TartaricForge.addRecipe(<contenttweaker:reagent_acid>, [

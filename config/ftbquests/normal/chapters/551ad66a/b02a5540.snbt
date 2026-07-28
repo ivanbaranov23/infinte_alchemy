@@ -5,8 +5,10 @@
 		"Melt the blaze in the smeltery to get a fuel hotter than lava"
 	],
 	dependencies: [
+		"8621e781",
 		"e31d4a5a"
 	],
+	dependency_requirement: "one_completed",
 	optional: true,
 	tasks: [{
 		uid: "ac0f2141",

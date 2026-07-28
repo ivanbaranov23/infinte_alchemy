@@ -60,6 +60,21 @@ import mods.modularmachinery.RecipeBuilder;
     rec.build();
 }
 
+{var rec = RecipeBuilder.newBuilder("cold_diesel", "cooling_tower", 20 * 60);
+
+    rec.addEnergyPerTickInput(25600);
+
+
+    rec.addOutput(<liquid:cold_diesel> * 20000);
+
+    
+    rec.addFluidInput(<liquid:enriched_diesel1> * 15000);
+    rec.addFluidInput(<liquid:cold_nitrogen> * 3000);
+    rec.addFluidInput(<liquid:kerosene> * 5000);
+                
+    rec.build();
+}
+
 
 
 {var rec = RecipeBuilder.newBuilder("carmin_tartarate", "cooling_tower", 20 * 60);

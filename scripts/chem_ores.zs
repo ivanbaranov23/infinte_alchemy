@@ -15,6 +15,28 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 );
 
 
+{//iron
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <mekanism:clump> * 32,
+            <contenttweaker:vanadium_dust> * 4 % 50,
+
+        ], null,
+        <liquid:blood> * 1000, <mekanism:shard> * 24,
+        <contenttweaker:research_sieving2>, 20, 500
+    );
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <mekanism:clump> * 32,
+            <contenttweaker:vanadium_dust> * 4 % 75,
+            <contenttweaker:molybdenum_dust> * 4 % 75,
+            <contenttweaker:tantalum_dust> * 4 % 25
+        ], null,
+        <liquid:evil_blood> * 50, <mekanism:shard> * 16,
+        <contenttweaker:research_sieving2>, 20, 5000
+    );
+}
+
 {//manyullyn
     {//pilkon
         mods.tconstruct.Alloy.addRecipe( <liquid:cobalt> * 144, [
@@ -553,6 +575,14 @@ scripts.content_machines.addFluidMixerRecipe(
     );
 }
 
+{//star metal
+    scripts.compact_distill.addCompactDistill(
+		[<liquid:astralsorcery.liquidstarlight> * 1000, <liquid:iridium> * 72],
+		[], <liquid:starmetal> * 72, 4 * 25000, 4, []
+	);
+    mods.thermalexpansion.Refinery.addRecipe(<liquid:astralsorcery.liquidstarlight> * 1000, null, <liquid:starmetal> * 72, 50000);
+
+}
 {//bastnasite
     mods.mekanism.reaction.addRecipe(
         <contenttweaker:bastnasite>, <liquid:desert_soup> * 500, <gas:chlorosulfonic> * 250, 

@@ -13,15 +13,10 @@
 		type: "checkmark",
 		title: "Brine (the fluid)",
 		icon: {
-			id: "aeadditions:pattern.fluid",
+			id: "forge:bucketfilled",
 			tag: {
-				Fluid: {
-					FluidName: "brine",
-					Amount: 1000
-				}
-			},
-			ForgeCaps: {
-				"astralsorcery:cap_item_amulet_holder": {}
+				FluidName: "brine",
+				Amount: 1000
 			}
 		}
 	}]

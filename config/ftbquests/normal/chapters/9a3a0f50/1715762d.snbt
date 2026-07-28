@@ -9,7 +9,7 @@
 		uid: "17bd8653",
 		type: "item",
 		items: [{
-			item: "aeadditions:storage.component 1 9"
+			item: "mekeng:gas_core_16k"
 		}]
 	}]
 }

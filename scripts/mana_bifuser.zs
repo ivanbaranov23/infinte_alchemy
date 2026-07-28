@@ -46,3 +46,18 @@ import mods.modularmachinery.RecipeBuilder;
 	rec.addManaInput(1000, false);
 	rec.build();
 }
+
+
+{
+    var rec = RecipeBuilder.newBuilder("rare_gem", "mana_bifuser", 20 * 10);
+
+	rec.addEnergyPerTickInput(20000000);
+
+	rec.addItemOutput(<contenttweaker:rare_gem>);
+
+	rec.addGasInput(<gas:rare_earth_slurry> * 10000);
+	rec.addInputs(<botania:manaresource:2>, <botania:manaresource:1>);
+
+	rec.addManaInput(10000, false);
+	rec.build();
+}

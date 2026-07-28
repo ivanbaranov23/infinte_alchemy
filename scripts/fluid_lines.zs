@@ -109,6 +109,15 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 		20, 400
 	);
 
+	//cold
+	scripts.compact_distill.addCompactDistill(
+		[<liquid:naphthalene> * 50, <liquid:ethylbenzene> * 50, <liquid:kerosene> * 50],
+		[<thermalfoundation:material:771>, <contenttweaker:ice_dust>],
+		<liquid:cold_crude> * 100, 20 * 250, 20,
+		[0.5, 0.03]
+	);
+	
+
 	//napalm
 	TEImbuer.addRecipe(<liquid:napalm> * 200, <thermalfoundation:material:68>, <liquid:gasoline> * 200, 4800);
 
@@ -119,6 +128,7 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 		[<contenttweaker:molybdenum_dust>], [1.0], 
 		15000
 	);
+
 
 }
 {//fish oil
@@ -705,45 +715,6 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 
 
 
-{//fuels
-	{//enriched diesel	
-		scripts.helper.addFluidMixerRecipe(
-			<liquid:enriched_diesel1> * 2000, 
-			<liquid:diesel> * 500, <liquid:kerosene> * 200, <prodigytech:inferno_fuel>, 
-			32, 20
-		);
-		scripts.helper.addFluidMixerRecipe(
-			<liquid:enriched_diesel1> * 2000, 
-			<liquid:biodiesel> * 500, <liquid:kerosene> * 200, <prodigytech:inferno_fuel>, 
-			32, 20
-		);
-		scripts.helper.addFluidMixerRecipe(
-			<liquid:enriched_diesel1> * 2000, 
-			<liquid:refined_biofuel> * 500, <liquid:kerosene> * 200, <prodigytech:inferno_fuel>, 
-			32, 20
-		);
-		scripts.helper.addFluidMixerRecipe(
-			<liquid:enriched_diesel1> * 2000, 
-			<liquid:refined_fuel> * 500, <liquid:kerosene> * 200, <prodigytech:inferno_fuel>, 
-			32, 20
-		);
-
-		scripts.content_machines.addAdvancedMixerRecipe(
-			[<prodigytech:inferno_fuel>],
-			[<liquid:enriched_diesel1> * 2000],
-			[<prodigytech:inferno_crystal>],
-			[<liquid:diesel> * 200, <liquid:biodiesel> * 200, <liquid:refined_biofuel> * 200,<liquid:refined_fuel> * 200],
-			20, 128
-		);
-	}
-
-
-	scripts.helper.addFluidMixerRecipe(
-		<liquid:nuit_fuel> * 2000,
-		<liquid:enriched_diesel1> * 500, <liquid:ethylbenzene> * 500, <contenttweaker:nuit_godshard>,
-		128, 80
-	);
-}
 
 
 
