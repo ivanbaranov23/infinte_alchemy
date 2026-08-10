@@ -89,8 +89,11 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
     //t4
     <ore:oreChrome>.add(<contenttweaker:chrome_ore>);
+    <ore:oreRhodium>.add(<contenttweaker:rhodium_ore>);
     <ore:oreNeodymium>.add(<contenttweaker:neodymium_ore>);
     <ore:oreArkenium>.remove(<moretcon:orearkenium>);
+    <ore:oreMolybdenum>.add(<contenttweaker:molybdenum_ore>);
+    <ore:oreArsenic>.add(<contenttweaker:arsenic_ore>);
 
     <ore:oreDraconium>.removeItems([<draconicevolution:draconium_ore:1>, <draconicevolution:draconium_ore:2>, <exnihilocreatio:item_ore_draconium:1>]);
 
@@ -98,6 +101,8 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
     <ore:oreOrichalcum>.add(<contenttweaker:orichalcum_ore>);
     <ore:oreAstralStarmetal>.add(<contenttweaker:starmetal_ore>);
     <ore:oreAstralStarmetal>.remove(<astralsorcery:blockcustomore:1>);
+
+    <ore:oreGermanium>.add(<contenttweaker:germanium_ore>);
 
     //dusts
     <ore:oreElectrotine>.add(<contenttweaker:electrotine_ore>);
@@ -177,15 +182,21 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
         //t4
         <ore:oreChunkChrome>.add(<contenttweaker:chrome_chunk>);
+        <ore:oreChunkRhodium>.add(<contenttweaker:rhodium_chunk>);
         <ore:oreChunkMithril>.add(<exnihilocreatio:item_ore_mithril:1>);
         <ore:oreChunkNeodymium>.add(<contenttweaker:neodymium_chunk>);
         <ore:oreChunkVibranium>.add(<contenttweaker:vibranium_chunk>);
+        <ore:oreChunkArsenic>.add(<contenttweaker:arsenic_chunk>);
+        <ore:oreChunkTantalum>.add(<contenttweaker:tantalum_chunk>);
         
         //t5
         <ore:oreChunkPalladium>.add(<contenttweaker:palladium_chunk>);
         <ore:oreChunkDraconium>.add(<exnihilocreatio:item_ore_draconium:1>);
         <ore:oreChunkUru>.add(<contenttweaker:uru_chunk>);
         <ore:oreChunkAbyssum>.add(<contenttweaker:abyssum_chunk>);
+        <ore:oreChunkGermanium>.add(<contenttweaker:germanium_chunk>);
+        <ore:oreChunkNiobium>.add(<contenttweaker:niobium_chunk>);
+        <ore:oreChunkBeryllium>.add(<contenttweaker:beryllium_chunk>);
 
         //t6
         <ore:oreChunkOrichalcum>.add(<contenttweaker:orichalcum_chunk>);
@@ -194,10 +205,15 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
     {//dense
         <ore:denseOreIron>.add(<densemetals:dense_iron_ore>);
-
+        <ore:denseOreCopper>.add(<densemetals:dense_copper_ore>);
+        <ore:denseOreTin>.add(<densemetals:dense_tin_ore>);
         <ore:denseOreNickel>.add(<densemetals:dense_nickel_ore>);
+        <ore:denseOreAluminum>.add(<densemetals:dense_aluminum_ore>);
+        <ore:denseOreZinc>.add(<densemetals:dense_zinc_ore>);
 
+        <ore:denseOreGold>.add(<densemetals:dense_gold_ore>);
         <ore:denseOreSilver>.add(<densemetals:dense_silver_ore>);
+        <ore:denseOreLead>.add(<densemetals:dense_lead_ore>);
 
         <ore:denseOreRedstone>.add(<densemetals:dense_redstone_ore>);
         <ore:denseOreElectrotine>.add(<contenttweaker:electrotine_ore_dense>);
@@ -213,12 +229,22 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
     <ore:oreOxideNickel>.add(<immersiveengineering:ore:4>);
 
+    <ore:oreFlolit>.add(<contenttweaker:flolit_ore>);
+
     <ore:oreStoneleaf>.add(<contenttweaker:stoneleaf_ore>);
+
+    <ore:oreBarite>.add(<contenttweaker:barite_ore>);
+    <ore:oreStrontium>.add(<contenttweaker:strontium_chunk>);
+    <ore:oreTantalum>.add(<contenttweaker:tantalite_ore>);
+    <ore:oreTN>.add(<contenttweaker:tantalum_ore>);
+    <ore:dustTN>.add(<contenttweaker:tantalum_ore_dust>);
 
     <ore:oreLifeEssence>.add(<contenttweaker:life_essence_ore>);
     <ore:oreVitriumTerrasteel>.add(<contenttweaker:terrasteel_ore>);
 
     <ore:oreSpaceSilver>.add(<contenttweaker:argyrodite_ore>);
+    <ore:oreSpaceLead>.add(<contenttweaker:rhodplumsite_space_ore>);
+
     <ore:oreMoissanite>.add(<contenttweaker:moissanite_ore>);
     <ore:oreXenotime>.add(<contenttweaker:xenotime_ore>);
 
@@ -236,6 +262,8 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
 
 
+<ore:dustBarite>.add(<contenttweaker:barite_dust>);
+
 
 //alchemistry
 <ore:dustGermanium>.add(<contenttweaker:germanium_dust>);
@@ -244,7 +272,7 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 <ore:dustMolybdenum>.add(<contenttweaker:molybdenum_dust>);
 <ore:dustRhodium>.add(<contenttweaker:rhodium_dust>);
 <ore:dustCesium>.add(<contenttweaker:cesium_dust>);
-
+<ore:dustNiobium>.add(<contenttweaker:niobium_dust>);
 <ore:dustCadmium>.add(<contenttweaker:cadmium>);
 <ore:dustAntimony>.add(<contenttweaker:antimony_dust>);
 <ore:dustScandium>.add(<contenttweaker:scandium_dust>);

@@ -1,0 +1,18 @@
+{
+	x: 11.5d,
+	y: 7.0d,
+	text: [
+		"Space silver with some germanium on the side"
+	],
+	dependencies: [
+		"9fe73973"
+	],
+	optional: true,
+	tasks: [{
+		uid: "5a2f7799",
+		type: "item",
+		items: [{
+			item: "contenttweaker:argyrodite_ore"
+		}]
+	}]
+}

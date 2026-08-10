@@ -6,6 +6,7 @@
 		""
 	],
 	dependencies: [
+		"2cee9716",
 		"c1ca8eec"
 	],
 	tasks: [{

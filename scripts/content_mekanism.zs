@@ -107,7 +107,6 @@ addGas("smart2", "96d766", false);
 {
     var explosion_stone_glue = GasFactory.createGas("explosion_stone_glue");
     explosion_stone_glue.setColorize(false);
-    //gas.setColor(Color.fromHex(color).getIntColor());
     explosion_stone_glue.setNeedFluid(false);
     explosion_stone_glue.setIcon("blocks/explosion_stone_glue");
     explosion_stone_glue.setIconFlowing("blocks/explosion_stone_glue");
@@ -122,10 +121,18 @@ function addMetalGas(name as string, color as string){
     addGas(name, color, false);
     addGas("clean" ~ name, color, false);
 }
+addMetalGas("germanium", "68acff");
+addMetalGas("arsenic", "3e914c");
+addMetalGas("molybdenum", "270030");
+addMetalGas("niobium", "021dff");
+addMetalGas("tantalum", "6c8e6e");
 addMetalGas("chrome", "c2abb0");
+addMetalGas("rhodium", "ff0050");
 addMetalGas("neodymium", "d34aa0");
-addMetalGas("arkenium", "333139");
 addMetalGas("gallium", "b5ceea");
+
+addMetalGas("arkenium", "333139");
+
 addMetalGas("death_metal", "330d39");
 addMetalGas("kikeridan", "84cc6e");
 

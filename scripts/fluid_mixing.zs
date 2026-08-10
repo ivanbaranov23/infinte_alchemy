@@ -85,6 +85,12 @@ FITweaker.addRecipe(<liquid:lava>, <liquid:astralsorcery.liquidstarlight>, <bloc
 FITweaker.addRecipe(<liquid:sand>, <liquid:astralsorcery.liquidstarlight>, <blockstate:biomesoplenty:white_sand>);
 
 
+//nether
+FITweaker.addRecipe(<liquid:liquidfusionlava>, <liquid:water>, <blockstate:minecraft:netherrack>);
+FITweaker.addRecipe(<liquid:liquidfusionlava>, <liquid:sand>, <blockstate:mysticalagriculture:soulstone:variant=smooth>);
+
+
+
 {//research
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:liquifiedsouls>, <blockstate:netherendingores:ore_other_1:blocks=overworld_quartz_ore>);
 

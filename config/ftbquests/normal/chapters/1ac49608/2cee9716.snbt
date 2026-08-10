@@ -1,0 +1,16 @@
+{
+	x: -3.0d,
+	y: -1.0d,
+	tasks: [{
+		uid: "7092e2a2",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_endergy_ingot 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "378dc191",
+		type: "item",
+		item: "enderio:block_alloy_endergy 1 2"
+	}]
+}

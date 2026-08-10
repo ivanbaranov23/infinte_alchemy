@@ -109,6 +109,13 @@ var seed_items as IItemStack[][IItemStack][int] = {
             <quark:limestone> * 256,
             <chisel:limestone2:7> * 256,
             <contenttweaker:relic_ingot> * 64
+        ],
+
+        <mysticalcreations:fertilizer_seeds>: [
+            <industrialforegoing:fertilizer> * 64,
+            <xreliquary:mob_ingredient:9> * 64,
+            <botania:fertilizer> * 64,
+            <mysticalagriculture:nature_essence> * 64
         ]
     },
     2: {
@@ -126,8 +133,10 @@ var seed_items as IItemStack[][IItemStack][int] = {
         <mysticalcreations:ovium_seeds>: [<extendedcrafting:singularity_custom:85> * 4, <mysticalagriculture:iron_essence> * 64],
         <mysticalcreations:jauxum_seeds>: [<extendedcrafting:singularity_custom:86> * 4, <mysticalagriculture:iron_essence> * 64],
 
-        <mysticalagriculture:silicon_seeds>: [<projectred-core:resource_item:301> * 64],
+        <mysticalagriculture:saltpeter_seeds>: [<thermalfoundation:material:772> * 256, <thermalfoundation:material:1026> * 256],
+        <mysticalagriculture:silicon_seeds>: [<projectred-core:resource_item:301> * 64, <mysticalagriculture:saltpeter_essence> * 64],
 
+        <mysticalagriculture:coal_seeds>: [<extendedcrafting:singularity> * 4, <contenttweaker:crystal_coal> * 64, <thermalexpansion:augment:258> * 64]
     }
 };
 

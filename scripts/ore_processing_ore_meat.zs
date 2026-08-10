@@ -59,7 +59,10 @@ var meat_names as string[IItemStack][] = [
     }, {//4
         <mekores:mekanismore:28>: "oreMithril",
         <contenttweaker:chrome_dirty_dust>: "oreChrome",
+        <contenttweaker:rhodium_dirty_dust>: "oreRhodium",
         <contenttweaker:neodymium_dirty_dust>: "oreNeodymium",
+        <contenttweaker:arsenic_dirty_dust>: "oreArsenic",
+        <contenttweaker:strontium_dirty_dust>: "oreStrontium",
         <contenttweaker:arkenium_dirty_dust>: "oreArkenium",
 
         <mekores:mekanismore:268>: "oreVibranium",
@@ -76,9 +79,13 @@ var meat_names as string[IItemStack][] = [
     }, {//5
         <contenttweaker:orichalcum_dirty_dust>: "oreOrichalcum",
         <mekores:mekanismore:48>: "oreAstralStarmetal",
+        <mekores:mekanismore:58>: "oreBeryllium",
         <contenttweaker:aquamarine_dirty_dust>: "oreAquamarine",
         <contenttweaker:zirconium_dirty_dust>: "oreZirconium",
+        <contenttweaker:germanium_dirty_dust>: "oreGermanium",
         <contenttweaker:moissanite_dirty>: "oreMoissanite",
+        <contenttweaker:molybdenum_dirty_dust>: "oreMolybdenum",
+        <contenttweaker:niobium_dirty_dust>: "oreNiobium",
 
         <contenttweaker:life_essence_ore> * 2: "oreLifeEssence"
     }
@@ -114,18 +121,48 @@ mods.bloodmagic.BloodAltar.addRecipe(<contenttweaker:ore_cube5>, <contenttweaker
 
 for ore_tier in 0 to meat_names.length{
     for item, ore_name in meat_names[ore_tier]{
-        var rec = RecipeBuilder.newBuilder("ore_proc_" ~ ore_name, "blood_meat_infuser", 20 + ore_tier * 20);
+        {    
+            var rec = RecipeBuilder.newBuilder("ore_proc_" ~ ore_name, "blood_meat_infuser", 20 + ore_tier * 20);
+            rec.setMaxThreads(1);
+            rec.addEnergyPerTickInput(10000 + 5000 * ore_tier * ore_tier);
 
-        rec.addEnergyPerTickInput(1000 + 500 * ore_tier * ore_tier);
+            rec.addItemOutput(<contenttweaker:ore_cube_spent>);
+            rec.addFluidOutput(<liquid:if.ore_fluid_raw>.withTag({Ore: ore_name}) * (3200 * item.amount));
 
-        rec.addItemOutput(<contenttweaker:ore_cube_spent>);
-        rec.addFluidOutput(<liquid:if.ore_fluid_raw>.withTag({Ore: ore_name}) * (3200 * item.amount));
+            rec.addItemInput(item * 32);
+            rec.addItemInput(ore_cubes[ore_tier]);
+            rec.addFluidInput(<liquid:meat> * (3200 * item.amount));
+            
 
-        rec.addItemInput(item * 32);
-        rec.addItemInput(ore_cubes[ore_tier]);
-        rec.addFluidInput(<liquid:meat> * (3200 * item.amount));
-        
+            rec.build();
+        }
+        {
+            var rec = RecipeBuilder.newBuilder("ore_fermenting_" ~ ore_name, "blood_meat_fermenter", 20 + ore_tier * 20);
+            rec.setMaxThreads(1);
+            rec.addEnergyPerTickInput(10000 + 5000 * ore_tier * ore_tier);
 
-        rec.build();
+            rec.addFluidOutput(<liquid:if.ore_fluid_fermented>.withTag({Ore: ore_name}) * (6400 * item.amount));
+
+            rec.addFluidInput(<liquid:if.ore_fluid_raw>.withTag({Ore: ore_name}) * (3200 * item.amount));
+            rec.addFluidInput(<liquid:pyrotheum> * 1000);
+            rec.addFluidInput(<liquid:cryotheum> * 1000);
+            
+
+            rec.build();
+        }
+        {
+            var rec = RecipeBuilder.newBuilder("ore_fermenting2_" ~ ore_name, "blood_meat_fermenter", 2 + ore_tier * 2);
+            rec.setMaxThreads(1);
+            rec.addEnergyPerTickInput(100000 + 50000 * ore_tier * ore_tier);
+
+            rec.addFluidOutput(<liquid:if.ore_fluid_fermented>.withTag({Ore: ore_name}) * (8000 * item.amount));
+
+            rec.addFluidInput(<liquid:if.ore_fluid_raw>.withTag({Ore: ore_name}) * (3200 * item.amount));
+            rec.addFluidInput(<liquid:super_heat_lava> * 10);
+            rec.addFluidInput(<liquid:cold_liquid> * 10);
+            
+
+            rec.build();
+        }
     }
 }

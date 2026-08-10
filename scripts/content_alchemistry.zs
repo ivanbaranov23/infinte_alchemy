@@ -209,8 +209,8 @@ createElement(1500, "galaxium", "Glx", 93, 42, 172);
     );
     createCompound(230, "phosphorus_pentoxide", 188, 1, 80,
         [
-            ["phosphorus", 4],
-            ["oxygen", 10]
+            ["phosphorus", 2],
+            ["oxygen", 5]
         ]
     );
 }

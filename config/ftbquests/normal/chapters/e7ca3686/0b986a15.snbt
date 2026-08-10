@@ -8,7 +8,8 @@
 	],
 	dependencies: [
 		"f085eed4",
-		"30efc77d"
+		"30efc77d",
+		"fb0b68ed"
 	],
 	size: 2.0d,
 	tasks: [{

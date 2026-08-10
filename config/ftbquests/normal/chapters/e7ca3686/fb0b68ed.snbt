@@ -1,0 +1,16 @@
+{
+	x: 8.5d,
+	y: 1.5d,
+	tasks: [{
+		uid: "b37f76ac",
+		type: "item",
+		items: [{
+			item: "enderio:item_alloy_ingot 1 8"
+		}]
+	}],
+	rewards: [{
+		uid: "a978963f",
+		type: "item",
+		item: "enderio:block_alloy 1 8"
+	}]
+}

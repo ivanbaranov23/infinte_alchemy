@@ -275,6 +275,9 @@ function addAtomicResource(name as string){
     //manyullyn
     VanillaFactory.createItem("manyullyn_dust").register();
 
+    //kovar
+    VanillaFactory.createItem("kovar_ingot").register();
+
 
     //duraluminum
     registerMetal("duraluminum");
@@ -1050,76 +1053,151 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("onyx_unit").register();
     VanillaFactory.createItem("onyx_unit2").register();
 
-    VanillaFactory.createItem("bismuth_pieces").register();
-    VanillaFactory.createItem("bismuth_chunk").register();
-    VanillaFactory.createBlock("bismuth_ore", <blockmaterial:rock>).register();
-    VanillaFactory.createItem("bismuth_ingot").register();
-    VanillaFactory.createItem("bismuth_dust").register();
-    VanillaFactory.createBlock("bismuth_block", <blockmaterial:rock>).register();
-    registerMoltenMetal("bismuth", Color.fromHex("8d05b3"));
+    {//bismuth
+        VanillaFactory.createBlock("bismuth_ore", <blockmaterial:rock>).register();
+        VanillaFactory.createItem("bismuth_pieces").register();
+        VanillaFactory.createItem("bismuth_chunk").register();
+        VanillaFactory.createItem("bismuth_ingot").register();
+        VanillaFactory.createItem("bismuth_dust").register();
+        VanillaFactory.createBlock("bismuth_block", <blockmaterial:rock>).register();
+        registerMoltenMetal("bismuth", Color.fromHex("8d05b3"));
+    }
 
     VanillaFactory.createItem("polonium_dust").register();
     VanillaFactory.createBlock("polonium_block", <blockmaterial:rock>).register();
 
-    VanillaFactory.createItem("beryllium_dust").register();
-    VanillaFactory.createItem("beryllium_sheet").register();
-    VanillaFactory.createBlock("beryllium_block", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("beryllium_ore", <blockmaterial:rock>).register();
+    {//beryllium
+        VanillaFactory.createBlock("beryllium_ore", <blockmaterial:rock>).register();
+        VanillaFactory.createItem("beryllium_pieces").register();
+        VanillaFactory.createItem("beryllium_chunk").register();
+        VanillaFactory.createItem("beryllium_dust").register();
+        VanillaFactory.createItem("beryllium_sheet").register();
+        VanillaFactory.createBlock("beryllium_block", <blockmaterial:rock>).register();
+    }
 
-    VanillaFactory.createBlock("tantalum_block", <blockmaterial:rock>).register();
-    VanillaFactory.createItem("tantalum_dust").register();
-    VanillaFactory.createItem("tantalum_ore_dust").register();
-    VanillaFactory.createBlock("tantalite_ore", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("tantalum_ore", <blockmaterial:rock>).register();
-    VanillaFactory.createFluid("tantalum_niobium_f", Color.fromHex("3d5caf")).register();
-    VanillaFactory.createFluid("tantalum_f", Color.fromHex("6c8e6e")).register();
+    {//tantalum
+        VanillaFactory.createItem("tantalum_ore_dust").register();
+        VanillaFactory.createBlock("tantalite_ore", <blockmaterial:rock>).register();
+        VanillaFactory.createBlock("tantalum_ore", <blockmaterial:rock>).register();
+        VanillaFactory.createFluid("tantalum_niobium_f", Color.fromHex("3d5caf")).register();
+        VanillaFactory.createFluid("tantalum_f", Color.fromHex("6c8e6e")).register();
 
-    VanillaFactory.createBlock("niobium_block", <blockmaterial:rock>).register();
-    VanillaFactory.createItem("niobium_dust").register();
-    VanillaFactory.createFluid("niobium_f", Color.fromHex("021dff")).register();
+        VanillaFactory.createItem("tantalum_crystal").register();
+        VanillaFactory.createItem("tantalum_shard").register();
+        VanillaFactory.createItem("tantalum_clump").register();
+        VanillaFactory.createItem("tantalum_dirty_dust").register();
+        VanillaFactory.createItem("tantalum_pieces").register();
+        VanillaFactory.createItem("tantalum_chunk").register();
+
+
+        VanillaFactory.createItem("tantalum_dust").register();
+        VanillaFactory.createBlock("tantalum_block", <blockmaterial:rock>).register();
+        
+    }
+
+    {//niobium
+        VanillaFactory.createItem("niobium_pieces").register();
+        VanillaFactory.createItem("niobium_chunk").register();
+        VanillaFactory.createItem("niobium_crystal").register();
+        VanillaFactory.createItem("niobium_shard").register();
+        VanillaFactory.createItem("niobium_clump").register();
+        VanillaFactory.createItem("niobium_dirty_dust").register();
+        VanillaFactory.createItem("niobium_dust").register();
+        VanillaFactory.createBlock("niobium_block", <blockmaterial:rock>).register();
+        VanillaFactory.createFluid("niobium_f", Color.fromHex("021dff")).register();
+    }
 
     VanillaFactory.createItem("vanadium_dust").register();
     VanillaFactory.createBlock("vanadium_ore", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("vanadium_block", <blockmaterial:rock>).register();
     registerMoltenMetal("vanadium",  Color.fromHex("736d8e"));
 
-    VanillaFactory.createBlock("arsenic_block", <blockmaterial:rock>).register();
-    VanillaFactory.createItem("arsenic_dust").register();
+    {//arsenic
+        VanillaFactory.createBlock("arsenic_ore", <blockmaterial:rock>).register();
 
-    VanillaFactory.createBlock("germanium_block", <blockmaterial:rock>).register();
-    VanillaFactory.createItem("germanium_dust").register();
+        VanillaFactory.createItem("arsenic_crystal").register();
+        VanillaFactory.createItem("arsenic_shard").register();
+        VanillaFactory.createItem("arsenic_clump").register();
+        VanillaFactory.createItem("arsenic_dirty_dust").register();
+        VanillaFactory.createItem("arsenic_pieces").register();
+        VanillaFactory.createItem("arsenic_chunk").register();
+
+        VanillaFactory.createBlock("arsenic_block", <blockmaterial:rock>).register();
+        VanillaFactory.createItem("arsenic_dust").register();
+    }
+
+    {//germanium
+        VanillaFactory.createBlock("germanium_ore", <blockmaterial:rock>).register();
+        VanillaFactory.createItem("germanium_crystal").register();
+        VanillaFactory.createItem("germanium_shard").register();
+        VanillaFactory.createItem("germanium_clump").register();
+        VanillaFactory.createItem("germanium_dirty_dust").register();
+        VanillaFactory.createItem("germanium_pieces").register();
+        VanillaFactory.createItem("germanium_chunk").register();
+
+        VanillaFactory.createBlock("germanium_block", <blockmaterial:rock>).register();
+        VanillaFactory.createItem("germanium_dust").register();
+    }
 
     VanillaFactory.createBlock("selenium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("selenium_dust").register();
 
-    VanillaFactory.createBlock("rhodium_block", <blockmaterial:rock>).register();
-    VanillaFactory.createItem("rhodium_dust").register();
-    VanillaFactory.createItem("rhodium_plate").register();
-    registerMoltenMetal("rhodium",  Color.fromHex("ff0050"));
-    VanillaFactory.createBlock("rhodplumsite_space_ore", <blockmaterial:rock>).register();
+    {//rhodium
+        VanillaFactory.createBlock("rhodium_ore", <blockmaterial:rock>).register();
+        VanillaFactory.createItem("rhodium_crystal").register();
+        VanillaFactory.createItem("rhodium_shard").register();
+        VanillaFactory.createItem("rhodium_clump").register();
+        VanillaFactory.createItem("rhodium_dirty_dust").register();
+        VanillaFactory.createItem("rhodium_pieces").register();
+        VanillaFactory.createItem("rhodium_chunk").register();
 
-    {//rh v 
-        VanillaFactory.createItem("rhodium1").register();
-        VanillaFactory.createItem("rhodium2").register();
-        addLava("garstone_sludge");
-        addLava("garstone_sludge2");
+        VanillaFactory.createBlock("rhodium_block", <blockmaterial:rock>).register();
+        VanillaFactory.createItem("rhodium_dust").register();
+        VanillaFactory.createItem("rhodium_plate").register();
+        registerMoltenMetal("rhodium",  Color.fromHex("ff0050"));
+        VanillaFactory.createBlock("rhodplumsite_space_ore", <blockmaterial:rock>).register();
 
-        VanillaFactory.createBlock("rh_v_block", <blockmaterial:rock>).register();
-        VanillaFactory.createItem("rh_v_plate").register();
-        VanillaFactory.createBlock("rh_v_eu_block", <blockmaterial:rock>).register();
-        VanillaFactory.createItem("rh_v_eu_plate").register();
+        {//rh v 
+            VanillaFactory.createItem("rhodium1").register();
+            VanillaFactory.createItem("rhodium2").register();
+            addLava("garstone_sludge");
+            addLava("garstone_sludge2");
+
+            VanillaFactory.createBlock("rh_v_block", <blockmaterial:rock>).register();
+            VanillaFactory.createItem("rh_v_plate").register();
+            VanillaFactory.createBlock("rh_v_eu_block", <blockmaterial:rock>).register();
+            VanillaFactory.createItem("rh_v_eu_plate").register();
+        }
     }
 
     VanillaFactory.createBlock("tellurium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("tellurium_dust").register();
     VanillaFactory.createBlock("tellurium_ore", <blockmaterial:rock>).register();
     
-    VanillaFactory.createItem("rubidium_dust").register();
+    {//rubidium
+        VanillaFactory.createItem("rubidium_crystal").register();
+        VanillaFactory.createItem("rubidium_shard").register();
+        VanillaFactory.createItem("rubidium_clump").register();
+        VanillaFactory.createItem("rubidium_dirty_dust").register();
+        VanillaFactory.createItem("rubidium_pieces").register();
+        VanillaFactory.createItem("rubidium_chunk").register();
+        VanillaFactory.createItem("rubidium_dust").register();
+    }
 
-    VanillaFactory.createItem("molybdenum_dust").register();
-    VanillaFactory.createBlock("molybdenum_block", <blockmaterial:rock>).register();
-    VanillaFactory.createBlock("molybdenum_ore", <blockmaterial:rock>).register();
-    registerMoltenMetal("molybdenum",  Color.fromHex("270030"));
+    {
+        VanillaFactory.createItem("molybdenum_crystal").register();
+        VanillaFactory.createItem("molybdenum_shard").register();
+        VanillaFactory.createItem("molybdenum_clump").register();
+        VanillaFactory.createItem("molybdenum_dirty_dust").register();
+        VanillaFactory.createItem("molybdenum_pieces").register();
+        VanillaFactory.createItem("molybdenum_chunk").register();
+
+        VanillaFactory.createItem("molybdenum_dust").register();
+        VanillaFactory.createBlock("molybdenum_block", <blockmaterial:rock>).register();
+        VanillaFactory.createBlock("molybdenum_ore", <blockmaterial:rock>).register();
+        registerMoltenMetal("molybdenum",  Color.fromHex("270030"));
+    }
+    VanillaFactory.createItem("gerdurmol_ingot").register();
 
     VanillaFactory.createBlock("cadmium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("cadmium").register();
@@ -1128,12 +1206,21 @@ function addAtomicResource(name as string){
     VanillaFactory.createBlock("barite_ore_end", <blockmaterial:rock>).register();
     VanillaFactory.createItem("barite_dust").register();
     registerMoltenMetal("benitoite",  Color.fromHex("87e1ff"));
-    VanillaFactory.createBlock("barium_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("barium_pieces").register();
+    VanillaFactory.createItem("barium_chunk").register();
+    VanillaFactory.createItem("barium_crystal").register();
+    VanillaFactory.createItem("barium_shard").register();
+    VanillaFactory.createItem("barium_clump").register();
+    VanillaFactory.createItem("barium_dirty_dust").register();
     VanillaFactory.createItem("barium_dust").register();
+    VanillaFactory.createBlock("barium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("batio").register();
 
-    VanillaFactory.createBlock("strontium_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("strontium_pieces").register();
+    VanillaFactory.createItem("strontium_chunk").register();
+    VanillaFactory.createItem("strontium_dirty_dust").register();
     VanillaFactory.createItem("strontium_dust").register();
+    VanillaFactory.createBlock("strontium_block", <blockmaterial:rock>).register();
 
     VanillaFactory.createItem("pollucite").register();
     VanillaFactory.createFluid("pollucite1", Color.fromHex("484110")).register();
@@ -1146,6 +1233,11 @@ function addAtomicResource(name as string){
     VanillaFactory.createBlock("lutetium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("lutetium_dust").register();
     VanillaFactory.createBlock("lutetium_ore", <blockmaterial:rock>).register();
+
+    VanillaFactory.createItem("thallium_crystal").register();
+    VanillaFactory.createItem("thallium_shard").register();
+    VanillaFactory.createItem("thallium_clump").register();
+    VanillaFactory.createItem("thallium_dirty_dust").register();
 
     VanillaFactory.createBlock("thallium_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("thallium_dust").register();
@@ -2829,8 +2921,9 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("base_seeds").register();
     VanillaFactory.createItem("potential_seeds").register();
     VanillaFactory.createFluid("essence_slurp", Color.fromHex("748e00")).register();
-    //VanillaFactory.createFluid("leap_base", Color.fromHex("437031")).register();
     VanillaFactory.createFluid("leap", Color.fromHex("82c069")).register();
+    addWater("leap2");
+    
 
     VanillaFactory.createBlock("essence_pump1", <blockmaterial:rock>).register();
     VanillaFactory.createBlock("essence_pump2", <blockmaterial:rock>).register();
@@ -2875,7 +2968,6 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createFluid("crystal_fluid1", Color.fromHex("6fc674")).register();
     VanillaFactory.createFluid("crystal_fluid2", Color.fromHex("4f9c6d")).register();
-    //VanillaFactory.createFluid("crystal_fluid3", Color.fromHex("357876")).register();
     addWater("crystal_fluid3");
     VanillaFactory.createFluid("crystal_waste", Color.fromHex("2f1c23")).register();
     
@@ -2897,6 +2989,12 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("insect_essence").register();
     VanillaFactory.createItem("golem_essence").register();
     addWater("dragon_yolk");
+
+    VanillaFactory.createItem("vrt_ingot").register();
+    VanillaFactory.createBlock("vrt_block", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("boarsteel_ingot").register();
+    VanillaFactory.createItem("boarsteel_ball").register();
+    VanillaFactory.createBlock("boarsteel_block", <blockmaterial:rock>).register();
 }
 {//extended carfting
     VanillaFactory.createItem("gargeruby").register();
@@ -3441,7 +3539,12 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     
 }
 {//draconic
+    VanillaFactory.createItem("superconductor1_ingot").register();
+    VanillaFactory.createItem("superconductor1_plate").register();
+    VanillaFactory.createBlock("superconductor1_block", <blockmaterial:rock>).register();
     VanillaFactory.createItem("low_superconductor").register();
+    VanillaFactory.createItem("low_superconductor_coil").register();
+    
     VanillaFactory.createItem("high_superconductor").register();
 
     VanillaFactory.createItem("serpent_core").register();
@@ -3685,6 +3788,8 @@ addWater("brain_matter");
 {//endgame
     VanillaFactory.createBlock("portal", <blockmaterial:rock>).register();
 
+    VanillaFactory.createItem("hollow_star").register();
+
     VanillaFactory.createItem("luck_chip").register();
     VanillaFactory.createItem("luck_crystal_base").register();
     addItem("luck_crystal", "rare", 1);
@@ -3810,6 +3915,8 @@ function addResearchBook(name as string, msg as string){
     VanillaFactory.createItem("research_bacteria1").register();
 
     VanillaFactory.createItem("research_heat").register();
+
+    addResearchBook("research_ores", "From the peak return to the roots.");
 
     VanillaFactory.createItem("research_living").register();
 

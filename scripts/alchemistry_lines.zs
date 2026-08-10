@@ -613,6 +613,15 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
 
 }
 //todo acetone butanol ethanol
+{//ethanol
+    addChemicalRecipe(
+        [<contenttweaker:diethyl_ether>, <alchemistry:compound:7>],
+        [<alchemistry:compound:26>],
+        [<alchemistry:compound:3>]
+    );
+    <contenttweaker:diethyl_ether>.addTooltip("(C₂H₅)₂O");
+    <contenttweaker:diethyl_ether>.addTooltip("Et₂O");
+}
 
 {//lithium
     addChemicalRecipe(
@@ -636,11 +645,26 @@ addChemicalRecipe([<contenttweaker:methylamine>], [
             [100, <alchemistry:element:15> * 2]
         ]
     );
+
+    Combiner.removeRecipe(<alchemistry:compound:230>);
+    Combiner.addRecipe(<alchemistry:compound:230>, [
+        <alchemistry:compound:14>, <alchemistry:element:15>, <alchemistry:element:8>
+    ]);
+
+    addChemicalRecipe(
+        [<contenttweaker:triethyl_phosphate> * 2],
+        [<contenttweaker:diethyl_ether> * 3, <alchemistry:compound:230>],
+        []
+    );
+    <contenttweaker:triethyl_phosphate>.addTooltip("(C₂H₅)₃PO₄");
 }
 {//calcium
     addItemConv(<contenttweaker:slacked_lime>, <alchemistry:compound:219>);
     addItemConv(<contenttweaker:quicklime>, <alchemistry:compound:218>);
     addItemConv(<contenttweaker:monocalcium_phosphate>, <alchemistry:compound:222>);
+}
+{//germanium
+
 }
 {//bromine
     addChemicalRecipe(

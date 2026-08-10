@@ -7,7 +7,7 @@ recipes.addShaped("ia_power_core_block", <contenttweaker:power_core>, [
 ]);
 
 mods.mekanism.reaction.addRecipe(
-    <minecraft:redstone>, <liquid:strawberry_wine> * 500, <gas:sodium> * 100, 
+    <minecraft:redstone>, <liquid:strawberry_wine> * 500, <gas:sodium> * 400, 
     null, <gas:carmin> * 100, 50000, 60
 );
 {
@@ -16,7 +16,7 @@ mods.mekanism.reaction.addRecipe(
     rec.addEnergyPerTickInput(2000);
 
     rec.addItemInput(<minecraft:redstone>);
-	rec.addGasInput(<gas:sodium> * 100);
+	rec.addGasInput(<gas:sodium> * 400);
 	rec.addFluidInput(<liquid:strawberry_wine> * 500);
 
 	rec.addGasOutput(<gas:carmin> * 1000);

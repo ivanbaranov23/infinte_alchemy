@@ -135,3 +135,6 @@ removeAndHide(<thermalexpansion:device:8>);
 removeAndHide(<thermalexpansion:device:12>);
 
 removeAndHide(<excompressum:uncompressed_coal>);
+
+removeAndHide(<extrautils2:quarryproxy>);
+removeAndHide(<extrautils2:quarry>);

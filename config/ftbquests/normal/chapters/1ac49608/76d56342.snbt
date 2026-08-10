@@ -1,0 +1,18 @@
+{
+	x: 7.0d,
+	y: -1.0d,
+	text: [
+		"Late answer to machine spam"
+	],
+	dependencies: [
+		"8d33d5c0"
+	],
+	optional: true,
+	tasks: [{
+		uid: "51197e8f",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockparallelcontroller"
+		}]
+	}]
+}

@@ -121,6 +121,8 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:lubarium_ingot>, <contenttweaker:lubarium_block>);
     add3x3Recipe(<contenttweaker:solar_lubarium_ingot>, <contenttweaker:solar_lubarium_block>);
     add3x3Recipe(<contenttweaker:mitanium_ingot>, <contenttweaker:mitanium_block>);
+    add3x3Recipe(<contenttweaker:vrt_ingot>, <contenttweaker:vrt_block>);
+    add3x3Recipe(<contenttweaker:boarsteel_ingot>, <contenttweaker:boarsteel_block>);
     add3x3Recipe(<contenttweaker:bismuth_bronze_ingot>, <contenttweaker:bismuth_bronze_block>);
 
     add3x3Recipe(<contenttweaker:dralladium_ingot>, <contenttweaker:dralladium_block>);
@@ -155,6 +157,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<astralsorcery:itemcraftingcomponent:1>, <contenttweaker:starmetal_block>);
     add3x3Recipe(<contenttweaker:star_alloy_ingot>, <contenttweaker:star_alloy_block>);
     add3x3Recipe(<contenttweaker:zirconium_gem>, <contenttweaker:zirconium_block>);
+    add3x3Recipe(<contenttweaker:superconductor1_ingot>, <contenttweaker:superconductor1_block>);
 
     add3x3Recipe(<contenttweaker:death_metal_ingot>, <contenttweaker:death_metal_block>);
     add3x3Recipe(<contenttweaker:bastnasite>, <contenttweaker:bastnasite_block>);

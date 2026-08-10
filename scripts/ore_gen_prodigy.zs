@@ -55,6 +55,7 @@ addASrecipe(<quark:biome_cobblestone:1>, [
     <biomesoplenty:gem_ore:6> * 10
 ], 25, 2);
 
+//erebus
 addASrecipe(<erebus:umberstone>, [
     <erebus:ore_coal> * 35,
     <erebus:ore_copper> * 10,
@@ -63,3 +64,25 @@ addASrecipe(<erebus:umberstone>, [
     <contenttweaker:flolit_ore> * 10,
     <erebus:ore_petrified_wood> * 5
 ], 10, 2);
+
+//nether
+addASrecipe(<mysticalagriculture:soulstone>, [
+    <netherendingores:ore_nether_modded_2:1> * 20,
+    <betternether:cincinnasite_ore> * 15,
+    <taiga:prometheum_ore> * 15,
+    <moretcon:orehallowsite> * 15,
+    <netherite:ancientdebris> * 10,
+    <bigreactors:orebenitoite>
+], 20, 2);
+
+//twilight
+addASrecipe(<twilightforest:underbrick>, [
+    <twilightforest:trollsteinn> * 5,
+    <taiga:meteoritecobble_block> * 2,
+    <moretcon:orefusionite>,
+    <moretcon:oreirradium>,
+    <moretcon:orevoidspar>,
+    <moretcon:oregarstone>,
+    <moretcon:oreelectarite>,
+    <netherendingores:ore_other_1:9>
+], 25, 2);

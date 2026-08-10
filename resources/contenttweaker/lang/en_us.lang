@@ -2540,7 +2540,7 @@ item.contenttweaker.layered_wafers.name=Layer of Silicon Wafers
 ia.mb_tooltip.ls_grate1=+1 item output, +5 fluid input, x1.25 energy input per block
 ia.mb_tooltip.ls_grate2=+8 item output, +50 fluid input, x1.5 energy input per block
 
-fluid.leap=L.E.A.P. Solution
+fluid.leap=LEAP Solution
 tile.contenttweaker.grate.name=Sifting Grate
 
 tile.contenttweaker.barite_ore.name=Barite Ore
@@ -2596,7 +2596,7 @@ item.contenttweaker.filter_blood.name=Blood Filter
 item.contenttweaker.entangled_matter_a.name=Entangled Matter
 item.contenttweaker.entangled_matter_b.name=Entangled Matter
 
-tile.contenttweaker.tantalite_ore.name=Tantalite Ore
+tile.contenttweaker.tantalite_ore.name=Tantalum Ore
 
 item.contenttweaker.strontium_dust.name=Strontium Dust
 tile.contenttweaker.strontium_block.name=Block of Strontium
@@ -2942,7 +2942,104 @@ item.contenttweaker.acetone.name=Acetone
 
 item.contenttweaker.trollsteinn.name=Trollsteinn
 item.contenttweaker.trollsteinn_gem.name=Trollsteinn Gem
-item.contenttweaker.mobbium=Mobbium
+item.contenttweaker.mobbium.name=Mobbium
 
 fluid.cold_diesel=Cold Diesel
 fluid.spider_mead=Spider Mead
+
+tile.contenttweaker.rhodium_ore.name=Rhodium Ore
+item.contenttweaker.rhodium_crystal.name=Rhodium Crystal
+item.contenttweaker.rhodium_shard.name=Rhodium Shard
+item.contenttweaker.rhodium_clump.name=Rhodium Clump
+item.contenttweaker.rhodium_dirty_dust.name=Dirty Rhodium Dust
+item.contenttweaker.rhodium_pieces.name=Rhodium Pieces
+item.contenttweaker.rhodium_chunk.name=Rhodium Chunk
+gas.rhodium=Rhodium Slurry
+gas.cleanrhodium=Clean Rhodium Slurry
+
+item.contenttweaker.vrt_ingot.name=VRT-7 Ingot
+tile.contenttweaker.vrt_block.name=Block of VRT-7
+item.contenttweaker.boarsteel_ingot.name=Boarsteel Ingot
+item.contenttweaker.boarsteel_ball.name=Boarsteel Ball
+tile.contenttweaker.boarsteel_block.name=Block of Boarsteel
+item.contenttweaker.kovar_ingot.name=Kovar Ingot
+item.contenttweaker.gerdurmol_ingot.name=Gerdurmol Ingot
+
+tile.contenttweaker.germanium_ore.name=Germanium Ore
+item.contenttweaker.germanium_crystal.name=Germanium Crystal
+item.contenttweaker.germanium_shard.name=Germanium Shard
+item.contenttweaker.germanium_clump.name=Germanium Clump
+item.contenttweaker.germanium_dirty_dust.name=Dirty Germanium Dust 
+item.contenttweaker.germanium_pieces.name=Germanium Pieces
+item.contenttweaker.germanium_chunk.name=Germanium Chunk
+gas.germanium=Germanium Slurry
+gas.cleangermanium=Clean Germanium Slurry
+
+item.contenttweaker.diethyl_ether.name=Diethyl Ether
+item.contenttweaker.triethyl_phosphate.name=Triethyl Phosphate
+
+fluid.leap2=Advanced LEAP Solution
+
+item.contenttweaker.sin_nickel_ingot.name=Nickel of Sin
+
+item.contenttweaker.research_ores.name=Research: How to Make Ores
+
+item.contenttweaker.molybdenum_crystal.name=Molybdenum Crystal
+item.contenttweaker.molybdenum_shard.name=Molybdenum Shard
+item.contenttweaker.molybdenum_clump.name=Molybdenum Clump
+item.contenttweaker.molybdenum_dirty_dust.name=Dirty Molybdenum Dust
+item.contenttweaker.molybdenum_pieces.name=Molybdenum Pieces
+item.contenttweaker.molybdenum_chunk.name=Molybdenum Chunk
+gas.molybdenum=Molybdenum Slurry
+gas.cleanmolybdenum=Clean Molybdenum Slurry
+
+tile.contenttweaker.arsenic_ore.name=Arsenic Ore
+item.contenttweaker.arsenic_crystal.name=Arsenic Crystal
+item.contenttweaker.arsenic_shard.name=Arsenic Shard
+item.contenttweaker.arsenic_clump.name=Arsenic Clump
+item.contenttweaker.arsenic_dirty_dust.name=Dirty Arsenic Dust 
+item.contenttweaker.arsenic_pieces.name=Arsenic Pieces
+item.contenttweaker.arsenic_chunk.name=Arsenic Chunk
+gas.arsenic=Arsenic Slurry
+gas.cleanarsenic=Clean Arsenic Slurry
+
+item.contenttweaker.endstone_dust.name=Endstone Dust
+
+item.contenttweaker.strontium_dirty_dust.name=Dirty Strontium Dust 
+item.contenttweaker.strontium_pieces.name=Strontium Pieces
+item.contenttweaker.strontium_chunk.name=Strontium Chunk
+
+item.contenttweaker.tantalum_crystal.name=Tantalum Crystal
+item.contenttweaker.tantalum_shard.name=Tantalum Shard
+item.contenttweaker.tantalum_clump.name=Tantalum Clump
+item.contenttweaker.tantalum_dirty_dust.name=Dirty Tantalum Dust 
+item.contenttweaker.tantalum_pieces.name=Tantalum Pieces
+item.contenttweaker.tantalum_chunk.name=Tantalum Chunk
+gas.tantalum=Tantalum Slurry
+gas.cleantantalum=Clean Tantalum Slurry
+
+tile.contenttweaker.tantalum_ore.name=Tantalum Niobium Ore
+item.contenttweaker.tantalum_ore_dust.name=Tantalum Niobium Mixture Dust
+fluid.tantalum_niobium_f=Dissolved Tantalum Niobium
+fluid.tantalum_f=Dissolved Tantalum Ore
+fluid.niobium_f=Dissolved Niobium Ore
+item.contenttweaker.niobium_crystal.name=Niobium Crystal
+item.contenttweaker.niobium_shard.name=Niobium Shard
+item.contenttweaker.niobium_clump.name=Niobium Clump
+item.contenttweaker.niobium_dirty_dust.name=Dirty Niobium Dust
+item.contenttweaker.niobium_dust.name=Niobium Dust
+tile.contenttweaker.niobium_block.name=Block of Niobium
+item.contenttweaker.niobium_pieces.name=Niobium Pieces
+item.contenttweaker.niobium_chunk.name=Niobium Chunk
+gas.niobium=Niobium Slurry
+gas.cleanniobium=Clean Niobium Slurry
+
+item.contenttweaker.superconductor1_ingot.name=Nb₃Ge-Based Low Temprature Superconductor Ingot
+item.contenttweaker.superconductor1_plate.name=Nb₃Ge-Based Low Temprature Superconductor Plate
+tile.contenttweaker.superconductor1_block.name=Block of Nb₃Ge-Based Low Temprature Superconductor
+item.contenttweaker.low_superconductor.name=Nb₃Ge-Based Low Temprature Superconductor Wire
+item.contenttweaker.low_superconductor_coil.name=Nb₃Ge-Based Low Temprature Superconductor Coil
+
+
+
+

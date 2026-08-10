@@ -418,7 +418,7 @@ recipes.addShaped("ia_dark_steel_direct", <enderio:item_dark_steel_upgrade:1>.wi
 	recipes.addShaped("ia_block_powered_spawner", <enderio:block_powered_spawner>, [
 		[<enderio:item_material:44>, <contenttweaker:soul_codex8>, <enderio:item_material:44>], 
 		[<minecraft:nether_star>, <enderio:item_material:53>, <minecraft:nether_star>], 
-		[<simplyjetpacks:metaitemmods:11>, <enderio:item_capacitor_melodic>, <simplyjetpacks:metaitemmods:11>]
+		[<simplyjetpacks:metaitemmods:11>, <enderio:item_capacitor_crystalline>, <simplyjetpacks:metaitemmods:11>]
 	]);
 }
 

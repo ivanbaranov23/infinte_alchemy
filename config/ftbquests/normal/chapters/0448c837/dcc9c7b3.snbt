@@ -1,0 +1,16 @@
+{
+	x: 5.0d,
+	y: -3.0d,
+	tasks: [{
+		uid: "f059ab1c",
+		type: "item",
+		items: [{
+			item: "taiga:meteorite_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "1846cfa8",
+		type: "item",
+		item: "taiga:meteorite_block"
+	}]
+}

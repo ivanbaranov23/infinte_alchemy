@@ -105,7 +105,7 @@ function addSeedGemRecipes(gem as string){
         [gem_parts[gem].gem,
         gem_parts[gem].i1,
         gem_parts[gem].i2],
-        10000
+        50000
     );
     recipes.addShapeless("ia_" ~ gem ~ "_seed", gem_parts[gem].seed,
         [<appliedenergistics2:material:45>, <biomesoplenty:white_sand>, gem_parts[gem].dust, <mekanism:saltblock>]
@@ -120,8 +120,8 @@ function addSeedGemRecipes(gem as string){
     );
 
     Vat.addRecipe(
-        gem_solution[gem] * 1000, 1.0, <liquid:crystal_fluid3> * 1000, 
-        [gem_parts[gem].dust], [1.0], 
+        gem_solution[gem] * 1000, 4.0, <liquid:crystal_fluid3> * 250, 
+        [gem_parts[gem].dust], [0.25], 
         gem_growing_reagent, gem_growing_reagent_mult, 
         30000
     );
@@ -284,8 +284,8 @@ scripts.helper.addFluidMixerRecipe(
 scripts.content_machines.addFluidSieveRecipeRandom(
     [
         <contenttweaker:biocell>,
-        <aether_legacy:zanite_gemstone> % 30
-    ], <liquid:crystal_fluid3> * 400, 
+        <aether_legacy:zanite_gemstone> % 20
+    ], <liquid:crystal_fluid3> * 1000, 
     null, <contenttweaker:gemmed_biomass>,
     <exnihilocreatio:item_mesh:4>,
     40, 3000

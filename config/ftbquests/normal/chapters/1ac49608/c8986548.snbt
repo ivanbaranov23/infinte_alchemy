@@ -10,5 +10,12 @@
 		items: [{
 			item: "contenttweaker:reinforced_cell"
 		}]
+	},
+	{
+		uid: "8c83f973",
+		type: "item",
+		items: [{
+			item: "contenttweaker:lightning_cell"
+		}]
 	}]
 }

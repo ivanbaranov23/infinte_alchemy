@@ -1,0 +1,14 @@
+{
+	x: -2.0d,
+	y: -6.5d,
+	dependencies: [
+		"8520c921"
+	],
+	tasks: [{
+		uid: "2ee5b2ec",
+		type: "item",
+		items: [{
+			item: "mysticalcreations:fertilizer_seeds"
+		}]
+	}]
+}

@@ -1,0 +1,22 @@
+{
+	x: 9.5d,
+	y: 2.5d,
+	text: [
+		"Makes durable balls."
+	],
+	dependencies: [
+		"fb0b68ed"
+	],
+	tasks: [{
+		uid: "3d6f0641",
+		type: "item",
+		items: [{
+			item: "contenttweaker:boarsteel_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "94d20ab2",
+		type: "item",
+		item: "contenttweaker:boarsteel_block"
+	}]
+}

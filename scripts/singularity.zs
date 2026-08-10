@@ -17,13 +17,15 @@ static expl_compressables as string[] = [
 
 	"platinum", "iridium", "tungsten", "titanium", "uranium", "yellorium",
 	"steeleaf",
-	"chrome", "gallium", "neodymium",
+	"chrome", "rhodium", "gallium", "neodymium",
 	"palladium", "draconium", "barium", "zirconium", "tantalum",
 
 	"redstone",
 	"coal", "diamond", "emerald", "lapis", "salt",
 
-	"karmesine", "ovium", "jauxum"
+	"karmesine", "ovium", "jauxum", "meteorite",
+
+	"germanium", "molybdenum", "arsenic"
 ];
 
 
@@ -200,7 +202,7 @@ scripts.content_machines.addBioAssemblerRecipeRandom(
 	], null, [
 		<contenttweaker:reagent_glass>
 	], [], <contenttweaker:research_singularity>,
-	300, 1000
+	30, 1000
 );
 
 //tiers
@@ -312,6 +314,8 @@ static singularity_tiers as IItemStack[][] = [
 	]
 ];
 
+
+recipes.addShapeless("ia_singulr_wooden", singularity_dust, [<extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>]);
 for tier,arr in singularity_tiers{
 	if (tier == 0){
 		for sing in arr{
@@ -325,8 +329,6 @@ for tier,arr in singularity_tiers{
 	}
 	
 }
-recipes.addShapeless("ia_singulr_wooden", singularity_dust, [<extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>, <extendedcrafting:singularity_custom:100>]);
-
 
 //recipes
 recipes.remove(<engineersdecor:treated_wood_crafting_table>);

@@ -96,7 +96,9 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
             <mysticalcreations:gallium_essence> * 16: <contenttweaker:gallium_ore>,
 
             <mysticalagriculture:graphite_essence> * 12: <quantumflux:graphiteore>,
-            <mysticalagriculture:ender_biotite_essence> * 12: <quark:biotite_ore>
+            <mysticalagriculture:ender_biotite_essence> * 12: <quark:biotite_ore>,
+
+            <mysticalcreations:meteorite_essence> * 16: <taiga:meteoritecobble_block>
         },
         400: {
             <mysticalagriculture:mithril_essence> * 16: <thermalfoundation:ore:8>,
@@ -139,6 +141,21 @@ for fluid in essenceToItem_esg{
 
                 //rec.addFluidOutput(<liquid:essence_slurp> * 5000);
                 rec.addItemOutput(ore * 64);
+
+                rec.build();
+            }
+            {
+                var rec = RecipeBuilder.newBuilder("making2_" ~ ore.name, "essence_burner", 1 * 1);
+
+                rec.addEnergyPerTickInput(256000 * 1000);
+
+                rec.addItemInput(essence * (essence.amount * 16));
+                rec.addGasInput(<gas:explosion_stone_glue> * (cost * 16));
+                rec.addFluidInput(fluid * (cost * 16));
+                rec.addFluidInput(<liquid:leap2> * cost);
+
+                //rec.addFluidOutput(<liquid:essence_slurp> * 5000);
+                rec.addItemOutput(ore * 256);
 
                 rec.build();
             }
@@ -240,9 +257,14 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
     infuser.addRecipe("FUNGI", 5, <mysticalagriculture:basalt_essence>, <chisel:basalt2:7> * 4);
     addEssenceRec_1(<mysticalagriculture:basalt_essence>, <contenttweaker:basalt_dust> * 2);
     
+    //fertilizer
+    infuser.addRecipe("FUNGI", 5, <mysticalcreations:fertilizer_essence>, <industrialforegoing:fertilizer> * 4);
 }
 {//2
-    infuser.addRecipe("FUNGI", 10, <mysticalagriculture:silicon_essence>, <appliedenergistics2:material:5> * 2);
+    //niter
+    infuser.addRecipe("FUNGI", 5, <mysticalagriculture:saltpeter_essence>, <thermalfoundation:material:772> * 4);
+    //silicon
+    infuser.addRecipe("FUNGI", 10, <mysticalagriculture:silicon_essence>, <appliedenergistics2:material:5> * 4);
     addEssenceRec_plus(<mysticalagriculture:silicon_essence>, <atum:khnumite> * 8, <deepmoblearning:living_matter_atum>);
     
 }

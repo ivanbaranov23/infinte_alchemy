@@ -1117,17 +1117,9 @@ static ores1 as IItemStack[string][string][string] = {
             separating2: <thermalfoundation:material:67>,
             separating3: <contenttweaker:galena_dust>,
             separating4: <contenttweaker:soot>
-        },
-
-        space: {
-            item: <contenttweaker:argyrodite_ore>,
-            crushing_no_balls: <exnihilocreatio:item_ore_silver> * 8,
-            balling: <exnihilocreatio:item_ore_silver> * 8,
-            crushingByprod1: <contenttweaker:germanium_dust>,
-            crushingByprod2: <contenttweaker:germanium_dust> * 3,
-
-            drilling: <exnihilocreatio:item_ore_silver> * 16
         }
+
+        
             
     },
     lead: {
@@ -1246,18 +1238,10 @@ static ores1 as IItemStack[string][string][string] = {
             separating1: <thermalfoundation:material:67>,
             separating2: <thermalfoundation:material:66>,
             separating4: <thermalfoundation:material:771>
-        },
-
-
-        rhodplumsite: {
-            item: <contenttweaker:rhodplumsite_space_ore>,
-            crushing_no_balls: <exnihilocreatio:item_ore_lead> * 8,
-            balling: <exnihilocreatio:item_ore_lead> * 8,
-            crushingByprod1: <contenttweaker:rhodium_dust>,
-            crushingByprod2: <contenttweaker:rhodium_dust> * 3,
-
-            drilling: <exnihilocreatio:item_ore_lead> * 16
         }
+
+
+        
     },
     osmium: {
         overworld: {
@@ -1836,6 +1820,45 @@ static ores2 as IItemStack[string][string][string] = {
             crushingByprod2: <biomesoplenty:gem:1>,
         }
     },
+    rhodium: {
+        ow: {
+            item: <contenttweaker:rhodium_ore>,
+            crushing_no_balls: <contenttweaker:rhodium_dust> * 2,
+            balling: <contenttweaker:rhodium_dust> * 2,
+            crushingByprod1: <thermalfoundation:material:67>,
+            crushingByprod2: <mekores:mekanismore:23> * 3,
+
+            drilling: <contenttweaker:rhodium_pieces> * 6,
+        },
+        chunk: {
+            item: <contenttweaker:rhodium_chunk>,
+            crushing_no_balls: <contenttweaker:rhodium_dust> * 2,
+            balling: <contenttweaker:rhodium_dust> * 2,
+            crushingByprod1: <thermalfoundation:material:67>,
+            crushingByprod2: <mekores:mekanismore:23> * 3,
+
+
+            drilling: <contenttweaker:rhodium_dirty_dust> * 3,
+            made2x2: <contenttweaker:rhodium_pieces>,
+            madeFrom: <contenttweaker:rhodium_pieces> * 3
+        },
+        clump: {
+            item: <contenttweaker:rhodium_clump>,
+            balling: <contenttweaker:rhodium_dirty_dust> * 1,
+            crushingByprod1: <thermalfoundation:material:67>,
+            crushingByprod2: <mekores:mekanismore:23> * 3,
+        },
+        rhodplumsite: {
+            item: <contenttweaker:rhodplumsite_space_ore>,
+            crushing_no_balls: <exnihilocreatio:item_ore_lead> * 8,
+            balling: <exnihilocreatio:item_ore_lead> * 8,
+            crushingByprod1: <contenttweaker:rhodium_dust>,
+            crushingByprod2: <contenttweaker:rhodium_dust> * 3,
+
+            drilling: <exnihilocreatio:item_ore_lead> * 16,
+            denorm: <contenttweaker:rhodium_ore>
+        }
+    },
     gallium: {
         ow: {
             item: <contenttweaker:gallium_ore>,
@@ -1902,6 +1925,44 @@ static ores2 as IItemStack[string][string][string] = {
             balling: <contenttweaker:neodymium_dirty_dust>,
             crushingByprod1:<contenttweaker:arkenium_dirty_dust>,
             crushingByprod2: <contenttweaker:rare_earth_dust>
+        }
+    },
+    arsenic: {
+        ore: {
+            item: <contenttweaker:arsenic_ore>,
+            crushing_no_balls: <contenttweaker:arsenic_dust> * 2,
+            balling: <contenttweaker:arsenic_dust> * 2,
+            crushingByprod1: <exnihilocreatio:item_ore_copper>,
+            crushingByprod2: <contenttweaker:thallium_dust>,
+
+            drilling: <contenttweaker:arsenic_pieces> * 6
+        },
+        chunk: {
+            item: <contenttweaker:arsenic_chunk>,
+            crushing_no_balls: <contenttweaker:arsenic_dust> * 2,
+            balling: <contenttweaker:arsenic_dust> * 2,
+            crushingByprod1: <exnihilocreatio:item_ore_copper>,
+            crushingByprod2: <contenttweaker:thallium_dust>,
+
+            drilling: <contenttweaker:arsenic_dirty_dust> * 3,
+            made2x2: <contenttweaker:arsenic_pieces>,
+            madeFrom: <contenttweaker:arsenic_pieces>
+        }
+    },
+    strontium: {
+        chunk: {
+            item: <contenttweaker:strontium_chunk>,
+            crushing_no_balls: <contenttweaker:strontium_dust> * 2,
+            balling: <contenttweaker:strontium_dust> * 2,
+            crushingByprod1: <contenttweaker:barite_dust>,
+
+            drilling: <contenttweaker:strontium_dirty_dust> * 3,
+            made2x2: <contenttweaker:strontium_pieces>,
+            madeFrom: <contenttweaker:strontium_pieces> * 3
+        },
+        dirtydust: {
+            item: <contenttweaker:strontium_dirty_dust>,
+            cleaning: <contenttweaker:strontium_dust>
         }
     },
     vibranium: {
@@ -2140,7 +2201,25 @@ static ores2 as IItemStack[string][string][string] = {
             crushing_no_balls: <contenttweaker:beryllium_dust> * 2,
             balling: <contenttweaker:beryllium_dust> * 2,
             crushingByprod1: <contenttweaker:zirconium_dirty_dust>,
-            crushingByprod2: <contenttweaker:beryllium_dust>
+            crushingByprod2: <contenttweaker:beryllium_dust>,
+
+            drilling: <contenttweaker:beryllium_pieces> * 6
+        },
+        chunk: {
+            item: <contenttweaker:beryllium_chunk>,
+            crushing_no_balls: <contenttweaker:beryllium_dust> * 2,
+            balling: <contenttweaker:beryllium_dust> * 2,
+            crushingByprod1: <contenttweaker:zirconium_dirty_dust>,
+            crushingByprod2: <contenttweaker:beryllium_dust>,
+
+            made2x2: <contenttweaker:beryllium_pieces>,
+            madeFrom: <contenttweaker:beryllium_pieces> * 3
+        },
+        clump: {
+            item: <mekores:mekanismore:57>,
+            balling: <mekores:mekanismore:58>,
+            crushingByprod1: <contenttweaker:zirconium_dirty_dust>,
+            crushingByprod2: <contenttweaker:beryllium_dust>,
         }
     },
     vanadium: {
@@ -2166,7 +2245,20 @@ static ores2 as IItemStack[string][string][string] = {
             crushing_no_balls: <contenttweaker:molybdenum_dust> * 2,
             balling: <contenttweaker:molybdenum_dust> * 2,
             crushingByprod1: <exnihilocreatio:item_ore_iron>,
-            crushingByprod2: <contenttweaker:beryllium_dust>
+            crushingByprod2: <contenttweaker:beryllium_dust>,
+
+            drilling: <contenttweaker:molybdenum_pieces> * 6
+        },
+        chunk: {
+            item: <contenttweaker:molybdenum_chunk>,
+            crushing_no_balls: <contenttweaker:molybdenum_dust> * 2,
+            balling: <contenttweaker:molybdenum_dust> * 2,
+            crushingByprod1: <exnihilocreatio:item_ore_iron>,
+            crushingByprod2: <contenttweaker:beryllium_dust>,
+
+            drilling: <contenttweaker:molybdenum_dirty_dust> * 3,
+            made2x2: <contenttweaker:molybdenum_pieces>,
+            madeFrom: <contenttweaker:molybdenum_pieces> * 3
         }
     },
     tantalum: {
@@ -2176,7 +2268,7 @@ static ores2 as IItemStack[string][string][string] = {
             balling: <contenttweaker:tantalum_dust> * 2,
             crushingByprod1: <mekanism:dirtydust>,
 
-            drilling: <contenttweaker:tantalum_dust> * 4
+            drilling: <contenttweaker:tantalum_pieces> * 6
         },
         ore: {
             item: <contenttweaker:tantalum_ore>,
@@ -2186,7 +2278,19 @@ static ores2 as IItemStack[string][string][string] = {
             crushingByprod2: <contenttweaker:niobium_dust>,
 
             drilling: <contenttweaker:tantalum_ore_dust> * 4
-        }
+        },
+
+        chunk: {
+            item: <contenttweaker:tantalum_chunk>,
+            crushing_no_balls: <contenttweaker:tantalum_dust> * 2,
+            balling: <contenttweaker:tantalum_dust> * 2,
+            crushingByprod1: <mekanism:dirtydust>,
+
+            drilling: <contenttweaker:tantalum_dirty_dust>,
+            made2x2: <contenttweaker:tantalum_pieces>,
+            madeFrom: <contenttweaker:tantalum_pieces> * 3
+        },
+
     },
     zirconium: {
         overworld: {
@@ -2224,6 +2328,53 @@ static ores2 as IItemStack[string][string][string] = {
             crushingByprod1: <contenttweaker:rare_earth_dust>, 
             crushingByprod2: <taiga:meteoritecobble_block>,
 
+        }
+    },
+    germanium: {
+        ore: {
+            item: <contenttweaker:germanium_ore>,
+            crushing_no_balls: <contenttweaker:germanium_dust> * 2,
+            balling: <contenttweaker:germanium_dust> * 2,
+            crushingByprod1: <contenttweaker:sphalerite_dust>,
+
+            drilling: <contenttweaker:germanium_pieces> * 6,
+        },
+        chunk: {
+            item: <contenttweaker:germanium_chunk>,
+            crushing_no_balls: <contenttweaker:germanium_dust> * 2,
+            balling: <contenttweaker:germanium_dust> * 2,
+            crushingByprod1: <contenttweaker:sphalerite_dust>,
+
+            made2x2: <contenttweaker:germanium_pieces>,
+            madeFrom: <contenttweaker:germanium_pieces> * 3
+        },
+        space: {
+            item: <contenttweaker:argyrodite_ore>,
+            crushing_no_balls: <exnihilocreatio:item_ore_silver> * 8,
+            balling: <exnihilocreatio:item_ore_silver> * 8,
+            crushingByprod1: <contenttweaker:germanium_dust>,
+            crushingByprod2: <contenttweaker:germanium_dust> * 3,
+
+            drilling: <exnihilocreatio:item_ore_silver> * 16
+        }
+    },
+    niobium: {
+        chunk: {
+            item: <contenttweaker:niobium_chunk>,
+            crushing_no_balls: <contenttweaker:niobium_dust> * 2,
+            balling: <contenttweaker:niobium_dust> * 2,
+            crushingByprod1: <contenttweaker:tantalum_dust>,
+            crushingByprod2: <contenttweaker:niobium_dust>,
+
+            drilling: <contenttweaker:niobium_dirty_dust> * 3,
+            made2x2: <contenttweaker:niobium_pieces>,
+            madeFrom: <contenttweaker:niobium_pieces> * 3
+        },
+        clump: {
+            item: <contenttweaker:niobium_clump>,
+            balling: <contenttweaker:niobium_dirty_dust> * 1,
+            crushingByprod1: <contenttweaker:tantalum_dust>,
+            crushingByprod2: <contenttweaker:niobium_dust>,
         }
     },
     spaceice: {
@@ -3053,7 +3204,9 @@ static ores2 as IItemStack[string][string][string] = {
             crushing_no_balls: <taiga:meteorite_dust> * 2,
             balling: <taiga:meteorite_dust> * 2,
             crushingByprod1: <mekores:mekanismore:23>,
-            crushingByprod2: <taiga:meteorite_dust>
+            crushingByprod2: <taiga:meteorite_dust>,
+
+            drilling: <taiga:meteorite_dust> * 4
         }
     },
 
@@ -4254,12 +4407,14 @@ val to_clean as IItemStack[][string] = {
         <moretcon:oreigniglomerate>,
         <moretcon:oreetherstone>,
 
-        <contenttweaker:chrome_ore>
+        <contenttweaker:chrome_ore>,
+        <contenttweaker:stoneleaf_ore>
     ],
 
     XU_pulv: [
         <draconicevolution:draconium_ore>,
         <netherendingores:ore_other_1:9>,
+        <netherite:ancientdebris>,
         
         <moretcon:orehallowsite>,
         <moretcon:orezracohlium>,
@@ -4282,7 +4437,11 @@ val to_clean as IItemStack[][string] = {
         
         <contenttweaker:chrome_ore>,
         <contenttweaker:neodymium_ore>,
-        <contenttweaker:bismuth_ore>
+        <contenttweaker:bismuth_ore>,
+        <contenttweaker:rhodium_ore>,
+        <contenttweaker:molybdenum_ore>,
+        <contenttweaker:beryllium_ore>,
+        <contenttweaker:germanium_ore>
     ],
 
     TE_pulv: [
@@ -4292,6 +4451,7 @@ val to_clean as IItemStack[][string] = {
         <draconicevolution:draconium_ore>,
         <contenttweaker:moissanite_ore>,
         <betternether:cincinnasite_ore>,
+        <netherite:ancientdebris>,
 
         <netherendingores:ore_other_1:6>,
         <netherendingores:ore_other_1:8>,
@@ -4330,7 +4490,15 @@ val to_clean as IItemStack[][string] = {
         <contenttweaker:chrome_ore>,
         <contenttweaker:neodymium_ore>,
         <contenttweaker:bismuth_ore>,
-        <contenttweaker:orichalcum_ore>
+        <contenttweaker:rhodium_ore>,
+        <contenttweaker:orichalcum_ore>,
+        <contenttweaker:molybdenum_ore>,
+        <contenttweaker:beryllium_ore>,
+        <contenttweaker:germanium_ore>,
+        <contenttweaker:barite_ore>,
+        <contenttweaker:flolit_ore>,
+        <contenttweaker:tantalum_ore>,
+        <contenttweaker:strontium_chunk>
     ],
     TE_furn: [
         
@@ -4528,8 +4696,11 @@ val drilling_fluid_amount as int[string] = {
 
     mithril: 300,
     chrome: 320,
+    rhodium: 350,
     gallium: 350,
     neodymium: 500,
+    arsenic: 600,
+    strontium: 600,
     vibranium: 450,
     arkenium: 400,
     draconium: 650,
@@ -4543,6 +4714,9 @@ val drilling_fluid_amount as int[string] = {
     molybdenum: 1200,
     tantalum: 800,
     zirconium: 1200,
+    germanium: 1000,
+    niobium: 1200,
+
     spaceice: 1000,
     xenotime: 1000,
     death_metal: 1500,
@@ -4651,17 +4825,15 @@ for oredic in [
     
 
     <ore:oreBauxite>,
-    <ore:oreFlolit>,
     
-    <ore:oreBarite>,
+    
+    <ore:oreNiobium>,
+    <ore:oreTantalum>,
     
     <ore:oreZirconium>,
     <ore:oreDeathMetal>,
-    <ore:oreKikeridan>,
-
-   
-    //<ore:oreVanadium>,
-    <ore:oreMolybdenum>
+    <ore:oreKikeridan>
+    
 ] as IOreDictEntry[]{
     //oredic.removeItems(oredic.items);
     oredic.add(<contenttweaker:dummy>);

@@ -3,6 +3,7 @@ import crafttweaker.item.WeightedItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
 import crafttweaker.data.IData;
 
 import mods.requious.Assembly;
@@ -275,6 +276,32 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:infinity_treat>
     [null, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, <contenttweaker:galastem>, null]
 ]);
 
+
+{//leap 2
+    {
+        var rec = RecipeBuilder.newBuilder("leap2", "sf_infuser", 20 * 30);
+        rec.addEnergyPerTickInput(500 * 1000 * 1000);
+
+        rec.addOutput(<liquid:leap2> * 20000);
+        rec.addFluidInput(<liquid:leap> * 15000);
+
+        rec.addFluidInput(<liquid:dark_catalyst> * 5000);
+        rec.addFluidOutput(<liquid:dark_catalyst4> * 2000);
+        rec.addFluidOutput(<liquid:dark_catalyst1> * 3000);
+
+        rec.addItemInput(<contenttweaker:will_singularity>);
+        rec.addInputs(
+            <contenttweaker:gerdurmol_ingot> * 64,
+            <alchemistry:ingot:71> * 64,
+            <alchemistry:element:75> * 64,
+            <alchemistry:element:96> * 64,
+            <alchemistry:element:100> * 64,
+            <contenttweaker:titanakor_cells> * 4
+        );
+        
+        rec.build();
+    }
+}
 
 
 {//bouncy matter

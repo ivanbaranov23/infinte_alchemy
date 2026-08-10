@@ -100,6 +100,26 @@ function addMekOreNew(
         [<contenttweaker:chrome_ore>, <contenttweaker:chrome_chunk>], 
         <gas:chrome>, <contenttweaker:chrome_shard>, <contenttweaker:chrome_cluster>
     );
+    //arsenic
+    addMekOreNew(
+        <gas:arsenic>, <gas:cleanarsenic>, 
+        <contenttweaker:arsenic_crystal>, <contenttweaker:arsenic_shard>, <contenttweaker:arsenic_clump>, <contenttweaker:arsenic_dirty_dust>, 
+        <contenttweaker:arsenic_dust>
+    );
+    addMekOreFix(
+        [<contenttweaker:arsenic_ore>, <contenttweaker:arsenic_chunk>], 
+        <gas:arsenic>, <contenttweaker:arsenic_shard>, <contenttweaker:arsenic_clump>
+    );
+    //rhodium
+    addMekOreNew(
+        <gas:rhodium>, <gas:cleanrhodium>, 
+        <contenttweaker:rhodium_crystal>, <contenttweaker:rhodium_shard>, <contenttweaker:rhodium_clump>, <contenttweaker:rhodium_dirty_dust>, 
+        <contenttweaker:rhodium_dust>
+    );
+    addMekOreFix(
+        [<contenttweaker:rhodium_ore>, <contenttweaker:rhodium_chunk>], 
+        <gas:rhodium>, <contenttweaker:rhodium_shard>, <contenttweaker:rhodium_clump>
+    );
 
     //gallium
     addMekOreNew(
@@ -123,6 +143,16 @@ function addMekOreNew(
         <gas:neodymium>, <contenttweaker:neodymium_shard>, <contenttweaker:neodymium_cluster>
     );
 
+    //tantalum
+    addMekOreNew(
+        <gas:tantalum>, <gas:cleantantalum>, 
+        <contenttweaker:tantalum_crystal>, <contenttweaker:tantalum_shard>, <contenttweaker:tantalum_clump>, <contenttweaker:tantalum_dirty_dust>, 
+        <contenttweaker:tantalum_dust>
+    );
+    addMekOreFix(
+        [<contenttweaker:tantalum_chunk>], 
+        <gas:tantalum>, <contenttweaker:tantalum_shard>, <contenttweaker:tantalum_clump>
+    );
     
     //arkenium
     addMekOreNew(
@@ -176,6 +206,37 @@ function addMekOreNew(
         <gas:zirconium>, <contenttweaker:zirconium_shard>, <contenttweaker:zirconium_clump>
     );
 
+    //germanium
+    addMekOreNew(
+        <gas:germanium>, <gas:cleangermanium>, 
+        <contenttweaker:germanium_crystal>, <contenttweaker:germanium_shard>, <contenttweaker:germanium_clump>, <contenttweaker:germanium_dirty_dust>, 
+        <contenttweaker:germanium_dust>
+    );
+    addMekOreFix(
+        [<contenttweaker:germanium_ore>, <contenttweaker:germanium_chunk>], 
+        <gas:germanium>, <contenttweaker:germanium_shard>, <contenttweaker:germanium_clump>
+    );
+    //molybdenum
+    addMekOreNew(
+        <gas:molybdenum>, <gas:cleanmolybdenum>, 
+        <contenttweaker:molybdenum_crystal>, <contenttweaker:molybdenum_shard>, <contenttweaker:molybdenum_clump>, <contenttweaker:molybdenum_dirty_dust>, 
+        <contenttweaker:molybdenum_dust>
+    );
+    addMekOreFix(
+        [<contenttweaker:molybdenum_ore>, <contenttweaker:molybdenum_chunk>], 
+        <gas:molybdenum>, <contenttweaker:molybdenum_shard>, <contenttweaker:molybdenum_clump>
+    );
+    //niobium
+    addMekOreNew(
+        <gas:niobium>, <gas:cleanniobium>, 
+        <contenttweaker:niobium_crystal>, <contenttweaker:niobium_shard>, <contenttweaker:niobium_clump>, <contenttweaker:niobium_dirty_dust>, 
+        <contenttweaker:niobium_dust>
+    );
+    addMekOreFix(
+        [<contenttweaker:niobium_chunk>], 
+        <gas:niobium>, <contenttweaker:niobium_shard>, <contenttweaker:niobium_clump>
+    );
+
     //kikeridan
     addMekOreNew(
         <gas:kikeridan>, <gas:cleankikeridan>, 
@@ -187,6 +248,7 @@ function addMekOreNew(
         <gas:kikeridan>, <contenttweaker:kikeridan_shard>, <contenttweaker:kikeridan_cluster>
     );
     
+    //death
     addMekOreNew(
         <gas:death_metal>, <gas:cleandeath_metal>, 
         <contenttweaker:death_metal_crystal>, <contenttweaker:death_metal_shard>, <contenttweaker:death_metal_clump>, <contenttweaker:death_metal_dirty_dust>, 

@@ -1,0 +1,17 @@
+{
+	x: 21.5d,
+	y: 8.0d,
+	text: [
+		"Source of Tantalum and Niobium"
+	],
+	dependencies: [
+		"bd6cbf81"
+	],
+	tasks: [{
+		uid: "6e9fffbb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:tantalum_ore"
+		}]
+	}]
+}

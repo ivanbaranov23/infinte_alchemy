@@ -1,0 +1,11 @@
+{
+	x: 5.0d,
+	y: -6.0d,
+	tasks: [{
+		uid: "c5c8b7ca",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:lapis_lazuli_seeds"
+		}]
+	}]
+}

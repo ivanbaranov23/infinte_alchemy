@@ -1,0 +1,129 @@
+{
+	title: "Research Ores",
+	icon: "contenttweaker:research_ores",
+	x: -2.0d,
+	y: 5.0d,
+	shape: "gear",
+	text: [
+		"Gives access to \"return to stone\" recipes in large deepslate barrel."
+	],
+	dependencies: [
+		"231754b8"
+	],
+	tasks: [{
+		uid: "9c808c33",
+		type: "item",
+		items: [{
+			item: "contenttweaker:stoneleaf_dense_ore"
+		}],
+		count: 2L
+	},
+	{
+		uid: "0ab2f51d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:bismuth_ore"
+		}],
+		count: 12L
+	},
+	{
+		uid: "20039781",
+		type: "item",
+		items: [{
+			item: "contenttweaker:burn_powder"
+		}],
+		count: 32L
+	},
+	{
+		uid: "e57ed29d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sand_token"
+		}],
+		count: 12L
+	},
+	{
+		uid: "15574f21",
+		type: "item",
+		items: [{
+			item: "densemetals:dense_copper_ore"
+		}],
+		count: 8L
+	},
+	{
+		uid: "c7be058e",
+		type: "item",
+		items: [{
+			item: "densemetals:dense_nickel_ore"
+		}],
+		count: 8L
+	},
+	{
+		uid: "447b269a",
+		type: "item",
+		items: [{
+			item: "densemetals:dense_uranium_ore"
+		}],
+		count: 2L
+	},
+	{
+		uid: "97161faf",
+		type: "item",
+		items: [{
+			item: "erebus:ore_temple"
+		}],
+		count: 4L
+	},
+	{
+		uid: "b16df93f",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity 1 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "bf66b827",
+		type: "item",
+		items: [{
+			item: "extendedcrafting:singularity 1 3"
+		}],
+		count: 3L
+	},
+	{
+		uid: "bb799cf2",
+		type: "item",
+		items: [{
+			item: "moretcon:blockbloodstone"
+		}],
+		count: 4L
+	},
+	{
+		uid: "09275112",
+		type: "item",
+		items: [{
+			item: "twilightforest:ironwood_raw"
+		}],
+		count: 16L
+	},
+	{
+		uid: "f419dd14",
+		type: "item",
+		items: [{
+			item: "twilightforest:trollsteinn"
+		}],
+		count: 8L
+	},
+	{
+		uid: "549dd2cb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_ores"
+		}]
+	}],
+	rewards: [{
+		uid: "68929e9e",
+		type: "item",
+		item: "contenttweaker:research_ores"
+	}]
+}

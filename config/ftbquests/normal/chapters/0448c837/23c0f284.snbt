@@ -1,0 +1,18 @@
+{
+	x: -3.0d,
+	y: 0.0d,
+	text: [
+		"In case you need to speed casting ingots."
+	],
+	dependencies: [
+		"d41c079d"
+	],
+	optional: true,
+	tasks: [{
+		uid: "e60acead",
+		type: "item",
+		items: [{
+			item: "modularmachinery:ingot_caster_controller"
+		}]
+	}]
+}

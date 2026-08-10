@@ -533,9 +533,22 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 				<contenttweaker:glass_hull>, 
 				<thermalfoundation:material:160>, <minecraft:glass>, 1500
 			);
+
+			mods.tconstruct.Casting.addTableRecipe(
+				<contenttweaker:glass_hull>, 
+				<contenttweaker:kovar_ingot>,
+				<liquid:glass>, 1000,
+				true
+			);
+			mods.thermalexpansion.InductionSmelter.addRecipe(
+				<contenttweaker:glass_hull>, 
+				<contenttweaker:kovar_ingot>, <minecraft:glass>, 1500
+			);
+
+			
 			scripts.content_machines.addAssemblerRecipe(
-				[<contenttweaker:glass_hull> * 2],
-				[<thermalfoundation:material:160>],
+				[<contenttweaker:glass_hull> * 4],
+				[<contenttweaker:kovar_ingot>],
 				<liquid:glass> * 1000,
 				5, 16
 			);

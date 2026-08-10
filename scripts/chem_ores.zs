@@ -466,6 +466,12 @@ scripts.content_machines.addFluidMixerRecipe(
 	);
 }
 
+{//ancient debris
+    mods.mekanism.reaction.addRecipe(
+        <erebus:materials:7> * 3, <liquid:liquidhallowsite> * 576, <gas:explosion_stone_glue> * 1000, 
+        <netherite:ancientdebris>, <gas:waste_gas> * (20), 1000, 60
+    );
+}
 {//draconium
     mods.mekanism.reaction.addRecipe(
         <contenttweaker:imperomite_catalyst>,<liquid:dragon_spit> * 4000, <gas:ethyl_cyanoacrylate> * 250, 
@@ -622,13 +628,13 @@ scripts.content_machines.addFluidMixerRecipe(
 {//tantalum niobium
     scripts.content_machines.addAdvancedMixerRecipe(
         [], [<liquid:tantalum_niobium_f> * 1000], 
-        [<contenttweaker:tantalum_ore_dust> * 4], [<liquid:hf> * 1000], 
+        [<contenttweaker:tantalum_ore_dust> * 2], [<liquid:hf> * 1000], 
         40, 20000
     );
     scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:imperomite_catalyst_dust>], [
-            <liquid:tantalum_f> * 1000,
-            <liquid:niobium_f> * 1000
+            <liquid:tantalum_f> * 500,
+            <liquid:niobium_f> * 500
         ], 
         [<contenttweaker:imperomite_catalyst>], [<liquid:tantalum_niobium_f> * 1000], 
         40, 20000
@@ -637,8 +643,9 @@ scripts.content_machines.addFluidMixerRecipe(
     scripts.content_machines.addFluidSieveRecipeRandom(
         [
             <contenttweaker:filter_empty>,
-            <contenttweaker:tantalum_dust> % 75
-        ], <liquid:hf> * 400, 
+            <contenttweaker:tantalum_pieces> % 75,
+            <contenttweaker:tantalum_dust> % 25
+        ], <liquid:hf> * 250, 
         <liquid:tantalum_f> * 500, <contenttweaker:filter_solar>,
         <contenttweaker:uranium_mesh>,
         40, 100000
@@ -646,8 +653,9 @@ scripts.content_machines.addFluidMixerRecipe(
     scripts.content_machines.addFluidSieveRecipeRandom(
         [
             <contenttweaker:filter_empty>,
-            <contenttweaker:niobium_dust> % 75
-        ], <liquid:hf> * 400, 
+            <contenttweaker:niobium_pieces> % 75,
+            <contenttweaker:niobium_dust> % 25
+        ], <liquid:hf> * 250, 
         <liquid:niobium_f> * 500, <contenttweaker:filter_solar>,
         <contenttweaker:uranium_mesh>,
         40, 100000

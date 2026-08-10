@@ -1,0 +1,20 @@
+{
+	x: 6.0d,
+	y: -1.0d,
+	dependencies: [
+		"c8986548"
+	],
+	optional: true,
+	tasks: [{
+		uid: "b3ea5ac3",
+		type: "item",
+		items: [{
+			item: "enderio:item_capacitor_melodic"
+		}]
+	}],
+	rewards: [{
+		uid: "aa52eaea",
+		type: "item",
+		item: "enderio:item_capacitor_melodic"
+	}]
+}

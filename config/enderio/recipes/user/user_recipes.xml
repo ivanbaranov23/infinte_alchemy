@@ -59,6 +59,9 @@
     <grindingball name="bedrockium_alloy_ball" durability="3600000" grinding="1.4" chance="1.4" power="0.9">
         <item name="item:contenttweaker:bedrockium_alloy_ball"/>
     </grindingball>
+    <grindingball name="boarsteel_ball" durability="2000000" grinding="1.4" chance="1.4" power="0.9">
+        <item name="item:contenttweaker:boarsteel_ball"/>
+    </grindingball>
     <grindingball name="proxii_ball" durability="300000" grinding="1.6" chance="2.0" power="1.1">
         <item name="item:contenttweaker:proxii_ball"/>
     </grindingball>

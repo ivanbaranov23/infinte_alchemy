@@ -200,27 +200,17 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
 }
 
 {//parallel
-    mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockparallelcontroller>, [
-        [<modularmachinery:blockcasing:5>, <modularmachinery:blockcasing:5>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockcasing:5>, <modularmachinery:blockcasing:5>], 
-        [<modularmachinery:blockcasing:5>, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, null, <extendedcrafting:singularity_custom:51>, <modularmachinery:blockcasing:5>], 
-        [<contenttweaker:neuronium_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_alloy_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:neuronium_plate>], 
-        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, null, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, null, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
-        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, <contenttweaker:star_alloy_plate>, <enderio:item_capacitor_stellar>, <contenttweaker:cursed_star>, <enderio:item_capacitor_stellar>, <contenttweaker:star_alloy_plate>, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
-        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, null, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, null, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
-        [<contenttweaker:neuronium_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_alloy_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:neuronium_plate>], 
-        [<modularmachinery:blockcasing:5>, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, null, <extendedcrafting:singularity_custom:51>, <modularmachinery:blockcasing:5>], 
-        [<modularmachinery:blockcasing:5>, <modularmachinery:blockcasing:5>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockcasing:5>, <modularmachinery:blockcasing:5>]
+    recipes.addShaped("ia_blockparallelcontroller", <modularmachinery:blockparallelcontroller>, [
+        [<modularmachinery:blockcasing:5>, <enderio:item_capacitor_melodic>, <modularmachinery:blockcasing:5>], 
+        [<enderio:item_capacitor_melodic>, <minecraft:nether_star>, <enderio:item_capacitor_melodic>], 
+        [<modularmachinery:blockcasing:5>, <enderio:item_capacitor_melodic>, <modularmachinery:blockcasing:5>]
     ]);
     mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockparallelcontroller:1>, [
-        [<modularmachinery:blockparallelcontroller>, <modularmachinery:blockcasing:5>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockcasing:5>, <modularmachinery:blockparallelcontroller>], 
-        [<modularmachinery:blockcasing:5>, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, null, <extendedcrafting:singularity_custom:51>, <modularmachinery:blockcasing:5>], 
-        [<contenttweaker:neuronium_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_alloy_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:neuronium_plate>], 
-        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, null, <ometweaks:kikeridan_capacitor>, <ometweaks:kikeridan_capacitor>, <ometweaks:kikeridan_capacitor>, null, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
-        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, <contenttweaker:star_alloy_plate>, <ometweaks:kikeridan_capacitor>, <contenttweaker:cursed_star>, <ometweaks:kikeridan_capacitor>, <contenttweaker:star_alloy_plate>, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
-        [<contenttweaker:neuronium_plate>, <contenttweaker:star_polymer>, null, <ometweaks:kikeridan_capacitor>, <ometweaks:kikeridan_capacitor>, <ometweaks:kikeridan_capacitor>, null, <contenttweaker:star_polymer>, <contenttweaker:neuronium_plate>], 
-        [<contenttweaker:neuronium_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_alloy_plate>, null, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:neuronium_plate>], 
-        [<modularmachinery:blockcasing:5>, <extendedcrafting:singularity_custom:51>, null, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, <contenttweaker:star_polymer>, null, <extendedcrafting:singularity_custom:51>, <modularmachinery:blockcasing:5>], 
-        [<modularmachinery:blockparallelcontroller>, <modularmachinery:blockcasing:5>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockcasing:5>, <modularmachinery:blockparallelcontroller>]
+        [<modularmachinery:blockparallelcontroller>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockparallelcontroller>], 
+        [<contenttweaker:neuronium_plate>, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, <contenttweaker:neuronium_plate>], 
+        [<contenttweaker:neuronium_plate>, <enderio:item_capacitor_stellar>, <contenttweaker:cursed_star>, <enderio:item_capacitor_stellar>, <contenttweaker:neuronium_plate>], 
+        [<contenttweaker:neuronium_plate>, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, <enderio:item_capacitor_stellar>, <contenttweaker:neuronium_plate>], 
+        [<modularmachinery:blockparallelcontroller>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockparallelcontroller>]
     ]);
     mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:blockparallelcontroller:2>, [
         [<modularmachinery:blockparallelcontroller:1>, <modularmachinery:blockcasing:5>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <contenttweaker:neuronium_plate>, <modularmachinery:blockcasing:5>, <modularmachinery:blockparallelcontroller:1>], 

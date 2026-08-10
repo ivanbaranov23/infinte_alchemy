@@ -165,6 +165,11 @@ recipes.addShaped("mm_worm_pit_controller", <modularmachinery:worm_pit_controlle
 	[<contenttweaker:enspiced_spicy_bioblend>, <actuallyadditions:block_misc:9>, <contenttweaker:enspiced_spicy_bioblend>], 
 	[<contenttweaker:sandworm_chitin>, <contenttweaker:stomper>, <contenttweaker:sandworm_chitin>]
 ]);
+recipes.addShaped("mm_ingot_caster_controller", <modularmachinery:ingot_caster_controller>, [
+	[<mekanism:controlcircuit:2>, <tconstruct:cast_custom>, <mekanism:controlcircuit:2>], 
+	[<moreplates:osmiridium_gear>, <actuallyadditions:block_misc:9>, <moreplates:osmiridium_gear>], 
+	[<mekanism:controlcircuit:2>, <simplyjetpacks:metaitemmods:30>, <mekanism:controlcircuit:2>]
+]);
 
 {recipes.addShaped("mm_plankton_tank_controller", <modularmachinery:plankton_tank_controller>, [
 		[<minecraft:prismarine:2>, <minecraft:prismarine:2>, <minecraft:prismarine:2>], 
@@ -241,6 +246,35 @@ recipes.addShaped("mm_blood_meat_infuser_controller", <modularmachinery:blood_me
 	[<industrialforegoing:ore_washer>, <contenttweaker:blood_frame>, <industrialforegoing:ore_washer>], 
 	[<contenttweaker:blood_bronze_plate>, <contenttweaker:tignalum_gear>, <contenttweaker:blood_bronze_plate>]
 ]);
+scripts.content_machines.addBioAssemblerRecipe(
+    [<modularmachinery:blood_meat_infuser_factory_controller>], null,
+	[
+		<modularmachinery:blood_meat_infuser_controller> * 8,
+		<contenttweaker:mana_frame>,
+		<modularmachinery:blockparallelcontroller>
+	],
+	[],
+	null,
+	20, 1000
+);
+
+recipes.addShaped("mm_blood_meat_fermenter_controller", <modularmachinery:blood_meat_fermenter_controller>, [
+	[<contenttweaker:blood_bronze_plate>, <industrialforegoing:meat_feeder>, <contenttweaker:blood_bronze_plate>], 
+	[<industrialforegoing:ore_fermenter>, <contenttweaker:blood_frame>, <industrialforegoing:ore_fermenter>], 
+	[<contenttweaker:blood_bronze_plate>, <contenttweaker:tignalum_gear>, <contenttweaker:blood_bronze_plate>]
+]);
+scripts.content_machines.addBioAssemblerRecipe(
+    [<modularmachinery:blood_meat_fermenter_factory_controller>], null,
+	[
+		<modularmachinery:blood_meat_fermenter_controller> * 8,
+		<contenttweaker:mana_frame>,
+		<modularmachinery:blockparallelcontroller>
+	],
+	[],
+	null,
+	20, 1000
+);
+
 recipes.addShaped("mm_will_machine_controller", <modularmachinery:will_machine_controller>, [
 	[<taiga:violium_block>, <tconevo:metal:34>, <taiga:violium_block>], 
 	[<contenttweaker:glass_cloth>, <contenttweaker:soul_frame>, <contenttweaker:glass_cloth>], 

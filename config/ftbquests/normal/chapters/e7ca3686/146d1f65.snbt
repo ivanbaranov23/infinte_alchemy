@@ -3,7 +3,12 @@
 	x: -2.0d,
 	y: 3.0d,
 	text: [
-		"Many crushing recipes (especially the ones in SAG mill only) benefit greatly from grinding balls."
+		"Many crushing recipes (especially the ones in SAG mill only) benefit greatly from grinding balls.",
+		"",
+		"But there is a problem due to increase of energy use of EIO machines. Say a recipe takes 5000 rf. Recipe time would be 5000/rft ticks. ",
+		"But what if rft is more than 5000? Say 128000 rft. Then the machine will finish recipe in 1 tick but still eats 128000 rf. And more importantly will damage the ball by that amount.",
+		"",
+		"TLDR: capacitors over lvl 1 are eating through the balls and power for no benefit at all."
 	],
 	dependencies: [
 		"76300e8f"

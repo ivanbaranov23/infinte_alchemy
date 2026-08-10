@@ -7,6 +7,9 @@ recipes.addShaped("ia_frame10b", <extendedcrafting:frame>, [
 	[<extendedcrafting:material:2>, <contenttweaker:life>, <extendedcrafting:material:2>]
 ]);
 
+//removing NS block cus AC one looks better
+recipes.remove(<extendedcrafting:storage:2>);
+
 //tables
 recipes.remove(<extendedcrafting:table_basic>);
 recipes.addShaped("ia_ec_table0", <extendedcrafting:table_basic>, [

@@ -1,0 +1,14 @@
+{
+	x: 3.0d,
+	y: -6.0d,
+	dependencies: [
+		"6a54e79c"
+	],
+	tasks: [{
+		uid: "e893ef4c",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:saltpeter_seeds"
+		}]
+	}]
+}

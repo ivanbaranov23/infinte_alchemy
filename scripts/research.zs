@@ -382,7 +382,22 @@ addResearchRecipe("Bacteria", <contenttweaker:bacteria> * 4, <contenttweaker:res
 );
 
 
+addAdvancedResearchRecipe("ReturnToStone", <additionalcompression:stone_compressed:2>, <contenttweaker:research_ores>, [
+    <contenttweaker:sand_token> * 12,
+    <densemetals:dense_copper_ore> * 8,
+    <contenttweaker:stoneleaf_dense_ore> * 2,
+    <densemetals:dense_uranium_ore> * 2,
+    <contenttweaker:burn_powder> * 32,
+    <extendedcrafting:singularity:2> * 2,
+    <extendedcrafting:singularity:3> * 3,
+    <moretcon:blockbloodstone> * 4,
 
+    <contenttweaker:bismuth_ore> * 12,
+    <twilightforest:ironwood_raw> * 16,
+    <twilightforest:trollsteinn> * 8,
+    <erebus:ore_temple> * 4,
+    <densemetals:dense_nickel_ore> * 8
+], 10000, 20 * 5);
 addAdvancedResearchRecipe("Soul", <minecraft:nether_star>, <contenttweaker:research_soul>, [
     <enderio:item_material:52> * 32,
     <contenttweaker:corrupted_ambrosium> * 4,

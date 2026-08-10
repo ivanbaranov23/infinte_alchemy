@@ -238,14 +238,14 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
         ],
         <contenttweaker:spider_target_dusts>: [
             [
-                <densemetals:dense_redstone_ore> * 128,
+                <densemetals:dense_redstone_ore> * 160,
                 <contenttweaker:electrotine_ore_dense> * 128,
                 <densemetals:dense_coal_ore> * 128,
                 <densemetals:dense_quartz_ore> * 128,
                 <minecraft:glowstone> * 256
             ],
             [
-                <densemetals:dense_redstone_ore> * 128,
+                <densemetals:dense_redstone_ore> * 160,
                 <contenttweaker:electrotine_ore_dense> * 128,
                 <densemetals:dense_coal_ore> * 128,
                 <densemetals:dense_quartz_ore> * 128,
@@ -449,6 +449,7 @@ static fuels as ILiquidStack[IItemStack] = {
     //<contenttweaker:stone_idol>: null,
     <contenttweaker:tincan_mech>: <liquid:empowered_steam> * 3000,
     <contenttweaker:radiotoad_mech>: <liquid:liquidfusionfuel> * 10000,
+    <contenttweaker:spider_mech>: <liquid:spider_mead> * 10000,
     <contenttweaker:robodruid_mech>: <liquid:druid_soup> * 15000,
     <contenttweaker:goldscarab_mech>: <liquid:nuit_fuel> * 20000,
     <contenttweaker:bloodhunter_mech>: <liquid:lifeessence> * (1000 * 50)

@@ -1,7 +1,7 @@
 {
 	title: "Master Automater",
-	x: 4.0d,
-	y: -4.0d,
+	x: 3.0d,
+	y: -5.0d,
 	text: [
 		"Can also be bought in the shop"
 	],

@@ -120,6 +120,8 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 
 	//napalm
 	TEImbuer.addRecipe(<liquid:napalm> * 200, <thermalfoundation:material:68>, <liquid:gasoline> * 200, 4800);
+	TEImbuer.addRecipe(<liquid:napalm> * 200, <thermalfoundation:material:68>, <liquid:diesel> * 200, 4800);
+	TEImbuer.addRecipe(<liquid:napalm> * 200, <thermalfoundation:material:68>, <liquid:refined_fuel> * 200, 4800);
 
 	//cracking
 	Vat.addRecipe(

@@ -5,7 +5,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.modularmachinery.RecipeBuilder;
 
 {//water
-    var rec = RecipeBuilder.newBuilder("water", "gas_column", 500);
+    var rec = RecipeBuilder.newBuilder("water", "gas_column", 100);
     rec.addEnergyPerTickInput(320);
 
 	rec.addGasOutput(<gas:hydrogen> * 20000);
@@ -19,7 +19,7 @@ import mods.modularmachinery.RecipeBuilder;
     rec.build();
 }
 {//brine
-    var rec = RecipeBuilder.newBuilder("brine", "gas_column", 200);
+    var rec = RecipeBuilder.newBuilder("brine", "gas_column", 40);
     rec.addEnergyPerTickInput(512);
 
     rec.addGasOutput(<gas:sodium> * 300);
@@ -31,7 +31,7 @@ import mods.modularmachinery.RecipeBuilder;
     rec.build();
 }
 {//waste_gas
-    var rec = RecipeBuilder.newBuilder("waste_gas", "gas_column", 200);
+    var rec = RecipeBuilder.newBuilder("waste_gas", "gas_column", 100);
     rec.addEnergyPerTickInput(1024);
 
 	rec.addGasOutput(<gas:fluorine> * 2000);
@@ -49,7 +49,7 @@ import mods.modularmachinery.RecipeBuilder;
     rec.build();
 }
 {//rare earth
-    var rec = RecipeBuilder.newBuilder("rare_earth_slurry", "gas_column", 200);
+    var rec = RecipeBuilder.newBuilder("rare_earth_slurry", "gas_column", 100);
     rec.addEnergyPerTickInput(1024);
 
 	rec.addItemOutput(<contenttweaker:neodymium_dirty_dust>);

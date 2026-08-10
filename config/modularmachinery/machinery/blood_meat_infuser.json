@@ -2,6 +2,7 @@
     "registryname": "blood_meat_infuser",
     "localizedname": "Blood Meat Infuser",
     "color": "381216",
+    "has-factory": true,
     "parts": [
         {
             "x": -1,

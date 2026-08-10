@@ -59,6 +59,8 @@ addSeeds(<mysticalagriculture:menril_essence>, <mysticalagriculture:menril_seeds
 addSeeds(<mysticalagriculture:limestone_essence>, <mysticalagriculture:limestone_seeds>, 1);
 addSeeds(<mysticalagriculture:sky_stone_essence>, <mysticalagriculture:sky_stone_seeds>, 1);
 
+addSeeds(<mysticalcreations:fertilizer_essence>, <mysticalcreations:fertilizer_seeds>, 1);
+
 //t1 metals
 addSeeds(<mysticalagriculture:iron_essence>, <mysticalagriculture:iron_seeds>, 2);
 addSeeds(<mysticalagriculture:copper_essence>, <mysticalagriculture:copper_seeds>, 2);
@@ -74,6 +76,9 @@ addSeeds(<mysticalcreations:karmesine_essence>, <mysticalcreations:karmesine_see
 addSeeds(<mysticalcreations:ovium_essence>, <mysticalcreations:ovium_seeds>, 2);
 addSeeds(<mysticalcreations:jauxum_essence>, <mysticalcreations:jauxum_seeds>, 2);
 
+addSeeds(<mysticalagriculture:saltpeter_essence>, <mysticalagriculture:saltpeter_seeds>, 2);
 addSeeds(<mysticalagriculture:silicon_essence>, <mysticalagriculture:silicon_seeds>, 2);
+
+
 
 addSeeds(<mysticalagriculture:terrasteel_essence>, <mysticalagriculture:terrasteel_seeds>, 5);

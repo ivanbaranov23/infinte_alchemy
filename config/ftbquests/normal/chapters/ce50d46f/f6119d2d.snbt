@@ -9,7 +9,7 @@
 		uid: "6006ed84",
 		type: "item",
 		items: [{
-			item: "modularmachinery:blockparallelcontroller"
+			item: "modularmachinery:blockparallelcontroller 1 1"
 		}]
 	}]
 }
