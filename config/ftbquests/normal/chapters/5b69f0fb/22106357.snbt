@@ -10,12 +10,11 @@
 		"You can get more output liquid or add chance to not consume inputs.",
 		"Mix and match pillars for desired effect. ",
 		"",
-		"All pillar effects are write per pillar."
+		"All pillar effects are written per pillar."
 	],
 	dependencies: [
 		"8f8c00ed",
-		"05dc6375",
-		"f9275816"
+		"05dc6375"
 	],
 	tasks: [{
 		uid: "9e7a6336",

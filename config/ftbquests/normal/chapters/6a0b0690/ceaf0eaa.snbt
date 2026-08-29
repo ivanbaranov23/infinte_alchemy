@@ -3,7 +3,9 @@
 	x: -4.0d,
 	y: 4.0d,
 	text: [
-		"Gives better recipe for enderious goop and enriched tar. Can be a source of methane and ancient dust"
+		"Gives better recipe for enderious goop and enriched tar. Can be a source of methane and ancient dust.",
+		"",
+		"Switching tar to enriched tar will speed up the machine 4 fold"
 	],
 	dependencies: [
 		"5d2a4453"

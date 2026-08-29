@@ -460,7 +460,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 			<contenttweaker:flesh_rod>,
 			<contenttweaker:bouncy_matter>
 		], 
-		10*1000*1000, 400, 6
+		1*1000*1000, 400, 6
 	);
 }
 {//tanks
@@ -753,12 +753,12 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	], 4000, 400);
 	//t5
 	//space
-	/*TartaricForge.addRecipe(<contenttweaker:reagent_crystal>, [
-		<contenttweaker:crystal_metal_ingot>,
-		<thermalfoundation:material:866>,
-		<bloodmagic:demon_extras:12>,
-		<bloodmagic:demon_crystal:*>
-	], 16000, 1000);*/
+	TartaricForge.addRecipe(<contenttweaker:reagent_ma>, [
+		<mysticalagriculture:ultimate_reprocessor>,
+		<contenttweaker:rune_cyclic>,
+		<bloodmagic:component:5>,
+		<ore:seedsTier5>
+	], 16000, 1000);
 	
 	//, 16000, 1000
 

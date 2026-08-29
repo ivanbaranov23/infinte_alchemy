@@ -285,6 +285,28 @@ recipes.addShaped("ia_atum_fertile_soil", <atum:fertile_soil>, [
 	[<atum:fertile_soil_pile>, <roots:elemental_soil>, <atum:fertile_soil_pile>]
 ]);
 
+
+{//ectoplasm
+    recipes.addShapeless("ia_evil_desert_dust", <contenttweaker:evil_desert_dust> * 3, [
+        <atum:ectoplasm> | <mod_lavacow:ectoplasm>,
+        <contenttweaker:sphalerite_dust>,
+        <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>,
+        <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>
+    ]);
+
+    recipes.addShapeless("extracting_ectoplasm", <atum:ectoplasm> * 2, [
+        <atum:anubiss_wrath:*>.only(function(item){
+            if (item.tag.memberGet("souls") as bool)
+                return (item.tag.souls.asInt() > 0);
+            return false;    
+        }).transformNew(function(item){
+            return item.withTag( item.tag + {
+                souls: item.tag.souls.asInt() - 1
+            } );
+        }), <enderio:item_material:74>
+    ]);
+}
+
 //kiln 
 recipes.remove(<atum:kiln>);
 mods.jei.JEI.hideCategory("atum.kiln");

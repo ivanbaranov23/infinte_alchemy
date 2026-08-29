@@ -339,11 +339,36 @@ for t in [
     <thermalfoundation:tool.shovel_steel>,
     <thermalfoundation:tool.pickaxe_steel>,
     <thermalfoundation:tool.axe_steel>,
-    <thermalfoundation:tool.hoe_steel>
+    <thermalfoundation:tool.hoe_steel>,
+
+    <redstonearsenal:tool.fishing_rod_flux>,
+    <thermalfoundation:tool.fishing_rod_copper>,
+    <thermalfoundation:tool.fishing_rod_tin>,
+    <thermalfoundation:tool.fishing_rod_silver>,
+    <thermalfoundation:tool.fishing_rod_lead>,
+    <thermalfoundation:tool.fishing_rod_aluminum>,
+    <thermalfoundation:tool.fishing_rod_nickel>,
+    <thermalfoundation:tool.fishing_rod_platinum>,
+    <thermalfoundation:tool.fishing_rod_steel>,
+    <thermalfoundation:tool.fishing_rod_electrum>,
+    <thermalfoundation:tool.fishing_rod_invar>,
+    <thermalfoundation:tool.fishing_rod_bronze>,
+    <thermalfoundation:tool.fishing_rod_constantan>,
+    <thermalfoundation:tool.fishing_rod_iron>,
+    <thermalfoundation:tool.fishing_rod_diamond>,
+    <thermalfoundation:tool.fishing_rod_gold>
 ] as IItemStack[]{
     mods.jei.JEI.removeAndHide(t);
 }
 
+{//fishing rods
+    scripts.helper.addCarryRecipe(<mysticalagriculture:inferium_fishing_rod>, <minecraft:fishing_rod:*>, [
+        [<mysticalagriculture:crafting>, <mysticalagriculture:crafting>, <immersiveengineering:material:2>],
+        [<mysticalagriculture:crafting>, <mysticalagriculture:crafting>],
+        [<immersiveengineering:material:2>, <mysticalagriculture:crafting>, <mysticalagriculture:crafting>]
+    ]);
+
+}
 
 //dark
 recipes.remove(<enderio:item_dark_steel_pickaxe>);

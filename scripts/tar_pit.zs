@@ -7,7 +7,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.modularmachinery.RecipeBuilder;
 
 {//enriched_tar
-    var rec = RecipeBuilder.newBuilder("enriched_tar", "tar_pit", 3 * 20);
+    var rec = RecipeBuilder.newBuilder("enriched_tar", "tar_pit", 3 * 20 * 4);
 
     rec.addEnergyPerTickInput(1000);
 
@@ -21,7 +21,7 @@ import mods.modularmachinery.RecipeBuilder;
 }
 {//goop
     {//goop1
-        var rec = RecipeBuilder.newBuilder("goop1", "tar_pit", 5 * 20);
+        var rec = RecipeBuilder.newBuilder("goop1", "tar_pit", 5 * 20 * 4);
 
         rec.addEnergyPerTickInput(1000);
 
@@ -35,7 +35,7 @@ import mods.modularmachinery.RecipeBuilder;
         rec.build();
     }
     {//goop2
-        var rec = RecipeBuilder.newBuilder("goop2", "tar_pit", 5 * 20);
+        var rec = RecipeBuilder.newBuilder("goop2", "tar_pit", 5 * 20 * 4);
 
         rec.addEnergyPerTickInput(1000);
 
@@ -52,7 +52,7 @@ import mods.modularmachinery.RecipeBuilder;
 {//gas
 
     {
-        var rec = RecipeBuilder.newBuilder("tar_gas", "tar_pit", 3 * 20);
+        var rec = RecipeBuilder.newBuilder("tar_gas", "tar_pit", 3 * 20 * 4);
 
         rec.addEnergyPerTickInput(1000);
 
@@ -65,7 +65,7 @@ import mods.modularmachinery.RecipeBuilder;
         rec.build();
     }
     {
-        var rec = RecipeBuilder.newBuilder("tar_gas2", "tar_pit", 15 * 20);
+        var rec = RecipeBuilder.newBuilder("tar_gas2", "tar_pit", 15 * 20 * 4);
 
         rec.addEnergyPerTickInput(1000000);
 
@@ -79,7 +79,7 @@ import mods.modularmachinery.RecipeBuilder;
 }
 
 {//bone1
-    var rec = RecipeBuilder.newBuilder("bone1", "tar_pit", 5 * 20);
+    var rec = RecipeBuilder.newBuilder("bone1", "tar_pit", 5 * 20 * 4);
 
     rec.addEnergyPerTickInput(1000);
 
@@ -94,7 +94,7 @@ import mods.modularmachinery.RecipeBuilder;
     <ore:boneCool>.add(<tconstruct:materials:21>);
     <ore:boneCool>.add(<tconstruct:materials:20>);
 
-    var rec = RecipeBuilder.newBuilder("bone2", "tar_pit", 5 * 20);
+    var rec = RecipeBuilder.newBuilder("bone2", "tar_pit", 5 * 20 * 4);
 
     rec.addEnergyPerTickInput(1000);
 
@@ -108,7 +108,7 @@ import mods.modularmachinery.RecipeBuilder;
     <ore:boneVeryCool>.add(<tconstruct:materials:17>);
     <ore:boneVeryCool>.add(<tconstruct:materials:22>);
 
-    var rec = RecipeBuilder.newBuilder("bone3", "tar_pit", 5 * 20);
+    var rec = RecipeBuilder.newBuilder("bone3", "tar_pit", 5 * 20 * 4);
 
     rec.addEnergyPerTickInput(1000);
 
@@ -119,7 +119,7 @@ import mods.modularmachinery.RecipeBuilder;
 }
 {//bone4
 
-    var rec = RecipeBuilder.newBuilder("bone4", "tar_pit", 5 * 20);
+    var rec = RecipeBuilder.newBuilder("bone4", "tar_pit", 5 * 20 * 4);
 
     rec.addEnergyPerTickInput(1000);
 

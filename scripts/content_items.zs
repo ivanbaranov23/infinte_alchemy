@@ -375,6 +375,9 @@ function addAtomicResource(name as string){
     VanillaFactory.createItem("xnet_wire").register();
     VanillaFactory.createBlock("xnet_block", <blockmaterial:rock>).register();
 
+    
+
+
     //soy
     VanillaFactory.createItem("soy_ingot").register();
     VanillaFactory.createItem("soy_plate").register();
@@ -660,6 +663,9 @@ function addAtomicResource(name as string){
 
     VanillaFactory.createItem("prometheum_pieces").register();
     VanillaFactory.createItem("prometheum_chunk").register();
+
+    VanillaFactory.createItem("valyrium_pieces").register();
+    VanillaFactory.createItem("valyrium_chunk").register();
 
     VanillaFactory.createItem("eezo_pieces").register();
     VanillaFactory.createItem("eezo_chunk").register();
@@ -1182,6 +1188,7 @@ function addAtomicResource(name as string){
         VanillaFactory.createItem("rubidium_pieces").register();
         VanillaFactory.createItem("rubidium_chunk").register();
         VanillaFactory.createItem("rubidium_dust").register();
+        VanillaFactory.createBlock("rubidium_block", <blockmaterial:rock>).register();
     }
 
     {
@@ -1498,6 +1505,7 @@ VanillaFactory.createFluid("luminessence", Color.fromHex("faffb7")).register();
     VanillaFactory.createItem("soul_codex5").register();
     VanillaFactory.createItem("soul_codex6").register();
     VanillaFactory.createItem("soul_codex7").register();
+    //VanillaFactory.createItem("soul_codex8").register();
     var sc8 = VanillaFactory.createItem("soul_codex8");
     sc8.glowing = true;
     sc8.rarity = "rare";
@@ -2078,6 +2086,7 @@ VanillaFactory.createItem("charcoal_ball").register();
 //fluids
 VanillaFactory.createFluid("sea_water", Color.fromHex("2c72c8")).register();
 VanillaFactory.createFluid("ocean_water", Color.fromHex("082779")).register();
+VanillaFactory.createFluid("deep_water", Color.fromHex("082779")).register();
 VanillaFactory.createFluid("seaweed_rich_water", Color.fromHex("1b8053")).register();
 
 VanillaFactory.createFluid("nectar_solution", Color.fromHex("88856e")).register();
@@ -2110,7 +2119,7 @@ registerMoltenMetal("ore_waste_ref3", Color.fromHex("5e042b"));
 VanillaFactory.createFluid("ore_waste3", Color.fromHex("340e1e")).register();
 
 addWater("muddy_sludge");
-addWater("radioactive_waste");
+addLava("radioactive_waste");
 
 {//oil things
     VanillaFactory.createFluid("kerosene", Color.fromHex("874723")).register();
@@ -2245,6 +2254,18 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
     
     VanillaFactory.createItem("wine_diamond").register();
     VanillaFactory.createItem("wine_diamond_cluster").register();
+}
+{//fishing
+    VanillaFactory.createItemFood("diamond_crab", 2).register();
+    VanillaFactory.createItemFood("oil_fish", 4).register();
+
+    VanillaFactory.createItemFood("fire_jellyfish", 2).register();
+    VanillaFactory.createItemFood("obsidian_trout", 2).register();
+    VanillaFactory.createItemFood("basalt_anchovy", 2).register();
+    //VanillaFactory.createItemFood("diamond_crab", 2).register();
+    //VanillaFactory.createItemFood("diamond_crab", 2).register();
+    //VanillaFactory.createItemFood("diamond_crab", 2).register();
+    
 }
 {//vitamins
     //hexane
@@ -2595,6 +2616,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     registerMoltenMetal("antimony", Color.fromHex("c1283a"));
 
     VanillaFactory.createFluid("fish_oil", Color.fromHex("a3925a")).register();
+    
 
     VanillaFactory.createItem("cactus_charcoal").register();
     VanillaFactory.createItem("cacti_foci").register();
@@ -2984,6 +3006,11 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     VanillaFactory.createItem("plant_unit").register();
 
+    VanillaFactory.createBlock("formic_prismarine", <blockmaterial:rock>).register();
+    VanillaFactory.createItem("formic_prismarine_dust").register();
+    VanillaFactory.createItem("prismatic_clay").register();
+    
+
     VanillaFactory.createItem("undead_essence").register();
     VanillaFactory.createItem("animal_essence").register();
     VanillaFactory.createItem("insect_essence").register();
@@ -2995,6 +3022,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("boarsteel_ingot").register();
     VanillaFactory.createItem("boarsteel_ball").register();
     VanillaFactory.createBlock("boarsteel_block", <blockmaterial:rock>).register();
+
 }
 {//extended carfting
     VanillaFactory.createItem("gargeruby").register();
@@ -3108,6 +3136,7 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("reagent_glass").register();
     VanillaFactory.createItem("reagent_crystal").register();
     VanillaFactory.createItem("reagent_pollution").register();
+    VanillaFactory.createItem("reagent_ma").register();
     VanillaFactory.createItem("reagent_potion").register();
     VanillaFactory.createItem("reagent_awakening").register();
     VanillaFactory.createItem("reagent_space").register();
@@ -3218,13 +3247,33 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
     addWater("circuit");
 
-    var rotor = VanillaFactory.createBlock("rotor", <blockmaterial:rock>);
-    rotor.axisAlignedBB = mods.contenttweaker.AxisAlignedBB.create(0.25, 0.0, 0.25, 0.75, 1.0, 0.75);
-    rotor.setBlockLayer("TRANSLUCENT");
-    rotor.setLightOpacity(0);
-    rotor.setTranslucent(true);
-    rotor.setFullBlock(false);
-    rotor.register();
+    {    
+        var rotor = VanillaFactory.createBlock("rotor", <blockmaterial:rock>);
+        rotor.axisAlignedBB = mods.contenttweaker.AxisAlignedBB.create(0.25, 0.0, 0.25, 0.75, 1.0, 0.75);
+        rotor.setBlockLayer("TRANSLUCENT");
+        rotor.setLightOpacity(0);
+        rotor.setTranslucent(true);
+        rotor.setFullBlock(false);
+        rotor.register();
+    }
+    {    
+        var rotor2 = VanillaFactory.createBlock("rotor2", <blockmaterial:rock>);
+        rotor2.axisAlignedBB = mods.contenttweaker.AxisAlignedBB.create(0.25, 0.0, 0.25, 0.75, 1.0, 0.75);
+        rotor2.setBlockLayer("TRANSLUCENT");
+        rotor2.setLightOpacity(0);
+        rotor2.setTranslucent(true);
+        rotor2.setFullBlock(false);
+        rotor2.register();
+    }
+    {    
+        var rotor3 = VanillaFactory.createBlock("rotor3", <blockmaterial:rock>);
+        rotor3.axisAlignedBB = mods.contenttweaker.AxisAlignedBB.create(0.25, 0.0, 0.25, 0.75, 1.0, 0.75);
+        rotor3.setBlockLayer("TRANSLUCENT");
+        rotor3.setLightOpacity(0);
+        rotor3.setTranslucent(true);
+        rotor3.setFullBlock(false);
+        rotor3.register();
+    }
 
     VanillaFactory.createItem("bug_chip").register();
 }

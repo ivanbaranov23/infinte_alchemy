@@ -1,0 +1,14 @@
+{
+	x: -4.5d,
+	y: 3.0d,
+	dependencies: [
+		"9738dd1e"
+	],
+	tasks: [{
+		uid: "08af23fd",
+		type: "item",
+		items: [{
+			item: "natura:clouds 1 3"
+		}]
+	}]
+}

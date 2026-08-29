@@ -11,5 +11,10 @@
 		items: [{
 			item: "taiga:solarium_ingot"
 		}]
+	}],
+	rewards: [{
+		uid: "9cd841fd",
+		type: "item",
+		item: "taiga:solarium_block"
 	}]
 }

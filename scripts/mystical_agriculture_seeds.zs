@@ -34,6 +34,16 @@ mods.aether_legacy.Enchanter.registerEnchantment(<contenttweaker:base_seeds>, <m
         [<mysticalagriculture:crafting:34>, <mysticalagriculture:crafting:17>, <mysticalagriculture:crafting:34>],
         [<mysticalagriculture:storage:1>, <mysticalagriculture:crafting:34>, <mysticalagriculture:storage:1>]
     ]);
+
+
+    recipes.remove(<mysticalagradditions:insanium:1>);
+    mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:insanium:1>, [
+        [<contenttweaker:reagent_ma>, <mysticalagradditions:insanium>, <mysticalagradditions:insanium>, <mysticalagradditions:insanium>, <contenttweaker:reagent_ma>], 
+        [<mysticalagradditions:insanium>, <mysticalagradditions:storage:1>, <contenttweaker:ma_essence1>, <mysticalagradditions:storage:1>, <mysticalagradditions:insanium>], 
+        [<mysticalagradditions:insanium>, <contenttweaker:ma_essence1>, <mysticalagriculture:crafting:21>, <contenttweaker:ma_essence1>, <mysticalagradditions:insanium>], 
+        [<mysticalagradditions:insanium>, <mysticalagradditions:storage:1>, <contenttweaker:ma_essence1>, <mysticalagradditions:storage:1>, <mysticalagradditions:insanium>], 
+        [<contenttweaker:reagent_ma>, <mysticalagradditions:insanium>, <mysticalagradditions:insanium>, <mysticalagradditions:insanium>, <contenttweaker:reagent_ma>]
+    ]);
 }
 
 var tier_seed as IItemStack[int] = {
@@ -136,7 +146,9 @@ var seed_items as IItemStack[][IItemStack][int] = {
         <mysticalagriculture:saltpeter_seeds>: [<thermalfoundation:material:772> * 256, <thermalfoundation:material:1026> * 256],
         <mysticalagriculture:silicon_seeds>: [<projectred-core:resource_item:301> * 64, <mysticalagriculture:saltpeter_essence> * 64],
 
-        <mysticalagriculture:coal_seeds>: [<extendedcrafting:singularity> * 4, <contenttweaker:crystal_coal> * 64, <thermalexpansion:augment:258> * 64]
+        <mysticalagriculture:coal_seeds>: [<extendedcrafting:singularity> * 4, <contenttweaker:crystal_coal> * 64, <thermalexpansion:augment:258> * 64],
+        <mysticalagriculture:nether_quartz_seeds>: [<extendedcrafting:singularity_custom:25> * 4, <mysticalagriculture:coal_essence> * 64, <mysticalagriculture:nether_essence> * 64],
+        <mysticalagriculture:certus_quartz_seeds>: [<extendedcrafting:singularity_custom:26> * 4, <appliedenergistics2:material:23> * 64, <mysticalagriculture:coal_essence> * 64]
     }
 };
 

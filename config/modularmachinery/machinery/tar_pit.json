@@ -2,6 +2,386 @@
     "registryname": "tar_pit",
     "localizedname": "Industrial Tar Pit",
     "color": "0c0a0f",
+    "modifiers": [
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "contenttweaker:enriched_tar@0"
+            ],
+            "modifier": {
+                    "io": "input",
+                    "target": "modularmachinery:duration",
+                    "operation": 1,
+                    "multiplier": 0.949951607
+            }
+        }
+    ],
     "parts": [
         {
             "x": 2,
@@ -136,7 +516,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -144,7 +524,7 @@
             "y": 3,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -152,7 +532,7 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -160,7 +540,7 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -168,7 +548,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -176,7 +556,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -216,7 +596,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -232,7 +612,7 @@
             "y": 3,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -240,7 +620,7 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -272,7 +652,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -280,7 +660,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -288,7 +668,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -424,7 +804,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -432,7 +812,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -448,7 +828,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -472,7 +852,7 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -504,7 +884,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -528,7 +908,7 @@
             "y": 3,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -552,7 +932,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -624,7 +1004,7 @@
             "y": 3,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -632,7 +1012,7 @@
             "y": 3,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -752,7 +1132,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -776,7 +1156,7 @@
             "y": 2,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -784,7 +1164,7 @@
             "y": 2,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -792,7 +1172,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -808,7 +1188,7 @@
             "y": 1,
             "z": 3,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {
@@ -816,7 +1196,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "contenttweaker:enriched_tar@0"
+                "contenttweaker:tar@0"
             ]
         },
         {

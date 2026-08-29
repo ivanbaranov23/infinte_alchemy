@@ -90,6 +90,11 @@ FITweaker.addRecipe(<liquid:liquidfusionlava>, <liquid:water>, <blockstate:minec
 FITweaker.addRecipe(<liquid:liquidfusionlava>, <liquid:sand>, <blockstate:mysticalagriculture:soulstone:variant=smooth>);
 
 
+//blood magic
+FITweaker.addRecipe(<liquid:lifeessence>, <liquid:fish_oil>, <blockstate:additionalcompression:meatfish_compressed:level=0>);
+FITweaker.addRecipe(<liquid:lifeessence>, <liquid:blood>, <blockstate:additionalcompression:meatporkchop_compressed:level=0>);
+FITweaker.addRecipe(<liquid:lifeessence>, <liquid:venom>, <blockstate:additionalcompression:spidereye_compressed:level=0>);
+
 
 {//research
     FITweaker.addRecipe(<liquid:residue_cg>, <liquid:liquifiedsouls>, <blockstate:netherendingores:ore_other_1:blocks=overworld_quartz_ore>);
@@ -150,19 +155,26 @@ FBTweaker.addRecipe(<liquid:water>, FBTweaker.outputBuilder()
 //effects
 FBTweaker.addRecipe(<liquid:cold_liquid>, FBTweaker.outputBuilder()
     .addEvent(FBTweaker.eventBuilder().createPotionEffectEvent(
-        "mowziesmobs:frozen", 20, 0
+        "mowziesmobs:frozen", 10, 0
     ).addCondition(BCondition.byChance, [0.1f]))
     .addEvent(FBTweaker.eventBuilder().createPotionEffectEvent(
         "minecraft:instant_damage", 1, 0
     ).addCondition(BCondition.byChance, [0.1f]))
     .addEvent(FBTweaker.eventBuilder().createSetSnowEvent())
-    
 );
 FBTweaker.addRecipe(<liquid:malachite_glue>, FBTweaker.outputBuilder()
     .addEvent(FBTweaker.eventBuilder().createPotionEffectEvent(
         "minecraft:slowness", 20, 0
     ))
     
+);
+FBTweaker.addRecipe(<liquid:radioactive_waste>, FBTweaker.outputBuilder()
+    .addEvent(FBTweaker.eventBuilder().createPotionEffectEvent(
+        "minecraft:wither", 20, 0
+    ).addCondition(BCondition.byChance, [0.1f]))
+    .addEvent(FBTweaker.eventBuilder().createPotionEffectEvent(
+        "minecraft:instant_damage", 1, 0
+    ).addCondition(BCondition.byChance, [0.1f]))
 );
 
 //FBTweaker.eventBuilder().createEntityConversionEvent();

@@ -1,0 +1,15 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"15b54b46"
+	],
+	optional: true,
+	tasks: [{
+		uid: "a0df7780",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_item_repairer"
+		}]
+	}]
+}

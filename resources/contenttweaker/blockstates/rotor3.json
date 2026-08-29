@@ -1,0 +1,17 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "texture": "contenttweaker:blocks/rotor",
+      "particle": "contenttweaker:blocks/parts/rotor_side",
+      "crystal": "extendedcrafting:blocks/storage_ultimate"
+    },
+    "model": "contenttweaker:rotor",
+    "uvlock": true,
+    "transform": "forge:default-block"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

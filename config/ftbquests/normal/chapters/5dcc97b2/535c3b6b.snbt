@@ -1,0 +1,11 @@
+{
+	x: 7.0d,
+	y: -5.5d,
+	tasks: [{
+		uid: "466baf58",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:nether_quartz_seeds"
+		}]
+	}]
+}

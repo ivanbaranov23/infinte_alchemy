@@ -227,15 +227,7 @@ import mods.enderio.SagMill;
         furnace.remove(<netherite:netheritescrap>);
         furnace.remove(<netherite:netheriteingot>);
 
-        mods.thermalexpansion.Crucible.addRecipe(<liquid:debris> * 1000, <netherite:ancientdebris>, 4000);
-        mods.mekanism.reaction.addRecipe(
-            <contenttweaker:ancient_dust>, <liquid:debris> * 500, <gas:acetic_acid> * 500, 
-            <contenttweaker:debris> * 2, <gas:cleanvalyrium> * 300, 1500, 60
-        );
-
-        mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:hydrogenchloride>, <netherite:netheritescrap>);
-        mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:rfna>, <netherite:netheritescrap> * 2);
-        mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:evil_nitrate>, <netherite:netheritescrap> * 4);
+        
     }
 }
 {//atum

@@ -3040,6 +3040,33 @@ tile.contenttweaker.superconductor1_block.name=Block of Nb₃Ge-Based Low Tempra
 item.contenttweaker.low_superconductor.name=Nb₃Ge-Based Low Temprature Superconductor Wire
 item.contenttweaker.low_superconductor_coil.name=Nb₃Ge-Based Low Temprature Superconductor Coil
 
+item.contenttweaker.reagent_ma.name=Mystical Reagent
+
+tile.contenttweaker.formic_prismarine.name=Formic Prismarine
+item.contenttweaker.formic_prismarine_dust.name=Formic Prismarine Dust
+item.contenttweaker.prismatic_clay.name=Prismatic Clay
+gas.evil_formate=Evil Formate Gas
+fluid.evil_formate=Liqiud Evil Formate
+gas.formic_acid=Formic Acid Gas
 
 
+ia.dimname.deep_dark=Deep Dark
+ia.dimname.nether=Nether
+ia.dimname.overworld=Overworld
+ia.dimname.end=End
+ia.dimname.aether=Aether
+ia.dimname.twilight_forest=Twilight Forest
+ia.dimname.atum=Atum
+ia.dimname.erebus=Erebus
 
+item.contenttweaker.valyrium_pieces.name=Valyrium Pieces
+item.contenttweaker.valyrium_chunk.name=Valyrium Chunk
+
+item.contenttweaker.diamond_crab.name=Diamondback Crab
+item.contenttweaker.oil_fish.name=Oil Fish
+
+item.contenttweaker.fire_jellyfish.name=Fire Jellyfish
+item.contenttweaker.obsidian_trout.name=Obsidian Trout
+item.contenttweaker.basalt_anchovy.name=Basalt Anchovy
+
+requious.jei.recipe.fisher=Fishing

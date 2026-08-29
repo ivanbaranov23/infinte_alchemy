@@ -804,6 +804,12 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
 
     scripts.helper.addSawRecipeWByproduct(<contenttweaker:pilkon_corpse>, <contenttweaker:pilkeum> * 4, <contenttweaker:pilkeum> * 2, 25);
 }
+{//nitral
+    recipes.addShapeless("ia_nitral_feed", <contenttweaker:nitrall_feed>, [
+        <harvestcraft:cuttingboarditem>.reuse(),
+        <contenttweaker:nitrall>
+    ]);
+}
 {//sandworm
     addVitamins("sandworm");
     //worm
@@ -835,7 +841,7 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
     );
     Centrifuge.addRecipe(
         [<contenttweaker:dry_fibre> % 100, <contenttweaker:dry_fibre> % 75, <contenttweaker:sandworm_chitin> % 100, <contenttweaker:sandworm_chitin> % 75], 
-        <contenttweaker:sandworm_molt>, null, 2000
+        <contenttweaker:sandworm_molt>, <liquid:worm_blood> * 100, 2000
     );
 
     mods.thermalexpansion.Transposer.addFillRecipe(<erebus:materials:9>, <contenttweaker:dry_fibre>, <liquid:hot_spring_water> * 100, 1000);

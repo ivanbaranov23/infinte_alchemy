@@ -2,6 +2,7 @@
     "registryname": "fish_tank",
     "localizedname": "Fish Tank",
     "color": "dce2f3",
+    "has-factory": true,
     "modifiers": [
         {
             "x": [-1, 0, 1],

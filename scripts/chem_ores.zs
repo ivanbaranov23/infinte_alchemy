@@ -395,6 +395,20 @@ scripts.content_machines.addFluidMixerRecipe(
         20, 200
     );
 }
+{//coal
+    recipes.addShaped("inverting_coal", <minecraft:diamond> * 2, [
+        [<minecraft:coal>, <minecraft:coal>, <minecraft:coal>], 
+        [<minecraft:coal>, <contenttweaker:inversion_dust>, <minecraft:coal>], 
+        [<minecraft:coal>, <minecraft:coal>, <minecraft:coal>]
+    ]);
+    
+    recipes.addShaped("inverting_diamond", <minecraft:coal_ore> * 4, [
+        [<minecraft:diamond>, <minecraft:diamond>, <minecraft:diamond>], 
+        [<minecraft:diamond>, <contenttweaker:inversion_dust>, <minecraft:diamond>], 
+        [<minecraft:diamond>, <minecraft:diamond>, <minecraft:diamond>]
+    ]);
+}
+
 {//platinum
     scripts.content_machines.addFluidAlloyerRecipe(
         <exnihilocreatio:item_ore_platinum>, 
@@ -468,15 +482,78 @@ scripts.content_machines.addFluidMixerRecipe(
 
 {//ancient debris
     mods.mekanism.reaction.addRecipe(
-        <erebus:materials:7> * 3, <liquid:liquidhallowsite> * 576, <gas:explosion_stone_glue> * 1000, 
+        <erebus:materials:7> * 2, <liquid:liquidhallowsite> * 432, <gas:explosion_stone_glue> * 100, 
+        <netherite:ancientdebris>, <gas:waste_gas> * (120), 1000, 60
+    );
+    mods.mekanism.reaction.addRecipe(
+        <erebus:materials:7> * 4, <liquid:liquidhallowsite> * 432, <gas:acetic_acid> * 1000, 
         <netherite:ancientdebris>, <gas:waste_gas> * (20), 1000, 60
     );
+
+
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:debris> * 1000, <netherite:ancientdebris>, 4000);
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:ancient_dust>, <liquid:debris> * 500, <gas:acetic_acid> * 500, 
+        <contenttweaker:debris> * 2, <gas:cleanvalyrium> * 300, 1500, 60
+    );
+
+    mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:hydrogenchloride>, <netherite:netheritescrap>);
+    mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:rfna>, <netherite:netheritescrap> * 2);
+    mods.mekanism.compressor.addRecipe(<contenttweaker:debris>, <gas:evil_nitrate>, <netherite:netheritescrap> * 4);
 }
+{//valyrium
+    
+
+    scripts.content_machines.addFluidAlloyerRecipe(
+        <mekores:mekanismore:263> * 3, 
+        <netherite:netheritescrap>, <appliedenergistics2:material:10> * 3, <liquid:glowstone> * 1500, 
+        40, 1000
+    );
+}
+{//hallowsite
+    
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:liquidhallowsite> * 432, 
+        <liquid:valyrium_fluid> * 576, <liquid:pulsating_iron> * 576, <atum:ectoplasm> | <mod_lavacow:ectoplasm>,
+        20, 512
+    );
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:liquidhallowsite> * 432, 
+        <liquid:valyrium_fluid> * 288, <liquid:pulsating_iron> * 288, <contenttweaker:evil_desert_dust>,
+        20, 512
+    );
+
+    
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:liquidhallowsite> * 288, 
+        <liquid:valyrium_fluid> * 576, <liquid:emerald> * 666, <atum:ectoplasm> | <mod_lavacow:ectoplasm>,
+        20, 512
+    );
+    scripts.content_machines.addFluidMixerRecipe(
+        <liquid:liquidhallowsite> * 288, 
+        <liquid:valyrium_fluid> * 288, <liquid:emerald> * 333, <contenttweaker:evil_desert_dust>,
+        20, 512
+    );
+}
+
 {//draconium
     mods.mekanism.reaction.addRecipe(
         <contenttweaker:imperomite_catalyst>,<liquid:dragon_spit> * 4000, <gas:ethyl_cyanoacrylate> * 250, 
         <contenttweaker:imperomite_catalyst_dust>, <gas:cyanoacrylate> * 250, 9000, 60
     );
+}
+
+{//malachite
+    recipes.addShaped("inverting_malachite", <biomesoplenty:gem:5> * 8, [
+        [<contenttweaker:malachite_polycrystal>, <contenttweaker:malachite_polycrystal>, <contenttweaker:malachite_polycrystal>], 
+        [<contenttweaker:malachite_polycrystal>, <contenttweaker:inversion_dust>, <contenttweaker:malachite_polycrystal>], 
+        [<contenttweaker:malachite_polycrystal>, <contenttweaker:malachite_polycrystal>, <contenttweaker:malachite_polycrystal>]
+    ]);
+    recipes.addShaped("inverting_malachite2", <contenttweaker:malachite_polycrystal> * 8, [
+        [<biomesoplenty:gem:5>, <biomesoplenty:gem:5>, <biomesoplenty:gem:5>], 
+        [<biomesoplenty:gem:5>, <contenttweaker:inversion_dust>, <biomesoplenty:gem:5>], 
+        [<biomesoplenty:gem:5>, <biomesoplenty:gem:5>, <biomesoplenty:gem:5>]
+    ]);
 }
 
 {//barium
@@ -554,7 +631,8 @@ scripts.content_machines.addFluidMixerRecipe(
     scripts.content_machines.addFluidSieveRecipeRandom(
         [
             <contenttweaker:filter_empty>,
-            <contenttweaker:rubidium_dust> % 75
+            <contenttweaker:rubidium_pieces> % 25,
+            <contenttweaker:rubidium_dust> % 50
         ], <liquid:pollucite2> * 500, 
         <liquid:pollucite1> * 500, <contenttweaker:filter_blood>,
         <contenttweaker:weather_chrome_mesh>,
@@ -760,4 +838,7 @@ scripts.content_machines.addFluidMixerRecipe(
         ], <contenttweaker:research_chemistry3>,
         20, 1000
     );
+
+    //void spar
+    mods.mekanism.compressor.addRecipe(<moretcon:gemvoidspar>, <gas:fluorine>, <contenttweaker:fluospar_dust> * 3);
 }

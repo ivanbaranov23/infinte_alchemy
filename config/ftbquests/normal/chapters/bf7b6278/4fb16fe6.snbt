@@ -2,7 +2,7 @@
 	x: 13.0d,
 	y: -2.0d,
 	text: [
-		"For mass making stones."
+		"For mass making stones and later return-to-stone recipes."
 	],
 	dependencies: [
 		"07158492"

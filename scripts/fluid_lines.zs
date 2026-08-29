@@ -1,7 +1,9 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.oredict.IOreDictEntry;
+
 import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
 
 import mods.thermalexpansion.Transposer;
 //Transposer.addFillRecipe(IItemStack output, IItemStack input, ILiquidStack fluid, int energy);
@@ -134,6 +136,8 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 
 }
 {//fish oil
+	mods.tconstruct.Melting.addRecipe(<liquid:fish_oil> * 50, <ore:listAllfishraw>);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:fish_oil> * 150, <minecraft:fish>, 1000);
 	mods.immersiveengineering.Squeezer.addRecipe(<prodigytech:meat_ground>, <liquid:fish_oil> * 500, <ore:listAllfishraw> * 4, 3000);
 	scripts.jei.addJEIhint(
 		[<ore:listAllfishraw>], [],
@@ -706,13 +710,80 @@ TEImbuer.addRecipe(<liquid:meat> * (2000), <prodigytech:meat_patty>, <liquid:mea
 		[
 			<contenttweaker:advanced_cryotheum>,
 			<mod_lavacow:shattered_ice> * 8,
-			<twilightforest:arctic_fur>,
-			<contenttweaker:ice_shard> //todo freezer item
+			<twilightforest:arctic_fur> * 4,
+			<contenttweaker:ice_shard> * 4 //todo freezer item
 		], [
 			<liquid:cryotheum> * 2000,
-			<liquid:cold_nitrogen> * 1000
+			<liquid:cold_nitrogen> * 1000,
+			<liquid:cold_diesel> * 500
 		], 20, 1000
 	);
+	scripts.content_machines.addAdvancedMixerRecipe(
+		[],
+		[<liquid:cold_liquid> * 500],
+		[
+			<contenttweaker:advanced_cryotheum>,
+			<mod_lavacow:shattered_ice> * 8,
+			<twilightforest:arctic_fur> * 4,
+			<contenttweaker:ice_shard> * 4 //todo freezer item
+		], [
+			<liquid:cryotheum> * 2000,
+			<liquid:cold_nitrogen> * 1000,
+			<liquid:astralsorcery.liquidstarlight> * 1000
+		], 20, 1000
+	);
+	scripts.content_machines.addAdvancedMixerRecipe(
+		[],
+		[<liquid:cold_liquid> * 500],
+		[
+			<contenttweaker:advanced_cryotheum>,
+			<mod_lavacow:shattered_ice> * 8,
+			<twilightforest:arctic_fur> * 4,
+			<contenttweaker:ice_shard> * 4 //todo freezer item
+		], [
+			<liquid:cryotheum> * 2000,
+			<liquid:cold_nitrogen> * 1000,
+			<liquid:vow_ice> * 500
+		], 20, 1000
+	);
+
+	
+
+	{
+		var rec = RecipeBuilder.newBuilder("cold_liquid", "super_mixer", 20 * 1);
+
+		rec.addEnergyPerTickInput(2560000);
+
+		
+		rec.addItemInputs(
+			<contenttweaker:advanced_cryotheum>,
+			<mod_lavacow:shattered_ice> * 8,
+			<twilightforest:arctic_fur> * 4,
+			<contenttweaker:ice_shard> * 4
+		);
+		
+		
+		rec.addFluidInputs(
+			<liquid:cryotheum> * 2000,
+			<liquid:cold_nitrogen> * 1000,
+			<liquid:astralsorcery.liquidstarlight> * 1000,
+			<liquid:cold_diesel> * 500,
+			<liquid:vow_ice> * 500
+		);
+
+		rec.addCatalystInput(
+			<moretcon:ingotpenguinite> * 4,
+			["Output fluid x1.5"],
+			[
+				RecipeModifierBuilder.create("modularmachinery:fluid", "output", 1.5, 1, false).build()
+			]
+		).setChance(0.5);
+		
+		
+		rec.addFluidOutput(<liquid:cold_liquid> * 2000);
+
+		rec.build();
+	}
 }
 
 

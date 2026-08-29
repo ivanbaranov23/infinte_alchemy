@@ -4,7 +4,7 @@ import scripts.content_machines.addBioAssemblerRecipe;
 //(out as IItemStack[], fluid_out as ILiquidStack, inp as IIngredient[], fluid_in as ILiquidStack[], catalyst as IIngredient,time_t as int, rft as int);
 
 mods.enderio.AlloySmelter.addRecipe(<contenttweaker:csitl>, [
-		<contenttweaker:cesium_dust> * 4, 
+		<alchemistry:ingot:55> * 4, 
 		<contenttweaker:iodine> * 8, 
 		<alchemistry:element:81> * 16
 	], 25000000
@@ -85,7 +85,7 @@ addAssemblerRecipe([<contenttweaker:atomic_clock>], [
 	<contenttweaker:state_detector> * 2,
 	<contenttweaker:temperature_control>,
 	<contenttweaker:signal_sender>,
-	<contenttweaker:cesium_dust> * 4,
+	<alchemistry:ingot:55> * 8,
 	<opencomputers:material:10> * 32
 ], <liquid:circuit> * 1000, 40, 10000);
 

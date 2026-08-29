@@ -17,7 +17,7 @@ function addCoralGrowthRec(coral as IItemStack, cat as IItemStack){
     print("coral" ~ counter);
     var rec = RecipeBuilder.newBuilder("coral" ~ counter, "fish_tank", 8 * 20);
     counter += 1;
-
+    rec.setMaxThreads(1);
     rec.addEnergyPerTickInput(100);
 
     //rec.addDimensionRequirement([66]);
@@ -49,11 +49,11 @@ addCoralGrowthRec(<contenttweaker:zanite_coral>, <contenttweaker:manyullyn_dust>
 addCoralGrowthRec(<contenttweaker:terra_coral>, <contenttweaker:fertilizer7>);
 
 
-function addFishRec(fout as IItemStack, cat as IItemStack){
+function addFishRec1(fout as IItemStack, cat as IItemStack){
     print("fish" ~ counter);
     var rec = RecipeBuilder.newBuilder("fish" ~ counter, "fish_tank", 8 * 20);
     counter += 1;
-
+    rec.setMaxThreads(1);
     rec.addEnergyPerTickInput(100);
 
     
@@ -71,28 +71,52 @@ function addFishRec(fout as IItemStack, cat as IItemStack){
 
     rec.build();
 }
+function addFishRec2(fout as IItemStack, cat as IItemStack, fluid as ILiquidStack, feed as int){
+    print("fish" ~ counter);
+    var rec = RecipeBuilder.newBuilder("fish" ~ counter, "fish_tank", 8 * 20);
+    counter += 1;
+    rec.setMaxThreads(1);
+    rec.addEnergyPerTickInput(100);
+
+    
+    rec.addItemInput(fout);
+    rec.addItemInput(cat);
+    rec.addItemInput(<ore:fishFeed> * feed);
+    rec.addFluidInput(fluid);
+    
+            
+    for i in 0 to 6{
+        rec.addItemOutput(fout);
+        rec.setChance( 0.75 - (0.05 * i) );
+    }
+    
+
+    rec.build();
+}
 <ore:fishFeed>.addItems([<thermalfoundation:bait>, <harvestcraft:fishtrapbaititem>, <prodigytech:meat_ground>]);
 //vaninlla
-addFishRec(<minecraft:fish>, <thermalfoundation:material:816>);
-addFishRec(<minecraft:fish:1>, <thermalfoundation:material:816>);
-addFishRec(<minecraft:fish:2>, <thermalfoundation:material:816>);
-addFishRec(<minecraft:fish:3>, <thermalfoundation:material:816>);
+addFishRec1(<minecraft:fish>, <thermalfoundation:material:816>);
+addFishRec1(<minecraft:fish:1>, <thermalfoundation:material:816>);
+addFishRec1(<minecraft:fish:2>, <thermalfoundation:material:816>);
+addFishRec1(<minecraft:fish:3>, <thermalfoundation:material:816>);
 
 //pam
-addFishRec(<harvestcraft:musselrawitem>, <biomesoplenty:coral:2>);
-addFishRec(<harvestcraft:scalloprawitem>, <biomesoplenty:coral:2>);
-addFishRec(<harvestcraft:clamrawitem>, <biomesoplenty:coral:2>);
-addFishRec(<harvestcraft:oysterrawitem>, <biomesoplenty:coral:2>);
+addFishRec1(<harvestcraft:musselrawitem>, <biomesoplenty:coral:2>);
+addFishRec1(<harvestcraft:scalloprawitem>, <biomesoplenty:coral:2>);
+addFishRec1(<harvestcraft:clamrawitem>, <biomesoplenty:coral:2>);
+addFishRec1(<harvestcraft:oysterrawitem>, <biomesoplenty:coral:2>);
 
-addFishRec(<harvestcraft:crabrawitem>, <biomesoplenty:coral>);
-addFishRec(<harvestcraft:shrimprawitem>, <biomesoplenty:coral>);
-addFishRec(<harvestcraft:crayfishrawitem>, <biomesoplenty:coral>);
+addFishRec1(<harvestcraft:crabrawitem>, <biomesoplenty:coral>);
+addFishRec1(<harvestcraft:shrimprawitem>, <biomesoplenty:coral>);
+addFishRec1(<harvestcraft:crayfishrawitem>, <biomesoplenty:coral>);
 
-addFishRec(<harvestcraft:greenheartfishitem>, <minecraft:dye:2>);
+addFishRec1(<harvestcraft:greenheartfishitem>, <minecraft:dye:2>);
 
 //atum
-addFishRec(<atum:fish_forsaken>, <harvestcraft:tacoitem>);
+addFishRec1(<atum:fish_forsaken>, <harvestcraft:tacoitem>);
 
+//my
+addFishRec2(<contenttweaker:obsidian_trout>, <mekanism:nugget> * 3, <liquid:andesite_magma> * 100, 3);
 
 
 
@@ -105,6 +129,43 @@ mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesopl
 mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesoplenty:coral:1>, 0.1);
 mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesoplenty:coral:2>, 0.1);
 mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesoplenty:coral:3>, 0.1);
+
+{
+    recipes.addShapeless("ia_cutting_oil_fish", <immersivepetroleum:material> * 2, [
+        <harvestcraft:cuttingboarditem>.reuse(),
+        <contenttweaker:oil_fish>
+    ]);
+    scripts.helper.addSawRecipe(<contenttweaker:oil_fish>, <immersivepetroleum:material> * 4);
+}
+{
+    recipes.addShapeless("ia_cutting_diamond_crab", <minecraft:diamond>, [
+        <harvestcraft:cuttingboarditem>.reuse(),
+        <contenttweaker:diamond_crab>
+    ]);
+    scripts.helper.addSawRecipe(<contenttweaker:diamond_crab>, <mekanism:otherdust> * 3);
+
+
+}
+{
+    recipes.addShapeless("ia_cutting_obsidian_trout", <thermalfoundation:material:770> * 2, [
+        <harvestcraft:cuttingboarditem>.reuse(),
+        <contenttweaker:obsidian_trout>
+    ]);
+    scripts.helper.addSawRecipe(<contenttweaker:obsidian_trout>, <thermalfoundation:material:770> * 4);
+    mods.mekanism.compressor.addRecipe(
+        <contenttweaker:obsidian_trout>, 
+        <mekanism:ingot> * 2
+    );
+
+
+    recipes.addShapeless("ia_cutting_basalt_anchovy", <contenttweaker:basalt_dust> * 2, [
+        <harvestcraft:cuttingboarditem>.reuse(),
+        <contenttweaker:basalt_anchovy>
+    ]);
+    scripts.helper.addSawRecipe(<contenttweaker:basalt_anchovy>, <contenttweaker:basalt_dust> * 4);
+}
+
+
 
 {//coral
     mods.roots.Mortar.addRecipe("coral", 

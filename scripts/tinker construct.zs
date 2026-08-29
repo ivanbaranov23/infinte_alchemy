@@ -132,6 +132,19 @@ recipes.addShaped("ia_bocuit", <contenttweaker:bocuit>, [
         [<extrautils2:simpledecorative>, <contenttweaker:bocuit>, <extrautils2:simpledecorative>]
     ]);
 }
+{
+    recipes.remove(<tconstruct:materials:18>);
+    recipes.addShaped("ia_mending_moss", <tconstruct:materials:18>, [
+        [<minecraft:mossy_cobblestone>, <minecraft:mossy_cobblestone>, <minecraft:mossy_cobblestone>], 
+        [<minecraft:mossy_cobblestone>, <contenttweaker:research_tinker>.reuse(), <minecraft:mossy_cobblestone>], 
+        [<minecraft:mossy_cobblestone>, <minecraft:mossy_cobblestone>, <minecraft:mossy_cobblestone>]
+    ]);
+    recipes.addShaped("ia_mending_moss2", <tconstruct:materials:19>, [
+        [<minecraft:mossy_cobblestone>, <minecraft:mossy_cobblestone>, <minecraft:mossy_cobblestone>], 
+        [<minecraft:mossy_cobblestone>, <minecraft:enchanted_book>.withTag({StoredEnchantments: [{id: 70, lvl: 1 as short}]}), <minecraft:mossy_cobblestone>], 
+        [<minecraft:mossy_cobblestone>, <minecraft:mossy_cobblestone>, <minecraft:mossy_cobblestone>]
+    ]);
+}
 
 //lavawood
 mods.thermalexpansion.Transposer.addFillRecipe(<tconstruct:firewood>, <minecraft:planks>, <liquid:lava> * 250, 1000);

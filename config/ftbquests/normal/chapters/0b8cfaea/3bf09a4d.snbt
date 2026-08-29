@@ -1,0 +1,27 @@
+{
+	title: "Custom fishing",
+	x: -6.5d,
+	y: 4.0d,
+	text: [
+		"There's cutsom fishing in fluids other than water. Only works with vanilla and MA fishing rods. "
+	],
+	dependencies: [
+		"468cf998"
+	],
+	optional: true,
+	tasks: [{
+		uid: "5e7b6e22",
+		type: "item",
+		items: [{
+			item: "minecraft:fishing_rod"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8d11c307",
+		type: "item",
+		item: "harvestcraft:fishtrapbaititem",
+		count: 16
+	}]
+}

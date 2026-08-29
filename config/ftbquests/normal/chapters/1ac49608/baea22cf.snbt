@@ -1,0 +1,18 @@
+{
+	x: 3.0d,
+	y: -4.0d,
+	dependencies: [
+		"518dd5e5"
+	],
+	tasks: [{
+		uid: "b0f53143",
+		type: "checkmark",
+		title: "Enhanced Acid",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "acid1"
+			}
+		}
+	}]
+}

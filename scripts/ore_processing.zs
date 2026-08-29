@@ -2345,6 +2345,8 @@ static ores2 as IItemStack[string][string][string] = {
             balling: <contenttweaker:germanium_dust> * 2,
             crushingByprod1: <contenttweaker:sphalerite_dust>,
 
+            drilling: <contenttweaker:germanium_dirty_dust> * 3,
+
             made2x2: <contenttweaker:germanium_pieces>,
             madeFrom: <contenttweaker:germanium_pieces> * 3
         },
@@ -2356,6 +2358,19 @@ static ores2 as IItemStack[string][string][string] = {
             crushingByprod2: <contenttweaker:germanium_dust> * 3,
 
             drilling: <exnihilocreatio:item_ore_silver> * 16
+        }
+    },
+    rubidium: {
+        chunk: {
+            item: <contenttweaker:rubidium_chunk>,
+            crushing_no_balls: <contenttweaker:rubidium_dust> * 2,
+            balling: <contenttweaker:rubidium_dust> * 2,
+            crushingByprod1: <contenttweaker:cesium_dust>,
+
+            drilling: <contenttweaker:rubidium_dirty_dust> * 3,
+
+            made2x2: <contenttweaker:rubidium_pieces>,
+            madeFrom: <contenttweaker:rubidium_pieces> * 3
         }
     },
     niobium: {
@@ -3090,19 +3105,36 @@ static ores2 as IItemStack[string][string][string] = {
             crushing_no_balls: <taiga:valyrium_dust> * 2,
             balling: <taiga:valyrium_dust> * 2,
             crushingByprod1: <moretcon:gemgarstone>,
-            crushingByprod2: <taiga:tiberium_crystal> * 3,
+            crushingByprod2: <thermalfoundation:material:866>,
 
             alloySlag2: <taiga:valyrium_ingot> * 2,
             alloySlag3: <taiga:valyrium_ingot> * 3,
 
-            drilling: <mekores:mekanismore:263> * 3
+            drilling: <contenttweaker:valyrium_pieces> * 6
 
+        },
+        chunk: {
+            item: <contenttweaker:valyrium_chunk>,
+            crushing_no_balls: <taiga:valyrium_dust> * 2,
+            balling: <taiga:valyrium_dust> * 2,
+            crushingByprod1: <moretcon:gemgarstone>,
+            crushingByprod2: <thermalfoundation:material:866>,
+
+            made2x2: <contenttweaker:valyrium_pieces>,
+            madeFrom: <contenttweaker:valyrium_pieces> * 3
         },
         clump: {
             item: <mekores:mekanismore:262>,
             balling: <mekores:mekanismore:263>,
             crushingByprod1: <moretcon:gemgarstone>,
-            crushingByprod2: <taiga:tiberium_crystal> * 3,
+            crushingByprod2: <thermalfoundation:material:866>,
+        },
+        dirtydust: {
+            item: <mekores:mekanismore:263>,
+            separating1: <taiga:valyrium_dust>,
+            separating2: <moretcon:gemgarstone>,
+            separating3: <thermalfoundation:material:866>,
+            separating4: <contenttweaker:soot>
         }
     },
     abyssum: {
@@ -4715,6 +4747,7 @@ val drilling_fluid_amount as int[string] = {
     tantalum: 800,
     zirconium: 1200,
     germanium: 1000,
+    rubidium: 2000,
     niobium: 1200,
 
     spaceice: 1000,

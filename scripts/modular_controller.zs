@@ -410,7 +410,7 @@ mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:satellite_lau
 
 //whack
 recipes.addShaped("mm_druid_circle_controller", <modularmachinery:druid_circle_controller>, [
-	[<contenttweaker:flower_steel_plate>, <requious:altar2>, <contenttweaker:flower_steel_plate>], 
-	[<quark:glowshroom>, <thermalexpansion:frame>, <quark:glowshroom>], 
-	[<contenttweaker:flower_steel_plate>, <requious:altar2>, <contenttweaker:flower_steel_plate>]
+	[<roots:chiseled_runestone>, <requious:altar>, <roots:chiseled_runestone>], 
+	[<quark:glowshroom>, <contenttweaker:druidic_dust>, <quark:glowshroom>], 
+	[<roots:chiseled_runestone>, <requious:altar>, <roots:chiseled_runestone>]
 ]);

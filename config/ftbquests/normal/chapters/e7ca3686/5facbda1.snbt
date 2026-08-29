@@ -1,0 +1,11 @@
+{
+	x: 6.0d,
+	y: -2.5d,
+	tasks: [{
+		uid: "642ce351",
+		type: "item",
+		items: [{
+			item: "contenttweaker:prismatic_clay"
+		}]
+	}]
+}

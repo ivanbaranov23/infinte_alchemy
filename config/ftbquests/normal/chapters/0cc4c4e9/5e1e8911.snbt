@@ -1,0 +1,21 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	text: [
+		"Nab some from like an end volcano"
+	],
+	dependencies: [
+		"a758a11f"
+	],
+	tasks: [{
+		uid: "2f059cbe",
+		type: "checkmark",
+		title: "Stygian Acid",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "endacid"
+			}
+		}
+	}]
+}

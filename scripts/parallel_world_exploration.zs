@@ -220,7 +220,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
     <contenttweaker:spider_mech>: {
         <contenttweaker:spider_target_metals>: [
             [
-                <draconicevolution:draconium_ore> * 48,
+                <draconicevolution:draconium_ore> * 64,
                 <thermalfoundation:ore:8> * 64,
                 <twilightforest:trollsteinn> * 128,
                 <contenttweaker:rhodplumsite_space_ore> * 128,
@@ -228,7 +228,7 @@ static loot as IItemStack[][][IItemStack][IItemStack] = {
                 <thermalfoundation:ore_fluid:3> * 128
             ],
             [
-                <draconicevolution:draconium_ore> * 48,
+                <draconicevolution:draconium_ore> * 64,
                 <thermalfoundation:ore:8> * 64,
                 <twilightforest:trollsteinn> * 128,
                 <contenttweaker:rhodplumsite_space_ore> * 128,

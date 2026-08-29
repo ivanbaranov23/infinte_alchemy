@@ -248,12 +248,6 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
 
 {//atum
     addEggHint("atum:wraith", [<atum:ectoplasm>]);
-    recipes.addShapeless("ia_evil_desert_dust", <contenttweaker:evil_desert_dust> * 3, [
-        <atum:ectoplasm>,
-        <contenttweaker:sphalerite_dust>,
-        <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>,
-        <mod_lavacow:cursed_fabric> | <atum:cloth_scrap>
-    ]);
 
     for en in [<entity:atum:mummy>, <entity:atum:wraith>, <entity:atum:forsaken>, <entity:minecraft:husk>] as IEntityDefinition[]{
         en.addDrop(<atum:loot_dirty_ring> % 5);

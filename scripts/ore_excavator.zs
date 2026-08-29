@@ -40,30 +40,30 @@ Excavator.removeMineral("Bauxite");
 
 // List of all relevant dimensions for the excavator, in `id: name` format
 static dimensionIdentifier as string[int] = {
-    -11325: "deep_dark",
+    -11325: game.localize("ia.dimname.deep_dark"),
     
-    -1:     "nether",
-    0:      "overworld",
-    1:      "end",
-    4:      "aether",
-    7:      "twilight_forest",
-    17:     "atum",
+    -1:     game.localize("ia.dimname.nether"),
+    0:      game.localize("ia.dimname.overworld"),
+    1:      game.localize("ia.dimname.end"),
+    4:      game.localize("ia.dimname.aether"),
+    7:      game.localize("ia.dimname.twilight_forest"),
+    17:     game.localize("ia.dimname.atum"),
     
-    66:     "erebus"
+    66:     game.localize("ia.dimname.erebus")
     
 } as string[int];
 //jei item
 static dim_item_hints as IItemStack[int] = {
-    -11325: <extrautils2:compressedcobblestone:7>,
+    -11325: <extrautils2:compressedcobblestone:7>.withDisplayName(game.localize("ia.dimname.deep_dark")),
     
-    -1:     <minecraft:netherrack>,
-    0:      <minecraft:stone>,
-    1:      <minecraft:end_stone>,
-    4:      <aether_legacy:holystone>,
-    7:      <twilightforest:aurora_block>,
-    17:     <atum:limestone>,
+    -1:     <minecraft:netherrack>.withDisplayName(game.localize("ia.dimname.nether")),
+    0:      <minecraft:stone>.withDisplayName(game.localize("ia.dimname.overworld")),
+    1:      <minecraft:end_stone>.withDisplayName(game.localize("ia.dimname.end")),
+    4:      <aether_legacy:holystone>.withDisplayName(game.localize("ia.dimname.aether")),
+    7:      <twilightforest:aurora_block>.withDisplayName(game.localize("ia.dimname.twilight_forest")),
+    17:     <atum:limestone>.withDisplayName(game.localize("ia.dimname.atum")),
     
-    66:     <erebus:umberstone>
+    66:     <erebus:umberstone>.withDisplayName(game.localize("ia.dimname.erebus"))
 };
 
 // List of names and color codes for the rarities used, in `rarity: [name, color]` format
@@ -391,7 +391,8 @@ function addFluidReservoir(
     <ore:oreHellLead>.add(<netherendingores:ore_nether_modded_1:3>);
     //<ore:oreHell>.add();
 
-    <ore:oreHellOsmium>.add(<netherendingores:ore_nether_modded_1:11>);
+    <ore:oreHellQuartz>.add(<minecraft:quartz_ore>);
+    <ore:oreHellCertus>.add(<netherendingores:ore_nether_modded_1:9>);
 }
 {//aether
     <ore:oreAetherAmbrosium>.add(<aether_legacy:ambrosium_ore>);
@@ -481,37 +482,44 @@ var mil as int = 1000000;
     addFluidReservoir("Erebus Flolit Oil", 15, <liquid:flolit_oil>, 2 * mil, 5 * mil, 0, [66, -11325]);
 }
 //atum
-addExcavator("Atum Coal", 25, ["oreAtumCoal", "oreAtumDiamond", "oreAtumEmerald"], [0.8, 0.15, 0.05], [17]);
-addExcavator("Atum Diamond", 5, ["oreAtumDiamond", "oreAtumCoal", "oreAtumEmerald"], [0.7, 0.2, 0.1], [17]);
-addExcavator("Atum Magnetite", 25, ["oreAtumIron", "oreAtumGold"], [0.85, 0.15], [17]);
-addExcavator("Atum Lapis", 10, ["oreAtumLapis", "oreAtumIron"], [0.7, 0.3], [17]);
-addExcavator("Atum Redstone", 15, ["oreAtumRedstone", "oreAtumBone", "strangeSand"], [0.75, 0.20, 0.05], [17]);
-addExcavator("Atum Gold", 15, ["oreAtumGold", "oreAtumRelic", "strangeSand"], [0.65, 0.25, 0.1], [17]);
-addExcavator("Atum Relic", 15, ["oreAtumRelic", "oreAtumGold", "strangeSand"], [0.75, 0.15, 0.1], [17]);
-//addExcavator("Atum Oil", 15, ["oreClathrateOilSand", "sand"], [0.9, 0.1], [17]);
-addExcavator("Atum Sphalerite", 10, ["oreAtumZinc", "oreAtumLead"], [0.8, 0.2], [17]);
-addExcavator("Atum Porphyry", 5, ["stonePorphyry", "oreGodshard"], [0.9, 0.1], [17]);
+addExcavator("Atum Coal", 25, ["oreAtumCoal", "oreAtumDiamond", "oreAtumEmerald"], [0.8, 0.15, 0.05], [17, -11325]);
+addExcavator("Atum Diamond", 5, ["oreAtumDiamond", "oreAtumCoal", "oreAtumEmerald"], [0.7, 0.2, 0.1], [17, -11325]);
+addExcavator("Atum Magnetite", 25, ["oreAtumIron", "oreAtumGold"], [0.85, 0.15], [17, -11325]);
+addExcavator("Atum Lapis", 10, ["oreAtumLapis", "oreAtumIron"], [0.7, 0.3], [17, -11325]);
+addExcavator("Atum Redstone", 15, ["oreAtumRedstone", "oreAtumBone", "strangeSand"], [0.75, 0.20, 0.05], [17, -11325]);
+addExcavator("Atum Gold", 15, ["oreAtumGold", "oreAtumRelic", "strangeSand"], [0.65, 0.25, 0.1], [17, -11325]);
+addExcavator("Atum Relic", 15, ["oreAtumRelic", "oreAtumGold", "strangeSand"], [0.75, 0.15, 0.1], [17, -11325]);
+//addExcavator("Atum Oil", 15, ["oreClathrateOilSand", "sand"], [0.9, 0.1], [17, -11325]);
+addExcavator("Atum Sphalerite", 10, ["oreAtumZinc", "oreAtumLead"], [0.8, 0.2], [17, -11325]);
+addExcavator("Atum Porphyry", 5, ["stonePorphyry", "oreGodshard"], [0.9, 0.1], [17, -11325]);
 
 addFluidReservoir("Atum Water", 35, <liquid:water>, mil, 2*mil, 0, [17]);
-addFluidReservoir("Atum Oil", 25, <liquid:crude_oil>, mil, 2*mil, 4, [17]);
-addFluidReservoir("Atum Rich Oil", 5, <liquid:crude_oil>, 10 * mil, 25*mil, 12, [17]);
-addFluidReservoir("Atum Quicksand", 5, <liquid:sand>, mil, 2*mil, 4, [17]);
-addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0, [17]);
+addFluidReservoir("Atum Oil", 25, <liquid:crude_oil>, mil, 2*mil, 4, [17, -11325]);
+addFluidReservoir("Atum Rich Oil", 5, <liquid:crude_oil>, 10 * mil, 25*mil, 12, [17, -11325]);
+addFluidReservoir("Atum Quicksand", 5, <liquid:sand>, mil, 2*mil, 4, [17, -11325]);
+addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0, [17, -11325]);
 
 {//nether
-    addExcavator("Nether Iron", 30, ["oreHellIron", "oreHellNickel"], [0.8, 0.2], [-1]);
-    addExcavator("Nether Copper", 30, ["oreHellCopper", "oreHellGold"], [0.8, 0.2], [-1]);
-    addExcavator("Nether Tin", 30, ["oreHellTin", "oreHellSilver"], [0.8, 0.2], [-1]);
+    addExcavator("Nether Iron", 30, ["oreHellIron", "oreHellNickel"], [0.8, 0.2], [-1, -11325]);
+    addExcavator("Nether Copper", 30, ["oreHellCopper", "oreHellGold"], [0.8, 0.2], [-1, -11325]);
+    addExcavator("Nether Tin", 30, ["oreHellTin", "oreHellSilver"], [0.8, 0.2], [-1, -11325]);
     
-    addExcavator("Nether Gold", 30, ["oreHellGold", "oreCincinnasite"], [0.8, 0.2], [-1]);
-    addExcavator("Nether Cincinnasite", 20, ["oreCincinnasite", "oreHellGold"], [0.8, 0.2], [-1]);
-    addExcavator("Netherite", 10, ["oreNetherite", "oreCincinnasite", "oreHellRuby"], [0.3, 0.5, 0.2], [-1]);
+    addExcavator("Nether Gold", 30, ["oreHellGold", "oreCincinnasite"], [0.8, 0.2], [-1, -11325]);
+    addExcavator("Nether Cincinnasite", 20, ["oreCincinnasite", "oreHellGold"], [0.8, 0.2], [-1, -11325]);
+    addExcavator("Netherite", 10, ["oreNetherite", "oreCincinnasite", "oreHellRuby"], [0.3, 0.5, 0.2], [-1, -11325]);
 
-    addExcavator("Nether Cobalt", 30, ["oreHellCobalt", "oreHellArdite", "oreNetherite"], [0.7, 0.28, 0.02], [-1]);
-    addExcavator("Nether Ardite", 30, ["oreHellArdite", "oreHellCobalt", "oreNetherite"], [0.7, 0.28, 0.02], [-1]);
+    addExcavator("Nether Cobalt", 30, ["oreHellCobalt", "oreHellArdite", "oreNetherite"], [0.7, 0.28, 0.02], [-1, -11325]);
+    addExcavator("Nether Ardite", 30, ["oreHellArdite", "oreHellCobalt", "oreNetherite"], [0.7, 0.28, 0.02], [-1, -11325]);
+
+    addExcavator("Nether Valyrium", 25, ["oreValyrium", "orePrometheum", "oreHellArdite"], [0.8, 0.15, 0.05], [-1, -11325]);
+    addExcavator("Nether Hallowsite", 20, ["oreHallowsite", "orePrometheum", "oreNetherite"], [0.8, 0.15, 0.05], [-1, -11325]);
+    addExcavator("Nether Prometheum", 20, ["orePrometheum", "oreHallowsite", "oreValyrium"], [0.8, 0.1, 0.1], [-1, -11325]);
+
+    addExcavator("Nether Laac Vein", 10, ["denseOreHellLead", "oreHellArdite", "oreHellAmbrosium", "oreCaelumite"], [0.40, 0.40, 0.01, 0.19], [-1, -11325]);
 
 
-    addExcavator("Nether Laac Vein", 10, ["denseOreHellLead", "oreHellArdite", "oreHellAmbrosium", "oreCaelumite"], [0.40, 0.40, 0.01, 0.19], [-1]);
+    addExcavator("Nether Quartz", 30, ["oreHellQuartz", "oreHellCertus", "oreCincinnasite"], [0.45, 0.45, 0.1], [-1, -11325]);
+
 
     addFluidReservoir("Nether Lava", 35, <liquid:lava>, 10*mil, 15*mil, 10, [-1]);
 }
@@ -519,26 +527,26 @@ addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0,
 
 {//twilight
     
-    addExcavator("Twilight Redstone", 15, ["oreOverworldRedstone", "oreOverworldGarstone"], [0.95, 0.05], [7]);
+    addExcavator("Twilight Redstone", 15, ["oreOverworldRedstone", "oreOverworldGarstone"], [0.95, 0.05], [7, -11325]);
 
-    addExcavator("Twilight Garstone", 5, ["oreOverworldGarstone", "oreOverworldRuby"], [0.9, 0.1], [7]);
+    addExcavator("Twilight Garstone", 5, ["oreOverworldGarstone", "oreOverworldRuby"], [0.9, 0.1], [7, -11325]);
 
-    addFluidReservoir("Twilight Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [7]);
+    addFluidReservoir("Twilight Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [7, -11325]);
 }
 
 //aether
-addExcavator("Aether Ambrosium", 25, ["oreAetherAmbrosium", "aercloudGold", "holystone"], [0.7, 0.2, 0.1], [4]);
-addExcavator("Aether Zanite", 25, ["oreAetherZanite", "oreAetherAmbrosium"], [0.75, 0.25], [4]);
-addExcavator("Aether Gravitie", 25, ["oreAetherGravitite", "holystone"], [0.9, 0.1], [4]);
-addExcavator("Aether Icestone", 20, ["icestone", "aercloudCold", "aercloudBlue"], [0.7, 0.2, 0.1], [4]);
+addExcavator("Aether Ambrosium", 25, ["oreAetherAmbrosium", "aercloudGold", "holystone"], [0.7, 0.2, 0.1], [4, -11325]);
+addExcavator("Aether Zanite", 25, ["oreAetherZanite", "oreAetherAmbrosium"], [0.75, 0.25], [4, -11325]);
+addExcavator("Aether Gravitie", 25, ["oreAetherGravitite", "holystone"], [0.9, 0.1], [4, -11325]);
+addExcavator("Aether Icestone", 20, ["icestone", "aercloudCold", "aercloudBlue"], [0.7, 0.2, 0.1], [4, -11325]);
 
 addExcavator("Aether Poor Arkenium", 10, ["oreAetherZanite", "oreAetherAmbrosium", "oreOverworldArkenium"], [0.6, 0.2, 0.2], [4]);
-addExcavator("Aether Rich Arkenium", 1, ["oreOverworldArkenium"], [1.0], [4]);
+addExcavator("Aether Rich Arkenium", 1, ["oreOverworldArkenium"], [1.0], [4, -11325]);
 
-addFluidReservoir("Aether Pure Water", 35, <liquid:pure_water>, 10*mil, 15*mil, 30, [4]);
-addFluidReservoir("Aether Skyroot Oil", 20, <liquid:skyroot>, 5*mil, 10*mil, 10, [4]);
-addFluidReservoir("Aether Rich Skyroot Oil", 5, <liquid:skyroot>, 25*mil, 50*mil, 100, [4]);
-addFluidReservoir("Aether Holy Water", 20, <liquid:holy_water>, mil, 10*mil, 10, [4]);
+addFluidReservoir("Aether Pure Water", 35, <liquid:pure_water>, 10*mil, 15*mil, 30, [4, -11325]);
+addFluidReservoir("Aether Skyroot Oil", 20, <liquid:skyroot>, 5*mil, 10*mil, 10, [4, -11325]);
+addFluidReservoir("Aether Rich Skyroot Oil", 5, <liquid:skyroot>, 25*mil, 50*mil, 100, [4, -11325]);
+addFluidReservoir("Aether Holy Water", 20, <liquid:holy_water>, mil, 10*mil, 10, [4, -11325]);
 
 addFluidReservoir("Aether Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [4]);
 

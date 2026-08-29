@@ -40,6 +40,7 @@ VanillaFactory.createFluid("cyanoacrylate", Color.fromHex("afdfe9")).register();
 VanillaFactory.createFluid("ethylene_oxide", Color.fromHex("afdfe9")).register();
 VanillaFactory.createFluid("taurine", Color.fromHex("afdfe9")).register();
 
+VanillaFactory.createFluid("evil_formate", Color.fromHex("4f5f5c")).register();
 /*
 VanillaFactory.createFluid("", Color.fromHex("")).register();
 

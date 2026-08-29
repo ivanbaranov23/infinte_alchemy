@@ -1,0 +1,18 @@
+{
+	x: -3.0d,
+	y: 3.0d,
+	text: [
+		"Allows you to turn dusts into ores. Useful for lapis and other 1-ore-to-many-dusts."
+	],
+	dependencies: [
+		"d500e16a",
+		"7ee0f2a3"
+	],
+	tasks: [{
+		uid: "655a95a6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:burn_powder"
+		}]
+	}]
+}

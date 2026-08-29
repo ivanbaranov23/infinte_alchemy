@@ -1,0 +1,21 @@
+{
+	x: 4.0d,
+	y: -4.0d,
+	dependencies: [
+		"baea22cf"
+	],
+	tasks: [{
+		uid: "8fe9c2bf",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 37"
+		}]
+	},
+	{
+		uid: "ef991fe3",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 55"
+		}]
+	}]
+}

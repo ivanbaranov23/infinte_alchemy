@@ -169,7 +169,8 @@
     scripts.content_machines.addAssemblerRecipe(
         [<contenttweaker:advanced_plating5_2> * 8, <contenttweaker:dirty_biocell>], [
             <contenttweaker:advanced_plating5_1> * 8,
-            <contenttweaker:skymass1>
+            <contenttweaker:skymass1>,
+            <alchemistry:ingot:55> * 3
         ], <liquid:gravitite> * 576, 20, 10000
     );
     mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:advanced_plating5_4>, <contenttweaker:advanced_plating5_2> * 4, 15000);
@@ -606,7 +607,7 @@
     recipes.addShaped("ia_bloodhunter_target_cool_slate", <contenttweaker:tribute>, [
         [<contenttweaker:slate_9>, <contenttweaker:evil_singularity>, <contenttweaker:slate_9>], 
         [<contenttweaker:slate_9>, <contenttweaker:cursed_star>, <contenttweaker:slate_9>], 
-        [<contenttweaker:slate_9>, <contenttweaker:pandemonium_plate>, <contenttweaker:slate_9>]
+        [<contenttweaker:slate_9>, <contenttweaker:pandemonium_ingot>, <contenttweaker:slate_9>]
     ]);
 }
 

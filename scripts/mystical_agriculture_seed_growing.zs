@@ -79,6 +79,8 @@ addSeeds(<mysticalcreations:jauxum_essence>, <mysticalcreations:jauxum_seeds>, 2
 addSeeds(<mysticalagriculture:saltpeter_essence>, <mysticalagriculture:saltpeter_seeds>, 2);
 addSeeds(<mysticalagriculture:silicon_essence>, <mysticalagriculture:silicon_seeds>, 2);
 
-
+addSeeds(<mysticalagriculture:coal_essence>, <mysticalagriculture:coal_seeds>, 2);
+addSeeds(<mysticalagriculture:nether_quartz_essence>, <mysticalagriculture:nether_quartz_seeds>, 2);
+addSeeds(<mysticalagriculture:certus_quartz_essence>, <mysticalagriculture:certus_quartz_seeds>, 2);
 
 addSeeds(<mysticalagriculture:terrasteel_essence>, <mysticalagriculture:terrasteel_seeds>, 5);

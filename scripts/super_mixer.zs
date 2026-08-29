@@ -7,6 +7,54 @@ import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.RecipeModifierBuilder;
 
 
+
+scripts.content_machines.addAssemblerRecipe(
+	[<contenttweaker:rotor>], 
+	[
+		<contenttweaker:crystal_metal_plate> * 4,
+		<contenttweaker:living_motor>,
+		<contenttweaker:ev_coil> * 4,
+		<contenttweaker:tablet_evil>,
+		<requious:advanced_mixer>,
+		<bloodmagic:demon_extras:13> * 2
+	], <liquid:watertight_steel> * 1500,
+	20, 10000
+);
+scripts.content_machines.addAssemblerRecipe(
+	[<contenttweaker:rotor2>], 
+	[
+		<contenttweaker:kikeridan_plate> * 4,
+		<contenttweaker:rotor>,
+		<contenttweaker:electric_core> * 4,
+		<contenttweaker:vortexed_ingot>,
+		<requious:advanced_mixer> * 4,
+		<bloodmagic:demon_extras:13> * 2
+	], <liquid:watertight_steel> * 1500,
+	20, 10000
+);
+scripts.content_machines.addAssemblerRecipe(
+	[<contenttweaker:rotor>], 
+	[
+		<contenttweaker:crystal_metal_plate> * 4,
+		<contenttweaker:living_motor>,
+		<contenttweaker:ev_coil> * 4,
+		<contenttweaker:tablet_evil>,
+		<requious:advanced_mixer>,
+		<bloodmagic:demon_extras:13> * 2
+	], <liquid:watertight_steel> * 1500,
+	20, 10000
+);
+
+
+
+
+
+
+
+
+
+
+
 <ore:rocketFuelA>.addItems([
     <contenttweaker:singularity_dust>,
     <contenttweaker:moon_dust>,
@@ -17,6 +65,9 @@ import mods.modularmachinery.RecipeModifierBuilder;
     <extendedcrafting:singularity_custom:29>,
     <contenttweaker:polonium_dust>
 ]);
+
+
+
 
 
 {var rec = RecipeBuilder.newBuilder("leap", "super_mixer", 20 * 1);

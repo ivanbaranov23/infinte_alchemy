@@ -71,6 +71,42 @@ import mods.modularmachinery.RecipeBuilder;
     );
 }
 
+{//prismarine
+    
+
+    <ore:blockPrismarine>.remove(<quark:elder_prismarine>);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+		<contenttweaker:formic_prismarine>, 
+		<quark:elder_prismarine>, <liquid:formic_acid> * 5000, 
+		25000
+	);
+    scripts.helper.addSimpleCrushingRecipe(<contenttweaker:formic_prismarine>, <contenttweaker:formic_prismarine_dust> * 2);
+    
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:formic_prismarine_dust>, <liquid:claymud> * 1000, <gas:evil> * 1000, 
+        <contenttweaker:prismatic_clay>, <gas:evil_formate> * 1000, 900, 60
+    );
+
+    mods.mekanism.separator.addRecipe(<liquid:evil_formate>, 200, <gas:evil>, <gas:formic_acid> * 2);
+    mods.mekanism.reaction.addRecipe(
+        <mysticalagriculture:crafting:5> * 3, <liquid:holy_water> * 500, <gas:evil_formate> * 2000, 
+        <contenttweaker:formic_acid_form>, <gas:evil> * 2000, 900, 60
+    );
+
+    recipes.removeByRecipeName("quark:elder_prismarine");
+    recipes.addShaped("ia_elder_prismarine", <quark:elder_prismarine> * 16, [
+        [<contenttweaker:prismatic_clay>, <quark:elder_prismarine>], 
+        [<quark:elder_prismarine>, <contenttweaker:prismatic_clay>]
+    ]);
+
+    recipes.remove(<quark:elder_sea_lantern>);
+    recipes.addShaped("ia_elder_sea_lantern", <quark:elder_sea_lantern>, [
+        [<quark:elder_prismarine>, <minecraft:sea_lantern>, <quark:elder_prismarine>], 
+        [<minecraft:sea_lantern>, <contenttweaker:prismatic_clay>, <minecraft:sea_lantern>], 
+        [<quark:elder_prismarine>, <minecraft:sea_lantern>, <quark:elder_prismarine>]
+    ]);
+}
+
 {//evil
 
     //normal: 1 ns -> 8 ei
@@ -419,6 +455,16 @@ import mods.modularmachinery.RecipeBuilder;
 
     scripts.content_machines.addFluidSieveRecipeRandom(
         [
+            <contenttweaker:filter_empty> % 95,
+            <contenttweaker:rhodium_dust> % 55,
+            <contenttweaker:rhodium1> % 5,
+        ], <liquid:supersalty> * 450, 
+        <liquid:garstone_sludge> * 500, <contenttweaker:filter_charcoal>,
+        <contenttweaker:uranium_mesh>,
+        20, 10000
+    );
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
             <contenttweaker:filter_empty> % 100,
             <contenttweaker:imperomite_catalyst_dust> % 100,
             <contenttweaker:rhodium_dust> % 75,
@@ -456,6 +502,12 @@ import mods.modularmachinery.RecipeBuilder;
             <biomesoplenty:gem_ore:4> * 8,
         ]
     );
+
+    recipes.addShaped("garstone_inversion", <contenttweaker:rhodium_pieces> * 4, [
+        [<moretcon:gemgarstone>, <moretcon:gemgarstone>, <moretcon:gemgarstone>], 
+        [<moretcon:gemgarstone>, <contenttweaker:inversion_dust>, <moretcon:gemgarstone>], 
+        [<moretcon:gemgarstone>, <moretcon:gemgarstone>, <moretcon:gemgarstone>]
+    ]);
 }
 
 

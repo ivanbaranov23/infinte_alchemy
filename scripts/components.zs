@@ -1048,18 +1048,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		], <contenttweaker:sewing_unit>,
 		20, 4000
 	);
-	scripts.content_machines.addAssemblerRecipe(
-		[<contenttweaker:rotor>], 
-		[
-			<contenttweaker:crystal_metal_plate> * 4,
-			<contenttweaker:living_motor>,
-			<contenttweaker:ev_coil> * 4,
-			<contenttweaker:tablet_evil>,
-			<requious:advanced_mixer>,
-			<bloodmagic:demon_extras:13> * 2
-		], <liquid:watertight_steel> * 1500,
-		20, 10000
-	);
+	
 
 
 	scripts.content_machines.addBioAssemblerRecipe(
@@ -1524,9 +1513,9 @@ mods.actuallyadditions.Empowerer.addRecipe(
 	{//soul codex
 		<contenttweaker:soul_codex1>.addTooltip("An empty board for advanced soul manipulation");
 		recipes.addShaped("soul_codex", <contenttweaker:soul_codex1>, [
-			[<contenttweaker:mana_focus>, <moreplates:soularium_gear>, <moreplates:soularium_gear>], 
+			[<contenttweaker:mana_focus>, <moreplates:soularium_gear>, <contenttweaker:vrt_ingot>], 
 			[<moreplates:soularium_gear>, <enderio:item_material:73>, <moreplates:soularium_gear>], 
-			[<moreplates:soularium_gear>, <moreplates:soularium_gear>, <contenttweaker:mana_focus>]
+			[<contenttweaker:vrt_ingot>, <moreplates:soularium_gear>, <contenttweaker:mana_focus>]
 		]);
 		
 		//2 1

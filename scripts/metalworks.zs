@@ -1282,6 +1282,11 @@ static all_metals as IItemStack[string][string] = {
 
         singularity: <extendedcrafting:singularity_custom:31>
     },
+    draconium_sing: {
+        ingot: <extendedcrafting:singularity_custom:31>,
+        block: <extendedcrafting:singularity_custom:31> * 9,
+
+    },
     dralladium: {
         ingot: <contenttweaker:dralladium_ingot>,
         plate: <contenttweaker:dralladium_plate>,
@@ -3006,7 +3011,7 @@ function addAdvancedSmelting(ingot as IItemStack, dust as IItemStack, flux1 as I
         rec.build();
     }
     {
-        var rec = RecipeBuilder.newBuilder("adv_smelting_" ~ counter, "tignalum_oven", time / 4);
+        var rec = RecipeBuilder.newBuilder("adv_smelting_tignalum_" ~ counter, "tignalum_oven", time / 4);
         rec.addEnergyPerTickInput(rft * 10);
 
         rec.addItemOutput(ingot * 2);
@@ -5078,28 +5083,28 @@ add3alloy(3, "ender_ingot", 2,
 {//botania
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot>, 
         [
-            <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
+            <alchemistry:ingot:37>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
             <bloodmagic:slate:1>
         ], 
         500, 256
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 2, 
         [
-            <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
+            <alchemistry:ingot:37>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
             <bloodmagic:slate:2>
         ], 
         500, 256
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 4, 
         [
-            <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
+            <alchemistry:ingot:37>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
             <bloodmagic:slate:3>
         ], 
         500, 256
     );
     mods.bloodmagic.TartaricForge.addRecipe(<contenttweaker:mana_absorbing_ingot> * 8, 
         [
-            <taiga:tritonite_block>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
+            <alchemistry:ingot:37>, <contenttweaker:atum_ingot>, <moreplates:melodic_alloy_plate>, 
             <bloodmagic:slate:4>
         ], 
         500, 256
@@ -5579,11 +5584,18 @@ scripts.content_machines.addAdvancedMixerRecipe(
     scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:32>, <contenttweaker:germanium_dust>);
     
     addAdvancedSmelting(
+        <alchemistry:ingot:37>, <contenttweaker:rubidium_dust>,
+        <prodigytech:aeternus_crystal>, <bloodmagic:component:3>, <liquid:high_heat_lava> * 50, 
+        10000, 20 * 30
+    );
+    scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:37>, <contenttweaker:rubidium_dust>);
+
+    addAdvancedSmelting(
         <alchemistry:ingot:38>, <contenttweaker:strontium_dust>,
         <prodigytech:aeternus_crystal>, <twilightforest:carminite> * 2, <liquid:high_heat_lava> * 50, 
         10000, 20 * 30
     );
-    scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:32>, <contenttweaker:germanium_dust>);
+    scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:38>, <contenttweaker:strontium_dust>);
 
     addAdvancedSmelting(
         <alchemistry:ingot:41>, <contenttweaker:niobium_dust>,
@@ -5600,11 +5612,11 @@ scripts.content_machines.addAdvancedMixerRecipe(
     scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:48>, <contenttweaker:cadmium>);
 
     addAdvancedSmelting(
-        <contenttweaker:bismuth_ingot>, <contenttweaker:bismuth_dust>, 
-        <prodigytech:aeternus_crystal>, <betternether:cincinnasite> * 16, <liquid:high_heat_lava> * 50, 
+        <alchemistry:ingot:55>, <contenttweaker:cesium_dust>, 
+        <prodigytech:aeternus_crystal>, <projectred-integration:gate:17>, <liquid:high_heat_lava> * 50, 
         10000, 20 * 30
     );
-    scripts.helper.addSimpleCrushingRecipe(<contenttweaker:bismuth_ingot>, <contenttweaker:bismuth_dust>);
+    scripts.helper.addSimpleCrushingRecipe(<alchemistry:ingot:55>, <contenttweaker:cesium_dust>);
     
 
     furnace.addRecipe(<contenttweaker:tantalum_dust> * 4, <contenttweaker:capacitor_dust>);
@@ -5616,6 +5628,12 @@ scripts.content_machines.addAdvancedMixerRecipe(
         <prodigytech:aeternus_crystal>, <contenttweaker:poisotheum>, <liquid:high_heat_lava> * 50, 
         10000, 20 * 30
     );
+    addAdvancedSmelting(
+        <contenttweaker:bismuth_ingot>, <contenttweaker:bismuth_dust>, 
+        <prodigytech:aeternus_crystal>, <betternether:cincinnasite> * 16, <liquid:high_heat_lava> * 50, 
+        10000, 20 * 30
+    );
+    scripts.helper.addSimpleCrushingRecipe(<contenttweaker:bismuth_ingot>, <contenttweaker:bismuth_dust>);
 
 
     //mischmetal
@@ -5934,6 +5952,22 @@ scripts.content_machines.addAdvancedMixerRecipe(
         "duranite", 1,
         "osram", 1
     );
+
+    add3alloy(2, "nucleum", 3,
+        "proxii", 3,
+        "abyssum", 1,
+        "osram", 1
+    );
+    add3alloy(2, "nucleum", 3,
+        "imperomite", 3,
+        "osram", 1,
+        "eezo", 1
+    );
+    add3alloy(2, "nucleum", 3,
+        "niob", 3,
+        "eezo", 1,
+        "abyssum", 1
+    );
 }
 
 {//moretcon
@@ -6058,7 +6092,11 @@ scripts.content_machines.addAdvancedMixerRecipe(
         "sanguiseelium", 2
     );
 
-
+    add3alloy(5, "mystical_metal5", 1, 
+        "mystical_metal4", 2,
+        "orichalconite", 5,
+        "draconium_sing", 1
+    );
     
 
 }

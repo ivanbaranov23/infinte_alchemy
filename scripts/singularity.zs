@@ -25,7 +25,7 @@ static expl_compressables as string[] = [
 
 	"karmesine", "ovium", "jauxum", "meteorite",
 
-	"germanium", "molybdenum", "arsenic"
+	"germanium", "molybdenum", "arsenic", "bismuth"
 ];
 
 

@@ -57,8 +57,8 @@ function addSawRecipeWByproduct(log as IItemStack, planks as IItemStack, byprod 
 //recipe_name as string, machine_name as string, time as int, energy as int,
 //    out as IItemStack[], 
 //input_iis as IItemStack[], input_iode as IOreDictEntry[], input_iode_amounts as int[], input_unconsumed as IItemStack[]
-static HOA_time as int[] = [5, 10, 20, 40, 120];
-static HOA_energy as int[] = [32, 256, 1000, 10000, 100000];
+static HOA_time as int[] = [5, 10, 20, 40, 120, 300];
+static HOA_energy as int[] = [32, 256, 1000, 10000, 100000, 1000000];
 
 function addHighOvenAlloy(rname as string, level as int, output as IItemStack[], inputs as IItemStack[]){
     scripts.modular_machines.addMMRecipe(

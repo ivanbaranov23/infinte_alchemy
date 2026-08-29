@@ -10,3 +10,11 @@ mods.actuallyadditions.Empowerer.addRecipe(
 	<mysticalagriculture:coal>, <mysticalagriculture:coal>, <mysticalagriculture:crafting:1>, <mysticalagriculture:crafting:1>, 
 	10000, 10
 );
+
+mods.enderio.AlloySmelter.addRecipe(<mysticalagriculture:coal:2> * 3, 
+	[
+		<mysticalagriculture:coal:1> * 2,
+		<mysticalagriculture:crafting:2> * 2,
+		<mysticalagriculture:coal_essence> * 16
+	], 50000
+);

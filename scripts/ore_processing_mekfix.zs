@@ -216,6 +216,16 @@ function addMekOreNew(
         [<contenttweaker:germanium_ore>, <contenttweaker:germanium_chunk>], 
         <gas:germanium>, <contenttweaker:germanium_shard>, <contenttweaker:germanium_clump>
     );
+    //rubidium
+    addMekOreNew(
+        <gas:rubidium>, <gas:cleanrubidium>, 
+        <contenttweaker:rubidium_crystal>, <contenttweaker:rubidium_shard>, <contenttweaker:rubidium_clump>, <contenttweaker:rubidium_dirty_dust>, 
+        <contenttweaker:rubidium_dust>
+    );
+    addMekOreFix(
+        [<contenttweaker:rubidium_chunk>], 
+        <gas:rubidium>, <contenttweaker:rubidium_shard>, <contenttweaker:rubidium_clump>
+    );
     //molybdenum
     addMekOreNew(
         <gas:molybdenum>, <gas:cleanmolybdenum>, 

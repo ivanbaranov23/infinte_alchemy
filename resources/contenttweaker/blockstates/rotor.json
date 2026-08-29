@@ -3,7 +3,7 @@
   "defaults": {
     "textures": {
       "texture": "contenttweaker:blocks/rotor",
-      "particle": "contenttweaker:blocks/rotor"
+      "particle": "contenttweaker:blocks/parts/rotor_side"
     },
     "model": "contenttweaker:rotor",
     "uvlock": true,

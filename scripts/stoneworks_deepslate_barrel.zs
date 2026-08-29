@@ -37,6 +37,7 @@ addBarrelRecipe(<quark:biome_cobblestone:1> * 16, null, [<tconstruct:seared:1>, 
 
 addBarrelRecipe(<minecraft:purpur_block> * 16, null, [<minecraft:chorus_fruit_popped> * 4], <liquid:andesite> * 250, 10, 0);
 
+addBarrelRecipe(<quark:elder_prismarine> * 16, <quark:elder_prismarine>, [<contenttweaker:prismatic_clay>], null, 10, 0);
 
 
 for ore,sing in {

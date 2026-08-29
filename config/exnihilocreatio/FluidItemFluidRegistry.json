@@ -32,5 +32,14 @@
       "meta": 3
     },
     "output": "sand"
+  },
+  
+  {
+    "inputFluid": "andesite",
+    "reactant": {
+      "name": "netherite:netheritescrap",
+      "meta": 0
+    },
+    "output": "andesite_magma"
   }
 ]

@@ -478,6 +478,12 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         <contenttweaker:endstone_dust> * 4,
         [<thermalfoundation:material:98>, <appliedenergistics2:material:45>, <minecraft:sandstone>, <appliedenergistics2:material:46>, <appliedenergistics2:material:46>]
     );
+
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <stygian:endmagma>, 
+        <minecraft:magma> * 4, <liquid:endacid> * 1000, 
+        1500
+    );
 }
 
 

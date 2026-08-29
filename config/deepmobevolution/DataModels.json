@@ -499,7 +499,7 @@
       "minecraft:prismarine_crystals,48",
       "minecraft:fish,64,0",
       "xreliquary:mob_ingredient,12,16",
-      "quark:elder_prismarine,4"
+      "quark:elder_prismarine,1"
     ],
     "deepLearnerDisplay": {
       "hearts": 15,

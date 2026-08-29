@@ -507,6 +507,7 @@ static sievables as WeightedItemStack[][IItemStack][string] = {
 			<contenttweaker:prometheum_pieces> % 10,
 			<contenttweaker:hallowsite_pieces> % 15,
 			<netherite:netheritescrap> % 15,
+			<contenttweaker:valyrium_pieces> % 15,
 			<contenttweaker:cincinnasite_dirty_dust> % 20,
 			<bigreactors:mineralbenitoite> % 5
 		],

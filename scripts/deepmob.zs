@@ -108,3 +108,8 @@ scripts.content_machines.addBioAssemblerRecipe(
 	<contenttweaker:research_magic2>,
     20, 20
 );
+
+
+
+//matter recs
+mods.thermalexpansion.Crucible.addRecipe(<liquid:rot> * 5000, <deepmoblearning:pristine_matter_zombie>, 10000);

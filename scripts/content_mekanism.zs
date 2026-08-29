@@ -76,10 +76,12 @@ addGas("nether_star_solution", "fcfbee", true);
 
 addGas("evil", "000000", false);
 addGas("evil_nitrate", "770e06", false);
+addGas("evil_formate", "4f5f5c", true);
 
 addGas("neutron_inert", "c0c0c0", false);
 addGas("neutron_active", "808080", false);
 
+addGas("formic_acid", "4f5f5c", true);
 
 addGas("methane", "6d9c61", true);
 addGas("acetic_acid", "532d0d", true);
@@ -122,6 +124,7 @@ function addMetalGas(name as string, color as string){
     addGas("clean" ~ name, color, false);
 }
 addMetalGas("germanium", "68acff");
+addMetalGas("rubidium", "0f3d28");
 addMetalGas("arsenic", "3e914c");
 addMetalGas("molybdenum", "270030");
 addMetalGas("niobium", "021dff");

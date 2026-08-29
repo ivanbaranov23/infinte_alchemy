@@ -725,7 +725,8 @@ function Chrysopoeia_addRecipe(name as string, inp as IItemStack, outp as IItemS
     Chrysopoeia_addRecipe("certus_to", <appliedenergistics2:material:3> * 4, <appliedenergistics2:material:2> * 4);
     Chrysopoeia_addRecipe("certus_from", <appliedenergistics2:material:2> * 4, <appliedenergistics2:material:3> * 4);
 
-    //Chrysopoeia_addRecipe("bloodshroom", <mod_lavacow:cordy_shroom>, <mod_lavacow:bloodtooth_shroom>);
+    //curse
+    Chrysopoeia_addRecipe("curse", <roots:glass_eye>, <quark:soul_bead>);
     
     //caves amethyst
     Chrysopoeia_addRecipe("ame1", <prodigytech:energion_crystal_seed> * 4, <caves_n_cliffs:amethyst_cluster_single> * 4);
