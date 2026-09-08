@@ -223,7 +223,8 @@ addFishing("circuit", <liquid:circuit>, <harvestcraft:fishtrapbaititem>, {
 addFishing("radioactive_waste", <liquid:radioactive_waste>, <harvestcraft:fishtrapbaititem>, {
     <contenttweaker:activated_green_fish>: 100,
     <contenttweaker:bug_chip>: 5,
-    <contenttweaker:diamond_crab>: 50
+    <contenttweaker:diamond_crab>: 50,
+    <contenttweaker:joker_fish>: 25
 });
 
 /*

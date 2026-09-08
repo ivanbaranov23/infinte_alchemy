@@ -1,4 +1,5 @@
 #loader contenttweaker
+#priority 1
 
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Color;
@@ -40,6 +41,7 @@ VanillaFactory.createFluid("cyanoacrylate", Color.fromHex("afdfe9")).register();
 VanillaFactory.createFluid("ethylene_oxide", Color.fromHex("afdfe9")).register();
 VanillaFactory.createFluid("taurine", Color.fromHex("afdfe9")).register();
 
+VanillaFactory.createFluid("formic_acid", Color.fromHex("75a5a5")).register();
 VanillaFactory.createFluid("evil_formate", Color.fromHex("4f5f5c")).register();
 /*
 VanillaFactory.createFluid("", Color.fromHex("")).register();

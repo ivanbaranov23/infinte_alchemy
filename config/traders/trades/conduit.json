@@ -1,0 +1,104 @@
+{
+    "min": 1,
+    "max": 2,
+    "trades": [
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "enderio:item_endergy_conduit",
+                "meta": 3
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "enderio:item_liquid_conduit",
+                "meta": 2
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "enderio:item_me_conduit"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "enderio:item_item_conduit"
+            },
+            "max_uses": 12
+        },
+        
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "thermaldynamics:duct_64"
+            },
+            "max_uses": 32
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "thermaldynamics:duct_32",
+                "meta": 2
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "thermaldynamics:duct_0",
+                "meta": 3
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "thermaldynamics:duct_16",
+                "meta": 4
+            },
+            "max_uses": 12
+        },
+
+        {
+            "item_1": {
+                "item": "extrautils2:pipe",
+                "count": 4
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 12
+        }
+
+    ]
+}

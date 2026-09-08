@@ -1,0 +1,695 @@
+{
+    "min": 1,
+    "max": 2,
+    "trades": [
+        {
+            "item_1": {
+                "item": "harvestcraft:whitemushroomitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:coffeebeanitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:spiceleafitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:garlicitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:bambooshootitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:cornitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:asparagusitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:strawberryitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:seaweeditem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:almonditem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:peppercornitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:plumitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:bananaitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:starfruititem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:oliveitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:lemonitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:dragonfruititem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:cherryitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:taroitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:arrowrootitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:amaranthitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:riceitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:pineappleitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:grapeitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:tomatoitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:chilipepperitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:soybeanitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:beanitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:lettuceitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:tealeafitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:gingeritem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:rhubarbitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:sweetpotatoitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:peanutitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:onionitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:cucumberitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:ediblerootitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+        {
+            "item_1": {
+                "item": "harvestcraft:coconutitem",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 5
+        },
+
+
+
+
+
+
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:whitemushroomitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:coffeebeanitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:spiceleafitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:garlicitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:bambooshootitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:cornitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:asparagusitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:strawberryitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:seaweeditem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:almonditem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:peppercornitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:plumitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:bananaitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:starfruititem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:oliveitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:lemonitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:dragonfruititem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:cherryitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:taroitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:arrowrootitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:amaranthitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:riceitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:pineappleitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:grapeitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:tomatoitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:chilipepperitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:soybeanitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:beanitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:lettuceitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:tealeafitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:gingeritem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:rhubarbitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:sweetpotatoitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:peanutitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:onionitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:cucumberitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:ediblerootitem"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {"item": "minecraft:emerald"},
+            "output": {
+                "item": "harvestcraft:coconutitem"
+            },
+            "max_uses": 5
+        }
+    ]
+}

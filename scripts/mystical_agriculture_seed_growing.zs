@@ -52,6 +52,7 @@ addSeeds(<mysticalagriculture:water_essence>, <mysticalagriculture:water_seeds>,
 addSeeds(<mysticalagriculture:ice_essence>, <mysticalagriculture:ice_seeds>, 1);
 addSeeds(<mysticalagriculture:fire_essence>, <mysticalagriculture:fire_seeds>, 1);
 addSeeds(<mysticalagriculture:nether_essence>, <mysticalagriculture:nether_seeds>, 1);
+addSeeds(<mysticalagriculture:dye_essence>, <mysticalagriculture:dye_seeds>, 1);
 
 
 addSeeds(<mysticalagriculture:menril_essence>, <mysticalagriculture:menril_seeds>, 1);

@@ -1145,11 +1145,11 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
     );
     scripts.content_machines.addFluidSieveRecipeRandom(
         [
-            <harvestcraft:cinnamonitem> % 50,
-            <harvestcraft:peppercornitem> % 50,
-            <harvestcraft:gingeritem> % 50,
-            <harvestcraft:nutmegitem> % 50,
-            <harvestcraft:spiceleafitem> % 50
+            <harvestcraft:cinnamonitem> * 4,
+            <harvestcraft:peppercornitem> * 4,
+            <harvestcraft:gingeritem> * 4,
+            <harvestcraft:nutmegitem> * 4,
+            <harvestcraft:spiceleafitem> * 4
         ], null, 
         <liquid:biocrude> * 300, <contenttweaker:spice_egg>,
         <exnihilocreatio:item_mesh:4>,
@@ -1187,7 +1187,7 @@ function add8refinery(outp as IItemStack, inp as IIngredient, cost as int){
     ]);
 }
 function addDroneToWorker(worker as IItemStack, cats as IIngredient[], cost as int){
-    recipes.addShapeless("chitigic_dronetoworker", worker, 
+    recipes.addShapeless("chitigic_dronetoworker_" ~ worker.name, worker, 
         cats + <contenttweaker:chitigic_drone>.only(
             function(item){
                 if (item.tag.memberGet("food")){
@@ -1200,9 +1200,9 @@ function addDroneToWorker(worker as IItemStack, cats as IIngredient[], cost as i
         )
     );
     scripts.jei.addJEIhint(
-        [worker], [],
+        [<contenttweaker:chitigic_drone>.withTag({food: cost})], [],
         [],
-        [<contenttweaker:chitigic_drone>.withTag({food: cost})]
+        [worker]
     );
 }
 
@@ -1221,15 +1221,13 @@ function addBioAssemblerRecipeChitigic(
     			container.addItemOutput("output" ~ o, out[o].stack.withLore(["§d§l" ~ out[o].percent ~ "%"]));
             }
             container.addItemOutput("output3", spec);
-            if fluid_out{
-                container.addFluidOutput("output", fluid_out);
-            }
+            
         }
         else{
             var living as IItemStack = container.getItem("living");
 
-            if (living.tag.memberGet("life"))
-            if (living.tag.life > 0){
+            if (living.tag.memberGet("lifespan"))
+            if (living.tag.lifespan > 0){
             
                 for o in 0 to out.length
                     if(container.random.nextDouble() < out[o].chance) //>
@@ -1237,9 +1235,12 @@ function addBioAssemblerRecipeChitigic(
 
                 container.addItemOutput("output3", living.withTag({
                     food: living.tag.food.asInt() - cost,
-                    life: living.tag.life.asInt() - 1
+                    lifespan: living.tag.lifespan.asInt() - 1
                 }));
             }
+        }
+        if fluid_out{
+            container.addFluidOutput("output", fluid_out);
         }
         
         
@@ -1271,7 +1272,7 @@ function addBioAssemblerRecipeChitigic(
             <contenttweaker:flesh_piece> * 4,
             <harvestcraft:southernstylebreakfastitem>|<harvestcraft:meatfeastpizzaitem>|<harvestcraft:thankfuldinneritem>|<harvestcraft:koreandinneritem>|<harvestcraft:gourmetvenisonburgeritem>|<harvestcraft:cornedbeefbreakfastitem>,
             <minecraft:golden_apple:1> * 4,
-            <alchemistry:ingot:21> | <alchemistry:ingot:84> | <alchemistry:ingot:94>
+            <alchemistry:ingot:21>
         ], [<liquid:bugs> * 1000, <liquid:alien_polymer> * 750], <extrautils2:machine>.withTag({Type: "extrautils2:generator_culinary"}),
         400, 100000
     );
@@ -1300,11 +1301,12 @@ function addBioAssemblerRecipeChitigic(
     recipes.addShapeless("chitigic_egg", <contenttweaker:chitigic_drone>.withTag({food:5}), [<contenttweaker:chitigic_egg>]);
 
     //workers
-    addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, lifespan: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
-    //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
-    //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
-    //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, life: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
+    addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food: 25, lifespan: 25}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
+    addDroneToWorker(<contenttweaker:chitigic_engineer>.withTag({food: 25, lifespan: 25}), [<requious:assembler>], 200);
+    //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, lifespan: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
+    //addDroneToWorker(<contenttweaker:chitigic_hunter>.withTag({food:25, lifespan: 10}), [<enderio:item_end_steel_sword>, <enderio:item_end_steel_sword>], 200);
     
+    //hunter
     addBioAssemblerRecipeChitigic(
         <contenttweaker:chitigic_hunter>, [<contenttweaker:lv_sandworm>], [], null,
         [
@@ -1312,6 +1314,23 @@ function addBioAssemblerRecipeChitigic(
             <contenttweaker:sandworm_gut> * 4,
             <contenttweaker:sandworm_chitin> * 4
         ], <liquid:worm_blood> * 1000,
+        10
+    );
+
+    //engineer
+    addBioAssemblerRecipeChitigic(
+        <contenttweaker:chitigic_engineer>, [
+            <contenttweaker:sunnarium_chunk>,
+            <contenttweaker:low_superconductor> * 4,
+            <contenttweaker:reagent_mushroom>,
+            <contenttweaker:onyx> * 8
+        ], [
+            <liquid:omega_acids> * 2000,
+            <liquid:sloth> * 1000
+        ], null,
+        [
+            <contenttweaker:sarahanium_base>
+        ], null,
         10
     );
 

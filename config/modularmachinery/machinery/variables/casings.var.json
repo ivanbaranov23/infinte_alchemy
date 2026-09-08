@@ -7,6 +7,11 @@
         "modularmachinery:blockoutputbus",
         "modularmachinery:blockenergyoutputhatch",
         "modularmachinery:blockfluidoutputhatch",
+
+        "mmce_complement:quad_fluid_input_hatch_tiny",
+        "mmce_complement:quad_fluid_output_hatch_tiny",
+        "mmce_complement:nine_fluid_input_hatch_normal",
+        "mmce_complement:nine_fluid_output_hatch_normal",
         
         "modularmachinery:blockmeitemoutputbus",
         "modularmachinery:blockmeiteminputbus",
@@ -15,22 +20,11 @@
         "modularmachinery:blockmepatternprovider",
 
         "modularmachineryaddons:blocksingularityiteminputbus",
-        "modularmachineryaddons:blocksingularityitemoutputbus"
+        "modularmachineryaddons:blocksingularityitemoutputbus",
+        "mmce_complement:redstone_control_hatch"
     ],
     "casings_all_all": [
-        "modularmachinery:blockcasing@0",
-        "modularmachinery:blockinputbus",
-        "modularmachinery:blockenergyinputhatch",
-        "modularmachinery:blockfluidinputhatch",
-        "modularmachinery:blockoutputbus",
-        "modularmachinery:blockenergyoutputhatch",
-        "modularmachinery:blockfluidoutputhatch",
-        
-        "modularmachinery:blockmeitemoutputbus",
-        "modularmachinery:blockmeiteminputbus",
-        "modularmachinery:blockmefluidoutputbus",
-        "modularmachinery:blockmefluidinputbus",
-        "modularmachinery:blockmepatternprovider",
+        "casings_all",
 
         "modularmachinery:blockmanaproviderinput",
         "modularmachinery:blockmanaprovideroutput",

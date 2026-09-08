@@ -242,6 +242,88 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
         <minecraft:bucket>, <mysticalagriculture:fire_essence>, <mysticalagriculture:water_essence>
     ]);
 
+    {//dye
+        recipes.addShaped("dye0", <industrialforegoing:artificial_dye> * 4, [
+            [<mysticalagriculture:dye_essence>, <mysticalagriculture:dye_essence>, null],
+            [null, null, null],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye1", <industrialforegoing:artificial_dye:1> * 4, [
+            [<mysticalagriculture:dye_essence>, null, <mysticalagriculture:dye_essence>],
+            [null, null, null],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye2", <industrialforegoing:artificial_dye:2> * 4, [
+            [<mysticalagriculture:dye_essence>, null, null],
+            [<mysticalagriculture:dye_essence>, null, null],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye3", <industrialforegoing:artificial_dye:3> * 4, [
+            [<mysticalagriculture:dye_essence>, null, null],
+            [null, <mysticalagriculture:dye_essence>, null],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye4", <industrialforegoing:artificial_dye:4> * 4, [
+            [<mysticalagriculture:dye_essence>, null, null],
+            [null, null, <mysticalagriculture:dye_essence>],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye5", <industrialforegoing:artificial_dye:5> * 4, [
+            [<mysticalagriculture:dye_essence>, null, null],
+            [null, null, null],
+            [<mysticalagriculture:dye_essence>, null, null]
+        ]);
+        recipes.addShaped("dye6", <industrialforegoing:artificial_dye:6> * 4, [
+            [<mysticalagriculture:dye_essence>, null, null],
+            [null, null, null],
+            [null, <mysticalagriculture:dye_essence>, null]
+        ]);
+        recipes.addShaped("dye7", <industrialforegoing:artificial_dye:7> * 4, [
+            [<mysticalagriculture:dye_essence>, null, null],
+            [null, null, null],
+            [null, null, <mysticalagriculture:dye_essence>]
+        ]);
+        recipes.addShaped("dye8", <industrialforegoing:artificial_dye:8> * 4, [
+            [null, <mysticalagriculture:dye_essence>, <mysticalagriculture:dye_essence>],
+            [null, null, null],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye9", <industrialforegoing:artificial_dye:9> * 4, [
+            [null, <mysticalagriculture:dye_essence>, null],
+            [<mysticalagriculture:dye_essence>, null, null],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye10", <industrialforegoing:artificial_dye:10> * 4, [
+            [null, <mysticalagriculture:dye_essence>, null],
+            [null, <mysticalagriculture:dye_essence>, null],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye11", <industrialforegoing:artificial_dye:11> * 4, [
+            [null, <mysticalagriculture:dye_essence>, null],
+            [null, null, <mysticalagriculture:dye_essence>],
+            [null, null, null]
+        ]);
+        recipes.addShaped("dye12", <industrialforegoing:artificial_dye:12> * 4, [
+            [null, <mysticalagriculture:dye_essence>, null],
+            [null, null, null],
+            [<mysticalagriculture:dye_essence>, null, null]
+        ]);
+        recipes.addShaped("dye13", <industrialforegoing:artificial_dye:13> * 4, [
+            [null, <mysticalagriculture:dye_essence>, null],
+            [null, null, null],
+            [null, <mysticalagriculture:dye_essence>, null]
+        ]);
+        recipes.addShaped("dye14", <industrialforegoing:artificial_dye:14> * 4, [
+            [null, <mysticalagriculture:dye_essence>, null],
+            [null, null, null],
+            [null, null, <mysticalagriculture:dye_essence>]
+        ]);
+        recipes.addShaped("dye15", <industrialforegoing:artificial_dye:15> * 4, [
+            [null, null, <mysticalagriculture:dye_essence>],
+            [<mysticalagriculture:dye_essence>, null, null],
+            [null, null, null]
+        ]);
+    }
 
     //menril
     mods.thermalexpansion.Crucible.addRecipe(<liquid:menrilresin> * 500, <mysticalagriculture:menril_essence>, 2000);

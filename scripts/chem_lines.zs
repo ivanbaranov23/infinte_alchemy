@@ -1506,13 +1506,7 @@ import mods.modularmachinery.RecipeBuilder;
         20, 10000
     );
 
-    mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:c14_gem>, [
-        [null, <contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>, null], 
-        [<contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:sunnarium_chunk>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>], 
-        [<contenttweaker:blood_gem>, <contenttweaker:sunnarium_chunk>, <botania:manaresource:2>, <contenttweaker:sunnarium_chunk>, <contenttweaker:blood_gem>], 
-        [<contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:sunnarium_chunk>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>], 
-        [null, <contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>, null]
-    ]);
+    
 }
 
 {//red waste

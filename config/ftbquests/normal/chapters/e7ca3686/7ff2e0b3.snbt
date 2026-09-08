@@ -5,6 +5,7 @@
 		"Hope you had your cobblegen running for all this time"
 	],
 	dependencies: [
+		"44a3aded",
 		"76300e8f"
 	],
 	tasks: [{

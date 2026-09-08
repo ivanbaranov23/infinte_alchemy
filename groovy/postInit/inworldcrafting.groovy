@@ -164,6 +164,12 @@ inWorldCrafting.fluidToItem.recipeBuilder()
         .register()
 
 inWorldCrafting.fluidToItem.recipeBuilder()
+        .fluidInput(fluid('rainbow'))
+        .input(item('twilightforest:twilight_sapling'))
+        .output(item('twilightforest:twilight_sapling', 9))
+        .register()
+
+inWorldCrafting.fluidToItem.recipeBuilder()
         .fluidInput(fluid('druid_soup'))
         .input(item('thermalfoundation:storage_alloy', 7) * 8)
         .input(item('contenttweaker:singularity_dust'))

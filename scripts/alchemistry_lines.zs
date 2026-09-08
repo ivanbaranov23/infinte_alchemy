@@ -37,6 +37,8 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
     Liquifier.addRecipe(fluid * 1000, item * 8);
 }
 
+
+
 {//Na
     Dissolver.addRecipe(<contenttweaker:naoh>, false, 1,
         [
@@ -62,6 +64,10 @@ function addFluidConv(item as IItemStack, fluid as ILiquidStack, readd as bool =
         []
     );
     
+}
+{//fluorine
+    addItemConv(<contenttweaker:fluospar_dust>, <alchemistry:compound:200>);
+    addFluidConv(<alchemistry:element:9>, <liquid:fluorine>, true);
 }
 {//noble
     Dissolver.addRecipe(<contenttweaker:noble_gases_ingot>, false, 2,

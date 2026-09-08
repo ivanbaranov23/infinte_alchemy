@@ -131,3 +131,64 @@ scripts.content_machines.addAssemblerRecipe(
     rec.build();
 
 }
+{var rec = RecipeBuilder.newBuilder("society", "super_mixer", 20 * 1);
+
+    rec.addEnergyPerTickInput(25600000);
+
+    rec.addItemOutputs(
+        <contenttweaker:gaia_catalyst_used>
+    );
+    rec.addItemInputs(
+        <contenttweaker:gaia_catalyst>
+    );
+    
+    rec.addFluidInputs(
+        <liquid:society> * 2000,
+        <liquid:vile> * 2000
+    );
+
+    rec.addCatalystInput(
+        <contenttweaker:joker_fish> * 4,
+        ["Output fluid x1.5"],
+        [
+            RecipeModifierBuilder.create("modularmachinery:fluid", "output", 1.5, 1, false).build()
+        ]
+    ).setChance(0.5);
+    
+    
+    rec.addFluidOutput(<liquid:society2> * 2000);
+
+    rec.build();
+
+}
+
+{//sarahanium
+    var rec = RecipeBuilder.newBuilder("sarahanium", "super_mixer", 20 * 1);
+
+    rec.addEnergyPerTickInput(256 * 100 * 1000);
+
+    rec.addItemOutputs(
+        <contenttweaker:gaia_catalyst_used>,
+        <contenttweaker:sarahanium> * 4
+    );
+    rec.addItemInputs(
+        <contenttweaker:gaia_catalyst>,
+        <contenttweaker:sarahanium_base> * 4,
+        <contenttweaker:c14_dust> * 16,
+        <contenttweaker:terra_base_dust> * 16
+    );
+    
+    rec.addWillInput(
+        "CORROSIVE", 50
+    );
+    
+
+    rec.build();
+}
+mods.enderio.AlloySmelter.addRecipe(<contenttweaker:sarahanium_compressed>, 
+    [
+        <contenttweaker:sarahanium>,
+        <contenttweaker:illagerite_compressed> * 16,
+        <mekanism:compressedobsidian> * 16
+    ], 5 * 1000 * 1000
+);

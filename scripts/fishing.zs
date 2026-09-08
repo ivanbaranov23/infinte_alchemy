@@ -116,7 +116,13 @@ addFishRec1(<harvestcraft:greenheartfishitem>, <minecraft:dye:2>);
 addFishRec1(<atum:fish_forsaken>, <harvestcraft:tacoitem>);
 
 //my
+addFishRec2(<contenttweaker:oil_fish>, <thermalfoundation:bait:1>, <liquid:lubricant> * 100, 1);
+
 addFishRec2(<contenttweaker:obsidian_trout>, <mekanism:nugget> * 3, <liquid:andesite_magma> * 100, 3);
+addFishRec2(<contenttweaker:fire_jellyfish>, <minecraft:magma>, <liquid:tasty_lava> * 500, 4);
+
+
+addFishRec2(<contenttweaker:joker_fish>, <minecraft:fish:2> * 3, <liquid:society> * 2000, 16);
 
 
 
@@ -136,6 +142,7 @@ mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesopl
         <contenttweaker:oil_fish>
     ]);
     scripts.helper.addSawRecipe(<contenttweaker:oil_fish>, <immersivepetroleum:material> * 4);
+
 }
 {
     recipes.addShapeless("ia_cutting_diamond_crab", <minecraft:diamond>, [
@@ -146,7 +153,7 @@ mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesopl
 
 
 }
-{
+{//lava
     recipes.addShapeless("ia_cutting_obsidian_trout", <thermalfoundation:material:770> * 2, [
         <harvestcraft:cuttingboarditem>.reuse(),
         <contenttweaker:obsidian_trout>
@@ -163,8 +170,16 @@ mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesopl
         <contenttweaker:basalt_anchovy>
     ]);
     scripts.helper.addSawRecipe(<contenttweaker:basalt_anchovy>, <contenttweaker:basalt_dust> * 4);
-}
 
+    
+    recipes.addShapeless("ia_cutting_fire_jellyfish", <minecraft:blaze_powder> * 3, [
+        <harvestcraft:cuttingboarditem>.reuse(),
+        <contenttweaker:fire_jellyfish>
+    ]);
+    scripts.helper.addSawRecipe(<contenttweaker:fire_jellyfish>, <minecraft:blaze_powder> * 6);
+    mods.tconstruct.Melting.addRecipe(<liquid:blazing_blood> * 500, <contenttweaker:fire_jellyfish>);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:blazing_blood> * 500, <contenttweaker:fire_jellyfish>, 1000);
+}
 
 
 {//coral

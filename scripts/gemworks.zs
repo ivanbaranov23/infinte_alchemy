@@ -292,6 +292,17 @@ scripts.content_machines.addFluidSieveRecipeRandom(
 );
 
 
+mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:c14_gem>, [
+	[null, null, null, <contenttweaker:c14_dust>, null, null, null], 
+	[null, null, <contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>, null, null], 
+	[null, <contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:sunnarium_chunk>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>, null], 
+	[<contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:sunnarium_chunk>, <botania:manaresource:2>, <contenttweaker:sunnarium_chunk>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>], 
+	[null, <contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:sunnarium_chunk>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>, null], 
+	[null, null, <contenttweaker:c14_dust>, <contenttweaker:blood_gem>, <contenttweaker:c14_dust>, null, null], 
+	[null, null, null, <contenttweaker:c14_dust>, null, null, null]
+]);
+
+
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:gargeruby>, [
     [null, null, <projectred-core:resource_item:200>, null, null], 
     [null, <projectred-core:resource_item:200>, <contenttweaker:germanium_block>, <projectred-core:resource_item:200>, null], 

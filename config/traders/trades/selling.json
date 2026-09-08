@@ -1,0 +1,1484 @@
+{
+    "min": 15,
+    "max": 25,
+    "trades": [
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 20
+            },
+            "output": {
+                "item": "contenttweaker:algae",
+                "nbt": "{food: 10}"
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "contenttweaker:lapis_stone"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "contenttweaker:bug_essence"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"bugs\", Amount: 1000}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "contenttweaker:staffwood"
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "erebus:mud"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "prodigytech:energion_crystal_seed"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "contenttweaker:ferramic_gravel"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "botania:fertilizer"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 20
+            },
+            "output": {
+                "item": "actuallyadditions:block_misc",
+                "meta": 4
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "output": {
+                "item": "prodigytech:primordium"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 12
+            },
+            "output": {
+                "item": "prodigytech:circuit_crude"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "storagenetwork:simple_kabel"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "astralsorcery:itemcraftingcomponent"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"astralsorcery.liquidstarlight\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"formic_acid\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "contenttweaker:burn_powder"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "roots:elemental_soil"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "caves_n_cliffs:amethyst_cluster_single"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "caves_n_cliffs:budding_amethyst"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "botania:cocoon"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "mod_lavacow:fissionpotion"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "storagenetwork:kabel"
+            },
+            "max_uses": 12
+        },
+        
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "output": {
+                "item": "simplyjetpacks:itemjetpack",
+                "meta": 17
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 12
+            },
+            "output": {
+                "item": "portabledrill:portable_drill"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "contenttweaker:power_core_active"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 12
+            },
+            "output": {
+                "item": "erebus:composter"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 12
+            },
+            "output": {
+                "item": "erebus:liquifier"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "erebus:planks",
+                "meta": 12
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "erebus:life_blood"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "erebus:materials",
+                "meta": 8
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "erebus:materials",
+                "meta": 9
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "erebus:materials",
+                "meta": 20
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 20
+            },
+            "output": {
+                "item": "erebus:horn_of_summoning"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 12
+            },
+            "output": {
+                "item": "erebus:bamboo_crate"
+            },
+            "max_uses": 4
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "erebus:giant_flower_stigma",
+                "meta": 14
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "biomesoplenty:gem",
+                "meta": 1
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "biomesoplenty:gem",
+                "meta": 3
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "biomesoplenty:gem",
+                "meta": 7
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "biomesoplenty:gem",
+                "meta": 2
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "biomesoplenty:gem",
+                "meta": 4
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "biomesoplenty:gem",
+                "meta": 5
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "biomesoplenty:gem",
+                "meta": 6
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"blood\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"sand\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"redstone\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"blueslime\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"creosote\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"ender_blood\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"sewage\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"liquidfusionlava\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 16
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"organic_cg\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 16
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"residue_cg\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 16
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"sludge_cg\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "forge:bucketfilled",
+                "nbt": "{FluidName: \"concrete\", Amount: 1000}"
+            },
+            "max_uses": 3
+        },
+
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 64
+            },
+            "output": {
+                "item": "contenttweaker:sarahanium",
+                "meta": 0
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "mekanism:controlcircuit",
+                "meta": 0
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "mekanism:controlcircuit",
+                "meta": 1
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "contenttweaker:advanced_circuit_plate",
+                "meta": 0
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 12
+            },
+            "output": {
+                "item": "mekanism:tierinstaller",
+                "meta": 0
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 16
+            },
+            "output": {
+                "item": "mekanism:tierinstaller",
+                "meta": 1
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "output": {
+                "item": "mekanism:tierinstaller",
+                "meta": 2
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 24
+            },
+            "output": {
+                "item": "enderio:item_basic_capacitor"
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 24
+            },
+            "output": {
+                "item": "enderio:item_capacitor_silver"
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "contenttweaker:industrial_clay",
+                "meta": 0
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 6
+            },
+            "output": {
+                "item": "immersiveengineering:material",
+                "meta": 8
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 6
+            },
+            "output": {
+                "item": "immersiveengineering:material",
+                "meta": 9
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 6
+            },
+            "output": {
+                "item": "contenttweaker:transmut_gel"
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 6
+            },
+            "output": {
+                "item": "contenttweaker:inversion_dust"
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "contenttweaker:elemental_reduction"
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 6
+            },
+            "output": {
+                "item": "contenttweaker:flower_steel_ingot"
+            },
+            "max_uses": 8
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "contenttweaker:wormweave"
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 16
+            },
+            "output": {
+                "item": "thermalfoundation:material",
+                "meta": 513
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 16
+            },
+            "output": {
+                "item": "thermalfoundation:material",
+                "meta": 514
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 24
+            },
+            "output": {
+                "item": "thermalfoundation:material",
+                "meta": 515
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 6
+            },
+            "output": {
+                "item": "contenttweaker:resonating_plate"
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "projectred-core:resource_item"
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "immersiveengineering:metal_decoration0",
+                "meta": 3
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "immersiveengineering:metal_decoration0",
+                "meta": 4
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 8
+            },
+            "output": {
+                "item": "immersiveengineering:metal_decoration0",
+                "meta": 5
+            },
+            "max_uses": 6
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "immersiveengineering:metal_decoration1",
+                "meta": 1
+            },
+            "max_uses": 6
+        },
+        
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 16
+            },
+            "output": {
+                "item": "thermalfoundation:upgrade",
+                "meta": 0
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 32
+            },
+            "output": {
+                "item": "thermalfoundation:upgrade",
+                "meta": 33
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 64
+            },
+            "output": {
+                "item": "thermalfoundation:upgrade",
+                "meta": 34
+            },
+            "max_uses": 3
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald_block",
+                "count": 16
+            },
+            "output": {
+                "item": "thermalfoundation:upgrade",
+                "meta": 35
+            },
+            "max_uses": 3
+        },
+        
+        
+
+
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:tallgrass",
+                "meta": 2
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:reeds"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:pumpkin"
+            },
+            "max_uses": 4
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:yellow_flower"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower",
+                "meta": 2
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower",
+                "meta": 3
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower",
+                "meta": 4
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower",
+                "meta": 5
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower",
+                "meta": 6
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower",
+                "meta": 7
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower",
+                "meta": 8
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_flower",
+                "meta": 1
+            },
+            "max_uses": 8
+        },
+		{
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "futuremc"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "futuremc:cornflower"
+            },
+            "max_uses": 12
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "futuremc"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "futuremc:lily_of_the_valley"
+            },
+            "max_uses": 7
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "palebloom"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "palebloom:eyeblossom_open"
+            },
+            "max_uses": 7
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:wheat_seeds"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:pumpkin_seeds"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:melon_seeds"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:beetroot_seeds"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:dye",
+                "meta": {
+                    "min": 0,
+                    "max": 15
+                },
+                "count": 3
+            },
+            "max_uses": 12,
+            "duplicates": true
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:vine",
+                "count": 3
+            },
+            "max_uses": 4
+        },
+		{
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "palebloom"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "palebloom:pale_hanging_moss",
+                "count": 3
+            },
+            "max_uses": 4
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:brown_mushroom",
+                "count": 3
+            },
+            "max_uses": 4
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:red_mushroom",
+                "count": 3
+            },
+            "max_uses": 4
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:waterlily",
+                "count": 5
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:sand",
+                "count": 8
+            },
+            "max_uses": 8
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald"
+            },
+            "output": {
+                "item": "minecraft:sand",
+                "meta": 1,
+                "count": 4
+            },
+            "max_uses": 6
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "da"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "output": {
+                "item": "da:moss_block",
+                "count": 2
+            },
+            "max_uses": 5
+        },
+		{
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "palebloom"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "output": {
+                "item": "palebloom:pale_moss_block",
+                "count": 2
+            },
+            "max_uses": 5
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "oe:sea_pickle"
+            },
+            "max_uses": 5
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:spawn_bucket",
+                "nbt": "{EntityTag: {id: \"oe:tropical_fish\"}}"
+            },
+            "max_uses": 4
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:spawn_bucket",
+                "nbt": "{EntityTag: {id: \"oe:pufferfish\"}}"
+            },
+            "max_uses": 4
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:spawn_bucket",
+                "nbt": "{EntityTag: {id: \"oe:crab\"}}"
+            },
+            "max_uses": 4
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:spawn_bucket",
+                "nbt": "{EntityTag: {id: \"oe:lobster\"}}"
+            },
+            "max_uses": 4
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:kelp"
+            },
+            "max_uses": 12
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "minecraft:cactus"
+            },
+            "max_uses": 8
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "minecraft:slime_ball"
+            },
+            "max_uses": 5
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 5
+            },
+            "output": {
+                "item": "oe:nautilus_shell"
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 5
+            },
+            "output": {
+                "ore": "treeSapling"
+            },
+            "max_uses": 8,
+            "duplicates": true
+        },
+		{
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "output": {
+                "item": "minecraft:glowstone"
+            },
+            "max_uses": 5
+        },
+		{
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:blue_coral_block"
+            },
+            "max_uses": 8
+        },
+		{
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:pink_coral_block"
+            },
+            "max_uses": 8
+        },
+		{
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:purple_coral_block"
+            },
+            "max_uses": 8
+        },
+		{
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:red_coral_block"
+            },
+            "max_uses": 8
+        },
+		{
+            "conditions": [
+                {
+                    "condition": "mod_installed",
+                    "value": "oe"
+                }
+            ],
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "output": {
+                "item": "oe:yellow_coral_block"
+            },
+            "max_uses": 8
+        }
+    ]
+}

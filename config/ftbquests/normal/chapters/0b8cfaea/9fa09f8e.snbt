@@ -1,0 +1,22 @@
+{
+	title: "Wandering trader",
+	x: 2.5d,
+	y: 3.0d,
+	text: [
+		"Wandering trader (not to be confused with traveling merchant) will sometimes come to sell you a bunch of goodies at quite high prices. ",
+		"This one will leave eventually.",
+		"",
+		"He is such a wildcard."
+	],
+	dependencies: [
+		"4c22ee1e"
+	],
+	optional: true,
+	tasks: [{
+		uid: "c0f0ed8a",
+		type: "item",
+		items: [{
+			item: "minecraft:lead"
+		}]
+	}]
+}

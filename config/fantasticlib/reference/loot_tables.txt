@@ -18,6 +18,8 @@ minecraft:entities/vex
 mod_lavacow:entities/avaton
 xreliquary:inject/chests/igloo_chest
 minecraft:entities/elder_guardian
+raids:chests/pillager_outpost
+raids:entities/pillager
 primitivemobs:entities/special/treasure_slime
 minecraft:chests/nether_bridge
 mod_lavacow:entities/scarecrow_straw
@@ -87,6 +89,7 @@ xreliquary:inject/chests/simple_dungeon
 mod_lavacow:chests/desert_tomb_chest
 deepmoblearning:loot_hoarder
 mod_lavacow:entities/wendigo
+raids:entities/ravager
 tconstruct:entities/blueslime
 primitivemobs:entities/blazing_juggernaut
 mod_lavacow:entities/salamander

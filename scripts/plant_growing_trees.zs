@@ -123,6 +123,21 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 12],
     
 }
 
+{//twilight
+    addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
+        [<twilightforest:twilight_log> * 64, (<twilightforest:twilight_sapling> * 8) % 0, <twilightforest:root> * 4 % 25], [<twilightforest:twilight_sapling>], 12, 128
+    );
+    addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
+        [<twilightforest:twilight_log:1> * 64, (<twilightforest:twilight_sapling:1> * 8) % 0, <twilightforest:root> * 4 % 25], [<twilightforest:twilight_sapling:1>], 12, 128
+    );
+    addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
+        [<twilightforest:twilight_log:2> * 64, (<twilightforest:twilight_sapling:2> * 8) % 0, <twilightforest:root> * 4 % 25], [<twilightforest:twilight_sapling:2>], 12, 128
+    );
+    addIBTrecipe([<industrialforegoing:fertilizer> * 16], 
+        [<twilightforest:twilight_log:3> * 64, (<twilightforest:twilight_sapling:3> * 8) % 0, <twilightforest:root> * 4 % 25], [<twilightforest:twilight_sapling:3>], 12, 128
+    );
+}
+
 //other
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
     [<atum:palm_log> * 64, (<atum:date> * 4) % 75, (<atum:palm_sapling> * 8) % 0], [<atum:palm_sapling>], 12, 128

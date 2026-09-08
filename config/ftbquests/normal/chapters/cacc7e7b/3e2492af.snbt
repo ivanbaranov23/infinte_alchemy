@@ -1,18 +1,10 @@
 {
 	title: "Trial Keys",
-	icon: {
-		id: "deepmoblearning:trial_key",
-		ForgeCaps: {
-			"astralsorcery:cap_item_amulet_holder": {}
-		}
-	},
+	icon: "deepmoblearning:trial_key",
 	x: 1.5d,
 	y: 3.0d,
 	text: [
 		"A challange for you: clear ultimate fun trial (creeper trial). If even one of them explodes it won't be counted as dying and the trial will be softlocked. Better hit 'em fast."
-	],
-	dependencies: [
-		"7355ab30"
 	],
 	tasks: [{
 		uid: "f0f92c92",

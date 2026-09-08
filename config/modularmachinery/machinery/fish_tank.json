@@ -5,9 +5,9 @@
     "has-factory": true,
     "modifiers": [
         {
-            "x": [-1, 0, 1],
+            "x": -1,
             "y": 0,
-            "z": [1, 2, 3],
+            "z": 1,
             "elements": [
                 "contenttweaker:worm_glass@0"
             ],
@@ -21,7 +21,183 @@
                     "io": "input",
                     "target": "duration",
                     "operation": 1,
-                    "multiplier": 0.988361533
+                    "multiplier": 0.77426368268
+                }
+            ],
+            "description": "x4 item output, -90% recipe time"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:worm_glass@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                }, {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.77426368268
+                }
+            ],
+            "description": "x4 item output, -90% recipe time"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "contenttweaker:worm_glass@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                }, {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.77426368268
+                }
+            ],
+            "description": "x4 item output, -90% recipe time"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "contenttweaker:worm_glass@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                }, {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.77426368268
+                }
+            ],
+            "description": "x4 item output, -90% recipe time"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "contenttweaker:worm_glass@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                }, {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.77426368268
+                }
+            ],
+            "description": "x4 item output, -90% recipe time"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "contenttweaker:worm_glass@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                }, {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.77426368268
+                }
+            ],
+            "description": "x4 item output, -90% recipe time"
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "contenttweaker:worm_glass@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                }, {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.77426368268
+                }
+            ],
+            "description": "x4 item output, -90% recipe time"
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "contenttweaker:worm_glass@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                }, {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.77426368268
+                }
+            ],
+            "description": "x4 item output, -90% recipe time"
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "contenttweaker:worm_glass@0"
+            ],
+            "modifier": [
+                {
+                    "io": "output",
+                    "target": "item",
+                    "operation": 0,
+                    "multiplier": 0.33334
+                }, {
+                    "io": "input",
+                    "target": "duration",
+                    "operation": 1,
+                    "multiplier": 0.77426368268
                 }
             ],
             "description": "x4 item output, -90% recipe time"

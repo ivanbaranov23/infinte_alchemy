@@ -526,10 +526,13 @@ addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0,
 
 
 {//twilight
-    
+    addExcavator("Twilight Trollstein", 15, ["oreTrollsteinn", "oreOverworldIron", "oreOverworldNickel", "oreOxideNickel"], [0.65, 0.15, 0.15, 0.05], [7, -11325]);
     addExcavator("Twilight Redstone", 15, ["oreOverworldRedstone", "oreOverworldGarstone"], [0.95, 0.05], [7, -11325]);
 
     addExcavator("Twilight Garstone", 5, ["oreOverworldGarstone", "oreOverworldRuby"], [0.9, 0.1], [7, -11325]);
+
+    addExcavator("Twilight Trollstein 2", 15, ["oreTrollsteinn", "oreOverworldTopaz"], [0.9, 0.1], [7, -11325]);
+    addExcavator("Twilight Topaz", 15, ["oreOverworldTopaz", "oreTrollsteinn"], [0.8, 0.2], [7, -11325]);
 
     addFluidReservoir("Twilight Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [7, -11325]);
 }

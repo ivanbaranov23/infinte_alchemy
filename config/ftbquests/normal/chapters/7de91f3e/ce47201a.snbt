@@ -1,0 +1,27 @@
+{
+	x: 22.0d,
+	y: 4.5d,
+	text: [
+		"Replace crystal rotors and blocks with:",
+		"1) kikeridan ones for 10x output fluid and 100x input energy.",
+		"2) ultimate ones for 100x output fluid and 10000x input energy."
+	],
+	dependencies: [
+		"e2fc21b0"
+	],
+	optional: true,
+	tasks: [{
+		uid: "2d0fd1f5",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rotor2"
+		}]
+	},
+	{
+		uid: "2b2ebdf9",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rotor3"
+		}]
+	}]
+}

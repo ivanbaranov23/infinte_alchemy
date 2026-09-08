@@ -21,6 +21,7 @@ function addOneToMany(fluid as ILiquidStack, ent as IEntityDefinition[][IEntityD
     FBTweaker.addRecipe(fluid, o);
 }
 
+addOneToOne(<entity:mysticalworld:entity_silkworm>, <liquid:witchwater>, <entity:minecraft:silverfish>);
 
 addOneToMany(<liquid:sea_water>, {<entity:minecraft:skeleton>: [<entity:quark:pirate>]});
 

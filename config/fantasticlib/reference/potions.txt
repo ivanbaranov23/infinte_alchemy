@@ -83,6 +83,9 @@ mowziesmobs:suns_blessing
 mowziesmobs:geomancy
 mowziesmobs:frozen
 mowziesmobs:poison_resist
+raids:hero_of_the_village
+raids:bad_omen
+raids:raid_omen
 xreliquary:flight_potion
 xreliquary:pacification_potion
 xreliquary:cure_potion

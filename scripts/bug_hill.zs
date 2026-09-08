@@ -393,6 +393,14 @@ for fl_food_type in bug_fluid_tiers{
         <contenttweaker:gemmed_spice>, [<liquid:roving_milk> * 1000, <liquid:nickel> * 288], 
         20, 1000
     );
+
+    //tasty lava
+    scripts.content_machines.basicFluidMixerRecipe(
+        null, <liquid:tasty_lava> * 1000, 
+        <moretcon:nuggethallowsite> | <taiga:valyrium_nugget> | <taiga:osram_nugget> * 3, [<liquid:lava> * 1000, <liquid:seaweed_rich_water> * 1000], 
+        20, 1000
+    );
+
 }
 
 static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
@@ -547,6 +555,14 @@ static bug_foraging as WeightedItemStack[][ILiquidStack][int[]] = {
             <betternether:magma_flower> % 20,
             <betternether:bone_mushroom> % 20,
             <betternether:agave> % 20
+        ]
+    },
+    [-1, 8000, 20 * 10, 1000]: {
+        <liquid:tasty_lava> * 250: [
+            <moretcon:dusthallowsite> % 75,
+            <mekores:mekanismore:263> % 75,
+            <mekores:mekanismore:293> % 75,
+            <moretcon:gemigniglomerate> % 1
         ]
     }
 };

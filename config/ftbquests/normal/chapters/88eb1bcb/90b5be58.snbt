@@ -1,0 +1,15 @@
+{
+	x: 10.0d,
+	y: -3.0d,
+	dependencies: [
+		"e08ae208"
+	],
+	optional: true,
+	tasks: [{
+		uid: "5da4f0a9",
+		type: "item",
+		items: [{
+			item: "modularmachinery:fish_tank_controller"
+		}]
+	}]
+}

@@ -1,0 +1,157 @@
+{
+    "min": 3,
+    "max": 8,
+    "trades": [
+        {
+            "item_1": {
+                "item": "minecraft:redstone",
+                "count": 10
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {
+                "item": "contenttweaker:singularity_dust"
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {
+                "item": "erebus:materials",
+                "meta": 20,
+                "count": 5
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {
+                "item": "erebus:dark_capped_mushroom",
+                "count": 5
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {
+                "item": "erebus:sarcastic_czech_mushroom",
+                "count": 5
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {
+                "item": "erebus:grandmas_shoes_mushroom",
+                "count": 5
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {
+                "item": "erebus:dutch_cap_mushroom",
+                "count": 5
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "max_uses": 5
+        },
+        {
+            "item_1": {
+                "item": "erebus:kaizers_fingers_mushroom",
+                "count": 5
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 1
+            },
+            "max_uses": 5
+        },
+
+
+
+
+
+        {
+            "item_1": {
+                "item": "minecraft:hay_block"
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:potion",
+                "nbt": "{Potion: \"minecraft:water\"}"
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:baked_potato"
+            },
+            "output": {
+                "item": "minecraft:emerald"
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:milk_bucket"
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:water_bucket"
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 2
+            },
+            "max_uses": 2
+        },
+        {
+            "item_1": {
+                "item": "minecraft:fermented_spider_eye"
+            },
+            "output": {
+                "item": "minecraft:emerald",
+                "count": 3
+            },
+            "max_uses": 2
+        }
+    ]
+}

@@ -11,5 +11,12 @@
 		items: [{
 			item: "modularmachinery:super_mixer_controller"
 		}]
+	},
+	{
+		uid: "d805b7f2",
+		type: "item",
+		items: [{
+			item: "contenttweaker:rotor"
+		}]
 	}]
 }

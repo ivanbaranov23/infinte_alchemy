@@ -10,6 +10,16 @@ import mods.modularmachinery.RecipeModifierBuilder;
 		[0.25, 0.13]
 	);
 
+	//fusion lava
+	scripts.content_machines.basicFluidMixerRecipe(
+		null, <liquid:liquidfusionlava> * 1000, 
+		<moretcon:ingotfusionite>, [
+			<liquid:lava> * 1000,
+			<liquid:ardite> * 72
+		], 10, 1000
+	);
+
+
 	//nitronite
 	scripts.content_machines.addFluidMixerRecipe(
 		<liquid:nitronite_fluid> * 600, 
@@ -32,7 +42,7 @@ import mods.modularmachinery.RecipeModifierBuilder;
 		20, 400
 	);
 }
-
+/*
 {//heat lava
 	scripts.content_machines.addAdvancedMixerRecipe(
 			[<prodigytech:heat_capacitor_1:1200>], [<liquid:high_heat_lava> * 400, <liquid:lava_residue> * 100],
@@ -108,7 +118,7 @@ scripts.content_machines.addAdvancedMixerRecipe(
 	[<liquid:high_heat_lava> * 1000, <liquid:fire> * 1000, <liquid:nitronite_fluid> * 1000], 
 	40, 1024
 );
-
+*/
 {var rec = RecipeBuilder.newBuilder("insane_lava", "super_mixer", 20 * 1);
 
     rec.addEnergyPerTickInput(2560000);

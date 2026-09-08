@@ -1,6 +1,6 @@
 {
 	title: "Who needs a village",
-	x: 6.0d,
+	x: 5.0d,
 	y: 6.0d,
 	text: [
 		"Will turn selected villager into a baby and make another villager. No need for breeders"

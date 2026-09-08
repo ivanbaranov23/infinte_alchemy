@@ -176,6 +176,14 @@ var seed_items as IItemStack[][IItemStack][int] = {
         [<contenttweaker:cacti_foci>, <additionalcompression:cropsugarcane_compressed:2>]
     ]);
 }
+{//1
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <mysticalagriculture:dye_seeds>, <mysticalagriculture:crafting:17>, <liquid:rainbow> * 1000, 2000
+    );
+    recipes.addShapeless("ia_early_dye_seeds", <mysticalagriculture:dye_seeds> * 4, [
+        <contenttweaker:quest_coin>, <mysticalcreations:bilim_seeds>, <ore:dye>, <ore:dye>
+    ]);
+}
 
 for tier in seed_items{
     for seed,ing in seed_items[tier]{

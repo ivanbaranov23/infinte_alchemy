@@ -145,6 +145,11 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 		[], [<liquid:fish_oil>]
 	);
 
+	mods.tconstruct.Melting.addRecipe(<liquid:fish_oil> * 500, <contenttweaker:oil_fish>);
+	mods.thermalexpansion.Crucible.addRecipe(<liquid:fish_oil> * 750, <contenttweaker:oil_fish>, 1000);
+	mods.immersiveengineering.Squeezer.addRecipe(<prodigytech:meat_ground>, <liquid:fish_oil> * 500, <contenttweaker:oil_fish>, 3000);
+
+
 	scripts.compact_distill.addCompactDistill(
 		[<liquid:biodiesel> * 40, <liquid:lubricant> * 5], 
 		[], 

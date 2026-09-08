@@ -1,0 +1,19 @@
+{
+	x: 25.5d,
+	y: 3.0d,
+	dependencies: [
+		"ed1b38d9"
+	],
+	tasks: [{
+		uid: "099c9143",
+		type: "item",
+		items: [{
+			item: "contenttweaker:sarahanium"
+		}]
+	}],
+	rewards: [{
+		uid: "14928ef9",
+		type: "item",
+		item: "contenttweaker:sarahanium_compressed"
+	}]
+}

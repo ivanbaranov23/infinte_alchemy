@@ -243,7 +243,9 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 
 	{//circuits <opencomputers:material:7>
 		infuser.removeRecipe(<mekanism:controlcircuit>);
-		infuser.addRecipe("REDSTONE", 40, <appliedenergistics2:material:24>, <mekanism:controlcircuit>);
+		infuser.addRecipe("ELECTROTINE", 40, <appliedenergistics2:material:24>, <mekanism:controlcircuit>);
+		infuser.addRecipe("ILLAGERITE", 10, <appliedenergistics2:material:24>, <mekanism:controlcircuit> * 4);
+		infuser.addRecipe("SARAHANIUM", 1, <appliedenergistics2:material:24>, <mekanism:controlcircuit> * 64);
 		
 
 		recipes.remove(<mekanism:controlcircuit:1>);
@@ -2158,7 +2160,7 @@ scripts.content_machines.addAssemblerRecipe(
 	<liquid:sunnarium> * 1000, 80, 100000
 );
 
-{
+{//carminium_sheet
 	mods.enderio.AlloySmelter.addRecipe(<contenttweaker:carminium_sheet>, 
 		[
 			<botania:rune:13>,
@@ -2439,3 +2441,18 @@ scripts.content_machines.addAssemblerRecipe(
     ], <liquid:tignalum> * 1440,
     20, 10000
 );
+
+{//space
+
+	infuser.addRecipe("SARAHANIUM", 20, <contenttweaker:circuit1> * 3, <contenttweaker:circuit3>);
+
+	scripts.content_machines.addAssemblerRecipe(
+		[<contenttweaker:computer>], 
+		[
+			<contenttweaker:circuit3> * 4,
+			<contenttweaker:temperature_control> * 4,
+			<contenttweaker:ice_cell>
+		], <liquid:circuit> * 1000,
+		20, 10000
+	);
+}

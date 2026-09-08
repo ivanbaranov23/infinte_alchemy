@@ -1,0 +1,19 @@
+{
+	x: -4.0d,
+	y: 4.0d,
+	dependencies: [
+		"56f86f48"
+	],
+	tasks: [{
+		uid: "237e9463",
+		type: "checkmark",
+		title: "High Heat Lava",
+		icon: {
+			id: "thermalexpansion:florb",
+			Damage: 1s,
+			tag: {
+				Fluid: "high_heat_lava"
+			}
+		}
+	}]
+}

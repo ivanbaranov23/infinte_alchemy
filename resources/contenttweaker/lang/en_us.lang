@@ -3070,3 +3070,36 @@ item.contenttweaker.obsidian_trout.name=Obsidian Trout
 item.contenttweaker.basalt_anchovy.name=Basalt Anchovy
 
 requious.jei.recipe.fisher=Fishing
+
+fluid.tasty_lava=Tasty Lava
+
+tile.contenttweaker.rotor2.name=Kikeridan Rotor
+
+
+item.contenttweaker.sarahanium_base.name=Raw Sarahanium
+item.contenttweaker.sarahanium.name=Sarahanium
+item.contenttweaker.sarahanium_compressed.name=Compressed Sarahanium
+infuse.sarahanium=Sarahanium
+
+item.contenttweaker.electrotine_compressed.name=Compressed Electrotine
+infuse.electrotine=Electrotine
+
+item.contenttweaker.illagerite_compressed.name=Compressed Illagerite
+infuse.illagerite=Illagerite
+
+item.contenttweaker.kolbeckite.name=Kolbeckite
+
+item.contenttweaker.scandium_chloride_dust.name=Scandium Fluoride
+
+item.contenttweaker.joker_fish.name=Joker Fish
+
+item.contenttweaker.research_mm.name=Research: How To Modular Machinery
+item.contenttweaker.modular_bridge.name=Modular Bridge Component
+
+ia.tooltip.lava_fabricator0=Has 2 types of recipes: one raises temperature, other uses it.
+ia.tooltip.lava_fabricator1=Contoller will display temperature, redstone output hatch will emit temp/1000 rounded down.
+ia.tooltip.lava_fabricator2=- - - - -
+ia.tooltip.lava_fabricator3=Temperature drops over time, stop machine with redstone to pause it.
+
+
+ia.pt_infusion.pure_gold.name=Pure Gold

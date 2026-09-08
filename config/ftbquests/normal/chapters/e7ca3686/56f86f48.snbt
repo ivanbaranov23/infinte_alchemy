@@ -1,0 +1,22 @@
+{
+	icon: "modularmachinery:lava_fabricator_controller",
+	x: -4.0d,
+	y: 2.0d,
+	dependencies: [
+		"97e98b69"
+	],
+	tasks: [{
+		uid: "9fa0a0e5",
+		type: "item",
+		items: [{
+			item: "modularmachinery:lava_fabricator_controller"
+		}]
+	},
+	{
+		uid: "a34ab2d6",
+		type: "item",
+		items: [{
+			item: "mmce_complement:redstone_signal_output_hatch"
+		}]
+	}]
+}

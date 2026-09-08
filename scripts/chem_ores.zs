@@ -535,6 +535,24 @@ scripts.content_machines.addFluidMixerRecipe(
         20, 512
     );
 }
+{//trollsteinn
+    mods.thermalexpansion.Centrifuge.addRecipe([
+        <appliedenergistics2:material:5> % 80, 
+        <biomesoplenty:gem:3> % 30,
+        <contenttweaker:arkenium_dust> % 3
+    ], <contenttweaker:trollsteinn>, null, 5000);
+    
+    mods.enderio.SagMill.addRecipe([
+            <appliedenergistics2:material:5>, 
+            <biomesoplenty:gem:3>,
+            <contenttweaker:arkenium_dust>
+        ], [
+            0.8, 
+            0.3,
+            0.03
+        ], <contenttweaker:trollsteinn>, "MULTIPLY_OUTPUT"
+    );
+}
 
 {//draconium
     mods.mekanism.reaction.addRecipe(
@@ -757,11 +775,20 @@ scripts.content_machines.addFluidMixerRecipe(
 
 {//scandium
     scripts.content_machines.addAdvancedMixerRecipe(
+        [<contenttweaker:kolbeckite>], [], 
+        [<mekanism:ingot:3> * 8, <contenttweaker:rare_earth_dust>, <enderio:item_material:36>], [<liquid:ore_make> * 1500], 
+        40, 20000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
         [<contenttweaker:scandium_chloride_dust>], [<liquid:phosphoric_acid> * 1000], 
         [<contenttweaker:kolbeckite>], [<liquid:hf> * 1000], 
         40, 20000
     );
-
+    mods.thermalexpansion.InductionSmelter.addRecipe(
+        <contenttweaker:scandium_dust> * 2, <contenttweaker:scandium_chloride_dust> * 2, <contenttweaker:calcium>,
+        20000,
+        <contenttweaker:fluospar_dust>
+    );
 }
 
 {//moretcon alt recs

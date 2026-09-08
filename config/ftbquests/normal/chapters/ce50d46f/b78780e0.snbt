@@ -1,0 +1,14 @@
+{
+	x: 26.5d,
+	y: 4.0d,
+	dependencies: [
+		"fcbd3e3d"
+	],
+	tasks: [{
+		uid: "3b82ff09",
+		type: "item",
+		items: [{
+			item: "contenttweaker:circuit3"
+		}]
+	}]
+}

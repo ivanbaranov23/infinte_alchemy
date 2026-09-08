@@ -4656,19 +4656,19 @@ add3alloy(3, "solar_lubarium", 4,
         <contenttweaker:bedrockium_crystal>, "CHANCE_ONLY", 10000
     );
 
-    recipes.addShapeless("ia_bedrockium_alloy_mix", <contenttweaker:bedrockium_alloy_mix>, 
-        [<contenttweaker:bedrockium_fine_powder>, 
+    recipes.addShapeless("ia_bedrockium_alloy_mix", <contenttweaker:bedrockium_alloy_mix> * 2, [
+        <contenttweaker:bedrockium_fine_powder>, <contenttweaker:bedrockium_fine_powder>, 
         <projectred-core:resource_item:200>, <projectred-core:resource_item:201>, 
         <ore:dustDraconium>,
-        <enderio:block_infinity_fog>, <enderio:block_infinity_fog>]
-    );
+        <enderio:block_infinity_fog>, <liquid:high_heat_lava> * 1000
+    ]);
 
     mods.enderio.AlloySmelter.addRecipe(<contenttweaker:bedrockium_alloy_ingot>, 
         [
             <contenttweaker:bedrockium_alloy_mix>,
             <netherite:netheriteingot> * 2,
             <enderio:item_alloy_ingot:6> * 4
-        ], 2000000
+        ], 1000000
     );
 }
 {//explosion_resistant

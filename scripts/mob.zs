@@ -152,6 +152,13 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         [<xreliquary:mob_ingredient:1>, <exnihilocreatio:item_material:3>, <xreliquary:mob_ingredient:1>],
         [<exnihilocreatio:item_material:3>, <xreliquary:mob_ingredient:1>, <exnihilocreatio:item_material:3>]
     ]);
+
+    //silver fish
+    addLoot("minecraft:silverfish", "minecraft:entities/silverfish", [<exnihilocreatio:item_ore_silver>, <exnihilocreatio:item_ore_silver>, <exnihilocreatio:item_ore_silver>], [
+        [90, 10, 1],
+        [50, 10, 1],
+        [30, 10, 1],
+    ]);
 }
 
 {//erebus

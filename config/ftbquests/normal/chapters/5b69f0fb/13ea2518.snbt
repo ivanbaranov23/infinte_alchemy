@@ -1,0 +1,18 @@
+{
+	x: 6.0d,
+	y: 5.0d,
+	text: [
+		"Raids are a bit hard. They need a large space to summon raider. You'll get a lot of emeralds, diamonds and illagerite."
+	],
+	dependencies: [
+		"cf396eae"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d7412ae6",
+		type: "item",
+		items: [{
+			item: "raids:ominous_bottle 1 4"
+		}]
+	}]
+}

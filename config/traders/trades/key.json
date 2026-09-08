@@ -1,0 +1,116 @@
+{
+    "min": 1,
+    "max": 1,
+    "trades": [
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"witch\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"slime\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"stone\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"assasin\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"wither_skeleton\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"creeper\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"spider\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"enderman\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"skeleton\"}"
+            },
+            "max_uses": 1
+        },
+        {
+            "item_1": {
+                "item": "minecraft:emerald",
+                "count": 4
+            },
+            "output": {
+                "item": "deepmoblearning:trial_key",
+                "nbt": "{tier: 3, attunement: \"zombie\"}"
+            },
+            "max_uses": 1
+        }
+    ]
+}

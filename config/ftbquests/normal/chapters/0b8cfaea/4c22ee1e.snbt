@@ -1,5 +1,5 @@
 {
-	x: -0.5d,
+	x: 1.5d,
 	y: 4.0d,
 	text: [
 		"A travelling merchant can spawn and can buy crops and whatnot from you. You can give him an emerald block to make him stay, otherwise he will eventually leave"

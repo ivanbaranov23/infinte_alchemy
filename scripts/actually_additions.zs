@@ -209,7 +209,7 @@ recipes.remove(<actuallyadditions:item_drill:3>);
 recipes.addShaped("ia_aa_drill", <actuallyadditions:item_drill:3>.withTag({Energy: 0}), [
 	[null, <quantumflux:craftingpiece:2>, <thermalfoundation:material:656>], 
 	[<actuallyadditions:item_misc:8>, <actuallyadditions:item_misc:16>, <ore:plateSignalum>], 
-	[<ore:plateConstantan>, <actuallyadditions:battery_bauble>, <ore:plateConstantan>]
+	[<ore:plateConstantan>, <actuallyadditions:item_battery>, <ore:plateConstantan>]
 ]);
 
 //machines

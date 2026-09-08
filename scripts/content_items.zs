@@ -2163,6 +2163,7 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
 
     VanillaFactory.createItem("illagerite").register();
     VanillaFactory.createItem("illagerite_dust").register();
+    VanillaFactory.createItem("illagerite_compressed").register();
     VanillaFactory.createFluid("illagerite", Color.fromHex("474b4b")).register();
 
     VanillaFactory.createItem("khnumite_heart").register();
@@ -2262,10 +2263,11 @@ VanillaFactory.createFluid("fertilizer", Color.fromHex("4e3a29")).register();
     VanillaFactory.createItemFood("fire_jellyfish", 2).register();
     VanillaFactory.createItemFood("obsidian_trout", 2).register();
     VanillaFactory.createItemFood("basalt_anchovy", 2).register();
-    //VanillaFactory.createItemFood("diamond_crab", 2).register();
-    //VanillaFactory.createItemFood("diamond_crab", 2).register();
+    VanillaFactory.createItemFood("joker_fish", 2).register();
+    VanillaFactory.createItemFood("spice_fish", 2).register();
     //VanillaFactory.createItemFood("diamond_crab", 2).register();
     
+    registerMoltenMetal("tasty_lava", Color.fromHex("f2b832"));
 }
 {//vitamins
     //hexane
@@ -2845,6 +2847,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
     VanillaFactory.createItem("tank_knallgas").register();
     VanillaFactory.createItem("tank_nitrogen").register();
     VanillaFactory.createItem("tank_nitrogen_dense").register();
+
+    VanillaFactory.createItem("electrotine_compressed").register();
 }
 {//twili
     VanillaFactory.createItem("steeleaf_mush").register();
@@ -3515,8 +3519,13 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 
         
     }
+
     VanillaFactory.createItem("c14_dust").register();
     VanillaFactory.createItem("c14_gem").register();
+    
+    VanillaFactory.createItem("sarahanium_base").register();
+    VanillaFactory.createItem("sarahanium").register();
+    VanillaFactory.createItem("sarahanium_compressed").register();
 
     var antenna_mk1 = VanillaFactory.createBlock("antenna_mk1", <blockmaterial:rock>);
     antenna_mk1.axisAlignedBB = mods.contenttweaker.AxisAlignedBB.create(0.25, 0.0, 0.25, 0.75, 1.0, 0.75);
@@ -3929,6 +3938,9 @@ function addResearchBook(name as string, msg as string){
 
     VanillaFactory.createItem("research_circuit1").register();
     VanillaFactory.createItem("research_circuit2").register();
+
+    addResearchBook("research_mm", "Modulate your machines even more.");
+    VanillaFactory.createItem("modular_bridge").register();
 
     VanillaFactory.createItem("grass_bucket").register();
     VanillaFactory.createItem("research_sieving").register();

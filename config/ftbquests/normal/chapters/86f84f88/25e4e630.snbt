@@ -1,0 +1,79 @@
+{
+	title: "Research MM",
+	icon: "contenttweaker:research_mm",
+	x: 1.0d,
+	y: 3.0d,
+	shape: "gear",
+	text: [
+		"Gives access to MMCE-complement hatches."
+	],
+	dependencies: [
+		"c529d48c"
+	],
+	tasks: [{
+		uid: "e182e4eb",
+		type: "item",
+		items: [{
+			item: "contenttweaker:staffwood_mb"
+		}],
+		count: 4L
+	},
+	{
+		uid: "d768b1b4",
+		type: "item",
+		items: [{
+			item: "mmce_complement:redstone_control_hatch"
+		}],
+		count: 8L
+	},
+	{
+		uid: "b1c9a8c4",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockfluidinputhatch 1 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "2c2edd08",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockenergyinputhatch 1 2"
+		}],
+		count: 2L
+	},
+	{
+		uid: "211afd44",
+		type: "item",
+		items: [{
+			item: "modularmachinery:blockgridproviderinput"
+		}],
+		count: 2L
+	},
+	{
+		uid: "4c793a3c",
+		type: "item",
+		items: [{
+			item: "modularmachinery:fish_tank_controller"
+		}]
+	},
+	{
+		uid: "9dd5b769",
+		type: "item",
+		items: [{
+			item: "modularmachinery:bug_hill_controller"
+		}]
+	},
+	{
+		uid: "0dc16310",
+		type: "item",
+		items: [{
+			item: "contenttweaker:research_mm"
+		}]
+	}],
+	rewards: [{
+		uid: "14983f76",
+		type: "item",
+		item: "contenttweaker:research_mm"
+	}]
+}

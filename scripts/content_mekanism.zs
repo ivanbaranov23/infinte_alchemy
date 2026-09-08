@@ -1,4 +1,6 @@
-#loader mekatweaker
+#loader contenttweaker
+#priority 0
+
 import mods.mekatweaker.Gas;
 import mods.mekatweaker.GasFactory;
 import crafttweaker.liquid.ILiquidStack;
@@ -8,12 +10,15 @@ import mods.contenttweaker.Color;
 mods.mekatweaker.InfuserType.addType("GOLD");
 mods.mekatweaker.InfuserType.addType("MANA");
 mods.mekatweaker.InfuserType.addType("CHEESE");
+mods.mekatweaker.InfuserType.addType("ELECTROTINE");
+mods.mekatweaker.InfuserType.addType("ILLAGERITE");
+mods.mekatweaker.InfuserType.addType("SARAHANIUM");
 //todo neutronium, meat, sarahanium
 
 function addGas(name as string, color as string, needFluid as bool){
-    var gas = GasFactory.createGas(name);
-    gas.setColorize(true);
-    gas.setColor(Color.fromHex(color).getIntColor());
+    var gas = GasFactory.createGas(name, Color.fromHex(color).getIntColor());
+    //gas.setColorize(true);
+    //gas.setColor(Color.fromHex(color).getIntColor());
     gas.setNeedFluid(needFluid);
     gas.setIcon("blocks/liquid");
     gas.setIconFlowing("blocks/liquid_flow");
@@ -23,8 +28,8 @@ function addGas(name as string, color as string, needFluid as bool){
 addGas("naoh", "eae553", true);
 
 {
-    var xpjuice = GasFactory.createGas("xpjuice");
-    xpjuice.setColorize(false);
+    var xpjuice = GasFactory.createGas("xpjuice", "blocks/xpjuice");
+    //xpjuice.setColorize(false);
     xpjuice.setNeedFluid(true);
     xpjuice.setIcon("blocks/xpjuice");
     xpjuice.setIconFlowing("blocks/xpjuice");
@@ -81,7 +86,13 @@ addGas("evil_formate", "4f5f5c", true);
 addGas("neutron_inert", "c0c0c0", false);
 addGas("neutron_active", "808080", false);
 
-addGas("formic_acid", "4f5f5c", true);
+{//75a5a5
+    var formic_acid = GasFactory.createGas("formic_acid", "blocks/formic_acid");
+    formic_acid.setNeedFluid(true);
+    formic_acid.setIcon("blocks/formic_acid");
+    formic_acid.setIconFlowing("blocks/formic_acid");
+    formic_acid.register();
+}
 
 addGas("methane", "6d9c61", true);
 addGas("acetic_acid", "532d0d", true);
@@ -107,8 +118,8 @@ addGas("smart", "22ffff", false);
 addGas("smart2", "96d766", false);
 
 {
-    var explosion_stone_glue = GasFactory.createGas("explosion_stone_glue");
-    explosion_stone_glue.setColorize(false);
+    var explosion_stone_glue = GasFactory.createGas("explosion_stone_glue", "blocks/explosion_stone_glue");
+    //explosion_stone_glue.setColorize(false);
     explosion_stone_glue.setNeedFluid(false);
     explosion_stone_glue.setIcon("blocks/explosion_stone_glue");
     explosion_stone_glue.setIconFlowing("blocks/explosion_stone_glue");

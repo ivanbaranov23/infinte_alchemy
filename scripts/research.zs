@@ -269,7 +269,6 @@ addResearchRecipe("Vines", <contenttweaker:plant_sample>, <contenttweaker:resear
         <contenttweaker:purpleslime_bucket> * 2
     ], 512, 5 * 20
 );
-<botania:vineball>.addTooltip("Throw me at the wall");
 addResearchRecipe("Oreberries", <contenttweaker:plant_sample>, <contenttweaker:research_oreberry>,
     [
         <oreberries:antimony_oreberry_bush> * 4,
@@ -324,7 +323,7 @@ addResearchRecipe("Fluids", <minecraft:paper>, <contenttweaker:research_fluids>,
         <fluiddrawers:tank> * 8,
         <enderio:block_reservoir> * 8
     ],
-    128, 5*20
+    1280, 5*20
 );
 addResearchRecipe("Cobblegen", <mysticalagriculture:soulstone> * 4, <contenttweaker:research_cobblegen>,//ok
     [
@@ -336,7 +335,20 @@ addResearchRecipe("Cobblegen", <mysticalagriculture:soulstone> * 4, <contenttwea
         <contenttweaker:residue_token>,
         <contenttweaker:blueslime_bucket> * 3
     ],
-    128, 5*20
+    1280, 5*20
+);
+addResearchRecipe("ModularMachines", <modularmachinery:itemmodularium> * 4, <contenttweaker:research_mm>,//ok
+    [
+        <modularmachinery:fish_tank_controller>,
+        <mmce_complement:redstone_control_hatch> * 8,
+        <modularmachinery:blockenergyinputhatch:2> * 2,
+
+        <modularmachinery:bug_hill_controller>,
+        <modularmachinery:blockgridproviderinput> * 2,
+        <modularmachinery:blockfluidinputhatch:2> * 2,
+        <contenttweaker:staffwood_mb> * 4
+    ],
+    12800, 5*20
 );
 
 addResearchRecipe("Waste", <forge:bucketfilled>.withTag({FluidName: "crystal_waste", Amount: 1000}), <contenttweaker:research_chemistry1>,

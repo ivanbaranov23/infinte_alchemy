@@ -73,6 +73,22 @@ recipes.addShaped("mm_gp_gen_controller", <modularmachinery:gp_gen_controller>, 
 addRecycle(<modularmachinery:gp_gen_controller>, [
 	<thermalexpansion:frame:64>, <contenttweaker:resonating_plate> * 2, <immersiveengineering:metal_decoration0:6> * 2, <contenttweaker:lapis_tile> * 4
 ]);
+recipes.addShaped("fish_tank_controller", <modularmachinery:fish_tank_controller>, [
+	[<minecraft:sea_lantern>, <mysticalagriculture:inferium_fishing_rod>, <minecraft:sea_lantern>], 
+	[<harvestcraft:watertrap>, <thermalexpansion:frame:64>, <harvestcraft:watertrap>], 
+	[<minecraft:sea_lantern>, <thermalexpansion:device:4>, <minecraft:sea_lantern>]
+]);
+addRecycle(<modularmachinery:fish_tank_controller>, [
+	<thermalexpansion:frame:64>,<thermalexpansion:device:4>, <minecraft:sea_lantern> * 4, <harvestcraft:watertrap> * 2
+]);
+recipes.addShaped("fish_tank_factory_controller", <modularmachinery:fish_tank_factory_controller>, [
+	[<modularmachinery:fish_tank_controller>, <modularmachinery:fish_tank_controller>, <modularmachinery:fish_tank_controller>], 
+	[<modularmachinery:fish_tank_controller>, <contenttweaker:modular_bridge>, <modularmachinery:fish_tank_controller>], 
+	[<modularmachinery:fish_tank_controller>, <modularmachinery:fish_tank_controller>, <modularmachinery:fish_tank_controller>]
+]);
+addRecycle(<modularmachinery:fish_tank_factory_controller>, [
+	<modularmachinery:fish_tank_controller> * 8, <contenttweaker:modular_bridge>
+]);
 
 //TE
 
@@ -100,15 +116,6 @@ recipes.addShaped("bug_hill_controller", <modularmachinery:bug_hill_controller>,
 ]);
 addRecycle(<modularmachinery:bug_hill_controller>, [
 	<thermalexpansion:frame>,<twilightforest:borer_essence> * 2, <excompressum:auto_heavy_sieve>, <thermalexpansion:device:9>, <erebus:materials:15> * 4
-]);
-
-recipes.addShaped("fish_tank_controller", <modularmachinery:fish_tank_controller>, [
-	[<minecraft:sea_lantern>, <thermalfoundation:tool.fishing_rod_platinum>, <minecraft:sea_lantern>], 
-	[<harvestcraft:watertrap>, <thermalexpansion:frame>, <harvestcraft:watertrap>], 
-	[<minecraft:sea_lantern>, <thermalexpansion:device:4>, <minecraft:sea_lantern>]
-]);
-addRecycle(<modularmachinery:fish_tank_controller>, [
-	<thermalexpansion:frame>,<thermalexpansion:device:4>, <minecraft:sea_lantern> * 4, <harvestcraft:watertrap> * 2
 ]);
 
 //mek
@@ -199,6 +206,11 @@ recipes.addShaped("mm_bonsai_controller", <modularmachinery:bonsai_controller>, 
 	[<actuallyadditions:block_misc:4>, <engineersdecor:small_tree_cutter>, <actuallyadditions:block_misc:4>], 
 	[<bonsaitrees:bonsaipot:1>, <enderio:item_material>, <bonsaitrees:bonsaipot:1>], 
 	[<actuallyadditions:block_misc:4>, <engineersdecor:small_tree_cutter>, <actuallyadditions:block_misc:4>]
+]);
+recipes.addShaped("mm_lava_fabricator_controller", <modularmachinery:lava_fabricator_controller>, [
+	[<netherite:netheriteblock>, <contenttweaker:crucible>, <netherite:netheriteblock>], 
+	[<moretcon:repitem:3>, <enderio:item_material:1>, <moretcon:repitem:3>], 
+	[<netherite:netheriteblock>, <industrialforegoing:lava_fabricator>, <netherite:netheriteblock>]
 ]);
 {recipes.addShaped("mm_sprook_pasture_controller", <modularmachinery:sprook_pasture_controller>, [
 		[<moreplates:soularium_gear>, <contenttweaker:sprooks1>, <moreplates:soularium_gear>], 
