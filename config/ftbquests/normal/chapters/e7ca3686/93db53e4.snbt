@@ -1,0 +1,19 @@
+{
+	x: -3.0d,
+	y: 5.0d,
+	dependencies: [
+		"95e446b8"
+	],
+	tasks: [{
+		uid: "a00d3783",
+		type: "item",
+		items: [{
+			item: "alchemistry:ingot 1 38"
+		}]
+	}],
+	rewards: [{
+		uid: "f8fb39fd",
+		type: "item",
+		item: "contenttweaker:strontium_block"
+	}]
+}

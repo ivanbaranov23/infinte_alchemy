@@ -3103,3 +3103,9 @@ ia.tooltip.lava_fabricator3=Temperature drops over time, stop machine with redst
 
 
 ia.pt_infusion.pure_gold.name=Pure Gold
+
+gas.red_waste=Red Waste
+tile.contenttweaker.red_gravel.name=Red Waste Gravel
+fluid.hot_redstone=Super Critical Redstone
+
+item.contenttweaker.modularium2.name=Advanced Modularium

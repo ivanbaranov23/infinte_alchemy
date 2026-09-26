@@ -2070,13 +2070,20 @@ static all_metals as IItemStack[string][string] = {
 
     // non metals
     modularium_paste: {
-        ingot: <contenttweaker:modularium_paste>
+        ingot: <contenttweaker:modularium_paste>,
+        block: <contenttweaker:modularium_paste> * 9
     },
     basic_modularium: {
-        ingot: <contenttweaker:basic_modularium>
+        ingot: <contenttweaker:basic_modularium>,
+        block: <contenttweaker:basic_modularium> * 9
     },
     modularium: {
-        ingot: <modularmachinery:itemmodularium>
+        ingot: <modularmachinery:itemmodularium>,
+        block: <modularmachinery:itemmodularium> * 9
+    },
+    modularium2: {
+        ingot: <contenttweaker:modularium2>,
+        block: <contenttweaker:modularium2> * 9
     },
     menril_berry: {
         ingot: <integrateddynamics:menril_berries>,
@@ -5968,6 +5975,23 @@ scripts.content_machines.addAdvancedMixerRecipe(
         "eezo", 1,
         "abyssum", 1
     );
+
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<taiga:dyonite_ingot> * 3], [], [
+            <taiga:tiberium_ingot> * 12,
+            <taiga:seismum_ingot>,
+            <taiga:fractum_ingot>,
+            <taiga:osram_ingot>
+        ], [], 20, 1000
+    );
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [<taiga:dyonite_ingot> * 3], [], [
+            <taiga:triberium_ingot> * 3,
+            <taiga:seismum_ingot>,
+            <taiga:fractum_ingot>,
+            <taiga:osram_ingot>
+        ], [], 20, 1000
+    );
 }
 
 {//moretcon
@@ -6106,10 +6130,15 @@ add2alloy(1, "basic_modularium", 2,
     "modularium_paste", 1,
     "bronze", 1
 );
-add3alloy(1, "modularium", 1,
+add3alloy(2, "modularium", 1,
     "basic_modularium", 3,
     "mekanized_steel", 1,
-    "steeleaf", 10 
+    "steeleaf", 8 
+);
+add3alloy(3, "modularium2", 1,
+    "modularium", 2,
+    "bedrockium_alloy", 1,
+    "strontium", 2 
 );
 
 {//black iron

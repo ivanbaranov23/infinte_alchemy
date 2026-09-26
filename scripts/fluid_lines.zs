@@ -249,6 +249,8 @@ Refinery.addRecipe(<liquid:pure_water> * 3000, <mekanism:dirtydust:5> % 1, <liqu
 		[<enderio:item_alloy_endergy_ball:1>, <contenttweaker:electricium>, <enderio:item_alloy_endergy_ball:1>]
 	]);
 	mods.thermalexpansion.Infuser.addRecipe(<contenttweaker:ion_beads>, <contenttweaker:ion_beads_spent>, 25000);
+
+	
 }
 
 {//water -> sea water
@@ -269,7 +271,18 @@ Refinery.addRecipe(<liquid:pure_water> * 3000, <mekanism:dirtydust:5> % 1, <liqu
 		80, 1000
 	);
 	{
+		var rec = RecipeBuilder.newBuilder("ocean_water", "super_mixer", 20 * 1);
 
+		rec.addEnergyPerTickInput(2500);
+
+		rec.addInputs(<liquid:seaweed_rich_water> * 1000, <liquid:methane> * 150, <ore:listAllfishfresh> * 3);
+
+		
+		rec.addFluidOutput(<liquid:ocean_water> * 1250);
+
+		rec.build();
+	}
+	{
 		scripts.compact_distill.addCompactDistill(
 			[<liquid:methane> * 10, <liquid:seaweed_rich_water> * 15], 
 			[

@@ -481,24 +481,25 @@ var mil as int = 1000000;
     addFluidReservoir("Erebus Formic Acid", 20, <liquid:formic_acid>, mil, 3 * mil, 0, [66, -11325]);
     addFluidReservoir("Erebus Flolit Oil", 15, <liquid:flolit_oil>, 2 * mil, 5 * mil, 0, [66, -11325]);
 }
-//atum
-addExcavator("Atum Coal", 25, ["oreAtumCoal", "oreAtumDiamond", "oreAtumEmerald"], [0.8, 0.15, 0.05], [17, -11325]);
-addExcavator("Atum Diamond", 5, ["oreAtumDiamond", "oreAtumCoal", "oreAtumEmerald"], [0.7, 0.2, 0.1], [17, -11325]);
-addExcavator("Atum Magnetite", 25, ["oreAtumIron", "oreAtumGold"], [0.85, 0.15], [17, -11325]);
-addExcavator("Atum Lapis", 10, ["oreAtumLapis", "oreAtumIron"], [0.7, 0.3], [17, -11325]);
-addExcavator("Atum Redstone", 15, ["oreAtumRedstone", "oreAtumBone", "strangeSand"], [0.75, 0.20, 0.05], [17, -11325]);
-addExcavator("Atum Gold", 15, ["oreAtumGold", "oreAtumRelic", "strangeSand"], [0.65, 0.25, 0.1], [17, -11325]);
-addExcavator("Atum Relic", 15, ["oreAtumRelic", "oreAtumGold", "strangeSand"], [0.75, 0.15, 0.1], [17, -11325]);
-//addExcavator("Atum Oil", 15, ["oreClathrateOilSand", "sand"], [0.9, 0.1], [17, -11325]);
-addExcavator("Atum Sphalerite", 10, ["oreAtumZinc", "oreAtumLead"], [0.8, 0.2], [17, -11325]);
-addExcavator("Atum Porphyry", 5, ["stonePorphyry", "oreGodshard"], [0.9, 0.1], [17, -11325]);
+{//atum
+    addExcavator("Atum Coal", 25, ["oreAtumCoal", "oreAtumDiamond", "oreAtumEmerald"], [0.8, 0.15, 0.05], [17, -11325]);
+    addExcavator("Atum Diamond", 5, ["oreAtumDiamond", "oreAtumCoal", "oreAtumEmerald"], [0.7, 0.2, 0.1], [17, -11325]);
+    addExcavator("Atum Magnetite", 25, ["oreAtumIron", "oreAtumGold"], [0.85, 0.15], [17, -11325]);
+    addExcavator("Atum Lapis", 10, ["oreAtumLapis", "oreAtumIron"], [0.7, 0.3], [17, -11325]);
+    addExcavator("Atum Redstone", 15, ["oreAtumRedstone", "oreAtumBone", "strangeSand"], [0.75, 0.20, 0.05], [17, -11325]);
+    addExcavator("Atum Gold", 15, ["oreAtumGold", "oreAtumRelic", "strangeSand"], [0.65, 0.25, 0.1], [17, -11325]);
+    addExcavator("Atum Relic", 15, ["oreAtumRelic", "oreAtumGold", "strangeSand"], [0.75, 0.15, 0.1], [17, -11325]);
+    //addExcavator("Atum Oil", 15, ["oreClathrateOilSand", "sand"], [0.9, 0.1], [17, -11325]);
+    addExcavator("Atum Sphalerite", 10, ["oreAtumZinc", "oreAtumLead"], [0.8, 0.2], [17, -11325]);
+    addExcavator("Atum Porphyry", 5, ["stonePorphyry", "oreGodshard"], [0.9, 0.1], [17, -11325]);
+    addExcavator("Atum Topaz", 15, ["oreAtumGold", "oreOverworldTopaz"], [0.5, 0.5], [17, -11325]);
 
-addFluidReservoir("Atum Water", 35, <liquid:water>, mil, 2*mil, 0, [17]);
-addFluidReservoir("Atum Oil", 25, <liquid:crude_oil>, mil, 2*mil, 4, [17, -11325]);
-addFluidReservoir("Atum Rich Oil", 5, <liquid:crude_oil>, 10 * mil, 25*mil, 12, [17, -11325]);
-addFluidReservoir("Atum Quicksand", 5, <liquid:sand>, mil, 2*mil, 4, [17, -11325]);
-addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0, [17, -11325]);
-
+    addFluidReservoir("Atum Water", 35, <liquid:water>, mil, 2*mil, 0, [17]);
+    addFluidReservoir("Atum Oil", 25, <liquid:crude_oil>, mil, 2*mil, 4, [17, -11325]);
+    addFluidReservoir("Atum Rich Oil", 5, <liquid:crude_oil>, 10 * mil, 25*mil, 12, [17, -11325]);
+    addFluidReservoir("Atum Quicksand", 5, <liquid:sand>, mil, 2*mil, 4, [17, -11325]);
+    addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0, [17, -11325]);
+}
 {//nether
     addExcavator("Nether Iron", 30, ["oreHellIron", "oreHellNickel"], [0.8, 0.2], [-1, -11325]);
     addExcavator("Nether Copper", 30, ["oreHellCopper", "oreHellGold"], [0.8, 0.2], [-1, -11325]);
@@ -534,7 +535,12 @@ addFluidReservoir("Atum Deep Water", 5, <liquid:desert_water>, 10000, 200000, 0,
     addExcavator("Twilight Trollstein 2", 15, ["oreTrollsteinn", "oreOverworldTopaz"], [0.9, 0.1], [7, -11325]);
     addExcavator("Twilight Topaz", 15, ["oreOverworldTopaz", "oreTrollsteinn"], [0.8, 0.2], [7, -11325]);
 
-    addFluidReservoir("Twilight Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [7, -11325]);
+    
+    addExcavator("Twilight Bismuth", 5, ["oreBismuth", "oreOverworldIron"], [0.8, 0.2], [7, -11325]);
+
+    addFluidReservoir("Twilight Mana", 10, <liquid:mana>, 2*mil, 5*mil, 3, [7]);
+    addFluidReservoir("Twilight Lava", 20, <liquid:lava>, 2*mil, 5*mil, 3, [7]);
+    addFluidReservoir("Twilight Pure Water", 20, <liquid:pure_water>, 2*mil, 5*mil, 3, [7]);
 }
 
 //aether
@@ -558,4 +564,5 @@ addExcavator("End Uranium+", 1, ["oreTheendUranium", "oreTheendEmerald", "oreThe
 
 //deepdark
 addFluidReservoir("Deepdark Mana", 15, <liquid:mana>, 5 * mil, 10*mil, 12, [-11325]);
+addFluidReservoir("Deepdark Ocean Water", 15, <liquid:ocean_water>, 15 * mil, 20*mil, 12, [-11325]);
 //addFluidReservoir("Deepdark Dark Catalyst", 5, <liquid:dark_catalyst>, 50 * 1000, 300 * 1000, 4, [-11325]);

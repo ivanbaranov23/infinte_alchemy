@@ -906,6 +906,17 @@
             },
             "max_uses": 3
         },
+        {
+            "item_1": {
+                "item": "extendedcrafting:singularity",
+                "meta": 7,
+                "count": 4
+            },
+            "output": {
+                "item": "extrautils2:angelring"
+            },
+            "max_uses": 3
+        },
         
         
 

@@ -225,6 +225,7 @@ function addAtomicResource(name as string){
     //modularium
     VanillaFactory.createItem("modularium_paste").register();
     VanillaFactory.createItem("basic_modularium").register();
+    VanillaFactory.createItem("modularium2").register();
 
     VanillaFactory.createItem("ferramic_base").register();
     registerMoltenMetal("ferramic", Color.fromHex("ffd2c8"));
@@ -2984,6 +2985,8 @@ VanillaFactory.createItem("honeyspice_ingot").register();
 }
 {//enderio
     VanillaFactory.createItem("uv_lamp").register();
+
+    addLava("hot_redstone");
 
     VanillaFactory.createItem("porous_dust").register();
     VanillaFactory.createItem("grinding_wheel").register();

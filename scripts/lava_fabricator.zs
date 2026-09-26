@@ -28,7 +28,7 @@ MMEvents.onMachinePreTick("lava_fabricator", function(event as MachineTickEvent)
     event.controller.setRedstone("temperature", event.controller.customData.temperature.asInt() / 10000);
 });
 MMEvents.onControllerGUIRender("lava_fabricator", function(event as ControllerGUIRenderEvent) {
-    event.extraInfo = ["temperature " ~ event.controller.customData.temperature / 10];
+    event.extraInfo = ["temperature " ~ event.controller.customData.temperature / 10 ~ " units"];
 });
 
 function addHeatingRec(fluid as ILiquidStack, amount_t as int, max_t as int){
@@ -40,8 +40,6 @@ function addHeatingRec(fluid as ILiquidStack, amount_t as int, max_t as int){
         event.controller.customData = {
             temperature: Math.min(max_t, event.controller.customData.temperature.asInt() + amount_t)
         };
-        //event.controller.setRedstone("temperature", event.controller.customData.temperature.asInt() / 10000 + 1);
-
     });
 
     rec.addRecipeTooltip("+" ~ amount_t / 10 ~ " units of temperature,", "up to " ~ max_t / 10);
@@ -114,7 +112,7 @@ addHeatingRec(<liquid:bonkers_heat_lava> * 100, 20000, 150000);
     );
 
     rec.addFinishHandler(function(event as RecipeFinishEvent) {
-        if (event.controller.customData.temperature >= 1000){
+        if (event.controller.customData.temperature >= 35000){
             event.controller.customData = {
                 temperature: event.controller.customData.temperature.asInt() - 10000
             } as IData;
@@ -132,6 +130,96 @@ addHeatingRec(<liquid:bonkers_heat_lava> * 100, 20000, 150000);
     });
     rec.addRecipeTooltip("Needs at least", "3500 units of temperature.", "1000 units are consumed");
     rec.addFluidOutput(<liquid:lava_residue> * 1000);
+    
+    rec.build();
+}
+
+{//insane_lava
+    var rec = RecipeBuilder.newBuilder("insane_lava", "lava_fabricator", 20 * 1);
+
+    rec.addEnergyPerTickInput(2560000);
+
+    
+    rec.addFluidInput(<liquid:rocket_fuel> * 500);
+    rec.addFluidInput(<liquid:blutonium> * 288);
+    rec.addFluidInput(<liquid:flowers> * 1000);
+    rec.addInput(<enderio:item_material:72> * 4);
+    rec.addGridPowerInput(300);
+    
+    rec.addFinishHandler(function(event as RecipeFinishEvent) {
+        if (event.controller.customData.temperature >= 60000){
+            event.controller.customData = {
+                temperature: event.controller.customData.temperature.asInt() - 10000
+            } as IData;
+
+        }
+    });
+    
+    rec.addFluidOutput(<liquid:insane_heat_lava> * 1000).addFluidModifier(function(controller, liquid) {
+        if controller.customData.temperature >= 60000{
+            
+            
+            return <liquid:insane_heat_lava> * 1000;
+        }
+        return null;
+    });
+    rec.addRecipeTooltip("Needs at least", "6000 units of temperature.", "1000 units are consumed");
+    rec.addFluidOutput(<liquid:lava_residue> * 1000);
+
+    rec.build();
+}
+{//bonkers_heat_lava
+    var rec = RecipeBuilder.newBuilder("bonkers_heat_lava", "lava_fabricator", 20 * 1);
+
+    rec.addEnergyPerTickInput(25600000);
+
+    
+    rec.addFluidInput(<liquid:rocket_fuel> * 5000);
+    rec.addFluidInput(<liquid:dyonite_fluid> * 2880);
+    rec.addFluidInput(<liquid:fire> * 2000);
+    rec.addInput(<contenttweaker:dark_matter>);
+    
+    rec.addFinishHandler(function(event as RecipeFinishEvent) {
+        if (event.controller.customData.temperature >= 90000){
+            event.controller.customData = {
+                temperature: event.controller.customData.temperature.asInt() - 10000
+            } as IData;
+
+        }
+    });
+    
+    rec.addFluidOutput(<liquid:bonkers_heat_lava> * 1000).addFluidModifier(function(controller, liquid) {
+        if controller.customData.temperature >= 90000{
+            
+            
+            return <liquid:bonkers_heat_lava> * 1000;
+        }
+        return null;
+    });
+    rec.addRecipeTooltip("Needs at least", "9000 units of temperature.", "1000 units are consumed");
+    rec.addFluidOutput(<liquid:lava_residue> * 1000);
+
+    rec.build();
+}
+
+
+{//hot redstone
+    var rec = RecipeBuilder.newBuilder("hot_redstone", "lava_fabricator", 20);
+    rec.addEnergyPerTickInput(25000);
+        
+    rec.addFluidInputs(
+		<liquid:redstone> * 1000
+    );
+
+    rec.addFluidOutput(<liquid:hot_redstone> * 1000).addFluidModifier(function(controller, liquid) {
+        if controller.customData.temperature >= 20000{
+            
+            
+            return <liquid:hot_redstone> * 1000;
+        }
+        return null;
+    });
+    rec.addRecipeTooltip("Needs at least", "2000 units of temperature.");
     
     rec.build();
 }

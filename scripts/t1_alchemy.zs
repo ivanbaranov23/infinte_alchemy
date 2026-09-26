@@ -206,11 +206,18 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:flolit_sheet> * 4, [
         <natura:materials:1>, 
         <natura:materials:1>, 
         <prodigytech:energion_dust>, 
-        <thermalfoundation:material:865> | <contenttweaker:bioslag>
+        <thermalfoundation:material:865> | <contenttweaker:enriched_bioslag>
     ]);
 
     mods.prodigytech.magneticreassembler.addRecipe(<contenttweaker:tinley>, <thermalfoundation:material:129>);
     furnace.addRecipe(<thermalfoundation:material:193> * 3, <contenttweaker:tinley>);
+
+    mods.immersiveengineering.BottlingMachine.addRecipe(<exnihilocreatio:item_ore_tin:1>, <contenttweaker:tinley>, <liquid:sky_stone> * 72);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <exnihilocreatio:item_ore_tin:1>, 
+        <contenttweaker:tinley>, <liquid:sky_stone> * 72, 
+        1500
+    );
 }
 {//coal alt
     mods.prodigytech.magneticreassembler.addRecipe(<prodigytech:ash>, <actuallyadditions:item_misc:10> * 3);

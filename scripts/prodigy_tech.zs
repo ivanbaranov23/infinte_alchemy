@@ -1,4 +1,4 @@
-
+#priority 5
 
 import mods.prodigytech.explosionfurnace.recipes as explosionfurnace_recipes;
 //explosionfurnace.recipes.addRecipe(IItemStack/IOreDictEntry in, IItemStack out, int ep, IItemStack/IOreDictEntry reagent, int craftPerReagent)
@@ -60,6 +60,8 @@ recipes.addShaped("ia_zorrasteel_raw2", <prodigytech:zorrasteel_raw> * 2, [
 	[null, <contenttweaker:zorra_dust>, null]
 ]);
 explosionfurnace_recipes.addRecipe(<prodigytech:zorrasteel_raw> * 4, <prodigytech:zorrasteel_ingot> * 4, 576, <prodigytech:aeternus_crystal>, 1);
+
+
 
 {//ferramic
 	explosionfurnace_recipes.addRecipe(<thermalfoundation:material:132> * 4, <prodigytech:ferramic_ingot> * 4, 360, <contenttweaker:fireclay>, 1);
@@ -273,6 +275,18 @@ recipes.addShaped("ia_hot_energion", <contenttweaker:hot_energion> * 8, [
 		10, 256
 	);
 	mods.thermalexpansion.Transposer.addFillRecipe(<prodigytech:heat_capacitor_0>, <prodigytech:heat_capacitor_0:1200>, <liquid:steam> * 8000, 8000);
+	recipes.addShaped("ia_heat_capacitor_01", <prodigytech:heat_capacitor_0>, [
+		[null, <contenttweaker:ferramic_base>, null], 
+		[<prodigytech:ferramic_ingot>, <contenttweaker:burn_powder>, <prodigytech:ferramic_ingot>], 
+		[<immersiveengineering:material:1>, <contenttweaker:ferramic_base>, <immersiveengineering:material:1>]
+	]);
+	scripts.content_machines.addAssemblerRecipe(
+		[<prodigytech:heat_capacitor_0>],
+		[<ore:ingotFerramic> * 1, <contenttweaker:ferramic_base>, <contenttweaker:burn_powder>, <ore:stickIron>],
+		null,
+		10, 256
+	);
+
 
 	recipes.remove(<prodigytech:heat_capacitor_1:1200>);
 	recipes.addShaped("ai_heat_capacitor_1", <prodigytech:heat_capacitor_1:1200>, [

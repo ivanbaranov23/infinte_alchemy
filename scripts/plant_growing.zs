@@ -134,7 +134,7 @@ function addGCrecipe2(tier as int,
     catalyst as IItemStack[], t_m as int, p_m as int)
 {
     var rec = RecipeBuilder.newBuilder("GC2_" ~ fruits[0].stack.name ~ seeds[0].name ~ tier, "garden_cloche", GCtime[tier] * t_m);
-
+    rec.setMaxThreads(1);
     if (tier != 0) {rec.addEnergyPerTickInput(GCenergy[tier] * p_m);}
 
     for o in fruits{

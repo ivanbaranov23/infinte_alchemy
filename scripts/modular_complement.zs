@@ -14,6 +14,11 @@ recipes.addShaped("ia_modular_bridge", <contenttweaker:modular_bridge>, [
 	[<modularmachinery:itemmodularium>, <contenttweaker:research_mm>.reuse(), <modularmachinery:itemmodularium>], 
 	[null, <opencomputers:material:11>, null]
 ]);
+recipes.addShaped("ia_modular_bridge2", <contenttweaker:modular_bridge> * 4, [
+	[null, <opencomputers:material:11>, null], 
+	[<contenttweaker:modularium2>, <contenttweaker:research_mm>.reuse(), <contenttweaker:modularium2>], 
+	[null, <opencomputers:material:11>, null]
+]);
 
 
 

@@ -1,0 +1,22 @@
+{
+	x: -2.0d,
+	y: 6.0d,
+	dependencies: [
+		"7ff2e0b3",
+		"93db53e4"
+	],
+	optional: true,
+	tasks: [{
+		uid: "79372ec1",
+		type: "item",
+		items: [{
+			item: "contenttweaker:modularium2"
+		}]
+	}],
+	rewards: [{
+		uid: "1c815e8b",
+		type: "item",
+		item: "contenttweaker:modularium2",
+		count: 9
+	}]
+}

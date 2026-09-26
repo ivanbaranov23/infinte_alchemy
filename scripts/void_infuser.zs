@@ -54,12 +54,11 @@ for pot,v in {
     <botania_tweaks:compressed_tiny_potato_8>:  100000000 //10^8
 
 } as int[IItemStack]{
-    var testVariables = AssemblyRecipe.create(function(container) {
-        container.machine.setInteger("sin",container.machine.getInteger("sin") + v);
-        //container.machine.setInteger("capacity", 2000);
+    var rec = AssemblyRecipe.create(function(container) {
+        container.machine.setInteger("sin", container.machine.getInteger("sin") + v);
     });
-    testVariables.requireItem("input", pot);
-    Void_infuser.addRecipe(testVariables);
+    rec.requireItem("input", pot);
+    Void_infuser.addRecipe(rec);
 
     pot.addTooltip(game.localize("ia.tooltip.potato_sin") ~ v);
 }

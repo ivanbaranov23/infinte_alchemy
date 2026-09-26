@@ -35,6 +35,15 @@ import scripts.recycler.addRecycle;
 		<immersiveengineering:metal_decoration0:5>, <contenttweaker:greenhouse_lamps>, <botania:fertilizer> * 2, <extendedcrafting:singularity_custom:100>,
 		<immersiveengineering:treated_wood> * 4
 	]);
+
+	recipes.addShaped("mm_garden_cloche_factory_controller", <modularmachinery:garden_cloche_factory_controller>, [
+		[<modularmachinery:garden_cloche_controller>, <modularmachinery:garden_cloche_controller>, <modularmachinery:garden_cloche_controller>], 
+		[<modularmachinery:garden_cloche_controller>, <contenttweaker:modular_bridge>, <modularmachinery:garden_cloche_controller>], 
+		[<modularmachinery:garden_cloche_controller>, <modularmachinery:garden_cloche_controller>, <modularmachinery:garden_cloche_controller>]
+	]);
+	addRecycle(<modularmachinery:garden_cloche_factory_controller>, [
+		<modularmachinery:garden_cloche_controller> * 8, <contenttweaker:modular_bridge>
+	]);
 }
 {recipes.addShaped("mm_heat_engine_controller", <modularmachinery:heat_engine_controller>, [
 		[<prodigytech:ferramic_block>, <prodigytech:heat_capacitor_1>, <prodigytech:ferramic_block>], 

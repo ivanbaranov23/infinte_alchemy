@@ -10,33 +10,33 @@ static gears as IItemStack[] = [
     <thermalfoundation:material:291>,       //0
     <thermalfoundation:material:291>,       //1
     <contenttweaker:duraluminum_gear>,      //2
-    <thermalfoundation:material:295>,
-    <contenttweaker:mekanized_steel_gear>,  //3
-    <enderio:item_material:73>,             //4
-    <tconevo:metal:29>,                     //5
-    <moreplates:awakened_draconium_gear>,   //6
-    <moreplates:neutronium_gear>            //7
+    <thermalfoundation:material:295>,       //3
+    <contenttweaker:mekanized_steel_gear>,  //4
+    <enderio:item_material:73>,             //5
+    <tconevo:metal:29>,                     //6
+    <moreplates:awakened_draconium_gear>,   //7
+    <moreplates:neutronium_gear>            //8
 ];
 static sides as IItemStack[] = [
     null,       //0
     null,       //1
     <contenttweaker:basic_modularium>,      //2
-    <thermalfoundation:material:515>,
-    <mekanism:controlcircuit:3>,            //3
-    <enderio:item_material:18>,             //4
-    <bloodmagic:component:27>,              //5
-    <astralsorcery:itemcoloredlens:6>,      //6
-    <draconicevolution:awakened_core>       //7
+    <thermalfoundation:material:515>,       //3
+    <mekanism:controlcircuit:3>,            //4
+    <enderio:item_material:18>,             //5
+    <bloodmagic:component:27>,              //6
+    <astralsorcery:itemcoloredlens:6>,      //7
+    <draconicevolution:awakened_core>       //8
 ];
 static corners as IItemStack[] = [
     null,       //0
     null,       //1
     null,       //2
     <contenttweaker:basic_modularium>,  //3
-    <contenttweaker:basic_modularium>,  //4
+    <modularmachinery:itemmodularium>,  //4
     <modularmachinery:itemmodularium>,  //5
-    <modularmachinery:itemmodularium>,  //6
-    <modularmachinery:itemmodularium>,  //7
+    <contenttweaker:modularium2>,       //6
+    <contenttweaker:modularium2>,       //7
     <extendedcrafting:material:32>      //8
 ];
 function addMMPartRecipe(lvl as int, inp as IItemStack, out as IItemStack, cat as IItemStack, flip as bool){
@@ -85,18 +85,18 @@ recipes.addShaped("mm_blockcasing2", <modularmachinery:blockcasing:4>, [
     addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockinputbus:1>, <ironchest:iron_chest>, false);
     addMMPartRecipe(2, <modularmachinery:blockinputbus:1>, <modularmachinery:blockinputbus:2>, <ironchest:iron_chest:1>, false);
     addMMPartRecipe(3, <modularmachinery:blockinputbus:2>, <modularmachinery:blockinputbus:3>, <ironchest:iron_chest:2>, false);
-    addMMPartRecipe(4, <modularmachinery:blockinputbus:3>, <modularmachinery:blockinputbus:4>, <mekanism:machineblock:13>, false);
-    addMMPartRecipe(6, <modularmachinery:blockinputbus:4>, <modularmachinery:blockinputbus:5>, <avaritiaddons:avaritiaddons_chest>, false);
-    addMMPartRecipe(7, <modularmachinery:blockinputbus:5>, <modularmachinery:blockinputbus:6>, <draconicevolution:draconium_chest>, false);
+    addMMPartRecipe(4, <modularmachinery:blockinputbus:3>, <modularmachinery:blockinputbus:4>, <ironchest:iron_chest:6>, false);
+    addMMPartRecipe(5, <modularmachinery:blockinputbus:4>, <modularmachinery:blockinputbus:5>, <mekanism:machineblock:13>, false);
+    addMMPartRecipe(6, <modularmachinery:blockinputbus:5>, <modularmachinery:blockinputbus:6>, <avaritiaddons:avaritiaddons_chest>, false);
     addMMPartRecipe(8, <modularmachinery:blockinputbus:6>, <modularmachineryaddons:blocksingularityiteminputbus:6>, <avaritiaddons:avaritiaddons_chest:1>, false);
 
     //item output 
     addMMPartRecipe(1, <modularmachinery:blockcasing>, <modularmachinery:blockoutputbus:1>, <ironchest:iron_chest>, true);
     addMMPartRecipe(2, <modularmachinery:blockoutputbus:1>, <modularmachinery:blockoutputbus:2>, <ironchest:iron_chest:1>, true);
     addMMPartRecipe(3, <modularmachinery:blockoutputbus:2>, <modularmachinery:blockoutputbus:3>, <ironchest:iron_chest:2>, true);
-    addMMPartRecipe(4, <modularmachinery:blockoutputbus:3>, <modularmachinery:blockoutputbus:4>, <mekanism:machineblock:13>, true);
-    addMMPartRecipe(6, <modularmachinery:blockoutputbus:4>, <modularmachinery:blockoutputbus:5>, <avaritiaddons:avaritiaddons_chest>, true);
-    addMMPartRecipe(7, <modularmachinery:blockoutputbus:5>, <modularmachinery:blockoutputbus:6>, <draconicevolution:draconium_chest>, true);
+    addMMPartRecipe(4, <modularmachinery:blockoutputbus:3>, <modularmachinery:blockoutputbus:4>, <ironchest:iron_chest:6>, true);
+    addMMPartRecipe(5, <modularmachinery:blockoutputbus:4>, <modularmachinery:blockoutputbus:5>, <mekanism:machineblock:13>, true);
+    addMMPartRecipe(6, <modularmachinery:blockoutputbus:5>, <modularmachinery:blockoutputbus:6>, <avaritiaddons:avaritiaddons_chest>, true);
     addMMPartRecipe(8, <modularmachinery:blockoutputbus:6>, <modularmachineryaddons:blocksingularityitemoutputbus:6>, <avaritiaddons:avaritiaddons_chest:1>, true);    
 
 

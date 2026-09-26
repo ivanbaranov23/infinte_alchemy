@@ -1000,8 +1000,10 @@ addDroneVortexRecipe(<openblocks:tank>.withTag({tank: {FluidName: "data", Amount
 addDroneVortexRecipe(<botania:quartz:6>, <contenttweaker:sunnarium_chunk>, 20 * 60, 10 * 1000 * 1000);
 addDroneVortexRecipe(<astralsorcery:itemrockcrystalsimple>.withTag({astralsorcery: {crystalProperties: {collectiveCapability: 100, size: 400, fract: 0, purity: 100, sizeOverride: -1}}}), <contenttweaker:prism>, 20 * 60, 10 * 1000 * 1000);
 
+addDroneVortexRecipe(<alchemistry:compound> * 4, <alchemistry:element:125>, 20 * 30, 10 * 1000 * 1000);
+
 //addDroneVortexRecipe(<alchemistry:element:1> * 4, <contenttweaker:proton>, 20 * 60, 50 * 1000000);
-addDroneVortexRecipe(<alchemistry:element:2> * 4, <contenttweaker:alpha_particle>, 20 * 60, 50 * 1000000);
+addDroneVortexRecipe(<alchemistry:element:2> * 4, <contenttweaker:alpha_particle>, 20 * 30, 50 * 1000000);
 
 //vortex
 mods.extendedcrafting.CombinationCrafting.addRecipe(

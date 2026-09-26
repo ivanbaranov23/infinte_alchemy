@@ -434,3 +434,9 @@ mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:2>);
 mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:3>);
 mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:4>);
 mods.chisel.Carving.addVariation("angel_ring", <extrautils2:angelring:5>);
+
+recipes.addShaped("ia_angelring", <extrautils2:angelring>, [
+	[<extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity:5>, <extendedcrafting:singularity_custom:42>], 
+	[<extendedcrafting:singularity:5>, <simplyjetpacks:itemjetpack:24>, <extendedcrafting:singularity:5>], 
+	[<extendedcrafting:singularity_custom:42>, <extendedcrafting:singularity:5>, <extendedcrafting:singularity_custom:42>]
+]);

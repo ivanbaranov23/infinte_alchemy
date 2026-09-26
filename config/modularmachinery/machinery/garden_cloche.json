@@ -2,6 +2,7 @@
     "registryname": "garden_cloche",
     "localizedname": "Garden Cloche",
     "color": "3d2217",
+    "has-factory": true,
     "modifiers": [
         {"description": "output items x4",
             "x": 0,

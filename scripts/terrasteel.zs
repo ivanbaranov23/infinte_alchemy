@@ -30,7 +30,7 @@ scripts.ore_processing.addTingalumOvenRecipe([<botania:manaresource:4>], [
     <roots:terra_moss> * 64,
     <contenttweaker:terrabit>
 ], 100 * 1000 * 1000, 40, 4000);
-
+mods.enderio.SagMill.addRecipe([<contenttweaker:terra_base_dust>], [1.0], <contenttweaker:terra_base>);
 
 
 mods.botaniatweaks.Agglomeration.addRecipe(

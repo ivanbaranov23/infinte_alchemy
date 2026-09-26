@@ -4,7 +4,7 @@ import crafttweaker.entity.IEntityLiving;
 import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.oredict.IOreDictEntry;
 
-import mods.customfishing.FishingBulider;
+//import mods.customfishing.FishingBulider;
 
 import loottweaker.LootTweaker;
 import loottweaker.vanilla.loot.LootTable;
@@ -18,44 +18,7 @@ import mods.requious.SlotVisual;
 import mods.requious.GaugeDirection;
 import mods.requious.AssemblyRecipe;
 
-/*
-    <ore:fishingRod1>.addItems([
-        <minecraft:fishing_rod:*>,
-        <thermalfoundation:tool.fishing_rod_copper:*>,
-        <thermalfoundation:tool.fishing_rod_tin:*>,
-        <thermalfoundation:tool.fishing_rod_aluminum:*>,
-        <thermalfoundation:tool.fishing_rod_nickel:*>,
-        <thermalfoundation:tool.fishing_rod_invar:*>,
-        <thermalfoundation:tool.fishing_rod_bronze:*>,
-        <thermalfoundation:tool.fishing_rod_constantan:*>,
-        <thermalfoundation:tool.fishing_rod_iron:*>,
-    ]);
-    <ore:fishingRod2>.addItems([
-        <mysticalagriculture:inferium_fishing_rod:*>,
-        <thermalfoundation:tool.fishing_rod_silver:*>,
-        <thermalfoundation:tool.fishing_rod_lead:*>,
-        <thermalfoundation:tool.fishing_rod_steel:*>,
-        <thermalfoundation:tool.fishing_rod_electrum:*>,
-        <thermalfoundation:tool.fishing_rod_gold:*>,
-    ]);
-    <ore:fishingRod3>.addItems([
-        <thermalfoundation:tool.fishing_rod_diamond:*>,
-        <thermalfoundation:tool.fishing_rod_platinum:*>,
-        <mysticalagriculture:prudentium_fishing_rod:*>,
-    ]);
-    <ore:fishingRod4>.addItems([
-    <mysticalagriculture:intermedium_fishing_rod:*>,
-    <mysticalagriculture:superium_fishing_rod:*>,
-    <mysticalagriculture:supremium_fishing_rod:*>,
-    <redstonearsenal:tool.fishing_rod_flux:*>,
-    ]);
-*/
-/*
-    FishingBulider.create(<liquid:radioactive_waste>, <contenttweaker:activated_green_fish>)
-    .addFishBait(<deepmoblearning:pristine_matter_guardian>)
-    .addFishRods(<ore:fishingRod1>.items)
-    .register();
-*/
+
 
 recipes.addShapeless("ia_bait_0", <thermalfoundation:bait> * 2, [
     <ore:dustWood>, <ore:dustWheat>, <ore:slimeball>
@@ -143,7 +106,7 @@ static Fisher as Assembly = <assembly:fisher>;
 }
 
 
-mods.jei.JEI.hideCategory("customfishing.fishingcondition");
+//mods.jei.JEI.hideCategory("customfishing.fishingcondition");
 
 
 static pool as int = 0;
@@ -155,10 +118,10 @@ function addFishing(lt_name as string, liquid as ILiquidStack, bait as IItemStac
         lp.addItemEntry(item, fish[item]);
     }
 
-    FishingBulider.create(liquid, "contenttweaker:fishing_" ~ lt_name)
-        .addFishBait(bait)
+    //FishingBulider.create(liquid, "contenttweaker:fishing_" ~ lt_name)
+    //    .addFishBait(bait)
         //.addFishRods(rod.items)
-        .register();
+    //    .register();
 
     {
         var recipe = AssemblyRecipe.create(function(container) {
@@ -169,7 +132,7 @@ function addFishing(lt_name as string, liquid as ILiquidStack, bait as IItemStac
         recipe = recipe.requireItem("bait", bait * 2);
         recipe = recipe.requireFluid("fluid", liquid);
 
-        Fisher.addJEIRecipe(recipe);	
+        //Fisher.addJEIRecipe(recipe);	
     }
 }
 
@@ -226,8 +189,3 @@ addFishing("radioactive_waste", <liquid:radioactive_waste>, <harvestcraft:fishtr
     <contenttweaker:diamond_crab>: 50,
     <contenttweaker:joker_fish>: 25
 });
-
-/*
-FishingBulider.create(<fluid:blood>, <entity:gloppy:meat_man_1>)
-    //.addFishRods(<ore:fishingRod4>.items)
-    .register();*/

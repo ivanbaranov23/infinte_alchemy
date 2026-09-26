@@ -2046,7 +2046,11 @@ function addElementCellRecipe(outp as IItemStack[], inp as IItemStack[]){
 {//element cell
 	addElementCellRecipe([<contenttweaker:lightning_cell>], [<contenttweaker:electric_manyullyn_dust> * 64, <moretcon:solidlightning>]);
 
-	addElementCellRecipe([<contenttweaker:fire_cell>], [<contenttweaker:advanced_pyrotheum> * 8, <extendedcrafting:singularity_custom:100>]);
+	addElementCellRecipe([<contenttweaker:fire_cell>], [
+		<contenttweaker:advanced_pyrotheum> * 8, 
+		<extendedcrafting:singularity_custom:100>,
+		<contenttweaker:fire_shard> * 256
+	]);
 
 	addElementCellRecipe([<contenttweaker:light_cell>], [
 		<contenttweaker:light_ingot> * 8, 

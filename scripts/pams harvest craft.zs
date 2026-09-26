@@ -42,6 +42,11 @@ recipes.addShapeless(
     [<ore:treeSapling>, <quark:reed_block>]
 );
 
+//bait
+recipes.addShapeless("ia_fishtrapbaititem", <harvestcraft:fishtrapbaititem> * 3, [
+    <ore:string>, <ore:string>, <ore:string>, <exnihilocreatio:item_material:2>
+]);
+
 {//machines
     //disable grinder filter and presser
     recipes.remove(<harvestcraft:grinder>);

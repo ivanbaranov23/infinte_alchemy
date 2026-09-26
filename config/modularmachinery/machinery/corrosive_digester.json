@@ -1,0 +1,703 @@
+{
+    "registryname": "corrosive_digester",
+    "localizedname": "Corrosive Digester",
+    "color": "5a4040",
+    "has-factory": true,
+    "parts": [
+        {
+            "x": -1,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@11"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_stairs_1@5"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_light@1"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "bloodmagic:demon_stairs_2@5"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_light@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_stairs_1@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "bloodmagic:demon_stairs_2@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_wall_1@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": -1,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_stairs_1@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_light@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 0,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_light@1"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_wall_1@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "bloodmagic:demon_stairs_2@5"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@8"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_stairs_1@7"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_stairs_1@9"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 5,
+            "z": -1,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_stairs_2@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 5,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 6,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_stairs_2@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_extras@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_wall_1@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 7,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": -1,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_wall_1@11"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "bloodmagic:demon_stairs_2@7"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 4,
+            "z": 2,
+            "elements": [
+                "bloodmagic:demon_extras@11"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 4,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_extras@11"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 5,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_stairs_1@7"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_stairs_2@3"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "bloodmagic:demon_extras@6"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "casings_all_all",
+                "mmce_complement:redstone_signal_output_hatch"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 6,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_wall_1@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "bloodmagic:demon_stairs_2@1"
+            ]
+        }
+    ]}

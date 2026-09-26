@@ -1,0 +1,18 @@
+{
+	x: -4.0d,
+	y: 4.0d,
+	dependencies: [
+		"56f86f48"
+	],
+	tasks: [{
+		uid: "7fbcb087",
+		type: "checkmark",
+		title: "Super Critical Redstone",
+		icon: {
+			id: "thermalexpansion:florb",
+			tag: {
+				Fluid: "hot_redstone"
+			}
+		}
+	}]
+}

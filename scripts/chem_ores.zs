@@ -554,6 +554,24 @@ scripts.content_machines.addFluidMixerRecipe(
     );
 }
 
+{//strontium
+    mods.mekanism.reaction.addRecipe(
+        <contenttweaker:empty_ingot>, <liquid:hot_redstone> * 1000, <gas:carmin> * 1000, 
+        <alchemistry:ingot:38>, <gas:red_waste> * (100), 1000, 60
+    );
+
+    scripts.content_machines.addFluidSieveRecipeRandom(
+        [
+            <moretcon:dustgravitonium> % 99,
+            <contenttweaker:strontium_pieces> % 75,
+            <contenttweaker:strontium_pieces> % 50,
+            <moretcon:gemgarstone> % 25
+        ], <liquid:redstone> * 500, 
+        <liquid:hot_redstone> * 1000, <moretcon:gravitoniumsponge>,
+        <contenttweaker:research_sieving2>,
+        10, 1000
+    );
+}
 {//draconium
     mods.mekanism.reaction.addRecipe(
         <contenttweaker:imperomite_catalyst>,<liquid:dragon_spit> * 4000, <gas:ethyl_cyanoacrylate> * 250, 

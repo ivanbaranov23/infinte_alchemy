@@ -61,7 +61,11 @@ recipes.addShaped("ia_brewing_stand", <minecraft:brewing_stand>, [
 	]);
 }
 
-
+//sponge
+recipes.addShaped("ia_sponge", <minecraft:sponge> * 4, [
+	[<openblocks:sponge>, <harvestcraft:cheeseitem>], 
+	[<harvestcraft:cheeseitem>, <openblocks:sponge>]
+]);
 
 //glowstone
 recipes.addShapeless("glow_uncompr", <minecraft:glowstone_dust> * 4, [<minecraft:glowstone>]);

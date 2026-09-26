@@ -2,6 +2,7 @@
     "registryname": "large_sifter",
     "localizedname": "Large Sifter",
     "color": "242530",
+    "has-factory": true,
     "modifiers": [
         {"description": "+8 item output, +50 fluid input, x1.5 energy input",
             "x": 0,

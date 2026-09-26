@@ -17,13 +17,64 @@ import mods.mekanism.crusher;
 import mods.mekanism.MekanismHelper;
 
 
-function addMekOreFix(ores as IItemStack[], gas as IGasStack, shard as IItemStack, clump as IItemStack){
+
+import mods.ctutils.utils.Math;
+
+import mods.modularmachinery.RecipeBuilder;
+import mods.modularmachinery.RecipeModifierBuilder;
+import mods.mmce_complement.RedstoneInterface;
+
+import mods.modularmachinery.MMEvents;
+import mods.modularmachinery.MachineStructureFormedEvent;
+import mods.modularmachinery.MachineTickEvent;
+import mods.modularmachinery.ControllerGUIRenderEvent;
+import mods.modularmachinery.RecipeFinishEvent;
+
+
+
+
+
+
+static counter as int = 1;
+function addMekOreFix(ores as IItemStack[], gasS as IGasStack, shard as IItemStack, clump as IItemStack){
     for item in ores{
-        dissolution.addRecipe(item, gas * 1000);
+        dissolution.addRecipe(item, gasS * 1000);
 
         injection.addRecipe(item, <gas:hydrogenchloride>,   shard * 4);
         purification.addRecipe(item, <gas:oxygen>,          clump * 3);
+
+        {
+            var rec = RecipeBuilder.newBuilder("dissolving_" ~ counter, "corrosive_digester", 2);
+            counter += 1;
+            rec.setMaxThreads(1);
+            rec.addEnergyPerTickInput(1000 * 1000);
+
+            rec.addItemInput(item);
+            rec.addWillInput(
+                "CORROSIVE", 2
+            );
+            
+            rec.addGasOutput(gasS * 600).addGasModifier(function(controller, gas) {
+                var amount as int = scripts.corrosive_digester.getCorrosionCoefficient(
+                    controller.customData.corrosiveness.asInt(),
+                    controller.customData.waste.asInt()
+                );
+                return gas * (amount * 200);
+            });
+
+            rec.addFinishHandler(function(event as RecipeFinishEvent) {
+                event.controller.customData = {
+                    corrosiveness: event.controller.customData.corrosiveness.asInt(),
+                    waste: event.controller.customData.waste.asInt() + 2 + (event.controller.customData.corrosiveness.asInt() / 50)
+                };
+            });
+            
+
+            rec.build();
+        }
     }
+
+    
 }
 function addMekOreNew(
     gas as IGasStack, gasclean as IGasStack, 
