@@ -1,0 +1,22 @@
+{
+	x: 2.0d,
+	y: 1.0d,
+	text: [
+		"Needs at least Duranite level pick."
+	],
+	dependencies: [
+		"5bb8b829"
+	],
+	tasks: [{
+		uid: "34d70ee3",
+		type: "item",
+		items: [{
+			item: "byg:kasai_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "424548e3",
+		type: "item",
+		item: "byg:kasai_block"
+	}]
+}

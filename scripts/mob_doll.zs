@@ -26,3 +26,12 @@ addDollHint("thermalfoundation:blizz", <exnihilocreatio:item_doll:4>, <liquid:py
 addDollHint("thermalfoundation:blitz", <exnihilocreatio:item_doll:5>, <liquid:pyrotheum>);
 addDollHint("thermalfoundation:basalz", <exnihilocreatio:item_doll:6>, <liquid:pyrotheum>);
 addDollHint("tconstruct:blueslime", <exnihilocreatio:item_doll:6>, <liquid:milk>);
+
+
+addJEIentityHint(
+    [<additionalcompression:meatfish_compressed>], null, "",
+    [
+        <exnihilocreatio:block_barrel1>
+    ], <liquid:stone>,
+    [], null, "minecraft:silverfish"
+);

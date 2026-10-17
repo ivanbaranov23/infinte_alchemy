@@ -100,7 +100,9 @@ for ore,sing in {
     <contenttweaker:germanium_ore>: <extendedcrafting:singularity_custom:102>,
     <contenttweaker:arsenic_ore>: <extendedcrafting:singularity_custom:111>,
     <contenttweaker:molybdenum_ore>: <extendedcrafting:singularity_custom:74>,
-    <contenttweaker:tantalite_ore>: <extendedcrafting:singularity_custom:75>
+    <contenttweaker:tantalite_ore>: <extendedcrafting:singularity_custom:75>,
+
+    <taiga:osram_ore>: <extendedcrafting:singularity_custom:112>
 } as IItemStack[IItemStack] {
     var rec = RecipeBuilder.newBuilder(sing.name ~ "_" ~ ore.name, "deepslate_barrel", 20 * 5);
     rec.addEnergyPerTickInput(10 * 1000);

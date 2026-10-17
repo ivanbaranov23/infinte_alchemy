@@ -73,3 +73,22 @@ MMEvents.onControllerGUIRender("corrosive_digester", function(event as Controlle
 
     rec.build();
 }
+{
+    var rec = RecipeBuilder.newBuilder("removing_waste", "corrosive_digester", 2);
+    rec.setMaxThreads(1);
+    rec.addEnergyPerTickInput(1000 * 1000);
+
+    rec.addItemInput(<contenttweaker:soap>);
+            
+            
+
+    rec.addFinishHandler(function(event as RecipeFinishEvent) {
+        event.controller.customData = {
+            corrosiveness: 0,
+            waste: 0
+        };
+    });
+            
+
+    rec.build();
+}

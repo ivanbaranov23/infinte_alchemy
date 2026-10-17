@@ -35,7 +35,7 @@ import mods.modularmachinery.RecipeFinishEvent;
 
 
 
-static counter as int = 1;
+
 function addMekOreFix(ores as IItemStack[], gasS as IGasStack, shard as IItemStack, clump as IItemStack){
     for item in ores{
         dissolution.addRecipe(item, gasS * 1000);
@@ -43,35 +43,7 @@ function addMekOreFix(ores as IItemStack[], gasS as IGasStack, shard as IItemSta
         injection.addRecipe(item, <gas:hydrogenchloride>,   shard * 4);
         purification.addRecipe(item, <gas:oxygen>,          clump * 3);
 
-        {
-            var rec = RecipeBuilder.newBuilder("dissolving_" ~ counter, "corrosive_digester", 2);
-            counter += 1;
-            rec.setMaxThreads(1);
-            rec.addEnergyPerTickInput(1000 * 1000);
-
-            rec.addItemInput(item);
-            rec.addWillInput(
-                "CORROSIVE", 2
-            );
-            
-            rec.addGasOutput(gasS * 600).addGasModifier(function(controller, gas) {
-                var amount as int = scripts.corrosive_digester.getCorrosionCoefficient(
-                    controller.customData.corrosiveness.asInt(),
-                    controller.customData.waste.asInt()
-                );
-                return gas * (amount * 200);
-            });
-
-            rec.addFinishHandler(function(event as RecipeFinishEvent) {
-                event.controller.customData = {
-                    corrosiveness: event.controller.customData.corrosiveness.asInt(),
-                    waste: event.controller.customData.waste.asInt() + 2 + (event.controller.customData.corrosiveness.asInt() / 50)
-                };
-            });
-            
-
-            rec.build();
-        }
+        
     }
 
     
@@ -87,34 +59,143 @@ function addMekOreNew(
     purification.addRecipe(shard, <gas:oxygen>, clump);
     crusher.addRecipe(clump, dirtydust);
     enrichment.addRecipe(dirtydust, dust);
+
+    addMekOreMultis(gas, gasclean, crystal, shard, clump);
+}
+
+static counter as int = 1;
+function addMekOreMultis(
+    gas as IGasStack, gasclean as IGasStack, 
+    crystal as IItemStack, shard as IItemStack, clump as IItemStack
+){
+    {//washing
+        var rec = RecipeBuilder.newBuilder("washing_" ~ counter, "large_washer", 5);
+        
+        rec.setMaxThreads(1);
+        rec.addEnergyPerTickInput(100 * 1000);
+        
+            
+        rec.addGasInput(gas * 200);
+        rec.addGasOutput(gasclean * 200);
+
+        rec.build();
+    }
+    {//crystallization
+        var rec = RecipeBuilder.newBuilder("crystallizing_" ~ counter, "large_crystallizer", 5);
+        
+        rec.setMaxThreads(1);
+        rec.addEnergyPerTickInput(100 * 1000);
+        
+        rec.addCatalystInput(
+            <contenttweaker:ambrosium_seed>,
+            ["Processing time x0.2"],
+            [
+                RecipeModifierBuilder.create(
+                    "modularmachinery:duration", "input", 0.2, 1, false
+                ).build()
+            ]
+        ).setChance(0.05);
+            
+        rec.addGasInput(gasclean * 200);
+        rec.addOutput(crystal);
+
+        rec.build();
+    }
+    {//2 other
+        var rec = RecipeBuilder.newBuilder("injecting_" ~ counter, "large_chemical_injector", 1);
+        
+        rec.setMaxThreads(1);
+        //rec.addEnergyPerTickInput(100 * 1000);
+            
+        rec.addInput(crystal);
+        rec.addLaserInput(250000 as double);
+        rec.addOutput(clump);
+        rec.addOutput(clump).setChance(0.1);
+
+        rec.build();
+    }
+    /*
+    injection.addRecipe(crystal, <gas:hydrogenchloride>, shard);
+    purification.addRecipe(shard, <gas:oxygen>, clump);
+    crusher.addRecipe(clump, dirtydust);
+    enrichment.addRecipe(dirtydust, dust);*/
+
+    counter += 1;
 }
 
 
 {//t1
     //iron
+    addMekOreMultis(
+        <gas:iron>, <gas:cleanIron>, 
+        <mekanism:crystal>, <mekanism:shard>, <mekanism:clump>
+    );
     //copper
+    addMekOreMultis(
+        <gas:copper>, <gas:cleanCopper>, 
+        <mekanism:crystal:3>, <mekanism:shard:3>, <mekanism:clump:3>
+    );
     //tin
+    addMekOreMultis(
+        <gas:tin>, <gas:cleanTin>, 
+        <mekanism:crystal:4>, <mekanism:shard:4>, <mekanism:clump:4>
+    );
 
     //nickel
     addMekOreFix([<thermalfoundation:ore:5>, <exnihilocreatio:item_ore_nickel:1>], <gas:nickel>, <mekores:mekanismore:11>, <mekores:mekanismore:12>);
+    addMekOreMultis(
+        <gas:nickel>, <gas:cleanNickel>, 
+        <mekores:mekanismore:10>, <mekores:mekanismore:11>, <mekores:mekanismore:12>
+    );
     //zinc
     addMekOreFix([<contenttweaker:zinc_ore>, <exnihilocreatio:item_ore_zinc:1>], <gas:zinc>, <mekores:mekanismore:111>, <mekores:mekanismore:112>);
+    addMekOreMultis(
+        <gas:zinc>, <gas:cleanZinc>, 
+        <mekores:mekanismore:110>, <mekores:mekanismore:111>, <mekores:mekanismore:112>
+    );
     //aluminum
     addMekOreFix([<thermalfoundation:ore:4>, <exnihilocreatio:item_ore_aluminum:1>, <erebus:ore_aluminium>], <gas:aluminum>, <mekores:mekanismore:31>, <mekores:mekanismore:32>);
+    addMekOreMultis(
+        <gas:aluminum>, <gas:cleanAluminum>, 
+        <mekores:mekanismore:30>, <mekores:mekanismore:31>, <mekores:mekanismore:32>
+    );
 
     //cobalt
     addMekOreFix([<netherendingores:ore_other_1:4>, <tconstruct:ore>, <exnihilocreatio:item_ore_cobalt:1>], <gas:cobalt>, <mekores:mekanismore:36>, <mekores:mekanismore:37>);
+    addMekOreMultis(
+        <gas:cobalt>, <gas:cleanCobalt>, 
+        <mekores:mekanismore:35>, <mekores:mekanismore:36>, <mekores:mekanismore:37>
+    );
     //ardite
     addMekOreFix([<netherendingores:ore_other_1:2>, <tconstruct:ore:1>, <exnihilocreatio:item_ore_ardite:1>], <gas:ardite>, <mekores:mekanismore:41>, <mekores:mekanismore:42>);
-
+    addMekOreMultis(
+        <gas:ardite>, <gas:cleanArdite>, 
+        <mekores:mekanismore:40>, <mekores:mekanismore:41>, <mekores:mekanismore:42>
+    );
     
     
 }
 {//t2
     //gold
+    addMekOreMultis(
+        <gas:gold>, <gas:cleanGold>, 
+        <mekanism:crystal:1>, <mekanism:shard:1>, <mekanism:clump:1>
+    );
     //silver
+    addMekOreMultis(
+        <gas:silver>, <gas:cleanSilver>, 
+        <mekanism:crystal:5>, <mekanism:shard:5>, <mekanism:clump:5>
+    );
     //osmium
+    addMekOreMultis(
+        <gas:osmium>, <gas:cleanOsmium>, 
+        <mekanism:crystal:2>, <mekanism:shard:2>, <mekanism:clump:2>
+    );
     //lead
+    addMekOreMultis(
+        <gas:lead>, <gas:cleanLead>, 
+        <mekanism:crystal:6>, <mekanism:shard:6>, <mekanism:clump:6>
+    );
 
     
 }
@@ -123,23 +204,51 @@ function addMekOreNew(
     addMekOreFix(
         [<thermalfoundation:ore:6>, <exnihilocreatio:item_ore_platinum:1>], <gas:platinum>, <mekores:mekanismore:16>, <mekores:mekanismore:17>
     );
+    addMekOreMultis(
+        <gas:platinum>, <gas:cleanPlatinum>, 
+        <mekores:mekanismore:15>, <mekores:mekanismore:16>, <mekores:mekanismore:17>
+    );
     //iridium
     addMekOreFix([<thermalfoundation:ore:7>, <exnihilocreatio:item_ore_iridium:1>], <gas:iridium>, <mekores:mekanismore:21>, <mekores:mekanismore:22>);
+    addMekOreMultis(
+        <gas:iridium>, <gas:cleanIridium>, 
+        <mekores:mekanismore:20>, <mekores:mekanismore:21>, <mekores:mekanismore:22>
+    );
     //titanium -> ore proc
+    addMekOreMultis(
+        <gas:titanium>, <gas:cleanTitanium>, 
+        <mekores:mekanismore:85>, <mekores:mekanismore:86>, <mekores:mekanismore:87>
+    );
     //tungsten
+    addMekOreMultis(
+        <gas:tungsten>, <gas:cleanTungsten>, 
+        <mekores:mekanismore:105>, <mekores:mekanismore:106>, <mekores:mekanismore:107>
+    );
     //uranium
     addMekOreFix(
         [<immersiveengineering:ore:5>, <contenttweaker:uranium_chunk>], <gas:uranium>, <mekores:mekanismore:1>, <mekores:mekanismore:2>
     );
+    addMekOreMultis(
+        <gas:uranium>, <gas:cleanUranium>, 
+        <mekores:mekanismore:0>, <mekores:mekanismore:1>, <mekores:mekanismore:2>
+    );
     //yellorite
     addMekOreFix(
         [<bigreactors:oreyellorite>, <exnihilocreatio:item_ore_yellorium:1>], <gas:yellorium>, <mekores:mekanismore:6>, <mekores:mekanismore:7>
+    );
+    addMekOreMultis(
+        <gas:yellorium>, <gas:cleanYellorium>, 
+        <mekores:mekanismore:5>, <mekores:mekanismore:6>, <mekores:mekanismore:7>
     );
 }
 {//t4
     //mithril
     addMekOreFix(
         [<thermalfoundation:ore:8>, <exnihilocreatio:item_ore_mithril:1>], <gas:mithril>, <mekores:mekanismore:26>, <mekores:mekanismore:27>
+    );
+    addMekOreMultis(
+        <gas:mithril>, <gas:cleanMithril>, 
+        <mekores:mekanismore:25>, <mekores:mekanismore:26>, <mekores:mekanismore:27>
     );
     //chrome
     addMekOreNew(
@@ -221,17 +330,29 @@ function addMekOreNew(
         [<draconicevolution:draconium_ore>, <exnihilocreatio:item_ore_draconium:1>], 
         <gas:draconium>, <mekores:mekanismore:51>, <mekores:mekanismore:52>
     );
+    addMekOreMultis(
+        <gas:draconium>, <gas:cleanDraconium>, 
+        <mekores:mekanismore:50>, <mekores:mekanismore:51>, <mekores:mekanismore:52>
+    );
 
     //palladium
     addMekOreFix(
         [<contenttweaker:palladium_chunk>], 
         <gas:palladium>, <mekores:mekanismore:121>, <mekores:mekanismore:122>
     );
+    addMekOreMultis(
+        <gas:palladium>, <gas:cleanPalladium>, 
+        <mekores:mekanismore:120>, <mekores:mekanismore:121>, <mekores:mekanismore:122>
+    );
 
     //vanadium
     addMekOreFix(
         [<contenttweaker:vanadium_ore>], 
         <gas:vanadium>, <mekores:mekanismore:306>, <mekores:mekanismore:307>
+    );
+    addMekOreMultis(
+        <gas:vanadium>, <gas:cleanVanadium>, 
+        <mekores:mekanismore:305>, <mekores:mekanismore:306>, <mekores:mekanismore:307>
     );
 
     //orichlcum
@@ -324,15 +445,39 @@ function addMekOreNew(
 
 {//taiga
     addMekOreFix([<contenttweaker:karmesine_chunk>], <gas:karmesine>, <mekores:mekanismore:271>, <mekores:mekanismore:272>);
+    addMekOreMultis(
+        <gas:karmesine>, <gas:cleanKarmesine>, 
+        <mekores:mekanismore:270>, <mekores:mekanismore:271>, <mekores:mekanismore:272>
+    );
     addMekOreFix([<contenttweaker:ovium_chunk>], <gas:ovium>, <mekores:mekanismore:276>, <mekores:mekanismore:277>);
+    addMekOreMultis(
+        <gas:ovium>, <gas:cleanOvium>, 
+        <mekores:mekanismore:275>, <mekores:mekanismore:276>, <mekores:mekanismore:277>
+    );
     addMekOreFix([<contenttweaker:jauxum_chunk>], <gas:jauxum>, <mekores:mekanismore:281>, <mekores:mekanismore:282>);
+    addMekOreMultis(
+        <gas:jauxum>, <gas:cleanJauxum>, 
+        <mekores:mekanismore:280>, <mekores:mekanismore:281>, <mekores:mekanismore:282>
+    );
     
     //osram
     addMekOreFix([<contenttweaker:osram_chunk>], <gas:osram>, <mekores:mekanismore:291>, <mekores:mekanismore:292>);
+    addMekOreMultis(
+        <gas:osram>, <gas:cleanOsram>, 
+        <mekores:mekanismore:290>, <mekores:mekanismore:291>, <mekores:mekanismore:292>
+    );
     //prometheum
     addMekOreFix([<contenttweaker:prometheum_chunk>], <gas:prometheum>, <mekores:mekanismore:216>, <mekores:mekanismore:217>);
+    addMekOreMultis(
+        <gas:prometheum>, <gas:cleanPrometheum>, 
+        <mekores:mekanismore:215>, <mekores:mekanismore:216>, <mekores:mekanismore:217>
+    );
     //eezo
     addMekOreFix([<contenttweaker:eezo_chunk>], <gas:eezo>, <mekores:mekanismore:296>, <mekores:mekanismore:297>);
+    addMekOreMultis(
+        <gas:eezo>, <gas:cleanEezo>, 
+        <mekores:mekanismore:295>, <mekores:mekanismore:296>, <mekores:mekanismore:297>
+    );
     //dilitheum
     addMekOreNew(<gas:dilithium>, <gas:cleandilithium>, 
         <taiga:dilithium_crystal>, <mekores:mekanismore:126>, <mekores:mekanismore:127>, <mekores:mekanismore:128>,
@@ -342,15 +487,27 @@ function addMekOreNew(
     
     //vibranium
     addMekOreFix([<contenttweaker:vibranium_chunk>], <gas:vibranium>, <mekores:mekanismore:266>, <mekores:mekanismore:267>);
+    addMekOreMultis(
+        <gas:vibranium>, <gas:cleanVibranium>, 
+        <mekores:mekanismore:265>, <mekores:mekanismore:266>, <mekores:mekanismore:267>
+    );
     //abyssum
     addMekOreFix(
         [<contenttweaker:abyssum_chunk>],
         <gas:abyssum>, <mekores:mekanismore:301>, <mekores:mekanismore:302>
     );
+    addMekOreMultis(
+        <gas:abyssum>, <gas:cleanAbyssum>, 
+        <mekores:mekanismore:300>, <mekores:mekanismore:301>, <mekores:mekanismore:302>
+    );
     //uru
     addMekOreFix(
         [<contenttweaker:uru_chunk>],
         <gas:uru>, <mekores:mekanismore:286>, <mekores:mekanismore:287>
+    );
+    addMekOreMultis(
+        <gas:uru>, <gas:cleanUru>, 
+        <mekores:mekanismore:285>, <mekores:mekanismore:286>, <mekores:mekanismore:287>
     );
 }
 {//moretcon

@@ -4346,6 +4346,35 @@ static ores2 as IItemStack[string][string][string] = {
             drilling: <netherite:netheritescrap> * 2
         }
     },
+    kasai: {
+        ore: {
+            item: <byg:kasai_ore>,
+
+            crushing_no_balls: <contenttweaker:kasai_dust> * 2,
+            balling: <contenttweaker:kasai_dust> * 2,
+            crushingByprod1: <appliedenergistics2:material:2>,
+            crushingByprod2: <netherite:netheritescrap>,
+
+            drilling: <contenttweaker:kasai_pieces> * 6
+        },
+        chunk: {
+            item: <contenttweaker:kasai_chunk>,
+
+            crushing_no_balls: <contenttweaker:kasai_dust> * 2,
+            balling: <contenttweaker:kasai_dust> * 2,
+            crushingByprod1: <appliedenergistics2:material:2>,
+            crushingByprod2: <netherite:netheritescrap>,
+
+            drilling: <contenttweaker:kasai_dirty_dust> * 3,
+            made2x2: <contenttweaker:kasai_pieces>,
+            madeFrom: <contenttweaker:kasai_pieces> * 3
+        },
+        dirtydust: {
+            item: <contenttweaker:kasai_dirty_dust>,
+
+            cleaning: <contenttweaker:kasai_dust>
+        }
+    },
 
     bastnasite: {
         ore: {
@@ -4473,7 +4502,9 @@ val to_clean as IItemStack[][string] = {
         <contenttweaker:rhodium_ore>,
         <contenttweaker:molybdenum_ore>,
         <contenttweaker:beryllium_ore>,
-        <contenttweaker:germanium_ore>
+        <contenttweaker:germanium_ore>,
+
+        <byg:kasai_ore>
     ],
 
     TE_pulv: [
@@ -4530,7 +4561,9 @@ val to_clean as IItemStack[][string] = {
         <contenttweaker:barite_ore>,
         <contenttweaker:flolit_ore>,
         <contenttweaker:tantalum_ore>,
-        <contenttweaker:strontium_chunk>
+        <contenttweaker:strontium_chunk>,
+
+        <byg:kasai_ore>
     ],
     TE_furn: [
         
@@ -4843,6 +4876,7 @@ val drilling_fluid_amount as int[string] = {
     terrasteel: 10000,
     caelumite: 500,
     netherite: 2000,
+    kasai: 1500,
     bastnasite: 3000
 };
 

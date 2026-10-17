@@ -48,3 +48,15 @@ recipes.addShapeless("ia_jauxum_tile", <contenttweaker:jauxum_tile> * 32, [
 mods.chisel.Carving.addGroup("jauxum");
 mods.chisel.Carving.addVariation("jauxum", <contenttweaker:jauxum_tile>);
 mods.chisel.Carving.addVariation("jauxum", <contenttweaker:jauxum_tile2>);
+
+
+recipes.addShaped("ia_giriktalit", <contenttweaker:giriktalit> * 32, [
+	[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>], 
+	[<minecraft:stone>, <mysticalagriculture:giriktan_essence>, <minecraft:stone>], 
+	[<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]
+]);
+mods.chisel.Carving.addGroup("giriktalit");
+mods.chisel.Carving.addVariation("giriktalit", <contenttweaker:giriktalit>);
+mods.chisel.Carving.addVariation("giriktalit", <contenttweaker:giriktalit_tile>);
+mods.chisel.Carving.addVariation("giriktalit", <contenttweaker:giriktalit_bricks>);
+mods.chisel.Carving.addVariation("giriktalit", <contenttweaker:giriktalit_bright>);

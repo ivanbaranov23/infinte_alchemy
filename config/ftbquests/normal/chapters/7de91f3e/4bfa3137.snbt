@@ -10,14 +10,11 @@
 		type: "checkmark",
 		title: "Sunnarium",
 		icon: {
-			id: "aeadditions:pattern.fluid",
+			id: "forge:bucketfilled",
 			tag: {
-				Fluid: {
-					FluidName: "sunnarium",
-					Amount: 1000
-				}
-			},
-			Count: 1b
+				FluidName: "sunnarium",
+				Amount: 1000
+			}
 		}
 	}]
 }

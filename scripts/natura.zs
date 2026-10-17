@@ -1,6 +1,6 @@
 
 
-recipes.addShapeless("sand_to_sandyglass1",
+recipes.addShapeless("nether_heat_sand",
     <natura:nether_heat_sand>,
     [<natura:nether_tainted_soil>, <minecraft:soul_sand>]
 );
@@ -20,3 +20,10 @@ mods.prodigytech.explosionfurnace.recipes.addRecipe(
     3000, <immersiveengineering:wirecoil:3>, 
     1
 );
+
+
+recipes.addShaped("ia_darkwood_sapling", <natura:nether_sapling:2>, [
+	[null, <ore:dyeBlack>, null], 
+	[<ore:dyeBlack>, <natura:nether_sapling>, <ore:dyeBlack>], 
+	[null, <ore:dyeBlack>, null]
+]);

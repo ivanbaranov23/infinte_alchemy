@@ -436,6 +436,27 @@ import mods.modularmachinery.RecipeBuilder;
 }
 
 
+{//garbage
+    recipes.addShaped("ia_garbage", <contenttweaker:garbage>, [
+        [null, <minecraft:string>, null], 
+        [<minecraft:carpet:13>, <ore:trash>, <minecraft:carpet:13>], 
+        [null, <minecraft:carpet:13>, null]
+    ]);
+    Centrifuge.addRecipe(
+        [
+            <quark:glass_shards> % 25,
+            <minecraft:slime_ball> % 25,
+            <erebus:erebus_food> % 25,
+            <thermalfoundation:material:771> % 25
+        ], 
+        <contenttweaker:garbage>, null, 500
+    );
+    recipes.addShapeless("ia_sulfur_from_trash", <thermalfoundation:material:771>, [<contenttweaker:garbage>, <contenttweaker:garbage>, <contenttweaker:garbage>, <contenttweaker:garbage>]);
+
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:methane> * 1000, <extendedcrafting:singularity_custom:113>, 4000);
+}
+
+
 {//concrete
     {//leaded
         mods.thermalexpansion.Transposer.addFillRecipe(
@@ -927,6 +948,12 @@ import mods.modularmachinery.RecipeBuilder;
         <contenttweaker:superglue> * 8, 
         <industrialforegoing:dryrubber>, <appliedenergistics2:material:5>, <liquid:cyanoacrylate> * 1000, 
         512, 40
+    );
+
+
+    mods.mekanism.reaction.addRecipe(
+        <thermalfoundation:material:832>, <liquid:malachite_glue> * 1000, <gas:bilim> * 500, 
+        <contenttweaker:superglue>, <gas:waste_gas> * 25, 900, 60
     );
 }
 

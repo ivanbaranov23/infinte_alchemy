@@ -84,7 +84,7 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
         <roots:stalicripe> * 4,
         [
             <actuallyadditions:item_misc:13>, <contenttweaker:bauxite_dust>, <thermalfoundation:material>, <thermalfoundation:material:770>,
-            <contenttweaker:potato_block2> | <mysticalcreations:bilim_essence>
+            <contenttweaker:potato_block2> | <mysticalagriculture:bilim_essence>
         ]
     );
     Pyre.removeRecipe(<roots:dewgonia>);
@@ -92,7 +92,7 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
         <roots:dewgonia> * 4,
         [
             <natura:materials>, <minecraft:water_bucket>, <minecraft:waterlily>, <enderio:item_material:32>,
-            <contenttweaker:potato_block2> | <mysticalcreations:bilim_essence>
+            <contenttweaker:potato_block2> | <mysticalagriculture:bilim_essence>
         ]
     );
     Pyre.removeRecipe(<roots:infernal_bulb>);
@@ -100,7 +100,7 @@ Mortar.removeRecipe(<mysticalworld:silver_dust>);
         <roots:infernal_bulb> * 4,
         [
             <roots:cooked_pereskia>, <minecraft:lava_bucket>, <tconstruct:slime:4>, <minecraft:glowstone_dust>,
-            <contenttweaker:potato_block2> | <mysticalcreations:bilim_essence>
+            <contenttweaker:potato_block2> | <mysticalagriculture:bilim_essence>
         ]
     );
 
@@ -211,9 +211,9 @@ Fey.addRecipe("ia_runic_crafter", <roots:runic_crafter>,
 
 
     recipes.addShaped("ia_arrowrootitem", <harvestcraft:arrowrootitem>, [
-        [<mysticalcreations:bilim_essence>, <minecraft:arrow>, <mysticalcreations:bilim_essence>], 
+        [<mysticalagriculture:bilim_essence>, <minecraft:arrow>, <mysticalagriculture:bilim_essence>], 
         [<minecraft:arrow>, <minecraft:arrow>, <minecraft:arrow>], 
-        [<mysticalcreations:bilim_essence>, <minecraft:arrow>, <mysticalcreations:bilim_essence>]
+        [<mysticalagriculture:bilim_essence>, <minecraft:arrow>, <mysticalagriculture:bilim_essence>]
     ]);
     Fey.removeRecipe(<roots:living_arrow>);
     Fey.addRecipe("living_arrow1", <roots:living_arrow> * 4, [
@@ -260,8 +260,8 @@ scripts.jei.addJEIhint(
 recipes.remove(<roots:staff>);
 recipes.addShaped("roots_staff", <roots:staff>.withTag({}), [
     [null, <roots:terra_moss>, <extendedcrafting:singularity_custom:100>], 
-    [<mysticalcreations:bilim_essence>, <moreplates:bronze_stick>, <roots:terra_moss>], 
-    [<moreplates:bronze_stick>, <mysticalcreations:bilim_essence>, null]
+    [<mysticalagriculture:bilim_essence>, <moreplates:bronze_stick>, <roots:terra_moss>], 
+    [<moreplates:bronze_stick>, <mysticalagriculture:bilim_essence>, null]
 ]);
 
 
@@ -444,6 +444,7 @@ Rituals.modifyRitual("ritual_transmutation", [
         ia_glowshroom1: <natura:nether_glowshroom>,
         ia_glowshroom2: <natura:nether_glowshroom:1>,
         ia_glowshroom3: <natura:nether_glowshroom:2>,
+        ia_glowshroom4: <natura:nether_glowshroom:3>,
 
         ia_roots_mushroom: <roots:baffle_cap_mushroom>,
 
@@ -520,6 +521,7 @@ Rituals.modifyRitual("ritual_transmutation", [
         ia_glowshroom1: <natura:nether_tainted_soil>,
         ia_glowshroom2: <natura:nether_tainted_soil>,
         ia_glowshroom3: <natura:nether_tainted_soil>,
+        ia_glowshroom4: <natura:nether_tainted_soil>,
 
         ia_roots_mushroom: <minecraft:mycelium>,
 

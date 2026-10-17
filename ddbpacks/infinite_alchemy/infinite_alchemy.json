@@ -2,5 +2,13 @@
     "test_slab": {
         "type": "pane",
         "material": "iron"
+    },
+    "osram_pipe_pane": {
+        "type": "pane",
+        "material": "iron"
+    },
+    "vibranium_brace": {
+        "type": "pane",
+        "material": "iron"
     }
 }

@@ -1,0 +1,22 @@
+{
+	x: -2.0d,
+	y: 3.0d,
+	dependencies: [
+		"895541d2"
+	],
+	optional: true,
+	tasks: [{
+		uid: "93d92303",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:giriktan_seeds"
+		}]
+	},
+	{
+		uid: "610316b6",
+		type: "item",
+		items: [{
+			item: "mysticalagriculture:giriktan_essence"
+		}]
+	}]
+}

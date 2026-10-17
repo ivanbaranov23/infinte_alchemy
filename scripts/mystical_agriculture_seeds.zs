@@ -20,21 +20,37 @@ mods.enderio.AlloySmelter.addRecipe(<contenttweaker:base_seeds> * 6, [
     <actuallyadditions:item_crystal_empowered:5> * 64,
     <extendedcrafting:singularity_custom:11>
 ], 100 * 1000);
-mods.aether_legacy.Enchanter.registerEnchantment(<contenttweaker:base_seeds>, <mysticalagriculture:crafting:16>, 20 * 60 * 5);
-<mysticalagriculture:crafting:16>.addTooltip("5 minutes in the altar");
+
+
+mods.aether_legacy.Enchanter.registerEnchantment(<contenttweaker:base_seeds>, <mysticalagriculture:crafting:16>, 20 * 60 * 1);
+<mysticalagriculture:crafting:16>.addTooltip("1 minute in the altar");
 
 {
     recipes.addShaped("ia_craftseed1", <mysticalagriculture:crafting:17>, [
-        [<mysticalagriculture:storage>, <mysticalagriculture:crafting:33>, <mysticalagriculture:storage>],
+        [<contenttweaker:steelwood_ingot>, <mysticalagriculture:crafting:33>, <contenttweaker:steelwood_ingot>],
         [<mysticalagriculture:crafting:33>, <mysticalagriculture:crafting:16>, <mysticalagriculture:crafting:33>],
-        [<mysticalagriculture:storage>, <mysticalagriculture:crafting:33>, <mysticalagriculture:storage>]
+        [<contenttweaker:steelwood_ingot>, <mysticalagriculture:crafting:33>, <contenttweaker:steelwood_ingot>]
     ]);
     recipes.addShaped("ia_craftseed2", <mysticalagriculture:crafting:18>, [
-        [<mysticalagriculture:storage:1>, <mysticalagriculture:crafting:34>, <mysticalagriculture:storage:1>],
+        [<contenttweaker:titanworm_steel_ingot>, <mysticalagriculture:crafting:34>, <contenttweaker:titanworm_steel_ingot>],
         [<mysticalagriculture:crafting:34>, <mysticalagriculture:crafting:17>, <mysticalagriculture:crafting:34>],
-        [<mysticalagriculture:storage:1>, <mysticalagriculture:crafting:34>, <mysticalagriculture:storage:1>]
+        [<contenttweaker:titanworm_steel_ingot>, <mysticalagriculture:crafting:34>, <contenttweaker:titanworm_steel_ingot>]
     ]);
-
+    recipes.addShaped("ia_craftseed3", <mysticalagriculture:crafting:19>, [
+        [<contenttweaker:boarsteel_block> | <moretcon:ingotatronium>, <mysticalagriculture:crafting:35>, <contenttweaker:boarsteel_block> | <moretcon:ingotatronium>],
+        [<mysticalagriculture:crafting:35>, <mysticalagriculture:crafting:18>, <mysticalagriculture:crafting:35>],
+        [<contenttweaker:boarsteel_block> | <moretcon:ingotatronium>, <mysticalagriculture:crafting:35>, <contenttweaker:boarsteel_block> | <moretcon:ingotatronium>]
+    ]);
+    recipes.addShaped("ia_craftseed4", <mysticalagriculture:crafting:20>, [
+        [<mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:36>],
+        [<mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:19>, <mysticalagriculture:crafting:36>],
+        [<mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:36>, <mysticalagriculture:crafting:36>]
+    ]);
+    recipes.addShaped("ia_craftseed5", <mysticalagriculture:crafting:21>, [
+        [<mysticalagriculture:crafting:37>, <mysticalagriculture:crafting:37>, <mysticalagriculture:crafting:37>],
+        [<mysticalagriculture:crafting:37>, <mysticalagriculture:crafting:20>, <mysticalagriculture:crafting:37>],
+        [<mysticalagriculture:crafting:37>, <mysticalagriculture:crafting:37>, <mysticalagriculture:crafting:37>]
+    ]);
 
     recipes.remove(<mysticalagradditions:insanium:1>);
     mods.extendedcrafting.TableCrafting.addShaped(0, <mysticalagradditions:insanium:1>, [
@@ -48,7 +64,11 @@ mods.aether_legacy.Enchanter.registerEnchantment(<contenttweaker:base_seeds>, <m
 
 var tier_seed as IItemStack[int] = {
     1: <mysticalagriculture:crafting:17>,
-    2: <mysticalagriculture:crafting:18>
+    2: <mysticalagriculture:crafting:18>,
+    3: <mysticalagriculture:crafting:19>,
+    4: <mysticalagriculture:crafting:20>,
+    5: <mysticalagriculture:crafting:21>,
+    6: <mysticalagradditions:insanium:1>
 };
 var tier_power as int[int] = {
     0: 10000,
@@ -121,7 +141,7 @@ var seed_items as IItemStack[][IItemStack][int] = {
             <contenttweaker:relic_ingot> * 64
         ],
 
-        <mysticalcreations:fertilizer_seeds>: [
+        <mysticalagriculture:fertilizer_seeds>: [
             <industrialforegoing:fertilizer> * 64,
             <xreliquary:mob_ingredient:9> * 64,
             <botania:fertilizer> * 64,
@@ -129,26 +149,39 @@ var seed_items as IItemStack[][IItemStack][int] = {
         ]
     },
     2: {
-        <mysticalagriculture:iron_seeds>: [<extendedcrafting:singularity:1> * 4, <harvestcraft:ironbrewitem> * 16],
-        <mysticalagriculture:copper_seeds>: [<extendedcrafting:singularity:17> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:copper_potato> * 64],
-        <mysticalagriculture:tin_seeds>: [<extendedcrafting:singularity:18> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:tinley> * 64],
-        <mysticalagriculture:nickel_seeds>: [<extendedcrafting:singularity:25> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:nickel_oxide> * 64],
-        <mysticalagriculture:aluminum_seeds>: [<extendedcrafting:singularity:16> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:ferramic_base> * 64],
-        <mysticalagriculture:zinc_seeds>: [<extendedcrafting:singularity:20> * 4, <mysticalagriculture:iron_essence> * 64, <thermalexpansion:florb>.withTag({Fluid: "andesite"}) * 64],
-        <mysticalagriculture:cobalt_seeds>: [<extendedcrafting:singularity:65> * 4, <mysticalagriculture:iron_essence> * 64, <mysticalagriculture:nether_essence> * 64],
-        <mysticalagriculture:ardite_seeds>: [<extendedcrafting:singularity:64> * 4, <mysticalagriculture:iron_essence> * 64, <mysticalagriculture:nether_essence> * 64],
-        <mysticalcreations:antimony_seeds>: [<extendedcrafting:singularity_custom:73> * 4, <mysticalagriculture:iron_essence> * 64, <contenttweaker:solder> * 256],
+        <mysticalagriculture:iron_seeds>: [<extendedcrafting:singularity:1> * 4],
+        <mysticalagriculture:copper_seeds>: [<extendedcrafting:singularity:17> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:tin_seeds>: [<extendedcrafting:singularity:18> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:nickel_seeds>: [<extendedcrafting:singularity:25> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:aluminum_seeds>: [<extendedcrafting:singularity:16> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:zinc_seeds>: [<extendedcrafting:singularity:20> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:cobalt_seeds>: [<extendedcrafting:singularity:65> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:ardite_seeds>: [<extendedcrafting:singularity:64> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:antimony_seeds>: [<extendedcrafting:singularity_custom:73> * 4, <mysticalagriculture:iron_essence> * 64],
 
-        <mysticalcreations:karmesine_seeds>: [<extendedcrafting:singularity_custom:84> * 4, <mysticalagriculture:iron_essence> * 64],
-        <mysticalcreations:ovium_seeds>: [<extendedcrafting:singularity_custom:85> * 4, <mysticalagriculture:iron_essence> * 64],
-        <mysticalcreations:jauxum_seeds>: [<extendedcrafting:singularity_custom:86> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:karmesine_seeds>: [<extendedcrafting:singularity_custom:84> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:ovium_seeds>: [<extendedcrafting:singularity_custom:85> * 4, <mysticalagriculture:iron_essence> * 64],
+        <mysticalagriculture:jauxum_seeds>: [<extendedcrafting:singularity_custom:86> * 4, <mysticalagriculture:iron_essence> * 64],
 
         <mysticalagriculture:saltpeter_seeds>: [<thermalfoundation:material:772> * 256, <thermalfoundation:material:1026> * 256],
         <mysticalagriculture:silicon_seeds>: [<projectred-core:resource_item:301> * 64, <mysticalagriculture:saltpeter_essence> * 64],
 
-        <mysticalagriculture:coal_seeds>: [<extendedcrafting:singularity> * 4, <contenttweaker:crystal_coal> * 64, <thermalexpansion:augment:258> * 64],
+        <mysticalagriculture:coal_seeds>: [<extendedcrafting:singularity> * 4],
         <mysticalagriculture:nether_quartz_seeds>: [<extendedcrafting:singularity_custom:25> * 4, <mysticalagriculture:coal_essence> * 64, <mysticalagriculture:nether_essence> * 64],
-        <mysticalagriculture:certus_quartz_seeds>: [<extendedcrafting:singularity_custom:26> * 4, <appliedenergistics2:material:23> * 64, <mysticalagriculture:coal_essence> * 64]
+        <mysticalagriculture:certus_quartz_seeds>: [<extendedcrafting:singularity_custom:26> * 4, <mysticalagriculture:coal_essence> * 64],
+        <mysticalagriculture:lapis_lazuli_seeds>: [<extendedcrafting:singularity:2> * 4, <mysticalagriculture:coal_essence> * 64],
+
+    },
+    3: {
+        <mysticalagriculture:gold_seeds>: [<extendedcrafting:singularity:5> * 4],
+        <mysticalagriculture:osmium_seeds>: [<extendedcrafting:singularity_custom:5> * 4],
+
+        <mysticalagriculture:osram_seeds>: [<extendedcrafting:singularity_custom:112> * 4]
+    },
+    4: {
+        <mysticalagriculture:neodymium_seeds>: [<contenttweaker:neodymium_singularity> * 4],
+
+        <mysticalagriculture:palladium_seeds>: [<extendedcrafting:singularity_custom:30> * 4]
     }
 };
 
@@ -181,7 +214,7 @@ var seed_items as IItemStack[][IItemStack][int] = {
         <mysticalagriculture:dye_seeds>, <mysticalagriculture:crafting:17>, <liquid:rainbow> * 1000, 2000
     );
     recipes.addShapeless("ia_early_dye_seeds", <mysticalagriculture:dye_seeds> * 4, [
-        <contenttweaker:quest_coin>, <mysticalcreations:bilim_seeds>, <ore:dye>, <ore:dye>
+        <contenttweaker:quest_coin>, <mysticalagriculture:bilim_seeds>, <ore:dye>, <ore:dye>
     ]);
 }
 

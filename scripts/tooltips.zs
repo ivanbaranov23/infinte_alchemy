@@ -16,7 +16,11 @@ addMultiLineTooltip(<requious:altar2>, "trans_altar", 12);
 addMultiLineTooltip(<requious:sorter_food>, "sorter_food", 5);
 addMultiLineTooltip(<requious:sorter_livespan>, "sorter_lifespan", 5);
 
+addMultiLineTooltip(<contenttweaker:electric_meat>, "electric_meat", 4);
+
 addMultiLineTooltip(<modularmachinery:research_station_controller>, "research_tooltip", 11);
 addMultiLineTooltip(<modularmachinery:lava_fabricator_controller>, "lava_fabricator", 4);
+addMultiLineTooltip(<modularmachinery:large_crystallizer_controller>, "large_crystallizer", 2);
+
 
 addMultiLineTooltip(<requious:void_infuser>, "void_infuser", 20);

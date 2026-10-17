@@ -1,0 +1,25 @@
+{
+	x: 9.0d,
+	y: -3.0d,
+	text: [
+		"Very rarely it will strike nearby enemies with lightning"
+	],
+	dependencies: [
+		"05dc6375",
+		"8f8c00ed"
+	],
+	optional: true,
+	tasks: [{
+		uid: "87f09cdb",
+		type: "checkmark",
+		title: "Storm Cloud with moonglow leaf",
+		icon: {
+			id: "roots:spell_icon",
+			tag: {
+				spell_storage: {
+					s: "roots:spell_storm_cloud"
+				}
+			}
+		}
+	}]
+}

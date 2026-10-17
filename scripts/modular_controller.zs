@@ -100,15 +100,25 @@ addRecycle(<modularmachinery:fish_tank_factory_controller>, [
 ]);
 
 //TE
+{
+	recipes.addShaped("mm_large_sifter", <modularmachinery:large_sifter_controller>, [
+		[<ore:foodNoodles>, <thermalexpansion:augment:497>, <ore:foodNoodles>], 
+		[<contenttweaker:mushroomite_plate>, <excompressum:auto_heavy_sieve>, <contenttweaker:mushroomite_plate>], 
+		[<ore:foodNoodles>, <thermalexpansion:augment:497>, <ore:foodNoodles>]
+	]);
+	addRecycle(<modularmachinery:large_sifter_controller>, [
+		<excompressum:auto_heavy_sieve>,<thermalexpansion:augment:497> * 2, <contenttweaker:mushroomite_ingot> * 8
+	]);
 
-recipes.addShaped("mm_large_sifter", <modularmachinery:large_sifter_controller>, [
-	[<ore:foodNoodles>, <thermalexpansion:augment:497>, <ore:foodNoodles>], 
-	[<contenttweaker:mushroomite_plate>, <excompressum:auto_heavy_sieve>, <contenttweaker:mushroomite_plate>], 
-	[<ore:foodNoodles>, <thermalexpansion:augment:497>, <ore:foodNoodles>]
-]);
-addRecycle(<modularmachinery:large_sifter_controller>, [
-	<excompressum:auto_heavy_sieve>,<thermalexpansion:augment:497> * 2, <contenttweaker:mushroomite_ingot> * 8
-]);
+	recipes.addShaped("mm_large_sifter_factory_controller", <modularmachinery:large_sifter_factory_controller>, [
+		[<modularmachinery:large_sifter_controller>, <modularmachinery:large_sifter_controller>, <modularmachinery:large_sifter_controller>], 
+		[<modularmachinery:large_sifter_controller>, <contenttweaker:modular_bridge>, <modularmachinery:large_sifter_controller>], 
+		[<modularmachinery:large_sifter_controller>, <modularmachinery:large_sifter_controller>, <modularmachinery:large_sifter_controller>]
+	]);
+	addRecycle(<modularmachinery:large_sifter_factory_controller>, [
+		<modularmachinery:large_sifter_controller> * 8, <contenttweaker:modular_bridge>
+	]);
+}
 recipes.addShaped("mm_plant_station_controller", <modularmachinery:plant_station_controller>, [
 	[<betternether:cincinnasite_forged>, <erebus:planks_petrified_wood>, <betternether:cincinnasite_forged>], 
 	[<contenttweaker:geb_godshard>, <thermalexpansion:frame>, <contenttweaker:geb_godshard>], 
@@ -204,6 +214,11 @@ recipes.addShaped("mm_essence_extractor_controller", <modularmachinery:essence_e
 	[<industrialforegoing:tree_fluid_extractor>, <mysticalagriculture:crafting:4>, <industrialforegoing:tree_fluid_extractor>], 
 	[<immersiveengineering:metal_device1:6>, <mysticalagriculture:mystical_machine_frame>, <immersiveengineering:metal_device1:6>]
 ]);
+recipes.addShaped("mm_mystical_alloyer_controller", <modularmachinery:mystical_alloyer_controller>, [
+	[<moreplates:dark_steel_plate>, <contenttweaker:bilim_block>, <moreplates:dark_steel_plate>], 
+	[<moreplates:prudentium_plate>, <mysticalagriculture:mystical_machine_frame>, <moreplates:prudentium_plate>], 
+	[<moreplates:dark_steel_plate>, <contenttweaker:crucible>, <moreplates:dark_steel_plate>]
+]);
 
 //EIO
 recipes.addShaped("mm_large_cobblegen_controller", <modularmachinery:large_cobblegen_controller>, [
@@ -247,6 +262,17 @@ recipes.addShaped("mm_cooling_tower_controller", <modularmachinery:cooling_tower
 	[<enderio:item_capacitor_crystalline>, <thermalfoundation:material:1025>, <enderio:item_capacitor_crystalline>], 
 	[<contenttweaker:awakened_umberrack_bricks>, <enderio:item_material:1>, <contenttweaker:awakened_umberrack_bricks>]
 ]);
+recipes.addShaped("mm_large_washer_controller", <modularmachinery:large_washer_controller>, [
+	[<contenttweaker:boarsteel_block>, <contenttweaker:osram_plate>, <contenttweaker:boarsteel_block>], 
+	[<mekanism:machineblock2:7>, <enderio:item_material:1>, <mekanism:machineblock2:7>], 
+	[<contenttweaker:boarsteel_block>, <mekanism:electrolyticcore>, <contenttweaker:boarsteel_block>]
+]);
+recipes.addShaped("mm_large_crystallizer_controller", <modularmachinery:large_crystallizer_controller>, [
+	[<enderio:block_alloy_endergy:1>, <ae2stuff:grower>, <enderio:block_alloy_endergy:1>], 
+	[<mekanism:machineblock2:8>, <enderio:item_material:1>, <mekanism:machineblock2:8>], 
+	[<enderio:block_alloy_endergy:1>, <ae2stuff:grower>, <enderio:block_alloy_endergy:1>]
+]);
+
 
 recipes.addShaped("mm_energy_infuser_controller", <modularmachinery:energy_infuser_controller>, [
 	[<thermalexpansion:machine:9>, <enderio:block_industrial_insulation>, <thermalexpansion:machine:9>], 
@@ -259,6 +285,13 @@ recipes.addShaped("mm_tingalum_oven_controller", <modularmachinery:tignalum_oven
 	[<contenttweaker:tignalum_blast_brick>, <prodigytech:heat_capacitor_3>, <contenttweaker:tignalum_blast_brick>], 
 	[<immersiveengineering:metal_device1>, <actuallyadditions:block_misc:8>, <immersiveengineering:metal_device1>], 
 	[<contenttweaker:tignalum_blast_brick>, <modularmachinery:high_oven_controller>, <contenttweaker:tignalum_blast_brick>]
+]);
+mods.extendedcrafting.TableCrafting.addShaped(0, <modularmachinery:large_chemical_injector_controller>, [
+	[<moretcon:blockblightsteel>, <moretcon:ingotblightsteel>, <mekanism:machineblock2:3>, <moretcon:ingotblightsteel>, <moretcon:blockblightsteel>], 
+	[<moretcon:ingotblightsteel>, <mekanism:gasupgrade>, <mekanism:gasupgrade>, <mekanism:gasupgrade>, <moretcon:ingotblightsteel>], 
+	[<mekanism:machineblock2:3>, <mekanism:gasupgrade>, <enderio:item_material:66>, <mekanism:gasupgrade>, <mekanism:machineblock2:3>], 
+	[<moretcon:ingotblightsteel>, <mekanism:gasupgrade>, <mekanism:gasupgrade>, <mekanism:gasupgrade>, <moretcon:ingotblightsteel>], 
+	[<moretcon:blockblightsteel>, <moretcon:ingotblightsteel>, <mekanism:machineblock2:3>, <moretcon:ingotblightsteel>, <moretcon:blockblightsteel>]
 ]);
 
 //bloodmagic

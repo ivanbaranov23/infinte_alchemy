@@ -72,7 +72,15 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 
 {//thermal
 	//sanded
-	mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:sanded_rod>, <contenttweaker:thermal_rod>, <liquid:khnumite> * 125, 10000);
+	scripts.content_machines.basicFluidMixerRecipe(
+		<contenttweaker:sanded_rod>, 
+		null, 
+		<contenttweaker:thermal_rod>, [
+			<liquid:giriktanol> * 1000,
+			<liquid:sand> * 200
+		], 
+	20, 500);
+	mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:sanded_rod> * 2, <contenttweaker:thermal_rod>, <liquid:khnumite> * 125, 10000);
 	
 	//gold coil
 	recipes.remove(<thermalfoundation:material:513>);
@@ -81,13 +89,13 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:thermal_rod>, <immersiveengineering:wirecoil:5>], 
 		[<ore:gearGold>, <immersiveengineering:wirecoil:5>, <immersiveengineering:material:8>]
 	]);
-	recipes.addShaped("ia_reception_coil2", <thermalfoundation:material:513> * 3, [
+	recipes.addShaped("ia_reception_coil2", <thermalfoundation:material:513> * 4, [
 		[<immersiveengineering:material:8>, <immersiveengineering:wirecoil:5>, <ore:gearGold>], 
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:sanded_rod>, <immersiveengineering:wirecoil:5>], 
 		[<ore:gearGold>, <immersiveengineering:wirecoil:5>, <immersiveengineering:material:8>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
-		[<thermalfoundation:material:513> * 4], 
+		[<thermalfoundation:material:513> * 6], 
 		[<immersiveengineering:wirecoil:5> * 2, <thermalfoundation:material:25>, <contenttweaker:sanded_rod>, <immersiveengineering:material:8>],
 		null,
 		10, 128
@@ -100,13 +108,13 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:thermal_rod>, <immersiveengineering:wirecoil:5>], 
 		[<ore:gearSilver>, <immersiveengineering:wirecoil:5>, <immersiveengineering:material:8>]
 	]);
-	recipes.addShaped("ia_transmission_coil2", <thermalfoundation:material:514> * 3, [
+	recipes.addShaped("ia_transmission_coil2", <thermalfoundation:material:514> * 4, [
 		[<immersiveengineering:material:8>, <immersiveengineering:wirecoil:5>, <ore:gearSilver>], 
 		[<immersiveengineering:wirecoil:5>, <contenttweaker:sanded_rod>, <immersiveengineering:wirecoil:5>], 
 		[<ore:gearSilver>, <immersiveengineering:wirecoil:5>, <immersiveengineering:material:8>]
 	]);
 	scripts.content_machines.addAssemblerRecipe(
-		[<thermalfoundation:material:514> * 4], 
+		[<thermalfoundation:material:514> * 6], 
 		[<immersiveengineering:wirecoil:5> * 2, <thermalfoundation:material:258>, <contenttweaker:sanded_rod>, <immersiveengineering:material:8>],
 		null,
 		10, 128
@@ -503,17 +511,7 @@ mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:power_core_active
 		]);
 		mods.mekanism.infuser.addRecipe("FUNGI", 80, <contenttweaker:cacti_foci>, <contenttweaker:fungi_cacti_foci>);
 
-		//fishy
-		recipes.addShaped("fishy_capacitor", <contenttweaker:fishy_capacitor> * 3, [
-			[<immersiveengineering:material:26>, <ore:listAllfishraw>, <ore:listAllfishraw>], 
-			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
-			[<ore:listAllfishraw>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
-		]);
-		recipes.addShaped("fishy_capacitor2", <contenttweaker:fishy_capacitor> * 6, [
-			[<immersiveengineering:material:26>, <ore:listAllfishraw>, <contenttweaker:activated_green_fish>], 
-			[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
-			[<contenttweaker:activated_green_fish>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
-		]);
+		
 		
 		//cheesy
 		recipes.addShaped("ia_cheesy_cap", <contenttweaker:cheesy_capacitor> * 2, [
@@ -2259,10 +2257,6 @@ scripts.content_machines.addAssemblerRecipe(
         ]
     );
 }
-mods.botania.RuneAltar.addRecipe(<contenttweaker:shadowglass_cloth>, [
-	<contenttweaker:terra_base>, <moretcon:repitem:3>, <moretcon:repitem:3>,
-	<contenttweaker:soul_reflector>, <botania:manaresource:22>
-], 20000);
 
 mods.extendedcrafting.TableCrafting.addShaped(0, <contenttweaker:mana_pipe>, [
 	[<contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>, <contenttweaker:mana_resistor>], 

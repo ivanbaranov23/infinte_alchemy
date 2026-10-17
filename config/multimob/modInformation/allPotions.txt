@@ -83,6 +83,7 @@ mowziesmobs:suns_blessing
 mowziesmobs:geomancy
 mowziesmobs:frozen
 mowziesmobs:poison_resist
+byg:clarity
 raids:hero_of_the_village
 raids:bad_omen
 raids:raid_omen

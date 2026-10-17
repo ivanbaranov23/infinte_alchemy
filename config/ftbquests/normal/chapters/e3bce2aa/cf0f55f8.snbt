@@ -1,6 +1,6 @@
 {
 	title: "Microtransactions",
-	x: -5.0d,
+	x: -6.0d,
 	y: 2.0d,
 	text: [
 		"You can buy kits and augments in the shop"

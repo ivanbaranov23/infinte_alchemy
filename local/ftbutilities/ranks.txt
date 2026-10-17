@@ -1,11 +1,13 @@
 // For more info visit https://faq.ftb.world/books/ftb-utilities/page/ranks
 
 [player]
-default_player_rank: true
 power: 1
+default_player_rank: true
 example.permission: true
 example.other_permission: false
 example.permission_with_value: 0
+admin_panel.ftbutilities.edit_world.gamerules: false
+ftbutilities.chunkloader.max_chunks: 100
 
 [vip]
 power: 20
@@ -14,7 +16,7 @@ example.other_permission: true
 example.permission_with_value: 15
 
 [admin]
-default_op_rank: true
 power: 100
+default_op_rank: true
 ftbutilities.chat.name_format: <&2{name}&r>
 example.permission_with_value: 100

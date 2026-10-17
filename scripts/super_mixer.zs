@@ -89,6 +89,37 @@ scripts.content_machines.addAssemblerRecipe(
 
 
 
+{//giriktan line
+    var rec = RecipeBuilder.newBuilder("giriktan", "super_mixer", 20 * 1);
+
+    rec.addEnergyPerTickInput(2560000);
+
+    rec.addInputs(
+        <mysticalagriculture:giriktan_essence> * 4,
+        <contenttweaker:polymer_dust>,
+        <bloodmagic:component:9>,
+        <contenttweaker:flesh_spurt>
+    );
+    rec.addInputs(
+        <liquid:ethanol> * 1000,
+        <liquid:butene> * 1000,
+        <liquid:evil_formate> * 1000,
+        <liquid:evil_blood> * 1000
+    );
+    rec.addGasInput(<gas:evil_nitrate> * 2000);
+    
+    rec.addFluidOutput(<liquid:giriktanol> * 1000);
+    rec.addFluidOutput(<liquid:giriktanol2> * 1000);
+    rec.addFluidOutput(<liquid:giriktanol3> * 1000);
+    rec.addFluidOutput(<liquid:giriktanol4> * 1000);
+    rec.addFluidOutput(<liquid:giriktanol5> * 1000);
+
+    rec.build();
+
+}
+
+
+
 {var rec = RecipeBuilder.newBuilder("flower_plasma", "super_mixer", 20 * 1);
 
     rec.addEnergyPerTickInput(2560000);

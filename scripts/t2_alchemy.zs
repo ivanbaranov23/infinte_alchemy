@@ -1,4 +1,9 @@
 
+recipes.addShaped("ia_giriktan_seeds", <mysticalagriculture:giriktan_seeds>, [
+	[<thermalfoundation:material:70>, <minecraft:lapis_block>, <thermalfoundation:material:70>], 
+	[<thermalfoundation:material:321>, <mysticalagriculture:bilim_seeds>, <thermalfoundation:material:321>], 
+	[<thermalfoundation:material:70>, <minecraft:lapis_block>, <thermalfoundation:material:70>]
+]);
 
 scripts.compact_distill.addCompactDistill(
 	[<liquid:blueslime> * 50, <liquid:rotten_slime> * 30], 

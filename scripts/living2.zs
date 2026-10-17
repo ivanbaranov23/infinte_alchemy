@@ -158,6 +158,8 @@ static livings as IItemStack[string] = {
     snek_plant: <contenttweaker:lv_plant>,
     honey_spider: <contenttweaker:honey_spider>,
 
+    garbage_man: <contenttweaker:garbage_man>,
+
     zanite_frog: <contenttweaker:lv_zanite_frog>,
 
     blood_slime: <contenttweaker:lv_blood_slime>,
@@ -190,6 +192,8 @@ static animal_type as string[string] = {
     nitrall: "f1",
     snek_plant: "f1",
     honey_spider: "f1",
+
+    garbage_man: "f1",
 
     zanite_frog: "f1",
 
@@ -249,6 +253,7 @@ static foods as int[][IItemStack][string] = {
         <mysticalworld:silkworm_egg>:       [0, 20],
         <exnihilocreatio:item_material:2>:  [0, 20],
     },
+    garbage_man: {},
 
     zanite_frog: {
         <contenttweaker:zanite_frog_feed>: [10, 40]
@@ -332,6 +337,7 @@ static products as int[IItemStack][string] = {
         <contenttweaker:leaf>: 25
     },
     honey_spider: {},
+    garbage_man: {<contenttweaker:garbage>: 10},
 
     zanite_frog: {
         <contenttweaker:zanite_frog_leg>: 25
@@ -1015,6 +1021,42 @@ recipes.addShaped("ia_butcher_knife", <contenttweaker:butcher_knife>, [
             <erebus:materials:20> % 25
         ], 
         <contenttweaker:honey_web>, <liquid:honey> * 200, 4000
+    );
+
+}
+{//garbage man
+    recipes.addShaped("ia_garbage_man", <contenttweaker:garbage_man>.withTag({
+            food: 20
+        }), [
+        [<contenttweaker:garbage>, <contenttweaker:burn_powder>, <contenttweaker:garbage>], 
+        [<contenttweaker:garbage>, <contenttweaker:singularity_dust>, <contenttweaker:garbage>], 
+        [<contenttweaker:garbage>, <contenttweaker:burn_powder>, <contenttweaker:garbage>]
+    ]);
+
+    //feeding
+    recipes.addShapeless("garbage_man_feeding", <contenttweaker:garbage_man>,
+        [
+            <contenttweaker:garbage_man>.only(
+                function(item){
+                    if (item.tag.memberGet("food") as bool){
+                        //item good
+                        return (item.tag.food.asInt() > 0);
+                    }
+                    //item bad
+                    return false;
+                }
+            ).marked("mark"), 
+            <ore:trash>
+        ],
+            
+        function(out, ins, cInfo){
+            var range as int = 15 - (-5) + 1;
+            var value as int = ((Math.floor(Math.random() * range) + (-5)) as IData).asInt();
+            
+            return ins.mark.withTag( {
+                food: ins.mark.tag.food.asInt() + value
+            } );
+        }, null
     );
 
 }

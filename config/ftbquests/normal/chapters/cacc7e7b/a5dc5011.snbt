@@ -91,5 +91,16 @@
 				Amount: 1000
 			}
 		}
+	},
+	{
+		uid: "ff1a8be0",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "lifeessence",
+				Amount: 1000
+			}
+		}
 	}]
 }

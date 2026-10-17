@@ -47,6 +47,13 @@ FITweaker.addRecipe(<liquid:ender_blood>, <liquid:andesite>, <blockstate:minecra
 
 FITweaker.addRecipe(<liquid:ash_solution>, <liquid:andesite>, <blockstate:quark:limestone:variant=stone_limestone>);
 
+FITweaker.addRecipe(<liquid:pure_water>, <liquid:andesite>, <blockstate:byg:soapstone>);
+FITweaker.addRecipe(<liquid:pure_water>, <liquid:stone>, <blockstate:byg:sodalite>);
+FITweaker.addRecipe(<liquid:pure_water>, <liquid:ash_solution>, <blockstate:byg:sepinite>);
+FITweaker.addRecipe(<liquid:pure_water>, <liquid:lava>, <blockstate:byg:scoria>);
+
+FITweaker.addRecipe(<liquid:giriktanol>, <liquid:stone>, <blockstate:contenttweaker:giriktalit>);
+
 FITweaker.addRecipe(<liquid:lava>, <liquid:ash_solution>, <blockstate:minecraft:stone:variant=diorite>);
 FITweaker.addRecipe(<liquid:ash_solution>, <liquid:lava>, <blockstate:minecraft:stone:variant=diorite>);
 FITweaker.addRecipe(<blockstate:minecraft:cobblestone>, <liquid:ash_solution>,

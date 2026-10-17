@@ -67,6 +67,8 @@ addGas("retinol", "ffc546", false);
 addGas("fluorine", "bba52c", true);
 addGas("hf", "75af2e", true);
 
+addGas("bilim", "76c03c", false);
+
 addGas("tar_gas", "0c0a0f", false);
 
 addGas("chlorosulfonic", "70d06f", true);

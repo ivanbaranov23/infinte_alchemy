@@ -2855,7 +2855,7 @@ item.contenttweaker.butadiene.name=Butadiene
 item.contenttweaker.acrylonitrile.name=Acrylonitrile
 item.contenttweaker.adiponitrile.name=Adiponitrile
 item.contenttweaker.hexamethylenediamine.name=Hexamethylenediamine
-item.contenttweaker.nylon.name=Nylon 66
+item.contenttweaker.nylon.name=Nylon
 
 item.contenttweaker.terephthalic_acid.name=Terephthalic Acid
 
@@ -3109,3 +3109,69 @@ tile.contenttweaker.red_gravel.name=Red Waste Gravel
 fluid.hot_redstone=Super Critical Redstone
 
 item.contenttweaker.modularium2.name=Advanced Modularium
+
+tile.contenttweaker.bilim_block.name=Bilim Casing
+gas.bilim=Gaseous Bilim
+
+fluid.giriktanol=Giriktanol
+fluid.giriktanol2=Giriktanol Butenyl Ether
+fluid.giriktanol3=Poly(Giriktanol Butenyl Ether)
+fluid.giriktanol4=Suppressed Poly(Giriktanol Butenyl Ether Evil Formate)
+fluid.giriktanol5=Bloody Unleashed Poly(Giriktanol Butenyl Ether Trievil Nitrate Formate)
+
+item.contenttweaker.polymer_dust.name=Polymerization Catalyst
+
+item.contenttweaker.osram_plate.name=Osram Plate
+tile.contenttweaker.osram_casing.name=Osram Casing
+tile.infinite_alchemy_osram_pipe_pane.name=Osram Pipe Piece
+
+item.contenttweaker.garbage.name=Garbage
+item.contenttweaker.garbage_man.name=Garbage Man
+
+tile.contenttweaker.giriktalit.name=Giriktalit
+tile.contenttweaker.giriktalit_bricks.name=Giriktalit Bricks
+tile.contenttweaker.giriktalit_tile.name=Giriktalit Tile
+tile.contenttweaker.giriktalit_bright.name=Giriktalit Bright
+
+item.contenttweaker.kasai_pieces.name=Kasai Pieces
+item.contenttweaker.kasai_chunk.name=Kasai Chunk
+item.contenttweaker.kasai_dust.name=Kasai Dust
+item.contenttweaker.kasai_dirty_dust.name=Kasai Dirty Dust
+fluid.kasai=Molten Kasai
+
+item.contenttweaker.electric_meat.name=Electric Meat
+ia.tooltip.electric_meat0=Dropped by not-undeads killed by lightning.
+ia.tooltip.electric_meat1=Note: lightning tends to destroy drops,
+ia.tooltip.electric_meat2=so better find a way to autocollect them
+ia.tooltip.electric_meat3=with a hopper or smt
+
+tile.contenttweaker.osmium_sand.name=Osmium Sand
+
+tile.contenttweaker.beryllium_ore.name=Beryllium Ore
+item.contenttweaker.beryllium_pieces.name=Beryllium Pieces
+item.contenttweaker.beryllium_chunk.name=Beryllium Chunk
+
+item.contenttweaker.kasarai_ingot.name=§4Kasarai§r Ingot
+item.contenttweaker.kasarai_plate.name=§4Kasarai§r Plate
+item.contenttweaker.kasarai_rod.name=§4Kasarai§r Rod
+item.contenttweaker.kasarai_wire.name=§4Kasarai§r Wire
+tile.contenttweaker.kasarai_block.name=Block of §4Kasarai§r
+
+tile.contenttweaker.bastnasite_ore.name=Bastnasite Ore
+item.contenttweaker.bastnasite.name=Bastnasite
+tile.contenttweaker.bastnasite_block.name=Block of Bastnasite
+
+item.contenttweaker.vibranium_plate.name=Vibranium Plate
+tile.infinite_alchemy_vibranium_brace.name=Vibranium Brace
+
+ia.tooltip.large_crystallizer0=Tanks need to be filled with
+ia.tooltip.large_crystallizer1=Crystal Growth Medium
+
+item.contenttweaker.big_burger1.name=Huge Burger
+item.contenttweaker.big_burger2.name=Colossal Burger
+item.contenttweaker.big_burger3.name=Mountainous Burger
+fluid.burger=Liquid Burger
+
+item.ometweaks.kikeridan_capacitor.name=Kikeridan Capacitor
+
+item.contenttweaker.holystone_dust.name=Holystone Dust

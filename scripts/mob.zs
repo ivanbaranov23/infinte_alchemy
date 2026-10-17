@@ -251,6 +251,9 @@ function addLoot(ent as string, ent_table as string, items as IItemStack[], stat
         <entity:erebus:erebus.pond_skater>, // the entity to be summoned
         [<roots:baffle_cap_mushroom>, <contenttweaker:malachite_polycrystal>, <enderio:block_reservoir>] // a list of ingredients used for the summoning
     );
+
+
+    recipes.addShapeless("ia_chitin_from_larvae", <mod_lavacow:chitin>, [<erebus:erebus_food>]);
 }
 
 {//atum

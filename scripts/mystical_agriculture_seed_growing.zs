@@ -5,39 +5,39 @@ function addSeeds(ess as IItemStack, seeds as IItemStack, energy_m as int){
     recipes.addShapeless("myst_reset_argicraft_data_" ~ seeds.name, seeds, [seeds]);
 
     mods.thermalexpansion.Insolator.addRecipe(
-        ess,
+        seeds,
         seeds, <contenttweaker:fertilizer1>, 10000 * energy_m,
-        seeds, 110, 1000
+        ess, 100, 1000
     );
     mods.thermalexpansion.Insolator.addRecipe(
-        ess * 2,
+        seeds * 2,
         seeds, <contenttweaker:fertilizer2>, 10000 * energy_m,
-        seeds, 110, 1000
+        ess, 100, 1000
     );
     mods.thermalexpansion.Insolator.addRecipe(
-        ess * 4,
+        seeds * 4,
         seeds, <contenttweaker:fertilizer3>, 10000 * energy_m,
-        seeds, 110, 1000
+        ess, 100, 1000
     );
     mods.thermalexpansion.Insolator.addRecipe(
-        ess * 8,
+        seeds * 8,
         seeds, <contenttweaker:fertilizer4>, 10000 * energy_m,
-        seeds, 110, 1000
+        ess, 100, 1000
     );
     mods.thermalexpansion.Insolator.addRecipe(
-        ess * 16,
+        seeds * 16,
         seeds, <contenttweaker:fertilizer5>, 10000 * energy_m,
-        seeds, 110, 1000
+        ess, 100, 1000
     );
     mods.thermalexpansion.Insolator.addRecipe(
-        ess * 32,
+        seeds * 32,
         seeds, <contenttweaker:fertilizer6>, 20000 * energy_m,
-        seeds, 110, 1000
+        ess, 100, 1000
     );
     mods.thermalexpansion.Insolator.addRecipe(
-        ess * 64,
+        seeds * 64,
         seeds, <contenttweaker:fertilizer7>, 30000 * energy_m,
-        seeds, 110, 1000
+        ess, 100, 1000
     );
 
     
@@ -60,7 +60,7 @@ addSeeds(<mysticalagriculture:menril_essence>, <mysticalagriculture:menril_seeds
 addSeeds(<mysticalagriculture:limestone_essence>, <mysticalagriculture:limestone_seeds>, 1);
 addSeeds(<mysticalagriculture:sky_stone_essence>, <mysticalagriculture:sky_stone_seeds>, 1);
 
-addSeeds(<mysticalcreations:fertilizer_essence>, <mysticalcreations:fertilizer_seeds>, 1);
+addSeeds(<mysticalagriculture:fertilizer_essence>, <mysticalagriculture:fertilizer_seeds>, 1);
 
 //t1 metals
 addSeeds(<mysticalagriculture:iron_essence>, <mysticalagriculture:iron_seeds>, 2);
@@ -71,11 +71,11 @@ addSeeds(<mysticalagriculture:aluminum_essence>, <mysticalagriculture:aluminum_s
 addSeeds(<mysticalagriculture:zinc_essence>, <mysticalagriculture:zinc_seeds>, 2);
 addSeeds(<mysticalagriculture:cobalt_essence>, <mysticalagriculture:cobalt_seeds>, 2);
 addSeeds(<mysticalagriculture:ardite_essence>, <mysticalagriculture:ardite_seeds>, 2);
-addSeeds(<mysticalcreations:antimony_essence>, <mysticalcreations:antimony_seeds>, 2);
+addSeeds(<mysticalagriculture:antimony_essence>, <mysticalagriculture:antimony_seeds>, 2);
 
-addSeeds(<mysticalcreations:karmesine_essence>, <mysticalcreations:karmesine_seeds>, 2);
-addSeeds(<mysticalcreations:ovium_essence>, <mysticalcreations:ovium_seeds>, 2);
-addSeeds(<mysticalcreations:jauxum_essence>, <mysticalcreations:jauxum_seeds>, 2);
+addSeeds(<mysticalagriculture:karmesine_essence>, <mysticalagriculture:karmesine_seeds>, 2);
+addSeeds(<mysticalagriculture:ovium_essence>, <mysticalagriculture:ovium_seeds>, 2);
+addSeeds(<mysticalagriculture:jauxum_essence>, <mysticalagriculture:jauxum_seeds>, 2);
 
 addSeeds(<mysticalagriculture:saltpeter_essence>, <mysticalagriculture:saltpeter_seeds>, 2);
 addSeeds(<mysticalagriculture:silicon_essence>, <mysticalagriculture:silicon_seeds>, 2);
@@ -83,5 +83,14 @@ addSeeds(<mysticalagriculture:silicon_essence>, <mysticalagriculture:silicon_see
 addSeeds(<mysticalagriculture:coal_essence>, <mysticalagriculture:coal_seeds>, 2);
 addSeeds(<mysticalagriculture:nether_quartz_essence>, <mysticalagriculture:nether_quartz_seeds>, 2);
 addSeeds(<mysticalagriculture:certus_quartz_essence>, <mysticalagriculture:certus_quartz_seeds>, 2);
+addSeeds(<mysticalagriculture:lapis_lazuli_essence>, <mysticalagriculture:lapis_lazuli_seeds>, 2);
+
+
+addSeeds(<mysticalagriculture:gold_essence>, <mysticalagriculture:gold_seeds>, 3);
+addSeeds(<mysticalagriculture:osmium_essence>, <mysticalagriculture:osmium_seeds>, 3);
+addSeeds(<mysticalagriculture:osram_essence>, <mysticalagriculture:osram_seeds>, 3);
+
+addSeeds(<mysticalagriculture:palladium_essence>, <mysticalagriculture:palladium_seeds>, 4);
+
 
 addSeeds(<mysticalagriculture:terrasteel_essence>, <mysticalagriculture:terrasteel_seeds>, 5);

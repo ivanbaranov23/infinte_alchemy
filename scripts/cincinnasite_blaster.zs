@@ -31,7 +31,9 @@ for mat in [
 
     "gold", "silver", "lead", "osmium",
     "platinum", "iridium",
-    "eezo"
+    "eezo",
+
+    "kasai"
 ] as string[]{
     var rec = RecipeBuilder.newBuilder("CB_" ~ counter, "cincinnasite_blaster", 4);
     counter += 1;

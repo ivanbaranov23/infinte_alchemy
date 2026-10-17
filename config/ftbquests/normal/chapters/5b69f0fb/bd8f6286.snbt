@@ -1,0 +1,15 @@
+{
+	x: 10.0d,
+	y: -3.0d,
+	dependencies: [
+		"6c7edb92"
+	],
+	optional: true,
+	tasks: [{
+		uid: "d27d1433",
+		type: "item",
+		items: [{
+			item: "contenttweaker:electric_meat"
+		}]
+	}]
+}

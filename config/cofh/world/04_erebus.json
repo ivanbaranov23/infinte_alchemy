@@ -8,12 +8,12 @@
                 "type": "structure",
                 "structure": "structure/alien_erebus_1.nbt",
 				"material": "grass",
-				"integrity": 0.9,
+				"integrity": 0.85,
 				"cluster-size": 1
 			},
 
 			"cluster-count": 1,
-            "chunk-chance": 80,
+            "chunk-chance": 100,
 			"min-height": 10,
 			"max-height": 100,
 			"retrogen": "true",

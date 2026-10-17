@@ -585,6 +585,11 @@ static all_metals as IItemStack[string][string] = {
         gear: <contenttweaker:flower_steel_gear>,
         block: <contenttweaker:flower_steel_block>
     },
+    kasai: {
+        ingot: <byg:kasai_ingot>,
+        dust: <contenttweaker:kasai_dust>,
+        block: <byg:kasai_block>
+    },
     netherite: {
         ingot: <netherite:netheriteingot>,
         block: <netherite:netheriteblock>
@@ -1495,6 +1500,13 @@ static all_metals as IItemStack[string][string] = {
         gear: <contenttweaker:kikeridan_gear>,
         block: <contenttweaker:kikeridan_block>,
     },
+    kasarai: {
+        ingot: <contenttweaker:kasarai_ingot>,
+        plate: <contenttweaker:kasarai_plate>,
+        rod: <contenttweaker:kasarai_rod>,
+        wire: <contenttweaker:kasarai_wire>,
+        block: <contenttweaker:kasarai_block>,
+    },
 
     nitinol: {
         ingot: <contenttweaker:nitinol_ingot>,
@@ -1811,6 +1823,7 @@ static all_metals as IItemStack[string][string] = {
     },
     vibranium: {
         ingot: <taiga:vibranium_ingot>,
+        plate: <contenttweaker:vibranium_plate>,
         block: <taiga:vibranium_block>,
         nugget: <taiga:vibranium_nugget>,
         dust: <taiga:vibranium_dust>
@@ -1924,13 +1937,18 @@ static all_metals as IItemStack[string][string] = {
         ingot: <taiga:eezo_ingot>,
         block: <taiga:eezo_block>,
         nugget: <taiga:eezo_nugget>,
-        dust: <taiga:eezo_dust>
+        dust: <taiga:eezo_dust>,
+
+        singularity: <extendedcrafting:singularity_custom:34>
     },
     osram: {
         ingot: <taiga:osram_ingot>,
+        plate: <contenttweaker:osram_plate>,
         block: <taiga:osram_block>,
         nugget: <taiga:osram_nugget>,
-        dust: <taiga:osram_dust>
+        dust: <taiga:osram_dust>,
+
+        singularity: <extendedcrafting:singularity_custom:112>
     },
     valyrium: {
         ingot: <taiga:valyrium_ingot>,
@@ -2395,6 +2413,8 @@ static all_metals_molten as ILiquidStack[string] = {
     electric_manyullyn_base: <liquid:electric_manyullyn_base>,
     electric_manyullyn: <liquid:electric_manyullyn>,
 
+    kasai: <liquid:kasai>,
+
     platinum: <liquid:platinum>,
     iridium: <liquid:iridium>,
     titanium: <liquid:titanium>,
@@ -2607,6 +2627,8 @@ static custom_metals as string[] = [
     "caelumite", "plutonium", "barium",
 
     "runesteel",
+
+    "kasai",
 
     "magnesium", "selenium", "tellurium", "arsenic", "molybdenum", "rhodium", "tantalum",
     "kikeridan"
@@ -2923,7 +2945,7 @@ function addBush(nam as string){
     );
 
     TEAlloyer.addRecipe(
-        all_metals[nam].nugget * 3, 
+        all_metals[nam].nugget * 2, 
         all_metals[nam].berry,
         <minecraft:sand>,
         500
@@ -2938,11 +2960,11 @@ function addBush(nam as string){
     ]);
 
     if (all_metals_molten has nam) {
-        Melting.addRecipe(all_metals_molten[nam] * 48, all_metals[nam].berry, 400);
-        mods.thermalexpansion.Crucible.addRecipe(all_metals_molten[nam] * 48, all_metals[nam].berry, 400);
+        Melting.addRecipe(all_metals_molten[nam] * 16, all_metals[nam].berry, 400);
+        mods.thermalexpansion.Crucible.addRecipe(all_metals_molten[nam] * 16, all_metals[nam].berry, 400);
     }
 
-    furnace.addRecipe(all_metals[nam].ingot * 2, all_metals[nam].bush);
+    furnace.addRecipe(all_metals[nam].nugget * 3, all_metals[nam].bush);
 }
 
 function addCasting(metal as IItemStack[string], molten as ILiquidStack){
@@ -3476,6 +3498,9 @@ add3alloy(1, "flower_steel", 4,
     "plant_sample", 8,
     "petals", 8
 );
+{//kasai
+
+}
 {//netherite
     recipes.remove(<netherite:netheriteingot>);
     recipes.addShapeless("ia_netherite_uncompress", <netherite:netheriteingot> * 9, [<netherite:netheriteblock>]);
@@ -3483,6 +3508,11 @@ add3alloy(1, "flower_steel", 4,
         "netherite_scrap", 4,
         "cincinnasite", 6,
         "ruby", 3
+    );
+    add3alloy(2, "netherite", 1, 
+        "netherite_scrap", 4,
+        "cincinnasite", 6,
+        "kasai", 2
     );
 }
 {//extra ut
@@ -5518,6 +5548,19 @@ scripts.content_machines.addAdvancedMixerRecipe(
         rec.build();
     }
 
+    mods.extendedcrafting.CombinationCrafting.addRecipe(
+        <contenttweaker:kasarai_ingot> * 3, 10240 * 10000, 1024000 * 5, <contenttweaker:super_alloy_base_ingot>,
+        [
+            <contenttweaker:kikeridan_ingot>,
+            <contenttweaker:wormholium>,
+            <enderio:item_alloy_endergy_ingot:3>,
+            <enderio:item_alloy_endergy_ingot:3>,
+            <enderio:item_alloy_endergy_ingot:3>,
+            <byg:kasai_block>,
+            <byg:kasai_block>,
+            <byg:kasai_block>
+        ]
+    );
 
     
     mods.extendedcrafting.CombinationCrafting.addRecipe(
@@ -5992,6 +6035,13 @@ scripts.content_machines.addAdvancedMixerRecipe(
             <taiga:osram_ingot>
         ], [], 20, 1000
     );
+
+
+    recipes.addShaped("ia_osram_casing", <contenttweaker:osram_casing> * 4, [
+        [null, <contenttweaker:osram_plate>, null], 
+        [<contenttweaker:osram_plate>, null, <contenttweaker:osram_plate>], 
+        [null, <contenttweaker:osram_plate>, null]
+    ]);
 }
 
 {//moretcon

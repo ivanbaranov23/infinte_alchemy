@@ -297,12 +297,12 @@ import crafttweaker.entity.IEntityItem;
             if (target.world.getWorldTime() >= 18000){
                 //18000 midnight
                 //6000 noon
-                return (newDamage + 1.5f);
+                return (newDamage * 1.5f);
             }
             if (6000 >= target.world.getWorldTime()){
                 //18000 midnight
                 //6000 noon
-                return (newDamage + 1.5f);
+                return (newDamage * 1.5f);
             }
         }
         return newDamage;

@@ -165,5 +165,14 @@
     "toSpawn": "atum:stoneguard",
     "spawnCount": 8,
     "spawnRange": 6
+  },
+
+  {
+    "fluidName": "stone",
+    "input": "additionalcompression:meatfish_compressed:0",
+    "output": "biomesoplenty:white_sand:0",
+    "toSpawn": "minecraft:silverfish",
+    "spawnCount": 10,
+    "spawnRange": 4
   }
 ]

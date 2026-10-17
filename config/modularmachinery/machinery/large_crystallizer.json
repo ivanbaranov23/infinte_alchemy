@@ -1,0 +1,566 @@
+{
+    "registryname": "large_crystallizer",
+    "localizedname": "Large Metal Crystallizer",
+    "color": "d5e6f4",
+    "parts": [
+        
+        {
+            "x": 1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "ddb:infinite_alchemy_vibranium_brace@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 4,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_fence@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "ddb:infinite_alchemy_vibranium_brace@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_fence@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_fence@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 1,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "ddb:infinite_alchemy_vibranium_brace@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 4,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 0,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 0,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "ddb:infinite_alchemy_vibranium_brace@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 3,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 0,
+            "elements": [
+                "actuallyadditions:block_testifi_bucks_white_fence@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 3,
+            "elements": [
+                "ddb:infinite_alchemy_vibranium_brace@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 2,
+            "z": 1,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 2,
+            "y": 0,
+            "z": 1,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 1,
+            "y": 2,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 1,
+            "y": 1,
+            "z": 4,
+            "elements": [
+                "ddb:infinite_alchemy_vibranium_brace@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 1,
+            "z": 0,
+            "elements": [
+                "taiga:vibranium_block@0",
+                "modularmachinery:blockparallelcontroller"
+            ]
+        },
+        {
+            "x": -1,
+            "y": 0,
+            "z": 3,
+            "elements": [
+                "casings_all"
+            ]
+        },
+        {
+            "x": 2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "ddb:infinite_alchemy_vibranium_brace@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": 2,
+            "z": 2,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 0,
+            "y": 3,
+            "z": 3,
+            "elements": [
+                "openblocks:tank@0"
+            ],
+            "nbt": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}},
+            "nbt-display": {"id":"openblocks:tank","tank":{"FluidName":"crystal_fluid2","Amount":"16000"}}
+        },
+        {
+            "x": 1,
+            "y": 0,
+            "z": 2,
+            "elements": [
+                "taiga:vibranium_block@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": 1,
+            "z": 1,
+            "elements": [
+                "ddb:infinite_alchemy_vibranium_brace@0"
+            ]
+        }
+    ]}

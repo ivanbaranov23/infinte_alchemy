@@ -243,7 +243,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	]);
 	recipes.remove(<mekanism:machineblock2:6>);
 	recipes.addShaped("ia_chem_dissolver_chamber", <mekanism:machineblock2:6>, [
-		[<mekanism:basicblock2:7>, <mekanism:gastank>.withTag({tier: 3}), <mekanism:basicblock2:7>], 
+		[<mekanism:basicblock2:7>, <mekanism:gastank>.withTag({tier: 2}), <mekanism:basicblock2:7>], 
 		[<ore:battery>, <mekanism:machineblock:9>, <ore:battery>], 
 		[<mekanism:basicblock2:7>, <mekanism:electrolyticcore>, <mekanism:basicblock2:7>]
 	]);
@@ -270,7 +270,7 @@ recipes.addShaped("ia_electrolyticcore", <mekanism:electrolyticcore>, [
 	recipes.addShaped("ia_mek_solar", <mekanism:machineblock3:1>, [
 		[null, <solarflux:solar_panel_5> | <contenttweaker:neutronium_mirror>, null], 
 		[<contenttweaker:mekanized_steel_plate>, <contenttweaker:gastight_steel_rod>, <contenttweaker:mekanized_steel_plate>], 
-		[<mekanism:gastank>.withTag({tier: 3}), <mekanism:basicblock:8>, <mekanism:gastank>.withTag({tier: 3})]
+		[<mekanism:gastank>.withTag({tier: 1}), <mekanism:basicblock:8>, <mekanism:gastank>.withTag({tier: 1})]
 	]);
 
 	recipes.remove(<mekanism:machineblock2:13>);

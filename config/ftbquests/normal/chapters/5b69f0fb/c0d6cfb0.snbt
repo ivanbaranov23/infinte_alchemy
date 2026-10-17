@@ -1,0 +1,19 @@
+{
+	x: 5.0d,
+	y: -1.0d,
+	text: [
+		"Can be a source of garbage which is a source of chitin and sulfur and methane if you compact it."
+	],
+	dependencies: [
+		"6310a3ab"
+	],
+	tasks: [{
+		uid: "b66a89e7",
+		type: "item",
+		items: [{
+			item: "contenttweaker:garbage_man"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

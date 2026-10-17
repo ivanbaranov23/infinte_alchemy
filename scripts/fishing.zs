@@ -127,6 +127,48 @@ addFishRec2(<contenttweaker:joker_fish>, <minecraft:fish:2> * 3, <liquid:society
 
 
 
+//fishy
+recipes.addShaped("fishy_capacitor", <contenttweaker:fishy_capacitor> * 3, [
+	[<immersiveengineering:material:26>, <ore:listAllfishraw>, <ore:listAllfishraw>], 
+	[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
+	[<ore:listAllfishraw>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
+]);
+recipes.addShaped("fishy_capacitor2", <contenttweaker:fishy_capacitor> * 6, [
+	[<immersiveengineering:material:26>, <ore:listAllfishraw>, <contenttweaker:activated_green_fish>], 
+	[<ore:listAllfishraw>, <enderio:item_capacitor_grainy>, <ore:listAllfishraw>], 
+	[<contenttweaker:activated_green_fish>, <ore:listAllfishraw>, <immersiveengineering:material:26>]
+]);
+scripts.content_machines.addAssemblerRecipe(
+	[<contenttweaker:fishy_capacitor> * 8],
+	[<contenttweaker:activated_green_fish>, <immersiveengineering:material:26>, <enderio:item_capacitor_grainy>],
+	<liquid:fish_oil> * 1000,
+	5, 16
+);
+mods.immersiveengineering.Blueprint.addRecipe("exotic_circuit", 
+	<contenttweaker:fish_chip> * 3, 
+	[
+		<opencomputers:material:7>, <actuallyadditions:item_food:3>
+	]
+);
+mods.immersiveengineering.Blueprint.addRecipe("exotic_circuit", 
+	<contenttweaker:fish_chip> * 6, 
+	[
+		<opencomputers:material:7>, <harvestcraft:fishandchipsitem>
+	]
+);
+
+ 
+recipes.addShaped("artificial_fish", <contenttweaker:artificial_fish>, [
+	[<contenttweaker:fishy_capacitor>], 
+	[<contenttweaker:fish_chip>]
+]);
+scripts.content_machines.addAssemblerRecipe(
+	[<contenttweaker:artificial_fish> * 3],
+	[<contenttweaker:fishy_capacitor>, <contenttweaker:fish_chip>],
+	null,
+	5, 16
+);
+
 
 
 
@@ -137,6 +179,8 @@ mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesopl
 mods.exnihilocreatio.Sieve.addFlintMeshRecipe(<alchemistry:wet_sand>, <biomesoplenty:coral:3>, 0.1);
 
 {
+    mods.thermalexpansion.Transposer.addFillRecipe(<contenttweaker:oil_fish>, <contenttweaker:artificial_fish>, <liquid:fish_oil> * 4000, 1000 * 1000);
+
     recipes.addShapeless("ia_cutting_oil_fish", <immersivepetroleum:material> * 2, [
         <harvestcraft:cuttingboarditem>.reuse(),
         <contenttweaker:oil_fish>

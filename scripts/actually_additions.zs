@@ -242,9 +242,9 @@ recipes.addShaped("ia_block_item_repairer", <actuallyadditions:block_item_repair
 
 recipes.remove(<actuallyadditions:block_bio_reactor>);
 recipes.addShaped("ia_block_bio_reactor", <actuallyadditions:block_bio_reactor>, [
-	[<contenttweaker:gold_coil>, <mysticalcreations:bilim_essence>, <contenttweaker:gold_coil>], 
-	[<mysticalcreations:bilim_essence>, <contenttweaker:potato_block2>, <mysticalcreations:bilim_essence>], 
-	[<contenttweaker:gold_coil>, <mysticalcreations:bilim_essence>, <contenttweaker:gold_coil>]
+	[<contenttweaker:gold_coil>, <mysticalagriculture:bilim_essence>, <contenttweaker:gold_coil>], 
+	[<mysticalagriculture:bilim_essence>, <contenttweaker:potato_block2>, <mysticalagriculture:bilim_essence>], 
+	[<contenttweaker:gold_coil>, <mysticalagriculture:bilim_essence>, <contenttweaker:gold_coil>]
 ]);
 recipes.remove(<actuallyadditions:block_farmer>);
 recipes.addShaped("ia_block_farmer", <actuallyadditions:block_farmer>, [

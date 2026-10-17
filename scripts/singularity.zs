@@ -48,6 +48,11 @@ static non_metallic_singularities as IItemStack[string][string] = {
 		singularity: <extendedcrafting:singularity_custom:3>
 	},
 
+	garbage: {
+		item: <contenttweaker:garbage>,
+		singularity: <extendedcrafting:singularity_custom:113>
+	},
+
 	blood: {
 		item: <tconstruct:edible:3>,
 		singularity: <extendedcrafting:singularity_custom:9>
@@ -210,7 +215,8 @@ static singularity_tiers as IItemStack[][] = [
 	[//0
 		<extendedcrafting:singularity_custom:1>,
 		<extendedcrafting:singularity_custom:2>,
-		<extendedcrafting:singularity_custom:3>
+		<extendedcrafting:singularity_custom:3>,
+		<extendedcrafting:singularity_custom:113>
 	],[//1
 		<extendedcrafting:singularity>,
 		<extendedcrafting:singularity:1>,

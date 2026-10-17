@@ -286,12 +286,13 @@ Centrifuge.addRecipe(
     );
 
     {
-        var rec = RecipeBuilder.newBuilder("burger", "satellite_launch_pad", 20);
+        var rec = RecipeBuilder.newBuilder("burger2", "satellite_launch_pad", 20);
         rec.addEnergyPerTickInput(1000000000);
 
         rec.addItemInput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));
 
         rec.addItemInput(<contenttweaker:big_burger1> * 64);
+        rec.addItemInput(<harvestcraft:gourmetvenisonburgeritem> * 64);
         rec.addItemInput(<harvestcraft:epicbaconitem> * 4);
         rec.addItemInput(<contenttweaker:flesh_support>);
         rec.addItemInput(<contenttweaker:activated_biopower> * 64);
@@ -300,6 +301,24 @@ Centrifuge.addRecipe(
         rec.addItemOutput(<contenttweaker:big_burger2>);
         rec.addItemOutput(<contenttweaker:space_navigator>.withTag({target: "energy_vortex"}));
         rec.addFluidInput(<liquid:rocket_fuel> * 10000);
+        
+
+        rec.build();
+    }
+    {
+        var rec = RecipeBuilder.newBuilder("burger3", "sf_infuser", 20);
+        rec.addEnergyPerTickInput(100000000000);
+
+        rec.addItemInput(<contenttweaker:big_burger2> * 16);
+        rec.addItemInput(<contenttweaker:electric_meat> * 64);
+        rec.addItemInput(<avaritia:cosmic_meatballs> * 64);
+        rec.addItemInput(<contenttweaker:titanakor_flesh> * 64);
+        rec.addItemInput(<extendedcrafting:singularity_ultimate> * 4);
+        
+        rec.addFluidInput(<liquid:burger> * (250 * 1000));
+        rec.addFluidInput(<liquid:dark_catalyst> * 10000);
+        
+        rec.addItemOutput(<contenttweaker:big_burger3>);
         
 
         rec.build();

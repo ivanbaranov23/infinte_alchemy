@@ -40,6 +40,15 @@ import mods.modularmachinery.RecipeBuilder;
 
 }
 
+{//bilim
+    mods.mekanism.chemical.oxidizer.addRecipe(<mysticalagriculture:bilim_essence>, <gas:bilim> * 50);
+    recipes.addShaped("ia_bilim_block", <contenttweaker:bilim_block> * 2, [
+        [<mysticalagriculture:bilim_essence>, <alchemistry:ingot:34>, <mysticalagriculture:bilim_essence>], 
+        [<moreplates:ironwood_plate>, <mysticalagriculture:mystical_fertilizer>, <moreplates:ironwood_plate>], 
+        [<mysticalagriculture:bilim_essence>, <alchemistry:ingot:34>, <mysticalagriculture:bilim_essence>]
+    ]);
+}
+
 {//ender
     scripts.content_machines.basicFluidMixerRecipe(
         <contenttweaker:ender_crystal>, <liquid:postender> * 500, 
@@ -107,6 +116,53 @@ import mods.modularmachinery.RecipeBuilder;
     ]);
 }
 
+{//polymer dust
+    recipes.addShaped("ia_polymer_dust", <contenttweaker:polymer_dust> * 2, [
+	    [<contenttweaker:ldpe>, <thermalfoundation:material:102>, <contenttweaker:ldpe>], 
+	    [<erebus:materials:12>, <moretcon:gemelectarite>, <erebus:materials:12>], 
+	    [<contenttweaker:ldpe>, <thermalfoundation:material:102>, <contenttweaker:ldpe>]
+    ]);
+}
+
+{//giriktan
+    mods.immersiveengineering.Mixer.addRecipe(<liquid:giriktanol> * 1000, <liquid:ethanol> * 1000, 
+        [<mysticalagriculture:giriktan_essence>], 1000
+    );
+    mods.thermalexpansion.Imbuer.addRecipe(
+        <liquid:giriktanol> * 1000,
+        <mysticalagriculture:giriktan_essence> * 1, <liquid:ethanol> * 1000,
+        1000
+    );
+
+    scripts.content_machines.basicFluidMixerRecipe(
+        <contenttweaker:imperomite_catalyst_dust>, <liquid:giriktanol2> * 500, 
+        <contenttweaker:imperomite_catalyst>, [
+            <liquid:giriktanol> * 1000,
+            <liquid:butene> * 1000
+        ], 
+        20, 1000
+    );
+
+
+    mods.enderio.Vat.addRecipe(
+        <liquid:giriktanol3> * 1000, 0.5, <liquid:giriktanol2> * 1000, 
+        [<contenttweaker:polymer_dust>], [1.0], 
+        [<mysticalagriculture:coal>, <mysticalagriculture:coal:1>], [0.5, 1.0], 
+        30000
+    );
+
+    scripts.content_machines.addAdvancedMixerRecipe(
+        [], [<liquid:giriktanol4> * 500],
+        [
+            <bloodmagic:component:9>,
+            <contenttweaker:flesh_spurt>
+        ], [
+            <liquid:giriktanol3> * 1000,
+            <liquid:evil_formate> * 1000
+        ], 20, 10000
+    );
+}
+
 {//evil
 
     //normal: 1 ns -> 8 ei
@@ -125,6 +181,9 @@ import mods.modularmachinery.RecipeBuilder;
         <contenttweaker:awaken_witherite>, <liquid:vile> * 2000, <gas:nickel> * 2000, 
         null, <gas:evil> * 100, 900, 60
     );
+
+
+    mods.mekanism.chemical.infuser.addRecipe(<gas:formic_acid> * 2, <gas:evil>, <gas:evil_formate>);
 }
 {//void
     scripts.content_machines.addFluidSieveRecipeRandom(

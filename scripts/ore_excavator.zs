@@ -520,9 +520,14 @@ var mil as int = 1000000;
 
 
     addExcavator("Nether Quartz", 30, ["oreHellQuartz", "oreHellCertus", "oreCincinnasite"], [0.45, 0.45, 0.1], [-1, -11325]);
+    addExcavator("Nether Kasai", 20, ["oreKasai", "oreHellCertus"], [0.8, 0.2], [-1, -11325]);
 
 
-    addFluidReservoir("Nether Lava", 35, <liquid:lava>, 10*mil, 15*mil, 10, [-1]);
+    addFluidReservoir("Nether Lava", 50, <liquid:lava>, 10*mil, 15*mil, 10, [-1]);
+    addFluidReservoir("Nether Glowstone", 10, <liquid:glowstone>, mil, 2*mil, 0, [-1]);
+    addFluidReservoir("Nether Tasty Lava", 15, <liquid:tasty_lava>, mil, 5*mil, 2, [-1]);
+    addFluidReservoir("Nether Lava Residue", 15, <liquid:lava_residue>, 10*mil, 15*mil, 2, [-1]);
+    addFluidReservoir("Nether Magma", 25, <liquid:magma_fluid>, 10*mil, 15*mil, 3, [-1]);
 }
 
 

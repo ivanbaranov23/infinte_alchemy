@@ -293,12 +293,14 @@ for tool_mat in tools{
                 [null, stick, null], 
                 [null, stick, null]
             ]);
-        if (tool_name == "axe")
+        if (tool_name == "axe"){
             recipes.addShaped(tool_mat ~ "_" ~ tool_name, tool, [
                 [mat, gem], 
                 [mat, stick], 
                 [null, stick]
             ]);
+            <ore:toolAxe>.add(tool);
+        }
         if (tool_name == "shovel")
             recipes.addShaped(tool_mat ~ "_" ~ tool_name, tool, [
                 [gem], 

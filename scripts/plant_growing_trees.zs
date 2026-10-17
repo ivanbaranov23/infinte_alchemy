@@ -174,7 +174,11 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
     addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
         [<natura:nether_glowshroom:2> * 24, (<natura:nether_purple_large_glowshroom> * 8) % 0], 
         [<natura:nether_glowshroom:2>, <contenttweaker:research_mushroom1>], 10, 128
-);
+    );
+    addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
+        [<natura:nether_glowshroom:3> * 24, (<natura:nether_amber_large_glowshroom> * 8) % 0], 
+        [<natura:nether_glowshroom:3>, <contenttweaker:research_mushroom1>], 10, 128
+    );
 }
 addIBTrecipe([<industrialforegoing:fertilizer> * 12], 
     [<quark:glowshroom> * 16, (<quark:glowshroom_block> * 6) % 0], 
@@ -319,6 +323,7 @@ addIBTrecipe([<industrialforegoing:fertilizer> * 16],
     scripts.helper.addSawRecipe(<natura:nether_green_large_glowshroom>, <natura:nether_glowshroom> * 4);
     scripts.helper.addSawRecipe(<natura:nether_blue_large_glowshroom>, <natura:nether_glowshroom:1> * 4);
     scripts.helper.addSawRecipe(<natura:nether_purple_large_glowshroom>, <natura:nether_glowshroom:2> * 4);
+    scripts.helper.addSawRecipe(<natura:nether_amber_large_glowshroom>, <natura:nether_glowshroom:3> * 4);
 
     scripts.helper.addSawRecipe(<quark:glowshroom_block>, <quark:glowshroom> * 4);
 }

@@ -20,8 +20,35 @@ import crafttweaker.oredict.IOreDictEntry;
     <roots:wildewheet_seed>
 ]);
 
-//<ore:blockGlass>.removeItems(<ore:blockGlass>.items);
-//<ore:blockGlass>.add(<minecraft:glass>);
+<ore:trash>.addItems([
+    <minecraft:wheat_seeds>,
+    <mod_lavacow:sharptooth>,
+    <minecraft:clay>,
+    <mod_lavacow:chitin>,
+    <minecraft:pumpkin_seeds>,
+    <minecraft:melon_seeds>,
+    <minecraft:dye:15>,
+    <minecraft:beetroot_seeds>,
+    <mod_lavacow:intestine>,
+    <minecraft:dye>,
+    <minecraft:vine>,
+    <minecraft:feather>,
+    <actuallyadditions:item_hairy_ball>,
+    <minecraft:leather>,
+    <minecraft:flint>,
+    <actuallyadditions:item_solidified_experience>,
+    <minecraft:fish:3>,
+    <minecraft:fish>,
+    <minecraft:fish:2>,
+    <minecraft:fish:1>,
+    <minecraft:string>,
+    <quark:glass_shards>,
+    <minecraft:slime_ball>,
+    <minecraft:rotten_flesh>,
+    <exnihilocreatio:item_material:2>,
+    <minecraft:lead>,
+    <mysticalagriculture:crafting>
+]);
 
 <ore:blockGlass>.remove(<tconstruct:clear_glass>);
 <ore:blockGlass>.removeItems(<tconstruct:clear_stained_glass:*>.items);
@@ -86,6 +113,9 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
     <ore:oreTitanium>.add(<contenttweaker:titanium_ore>);
 
     <ore:oreBismuth>.add(<contenttweaker:bismuth_ore>);
+
+    <ore:oreKasai>.add(<byg:kasai_ore>);
+    <ore:dustKasai>.add(<contenttweaker:kasai_dust>);
 
     //t4
     <ore:oreChrome>.add(<contenttweaker:chrome_ore>);
@@ -180,6 +210,8 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
         <ore:oreChunkCursedgold>.add(<contenttweaker:cursed_gold_chunk>);
         <ore:oreChunkBismuth>.add(<contenttweaker:bismuth_chunk>);
 
+        <ore:oreChunkKasai>.add(<contenttweaker:kasai_chunk>);
+
         //t4
         <ore:oreChunkChrome>.add(<contenttweaker:chrome_chunk>);
         <ore:oreChunkRhodium>.add(<contenttweaker:rhodium_chunk>);
@@ -252,6 +284,8 @@ recipes.addShaped("ia_charcoal_compress", <additionalcompression:charcoal_compre
 
     <ore:oreOverworldGalena>.add(<immersiveengineering:ore:2>);
 }
+
+
 
 //slime
 

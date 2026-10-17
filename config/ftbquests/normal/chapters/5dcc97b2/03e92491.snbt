@@ -8,7 +8,7 @@
 		uid: "2ee5b2ec",
 		type: "item",
 		items: [{
-			item: "mysticalcreations:fertilizer_seeds"
+			item: "mysticalagriculture:fertilizer_seeds"
 		}]
 	}]
 }

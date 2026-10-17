@@ -32,6 +32,26 @@ mods.alchemistry.Combiner.addRecipe(<contenttweaker:gapo4>, [
 	<alchemistry:element:31> * 8, <alchemistry:compound:14> * 8
 ]);
 
+
+//shadowglass cloth
+mods.botania.RuneAltar.addRecipe(<contenttweaker:shadowglass_cloth>, [
+	<contenttweaker:terra_base>, <moretcon:repitem:3>, <moretcon:repitem:3>,
+	<contenttweaker:soul_reflector>, <botania:manaresource:22>
+], 20000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:shadowglass_cloth> * 3, [
+	<contenttweaker:terra_base>, <moretcon:repitem:3>, <moretcon:repitem:3>,
+	<contenttweaker:soul_reflector>, <botania:manaresource:22>, <contenttweaker:nylon>
+], 20000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:shadowglass_cloth> * 3, [
+	<contenttweaker:terra_base>, <moretcon:repitem:3>, <moretcon:repitem:3>,
+	<contenttweaker:soul_reflector>, <botania:manaresource:22>, <contenttweaker:kevlar>
+], 20000);
+mods.botania.RuneAltar.addRecipe(<contenttweaker:shadowglass_cloth> * 5, [
+	<contenttweaker:terra_base>, <moretcon:repitem:3>, <moretcon:repitem:3>,
+	<contenttweaker:soul_reflector>, <botania:manaresource:22>, <contenttweaker:nylon>, <contenttweaker:kevlar>
+], 20000);
+
+
 //signal
 scripts.content_machines.addAssemblerRecipe(
 	[<contenttweaker:signal_sender>],

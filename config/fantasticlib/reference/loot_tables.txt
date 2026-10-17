@@ -211,6 +211,7 @@ xreliquary:inject/entities/snowman
 primitivemobs:entities/rocket_creeper
 primitivemobs:entities/harpy
 mod_lavacow:entities/foglet
+byg:entities/crystal_crawler
 quark:entities/foxhound
 xreliquary:inject/chests/stronghold_library
 twilightforest:entities/bighorn_sheep/cyan

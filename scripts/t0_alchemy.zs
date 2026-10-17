@@ -77,21 +77,21 @@ function addWeakEnhancerRecipe(inp as IItemStack, outp as IItemStack){
         <contenttweaker:slime_shard>,
         <minecraft:redstone>,
         <minecraft:flint>,
-        <mysticalcreations:bilim_essence>
+        <mysticalagriculture:bilim_essence>
     ]);
 
     addWeakEnhancerRecipe(<minecraft:gravel>, <minecraft:flint> * 3);
 
 
-    recipes.addShaped("bilim1", <mysticalcreations:bilim_seeds>, [
+    recipes.addShaped("bilim1", <mysticalagriculture:bilim_seeds>, [
         [<contenttweaker:weak_enhancer>, <contenttweaker:bamboo_dust>, <contenttweaker:weak_enhancer>],
         [<contenttweaker:weak_enhancer>, <ore:listAllseed>, <contenttweaker:weak_enhancer>],
         [<contenttweaker:weak_enhancer>, <contenttweaker:bamboo_dust>, <contenttweaker:weak_enhancer>]
     ]);
-    recipes.addShaped("bilim2", <mysticalcreations:bilim_seeds>, [
-        [<mysticalcreations:bilim_essence>, <contenttweaker:bamboo_dust>, <mysticalcreations:bilim_essence>],
-        [<mysticalcreations:bilim_essence>, <ore:listAllseed>, <mysticalcreations:bilim_essence>],
-        [<mysticalcreations:bilim_essence>, <contenttweaker:bamboo_dust>, <mysticalcreations:bilim_essence>]
+    recipes.addShaped("bilim2", <mysticalagriculture:bilim_seeds>, [
+        [<mysticalagriculture:bilim_essence>, <contenttweaker:bamboo_dust>, <mysticalagriculture:bilim_essence>],
+        [<mysticalagriculture:bilim_essence>, <ore:listAllseed>, <mysticalagriculture:bilim_essence>],
+        [<mysticalagriculture:bilim_essence>, <contenttweaker:bamboo_dust>, <mysticalagriculture:bilim_essence>]
     ]);
 
     recipes.addShapeless("ia_dried_clay", <tconstruct:dried_clay>, [
@@ -157,7 +157,7 @@ mods.tconstruct.Casting.addTableRecipe(<thermalfoundation:material:133>, <actual
 
 {//bilim uses
     recipes.addShapeless("ia_terra_spores", <minecraft:mossy_cobblestone> * 3, [
-        <mysticalcreations:bilim_essence>,
+        <mysticalagriculture:bilim_essence>,
         <ore:cobblestone>,
         <ore:cobblestone>,
         <ore:cobblestone>

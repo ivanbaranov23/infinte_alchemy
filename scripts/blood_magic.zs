@@ -613,6 +613,17 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 	TartaricForge.addRecipe(<bloodmagic:component:14>, [
 		<extrautils2:compressedcobblestone:4>, <avaritia:double_compressed_crafting_table>, <additionalcompression:dustsugar_compressed:2>, <excompressum:double_compressed_diamond_hammer>
 	], 250, 150);
+	//chain
+	TartaricForge.removeRecipe([<minecraft:glass_bottle>, <minecraft:end_stone>, <minecraft:ender_pearl>, <minecraft:iron_bars>]);
+	TartaricForge.addRecipe(<animus:component:1>, [
+		<minecraft:chainmail_chestplate>, <twilightforest:block_and_chain>, <additionalcompression:meatfish_compressed:1>, <opencomputers:chameliumblock>
+	], 250, 150);
+	//suppresion
+	TartaricForge.removeRecipe([<bloodmagic:teleposer>, <minecraft:blaze_rod>, <minecraft:lava_bucket>, <minecraft:water_bucket>]);
+	TartaricForge.addRecipe(<bloodmagic:component:9>, [
+		<bloodmagic:teleposition_focus>, <natura:edibles:8>, <animus:component:1>, <contenttweaker:illagerite_compressed>
+	], 250, 150);
+	
 
 	//binding
 	TartaricForge.removeRecipe([<minecraft:glowstone_dust>,<minecraft:redstone>,<minecraft:gold_nugget>,<minecraft:gunpowder>]);
@@ -682,7 +693,7 @@ function addSoulRecipe(inp as IIngredient, outp as IItemStack, soul as double, c
 		<extrautils2:compresseddirt:1>
 	], 320, 96);
 	//lightning
-	TartaricForge.removeRecipe([<minecraft:water_bucket>, <ore:blockSand>.firstItem, <minecraft:fishing_rod:*>, <minecraft:ghast_tear>]);
+	TartaricForge.removeRecipe([<minecraft:water_bucket>, <ore:sand>.firstItem, <minecraft:fishing_rod>, <minecraft:ghast_tear>]);
 	TartaricForge.addRecipe(<animus:component:4>, [
 		<moretcon:solidlightning>,
 		<contenttweaker:viking_metal>,

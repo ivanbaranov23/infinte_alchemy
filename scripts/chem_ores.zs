@@ -1,12 +1,6 @@
 import mods.modularmachinery.RecipeBuilder;
 import mods.modularmachinery.IngredientArrayBuilder;
 
-mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_osmium:1>, <tconstruct:edible:1>, <liquid:invar>, 48, true);
-mods.thermalexpansion.Transposer.addFillRecipe(
-    <exnihilocreatio:item_ore_osmium:1>, 
-    <tconstruct:edible:1>, <liquid:invar> * 48, 
-    2000
-);
 mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_lead:1>, <minecraft:poisonous_potato>, <liquid:wear_resistant_alloy>, 32, true);
 mods.thermalexpansion.Transposer.addFillRecipe(
     <exnihilocreatio:item_ore_lead:1>, 
@@ -84,9 +78,9 @@ mods.thermalexpansion.Transposer.addFillRecipe(
 
 {//flolit
     recipes.addShaped("ia_flolit_plant", <contenttweaker:flolit_plant>, [
-        [<mysticalcreations:bilim_essence>, <contenttweaker:flolit>, <mysticalcreations:bilim_essence>], 
+        [<mysticalagriculture:bilim_essence>, <contenttweaker:flolit>, <mysticalagriculture:bilim_essence>], 
         [<contenttweaker:flolit>, <contenttweaker:creosolon>, <contenttweaker:flolit>], 
-        [<mysticalcreations:bilim_essence>, <contenttweaker:flolit>, <mysticalcreations:bilim_essence>]
+        [<mysticalagriculture:bilim_essence>, <contenttweaker:flolit>, <mysticalagriculture:bilim_essence>]
     ]);
 
     mods.thermalexpansion.Compactor.addStorageRecipe(<contenttweaker:flolit>, <contenttweaker:flolit_plant> * 8, 1500);
@@ -409,6 +403,24 @@ scripts.content_machines.addFluidMixerRecipe(
     ]);
 }
 
+{//gold
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <contenttweaker:gold_sand>, 
+        <contenttweaker:dried_gravel>, <liquid:andesite> * 500, 
+        1000
+    );
+}
+{//osmium
+    mods.tconstruct.Casting.addTableRecipe(<exnihilocreatio:item_ore_osmium:1>, <tconstruct:edible:1>, <liquid:invar>, 48, true);
+    mods.thermalexpansion.Transposer.addFillRecipe(
+        <exnihilocreatio:item_ore_osmium:1>, 
+        <tconstruct:edible:1>, <liquid:invar> * 48, 
+        2000
+    );
+
+    mods.mekanism.compressor.addRecipe(<contenttweaker:gold_sand>, <contenttweaker:osmium_sand>);
+}
+
 {//platinum
     scripts.content_machines.addFluidAlloyerRecipe(
         <exnihilocreatio:item_ore_platinum>, 
@@ -535,6 +547,21 @@ scripts.content_machines.addFluidMixerRecipe(
         20, 512
     );
 }
+{//kasai
+    scripts.content_machines.addBioAssemblerRecipe(
+        [], <liquid:kasai> * 576, 
+        [
+            <deepmoblearning:living_matter_hellish>,
+            <contenttweaker:rubeezo_dust>,
+            <netherite:netheritescrap>,
+            <alchemistry:element:2> * 8
+        ], [
+            
+        ], <contenttweaker:research_chemistry3>,
+        10, 1000
+    );
+}
+
 {//trollsteinn
     mods.thermalexpansion.Centrifuge.addRecipe([
         <appliedenergistics2:material:5> % 80, 

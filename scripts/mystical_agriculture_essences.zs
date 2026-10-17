@@ -41,7 +41,7 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
         150: {
             <mysticalagriculture:cobalt_essence> * 16: <netherendingores:ore_other_1:4>,
             <mysticalagriculture:ardite_essence> * 16: <netherendingores:ore_other_1:2>,
-            <mysticalcreations:antimony_essence> * 16: <contenttweaker:antimony_ore>,
+            <mysticalagriculture:antimony_essence> * 16: <contenttweaker:antimony_ore>,
 
             <mysticalagriculture:redstone_essence> * 12: <minecraft:redstone_ore>,
             <mysticalagriculture:electrotine_essence> * 12: <contenttweaker:electrotine_ore>,
@@ -49,9 +49,9 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
 
             <mysticalagriculture:certus_quartz_essence> * 8: <appliedenergistics2:quartz_ore>,
 
-            <mysticalcreations:ovium_essence> * 16: <taiga:ovium_ore>,
-            <mysticalcreations:jauxum_essence> * 16: <taiga:jauxum_ore>,
-            <mysticalcreations:karmesine_essence> * 16: <taiga:karmesine_ore>
+            <mysticalagriculture:ovium_essence> * 16: <taiga:ovium_ore>,
+            <mysticalagriculture:jauxum_essence> * 16: <taiga:jauxum_ore>,
+            <mysticalagriculture:karmesine_essence> * 16: <taiga:karmesine_ore>
         },
         200: {
             <mysticalagriculture:gold_essence> * 16: <minecraft:gold_ore>,
@@ -75,11 +75,11 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
             <mysticalagriculture:diamond_essence> * 8: <minecraft:diamond_ore>,
             <mysticalagriculture:emerald_essence> * 8: <minecraft:emerald_ore>,
 
-            <mysticalcreations:arkenium_essence> * 16: <netherendingores:ore_other_1:9>,
+            <mysticalagriculture:arkenium_essence> * 16: <netherendingores:ore_other_1:9>,
             <mysticalagriculture:dilithium_essence> * 16: <taiga:dilithium_ore>,
-            <mysticalcreations:eezo_essence> * 16: <taiga:eezo_ore>,
-            <mysticalcreations:osram_essence> * 16: <taiga:osram_ore>,
-            <mysticalcreations:prometheum_essence> * 16: <taiga:prometheum_ore>
+            <mysticalagriculture:eezo_essence> * 16: <taiga:eezo_ore>,
+            <mysticalagriculture:osram_essence> * 16: <taiga:osram_ore>,
+            <mysticalagriculture:prometheum_essence> * 16: <taiga:prometheum_ore>
         },
         300: {
             
@@ -93,19 +93,19 @@ val essenceToItem_esg as IItemStack[IItemStack][int][ILiquidStack] = {
             <mysticalagriculture:tungsten_essence> * 16: <contenttweaker:tungsten_ore>,
             <mysticalagriculture:titanium_essence> * 16: <contenttweaker:titanium_ore>,
 
-            <mysticalcreations:gallium_essence> * 16: <contenttweaker:gallium_ore>,
+            <mysticalagriculture:gallium_essence> * 16: <contenttweaker:gallium_ore>,
 
             <mysticalagriculture:graphite_essence> * 12: <quantumflux:graphiteore>,
             <mysticalagriculture:ender_biotite_essence> * 12: <quark:biotite_ore>,
 
-            <mysticalcreations:meteorite_essence> * 16: <taiga:meteoritecobble_block>
+            <mysticalagriculture:meteorite_essence> * 16: <taiga:meteoritecobble_block>
         },
         400: {
             <mysticalagriculture:mithril_essence> * 16: <thermalfoundation:ore:8>,
             <mysticalagriculture:chrome_essence> * 16: <contenttweaker:chrome_ore>,
-            <mysticalcreations:neodymium_essence> * 16: <contenttweaker:neodymium_ore>,
-            <mysticalcreations:palladium_essence> * 16: <taiga:palladium_ore>,
-            <mysticalcreations:uru_essence> * 16: <taiga:uru_ore>
+            <mysticalagriculture:neodymium_essence> * 16: <contenttweaker:neodymium_ore>,
+            <mysticalagriculture:palladium_essence> * 16: <taiga:palladium_ore>,
+            <mysticalagriculture:uru_essence> * 16: <taiga:uru_ore>
         },
         450: {
             <mysticalagriculture:draconium_essence> * 16: <draconicevolution:draconium_ore>
@@ -340,7 +340,9 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
     addEssenceRec_1(<mysticalagriculture:basalt_essence>, <contenttweaker:basalt_dust> * 2);
     
     //fertilizer
-    infuser.addRecipe("FUNGI", 5, <mysticalcreations:fertilizer_essence>, <industrialforegoing:fertilizer> * 4);
+    infuser.addRecipe("FUNGI", 5, <mysticalagriculture:fertilizer_essence>, <industrialforegoing:fertilizer> * 4);
+    mods.tconstruct.Melting.addRecipe(<liquid:sewage> * 250, <mysticalagriculture:fertilizer_essence>);
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:sewage> * 500, <mysticalagriculture:fertilizer_essence>, 2000);
 }
 {//2
     //niter
@@ -350,4 +352,8 @@ function addEssenceRec_plus(essence as IItemStack, outp as IItemStack, add_matte
     addEssenceRec_plus(<mysticalagriculture:silicon_essence>, <atum:khnumite> * 8, <deepmoblearning:living_matter_atum>);
     
 }
+{//3
 
+    //osmium
+    mods.mekanism.chemical.oxidizer.addRecipe(<mysticalagriculture:osmium_essence>, <gas:liquidosmium> * 50);
+}

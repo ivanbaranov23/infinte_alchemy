@@ -235,3 +235,4 @@ recipes.addShapeless("jade_to_flolit", <contenttweaker:flolit>, [
 //itemduct
 mods.tconstruct.Casting.addBasinRecipe(<thermalfoundation:glass:3>, <roots:runed_obsidian>, <liquid:lead>, 288, true);
 mods.tconstruct.Casting.addTableRecipe(<thermaldynamics:duct_32:2>, <thermaldynamics:duct_32>, <liquid:glowstone>, 500, true);
+

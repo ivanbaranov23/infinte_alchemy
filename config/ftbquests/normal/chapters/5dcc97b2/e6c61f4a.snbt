@@ -8,7 +8,7 @@
 		uid: "a0539a8f",
 		type: "item",
 		items: [{
-			item: "mysticalcreations:antimony_seeds"
+			item: "mysticalagriculture:antimony_seeds"
 		}]
 	}]
 }

@@ -99,10 +99,47 @@
 		}],
 		count: 1024L,
 		consume_items: true
+	},
+	{
+		uid: "63e7b102",
+		type: "item",
+		items: [{
+			item: "byg:soapstone"
+		}],
+		count: 2560L,
+		consume_items: true
+	},
+	{
+		uid: "e0440bbc",
+		type: "item",
+		items: [{
+			item: "byg:sodalite"
+		}],
+		count: 2560L,
+		consume_items: true
+	},
+	{
+		uid: "ad864e03",
+		type: "item",
+		items: [{
+			item: "byg:scoria"
+		}],
+		count: 2560L,
+		consume_items: true
+	},
+	{
+		uid: "5ffdea19",
+		type: "item",
+		items: [{
+			item: "byg:sepinite"
+		}],
+		count: 2560L,
+		consume_items: true
 	}],
 	rewards: [{
 		uid: "f450fe4a",
 		type: "item",
-		item: "contenttweaker:quest_coin"
+		item: "contenttweaker:quest_coin",
+		count: 2
 	}]
 }

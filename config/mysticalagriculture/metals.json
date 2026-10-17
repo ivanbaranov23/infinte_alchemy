@@ -1,0 +1,58 @@
+[
+    {
+        "name": "arkenium",
+        "tier": 3
+    },
+    {
+        "name": "gallium",
+        "tier": 3
+    },
+    {
+        "name": "neodymium",
+        "tier": 4
+    },
+    {
+        "name": "cursed_gold",
+        "tier": 4
+    },
+    {
+        "name": "eezo",
+        "tier": 3
+    },
+    {
+        "name": "karmesine",
+        "tier": 2
+    },
+    {
+        "name": "ovium",
+        "tier": 2
+    },
+    {
+        "name": "jauxum",
+        "tier": 2
+    },
+    {
+        "name": "prometheum",
+        "tier": 3
+    },
+    {
+        "name": "osram",
+        "tier": 3
+    },
+    {
+        "name": "palladium",
+        "tier": 4
+    },
+    {
+        "name": "uru",
+        "tier": 4
+    },
+    {
+        "name": "antimony",
+        "tier": 2
+    },
+    {
+        "name": "meteorite",
+        "tier": 3
+    }
+]

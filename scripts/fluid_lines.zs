@@ -158,6 +158,8 @@ FluidDictionary.add("crude_oil", "oil", 1.0);
 	);
 }
 
+TEImbuer.addRecipe(<liquid:concrete> * 500, <tconstruct:soil> * 3, <liquid:water> * 500, 4800);
+
 
 scripts.compact_distill.addCompactDistill(
 	[<liquid:pure_water> * 40], 
@@ -398,7 +400,7 @@ TEImbuer.addRecipe(<liquid:sterile_water> * (500), <contenttweaker:soap>, <liqui
 	
 	Vat.addRecipe(
 		<liquid:holy_water> * 1000, 1.0, <liquid:pure_water> * 1000, 
-		[<aether_legacy:holystone>], [1.0], 
+		[<contenttweaker:holystone_dust>], [1.0], 
 		[<contenttweaker:holy_thing>], [1.0], 
 		5000
 	);
@@ -427,7 +429,19 @@ TEImbuer.addRecipe(<liquid:sterile_water> * (500), <contenttweaker:soap>, <liqui
 		5000
 	);
 }
+{//helium
+	mods.thermalexpansion.Centrifuge.addRecipe([
+		<contenttweaker:ambrosium_gravel> % 5,
+		<contenttweaker:dolomite> % 20
+	], <contenttweaker:holystone_dust> * 4, <liquid:helium> * 10, 5000);
 
+	/*Vat.addRecipe(
+		<liquid:helium> * 1000, 0.25, <liquid:blue_acid> * 1000, 
+		[<contenttweaker:holystone_dust>], [1.0], 
+		[<contenttweaker:endstone_dust>], [1.0], 
+		50000
+	);*/
+}
 
 {//corn sieving
 	scripts.helper.addFluidMixerRecipe(<liquid:nectar_solution> * 2000, 

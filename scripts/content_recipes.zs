@@ -167,6 +167,7 @@ function addNuggetIngotBlockRecipe(nugget as IItemStack, ingot as IItemStack, bl
     add3x3Recipe(<contenttweaker:space_ice_crystal>, <contenttweaker:space_ice_crystal_block>);
     add3x3Recipe(<contenttweaker:onyx>, <contenttweaker:onyx_block>);
     add3x3Recipe(<contenttweaker:kikeridan_ingot>, <contenttweaker:kikeridan_block>);
+    add3x3Recipe(<contenttweaker:kasarai_ingot>, <contenttweaker:kasarai_block>);
     add3x3Recipe(<alchemistry:ingot:4>, <contenttweaker:beryllium_block>);
     add3x3Recipe(<alchemistry:ingot:84>, <contenttweaker:polonium_block>);
     add3x3Recipe(<alchemistry:ingot:94>, <contenttweaker:plutonium_block>);

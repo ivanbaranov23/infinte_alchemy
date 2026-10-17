@@ -12,14 +12,14 @@
 		uid: "b5844a23",
 		type: "item",
 		items: [{
-			item: "mysticalcreations:bilim_seeds"
+			item: "mysticalagriculture:bilim_seeds"
 		}]
 	},
 	{
 		uid: "5c7b6824",
 		type: "item",
 		items: [{
-			item: "mysticalcreations:bilim_essence"
+			item: "mysticalagriculture:bilim_essence"
 		}]
 	}]
 }

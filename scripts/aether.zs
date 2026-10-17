@@ -156,9 +156,10 @@ recipes.addShaped("ia_valkyrie_cape", <aether_legacy:valkyrie_cape>, [
 		[
 			<aether_legacy:ambrosium_shard> * 16, 
 			<aether_legacy:ambrosium_shard> * 8, 
-			<contenttweaker:ambrosium_dust>
+			<contenttweaker:ambrosium_dust>,
+			<contenttweaker:ambrosium_seed> * 4
 		], 
-		[0.75, 0.5, 0.8], 
+		[0.75, 0.5, 0.8, 0.75], 
 		<contenttweaker:ambrosium_crystal>, 
 		"MULTIPLY_OUTPUT", 200000
 	);

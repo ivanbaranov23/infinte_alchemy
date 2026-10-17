@@ -24,6 +24,7 @@ furnace.addRecipe(<minecraft:tallgrass>, <ore:treeSapling>);
 //charcoal
 //scripts.helper.addSimpleCrushingRecipe(<minecraft:coal:1>, <thermalfoundation:material:769>);
 mods.integrateddynamics.Squeezer.addRecipe(<minecraft:coal:1>, <thermalfoundation:material:769>);
+mods.immersiveengineering.Crusher.addRecipe(<thermalfoundation:material:769>, <minecraft:coal:1>, 4000);
 
 //hoppers
 recipes.addShaped("ia_wooden_hopper", <tconstruct:wooden_hopper>, [

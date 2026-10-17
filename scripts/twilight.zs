@@ -10,6 +10,17 @@ recipes.addShaped("ia_magic_map_empty", <twilightforest:magic_map_empty>, [
 	[<ore:paper>, <mekanism:polyethene:2>, <ore:paper>]
 ]);
 
+
+recipes.addShaped("ia_huge_lilypad", <twilightforest:huge_lilypad>, [
+	[<minecraft:waterlily>, <minecraft:waterlily>, <minecraft:waterlily>], 
+	[<minecraft:waterlily>, <contenttweaker:inversion_dust>, <minecraft:waterlily>], 
+	[<minecraft:waterlily>, <minecraft:waterlily>, <minecraft:waterlily>]
+]);
+
+
+
+
+
 recipes.remove(<twilightforest:carminite>);
 recipes.addShapeless("ia_carminite_uncompress", <twilightforest:carminite> * 9,
     [<twilightforest:block_storage:4>]
@@ -19,6 +30,11 @@ recipes.addShapeless("ia_carminite_uncompress", <twilightforest:carminite> * 9,
 furnace.remove(<twilightforest:knightmetal_ingot>);
 
 //steeleaf
+recipes.addShaped("ia_steeleaf_ingot", <twilightforest:steeleaf_ingot>, [
+	[<xreliquary:mob_ingredient:9>, <thermalfoundation:material:160>, <xreliquary:mob_ingredient:9>], 
+	[<thermalfoundation:material:160>, <contenttweaker:plant_sample>, <thermalfoundation:material:160>], 
+	[<xreliquary:mob_ingredient:9>, <thermalfoundation:material:160>, <xreliquary:mob_ingredient:9>]
+]);
 mods.thermalexpansion.Transposer.addFillRecipe(
     <contenttweaker:steeleaf_mush>, 
     <twilightforest:steeleaf_ingot>, <liquid:sulfuricacid> * 250, 

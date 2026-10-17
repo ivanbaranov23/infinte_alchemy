@@ -28,25 +28,25 @@ for bush,berry in {
 recipes.addShapeless("ia_karmesine_bush", <oreberries:karmesine_oreberry_bush>, [
     <ore:berryBush>, <taiga:karmesine_block>, <contenttweaker:research_oreberry>.reuse()
 ]);
-mods.thermalexpansion.InductionSmelter.addRecipe(<taiga:karmesine_nugget> * 3, <oreberries:karmesine_oreberry>, <minecraft:sand>, 500);
-mods.thermalexpansion.Crucible.addRecipe(<liquid:karmesine_fluid> * 48, <oreberries:karmesine_oreberry>, 400);
-furnace.addRecipe(<taiga:karmesine_ingot> * 2, <oreberries:karmesine_oreberry_bush>);
+mods.thermalexpansion.InductionSmelter.addRecipe(<taiga:karmesine_nugget> * 2, <oreberries:karmesine_oreberry>, <minecraft:sand>, 500);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:karmesine_fluid> * 16, <oreberries:karmesine_oreberry>, 400);
+furnace.addRecipe(<taiga:karmesine_nugget> * 3, <oreberries:karmesine_oreberry_bush>);
 
 
 recipes.addShapeless("ia_ovium_bush", <oreberries:ovium_oreberry_bush>, [
     <ore:berryBush>, <taiga:ovium_block>, <contenttweaker:research_oreberry>.reuse()
 ]);
-mods.thermalexpansion.InductionSmelter.addRecipe(<taiga:ovium_nugget> * 3, <oreberries:ovium_oreberry>, <minecraft:sand>, 500);
-mods.thermalexpansion.Crucible.addRecipe(<liquid:ovium_fluid> * 48, <oreberries:ovium_oreberry>, 400);
-furnace.addRecipe(<taiga:ovium_ingot> * 2, <oreberries:ovium_oreberry_bush>);
+mods.thermalexpansion.InductionSmelter.addRecipe(<taiga:ovium_nugget> * 2, <oreberries:ovium_oreberry>, <minecraft:sand>, 500);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:ovium_fluid> * 16, <oreberries:ovium_oreberry>, 400);
+furnace.addRecipe(<taiga:ovium_nugget> * 3, <oreberries:ovium_oreberry_bush>);
 
 
 recipes.addShapeless("ia_jauxum_bush", <oreberries:jauxum_oreberry_bush>, [
     <ore:berryBush>, <taiga:jauxum_block>, <contenttweaker:research_oreberry>.reuse()
 ]);
-mods.thermalexpansion.InductionSmelter.addRecipe(<taiga:jauxum_nugget> * 3, <oreberries:jauxum_oreberry>, <minecraft:sand>, 500);
-mods.thermalexpansion.Crucible.addRecipe(<liquid:jauxum_fluid> * 48, <oreberries:jauxum_oreberry>, 400);
-furnace.addRecipe(<taiga:jauxum_ingot> * 2, <oreberries:jauxum_oreberry_bush>);
+mods.thermalexpansion.InductionSmelter.addRecipe(<taiga:jauxum_nugget> * 2, <oreberries:jauxum_oreberry>, <minecraft:sand>, 500);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:jauxum_fluid> * 16, <oreberries:jauxum_oreberry>, 400);
+furnace.addRecipe(<taiga:jauxum_nugget> * 3, <oreberries:jauxum_oreberry_bush>);
 
 
 
@@ -63,7 +63,7 @@ for liq, ansddifn in {
         <oreberries:ardite_oreberry> * 2:   <exnihilocreatio:item_ore_ardite>,
         <oreberries:antimony_oreberry> * 2: <contenttweaker:antimony_pieces>
     },
-    <liquid:concrete> * 500: {
+    <liquid:concrete> * 1000: {
         <oreberries:gold_oreberry> * 2:     <exnihilocreatio:item_ore_gold>,
         <oreberries:silver_oreberry> * 2:   <exnihilocreatio:item_ore_silver>,
         <oreberries:osmium_oreberry> * 2:   <exnihilocreatio:item_ore_osmium>,
@@ -81,6 +81,7 @@ for liq, ansddifn in {
 
 
 mods.thermalexpansion.Crucible.addRecipe(<liquid:mercury> * 16, <oreberries:mercury_oreberry>, 1000);
+mods.thermalexpansion.Crucible.addRecipe(<liquid:mercury> * 48, <oreberries:mercury_oreberry_bush>, 1000);
 
 
 mods.mekanism.reaction.addRecipe(

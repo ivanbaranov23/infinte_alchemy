@@ -464,6 +464,8 @@ mods.thermalexpansion.Transposer.addFillRecipe(
         [<minecraft:stone>, <deepmoblearning:living_matter_aether>, <minecraft:stone>], 
         [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]
     ]);
+
+    scripts.helper.addSimpleCrushingRecipe(<aether_legacy:holystone>, <contenttweaker:holystone_dust> * 2);
 }
 
 {//end

@@ -1,0 +1,14 @@
+{
+	x: 4.0d,
+	y: -2.0d,
+	dependencies: [
+		"b7165e18"
+	],
+	tasks: [{
+		uid: "4dcc5626",
+		type: "item",
+		items: [{
+			item: "contenttweaker:burn_powder"
+		}]
+	}]
+}

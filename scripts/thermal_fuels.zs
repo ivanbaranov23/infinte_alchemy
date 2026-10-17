@@ -53,6 +53,7 @@ function DieselHandler_addFuel(fuel as ILiquidStack, time as int){
     DieselHandler_addFuel(<liquid:enriched_diesel1>, 250);
     DieselHandler_addFuel(<liquid:enriched_diesel2>, 1000);
     DieselHandler_addFuel(<liquid:nuit_fuel>, 500);
+    DieselHandler_addFuel(<liquid:giriktanol>, 250);
 
 	DieselHandler_addFuel(<liquid:algal_fuel>, 500);
 }
